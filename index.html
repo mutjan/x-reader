@@ -93,6 +93,42 @@
             margin-top: 5px;
         }
         
+        /* 批量操作栏 */
+        .batch-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #16181c;
+            border-radius: 8px;
+            border: 1px solid #2f3336;
+            flex-wrap: wrap;
+        }
+        .batch-btn {
+            padding: 8px 16px;
+            background: #00ba7c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .batch-btn:hover {
+            background: #00a870;
+        }
+        .batch-btn:disabled {
+            background: #38444d;
+            cursor: not-allowed;
+        }
+        .batch-info {
+            color: #8899a6;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+        
         /* 排序控件 */
         .sort-controls {
             display: flex;
@@ -120,9 +156,6 @@
             background: #1d9bf0;
             border-color: #1d9bf0;
         }
-        .sort-icon {
-            font-size: 10px;
-        }
         
         /* 表格样式 */
         .news-table {
@@ -136,10 +169,10 @@
         .news-table th {
             background: #1d9bf0;
             color: white;
-            padding: 10px 8px;
+            padding: 10px 6px;
             text-align: left;
             font-weight: 600;
-            font-size: 13px;
+            font-size: 12px;
             white-space: nowrap;
             cursor: pointer;
             user-select: none;
@@ -148,32 +181,47 @@
             background: #1a8cd8;
         }
         .news-table th:first-child {
-            width: 70px;
+            width: 30px;
+            text-align: center;
         }
         .news-table th:nth-child(2) {
-            width: 22%;
+            width: 60px;
         }
-        .news-table th:nth-child(4) {
-            width: 25%;
+        .news-table th:nth-child(3) {
+            width: 20%;
         }
         .news-table th:nth-child(5) {
-            width: 50px;
+            width: 22%;
+        }
+        .news-table th:nth-child(6) {
+            width: 45px;
             text-align: center;
         }
         .news-table th:last-child {
-            width: 60px;
+            width: 50px;
             text-align: center;
         }
         .news-table td {
-            padding: 10px 8px;
+            padding: 10px 6px;
             border-bottom: 1px solid #2f3336;
             vertical-align: top;
         }
         .news-table tr:hover {
             background: #1d9bf010;
         }
+        .news-table tr.selected {
+            background: #1d9bf020;
+        }
         .news-table tr:last-child td {
             border-bottom: none;
+        }
+        
+        /* 复选框 */
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #1d9bf0;
         }
         
         /* 类型标签 */
@@ -210,7 +258,6 @@
         .news-title {
             font-weight: 600;
             color: #e7e9ea;
-            margin-bottom: 4px;
             font-size: 14px;
         }
         
@@ -225,17 +272,17 @@
         .source-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 6px;
+            gap: 5px;
         }
         .source-link {
             display: inline-block;
-            padding: 3px 8px;
+            padding: 2px 6px;
             background: #2f3336;
             color: #1d9bf0;
             text-decoration: none;
-            border-radius: 4px;
-            font-size: 11px;
-            max-width: 120px;
+            border-radius: 3px;
+            font-size: 10px;
+            max-width: 100px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -250,18 +297,18 @@
             text-align: center;
             font-weight: 600;
             color: #00ba7c;
-            font-size: 14px;
+            font-size: 13px;
         }
         
         /* 复制按钮 */
         .copy-btn {
-            padding: 6px 10px;
+            padding: 5px 8px;
             background: #2f3336;
             border: 1px solid #38444d;
             border-radius: 4px;
             color: #e7e9ea;
             cursor: pointer;
-            font-size: 12px;
+            font-size: 11px;
             white-space: nowrap;
         }
         .copy-btn:hover {
@@ -307,19 +354,6 @@
             border-top: 1px solid #2f3336;
             margin-top: 20px;
         }
-        
-        /* 响应式 */
-        @media (max-width: 768px) {
-            .news-table {
-                font-size: 12px;
-            }
-            .news-table th, .news-table td {
-                padding: 8px 6px;
-            }
-            .source-link {
-                max-width: 80px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -339,16 +373,17 @@
             <p class="update-time">更新时间：<span id="updateTime">--</span> | 共 <span id="totalCount">0</span> 条</p>
         </header>
 
+        <div class="batch-actions">
+            <span class="batch-info">已选择 <strong id="selectedCount">0</strong> 条</span>
+            <button class="batch-btn" onclick="selectAll()" id="selectAllBtn">全选</button>
+            <button class="batch-btn" onclick="copySelected()" id="copySelectedBtn" disabled>复制选中</button>
+            <button class="batch-btn" onclick="clearSelection()" style="background: #f4212e;">清空选择</button>
+        </div>
+
         <div class="sort-controls">
-            <button class="sort-btn" onclick="sortBy('type')" id="sortType">
-                按类型排序 <span class="sort-icon">↕</span>
-            </button>
-            <button class="sort-btn" onclick="sortBy('sources')" id="sortSources">
-                按来源数排序 <span class="sort-icon">↕</span>
-            </button>
-            <button class="sort-btn" onclick="resetSort()" id="resetSort">
-                恢复默认
-            </button>
+            <button class="sort-btn" onclick="sortBy('type')" id="sortType">按类型排序</button>
+            <button class="sort-btn" onclick="sortBy('sources')" id="sortSources">按来源数排序</button>
+            <button class="sort-btn" onclick="resetSort()" id="resetSort">恢复默认</button>
         </div>
 
         <main id="content">
@@ -361,7 +396,7 @@
         </footer>
     </div>
 
-    <div class="toast" id="toast">已复制到剪贴板</div>
+    <div class="toast" id="toast">已复制</div>
 
     <script>
         // 历史新闻数据
@@ -371,142 +406,143 @@
                     "type": "hot",
                     "typeName": "热点",
                     "title": "Meta与AMD达成600亿美元AI芯片超级协议",
-                    "summary": "Meta宣布与AMD达成多年合作协议，部署高达6吉瓦（GW）的AMD Instinct GPU用于AI基础设施。这是AMD史上最大规模的AI芯片订单。",
+                    "summary": "Meta宣布与AMD达成多年合作协议，部署高达6吉瓦（GW）的AMD Instinct GPU用于AI基础设施。",
                     "sources": 3,
                     "sourceLinks": [
-                        {"name": "Techmeme", "url": "https://www.techmeme.com/"},
-                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rdev2v/"},
-                        {"name": "CNBC", "url": "https://www.cnbc.com/"}
+                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rdev2v/meta_and_amd_announce_6gigawatt_gpu_deal/"},
+                        {"name": "Techmeme", "url": "https://www.techmeme.com/260224/p3"},
+                        {"name": "CNBC", "url": "https://www.cnbc.com/2026/02/24/meta-amd-6-gigawatt-ai-chip-deal.html"}
                     ]
                 },
                 {
                     "type": "hot",
                     "typeName": "热点",
                     "title": "OpenAI大幅下调支出预期：从1.4万亿降至6000亿美元",
-                    "summary": "OpenAI将2030年总支出预测从1.4万亿美元大幅削减至6000亿美元。同时预测2030年营收将超过2800亿美元。",
+                    "summary": "OpenAI将2030年总支出预测从1.4万亿美元大幅削减至6000亿美元。",
                     "sources": 2,
                     "sourceLinks": [
-                        {"name": "Hacker News", "url": "https://news.ycombinator.com/item?id=47140623"},
-                        {"name": "Bloomberg", "url": "https://www.bloomberg.com/"}
+                        {"name": "HN", "url": "https://news.ycombinator.com/item?id=47140623"},
+                        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-02-24/openai-cuts-spending-forecast"}
                     ]
                 },
                 {
                     "type": "hot",
                     "typeName": "热点",
                     "title": "Anthropic Claude Code引发安全圈恐慌",
-                    "summary": "Anthropic最新AI模型在开源库中发现500多个此前未知的高危安全漏洞。信息安全社区对AI自动发现漏洞的能力既兴奋又担忧。",
+                    "summary": "Anthropic最新AI模型在开源库中发现500多个此前未知的高危安全漏洞。",
                     "sources": 4,
                     "sourceLinks": [
-                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rd4axq/"},
-                        {"name": "TechCrunch", "url": "https://techcrunch.com/"},
-                        {"name": "Ars Technica", "url": "https://arstechnica.com/"}
+                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rd4axq/infosec_community_panics/"},
+                        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/02/24/anthropic-claude-security-flaws/"},
+                        {"name": "Ars", "url": "https://arstechnica.com/security/2026/02/anthropic-ai-finds-500-security-flaws/"}
                     ]
                 },
                 {
                     "type": "hot",
                     "typeName": "热点",
                     "title": "Stripe估值达1590亿美元",
-                    "summary": "Stripe发布2025年度公开信，公司估值升至1590亿美元。引发关于其IPO计划和2000+私人投资者结构的讨论。",
+                    "summary": "Stripe发布2025年度公开信，公司估值升至1590亿美元。",
                     "sources": 2,
                     "sourceLinks": [
-                        {"name": "Hacker News", "url": "https://news.ycombinator.com/item?id=47137711"},
-                        {"name": "Reuters", "url": "https://www.reuters.com/"}
+                        {"name": "HN", "url": "https://news.ycombinator.com/item?id=47137711"},
+                        {"name": "Reuters", "url": "https://www.reuters.com/technology/stripe-valuation-159-billion-2026-02-24/"}
                     ]
                 },
                 {
                     "type": "hot",
                     "typeName": "热点",
                     "title": "苹果Mac mini将在休斯顿新工厂生产",
-                    "summary": "苹果宣布Mac mini将在美国休斯顿的新工厂生产，这是苹果将部分生产线迁回美国本土的重要举措。",
+                    "summary": "苹果宣布Mac mini将在美国休斯顿的新工厂生产。",
                     "sources": 2,
                     "sourceLinks": [
-                        {"name": "Apple", "url": "https://www.apple.com/"},
-                        {"name": "Bloomberg", "url": "https://www.bloomberg.com/"}
+                        {"name": "Apple", "url": "https://www.apple.com/newsroom/2026/02/mac-mini-houston-factory/"},
+                        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026/02/25/apple-mac-mini-houston"}
                     ]
                 },
                 {
                     "type": "ai",
                     "typeName": "AI",
                     "title": "AI正成为日常犯罪工作流的一部分",
-                    "summary": "报告显示AI工具已被犯罪分子广泛采用，用于提升诈骗效率和规模。从语音克隆到深度伪造，AI技术正在降低犯罪门槛。",
+                    "summary": "报告显示AI工具已被犯罪分子广泛采用，用于提升诈骗效率和规模。",
                     "sources": 3,
                     "sourceLinks": [
-                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rdakq0/"},
-                        {"name": "The Guardian", "url": "https://www.theguardian.com/"}
+                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rdakq0/ai_criminal_workflows/"},
+                        {"name": "Guardian", "url": "https://www.theguardian.com/technology/2026/feb/24/ai-crime"}
                     ]
                 },
                 {
                     "type": "ai",
                     "typeName": "AI",
                     "title": "华为2025年销售收入超8800亿元",
-                    "summary": "华为董事长梁华在全省高质量发展大会上透露，2025年销售收入超过8800亿元。同时强调打造开源、开放的AI生态。",
+                    "summary": "华为董事长梁华透露，2025年销售收入超过8800亿元。",
                     "sources": 2,
                     "sourceLinks": [
-                        {"name": "深圳新闻网", "url": "https://www.sznews.com/"},
-                        {"name": "新浪科技", "url": "https://tech.sina.com.cn/"}
+                        {"name": "深圳新闻", "url": "https://www.sznews.com/news/content/2026-02/25/content_31955465.htm"},
+                        {"name": "新浪", "url": "https://tech.sina.com.cn/2026-02-25/doc-ifynuvyc3749654.shtml"}
                     ]
                 },
                 {
                     "type": "ai",
                     "typeName": "AI",
                     "title": "AI芯片赛道迎来技术与需求双轮驱动",
-                    "summary": "国内算力与AI芯片需求高速增长，多家公司2025年业绩预增。融资客抢筹12只AI芯片概念股。",
+                    "summary": "国内算力与AI芯片需求高速增长，多家公司2025年业绩预增。",
                     "sources": 2,
                     "sourceLinks": [
-                        {"name": "东方财富", "url": "https://finance.eastmoney.com/"},
-                        {"name": "证券时报", "url": "http://www.stcn.com/"}
+                        {"name": "东财", "url": "https://finance.eastmoney.com/a/202602253653169017.html"},
+                        {"name": "证券时报", "url": "http://www.stcn.com/article/detail/1234567.html"}
                     ]
                 },
                 {
                     "type": "tech",
                     "typeName": "科技",
                     "title": "Nvidia寻求Linux开发者推进开源驱动",
-                    "summary": "Nvidia正在招聘Linux开发者来帮助推进开源GPU驱动。这一举措被认为是Nvidia对开源社区压力的回应。",
+                    "summary": "Nvidia正在招聘Linux开发者来帮助推进开源GPU驱动。",
                     "sources": 2,
                     "sourceLinks": [
-                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rd85hv/"},
-                        {"name": "Phoronix", "url": "https://www.phoronix.com/"}
+                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rd85hv/nvidia_linux_developers/"},
+                        {"name": "Phoronix", "url": "https://www.phoronix.com/news/Nvidia-Linux-Open-Source-2026"}
                     ]
                 },
                 {
                     "type": "tech",
                     "typeName": "科技",
                     "title": "AI债务狂欢如何打破超大规模企业的默契",
-                    "summary": "OpenAI和Anthropic等AI公司面临巨大支出压力，分析师认为它们'在借来的时间上生存'。",
+                    "summary": "OpenAI和Anthropic等AI公司面临巨大支出压力。",
                     "sources": 3,
                     "sourceLinks": [
-                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rcddik/"},
-                        {"name": "Financial Times", "url": "https://www.ft.com/"}
+                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rcddik/ai_debt_binge/"},
+                        {"name": "FT", "url": "https://www.ft.com/content/ai-debt-hyperscalers"}
                     ]
                 },
                 {
                     "type": "tech",
                     "typeName": "科技",
                     "title": "新的汽车芯片短缺正在酝酿",
-                    "summary": "AI需求正在挤压传统芯片产能，即使是汽车常用的旧制程节点也受到影响。分析师警告汽车行业可能面临新一轮芯片短缺。",
+                    "summary": "AI需求正在挤压传统芯片产能，汽车行业可能面临新一轮芯片短缺。",
                     "sources": 2,
                     "sourceLinks": [
-                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rc8dby/"},
-                        {"name": "Automotive News", "url": "https://www.autonews.com/"}
+                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rc8dby/car_chip_shortage/"},
+                        {"name": "AutoNews", "url": "https://www.autonews.com/chip-shortage-2026"}
                     ]
                 },
                 {
                     "type": "business",
                     "typeName": "商业",
                     "title": "海南省发布'人工智能+'行动方案",
-                    "summary": "海南省印发《推动'人工智能+'行动方案（2026-2028年）》，重点推动AI在发射安全控制、卫星数据智能处理等领域的应用。",
+                    "summary": "海南省印发《推动'人工智能+'行动方案（2026-2028年）》。",
                     "sources": 2,
                     "sourceLinks": [
-                        {"name": "钛媒体", "url": "https://www.tmtpost.com/"},
-                        {"name": "海南省政府", "url": "http://www.hainan.gov.cn/"}
+                        {"name": "钛媒体", "url": "https://www.tmtpost.com/7888819.html"},
+                        {"name": "海南政府", "url": "http://www.hainan.gov.cn/hainan/zwgk/zcwj/zcjd/202602/t20260225_12345678.html"}
                     ]
                 }
             ]
         };
 
         let currentDate = getLatestDate();
-        let currentSort = { field: null, order: 'asc' };
+        let currentSort = { field: null, order: 'desc' };
         let filteredType = null;
+        let selectedItems = new Set();
 
         function getLatestDate() {
             const dates = Object.keys(NEWS_ARCHIVE).sort();
@@ -523,12 +559,7 @@
         }
 
         function getTypeClass(type) {
-            const map = {
-                'hot': 'type-hot',
-                'ai': 'type-ai',
-                'tech': 'type-tech',
-                'business': 'type-business'
-            };
+            const map = { 'hot': 'type-hot', 'ai': 'type-ai', 'tech': 'type-tech', 'business': 'type-business' };
             return map[type] || 'type-tech';
         }
 
@@ -540,18 +571,18 @@
         function renderDateChips() {
             const container = document.getElementById('dateChips');
             const dates = getAllDates();
-            
             container.innerHTML = dates.map(date => `
-                <span class="date-chip ${date === currentDate ? 'active' : ''}" 
-                      onclick="selectDate('${date}')">${formatDate(date)}</span>
+                <span class="date-chip ${date === currentDate ? 'active' : ''}" onclick="selectDate('${date}')">${formatDate(date)}</span>
             `).join('');
         }
 
         function selectDate(date) {
             currentDate = date;
-            currentSort = { field: null, order: 'asc' };
+            currentSort = { field: null, order: 'desc' };
             filteredType = null;
+            selectedItems.clear();
             updateSortButtons();
+            updateBatchButtons();
             render();
         }
 
@@ -559,7 +590,6 @@
             const dates = getAllDates();
             const currentIndex = dates.indexOf(currentDate);
             const newIndex = currentIndex + direction;
-            
             if (newIndex >= 0 && newIndex < dates.length) {
                 currentDate = dates[newIndex];
                 render();
@@ -569,7 +599,6 @@
         function updateButtons() {
             const dates = getAllDates();
             const currentIndex = dates.indexOf(currentDate);
-            
             document.getElementById('prevBtn').disabled = currentIndex <= 0;
             document.getElementById('nextBtn').disabled = currentIndex >= dates.length - 1;
         }
@@ -586,7 +615,7 @@
         }
 
         function resetSort() {
-            currentSort = { field: null, order: 'asc' };
+            currentSort = { field: null, order: 'desc' };
             filteredType = null;
             updateSortButtons();
             render();
@@ -595,13 +624,6 @@
         function updateSortButtons() {
             document.getElementById('sortType').className = 'sort-btn' + (currentSort.field === 'type' ? ' active' : '');
             document.getElementById('sortSources').className = 'sort-btn' + (currentSort.field === 'sources' ? ' active' : '');
-            
-            // 更新排序图标
-            const typeIcon = currentSort.field === 'type' ? (currentSort.order === 'asc' ? '↑' : '↓') : '↕';
-            const sourcesIcon = currentSort.field === 'sources' ? (currentSort.order === 'asc' ? '↑' : '↓') : '↕';
-            
-            document.getElementById('sortType').querySelector('.sort-icon').textContent = typeIcon;
-            document.getElementById('sortSources').querySelector('.sort-icon').textContent = sourcesIcon;
         }
 
         function filterByType(type) {
@@ -611,13 +633,9 @@
 
         function getSortedAndFilteredNews(newsList) {
             let result = [...newsList];
-            
-            // 类型筛选
             if (filteredType) {
                 result = result.filter(item => item.type === filteredType);
             }
-            
-            // 排序
             if (currentSort.field === 'type') {
                 result.sort((a, b) => {
                     const orderA = getTypeOrder(a.type);
@@ -625,37 +643,95 @@
                     return currentSort.order === 'asc' ? orderA - orderB : orderB - orderA;
                 });
             } else if (currentSort.field === 'sources') {
-                result.sort((a, b) => {
-                    return currentSort.order === 'asc' 
-                        ? a.sources - b.sources 
-                        : b.sources - a.sources;
-                });
+                result.sort((a, b) => currentSort.order === 'asc' ? a.sources - b.sources : b.sources - a.sources);
             }
-            
             return result;
         }
 
-        function copyNews(item) {
-            const linksText = item.sourceLinks.map(l => `${l.name}: ${l.url}`).join('\n');
-            const textToCopy = `${item.title}\n\n相关链接:\n${linksText}`;
+        // 多选功能
+        function toggleSelection(index) {
+            const key = `${currentDate}-${index}`;
+            if (selectedItems.has(key)) {
+                selectedItems.delete(key);
+            } else {
+                selectedItems.add(key);
+            }
+            updateBatchButtons();
+            render();
+        }
+
+        function selectAll() {
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
+            
+            // 如果全部已选，则取消全选
+            const allSelected = displayList.every((_, index) => selectedItems.has(`${currentDate}-${index}`));
+            
+            if (allSelected) {
+                displayList.forEach((_, index) => selectedItems.delete(`${currentDate}-${index}`));
+            } else {
+                displayList.forEach((_, index) => selectedItems.add(`${currentDate}-${index}`));
+            }
+            updateBatchButtons();
+            render();
+        }
+
+        function clearSelection() {
+            selectedItems.clear();
+            updateBatchButtons();
+            render();
+        }
+
+        function updateBatchButtons() {
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
+            const selectedCount = displayList.filter((_, index) => selectedItems.has(`${currentDate}-${index}`)).length;
+            
+            document.getElementById('selectedCount').textContent = selectedCount;
+            document.getElementById('copySelectedBtn').disabled = selectedCount === 0;
+            document.getElementById('selectAllBtn').textContent = 
+                selectedCount === displayList.length && displayList.length > 0 ? '取消全选' : '全选';
+        }
+
+        function copySelected() {
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
+            
+            const selectedNews = displayList.filter((_, index) => selectedItems.has(`${currentDate}-${index}`));
+            
+            if (selectedNews.length === 0) return;
+            
+            const textToCopy = selectedNews.map(item => {
+                const firstLink = item.sourceLinks && item.sourceLinks[0] ? item.sourceLinks[0].url : '';
+                return `${item.title}\n${firstLink}`;
+            }).join('\n\n');
             
             navigator.clipboard.writeText(textToCopy).then(() => {
-                showToast('已复制到剪贴板');
-                
-                // 临时改变按钮文字
-                const btn = document.getElementById(`copy-btn-${item.title.replace(/[^a-zA-Z0-9]/g, '').substring(0, 20)}`);
+                showToast(`已复制 ${selectedNews.length} 条`);
+            });
+        }
+
+        function copySingle(index) {
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
+            const item = displayList[index];
+            
+            if (!item) return;
+            
+            const firstLink = item.sourceLinks && item.sourceLinks[0] ? item.sourceLinks[0].url : '';
+            const textToCopy = `${item.title}\n${firstLink}`;
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast('已复制');
+                const btn = document.getElementById(`copy-btn-${index}`);
                 if (btn) {
-                    const originalText = btn.textContent;
-                    btn.textContent = '✓ 已复制';
+                    btn.textContent = '✓';
                     btn.classList.add('copied');
                     setTimeout(() => {
-                        btn.textContent = originalText;
+                        btn.textContent = '复制';
                         btn.classList.remove('copied');
-                    }, 2000);
+                    }, 1500);
                 }
-            }).catch(err => {
-                console.error('复制失败:', err);
-                showToast('复制失败，请手动复制');
             });
         }
 
@@ -663,16 +739,13 @@
             const toast = document.getElementById('toast');
             toast.textContent = message;
             toast.classList.add('show');
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 2000);
+            setTimeout(() => toast.classList.remove('show'), 2000);
         }
 
         function renderSourceLinks(links) {
             if (!links || links.length === 0) return '-';
-            
             return links.map(link => 
-                `<a href="${link.url}" target="_blank" class="source-link" title="${link.name}">${link.name}</a>`
+                `<a href="${link.url}" target="_blank" class="source-link" title="${link.url}">${link.name}</a>`
             ).join('');
         }
 
@@ -688,13 +761,10 @@
             currentDateEl.textContent = currentDate;
             renderDateChips();
             updateButtons();
+            updateBatchButtons();
             
             if (displayList.length === 0) {
-                content.innerHTML = `
-                    <div class="empty-state">
-                        <p>📭 暂无 ${currentDate} 的新闻数据</p>
-                    </div>
-                `;
+                content.innerHTML = `<div class="empty-state"><p>📭 暂无 ${currentDate} 的新闻数据</p></div>`;
                 updateTime.textContent = '--';
                 totalCount.textContent = '0';
                 return;
@@ -707,61 +777,37 @@
                 <table class="news-table">
                     <thead>
                         <tr>
-                            <th onclick="sortBy('type')">类型 ${currentSort.field === 'type' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                            <th><input type="checkbox" class="checkbox" onchange="selectAll()" id="headerCheckbox"></th>
+                            <th onclick="sortBy('type')">类型</th>
                             <th>标题</th>
                             <th>摘要</th>
                             <th>消息源</th>
-                            <th onclick="sortBy('sources')">来源数 ${currentSort.field === 'sources' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                            <th onclick="sortBy('sources')">来源数</th>
                             <th>复制</th>
                         </tr>
                     </thead>
                     <tbody>
                         ${displayList.map((item, index) => {
-                            const btnId = `copy-btn-${index}`;
+                            const isSelected = selectedItems.has(`${currentDate}-${index}`);
                             return `
-                            <tr>
-                                <td>
-                                    <span class="type-tag ${getTypeClass(item.type)}" 
-                                          onclick="filterByType('${item.type}')"
-                                          title="点击筛选 ${item.typeName}">${item.typeName}</span>
-                                </td>
+                            <tr class="${isSelected ? 'selected' : ''}">
+                                <td><input type="checkbox" class="checkbox" ${isSelected ? 'checked' : ''} onchange="toggleSelection(${index})"></td>
+                                <td><span class="type-tag ${getTypeClass(item.type)}" onclick="filterByType('${item.type}')">${item.typeName}</span></td>
                                 <td><div class="news-title">${item.title}</div></td>
                                 <td><div class="news-summary">${item.summary}</div></td>
                                 <td><div class="source-links">${renderSourceLinks(item.sourceLinks)}</div></td>
                                 <td><div class="source-count">${item.sources}</div></td>
-                                <td>
-                                    <button class="copy-btn" id="${btnId}" onclick='copyNewsByIndex(${index})'>复制</button>
-                                </td>
-                            </tr>
-                        `}).join('')}
+                                <td><button class="copy-btn" id="copy-btn-${index}" onclick="copySingle(${index})">复制</button></td>
+                            </tr>`;
+                        }).join('')}
                     </tbody>
-                </table>
-            `;
+                </table>`;
+            
+            // 更新表头复选框状态
+            const allSelected = displayList.length > 0 && displayList.every((_, index) => selectedItems.has(`${currentDate}-${index}`));
+            const headerCheckbox = document.getElementById('headerCheckbox');
+            if (headerCheckbox) headerCheckbox.checked = allSelected;
         }
-
-        // 用于复制的全局函数
-        window.copyNewsByIndex = function(index) {
-            const newsList = NEWS_ARCHIVE[currentDate] || [];
-            const displayList = getSortedAndFilteredNews(newsList);
-            const item = displayList[index];
-            if (item) {
-                const linksText = item.sourceLinks.map(l => `${l.name}: ${l.url}`).join('\n');
-                const textToCopy = `${item.title}\n\n相关链接:\n${linksText}`;
-                
-                navigator.clipboard.writeText(textToCopy).then(() => {
-                    showToast('已复制到剪贴板');
-                    const btn = document.getElementById(`copy-btn-${index}`);
-                    if (btn) {
-                        btn.textContent = '✓ 已复制';
-                        btn.classList.add('copied');
-                        setTimeout(() => {
-                            btn.textContent = '复制';
-                            btn.classList.remove('copied');
-                        }, 2000);
-                    }
-                });
-            }
-        };
 
         render();
     </script>
