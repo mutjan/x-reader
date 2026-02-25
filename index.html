@@ -556,6 +556,12 @@
                 <button class="batch-btn" onclick="xClearSelection()" style="background: #f4212e;">清空选择</button>
             </div>
 
+            <div class="sort-controls">
+                <button class="sort-btn" onclick="xSortBy('time')" id="xSortTime">按时间排序</button>
+                <button class="sort-btn" onclick="xSortBy('posts')" id="xSortPosts">按帖子数排序</button>
+                <button class="sort-btn" onclick="xResetSort()" id="xResetSort">恢复默认</button>
+            </div>
+
             <main id="x-content">
                 <div class="empty-state">加载中...</div>
             </main>
@@ -892,6 +898,7 @@
                     "summary": "X用户讨论Genspark AI的新功能，可以自定义工作流让AI自动处理邮件。用户关注AI在生产力工具中的应用。",
                     "users": ["@Scobleizer", "@genspark_ai"],
                     "postCount": 5,
+                    "updateTime": "2026-02-25 17:20",
                     "urls": [
                         "https://x.com/Scobleizer/status/2026588139134075107"
                     ]
@@ -902,6 +909,7 @@
                     "summary": "Toggle工具与OpenClaw集成，让Agent可以实时看到用户在网页上的操作。这是Agent能力的重要扩展。",
                     "users": ["@Scobleizer", "@0xPeLpA", "@toggle"],
                     "postCount": 8,
+                    "updateTime": "2026-02-25 16:22",
                     "urls": [
                         "https://x.com/Scobleizer/status/2026573604503302216"
                     ]
@@ -912,6 +920,7 @@
                     "summary": "讨论Claude Code的代码能力，以及新的Pair Programmer工具如何补充其无法看到屏幕的缺陷。",
                     "users": ["@Scobleizer", "@ashu_trv"],
                     "postCount": 6,
+                    "updateTime": "2026-02-25 15:16",
                     "urls": [
                         "https://x.com/Scobleizer/status/2026556959508541859"
                     ]
@@ -922,6 +931,7 @@
                     "summary": "MiniMax Agent与OpenClaw合作推出MaxClaw，提供7×24跨平台服务。用户讨论多平台Agent部署的便利性。",
                     "users": ["@MiniMaxAgent", "@Scobleizer"],
                     "postCount": 12,
+                    "updateTime": "2026-02-25 11:05",
                     "urls": [
                         "https://x.com/MiniMaxAgent/status/2026493668417482923",
                         "https://x.com/Scobleizer/status/2026552520399827396"
@@ -1199,6 +1209,8 @@
         }
 
         // ==================== X 热议功能 ====================
+        let xCurrentSort = { field: null, order: 'desc' };
+
         function getXLatestDate() {
             const dates = Object.keys(X_EVENTS_ARCHIVE).sort();
             return dates[dates.length - 1] || new Date().toISOString().split('T')[0];
@@ -1218,7 +1230,9 @@
 
         function xSelectDate(date) {
             xCurrentDate = date;
+            xCurrentSort = { field: null, order: 'desc' };
             xSelectedItems.clear();
+            xUpdateSortButtons();
             xUpdateBatchButtons();
             renderXEvents();
         }
@@ -1238,6 +1252,42 @@
             const currentIndex = dates.indexOf(xCurrentDate);
             document.getElementById('xPrevBtn').disabled = currentIndex <= 0;
             document.getElementById('xNextBtn').disabled = currentIndex >= dates.length - 1;
+        }
+
+        function xSortBy(field) {
+            if (xCurrentSort.field === field) {
+                xCurrentSort.order = xCurrentSort.order === 'asc' ? 'desc' : 'asc';
+            } else {
+                xCurrentSort.field = field;
+                xCurrentSort.order = 'desc';
+            }
+            xUpdateSortButtons();
+            renderXEvents();
+        }
+
+        function xResetSort() {
+            xCurrentSort = { field: null, order: 'desc' };
+            xUpdateSortButtons();
+            renderXEvents();
+        }
+
+        function xUpdateSortButtons() {
+            document.getElementById('xSortTime').className = 'sort-btn' + (xCurrentSort.field === 'time' ? ' active' : '');
+            document.getElementById('xSortPosts').className = 'sort-btn' + (xCurrentSort.field === 'posts' ? ' active' : '');
+        }
+
+        function xGetSortedEvents(events) {
+            let result = [...events];
+            if (xCurrentSort.field === 'time') {
+                result.sort((a, b) => {
+                    const timeA = new Date(a.updateTime || '2000-01-01');
+                    const timeB = new Date(b.updateTime || '2000-01-01');
+                    return xCurrentSort.order === 'asc' ? timeA - timeB : timeB - timeA;
+                });
+            } else if (xCurrentSort.field === 'posts') {
+                result.sort((a, b) => xCurrentSort.order === 'asc' ? a.postCount - b.postCount : b.postCount - a.postCount);
+            }
+            return result;
         }
 
         function xToggleSelection(index) {
@@ -1321,12 +1371,14 @@
             const currentDateEl = document.getElementById('xCurrentDate');
             const totalCount = document.getElementById('xTotalCount');
             
-            const events = X_EVENTS_ARCHIVE[xCurrentDate] || [];
+            let events = X_EVENTS_ARCHIVE[xCurrentDate] || [];
+            events = xGetSortedEvents(events);
             
             currentDateEl.textContent = xCurrentDate;
             renderXDateChips();
             xUpdateButtons();
             xUpdateBatchButtons();
+            xUpdateSortButtons();
             
             if (events.length === 0) {
                 content.innerHTML = `<div class="empty-state"><p>📭 暂无 ${xCurrentDate} 的X热议数据</p></div>`;
@@ -1343,8 +1395,8 @@
                             <th width="30"><input type="checkbox" class="checkbox" onchange="xSelectAll()"></th>
                             <th>热议话题</th>
                             <th>中文摘要</th>
-                            <th width="15%">讨论用户</th>
-                            <th width="10%">帖子数</th>
+                            <th width="12%" onclick="xSortBy('time')" style="cursor:pointer;">更新时间 ${xCurrentSort.field === 'time' ? (xCurrentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                            <th width="10%" onclick="xSortBy('posts')" style="cursor:pointer;">帖子数 ${xCurrentSort.field === 'posts' ? (xCurrentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
                             <th width="50">复制</th>
                         </tr>
                     </thead>
@@ -1355,18 +1407,18 @@
                             const linksHtml = event.urls?.map((url, i) => 
                                 `<a href="${url}" target="_blank" class="source-link">帖子${i+1}</a>`
                             ).join('') || '';
+                            const updateTime = event.updateTime || '--';
                             
                             return `
                             <tr class="${isSelected ? 'selected' : ''}">
                                 <td><input type="checkbox" class="checkbox" ${isSelected ? 'checked' : ''} onchange="xToggleSelection(${index})"></td>
                                 <td>
                                     <div class="news-title">${event.title}</div>
+                                    <div class="x-event-users" title="${userList}">${userList}</div>
                                     <div class="source-links" style="margin-top: 5px;">${linksHtml}</div>
                                 </td>
                                 <td><div class="news-summary">${event.summary}</div></td>
-                                <td>
-                                    <div class="x-event-users" title="${userList}">${userList}</div>
-                                </td>
+                                <td><div style="color: #8899a6; font-size: 12px;">${updateTime}</div></td>
                                 <td><div class="source-count">${event.postCount}</div></td>
                                 <td>
                                     <button class="copy-btn" id="x-copy-btn-${index}" onclick="xCopySingle(${index})">复制</button>
