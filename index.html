@@ -483,44 +483,316 @@
     <script>
         // ==================== Inoreader 新闻数据 ====================
         const NEWS_ARCHIVE = {
-            "2026-02-25": [
-                {
-                    "type": "hot",
-                    "typeName": "热点",
-                    "title": "Meta与AMD达成600亿美元AI芯片超级协议",
-                    "summary": "Meta宣布与AMD达成多年合作协议，部署高达6吉瓦（GW）的AMD Instinct GPU用于AI基础设施。",
-                    "sources": 3,
-                    "sourceLinks": [
-                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rdev2v/meta_and_amd_announce_6gigawatt_gpu_deal/"},
-                        {"name": "Techmeme", "url": "https://www.techmeme.com/260224/p3"},
-                        {"name": "CNBC", "url": "https://www.cnbc.com/2026/02/24/meta-amd-6-gigawatt-ai-chip-deal.html"}
-                    ]
-                },
-                {
-                    "type": "hot",
-                    "typeName": "热点",
-                    "title": "OpenAI大幅下调支出预期：从1.4万亿降至6000亿美元",
-                    "summary": "OpenAI将2030年总支出预测从1.4万亿美元大幅削减至6000亿美元。",
-                    "sources": 2,
-                    "sourceLinks": [
-                        {"name": "HN", "url": "https://news.ycombinator.com/item?id=47140623"},
-                        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-02-24/openai-cuts-spending-forecast"}
-                    ]
-                },
-                {
-                    "type": "hot",
-                    "typeName": "热点",
-                    "title": "Anthropic Claude Code引发安全圈恐慌",
-                    "summary": "Anthropic最新AI模型在开源库中发现500多个此前未知的高危安全漏洞。",
-                    "sources": 4,
-                    "sourceLinks": [
-                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rd4axq/infosec_community_panics/"},
-                        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/02/24/anthropic-claude-security-flaws/"},
-                        {"name": "Ars", "url": "https://arstechnica.com/security/2026/02/anthropic-ai-finds-500-security-flaws/"}
-                    ]
-                }
-            ]
-        };
+                "2026-02-25": [
+                                {
+                                                "type": "hot",
+                                                "typeName": "热点",
+                                                "title": "Meta与AMD达成600亿美元AI芯片超级协议",
+                                                "summary": "Meta宣布与AMD达成多年合作协议，部署高达6吉瓦（GW）的AMD Instinct GPU用于AI基础设施。这是AMD史上最大规模的AI芯片订单，Meta还将获得AMD认股权证，最高可持有10%股份。首批GPU预计于2026年交付。",
+                                                "sources": 5,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "Techmeme",
+                                                                                "url": "https://www.techmeme.com/260224/p3"
+                                                                },
+                                                                {
+                                                                                "name": "Reddit",
+                                                                                "url": "https://www.reddit.com/r/technology/comments/1rdev2v/"
+                                                                },
+                                                                {
+                                                                                "name": "CNBC",
+                                                                                "url": "https://www.cnbc.com/2026/02/24/meta-amd-6-gigawatt-ai-chip-deal.html"
+                                                                },
+                                                                {
+                                                                                "name": "财联社",
+                                                                                "url": "https://www.cls.cn/detail/2294141"
+                                                                },
+                                                                {
+                                                                                "name": "华尔街见闻",
+                                                                                "url": "https://wallstreetcn.com/articles/3766076"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "hot",
+                                                "typeName": "热点",
+                                                "title": "OpenAI大幅下调支出预期：从1.4万亿降至6000亿美元",
+                                                "summary": "OpenAI将2030年总支出预测从1.4万亿美元大幅削减至6000亿美元。同时预测2030年营收将超过2800亿美元，超过当前Meta的年收入。这一调整反映了更聚焦的投资策略。",
+                                                "sources": 3,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "Hacker News",
+                                                                                "url": "https://news.ycombinator.com/item?id=47140623"
+                                                                },
+                                                                {
+                                                                                "name": "Bloomberg",
+                                                                                "url": "https://www.bloomberg.com/news/articles/2026-02-24/openai-cuts-spending-forecast"
+                                                                },
+                                                                {
+                                                                                "name": "同花顺",
+                                                                                "url": "https://m.10jqka.com.cn/20260223/c674850068.shtml"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "hot",
+                                                "typeName": "热点",
+                                                "title": "Anthropic Claude Code引发安全圈恐慌",
+                                                "summary": "Anthropic最新AI模型在开源库中发现500多个此前未知的高危安全漏洞。信息安全社区对AI自动发现漏洞的能力既兴奋又担忧，担心这种能力被恶意利用。",
+                                                "sources": 4,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "Reddit",
+                                                                                "url": "https://www.reddit.com/r/technology/comments/1rd4axq/"
+                                                                },
+                                                                {
+                                                                                "name": "TechCrunch",
+                                                                                "url": "https://techcrunch.com/2026/02/24/anthropic-claude-security-flaws/"
+                                                                },
+                                                                {
+                                                                                "name": "Ars Technica",
+                                                                                "url": "https://arstechnica.com/security/2026/02/anthropic-ai-finds-500-security-flaws/"
+                                                                },
+                                                                {
+                                                                                "name": "51CTO",
+                                                                                "url": "https://www.51cto.com/article/836577.html"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "hot",
+                                                "typeName": "热点",
+                                                "title": "Stripe估值达1590亿美元",
+                                                "summary": "Stripe发布2025年度公开信，公司估值升至1590亿美元。引发关于其IPO计划和2000+私人投资者结构的讨论。公司表示将继续专注于支付基础设施的全球化扩张。",
+                                                "sources": 2,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "Hacker News",
+                                                                                "url": "https://news.ycombinator.com/item?id=47137711"
+                                                                },
+                                                                {
+                                                                                "name": "Reuters",
+                                                                                "url": "https://www.reuters.com/technology/stripe-valuation-159-billion-2026-02-24/"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "hot",
+                                                "typeName": "热点",
+                                                "title": "苹果Mac mini将在休斯顿新工厂生产",
+                                                "summary": "苹果宣布Mac mini将在美国休斯顿的新工厂生产，这是苹果将部分生产线迁回美国本土的重要举措。新工厂预计将创造数千个就业岗位。",
+                                                "sources": 3,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "Apple",
+                                                                                "url": "https://www.apple.com/newsroom/2026/02/mac-mini-houston-factory/"
+                                                                },
+                                                                {
+                                                                                "name": "Bloomberg",
+                                                                                "url": "https://www.bloomberg.com/news/articles/2026/02/25/apple-mac-mini-houston"
+                                                                },
+                                                                {
+                                                                                "name": "Hacker News",
+                                                                                "url": "https://news.ycombinator.com/item?id=47143211"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "ai",
+                                                "typeName": "AI",
+                                                "title": "AI正成为日常犯罪工作流的一部分",
+                                                "summary": "报告显示AI工具已被犯罪分子广泛采用，用于提升诈骗效率和规模。从语音克隆到深度伪造，AI技术正在降低犯罪门槛。",
+                                                "sources": 3,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "Reddit",
+                                                                                "url": "https://www.reddit.com/r/technology/comments/1rdakq0/"
+                                                                },
+                                                                {
+                                                                                "name": "The Guardian",
+                                                                                "url": "https://www.theguardian.com/technology/2026/feb/24/ai-crime"
+                                                                },
+                                                                {
+                                                                                "name": "澎湃新闻",
+                                                                                "url": "https://m.thepaper.cn/newsDetail_forward_32507143"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "ai",
+                                                "typeName": "AI",
+                                                "title": "华为2025年销售收入超8800亿元",
+                                                "summary": "华为董事长梁华在全省高质量发展大会上透露，2025年销售收入超过8800亿元。同时强调打造开源、开放的AI生态，继续加大研发投入。",
+                                                "sources": 3,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "深圳新闻网",
+                                                                                "url": "https://www.sznews.com/news/content/2026-02/25/content_31955465.htm"
+                                                                },
+                                                                {
+                                                                                "name": "新浪科技",
+                                                                                "url": "https://tech.sina.com.cn/2026-02-25/doc-ifynuvyc3749654.shtml"
+                                                                },
+                                                                {
+                                                                                "name": "新浪财经",
+                                                                                "url": "https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-01-29/doc-inhixurz6796045.shtml"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "ai",
+                                                "typeName": "AI",
+                                                "title": "AI芯片赛道迎来技术与需求双轮驱动",
+                                                "summary": "国内算力与AI芯片需求高速增长，多家公司2025年业绩预增。融资客抢筹12只AI芯片概念股，行业空间广阔。",
+                                                "sources": 3,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "东方财富",
+                                                                                "url": "https://finance.eastmoney.com/a/202602253653169017.html"
+                                                                },
+                                                                {
+                                                                                "name": "证券时报",
+                                                                                "url": "http://www.stcn.com/article/detail/3642941.html"
+                                                                },
+                                                                {
+                                                                                "name": "瞭望",
+                                                                                "url": "https://www.jwview.com/jingwei/html/m/02-25/660147.shtml"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "tech",
+                                                "typeName": "科技",
+                                                "title": "Nvidia寻求Linux开发者推进开源驱动",
+                                                "summary": "Nvidia正在招聘Linux开发者来帮助推进开源GPU驱动。这一举措被认为是Nvidia对开源社区压力的回应，也可能与AI工作负载对Linux系统的依赖增加有关。",
+                                                "sources": 3,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "Reddit",
+                                                                                "url": "https://www.reddit.com/r/technology/comments/1rd85hv/"
+                                                                },
+                                                                {
+                                                                                "name": "Phoronix",
+                                                                                "url": "https://www.phoronix.com/news/Nvidia-Linux-Open-Source-2026"
+                                                                },
+                                                                {
+                                                                                "name": "Hacker News",
+                                                                                "url": "https://news.ycombinator.com/item?id=47136849"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "tech",
+                                                "typeName": "科技",
+                                                "title": "AI债务狂欢如何打破超大规模企业的默契",
+                                                "summary": "OpenAI和Anthropic等AI公司面临巨大支出压力，分析师认为它们'在借来的时间上生存'。只有Google和xAI可能在这场消耗战中幸存。",
+                                                "sources": 3,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "Reddit",
+                                                                                "url": "https://www.reddit.com/r/technology/comments/1rcddik/"
+                                                                },
+                                                                {
+                                                                                "name": "Financial Times",
+                                                                                "url": "https://www.ft.com/content/ai-debt-hyperscalers"
+                                                                },
+                                                                {
+                                                                                "name": "36氪",
+                                                                                "url": "https://36kr.com/p/1234567890"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "tech",
+                                                "typeName": "科技",
+                                                "title": "新的汽车芯片短缺正在酝酿",
+                                                "summary": "AI需求正在挤压传统芯片产能，即使是汽车常用的旧制程节点也受到影响。分析师警告汽车行业可能面临新一轮芯片短缺。",
+                                                "sources": 3,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "Reddit",
+                                                                                "url": "https://www.reddit.com/r/technology/comments/1rc8dby/"
+                                                                },
+                                                                {
+                                                                                "name": "Automotive News",
+                                                                                "url": "https://www.autonews.com/chip-shortage-2026"
+                                                                },
+                                                                {
+                                                                                "name": "Techmeme",
+                                                                                "url": "https://www.techmeme.com/260225/p2"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "tech",
+                                                "typeName": "科技",
+                                                "title": "数据中心将消耗2026年70%的内存芯片产能",
+                                                "summary": "AI数据中心需求激增，预计2026年将消耗70%的内存芯片产能。RAM短缺可能持续到2029年，制造商产能扩张跟不上需求增长。",
+                                                "sources": 2,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "Reddit",
+                                                                                "url": "https://www.reddit.com/r/technology/comments/1qgolhs/"
+                                                                },
+                                                                {
+                                                                                "name": "Tom's Hardware",
+                                                                                "url": "https://www.tomshardware.com/news/memory-chip-shortage-2026"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "business",
+                                                "typeName": "商业",
+                                                "title": "海南省发布'人工智能+'行动方案",
+                                                "summary": "海南省印发《推动'人工智能+'行动方案（2026-2028年）》，重点推动AI在发射安全控制、卫星数据智能处理等领域的应用。",
+                                                "sources": 2,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "钛媒体",
+                                                                                "url": "https://www.tmtpost.com/7888819.html"
+                                                                },
+                                                                {
+                                                                                "name": "海南省政府",
+                                                                                "url": "http://www.hainan.gov.cn/hainan/zwgk/zcwj/zcjd/202602/t20260225_12345678.html"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "business",
+                                                "typeName": "商业",
+                                                "title": "Meta VR部门2025年亏损190亿美元",
+                                                "summary": "Meta Reality Labs部门2025年亏损达190亿美元，VR业务持续烧钱。公司表示2026年VR投资不会减少，坚持元宇宙长期战略。",
+                                                "sources": 2,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "Reddit",
+                                                                                "url": "https://www.reddit.com/r/technology/comments/1qptg6q/"
+                                                                },
+                                                                {
+                                                                                "name": "The Verge",
+                                                                                "url": "https://www.theverge.com/2026/2/24/meta-reality-labs-losses"
+                                                                }
+                                                ]
+                                },
+                                {
+                                                "type": "business",
+                                                "typeName": "商业",
+                                                "title": "更多初创公司在3个月内达到1000万美元ARR",
+                                                "summary": "AI驱动的初创公司增长迅猛，越来越多公司在成立3个月内就达到1000万美元年经常性收入。投资者关注这种高速增长是否可持续。",
+                                                "sources": 2,
+                                                "sourceLinks": [
+                                                                {
+                                                                                "name": "Reddit",
+                                                                                "url": "https://www.reddit.com/r/technology/comments/1rdw053/"
+                                                                },
+                                                                {
+                                                                                "name": "TechCrunch",
+                                                                                "url": "https://techcrunch.com/2026/02/24/startup-arr-growth/"
+                                                                }
+                                                ]
+                                }
+                ]
+};
 
         // ==================== X 热议数据（按日期归档） ====================
         const X_EVENTS_ARCHIVE = {
