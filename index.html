@@ -18,7 +18,7 @@
             font-size: 14px;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 15px;
         }
@@ -93,6 +93,37 @@
             margin-top: 5px;
         }
         
+        /* 排序控件 */
+        .sort-controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        .sort-btn {
+            padding: 6px 12px;
+            background: #2f3336;
+            border: 1px solid #38444d;
+            border-radius: 6px;
+            color: #e7e9ea;
+            cursor: pointer;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .sort-btn:hover {
+            background: #38444d;
+        }
+        .sort-btn.active {
+            background: #1d9bf0;
+            border-color: #1d9bf0;
+        }
+        .sort-icon {
+            font-size: 10px;
+        }
+        
         /* 表格样式 */
         .news-table {
             width: 100%;
@@ -110,19 +141,27 @@
             font-weight: 600;
             font-size: 13px;
             white-space: nowrap;
+            cursor: pointer;
+            user-select: none;
+        }
+        .news-table th:hover {
+            background: #1a8cd8;
         }
         .news-table th:first-child {
-            width: 80px;
+            width: 70px;
         }
         .news-table th:nth-child(2) {
-            width: 25%;
+            width: 22%;
         }
         .news-table th:nth-child(4) {
-            width: 60px;
+            width: 25%;
+        }
+        .news-table th:nth-child(5) {
+            width: 50px;
             text-align: center;
         }
         .news-table th:last-child {
-            width: 80px;
+            width: 60px;
             text-align: center;
         }
         .news-table td {
@@ -145,6 +184,10 @@
             font-size: 11px;
             font-weight: 600;
             white-space: nowrap;
+            cursor: pointer;
+        }
+        .type-tag:hover {
+            opacity: 0.8;
         }
         .type-hot {
             background: #f4212e;
@@ -170,24 +213,36 @@
             margin-bottom: 4px;
             font-size: 14px;
         }
-        .news-title a {
-            color: inherit;
-            text-decoration: none;
-        }
-        .news-title a:hover {
-            color: #1d9bf0;
-            text-decoration: underline;
-        }
         
         /* 摘要 */
         .news-summary {
             color: #8899a6;
             font-size: 12px;
             line-height: 1.5;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
+        }
+        
+        /* 消息源链接 */
+        .source-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .source-link {
+            display: inline-block;
+            padding: 3px 8px;
+            background: #2f3336;
+            color: #1d9bf0;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 11px;
+            max-width: 120px;
             overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .source-link:hover {
+            background: #1d9bf0;
+            color: white;
         }
         
         /* 来源数量 */
@@ -198,19 +253,43 @@
             font-size: 14px;
         }
         
-        /* 链接按钮 */
-        .link-btn {
-            display: inline-block;
-            padding: 4px 10px;
-            background: #1d9bf0;
-            color: white;
-            text-decoration: none;
+        /* 复制按钮 */
+        .copy-btn {
+            padding: 6px 10px;
+            background: #2f3336;
+            border: 1px solid #38444d;
             border-radius: 4px;
+            color: #e7e9ea;
+            cursor: pointer;
             font-size: 12px;
-            text-align: center;
+            white-space: nowrap;
         }
-        .link-btn:hover {
-            background: #1a8cd8;
+        .copy-btn:hover {
+            background: #1d9bf0;
+            border-color: #1d9bf0;
+        }
+        .copy-btn.copied {
+            background: #00ba7c;
+            border-color: #00ba7c;
+        }
+        
+        /* Toast 提示 */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #00ba7c;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .toast.show {
+            opacity: 1;
         }
         
         /* 空状态 */
@@ -237,8 +316,8 @@
             .news-table th, .news-table td {
                 padding: 8px 6px;
             }
-            .news-summary {
-                -webkit-line-clamp: 3;
+            .source-link {
+                max-width: 80px;
             }
         }
     </style>
@@ -260,6 +339,18 @@
             <p class="update-time">更新时间：<span id="updateTime">--</span> | 共 <span id="totalCount">0</span> 条</p>
         </header>
 
+        <div class="sort-controls">
+            <button class="sort-btn" onclick="sortBy('type')" id="sortType">
+                按类型排序 <span class="sort-icon">↕</span>
+            </button>
+            <button class="sort-btn" onclick="sortBy('sources')" id="sortSources">
+                按来源数排序 <span class="sort-icon">↕</span>
+            </button>
+            <button class="sort-btn" onclick="resetSort()" id="resetSort">
+                恢复默认
+            </button>
+        </div>
+
         <main id="content">
             <div class="empty-state">加载中...</div>
         </main>
@@ -270,6 +361,8 @@
         </footer>
     </div>
 
+    <div class="toast" id="toast">已复制到剪贴板</div>
+
     <script>
         // 历史新闻数据
         const NEWS_ARCHIVE = {
@@ -278,19 +371,24 @@
                     "type": "hot",
                     "typeName": "热点",
                     "title": "Meta与AMD达成600亿美元AI芯片超级协议",
-                    "summary": "Meta宣布与AMD达成多年合作协议，部署高达6吉瓦（GW）的AMD Instinct GPU用于AI基础设施。这是AMD史上最大规模的AI芯片订单，Meta还将获得AMD认股权证，最高可持有10%股份。",
+                    "summary": "Meta宣布与AMD达成多年合作协议，部署高达6吉瓦（GW）的AMD Instinct GPU用于AI基础设施。这是AMD史上最大规模的AI芯片订单。",
                     "sources": 3,
-                    "url": "https://www.techmeme.com/",
-                    "sourceNames": "Techmeme, Reddit, CNBC"
+                    "sourceLinks": [
+                        {"name": "Techmeme", "url": "https://www.techmeme.com/"},
+                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rdev2v/"},
+                        {"name": "CNBC", "url": "https://www.cnbc.com/"}
+                    ]
                 },
                 {
                     "type": "hot",
                     "typeName": "热点",
                     "title": "OpenAI大幅下调支出预期：从1.4万亿降至6000亿美元",
-                    "summary": "OpenAI将2030年总支出预测从1.4万亿美元大幅削减至6000亿美元。同时预测2030年营收将超过2800亿美元，超过当前Meta的年收入。",
+                    "summary": "OpenAI将2030年总支出预测从1.4万亿美元大幅削减至6000亿美元。同时预测2030年营收将超过2800亿美元。",
                     "sources": 2,
-                    "url": "https://news.ycombinator.com/item?id=47140623",
-                    "sourceNames": "Hacker News, Bloomberg"
+                    "sourceLinks": [
+                        {"name": "Hacker News", "url": "https://news.ycombinator.com/item?id=47140623"},
+                        {"name": "Bloomberg", "url": "https://www.bloomberg.com/"}
+                    ]
                 },
                 {
                     "type": "hot",
@@ -298,8 +396,11 @@
                     "title": "Anthropic Claude Code引发安全圈恐慌",
                     "summary": "Anthropic最新AI模型在开源库中发现500多个此前未知的高危安全漏洞。信息安全社区对AI自动发现漏洞的能力既兴奋又担忧。",
                     "sources": 4,
-                    "url": "https://www.reddit.com/r/technology/comments/1rd4axq/",
-                    "sourceNames": "Reddit, TechCrunch, Ars Technica"
+                    "sourceLinks": [
+                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rd4axq/"},
+                        {"name": "TechCrunch", "url": "https://techcrunch.com/"},
+                        {"name": "Ars Technica", "url": "https://arstechnica.com/"}
+                    ]
                 },
                 {
                     "type": "hot",
@@ -307,8 +408,10 @@
                     "title": "Stripe估值达1590亿美元",
                     "summary": "Stripe发布2025年度公开信，公司估值升至1590亿美元。引发关于其IPO计划和2000+私人投资者结构的讨论。",
                     "sources": 2,
-                    "url": "https://news.ycombinator.com/item?id=47137711",
-                    "sourceNames": "Hacker News, Reuters"
+                    "sourceLinks": [
+                        {"name": "Hacker News", "url": "https://news.ycombinator.com/item?id=47137711"},
+                        {"name": "Reuters", "url": "https://www.reuters.com/"}
+                    ]
                 },
                 {
                     "type": "hot",
@@ -316,8 +419,10 @@
                     "title": "苹果Mac mini将在休斯顿新工厂生产",
                     "summary": "苹果宣布Mac mini将在美国休斯顿的新工厂生产，这是苹果将部分生产线迁回美国本土的重要举措。",
                     "sources": 2,
-                    "url": "https://www.apple.com/",
-                    "sourceNames": "Apple, Bloomberg"
+                    "sourceLinks": [
+                        {"name": "Apple", "url": "https://www.apple.com/"},
+                        {"name": "Bloomberg", "url": "https://www.bloomberg.com/"}
+                    ]
                 },
                 {
                     "type": "ai",
@@ -325,8 +430,10 @@
                     "title": "AI正成为日常犯罪工作流的一部分",
                     "summary": "报告显示AI工具已被犯罪分子广泛采用，用于提升诈骗效率和规模。从语音克隆到深度伪造，AI技术正在降低犯罪门槛。",
                     "sources": 3,
-                    "url": "https://www.reddit.com/r/technology/comments/1rdakq0/",
-                    "sourceNames": "Reddit, The Guardian"
+                    "sourceLinks": [
+                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rdakq0/"},
+                        {"name": "The Guardian", "url": "https://www.theguardian.com/"}
+                    ]
                 },
                 {
                     "type": "ai",
@@ -334,8 +441,10 @@
                     "title": "华为2025年销售收入超8800亿元",
                     "summary": "华为董事长梁华在全省高质量发展大会上透露，2025年销售收入超过8800亿元。同时强调打造开源、开放的AI生态。",
                     "sources": 2,
-                    "url": "https://www.sznews.com/news/content/2026-02/25/",
-                    "sourceNames": "深圳新闻网, 新浪科技"
+                    "sourceLinks": [
+                        {"name": "深圳新闻网", "url": "https://www.sznews.com/"},
+                        {"name": "新浪科技", "url": "https://tech.sina.com.cn/"}
+                    ]
                 },
                 {
                     "type": "ai",
@@ -343,8 +452,10 @@
                     "title": "AI芯片赛道迎来技术与需求双轮驱动",
                     "summary": "国内算力与AI芯片需求高速增长，多家公司2025年业绩预增。融资客抢筹12只AI芯片概念股。",
                     "sources": 2,
-                    "url": "https://finance.eastmoney.com/a/202602253653169017.html",
-                    "sourceNames": "东方财富, 证券时报"
+                    "sourceLinks": [
+                        {"name": "东方财富", "url": "https://finance.eastmoney.com/"},
+                        {"name": "证券时报", "url": "http://www.stcn.com/"}
+                    ]
                 },
                 {
                     "type": "tech",
@@ -352,8 +463,10 @@
                     "title": "Nvidia寻求Linux开发者推进开源驱动",
                     "summary": "Nvidia正在招聘Linux开发者来帮助推进开源GPU驱动。这一举措被认为是Nvidia对开源社区压力的回应。",
                     "sources": 2,
-                    "url": "https://www.reddit.com/r/technology/comments/1rd85hv/",
-                    "sourceNames": "Reddit, Phoronix"
+                    "sourceLinks": [
+                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rd85hv/"},
+                        {"name": "Phoronix", "url": "https://www.phoronix.com/"}
+                    ]
                 },
                 {
                     "type": "tech",
@@ -361,8 +474,10 @@
                     "title": "AI债务狂欢如何打破超大规模企业的默契",
                     "summary": "OpenAI和Anthropic等AI公司面临巨大支出压力，分析师认为它们'在借来的时间上生存'。",
                     "sources": 3,
-                    "url": "https://www.reddit.com/r/technology/comments/1rcddik/",
-                    "sourceNames": "Reddit, Financial Times"
+                    "sourceLinks": [
+                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rcddik/"},
+                        {"name": "Financial Times", "url": "https://www.ft.com/"}
+                    ]
                 },
                 {
                     "type": "tech",
@@ -370,8 +485,10 @@
                     "title": "新的汽车芯片短缺正在酝酿",
                     "summary": "AI需求正在挤压传统芯片产能，即使是汽车常用的旧制程节点也受到影响。分析师警告汽车行业可能面临新一轮芯片短缺。",
                     "sources": 2,
-                    "url": "https://www.reddit.com/r/technology/comments/1rc8dby/",
-                    "sourceNames": "Reddit, Automotive News"
+                    "sourceLinks": [
+                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rc8dby/"},
+                        {"name": "Automotive News", "url": "https://www.autonews.com/"}
+                    ]
                 },
                 {
                     "type": "business",
@@ -379,13 +496,17 @@
                     "title": "海南省发布'人工智能+'行动方案",
                     "summary": "海南省印发《推动'人工智能+'行动方案（2026-2028年）》，重点推动AI在发射安全控制、卫星数据智能处理等领域的应用。",
                     "sources": 2,
-                    "url": "https://www.tmtpost.com/7888819.html",
-                    "sourceNames": "钛媒体, 海南省政府"
+                    "sourceLinks": [
+                        {"name": "钛媒体", "url": "https://www.tmtpost.com/"},
+                        {"name": "海南省政府", "url": "http://www.hainan.gov.cn/"}
+                    ]
                 }
             ]
         };
 
         let currentDate = getLatestDate();
+        let currentSort = { field: null, order: 'asc' };
+        let filteredType = null;
 
         function getLatestDate() {
             const dates = Object.keys(NEWS_ARCHIVE).sort();
@@ -411,6 +532,11 @@
             return map[type] || 'type-tech';
         }
 
+        function getTypeOrder(type) {
+            const order = { 'hot': 1, 'ai': 2, 'tech': 3, 'business': 4 };
+            return order[type] || 5;
+        }
+
         function renderDateChips() {
             const container = document.getElementById('dateChips');
             const dates = getAllDates();
@@ -423,6 +549,9 @@
 
         function selectDate(date) {
             currentDate = date;
+            currentSort = { field: null, order: 'asc' };
+            filteredType = null;
+            updateSortButtons();
             render();
         }
 
@@ -445,6 +574,108 @@
             document.getElementById('nextBtn').disabled = currentIndex >= dates.length - 1;
         }
 
+        function sortBy(field) {
+            if (currentSort.field === field) {
+                currentSort.order = currentSort.order === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.field = field;
+                currentSort.order = 'desc';
+            }
+            updateSortButtons();
+            render();
+        }
+
+        function resetSort() {
+            currentSort = { field: null, order: 'asc' };
+            filteredType = null;
+            updateSortButtons();
+            render();
+        }
+
+        function updateSortButtons() {
+            document.getElementById('sortType').className = 'sort-btn' + (currentSort.field === 'type' ? ' active' : '');
+            document.getElementById('sortSources').className = 'sort-btn' + (currentSort.field === 'sources' ? ' active' : '');
+            
+            // 更新排序图标
+            const typeIcon = currentSort.field === 'type' ? (currentSort.order === 'asc' ? '↑' : '↓') : '↕';
+            const sourcesIcon = currentSort.field === 'sources' ? (currentSort.order === 'asc' ? '↑' : '↓') : '↕';
+            
+            document.getElementById('sortType').querySelector('.sort-icon').textContent = typeIcon;
+            document.getElementById('sortSources').querySelector('.sort-icon').textContent = sourcesIcon;
+        }
+
+        function filterByType(type) {
+            filteredType = filteredType === type ? null : type;
+            render();
+        }
+
+        function getSortedAndFilteredNews(newsList) {
+            let result = [...newsList];
+            
+            // 类型筛选
+            if (filteredType) {
+                result = result.filter(item => item.type === filteredType);
+            }
+            
+            // 排序
+            if (currentSort.field === 'type') {
+                result.sort((a, b) => {
+                    const orderA = getTypeOrder(a.type);
+                    const orderB = getTypeOrder(b.type);
+                    return currentSort.order === 'asc' ? orderA - orderB : orderB - orderA;
+                });
+            } else if (currentSort.field === 'sources') {
+                result.sort((a, b) => {
+                    return currentSort.order === 'asc' 
+                        ? a.sources - b.sources 
+                        : b.sources - a.sources;
+                });
+            }
+            
+            return result;
+        }
+
+        function copyNews(item) {
+            const linksText = item.sourceLinks.map(l => `${l.name}: ${l.url}`).join('\n');
+            const textToCopy = `${item.title}\n\n相关链接:\n${linksText}`;
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast('已复制到剪贴板');
+                
+                // 临时改变按钮文字
+                const btn = document.getElementById(`copy-btn-${item.title.replace(/[^a-zA-Z0-9]/g, '').substring(0, 20)}`);
+                if (btn) {
+                    const originalText = btn.textContent;
+                    btn.textContent = '✓ 已复制';
+                    btn.classList.add('copied');
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.classList.remove('copied');
+                    }, 2000);
+                }
+            }).catch(err => {
+                console.error('复制失败:', err);
+                showToast('复制失败，请手动复制');
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+
+        function renderSourceLinks(links) {
+            if (!links || links.length === 0) return '-';
+            
+            return links.map(link => 
+                `<a href="${link.url}" target="_blank" class="source-link" title="${link.name}">${link.name}</a>`
+            ).join('');
+        }
+
         function render() {
             const content = document.getElementById('content');
             const currentDateEl = document.getElementById('currentDate');
@@ -452,12 +683,13 @@
             const totalCount = document.getElementById('totalCount');
             
             const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
             
             currentDateEl.textContent = currentDate;
             renderDateChips();
             updateButtons();
             
-            if (newsList.length === 0) {
+            if (displayList.length === 0) {
                 content.innerHTML = `
                     <div class="empty-state">
                         <p>📭 暂无 ${currentDate} 的新闻数据</p>
@@ -469,35 +701,67 @@
             }
             
             updateTime.textContent = currentDate + ' 07:30';
-            totalCount.textContent = newsList.length;
+            totalCount.textContent = `${displayList.length}${filteredType ? ' / ' + newsList.length : ''}`;
             
             content.innerHTML = `
                 <table class="news-table">
                     <thead>
                         <tr>
-                            <th>类型</th>
+                            <th onclick="sortBy('type')">类型 ${currentSort.field === 'type' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
                             <th>标题</th>
                             <th>摘要</th>
-                            <th>来源数</th>
-                            <th>链接</th>
+                            <th>消息源</th>
+                            <th onclick="sortBy('sources')">来源数 ${currentSort.field === 'sources' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                            <th>复制</th>
                         </tr>
                     </thead>
                     <tbody>
-                        ${newsList.map(item => `
+                        ${displayList.map((item, index) => {
+                            const btnId = `copy-btn-${index}`;
+                            return `
                             <tr>
-                                <td><span class="type-tag ${getTypeClass(item.type)}">${item.typeName}</span></td>
                                 <td>
-                                    <div class="news-title">${item.title}</div>
+                                    <span class="type-tag ${getTypeClass(item.type)}" 
+                                          onclick="filterByType('${item.type}')"
+                                          title="点击筛选 ${item.typeName}">${item.typeName}</span>
                                 </td>
-                                <td><div class="news-summary" title="${item.summary}">${item.summary}</div></td>
-                                <td><div class="source-count" title="${item.sourceNames}">${item.sources}</div></td>
-                                <td><a href="${item.url}" target="_blank" class="link-btn">查看 →</a></td>
+                                <td><div class="news-title">${item.title}</div></td>
+                                <td><div class="news-summary">${item.summary}</div></td>
+                                <td><div class="source-links">${renderSourceLinks(item.sourceLinks)}</div></td>
+                                <td><div class="source-count">${item.sources}</div></td>
+                                <td>
+                                    <button class="copy-btn" id="${btnId}" onclick='copyNewsByIndex(${index})'>复制</button>
+                                </td>
                             </tr>
-                        `).join('')}
+                        `}).join('')}
                     </tbody>
                 </table>
             `;
         }
+
+        // 用于复制的全局函数
+        window.copyNewsByIndex = function(index) {
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
+            const item = displayList[index];
+            if (item) {
+                const linksText = item.sourceLinks.map(l => `${l.name}: ${l.url}`).join('\n');
+                const textToCopy = `${item.title}\n\n相关链接:\n${linksText}`;
+                
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    showToast('已复制到剪贴板');
+                    const btn = document.getElementById(`copy-btn-${index}`);
+                    if (btn) {
+                        btn.textContent = '✓ 已复制';
+                        btn.classList.add('copied');
+                        setTimeout(() => {
+                            btn.textContent = '复制';
+                            btn.classList.remove('copied');
+                        }, 2000);
+                    }
+                });
+            }
+        };
 
         render();
     </script>
