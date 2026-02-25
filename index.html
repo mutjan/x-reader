@@ -41,6 +41,31 @@
             font-size: 13px;
         }
         
+        /* Tab 切换 */
+        .tabs {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 24px;
+            background: #2f3336;
+            border: none;
+            border-radius: 8px;
+            color: #8899a6;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .tab:hover {
+            background: #38444d;
+        }
+        .tab.active {
+            background: #1d9bf0;
+            color: white;
+        }
+        
         /* 日期切换器 */
         .date-selector {
             display: flex;
@@ -216,6 +241,14 @@
             border-bottom: none;
         }
         
+        /* X帖子表格样式 */
+        .x-table th {
+            background: #8b5cf6;
+        }
+        .x-table th:hover {
+            background: #7c3aed;
+        }
+        
         /* 复选框 */
         .checkbox {
             width: 18px;
@@ -354,14 +387,26 @@
             border-top: 1px solid #2f3336;
             margin-top: 20px;
         }
+        
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>📰 每日科技新闻摘要</h1>
-            <p class="subtitle">Tech Daily Digest from Inoreader</p>
+            <p class="subtitle">Tech Daily Digest from Inoreader & X</p>
             
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('news')" id="tab-news">📰 Inoreader 新闻</button>
+                <button class="tab" onclick="switchTab('x')" id="tab-x">🐦 X 帖子</button>
+            </div>
+        </header>
+
+        <!-- Inoreader 新闻 Tab -->
+        <div id="news-panel">
             <div class="date-selector">
                 <button class="date-btn" onclick="changeDate(-1)" id="prevBtn">◀ 前一天</button>
                 <span class="current-date" id="currentDate">--</span>
@@ -371,27 +416,45 @@
             <div id="dateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
             
             <p class="update-time">更新时间：<span id="updateTime">--</span> | 共 <span id="totalCount">0</span> 条</p>
-        </header>
 
-        <div class="batch-actions">
-            <span class="batch-info">已选择 <strong id="selectedCount">0</strong> 条</span>
-            <button class="batch-btn" onclick="selectAll()" id="selectAllBtn">全选</button>
-            <button class="batch-btn" onclick="copySelected()" id="copySelectedBtn" disabled>复制选中</button>
-            <button class="batch-btn" onclick="clearSelection()" style="background: #f4212e;">清空选择</button>
+            <div class="batch-actions">
+                <span class="batch-info">已选择 <strong id="selectedCount">0</strong> 条</span>
+                <button class="batch-btn" onclick="selectAll()" id="selectAllBtn">全选</button>
+                <button class="batch-btn" onclick="copySelected()" id="copySelectedBtn" disabled>复制选中</button>
+                <button class="batch-btn" onclick="clearSelection()" style="background: #f4212e;">清空选择</button>
+            </div>
+
+            <div class="sort-controls">
+                <button class="sort-btn" onclick="sortBy('type')" id="sortType">按类型排序</button>
+                <button class="sort-btn" onclick="sortBy('sources')" id="sortSources">按来源数排序</button>
+                <button class="sort-btn" onclick="resetSort()" id="resetSort">恢复默认</button>
+            </div>
+
+            <main id="news-content">
+                <div class="empty-state">加载中...</div>
+            </main>
         </div>
 
-        <div class="sort-controls">
-            <button class="sort-btn" onclick="sortBy('type')" id="sortType">按类型排序</button>
-            <button class="sort-btn" onclick="sortBy('sources')" id="sortSources">按来源数排序</button>
-            <button class="sort-btn" onclick="resetSort()" id="resetSort">恢复默认</button>
-        </div>
+        <!-- X 帖子 Tab -->
+        <div id="x-panel" class="hidden">
+            <p class="update-time" style="text-align: center; margin-bottom: 15px;">
+                X 列表 RSS | 每小时更新 | 共 <span id="xTotalCount">0</span> 条
+            </p>
 
-        <main id="content">
-            <div class="empty-state">加载中...</div>
-        </main>
+            <div class="batch-actions">
+                <span class="batch-info">已选择 <strong id="xSelectedCount">0</strong> 条</span>
+                <button class="batch-btn" onclick="xSelectAll()" id="xSelectAllBtn">全选</button>
+                <button class="batch-btn" onclick="xCopySelected()" id="xCopySelectedBtn" disabled>复制选中</button>
+                <button class="batch-btn" onclick="xClearSelection()" style="background: #f4212e;">清空选择</button>
+            </div>
+
+            <main id="x-content">
+                <div class="empty-state">加载中...</div>
+            </main>
+        </div>
 
         <footer>
-            <p>数据来源：Inoreader RSS | 每日 07:30 自动更新</p>
+            <p>数据来源：Inoreader RSS / X RSS | 每日 07:30 / 每小时 自动更新</p>
             <p>由 OpenClaw 自动生成 · 托管于 GitHub Pages</p>
         </footer>
     </div>
@@ -399,7 +462,7 @@
     <div class="toast" id="toast">已复制</div>
 
     <script>
-        // 历史新闻数据
+        // ==================== Inoreader 新闻数据 ====================
         const NEWS_ARCHIVE = {
             "2026-02-25": [
                 {
@@ -539,11 +602,55 @@
             ]
         };
 
+        // ==================== X 帖子数据 ====================
+        const X_POSTS = [
+            {
+                "author": "Tech Insider",
+                "authorHandle": "@techinsider",
+                "content": "Breaking: New AI model achieves state-of-the-art results on multiple benchmarks. The model uses a novel architecture that reduces training time by 40%.",
+                "url": "https://x.com/techinsider/status/1234567890",
+                "time": "2小时前",
+                "likes": 1234,
+                "retweets": 567
+            },
+            {
+                "author": "AI Research Daily",
+                "authorHandle": "@airesearch",
+                "content": "Just published our latest paper on efficient transformer architectures. Check it out! The key innovation is a new attention mechanism that scales linearly with sequence length.",
+                "url": "https://x.com/airesearch/status/1234567891",
+                "time": "3小时前",
+                "likes": 892,
+                "retweets": 234
+            },
+            {
+                "author": "Dev News",
+                "authorHandle": "@devnews",
+                "content": "TypeScript 5.4 is out with exciting new features including improved type inference and faster compilation. Upgrade now! #TypeScript #JavaScript",
+                "url": "https://x.com/devnews/status/1234567892",
+                "time": "4小时前",
+                "likes": 2341,
+                "retweets": 890
+            }
+        ];
+
+        // ==================== 全局状态 ====================
+        let currentTab = 'news';
         let currentDate = getLatestDate();
         let currentSort = { field: null, order: 'desc' };
         let filteredType = null;
         let selectedItems = new Set();
+        let xSelectedItems = new Set();
 
+        // ==================== Tab 切换 ====================
+        function switchTab(tab) {
+            currentTab = tab;
+            document.getElementById('tab-news').className = tab === 'news' ? 'tab active' : 'tab';
+            document.getElementById('tab-x').className = tab === 'x' ? 'tab active' : 'tab';
+            document.getElementById('news-panel').className = tab === 'news' ? '' : 'hidden';
+            document.getElementById('x-panel').className = tab === 'x' ? '' : 'hidden';
+        }
+
+        // ==================== Inoreader 功能 ====================
         function getLatestDate() {
             const dates = Object.keys(NEWS_ARCHIVE).sort();
             return dates[dates.length - 1] || new Date().toISOString().split('T')[0];
@@ -583,7 +690,7 @@
             selectedItems.clear();
             updateSortButtons();
             updateBatchButtons();
-            render();
+            renderNews();
         }
 
         function changeDate(direction) {
@@ -592,7 +699,7 @@
             const newIndex = currentIndex + direction;
             if (newIndex >= 0 && newIndex < dates.length) {
                 currentDate = dates[newIndex];
-                render();
+                renderNews();
             }
         }
 
@@ -611,14 +718,14 @@
                 currentSort.order = 'desc';
             }
             updateSortButtons();
-            render();
+            renderNews();
         }
 
         function resetSort() {
             currentSort = { field: null, order: 'desc' };
             filteredType = null;
             updateSortButtons();
-            render();
+            renderNews();
         }
 
         function updateSortButtons() {
@@ -628,7 +735,7 @@
 
         function filterByType(type) {
             filteredType = filteredType === type ? null : type;
-            render();
+            renderNews();
         }
 
         function getSortedAndFilteredNews(newsList) {
@@ -657,14 +764,12 @@
                 selectedItems.add(key);
             }
             updateBatchButtons();
-            render();
+            renderNews();
         }
 
         function selectAll() {
             const newsList = NEWS_ARCHIVE[currentDate] || [];
             const displayList = getSortedAndFilteredNews(newsList);
-            
-            // 如果全部已选，则取消全选
             const allSelected = displayList.every((_, index) => selectedItems.has(`${currentDate}-${index}`));
             
             if (allSelected) {
@@ -673,13 +778,13 @@
                 displayList.forEach((_, index) => selectedItems.add(`${currentDate}-${index}`));
             }
             updateBatchButtons();
-            render();
+            renderNews();
         }
 
         function clearSelection() {
             selectedItems.clear();
             updateBatchButtons();
-            render();
+            renderNews();
         }
 
         function updateBatchButtons() {
@@ -696,7 +801,6 @@
         function copySelected() {
             const newsList = NEWS_ARCHIVE[currentDate] || [];
             const displayList = getSortedAndFilteredNews(newsList);
-            
             const selectedNews = displayList.filter((_, index) => selectedItems.has(`${currentDate}-${index}`));
             
             if (selectedNews.length === 0) return;
@@ -735,13 +839,6 @@
             });
         }
 
-        function showToast(message) {
-            const toast = document.getElementById('toast');
-            toast.textContent = message;
-            toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 2000);
-        }
-
         function renderSourceLinks(links) {
             if (!links || links.length === 0) return '-';
             return links.map(link => 
@@ -749,8 +846,8 @@
             ).join('');
         }
 
-        function render() {
-            const content = document.getElementById('content');
+        function renderNews() {
+            const content = document.getElementById('news-content');
             const currentDateEl = document.getElementById('currentDate');
             const updateTime = document.getElementById('updateTime');
             const totalCount = document.getElementById('totalCount');
@@ -777,7 +874,7 @@
                 <table class="news-table">
                     <thead>
                         <tr>
-                            <th><input type="checkbox" class="checkbox" onchange="selectAll()" id="headerCheckbox"></th>
+                            <th><input type="checkbox" class="checkbox" onchange="selectAll()"></th>
                             <th onclick="sortBy('type')">类型</th>
                             <th>标题</th>
                             <th>摘要</th>
@@ -802,14 +899,136 @@
                         }).join('')}
                     </tbody>
                 </table>`;
-            
-            // 更新表头复选框状态
-            const allSelected = displayList.length > 0 && displayList.every((_, index) => selectedItems.has(`${currentDate}-${index}`));
-            const headerCheckbox = document.getElementById('headerCheckbox');
-            if (headerCheckbox) headerCheckbox.checked = allSelected;
         }
 
-        render();
+        // ==================== X 帖子功能 ====================
+        function xToggleSelection(index) {
+            if (xSelectedItems.has(index)) {
+                xSelectedItems.delete(index);
+            } else {
+                xSelectedItems.add(index);
+            }
+            xUpdateBatchButtons();
+            renderXPosts();
+        }
+
+        function xSelectAll() {
+            const allSelected = X_POSTS.every((_, index) => xSelectedItems.has(index));
+            if (allSelected) {
+                xSelectedItems.clear();
+            } else {
+                X_POSTS.forEach((_, index) => xSelectedItems.add(index));
+            }
+            xUpdateBatchButtons();
+            renderXPosts();
+        }
+
+        function xClearSelection() {
+            xSelectedItems.clear();
+            xUpdateBatchButtons();
+            renderXPosts();
+        }
+
+        function xUpdateBatchButtons() {
+            document.getElementById('xSelectedCount').textContent = xSelectedItems.size;
+            document.getElementById('xCopySelectedBtn').disabled = xSelectedItems.size === 0;
+            document.getElementById('xSelectAllBtn').textContent = 
+                xSelectedItems.size === X_POSTS.length && X_POSTS.length > 0 ? '取消全选' : '全选';
+        }
+
+        function xCopySelected() {
+            if (xSelectedItems.size === 0) return;
+            
+            const selectedPosts = X_POSTS.filter((_, index) => xSelectedItems.has(index));
+            const textToCopy = selectedPosts.map(post => 
+                `${post.author} ${post.authorHandle}\n${post.content}\n${post.url}`
+            ).join('\n\n---\n\n');
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast(`已复制 ${xSelectedItems.size} 条`);
+            });
+        }
+
+        function xCopySingle(index) {
+            const post = X_POSTS[index];
+            if (!post) return;
+            
+            const textToCopy = `${post.author} ${post.authorHandle}\n${post.content}\n${post.url}`;
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast('已复制');
+                const btn = document.getElementById(`x-copy-btn-${index}`);
+                if (btn) {
+                    btn.textContent = '✓';
+                    btn.classList.add('copied');
+                    setTimeout(() => {
+                        btn.textContent = '复制';
+                        btn.classList.remove('copied');
+                    }, 1500);
+                }
+            });
+        }
+
+        function renderXPosts() {
+            const content = document.getElementById('x-content');
+            const totalCount = document.getElementById('xTotalCount');
+            
+            totalCount.textContent = X_POSTS.length;
+            xUpdateBatchButtons();
+            
+            if (X_POSTS.length === 0) {
+                content.innerHTML = `<div class="empty-state"><p>📭 暂无 X 帖子数据</p></div>`;
+                return;
+            }
+            
+            content.innerHTML = `
+                <table class="news-table x-table">
+                    <thead>
+                        <tr>
+                            <th width="30"><input type="checkbox" class="checkbox" onchange="xSelectAll()"></th>
+                            <th width="15%">作者</th>
+                            <th>内容</th>
+                            <th width="10%">时间</th>
+                            <th width="12%">互动</th>
+                            <th width="50">复制</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${X_POSTS.map((post, index) => {
+                            const isSelected = xSelectedItems.has(index);
+                            return `
+                            <tr class="${isSelected ? 'selected' : ''}">
+                                <td><input type="checkbox" class="checkbox" ${isSelected ? 'checked' : ''} onchange="xToggleSelection(${index})"></td>
+                                <td>
+                                    <div style="font-weight: 600;">${post.author}</div>
+                                    <div style="color: #8899a6; font-size: 11px;">${post.authorHandle}</div>
+                                </td>
+                                <td><div class="news-summary">${post.content}</div></td>
+                                <td><div style="color: #8899a6; font-size: 12px;">${post.time}</div></td>
+                                <td>
+                                    <div style="font-size: 12px; color: #8899a6;">
+                                        ❤️ ${post.likes} 🔄 ${post.retweets}
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="copy-btn" id="x-copy-btn-${index}" onclick="xCopySingle(${index})">复制</button>
+                                </td>
+                            </tr>`;
+                        }).join('')}
+                    </tbody>
+                </table>`;
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2000);
+        }
+
+        // 初始化
+        renderNews();
+        renderXPosts();
     </script>
 </body>
 </html>
