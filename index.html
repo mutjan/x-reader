@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X 列表阅读器</title>
+    <title>每日科技新闻摘要 | Tech Daily</title>
     <style>
         * {
             margin: 0;
@@ -11,234 +11,247 @@
             box-sizing: border-box;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #15202b;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #0f1419;
             color: #e7e9ea;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         .container {
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-        h1 {
+        header {
             text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #2f3336;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 32px;
             margin-bottom: 10px;
-            color: #1d9bf0;
+            background: linear-gradient(135deg, #1d9bf0, #00ba7c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         .subtitle {
-            text-align: center;
             color: #8899a6;
-            margin-bottom: 30px;
-            font-size: 14px;
+            font-size: 16px;
         }
-        .info-section {
-            background: #192734;
-            padding: 20px;
-            border-radius: 16px;
+        .update-time {
+            color: #8899a6;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #1d9bf0;
             margin-bottom: 20px;
-            border: 1px solid #38444d;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #1d9bf0;
         }
-        .info-section h2 {
-            color: #1d9bf0;
-            margin-bottom: 12px;
+        .news-item {
+            background: #16181c;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            border: 1px solid #2f3336;
+            transition: border-color 0.2s;
+        }
+        .news-item:hover {
+            border-color: #1d9bf0;
+        }
+        .news-title {
             font-size: 18px;
-        }
-        .info-section p {
-            color: #8899a6;
+            font-weight: 600;
             margin-bottom: 10px;
-            font-size: 14px;
-        }
-        .info-section ol, .info-section ul {
-            margin-left: 20px;
-            color: #e7e9ea;
-            font-size: 14px;
-        }
-        .info-section li {
-            margin-bottom: 8px;
-        }
-        .code-block {
-            background: #15202b;
-            padding: 12px;
-            border-radius: 8px;
-            font-family: 'Courier New', monospace;
-            font-size: 13px;
-            color: #00ba7c;
-            margin: 10px 0;
-            overflow-x: auto;
-        }
-        .tweet {
-            background: #192734;
-            padding: 16px;
-            border-radius: 16px;
-            margin-bottom: 12px;
-            border: 1px solid #38444d;
-        }
-        .tweet-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-        }
-        .avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: #1d9bf0;
-            margin-right: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 20px;
-        }
-        .user-info {
-            flex: 1;
-        }
-        .name {
-            font-weight: bold;
             color: #e7e9ea;
         }
-        .username {
-            color: #8899a6;
-            font-size: 14px;
-        }
-        .time {
-            color: #8899a6;
-            font-size: 14px;
-        }
-        .tweet-text {
-            margin: 12px 0;
-            font-size: 15px;
-            line-height: 1.6;
-        }
-        .tweet-link {
-            color: #1d9bf0;
+        .news-title a {
+            color: inherit;
             text-decoration: none;
         }
-        .tweet-link:hover {
-            text-decoration: underline;
+        .news-title a:hover {
+            color: #1d9bf0;
         }
-        .tweet-actions {
+        .news-meta {
             display: flex;
-            gap: 24px;
-            margin-top: 12px;
+            gap: 15px;
             color: #8899a6;
-            font-size: 14px;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        .news-source {
+            color: #00ba7c;
+        }
+        .news-summary {
+            color: #c4cfd6;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #1d9bf020;
+            color: #1d9bf0;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+        .hot-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #f4212e;
+            color: white;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #8899a6;
         }
         .loading {
             text-align: center;
             padding: 40px;
-            color: #8899a6;
         }
         .spinner {
             display: inline-block;
-            width: 24px;
-            height: 24px;
-            border: 3px solid #38444d;
+            width: 32px;
+            height: 32px;
+            border: 3px solid #2f3336;
             border-top-color: #1d9bf0;
             border-radius: 50%;
             animation: spin 1s linear infinite;
-            margin-right: 8px;
         }
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #1d9bf0;
-            color: white;
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #8899a6;
+            font-size: 13px;
+            border-top: 1px solid #2f3336;
+            margin-top: 40px;
+        }
+        .rss-link {
+            color: #1d9bf0;
             text-decoration: none;
-            border-radius: 9999px;
-            font-weight: bold;
-            margin-top: 10px;
         }
-        .btn:hover {
-            background: #1a8cd8;
-        }
-        .note {
-            background: #1d9bf020;
-            border-left: 4px solid #1d9bf0;
-            padding: 12px;
-            margin: 15px 0;
-            border-radius: 0 8px 8px 0;
-            font-size: 14px;
+        .rss-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🐦 X 列表阅读器</h1>
-        <p class="subtitle">在 GitHub Pages 上阅读你的 X (Twitter) 列表</p>
-        
-        <div class="info-section">
-            <h2>📖 使用说明</h2>
-            <p>由于 X API 的限制和 CORS 策略，纯前端网页无法直接访问 X 数据。以下是几种可行的方案：</p>
-            
-            <h3 style="margin-top: 20px; color: #e7e9ea;">方案 1：使用 RSS 订阅（推荐）</h3>
-            <ol>
-                <li>访问 <a href="https://rss.app/" target="_blank" class="tweet-link">rss.app</a> 或类似服务</li>
-                <li>输入你的 X 列表 URL，生成 RSS 链接</li>
-                <li>使用 RSS 阅读器订阅</li>
-            </ol>
-            <a href="https://rss.app/" target="_blank" class="btn">访问 RSS.app</a>
-            
-            <h3 style="margin-top: 25px; color: #e7e9ea;">方案 2：使用 Nitter 镜像</h3>
-            <ol>
-                <li>Nitter 是 X 的隐私友好镜像</li>
-                <li>访问 <a href="https://nitter.net" target="_blank" class="tweet-link">nitter.net</a></li>
-                <li>搜索你的列表或用户</li>
-            </ol>
-            
-            <h3 style="margin-top: 25px; color: #e7e9ea;">方案 3：本地运行脚本</h3>
-            <p>在你的本地机器上运行 Python 脚本获取数据：</p>
-            <div class="code-block">
-# 安装依赖<br>
-pip install requests<br><br>
-# 运行脚本<br>
-python3 fetch_x_list.py
+        <header>
+            <h1>📰 每日科技新闻摘要</h1>
+            <p class="subtitle">Tech Daily Digest from Inoreader</p>
+            <p class="update-time">最后更新：<span id="updateTime">加载中...</span></p>
+        </header>
+
+        <main id="content">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p style="margin-top: 15px; color: #8899a6;">正在加载今日新闻...</p>
             </div>
-            <p>我可以为你生成这个脚本，你只需要提供 X 的 Bearer Token</p>
-        </div>
-        
-        <div class="info-section">
-            <h2>🔗 你的 X 列表</h2>
-            <p>你之前提供的列表：</p>
-            <div class="code-block">
-https://x.com/i/lists/1673520347939995648
-            </div>
-            <p style="margin-top: 10px;">
-                <a href="https://x.com/i/lists/1673520347939995648" target="_blank" class="tweet-link">在 X 上打开此列表 →</a>
-            </p>
-        </div>
-        
-        <div class="info-section">
-            <h2>💡 获取 X Bearer Token</h2>
-            <ol>
-                <li>登录 X.com</li>
-                <li>按 F12 打开开发者工具 → Network 标签</li>
-                <li>刷新页面，找到任意 API 请求</li>
-                <li>在 Headers 中找到 Authorization: Bearer xxx</li>
-                <li>复制 Bearer 后面的字符串</li>
-            </ol>
-            <div class="note">
-                <strong>注意：</strong>Bearer Token 相当于你的登录凭证，不要分享给他人。建议定期更换。
-            </div>
-        </div>
-        
-        <div class="info-section">
-            <h2>🛠️ 需要我做什么？</h2>
-            <p>告诉我你想用哪个方案，我可以：</p>
-            <ul>
-                <li>为你生成本地运行的 Python 脚本</li>
-                <li>设置定时任务自动获取并发送摘要给你</li>
-                <li>帮你配置 RSS 订阅</li>
-            </ul>
-        </div>
-        
-        <div style="text-align: center; margin-top: 30px; color: #8899a6; font-size: 12px;">
-            <p>由 OpenClaw 生成 · 托管在 GitHub Pages</p>
-        </div>
+        </main>
+
+        <footer>
+            <p>数据来源：Inoreader RSS | 每日 07:30 自动更新</p>
+            <p style="margin-top: 8px;">由 OpenClaw 自动生成 · 托管于 GitHub Pages</p>
+        </footer>
     </div>
+
+    <script>
+        // 新闻数据 - 将被定时任务自动替换
+        const NEWS_DATA = {
+            "date": "2026-02-25",
+            "updateTime": "2026-02-25 07:30",
+            "hot": [],
+            "tech": [],
+            "ai": [],
+            "business": []
+        };
+
+        function formatTime(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleString('zh-CN', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        function renderNewsItem(item, isHot = false) {
+            const hotBadge = isHot ? '<span class="hot-badge">HOT</span>' : '';
+            const tags = item.tags ? item.tags.map(t => `<span class="tag">${t}</span>`).join('') : '';
+            
+            return `
+                <article class="news-item">
+                    <h3 class="news-title">
+                        <a href="${item.url}" target="_blank" rel="noopener">${item.title}${hotBadge}</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span class="news-source">${item.source || 'Unknown'}</span>
+                        <span>${item.time || ''}</span>
+                    </div>
+                    <p class="news-summary">${item.summary || ''}</p>
+                    ${tags}
+                </article>
+            `;
+        }
+
+        function renderSection(title, items, isHot = false) {
+            if (!items || items.length === 0) return '';
+            
+            return `
+                <section class="section">
+                    <h2 class="section-title">${title}</h2>
+                    ${items.map(item => renderNewsItem(item, isHot)).join('')}
+                </section>
+            `;
+        }
+
+        function render() {
+            const content = document.getElementById('content');
+            const updateTime = document.getElementById('updateTime');
+            
+            updateTime.textContent = formatTime(NEWS_DATA.updateTime);
+            
+            if (!NEWS_DATA.hot.length && !NEWS_DATA.tech.length && !NEWS_DATA.ai.length && !NEWS_DATA.business.length) {
+                content.innerHTML = `
+                    <div class="empty-state">
+                        <p style="font-size: 48px; margin-bottom: 20px;">📭</p>
+                        <p>暂无今日新闻数据</p>
+                        <p style="margin-top: 10px; font-size: 14px;">请稍后再试，或联系管理员更新</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            content.innerHTML = `
+                ${renderSection('🔥 热点头条', NEWS_DATA.hot, true)}
+                ${renderSection('🤖 AI & 大模型', NEWS_DATA.ai)}
+                ${renderSection('💻 科技动态', NEWS_DATA.tech)}
+                ${renderSection('💼 商业资讯', NEWS_DATA.business)}
+            `;
+        }
+
+        // 页面加载时渲染
+        render();
+    </script>
 </body>
 </html>
