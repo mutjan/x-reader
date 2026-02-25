@@ -14,22 +14,23 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: #0f1419;
             color: #e7e9ea;
-            line-height: 1.6;
+            line-height: 1.5;
+            font-size: 14px;
         }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 15px;
         }
         header {
             text-align: center;
-            padding: 40px 0;
+            padding: 20px 0;
             border-bottom: 1px solid #2f3336;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
+            font-size: 24px;
+            margin-bottom: 5px;
             background: linear-gradient(135deg, #1d9bf0, #00ba7c);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -37,12 +38,7 @@
         }
         .subtitle {
             color: #8899a6;
-            font-size: 16px;
-        }
-        .update-time {
-            color: #8899a6;
-            font-size: 14px;
-            margin-top: 10px;
+            font-size: 13px;
         }
         
         /* 日期切换器 */
@@ -50,22 +46,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
-            padding: 15px;
+            gap: 10px;
+            margin: 15px 0;
+            padding: 10px;
             background: #16181c;
-            border-radius: 12px;
+            border-radius: 8px;
             border: 1px solid #2f3336;
+            flex-wrap: wrap;
         }
         .date-btn {
             background: #1d9bf0;
             color: white;
             border: none;
-            padding: 8px 16px;
-            border-radius: 8px;
+            padding: 6px 12px;
+            border-radius: 6px;
             cursor: pointer;
-            font-size: 14px;
-            transition: background 0.2s;
+            font-size: 12px;
         }
         .date-btn:hover {
             background: #1a8cd8;
@@ -75,61 +71,104 @@
             cursor: not-allowed;
         }
         .current-date {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             color: #e7e9ea;
-            min-width: 120px;
+            min-width: 100px;
             text-align: center;
         }
-        .date-list {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 10px;
-        }
         .date-chip {
-            padding: 6px 12px;
+            padding: 4px 10px;
             background: #2f3336;
-            border-radius: 20px;
-            font-size: 13px;
+            border-radius: 15px;
+            font-size: 12px;
             cursor: pointer;
-            transition: all 0.2s;
         }
-        .date-chip:hover {
+        .date-chip:hover, .date-chip.active {
             background: #1d9bf0;
         }
-        .date-chip.active {
-            background: #1d9bf0;
-            font-weight: 600;
+        .update-time {
+            color: #8899a6;
+            font-size: 12px;
+            margin-top: 5px;
         }
         
-        .section {
-            margin-bottom: 40px;
-        }
-        .section-title {
-            font-size: 24px;
-            color: #1d9bf0;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #1d9bf0;
-        }
-        .news-item {
+        /* 表格样式 */
+        .news-table {
+            width: 100%;
+            border-collapse: collapse;
             background: #16181c;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 16px;
+            border-radius: 8px;
+            overflow: hidden;
             border: 1px solid #2f3336;
-            transition: border-color 0.2s;
         }
-        .news-item:hover {
-            border-color: #1d9bf0;
-        }
-        .news-title {
-            font-size: 18px;
+        .news-table th {
+            background: #1d9bf0;
+            color: white;
+            padding: 10px 8px;
+            text-align: left;
             font-weight: 600;
-            margin-bottom: 10px;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+        .news-table th:first-child {
+            width: 80px;
+        }
+        .news-table th:nth-child(2) {
+            width: 25%;
+        }
+        .news-table th:nth-child(4) {
+            width: 60px;
+            text-align: center;
+        }
+        .news-table th:last-child {
+            width: 80px;
+            text-align: center;
+        }
+        .news-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #2f3336;
+            vertical-align: top;
+        }
+        .news-table tr:hover {
+            background: #1d9bf010;
+        }
+        .news-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* 类型标签 */
+        .type-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .type-hot {
+            background: #f4212e;
+            color: white;
+        }
+        .type-ai {
+            background: #8b5cf6;
+            color: white;
+        }
+        .type-tech {
+            background: #1d9bf0;
+            color: white;
+        }
+        .type-business {
+            background: #00ba7c;
+            color: white;
+        }
+        
+        /* 标题 */
+        .news-title {
+            font-weight: 600;
             color: #e7e9ea;
+            margin-bottom: 4px;
+            font-size: 14px;
         }
         .news-title a {
             color: inherit;
@@ -137,74 +176,70 @@
         }
         .news-title a:hover {
             color: #1d9bf0;
+            text-decoration: underline;
         }
-        .news-meta {
-            display: flex;
-            gap: 15px;
-            color: #8899a6;
-            font-size: 13px;
-            margin-bottom: 10px;
-        }
-        .news-source {
-            color: #00ba7c;
-        }
+        
+        /* 摘要 */
         .news-summary {
-            color: #c4cfd6;
-            font-size: 15px;
-            line-height: 1.7;
+            color: #8899a6;
+            font-size: 12px;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
-        .tag {
+        
+        /* 来源数量 */
+        .source-count {
+            text-align: center;
+            font-weight: 600;
+            color: #00ba7c;
+            font-size: 14px;
+        }
+        
+        /* 链接按钮 */
+        .link-btn {
             display: inline-block;
             padding: 4px 10px;
-            background: #1d9bf020;
-            color: #1d9bf0;
-            border-radius: 20px;
-            font-size: 12px;
-            margin-top: 10px;
-            margin-right: 5px;
-        }
-        .hot-badge {
-            display: inline-block;
-            padding: 2px 8px;
-            background: #f4212e;
+            background: #1d9bf0;
             color: white;
+            text-decoration: none;
             border-radius: 4px;
-            font-size: 11px;
-            font-weight: bold;
-            margin-left: 8px;
-            vertical-align: middle;
+            font-size: 12px;
+            text-align: center;
         }
+        .link-btn:hover {
+            background: #1a8cd8;
+        }
+        
+        /* 空状态 */
         .empty-state {
             text-align: center;
-            padding: 60px 20px;
+            padding: 40px;
             color: #8899a6;
         }
-        .loading {
-            text-align: center;
-            padding: 40px;
-        }
-        .spinner {
-            display: inline-block;
-            width: 32px;
-            height: 32px;
-            border: 3px solid #2f3336;
-            border-top-color: #1d9bf0;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
+        
         footer {
             text-align: center;
-            padding: 40px 0;
+            padding: 20px 0;
             color: #8899a6;
-            font-size: 13px;
+            font-size: 12px;
             border-top: 1px solid #2f3336;
-            margin-top: 40px;
+            margin-top: 20px;
         }
-        .hidden {
-            display: none;
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .news-table {
+                font-size: 12px;
+            }
+            .news-table th, .news-table td {
+                padding: 8px 6px;
+            }
+            .news-summary {
+                -webkit-line-clamp: 3;
+            }
         }
     </style>
 </head>
@@ -214,145 +249,142 @@
             <h1>📰 每日科技新闻摘要</h1>
             <p class="subtitle">Tech Daily Digest from Inoreader</p>
             
-            <!-- 日期切换器 -->
             <div class="date-selector">
                 <button class="date-btn" onclick="changeDate(-1)" id="prevBtn">◀ 前一天</button>
-                <span class="current-date" id="currentDate">加载中...</span>
+                <span class="current-date" id="currentDate">--</span>
                 <button class="date-btn" onclick="changeDate(1)" id="nextBtn">后一天 ▶</button>
             </div>
             
-            <div class="date-list" id="dateList"></div>
+            <div id="dateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
             
-            <p class="update-time">更新时间：<span id="updateTime">--</span></p>
+            <p class="update-time">更新时间：<span id="updateTime">--</span> | 共 <span id="totalCount">0</span> 条</p>
         </header>
 
         <main id="content">
-            <div class="loading">
-                <div class="spinner"></div>
-                <p style="margin-top: 15px; color: #8899a6;">正在加载新闻...</p>
-            </div>
+            <div class="empty-state">加载中...</div>
         </main>
 
         <footer>
             <p>数据来源：Inoreader RSS | 每日 07:30 自动更新</p>
-            <p style="margin-top: 8px;">由 OpenClaw 自动生成 · 托管于 GitHub Pages</p>
+            <p>由 OpenClaw 自动生成 · 托管于 GitHub Pages</p>
         </footer>
     </div>
 
     <script>
-        // 历史新闻数据 - 按日期索引
+        // 历史新闻数据
         const NEWS_ARCHIVE = {
-            "2026-02-25": {
-                "date": "2026-02-25",
-                "updateTime": "2026-02-25 15:55",
-                "hot": [
-                    {
-                        "title": "Meta与AMD达成600亿美元AI芯片超级协议",
-                        "url": "https://www.techmeme.com/",
-                        "source": "Techmeme / Reddit",
-                        "summary": "Meta宣布与AMD达成多年合作协议，部署高达6吉瓦（GW）的AMD Instinct GPU用于AI基础设施。这是AMD史上最大规模的AI芯片订单，Meta还将获得AMD认股权证，最高可持有10%股份。首批GPU预计于2026年交付。",
-                        "time": "2026-02-24",
-                        "tags": ["AI芯片", "Meta", "AMD"]
-                    },
-                    {
-                        "title": "OpenAI大幅下调支出预期：从1.4万亿降至6000亿美元",
-                        "url": "https://news.ycombinator.com/item?id=47140623",
-                        "source": "Hacker News",
-                        "summary": "OpenAI将2030年总支出预测从1.4万亿美元大幅削减至6000亿美元。同时预测2030年营收将超过2800亿美元，超过当前Meta的年收入。这一调整反映了更聚焦的投资策略。",
-                        "time": "2026-02-25",
-                        "tags": ["OpenAI", "AI投资"]
-                    },
-                    {
-                        "title": "Anthropic Claude Code引发安全圈恐慌",
-                        "url": "https://www.reddit.com/r/technology/comments/1rd4axq/infosec_community_panics_as_anthropic_rolls_out/",
-                        "source": "Reddit / Anthropic",
-                        "summary": "Anthropic最新AI模型在开源库中发现500多个此前未知的高危安全漏洞。信息安全社区对AI自动发现漏洞的能力既兴奋又担忧，担心这种能力被恶意利用。",
-                        "time": "2026-02-24",
-                        "tags": ["Anthropic", "安全", "Claude"]
-                    },
-                    {
-                        "title": "Stripe估值达1590亿美元",
-                        "url": "https://news.ycombinator.com/item?id=47137711",
-                        "source": "Stripe / Hacker News",
-                        "summary": "Stripe发布2025年度公开信，公司估值升至1590亿美元。引发关于其IPO计划和2000+私人投资者结构的讨论。公司表示将继续专注于支付基础设施的全球化扩张。",
-                        "time": "2026-02-24",
-                        "tags": ["Stripe", "金融科技", "IPO"]
-                    },
-                    {
-                        "title": "苹果Mac mini将在休斯顿新工厂生产",
-                        "url": "https://www.apple.com/",
-                        "source": "Apple",
-                        "summary": "苹果宣布Mac mini将在美国休斯顿的新工厂生产，这是苹果将部分生产线迁回美国本土的重要举措。新工厂预计将创造数千个就业岗位。",
-                        "time": "2026-02-25",
-                        "tags": ["Apple", "制造业", "美国"]
-                    }
-                ],
-                "ai": [
-                    {
-                        "title": "AI正成为日常犯罪工作流的一部分",
-                        "url": "https://www.reddit.com/r/technology/comments/1rdakq0/ai_is_becoming_part_of_everyday_criminal_workflows/",
-                        "source": "Reddit",
-                        "summary": "报告显示AI工具已被犯罪分子广泛采用，用于提升诈骗效率和规模。从语音克隆到深度伪造，AI技术正在降低犯罪门槛。",
-                        "time": "2026-02-24",
-                        "tags": ["AI安全", "犯罪"]
-                    },
-                    {
-                        "title": "华为2025年销售收入超8800亿元",
-                        "url": "https://www.sznews.com/news/content/2026-02/25/content_31955465.htm",
-                        "source": "深圳新闻网",
-                        "summary": "华为董事长梁华在全省高质量发展大会上透露，2025年销售收入超过8800亿元。同时强调打造开源、开放的AI生态，继续加大研发投入。",
-                        "time": "2026-02-25",
-                        "tags": ["华为", "AI生态"]
-                    },
-                    {
-                        "title": "AI芯片赛道迎来技术与需求双轮驱动",
-                        "url": "https://finance.eastmoney.com/a/202602253653169017.html",
-                        "source": "东方财富",
-                        "summary": "国内算力与AI芯片需求高速增长，多家公司2025年业绩预增。融资客抢筹12只AI芯片概念股，行业空间广阔。",
-                        "time": "2026-02-25",
-                        "tags": ["AI芯片", "投资"]
-                    }
-                ],
-                "tech": [
-                    {
-                        "title": "Nvidia寻求Linux开发者推进开源驱动",
-                        "url": "https://www.reddit.com/r/technology/comments/1rd85hv/nvidia_is_also_hunting_for_linux_developers_to/",
-                        "source": "Reddit",
-                        "summary": "Nvidia正在招聘Linux开发者来帮助推进开源GPU驱动。这一举措被认为是Nvidia对开源社区压力的回应，也可能与AI工作负载对Linux系统的依赖增加有关。",
-                        "time": "2026-02-24",
-                        "tags": ["Nvidia", "Linux", "开源"]
-                    },
-                    {
-                        "title": "AI债务狂欢如何打破超大规模企业的默契",
-                        "url": "https://www.reddit.com/r/technology/comments/1rcddik/how_the_ai_debt_binge_shattered_hyperscalers/",
-                        "source": "Reddit",
-                        "summary": "OpenAI和Anthropic等AI公司面临巨大支出压力，分析师认为它们'在借来的时间上生存'。只有Google和xAI可能在这场消耗战中幸存。",
-                        "time": "2026-02-23",
-                        "tags": ["AI投资", "超大规模企业"]
-                    },
-                    {
-                        "title": "新的汽车芯片短缺正在酝酿",
-                        "url": "https://www.reddit.com/r/technology/comments/1rc8dby/a_new_car_chip_shortage_is_brewingand_its_all_ais/",
-                        "source": "Reddit",
-                        "summary": "AI需求正在挤压传统芯片产能，即使是汽车常用的旧制程节点也受到影响。分析师警告汽车行业可能面临新一轮芯片短缺。",
-                        "time": "2026-02-23",
-                        "tags": ["芯片短缺", "汽车", "AI"]
-                    }
-                ],
-                "business": [
-                    {
-                        "title": "海南省发布'人工智能+'行动方案",
-                        "url": "https://www.tmtpost.com/7888819.html",
-                        "source": "钛媒体",
-                        "summary": "海南省印发《推动'人工智能+'行动方案（2026-2028年）》，重点推动AI在发射安全控制、卫星数据智能处理等领域的应用。",
-                        "time": "2026-02-25",
-                        "tags": ["政策", "海南", "AI"]
-                    }
-                ]
-            }
+            "2026-02-25": [
+                {
+                    "type": "hot",
+                    "typeName": "热点",
+                    "title": "Meta与AMD达成600亿美元AI芯片超级协议",
+                    "summary": "Meta宣布与AMD达成多年合作协议，部署高达6吉瓦（GW）的AMD Instinct GPU用于AI基础设施。这是AMD史上最大规模的AI芯片订单，Meta还将获得AMD认股权证，最高可持有10%股份。",
+                    "sources": 3,
+                    "url": "https://www.techmeme.com/",
+                    "sourceNames": "Techmeme, Reddit, CNBC"
+                },
+                {
+                    "type": "hot",
+                    "typeName": "热点",
+                    "title": "OpenAI大幅下调支出预期：从1.4万亿降至6000亿美元",
+                    "summary": "OpenAI将2030年总支出预测从1.4万亿美元大幅削减至6000亿美元。同时预测2030年营收将超过2800亿美元，超过当前Meta的年收入。",
+                    "sources": 2,
+                    "url": "https://news.ycombinator.com/item?id=47140623",
+                    "sourceNames": "Hacker News, Bloomberg"
+                },
+                {
+                    "type": "hot",
+                    "typeName": "热点",
+                    "title": "Anthropic Claude Code引发安全圈恐慌",
+                    "summary": "Anthropic最新AI模型在开源库中发现500多个此前未知的高危安全漏洞。信息安全社区对AI自动发现漏洞的能力既兴奋又担忧。",
+                    "sources": 4,
+                    "url": "https://www.reddit.com/r/technology/comments/1rd4axq/",
+                    "sourceNames": "Reddit, TechCrunch, Ars Technica"
+                },
+                {
+                    "type": "hot",
+                    "typeName": "热点",
+                    "title": "Stripe估值达1590亿美元",
+                    "summary": "Stripe发布2025年度公开信，公司估值升至1590亿美元。引发关于其IPO计划和2000+私人投资者结构的讨论。",
+                    "sources": 2,
+                    "url": "https://news.ycombinator.com/item?id=47137711",
+                    "sourceNames": "Hacker News, Reuters"
+                },
+                {
+                    "type": "hot",
+                    "typeName": "热点",
+                    "title": "苹果Mac mini将在休斯顿新工厂生产",
+                    "summary": "苹果宣布Mac mini将在美国休斯顿的新工厂生产，这是苹果将部分生产线迁回美国本土的重要举措。",
+                    "sources": 2,
+                    "url": "https://www.apple.com/",
+                    "sourceNames": "Apple, Bloomberg"
+                },
+                {
+                    "type": "ai",
+                    "typeName": "AI",
+                    "title": "AI正成为日常犯罪工作流的一部分",
+                    "summary": "报告显示AI工具已被犯罪分子广泛采用，用于提升诈骗效率和规模。从语音克隆到深度伪造，AI技术正在降低犯罪门槛。",
+                    "sources": 3,
+                    "url": "https://www.reddit.com/r/technology/comments/1rdakq0/",
+                    "sourceNames": "Reddit, The Guardian"
+                },
+                {
+                    "type": "ai",
+                    "typeName": "AI",
+                    "title": "华为2025年销售收入超8800亿元",
+                    "summary": "华为董事长梁华在全省高质量发展大会上透露，2025年销售收入超过8800亿元。同时强调打造开源、开放的AI生态。",
+                    "sources": 2,
+                    "url": "https://www.sznews.com/news/content/2026-02/25/",
+                    "sourceNames": "深圳新闻网, 新浪科技"
+                },
+                {
+                    "type": "ai",
+                    "typeName": "AI",
+                    "title": "AI芯片赛道迎来技术与需求双轮驱动",
+                    "summary": "国内算力与AI芯片需求高速增长，多家公司2025年业绩预增。融资客抢筹12只AI芯片概念股。",
+                    "sources": 2,
+                    "url": "https://finance.eastmoney.com/a/202602253653169017.html",
+                    "sourceNames": "东方财富, 证券时报"
+                },
+                {
+                    "type": "tech",
+                    "typeName": "科技",
+                    "title": "Nvidia寻求Linux开发者推进开源驱动",
+                    "summary": "Nvidia正在招聘Linux开发者来帮助推进开源GPU驱动。这一举措被认为是Nvidia对开源社区压力的回应。",
+                    "sources": 2,
+                    "url": "https://www.reddit.com/r/technology/comments/1rd85hv/",
+                    "sourceNames": "Reddit, Phoronix"
+                },
+                {
+                    "type": "tech",
+                    "typeName": "科技",
+                    "title": "AI债务狂欢如何打破超大规模企业的默契",
+                    "summary": "OpenAI和Anthropic等AI公司面临巨大支出压力，分析师认为它们'在借来的时间上生存'。",
+                    "sources": 3,
+                    "url": "https://www.reddit.com/r/technology/comments/1rcddik/",
+                    "sourceNames": "Reddit, Financial Times"
+                },
+                {
+                    "type": "tech",
+                    "typeName": "科技",
+                    "title": "新的汽车芯片短缺正在酝酿",
+                    "summary": "AI需求正在挤压传统芯片产能，即使是汽车常用的旧制程节点也受到影响。分析师警告汽车行业可能面临新一轮芯片短缺。",
+                    "sources": 2,
+                    "url": "https://www.reddit.com/r/technology/comments/1rc8dby/",
+                    "sourceNames": "Reddit, Automotive News"
+                },
+                {
+                    "type": "business",
+                    "typeName": "商业",
+                    "title": "海南省发布'人工智能+'行动方案",
+                    "summary": "海南省印发《推动'人工智能+'行动方案（2026-2028年）》，重点推动AI在发射安全控制、卫星数据智能处理等领域的应用。",
+                    "sources": 2,
+                    "url": "https://www.tmtpost.com/7888819.html",
+                    "sourceNames": "钛媒体, 海南省政府"
+                }
+            ]
         };
 
-        // 当前显示的日期
         let currentDate = getLatestDate();
 
         function getLatestDate() {
@@ -361,39 +393,31 @@
         }
 
         function getAllDates() {
-            return Object.keys(NEWS_ARCHIVE).sort().reverse();
+            return Object.keys(NEWS_ARCHIVE).sort();
         }
 
         function formatDate(dateStr) {
             const date = new Date(dateStr);
-            return date.toLocaleDateString('zh-CN', {
-                month: 'short',
-                day: 'numeric'
-            });
+            return `${date.getMonth() + 1}/${date.getDate()}`;
         }
 
-        function formatTime(dateStr) {
-            if (!dateStr) return '--';
-            const date = new Date(dateStr);
-            return date.toLocaleString('zh-CN', {
-                year: 'numeric',
-                month: '2-digit',
-                day: '2-digit',
-                hour: '2-digit',
-                minute: '2-digit'
-            });
+        function getTypeClass(type) {
+            const map = {
+                'hot': 'type-hot',
+                'ai': 'type-ai',
+                'tech': 'type-tech',
+                'business': 'type-business'
+            };
+            return map[type] || 'type-tech';
         }
 
-        function renderDateList() {
-            const dateList = document.getElementById('dateList');
+        function renderDateChips() {
+            const container = document.getElementById('dateChips');
             const dates = getAllDates();
             
-            dateList.innerHTML = dates.map(date => `
+            container.innerHTML = dates.map(date => `
                 <span class="date-chip ${date === currentDate ? 'active' : ''}" 
-                      onclick="selectDate('${date}')"
-                      title="${date}">
-                    ${formatDate(date)}
-                </span>
+                      onclick="selectDate('${date}')">${formatDate(date)}</span>
             `).join('');
         }
 
@@ -403,7 +427,7 @@
         }
 
         function changeDate(direction) {
-            const dates = getAllDates().sort();
+            const dates = getAllDates();
             const currentIndex = dates.indexOf(currentDate);
             const newIndex = currentIndex + direction;
             
@@ -414,79 +438,67 @@
         }
 
         function updateButtons() {
-            const dates = getAllDates().sort();
+            const dates = getAllDates();
             const currentIndex = dates.indexOf(currentDate);
             
             document.getElementById('prevBtn').disabled = currentIndex <= 0;
             document.getElementById('nextBtn').disabled = currentIndex >= dates.length - 1;
         }
 
-        function renderNewsItem(item, isHot = false) {
-            const hotBadge = isHot ? '<span class="hot-badge">HOT</span>' : '';
-            const tags = item.tags ? item.tags.map(t => `<span class="tag">${t}</span>`).join('') : '';
-            
-            return `
-                <article class="news-item">
-                    <h3 class="news-title">
-                        <a href="${item.url}" target="_blank" rel="noopener">${item.title}${hotBadge}</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span class="news-source">${item.source || 'Unknown'}</span>
-                        <span>${item.time || ''}</span>
-                    </div>
-                    <p class="news-summary">${item.summary || ''}</p>
-                    ${tags}
-                </article>
-            `;
-        }
-
-        function renderSection(title, items, isHot = false) {
-            if (!items || items.length === 0) return '';
-            
-            return `
-                <section class="section">
-                    <h2 class="section-title">${title}</h2>
-                    ${items.map(item => renderNewsItem(item, isHot)).join('')}
-                </section>
-            `;
-        }
-
         function render() {
             const content = document.getElementById('content');
             const currentDateEl = document.getElementById('currentDate');
             const updateTime = document.getElementById('updateTime');
+            const totalCount = document.getElementById('totalCount');
             
-            // 获取当前日期的数据
-            const newsData = NEWS_ARCHIVE[currentDate];
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
             
-            // 更新日期显示
             currentDateEl.textContent = currentDate;
-            renderDateList();
+            renderDateChips();
             updateButtons();
             
-            if (!newsData) {
+            if (newsList.length === 0) {
                 content.innerHTML = `
                     <div class="empty-state">
-                        <p style="font-size: 48px; margin-bottom: 20px;">📭</p>
-                        <p>暂无 ${currentDate} 的新闻数据</p>
-                        <p style="margin-top: 10px; font-size: 14px;">请选择其他日期</p>
+                        <p>📭 暂无 ${currentDate} 的新闻数据</p>
                     </div>
                 `;
                 updateTime.textContent = '--';
+                totalCount.textContent = '0';
                 return;
             }
             
-            updateTime.textContent = formatTime(newsData.updateTime);
+            updateTime.textContent = currentDate + ' 07:30';
+            totalCount.textContent = newsList.length;
             
             content.innerHTML = `
-                ${renderSection('🔥 热点头条', newsData.hot, true)}
-                ${renderSection('🤖 AI & 大模型', newsData.ai)}
-                ${renderSection('💻 科技动态', newsData.tech)}
-                ${renderSection('💼 商业资讯', newsData.business)}
+                <table class="news-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>标题</th>
+                            <th>摘要</th>
+                            <th>来源数</th>
+                            <th>链接</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${newsList.map(item => `
+                            <tr>
+                                <td><span class="type-tag ${getTypeClass(item.type)}">${item.typeName}</span></td>
+                                <td>
+                                    <div class="news-title">${item.title}</div>
+                                </td>
+                                <td><div class="news-summary" title="${item.summary}">${item.summary}</div></td>
+                                <td><div class="source-count" title="${item.sourceNames}">${item.sources}</div></td>
+                                <td><a href="${item.url}" target="_blank" class="link-btn">查看 →</a></td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
             `;
         }
 
-        // 页面加载时渲染
         render();
     </script>
 </body>
