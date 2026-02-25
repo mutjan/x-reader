@@ -702,8 +702,8 @@
             if (selectedNews.length === 0) return;
             
             const textToCopy = selectedNews.map(item => {
-                const firstLink = item.sourceLinks && item.sourceLinks[0] ? item.sourceLinks[0].url : '';
-                return `${item.title}\n${firstLink}`;
+                const links = item.sourceLinks?.map(l => l.url).join('\n') || '';
+                return `${item.title}\n${links}`;
             }).join('\n\n');
             
             navigator.clipboard.writeText(textToCopy).then(() => {
@@ -718,8 +718,8 @@
             
             if (!item) return;
             
-            const firstLink = item.sourceLinks && item.sourceLinks[0] ? item.sourceLinks[0].url : '';
-            const textToCopy = `${item.title}\n${firstLink}`;
+            const links = item.sourceLinks?.map(l => l.url).join('\n') || '';
+            const textToCopy = `${item.title}\n${links}`;
             
             navigator.clipboard.writeText(textToCopy).then(() => {
                 showToast('已复制');
