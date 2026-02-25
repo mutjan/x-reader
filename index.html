@@ -422,9 +422,11 @@
             .news-table td {
                 padding: 8px 4px;
             }
-            /* 手机端：隐藏消息源列，摘要占更多空间 */
+            /* 手机端：隐藏消息源列和来源数列，摘要占更多空间 */
             .news-table th:nth-child(5),
-            .news-table td:nth-child(5) {
+            .news-table td:nth-child(5),
+            .news-table th:nth-child(6),
+            .news-table td:nth-child(6) {
                 display: none;
             }
             /* 调整其他列宽度 */
@@ -434,32 +436,31 @@
             }
             .news-table th:nth-child(2),
             .news-table td:nth-child(2) {
-                width: 50px;
+                width: 45px;
             }
             .news-table th:nth-child(3),
             .news-table td:nth-child(3) {
-                width: 35%;
+                width: 30%;
             }
             .news-table th:nth-child(4),
             .news-table td:nth-child(4) {
                 width: auto;
+                min-width: 45%;
             }
-            .news-table th:nth-child(6),
-            .news-table td:nth-child(6),
             .news-table th:nth-child(7),
             .news-table td:nth-child(7) {
-                width: 40px;
+                width: 45px;
             }
             .news-title {
                 font-size: 13px;
             }
             .news-summary {
                 font-size: 12px;
-                line-height: 1.4;
+                line-height: 1.5;
             }
             .type-tag {
                 font-size: 10px;
-                padding: 2px 6px;
+                padding: 2px 5px;
             }
             .batch-actions {
                 padding: 8px;
@@ -475,10 +476,19 @@
                 padding: 5px 10px;
                 font-size: 11px;
             }
-            /* X表格手机端优化 */
+            /* X表格手机端优化 - 隐藏讨论用户列 */
             .x-table th:nth-child(4),
             .x-table td:nth-child(4) {
                 display: none;
+            }
+            .x-table th:nth-child(2),
+            .x-table td:nth-child(2) {
+                width: 35%;
+            }
+            .x-table th:nth-child(3),
+            .x-table td:nth-child(3) {
+                width: auto;
+                min-width: 50%;
             }
         }
     </style>
