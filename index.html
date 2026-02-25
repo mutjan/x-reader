@@ -241,7 +241,7 @@
             border-bottom: none;
         }
         
-        /* X帖子表格样式 */
+        /* X事件表格样式 */
         .x-table th {
             background: #8b5cf6;
         }
@@ -353,6 +353,17 @@
             border-color: #00ba7c;
         }
         
+        /* X事件样式 */
+        .x-event-users {
+            color: #8899a6;
+            font-size: 11px;
+            margin-top: 4px;
+        }
+        .x-event-posts {
+            color: #1d9bf0;
+            font-size: 11px;
+        }
+        
         /* Toast 提示 */
         .toast {
             position: fixed;
@@ -401,7 +412,7 @@
             
             <div class="tabs">
                 <button class="tab active" onclick="switchTab('news')" id="tab-news">📰 Inoreader 新闻</button>
-                <button class="tab" onclick="switchTab('x')" id="tab-x">🐦 X 帖子</button>
+                <button class="tab" onclick="switchTab('x')" id="tab-x">🐦 X 热议</button>
             </div>
         </header>
 
@@ -435,10 +446,18 @@
             </main>
         </div>
 
-        <!-- X 帖子 Tab -->
+        <!-- X 热议 Tab -->
         <div id="x-panel" class="hidden">
+            <div class="date-selector">
+                <button class="date-btn" onclick="xChangeDate(-1)" id="xPrevBtn">◀ 前一天</button>
+                <span class="current-date" id="xCurrentDate">--</span>
+                <button class="date-btn" onclick="xChangeDate(1)" id="xNextBtn">后一天 ▶</button>
+            </div>
+            
+            <div id="xDateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
+            
             <p class="update-time" style="text-align: center; margin-bottom: 15px;">
-                X 列表 RSS | 每小时更新 | 共 <span id="xTotalCount">0</span> 条
+                X 热议聚合 | 每小时更新 | <span id="xTotalCount">0</span> 个话题
             </p>
 
             <div class="batch-actions">
@@ -499,143 +518,65 @@
                         {"name": "TechCrunch", "url": "https://techcrunch.com/2026/02/24/anthropic-claude-security-flaws/"},
                         {"name": "Ars", "url": "https://arstechnica.com/security/2026/02/anthropic-ai-finds-500-security-flaws/"}
                     ]
-                },
+                }
+            ]
+        };
+
+        // ==================== X 热议数据（按日期归档） ====================
+        const X_EVENTS_ARCHIVE = {
+            "2026-02-25": [
                 {
-                    "type": "hot",
-                    "typeName": "热点",
-                    "title": "Stripe估值达1590亿美元",
-                    "summary": "Stripe发布2025年度公开信，公司估值升至1590亿美元。",
-                    "sources": 2,
-                    "sourceLinks": [
-                        {"name": "HN", "url": "https://news.ycombinator.com/item?id=47137711"},
-                        {"name": "Reuters", "url": "https://www.reuters.com/technology/stripe-valuation-159-billion-2026-02-24/"}
+                    "id": "x-1",
+                    "title": "Meta与AMD达成600亿美元AI芯片协议",
+                    "summary": "X用户热议Meta与AMD的重大合作协议。这是AMD史上最大订单，Meta将部署6吉瓦AI芯片。用户关注这对Nvidia市场地位的影响，以及AI基础设施军备竞赛的加剧。",
+                    "users": ["@techinsider", "@semianalysis", "@dril", "@elonmusk"],
+                    "postCount": 28,
+                    "urls": [
+                        "https://x.com/techinsider/status/1234567890",
+                        "https://x.com/semianalysis/status/1234567891",
+                        "https://x.com/dril/status/1234567892"
                     ]
                 },
                 {
-                    "type": "hot",
-                    "typeName": "热点",
-                    "title": "苹果Mac mini将在休斯顿新工厂生产",
-                    "summary": "苹果宣布Mac mini将在美国休斯顿的新工厂生产。",
-                    "sources": 2,
-                    "sourceLinks": [
-                        {"name": "Apple", "url": "https://www.apple.com/newsroom/2026/02/mac-mini-houston-factory/"},
-                        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026/02/25/apple-mac-mini-houston"}
+                    "id": "x-2",
+                    "title": "OpenAI支出预期大幅下调",
+                    "summary": "OpenAI将2030年支出预测从1.4万亿降至6000亿美元，引发对AI泡沫的讨论。部分用户认为这是理性回归，也有人担忧OpenAI的财务可持续性。",
+                    "users": ["@sama", "@karpathy", "@bindureddy", "@EMostaque"],
+                    "postCount": 45,
+                    "urls": [
+                        "https://x.com/sama/status/1234567893",
+                        "https://x.com/karpathy/status/1234567894"
                     ]
                 },
                 {
-                    "type": "ai",
-                    "typeName": "AI",
-                    "title": "AI正成为日常犯罪工作流的一部分",
-                    "summary": "报告显示AI工具已被犯罪分子广泛采用，用于提升诈骗效率和规模。",
-                    "sources": 3,
-                    "sourceLinks": [
-                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rdakq0/ai_criminal_workflows/"},
-                        {"name": "Guardian", "url": "https://www.theguardian.com/technology/2026/feb/24/ai-crime"}
+                    "id": "x-3",
+                    "title": "Claude Code发现500+安全漏洞",
+                    "summary": "Anthropic的Claude Code在开源库中发现大量未知安全漏洞，安全社区反应两极。有人赞叹AI安全能力，也有人担忧AI武器化风险。",
+                    "users": ["@anthropic", "@matthew_d_green", "@taviso", "@halvarflake"],
+                    "postCount": 67,
+                    "urls": [
+                        "https://x.com/anthropic/status/1234567895",
+                        "https://x.com/matthew_d_green/status/1234567896"
                     ]
                 },
                 {
-                    "type": "ai",
-                    "typeName": "AI",
-                    "title": "华为2025年销售收入超8800亿元",
-                    "summary": "华为董事长梁华透露，2025年销售收入超过8800亿元。",
-                    "sources": 2,
-                    "sourceLinks": [
-                        {"name": "深圳新闻", "url": "https://www.sznews.com/news/content/2026-02/25/content_31955465.htm"},
-                        {"name": "新浪", "url": "https://tech.sina.com.cn/2026-02-25/doc-ifynuvyc3749654.shtml"}
-                    ]
-                },
-                {
-                    "type": "ai",
-                    "typeName": "AI",
-                    "title": "AI芯片赛道迎来技术与需求双轮驱动",
-                    "summary": "国内算力与AI芯片需求高速增长，多家公司2025年业绩预增。",
-                    "sources": 2,
-                    "sourceLinks": [
-                        {"name": "东财", "url": "https://finance.eastmoney.com/a/202602253653169017.html"},
-                        {"name": "证券时报", "url": "http://www.stcn.com/article/detail/1234567.html"}
-                    ]
-                },
-                {
-                    "type": "tech",
-                    "typeName": "科技",
-                    "title": "Nvidia寻求Linux开发者推进开源驱动",
-                    "summary": "Nvidia正在招聘Linux开发者来帮助推进开源GPU驱动。",
-                    "sources": 2,
-                    "sourceLinks": [
-                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rd85hv/nvidia_linux_developers/"},
-                        {"name": "Phoronix", "url": "https://www.phoronix.com/news/Nvidia-Linux-Open-Source-2026"}
-                    ]
-                },
-                {
-                    "type": "tech",
-                    "typeName": "科技",
-                    "title": "AI债务狂欢如何打破超大规模企业的默契",
-                    "summary": "OpenAI和Anthropic等AI公司面临巨大支出压力。",
-                    "sources": 3,
-                    "sourceLinks": [
-                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rcddik/ai_debt_binge/"},
-                        {"name": "FT", "url": "https://www.ft.com/content/ai-debt-hyperscalers"}
-                    ]
-                },
-                {
-                    "type": "tech",
-                    "typeName": "科技",
-                    "title": "新的汽车芯片短缺正在酝酿",
-                    "summary": "AI需求正在挤压传统芯片产能，汽车行业可能面临新一轮芯片短缺。",
-                    "sources": 2,
-                    "sourceLinks": [
-                        {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rc8dby/car_chip_shortage/"},
-                        {"name": "AutoNews", "url": "https://www.autonews.com/chip-shortage-2026"}
-                    ]
-                },
-                {
-                    "type": "business",
-                    "typeName": "商业",
-                    "title": "海南省发布'人工智能+'行动方案",
-                    "summary": "海南省印发《推动'人工智能+'行动方案（2026-2028年）》。",
-                    "sources": 2,
-                    "sourceLinks": [
-                        {"name": "钛媒体", "url": "https://www.tmtpost.com/7888819.html"},
-                        {"name": "海南政府", "url": "http://www.hainan.gov.cn/hainan/zwgk/zcwj/zcjd/202602/t20260225_12345678.html"}
+                    "id": "x-4",
+                    "title": "Nvidia招聘Linux开源驱动开发者",
+                    "summary": "Nvidia罕见地招聘Linux开源驱动开发者，被解读为对开源社区压力的回应。用户讨论这是否会改善Nvidia在开源社区的形象。",
+                    "users": ["@nvidia", "@linustorvalds", "@phoronix"],
+                    "postCount": 15,
+                    "urls": [
+                        "https://x.com/nvidia/status/1234567897",
+                        "https://x.com/linustorvalds/status/1234567898"
                     ]
                 }
             ]
         };
 
-        // ==================== X 帖子数据 ====================
-        const X_POSTS = [
-            {
-                "author": "Tech Insider",
-                "authorHandle": "@techinsider",
-                "content": "Breaking: New AI model achieves state-of-the-art results on multiple benchmarks. The model uses a novel architecture that reduces training time by 40%.",
-                "url": "https://x.com/techinsider/status/1234567890",
-                "time": "2小时前",
-                "likes": 1234,
-                "retweets": 567
-            },
-            {
-                "author": "AI Research Daily",
-                "authorHandle": "@airesearch",
-                "content": "Just published our latest paper on efficient transformer architectures. Check it out! The key innovation is a new attention mechanism that scales linearly with sequence length.",
-                "url": "https://x.com/airesearch/status/1234567891",
-                "time": "3小时前",
-                "likes": 892,
-                "retweets": 234
-            },
-            {
-                "author": "Dev News",
-                "authorHandle": "@devnews",
-                "content": "TypeScript 5.4 is out with exciting new features including improved type inference and faster compilation. Upgrade now! #TypeScript #JavaScript",
-                "url": "https://x.com/devnews/status/1234567892",
-                "time": "4小时前",
-                "likes": 2341,
-                "retweets": 890
-            }
-        ];
-
         // ==================== 全局状态 ====================
         let currentTab = 'news';
         let currentDate = getLatestDate();
+        let xCurrentDate = getXLatestDate();
         let currentSort = { field: null, order: 'desc' };
         let filteredType = null;
         let selectedItems = new Set();
@@ -755,7 +696,6 @@
             return result;
         }
 
-        // 多选功能
         function toggleSelection(index) {
             const key = `${currentDate}-${index}`;
             if (selectedItems.has(key)) {
@@ -901,7 +841,48 @@
                 </table>`;
         }
 
-        // ==================== X 帖子功能 ====================
+        // ==================== X 热议功能 ====================
+        function getXLatestDate() {
+            const dates = Object.keys(X_EVENTS_ARCHIVE).sort();
+            return dates[dates.length - 1] || new Date().toISOString().split('T')[0];
+        }
+
+        function getXAllDates() {
+            return Object.keys(X_EVENTS_ARCHIVE).sort();
+        }
+
+        function renderXDateChips() {
+            const container = document.getElementById('xDateChips');
+            const dates = getXAllDates();
+            container.innerHTML = dates.map(date => `
+                <span class="date-chip ${date === xCurrentDate ? 'active' : ''}" onclick="xSelectDate('${date}')">${formatDate(date)}</span>
+            `).join('');
+        }
+
+        function xSelectDate(date) {
+            xCurrentDate = date;
+            xSelectedItems.clear();
+            xUpdateBatchButtons();
+            renderXEvents();
+        }
+
+        function xChangeDate(direction) {
+            const dates = getXAllDates();
+            const currentIndex = dates.indexOf(xCurrentDate);
+            const newIndex = currentIndex + direction;
+            if (newIndex >= 0 && newIndex < dates.length) {
+                xCurrentDate = dates[newIndex];
+                renderXEvents();
+            }
+        }
+
+        function xUpdateButtons() {
+            const dates = getXAllDates();
+            const currentIndex = dates.indexOf(xCurrentDate);
+            document.getElementById('xPrevBtn').disabled = currentIndex <= 0;
+            document.getElementById('xNextBtn').disabled = currentIndex >= dates.length - 1;
+        }
+
         function xToggleSelection(index) {
             if (xSelectedItems.has(index)) {
                 xSelectedItems.delete(index);
@@ -909,51 +890,60 @@
                 xSelectedItems.add(index);
             }
             xUpdateBatchButtons();
-            renderXPosts();
+            renderXEvents();
         }
 
         function xSelectAll() {
-            const allSelected = X_POSTS.every((_, index) => xSelectedItems.has(index));
+            const events = X_EVENTS_ARCHIVE[xCurrentDate] || [];
+            const allSelected = events.every((_, index) => xSelectedItems.has(index));
+            
             if (allSelected) {
                 xSelectedItems.clear();
             } else {
-                X_POSTS.forEach((_, index) => xSelectedItems.add(index));
+                events.forEach((_, index) => xSelectedItems.add(index));
             }
             xUpdateBatchButtons();
-            renderXPosts();
+            renderXEvents();
         }
 
         function xClearSelection() {
             xSelectedItems.clear();
             xUpdateBatchButtons();
-            renderXPosts();
+            renderXEvents();
         }
 
         function xUpdateBatchButtons() {
+            const events = X_EVENTS_ARCHIVE[xCurrentDate] || [];
             document.getElementById('xSelectedCount').textContent = xSelectedItems.size;
             document.getElementById('xCopySelectedBtn').disabled = xSelectedItems.size === 0;
             document.getElementById('xSelectAllBtn').textContent = 
-                xSelectedItems.size === X_POSTS.length && X_POSTS.length > 0 ? '取消全选' : '全选';
+                xSelectedItems.size === events.length && events.length > 0 ? '取消全选' : '全选';
         }
 
         function xCopySelected() {
-            if (xSelectedItems.size === 0) return;
+            const events = X_EVENTS_ARCHIVE[xCurrentDate] || [];
+            const selectedEvents = events.filter((_, index) => xSelectedItems.has(index));
             
-            const selectedPosts = X_POSTS.filter((_, index) => xSelectedItems.has(index));
-            const textToCopy = selectedPosts.map(post => 
-                `${post.author} ${post.authorHandle}\n${post.content}\n${post.url}`
-            ).join('\n\n---\n\n');
+            if (selectedEvents.length === 0) return;
+            
+            const textToCopy = selectedEvents.map(event => {
+                const links = event.urls?.join('\n') || '';
+                return `${event.title}\n${links}`;
+            }).join('\n\n');
             
             navigator.clipboard.writeText(textToCopy).then(() => {
-                showToast(`已复制 ${xSelectedItems.size} 条`);
+                showToast(`已复制 ${selectedEvents.length} 条`);
             });
         }
 
         function xCopySingle(index) {
-            const post = X_POSTS[index];
-            if (!post) return;
+            const events = X_EVENTS_ARCHIVE[xCurrentDate] || [];
+            const event = events[index];
             
-            const textToCopy = `${post.author} ${post.authorHandle}\n${post.content}\n${post.url}`;
+            if (!event) return;
+            
+            const links = event.urls?.join('\n') || '';
+            const textToCopy = `${event.title}\n${links}`;
             
             navigator.clipboard.writeText(textToCopy).then(() => {
                 showToast('已复制');
@@ -969,47 +959,58 @@
             });
         }
 
-        function renderXPosts() {
+        function renderXEvents() {
             const content = document.getElementById('x-content');
+            const currentDateEl = document.getElementById('xCurrentDate');
             const totalCount = document.getElementById('xTotalCount');
             
-            totalCount.textContent = X_POSTS.length;
+            const events = X_EVENTS_ARCHIVE[xCurrentDate] || [];
+            
+            currentDateEl.textContent = xCurrentDate;
+            renderXDateChips();
+            xUpdateButtons();
             xUpdateBatchButtons();
             
-            if (X_POSTS.length === 0) {
-                content.innerHTML = `<div class="empty-state"><p>📭 暂无 X 帖子数据</p></div>`;
+            if (events.length === 0) {
+                content.innerHTML = `<div class="empty-state"><p>📭 暂无 ${xCurrentDate} 的X热议数据</p></div>`;
+                totalCount.textContent = '0';
                 return;
             }
+            
+            totalCount.textContent = events.length;
             
             content.innerHTML = `
                 <table class="news-table x-table">
                     <thead>
                         <tr>
                             <th width="30"><input type="checkbox" class="checkbox" onchange="xSelectAll()"></th>
-                            <th width="15%">作者</th>
-                            <th>内容</th>
-                            <th width="10%">时间</th>
-                            <th width="12%">互动</th>
+                            <th>热议话题</th>
+                            <th>中文摘要</th>
+                            <th width="15%">讨论用户</th>
+                            <th width="10%">帖子数</th>
                             <th width="50">复制</th>
                         </tr>
                     </thead>
                     <tbody>
-                        ${X_POSTS.map((post, index) => {
+                        ${events.map((event, index) => {
                             const isSelected = xSelectedItems.has(index);
+                            const userList = event.users?.join(', ') || '';
+                            const linksHtml = event.urls?.map((url, i) => 
+                                `<a href="${url}" target="_blank" class="source-link">帖子${i+1}</a>`
+                            ).join('') || '';
+                            
                             return `
                             <tr class="${isSelected ? 'selected' : ''}">
                                 <td><input type="checkbox" class="checkbox" ${isSelected ? 'checked' : ''} onchange="xToggleSelection(${index})"></td>
                                 <td>
-                                    <div style="font-weight: 600;">${post.author}</div>
-                                    <div style="color: #8899a6; font-size: 11px;">${post.authorHandle}</div>
+                                    <div class="news-title">${event.title}</div>
+                                    <div class="source-links" style="margin-top: 5px;">${linksHtml}</div>
                                 </td>
-                                <td><div class="news-summary">${post.content}</div></td>
-                                <td><div style="color: #8899a6; font-size: 12px;">${post.time}</div></td>
+                                <td><div class="news-summary">${event.summary}</div></td>
                                 <td>
-                                    <div style="font-size: 12px; color: #8899a6;">
-                                        ❤️ ${post.likes} 🔄 ${post.retweets}
-                                    </div>
+                                    <div class="x-event-users" title="${userList}">${userList}</div>
                                 </td>
+                                <td><div class="source-count">${event.postCount}</div></td>
                                 <td>
                                     <button class="copy-btn" id="x-copy-btn-${index}" onclick="xCopySingle(${index})">复制</button>
                                 </td>
@@ -1028,7 +1029,7 @@
 
         // 初始化
         renderNews();
-        renderXPosts();
+        renderXEvents();
     </script>
 </body>
 </html>
