@@ -402,6 +402,85 @@
         .hidden {
             display: none;
         }
+        
+        /* 手机端优化 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 8px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .tab {
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+            .news-table {
+                font-size: 13px;
+            }
+            .news-table th,
+            .news-table td {
+                padding: 8px 4px;
+            }
+            /* 手机端：隐藏消息源列，摘要占更多空间 */
+            .news-table th:nth-child(5),
+            .news-table td:nth-child(5) {
+                display: none;
+            }
+            /* 调整其他列宽度 */
+            .news-table th:first-child,
+            .news-table td:first-child {
+                width: 25px;
+            }
+            .news-table th:nth-child(2),
+            .news-table td:nth-child(2) {
+                width: 50px;
+            }
+            .news-table th:nth-child(3),
+            .news-table td:nth-child(3) {
+                width: 35%;
+            }
+            .news-table th:nth-child(4),
+            .news-table td:nth-child(4) {
+                width: auto;
+            }
+            .news-table th:nth-child(6),
+            .news-table td:nth-child(6),
+            .news-table th:nth-child(7),
+            .news-table td:nth-child(7) {
+                width: 40px;
+            }
+            .news-title {
+                font-size: 13px;
+            }
+            .news-summary {
+                font-size: 12px;
+                line-height: 1.4;
+            }
+            .type-tag {
+                font-size: 10px;
+                padding: 2px 6px;
+            }
+            .batch-actions {
+                padding: 8px;
+            }
+            .batch-btn {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+            .sort-controls {
+                gap: 6px;
+            }
+            .sort-btn {
+                padding: 5px 10px;
+                font-size: 11px;
+            }
+            /* X表格手机端优化 */
+            .x-table th:nth-child(4),
+            .x-table td:nth-child(4) {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
