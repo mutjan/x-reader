@@ -504,17 +504,17 @@
             <p class="subtitle">Tech Daily Digest from Inoreader & X</p>
             
             <div class="tabs">
-                <button class="tab active" onclick="switchTab('news')" id="tab-news">📰 Inoreader 新闻</button>
-                <button class="tab" onclick="switchTab('x')" id="tab-x">🐦 X 热议</button>
+                <button class="tab" onclick="switchTab('news')" id="tab-news">📰 Inoreader 新闻</button>
+                <button class="tab active" onclick="switchTab('x')" id="tab-x">🐦 X 热议</button>
             </div>
         </header>
 
         <!-- Inoreader 新闻 Tab -->
-        <div id="news-panel">
+        <div id="news-panel" class="hidden">
             <div class="date-selector">
-                <button class="date-btn" onclick="changeDate(-1)" id="prevBtn">◀ 前一天</button>
-                <span class="current-date" id="currentDate">--</span>
                 <button class="date-btn" onclick="changeDate(1)" id="nextBtn">后一天 ▶</button>
+                <span class="current-date" id="currentDate">--</span>
+                <button class="date-btn" onclick="changeDate(-1)" id="prevBtn">◀ 前一天</button>
             </div>
             
             <div id="dateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
@@ -540,11 +540,11 @@
         </div>
 
         <!-- X 热议 Tab -->
-        <div id="x-panel" class="hidden">
+        <div id="x-panel">
             <div class="date-selector">
-                <button class="date-btn" onclick="xChangeDate(-1)" id="xPrevBtn">◀ 前一天</button>
-                <span class="current-date" id="xCurrentDate">--</span>
                 <button class="date-btn" onclick="xChangeDate(1)" id="xNextBtn">后一天 ▶</button>
+                <span class="current-date" id="xCurrentDate">--</span>
+                <button class="date-btn" onclick="xChangeDate(-1)" id="xPrevBtn">◀ 前一天</button>
             </div>
             
             <div id="xDateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
@@ -657,7 +657,7 @@
 
         function renderDateChips() {
             const container = document.getElementById('dateChips');
-            const dates = getAllDates();
+            const dates = getAllDates().reverse(); // 倒序排列，新的日期在左边
             container.innerHTML = dates.map(date => `
                 <span class="date-chip ${date === currentDate ? 'active' : ''}" onclick="selectDate('${date}')">${formatDate(date)}</span>
             `).join('');
@@ -894,7 +894,7 @@
 
         function renderXDateChips() {
             const container = document.getElementById('xDateChips');
-            const dates = getXAllDates();
+            const dates = getXAllDates().reverse(); // 倒序排列，新的日期在左边
             container.innerHTML = dates.map(date => `
                 <span class="date-chip ${date === xCurrentDate ? 'active' : ''}" onclick="xSelectDate('${date}')">${formatDate(date)}</span>
             `).join('');
