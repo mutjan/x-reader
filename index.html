@@ -501,16 +501,15 @@
     <div class="container">
         <header>
             <h1>📰 每日科技新闻摘要</h1>
-            <p class="subtitle">Tech Daily Digest from Inoreader & X</p>
+            <p class="subtitle">Tech Daily Digest from Inoreader</p>
             
             <div class="tabs">
-                <button class="tab" onclick="switchTab('news')" id="tab-news">📰 Inoreader 新闻</button>
-                <button class="tab active" onclick="switchTab('x')" id="tab-x">🐦 X 热议</button>
+                <button class="tab active" onclick="switchTab('news')" id="tab-news">📰 Inoreader 新闻</button>
             </div>
         </header>
 
         <!-- Inoreader 新闻 Tab -->
-        <div id="news-panel" class="hidden">
+        <div id="news-panel">
             <div class="date-selector">
                 <button class="date-btn" onclick="changeDate(1)" id="nextBtn">后一天 ▶</button>
                 <span class="current-date" id="currentDate">--</span>
@@ -539,41 +538,9 @@
             </main>
         </div>
 
-        <!-- X 热议 Tab -->
-        <div id="x-panel">
-            <div class="date-selector">
-                <button class="date-btn" onclick="xChangeDate(1)" id="xNextBtn">后一天 ▶</button>
-                <span class="current-date" id="xCurrentDate">--</span>
-                <button class="date-btn" onclick="xChangeDate(-1)" id="xPrevBtn">◀ 前一天</button>
-            </div>
-            
-            <div id="xDateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
-            
-            <p class="update-time" style="text-align: center; margin-bottom: 15px;">
-                X 热议聚合 | 每小时更新 | <span id="xTotalCount">0</span> 个话题
-            </p>
-
-            <div class="batch-actions">
-                <span class="batch-info">已选择 <strong id="xSelectedCount">0</strong> 条</span>
-                <button class="batch-btn" onclick="xSelectAll()" id="xSelectAllBtn">全选</button>
-                <button class="batch-btn" onclick="xCopySelected()" id="xCopySelectedBtn" disabled>复制选中</button>
-                <button class="batch-btn" onclick="xClearSelection()" style="background: #f4212e;">清空选择</button>
-            </div>
-
-            <div class="sort-controls">
-                <button class="sort-btn" onclick="xSortBy('time')" id="xSortTime">按时间排序</button>
-                <button class="sort-btn" onclick="xSortBy('posts')" id="xSortPosts">按帖子数排序</button>
-                <button class="sort-btn" onclick="xResetSort()" id="xResetSort">恢复默认</button>
-            </div>
-
-            <main id="x-content">
-                <div class="empty-state">加载中...</div>
-            </main>
-        </div>
-
         <footer>
-            <p>数据来源：Inoreader RSS / X RSS | 每日 07:30 / 每小时 自动更新</p>
-            <p>由 OpenClaw 自动生成 · 托管于 GitHub Pages · 版本: 2026.02.26-001</p>
+            <p>数据来源：Inoreader RSS | 每日 07:30 / 每小时 自动更新</p>
+            <p>由 OpenClaw 自动生成 · 托管于 GitHub Pages · 版本: 2026.02.27-001</p>
         </footer>
     </div>
 
