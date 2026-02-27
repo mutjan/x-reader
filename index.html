@@ -504,13 +504,12 @@
             <p class="subtitle">Tech Daily Digest from Inoreader & X</p>
             
             <div class="tabs">
-                <button class="tab" onclick="switchTab('news')" id="tab-news">📰 Inoreader 新闻</button>
-                <button class="tab active" onclick="switchTab('x')" id="tab-x">🐦 X 热议</button>
+                <button class="tab active" onclick="switchTab('news')" id="tab-news">📰 Inoreader 新闻</button>
             </div>
         </header>
 
         <!-- Inoreader 新闻 Tab -->
-        <div id="news-panel" class="hidden">
+        <div id="news-panel">
             <div class="date-selector">
                 <button class="date-btn" onclick="changeDate(1)" id="nextBtn">后一天 ▶</button>
                 <span class="current-date" id="currentDate">--</span>
@@ -539,41 +538,9 @@
             </main>
         </div>
 
-        <!-- X 热议 Tab -->
-        <div id="x-panel">
-            <div class="date-selector">
-                <button class="date-btn" onclick="xChangeDate(1)" id="xNextBtn">后一天 ▶</button>
-                <span class="current-date" id="xCurrentDate">--</span>
-                <button class="date-btn" onclick="xChangeDate(-1)" id="xPrevBtn">◀ 前一天</button>
-            </div>
-            
-            <div id="xDateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
-            
-            <p class="update-time" style="text-align: center; margin-bottom: 15px;">
-                X 热议聚合 | 每小时更新 | <span id="xTotalCount">0</span> 个话题
-            </p>
-
-            <div class="batch-actions">
-                <span class="batch-info">已选择 <strong id="xSelectedCount">0</strong> 条</span>
-                <button class="batch-btn" onclick="xSelectAll()" id="xSelectAllBtn">全选</button>
-                <button class="batch-btn" onclick="xCopySelected()" id="xCopySelectedBtn" disabled>复制选中</button>
-                <button class="batch-btn" onclick="xClearSelection()" style="background: #f4212e;">清空选择</button>
-            </div>
-
-            <div class="sort-controls">
-                <button class="sort-btn" onclick="xSortBy('time')" id="xSortTime">按时间排序</button>
-                <button class="sort-btn" onclick="xSortBy('posts')" id="xSortPosts">按帖子数排序</button>
-                <button class="sort-btn" onclick="xResetSort()" id="xResetSort">恢复默认</button>
-            </div>
-
-            <main id="x-content">
-                <div class="empty-state">加载中...</div>
-            </main>
-        </div>
-
         <footer>
-            <p>数据来源：Inoreader RSS / X RSS | 每日 07:30 / 每小时 自动更新</p>
-            <p>由 OpenClaw 自动生成 · 托管于 GitHub Pages · 版本: 2026.02.26-001</p>
+            <p>数据来源：Inoreader RSS | 每小时 自动更新</p>
+            <p>由 OpenClaw 自动生成 · 托管于 GitHub Pages · 版本: 2026.02.27-001</p>
         </footer>
     </div>
 
@@ -582,32 +549,22 @@
     <script>
         // ==================== 数据加载 ====================
         let NEWS_ARCHIVE = {};
-        let X_EVENTS_ARCHIVE = {};
         
         // 加载数据
         async function loadData() {
             try {
-                const [newsResponse, xResponse] = await Promise.all([
-                    fetch('news_data.json'),
-                    fetch('x_events_data.json')
-                ]);
+                const newsResponse = await fetch('news_data.json');
                 
                 if (!newsResponse.ok) throw new Error('Failed to load news data');
-                if (!xResponse.ok) throw new Error('Failed to load X events data');
                 
                 NEWS_ARCHIVE = await newsResponse.json();
-                X_EVENTS_ARCHIVE = await xResponse.json();
                 
                 // 初始化
                 currentDate = getLatestDate();
-                xCurrentDate = getXLatestDate();
                 renderNews();
-                renderXEvents();
             } catch (error) {
                 console.error('Error loading data:', error);
                 document.getElementById('news-content').innerHTML = 
-                    `<div class="error-state">❌ 数据加载失败: ${error.message}</div>`;
-                document.getElementById('x-content').innerHTML = 
                     `<div class="error-state">❌ 数据加载失败: ${error.message}</div>`;
             }
         }
@@ -615,20 +572,9 @@
         // ==================== 全局状态 ====================
         let currentTab = 'news';
         let currentDate = '';
-        let xCurrentDate = '';
         let currentSort = { field: null, order: 'desc' };
         let filteredType = null;
         let selectedItems = new Set();
-        let xSelectedItems = new Set();
-
-        // ==================== Tab 切换 ====================
-        function switchTab(tab) {
-            currentTab = tab;
-            document.getElementById('tab-news').className = tab === 'news' ? 'tab active' : 'tab';
-            document.getElementById('tab-x').className = tab === 'x' ? 'tab active' : 'tab';
-            document.getElementById('news-panel').className = tab === 'news' ? '' : 'hidden';
-            document.getElementById('x-panel').className = tab === 'x' ? '' : 'hidden';
-        }
 
         // ==================== Inoreader 功能 ====================
         function getLatestDate() {
@@ -880,195 +826,18 @@
                 </table>`;
         }
 
-        // ==================== X 热议功能 ====================
-        let xCurrentSort = { field: null, order: 'desc' };
-
-        function getXLatestDate() {
-            const dates = Object.keys(X_EVENTS_ARCHIVE).sort();
-            return dates[dates.length - 1] || new Date().toISOString().split('T')[0];
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2000);
         }
 
-        function getXAllDates() {
-            return Object.keys(X_EVENTS_ARCHIVE).sort();
-        }
-
-        function renderXDateChips() {
-            const container = document.getElementById('xDateChips');
-            const dates = getXAllDates().reverse(); // 倒序排列，新的日期在左边
-            container.innerHTML = dates.map(date => `
-                <span class="date-chip ${date === xCurrentDate ? 'active' : ''}" onclick="xSelectDate('${date}')">${formatDate(date)}</span>
-            `).join('');
-        }
-
-        function xSelectDate(date) {
-            xCurrentDate = date;
-            xCurrentSort = { field: null, order: 'desc' };
-            xSelectedItems.clear();
-            xUpdateSortButtons();
-            xUpdateBatchButtons();
-            renderXEvents();
-        }
-
-        function xChangeDate(direction) {
-            const dates = getXAllDates();
-            const currentIndex = dates.indexOf(xCurrentDate);
-            const newIndex = currentIndex + direction;
-            if (newIndex >= 0 && newIndex < dates.length) {
-                xCurrentDate = dates[newIndex];
-                renderXEvents();
-            }
-        }
-
-        function xUpdateButtons() {
-            const dates = getXAllDates();
-            const currentIndex = dates.indexOf(xCurrentDate);
-            document.getElementById('xPrevBtn').disabled = currentIndex <= 0;
-            document.getElementById('xNextBtn').disabled = currentIndex >= dates.length - 1;
-        }
-
-        function xSortBy(field) {
-            if (xCurrentSort.field === field) {
-                xCurrentSort.order = xCurrentSort.order === 'asc' ? 'desc' : 'asc';
-            } else {
-                xCurrentSort.field = field;
-                xCurrentSort.order = 'desc';
-            }
-            xUpdateSortButtons();
-            renderXEvents();
-        }
-
-        function xResetSort() {
-            xCurrentSort = { field: null, order: 'desc' };
-            xUpdateSortButtons();
-            renderXEvents();
-        }
-
-        function xUpdateSortButtons() {
-            document.getElementById('xSortTime').className = 'sort-btn' + (xCurrentSort.field === 'time' ? ' active' : '');
-            document.getElementById('xSortPosts').className = 'sort-btn' + (xCurrentSort.field === 'posts' ? ' active' : '');
-        }
-
-        function xGetSortedEvents(events) {
-            let result = [...events];
-            if (xCurrentSort.field === 'time') {
-                result.sort((a, b) => {
-                    const timeA = new Date(a.updateTime || '2000-01-01');
-                    const timeB = new Date(b.updateTime || '2000-01-01');
-                    return xCurrentSort.order === 'asc' ? timeA - timeB : timeB - timeA;
-                });
-            } else if (xCurrentSort.field === 'posts') {
-                result.sort((a, b) => xCurrentSort.order === 'asc' ? a.postCount - b.postCount : b.postCount - a.postCount);
-            }
-            return result;
-        }
-
-        function xToggleSelection(index) {
-            if (xSelectedItems.has(index)) {
-                xSelectedItems.delete(index);
-            } else {
-                xSelectedItems.add(index);
-            }
-            xUpdateBatchButtons();
-            renderXEvents();
-        }
-
-        function xSelectAll() {
-            const events = X_EVENTS_ARCHIVE[xCurrentDate] || [];
-            const allSelected = events.every((_, index) => xSelectedItems.has(index));
-            
-            if (allSelected) {
-                xSelectedItems.clear();
-            } else {
-                events.forEach((_, index) => xSelectedItems.add(index));
-            }
-            xUpdateBatchButtons();
-            renderXEvents();
-        }
-
-        function xClearSelection() {
-            xSelectedItems.clear();
-            xUpdateBatchButtons();
-            renderXEvents();
-        }
-
-        function xUpdateBatchButtons() {
-            const events = X_EVENTS_ARCHIVE[xCurrentDate] || [];
-            document.getElementById('xSelectedCount').textContent = xSelectedItems.size;
-            document.getElementById('xCopySelectedBtn').disabled = xSelectedItems.size === 0;
-            document.getElementById('xSelectAllBtn').textContent = 
-                xSelectedItems.size === events.length && events.length > 0 ? '取消全选' : '全选';
-        }
-
-        function xCopySelected() {
-            const events = X_EVENTS_ARCHIVE[xCurrentDate] || [];
-            const selectedEvents = events.filter((_, index) => xSelectedItems.has(index));
-            
-            if (selectedEvents.length === 0) return;
-            
-            const textToCopy = selectedEvents.map(event => {
-                const links = event.urls?.join('\n') || '';
-                return `${event.title}\n${links}`;
-            }).join('\n\n');
-            
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                showToast(`已复制 ${selectedEvents.length} 条`);
-            });
-        }
-
-        function xCopySingle(index) {
-            const events = X_EVENTS_ARCHIVE[xCurrentDate] || [];
-            const event = events[index];
-            
-            if (!event) return;
-            
-            const links = event.urls?.join('\n') || '';
-            const textToCopy = `${event.title}\n${links}`;
-            
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                showToast('已复制');
-                const btn = document.getElementById(`x-copy-btn-${index}`);
-                if (btn) {
-                    btn.textContent = '✓';
-                    btn.classList.add('copied');
-                    setTimeout(() => {
-                        btn.textContent = '复制';
-                        btn.classList.remove('copied');
-                    }, 1500);
-                }
-            });
-        }
-
-        function renderXEvents() {
-            const content = document.getElementById('x-content');
-            const currentDateEl = document.getElementById('xCurrentDate');
-            const totalCount = document.getElementById('xTotalCount');
-            
-            let events = X_EVENTS_ARCHIVE[xCurrentDate] || [];
-            events = xGetSortedEvents(events);
-            
-            currentDateEl.textContent = xCurrentDate;
-            renderXDateChips();
-            xUpdateButtons();
-            xUpdateBatchButtons();
-            xUpdateSortButtons();
-            
-            if (events.length === 0) {
-                content.innerHTML = `<div class="empty-state"><p>📭 暂无 ${xCurrentDate} 的X热议数据</p></div>`;
-                totalCount.textContent = '0';
-                return;
-            }
-            
-            totalCount.textContent = events.length;
-            
-            content.innerHTML = `
-                <table class="news-table x-table">
-                    <thead>
-                        <tr>
-                            <th width="30"><input type="checkbox" class="checkbox" onchange="xSelectAll()"></th>
-                            <th>热议话题</th>
-                            <th>中文摘要</th>
-                            <th width="12%" onclick="xSortBy('time')" style="cursor:pointer;">更新时间 ${xCurrentSort.field === 'time' ? (xCurrentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
-                            <th width="10%" onclick="xSortBy('posts')" style="cursor:pointer;">帖子数 ${xCurrentSort.field === 'posts' ? (xCurrentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+        // 页面加载时自动加载数据
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>xSortBy('posts')" style="cursor:pointer;">帖子数 ${xCurrentSort.field === 'posts' ? (xCurrentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
                             <th width="50">复制</th>
                         </tr>
                     </thead>
