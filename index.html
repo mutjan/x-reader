@@ -41,31 +41,6 @@
             font-size: 13px;
         }
         
-        /* Tab 切换 */
-        .tabs {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        .tab {
-            padding: 10px 24px;
-            background: #2f3336;
-            border: none;
-            border-radius: 8px;
-            color: #8899a6;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 600;
-        }
-        .tab:hover {
-            background: #38444d;
-        }
-        .tab.active {
-            background: #1d9bf0;
-            color: white;
-        }
-        
         /* 日期切换器 */
         .date-selector {
             display: flex;
@@ -503,13 +478,10 @@
             <h1>📰 每日科技新闻摘要</h1>
             <p class="subtitle">Tech Daily Digest from Inoreader & X</p>
             
-            <div class="tabs">
-                <button class="tab active" onclick="switchTab('news')" id="tab-news">📰 Inoreader 新闻</button>
-            </div>
         </header>
 
-        <!-- Inoreader 新闻 Tab -->
-        <div id="news-panel">
+        <!-- Inoreader 新闻 -->
+        <div>
             <div class="date-selector">
                 <button class="date-btn" onclick="changeDate(1)" id="nextBtn">后一天 ▶</button>
                 <span class="current-date" id="currentDate">--</span>
