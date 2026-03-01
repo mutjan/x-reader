@@ -109,6 +109,31 @@ def clean_html(html_text):
 def analyze_daily_with_claude(items):
     """使用 Claude-Opus-4.6 分析24小时内容"""
     
+    # 读取已有选题，用于去重
+    existing_titles = set()
+    try:
+        data_file = "/root/.openclaw/workspace/x_reader/news_data.json"
+        if os.path.exists(data_file):
+            with open(data_file, 'r', encoding='utf-8') as f:
+                archive = json.load(f)
+                # 收集最近7天的所有选题标题（每日任务看更长时间）
+                from datetime import datetime, timedelta
+                today = datetime.now()
+                for i in range(7):
+                    date_key = (today - timedelta(days=i)).strftime('%Y-%m-%d')
+                    if date_key in archive:
+                        for topic in archive[date_key]:
+                            title = topic.get("title", "")
+                            # 提取核心部分（去掉【类型】前缀）
+                            if "：" in title:
+                                core = title.split("：", 1)[1]
+                            else:
+                                core = title
+                            existing_titles.add(core.lower())
+                            existing_titles.add(title.lower())
+    except Exception as e:
+        print(f"读取已有选题时出错: {e}")
+    
     news_data = []
     for i, item in enumerate(items[:50], 1):
         title = item.get("title", "")
@@ -122,6 +147,16 @@ def analyze_daily_with_claude(items):
             "summary": summary,
             "source": source
         })
+    
+    # 构建已有选题提示
+    existing_prompt = ""
+    if existing_titles:
+        existing_list = list(existing_titles)[:30]  # 最多显示30个
+        existing_prompt = f"""
+【已存在的选题】（请不要推荐与这些相似的选题）:
+{json.dumps(existing_list, ensure_ascii=False, indent=2)}
+
+"""
     
     prompt = f"""你是一个资深科技媒体主编，需要对过去24小时的新闻进行深度分析，筛选出最值得报道的选题。
 
@@ -147,10 +182,12 @@ def analyze_daily_with_claude(items):
    - 潜力值（0-100分）
    - 选题理由（为什么这个值得报道）
 5. 按潜力值从高到低排序
+6. **重要：如果某个选题与"已存在的选题"列表中的内容相似或重复，请不要推荐**
 
 【待筛选新闻】（过去24小时，共{len(news_data)}条）：
 {json.dumps(news_data, ensure_ascii=False, indent=2)}
 
+{existing_prompt}
 【输出格式】（JSON格式）：
 {{
   "topics": [
