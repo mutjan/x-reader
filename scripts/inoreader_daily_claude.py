@@ -353,36 +353,57 @@ def update_github_pages(topics, original_items):
         
         print(f"[GitHub Pages] 数据已保存: {today}, 共 {len(archive[today])} 个选题")
         
-        # Git提交
-        try:
-            env = os.environ.copy()
-            env["GIT_AUTHOR_NAME"] = "OpenClaw Bot"
-            env["GIT_AUTHOR_EMAIL"] = "bot@openclaw.ai"
-            
-            # 切换到 Git 根目录执行操作
-            git_root = "/root/.openclaw/workspace"
-            
-            subprocess.run(["git", "-C", git_root, "add", data_file], check=True, env=env)
-            result = subprocess.run(
-                ["git", "-C", git_root, "commit", "-m", f"Daily update {today} (Claude-Opus-4.6)"],
-                capture_output=True, text=True, env=env
-            )
-            
-            if result.returncode == 0 or "nothing to commit" in result.stderr.lower() or "nothing added" in result.stdout.lower():
-                push_result = subprocess.run(
-                    ["git", "-C", git_root, "push", "origin", "main"],
+        # Git提交（带重试）
+        max_retries = 3
+        retry_delay = 2
+        
+        for attempt in range(max_retries):
+            try:
+                env = os.environ.copy()
+                env["GIT_AUTHOR_NAME"] = "OpenClaw Bot"
+                env["GIT_AUTHOR_EMAIL"] = "bot@openclaw.ai"
+                
+                # 切换到 Git 根目录执行操作
+                git_root = "/root/.openclaw/workspace"
+                
+                # 先尝试拉取更新，避免冲突
+                subprocess.run(["git", "-C", git_root, "pull", "origin", "main", "--rebase"], 
+                              capture_output=True, env=env)
+                
+                subprocess.run(["git", "-C", git_root, "add", data_file], check=True, env=env)
+                result = subprocess.run(
+                    ["git", "-C", git_root, "commit", "-m", f"Daily update {today} (Claude-Opus-4.6)"],
                     capture_output=True, text=True, env=env
                 )
-                if push_result.returncode == 0:
-                    print("[GitHub Pages] ✅ 更新成功")
-                    return True
+                
+                if result.returncode == 0 or "nothing to commit" in result.stderr.lower() or "nothing added" in result.stdout.lower():
+                    push_result = subprocess.run(
+                        ["git", "-C", git_root, "push", "origin", "main"],
+                        capture_output=True, text=True, env=env
+                    )
+                    if push_result.returncode == 0:
+                        print("[GitHub Pages] ✅ 更新成功")
+                        return True
+                    else:
+                        print(f"[GitHub Pages] ⚠️ 推送失败 (尝试 {attempt+1}/{max_retries}): {push_result.stderr}")
                 else:
-                    print(f"[GitHub Pages] ⚠️ 推送失败: {push_result.stderr}")
-            else:
-                print(f"[GitHub Pages] ⚠️ 提交失败: {result.stderr}")
-        except Exception as git_error:
-            print(f"[GitHub Pages] ⚠️ Git操作失败: {git_error}")
+                    print(f"[GitHub Pages] ⚠️ 提交失败 (尝试 {attempt+1}/{max_retries}): {result.stderr}")
+                
+                if attempt < max_retries - 1:
+                    print(f"[GitHub Pages] 等待 {retry_delay} 秒后重试...")
+                    import time
+                    time.sleep(retry_delay)
+                    retry_delay *= 2  # 指数退避
+                    
+            except Exception as git_error:
+                print(f"[GitHub Pages] ⚠️ Git操作失败 (尝试 {attempt+1}/{max_retries}): {git_error}")
+                if attempt < max_retries - 1:
+                    print(f"[GitHub Pages] 等待 {retry_delay} 秒后重试...")
+                    import time
+                    time.sleep(retry_delay)
+                    retry_delay *= 2
         
+        print(f"[GitHub Pages] ❌ 经过 {max_retries} 次尝试后仍失败")
         return False
         
     except Exception as e:
