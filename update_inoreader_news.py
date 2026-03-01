@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 Inoreader 新闻更新脚本 - 每小时更新 GitHub Pages
+简化版本：使用原标题，添加中文前缀标签
 """
 
 import json
@@ -180,58 +181,85 @@ def get_type_info(categories, score):
     else:
         return "business", "商业"
 
-def generate_summary(title, summary_text):
-    """生成中文摘要"""
-    full_text = f"{title} {summary_text}".strip()
-    full_text = re.sub(r'https?://\S+', '', full_text)
-    full_text = re.sub(r'<[^>]+>', '', full_text)
-    full_text = full_text.strip()
+def generate_chinese_label(title, summary_text, categories):
+    """生成中文标签前缀"""
+    full_text = f"{title} {summary_text}".lower()
     
-    if not full_text:
-        return "相关内容"
+    labels = []
     
-    # 提取关键实体
-    entities = []
-    entity_patterns = [
-        (r'\b(OpenAI|Anthropic|Google|Microsoft|Apple|Meta|Amazon|Nvidia|AMD|Intel|Tesla|SpaceX|xAI|DeepMind)\b', '公司'),
-        (r'\b(Sam Altman|Elon Musk|Mark Zuckerberg|Satya Nadella|Sundar Pichai|Tim Cook|Jensen Huang)\b', '人物'),
-        (r'\b(Claude|GPT|ChatGPT|Gemini|Llama|Copilot|Siri|Alexa)\b', '产品'),
-    ]
+    # 检测关键实体
+    companies = ['openai', 'anthropic', 'google', 'microsoft', 'apple', 'meta', 'tesla', 'spacex', 'nvidia']
+    persons = ['sam altman', 'elon musk', 'mark zuckerberg', 'dario amodei', 'satya nadella']
     
-    for pattern, entity_type in entity_patterns:
-        matches = re.findall(pattern, full_text, re.IGNORECASE)
-        for match in matches:
-            if match not in [e[0] for e in entities]:
-                entities.append((match, entity_type))
-    
-    # 检测动作
-    action_patterns = {
-        '发布': ['launch', 'release', 'announce', 'introduce', 'unveil', '发布', '推出', '上线'],
-        '收购': ['acquire', 'buy', 'purchase', '并购', '收购'],
-        '投资': ['invest', 'fund', 'investment', '融资', '投资'],
-        '合作': ['partner', 'collaborate', 'partnership', '合作', '联手'],
-        '离职': ['leave', 'depart', 'resign', 'quit', '离职', '辞职'],
-        '加入': ['join', 'hire', 'appoint', '入职', '加入'],
-    }
-    
-    detected_action = ""
-    for action, keywords in action_patterns.items():
-        if any(kw.lower() in full_text.lower() for kw in keywords):
-            detected_action = action
+    for p in persons:
+        if p in full_text:
+            name = p.title().replace('Sam Altman', 'Sam Altman').replace('Elon Musk', '马斯克')
+            labels.append(name)
             break
     
-    main_entity = entities[0][0] if entities else ""
+    if not labels:
+        for c in companies:
+            if c in full_text:
+                labels.append(c.title().replace('Openai', 'OpenAI').replace('Anthropic', 'Anthropic'))
+                break
     
-    if main_entity and detected_action:
-        return f"{main_entity}{detected_action}相关动态"
-    elif main_entity:
-        return f"关于{main_entity}的最新动态"
-    else:
-        core = full_text[:50] if len(full_text) <= 50 else full_text[:47] + "..."
-        return f"{core}"
+    # 检测事件类型
+    if any(w in full_text for w in ['joins', 'hired', 'appointed', 'ceo', 'chief', '离职', '任命']):
+        labels.append('人事')
+    elif any(w in full_text for w in ['funding', 'raised', 'billion', '融资', '估值']):
+        labels.append('融资')
+    elif any(w in full_text for w in ['launch', 'release', 'announced', '发布', '推出']):
+        labels.append('新品')
+    elif any(w in full_text for w in ['breakthrough', 'discover', '突破', '发现']):
+        labels.append('突破')
+    elif any(w in full_text for w in ['paper', 'research', 'nature', 'science', '论文']):
+        labels.append('论文')
+    elif any(w in full_text for w in ['safety', 'concern', 'risk', '争议']):
+        labels.append('争议')
+    
+    # 类别标签
+    category_label = ""
+    if "基础科学" in categories:
+        category_label = "【科研】"
+    elif "量子计算" in categories:
+        category_label = "【量子】"
+    elif "商业航天" in categories:
+        category_label = "【航天】"
+    elif "AI和机器人" in categories:
+        category_label = "【AI】"
+    
+    if labels:
+        return f"{category_label}{'|'.join(labels)}："
+    return category_label
+
+def clean_html(html_text):
+    """清理HTML标签，提取纯文本摘要"""
+    if not html_text:
+        return ""
+    
+    # 移除script和style标签及其内容
+    text = re.sub(r'<(script|style)[^>]*>[^<]*</\1>', ' ', html_text, flags=re.IGNORECASE)
+    
+    # 移除img标签
+    text = re.sub(r'<img[^>]*>', ' ', text, flags=re.IGNORECASE)
+    
+    # 移除所有HTML标签
+    text = re.sub(r'<[^>]+>', ' ', text)
+    
+    # 移除URL
+    text = re.sub(r'https?://\S+', '', text)
+    
+    # 移除多余空白
+    text = ' '.join(text.split())
+    
+    # 截取前150个字符作为摘要
+    if len(text) > 150:
+        text = text[:147] + "..."
+    
+    return text.strip()
 
 def process_items(items):
-    """处理条目并聚类"""
+    """处理条目"""
     processed = []
     
     for item in items:
@@ -251,9 +279,23 @@ def process_items(items):
         links = item.get("alternate", [])
         link = links[0].get("href", "") if links else ""
         
+        # 生成中文标签
+        label = generate_chinese_label(title, summary, categories)
+        
+        # 清理标题
+        clean_title = title
+        clean_title = re.sub(r'^(RT|MT)\s*[@\w]+:\s*', '', clean_title, flags=re.IGNORECASE)
+        clean_title = re.sub(r'^[@\w]+:\s*', '', clean_title)
+        clean_title = re.sub(r'https?://\S+', '', clean_title)
+        clean_title = ' '.join(clean_title.split())
+        
+        # 清理摘要 - 移除HTML标签和图片
+        clean_summary = clean_html(summary)
+        
         processed.append({
-            "title": title,
-            "summary": generate_summary(title, summary),
+            "title": f"{label}{clean_title}",
+            "originalTitle": title,
+            "summary": clean_summary,
             "type": news_type,
             "typeName": type_name,
             "sources": 1,
@@ -265,12 +307,42 @@ def process_items(items):
     
     return processed
 
+def calculate_similarity(s1, s2):
+    """计算两个字符串的相似度"""
+    s1_lower = s1.lower()
+    s2_lower = s2.lower()
+    
+    # 直接包含检查
+    if s1_lower in s2_lower or s2_lower in s1_lower:
+        return 0.8
+    
+    # 提取关键词
+    stop_words = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'is', 'are', 'was', 'were'}
+    
+    def extract_keywords(text):
+        cleaned = re.sub(r'[^\w\s]', ' ', text.lower())
+        words = cleaned.split()
+        return set(w for w in words if len(w) > 2 and w not in stop_words)
+    
+    keywords1 = extract_keywords(s1)
+    keywords2 = extract_keywords(s2)
+    
+    if not keywords1 or not keywords2:
+        return 0
+    
+    intersection = len(keywords1 & keywords2)
+    union = len(keywords1 | keywords2)
+    
+    if union == 0:
+        return 0
+    
+    return intersection / union
+
 def merge_similar_news(news_list):
     """合并相似新闻"""
     if not news_list:
         return []
     
-    # 按标题相似度分组
     groups = []
     used = set()
     
@@ -281,18 +353,17 @@ def merge_similar_news(news_list):
         group = [news]
         used.add(i)
         
-        title1 = news["title"].lower()
+        title1 = news.get("originalTitle", news["title"]).lower()
         
         for j, other in enumerate(news_list[i+1:], i+1):
             if j in used:
                 continue
             
-            title2 = other["title"].lower()
+            title2 = other.get("originalTitle", other["title"]).lower()
             
-            # 简单相似度检查
             similarity = calculate_similarity(title1, title2)
             
-            if similarity > 0.6:
+            if similarity > 0.5:
                 group.append(other)
                 used.add(j)
         
@@ -308,39 +379,21 @@ def merge_similar_news(news_list):
                     merged["sourceLinks"].append(link)
                     seen_urls.add(link["url"])
         
-        # 取最高分
         merged["score"] = max(item["score"] for item in group)
         
         groups.append(merged)
     
-    # 按分数排序
     groups.sort(key=lambda x: x["score"], reverse=True)
     
     return groups
-
-def calculate_similarity(s1, s2):
-    """计算两个字符串的相似度"""
-    # 简单的 Jaccard 相似度
-    set1 = set(s1.split())
-    set2 = set(s2.split())
-    
-    if not set1 or not set2:
-        return 0
-    
-    intersection = len(set1 & set2)
-    union = len(set1 | set2)
-    
-    return intersection / union if union > 0 else 0
 
 def update_github_pages(news_data):
     """更新 GitHub Pages"""
     try:
         print("\n[GitHub Pages] 开始更新...")
         
-        # 获取当前日期
         today = datetime.now().strftime('%Y-%m-%d')
         
-        # 读取现有数据
         data_file = "news_data.json"
         if os.path.exists(data_file):
             with open(data_file, 'r', encoding='utf-8') as f:
@@ -348,32 +401,26 @@ def update_github_pages(news_data):
         else:
             archive = {}
         
-        # 更新今天的数据
         archive[today] = news_data
         
-        # 只保留最近 30 天的数据
         dates = sorted(archive.keys())
         if len(dates) > 30:
             for old_date in dates[:-30]:
                 del archive[old_date]
         
-        # 保存数据
         with open(data_file, 'w', encoding='utf-8') as f:
             json.dump(archive, f, ensure_ascii=False, indent=2)
         
         print(f"[GitHub Pages] 数据已保存: {today}, {len(news_data)} 条新闻")
         
-        # Git 提交
         env = os.environ.copy()
         env["GIT_AUTHOR_NAME"] = "OpenClaw Bot"
         env["GIT_AUTHOR_EMAIL"] = "bot@openclaw.ai"
         env["GIT_COMMITTER_NAME"] = "OpenClaw Bot"
         env["GIT_COMMITTER_EMAIL"] = "bot@openclaw.ai"
         
-        # 添加文件
         subprocess.run(["git", "add", data_file], check=True, env=env)
         
-        # 提交
         result = subprocess.run(
             ["git", "commit", "-m", f"Update news data for {today}"],
             capture_output=True,
@@ -382,7 +429,6 @@ def update_github_pages(news_data):
         )
         
         if result.returncode == 0 or "nothing to commit" in result.stderr.lower():
-            # 推送
             push_result = subprocess.run(
                 ["git", "push", "origin", "main"],
                 capture_output=True,
@@ -413,20 +459,17 @@ def main():
     try:
         token = get_token()
         
-        print("获取最近1小时的内容...")
-        items = get_recent_items(token, hours=1, limit=50)
+        print("获取最近24小时的内容...")
+        items = get_recent_items(token, hours=24, limit=200)
         
         print(f"获取到 {len(items.get('items', []))} 条内容")
         
-        # 处理条目
         processed = process_items(items.get("items", []))
         print(f"重要内容: {len(processed)} 条")
         
-        # 合并相似新闻
         merged = merge_similar_news(processed)
         print(f"合并后: {len(merged)} 条")
         
-        # 更新 GitHub Pages
         if merged:
             update_github_pages(merged)
         else:
