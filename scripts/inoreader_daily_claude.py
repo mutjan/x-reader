@@ -117,7 +117,7 @@ def analyze_daily_with_claude(items):
             with open(data_file, 'r', encoding='utf-8') as f:
                 archive = json.load(f)
                 # 收集最近7天的所有选题标题（每日任务看更长时间）
-                from datetime import datetime, timedelta
+                from datetime import timedelta
                 today = datetime.now()
                 for i in range(7):
                     date_key = (today - timedelta(days=i)).strftime('%Y-%m-%d')
