@@ -117,6 +117,32 @@ def clean_html(html_text):
 def analyze_with_claude(items):
     """使用 Claude-Opus-4.6 分析选题"""
     
+    # 读取已有选题，用于去重
+    existing_titles = set()
+    try:
+        data_file = "/root/.openclaw/workspace/x_reader/news_data.json"
+        if os.path.exists(data_file):
+            with open(data_file, 'r', encoding='utf-8') as f:
+                archive = json.load(f)
+                # 收集最近3天的所有选题标题
+                from datetime import datetime, timedelta
+                today = datetime.now()
+                for i in range(3):
+                    date_key = (today - timedelta(days=i)).strftime('%Y-%m-%d')
+                    if date_key in archive:
+                        for topic in archive[date_key]:
+                            title = topic.get("title", "")
+                            # 提取核心部分（去掉【类型】前缀）
+                            if "：" in title:
+                                core = title.split("：", 1)[1]
+                            else:
+                                core = title
+                            existing_titles.add(core.lower())
+                            # 也添加完整标题
+                            existing_titles.add(title.lower())
+    except Exception as e:
+        print(f"读取已有选题时出错: {e}")
+    
     # 准备数据 - 减少到20条以避免响应过长
     news_data = []
     for i, item in enumerate(items[:20], 1):
@@ -131,6 +157,16 @@ def analyze_with_claude(items):
             "summary": summary,
             "source": source
         })
+    
+    # 构建已有选题提示
+    existing_prompt = ""
+    if existing_titles:
+        existing_list = list(existing_titles)[:20]  # 最多显示20个
+        existing_prompt = f"""
+【已存在的选题】（请不要推荐与这些相似的选题）:
+{json.dumps(existing_list, ensure_ascii=False, indent=2)}
+
+"""
     
     # 构建提示
     prompt = f"""你是一个资深科技媒体编辑，需要从以下新闻中筛选出最具传播潜力的选题。
@@ -156,12 +192,14 @@ def analyze_with_claude(items):
    - 选题理由（为什么这个值得报道）
 3. 相似新闻要合并成一个选题
 4. 按潜力值从高到低排序
+5. **重要：如果某个选题与"已存在的选题"列表中的内容相似或重复，请不要推荐**
 
 【重要提示】：
 - 返回的JSON中，所有字符串值必须使用转义的双引号，不能包含未转义的双引号
 - 例如："title": "这是一个标题" 是正确的，"title": "这是一个"标题"" 是错误的
 - 如果内容中包含引号，请使用单引号替代或删除引号
 
+{existing_prompt}
 【待筛选新闻】：
 {json.dumps(news_data, ensure_ascii=False, indent=2)}
 
