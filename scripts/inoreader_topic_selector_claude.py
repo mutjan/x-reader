@@ -291,8 +291,8 @@ def update_github_pages(topics, original_items):
     try:
         today = datetime.now().strftime('%Y-%m-%d')
         
-        # 读取现有数据
-        data_file = "news_data.json"
+        # 读取现有数据 - 使用 x_reader 目录
+        data_file = "/root/.openclaw/workspace/x_reader/news_data.json"
         if os.path.exists(data_file):
             with open(data_file, 'r', encoding='utf-8') as f:
                 archive = json.load(f)
@@ -346,70 +346,36 @@ def update_github_pages(topics, original_items):
             json.dump(archive, f, ensure_ascii=False, indent=2)
         
         print(f"[GitHub Pages] 数据已保存: {today}, 共 {len(archive[today])} 个选题（本次新增 {len(topics)} 个）")
-                "sources": len(t.get("source_ids", [])),
-                "sourceLinks": [],
-                "categories": [t.get("type", "")] if t.get("type") else [],
-                "score": t.get("score", 0),
-                "timestamp": int(time.time()),
-                "reason": t.get("reason", "")
-            })
-        
-        # 更新今天的数据 - 追加模式
-        if today not in archive:
-            archive[today] = []
-        
-        # 获取现有标题，避免重复
-        existing_titles = {item.get("title", "") for item in archive[today]}
-        
-        # 追加新选题（去重）
-        for t in topics:
-            title = t.get("title", "")
-            if title and title not in existing_titles:
-                archive[today].append({
-                    "title": title,
-                    "summary": t.get("summary", ""),
-                    "type": "hot" if t.get("score", 0) >= 35 else "ai" if t.get("type") in ["突破", "新品"] else "tech",
-                    "typeName": t.get("type", "科技"),
-                    "sources": len(t.get("source_ids", [])),
-                    "sourceLinks": [],
-                    "categories": [t.get("type", "")] if t.get("type") else [],
-                    "score": t.get("score", 0),
-                    "timestamp": int(time.time()),
-                    "reason": t.get("reason", "")
-                })
-                existing_titles.add(title)
-        
-        # 只保留最近30天
-        dates = sorted(archive.keys())
-        if len(dates) > 30:
-            for old_date in dates[:-30]:
-                del archive[old_date]
-        
-        # 保存
-        with open(data_file, 'w', encoding='utf-8') as f:
-            json.dump(archive, f, ensure_ascii=False, indent=2)
-        
-        print(f"[GitHub Pages] 数据已保存: {today}, 共 {len(archive[today])} 个选题（本次新增 {len(topics)} 个）")
         
         # Git提交
-        env = os.environ.copy()
-        env["GIT_AUTHOR_NAME"] = "OpenClaw Bot"
-        env["GIT_AUTHOR_EMAIL"] = "bot@openclaw.ai"
-        
-        subprocess.run(["git", "add", data_file], check=True, env=env)
-        result = subprocess.run(
-            ["git", "commit", "-m", f"Update topics for {today} (Claude-Opus-4.6)"],
-            capture_output=True, text=True, env=env
-        )
-        
-        if result.returncode == 0 or "nothing to commit" in result.stderr.lower():
-            push_result = subprocess.run(
-                ["git", "push", "origin", "main"],
+        try:
+            env = os.environ.copy()
+            env["GIT_AUTHOR_NAME"] = "OpenClaw Bot"
+            env["GIT_AUTHOR_EMAIL"] = "bot@openclaw.ai"
+            
+            # 切换到 Git 根目录执行操作
+            git_root = "/root/.openclaw/workspace"
+            
+            subprocess.run(["git", "-C", git_root, "add", data_file], check=True, env=env)
+            result = subprocess.run(
+                ["git", "-C", git_root, "commit", "-m", f"Update topics for {today} (Claude-Opus-4.6)"],
                 capture_output=True, text=True, env=env
             )
-            if push_result.returncode == 0:
-                print("[GitHub Pages] ✅ 更新成功")
-                return True
+            
+            if result.returncode == 0 or "nothing to commit" in result.stderr.lower() or "nothing added" in result.stdout.lower():
+                push_result = subprocess.run(
+                    ["git", "-C", git_root, "push", "origin", "main"],
+                    capture_output=True, text=True, env=env
+                )
+                if push_result.returncode == 0:
+                    print("[GitHub Pages] ✅ 更新成功")
+                    return True
+                else:
+                    print(f"[GitHub Pages] ⚠️ 推送失败: {push_result.stderr}")
+            else:
+                print(f"[GitHub Pages] ⚠️ 提交失败: {result.stderr}")
+        except Exception as git_error:
+            print(f"[GitHub Pages] ⚠️ Git操作失败: {git_error}")
         
         return False
         

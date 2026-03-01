@@ -262,7 +262,8 @@ def update_github_pages(topics, original_items):
     try:
         today = datetime.now().strftime('%Y-%m-%d')
         
-        data_file = "news_data.json"
+        # 读取现有数据 - 使用 x_reader 目录
+        data_file = "/root/.openclaw/workspace/x_reader/news_data.json"
         if os.path.exists(data_file):
             with open(data_file, 'r', encoding='utf-8') as f:
                 archive = json.load(f)
@@ -315,24 +316,35 @@ def update_github_pages(topics, original_items):
         
         print(f"[GitHub Pages] 数据已保存: {today}, 共 {len(archive[today])} 个选题")
         
-        env = os.environ.copy()
-        env["GIT_AUTHOR_NAME"] = "OpenClaw Bot"
-        env["GIT_AUTHOR_EMAIL"] = "bot@openclaw.ai"
-        
-        subprocess.run(["git", "add", data_file], check=True, env=env)
-        result = subprocess.run(
-            ["git", "commit", "-m", f"Daily update {today} (Claude-Opus-4.6)"],
-            capture_output=True, text=True, env=env
-        )
-        
-        if result.returncode == 0 or "nothing to commit" in result.stderr.lower():
-            push_result = subprocess.run(
-                ["git", "push", "origin", "main"],
+        # Git提交
+        try:
+            env = os.environ.copy()
+            env["GIT_AUTHOR_NAME"] = "OpenClaw Bot"
+            env["GIT_AUTHOR_EMAIL"] = "bot@openclaw.ai"
+            
+            # 切换到 Git 根目录执行操作
+            git_root = "/root/.openclaw/workspace"
+            
+            subprocess.run(["git", "-C", git_root, "add", data_file], check=True, env=env)
+            result = subprocess.run(
+                ["git", "-C", git_root, "commit", "-m", f"Daily update {today} (Claude-Opus-4.6)"],
                 capture_output=True, text=True, env=env
             )
-            if push_result.returncode == 0:
-                print("[GitHub Pages] ✅ 更新成功")
-                return True
+            
+            if result.returncode == 0 or "nothing to commit" in result.stderr.lower() or "nothing added" in result.stdout.lower():
+                push_result = subprocess.run(
+                    ["git", "-C", git_root, "push", "origin", "main"],
+                    capture_output=True, text=True, env=env
+                )
+                if push_result.returncode == 0:
+                    print("[GitHub Pages] ✅ 更新成功")
+                    return True
+                else:
+                    print(f"[GitHub Pages] ⚠️ 推送失败: {push_result.stderr}")
+            else:
+                print(f"[GitHub Pages] ⚠️ 提交失败: {result.stderr}")
+        except Exception as git_error:
+            print(f"[GitHub Pages] ⚠️ Git操作失败: {git_error}")
         
         return False
         
