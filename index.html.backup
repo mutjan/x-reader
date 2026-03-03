@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日科技新闻摘要 | Tech Daily</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #0f1419;
+            color: #e7e9ea;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #2f3336;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            background: linear-gradient(135deg, #1d9bf0, #00ba7c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            color: #8899a6;
+            font-size: 13px;
+        }
+        
+        /* Tab 切换 */
+        .tabs {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 24px;
+            background: #2f3336;
+            border: none;
+            border-radius: 8px;
+            color: #8899a6;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .tab:hover {
+            background: #38444d;
+        }
+        .tab.active {
+            background: #1d9bf0;
+            color: white;
+        }
+        
+        /* 日期切换器 */
+        .date-selector {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px 0;
+            padding: 10px;
+            background: #16181c;
+            border-radius: 8px;
+            border: 1px solid #2f3336;
+            flex-wrap: wrap;
+        }
+        .date-btn {
+            background: #1d9bf0;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .date-btn:hover {
+            background: #1a8cd8;
+        }
+        .date-btn:disabled {
+            background: #38444d;
+            cursor: not-allowed;
+        }
+        .current-date {
+            font-size: 16px;
+            font-weight: 600;
+            color: #e7e9ea;
+            min-width: 100px;
+            text-align: center;
+        }
+        .date-chip {
+            padding: 4px 10px;
+            background: #2f3336;
+            border-radius: 15px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .date-chip:hover, .date-chip.active {
+            background: #1d9bf0;
+        }
+        .update-time {
+            color: #8899a6;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        
+        /* 批量操作栏 */
+        .batch-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #16181c;
+            border-radius: 8px;
+            border: 1px solid #2f3336;
+            flex-wrap: wrap;
+        }
+        .batch-btn {
+            padding: 8px 16px;
+            background: #00ba7c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .batch-btn:hover {
+            background: #00a870;
+        }
+        .batch-btn:disabled {
+            background: #38444d;
+            cursor: not-allowed;
+        }
+        .batch-info {
+            color: #8899a6;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* 排序控件 */
+        .sort-controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        .sort-btn {
+            padding: 6px 12px;
+            background: #2f3336;
+            border: 1px solid #38444d;
+            border-radius: 6px;
+            color: #e7e9ea;
+            cursor: pointer;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .sort-btn:hover {
+            background: #38444d;
+        }
+        .sort-btn.active {
+            background: #1d9bf0;
+            border-color: #1d9bf0;
+        }
+        
+        /* 表格样式 */
+        .news-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #16181c;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #2f3336;
+        }
+        .news-table th {
+            background: #1d9bf0;
+            color: white;
+            padding: 10px 6px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 12px;
+            white-space: nowrap;
+            cursor: pointer;
+            user-select: none;
+        }
+        .news-table th:hover {
+            background: #1a8cd8;
+        }
+        .news-table th:first-child {
+            width: 30px;
+            text-align: center;
+        }
+        .news-table th:nth-child(2) {
+            width: 60px;
+        }
+        .news-table th:nth-child(3) {
+            width: 20%;
+        }
+        .news-table th:nth-child(5) {
+            width: 22%;
+        }
+        .news-table th:nth-child(6) {
+            width: 45px;
+            text-align: center;
+        }
+        .news-table th:last-child {
+            width: 50px;
+            text-align: center;
+        }
+        .news-table td {
+            padding: 10px 6px;
+            border-bottom: 1px solid #2f3336;
+            vertical-align: top;
+        }
+        .news-table tr:hover {
+            background: #1d9bf010;
+        }
+        .news-table tr.selected {
+            background: #1d9bf020;
+        }
+        .news-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* X事件表格样式 */
+        .x-table th {
+            background: #8b5cf6;
+        }
+        .x-table th:hover {
+            background: #7c3aed;
+        }
+        
+        /* 复选框 */
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #1d9bf0;
+        }
+        
+        /* 类型标签 */
+        .type-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        .type-tag:hover {
+            opacity: 0.8;
+        }
+        .type-hot {
+            background: #f4212e;
+            color: white;
+        }
+        .type-ai {
+            background: #8b5cf6;
+            color: white;
+        }
+        .type-tech {
+            background: #1d9bf0;
+            color: white;
+        }
+        .type-business {
+            background: #00ba7c;
+            color: white;
+        }
+        
+        /* 标题 */
+        .news-title {
+            font-weight: 600;
+            color: #e7e9ea;
+            font-size: 14px;
+        }
+        
+        /* 摘要 */
+        .news-summary {
+            color: #8899a6;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        
+        /* 消息源链接 */
+        .source-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .source-link {
+            display: inline-block;
+            padding: 2px 6px;
+            background: #2f3336;
+            color: #1d9bf0;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 10px;
+            max-width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .source-link:hover {
+            background: #1d9bf0;
+            color: white;
+        }
+        
+        /* 来源数量 */
+        .source-count {
+            text-align: center;
+            font-weight: 600;
+            color: #00ba7c;
+            font-size: 13px;
+        }
+        
+        /* 复制按钮 */
+        .copy-btn {
+            padding: 5px 8px;
+            background: #2f3336;
+            border: 1px solid #38444d;
+            border-radius: 4px;
+            color: #e7e9ea;
+            cursor: pointer;
+            font-size: 11px;
+            white-space: nowrap;
+        }
+        .copy-btn:hover {
+            background: #1d9bf0;
+            border-color: #1d9bf0;
+        }
+        .copy-btn.copied {
+            background: #00ba7c;
+            border-color: #00ba7c;
+        }
+        
+        /* X事件样式 */
+        .x-event-users {
+            color: #8899a6;
+            font-size: 11px;
+            margin-top: 4px;
+        }
+        .x-event-posts {
+            color: #1d9bf0;
+            font-size: 11px;
+        }
+        
+        /* Toast 提示 */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #00ba7c;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .toast.show {
+            opacity: 1;
+        }
+        
+        /* 空状态 */
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #8899a6;
+        }
+        
+        /* 错误状态 */
+        .error-state {
+            text-align: center;
+            padding: 40px;
+            color: #f4212e;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #8899a6;
+            font-size: 12px;
+            border-top: 1px solid #2f3336;
+            margin-top: 20px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        /* 手机端优化 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 8px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .tab {
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+            .news-table {
+                font-size: 13px;
+            }
+            .news-table th,
+            .news-table td {
+                padding: 8px 4px;
+            }
+            .news-table th:nth-child(5),
+            .news-table td:nth-child(5),
+            .news-table th:nth-child(6),
+            .news-table td:nth-child(6) {
+                display: none;
+            }
+            .news-table th:first-child,
+            .news-table td:first-child {
+                width: 25px;
+            }
+            .news-table th:nth-child(2),
+            .news-table td:nth-child(2) {
+                width: 45px;
+            }
+            .news-table th:nth-child(3),
+            .news-table td:nth-child(3) {
+                width: 30%;
+            }
+            .news-table th:nth-child(4),
+            .news-table td:nth-child(4) {
+                width: auto;
+                min-width: 45%;
+            }
+            .news-table th:nth-child(7),
+            .news-table td:nth-child(7) {
+                width: 45px;
+            }
+            .news-title {
+                font-size: 13px;
+            }
+            .news-summary {
+                font-size: 12px;
+                line-height: 1.5;
+            }
+            .type-tag {
+                font-size: 10px;
+                padding: 2px 5px;
+            }
+            .batch-actions {
+                padding: 8px;
+            }
+            .batch-btn {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+            .sort-controls {
+                gap: 6px;
+            }
+            .sort-btn {
+                padding: 5px 10px;
+                font-size: 11px;
+            }
+            .x-table th:nth-child(4),
+            .x-table td:nth-child(4) {
+                display: none;
+            }
+            .x-table th:nth-child(2),
+            .x-table td:nth-child(2) {
+                width: 35%;
+            }
+            .x-table th:nth-child(3),
+            .x-table td:nth-child(3) {
+                width: auto;
+                min-width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📰 每日科技新闻摘要</h1>
+            <p class="subtitle">Tech Daily Digest from Inoreader & X</p>
+            
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('news')" id="tab-news">📰 Inoreader 新闻</button>
+            </div>
+        </header>
+
+        <!-- Inoreader 新闻 Tab -->
+        <div id="news-panel">
+            <div class="date-selector">
+                <button class="date-btn" onclick="changeDate(1)" id="nextBtn">后一天 ▶</button>
+                <span class="current-date" id="currentDate">--</span>
+                <button class="date-btn" onclick="changeDate(-1)" id="prevBtn">◀ 前一天</button>
+            </div>
+            
+            <div id="dateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
+            
+            <p class="update-time">更新时间：<span id="updateTime">--</span> | 共 <span id="totalCount">0</span> 条</p>
+
+            <div class="batch-actions">
+                <span class="batch-info">已选择 <strong id="selectedCount">0</strong> 条</span>
+                <button class="batch-btn" onclick="selectAll()" id="selectAllBtn">全选</button>
+                <button class="batch-btn" onclick="copySelected()" id="copySelectedBtn" disabled>复制选中</button>
+                <button class="batch-btn" onclick="clearSelection()" style="background: #f4212e;">清空选择</button>
+            </div>
+
+            <div class="sort-controls">
+                <button class="sort-btn" onclick="sortBy('type')" id="sortType">按类型排序</button>
+                <button class="sort-btn" onclick="sortBy('sources')" id="sortSources">按来源数排序</button>
+                <button class="sort-btn" onclick="sortBy('time')" id="sortTime">按更新时间排序</button>
+                <button class="sort-btn" onclick="resetSort()" id="resetSort">恢复默认</button>
+            </div>
+
+            <main id="news-content">
+                <div class="empty-state">加载中...</div>
+            </main>
+        </div>
+
+        <footer>
+            <p>数据来源：Inoreader RSS | 每小时 自动更新</p>
+            <p>由 OpenClaw 自动生成 · 托管于 GitHub Pages · 版本: 2026.02.27-001</p>
+        </footer>
+    </div>
+
+    <div class="toast" id="toast">已复制</div>
+
+    <script>
+        // ==================== 数据加载 ====================
+        let NEWS_ARCHIVE = {};
+        
+        // 加载数据
+        async function loadData() {
+            try {
+                const newsResponse = await fetch('news_data.json');
+                
+                if (!newsResponse.ok) throw new Error('Failed to load news data');
+                
+                NEWS_ARCHIVE = await newsResponse.json();
+                
+                // 初始化
+                currentDate = getLatestDate();
+                renderNews();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('news-content').innerHTML = 
+                    `<div class="error-state">❌ 数据加载失败: ${error.message}</div>`;
+            }
+        }
+        
+        // ==================== 全局状态 ====================
+        let currentTab = 'news';
+        let currentDate = '';
+        let currentSort = { field: null, order: 'desc' };
+        let filteredType = null;
+        let selectedItems = new Set();
+
+        // ==================== Inoreader 功能 ====================
+        function getLatestDate() {
+            const dates = Object.keys(NEWS_ARCHIVE).sort();
+            return dates[dates.length - 1] || new Date().toISOString().split('T')[0];
+        }
+
+        function getAllDates() {
+            return Object.keys(NEWS_ARCHIVE).sort();
+        }
+
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return `${date.getMonth() + 1}/${date.getDate()}`;
+        }
+
+        function getTypeClass(type) {
+            const map = { 'hot': 'type-hot', 'ai': 'type-ai', 'tech': 'type-tech', 'business': 'type-business' };
+            return map[type] || 'type-tech';
+        }
+
+        function getTypeOrder(type) {
+            const order = { 'hot': 1, 'ai': 2, 'tech': 3, 'business': 4 };
+            return order[type] || 5;
+        }
+
+        function renderDateChips() {
+            const container = document.getElementById('dateChips');
+            const dates = getAllDates().reverse(); // 倒序排列，新的日期在左边
+            container.innerHTML = dates.map(date => `
+                <span class="date-chip ${date === currentDate ? 'active' : ''}" onclick="selectDate('${date}')">${formatDate(date)}</span>
+            `).join('');
+        }
+
+        function selectDate(date) {
+            currentDate = date;
+            currentSort = { field: null, order: 'desc' };
+            filteredType = null;
+            selectedItems.clear();
+            updateSortButtons();
+            updateBatchButtons();
+            renderNews();
+        }
+
+        function changeDate(direction) {
+            const dates = getAllDates();
+            const currentIndex = dates.indexOf(currentDate);
+            const newIndex = currentIndex + direction;
+            if (newIndex >= 0 && newIndex < dates.length) {
+                currentDate = dates[newIndex];
+                renderNews();
+            }
+        }
+
+        function updateButtons() {
+            const dates = getAllDates();
+            const currentIndex = dates.indexOf(currentDate);
+            document.getElementById('prevBtn').disabled = currentIndex <= 0;
+            document.getElementById('nextBtn').disabled = currentIndex >= dates.length - 1;
+        }
+
+        function sortBy(field) {
+            if (currentSort.field === field) {
+                currentSort.order = currentSort.order === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.field = field;
+                currentSort.order = 'desc';
+            }
+            updateSortButtons();
+            renderNews();
+        }
+
+        function resetSort() {
+            currentSort = { field: null, order: 'desc' };
+            filteredType = null;
+            updateSortButtons();
+            renderNews();
+        }
+
+        function updateSortButtons() {
+            document.getElementById('sortType').className = 'sort-btn' + (currentSort.field === 'type' ? ' active' : '');
+            document.getElementById('sortSources').className = 'sort-btn' + (currentSort.field === 'sources' ? ' active' : '');
+            document.getElementById('sortTime').className = 'sort-btn' + (currentSort.field === 'time' ? ' active' : '');
+        }
+
+        function filterByType(type) {
+            filteredType = filteredType === type ? null : type;
+            renderNews();
+        }
+
+        function getSortedAndFilteredNews(newsList) {
+            let result = [...newsList];
+            if (filteredType) {
+                result = result.filter(item => item.type === filteredType);
+            }
+            if (currentSort.field === 'type') {
+                result.sort((a, b) => {
+                    const orderA = getTypeOrder(a.type);
+                    const orderB = getTypeOrder(b.type);
+                    return currentSort.order === 'asc' ? orderA - orderB : orderB - orderA;
+                });
+            } else if (currentSort.field === 'sources') {
+                result.sort((a, b) => currentSort.order === 'asc' ? a.sources - b.sources : b.sources - a.sources);
+            } else if (currentSort.field === 'time') {
+                result.sort((a, b) => {
+                    const timeA = a.timestamp || 0;
+                    const timeB = b.timestamp || 0;
+                    return currentSort.order === 'asc' ? timeA - timeB : timeB - timeA;
+                });
+            }
+            return result;
+        }
+
+        function toggleSelection(index) {
+            const key = `${currentDate}-${index}`;
+            if (selectedItems.has(key)) {
+                selectedItems.delete(key);
+            } else {
+                selectedItems.add(key);
+            }
+            updateBatchButtons();
+            renderNews();
+        }
+
+        function selectAll() {
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
+            const allSelected = displayList.every((_, index) => selectedItems.has(`${currentDate}-${index}`));
+            
+            if (allSelected) {
+                displayList.forEach((_, index) => selectedItems.delete(`${currentDate}-${index}`));
+            } else {
+                displayList.forEach((_, index) => selectedItems.add(`${currentDate}-${index}`));
+            }
+            updateBatchButtons();
+            renderNews();
+        }
+
+        function clearSelection() {
+            selectedItems.clear();
+            updateBatchButtons();
+            renderNews();
+        }
+
+        function updateBatchButtons() {
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
+            const selectedCount = displayList.filter((_, index) => selectedItems.has(`${currentDate}-${index}`)).length;
+            
+            document.getElementById('selectedCount').textContent = selectedCount;
+            document.getElementById('copySelectedBtn').disabled = selectedCount === 0;
+            document.getElementById('selectAllBtn').textContent = 
+                selectedCount === displayList.length && displayList.length > 0 ? '取消全选' : '全选';
+        }
+
+        function copySelected() {
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
+            const selectedNews = displayList.filter((_, index) => selectedItems.has(`${currentDate}-${index}`));
+            
+            if (selectedNews.length === 0) return;
+            
+            const textToCopy = selectedNews.map(item => {
+                const links = item.sourceLinks?.map(l => l.url).join('\n') || '';
+                return `${item.title}\n${links}`;
+            }).join('\n\n');
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast(`已复制 ${selectedNews.length} 条`);
+            });
+        }
+
+        function copySingle(index) {
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
+            const item = displayList[index];
+            
+            if (!item) return;
+            
+            const links = item.sourceLinks?.map(l => l.url).join('\n') || '';
+            const textToCopy = `${item.title}\n${links}`;
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast('已复制');
+                const btn = document.getElementById(`copy-btn-${index}`);
+                if (btn) {
+                    btn.textContent = '✓';
+                    btn.classList.add('copied');
+                    setTimeout(() => {
+                        btn.textContent = '复制';
+                        btn.classList.remove('copied');
+                    }, 1500);
+                }
+            });
+        }
+
+        function renderSourceLinks(links) {
+            if (!links || links.length === 0) return '-';
+            return links.map(link => 
+                `<a href="${link.url}" target="_blank" class="source-link" title="${link.url}">${link.name}</a>`
+            ).join('');
+        }
+
+        function renderNews() {
+            const content = document.getElementById('news-content');
+            const currentDateEl = document.getElementById('currentDate');
+            const updateTime = document.getElementById('updateTime');
+            const totalCount = document.getElementById('totalCount');
+            
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
+            
+            currentDateEl.textContent = currentDate;
+            renderDateChips();
+            updateButtons();
+            updateBatchButtons();
+            
+            if (displayList.length === 0) {
+                content.innerHTML = `<div class="empty-state"><p>📭 暂无 ${currentDate} 的新闻数据</p></div>`;
+                updateTime.textContent = '--';
+                totalCount.textContent = '0';
+                return;
+            }
+            
+            updateTime.textContent = currentDate + ' 07:30';
+            totalCount.textContent = `${displayList.length}${filteredType ? ' / ' + newsList.length : ''}`;
+            
+            content.innerHTML = `
+                <table class="news-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" class="checkbox" onchange="selectAll()"></th>
+                            <th onclick="sortBy('type')">类型</th>
+                            <th>标题</th>
+                            <th>摘要</th>
+                            <th>消息源</th>
+                            <th onclick="sortBy('sources')">来源数</th>
+                            <th>复制</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${displayList.map((item, index) => {
+                            const isSelected = selectedItems.has(`${currentDate}-${index}`);
+                            return `
+                            <tr class="${isSelected ? 'selected' : ''}">
+                                <td><input type="checkbox" class="checkbox" ${isSelected ? 'checked' : ''} onchange="toggleSelection(${index})"></td>
+                                <td><span class="type-tag ${getTypeClass(item.type)}" onclick="filterByType('${item.type}')">${item.typeName}</span></td>
+                                <td><div class="news-title">${item.title}</div></td>
+                                <td><div class="news-summary">${item.summary}</div></td>
+                                <td><div class="source-links">${renderSourceLinks(item.sourceLinks)}</div></td>
+                                <td><div class="source-count">${item.sources}</div></td>
+                                <td><button class="copy-btn" id="copy-btn-${index}" onclick="copySingle(${index})">复制</button></td>
+                            </tr>`;
+                        }).join('')}
+                    </tbody>
+                </table>`;
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2000);
+        }
+
+        // 页面加载时自动加载数据
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>xSortBy('posts')" style="cursor:pointer;">帖子数 ${xCurrentSort.field === 'posts' ? (xCurrentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                            <th width="50">复制</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${events.map((event, index) => {
+                            const isSelected = xSelectedItems.has(index);
+                            const userList = event.users?.join(', ') || '';
+                            const linksHtml = event.urls?.map((url, i) => 
+                                `<a href="${url}" target="_blank" class="source-link">帖子${i+1}</a>`
+                            ).join('') || '';
+                            const updateTime = event.updateTime || '--';
+                            
+                            return `
+                            <tr class="${isSelected ? 'selected' : ''}">
+                                <td><input type="checkbox" class="checkbox" ${isSelected ? 'checked' : ''} onchange="xToggleSelection(${index})"></td>
+                                <td>
+                                    <div class="news-title">${event.title}</div>
+                                    <div class="x-event-users" title="${userList}">${userList}</div>
+                                    <div class="source-links" style="margin-top: 5px;">${linksHtml}</div>
+                                </td>
+                                <td><div class="news-summary">${event.summary}</div></td>
+                                <td><div style="color: #8899a6; font-size: 12px;">${updateTime}</div></td>
+                                <td><div class="source-count">${event.postCount}</div></td>
+                                <td>
+                                    <button class="copy-btn" id="x-copy-btn-${index}" onclick="xCopySingle(${index})">复制</button>
+                                </td>
+                            </tr>`;
+                        }).join('')}
+                    </tbody>
+                </table>`;
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2000);
+        }
+
+        // 页面加载时自动加载数据
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>
