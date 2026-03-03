@@ -1,0 +1,385 @@
+app:
+  name: Inoreader每日选题摘要
+  mode: workflow
+  icon: 📰
+  description: 按Claude标准自动筛选Inoreader新闻，生成每日选题摘要
+
+workflow:
+  nodes:
+    - id: '1710000000000'
+      type: start
+      position:
+        x: 80
+        y: 280
+      data:
+        type: start
+        title: 开始
+        variables:
+          - key: hours
+            type: number
+            default: '24'
+            description: 获取最近多少小时的内容
+          - key: min_score
+            type: number
+            default: '55'
+            description: 最小潜力值阈值
+    
+    - id: '1710000000001'
+      type: http-request
+      position:
+        x: 280
+        y: 280
+      data:
+        type: http-request
+        title: 获取Inoreader内容
+        method: GET
+        url: https://www.inoreader.com/reader/api/0/stream/contents/user/-/state/com.google/reading-list
+        headers: '{"Authorization": "Bearer {{#env.inoreader_token#}}"}'
+        params: '{"n": 200, "ot": {{#1710000000000.hours# | int * 3600 | subtract(now, @) | int#}}}'
+    
+    - id: '1710000000002'
+      type: code
+      position:
+        x: 480
+        y: 280
+      data:
+        type: code
+        title: 解析新闻条目
+        code: |-
+          import json
+          import re
+          
+          def clean_html(html):
+              if not html:
+                  return ''
+              text = re.sub(r'<[^>]+>', ' ', html)
+              text = re.sub(r'https?://\S+', '', text)
+              return ' '.join(text.split())[:300]
+          
+          def main(arg1: dict) -> dict:
+              try:
+                  data = json.loads(arg1.get('body', '{}'))
+              except:
+                  return {'items': [], 'count': 0}
+              
+              items = data.get('items', [])
+              parsed = []
+              
+              for idx, item in enumerate(items, 1):
+                  parsed.append({
+                      'id': idx,
+                      'title': item.get('title', ''),
+                      'summary': clean_html(item.get('summary', {}).get('content', '')),
+                      'source': item.get('origin', {}).get('title', '未知来源'),
+                      'link': item.get('alternate', [{}])[0].get('href', ''),
+                      'published': item.get('published', 0)
+                  })
+              
+              return {'items': parsed, 'count': len(parsed)}
+    
+    - id: '1710000000003'
+      type: llm
+      position:
+        x: 680
+        y: 280
+      data:
+        type: llm
+        title: Claude标准选题分析
+        model:
+          provider: openai
+          name: gpt-4o
+          mode: chat
+          completion_params:
+            temperature: 0.3
+        prompt_template: |-
+          你是一个资深科技媒体编辑，需要按Claude标准评估以下新闻的选题潜力。
+
+          【选题评估标准】（按重要性排序）：
+          1. 重大突破/首次 (+20分)：breakthrough, milestone, world first, 颠覆性技术
+          2. 产品发布 (+18分)：新品发布、重大更新、新功能上线
+          3. 争议/冲突事件 (+16分)：安全争议、人事变动、公司冲突
+          4. 核心AI公司/产品 (+15分)：OpenAI, Anthropic, Claude, ChatGPT, Gemini等
+          5. 融资/估值 (+14分)：大额融资、IPO、估值变化
+          6. 安全/伦理问题 (+13分)：AI安全、伦理争议、风险提示
+          7. 核心人物动态 (+12分)：Sam Altman, Elon Musk, Dario Amodei等
+          8. 行业影响 (+10分)：对整个行业有重大影响的事件
+
+          【待评估新闻】（共{{#1710000000002.count#}}条）：
+          {{#1710000000002.items#}}
+
+          【输出要求】：
+          1. 只推荐潜力值≥{{#1710000000000.min_score#}}分的选题
+          2. 每个选题包含：中文标题、中文摘要、类型、实体、潜力值、选题理由、来源ID
+          3. 相似新闻合并成一个选题
+          4. 按潜力值从高到低排序
+
+          请只返回JSON格式，不要其他文字：
+          {"topics": [{"title": "【类型】实体：标题", "summary": "摘要", "type": "突破|新品|争议|融资|安全|人事", "entity": "公司|人物", "score": 85, "reason": "理由", "source_ids": [1]}]}
+    
+    - id: '1710000000004'
+      type: code
+      position:
+        x: 880
+        y: 280
+      data:
+        type: code
+        title: 解析选题结果
+        code: |-
+          import json
+          import re
+          
+          def main(arg1: str) -> dict:
+              text = str(arg1)
+              
+              # 提取JSON
+              if '```json' in text:
+                  json_str = text.split('```json')[1].split('```')[0].strip()
+              elif '```' in text:
+                  json_str = text.split('```')[1].strip()
+              else:
+                  start = text.find('{')
+                  end = text.rfind('}')
+                  json_str = text[start:end+1] if start != -1 and end != -1 else text
+              
+              try:
+                  data = json.loads(json_str)
+                  return data
+              except Exception as e:
+                  return {'topics': [], 'error': str(e), 'raw': text[:500]}
+    
+    - id: '1710000000005'
+      type: code
+      position:
+        x: 1080
+        y: 280
+      data:
+        type: code
+        title: 补充来源链接
+        code: |-
+          def main(arg1: dict, arg2: dict) -> dict:
+              topics = arg1.get('topics', [])
+              items = arg2.get('items', [])
+              
+              for topic in topics:
+                  source_links = []
+                  seen_urls = set()
+                  
+                  for sid in topic.get('source_ids', []):
+                      idx = sid - 1
+                      if 0 <= idx < len(items):
+                          item = items[idx]
+                          url = item.get('link', '')
+                          if url and url not in seen_urls:
+                              source_links.append({
+                                  'name': item.get('source', '未知来源'),
+                                  'url': url
+                              })
+                              seen_urls.add(url)
+                  
+                  topic['sourceLinks'] = source_links[:5]
+                  topic['sources'] = len(source_links)
+              
+              return {'topics': topics, 'count': len(topics)}
+    
+    - id: '1710000000006'
+      type: code
+      position:
+        x: 1280
+        y: 280
+      data:
+        type: code
+        title: 生成Markdown报告
+        code: |-
+          from datetime import datetime
+          
+          def main(arg1: dict) -> dict:
+              topics = arg1.get('topics', [])
+              today = datetime.now().strftime('%Y-%m-%d')
+              
+              high = [t for t in topics if t.get('score', 0) >= 75]
+              medium = [t for t in topics if 55 <= t.get('score', 0) < 75]
+              
+              lines = [f'# Inoreader每日选题摘要 - {today}', '', '**Claude格式** | 按传播潜力评分排序', '', '---', '']
+              
+              if high:
+                  lines.append('## 🔥 高潜力选题（Score ≥ 75）')
+                  lines.append('')
+                  for i, t in enumerate(high, 1):
+                      lines.append(f"### {i}. {t.get('title', '')} —— 潜力值: {t.get('score', 0)}")
+                      lines.append('')
+                      lines.append(f"**中文摘要**：{t.get('summary', '')}")
+                      lines.append('')
+                      lines.append(f"**选题理由**：{t.get('reason', '')}")
+                      lines.append('')
+                      lines.append('**来源**：')
+                      for link in t.get('sourceLinks', []):
+                          lines.append(f"- [{link.get('name', '')}]({link.get('url', '')})")
+                      lines.append('')
+              
+              if medium:
+                  lines.append('## 📌 中等潜力选题（Score 55-70）')
+                  lines.append('')
+                  for i, t in enumerate(medium, len(high) + 1):
+                      lines.append(f"### {i}. {t.get('title', '')} —— 潜力值: {t.get('score', 0)}")
+                      lines.append('')
+                      lines.append(f"**中文摘要**：{t.get('summary', '')}")
+                      lines.append('')
+                      lines.append(f"**选题理由**：{t.get('reason', '')}")
+                      lines.append('')
+              
+              lines.append('---')
+              lines.append('')
+              lines.append('## 📊 统计摘要')
+              lines.append('')
+              lines.append(f"- 筛选选题：{len(topics)} 条")
+              lines.append(f"- 高潜力（≥75）：{len(high)} 条")
+              lines.append(f"- 中等潜力（55-70）：{len(medium)} 条")
+              if topics:
+                  lines.append(f"- 最高潜力：{max([t.get('score', 0) for t in topics])}分")
+              
+              return {'markdown': '\n'.join(lines)}
+    
+    - id: '1710000000007'
+      type: code
+      position:
+        x: 1280
+        y: 480
+      data:
+        type: code
+        title: 生成JSON文件
+        code: |-
+          import json
+          from datetime import datetime
+          
+          def main(arg1: dict) -> dict:
+              topics = arg1.get('topics', [])
+              today = datetime.now().strftime('%Y-%m-%d')
+              
+              data = {
+                  'date': today,
+                  'topics': topics,
+                  'summary': {
+                      'total_topics': len(topics),
+                      'high_score_topics': len([t for t in topics if t.get('score', 0) >= 75]),
+                      'key_themes': [t.get('entity', '') for t in topics[:5] if t.get('entity')]
+                  }
+              }
+              
+              filename = f"inoreader_topics_{today.replace('-', '')}_claude_format.json"
+              
+              return {
+                  'json_content': json.dumps(data, ensure_ascii=False, indent=2),
+                  'filename': filename
+              }
+    
+    - id: '1710000000008'
+      type: http-request
+      position:
+        x: 1480
+        y: 380
+      data:
+        type: http-request
+        title: 推送到GitHub
+        method: PUT
+        url: 'https://api.github.com/repos/{{#env.github_repo#}}/contents/{{#1710000000007.filename#}}'
+        headers: '{"Authorization": "token {{#env.github_token#}}", "Content-Type": "application/json"}'
+        body: '{"message": "Update via Dify", "content": "{{#1710000000007.json_content# | base64}}", "branch": "main"}'
+    
+    - id: '1710000000009'
+      type: http-request
+      position:
+        x: 1680
+        y: 380
+      data:
+        type: http-request
+        title: 发送飞书通知
+        method: POST
+        url: https://open.feishu.cn/open-apis/message/v4/send/
+        headers: '{"Authorization": "Bearer {{#env.feishu_token#}}", "Content-Type": "application/json"}'
+        body: '{"chat_id": "{{#env.feishu_chat_id#}}", "msg_type": "text", "content": {"text": "📰 Inoreader每日选题完成\n共筛选 {{#1710000000005.count#}} 条高潜力选题\n高潜力（≥75分）：{{#1710000000006.markdown | regex_search:''高潜力（≥75）：(\d+)''#}} 条"}}'
+    
+    - id: '1710000000010'
+      type: end
+      position:
+        x: 1880
+        y: 380
+      data:
+        type: end
+        title: 结束
+        outputs:
+          - value_selector:
+              - '1710000000005'
+              - result
+              - count
+            variable: topic_count
+          - value_selector:
+              - '1710000000006'
+              - result
+              - markdown
+            variable: report_markdown
+
+  edges:
+    - id: '1710000000000-1710000000001'
+      source: '1710000000000'
+      target: '1710000000001'
+      type: custom
+    - id: '1710000000001-1710000000002'
+      source: '1710000000001'
+      target: '1710000000002'
+      type: custom
+    - id: '1710000000002-1710000000003'
+      source: '1710000000002'
+      target: '1710000000003'
+      type: custom
+    - id: '1710000000003-1710000000004'
+      source: '1710000000003'
+      target: '1710000000004'
+      type: custom
+    - id: '1710000000004-1710000000005'
+      source: '1710000000004'
+      target: '1710000000005'
+      type: custom
+      data:
+        sourceType: code
+        targetType: code
+    - id: '1710000000002-1710000000005'
+      source: '1710000000002'
+      target: '1710000000005'
+      type: custom
+    - id: '1710000000005-1710000000006'
+      source: '1710000000005'
+      target: '1710000000006'
+      type: custom
+    - id: '1710000000005-1710000000007'
+      source: '1710000000005'
+      target: '1710000000007'
+      type: custom
+    - id: '1710000000007-1710000000008'
+      source: '1710000000007'
+      target: '1710000000008'
+      type: custom
+    - id: '1710000000008-1710000000009'
+      source: '1710000000008'
+      target: '1710000000009'
+      type: custom
+    - id: '1710000000009-1710000000010'
+      source: '1710000000009'
+      target: '1710000000010'
+      type: custom
+
+environment_variables:
+  - name: inoreader_token
+    description: Inoreader API Access Token
+    required: true
+  - name: github_token
+    description: GitHub Personal Access Token
+    required: true
+  - name: github_repo
+    description: GitHub仓库名 (如: mutjan/x-reader)
+    required: true
+  - name: feishu_token
+    description: 飞书Bot Access Token
+    required: true
+  - name: feishu_chat_id
+    description: 飞书聊天ID
+    required: true
