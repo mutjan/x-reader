@@ -15,8 +15,8 @@ from datetime import datetime
 
 INOREADER_API = "https://www.inoreader.com/reader/api/0"
 PROXY = "socks5h://127.0.0.1:1080"
-POE_API_KEY = "VJ-9QIxmurhQkSGzteQz4ZDRp6aUwkAl8MXhp8YvJ1g"
-POE_BASE_URL = "https://api.poe.com/v1"
+KIMI_API_KEY = "sk-kimi-JFYmtcth0yH8ibMkTBgjqBSHB7Srp2W7DR7YIa9XuPeR0AYIEbi90lsuanCdxF31"
+KIMI_BASE_URL = "https://api.kimi.com/coding"
 
 def ensure_proxy_running():
     """确保 Shadowsocks 代理正在运行"""
@@ -114,7 +114,7 @@ def clean_html(html_text):
     text = ' '.join(text.split())
     return text.strip()[:300]
 
-def analyze_with_claude(items):
+def analyze_with_kimi(items):
     """使用 Claude-Opus-4.6 分析选题"""
     
     # 读取已有选题，用于去重
@@ -225,14 +225,14 @@ def analyze_with_claude(items):
     
     try:
         client = openai.OpenAI(
-            api_key=POE_API_KEY,
-            base_url=POE_BASE_URL,
+            api_key=KIMI_API_KEY,
+            base_url=KIMI_BASE_URL,
             timeout=120
         )
         
-        print("调用 Claude-Opus-4.6 分析选题...")
+        print("调用 Kimi K2.5 分析选题...")
         chat = client.chat.completions.create(
-            model="claude-opus-4.6",
+            model="k2p5",
             messages=[{"role": "user", "content": prompt}]
         )
         
@@ -294,7 +294,7 @@ def analyze_with_claude(items):
             
     except Exception as e:
         restore_socket(original_getaddrinfo)
-        print(f"调用 Claude-Opus-4.6 出错: {e}")
+        print(f"调用 Kimi K2.5 出错: {e}")
         import traceback
         traceback.print_exc()
         return {"topics": []}
@@ -446,7 +446,7 @@ def update_github_pages(topics, original_items):
 
 def main():
     """主函数"""
-    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始选题筛选 (Claude-Opus-4.6)...")
+    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始选题筛选 (Kimi K2.5)...")
     
     # 确保代理运行
     ensure_proxy_running()
@@ -464,8 +464,8 @@ def main():
         
         print(f"获取到 {len(items['items'])} 条内容")
         
-        # 使用 Claude-Opus-4.6 分析
-        result = analyze_with_claude(items["items"])
+        # 使用 Kimi K2.5 分析
+        result = analyze_with_kimi(items["items"])
         
         topics = result.get("topics", [])
         
