@@ -285,7 +285,7 @@ def clean_html(html_text):
 
 
 def analyze_with_claude(items):
-    """本地规则分析生成中文选题 - 模仿3月3日格式"""
+    """本地规则分析生成中文选题 - 标题和摘要都生成中文"""
 
     # 选题评估关键词映射
     SCORE_RULES = {
@@ -333,11 +333,434 @@ def analyze_with_claude(items):
         ("百度", "百度"), ("腾讯", "腾讯"), ("字节", "字节跳动"),
     ]
 
+    # 中文标题模板映射
+    CN_TITLE_TEMPLATES = {
+        "breakthrough": "{entity}取得重大突破——{action}",
+        "milestone": "{entity}达成重要里程碑——{action}",
+        "launch": "{entity}发布{product}——{highlight}",
+        "release": "{entity}推出{product}——{highlight}",
+        "funding": "{entity}完成{amount}融资——{highlight}",
+        "joins": "{person}加入{entity}——{highlight}",
+        "hired": "{entity}任命{person}——{highlight}",
+        "safety": "{entity}面临安全争议——{highlight}",
+        "controversy": "{entity}陷入{topic}争议——{highlight}",
+        "paper": "{entity}在{journal}发表论文——{highlight}",
+        "default": "{entity}：{action}",
+    }
+
+    def generate_chinese_title(title, summary, topic_type, entities):
+        """根据内容生成中文标题"""
+        full_text = (title + " " + summary).lower()
+
+        # 确定主要实体
+        main_entity = entities[0] if entities else "科技"
+
+        # 清理原标题
+        clean_title = re.sub(r'^(RT|MT)\s*[@\w]+:\s*', '', title, flags=re.IGNORECASE)
+        clean_title = re.sub(r'^[@\w]+:\s*', '', clean_title)
+        clean_title = re.sub(r'https?://\S+', '', clean_title)
+        clean_title = ' '.join(clean_title.split())
+
+        # 截取核心标题（去掉来源等后缀）
+        core_title = clean_title
+        if " - " in core_title:
+            core_title = core_title.split(" - ")[0]
+        if " | " in core_title:
+            core_title = core_title.split(" | ")[0]
+
+        # 提取核心短语（前6-8个词）
+        words = core_title.split()
+        core_words = words[:8] if len(words) > 8 else words
+        core_phrase = ' '.join(core_words)
+
+        # 完整翻译映射表
+        trans_map = {
+            # AI/技术
+            'artificial intelligence': '人工智能',
+            'machine learning': '机器学习',
+            'deep learning': '深度学习',
+            'large language model': '大语言模型',
+            'neural network': '神经网络',
+            'computer vision': '计算机视觉',
+            'natural language': '自然语言',
+            'ai model': 'AI模型',
+            'ai system': 'AI系统',
+            'ai tool': 'AI工具',
+            'ai platform': 'AI平台',
+            'chatbot': '聊天机器人',
+            'spreadsheet': '电子表格',
+            'database': '数据库',
+            'algorithm': '算法',
+            'framework': '框架',
+            'architecture': '架构',
+            'infrastructure': '基础设施',
+            # 产品/公司
+            'openai': 'OpenAI',
+            'anthropic': 'Anthropic',
+            'claude': 'Claude',
+            'chatgpt': 'ChatGPT',
+            'gpt-4': 'GPT-4',
+            'gpt4': 'GPT-4',
+            'gemini': 'Gemini',
+            'google': 'Google',
+            'deepmind': 'DeepMind',
+            'microsoft': '微软',
+            'meta': 'Meta',
+            'apple': '苹果',
+            'amazon': '亚马逊',
+            'nvidia': '英伟达',
+            'tesla': '特斯拉',
+            'spacex': 'SpaceX',
+            'xai': 'xAI',
+            'grok': 'Grok',
+            'qwen': '通义千问',
+            'llama': 'Llama',
+            'mistral': 'Mistral',
+            # 动作
+            'launches': '发布',
+            'launched': '发布',
+            'launch': '发布',
+            'releases': '推出',
+            'released': '推出',
+            'release': '推出',
+            'announces': '宣布',
+            'announced': '宣布',
+            'introduces': '推出',
+            'introduced': '推出',
+            'introducing': '推出',
+            'unveils': ' unveiled',
+            'unveiled': ' unveiled',
+            'debuts': ' debut',
+            'debuted': ' debut',
+            'develops': '开发',
+            'developed': '开发',
+            'creates': '创建',
+            'created': '创建',
+            'builds': '构建',
+            'built': '构建',
+            'designs': '设计',
+            'designed': '设计',
+            'helps': '帮助',
+            'helped': '帮助',
+            'enables': '使能',
+            'allows': '允许',
+            'solves': '解决',
+            'solved': '解决',
+            'addresses': '解决',
+            'tackles': '应对',
+            'eliminates': '消除',
+            'reduces': '减少',
+            'improves': '改进',
+            'enhances': '增强',
+            'increases': '提高',
+            'achieves': '实现',
+            'demonstrates': '展示',
+            'shows': '表明',
+            'proves': '证明',
+            'beats': '击败',
+            'outperforms': '优于',
+            'wins': '赢得',
+            # 形容词/名词
+            'new': '新',
+            'novel': '新型',
+            'innovative': '创新',
+            'advanced': '先进',
+            'breakthrough': '突破',
+            'milestone': '里程碑',
+            'revolutionary': '革命性',
+            'state-of-the-art': '最先进',
+            'cutting-edge': '前沿',
+            'first': '首次',
+            'world first': '世界首次',
+            'global': '全球',
+            'completely': '完全',
+            'fully': '充分',
+            'significantly': '显著',
+            'dramatically': '大幅',
+            'successfully': '成功',
+            'faster': '更快',
+            'better': '更好',
+            'more': '更',
+            'most': '最',
+            # 技术名词
+            'technology': '技术',
+            'system': '系统',
+            'platform': '平台',
+            'model': '模型',
+            'tool': '工具',
+            'application': '应用',
+            'solution': '解决方案',
+            'method': '方法',
+            'approach': '方法',
+            'technique': '技术',
+            'process': '过程',
+            'service': '服务',
+            'product': '产品',
+            'feature': '功能',
+            'capability': '能力',
+            'function': '功能',
+            'interface': '接口',
+            'api': 'API',
+            'software': '软件',
+            'hardware': '硬件',
+            'device': '设备',
+            'chip': '芯片',
+            'processor': '处理器',
+            'gpu': 'GPU',
+            'cloud': '云',
+            'edge': '边缘',
+            'on-device': '端侧',
+            'real-time': '实时',
+            'autonomous': '自主',
+            'automated': '自动化',
+            'intelligent': '智能',
+            # 科研
+            'research': '研究',
+            'study': '研究',
+            'paper': '论文',
+            'article': '文章',
+            'journal': '期刊',
+            'publication': '发表',
+            'published': '发表',
+            'findings': '发现',
+            'results': '结果',
+            'discovery': '发现',
+            'experiment': '实验',
+            'trial': '试验',
+            'test': '测试',
+            'evaluation': '评估',
+            'benchmark': '基准测试',
+            'dataset': '数据集',
+            'data': '数据',
+            'analysis': '分析',
+            'researchers': '研究人员',
+            'scientists': '科学家',
+            'team': '团队',
+            'university': '大学',
+            'institute': '研究所',
+            'laboratory': '实验室',
+            'nature': '《自然》',
+            'science': '《科学》',
+            'cell': '《细胞》',
+            'arxiv': 'arXiv',
+            # 医疗/生物
+            'medical': '医疗',
+            'medicine': '医学',
+            'health': '健康',
+            'healthcare': '医疗',
+            'drug': '药物',
+            'treatment': '治疗',
+            'therapy': '疗法',
+            'vaccine': '疫苗',
+            'disease': '疾病',
+            'cancer': '癌症',
+            'tumor': '肿瘤',
+            'cell': '细胞',
+            'immune': '免疫',
+            'gene': '基因',
+            'genetic': '基因',
+            'dna': 'DNA',
+            'protein': '蛋白质',
+            'clinical': '临床',
+            'patient': '患者',
+            'mice': '小鼠',
+            'animal': '动物',
+            'human': '人类',
+            # 商业/融资
+            'funding': '融资',
+            'investment': '投资',
+            'financing': '融资',
+            'raises': '获得',
+            'raised': '获得',
+            'raise': '筹集',
+            'million': '百万',
+            'billion': '十亿',
+            'dollars': '美元',
+            'usd': '美元',
+            'seed': '种子轮',
+            'series': '轮',
+            'round': '轮',
+            'valuation': '估值',
+            'revenue': '收入',
+            'profit': '利润',
+            'earnings': '收益',
+            'ipo': 'IPO',
+            'startup': '初创公司',
+            'unicorn': '独角兽',
+            'investor': '投资者',
+            'venture': '风投',
+            'capital': '资本',
+            # 人事
+            'ceo': 'CEO',
+            'cto': 'CTO',
+            'cfo': 'CFO',
+            'chief': '首席',
+            'executive': '执行官',
+            'officer': '官',
+            'president': '总裁',
+            'vice': '副',
+            'vp': 'VP',
+            'head': '负责人',
+            'lead': '领导',
+            'leader': '领导者',
+            'director': '总监',
+            'manager': '经理',
+            'founder': '创始人',
+            'co-founder': '联合创始人',
+            'joins': '加入',
+            'joined': '加入',
+            'hired': '聘请',
+            'appointed': '任命',
+            'named': '任命',
+            'resigns': '辞职',
+            'resigned': '辞职',
+            'departs': '离职',
+            'leaves': '离开',
+            'exits': '退出',
+            # 安全/争议
+            'safety': '安全',
+            'security': '安全',
+            'privacy': '隐私',
+            'risk': '风险',
+            'threat': '威胁',
+            'danger': '危险',
+            'harm': '危害',
+            'concern': '担忧',
+            'issue': '问题',
+            'problem': '问题',
+            'controversy': '争议',
+            'scandal': '丑闻',
+            'crisis': '危机',
+            'violation': '违规',
+            'breach': '泄露',
+            'attack': '攻击',
+            'bias': '偏见',
+            'misinformation': '虚假信息',
+            'deepfake': '深度伪造',
+            # 航天
+            'space': '太空',
+            'rocket': '火箭',
+            'satellite': '卫星',
+            'launch': '发射',
+            'mission': '任务',
+            'mars': '火星',
+            'moon': '月球',
+            'lunar': '月球',
+            'orbit': '轨道',
+            'spacecraft': '航天器',
+            'spaceship': '飞船',
+            'starship': '星舰',
+            'falcon': '猎鹰',
+            'dragon': '龙飞船',
+            'starlink': '星链',
+            'nasa': 'NASA',
+            'astronaut': '宇航员',
+            # 量子
+            'quantum': '量子',
+            'qubit': '量子比特',
+            'quantum computing': '量子计算',
+            'quantum computer': '量子计算机',
+            'quantum processor': '量子处理器',
+            'superposition': '叠加',
+            'entanglement': '纠缠',
+            'supremacy': '霸权',
+            'advantage': '优势',
+            # 其他
+            'robot': '机器人',
+            'robotics': '机器人技术',
+            'autonomous': '自主',
+            'vehicle': '车辆',
+            'car': '汽车',
+            'drone': '无人机',
+            'vr': 'VR',
+            'ar': 'AR',
+            'mr': 'MR',
+            'metaverse': '元宇宙',
+            'blockchain': '区块链',
+            'crypto': '加密',
+            'web3': 'Web3',
+            '5g': '5G',
+            '6g': '6G',
+            'iot': '物联网',
+            'big data': '大数据',
+            'data center': '数据中心',
+            'supercomputer': '超级计算机',
+            'exascale': '百亿亿级',
+        }
+
+        # 执行翻译
+        cn_core = core_phrase
+        for en, cn in trans_map.items():
+            cn_core = re.sub(r'\b' + re.escape(en) + r'\b', cn, cn_core, flags=re.IGNORECASE)
+
+        # 清理多余空格
+        cn_core = re.sub(r'\s+', ' ', cn_core).strip()
+        cn_core = cn_core[:45]  # 限制长度
+
+        # 构建中文标题后缀
+        suffix_map = {
+            "突破": "取得重要突破",
+            "新品": "正式发布",
+            "融资": "获得资本青睐",
+            "人事": "重要人事变动",
+            "争议": "引发行业关注",
+            "科研": "学术成果发布",
+            "安全": "安全风险警示",
+        }
+        suffix = suffix_map.get(topic_type, "值得关注")
+
+        return f"【{topic_type}】{main_entity}：{cn_core}——{suffix}"
+
+    def generate_chinese_summary(summary, title, topic_type, entities, trans_map):
+        """生成中文摘要"""
+        # 清理文本
+        text = clean_html(summary) if summary else title
+        text = text[:300]  # 限制长度
+
+        # 确定主要实体
+        main_entity = entities[0] if entities else "该公司"
+
+        # 提取关键句子（第一句）
+        first_sent = text.split(".")[0] if "." in text else text[:150]
+        first_sent = first_sent.strip()
+
+        # 使用相同的翻译表进行翻译
+        cn_text = first_sent
+        for en, cn in trans_map.items():
+            cn_text = re.sub(r'\b' + re.escape(en) + r'\b', cn, cn_text, flags=re.IGNORECASE)
+
+        # 清理多余空格
+        cn_text = re.sub(r'\s+', ' ', cn_text).strip()
+
+        # 根据类型生成结构化摘要
+        if topic_type == "突破":
+            cn_summary = f"{main_entity}在{cn_text[:45]}方面取得重要突破，展现了显著的技术进步"
+        elif topic_type == "新品":
+            cn_summary = f"{main_entity}正式发布新产品，{cn_text[:45]}，为行业带来新的解决方案"
+        elif topic_type == "融资":
+            cn_summary = f"{main_entity}宣布获得融资，{cn_text[:45]}，资金将用于业务扩张和技术研发"
+        elif topic_type == "人事":
+            cn_summary = f"{main_entity}进行重要人事调整，{cn_text[:45]}，此举将对公司发展产生重要影响"
+        elif topic_type == "争议":
+            cn_summary = f"{main_entity}面临争议事件，{cn_text[:45]}，引发业界广泛关注和讨论"
+        elif topic_type == "科研":
+            cn_summary = f"{main_entity}的研究团队在{cn_text[:45]}方面取得新进展，为相关领域提供重要参考"
+        elif topic_type == "安全":
+            cn_summary = f"{main_entity}涉及安全问题，{cn_text[:45]}，提醒行业关注相关风险"
+        else:
+            cn_summary = f"{main_entity}：{cn_text[:60]}"
+
+        # 限制长度
+        if len(cn_summary) > 100:
+            cn_summary = cn_summary[:97] + "..."
+
+        return cn_summary
+
     topics = []
 
     for idx, item in enumerate(items):
         title = item.get("title", "")
-        summary = clean_html(item.get("summary", {}).get("content", ""))
+        summary = item.get("summary", {}).get("content", "")
         full_text = f"{title} {summary}".lower()
 
         # 计算分数
@@ -368,36 +791,17 @@ def analyze_with_claude(items):
         entity_str = "|".join(entities[:2]) if entities else "科技"
 
         # 生成中文标题
-        # 清理原标题
-        clean_title = title
-        clean_title = re.sub(r'^(RT|MT)\s*[@\w]+:\s*', '', clean_title, flags=re.IGNORECASE)
-        clean_title = re.sub(r'^[@\w]+:\s*', '', clean_title)
-        clean_title = re.sub(r'https?://\S+', '', clean_title)
-        clean_title = ' '.join(clean_title.split())
+        cn_title = generate_chinese_title(title, summary, topic_type, entities)
 
-        # 提取核心内容（标题前半部分）
-        core_content = clean_title
-        if " - " in core_content:
-            core_content = core_content.split(" - ")[0]
-        if " | " in core_content:
-            core_content = core_content.split(" | ")[0]
-        if ". " in core_content and len(core_content) > 100:
-            core_content = core_content.split(". ")[0] + "."
-
-        # 生成中文摘要（一句话概括）
-        cn_summary = summary[:120] if summary else core_content[:120]
-        if len(cn_summary) > 120:
-            cn_summary = cn_summary[:117] + "..."
+        # 生成中文摘要
+        cn_summary = generate_chinese_summary(summary, title, topic_type, entities, trans_map)
 
         # 生成选题理由
         reason_keywords = [k for k in matched_keywords[:3]]
         reason = f"涉及{', '.join(reason_keywords)}等关键词，传播潜力高"
 
-        # 构建最终标题格式：【类型】实体：核心内容
-        final_title = f"【{topic_type}】{entity_str}：{core_content}"
-
         topics.append({
-            "title": final_title,
+            "title": cn_title,
             "summary": cn_summary,
             "type": topic_type,
             "entity": entity_str,
