@@ -484,7 +484,7 @@
         <div>
             <div id="dateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
             
-            <p class="update-time">更新时间：<span id="updateTime">--</span> | 共 <span id="totalCount">0</span> 条</p>
+            <p class="update-time"><span id="currentDate" style="font-weight: 600; color: #e7e9ea;">--</span> | 更新时间：<span id="updateTime">--</span> | 共 <span id="totalCount">0</span> 条</p>
 
             <div class="batch-actions">
                 <span class="batch-info">已选择 <strong id="selectedCount">0</strong> 条</span>
@@ -599,10 +599,7 @@
         }
 
         function updateButtons() {
-            const dates = getAllDates();
-            const currentIndex = dates.indexOf(currentDate);
-            document.getElementById('prevBtn').disabled = currentIndex <= 0;
-            document.getElementById('nextBtn').disabled = currentIndex >= dates.length - 1;
+            // 日期导航按钮已移除，此函数保留为空函数以避免调用错误
         }
 
         function sortBy(field) {
