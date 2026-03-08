@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 """
-量子位风格新闻选题更新脚本 v2.1
+量子位风格新闻选题更新脚本 v3.0 - AI 驱动版
+- 选题筛选、标题生成、摘要生成全部由 AI 负责（调用 Moonshot API）
 - 多源聚合优先：同一事件多源报道自动聚合并加分
-- 纯中文标题：量子位风格，不带类型前缀
-- 智能摘要：优先抓取原文生成一句话总结
+
+使用方法:
+1. 直接运行脚本获取新闻数据
+2. 将输出的 JSON 发给 Claude 进行 AI 处理
+3. 将 Claude 返回的结果保存为 news_ai_processed.json
+4. 再次运行脚本完成发布
 """
 
 import json
@@ -13,281 +18,148 @@ import re
 from datetime import datetime, timedelta
 import time
 from urllib.parse import urlparse
+import requests
 
 # ==================== 配置 ====================
 
 INOREADER_API = "https://www.inoreader.com/reader/api/0"
 PROXY = "socks5h://127.0.0.1:7890"
 
-# ==================== 量子位风格选题规则 ====================
-
-# S级选题：必报（高传播保障）
-S_LEVEL_TOPICS = {
-    "AI大模型重大发布": {
-        "keywords": [
-            "GPT-4", "GPT-4o", "Claude", "Gemini", "Llama", "Sora", "o1", "o3", "DeepSeek",
-            "大模型发布", "多模态模型", "视频生成模型", "AI Agent", "AutoGPT",
-        ],
-        "patterns": [r"GPT-\d+", r"Claude \d+", r"Gemini \d+", r"发布.*模型", r"推出.*大模型"],
-        "weight": 100,
-    },
-    "马斯克/SpaceX动态": {
-        "keywords": ["马斯克", "Elon Musk", "Musk", "SpaceX", "Starship", "星舰", "Falcon", "载人航天"],
-        "patterns": [r"SpaceX.*成功", r"马斯克.*创造", r"星舰.*发射", r"Falcon.*火箭"],
-        "weight": 95,
-    },
-    "Nature/Science顶刊发表": {
-        "keywords": ["Nature", "Science", "Cell", "顶刊", "论文发表", "研究成果"],
-        "patterns": [r"登Nature封面", r"登Science封面", r"Nature发表", r"Science发表"],
-        "weight": 90,
-    },
+# Moonshot API 配置
+AI_CONFIG = {
+    "base_url": "https://api.moonshot.cn/v1",
+    "model": "kimi-latest",
+    "api_key": os.environ.get("OPENAI_API_KEY", ""),
+    "timeout": 120,
 }
 
-# A级选题：优先（高传播潜力）
-A_LEVEL_TOPICS = {
-    "科技巨头重大动态": {
-        "keywords": [
-            "OpenAI", "Anthropic", "Google", "Microsoft", "Meta", "苹果", "Apple", "英伟达", "NVIDIA",
-            "黄仁勋", "Sam Altman", "奥特曼", "纳德拉", "扎克伯格",
-        ],
-        "weight": 85,
-    },
-    "国产大模型进展": {
-        "keywords": [
-            "字节", "豆包", "阿里", "通义", "百度", "文心", "腾讯", "混元", "智谱", "月之暗面",
-            "Kimi", "MiniMax", "零一万物", "李开复", "王小川", "李志飞",
-        ],
-        "weight": 80,
-    },
-    "开源爆款项目": {
-        "keywords": ["GitHub", "开源", "开源项目", "Star", "标星", "万星"],
-        "patterns": [r"GitHub.*万.*星", r"GitHub.*热榜", r"开源.*代码"],
-        "weight": 75,
-    },
-    "学术突破/首次": {
-        "keywords": ["首次", "首个", "突破", "颠覆", "里程碑", "创纪录", "世界第一"],
-        "patterns": [r"首次.*实现", r"首个.*诞生", r"突破.*纪录"],
-        "weight": 75,
-    },
-    "人物励志故事": {
-        "keywords": ["博士", "院士", "清华", "北大", "MIT", "斯坦福", "年薪", "offer", "天才少年", "逆袭"],
-        "patterns": [r"年薪.*万", r"华为天才少年", r"复读.*考上", r"博士.*心路"],
-        "weight": 70,
-    },
-    "社会/伦理争议": {
-        "keywords": ["曝光", "揭秘", "内网", "控诉", "争议", "伦理", "走火入魔"],
-        "patterns": [r".*曝光：", r"内网.*字", r"走火入魔"],
-        "weight": 75,
-    },
-}
-
-# B级选题：可选
-B_LEVEL_TOPICS = {
-    "产品评测/实测": {"keywords": ["评测", "实测", "体验", "上手", "测评", "对比"], "weight": 60},
-    "技术深度解析": {"keywords": ["技术解析", "原理", "架构", "算法", "论文解读"], "weight": 55},
-    "航天/太空": {"keywords": ["SpaceX", "火箭", "卫星", "空间站", "太空", "火星", "登月"], "weight": 70},
-    "芯片/量子计算": {"keywords": ["芯片", "量子计算", "量子计算机", "GPU", "光刻机", "脑机接口"], "weight": 65},
-}
-
-# 降低权重的内容
-REDUCE_WEIGHT_TOPICS = {
-    "一般商业新闻": ["融资", "估值", "上市", "财报", "营收", "利润", "股价"],
-    "消费电子": ["手机", "耳机", "平板", "手表", "可穿戴", "iPhone", "Samsung"],
-    "常规汽车": ["电动车", "新能源汽车", "车型", "续航", "Model 3", "Model Y"],
-}
-
-# 热点人物监控列表
-HOT_PEOPLE = [
-    "马斯克", "Elon Musk", "黄仁勋", "Jensen Huang", "Sam Altman", "奥特曼",
-    "稚晖君", "彭志辉", "王小川", "李志飞", "李开复", "张一鸣",
-    "Demis Hassabis", "Satya Nadella", "Sundar Pichai", "Mark Zuckerberg",
-]
-
-# 热点公司监控列表
-HOT_COMPANIES = [
-    "OpenAI", "Anthropic", "xAI", "DeepMind", "Google", "Microsoft", "Meta", "Apple", "Amazon",
-    "Nvidia", "NVIDIA", "Intel", "AMD", "Tesla", "SpaceX",
-    "字节", "ByteDance", "抖音", "豆包", "阿里", "Alibaba", "百度", "Baidu",
-    "腾讯", "Tencent", "华为", "Huawei", "智谱", "月之暗面", "Kimi",
-]
-
-# 高传播标题元素
-HIGH_ENGAGEMENT_ELEMENTS = {
-    "情绪词": ["炸裂", "炸场", "炸了", "王炸", "震撼", "颠覆", "疯狂", "太疯狂了"],
-    "时效词": ["刚刚", "突发", "深夜", "凌晨"],
-    "突破词": ["首次", "首个", "创造历史", "里程碑", "世界第一"],
-    "互动词": ["网友", "网友：", "网友评价", "网友热议"],
-    "权威背书": ["Nature", "Science", "顶刊", "院士", "博士"],
-}
+# AI 处理缓存文件
+AI_CACHE_FILE = "news_ai_cache.json"
 
 
-# ==================== 评分系统（0-100 标准化，含多源加分） ====================
+# ==================== AI 调用函数 ====================
 
-def calculate_score(title, content, source_count=1):
-    """计算新闻选题评分（满分100），返回 (score, level, reasons)
+def call_ai(prompt, temperature=0.7, max_tokens=4000):
+    """调用 Moonshot AI"""
+    if not AI_CONFIG["api_key"]:
+        print("[AI] 未配置 API Key")
+        return None
+
+    try:
+        response = requests.post(
+            f"{AI_CONFIG['base_url']}/chat/completions",
+            headers={
+                "Authorization": f"Bearer {AI_CONFIG['api_key']}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": AI_CONFIG["model"],
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": temperature,
+                "max_tokens": max_tokens,
+            },
+            timeout=AI_CONFIG["timeout"],
+        )
+        response.raise_for_status()
+        return response.json()["choices"][0]["message"]["content"]
+    except Exception as e:
+        print(f"[AI] 调用失败: {e}")
+        return None
+
+
+def ai_process_all(items):
+    """使用 AI 批量处理所有新闻：筛选 + 生成标题/摘要/类型
 
     Args:
-        source_count: 报道该事件的来源数量，多源有额外加分
+        items: 新闻条目列表，每个包含 title, content, url, source
+
+    Returns:
+        list: AI 处理后的条目，包含 title, summary, type, score, level 等
     """
-    text = f"{title} {content}".lower()
-    score = 0
-    reasons = []
+    # 准备输入数据（限制数量避免超出 token 限制）
+    items_for_ai = []
+    for i, item in enumerate(items[:30]):  # 最多处理30条
+        items_for_ai.append({
+            "index": i,
+            "title": item["title"],
+            "content": item["content"][:500] if item["content"] else "",
+            "source": item["source"],
+            "url": item["url"],
+        })
 
-    # 1. S级选题检测
-    for topic_name, cfg in S_LEVEL_TOPICS.items():
-        for kw in cfg.get("keywords", []):
-            if kw.lower() in text:
-                score += cfg["weight"]
-                reasons.append(f"S级-{topic_name}")
-                break
-        for pat in cfg.get("patterns", []):
-            if re.search(pat, text, re.IGNORECASE):
-                score += 10
-                reasons.append(f"S级模式-{topic_name}")
-                break
+    prompt = f"""你是一位资深科技媒体编辑，负责筛选和加工科技新闻选题。
 
-    # 2. A级选题检测
-    for topic_name, cfg in A_LEVEL_TOPICS.items():
-        for kw in cfg.get("keywords", []):
-            if kw.lower() in text:
-                score += cfg["weight"] // 2
-                reasons.append(f"A级-{topic_name}")
-                break
+请对以下新闻进行批量处理，返回 JSON 格式结果：
 
-    # 3. 热点人物加分
-    for person in HOT_PEOPLE:
-        if person.lower() in text:
-            score += 15
-            reasons.append(f"热点人物-{person}")
-            break
+输入新闻：
+{json.dumps(items_for_ai, ensure_ascii=False, indent=2)}
 
-    # 4. 热点公司加分
-    for company in HOT_COMPANIES:
-        if company.lower() in text:
-            score += 10
-            reasons.append(f"热点公司-{company}")
-            break
+处理要求：
 
-    # 5. 高传播元素加分
-    for elem_type, elements in HIGH_ENGAGEMENT_ELEMENTS.items():
-        for elem in elements:
-            if elem in title:
-                score += 5
-                reasons.append(f"高传播-{elem}")
-                break
+1. **筛选选题**（S级/A级/B级）：
+   - S级（90-100分）：AI大模型重大发布、马斯克/SpaceX重大动态、Nature/Science顶刊
+   - A级（75-89分）：科技巨头动态、国产大模型、开源爆款、学术突破、人物故事
+   - B级（60-74分）：产品评测、技术解析、航天/芯片
+   - 过滤掉C级（<60分）：一般商业新闻、消费电子
 
-    # 6. 时效性加分
-    if any(w in title for w in ["刚刚", "突发", "深夜", "凌晨"]):
-        score += 10
-        reasons.append("时效性强")
+2. **生成量子位风格中文标题**：
+   - 纯中文，无类型前缀
+   - 情绪饱满，可用"炸裂"、"刚刚"、"颠覆"、"首次"等词
+   - 20-40字，突出核心信息
 
-    # 7. 多源报道加分（每多一个来源+5分，最高+20分）
-    if source_count > 1:
-        multi_source_bonus = min((source_count - 1) * 5, 20)
-        score += multi_source_bonus
-        reasons.append(f"多源报道(+{multi_source_bonus})")
+3. **生成一句话摘要**：
+   - 50-100字
+   - 概括核心信息，突出关键数据
 
-    # 8. 降权扣分
-    for topic_name, keywords in REDUCE_WEIGHT_TOPICS.items():
-        for kw in keywords:
-            if kw.lower() in text:
-                score -= 20
-                reasons.append(f"降权-{topic_name}")
-                break
+4. **标注类型**：hot(热点)/ai(AI相关)/tech(科技)/business(商业)
 
-    score = max(0, min(100, score))
-    if score >= 90:
-        level = "S"
-    elif score >= 75:
-        level = "A"
-    elif score >= 60:
-        level = "B"
-    else:
-        level = "C"
+返回格式（JSON）：
+{{
+  "results": [
+    {{
+      "index": 0,
+      "score": 85,
+      "level": "A",
+      "title": "效果炸裂！OpenAI发布新一代模型，能力全面升级",
+      "summary": "OpenAI最新发布的大模型在多项基准测试中创下新高，支持更长的上下文窗口和更复杂的推理任务。",
+      "type": "ai",
+      "reason": "OpenAI重大发布，属于AI领域顶级动态"
+    }}
+  ]
+}}
 
-    return score, level, list(set(reasons))
+注意：
+1. 只返回 JSON，不要其他解释
+2. 最多选择15条最有价值的
+3. 相似主题的新闻合并为一条，标注多来源"""
+
+    print(f"[AI] 发送 {len(items_for_ai)} 条新闻进行处理...")
+    result = call_ai(prompt, temperature=0.5, max_tokens=8000)
+    if not result:
+        return []
+
+    try:
+        # 提取 JSON
+        json_match = re.search(r'\{.*\}', result, re.DOTALL)
+        if json_match:
+            data = json.loads(json_match.group())
+            return data.get("results", [])
+    except Exception as e:
+        print(f"[AI] 解析结果失败: {e}")
+        print(f"[AI] 原始输出: {result[:500]}")
+
+    return []
 
 
-# ==================== 翻译映射（精简核心） ====================
-
-TRANS_MAP = {
-    # 公司/产品
-    "openai": "OpenAI", "anthropic": "Anthropic", "claude": "Claude",
-    "chatgpt": "ChatGPT", "gemini": "Gemini", "google": "Google",
-    "deepmind": "DeepMind", "microsoft": "微软", "meta": "Meta",
-    "apple": "苹果", "amazon": "亚马逊", "nvidia": "英伟达",
-    "tesla": "特斯拉", "spacex": "SpaceX", "xai": "xAI",
-    # 技术术语
-    "artificial intelligence": "人工智能", "machine learning": "机器学习",
-    "deep learning": "深度学习", "large language model": "大语言模型",
-    "neural network": "神经网络", "computer vision": "计算机视觉",
-    "natural language": "自然语言", "ai model": "AI模型",
-    "ai agent": "AI智能体", "ai system": "AI系统",
-    "quantum computing": "量子计算", "quantum computer": "量子计算机",
-    "algorithm": "算法", "framework": "框架", "architecture": "架构",
-    "infrastructure": "基础设施", "database": "数据库",
-    "robot": "机器人", "robotics": "机器人技术",
-    "autonomous": "自主", "automated": "自动化",
-    "blockchain": "区块链", "supercomputer": "超级计算机",
-    # 动作
-    "launches": "发布", "launched": "发布", "launch": "发布",
-    "releases": "推出", "released": "推出", "release": "推出",
-    "announces": "宣布", "announced": "宣布",
-    "introduces": "推出", "introduced": "推出",
-    "develops": "开发", "developed": "开发",
-    "achieves": "实现", "demonstrates": "展示",
-    "outperforms": "优于", "beats": "击败",
-    # 形容词
-    "breakthrough": "突破", "milestone": "里程碑",
-    "revolutionary": "革命性", "state-of-the-art": "最先进",
-    "cutting-edge": "前沿", "novel": "新型", "innovative": "创新",
-    "significantly": "显著", "dramatically": "大幅",
-    # 科研
-    "researchers": "研究人员", "scientists": "科学家",
-    "published": "发表", "discovery": "发现", "findings": "发现",
-    "experiment": "实验", "benchmark": "基准测试",
-    "nature": "《自然》", "science": "《科学》",
-    # 航天
-    "rocket": "火箭", "satellite": "卫星", "spacecraft": "航天器",
-    "starship": "星舰", "starlink": "星链", "nasa": "NASA",
-    "astronaut": "宇航员", "mars": "火星", "moon": "月球", "orbit": "轨道",
-    # 人事
-    "ceo": "CEO", "cto": "CTO", "founder": "创始人",
-    "co-founder": "联合创始人", "joins": "加入", "joined": "加入",
-    "hired": "聘请", "appointed": "任命",
-    "resigns": "辞职", "resigned": "辞职",
-    # 医疗
-    "medical": "医疗", "drug": "药物", "treatment": "治疗",
-    "disease": "疾病", "cancer": "癌症", "gene": "基因",
-    "protein": "蛋白质", "clinical": "临床",
-    # 安全
-    "safety": "安全", "security": "安全", "privacy": "隐私",
-    "risk": "风险", "threat": "威胁", "concern": "担忧",
-}
-
-# 实体识别映射
-ENTITY_KEYWORDS = [
-    ("OpenAI", "OpenAI"), ("Anthropic", "Anthropic"), ("Claude", "Anthropic"),
-    ("ChatGPT", "OpenAI"), ("GPT-4", "OpenAI"), ("Google", "Google"),
-    ("DeepMind", "Google"), ("Gemini", "Google"), ("Microsoft", "微软"),
-    ("xAI", "xAI"), ("Grok", "xAI"), ("Meta", "Meta"), ("Apple", "苹果"),
-    ("Nvidia", "英伟达"), ("Tesla", "特斯拉"),
-    ("SpaceX", "SpaceX"), ("Starship", "SpaceX"),
-    ("Sam Altman", "Sam Altman"), ("Elon Musk", "马斯克"),
-    ("Dario Amodei", "Dario Amodei"), ("Demis Hassabis", "Demis Hassabis"),
-    ("Jensen Huang", "黄仁勋"),
-]
-
-# 类型检测关键词
-TOPIC_TYPE_KEYWORDS = {
-    "breakthrough": "突破", "milestone": "突破", "world first": "突破",
-    "state-of-the-art": "突破", "首次": "突破", "颠覆": "突破",
-    "launch": "新品", "release": "新品", "发布": "新品", "推出": "新品",
-    "funding": "融资", "raised": "融资", "融资": "融资",
-    "safety": "安全", "concern": "争议", "controversy": "争议", "争议": "争议",
-    "joins": "人事", "hired": "人事", "appointed": "人事", "离职": "人事",
-    "Nature": "科研", "Science": "科研", "论文": "科研", "研究": "科研",
-}
+def ai_detect_type_name(type_code):
+    """将类型代码转换为中文名称"""
+    type_names = {
+        "hot": "热点",
+        "ai": "AI",
+        "tech": "科技",
+        "business": "商业",
+    }
+    return type_names.get(type_code, "科技")
 
 
 # ==================== 工具函数 ====================
@@ -304,18 +176,13 @@ def clean_html(html_text):
 
 
 def extract_article_content(url, timeout=10):
-    """尝试抓取文章正文内容
-
-    Returns:
-        str: 提取的正文内容，失败返回空字符串
-    """
+    """尝试抓取文章正文内容"""
     if not url:
         return ""
 
     try:
-        # 使用 curl 获取页面内容
         cmd = [
-            "curl", "-s", "-L",  # -L 跟随重定向
+            "curl", "-s", "-L",
             "--connect-timeout", str(timeout),
             "--max-time", str(timeout * 2),
             "--socks5-hostname", PROXY.replace("socks5h://", ""),
@@ -331,169 +198,19 @@ def extract_article_content(url, timeout=10):
         if not html:
             return ""
 
-        # 简单提取正文：移除 script/style，提取 p 标签内容
-        # 移除 script 和 style
         text = re.sub(r'<(script|style|nav|header|footer|aside)[^>]*>.*?</\1>', ' ', html, flags=re.IGNORECASE | re.DOTALL)
-        # 提取 p 标签内容
         paragraphs = re.findall(r'<p[^>]*>(.*?)</p>', text, flags=re.IGNORECASE | re.DOTALL)
-        # 清理 HTML 标签
         content_parts = []
-        for p in paragraphs[:5]:  # 取前5段
+        for p in paragraphs[:5]:
             clean = re.sub(r'<[^>]+>', ' ', p)
             clean = ' '.join(clean.split())
-            if len(clean) > 30:  # 过滤太短的段落
+            if len(clean) > 30:
                 content_parts.append(clean)
 
-        return ' '.join(content_parts)[:500]  # 限制长度
+        return ' '.join(content_parts)[:800]
 
     except Exception as e:
         return ""
-
-
-def detect_topic_type(title, content):
-    """检测选题类型"""
-    full_text = f"{title} {content}".lower()
-    for keyword, topic_type in TOPIC_TYPE_KEYWORDS.items():
-        if keyword.lower() in full_text:
-            return topic_type
-    return "科技"
-
-
-def detect_entities(title, content):
-    """识别文本中的实体"""
-    full_text = f"{title} {content}"
-    entities = []
-    for keyword, entity in ENTITY_KEYWORDS:
-        if keyword.lower() in full_text.lower() or keyword in title:
-            if entity not in entities:
-                entities.append(entity)
-    return entities
-
-
-def translate_phrase(phrase):
-    """对英文短语进行关键词翻译"""
-    result = phrase
-    for en, cn in TRANS_MAP.items():
-        result = re.sub(r'\b' + re.escape(en) + r'\b', cn, result, flags=re.IGNORECASE)
-    return re.sub(r'\s+', ' ', result).strip()
-
-
-# ==================== 量子位风格标题生成 ====================
-
-def generate_quantum_bit_title(title, content, topic_type, entities):
-    """生成量子位风格的纯中文标题（不带类型前缀）
-
-    风格示例：
-    - 效果炸裂！OpenAI首个视频生成模型发布，1分钟流畅高清
-    - 刚刚，马斯克创造人类航天新壮举！空中炸毁火箭
-    - 3个搞物理的颠覆了数学常识，数学天才陶哲轩：我开始压根不相信
-    """
-    text = f"{title} {content}".lower()
-    main_entity = entities[0] if entities else ""
-
-    # 清理原标题
-    core = re.sub(r'^(RT|MT)\s*[@\w]+:\s*', '', title, flags=re.IGNORECASE)
-    core = re.sub(r'https?://\S+', '', core)
-    if " - " in core:
-        core = core.split(" - ")[0]
-    if " | " in core:
-        core = core.split(" | ")[0]
-
-    # 翻译核心内容
-    cn_core = translate_phrase(core)
-
-    # 根据内容类型选择标题模板
-
-    # 模板1: AI/大模型发布 - 效果炸裂型
-    if any(kw in text for kw in ["gpt", "claude", "gemini", "sora", "llama", "模型", "发布", "推出"]):
-        if "视频" in text or "video" in text:
-            return f"效果炸裂！{main_entity}首个视频生成模型发布，1分钟流畅高清"
-        if "多模态" in text or "multimodal" in text:
-            return f"效果炸裂！{main_entity}发布多模态大模型，图文音视频全搞定"
-        if main_entity:
-            return f"效果炸裂！{main_entity}发布新一代大模型，能力全面升级"
-        return f"效果炸裂！{cn_core[:40]}"
-
-    # 模板2: 马斯克/SpaceX - 刚刚创造历史型
-    if "马斯克" in text or "musk" in text or "spacex" in text:
-        if "发射" in text or "launch" in text:
-            return f"刚刚，马斯克创造人类航天新壮举！星舰发射圆满成功"
-        if "回收" in text or "landing" in text:
-            return f"刚刚，马斯克再次创造历史！火箭回收技术取得新突破"
-        return f"刚刚，马斯克{text[:20]}..."
-
-    # 模板3: Nature/Science - 颠覆认知型
-    if "nature" in text or "science" in text or "顶刊" in text:
-        if "数学" in text:
-            return f"颠覆认知！{cn_core[:35]}...，数学界震动"
-        return f"颠覆认知！{cn_core[:40]}..."
-
-    # 模板4: 人物/励志故事 - 网友热议型
-    if "博士" in text or "院士" in text or "年薪" in text:
-        if "华为" in text and "年薪" in text:
-            return f"{cn_core[:40]}...，网友：这才是真正的天才"
-        return f"{cn_core[:45]}...，网友热议"
-
-    # 模板5: 开源/GitHub - 登顶热榜型
-    if "github" in text or "开源" in text:
-        return f"{cn_core[:35]}...，登顶GitHub热榜"
-
-    # 模板6: 争议/爆料 - 曝光型
-    if "曝光" in text or "揭秘" in text or "争议" in text:
-        return f"{main_entity}{text[:25]}...曝光：{cn_core[30:60]}..."
-
-    # 默认模板：直接翻译 + 情绪词
-    if any(w in text for w in ["突破", "breakthrough", "首次", "first"]):
-        return f"重大突破！{cn_core[:45]}..."
-
-    # 简洁直接型
-    return cn_core[:60]
-
-
-def generate_summary_from_content(content, title, url, topic_type, entities):
-    """生成摘要：优先抓取原文，失败则用模板
-
-    Returns:
-        str: 50-100字的中文摘要，或 "点击链接查看详情"
-    """
-    main_entity = entities[0] if entities else "该项目"
-
-    # 尝试抓取原文
-    if url:
-        fetched_content = extract_article_content(url)
-        if fetched_content:
-            # 从抓取的内容中提取第一句完整的话
-            sentences = re.split(r'[.!?。！？]\s+', fetched_content)
-            for sent in sentences:
-                sent = sent.strip()
-                if len(sent) > 30 and len(sent) < 200:
-                    # 翻译并清理
-                    cn_sent = translate_phrase(sent)
-                    cn_sent = re.sub(r'\s+', '', cn_sent)  # 移除空格
-                    if len(cn_sent) >= 30:
-                        return cn_sent[:100] if len(cn_sent) <= 100 else cn_sent[:97] + "..."
-
-    # 降级：使用 Inoreader 摘要生成
-    text = clean_html(content) if content else title
-    if text:
-        first_sent = text.split(".")[0] if "." in text else text[:150]
-        cn_text = translate_phrase(first_sent.strip())
-        cn_text = re.sub(r'\s+', '', cn_text)
-        if len(cn_text) >= 20:
-            templates = {
-                "突破": f"{main_entity}在相关领域取得重要突破，展现了显著的技术进步",
-                "新品": f"{main_entity}正式发布新产品，为行业带来新的解决方案",
-                "融资": f"{main_entity}宣布获得融资，资金将用于业务扩张和技术研发",
-                "人事": f"{main_entity}进行重要人事调整，此举将对公司发展产生重要影响",
-                "争议": f"{main_entity}面临争议事件，引发业界广泛关注和讨论",
-                "科研": f"{main_entity}的研究团队取得新进展，为相关领域提供重要参考",
-                "安全": f"{main_entity}涉及安全问题，提醒行业关注相关风险",
-            }
-            summary = templates.get(topic_type, f"{main_entity}：{cn_text[:60]}")
-            return summary[:100] if len(summary) <= 100 else summary[:97] + "..."
-
-    # 最终降级
-    return "点击链接查看详情"
 
 
 # ==================== 多源聚合与去重 ====================
@@ -517,11 +234,7 @@ def calculate_similarity(s1, s2):
 
 
 def group_by_event(items):
-    """按事件分组：相似标题归为同一事件
-
-    Returns:
-        list: 每个元素是 (representative_item, [similar_items]) 的元组
-    """
+    """按事件分组：相似标题归为同一事件"""
     groups = []
     used = set()
 
@@ -538,7 +251,7 @@ def group_by_event(items):
                 continue
             title2 = other["title"]
             sim = calculate_similarity(title1, title2)
-            if sim > 0.5:  # 相似度阈值
+            if sim > 0.5:
                 group.append(other)
                 used.add(j)
 
@@ -547,22 +260,16 @@ def group_by_event(items):
     return groups
 
 
-def merge_event_group(group):
-    """合并同一事件的多个来源
-
-    Returns:
-        dict: 合并后的新闻条目
-    """
+def merge_event_group(group, ai_results_map):
+    """合并同一事件的多个来源"""
     if not group:
         return None
 
-    # 取评分最高的作为代表
-    representative = max(group, key=lambda x: x.get("_score", 0))
+    # 取 AI 评分最高的作为代表
+    representative = max(group, key=lambda x: ai_results_map.get(x.get("_index", -1), {}).get("score", 0))
 
-    # 合并所有来源
     all_links = []
     seen_urls = set()
-    seen_sources = set()
 
     for item in group:
         url = item.get("url", "")
@@ -570,14 +277,8 @@ def merge_event_group(group):
         if url and url not in seen_urls:
             all_links.append({"name": source, "url": url})
             seen_urls.add(url)
-            seen_sources.add(source)
 
-    # 重新计算评分（含多源加分）
-    score, level, reasons = calculate_score(
-        representative["title"],
-        representative.get("content", ""),
-        source_count=len(all_links)
-    )
+    ai_result = ai_results_map.get(representative.get("_index", -1), {})
 
     merged = {
         "title_en": representative["title"],
@@ -585,9 +286,7 @@ def merge_event_group(group):
         "url": representative.get("url", ""),
         "source": representative.get("source", "Unknown"),
         "published": representative.get("published", 0),
-        "_score": score,
-        "_level": level,
-        "_reasons": reasons,
+        "_ai_result": ai_result,
         "_sourceLinks": all_links,
         "_sourceCount": len(all_links),
     }
@@ -671,7 +370,6 @@ def update_github_pages(news_data):
 
         archive[today] = news_data
 
-        # 只保留最近 30 天
         dates = sorted(archive.keys())
         if len(dates) > 30:
             for old_date in dates[:-30]:
@@ -682,7 +380,6 @@ def update_github_pages(news_data):
 
         print(f"[GitHub Pages] 数据已保存: {today}, {len(news_data)} 条新闻")
 
-        # Git 提交推送
         env = os.environ.copy()
         env["GIT_AUTHOR_NAME"] = "OpenClaw Bot"
         env["GIT_AUTHOR_EMAIL"] = "bot@openclaw.ai"
@@ -701,80 +398,72 @@ def update_github_pages(news_data):
                 capture_output=True, text=True, env=env,
             )
             if push.returncode == 0:
-                print("[GitHub Pages] ✅ 推送成功")
+                print("[GitHub Pages] 推送成功")
                 return True
             else:
-                print(f"[GitHub Pages] ⚠️ 推送失败: {push.stderr}")
+                print(f"[GitHub Pages] 推送失败: {push.stderr}")
         else:
-            print(f"[GitHub Pages] ⚠️ 提交失败: {result.stderr}")
+            print(f"[GitHub Pages] 提交失败: {result.stderr}")
         return False
     except Exception as e:
-        print(f"[GitHub Pages] ❌ 更新出错: {e}")
+        print(f"[GitHub Pages] 更新出错: {e}")
         return False
 
 
 # ==================== 主流程 ====================
 
-def process_items(items):
-    """处理流程：评分 → 多源聚合 → 生成中文标题/摘要"""
+def process_with_ai(items):
+    """使用 AI 处理新闻：筛选 + 生成标题/摘要/类型"""
 
-    # 第一步：初步评分
-    scored_items = []
-    for item in items:
-        score, level, reasons = calculate_score(item["title"], item["content"])
-        if score >= 60:  # 只保留 B 级及以上
-            item["_score"] = score
-            item["_level"] = level
-            item["_reasons"] = reasons
-            scored_items.append(item)
+    # 第一步：AI 批量处理
+    print(f"[AI] 开始处理 {len(items)} 条新闻...")
+    ai_results = ai_process_all(items)
+    print(f"[AI] 返回 {len(ai_results)} 条处理结果")
 
-    print(f"初步筛选: {len(scored_items)} 条（评分≥60）")
+    if not ai_results:
+        return []
+
+    # 建立索引映射
+    ai_results_map = {r["index"]: r for r in ai_results if "index" in r}
+
+    # 为原始数据添加索引标记
+    for i, item in enumerate(items):
+        item["_index"] = i
+
+    # 筛选出有 AI 结果的条目
+    selected_items = [items[r["index"]] for r in ai_results if "index" in r and r["index"] < len(items)]
 
     # 第二步：按事件分组（多源聚合）
-    event_groups = group_by_event(scored_items)
-    print(f"事件分组: {len(event_groups)} 个独立事件")
+    event_groups = group_by_event(selected_items)
+    print(f"[聚合] 分为 {len(event_groups)} 个独立事件")
 
-    # 第三步：合并每组并生成最终内容
+    # 第三步：合并并构建最终输出
     processed = []
     for group in event_groups:
-        merged = merge_event_group(group)
-        if not merged:
+        merged = merge_event_group(group, ai_results_map)
+        if not merged or not merged.get("_ai_result"):
             continue
 
-        # 生成中文标题（量子位风格，纯中文，无类型前缀）
-        topic_type = detect_topic_type(merged["title_en"], merged["content"])
-        entities = detect_entities(merged["title_en"], merged["content"])
-
-        cn_title = generate_quantum_bit_title(
-            merged["title_en"],
-            merged["content"],
-            topic_type,
-            entities
-        )
-
-        # 生成摘要（优先抓取原文）
-        summary = generate_summary_from_content(
-            merged["content"],
-            merged["title_en"],
-            merged["url"],
-            topic_type,
-            entities
-        )
+        ai_result = merged["_ai_result"]
 
         # 构建选题理由
         level_labels = {"S": "S级必报", "A": "A级优先", "B": "B级可选"}
-        reason_text = f"【{level_labels.get(merged['_level'], merged['_level'])}】评分{merged['_score']}分"
+        level = ai_result.get("level", "B")
+        score = ai_result.get("score", 60)
+        reason_text = f"【{level_labels.get(level, level)}】评分{score}分"
         if merged["_sourceCount"] > 1:
             reason_text += f" | {merged['_sourceCount']}个来源报道"
-        reason_text += f" | 命中：{', '.join(merged['_reasons'][:3])}"
+        if ai_result.get("reason"):
+            reason_text += f" | {ai_result['reason']}"
 
         processed.append({
-            "title": cn_title,
+            "title": ai_result.get("title", merged["title_en"]),
             "title_en": merged["title_en"],
-            "summary": summary,
-            "type": topic_type,
-            "score": merged["_score"],
-            "level": merged["_level"],
+            "summary": ai_result.get("summary", "点击链接查看详情"),
+            "type": ai_result.get("type", "tech"),
+            "typeName": ai_detect_type_name(ai_result.get("type", "tech")),
+            "score": score,
+            "level": level,
             "reason": reason_text,
             "url": merged["url"],
             "source": merged["source"],
@@ -790,13 +479,13 @@ def process_items(items):
 
 
 def main():
-    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始量子位风格新闻选题更新...")
+    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始 AI 驱动的新闻选题更新...")
 
     try:
         # 1. 获取 Token
         token = get_token()
         if not token:
-            print("❌ 无法获取 Inoreader token")
+            print("无法获取 Inoreader token")
             return
 
         # 2. 获取最近 24 小时内容
@@ -805,10 +494,13 @@ def main():
         items = parse_items(data)
         print(f"获取到 {len(items)} 条内容")
 
-        # 3. 评分、聚合、生成
-        print("进行量子位风格评分与中文标题生成...")
-        processed = process_items(items)
-        print(f"筛选出 {len(processed)} 条高潜力选题（聚合后）")
+        if not items:
+            print("没有获取到新闻内容")
+            return
+
+        # 3. AI 处理（筛选 + 生成）
+        processed = process_with_ai(items)
+        print(f"最终产出 {len(processed)} 条新闻")
 
         # 4. 更新 GitHub Pages
         if processed:
@@ -823,7 +515,7 @@ def main():
         b_count = len([t for t in processed if t["level"] == "B"])
         multi_source = len([t for t in processed if t["sources"] > 1])
 
-        print(f"\n✅ 完成!")
+        print(f"\n完成!")
         print(f"\n选题统计:")
         print(f"  S级(必报): {s_count} 条")
         print(f"  A级(优先): {a_count} 条")
@@ -831,7 +523,7 @@ def main():
         print(f"  多源报道: {multi_source} 条")
 
     except Exception as e:
-        print(f"❌ 错误: {e}")
+        print(f"错误: {e}")
         import traceback
         traceback.print_exc()
 
