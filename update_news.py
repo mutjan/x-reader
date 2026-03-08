@@ -36,6 +36,27 @@ AI_CONFIG = {
 # AI 处理缓存文件
 AI_CACHE_FILE = "news_ai_cache.json"
 
+# 版本号生成（基于日期和序号）
+def generate_version():
+    """生成版本号：YYYY.MM.DD-NNN"""
+    today = datetime.now().strftime('%Y.%m.%d')
+    # 检查今天已有的版本号，递增序号
+    version_file = ".version_counter"
+    counter = 1
+    if os.path.exists(version_file):
+        with open(version_file, 'r') as f:
+            content = f.read().strip()
+            if '-' in content:
+                saved_date, saved_counter = content.rsplit('-', 1)
+                if saved_date == today:
+                    try:
+                        counter = int(saved_counter) + 1
+                    except ValueError:
+                        counter = 1
+    with open(version_file, 'w') as f:
+        f.write(f"{today}-{counter:03d}")
+    return f"{today}-{counter:03d}"
+
 
 # ==================== AI 调用函数 ====================
 
@@ -470,6 +491,7 @@ def process_with_ai(items):
             "sources": merged["_sourceCount"],
             "sourceLinks": merged["_sourceLinks"],
             "timestamp": int(time.time()),
+            "version": generate_version(),
         })
 
     # 按分数排序

@@ -507,7 +507,7 @@
 
         <footer>
             <p>数据来源：Inoreader RSS | 每小时 自动更新</p>
-            <p>由 OpenClaw 自动生成 · 托管于 GitHub Pages · 版本: 2026.02.27-001</p>
+            <p>由 OpenClaw 自动生成 · 托管于 GitHub Pages · 版本: <span id="version">--</span></p>
         </footer>
     </div>
 
@@ -752,8 +752,17 @@
             
             const newsList = NEWS_ARCHIVE[currentDate] || [];
             const displayList = getSortedAndFilteredNews(newsList);
-            
+
             currentDateEl.textContent = currentDate;
+
+            // 更新版本号显示（从数据中获取）
+            const versionEl = document.getElementById('version');
+            if (versionEl && newsList.length > 0 && newsList[0].version) {
+                versionEl.textContent = newsList[0].version;
+            } else if (versionEl) {
+                versionEl.textContent = 'v3.0';
+            }
+
             renderDateChips();
             updateButtons();
             updateBatchButtons();
@@ -765,7 +774,14 @@
                 return;
             }
             
-            updateTime.textContent = currentDate + ' 13:45 (Claude-Opus-4.6)';
+            // 使用第一条新闻的更新时间，或显示当前日期
+            const firstItem = displayList[0];
+            if (firstItem && firstItem.timestamp) {
+                const updateDate = new Date(firstItem.timestamp * 1000);
+                updateTime.textContent = updateDate.toLocaleString('zh-CN', {month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'}) + ' (AI-Generated)';
+            } else {
+                updateTime.textContent = new Date().toLocaleString('zh-CN', {month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'}) + ' (AI-Generated)';
+            }
             totalCount.textContent = `${displayList.length}${filteredType ? ' / ' + newsList.length : ''}`;
             
             content.innerHTML = `
