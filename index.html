@@ -821,26 +821,3 @@
     </script>
 </body>
 </html>
-                                <td><div style="color: #8899a6; font-size: 12px;">${updateTime}</div></td>
-                                <td><div class="source-count">${event.postCount}</div></td>
-                                <td>
-                                    <button class="copy-btn" id="x-copy-btn-${index}" onclick="xCopySingle(${index})">复制</button>
-                                </td>
-                            </tr>`;
-                        }).join('')}
-                    </tbody>
-                </table>`;
-        }
-
-        function showToast(message) {
-            const toast = document.getElementById('toast');
-            toast.textContent = message;
-            toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 2000);
-        }
-
-        // 页面加载时自动加载数据
-        document.addEventListener('DOMContentLoaded', loadData);
-    </script>
-</body>
-</html>
