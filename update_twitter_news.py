@@ -36,7 +36,6 @@ def fetch_rss():
             "curl", "-s", "-L",
             "--connect-timeout", "10",
             "--max-time", "30",
-            "--socks5-hostname", PROXY.replace("socks5h://", ""),
             "-A", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
             RSS_URL,
         ]
