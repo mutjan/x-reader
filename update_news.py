@@ -140,6 +140,11 @@ def ai_process_all(items):
 
 4. **标注类型**：hot(热点)/ai(AI相关)/tech(科技)/business(商业)
 
+5. **识别核心实体**：
+   - 从新闻中提取1-3个核心实体（公司、产品、人物、技术、事件等）
+   - 实体名称简洁，2-6字为宜
+   - 示例：OpenAI、ChatGPT、马斯克、量子计算、IPO
+
 返回格式（JSON）：
 {{
   "results": [
@@ -150,7 +155,8 @@ def ai_process_all(items):
       "title": "效果炸裂！OpenAI发布新一代模型，能力全面升级",
       "summary": "OpenAI最新发布的大模型在多项基准测试中创下新高，支持更长的上下文窗口和更复杂的推理任务。",
       "type": "ai",
-      "reason": "OpenAI重大发布，属于AI领域顶级动态"
+      "reason": "OpenAI重大发布，属于AI领域顶级动态",
+      "entities": ["OpenAI", "GPT-5"]
     }}
   ]
 }}
@@ -241,6 +247,11 @@ def load_local_processed_results():
 
 4. **标注类型**：hot(热点)/ai(AI相关)/tech(科技)/business(商业)
 
+5. **识别核心实体**：
+   - 从新闻中提取1-3个核心实体（公司、产品、人物、技术、事件等）
+   - 实体名称简洁，2-6字为宜
+   - 示例：OpenAI、ChatGPT、马斯克、量子计算、IPO
+
 返回格式（JSON）：
 {{
   "results": [
@@ -251,7 +262,8 @@ def load_local_processed_results():
       "title": "效果炸裂！OpenAI发布新一代模型，能力全面升级",
       "summary": "OpenAI最新发布的大模型在多项基准测试中创下新高，支持更长的上下文窗口和更复杂的推理任务。",
       "type": "ai",
-      "reason": "OpenAI重大发布，属于AI领域顶级动态"
+      "reason": "OpenAI重大发布，属于AI领域顶级动态",
+      "entities": ["OpenAI", "GPT-5"]
     }}
   ]
 }}
@@ -626,6 +638,7 @@ def process_with_ai(items, local_results=None):
             "score": score,
             "level": level,
             "reason": reason_text,
+            "entities": ai_result.get("entities", []),
             "url": merged["url"],
             "source": merged["source"],
             "sources": merged["_sourceCount"],

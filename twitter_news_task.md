@@ -42,6 +42,7 @@ curl -s "http://localhost:1200/twitter/list/2026563584311108010"
 - 量子位风格中文标题（20-40字，情绪饱满）
 - 一句话摘要（50-100字）
 - 类型标注：hot(热点)/ai(AI相关)/tech(科技)/business(商业)
+- 核心实体：提取1-3个关键实体（公司、产品、人物、技术等）
 
 ### 4. 去重与合并
 
@@ -76,6 +77,7 @@ curl -s "http://localhost:1200/twitter/list/2026563584311108010"
   "score": 85,
   "level": "A",
   "reason": "【A级优先】评分85分 | OpenAI重大发布",
+  "entities": ["OpenAI", "GPT-5"],
   "url": "https://twitter.com/...",
   "source": "Twitter/@username",
   "sources": 2,
