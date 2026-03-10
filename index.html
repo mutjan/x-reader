@@ -191,9 +191,12 @@
             width: 20%;
         }
         .news-table th:nth-child(5) {
-            width: 22%;
+            width: 12%;
         }
         .news-table th:nth-child(6) {
+            width: 22%;
+        }
+        .news-table th:nth-child(7) {
             width: 45px;
             text-align: center;
         }
@@ -244,6 +247,25 @@
         }
         .type-tag:hover {
             opacity: 0.8;
+        }
+
+        /* 实体标签 */
+        .entity-tag {
+            display: inline-block;
+            padding: 2px 6px;
+            background: #2f3336;
+            border: 1px solid #38444d;
+            border-radius: 3px;
+            font-size: 10px;
+            color: #8899a6;
+            margin-right: 4px;
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+        .entity-tag:hover {
+            background: #1d9bf0;
+            border-color: #1d9bf0;
+            color: white;
         }
         .type-hot {
             background: #f4212e;
@@ -406,8 +428,8 @@
             }
             .news-table th:nth-child(5),
             .news-table td:nth-child(5),
-            .news-table th:nth-child(6),
-            .news-table td:nth-child(6) {
+            .news-table th:nth-child(7),
+            .news-table td:nth-child(7) {
                 display: none;
             }
             .news-table th:first-child,
@@ -427,8 +449,12 @@
                 width: auto;
                 min-width: 45%;
             }
-            .news-table th:nth-child(7),
-            .news-table td:nth-child(7) {
+            .news-table th:nth-child(6),
+            .news-table td:nth-child(6) {
+                display: none;
+            }
+            .news-table th:nth-child(8),
+            .news-table td:nth-child(8) {
                 width: 45px;
             }
             .news-title {
@@ -495,6 +521,7 @@
 
             <div class="sort-controls">
                 <button class="sort-btn" onclick="sortBy('type')" id="sortType">按类型排序</button>
+                <button class="sort-btn" onclick="sortBy('entities')" id="sortEntities">按实体排序</button>
                 <button class="sort-btn" onclick="sortBy('sources')" id="sortSources">按来源数排序</button>
                 <button class="sort-btn" onclick="sortBy('time')" id="sortTime">按更新时间排序</button>
                 <button class="sort-btn" onclick="resetSort()" id="resetSort">恢复默认</button>
@@ -622,6 +649,7 @@
 
         function updateSortButtons() {
             document.getElementById('sortType').className = 'sort-btn' + (currentSort.field === 'type' ? ' active' : '');
+            document.getElementById('sortEntities').className = 'sort-btn' + (currentSort.field === 'entities' ? ' active' : '');
             document.getElementById('sortSources').className = 'sort-btn' + (currentSort.field === 'sources' ? ' active' : '');
             document.getElementById('sortTime').className = 'sort-btn' + (currentSort.field === 'time' ? ' active' : '');
         }
@@ -641,6 +669,14 @@
                     const orderA = getTypeOrder(a.type);
                     const orderB = getTypeOrder(b.type);
                     return currentSort.order === 'asc' ? orderA - orderB : orderB - orderA;
+                });
+            } else if (currentSort.field === 'entities') {
+                result.sort((a, b) => {
+                    const entityA = (a.entities && a.entities[0]) || '';
+                    const entityB = (b.entities && b.entities[0]) || '';
+                    return currentSort.order === 'asc'
+                        ? entityA.localeCompare(entityB)
+                        : entityB.localeCompare(entityA);
                 });
             } else if (currentSort.field === 'sources') {
                 result.sort((a, b) => currentSort.order === 'asc' ? a.sources - b.sources : b.sources - a.sources);
@@ -739,8 +775,15 @@
 
         function renderSourceLinks(links) {
             if (!links || links.length === 0) return '-';
-            return links.map(link => 
+            return links.map(link =>
                 `<a href="${link.url}" target="_blank" class="source-link" title="${link.url}">${link.name}</a>`
+            ).join('');
+        }
+
+        function renderEntities(entities) {
+            if (!entities || entities.length === 0) return '<span style="color: #555;">-</span>';
+            return entities.map(entity =>
+                `<span class="entity-tag">${entity}</span>`
             ).join('');
         }
 
@@ -792,6 +835,7 @@
                             <th onclick="sortBy('type')">类型 ${currentSort.field === 'type' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
                             <th>标题</th>
                             <th>摘要</th>
+                            <th onclick="sortBy('entities')">实体 ${currentSort.field === 'entities' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
                             <th>消息源</th>
                             <th onclick="sortBy('time')">更新时间 ${currentSort.field === 'time' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
                             <th onclick="sortBy('sources')">来源数 ${currentSort.field === 'sources' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
@@ -808,6 +852,7 @@
                                 <td><span class="type-tag ${getTypeClass(item.type)}" onclick="filterByType('${item.type}')">${item.typeName}</span></td>
                                 <td><div class="news-title">${item.title}</div></td>
                                 <td><div class="news-summary">${item.summary}</div></td>
+                                <td>${renderEntities(item.entities)}</td>
                                 <td><div class="source-links">${renderSourceLinks(item.sourceLinks)}</div></td>
                                 <td><div style="color: #8899a6; font-size: 12px; white-space: nowrap;">${updateTimeStr}</div></td>
                                 <td><div class="source-count">${item.sources}</div></td>
