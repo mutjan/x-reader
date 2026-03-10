@@ -1,0 +1,256 @@
+你是一位资深科技媒体编辑，负责筛选和加工科技新闻选题。
+
+请对以下新闻进行批量处理，返回 JSON 格式结果：
+
+输入新闻：
+[
+  {
+    "index": 0,
+    "title": "Despite tensions with the Pentagon, Anthropic says most of its customers remain unaffected by the supply chain risk designation. https://thein.fo/47kG...",
+    "content": "Despite tensions with the Pentagon, Anthropic says most of its customers remain unaffected by the supply chain risk designation. https://thein.fo/47kGR4i",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031141230814392536"
+  },
+  {
+    "index": 1,
+    "title": "Eon Systems' @alexwg, author of the viral \"First Multi-Behavior Brain Upload\" article, says there are many paths to AGI beyond LLMs: \"My bet is intell...",
+    "content": "Eon Systems' @alexwg, author of the viral \"First Multi-Behavior Brain Upload\" article, says there are many paths to AGI beyond LLMs:<br><br>\"My bet is intelligence is this very, very general effect, with many ways to implement it.\"<br><br>\"I published a paper a number of years ago arguing that not only is intelligent behavior a general process, I went further and argued that it is a general physical process, and that you can even formulate intelligent behavior in pure thermodynamic terms.\"<br><b",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2031140626373456173"
+  },
+  {
+    "index": 2,
+    "title": "Had 5.4 hack away at a Nobunga’s ambition rom to give me a Basque translation Going to try something harder on an obscure snes game now for Japanese ...",
+    "content": "Had 5.4 hack away at a Nobunga’s ambition rom to give me a Basque translation <br><br>Going to try something harder on an obscure snes game now for Japanese to English.<br><br>Also underestimated how annoying roms can be<br><video width=\"1682\" height=\"1268\" src=\"https://video.twimg.com/amplify_video/2031138908323590146/vid/avc1/1682x1268/8zCgN1K6NFtnB98B.mp4?tag=21\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/2031138908323590146/img/U_jsLxJY_TFWI9ZI.jpg\"></video>",
+    "source": "Jimmy Apples 🍎/acc",
+    "url": "https://x.com/apples_jimmy/status/2031139017539072475"
+  },
+  {
+    "index": 3,
+    "title": "John: If the Fed has to raise rates to control inflation, capital formation for megaprojects gets a lot harder. JLL estimates that the next 100 GW of ...",
+    "content": "John: If the Fed has to raise rates to control inflation, capital formation for megaprojects gets a lot harder.<br><br>JLL estimates that the next 100 GW of data center capacity could require about $870B of new debt financing. Using this rough number, every extra 50 basis points of borrowing costs is $4.35B in annual interest expense. <br><br>I don't know if that's a huge squeeze on cash flow - but it's certainly a squeeze on cash flow if you're a hyperscaler and you're going gigalong on AI cape",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2031135501865070830"
+  },
+  {
+    "index": 4,
+    "title": "ChatGPT users are researching products—but not buying them there. OpenAI is now shifting its shopping strategy away from in-chat checkouts. https://t...",
+    "content": "ChatGPT users are researching products—but not buying them there. OpenAI is now shifting its shopping strategy away from in-chat checkouts. https://thein.fo/4l9YSYN",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031131669776777657"
+  },
+  {
+    "index": 5,
+    "title": "RT Stanford AI Lab: Check out our latest SAIL blog post on VAGEN, a reinforcement learning framework that trains VLM agents to build internal world mo...",
+    "content": "RT Stanford AI Lab<br>Check out our latest SAIL blog post on VAGEN, a reinforcement learning framework that trains VLM agents to build internal world models through explicit visual state reasoning! https://ai.stanford.edu/blog/vagen/",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2031140569796456856"
+  },
+  {
+    "index": 6,
+    "title": "As Pinterest tries to revive ad growth, it’s launching internal “code red” initiatives to improve ad targeting and advertiser ROI. https://thein.fo...",
+    "content": "As Pinterest tries to revive ad growth, it’s launching internal “code red” initiatives to improve ad targeting and advertiser ROI. https://thein.fo/4u9cxU4",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031124128736874629"
+  },
+  {
+    "index": 7,
+    "title": "Eon Systems' @alexwg says we'll see marked progress on \"not just whole brain emulation, but also transfer of human intelligence to new substrates\" wit...",
+    "content": "Eon Systems' @alexwg says we'll see marked progress on \"not just whole brain emulation, but also transfer of human intelligence to new substrates\" within 5 to 10 years:<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2031117250896539648/vid/avc1/1920x1080/2g0mWePLaKF_OiGa.mp4?tag=21\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/2031117250896539648/img/kMdFrCw-Pkx19EwZ.jpg\"></video>",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2031117536440496412"
+  },
+  {
+    "index": 8,
+    "title": "In his memo, Amodei argues that “human in the loop” for autonomous weapons is policy—not law—and could be changed unilaterally. https://thein.fo/4...",
+    "content": "In his memo, Amodei argues that “human in the loop” for autonomous weapons is policy—not law—and could be changed unilaterally. https://thein.fo/4stQeqI",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031116579056865762"
+  },
+  {
+    "index": 9,
+    "title": "Nvidia will unveil its first-ever Groq hybrid chip at GTC 2026. Cloud Reporter @anissagardizy8: “[It will] be very exciting for other chip companies ...",
+    "content": "Nvidia will unveil its first-ever Groq hybrid chip at GTC 2026. <br><br>Cloud Reporter @anissagardizy8: “[It will] be very exciting for other chip companies who kind of view this as a sign that GPUs might not always be the number one chip for all AI workloads.”<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2031112886072877056/vid/avc1/1280x720/OnbH4Cqe7O6IRXsz.mp4?tag=14\" controls=\"controls\" poster=\"https://pbs.twimg.com/media/HC_2e_qXUAA3cLq?format=jpg&amp;name",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031112991546945651"
+  },
+  {
+    "index": 10,
+    "title": "WATCH: In our new meteorology segment of the show today, @BenMacklinn says LA is due for \"big rain\" in the afternoon due to a massive barometric press...",
+    "content": "WATCH: In our new meteorology segment of the show today, @BenMacklinn says LA is due for \"big rain\" in the afternoon due to a massive barometric pressure inversion caused by several low-pressure areas in various parts of his weather map.<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2031109008531271680/vid/avc1/1920x1080/LVLBWiH7x9z5Om0V.mp4?tag=21\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/2031109008531271680/img/dBLb7ao4UrIqgYO5.jpg",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2031110777407680968"
+  },
+  {
+    "index": 11,
+    "title": "Investors are circling Quince as the fast-growing e-commerce brand explores a round that could double its valuation to over $10B. https://thein.fo/4b8...",
+    "content": "Investors are circling Quince as the fast-growing e-commerce brand explores a round that could double its valuation to over $10B. https://thein.fo/4b8HgYN",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031109027053080846"
+  },
+  {
+    "index": 12,
+    "title": "In 2005, Four Loko came in 23.5oz cans, was 12% ABV and included 156mg of caffeine - the rough equivalent of drinking 4 beers and 2 Red Bulls simultan...",
+    "content": "In 2005, Four Loko came in 23.5oz cans, was 12% ABV and included 156mg of caffeine - the rough equivalent of drinking 4 beers and 2 Red Bulls simultaneously. <br><br>Phusion Products, the company behind Four Loko - and other drinks like \"Earthquake\" and \"Pirate Water\" - is now working with JPMorgan to offload the brand for a rumored $400M.<br><br>The original Four Loko was \"one of the most guarded resources on all college campuses\" after it was removed from shelves due to regulatory pressure in ",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2031105652396036121"
+  },
+  {
+    "index": 13,
+    "title": "OpenAI’s IPO hopes are facing skepticism from investors, @AnitaRamaswamy explains: “They were still concerned about the current valuation.” “OpenA...",
+    "content": "OpenAI’s IPO hopes are facing skepticism from investors, @AnitaRamaswamy explains:<br><br>“They were still concerned about the current valuation.”<br><br>“OpenAI… doesn't project that it's going to be generating cash until at least 2030.”<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2031105277840281600/vid/avc1/1280x720/OL1efalTs_C_IX5C.mp4?tag=14\" controls=\"controls\" poster=\"https://pbs.twimg.com/media/HC_vkJlXIAA50mb?format=jpg&amp;name=orig\"></video>",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031105382987202946"
+  },
+  {
+    "index": 14,
+    "title": "RT Producer Ben: HAPPENING NOW— @AlexEpstein on @tbpn",
+    "content": "RT Producer Ben<br>HAPPENING NOW—<br><br>@AlexEpstein on @tbpn<br><img width=\"2048\" height=\"1536\" style=\"\" src=\"https://pbs.twimg.com/media/HC_tQXsaMAQwdvE?format=jpg&amp;name=orig\" referrerpolicy=\"no-referrer\">",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2031102856582099218"
+  },
+  {
+    "index": 15,
+    "title": "In an opinion piece for The Information, Aditya Agarwal says hiring signals are breaking: FAANG logos and elite degrees matter less than a builder’s ...",
+    "content": "In an opinion piece for The Information, Aditya Agarwal says hiring signals are breaking: FAANG logos and elite degrees matter less than a builder’s instinct and AI fluency. https://thein.fo/4rb9JTS",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031101480086667551"
+  },
+  {
+    "index": 16,
+    "title": "BREAKING: Jay Graber stepping down as CEO of Bluesky",
+    "content": "BREAKING: Jay Graber stepping down as CEO of Bluesky<br><img width=\"1638\" height=\"2048\" style=\"\" src=\"https://pbs.twimg.com/media/HC_rznyaMAEO1gX?format=jpg&amp;name=orig\" referrerpolicy=\"no-referrer\">",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2031101234166530207"
+  },
+  {
+    "index": 17,
+    "title": "Anthropic “will likely win this suit” against the Pentagon, lawyers told our AI Reporter @steph_palazzolo. Here’s why: “The supply chain risk desi...",
+    "content": "Anthropic “will likely win this suit” against the Pentagon, lawyers told our AI Reporter @steph_palazzolo.<br><br>Here’s why: “The supply chain risk designation is mostly meant for foreign companies… it's meant to prevent these companies from spying, from doing kind of outright sabotage.”<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2031094247504453632/vid/avc1/1280x720/IQSag_NMMESEk6PJ.mp4?tag=14\" controls=\"controls\" poster=\"https://pbs.twimg.com/media/HC_liH3",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031094353192485153"
+  },
+  {
+    "index": 18,
+    "title": "Anne Wojcicki’s plan for 23andMe: raise $100M from philanthropists, expand its genetic database and give researchers broad access to the data. https:...",
+    "content": "Anne Wojcicki’s plan for 23andMe: raise $100M from philanthropists, expand its genetic database and give researchers broad access to the data. https://thein.fo/46LDOC2",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031093928464699545"
+  },
+  {
+    "index": 19,
+    "title": "RT Charles Wu 吴英成AI: LabOS today goes into LabClaw🦞 Today we embedded Stanford LabOS AI-XR co-scientist into LabClaw with OpenClaw🦞 — turnin...",
+    "content": "RT Charles Wu 吴英成AI<br>LabOS today goes into LabClaw🦞<br><br>Today we embedded Stanford LabOS AI-XR co-scientist into LabClaw with OpenClaw🦞 — <br>turning it into the unified skill layer for biomedical AI agents and world model.<br><br>No more separate systems. <br>One install. <br>Full Wet-lab + Dry-lab execution with XR.<br><br>https://labclaw-ai.github.io/<br><br>#LabClaw #Claw #LabOS #OpenClaw #AIforScience 🦞 #Stanford #Princeton<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2031098049477619959"
+  },
+  {
+    "index": 20,
+    "title": "I have been meeting with a ton of insiders in robotics and I keep hearing exactly this kind of skepticism about @Figure_robot. I don’t expect humanoi...",
+    "content": "I have been meeting with a ton of insiders in robotics and I keep hearing exactly this kind of skepticism about @Figure_robot.<br><br>I don’t expect humanoids to be safe enough, capable enough, or cheap enough for five years to get into homes.<br><br>The videos we see are to hype up investors, but they should realize that it Eric take years and comes with huge risks.<br><br>@AnishA_Moonka lays out what the insiders are saying.<div class=\"rsshub-quote\"><br><br>Anish Moonka: $39 billion. That's wh",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2031089752146063722"
+  },
+  {
+    "index": 21,
+    "title": "RT Kalshi: JUST IN: Trump says war is \"pretty much complete\"",
+    "content": "RT Kalshi<br>JUST IN: Trump says war is \"pretty much complete\"",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2031099687672086927"
+  },
+  {
+    "index": 22,
+    "title": "RT Claude: Introducing Code Review, a new feature for Claude Code. When a PR opens, Claude dispatches a team of agents to hunt for bugs.",
+    "content": "RT Claude<br>Introducing Code Review, a new feature for Claude Code.<br><br>When a PR opens, Claude dispatches a team of agents to hunt for bugs.<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2031087443961851904/vid/avc1/1920x1080/xxAmejvnCLcAmnK9.mp4?tag=21\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/2031087443961851904/img/djTbAdaklBTC4hQE.jpg\"></video>",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2031089038309077054"
+  },
+  {
+    "index": 23,
+    "title": "GPU cloud startup Together AI is shifting its model—buying Nvidia chips outright instead of leasing them—as it scales its infrastructure. https://th...",
+    "content": "GPU cloud startup Together AI is shifting its model—buying Nvidia chips outright instead of leasing them—as it scales its infrastructure. https://thein.fo/4brFOSw",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031086371452993648"
+  },
+  {
+    "index": 24,
+    "title": "OpenAI executives signal a potential fourth-quarter IPO by selecting Cooley and Wachtell for legal preparations. https://thein.fo/4d26cne",
+    "content": "OpenAI executives signal a potential fourth-quarter IPO by selecting Cooley and Wachtell for legal preparations. https://thein.fo/4d26cne",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031078828001403378"
+  },
+  {
+    "index": 25,
+    "title": "RT Ben Tossell: best demo i’ve ever seen",
+    "content": "RT Ben Tossell<br>best demo i’ve ever seen<div class=\"rsshub-quote\"><br><br>Ian Nuttall: In the latest version of https://keep.md you can now get your own personal email inbox:<br><br>- subscribe to email newsletters<br>- confirm email address if needed<br>- get the content as markdown<br>- give your agents access with the api, cli + skill<br><br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2031036581721604096/vid/avc1/1920x1080/vMhZFHVBTblveVPb.mp4?tag=21\" contro",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2031089125064069570"
+  },
+  {
+    "index": 26,
+    "title": "Anthropic is placing a big bet on Google-Broadcom co-designed TPU chips, @anissagardizy8 reports. \"This TPU deal that we saw with Anthropic and Broadc...",
+    "content": "Anthropic is placing a big bet on Google-Broadcom co-designed TPU chips, @anissagardizy8 reports. <br><br>\"This TPU deal that we saw with Anthropic and Broadcom last year where Anthropic placed a $20 billion order might not be the last one that we see.\"<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2031073640507129856/vid/avc1/1280x720/ZRXillvJd4x1__uD.mp4?tag=14\" controls=\"controls\" poster=\"https://pbs.twimg.com/media/HC_SyouWEAAcGdL?format=jpg&amp;name=orig\"><",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031073746023297395"
+  },
+  {
+    "index": 27,
+    "title": "With memory chip supply tightening, China’s tech giants are striking deals with domestic DRAM and NAND producers to keep AI data centers running. htt...",
+    "content": "With memory chip supply tightening, China’s tech giants are striking deals with domestic DRAM and NAND producers to keep AI data centers running. https://thein.fo/4aRHsgb",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2031071287544549518"
+  },
+  {
+    "index": 28,
+    "title": "RT Lenny Rachitsky: Surprises: - Perplexity higher than you'd think - removebg the 16th most popular AI tool - Google AI studio beating Lovable, and t...",
+    "content": "RT Lenny Rachitsky<br>Surprises:<br>- Perplexity higher than you'd think<br>- removebg the 16th most popular AI tool<br>- Google AI studio beating Lovable, and together they're ahead of all other vibe-coding platforms<br>- JanitorAI is not what you expect<br>- Three in the top 20 are AI chatbot friends<br>- Google has four products in top 50<br><img width=\"1600\" height=\"1014\" style=\"\" src=\"https://pbs.twimg.com/media/HC_M0LAaMAEn8B3?format=jpg&amp;name=orig\" referrerpolicy=\"no-referrer\"><div cla",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2031078613354004899"
+  },
+  {
+    "index": 29,
+    "title": "Happy Monday. On today's show: - @AlexEpstein (Fossil Future) - @eoghan (Intercom) - @alexwg (The Innermost Loop) - @clamanna (Microsoft) - @JulienBek...",
+    "content": "Happy Monday. On today's show:<br><br>- @AlexEpstein (Fossil Future)<br>- @eoghan (Intercom)<br>- @alexwg (The Innermost Loop)<br>- @clamanna (Microsoft)<br>- @JulienBek (Sequoia)<br>- @MichelleVolz (Pax Ventures)<br><br>See you on the stream.<div class=\"rsshub-quote\"><br><br>TBPN: Oil &amp; AI, Alex Epstein Joins, Adam Smith, Recursive Self-Improvement https://x.com/i/broadcasts/1yxBeMvyamOJN<br></div>",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2031066851174953080"
+  }
+]
+
+处理要求：
+
+1. **筛选选题**（S级/A级/B级）：
+   - S级（90-100分）：AI大模型重大发布、马斯克/SpaceX重大动态、Nature/Science顶刊
+   - A级（75-89分）：科技巨头动态、国产大模型、开源爆款、学术突破、人物故事
+   - B级（60-74分）：产品评测、技术解析、航天/芯片
+   - 过滤掉C级（<60分）：一般商业新闻、消费电子
+
+2. **生成量子位风格中文标题**：
+   - 纯中文，无类型前缀
+   - 情绪饱满，可用"炸裂"、"刚刚"、"颠覆"、"首次"等词
+   - 20-40字，突出核心信息
+
+3. **生成一句话摘要**：
+   - 50-100字
+   - 概括核心信息，突出关键数据
+
+4. **标注类型**：hot(热点)/ai(AI相关)/tech(科技)/business(商业)
+
+返回格式（JSON）：
+{
+  "results": [
+    {
+      "index": 0,
+      "score": 85,
+      "level": "A",
+      "title": "效果炸裂！OpenAI发布新一代模型，能力全面升级",
+      "summary": "OpenAI最新发布的大模型在多项基准测试中创下新高，支持更长的上下文窗口和更复杂的推理任务。",
+      "type": "ai",
+      "reason": "OpenAI重大发布，属于AI领域顶级动态"
+    }
+  ]
+}
+
+注意：
+1. 只返回 JSON，不要其他解释
+2. 最多选择15条最有价值的
+3. 相似主题的新闻合并为一条，标注多来源

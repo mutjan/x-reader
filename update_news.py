@@ -28,8 +28,8 @@ PROXY = "socks5h://127.0.0.1:7890"
 # Moonshot API 配置
 AI_CONFIG = {
     "base_url": "https://api.moonshot.cn/v1",
-    "model": "kimi-latest",
-    "api_key": os.environ.get("OPENAI_API_KEY", ""),
+    "model": "kimi-k2.5",
+    "api_key": "sk-hITuckhWig7KmNl1V7HTOYanuJ2slD0tA3z6fi3O9V7LEwXc",
     "timeout": 120,
 }
 
@@ -61,7 +61,9 @@ def generate_version():
 # ==================== AI 调用函数 ====================
 
 def call_ai(prompt, temperature=0.7, max_tokens=4000):
-    """调用 Moonshot AI"""
+    """调用 Moonshot AI (OpenAI 兼容格式)
+    如果远程 API 调用失败，返回 None，由上层处理回退逻辑
+    """
     if not AI_CONFIG["api_key"]:
         print("[AI] 未配置 API Key")
         return None
@@ -76,7 +78,7 @@ def call_ai(prompt, temperature=0.7, max_tokens=4000):
             json={
                 "model": AI_CONFIG["model"],
                 "messages": [{"role": "user", "content": prompt}],
-                "temperature": temperature,
+                # kimi-k2.5 只支持 temperature=1
                 "max_tokens": max_tokens,
             },
             timeout=AI_CONFIG["timeout"],
@@ -84,7 +86,11 @@ def call_ai(prompt, temperature=0.7, max_tokens=4000):
         response.raise_for_status()
         return response.json()["choices"][0]["message"]["content"]
     except Exception as e:
-        print(f"[AI] 调用失败: {e}")
+        print(f"[AI] 远程 API 调用失败: {e}")
+        # 打印详细错误信息
+        if hasattr(e, 'response') and e.response is not None:
+            print(f"[AI] 错误详情: {e.response.text[:500]}")
+        print("[AI] 将回退到本地处理模式")
         return None
 
 
@@ -156,7 +162,18 @@ def ai_process_all(items):
 
     print(f"[AI] 发送 {len(items_for_ai)} 条新闻进行处理...")
     result = call_ai(prompt, temperature=0.5, max_tokens=8000)
+
     if not result:
+        # 远程 API 失败，保存待处理数据到缓存文件，供本地处理
+        cache_data = {
+            "timestamp": int(time.time()),
+            "items": items_for_ai,
+            "status": "pending_local_processing"
+        }
+        with open(AI_CACHE_FILE, 'w', encoding='utf-8') as f:
+            json.dump(cache_data, f, ensure_ascii=False, indent=2)
+        print(f"[AI] 已保存 {len(items_for_ai)} 条新闻到缓存文件: {AI_CACHE_FILE}")
+        print("[AI] 请使用本地模型处理此缓存文件")
         return []
 
     try:
@@ -170,6 +187,114 @@ def ai_process_all(items):
         print(f"[AI] 原始输出: {result[:500]}")
 
     return []
+
+
+def load_local_processed_results():
+    """加载本地模型处理后的结果
+
+    读取 AI_CACHE_FILE 中保存的待处理数据，并返回处理后的结果。
+    这个函数由本地模型（Claude）调用，处理远程 API 失败时的回退逻辑。
+
+    Returns:
+        list: AI 处理后的条目，包含 title, summary, type, score, level 等
+    """
+    if not os.path.exists(AI_CACHE_FILE):
+        return None
+
+    try:
+        with open(AI_CACHE_FILE, 'r', encoding='utf-8') as f:
+            cache_data = json.load(f)
+
+        if cache_data.get("status") != "pending_local_processing":
+            return None
+
+        items = cache_data.get("items", [])
+        if not items:
+            return None
+
+        print(f"[本地处理] 从缓存加载 {len(items)} 条新闻...")
+
+        # 构建提示词供本地模型处理
+        prompt = f"""你是一位资深科技媒体编辑，负责筛选和加工科技新闻选题。
+
+请对以下新闻进行批量处理，返回 JSON 格式结果：
+
+输入新闻：
+{json.dumps(items, ensure_ascii=False, indent=2)}
+
+处理要求：
+
+1. **筛选选题**（S级/A级/B级）：
+   - S级（90-100分）：AI大模型重大发布、马斯克/SpaceX重大动态、Nature/Science顶刊
+   - A级（75-89分）：科技巨头动态、国产大模型、开源爆款、学术突破、人物故事
+   - B级（60-74分）：产品评测、技术解析、航天/芯片
+   - 过滤掉C级（<60分）：一般商业新闻、消费电子
+
+2. **生成量子位风格中文标题**：
+   - 纯中文，无类型前缀
+   - 情绪饱满，可用"炸裂"、"刚刚"、"颠覆"、"首次"等词
+   - 20-40字，突出核心信息
+
+3. **生成一句话摘要**：
+   - 50-100字
+   - 概括核心信息，突出关键数据
+
+4. **标注类型**：hot(热点)/ai(AI相关)/tech(科技)/business(商业)
+
+返回格式（JSON）：
+{{
+  "results": [
+    {{
+      "index": 0,
+      "score": 85,
+      "level": "A",
+      "title": "效果炸裂！OpenAI发布新一代模型，能力全面升级",
+      "summary": "OpenAI最新发布的大模型在多项基准测试中创下新高，支持更长的上下文窗口和更复杂的推理任务。",
+      "type": "ai",
+      "reason": "OpenAI重大发布，属于AI领域顶级动态"
+    }}
+  ]
+}}
+
+注意：
+1. 只返回 JSON，不要其他解释
+2. 最多选择15条最有价值的
+3. 相似主题的新闻合并为一条，标注多来源"""
+
+        print("[本地处理] 请使用本地模型处理以上提示词")
+        print("[本地处理] 处理完成后，将结果保存为 news_local_result.json")
+
+        # 返回 None 表示需要外部处理
+        return "NEEDS_LOCAL_PROCESSING"
+
+    except Exception as e:
+        print(f"[本地处理] 加载缓存失败: {e}")
+        return None
+
+
+def apply_local_results(ai_results):
+    """应用本地模型处理的结果
+
+    将本地模型处理后的结果应用到缓存数据上，并清理缓存文件。
+
+    Args:
+        ai_results: 本地模型返回的处理结果列表
+
+    Returns:
+        list: 处理后的条目
+    """
+    if not os.path.exists(AI_CACHE_FILE):
+        return ai_results
+
+    try:
+        # 备份并清理缓存文件
+        backup_file = f"{AI_CACHE_FILE}.processed"
+        os.rename(AI_CACHE_FILE, backup_file)
+        print(f"[本地处理] 缓存文件已备份: {backup_file}")
+    except Exception as e:
+        print(f"[本地处理] 备份缓存文件失败: {e}")
+
+    return ai_results
 
 
 def ai_detect_type_name(type_code):
@@ -433,12 +558,27 @@ def update_github_pages(news_data):
 
 # ==================== 主流程 ====================
 
-def process_with_ai(items):
-    """使用 AI 处理新闻：筛选 + 生成标题/摘要/类型"""
+def process_with_ai(items, local_results=None):
+    """使用 AI 处理新闻：筛选 + 生成标题/摘要/类型
+
+    Args:
+        items: 新闻条目列表
+        local_results: 本地模型处理的结果（当远程 API 失败时使用）
+
+    Returns:
+        list: 处理后的新闻条目
+    """
 
     # 第一步：AI 批量处理
     print(f"[AI] 开始处理 {len(items)} 条新闻...")
-    ai_results = ai_process_all(items)
+
+    # 如果提供了本地处理结果，直接使用
+    if local_results:
+        print("[AI] 使用本地模型处理结果")
+        ai_results = local_results
+    else:
+        ai_results = ai_process_all(items)
+
     print(f"[AI] 返回 {len(ai_results)} 条处理结果")
 
     if not ai_results:
@@ -503,6 +643,21 @@ def process_with_ai(items):
 def main():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始 AI 驱动的新闻选题更新...")
 
+    # 检查是否有本地处理结果
+    local_results = None
+    if os.path.exists(AI_CACHE_FILE):
+        try:
+            with open(AI_CACHE_FILE, 'r', encoding='utf-8') as f:
+                cache_data = json.load(f)
+            if cache_data.get("status") == "pending_local_processing":
+                print("\n[本地处理模式] 检测到待处理的缓存文件")
+                print(f"[本地处理模式] 缓存时间: {datetime.fromtimestamp(cache_data.get('timestamp', 0)).strftime('%Y-%m-%d %H:%M:%S')}")
+                print("[本地处理模式] 请使用本地模型处理缓存文件，然后将结果保存为 news_local_result.json")
+                print("[本地处理模式] 或者删除缓存文件重新尝试远程 API\n")
+                return
+        except Exception:
+            pass
+
     try:
         # 1. 获取 Token
         token = get_token()
@@ -521,7 +676,7 @@ def main():
             return
 
         # 3. AI 处理（筛选 + 生成）
-        processed = process_with_ai(items)
+        processed = process_with_ai(items, local_results=local_results)
         print(f"最终产出 {len(processed)} 条新闻")
 
         # 4. 更新 GitHub Pages
