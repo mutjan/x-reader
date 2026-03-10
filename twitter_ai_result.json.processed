@@ -1,139 +1,144 @@
 {
   "results": [
     {
-      "index": 22,
+      "index": 2,
+      "score": 95,
+      "level": "S",
+      "title": "刚刚！图灵奖得主LeCun新公司AMI Labs融资10.3亿美元，估值35亿美元",
+      "summary": "Yann LeCun创立的新公司AMI Labs完成10.3亿美元首轮融资，投前估值35亿美元，致力于开发从真实世界数据学习的AI世界模型，旨在克服大语言模型幻觉问题。",
+      "type": "ai",
+      "reason": "AI领域顶级科学家创业+超10亿美元融资，属于AI领域重大事件",
+      "entities": ["Yann LeCun", "AMI Labs", "世界模型"]
+    },
+    {
+      "index": 10,
+      "score": 95,
+      "level": "S",
+      "title": "重磅！LeCun世界模型公司AMI Labs获10.3亿美元融资，估值35亿",
+      "summary": "据金融时报报道，图灵奖得主Yann LeCun的创业公司AMI Labs完成10.3亿美元融资，投前估值35亿美元，旨在构建具备推理和规划能力的AI系统。",
+      "type": "ai",
+      "reason": "与index 2为同一事件的不同来源，合并处理",
+      "entities": ["Yann LeCun", "AMI Labs", "金融时报"]
+    },
+    {
+      "index": 11,
       "score": 88,
       "level": "A",
-      "title": "刚刚！Claude推出Code Review功能，AI自动审查PR代码",
-      "summary": "Claude发布全新代码审查功能，当PR打开时会自动派遣多智能体检索代码中的Bug，进一步提升开发者生产力。",
+      "title": "英伟达开源Megatron Core MoE框架，训练DeepSeek-V3达1233 TFLOPS/GPU",
+      "summary": "xAI工程师Ethan He开源Megatron Core MoE框架，成为目前最强的开源MoE训练框架，在DeepSeek-V3-685B模型上实现1233 TFLOPS/GPU的性能。",
       "type": "ai",
-      "reason": "Claude重大功能发布，AI编程助手领域重要进展"
+      "reason": "开源技术突破，大模型训练效率重大提升",
+      "entities": ["Megatron Core MoE", "英伟达", "DeepSeek-V3"]
     },
     {
-      "index": 9,
-      "score": 87,
-      "level": "A",
-      "title": "炸裂！Nvidia将在GTC 2026发布首款Groq混合芯片",
-      "summary": "Nvidia宣布将于GTC 2026推出首款Groq混合芯片，标志着GPU可能不再是AI工作负载的唯一选择，芯片行业格局或将重塑。",
-      "type": "tech",
-      "reason": "Nvidia重大产品战略调整，AI芯片领域里程碑事件"
-    },
-    {
-      "index": 16,
+      "index": 17,
       "score": 85,
       "level": "A",
-      "title": "突发！Bluesky CEO Jay Graber宣布卸任",
-      "summary": "去中心化社交平台Bluesky首席执行官Jay Graber突然宣布辞职，该平台作为Twitter替代品近期增长迅猛。",
-      "type": "hot",
-      "reason": "社交媒体领域重大人事变动，去中心化平台发展关键节点"
-    },
-    {
-      "index": 24,
-      "score": 84,
-      "level": "A",
-      "title": "OpenAI IPO进程加速！已选定Cooley和Wachtell律师事务所",
-      "summary": "OpenAI高管释放IPO信号，已聘请顶级律所Cooley和Wachtell进行法律准备，或于第四季度启动上市。",
-      "type": "business",
-      "reason": "OpenAI资本运作重大进展，AI行业里程碑事件"
+      "title": "国产AI公司集体跟进！智谱推出AutoClaw，股价大涨13%",
+      "summary": "智谱发布AutoClaw后股价跳涨13%，至此月之暗面KimiClaw、MiniMax MaxClaw、阿里CoPaw、字节ArkClaw、腾讯WorkBuddy、智谱AutoClaw等国产AI巨头均已推出OpenClaw类产品。",
+      "type": "ai",
+      "reason": "国产AI大模型竞争态势，OpenClaw生态在中国全面开花",
+      "entities": ["智谱", "AutoClaw", "OpenClaw"]
     },
     {
       "index": 13,
       "score": 82,
       "level": "A",
-      "title": "OpenAI上市计划遭投资者质疑：预计2030年前难以盈利",
-      "summary": "投资者对OpenAI IPO计划表示担忧，认为当前估值过高，OpenAI预计至少到2030年才能实现正向现金流。",
-      "type": "business",
-      "reason": "OpenAI财务现状曝光，AI独角兽盈利难题引关注"
-    },
-    {
-      "index": 26,
-      "score": 81,
-      "level": "A",
-      "title": "Anthropic豪赌200亿美元押注Google-Broadcom TPU芯片",
-      "summary": "Anthropic正大力投资Google与Broadcom联合设计的TPU芯片，去年已下单200亿美元，或将继续追加订单。",
+      "title": "Genspark成为首家接入Microsoft 365的AI Agent公司",
+      "summary": "Genspark宣布成为首家集成到Microsoft 365的Agent公司，Agent 365内置治理、安全和合规能力，让企业IT部门能够放心部署AI。",
       "type": "ai",
-      "reason": "AI巨头算力布局重大动向，芯片供应链战略调整"
+      "reason": "AI Agent企业级应用落地，微软生态重要进展",
+      "entities": ["Genspark", "Microsoft 365", "Agent 365"]
     },
     {
-      "index": 17,
+      "index": 7,
       "score": 80,
       "level": "A",
-      "title": "Anthropic起诉五角大楼胜算大：供应链风险认定主要针对外国公司",
-      "summary": "律师分析指出Anthropic诉五角大楼案胜诉概率高，因供应链风险认定机制主要面向外国企业防止间谍行为。",
+      "title": "Claude Agent SDK基础设施21st Agents发布，号称Agent界的Vercel",
+      "summary": "21st Agents发布Beta版，为Claude Agent SDK提供运行时、沙箱、计费、UI、流式传输等基础设施，让开发者无需从零搭建即可将Agent部署到生产环境。",
       "type": "ai",
-      "reason": "AI企业与政府监管博弈，政策法律层面重要案例"
+      "reason": "AI Agent基础设施重要进展，降低Agent开发门槛",
+      "entities": ["21st Agents", "Claude Agent SDK", "Vercel"]
+    },
+    {
+      "index": 12,
+      "score": 78,
+      "level": "A",
+      "title": "KiloClaw上线：60秒部署生产级OpenClaw，支持500+AI模型",
+      "summary": "KiloClaw推出一键部署方案，无需SSH、Docker或YAML即可在60秒内运行生产级OpenClaw实例，通过Kilo Gateway接入500+AI模型，实现无供应商锁定。",
+      "type": "ai",
+      "reason": "OpenClaw生态重要基础设施，降低开源AI Agent使用门槛",
+      "entities": ["KiloClaw", "OpenClaw", "Kilo Gateway"]
+    },
+    {
+      "index": 14,
+      "score": 76,
+      "level": "A",
+      "title": "François Chollet预测：AI Agent将在1-2年内成为独立经济实体",
+      "summary": "Keras创始人François Chollet表示，AI Agent将很快进化为成熟的经济行为体，能够自主购买服务、算力和数据来完成高级目标，预计1-2年内规模化出现。",
+      "type": "ai",
+      "reason": "AI领域权威人物对Agent经济发展的前瞻性判断",
+      "entities": ["François Chollet", "AI Agent", "Keras"]
+    },
+    {
+      "index": 21,
+      "score": 75,
+      "level": "A",
+      "title": "a16z发布第六期消费级AI Top 100榜单，揭示行业新趋势",
+      "summary": "a16z发布第六次消费级AI网站和移动应用Top 100排名，基于月独立访客和MAU数据，本次榜单规则有所调整，反映消费级AI发展方向的变化。",
+      "type": "ai",
+      "reason": "顶级VC发布的AI行业权威报告，具有风向标意义",
+      "entities": ["a16z", "消费级AI", "Top 100"]
+    },
+    {
+      "index": 19,
+      "score": 72,
+      "level": "B",
+      "title": "开发者给Claude Code添加Handoff功能，实现跨终端Session衔接",
+      "summary": "开发者小互为Claude Code开发Handoff功能，通过记忆+Handoff.md文档保存对话总结，实现多个终端Session间的状态同步和任务衔接。",
+      "type": "tech",
+      "reason": "开发者工具创新，提升AI编程助手使用体验",
+      "entities": ["Claude Code", "Handoff", "小互"]
+    },
+    {
+      "index": 25,
+      "score": 70,
+      "level": "B",
+      "title": "Vitest即将支持AI Coding Agent，token消耗可降低80-90%",
+      "summary": "Vitest测试框架即将推出新功能，让AI Coding Agent运行测试时token消耗减少80-90%，显著提升AI辅助开发的成本效率。",
+      "type": "tech",
+      "reason": "AI开发工具优化，降低AI编程成本",
+      "entities": ["Vitest", "AI Coding Agent", "token优化"]
     },
     {
       "index": 4,
-      "score": 78,
-      "level": "A",
-      "title": "OpenAI战略大转向！放弃聊天内购物功能",
-      "summary": "OpenAI调整购物战略，因用户仅在ChatGPT中研究产品而非购买，将放弃应用内结账功能转向其他方向。",
-      "type": "ai",
-      "reason": "OpenAI商业化策略调整，AI应用落地路径探索"
-    },
-    {
-      "index": 23,
-      "score": 76,
-      "level": "A",
-      "title": "Together AI战略转型：从租赁改为直接购买Nvidia芯片",
-      "summary": "GPU云初创公司Together AI调整商业模式，由租赁转向直接采购Nvidia芯片以支撑基础设施扩张。",
-      "type": "business",
-      "reason": "AI基础设施领域重要动向，云计算商业模式演变"
-    },
-    {
-      "index": 5,
-      "score": 75,
-      "level": "A",
-      "title": "斯坦福发布VAGEN框架：让VLM智能体构建内部世界模型",
-      "summary": "斯坦福AI实验室推出VAGEN强化学习框架，通过显式视觉状态推理训练视觉语言模型智能体构建内部世界模型。",
-      "type": "ai",
-      "reason": "学术前沿突破，VLM与强化学习结合的重要进展"
-    },
-    {
-      "index": 20,
-      "score": 74,
-      "level": "B",
-      "title": "人形机器人进家庭还要等5年？业内人士质疑Figure机器人",
-      "summary": "机器人行业内部人士对人形机器人商业化表示怀疑，认为安全性、能力和成本问题短期内难以解决，视频演示多为吸引投资。",
-      "type": "tech",
-      "reason": "机器人行业内部观点，人形机器人商业化现实检验"
-    },
-    {
-      "index": 1,
-      "score": 73,
-      "level": "B",
-      "title": "AGI不止LLM一条路！Eon Systems创始人提出智能的物理本质",
-      "summary": "Eon Systems创始人alexwg提出新观点，认为智能是普遍物理现象，可用热力学公式描述，实现AGI存在多种路径。",
-      "type": "ai",
-      "reason": "AGI理论新视角，超越大语言模型的智能本质探讨"
-    },
-    {
-      "index": 28,
-      "score": 72,
-      "level": "B",
-      "title": "AI工具流量排行出炉：Perplexity排名超预期，Google四款产品进前50",
-      "summary": "最新AI工具流量榜单显示，Perplexity排名高于预期，removebg位列第16，Google AI Studio超越Lovable，Google共四款产品进入前50。",
-      "type": "ai",
-      "reason": "AI应用市场格局数据，反映用户真实使用偏好"
-    },
-    {
-      "index": 27,
-      "score": 70,
-      "level": "B",
-      "title": "存储芯片供应紧张！中国科技巨头转向国产DRAM和NAND",
-      "summary": "随着存储芯片供应收紧，中国科技巨头正与国内DRAM和NAND生产商达成协议，确保AI数据中心运转所需供应。",
-      "type": "tech",
-      "reason": "半导体供应链动态，国产替代趋势加速"
-    },
-    {
-      "index": 3,
       "score": 68,
       "level": "B",
-      "title": "AI数据中心融资成本飙升！100GW容量需8700亿美元债务",
-      "summary": "JLL估计下一代100GW数据中心容量需约8700亿美元债务融资，利率每上升50个基点将增加43.5亿美元年利息支出。",
-      "type": "business",
-      "reason": "AI基础设施投资规模数据， hyperscaler财务压力分析"
+      "title": "Sonarly登陆Product Hunt：可自主修复生产环境问题的AI工具",
+      "summary": "Sonarly发布Product Hunt，该产品可自主修复生产环境问题，工程师只需审核和合并即可，定位为自主运维AI工具。",
+      "type": "ai",
+      "reason": "AI在DevOps领域的应用，提升运维效率",
+      "entities": ["Sonarly", "Product Hunt", "DevOps"]
+    },
+    {
+      "index": 26,
+      "score": 65,
+      "level": "B",
+      "title": "Loom发布：苹果设备P2P网络框架，支持远程解锁Mac",
+      "summary": "Loom是一款面向苹果设备的网络框架，支持P2P WiFi直连、本地网络发现、远程解锁Mac、iCloud信任与分享等功能。",
+      "type": "tech",
+      "reason": "苹果开发生态新工具，设备互联能力增强",
+      "entities": ["Loom", "苹果设备", "P2P网络"]
+    },
+    {
+      "index": 18,
+      "score": 62,
+      "level": "B",
+      "title": "Oracle回应数据中心报道：升级AI硬件无需重建基础设施",
+      "summary": "Oracle回应媒体对其数据中心的报道，表示其AI数据中心支持液冷、高密度硬件和多代硬件升级，升级过程类似于在现有房屋中更换冰箱。",
+      "type": "tech",
+      "reason": "AI基础设施技术解析，澄清行业误解",
+      "entities": ["Oracle", "AI数据中心", "液冷"]
     }
   ]
 }
