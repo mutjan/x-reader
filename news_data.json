@@ -5498,13 +5498,13 @@
       "typeName": "AI",
       "score": 86,
       "level": "S-",
-      "reason": "【S-级】评分86分 | The Information独家报道的重大产品战略调整，OpenAI核心产品线整合 | 补充: 【A级】评分84分 | 多源验证的OpenAI重要产品动态，战略意义重大",
+      "reason": "【S-级】评分86分 | The Information独家报道的重大产品战略调整，OpenAI核心产品线整合 | 补充: 【A级】评分84分 | 多源验证的OpenAI重要产品动态，战略意义重大 | 补充: 【A级】评分72分 | OpenAI产品战略调整，独家媒体报道",
       "entities": [
-        "The Information",
-        "openai",
         "OpenAI",
+        "openai",
         "sora",
-        "ChatGPT"
+        "The Information",
+        "应用商店"
       ],
       "tags": [
         "AI",
@@ -5514,7 +5514,7 @@
       ],
       "url": "https://x.com/theinformation/status/2031807646211219913",
       "source": "The Information",
-      "sources": 2,
+      "sources": 3,
       "sourceLinks": [
         {
           "name": "The Information",
@@ -5523,6 +5523,10 @@
         {
           "name": "The Information",
           "url": "https://x.com/theinformation/status/2031852850318393608"
+        },
+        {
+          "name": "The Information",
+          "url": "https://x.com/theinformation/status/2031788527357206628"
         }
       ],
       "timestamp": 1773268639,
@@ -5707,15 +5711,15 @@
       "summary": "The Information独家报道，微软正在谈判租赁Abilene德州大型AI数据中心campus的数百兆瓦容量，该设施此前由Oracle放弃扩张计划。反映AI算力基础设施竞争白热化。",
       "type": "business",
       "typeName": "商业",
-      "score": 73,
+      "score": 74,
       "level": "A",
-      "reason": "【A级】评分73分 | The Information独家报道，微软+Oracle+数据中心三重热点",
+      "reason": "【A级】评分73分 | The Information独家报道，微软+Oracle+数据中心三重热点 | 补充: 【A级】评分74分 | 云巨头数据中心战略调整，独家新闻报道",
       "entities": [
-        "Microsoft",
-        "Oracle",
+        "微软",
         "The Information",
-        "数据中心",
-        "data center"
+        "Oracle",
+        "Microsoft",
+        "数据中心"
       ],
       "tags": [
         "商业动态",
@@ -5723,11 +5727,15 @@
       ],
       "url": "https://x.com/theinformation/status/2031848903482466308",
       "source": "The Information",
-      "sources": 1,
+      "sources": 2,
       "sourceLinks": [
         {
           "name": "The Information",
           "url": "https://x.com/theinformation/status/2031848903482466308"
+        },
+        {
+          "name": "The Information",
+          "url": "https://x.com/theinformation/status/2031805523868234060"
         }
       ],
       "timestamp": 1773268639,
@@ -6041,6 +6049,540 @@
       "timestamp": 1773268639,
       "version": "2026.03.12-029",
       "priority_score": 36
+    },
+    {
+      "title": "OpenRouter重磅发布：1万亿参数+100万上下文！两大神秘模型横空出世",
+      "title_en": "1T Parameter, 1m context. A big one incoming. Kimi? OpenAI? Exciting releases ahead.",
+      "summary": "OpenRouter平台上线两款全新Stealth模型——Hunter Alpha（1T参数/1M上下文，专为Agent工作流设计）和Healer Alpha（多模态模型，支持图像/视频/音频理解）。这是目前公开的最大参数模型之一，标志着AI Agent基础设施的重大升级。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 88,
+      "level": "S-",
+      "reason": "【S-级】评分88分 | 超大规模模型发布，1T参数+1M上下文为行业罕见配置，对AI Agent发展具有重要推动意义",
+      "entities": [
+        "OpenRouter",
+        "Hunter Alpha",
+        "Healer Alpha",
+        "AI Agent",
+        "多模态"
+      ],
+      "tags": [
+        "AI",
+        "大模型",
+        "AI Agent",
+        "多模态"
+      ],
+      "url": "https://x.com/kimmonismus/status/2031862936327639466",
+      "source": "Chubby♨️",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Chubby♨️",
+          "url": "https://x.com/kimmonismus/status/2031862936327639466"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-030",
+      "priority_score": 53
+    },
+    {
+      "title": "Mistral语音模型浏览器端实时运行！WebGPU实现<500ms延迟+13语言支持",
+      "title_en": "RT Xenova: Introducing Voxtral WebGPU: Real-time speech transcription entirely in your browser. This demo runs Voxtral-Mini-4B, a powerful streaming A...",
+      "summary": "开发者Xenova推出Voxtral WebGPU演示，可在浏览器本地运行MistralAI的Voxtral-Mini-4B流式ASR模型，支持13种语言，延迟低于500毫秒，完全隐私且零成本。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 82,
+      "level": "A",
+      "reason": "【A级】评分82分 | 端侧AI语音识别的技术突破，WebGPU+本地运行代表隐私优先的AI趋势",
+      "entities": [
+        "MistralAI",
+        "Voxtral",
+        "WebGPU",
+        "ASR",
+        "Xenova"
+      ],
+      "tags": [
+        "AI",
+        "多模态",
+        "开源"
+      ],
+      "url": "https://x.com/Scobleizer/status/2031841714827379130",
+      "source": "Robert Scoble",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Robert Scoble",
+          "url": "https://x.com/Scobleizer/status/2031841714827379130"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-035",
+      "priority_score": 16
+    },
+    {
+      "title": "Andrej Karpathy预警：AI服务中断将导致全球智商下降",
+      "title_en": "My autoresearch labs got wiped out in the oauth outage. Have to think through failovers. Intelligence brownouts will be interesting - the planet losin...",
+      "summary": "前特斯拉AI总监Andrej Karpathy在OAuth故障导致其自动研究实验室数据丢失后表示，需要设计故障转移方案。他提出Intelligence brownouts概念——当前沿AI服务中断时，整个星球的IQ会下降。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 80,
+      "level": "A",
+      "reason": "【A级】评分80分 | 顶级AI研究者的深刻洞察，关于AI依赖性的前瞻性思考",
+      "entities": [
+        "Andrej Karpathy",
+        "OAuth",
+        "AI基础设施",
+        "故障转移",
+        "intel"
+      ],
+      "tags": [
+        "AI",
+        "AI Agent",
+        "AI科研"
+      ],
+      "url": "https://x.com/karpathy/status/2031792523187040643",
+      "source": "Andrej Karpathy",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Andrej Karpathy",
+          "url": "https://x.com/karpathy/status/2031792523187040643"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-037",
+      "priority_score": 13
+    },
+    {
+      "title": "Claude办公套件联动升级：Excel与PPT无缝协作，跨文档上下文共享",
+      "title_en": "RT Claude: Claude for Excel and Claude for PowerPoint now sync together seamlessly. When you’ve got more than one file open, Claude shares the full c...",
+      "summary": "Anthropic发布Claude for Excel和Claude for PowerPoint的协同功能，用户可在多个文件间共享完整对话上下文，实现从表格拉取数据、构建表格到更新演示文稿的无缝工作流。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 78,
+      "level": "A",
+      "reason": "【A级】评分78分 | AI办公助手的重要产品更新，展示多文档协同能力",
+      "entities": [
+        "Claude",
+        "Anthropic",
+        "Excel",
+        "PowerPoint",
+        "办公AI"
+      ],
+      "tags": [
+        "AI",
+        "AI Agent",
+        "多模态"
+      ],
+      "url": "https://x.com/Scobleizer/status/2031802993662968043",
+      "source": "Robert Scoble",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Robert Scoble",
+          "url": "https://x.com/Scobleizer/status/2031802993662968043"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-032",
+      "priority_score": 20
+    },
+    {
+      "title": "Mercury扩散模型实测登顶：OpenRouter生产环境速度仅次于Cerebras",
+      "title_en": "RT Volodymyr Kuleshov 🇺🇦: The speed of Mercury diffusion models is real. On real production OpenRouter traffic, they beat every other provider e...",
+      "summary": "Mercury扩散模型在OpenRouter真实生产流量测试中表现优异，速度仅次于Cerebras，且智能水平高于Groq/Cerebras模型。这标志着非Transformer架构在实际部署中取得突破。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 76,
+      "level": "A",
+      "reason": "【A级】评分76分 | 扩散模型架构在实际生产环境验证性能，技术路线竞争的重要数据点",
+      "entities": [
+        "Mercury",
+        "扩散模型",
+        "OpenRouter",
+        "Cerebras",
+        "Groq"
+      ],
+      "tags": [
+        "AI",
+        "大模型",
+        "开源"
+      ],
+      "url": "https://x.com/Scobleizer/status/2031805152865501575",
+      "source": "Robert Scoble",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Robert Scoble",
+          "url": "https://x.com/Scobleizer/status/2031805152865501575"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-034",
+      "priority_score": 18
+    },
+    {
+      "title": "Replit CEO颠覆SaaS思维：ARR指标已死，AI时代看客户赚钱能力",
+      "title_en": "\"Internally, we don't set ARR metrics.\" - Replit CEO @amasad Amjad says focusing on ARR is \"optimizing for the wrong thing.\" Instead, they look at met...",
+      "summary": "Replit CEO Amjad Masad表示公司不再以ARR为核心指标，而是关注客户通过AI赚了多少钱。他认为AI时代卖的是token，传统SaaS估值模型已不再适用。",
+      "type": "business",
+      "typeName": "商业",
+      "score": 75,
+      "level": "A",
+      "reason": "【A级】评分75分 | AI商业模式的范式转变观点，来自重要AI创业公司CEO",
+      "entities": [
+        "Replit",
+        "Amjad Masad",
+        "ARR",
+        "SaaS",
+        "AI商业模式"
+      ],
+      "tags": [
+        "商业动态",
+        "AI编程"
+      ],
+      "url": "https://x.com/tbpn/status/2031861718067134659",
+      "source": "TBPN",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "TBPN",
+          "url": "https://x.com/tbpn/status/2031861718067134659"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-031",
+      "priority_score": 20
+    },
+    {
+      "title": "a16z合伙人警告：加州财富税是瓦解硅谷网络效应的最佳策略",
+      "title_en": "a16z's @bhorowitz says the California wealth tax is the \"best strategy\" to dismantle Silicon Valley that he's ever seen. \"It's been so hard to break t...",
+      "summary": "a16z联合创始人Ben Horowitz表示，加州的财富税是他见过的瓦解硅谷网络效应的最佳策略，并以挪威为例说明未实现资本利得税导致人才外流的现象。",
+      "type": "business",
+      "typeName": "商业",
+      "score": 73,
+      "level": "A",
+      "reason": "【A级】评分73分 | 顶级风投对科技政策的重要观点，涉及硅谷人才流动",
+      "entities": [
+        "a16z",
+        "Ben Horowitz",
+        "加州财富税",
+        "硅谷",
+        "ide"
+      ],
+      "tags": [
+        "商业动态",
+        "监管政策"
+      ],
+      "url": "https://x.com/tbpn/status/2031775165793873925",
+      "source": "TBPN",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "TBPN",
+          "url": "https://x.com/tbpn/status/2031775165793873925"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-038",
+      "priority_score": 13
+    },
+    {
+      "title": "李飞飞World Labs新进展：单图生成百万级3D世界，从废墟到太空船舱",
+      "title_en": "Our imaginations are unbounded, so should the worlds we create be…🌐😍",
+      "summary": "斯坦福教授李飞飞创办的World Labs发布Marble技术演示，可将单张图片转化为由数百万splat组成的可探索大型3D环境，涵盖古代废墟到太空船内部等多种场景。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 72,
+      "level": "A",
+      "reason": "【A级】评分72分 | 空间智能领域的突破性进展，李飞飞团队的重要技术发布",
+      "entities": [
+        "李飞飞",
+        "World Labs",
+        "Marble",
+        "空间智能",
+        "3D生成"
+      ],
+      "tags": [
+        "AI",
+        "AI科研",
+        "多模态"
+      ],
+      "url": "https://x.com/drfeifei/status/2031782045538796026",
+      "source": "Fei-Fei Li",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Fei-Fei Li",
+          "url": "https://x.com/drfeifei/status/2031782045538796026"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-041",
+      "priority_score": 5
+    },
+    {
+      "title": "前NotebookLM创始人新作出炉：WonderingApp要做任何主题的Duolingo",
+      "title_en": "RT Cheng-Wei Hu: I left NotebookLM a few months ago to solve a bigger problem in learning. Today, as the first step, we are launching @WonderingApp fo...",
+      "summary": "NotebookLM前团队成员Cheng-Wei Hu推出WonderingApp，用户可将任何主题转化为带有可视化小课程的学习路径，支持自定义深度、难度和个性化需求。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 71,
+      "level": "B",
+      "reason": "【B级】评分71分 | AI教育应用创新，来自知名AI产品团队的新项目",
+      "entities": [
+        "WonderingApp",
+        "NotebookLM",
+        "Cheng-Wei Hu",
+        "AI教育",
+        "launch"
+      ],
+      "tags": [
+        "AI",
+        "AI Agent"
+      ],
+      "url": "https://x.com/Scobleizer/status/2031807613051289644",
+      "source": "Robert Scoble",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Robert Scoble",
+          "url": "https://x.com/Scobleizer/status/2031807613051289644"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-039",
+      "priority_score": 11
+    },
+    {
+      "title": "SuperSplat重大更新：开源3D Gaussian Splatting平台新增Walk模式和流式LOD",
+      "title_en": "RT Will Eastcott: Major SuperSplat Update! 📢 Your free and open source platform for Gaussian Splatting. 🚶Walk Mode ⚡️Streamed LOD ⏫Easy Uploa...",
+      "summary": "PlayCanvas联合创始人Will Eastcott宣布SuperSplat平台重大更新，新增步行模式、流式LOD和简易上传功能，为3D Gaussian Splatting提供免费开源解决方案。",
+      "type": "tech",
+      "typeName": "科技",
+      "score": 70,
+      "level": "B",
+      "reason": "【B级】评分70分 | 3D视觉技术开源工具的重要更新",
+      "entities": [
+        "SuperSplat",
+        "Gaussian Splatting",
+        "PlayCanvas",
+        "Will Eastcott",
+        "open source"
+      ],
+      "tags": [
+        "开源",
+        "多模态"
+      ],
+      "url": "https://x.com/Scobleizer/status/2031813074995597478",
+      "source": "Robert Scoble",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Robert Scoble",
+          "url": "https://x.com/Scobleizer/status/2031813074995597478"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-040",
+      "priority_score": 16
+    },
+    {
+      "title": "ElevenLabs推出Flows：节点式AI创作画布，集成图像/视频/语音/音乐模型",
+      "title_en": "RT aneri: Introducing: Flows Every creator just got their own production studio",
+      "summary": "ElevenLabs发布ElevenCreative的Flows功能，提供节点式画布用于探索和生成内容，支持图像、视频、语音、音乐和音效模型的链式调用和批量执行。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 70,
+      "level": "B",
+      "reason": "【B级】评分70分 | AI创作工具的重要更新，节点式工作流代表行业趋势",
+      "entities": [
+        "ElevenLabs",
+        "Flows",
+        "ElevenCreative",
+        "AI创作",
+        "ide"
+      ],
+      "tags": [
+        "AI",
+        "多模态",
+        "AI Agent"
+      ],
+      "url": "https://x.com/Scobleizer/status/2031780669148533199",
+      "source": "Robert Scoble",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Robert Scoble",
+          "url": "https://x.com/Scobleizer/status/2031780669148533199"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-042",
+      "priority_score": 5
+    },
+    {
+      "title": "Jeff Dean转发：Standard Kernel完成种子轮融资，专注AI内核生成",
+      "title_en": "RT Anne Ouyang: Excited to share @Standard_Kernel's seed round and some reflections on what we’ve learned about kernel generation and what we believe...",
+      "summary": "Google DeepMind首席科学家Jeff Dean转发Standard Kernel的种子轮融资公告，该公司专注于AI内核生成技术，旨在优化AI计算性能。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 69,
+      "level": "B",
+      "reason": "【B级】评分69分 | AI基础设施领域的新公司，获得顶级科学家关注",
+      "entities": [
+        "Standard Kernel",
+        "Jeff Dean",
+        "AI内核",
+        "种子轮"
+      ],
+      "tags": [
+        "AI",
+        "AI科研",
+        "芯片"
+      ],
+      "url": "https://x.com/JeffDean/status/2031770952368099427",
+      "source": "Jeff Dean",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Jeff Dean",
+          "url": "https://x.com/JeffDean/status/2031770952368099427"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-044",
+      "priority_score": 0
+    },
+    {
+      "title": "反转！Ben Affleck6周前公开批评AI电影，如今Netflix6亿美元收购其AI公司",
+      "title_en": "RT Tuki: 🚨 Did you see what Ben Affleck just pulled off? Six weeks ago Ben Affleck went on Joe Rogan and said AI making movies is \"bullshit.\" Today...",
+      "summary": "演员Ben Affleck6周前在Joe Rogan节目中称AI拍电影是胡说，如今Netflix以6亿美元收购他的AI电影公司。舆论认为这是公开唱衰AI以掩盖私下布局的策略。",
+      "type": "business",
+      "typeName": "商业",
+      "score": 68,
+      "level": "B",
+      "reason": "【B级】评分68分 | AI娱乐领域的重大商业动态，具有话题性",
+      "entities": [
+        "Ben Affleck",
+        "Netflix",
+        "AI电影",
+        "Joe Rogan",
+        "ide"
+      ],
+      "tags": [
+        "商业动态",
+        "多模态"
+      ],
+      "url": "https://x.com/Scobleizer/status/2031848490889068745",
+      "source": "Robert Scoble",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Robert Scoble",
+          "url": "https://x.com/Scobleizer/status/2031848490889068745"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-043",
+      "priority_score": 5
+    },
+    {
+      "title": "奢侈品平替电商Quince融资谈判中：估值或超100亿美元",
+      "title_en": "Online retailer Quince, known for selling lower-priced alternatives to luxury goods, is discussing a funding round that would value it above $10 billi...",
+      "summary": "在线零售商Quince正在讨论新一轮融资，估值可能超过100亿美元。该公司以销售奢侈品的低价替代品而闻名。",
+      "type": "business",
+      "typeName": "商业",
+      "score": 68,
+      "level": "B",
+      "reason": "【B级】评分68分 | 电商领域的大额融资动态",
+      "entities": [
+        "Quince",
+        "融资",
+        "电商",
+        "奢侈品平替",
+        "funding"
+      ],
+      "tags": [
+        "商业动态"
+      ],
+      "url": "https://x.com/theinformation/status/2031833804063609074",
+      "source": "The Information",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "The Information",
+          "url": "https://x.com/theinformation/status/2031833804063609074"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-046",
+      "priority_score": 10
+    },
+    {
+      "title": "23andMe转型非营利：Anne Wojcicki计划围绕1300万基因数据库重建",
+      "title_en": "Anne Wojcicki wants to transform 23andMe into a research-focused nonprofit, funded by donors and built around its 13 million-person genetic database. ...",
+      "summary": "23andMe创始人Anne Wojcicki希望将公司转型为研究型非营利组织，由捐赠资助，围绕其1300万人的基因数据库开展研究。",
+      "type": "business",
+      "typeName": "商业",
+      "score": 66,
+      "level": "B",
+      "reason": "【B级】评分66分 | 基因检测公司的重大战略转型",
+      "entities": [
+        "23andMe",
+        "Anne Wojcicki",
+        "基因数据库",
+        "非营利",
+        "profit"
+      ],
+      "tags": [
+        "商业动态",
+        "AI科研"
+      ],
+      "url": "https://x.com/theinformation/status/2031818709468102751",
+      "source": "The Information",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "The Information",
+          "url": "https://x.com/theinformation/status/2031818709468102751"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-047",
+      "priority_score": 10
+    },
+    {
+      "title": "Fort可穿戴设备发布：自动追踪力量训练，专注健身健康数据",
+      "title_en": "RT Miranda Nover: Introducing Fort, a wearable that automatically tracks strength training. Strength training is one of the best things you can do for...",
+      "summary": "Miranda Nover发布Fort可穿戴设备，可自动追踪力量训练数据。该产品定位为健康和长寿领域的健身工具升级。",
+      "type": "tech",
+      "typeName": "科技",
+      "score": 65,
+      "level": "B",
+      "reason": "【B级】评分65分 | 可穿戴设备在健身领域的创新应用",
+      "entities": [
+        "Fort",
+        "Miranda Nover",
+        "可穿戴设备",
+        "力量训练",
+        "training"
+      ],
+      "tags": [
+        "机器人"
+      ],
+      "url": "https://x.com/Scobleizer/status/2031768805014454585",
+      "source": "Robert Scoble",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Robert Scoble",
+          "url": "https://x.com/Scobleizer/status/2031768805014454585"
+        }
+      ],
+      "timestamp": 1773270300,
+      "version": "2026.03.12-045",
+      "priority_score": 20
     }
   ]
 }
