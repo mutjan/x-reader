@@ -514,7 +514,41 @@ def calculate_priority_score(item):
         score += 5
         matched_keywords.append(f"[多源验证]{authoritative_sources}源")
 
-    return score, matched_keywords, matched_categories
+    # 政治/军事/法律类新闻降权（除非是重大事件）
+    political_keywords = ['trump', 'biden', '特朗普', '拜登', '政府', 'government', 'administration',
+                          'policy', '政策', 'regulation', '监管', 'ban', '禁令']
+    military_keywords = ['war', '战争', 'military', '军事', 'defense', '国防', 'weapon', '武器',
+                         'attack', '攻击', 'conflict', '冲突']
+    legal_keywords = ['lawsuit', '诉讼', '起诉', '被告', '原告', 'court', '法庭', 'judge', '法官',
+                      'trial', '审判', 'patent', '专利', 'copyright', '版权', 'antitrust', '反垄断']
+
+    political_count = sum(1 for kw in political_keywords if kw.lower() in text_lower)
+    military_count = sum(1 for kw in military_keywords if kw.lower() in text_lower)
+    legal_count = sum(1 for kw in legal_keywords if kw.lower() in text_lower)
+
+    # 重大事件判定：多源权威报道 + 涉及科技巨头
+    major_event_indicators = ['google', 'microsoft', 'apple', 'meta', 'amazon', 'openai', 'nvidia',
+                              'bytedance', 'tencent', 'alibaba', '字节', '腾讯', '阿里']
+    is_tech_major = any(ind in text_lower for ind in major_event_indicators)
+    is_major_event = (authoritative_sources >= 2 or 'breaking' in text_lower or '突发' in text) and is_tech_major
+
+    if not is_major_event:
+        # 非重大事件时降权
+        if political_count >= 2:
+            score -= 15  # 政治类降权
+            matched_keywords.append("[政治-降权]")
+        if military_count >= 1:
+            score -= 20  # 军事类大幅降权
+            matched_keywords.append("[军事-降权]")
+        if legal_count >= 2:
+            score -= 10  # 一般法律纠纷降权
+            matched_keywords.append("[法律-降权]")
+        # 但保留重大法律事件（如反垄断大案）
+        elif legal_count >= 1 and is_tech_major and ('antitrust' in text_lower or '反垄断' in text):
+            score += 5  # 科技巨头反垄断是重大事件
+            matched_keywords.append("[反垄断+]")
+
+    return max(score, 0), matched_keywords, matched_categories
 
 
 def keyword_pre_filter(items, min_priority_score=5, ensure_top_n=40):
@@ -630,6 +664,12 @@ def get_ai_processing_prompt(items):
      * 产品评测、体验报告
      * 技术解析、教程
    - 过滤掉C级（<65分）
+
+   **重要降权规则**（除非是重大事件，多源权威报道+科技巨头）：
+   - 政治类新闻（特朗普、拜登、政府政策等）：降权15分
+   - 军事类新闻（战争、武器、冲突等）：降权20分
+   - 一般法律纠纷（普通诉讼、专利纠纷）：降权10分
+   - 但科技巨头反垄断大案、重大监管事件除外
 
 2. **生成量子位风格中文标题**：
    - 纯中文，无类型前缀

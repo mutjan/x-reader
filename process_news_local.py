@@ -41,6 +41,37 @@ def score_item(item):
     news_type = 'tech'
     reasons = []
 
+    # 政治/军事/法律类新闻降权（除非是重大事件）
+    political_keywords = ['trump', 'biden', '特朗普', '拜登', '政府', 'government', 'administration',
+                          'policy', '政策', 'regulation', '监管', 'ban', '禁令']
+    military_keywords = ['war', '战争', 'military', '军事', 'defense', '国防', 'weapon', '武器',
+                         'attack', '攻击', 'conflict', '冲突']
+    legal_keywords = ['lawsuit', '诉讼', '起诉', '被告', '原告', 'court', '法庭', 'judge', '法官',
+                      'trial', '审判', 'patent', '专利', 'copyright', '版权']
+
+    political_count = sum(1 for kw in political_keywords if kw in text)
+    military_count = sum(1 for kw in military_keywords if kw in text)
+    legal_count = sum(1 for kw in legal_keywords if kw in text)
+
+    # 重大事件判定：涉及科技巨头
+    major_event_indicators = ['google', 'microsoft', 'apple', 'meta', 'amazon', 'openai', 'nvidia',
+                              'bytedance', 'tencent', 'alibaba', '字节', '腾讯', '阿里']
+    is_tech_major = any(ind in text for ind in major_event_indicators)
+
+    # 非重大事件时降权
+    if not is_tech_major:
+        if political_count >= 2:
+            score -= 15
+            reasons.append("政治类-降权")
+        if military_count >= 1:
+            score -= 20
+            reasons.append("军事类-降权")
+        if legal_count >= 2:
+            score -= 10
+            reasons.append("一般法律纠纷-降权")
+
+    score = max(score, 0)
+
     # S级评分 (90-100)
     for kw in S_KEYWORDS['人物']:
         if kw in text:
