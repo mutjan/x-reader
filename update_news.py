@@ -198,89 +198,31 @@ def ai_process_all(items):
 def load_local_processed_results():
     """加载本地模型处理后的结果
 
-    读取 AI_CACHE_FILE 中保存的待处理数据，并返回处理后的结果。
-    这个函数由本地模型（Claude）调用，处理远程 API 失败时的回退逻辑。
+    读取 news_local_result.json 中的本地处理结果。
+    这个函数在远程 API 失败时使用，加载本地模型（Claude）处理的结果。
 
     Returns:
         list: AI 处理后的条目，包含 title, summary, type, score, level 等
     """
-    if not os.path.exists(AI_CACHE_FILE):
+    LOCAL_RESULT_FILE = "news_local_result.json"
+
+    if not os.path.exists(LOCAL_RESULT_FILE):
         return None
 
     try:
-        with open(AI_CACHE_FILE, 'r', encoding='utf-8') as f:
-            cache_data = json.load(f)
+        with open(LOCAL_RESULT_FILE, 'r', encoding='utf-8') as f:
+            result_data = json.load(f)
 
-        if cache_data.get("status") != "pending_local_processing":
+        results = result_data.get("results", [])
+        if not results:
+            print("[本地处理] 本地结果文件为空")
             return None
 
-        items = cache_data.get("items", [])
-        if not items:
-            return None
-
-        print(f"[本地处理] 从缓存加载 {len(items)} 条新闻...")
-
-        # 构建提示词供本地模型处理
-        prompt = f"""你是一位资深科技媒体编辑，负责筛选和加工科技新闻选题。
-
-请对以下新闻进行批量处理，返回 JSON 格式结果：
-
-输入新闻：
-{json.dumps(items, ensure_ascii=False, indent=2)}
-
-处理要求：
-
-1. **筛选选题**（S级/A级/B级）：
-   - S级（90-100分）：AI大模型重大发布、马斯克/SpaceX重大动态、Nature/Science顶刊
-   - A级（75-89分）：科技巨头动态、国产大模型、开源爆款、学术突破、人物故事
-   - B级（60-74分）：产品评测、技术解析、航天/芯片
-   - 过滤掉C级（<60分）：一般商业新闻、消费电子
-
-2. **生成量子位风格中文标题**：
-   - 纯中文，无类型前缀
-   - 情绪饱满，可用"炸裂"、"刚刚"、"颠覆"、"首次"等词
-   - 20-40字，突出核心信息
-
-3. **生成一句话摘要**：
-   - 50-100字
-   - 概括核心信息，突出关键数据
-
-4. **标注类型**：hot(热点)/ai(AI相关)/tech(科技)/business(商业)
-
-5. **识别核心实体**：
-   - 从新闻中提取1-3个核心实体（公司、产品、人物、技术、事件等）
-   - 实体名称简洁，2-6字为宜
-   - 示例：OpenAI、ChatGPT、马斯克、量子计算、IPO
-
-返回格式（JSON）：
-{{
-  "results": [
-    {{
-      "index": 0,
-      "score": 85,
-      "level": "A",
-      "title": "效果炸裂！OpenAI发布新一代模型，能力全面升级",
-      "summary": "OpenAI最新发布的大模型在多项基准测试中创下新高，支持更长的上下文窗口和更复杂的推理任务。",
-      "type": "ai",
-      "reason": "OpenAI重大发布，属于AI领域顶级动态",
-      "entities": ["OpenAI", "GPT-5"]
-    }}
-  ]
-}}
-
-注意：
-1. 只返回 JSON，不要其他解释
-2. 最多选择15条最有价值的
-3. 相似主题的新闻合并为一条，标注多来源"""
-
-        print("[本地处理] 请使用本地模型处理以上提示词")
-        print("[本地处理] 处理完成后，将结果保存为 news_local_result.json")
-
-        # 返回 None 表示需要外部处理
-        return "NEEDS_LOCAL_PROCESSING"
+        print(f"[本地处理] 从本地结果文件加载 {len(results)} 条处理结果")
+        return results
 
     except Exception as e:
-        print(f"[本地处理] 加载缓存失败: {e}")
+        print(f"[本地处理] 加载本地结果失败: {e}")
         return None
 
 
@@ -391,10 +333,121 @@ def calculate_similarity(s1, s2):
     return len(kw1 & kw2) / len(kw1 | kw2)
 
 
+def extract_core_entities_for_grouping(title, content=""):
+    """提取用于事件分组的核心实体
+
+    返回一个标准化后的实体集合，用于判断两条新闻是否属于同一事件
+    """
+    text = (title + " " + content).lower()
+
+    # 提取公司名称
+    companies = set()
+    company_keywords = [
+        'grammarly', 'openai', 'google', '微软', '英伟达', 'nvidia',
+        'amazon', '亚马逊', 'meta', 'apple', '特斯拉', 'tesla',
+        'github', 'spacex', 'xbox', 'windows',
+        'lovable', 'wiz', 'nemotron', 'nemoclaw', 'nemo',
+        'lecun', 'yann lecun', 'swe-bench', 'anthropic', 'claude',
+        'deepseek', 'mistral', 'meta', 'facebook', 'twitter', 'x',
+    ]
+    for kw in company_keywords:
+        if kw in text:
+            companies.add(kw)
+
+    # 提取关键产品/功能/事件名称
+    products = set()
+    product_keywords = [
+        'expert review', 'health ai', 'xbox模式', 'xbox mode',
+        'class action', '集体诉讼', '开源模型', 'open weight', 'open-weight',
+        '收购', 'acquisition', 'ipo', 'layoff', '裁员',
+        'generative ai', '生成式ai', 'ai反馈', 'ai feedback',
+    ]
+    for kw in product_keywords:
+        if kw in text:
+            products.add(kw)
+
+    return companies, products
+
+
+def is_same_event(item1, item2, entities1, entities2):
+    """判断两条新闻是否属于同一事件
+
+    基于以下规则：
+    1. 标题相似度 > 0.5
+    2. 同一公司 + 同一产品/功能
+    3. 同一公司 + 同一类型的事件（诉讼、下架、道歉等）
+    4. 同一公司 + 时间窗口内（24小时内）+ 相似主题词
+    """
+    title1 = item1.get("title", "")
+    title2 = item2.get("title", "")
+    content1 = item1.get("content", "")
+    content2 = item2.get("content", "")
+
+    # 1. 标题相似度判断
+    sim = calculate_similarity(title1, title2)
+    if sim > 0.5:
+        return True
+
+    companies1, products1 = entities1
+    companies2, products2 = entities2
+
+    # 2. 必须有共同的公司
+    if not companies1 or not companies2:
+        return False
+
+    common_companies = companies1 & companies2
+    if len(common_companies) == 0:
+        return False
+
+    # 3. 同一公司 + 有共同产品关键词
+    common_products = products1 & products2
+    if len(common_products) >= 1:
+        return True
+
+    # 4. 同一公司 + 都是关于特定事件的报道
+    # 合并标题和内容用于事件类型检测
+    full_text1 = (title1 + " " + content1).lower()
+    full_text2 = (title2 + " " + content2).lower()
+
+    # 定义事件类型关键词组
+    event_patterns = [
+        # 法律相关
+        {'lawsuit', 'class action', '集体诉讼', '诉讼', '被告', '原告', '起诉'},
+        # 产品下架/禁用
+        {'disables', '下架', '禁用', '移除', 'removes', 'shuts down', '关闭'},
+        # 道歉/回应
+        {'apolog', '道歉', '回应', 'address', '回应'},
+        # 发布/推出
+        {'debuts', '发布', '推出', 'announces', 'launches', 'introduces'},
+        # 收购/合并
+        {'acquisition', '收购', 'acquires', 'buys', 'merges'},
+        # 人事变动
+        {'resigns', 'resigned', '离职', '辞职', 'joins', 'hires', '任命'},
+        # 财务/收入
+        {'revenue', '收入', 'funding', '融资', 'ipo', '上市'},
+    ]
+
+    for pattern in event_patterns:
+        match1 = any(kw in full_text1 for kw in pattern)
+        match2 = any(kw in full_text2 for kw in pattern)
+        if match1 and match2:
+            return True
+
+    return False
+
+
 def group_by_event(items):
-    """按事件分组：相似标题归为同一事件"""
+    """按事件分组：相似标题或相同核心实体归为同一事件"""
     groups = []
     used = set()
+
+    # 预计算每个条目的核心实体
+    item_entities = {}
+    for i, item in enumerate(items):
+        companies, products = extract_core_entities_for_grouping(
+            item.get("title", ""), item.get("content", "")
+        )
+        item_entities[i] = (companies, products)
 
     for i, item in enumerate(items):
         if i in used:
@@ -402,14 +455,12 @@ def group_by_event(items):
 
         group = [item]
         used.add(i)
-        title1 = item["title"]
 
         for j, other in enumerate(items[i + 1:], i + 1):
             if j in used:
                 continue
-            title2 = other["title"]
-            sim = calculate_similarity(title1, title2)
-            if sim > 0.5:
+
+            if is_same_event(item, other, item_entities[i], item_entities[j]):
                 group.append(other)
                 used.add(j)
 
@@ -665,24 +716,51 @@ def main():
             if cache_data.get("status") == "pending_local_processing":
                 print("\n[本地处理模式] 检测到待处理的缓存文件")
                 print(f"[本地处理模式] 缓存时间: {datetime.fromtimestamp(cache_data.get('timestamp', 0)).strftime('%Y-%m-%d %H:%M:%S')}")
-                print("[本地处理模式] 请使用本地模型处理缓存文件，然后将结果保存为 news_local_result.json")
-                print("[本地处理模式] 或者删除缓存文件重新尝试远程 API\n")
-                return
+
+                # 尝试加载本地处理结果
+                local_results = load_local_processed_results()
+                if local_results is None:
+                    print("[本地处理模式] 未找到本地处理结果 (news_local_result.json)")
+                    print("[本地处理模式] 请使用本地模型处理缓存文件，然后将结果保存为 news_local_result.json")
+                    print("[本地处理模式] 或者删除缓存文件重新尝试远程 API\n")
+                    return
+                else:
+                    print("[本地处理模式] 成功加载本地处理结果，将继续执行...\n")
         except Exception:
             pass
 
     try:
-        # 1. 获取 Token
-        token = get_token()
-        if not token:
-            print("无法获取 Inoreader token")
-            return
+        items = []
 
-        # 2. 获取最近 24 小时内容
-        print("获取最近 24 小时的内容...")
-        data = get_recent_items(token, hours=24, limit=200)
-        items = parse_items(data)
-        print(f"获取到 {len(items)} 条内容")
+        # 如果有本地处理结果，从缓存文件加载原始items
+        if local_results:
+            print("[本地处理模式] 从缓存加载原始新闻数据...")
+            try:
+                with open(AI_CACHE_FILE, 'r', encoding='utf-8') as f:
+                    cache_data = json.load(f)
+                items = cache_data.get("items", [])
+                # 添加 _index 字段和 published 字段
+                import time
+                for i, item in enumerate(items):
+                    item["_index"] = i
+                    if "published" not in item:
+                        item["published"] = int(time.time())
+                print(f"[本地处理模式] 加载了 {len(items)} 条原始新闻")
+            except Exception as e:
+                print(f"[本地处理模式] 加载缓存失败: {e}")
+                return
+        else:
+            # 1. 获取 Token
+            token = get_token()
+            if not token:
+                print("无法获取 Inoreader token")
+                return
+
+            # 2. 获取最近 24 小时内容
+            print("获取最近 24 小时的内容...")
+            data = get_recent_items(token, hours=24, limit=200)
+            items = parse_items(data)
+            print(f"获取到 {len(items)} 条内容")
 
         if not items:
             print("没有获取到新闻内容")

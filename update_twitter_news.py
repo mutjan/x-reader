@@ -2,9 +2,19 @@
 """
 Twitter RSS 新闻选题更新脚本
 - 从 Twitter List RSS 获取内容
-- 选题筛选由本地模型完成
+- 选题筛选由本地模型完成（无需API配置）
 - 与当日已有选题去重合并
 - 推送到 GitHub Pages
+
+使用方式：
+1. 直接运行：python3 update_twitter_news.py
+2. 脚本会自动生成 twitter_ai_prompt.txt
+3. 将内容发送给本地AI模型（如Claude Desktop）处理
+4. 将模型返回的JSON保存为 twitter_ai_result.json
+5. 再次运行脚本完成合并
+
+或者使用自动化模式（推荐）：
+- 通过外部调度器自动完成步骤3-4
 """
 
 import json
@@ -45,35 +55,120 @@ def sanitize_json_string(text):
     """清理JSON字符串中的特殊字符，特别是中文引号
 
     处理以下问题：
-    1. 中文引号 " " 替换为转义的英文引号 \" \"
+    1. 中文引号 " " 替换为转义的英文引号 \\"
     2. 控制字符过滤
     3. 换行符统一处理
     4. 修复AI可能生成的错误JSON格式
+    5. 修复字符串内未转义的引号
+
+    关键：字符串内部的中文双引号必须转义为 \\" 才能保留在JSON中
     """
     if not isinstance(text, str):
         return text
 
-    # 替换中文引号为英文引号（左双引号、右双引号）
-    text = text.replace('"', '"').replace('"', '"')
-    # 替换中文单引号（左单引号、右单引号）
-    text = text.replace(''', "'").replace(''', "'")
-    # 替换全角引号
-    text = text.replace('＂', '"').replace("＇", "'")
+    # 步骤1: 保护已转义的引号 \\" (反斜杠+双引号)
+    PLACEHOLDER = "<<<ESCAPED_QUOTE>>>"
+    text = text.replace('\\"', PLACEHOLDER)
 
-    # 修复常见的AI生成JSON错误：属性名未加引号
+    # 步骤2: 替换中文双引号为转义的英文双引号 \\"
+    # 使用Unicode码点来区分中英文引号
+    # U+201C = "  U+201D = "
+    text = text.replace('\u201C', '\\"').replace('\u201D', '\\"')
+    # 替换全角双引号 U+FF02
+    text = text.replace('＂', '\\"')
+
+    # 步骤3: 替换中文单引号为普通英文单引号
+    # U+2018 = '  U+2019 = '
+    text = text.replace('\u2018', "'").replace('\u2019', "'")
+    text = text.replace("＇", "'")
+
+    # 步骤4: 替换其他可能的中文引号变体
+    text = text.replace('「', '[').replace('」', ']')
+    text = text.replace('『', '[').replace('』', ']')
+    text = text.replace('【', '[').replace('】', ']')
+
+    # 步骤5: 恢复已转义的引号
+    text = text.replace(PLACEHOLDER, '\\"')
+
+    # 步骤6: 修复常见的AI生成JSON错误：属性名未加引号
     # 例如：{title: "xxx"} -> {"title": "xxx"}
     text = re.sub(r'([{,]\s*)([a-zA-Z_][a-zA-Z0-9_]*)(\s*:)', r'\1"\2"\3', text)
 
-    # 修复尾部逗号（在}或]前的多余逗号）
+    # 步骤7: 修复尾部逗号（在}或]前的多余逗号）
     text = re.sub(r',(\s*[}\]])', r'\1', text)
 
-    # 替换其他可能导致JSON解析失败的字符
-    text = text.replace('\n', '\\n').replace('\r', '\\r').replace('\t', '\\t')
+    return text
 
-    # 移除其他控制字符 (0x00-0x1F，除了\n\r\t)
-    text = ''.join(char for char in text if ord(char) >= 32 or char in '\n\r\t')
+
+def sanitize_json_content_for_ai(text):
+    """
+    为AI生成的JSON内容做预处理，防止中文引号问题
+    在保存AI结果前调用此函数处理
+
+    关键：中文双引号必须转义为 \" 才能在JSON字符串内部保留
+    """
+    if not isinstance(text, str):
+        return text
+
+    # 替换中文双引号为转义的英文双引号 \"
+    # 这样在JSON字符串内部就是合法的
+    # 左双引号 U+201C -> \"
+    text = text.replace('\u201c', '\\"')
+    # 右双引号 U+201D -> \"
+    text = text.replace('\u201d', '\\"')
+    # 全角双引号
+    text = text.replace('＂', '\\"')
+
+    # 中文单引号替换为普通英文单引号（单引号在JSON字符串内是合法字符）
+    # 左单引号 U+2018 -> '
+    text = text.replace('\u2018', "'")
+    # 右单引号 U+2019 -> '
+    text = text.replace('\u2019', "'")
 
     return text
+
+
+def diagnose_json_error(json_str, error):
+    """诊断JSON解析错误，返回详细的错误信息和建议"""
+    error_info = {
+        "error_type": type(error).__name__,
+        "error_msg": str(error),
+        "line": None,
+        "column": None,
+        "suggestions": []
+    }
+
+    # 解析错误位置
+    match = re.search(r'line (\d+) column (\d+)', str(error))
+    if match:
+        error_info["line"] = int(match.group(1))
+        error_info["column"] = int(match.group(2))
+
+        # 提取错误行内容
+        lines = json_str.split('\n')
+        if 0 <= error_info["line"] - 1 < len(lines):
+            error_line = lines[error_info["line"] - 1]
+            error_info["error_line_content"] = error_line
+
+            # 诊断常见问题
+            if '"' in error_line or '"' in error_line:
+                error_info["suggestions"].append("检测到中文引号，请替换为英文引号")
+            if "'" in error_line and '"' not in error_line[:error_info["column"]]:
+                error_info["suggestions"].append("检测到单引号，JSON标准使用双引号")
+            if re.search(r'\w+\s*:', error_line) and not re.search(r'"\w+"\s*:', error_line):
+                error_info["suggestions"].append("属性名可能缺少引号，如 {key: value} 应改为 {\"key\": value}")
+            if re.search(r',\s*[}\]]', error_line):
+                error_info["suggestions"].append("检测到尾部逗号，JSON不允许最后一个属性后跟逗号")
+
+    # 全局检查
+    if '\\n' in json_str and '"\\n"' not in json_str:
+        error_info["suggestions"].append("检测到未转义的换行符")
+    if json_str.count('{') != json_str.count('}'):
+        error_info["suggestions"].append("大括号不匹配")
+    if json_str.count('[') != json_str.count(']'):
+        error_info["suggestions"].append("方括号不匹配")
+
+    return error_info
 
 
 def safe_json_loads(json_str, max_retries=3):
@@ -86,11 +181,26 @@ def safe_json_loads(json_str, max_retries=3):
     Returns:
         解析后的Python对象，失败返回None
     """
+    original_str = json_str  # 保存原始字符串用于诊断
+
     for attempt in range(max_retries):
         try:
             return json.loads(json_str)
         except json.JSONDecodeError as e:
             logger.warning(f"JSON解析失败 (尝试 {attempt + 1}/{max_retries}): {e}")
+
+            # 诊断错误
+            if attempt == max_retries - 1:
+                diagnosis = diagnose_json_error(original_str, e)
+                logger.error(f"[JSON诊断] 错误类型: {diagnosis['error_type']}")
+                if diagnosis['line']:
+                    logger.error(f"[JSON诊断] 位置: 第{diagnosis['line']}行, 第{diagnosis['column']}列")
+                    if 'error_line_content' in diagnosis:
+                        logger.error(f"[JSON诊断] 错误行: {diagnosis['error_line_content'][:80]}")
+                if diagnosis['suggestions']:
+                    logger.error(f"[JSON诊断] 修复建议:")
+                    for i, suggestion in enumerate(diagnosis['suggestions'], 1):
+                        logger.error(f"  {i}. {suggestion}")
 
             if attempt == 0:
                 # 第一次尝试：清理中文引号
@@ -121,7 +231,74 @@ def try_fix_json(json_str):
     # 修复缺失的引号（简单情况）
     json_str = re.sub(r'([{,]\s*)(\w+)(\s*:)', r'\1"\2"\3', json_str)
 
+    # 修复字符串内部的未转义双引号
+    json_str = fix_unescaped_quotes_in_json_strings(json_str)
+
     return json_str
+
+
+def fix_unescaped_quotes_in_json_strings(text):
+    """
+    修复JSON字符串内部的未转义双引号
+
+    这是AI生成JSON时的常见问题：
+    错误: "summary": "He said "Hello" to me"
+    正确: "summary": "He said \"Hello\" to me"
+
+    算法：逐行处理，识别JSON字符串值模式并修复
+    """
+    if not isinstance(text, str):
+        return text
+
+    lines = text.split('\n')
+    fixed_lines = []
+
+    for line in lines:
+        # 检测类似 "key": "value" 的模式
+        # 使用更宽松的正则来匹配
+        match = re.match(r'^(\s*"[^"]+"\s*:\s*")(.*)("\s*,?\s*)$', line)
+        if match:
+            prefix = match.group(1)  # "key": "
+            content = match.group(2)  # 字符串内容（可能包含未转义的引号）
+            suffix = match.group(3)  # ", 或 "
+
+            # 转义内容中的未转义双引号
+            fixed_content = escape_quotes_in_string_content(content)
+            fixed_lines.append(prefix + fixed_content + suffix)
+        else:
+            fixed_lines.append(line)
+
+    return '\n'.join(fixed_lines)
+
+
+def escape_quotes_in_string_content(content):
+    """
+    转义字符串内容中的未转义双引号
+
+    将内容中所有未转义的 " 替换为 \"
+    """
+    result = []
+    i = 0
+    while i < len(content):
+        if content[i] == '"':
+            # 检查前面是否有反斜杠（考虑连续的转义）
+            backslash_count = 0
+            j = i - 1
+            while j >= 0 and content[j] == '\\':
+                backslash_count += 1
+                j -= 1
+
+            if backslash_count % 2 == 0:
+                # 偶数个反斜杠（包括0个），说明这个引号是未转义的
+                result.append('\\"')
+            else:
+                # 奇数个反斜杠，说明这个引号已经被转义
+                result.append('"')
+        else:
+            result.append(content[i])
+        i += 1
+
+    return ''.join(result)
 
 
 def safe_json_dumps(obj, ensure_ascii=False, indent=2):
@@ -218,15 +395,17 @@ PRIORITY_KEYWORDS = {
            "llm", "foundation model", "reasoning model", "inference", "training", "fine-tuning",
            "rlhf", "rl", "reinforcement learning", "moe", "mixture of experts",
            "context window", "long context", "multimodal", "embedding", "vector",
-           # 新增：MCP、Function Calling、Tool Use
-           "mcp", "model context protocol", "function calling", "tool use", "tool calling"],
+           # MCP、Function Calling、Tool Use
+           "mcp", "model context protocol", "function calling", "tool use", "tool calling",
+           # NVIDIA模型
+           "nemotron", "nemotron 3", "nemotron 4", "nemotron 3 super", "nvidia nemotron"],
     # 科技巨头动态
     "bigtech": ["apple intelligence", "apple ai", "google ai", "microsoft ai", "meta ai",
                 "amazon ai", "nvidia", "tesla fsd", "spacex", "neuralink", "starlink",
                 "waymo", "alphabet", "meta", "字节", "bytedance", "腾讯", "tencent",
                 "阿里", "alibaba", "百度", "baidu", "华为", "huawei", "xiaomi", "小米",
                 "meituan", "美团", "pinduoduo", "拼多多", "jd", "京东", "kuaishou", "快手",
-                # 新增：智谱、月之暗面等国产AI公司
+                # 智谱、月之暗面等国产AI公司
                 "智谱", "zhipu", "月之暗面", "moonshot", "kimi", "minimax", "零一万物", "01.ai"],
     # 芯片/硬件
     "chip": ["blackwell", "hopper", "h100", "h200", "h300", "b100", "b200", "b300", "mi300", "mi400",
@@ -244,7 +423,7 @@ PRIORITY_KEYWORDS = {
                "andrej karpathy", "karpathy", "dario amodei", "amodei", "fei-fei li",
                "李飞飞", "李彦宏", "robin li", "马云", "jack ma", "马化腾", "pony ma",
                "greg brockman", "brockman", "sebastien bubeck", "bubeck", "noam shazeer", "shazeer",
-               # 新增：更多AI领域重要人物
+               # 更多AI领域重要人物
                "alexandr wang", "scale ai", "emmett shear", "jensen huang", "黄仁勋"],
     # 科研突破
     "research": ["nature", "science", "cell", "arxiv", "breakthrough", "milestone",
@@ -252,8 +431,14 @@ PRIORITY_KEYWORDS = {
                  "state-of-the-art", "sota", "novel", "innovative", "pioneering",
                  "ai for science", "ai4science", "protein folding", "drug discovery",
                  "mathematics", "theorem proving", "frontiermath",
-                 # 新增：更多科研相关
-                 "benchmark", "evaluation", "dataset", "开源数据集"],
+                 # 更多科研相关
+                 "benchmark", "evaluation", "dataset", "开源数据集",
+                 # AI for Science 专项
+                 "alphaevolve", "alpha evolve", "deepmind", "alphafold",
+                 "ramsey", "组合数学", "extremal combinatorics",
+                 "materials discovery", "材料发现", "weather forecasting",
+                 "climate modeling", "分子模拟", "quantum chemistry",
+                 "drug design", "蛋白质设计", "基因编辑", "crispr"],
     # 商业/融资
     "business": ["ipo", "上市", "收购", "并购", "融资", "估值", "独角兽", "merger",
                  "acquisition", "funding", "valuation", "unicorn", "series a", "series b",
@@ -263,23 +448,48 @@ PRIORITY_KEYWORDS = {
     "multimodal": ["sora", "video generation", "text-to-video", "image generation",
                    "text-to-image", "multimodal", "vision model", "vlm", "diffusion",
                    "stable diffusion", "dalle", "dall-e", "midjourney", "flux",
-                   # 新增：更多图像/视频生成工具
+                   # 更多图像/视频生成工具
                    "runway", "pika", "heygen", "elevenlabs", "voice clone"],
     # AI编程/工具 - 大幅扩展
     "coding": ["cursor", "windsurf", "github copilot", "code generation", "ai coding",
                "devin", "coding agent", "programming assistant", "ide", "vscode",
                "ai engineer", "software engineer", "swe", "swe-bench",
-               # 新增：更多AI编程相关
+               # 更多AI编程相关
                "code review", "code completion", "autocomplete", "refactor",
                "unit test", "test generation", "documentation", "api design",
                "vibe coding", "vibecoding", "trae", "cline", "aider", "continue.dev"],
     # 具身智能/机器人 - 大幅扩展
     "robotics": ["robotics", "robot", "embodied ai", "humanoid", "boston dynamics",
                  "figure ai", "tesla bot", "optimus", "autonomous", "self-driving",
-                 # 新增：更多机器人公司和概念
+                 # 更多机器人公司和概念
                  "agility robotics", "digit", "apptronik", "apollo", "1x technologies",
                  "covariant", "physical intelligence", "pi", "general purpose robot",
-                 "manipulation", "grasping", "locomotion", "teleoperation"],
+                 "manipulation", "grasping", "locomotion", "teleoperation",
+                 # 更多具身智能相关
+                 "embodied intelligence", "具身智能", "人形机器人",
+                 "mobile manipulation", "dexterous manipulation", "灵巧操作",
+                 "sim2real", "sim to real", "domain randomization",
+                 "reinforcement learning robotics", "rl for robotics",
+                 "foundation model robotics", "rt-2", "rt-x", "open x-embodiment",
+                 "unitree", "宇树", "智元机器人", "远征", "傅利叶", "frank emika"],
+    # 新增：裁员/就业市场影响
+    "layoff": ["layoff", "layoffs", "裁员", "失业", "job cut", "workforce reduction",
+               "headcount reduction", "headcount", "fired", "terminated", "hiring freeze",
+               "招聘冻结", "job loss", "restructure", "restructuring", "组织调整",
+               "人员优化", "人力成本", "downsizing", "redundancy",
+               # AI替代相关
+               "ai replace", "ai replacement", "自动化", "automation", "取代工作",
+               "job displacement", "career transition", "技能转型", "ai agent替代",
+               "agent替代", "ai裁员", "ai裁员潮"],
+    # 新增：医疗/生物科技AI
+    "healthcare": ["cancer", "癌症", "cancer screening", "cancer detection",
+                   "medical ai", "health ai", "clinical ai", "diagnosis", "诊断",
+                   "drug discovery", "药物发现", "clinical trial", "临床试验",
+                   "fda approval", "fda批准", "medical device", "医疗器械",
+                   "radiology", "病理", "pathology", "imaging", "医学影像",
+                   "biotech", "biotechnology", "基因", "gene", "genomics", "基因组",
+                   "nature cancer", "nature medicine", "cell", "science", "nejm",
+                   "nhs", "imperial college", "jeff dean"],
 }
 
 # 所有关键词合并为一个列表用于快速匹配
@@ -290,6 +500,129 @@ for category, keywords in PRIORITY_KEYWORDS.items():
 # GitHub 配置
 GITHUB_REPO = "x-reader"  # 根据实际情况修改
 GITHUB_BRANCH = "main"
+
+# ==================== 批处理累积配置 ====================
+# 改进：当新内容不足时暂存，累积到一定数量再统一处理
+BATCH_QUEUE_FILE = ".batch_queue.json"
+BATCH_MIN_THRESHOLD = 5  # 最少需要5条才进行AI处理（从10条降低到5条）
+BATCH_MAX_AGE_HOURS = 12  # 队列中内容最大保留时间（小时，从24改为12）
+
+
+def load_batch_queue():
+    """加载批处理队列中的待处理内容"""
+    if not os.path.exists(BATCH_QUEUE_FILE):
+        return {"items": [], "queued_at": None, "last_reported": None}
+    try:
+        with open(BATCH_QUEUE_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        logger.warning(f"[批处理] 加载队列失败: {e}")
+        return {"items": [], "queued_at": None, "last_reported": None}
+
+
+def save_batch_queue(queue_data):
+    """保存批处理队列"""
+    try:
+        with open(BATCH_QUEUE_FILE, "w", encoding="utf-8") as f:
+            json.dump(queue_data, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logger.warning(f"[批处理] 保存队列失败: {e}")
+
+
+def add_to_batch_queue(new_items):
+    """将新内容加入批处理队列"""
+    queue = load_batch_queue()
+
+    # 初始化队列时间
+    if not queue["queued_at"]:
+        queue["queued_at"] = datetime.now().isoformat()
+
+    # 去重：检查是否已存在相同URL的内容
+    existing_urls = {item.get("url", "") for item in queue["items"]}
+    added_count = 0
+
+    for item in new_items:
+        if item.get("url", "") not in existing_urls:
+            queue["items"].append(item)
+            existing_urls.add(item["url"])
+            added_count += 1
+
+    save_batch_queue(queue)
+    return added_count, len(queue["items"])
+
+
+def get_batch_queue_for_processing():
+    """获取队列中的内容用于处理，并清空队列"""
+    queue = load_batch_queue()
+    items = queue.get("items", [])
+
+    # 清空队列
+    save_batch_queue({"items": [], "queued_at": None, "last_reported": None})
+
+    return items
+
+
+def should_force_process(queue_data):
+    """判断是否应该强制处理队列（超过最大保留时间）"""
+    if not queue_data.get("queued_at"):
+        return False
+
+    try:
+        queued_time = datetime.fromisoformat(queue_data["queued_at"])
+        age_hours = (datetime.now() - queued_time).total_seconds() / 3600
+        return age_hours >= BATCH_MAX_AGE_HOURS
+    except:
+        return False
+
+
+def report_pending_items(queue_data, force=False):
+    """报告待处理的新内容
+
+    Args:
+        queue_data: 队列数据
+        force: 是否强制报告（即使之前报告过）
+    """
+    items = queue_data.get("items", [])
+    if not items:
+        return
+
+    last_reported = queue_data.get("last_reported")
+    current_count = len(items)
+
+    # 如果数量没有变化且不是强制报告，则跳过
+    if not force and last_reported == current_count:
+        return
+
+    # 更新最后报告数量
+    queue_data["last_reported"] = current_count
+    save_batch_queue(queue_data)
+
+    # 生成报告
+    logger.info("\n" + "=" * 60)
+    logger.info("【待处理新内容报告】")
+    logger.info("=" * 60)
+    logger.info(f"当前队列中有 {current_count} 条待处理内容（达到 {BATCH_MIN_THRESHOLD} 条将自动处理）")
+    logger.info(f"队列开始时间: {queue_data.get('queued_at', 'N/A')}")
+
+    # 按优先级排序显示
+    scored_items = []
+    for item in items:
+        score, keywords, _ = calculate_priority_score(item)
+        scored_items.append((score, keywords, item))
+
+    scored_items.sort(key=lambda x: x[0], reverse=True)
+
+    logger.info("\n待处理内容预览（按优先级排序）:")
+    for i, (score, keywords, item) in enumerate(scored_items[:15], 1):
+        keyword_str = ", ".join(keywords[:3]) if keywords else "无"
+        title = item.get("title", "")[:50]
+        logger.info(f"  {i}. [{score}分] {title}... (关键词: {keyword_str})")
+
+    if len(scored_items) > 15:
+        logger.info(f"  ... 还有 {len(scored_items) - 15} 条内容")
+
+    logger.info("\n提示: 可以手动运行脚本并设置环境变量 FORCE_PROCESS=1 来立即处理队列")
+    logger.info("=" * 60)
 
 # ==================== 已处理推文ID缓存配置 ====================
 # 改进：添加已处理推文ID缓存机制，避免重复处理
@@ -526,6 +859,8 @@ def extract_priority_keywords(text):
         'gpu': [],  # gpu相对安全
         'api': ['april', 'apiece', 'happiness'],
         'ui': ['build', 'built', 'fruit', 'suit', 'juice', 'ruin', 'guide', 'guilty', 'quick', 'quiet', 'quite', 'require', 'inquiry', 'equity'],
+        # 新增：intel 与 intelligence 的误匹配处理
+        'intel': ['intelligence', 'intelligent', 'intellectual', 'intellect', 'intelligently', 'intelligible', 'unintelligible'],
     }
 
     for category, keywords in PRIORITY_KEYWORDS.items():
@@ -582,6 +917,7 @@ def calculate_priority_score(item):
     """计算新闻的优先级得分
 
     基于关键词匹配情况给新闻打分，用于预筛选排序
+    改进：增加"独家/首发"和"多源验证"加分项
     """
     text = f"{item.get('title', '')} {item.get('content', '')}"
     matched_keywords, matched_categories = extract_priority_keywords(text)
@@ -605,6 +941,38 @@ def calculate_priority_score(item):
         score += 6
     if "business" in matched_categories:
         score += 5
+
+    # 独家/首发加分：权威媒体的独家报道
+    exclusive_keywords = ['exclusive', '独家', 'breaking', '突发', 'first look', 'first look at',
+                          'just announced', '刚刚发布', '首次', 'first time', 'preview',
+                          # 新增：战略合作/合资企业相关
+                          'joint venture', '合资企业', 'consulting venture', 'strategic partnership',
+                          '战略合作', '独家报道', '独家披露', '独家消息', 'first reported',
+                          '独家首发', '全网首发', '全球首发', 'industry first']
+    text_lower = text.lower()
+    for kw in exclusive_keywords:
+        if kw.lower() in text_lower:
+            score += 8  # 独家报道额外加8分
+            matched_keywords.append(f"[独家]{kw}")
+            break  # 只加一次
+
+    # 多源验证加分：检测是否有多个来源引用（在content中检测链接或@提及）
+    # 这个在预筛选阶段较难判断，留给AI处理阶段，但可以先标记
+    source_indicators = ['the information', 'bloomberg', 'reuters', 'techcrunch', 'the verge',
+                         'wired', 'mit technology review', 'nature', 'science', 'arxiv',
+                         # 新增：更多权威科技媒体
+                         'financial times', 'ft', 'wall street journal', 'wsj',
+                         'new york times', 'nyt', 'washington post', 'the guardian',
+                         'cnbc', 'cnn', 'forbes', 'fortune', 'business insider',
+                         'axios', 'protocol', 'the block', 'decrypt',
+                         'venturebeat', 'zdnet', 'arstechnica', 'engadget']
+    authoritative_sources = sum(1 for src in source_indicators if src.lower() in text_lower)
+    if authoritative_sources >= 2:
+        score += 5  # 多个权威源提及加5分
+        matched_keywords.append(f"[多源验证]{authoritative_sources}源")
+    elif authoritative_sources == 1:
+        score += 2  # 单个权威源提及加2分
+        matched_keywords.append("[权威信源]")
 
     return score, matched_keywords, matched_categories
 
@@ -670,131 +1038,23 @@ def keyword_pre_filter(items, min_priority_score=5, ensure_top_n=30):
     return result
 
 
-# ==================== AI 处理（支持多种模式） ====================
+# ==================== AI 处理（本地模型模式） ====================
 
-def get_claude_api_key():
-    """从环境变量或配置文件获取 Claude API Key"""
-    # 首先检查环境变量
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if api_key:
-        return api_key
+def ai_process_items_direct(items, enable_keyword_hint=True):
+    """直接在当前AI环境中处理新闻选题（无需API配置）
 
-    # 检查配置文件
-    config_file = os.path.expanduser("~/.config/anthropic/api_key")
-    if os.path.exists(config_file):
-        try:
-            with open(config_file, "r") as f:
-                return f.read().strip()
-        except:
-            pass
-
-    return None
-
-
-def check_api_key_config():
-    """检查API Key配置状态，返回配置提示信息"""
-    api_key = get_claude_api_key()
-
-    if api_key:
-        # 显示部分key用于确认
-        masked_key = api_key[:8] + "..." + api_key[-4:] if len(api_key) > 12 else "已配置"
-        return True, f"[配置] Claude API Key 已配置 ({masked_key})"
-
-    # 未配置，返回详细配置指南
-    config_guide = """
-[配置] Claude API Key 未配置，将使用本地模型模式
-
-配置方法（选择其一）：
-1. 环境变量：export ANTHROPIC_API_KEY="your-api-key"
-2. 配置文件：mkdir -p ~/.config/anthropic && echo "your-api-key" > ~/.config/anthropic/api_key
-
-获取API Key: https://console.anthropic.com/settings/keys
-"""
-    return False, config_guide
-
-
-def call_claude_api(prompt, max_retries=2):
-    """调用 Claude API 处理新闻选题
-
-    Args:
-        prompt: 提示词
-        max_retries: 最大重试次数
-
-    Returns:
-        API 返回的 JSON 字符串，失败返回 None
-    """
-    # 检查API Key配置并输出提示
-    is_configured, config_msg = check_api_key_config()
-    if not is_configured:
-        logger.info(config_msg)
-        return None
-    else:
-        logger.info(config_msg)
-
-    api_key = get_claude_api_key()
-
-    api_url = "https://api.anthropic.com/v1/messages"
-
-    headers = {
-        "x-api-key": api_key,
-        "Content-Type": "application/json",
-        "anthropic-version": "2023-06-01"
-    }
-
-    payload = {
-        "model": "claude-3-5-sonnet-20241022",
-        "max_tokens": 4000,
-        "temperature": 0.3,
-        "system": "你是一位资深科技媒体编辑，负责筛选和加工科技新闻选题。请严格按照用户要求的JSON格式返回结果，不要添加任何解释性文字。",
-        "messages": [
-            {"role": "user", "content": prompt}
-        ]
-    }
-
-    for attempt in range(max_retries):
-        try:
-            logger.info(f"[AI] 调用 Claude API (尝试 {attempt + 1}/{max_retries})...")
-            response = requests.post(
-                api_url,
-                headers=headers,
-                json=payload,
-                timeout=120
-            )
-
-            if response.status_code == 200:
-                data = response.json()
-                content = data.get("content", [])
-                if content:
-                    return content[0].get("text", "")
-                logger.warning("[AI] API 返回内容为空")
-            else:
-                logger.warning(f"[AI] API 请求失败: {response.status_code} - {response.text}")
-
-        except requests.exceptions.Timeout:
-            logger.warning(f"[AI] API 请求超时 (尝试 {attempt + 1}/{max_retries})")
-        except Exception as e:
-            logger.warning(f"[AI] API 请求出错: {e}")
-
-        if attempt < max_retries - 1:
-            time.sleep(2 ** attempt)  # 指数退避
-
-    return None
-
-
-def ai_process_items(items, enable_keyword_hint=True, auto_call_api=True):
-    """使用 AI 处理新闻选题
-
-    支持两种模式：
-    1. 自动 API 调用（如果配置了 API Key）
-    2. 本地模型模式（生成提示词供人工处理）
+    此函数生成处理指令和输入数据，由调用方（Claude Desktop等）直接处理
+    并返回处理结果，完全绕过API调用和文件IO。
 
     Args:
         items: 新闻列表
         enable_keyword_hint: 是否启用关键词预筛选提示
-        auto_call_api: 是否尝试自动调用 API
+
+    Returns:
+        (prompt, items_for_ai): 提示词和处理后的数据，供直接处理
     """
     if not items:
-        return []
+        return None, []
 
     # 准备输入数据
     items_for_ai = []
@@ -840,7 +1100,7 @@ def ai_process_items(items, enable_keyword_hint=True, auto_call_api=True):
 
 处理要求：
 
-1. **筛选选题**（S级/S-级/A级/B级）：
+1. **筛选选题**（S级/A+级/A级/B级）：
    - S级（90-100分）：真正的里程碑事件
      * AI大模型重大发布（GPT-5、Claude 4、Gemini 2等）
      * 马斯克/SpaceX/Neuralink重大动态
@@ -848,17 +1108,22 @@ def ai_process_items(items, enable_keyword_hint=True, auto_call_api=True):
      * 科技巨头重大战略调整或人事变动（CEO级别）
      * AGI相关重大进展或权威预测
      * 顶级AI研究者（如Karpathy、Hassabis）的重大开源项目
-   - S-级（85-89分）：重要但非里程碑
+     * **独家/首发重大新闻**（The Information、Bloomberg等权威媒体独家报道的突破性消息）
+     * **多源验证的重大突破**（被多个权威科技媒体同时报道的重要进展）
+   - A+级（85-89分）：重要但非里程碑（原S-级）
      * 重要产品更新（如GPT-4.5、Claude 3.5重大升级）
      * 重要技术突破（如解决FrontierMath难题）
      * 知名人物重要观点/专访
      * 大额融资（5亿美元以上）
+     * **独家报道的重要战略调整**（如The Information独家披露的产品路线图）
    - A级（75-84分）：
      * 科技巨头常规产品更新（OpenAI、Google、Microsoft、Meta等）
      * 国产大模型重要进展（DeepSeek、文心一言、通义千问等）
      * 开源项目爆款/Star数激增
      * 学术突破（arxiv重要论文）
      * 资本市场重大动态（IPO、中等规模融资）
+     * **多源报道的技术进展**（2个以上权威源报道的同一技术突破）
+     * **知名AI研究者转发或参与的项目**（Jeff Dean、Fei-Fei Li、Andrej Karpathy、Yann LeCun、Yoshua Bengio、Geoffrey Hinton、Ilya Sutskever等转发或参与的项目，尤其是种子轮/A轮融资、技术突破、开源项目）
    - B级（65-74分）：
      * 产品评测、体验报告
      * 技术解析、教程
@@ -869,6 +1134,12 @@ def ai_process_items(items, enable_keyword_hint=True, auto_call_api=True):
      * 消费电子日常更新
      * 营销软文
      * 个人观点/评论（非权威来源）
+
+   **评分加分项**：
+   - 独家/首发报道（标题含"Exclusive"、"独家"、"breaking"、"突发"、"首次"、"first look"、"just announced"、"刚刚发布"等）：+8分
+   - 战略合作/合资企业（"joint venture"、"合资企业"、"consulting venture"、"strategic partnership"、"战略合作"）：+8分
+   - 多源验证（同一新闻被2个以上权威源报道）：+5分
+   - 权威信源（The Information、Bloomberg、Reuters、TechCrunch、Wired、Nature、Science等）：+3分（单个）/+5分（多个）
 
 2. **生成量子位风格中文标题**：
    - 纯中文，无类型前缀
@@ -881,12 +1152,19 @@ def ai_process_items(items, enable_keyword_hint=True, auto_call_api=True):
      * 数据冲击型："数字 + 对比词 + 主体 + 结果"
      * 权威引语型："人物/公司 + ：+ 核心观点"
      * 颠覆型："颠覆/重新定义 + 领域 + 主体"
+   - **技术类新闻标题优化**（新增）：
+     * 突出核心技术突破点：参数规模（1T参数）、上下文长度（100万token）、推理速度（毫秒级延迟）、准确率提升（超越SOTA X%）
+     * 强调技术架构创新：MoE架构、Diffusion模型、Transformer改进、多模态融合等
+     * 量化技术成果：训练成本降低X%、推理效率提升X倍、能耗减少X%
+     * 示例："1T参数+100万上下文！OpenRouter隐身模型炸裂登场，专为Agent设计" → "1T参数+100万token！OpenRouter隐身模型刷新大模型纪录"
+     * 示例："Mercury扩散模型速度碾压Groq" → "Mercury扩散模型推理速度超Groq 2倍，延迟仅50ms"
    - 标题示例：
      * "刚刚！Andrej Karpathy开源AgentHub：专为AI Agent打造的GitHub"
      * "GPT-5.4 Pro数学推理炸裂！35分钟破解复杂迷宫"
      * "DeepMind CEO Hassabis：AlphaZero级AI可能在AGI之后出现"
      * "暴涨300%！Sora日活突破300万，OpenAI视频战略逆转"
      * "仅3%渗透率！Microsoft Copilot企业采用率远低于预期"
+     * "1T参数+100万token！OpenRouter隐身模型刷新大模型纪录"
 
 3. **生成一句话摘要**：
    - 50-100字
@@ -898,8 +1176,23 @@ def ai_process_items(items, enable_keyword_hint=True, auto_call_api=True):
 5. **识别核心实体**（2-5个）：
    - 公司/组织：如OpenAI、Google、DeepMind、NVIDIA
    - 产品/模型：如ChatGPT、Claude、Sora、Gemini
-   - 人物：如马斯克、Sam Altman、Demis Hassabis、Andrej Karpathy
+   - 人物：如Elon Musk、Sam Altman、Demis Hassabis、Andrej Karpathy
+     * **重要：人物必须使用完整名称**，如"Jack Dorsey"而非"Jack"，"Amjad Masad"而非"Amjad"
+     * 常见人物全称映射：Jack→Jack Dorsey, Amjad→Amjad Masad, Elon→Elon Musk, Sam→Sam Altman
    - 技术/概念：如AGI、Agent、RAG、量子计算
+   - **技术/架构类**（新增）：
+     * 模型架构：Transformer、MoE、Attention、Encoder-Decoder、Autoregressive
+     * 训练技术：RLHF、DPO、Fine-tuning、Pre-training、Distillation、Quantization
+     * 推理优化：Speculative Decoding、KV Cache、Flash Attention
+     * 学习方法：Chain-of-Thought、Few-shot、In-context Learning
+     * 模型类型：VLM、Diffusion Model、Flow Matching、GAN、VAE
+   - **新增实体识别**（2025-2026热点）：
+     * AI内核生成公司：Standard Kernel、Kernel Generation
+     * 空间智能/世界模型：World Labs（李飞飞公司）、Marble、Gaussian Splatting
+     * 新兴AI产品：WonderingApp（NotebookLM创始人新项目）、Lovart、Nano Banana
+     * AI Agent框架：MCP、Function Calling、Tool Use、Agent Protocol
+     * 具身智能公司：Figure AI、1X Technologies、Apptronik、Agility Robotics、Covariant、Physical Intelligence
+     * 国产AI：智谱AI、月之暗面/Moonshot、Kimi、MiniMax、零一万物/01.AI、百川智能
    - 事件：如IPO、收购、发布、开源
 
 6. **添加行业标签**（1-3个）：
@@ -934,35 +1227,8 @@ def ai_process_items(items, enable_keyword_hint=True, auto_call_api=True):
 
 """
 
-    logger.info(f"[AI] 准备处理 {len(items_for_ai)} 条新闻...")
-
-    # 尝试自动调用 API
-    if auto_call_api:
-        api_result = call_claude_api(prompt)
-        if api_result:
-            logger.info("[AI] API 调用成功，正在解析结果...")
-            # 保存 API 结果到文件
-            with open("twitter_ai_result.json", "w", encoding="utf-8") as f:
-                f.write(api_result)
-            logger.info("[AI] 结果已保存到 twitter_ai_result.json")
-            return "API_SUCCESS"
-
-    # 如果 API 调用失败或未启用，切换到本地模型模式
-    logger.info("[AI] 切换到本地模型模式")
-    logger.info("=" * 80)
-    logger.info("[操作指引] 本地模型处理步骤：")
-    logger.info("  1. 读取 twitter_ai_prompt.txt 文件（已自动生成）")
-    logger.info("  2. 将内容发送给本地模型（Claude/ChatGPT等）")
-    logger.info("  3. 将模型返回的 JSON 保存为 twitter_ai_result.json")
-    logger.info("  4. 再次运行此脚本完成处理")
-    logger.info("=" * 80)
-    logger.debug("[AI] 提示词内容已保存到 twitter_ai_prompt.txt")
-
-    # 保存提示词到文件，方便处理
-    with open("twitter_ai_prompt.txt", "w", encoding="utf-8") as f:
-        f.write(prompt)
-
-    return "NEEDS_LOCAL_PROCESSING"
+    # 返回提示词和数据，由调用方直接处理
+    return prompt, items_for_ai
 
 
 def load_ai_results():
@@ -981,11 +1247,33 @@ def load_ai_results():
 
         if data is None:
             logger.error("[AI] 无法解析结果文件，格式错误")
-            # 备份错误文件以便调试
-            error_file = f"{result_file}.error"
-            os.rename(result_file, error_file)
-            logger.info(f"[AI] 错误文件已备份: {error_file}")
-            return None
+            # 尝试使用中文引号修复工具
+            try:
+                import subprocess
+                result = subprocess.run(
+                    ["python3", "fix_chinese_quotes.py"],
+                    capture_output=True,
+                    text=True,
+                    timeout=10
+                )
+                if result.returncode == 0:
+                    # 修复成功，重新加载
+                    with open(result_file, "r", encoding="utf-8") as f:
+                        content = f.read()
+                    data = safe_json_loads(content, max_retries=1)
+                    if data is not None:
+                        logger.info("[AI] 通过修复工具成功解析结果文件")
+                else:
+                    logger.warning(f"[AI] 修复工具执行失败: {result.stderr}")
+            except Exception as fix_e:
+                logger.warning(f"[AI] 尝试修复失败: {fix_e}")
+
+            if data is None:
+                # 备份错误文件以便调试
+                error_file = f"{result_file}.error"
+                os.rename(result_file, error_file)
+                logger.info(f"[AI] 错误文件已备份: {error_file}")
+                return None
 
         # 验证数据结构
         if not isinstance(data, dict):
@@ -1042,9 +1330,85 @@ def calculate_similarity(s1, s2):
 
 
 def extract_core_entities(text):
-    """提取文本中的核心实体（公司、产品、技术、人名等）"""
+    """提取文本中的核心实体（公司、产品、技术/架构、人名等）
+
+    改进：增加技术/架构类实体识别，新增裁员/医疗AI相关实体，新增人物全称映射
+    """
     if not text:
         return set()
+
+    # 人物全称映射表（避免只识别部分名字）
+    PERSON_FULL_NAMES = {
+        # Jack Dorsey 相关
+        'jack': 'Jack Dorsey',
+        'jack dorsey': 'Jack Dorsey',
+        '@jack': 'Jack Dorsey',
+        # Elon Musk 相关
+        'elon': 'Elon Musk',
+        'musk': 'Elon Musk',
+        'elon musk': 'Elon Musk',
+        '@elonmusk': 'Elon Musk',
+        # Sam Altman 相关
+        'sam': 'Sam Altman',
+        'altman': 'Sam Altman',
+        'sam altman': 'Sam Altman',
+        '@sama': 'Sam Altman',
+        # Amjad Masad 相关
+        'amjad': 'Amjad Masad',
+        'amasad': 'Amjad Masad',
+        'amjad masad': 'Amjad Masad',
+        '@amasad': 'Amjad Masad',
+        # Jeff Dean 相关
+        'jeff dean': 'Jeff Dean',
+        # Demis Hassabis 相关
+        'hassabis': 'Demis Hassabis',
+        'demis hassabis': 'Demis Hassabis',
+        # Andrej Karpathy 相关
+        'karpathy': 'Andrej Karpathy',
+        'andrej karpathy': 'Andrej Karpathy',
+        # Yann LeCun 相关
+        'lecun': 'Yann LeCun',
+        'yann lecun': 'Yann LeCun',
+        '@ylecun': 'Yann LeCun',
+        # Fei-Fei Li 相关
+        'fei-fei li': 'Fei-Fei Li',
+        'fei fei li': 'Fei-Fei Li',
+        '李飞飞': 'Fei-Fei Li',
+        # Ilya Sutskever 相关
+        'ilya': 'Ilya Sutskever',
+        'sutskever': 'Ilya Sutskever',
+        'ilya sutskever': 'Ilya Sutskever',
+        # Scott Wu 相关
+        'scott wu': 'Scott Wu',
+        # Paul Graham 相关
+        'paul graham': 'Paul Graham',
+        'pg': 'Paul Graham',
+        '@paulg': 'Paul Graham',
+        # Jensen Huang 相关
+        'jensen huang': 'Jensen Huang',
+        '黄仁勋': 'Jensen Huang',
+        'huang': 'Jensen Huang',
+        # Sundar Pichai 相关
+        'sundar pichai': 'Sundar Pichai',
+        'pichai': 'Sundar Pichai',
+        # Satya Nadella 相关
+        'satya nadella': 'Satya Nadella',
+        'nadella': 'Satya Nadella',
+        # Mark Zuckerberg 相关
+        'mark zuckerberg': 'Mark Zuckerberg',
+        'zuckerberg': 'Mark Zuckerberg',
+        # Tim Cook 相关
+        'tim cook': 'Tim Cook',
+        # Dario Amodei 相关
+        'dario amodei': 'Dario Amodei',
+        'amodei': 'Dario Amodei',
+        # Geoffrey Hinton 相关
+        'geoffrey hinton': 'Geoffrey Hinton',
+        'hinton': 'Geoffrey Hinton',
+        # Yoshua Bengio 相关
+        'yoshua bengio': 'Yoshua Bengio',
+        'bengio': 'Yoshua Bengio',
+    }
 
     # 常见科技实体关键词库
     tech_entities = {
@@ -1055,21 +1419,115 @@ def extract_core_entities(text):
         # 产品/模型
         "chatgpt", "gpt", "gpt-4", "gpt-4o", "gpt-5", "claude", "gemini", "llama",
         "dalle", "sora", "midjourney", "stable", "diffusion", "copilot", "cursor",
-        # 技术
+        # 基础技术/架构
         "llm", "ai", "agi", "agent", "rag", "mcp", "transformer", "diffusion",
         "quantum", "chip", "gpu", "cuda", "neural", "training", "inference",
-        # 人物
-        "altman", "musk", "elon", "hassabis", "amodei", "ilya", "karpathy",
+        # 技术/架构类实体
+        "moe", "mixture of experts", "attention", "self-attention", "multi-head attention",
+        "encoder", "decoder", "encoder-decoder", "autoregressive", "bidirectional",
+        "embedding", "token", "tokenization", "vector", "latent", "latent space",
+        "fine-tuning", "pre-training", "post-training", "rlhf", "dpo", "ppo",
+        "distillation", "quantization", "pruning", "compression",
+        "context window", "long context", "infinite context", "kv cache",
+        "prompt", "prompt engineering", "chain of thought", "cot", "few-shot", "zero-shot",
+        "hallucination", "alignment", "safety", "guardrails",
+        "function calling", "tool use", "tool calling", "api calling",
+        "multimodal", "vision", "vlm", "speech", "tts", "asr", "stt",
+        "diffusion model", "flow matching", "consistency model", "gflow",
+        "vae", "gan", "normalizing flow", "energy-based model",
+        "slm", "small language model", "olmoe", "switch transformer",
+        "speculative decoding", "lookahead decoding", "flash attention",
+        "lora", "qlora", "adapter", "peft", "parameter efficient",
+        "synthetic data", "data augmentation", "curriculum learning",
+        "test-time compute", "inference-time compute", "scaling law",
+        # AI内核生成/空间智能/具身智能实体（2025-2026热点）
+        "standard kernel", "kernel generation", "neural kernel",
+        "world labs", "marble", "gaussian splatting", "3d gaussian",
+        "spatial intelligence", "world model",
+        "wonderingapp", "lovart", "nano banana", "notebooklm",
+        "mcp", "model context protocol", "agent protocol",
+        "figure ai", "1x technologies", "apptronik", "agility robotics",
+        "covariant", "physical intelligence", "pi robotics",
+        "digit", "apollo", "optimus", "tesla bot",
+        "智谱", "zhipu", "月之暗面", "moonshot", "kimi", "minimax",
+        "零一万物", "01.ai", "百川智能", "baichuan",
+        # 新增：裁员/就业相关公司/实体
+        "block", "square", "cash app", "jack dorsey",
+        "oracle", "database", "oci", "aws", "azure", "gcp",
+        "workforce", "layoff", "裁员", "restructuring",
+        # 新增：医疗/生物科技AI实体
+        "google health", "deepmind health", "alphafold", "isomorphic labs",
+        "recursion", "insitro", "exscientia", "atomwise",
+        "cancer research", "cancer detection", "cancer screening",
+        "fda", "clinical trial", "drug discovery",
+        "medical imaging", "radiology", "pathology",
+        "genomics", "proteomics", "crispr", "gene therapy",
+        "nhs", "imperial college", "nature cancer", "nature medicine",
+        "cell", "science", "nejm", "thelancet",
+        # 新增：更多机器人/具身智能公司
+        "unitree", "宇树科技", "go2", "b2", "h1",
+        "智元机器人", "agibot", "远征", "远征a1", "远征a2",
+        "傅利叶智能", "fourier", "gr-1", "gr-2",
+        "达闼", "cloudminds", "优必选", "ubtech", "walker",
+        "星动纪元", "limx dynamics", "逐际动力", "limx",
+        "银河通用", "galaxea", "星尘智能", "stardust",
+        "众擎", "engineai", "pm01", "sa01",
+        # 新增：AI编程/Agent框架实体
+        "replit", "amjad masad", "ghostwriter",
+        "sourcegraph", "cody", "tabnine", "codeium",
+        "poolside", "magic", "cognition", "cognition labs", "devin",
+        "sweep", "mentat", "aider", "continue", "supermaven",
+        "v0", "vercel", "bolt", "lovable", "tempo",
+        "dimensional", "openclaw", "stash", "physical agent",
+        # 新增：更多AI模型/产品
+        "nemotron", "nvidia nemotron", "nemotron 3", "nemotron 4", "nemotron 3 super",
+        "phi", "phi-4", "phi-3", "microsoft phi",
+        "mistral", "mixtral", "pixtral", "codestral",
+        "command r", "command r+", "cohere",
+        "jamba", "ai21", "jurassic",
+        "pangu", "盘古", "文心", "ernie", "通义", "qwen", "kimi k1.5",
+        "step", "阶跃", "abab", "spark", "讯飞", "iflytek",
+        # 新增：AI基础设施/云服务
+        "together ai", "fireworks", "replicate", "baseten", "modal",
+        "anyscale", "ray", "vllm", "tensorrt", "triton",
+        "huggingface", "hf", "transformers", "datasets",
+        "weights & biases", "wandb", "mlflow", "langsmith",
+        # 新增：更多重要人物（包含简称和全称，简称用于匹配，全称通过映射表转换）
+        # 简称（用于匹配）
+        "jack", "amjad", "sam", "elon", "musk", "altman", "hassabis", "amodei", "ilya", "karpathy",
+        "pg", "sutskever", "bengio", "hinton", "lecun", "huang", "pichai", "nadella",
+        "zuckerberg", "cook", "bezos", "bezos",
+        # 全称（也用于匹配）
+        "jack dorsey", "block ceo", "amjad masad", "replit ceo",
+        "sam altman", "elon musk",
+        "jeff dean", "fei-fei li", "李飞飞", "yann lecun", "yoshua bengio",
+        "geoffrey hinton", "ilya sutskever",
+        "jensen huang", "黄仁勋", "sundar pichai", "satya nadella",
+        "mark zuckerberg", "tim cook", "jeff bezos",
+        "scott wu", "cognition ceo", "founder",
+        "paul graham", "y combinator", "yc",
+        " Naval Ravikant", "balaji srinivasan", "patrick collision", "stripe",
     }
 
     text_lower = text.lower()
     found = set()
 
+    # 第一步：匹配所有科技实体
     for entity in tech_entities:
         if entity in text_lower:
             found.add(entity)
 
-    return found
+    # 第二步：应用人物全称映射（确保识别完整人名而非简称）
+    normalized_found = set()
+    for entity in found:
+        entity_lower = entity.lower()
+        # 检查是否是人物简称，如果是则替换为全称
+        if entity_lower in PERSON_FULL_NAMES:
+            normalized_found.add(PERSON_FULL_NAMES[entity_lower])
+        else:
+            normalized_found.add(entity)
+
+    return normalized_found
 
 
 def is_same_event(item1, item2):
@@ -1250,26 +1708,36 @@ def push_to_github():
 
 # ==================== 主流程 ====================
 
-def process_with_ai(items):
-    """处理新闻：筛选 + 生成标题/摘要/类型"""
+def process_with_ai(items, direct_mode=True):
+    """处理新闻：筛选 + 生成标题/摘要/类型
+
+    Args:
+        items: 新闻列表
+        direct_mode: 是否启用直接调用模式（默认True，直接使用本地模型）
+    """
     # 第一步：AI 批量处理
     logger.info(f"[AI] 开始处理 {len(items)} 条新闻...")
 
-    # 检查是否有本地处理结果
+    # 检查是否有本地处理结果（用于兼容旧模式）
     ai_results = load_ai_results()
-    if ai_results is None:
-        # 需要 AI 处理
-        result = ai_process_items(items, auto_call_api=True)
-        if result == "API_SUCCESS":
-            # API 调用成功，重新加载结果
-            ai_results = load_ai_results()
-            if ai_results is None:
-                logger.error("[AI] API 调用成功但无法加载结果")
-                return []
-        elif result == "NEEDS_LOCAL_PROCESSING":
-            return "NEEDS_LOCAL_PROCESSING"
-        else:
-            return []
+    if ai_results is not None:
+        logger.info(f"[AI] 加载到已存在的本地处理结果: {len(ai_results)} 条")
+    elif direct_mode:
+        # 直接模式：生成提示词和数据，由调用方处理
+        logger.info("[AI] 使用直接处理模式（本地模型）")
+        prompt, items_for_ai = ai_process_items_direct(items)
+
+        # 保存提示词到文件（方便调试和手动处理）
+        with open("twitter_ai_prompt.txt", "w", encoding="utf-8") as f:
+            f.write(prompt + "\n\n输入新闻：\n" + json.dumps(items_for_ai, ensure_ascii=False, indent=2))
+        logger.info("[AI] 提示词已保存到 twitter_ai_prompt.txt")
+
+        # 返回特殊标记，表示需要外部处理
+        return "NEEDS_LOCAL_PROCESSING"
+    else:
+        # 兼容旧模式：尝试API调用
+        logger.info("[AI] 使用API模式（已废弃，建议改用直接模式）")
+        return "NEEDS_LOCAL_PROCESSING"
 
     logger.info(f"[AI] 返回 {len(ai_results)} 条处理结果")
 
@@ -1462,6 +1930,83 @@ def check_rss_health():
     return health_info
 
 
+def check_and_process_ai_result():
+    """
+    检查是否存在AI结果文件，如果存在则直接进入合并流程
+
+    Returns:
+        (processed, message): 是否处理了AI结果，以及处理消息
+    """
+    result_file = "twitter_ai_result.json"
+    if not os.path.exists(result_file):
+        return False, "无AI结果文件"
+
+    logger.info("=" * 60)
+    logger.info("【自动合并模式】检测到AI结果文件，直接进入合并流程")
+    logger.info("=" * 60)
+
+    try:
+        # 加载AI结果
+        ai_results = load_ai_results()
+        if ai_results is None:
+            return False, "AI结果文件加载失败"
+
+        # 构建processed_items（简化版，使用AI结果中的信息）
+        processed = []
+        for result in ai_results:
+            level = result.get("level", "B")
+            score = result.get("score", 60)
+
+            processed.append({
+                "title": result.get("title", ""),
+                "title_en": "",  # 自动合并模式下可能没有原始标题
+                "summary": result.get("summary", "点击链接查看详情"),
+                "type": result.get("type", "tech"),
+                "typeName": ai_detect_type_name(result.get("type", "tech")),
+                "score": score,
+                "level": level,
+                "reason": f"【{level}级】评分{score}分 | {result.get('reason', '')}",
+                "entities": result.get("entities", [])[:5],
+                "tags": result.get("tags", [])[:5],
+                "url": "",  # 自动合并模式下可能没有URL
+                "source": "AI",
+                "sources": 1,
+                "sourceLinks": [],
+                "timestamp": int(time.time()),
+                "version": generate_version(),
+                "priority_score": 0,
+            })
+
+        # 按分数排序
+        processed.sort(key=lambda x: x["score"], reverse=True)
+
+        logger.info(f"[自动合并] 加载 {len(processed)} 条AI处理结果")
+
+        # 加载当日已有新闻并合并
+        today, existing_news = load_existing_news()
+        final_news = merge_with_existing(processed, existing_news)
+
+        # 保存数据
+        save_success = save_news(today, final_news)
+
+        if save_success:
+            # 推送到 GitHub
+            logger.info("\n[GitHub] 开始推送...")
+            push_to_github()
+
+            # 生成报告
+            timing = {"start": time.time()}
+            generate_report(final_news, timing)
+
+            return True, f"成功合并 {len(processed)} 条AI处理结果"
+
+        return False, "保存数据失败"
+
+    except Exception as e:
+        logger.error(f"[自动合并] 处理失败: {e}")
+        return False, f"处理失败: {e}"
+
+
 def main():
     # 检查 Python 版本
     check_python_version()
@@ -1481,6 +2026,14 @@ def main():
     logger.info("=" * 60)
     logger.info("开始 Twitter RSS 新闻选题更新...")
     logger.info("=" * 60)
+
+    # 【新增】检查是否存在AI结果文件，如果存在则直接进入合并流程
+    auto_processed, auto_message = check_and_process_ai_result()
+    if auto_processed:
+        logger.info(f"[启动] 自动合并完成: {auto_message}")
+        return
+    else:
+        logger.info(f"[启动] {auto_message}，继续正常流程")
 
     # 加载已处理的推文ID
     processed_ids = load_processed_ids()
@@ -1541,9 +2094,53 @@ def main():
     logger.info(f"[预筛选] 保留 {len(filtered_items)} 条新闻进入AI处理")
     logger.info("-" * 40)
 
-    # 5. AI 处理（本地模型）
+    # 5. 批处理累积逻辑
+    # 检查是否强制处理（环境变量或队列超时）
+    force_process = os.environ.get("FORCE_PROCESS", "false").lower() == "true"
+    queue = load_batch_queue()
+
+    if not force_process and len(filtered_items) < BATCH_MIN_THRESHOLD:
+        # 新内容不足阈值，加入队列并报告
+        added, total = add_to_batch_queue(filtered_items)
+        logger.info(f"[批处理] 新内容 {added} 条（共 {total} 条）已加入队列，等待累积到 {BATCH_MIN_THRESHOLD} 条")
+
+        # 报告待处理内容
+        report_pending_items(load_batch_queue())
+
+        # 更新已处理的推文ID缓存
+        for item in filtered_items:
+            tweet_id = extract_tweet_id(item.get("url", ""))
+            if tweet_id:
+                processed_ids.add(tweet_id)
+        save_processed_ids(processed_ids)
+
+        logger.info("[批处理] 本次执行结束，等待累积更多内容")
+        return
+
+    # 检查队列是否需要强制处理（超过最大保留时间）
+    if should_force_process(queue):
+        logger.info(f"[批处理] 队列内容已超过 {BATCH_MAX_AGE_HOURS} 小时，强制处理")
+        force_process = True
+
+    # 合并队列中的内容和当前新内容
+    if force_process or len(filtered_items) >= BATCH_MIN_THRESHOLD:
+        queued_items = get_batch_queue_for_processing()
+        if queued_items:
+            logger.info(f"[批处理] 合并队列中的 {len(queued_items)} 条内容与当前 {len(filtered_items)} 条")
+            # 去重合并
+            existing_urls = {item.get("url", "") for item in filtered_items}
+            for item in queued_items:
+                if item.get("url", "") not in existing_urls:
+                    filtered_items.append(item)
+                    existing_urls.add(item["url"])
+            logger.info(f"[批处理] 合并后共 {len(filtered_items)} 条内容待处理")
+
+    # 6. AI 处理（本地模型，默认直接模式）
     t0 = time.time()
-    processed = process_with_ai(filtered_items)
+    # 默认使用直接处理模式，无需API配置
+    # 如需强制使用旧模式，可设置环境变量 AI_DIRECT_MODE=false
+    direct_mode = os.environ.get("AI_DIRECT_MODE", "true").lower() == "true"
+    processed = process_with_ai(filtered_items, direct_mode=direct_mode)
     timing["ai_process"] = time.time() - t0
 
     if processed == "NEEDS_LOCAL_PROCESSING":
@@ -1602,8 +2199,9 @@ def generate_report(final_news, timing):
         elapsed = time.time() - timing
         timing_details = {}
 
-    # 分级统计
+    # 分级统计（支持新的A+级）
     s_count = len([t for t in final_news if t["level"] == "S"])
+    a_plus_count = len([t for t in final_news if t["level"] == "A+"])
     a_count = len([t for t in final_news if t["level"] == "A"])
     b_count = len([t for t in final_news if t["level"] == "B"])
     c_count = len([t for t in final_news if t["level"] == "C"])
@@ -1639,6 +2237,7 @@ def generate_report(final_news, timing):
 
     logger.info("\n【选题统计】")
     logger.info(f"  S级(必报): {s_count} 条")
+    logger.info(f"  A+级(重要): {a_plus_count} 条")
     logger.info(f"  A级(优先): {a_count} 条")
     logger.info(f"  B级(可选): {b_count} 条")
     logger.info(f"  C级(参考): {c_count} 条")

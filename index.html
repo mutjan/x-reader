@@ -566,7 +566,7 @@
         // ==================== 全局状态 ====================
         let currentTab = 'news';
         let currentDate = '';
-        let currentSort = { field: null, order: 'desc' };
+        let currentSort = { field: 'time', order: 'desc' };
         let filteredType = null;
         let selectedItems = new Set();
 
@@ -607,7 +607,7 @@
 
         function selectDate(date) {
             currentDate = date;
-            currentSort = { field: null, order: 'desc' };
+            currentSort = { field: 'time', order: 'desc' };
             filteredType = null;
             selectedItems.clear();
             updateSortButtons();
@@ -641,7 +641,7 @@
         }
 
         function resetSort() {
-            currentSort = { field: null, order: 'desc' };
+            currentSort = { field: 'time', order: 'desc' };
             filteredType = null;
             updateSortButtons();
             renderNews();
@@ -680,11 +680,13 @@
                 });
             } else if (currentSort.field === 'sources') {
                 result.sort((a, b) => currentSort.order === 'asc' ? a.sources - b.sources : b.sources - a.sources);
-            } else if (currentSort.field === 'time') {
+            } else if (currentSort.field === 'time' || !currentSort.field) {
+                // 默认按时间排序（最新的在上面）
                 result.sort((a, b) => {
                     const timeA = a.timestamp || 0;
                     const timeB = b.timestamp || 0;
-                    return currentSort.order === 'asc' ? timeA - timeB : timeB - timeA;
+                    const order = currentSort.field === 'time' ? currentSort.order : 'desc';
+                    return order === 'asc' ? timeA - timeB : timeB - timeA;
                 });
             }
             return result;
