@@ -1,40 +1,80 @@
 你是一位资深科技媒体编辑，负责筛选和加工科技新闻选题。
 
+【关键词预筛选提示】以下6条新闻已通过预筛选进入AI处理阶段（基于科技关键词匹配和优先级评分），请对全部新闻进行批量评估：
+  新闻#0: 匹配关键词 ['xai', 'elon musk', 'musk'] (优先级37分)
+  新闻#1: 匹配关键词 ['agent', 'agents', 'cursor'] (优先级30分)
+  新闻#2: 匹配关键词 ['claude', 'mcp'] (优先级20分)
+  新闻#3: 匹配关键词 ['gemini'] (优先级15分)
+(共6条新闻，以上显示其中4条高优先级示例)
+
 请对以下新闻进行批量处理，返回 JSON 格式结果：
 
 输入新闻：
 [
   {
     "index": 0,
-    "title": "RT Mario Zechner: great, now the entire internet knows i'm old and fat and have looney toons hair. god damn you, peter! gonna make you do an ad-hoc ta...",
-    "content": "RT Mario Zechner<br>great, now the entire internet knows i'm old and fat and have looney toons hair. god damn you, peter! gonna make you do an ad-hoc talk as punishment.<div class=\"rsshub-quote\"><br><br>Peter Steinberger 🦞: At AI Engineer London, watching legend @badlogicgames talking about pi, the component that drives all the claws! https://pi.dev<br><br><img width=\"2048\" height=\"1536\" style=\"\" src=\"https://pbs.twimg.com/media/HDO9GPIbQAIbdk4?format=jpg&amp;name=orig\" referrerpolicy=\"no-referr",
-    "source": "swyx",
-    "url": "https://x.com/swyx/status/2032308564111552682",
+    "title": "RT Ethan He: Personal story: I applied to xAI in 2023 when it was founded and got rejected after an interview round. I went back to honing my skills. ...",
+    "content": "RT Ethan He<br>Personal story: I applied to xAI in 2023 when it was founded and got rejected after an interview round. I went back to honing my skills. In 2025, xAI reached out to me, and I was fortunate to get an offer.<br><br>Now, 8 months in, I can confidently say: this is the best place to do your life’s work. Talented people thrive and shine here.<br><br>Join us to understand the universe 🚀<div class=\"rsshub-quote\"><br><br>Elon Musk: Many talented people over the past few years were decline",
+    "source": "NIK",
+    "url": "https://x.com/ns123abc/status/2032367166629032162",
     "keywords_matched": [
-      "ai engineer",
-      "pi"
+      "xai",
+      "elon musk",
+      "musk",
+      "cline"
     ],
-    "priority_score": 10
+    "priority_score": 37
   },
   {
     "index": 1,
-    "title": "RT Sarah Sachs: Got to talk all things custom agents, software factory, fine tuning, and some deep Notion archeology with squad at @latentspacepod Sta...",
-    "content": "RT Sarah Sachs<br>Got to talk all things custom agents, software factory, fine tuning, and some deep Notion archeology with squad at @latentspacepod   Stay tuned!<br><img width=\"1536\" height=\"2048\" style=\"\" src=\"https://pbs.twimg.com/media/HDQ49e5awAAJwtK?format=jpg&amp;name=orig\" referrerpolicy=\"no-referrer\">",
-    "source": "swyx",
-    "url": "https://x.com/swyx/status/2032320568700363172",
+    "title": "RT ThePrimeagen: i am using supermaven again and i have something to say about this whole AI thing. I think as a group (swe) we rushed so fast into Ag...",
+    "content": "RT ThePrimeagen<br>i am using supermaven again and i have something to say about this whole AI thing.<br><br>I think as a group (swe) we rushed so fast into Agents when inline autocomplete + actual skills is crazy.  A good autocomplete that is fast like supermaven actually makes marked proficiency gains, while saving me from cognitive debt that comes from agents.<br><br>With agents you reach a point where you must fully rely on their output and your grip on the codebase slips.  Its insane how go",
+    "source": "Jeremy Howard",
+    "url": "https://x.com/jeremyphoward/status/2032283917425025534",
     "keywords_matched": [
       "agent",
       "agents",
-      "[军事-降权]"
+      "cursor",
+      "cursor"
     ],
-    "priority_score": 0
+    "priority_score": 30
   },
   {
     "index": 2,
-    "title": "RT Guillermo Rauch: New http://tbpn.com live on ▲. TBPN is one of the coolest things in tech!",
-    "content": "RT Guillermo Rauch<br>New http://tbpn.com live on ▲. TBPN is one of the coolest things in tech!<br><img width=\"2048\" height=\"1366\" style=\"\" src=\"https://pbs.twimg.com/media/HDQCl6SbQAQN45W?format=jpg&amp;name=orig\" referrerpolicy=\"no-referrer\">",
-    "source": "TBPN",
-    "url": "https://x.com/tbpn/status/2032310973952917910"
+    "title": "RT Timothy B. Lee: The backlash against MCP isn't a surprise for readers of Understanding AI. @startupandrew predicted it in December.",
+    "content": "RT Timothy B. Lee<br>The backlash against MCP isn't a surprise for readers of Understanding AI. @startupandrew predicted it in December.<br><img width=\"1506\" height=\"780\" style=\"\" src=\"https://pbs.twimg.com/media/HDNhN1uXAAAELzZ?format=png&amp;name=orig\" referrerpolicy=\"no-referrer\"><div class=\"rsshub-quote\"><br><br>Garry Tan: MCP sucks honestly<br><br>It eats too much context window and you have to toggle it on and off and the auth sucks<br><br>I got sick of Claude in Chrome via MCP and vibe co",
+    "source": "Jeremy Howard",
+    "url": "https://x.com/jeremyphoward/status/2032282423170584710",
+    "keywords_matched": [
+      "claude",
+      "mcp"
+    ],
+    "priority_score": 20
+  },
+  {
+    "index": 3,
+    "title": "RT Google: Today @GoogleMaps is getting its biggest upgrade in over a decade. By combining our Gemini models with a deep understanding of the world, M...",
+    "content": "RT Google<br>Today @GoogleMaps is getting its biggest upgrade in over a decade. By combining our Gemini models with a deep understanding of the world, Maps now unlocks entirely new possibilities for how you navigate and explore. Here’s what you need to know 🧵<br><video width=\"1080\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2032076696267186176/vid/avc1/1080x1080/B-om8-1r8xyrZvr4.mp4?tag=21\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/2032076696267186176/im",
+    "source": "Demis Hassabis",
+    "url": "https://x.com/demishassabis/status/2032250331359289449",
+    "keywords_matched": [
+      "gemini"
+    ],
+    "priority_score": 15
+  },
+  {
+    "index": 4,
+    "title": "My hobby is reading patents.",
+    "content": "My hobby is reading patents.<div class=\"rsshub-quote\"><br><br>SETI Park: http://x.com/i/article/2032296706243772416<br></div>",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2032368375796760856"
+  },
+  {
+    "index": 5,
+    "title": "RT gfodor.id: Finally listened to the Dario interview and it blows my mind how his entire worldview around AI seems to be predicated on an assumption ...",
+    "content": "RT gfodor.id<br>Finally listened to the Dario interview and it blows my mind how his entire worldview around AI seems to be predicated on an assumption nobody is going to YOLO upload a tarball of frontier model weights to the Internet.",
+    "source": "Peter Steinberger 🦞",
+    "url": "https://x.com/steipete/status/2032204444616577276"
   }
 ]
 

@@ -68,6 +68,21 @@ PROCESSED_IDS_FILE = ".processed_ids.json"
 MAX_CACHED_IDS = 5000
 GITHUB_BRANCH = "main"
 
+# AI 处理文件配置（按数据源区分）
+def get_ai_files(source="default"):
+    """获取 AI 处理相关文件路径（按数据源区分）"""
+    source_prefix = source if source else "default"
+    return {
+        "prompt": f"{source_prefix}_ai_prompt.txt",
+        "result": f"{source_prefix}_ai_result.json",
+        "lock": f"{source_prefix}_ai_processing.lock",
+        "backup": f"{source_prefix}_ai_result.json.processed",
+        "cache": f"{source_prefix}_ai_cache.json",
+    }
+
+# 默认批量大小
+DEFAULT_BATCH_SIZE = 30
+
 # ==================== JSON 安全处理（增强版） ====================
 
 def sanitize_json_string(text):
@@ -344,6 +359,232 @@ PRIORITY_KEYWORDS = {
 ALL_PRIORITY_KEYWORDS = []
 for category, keywords in PRIORITY_KEYWORDS.items():
     ALL_PRIORITY_KEYWORDS.extend(keywords)
+
+
+# ==================== 文件锁定机制 ====================
+
+import fcntl
+
+def acquire_lock(lock_file, timeout=5):
+    """获取文件锁，防止并发处理"""
+    try:
+        fd = open(lock_file, "w")
+        fcntl.flock(fd.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        fd.write(str(os.getpid()))
+        fd.flush()
+        return fd
+    except (IOError, OSError):
+        logger.warning(f"[锁定] 无法获取锁，可能已有进程在处理: {lock_file}")
+        return None
+
+def release_lock(fd):
+    """释放文件锁"""
+    if fd:
+        try:
+            fcntl.flock(fd.fileno(), fcntl.LOCK_UN)
+            fd.close()
+        except Exception as e:
+            logger.warning(f"[锁定] 释放锁失败: {e}")
+
+
+def check_processing_state(source="default"):
+    """检查是否有正在进行的处理任务"""
+    files = get_ai_files(source)
+    lock_file = files["lock"]
+    result_file = files["result"]
+    prompt_file = files["prompt"]
+
+    # 检查是否有锁文件
+    if os.path.exists(lock_file):
+        try:
+            with open(lock_file, "r") as f:
+                pid = f.read().strip()
+            # 检查进程是否还在运行
+            if pid and os.path.exists(f"/proc/{pid}"):
+                logger.warning(f"[恢复] 检测到正在进行的处理 (PID: {pid})")
+                return "running", files
+            else:
+                logger.info(f"[恢复] 发现残留锁文件，进程已结束")
+                os.remove(lock_file)
+        except Exception:
+            pass
+
+    # 检查是否有未处理的结果文件
+    if os.path.exists(result_file):
+        logger.info(f"[恢复] 发现未处理的结果文件: {result_file}")
+        return "result_pending", files
+
+    # 检查是否有 prompt 文件但没有结果
+    if os.path.exists(prompt_file):
+        logger.info(f"[恢复] 发现未处理的 prompt 文件: {prompt_file}")
+        return "prompt_pending", files
+
+    return "idle", files
+
+
+def cleanup_processing_files(source="default"):
+    """清理处理相关的临时文件"""
+    files = get_ai_files(source)
+    for key in ["lock", "prompt"]:
+        filepath = files[key]
+        if os.path.exists(filepath):
+            try:
+                os.remove(filepath)
+                logger.info(f"[清理] 已删除: {filepath}")
+            except Exception as e:
+                logger.warning(f"[清理] 删除失败 {filepath}: {e}")
+
+
+# ==================== AI 结果缓存 ====================
+
+def get_cache_key(item):
+    """生成新闻条目的缓存键"""
+    content = f"{item.get('title', '')}_{item.get('url', '')}"
+    import hashlib
+    return hashlib.md5(content.encode()).hexdigest()[:16]
+
+
+def load_ai_cache(source="default"):
+    """加载 AI 处理结果缓存"""
+    files = get_ai_files(source)
+    cache_file = files["cache"]
+
+    if not os.path.exists(cache_file):
+        return {}
+
+    try:
+        with open(cache_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        logger.warning(f"[缓存] 加载缓存失败: {e}")
+        return {}
+
+
+def save_ai_cache(cache, source="default"):
+    """保存 AI 处理结果缓存"""
+    files = get_ai_files(source)
+    cache_file = files["cache"]
+
+    try:
+        # 只保留最近100条缓存
+        if len(cache) > 100:
+            # 按时间戳排序，保留最新的
+            sorted_items = sorted(cache.items(), key=lambda x: x[1].get("_cached_at", 0), reverse=True)
+            cache = dict(sorted_items[:100])
+
+        with open(cache_file, "w", encoding="utf-8") as f:
+            json.dump(cache, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logger.warning(f"[缓存] 保存缓存失败: {e}")
+
+
+def get_cached_result(item, cache):
+    """从缓存获取处理结果"""
+    key = get_cache_key(item)
+    if key in cache:
+        cached = cache[key]
+        # 检查缓存是否过期（7天）
+        if time.time() - cached.get("_cached_at", 0) < 7 * 24 * 3600:
+            logger.debug(f"[缓存] 命中: {item.get('title', '')[:30]}...")
+            return cached.get("result")
+    return None
+
+
+def cache_result(item, result, cache):
+    """缓存处理结果"""
+    key = get_cache_key(item)
+    cache[key] = {
+        "_cached_at": int(time.time()),
+        "result": result
+    }
+
+
+# ==================== 实体标准化 ====================
+
+def normalize_entities(entities):
+    """标准化实体列表：统一大小写、去重、过滤"""
+    if not entities:
+        return []
+
+    # 标准化映射表（常见实体）
+    entity_mapping = {
+        # 公司
+        "openai": "OpenAI",
+        "OPENAI": "OpenAI",
+        "anthropic": "Anthropic",
+        "deepmind": "DeepMind",
+        "google": "Google",
+        "meta": "Meta",
+        "microsoft": "Microsoft",
+        "nvidia": "NVIDIA",
+        "tesla": "Tesla",
+        "spacex": "SpaceX",
+        "xai": "xAI",
+        "grok": "Grok",
+        "chatgpt": "ChatGPT",
+        "claude": "Claude",
+        "gemini": "Gemini",
+        "deepseek": "DeepSeek",
+        "cursor": "Cursor",
+        "github": "GitHub",
+        "vercel": "Vercel",
+
+        # 人物
+        "elon musk": "Elon Musk",
+        "musk": "Elon Musk",
+        "sam altman": "Sam Altman",
+        "altman": "Sam Altman",
+        "sundar pichai": "Sundar Pichai",
+        "satya nadella": "Satya Nadella",
+        "tim cook": "Tim Cook",
+        "mark zuckerberg": "Mark Zuckerberg",
+        "zuckerberg": "Mark Zuckerberg",
+        "demis hassabis": "Demis Hassabis",
+        "hassabis": "Demis Hassabis",
+        "ilya sutskever": "Ilya Sutskever",
+        "andrej karpathy": "Andrej Karpathy",
+        "karpathy": "Andrej Karpathy",
+        "dario amodei": "Dario Amodei",
+        "fei-fei li": "李飞飞",
+        "jensen huang": "Jensen Huang",
+        "黄仁勋": "Jensen Huang",
+
+        # 技术/产品
+        "gpt-4": "GPT-4",
+        "gpt-5": "GPT-5",
+        "gpt4": "GPT-4",
+        "gpt5": "GPT-5",
+        "llm": "LLM",
+        "ai": "AI",
+        "agi": "AGI",
+        "mcp": "MCP",
+    }
+
+    normalized = []
+    seen = set()
+
+    for entity in entities:
+        if not entity or not isinstance(entity, str):
+            continue
+
+        # 去除空白
+        entity = entity.strip()
+        if not entity:
+            continue
+
+        # 小写用于查表和去重
+        lower = entity.lower()
+
+        # 标准化
+        if lower in entity_mapping:
+            entity = entity_mapping[lower]
+
+        # 去重（不区分大小写）
+        if lower not in seen:
+            seen.add(lower)
+            normalized.append(entity)
+
+    return normalized
 
 
 # ==================== 工具函数 ====================
@@ -637,10 +878,13 @@ def keyword_pre_filter(items, min_score=5, max_items=40):
 
 # ==================== AI 处理 ====================
 
-def get_ai_prompt(items):
+def get_ai_prompt(items, batch_size=None):
     """生成 AI 处理提示词"""
+    if batch_size is None:
+        batch_size = DEFAULT_BATCH_SIZE
+
     items_for_ai = []
-    for i, item in enumerate(items[:30]):
+    for i, item in enumerate(items[:batch_size]):
         items_for_ai.append({
             "index": i,
             "title": item["title"],
@@ -704,51 +948,92 @@ def get_ai_prompt(items):
     return prompt
 
 
-def process_with_ai(items, auto_ai=False):
+def process_with_ai(items, auto_ai=False, source="default", batch_size=None, cache=None):
     """使用 AI 处理新闻"""
-    logger.info(f"[AI] 开始处理 {len(items)} 条新闻...")
+    if batch_size is None:
+        batch_size = DEFAULT_BATCH_SIZE
 
-    prompt = get_ai_prompt(items)
+    files = get_ai_files(source)
+    logger.info(f"[AI] 开始处理 {len(items)} 条新闻 (来源: {source}, 批量: {batch_size})...")
 
-    # 如果配置了 auto_ai 且 API Key 存在，直接调用 API
-    if auto_ai and AI_CONFIG["api_key"]:
-        logger.info("[AI] 自动调用 API 处理...")
-        result_text = call_ai_api(prompt, max_tokens=8000)
+    # 尝试从缓存获取结果
+    if cache is not None:
+        cached_results = []
+        uncached_items = []
+        for item in items:
+            cached = get_cached_result(item, cache)
+            if cached:
+                cached_results.append(cached)
+            else:
+                uncached_items.append(item)
 
-        if result_text:
-            # 解析结果
-            json_match = re.search(r'\{.*\}', result_text, re.DOTALL)
-            if json_match:
-                data = safe_json_loads(json_match.group(), max_retries=3, context="AI API")
-                if data:
-                    is_valid, msg = validate_ai_result(data, expected_count=len(items))
-                    if is_valid:
-                        logger.info(f"[AI] API 处理成功，返回 {len(data.get('results', []))} 条结果")
-                        return data.get("results", [])
-                    else:
-                        logger.warning(f"[AI] 结果验证失败: {msg}")
+        if cached_results:
+            logger.info(f"[AI] 从缓存获取 {len(cached_results)} 条结果")
 
-        logger.warning("[AI] API 调用失败或结果无效，切换到本地模型模式")
+        if not uncached_items:
+            logger.info("[AI] 全部结果来自缓存")
+            return cached_results
 
-    # 本地模型模式：生成提示词文件
-    prompt_file = "ai_prompt.txt"
-    with open(prompt_file, "w", encoding="utf-8") as f:
-        f.write(prompt)
+        items = uncached_items
 
-    logger.info("=" * 60)
-    logger.info("[本地模式] 请按以下步骤操作：")
-    logger.info(f"  1. 读取 {prompt_file} 文件")
-    logger.info("  2. 将内容发送给本地模型（Claude/ChatGPT等）")
-    logger.info("  3. 将模型返回的 JSON 保存为 ai_result.json")
-    logger.info("  4. 再次运行此脚本")
-    logger.info("=" * 60)
+    # 获取锁
+    lock_fd = acquire_lock(files["lock"])
+    if lock_fd is None:
+        logger.error("[AI] 无法获取处理锁，可能有其他进程正在运行")
+        return None
 
-    return None
+    try:
+        prompt = get_ai_prompt(items, batch_size=batch_size)
+
+        # 如果配置了 auto_ai 且 API Key 存在，直接调用 API
+        if auto_ai and AI_CONFIG["api_key"]:
+            logger.info("[AI] 自动调用 API 处理...")
+            result_text = call_ai_api(prompt, max_tokens=8000)
+
+            if result_text:
+                # 解析结果
+                json_match = re.search(r'\{.*\}', result_text, re.DOTALL)
+                if json_match:
+                    data = safe_json_loads(json_match.group(), max_retries=3, context="AI API")
+                    if data:
+                        is_valid, msg = validate_ai_result(data, expected_count=len(items))
+                        if is_valid:
+                            results = data.get("results", [])
+                            logger.info(f"[AI] API 处理成功，返回 {len(results)} 条结果")
+                            # 缓存结果
+                            if cache is not None:
+                                for item, result in zip(items, results):
+                                    cache_result(item, result, cache)
+                                save_ai_cache(cache, source)
+                            return results
+                        else:
+                            logger.warning(f"[AI] 结果验证失败: {msg}")
+
+            logger.warning("[AI] API 调用失败或结果无效，切换到本地模型模式")
+
+        # 本地模型模式：生成提示词文件
+        prompt_file = files["prompt"]
+        with open(prompt_file, "w", encoding="utf-8") as f:
+            f.write(prompt)
+
+        logger.info("=" * 60)
+        logger.info("[本地模式] 请按以下步骤操作：")
+        logger.info(f"  1. 读取 {prompt_file} 文件")
+        logger.info("  2. 将内容发送给本地模型（Claude/ChatGPT等）")
+        logger.info(f"  3. 将模型返回的 JSON 保存为 {files['result']}")
+        logger.info("  4. 再次运行此脚本")
+        logger.info("=" * 60)
+
+        return None
+
+    finally:
+        release_lock(lock_fd)
 
 
-def load_local_ai_result():
+def load_local_ai_result(source="default"):
     """加载本地 AI 处理结果"""
-    result_file = "ai_result.json"
+    files = get_ai_files(source)
+    result_file = files["result"]
 
     if not os.path.exists(result_file):
         return None
@@ -760,9 +1045,14 @@ def load_local_ai_result():
         data = safe_json_loads(content, max_retries=3, context="本地AI结果")
         if data:
             # 备份并删除结果文件
-            backup_file = f"{result_file}.processed"
+            backup_file = files["backup"]
+            if os.path.exists(backup_file):
+                os.remove(backup_file)
             os.rename(result_file, backup_file)
             logger.info(f"[AI] 结果文件已备份: {backup_file}")
+
+            # 清理锁文件和 prompt 文件
+            cleanup_processing_files(source)
 
             is_valid, msg = validate_ai_result(data)
             if is_valid:
@@ -964,11 +1254,38 @@ def main():
                         help="数据源 (默认: all)")
     parser.add_argument("--auto-ai", action="store_true",
                         help="自动调用 AI API 处理")
+    parser.add_argument("--batch-size", type=int, default=None,
+                        help=f"批量处理大小 (默认: {DEFAULT_BATCH_SIZE})")
+    parser.add_argument("--verbose", "-v", action="store_true",
+                        help="显示详细日志")
+    parser.add_argument("--resume", action="store_true",
+                        help="恢复之前中断的处理")
     args = parser.parse_args()
+
+    # 设置日志级别
+    if args.verbose:
+        logging.getLogger().setLevel(logging.DEBUG)
 
     logger.info("=" * 60)
     logger.info(f"开始新闻选题更新 [源: {args.source}]")
     logger.info("=" * 60)
+
+    # 检查处理状态（恢复机制）
+    source_key = args.source if args.source != "all" else "combined"
+    state, files = check_processing_state(source_key)
+
+    if state == "running" and not args.resume:
+        logger.error("[错误] 检测到正在进行的处理任务。请等待完成或使用 --resume 强制新任务")
+        return
+
+    if state == "prompt_pending" and not args.resume:
+        logger.info("[提示] 发现未处理的 prompt 文件。请处理后再运行，或使用 --resume 强制重新生成")
+        return
+
+    # 加载缓存
+    ai_cache = load_ai_cache(source_key)
+    if ai_cache:
+        logger.info(f"[缓存] 已加载 {len(ai_cache)} 条 AI 处理缓存")
 
     # 加载已处理ID
     processed_ids = load_processed_ids()
@@ -1002,12 +1319,18 @@ def main():
         return
 
     # 4. AI 处理
-    # 先尝试加载本地结果
-    ai_results = load_local_ai_result()
+    # 先尝试加载本地结果（恢复机制）
+    ai_results = load_local_ai_result(source_key)
 
     if ai_results is None:
         # 没有本地结果，进行 AI 处理
-        ai_results = process_with_ai(filtered, auto_ai=args.auto_ai)
+        ai_results = process_with_ai(
+            filtered,
+            auto_ai=args.auto_ai,
+            source=source_key,
+            batch_size=args.batch_size,
+            cache=ai_cache
+        )
 
         if ai_results is None:
             logger.info("\n需要本地模型处理，请按上述指引操作")
@@ -1026,6 +1349,9 @@ def main():
         if not ai_result:
             continue
 
+        # 标准化实体
+        entities = normalize_entities(ai_result.get("entities", []))
+
         processed.append({
             "title": ai_result.get("title", item["title"]),
             "title_en": item["title"],
@@ -1035,7 +1361,7 @@ def main():
             "score": ai_result.get("score", 60),
             "level": ai_result.get("level", "B"),
             "reason": f"【{ai_result.get('level', 'B')}级】评分{ai_result.get('score', 60)}分 | {ai_result.get('reason', '')}",
-            "entities": ai_result.get("entities", []),
+            "entities": entities,
             "url": item["url"],
             "source": item["source"],
             "sources": 1,

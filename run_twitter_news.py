@@ -26,6 +26,61 @@ from urllib.parse import urlparse
 import requests
 import xml.etree.ElementTree as ET
 import logging
+from logging.handlers import RotatingFileHandler
+
+# ==================== 结构化JSON日志 ====================
+
+class StructuredJSONFormatter(logging.Formatter):
+    """结构化JSON日志格式化器"""
+
+    def __init__(self, include_timestamp=True, service_name="twitter-news"):
+        super().__init__()
+        self.include_timestamp = include_timestamp
+        self.service_name = service_name
+
+    def format(self, record):
+        log_entry = {
+            "service": self.service_name,
+            "level": record.levelname,
+            "message": record.getMessage(),
+            "logger": record.name,
+        }
+
+        if self.include_timestamp:
+            log_entry["timestamp"] = datetime.fromtimestamp(record.created).isoformat()
+
+        if record.exc_info:
+            log_entry["exc_info"] = self.formatException(record.exc_info)
+
+        extra_fields = ['stage', 'items_count', 'duration', 'rss_url', 'response_time',
+                       'items_count', 'avg_age_hours', 'errors', 'score', 'level',
+                       'title', 'url', 'source', 's_count', 'a_count', 'b_count',
+                       'c_count', 'multi_source', 'high_priority_count', 'total_count']
+
+        for field in extra_fields:
+            if hasattr(record, field):
+                log_entry[field] = getattr(record, field)
+
+        return json.dumps(log_entry, ensure_ascii=False)
+
+
+def setup_json_logging(log_file="twitter_news_struct.log", max_bytes=10*1024*1024, backup_count=5):
+    """配置结构化JSON日志"""
+    logger = logging.getLogger()
+
+    json_handler = RotatingFileHandler(
+        log_file,
+        maxBytes=max_bytes,
+        backupCount=backup_count,
+        encoding='utf-8'
+    )
+    json_handler.setFormatter(StructuredJSONFormatter())
+
+    logger.addHandler(json_handler)
+
+    logger.info("结构化JSON日志已启用", extra={"stage": "init", "service": "twitter-news"})
+    return logger
+
 
 # ==================== Python 版本检测 ====================
 
@@ -232,34 +287,104 @@ GITHUB_REPO = "x-reader"
 GITHUB_BRANCH = "main"
 PROCESSED_IDS_FILE = ".processed_tweet_ids.json"
 MAX_CACHED_IDS = 5000
+CACHE_RETENTION_DAYS = 30  # 缓存保留30天
 
 
 # ==================== 工具函数 ====================
 
 def load_processed_ids():
-    """加载已处理的推文ID缓存"""
+    """加载已处理的推文ID缓存（带LRU和时间清理）"""
     if not os.path.exists(PROCESSED_IDS_FILE):
-        return set()
+        return {}
+
     try:
         with open(PROCESSED_IDS_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
-            return set(data.get("ids", []))
+
+        # 支持两种格式：旧版{"ids": [...] } 和新版 {"cache": {id: timestamp, ...}}
+        if "cache" in data:
+            cache_data = data["cache"]
+        else:
+            # 旧版数据迁移：将列表转换为带时间戳的字典
+            now = time.time()
+            cache_data = {tid: now for tid in data.get("ids", [])}
+
+        # 清理过期缓存（超过CACHE_RETENTION_DAYS天的）
+        cutoff_time = time.time() - (CACHE_RETENTION_DAYS * 24 * 3600)
+        expired_ids = [tid for tid, last_used in cache_data.items() if last_used < cutoff_time]
+
+        if expired_ids:
+            logger.info(f"[缓存] 清理过期ID: {len(expired_ids)} 条（超过{CACHE_RETENTION_DAYS}天未使用）")
+            for tid in expired_ids:
+                del cache_data[tid]
+
+        # 统计信息
+        total_ids = len(cache_data)
+        if total_ids > MAX_CACHED_IDS:
+            logger.warning(f"[缓存] 缓存数量({total_ids})超过限制({MAX_CACHED_IDS})，将进行LRU清理")
+
+        return cache_data
+
     except Exception as e:
         logger.warning(f"[缓存] 加载已处理ID失败: {e}")
-        return set()
+        return {}
 
 
-def save_processed_ids(ids):
-    """保存已处理的推文ID缓存"""
+def save_processed_ids(cache_data):
+    """
+    保存已处理的推文ID缓存（LRU策略）
+
+    Args:
+        cache_data: dict {tweet_id: last_used_timestamp}
+    """
     try:
-        ids_list = list(ids)
-        if len(ids_list) > MAX_CACHED_IDS:
-            ids_list = ids_list[-MAX_CACHED_IDS:]
+        # 如果超过限制，删除最久未使用的（LRU）
+        if len(cache_data) > MAX_CACHED_IDS:
+            # 按最后使用时间排序
+            sorted_items = sorted(cache_data.items(), key=lambda x: x[1])
+            # 保留最新的MAX_CACHED_IDS条
+            to_remove = len(cache_data) - MAX_CACHED_IDS
+            removed_ids = [tid for tid, _ in sorted_items[:to_remove]]
+            for tid in removed_ids:
+                del cache_data[tid]
+            logger.info(f"[缓存] LRU清理: 删除 {to_remove} 条最久未使用的ID")
+
+        # 确保当前处理的ID有访问记录（在调用此函数前，应该已经更新了cache_data）
+        # 这里只负责保存
 
         with open(PROCESSED_IDS_FILE, "w", encoding="utf-8") as f:
-            json.dump({"ids": ids_list, "updated_at": datetime.now().isoformat()}, f)
+            json.dump({
+                "cache": cache_data,
+                "updated_at": datetime.now().isoformat(),
+                "total_count": len(cache_data)
+            }, f, ensure_ascii=False, indent=2)
+
+        logger.debug(f"[缓存] 保存成功: {len(cache_data)} 条ID")
+
     except Exception as e:
         logger.warning(f"[缓存] 保存已处理ID失败: {e}")
+
+
+def get_cache_stats(cache_data):
+    """获取缓存统计信息"""
+    if not cache_data:
+        return {"total": 0, "recent_1d": 0, "recent_7d": 0, "oldest": None, "newest": None}
+
+    now = time.time()
+    one_day_ago = now - 86400
+    seven_days_ago = now - 7 * 86400
+
+    timestamps = list(cache_data.values())
+    recent_1d = sum(1 for ts in timestamps if ts >= one_day_ago)
+    recent_7d = sum(1 for ts in timestamps if ts >= seven_days_ago)
+
+    return {
+        "total": len(cache_data),
+        "recent_1d": recent_1d,
+        "recent_7d": recent_7d,
+        "oldest": min(timestamps) if timestamps else None,
+        "newest": max(timestamps) if timestamps else None
+    }
 
 
 def extract_tweet_id(url):
@@ -272,14 +397,21 @@ def extract_tweet_id(url):
     return None
 
 
-def filter_processed_items(items, processed_ids):
-    """过滤掉已处理的推文"""
+def filter_processed_items(items, cache_data):
+    """
+    过滤掉已处理的推文
+
+    Args:
+        items: 新闻列表
+        cache_data: dict {tweet_id: last_used_timestamp}
+    """
     new_items = []
     skipped_count = 0
+    processed_ids_set = set(cache_data.keys())
 
     for item in items:
         tweet_id = extract_tweet_id(item.get("url", ""))
-        if tweet_id and tweet_id in processed_ids:
+        if tweet_id and tweet_id in processed_ids_set:
             skipped_count += 1
             continue
         new_items.append(item)
@@ -287,7 +419,7 @@ def filter_processed_items(items, processed_ids):
     if skipped_count > 0:
         logger.info(f"[去重] 跳过 {skipped_count} 条已处理的推文")
 
-    return new_items
+    return new_items, processed_ids_set
 
 
 # ==================== RSS 获取 ====================
@@ -411,11 +543,105 @@ def parse_pub_date(date_str):
     return int(time.time())
 
 
-def filter_recent_items(items, hours=1):
-    """筛选最近 N 小时的内容"""
-    cutoff = int(time.time()) - (hours * 3600)
+def analyze_content_freshness(items):
+    """
+    分析内容新鲜度分布
+    返回: (最近1小时数量, 最近6小时数量, 最近24小时数量, 平均年龄小时数)
+    """
+    if not items:
+        return 0, 0, 0, 0
+
+    now = time.time()
+    hour1 = 0
+    hour6 = 0
+    hour24 = 0
+    ages = []
+
+    for item in items:
+        age_seconds = now - item.get("published", now)
+        age_hours = age_seconds / 3600
+        ages.append(age_hours)
+
+        if age_hours <= 1:
+            hour1 += 1
+        if age_hours <= 6:
+            hour6 += 1
+        if age_hours <= 24:
+            hour24 += 1
+
+    avg_age = sum(ages) / len(ages) if ages else 0
+    return hour1, hour6, hour24, avg_age
+
+
+def calculate_smart_time_window(items, target_items=20, min_hours=1, max_hours=24):
+    """
+    智能计算时间窗口
+
+    策略：
+    - 目标：获取约 target_items 条新闻
+    - 最小窗口：min_hours（默认1小时）
+    - 最大窗口：max_hours（默认24小时）
+    - 基于历史内容密度预测合适的窗口
+    """
+    if not items:
+        return min_hours
+
+    hour1, hour6, hour24, avg_age = analyze_content_freshness(items)
+    total_items = len(items)
+
+    # 估算发布频率（每小时发布多少条）
+    if hour24 > 0:
+        hourly_rate = hour24 / 24.0
+    elif hour6 > 0:
+        hourly_rate = hour6 / 6.0
+    elif hour1 > 0:
+        hourly_rate = hour1 / 1.0
+    else:
+        # 所有内容都超过1小时，使用更保守的估计
+        hourly_rate = total_items / (avg_age + 0.1) if avg_age > 0 else 1.0
+
+    # 计算所需窗口
+    if hourly_rate > 0:
+        estimated_window = target_items / hourly_rate
+    else:
+        estimated_window = min_hours
+
+    # 应用边界限制
+    window = max(min_hours, min(estimated_window, max_hours))
+
+    # 特殊调整：如果最近1小时内容非常少，但最近6小时内容较多，说明更新频率较低
+    if hour1 < 2 and hour6 >= 5:
+        # 内容更新较慢，至少使用6小时窗口
+        window = max(window, 6)
+
+    # 如果最近1小时内容充足，可以使用较小窗口
+    if hour1 >= target_items:
+        window = min(window, 3)  # 但不要小于3小时，留有余地
+
+    # 四舍五入到最接近的整数小时
+    window_hours = round(window)
+
+    logger.info(f"[智能窗口] 分析: 1h={hour1}, 6h={hour6}, 24h={hour24}, 频率≈{hourly_rate:.1f}/h, 目标≈{target_items}, 计算窗口={window:.1f}h → 取整={window_hours}h")
+
+    return window_hours
+
+
+def filter_recent_items(items, hours=1, smart_mode=True):
+    """
+    筛选最近 N 小时的内容（支持智能模式）
+
+    Args:
+        hours: 默认窗口（如果smart_mode=False则固定使用）
+        smart_mode: 是否启用智能窗口计算
+    """
+    if smart_mode and hours == 1:  # 默认1小时窗口时才智能调整
+        window_hours = calculate_smart_time_window(items)
+    else:
+        window_hours = hours
+
+    cutoff = int(time.time()) - (window_hours * 3600)
     recent = [item for item in items if item["published"] >= cutoff]
-    logger.info(f"[筛选] 最近 {hours} 小时: {len(recent)}/{len(items)} 条")
+    logger.info(f"[筛选] 最近 {window_hours} 小时: {len(recent)}/{len(items)} 条")
     return recent
 
 
@@ -430,41 +656,32 @@ def extract_priority_keywords(text):
     matched_keywords = []
     matched_categories = {}
 
-    whole_word_keywords = {'rl', 'pi', 'agi', 'mcp', 'o1', 'o3', 'o4', 'gpt', 'vlm'}
+    # 短词汇（2-3字符）使用宽松匹配
+    short_word_keywords = {'rl', 'pi', 'o1', 'o3', 'o4', 'gpt', 'vlm', 'moe'}
 
-    precise_match_keywords = {
-        'ide': ['idea', 'identifier', 'identify', 'side', 'aside', 'inside'],
-        'ai': ['fail', 'mail', 'sail', 'tail', 'pain', 'paint', 'waiting'],
-        'llm': ['all', 'will', 'ball', 'call', 'fall', 'hall', 'tell', 'sell'],
-    }
+    # 精确边界匹配关键词（需要独立单词形式）
+    precise_boundary_keywords = {'ai', 'ide', 'llm', 'agi', 'mcp'}
 
     for category, keywords in PRIORITY_KEYWORDS.items():
         category_matches = []
         for keyword in keywords:
             keyword_lower = keyword.lower()
 
-            if keyword_lower in precise_match_keywords:
-                avoid_patterns = precise_match_keywords[keyword_lower]
-                is_valid_match = False
-
+            # 策略1: 短词汇 - 宽松子串匹配（保持原样）
+            if keyword_lower in short_word_keywords:
                 if keyword_lower in text_lower:
-                    is_valid_match = True
-                    for avoid in avoid_patterns:
-                        if avoid in text_lower:
-                            pattern = r'(?:^|[^a-z])' + re.escape(keyword_lower) + r'(?:[^a-z]|$)'
-                            if not re.search(pattern, text_lower):
-                                is_valid_match = False
-                                break
-
-                if is_valid_match:
                     matched_keywords.append(keyword)
                     category_matches.append(keyword)
 
-            elif keyword_lower in whole_word_keywords:
-                pattern = r'(?:^|[\s\W])' + re.escape(keyword_lower) + r'(?:$|[\s\W])'
-                if re.search(pattern, text_lower):
+            # 策略2: 精确边界匹配 - 使用\b确保独立单词
+            elif keyword_lower in precise_boundary_keywords:
+                # 使用单词边界，不区分大小写
+                pattern = r'\b' + re.escape(keyword_lower) + r'\b'
+                if re.search(pattern, text_lower, re.IGNORECASE):
                     matched_keywords.append(keyword)
                     category_matches.append(keyword)
+
+            # 策略3: 普通关键词 - 子串匹配
             else:
                 if keyword_lower in text_lower:
                     matched_keywords.append(keyword)
@@ -616,18 +833,20 @@ def get_ai_processing_prompt(items):
             item_data["keywords_matched"] = item["matched_keywords"][:5]
             item_data["priority_score"] = item.get("priority_score", 0)
 
-            if item.get("priority_score", 0) >= 15:
-                priority_hints.append(
-                    f"  新闻#{i}: 匹配关键词 {item['matched_keywords'][:3]} (优先级{item['priority_score']}分)"
-                )
+            # 记录所有预筛选进入的新闻（不设阈值），确保AI了解所有候选
+            priority_hints.append(
+                f"  新闻#{i}: 匹配关键词 {item['matched_keywords'][:3]} (优先级{item.get('priority_score', 0)}分)"
+            )
 
         items_for_ai.append(item_data)
 
     keyword_hint_section = ""
     if priority_hints:
-        keyword_hint_section = f"""
-【关键词预筛选提示】以下新闻经关键词匹配被标记为高优先级，请重点关注：
-{chr(10).join(priority_hints[:15])}
+        # 显示所有预筛选的新闻，让AI完整了解上下文
+        display_hints = priority_hints[:min(30, len(priority_hints))]  # 最多显示30条，避免过长
+        keyword_hint_section = f"""【关键词预筛选提示】以下{len(items)}条新闻已通过预筛选进入AI处理阶段（基于科技关键词匹配和优先级评分），请对全部新闻进行批量评估：
+{chr(10).join(display_hints)}
+(共{len(items)}条新闻，以上显示其中{len(display_hints)}条高优先级示例)
 
 """
 
@@ -776,49 +995,178 @@ def calculate_similarity(s1, s2):
     return len(kw1 & kw2) / len(kw1 | kw2)
 
 
-def is_same_event(item1, item2):
-    """判断两条新闻是否报道同一事件"""
-    title_sim = calculate_similarity(item1.get("title", ""), item2.get("title", ""))
-    if title_sim > 0.6:
+def is_same_event(item1, item2, time_threshold_seconds=1800):
+    """
+    判断两条新闻是否报道同一事件（增强版）
+
+    匹配策略（按优先级）：
+    1. Tweet ID 相同（直接同一来源）
+    2. URL 相同（同一链接）
+    3. 标题高度相似（Jaccard > 0.7 或 包含关系）
+    4. 实体高度重叠 + 时间接近
+    5. 关键词高度重叠 + 时间接近
+    """
+    # 1. Tweet ID 匹配
+    url1 = item1.get("url", "")
+    url2 = item2.get("url", "")
+    tweet_id1 = re.search(r"status/(\d+)", url1) if url1 else None
+    tweet_id2 = re.search(r"status/(\d+)", url2) if url2 else None
+    if tweet_id1 and tweet_id2 and tweet_id1.group(1) == tweet_id2.group(1):
         return True
 
-    en_title_sim = calculate_similarity(
-        item1.get("title_en", ""), item2.get("title_en", "")
-    )
-    if en_title_sim > 0.6:
+    # 2. URL 直接匹配（可能是同一事件的不同链接）
+    if url1 and url2 and url1 == url2:
         return True
 
+    # 3. 标题相似度（提高阈值）
+    title1 = item1.get("title", "").strip()
+    title2 = item2.get("title", "").strip()
+    if title1 and title2:
+        if title1.lower() in title2.lower() or title2.lower() in title1.lower():
+            return True
+        title_sim = calculate_similarity(title1, title2)
+        if title_sim > 0.7:
+            return True
+
+    # 4. 检查时间差是否在阈值内
+    time1 = item1.get("timestamp", 0)
+    time2 = item2.get("timestamp", 0)
+    time_diff = abs(time1 - time2)
+    if time_diff > time_threshold_seconds:
+        return False  # 时间太远，不太可能是同一事件
+
+    # 5. 实体匹配（更宽松的阈值）
     entities1 = set(item1.get("entities", []))
     entities2 = set(item2.get("entities", []))
-
     if entities1 and entities2:
         common_entities = entities1 & entities2
         all_entities = entities1 | entities2
-
-        if len(common_entities) >= 2 and len(common_entities) / len(all_entities) > 0.5:
-            time1 = item1.get("timestamp", 0)
-            time2 = item2.get("timestamp", 0)
-            if abs(time1 - time2) < 1800:
+        if len(all_entities) == 0:
+            # 没有实体信息，跳过
+            pass
+        else:
+            overlap = len(common_entities) / len(all_entities)
+            if len(common_entities) >= 2 and overlap >= 0.4:
                 return True
+            # 单个顶级实体（如公司、人物）也考虑
+            if len(common_entities) == 1:
+                # 检查是否是重要实体（如知名公司/人物）
+                important_entities = {'OpenAI', 'Anthropic', 'Google', 'Microsoft', 'Apple',
+                                      'Meta', 'NVIDIA', 'Tesla', 'SpaceX', 'xAI',
+                                      'Elon Musk', 'Sam Altman', 'Andrej Karpathy', 'Demis Hassabis'}
+                if common_entities & important_entities:
+                    return True
 
-    url1 = item1.get("url", "")
-    url2 = item2.get("url", "")
-    if url1 and url2:
-        tweet_id1 = re.search(r"status/(\d+)", url1)
-        tweet_id2 = re.search(r"status/(\d+)", url2)
-        if tweet_id1 and tweet_id2:
-            if tweet_id1.group(1) == tweet_id2.group(1):
-                return True
+    # 6. 关键词匹配（如果items有keywords字段）
+    keywords1 = set(item1.get("keywords", []))
+    keywords2 = set(item2.get("keywords", []))
+    if keywords1 and keywords2:
+        common_keywords = keywords1 & keywords2
+        if len(common_keywords) >= 2:
+            return True
+
+    # 7. 检查sourceLinks（来源链接）是否重复
+    links1 = item1.get("sourceLinks", [])
+    links2 = item2.get("sourceLinks", [])
+    urls1 = {link.get("url", "") for link in links1 if link.get("url")}
+    urls2 = {link.get("url", "") for link in links2 if link.get("url")}
+    if urls1 and urls2 and (urls1 & urls2):
+        return True
 
     return False
 
 
 def find_duplicate(new_item, existing_items):
-    """检查新选题是否与已有选题重复"""
+    """检查新选题是否与已有选题重复（返回最佳匹配或None）"""
+    best_match = None
+    best_score = 0
+
     for existing in existing_items:
-        if is_same_event(new_item, existing):
-            return existing
-    return None
+        # 使用改进后的is_same_event，但需要更细粒度控制
+        # 这里我们计算一个匹配分数
+        match_score = calculate_event_match_score(new_item, existing)
+        if match_score > best_score and match_score >= 0.6:  # 阈值
+            best_score = match_score
+            best_match = existing
+
+    return best_match
+
+
+def calculate_event_match_score(item1, item2):
+    """
+    计算两条新闻的事件匹配分数 (0-1)
+
+    综合考虑：
+    - URL/Tweet ID 完全匹配: 1.0
+    - 标题相似度: 0.0-1.0
+    - 实体重叠度: 0.0-1.0
+    - 关键词重叠度: 0.0-1.0
+    - 时间接近度: 0-0.2 奖励
+    """
+    score = 0.0
+
+    # 1. 完全匹配（权重最高）
+    url1, url2 = item1.get("url", ""), item2.get("url", "")
+    if url1 and url2 and url1 == url2:
+        return 1.0
+    tweet_id1 = re.search(r"status/(\d+)", url1) if url1 else None
+    tweet_id2 = re.search(r"status/(\d+)", url2) if url2 else None
+    if tweet_id1 and tweet_id2 and tweet_id1.group(1) == tweet_id2.group(1):
+        return 1.0
+
+    # 2. 时间窗口检查
+    time1, time2 = item1.get("timestamp", 0), item2.get("timestamp", 0)
+    time_diff = abs(time1 - time2)
+    if time_diff > 3600:  # 超过1小时，大幅降低分数
+        time_bonus = 0
+    elif time_diff > 1800:  # 30分钟到1小时，小幅奖励
+        time_bonus = 0.1
+    else:  # 30分钟内，奖励0.2
+        time_bonus = 0.2
+
+    # 3. 标题相似度
+    title1, title2 = item1.get("title", "").strip(), item2.get("title", "").strip()
+    if title1 and title2:
+        if title1.lower() in title2.lower() or title2.lower() in title1.lower():
+            score += 0.6
+        else:
+            title_sim = calculate_similarity(title1, title2)
+            if title_sim > 0.7:
+                score += 0.5
+            elif title_sim > 0.5:
+                score += 0.3
+
+    # 4. 实体重叠
+    entities1, entities2 = set(item1.get("entities", [])), set(item2.get("entities", []))
+    if entities1 and entities2:
+        common = entities1 & entities2
+        all_ents = entities1 | entities2
+        if all_ents:
+            overlap = len(common) / len(all_ents)
+            if overlap >= 0.5:
+                score += 0.3
+            elif overlap >= 0.3 and len(common) >= 2:
+                score += 0.2
+            # 顶级实体奖励
+            important_entities = {'OpenAI', 'Anthropic', 'Google', 'Microsoft', 'Apple',
+                                  'Meta', 'NVIDIA', 'Tesla', 'SpaceX', 'xAI',
+                                  'Elon Musk', 'Sam Altman', 'Andrej Karpathy'}
+            if common & important_entities:
+                score += 0.15
+
+    # 5. 关键词重叠
+    keywords1, keywords2 = set(item1.get("keywords", [])), set(item2.get("keywords", []))
+    if keywords1 and keywords2:
+        common_kw = keywords1 & keywords2
+        if len(common_kw) >= 3:
+            score += 0.2
+        elif len(common_kw) >= 2:
+            score += 0.1
+
+    # 6. 时间奖励
+    score += time_bonus
+
+    return min(score, 1.0)
 
 
 def merge_source_links(existing_links, new_links):
@@ -995,6 +1343,9 @@ def check_rss_health():
 def main():
     check_python_version()
 
+    # 启用结构化JSON日志
+    setup_json_logging()
+
     timing = {
         "start": time.time(),
         "rss_fetch": 0,
@@ -1010,9 +1361,10 @@ def main():
     logger.info("开始 Twitter RSS 新闻选题更新...")
     logger.info("=" * 60)
 
-    # 加载已处理的推文ID
-    processed_ids = load_processed_ids()
-    logger.info(f"[缓存] 已加载 {len(processed_ids)} 条历史推文ID")
+    # 加载已处理的推文ID（新版返回cache dict）
+    cache_data = load_processed_ids()
+    cache_stats = get_cache_stats(cache_data)
+    logger.info(f"[缓存] 已加载 {cache_stats['total']} 条历史推文ID (近1天: {cache_stats['recent_1d']}, 近7天: {cache_stats['recent_7d']})")
 
     # RSS健康检查
     logger.info("[RSS] 健康检查...")
@@ -1045,20 +1397,25 @@ def main():
         return
 
     # 2.5 过滤已处理的推文
-    items = filter_processed_items(items, processed_ids)
+    items, processed_ids_set = filter_processed_items(items, cache_data)
 
-    # 3. 筛选最近 12 小时内容
+    # 3. 筛选最近内容（智能时间窗口）
     t0 = time.time()
-    recent_items = filter_recent_items(items, hours=12)
+    # 启用智能窗口：自动调整时间范围以获取目标数量的新闻
+    # 默认目标：20条，因为预筛选后会保留约20-40条进入AI
+    smart_target = int(os.getenv("SMART_WINDOW_TARGET", "20"))
+    recent_items = filter_recent_items(items, hours=1, smart_mode=True)  # hours仅作为fallback
     timing["filter"] = time.time() - t0
 
+    current_time = time.time()  # 用于缓存时间戳
+
     if not recent_items:
-        logger.info("[筛选] 最近 12 小时无新内容，退出")
+        logger.info("[筛选] 智能时间窗口内无新内容，退出")
         for item in items:
             tweet_id = extract_tweet_id(item.get("url", ""))
             if tweet_id:
-                processed_ids.add(tweet_id)
-        save_processed_ids(processed_ids)
+                cache_data[tweet_id] = current_time
+        save_processed_ids(cache_data)
         return
 
     # 4. 关键词预筛选
@@ -1144,19 +1501,21 @@ def main():
         logger.warning("[AI] 没有高潜力新闻，退出")
         return
 
-    # 6. 加载当日已有新闻并合并
+    # 6. 加载当日已有新闻并合并（增强去重）
     t0 = time.time()
     today, existing_news = load_existing_news()
 
-    # 合并逻辑
+    # 合并逻辑 - 使用智能去重
     merged = existing_news.copy()
     added_count = 0
     updated_count = 0
+    duplicate_count = 0
 
     for new_item in processed:
         duplicate = find_duplicate(new_item, merged)
 
         if duplicate:
+            duplicate_count += 1
             existing_links = duplicate.get("sourceLinks", [])
             new_links = new_item.get("sourceLinks", [])
             merged_links = merge_source_links(existing_links, new_links)
@@ -1164,6 +1523,12 @@ def main():
             if len(merged_links) > len(existing_links):
                 duplicate["sourceLinks"] = merged_links
                 duplicate["sources"] = len(merged_links)
+                # 更新其他字段（选择保留哪个版本）
+                # 优先保留评分更高的
+                if new_item.get("score", 0) > duplicate.get("score", 0):
+                    duplicate["score"] = new_item["score"]
+                    duplicate["level"] = new_item["level"]
+                    duplicate["reason"] = new_item["reason"]
                 updated_count += 1
                 logger.info(f"[合并] 更新来源: {new_item['title'][:30]}...")
         else:
@@ -1171,7 +1536,7 @@ def main():
             added_count += 1
             logger.info(f"[合并] 新增选题: {new_item['title'][:30]}...")
 
-    logger.info(f"[合并] 新增 {added_count} 条, 更新 {updated_count} 条")
+    logger.info(f"[合并] 新增 {added_count} 条, 更新 {updated_count} 条, 去重 {duplicate_count} 条")
     final_news = merged
     timing["merge"] = time.time() - t0
 
@@ -1186,13 +1551,20 @@ def main():
         push_to_github()
         timing["github"] = time.time() - t0
 
-    # 8. 更新已处理的推文ID缓存
+    # 8. 更新已处理的推文ID缓存（带LRU和时间戳）
+    current_time = time.time()
     for item in filtered_items:
         tweet_id = extract_tweet_id(item.get("url", ""))
         if tweet_id:
-            processed_ids.add(tweet_id)
-    save_processed_ids(processed_ids)
-    logger.info(f"[缓存] 已更新 {len(processed_ids)} 条推文ID")
+            cache_data[tweet_id] = current_time  # 更新最后使用时间
+
+    # 更新缓存前记录统计
+    stats_before = get_cache_stats(cache_data)
+
+    save_processed_ids(cache_data)
+    stats_after = get_cache_stats(cache_data)
+
+    logger.info(f"[缓存] 已更新 {len(processed_ids_set)} 条推文ID（总缓存: {stats_after['total']}条, 清理: {stats_before['total'] - stats_after['total']}条）")
 
     # 9. 统计输出
     generate_report(final_news, timing)
