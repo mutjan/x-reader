@@ -1,0 +1,116 @@
+你是一位资深科技媒体编辑，负责筛选和加工科技新闻选题。
+
+请对以下新闻进行批量处理，返回 JSON 格式结果：
+
+输入新闻：
+[
+  {
+    "index": 0,
+    "title": "RT Mario Zechner: great, now the entire internet knows i'm old and fat and have looney toons hair. god damn you, peter! gonna make you do an ad-hoc ta...",
+    "content": "RT Mario Zechner<br>great, now the entire internet knows i'm old and fat and have looney toons hair. god damn you, peter! gonna make you do an ad-hoc talk as punishment.<div class=\"rsshub-quote\"><br><br>Peter Steinberger 🦞: At AI Engineer London, watching legend @badlogicgames talking about pi, the component that drives all the claws! https://pi.dev<br><br><img width=\"2048\" height=\"1536\" style=\"\" src=\"https://pbs.twimg.com/media/HDO9GPIbQAIbdk4?format=jpg&amp;name=orig\" referrerpolicy=\"no-referr",
+    "source": "swyx",
+    "url": "https://x.com/swyx/status/2032308564111552682",
+    "keywords_matched": [
+      "ai engineer",
+      "pi"
+    ],
+    "priority_score": 10
+  },
+  {
+    "index": 1,
+    "title": "RT Sarah Sachs: Got to talk all things custom agents, software factory, fine tuning, and some deep Notion archeology with squad at @latentspacepod Sta...",
+    "content": "RT Sarah Sachs<br>Got to talk all things custom agents, software factory, fine tuning, and some deep Notion archeology with squad at @latentspacepod   Stay tuned!<br><img width=\"1536\" height=\"2048\" style=\"\" src=\"https://pbs.twimg.com/media/HDQ49e5awAAJwtK?format=jpg&amp;name=orig\" referrerpolicy=\"no-referrer\">",
+    "source": "swyx",
+    "url": "https://x.com/swyx/status/2032320568700363172",
+    "keywords_matched": [
+      "agent",
+      "agents",
+      "[军事-降权]"
+    ],
+    "priority_score": 0
+  },
+  {
+    "index": 2,
+    "title": "RT Guillermo Rauch: New http://tbpn.com live on ▲. TBPN is one of the coolest things in tech!",
+    "content": "RT Guillermo Rauch<br>New http://tbpn.com live on ▲. TBPN is one of the coolest things in tech!<br><img width=\"2048\" height=\"1366\" style=\"\" src=\"https://pbs.twimg.com/media/HDQCl6SbQAQN45W?format=jpg&amp;name=orig\" referrerpolicy=\"no-referrer\">",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032310973952917910"
+  }
+]
+
+处理要求：
+
+1. **筛选选题**（S级/A+级/A级/B级）：
+   - S级（90-100分）：真正的里程碑事件
+     * AI大模型重大发布（GPT-5、Claude 4、Gemini 2等）
+     * 马斯克/SpaceX/Neuralink重大动态
+     * Nature/Science/Cell顶刊发表
+     * 科技巨头重大战略调整或人事变动（CEO级别）
+     * AGI相关重大进展或权威预测
+     * 顶级AI研究者重大开源项目
+     * **独家/首发重大新闻**
+     * **多源验证的重大突破**
+   - A+级（85-89分）：重要但非里程碑
+     * 重要产品更新（GPT-4.5、Claude 3.5重大升级）
+     * 重要技术突破（如解决FrontierMath难题）
+     * 知名人物重要观点/专访
+     * 大额融资（5亿美元以上）
+   - A级（75-84分）：
+     * 科技巨头常规产品更新
+     * 国产大模型重要进展
+     * 开源项目爆款/Star数激增
+     * 学术突破（arxiv重要论文）
+   - B级（65-74分）：
+     * 产品评测、体验报告
+     * 技术解析、教程
+   - 过滤掉C级（<65分）
+
+   **重要降权规则**（除非是重大事件，多源权威报道+科技巨头）：
+   - 政治类新闻（特朗普、拜登、政府政策等）：降权15分
+   - 军事类新闻（战争、武器、冲突等）：降权20分
+   - 一般法律纠纷（普通诉讼、专利纠纷）：降权10分
+   - 但科技巨头反垄断大案、重大监管事件除外
+
+2. **生成量子位风格中文标题**：
+   - 纯中文，无类型前缀
+   - 情绪饱满，优先使用"刚刚"、"突发"、"炸裂"、"重磅"、"首次"等词
+   - 15-35字，简洁有力
+   - **必须使用数字和对比**
+   - 标题公式：时间敏感型、数据冲击型、权威引语型、颠覆型
+
+3. **生成一句话摘要**（AI生成，严禁直接复制原文）：
+   - 必须是AI基于理解后生成的概括，50-100字
+   - 严禁直接复制或拼接原文内容
+   - 严禁包含任何HTML标签、图片链接、视频链接
+   - 用简洁的语言概括核心信息，突出关键数据
+
+4. **标注类型**：hot(热点)/ai(AI相关)/tech(科技)/business(商业)
+
+5. **识别核心实体**（2-5个）：公司、产品、人物、技术/概念
+
+6. **添加行业标签**（1-3个）：大模型、AI Agent、多模态、AI编程、AI科研、芯片、机器人等
+
+返回格式（JSON）：
+{
+  "results": [
+    {
+      "index": 0,
+      "score": 95,
+      "level": "S",
+      "title": "重磅！Andrej Karpathy开源AgentHub：专为AI Agent打造的GitHub",
+      "summary": "前特斯拉AI总监Andrej Karpathy发布开源项目AgentHub...",
+      "type": "ai",
+      "reason": "顶级AI研究者重大开源项目，AI Agent领域里程碑",
+      "entities": ["Andrej Karpathy", "AgentHub", "开源", "AI Agent"],
+      "tags": ["AI Agent", "开源"]
+    }
+  ]
+}
+
+注意：
+1. 只返回 JSON，不要其他解释
+2. 最多选择20条最有价值的
+3. 相似主题的新闻合并为一条
+4. **重要：JSON字符串必须使用英文双引号，严禁使用中文引号**
+5. **重要：所有属性名必须用双引号包裹**
+6. **重要：最后一个属性后不要加逗号**
