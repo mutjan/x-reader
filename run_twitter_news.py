@@ -995,7 +995,7 @@ def calculate_similarity(s1, s2):
     return len(kw1 & kw2) / len(kw1 | kw2)
 
 
-def is_same_event(item1, item2, time_threshold_seconds=1800):
+def is_same_event(item1, item2, time_threshold_seconds=7200):
     """
     判断两条新闻是否报道同一事件（增强版）
 
@@ -1005,6 +1005,10 @@ def is_same_event(item1, item2, time_threshold_seconds=1800):
     3. 标题高度相似（Jaccard > 0.7 或 包含关系）
     4. 实体高度重叠 + 时间接近
     5. 关键词高度重叠 + 时间接近
+
+    时间阈值说明：
+    - 默认2小时（7200秒），因为同一产品发布/重大新闻可能在数小时内被多次报道
+    - 实体高度重叠时可放宽到6小时
     """
     # 1. Tweet ID 匹配
     url1 = item1.get("url", "")
@@ -1028,33 +1032,37 @@ def is_same_event(item1, item2, time_threshold_seconds=1800):
         if title_sim > 0.7:
             return True
 
-    # 4. 检查时间差是否在阈值内
+    # 4. 检查时间差
     time1 = item1.get("timestamp", 0)
     time2 = item2.get("timestamp", 0)
     time_diff = abs(time1 - time2)
-    if time_diff > time_threshold_seconds:
-        return False  # 时间太远，不太可能是同一事件
 
-    # 5. 实体匹配（更宽松的阈值）
+    # 5. 实体匹配（高置信度匹配可放宽时间限制）
     entities1 = set(item1.get("entities", []))
     entities2 = set(item2.get("entities", []))
+    entity_overlap_high = False
+
     if entities1 and entities2:
         common_entities = entities1 & entities2
         all_entities = entities1 | entities2
-        if len(all_entities) == 0:
-            # 没有实体信息，跳过
-            pass
-        else:
+        if all_entities:
             overlap = len(common_entities) / len(all_entities)
-            if len(common_entities) >= 2 and overlap >= 0.4:
-                return True
-            # 单个顶级实体（如公司、人物）也考虑
-            if len(common_entities) == 1:
-                # 检查是否是重要实体（如知名公司/人物）
+            # 实体高度重叠（>=3个共同实体且重叠度>=60%）
+            if len(common_entities) >= 3 and overlap >= 0.6:
+                entity_overlap_high = True
+                # 高置信度实体匹配可放宽到6小时
+                if time_diff <= 21600:  # 6小时
+                    return True
+            # 中等实体重叠（>=2个共同实体且重叠度>=40%）
+            elif len(common_entities) >= 2 and overlap >= 0.4:
+                if time_diff <= time_threshold_seconds:
+                    return True
+            # 单个顶级实体（如公司、人物）+ 时间接近
+            elif len(common_entities) == 1:
                 important_entities = {'OpenAI', 'Anthropic', 'Google', 'Microsoft', 'Apple',
                                       'Meta', 'NVIDIA', 'Tesla', 'SpaceX', 'xAI',
                                       'Elon Musk', 'Sam Altman', 'Andrej Karpathy', 'Demis Hassabis'}
-                if common_entities & important_entities:
+                if common_entities & important_entities and time_diff <= 3600:  # 1小时内
                     return True
 
     # 6. 关键词匹配（如果items有keywords字段）
@@ -1062,7 +1070,7 @@ def is_same_event(item1, item2, time_threshold_seconds=1800):
     keywords2 = set(item2.get("keywords", []))
     if keywords1 and keywords2:
         common_keywords = keywords1 & keywords2
-        if len(common_keywords) >= 2:
+        if len(common_keywords) >= 3 and time_diff <= time_threshold_seconds:
             return True
 
     # 7. 检查sourceLinks（来源链接）是否重复
@@ -1072,6 +1080,23 @@ def is_same_event(item1, item2, time_threshold_seconds=1800):
     urls2 = {link.get("url", "") for link in links2 if link.get("url")}
     if urls1 and urls2 and (urls1 & urls2):
         return True
+
+    # 8. 标题关键词匹配（针对产品发布类新闻的特殊处理）
+    # 如果标题包含相同的产品名+版本号+核心功能词，视为同一事件
+    if title1 and title2:
+        # 提取版本号（如 Opus 4.6, GPT-5, Claude 4等）
+        version_pattern = r'(claude|opus|sonnet|gpt|gemini|grok)[\s-]*(\d+\.?\d*)'
+        v1_match = re.search(version_pattern, title1.lower())
+        v2_match = re.search(version_pattern, title2.lower())
+
+        if v1_match and v2_match:
+            # 相同产品+版本
+            if v1_match.group(1) == v2_match.group(1) and v1_match.group(2) == v2_match.group(2):
+                # 检查是否有共同的核心功能词
+                core_keywords = ['上下文', 'context', 'token', '百万', 'million', '发布', 'launch', '开放', 'available']
+                common_core = [kw for kw in core_keywords if kw in title1.lower() and kw in title2.lower()]
+                if common_core and time_diff <= 21600:  # 6小时内
+                    return True
 
     return False
 
@@ -1102,6 +1127,7 @@ def calculate_event_match_score(item1, item2):
     - 实体重叠度: 0.0-1.0
     - 关键词重叠度: 0.0-1.0
     - 时间接近度: 0-0.2 奖励
+    - 产品版本匹配: 额外奖励
     """
     score = 0.0
 
@@ -1114,14 +1140,16 @@ def calculate_event_match_score(item1, item2):
     if tweet_id1 and tweet_id2 and tweet_id1.group(1) == tweet_id2.group(1):
         return 1.0
 
-    # 2. 时间窗口检查
+    # 2. 时间窗口检查（放宽到6小时）
     time1, time2 = item1.get("timestamp", 0), item2.get("timestamp", 0)
     time_diff = abs(time1 - time2)
-    if time_diff > 3600:  # 超过1小时，大幅降低分数
+    if time_diff > 21600:  # 超过6小时，无奖励
         time_bonus = 0
-    elif time_diff > 1800:  # 30分钟到1小时，小幅奖励
+    elif time_diff > 7200:  # 2-6小时，小幅奖励
+        time_bonus = 0.05
+    elif time_diff > 3600:  # 1-2小时，中等奖励
         time_bonus = 0.1
-    else:  # 30分钟内，奖励0.2
+    else:  # 1小时内，最高奖励
         time_bonus = 0.2
 
     # 3. 标题相似度
@@ -1136,14 +1164,30 @@ def calculate_event_match_score(item1, item2):
             elif title_sim > 0.5:
                 score += 0.3
 
-    # 4. 实体重叠
+    # 4. 产品版本匹配（针对Claude/GPT等产品发布新闻）
+    if title1 and title2:
+        version_pattern = r'(claude|opus|sonnet|gpt|gemini|grok)[\s-]*(\d+\.?\d*)'
+        v1_match = re.search(version_pattern, title1.lower())
+        v2_match = re.search(version_pattern, title2.lower())
+        if v1_match and v2_match:
+            if v1_match.group(1) == v2_match.group(1) and v1_match.group(2) == v2_match.group(2):
+                score += 0.25  # 相同产品+版本，高置信度
+                # 检查核心功能词
+                core_keywords = ['上下文', 'context', 'token', '百万', 'million', '发布', 'launch', '开放', 'available']
+                common_core = [kw for kw in core_keywords if kw in title1.lower() and kw in title2.lower()]
+                if common_core:
+                    score += 0.15  # 额外奖励
+
+    # 5. 实体重叠
     entities1, entities2 = set(item1.get("entities", [])), set(item2.get("entities", []))
     if entities1 and entities2:
         common = entities1 & entities2
         all_ents = entities1 | entities2
         if all_ents:
             overlap = len(common) / len(all_ents)
-            if overlap >= 0.5:
+            if overlap >= 0.6 and len(common) >= 3:
+                score += 0.35  # 高度重叠
+            elif overlap >= 0.5:
                 score += 0.3
             elif overlap >= 0.3 and len(common) >= 2:
                 score += 0.2
@@ -1154,7 +1198,7 @@ def calculate_event_match_score(item1, item2):
             if common & important_entities:
                 score += 0.15
 
-    # 5. 关键词重叠
+    # 6. 关键词重叠
     keywords1, keywords2 = set(item1.get("keywords", [])), set(item2.get("keywords", []))
     if keywords1 and keywords2:
         common_kw = keywords1 & keywords2
@@ -1163,7 +1207,7 @@ def calculate_event_match_score(item1, item2):
         elif len(common_kw) >= 2:
             score += 0.1
 
-    # 6. 时间奖励
+    # 7. 时间奖励
     score += time_bonus
 
     return min(score, 1.0)
@@ -1520,17 +1564,35 @@ def main():
             new_links = new_item.get("sourceLinks", [])
             merged_links = merge_source_links(existing_links, new_links)
 
+            # 只要有新链接添加（去重后），就更新sourceLinks
             if len(merged_links) > len(existing_links):
                 duplicate["sourceLinks"] = merged_links
                 duplicate["sources"] = len(merged_links)
-                # 更新其他字段（选择保留哪个版本）
-                # 优先保留评分更高的
-                if new_item.get("score", 0) > duplicate.get("score", 0):
-                    duplicate["score"] = new_item["score"]
-                    duplicate["level"] = new_item["level"]
-                    duplicate["reason"] = new_item["reason"]
-                updated_count += 1
-                logger.info(f"[合并] 更新来源: {new_item['title'][:30]}...")
+                logger.info(f"[合并] 添加新来源: {new_item['title'][:30]}... 来源数: {len(existing_links)} -> {len(merged_links)}")
+
+            # 优先保留评分更高的版本
+            if new_item.get("score", 0) > duplicate.get("score", 0):
+                duplicate["score"] = new_item["score"]
+                duplicate["level"] = new_item["level"]
+                duplicate["reason"] = new_item["reason"]
+                logger.info(f"[合并] 更新评分: {new_item['title'][:30]}... 评分: {duplicate.get('score', 0)} -> {new_item['score']}")
+
+            # 合并实体（去重）
+            existing_entities = set(duplicate.get("entities", []))
+            new_entities = set(new_item.get("entities", []))
+            merged_entities = list(dict.fromkeys(duplicate.get("entities", []) + new_item.get("entities", [])))
+            if len(merged_entities) > len(existing_entities):
+                duplicate["entities"] = merged_entities[:5]  # 最多保留5个
+                logger.info(f"[合并] 更新实体: {new_item['title'][:30]}...")
+
+            # 合并标签（去重）
+            existing_tags = set(duplicate.get("tags", []))
+            new_tags = set(new_item.get("tags", []))
+            merged_tags = list(dict.fromkeys(duplicate.get("tags", []) + new_item.get("tags", [])))
+            if len(merged_tags) > len(existing_tags):
+                duplicate["tags"] = merged_tags[:5]  # 最多保留5个
+
+            updated_count += 1
         else:
             merged.append(new_item)
             added_count += 1
