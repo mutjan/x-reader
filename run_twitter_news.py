@@ -1394,8 +1394,14 @@ def load_existing_news():
         return today, []
 
 
-def save_news(today, news_data):
-    """保存新闻数据到 JSON 文件"""
+def save_news(today, news_data, max_file_size_mb=90):
+    """保存新闻数据到 JSON 文件
+
+    Args:
+        today: 当前日期字符串
+        news_data: 当天新闻数据列表
+        max_file_size_mb: 最大文件大小限制（MB），默认90MB（GitHub限制100MB，留10MB余量）
+    """
     try:
         if os.path.exists(DATA_FILE):
             with open(DATA_FILE, "r", encoding="utf-8") as f:
@@ -1406,17 +1412,41 @@ def save_news(today, news_data):
 
         archive[today] = news_data
 
+        # 先按日期数量限制清理（保留最近30天）
         dates = sorted(archive.keys())
         if len(dates) > 30:
             for old_date in dates[:-30]:
                 del archive[old_date]
+                logger.info(f"[数据清理] 删除超过30天的旧数据: {old_date}")
 
+        # 检查文件大小，如果超过限制则删除最旧的日期数据
+        max_bytes = max_file_size_mb * 1024 * 1024
         safe_content = safe_json_dumps(archive, ensure_ascii=False, indent=2)
+        content_bytes = safe_content.encode('utf-8')
+
+        while len(content_bytes) > max_bytes and len(archive) > 1:
+            # 获取最旧的日期
+            oldest_date = sorted(archive.keys())[0]
+            # 如果最旧的日期就是今天，则删除第二天最旧的
+            if oldest_date == today and len(archive) > 1:
+                oldest_date = sorted(archive.keys())[1]
+            elif oldest_date == today:
+                # 只有今天的数据，无法删除
+                break
+
+            deleted_count = len(archive[oldest_date])
+            del archive[oldest_date]
+            logger.warning(f"[数据清理] 文件大小超标({len(content_bytes)/1024/1024:.1f}MB > {max_file_size_mb}MB)，删除最旧日期 {oldest_date} 的数据({deleted_count}条)")
+
+            # 重新序列化检查大小
+            safe_content = safe_json_dumps(archive, ensure_ascii=False, indent=2)
+            content_bytes = safe_content.encode('utf-8')
 
         with open(DATA_FILE, "w", encoding="utf-8") as f:
             f.write(safe_content)
 
-        logger.info(f"[数据] 已保存: {today}, {len(news_data)} 条新闻")
+        final_size_mb = len(content_bytes) / 1024 / 1024
+        logger.info(f"[数据] 已保存: {today}, {len(news_data)} 条新闻, 文件大小: {final_size_mb:.1f}MB")
         return True
     except Exception as e:
         logger.error(f"[数据] 保存失败: {e}")
