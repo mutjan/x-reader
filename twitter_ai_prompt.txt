@@ -1,11 +1,37 @@
 你是一位资深科技媒体编辑，负责筛选和加工科技新闻选题。
 
-【关键词预筛选提示】以下6条新闻已通过预筛选进入AI处理阶段（基于科技关键词匹配和优先级评分），请对全部新闻进行批量评估：
-  新闻#0: 匹配关键词 ['xai', 'elon musk', 'musk'] (优先级37分)
-  新闻#1: 匹配关键词 ['agent', 'agents', 'cursor'] (优先级30分)
-  新闻#2: 匹配关键词 ['claude', 'mcp'] (优先级20分)
-  新闻#3: 匹配关键词 ['gemini'] (优先级15分)
-(共6条新闻，以上显示其中4条高优先级示例)
+【关键词预筛选提示】以下40条新闻已通过预筛选进入AI处理阶段（基于科技关键词匹配和优先级评分），请对全部新闻进行批量评估：
+  新闻#0: 匹配关键词 ['gemini', 'launch', 'released'] (优先级46分)
+  新闻#1: 匹配关键词 ['openai', 'nvidia', 'valuation'] (优先级38分)
+  新闻#2: 匹配关键词 ['spacex', 'ipo', 'investment'] (优先级36分)
+  新闻#3: 匹配关键词 ['reasoning', 'agent', 'robotics'] (优先级35分)
+  新闻#4: 匹配关键词 ['claude', 'launch', '[独家]first time'] (优先级34分)
+  新闻#5: 匹配关键词 ['anthropic', 'pi', '[独家]exclusive'] (优先级28分)
+  新闻#6: 匹配关键词 ['openai', 'elon musk', 'musk'] (优先级27分)
+  新闻#7: 匹配关键词 ['gemini', 'ipo'] (优先级25分)
+  新闻#8: 匹配关键词 ['anthropic', 'claude', 'pi'] (优先级25分)
+  新闻#9: 匹配关键词 ['agi', '[独家]breaking'] (优先级23分)
+  新闻#10: 匹配关键词 ['nvidia', '[独家]first time'] (优先级21分)
+  新闻#11: 匹配关键词 ['openai', 'xai'] (优先级20分)
+  新闻#12: 匹配关键词 ['agent', 'agents'] (优先级20分)
+  新闻#13: 匹配关键词 ['anthropic', 'pi'] (优先级20分)
+  新闻#14: 匹配关键词 ['launch', '[独家]exclusive'] (优先级19分)
+  新闻#15: 匹配关键词 ['elon musk', 'musk'] (优先级17分)
+  新闻#16: 匹配关键词 ['robotics', 'robot', 'autonomous'] (优先级15分)
+  新闻#17: 匹配关键词 ['perplexity'] (优先级15分)
+  新闻#18: 匹配关键词 ['openai'] (优先级15分)
+  新闻#19: 匹配关键词 ['xai'] (优先级15分)
+  新闻#20: 匹配关键词 ['xai'] (优先级15分)
+  新闻#21: 匹配关键词 ['robot', '[独家]exclusive'] (优先级13分)
+  新闻#22: 匹配关键词 ['robot', '[独家]exclusive'] (优先级13分)
+  新闻#23: 匹配关键词 ['open source'] (优先级11分)
+  新闻#24: 匹配关键词 ['[独家]breaking'] (优先级8分)
+  新闻#25: 匹配关键词 ['[独家]breaking'] (优先级8分)
+  新闻#26: 匹配关键词 ['[独家]breaking'] (优先级8分)
+  新闻#27: 匹配关键词 ['pi'] (优先级5分)
+  新闻#28: 匹配关键词 ['pi'] (优先级5分)
+  新闻#29: 匹配关键词 ['pi'] (优先级5分)
+(共40条新闻，以上显示其中30条高优先级示例)
 
 请对以下新闻进行批量处理，返回 JSON 格式结果：
 
@@ -13,68 +39,446 @@
 [
   {
     "index": 0,
-    "title": "RT Ethan He: Personal story: I applied to xAI in 2023 when it was founded and got rejected after an interview round. I went back to honing my skills. ...",
-    "content": "RT Ethan He<br>Personal story: I applied to xAI in 2023 when it was founded and got rejected after an interview round. I went back to honing my skills. In 2025, xAI reached out to me, and I was fortunate to get an offer.<br><br>Now, 8 months in, I can confidently say: this is the best place to do your life’s work. Talented people thrive and shine here.<br><br>Join us to understand the universe 🚀<div class=\"rsshub-quote\"><br><br>Elon Musk: Many talented people over the past few years were decline",
-    "source": "NIK",
-    "url": "https://x.com/ns123abc/status/2032367166629032162",
+    "title": "Here’s everything that happened this week 🚀: — @GoogleMaps released 2 new features, Ask Maps to handle your most complex questions about places a...",
+    "content": "Here’s everything that happened this week 🚀:<br><br>— @GoogleMaps released 2 new features, Ask Maps to handle your most complex questions about places and trips and Immersive Navigation for intuitive routes, all with some help from the latest Gemini models<br><br>— New Gemini features rolled out to @GoogleWorkspace, making @GoogleDocs, Sheets, Slides, and @GoogleDrive more helpful <br><br>— In collaboration with Imperial College London and the UK’s NHS, we published breast cancer research that d",
+    "source": "Google AI",
+    "url": "https://x.com/GoogleAI/status/2032582017628455285",
     "keywords_matched": [
-      "xai",
-      "elon musk",
-      "musk",
-      "cline"
+      "gemini",
+      "launch",
+      "released",
+      "demo",
+      "multimodal"
     ],
-    "priority_score": 37
+    "priority_score": 46
   },
   {
     "index": 1,
-    "title": "RT ThePrimeagen: i am using supermaven again and i have something to say about this whole AI thing. I think as a group (swe) we rushed so fast into Ag...",
-    "content": "RT ThePrimeagen<br>i am using supermaven again and i have something to say about this whole AI thing.<br><br>I think as a group (swe) we rushed so fast into Agents when inline autocomplete + actual skills is crazy.  A good autocomplete that is fast like supermaven actually makes marked proficiency gains, while saving me from cognitive debt that comes from agents.<br><br>With agents you reach a point where you must fully rely on their output and your grip on the codebase slips.  Its insane how go",
-    "source": "Jeremy Howard",
-    "url": "https://x.com/jeremyphoward/status/2032283917425025534",
+    "title": "Investors say OpenAI’s expected valuation—around 28× projected 2026 revenue—looks steep compared with Nvidia. https://thein.fo/3NsD91R",
+    "content": "Investors say OpenAI’s expected valuation—around 28× projected 2026 revenue—looks steep compared with Nvidia. https://thein.fo/3NsD91R",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2032581221994119358",
     "keywords_matched": [
-      "agent",
-      "agents",
-      "cursor",
-      "cursor"
+      "openai",
+      "nvidia",
+      "valuation"
     ],
-    "priority_score": 30
+    "priority_score": 38
   },
   {
     "index": 2,
-    "title": "RT Timothy B. Lee: The backlash against MCP isn't a surprise for readers of Understanding AI. @startupandrew predicted it in December.",
-    "content": "RT Timothy B. Lee<br>The backlash against MCP isn't a surprise for readers of Understanding AI. @startupandrew predicted it in December.<br><img width=\"1506\" height=\"780\" style=\"\" src=\"https://pbs.twimg.com/media/HDNhN1uXAAAELzZ?format=png&amp;name=orig\" referrerpolicy=\"no-referrer\"><div class=\"rsshub-quote\"><br><br>Garry Tan: MCP sucks honestly<br><br>It eats too much context window and you have to toggle it on and off and the auth sucks<br><br>I got sick of Claude in Chrome via MCP and vibe co",
-    "source": "Jeremy Howard",
-    "url": "https://x.com/jeremyphoward/status/2032282423170584710",
+    "title": "Exclusive: SpaceX is considering an unusual structure for its IPO—splitting responsibilities among multiple investment banks instead of appointing a ...",
+    "content": "Exclusive: SpaceX is considering an unusual structure for its IPO—splitting responsibilities among multiple investment banks instead of appointing a single lead. https://thein.fo/4rqLukJ",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2032588775583367286",
+    "keywords_matched": [
+      "spacex",
+      "ipo",
+      "investment",
+      "[独家]exclusive"
+    ],
+    "priority_score": 36
+  },
+  {
+    "index": 3,
+    "title": "RT Charles Wu 吴英成AI🦞: 🦞MedOS is the future of Healthcare",
+    "content": "RT Charles Wu 吴英成AI🦞<br>🦞MedOS is the future of Healthcare<div class=\"rsshub-quote\"><br><br>AI News: Meet MedOS — the AI-XR-Cobot system built by Stanford &amp; Princeton that's already running in hospitals.<br><br>Multi-agent AI reasoning. XR smart glasses. Dexterous robotics. One unified system operating as a real-time clinical co-pilot.<br>https://youtu.be/3bo0W96duqo<br>#AI #Robotics #MedOS<br></div>",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2032570318825599131",
+    "keywords_matched": [
+      "reasoning",
+      "agent",
+      "robotics",
+      "robot",
+      "pi"
+    ],
+    "priority_score": 35
+  },
+  {
+    "index": 4,
+    "title": "RT Boris Cherny: 🤯 You can now launch Claude Code sessions on your laptop *from your phone* This blew my mind the first time I tried it",
+    "content": "RT Boris Cherny<br>🤯 You can now launch Claude Code sessions on your laptop *from your phone*<br><br>This blew my mind the first time I tried it<div class=\"rsshub-quote\"><br><br>Noah Zweben: Remote Control - Session Spawning:<br>Run claude remote-control and then spawn a NEW local session in the mobile app.<br><br>* Out to Max, Team, and Enterprise (&gt;=2.1.74)<br>*Have GH set up on mobile (relaxing soon)<br>* Working on speeding up session start-time<br><br><video width=\"440\" height=\"960\" src=",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2032587941516914718",
     "keywords_matched": [
       "claude",
-      "mcp"
+      "launch",
+      "[独家]first time"
+    ],
+    "priority_score": 34
+  },
+  {
+    "index": 5,
+    "title": "Exclusive: Ex-Anthropic researchers are in talks to value their new AI startup, aimed at scientific research, at $1 billion. Read more from @Julia_Hor...",
+    "content": "Exclusive: Ex-Anthropic researchers are in talks to value their new AI startup, aimed at scientific research, at $1 billion.<br><br>Read more from @Julia_Hornstein, @AnissaGardizy8 and @SriMuppidi 👇 <br>https://thein.fo/3OZIAG7",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2032551046505996350",
+    "keywords_matched": [
+      "anthropic",
+      "pi",
+      "[独家]exclusive"
+    ],
+    "priority_score": 28
+  },
+  {
+    "index": 6,
+    "title": "Elon Musk & Sam Altman are gearing up for their blockbuster lawsuit. “OpenAI could end up losing $109 billion.” @rocketalignment reports on lawyers ...",
+    "content": "Elon Musk &amp; Sam Altman are gearing up for their blockbuster lawsuit.<br><br>“OpenAI could end up losing $109 billion.” <br><br>@rocketalignment reports on lawyers meeting in court ahead of the trial next month.<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2032549351780667393/vid/avc1/1280x720/ZEkbEWC8qNLKXj4Y.mp4?tag=14\" controls=\"controls\" poster=\"https://pbs.twimg.com/media/HDUQ7HpXQAAL3Ku?format=jpg&amp;name=orig\"></video>",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2032549436623130737",
+    "keywords_matched": [
+      "openai",
+      "elon musk",
+      "musk",
+      "sam altman",
+      "[法律-降权]"
+    ],
+    "priority_score": 27
+  },
+  {
+    "index": 7,
+    "title": "Gemini has shed about 70% of its value since its IPO, forcing layoffs and leadership changes at the exchange founded by Tyler Winklevoss and Cameron W...",
+    "content": "Gemini has shed about 70% of its value since its IPO, forcing layoffs and leadership changes at the exchange founded by Tyler Winklevoss and Cameron Winklevoss. https://thein.fo/4ruUPYJ",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2032535932595773747",
+    "keywords_matched": [
+      "gemini",
+      "ipo"
+    ],
+    "priority_score": 25
+  },
+  {
+    "index": 8,
+    "title": "Anthropic keeps on delivering: 1m context now generally available for Opus 4.6/Sonnet 4.6 „Opus 4.6 scores 78.3% on MRCR v2 at 1 million tokens, high...",
+    "content": "Anthropic keeps on delivering: <br><br>1m context now generally available for Opus 4.6/Sonnet 4.6<br><br>„Opus 4.6 scores 78.3% on MRCR v2 at 1 million tokens, highest among frontier models.“<div class=\"rsshub-quote\"><br><br>Claude: 1 million context window: Now generally available for Claude Opus 4.6 and Claude Sonnet 4.6.<br><br><img width=\"1920\" height=\"1080\" style=\"\" src=\"https://pbs.twimg.com/media/HDTovvJaMAI8jWP?format=png&amp;name=orig\" referrerpolicy=\"no-referrer\"></div>",
+    "source": "Chubby♨️",
+    "url": "https://x.com/kimmonismus/status/2032531949571477517",
+    "keywords_matched": [
+      "anthropic",
+      "claude",
+      "pi"
+    ],
+    "priority_score": 25
+  },
+  {
+    "index": 9,
+    "title": "day 30. my designer has become a better prompter than me and indepdently invented spec-driven development (he isnt on twitter and hasnt seen any of th...",
+    "content": "day 30.<br><br>my designer has become a better prompter than me<br><br>and indepdently invented spec-driven development (he isnt on twitter and hasnt seen any of the BREAKING 🚨 npc’s)<br><img width=\"945\" height=\"2048\" style=\"\" src=\"https://pbs.twimg.com/media/HDUmJMibgAAQ31e?format=jpg&amp;name=orig\" referrerpolicy=\"no-referrer\"><div class=\"rsshub-quote\"><br><br>swyx: you guys have not felt the agi until you have vibe designed your 6000 person conference website at the climbing gym in between pr",
+    "source": "swyx",
+    "url": "https://x.com/swyx/status/2032572751173853234",
+    "keywords_matched": [
+      "agi",
+      "[独家]breaking"
+    ],
+    "priority_score": 23
+  },
+  {
+    "index": 10,
+    "title": "Tomorrow I’m traveling to the USA. So excited, first time for me. And even more excited for NVIDIAs GTC. Hope to meet some people there :)",
+    "content": "Tomorrow I’m traveling to the USA. So excited, first time for me. <br><br>And even more excited for NVIDIAs GTC. Hope to meet some people there :)",
+    "source": "Chubby♨️",
+    "url": "https://x.com/kimmonismus/status/2032557761397969093",
+    "keywords_matched": [
+      "nvidia",
+      "[独家]first time"
+    ],
+    "priority_score": 21
+  },
+  {
+    "index": 11,
+    "title": "Companies including OpenAI and xAI could face higher risks as Gulf AI projects encounter geopolitical tensions. https://thein.fo/47yvW74",
+    "content": "Companies including OpenAI and xAI could face higher risks as Gulf AI projects encounter geopolitical tensions. https://thein.fo/47yvW74",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2032543490568032549",
+    "keywords_matched": [
+      "openai",
+      "xai"
     ],
     "priority_score": 20
   },
   {
-    "index": 3,
-    "title": "RT Google: Today @GoogleMaps is getting its biggest upgrade in over a decade. By combining our Gemini models with a deep understanding of the world, M...",
-    "content": "RT Google<br>Today @GoogleMaps is getting its biggest upgrade in over a decade. By combining our Gemini models with a deep understanding of the world, Maps now unlocks entirely new possibilities for how you navigate and explore. Here’s what you need to know 🧵<br><video width=\"1080\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2032076696267186176/vid/avc1/1080x1080/B-om8-1r8xyrZvr4.mp4?tag=21\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/2032076696267186176/im",
-    "source": "Demis Hassabis",
-    "url": "https://x.com/demishassabis/status/2032250331359289449",
+    "index": 12,
+    "title": "A society for your Claw. Love seeing all the things people are doing with their @OpenClaws. What you building this weekend with yours?",
+    "content": "A society for your Claw. <br><br>Love seeing all the things people are doing with their @OpenClaws. <br><br>What you building this weekend with yours?<div class=\"rsshub-quote\"><br><br>AIvilization: 🤔What if your @openclaw agent🦞 had a life of its own?<br><br>In Aivilization, they build their own society.<br><br>They hunt for jobs, earn money, socialize with other agents, and even post their own thoughts.<br><br>Watch this video and you'll know how to get started in @aivilization 👇<br><br><video ",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2032531292324245822",
     "keywords_matched": [
-      "gemini"
+      "agent",
+      "agents"
+    ],
+    "priority_score": 20
+  },
+  {
+    "index": 13,
+    "title": "Anthropic and Blackstone are discussing a venture that would help private equity portfolio companies deploy AI across their operations. https://thein....",
+    "content": "Anthropic and Blackstone are discussing a venture that would help private equity portfolio companies deploy AI across their operations. https://thein.fo/4sGLJJp",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2032528381883863287",
+    "keywords_matched": [
+      "anthropic",
+      "pi"
+    ],
+    "priority_score": 20
+  },
+  {
+    "index": 14,
+    "title": "Exclusive: Travis Kalanick is preparing to launch a new self-driving startup with backing from Uber, according to people familiar with the plans. http...",
+    "content": "Exclusive: Travis Kalanick is preparing to launch a new self-driving startup with backing from Uber, according to people familiar with the plans. https://thein.fo/4usT54S",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2032573681822585133",
+    "keywords_matched": [
+      "launch",
+      "[独家]exclusive"
+    ],
+    "priority_score": 19
+  },
+  {
+    "index": 15,
+    "title": "Elon Musk: “Look fear straight in the eye, and it will disappear.”",
+    "content": "Elon Musk: “Look fear straight in the eye, and it will disappear.”<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2032575472488374272/vid/avc1/1920x1080/6oTBZSw-yfdEOUTl.mp4?tag=21\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/2032575472488374272/img/d0QZdWyROqFxwgEh.jpg\"></video>",
+    "source": "NIK",
+    "url": "https://x.com/ns123abc/status/2032575524132827600",
+    "keywords_matched": [
+      "elon musk",
+      "musk"
+    ],
+    "priority_score": 17
+  },
+  {
+    "index": 16,
+    "title": "FULL INTERVIEW: @travisk joins TBPN to discuss his new company Atoms, physical AI, Uber, and more: 01:18 - Why he's been building in stealth for 8 yea...",
+    "content": "FULL INTERVIEW: @travisk joins TBPN to discuss his new company Atoms, physical AI, Uber, and more:<br><br>01:18 - Why he's been building in stealth for 8 years <br>04:32 - Atoms and the future of physical AI<br>08:10 - Creating a culture of builders<br>12:05 - Lessons from Uber<br>24:30 - The vision for physical AI and robotics<br>31:15 - Why humans will be the main beneficiaries of AI<br>38:20 - Mining, autonomous robots, automation<br>47:05 - Why Travis moved to Texas<br><video width=\"1280\" he",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032593548382507480",
+    "keywords_matched": [
+      "robotics",
+      "robot",
+      "autonomous"
     ],
     "priority_score": 15
   },
   {
-    "index": 4,
-    "title": "My hobby is reading patents.",
-    "content": "My hobby is reading patents.<div class=\"rsshub-quote\"><br><br>SETI Park: http://x.com/i/article/2032296706243772416<br></div>",
-    "source": "Robert Scoble",
-    "url": "https://x.com/Scobleizer/status/2032368375796760856"
+    "index": 17,
+    "title": "RT kwak: Every banker and PE guy knows the dread of printing and scrubbing decks and memos for hours. Final Pass legit reduces that down to 5 minutes....",
+    "content": "RT kwak<br>Every banker and PE guy knows the dread of printing and scrubbing decks and memos for hours. Final Pass legit reduces that down to 5 minutes.<br><br>Using multiple AI models to ensure it's client ready.<div class=\"rsshub-quote\"><br><br>Computer: Perplexity Computer can markup any document with Final Pass.<br><br>It runs 5 reviews in parallel and returns a fully marked up version with actionable edits.<br><br>In one query, it identified several improvements to our MNDA that we actually",
+    "source": "NIK",
+    "url": "https://x.com/ns123abc/status/2032572265083085139",
+    "keywords_matched": [
+      "perplexity"
+    ],
+    "priority_score": 15
   },
   {
-    "index": 5,
-    "title": "RT gfodor.id: Finally listened to the Dario interview and it blows my mind how his entire worldview around AI seems to be predicated on an assumption ...",
-    "content": "RT gfodor.id<br>Finally listened to the Dario interview and it blows my mind how his entire worldview around AI seems to be predicated on an assumption nobody is going to YOLO upload a tarball of frontier model weights to the Internet.",
-    "source": "Peter Steinberger 🦞",
-    "url": "https://x.com/steipete/status/2032204444616577276"
+    "index": 18,
+    "title": "RT dr. jack morris: pretty unsettling to see the disdain OpenAI employees hold for @karpathy, the most prolific educator of the AI era > median openai...",
+    "content": "RT dr. jack morris<br>pretty unsettling to see the disdain OpenAI employees hold for @karpathy,  the most prolific educator of the AI era<br><br>&gt; median openai employee: gathers niche data + runs evals for GPT-N datamix<br>&gt; karpathy: teaches millions how to build these models<br><br>who has more long-term impact?<br><img width=\"1190\" height=\"730\" style=\"\" src=\"https://pbs.twimg.com/media/HDUhi52b0AApTsL?format=jpg&amp;name=orig\" referrerpolicy=\"no-referrer\">",
+    "source": "Jeremy Howard",
+    "url": "https://x.com/jeremyphoward/status/2032598816696987661",
+    "keywords_matched": [
+      "openai"
+    ],
+    "priority_score": 15
+  },
+  {
+    "index": 19,
+    "title": "RT Jordi Hays: We’re live with @nikesharora right now:",
+    "content": "RT Jordi Hays<br>We’re live with @nikesharora right now:<div class=\"rsshub-quote\"><br><br>TBPN: Travis Kalanick Joins, xAI Rebuild, Spotify CEO Joins, Apple Faces Slop Allegations, Nikesh from Palo Alto Networks Joins https://x.com/i/broadcasts/1qJDzPMEAqOKV<br></div>",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032560070094143997",
+    "keywords_matched": [
+      "xai"
+    ],
+    "priority_score": 15
+  },
+  {
+    "index": 20,
+    "title": "RT Jordi Hays: We’re live with @travisk right now:",
+    "content": "RT Jordi Hays<br>We’re live with @travisk right now:<div class=\"rsshub-quote\"><br><br>TBPN: Travis Kalanick Joins, xAI Rebuild, Spotify CEO Joins, Apple Faces Slop Allegations, Nikesh from Palo Alto Networks Joins https://x.com/i/broadcasts/1qJDzPMEAqOKV<br></div>",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032531481894203637",
+    "keywords_matched": [
+      "xai"
+    ],
+    "priority_score": 15
+  },
+  {
+    "index": 21,
+    "title": "RT Dylan Abruscato: TK on Atoms, first on TBPN",
+    "content": "RT Dylan Abruscato<br>TK on Atoms, first on TBPN<div class=\"rsshub-quote\"><br><br>TBPN: EXCLUSIVE: @travisk says his new company Atoms will expand City Storage Systems' work into&nbsp;\"more efficient mines for Earth's industries\" and \"a wheelbase for robots.\"<br><br>\"There's a lot of room for specialized robots that do things in an efficient, industrial-scale way.\"<br><br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2032561397012582400/vid/avc1/1920x1080/lX2Oxp_s9",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032564754364117238",
+    "keywords_matched": [
+      "robot",
+      "[独家]exclusive"
+    ],
+    "priority_score": 13
+  },
+  {
+    "index": 22,
+    "title": "EXCLUSIVE: @travisk says his new company Atoms will expand City Storage Systems' work into \"more efficient mines for Earth's industries\" and \"a wheelb...",
+    "content": "EXCLUSIVE: @travisk says his new company Atoms will expand City Storage Systems' work into&nbsp;\"more efficient mines for Earth's industries\" and \"a wheelbase for robots.\"<br><br>\"There's a lot of room for specialized robots that do things in an efficient, industrial-scale way.\"<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2032561397012582400/vid/avc1/1920x1080/lX2Oxp_s9kDiO1TR.mp4?tag=21\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/20",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032563391668294105",
+    "keywords_matched": [
+      "robot",
+      "[独家]exclusive"
+    ],
+    "priority_score": 13
+  },
+  {
+    "index": 23,
+    "title": "Yes!! Exactly!! Open sourcing is making a gift to the world. There's two things about gifting: 1) you let go, it's not yours anymore 2) you expect abs...",
+    "content": "Yes!! Exactly!! Open sourcing is making a gift to the world.<br><br>There's two things about gifting:<br>1) you let go, it's not yours anymore<br>2) you expect absolutely nothing in return<br><br>Most of my life i thought everyone in oss had this mindset; over the years i learned that it ain't so.<div class=\"rsshub-quote\"><br><br>John Carmack: I know there is some overlap between open source and anti-AI activists, but I have a hard time reconciling it. My million+ open source LOC were always int",
+    "source": "Lucas Beyer (bl16)",
+    "url": "https://x.com/giffmana/status/2032528855215276282",
+    "keywords_matched": [
+      "open source"
+    ],
+    "priority_score": 11
+  },
+  {
+    "index": 24,
+    "title": "BREAKING: @travisk says he's relocated from California to Texas. \"On December 18, I moved to Texas. I don't know what's so specific about December 18,...",
+    "content": "BREAKING: @travisk says he's relocated from California to Texas.<br><br>\"On December 18, I moved to Texas. I don't know what's so specific about December 18, but let's just say it's prior to January.\"<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2032578460535984128/vid/avc1/1280x720/5I8MUJOV45M839E3.mp4?tag=14\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/2032578460535984128/img/3wNEZhvaIGbW_D9d.jpg\"></video>",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032578593851900295",
+    "keywords_matched": [
+      "[独家]breaking"
+    ],
+    "priority_score": 8
+  },
+  {
+    "index": 25,
+    "title": "BREAKING: @Grimezsz has joined LinkedIn",
+    "content": "BREAKING: @Grimezsz has joined LinkedIn<br><img width=\"1638\" height=\"2048\" style=\"\" src=\"https://pbs.twimg.com/media/HDUpD1kbYAAlsuA?format=jpg&amp;name=orig\" referrerpolicy=\"no-referrer\">",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032575957794697332",
+    "keywords_matched": [
+      "[独家]breaking"
+    ],
+    "priority_score": 8
+  },
+  {
+    "index": 26,
+    "title": "BREAKING: @nikesharora will be live in the Ultradome at 1:40p PT today",
+    "content": "BREAKING: @nikesharora will be live in the Ultradome at 1:40p PT today<br><img width=\"1639\" height=\"2048\" style=\"\" src=\"https://pbs.twimg.com/media/HDUHXCWWIAAB5K0?format=jpg&amp;name=orig\" referrerpolicy=\"no-referrer\">",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032538904386056696",
+    "keywords_matched": [
+      "[独家]breaking"
+    ],
+    "priority_score": 8
+  },
+  {
+    "index": 27,
+    "title": "When @travisk was fundraising Uber's round that valued it at $70B, he ran four rooms simultaneously out of their New York office for an entire week, e...",
+    "content": "When @travisk was fundraising Uber's round that valued it at $70B, he ran four rooms simultaneously out of their New York office for an entire week, each booked in 90-minute slots across 12-hour days:<br><br>\"This is how we'd fundraise: we had four rooms in our New York office booked for a week with an hour-and-a-half slot on each. So for 12 hours in a day, four rooms going in parallel.\"<br><br>\"I'm in the $250M-and-over club, that's one room. Then there are these other rooms, down to the fourth",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032583684868714881",
+    "keywords_matched": [
+      "pi"
+    ],
+    "priority_score": 5
+  },
+  {
+    "index": 28,
+    "title": "Did you know that Eupoor's are also weaker When they have a bar and plate on each side, thats 60kg When Americans do that thats 135lbs The standard Eu...",
+    "content": "Did you know that Eupoor's are also weaker<br>When they have a bar and plate on each side, thats 60kg<br>When Americans do that thats 135lbs<br>The standard Eupoor does 3lbs less per typical lift as a result",
+    "source": "Dylan Patel",
+    "url": "https://x.com/dylan522p/status/2032578501979812223",
+    "keywords_matched": [
+      "pi"
+    ],
+    "priority_score": 5
+  },
+  {
+    "index": 29,
+    "title": "Infinite pinball machines with “real” controls in VR is so cool. As seen at @SVVRLIVE last night.",
+    "content": "Infinite pinball machines with “real” controls in VR is so cool. As seen at @SVVRLIVE last night.<br><video width=\"2048\" height=\"1152\" src=\"https://video.twimg.com/amplify_video/2032569813529407488/vid/avc1/3840x2160/XWvChOVBaFFBZrty.mp4?tag=21\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/2032569813529407488/img/GKTsVm2aDrY6p24I.jpg\"></video><div class=\"rsshub-quote\"><br><br>Robert Scoble: Am at @SVVRLIVE at a great gathering of those in Spatial Computing.<br><br>Giant ",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2032571314565951547",
+    "keywords_matched": [
+      "pi"
+    ],
+    "priority_score": 5
+  },
+  {
+    "index": 30,
+    "title": "The Big Read: Kings League—founded by former Gerard Piqué—is bringing its internet-first soccer format to the U.S. later this year. https://thein.f...",
+    "content": "The Big Read: Kings League—founded by former Gerard Piqué—is bringing its internet-first soccer format to the U.S. later this year. https://thein.fo/4rtvrSW",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2032566141621612962",
+    "keywords_matched": [
+      "pi"
+    ],
+    "priority_score": 5
+  },
+  {
+    "index": 31,
+    "title": "Microsoft has recruited lawyers with experience at regulators to defend against growing cloud antitrust probes. https://thein.fo/40njhjI",
+    "content": "Microsoft has recruited lawyers with experience at regulators to defend against growing cloud antitrust probes. https://thein.fo/40njhjI",
+    "source": "The Information",
+    "url": "https://x.com/theinformation/status/2032558593942114688",
+    "keywords_matched": [
+      "[反垄断+]"
+    ],
+    "priority_score": 5
+  },
+  {
+    "index": 32,
+    "title": ".@travisk says AI will make human labor even more valuable and in-demand than ever before: \"Let's say the entire world - everything in our world - was...",
+    "content": ".@travisk says AI will make human labor even more valuable and in-demand than ever before:<br><br>\"Let's say the entire world - everything in our world - was automated, except for plumbers. You had machines making buildings - you would basically have like a thousand buildings a day.\"<br><br>\"How valuable would those plumbers be?\"<br><br>\"Each and every plumber would be like LeBron. Why? Because plumbing would be the long pole in the tent to progress. You can't get those thousand buildings unless",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032598658592752090"
+  },
+  {
+    "index": 33,
+    "title": "Uber founder @travisk says that whenever he meets up with @jason, he makes sure to praise him for being early on Uber: \"Whenever I meet with him, I'm ...",
+    "content": "Uber founder @travisk says that whenever he meets up with @jason, he makes sure to praise him for being early on Uber:<br><br>\"Whenever I meet with him, I'm like, 'Dude, I'm so honored to be meeting with one of our early investors.'\"<br><video width=\"1280\" height=\"720\" src=\"https://video.twimg.com/amplify_video/2032588527461191680/vid/avc1/1280x720/geJD5Lhwe1uwDVIl.mp4?tag=14\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/2032588527461191680/img/qww8v0Bq-jt3badB.jpg\"></vi",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032589755834388677"
+  },
+  {
+    "index": 34,
+    "title": "\"Go all the way until it hurts. If you're doing something and it's easy, it's not valuable.\" - @travisk \"If anyone says a strategic thing was easy, I'...",
+    "content": "\"Go all the way until it hurts. If you're doing something and it's easy, it's not valuable.\" - @travisk<br><br>\"If anyone says a strategic thing was easy, I'm like, 'You messed up. You could have gone way further. More competitive advantage. More differentiation. Get it together.'\"<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2032573428650442752/vid/avc1/1280x720/MZxcFMP7pK6Y1e4W.mp4?tag=14\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032573545512055279"
+  },
+  {
+    "index": 35,
+    "title": "\"Once you are in physical AI, you should understand that manufacturing is part of your tech stack.\" - Uber founder @travisk “Energy is part of your t...",
+    "content": "\"Once you are in physical AI, you should understand that manufacturing is part of your tech stack.\" - Uber founder @travisk<br><br>“Energy is part of your tech stack. Land development, real estate is part of your tech stack. People don't think about it like that, but it's true.”<br><video width=\"1280\" height=\"720\" src=\"https://video.twimg.com/amplify_video/2032568392927100929/vid/avc1/1280x720/YcTczo9pyTvAzZEQ.mp4?tag=14\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/2032",
+    "source": "TBPN",
+    "url": "https://x.com/tbpn/status/2032568447469760567"
+  },
+  {
+    "index": 36,
+    "title": "RT @GergelyOrosz: I community noted this fake post about Amazon layoffs that was false information The account (@TechLayoffLover) blocked…",
+    "content": "RT @GergelyOrosz: I community noted this fake post about Amazon layoffs that was false information<br><br>The account (@TechLayoffLover) blocked…",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2032566027469631652"
+  },
+  {
+    "index": 37,
+    "title": "RT Aakash Gupta: This startup is one to watch. Underrated team and founder growing via Threads (seriously!)",
+    "content": "RT Aakash Gupta<br>This startup is one to watch. Underrated team and founder growing via Threads (seriously!)<br><video width=\"1280\" height=\"720\" src=\"https://video.twimg.com/amplify_video/1992020698026659840/vid/avc1/1280x720/4iAdnRCkIBKYvGNk.mp4?tag=21\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/1992020698026659840/img/9LjKDJYGCrGN_yA5.jpg\"></video><div class=\"rsshub-quote\"><br><br>Junior: Introducing Junior<br>The first AI employee, for any role.<br><br>A true AI em",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2032594089145938055"
+  },
+  {
+    "index": 38,
+    "title": "RT TangoChen: 🕸️ BIG Update for Spatial Web Shooter is live! - v1.7 for Apple Vision Pro (shown in video) - v1.2 for Meta Quest 🎯 The new \"Sink...",
+    "content": "RT TangoChen<br>🕸️ BIG Update for Spatial Web Shooter is live!<br>- v1.7 for Apple Vision Pro (shown in video)<br>- v1.2 for Meta Quest<br>🎯 The new \"Sink or Swing\" Challenge Mode is here, with super props, web updates, and more!<br><video width=\"1920\" height=\"1080\" src=\"https://video.twimg.com/amplify_video/2032540750345351169/vid/avc1/1280x720/aamOOvtbbipKj6_J.mp4?tag=14\" controls=\"controls\" poster=\"https://pbs.twimg.com/amplify_video_thumb/2032540750345351169/img/MO06vYNa75Qrrvoh.jpg\"></video",
+    "source": "Robert Scoble",
+    "url": "https://x.com/Scobleizer/status/2032553540007375054"
+  },
+  {
+    "index": 39,
+    "title": "Looks like the MacBook neo is huge success. Tbh came as a surprise to me",
+    "content": "Looks like the MacBook neo is huge success. Tbh came as a surprise to me",
+    "source": "Chubby♨️",
+    "url": "https://x.com/kimmonismus/status/2032543587079016942"
   }
 ]
 

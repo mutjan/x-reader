@@ -108,3 +108,325 @@
 {"service": "twitter-news", "level": "INFO", "message": "    数据保存: 0.04s", "logger": "__main__", "timestamp": "2026-03-13T16:21:09.046938"}
 {"service": "twitter-news", "level": "INFO", "message": "    GitHub推送: 6.33s", "logger": "__main__", "timestamp": "2026-03-13T16:21:09.047060"}
 {"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-13T16:21:09.047118"}
+{"service": "twitter-news", "level": "INFO", "message": "结构化JSON日志已启用", "logger": "root", "timestamp": "2026-03-13T17:00:54.034909", "stage": "init"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-13T17:00:54.035152"}
+{"service": "twitter-news", "level": "INFO", "message": "开始 Twitter RSS 新闻选题更新...", "logger": "__main__", "timestamp": "2026-03-13T17:00:54.035220"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-13T17:00:54.035277"}
+{"service": "twitter-news", "level": "INFO", "message": "[缓存] 已加载 273 条历史推文ID (近1天: 273, 近7天: 273)", "logger": "__main__", "timestamp": "2026-03-13T17:00:54.035755"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 健康检查...", "logger": "__main__", "timestamp": "2026-03-13T17:00:54.035796"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 健康状态: 正常 | 响应时间: 2.14s | 内容数: 73", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.183979"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 获取内容...", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.184308"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 解析到 73 条内容 (耗时: 0.00s)", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.224505"}
+{"service": "twitter-news", "level": "INFO", "message": "[去重] 跳过 71 条已处理的推文", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.225018"}
+{"service": "twitter-news", "level": "INFO", "message": "[智能窗口] 分析: 1h=2, 6h=2, 24h=2, 频率≈0.1/h, 目标≈20, 计算窗口=24.0h → 取整=24h", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.225162"}
+{"service": "twitter-news", "level": "INFO", "message": "[筛选] 最近 24 小时: 2/2 条", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.225221"}
+{"service": "twitter-news", "level": "INFO", "message": "\n----------------------------------------", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.225253"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 执行关键词预筛选...", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.225282"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 高优先级新闻: 2 条", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.225802"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 普通新闻: 0 条", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.225838"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 类别分布: {'ai': 1, 'chip': 1}", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.225867"}
+{"service": "twitter-news", "level": "INFO", "message": "  #1 [20分] talent markets will price people who can... | 关键词: agent, agents", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.225894"}
+{"service": "twitter-news", "level": "INFO", "message": "  #2 [13分] intelligence moves from compression to e... | 关键词: intel", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.225923"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 保留 2 条新闻进入AI处理", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.225953"}
+{"service": "twitter-news", "level": "INFO", "message": "----------------------------------------", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.225975"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 开始处理 2 条新闻...", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.226000"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 切换到本地模型模式", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.226048"}
+{"service": "twitter-news", "level": "INFO", "message": "================================================================================", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.226072"}
+{"service": "twitter-news", "level": "INFO", "message": "[操作指引] 本地模型处理步骤：", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.226094"}
+{"service": "twitter-news", "level": "INFO", "message": "  1. 读取 twitter_ai_prompt.txt 文件（已自动生成）", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.226117"}
+{"service": "twitter-news", "level": "INFO", "message": "  2. 将内容发送给本地模型（Claude/ChatGPT等）", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.226138"}
+{"service": "twitter-news", "level": "INFO", "message": "  3. 将模型返回的 JSON 保存为 twitter_ai_result.json", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.226162"}
+{"service": "twitter-news", "level": "INFO", "message": "  4. 再次运行此脚本完成处理", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.226185"}
+{"service": "twitter-news", "level": "INFO", "message": "================================================================================", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.226206"}
+{"service": "twitter-news", "level": "INFO", "message": "\n============================================================", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.226770"}
+{"service": "twitter-news", "level": "INFO", "message": "[提示] 需要本地模型处理，请按上述指引操作", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.226821"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-13T17:00:56.226852"}
+{"service": "twitter-news", "level": "INFO", "message": "结构化JSON日志已启用", "logger": "root", "timestamp": "2026-03-13T17:01:13.615551", "stage": "init"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.615656"}
+{"service": "twitter-news", "level": "INFO", "message": "开始 Twitter RSS 新闻选题更新...", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.615698"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.615731"}
+{"service": "twitter-news", "level": "INFO", "message": "[缓存] 已加载 273 条历史推文ID (近1天: 273, 近7天: 273)", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.616042"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 健康检查...", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.616101"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 健康状态: 正常 | 响应时间: 0.06s | 内容数: 73", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.683226"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 获取内容...", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.683347"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 解析到 73 条内容 (耗时: 0.00s)", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714017"}
+{"service": "twitter-news", "level": "INFO", "message": "[去重] 跳过 71 条已处理的推文", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714282"}
+{"service": "twitter-news", "level": "INFO", "message": "[智能窗口] 分析: 1h=2, 6h=2, 24h=2, 频率≈0.1/h, 目标≈20, 计算窗口=24.0h → 取整=24h", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714349"}
+{"service": "twitter-news", "level": "INFO", "message": "[筛选] 最近 24 小时: 2/2 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714387"}
+{"service": "twitter-news", "level": "INFO", "message": "\n----------------------------------------", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714417"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 执行关键词预筛选...", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714445"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 高优先级新闻: 2 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714666"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 普通新闻: 0 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714699"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 类别分布: {'ai': 1, 'chip': 1}", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714727"}
+{"service": "twitter-news", "level": "INFO", "message": "  #1 [20分] talent markets will price people who can... | 关键词: agent, agents", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714752"}
+{"service": "twitter-news", "level": "INFO", "message": "  #2 [13分] intelligence moves from compression to e... | 关键词: intel", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714782"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 保留 2 条新闻进入AI处理", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714809"}
+{"service": "twitter-news", "level": "INFO", "message": "----------------------------------------", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714870"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 开始处理 2 条新闻...", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.714895"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 结果文件已备份: twitter_ai_result.json.processed", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.715367"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 成功加载 2 条处理结果", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.715436"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 返回 2 条处理结果", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.715486"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 最终产出 2 条新闻 (耗时: 0.00s)", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.716013"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: AI时代新趋势：人类价值转向发现Agent看不到的可能性空间...", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.721139"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: 智能演进新范式：从数据压缩转向主动探索...", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.721557"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增 2 条, 更新 0 条, 去重 0 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.721605"}
+{"service": "twitter-news", "level": "INFO", "message": "[数据] 已保存: 2026-03-13, 56 条新闻", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.768797"}
+{"service": "twitter-news", "level": "INFO", "message": "\n[GitHub] 开始推送...", "logger": "__main__", "timestamp": "2026-03-13T17:01:13.769184"}
+{"service": "twitter-news", "level": "INFO", "message": "[GitHub] 推送成功", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.784662"}
+{"service": "twitter-news", "level": "INFO", "message": "[缓存] 已更新 273 条推文ID（总缓存: 275条, 清理: 0条）", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.786772"}
+{"service": "twitter-news", "level": "INFO", "message": "\n============================================================", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787144"}
+{"service": "twitter-news", "level": "INFO", "message": "执行完成!", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787235"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787309"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【选题统计】", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787378"}
+{"service": "twitter-news", "level": "INFO", "message": "  S级(必报): 4 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787446"}
+{"service": "twitter-news", "level": "INFO", "message": "  A+级(重要): 11 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787513"}
+{"service": "twitter-news", "level": "INFO", "message": "  A级(优先): 19 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787582"}
+{"service": "twitter-news", "level": "INFO", "message": "  B级(可选): 22 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787646"}
+{"service": "twitter-news", "level": "INFO", "message": "  C级(参考): 0 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787710"}
+{"service": "twitter-news", "level": "INFO", "message": "  多源报道: 5 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787773"}
+{"service": "twitter-news", "level": "INFO", "message": "  关键词预筛选命中: 17 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787837"}
+{"service": "twitter-news", "level": "INFO", "message": "  今日新增: 56 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787901"}
+{"service": "twitter-news", "level": "INFO", "message": "  总计: 56 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.787964"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【类型分布】", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788027"}
+{"service": "twitter-news", "level": "INFO", "message": "  ai: 29 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788097"}
+{"service": "twitter-news", "level": "INFO", "message": "  tech: 14 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788162"}
+{"service": "twitter-news", "level": "INFO", "message": "  business: 10 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788240"}
+{"service": "twitter-news", "level": "INFO", "message": "  hot: 3 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788301"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【热门标签】", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788363"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI: 23 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788442"}
+{"service": "twitter-news", "level": "INFO", "message": "  商业动态: 7 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788505"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI应用: 4 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788567"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI Agent: 4 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788628"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI基础设施: 3 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788691"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI编程: 3 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788760"}
+{"service": "twitter-news", "level": "INFO", "message": "  大模型: 3 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788821"}
+{"service": "twitter-news", "level": "INFO", "message": "  多模态: 3 条", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.788951"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【核心实体】(183个)", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.789017"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI Agent, AI Engineer London, AI Engineer峰会, AI UGC, AI2, AI信息筛选, AI偏见, AI军事, AI导航, AI就业, AI投资, AI教育, AI数据中心, AI检索, AI玩具 等183个", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.789124"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【执行耗时】总计: 3.17 秒", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.789199"}
+{"service": "twitter-news", "level": "INFO", "message": "  详细分解:", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.789263"}
+{"service": "twitter-news", "level": "INFO", "message": "    RSS获取: 0.03s", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.789328"}
+{"service": "twitter-news", "level": "INFO", "message": "    RSS解析: 0.00s", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.789393"}
+{"service": "twitter-news", "level": "INFO", "message": "    筛选过滤: 0.00s", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.789457"}
+{"service": "twitter-news", "level": "INFO", "message": "    AI处理: 0.00s", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.789520"}
+{"service": "twitter-news", "level": "INFO", "message": "    合并去重: 0.01s", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.789581"}
+{"service": "twitter-news", "level": "INFO", "message": "    数据保存: 0.05s", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.789643"}
+{"service": "twitter-news", "level": "INFO", "message": "    GitHub推送: 3.02s", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.789703"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-13T17:01:16.789764"}
+{"service": "twitter-news", "level": "INFO", "message": "结构化JSON日志已启用", "logger": "root", "timestamp": "2026-03-14T07:35:35.903211", "stage": "init"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-14T07:35:35.903444"}
+{"service": "twitter-news", "level": "INFO", "message": "开始 Twitter RSS 新闻选题更新...", "logger": "__main__", "timestamp": "2026-03-14T07:35:35.903489"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-14T07:35:35.903521"}
+{"service": "twitter-news", "level": "INFO", "message": "[缓存] 已加载 275 条历史推文ID (近1天: 275, 近7天: 275)", "logger": "__main__", "timestamp": "2026-03-14T07:35:35.903826"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 健康检查...", "logger": "__main__", "timestamp": "2026-03-14T07:35:35.903858"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 健康状态: 正常 | 响应时间: 0.08s | 内容数: 93", "logger": "__main__", "timestamp": "2026-03-14T07:35:35.982234"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 获取内容...", "logger": "__main__", "timestamp": "2026-03-14T07:35:35.982372"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 解析到 93 条内容 (耗时: 0.00s)", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.022220"}
+{"service": "twitter-news", "level": "INFO", "message": "[智能窗口] 分析: 1h=4, 6h=57, 24h=93, 频率≈3.9/h, 目标≈20, 计算窗口=5.2h → 取整=5h", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.022639"}
+{"service": "twitter-news", "level": "INFO", "message": "[筛选] 最近 5 小时: 43/93 条", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.022702"}
+{"service": "twitter-news", "level": "INFO", "message": "\n----------------------------------------", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.022740"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 执行关键词预筛选...", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.022775"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 高优先级新闻: 32 条", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029148"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 普通新闻: 11 条", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029189"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 类别分布: {'ai': 16, 'product': 4, 'multimodal': 1, 'robotics': 12, 'bigtech': 3, 'business': 3, 'people': 2}", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029223"}
+{"service": "twitter-news", "level": "INFO", "message": "  #1 [46分] Here’s everything that happened this wee... | 关键词: gemini, launch, released, demo, multimodal", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029256"}
+{"service": "twitter-news", "level": "INFO", "message": "  #2 [38分] Investors say OpenAI’s expected valuatio... | 关键词: openai, nvidia, valuation", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029286"}
+{"service": "twitter-news", "level": "INFO", "message": "  #3 [36分] Exclusive: SpaceX is considering an unus... | 关键词: spacex, ipo, investment, [独家]exclusive", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029315"}
+{"service": "twitter-news", "level": "INFO", "message": "  #4 [35分] RT Charles Wu 吴英成AI🦞: 🦞MedOS is the futu... | 关键词: reasoning, agent, robotics, robot, pi", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029344"}
+{"service": "twitter-news", "level": "INFO", "message": "  #5 [34分] RT Boris Cherny: 🤯 You can now launch Cl... | 关键词: claude, launch, [独家]first time", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029376"}
+{"service": "twitter-news", "level": "INFO", "message": "  #6 [28分] Exclusive: Ex-Anthropic researchers are ... | 关键词: anthropic, pi, [独家]exclusive", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029406"}
+{"service": "twitter-news", "level": "INFO", "message": "  #7 [27分] Elon Musk & Sam Altman are gearing up fo... | 关键词: openai, elon musk, musk, sam altman, [法律-降权]", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029437"}
+{"service": "twitter-news", "level": "INFO", "message": "  #8 [25分] Gemini has shed about 70% of its value s... | 关键词: gemini, ipo", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029464"}
+{"service": "twitter-news", "level": "INFO", "message": "  #9 [25分] Anthropic keeps on delivering: 1m contex... | 关键词: anthropic, claude, pi", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029504"}
+{"service": "twitter-news", "level": "INFO", "message": "  #10 [23分] day 30. my designer has become a better ... | 关键词: agi, [独家]breaking", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029530"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 保留 40 条新闻进入AI处理", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029567"}
+{"service": "twitter-news", "level": "INFO", "message": "----------------------------------------", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029594"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 开始处理 40 条新闻...", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029622"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 切换到本地模型模式", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029655"}
+{"service": "twitter-news", "level": "INFO", "message": "================================================================================", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029684"}
+{"service": "twitter-news", "level": "INFO", "message": "[操作指引] 本地模型处理步骤：", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029710"}
+{"service": "twitter-news", "level": "INFO", "message": "  1. 读取 twitter_ai_prompt.txt 文件（已自动生成）", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029736"}
+{"service": "twitter-news", "level": "INFO", "message": "  2. 将内容发送给本地模型（Claude/ChatGPT等）", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029766"}
+{"service": "twitter-news", "level": "INFO", "message": "  3. 将模型返回的 JSON 保存为 twitter_ai_result.json", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029792"}
+{"service": "twitter-news", "level": "INFO", "message": "  4. 再次运行此脚本完成处理", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029818"}
+{"service": "twitter-news", "level": "INFO", "message": "================================================================================", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.029843"}
+{"service": "twitter-news", "level": "INFO", "message": "\n============================================================", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.030427"}
+{"service": "twitter-news", "level": "INFO", "message": "[提示] 需要本地模型处理，请按上述指引操作", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.030468"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-14T07:35:36.030496"}
+{"service": "twitter-news", "level": "INFO", "message": "结构化JSON日志已启用", "logger": "root", "timestamp": "2026-03-14T07:36:36.555456", "stage": "init"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.555576"}
+{"service": "twitter-news", "level": "INFO", "message": "开始 Twitter RSS 新闻选题更新...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.555615"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.555649"}
+{"service": "twitter-news", "level": "INFO", "message": "[缓存] 已加载 275 条历史推文ID (近1天: 275, 近7天: 275)", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.555985"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 健康检查...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.556019"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 健康状态: 正常 | 响应时间: 0.06s | 内容数: 93", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.623786"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 获取内容...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.623934"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 解析到 93 条内容 (耗时: 0.00s)", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.664580"}
+{"service": "twitter-news", "level": "INFO", "message": "[智能窗口] 分析: 1h=4, 6h=57, 24h=93, 频率≈3.9/h, 目标≈20, 计算窗口=5.2h → 取整=5h", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.665004"}
+{"service": "twitter-news", "level": "INFO", "message": "[筛选] 最近 5 小时: 43/93 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.665073"}
+{"service": "twitter-news", "level": "INFO", "message": "\n----------------------------------------", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.665112"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 执行关键词预筛选...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.665144"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 高优先级新闻: 32 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671104"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 普通新闻: 11 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671241"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 类别分布: {'ai': 16, 'product': 4, 'multimodal': 1, 'robotics': 12, 'bigtech': 3, 'business': 3, 'people': 2}", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671283"}
+{"service": "twitter-news", "level": "INFO", "message": "  #1 [46分] Here’s everything that happened this wee... | 关键词: gemini, launch, released, demo, multimodal", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671318"}
+{"service": "twitter-news", "level": "INFO", "message": "  #2 [38分] Investors say OpenAI’s expected valuatio... | 关键词: openai, nvidia, valuation", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671348"}
+{"service": "twitter-news", "level": "INFO", "message": "  #3 [36分] Exclusive: SpaceX is considering an unus... | 关键词: spacex, ipo, investment, [独家]exclusive", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671377"}
+{"service": "twitter-news", "level": "INFO", "message": "  #4 [35分] RT Charles Wu 吴英成AI🦞: 🦞MedOS is the futu... | 关键词: reasoning, agent, robotics, robot, pi", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671405"}
+{"service": "twitter-news", "level": "INFO", "message": "  #5 [34分] RT Boris Cherny: 🤯 You can now launch Cl... | 关键词: claude, launch, [独家]first time", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671441"}
+{"service": "twitter-news", "level": "INFO", "message": "  #6 [28分] Exclusive: Ex-Anthropic researchers are ... | 关键词: anthropic, pi, [独家]exclusive", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671468"}
+{"service": "twitter-news", "level": "INFO", "message": "  #7 [27分] Elon Musk & Sam Altman are gearing up fo... | 关键词: openai, elon musk, musk, sam altman, [法律-降权]", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671494"}
+{"service": "twitter-news", "level": "INFO", "message": "  #8 [25分] Gemini has shed about 70% of its value s... | 关键词: gemini, ipo", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671519"}
+{"service": "twitter-news", "level": "INFO", "message": "  #9 [25分] Anthropic keeps on delivering: 1m contex... | 关键词: anthropic, claude, pi", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671544"}
+{"service": "twitter-news", "level": "INFO", "message": "  #10 [23分] day 30. my designer has become a better ... | 关键词: agi, [独家]breaking", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671570"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 保留 40 条新闻进入AI处理", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671608"}
+{"service": "twitter-news", "level": "INFO", "message": "----------------------------------------", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671653"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 开始处理 40 条新闻...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.671680"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 结果文件已备份: twitter_ai_result.json.processed", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.672346"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 成功加载 15 条处理结果", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.672386"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 返回 15 条处理结果", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.672417"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 最终产出 15 条新闻 (耗时: 0.00s)", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.673893"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: 独家：Uber创始人Kalanick筹备新自动驾驶公司，Ub...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.685561"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: Anthropic与黑石集团洽谈合作：助力私募股权公司全面部...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.685923"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: Travis Kalanick专访：Atoms公司8年 st...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.686197"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: 地缘政治风险上升：OpenAI与xAI等海湾AI项目面临新挑...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.686346"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: 设计师30天AI训练成果：独立发明规范驱动开发方法论...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.686496"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: Perplexity Computer推出Final Pas...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.686676"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: Kalanick独家透露：Atoms将进军高效采矿与机器人底...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.686839"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增 7 条, 更新 0 条, 去重 8 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.687006"}
+{"service": "twitter-news", "level": "INFO", "message": "[数据] 已保存: 2026-03-14, 22 条新闻", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.786168"}
+{"service": "twitter-news", "level": "INFO", "message": "\n[GitHub] 开始推送...", "logger": "__main__", "timestamp": "2026-03-14T07:36:36.788399"}
+{"service": "twitter-news", "level": "INFO", "message": "[GitHub] 推送成功", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.631765"}
+{"service": "twitter-news", "level": "INFO", "message": "[缓存] 已更新 275 条推文ID（总缓存: 315条, 清理: 0条）", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.632862"}
+{"service": "twitter-news", "level": "INFO", "message": "\n============================================================", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.632992"}
+{"service": "twitter-news", "level": "INFO", "message": "执行完成!", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633032"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633071"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【选题统计】", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633117"}
+{"service": "twitter-news", "level": "INFO", "message": "  S级(必报): 2 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633151"}
+{"service": "twitter-news", "level": "INFO", "message": "  A+级(重要): 3 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633189"}
+{"service": "twitter-news", "level": "INFO", "message": "  A级(优先): 12 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633219"}
+{"service": "twitter-news", "level": "INFO", "message": "  B级(可选): 5 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633246"}
+{"service": "twitter-news", "level": "INFO", "message": "  C级(参考): 0 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633270"}
+{"service": "twitter-news", "level": "INFO", "message": "  多源报道: 0 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633295"}
+{"service": "twitter-news", "level": "INFO", "message": "  关键词预筛选命中: 6 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633341"}
+{"service": "twitter-news", "level": "INFO", "message": "  今日新增: 22 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633376"}
+{"service": "twitter-news", "level": "INFO", "message": "  总计: 22 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633407"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【类型分布】", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633433"}
+{"service": "twitter-news", "level": "INFO", "message": "  ai: 11 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633462"}
+{"service": "twitter-news", "level": "INFO", "message": "  business: 6 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633489"}
+{"service": "twitter-news", "level": "INFO", "message": "  tech: 4 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633514"}
+{"service": "twitter-news", "level": "INFO", "message": "  hot: 1 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633538"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【热门标签】", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633585"}
+{"service": "twitter-news", "level": "INFO", "message": "  商业动态: 3 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633618"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI: 3 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633646"}
+{"service": "twitter-news", "level": "INFO", "message": "  机器人: 2 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633671"}
+{"service": "twitter-news", "level": "INFO", "message": "  自动驾驶: 1 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633696"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI应用: 1 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633739"}
+{"service": "twitter-news", "level": "INFO", "message": "  物理AI: 1 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633805"}
+{"service": "twitter-news", "level": "INFO", "message": "  地缘政治: 1 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.633882"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI编程: 1 条", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.634118"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【核心实体】(58个)", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.634309"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI, AI Workspace, AI agents, AI compute, AI deception, AI safety, AI startup, AI编程, Anthropic, Atoms, Blackstone, BrokenArXiv, ChatGPT, Claude Code, Claude Opus 4.6 等58个", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.634432"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【执行耗时】总计: 2.08 秒", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.634576"}
+{"service": "twitter-news", "level": "INFO", "message": "  详细分解:", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.634678"}
+{"service": "twitter-news", "level": "INFO", "message": "    RSS获取: 0.04s", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.634772"}
+{"service": "twitter-news", "level": "INFO", "message": "    RSS解析: 0.00s", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.634869"}
+{"service": "twitter-news", "level": "INFO", "message": "    筛选过滤: 0.00s", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.634934"}
+{"service": "twitter-news", "level": "INFO", "message": "    AI处理: 0.00s", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.635001"}
+{"service": "twitter-news", "level": "INFO", "message": "    合并去重: 0.01s", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.635033"}
+{"service": "twitter-news", "level": "INFO", "message": "    数据保存: 0.10s", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.635062"}
+{"service": "twitter-news", "level": "INFO", "message": "    GitHub推送: 1.84s", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.635099"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-14T07:36:38.635125"}
+{"service": "twitter-news", "level": "INFO", "message": "结构化JSON日志已启用", "logger": "root", "timestamp": "2026-03-14T11:00:57.036779", "stage": "init"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-14T11:00:57.037020"}
+{"service": "twitter-news", "level": "INFO", "message": "开始 Twitter RSS 新闻选题更新...", "logger": "__main__", "timestamp": "2026-03-14T11:00:57.037066"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-14T11:00:57.037101"}
+{"service": "twitter-news", "level": "INFO", "message": "[缓存] 已加载 315 条历史推文ID (近1天: 315, 近7天: 315)", "logger": "__main__", "timestamp": "2026-03-14T11:00:57.037491"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 健康检查...", "logger": "__main__", "timestamp": "2026-03-14T11:00:57.037529"}
+{"service": "twitter-news", "level": "ERROR", "message": "[RSS] 健康状态: 异常 | 错误: RSS源返回空内容", "logger": "__main__", "timestamp": "2026-03-14T11:00:59.952508"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 获取内容...", "logger": "__main__", "timestamp": "2026-03-14T11:00:59.952942"}
+{"service": "twitter-news", "level": "INFO", "message": "[RSS] 解析到 85 条内容 (耗时: 0.00s)", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.937209"}
+{"service": "twitter-news", "level": "INFO", "message": "[去重] 跳过 38 条已处理的推文", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.937488"}
+{"service": "twitter-news", "level": "INFO", "message": "[智能窗口] 分析: 1h=5, 6h=18, 24h=47, 频率≈2.0/h, 目标≈20, 计算窗口=10.2h → 取整=10h", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.937574"}
+{"service": "twitter-news", "level": "INFO", "message": "[筛选] 最近 10 小时: 40/47 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.937614"}
+{"service": "twitter-news", "level": "INFO", "message": "\n----------------------------------------", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.937645"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 执行关键词预筛选...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.937673"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 高优先级新闻: 20 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.942717"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 普通新闻: 20 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.942867"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 类别分布: {'bigtech': 2, 'business': 2, 'ai': 13, 'coding': 1, 'robotics': 6, 'product': 1}", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.942909"}
+{"service": "twitter-news", "level": "INFO", "message": "  #1 [36分] Exclusive: The SpaceX IPO is expected to... | 关键词: spacex, alibaba, ipo, [独家]exclusive", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.942956"}
+{"service": "twitter-news", "level": "INFO", "message": "  #2 [30分] RT Luke The Dev: If your OpenClaw agents... | 关键词: agent, agents, ai engineer, pi", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.942985"}
+{"service": "twitter-news", "level": "INFO", "message": "  #3 [30分] RT Nikil Viswanathan: Excited to share o... | 关键词: agent, agents, autonomous, pi", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.943010"}
+{"service": "twitter-news", "level": "INFO", "message": "  #4 [26分] RT Jeffrey Emanuel: Agent Coding Life Ha... | 关键词: agent, github", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.943033"}
+{"service": "twitter-news", "level": "INFO", "message": "  #5 [25分] Happy Friday. On today's show: - @travis... | 关键词: xai, robotics, robot", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.943058"}
+{"service": "twitter-news", "level": "INFO", "message": "  #6 [23分] BREAKING: @dchaplot is joining xAI... | 关键词: xai, [独家]breaking", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.943081"}
+{"service": "twitter-news", "level": "INFO", "message": "  #7 [23分] RT Bojan Tunguz: BREAKING: the AI commun... | 关键词: reasoning, [独家]breaking", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.943105"}
+{"service": "twitter-news", "level": "INFO", "message": "  #8 [20分] RT Alex Albert: Tons of improvements shi... | 关键词: claude, pi", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.943180"}
+{"service": "twitter-news", "level": "INFO", "message": "  #9 [20分] Request for PR, we gotta add this to @op... | 关键词: agent, mcp", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.943422"}
+{"service": "twitter-news", "level": "INFO", "message": "  #10 [20分] RT Alexander Kustov: This is the best si... | 关键词: agent, agents", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.943590"}
+{"service": "twitter-news", "level": "INFO", "message": "[预筛选] 保留 40 条新闻进入AI处理", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.943722"}
+{"service": "twitter-news", "level": "INFO", "message": "----------------------------------------", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.943805"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 开始处理 40 条新闻...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.943877"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 结果文件已备份: twitter_ai_result.json.processed", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.945310"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 成功加载 15 条处理结果", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.945442"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 返回 15 条处理结果", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.945483"}
+{"service": "twitter-news", "level": "INFO", "message": "[AI] 最终产出 15 条新闻 (耗时: 0.00s)", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.947140"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: 斯坦福+普林斯顿联合推出MedOS：AI-XR-机器人三位一...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.973326"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: Anthropic百万token上下文正式开放：Opus 4...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.973761"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: 独家：SpaceX IPO将采用罕见多投行分责架构...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.974047"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: Claude Code重磅更新：手机远程启动本地会话...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.974331"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: 独家：Anthropic前科学家新创AI科研公司估值10亿美...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.974630"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: Google Gemini全面进击：地图+办公套件双端齐发新...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.974934"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: 独家：Uber创始人Travis Kalanick筹备新自动...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.975240"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: 独家：Travis Kalanick新公司Atoms将进军采...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.975552"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: Anthropic联手黑石集团：为私募被投企业部署AI...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.975862"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: OpenAI估值28倍于2026预期收入，投资者喊贵...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.976179"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: Travis Kalanick专访：物理AI与机器人未来愿景...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.976540"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: OpenAI与xAI面临中东AI项目地缘政治风险...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.976869"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: 马斯克与奥特曼诉讼大战在即：OpenAI或面临1090亿美元...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.977211"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: AI Agent新玩法：Aivilization让AI拥有独...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.977557"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增选题: Perplexity推出Final Pass：5分钟完成文档...", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.977916"}
+{"service": "twitter-news", "level": "INFO", "message": "[合并] 新增 15 条, 更新 0 条, 去重 0 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:01.977954"}
+{"service": "twitter-news", "level": "INFO", "message": "[数据] 已保存: 2026-03-14, 37 条新闻", "logger": "__main__", "timestamp": "2026-03-14T11:01:02.162701"}
+{"service": "twitter-news", "level": "INFO", "message": "\n[GitHub] 开始推送...", "logger": "__main__", "timestamp": "2026-03-14T11:01:02.163853"}
+{"service": "twitter-news", "level": "INFO", "message": "[GitHub] 推送成功", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.906270"}
+{"service": "twitter-news", "level": "INFO", "message": "[缓存] 已更新 315 条推文ID（总缓存: 355条, 清理: 0条）", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907454"}
+{"service": "twitter-news", "level": "INFO", "message": "\n============================================================", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907586"}
+{"service": "twitter-news", "level": "INFO", "message": "执行完成!", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907625"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907661"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【选题统计】", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907699"}
+{"service": "twitter-news", "level": "INFO", "message": "  S级(必报): 2 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907732"}
+{"service": "twitter-news", "level": "INFO", "message": "  A+级(重要): 6 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907763"}
+{"service": "twitter-news", "level": "INFO", "message": "  A级(优先): 22 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907805"}
+{"service": "twitter-news", "level": "INFO", "message": "  B级(可选): 7 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907835"}
+{"service": "twitter-news", "level": "INFO", "message": "  C级(参考): 0 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907866"}
+{"service": "twitter-news", "level": "INFO", "message": "  多源报道: 0 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907896"}
+{"service": "twitter-news", "level": "INFO", "message": "  关键词预筛选命中: 17 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907924"}
+{"service": "twitter-news", "level": "INFO", "message": "  今日新增: 37 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907957"}
+{"service": "twitter-news", "level": "INFO", "message": "  总计: 37 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.907987"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【类型分布】", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908015"}
+{"service": "twitter-news", "level": "INFO", "message": "  ai: 17 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908048"}
+{"service": "twitter-news", "level": "INFO", "message": "  business: 13 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908077"}
+{"service": "twitter-news", "level": "INFO", "message": "  tech: 6 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908105"}
+{"service": "twitter-news", "level": "INFO", "message": "  hot: 1 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908134"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【热门标签】", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908163"}
+{"service": "twitter-news", "level": "INFO", "message": "  商业动态: 10 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908198"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI: 9 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908228"}
+{"service": "twitter-news", "level": "INFO", "message": "  机器人: 6 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908256"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI应用: 4 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908284"}
+{"service": "twitter-news", "level": "INFO", "message": "  具身智能: 3 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908312"}
+{"service": "twitter-news", "level": "INFO", "message": "  自动驾驶: 2 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908340"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI编程: 2 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908368"}
+{"service": "twitter-news", "level": "INFO", "message": "  大模型: 2 条", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908396"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【核心实体】(85个)", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908423"}
+{"service": "twitter-news", "level": "INFO", "message": "  AI, AI Agent, AI Workspace, AI agents, AI compute, AI deception, AI safety, AI startup, AI办公, AI医疗, AI科研, AI编程, AI部署, Aivilization, Anthropic 等85个", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908472"}
+{"service": "twitter-news", "level": "INFO", "message": "\n【执行耗时】总计: 6.87 秒", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908513"}
+{"service": "twitter-news", "level": "INFO", "message": "  详细分解:", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908542"}
+{"service": "twitter-news", "level": "INFO", "message": "    RSS获取: 1.98s", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908572"}
+{"service": "twitter-news", "level": "INFO", "message": "    RSS解析: 0.00s", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908601"}
+{"service": "twitter-news", "level": "INFO", "message": "    筛选过滤: 0.00s", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908630"}
+{"service": "twitter-news", "level": "INFO", "message": "    AI处理: 0.00s", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908659"}
+{"service": "twitter-news", "level": "INFO", "message": "    合并去重: 0.03s", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908688"}
+{"service": "twitter-news", "level": "INFO", "message": "    数据保存: 0.19s", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908716"}
+{"service": "twitter-news", "level": "INFO", "message": "    GitHub推送: 1.74s", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908744"}
+{"service": "twitter-news", "level": "INFO", "message": "============================================================", "logger": "__main__", "timestamp": "2026-03-14T11:01:03.908773"}
