@@ -1005,6 +1005,7 @@ def is_same_event(item1, item2, time_threshold_seconds=7200):
     3. 标题高度相似（Jaccard > 0.7 或 包含关系）
     4. 实体高度重叠 + 时间接近
     5. 关键词高度重叠 + 时间接近
+    6. 同一主体（公司/人物）+ 主题相似 + 时间接近
 
     时间阈值说明：
     - 默认2小时（7200秒），因为同一产品发布/重大新闻可能在数小时内被多次报道
@@ -1098,6 +1099,71 @@ def is_same_event(item1, item2, time_threshold_seconds=7200):
                 if common_core and time_diff <= 21600:  # 6小时内
                     return True
 
+    # 9. 【新增】同一主体 + 主题相似度 + 时间接近
+    # 用于合并同一公司/人物的多条相关新闻（如OpenClaw的多个更新、John Carmack的多条发言）
+    if entities1 and entities2 and time_diff <= 86400:  # 24小时内
+        # 定义关键主体（公司/产品/人物）- 包含中英文实体
+        key_subjects = {'OpenClaw', 'Claude', 'OpenAI', 'Anthropic', 'Google', 'Microsoft',
+                        'NVIDIA', 'Meta', 'Apple', 'Tesla', 'SpaceX', 'xAI',
+                        'Elon Musk', 'Sam Altman', 'John Carmack', 'Andrej Karpathy',
+                        'Jensen Huang', 'Demis Hassabis', 'Sundar Pichai',
+                        '开源', 'open source', 'AI Agent', 'agent', 'mcp'}
+
+        # 检查是否有共同的关键主体
+        common_key_subjects = (entities1 & entities2) & key_subjects
+
+        if common_key_subjects:
+            # 提取标题核心词（去除停用词后的关键词）
+            def extract_core_keywords(title):
+                stop_words = {'刚刚', '重磅', '炸裂', '突发', '首次', '全新', '正式', '已经', '现在', '最新',
+                              'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'is', 'are'}
+                words = re.findall(r'[\u4e00-\u9fa5]{2,}|\b[a-zA-Z]{3,}\b', title.lower())
+                return set(w for w in words if w not in stop_words)
+
+            core_kw1 = extract_core_keywords(title1)
+            core_kw2 = extract_core_keywords(title2)
+
+            if core_kw1 and core_kw2:
+                # 计算主题相似度
+                common_core_kw = core_kw1 & core_kw2
+                all_core_kw = core_kw1 | core_kw2
+
+                if all_core_kw:
+                    topic_sim = len(common_core_kw) / len(all_core_kw)
+
+                    # 主题相似度 >= 30% 且至少有2个共同核心词
+                    if topic_sim >= 0.30 and len(common_core_kw) >= 2:
+                        return True
+
+            # 特殊处理：检查实体中的主题词匹配
+            # 如果两条新闻都有相同的主题实体（如"开源"、"AI训练"等），视为相关
+            topic_entities = {'开源', 'AI训练', 'open source', 'AI Agent', 'agent', 'mcp', 'MCP',
+                             '安全', 'security', '浏览器', 'browser', 'chrome'}
+            common_topic_entities = (entities1 & entities2) & topic_entities
+            # 要求至少2个共同主题实体，或者1个主题实体+时间非常接近（1小时内）
+            if len(common_topic_entities) >= 2:
+                return True
+            if len(common_topic_entities) == 1 and time_diff <= 3600:  # 1小时内
+                return True
+
+            # 特殊处理：同一关键主体的多条新闻，如果在短时间内（6小时内）发布
+            # 且有至少2个共同实体（非主体本身），视为相关新闻
+            if time_diff <= 21600:  # 6小时内
+                other_common = (entities1 & entities2) - common_key_subjects
+                if len(other_common) >= 2:  # 要求至少2个其他共同实体
+                    return True
+
+            # 特殊处理：同一产品/公司的多条更新新闻（如OpenClaw的多个功能更新）
+            # 如果在短时间内（12小时内）发布，且标题都包含更新相关词汇
+            # 放宽条件：只要是同一产品的更新新闻（无论是否有其他共同实体），都视为相关
+            if time_diff <= 43200:  # 12小时内
+                update_indicators = {'发布', '更新', '新版', '升级', '推出', '上线', '实现', '开放', '集成', '支持',
+                                     'launch', 'release', 'update', 'new', 'available', 'introducing', 'announced'}
+                title1_has_update = any(ind in title1 for ind in update_indicators)
+                title2_has_update = any(ind in title2 for ind in update_indicators)
+                if title1_has_update and title2_has_update:
+                    return True
+
     return False
 
 
@@ -1128,6 +1194,7 @@ def calculate_event_match_score(item1, item2):
     - 关键词重叠度: 0.0-1.0
     - 时间接近度: 0-0.2 奖励
     - 产品版本匹配: 额外奖励
+    - 同一主体+主题相似: 额外奖励
     """
     score = 0.0
 
@@ -1140,11 +1207,13 @@ def calculate_event_match_score(item1, item2):
     if tweet_id1 and tweet_id2 and tweet_id1.group(1) == tweet_id2.group(1):
         return 1.0
 
-    # 2. 时间窗口检查（放宽到6小时）
+    # 2. 时间窗口检查（放宽到24小时以支持同一主体多新闻合并）
     time1, time2 = item1.get("timestamp", 0), item2.get("timestamp", 0)
     time_diff = abs(time1 - time2)
-    if time_diff > 21600:  # 超过6小时，无奖励
+    if time_diff > 86400:  # 超过24小时，无奖励
         time_bonus = 0
+    elif time_diff > 21600:  # 6-24小时，小幅奖励
+        time_bonus = 0.03
     elif time_diff > 7200:  # 2-6小时，小幅奖励
         time_bonus = 0.05
     elif time_diff > 3600:  # 1-2小时，中等奖励
@@ -1194,7 +1263,8 @@ def calculate_event_match_score(item1, item2):
             # 顶级实体奖励
             important_entities = {'OpenAI', 'Anthropic', 'Google', 'Microsoft', 'Apple',
                                   'Meta', 'NVIDIA', 'Tesla', 'SpaceX', 'xAI',
-                                  'Elon Musk', 'Sam Altman', 'Andrej Karpathy'}
+                                  'Elon Musk', 'Sam Altman', 'Andrej Karpathy', 'John Carmack',
+                                  'OpenClaw', 'Claude'}
             if common & important_entities:
                 score += 0.15
 
@@ -1207,7 +1277,63 @@ def calculate_event_match_score(item1, item2):
         elif len(common_kw) >= 2:
             score += 0.1
 
-    # 7. 时间奖励
+    # 7. 【新增】同一主体+主题相似度评分（用于find_duplicate的阈值判断）
+    if entities1 and entities2 and time_diff <= 86400:
+        key_subjects = {'OpenClaw', 'Claude', 'OpenAI', 'Anthropic', 'Google', 'Microsoft',
+                        'NVIDIA', 'Meta', 'Apple', 'Tesla', 'SpaceX', 'xAI',
+                        'Elon Musk', 'Sam Altman', 'John Carmack', 'Andrej Karpathy',
+                        'Jensen Huang', 'Demis Hassabis', 'Sundar Pichai',
+                        '开源', 'open source', 'AI Agent', 'agent', 'mcp'}
+
+        common_key_subjects = (entities1 & entities2) & key_subjects
+        if common_key_subjects:
+            # 提取标题核心词
+            def extract_core_keywords(title):
+                stop_words = {'刚刚', '重磅', '炸裂', '突发', '首次', '全新', '正式', '已经', '现在', '最新',
+                              'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'is', 'are'}
+                words = re.findall(r'[\u4e00-\u9fa5]{2,}|\b[a-zA-Z]{3,}\b', title.lower())
+                return set(w for w in words if w not in stop_words)
+
+            core_kw1 = extract_core_keywords(title1)
+            core_kw2 = extract_core_keywords(title2)
+
+            if core_kw1 and core_kw2:
+                common_core_kw = core_kw1 & core_kw2
+                all_core_kw = core_kw1 | core_kw2
+
+                if all_core_kw:
+                    topic_sim = len(common_core_kw) / len(all_core_kw)
+                    # 主题相似度奖励
+                    if topic_sim >= 0.25 and len(common_core_kw) >= 2:
+                        score += 0.25  # 主题相似度高
+                    elif topic_sim >= 0.15 and len(common_core_kw) >= 1:
+                        score += 0.15  # 主题有一定相似
+
+            # 主题实体匹配奖励
+            topic_entities = {'开源', 'AI训练', 'open source', 'AI Agent', 'agent', 'mcp', 'MCP',
+                             '安全', 'security', '浏览器', 'browser', 'chrome'}
+            common_topic_entities = (entities1 & entities2) & topic_entities
+            if len(common_topic_entities) >= 1:
+                score += 0.2
+
+            # 同一主体多更新奖励（12小时内都包含更新词）
+            if time_diff <= 43200:
+                update_indicators = {'发布', '更新', '新版', '升级', '推出', '上线', '实现', '开放', '集成', '支持',
+                                     'launch', 'release', 'update', 'new', 'available', 'introducing', 'announced'}
+                title1_has_update = any(ind in title1 for ind in update_indicators)
+                title2_has_update = any(ind in title2 for ind in update_indicators)
+                if title1_has_update and title2_has_update:
+                    score += 0.25  # 提高权重，确保find_duplicate能正确识别
+
+            # 6小时内 + 其他共同实体
+            if time_diff <= 21600:
+                other_common = (entities1 & entities2) - common_key_subjects
+                if len(other_common) >= 2:
+                    score += 0.15
+                elif len(other_common) >= 1:
+                    score += 0.08
+
+    # 8. 时间奖励
     score += time_bonus
 
     return min(score, 1.0)
