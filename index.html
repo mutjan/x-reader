@@ -238,8 +238,8 @@
             accent-color: #1d9bf0;
         }
         
-        /* 类型标签 */
-        .type-tag {
+        /* 评级标签 */
+        .rating-tag {
             display: inline-block;
             padding: 3px 8px;
             border-radius: 4px;
@@ -248,7 +248,7 @@
             white-space: nowrap;
             cursor: pointer;
         }
-        .type-tag:hover {
+        .rating-tag:hover {
             opacity: 0.8;
         }
 
@@ -270,20 +270,24 @@
             border-color: #1d9bf0;
             color: white;
         }
-        .type-hot {
+        .rating-S {
+            background: linear-gradient(135deg, #ffd700, #ffaa00);
+            color: #000;
+        }
+        .rating-A\+ {
             background: #f4212e;
             color: white;
         }
-        .type-ai {
+        .rating-A {
             background: #8b5cf6;
             color: white;
         }
-        .type-tech {
+        .rating-B {
             background: #1d9bf0;
             color: white;
         }
-        .type-business {
-            background: #00ba7c;
+        .rating-C {
+            background: #6b7280;
             color: white;
         }
         
@@ -472,7 +476,7 @@
                 font-size: 12px;
                 line-height: 1.5;
             }
-            .type-tag {
+            .rating-tag {
                 font-size: 10px;
                 padding: 2px 5px;
             }
@@ -528,7 +532,7 @@
             </div>
 
             <div class="sort-controls">
-                <button class="sort-btn" onclick="sortBy('type')" id="sortType">按类型排序</button>
+                <button class="sort-btn" onclick="sortBy('rating')" id="sortRating">按评级排序</button>
                 <button class="sort-btn" onclick="sortBy('entities')" id="sortEntities">按实体排序</button>
                 <button class="sort-btn" onclick="sortBy('sources')" id="sortSources">按来源数排序</button>
                 <button class="sort-btn" onclick="sortBy('time')" id="sortTime">按更新时间排序</button>
@@ -575,7 +579,7 @@
         let currentTab = 'news';
         let currentDate = '';
         let currentSort = { field: 'time', order: 'desc' };
-        let filteredType = null;
+        let filteredRating = null;
         let selectedItems = new Set();
 
         // ==================== Inoreader 功能 ====================
@@ -595,14 +599,14 @@
             return `${date.getMonth() + 1}/${date.getDate()}`;
         }
 
-        function getTypeClass(type) {
-            const map = { 'hot': 'type-hot', 'ai': 'type-ai', 'tech': 'type-tech', 'business': 'type-business' };
-            return map[type] || 'type-tech';
+        function getRatingClass(rating) {
+            const map = { 'S': 'rating-S', 'A+': 'rating-A\+', 'A': 'rating-A', 'B': 'rating-B', 'C': 'rating-C' };
+            return map[rating] || 'rating-C';
         }
 
-        function getTypeOrder(type) {
-            const order = { 'hot': 1, 'ai': 2, 'tech': 3, 'business': 4 };
-            return order[type] || 5;
+        function getRatingOrder(rating) {
+            const order = { 'S': 1, 'A+': 2, 'A': 3, 'B': 4, 'C': 5 };
+            return order[rating] || 6;
         }
 
         function renderDateChips() {
@@ -616,7 +620,7 @@
         function selectDate(date) {
             currentDate = date;
             currentSort = { field: 'time', order: 'desc' };
-            filteredType = null;
+            filteredRating = null;
             selectedItems.clear();
             updateSortButtons();
             updateBatchButtons();
@@ -650,32 +654,32 @@
 
         function resetSort() {
             currentSort = { field: 'time', order: 'desc' };
-            filteredType = null;
+            filteredRating = null;
             updateSortButtons();
             renderNews();
         }
 
         function updateSortButtons() {
-            document.getElementById('sortType').className = 'sort-btn' + (currentSort.field === 'type' ? ' active' : '');
+            document.getElementById('sortRating').className = 'sort-btn' + (currentSort.field === 'rating' ? ' active' : '');
             document.getElementById('sortEntities').className = 'sort-btn' + (currentSort.field === 'entities' ? ' active' : '');
             document.getElementById('sortSources').className = 'sort-btn' + (currentSort.field === 'sources' ? ' active' : '');
             document.getElementById('sortTime').className = 'sort-btn' + (currentSort.field === 'time' ? ' active' : '');
         }
 
-        function filterByType(type) {
-            filteredType = filteredType === type ? null : type;
+        function filterByRating(rating) {
+            filteredRating = filteredRating === rating ? null : rating;
             renderNews();
         }
 
         function getSortedAndFilteredNews(newsList) {
             let result = [...newsList];
-            if (filteredType) {
-                result = result.filter(item => item.type === filteredType);
+            if (filteredRating) {
+                result = result.filter(item => item.rating === filteredRating);
             }
-            if (currentSort.field === 'type') {
+            if (currentSort.field === 'rating') {
                 result.sort((a, b) => {
-                    const orderA = getTypeOrder(a.type);
-                    const orderB = getTypeOrder(b.type);
+                    const orderA = getRatingOrder(a.rating);
+                    const orderB = getRatingOrder(b.rating);
                     return currentSort.order === 'asc' ? orderA - orderB : orderB - orderA;
                 });
             } else if (currentSort.field === 'entities') {
@@ -835,14 +839,14 @@
             } else {
                 updateTime.textContent = new Date().toLocaleString('zh-CN', {month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'}) + ' (AI-Generated)';
             }
-            totalCount.textContent = `${displayList.length}${filteredType ? ' / ' + newsList.length : ''}`;
+            totalCount.textContent = `${displayList.length}${filteredRating ? ' / ' + newsList.length : ''}`;
             
             content.innerHTML = `
                 <table class="news-table">
                     <thead>
                         <tr>
                             <th><input type="checkbox" class="checkbox" onchange="selectAll()"></th>
-                            <th onclick="sortBy('type')">类型 ${currentSort.field === 'type' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                            <th onclick="sortBy('rating')">评级 ${currentSort.field === 'rating' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
                             <th>标题</th>
                             <th>摘要</th>
                             <th onclick="sortBy('entities')">实体 ${currentSort.field === 'entities' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
@@ -859,7 +863,7 @@
                             return `
                             <tr class="${isSelected ? 'selected' : ''}">
                                 <td><input type="checkbox" class="checkbox" ${isSelected ? 'checked' : ''} onchange="toggleSelection(${index})"></td>
-                                <td><span class="type-tag ${getTypeClass(item.type)}" onclick="filterByType('${item.type}')">${item.typeName}</span></td>
+                                <td><span class="rating-tag ${getRatingClass(item.rating)}" onclick="filterByRating('${item.rating}')">${item.rating || 'C'}</span></td>
                                 <td><div class="news-title">${item.title}</div></td>
                                 <td><div class="news-summary">${item.summary}</div></td>
                                 <td>${renderEntities(item.entities)}</td>
