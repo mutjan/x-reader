@@ -238,45 +238,113 @@ def safe_json_dumps(obj, ensure_ascii=False, indent=2):
 RSS_URL = "http://localhost:1200/twitter/list/2026563584311108010?filter_time=86400"
 DATA_FILE = "news_data.json"
 
-# 优化后的关键词配置
+# 优化后的关键词配置 (2026.03.14 更新)
 PRIORITY_KEYWORDS = {
-    "ai": ["gpt-5", "gpt-4.5", "gpt5.4", "claude 4", "gemini 2",
-           "o3", "o4", "reasoning", "agent", "agents", "agi",
-           "openai", "anthropic", "deepmind", "xai", "grok", "perplexity", "cursor", "manus", "sora",
-           "chatgpt", "claude", "gemini", "deepseek", "grok-3",
-           "llm", "foundation model", "moe", "mixture of experts",
-           "mcp", "model context protocol", "function calling", "tool use"],
-    "bigtech": ["apple intelligence", "google ai", "microsoft ai", "meta ai",
-                "nvidia", "tesla fsd", "spacex", "neuralink", "starlink",
-                "字节", "bytedance", "腾讯", "tencent", "阿里", "alibaba",
-                "智谱", "zhipu", "月之暗面", "moonshot", "kimi", "minimax", "零一万物"],
-    "chip": ["blackwell", "hopper", "h100", "h200", "b100", "b200",
-             "tensor", "cuda", "quantum chip", "ai chip", "ai accelerator",
-             "tsmc", "intel", "amd", "gpu shortage", "compute cluster"],
-    "product": ["launch", "released", "announced", "unveiled", "available now",
-                "open source", "github", "paper", "demo", "重磅", "突发"],
+    # AI模型与公司 - 核心赛道
+    "ai": ["gpt-5", "gpt-4.5", "gpt-4o", "gpt5", "claude 4", "claude 3.5", "claude opus", "claude sonnet",
+           "gemini 2", "gemini 2.5", "gemini ultra", "gemini pro",
+           "o1", "o1-pro", "o1-mini", "o3", "o3-mini", "o4", "reasoning model",
+           "agent", "agents", "agentic", "agi", "asi", "superintelligence",
+           "openai", "anthropic", "deepmind", "google ai", "xai", "perplexity", "cohere",
+           "chatgpt", "claude", "gemini", "deepseek", "grok", "grok-3", "grok-2",
+           "llm", "slm", "foundation model", "frontier model", "moe", "mixture of experts",
+           "mcp", "model context protocol", "function calling", "tool use", "tool calling",
+           "context window", "1m tokens", "long context", "rag", "retrieval"],
+
+    # 科技巨头与国产AI
+    "bigtech": ["apple intelligence", "apple ai", "microsoft copilot", "meta ai", "meta llama",
+                "nvidia", "tesla fsd", "tesla ai", "spacex", "neuralink", "starlink", "boring company",
+                "字节", "bytedance", "腾讯", "tencent", "阿里", "alibaba", "阿里云", "百度", "baidu",
+                "智谱", "zhipu", "glm", "月之暗面", "moonshot", "kimi", "minimax", "海螺",
+                "零一万物", "Yi", "阶跃星辰", "stepfun", "百川智能", "baichuan",
+                "面壁智能", "mianbai", "深度求索", "deepseek-v3", "深言科技",
+                "商汤", "sensetime", "旷视", "megvii", "科大讯飞", "iflytek",
+                "华为", "huawei", "盘古", "pangu", "昇腾", "ascend"],
+
+    # 芯片与硬件
+    "chip": ["blackwell", "hopper", "h100", "h200", "h20", "b100", "b200", "gb200",
+             "tensor core", "cuda", "cudnn", "triton", "quantum chip", "ai chip", "ai accelerator", "npu",
+             "tsmc", "intel", "amd", "mi300", "qualcomm", "apple silicon", "m4",
+             "gpu shortage", "compute cluster", "ai datacenter", "ai infrastructure",
+             "ai pc", "ai phone", "on-device ai", "端侧ai", "edge ai"],
+
+    # 产品发布与开源
+    "product": ["launch", "released", "releasing", "announced", "unveil", "unveiled", "available now", "rolling out",
+                "open source", "open-source", "opensource", "github", "huggingface", "hf",
+                "paper", "preprint", "demo", "beta", "preview", "early access",
+                "重磅", "突发", "首发", "独家", "breaking"],
+
+    # 重要人物
     "people": ["elon musk", "musk", "sam altman", "sundar pichai", "satya nadella",
-               "tim cook", "mark zuckerberg", "demis hassabis", "ilya sutskever",
-               "andrej karpathy", "dario amodei", "fei-fei li", "李彦宏",
-               "jensen huang", "黄仁勋"],
-    "research": ["nature", "science", "cell", "arxiv", "breakthrough",
-                 "ai for science", "ai4science", "protein folding",
-                 "mathematics", "theorem proving", "frontiermath",
-                 "alphaevolve", "deepmind", "alphafold", "ramsey",
-                 "materials discovery", "drug design"],
-    "business": ["ipo", "上市", "收购", "并购", "融资", "估值", "独角兽",
-                 "funding", "valuation", "unicorn", "investment"],
-    "multimodal": ["sora", "video generation", "text-to-video", "image generation",
-                   "multimodal", "vision model", "vlm", "diffusion",
-                   "runway", "pika", "heygen", "elevenlabs"],
-    "coding": ["cursor", "windsurf", "github copilot", "code generation",
-               "devin", "coding agent", "ide", "vscode", "ai engineer",
-               "vibe coding", "vibecoding", "trae", "cline", "aider"],
-    "robotics": ["robotics", "robot", "embodied ai", "humanoid",
-                 "figure ai", "tesla bot", "optimus", "autonomous",
-                 "agility robotics", "digit", "1x technologies",
-                 "covariant", "physical intelligence", "pi",
-                 "具身智能", "人形机器人", "sim2real", "unitree", "宇树"],
+               "tim cook", "mark zuckerberg", "zuck", "demis hassabis", "ilya sutskever", "ilya",
+               "andrej karpathy", "karpathy", "dario amodei", "fei-fei li", "yann lecun", "lecun",
+               "geoffrey hinton", "hinton", "bengio", "李彦宏", "robin li",
+               "jensen huang", "黄仁勋", "lisa su", "苏姿丰",
+               "jim keller", "george hotz", "comma ai", "noam shazeer", "john carmack",
+               "francois chollet", "chollet", "jeremy howard", "ethan mollick"],
+
+    # 学术研究
+    "research": ["nature", "science", "cell", "nejm", "lancet", "arxiv", "neurips", "icml", "iclr", "cvpr",
+                 "breakthrough", "state-of-the-art", "sota", "benchmark", "evaluation",
+                 "ai for science", "ai4science", "protein folding", "alphafold", "evoformer",
+                 "mathematics", "theorem proving", "frontiermath", "math olympiad", "imo",
+                 "alphaevolve", "alphageometry", "alphaproof", "ramsey",
+                 "materials discovery", "drug discovery", "drug design", "molecular",
+                 "world model", "video prediction", "self-supervised"],
+
+    # 商业与投资
+    "business": ["ipo", "上市", "收购", "acquire", "acquisition", "并购", "merger",
+                 "融资", "funding", "series a", "series b", "series c", "series d",
+                 "估值", "valuation", "独角兽", "unicorn", "decacorn",
+                 "investment", "investor", "a16z", "sequoia", "benchmark",
+                 "revenue", "arr", "profit", "亏损", "盈利"],
+
+    # 裁员与人事
+    "layoff": ["layoff", "layoffs", "laid off", "裁员", "缩减", "人力调整", "人员优化",
+               "workforce reduction", "job cut", "job cuts", "firing", "let go",
+               "hire freeze", "hiring freeze", "冻结招聘", "停止招聘", "restructuring",
+               "离职", "resignation", "stepping down", "离开"],
+
+    # 多模态与生成
+    "multimodal": ["sora", "veo", "movie gen", "video generation", "text-to-video", "t2v",
+                   "image generation", "text-to-image", "t2i", "imagen", "dalle", "midjourney", "flux",
+                   "multimodal", "vision model", "vlm", "vllm", "vision-language",
+                   "diffusion", "flow matching", "rectified flow",
+                   "runway", "pika", "heygen", "elevenlabs", "kling", "可灵",
+                   "3d generation", "gaussian splatting", "nerf", "4d"],
+
+    # AI编程与开发工具
+    "coding": ["cursor", "windsurf", "github copilot", "copilot", "code generation", "code completion",
+               "devin", "cognition", "coding agent", "swe-agent", "swe-bench", "software engineer",
+               "ide", "vscode", "jetbrains", "ai engineer", "ai developer",
+               "vibe coding", "vibecoding", "natural language coding",
+               "trae", "cline", "aider", "continue", "tabby", "sourcegraph", "cody",
+               "claude code", "codex", "code llama", "starcoder", "codestral",
+               "replit", "v0", "bolt", "lovable", "marblism"],
+
+    # 机器人与具身智能
+    "robotics": ["robotics", "robot", "embodied ai", "embodied intelligence", "humanoid", "humanoid robot",
+                 "figure ai", "figure 01", "figure 02", "tesla bot", "optimus", "optimus gen",
+                 "boston dynamics", "atlas", "spot", "autonomous", "self-driving",
+                 "agility robotics", "digit", "1x technologies", "neo",
+                 "covariant", "physical intelligence", "pi", "sanctuary ai",
+                 "具身智能", "人形机器人", "sim2real", "sim-to-real",
+                 "unitree", "宇树", "小米机器人", "cyberdog",
+                 "manipulation", "locomotion", "dexterous", "teleoperation"],
+
+    # AI安全与治理
+    "safety": ["ai safety", "alignment", "aligned", "misalignment", "jailbreak",
+               "red team", "red teaming", "adversarial", "hallucination", "幻觉",
+               "responsible ai", "ai ethics", "ai governance", "ai regulation", "ai act",
+               "existential risk", "x-risk", "doom", "p(doom)", "ai doom",
+               "deepfake", "misinformation", "disinformation"],
+
+    # AI基础设施与框架
+    "infra": ["langchain", "llamaindex", "autogen", "crewai", "dspy", "semantic kernel",
+              "vllm", "tgi", "ollama", "localai", "lmstudio",
+              "transformers", "pytorch", "tensorflow", "jax", "mlx",
+              "fine-tuning", "finetuning", "lora", "qlora", "peft", "rlhf", "dpo",
+              "inference", "serving", "deployment", "optimization", "quantization"],
 }
 
 ALL_PRIORITY_KEYWORDS = []
@@ -662,6 +730,9 @@ def extract_priority_keywords(text):
     # 精确边界匹配关键词（需要独立单词形式）
     precise_boundary_keywords = {'ai', 'ide', 'llm', 'agi', 'mcp'}
 
+    # 高权重关键词 - 匹配时额外加分
+    high_weight_keywords = {'sora', 'video generation', 'data center', 'datacenter', 'ai datacenter'}
+
     for category, keywords in PRIORITY_KEYWORDS.items():
         category_matches = []
         for keyword in keywords:
@@ -681,11 +752,22 @@ def extract_priority_keywords(text):
                     matched_keywords.append(keyword)
                     category_matches.append(keyword)
 
-            # 策略3: 普通关键词 - 子串匹配
+            # 策略3: 大小写敏感匹配（如 "Yi" 必须严格匹配，避免匹配到 "daily"）
+            elif keyword == "Yi":
+                # 严格匹配大小写 "Yi"，使用单词边界
+                pattern = r'\bYi\b'
+                if re.search(pattern, text):
+                    matched_keywords.append(keyword)
+                    category_matches.append(keyword)
+
+            # 策略4: 普通关键词 - 子串匹配
             else:
                 if keyword_lower in text_lower:
                     matched_keywords.append(keyword)
                     category_matches.append(keyword)
+                    # 高权重关键词额外加分
+                    if keyword_lower in high_weight_keywords:
+                        matched_keywords.append(f"[+权重]{keyword}")
 
         if category_matches:
             matched_categories[category] = category_matches
@@ -701,6 +783,10 @@ def calculate_priority_score(item):
     score = 0
     score += len(matched_keywords) * 5
 
+    # 高权重关键词额外加分
+    high_weight_count = sum(1 for kw in matched_keywords if kw.startswith("[+权重]"))
+    score += high_weight_count * 10  # 高权重关键词额外+10分
+
     if "ai" in matched_categories:
         score += 10
     if "bigtech" in matched_categories:
@@ -715,6 +801,8 @@ def calculate_priority_score(item):
         score += 6
     if "business" in matched_categories:
         score += 5
+    if "layoff" in matched_categories:
+        score += 12  # 裁员新闻高优先级
 
     exclusive_keywords = ['exclusive', '独家', 'breaking', '突发', 'first look',
                           'just announced', '首次', 'first time']
@@ -768,13 +856,59 @@ def calculate_priority_score(item):
     return max(score, 0), matched_keywords, matched_categories
 
 
+def is_low_quality_content(item):
+    """检查是否为低质量内容（空内容、纯链接转发等）"""
+    title = item.get("title", "").strip()
+    content = item.get("content", "").strip()
+
+    # 1. 标题为空或太短
+    if not title or len(title) < 10:
+        return True, "标题过短"
+
+    # 2. 内容为空或太短（可能是纯转发）
+    if not content or len(content) < 30:
+        return True, "内容过短"
+
+    # 3. 纯链接转发（内容只包含URL）
+    url_pattern = r'^\s*(RT\s+)?\w+:\s*https?://\S+\s*$'
+    if re.match(url_pattern, content, re.IGNORECASE):
+        return True, "纯链接转发"
+
+    # 4. 内容主要是HTML标签（无实质文本）
+    text_content = re.sub(r'<[^>]+>', '', content).strip()
+    if len(text_content) < 20:
+        return True, "无实质文本内容"
+
+    # 5. 非科技/健康类内容过滤（如运动健康、生活类）
+    non_tech_indicators = ['cortisol', 'exercise', 'workout', 'fitness', 'health tip',
+                           '皮质醇', '锻炼', '健身', '运动', '健康小贴士']
+    text_lower = f"{title} {content}".lower()
+    non_tech_count = sum(1 for ind in non_tech_indicators if ind in text_lower)
+    if non_tech_count >= 2:
+        return True, "非科技类内容"
+
+    return False, None
+
+
 def keyword_pre_filter(items, min_priority_score=5, ensure_top_n=40):
     """关键词预筛选 - 确保重要科技动态不被遗漏"""
     if not items:
         return []
 
     scored_items = []
+    filtered_count = {"low_quality": 0, "non_tech": 0}
+
     for item in items:
+        # 先进行内容质量检查
+        is_low_quality, reason = is_low_quality_content(item)
+        if is_low_quality:
+            if reason == "非科技类内容":
+                filtered_count["non_tech"] += 1
+            else:
+                filtered_count["low_quality"] += 1
+            logger.debug(f"[预筛选] 过滤低质量内容: {reason} | {item.get('title', '')[:40]}...")
+            continue
+
         score, keywords, categories = calculate_priority_score(item)
         item_with_score = item.copy()
         item_with_score["_priority_score"] = score
@@ -794,6 +928,8 @@ def keyword_pre_filter(items, min_priority_score=5, ensure_top_n=40):
 
     logger.info(f"[预筛选] 高优先级新闻: {len(high_priority)} 条")
     logger.info(f"[预筛选] 普通新闻: {len(normal_priority)} 条")
+    if filtered_count["low_quality"] > 0 or filtered_count["non_tech"] > 0:
+        logger.info(f"[预筛选] 过滤低质量: {filtered_count['low_quality']} 条, 非科技类: {filtered_count['non_tech']} 条")
     if category_counts:
         logger.info(f"[预筛选] 类别分布: {category_counts}")
 
@@ -903,9 +1039,9 @@ def get_ai_processing_prompt(items):
    - 严禁包含任何HTML标签、图片链接、视频链接
    - 用简洁的语言概括核心信息，突出关键数据
 
-4. **标注类型**：hot(热点)/ai(AI相关)/tech(科技)/business(商业)
+4. **标注评级**：S/A+/A/B/C（直接使用评级作为分类标识）
 
-5. **识别核心实体**（2-5个）：公司、产品、人物、技术/概念
+5. **识别核心实体**（2-5个）：公司、产品、人物、技术/概念、事件类型（如"裁员"、"发布"、"融资"等）
 
 6. **添加行业标签**（1-3个）：大模型、AI Agent、多模态、AI编程、AI科研、芯片、机器人等
 
@@ -918,7 +1054,7 @@ def get_ai_processing_prompt(items):
       "level": "S",
       "title": "重磅！Andrej Karpathy开源AgentHub：专为AI Agent打造的GitHub",
       "summary": "前特斯拉AI总监Andrej Karpathy发布开源项目AgentHub...",
-      "type": "ai",
+      "rating": "S",
       "reason": "顶级AI研究者重大开源项目，AI Agent领域里程碑",
       "entities": ["Andrej Karpathy", "AgentHub", "开源", "AI Agent"],
       "tags": ["AI Agent", "开源"]
@@ -995,6 +1131,79 @@ def calculate_similarity(s1, s2):
     return len(kw1 & kw2) / len(kw1 | kw2)
 
 
+def normalize_entities(entities):
+    """
+    标准化实体名称，处理中英文映射和产品名变体
+    返回标准化后的实体集合
+    """
+    # 中英文公司名映射
+    company_mapping = {
+        '字节跳动': 'ByteDance',
+        'bytedance': 'ByteDance',
+        'bytedance': 'ByteDance',
+        'openai': 'OpenAI',
+        'anthropic': 'Anthropic',
+        'google': 'Google',
+        'microsoft': 'Microsoft',
+        'meta': 'Meta',
+        'nvidia': 'NVIDIA',
+        'apple': 'Apple',
+        'tesla': 'Tesla',
+        'spacex': 'SpaceX',
+        'xai': 'xAI',
+        'tiktok': 'TikTok',
+        '抖音': 'TikTok',
+    }
+
+    # 产品名变体映射
+    product_mapping = {
+        'seedance': 'Seedance',
+        'seedance 2.0': 'Seedance',
+        'seedance2.0': 'Seedance',
+        'ai视频生成': 'Seedance',
+        'ai视频模型': 'Seedance',
+        '视频生成模型': 'Seedance',
+        '视频ai模型': 'Seedance',
+        'chatgpt': 'ChatGPT',
+        'claude': 'Claude',
+        'claude code': 'Claude',
+        'gemini': 'Gemini',
+        'grok': 'Grok',
+        'alphafold': 'AlphaFold',
+        'sora': 'Sora',
+    }
+
+    # 主题词标准化
+    topic_mapping = {
+        '版权': '版权纠纷',
+        '版权争议': '版权纠纷',
+        'copyright': '版权纠纷',
+        'ipo': 'IPO',
+        '上市': 'IPO',
+        'agent': 'AI Agent',
+        'agents': 'AI Agent',
+        'ai agent': 'AI Agent',
+        '智能体': 'AI Agent',
+    }
+
+    normalized = set()
+    for entity in entities:
+        entity_lower = entity.lower()
+        # 检查公司映射
+        if entity_lower in company_mapping:
+            normalized.add(company_mapping[entity_lower])
+        # 检查产品映射
+        elif entity_lower in product_mapping:
+            normalized.add(product_mapping[entity_lower])
+        # 检查主题映射
+        elif entity_lower in topic_mapping:
+            normalized.add(topic_mapping[entity_lower])
+        else:
+            normalized.add(entity)
+
+    return normalized
+
+
 def is_same_event(item1, item2, time_threshold_seconds=7200):
     """
     判断两条新闻是否报道同一事件（增强版）
@@ -1003,7 +1212,7 @@ def is_same_event(item1, item2, time_threshold_seconds=7200):
     1. Tweet ID 相同（直接同一来源）
     2. URL 相同（同一链接）
     3. 标题高度相似（Jaccard > 0.7 或 包含关系）
-    4. 实体高度重叠 + 时间接近
+    4. 实体高度重叠 + 时间接近（支持中英文映射）
     5. 关键词高度重叠 + 时间接近
     6. 同一主体（公司/人物）+ 主题相似 + 时间接近
 
@@ -1038,9 +1247,9 @@ def is_same_event(item1, item2, time_threshold_seconds=7200):
     time2 = item2.get("timestamp", 0)
     time_diff = abs(time1 - time2)
 
-    # 5. 实体匹配（高置信度匹配可放宽时间限制）
-    entities1 = set(item1.get("entities", []))
-    entities2 = set(item2.get("entities", []))
+    # 5. 实体匹配（使用标准化后的实体）
+    entities1 = normalize_entities(set(item1.get("entities", [])))
+    entities2 = normalize_entities(set(item2.get("entities", [])))
     entity_overlap_high = False
 
     if entities1 and entities2:
@@ -1247,8 +1456,8 @@ def calculate_event_match_score(item1, item2):
                 if common_core:
                     score += 0.15  # 额外奖励
 
-    # 5. 实体重叠
-    entities1, entities2 = set(item1.get("entities", [])), set(item2.get("entities", []))
+    # 5. 实体重叠（使用标准化实体）
+    entities1, entities2 = normalize_entities(set(item1.get("entities", []))), normalize_entities(set(item2.get("entities", [])))
     if entities1 and entities2:
         common = entities1 & entities2
         all_ents = entities1 | entities2
@@ -1663,13 +1872,8 @@ def main():
 
         tags = ai_result.get("tags", [])
         auto_tags = []
-        news_type = ai_result.get("type", "tech")
-        if news_type == "ai":
-            auto_tags.append("AI")
-        elif news_type == "business":
-            auto_tags.append("商业动态")
-        elif news_type == "hot":
-            auto_tags.append("热点")
+        # 使用评级作为分类，不再单独设置类型
+        rating = ai_result.get("rating", ai_result.get("level", "A"))
 
         all_tags = list(dict.fromkeys(auto_tags + tags))
 
@@ -1677,8 +1881,7 @@ def main():
             "title": ai_result.get("title", item["title"]),
             "title_en": item["title"],
             "summary": ai_result.get("summary", "点击链接查看详情"),
-            "type": news_type,
-            "typeName": {"hot": "热点", "ai": "AI", "tech": "科技", "business": "商业"}.get(news_type, "科技"),
+            "rating": rating,
             "score": score,
             "level": level,
             "reason": f"【{level}级】评分{score}分 | {ai_result.get('reason', '')}",
@@ -1805,10 +2008,10 @@ def generate_report(final_news, timing):
     c_count = len([t for t in final_news if t["level"] == "C"])
     multi_source = len([t for t in final_news if t.get("sources", 1) > 1])
 
-    type_counts = {}
+    rating_counts = {}
     for item in final_news:
-        t = item.get("type", "tech")
-        type_counts[t] = type_counts.get(t, 0) + 1
+        r = item.get("rating", item.get("level", "A"))
+        rating_counts[r] = rating_counts.get(r, 0) + 1
 
     tag_counts = {}
     for item in final_news:
@@ -1838,10 +2041,10 @@ def generate_report(final_news, timing):
     logger.info(f"  今日新增: {today_new} 条")
     logger.info(f"  总计: {len(final_news)} 条")
 
-    if type_counts:
-        logger.info("\n【类型分布】")
-        for t, count in sorted(type_counts.items(), key=lambda x: -x[1]):
-            logger.info(f"  {t}: {count} 条")
+    if rating_counts:
+        logger.info("\n【评级分布】")
+        for r, count in sorted(rating_counts.items(), key=lambda x: -x[1]):
+            logger.info(f"  {r}: {count} 条")
 
     if tag_counts:
         logger.info("\n【热门标签】")
