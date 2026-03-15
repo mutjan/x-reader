@@ -290,7 +290,8 @@ PRIORITY_KEYWORDS = {
                  "mathematics", "theorem proving", "frontiermath", "math olympiad", "imo",
                  "alphaevolve", "alphageometry", "alphaproof", "ramsey",
                  "materials discovery", "drug discovery", "drug design", "molecular",
-                 "world model", "video prediction", "self-supervised"],
+                 "world model", "video prediction", "self-supervised",
+                 "autoresearch", "autoresearch@home"],
 
     # 商业与投资
     "business": ["ipo", "上市", "收购", "acquire", "acquisition", "并购", "merger",
@@ -725,10 +726,10 @@ def extract_priority_keywords(text):
     matched_categories = {}
 
     # 短词汇（2-3字符）使用宽松匹配
-    short_word_keywords = {'rl', 'pi', 'o1', 'o3', 'o4', 'gpt', 'vlm', 'moe'}
+    short_word_keywords = {'rl', 'o1', 'o3', 'o4', 'gpt', 'vlm', 'moe'}
 
     # 精确边界匹配关键词（需要独立单词形式）
-    precise_boundary_keywords = {'ai', 'ide', 'llm', 'agi', 'mcp'}
+    precise_boundary_keywords = {'ai', 'ide', 'llm', 'agi', 'mcp', 'pi'}
 
     # 高权重关键词 - 匹配时额外加分
     high_weight_keywords = {'sora', 'video generation', 'data center', 'datacenter', 'ai datacenter'}
@@ -1171,6 +1172,13 @@ def normalize_entities(entities):
         'grok': 'Grok',
         'alphafold': 'AlphaFold',
         'sora': 'Sora',
+        'h100': 'H100',
+        'h200': 'H200',
+        'h20': 'H20',
+        'b100': 'B100',
+        'b200': 'B200',
+        'gb200': 'GB200',
+        'a100': 'A100',
     }
 
     # 主题词标准化
@@ -1314,6 +1322,7 @@ def is_same_event(item1, item2, time_threshold_seconds=7200):
         # 定义关键主体（公司/产品/人物）- 包含中英文实体
         key_subjects = {'OpenClaw', 'Claude', 'OpenAI', 'Anthropic', 'Google', 'Microsoft',
                         'NVIDIA', 'Meta', 'Apple', 'Tesla', 'SpaceX', 'xAI',
+                        'ChatGPT', 'AlphaFold', 'Gemini', 'Grok', 'Sora',
                         'Elon Musk', 'Sam Altman', 'John Carmack', 'Andrej Karpathy',
                         'Jensen Huang', 'Demis Hassabis', 'Sundar Pichai',
                         '开源', 'open source', 'AI Agent', 'agent', 'mcp'}
@@ -1467,13 +1476,15 @@ def calculate_event_match_score(item1, item2):
                 score += 0.35  # 高度重叠
             elif overlap >= 0.5:
                 score += 0.3
+            elif len(common) >= 3 and time_diff <= 21600:
+                score += 0.35  # ≥3个相同实体+6h内，视为高度重叠（解决AI中文标题实体分散问题）
             elif overlap >= 0.3 and len(common) >= 2:
                 score += 0.2
             # 顶级实体奖励
             important_entities = {'OpenAI', 'Anthropic', 'Google', 'Microsoft', 'Apple',
                                   'Meta', 'NVIDIA', 'Tesla', 'SpaceX', 'xAI',
                                   'Elon Musk', 'Sam Altman', 'Andrej Karpathy', 'John Carmack',
-                                  'OpenClaw', 'Claude'}
+                                  'OpenClaw', 'Claude', 'ChatGPT', 'AlphaFold'}
             if common & important_entities:
                 score += 0.15
 
@@ -1490,6 +1501,7 @@ def calculate_event_match_score(item1, item2):
     if entities1 and entities2 and time_diff <= 86400:
         key_subjects = {'OpenClaw', 'Claude', 'OpenAI', 'Anthropic', 'Google', 'Microsoft',
                         'NVIDIA', 'Meta', 'Apple', 'Tesla', 'SpaceX', 'xAI',
+                        'ChatGPT', 'AlphaFold', 'Gemini', 'Grok', 'Sora',
                         'Elon Musk', 'Sam Altman', 'John Carmack', 'Andrej Karpathy',
                         'Jensen Huang', 'Demis Hassabis', 'Sundar Pichai',
                         '开源', 'open source', 'AI Agent', 'agent', 'mcp'}
