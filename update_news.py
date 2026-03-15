@@ -1352,15 +1352,18 @@ def main():
         # 标准化实体
         entities = normalize_entities(ai_result.get("entities", []))
 
+        level = ai_result.get("level", "B")
+        score = ai_result.get("score", 60)
         processed.append({
             "title": ai_result.get("title", item["title"]),
             "title_en": item["title"],
             "summary": ai_result.get("summary", ""),
             "type": ai_result.get("type", "tech"),
             "typeName": {"hot": "热点", "ai": "AI", "tech": "科技", "business": "商业"}.get(ai_result.get("type", "tech"), "科技"),
-            "score": ai_result.get("score", 60),
-            "level": ai_result.get("level", "B"),
-            "reason": f"【{ai_result.get('level', 'B')}级】评分{ai_result.get('score', 60)}分 | {ai_result.get('reason', '')}",
+            "score": score,
+            "level": level,
+            "rating": level,
+            "reason": f"【{level}级】评分{score}分 | {ai_result.get('reason', '')}",
             "entities": entities,
             "url": item["url"],
             "source": item["source"],
