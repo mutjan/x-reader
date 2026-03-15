@@ -685,7 +685,7 @@
                 result.sort((a, b) => {
                     const orderA = getRatingOrder(a.rating);
                     const orderB = getRatingOrder(b.rating);
-                    return currentSort.order === 'asc' ? orderA - orderB : orderB - orderA;
+                    return currentSort.order === 'asc' ? orderB - orderA : orderA - orderB;
                 });
             } else if (currentSort.field === 'entities') {
                 result.sort((a, b) => {
