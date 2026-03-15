@@ -559,7 +559,7 @@
         // 加载数据
         async function loadData() {
             try {
-                const newsResponse = await fetch('news_data.json');
+                const newsResponse = await fetch('news_data.json?v=' + Date.now());
                 
                 if (!newsResponse.ok) throw new Error('Failed to load news data');
                 
