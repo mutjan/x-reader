@@ -1076,6 +1076,11 @@ def get_ai_processing_prompt(items):
 
 def process_with_ai(items):
     """处理新闻：筛选 + 生成标题/摘要/类型"""
+    # 【优化】空输入提前退出，避免生成空 prompt 文件
+    if not items:
+        logger.info("[AI] 输入新闻列表为空，跳过 AI 处理")
+        return []
+
     logger.info(f"[AI] 开始处理 {len(items)} 条新闻...")
 
     # 检查是否有本地处理结果
@@ -1846,15 +1851,55 @@ def main():
     logger.info(f"[预筛选] 保留 {len(filtered_items)} 条新闻进入AI处理")
     logger.info("-" * 40)
 
+    # 【优化】预筛选结果为空时提前退出，给出清晰提示
+    if not filtered_items:
+        logger.info("\n" + "=" * 60)
+        logger.info("【本轮无新选题】")
+        logger.info("=" * 60)
+        logger.info(f"原因：最近 {smart_target} 条新闻中，没有符合科技关键词预筛选标准的内容")
+        logger.info("建议：")
+        logger.info("  1. 稍后再次运行，等待 RSS 源更新")
+        logger.info("  2. 检查 RSS 源健康状态（上面的[RSS]健康检查）")
+        logger.info("  3. 如需强制重新处理，可清理缓存: rm .processed_tweet_ids.json")
+        logger.info("=" * 60)
+
+        # 更新已处理的推文ID缓存（避免重复检查）
+        current_time = time.time()
+        for item in recent_items:
+            tweet_id = extract_tweet_id(item.get("url", ""))
+            if tweet_id:
+                cache_data[tweet_id] = current_time
+        save_processed_ids(cache_data)
+        return
+
     # 5. AI 处理
     t0 = time.time()
     ai_results = process_with_ai(filtered_items)
     timing["ai_process"] = time.time() - t0
 
+    # 【优化】区分"需要本地模型处理"和"AI返回空结果"两种情况
     if ai_results is None:
         logger.info("\n" + "=" * 60)
         logger.info("[提示] 需要本地模型处理，请按上述指引操作")
         logger.info("=" * 60)
+        return
+
+    # 【优化】AI返回空列表时的处理
+    if len(ai_results) == 0:
+        logger.info("\n" + "=" * 60)
+        logger.info("【本轮无新选题】")
+        logger.info("=" * 60)
+        logger.info("AI 处理完成，但没有符合 S/A/B 级标准的新闻")
+        logger.info("建议：稍后再次运行，等待 RSS 源更新")
+        logger.info("=" * 60)
+
+        # 更新已处理的推文ID缓存
+        current_time = time.time()
+        for item in filtered_items:
+            tweet_id = extract_tweet_id(item.get("url", ""))
+            if tweet_id:
+                cache_data[tweet_id] = current_time
+        save_processed_ids(cache_data)
         return
 
     logger.info(f"[AI] 返回 {len(ai_results)} 条处理结果")
