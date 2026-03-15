@@ -578,7 +578,7 @@
         // ==================== 全局状态 ====================
         let currentTab = 'news';
         let currentDate = '';
-        let currentSort = { field: 'time', order: 'desc' };
+        let currentSort = { field: 'rating', order: 'desc' };
         let filteredRating = null;
         let selectedItems = new Set();
 
@@ -665,6 +665,11 @@
             document.getElementById('sortSources').className = 'sort-btn' + (currentSort.field === 'sources' ? ' active' : '');
             document.getElementById('sortTime').className = 'sort-btn' + (currentSort.field === 'time' ? ' active' : '');
         }
+
+        // 页面加载完成后初始化排序按钮状态
+        document.addEventListener('DOMContentLoaded', function() {
+            updateSortButtons();
+        });
 
         function filterByRating(rating) {
             filteredRating = filteredRating === rating ? null : rating;
