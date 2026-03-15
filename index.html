@@ -619,7 +619,7 @@
 
         function selectDate(date) {
             currentDate = date;
-            currentSort = { field: 'time', order: 'desc' };
+            currentSort = { field: 'rating', order: 'desc' };
             filteredRating = null;
             selectedItems.clear();
             updateSortButtons();
@@ -653,7 +653,7 @@
         }
 
         function resetSort() {
-            currentSort = { field: 'time', order: 'desc' };
+            currentSort = { field: 'rating', order: 'desc' };
             filteredRating = null;
             updateSortButtons();
             renderNews();
