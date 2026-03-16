@@ -21,6 +21,7 @@
             max-width: 1400px;
             margin: 0 auto;
             padding: 15px;
+            padding-top: 100px;
         }
         header {
             text-align: center;
@@ -45,13 +46,7 @@
         .date-selector {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin: 15px 0;
-            padding: 10px;
-            background: #16181c;
-            border-radius: 8px;
-            border: 1px solid #2f3336;
+            gap: 8px;
             flex-wrap: wrap;
         }
         .date-btn {
@@ -96,13 +91,8 @@
         /* 批量操作栏 */
         .batch-actions {
             display: flex;
-            gap: 10px;
-            justify-content: center;
-            margin-bottom: 15px;
-            padding: 10px;
-            background: #16181c;
-            border-radius: 8px;
-            border: 1px solid #2f3336;
+            gap: 8px;
+            align-items: center;
             flex-wrap: wrap;
         }
         .batch-btn {
@@ -129,12 +119,44 @@
             align-items: center;
         }
         
+        /* 浮动工具栏 */
+        .floating-toolbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(15, 20, 25, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #2f3336;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .toolbar-section {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0 10px;
+            border-right: 1px solid #2f3336;
+        }
+        .toolbar-section:last-child {
+            border-right: none;
+        }
+        .toolbar-label {
+            font-size: 11px;
+            color: #8899a6;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
         /* 排序控件 */
         .sort-controls {
             display: flex;
-            gap: 10px;
-            justify-content: center;
-            margin-bottom: 15px;
+            gap: 6px;
             flex-wrap: wrap;
         }
         .sort-btn {
@@ -424,6 +446,46 @@
         @media (max-width: 768px) {
             .container {
                 padding: 8px;
+                padding-top: 140px;
+            }
+            .floating-toolbar {
+                padding: 8px;
+                gap: 10px;
+            }
+            .toolbar-section {
+                padding: 0 6px;
+                gap: 4px;
+            }
+            .toolbar-label {
+                font-size: 10px;
+            }
+            .date-selector {
+                gap: 4px;
+            }
+            .date-btn {
+                padding: 4px 8px;
+                font-size: 11px;
+            }
+            .current-date {
+                font-size: 13px;
+                min-width: 70px;
+            }
+            .batch-actions {
+                gap: 4px;
+            }
+            .batch-btn {
+                padding: 4px 8px !important;
+                font-size: 11px !important;
+            }
+            .batch-info {
+                font-size: 11px;
+            }
+            .sort-controls {
+                gap: 3px;
+            }
+            .sort-btn {
+                padding: 4px 8px;
+                font-size: 10px;
             }
             h1 {
                 font-size: 20px;
@@ -511,33 +573,48 @@
     </style>
 </head>
 <body>
+    <!-- 浮动工具栏 -->
+    <div class="floating-toolbar">
+        <div class="toolbar-section">
+            <span class="toolbar-label">日期</span>
+            <div class="date-selector">
+                <button class="date-btn" onclick="changeDate(-1)" id="prevDate">←</button>
+                <span class="current-date" id="toolbarDate">--</span>
+                <button class="date-btn" onclick="changeDate(1)" id="nextDate">→</button>
+            </div>
+        </div>
+        <div class="toolbar-section">
+            <span class="toolbar-label">选择</span>
+            <div class="batch-actions">
+                <span class="batch-info"><strong id="selectedCount">0</strong> 条</span>
+                <button class="batch-btn" onclick="selectAll()" id="selectAllBtn" style="padding: 6px 12px; font-size: 12px;">全选</button>
+                <button class="batch-btn" onclick="copySelected()" id="copySelectedBtn" disabled style="padding: 6px 12px; font-size: 12px;">复制选中</button>
+                <button class="batch-btn" onclick="clearSelection()" style="background: #f4212e; padding: 6px 12px; font-size: 12px;">清空</button>
+            </div>
+        </div>
+        <div class="toolbar-section">
+            <span class="toolbar-label">排序</span>
+            <div class="sort-controls">
+                <button class="sort-btn" onclick="sortBy('rating')" id="sortRating">评级</button>
+                <button class="sort-btn" onclick="sortBy('entities')" id="sortEntities">实体</button>
+                <button class="sort-btn" onclick="sortBy('sources')" id="sortSources">来源</button>
+                <button class="sort-btn" onclick="sortBy('time')" id="sortTime">时间</button>
+                <button class="sort-btn" onclick="resetSort()" id="resetSort">默认</button>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <header>
             <h1>📰 每日科技新闻摘要</h1>
             <p class="subtitle">Tech Daily Digest from Inoreader & X</p>
-            
         </header>
 
         <!-- Inoreader 新闻 -->
         <div>
             <div id="dateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
-            
+
             <p class="update-time"><span id="currentDate" style="font-weight: 600; color: #e7e9ea;">--</span> | 更新时间：<span id="updateTime">--</span> | 共 <span id="totalCount">0</span> 条</p>
-
-            <div class="batch-actions">
-                <span class="batch-info">已选择 <strong id="selectedCount">0</strong> 条</span>
-                <button class="batch-btn" onclick="selectAll()" id="selectAllBtn">全选</button>
-                <button class="batch-btn" onclick="copySelected()" id="copySelectedBtn" disabled>复制选中</button>
-                <button class="batch-btn" onclick="clearSelection()" style="background: #f4212e;">清空选择</button>
-            </div>
-
-            <div class="sort-controls">
-                <button class="sort-btn" onclick="sortBy('rating')" id="sortRating">按评级排序</button>
-                <button class="sort-btn" onclick="sortBy('entities')" id="sortEntities">按实体排序</button>
-                <button class="sort-btn" onclick="sortBy('sources')" id="sortSources">按来源数排序</button>
-                <button class="sort-btn" onclick="sortBy('time')" id="sortTime">按更新时间排序</button>
-                <button class="sort-btn" onclick="resetSort()" id="resetSort">恢复默认</button>
-            </div>
 
             <main id="news-content">
                 <div class="empty-state">加载中...</div>
@@ -638,7 +715,18 @@
         }
 
         function updateButtons() {
-            // 日期导航按钮已移除，此函数保留为空函数以避免调用错误
+            // 更新浮动工具栏中的日期按钮状态
+            const dates = getAllDates();
+            const currentIndex = dates.indexOf(currentDate);
+            document.getElementById('prevDate').disabled = currentIndex <= 0;
+            document.getElementById('nextDate').disabled = currentIndex >= dates.length - 1;
+        }
+
+        function formatToolbarDate(dateStr) {
+            if (!dateStr || dateStr === '--') return '--';
+            const date = new Date(dateStr);
+            if (isNaN(date.getTime())) return '--';
+            return `${date.getMonth() + 1}月${date.getDate()}日`;
         }
 
         function sortBy(field) {
@@ -809,13 +897,15 @@
         function renderNews() {
             const content = document.getElementById('news-content');
             const currentDateEl = document.getElementById('currentDate');
+            const toolbarDate = document.getElementById('toolbarDate');
             const updateTime = document.getElementById('updateTime');
             const totalCount = document.getElementById('totalCount');
-            
+
             const newsList = NEWS_ARCHIVE[currentDate] || [];
             const displayList = getSortedAndFilteredNews(newsList);
 
             currentDateEl.textContent = currentDate;
+            toolbarDate.textContent = formatToolbarDate(currentDate);
 
             // 更新版本号显示（从数据中获取）
             const versionEl = document.getElementById('version');
