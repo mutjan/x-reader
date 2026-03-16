@@ -4926,9 +4926,9 @@
       "title_en": "Executives at Figma and HubSpot have publicly downplayed the threat from AI agents. Their regulatory filings tell a more cautious story. https://thein...",
       "summary": "The Information调查发现，Figma和HubSpot高管在公开场合对AI Agent竞争威胁轻描淡写，但在向监管机构提交的文件中却表达了更为谨慎的态度。",
       "rating": "A",
-      "score": 70,
+      "score": 75,
       "level": "A",
-      "reason": "【A级】评分70分 | 揭示AI Agent对SaaS企业的真实冲击，高管公开表态与内部风险评估存在差异",
+      "reason": "【A级】评分75分 | AI对SaaS行业冲击的深层信号，值得关注的市场趋势",
       "entities": [
         "Figma",
         "HubSpot",
@@ -4938,15 +4938,20 @@
       ],
       "tags": [
         "AI Agent",
-        "SaaS"
+        "SaaS",
+        "行业趋势"
       ],
       "url": "https://x.com/theinformation/status/2033592906443887068",
       "source": "The Information",
-      "sources": 1,
+      "sources": 2,
       "sourceLinks": [
         {
           "name": "The Information",
           "url": "https://x.com/theinformation/status/2033592906443887068"
+        },
+        {
+          "name": "The Information",
+          "url": "https://x.com/theinformation/status/2033672261329117194"
         }
       ],
       "timestamp": 1773684044,
@@ -5031,7 +5036,8 @@
         "NVIDIA",
         "Jensen Huang",
         "Vera Rubin Space-1",
-        "太空数据中心"
+        "太空数据中心",
+        "黄仁勋"
       ],
       "url": "https://x.com/ns123abc/status/2033644065913176110",
       "source": "NIK",
@@ -5047,7 +5053,12 @@
         }
       ],
       "timestamp": 1773698458,
-      "version": "2026.03.17-021"
+      "version": "2026.03.17-021",
+      "tags": [
+        "芯片",
+        "AI基础设施",
+        "前沿科技"
+      ]
     },
     {
       "title": "炸裂！GPT-5.4一周处理5万亿token，年化收入破10亿美元",
@@ -5062,11 +5073,13 @@
       "entities": [
         "OpenAI",
         "GPT-5.4",
-        "Greg Brockman"
+        "Greg Brockman",
+        "Sam Altman",
+        "gpt-5"
       ],
       "url": "https://x.com/gdb/status/2033605419726483963",
       "source": "Greg Brockman",
-      "sources": 2,
+      "sources": 4,
       "sourceLinks": [
         {
           "name": "Greg Brockman",
@@ -5075,10 +5088,25 @@
         {
           "name": "Sam Altman",
           "url": "https://x.com/sama/status/2033659246542524566"
+        },
+        {
+          "name": "Sam Altman",
+          "url": "https://x.com/sama/status/2033659889843913000"
+        },
+        {
+          "name": "Greg Brockman",
+          "url": "https://x.com/gdb/status/2033638167413461068"
         }
       ],
       "timestamp": 1773698458,
-      "version": "2026.03.17-028"
+      "version": "2026.03.17-028",
+      "tags": [
+        "大模型",
+        "商业",
+        "API",
+        "AI创业",
+        "融资"
+      ]
     },
     {
       "title": "Mistral Small 4正式发布：128专家1190亿参数，一次巨大飞跃",
@@ -5093,7 +5121,9 @@
       "entities": [
         "Mistral",
         "Mistral Small 4",
-        "MoE"
+        "MoE",
+        "开源",
+        "context window"
       ],
       "url": "https://x.com/kimmonismus/status/2033662154419933544",
       "source": "Chubby♨️",
@@ -5105,7 +5135,12 @@
         }
       ],
       "timestamp": 1773698458,
-      "version": "2026.03.17-030"
+      "version": "2026.03.17-030",
+      "tags": [
+        "大模型",
+        "开源",
+        "MoE"
+      ]
     },
     {
       "title": "NVIDIA发布DLSS 5：3D引导神经渲染技术演示惊艳",
@@ -5113,26 +5148,37 @@
       "summary": "GTC大会上NVIDIA unveiled DLSS 5，引入3D引导神经渲染技术。现场演示效果令人印象深刻，有望将游戏画质和帧率提升到新高度。",
       "type": "tech",
       "typeName": "科技",
-      "score": 84,
-      "level": "A",
+      "score": 92,
+      "level": "S",
       "rating": "A",
-      "reason": "【A级】评分84分 | 图形技术重大升级",
+      "reason": "【S级】评分92分 | NVIDIA年度最重要发布，万亿级订单规模，芯片性能革命性提升",
       "entities": [
         "NVIDIA",
         "DLSS 5",
-        "神经渲染"
+        "神经渲染",
+        "Vera Rubin",
+        "Blackwell"
       ],
       "url": "https://x.com/kimmonismus/status/2033612079115210805",
       "source": "Chubby♨️",
-      "sources": 1,
+      "sources": 2,
       "sourceLinks": [
         {
           "name": "Chubby♨️",
           "url": "https://x.com/kimmonismus/status/2033612079115210805"
+        },
+        {
+          "name": "Chubby♨️",
+          "url": "https://x.com/kimmonismus/status/2033669674622455868"
         }
       ],
       "timestamp": 1773698458,
-      "version": "2026.03.17-027"
+      "version": "2026.03.17-027",
+      "tags": [
+        "芯片",
+        "AI基础设施",
+        "超算"
+      ]
     },
     {
       "title": "NVIDIA发布NemoClaw：基于OpenClaw的企业级AI代理操作系统",
@@ -5140,15 +5186,16 @@
       "summary": "NVIDIA在GTC宣布NemoClaw，一款面向企业用户的AI代理操作系统。基于开源项目OpenClaw构建，解决了安全漏洞问题，允许企业在保护敏感数据的前提下部署AI代理。",
       "type": "ai",
       "typeName": "AI",
-      "score": 83,
-      "level": "A",
+      "score": 88,
+      "level": "A+",
       "rating": "A",
-      "reason": "【A级】评分83分 | AI代理基础设施重要进展",
+      "reason": "【A+级】评分88分 | NVIDIA重大产品发布，AI Agent基础设施关键进展，企业级安全方案",
       "entities": [
         "NVIDIA",
         "NemoClaw",
         "OpenClaw",
-        "AI代理"
+        "AI代理",
+        "AI Agent"
       ],
       "url": "https://x.com/steipete/status/2033641012090785871",
       "source": "Peter Steinberger 🦞",
@@ -5164,7 +5211,12 @@
         }
       ],
       "timestamp": 1773698458,
-      "version": "2026.03.17-019"
+      "version": "2026.03.17-019",
+      "tags": [
+        "AI Agent",
+        "芯片",
+        "企业级"
+      ]
     },
     {
       "title": "OpenAI Codex正式支持子代理：可并行处理复杂任务",
@@ -5179,7 +5231,9 @@
       "entities": [
         "OpenAI",
         "Codex",
-        "子代理"
+        "子代理",
+        "子Agent",
+        "Sam Altman"
       ],
       "url": "https://x.com/sama/status/2033659170088751372",
       "source": "Sam Altman",
@@ -5191,7 +5245,12 @@
         }
       ],
       "timestamp": 1773698458,
-      "version": "2026.03.17-023"
+      "version": "2026.03.17-023",
+      "tags": [
+        "AI编程",
+        "AI Agent",
+        "开发者工具"
+      ]
     },
     {
       "title": "Gemini Embeddings 2发布：统一嵌入文本图像视频音频",
@@ -5207,7 +5266,8 @@
         "Google",
         "Gemini Embeddings 2",
         "Raia Hadsell",
-        "Yann LeCun"
+        "Yann LeCun",
+        "多模态嵌入"
       ],
       "url": "https://x.com/jeremyphoward/status/2033639197366751470",
       "source": "Jeremy Howard",
@@ -5219,7 +5279,12 @@
         }
       ],
       "timestamp": 1773698458,
-      "version": "2026.03.17-024"
+      "version": "2026.03.17-024",
+      "tags": [
+        "多模态",
+        "大模型",
+        "AI研究"
+      ]
     },
     {
       "title": "AutoResearch@home上线100小时：2600+实验95个智能体协同进化",
@@ -5283,15 +5348,16 @@
       "summary": "Simon Willison在NICAR数据新闻大会上分享了三小时工作坊讲义，教授记者如何使用Codex CLI、Claude Code等AI编程工具进行数据探索、可视化和分析。",
       "type": "tech",
       "typeName": "科技",
-      "score": 74,
-      "level": "B",
+      "score": 76,
+      "level": "A",
       "rating": "B",
-      "reason": "【B级】评分74分 | AI工具实用教程",
+      "reason": "【A级】评分76分 | 顶级开发者实战教程，AI编程教育里程碑，实用价值高",
       "entities": [
         "Simon Willison",
         "Codex CLI",
         "Claude Code",
-        "数据新闻"
+        "数据新闻",
+        "编程Agent"
       ],
       "url": "https://x.com/simonw/status/2033637760213639289",
       "source": "Simon Willison",
@@ -5303,7 +5369,78 @@
         }
       ],
       "timestamp": 1773698458,
-      "version": "2026.03.17-026"
+      "version": "2026.03.17-026",
+      "tags": [
+        "AI编程",
+        "教程",
+        "数据科学"
+      ]
+    },
+    {
+      "title": "突发！OpenAI Sora即将登陆ChatGPT：视频生成与图像功能整合",
+      "title_en": "The Sora video tool from OpenAI may soon sit alongside image generation inside ChatGPT. https://thein.fo/4bkv9b4",
+      "summary": "据The Information报道，OpenAI的Sora视频生成工具可能很快与图像生成功能一起集成到ChatGPT中，用户将能在一个界面内完成文本、图像、视频多模态创作。",
+      "rating": "A+",
+      "score": 82,
+      "level": "A+",
+      "reason": "【A+级】评分82分 | OpenAI重大产品整合，多模态AI里程碑，用户体验革新",
+      "entities": [
+        "OpenAI",
+        "Sora",
+        "ChatGPT",
+        "视频生成",
+        "openai"
+      ],
+      "tags": [
+        "多模态",
+        "大模型",
+        "产品更新"
+      ],
+      "url": "https://x.com/theinformation/status/2033615544042074400",
+      "source": "The Information",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "The Information",
+          "url": "https://x.com/theinformation/status/2033615544042074400"
+        }
+      ],
+      "timestamp": 1773700760,
+      "version": "2026.03.17-036",
+      "priority_score": 45
+    },
+    {
+      "title": "刚刚！三大AI巨头Excel Agent对决：Claude、ChatGPT、Copilot谁更强",
+      "title_en": "RT Boris Power: Excel is the most popular coding IDE",
+      "summary": "Ethan Mollick测试显示，在Excel策略游戏任务中，Claude担任游戏主持人，Copilot仅创建面板无游戏功能，ChatGPT则成功构建了带智能敌人的完整游戏。",
+      "rating": "A",
+      "score": 78,
+      "level": "A",
+      "reason": "【A级】评分78分 | AI编程Agent横向对比，实用场景评测，多巨头产品PK",
+      "entities": [
+        "Claude",
+        "ChatGPT",
+        "Copilot",
+        "Excel Agent",
+        "Ethan Mollick"
+      ],
+      "tags": [
+        "AI编程",
+        "AI Agent",
+        "产品评测"
+      ],
+      "url": "https://x.com/emollick/status/2033608649189278119",
+      "source": "Ethan Mollick",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://x.com/emollick/status/2033608649189278119"
+        }
+      ],
+      "timestamp": 1773700760,
+      "version": "2026.03.17-034",
+      "priority_score": 57
     }
   ]
 }
