@@ -330,12 +330,15 @@ PRIORITY_KEYWORDS = {
     "chip": ["blackwell", "hopper", "h100", "h200", "b100", "b200",
              "tensor", "cuda", "quantum chip", "ai chip", "ai accelerator",
              "tsmc", "intel", "amd", "gpu shortage", "compute cluster"],
-    "product": ["launch", "released", "announced", "unveiled", "available now",
-                "open source", "github", "paper", "demo", "重磅", "突发"],
+    "product": ["launch", "announced", "unveiled", "available now",
+                "open source", "github", "paper", "demo", "重磅", "突发",
+                "new model", "new feature", "update", "upgrade"],
     "people": ["elon musk", "musk", "sam altman", "sundar pichai", "satya nadella",
                "tim cook", "mark zuckerberg", "demis hassabis", "ilya sutskever",
                "andrej karpathy", "dario amodei", "fei-fei li", "李彦宏",
-               "jensen huang", "黄仁勋"],
+               "jensen huang", "黄仁勋", "greg brockman", "brockman",
+               "demis hassabis", "hassabis", "pieter abbeel", "sergey brin",
+               "demis", "jeff bezos", "bill gates", "larry page"],
     "research": ["nature", "science", "cell", "arxiv", "breakthrough",
                  "ai for science", "ai4science", "protein folding",
                  "mathematics", "theorem proving", "frontiermath",
@@ -677,6 +680,39 @@ def fetch_rss(url, timeout=30):
         return None
 
 
+def clean_retweet_content(title, content):
+    """
+    清理 Twitter 转发（RT）格式，提取原始内容。
+
+    Twitter RSS 中转发格式：
+    - title: "RT @original_author: original tweet content..."
+    - content: 可能包含原始推文或转发者的评论
+
+    返回清理后的 (title, content, is_retweet, original_author)
+    """
+    if not title:
+        return title, content, False, None
+
+    # 匹配 RT @username: content 或 RT username: content 格式
+    # 支持带空格的名称，如 "RT Greg Brockman: ..."
+    rt_pattern = r'^RT\s+@?([^:]+):\s*(.+)$'
+    match = re.match(rt_pattern, title, re.DOTALL)
+
+    if match:
+        original_author = match.group(1)
+        original_content = match.group(2).strip()
+
+        # 如果 content 为空或与 title 相似，使用提取的原始内容
+        if not content or content.strip() == title.strip():
+            content = original_content
+
+        # 清理后的 title 应该是原始内容（截断版）
+        # 返回原始内容作为 title，以便 AI 正确理解
+        return original_content, content, True, original_author
+
+    return title, content, False, None
+
+
 def parse_rss(xml_content):
     """解析 RSS XML 内容"""
     items = []
@@ -692,12 +728,17 @@ def parse_rss(xml_content):
                 pub_date = item.findtext("pubDate", "")
                 source = item.findtext("author", "RSS")
 
+                # 清理转发格式
+                title, content, is_rt, rt_author = clean_retweet_content(title, content)
+
                 items.append({
                     "title": title,
                     "content": content,
                     "url": url,
                     "source": source,
                     "published": parse_pub_date(pub_date),
+                    "_is_retweet": is_rt,
+                    "_rt_author": rt_author,
                 })
 
         ns = {"atom": "http://www.w3.org/2005/Atom"}
@@ -718,12 +759,17 @@ def parse_rss(xml_content):
 
             source = entry.findtext("atom:author/atom:name", "RSS")
 
+            # 清理转发格式
+            title, content, is_rt, rt_author = clean_retweet_content(title, content)
+
             items.append({
                 "title": title,
                 "content": content,
                 "url": url,
                 "source": source,
                 "published": parse_pub_date(pub_date),
+                "_is_retweet": is_rt,
+                "_rt_author": rt_author,
             })
 
     except Exception as e:
@@ -855,6 +901,18 @@ def calculate_priority_score(item):
     for kw in exclusive_keywords:
         if kw.lower() in text:
             score += 8
+            break
+
+    # CEO/核心人物观点加分（公司高管发表的重要观点）
+    ceo_opinion_patterns = [
+        (r'\b(sam altman|greg brockman|elon musk|demis hassabis|sundar pichai|altman|brockman)\b.*\b(says|said|thinks?|believes?|predicts?|claims?|argues?|points? out|announces?|reveals?)\b', 12),
+        (r'\b(says|said|thinks?|believes?|predicts?|claims?|argues?|points? out|announces?|reveals?)\b.*\b(sam altman|greg brockman|elon musk|demis hassabis|sundar pichai|altman|brockman)\b', 12),
+        (r'\b(ceo|cto|chief executive|founder)\b.*\b(says|said|thinks?|believes?|predicts?|announces?|reveals?)\b', 8),
+    ]
+    for pattern, bonus in ceo_opinion_patterns:
+        if re.search(pattern, text, re.IGNORECASE):
+            score += bonus
+            matched_keywords.append(f"[CEO观点+{bonus}]")
             break
 
     return max(score, 0), matched_keywords, matched_categories
