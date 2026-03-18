@@ -264,9 +264,11 @@ PRIORITY_KEYWORDS = {
     # 芯片与硬件
     "chip": ["blackwell", "hopper", "h100", "h200", "h20", "b100", "b200", "gb200",
              "tensor core", "cuda", "cudnn", "triton", "quantum chip", "ai chip", "ai accelerator", "npu",
-             "tsmc", "intel", "amd", "mi300", "qualcomm", "apple silicon", "m4",
+             "tsmc", "intel corporation", "intel cpu", "intel gpu", "intel chip", "intel xeon", "intel core",
+             "amd", "mi300", "qualcomm", "apple silicon", "m4",
              "gpu shortage", "compute cluster", "ai datacenter", "ai infrastructure",
              "ai pc", "ai phone", "on-device ai", "端侧ai", "edge ai"],
+    # 注意："intel" 单独使用容易与 "intelligence"、"artificial" 等词混淆，已改为更精确的形式
 
     # 产品发布与开源
     "product": ["launch", "released", "releasing", "announced", "unveil", "unveiled", "available now", "rolling out",
@@ -298,7 +300,8 @@ PRIORITY_KEYWORDS = {
                  "融资", "funding", "series a", "series b", "series c", "series d",
                  "估值", "valuation", "独角兽", "unicorn", "decacorn",
                  "investment", "investor", "a16z", "sequoia", "benchmark",
-                 "revenue", "arr", "profit", "亏损", "盈利"],
+                 "revenue", "profit", "亏损", "盈利"],
+    # 注意："arr" 已从关键词列表中移除，因为容易与单词内部匹配（如 "bitt**er**" 中的 "er" 不会匹配，但 "b**arr**ier" 中的 "arr" 会误触发）
 
     # 裁员与人事
     "layoff": ["layoff", "layoffs", "laid off", "裁员", "缩减", "人力调整", "人员优化",
@@ -714,10 +717,107 @@ def filter_recent_items(items, hours=1, smart_mode=True):
     return recent
 
 
-# ==================== 关键词预筛选（优化版） ====================
+# ==================== 关键词预筛选（优化版 - 带负向上下文排除） ====================
+
+# 关键词匹配配置（含负向上下文排除）
+KEYWORD_MATCH_CONFIG = {
+    # 短词汇（2-3字符）- 使用精确边界匹配，避免子串误匹配
+    'short_exact_match': {
+        'keywords': {'rl', 'o1', 'o3', 'o4', 'gpt', 'vlm', 'moe', 'asi'},
+        'strategy': 'word_boundary',
+    },
+
+    # 精确边界匹配关键词（需要独立单词形式）
+    'precise_boundary': {
+        'keywords': {'ai', 'ide', 'llm', 'agi', 'mcp', 'pi', 'arr'},
+        'strategy': 'word_boundary',
+    },
+
+    # 大小写敏感匹配（专有名词）
+    'case_sensitive': {
+        'keywords': {'Yi'},
+        'strategy': 'case_sensitive_boundary',
+    },
+
+    # 带负向上下文排除的关键词
+    'with_negative_context': {
+        'nature': {
+            'pattern': r'\bnature\b',
+            'exclude_context': [
+                r'human\s+nature',                    # human nature
+                r'mother\s+nature',                   # mother nature
+                r'by\s+nature\b(?!\s+(?:journal|of))', # by nature（但不匹配 by nature journal）
+                r'nature\s+of',                       # nature of
+                r'second\s+nature',                   # second nature
+                r'against\s+nature',                  # against nature
+            ],
+            'valid_context': [
+                r'nature\s*(?:journal|paper|article|publication|research|study)',  # Nature期刊相关
+                r'published\s+in\s+nature',
+                r'nature\s+(?:biotechnology|medicine|physics|chemistry|cell biology)',  # Nature子刊
+            ]
+        },
+        'intel': {
+            'pattern': r'\bintel\b',
+            'exclude_context': [
+                r'artificial\s+intelligence',  # AI中的intelligence
+                r'general\s+intelligence',    # general intelligence
+                r'superintelligence',          # superintelligence
+                r'machine\s+intelligence',    # machine intelligence
+                r'intelligence\s+(?:test|quotient|score)',  # 智商测试
+            ],
+            'valid_context': [
+                r'intel\s+(?:corporation|corp|inc)',  # Intel Corporation/Corp/Inc
+                r'intel\s+(?:cpu|gpu|chip|processor|xeon|core|arc)',  # Intel产品
+                r'intel\s+(?:ai|datacenter|foundry)',  # Intel业务
+            ]
+        },
+        'war': {
+            'pattern': r'\bwar\b',
+            'exclude_context': [
+                r'war\s+on\s+(?:terror|drugs)',  # war on terror/drugs（政治口号）
+            ]
+        },
+    },
+
+    # 高权重关键词 - 匹配时额外加分
+    'high_weight': {'sora', 'video generation', 'data center', 'datacenter', 'ai datacenter'},
+}
+
+
+def check_keyword_context(text_lower, keyword_config):
+    """
+    检查关键词的上下文，支持负向排除和正向验证
+
+    Args:
+        text_lower: 小写化的文本
+        keyword_config: 关键词配置，包含 exclude_context 和 valid_context 列表
+
+    Returns:
+        bool: True 表示应该保留该关键词，False 表示应该排除
+    """
+    # 1. 检查负向上下文（优先级最高）
+    exclude_patterns = keyword_config.get('exclude_context', [])
+    for pattern in exclude_patterns:
+        if re.search(pattern, text_lower, re.IGNORECASE):
+            return False  # 匹配到负向上下文，应排除
+
+    # 2. 检查正向上下文（如果有配置）
+    valid_patterns = keyword_config.get('valid_context', [])
+    if valid_patterns:
+        # 如果有正向上下文配置，必须匹配其中一个才保留
+        for pattern in valid_patterns:
+            if re.search(pattern, text_lower, re.IGNORECASE):
+                return True  # 匹配到正向上下文，保留
+        # 没有匹配到任何正向上下文，排除
+        return False
+
+    # 没有正向上下文配置，且没有匹配到负向上下文，保留
+    return True
+
 
 def extract_priority_keywords(text):
-    """从文本中提取匹配的高优先级关键词"""
+    """从文本中提取匹配的高优先级关键词（带负向上下文排除）"""
     if not text:
         return [], {}
 
@@ -725,50 +825,59 @@ def extract_priority_keywords(text):
     matched_keywords = []
     matched_categories = {}
 
-    # 短词汇（2-3字符）使用宽松匹配
-    short_word_keywords = {'rl', 'o1', 'o3', 'o4', 'gpt', 'vlm', 'moe'}
-
-    # 精确边界匹配关键词（需要独立单词形式）
-    precise_boundary_keywords = {'ai', 'ide', 'llm', 'agi', 'mcp', 'pi'}
-
-    # 高权重关键词 - 匹配时额外加分
-    high_weight_keywords = {'sora', 'video generation', 'data center', 'datacenter', 'ai datacenter'}
+    config = KEYWORD_MATCH_CONFIG
+    short_exact = config['short_exact_match']['keywords']
+    precise_boundary = config['precise_boundary']['keywords']
+    case_sensitive = config['case_sensitive']['keywords']
+    negative_context_keywords = config['with_negative_context']
+    high_weight = config['high_weight']
 
     for category, keywords in PRIORITY_KEYWORDS.items():
         category_matches = []
         for keyword in keywords:
             keyword_lower = keyword.lower()
+            is_matched = False
 
-            # 策略1: 短词汇 - 宽松子串匹配（保持原样）
-            if keyword_lower in short_word_keywords:
-                if keyword_lower in text_lower:
-                    matched_keywords.append(keyword)
-                    category_matches.append(keyword)
-
-            # 策略2: 精确边界匹配 - 使用\b确保独立单词
-            elif keyword_lower in precise_boundary_keywords:
-                # 使用单词边界，不区分大小写
+            # 策略1: 短词汇精确边界匹配
+            if keyword_lower in short_exact:
                 pattern = r'\b' + re.escape(keyword_lower) + r'\b'
                 if re.search(pattern, text_lower, re.IGNORECASE):
-                    matched_keywords.append(keyword)
-                    category_matches.append(keyword)
+                    is_matched = True
 
-            # 策略3: 大小写敏感匹配（如 "Yi" 必须严格匹配，避免匹配到 "daily"）
-            elif keyword == "Yi":
-                # 严格匹配大小写 "Yi"，使用单词边界
-                pattern = r'\bYi\b'
-                if re.search(pattern, text):
-                    matched_keywords.append(keyword)
-                    category_matches.append(keyword)
+            # 策略2: 精确边界匹配关键词
+            elif keyword_lower in precise_boundary:
+                pattern = r'\b' + re.escape(keyword_lower) + r'\b'
+                if re.search(pattern, text_lower, re.IGNORECASE):
+                    is_matched = True
 
-            # 策略4: 普通关键词 - 子串匹配
+            # 策略3: 大小写敏感匹配
+            elif keyword in case_sensitive:
+                pattern = r'\b' + re.escape(keyword) + r'\b'
+                if re.search(pattern, text):  # 使用原始文本，大小写敏感
+                    is_matched = True
+
+            # 策略4: 带负向上下文排除的关键词
+            elif keyword_lower in negative_context_keywords:
+                keyword_config = negative_context_keywords[keyword_lower]
+                if re.search(keyword_config['pattern'], text_lower, re.IGNORECASE):
+                    # 匹配到关键词，检查上下文
+                    if check_keyword_context(text_lower, keyword_config):
+                        is_matched = True
+                    else:
+                        logger.debug(f"[关键词过滤] '{keyword}' 因上下文检查被排除: {text_lower[:80]}...")
+
+            # 策略5: 普通关键词 - 子串匹配
             else:
                 if keyword_lower in text_lower:
-                    matched_keywords.append(keyword)
-                    category_matches.append(keyword)
-                    # 高权重关键词额外加分
-                    if keyword_lower in high_weight_keywords:
-                        matched_keywords.append(f"[+权重]{keyword}")
+                    is_matched = True
+
+            # 如果匹配成功，添加到结果
+            if is_matched:
+                matched_keywords.append(keyword)
+                category_matches.append(keyword)
+                # 高权重关键词额外加分
+                if keyword_lower in high_weight or keyword in high_weight:
+                    matched_keywords.append(f"[+权重]{keyword}")
 
         if category_matches:
             matched_categories[category] = category_matches
@@ -823,13 +932,26 @@ def calculate_priority_score(item):
     # 政治/军事/法律类新闻降权（除非是重大事件）
     political_keywords = ['trump', 'biden', '特朗普', '拜登', '政府', 'government', 'administration',
                           'policy', '政策', 'regulation', '监管', 'ban', '禁令']
-    military_keywords = ['war', '战争', 'military', '军事', 'defense', '国防', 'weapon', '武器',
-                         'attack', '攻击', 'conflict', '冲突']
+    # 军事关键词 - 使用精确匹配避免误伤（如 "intelligence" 不应触发 "defense"）
+    military_keywords = [
+        ('war', r'\bwar\b'), ('战争', r'战争'),
+        ('military', r'\bmilitary\b'), ('军事', r'军事'),
+        ('defense', r'\bdefense\b(?!\s+against)'), ('国防', r'国防'),  # 排除 "defense against"（辩护/防御）
+        ('weapon', r'\bweapon'), ('武器', r'武器'),
+        ('attack', r'\battack'), ('攻击', r'攻击'),
+        ('conflict', r'\bconflict\b'), ('冲突', r'冲突')
+    ]
     legal_keywords = ['lawsuit', '诉讼', '起诉', '被告', '原告', 'court', '法庭', 'judge', '法官',
                       'trial', '审判', 'patent', '专利', 'copyright', '版权', 'antitrust', '反垄断']
 
     political_count = sum(1 for kw in political_keywords if kw.lower() in text_lower)
-    military_count = sum(1 for kw in military_keywords if kw.lower() in text_lower)
+
+    # 军事关键词使用正则表达式精确匹配
+    military_count = 0
+    for name, pattern in military_keywords:
+        if re.search(pattern, text_lower):
+            military_count += 1
+
     legal_count = sum(1 for kw in legal_keywords if kw.lower() in text_lower)
 
     # 重大事件判定：多源权威报道 + 涉及科技巨头
@@ -887,6 +1009,17 @@ def is_low_quality_content(item):
     non_tech_count = sum(1 for ind in non_tech_indicators if ind in text_lower)
     if non_tech_count >= 2:
         return True, "非科技类内容"
+
+    # 6. 内容可扩展性初步检测 - 简短个人观点类内容标记
+    opinion_indicators = ['says', 'said', 'thinks', 'believes', 'argues', 'claims',
+                          '说', '认为', '觉得', '表示', '称']
+    text_content_clean = re.sub(r'<[^>]+>', '', text_lower)
+    # 如果内容很短（<200字符）且包含观点表达词，可能是简短个人观点
+    if len(text_content_clean) < 200:
+        opinion_count = sum(1 for ind in opinion_indicators if ind in text_content_clean)
+        if opinion_count >= 1:
+            # 不直接过滤，但会在priority_score中标记，供AI阶段参考
+            item['_short_opinion'] = True
 
     return False, None
 
@@ -971,9 +1104,11 @@ def get_ai_processing_prompt(items):
             item_data["priority_score"] = item.get("priority_score", 0)
 
             # 记录所有预筛选进入的新闻（不设阈值），确保AI了解所有候选
-            priority_hints.append(
-                f"  新闻#{i}: 匹配关键词 {item['matched_keywords'][:3]} (优先级{item.get('priority_score', 0)}分)"
-            )
+            hint = f"  新闻#{i}: 匹配关键词 {item['matched_keywords'][:3]} (优先级{item.get('priority_score', 0)}分)"
+            # 如果标记为简短个人观点，添加提示
+            if item.get('_short_opinion'):
+                hint += " [⚠️简短观点-需评估讨论热度]"
+            priority_hints.append(hint)
 
         items_for_ai.append(item_data)
 
@@ -1026,6 +1161,11 @@ def get_ai_processing_prompt(items):
    - 军事类新闻（战争、武器、冲突等）：降权20分
    - 一般法律纠纷（普通诉讼、专利纠纷）：降权10分
    - 但科技巨头反垄断大案、重大监管事件除外
+
+   **内容可扩展性评估**（关键维度）：
+   - 高可扩展性（加分）：有具体数据、案例、技术细节、多方观点，可深入展开报道
+   - 低可扩展性（减分）：单一个人简短观点、缺乏实质内容、无讨论空间
+   - 例外：如果简短观点引发了大量讨论（回复数多、转发量大、多源引用），则不减分
 
 2. **生成量子位风格中文标题**：
    - 纯中文，无类型前缀
@@ -1137,10 +1277,94 @@ def calculate_similarity(s1, s2):
     return len(kw1 & kw2) / len(kw1 | kw2)
 
 
-def normalize_entities(entities):
+# ==================== 实体消歧配置 ====================
+
+# 需要上下文消歧的实体（容易与其他词汇混淆）
+AMBIGUOUS_ENTITIES = {
+    'intel': {
+        'valid_contexts': [
+            r'intel\s+(?:corporation|corp|inc)',  # Intel Corporation/Corp/Inc
+            r'intel\s+(?:cpu|gpu|chip|processor|xeon|core)',  # Intel产品
+            r'\bintel\b.*?(?:chip|semiconductor|hardware|processor|computing)',
+            r'(?:chip|semiconductor|hardware|processor).*?\bintel\b',
+        ],
+        'invalid_contexts': [
+            r'artificial\s+intelligence',  # AI中的intelligence
+            r'general\s+intelligence',  # general intelligence
+            r'superintelligence',  # superintelligence
+            r'machine\s+intelligence',  # machine intelligence
+            r'intelligence\s+(?:test|quotient|score)',  # 智商测试
+        ],
+        'canonical_name': 'Intel',
+        'category': 'company'
+    },
+    'arr': {
+        'valid_contexts': [
+            r'\$\d+[\d,]*\s*(?:million|billion)?\s+arr',  # $100M ARR (注意：实际使用时$需要转义)
+            r'arr\s*(?:of|reaches|hits|at)\s*\$?\d+',  # ARR of $100M
+            r'annual\s+recurring\s+revenue',  # 完整写法
+            r'(?:revenue|saas|subscription).*?arr',  # 收入相关上下文
+            r'\d+m\s+arr',  # 100M ARR
+            r'\d+b\s+arr',  # 1B ARR
+        ],
+        'invalid_contexts': [
+            r'barrier',  # barrier (contains arr)
+            r'error',  # error (contains err, not arr)
+            r'starr',  # starr (contains arr)
+            r'array',  # array (contains arr)
+        ],
+        'canonical_name': 'ARR',
+        'category': 'metric'
+    }
+}
+
+
+def disambiguate_entity(entity, text):
+    """
+    基于上下文消歧实体识别
+
+    Args:
+        entity: 待消歧的实体名称
+        text: 原始文本（用于上下文判断）
+
+    Returns:
+        (is_valid, canonical_name): (是否有效识别, 标准化名称)
+    """
+    entity_lower = entity.lower()
+
+    # 检查是否在消歧配置中
+    if entity_lower not in AMBIGUOUS_ENTITIES:
+        return True, entity  # 不需要消歧，直接返回
+
+    config = AMBIGUOUS_ENTITIES[entity_lower]
+    text_lower = text.lower()
+
+    # 检查无效上下文（如果匹配，则不是目标实体）
+    for invalid_pattern in config.get('invalid_contexts', []):
+        if re.search(invalid_pattern, text_lower, re.IGNORECASE):
+            return False, None  # 在无效上下文中，不是目标实体
+
+    # 检查有效上下文
+    for valid_pattern in config.get('valid_contexts', []):
+        if re.search(valid_pattern, text_lower, re.IGNORECASE):
+            return True, config.get('canonical_name', entity)
+
+    # 没有匹配到任何有效或无效上下文，默认不信任
+    # 对于高歧义实体，宁可漏报也不错报
+    return False, None
+
+
+def normalize_entities(entities, text=None):
     """
     标准化实体名称，处理中英文映射和产品名变体
-    返回标准化后的实体集合
+    支持上下文感知的实体消歧
+
+    Args:
+        entities: 实体列表
+        text: 原始文本（可选，用于上下文消歧）
+
+    Returns:
+        标准化后的实体集合
     """
     # 中英文公司名映射
     company_mapping = {
@@ -1159,6 +1383,9 @@ def normalize_entities(entities):
         'xai': 'xAI',
         'tiktok': 'TikTok',
         '抖音': 'TikTok',
+        'intel corporation': 'Intel',
+        'intel corp': 'Intel',
+        'intel inc': 'Intel',
     }
 
     # 产品名变体映射
@@ -1200,15 +1427,26 @@ def normalize_entities(entities):
     }
 
     normalized = set()
+
     for entity in entities:
         entity_lower = entity.lower()
-        # 检查公司映射
+
+        # 第一步：上下文消歧（如果需要）
+        if text and entity_lower in AMBIGUOUS_ENTITIES:
+            is_valid, canonical = disambiguate_entity(entity, text)
+            if not is_valid:
+                continue  # 跳过无效识别的实体
+            if canonical:
+                normalized.add(canonical)
+                continue
+
+        # 第二步：检查公司映射
         if entity_lower in company_mapping:
             normalized.add(company_mapping[entity_lower])
-        # 检查产品映射
+        # 第三步：检查产品映射
         elif entity_lower in product_mapping:
             normalized.add(product_mapping[entity_lower])
-        # 检查主题映射
+        # 第四步：检查主题映射
         elif entity_lower in topic_mapping:
             normalized.add(topic_mapping[entity_lower])
         else:
