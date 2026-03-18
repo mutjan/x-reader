@@ -88,6 +88,89 @@
             margin-top: 5px;
         }
         
+        /* 预告事件区域 */
+        .upcoming-section {
+            background: linear-gradient(135deg, rgba(29, 155, 240, 0.1), rgba(0, 186, 124, 0.05));
+            border: 1px solid rgba(29, 155, 240, 0.3);
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+        .upcoming-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1d9bf0;
+        }
+        .upcoming-header .icon {
+            font-size: 16px;
+        }
+        .upcoming-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .upcoming-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px 12px;
+            background: rgba(15, 20, 25, 0.6);
+            border-radius: 8px;
+            border-left: 3px solid #1d9bf0;
+        }
+        .upcoming-item:hover {
+            background: rgba(29, 155, 240, 0.1);
+        }
+        .upcoming-priority {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+        .upcoming-priority.S { background: #ff6b6b; color: white; }
+        .upcoming-priority.A\+ { background: #ffd93d; color: #0f1419; }
+        .upcoming-priority.A { background: #6bcf7f; color: white; }
+        .upcoming-priority.B { background: #8899a6; color: white; }
+        .upcoming-content {
+            flex: 1;
+        }
+        .upcoming-title {
+            font-size: 13px;
+            font-weight: 500;
+            color: #e7e9ea;
+            margin-bottom: 4px;
+        }
+        .upcoming-meta {
+            font-size: 11px;
+            color: #8899a6;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .upcoming-keywords {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .upcoming-keyword {
+            font-size: 10px;
+            padding: 1px 6px;
+            background: rgba(136, 153, 166, 0.2);
+            border-radius: 10px;
+            color: #8899a6;
+        }
+        .upcoming-empty {
+            color: #8899a6;
+            font-size: 13px;
+            text-align: center;
+            padding: 20px;
+        }
+        
         /* 批量操作栏 */
         .batch-actions {
             display: flex;
@@ -610,6 +693,18 @@
             <p class="subtitle">Tech Daily Digest from Inoreader & X</p>
         </header>
 
+        <!-- 预告事件区域 -->
+        <div class="upcoming-section" id="upcomingSection" style="display: none;">
+            <div class="upcoming-header">
+                <span class="icon">🔔</span>
+                <span>预告事件追踪</span>
+                <span style="margin-left: auto; font-size: 12px; font-weight: normal; color: #8899a6;" id="upcomingCount"></span>
+            </div>
+            <div class="upcoming-list" id="upcomingList">
+                <!-- 动态填充 -->
+            </div>
+        </div>
+
         <!-- Inoreader 新闻 -->
         <div>
             <div id="dateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
@@ -632,15 +727,29 @@
     <script>
         // ==================== 数据加载 ====================
         let NEWS_ARCHIVE = {};
+        let UPCOMING_EVENTS = [];
         
         // 加载数据
         async function loadData() {
             try {
-                const newsResponse = await fetch('news_data.json?v=' + Date.now());
+                const [newsResponse, upcomingResponse] = await Promise.allSettled([
+                    fetch('news_data.json?v=' + Date.now()),
+                    fetch('upcoming_events.json?v=' + Date.now())
+                ]);
                 
-                if (!newsResponse.ok) throw new Error('Failed to load news data');
+                // 加载新闻数据
+                if (newsResponse.status === 'fulfilled' && newsResponse.value.ok) {
+                    NEWS_ARCHIVE = await newsResponse.value.json();
+                } else {
+                    throw new Error('Failed to load news data');
+                }
                 
-                NEWS_ARCHIVE = await newsResponse.json();
+                // 加载预告事件数据
+                if (upcomingResponse.status === 'fulfilled' && upcomingResponse.value.ok) {
+                    const upcomingData = await upcomingResponse.value.json();
+                    UPCOMING_EVENTS = upcomingData.events || [];
+                    renderUpcomingEvents();
+                }
                 
                 // 初始化
                 currentDate = getLatestDate();
@@ -981,6 +1090,48 @@
 
         // 页面加载时自动加载数据
         document.addEventListener('DOMContentLoaded', loadData);
+
+        // ==================== 预告事件功能 ====================
+        function renderUpcomingEvents() {
+            const section = document.getElementById('upcomingSection');
+            const list = document.getElementById('upcomingList');
+            const count = document.getElementById('upcomingCount');
+            
+            // 只显示 pending 状态的事件
+            const pendingEvents = UPCOMING_EVENTS.filter(e => e.status === 'pending');
+            
+            if (pendingEvents.length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+            
+            section.style.display = 'block';
+            count.textContent = `${pendingEvents.length} 个待追踪`;
+            
+            list.innerHTML = pendingEvents.map(event => {
+                const keywords = event.expected_keywords || [];
+                const keywordsHtml = keywords.slice(0, 5).map(k => 
+                    `<span class="upcoming-keyword">${k}</span>`
+                ).join('');
+                
+                const sourceHint = event.source_hint || '未指定来源';
+                const createdAt = event.created_at ? new Date(event.created_at).toLocaleDateString('zh-CN') : '-';
+                
+                return `
+                    <div class="upcoming-item">
+                        <span class="upcoming-priority ${event.priority || 'A'}">${event.priority || 'A'}</span>
+                        <div class="upcoming-content">
+                            <div class="upcoming-title">${event.title}</div>
+                            <div class="upcoming-meta">
+                                <span>📅 ${createdAt}</span>
+                                <span>📡 ${sourceHint}</span>
+                                <span class="upcoming-keywords">${keywordsHtml}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
     </script>
 </body>
 </html>
