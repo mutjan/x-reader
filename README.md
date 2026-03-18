@@ -6,6 +6,7 @@
 
 - **RSS 自动获取**: 从 Twitter List RSS 源获取最新内容
 - **关键词预筛选**: 基于关键词匹配确保重要新闻不被遗漏
+- **预告事件追踪**: 维护已预告事件列表，主动搜索匹配新消息
 - **AI 智能处理**: 支持两种模式
   - **自动 API 模式**: 配置 API Key 后全自动处理
   - **本地模型模式**: 生成提示词供 Claude Desktop 等本地模型处理
@@ -35,17 +36,33 @@ python3 setup_config.py
 或者手动设置环境变量：
 
 ```bash
-export ANTHROPIC_API_KEY="sk-..."
+export MOONSHOT_API_KEY="sk-..."
 ```
 
-### 3. 运行脚本
+### 3. 添加预告事件（可选）
+
+追踪即将发生的重要事件：
+
+```bash
+# 添加预告事件
+python3 upcoming_events.py add \
+  --title "No Priors 预告：Karpathy 将做客下期节目" \
+  --keywords "No Priors,Karpathy,podcast" \
+  --source "No Priors 播客" \
+  --priority A+
+
+# 查看待处理事件
+python3 upcoming_events.py list
+```
+
+### 4. 运行脚本
 
 ```bash
 # 全自动模式（已配置 API Key）
-python3 update_twitter_news.py
+python3 update_news.py
 
 # 半自动模式（无 API Key）
-python3 update_twitter_news.py
+python3 update_news.py
 # 按提示将 twitter_ai_prompt.txt 发送给 Claude Desktop 处理
 # 将结果保存为 twitter_ai_result.json
 # 再次运行脚本
@@ -177,7 +194,80 @@ recent_items = filter_recent_items(items, hours=24)  # 改为24小时
 
 A: 编辑 AI 提示词中的分级标准，或修改 `ai_process_items` 函数中的评分逻辑。
 
+## 预告事件追踪
+
+维护已预告的重要事件列表，主动搜索是否有新消息发布。
+
+### 使用场景
+
+- **播客预告**：No Priors 预告下期嘉宾是 Karpathy
+- **产品预告**：OpenAI 预告 GPT-5 即将发布
+- **会议预告**：某峰会预告重磅演讲嘉宾
+
+### 工作流程
+
+```
+┌─────────────────────────────────┐
+│  添加预告事件到 upcoming_events  │
+└───────────────┬─────────────────┘
+                │
+                ▼
+┌─────────────────────────────────┐
+│  每次新闻更新时自动检查匹配      │
+└───────────────┬─────────────────┘
+                │
+        ┌───────┴───────┐
+        ▼               ▼
+┌──────────────┐ ┌──────────────┐
+│   匹配成功    │ │   未匹配      │
+└──────┬───────┘ └──────────────┘
+       │
+       ▼
+┌─────────────────────────────────┐
+│  从预告列表移除                  │
+│  加入正式选题列表（标记预告落地） │
+└─────────────────────────────────┘
+```
+
+### CLI 命令
+
+```bash
+# 添加预告事件
+python3 upcoming_events.py add \
+  --title "事件标题" \
+  --description "事件描述" \
+  --keywords "关键词1,关键词2,关键词3" \
+  --source "来源提示" \
+  --priority A+
+
+# 列出所有待处理事件
+python3 upcoming_events.py list
+
+# 列出所有事件（包括已找到/已过期）
+python3 upcoming_events.py list --status all
+
+# 移除指定事件
+python3 upcoming_events.py remove evt_20260318_xxxxxx
+
+# 清理30天前的过期事件
+python3 upcoming_events.py cleanup
+```
+
+### 匹配逻辑
+
+- 支持多关键词匹配（2+ 个关键词命中即认为匹配）
+- 检查标题、内容和 URL
+- 匹配成功后自动转换并加入新闻列表
+- 新闻标题会标记【预告落地】前缀
+
+---
+
 ## 更新日志
+
+### v3.0 (2026-03-18)
+- ✨ 新增预告事件追踪功能
+- ✨ 支持主动搜索预告事件的新消息
+- 🔧 整合 Twitter 和 Inoreader 数据源
 
 ### v2.0 (2026-03-11)
 - ✨ 新增自动 API 调用模式

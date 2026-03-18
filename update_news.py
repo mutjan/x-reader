@@ -31,6 +31,22 @@ import requests
 import xml.etree.ElementTree as ET
 import logging
 
+# 导入预告事件管理模块
+try:
+    from upcoming_events import (
+        load_upcoming_events,
+        check_items_against_events,
+        convert_matched_to_news,
+        update_event_status,
+        get_pending_events_summary,
+        cleanup_expired_events
+    )
+    UPCOMING_EVENTS_AVAILABLE = True
+except ImportError:
+    UPCOMING_EVENTS_AVAILABLE = False
+    logger = logging.getLogger(__name__)
+    logger.debug("[预告事件] 模块未加载")
+
 # ==================== 配置 ====================
 
 logging.basicConfig(
@@ -43,7 +59,7 @@ logger = logging.getLogger(__name__)
 # RSS 源配置
 RSS_CONFIG = {
     "twitter": {
-        "url": "http://localhost:1200/twitter/list/2026563584311108010?filter_time=86400",
+        "url": "http://localhost:1200/twitter/list/2026563584311108010?filter_time=86400&includeReplies=1",
         "type": "rss",
         "name": "Twitter"
     },
@@ -1364,6 +1380,49 @@ def main():
 
     logger.info(f"[去重] 新内容: {len(new_items)}/{len(items)} 条")
 
+    # ========== 预告事件检查 ==========
+    upcoming_news_items = []
+    if UPCOMING_EVENTS_AVAILABLE:
+        summary = get_pending_events_summary()
+        if summary["pending"] > 0:
+            logger.info(f"[预告事件] 发现 {summary['pending']} 个待处理预告")
+            
+            # 检查新内容是否匹配预告事件
+            check_result = check_items_against_events(new_items)
+            
+            if check_result["matched"]:
+                logger.info(f"[预告事件] 🎯 匹配到 {len(check_result['matched'])} 个预告事件！")
+                
+                for event, item, match_details in check_result["matched"]:
+                    # 转换为新闻格式
+                    news_item = convert_matched_to_news(event, item, match_details)
+                    upcoming_news_items.append(news_item)
+                    
+                    # 更新事件状态为 found
+                    update_event_status(event["id"], "found", news_item)
+                    
+                    logger.info(f"[预告事件] ✅ 已转换: {event['title'][:50]}...")
+                
+                # 更新 new_items 为未匹配的内容
+                new_items = check_result["unmatched"]
+                logger.info(f"[预告事件] 剩余未匹配新内容: {len(new_items)} 条")
+            else:
+                logger.info("[预告事件] 本次无匹配")
+        else:
+            logger.debug("[预告事件] 无待处理预告")
+    
+    # 如果有预告事件落地，先保存
+    if upcoming_news_items:
+        today, existing = load_existing_news()
+        final_news, added, updated = merge_news(existing, upcoming_news_items)
+        logger.info(f"[预告事件] 已加入 {len(upcoming_news_items)} 条落地新闻")
+        
+        if save_news(today, final_news):
+            push_to_github()
+            logger.info("[预告事件] ✅ 已保存到新闻列表")
+    
+    # ========== 预告事件检查结束 ==========
+
     if not new_items:
         logger.info("没有新内容，退出")
         return
@@ -1464,6 +1523,19 @@ def main():
     logger.info(f"  A级(优先): {a_count} 条")
     logger.info(f"  B级(可选): {b_count} 条")
     logger.info(f"  总计: {len(final_news)} 条")
+    
+    # 预告事件统计
+    if UPCOMING_EVENTS_AVAILABLE:
+        summary = get_pending_events_summary()
+        if summary["pending"] > 0:
+            logger.info(f"\n【预告事件】")
+            logger.info(f"  待处理: {summary['pending']} 个")
+            for e in summary["pending_list"][:3]:  # 最多显示3个
+                logger.info(f"    - {e['title'][:40]}...")
+        
+        # 清理过期事件
+        cleanup_expired_events()
+    
     logger.info("=" * 60)
 
 
