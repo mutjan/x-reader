@@ -7,6 +7,43 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-03-19
+
+### Added
+- **预告事件管理模块 v2.0** (`upcoming_events.py`)
+  - 支持关键词分级：核心关键词 vs 辅助关键词
+  - 内容相似度验证，防止错误匹配
+  - 置信度评分系统（0-1分）
+  - CLI 测试工具：`python upcoming_events.py test`
+- **统一的更新入口** (`update_news.py`)
+  - 整合 Twitter RSS 和 Inoreader 数据源
+  - 支持 `--source` 参数选择数据源
+  - 支持 `--resume` 恢复中断的处理流程
+
+### Changed
+- **重大重构**：清理 18 个冗余文件，项目结构精简
+  - 删除废弃脚本：`run_twitter_news.py`, `process_news_local.py` 等
+  - 删除过期数据文件
+  - 清空并轮转日志文件
+- **完善 `.gitignore`**：添加运行时生成的缓存文件、日志、备份等
+- **预告事件匹配逻辑改进**：必须匹配至少 1 个核心关键词才能触发
+
+### Fixed
+- 修复预告事件错误匹配问题（如 peptides 文章被错误匹配为 Karpathy 播客）
+- 移除敏感信息（GitHub Token）从 git 历史
+
+## [1.2.0] - 2026-03-14
+
+### Added
+- **Inoreader 数据源支持**：通过 RSS 聚合获取更多科技新闻
+- **AI 内容处理**：支持批量处理新闻，生成分级评分（S/A+/A/B）
+- **新闻去重功能**：`merge_duplicates.py` 合并相似新闻
+- **数据验证工具**：`validate_data.py` 检查数据完整性
+
+### Changed
+- 优化 AI prompt 生成逻辑，提高选题质量
+- 改进中文标题生成，更符合量子位风格
+
 ## [1.1.0] - 2026-03-08
 
 ### Added
