@@ -1030,6 +1030,10 @@ def process_with_ai(items, auto_ai=False, source="default", batch_size=None, cac
     files = get_ai_files(source)
     logger.info(f"[AI] 开始处理 {len(items)} 条新闻 (来源: {source}, 批量: {batch_size})...")
 
+    # 为每个 item 添加原始索引，用于后续匹配
+    for i, item in enumerate(items):
+        item["_original_index"] = i
+
     # 尝试从缓存获取结果
     if cache is not None:
         cached_results = []
@@ -1037,6 +1041,8 @@ def process_with_ai(items, auto_ai=False, source="default", batch_size=None, cac
         for item in items:
             cached = get_cached_result(item, cache)
             if cached:
+                # 将缓存结果与原始索引关联
+                cached["_original_index"] = item.get("_original_index", 0)
                 cached_results.append(cached)
             else:
                 uncached_items.append(item)
@@ -1074,6 +1080,10 @@ def process_with_ai(items, auto_ai=False, source="default", batch_size=None, cac
                         if is_valid:
                             results = data.get("results", [])
                             logger.info(f"[AI] API 处理成功，返回 {len(results)} 条结果")
+                            # 添加原始索引到结果
+                            for i, result in enumerate(results):
+                                if i < len(items):
+                                    result["_original_index"] = items[i].get("_original_index", i)
                             # 缓存结果
                             if cache is not None:
                                 for item, result in zip(items, results):
@@ -1130,7 +1140,12 @@ def load_local_ai_result(source="default"):
 
             is_valid, msg = validate_ai_result(data)
             if is_valid:
-                return data.get("results", [])
+                results = data.get("results", [])
+                # 兼容旧格式：如果没有 _original_index，使用 index
+                for r in results:
+                    if "_original_index" not in r and "index" in r:
+                        r["_original_index"] = r["index"]
+                return results
             else:
                 logger.error(f"[AI] 结果验证失败: {msg}")
 
@@ -1456,14 +1471,15 @@ def main():
     logger.info(f"[AI] 处理完成，获得 {len(ai_results)} 条结果")
 
     # 5. 构建最终数据
-    ai_map = {r["index"]: r for r in ai_results if "index" in r}
+    # 使用 _original_index 映射回原始 filtered 列表
+    ai_map = {r.get("_original_index", r.get("index", 0)): r for r in ai_results}
     processed = []
 
-    for item in filtered:
-        idx = filtered.index(item)
+    for idx, item in enumerate(filtered):
         ai_result = ai_map.get(idx, {})
 
         if not ai_result:
+            logger.warning(f"[AI] 索引 {idx} 无对应结果: {item.get('title', '')[:40]}...")
             continue
 
         # 标准化实体
