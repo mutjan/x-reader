@@ -1084,10 +1084,14 @@ def process_with_ai(items, auto_ai=False, source="default", batch_size=None, cac
                                     result["_original_index"] = ai_index
                                 else:
                                     logger.warning(f"[AI] 结果 index={ai_index} 无法映射到原始 item")
-                            # 缓存结果
+                            # 缓存结果：用 _original_index 反查 item，避免 AI 合并/跳过条目时 zip 错位
                             if cache is not None:
-                                for item, result in zip(items, results):
-                                    cache_result(item, result, cache)
+                                for result in results:
+                                    ai_idx = result.get("_original_index", result.get("index", -1))
+                                    if ai_idx in index_to_item:
+                                        cache_result(index_to_item[ai_idx], result, cache)
+                                    else:
+                                        logger.warning(f"[AI] 缓存写入跳过：index={ai_idx} 无对应 item")
                                 save_ai_cache(cache, source)
                             # Bug 2 修复：合并之前命中缓存的结果，避免部分缓存命中时丢弃已缓存条目
                             return cached_results + results
