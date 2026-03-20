@@ -839,20 +839,13 @@ def fetch_inoreader_items(token, hours=24, limit=200):
     url = f"{RSS_CONFIG['inoreader']['api']}/stream/contents/user/-/state/com.google/reading-list?n={limit}&ot={since}"
 
     try:
-        cmd = [
-            "curl", "-s",
-            "--connect-timeout", "10",
-            "--max-time", "30",
-            "-H", f"Authorization: Bearer {token}",
-            url,
-        ]
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=35)
-
-        if result.returncode != 0:
-            logger.error(f"[Inoreader] 获取失败: {result.stderr}")
+        headers = {"Authorization": f"Bearer {token}"}
+        resp = requests.get(url, headers=headers, timeout=30)
+        if resp.status_code != 200:
+            logger.error(f"[Inoreader] 获取失败: HTTP {resp.status_code}")
             return []
 
-        data = json.loads(result.stdout)
+        data = resp.json()
         items = []
 
         for item in data.get("items", []):
@@ -959,8 +952,10 @@ def get_ai_prompt(items, batch_size=None):
 
     items_for_ai = []
     for i, item in enumerate(items[:batch_size]):
+        # 使用 _original_index（filtered 列表的绝对位置），而非局部 i
+        # 这样 AI 返回的 result["index"] 可以直接映射回 filtered 列表，避免缓存分离后的索引错位
         items_for_ai.append({
-            "index": i,
+            "index": item.get("_original_index", i),
             "title": item["title"],
             "content": item["content"][:400] if item["content"] else "",
             "source": item["source"],
@@ -1035,8 +1030,8 @@ def process_with_ai(items, auto_ai=False, source="default", batch_size=None, cac
         item["_original_index"] = i
 
     # 尝试从缓存获取结果
+    cached_results = []  # 始终初始化，确保后续 return 时可以合并
     if cache is not None:
-        cached_results = []
         uncached_items = []
         for item in items:
             cached = get_cached_result(item, cache)
@@ -1080,16 +1075,22 @@ def process_with_ai(items, auto_ai=False, source="default", batch_size=None, cac
                         if is_valid:
                             results = data.get("results", [])
                             logger.info(f"[AI] API 处理成功，返回 {len(results)} 条结果")
-                            # 添加原始索引到结果
-                            for i, result in enumerate(results):
-                                if i < len(items):
-                                    result["_original_index"] = items[i].get("_original_index", i)
+                            # Bug 3 修复：构建 _original_index → item 映射，避免依赖 enumerate 顺序
+                            # AI 可能合并条目，results 顺序和数量都可能与 items 不一致
+                            index_to_item = {item.get("_original_index", i): item for i, item in enumerate(items)}
+                            for result in results:
+                                ai_index = result.get("index", -1)
+                                if ai_index in index_to_item:
+                                    result["_original_index"] = ai_index
+                                else:
+                                    logger.warning(f"[AI] 结果 index={ai_index} 无法映射到原始 item")
                             # 缓存结果
                             if cache is not None:
                                 for item, result in zip(items, results):
                                     cache_result(item, result, cache)
                                 save_ai_cache(cache, source)
-                            return results
+                            # Bug 2 修复：合并之前命中缓存的结果，避免部分缓存命中时丢弃已缓存条目
+                            return cached_results + results
                         else:
                             logger.warning(f"[AI] 结果验证失败: {msg}")
 
