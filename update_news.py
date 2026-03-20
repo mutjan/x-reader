@@ -171,7 +171,7 @@ def diagnose_json_error(json_str, error):
     return error_info
 
 
-def safe_json_loads(json_str, max_retries=3, context=""):
+def safe_json_loads(json_str, max_retries=5, context=""):
     """安全加载JSON字符串，带重试和清理机制"""
     original_str = json_str
     last_error = None
@@ -191,6 +191,13 @@ def safe_json_loads(json_str, max_retries=3, context=""):
                 if json_match:
                     json_str = json_match.group(1)
                     json_str = sanitize_json_string(json_str)
+            elif attempt == 2:
+                # 尝试定点修复：根据错误位置转义值内裸引号
+                if hasattr(last_error, 'pos'):
+                    json_str = fix_unescaped_quotes_targeted(json_str, last_error.pos)
+            elif attempt == 3:
+                # 全局状态机扫描，修复所有值内未转义双引号
+                json_str = fix_unescaped_quotes_in_values(json_str)
             else:
                 # 最后尝试：修复常见错误
                 json_str = try_fix_json(json_str)
@@ -219,6 +226,115 @@ def try_fix_json(json_str):
     # 给未加引号的属性名添加引号
     json_str = re.sub(r'([{,]\s*)(\w+)(\s*:)', r'\1"\2"\3', json_str)
     return json_str
+
+
+def fix_unescaped_quotes_in_values(json_str):
+    """
+    修复 JSON 字符串值内部未转义的双引号。
+    策略：逐字符状态机扫描。
+    - 当处于 value 字符串内时，遇到裸 " 需要判断：
+      若其后紧跟 JSON 结构字符（,  }  ]  换行 后跟空白再跟这些），认为是合法结束；
+      否则转义为 \"。
+    - key 字符串不做修复（key 里出现引号说明 JSON 本身严重损坏）。
+    """
+    result = []
+    i = 0
+    n = len(json_str)
+    in_string = False
+    is_value = False      # 当前字符串是 value（而非 key）
+    after_colon = False   # 上一个有效 token 是否是 :
+
+    def looks_like_string_end(pos):
+        """判断 pos 处的 " 是否像字符串的合法结束引号。
+        启发式：" 后跳过空白，下一个字符是 JSON 结构字符则认为是结束。"""
+        j = pos + 1
+        while j < n and json_str[j] in ' \t\r\n':
+            j += 1
+        if j >= n:
+            return True
+        return json_str[j] in (',', '}', ']', ':')
+
+    while i < n:
+        ch = json_str[i]
+
+        if in_string:
+            if ch == '\\':
+                # 已转义序列，原样保留
+                result.append(ch)
+                i += 1
+                if i < n:
+                    result.append(json_str[i])
+                    i += 1
+                continue
+            elif ch == '"':
+                if is_value and not looks_like_string_end(i):
+                    # 值内部的裸引号：转义
+                    result.append('\\"')
+                    i += 1
+                else:
+                    # 合法的字符串结束引号
+                    in_string = False
+                    after_colon = False
+                    result.append(ch)
+                    i += 1
+                continue
+            else:
+                result.append(ch)
+                i += 1
+                continue
+        else:
+            if ch == '"':
+                in_string = True
+                is_value = after_colon
+                result.append(ch)
+                i += 1
+                continue
+            elif ch == ':':
+                after_colon = True
+                result.append(ch)
+                i += 1
+                continue
+            elif ch in ('{', '}', '[', ']', ','):
+                after_colon = False
+                result.append(ch)
+                i += 1
+                continue
+            else:
+                result.append(ch)
+                i += 1
+                continue
+
+    if in_string:
+        # 未正常闭合，返回原串保险
+        return json_str
+
+    return ''.join(result)
+
+
+def fix_unescaped_quotes_targeted(json_str, error_pos):
+    """
+    基于 json.JSONDecodeError 报告的错误位置，定点修复值内裸引号。
+    在错误位置前后寻找最近的字符串起始引号，把中间的裸引号转义。
+    """
+    # 找到错误位置之前最近的未转义 " (字符串起始)
+    start = error_pos - 1
+    while start >= 0 and json_str[start] != '"':
+        start -= 1
+    if start < 0:
+        return json_str
+
+    # 在 error_pos 找到字符串结束引号（下一个未转义 "）
+    end = error_pos
+    while end < len(json_str) and json_str[end] != '"':
+        end += 1
+    if end >= len(json_str):
+        return json_str
+
+    # 把 (start, end) 之间的内容里，error_pos 处的 " 替义为 \"
+    # 更安全的做法：把整段字符串内的裸引号全部转义
+    inner = json_str[start + 1:end]
+    inner_fixed = inner.replace('"', '\\"')
+    return json_str[:start + 1] + inner_fixed + json_str[end:]
 
 
 def safe_json_dumps(obj, ensure_ascii=False, indent=2):
@@ -1012,7 +1128,8 @@ def get_ai_prompt(items, batch_size=None):
 1. 只返回 JSON，不要其他解释
 2. 最多选择15条最有价值的
 3. 相似主题的新闻合并为一条
-4. JSON字符串必须使用英文双引号"""
+4. JSON字符串必须使用英文双引号
+5. title/summary/reason 等文本字段内部不得出现英文双引号，如需引用请用书名号《》或单引号'代替"""
 
     return prompt
 
