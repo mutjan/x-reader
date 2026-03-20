@@ -1025,9 +1025,10 @@ def process_with_ai(items, auto_ai=False, source="default", batch_size=None, cac
     files = get_ai_files(source)
     logger.info(f"[AI] 开始处理 {len(items)} 条新闻 (来源: {source}, 批量: {batch_size})...")
 
-    # 为每个 item 添加原始索引，用于后续匹配
+    # _original_index 已由调用方（main）提前赋值，这里只补全未赋值的 item（兼容直接调用）
     for i, item in enumerate(items):
-        item["_original_index"] = i
+        if "_original_index" not in item:
+            item["_original_index"] = i
 
     # 尝试从缓存获取结果
     cached_results = []  # 始终初始化，确保后续 return 时可以合并
@@ -1456,6 +1457,11 @@ def main():
         return
 
     # 4. AI 处理
+    # 提前为每个 item 打上全局原始索引，确保 prompt 生成和本地结果加载时 index 一致
+    # 必须在 load_local_ai_result 之前执行，否则本地结果的 index 无法正确映射回 filtered
+    for i, item in enumerate(filtered):
+        item["_original_index"] = i
+
     # 先尝试加载本地结果（恢复机制）
     ai_results = load_local_ai_result(source_key)
 
