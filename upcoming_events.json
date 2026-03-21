@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_checked": "2026-03-19T08:08:18.257286",
+  "last_checked": "2026-03-21T11:00:45.381610",
   "events": [
     {
       "id": "evt_20260318_083000_0",
@@ -17,9 +17,54 @@
       "expected_date": null,
       "priority": "A+",
       "created_at": "2026-03-18T08:30:00",
-      "status": "pending",
-      "found_news": null,
-      "check_count": 0
+      "status": "found",
+      "found_news": {
+        "title": "【预告落地】Karpathy最新播客：AI时代工程师正经历「相变」，编程代理将重塑整个行业",
+        "title_en": "Caught up with @karpathy for a new @NoPriorsPod: on the phase shift in engineering, AI psychosis, claws, AutoResearch, the opportunity f...",
+        "summary": "AI领域知名学者Andrej Karpathy在No Priors播客中深度探讨编程代理时代的工程师角色转变，涉及能力边界、AI精神失调风险、类SETI分布式AI研究运动等前沿议题，并分析了AI对软件行业的二阶效应。",
+        "type": "ai",
+        "typeName": "AI",
+        "score": 95,
+        "level": "S",
+        "rating": "S",
+        "reason": "【S级】评分95分 | 预告事件落地: No Priors 预告：Andrej Karpathy 将做客下期节目 | 此前已预告Karpathy将做客No Priors播客，本期正式发布，Karpathy深度分享AI时代工程师相变、编程代理、AutoResearch等前沿议题",
+        "entities": [
+          "Andrej Karpathy",
+          "No Priors",
+          "AutoResearch",
+          "编程代理"
+        ],
+        "url": "https://x.com/NoPriorsPod/status/2035080631869427745",
+        "source": "No Priors",
+        "sources": 3,
+        "sourceLinks": [
+          {
+            "name": "No Priors",
+            "url": "https://x.com/NoPriorsPod/status/2035080631869427745"
+          },
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/ceo-hire-anyone-vibe-code"
+          },
+          {
+            "name": "Andrej Karpathy",
+            "url": "https://x.com/karpathy/status/2035158351357911527"
+          }
+        ],
+        "timestamp": 1774036862,
+        "version": "2026.03.21-031",
+        "tags": [
+          "预告落地",
+          "No Priors 播客",
+          "Karpathy"
+        ],
+        "is_upcoming_event": true,
+        "upcoming_event_id": "evt_20260318_083000_0",
+        "upcoming_event_source": "No Priors 播客"
+      },
+      "check_count": 0,
+      "found_correctly": true,
+      "false_match_note": "2026-03-21前曾误匹配Futurism文章，已于2026-03-21修正为真实的No Priors Karpathy播客"
     }
   ]
 }
