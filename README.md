@@ -1,5 +1,7 @@
 # Twitter RSS 新闻选题工具
 
+🌐 **在线部署页面**: [https://mutjan.github.io/x-reader](https://mutjan.github.io/x-reader)
+
 从 Twitter RSS 源自动获取科技新闻，通过 AI 筛选和加工，生成适合科技媒体发布的选题。
 
 ## 功能特性
