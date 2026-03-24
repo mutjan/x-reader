@@ -19565,11 +19565,13 @@
       "tags": [
         "AI Agent",
         "大模型",
-        "AI编程"
+        "AI编程",
+        "多模态",
+        "产品发布"
       ],
       "url": "https://x.com/ns123abc/status/2036210277666984137",
       "source": "NIK",
-      "sources": 3,
+      "sources": 4,
       "sourceLinks": [
         {
           "name": "NIK",
@@ -19582,6 +19584,10 @@
         {
           "name": "Yohei",
           "url": "https://x.com/yoheinakajima/status/2036225134626066797"
+        },
+        {
+          "name": "Chubby♨️",
+          "url": "https://x.com/kimmonismus/status/2036219400211321335"
         }
       ],
       "timestamp": 1774307683,
@@ -19881,18 +19887,23 @@
         "NVIDIA",
         "Nemotron 3 Super",
         "直播",
-        "nvidia"
+        "nvidia",
+        "mlx"
       ],
       "tags": [
         "大模型"
       ],
       "url": "https://x.com/NVIDIAAIDev/status/2036223609681953030",
       "source": "NVIDIA AI Developer",
-      "sources": 1,
+      "sources": 2,
       "sourceLinks": [
         {
           "name": "NVIDIA AI Developer",
           "url": "https://x.com/NVIDIAAIDev/status/2036223609681953030"
+        },
+        {
+          "name": "TBPN",
+          "url": "https://x.com/tbpn/status/2036246621957087394"
         }
       ],
       "timestamp": 1774310494,
@@ -19929,6 +19940,191 @@
       "timestamp": 1774310494,
       "version": "2026.03.24-061",
       "priority_score": 5
+    },
+    {
+      "title": "Cursor发布毫秒级代码搜索：Instant Grep支持百万文件秒搜",
+      "title_en": "RT SemiAnalysis: Nvidia – The Inference Kingdom Expands, Groq LP30, LPX Rack, Attention FFN Disaggregation, Oberon & Kyber Updates, Nvidia's CPO Road...",
+      "summary": "Cursor推出Instant Grep功能，可在毫秒级时间内搜索数百万文件。该技术大幅提升AI Agent完成任务的效率，Cursor团队公开了背后的算法设计和权衡方案。",
+      "rating": "A",
+      "score": 82,
+      "level": "A",
+      "reason": "【A级】评分82分 | AI编程工具重要技术突破，对Agent性能有实质提升，有技术深度可展开",
+      "entities": [
+        "Cursor",
+        "Instant Grep",
+        "AI Agent",
+        "代码搜索",
+        "nvidia"
+      ],
+      "tags": [
+        "AI编程",
+        "AI Agent",
+        "工程优化"
+      ],
+      "url": "https://x.com/dylan522p/status/2036245358632935445",
+      "source": "Dylan Patel",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Dylan Patel",
+          "url": "https://x.com/dylan522p/status/2036245358632935445"
+        }
+      ],
+      "timestamp": 1774314108,
+      "version": "2026.03.24-065",
+      "priority_score": 18
+    },
+    {
+      "title": "PyTorch 2.11重磅发布：2723个提交支持Blackwell/Hopper GPU，FlashAttention-4登场",
+      "title_en": "Wow…the explosion of egocentric (first-person) human data really feels like the right path for robotics. EgoVerse:a massive global dataset built from...",
+      "summary": "PyTorch 2.11版本正式发布，包含432位贡献者的2723个提交。新版本重点优化分布式训练性能和新硬件架构支持，包括为Hopper和Blackwell GPU提供FlashAttention-4后端、可微分集合通信功能，以及通过XPU Graph对Intel GPU的性能优化。",
+      "rating": "A",
+      "score": 78,
+      "level": "A",
+      "reason": "【A级】评分78分 | 主流深度学习框架重要版本更新，支持最新GPU架构，对AI基础设施有实质影响",
+      "entities": [
+        "PyTorch",
+        "Blackwell",
+        "Hopper",
+        "FlashAttention-4",
+        "Intel GPU"
+      ],
+      "tags": [
+        "AI框架",
+        "GPU",
+        "开源"
+      ],
+      "url": "https://x.com/CyberRobooo/status/2036246031151882388",
+      "source": "CyberRobo",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "CyberRobo",
+          "url": "https://x.com/CyberRobooo/status/2036246031151882388"
+        }
+      ],
+      "timestamp": 1774314108,
+      "version": "2026.03.24-062",
+      "priority_score": 62
+    },
+    {
+      "title": "月球质量投射器设想：年发射300吨载荷的商业化条件",
+      "title_en": "CodexBar 0.19.0 is out: Stay ahead of token resets. 🟧 Alibaba Coding Plan support 📊 Subscription history charts 🎯 Cursor Total/Auto/API dashb...",
+      "summary": "科技评论人提出月球质量投射器实现商业化需满足4个条件：永久电磁发射装置、年发射300吨、95%任务成功率及每年200次发射。目前属于远期设想阶段，缺乏具体实施主体和时间表。",
+      "rating": "C",
+      "score": 55,
+      "level": "C",
+      "reason": "【C级】评分55分 | 属于概念性讨论，无具体实施计划或突破，时效性和可扩展性较低",
+      "entities": [
+        "月球质量投射器",
+        "SpaceX",
+        "电磁发射",
+        "claude",
+        "alibaba"
+      ],
+      "tags": [
+        "太空科技"
+      ],
+      "url": "https://x.com/steipete/status/2036245531522113910",
+      "source": "Peter Steinberger 🦞",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Peter Steinberger 🦞",
+          "url": "https://x.com/steipete/status/2036245531522113910"
+        }
+      ],
+      "timestamp": 1774314108,
+      "version": "2026.03.24-063",
+      "priority_score": 59
+    },
+    {
+      "title": "OpenClaw插件生态扩展：Codex App Server实现桥接",
+      "title_en": ".@davidsenra says Shopify CEO @tobi told him we're going to look back at 2026 as \"the year that every single business in the world was up for grabs.\" ...",
+      "summary": "开发者Harold完成Codex App Server与OpenClaw的插件连接，展示了OpenClaw的插件扩展能力。属于社区开发者的小规模集成项目。",
+      "rating": "C",
+      "score": 52,
+      "level": "C",
+      "reason": "【C级】评分52分 | 小众开源工具集成，影响范围有限，非重大技术突破",
+      "entities": [
+        "OpenClaw",
+        "Codex App Server",
+        "Harold Hunt"
+      ],
+      "tags": [
+        "AI编程",
+        "开源"
+      ],
+      "url": "https://x.com/tbpn/status/2036241506428977519",
+      "source": "TBPN",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "TBPN",
+          "url": "https://x.com/tbpn/status/2036241506428977519"
+        }
+      ],
+      "timestamp": 1774314108,
+      "version": "2026.03.24-068",
+      "priority_score": 0
+    },
+    {
+      "title": "专家呼吁FDA放宽第二类多肽药物监管：降低患者风险",
+      "title_en": "We gonna see US to divert LNG ships to Korea and Taiwan going into the hottest summer on record for Europe, just so we can keep the semi production go...",
+      "summary": "生物医学专家Max Marchione建议FDA应合法化部分安全性强、疗效明确的第二类多肽药物，认为这能降低患者风险并增加获益，尽管可能影响制药公司高价生物药的利润。",
+      "rating": "C",
+      "score": 40,
+      "level": "C",
+      "reason": "【C级】评分40分 | 属于政策讨论类内容，与硬科技关联度较低，可扩展性有限",
+      "entities": [
+        "FDA",
+        "多肽药物",
+        "Max Marchione"
+      ],
+      "tags": [
+        "生物科技",
+        "政策"
+      ],
+      "url": "https://x.com/dylan522p/status/2036243148587016241",
+      "source": "Dylan Patel",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Dylan Patel",
+          "url": "https://x.com/dylan522p/status/2036243148587016241"
+        }
+      ],
+      "timestamp": 1774314108,
+      "version": "2026.03.24-067",
+      "priority_score": 0
+    },
+    {
+      "title": "每日3小时直播节目意外走红：创作者分享数据",
+      "title_en": "If you're gonna be an asshole and use bots to reply, at least don't be a *stupid* asshole and have your both reply to the wrong thread. 🙄",
+      "summary": "创作者John Coogan分享其每日3小时直播节目取得突破性关注的数据截图。属于个人创作者的内容运营分享，与科技新闻关联度低。",
+      "rating": "C",
+      "score": 35,
+      "level": "C",
+      "reason": "【C级】评分35分 | 个人创作者内容分享，无科技新闻价值",
+      "entities": [
+        "John Coogan",
+        "直播"
+      ],
+      "tags": [
+        "内容创作"
+      ],
+      "url": "https://x.com/jeremyphoward/status/2036235321034285412",
+      "source": "Jeremy Howard",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Jeremy Howard",
+          "url": "https://x.com/jeremyphoward/status/2036235321034285412"
+        }
+      ],
+      "timestamp": 1774314108,
+      "version": "2026.03.24-069",
+      "priority_score": 0
     }
   ]
 }
