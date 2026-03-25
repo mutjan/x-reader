@@ -24711,11 +24711,15 @@
       ],
       "url": "https://x.com/NandoDF/status/2036573680810205461",
       "source": "Nando de Freitas",
-      "sources": 1,
+      "sources": 2,
       "sourceLinks": [
         {
           "name": "Nando de Freitas",
           "url": "https://x.com/NandoDF/status/2036573680810205461"
+        },
+        {
+          "name": "Wenhu Chen",
+          "url": "https://x.com/WenhuChen/status/2036672870252978317"
         }
       ],
       "timestamp": 1774404021,
@@ -25313,11 +25317,15 @@
       ],
       "url": "https://www.ft.com/content/d9123d9d-c807-41d6-8a17-80ff1111834a",
       "source": "Technology (manus)",
-      "sources": 1,
+      "sources": 2,
       "sourceLinks": [
         {
           "name": "Technology (manus)",
           "url": "https://www.ft.com/content/d9123d9d-c807-41d6-8a17-80ff1111834a"
+        },
+        {
+          "name": "Techmeme (manus)",
+          "url": "http://www.techmeme.com/260325/p1#a260325p1"
         }
       ],
       "timestamp": 1774414980,
@@ -25350,6 +25358,311 @@
       ],
       "timestamp": 1774414980,
       "version": "2026.03.25-162"
+    },
+    {
+      "title": "刚刚！首个纯AI自主开发的多人游戏开源：17500行代码零人工编写",
+      "title_en": "We just open-sourced Clawverse — a complete multiplayer game built 100% by AI agents. 17,500 lines of code across 100+ autonomous sprints. No human w...",
+      "summary": "Clawverse成为全球首个完全由AI智能体自主开发并开源的多人在线游戏，包含等距渲染引擎、完整经济系统、邮件认证等模块，历时100多个自主迭代周期，未写入任何人工代码。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 92,
+      "level": "S",
+      "rating": "S",
+      "reason": "【S级】评分92分 | S级 | AI自主开发完整商业级游戏的开创性案例，展示AI软件工程能力的里程碑突破",
+      "entities": [
+        "Clawverse",
+        "AI Agent",
+        "Eric Jing"
+      ],
+      "url": "https://x.com/ericjing_ai/status/2036503311394779442",
+      "source": "Eric Jing",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Eric Jing",
+          "url": "https://x.com/ericjing_ai/status/2036503311394779442"
+        }
+      ],
+      "timestamp": 1774418533,
+      "version": "2026.03.25-168"
+    },
+    {
+      "title": "DeepMind创始人传记揭秘：Demis Hassabis的AGI终极使命",
+      "title_en": "The Infinity Machine — a deep dive into the mind of Demis Hassabis",
+      "summary": "《金融时报》深度报道Sebastian Mallaby撰写的Hassabis传记《无限机器》，追溯其从国际象棋神童到DeepMind创始人的人生轨迹，揭示其创造通用人工智能的毕生追求。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 88,
+      "level": "A+",
+      "rating": "A+",
+      "reason": "【A+级】评分88分 | A+级 | AGI领域核心人物深度传记，提供稀缺的第一手视角和背景故事",
+      "entities": [
+        "Demis Hassabis",
+        "DeepMind",
+        "Sebastian Mallaby",
+        "AGI"
+      ],
+      "url": "https://www.ft.com/content/100d89bb-1b8f-4ca3-bcda-46f802112c04",
+      "source": "Technology",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Technology",
+          "url": "https://www.ft.com/content/100d89bb-1b8f-4ca3-bcda-46f802112c04"
+        }
+      ],
+      "timestamp": 1774418533,
+      "version": "2026.03.25-167"
+    },
+    {
+      "title": "开源新架构：AI代码审计实现零上下文隔离验证",
+      "title_en": "[P] Cold Validation: Open-source system where one AI agent audits another with zero shared context",
+      "summary": "Cold Validation开源系统实现AI智能体间的独立验证机制，Builder智能体生成代码，Reviewer智能体仅审计产物而永不接触推理过程，通过编排器强制执行阶段门控。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 84,
+      "level": "A",
+      "rating": "A",
+      "reason": "【A级】评分84分 | A级 | AI安全领域创新方案，解决AI自主开发中的验证与信任问题",
+      "entities": [
+        "Cold Validation",
+        "Claude Code",
+        "Codex CLI",
+        "AI审计"
+      ],
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s3026s/p_cold_validation_opensource_system_where_one_ai/",
+      "source": "Machine Learning",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s3026s/p_cold_validation_opensource_system_where_one_ai/"
+        }
+      ],
+      "timestamp": 1774418533,
+      "version": "2026.03.25-170"
+    },
+    {
+      "title": "AgentGuard开源：为AI智能体打造策略引擎与执行代理",
+      "title_en": "[P] AgentGuard – a policy engine + proxy to control what AI agents are allowed to do",
+      "summary": "新开源项目AgentGuard作为AI智能体的策略中间层，可在智能体执行命令前强制验证策略，支持阻断危险操作、限制API调用频率、审计敏感操作等安全管控功能。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 82,
+      "level": "A",
+      "rating": "A",
+      "reason": "【A级】评分82分 | A级 | AI Agent安全基础设施，回应日益增长的AI自主操作安全需求",
+      "entities": [
+        "AgentGuard",
+        "AI Agent",
+        "策略引擎"
+      ],
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s2x252/p_agentguard_a_policy_engine_proxy_to_control/",
+      "source": "Machine Learning",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s2x252/p_agentguard_a_policy_engine_proxy_to_control/"
+        }
+      ],
+      "timestamp": 1774418533,
+      "version": "2026.03.25-171"
+    },
+    {
+      "title": "KALAVAI论文揭示：独立专家模型融合何时有效的新规律",
+      "title_en": "[R] KALAVAI: Predicting When Independent Specialist Fusion Works (gain = 0.82 × divergence − 2.72, R² = 0.856, tested 410M–6.9B)",
+      "summary": "最新研究表明可通过简单公式预测独立专家模型融合效果，在4.1亿至69亿参数规模上验证发现：增益与模型分歧度呈线性关系，为分布式AI训练提供理论指导。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 81,
+      "level": "A",
+      "rating": "A",
+      "reason": "【A级】评分81分 | A级 | 分布式AI训练的理论突破，对开源模型协作训练具有实践指导价值",
+      "entities": [
+        "KALAVAI",
+        "模型融合",
+        "专家模型",
+        "arXiv"
+      ],
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s2yr9b/r_kalavai_predicting_when_independent_specialist/",
+      "source": "Machine Learning",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s2yr9b/r_kalavai_predicting_when_independent_specialist/"
+        }
+      ],
+      "timestamp": 1774418533,
+      "version": "2026.03.25-169"
+    },
+    {
+      "title": "ICLR 2026新基准：用儿童认知任务评估多模态大模型",
+      "title_en": "[R] Evaluating MLLMs with Child-Inspired Cognitive Tasks",
+      "summary": "KidGym被ICLR 2026接收，该基准通过2D网格交互环境评估MLLM在连续轨迹交互中的表现，灵感源自韦氏儿童智力量表，弥补现有静态评测的不足。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 78,
+      "level": "A",
+      "rating": "A",
+      "reason": "【A级】评分78分 | A级 | 顶会接收的MLLM评测新范式，填补连续交互能力评估空白",
+      "entities": [
+        "KidGym",
+        "MLLM",
+        "ICLR 2026",
+        "韦氏智力量表"
+      ],
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s2clxr/r_evaluating_mllms_with_childinspired_cognitive/",
+      "source": "Machine Learning",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s2clxr/r_evaluating_mllms_with_childinspired_cognitive/"
+        }
+      ],
+      "timestamp": 1774418533,
+      "version": "2026.03.25-166"
+    },
+    {
+      "title": "Anthropic国会听证会对政府方不利，进展引发关注",
+      "title_en": "The Anthropic hearing is a disaster so far (for the government), unsurprisingly",
+      "summary": "前OpenAI政策研究员Miles Brundage评论称Anthropic参与的国会听证会目前对政府方表现不佳，具体听证内容涉及AI监管立法议题。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 76,
+      "level": "A",
+      "rating": "A",
+      "reason": "【A级】评分76分 | A级 | AI政策监管进程的重要信号，涉及行业龙头与政府的博弈动态",
+      "entities": [
+        "Anthropic",
+        "Miles Brundage",
+        "国会听证",
+        "AI监管"
+      ],
+      "url": "https://x.com/Miles_Brundage/status/2036546138845880662",
+      "source": "Miles Brundage",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Miles Brundage",
+          "url": "https://x.com/Miles_Brundage/status/2036546138845880662"
+        }
+      ],
+      "timestamp": 1774418533,
+      "version": "2026.03.25-175"
+    },
+    {
+      "title": "Intel与AMD CPU供应紧张加剧，PC与服务器厂商雪上加霜",
+      "title_en": "Sources: worsening supply constraints in CPUs made by Intel and AMD add a fresh blow to PC and server makers already hit by a severe memory chip shortage (Nikkei Asia)",
+      "summary": "据《日经亚洲》报道，Intel和AMD处理器供应约束恶化，给已遭受存储芯片短缺冲击的PC和服务器制造商带来新一轮打击，供应链压力持续升级。",
+      "type": "tech",
+      "typeName": "科技",
+      "score": 74,
+      "level": "B",
+      "rating": "B",
+      "reason": "【B级】评分74分 | B级 | 半导体供应链动态，对硬件行业有实际影响但话题深度有限",
+      "entities": [
+        "Intel",
+        "AMD",
+        "CPU",
+        "供应链"
+      ],
+      "url": "http://www.techmeme.com/260325/p2#a260325p2",
+      "source": "Techmeme",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260325/p2#a260325p2"
+        }
+      ],
+      "timestamp": 1774418533,
+      "version": "2026.03.25-176"
+    },
+    {
+      "title": "英国将试点对青少年实施社交媒体禁令与数字宵禁",
+      "title_en": "Social media bans and digital curfews to be trialled on UK teenagers",
+      "summary": "英国政府计划开展青少年社交媒体使用限制试点，测试包括社交平台禁令和夜间数字宵禁等措施，旨在应对青少年网络成瘾和心理健康问题。",
+      "type": "tech",
+      "typeName": "科技",
+      "score": 72,
+      "level": "B",
+      "rating": "B",
+      "reason": "【B级】评分72分 | B级 | 科技政策监管新动向，对平台治理有参考价值",
+      "entities": [
+        "英国",
+        "社交媒体",
+        "青少年保护",
+        "数字宵禁"
+      ],
+      "url": "https://www.bbc.com/news/articles/cn89g3ngkyzo",
+      "source": "Hacker News",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Hacker News",
+          "url": "https://www.bbc.com/news/articles/cn89g3ngkyzo"
+        }
+      ],
+      "timestamp": 1774418533,
+      "version": "2026.03.25-178"
+    },
+    {
+      "title": "Google AI Studio与Gemini App团队持续扩招，高管称现在是建设最佳时机",
+      "title_en": "Can confirm! It's an incredible time to be building, and Google continues to be an amazing place to do it. I've been here almost 9 years 🤯 and stil...",
+      "summary": "Google高管在社交平台表示AI Studio和Gemini App是其在Google工作近9年来最喜爱的产品，目前两个团队均在积极招聘，强调当下是加入Google进行AI建设的绝佳时机。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 70,
+      "level": "B",
+      "rating": "B",
+      "reason": "【B级】评分70分 | B级 | 科技巨头人才招聘动态，反映Google在AI产品上的投入力度",
+      "entities": [
+        "Google",
+        "AI Studio",
+        "Gemini App"
+      ],
+      "url": "https://x.com/jacalulu/status/2036523838473961536",
+      "source": "Jaclyn Konzelmann",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Jaclyn Konzelmann",
+          "url": "https://x.com/jacalulu/status/2036523838473961536"
+        }
+      ],
+      "timestamp": 1774418533,
+      "version": "2026.03.25-173"
+    },
+    {
+      "title": "AI2研究人员被挖角后，初创公司抛出橄榄枝招揽医学AI人才",
+      "title_en": "If any AI2 researchers want to continue working on open source frontier models, specifically for medical applications, DM me :) At @SophontAI, we beli...",
+      "summary": "SophontAI创始人公开邀请AI2研究人员加入，专注医学应用场景的前沿模型开源研究，将自监督学习与RL训练应用于临床用例，与MedARC合作推进。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 68,
+      "level": "B",
+      "rating": "B",
+      "reason": "【B级】评分68分 | B级 | AI人才流动后续，医学AI垂直领域的开源研究动态",
+      "entities": [
+        "AI2",
+        "SophontAI",
+        "医学AI",
+        "MedARC"
+      ],
+      "url": "https://x.com/iScienceLuvr/status/2036576204275544160",
+      "source": "Tanishq Mathew Abraham, Ph.D.",
+      "sources": 1,
+      "sourceLinks": [
+        {
+          "name": "Tanishq Mathew Abraham, Ph.D.",
+          "url": "https://x.com/iScienceLuvr/status/2036576204275544160"
+        }
+      ],
+      "timestamp": 1774418533,
+      "version": "2026.03.25-177"
     }
   ]
 }
