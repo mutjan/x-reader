@@ -59,7 +59,7 @@ logger = logging.getLogger(__name__)
 # RSS 源配置
 RSS_CONFIG = {
     "twitter": {
-        "url": "http://localhost:1200/twitter/list/2026563584311108010?filter_time=86400&includeReplies=1",
+        "url": "http://localhost:1200/twitter/home/2026563584311108010?filter_time=86400",
         "type": "rss",
         "name": "Twitter"
     },
@@ -75,6 +75,15 @@ AI_CONFIG = {
     "base_url": "https://api.moonshot.cn/v1",
     "model": "kimi-k2.5",
     "api_key": os.environ.get("MOONSHOT_API_KEY", ""),
+    "timeout": 120,
+}
+
+# Claude API 配置（第一优先级）
+# 支持通过 ANTHROPIC_BASE_URL 和 ANTHROPIC_MODEL 环境变量覆盖，兼容 LobsterAI / Kimi 等代理
+CLAUDE_CONFIG = {
+    "base_url": os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic.com/v1").rstrip("/"),
+    "model": os.environ.get("ANTHROPIC_MODEL", "claude-opus-4-5"),
+    "api_key": os.environ.get("ANTHROPIC_API_KEY", ""),
     "timeout": 120,
 }
 
@@ -94,6 +103,7 @@ def get_ai_files(source="default"):
         "lock": f"{source_prefix}_ai_processing.lock",
         "backup": f"{source_prefix}_ai_result.json.processed",
         "cache": f"{source_prefix}_ai_cache.json",
+        "items": f"{source_prefix}_ai_items.json",
     }
 
 # 默认批量大小
@@ -392,6 +402,47 @@ def call_ai_api(prompt, temperature=0.7, max_tokens=4000, max_retries=3):
     return None
 
 
+def call_claude_api(prompt, temperature=0.7, max_tokens=4000, max_retries=3):
+    """调用 Claude API（Anthropic），带重试机制。作为第一优先级 AI 调用入口。"""
+    if not CLAUDE_CONFIG["api_key"]:
+        return None
+
+    for attempt in range(max_retries):
+        try:
+            response = requests.post(
+                f"{CLAUDE_CONFIG['base_url']}/messages",
+                headers={
+                    "x-api-key": CLAUDE_CONFIG["api_key"],
+                    "Authorization": f"Bearer {CLAUDE_CONFIG['api_key']}",
+                    "anthropic-version": "2023-06-01",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "model": CLAUDE_CONFIG["model"],
+                    "max_tokens": max_tokens,
+                    "messages": [{"role": "user", "content": prompt}],
+                },
+                timeout=CLAUDE_CONFIG["timeout"],
+            )
+            response.raise_for_status()
+            data = response.json()
+            # Claude Messages API 返回格式：data["content"][0]["text"]
+            return data["content"][0]["text"]
+        except requests.exceptions.Timeout:
+            logger.warning(f"[Claude] 请求超时 (尝试 {attempt + 1}/{max_retries})")
+            if attempt < max_retries - 1:
+                time.sleep(2 ** attempt)
+        except requests.exceptions.RequestException as e:
+            logger.warning(f"[Claude] 请求失败 (尝试 {attempt + 1}/{max_retries}): {e}")
+            if attempt < max_retries - 1:
+                time.sleep(2 ** attempt)
+        except Exception as e:
+            logger.error(f"[Claude] 意外错误: {e}")
+            break
+
+    return None
+
+
 def validate_ai_result(result, expected_count=None):
     """验证 AI 返回的结果是否有效"""
     if not result:
@@ -457,8 +508,12 @@ PRIORITY_KEYWORDS = {
            "mcp", "model context protocol", "function calling", "tool use"],
     "bigtech": ["apple intelligence", "google ai", "microsoft ai", "meta ai",
                 "nvidia", "tesla fsd", "spacex", "neuralink", "starlink",
+                "微信", "wechat", "微信小程序", "微信支付", "公众号",
                 "字节", "bytedance", "腾讯", "tencent", "阿里", "alibaba",
-                "智谱", "zhipu", "月之暗面", "moonshot", "kimi", "minimax", "零一万物"],
+                "智谱", "zhipu", "月之暗面", "moonshot", "kimi", "minimax", "零一万物",
+                "qwen", "通义", "mistral", "cohere", "glm", "chatglm",
+                "amazon", "aws", "apple", "microsoft", "google", "meta",
+                "canva", "figma", "notion", "stripe", "palantir"],
     "chip": ["blackwell", "hopper", "h100", "h200", "b100", "b200",
              "tensor", "cuda", "quantum chip", "ai chip", "ai accelerator",
              "tsmc", "intel", "amd", "gpu shortage", "compute cluster"],
@@ -477,7 +532,9 @@ PRIORITY_KEYWORDS = {
                  "alphaevolve", "deepmind", "alphafold", "ramsey",
                  "materials discovery", "drug design"],
     "business": ["ipo", "上市", "收购", "并购", "融资", "估值", "独角兽",
-                 "funding", "valuation", "unicorn", "investment"],
+                 "funding", "valuation", "unicorn", "investment",
+                 "revenue", "run rate", "series a", "series b", "series c",
+                 "raised", "billion", "million", "growth"],
     "multimodal": ["sora", "video generation", "text-to-video", "image generation",
                    "multimodal", "vision model", "vlm", "diffusion",
                    "runway", "pika", "heygen", "elevenlabs"],
@@ -560,7 +617,7 @@ def check_processing_state(source="default"):
 def cleanup_processing_files(source="default"):
     """清理处理相关的临时文件"""
     files = get_ai_files(source)
-    for key in ["lock", "prompt"]:
+    for key in ["lock", "prompt", "items"]:
         filepath = files[key]
         if os.path.exists(filepath):
             try:
@@ -1090,7 +1147,7 @@ def get_ai_prompt(items, batch_size=None):
 1. **筛选选题**（S级/A+级/A级/B级），综合以下四个维度打分：
    - **话题热度**（社交转发量、讨论量、舆论爆发点）
    - **独特性**（颠覆认知/反预期/稀缺视角，而非常规进展）
-   - **读者价值**（对目标读者的实际影响、认知增益、决策参考）
+   - **读者价值**（对目标读者的实际影响、认知增益、决策参考；微信是国民级APP，凡涉及微信生态的新闻读者价值自动+10分）
    - **可延伸深度**（话题是否可深挖，有无背景故事/数据/关联线索）
 
    四维综合得分决定级别：
@@ -1119,6 +1176,7 @@ def get_ai_prompt(items, batch_size=None):
   "results": [
     {{
       "index": 0,
+      "url": "https://x.com/...",
       "score": 95,
       "level": "S",
       "title": "重磅！OpenAI发布GPT-5，能力全面升级",
@@ -1135,7 +1193,8 @@ def get_ai_prompt(items, batch_size=None):
 2. 最多选择15条最有价值的
 3. 相似主题的新闻合并为一条
 4. JSON字符串必须使用英文双引号
-5. title/summary/reason 等文本字段内部不得出现英文双引号，如需引用请用书名号《》或单引号'代替"""
+5. title/summary/reason 等文本字段内部不得出现英文双引号，如需引用请用书名号《》或单引号'代替
+6. **重要：必须原样保留输入中的 url 字段，用于数据匹配**"""
 
     return prompt
 
@@ -1184,50 +1243,85 @@ def process_with_ai(items, auto_ai=False, source="default", batch_size=None, cac
     try:
         prompt = get_ai_prompt(items, batch_size=batch_size)
 
-        # 如果配置了 auto_ai 且 API Key 存在，直接调用 API
-        if auto_ai and AI_CONFIG["api_key"]:
-            logger.info("[AI] 自动调用 API 处理...")
+        # API 调用优先级：Claude（第一）→ Moonshot（第二）→ 本地模型（兜底）
+        # 只要有任意 API Key 就自动调用，无需 --auto-ai 参数
+        result_text = None
+        api_used = None
+
+        if CLAUDE_CONFIG["api_key"]:
+            logger.info(f"[AI] 使用 Claude API ({CLAUDE_CONFIG['model']}) 处理...")
+            result_text = call_claude_api(prompt, max_tokens=8000)
+            api_used = "Claude"
+
+        if result_text is None and (auto_ai and AI_CONFIG["api_key"]):
+            logger.info(f"[AI] Claude 不可用，回退到 Moonshot API ({AI_CONFIG['model']}) 处理...")
             result_text = call_ai_api(prompt, max_tokens=8000)
+            api_used = "Moonshot"
 
-            if result_text:
-                # 解析结果
-                json_match = re.search(r'\{.*\}', result_text, re.DOTALL)
-                if json_match:
-                    data = safe_json_loads(json_match.group(), max_retries=3, context="AI API")
-                    if data:
-                        is_valid, msg = validate_ai_result(data, expected_count=len(items))
-                        if is_valid:
-                            results = data.get("results", [])
-                            logger.info(f"[AI] API 处理成功，返回 {len(results)} 条结果")
-                            # Bug 3 修复：构建 _original_index → item 映射，避免依赖 enumerate 顺序
-                            # AI 可能合并条目，results 顺序和数量都可能与 items 不一致
-                            index_to_item = {item.get("_original_index", i): item for i, item in enumerate(items)}
+        if result_text:
+            # 解析结果
+            json_match = re.search(r'\{.*\}', result_text, re.DOTALL)
+            if json_match:
+                data = safe_json_loads(json_match.group(), max_retries=3, context=f"AI API ({api_used})")
+                if data:
+                    is_valid, msg = validate_ai_result(data, expected_count=len(items))
+                    if is_valid:
+                        results = data.get("results", [])
+                        logger.info(f"[AI] {api_used} 处理成功，返回 {len(results)} 条结果")
+                        # Bug 3 修复：构建 _original_index → item 映射，避免依赖 enumerate 顺序
+                        # AI 可能合并条目，results 顺序和数量都可能与 items 不一致
+                        index_to_item = {item.get("_original_index", i): item for i, item in enumerate(items)}
+                        for result in results:
+                            ai_index = result.get("index", -1)
+                            if ai_index in index_to_item:
+                                result["_original_index"] = ai_index
+                            else:
+                                logger.warning(f"[AI] 结果 index={ai_index} 无法映射到原始 item")
+                        # 缓存结果：用 _original_index 反查 item，避免 AI 合并/跳过条目时 zip 错位
+                        if cache is not None:
                             for result in results:
-                                ai_index = result.get("index", -1)
-                                if ai_index in index_to_item:
-                                    result["_original_index"] = ai_index
+                                ai_idx = result.get("_original_index", result.get("index", -1))
+                                if ai_idx in index_to_item:
+                                    cache_result(index_to_item[ai_idx], result, cache)
                                 else:
-                                    logger.warning(f"[AI] 结果 index={ai_index} 无法映射到原始 item")
-                            # 缓存结果：用 _original_index 反查 item，避免 AI 合并/跳过条目时 zip 错位
-                            if cache is not None:
-                                for result in results:
-                                    ai_idx = result.get("_original_index", result.get("index", -1))
-                                    if ai_idx in index_to_item:
-                                        cache_result(index_to_item[ai_idx], result, cache)
-                                    else:
-                                        logger.warning(f"[AI] 缓存写入跳过：index={ai_idx} 无对应 item")
-                                save_ai_cache(cache, source)
-                            # Bug 2 修复：合并之前命中缓存的结果，避免部分缓存命中时丢弃已缓存条目
-                            return cached_results + results
-                        else:
-                            logger.warning(f"[AI] 结果验证失败: {msg}")
+                                    logger.warning(f"[AI] 缓存写入跳过：index={ai_idx} 无对应 item")
+                            save_ai_cache(cache, source)
+                        # Bug 2 修复：合并之前命中缓存的结果，避免部分缓存命中时丢弃已缓存条目
+                        return cached_results + results
+                    else:
+                        logger.warning(f"[AI] 结果验证失败: {msg}")
 
-            logger.warning("[AI] API 调用失败或结果无效，切换到本地模型模式")
+        if result_text is None:
+            if not CLAUDE_CONFIG["api_key"] and not AI_CONFIG["api_key"]:
+                logger.warning("[AI] 未配置任何 API Key（ANTHROPIC_API_KEY / MOONSHOT_API_KEY），切换到本地模型模式")
+            else:
+                logger.warning("[AI] 所有 API 调用失败或结果无效，切换到本地模型模式")
+        else:
+            logger.warning("[AI] API 返回结果解析失败，切换到本地模型模式")
 
-        # 本地模型模式：生成提示词文件
+        # 本地模型模式：生成提示词文件，同时保存原始 items（供恢复时跳过 RSS 拉取）
         prompt_file = files["prompt"]
         with open(prompt_file, "w", encoding="utf-8") as f:
             f.write(prompt)
+        items_file = files["items"]
+        with open(items_file, "w", encoding="utf-8") as f:
+            json.dump(items, f, ensure_ascii=False, indent=2)
+        logger.info(f"[本地模式] 已保存原始条目: {items_file} ({len(items)} 条)")
+
+        # 如果启用了 auto_ai，尝试自动调用本地 AI 处理
+        if auto_ai:
+            logger.info("[自动本地AI] 尝试自动调用本地 AI 处理...")
+            try:
+                auto_result = process_with_local_ai(prompt, files["result"])
+                if auto_result:
+                    logger.info("[自动本地AI] 本地 AI 处理成功，继续后续流程")
+                    # 重新加载本地结果并返回
+                    release_lock(lock_fd)
+                    return load_local_ai_result(source)
+                else:
+                    logger.warning("[自动本地AI] 本地 AI 处理失败，进入手动模式")
+            except Exception as e:
+                logger.error(f"[自动本地AI] 调用失败: {e}")
 
         logger.info("=" * 60)
         logger.info("[本地模式] 请按以下步骤操作：")
@@ -1241,6 +1335,70 @@ def process_with_ai(items, auto_ai=False, source="default", batch_size=None, cac
 
     finally:
         release_lock(lock_fd)
+
+
+def process_with_local_ai(prompt, result_file):
+    """使用本地 AI (通过 Skill 调用) 处理 prompt 并保存结果
+
+    此函数通过调用 LobsterAI 的 Skill 机制，使用本地 Claude 处理 prompt。
+    需要在 LobsterAI 环境中运行才能正常工作。
+
+    Args:
+        prompt: AI 处理的提示词
+        result_file: 结果保存路径
+
+    Returns:
+        bool: 是否成功
+    """
+    try:
+        # 检查是否在 LobsterAI 环境中
+        skill_root = os.environ.get("SKILL_ROOT", "")
+        if not skill_root:
+            logger.warning("[自动本地AI] 未检测到 LobsterAI 环境，跳过自动处理")
+            return False
+
+        # 构建请求，使用本地 Claude 处理
+        # 注意：这里通过子进程调用当前 Python 环境，使用 anthropic SDK
+        import anthropic
+
+        client = anthropic.Anthropic()
+
+        logger.info("[自动本地AI] 调用本地 Claude 处理...")
+        response = client.messages.create(
+            model="claude-opus-4-5-20251101",
+            max_tokens=8000,
+            temperature=0.3,
+            messages=[
+                {"role": "user", "content": prompt}
+            ]
+        )
+
+        result_text = response.content[0].text
+
+        # 提取 JSON
+        json_match = re.search(r'\{.*\}', result_text, re.DOTALL)
+        if json_match:
+            json_str = json_match.group()
+            # 验证 JSON 有效性
+            data = json.loads(json_str)
+            if "results" in data:
+                with open(result_file, "w", encoding="utf-8") as f:
+                    f.write(json_str)
+                logger.info(f"[自动本地AI] 结果已保存: {result_file}")
+                return True
+            else:
+                logger.warning("[自动本地AI] 结果缺少 'results' 字段")
+                return False
+        else:
+            logger.warning("[自动本地AI] 无法从响应中提取 JSON")
+            return False
+
+    except ImportError:
+        logger.warning("[自动本地AI] 未安装 anthropic SDK，跳过自动处理")
+        return False
+    except Exception as e:
+        logger.error(f"[自动本地AI] 处理出错: {e}")
+        return False
 
 
 def load_local_ai_result(source="default"):
@@ -1372,7 +1530,7 @@ def load_existing_news():
 
 
 def save_news(today, news_data):
-    """保存新闻数据"""
+    """保存新闻数据，只保留最近7天的内容"""
     try:
         if os.path.exists(DATA_FILE):
             with open(DATA_FILE, "r", encoding="utf-8") as f:
@@ -1383,18 +1541,23 @@ def save_news(today, news_data):
 
         archive[today] = news_data
 
-        # 只保留30天
-        dates = sorted(archive.keys())
-        if len(dates) > 30:
-            for old_date in dates[:-30]:
-                del archive[old_date]
+        # 只保留最近7天的数据（按自然日期计算）
+        cutoff_date = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
+        dates_to_remove = [d for d in archive.keys() if d < cutoff_date]
+
+        for old_date in dates_to_remove:
+            del archive[old_date]
+            logger.info(f"[清理] 删除 {old_date} 的过期数据（超过7天）")
+
+        if dates_to_remove:
+            logger.info(f"[清理] 共删除 {len(dates_to_remove)} 天的过期数据")
 
         safe_content = safe_json_dumps(archive, ensure_ascii=False, indent=2)
 
         with open(DATA_FILE, "w", encoding="utf-8") as f:
             f.write(safe_content)
 
-        logger.info(f"[数据] 已保存: {today}, {len(news_data)} 条新闻")
+        logger.info(f"[数据] 已保存: {today}, {len(news_data)} 条新闻，当前共 {len(archive)} 天数据")
         return True
     except Exception as e:
         logger.error(f"[数据] 保存失败: {e}")
@@ -1509,75 +1672,93 @@ def main():
     processed_ids = load_processed_ids()
     logger.info(f"[缓存] 已加载 {len(processed_ids)} 条历史ID")
 
-    # 1. 获取内容
-    items = fetch_items(args.source)
-    if not items:
-        logger.error("没有获取到内容，退出")
-        return
+    # -------- 快速恢复路径：result_pending 时直接从保存的 items 文件重建 filtered --------
+    new_items = None  # 将在下方赋值
+    filtered = None   # 将在下方赋值
+    if state == "result_pending":
+        items_file = files["items"]
+        if os.path.exists(items_file):
+            try:
+                with open(items_file, "r", encoding="utf-8") as f:
+                    filtered = json.load(f)
+                # 重建 new_items：filtered 本身即已预筛选的 new_items 子集
+                new_items = filtered
+                logger.info(f"[恢复] 从缓存 items 文件跳过 RSS 拉取，直接使用 {len(filtered)} 条已筛选条目")
+            except Exception as e:
+                logger.warning(f"[恢复] 读取 items 文件失败: {e}，将重新拉取 RSS")
+                filtered = None
+                new_items = None
 
-    # 2. 过滤已处理
-    new_items = []
-    for item in items:
-        cid = extract_content_id(item.get("url"), item.get("_source_type", ""))
-        if cid and cid not in processed_ids:
-            new_items.append(item)
+    if filtered is None:
+        # 1. 获取内容
+        items = fetch_items(args.source)
+        if not items:
+            logger.error("没有获取到内容，退出")
+            return
 
-    logger.info(f"[去重] 新内容: {len(new_items)}/{len(items)} 条")
+        # 2. 过滤已处理
+        new_items = []
+        for item in items:
+            cid = extract_content_id(item.get("url"), item.get("_source_type", ""))
+            if cid and cid not in processed_ids:
+                new_items.append(item)
 
-    # ========== 预告事件检查 ==========
-    upcoming_news_items = []
-    if UPCOMING_EVENTS_AVAILABLE:
-        summary = get_pending_events_summary()
-        if summary["pending"] > 0:
-            logger.info(f"[预告事件] 发现 {summary['pending']} 个待处理预告")
-            
-            # 检查新内容是否匹配预告事件
-            check_result = check_items_against_events(new_items)
-            
-            if check_result["matched"]:
-                logger.info(f"[预告事件] 🎯 匹配到 {len(check_result['matched'])} 个预告事件！")
-                
-                for event, item, match_details in check_result["matched"]:
-                    # 转换为新闻格式
-                    news_item = convert_matched_to_news(event, item, match_details)
-                    upcoming_news_items.append(news_item)
-                    
-                    # 更新事件状态为 found
-                    update_event_status(event["id"], "found", news_item)
-                    
-                    logger.info(f"[预告事件] ✅ 已转换: {event['title'][:50]}...")
-                
-                # 更新 new_items 为未匹配的内容
-                new_items = check_result["unmatched"]
-                logger.info(f"[预告事件] 剩余未匹配新内容: {len(new_items)} 条")
+        logger.info(f"[去重] 新内容: {len(new_items)}/{len(items)} 条")
+
+        # ========== 预告事件检查 ==========
+        upcoming_news_items = []
+        if UPCOMING_EVENTS_AVAILABLE:
+            summary = get_pending_events_summary()
+            if summary["pending"] > 0:
+                logger.info(f"[预告事件] 发现 {summary['pending']} 个待处理预告")
+
+                # 检查新内容是否匹配预告事件
+                check_result = check_items_against_events(new_items)
+
+                if check_result["matched"]:
+                    logger.info(f"[预告事件] 🎯 匹配到 {len(check_result['matched'])} 个预告事件！")
+
+                    for event, item, match_details in check_result["matched"]:
+                        # 转换为新闻格式
+                        news_item = convert_matched_to_news(event, item, match_details)
+                        upcoming_news_items.append(news_item)
+
+                        # 更新事件状态为 found
+                        update_event_status(event["id"], "found", news_item)
+
+                        logger.info(f"[预告事件] ✅ 已转换: {event['title'][:50]}...")
+
+                    # 更新 new_items 为未匹配的内容
+                    new_items = check_result["unmatched"]
+                    logger.info(f"[预告事件] 剩余未匹配新内容: {len(new_items)} 条")
+                else:
+                    logger.info("[预告事件] 本次无匹配")
             else:
-                logger.info("[预告事件] 本次无匹配")
-        else:
-            logger.debug("[预告事件] 无待处理预告")
-    
-    # 如果有预告事件落地，先保存
-    if upcoming_news_items:
-        today, existing = load_existing_news()
-        final_news, added, updated = merge_news(existing, upcoming_news_items)
-        logger.info(f"[预告事件] 已加入 {len(upcoming_news_items)} 条落地新闻")
-        
-        if save_news(today, final_news):
-            push_to_github()
-            logger.info("[预告事件] ✅ 已保存到新闻列表")
-    
-    # ========== 预告事件检查结束 ==========
+                logger.debug("[预告事件] 无待处理预告")
 
-    if not new_items:
-        logger.info("没有新内容，退出")
-        return
+        # 如果有预告事件落地，先保存
+        if upcoming_news_items:
+            today, existing = load_existing_news()
+            final_news, added, updated = merge_news(existing, upcoming_news_items)
+            logger.info(f"[预告事件] 已加入 {len(upcoming_news_items)} 条落地新闻")
 
-    # 3. 关键词预筛选
-    filtered = keyword_pre_filter(new_items)
-    logger.info(f"[预筛选] 保留 {len(filtered)} 条高优先级内容")
+            if save_news(today, final_news):
+                push_to_github()
+                logger.info("[预告事件] ✅ 已保存到新闻列表")
 
-    if not filtered:
-        logger.info("没有高优先级内容，退出")
-        return
+        # ========== 预告事件检查结束 ==========
+
+        if not new_items:
+            logger.info("没有新内容，退出")
+            return
+
+        # 3. 关键词预筛选
+        filtered = keyword_pre_filter(new_items)
+        logger.info(f"[预筛选] 保留 {len(filtered)} 条高优先级内容")
+
+        if not filtered:
+            logger.info("没有高优先级内容，退出")
+            return
 
     # 4. AI 处理
     # 提前为每个 item 打上全局原始索引，确保 prompt 生成和本地结果加载时 index 一致
@@ -1605,12 +1786,33 @@ def main():
     logger.info(f"[AI] 处理完成，获得 {len(ai_results)} 条结果")
 
     # 5. 构建最终数据
-    # 使用 _original_index 映射回原始 filtered 列表
-    ai_map = {r.get("_original_index", r.get("index", 0)): r for r in ai_results}
+    # 使用URL匹配而非index匹配，防止AI返回的index乱序导致数据错位
+    # 构建URL到AI结果的映射
+    url_to_ai_result = {}
+    for r in ai_results:
+        # 尝试从AI结果中获取URL（如果AI保留了的话）
+        ai_url = r.get("url", "")
+        if ai_url:
+            url_to_ai_result[ai_url] = r
+
+    # 对于没有URL的AI结果，回退到使用index匹配
+    ai_map_by_index = {r.get("_original_index", r.get("index", 0)): r for r in ai_results}
+
     processed = []
+    matched_by_url = 0
+    matched_by_index = 0
 
     for idx, item in enumerate(filtered):
-        ai_result = ai_map.get(idx, {})
+        item_url = item.get("url", "")
+        # 优先使用URL匹配
+        ai_result = url_to_ai_result.get(item_url)
+        if ai_result:
+            matched_by_url += 1
+        else:
+            # 回退到index匹配
+            ai_result = ai_map_by_index.get(idx, {})
+            if ai_result:
+                matched_by_index += 1
 
         if not ai_result:
             logger.warning(f"[AI] 索引 {idx} 无对应结果: {item.get('title', '')[:40]}...")
@@ -1639,6 +1841,8 @@ def main():
             "timestamp": int(time.time()),
             "version": generate_version(),
         })
+
+    logger.info(f"[AI] 匹配统计: URL匹配 {matched_by_url} 条, Index匹配 {matched_by_index} 条")
 
     processed.sort(key=lambda x: x["score"], reverse=True)
 
