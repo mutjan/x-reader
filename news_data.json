@@ -11591,6 +11591,52 @@
   ],
   "2026-03-26": [
     {
+      "title": "谷歌TurboQuant算法炸裂发布：AI内存需求暴降6倍，内存芯片股集体暴跌",
+      "title_en": "wow google might've popped the ai bubble, memory stocks down massively today: their new algorithm shrinks an AI model's memory by 6X WITHOUT reducing ...",
+      "summary": "Google Research推出TurboQuant压缩算法，可将AI模型内存占用降低6倍同时保持零精度损失，推理速度提升8倍。该技术可能改变AI基础设施需求，引发内存芯片股大幅下跌。",
+      "type": "ai",
+      "typeName": "AI",
+      "score": 86,
+      "level": "A+",
+      "rating": "A+",
+      "reason": "【A+级】评分86分 | 政策层面重大动态，影响AI监管走向",
+      "entities": [
+        "Google",
+        "TurboQuant",
+        "AI推理",
+        "压缩算法",
+        "KV缓存"
+      ],
+      "url": "https://x.com/cryptopunk7213/status/2036803164410695772",
+      "source": "Ejaaz",
+      "sources": 5,
+      "sourceLinks": [
+        {
+          "name": "Ejaaz",
+          "url": "https://x.com/cryptopunk7213/status/2036803164410695772"
+        },
+        {
+          "name": "karminski-牙医",
+          "url": "https://x.com/karminski3/status/2036969343784017959"
+        },
+        {
+          "name": "Jia-Bin Huang",
+          "url": "https://x.com/jbhuang0604/status/2036988695350280634"
+        },
+        {
+          "name": "AshutoshShrivastava",
+          "url": "https://x.com/ai_for_success/status/2036658834266378734"
+        },
+        {
+          "name": "will brown",
+          "url": "https://x.com/willccbb/status/2036671108553048569"
+        }
+      ],
+      "timestamp": 1774464093,
+      "version": "2026.03.26-003",
+      "tags": []
+    },
+    {
       "title": "ARC-AGI-3发布：人类100%通过率，AI不到1%",
       "title_en": "wow google might've popped the ai bubble, memory stocks down massively today: their new algorithm shrinks an AI model's memory by 6X WITHOUT reducing ...",
       "summary": "ARC Prize发布新一代AGI基准测试ARC-AGI-3，人类首次接触通过率100%，而当前前沿AI推理模型通过率不到1%，展示了人类与AI在适应性学习上的巨大差距。",
@@ -11604,11 +11650,12 @@
         "ARC-AGI-3",
         "AGI",
         "基准测试",
-        "ARC Prize"
+        "ARC Prize",
+        "François Chollet"
       ],
       "url": "https://x.com/ziv_ravid/status/2036869372438876439",
       "source": "Ravid Shwartz Ziv",
-      "sources": 3,
+      "sources": 4,
       "sourceLinks": [
         {
           "name": "Ravid Shwartz Ziv",
@@ -11621,10 +11668,15 @@
         {
           "name": "Greg Kamradt",
           "url": "https://x.com/GregKamradt/status/2036990447512674818"
+        },
+        {
+          "name": "François Chollet",
+          "url": "https://x.com/fchollet/status/2036861893701492918"
         }
       ],
       "timestamp": 1774464093,
-      "version": "2026.03.26-002"
+      "version": "2026.03.26-002",
+      "tags": []
     },
     {
       "title": "The AI Scientist发表于Nature：全自动AI科研系统问世",
@@ -11657,98 +11709,6 @@
       ],
       "timestamp": 1774464093,
       "version": "2026.03.26-001"
-    },
-    {
-      "title": "谷歌TurboQuant算法炸裂发布：AI内存需求暴降6倍，内存芯片股集体暴跌",
-      "title_en": "wow google might've popped the ai bubble, memory stocks down massively today: their new algorithm shrinks an AI model's memory by 6X WITHOUT reducing ...",
-      "summary": "Google Research推出TurboQuant压缩算法，可将AI模型内存占用降低6倍同时保持零精度损失，推理速度提升8倍。该技术可能改变AI基础设施需求，引发内存芯片股大幅下跌。",
-      "type": "ai",
-      "typeName": "AI",
-      "score": 86,
-      "level": "A+",
-      "rating": "A+",
-      "reason": "【A+级】评分86分 | 政策层面重大动态，影响AI监管走向",
-      "entities": [
-        "Google",
-        "TurboQuant",
-        "AI推理",
-        "压缩算法"
-      ],
-      "url": "https://x.com/cryptopunk7213/status/2036803164410695772",
-      "source": "Ejaaz",
-      "sources": 3,
-      "sourceLinks": [
-        {
-          "name": "Ejaaz",
-          "url": "https://x.com/cryptopunk7213/status/2036803164410695772"
-        },
-        {
-          "name": "karminski-牙医",
-          "url": "https://x.com/karminski3/status/2036969343784017959"
-        },
-        {
-          "name": "Jia-Bin Huang",
-          "url": "https://x.com/jbhuang0604/status/2036988695350280634"
-        }
-      ],
-      "timestamp": 1774464093,
-      "version": "2026.03.26-003"
-    },
-    {
-      "title": "谷歌TurboQuant详解：KV缓存压缩至3bit，无需微调",
-      "title_en": "🚨 Google just introduced TurboQuant, a new way to massively compress AI models without losing accuracy. TLDR - TurboQuant compresses model memory u...",
-      "summary": "Google TurboQuant算法可将LLM的KV缓存压缩至约3bit而无需微调，实现高达8倍的注意力计算加速，解决了大模型内存瓶颈问题，在QA、编程、摘要等任务上表现优异。",
-      "type": "ai",
-      "typeName": "AI",
-      "score": 85,
-      "level": "A+",
-      "rating": "A+",
-      "reason": "【A+级】评分85分 | 全球最受关注的未上市公司IPO动向",
-      "entities": [
-        "Google",
-        "TurboQuant",
-        "KV缓存",
-        "量化压缩"
-      ],
-      "url": "https://x.com/ai_for_success/status/2036658834266378734",
-      "source": "AshutoshShrivastava",
-      "sources": 1,
-      "sourceLinks": [
-        {
-          "name": "AshutoshShrivastava",
-          "url": "https://x.com/ai_for_success/status/2036658834266378734"
-        }
-      ],
-      "timestamp": 1774464093,
-      "version": "2026.03.26-005"
-    },
-    {
-      "title": "网友热议TurboQuant：'家里的多头潜在注意力'",
-      "title_en": "we have multi-head latent attention at home",
-      "summary": "Google发布TurboQuant后，网友幽默回应'we have multi-head latent attention at home'，调侃这一突破性压缩技术让复杂的注意力机制优化变得像家用产品一样普及。",
-      "type": "ai",
-      "typeName": "AI",
-      "score": 75,
-      "level": "A",
-      "rating": "A",
-      "reason": "【A级】评分75分 | 学术界人才流动，多模态AI研究前沿",
-      "entities": [
-        "TurboQuant",
-        "Google",
-        "注意力机制",
-        "MLA"
-      ],
-      "url": "https://x.com/willccbb/status/2036671108553048569",
-      "source": "will brown",
-      "sources": 1,
-      "sourceLinks": [
-        {
-          "name": "will brown",
-          "url": "https://x.com/willccbb/status/2036671108553048569"
-        }
-      ],
-      "timestamp": 1774464093,
-      "version": "2026.03.26-006"
     },
     {
       "title": "Periodic Labs融资70亿美元估值：前OpenAI和DeepMind科学家联手",
@@ -11920,34 +11880,6 @@
       ],
       "timestamp": 1774477029,
       "version": "2026.03.26-011"
-    },
-    {
-      "title": "ARC-AGI-3正式发布：唯一未饱和的Agentic智能基准测试",
-      "title_en": "Announcing ARC-AGI-3 The only unsaturated agentic intelligence benchmark in the world Humans score 100%, AI <1% This human-AI gap demons...",
-      "summary": "François Chollet转发ARC-AGI-3发布，强调这是世界上唯一未饱和的Agentic智能基准，人类得分100%，AI不到1%，真正测试学习能力而非记忆能力。",
-      "type": "ai",
-      "typeName": "AI",
-      "score": 60,
-      "level": "B",
-      "rating": "B",
-      "reason": "【B级】评分60分 | 科技高管社交动态，职业动向值得关注",
-      "entities": [
-        "ARC-AGI-3",
-        "François Chollet",
-        "AGI",
-        "基准测试"
-      ],
-      "url": "https://x.com/fchollet/status/2036861893701492918",
-      "source": "François Chollet",
-      "sources": 1,
-      "sourceLinks": [
-        {
-          "name": "François Chollet",
-          "url": "https://x.com/fchollet/status/2036861893701492918"
-        }
-      ],
-      "timestamp": 1774477029,
-      "version": "2026.03.26-010"
     },
     {
       "title": "突发！Manus创始人被限制出境",
