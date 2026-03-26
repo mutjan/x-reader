@@ -164,7 +164,101 @@
             border-radius: 10px;
             color: #8899a6;
         }
-        .upcoming-empty {
+        /* 时代情绪区域 */
+        .zeitgeist-section {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.05));
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+        .zeitgeist-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #c084fc;
+        }
+        .zeitgeist-header .icon {
+            font-size: 16px;
+        }
+        .zeitgeist-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 10px;
+        }
+        .zeitgeist-item {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 12px;
+            background: rgba(15, 20, 25, 0.6);
+            border-radius: 8px;
+            border-left: 3px solid #8b5cf6;
+        }
+        .zeitgeist-item:hover {
+            background: rgba(139, 92, 246, 0.1);
+        }
+        .zeitgeist-main {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .zeitgeist-heat {
+            font-size: 18px;
+            font-weight: 700;
+            min-width: 45px;
+            text-align: center;
+        }
+        .zeitgeist-heat.high { color: #f87171; }
+        .zeitgeist-heat.medium { color: #fbbf24; }
+        .zeitgeist-heat.low { color: #34d399; }
+        .zeitgeist-title {
+            flex: 1;
+            font-size: 13px;
+            font-weight: 600;
+            color: #e7e9ea;
+        }
+        .zeitgeist-trend {
+            font-size: 16px;
+        }
+        .zeitgeist-desc {
+            font-size: 11px;
+            color: #8899a6;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .zeitgeist-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .zeitgeist-category {
+            font-size: 10px;
+            padding: 2px 6px;
+            background: rgba(139, 92, 246, 0.2);
+            border-radius: 4px;
+            color: #c084fc;
+        }
+        .zeitgeist-keywords {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .zeitgeist-keyword {
+            font-size: 10px;
+            padding: 1px 5px;
+            background: rgba(136, 153, 166, 0.15);
+            border-radius: 10px;
+            color: #8899a6;
+        }
+        .zeitgeist-empty {
             color: #8899a6;
             font-size: 13px;
             text-align: center;
@@ -652,6 +746,20 @@
                 width: auto;
                 min-width: 50%;
             }
+            /* 时代情绪移动端 */
+            .zeitgeist-list {
+                grid-template-columns: 1fr;
+            }
+            .zeitgeist-item {
+                padding: 10px;
+            }
+            .zeitgeist-heat {
+                font-size: 16px;
+                min-width: 40px;
+            }
+            .zeitgeist-title {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -705,6 +813,18 @@
             </div>
         </div>
 
+        <!-- 时代情绪区域 -->
+        <div class="zeitgeist-section" id="zeitgeistSection" style="display: none;">
+            <div class="zeitgeist-header">
+                <span class="icon">🌊</span>
+                <span>时代情绪追踪</span>
+                <span style="margin-left: auto; font-size: 12px; font-weight: normal; color: #8899a6;" id="zeitgeistCount"></span>
+            </div>
+            <div class="zeitgeist-list" id="zeitgeistList">
+                <!-- 动态填充 -->
+            </div>
+        </div>
+
         <!-- Inoreader 新闻 -->
         <div>
             <div id="dateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
@@ -729,6 +849,7 @@
         // ==================== 数据加载 ====================
         let NEWS_ARCHIVE = {};
         let UPCOMING_EVENTS = [];
+        let ZEITGEIST = [];
         
         // 加载数据
         async function loadData() {
@@ -749,7 +870,9 @@
                 if (upcomingResponse.status === 'fulfilled' && upcomingResponse.value.ok) {
                     const upcomingData = await upcomingResponse.value.json();
                     UPCOMING_EVENTS = upcomingData.events || [];
+                    ZEITGEIST = upcomingData.zeitgeist || [];
                     renderUpcomingEvents();
+                    renderZeitgeist();
                 }
                 
                 // 初始化
@@ -1128,6 +1251,58 @@
                                 <span>📡 ${sourceHint}</span>
                                 <span class="upcoming-keywords">${keywordsHtml}</span>
                             </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        // ==================== 时代情绪功能 ====================
+        function renderZeitgeist() {
+            const section = document.getElementById('zeitgeistSection');
+            const list = document.getElementById('zeitgeistList');
+            const count = document.getElementById('zeitgeistCount');
+
+            // 只显示 active 状态的情绪，按热度排序
+            const activeZeitgeist = ZEITGEIST
+                .filter(z => z.status === 'active')
+                .sort((a, b) => b.heat_score - a.heat_score);
+
+            if (activeZeitgeist.length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+
+            section.style.display = 'block';
+            count.textContent = `${activeZeitgeist.length} 个活跃中`;
+
+            const trendIcons = {
+                'rising': '📈',
+                'stable': '➡️',
+                'falling': '📉',
+                'cyclical': '🔄'
+            };
+
+            list.innerHTML = activeZeitgeist.map(z => {
+                const keywords = z.keywords || [];
+                const keywordsHtml = keywords.slice(0, 3).map(k =>
+                    `<span class="zeitgeist-keyword">${k}</span>`
+                ).join('');
+
+                const heatClass = z.heat_score >= 80 ? 'high' : z.heat_score >= 60 ? 'medium' : 'low';
+                const trendIcon = trendIcons[z.trend] || '•';
+                const categoryName = z.category_name || z.category || '-';
+
+                return `
+                    <div class="zeitgeist-item">
+                        <div class="zeitgeist-main">
+                            <span class="zeitgeist-heat ${heatClass}">${z.heat_score}</span>
+                            <span class="zeitgeist-title">${z.topic}</span>
+                            <span class="zeitgeist-trend" title="趋势: ${z.trend_name || z.trend}">${trendIcon}</span>
+                        </div>
+                        <div class="zeitgeist-desc">${z.description}</div>
+                        <div class="zeitgeist-meta">
+                            <span class="zeitgeist-category">${categoryName}</span>
+                            <span class="zeitgeist-keywords">${keywordsHtml}</span>
                         </div>
                     </div>
                 `;
