@@ -103,6 +103,7 @@ def find_duplicates_by_content(news_list):
                     'alphafold': 'alphafold',
                     'mrna疫苗': 'mrna',
                     '个性化医疗': 'mrna',
+                    'turboquant': 'turboquant',
                 }
 
                 norm_entities1 = set()
@@ -131,7 +132,7 @@ def find_duplicates_by_content(news_list):
                 if len(common_norm) >= 3:
                     is_duplicate = True
                 # 如果有2个共同实体且包含关键实体
-                elif len(common_norm) >= 2 and any(e in common_norm for e in ['bytedance', 'seedance', 'chatgpt', 'alphafold', 'mrna']):
+                elif len(common_norm) >= 2 and any(e in common_norm for e in ['bytedance', 'seedance', 'chatgpt', 'alphafold', 'mrna', 'turboquant']):
                     is_duplicate = True
 
             if is_duplicate:
@@ -149,7 +150,7 @@ def main():
     with open('news_data.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    today = '2026-03-15'
+    today = '2026-03-26'
     if today not in data:
         print("今日无数据")
         return

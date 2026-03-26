@@ -393,16 +393,19 @@
             width: 25%;
         }
         .news-table th:nth-child(5) {
-            width: 10%;
+            width: 12%;
         }
         .news-table th:nth-child(6) {
-            width: 15%;
+            width: 10%;
         }
         .news-table th:nth-child(7) {
+            width: 15%;
+        }
+        .news-table th:nth-child(8) {
             width: 45px;
             text-align: center;
         }
-        .news-table th:last-child {
+        .news-table th:nth-child(9) {
             width: 50px;
             text-align: center;
         }
@@ -562,6 +565,33 @@
             border-color: #00ba7c;
         }
         
+        /* 扩展性说明 */
+        .news-expansion {
+            color: #c084fc;
+            font-size: 11px;
+            line-height: 1.4;
+            max-width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            cursor: help;
+        }
+        .news-expansion:hover {
+            -webkit-line-clamp: unset;
+            overflow: visible;
+            white-space: normal;
+            background: #1d9bf020;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        .expansion-icon {
+            color: #c084fc;
+            font-size: 12px;
+            margin-right: 4px;
+        }
+
         /* X事件样式 */
         .x-event-users {
             color: #8899a6;
@@ -706,6 +736,10 @@
             }
             .news-table th:nth-child(8),
             .news-table td:nth-child(8) {
+                width: 45px;
+            }
+            .news-table th:nth-child(9),
+            .news-table td:nth-child(9) {
                 width: 45px;
             }
             .news-title {
@@ -1127,6 +1161,11 @@
             ).join('');
         }
 
+        function renderExpansion(expansion) {
+            if (!expansion || expansion.trim() === '') return '<span style="color: #555;">-</span>';
+            return `<div class="news-expansion" title="${expansion.replace(/"/g, '&quot;')}"><span class="expansion-icon">↗</span>${expansion}</div>`;
+        }
+
         function renderNews() {
             const content = document.getElementById('news-content');
             const currentDateEl = document.getElementById('currentDate');
@@ -1178,6 +1217,7 @@
                             <th>标题</th>
                             <th>摘要</th>
                             <th onclick="sortBy('entities')">实体 ${currentSort.field === 'entities' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                            <th>扩展性</th>
                             <th>消息源</th>
                             <th onclick="sortBy('time')">更新时间 ${currentSort.field === 'time' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
                             <th onclick="sortBy('sources')">来源数 ${currentSort.field === 'sources' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
@@ -1195,6 +1235,7 @@
                                 <td><div class="news-title">${item.title}</div></td>
                                 <td><div class="news-summary">${item.summary}</div></td>
                                 <td>${renderEntities(item.entities)}</td>
+                                <td>${renderExpansion(item.expansion)}</td>
                                 <td><div class="source-links">${renderSourceLinks(item.sourceLinks)}</div></td>
                                 <td><div style="color: #8899a6; font-size: 12px; white-space: nowrap;">${updateTimeStr}</div></td>
                                 <td><div class="source-count">${item.sources}</div></td>
