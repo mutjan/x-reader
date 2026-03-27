@@ -16,7 +16,7 @@ import time
 # 你的应用凭证
 CLIENT_ID = "1000007998"
 CLIENT_SECRET = "khF4gCq7J8Uut6kjconX4fdDlIJgP_yX"
-REDIRECT_URI = "http://localhost:8080/callback"
+REDIRECT_URI = "http://localhost:8081/callback"
 
 # 全局变量存储授权码
 auth_code = None
@@ -61,9 +61,9 @@ class CallbackHandler(http.server.BaseHTTPRequestHandler):
         pass  # 静默日志
 
 def start_server():
-    with socketserver.TCPServer(("", 8080), CallbackHandler) as httpd:
+    with socketserver.TCPServer(("", 8081), CallbackHandler) as httpd:
         httpd.timeout = 1
-        print("[INFO] Local server started on port 8080, waiting for callback...")
+        print("[INFO] Local server started on port 8081, waiting for callback...")
         while server_running:
             try:
                 httpd.handle_request()
