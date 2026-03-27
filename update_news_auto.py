@@ -596,7 +596,19 @@ def generate_ai_prompt(items):
    - 严禁直接复制原文
    - 不含HTML标签
 
-4. **标注类型**：hot(热点)/ai(AI相关)/tech(科技)/business(商业)
+4. **标注类型**（从以下12种类型中选择最贴切的一种）：
+   - product(产品发布): 新产品、新功能、开源项目发布
+   - funding(融资上市): 融资、IPO、并购、估值变动
+   - personnel(人事变动): 高管离职/入职、团队变动、人才挖角
+   - opinion(观点访谈): 行业领袖观点、深度访谈、公开发言
+   - industry(行业动态): 公司战略调整、市场竞争、合作变动
+   - safety(安全伦理): AI安全事件、监管政策、伦理争议
+   - research(研究成果): 论文发表、技术突破、基准测试
+   - financial(商业数据): 营收、用户数据、业绩报告
+   - breaking(突发事件): 突发新闻、内幕消息、独家报道
+   - tool(工具技巧): 开发者工具、效率应用、使用技巧
+   - society(社会影响): AI对社会结构、文化现象、生活方式的影响
+   - hardware(硬件基建): 芯片、算力、数据中心、硬件设备
 
 5. **分析扩展性**：
    - 思考该事件可能引发的连锁反应和延伸报道角度
@@ -1102,7 +1114,20 @@ def main():
             "title_en": item["title"],
             "summary": ai_result.get("summary", ""),
             "type": ai_result.get("type", "tech"),
-            "typeName": {"hot": "热点", "ai": "AI", "tech": "科技", "business": "商业"}.get(ai_result.get("type", "tech"), "科技"),
+            "typeName": {
+                "product": "产品发布",
+                "funding": "融资上市",
+                "personnel": "人事变动",
+                "opinion": "观点访谈",
+                "industry": "行业动态",
+                "safety": "安全伦理",
+                "research": "研究成果",
+                "financial": "商业数据",
+                "breaking": "突发事件",
+                "tool": "工具技巧",
+                "society": "社会影响",
+                "hardware": "硬件基建"
+            }.get(ai_result.get("type", "product"), "产品发布"),
             "score": score,
             "level": level,
             "rating": level,

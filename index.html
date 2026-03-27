@@ -387,25 +387,28 @@
             width: 60px;
         }
         .news-table th:nth-child(3) {
-            width: 25%;
+            width: 70px;
         }
         .news-table th:nth-child(4) {
-            width: 25%;
+            width: 22%;
         }
         .news-table th:nth-child(5) {
-            width: 12%;
+            width: 22%;
         }
         .news-table th:nth-child(6) {
-            width: 10%;
+            width: 12%;
         }
         .news-table th:nth-child(7) {
-            width: 15%;
+            width: 10%;
         }
         .news-table th:nth-child(8) {
+            width: 15%;
+        }
+        .news-table th:nth-child(9) {
             width: 45px;
             text-align: center;
         }
-        .news-table th:nth-child(9) {
+        .news-table th:nth-child(10) {
             width: 50px;
             text-align: center;
         }
@@ -454,7 +457,27 @@
             opacity: 0.8;
         }
 
-        /* 实体标签 */
+        /* 类型标签 */
+        .type-tag {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .type-product { background: #10b981; color: white; }
+        .type-funding { background: #f59e0b; color: white; }
+        .type-personnel { background: #8b5cf6; color: white; }
+        .type-opinion { background: #ec4899; color: white; }
+        .type-industry { background: #3b82f6; color: white; }
+        .type-safety { background: #ef4444; color: white; }
+        .type-research { background: #06b6d4; color: white; }
+        .type-financial { background: #84cc16; color: white; }
+        .type-breaking { background: #f97316; color: white; }
+        .type-tool { background: #6366f1; color: white; }
+        .type-society { background: #14b8a6; color: white; }
+        .type-hardware { background: #64748b; color: white; }
         .entity-tag {
             display: inline-block;
             padding: 2px 6px;
@@ -715,8 +738,8 @@
             }
             .news-table th:nth-child(5),
             .news-table td:nth-child(5),
-            .news-table th:nth-child(7),
-            .news-table td:nth-child(7) {
+            .news-table th:nth-child(8),
+            .news-table td:nth-child(8) {
                 display: none;
             }
             .news-table th:first-child,
@@ -729,7 +752,7 @@
             }
             .news-table th:nth-child(3),
             .news-table td:nth-child(3) {
-                width: 35%;
+                width: 60px;
             }
             .news-table th:nth-child(4),
             .news-table td:nth-child(4) {
@@ -737,14 +760,18 @@
             }
             .news-table th:nth-child(6),
             .news-table td:nth-child(6) {
-                display: none;
+                width: 35%;
             }
-            .news-table th:nth-child(8),
-            .news-table td:nth-child(8) {
-                width: 45px;
+            .news-table th:nth-child(7),
+            .news-table td:nth-child(7) {
+                display: none;
             }
             .news-table th:nth-child(9),
             .news-table td:nth-child(9) {
+                width: 45px;
+            }
+            .news-table th:nth-child(10),
+            .news-table td:nth-child(10) {
                 width: 45px;
             }
             .news-title {
@@ -1197,6 +1224,30 @@
             return `<div class="news-expansion" title="${expansion.replace(/"/g, '&quot;')}"><span class="expansion-icon">↗</span>${expansion}</div>`;
         }
 
+        function renderType(type, typeName) {
+            const typeMap = {
+                'product': '产品发布',
+                'funding': '融资上市',
+                'personnel': '人事变动',
+                'opinion': '观点访谈',
+                'industry': '行业动态',
+                'safety': '安全伦理',
+                'research': '研究成果',
+                'financial': '商业数据',
+                'breaking': '突发事件',
+                'tool': '工具技巧',
+                'society': '社会影响',
+                'hardware': '硬件基建',
+                'ai': 'AI',
+                'tech': '科技',
+                'business': '商业',
+                'hot': '热点'
+            };
+            const displayName = typeName || typeMap[type] || type || '其他';
+            const typeClass = type ? `type-${type}` : 'type-product';
+            return `<span class="type-tag ${typeClass}">${displayName}</span>`;
+        }
+
         function renderNews() {
             const content = document.getElementById('news-content');
             const currentDateEl = document.getElementById('currentDate');
@@ -1245,6 +1296,7 @@
                         <tr>
                             <th><input type="checkbox" class="checkbox" onchange="selectAll()"></th>
                             <th onclick="sortBy('rating')">评级 ${currentSort.field === 'rating' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                            <th>类型</th>
                             <th>标题</th>
                             <th>摘要</th>
                             <th onclick="sortBy('entities')">实体 ${currentSort.field === 'entities' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
@@ -1263,6 +1315,7 @@
                             <tr class="${isSelected ? 'selected' : ''}">
                                 <td><input type="checkbox" class="checkbox" ${isSelected ? 'checked' : ''} onchange="toggleSelection(${index})"></td>
                                 <td><span class="rating-tag ${getRatingClass(item.rating)}" onclick="filterByRating('${item.rating}')">${item.rating || 'C'}</span></td>
+                                <td>${renderType(item.type, item.typeName)}</td>
                                 <td><div class="news-title">${item.title}</div></td>
                                 <td><div class="news-summary">${item.summary}</div></td>
                                 <td>${renderEntities(item.entities)}</td>

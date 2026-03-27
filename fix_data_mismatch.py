@@ -103,7 +103,20 @@ def fix_news_data():
                 item['summary'] = correct['summary']
                 item['entities'] = correct['entities']
                 item['type'] = correct['type']
-                item['typeName'] = {"hot": "热点", "ai": "AI", "tech": "科技", "business": "商业"}.get(correct['type'], "科技")
+                item['typeName'] = {
+                    "product": "产品发布",
+                    "funding": "融资上市",
+                    "personnel": "人事变动",
+                    "opinion": "观点访谈",
+                    "industry": "行业动态",
+                    "safety": "安全伦理",
+                    "research": "研究成果",
+                    "financial": "商业数据",
+                    "breaking": "突发事件",
+                    "tool": "工具技巧",
+                    "society": "社会影响",
+                    "hardware": "硬件基建"
+                }.get(correct['type'], "产品发布")
                 fixed_count += 1
                 print(f"✅ 已修复: {correct['title'][:40]}...")
 

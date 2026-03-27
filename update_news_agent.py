@@ -567,7 +567,12 @@ def generate_ai_prompt(items):
    - **读者价值**（对目标读者的实际影响、认知增益、决策参考；微信是国民级APP，凡涉及微信生态的新闻读者价值自动+10分）
    - **可延伸深度**（基于步骤1的扩展性分析，评估话题是否可深挖）
 
-   四维综合得分决定级别：
+   **降分规则（重要）**：
+   - 脑机接口类（如fMRI、脑编码、神经接口、TRIBE等）：最终得分 **-5分**（受众面窄，技术落地周期长）
+   - 语音识别/ASR类（如语音转文字、语音识别模型、Transcribe等）：最终得分 **-5分**（相对成熟，读者关注度较低）
+   - 小众垂直模型（如特定领域专用模型，非通用大模型）：最终得分 **-3分**
+
+   四维综合得分（应用降分后）决定级别：
    - S级（90-100分）：四维均高，必须报道。典型：AI大模型重大发布、马斯克/SpaceX重大动态、Nature/Science顶刊、AGI里程碑
    - A+级（85-89分）：至少三维突出，尤其独特性或可延伸深度强。典型：重要产品更新、反预期的行业内幕、大额融资、知名人物重要观点
    - A级（75-84分）：两维以上较好，有一定读者价值。典型：科技巨头动态、国产大模型、开源爆款、学术突破
@@ -684,6 +689,189 @@ def parse_ai_result(result_text, items):
     return results
 
 
+# ==================== 推送前自查验证 ====================
+
+def validate_news_item(item, index=0):
+    """
+    验证单条新闻的标题、摘要、实体和链接是否匹配
+    返回 (is_valid, errors, warnings)
+    """
+    errors = []
+    warnings = []
+
+    title = item.get("title", "")
+    summary = item.get("summary", "")
+    url = item.get("url", "")
+    entities = item.get("entities", [])
+    level = item.get("level", "")
+
+    # 1. 标题验证
+    if not title:
+        errors.append("标题为空")
+    elif len(title) < 5:
+        errors.append(f"标题过短 ({len(title)}字): {title}")
+    elif len(title) > 50:
+        warnings.append(f"标题过长 ({len(title)}字)")
+
+    # 检查标题是否包含英文引号（可能导致JSON问题）
+    if '"' in title:
+        errors.append("标题包含英文双引号，应使用书名号或单引号")
+
+    # 检查标题是否为纯中文（允许数字和常见标点）
+    chinese_chars = len(re.findall(r'[\u4e00-\u9fff]', title))
+    if chinese_chars < len(title) * 0.3 and len(title) > 10:
+        warnings.append(f"标题中文比例较低 ({chinese_chars}/{len(title)})")
+
+    # 2. 摘要验证
+    if not summary:
+        errors.append("摘要为空")
+    elif len(summary) < 20:
+        warnings.append(f"摘要过短 ({len(summary)}字)")
+    elif len(summary) > 200:
+        warnings.append(f"摘要过长 ({len(summary)}字)")
+
+    # 检查摘要是否直接复制标题
+    if summary and title and summary.strip() == title.strip():
+        errors.append("摘要与标题完全相同")
+
+    # 检查摘要是否包含HTML标签
+    if summary and re.search(r'<[^>]+>', summary):
+        errors.append("摘要包含HTML标签")
+
+    # 3. 实体验证
+    if not entities:
+        warnings.append("实体列表为空")
+    elif len(entities) < 2:
+        warnings.append(f"实体数量过少 ({len(entities)}个)")
+
+    # 检查实体是否与标题/摘要匹配
+    title_summary = f"{title} {summary}".lower()
+    for entity in entities:
+        entity_lower = entity.lower()
+        # 处理常见变体
+        entity_variants = [entity_lower]
+        if entity_lower == "openai":
+            entity_variants.extend(["gpt", "o3", "o4", "chatgpt"])
+        elif entity_lower == "google":
+            entity_variants.extend(["gemini", "deepmind"])
+        elif entity_lower == "anthropic":
+            entity_variants.extend(["claude"])
+
+        found = any(var in title_summary for var in entity_variants)
+        if not found:
+            warnings.append(f"实体 '{entity}' 未在标题/摘要中出现")
+
+    # 4. 链接验证
+    if not url:
+        errors.append("链接为空")
+    elif not url.startswith(("http://", "https://")):
+        errors.append(f"链接格式异常: {url}")
+    else:
+        # 检查链接域名是否与来源匹配
+        source = item.get("source", "").lower()
+        domain_match = False
+        if "twitter" in source or "x.com" in url:
+            domain_match = "twitter.com" in url or "x.com" in url
+        elif "github" in source:
+            domain_match = "github.com" in url
+
+        if source and not domain_match:
+            # 放宽检查，只记录警告
+            if source not in url.lower():
+                warnings.append(f"链接域名与来源 '{source}' 可能不匹配")
+
+    # 5. 级别与分数一致性检查
+    score = item.get("score", 0)
+    if level == "S" and score < 90:
+        warnings.append(f"S级新闻分数偏低 ({score}分)")
+    elif level == "A+" and (score < 85 or score >= 90):
+        warnings.append(f"A+级新闻分数异常 ({score}分，应在85-89之间)")
+    elif level == "A" and (score < 75 or score >= 85):
+        warnings.append(f"A级新闻分数异常 ({score}分，应在75-84之间)")
+    elif level == "B" and (score < 65 or score >= 75):
+        warnings.append(f"B级新闻分数异常 ({score}分，应在65-74之间)")
+
+    is_valid = len(errors) == 0
+    return is_valid, errors, warnings
+
+
+def validate_before_push(news_data, max_items_to_check=20):
+    """
+    推送前自查：验证新闻数据质量
+    返回 (is_valid, report)
+    """
+    logger.info("=" * 60)
+    logger.info("【推送前自查】验证标题、摘要、实体和链接匹配性")
+    logger.info("=" * 60)
+
+    if not news_data:
+        logger.warning("[自查] 新闻数据为空")
+        return True, "无数据需要验证"
+
+    # 只检查最新的条目
+    items_to_check = news_data[:max_items_to_check]
+
+    total_errors = 0
+    total_warnings = 0
+    invalid_items = []
+
+    for idx, item in enumerate(items_to_check):
+        is_valid, errors, warnings = validate_news_item(item, idx)
+
+        if not is_valid:
+            total_errors += len(errors)
+            invalid_items.append({
+                "index": idx,
+                "title": item.get("title", "N/A"),
+                "errors": errors,
+                "warnings": warnings
+            })
+            logger.error(f"\n❌ [条目 {idx+1}] {item.get('title', 'N/A')[:40]}...")
+            for error in errors:
+                logger.error(f"   错误: {error}")
+
+        if warnings:
+            total_warnings += len(warnings)
+            if is_valid:  # 只在没有错误时显示警告
+                logger.warning(f"\n⚠️ [条目 {idx+1}] {item.get('title', 'N/A')[:40]}...")
+                for warning in warnings:
+                    logger.warning(f"   警告: {warning}")
+
+    # 生成报告
+    report_lines = [
+        "=" * 60,
+        "【自查报告】",
+        "=" * 60,
+        f"检查条目: {len(items_to_check)} 条",
+        f"发现错误: {total_errors} 个",
+        f"发现警告: {total_warnings} 个",
+    ]
+
+    if invalid_items:
+        report_lines.append("\n【问题条目详情】")
+        for item_info in invalid_items:
+            report_lines.append(f"\n条目 {item_info['index']+1}: {item_info['title'][:50]}")
+            for error in item_info['errors']:
+                report_lines.append(f"  ❌ {error}")
+
+    report_lines.append("=" * 60)
+
+    if total_errors > 0:
+        report_lines.append("❌ 自查未通过：存在错误，请修复后再推送")
+        is_valid = False
+    elif total_warnings > 0:
+        report_lines.append("⚠️ 自查通过：存在警告，但无严重错误")
+        is_valid = True
+    else:
+        report_lines.append("✅ 自查通过：所有检查项正常")
+        is_valid = True
+
+    report = "\n".join(report_lines)
+    logger.info("\n" + report)
+
+    return is_valid, report
+
+
 # ==================== 数据合并与保存 ====================
 
 def calculate_similarity(s1, s2):
@@ -781,8 +969,35 @@ def save_news(today, news_data):
         return False
 
 
-def push_to_github():
+def push_to_github(force=False):
+    """
+    推送数据到 GitHub
+
+    Args:
+        force: 是否跳过自查直接推送（仅用于紧急修复）
+    """
     try:
+        # 先加载数据进行检查
+        today = datetime.now().strftime('%Y-%m-%d')
+        if not os.path.exists(DATA_FILE):
+            logger.error("[GitHub] 数据文件不存在")
+            return False
+
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            content = f.read()
+        archive = safe_json_loads(content, max_retries=1) or {}
+        news_data = archive.get(today, [])
+
+        # 推送前自查（除非强制推送）
+        if not force:
+            is_valid, report = validate_before_push(news_data)
+            if not is_valid:
+                logger.error("[GitHub] 推送被阻止：自查未通过")
+                logger.error("[GitHub] 如需强制推送，请使用 force=True 参数")
+                return False
+        else:
+            logger.warning("[GitHub] 强制推送模式，跳过自查")
+
         env = os.environ.copy()
         env["GIT_AUTHOR_NAME"] = "OpenClaw Bot"
         env["GIT_AUTHOR_EMAIL"] = "bot@openclaw.ai"
@@ -885,7 +1100,7 @@ def step_fetch(source):
             today, existing = load_existing_news()
             final_news, added, updated = merge_news(existing, upcoming_news_items)
             if save_news(today, final_news):
-                push_to_github()
+                push_to_github(force=False)
 
     if not new_items:
         logger.info("没有新内容需要处理")
@@ -948,7 +1163,7 @@ def step_process():
     return state
 
 
-def step_finalize(agent_response_file="_agent_response.json"):
+def step_finalize(agent_response_file="_agent_response.json", force=False):
     """步骤3：解析 Agent 结果并保存"""
     logger.info("=" * 60)
     logger.info("步骤 3/3: 解析结果并保存")
@@ -1023,7 +1238,7 @@ def step_finalize(agent_response_file="_agent_response.json"):
     logger.info(f"[合并] 新增 {added} 条, 更新 {updated} 条")
 
     if save_news(today, final_news):
-        push_to_github()
+        push_to_github(force=force)
 
     # 更新已处理ID
     processed_ids = load_processed_ids()
@@ -1080,6 +1295,8 @@ def main():
                         help="执行指定步骤 (默认: 全部执行)")
     parser.add_argument("--agent-response", type=str, default="_agent_response.json",
                         help="Agent 响应文件路径 (默认: _agent_response.json)")
+    parser.add_argument("--force", "-f", action="store_true",
+                        help="强制推送，跳过自查验证（仅用于紧急修复）")
     parser.add_argument("--verbose", "-v", action="store_true",
                         help="显示详细日志")
     args = parser.parse_args()
@@ -1094,7 +1311,7 @@ def main():
         elif args.step == "process":
             step_process()
         elif args.step == "finalize":
-            step_finalize(args.agent_response)
+            step_finalize(args.agent_response, force=args.force)
         return
 
     # 自动模式：检测当前状态并执行相应步骤
