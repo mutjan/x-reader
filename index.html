@@ -180,9 +180,33 @@
             font-size: 14px;
             font-weight: 600;
             color: #10b981;
+            cursor: pointer;
+            user-select: none;
+        }
+        .summary-header:hover {
+            opacity: 0.8;
         }
         .summary-header .icon {
             font-size: 16px;
+        }
+        .summary-toggle {
+            margin-left: auto;
+            font-size: 12px;
+            color: #8899a6;
+            transition: transform 0.3s ease;
+        }
+        .summary-toggle.collapsed {
+            transform: rotate(-90deg);
+        }
+        .summary-content {
+            max-height: 2000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            opacity: 1;
+        }
+        .summary-content.collapsed {
+            max-height: 0;
+            opacity: 0;
         }
         .summary-grid {
             display: grid;
@@ -958,13 +982,16 @@
 
         <!-- 每日摘要区域 -->
         <div class="summary-section" id="summarySection" style="display: none;">
-            <div class="summary-header">
+            <div class="summary-header" onclick="toggleSummary()">
                 <span class="icon">📊</span>
                 <span>每日摘要</span>
-                <span style="margin-left: auto; font-size: 12px; font-weight: normal; color: #8899a6;" id="summaryCount"></span>
+                <span style="font-size: 12px; font-weight: normal; color: #8899a6;" id="summaryCount"></span>
+                <span class="summary-toggle collapsed" id="summaryToggle">▼</span>
             </div>
-            <div class="summary-grid" id="summaryGrid">
-                <!-- 动态填充 -->
+            <div class="summary-content collapsed" id="summaryContent">
+                <div class="summary-grid" id="summaryGrid">
+                    <!-- 动态填充 -->
+                </div>
             </div>
         </div>
 
@@ -1458,6 +1485,22 @@
         document.addEventListener('DOMContentLoaded', loadData);
 
         // ==================== 每日摘要功能 ====================
+        let isSummaryCollapsed = true;
+
+        function toggleSummary() {
+            isSummaryCollapsed = !isSummaryCollapsed;
+            const content = document.getElementById('summaryContent');
+            const toggle = document.getElementById('summaryToggle');
+
+            if (isSummaryCollapsed) {
+                content.classList.add('collapsed');
+                toggle.classList.add('collapsed');
+            } else {
+                content.classList.remove('collapsed');
+                toggle.classList.remove('collapsed');
+            }
+        }
+
         function renderDailySummary() {
             const section = document.getElementById('summarySection');
             const grid = document.getElementById('summaryGrid');
@@ -1498,7 +1541,7 @@
             });
 
             section.style.display = 'block';
-            count.textContent = `${newsList.length} 条新闻 · ${sortedTypes.length} 个分类`;
+            count.textContent = `${newsList.length} 条 · ${sortedTypes.length} 个分类`;
 
             // 类型颜色映射
             const typeColors = {
