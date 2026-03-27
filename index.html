@@ -1011,6 +1011,8 @@
                 currentSort.field = field;
                 currentSort.order = 'desc';
             }
+            // 点击其他列排序时取消按实体排序
+            selectedEntity = null;
             updateSortButtons();
             renderNews();
         }
