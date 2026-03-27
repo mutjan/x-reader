@@ -685,28 +685,8 @@
             font-size: 13px;
         }
         
-        /* 复制按钮 */
-        .copy-btn {
-            padding: 5px 8px;
-            background: #2f3336;
-            border: 1px solid #38444d;
-            border-radius: 4px;
-            color: #e7e9ea;
-            cursor: pointer;
-            font-size: 11px;
-            white-space: nowrap;
-        }
-        .copy-btn:hover {
-            background: #1d9bf0;
-            border-color: #1d9bf0;
-        }
-        .copy-btn.copied {
-            background: #00ba7c;
-            border-color: #00ba7c;
-        }
-        
-        /* 扩展性说明 */
-        .news-expansion {
+        /* 消息源链接 */
+        .source-links {
             color: #c084fc;
             font-size: 11px;
             line-height: 1.4;
@@ -1301,40 +1281,16 @@
             const newsList = NEWS_ARCHIVE[currentDate] || [];
             const displayList = getSortedAndFilteredNews(newsList);
             const selectedNews = displayList.filter((_, index) => selectedItems.has(`${currentDate}-${index}`));
-            
+
             if (selectedNews.length === 0) return;
-            
+
             const textToCopy = selectedNews.map(item => {
                 const links = item.sourceLinks?.map(l => l.url).join('\n') || '';
                 return `${item.title}\n${links}`;
             }).join('\n\n');
-            
+
             navigator.clipboard.writeText(textToCopy).then(() => {
                 showToast(`已复制 ${selectedNews.length} 条`);
-            });
-        }
-
-        function copySingle(index) {
-            const newsList = NEWS_ARCHIVE[currentDate] || [];
-            const displayList = getSortedAndFilteredNews(newsList);
-            const item = displayList[index];
-            
-            if (!item) return;
-            
-            const links = item.sourceLinks?.map(l => l.url).join('\n') || '';
-            const textToCopy = `${item.title}\n${links}`;
-            
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                showToast('已复制');
-                const btn = document.getElementById(`copy-btn-${index}`);
-                if (btn) {
-                    btn.textContent = '✓';
-                    btn.classList.add('copied');
-                    setTimeout(() => {
-                        btn.textContent = '复制';
-                        btn.classList.remove('copied');
-                    }, 1500);
-                }
             });
         }
 
@@ -1448,7 +1404,6 @@
                             <th>消息源</th>
                             <th onclick="sortBy('time')">更新时间 ${currentSort.field === 'time' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
                             <th onclick="sortBy('sources')">来源数 ${currentSort.field === 'sources' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
-                            <th>复制</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1467,7 +1422,6 @@
                                 <td><div class="source-links">${renderSourceLinks(item.sourceLinks)}</div></td>
                                 <td><div style="color: #8899a6; font-size: 12px; white-space: nowrap;">${updateTimeStr}</div></td>
                                 <td><div class="source-count">${item.sources}</div></td>
-                                <td><button class="copy-btn" id="copy-btn-${index}" onclick="copySingle(${index})">复制</button></td>
                             </tr>`;
                         }).join('')}
                     </tbody>
