@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **前端排序功能增强**
+  - 按评级排序时，相同评级内部自动按时间倒序排列（最新内容优先）
+  - 表格支持按类型排序
+  - 点击实体标签可快速按该实体筛选排序
+
+### Changed
+- **新闻分类系统扩展为12种类型**
+  - 新增：AI、热点、商业、科研、产品、开源、人物、资本、政策、硬件、航天、其他
+  - 优化分类逻辑，提高选题归类准确性
+
+### Fixed
+- 修复实体标签中的通用词汇（AI、LLM、X platform等）被错误识别的问题
+
 ## [2.0.0] - 2026-03-19
 
 ### Added
