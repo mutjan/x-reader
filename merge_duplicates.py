@@ -57,90 +57,128 @@ def merge_news_items(items):
 
 
 def find_duplicates_by_content(news_list):
-    """基于内容相似度找出重复新闻"""
+    """基于内容相似度找出重复新闻 - 使用精确配对策略"""
     groups = []
     processed = set()
 
-    for i, item1 in enumerate(news_list):
-        if i in processed:
-            continue
+    def extract_significant_words(title):
+        """提取标题中有意义的词汇"""
+        words = set(re.findall(r'[\u4e00-\u9fa5]{2,}|[a-zA-Z]+', title.lower()))
+        stopwords = {'计划', '预计', '或', '超', '达', '将', '与', '及', '等', '的', '是', '在', '了', '和', '为', '从', '到', '对', '被', '把', '给', '让', '向', '跟', '比', '以', 'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could', 'should', 'may', 'might', 'must', 'shall', 'can', 'to', 'of', 'in', 'for', 'on', 'with', 'at', 'by', 'from', 'as', 'into', 'through', 'during', 'before', 'after', 'above', 'below', 'between', 'under', 'again', 'further', 'then', 'once', 'here', 'there', 'when', 'where', 'why', 'how', 'all', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 'just', 'and', 'but', 'if', 'or', 'because', 'until', 'while', 'this', 'that', 'these', 'those', '成为', '史上', '第二大'}
+        return words - stopwords
 
-        group = [item1]
-        processed.add(i)
+    def calculate_similarity(title1, title2):
+        """计算标题Jaccard相似度"""
+        words1 = extract_significant_words(title1)
+        words2 = extract_significant_words(title2)
+        if not words1 or not words2:
+            return 0
+        intersection = words1 & words2
+        union = words1 | words2
+        return len(intersection) / len(union) if union else 0
 
-        title1 = item1.get('title', '').lower()
+    def get_strict_event_signature(title):
+        """
+        获取严格的事件签名 - 必须同时包含特定组合才算同一事件
+        返回元组 (主体, 事件) 或 None
+        """
+        t = title.lower()
+
+        # Anthropic + IPO
+        if 'anthropic' in t and ('ipo' in t or '上市' in t or 'q4' in t):
+            return ('anthropic', 'ipo')
+
+        # SpaceX + IPO
+        if 'spacex' in t and ('ipo' in t or '上市' in t):
+            return ('spacex', 'ipo')
+
+        # Meta + TRIBE
+        if 'meta' in t and 'tribe' in t:
+            return ('meta', 'tribe')
+
+        # Cursor + Composer
+        if 'cursor' in t and 'composer' in t:
+            return ('cursor', 'composer')
+
+        # Claude + 越狱/攻击 (特定技术事件)
+        if 'claude' in t and ('越狱' in t or '攻击' in t or 'jailbreak' in t):
+            return ('claude', 'jailbreak')
+
+        # Claude Code + 定时任务/插件 (特定功能) - 需要更严格的匹配
+        if 'claude code' in t and ('定时' in t or '插件' in t or '网页' in t):
+            return ('claude', 'code_feature')
+
+        return None
+
+    def are_strictly_similar(item1, item2):
+        """
+        判断两条新闻是否严格相似（必须满足多个条件之一）
+        这是核心配对函数，必须非常严格
+        """
+        title1 = item1.get('title', '')
+        title2 = item2.get('title', '')
+        t1_lower = title1.lower()
+        t2_lower = title2.lower()
         entities1 = set(e.lower() for e in item1.get('entities', []))
+        entities2 = set(e.lower() for e in item2.get('entities', []))
 
-        for j, item2 in enumerate(news_list[i+1:], start=i+1):
-            if j in processed:
-                continue
+        # 1. 严格事件签名匹配
+        sig1 = get_strict_event_signature(title1)
+        sig2 = get_strict_event_signature(title2)
+        if sig1 and sig2 and sig1 == sig2:
+            return True
 
-            title2 = item2.get('title', '').lower()
-            entities2 = set(e.lower() for e in item2.get('entities', []))
+        # 2. 高标题相似度 (>= 0.75)
+        sim = calculate_similarity(title1, title2)
+        if sim >= 0.75:
+            return True
 
-            # 检查是否为同一事件
-            is_duplicate = False
+        # 3. 标题互相包含（且长度都>15，避免短词误匹配）
+        if len(title1) > 15 and len(title2) > 15:
+            if t1_lower in t2_lower or t2_lower in t1_lower:
+                return True
 
-            # 1. 标题包含关系
-            if title1 in title2 or title2 in title1:
-                is_duplicate = True
+        # 4. 至少2个具体实体匹配 + 高相似度标题 (>= 0.5)
+        if entities1 and entities2:
+            generic = {'ai', '人工智能', '科技', '公司', '产品', '技术', '模型', '用户', '市场', '平台', '服务', '系统', '应用', '投资', '融资', '估值', '上市', 'ipo', '裁员', '招聘', '团队', 'ceo', '创始人', '高管'}
+            specific1 = entities1 - generic
+            specific2 = entities2 - generic
+            common = specific1 & specific2
+            if len(common) >= 2 and sim >= 0.5:
+                return True
 
-            # 2. 实体重叠度高
-            if entities1 and entities2:
-                common = entities1 & entities2
-                # 标准化映射
-                company_map = {
-                    '字节跳动': 'bytedance',
-                    'bytedance': 'bytedance',
-                    'byte dance': 'bytedance',
-                }
-                product_map = {
-                    'seedance': 'seedance',
-                    'seedance 2.0': 'seedance',
-                    'ai视频生成': 'seedance',
-                    'ai视频模型': 'seedance',
-                    'chatgpt': 'chatgpt',
-                    'alphafold': 'alphafold',
-                    'mrna疫苗': 'mrna',
-                    '个性化医疗': 'mrna',
-                    'turboquant': 'turboquant',
-                }
+        return False
 
-                norm_entities1 = set()
-                norm_entities2 = set()
-                for e in entities1:
-                    e_lower = e.lower()
-                    if e_lower in company_map:
-                        norm_entities1.add(company_map[e_lower])
-                    elif e_lower in product_map:
-                        norm_entities1.add(product_map[e_lower])
-                    else:
-                        norm_entities1.add(e_lower)
+    # 使用并查集思路：先找出所有相似对，然后合并连通分量
+    n = len(news_list)
+    parent = list(range(n))
 
-                for e in entities2:
-                    e_lower = e.lower()
-                    if e_lower in company_map:
-                        norm_entities2.add(company_map[e_lower])
-                    elif e_lower in product_map:
-                        norm_entities2.add(product_map[e_lower])
-                    else:
-                        norm_entities2.add(e_lower)
+    def find(x):
+        if parent[x] != x:
+            parent[x] = find(parent[x])
+        return parent[x]
 
-                common_norm = norm_entities1 & norm_entities2
+    def union(x, y):
+        px, py = find(x), find(y)
+        if px != py:
+            parent[px] = py
 
-                # 如果有3个及以上共同标准化实体
-                if len(common_norm) >= 3:
-                    is_duplicate = True
-                # 如果有2个共同实体且包含关键实体
-                elif len(common_norm) >= 2 and any(e in common_norm for e in ['bytedance', 'seedance', 'chatgpt', 'alphafold', 'mrna', 'turboquant']):
-                    is_duplicate = True
+    # 找出所有相似对
+    for i in range(n):
+        for j in range(i + 1, n):
+            if are_strictly_similar(news_list[i], news_list[j]):
+                union(i, j)
 
-            if is_duplicate:
-                group.append(item2)
-                processed.add(j)
+    # 按根节点分组
+    group_map = {}
+    for i in range(n):
+        root = find(i)
+        if root not in group_map:
+            group_map[root] = []
+        group_map[root].append(news_list[i])
 
-        if len(group) > 1:
-            groups.append(group)
+    # 只返回有多于一条新闻的组
+    groups = [group for group in group_map.values() if len(group) > 1]
 
     return groups
 
@@ -150,7 +188,7 @@ def main():
     with open('news_data.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    today = '2026-03-26'
+    today = '2026-03-27'
     if today not in data:
         print("今日无数据")
         return
