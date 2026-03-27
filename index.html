@@ -1625,37 +1625,51 @@
             const section = document.getElementById('upcomingSection');
             const list = document.getElementById('upcomingList');
             const count = document.getElementById('upcomingCount');
-            
-            // 只显示 pending 状态的事件
-            const pendingEvents = UPCOMING_EVENTS.filter(e => e.status === 'pending');
-            
-            if (pendingEvents.length === 0) {
+
+            // 显示 pending 和 found 状态的事件
+            const activeEvents = UPCOMING_EVENTS.filter(e => e.status === 'pending' || e.status === 'found');
+
+            if (activeEvents.length === 0) {
                 section.style.display = 'none';
                 return;
             }
-            
+
             section.style.display = 'block';
-            count.textContent = `${pendingEvents.length} 个待追踪`;
-            
-            list.innerHTML = pendingEvents.map(event => {
+            const pendingCount = activeEvents.filter(e => e.status === 'pending').length;
+            const foundCount = activeEvents.filter(e => e.status === 'found').length;
+            count.textContent = `${pendingCount} 个待追踪${foundCount > 0 ? ' · ' + foundCount + ' 个已找到' : ''}`;
+
+            list.innerHTML = activeEvents.map(event => {
                 const keywords = event.expected_keywords || [];
-                const keywordsHtml = keywords.slice(0, 5).map(k => 
+                const keywordsHtml = keywords.slice(0, 5).map(k =>
                     `<span class="upcoming-keyword">${k}</span>`
                 ).join('');
-                
+
                 const sourceHint = event.source_hint || '未指定来源';
                 const createdAt = event.created_at ? new Date(event.created_at).toLocaleDateString('zh-CN') : '-';
-                
+
+                // 已找到的事件显示不同样式
+                const isFound = event.status === 'found';
+                const foundBadge = isFound ? '<span style="background: #10b981; color: white; font-size: 10px; padding: 2px 6px; border-radius: 4px; margin-left: 8px;">已找到</span>' : '';
+                const foundNewsHtml = isFound && event.found_news ? `
+                    <div style="margin-top: 8px; padding: 8px; background: rgba(16, 185, 129, 0.1); border-radius: 6px; border-left: 2px solid #10b981;">
+                        <div style="font-size: 12px; color: #10b981; font-weight: 500; margin-bottom: 4px;">✓ 匹配到新闻</div>
+                        <div style="font-size: 12px; color: #e7e9ea;">${event.found_news.title}</div>
+                        <a href="${event.found_news.url}" target="_blank" style="font-size: 11px; color: #1d9bf0; text-decoration: none;">查看新闻 →</a>
+                    </div>
+                ` : '';
+
                 return `
-                    <div class="upcoming-item">
+                    <div class="upcoming-item" style="${isFound ? 'border-left-color: #10b981; opacity: 0.9;' : ''}">
                         <span class="upcoming-priority ${event.priority || 'A'}">${event.priority || 'A'}</span>
                         <div class="upcoming-content">
-                            <div class="upcoming-title">${event.title}</div>
+                            <div class="upcoming-title">${event.title}${foundBadge}</div>
                             <div class="upcoming-meta">
                                 <span>📅 ${createdAt}</span>
                                 <span>📡 ${sourceHint}</span>
                                 <span class="upcoming-keywords">${keywordsHtml}</span>
                             </div>
+                            ${foundNewsHtml}
                         </div>
                     </div>
                 `;
