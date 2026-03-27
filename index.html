@@ -853,6 +853,7 @@
             <span class="toolbar-label">排序</span>
             <div class="sort-controls">
                 <button class="sort-btn" onclick="sortBy('rating')" id="sortRating">评级</button>
+                <button class="sort-btn" onclick="sortBy('type')" id="sortType">类型</button>
                 <button class="sort-btn" onclick="sortBy('entities')" id="sortEntities">实体</button>
                 <button class="sort-btn" onclick="sortBy('sources')" id="sortSources">来源</button>
                 <button class="sort-btn" onclick="sortBy('time')" id="sortTime">时间</button>
@@ -1054,6 +1055,7 @@
 
         function updateSortButtons() {
             document.getElementById('sortRating').className = 'sort-btn' + (currentSort.field === 'rating' ? ' active' : '');
+            document.getElementById('sortType').className = 'sort-btn' + (currentSort.field === 'type' ? ' active' : '');
             document.getElementById('sortEntities').className = 'sort-btn' + (currentSort.field === 'entities' ? ' active' : '');
             document.getElementById('sortSources').className = 'sort-btn' + (currentSort.field === 'sources' ? ' active' : '');
             document.getElementById('sortTime').className = 'sort-btn' + (currentSort.field === 'time' ? ' active' : '');
@@ -1089,6 +1091,14 @@
                     const orderA = getRatingOrder(a.rating);
                     const orderB = getRatingOrder(b.rating);
                     return currentSort.order === 'asc' ? orderB - orderA : orderA - orderB;
+                });
+            } else if (currentSort.field === 'type') {
+                result.sort((a, b) => {
+                    const typeA = (a.typeName || a.type || '').toLowerCase();
+                    const typeB = (b.typeName || b.type || '').toLowerCase();
+                    return currentSort.order === 'asc'
+                        ? typeA.localeCompare(typeB)
+                        : typeB.localeCompare(typeA);
                 });
             } else if (currentSort.field === 'entities') {
                 result.sort((a, b) => {
@@ -1296,7 +1306,7 @@
                         <tr>
                             <th><input type="checkbox" class="checkbox" onchange="selectAll()"></th>
                             <th onclick="sortBy('rating')">评级 ${currentSort.field === 'rating' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
-                            <th>类型</th>
+                            <th onclick="sortBy('type')">类型 ${currentSort.field === 'type' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
                             <th>标题</th>
                             <th>摘要</th>
                             <th onclick="sortBy('entities')">实体 ${currentSort.field === 'entities' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
