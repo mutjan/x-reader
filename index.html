@@ -472,6 +472,11 @@
             border-color: #1d9bf0;
             color: white;
         }
+        .entity-tag.selected {
+            background: #00ba7c;
+            border-color: #00ba7c;
+            color: white;
+        }
         .rating-S {
             background: linear-gradient(135deg, #ffd700, #ffaa00);
             color: #000;
@@ -925,6 +930,7 @@
         let currentSort = { field: 'rating', order: 'desc' };
         let filteredRating = null;
         let selectedItems = new Set();
+        let selectedEntity = null;
 
         // ==================== Inoreader 功能 ====================
         function getLatestDate() {
@@ -965,6 +971,7 @@
             currentDate = date;
             currentSort = { field: 'rating', order: 'desc' };
             filteredRating = null;
+            selectedEntity = null;
             selectedItems.clear();
             updateSortButtons();
             updateBatchButtons();
@@ -977,6 +984,7 @@
             const newIndex = currentIndex + direction;
             if (newIndex >= 0 && newIndex < dates.length) {
                 currentDate = dates[newIndex];
+                selectedEntity = null;
                 renderNews();
             }
         }
@@ -1010,6 +1018,7 @@
         function resetSort() {
             currentSort = { field: 'rating', order: 'desc' };
             filteredRating = null;
+            selectedEntity = null;
             updateSortButtons();
             renderNews();
         }
@@ -1036,7 +1045,17 @@
             if (filteredRating) {
                 result = result.filter(item => item.rating === filteredRating);
             }
-            if (currentSort.field === 'rating') {
+
+            // 如果选中了实体，将包含该实体的条目排在最前面
+            if (selectedEntity) {
+                result.sort((a, b) => {
+                    const hasEntityA = a.entities && a.entities.includes(selectedEntity);
+                    const hasEntityB = b.entities && b.entities.includes(selectedEntity);
+                    if (hasEntityA && !hasEntityB) return -1;
+                    if (!hasEntityA && hasEntityB) return 1;
+                    return 0;
+                });
+            } else if (currentSort.field === 'rating') {
                 result.sort((a, b) => {
                     const orderA = getRatingOrder(a.rating);
                     const orderB = getRatingOrder(b.rating);
@@ -1154,11 +1173,21 @@
             ).join('');
         }
 
-        function renderEntities(entities) {
+        function renderEntities(entities, itemIndex) {
             if (!entities || entities.length === 0) return '<span style="color: #555;">-</span>';
             return entities.map(entity =>
-                `<span class="entity-tag">${entity}</span>`
+                `<span class="entity-tag ${selectedEntity === entity ? 'selected' : ''}" onclick="sortByEntity('${entity.replace(/'/g, "\\'")}')">${entity}</span>`
             ).join('');
+        }
+
+        function sortByEntity(entity) {
+            // 如果点击的是已选中的实体，则取消筛选
+            if (selectedEntity === entity) {
+                selectedEntity = null;
+            } else {
+                selectedEntity = entity;
+            }
+            renderNews();
         }
 
         function renderExpansion(expansion) {
@@ -1206,7 +1235,7 @@
             } else {
                 updateTime.textContent = new Date().toLocaleString('zh-CN', {month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'}) + ' (AI-Generated)';
             }
-            totalCount.textContent = `${displayList.length}${filteredRating ? ' / ' + newsList.length : ''}`;
+            totalCount.textContent = `${displayList.length}${filteredRating ? ' / ' + newsList.length : ''}${selectedEntity ? ' | 实体: ' + selectedEntity : ''}`;
             
             content.innerHTML = `
                 <table class="news-table">
