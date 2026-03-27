@@ -706,10 +706,45 @@
             padding: 4px;
             border-radius: 4px;
         }
-        .expansion-icon {
-            color: #c084fc;
+        /* 扩展性 - 默认显示第一行，hover展开 */
+        .expansion-cell {
+            position: relative;
+        }
+        .expansion-preview {
+            color: #8899a6;
             font-size: 12px;
-            margin-right: 4px;
+            line-height: 1.4;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 80px;
+        }
+        .expansion-full {
+            position: absolute;
+            left: 0;
+            top: 0;
+            min-width: 200px;
+            max-width: 300px;
+            background: #1d9bf020;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            color: #e7e9ea;
+            line-height: 1.4;
+            z-index: 10;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+            pointer-events: none;
+            white-space: normal;
+        }
+        .expansion-cell:hover .expansion-full {
+            opacity: 1;
+            visibility: visible;
+        }
+        .expansion-cell:hover .expansion-preview {
+            opacity: 0;
         }
 
         /* X事件样式 */
@@ -1320,7 +1355,8 @@
 
         function renderExpansion(expansion) {
             if (!expansion || expansion.trim() === '') return '<span style="color: #555;">-</span>';
-            return `<div class="news-expansion" title="${expansion.replace(/"/g, '&quot;')}"><span class="expansion-icon">↗</span>${expansion}</div>`;
+            const firstLine = expansion.split('\n')[0] || expansion.substring(0, 20);
+            return `<div class="expansion-cell"><div class="expansion-preview">${firstLine}</div><div class="expansion-full">${expansion}</div></div>`;
         }
 
         function renderType(type, typeName) {
