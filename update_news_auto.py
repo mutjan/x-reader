@@ -69,6 +69,7 @@ RSS_CONFIG = {
 DATA_FILE = "news_data.json"
 PROCESSED_IDS_FILE = ".processed_ids.json"
 WORK_LOG_FILE = ".work_log.json"
+TEMP_DIR = ".tmp"
 MAX_CACHED_IDS = 5000
 GITHUB_BRANCH = "main"
 
@@ -1066,7 +1067,8 @@ def main():
 
         if agent_response["mode"] == "manual" or agent_response["mode"] == "lobsterai":
             # 需要手动处理
-            prompt_file = "_ai_prompt.txt"
+            os.makedirs(TEMP_DIR, exist_ok=True)
+            prompt_file = os.path.join(TEMP_DIR, "_ai_prompt.txt")
             with open(prompt_file, "w", encoding="utf-8") as f:
                 f.write(agent_response["prompt"])
 
@@ -1076,8 +1078,8 @@ def main():
             print("\n" + agent_response["prompt"] + "\n")
             logger.info("=" * 60)
             logger.info(f"提示词已保存到: {prompt_file}")
-            logger.info("【处理完成后，将返回的 JSON 保存到 _ai_result.json】")
-            logger.info("【然后运行: python update_news_auto.py --ai-result _ai_result.json】")
+            logger.info(f"【处理完成后，将返回的 JSON 保存到 {TEMP_DIR}/_ai_result.json】")
+            logger.info(f"【然后运行: python update_news_auto.py --ai-result {TEMP_DIR}/_ai_result.json】")
             logger.info("=" * 60)
             log_entry["notes"].append("需要手动处理 AI 提示词")
             save_work_log(log_entry)
@@ -1197,9 +1199,10 @@ def main():
 
     # 清理临时文件
     for f in ["_ai_prompt.txt", "_ai_result.json"]:
-        if os.path.exists(f):
+        temp_file = os.path.join(TEMP_DIR, f)
+        if os.path.exists(temp_file):
             try:
-                os.remove(f)
+                os.remove(temp_file)
             except:
                 pass
 
