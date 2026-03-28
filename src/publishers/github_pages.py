@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 from src.publishers.base import BasePublisher
 from src.models.news import ProcessedNewsItem
 from src.config.settings import DATA_FILE, GITHUB_BRANCH, settings
-from src.utils.common import save_json, load_json
+from src.utils.common import save_json, load_json, is_similar_text
 
 class GitHubPagesPublisher(BasePublisher):
     """GitHub Pages发布器"""
@@ -91,10 +91,19 @@ class GitHubPagesPublisher(BasePublisher):
 
         updated_count = 0
         new_count = 0
+        duplicate_by_title_count = 0
+
+        # 预处理现有标题映射，用于快速相似度比较
+        existing_titles = {}
+        for item_id, item in existing_dict.items():
+            title = item.get("chinese_title", item.get("title", "")).strip()
+            if title:
+                existing_titles[item_id] = title
 
         for item in new_items:
             item_dict = item.to_dict()
             item_id = item_dict["id"]
+            item_title = item.chinese_title.strip()
 
             if item_id in existing_dict:
                 if update_existing:
@@ -108,8 +117,36 @@ class GitHubPagesPublisher(BasePublisher):
                     existing_dict[item_id] = existing_item
                     updated_count += 1
             else:
-                existing_dict[item_id] = item_dict
-                new_count += 1
+                # 检查是否有标题相似的已存在条目（相同新闻事件）
+                is_duplicate = False
+                if item_title:
+                    for existing_id, existing_title in existing_titles.items():
+                        if existing_title and is_similar_text(item_title, existing_title, threshold=0.7):
+                            # 相似标题，视为同一新闻事件
+                            is_duplicate = True
+                            duplicate_by_title_count += 1
+                            # 更新现有条目的来源链接
+                            existing_item = existing_dict[existing_id]
+                            if "sourceLinks" in item_dict:
+                                new_links = item_dict["sourceLinks"]
+                                existing_links = existing_item.get("sourceLinks", [])
+                                # 合并来源链接，去重
+                                existing_urls = {link["url"] for link in existing_links}
+                                for link in new_links:
+                                    if link["url"] not in existing_urls:
+                                        existing_links.append(link)
+                                        existing_urls.add(link["url"])
+                                existing_item["sourceLinks"] = existing_links
+                                existing_item["sources"] = len(existing_links)
+                            break
+
+                if not is_duplicate:
+                    existing_dict[item_id] = item_dict
+                    existing_titles[item_id] = item_title
+                    new_count += 1
+
+        if duplicate_by_title_count > 0:
+            self.logger.info(f"标题相似去重: 跳过了{duplicate_by_title_count}条相同新闻事件")
 
         # 清理超过30天的过期数据
         thirty_days_ago = datetime.now() - timedelta(days=30)
