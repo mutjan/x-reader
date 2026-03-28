@@ -5,7 +5,7 @@
 """
 from abc import ABC, abstractmethod
 from typing import List
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from src.models.news import RawNewsItem
 from src.utils.common import setup_logger
@@ -33,7 +33,7 @@ class BaseFetcher(ABC):
 
     def filter_by_time(self, items: List[RawNewsItem], time_window_hours: int) -> List[RawNewsItem]:
         """按时间窗口过滤新闻项"""
-        cutoff_time = datetime.now() - datetime.timedelta(hours=time_window_hours)
+        cutoff_time = datetime.now() - timedelta(hours=time_window_hours)
         filtered = [item for item in items if item.published_at >= cutoff_time]
         self.logger.info(f"时间过滤后保留 {len(filtered)}/{len(items)} 条新闻（最近{time_window_hours}小时）")
         return filtered
