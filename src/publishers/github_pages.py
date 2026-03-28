@@ -73,15 +73,21 @@ class GitHubPagesPublisher(BasePublisher):
             self.logger.info("检测到旧版列表格式数据，正在转换为按日期分组格式")
             existing_dict = {}
             for item in existing_data:
-                item_id = item["id"]
-                existing_dict[item_id] = item
+                try:
+                    item_id = item["id"]
+                    existing_dict[item_id] = item
+                except Exception as e:
+                    self.logger.warning(f"跳过无效历史新闻条目: {e}")
         else:
             # 现有数据已经是按日期分组的格式，先展开成id映射
             existing_dict = {}
             for date in existing_data:
                 for item in existing_data[date]:
-                    item_id = item["id"]
-                    existing_dict[item_id] = item
+                    try:
+                        item_id = item["id"]
+                        existing_dict[item_id] = item
+                    except Exception as e:
+                        self.logger.warning(f"跳过无效历史新闻条目: {e}")
 
         updated_count = 0
         new_count = 0
@@ -92,9 +98,14 @@ class GitHubPagesPublisher(BasePublisher):
 
             if item_id in existing_dict:
                 if update_existing:
-                    # 保留原有的发布时间，更新其他字段
-                    item_dict["published_at"] = existing_dict[item_id].get("published_at", item_dict["published_at"])
-                    existing_dict[item_id] = item_dict
+                    # 保留原有的所有字段，只更新新数据中存在的字段
+                    # 特别保留时间相关字段避免被覆盖
+                    existing_item = existing_dict[item_id]
+                    for key, value in item_dict.items():
+                        # 时间相关字段特殊处理：不覆盖已有的时间
+                        if key not in ["published_at", "processed_at", "timestamp"]:
+                            existing_item[key] = value
+                    existing_dict[item_id] = existing_item
                     updated_count += 1
             else:
                 existing_dict[item_id] = item_dict
@@ -106,12 +117,16 @@ class GitHubPagesPublisher(BasePublisher):
         deleted_count = 0
         for item in existing_dict.values():
             try:
-                # 解析发布时间，支持多种格式
-                if isinstance(item["published_at"], str):
-                    pub_time = datetime.fromisoformat(item["published_at"].replace('Z', '+00:00'))
+                # 解析处理时间，支持多种格式 - 使用处理时间而非原始发布时间判断过期
+                # 兼容旧数据：如果没有processed_at字段，使用published_at
+                time_field = item.get("processed_at", item.get("published_at"))
+                if isinstance(time_field, str):
+                    process_time = datetime.fromisoformat(time_field.replace('Z', '+00:00'))
+                    # 转换为本地时区的naive datetime进行比较
+                    process_time = process_time.astimezone().replace(tzinfo=None)
                 else:
-                    pub_time = datetime.fromtimestamp(item["published_at"])
-                if pub_time >= thirty_days_ago:
+                    process_time = datetime.fromtimestamp(time_field)
+                if process_time >= thirty_days_ago:
                     filtered_dict[item["id"]] = item
                 else:
                     deleted_count += 1
@@ -127,13 +142,20 @@ class GitHubPagesPublisher(BasePublisher):
         news_by_date = {}
         for item in filtered_dict.values():
             try:
-                # 转换为前端格式 - 直接使用模型层的标准方法
-                news_item = ProcessedNewsItem.from_dict(item)
-                front_item = news_item.to_frontend_dict()
+                # 提取日期key - 使用处理时间而非原始发布时间
+                # 兼容旧数据：如果没有processed_at字段，使用published_at
+                time_field = item.get("processed_at", item.get("published_at"))
+                date_key = time_field.split('T')[0] if isinstance(time_field, str) else \
+                           datetime.fromtimestamp(time_field).strftime('%Y-%m-%d')
 
-                # 提取日期key
-                date_key = item["published_at"].split('T')[0] if isinstance(item["published_at"], str) else \
-                           datetime.fromtimestamp(item["published_at"]).strftime('%Y-%m-%d')
+                # 检查是否是已经处理好的前端格式数据（有timestamp和title字段）
+                if "timestamp" in item and "title" in item:
+                    # 已经是前端格式，直接使用
+                    front_item = item
+                else:
+                    # 转换为前端格式 - 直接使用模型层的标准方法
+                    news_item = ProcessedNewsItem.from_dict(item)
+                    front_item = news_item.to_frontend_dict()
 
                 if date_key not in news_by_date:
                     news_by_date[date_key] = []
@@ -146,6 +168,16 @@ class GitHubPagesPublisher(BasePublisher):
         # 每个日期内的新闻按发布时间降序排序
         for date in news_by_date:
             news_by_date[date].sort(key=lambda x: x["timestamp"], reverse=True)
+
+        # 保存前先备份现有数据
+        if os.path.exists(self.data_file):
+            backup_file = f"{self.data_file}.bak.{datetime.now().strftime('%Y%m%d%H%M%S')}"
+            try:
+                import shutil
+                shutil.copy(self.data_file, backup_file)
+                self.logger.info(f"已备份原有数据到: {backup_file}")
+            except Exception as e:
+                self.logger.warning(f"数据备份失败: {e}")
 
         # 保存合并后的数据（按日期分组格式）
         save_json(news_by_date, self.data_file)
@@ -265,8 +297,24 @@ class GitHubPagesPublisher(BasePublisher):
 
     def get_publish_stats(self) -> Dict[str, Any]:
         """获取发布统计信息"""
-        existing_data = load_json(self.data_file, [])
+        existing_data = load_json(self.data_file, {})
+        total_news = 0
+        latest_timestamp = 0
+        latest_update = None
+
+        if isinstance(existing_data, list):
+            total_news = len(existing_data)
+            if existing_data:
+                latest_update = existing_data[0].get("processed_at")
+        else:
+            for date in existing_data:
+                total_news += len(existing_data[date])
+                for item in existing_data[date]:
+                    if item.get("timestamp", 0) > latest_timestamp:
+                        latest_timestamp = item["timestamp"]
+                        latest_update = item.get("processed_at")
+
         return {
-            "total_news": len(existing_data),
-            "latest_update": existing_data[0]["processed_at"] if existing_data else None
+            "total_news": total_news,
+            "latest_update": latest_update
         }
