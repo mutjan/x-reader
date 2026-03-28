@@ -151,26 +151,49 @@ x-reader/
 ├── main.py                 # 主程序入口
 ├── admin.py                # 管理后台入口
 ├── continue_process.py     # 断点续处理工具
-├── auth_inoreader.py       # Inoreader授权工具
+├── upcoming_events.py      # 预告事件和时代情绪管理
 ├── requirements.txt        # 依赖配置
 ├── index.html              # GitHub Pages前端
 ├── news_data.json          # 主数据文件
 ├── upcoming_events.json    # 预告事件数据
+├── scripts/                # 工具脚本目录
+│   ├── auth_inoreader.py   # Inoreader授权工具
+│   ├── convert_data_format.py  # 数据格式转换工具
+│   ├── import_results.py   # AI结果导入工具
+│   ├── manual_process.py   # 手动处理脚本
+│   └── test_classification.py  # 分类验证工具
 ├── src/                    # 模块化业务代码
+│   ├── config/             # 配置文件
 │   ├── fetchers/           # 数据源层（Twitter、Inoreader等）
 │   ├── processors/         # 处理层（筛选、去重、AI处理等）
-│   └── publishers/         # 发布层（GitHub Pages等）
+│   ├── publishers/         # 发布层（GitHub Pages等）
+│   ├── models/             # 数据模型
+│   └── utils/              # 工具函数
 └── .processed_ids.json     # 处理记录缓存
 ```
 
 ### 核心文件说明
 
+#### 根目录入口脚本
 | 文件 | 说明 |
 |------|------|
 | `main.py` | 新的模块化主程序入口，替代所有旧版脚本 |
 | `admin.py` | 系统管理后台，提供数据统计、事件管理等功能 |
 | `continue_process.py` | 断点续处理工具，中断后恢复处理流程 |
-| `auth_inoreader.py` | Inoreader账号授权工具，首次使用需要运行 |
+| `upcoming_events.py` | 预告事件和时代情绪管理工具 |
+
+#### 工具脚本（scripts目录）
+| 文件 | 说明 |
+|------|------|
+| `scripts/auth_inoreader.py` | Inoreader账号授权工具，首次使用需要运行 |
+| `scripts/convert_data_format.py` | 数据格式转换工具，用于迁移历史数据 |
+| `scripts/import_results.py` | AI结果导入工具，支持导入外部处理结果 |
+| `scripts/manual_process.py` | 手动处理脚本，用于特殊情况的人工干预 |
+| `scripts/test_classification.py` | 分类验证工具，测试新闻分类逻辑 |
+
+#### 数据文件
+| 文件 | 说明 |
+|------|------|
 | `_ai_result.json` | AI处理结果文件（手动模式下需要用户创建） |
 | `news_data.json` | 新闻数据主存储文件 |
 | `upcoming_events.json` | 预告事件数据存储 |
