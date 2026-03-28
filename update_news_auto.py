@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-新闻选题更新脚本 v5.2 - 全自动本地 Agent 处理
+新闻选题更新脚本 v5.3 - 全自动本地 Agent 处理
 直接在 Agent 会话中处理新闻，无需 API 调用，无需手动步骤
+- 新增URL精确匹配机制，解决标题与链接不匹配问题
 
 使用方法:
   python update_news_auto.py [--source twitter|inoreader|all]
@@ -630,13 +631,15 @@ def generate_ai_prompt(items):
   "results": [
     {{
       "index": 0,
+      "original_url": "https://example.com/news/1",
       "score": 95,
       "level": "S",
       "title": "重磅！OpenAI发布GPT-5，能力全面升级",
       "summary": "OpenAI最新发布的大模型在多项基准测试中创下新高...",
       "type": "ai",
       "reason": "AI大模型重大发布",
-      "expansion": "该技术可能推动存储芯片需求增长，进而影响美股和A股相关板块走势"
+      "expansion": "该技术可能推动存储芯片需求增长，进而影响美股和A股相关板块走势",
+      "entities": ["OpenAI", "GPT"]
     }}
   ]
 }}
@@ -646,7 +649,8 @@ def generate_ai_prompt(items):
 2. 最多选择15条最有价值的
 3. 相似主题的新闻合并为一条
 4. JSON字符串必须使用英文双引号
-5. title/summary/reason 等文本字段内部不得出现英文双引号，如需引用请用书名号《》或单引号'代替"""
+5. title/summary/reason 等文本字段内部不得出现英文双引号，如需引用请用书名号《》或单引号'代替
+6. 必须严格返回每条新闻对应的 original_url 字段，值为输入新闻中的 url 字段，用于精确匹配原始新闻"""
 
     return prompt
 
@@ -1098,14 +1102,33 @@ def main():
     log_entry["ai_processed"] = len(ai_results)
 
     # 6. 构建最终数据
-    ai_map = {r.get("_original_index", r.get("index", 0)): r for r in ai_results}
+    # 优先通过 original_url 匹配，其次通过索引匹配
+    ai_url_map = {}
+    ai_index_map = {}
+    for r in ai_results:
+        if "original_url" in r:
+            ai_url_map[r["original_url"]] = r
+        else:
+            idx = r.get("_original_index", r.get("index", 0))
+            ai_index_map[idx] = r
+
     processed = []
+    unmatched_ai_results = ai_results.copy()
 
     for idx, item in enumerate(filtered):
-        ai_result = ai_map.get(idx, {})
+        # 优先通过URL匹配
+        ai_result = ai_url_map.get(item["url"], {})
         if not ai_result:
-            logger.warning(f"[AI] 索引 {idx} 无对应结果")
+            # 其次通过索引匹配
+            ai_result = ai_index_map.get(idx, {})
+
+        if not ai_result:
+            logger.warning(f"[AI] 新闻【{item['title']}】无对应处理结果")
             continue
+
+        # 从待匹配列表中移除已匹配的结果
+        if ai_result in unmatched_ai_results:
+            unmatched_ai_results.remove(ai_result)
 
         entities = normalize_entities(ai_result.get("entities", []))
         level = ai_result.get("level", "B")
@@ -1143,6 +1166,15 @@ def main():
             "timestamp": int(time.time()),
             "version": generate_version(),
         })
+
+    # 报告未匹配的AI结果
+    if unmatched_ai_results:
+        logger.warning(f"[AI] 有 {len(unmatched_ai_results)} 条AI结果未匹配到原始新闻:")
+        for result in unmatched_ai_results:
+            idx = result.get("index", "N/A")
+            url = result.get("original_url", "N/A")
+            title = result.get("title", "N/A")
+            logger.warning(f"  - 索引: {idx}, URL: {url}, 标题: {title[:50]}...")
 
     processed.sort(key=lambda x: x["score"], reverse=True)
 
