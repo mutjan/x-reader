@@ -22,18 +22,23 @@ DATA_FILE_PATH = os.path.join(ROOT_DIR, DATA_FILE)
 @app.route('/')
 def index():
     """管理首页"""
-    # 加载最新数据
-    news_data = load_json(DATA_FILE_PATH, [])
+    # 加载最新数据（按日期分组的字典）
+    news_data = load_json(DATA_FILE_PATH, {})
+
+    # 将所有新闻展平为列表
+    all_news = []
+    for date_items in news_data.values():
+        all_news.extend(date_items)
 
     # 统计信息
-    total_news = len(news_data)
+    total_news = len(all_news)
     today = datetime.now().strftime('%Y-%m-%d')
-    today_news = [item for item in news_data if item.get('published_at', '').startswith(today)]
+    today_news = [item for item in all_news if item.get('published_at', '').startswith(today)]
     today_count = len(today_news)
 
     # 按来源统计
     source_stats = {}
-    for item in news_data:
+    for item in all_news:
         for source in item.get('sourceLinks', []):
             source_name = source.get('name', '未知')
             source_stats[source_name] = source_stats.get(source_name, 0) + 1
@@ -56,22 +61,32 @@ def api_news():
     page_size = int(request.args.get('page_size', 20))
     search = request.args.get('search', '').lower()
 
-    news_data = load_json(DATA_FILE_PATH, [])
+    # 加载最新数据（按日期分组的字典）
+    news_data = load_json(DATA_FILE_PATH, {})
+
+    # 将所有新闻展平为列表并按时间倒序排列
+    all_news = []
+    for date_items in news_data.values():
+        all_news.extend(date_items)
+
+    # 按发布时间倒序排列
+    all_news.sort(key=lambda x: x.get('published_at', ''), reverse=True)
 
     # 搜索过滤
+    filtered_news = all_news
     if search:
-        news_data = [
-            item for item in news_data
+        filtered_news = [
+            item for item in all_news
             if search in item.get('title', '').lower()
             or search in item.get('summary', '').lower()
             or any(search in entity.lower() for entity in item.get('entities', []))
         ]
 
     # 分页
-    total = len(news_data)
+    total = len(filtered_news)
     start = (page - 1) * page_size
     end = start + page_size
-    paginated_data = news_data[start:end]
+    paginated_data = filtered_news[start:end]
 
     return jsonify({
         'code': 0,
@@ -139,7 +154,7 @@ def api_status():
             'data': {
                 'size': round(data_size, 2),
                 'last_update': last_update,
-                'count': len(load_json(DATA_FILE_PATH, []))
+                'count': sum(len(items) for items in load_json(DATA_FILE_PATH, {}).values())
             },
             'github': {
                 'enabled': bool(settings.GITHUB_TOKEN),
@@ -153,10 +168,11 @@ def api_config():
     """配置管理API"""
     if request.method == 'GET':
         # 返回当前配置（脱敏处理）
+        from src.config.settings import RSS_CONFIG, DEFAULT_BATCH_SIZE, MAX_CACHED_IDS
         config = {
-            'RSS_SOURCES': settings.RSS_SOURCES,
-            'BATCH_SIZE': settings.BATCH_SIZE,
-            'CACHE_SIZE': settings.CACHE_SIZE,
+            'RSS_SOURCES': list(RSS_CONFIG.values()),
+            'BATCH_SIZE': DEFAULT_BATCH_SIZE,
+            'CACHE_SIZE': MAX_CACHED_IDS,
             'GITHUB_BRANCH': settings.GITHUB_BRANCH,
             'GITHUB_TOKEN_SET': bool(settings.GITHUB_TOKEN)
         }

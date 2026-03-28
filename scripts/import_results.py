@@ -4,7 +4,7 @@
 """
 import sys
 import os
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.processors.ai_processor import ManualProcessor
 from src.fetchers.factory import FetcherFactory
@@ -42,7 +42,7 @@ def main():
     logger.info(f"预筛选后剩余 {len(filtered_items)} 条")
 
     # 2. 加载AI处理结果
-    result_file = "full_ai_result.json"
+    result_file = "_ai_result.json"
     if not os.path.exists(result_file):
         logger.error(f"结果文件 {result_file} 不存在")
         return 1

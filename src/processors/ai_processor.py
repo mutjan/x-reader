@@ -51,6 +51,7 @@ class BaseAIProcessor(ABC):
    - 军事/政治相关内容（如涉及军方、政府打压、国际冲突等），总分自动-15分，最高不超过A级
    - 不知名公司融资新闻（公司知名度低、缺乏行业影响力），总分自动-20分，最高不超过B级
    - 一般法律诉讼/败诉/赔偿新闻（常规商业纠纷、专利诉讼等），总分自动-15分，最高不超过A级。但具有重大新闻价值的戏剧性案件除外，如"马斯克起诉OpenAI"、"重大反垄断判决"等
+   - 地质、环境、考古相关的研究内容，总分自动-15分，最高不超过B级
 
 2. **生成量子位风格中文标题**：
    - 纯中文，15-35字
@@ -91,6 +92,7 @@ class BaseAIProcessor(ABC):
 返回格式必须是严格的JSON数组，每个元素包含：
 {
   "index": 0,
+  "original_url": "原始新闻URL，与输入完全一致",
   "chinese_title": "中文标题",
   "summary": "一句话摘要",
   "grade": "S/A+/A/B/C",
@@ -147,13 +149,28 @@ class BaseAIProcessor(ABC):
             json_text = response_text[json_start:json_end]
             results = json.loads(json_text)
 
+            # Build URL → item lookup for fast exact matching
+            url_to_item = {item.url: item for item in original_items if item.url}
+
             processed_items = []
             for result in results:
-                index = result.get("index", -1)
-                if index < 0 or index >= len(original_items):
+                original_item = None
+                original_url = result.get("original_url", "")
+
+                # Primary: URL exact match
+                if original_url and original_url in url_to_item:
+                    original_item = url_to_item[original_url]
+                else:
+                    # Fallback: index match
+                    index = result.get("index", -1)
+                    if 0 <= index < len(original_items):
+                        original_item = original_items[index]
+                        if original_url:
+                            logger.warning(f"URL匹配失败，使用索引匹配: index={index}, expected_url={original_url}")
+
+                if original_item is None:
                     continue
 
-                original_item = original_items[index]
                 grade = result.get("grade", "C")
 
                 # 过滤C级新闻

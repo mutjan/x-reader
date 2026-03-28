@@ -105,8 +105,8 @@ class ProcessedNewsItem:
             "entities": self.entities,
             "sourceLinks": [{"name": self.source or "Source", "url": self.url}],
             "sources": 1,
-            "timestamp": int(self.published_at.timestamp()),
-            "published_at": self.published_at.isoformat(),
+            "timestamp": int(self.processed_at.timestamp()),
+            "published_at": self.processed_at.isoformat(),
             "source": self.source,
             "url": self.url
         }
