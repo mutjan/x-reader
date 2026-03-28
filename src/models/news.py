@@ -78,19 +78,18 @@ class ProcessedNewsItem:
     def to_frontend_dict(self) -> Dict[str, Any]:
         """转换为前端期望的字典格式"""
         type_map = {
-            "ai": "AI大模型",
-            "hot": "热点事件",
-            "business": "商业动态",
-            "research": "学术研究",
             "product": "产品发布",
-            "opensource": "开源项目",
-            "people": "人物动态",
-            "funding": "融资事件",
-            "policy": "政策法规",
-            "hardware": "硬件创新",
-            "space": "航天科技",
-            "tech": "科技其他",
-            "other": "其他"
+            "funding": "融资上市",
+            "personnel": "人事变动",
+            "opinion": "观点访谈",
+            "industry": "行业动态",
+            "safety": "安全伦理",
+            "research": "研究成果",
+            "financial": "商业数据",
+            "breaking": "突发事件",
+            "tool": "工具技巧",
+            "society": "社会影响",
+            "hardware": "硬件基建"
         }
 
         return {
