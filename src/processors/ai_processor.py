@@ -12,7 +12,7 @@ import tempfile
 from datetime import datetime
 
 from src.models.news import RawNewsItem, ProcessedNewsItem, EntityNormalizer
-from src.utils.common import setup_logger, truncate_text, save_json, load_json
+from src.utils.common import setup_logger, truncate_text, save_json, load_json, sanitize_content
 from src.config.settings import DEFAULT_BATCH_SIZE, TEMP_DIR
 
 logger = setup_logger("ai_processor")
@@ -170,12 +170,12 @@ class BaseAIProcessor(ABC):
                     source=original_item.source,
                     url=original_item.url,
                     published_at=original_item.published_at,
-                    chinese_title=result.get("chinese_title", ""),
-                    summary=result.get("summary", ""),
+                    chinese_title=sanitize_content(result.get("chinese_title", "")),
+                    summary=sanitize_content(result.get("summary", "")),
                     grade=grade,
                     score=result.get("score", 0),
                     news_type=result.get("type", ""),
-                    extension=result.get("extension", ""),
+                    extension=sanitize_content(result.get("extension", "")),
                     entities=entities,
                     raw_item=original_item
                 )

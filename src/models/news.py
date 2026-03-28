@@ -75,6 +75,43 @@ class ProcessedNewsItem:
             "processed_at": self.processed_at.isoformat()
         }
 
+    def to_frontend_dict(self) -> Dict[str, Any]:
+        """转换为前端期望的字典格式"""
+        type_map = {
+            "ai": "AI大模型",
+            "hot": "热点事件",
+            "business": "商业动态",
+            "research": "学术研究",
+            "product": "产品发布",
+            "opensource": "开源项目",
+            "people": "人物动态",
+            "funding": "融资事件",
+            "policy": "政策法规",
+            "hardware": "硬件创新",
+            "space": "航天科技",
+            "tech": "科技其他",
+            "other": "其他"
+        }
+
+        return {
+            "id": self.id,
+            "title": self.chinese_title,
+            "original_title": self.original_title,
+            "summary": self.summary,
+            "rating": self.grade or "C",
+            "score": self.score,
+            "type": self.news_type,
+            "typeName": type_map.get(self.news_type, self.news_type),
+            "expansion": self.extension,
+            "entities": self.entities,
+            "sourceLinks": [{"name": self.source or "Source", "url": self.url}],
+            "sources": 1,
+            "timestamp": int(self.published_at.timestamp()),
+            "published_at": self.published_at.isoformat(),
+            "source": self.source,
+            "url": self.url
+        }
+
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> 'ProcessedNewsItem':
         """从字典加载"""

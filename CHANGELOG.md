@@ -5,21 +5,42 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [4.0.0] - 2026-03-28
 
 ### Added
-- **前端排序功能增强**
-  - 按评级排序时，相同评级内部自动按时间倒序排列（最新内容优先）
-  - 表格支持按类型排序
-  - 点击实体标签可快速按该实体筛选排序
+- **全新模块化架构**
+  - 采用工厂模式设计，所有功能解耦为独立模块
+  - 新增 `src/` 目录，所有业务代码模块化
+  - 支持多种数据源扩展（Fetcher 层）
+  - 支持多种处理器扩展（Processor 层）
+  - 支持多种发布目标扩展（Publisher 层）
+- **管理后台入口** (`admin.py`)
+  - 提供系统管理功能入口
+  - 支持数据统计、配置管理等
+- **断点续处理工具** (`continue_process.py`)
+  - 支持中断后恢复处理流程
+  - 自动保存处理进度
+- **模块化预告事件系统**
+  - 整合到主处理流程中
+  - 自动事件匹配和状态更新
 
 ### Changed
-- **新闻分类系统扩展为12种类型**
-  - 新增：AI、热点、商业、科研、产品、开源、人物、资本、政策、硬件、航天、其他
-  - 优化分类逻辑，提高选题归类准确性
+- **主程序重构** (`main.py`)
+  - 替代所有旧版主脚本（update_news*.py、run_twitter_news.py等）
+  - 支持 `--source` 参数选择数据源（twitter/inoreader/all）
+  - 支持手动/自动两种处理模式
+  - 统一的工作流程和错误处理
+- **项目结构大精简**
+  - 删除11个冗余旧脚本文件
+  - 根目录仅保留核心入口和配置文件
+  - 所有业务逻辑迁移到 `/src` 目录
+- **依赖简化**
+  - 精简 `requirements.txt`，仅保留必要依赖
 
 ### Fixed
-- 修复实体标签中的通用词汇（AI、LLM、X platform等）被错误识别的问题
+- 修复多数据源协同处理问题
+- 优化去重算法，减少误判
+- 统一数据格式和处理流程
 
 ## [2.0.0] - 2026-03-19
 

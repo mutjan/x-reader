@@ -16,7 +16,8 @@ from src.processors.filter import NewsFilter
 from src.processors.duplicate import DuplicateRemover
 from src.processors.ai_processor import ManualProcessor
 from src.publishers.factory import PublisherFactory
-from src.utils.common import setup_logger
+from src.utils.common import setup_logger, save_json
+import json
 from src.config.settings import DEFAULT_BATCH_SIZE
 
 logger = setup_logger("main")
@@ -133,7 +134,19 @@ def main():
         duplicate_remover.add_processed_id(item.id)
     duplicate_remover.save_processed_ids()
 
-    # 10. 发布
+    # 10. 最终格式校验
+    logger.info("开始JSON格式校验...")
+    try:
+        # 校验所有新闻项是否可以正常序列化
+        for item in processed_items:
+            item_dict = item.to_dict()
+            json.dumps(item_dict, ensure_ascii=False)
+        logger.info("✓ JSON格式校验通过")
+    except json.JSONDecodeError as e:
+        logger.error(f"✗ JSON格式校验失败: {e}")
+        return 1
+
+    # 11. 发布
     if not args.no_publish and publisher:
         logger.info("开始发布到GitHub Pages...")
         if publisher.publish(processed_items):

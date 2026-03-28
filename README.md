@@ -1,21 +1,23 @@
-# Twitter RSS 新闻选题工具
+# 科技新闻选题聚合系统 x-reader
 
 🌐 **在线部署页面**: [https://mutjan.github.io/x-reader](https://mutjan.github.io/x-reader)
 
-从 Twitter RSS 源自动获取科技新闻，通过 AI 筛选和加工，生成适合科技媒体发布的选题。
+多源科技新闻聚合与AI选题系统，从Twitter、Inoreader等数据源自动获取内容，通过智能筛选和加工，生成适合科技媒体发布的高质量选题。
 
 ## 功能特性
 
-- **RSS 自动获取**: 从 Twitter List RSS 源获取最新内容
+- **多源数据聚合**: 支持 Twitter、Inoreader 等多数据源，可扩展更多来源
+- **模块化架构**: 采�工厂模式设计，数据源、处理器、发布器完全解耦
 - **关键词预筛选**: 基于关键词匹配确保重要新闻不被遗漏
 - **预告事件追踪**: 维护已预告事件列表，主动搜索匹配新消息
 - **AI 智能处理**: 支持两种模式
+  - **手动模式**: 生成提示词供 Claude Desktop 等本地模型处理（默认）
   - **自动 API 模式**: 配置 API Key 后全自动处理
-  - **本地模型模式**: 生成提示词供 Claude Desktop 等本地模型处理
 - **智能去重**: 基于标题相似度和核心实体识别合并重复新闻
 - **分级管理**: S/A+/A/B 四级选题分类
 - **分类系统**: 12种新闻类型（AI、热点、商业、科研、产品、开源、人物、资本、政策、硬件、航天、其他）
 - **GitHub 同步**: 自动推送到 GitHub Pages
+- **断点续处理**: 支持中断后恢复处理流程，避免重复工作
 - **前端交互**: 支持按评分、评级、类型、时间排序，点击实体标签快速筛选
 
 ## 快速开始
@@ -30,46 +32,46 @@ python3 --version
 pip3 install requests
 ```
 
-### 2. 配置 API Key（推荐）
+### 2. 配置 API Key（可选，自动模式需要）
 
-```bash
-# 运行配置向导
-python3 setup_config.py
-```
-
-或者手动设置环境变量：
+手动设置环境变量：
 
 ```bash
 export MOONSHOT_API_KEY="sk-..."
 ```
 
-### 3. 添加预告事件（可选）
-
-追踪即将发生的重要事件：
+### 3. 运行主程序
 
 ```bash
-# 添加预告事件
-python3 upcoming_events.py add \
-  --title "No Priors 预告：Karpathy 将做客下期节目" \
-  --keywords "No Priors,Karpathy,podcast" \
-  --source "No Priors 播客" \
-  --priority A+
+# 默认模式：获取所有数据源，手动处理
+python3 main.py
 
-# 查看待处理事件
-python3 upcoming_events.py list
+# 指定数据源
+python3 main.py --source twitter  # 仅获取Twitter
+python3 main.py --source inoreader  # 仅获取Inoreader
+python3 main.py --source all  # 获取所有数据源（默认）
+
+# 运行后按照提示操作：
+# 1. 脚本会自动获取并筛选新闻
+# 2. 生成AI处理提示词
+# 3. 将提示词发送给Claude处理，将结果保存为_ai_result.json
+# 4. 再次运行脚本自动完成后续流程
 ```
 
-### 4. 运行脚本
+### 4. 断点续处理（如果处理中断）
 
 ```bash
-# 全自动模式（已配置 API Key）
-python3 update_news.py
+# 从中断处继续处理，无需重新获取数据
+python3 continue_process.py
+```
 
-# 半自动模式（无 API Key）
-python3 update_news.py
-# 按提示将 twitter_ai_prompt.txt 发送给 Claude Desktop 处理
-# 将结果保存为 twitter_ai_result.json
-# 再次运行脚本
+### 5. 添加预告事件（可选）
+
+追踪即将发生的重要事件，使用管理后台：
+
+```bash
+# 查看管理后台帮助
+python3 admin.py --help
 ```
 
 ## 工作流程
@@ -142,16 +144,36 @@ python3 update_news.py
 - 航天/芯片领域常规进展
 - 行业数据报告
 
-## 文件说明
+## 项目结构
+
+```
+x-reader/
+├── main.py                 # 主程序入口
+├── admin.py                # 管理后台入口
+├── continue_process.py     # 断点续处理工具
+├── auth_inoreader.py       # Inoreader授权工具
+├── requirements.txt        # 依赖配置
+├── index.html              # GitHub Pages前端
+├── news_data.json          # 主数据文件
+├── upcoming_events.json    # 预告事件数据
+├── src/                    # 模块化业务代码
+│   ├── fetchers/           # 数据源层（Twitter、Inoreader等）
+│   ├── processors/         # 处理层（筛选、去重、AI处理等）
+│   └── publishers/         # 发布层（GitHub Pages等）
+└── .processed_ids.json     # 处理记录缓存
+```
+
+### 核心文件说明
 
 | 文件 | 说明 |
 |------|------|
-| `update_twitter_news.py` | 主脚本 |
-| `setup_config.py` | 配置向导 |
-| `twitter_ai_prompt.txt` | AI 处理提示词（自动生成） |
-| `twitter_ai_result.json` | AI 处理结果（自动生成） |
-| `news_data.json` | 新闻数据存储 |
-| `.version_counter` | 版本计数器 |
+| `main.py` | 新的模块化主程序入口，替代所有旧版脚本 |
+| `admin.py` | 系统管理后台，提供数据统计、事件管理等功能 |
+| `continue_process.py` | 断点续处理工具，中断后恢复处理流程 |
+| `auth_inoreader.py` | Inoreader账号授权工具，首次使用需要运行 |
+| `_ai_result.json` | AI处理结果文件（手动模式下需要用户创建） |
+| `news_data.json` | 新闻数据主存储文件 |
+| `upcoming_events.json` | 预告事件数据存储 |
 
 ## 配置选项
 
@@ -268,6 +290,16 @@ python3 upcoming_events.py cleanup
 
 ## 更新日志
 
+### v4.0 (2026-03-28) - 重大架构重构
+- ✨ 全新模块化架构，采用工厂模式设计
+- ✨ 所有业务逻辑迁移到 `/src` 目录，完全解耦
+- ✨ 新增 `main.py` 统一主入口，替代所有旧版脚本
+- ✨ 新增 `admin.py` 管理后台入口
+- ✨ 新增 `continue_process.py` 断点续处理工具
+- 🔧 删除11个冗余旧文件，项目结构大幅精简
+- 🔧 优化多数据源协同处理流程
+- 🔧 改进去重算法，减少误判
+
 ### v3.1 (2026-03-27)
 - ✨ 前端排序增强：评级排序时相同评级按时间倒序
 - ✨ 支持按类型排序和实体标签点击筛选
@@ -281,9 +313,7 @@ python3 upcoming_events.py cleanup
 
 ### v2.0 (2026-03-11)
 - ✨ 新增自动 API 调用模式
-- ✨ 新增配置向导脚本
 - ✨ 扩展关键词库（新增具身智能、RLHF、MoE 等）
-- 🔧 修复 Python 版本检测
 - 🔧 优化错误处理和日志
 
 ### v1.0

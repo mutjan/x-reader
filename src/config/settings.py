@@ -1,10 +1,35 @@
 #!/usr/bin/env python3
 """
 配置管理模块
-集中管理所有配置项，支持环境变量覆盖
+集中管理所有配置项，支持环境变量覆盖和校验
 """
 import os
 from typing import Dict, List, Any
+from pydantic import BaseModel, Field, validator
+from pydantic_settings import BaseSettings
+
+class AppSettings(BaseSettings):
+    """应用配置校验模型"""
+    # GitHub配置
+    GITHUB_TOKEN: str = Field(default="", description="GitHub访问令牌")
+    GITHUB_BRANCH: str = Field(default="main", description="GitHub发布分支")
+
+    # 基础配置
+    MAX_CACHED_IDS: int = Field(default=5000, ge=1000, description="最大缓存处理ID数量")
+    DEFAULT_BATCH_SIZE: int = Field(default=30, ge=1, le=100, description="AI处理批量大小")
+
+    # RSS配置校验
+    @validator('RSS_CONFIG', check_fields=False)
+    def validate_rss_config(cls, v):
+        required_fields = ['type', 'name']
+        for source, config in v.items():
+            for field in required_fields:
+                if field not in config:
+                    raise ValueError(f"RSS源{source}缺少必填字段{field}")
+        return v
+
+# 初始化配置并校验
+settings = AppSettings()
 
 # ==================== 基础配置 ====================
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

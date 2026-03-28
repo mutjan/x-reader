@@ -1,3 +1,14 @@
 # x-reader 项目依赖
+# 基础网络请求
 requests>=2.31.0
+# 日期处理
 python-dateutil>=2.8.2
+# 错误重试
+tenacity>=8.2.3
+# Web管理界面
+flask>=3.0.0
+# 配置验证
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+# HTML内容解析
+beautifulsoup4>=4.12.0

@@ -7,11 +7,11 @@ from typing import List, Dict, Any
 import json
 import os
 import subprocess
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from src.publishers.base import BasePublisher
 from src.models.news import ProcessedNewsItem
-from src.config.settings import DATA_FILE, GITHUB_BRANCH
+from src.config.settings import DATA_FILE, GITHUB_BRANCH, settings
 from src.utils.common import save_json, load_json
 
 class GitHubPagesPublisher(BasePublisher):
@@ -66,8 +66,22 @@ class GitHubPagesPublisher(BasePublisher):
         :return: (更新数量, 新增数量)
         """
         # 加载现有数据
-        existing_data = load_json(self.data_file, [])
-        existing_dict = {item["id"]: item for item in existing_data}
+        existing_data = load_json(self.data_file, {})
+
+        # 兼容旧的列表格式数据
+        if isinstance(existing_data, list):
+            self.logger.info("检测到旧版列表格式数据，正在转换为按日期分组格式")
+            existing_dict = {}
+            for item in existing_data:
+                item_id = item["id"]
+                existing_dict[item_id] = item
+        else:
+            # 现有数据已经是按日期分组的格式，先展开成id映射
+            existing_dict = {}
+            for date in existing_data:
+                for item in existing_data[date]:
+                    item_id = item["id"]
+                    existing_dict[item_id] = item
 
         updated_count = 0
         new_count = 0
@@ -86,11 +100,55 @@ class GitHubPagesPublisher(BasePublisher):
                 existing_dict[item_id] = item_dict
                 new_count += 1
 
-        # 转换回列表并按发布时间降序排序
-        merged_list = sorted(existing_dict.values(), key=lambda x: x["published_at"], reverse=True)
+        # 清理超过30天的过期数据
+        thirty_days_ago = datetime.now() - timedelta(days=30)
+        filtered_dict = {}
+        deleted_count = 0
+        for item in existing_dict.values():
+            try:
+                # 解析发布时间，支持多种格式
+                if isinstance(item["published_at"], str):
+                    pub_time = datetime.fromisoformat(item["published_at"].replace('Z', '+00:00'))
+                else:
+                    pub_time = datetime.fromtimestamp(item["published_at"])
+                if pub_time >= thirty_days_ago:
+                    filtered_dict[item["id"]] = item
+                else:
+                    deleted_count += 1
+            except Exception as e:
+                # 时间解析失败的话保留数据
+                filtered_dict[item["id"]] = item
+                self.logger.warning(f"新闻时间解析失败，保留该条目: {e}")
 
-        # 保存合并后的数据
-        save_json(merged_list, self.data_file)
+        if deleted_count > 0:
+            self.logger.info(f"清理过期新闻: 删除了{deleted_count}条超过30天的旧新闻")
+
+        # 按日期分组
+        news_by_date = {}
+        for item in filtered_dict.values():
+            try:
+                # 转换为前端格式 - 直接使用模型层的标准方法
+                news_item = ProcessedNewsItem.from_dict(item)
+                front_item = news_item.to_frontend_dict()
+
+                # 提取日期key
+                date_key = item["published_at"].split('T')[0] if isinstance(item["published_at"], str) else \
+                           datetime.fromtimestamp(item["published_at"]).strftime('%Y-%m-%d')
+
+                if date_key not in news_by_date:
+                    news_by_date[date_key] = []
+                news_by_date[date_key].append(front_item)
+
+            except Exception as e:
+                self.logger.warning(f"新闻处理失败，跳过该条目: {e}")
+                continue
+
+        # 每个日期内的新闻按发布时间降序排序
+        for date in news_by_date:
+            news_by_date[date].sort(key=lambda x: x["timestamp"], reverse=True)
+
+        # 保存合并后的数据（按日期分组格式）
+        save_json(news_by_date, self.data_file)
 
         return updated_count, new_count
 
@@ -140,9 +198,38 @@ class GitHubPagesPublisher(BasePublisher):
                 check=True
             )
 
-            # 推送
+            # 推送：如果配置了GITHUB_TOKEN，则使用token进行推送
+            push_cmd = ["git", "push"]
+            if settings.GITHUB_TOKEN:
+                # 获取当前remote URL
+                remote_result = subprocess.run(
+                    ["git", "remote", "get-url", "origin"],
+                    cwd=self.repo_dir,
+                    capture_output=True,
+                    text=True
+                )
+                if remote_result.returncode == 0:
+                    remote_url = remote_result.stdout.strip()
+                    # 转换为带token的https URL
+                    if remote_url.startswith("https://"):
+                        # 已有的https URL，注入token
+                        if "@" in remote_url:
+                            # 已经有token的情况，替换
+                            remote_url = f"https://{settings.GITHUB_TOKEN}@" + remote_url.split("@", 1)[1]
+                        else:
+                            remote_url = f"https://{settings.GITHUB_TOKEN}@" + remote_url[8:]
+                    elif remote_url.startswith("git@"):
+                        # ssh URL转换为https URL
+                        repo_path = remote_url.split(":", 1)[1].replace(".git", "")
+                        remote_url = f"https://{settings.GITHUB_TOKEN}@github.com/{repo_path}.git"
+                    push_cmd = ["git", "push", remote_url, GITHUB_BRANCH]
+                else:
+                    push_cmd = ["git", "push", "origin", GITHUB_BRANCH]
+            else:
+                push_cmd = ["git", "push", "origin", GITHUB_BRANCH]
+
             push_result = subprocess.run(
-                ["git", "push", "origin", GITHUB_BRANCH],
+                push_cmd,
                 cwd=self.repo_dir,
                 capture_output=True,
                 text=True
