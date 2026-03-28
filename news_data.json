@@ -1,6 +1,249 @@
 {
   "2026-03-28": [
     {
+      "id": "7b79c501ab12341d2c771039a4365fff",
+      "title": "开发者用纯C和CUDA实现多模态训练代码库 性能达45% MFU",
+      "original_title": "I just achieved the holy grail as a weekend project! Wrote a multimodal training codebase in pure C and CUDA+NCCL with minimal dependencies (no torch!...",
+      "summary": "开发者在周末项目中完成了无PyTorch依赖的纯C和CUDA+NCCL多模态训练代码库，在四台8xH100节点上通过FSDP实现45%的MFU效率，未来可能开源。",
+      "rating": "A",
+      "score": 82,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该开源项目可能推动大模型训练框架的轻量化发展，降低AI训练门槛，吸引更多开发者参与底层训练优化。",
+      "entities": [
+        "CUDA",
+        "Fsdp",
+        "H100",
+        "Pytorch"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/giffmana/status/2037836744645583323"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774695778,
+      "published_at": "2026-03-28T19:02:58.215746",
+      "source": "Twitter",
+      "url": "https://x.com/giffmana/status/2037836744645583323"
+    },
+    {
+      "id": "c2ce7feab3dd1617025304d32bbd4d82",
+      "title": "谷歌工程师泄露内部12步AI工作流 无需PM审批效率提升3倍",
+      "original_title": "🚨BREAKING: A senior Google engineer just leaked the internal prompting system their team uses to ship features 3x faster. No PM approval. No design...",
+      "summary": "谷歌高级工程师匿名泄露团队自2025年第三季度使用的12步AI工作流，无需产品经理审批和设计冲刺，可将功能交付速度提升3倍。",
+      "rating": "A+",
+      "score": 86,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "这套工作流可能被众多科技公司借鉴，推动AI辅助开发流程的普及，改变传统产品迭代模式。",
+      "entities": [
+        "Ai工作流",
+        "谷歌"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/thisguyknowsai/status/2037832059587371499"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774695778,
+      "published_at": "2026-03-28T19:02:58.215760",
+      "source": "Twitter",
+      "url": "https://x.com/thisguyknowsai/status/2037832059587371499"
+    },
+    {
+      "id": "b5abdd23f1640e178beec118c8bfe382",
+      "title": "实体AI数据层公司Datra开启25万美元天使轮融资 已获多个付费试点",
+      "original_title": "We’re opening up a $250K angel round for @Datra_ai. In the last few weeks: 3 paid pilots ($3k-$5k each) Pipeline with Scale AI, Figure AI, Physical I...",
+      "summary": "专注实体AI数据层的初创公司Datra开启25万美元天使轮融资，目前已获得3个付费试点项目，与Scale AI、Figure AI等机器人实验室建立合作管道。",
+      "rating": "B",
+      "score": 68,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "若融资成功，该公司可能加速实体AI数据采集基础设施建设，推动具身智能行业的数据标准化进程。",
+      "entities": [
+        "Datra",
+        "Figure Ai",
+        "Scale Ai",
+        "具身智能"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/Pushkar11420566/status/2037804591778009292"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774695778,
+      "published_at": "2026-03-28T19:02:58.215775",
+      "source": "Twitter",
+      "url": "https://x.com/Pushkar11420566/status/2037804591778009292"
+    },
+    {
+      "id": "e3e59ebf36f7262eeb3a6f59a8b9a470",
+      "title": "微软展台在RSAC安全大会上出现经典蓝屏死机故障引调侃",
+      "original_title": "To BSOD or not to BSOD? Only Microsoft knows the answer",
+      "summary": "在RSAC美国安全大会上，微软展台的设备出现经典的蓝屏死机故障，成为参会安全专家的调侃对象，凸显操作系统稳定性问题。",
+      "rating": "B",
+      "score": 70,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "该事件可能引发公众对微软产品稳定性的讨论，推动微软加强产品质量管控，尤其是企业级产品的可靠性测试。",
+      "entities": [
+        "Rsac",
+        "微软",
+        "操作系统"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Register",
+          "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/28/rsac_bork/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774695778,
+      "published_at": "2026-03-28T19:02:58.215784",
+      "source": "The Register",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/28/rsac_bork/"
+    },
+    {
+      "id": "8437e2768415e9a46f1972eae766eac7",
+      "title": "消费者沃尔玛80美元捡漏RTX 5060 Ti 市场价超420美元",
+      "original_title": "Lucky PC builder scores brand new RTX 5060 Ti worth $420 for just $80 at Walmart — clearance sale find saves buyer hundreds upgrading from a GTX 1060",
+      "summary": "一位PC组装爱好者在沃尔玛清仓活动中仅花费80美元购得市场价超过420美元的全新微星RTX 5060 Ti显卡，成功从GTX 1060升级节省数百美元。",
+      "rating": "B",
+      "score": 66,
+      "type": "hardware",
+      "typeName": "硬件基建",
+      "expansion": "此类折扣事件可能引发消费者对线下零售清仓渠道的关注，推动二手和清仓硬件市场的活跃度。",
+      "entities": [
+        "Rtx 5060 Ti",
+        "Walmart",
+        "英伟达"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/pc-components/gpus/lucky-pc-builder-scores-brand-new-rtx-5060-ti-worth-usd420-for-just-usd80-at-walmart-clearance-sale-find-saves-buyer-hundreds-upgrading-from-a-gtx-1060"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774695778,
+      "published_at": "2026-03-28T19:02:58.215795",
+      "source": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/pc-components/gpus/lucky-pc-builder-scores-brand-new-rtx-5060-ti-worth-usd420-for-just-usd80-at-walmart-clearance-sale-find-saves-buyer-hundreds-upgrading-from-a-gtx-1060"
+    },
+    {
+      "id": "4c1415caac69ba4637afb7a601706431",
+      "title": "硅谷论坛热议政府主导产业政策 人工智能公众好感度下降",
+      "original_title": "A look at some themes at this year's Hill and Valley Forum: embracing government-led industrial policy to onshore manufacturing, AI's unpopularity, and more (Newcomer)",
+      "summary": "今年Hill and Valley论坛透露出两个重要趋势：科技行业开始拥抱政府主导的制造业回流产业政策，同时人工智能技术的公众好感度呈现下降态势。",
+      "rating": "A",
+      "score": 78,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "政府产业政策的转向可能重塑全球科技制造业格局，而AI公众好感度下降可能推动监管政策收紧和行业伦理规范完善。",
+      "entities": [
+        "产业政策",
+        "人工智能"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260328/p5#a260328p5"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774695778,
+      "published_at": "2026-03-28T19:02:58.215805",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260328/p5#a260328p5"
+    },
+    {
+      "id": "74ead05f67e8c34663441d734010b6a6",
+      "title": "微软接手OpenAI退出的得州AI数据中心扩建项目",
+      "original_title": "Microsoft takes over a Texas AI data center expansion after OpenAI backs away",
+      "summary": "在OpenAI放弃推进得州AI数据中心建设项目后，微软宣布接手该项目，这将使两家公司在美国最大的AI算力集群之一成为邻居。",
+      "rating": "A+",
+      "score": 87,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "该举措显示微软在AI基础设施领域的扩张策略，可能进一步巩固其在AI算力市场的主导地位，影响美国AI产业地理布局。",
+      "entities": [
+        "Ai算力",
+        "OpenAI",
+        "微软",
+        "数据中心"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Tech Xplore - electronic gadgets, technology advances and research news",
+          "url": "https://techxplore.com/news/2026-03-microsoft-texas-ai-center-expansion.html"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774695778,
+      "published_at": "2026-03-28T19:02:58.215817",
+      "source": "Tech Xplore - electronic gadgets, technology advances and research news",
+      "url": "https://techxplore.com/news/2026-03-microsoft-texas-ai-center-expansion.html"
+    },
+    {
+      "id": "0bf63190777cb10bdb7c661d506dc658",
+      "title": "Mac OS X发布25周年 成功跨越三次硬件架构迁移",
+      "original_title": "Apple’s Mac OS X turns 25, has prospered across three hardware architecture changes — from PowerPC, through Intel x86, to Apple Silicon",
+      "summary": "苹果Mac OS X操作系统迎来发布25周年纪念，在25年间成功完成从PowerPC到Intel x86再到Apple Silicon的三次重大硬件架构迁移。",
+      "rating": "A",
+      "score": 76,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "苹果的架构迁移经验为科技行业提供了重要参考，证明长期软件生态规划对硬件迭代的关键支撑作用。",
+      "entities": [
+        "Apple Silicon",
+        "Mac Os X",
+        "苹果"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Tom's Hardware (apple)",
+          "url": "https://www.tomshardware.com/software/operating-systems/apples-mac-os-x-turns-25-has-prospered-across-three-hardware-architecture-changes-from-powerpc-through-intel-x86-to-apple-silicon"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774695778,
+      "published_at": "2026-03-28T19:02:58.215829",
+      "source": "Tom's Hardware (apple)",
+      "url": "https://www.tomshardware.com/software/operating-systems/apples-mac-os-x-turns-25-has-prospered-across-three-hardware-architecture-changes-from-powerpc-through-intel-x86-to-apple-silicon"
+    },
+    {
+      "id": "75c31b560ffb976bdde8f93f14a9e020",
+      "title": "学术出版界暴AI滥用问题 数百篇同行评审论文涉嫌违规使用AI",
+      "original_title": "Weekend reads: ‘Illicit AI use’ in hundreds of peer reviews; 49-year-old commentary on talc retracted; co-authorship as a ‘traded commodity’",
+      "summary": "学术出版领域曝出多起AI滥用事件，包括数百篇同行评审论文存在违规使用AI的情况，同时还有多篇论文因学术不端被撤稿，共同作者身份被指沦为可交易商品。",
+      "rating": "A",
+      "score": 79,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "该事件可能推动学术出版行业建立更严格的AI使用规范和检测机制，重塑学术评价体系和同行评审流程。",
+      "entities": [
+        "人工智能",
+        "学术不端"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Retraction Watch",
+          "url": "https://retractionwatch.com/2026/03/28/weekend-reads-illicit-ai-use-peer-reviews-commentary-talc-retracted-coauthorship-traded-commodity/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774695778,
+      "published_at": "2026-03-28T19:02:58.215838",
+      "source": "Retraction Watch",
+      "url": "https://retractionwatch.com/2026/03/28/weekend-reads-illicit-ai-use-peer-reviews-commentary-talc-retracted-coauthorship-traded-commodity/"
+    },
+    {
       "id": "e0f281ef68dfed4683906a35f953d576",
       "title": "OpenAI初创团队成员以熊猫为主题 源于创始人妹妹的毛绒玩具爱好",
       "original_title": "Dario Amodei’s sister loved stuffed animals so much that her fiancé proposed via a movie of her dolls coming to life Dario wore a panda suit to thei...",
