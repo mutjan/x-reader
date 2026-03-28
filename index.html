@@ -1374,7 +1374,7 @@
                 'society': '社会影响',
                 'hardware': '硬件基建'
             };
-            const displayName = typeName || typeMap[type] || type || '其他';
+            const displayName = typeMap[type] || type || '其他';
             const typeClass = type ? `type-${type}` : 'type-product';
             return `<span class="type-tag ${typeClass}">${displayName}</span>`;
         }
@@ -1503,7 +1503,7 @@
             const typeGroups = {};
             newsList.forEach(item => {
                 const type = item.type || 'other';
-                const typeName = item.typeName || getTypeDisplayName(type);
+                const typeName = getTypeDisplayName(type);
                 if (!typeGroups[type]) {
                     typeGroups[type] = {
                         type: type,
