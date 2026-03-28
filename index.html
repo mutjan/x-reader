@@ -1372,11 +1372,7 @@
                 'breaking': '突发事件',
                 'tool': '工具技巧',
                 'society': '社会影响',
-                'hardware': '硬件基建',
-                'ai': 'AI',
-                'tech': '科技',
-                'business': '商业',
-                'hot': '热点'
+                'hardware': '硬件基建'
             };
             const displayName = typeName || typeMap[type] || type || '其他';
             const typeClass = type ? `type-${type}` : 'type-product';
@@ -1519,7 +1515,7 @@
             });
 
             // 按类型优先级排序
-            const typePriority = ['ai', 'hot', 'business', 'research', 'product', 'opensource', 'people', 'capital', 'policy', 'hardware', 'space', 'tech', 'other'];
+            const typePriority = ['research', 'breaking', 'product', 'funding', 'personnel', 'industry', 'financial', 'hardware', 'safety', 'tool', 'opinion', 'society', 'other'];
             const sortedTypes = Object.values(typeGroups).sort((a, b) => {
                 const priorityA = typePriority.indexOf(a.type);
                 const priorityB = typePriority.indexOf(b.type);
@@ -1535,29 +1531,19 @@
 
             // 类型颜色映射
             const typeColors = {
-                'ai': '#8b5cf6',
-                'hot': '#f4212e',
-                'business': '#3b82f6',
-                'research': '#06b6d4',
-                'product': '#10b981',
-                'opensource': '#f59e0b',
-                'people': '#ec4899',
-                'capital': '#84cc16',
-                'policy': '#6366f1',
-                'hardware': '#64748b',
-                'space': '#14b8a6',
-                'tech': '#8b5cf6',
-                'other': '#6b7280',
-                // 补充其他类型
-                'breaking': '#f97316',
-                'funding': '#f59e0b',
-                'personnel': '#8b5cf6',
-                'opinion': '#ec4899',
-                'industry': '#3b82f6',
-                'safety': '#ef4444',
-                'financial': '#84cc16',
-                'tool': '#6366f1',
-                'society': '#14b8a6'
+                'research': '#06b6d4',   // 研究成果 - 青色
+                'breaking': '#f97316',   // 突发事件 - 橙色
+                'product': '#10b981',    // 产品发布 - 绿色
+                'funding': '#f59e0b',    // 融资上市 - 琥珀色
+                'personnel': '#8b5cf6',  // 人事变动 - 紫色
+                'industry': '#3b82f6',   // 行业动态 - 蓝色
+                'financial': '#84cc16',  // 商业数据 - 石灰绿
+                'hardware': '#64748b',   // 硬件基建 - 石板灰
+                'safety': '#ef4444',     // 安全伦理 - 红色
+                'tool': '#6366f1',       // 工具技巧 - 靛蓝色
+                'opinion': '#ec4899',    // 观点访谈 - 粉色
+                'society': '#14b8a6',    // 社会影响 - 蓝绿色
+                'other': '#6b7280'       // 其他 - 灰色
             };
 
             grid.innerHTML = sortedTypes.map(group => {
@@ -1593,18 +1579,18 @@
 
         function getTypeDisplayName(type) {
             const typeMap = {
-                'ai': 'AI',
-                'hot': '热点',
-                'business': '商业',
-                'research': '科研',
-                'product': '产品',
-                'opensource': '开源',
-                'people': '人物',
-                'capital': '资本',
-                'policy': '政策',
-                'hardware': '硬件',
-                'space': '航天',
-                'tech': '科技',
+                'product': '产品发布',
+                'funding': '融资上市',
+                'personnel': '人事变动',
+                'opinion': '观点访谈',
+                'industry': '行业动态',
+                'safety': '安全伦理',
+                'research': '研究成果',
+                'financial': '商业数据',
+                'breaking': '突发事件',
+                'tool': '工具技巧',
+                'society': '社会影响',
+                'hardware': '硬件基建',
                 'other': '其他'
             };
             return typeMap[type] || type;
