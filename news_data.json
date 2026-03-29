@@ -6915,6 +6915,378 @@
   ],
   "2026-03-30": [
     {
+      "id": "0feb17c657ed2a9c7d755f0cec9b098b",
+      "title": "X平台Grok实现多语言帖子自动翻译和推荐功能",
+      "original_title": "Grok automatically translating and recommending 𝕏 posts from other languages is starting to work",
+      "summary": "马斯克透露X平台的Grok AI已开始支持多语言帖子的自动翻译和智能推荐，进一步提升平台的国际化用户体验。",
+      "rating": "A",
+      "score": 78,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "该功能落地可能吸引更多非英语用户使用X平台，对其他社交平台的国际化战略形成竞争压力。",
+      "entities": [
+        "Grok",
+        "X",
+        "马斯克"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/elonmusk/status/2038373467461190016"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.390639",
+      "source": "Twitter",
+      "url": "https://x.com/elonmusk/status/2038373467461190016"
+    },
+    {
+      "id": "f781623976195932ce0250a5ddef71de",
+      "title": "业内估算Anthropic各模型参数规模 Mythos最高可达20万亿",
+      "original_title": "my estimate for Anthropic model sizes: - Haiku: 200-500B @ $5 - Sonnet: 700B-1.4T @ $15 - Opus: 1.5-3T @ $25 - Mythos: 6-20T @ $100+",
+      "summary": "行业人士估算Anthropic的Haiku模型参数在200-500亿之间，Opus为1.5-3万亿，下一代Mythos模型参数规模或将达到6-20万亿。",
+      "rating": "S",
+      "score": 94,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "参数规模的持续扩大将进一步拉高AI大模型的训练和推理成本，加速行业头部聚集效应。",
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "大模型"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/scaling01/status/2038335455339405687"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.390689",
+      "source": "Twitter",
+      "url": "https://x.com/scaling01/status/2038335455339405687"
+    },
+    {
+      "id": "d4102ca75e1bda07ed09af9387ed5179",
+      "title": "DeepSeek V4基准测试数据泄露 性能据称超越Claude和GPT",
+      "original_title": "DeepSeek V4 benchmarks are leaking. The numbers are beating Claude Opus and GPT-5.3 Unconfirmed. Unverified. But the sources call them conservative. >...",
+      "summary": "网传DeepSeek V4性能超越Claude Opus和GPT-5.3，其精简版参数约2000亿，支持百万上下文和多模态处理，SWE-bench得分超80%。",
+      "rating": "S",
+      "score": 100,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "若数据属实，将成为国产大模型首次全面超越国际顶尖模型的标志性事件，可能引发全球AI行业格局变动。",
+      "entities": [
+        "Claude",
+        "DeepSeek",
+        "GPT",
+        "大模型"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/Atenov_D/status/2038324432419135615"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.390749",
+      "source": "Twitter",
+      "url": "https://x.com/Atenov_D/status/2038324432419135615"
+    },
+    {
+      "id": "3b170177e5fb394768f45024406725f1",
+      "title": "OpenAI关闭Sora后 谷歌DeepMind或即将发布Veo视频模型",
+      "original_title": "Google DeepMind is likely preparing to release Veo 4 Days after OpenAI announced they are shutting Sora, @medhini_n of the Veo team has alluded to the...",
+      "summary": "在OpenAI宣布关闭Sora服务4天后，谷歌DeepMind团队成员暗示即将发布Veo AI视频生成模型，引发行业对视频生成技术赛道的关注。",
+      "rating": "S",
+      "score": 97,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "谷歌此时推出视频生成模型可能快速抢占OpenAI留下的市场空白，重塑AI视频生成领域的竞争格局。",
+      "entities": [
+        "DeepMind",
+        "OpenAI",
+        "Sora",
+        "Veo"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/AILeaksAndNews/status/2038306882499072362"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.390802",
+      "source": "Twitter",
+      "url": "https://x.com/AILeaksAndNews/status/2038306882499072362"
+    },
+    {
+      "id": "bce8cceb1638e79e80c330e2f5299eb7",
+      "title": "研究者探索使用KV缓存实现无向量无RAG文档搜索",
+      "original_title": "after turboquant and qwen3.5-35b-a3b, i got curious: how realistic is it to use kv cache as a document store today? to have vectorless, RAG-less searc...",
+      "summary": "技术人员在L4 GPU上实现了基于KV缓存的文档存储方案，可实现无向量、无RAG的搜索功能，99%缓存填充率下解码速度达20 tps。",
+      "rating": "A",
+      "score": 79,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该技术若成熟可大幅降低RAG系统的部署复杂度和成本，为本地知识库应用提供新的技术路径。",
+      "entities": [
+        "Kv缓存",
+        "Rag",
+        "大模型"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/hxiao/status/2038296253377692102"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.390840",
+      "source": "Twitter",
+      "url": "https://x.com/hxiao/status/2038296253377692102"
+    },
+    {
+      "id": "c5c22e47fe7f5ffcc2efef2902f60486",
+      "title": "Claude Max拼车服务掺假被曝光 行业乱象引发关注",
+      "original_title": "在L站拼了个Claude Max的车，450块一个月，675美元的额度，价格是个人开车的合理价格。 结果第一天就被我测出来掺假，混了逆向Cursor网页版的免费Sonnet，对方无...",
+      "summary": "有用户发现购买的Claude Max拼车服务存在掺假行为，商家使用逆向Cursor网页版的免费Sonnet冒充Opus，暴露了AI服务共享市场的监管漏洞。",
+      "rating": "A+",
+      "score": 86,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "该事件可能促使Anthropic加强账号使用监管，同时推动国内正规AI服务渠道的发展。",
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Cursor"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/Gorden_Sun/status/2038293604897378815"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.390885",
+      "source": "Twitter",
+      "url": "https://x.com/Gorden_Sun/status/2038293604897378815"
+    },
+    {
+      "id": "edf75e8b0d3826f69c052260a0a1ba28",
+      "title": "Qwen3.5-TurboQuant实现苹果芯片MLX运行支持",
+      "original_title": "Hi everyone 🙏🏻 After a long stretch of work, I’ve finalized my Qwen3.5-TurboQuant-MLX-LM project as a v0.1 Research Preview. With this work, I ...",
+      "summary": "开发者发布Qwen3.5-TurboQuant-MLX-LM项目v0.1预览版，成功在苹果芯片上实现TurboQuant量化技术的运行，提升了本地大模型运行效率。",
+      "rating": "B",
+      "score": 72,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该技术有助于降低大模型在消费级设备上的运行门槛，推动端侧AI应用的普及。",
+      "entities": [
+        "Qwen",
+        "大模型",
+        "苹果"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/AlicanKiraz0/status/2038245538865275274"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.390960",
+      "source": "Twitter",
+      "url": "https://x.com/AlicanKiraz0/status/2038245538865275274"
+    },
+    {
+      "id": "dcc4435de8bdfc641351e5238aac3d61",
+      "title": "国内团队开源AI Agent Harness工程资源合集",
+      "original_title": "最近 harness 很火，我们开源了 awesome-harness-engineering。内部整理了一些关于AI agent harness engineering的资源，包括架构约束、反馈回路、运行时 scaffo...",
+      "summary": "国内团队开源awesome-harness-engineering资源库，整理了生产级AI Agent开发所需的架构约束、反馈回路、运行时脚手架等全套资源。",
+      "rating": "A",
+      "score": 81,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "该资源库有望降低AI Agent的开发门槛，推动更多生产级智能体应用落地。",
+      "entities": [
+        "Ai Agent",
+        "开源"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/sanbuphy/status/2038222350085398608"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.390999",
+      "source": "Twitter",
+      "url": "https://x.com/sanbuphy/status/2038222350085398608"
+    },
+    {
+      "id": "3abeda925c9480954b0bb15e5fcc4161",
+      "title": "开源工具RTK可将Claude Code Token消耗降低60%",
+      "original_title": "Great thread on reducing Claude Code token up to 60% Best one is using the open-source tool RTK (Rust Token Killer) It automatically removes noise, me...",
+      "summary": "开发者分享Claude Code优化技巧，使用开源工具Rust Token Killer可自动去除噪声、合并重复内容，最多可降低60%的Token消耗。",
+      "rating": "A",
+      "score": 83,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "该工具可显著降低开发者使用Claude Code的成本，提升大模型开发的经济效益。",
+      "entities": [
+        "Claude",
+        "Rust",
+        "开源"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/jasonzhou1993/status/2038215854584906078"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.391053",
+      "source": "Twitter",
+      "url": "https://x.com/jasonzhou1993/status/2038215854584906078"
+    },
+    {
+      "id": "3a3f91a6257dd969699d326ffab9c8f3",
+      "title": "国内用户Claude订阅需求旺盛 博主分享稳定订阅经验",
+      "original_title": "我抖音、小红书、视频号发的关于Claude Code的视频下面，回复最多的内容都是询问如何在国内稳定的订阅Pro/Max而不被封。我个人的情况是之前在硅谷工作，有稳定的...",
+      "summary": "国内用户对Claude Code订阅服务需求高涨，有博主分享多个可靠的订阅教程和经验，包括代理配置、海外手机卡选购等实用信息。",
+      "rating": "A",
+      "score": 78,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "反映了国内AI开发者对顶尖AI开发工具的迫切需求，可能催生更多本地化AI开发工具的出现。",
+      "entities": [
+        "Claude"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/zhangchitc/status/2038153207659343928"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.391107",
+      "source": "Twitter",
+      "url": "https://x.com/zhangchitc/status/2038153207659343928"
+    },
+    {
+      "id": "2c95685b3e101450e559b7dc09437a13",
+      "title": "礼来制药27.5亿美元合作 押注AI药物研发",
+      "original_title": "Eli Lilly leans into AI drug discovery with new licensing deal",
+      "summary": "美国制药巨头礼来与香港上市生物科技公司Insilico Medicine达成27.5亿美元合作协议，利用AI技术开发新药，Insilico已有28款AI研发药物进入临床试验阶段。",
+      "rating": "A+",
+      "score": 85,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "巨额投资彰显AI药物研发的商业价值，将加速AI在生物医药领域的渗透和应用落地。",
+      "entities": [
+        "Ai药物研发",
+        "礼来"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Semafor",
+          "url": "https://www.semafor.com/article/03/29/2026/eli-lilly-leans-into-ai-drug-discovery"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.391154",
+      "source": "Semafor",
+      "url": "https://www.semafor.com/article/03/29/2026/eli-lilly-leans-into-ai-drug-discovery"
+    },
+    {
+      "id": "76fb1549e40260ed3f01bc7b67d48c36",
+      "title": "分析称代码智能体或将重塑开源软件生态",
+      "original_title": "Coding Agents Could Make Free Software Matter Again",
+      "summary": "行业分析认为，AI代码智能体的普及可能让自由开源软件重新焕发重要性，智能体对开源代码的学习和使用将提升开源项目的价值。",
+      "rating": "A",
+      "score": 82,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "该趋势可能改变开源软件的商业模式和贡献方式，推动开源生态向AI友好方向演进。",
+      "entities": [
+        "Ai Agent",
+        "开源"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Hacker News",
+          "url": "https://www.gjlondon.com/blog/ai-agents-could-make-free-software-matter-again/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.391181",
+      "source": "Hacker News",
+      "url": "https://www.gjlondon.com/blog/ai-agents-could-make-free-software-matter-again/"
+    },
+    {
+      "id": "0415cf087f7845e726ba3c22e2e33943",
+      "title": "SpaceX即将提交IPO申请 估值预期创历史新高",
+      "original_title": "SpaceX’s IPO Challenge",
+      "summary": "SpaceX预计近期将秘密提交IPO申请，银行家给出的估值预期远超市场预期，或将成为近年来最大规模的科技公司上市案例。",
+      "rating": "S",
+      "score": 93,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "SpaceX上市将成为商业航天领域的里程碑事件，可能引发全球商业航天产业的投资热潮。",
+      "entities": [
+        "SpaceX",
+        "马斯克"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Information",
+          "url": "https://www.theinformation.com/articles/spacexs-ipo-challenge"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.391228",
+      "source": "The Information",
+      "url": "https://www.theinformation.com/articles/spacexs-ipo-challenge"
+    },
+    {
+      "id": "c31cc8ecbfdbfceac212d768f6202dee",
+      "title": "纽约邮报保留传统\\\"跑线记者\\\" 拒绝AI完全替代",
+      "original_title": "The oldest job in journalism: New York Post ‘runners’ defy AI",
+      "summary": "尽管AI技术不断发展，纽约邮报仍然保留传统的\\\"跑线记者\\\"岗位，负责实地采访和突发新闻报道，认为人力采访具有AI无法替代的价值。",
+      "rating": "B",
+      "score": 73,
+      "type": "society",
+      "typeName": "社会影响",
+      "expansion": "反映了内容生产领域对AI替代的理性态度，人机协作可能成为媒体行业的长期发展模式。",
+      "entities": [
+        "Ai生成内容"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Semafor",
+          "url": "https://www.semafor.com/article/03/29/2026/the-oldest-job-in-journalism-new-york-post-runners-defy-ai"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774825366,
+      "published_at": "2026-03-30T07:02:46.391615",
+      "source": "Semafor",
+      "url": "https://www.semafor.com/article/03/29/2026/the-oldest-job-in-journalism-new-york-post-runners-defy-ai"
+    },
+    {
       "id": "71dabfb705fcb95ca54e44f2ad6b608b",
       "title": "AI公司IPO造富效应显现 旧金山科技从业者财富差距拉大",
       "original_title": "Everyone I know in SF who’s not at OpenAI/Anthropic is freaking out about how their friends are about to make $5-50M with these IPOs",
@@ -6972,19 +7344,22 @@
     },
     {
       "id": "392cd46ff0b56d056492258edbd4935c",
-      "title": "Blackwell时代预训练模型即将完成 内部算力提升显著",
+      "title": "Blackwell架构预训练模型即将落地 推理成本高企催生算力竞争新态势",
       "original_title": "Blackwell era pre-training runs are about to start landing. The compute cost of inference is so high that the labs that can successfully train these models will have a disproportionate amount of internal compute acceleration. Andrew Curran says Mythos is the next level beyond what we have now.",
-      "summary": "业内消息称基于Blackwell架构的大模型预训练即将完成，其高推理成本可能为成功训练的实验室带来不成比例的内部算力加速，Andrew Curran透露Mythos将是超越当前水平的新模型层级。",
+      "summary": "行业消息显示，基于英伟达Blackwell架构的大模型预训练工作即将完成。由于推理算力成本极高，能够成功训练此类模型的实验室将获得显著的内部算力加速优势。OpenAI科学家Andrew Curran透露，代号Mythos的新模型将达到超越当前技术水平的全新层级。",
       "rating": "S",
-      "score": 95,
+      "score": 96,
       "type": "research",
       "typeName": "研究成果",
-      "expansion": "新模型发布可能引发大模型性能竞赛，推动相关算力需求增长，也会影响现有模型服务的定价策略。",
+      "expansion": "1. 技术影响：基于Blackwell架构的Mythos大模型即将落地，将推动AI模型能力跃上新台阶，带来性能的代际提升\n2. 行业竞争：高算力门槛将进一步拉大头部AI实验室与中小机构的技术差距，算力资源成为核心竞争力\n3. 产业影响：将带动英伟达GPU等AI算力硬件需求持续增长，相关产业链公司有望受益\n4. 市场影响：模型性能提升可能推动AI应用场景进一步拓展，同时可能影响现有大模型服务的定价策略",
       "entities": [
         "Blackwell",
         "Mythos",
+        "英伟达",
         "大模型",
-        "算力"
+        "算力",
+        "Andrew Curran",
+        "预训练"
       ],
       "sourceLinks": [
         {
