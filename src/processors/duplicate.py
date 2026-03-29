@@ -146,8 +146,33 @@ class DuplicateRemover:
                     continue
 
                 # 判断是否相似
-                if (is_similar_text(item.chinese_title, other.chinese_title, threshold=0.6) or
-                    is_similar_text(item.summary, other.summary, threshold=0.6)):
+                # 1. 实体有交集优先判断为相似（相同实体说明是同一主题）
+                entity_overlap = False
+                common_entity_count = 0
+                if item.entities and other.entities:
+                    common_entities = set(item.entities) & set(other.entities)
+                    common_entity_count = len(common_entities)
+                    if common_entity_count >= 1:
+                        entity_overlap = True
+
+                # 2. 根据实体交集数量调整相似度阈值
+                #  - 有2个以上共同实体：阈值0.4
+                #  - 有1个共同实体：阈值0.45
+                #  - 无共同实体：阈值0.5
+                base_threshold = 0.5
+                if common_entity_count >= 2:
+                    threshold = 0.4
+                elif common_entity_count == 1:
+                    threshold = 0.45
+                else:
+                    threshold = base_threshold
+
+                # 3. 标题或摘要相似
+                text_similar = (is_similar_text(item.chinese_title, other.chinese_title, threshold=threshold) or
+                              is_similar_text(item.summary, other.summary, threshold=threshold))
+
+                # 4. 实体有交集且文本有一定相似度则判定为相似
+                if (entity_overlap and text_similar) or text_similar:
                     similar_items.append(other)
                     used_indices.add(j)
 

@@ -368,6 +368,191 @@
             padding: 40px;
             color: #718096;
         }
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #2d3748;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+        .modal.show {
+            display: flex;
+        }
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: modalSlideIn 0.3s ease;
+        }
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .modal-header {
+            padding: 20px;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #718096;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .modal-close:hover {
+            background: #f7fafc;
+        }
+        .modal-body {
+            padding: 20px;
+        }
+        .modal-footer {
+            padding: 20px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .tag-ai { background: #e0e7ff; color: #4f46e5; }
+        .tag-social { background: #fce7f3; color: #db2777; }
+        .tag-active { background: #d1fae5; color: #065f46; }
+        .tag-inactive { background: #fee2e2; color: #991b1b; }
+        .tag-rising { background: #dbeafe; color: #1e40af; }
+        .tag-falling { background: #ffedd5; color: #92400e; }
+        .tag-stable { background: #f3f4f6; color: #374151; }
+        .action-buttons {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .btn-sm {
+            padding: 4px 8px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+        .entities-input {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .entities-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .entity-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .entity-remove {
+            cursor: pointer;
+            color: #718096;
+            font-weight: bold;
+            line-height: 1;
+        }
+        .entity-remove:hover {
+            color: #e53e3e;
+        }
+        .test-section {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .test-result {
+            margin-top: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+        .match-item {
+            padding: 8px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .match-item:last-child {
+            border-bottom: none;
+        }
     </style>
 </head>
 <body>
@@ -407,6 +592,7 @@
 
         <div class="tabs">
             <button class="tab active" onclick="switchTab('news')">📰 新闻列表</button>
+            <button class="tab" onclick="switchTab('zeitgeist')">🔥 时代情绪</button>
             <button class="tab" onclick="switchTab('status')">📊 系统状态</button>
             <button class="tab" onclick="switchTab('config')">⚙️ 配置管理</button>
         </div>
@@ -449,6 +635,31 @@
             </div>
         </div>
 
+        <!-- 时代情绪管理 Tab -->
+        <div class="tab-content" id="zeitgeistTab">
+            <div class="card">
+                <div class="card-title">
+                    时代情绪热点管理
+                    <button class="btn btn-primary" style="float: right; margin-top: -5px;" onclick="openZeitgeistModal()">
+                        ➕ 新增热点
+                    </button>
+                </div>
+                <div class="search-box" style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                    <input type="text" id="zeitgeistSearchInput" placeholder="搜索关键词、描述、相关实体..." onkeyup="handleZeitgeistSearch()" style="flex: 1; min-width: 300px;">
+                    <select id="zeitgeistStatusFilter" onchange="handleZeitgeistSearch()" style="padding: 10px 15px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px;">
+                        <option value="active">仅显示活跃</option>
+                        <option value="all">显示全部</option>
+                    </select>
+                    <button class="btn btn-success" onclick="openTestModal()">
+                        🧪 测试匹配
+                    </button>
+                </div>
+                <div class="table-container" id="zeitgeistTableContainer">
+                    <div class="loading">加载中...</div>
+                </div>
+            </div>
+        </div>
+
         <!-- 配置管理 Tab -->
         <div class="tab-content" id="configTab">
             <div class="card">
@@ -460,12 +671,140 @@
         </div>
     </div>
 
+    <!-- 时代情绪编辑模态框 -->
+    <div class="modal" id="zeitgeistModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="zeitgeistModalTitle">新增时代情绪热点</div>
+                <button class="modal-close" onclick="closeZeitgeistModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="zeitgeistForm">
+                    <input type="hidden" id="form_keyword">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="form_keyword_input">关键词 *</label>
+                            <input type="text" id="form_keyword_input" required placeholder="例如：DeepSeek">
+                        </div>
+                        <div class="form-group">
+                            <label for="form_boost_value">加分权重 *</label>
+                            <input type="number" id="form_boost_value" required min="1" max="10" value="3">
+                        </div>
+                        <div class="form-group">
+                            <label for="form_category">分类 *</label>
+                            <select id="form_category" required>
+                                <option value="ai">AI技术</option>
+                                <option value="social">社会情绪</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form_weight">权重系数</label>
+                            <input type="number" id="form_weight" step="0.1" min="0" max="1" value="0.7">
+                        </div>
+                        <div class="form-group">
+                            <label for="form_category_name">情绪分类</label>
+                            <input type="text" id="form_category_name" placeholder="例如：期待、焦虑、机遇">
+                        </div>
+                        <div class="form-group">
+                            <label for="form_heat_score">热度分数</label>
+                            <input type="number" id="form_heat_score" min="0" max="100" placeholder="0-100">
+                        </div>
+                        <div class="form-group">
+                            <label for="form_trend">趋势</label>
+                            <select id="form_trend">
+                                <option value="rising">上升</option>
+                                <option value="stable">稳定</option>
+                                <option value="falling">下降</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form_trend_name">趋势名称</label>
+                            <input type="text" id="form_trend_name" placeholder="例如：快速上升">
+                        </div>
+                        <div class="form-group">
+                            <label for="form_start_time">生效开始时间</label>
+                            <input type="datetime-local" id="form_start_time">
+                        </div>
+                        <div class="form-group">
+                            <label for="form_end_time">生效结束时间</label>
+                            <input type="datetime-local" id="form_end_time">
+                        </div>
+                        <div class="form-group">
+                            <label for="form_status">状态</label>
+                            <select id="form_status">
+                                <option value="active">活跃</option>
+                                <option value="inactive">失效</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form_mentions_count">提及次数</label>
+                            <input type="number" id="form_mentions_count" min="0" value="0">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form_description">描述</label>
+                        <textarea id="form_description" placeholder="描述这个热点的背景和意义..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>相关实体</label>
+                        <div class="entities-input">
+                            <input type="text" id="entityInput" placeholder="输入实体名称，按回车添加">
+                            <button type="button" class="btn btn-primary" onclick="addEntity()">添加</button>
+                        </div>
+                        <div class="entities-list" id="entitiesList"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeZeitgeistModal()">取消</button>
+                <button class="btn btn-primary" onclick="saveZeitgeist()">保存</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 匹配测试模态框 -->
+    <div class="modal" id="testModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">测试内容匹配</div>
+                <button class="modal-close" onclick="closeTestModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="test_title">新闻标题</label>
+                    <input type="text" id="test_title" placeholder="输入新闻标题">
+                </div>
+                <div class="form-group">
+                    <label for="test_content">新闻内容（可选）</label>
+                    <textarea id="test_content" placeholder="输入新闻内容摘要..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="test_entities">相关实体（英文逗号分隔）</label>
+                    <input type="text" id="test_entities" placeholder="例如：DeepSeek,AI,大模型">
+                </div>
+                <div id="testResult" class="test-result" style="display: none;">
+                    <h4 style="margin-bottom: 10px;">匹配结果</h4>
+                    <div id="matchList"></div>
+                    <div style="margin-top: 10px; font-weight: bold;">
+                        总加分: <span id="totalBoost" style="color: #667eea;"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeTestModal()">关闭</button>
+                <button class="btn btn-primary" onclick="runMatchTest()">开始测试</button>
+            </div>
+        </div>
+    </div>
+
     <div class="toast" id="toast"></div>
 
     <script>
         let currentPage = 1;
         let currentSearch = '';
         let currentTab = 'news';
+        let currentEntities = [];
+        let editingKeyword = null;
 
         function switchTab(tab) {
             currentTab = tab;
@@ -479,6 +818,8 @@
                 loadStatus();
             } else if (tab === 'config') {
                 loadConfig();
+            } else if (tab === 'zeitgeist') {
+                loadZeitgeist();
             }
         }
 
@@ -738,7 +1079,368 @@
         // 页面加载完成后初始化
         document.addEventListener('DOMContentLoaded', function() {
             loadNews();
+
+            // 实体输入框回车事件
+            document.getElementById('entityInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    addEntity();
+                }
+            });
         });
+
+        // 加载时代情绪列表
+        async function loadZeitgeist(search = '', status = 'active') {
+            const container = document.getElementById('zeitgeistTableContainer');
+            container.innerHTML = '<div class="loading">加载中...</div>';
+
+            try {
+                const response = await fetch(`/api/zeitgeist?search=${encodeURIComponent(search)}&status=${status}`);
+                const result = await response.json();
+
+                if (result.code === 0) {
+                    const trends = result.data;
+                    if (trends.length === 0) {
+                        container.innerHTML = '<div class="empty-state">暂无时代情绪热点数据</div>';
+                        return;
+                    }
+
+                    // 渲染表格
+                    let html = `
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>关键词</th>
+                                    <th>分类</th>
+                                    <th>加分</th>
+                                    <th>热度</th>
+                                    <th>趋势</th>
+                                    <th>状态</th>
+                                    <th>生效时间</th>
+                                    <th>相关实体</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                    `;
+
+                    trends.forEach(item => {
+                        const categoryClass = item.category === 'ai' ? 'tag-ai' : 'tag-social';
+                        const statusClass = item.status === 'active' ? 'tag-active' : 'tag-inactive';
+                        const trendClass = `tag-${item.trend || 'stable'}`;
+                        const entities = (item.related_entities || []).map(e => `<span class="entity-tag">${e}</span>`).join('');
+                        const startTime = item.start_time ? new Date(item.start_time).toLocaleDateString('zh-CN') : '--';
+                        const endTime = item.end_time ? new Date(item.end_time).toLocaleDateString('zh-CN') : '--';
+
+                        html += `
+                            <tr>
+                                <td style="font-weight: 600;">${item.keyword}</td>
+                                <td><span class="tag ${categoryClass}">${item.category === 'ai' ? 'AI技术' : '社会情绪'}</span></td>
+                                <td><span class="rating-tag rating-A">+${item.boost_value}</span></td>
+                                <td>${item.heat_score || 0}分</td>
+                                <td><span class="tag ${trendClass}">${item.trend_name || item.trend || '稳定'}</span></td>
+                                <td><span class="tag ${statusClass}">${item.status === 'active' ? '活跃' : '失效'}</span></td>
+                                <td style="white-space: nowrap;">${startTime} ~ ${endTime}</td>
+                                <td style="max-width: 200px;">${entities}</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn btn-sm btn-primary" onclick="openZeitgeistModal('${item.keyword}')">编辑</button>
+                                        <button class="btn btn-sm btn-danger" onclick="deleteZeitgeist('${item.keyword}')">删除</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        `;
+                    });
+
+                    html += '</tbody></table>';
+                    container.innerHTML = html;
+                } else {
+                    container.innerHTML = `<div class="empty-state">加载失败: ${result.message}</div>`;
+                }
+            } catch (e) {
+                container.innerHTML = `<div class="empty-state">加载失败: ${e.message}</div>`;
+            }
+        }
+
+        // 搜索时代情绪
+        function handleZeitgeistSearch() {
+            const search = document.getElementById('zeitgeistSearchInput').value.trim();
+            const status = document.getElementById('zeitgeistStatusFilter').value;
+            loadZeitgeist(search, status);
+        }
+
+        // 打开新增/编辑模态框
+        function openZeitgeistModal(keyword = null) {
+            editingKeyword = keyword;
+            const modal = document.getElementById('zeitgeistModal');
+            const title = document.getElementById('zeitgeistModalTitle');
+            const form = document.getElementById('zeitgeistForm');
+
+            // 重置表单
+            form.reset();
+            currentEntities = [];
+            renderEntities();
+            document.getElementById('form_keyword').value = '';
+            document.getElementById('form_keyword_input').disabled = false;
+
+            if (keyword) {
+                title.textContent = '编辑时代情绪热点';
+                // 加载数据
+                loadZeitgeistDetail(keyword);
+            } else {
+                title.textContent = '新增时代情绪热点';
+                // 设置默认时间
+                const now = new Date();
+                const endOfYear = new Date(now.getFullYear(), 11, 31);
+                document.getElementById('form_start_time').value = now.toISOString().slice(0, 16);
+                document.getElementById('form_end_time').value = endOfYear.toISOString().slice(0, 16);
+            }
+
+            modal.classList.add('show');
+        }
+
+        // 关闭模态框
+        function closeZeitgeistModal() {
+            const modal = document.getElementById('zeitgeistModal');
+            modal.classList.remove('show');
+            editingKeyword = null;
+        }
+
+        // 加载热点详情
+        async function loadZeitgeistDetail(keyword) {
+            try {
+                const response = await fetch(`/api/zeitgeist/${encodeURIComponent(keyword)}`);
+                const result = await response.json();
+
+                if (result.code === 0) {
+                    const data = result.data;
+                    document.getElementById('form_keyword').value = data.keyword;
+                    document.getElementById('form_keyword_input').value = data.keyword;
+                    document.getElementById('form_keyword_input').disabled = true;
+                    document.getElementById('form_boost_value').value = data.boost_value;
+                    document.getElementById('form_category').value = data.category;
+                    document.getElementById('form_weight').value = data.weight;
+                    document.getElementById('form_category_name').value = data.category_name || '';
+                    document.getElementById('form_heat_score').value = data.heat_score || '';
+                    document.getElementById('form_trend').value = data.trend || 'stable';
+                    document.getElementById('form_trend_name').value = data.trend_name || '';
+                    document.getElementById('form_status').value = data.status || 'active';
+                    document.getElementById('form_mentions_count').value = data.mentions_count || 0;
+                    document.getElementById('form_description').value = data.description || '';
+
+                    // 处理时间
+                    if (data.start_time) {
+                        document.getElementById('form_start_time').value = new Date(data.start_time).toISOString().slice(0, 16);
+                    }
+                    if (data.end_time) {
+                        document.getElementById('form_end_time').value = new Date(data.end_time).toISOString().slice(0, 16);
+                    }
+
+                    // 处理相关实体
+                    currentEntities = data.related_entities || [];
+                    renderEntities();
+                } else {
+                    showToast(`加载失败: ${result.message}`, 'error');
+                }
+            } catch (e) {
+                showToast(`加载失败: ${e.message}`, 'error');
+            }
+        }
+
+        // 添加实体
+        function addEntity() {
+            const input = document.getElementById('entityInput');
+            const entity = input.value.trim();
+            if (entity && !currentEntities.includes(entity)) {
+                currentEntities.push(entity);
+                renderEntities();
+                input.value = '';
+            }
+            input.focus();
+        }
+
+        // 移除实体
+        function removeEntity(index) {
+            currentEntities.splice(index, 1);
+            renderEntities();
+        }
+
+        // 渲染实体列表
+        function renderEntities() {
+            const container = document.getElementById('entitiesList');
+            container.innerHTML = currentEntities.map((entity, index) => `
+                <span class="entity-item">
+                    ${entity}
+                    <span class="entity-remove" onclick="removeEntity(${index})">×</span>
+                </span>
+            `).join('');
+        }
+
+        // 保存时代情绪热点
+        async function saveZeitgeist() {
+            const keyword = document.getElementById('form_keyword_input').value.trim();
+            if (!keyword) {
+                showToast('请输入关键词', 'error');
+                return;
+            }
+
+            const boostValue = parseInt(document.getElementById('form_boost_value').value);
+            if (isNaN(boostValue) || boostValue < 1 || boostValue > 10) {
+                showToast('加分权重必须是1-10之间的整数', 'error');
+                return;
+            }
+
+            const data = {
+                keyword: keyword,
+                boost_value: boostValue,
+                category: document.getElementById('form_category').value,
+                weight: parseFloat(document.getElementById('form_weight').value),
+                category_name: document.getElementById('form_category_name').value.trim() || null,
+                heat_score: document.getElementById('form_heat_score').value ? parseInt(document.getElementById('form_heat_score').value) : null,
+                trend: document.getElementById('form_trend').value,
+                trend_name: document.getElementById('form_trend_name').value.trim() || null,
+                description: document.getElementById('form_description').value.trim(),
+                start_time: document.getElementById('form_start_time').value ? `${document.getElementById('form_start_time').value}:00` : null,
+                end_time: document.getElementById('form_end_time').value ? `${document.getElementById('form_end_time').value}:00` : null,
+                status: document.getElementById('form_status').value,
+                mentions_count: parseInt(document.getElementById('form_mentions_count').value) || 0,
+                related_entities: currentEntities
+            };
+
+            try {
+                let response;
+                if (editingKeyword) {
+                    // 更新
+                    response = await fetch(`/api/zeitgeist/${encodeURIComponent(editingKeyword)}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    });
+                } else {
+                    // 创建
+                    response = await fetch('/api/zeitgeist', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    });
+                }
+
+                const result = await response.json();
+
+                if (result.code === 0) {
+                    showToast(editingKeyword ? '更新成功' : '创建成功', 'success');
+                    closeZeitgeistModal();
+                    loadZeitgeist(
+                        document.getElementById('zeitgeistSearchInput').value.trim(),
+                        document.getElementById('zeitgeistStatusFilter').value
+                    );
+                } else {
+                    showToast(`保存失败: ${result.message}`, 'error');
+                }
+            } catch (e) {
+                showToast(`保存失败: ${e.message}`, 'error');
+            }
+        }
+
+        // 删除时代情绪热点
+        async function deleteZeitgeist(keyword) {
+            if (!confirm(`确定要删除热点 "${keyword}" 吗？此操作不可恢复。`)) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/zeitgeist/${encodeURIComponent(keyword)}`, {
+                    method: 'DELETE'
+                });
+
+                const result = await response.json();
+
+                if (result.code === 0) {
+                    showToast('删除成功', 'success');
+                    loadZeitgeist(
+                        document.getElementById('zeitgeistSearchInput').value.trim(),
+                        document.getElementById('zeitgeistStatusFilter').value
+                    );
+                } else {
+                    showToast(`删除失败: ${result.message}`, 'error');
+                }
+            } catch (e) {
+                showToast(`删除失败: ${e.message}`, 'error');
+            }
+        }
+
+        // 打开测试模态框
+        function openTestModal() {
+            const modal = document.getElementById('testModal');
+            document.getElementById('test_title').value = '';
+            document.getElementById('test_content').value = '';
+            document.getElementById('test_entities').value = '';
+            document.getElementById('testResult').style.display = 'none';
+            modal.classList.add('show');
+        }
+
+        // 关闭测试模态框
+        function closeTestModal() {
+            const modal = document.getElementById('testModal');
+            modal.classList.remove('show');
+        }
+
+        // 运行匹配测试
+        async function runMatchTest() {
+            const title = document.getElementById('test_title').value.trim();
+            if (!title) {
+                showToast('请输入新闻标题', 'error');
+                return;
+            }
+
+            const entitiesInput = document.getElementById('test_entities').value.trim();
+            const entities = entitiesInput ? entitiesInput.split(',').map(e => e.trim()) : [];
+            const content = document.getElementById('test_content').value.trim();
+
+            try {
+                const response = await fetch('/api/zeitgeist/test', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        title: title,
+                        content: content,
+                        entities: entities
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.code === 0) {
+                    const data = result.data;
+                    const matchList = document.getElementById('matchList');
+                    const totalBoost = document.getElementById('totalBoost');
+
+                    if (data.matched_trends.length === 0) {
+                        matchList.innerHTML = '<p style="color: #718096;">未匹配到任何热点</p>';
+                    } else {
+                        matchList.innerHTML = data.matched_trends.map(trend => `
+                            <div class="match-item">
+                                <strong>${trend.keyword}</strong> +${trend.boost_value}分
+                                <p style="margin: 5px 0 0 0; font-size: 12px; color: #718096;">${trend.description || ''}</p>
+                            </div>
+                        `).join('');
+                    }
+
+                    totalBoost.textContent = data.total_boost;
+                    document.getElementById('testResult').style.display = 'block';
+                } else {
+                    showToast(`测试失败: ${result.message}`, 'error');
+                }
+            } catch (e) {
+                showToast(`测试失败: ${e.message}`, 'error');
+            }
+        }
     </script>
 </body>
 </html>

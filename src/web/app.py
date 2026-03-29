@@ -2,24 +2,33 @@
 """
 轻量Web管理界面
 """
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
 from flask import Flask, render_template, jsonify, request, redirect, url_for
 import json
-import os
 import subprocess
 from datetime import datetime
 from typing import Dict, List, Any
 
 from src.config.settings import DATA_FILE, settings
-from src.utils.common import load_json, setup_logger
+from src.utils.common import load_json, setup_logger, save_json
 
 app = Flask(__name__)
 logger = setup_logger("web_admin")
 
+# 禁用模板缓存
+app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+
 # 项目根目录
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_FILE_PATH = os.path.join(ROOT_DIR, DATA_FILE)
+ZEITGEIST_CONFIG_PATH = os.path.join(ROOT_DIR, 'config', 'zeitgeist.json')
 
 @app.route('/')
+@app.route('/admin')
 def index():
     """管理首页"""
     # 加载最新数据（按日期分组的字典）
@@ -189,10 +198,245 @@ def api_config():
             'message': '配置更新成功（功能开发中）'
         })
 
+@app.route('/api/zeitgeist', methods=['GET'])
+def api_zeitgeist_list():
+    """获取时代情绪热点列表"""
+    try:
+        data = load_json(ZEITGEIST_CONFIG_PATH, {})
+        trends = data.get('trends', [])
+
+        # 支持筛选
+        status = request.args.get('status', 'active')
+        if status != 'all':
+            trends = [t for t in trends if t.get('status') == status]
+
+        # 支持搜索
+        search = request.args.get('search', '').lower()
+        if search:
+            trends = [
+                t for t in trends
+                if search in t.get('keyword', '').lower()
+                or search in t.get('description', '').lower()
+                or any(search in e.lower() for e in t.get('related_entities', []))
+            ]
+
+        # 按热度排序
+        trends.sort(key=lambda x: x.get('boost_value', 0), reverse=True)
+
+        return jsonify({
+            'code': 0,
+            'data': trends,
+            'total': len(trends)
+        })
+    except Exception as e:
+        logger.error(f"获取时代情绪列表失败: {e}")
+        return jsonify({
+            'code': -1,
+            'message': f'获取失败: {str(e)}'
+        }), 500
+
+@app.route('/api/zeitgeist/<keyword>', methods=['GET'])
+def api_zeitgeist_detail(keyword):
+    """获取单个时代情绪热点详情"""
+    try:
+        data = load_json(ZEITGEIST_CONFIG_PATH, {})
+        trends = data.get('trends', [])
+
+        trend = next((t for t in trends if t.get('keyword') == keyword), None)
+        if not trend:
+            return jsonify({
+                'code': -1,
+                'message': '热点不存在'
+            }), 404
+
+        return jsonify({
+            'code': 0,
+            'data': trend
+        })
+    except Exception as e:
+        logger.error(f"获取时代情绪详情失败: {e}")
+        return jsonify({
+            'code': -1,
+            'message': f'获取失败: {str(e)}'
+        }), 500
+
+@app.route('/api/zeitgeist', methods=['POST'])
+def api_zeitgeist_create():
+    """创建新的时代情绪热点"""
+    try:
+        data = request.get_json()
+
+        # 验证必填字段
+        required_fields = ['keyword', 'boost_value', 'category']
+        for field in required_fields:
+            if field not in data:
+                return jsonify({
+                    'code': -1,
+                    'message': f'缺少必填字段: {field}'
+                }), 400
+
+        # 加载现有数据
+        config = load_json(ZEITGEIST_CONFIG_PATH, {'trends': []})
+        trends = config.get('trends', [])
+
+        # 检查是否已存在
+        if any(t.get('keyword') == data['keyword'] for t in trends):
+            return jsonify({
+                'code': -1,
+                'message': '该关键词已存在'
+            }), 400
+
+        # 设置默认值
+        new_trend = {
+            'keyword': data['keyword'],
+            'weight': data.get('weight', 0.7),
+            'category': data['category'],
+            'description': data.get('description', ''),
+            'start_time': data.get('start_time', datetime.now().strftime('%Y-%m-%dT00:00:00')),
+            'end_time': data.get('end_time', (datetime.now().replace(month=12, day=31)).strftime('%Y-%m-%dT00:00:00')),
+            'boost_value': data['boost_value'],
+            'category_name': data.get('category_name'),
+            'heat_score': data.get('heat_score'),
+            'trend': data.get('trend', 'stable'),
+            'trend_name': data.get('trend_name', '稳定'),
+            'related_entities': data.get('related_entities', []),
+            'status': data.get('status', 'active'),
+            'mentions_count': data.get('mentions_count', 0)
+        }
+
+        trends.append(new_trend)
+        config['trends'] = trends
+
+        # 保存到文件
+        save_json(config, ZEITGEIST_CONFIG_PATH)
+
+        logger.info(f"创建时代情绪热点成功: {data['keyword']}")
+
+        return jsonify({
+            'code': 0,
+            'message': '创建成功',
+            'data': new_trend
+        })
+    except Exception as e:
+        logger.error(f"创建时代情绪热点失败: {e}")
+        return jsonify({
+            'code': -1,
+            'message': f'创建失败: {str(e)}'
+        }), 500
+
+@app.route('/api/zeitgeist/<keyword>', methods=['PUT'])
+def api_zeitgeist_update(keyword):
+    """更新时代情绪热点"""
+    try:
+        data = request.get_json()
+
+        # 加载现有数据
+        config = load_json(ZEITGEIST_CONFIG_PATH, {'trends': []})
+        trends = config.get('trends', [])
+
+        # 查找要更新的热点
+        index = next((i for i, t in enumerate(trends) if t.get('keyword') == keyword), None)
+        if index is None:
+            return jsonify({
+                'code': -1,
+                'message': '热点不存在'
+            }), 404
+
+        # 更新字段（保留原字段，只更新传入的字段）
+        updated_trend = trends[index].copy()
+        for key, value in data.items():
+            if key != 'keyword':  # 不允许修改keyword
+                updated_trend[key] = value
+
+        trends[index] = updated_trend
+        config['trends'] = trends
+
+        # 保存到文件
+        save_json(config, ZEITGEIST_CONFIG_PATH)
+
+        logger.info(f"更新时代情绪热点成功: {keyword}")
+
+        return jsonify({
+            'code': 0,
+            'message': '更新成功',
+            'data': updated_trend
+        })
+    except Exception as e:
+        logger.error(f"更新时代情绪热点失败: {e}")
+        return jsonify({
+            'code': -1,
+            'message': f'更新失败: {str(e)}'
+        }), 500
+
+@app.route('/api/zeitgeist/<keyword>', methods=['DELETE'])
+def api_zeitgeist_delete(keyword):
+    """删除时代情绪热点"""
+    try:
+        # 加载现有数据
+        config = load_json(ZEITGEIST_CONFIG_PATH, {'trends': []})
+        trends = config.get('trends', [])
+
+        # 查找要删除的热点
+        index = next((i for i, t in enumerate(trends) if t.get('keyword') == keyword), None)
+        if index is None:
+            return jsonify({
+                'code': -1,
+                'message': '热点不存在'
+            }), 404
+
+        # 删除
+        deleted_trend = trends.pop(index)
+        config['trends'] = trends
+
+        # 保存到文件
+        save_json(config, ZEITGEIST_CONFIG_PATH)
+
+        logger.info(f"删除时代情绪热点成功: {keyword}")
+
+        return jsonify({
+            'code': 0,
+            'message': '删除成功',
+            'data': deleted_trend
+        })
+    except Exception as e:
+        logger.error(f"删除时代情绪热点失败: {e}")
+        return jsonify({
+            'code': -1,
+            'message': f'删除失败: {str(e)}'
+        }), 500
+
+@app.route('/api/zeitgeist/test', methods=['POST'])
+def api_zeitgeist_test():
+    """测试内容匹配"""
+    try:
+        from src.processors.zeitgeist import zeitgeist_manager
+
+        data = request.get_json()
+        title = data.get('title', '')
+        entities = data.get('entities', [])
+        content = data.get('content', '')
+
+        # 执行匹配
+        total_boost, matched_trends = zeitgeist_manager.get_boost_for_content(title, content, entities)
+
+        return jsonify({
+            'code': 0,
+            'data': {
+                'matched_trends': matched_trends,
+                'total_boost': total_boost
+            }
+        })
+    except Exception as e:
+        logger.error(f"测试时代情绪匹配失败: {e}")
+        return jsonify({
+            'code': -1,
+            'message': f'测试失败: {str(e)}'
+        }), 500
+
 if __name__ == '__main__':
     # 创建模板目录
     template_dir = os.path.join(os.path.dirname(__file__), 'templates')
     os.makedirs(template_dir, exist_ok=True)
 
-    # 启动服务
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    # 启动服务（生产环境关闭debug模式）
+    app.run(host='0.0.0.0', port=8081, debug=False, use_reloader=False)

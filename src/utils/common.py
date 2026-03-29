@@ -70,7 +70,9 @@ def save_json(data: Any, file_path: str, indent: int = 2, ensure_ascii: bool = F
             return False
 
         # 确保目录存在
-        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        dir_path = os.path.dirname(file_path)
+        if dir_path:  # 只有当目录路径不为空时才创建
+            os.makedirs(dir_path, exist_ok=True)
 
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(json_str)

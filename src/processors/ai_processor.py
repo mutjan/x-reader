@@ -14,6 +14,7 @@ from datetime import datetime
 from src.models.news import RawNewsItem, ProcessedNewsItem, EntityNormalizer
 from src.utils.common import setup_logger, truncate_text, save_json, load_json, sanitize_content
 from src.config.settings import DEFAULT_BATCH_SIZE, TEMP_DIR
+from src.processors.zeitgeist import zeitgeist_manager
 
 logger = setup_logger("ai_processor")
 
@@ -52,6 +53,9 @@ class BaseAIProcessor(ABC):
    - 不知名公司融资新闻（公司知名度低、缺乏行业影响力），总分自动-20分，最高不超过B级
    - 一般法律诉讼/败诉/赔偿新闻（常规商业纠纷、专利诉讼等），总分自动-15分，最高不超过A级。但具有重大新闻价值的戏剧性案件除外，如"马斯克起诉OpenAI"、"重大反垄断判决"等
    - 地质、环境、考古相关的研究内容，总分自动-15分，最高不超过B级
+
+   **特殊加分规则**：
+   - AI教父Geoffrey Hinton的相关观点和动态，总分自动+5分，最低不低于A+级（85分）
 
 2. **生成量子位风格中文标题**：
    - 纯中文，15-35字
@@ -180,6 +184,42 @@ class BaseAIProcessor(ABC):
                 # 标准化实体
                 entities = EntityNormalizer.normalize_list(result.get("entities", []))
 
+                # 获取原始分数
+                score = result.get("score", 0)
+
+                # 特殊加分规则：Geoffrey Hinton相关内容自动+5分，最低85分（A+级）
+                content_lower = (original_item.title + " " + original_item.content).lower()
+                is_hinton_related = any(keyword in content_lower for keyword in ["hinton", "geoffrey hinton", "辛顿", "杰弗里·辛顿", "AI教父"])
+                if is_hinton_related:
+                    original_score = score
+                    score = min(score + 5, 100)  # 最高不超过100分
+                    score = max(score, 85)       # 最低不低于85分
+                    if score > original_score:
+                        logger.info(f"Hinton相关新闻加分: {original_score} → {score}")
+
+                # 时代情绪加分：符合当前热点趋势的新闻额外加分
+                zeitgeist_boost, matched_trends = zeitgeist_manager.get_boost_for_content(
+                    original_item.title, original_item.content, entities
+                )
+                if zeitgeist_boost > 0:
+                    original_score = score
+                    score = min(score + zeitgeist_boost, 100)  # 最高不超过100分
+                    if score > original_score:
+                        logger.info(f"时代情绪加分 [{','.join(matched_trends)}]: {original_score} → {score}")
+
+                # 根据调整后的分数重新评定等级
+                if score >= 90:
+                    grade = "S"
+                elif score >= 85:
+                    grade = "A+"
+                elif score >= 75:
+                    grade = "A"
+                elif score >= 65:
+                    grade = "B"
+                else:
+                    grade = "C"
+                    continue  # C级直接过滤
+
                 processed_item = ProcessedNewsItem(
                     id=original_item.get_unique_id(),
                     original_title=original_item.title,
@@ -190,7 +230,7 @@ class BaseAIProcessor(ABC):
                     chinese_title=sanitize_content(result.get("chinese_title", "")),
                     summary=sanitize_content(result.get("summary", "")),
                     grade=grade,
-                    score=result.get("score", 0),
+                    score=score,
                     news_type=result.get("type", ""),
                     extension=sanitize_content(result.get("extension", "")),
                     entities=entities,
