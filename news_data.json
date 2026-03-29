@@ -3675,6 +3675,251 @@
   ],
   "2026-03-29": [
     {
+      "id": "9fb875f846794fe2bc1b5af41552831e",
+      "title": "Jeff Dean称现有工具适配人类速度 限制AI代理性能发挥",
+      "original_title": "Jeff Dean says we’re going to have to re-engineer our tools because they were designed for human speed. An AI agent can run 50x faster, but the tools...",
+      "summary": "谷歌DeepMind负责人Jeff Dean指出，当前开发工具是为人类工作速度设计的，即使AI代理运行速度提升50倍，受限于工具性能，整体效率也只能提升2-3倍，阿姆达尔定律依然适用。",
+      "rating": "S",
+      "score": 96,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "这一观点可能引发AI开发工具链的重构需求，相关工具优化领域或迎来新的投资和创业机会。",
+      "entities": [
+        "Ai代理",
+        "Jeff Dean",
+        "开发工具"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/vitrupo/status/2038230613912887757"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774792990,
+      "published_at": "2026-03-29T22:03:10.605143",
+      "source": "Twitter",
+      "url": "https://x.com/vitrupo/status/2038230613912887757"
+    },
+    {
+      "id": "1951097faf8d1ebd483dda52c6e3bb34",
+      "title": "Anthropic科学家演示Claude现场挖掘零日漏洞 90分钟攻破GitHub热门项目",
+      "original_title": "A top Research Scientist at Anthropic showed how Claude found zero-day vulnerabilities live on stage. By Nicholas Carlini. It discovered a zero-day in...",
+      "summary": "Anthropic顶级研究员Nicholas Carlini在现场演示中，让Claude在90分钟内发现了GitHub星标5万的Ghost项目的SQL注入零日漏洞，获取管理员API密钥后还成功对Linux内核进行了同样攻击。",
+      "rating": "S",
+      "score": 100,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "LLM在安全领域的突破可能重构网络安全攻防格局，同时也引发对AI滥用漏洞挖掘的监管担忧。",
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "网络安全",
+        "零日漏洞"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/rohanpaul_ai/status/2038216277391761690"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774792990,
+      "published_at": "2026-03-29T22:03:10.605232",
+      "source": "Twitter",
+      "url": "https://x.com/rohanpaul_ai/status/2038216277391761690"
+    },
+    {
+      "id": "71c359d5f97f8b4b7bef6c8139172693",
+      "title": "开发者打造Claude应用农场 24小时内自主完成应用从0到1开发",
+      "original_title": "MUAHAHA this is my Claude App Farm each one is autonomously in the middle of building an app 0-1 over the next 24 hrs :)))))",
+      "summary": "开发者搭建了由多个Claude实例组成的\\\"应用农场\\\"，每个AI代理可以在24小时内自主完成从创意到完整应用的全流程开发工作。",
+      "rating": "A+",
+      "score": 86,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "AI自主开发应用的模式可能大幅降低软件开发门槛，重塑软件生产和分发的商业模式。",
+      "entities": [
+        "Ai开发",
+        "Claude",
+        "应用开发"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/0xPaulius/status/2038034053446693238"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774792990,
+      "published_at": "2026-03-29T22:03:10.605272",
+      "source": "Twitter",
+      "url": "https://x.com/0xPaulius/status/2038034053446693238"
+    },
+    {
+      "id": "1047b3f3b89273762ed0544f2891a185",
+      "title": "中国登月探测器数据发现月球存在特殊辐射\\\"空腔\\\"",
+      "original_title": "Data From Chinese Moon Lander Shows Signs of Peculiar Radiation “Cavity”",
+      "summary": "中国探月任务数据显示月球表面存在特殊的辐射\\\"空腔\\\"结构，这一发现对未来月球基地建设和深空载人任务的辐射防护设计具有重要参考价值。",
+      "rating": "A",
+      "score": 77,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该发现可能推动月球辐射防护技术的研发，为各国后续登月任务提供重要科学依据。",
+      "entities": [
+        "月球探测",
+        "深空探测",
+        "辐射防护"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Futurism",
+          "url": "https://futurism.com/space/data-chinese-moon-lander-radiation-cavity"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774792990,
+      "published_at": "2026-03-29T22:03:10.605461",
+      "source": "Futurism",
+      "url": "https://futurism.com/space/data-chinese-moon-lander-radiation-cavity"
+    },
+    {
+      "id": "e7d44632f3235d17bb3b815a6adac08d",
+      "title": "中国军方展示无人机\\\"狼群\\\"作战系统 可协同执行城市作战任务",
+      "original_title": "Chinese military reveals drone wolf pack capable of swarm operations — robot dogs can be equipped with grenade launchers and machine guns for urban combat",
+      "summary": "中国军方公开最新无人机集群技术，包括可装备榴弹发射器和机枪的武装机器狗，能够作为\\\"狼群\\\"与其他无人机协同执行现代化战场任务。",
+      "rating": "B",
+      "score": 67,
+      "type": "hardware",
+      "typeName": "硬件基建",
+      "expansion": "军用无人作战系统的发展可能加速无人装备在军事领域的普及，推动相关民用技术的外溢应用。",
+      "entities": [
+        "军事技术",
+        "无人机",
+        "机器狗"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/tech-industry/chinese-military-reveals-drone-wolf-pack-capable-of-swarm-operations-robot-dogs-can-be-equipped-with-grenade-launchers-and-machine-guns-for-urban-combat"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774792990,
+      "published_at": "2026-03-29T22:03:10.605500",
+      "source": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/chinese-military-reveals-drone-wolf-pack-capable-of-swarm-operations-robot-dogs-can-be-equipped-with-grenade-launchers-and-machine-guns-for-urban-combat"
+    },
+    {
+      "id": "f443634dee4aeea4a015d4fdd4ffdac3",
+      "title": "科学家发现水的\\\"隐藏状态\\\" 或揭示生命存在的关键原因",
+      "original_title": "This hidden state of water could explain why life exists",
+      "summary": "科学家通过超快X射线激光首次发现过冷水的\\\"临界点\\\"，在该温度下两种液态水形式会合并产生强烈波动，这一特性可能解释水的特殊物理性质及其在生命起源中的作用。",
+      "rating": "A+",
+      "score": 85,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "这一基础科学突破可能在材料科学、生物医学等多个领域产生连锁应用，推动相关交叉学科研究。",
+      "entities": [
+        "基础科学",
+        "水科学",
+        "生命起源"
+      ],
+      "sourceLinks": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/03/260328043551.htm"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774792990,
+      "published_at": "2026-03-29T22:03:10.605554",
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/03/260328043551.htm"
+    },
+    {
+      "id": "51f3cb0f8d4e9c3c6b0188627cea3fd5",
+      "title": "量子计算突破性成果遭质疑 研究发现此前信号存在更简单解释",
+      "original_title": "This quantum computing breakthrough may not be what it seemed",
+      "summary": "物理学家团队在复制量子计算领域几项重大突破实验时发现，此前被认为是量子优越性的信号实际上可以用更简单的经典物理机制解释，相关研究成果曾一度难以发表。",
+      "rating": "A",
+      "score": 84,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "这一发现可能促使量子计算领域更加重视实验可复现性，推动行业从概念宣传转向实用化落地。",
+      "entities": [
+        "基础研究",
+        "科学验证",
+        "量子计算"
+      ],
+      "sourceLinks": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/03/260328043600.htm"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774792990,
+      "published_at": "2026-03-29T22:03:10.605713",
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/03/260328043600.htm"
+    },
+    {
+      "id": "eb99d9d4aec06bbeb30db695c2e22c0b",
+      "title": "欧洲本周融资热点集中于基础设施层 芯片、航天、AI基建受资本青睐",
+      "original_title": "Recap: Europe’s top funding rounds this week (23–29 March)",
+      "summary": "欧洲本周顶级融资轮次覆盖半导体物理、轨道物流、防务拦截器等多个领域，资本偏好集中在基础设施层面，包括芯片互连、卫星运输工具和AI底层设施等方向。",
+      "rating": "B",
+      "score": 74,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "欧洲对硬科技基础设施的投资趋势可能提升其在全球科技产业链中的地位，与中美形成差异化竞争格局。",
+      "entities": [
+        "欧洲科技",
+        "科技基础设施",
+        "风险投资"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Next Web",
+          "url": "https://thenextweb.com/news/recap-europes-top-funding-rounds-this-week-23-29-march"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774792990,
+      "published_at": "2026-03-29T22:03:10.605864",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/recap-europes-top-funding-rounds-this-week-23-29-march"
+    },
+    {
+      "id": "94861b3ffd9a9e162c6e7af3e93e3216",
+      "title": "回顾苹果App Store反垄断持久战 从微软反垄断案到如今监管困局",
+      "original_title": "Apple&rsquo;s long, bitter App Store antitrust war",
+      "summary": "文章回顾了苹果App Store反垄断争议的来龙去脉，从1998年微软反垄断案中苹果作为受害者，到如今成为监管部门针对的科技巨头，梳理了二十年科技行业反垄断政策的演变。",
+      "rating": "A+",
+      "score": 86,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "苹果反垄断案的最终判决可能重塑全球应用商店的商业模式，对移动互联网生态产生深远影响。",
+      "entities": [
+        "App Store",
+        "反垄断",
+        "监管政策",
+        "苹果"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Verge -  Tech Posts (apple)",
+          "url": "https://www.theverge.com/column/902668/apple-antitrust-app-store-war"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774792990,
+      "published_at": "2026-03-29T22:03:10.605954",
+      "source": "The Verge -  Tech Posts (apple)",
+      "url": "https://www.theverge.com/column/902668/apple-antitrust-app-store-war"
+    },
+    {
       "id": "40c9c5008e2ab406bbc6e5ddbb7c41ad",
       "title": "Anthropic新模型Claude Mythos延续缩放定律 性能实现跨越式提升",
       "original_title": "Claude Mythos/Capybara is the continuation of the scaling laws. Dario is an originator of the scaling laws. No surprise his team held the belief and k...",
