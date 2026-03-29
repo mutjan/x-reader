@@ -3675,6 +3675,378 @@
   ],
   "2026-03-29": [
     {
+      "id": "29977819eb8a1166a7013028f7e7f579",
+      "title": "Anthropic员工透露每日收到大量用户反馈请求",
+      "original_title": "A weird part of working at Anthropic: getting a few of these each day",
+      "summary": "Anthropic员工分享工作日常，称每天都会收到多份用户对AI产品的反馈和功能请求，反映出用户对大模型产品的高度关注和使用需求。",
+      "rating": "B",
+      "score": 68,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "可进一步挖掘用户反馈的主要类型，分析Anthropic产品迭代方向和用户需求的匹配度。",
+      "entities": [
+        "Anthropic"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/bcherny/status/2038056509805142383"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234615",
+      "source": "Twitter",
+      "url": "https://x.com/bcherny/status/2038056509805142383"
+    },
+    {
+      "id": "0bda79e1c8a2720bb026f1379cfd55e0",
+      "title": "Anthropic工程师团队已实现AI代理自动写代码",
+      "original_title": "It turns out when Dario made his prediction a year ago that they would automate software engineering, it looks like that’s true for entire teams at a...",
+      "summary": "据Anthropic新入职员工透露，公司内部团队已数月没有手动编写代码，而是通过并行运行多个AI代理完成开发工作，工程师更多承担管理者角色。",
+      "rating": "A+",
+      "score": 87,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "这一进展可能重塑软件工程行业形态，引发AI辅助开发工具的新一轮竞争，同时影响开发者技能需求结构。",
+      "entities": [
+        "Ai代理",
+        "Anthropic",
+        "Dario Amodei"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/chatgpt21/status/2037960629437272380"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234629",
+      "source": "Twitter",
+      "url": "https://x.com/chatgpt21/status/2037960629437272380"
+    },
+    {
+      "id": "2c6da77765b30a30a963072169344cf1",
+      "title": "大模型能力升级导致大量早期AI产品逐渐淡出市场",
+      "original_title": "现在似乎没有人提起poe、chatwise、cherry studio等等了，也少有人提及n8n、dify，模型能力升级过程中已经淹没了一大堆产品，细数一下： Poe：曾经最方便的多模...",
+      "summary": "随着GPT-4o、Claude 3.5等新一代大模型能力跃升，Poe、Chatwise、Cherry Studio、Dify等早期AI工具产品逐渐被市场淡忘，反映出AI应用层竞争的残酷性。",
+      "rating": "A",
+      "score": 82,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "预示AI应用层创业机会窗口正在收窄，未来AI产品需要更强的技术壁垒和场景深度才能生存。",
+      "entities": [
+        "Claude",
+        "Dify",
+        "GPT",
+        "Poe"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/wquguru/status/2037886289907982654"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234643",
+      "source": "Twitter",
+      "url": "https://x.com/wquguru/status/2037886289907982654"
+    },
+    {
+      "id": "010cc0163402adc81dc2b80f8841dee7",
+      "title": "泄密文件显示Anthropic隐藏高能力系统存在网络安全风险",
+      "original_title": "[D] MYTHOS-INVERSION STRUCTURAL AUDIT",
+      "summary": "公开的Mythos文档审计报告显示，Anthropic 3800亿美元估值依赖其\"安全\"叙事，但内部存在具有网络攻击潜力的高能力系统，且通过技术手段掩盖其真实能力。",
+      "rating": "A+",
+      "score": 88,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "可能引发对大模型公司透明度的广泛质疑，推动AI监管政策进一步收紧，影响Anthropic品牌形象和估值。",
+      "entities": [
+        "Ai安全",
+        "Anthropic",
+        "Mythos"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s6gy4o/d_mythosinversion_structural_audit/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234654",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s6gy4o/d_mythosinversion_structural_audit/"
+    },
+    {
+      "id": "4fcfb2095c474868aee028b8d5082cd1",
+      "title": "字节跳动LVFace人脸识别技术引发业界性能对比讨论",
+      "original_title": "LVFace performance vs. ArcFace/ResNet",
+      "summary": "开发者讨论字节跳动ICCV 2025提出的LVFace人脸识别技术的实际落地表现，探讨其与传统ArcFace/ResNet方案在真实场景下的性能差异和部署成本。",
+      "rating": "B",
+      "score": 70,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "可跟踪该技术的实际落地案例，分析其对计算机视觉行业的技术路线影响。",
+      "entities": [
+        "Arcface",
+        "Lvface",
+        "字节跳动"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s6a90d/lvface_performance_vs_arcfaceresnet/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234663",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s6a90d/lvface_performance_vs_arcfaceresnet/"
+    },
+    {
+      "id": "2f1113dfa40d3d3279910db918c5d3bd",
+      "title": "TurboQuant 4比特量化技术实现3.2倍内存节省无精度损失",
+      "original_title": "[P] TurboQuant for weights: near‑optimal 4‑bit LLM quantization with lossless 8‑bit residual – 3.2× memory savings",
+      "summary": "研究者将TurboQuant算法从KV缓存量化扩展到模型权重压缩，实现4比特量化下几乎无精度损失，内存占用减少3.2倍，提供了可直接替换的线性层实现。",
+      "rating": "A",
+      "score": 78,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该技术有望大幅降低大模型部署成本，推动大模型在边缘设备上的落地应用。",
+      "entities": [
+        "Llm量化",
+        "Turboquant"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s634wk/p_turboquant_for_weights_nearoptimal_4bit_llm/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234671",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s634wk/p_turboquant_for_weights_nearoptimal_4bit_llm/"
+    },
+    {
+      "id": "48d987fac746b0172c4d021490f65341",
+      "title": "研究发现引用图谱存在滞后状态导致文献综述系统偏差",
+      "original_title": "[R] Lag state in citation graphs: a systematic indexing blind spot with implications for lit review automation",
+      "summary": "研究者发现学术引用图谱存在系统性\"滞后状态\"，即最新发表论文的参考文献尚未被主流索引收录，导致自动化文献综述系统存在结构性盲区。",
+      "rating": "B",
+      "score": 72,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该发现对学术搜索引擎和文献分析工具的设计具有重要指导意义，可能催生更完善的学术索引系统。",
+      "entities": [
+        "引用图谱",
+        "文献综述"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s611t3/r_lag_state_in_citation_graphs_a_systematic/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234683",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s611t3/r_lag_state_in_citation_graphs_a_systematic/"
+    },
+    {
+      "id": "01eaf59211723d6c7b6e1e665fa922b1",
+      "title": "研究者提出数据增强应基于不变性假设系统化设计",
+      "original_title": "[D] Thinking about augmentation as invariance assumptions",
+      "summary": "研究者指出当前数据增强技术使用过于经验化，建议从\"每个变换试图施加什么不变性\"的角度系统化设计数据增强策略，避免盲目堆叠变换操作。",
+      "rating": "B",
+      "score": 69,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该理论框架可能提升深度学习模型训练的系统化程度，减少数据增强过程中的试错成本。",
+      "entities": [
+        "数据增强",
+        "深度学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s5nxwc/d_thinking_about_augmentation_as_invariance/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234709",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s5nxwc/d_thinking_about_augmentation_as_invariance/"
+    },
+    {
+      "id": "ac6d2c643bbcd633c60125f06d0298a6",
+      "title": "PentaNet五值量化技术突破BitNet极限实现零乘法推理",
+      "original_title": "[Project] PentaNet: Pushing beyond BitNet with Native Pentanary {-2, -1, 0, 1, 2} Quantization (124M, zero-multiplier inference)",
+      "summary": "研究者提出PentaNet架构，将模型权重量化扩展到{-2, -1, 0, 1, 2}五值状态，在保持零乘法推理优势的同时保留更多模型容量，性能优于传统三值量化方案。",
+      "rating": "A",
+      "score": 76,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该技术为极端量化方向提供了新思路，有望进一步降低大模型推理的硬件门槛。",
+      "entities": [
+        "Bitnet",
+        "Llm量化",
+        "Pentanet"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s5l5l2/project_pentanet_pushing_beyond_bitnet_with/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234719",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s5l5l2/project_pentanet_pushing_beyond_bitnet_with/"
+    },
+    {
+      "id": "f1d3de94c66c4fdea97cf3d433585a92",
+      "title": "实验显示LLM代理接入学术文献库可提升超参数优化效果",
+      "original_title": "[R] Controlled experiment: giving an LLM agent access to CS papers during automated hyperparameter search improves results by 3.2%",
+      "summary": "对照实验表明，在自动超参数搜索任务中，能够访问200万+CS论文全文的LLM代理比无文献访问权限的代理实验结果提升3.2%，验证了知识接入对AI代理的价值。",
+      "rating": "A",
+      "score": 80,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该结果为AI科研代理的设计提供了实证支持，可能推动学术研究辅助工具的新一轮发展。",
+      "entities": [
+        "Claude",
+        "Llm代理",
+        "超参数优化"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s5jpgz/r_controlled_experiment_giving_an_llm_agent/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234728",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s5jpgz/r_controlled_experiment_giving_an_llm_agent/"
+    },
+    {
+      "id": "26cf2857ffae3c20af194f625f7e7b7e",
+      "title": "学术审稿\"挑错\"文化导致 rebuttal 阶段论文质量下降",
+      "original_title": "[D] Many times I feel additional experiments during the rebuttal make my paper worse",
+      "summary": "研究者反映近年来机器学习会议审稿人倾向于刻意寻找论文不足，要求作者在 rebuttal 阶段补充大量额外实验，反而导致论文质量下降和创新点被稀释。",
+      "rating": "B",
+      "score": 71,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "该讨论可能引发对学术评审机制改革的思考，影响未来AI学术会议的评审标准设计。",
+      "entities": [
+        "同行评审",
+        "学术出版"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s5j8bg/d_many_times_i_feel_additional_experiments_during/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234737",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s5j8bg/d_many_times_i_feel_additional_experiments_during/"
+    },
+    {
+      "id": "430980fb47408e7e3a178c78881da63a",
+      "title": "开源工具Tikkocampus可将TikTok视频转换为RAG数据集",
+      "original_title": "[P] Create datasets from TikTok videos",
+      "summary": "开发者开源Tikkocampus工具，可将TikTok创作者内容转换为带时间戳的可搜索片段，用于构建机器学习数据集和RAG应用，降低视频内容的结构化处理成本。",
+      "rating": "B",
+      "score": 70,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "该工具有望推动短视频内容的知识化利用，丰富多模态RAG应用的数据源。",
+      "entities": [
+        "Rag",
+        "Tikkocampus",
+        "字节跳动"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s5g7xj/p_create_datasets_from_tiktok_videos/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234745",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s5g7xj/p_create_datasets_from_tiktok_videos/"
+    },
+    {
+      "id": "f25354f5caa55b9db41f1708dfab5a48",
+      "title": "审计发现LoCoMo长时记忆基准测试存在严重设计缺陷",
+      "original_title": "[D] We audited LoCoMo: 6.4% of the answer key is wrong and the judge accepts up to 63% of intentionally wrong answers",
+      "summary": "研究者审计发现广泛使用的LoCoMo长时记忆基准测试有6.4%的答案错误，且LLM裁判最多接受63%的故意错误答案，质疑了该基准测试的有效性和可靠性。",
+      "rating": "A",
+      "score": 77,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该发现可能导致学界重新评估基于LoCoMo的模型性能排名，推动更严谨的大模型评估方法研究。",
+      "entities": [
+        "Locomo",
+        "大模型评估"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s54cvg/d_we_audited_locomo_64_of_the_answer_key_is_wrong/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234753",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s54cvg/d_we_audited_locomo_64_of_the_answer_key_is_wrong/"
+    },
+    {
+      "id": "c28175e77f1c367ac30d903f5401e495",
+      "title": "双引擎方案解决AI生成音乐检测在压缩音频上失效问题",
+      "original_title": "[P] Deezer showed CNN detection fails on compressed audio, here's a dual-engine approach that survives MP3",
+      "summary": "研究者针对CNN方案在MP3压缩音频上AI生成音乐检测失效的问题，提出双引擎检测方案，结合频谱特征和其他维度特征，大幅提升压缩音频场景下的检测准确率。",
+      "rating": "B",
+      "score": 73,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该技术对音乐版权保护和AI内容监管具有实用价值，可能被音乐平台和版权机构采用。",
+      "entities": [
+        "Ai生成内容",
+        "Deezer",
+        "音频识别"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s51amm/p_deezer_showed_cnn_detection_fails_on_compressed/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774753515,
+      "published_at": "2026-03-29T11:05:15.234762",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s51amm/p_deezer_showed_cnn_detection_fails_on_compressed/"
+    },
+    {
       "id": "7588d2c63b92296833776e26bd1bf547",
       "title": "OpenAI核心科学家Alec Radford无高等学位却获19万引用量",
       "original_title": "Alec Radford has 190,000+ citations, no PhD, no master's degree, and 34,000 Twitter followers. Sam Altman called him an Einstein-level genius. Wired c...",
