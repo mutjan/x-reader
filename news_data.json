@@ -3951,9 +3951,9 @@
       "id": "71728fadf57ad814d09dda35290685e9",
       "title": "DeepSeek网页端模型疑似升级 输出质量显著提升或为V4预热",
       "original_title": "DeepSeek likely changed the model again after the 7h outage Before the outage, the model identified itself as v3. Now it has gone back to identifying ...",
-      "summary": "有用户观察到DeepSeek在7小时服务中断后，模型自我标识从v3变回\\\"最新版本\\\"，且零样本代码生成风格也有所不同，推测其Web/App服务端模型可能再次进行了静默更新。",
+      "summary": "有用户观察到DeepSeek在7小时服务中断后，其网页版模型的自我标识和SVG输出风格再次出现变化，但官方尚未确认是否推送了新版模型。",
       "rating": "A",
-      "score": 87,
+      "score": 77,
       "type": "product",
       "typeName": "产品发布",
       "expansion": "DeepSeek模型迭代可能加剧国内大模型市场竞争，推动各家厂商加快产品更新节奏，对下游应用开发生态也将产生积极影响。",
@@ -3972,9 +3972,9 @@
       "source": "Twitter",
       "url": "https://x.com/AiBattle_/status/2038559584399372431",
       "original_content": "DeepSeek likely changed the model again after the 7h outage Before the outage, the model identified itself as v3. Now it has gone back to identifying itself as \"the latest version\" The SVG quality also seems to have gotten worse and reverted to how it was before AiBattle: The DeepSeek model that they serve on the WEB/APP may have been updated again. The model does seem to consistently identify itself as V3 now The zero-shot coding outputs I’m getting now also seem different in style from the ones I got a few days ago It needs more testing to be",
-      "chinese_title": "DeepSeek官网模型疑似再次更新， outage后识别行为生变",
-      "grade": "A+",
-      "extension": "若属实，可跟进DeepSeek的版本迭代策略、模型蒸馏差异以及用户可见的行为漂移问题。"
+      "chinese_title": "DeepSeek线上模型疑似再次更新，自我标识发生微妙变化",
+      "grade": "A",
+      "extension": "可持续关注DeepSeek官方更新日志以及第三方基准测试机构对新旧模型输出的对比分析。"
     },
     {
       "id": "ea2b545622948884cd0770353e3c7483",
@@ -4827,14 +4827,13 @@
       "id": "e8c096ec91eda2afd2bed43031f8d1d3",
       "title": "Claude在演示中90分钟发现知名开源项目零日漏洞",
       "original_title": "I think we just got a demo of Mythos and I’m surprised nobodies talking about it.. 💔 In what might be the first instance the general public has se...",
-      "summary": "有用户在测试Claude Mythos时发现其成功识别了开源平台Ghost历史上首个关键安全漏洞——一个复杂的盲SQL注入，该平台在GitHub拥有超过5万星标。若属实，这可能是Mythos首次公开亮相。",
+      "summary": "演示显示Claude Mythos在未经提示的情况下，自主发现了开源平台Ghost中存在的历史首例关键安全漏洞——盲SQL注入，并独立编写Python漏洞利用脚本成功提取了管理员API密钥和密码哈希。",
       "rating": "A+",
-      "score": 97,
-      "type": "product",
+      "score": 100,
+      "type": "safety",
       "typeName": "安全伦理",
       "expansion": "AI自动化漏洞挖掘能力可能重构网络安全行业格局，大幅提升漏洞发现效率。",
       "entities": [
-        "Anthropic",
         "Claude",
         "Ghost",
         "Mythos"
@@ -4851,9 +4850,9 @@
       "source": "Twitter",
       "url": "https://x.com/chatgpt21/status/2038524685781008732",
       "original_content": "I think we just got a demo of Mythos and I’m surprised nobodies talking about it.. 💔 In what might be the first instance the general public has seen of Claude Mythos Mythos (TBD) just uncovered a critical zero-day vulnerability in Ghost, an open-source platform with over 50,000 stars on GitHub that has never had a critical security flaw in its entire history. It identified a highly complex \"blind SQL injection\" a flaw so subtle you can't even see the output, only how the server delays its response. When asked to prove the severity of the bug, the model autonomously wrote a custom Python exploit script that successfully navigated the blind injection to extract the admin API key, secret, and password hashes from the database completely unauthenticated… This is genuinely game changing because it proves frontier models can now actively discover, reason through, and successfully build exploits for invisible vulnerabilities in enterprise-grade architecture that human developers missed for years. Cyber security companies are cooked.",
-      "chinese_title": "Claude Mythos疑似首秀：首次公开发现GitHub高星项目关键零日漏洞",
+      "chinese_title": "Claude Mythos自主发现Ghost平台盲SQL注入零日漏洞并构建利用脚本",
       "grade": "S",
-      "extension": "此事若被证实，将标志AI安全研究能力的重要跃迁，可能引发对AI驱动漏洞挖掘伦理和应用的广泛讨论。"
+      "extension": "可引发对前沿AI自主发现与利用安全漏洞能力的伦理与监管讨论，以及对网络安全行业工作流变革的深远影响。"
     },
     {
       "id": "70b3c745523ebc243ef70b24ff3b8969",
@@ -6922,6 +6921,324 @@
   ],
   "2026-03-30": [
     {
+      "id": "fcd3fe5c06fdcb73d0aad0f5e3f7a260",
+      "title": "Anthropic CEO警示：AI变革浪潮已至，行业却仍在自我安慰",
+      "original_title": "Anthropic CEO：海啸已到眼前，大家还在自我安慰",
+      "summary": "Anthropic CEO再度发出警告，认为人工智能带来的剧烈变革已迫在眉睫，但业界普遍存在低估风险和延迟应对的心理。",
+      "rating": "B",
+      "score": 70,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "可进一步追踪科技巨头高管近期对AI安全与发展速度的集体表态，以及各国监管机构的反应节奏。",
+      "entities": [
+        "Ai安全",
+        "Anthropic"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/__Inty__/status/2038581086544937151"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774879653,
+      "published_at": "2026-03-30T22:07:33.354656",
+      "source": "Twitter",
+      "url": "https://x.com/__Inty__/status/2038581086544937151"
+    },
+    {
+      "id": "35ed00b46be8795b47c05c5e49337c11",
+      "title": "acpx发布Agentic Workflows：用节点式图编排替代单提示词代理",
+      "original_title": "acpx v0.4 ships Agentic Workflows, or as I like to call them \"Agentic Graphs\" It let's you create node-based workflows on top of ACP (Agent Client Pro...",
+      "summary": "acpx v0.4推出基于ACP协议的节点式工作流功能，允许开发者将代码代理的复杂任务拆分为多步骤确定性流程，以提升可观测性并减少模型 priming 导致的性能损失。",
+      "rating": "A",
+      "score": 82,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "可对比 n8n、Langflow 等现有工作流方案，分析节点式 Agent 编排对开源维护效率的实际影响。",
+      "entities": [
+        "Acpx",
+        "Codex",
+        "OpenAI"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/onusoz/status/2038565725690900992"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774879653,
+      "published_at": "2026-03-30T22:07:33.354750",
+      "source": "Twitter",
+      "url": "https://x.com/onusoz/status/2038565725690900992"
+    },
+    {
+      "id": "34a0fbed690d07fe38be10db97a798e2",
+      "title": "Kimi、Cursor、Chroma三家Agent产品训练方法论惊人一致：强基座+生产环境RL+结果奖励",
+      "original_title": "前 Hugging Face 技术负责人、现谷歌 DeepMind 资深工程师 Philipp Schmid 对比了近期三篇 Agent 模型技术报告后发现，月之暗面（Kimi K2.5）、AI 编程工具 Curs...",
+      "summary": "前HuggingFace技术负责人Philipp Schmid对比发现，月之暗面Kimi K2.5、Cursor Composer 2和Chroma Context-1虽独立开发，但在垂直Agent模型训练上采用了几乎相同的强化学习配方：强基座模型、生产级执行环境、可验证结果奖励、异步大规模并行。",
+      "rating": "S",
+      "score": 98,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "可延伸至分析2026年Agent模型训练范式的收敛趋势，以及对基础设施、数据飞轮和奖励工程服务商的产业链影响。",
+      "entities": [
+        "Chroma",
+        "Cursor",
+        "Kimi",
+        "OpenAI",
+        "Philipp Schmid"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/0xLogicrw/status/2038527327022498293"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774879653,
+      "published_at": "2026-03-30T22:07:33.354881",
+      "source": "Twitter",
+      "url": "https://x.com/0xLogicrw/status/2038527327022498293"
+    },
+    {
+      "id": "67c2042dae9f2b6b72c7f1b3ab0e4b56",
+      "title": "Midjourney工程师开源纯TypeScript页面排版算法：绕过浏览器Reflow快600倍",
+      "original_title": "A Midjourney engineer just open-sourced a way to lay out entire web pages without CSS. Not a framework. Not a library that wraps the DOM. A pure TypeS...",
+      "summary": "Midjourney工程师Cheng Lou开源了一种不依赖CSS、完全绕过浏览器Reflow的纯TypeScript文本测量排版方案，旨在为AI实时生成用户界面提供高性能底层支持。",
+      "rating": "A",
+      "score": 82,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "可观察该方案对AI生成UI、设计工具及前端工程范式的潜在影响，以及相关生态的跟进速度。",
+      "entities": [
+        "Cheng Lou",
+        "Midjourney",
+        "Typescript"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/PawelHuryn/status/2038525388037448113"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774879653,
+      "published_at": "2026-03-30T22:07:33.354938",
+      "source": "Twitter",
+      "url": "https://x.com/PawelHuryn/status/2038525388037448113"
+    },
+    {
+      "id": "734de30d4eb8903152bfc3592c4f8b6c",
+      "title": "谷歌提出VGGRPO：用四维潜在奖励提升视频扩散模型世界一致性",
+      "original_title": "🎥 Video diffusion models can create beautiful videos, but their worlds often fall apart. 🔥 Excited to share our latest work at @Google: 📢 VGG...",
+      "summary": "谷歌研究团队发布VGGRPO方法，通过引入4D潜在奖励模型，解决视频扩散模型在生成过程中世界一致性容易崩溃的问题，可生成时空更连贯的长视频内容。",
+      "rating": "A",
+      "score": 80,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "可追踪该技术与Sora等主流视频生成模型的改进关联，以及对长视频生成和影视制作工具链的影响。",
+      "entities": [
+        "Vggrpo",
+        "谷歌"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/ZhaochongAn/status/2038495900998201659"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774879653,
+      "published_at": "2026-03-30T22:07:33.355048",
+      "source": "Twitter",
+      "url": "https://x.com/ZhaochongAn/status/2038495900998201659"
+    },
+    {
+      "id": "93e491e627afb1311eea93cc99f706a7",
+      "title": "ScaleOps完成1.3亿美元C轮融资，主攻AI算力资源自动化调度",
+      "original_title": "ScaleOps raises $130M to improve computing efficiency amid AI demand",
+      "summary": "以色列云原生资源优化公司ScaleOps获得1.3亿美元C轮融资，其产品通过实时自动化Kubernetes资源配置，帮助企业降低AI训练与推理带来的GPU成本和云支出。",
+      "rating": "B",
+      "score": 71,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "可关注AI算力成本焦虑背景下，FinOps与云资源自动优化赛道的市场扩张与竞争格局。",
+      "entities": [
+        "Kubernetes",
+        "Scaleops"
+      ],
+      "sourceLinks": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/03/30/scaleops-130m-series-c-kubernetes-efficiency-ai-demand-funding/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774879653,
+      "published_at": "2026-03-30T22:07:33.355110",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/03/30/scaleops-130m-series-c-kubernetes-efficiency-ai-demand-funding/"
+    },
+    {
+      "id": "b426d0b79c7f06a53ac7a6d2da8333d9",
+      "title": "微软面向Frontier项目推出Copilot Cowork，集成Anthropic与OpenAI模型构建研究批判工具",
+      "original_title": "Microsoft rolls out Copilot Cowork to its Frontier program for early-stage testing, including a new Researcher Critique tool using Anthropic and OpenAI models (Jared Spataro/Microsoft 365 Blog)",
+      "summary": "Microsoft 365部门开始向Frontier早期测试项目推送Copilot Cowork功能，其中新上线的Researcher Critique工具结合了Anthropic与OpenAI的模型能力，用于辅助研究审阅与批判性分析。",
+      "rating": "A",
+      "score": 81,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "可追踪微软Copilot产品线在企业科研、知识工作场景的落地进展，以及与Google Workspace的差异化竞争。",
+      "entities": [
+        "Anthropic",
+        "Copilot",
+        "OpenAI",
+        "微软"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p22#a260330p22"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774879653,
+      "published_at": "2026-03-30T22:07:33.355156",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p22#a260330p22"
+    },
+    {
+      "id": "05706165aedbfa44a326e63017bec60f",
+      "title": "韩国AI芯片独角兽Rebellions获4亿美元pre-IPO融资，半年累计募资6.5亿美元",
+      "original_title": "Fabless AI chip startup Rebellions raised $400M in a pre-IPO round at a $2.34B valuation, bringing its total funding to $850M, with $650M in the past six months (Lucas Ropek/TechCrunch)",
+      "summary": "韩国无厂AI芯片初创公司Rebellions完成4亿美元pre-IPO轮融资，估值达23.4亿美元，总融资额升至8.5亿美元。公司专注于AI推理芯片，目标进一步挑战Nvidia市场地位。",
+      "rating": "A+",
+      "score": 86,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "可追踪Rebellions上市进程及韩国半导体产业在AI推理芯片领域的布局，预判对亚洲算力市场的供应格局影响。",
+      "entities": [
+        "Rebellions",
+        "Sk Telecom",
+        "英伟达"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p21#a260330p21"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774879653,
+      "published_at": "2026-03-30T22:07:33.355238",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p21#a260330p21"
+    },
+    {
+      "id": "1c743aeaf77fafeaaed946c124ee2cf3",
+      "title": "NASA计划在2030年代前建成月球基地，转向可持续驻留战略",
+      "original_title": "NASA wants to build a base on the Moon by the 2030s – how and why it plans to build up to a long-term lunar presence",
+      "summary": "NASA更新了Artemis计划路线图，明确从单次登月竞赛转向建设长期月球基地，增加2027年低地球轨道对接测试任务，并在2028年实现月球南极着陆，为后续火星探测积累经验。",
+      "rating": "B",
+      "score": 72,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "可关注SpaceX、Blue Origin商业月球着陆器与NASA任务的集成进展，以及中美太空竞赛的新阶段动态。",
+      "entities": [
+        "Blue Origin",
+        "Nasa",
+        "SpaceX"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Science + Technology – Articles – The Conversation",
+          "url": "https://theconversation.com/nasa-wants-to-build-a-base-on-the-moon-by-the-2030s-how-and-why-it-plans-to-build-up-to-a-long-term-lunar-presence-279166"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774879653,
+      "published_at": "2026-03-30T22:07:33.355518",
+      "source": "Science + Technology – Articles – The Conversation",
+      "url": "https://theconversation.com/nasa-wants-to-build-a-base-on-the-moon-by-the-2030s-how-and-why-it-plans-to-build-up-to-a-long-term-lunar-presence-279166"
+    },
+    {
+      "id": "a3a71ba401e786c730358062ebf20a8a",
+      "title": "美国联邦科研经费削减引发学术危机：实验室停摆、博士生涯受威胁",
+      "original_title": "Panicking scientists, canceled experiments – federal funding cuts turned my work as a research dean into crisis management",
+      "summary": "一名医学院研究系主任自述，特朗普政府主导的美国国立卫生研究院经费削减与DOGE干预，已导致大量科研项目被迫终止、青年研究人员失业，并可能毁掉一整代科学人才。",
+      "rating": "A",
+      "score": 75,
+      "type": "society",
+      "typeName": "社会影响",
+      "expansion": "可观察美国科研政策动荡对全球人才流向、中国科研竞争力及国际科研合作的长期影响。",
+      "entities": [
+        "Doge",
+        "Nih"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Science + Technology – Articles – The Conversation",
+          "url": "https://theconversation.com/panicking-scientists-canceled-experiments-federal-funding-cuts-turned-my-work-as-a-research-dean-into-crisis-management-277162"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774879653,
+      "published_at": "2026-03-30T22:07:33.355852",
+      "source": "Science + Technology – Articles – The Conversation",
+      "url": "https://theconversation.com/panicking-scientists-canceled-experiments-federal-funding-cuts-turned-my-work-as-a-research-dean-into-crisis-management-277162"
+    },
+    {
+      "id": "7ad766ae9375e2c4b92dd621dcd41261",
+      "title": "研究团队用机器学习识别费城社区士绅化视觉特征",
+      "original_title": "We analyzed Philly street scenes and identified signs of gentrification using machine learning trained on longtime residents’ observations",
+      "summary": "研究人员结合长期居民观察、Google街景图像与深度学习模型，开发出一种识别城市士绅化视觉信号的AI方法，准确率约84%，为城市规划和社区研究提供了新的数据工具。",
+      "rating": "B",
+      "score": 68,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "可探讨计算机视觉技术在城市社会学、公共政策评估中的应用潜力与伦理争议。",
+      "entities": [
+        "机器学习",
+        "谷歌"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Science + Technology – Articles – The Conversation",
+          "url": "https://theconversation.com/we-analyzed-philly-street-scenes-and-identified-signs-of-gentrification-using-machine-learning-trained-on-longtime-residents-observations-277704"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774879653,
+      "published_at": "2026-03-30T22:07:33.356125",
+      "source": "Science + Technology – Articles – The Conversation",
+      "url": "https://theconversation.com/we-analyzed-philly-street-scenes-and-identified-signs-of-gentrification-using-machine-learning-trained-on-longtime-residents-observations-277704"
+    },
+    {
+      "id": "2274400a30d64e4a8767cf2a7924cd58",
+      "title": "研究指出海事网络安全培训缺口影响行业防护能力",
+      "original_title": "Researchers find training gaps impacting maritime cybersecurity readiness",
+      "summary": "一项研究显示，商业船舶船员在应对海上网络威胁方面的培训存在明显不足，油轮和货运船队面临较高的数字安全风险。",
+      "rating": "B",
+      "score": 66,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "可关注关键基础设施网络安全赛道的 Marine/IoT 安全需求增长。",
+      "entities": [],
+      "sourceLinks": [
+        {
+          "name": "Tech Xplore - electronic gadgets, technology advances and research news",
+          "url": "https://techxplore.com/news/2026-03-gaps-impacting-maritime-cybersecurity-readiness.html"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774879653,
+      "published_at": "2026-03-30T22:07:33.356142",
+      "source": "Tech Xplore - electronic gadgets, technology advances and research news",
+      "url": "https://techxplore.com/news/2026-03-gaps-impacting-maritime-cybersecurity-readiness.html"
+    },
+    {
       "id": "fdc188234f6fdd8f66cd903a34ac82cb",
       "title": "独立开发者7天逆向复现谷歌算法，提速3.7倍超越论文承诺",
       "original_title": "Solo dev reverse-engineered Google's billion-dollar algorithm in 7 days Google published the paper that crashed memory stocks worldwide. Then shipped ...",
@@ -8295,10 +8612,10 @@
       "id": "1eab5ee64159ec3b8ef035b45a063f14",
       "title": "中国人形机器人公司Agibot量产下线第10000台 三个月产能翻倍",
       "original_title": "AGIBOT Rolls Out 10,000th Unit as Embodied AI Enters Scaling Phase",
-      "summary": "AGIBOT智元机器人宣布第10000台机器人正式下线，仅用一季度实现从5000台到10000台的翻倍增长。联合创始人彭志辉表示2026年将是通用具身智能机器人大规模部署的关键之年。",
+      "summary": "AGIBOT宣布第10000台机器人正式下线，仅用一个季度实现从5000台到万台的翻倍增长。创始人彭志辉表示，2026年将是通用具身智能机器人大规模部署的关键一年，公司有望实现年出货数万台。",
       "rating": "S",
-      "score": 93,
-      "type": "industry",
+      "score": 92,
+      "type": "product",
       "typeName": "硬件基建",
       "expansion": "Agibot的产能突破标志着中国人形机器人产业进入规模化量产阶段，可能推动人形机器人成本快速下降，加速行业商业化应用进程。",
       "entities": [
@@ -8318,9 +8635,9 @@
       "source": "Pandaily",
       "url": "https://pandaily.com/agibot-rolls-out-10-000th-unit-as-embodied-ai-enters-scaling-phase",
       "original_content": "AGIBOT announced today that its 10,000th robot has officially rolled off the production line—just one quarter after the company reached the 5,000-unit milestone. At the ceremony, co-founder, president, and CTO Peng Zhihui (widely known as “Zhihuijun”) stated that 2026 will mark a critical phase for the large-scale deployment of general-purpose embodied robots. He emphasized that true scalability is not defined by isolated capabilities, but by whether robots can operate continuously in real-world environments—such as running 24/7 in industrial settings. Headquartered in Shanghai, AGIBOT is one of China’s leading robotics companies. Based on current growth trends, the company expects its annual shipments to reach tens of thousands of units by 2026. According to a report by Omdia, the global humanoid robot market entered a phase of rapid growth in 2025, with total shipments projected to reach 13,000 units for the year. Chinese manufacturers have shown strong momentum in large-scale production, with AGIBOT leading the market—shipping over 5,100 units, accounting for 39% of global market share, and ranking first worldwide in both shipments and market share. Source：IT Home",
-      "chinese_title": "智元机器人第10000台下线，2026年启动通用机器人大规模部署",
+      "chinese_title": "智元机器人AGIBOT第10000台下线，中国人形机器人量产进入规模化阶段",
       "grade": "S",
-      "extension": "若智元机器人量产和真实场景部署顺利，将标志中国人形机器人产业进入规模化阶段，可能带动上游供应链和下游服务生态的 investments。"
+      "extension": "可进一步分析中国人形机器人产业链的产能爬坡、成本下降曲线，以及对全球制造业和服务业自动化的替代效应。"
     },
     {
       "id": "d7c1e28d012d046caf4c3d25d0e48bd5",
@@ -10144,15 +10461,14 @@
       "id": "efb4db02a0fde953882a5525634704e4",
       "title": "Bluesky推出基于AT协议的智能社交应用Attie 集成Claude能力",
       "original_title": "Bluesky’s new Attie app uses AI to give you full control over your social feed",
-      "summary": "Bluesky前CEO Jay Graber在ATmosphere大会上发布了基于AT Protocol和Anthropic Claude构建的独立应用Attie，主打用AI让用户完全掌控自己的社交内容流，目前仅限邀请制。",
+      "summary": "Bluesky前CEO Jay Graber发布基于AT Protocol和Anthropic Claude驱动的新应用Attie，允许用户通过AI自定义和控制社交Feed内容，目前仅限邀请测试。",
       "rating": "A+",
-      "score": 86,
+      "score": 88,
       "type": "product",
       "typeName": "产品发布",
       "expansion": "去中心化社交协议与AI能力的结合可能开创社交产品新范式，后续或有更多同类产品涌现，对传统社交平台构成潜在挑战。",
       "entities": [
         "Anthropic",
-        "Attie",
         "Bluesky",
         "Claude",
         "Jay Graber"
@@ -10169,9 +10485,9 @@
       "source": "The Next Web",
       "url": "https://thenextweb.com/news/blueskys-new-attie-app-uses-ai-to-give-you-full-control-over-your-social-feed",
       "original_content": "The standalone app, built on the AT Protocol and powered by Anthropic’s Claude, was unveiled at the ATmosphere conference by Jay Graber, who stepped back from Bluesky’s CEO role specifically to build it. It’s currently invite-only, with a waitlist open. Bluesky’s best-known differentiator from X and Threads has always been its custom feed system, the […] This story continues at The Next Web",
-      "chinese_title": "Bluesky推出AI驱动的Attie应用，让用户自定义社交信息流",
+      "chinese_title": "Bluesky推出AI驱动新应用Attie，让用户完全掌控社交信息流",
       "grade": "A+",
-      "extension": "Attie代表了社交算法透明化和用户主权的趋势，可能对Twitter和Threads的推荐机制形成差异化竞争压力。"
+      "extension": "可观察Attie与X、Threads在算法透明度与用户体验控制上的差异化竞争，以及去中心化社交+AI融合的产品趋势。"
     },
     {
       "id": "378cf3f95a39b8cef9f231ff03e9dc4d",
