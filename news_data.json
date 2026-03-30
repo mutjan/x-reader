@@ -6915,6 +6915,112 @@
   ],
   "2026-03-30": [
     {
+      "id": "1e3bef348986e1cd4d6a6ad099e5b0d7",
+      "title": "支持AI团体拟投入1亿美元参与美国中期选举",
+      "original_title": "Pro-AI group to spend $100mn on US midterm elections as backlash grows",
+      "summary": "随着AI监管争议加剧，支持AI发展的利益团体计划投入1亿美元资金参与美国中期选举，试图影响未来AI监管政策走向。",
+      "rating": "A+",
+      "score": 86,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "这一事件可能影响美国未来AI监管政策走向，进而对全球AI产业发展和监管框架产生连锁反应。",
+      "entities": [
+        "Ai监管",
+        "美国中期选举"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Technology",
+          "url": "https://www.ft.com/content/6a3f1938-759d-4ae4-924e-6a0feac14e24"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774830625,
+      "published_at": "2026-03-30T08:30:25.578662",
+      "source": "Technology",
+      "url": "https://www.ft.com/content/6a3f1938-759d-4ae4-924e-6a0feac14e24"
+    },
+    {
+      "id": "022384154852c713a4d4eacd5fada4a7",
+      "title": "Claude Code被曝每10分钟强制重置代码仓库",
+      "original_title": "Claude Code runs Git reset –hard origin/main against project repo every 10 mins",
+      "summary": "开发者发现Claude Code存在严重bug，会每隔10分钟自动执行git reset --hard命令覆盖本地代码变更，引发开发者社区广泛讨论。",
+      "rating": "A+",
+      "score": 88,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "该问题可能影响开发者对Claude Code的信任，推动Anthropic加快产品稳定性改进，同时也为AI代码助手的安全性设计敲响警钟。",
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Git"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Hacker News",
+          "url": "https://github.com/anthropics/claude-code/issues/40710"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774830625,
+      "published_at": "2026-03-30T08:30:25.578712",
+      "source": "Hacker News",
+      "url": "https://github.com/anthropics/claude-code/issues/40710"
+    },
+    {
+      "id": "89e0020949e56e7a93b0c951e1329798",
+      "title": "公司收购废旧电子产品用于机器人数据训练",
+      "original_title": "I'll buy your electronics to feed our robot",
+      "summary": "一家公司推出回收计划，通过收购用户手中的废旧电子产品获取零部件，用于机器人研发和数据训练。",
+      "rating": "B",
+      "score": 70,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "这种模式可能成为机器人公司降低硬件成本的新途径，同时也带来电子垃圾处理和数据安全方面的新问题。",
+      "entities": [
+        "机器人",
+        "电子垃圾回收"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Hacker News",
+          "url": "https://www.dayworkx.com/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774830625,
+      "published_at": "2026-03-30T08:30:25.578734",
+      "source": "Hacker News",
+      "url": "https://www.dayworkx.com/"
+    },
+    {
+      "id": "064cb511203dce8a0d575f4877ca4de1",
+      "title": "天文学家发现首例稳定质量转移的褐矮星双星系统",
+      "original_title": "EU lawmakers advance deportation plan",
+      "summary": "加州理工学院团队利用兹威基瞬变设施发现编号为ZTF J1239+8347的褐矮星双星系统，观测到两个褐矮星之间存在稳定的物质转移现象，相关成果发表于《天体物理学杂志快报》。",
+      "rating": "B",
+      "score": 68,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该发现有助于天文学家更好地理解褐矮星的演化过程和双星系统的物质转移机制，为恒星形成理论提供新的观测证据。",
+      "entities": [
+        "加州理工学院",
+        "天文观测",
+        "褐矮星"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Semafor",
+          "url": "https://www.semafor.com/article/03/29/2026/eu-lawmakers-advance-deportation-plan"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774830625,
+      "published_at": "2026-03-30T08:30:25.578800",
+      "source": "Semafor",
+      "url": "https://www.semafor.com/article/03/29/2026/eu-lawmakers-advance-deportation-plan"
+    },
+    {
       "id": "0feb17c657ed2a9c7d755f0cec9b098b",
       "title": "X平台Grok实现多语言帖子自动翻译和推荐功能",
       "original_title": "Grok automatically translating and recommending 𝕏 posts from other languages is starting to work",
@@ -7763,8 +7869,8 @@
       "title": "微软开源Agent Lightning框架，用强化学习训练任意AI智能体",
       "original_title": "Microsoft did it again! Building with AI agents almost never works on the first try. A dev has to spend days tweaking prompts, adding examples, hoping...",
       "summary": "微软推出开源Agent Lightning框架，可通过强化学习训练各类AI智能体，支持LangChain、AutoGen等主流框架，解决智能体首次运行成功率低、需要大量调试的行业痛点。",
-      "rating": "S",
-      "score": 93,
+      "rating": "A+",
+      "score": 88,
       "type": "product",
       "typeName": "产品发布",
       "expansion": "该框架可能大幅降低AI智能体开发门槛，推动智能体应用落地，或将影响现有智能体开发工具市场格局。",
