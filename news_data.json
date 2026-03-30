@@ -3948,18 +3948,17 @@
       "url": "https://x.com/daniel_mac8/status/2038217104726577603"
     },
     {
-      "id": "6f8457214a6341d549493888bac0416f",
+      "id": "71728fadf57ad814d09dda35290685e9",
       "title": "DeepSeek网页端模型疑似升级 输出质量显著提升或为V4预热",
-      "original_title": "🚨 DeepSeek just got a HUGE upgrade It's been upgraded on the web app, and the outputs are much better. Check it out! They could be fine-tuning the ...",
-      "summary": "DeepSeek网页端模型近期完成升级，输出质量明显优化，有用户推测可能是新一代V4模型的灰度测试，或是基于V3进行的针对性微调，目前官方尚未正式确认。",
+      "original_title": "DeepSeek likely changed the model again after the 7h outage Before the outage, the model identified itself as v3. Now it has gone back to identifying ...",
+      "summary": "有用户观察到DeepSeek在7小时服务中断后，模型自我标识从v3变回\\\"最新版本\\\"，且零样本代码生成风格也有所不同，推测其Web/App服务端模型可能再次进行了静默更新。",
       "rating": "A",
-      "score": 82,
+      "score": 87,
       "type": "product",
       "typeName": "产品发布",
       "expansion": "DeepSeek模型迭代可能加剧国内大模型市场竞争，推动各家厂商加快产品更新节奏，对下游应用开发生态也将产生积极影响。",
       "entities": [
-        "DeepSeek",
-        "大模型"
+        "DeepSeek"
       ],
       "sourceLinks": [
         {
@@ -3971,7 +3970,11 @@
       "timestamp": 1774789342,
       "published_at": "2026-03-29T21:02:22.008526",
       "source": "Twitter",
-      "url": "https://x.com/marmaduke091/status/2038211313566965823"
+      "url": "https://x.com/AiBattle_/status/2038559584399372431",
+      "original_content": "DeepSeek likely changed the model again after the 7h outage Before the outage, the model identified itself as v3. Now it has gone back to identifying itself as \"the latest version\" The SVG quality also seems to have gotten worse and reverted to how it was before AiBattle: The DeepSeek model that they serve on the WEB/APP may have been updated again. The model does seem to consistently identify itself as V3 now The zero-shot coding outputs I’m getting now also seem different in style from the ones I got a few days ago It needs more testing to be",
+      "chinese_title": "DeepSeek官网模型疑似再次更新， outage后识别行为生变",
+      "grade": "A+",
+      "extension": "若属实，可跟进DeepSeek的版本迭代策略、模型蒸馏差异以及用户可见的行为漂移问题。"
     },
     {
       "id": "ea2b545622948884cd0770353e3c7483",
@@ -4824,16 +4827,17 @@
       "id": "e8c096ec91eda2afd2bed43031f8d1d3",
       "title": "Claude在演示中90分钟发现知名开源项目零日漏洞",
       "original_title": "I think we just got a demo of Mythos and I’m surprised nobodies talking about it.. 💔 In what might be the first instance the general public has se...",
-      "summary": "Claude的Mythos能力在首次面向公众的演示中发现了一个拥有超过5万星的开源平台Ghost的零日SQL注入漏洞，显示出其在安全研究领域的潜力。",
+      "summary": "有用户在测试Claude Mythos时发现其成功识别了开源平台Ghost历史上首个关键安全漏洞——一个复杂的盲SQL注入，该平台在GitHub拥有超过5万星标。若属实，这可能是Mythos首次公开亮相。",
       "rating": "A+",
-      "score": 95,
-      "type": "research",
+      "score": 97,
+      "type": "product",
       "typeName": "安全伦理",
       "expansion": "AI自动化漏洞挖掘能力可能重构网络安全行业格局，大幅提升漏洞发现效率。",
       "entities": [
         "Anthropic",
         "Claude",
-        "Ghost"
+        "Ghost",
+        "Mythos"
       ],
       "sourceLinks": [
         {
@@ -4847,9 +4851,9 @@
       "source": "Twitter",
       "url": "https://x.com/chatgpt21/status/2038524685781008732",
       "original_content": "I think we just got a demo of Mythos and I’m surprised nobodies talking about it.. 💔 In what might be the first instance the general public has seen of Claude Mythos Mythos (TBD) just uncovered a critical zero-day vulnerability in Ghost, an open-source platform with over 50,000 stars on GitHub that has never had a critical security flaw in its entire history. It identified a highly complex \"blind SQL injection\" a flaw so subtle you can't even see the output, only how the server delays its response. When asked to prove the severity of the bug, the model autonomously wrote a custom Python exploit script that successfully navigated the blind injection to extract the admin API key, secret, and password hashes from the database completely unauthenticated… This is genuinely game changing because it proves frontier models can now actively discover, reason through, and successfully build exploits for invisible vulnerabilities in enterprise-grade architecture that human developers missed for years. Cyber security companies are cooked.",
-      "chinese_title": "Claude Mythos首次公开演示发现GitHub项目Ghost零日漏洞",
+      "chinese_title": "Claude Mythos疑似首秀：首次公开发现GitHub高星项目关键零日漏洞",
       "grade": "S",
-      "extension": "可延伸至AI安全研究能力对网络安全行业的颠覆性影响，以及开源项目安全审计模式的变革。"
+      "extension": "此事若被证实，将标志AI安全研究能力的重要跃迁，可能引发对AI驱动漏洞挖掘伦理和应用的广泛讨论。"
     },
     {
       "id": "70b3c745523ebc243ef70b24ff3b8969",
@@ -6918,6 +6922,344 @@
   ],
   "2026-03-30": [
     {
+      "id": "fdc188234f6fdd8f66cd903a34ac82cb",
+      "title": "独立开发者7天逆向复现谷歌算法，提速3.7倍超越论文承诺",
+      "original_title": "Solo dev reverse-engineered Google's billion-dollar algorithm in 7 days Google published the paper that crashed memory stocks worldwide. Then shipped ...",
+      "summary": "Tom Turney在谷歌发布导致内存股暴跌的论文后零代码发布的情况下，仅用7天便用Claude完成了完整复现，从Python原型到C语言 Metal GPU内核，性能从739 tok/s优化至2747 tok/s，实现3.7倍加速。",
+      "rating": "S",
+      "score": 97,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "此事折射出学术论文与工程落地的鸿沟，以及AI辅助编程对独立开发者的能力放大效应，可延伸讨论学术界开源文化、产业落地周期以及AI编程助手的边界。",
+      "entities": [
+        "Claude",
+        "Tom Turney",
+        "谷歌"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/k1rallik/status/2038567965465944491"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.846858",
+      "source": "Twitter",
+      "url": "https://x.com/k1rallik/status/2038567965465944491"
+    },
+    {
+      "id": "45a37327098ad8e2d70b17196ad38f97",
+      "title": "微软开源40亿参数TRELLIS.2模型，单图实时生成3D资产",
+      "original_title": "🚨BREAKING: Microsoft open sourced a 4B parameter model that generates production-ready 3D assets from a single image, and the speed numbers are gen...",
+      "summary": "微软开源了名为TRELLIS.2的图像到3D生成模型，采用新几何格式O-Voxel，在CUDA上可在100毫秒内生成带纹理的网格，极大缩短了3D内容生产链路，向实时3D资产生成迈出关键一步。",
+      "rating": "A+",
+      "score": 88,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "该模型开源将刺激游戏、影视、元宇宙内容生产工具的变革，可进一步关注开发者社区反馈及竞品动态。",
+      "entities": [
+        "O-Voxel",
+        "Trellis",
+        "微软"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/ihtesham2005/status/2038549375794995614"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.846983",
+      "source": "Twitter",
+      "url": "https://x.com/ihtesham2005/status/2038549375794995614"
+    },
+    {
+      "id": "f5fd2b8e5cda22de2034e4b622c6a4de",
+      "title": "ChatGPT网页端被曝静默采集55项用户数据，解锁前已完成扫描",
+      "original_title": "你以为你在用 ChatGPT，其实在你打出第一个字之前，Cloudflare 已经读完了你的页面。 有人逆向解密了 ChatGPT 网页端的程序，发现了一个机制：用户每次打开页面...",
+      "summary": "有工程师逆向发现ChatGPT网页版在用户输入前已通过Cloudflare静默扫描包括GPU型号、屏幕分辨率、IP地址及React应用内部状态在内的55项数据，引发关于反机器人验证与用户隐私边界的争议。",
+      "rating": "S",
+      "score": 94,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "事件触及平台安全机制与用户知情同意的伦理边界，可能引发对主流AI产品数据采集行为的更广泛审计和监管关注。",
+      "entities": [
+        "Cloudflare",
+        "GPT",
+        "OpenAI"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/TechFlowPost/status/2038544579939701096"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.847031",
+      "source": "Twitter",
+      "url": "https://x.com/TechFlowPost/status/2038544579939701096"
+    },
+    {
+      "id": "85f936430f084dcb3a7e2d9f2ed496f9",
+      "title": "开发者分享网页Shader自动提取Skill，模型可复刻复杂网页特效",
+      "original_title": "牛逼，几乎可以完美还原你看到的任何网页特效 左侧是原网页，右侧是还原效果 模型：GLM4.7",
+      "summary": "一位开发者分享了自己为Claude Code等AI编程助手设计的Web Shader Extractor Skill，可自动完成从网页抓取、分析、反混淆到Shader移植的全流程，辅助复刻复杂网页视觉特效。",
+      "rating": "A",
+      "score": 78,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "此类AI辅助开发工具的普及可能降低前端特效开发门槛，可关注其在设计和创意行业的落地情况。",
+      "entities": [
+        "Claude Code",
+        "Glm"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/HeyHuazi/status/2038530102401847307"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.847071",
+      "source": "Twitter",
+      "url": "https://x.com/HeyHuazi/status/2038530102401847307"
+    },
+    {
+      "id": "4c2f497aebcfd151936807a92c3639d2",
+      "title": "AI安全研究机构开放招聘：聚焦思维链可信度与推理验证",
+      "original_title": "Hiring 🎉 Researchers to work on Chains-of-Thought faithfulness, reasoning verification, and AI monitoring robustness, some core questions for how o...",
+      "summary": "一家AI安全研究团队发布招聘信息，计划招募2名拥有博士学位的研究员和1名研究助理，研究方向为思维链可信度、推理验证及AI监控鲁棒性等 oversight 核心问题。",
+      "rating": "B",
+      "score": 68,
+      "type": "personnel",
+      "typeName": "人事变动",
+      "expansion": "该招聘方向反映业界对大型推理模型内部机制可解释性的关注升温，后续可追踪该团队的研究产出。",
+      "entities": [
+        "Fazl Barez"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/FazlBarez/status/2038527221896270124"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.847105",
+      "source": "Twitter",
+      "url": "https://x.com/FazlBarez/status/2038527221896270124"
+    },
+    {
+      "id": "793de2c8307ce25a5e77913a13ff37b7",
+      "title": "AI代码审查平台Qodo完成7000万美元B轮融资，累计融资达1.2亿美元",
+      "original_title": "New York-based Qodo, which offers AI agents for code review, testing, and governance, raised a $70M Series B led by Qumra, taking its total funding to $120M (Kate Park/TechCrunch)",
+      "summary": "总部位于纽约的Qodo公司，提供AI agent驱动的代码审查、测试和治理服务，宣布完成由Qumra领投的7000万美元B轮融资，累计融资达1.2亿美元。",
+      "rating": "A",
+      "score": 80,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "随着AI编程工具月产数十亿行代码，代码质量保证正成为新瓶颈，Qodo的融资反映市场对AI驱动软件验证需求的增长。",
+      "entities": [
+        "Qodo",
+        "Qumra"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p20#a260330p20"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.847246",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p20#a260330p20"
+    },
+    {
+      "id": "740f3eb7f672d83acec2d0914c57c79e",
+      "title": "分析师称微软Fabric Database Hub仅为\\\"局部解决方案\\\"",
+      "original_title": "Microsoft Fabric Database Hub only a 'partial' solution for admins",
+      "summary": "分析师认为微软新推出的Fabric Database Hub对使用非微软数据库的企业而言仅是一个局部解决方案，但在微软生态内部有望提升数据库的互联性和可管理性。",
+      "rating": "B",
+      "score": 68,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "enterprise数据库整合赛道竞争激烈，微软的进展可能影响多云数据库管理市场的竞争格局。",
+      "entities": [
+        "Fabric Database Hub",
+        "微软"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Register",
+          "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/microsoft_fabric_database_hub_partial_solution/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.847285",
+      "source": "The Register",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/microsoft_fabric_database_hub_partial_solution/"
+    },
+    {
+      "id": "cb629bebc93187b70f334675ecb1f1ef",
+      "title": "MIT爆料：神秘创业公司R3 Bio正研发无脑人类克隆体",
+      "original_title": "The Download: brainless human clones and the first uterus kept alive outside a body",
+      "summary": "加州初创公司R3 Bio在秘密运营多年后披露其融资计划，目标是培育无感知能力的猴子\\\"器官囊\\\"以替代动物实验，MIT Technology Review披露背后还有更复杂的故事。",
+      "rating": "S",
+      "score": 92,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该研究触及生物伦理的敏感地带，可能引发关于人造生命体边界、器官农场合法性和公众接受度的激烈辩论。",
+      "entities": [
+        "Mit Technology Review",
+        "R3 Bio"
+      ],
+      "sourceLinks": [
+        {
+          "name": "New on MIT Technology Review (mistral)",
+          "url": "https://www.technologyreview.com/2026/03/30/1134836/the-download-brainless-human-clones-first-uterus-kept-alive-outside-body/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.847488",
+      "source": "New on MIT Technology Review (mistral)",
+      "url": "https://www.technologyreview.com/2026/03/30/1134836/the-download-brainless-human-clones-first-uterus-kept-alive-outside-body/"
+    },
+    {
+      "id": "bbdf40e77149a120b1fc2eea574602a3",
+      "title": "ChatGPT应用商店上线半年突破300个集成，但开发者抱怨功能受限",
+      "original_title": "OpenAI's ChatGPT app store now has 300+ app integrations six months after its launch, but faces sluggish adoption due to limited functionality for many apps (Natalie Lung/Bloomberg)",
+      "summary": "OpenAI的ChatGPT应用商店在推出半年后已接入超过300款第三方应用，但由于多数应用功能受限且接入体验不佳，开发者反映用户增长和采用速度低于预期。",
+      "rating": "A+",
+      "score": 86,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "第三方生态的活跃度直接影响ChatGPT作为平台的价值，OpenAI若不能改善开发者体验和功能深度，可能错失构建应用生态的关键窗口。",
+      "entities": [
+        "GPT",
+        "OpenAI"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p19#a260330p19"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.847531",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p19#a260330p19"
+    },
+    {
+      "id": "15d07cbab5c207edafb523e5cf3a414a",
+      "title": "Apple II如何奠定苹果五十年创新基因",
+      "original_title": "Apple II Forever!",
+      "summary": "The Verge发布长文回顾Apple II的历史地位，指出这款已停产数十年的产品是苹果首款爆款，也是塑造苹果产品文化和粉丝忠诚度的奠基之作。",
+      "rating": "B",
+      "score": 66,
+      "type": "society",
+      "typeName": "社会影响",
+      "expansion": "该文适合作为科技史回顾，但对当前产业动态的启示有限。",
+      "entities": [
+        "Apple Ii",
+        "苹果"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Verge -  Tech Posts (apple)",
+          "url": "https://www.theverge.com/tech/900677/apple-ii-personal-computer"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.847572",
+      "source": "The Verge -  Tech Posts (apple)",
+      "url": "https://www.theverge.com/tech/900677/apple-ii-personal-computer"
+    },
+    {
+      "id": "8a9c168c92d27b91ebd9530fc4553f5a",
+      "title": "HP整机促销：RTX 5090游戏主机降价1500美元与单卡同价",
+      "original_title": "Score an entire RTX 5090 gaming PC for the same price as the GPU itself, thanks to a massive $1,500 off — epic HP pre-built is ready for 4K gaming with 32GB DDR5 RAM and a 1TB SSD",
+      "summary": "HP官网对配备RTX 5090显卡、32GB DDR5内存及AMD八核处理器的Omen Max游戏主机提供超过1500美元折扣，售价3510美元，与单张RTX 5090显卡市价接近。",
+      "rating": "B",
+      "score": 74,
+      "type": "hardware",
+      "typeName": "硬件基建",
+      "expansion": "高端GPU供货紧张与整机促销的反差，反映了PC硬件市场的供需波动。",
+      "entities": [
+        "Hp",
+        "Rtx 5090"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/desktops/gaming-pcs/score-an-entire-rtx-5090-gaming-pc-for-the-same-price-as-the-gpu-itself-thanks-to-a-massive-usd1-500-off-epic-hp-pre-built-is-ready-for-4k-gaming-with-32gb-ddr5-ram-and-a-1tb-ssd"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.847627",
+      "source": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/desktops/gaming-pcs/score-an-entire-rtx-5090-gaming-pc-for-the-same-price-as-the-gpu-itself-thanks-to-a-massive-usd1-500-off-epic-hp-pre-built-is-ready-for-4k-gaming-with-32gb-ddr5-ram-and-a-1tb-ssd"
+    },
+    {
+      "id": "a4d77bdc69edfbd09c09724dcecdd667",
+      "title": "Anthropic发布史上最大规模AI访谈研究，揭示人类真实需求",
+      "original_title": "The largest AI survey ever reveals what humans actually want",
+      "summary": "Anthropic开展了一项超大规模AI访谈研究，覆盖全球数万用户，发现人们对AI的核心诉求并非技术本身，而是辅助工作、教育和家庭生活的实际价值，堪称一面映照人类欲望的镜子。",
+      "rating": "A+",
+      "score": 87,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该研究为AI产品设计和市场策略提供了宝贵的用户洞察，可能促使更多厂商从\\\"技术展示\\\"转向\\\"以人为本\\\"的产品哲学。",
+      "entities": [
+        "Anthropic"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Next Web",
+          "url": "https://thenextweb.com/news/the-largest-ai-survey-ever-reveals-what-humans-actually-want"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.847658",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/the-largest-ai-survey-ever-reveals-what-humans-actually-want"
+    },
+    {
+      "id": "839b05aeee4dfcf196c8c85580326010",
+      "title": "Hacker News热议：苹果在AI领域\\\"按兵不动\\\"反成赢家",
+      "original_title": "Apple nailed AI by doing fucking nothing lol",
+      "summary": "一条Hacker News帖子引发热议，评论认为苹果在生成式AI热潮中采取保守策略，反而避免了竞争对手在产品不成熟时 rushed launch 的声誉风险。",
+      "rating": "B",
+      "score": 72,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "这种观点反映了市场对AI产品成熟度的焦虑，以及对苹果慢热策略的重新审视。",
+      "entities": [
+        "苹果"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Hacker News (apple)",
+          "url": "https://xcancel.com/cryptopunk7213/status/2038351931589193953?s=20"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774875881,
+      "published_at": "2026-03-30T21:04:41.847732",
+      "source": "Hacker News (apple)",
+      "url": "https://xcancel.com/cryptopunk7213/status/2038351931589193953?s=20"
+    },
+    {
       "id": "03f33b6c1e77bfad77a9600147fd02a1",
       "title": "OpenAI发布SLAM工程师招聘信息",
       "original_title": "OpenAI is hiring for SLAM engineer. Who would say.",
@@ -7953,15 +8295,16 @@
       "id": "1eab5ee64159ec3b8ef035b45a063f14",
       "title": "中国人形机器人公司Agibot量产下线第10000台 三个月产能翻倍",
       "original_title": "AGIBOT Rolls Out 10,000th Unit as Embodied AI Enters Scaling Phase",
-      "summary": "国产具身智能公司AGIBOT宣布第10,000台机器人正式下线，仅用一个季度就实现了从5,000台到10,000台的翻倍跨越，联合创始人彭志辉表示2026年将是通用型具身机器人大规模部署的关键之年。",
+      "summary": "AGIBOT智元机器人宣布第10000台机器人正式下线，仅用一季度实现从5000台到10000台的翻倍增长。联合创始人彭志辉表示2026年将是通用具身智能机器人大规模部署的关键之年。",
       "rating": "S",
-      "score": 91,
+      "score": 93,
       "type": "industry",
       "typeName": "硬件基建",
       "expansion": "Agibot的产能突破标志着中国人形机器人产业进入规模化量产阶段，可能推动人形机器人成本快速下降，加速行业商业化应用进程。",
       "entities": [
         "Agibot",
-        "彭志辉"
+        "彭志辉",
+        "智元机器人"
       ],
       "sourceLinks": [
         {
@@ -7975,9 +8318,9 @@
       "source": "Pandaily",
       "url": "https://pandaily.com/agibot-rolls-out-10-000th-unit-as-embodied-ai-enters-scaling-phase",
       "original_content": "AGIBOT announced today that its 10,000th robot has officially rolled off the production line—just one quarter after the company reached the 5,000-unit milestone. At the ceremony, co-founder, president, and CTO Peng Zhihui (widely known as “Zhihuijun”) stated that 2026 will mark a critical phase for the large-scale deployment of general-purpose embodied robots. He emphasized that true scalability is not defined by isolated capabilities, but by whether robots can operate continuously in real-world environments—such as running 24/7 in industrial settings. Headquartered in Shanghai, AGIBOT is one of China’s leading robotics companies. Based on current growth trends, the company expects its annual shipments to reach tens of thousands of units by 2026. According to a report by Omdia, the global humanoid robot market entered a phase of rapid growth in 2025, with total shipments projected to reach 13,000 units for the year. Chinese manufacturers have shown strong momentum in large-scale production, with AGIBOT leading the market—shipping over 5,100 units, accounting for 39% of global market share, and ranking first worldwide in both shipments and market share. Source：IT Home",
-      "chinese_title": "智元机器人AGIBOT第10,000台下线，具身智能进入规模化阶段",
+      "chinese_title": "智元机器人第10000台下线，2026年启动通用机器人大规模部署",
       "grade": "S",
-      "extension": "可延伸至国产机器人产业链与特斯拉Optimus、Figure等海外竞品的量产竞赛，以及人形机器人在制造业和服务业的落地节奏。"
+      "extension": "若智元机器人量产和真实场景部署顺利，将标志中国人形机器人产业进入规模化阶段，可能带动上游供应链和下游服务生态的 investments。"
     },
     {
       "id": "d7c1e28d012d046caf4c3d25d0e48bd5",
@@ -9801,16 +10144,18 @@
       "id": "efb4db02a0fde953882a5525634704e4",
       "title": "Bluesky推出基于AT协议的智能社交应用Attie 集成Claude能力",
       "original_title": "Bluesky’s new Attie app uses AI to give you full control over your social feed",
-      "summary": "Bluesky前CEO Jay Graber发布了基于AT协议和Anthropic Claude的独立应用Attie，利用AI让用户拥有对社交信息流的完整控制权，目前处于邀请制测试阶段。",
+      "summary": "Bluesky前CEO Jay Graber在ATmosphere大会上发布了基于AT Protocol和Anthropic Claude构建的独立应用Attie，主打用AI让用户完全掌控自己的社交内容流，目前仅限邀请制。",
       "rating": "A+",
-      "score": 91,
+      "score": 86,
       "type": "product",
       "typeName": "产品发布",
       "expansion": "去中心化社交协议与AI能力的结合可能开创社交产品新范式，后续或有更多同类产品涌现，对传统社交平台构成潜在挑战。",
       "entities": [
         "Anthropic",
+        "Attie",
         "Bluesky",
-        "Claude"
+        "Claude",
+        "Jay Graber"
       ],
       "sourceLinks": [
         {
@@ -9824,9 +10169,9 @@
       "source": "The Next Web",
       "url": "https://thenextweb.com/news/blueskys-new-attie-app-uses-ai-to-give-you-full-control-over-your-social-feed",
       "original_content": "The standalone app, built on the AT Protocol and powered by Anthropic’s Claude, was unveiled at the ATmosphere conference by Jay Graber, who stepped back from Bluesky’s CEO role specifically to build it. It’s currently invite-only, with a waitlist open. Bluesky’s best-known differentiator from X and Threads has always been its custom feed system, the […] This story continues at The Next Web",
-      "chinese_title": "Bluesky推出AI驱动的独立应用Attie，让用户完全掌控社交信息流",
-      "grade": "S",
-      "extension": "可延伸至去中心化社交媒体与AI驱动的内容策展结合，对传统算法推荐模式的潜在颠覆。"
+      "chinese_title": "Bluesky推出AI驱动的Attie应用，让用户自定义社交信息流",
+      "grade": "A+",
+      "extension": "Attie代表了社交算法透明化和用户主权的趋势，可能对Twitter和Threads的推荐机制形成差异化竞争压力。"
     },
     {
       "id": "378cf3f95a39b8cef9f231ff03e9dc4d",
