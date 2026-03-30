@@ -4821,20 +4821,19 @@
       "url": "https://x.com/jeremyphoward/status/2038095595098042560"
     },
     {
-      "id": "5c00d8ae4d4f1a284f227ac422e670d2",
+      "id": "e8c096ec91eda2afd2bed43031f8d1d3",
       "title": "Claude在演示中90分钟发现知名开源项目零日漏洞",
-      "original_title": "calling Nicholas Carlini \"someone at anthropic\" instead of \"one of the best security researchers alive\" is very funny to me",
-      "summary": "在近期会议演示中，Claude成功在90分钟内发现了GitHub上拥有5万星标的开源项目Ghost中的盲SQL注入零日漏洞，引发行业对AI安全能力的关注。",
+      "original_title": "I think we just got a demo of Mythos and I’m surprised nobodies talking about it.. 💔 In what might be the first instance the general public has se...",
+      "summary": "Claude的Mythos能力在首次面向公众的演示中发现了一个拥有超过5万星的开源平台Ghost的零日SQL注入漏洞，显示出其在安全研究领域的潜力。",
       "rating": "A+",
-      "score": 86,
-      "type": "safety",
+      "score": 95,
+      "type": "research",
       "typeName": "安全伦理",
       "expansion": "AI自动化漏洞挖掘能力可能重构网络安全行业格局，大幅提升漏洞发现效率。",
       "entities": [
         "Anthropic",
         "Claude",
-        "网络安全",
-        "零日漏洞"
+        "Ghost"
       ],
       "sourceLinks": [
         {
@@ -4846,7 +4845,11 @@
       "timestamp": 1774760590,
       "published_at": "2026-03-29T13:03:10.673766",
       "source": "Twitter",
-      "url": "https://x.com/_xjdr/status/2037979084459016562"
+      "url": "https://x.com/chatgpt21/status/2038524685781008732",
+      "original_content": "I think we just got a demo of Mythos and I’m surprised nobodies talking about it.. 💔 In what might be the first instance the general public has seen of Claude Mythos Mythos (TBD) just uncovered a critical zero-day vulnerability in Ghost, an open-source platform with over 50,000 stars on GitHub that has never had a critical security flaw in its entire history. It identified a highly complex \"blind SQL injection\" a flaw so subtle you can't even see the output, only how the server delays its response. When asked to prove the severity of the bug, the model autonomously wrote a custom Python exploit script that successfully navigated the blind injection to extract the admin API key, secret, and password hashes from the database completely unauthenticated… This is genuinely game changing because it proves frontier models can now actively discover, reason through, and successfully build exploits for invisible vulnerabilities in enterprise-grade architecture that human developers missed for years. Cyber security companies are cooked.",
+      "chinese_title": "Claude Mythos首次公开演示发现GitHub项目Ghost零日漏洞",
+      "grade": "S",
+      "extension": "可延伸至AI安全研究能力对网络安全行业的颠覆性影响，以及开源项目安全审计模式的变革。"
     },
     {
       "id": "70b3c745523ebc243ef70b24ff3b8969",
@@ -6915,6 +6918,629 @@
   ],
   "2026-03-30": [
     {
+      "id": "03f33b6c1e77bfad77a9600147fd02a1",
+      "title": "OpenAI发布SLAM工程师招聘信息",
+      "original_title": "OpenAI is hiring for SLAM engineer. Who would say.",
+      "summary": "OpenAI正在招聘SLAM（同步定位与地图构建）工程师，引发外界对其机器人或空间智能方向的猜测。",
+      "rating": "A",
+      "score": 75,
+      "type": "personnel",
+      "typeName": "人事变动",
+      "expansion": "可延伸探讨OpenAI是否计划将大模型能力拓展至机器人导航、AR/VR空间计算等领域。",
+      "entities": [
+        "OpenAI"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/brunoeducsant/status/2038564534076477836"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908131",
+      "source": "Twitter",
+      "url": "https://x.com/brunoeducsant/status/2038564534076477836"
+    },
+    {
+      "id": "11f068638722b16295d9743a82802657",
+      "title": "DeepSeek聊天机器人国内遭遇超7小时大规模宕机",
+      "original_title": "DeepSeek's chatbot suffered a major outage of over seven hours in China, its biggest outage since debut in 2025 and an unusual downtime for a globally used app (Bloomberg)",
+      "summary": "DeepSeek聊天机器人在中国境内发生超过7小时的大规模服务中断，这是其2025年上线以来最严重的宕机事件，该公司已部署多项更新进行修复。",
+      "rating": "S",
+      "score": 91,
+      "type": "breaking",
+      "typeName": "突发事件",
+      "expansion": "可关注国产大模型服务的稳定性挑战、用户信任修复，以及宕机事件的根因分析是否涉及模型更新或算力调度问题。",
+      "entities": [
+        "DeepSeek"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme (deepseek)",
+          "url": "http://www.techmeme.com/260330/p6#a260330p6"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.910563",
+      "source": "Techmeme (deepseek)",
+      "url": "http://www.techmeme.com/260330/p6#a260330p6"
+    },
+    {
+      "id": "3fec8688863b1456cc0a2a5b64281166",
+      "title": "芬兰量子计算公司IQM获贝莱德5000万欧元融资",
+      "original_title": "Finnish startup IQM Quantum Computers raised €50M from BlackRock to accelerate its global growth, ahead of a planned dual US and Helsinki IPO later in 2026 (Anne Kauranen/Reuters)",
+      "summary": "芬兰量子计算机公司IQM Quantum Computers获得贝莱德5000万欧元融资，为其2026年晚些时候在美欧两地IPO加速全球扩张提供资金支持。",
+      "rating": "A",
+      "score": 80,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "可跟进量子计算赛道的IPO节奏，以及欧洲量子产业与北美资本的联动趋势。",
+      "entities": [
+        "Blackrock",
+        "Iqm"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p18#a260330p18"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908306",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p18#a260330p18"
+    },
+    {
+      "id": "b8a5bbe79a3f9500507a253e1037cd63",
+      "title": "开发者争议：MCP是否被误解和误用",
+      "original_title": "MCP is great, you're just using it wrong",
+      "summary": "一篇技术文章引发讨论，认为模型上下文协议（MCP）的价值被低估，问题更多在于使用方式而非协议本身的设计缺陷。",
+      "rating": "B",
+      "score": 68,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "可延伸至MCP在Agent生态系统中的标准化前景，以及开发者对新兴协议采纳的周期性争议。",
+      "entities": [
+        "MCP"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Hacker News",
+          "url": "https://techstackups.com/comparisons/mcp-is-solving-the-wrong-problem/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908326",
+      "source": "Hacker News",
+      "url": "https://techstackups.com/comparisons/mcp-is-solving-the-wrong-problem/"
+    },
+    {
+      "id": "ef6b0ceefb516e511c2cc1c1892fcb09",
+      "title": "微软撤回故障Windows 11预览更新KB5079391",
+      "original_title": "Microsoft yanks Windows 11 preview update after install failures",
+      "summary": "微软在部分用户安装失败报错后，紧急撤回了Windows 11预览更新KB5079391，反映出近期Windows更新质量控制面临的持续压力。",
+      "rating": "B",
+      "score": 69,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "可延伸至微软Windows更新策略和企业用户信任度的长期影响。",
+      "entities": [
+        "微软"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Register",
+          "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/microsoft_faulty_windows_update/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908351",
+      "source": "The Register",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/microsoft_faulty_windows_update/"
+    },
+    {
+      "id": "f38a32c67851b5cef368b1afd691c0a0",
+      "title": "太空数据中心初创公司Starcloud完成1.7亿美元A轮融资",
+      "original_title": "Space data center startup Starcloud raised a $170M Series A led by Benchmark and EQT at a $1.1B valuation, and plans to launch Starcloud 2 later in 2026 (Tim Fernholz/TechCrunch)",
+      "summary": "Starcloud完成由Benchmark和EQT领投的1.7亿美元A轮融资，估值达11亿美元，成为YC毕业后最快跻身独角兽的初创公司之一，计划2026年发射Starcloud 2太空数据中心。",
+      "rating": "A+",
+      "score": 88,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "可延伸至太空计算赛道对地面数据中心的补充意义，以及SpaceX等火箭成本下降带来的产业链机会。",
+      "entities": [
+        "Benchmark",
+        "Starcloud",
+        "Y Combinator"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p16#a260330p16"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908389",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p16#a260330p16"
+    },
+    {
+      "id": "af36752610759f3c4b6cc7391486f1aa",
+      "title": "南非矿业巨头警告欧盟战略性项目标签保护不足",
+      "original_title": "South Africa Sibanye sees limits to EU strategic status",
+      "summary": "南非矿业公司Sibanye-Stillwater警告，欧盟对其芬兰锂矿项目的战略性项目标签未能提供足够的保护，以应对来自中国低成本精炼商的激烈竞争。",
+      "rating": "B",
+      "score": 72,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "可关注欧洲本土电池供应链建设的地缘博弈，以及中国锂精炼产业的主导地位。",
+      "entities": [
+        "European Union",
+        "Sibanye-Stillwater"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Semafor",
+          "url": "https://www.semafor.com/article/03/30/2026/south-africa-sibanye-sees-limits-to-eu-strategic-status"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908646",
+      "source": "Semafor",
+      "url": "https://www.semafor.com/article/03/30/2026/south-africa-sibanye-sees-limits-to-eu-strategic-status"
+    },
+    {
+      "id": "ce5ee1bf554d6de0b80b5b883f6aaf8f",
+      "title": "分析师警告能源市场仍低估中东冲突影响",
+      "original_title": "Energy markets understating war impact",
+      "summary": "尽管布伦特原油价格因中东战事升级升至每桶116美元，但分析师认为市场仍未充分定价冲突对全球能源供应的潜在长期冲击，红海输油管道风险正在上升。",
+      "rating": "B",
+      "score": 68,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "可延伸至全球能源供应链韧性、替代航线建设以及新能源过渡的紧迫性。",
+      "entities": [],
+      "sourceLinks": [
+        {
+          "name": "Semafor",
+          "url": "https://www.semafor.com/article/03/30/2026/energy-markets-underestimating-war-impact"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908688",
+      "source": "Semafor",
+      "url": "https://www.semafor.com/article/03/30/2026/energy-markets-underestimating-war-impact"
+    },
+    {
+      "id": "88f636fa0c905cee97786dbcd8fb3f75",
+      "title": "回顾乔布斯带领苹果创造的科技史上最伟大产品序列",
+      "original_title": "Steve Jobs and the greatest run of products in tech history",
+      "summary": "The Verge长文回顾了Steve Jobs回归苹果后从iMac到iPod的连续成功，分析这段时期为何被认为是科技史上最伟大的产品 streak 之一。",
+      "rating": "B",
+      "score": 70,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "可从产品创新管理角度延伸至当今科技巨头的产品策略对比，但属于回顾性内容。",
+      "entities": [
+        "Steve Jobs",
+        "苹果"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Verge -  Tech Posts",
+          "url": "https://www.theverge.com/tech/900655/steve-jobs-imac-ibook-ipod"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908730",
+      "source": "The Verge -  Tech Posts",
+      "url": "https://www.theverge.com/tech/900655/steve-jobs-imac-ibook-ipod"
+    },
+    {
+      "id": "5d5eff78766cd94421d2da487e326f44",
+      "title": "英国Humanoid公司人形机器人在汽车制造环境完成概念验证",
+      "original_title": "Humanoid robots one tiny step closer to exterminating autoworkers' jobs",
+      "summary": "英国机器人公司Humanoid宣布其人形机器人在汽车制造环境中完成了概念验证测试，展示了在仓库和生产线上协助作业的潜力。",
+      "rating": "B",
+      "score": 69,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "可关注人形机器人在汽车制造业的产业化进度，以及与传统工业自动化的竞合关系。",
+      "entities": [
+        "Humanoid"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Register",
+          "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/humanoid_automotive_robots/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908776",
+      "source": "The Register",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/humanoid_automotive_robots/"
+    },
+    {
+      "id": "dfa31131a10f501b9c718f4b7162f752",
+      "title": "SpaceX IPO临近带动AI卫星初创公司受资本追捧",
+      "original_title": "AI satellite start-ups gain traction with investors ahead of SpaceX IPO",
+      "summary": "在SpaceX计划IPO和马斯克、贝索斯推动太空数据中心的背景下，专注于AI卫星的小型初创公司正获得更多的投资者关注和资金倾斜。",
+      "rating": "A",
+      "score": 78,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "可延伸至太空经济赛道的热度分化，以及卫星AI计算与地面数据中心市场的互补与竞争。",
+      "entities": [
+        "Jeff Bezos",
+        "SpaceX",
+        "马斯克"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Technology",
+          "url": "https://www.ft.com/content/c6b73b3b-b04f-44bd-8d69-0694d3ae815c"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908799",
+      "source": "Technology",
+      "url": "https://www.ft.com/content/c6b73b3b-b04f-44bd-8d69-0694d3ae815c"
+    },
+    {
+      "id": "7927e5d3b1f9762af3ef7ca1f0052306",
+      "title": "瑞士初创公司miros融资110万欧元部署可预订工作舱",
+      "original_title": "Swiss startup miros raises €1.1M for bookable workpods",
+      "summary": "瑞士EPFL机器人实验室孵化的初创公司miros完成110万欧元种子前融资，已在瑞士部署15个模块化工作舱，并进军法国图卢兹，致力于将商业地产转化为按需服务模式。",
+      "rating": "B",
+      "score": 66,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "可关注远程办公与灵活办公空间市场的创新模式，但规模和市场影响力仍有限。",
+      "entities": [
+        "Epfl",
+        "Miros"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Next Web",
+          "url": "https://thenextweb.com/news/miros-workpods-1-1m-pre-seed"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908831",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/miros-workpods-1-1m-pre-seed"
+    },
+    {
+      "id": "5241d66c392d8fbc5c15041ffdf1ebe3",
+      "title": "NYU教授Julian Togelius谈大语言模型玩电子游戏的局限",
+      "original_title": "Q&A with NYU professor Julian Togelius on his recent paper about LLMs' limitations in playing video games, why coding is a kind of well-designed game, and more (Matthew S. Smith/IEEE Spectrum)",
+      "summary": "纽约大学游戏AI专家Julian Togelius在最新访谈中讨论了LLM在电子游戏中的表现瓶颈，指出编码是一种设计精良的游戏，而玩游戏的复杂性远超代码生成。",
+      "rating": "A",
+      "score": 79,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "可延伸至游戏AI评测基准的构建，以及大模型从生成到交互能力跃迁的挑战。",
+      "entities": [
+        "Julian Togelius",
+        "Nyu"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p12#a260330p12"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908893",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p12#a260330p12"
+    },
+    {
+      "id": "67fa741b9c373c20a0c061dc779098df",
+      "title": "科学慈善资金缺乏监管致爱泼斯坦得以长期渗透学术界",
+      "original_title": "Philanthropy in science has little oversight. Jeffrey Epstein exploited that",
+      "summary": "NPR报道指出，科学慈善捐赠长期以来缺乏法律和公众监督，这一漏洞使得Jeffrey Epstein能够长期资助MIT等顶尖学术机构，并借此洗白个人声誉。",
+      "rating": "B",
+      "score": 70,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "可延伸至科研机构捐赠透明度改革，以及对科技界资金来源审查的深化。",
+      "entities": [
+        "Jeffrey Epstein",
+        "Mit"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Science : NPR",
+          "url": "https://www.npr.org/2026/03/30/nx-s1-5753946/science-jeffrey-epstein-mit-exploit-donors-philanthropy"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908912",
+      "source": "Science : NPR",
+      "url": "https://www.npr.org/2026/03/30/nx-s1-5753946/science-jeffrey-epstein-mit-exploit-donors-philanthropy"
+    },
+    {
+      "id": "cc3ef5baec43e2f7e337549f847e7d8c",
+      "title": "《Project Hail Mary》成亚马逊MGM影史票房最高电影",
+      "original_title": "Amazon MGM's Project Hail Mary becomes its highest-grossing film ever, crossing $300M globally, including $54.1M just this weekend; the movie cost $200M to make (Brent Lang/Variety)",
+      "summary": "由亚马逊MGM出品的太空科幻电影《Project Hail Mary》全球票房突破3亿美元，成为该制片厂史上票房最高的电影，本片制作成本约2亿美元。",
+      "rating": "B",
+      "score": 68,
+      "type": "financial",
+      "typeName": "商业数据",
+      "expansion": "可关注流媒体巨头原创内容与传统好莱坞发行模式的竞争态势。",
+      "entities": [
+        "Amazon Mgm"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p11#a260330p11"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908944",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p11#a260330p11"
+    },
+    {
+      "id": "6da97227f570d5cad712e29a4396bc1e",
+      "title": "英国因违反俄罗斯制裁对苹果子公司处以39万英镑罚款",
+      "original_title": "UK fines Apple subsidiary for breaching Russian sanctions",
+      "summary": "英国监管机构对苹果欧洲子公司处以39万英镑罚款，原因是其向俄罗斯视频流媒体服务Okko进行了违规付款，违反了针对俄罗斯的制裁规定。",
+      "rating": "B",
+      "score": 69,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "可延伸至跨国科技公司合规体系的挑战，以及俄乌冲突背景下企业面临的制裁风险。",
+      "entities": [
+        "苹果"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Technology (apple)",
+          "url": "https://www.ft.com/content/915ac02f-96f8-4224-b2ab-10d83e5afd92"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.908959",
+      "source": "Technology (apple)",
+      "url": "https://www.ft.com/content/915ac02f-96f8-4224-b2ab-10d83e5afd92"
+    },
+    {
+      "id": "90f92230a299594b334d3427c7c13268",
+      "title": "揭秘研发无脑人体克隆体的隐秘初创公司R3 Bio",
+      "original_title": "Inside the stealthy startup that pitched brainless human clones",
+      "summary": "麻省理工科技评论披露，加州初创公司R3 Bio多年来秘密研发用于替代动物实验的无感知猴子器官囊，并获得Tim Draper等投资者支持，该项目在伦理和科学界引发广泛争议。",
+      "rating": "S",
+      "score": 91,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "可延伸至生物伦理边界、长寿科技投资热潮，以及动物实验替代的产业化路径与监管挑战。",
+      "entities": [
+        "Mit Technology Review",
+        "R3 Bio",
+        "Tim Draper"
+      ],
+      "sourceLinks": [
+        {
+          "name": "New on MIT Technology Review",
+          "url": "https://www.technologyreview.com/2026/03/30/1134780/r3-bio-brainless-human-clones-full-body-replacement-john-schloendorn-aging-longevity/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.910065",
+      "source": "New on MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/03/30/1134780/r3-bio-brainless-human-clones-full-body-replacement-john-schloendorn-aging-longevity/"
+    },
+    {
+      "id": "351560479b805f54b899f355f30a5ee8",
+      "title": "前谷歌高管Matt Brittin将出任BBC总裁引发舆论争议",
+      "original_title": "Google is to journalism what Vikings were to monks. Now their man will run the BBC",
+      "summary": "BBC任命前谷歌EMEA总裁Matt Brittin为新任总裁，这一决定在业界引发文化与利益冲突方面的担忧，评论文章将谷歌与传统新闻业的关系比作维京人与修道士。",
+      "rating": "A",
+      "score": 76,
+      "type": "personnel",
+      "typeName": "人事变动",
+      "expansion": "可延伸至科技巨头高管向公共媒体机构流动的趋势，以及平台与内容生产方的权力博弈。",
+      "entities": [
+        "Bbc",
+        "Matt Brittin",
+        "谷歌"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Register",
+          "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/bbc_opinion/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.910178",
+      "source": "The Register",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/bbc_opinion/"
+    },
+    {
+      "id": "4180bb5641efcd825701ca07e3c81cb4",
+      "title": "亚马逊加速布局美国农村市场，与沃尔玛展开正面竞争",
+      "original_title": "A look at Amazon's major push into rural US areas, including building 24-hour delivery distribution centers in recent years, encroaching on Walmart's territory (Bloomberg)",
+      "summary": "亚马逊近年来大举进军美国农村地区，投资建设24小时配送中心，直接在沃尔玛的传统地盘上展开激烈角逐。",
+      "rating": "A",
+      "score": 76,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "可延伸至美国电商平权化、农村物流基础设施投资以及两大零售巨头的下沉市场竞争格局。",
+      "entities": [
+        "Walmart",
+        "亚马逊"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p8#a260330p8"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.910213",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p8#a260330p8"
+    },
+    {
+      "id": "bbc9bb1e85109678839b09da605cacd9",
+      "title": "小鹏2026款MONA M03将于4月2日发布，续航与AI智驾升级",
+      "original_title": "XPeng to Launch 2026 MONA M03 on April 2 with Upgraded AI and Extended Range",
+      "summary": "小鹏汽车宣布2026款MONA M03将于4月2日正式上市，新车已开启店内试驾，主要升级集中在外观配色、内饰实用细节优化以及智能驾驶和续航能力上。",
+      "rating": "B",
+      "score": 70,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "可关注小鹏在15-20万元级纯电市场的产品节奏，以及与比亚迪、特斯拉同级车型的竞争态势。",
+      "entities": [
+        "Mona",
+        "小鹏"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Pandaily",
+          "url": "https://pandaily.com/x-peng-to-launch-2026-mona-m03-on-april-2-with-upgraded-ai-and-extended-range"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.910345",
+      "source": "Pandaily",
+      "url": "https://pandaily.com/x-peng-to-launch-2026-mona-m03-on-april-2-with-upgraded-ai-and-extended-range"
+    },
+    {
+      "id": "35d03a368904fa73c825f90f92a680cb",
+      "title": "奇瑞与捷豹路虎联合推出FREELANDER品牌，首搭华为896线激光雷达",
+      "original_title": "Chery and JLR to Launch FREELANDER Brand, New Model Teased with Huawei’s 896-Line LiDAR",
+      "summary": "奇瑞与捷豹路虎合作的全新品牌FREELANDER将于3月31日正式发布，首款车型将搭载华为最新发布的896线双焦激光雷达，这是目前全球分辨率最高的量产激光雷达系统。",
+      "rating": "A",
+      "score": 81,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "可延伸至华为智能驾驶解决方案在外资品牌中的渗透，以及中国车企反向技术输出合资模式的新趋势。",
+      "entities": [
+        "Freelander",
+        "华为",
+        "奇瑞",
+        "捷豹路虎"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Pandaily",
+          "url": "https://pandaily.com/chery-and-jlr-to-launch-freelander-brand-new-model-teased-with-huawei-s-896-line-li-dar"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.910450",
+      "source": "Pandaily",
+      "url": "https://pandaily.com/chery-and-jlr-to-launch-freelander-brand-new-model-teased-with-huawei-s-896-line-li-dar"
+    },
+    {
+      "id": "550a41163872fe6fd641ef417eb33880",
+      "title": "法国AI独角兽Mistral获8.3亿美元债务融资建设欧洲数据中心",
+      "original_title": "Paris-based AI startup Mistral raised $830M in its debut debt financing to build Nvidia-powered data centers across Europe; Mistral plans to spend €4B in total (Tim Bradshaw/Financial Times)",
+      "summary": "巴黎AI初创公司Mistral完成首笔8.3亿美元债务融资，计划总投资40亿欧元在欧洲建设由Nvidia驱动的人工智能数据中心，以满足市场对非美AI替代方案的需求。",
+      "rating": "S",
+      "score": 90,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "可延伸至欧洲AI主权战略、Mistral与OpenAI的竞争格局，以及AI基础设施建设的债务融资新模式。",
+      "entities": [
+        "Mistral",
+        "英伟达"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme (mistral)",
+          "url": "http://www.techmeme.com/260330/p7#a260330p7"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.910491",
+      "source": "Techmeme (mistral)",
+      "url": "http://www.techmeme.com/260330/p7#a260330p7"
+    },
+    {
+      "id": "d2331ebe3b7bd3774093946505e2d264",
+      "title": "Meta工程师发布MXFP8 GEMM实现，性能达cuBLAS 99%",
+      "original_title": "[D] MXFP8 GEMM: Up to 99% of cuBLAS performance using CUDA + PTX",
+      "summary": "Meta/PyTorch工程师Daniel Vega-Myhre发布博客详细阐述MXFP8格式下的GEMM设计与CUDA+PTX优化，实现接近cuBLAS 99%的性能，对DeepSeek-V3等模型的训练推理效率提升具有参考价值。",
+      "rating": "A+",
+      "score": 89,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "可延伸至低精度计算在大模型训练中的普及趋势，以及对Nvidia生态软件栈的替代与补充探索。",
+      "entities": [
+        "DeepSeek",
+        "Meta",
+        "Pytorch",
+        "英伟达"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning (deepseek)",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s7k5jr/d_mxfp8_gemm_up_to_99_of_cublas_performance_using/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.910525",
+      "source": "Machine Learning (deepseek)",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s7k5jr/d_mxfp8_gemm_up_to_99_of_cublas_performance_using/"
+    },
+    {
+      "id": "44ea62aa870f9ef595cbebf239f002bd",
+      "title": "微博接入百度AI智能体DuClaw，拓展平台AI生态",
+      "original_title": "Weibo Partners with Baidu AI Cloud’s DuClaw to Expand AI Agent Ecosystem",
+      "summary": "微博宣布已整合百度智能云旗下的AI智能体产品DuClaw，用户可通过微博龙侠助理直接调用DuClaw的多模型切换、百度搜索、AI内容生成等能力，进一步完善站内AI服务矩阵。",
+      "rating": "A+",
+      "score": 88,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "可关注微博在社交媒体AI化转型中的布局，以及国内大厂智能体生态的互联互通趋势。",
+      "entities": [
+        "Duclaw",
+        "微博",
+        "百度"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Pandaily",
+          "url": "https://pandaily.com/weibo-partners-with-baidu-ai-cloud-s-du-claw-to-expand-ai-agent-ecosystem"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774872760,
+      "published_at": "2026-03-30T20:12:40.910712",
+      "source": "Pandaily",
+      "url": "https://pandaily.com/weibo-partners-with-baidu-ai-cloud-s-du-claw-to-expand-ai-agent-ecosystem"
+    },
+    {
       "id": "7af55d2a31d6cf1418db9dd59065dba3",
       "title": "DeepSeek服务中断7小时后回滚更新，输出质量引发用户讨论",
       "original_title": "After DeepSeek down for ~7 hours, they seem to have reverted the update The outputs are noticeably worse now, not as good as yesterday’s improved ver...",
@@ -7324,19 +7950,18 @@
       "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/professor_criticizes_fcc_router_ban/"
     },
     {
-      "id": "079644300b5430066637278625ff7e24",
+      "id": "1eab5ee64159ec3b8ef035b45a063f14",
       "title": "中国人形机器人公司Agibot量产下线第10000台 三个月产能翻倍",
-      "original_title": "Chinese Humanoid Maker Agibot Rolls Out 10,000th Mass-Produced Unit",
-      "summary": "上海人形机器人创业公司Agibot宣布已累计生产第10000台人形机器人，这一里程碑距离其宣布第5000台下线仅过去三个月，显示出公司正在快速扩大产能规模。",
+      "original_title": "AGIBOT Rolls Out 10,000th Unit as Embodied AI Enters Scaling Phase",
+      "summary": "国产具身智能公司AGIBOT宣布第10,000台机器人正式下线，仅用一个季度就实现了从5,000台到10,000台的翻倍跨越，联合创始人彭志辉表示2026年将是通用型具身机器人大规模部署的关键之年。",
       "rating": "S",
-      "score": 90,
-      "type": "hardware",
+      "score": 91,
+      "type": "industry",
       "typeName": "硬件基建",
       "expansion": "Agibot的产能突破标志着中国人形机器人产业进入规模化量产阶段，可能推动人形机器人成本快速下降，加速行业商业化应用进程。",
       "entities": [
         "Agibot",
-        "人形机器人",
-        "智能制造"
+        "彭志辉"
       ],
       "sourceLinks": [
         {
@@ -7347,8 +7972,12 @@
       "sources": 1,
       "timestamp": 1774847027,
       "published_at": "2026-03-30T13:03:47.629404",
-      "source": "The Information",
-      "url": "https://www.theinformation.com/briefings/chinese-humanoid-maker-agibot-rolls-10-000th-mass-produced-unit"
+      "source": "Pandaily",
+      "url": "https://pandaily.com/agibot-rolls-out-10-000th-unit-as-embodied-ai-enters-scaling-phase",
+      "original_content": "AGIBOT announced today that its 10,000th robot has officially rolled off the production line—just one quarter after the company reached the 5,000-unit milestone. At the ceremony, co-founder, president, and CTO Peng Zhihui (widely known as “Zhihuijun”) stated that 2026 will mark a critical phase for the large-scale deployment of general-purpose embodied robots. He emphasized that true scalability is not defined by isolated capabilities, but by whether robots can operate continuously in real-world environments—such as running 24/7 in industrial settings. Headquartered in Shanghai, AGIBOT is one of China’s leading robotics companies. Based on current growth trends, the company expects its annual shipments to reach tens of thousands of units by 2026. According to a report by Omdia, the global humanoid robot market entered a phase of rapid growth in 2025, with total shipments projected to reach 13,000 units for the year. Chinese manufacturers have shown strong momentum in large-scale production, with AGIBOT leading the market—shipping over 5,100 units, accounting for 39% of global market share, and ranking first worldwide in both shipments and market share. Source：IT Home",
+      "chinese_title": "智元机器人AGIBOT第10,000台下线，具身智能进入规模化阶段",
+      "grade": "S",
+      "extension": "可延伸至国产机器人产业链与特斯拉Optimus、Figure等海外竞品的量产竞赛，以及人形机器人在制造业和服务业的落地节奏。"
     },
     {
       "id": "d7c1e28d012d046caf4c3d25d0e48bd5",
@@ -9169,17 +9798,17 @@
       "url": "https://x.com/michael_chomsky/status/2038266680296747079"
     },
     {
-      "id": "f7b58ca220a7ea0ba8fe40c9c4589ce9",
+      "id": "efb4db02a0fde953882a5525634704e4",
       "title": "Bluesky推出基于AT协议的智能社交应用Attie 集成Claude能力",
-      "original_title": "Bluesky's CEO talks about their new app, Attie, an agentic social app built on Bluesky's AT Protocol, which uses Claude and enables users to build custom feeds (Sarah Perez/TechCrunch)",
-      "summary": "Bluesky推出全新智能社交应用Attie，基于AT协议构建并集成Claude AI能力，支持用户创建自定义信息流，探索AI与社交网络结合的新形态。",
+      "original_title": "Bluesky’s new Attie app uses AI to give you full control over your social feed",
+      "summary": "Bluesky前CEO Jay Graber发布了基于AT协议和Anthropic Claude的独立应用Attie，利用AI让用户拥有对社交信息流的完整控制权，目前处于邀请制测试阶段。",
       "rating": "A+",
-      "score": 86,
+      "score": 91,
       "type": "product",
       "typeName": "产品发布",
       "expansion": "去中心化社交协议与AI能力的结合可能开创社交产品新范式，后续或有更多同类产品涌现，对传统社交平台构成潜在挑战。",
       "entities": [
-        "At Protocol",
+        "Anthropic",
         "Bluesky",
         "Claude"
       ],
@@ -9192,8 +9821,12 @@
       "sources": 1,
       "timestamp": 1774809445,
       "published_at": "2026-03-30T02:37:25.318020",
-      "source": "Techmeme",
-      "url": "http://www.techmeme.com/260329/p7#a260329p7"
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/blueskys-new-attie-app-uses-ai-to-give-you-full-control-over-your-social-feed",
+      "original_content": "The standalone app, built on the AT Protocol and powered by Anthropic’s Claude, was unveiled at the ATmosphere conference by Jay Graber, who stepped back from Bluesky’s CEO role specifically to build it. It’s currently invite-only, with a waitlist open. Bluesky’s best-known differentiator from X and Threads has always been its custom feed system, the […] This story continues at The Next Web",
+      "chinese_title": "Bluesky推出AI驱动的独立应用Attie，让用户完全掌控社交信息流",
+      "grade": "S",
+      "extension": "可延伸至去中心化社交媒体与AI驱动的内容策展结合，对传统算法推荐模式的潜在颠覆。"
     },
     {
       "id": "378cf3f95a39b8cef9f231ff03e9dc4d",
@@ -9387,305 +10020,6 @@
       "published_at": "2026-03-30T00:01:47.699083",
       "source": "The Information",
       "url": "https://www.theinformation.com/articles/spacex-hype-boosts-stocks-crosshairs"
-    },
-    {
-      "title": "OpenClaw将支持MCP协议连接更多消息服务商",
-      "title_en": "",
-      "summary": "OpenClaw下一版本将集成MCP协议，可作为Anthropic消息通道的替代方案，支持连接更广泛的消息服务提供商。",
-      "type": "product",
-      "typeName": "产品发布",
-      "score": 68,
-      "level": "B",
-      "reason": "【B级】评分68分 | MCP协议生态扩展可能推动AI助手互操作性标准的形成，影响开发者工具链选择。",
-      "entities": [
-        "OpenClaw",
-        "MCP",
-        "Anthropic"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "深度调查：Anthropic创始人离开OpenAI的真正原因",
-      "title_en": "",
-      "summary": "华尔街日报记者展开调查，试图揭示Dario Amodei及其他Anthropic联合创始人离开OpenAI的真实原因，这一事件一直笼罩在谜团中。",
-      "type": "industry",
-      "typeName": "行业动态",
-      "score": 82,
-      "level": "A",
-      "reason": "【A级】评分82分 | 若揭示重大分歧，可能重塑AI安全与商业化的行业叙事，影响两家公司的公众形象。",
-      "entities": [
-        "Dario Amodei",
-        "Anthropic",
-        "OpenAI"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "斯坦福CS153课程再开讲，Karpathy等业界大咖担任讲师",
-      "title_en": "",
-      "summary": "斯坦福CS153课程再次开课，Anjney Midha和Max Abbott担任主讲，Andrej Karpathy、a16z合伙人等业界知名人士作为特邀讲师参与授课。",
-      "type": "industry",
-      "typeName": "行业动态",
-      "score": 76,
-      "level": "A",
-      "reason": "【A级】评分76分 | 顶级AI人才的教育投入反映行业对下一代人才培养的重视，可能加速AI创业生态发展。",
-      "entities": [
-        "Stanford",
-        "Andrej Karpathy",
-        "Anjney Midha",
-        "a16z"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "宇树人形机器人现身纽约街头与儿童互动",
-      "title_en": "",
-      "summary": "Unitree人形机器人出现在纽约街头，在公共场合奔跑并与儿童玩耍，展示了人形机器人在真实环境中的运行能力。",
-      "type": "product",
-      "typeName": "产品发布",
-      "score": 85,
-      "level": "A+",
-      "reason": "【A+级】评分85分 | 人形机器人进入公共空间标志技术成熟度提升，可能引发监管政策讨论和社会接受度话题。",
-      "entities": [
-        "Unitree",
-        "人形机器人"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "SpaceX/XAI工程师庆祝入职四周年并发布招聘信息",
-      "title_en": "",
-      "summary": "SpaceX/XAI工程师Brent在X平台庆祝入职四周年，同时发布招聘信息，邀请有志之士加入改变地球和探索太阳系的团队。",
-      "type": "personnel",
-      "typeName": "人事变动",
-      "score": 66,
-      "level": "B",
-      "reason": "【B级】评分66分 | 反映SpaceX/XAI持续扩张的人才需求，马斯克系公司的人才流动和招聘策略值得关注。",
-      "entities": [
-        "SpaceX",
-        "xAI",
-        "Elon Musk"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "谷歌接近达成协议资助Anthropic数据中心建设",
-      "title_en": "",
-      "summary": "据金融时报报道，谷歌即将达成交易，为Anthropic的数据中心提供资金支持，进一步深化两家公司的合作关系。",
-      "type": "industry",
-      "typeName": "行业动态",
-      "score": 88,
-      "level": "A+",
-      "reason": "【A+级】评分88分 | 谷歌与Anthropic的绑定加深，可能影响AI基础设施竞争格局，同时引发反垄断监管关注。",
-      "entities": [
-        "Google",
-        "Anthropic",
-        "数据中心"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "谷歌翻译耳机实时翻译功能登陆iOS并扩展至更多国家",
-      "title_en": "",
-      "summary": "谷歌翻译的耳机实时翻译功能正式在iOS平台上线，支持70多种语言，同时该功能也向更多国家和地区的Android和iOS用户开放。",
-      "type": "product",
-      "typeName": "产品发布",
-      "score": 78,
-      "level": "A",
-      "reason": "【A级】评分78分 | 实时翻译技术普及可能改变跨国交流方式，对旅游、商务、教育等领域产生深远影响。",
-      "entities": [
-        "Google",
-        "Google Translate",
-        "iOS",
-        "Android"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "图灵奖得主LeCun批评99%的人使用AI方式过于浅显",
-      "title_en": "",
-      "summary": "Meta首席AI科学家、图灵奖得主Yann LeCun表示，大多数人使用AI的方式过于浅显，仅将其当作玩具，未能发挥其深度推理潜力。",
-      "type": "opinion",
-      "typeName": "观点访谈",
-      "score": 80,
-      "level": "A",
-      "reason": "【A级】评分80分 | LeCun的观点可能推动AI提示工程教育的发展，影响用户对AI能力的认知和使用方式。",
-      "entities": [
-        "Yann LeCun",
-        "Meta",
-        "图灵奖",
-        "Claude"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "新款Ray-Ban Meta智能眼镜通过FCC认证即将发售",
-      "title_en": "",
-      "summary": "Meta与依视路陆逊梯卡合作的两款新型Ray-Ban智能眼镜已通过FCC认证，产品命名为Ray-Ban Meta Scriber和Ray-Ban Meta Blazer，发售在即。",
-      "type": "product",
-      "typeName": "产品发布",
-      "score": 79,
-      "level": "A",
-      "reason": "【A级】评分79分 | 智能眼镜产品迭代加速，可能推动AI可穿戴设备市场的竞争和普及。",
-      "entities": [
-        "Meta",
-        "Ray-Ban",
-        "依视路陆逊梯卡",
-        "FCC"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "BBC与苹果合作推出Vision Pro沉浸式古典音乐会",
-      "title_en": "",
-      "summary": "BBC艺术频道与苹果合作，采用苹果沉浸式视频技术为Vision Pro打造古典音乐会影片，观众可近距离体验BBC逍遥音乐节的演出。",
-      "type": "product",
-      "typeName": "产品发布",
-      "score": 70,
-      "level": "B",
-      "reason": "【B级】评分70分 | 沉浸式视频内容生态扩展，展示Vision Pro在文化娱乐领域的应用潜力。",
-      "entities": [
-        "BBC",
-        "Apple",
-        "Vision Pro",
-        "Apple TV"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "美国专利局公布79项AR/VR相关新专利",
-      "title_en": "",
-      "summary": "美国专利及商标局近期公布了79项AR/VR相关专利，涵盖Meta的可穿戴设备接近检测、金属边缘处理等技术。",
-      "type": "research",
-      "typeName": "研究成果",
-      "score": 65,
-      "level": "B",
-      "reason": "【B级】评分65分 | 专利布局反映科技巨头在AR/VR领域的技术储备和竞争态势。",
-      "entities": [
-        "Meta",
-        "AR/VR",
-        "美国专利局"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "Anthropic赢得对国防部诉讼但仍需上诉法院解除供应链风险标签",
-      "title_en": "",
-      "summary": "尽管Anthropic在加州赢得对国防部的裁决，但仍需说服华盛顿特区巡回上诉法院解除其供应链风险标签。",
-      "type": "safety",
-      "typeName": "安全伦理",
-      "score": 77,
-      "level": "A",
-      "reason": "【A级】评分77分 | 案件结果可能影响AI公司与政府机构的合作关系，以及AI供应链安全政策的制定。",
-      "entities": [
-        "Anthropic",
-        "美国国防部",
-        "Claude"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "Physical Intelligence据悉正洽谈10亿美元融资",
-      "title_en": "",
-      "summary": "机器人AI初创公司Physical Intelligence据悉正洽谈新一轮约10亿美元融资，估值将从56亿美元翻倍至超过110亿美元。",
-      "type": "funding",
-      "typeName": "融资上市",
-      "score": 86,
-      "level": "A+",
-      "reason": "【A+级】评分86分 | 机器人AI领域融资热潮持续，大额融资可能加速具身智能技术的商业化进程。",
-      "entities": [
-        "Physical Intelligence",
-        "Founders Fund",
-        "Lightspeed Venture Partners"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
-    },
-    {
-      "title": "谷歌将Veo视频模型整合至Google Ads全球上线",
-      "title_en": "",
-      "summary": "谷歌将Veo视频生成模型在全球范围内整合至Google Ads平台，广告商可从最多三张静态图片生成10秒YouTube视频。",
-      "type": "product",
-      "typeName": "产品发布",
-      "score": 81,
-      "level": "A",
-      "reason": "【A级】评分81分 | AI视频生成进入广告主流应用场景，可能改变视频广告制作流程和成本结构。",
-      "entities": [
-        "Google",
-        "Veo",
-        "Google Ads",
-        "YouTube"
-      ],
-      "url": "",
-      "source": "",
-      "sources": 1,
-      "sourceLinks": [],
-      "timestamp": 1774861869,
-      "version": "2026.03.30-001"
     }
   ]
 }
