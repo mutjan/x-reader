@@ -6915,6 +6915,365 @@
   ],
   "2026-03-30": [
     {
+      "id": "5ab923c10aebc37a5683cc5c1eb2e9f2",
+      "title": "DeepSeek API疑似完成V4-lite更新 模型输出存在特殊标记",
+      "original_title": "fixed now, at approx. 10 AM Monday in China. (DeepSeek API status hasn't yet registered that all systems are green). ok, I guess it's just a V4-lite u...",
+      "summary": "有用户发现DeepSeek API服务恢复正常，推测可能是完成了V4-lite版本更新，当前模型在处理end_of_thinking标记时存在输出块分离问题，可能涉及新分词器架构调整。",
+      "rating": "S",
+      "score": 95,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "后续可关注DeepSeek官方版本发布公告，测试新模型的推理性能和能力边界，对比与现有大模型的差异化优势。",
+      "entities": [
+        "Api",
+        "DeepSeek",
+        "大模型"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/teortaxesTex/status/2038440215912579139"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.091702",
+      "source": "Twitter",
+      "url": "https://x.com/teortaxesTex/status/2038440215912579139"
+    },
+    {
+      "id": "77269b4af262bce5a0afe2bc2f32ca35",
+      "title": "OpenAI正式关停Sora项目 团队独立于核心研究团队运作",
+      "original_title": "Inside the rise and fall of Sora, whose team worked separately from OpenAI's core research team, as OpenAI shuts down Sora and redirects compute to other tasks (Wall Street Journal)",
+      "summary": "据《华尔街日报》报道，OpenAI已决定关停视频生成模型Sora项目，将相关算力资源转移到其他优先级更高的任务，Sora团队此前一直独立于公司核心研究团队运作。",
+      "rating": "S",
+      "score": 99,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "可深入挖掘Sora项目关停的根本原因，分析OpenAI技术路线调整方向，以及对AI视频生成领域的整体影响。",
+      "entities": [
+        "OpenAI",
+        "Sora",
+        "大模型"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme (sora)",
+          "url": "http://www.techmeme.com/260329/p12#a260329p12"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.091899",
+      "source": "Techmeme (sora)",
+      "url": "http://www.techmeme.com/260329/p12#a260329p12"
+    },
+    {
+      "id": "1c7fa0d5603dc92ea92a3d14056ca5bb",
+      "title": "苹果M4/M5芯片被曝存在4K外接显示器HiDPI限制问题",
+      "original_title": "New Apple Silicon M4 and M5 HiDPI Limitation on 4K External Displays",
+      "summary": "有开发者发现搭载M4和M5芯片的新款苹果设备在连接4K外接显示器时存在HiDPI输出限制，无法正常开启高分辨率缩放模式，影响外接显示体验。",
+      "rating": "B",
+      "score": 72,
+      "type": "hardware",
+      "typeName": "硬件基建",
+      "expansion": "关注苹果是否会通过固件更新修复该问题，分析该硬件限制对专业用户群体购买决策的影响。",
+      "entities": [
+        "M4芯片",
+        "M5芯片",
+        "显示器",
+        "苹果"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Hacker News (apple)",
+          "url": "https://smcleod.net/2026/03/new-apple-silicon-m4-m5-hidpi-limitation-on-4k-external-displays/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.091844",
+      "source": "Hacker News (apple)",
+      "url": "https://smcleod.net/2026/03/new-apple-silicon-m4-m5-hidpi-limitation-on-4k-external-displays/"
+    },
+    {
+      "id": "c7446bfe32ce5cf64c8f9de957bc30ca",
+      "title": "独立研究者分享arXiv预印本提交经验 为同行提供实用建议",
+      "original_title": "[D] The submission process as an independent researcher has been strange but interesting. Here's my advice for other independent researchers.",
+      "summary": "一位独立研究者首次在arXiv提交预印本后，分享了整个提交过程的经验和注意事项，帮助其他独立研究者少走弯路，避免被误认为是民科投稿。",
+      "rating": "A",
+      "score": 78,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "可关注独立研究者在AI学术领域的参与度提升趋势，探讨学术发表体系的开放性改进方向。",
+      "entities": [
+        "Arxiv",
+        "学术研究",
+        "机器学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s7ahex/d_the_submission_process_as_an_independent/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.092079",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s7ahex/d_the_submission_process_as_an_independent/"
+    },
+    {
+      "id": "870e8618b5cdf1ea00aa546f36199ee7",
+      "title": "研究者提出几何流网络新架构 3K参数实现超长序列外推",
+      "original_title": "[R] I trained a 3k parameter model on XOR sequences of length 20. It extrapolates perfectly to length 1,000,000. Here's why I think that's architecturally significant.",
+      "summary": "研究者提出名为几何流网络(GFN)的新型序列建模架构，仅用3K参数训练的模型在XOR序列任务上可完美外推到100万长度，无需KV缓存，具有O(1)状态内存特性。",
+      "rating": "A+",
+      "score": 87,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "可深入分析该架构的理论突破意义，探索其在长上下文大模型中的应用潜力，对比Transformer架构的差异化优势。",
+      "entities": [
+        "Transformer",
+        "几何流网络",
+        "序列建模",
+        "机器学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s796pz/r_i_trained_a_3k_parameter_model_on_xor_sequences/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.092232",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s796pz/r_i_trained_a_3k_parameter_model_on_xor_sequences/"
+    },
+    {
+      "id": "5970babefbdc0c42a278f568bd0b745a",
+      "title": "研究者探索像素偏移技术提升VAE图像重建保真度",
+      "original_title": "[D] Prior work using pixel shift to improve VAE accuracy?",
+      "summary": "有研究者正在尝试使用像素偏移技术提升VAE模型的图像重建保真度，当前8倍压缩率VAE性能优于SDXL但不及AuraFlow，传统LPIPS和GAN方法存在平滑过度或生成虚假内容问题。",
+      "rating": "B",
+      "score": 70,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "关注图像生成模型压缩技术的发展，探讨高保真压缩算法在端侧AI应用中的落地前景。",
+      "entities": [
+        "Vae",
+        "图像生成",
+        "机器学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s787p0/d_prior_work_using_pixel_shift_to_improve_vae/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.092280",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s787p0/d_prior_work_using_pixel_shift_to_improve_vae/"
+    },
+    {
+      "id": "a04e4649dd0f143d776548d612a05311",
+      "title": "TurboQuant量化算法开源实现 无需校准数据接近最优失真率",
+      "original_title": "[P] Implemented TurboQuant in Python",
+      "summary": "研究者实现了TurboQuant在线向量量化算法的Python开源版本，该算法无需校准数据，通过随机旋转操作实现接近最优的失真率，优于传统均匀量化方法。",
+      "rating": "A",
+      "score": 83,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "可测试该量化算法在大模型推理中的实际效果，分析其在端侧模型部署中的应用价值。",
+      "entities": [
+        "Python",
+        "Turboquant",
+        "向量量化",
+        "开源"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s73sbf/p_implemented_turboquant_in_python/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.092379",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s73sbf/p_implemented_turboquant_in_python/"
+    },
+    {
+      "id": "a7766da77a20d400bd61da82d27e4403",
+      "title": "研究者提出训练前数据治理方法 替代RLHF实现模型可控性",
+      "original_title": "[D] Data curation and targeted replacement as a pre-training alignment and controllability method",
+      "summary": "有研究者探讨在预训练阶段通过数据治理和定向替换不良内容的方法实现模型可控性，相比RLHF等训练后对齐技术，这种从数据源入手的方法可能更高效且副作用更小。",
+      "rating": "A",
+      "score": 79,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "可对比不同对齐技术的优劣势，分析预训练数据治理的技术路径和伦理挑战。",
+      "entities": [
+        "Rlhf",
+        "大模型对齐",
+        "数据治理",
+        "机器学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s73jb1/d_data_curation_and_targeted_replacement_as_a/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.092444",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s73jb1/d_data_curation_and_targeted_replacement_as_a/"
+    },
+    {
+      "id": "245f5ccfeceab7b8a0c411c51446c825",
+      "title": "受Karpathy AutoResearch启发 开发者构建自主ML实验Agent",
+      "original_title": "[P] I built an autonomous ML agent that runs experiments on tabular data indefinitely - inspired by Karpathy's AutoResearch",
+      "summary": "开发者受Andrej Karpathy的AutoResearch理念启发，构建了一个自主机器学习实验Agent，可自动分析表格数据、形成假设、编辑代码并运行实验，实现全流程自动化研究。",
+      "rating": "S",
+      "score": 90,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "关注AI科研Agent的发展趋势，探索其在提升科研效率、降低研究门槛方面的应用潜力。",
+      "entities": [
+        "Ai Agent",
+        "Autoresearch",
+        "安德烈·卡帕西",
+        "机器学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s73gma/p_i_built_an_autonomous_ml_agent_that_runs/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.092525",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s73gma/p_i_built_an_autonomous_ml_agent_that_runs/"
+    },
+    {
+      "id": "ccd5a4dc949a8493a20a8712a485f63a",
+      "title": "Meta大脑响应模型实测有效 可预测内容对用户的认知影响",
+      "original_title": "[P] I tested Meta’s brain-response model on posts. It predicted the Elon one almost perfectly.",
+      "summary": "研究者对Meta开源的大脑响应模型进行实测，发现该模型能准确预测内容对用户大脑反应模式，可用于优化内容推荐，这种技术在带来体验提升的同时也存在隐私和伦理风险。",
+      "rating": "A+",
+      "score": 86,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "可深入分析脑机接口与内容推荐结合的技术路径，探讨相关伦理监管框架的必要性。",
+      "entities": [
+        "Meta",
+        "内容推荐",
+        "机器学习",
+        "脑机接口"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s6ylp1/p_i_tested_metas_brainresponse_model_on_posts_it/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.092604",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s6ylp1/p_i_tested_metas_brainresponse_model_on_posts_it/"
+    },
+    {
+      "id": "10d82135a80186f0e92a4277409e75c9",
+      "title": "开发者吐槽机器学习开源资料不完整 复现研究结果困难",
+      "original_title": "[D] Why does it seem like open source materials on ML are incomplete? this is not enough...",
+      "summary": "有研究者指出当前机器学习领域的开源资料普遍存在不完整问题，代码仓库缺少关键实现细节，训练参数和数据集信息不全，导致复现他人研究成果十分困难。",
+      "rating": "B",
+      "score": 73,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "探讨机器学习研究可复现性的重要性，推动行业建立更完善的开源规范和学术发表标准。",
+      "entities": [
+        "学术研究",
+        "开源",
+        "机器学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s6wswn/d_why_does_it_seem_like_open_source_materials_on/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.092742",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s6wswn/d_why_does_it_seem_like_open_source_materials_on/"
+    },
+    {
+      "id": "129e40974eeb28dae02023d4afa10a09",
+      "title": "开源图像定位工具发布 可识别任意街景图片的地理位置",
+      "original_title": "[P] Built an open source tool to find the location of any street picture",
+      "summary": "开发者开源了一款街景图像定位工具，可根据图片内容识别拍摄地点，目前提供覆盖纽约10公里范围的免费在线演示，用户也可自行部署到任意城市。",
+      "rating": "A",
+      "score": 77,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "关注计算机视觉定位技术的民用落地场景，分析相关隐私风险和监管边界。",
+      "entities": [
+        "图像识别",
+        "地理定位",
+        "开源",
+        "计算机视觉"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s6uqns/p_built_an_open_source_tool_to_find_the_location/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.092785",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s6uqns/p_built_an_open_source_tool_to_find_the_location/"
+    },
+    {
+      "id": "799ae699c879967111918f3324397cb7",
+      "title": "BDH架构赫布快速权重回写机制实现开源 支持推理中更新权重",
+      "original_title": "[R] First open-source implementation of Hebbian fast-weight write-back for the BDH architecture",
+      "summary": "研究者首次开源实现了BDH(Dragon Hatchling)架构中的赫布快速权重回写机制，该机制允许模型在推理过程中更新自身解码器权重，实现类似人类的持续学习能力。",
+      "rating": "A+",
+      "score": 85,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "分析类脑计算架构的技术突破，探索持续学习机制在通用人工智能发展中的技术路径。",
+      "entities": [
+        "Bdh架构",
+        "持续学习",
+        "类脑计算",
+        "赫布学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s6nxd4/r_first_opensource_implementation_of_hebbian/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774839798,
+      "published_at": "2026-03-30T11:03:18.092866",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s6nxd4/r_first_opensource_implementation_of_hebbian/"
+    },
+    {
       "id": "6a7529056e633b3d40f3fcaf86b8ef40",
       "title": "GLM-5.1性能实测跑分登顶 智谱模型性能跃升全球SOTA",
       "original_title": "速报一波，GLM-5.1 真的猛，应该是从国产模型SOTA要跃升到真正的全球SOTA了，我的 vector-db-bench 直接刷到了第一，我已经在剪视频了，稍后马上为大家带来GLM-5...",
