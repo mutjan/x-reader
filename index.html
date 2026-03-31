@@ -442,6 +442,24 @@
             letter-spacing: 0.5px;
         }
 
+        /* 标签按钮样式 */
+        .tab-btn {
+            padding: 6px 12px;
+            background: #2f3336;
+            border: 1px solid #38444d;
+            border-radius: 6px;
+            color: #e7e9ea;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .tab-btn:hover {
+            background: #38444d;
+        }
+        .tab-btn.active {
+            background: #1d9bf0;
+            border-color: #1d9bf0;
+        }
+
         /* 排序控件 */
         .sort-controls {
             display: flex;
@@ -601,6 +619,120 @@
             margin-right: 4px;
             margin-bottom: 2px;
             cursor: pointer;
+        }
+        /* 反馈按钮 */
+        .feedback-btn {
+            background: #2f3336;
+            border: 1px solid #38444d;
+            color: #8899a6;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            cursor: pointer;
+            margin-left: 4px;
+        }
+        .feedback-btn:hover {
+            background: #1d9bf0;
+            border-color: #1d9bf0;
+            color: white;
+        }
+        /* 反馈弹窗 */
+        .feedback-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .feedback-modal.show {
+            display: flex;
+        }
+        .feedback-content {
+            background: #16181c;
+            border: 1px solid #2f3336;
+            border-radius: 12px;
+            padding: 24px;
+            width: 90%;
+            max-width: 500px;
+        }
+        .feedback-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        .feedback-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .feedback-close {
+            background: none;
+            border: none;
+            color: #8899a6;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .form-label {
+            font-size: 13px;
+            font-weight: 500;
+            color: #e7e9ea;
+        }
+        .form-select, .form-input, .form-textarea {
+            background: #2f3336;
+            border: 1px solid #38444d;
+            border-radius: 6px;
+            padding: 8px 12px;
+            color: #e7e9ea;
+            font-size: 14px;
+        }
+        .form-textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .form-actions {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end;
+        }
+        .btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .btn-secondary {
+            background: #38444d;
+            color: #e7e9ea;
+        }
+        .btn-primary {
+            background: #1d9bf0;
+            color: white;
+        }
+        /* 人工修正标记 */
+        .corrected-badge {
+            background: #f59e0b;
+            color: white;
+            font-size: 9px;
+            padding: 1px 3px;
+            border-radius: 3px;
+            margin-left: 4px;
         }
         .entity-tag:hover {
             background: #1d9bf0;
@@ -960,6 +1092,13 @@
     <!-- 浮动工具栏 -->
     <div class="floating-toolbar">
         <div class="toolbar-section">
+            <span class="toolbar-label">视图</span>
+            <div class="tab-controls" id="tabControls">
+                <button class="tab-btn active" onclick="switchTab('news')" id="tabNews">📰 新闻列表</button>
+                <button class="tab-btn" onclick="switchTab('events')" id="tabEvents">📅 事件追踪</button>
+            </div>
+        </div>
+        <div class="toolbar-section" id="dateToolbarSection">
             <span class="toolbar-label">日期</span>
             <div class="date-selector">
                 <button class="date-btn" onclick="changeDate(-1)" id="prevDate">←</button>
@@ -967,7 +1106,7 @@
                 <button class="date-btn" onclick="changeDate(1)" id="nextDate">→</button>
             </div>
         </div>
-        <div class="toolbar-section">
+        <div class="toolbar-section" id="actionsToolbarSection">
             <span class="toolbar-label">选择</span>
             <div class="batch-actions">
                 <span class="batch-info"><strong id="selectedCount">0</strong> 条</span>
@@ -976,7 +1115,7 @@
                 <button class="batch-btn" onclick="clearSelection()" style="background: #f4212e; padding: 6px 12px; font-size: 12px;">清空</button>
             </div>
         </div>
-        <div class="toolbar-section">
+        <div class="toolbar-section" id="sortToolbarSection">
             <span class="toolbar-label">排序</span>
             <div class="sort-controls">
                 <button class="sort-btn" onclick="sortBy('rating')" id="sortRating">评级</button>
@@ -1040,8 +1179,15 @@
 
             <p class="update-time"><span id="currentDate" style="font-weight: 600; color: #e7e9ea;">--</span> | 更新时间：<span id="updateTime">--</span> | 共 <span id="totalCount">0</span> 条</p>
 
-            <main id="news-content">
-                <div class="empty-state">加载中...</div>
+            <main id="main-content">
+                <!-- 新闻列表视图 -->
+                <div id="news-content">
+                    <div class="empty-state">加载中...</div>
+                </div>
+                <!-- 事件追踪视图 -->
+                <div id="events-content" style="display: none;">
+                    <div class="empty-state">加载中...</div>
+                </div>
             </main>
         </div>
 
@@ -1054,12 +1200,15 @@
 
     <div class="toast" id="toast">已复制</div>
 
+
     <script>
         // ==================== 数据加载 ====================
         let NEWS_ARCHIVE = {};
+        let EVENTS = [];
         let UPCOMING_EVENTS = [];
         let ZEITGEIST = [];
-        
+        let currentTab = 'news'; // news/events
+
         // 加载数据
         async function loadData() {
             try {
@@ -1067,14 +1216,22 @@
                     fetch('news_data.json?v=' + Date.now()),
                     fetch('upcoming_events.json?v=' + Date.now())
                 ]);
-                
+
                 // 加载新闻数据
                 if (newsResponse.status === 'fulfilled' && newsResponse.value.ok) {
-                    NEWS_ARCHIVE = await newsResponse.value.json();
+                    const data = await newsResponse.value.json();
+                    // 兼容新旧格式
+                    if (data.news) {
+                        NEWS_ARCHIVE = data.news;
+                        EVENTS = data.events || [];
+                    } else {
+                        NEWS_ARCHIVE = data;
+                        EVENTS = [];
+                    }
                 } else {
                     throw new Error('Failed to load news data');
                 }
-                
+
                 // 加载预告事件数据
                 if (upcomingResponse.status === 'fulfilled' && upcomingResponse.value.ok) {
                     const upcomingData = await upcomingResponse.value.json();
@@ -1083,26 +1240,138 @@
                     renderUpcomingEvents();
                     renderZeitgeist();
                 }
-                
+
+                // 渲染标签切换
+                renderTabs();
+
                 // 初始化
                 currentDate = getLatestDate();
-                renderNews();
+                renderCurrentView();
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.getElementById('news-content').innerHTML = 
+                document.getElementById('news-content').innerHTML =
                     `<div class="error-state">❌ 数据加载失败: ${error.message}</div>`;
             }
         }
         
         // ==================== 全局状态 ====================
-        let currentTab = 'news';
         let currentDate = '';
         let currentSort = { field: 'rating', order: 'desc' };
         let filteredRating = null;
         let selectedItems = new Set();
         let selectedEntity = null;
 
-        // ==================== Inoreader 功能 ====================
+        // ==================== 标签切换 ====================
+        function renderTabs() {
+            // 只有存在事件时才显示事件标签
+            const tabEvents = document.getElementById('tabEvents');
+            if (EVENTS.length > 0) {
+                tabEvents.style.display = 'inline-block';
+            } else {
+                tabEvents.style.display = 'none';
+            }
+        }
+
+        function switchTab(tab) {
+            currentTab = tab;
+            // 更新标签状态
+            document.getElementById('tabNews').className = 'tab-btn' + (tab === 'news' ? ' active' : '');
+            document.getElementById('tabEvents').className = 'tab-btn' + (tab === 'events' ? ' active' : '');
+
+            // 显示/隐藏工具栏部分
+            if (tab === 'news') {
+                document.getElementById('dateToolbarSection').style.display = 'flex';
+                document.getElementById('actionsToolbarSection').style.display = 'flex';
+                document.getElementById('sortToolbarSection').style.display = 'flex';
+                document.getElementById('news-content').style.display = 'block';
+                document.getElementById('events-content').style.display = 'none';
+                renderNews();
+            } else {
+                document.getElementById('dateToolbarSection').style.display = 'none';
+                document.getElementById('actionsToolbarSection').style.display = 'none';
+                document.getElementById('sortToolbarSection').style.display = 'none';
+                document.getElementById('news-content').style.display = 'none';
+                document.getElementById('events-content').style.display = 'block';
+                renderEvents();
+            }
+        }
+
+        function renderCurrentView() {
+            if (currentTab === 'news') {
+                renderNews();
+            } else {
+                renderEvents();
+            }
+        }
+
+        // ==================== 事件展示功能 ====================
+        function renderEvents() {
+            const content = document.getElementById('events-content');
+
+            if (EVENTS.length === 0) {
+                content.innerHTML = `<div class="empty-state"><p>📭 暂无事件数据</p></div>`;
+                return;
+            }
+
+            // 事件分级颜色映射
+            const getRatingClass = (rating) => {
+                const map = { 'S': 'rating-S', 'A+': 'rating-A\+', 'A': 'rating-A', 'B': 'rating-B', 'C': 'rating-C' };
+                return map[rating] || 'rating-C';
+            };
+
+            // 格式化日期范围
+            const formatDateRange = (start, end) => {
+                const startDate = new Date(start);
+                const endDate = new Date(end);
+                if (startDate.toDateString() === endDate.toDateString()) {
+                    return startDate.toLocaleDateString('zh-CN', {month: 'numeric', day: 'numeric'});
+                }
+                return `${startDate.toLocaleDateString('zh-CN', {month: 'numeric', day: 'numeric'})} ~ ${endDate.toLocaleDateString('zh-CN', {month: 'numeric', day: 'numeric'})}`;
+            };
+
+            content.innerHTML = `
+                <div style="margin-bottom: 20px;">
+                    <h2 style="margin-bottom: 10px;">📅 热点事件追踪</h2>
+                    <p class="update-time">共 ${EVENTS.length} 个热点事件 | 更新时间：${new Date().toLocaleString('zh-CN')}</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 16px;">
+                    ${EVENTS.map(event => `
+                        <div style="background: #16181c; border: 1px solid #2f3336; border-radius: 12px; overflow: hidden;">
+                            <!-- 事件头部 -->
+                            <div style="padding: 16px; border-bottom: 1px solid #2f3336;">
+                                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                                    <span class="rating-tag ${getRatingClass(event.max_grade)}">${event.max_grade}</span>
+                                    <h3 style="font-size: 16px; font-weight: 600; flex: 1;">${event.title}</h3>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 12px; font-size: 12px; color: #8899a6;">
+                                    <span>📰 ${event.news_count} 条相关报道</span>
+                                    <span>📅 ${formatDateRange(event.start_time, event.end_time)}</span>
+                                    <span>⭐ ${event.max_score} 分</span>
+                                </div>
+                                <div style="margin-top: 8px;">
+                                    ${event.entities.map(entity => `<span class="entity-tag">${entity}</span>`).join('')}
+                                </div>
+                            </div>
+                            <!-- 事件新闻列表 -->
+                            <div style="padding: 12px;">
+                                ${event.news_list.sort((a, b) => a.timestamp - b.timestamp).map((item, index) => `
+                                    <div style="padding: 8px 0; border-bottom: 1px solid #2f3336; ${index === event.news_list.length - 1 ? 'border-bottom: none;' : ''}">
+                                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                                            <span style="font-size: 10px; color: #8899a6; min-width: 40px;">${new Date(item.timestamp * 1000).toLocaleString('zh-CN', {hour: '2-digit', minute: '2-digit'})}</span>
+                                            <span class="rating-tag ${getRatingClass(item.rating)}" style="font-size: 10px; padding: 1px 4px;">${item.rating}</span>
+                                            <a href="${item.url}" target="_blank" style="color: #1d9bf0; font-size: 13px; text-decoration: none;">${item.title}</a>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+
+        // ==================== 新闻列表功能 ====================
         function getLatestDate() {
             const dates = Object.keys(NEWS_ARCHIVE).sort();
             return dates[dates.length - 1] || new Date().toISOString().split('T')[0];
@@ -1445,7 +1714,10 @@
                             return `
                             <tr class="${isSelected ? 'selected' : ''}">
                                 <td><input type="checkbox" class="checkbox" ${isSelected ? 'checked' : ''} onchange="toggleSelection(${index})"></td>
-                                <td><span class="rating-tag ${getRatingClass(item.rating)}" onclick="filterByRating('${item.rating}')">${item.rating || 'C'}</span></td>
+                                <td>
+                                    <span class="rating-tag ${getRatingClass(item.rating)}" onclick="filterByRating('${item.rating}')">${item.rating || 'C'}</span>
+                                    ${item.is_corrected ? '<span class="corrected-badge" title="人工修正">✓</span>' : ''}
+                                </td>
                                 <td>${renderType(item.type, item.typeName)}</td>
                                 <td><div class="news-title">${item.title}</div></td>
                                 <td><div class="news-summary">${item.summary}</div></td>

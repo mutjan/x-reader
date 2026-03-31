@@ -56,6 +56,7 @@ class ProcessedNewsItem:
     raw_item: Optional[RawNewsItem] = None
     sourceLinks: List[Dict[str, str]] = field(default_factory=list)
     sources: int = 1
+    event_id: Optional[str] = None  # 所属事件ID，同事件的新闻共享一个ID
 
     def to_dict(self) -> Dict[str, Any]:
         """转换为字典格式，用于存储"""
@@ -73,7 +74,8 @@ class ProcessedNewsItem:
             "source": self.source,
             "url": self.url,
             "published_at": self.published_at.isoformat(),
-            "processed_at": self.processed_at.isoformat()
+            "processed_at": self.processed_at.isoformat(),
+            "event_id": self.event_id
         }
 
     def to_frontend_dict(self) -> Dict[str, Any]:
@@ -109,7 +111,8 @@ class ProcessedNewsItem:
             "timestamp": int(self.processed_at.timestamp()),
             "published_at": self.processed_at.isoformat(),
             "source": self.source,
-            "url": self.url
+            "url": self.url,
+            "event_id": self.event_id
         }
 
     @classmethod
@@ -132,7 +135,8 @@ class ProcessedNewsItem:
             source=data.get("source", ""),
             url=data.get("url", ""),
             published_at=published_at,
-            processed_at=processed_at
+            processed_at=processed_at,
+            event_id=data.get("event_id")
         )
 
 class EntityNormalizer:

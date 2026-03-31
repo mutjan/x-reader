@@ -6,7 +6,8 @@ import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-from flask import Flask, render_template, jsonify, request, redirect, url_for
+from flask import Flask, render_template, jsonify, request, redirect, url_for, session
+from functools import wraps
 import json
 import subprocess
 from datetime import datetime
@@ -14,21 +15,63 @@ from typing import Dict, List, Any
 
 from src.config.settings import DATA_FILE, settings
 from src.utils.common import load_json, setup_logger, save_json
+from src.data.feedback_store import FeedbackStore
+from src.data.source_store import source_store
 
 app = Flask(__name__)
 logger = setup_logger("web_admin")
 
+# 配置Flask session
+app.config['SECRET_KEY'] = settings.SECRET_KEY
+app.config['PERMANENT_SESSION_LIFETIME'] = 24 * 60 * 60  # 24小时有效期
+
 # 禁用模板缓存
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+
+# 登录校验装饰器
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'logged_in' not in session:
+            # API请求返回401，页面请求跳转到登录页
+            if request.path.startswith('/api/'):
+                return jsonify({'code': -1, 'message': '未登录，请先登录'}), 401
+            return redirect(url_for('login'))
+        return f(*args, **kwargs)
+    return decorated_function
 
 # 项目根目录
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_FILE_PATH = os.path.join(ROOT_DIR, DATA_FILE)
 ZEITGEIST_CONFIG_PATH = os.path.join(ROOT_DIR, 'config', 'zeitgeist.json')
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    """登录页面"""
+    if request.method == 'POST':
+        password = request.form.get('password', '')
+        if password == settings.ADMIN_PASSWORD:
+            session['logged_in'] = True
+            session.permanent = True
+            return redirect(url_for('index'))
+        return render_template('login.html', error='密码错误，请重试')
+
+    # 已登录用户直接跳转到首页
+    if 'logged_in' in session:
+        return redirect(url_for('index'))
+
+    return render_template('login.html')
+
+@app.route('/logout')
+def logout():
+    """登出"""
+    session.pop('logged_in', None)
+    return redirect(url_for('login'))
+
 @app.route('/')
 @app.route('/admin')
+@login_required
 def index():
     """管理首页"""
     # 加载最新数据（按日期分组的字典）
@@ -64,6 +107,7 @@ def index():
                          top_sources=top_sources)
 
 @app.route('/api/news')
+@login_required
 def api_news():
     """获取新闻数据API"""
     page = int(request.args.get('page', 1))
@@ -106,6 +150,7 @@ def api_news():
     })
 
 @app.route('/api/trigger-sync', methods=['POST'])
+@login_required
 def api_trigger_sync():
     """手动触发同步任务"""
     try:
@@ -137,6 +182,7 @@ def api_trigger_sync():
         }), 500
 
 @app.route('/api/status')
+@login_required
 def api_status():
     """系统状态API"""
     # 磁盘使用情况
@@ -173,6 +219,7 @@ def api_status():
     })
 
 @app.route('/api/config', methods=['GET', 'POST'])
+@login_required
 def api_config():
     """配置管理API"""
     if request.method == 'GET':
@@ -199,6 +246,7 @@ def api_config():
         })
 
 @app.route('/api/zeitgeist', methods=['GET'])
+@login_required
 def api_zeitgeist_list():
     """获取时代情绪热点列表"""
     try:
@@ -236,6 +284,7 @@ def api_zeitgeist_list():
         }), 500
 
 @app.route('/api/zeitgeist/<keyword>', methods=['GET'])
+@login_required
 def api_zeitgeist_detail(keyword):
     """获取单个时代情绪热点详情"""
     try:
@@ -261,6 +310,7 @@ def api_zeitgeist_detail(keyword):
         }), 500
 
 @app.route('/api/zeitgeist', methods=['POST'])
+@login_required
 def api_zeitgeist_create():
     """创建新的时代情绪热点"""
     try:
@@ -325,6 +375,7 @@ def api_zeitgeist_create():
         }), 500
 
 @app.route('/api/zeitgeist/<keyword>', methods=['PUT'])
+@login_required
 def api_zeitgeist_update(keyword):
     """更新时代情绪热点"""
     try:
@@ -369,6 +420,7 @@ def api_zeitgeist_update(keyword):
         }), 500
 
 @app.route('/api/zeitgeist/<keyword>', methods=['DELETE'])
+@login_required
 def api_zeitgeist_delete(keyword):
     """删除时代情绪热点"""
     try:
@@ -406,6 +458,7 @@ def api_zeitgeist_delete(keyword):
         }), 500
 
 @app.route('/api/zeitgeist/test', methods=['POST'])
+@login_required
 def api_zeitgeist_test():
     """测试内容匹配"""
     try:
@@ -431,6 +484,201 @@ def api_zeitgeist_test():
         return jsonify({
             'code': -1,
             'message': f'测试失败: {str(e)}'
+        }), 500
+
+@app.route('/api/feedback', methods=['POST'])
+@login_required
+def api_submit_feedback():
+    """提交评分反馈"""
+    try:
+        data = request.get_json()
+        # 验证必填字段
+        required_fields = ['news_id', 'original_grade', 'original_score', 'corrected_grade', 'corrected_score']
+        for field in required_fields:
+            if field not in data:
+                return jsonify({
+                    'code': -1,
+                    'message': f'缺少必填字段: {field}'
+                }), 400
+        # 验证分级格式
+        valid_grades = ['S', 'A+', 'A', 'B', 'C']
+        if data['corrected_grade'] not in valid_grades:
+            return jsonify({
+                'code': -1,
+                'message': f'无效的分级: {data["corrected_grade"]}，必须是S/A+/A/B/C之一'
+            }), 400
+        # 验证分数范围
+        corrected_score = int(data['corrected_score'])
+        if corrected_score < 0 or corrected_score > 100:
+            return jsonify({
+                'code': -1,
+                'message': '分数必须在0-100之间'
+            }), 400
+        # 存储反馈
+        feedback_store = FeedbackStore()
+        success = feedback_store.add_feedback(
+            news_id=data['news_id'],
+            original_grade=data['original_grade'],
+            original_score=int(data['original_score']),
+            corrected_grade=data['corrected_grade'],
+            corrected_score=corrected_score,
+            reason=data.get('reason', ''),
+            entities=data.get('entities', [])
+        )
+        if success:
+            return jsonify({
+                'code': 0,
+                'message': '反馈提交成功'
+            })
+        else:
+            return jsonify({
+                'code': -1,
+                'message': '反馈提交失败，请稍后重试'
+            }), 500
+    except Exception as e:
+        logger.error(f"提交反馈失败: {e}")
+        return jsonify({
+            'code': -1,
+            'message': f'提交失败: {str(e)}'
+        }), 500
+
+# 源管理API
+@app.route('/api/sources', methods=['GET'])
+@login_required
+def api_sources_list():
+    """获取源列表"""
+    try:
+        include_disabled = request.args.get('include_disabled', 'false').lower() == 'true'
+        sources = source_store.get_all_sources(include_disabled=include_disabled)
+        return jsonify({
+            'code': 0,
+            'data': sources,
+            'total': len(sources)
+        })
+    except Exception as e:
+        logger.error(f"获取源列表失败: {e}")
+        return jsonify({
+            'code': -1,
+            'message': f'获取失败: {str(e)}'
+        }), 500
+
+@app.route('/api/sources', methods=['POST'])
+@login_required
+def api_sources_create():
+    """创建新源"""
+    try:
+        data = request.get_json()
+
+        # 验证必填字段
+        required_fields = ['name', 'url', 'type']
+        for field in required_fields:
+            if field not in data:
+                return jsonify({
+                    'code': -1,
+                    'message': f'缺少必填字段: {field}'
+                }), 400
+
+        # 验证源类型
+        valid_types = ['rss', 'api', 'twitter', 'inoreader']
+        if data['type'] not in valid_types:
+            return jsonify({
+                'code': -1,
+                'message': f'无效的源类型: {data["type"]}，必须是rss/api/twitter/inoreader之一'
+            }), 400
+
+        # 创建源
+        new_source = source_store.add_source(
+            name=data['name'],
+            url=data['url'],
+            source_type=data['type'],
+            enabled=data.get('enabled', True),
+            weight=data.get('weight', 1.0),
+            config=data.get('config', {})
+        )
+
+        if new_source:
+            return jsonify({
+                'code': 0,
+                'message': '创建成功',
+                'data': new_source
+            })
+        else:
+            return jsonify({
+                'code': -1,
+                'message': '创建失败，请稍后重试'
+            }), 500
+
+    except Exception as e:
+        logger.error(f"创建源失败: {e}")
+        return jsonify({
+            'code': -1,
+            'message': f'创建失败: {str(e)}'
+        }), 500
+
+@app.route('/api/sources/<source_id>', methods=['PUT'])
+@login_required
+def api_sources_update(source_id):
+    """更新源"""
+    try:
+        data = request.get_json()
+
+        # 验证源存在
+        existing_source = source_store.get_source(source_id)
+        if not existing_source:
+            return jsonify({
+                'code': -1,
+                'message': '源不存在'
+            }), 404
+
+        # 更新字段
+        update_data = {}
+        allowed_fields = ['name', 'url', 'type', 'enabled', 'weight', 'config']
+        for key, value in data.items():
+            if key in allowed_fields:
+                update_data[key] = value
+
+        updated_source = source_store.update_source(source_id, **update_data)
+
+        if updated_source:
+            return jsonify({
+                'code': 0,
+                'message': '更新成功',
+                'data': updated_source
+            })
+        else:
+            return jsonify({
+                'code': -1,
+                'message': '更新失败，请稍后重试'
+            }), 500
+
+    except Exception as e:
+        logger.error(f"更新源失败: {e}")
+        return jsonify({
+            'code': -1,
+            'message': f'更新失败: {str(e)}'
+        }), 500
+
+@app.route('/api/sources/<source_id>', methods=['DELETE'])
+@login_required
+def api_sources_delete(source_id):
+    """删除源"""
+    try:
+        success = source_store.delete_source(source_id)
+        if success:
+            return jsonify({
+                'code': 0,
+                'message': '删除成功'
+            })
+        else:
+            return jsonify({
+                'code': -1,
+                'message': '删除失败，源不存在'
+            }), 404
+    except Exception as e:
+        logger.error(f"删除源失败: {e}")
+        return jsonify({
+            'code': -1,
+            'message': f'删除失败: {str(e)}'
         }), 500
 
 if __name__ == '__main__':

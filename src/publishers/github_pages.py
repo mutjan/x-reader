@@ -11,8 +11,11 @@ from datetime import datetime, timedelta
 
 from src.publishers.base import BasePublisher
 from src.models.news import ProcessedNewsItem
-from src.config.settings import DATA_FILE, GITHUB_BRANCH, settings
-from src.utils.common import save_json, load_json, is_similar_text
+from src.processors.event_grouper import EventGrouper
+from src.data.feedback_store import FeedbackStore
+from src.processors.score_calibrator import CalibrationEngine
+from src.config.settings import DATA_FILE, GITHUB_BRANCH, settings, TEMP_DIR
+from src.utils.common import save_json, load_json
 
 class GitHubPagesPublisher(BasePublisher):
     """GitHub Pages发布器"""
@@ -91,19 +94,10 @@ class GitHubPagesPublisher(BasePublisher):
 
         updated_count = 0
         new_count = 0
-        duplicate_by_title_count = 0
-
-        # 预处理现有标题映射，用于快速相似度比较
-        existing_titles = {}
-        for item_id, item in existing_dict.items():
-            title = item.get("chinese_title", item.get("title", "")).strip()
-            if title:
-                existing_titles[item_id] = title
 
         for item in new_items:
             item_dict = item.to_dict()
             item_id = item_dict["id"]
-            item_title = item.chinese_title.strip()
 
             if item_id in existing_dict:
                 if update_existing:
@@ -117,36 +111,9 @@ class GitHubPagesPublisher(BasePublisher):
                     existing_dict[item_id] = existing_item
                     updated_count += 1
             else:
-                # 检查是否有标题相似的已存在条目（相同新闻事件）
-                is_duplicate = False
-                if item_title:
-                    for existing_id, existing_title in existing_titles.items():
-                        if existing_title and is_similar_text(item_title, existing_title, threshold=0.7):
-                            # 相似标题，视为同一新闻事件
-                            is_duplicate = True
-                            duplicate_by_title_count += 1
-                            # 更新现有条目的来源链接
-                            existing_item = existing_dict[existing_id]
-                            if "sourceLinks" in item_dict:
-                                new_links = item_dict["sourceLinks"]
-                                existing_links = existing_item.get("sourceLinks", [])
-                                # 合并来源链接，去重
-                                existing_urls = {link["url"] for link in existing_links}
-                                for link in new_links:
-                                    if link["url"] not in existing_urls:
-                                        existing_links.append(link)
-                                        existing_urls.add(link["url"])
-                                existing_item["sourceLinks"] = existing_links
-                                existing_item["sources"] = len(existing_links)
-                            break
-
-                if not is_duplicate:
-                    existing_dict[item_id] = item_dict
-                    existing_titles[item_id] = item_title
-                    new_count += 1
-
-        if duplicate_by_title_count > 0:
-            self.logger.info(f"标题相似去重: 跳过了{duplicate_by_title_count}条相同新闻事件")
+                # 新新闻直接添加（相似新闻合并已在merge_similar_news阶段完成）
+                existing_dict[item_id] = item_dict
+                new_count += 1
 
         # 清理超过30天的过期数据
         thirty_days_ago = datetime.now() - timedelta(days=30)
@@ -208,7 +175,8 @@ class GitHubPagesPublisher(BasePublisher):
 
         # 保存前先备份现有数据
         if os.path.exists(self.data_file):
-            backup_file = f"{self.data_file}.bak.{datetime.now().strftime('%Y%m%d%H%M%S')}"
+            backup_filename = f"news_data.json.bak.{datetime.now().strftime('%Y%m%d%H%M%S')}"
+            backup_file = os.path.join(TEMP_DIR, backup_filename)
             try:
                 import shutil
                 shutil.copy(self.data_file, backup_file)
@@ -216,8 +184,64 @@ class GitHubPagesPublisher(BasePublisher):
             except Exception as e:
                 self.logger.warning(f"数据备份失败: {e}")
 
-        # 保存合并后的数据（按日期分组格式）
-        save_json(news_by_date, self.data_file)
+        # 事件分组处理：将所有新闻合并后进行事件分组
+        all_news = []
+        for date in news_by_date:
+            all_news.extend(news_by_date[date])
+
+        # 转换回ProcessedNewsItem对象进行事件分组
+        processed_items = []
+        feedback_store = FeedbackStore()
+
+        for item_dict in all_news:
+            try:
+                item = ProcessedNewsItem.from_dict(item_dict)
+                # 检查是否有反馈修正
+                feedback = feedback_store.get_feedback_by_news_id(item.id)
+                if feedback:
+                    # 应用用户修正的评分和分级
+                    original_grade = item.grade
+                    original_score = item.score
+                    item.grade = feedback.get("corrected_grade", original_grade)
+                    item.score = feedback.get("corrected_score", original_score)
+                    # 标记为人工修正
+                    item_dict["is_corrected"] = True
+                    item_dict["original_grade"] = original_grade
+                    item_dict["original_score"] = original_score
+                    self.logger.debug(f"应用反馈修正: news_id={item.id}, {original_grade}({original_score}) → {item.grade}({item.score})")
+
+                processed_items.append(item)
+            except Exception as e:
+                self.logger.warning(f"跳过无效新闻条目: {e}")
+
+        # 应用评分校准规则
+        if processed_items:
+            calibration_engine = CalibrationEngine()
+            processed_items = calibration_engine.batch_calibrate(processed_items)
+            # 更新字典中的评分数据
+            for item, item_dict in zip(processed_items, all_news):
+                if item.score != item_dict.get("score"):
+                    item_dict["score"] = item.score
+                    item_dict["rating"] = item.grade
+                    item_dict["is_calibrated"] = True
+                    self.logger.debug(f"应用校准规则: news_id={item.id}, 分数调整为{item.score}({item.grade})")
+
+        # 进行事件分组
+        event_grouper = EventGrouper()
+        events = event_grouper.group_news(processed_items)
+
+        # 转换事件为字典格式
+        events_data = [event.to_dict() for event in events]
+
+        # 保存合并后的数据，包含事件信息
+        output_data = {
+            "news": news_by_date,
+            "events": events_data,
+            "last_updated": datetime.now().isoformat(),
+            "total_news": len(all_news),
+            "total_events": len(events)
+        }
+        save_json(output_data, self.data_file)
 
         return updated_count, new_count
 

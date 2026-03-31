@@ -6,6 +6,7 @@ from typing import List
 import xml.etree.ElementTree as ET
 import requests
 from datetime import datetime
+import re
 
 from src.fetchers.base import BaseFetcher
 from src.models.news import RawNewsItem
@@ -18,6 +19,49 @@ class TwitterFetcher(BaseFetcher):
     def __init__(self):
         super().__init__("twitter")
         self.rss_url = RSS_CONFIG["twitter"]["url"]
+        # 转发内容匹配模式
+        self.retweet_patterns = [
+            # 标准RT格式
+            re.compile(r'^RT @[\w_]+: (.*)$', re.DOTALL),
+            # 中文转发格式
+            re.compile(r'^转发 @[\w_]+: (.*)$', re.DOTALL),
+            # 引用转推格式（有换行分隔）
+            re.compile(r'^(.*?)\s*Quoted from @[\w_]+:\s*(.*)$', re.DOTALL | re.IGNORECASE),
+            # Reposted格式
+            re.compile(r'^(.*?)\s*Reposted from @[\w_]+:\s*(.*)$', re.DOTALL | re.IGNORECASE),
+            # 另一种引用格式（冒号后直接跟内容）
+            re.compile(r'^(.*?)"@[\w_]+: (.*?)"', re.DOTALL),
+        ]
+
+    def _parse_twitter_content(self, content: str) -> str:
+        """
+        解析Twitter内容，对于转发贴，优先使用被转发的原贴内容，转发者的评论作为补充
+        :param content: 原始Twitter内容
+        :return: 处理后的内容，原贴内容在前，转发评论在后
+        """
+        if not content:
+            return content
+
+        # 尝试匹配各种转发格式
+        for pattern in self.retweet_patterns:
+            match = pattern.match(content)
+            if match:
+                groups = match.groups()
+                if len(groups) == 1:
+                    # 纯转发，无评论，直接使用原贴内容
+                    return groups[0].strip()
+                elif len(groups) == 2:
+                    # 有评论的转发，原贴内容在前，评论在后
+                    quote_content = groups[0].strip()
+                    original_content = groups[1].strip()
+                    if original_content:
+                        # 原贴内容作为主要内容，转发评论作为补充
+                        if quote_content:
+                            return f"{original_content}\n\n转发评论: {quote_content}"
+                        return original_content
+
+        # 不是转发贴，返回原内容
+        return content
 
     def fetch(self, time_window_hours: int = 24) -> List[RawNewsItem]:
         """获取Twitter RSS内容"""
@@ -46,6 +90,9 @@ class TwitterFetcher(BaseFetcher):
 
                 # 清理HTML内容
                 content = clean_html(description)
+
+                # 解析转发内容，优先使用原贴内容
+                content = self._parse_twitter_content(content)
 
                 # 解析发布时间
                 published_at = parse_date(pub_date_str) or datetime.now()

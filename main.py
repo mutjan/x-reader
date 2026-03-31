@@ -27,8 +27,10 @@ def main():
     parser.add_argument('--source', type=str, default='all',
                        choices=['twitter', 'inoreader', 'all'],
                        help='数据源类型 (默认: all)')
-    parser.add_argument('--time-window', type=int, default=24,
-                       help='获取最近多少小时内的新闻 (默认: 24)')
+    parser.add_argument('--time-window', type=int, default=2,
+                       help='获取最近多少小时内的新闻 (默认: 2，增量更新)')
+    parser.add_argument('--full', action='store_true',
+                       help='全量更新模式，获取最近24小时内的新闻')
     parser.add_argument('--min-score', type=int, default=10,
                        help='预筛选最低得分 (默认: 10)')
     parser.add_argument('--batch-size', type=int, default=DEFAULT_BATCH_SIZE,
@@ -39,6 +41,11 @@ def main():
                        help='测试模式，只获取数据不处理')
 
     args = parser.parse_args()
+
+    # 处理全量更新模式
+    if args.full:
+        args.time_window = 24
+        logger.info("全量更新模式，抓取最近24小时新闻")
 
     logger.info("=" * 60)
     logger.info("x-reader 新闻聚合工具 v1.0.0")

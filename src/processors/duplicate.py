@@ -28,9 +28,9 @@ class DuplicateRemover:
         data = load_json(PROCESSED_IDS_FILE, [])
         return set(data)
 
-    def save_processed_ids(self, max_ids: int = 5000) -> None:
+    def save_processed_ids(self, max_ids: int = 10000) -> None:
         """保存已处理的新闻ID集合"""
-        # 只保留最近的max_ids条
+        # 只保留最近的max_ids条（约7天的量）
         ids_list = list(self.processed_ids)[-max_ids:]
         save_json(ids_list, PROCESSED_IDS_FILE)
         logger.info(f"已保存 {len(ids_list)} 条处理记录")

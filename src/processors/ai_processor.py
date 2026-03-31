@@ -133,6 +133,59 @@ class BaseAIProcessor(ABC):
         prompt = f"{self.system_prompt}\n\n输入新闻：\n{json.dumps(news_list, ensure_ascii=False, indent=2)}"
         return prompt
 
+    def save_base_results_to_snapshot(self, snapshot_id: str, processed_items: List[ProcessedNewsItem]) -> bool:
+        """保存基础处理结果到快照"""
+        snapshot_file = os.path.join(SNAPSHOT_DIR, f"snapshot_{snapshot_id}.json")
+        if not os.path.exists(snapshot_file):
+            logger.error(f"快照文件不存在: {snapshot_file}")
+            return False
+
+        snapshot = load_json(snapshot_file)
+
+        # 保存处理结果
+        snapshot["base_results"] = [item.to_dict() for item in processed_items]
+        snapshot["status"]["base_processing"] = "completed"
+
+        # 生成分打提示词
+        scorer = AIScorer()
+        scoring_prompt = scorer.build_scoring_prompt(processed_items)
+        scoring_prompt_file = os.path.join(TEMP_DIR, f"scoring_prompt_{snapshot_id}.txt")
+
+        with open(scoring_prompt_file, 'w', encoding='utf-8') as f:
+            f.write(scoring_prompt)
+
+        logger.info(f"已生成分打提示词文件: {scoring_prompt_file}")
+
+        # 保存更新后的快照
+        save_json(snapshot, snapshot_file)
+        logger.info(f"基础处理结果已保存到快照")
+        return True
+
+    def load_base_results_from_snapshot(self, snapshot_id: str) -> List[ProcessedNewsItem]:
+        """从快照加载基础处理结果"""
+        snapshot_file = os.path.join(SNAPSHOT_DIR, f"snapshot_{snapshot_id}.json")
+        if not os.path.exists(snapshot_file):
+            logger.error(f"快照文件不存在: {snapshot_file}")
+            return []
+
+        snapshot = load_json(snapshot_file)
+        base_results = snapshot.get("base_results", [])
+
+        if not base_results:
+            logger.warning("快照中没有基础处理结果")
+            return []
+
+        # 反序列化为ProcessedNewsItem对象
+        processed_items = []
+        for item_dict in base_results:
+            try:
+                item = ProcessedNewsItem.from_dict(item_dict)
+                processed_items.append(item)
+            except Exception as e:
+                logger.warning(f"跳过无效基础处理结果: {e}")
+
+        return processed_items
+
     def parse_response(self, response_text: str, original_items: List[RawNewsItem]) -> List[ProcessedNewsItem]:
         """解析AI返回的响应"""
         try:
@@ -299,6 +352,12 @@ class ManualProcessor(BaseAIProcessor):
             "snapshot_id": snapshot_id,
             "created_at": datetime.now().isoformat(),
             "items_count": len(items),
+            "status": {
+                "base_processing": "pending",
+                "scoring": "pending"
+            },
+            "base_results": None,
+            "scoring_results": None,
             "items": [
                 {
                     "index": i,
@@ -324,9 +383,13 @@ class ManualProcessor(BaseAIProcessor):
             f.write(prompt)
 
         logger.info(f"已生成处理快照: {snapshot_file}")
-        logger.info(f"已生成手动处理提示词文件: {prompt_file}")
+        logger.info(f"已生成基础处理提示词文件: {prompt_file}")
         logger.info(f"快照ID: {snapshot_id}")
-        logger.info("请将提示词发送给AI处理，将结果保存为JSON文件后重新运行脚本")
+        logger.info("=== 两步处理流程 ===")
+        logger.info("步骤1: 将基础处理提示词发送给AI处理，将结果保存为JSON文件（如：_ai_base_result.json）")
+        logger.info("步骤2: 运行导入脚本时指定基础结果文件，系统将自动生成分打提示词")
+        logger.info("步骤3: 将打分提示词发送给AI处理，将结果保存为JSON文件（如：_ai_scoring_result.json）")
+        logger.info("步骤4: 再次运行导入脚本指定打分结果文件，完成完整处理流程")
 
         # 这里返回空列表，需要用户手动处理后重新运行
         return []
