@@ -75,7 +75,8 @@ def logout():
 def index():
     """管理首页"""
     # 加载最新数据（按日期分组的字典）
-    news_data = load_json(DATA_FILE_PATH, {})
+    data = load_json(DATA_FILE_PATH, {})
+    news_data = data.get('news', {})  # 新结构中news字段存储日期分组
 
     # 将所有新闻展平为列表
     all_news = []
@@ -113,27 +114,69 @@ def api_news():
     page = int(request.args.get('page', 1))
     page_size = int(request.args.get('page_size', 20))
     search = request.args.get('search', '').lower()
+    filter_param = request.args.get('filter', '')
+    sort_param = request.args.get('sort', 'published_at:desc')
 
     # 加载最新数据（按日期分组的字典）
-    news_data = load_json(DATA_FILE_PATH, {})
+    data = load_json(DATA_FILE_PATH, {})
+    news_data = data.get('news', {})  # 新结构中news字段存储日期分组
 
-    # 将所有新闻展平为列表并按时间倒序排列
+    # 将所有新闻展平为列表
     all_news = []
     for date_items in news_data.values():
         all_news.extend(date_items)
-
-    # 按发布时间倒序排列
-    all_news.sort(key=lambda x: x.get('published_at', ''), reverse=True)
 
     # 搜索过滤
     filtered_news = all_news
     if search:
         filtered_news = [
-            item for item in all_news
+            item for item in filtered_news
             if search in item.get('title', '').lower()
             or search in item.get('summary', '').lower()
             or any(search in entity.lower() for entity in item.get('entities', []))
         ]
+
+    # 条件筛选
+    if filter_param:
+        try:
+            import json
+            filters = json.loads(filter_param)
+
+            # 领域筛选
+            if 'domain' in filters and filters['domain']:
+                filtered_news = [item for item in filtered_news if item.get('type', '') == filters['domain']]
+
+            # 热度筛选
+            if 'score_min' in filters and filters['score_min'] is not None:
+                filtered_news = [item for item in filtered_news if item.get('score', 0) >= filters['score_min']]
+            if 'score_max' in filters and filters['score_max'] is not None:
+                filtered_news = [item for item in filtered_news if item.get('score', 0) <= filters['score_max']]
+
+            # 时间筛选
+            if 'start_time' in filters and filters['start_time']:
+                filtered_news = [item for item in filtered_news if item.get('published_at', '') >= filters['start_time']]
+            if 'end_time' in filters and filters['end_time']:
+                filtered_news = [item for item in filtered_news if item.get('published_at', '') <= filters['end_time']]
+
+            # 评级筛选
+            if 'ratings' in filters and filters['ratings']:
+                filtered_news = [item for item in filtered_news if item.get('rating', '') in filters['ratings']]
+        except Exception as e:
+            logger.error(f"筛选参数解析失败: {e}")
+
+    # 排序
+    sort_field, sort_order = sort_param.split(':') if ':' in sort_param else ('published_at', 'desc')
+    reverse = sort_order == 'desc'
+
+    if sort_field == 'score':
+        filtered_news.sort(key=lambda x: x.get('score', 0), reverse=reverse)
+    elif sort_field == 'published_at':
+        filtered_news.sort(key=lambda x: x.get('published_at', ''), reverse=reverse)
+    elif sort_field == 'sources_count':
+        filtered_news.sort(key=lambda x: x.get('sources', 0), reverse=reverse)
+    else:
+        # 默认按时间倒序
+        filtered_news.sort(key=lambda x: x.get('published_at', ''), reverse=True)
 
     # 分页
     total = len(filtered_news)
@@ -209,7 +252,7 @@ def api_status():
             'data': {
                 'size': round(data_size, 2),
                 'last_update': last_update,
-                'count': sum(len(items) for items in load_json(DATA_FILE_PATH, {}).values())
+                'count': sum(len(items) for items in load_json(DATA_FILE_PATH, {}).get('news', {}).values())
             },
             'github': {
                 'enabled': bool(settings.GITHUB_TOKEN),
@@ -686,5 +729,5 @@ if __name__ == '__main__':
     template_dir = os.path.join(os.path.dirname(__file__), 'templates')
     os.makedirs(template_dir, exist_ok=True)
 
-    # 启动服务（生产环境关闭debug模式）
-    app.run(host='0.0.0.0', port=8081, debug=False, use_reloader=False)
+    # 启动服务（临时开启debug模式获取错误信息）
+    app.run(host='0.0.0.0', port=8081, debug=True, use_reloader=False)
