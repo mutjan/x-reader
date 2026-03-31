@@ -6,9 +6,9 @@
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import List, Optional, Dict, Any
-from urllib.parse import urlparse
 import re
 import hashlib
+from src.utils.url import normalize_url
 
 @dataclass
 class RawNewsItem:
@@ -25,8 +25,7 @@ class RawNewsItem:
         # 使用URL作为主要标识
         if self.url:
             # 标准化URL
-            parsed = urlparse(self.url)
-            normalized_url = f"{parsed.netloc}{parsed.path}".lower()
+            normalized_url = normalize_url(self.url)
             return hashlib.md5(normalized_url.encode()).hexdigest()
 
         # 如果没有URL，使用标题+内容哈希
@@ -55,6 +54,8 @@ class ProcessedNewsItem:
     # 元数据
     processed_at: datetime = field(default_factory=datetime.now)
     raw_item: Optional[RawNewsItem] = None
+    sourceLinks: List[Dict[str, str]] = field(default_factory=list)
+    sources: int = 1
 
     def to_dict(self) -> Dict[str, Any]:
         """转换为字典格式，用于存储"""

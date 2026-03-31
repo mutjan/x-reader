@@ -40,7 +40,14 @@ DATA_FILE = os.path.join(DATA_DIR, "news_data.json")
 PROCESSED_IDS_FILE = os.path.join(DATA_DIR, ".processed_ids.json")
 WORK_LOG_FILE = os.path.join(DATA_DIR, ".work_log.json")
 TEMP_DIR = os.path.join(DATA_DIR, ".tmp")
+SNAPSHOT_DIR = os.path.join(TEMP_DIR, "snapshots")
 AUTH_PROFILES_FILE = os.path.expanduser("~/.openclaw/agents/main/agent/auth-profiles.json")
+
+# 临时文件路径
+AI_RESULT_FILE = os.path.join(TEMP_DIR, "_ai_result.json")
+SCORING_RESULT_FILE = os.path.join(TEMP_DIR, "_scoring_result.json")
+FULL_AI_RESULT_FILE = os.path.join(TEMP_DIR, "full_ai_result.json")
+PROCESSED_ITEMS_FILE = os.path.join(TEMP_DIR, "_processed_items.json")
 
 # 缓存配置
 MAX_CACHED_IDS = 5000
@@ -141,3 +148,4 @@ LOGGING_CONFIG = {
 
 # 确保临时目录存在
 os.makedirs(TEMP_DIR, exist_ok=True)
+os.makedirs(SNAPSHOT_DIR, exist_ok=True)
