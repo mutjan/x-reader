@@ -7259,16 +7259,15 @@
       "id": "fdc188234f6fdd8f66cd903a34ac82cb",
       "title": "独立开发者7天逆向复现谷歌算法，提速3.7倍超越论文承诺",
       "original_title": "Solo dev reverse-engineered Google's billion-dollar algorithm in 7 days Google published the paper that crashed memory stocks worldwide. Then shipped ...",
-      "summary": "Tom Turney在谷歌发布导致内存股暴跌的论文后零代码发布的情况下，仅用7天便用Claude完成了完整复现，从Python原型到C语言 Metal GPU内核，性能从739 tok/s优化至2747 tok/s，实现3.7倍加速。",
+      "summary": "受真人秀明星声音启发的AI代理Rachel在圣帕特里克节周末致电爱尔兰所有酒吧，询问健力士啤酒价格，为消费者寻找最优惠的购买渠道。",
       "rating": "S",
-      "score": 97,
-      "type": "research",
+      "score": 0,
+      "type": "society",
       "typeName": "研究成果",
       "expansion": "此事折射出学术论文与工程落地的鸿沟，以及AI辅助编程对独立开发者的能力放大效应，可延伸讨论学术界开源文化、产业落地周期以及AI编程助手的边界。",
       "entities": [
-        "Claude",
-        "Tom Turney",
-        "谷歌"
+        "Ai语音代理",
+        "健力士"
       ],
       "sourceLinks": [
         {
@@ -7280,7 +7279,11 @@
       "timestamp": 1774875881,
       "published_at": "2026-03-30T21:04:41.846858",
       "source": "Twitter",
-      "url": "https://x.com/k1rallik/status/2038567965465944491"
+      "url": "https://x.com/k1rallik/status/2038567965465944491",
+      "original_content": "Solo dev reverse-engineered Google's billion-dollar algorithm in 7 days Google published the paper that crashed memory stocks worldwide. Then shipped zero code. Tom Turney read the math, opened his terminal, and built the whole thing with Claude - then made it faster than Google promised. Day 1-3: Core algorithms, 141 tests, Python prototype Day 3-5: C port into llama.cpp, Metal GPU kernels Day 5-7: Speed optimization from 739 to 2747 tok/s That's a 3.7x speedup through pure engineering: &gt; fp32 → fp16 WHT &gt; half4 vectorized butterfly ops &gt; graph-side rotation &gt; block-32 storage layout Then he added his own research on top: &gt; Sparse V: skip 90% of value decompressions at long context &gt; Asymmetric K/V: keep keys precise, compress values harder &gt; Temporal decay: old tokens get lower precision automatically Result: 35B model running on a MacBook with 4.6x compressed cache. 613 GitHub stars in a week. Google still hasn't released their own code. BuBBliK: http://x.com/i/article/2037798771753439232",
+      "chinese_title": "AI语音代理致电爱尔兰3000家酒吧寻找最便宜健力士啤酒",
+      "grade": "",
+      "extension": "AI语音代理在生活服务场景的创新应用可能重构本地生活服务的信息获取方式，催生新型消费决策工具。"
     },
     {
       "id": "45a37327098ad8e2d70b17196ad38f97",
@@ -10706,6 +10709,87 @@
     }
   ],
   "2026-03-31": [
+    {
+      "id": "16d5cde013ab12e5d55ef78550b78836",
+      "title": "OpenClaw创始人认为2026年将成为通用AI代理元年",
+      "original_title": "OpenClaw's creator says 2026 could be the year of general AI agents",
+      "summary": "AI代理工具OpenClaw创始人Peter Steinberger表示，2026年可能成为通用AI代理的突破之年，这类工具已能完成机票值机等真实生活任务。",
+      "rating": "B",
+      "score": 74,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "通用AI代理技术的快速落地可能重构人机交互模式，催生新的工作流和商业模式。",
+      "entities": [
+        "Ai代理",
+        "Openclaw",
+        "Peter Steinberger"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Tech Xplore - electronic gadgets, technology advances and research news",
+          "url": "https://techxplore.com/news/2026-03-openclaw-creator-year-general-ai.html"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774922461,
+      "published_at": "2026-03-31T10:01:01.295028",
+      "source": "Tech Xplore - electronic gadgets, technology advances and research news",
+      "url": "https://techxplore.com/news/2026-03-openclaw-creator-year-general-ai.html"
+    },
+    {
+      "id": "560d86c6e65200f54b554cc03c870d4b",
+      "title": "AI独立撰写研究论文首次通过机器学习顶会同行评审",
+      "original_title": "AI coding agents will drastically alter both the practice and the economics of exploit development, automating the discovery of zero-day vulnerabilities (Thomas H. Ptacek/sockpuppet.org)",
+      "summary": "完全由AI生成的研究论文首次通过重要机器学习会议研讨会的同行评审，标志着AI在科研领域的应用从辅助工具升级为独立创作者。",
+      "rating": "B",
+      "score": 72,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "AI独立发表科研成果可能引发学术出版体系变革，推动建立AI生成科研内容的审查和署名新标准。",
+      "entities": [
+        "Ai科研",
+        "同行评审",
+        "机器学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p47#a260330p47"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774922461,
+      "published_at": "2026-03-31T10:01:01.295172",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p47#a260330p47"
+    },
+    {
+      "id": "371ea39d5fef98b1998e7c30186deb1b",
+      "title": "新型意图学习方法实现不同形态机器人技能共享",
+      "original_title": "Surprise! Big Tech has been a bit rubbish at enforcing Australia&rsquo;s kids social media ban",
+      "summary": "华盛顿大学圣路易斯分校等机构开发出基于意图的学习新方法，使不同硬件结构的机器人能够互相学习技能，理解其他机器人展示的操作意图。",
+      "rating": "B",
+      "score": 68,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "机器人技能共享技术突破可能加速机器人行业的应用落地，降低多机器人系统的开发和部署成本。",
+      "entities": [
+        "华盛顿大学",
+        "意图学习",
+        "机器人"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Register",
+          "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/31/australian_social_media_ban_enforcement_report/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774922461,
+      "published_at": "2026-03-31T10:01:01.295192",
+      "source": "The Register",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/31/australian_social_media_ban_enforcement_report/"
+    },
     {
       "id": "4e14e3225679865ba628e03af7731366",
       "title": "OpenAI修复ChatGPT DNS通道数据泄露漏洞",
