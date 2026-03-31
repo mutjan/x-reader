@@ -23,7 +23,11 @@
   2. Duplicate news entries are automatically detected and removed before processing
   3. All news items use URL as unique primary key, no AI result mismatch errors occur
   4. Pre-processing list snapshots are persisted, AI input and output are always aligned
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — URL normalization + snapshot generation + existing functionality validation
+- [ ] 01-02-PLAN.md — Strict URL matching + snapshot import + auto cleanup
 
 ### Phase 2: Core AI Topic Processing
 **Goal**: Deliver core AI-powered topic evaluation and content processing capabilities
@@ -78,7 +82,7 @@
 ## Progress Table
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Layer Stability | 0/4 | Not started | - |
+| 1. Data Layer Stability | 0/2 | Not started | - |
 | 2. Core AI Topic Processing | 0/3 | Not started | - |
 | 3. AI Enhancement & Calibration | 0/2 | Not started | - |
 | 4. Source Management & Access Control | 0/2 | Not started | - |
