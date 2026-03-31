@@ -433,7 +433,7 @@
         "original_title": "RT Jasper Dekoninck: Last year, models miserably failed on USAMO 2025. This year, GPT-5.4 scores an amazing 95%, essentially saturating the benchmark....",
         "summary": "数据显示GPT-5.4在USAMO 2025数学竞赛中取得95%的正确率，相比去年大模型表现实现大幅提升，标志着AI在数学推理领域的重大进展。",
         "rating": "A",
-        "score": 80,
+        "score": 79,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "AI数学能力的突破将推动科研效率提升，可能改变数学研究的工作模式，也会引发对AI辅助科研伦理的讨论。",
@@ -461,8 +461,8 @@
         "title": "苏黎世联邦理工博士后公开指控谷歌ICLR论文学术不端",
         "original_title": "苏黎世联邦理工学院博士后高健扬发布公开信，指控谷歌 ICLR 2026 论文 TurboQuant 对其先行工作 RaBitQ 的描述存在三项严重问题。高健扬是 RaBitQ 的第一作者，...",
         "summary": "苏黎世联邦理工学院博士后高健扬发布公开信，指控谷歌ICLR 2026论文TurboQuant在描述其先行工作RaBitQ时存在方法相似性回避、理论结果失实等三项严重问题。",
-        "rating": "A",
-        "score": 82,
+        "rating": "A+",
+        "score": 87,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "该事件可能推动顶会论文评审机制改革，加强对学术不端行为的监管，影响科技公司在学术领域的公信力。",
@@ -10874,18 +10874,18 @@
         "id": "0acb812ad10a3c2c489fbab60969377f",
         "title": "英国CMA启动对微软商业软件部门反垄断调查",
         "original_title": "UK watchdog targets Microsoft licensing in cloud competition probe",
-        "summary": "英国竞争与市场管理局将对微软商业软件生态系统展开调查，评估其授权政策是否不公平地偏袒Azure云服务，限制竞争对手的市场空间。",
+        "summary": "英国竞争与市场管理局宣布对微软商业软件生态系统展开调查，重点审查其授权政策是否不公平地偏袒Azure云服务，损害竞争对手利益。",
         "rating": "A",
-        "score": 80,
-        "type": "industry",
+        "score": 79,
+        "type": "safety",
         "typeName": "安全伦理",
         "expansion": "此次调查可能导致微软商业软件业务面临更严格的监管约束，为其他办公软件厂商创造更公平的市场竞争环境。",
         "entities": [
           "Azure",
-          "Cma",
-          "云服务",
+          "云计算",
           "反垄断",
-          "微软"
+          "微软",
+          "英国"
         ],
         "sourceLinks": [
           {
@@ -10899,9 +10899,10 @@
         "source": "The Register",
         "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/31/microsoft_cma_probe/",
         "original_content": "CMA to assess whether the company's terms unfairly favor Azure over rival platforms The UK's competition watchdog will investigate Microsoft's business software ecosystem over concerns that its licensing policies reduce competition in the cloud market.…",
-        "chinese_title": "英国监管机构调查微软云服务授权政策涉嫌不公平竞争",
+        "chinese_title": "英国CMA调查微软云服务授权条款 涉嫌不公平竞争",
         "grade": "A",
-        "extension": "如果调查认定微软存在垄断行为，可能导致巨额罚款和业务模式调整，影响全球云服务市场的竞争格局，为其他云服务商创造更公平的竞争环境。"
+        "extension": "该调查可能导致微软云服务授权条款调整，影响其在欧洲市场的云服务收入，同时为其他云厂商创造更公平的竞争环境。",
+        "event_id": null
       },
       {
         "id": "bebc51a9ec6e538eb9bd641720ccccbd",
@@ -11066,17 +11067,17 @@
         "id": "bd73defca233852c375851e726bb417f",
         "title": "SpaceX确认一颗Starlink卫星发生异常后失联 或已爆炸",
         "original_title": "Starlink sprays debris into orbit following another satellite 'anomaly'",
-        "summary": "SpaceX的Starlink卫星34343在560公里高度发生在轨异常，解体产生大量碎片，目前评估不会对国际空间站和阿尔忒弥斯任务造成风险。",
+        "summary": "一颗Starlink卫星在560公里轨道高度发生异常解体，产生大量空间碎片，目前确认不会对国际空间站和阿尔忒弥斯任务构成威胁。",
         "rating": "A",
-        "score": 82,
-        "type": "breaking",
+        "score": 87,
+        "type": "industry",
         "typeName": "行业动态",
         "expansion": "卫星故障事件可能影响Starlink的服务可靠性和用户信心，推动卫星设计和在轨运维技术的改进。",
         "entities": [
           "SpaceX",
-          "Starlink",
-          "太空碎片",
-          "轨道安全"
+          "星链",
+          "空间碎片",
+          "航天技术"
         ],
         "sourceLinks": [
           {
@@ -11090,9 +11091,10 @@
         "source": "The Register",
         "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/31/starlink_sprays_debris_into_orbit/",
         "original_content": "No risk to ISS or Artemis, but not ideal for operator peace of mind Starlink satellite 34343 has suffered an \"anomaly on-orbit,\" spraying debris at an altitude of approximately 560 km above Earth.…",
-        "chinese_title": "Starlink卫星在轨发生异常解体产生大量轨道碎片",
-        "grade": "A",
-        "extension": "该事件引发对低轨卫星星座安全性的担忧，可能推动国际社会制定更严格的太空交通规则和卫星退役标准，促进太空可持续发展。"
+        "chinese_title": "星链卫星在轨故障产生大量碎片 560公里轨道高度扩散",
+        "grade": "A+",
+        "extension": "卫星解体事件加剧空间碎片问题，可能推动国际社会出台更严格的卫星设计和报废标准，促进空间交通管理体系的建立。",
+        "event_id": null
       },
       {
         "id": "1e393b8090767e03ac1126a1ab694d7f",
@@ -13250,6 +13252,122 @@
     ],
     "2026-04-01": [
       {
+        "id": "2b528b54ff5de89b21953fc77dc240a7",
+        "title": "AirPods Pro 3沃尔玛促销优惠20% 售价较首发价降低50美元",
+        "original_title": "I bought my AirPods Pro 3 at full price. Don't be like me - get them for 20% off at Walmart",
+        "summary": "苹果AirPods Pro 3耳机在沃尔玛开启20%折扣促销，降价50美元，相比首发全价购买更加划算，促销活动持续时间有限。",
+        "rating": "B",
+        "score": 68,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "苹果耳机产品的降价促销可能挤压安卓阵营高端耳机市场份额，带动TWS耳机整体价格下探。",
+        "entities": [
+          "Airpods",
+          "Tws耳机",
+          "沃尔玛",
+          "苹果"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Latest topics for ZDNet in Security",
+            "url": "https://www.zdnet.com/article/airpods-pro-3-amazon-spring-sale-2026/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1774988255,
+        "published_at": "2026-04-01T04:17:35.171075",
+        "source": "Latest topics for ZDNet in Security",
+        "url": "https://www.zdnet.com/article/airpods-pro-3-amazon-spring-sale-2026/",
+        "event_id": null
+      },
+      {
+        "id": "ef7a6802aa3dde47680091c001be9dfe",
+        "title": "MIT物理学家做客科普节目 解读暗物质观测和小行星防御",
+        "original_title": "Two physicists and a curious host walk into a studio…",
+        "summary": "麻省理工学院两位物理学家做客GBH科学节目《好奇书桌》，讲解引力波探测、暗宇宙观测进展以及地球小行星防御系统的准备情况。",
+        "rating": "B",
+        "score": 74,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "顶级科学家参与科普节目有助于提升公众科学素养，推动前沿科学知识的大众化传播，激发青少年对科学的兴趣。",
+        "entities": [
+          "Mit",
+          "小行星防御",
+          "引力波",
+          "暗物质"
+        ],
+        "sourceLinks": [
+          {
+            "name": "MIT Research News",
+            "url": "https://news.mit.edu/2026/two-physicists-and-curious-host-walk-studio"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1774988255,
+        "published_at": "2026-04-01T04:17:35.171105",
+        "source": "MIT Research News",
+        "url": "https://news.mit.edu/2026/two-physicists-and-curious-host-walk-studio",
+        "event_id": null
+      },
+      {
+        "id": "da1ae05914f799622e1301e9f4dc14ee",
+        "title": "盖亚卫星数据分析显示M35星团比此前估计更大更古老",
+        "original_title": "Gaia analysis finds Messier 35 is larger and older than earlier estimates",
+        "summary": "天文学家通过盖亚卫星数据分析发现，疏散星团Messier 35（NGC 2168）的实际尺寸和年龄都大于之前的观测估计，相关研究成果已发表在arXiv预印本平台。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "盖亚卫星的高精度观测数据正在改写人类对银河系结构和演化的认知，推动恒星形成和演化理论的不断完善。",
+        "entities": [
+          "天体观测",
+          "天文学",
+          "星团",
+          "盖亚卫星"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Phys.org: Feature story",
+            "url": "https://phys.org/news/2026-03-gaia-analysis-messier-larger-older.html"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1774988255,
+        "published_at": "2026-04-01T04:17:35.171117",
+        "source": "Phys.org: Feature story",
+        "url": "https://phys.org/news/2026-03-gaia-analysis-messier-larger-older.html",
+        "event_id": null
+      },
+      {
+        "id": "9f86633a5621399cedc2133f10509336",
+        "title": "Claude Code源代码泄露揭示自愈内存架构等未公开功能",
+        "original_title": "Claude Code's source code appears to have leaked via a misconfigured npm package, revealing internal codenames, a \"Self-Healing Memory\" architecture, and more (Carl Franzen/VentureBeat)",
+        "summary": "Anthropic的Claude Code源代码通过配置错误的npm包泄露，暴露了内部代号、\\\"自愈内存\\\"架构等未公开技术细节，引发行业广泛关注。",
+        "rating": "S",
+        "score": 96,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "此次泄露可能加速AI开发工具领域的技术迭代，促使竞争对手跟进类似的内存管理和自修复功能，同时推动软件供应链安全管理的强化。",
+        "entities": [
+          "Ai开发工具",
+          "Anthropic",
+          "Claude",
+          "源代码泄露"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260331/p39#a260331p39"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1774988255,
+        "published_at": "2026-04-01T04:17:35.171143",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260331/p39#a260331p39",
+        "event_id": null
+      },
+      {
         "id": "b70a8eae79dddd92e71dd416b43f7830",
         "title": "马斯克相关三起诉讼将重新分配法官 原法官被指发布批评帖文",
         "original_title": "Musk lawsuits reassigned on judge bias allegations",
@@ -15134,7 +15252,7 @@
     ]
   },
   "events": [],
-  "last_updated": "2026-04-01T04:18:06.911083",
-  "total_news": 554,
+  "last_updated": "2026-04-01T04:18:37.350307",
+  "total_news": 558,
   "total_events": 0
 }
