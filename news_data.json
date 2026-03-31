@@ -10711,6 +10711,1214 @@
   ],
   "2026-03-31": [
     {
+      "id": "dc8babefde87d9a5e97e2ad0c01d3c88",
+      "title": "Claude Code源码结构曝光 采用成熟生产级AI Agent架构设计",
+      "original_title": "claudecode官方这次应该是不小心把v2.1.88的源码直接传到了npm包里，整体代码结构很成熟，整个repo分得很细，主流程包括REPL启动、QueryEngine、工具注册、Slash...",
+      "summary": "分析显示泄露的Claude Code v2.1.88源码结构成熟，包含REPL启动、查询引擎、工具注册、命令系统、权限管理等完整模块，是典型的生产级AI Agent框架设计。",
+      "rating": "S",
+      "score": 95,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "完整架构的曝光将极大促进AI Agent开发领域的技术进步，可能催生更多基于类似架构的开源Agent框架项目。",
+      "entities": [
+        "Ai Agent",
+        "Claude"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/sanbuphy/status/2038912992457408838"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.955813",
+      "source": "Twitter",
+      "url": "https://x.com/sanbuphy/status/2038912992457408838"
+    },
+    {
+      "id": "48ae6bf6b47aa9ed63ec3b2393b0836d",
+      "title": "行业人士认为大模型研发应优先聚焦旗舰级性能",
+      "original_title": "I believe building flagship models with SoTA performance is always the top priority. Delivering less competent smaller models is not that important or...",
+      "summary": "大模型领域从业者表示，研发资源应优先投入到打造SOTA性能的旗舰模型，能力较弱的小模型研发紧迫性相对较低。",
+      "rating": "B",
+      "score": 68,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "这一观点反映了当前大模型行业的研发优先级趋势，可能影响科技公司的资源分配策略，进一步拉大头部与中小厂商的技术差距。",
+      "entities": [
+        "大模型"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Twitter",
+          "url": "https://x.com/ChujieZheng/status/2038899423649083654"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.955848",
+      "source": "Twitter",
+      "url": "https://x.com/ChujieZheng/status/2038899423649083654"
+    },
+    {
+      "id": "3097a986dde5083a50d30333e88a1b62",
+      "title": "亚马逊与达美航空达成协议 2028年起为500架飞机提供卫星上网服务",
+      "original_title": "Amazon strikes a deal to provide internet access on Delta flights via its Leo satellite business, starting with 500 aircraft in 2028, without disclosing terms (Alison Sider/Wall Street Journal)",
+      "summary": "亚马逊将通过其Leo卫星业务为达美航空提供机上互联网接入服务，计划2028年起首先部署500架飞机，具体合作条款未公开。",
+      "rating": "A",
+      "score": 78,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "亚马逊进入航空卫星互联网市场将打破Starlink的垄断地位，推动航空互联服务价格下降和服务质量提升。",
+      "entities": [
+        "Starlink",
+        "亚马逊",
+        "卫星互联网",
+        "达美航空"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260331/p16#a260331p16"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.955869",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260331/p16#a260331p16"
+    },
+    {
+      "id": "88db08b17e4887536cbb6f52130e5797",
+      "title": "伊朗战争推高化石能源价格 中国新能源产业或将获益",
+      "original_title": "How the Iran war is playing into China’s hands",
+      "summary": "伊朗战争导致霍尔木兹海峡封锁，化石燃料价格飙升，分析认为中国主导的太阳能、风能、电池等可再生能源技术产业将成为明显受益者。",
+      "rating": "A",
+      "score": 77,
+      "type": "society",
+      "typeName": "社会影响",
+      "expansion": "地缘政治冲突加速全球能源转型进程，中国新能源产业的领先优势将进一步巩固，相关产业链公司有望获得更多国际市场份额。",
+      "entities": [
+        "中国",
+        "可再生能源",
+        "新能源"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Semafor",
+          "url": "https://www.semafor.com/article/03/31/2026/how-the-iran-war-is-playing-into-chinas-hands"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.955880",
+      "source": "Semafor",
+      "url": "https://www.semafor.com/article/03/31/2026/how-the-iran-war-is-playing-into-chinas-hands"
+    },
+    {
+      "id": "9239ce88d600a642c697aef8260581f0",
+      "title": "英国CMA启动对微软商业软件部门反垄断调查",
+      "original_title": "The UK CMA launches an investigation into Microsoft's business software unit to assess whether it should be designated with \"strategic market status\" (Financial Times)",
+      "summary": "英国竞争与市场管理局(CMA)启动对微软商业软件部门的调查，评估是否应将其认定为\\\"战略市场地位\\\"，可能出台新的监管措施。",
+      "rating": "A",
+      "score": 76,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "此次调查可能导致微软商业软件业务面临更严格的监管约束，为其他办公软件厂商创造更公平的市场竞争环境。",
+      "entities": [
+        "Cma",
+        "微软",
+        "英国"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260331/p15#a260331p15"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.955889",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260331/p15#a260331p15"
+    },
+    {
+      "id": "bebc51a9ec6e538eb9bd641720ccccbd",
+      "title": "苹果公司成立50周年 发布历史图片回顾发展历程",
+      "original_title": "Apple at 50: a visual history",
+      "summary": "在苹果公司成立50周年之际，科技媒体发布珍贵历史照片，回顾从乔布斯时代到iPhone诞生后的半个世纪发展历程。",
+      "rating": "A",
+      "score": 79,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "50周年回顾将引发对消费电子行业发展历史的讨论，同时市场将关注苹果下一个十年的产品战略和创新方向。",
+      "entities": [
+        "Iphone",
+        "史蒂夫·乔布斯",
+        "苹果"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Verge -  Tech Posts (apple)",
+          "url": "https://www.theverge.com/tech/901418/apple-history-photos"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.955898",
+      "source": "The Verge -  Tech Posts (apple)",
+      "url": "https://www.theverge.com/tech/901418/apple-history-photos"
+    },
+    {
+      "id": "663396411547f280e26f0748e9823fcb",
+      "title": "近期最大规模种子轮融资全部投向AI初创公司",
+      "original_title": "The Largest Recent Seed Rounds Are All For AI Companies",
+      "summary": "Crunchbase数据显示，过去六个月全球最大的12笔种子轮融资全部投向AI领域初创公司，投资者对AI领域早期项目的投资金额和估值都显著提升。",
+      "rating": "A+",
+      "score": 89,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "资本向AI早期项目的集中投入将加速AI技术创新和商业化落地，同时可能导致AI创业领域出现估值泡沫和过度竞争。",
+      "entities": [
+        "Ai创业",
+        "风险投资"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Crunchbase News",
+          "url": "https://news.crunchbase.com/venture/data-largest-seed-rounds-ai-startups/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.955908",
+      "source": "Crunchbase News",
+      "url": "https://news.crunchbase.com/venture/data-largest-seed-rounds-ai-startups/"
+    },
+    {
+      "id": "b3978ec88d35327f6d30a6c2a55345c1",
+      "title": "新研究表明超大质量黑洞可能起源于古代大质量恒星",
+      "original_title": "Supermassive black holes might trace back to huge, ancient stars",
+      "summary": "18岁研究者通过计算机模型研究发现，超大质量黑洞可能起源于宇宙早期的巨大质量恒星，为黑洞形成机制提供了新的理论线索。",
+      "rating": "B",
+      "score": 65,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "这一研究成果有助于解开星系形成和演化的核心谜题，可能推动天体物理学领域对宇宙早期结构形成的理论重构。",
+      "entities": [
+        "天体物理学",
+        "黑洞"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Science News for Students",
+          "url": "https://www.snexplores.org/article/supermassive-black-holes-ancient-stars"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.955935",
+      "source": "Science News for Students",
+      "url": "https://www.snexplores.org/article/supermassive-black-holes-ancient-stars"
+    },
+    {
+      "id": "a3f283e64afe7c3b3169c672871bfaff",
+      "title": "中国新能源重卡渗透率近30% 引领全球商用车电动化转型",
+      "original_title": "China's next EV boom: trucks",
+      "summary": "2025年中国新售重卡中新能源车型占比接近30%，较2024年的12.9%实现翻倍增长，在全球商用车电动化进程中处于领先地位。",
+      "rating": "A+",
+      "score": 88,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "新能源重卡的快速普及将带动动力电池、充电基础设施等相关产业链发展，推动物流运输行业的能源结构转型。",
+      "entities": [
+        "中国",
+        "新能源汽车",
+        "电动商用车"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Semafor",
+          "url": "https://www.semafor.com/article/03/31/2026/chinas-next-ev-boom-trucks"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.955980",
+      "source": "Semafor",
+      "url": "https://www.semafor.com/article/03/31/2026/chinas-next-ev-boom-trucks"
+    },
+    {
+      "id": "844b247b93c001de81f025a7a82eb774",
+      "title": "瑞典创企Enkei获300万欧元融资 用建筑废弃物制造可替代建材",
+      "original_title": "Enkei raises a pre-seed round to scale a material made from construction waste that replaces marble and concrete",
+      "summary": "瑞典初创公司Enkei完成300万欧元预种子轮融资，其开发的ReCeramix材料由90%以上的陶瓷和建筑废弃物回收制成，可替代大理石和混凝土等传统建材。",
+      "rating": "B",
+      "score": 68,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "环保建材技术的商业化落地将推动建筑行业的低碳转型，为城市废弃物处理和循环经济发展提供新的解决方案。",
+      "entities": [
+        "建筑材料",
+        "循环经济",
+        "环保科技"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Next Web",
+          "url": "https://thenextweb.com/news/enkei-raises-a-pre-seed-round-to-scale-a-material-made-from-construction-waste-that-replaces-marble-and-concrete"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.955990",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/enkei-raises-a-pre-seed-round-to-scale-a-material-made-from-construction-waste-that-replaces-marble-and-concrete"
+    },
+    {
+      "id": "a8e8ad63fc60761931060ee3d288d721",
+      "title": "研究表明特定种类橄榄油有助于预防认知衰退和阿尔茨海默病",
+      "original_title": "What kind of olive oil is best for the brain?",
+      "summary": "科学研究证实橄榄油确实有助于对抗认知衰退和阿尔茨海默病，但需要选择特定种类的橄榄油才能获得最佳保健效果。",
+      "rating": "B",
+      "score": 67,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "这一研究成果将推动健康食用油消费市场的产品升级，同时为营养干预预防神经退行性疾病提供新的方向。",
+      "entities": [
+        "医学研究",
+        "营养学"
+      ],
+      "sourceLinks": [
+        {
+          "name": "New Scientist - Tech",
+          "url": "https://www.newscientist.com/article/2521218-what-kind-of-olive-oil-is-best-for-the-brain/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=home"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956012",
+      "source": "New Scientist - Tech",
+      "url": "https://www.newscientist.com/article/2521218-what-kind-of-olive-oil-is-best-for-the-brain/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=home"
+    },
+    {
+      "id": "168decce239d435cf20baafbb5346504",
+      "title": "SpaceX确认一颗Starlink卫星发生异常后失联 或已爆炸",
+      "original_title": "SpaceX says it lost contact with a Starlink satellite after suffering an \"anomaly\", following a similar incident in December; the satellite likely exploded (Thomas Ricker/The Verge)",
+      "summary": "SpaceX宣布一颗Starlink卫星在发生\\\"异常\\\"后失去联系，卫星可能已经爆炸，这是继去年12月后Starlink发生的第二起类似事故。",
+      "rating": "A",
+      "score": 76,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "卫星故障事件可能影响Starlink的服务可靠性和用户信心，推动卫星设计和在轨运维技术的改进。",
+      "entities": [
+        "SpaceX",
+        "Starlink",
+        "卫星技术"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260331/p9#a260331p9"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956022",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260331/p9#a260331p9"
+    },
+    {
+      "id": "1e393b8090767e03ac1126a1ab694d7f",
+      "title": "Proton推出Workspace办公套件 主打隐私保护挑战谷歌微软",
+      "original_title": "Proton Workspace boasts privacy-first alternative to Google, Microsoft",
+      "summary": "隐私服务提供商Proton发布Workspace生产力套件，包含端到端加密的视频会议工具Proton Meet，为用户提供谷歌和微软办公服务的隐私优先替代方案。",
+      "rating": "A",
+      "score": 75,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "隐私优先办公套件的推出将满足企业和个人对数据安全的日益增长需求，推动办公软件市场的多元化竞争。",
+      "entities": [
+        "Proton",
+        "办公软件",
+        "隐私计算"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Latest topics for ZDNet in Security",
+          "url": "https://www.zdnet.com/article/proton-workspace-boasts-privacy-first-alternative-to-google-microsoft/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956041",
+      "source": "Latest topics for ZDNet in Security",
+      "url": "https://www.zdnet.com/article/proton-workspace-boasts-privacy-first-alternative-to-google-microsoft/"
+    },
+    {
+      "id": "4811a1a9cb1ed6b568b2df89c9cdfa3f",
+      "title": "MIT研究发现气候变化可能导致海洋浮游植物\\\"快餐化\\\"",
+      "original_title": "Climate change may produce “fast-food” phytoplankton",
+      "summary": "麻省理工学院研究表明，气候变化将显著改变海洋浮游植物的组成结构，整个海洋生态系统的基础食物链可能发生重大转变。",
+      "rating": "B",
+      "score": 67,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "这一发现揭示了气候变化对海洋生态系统的深层影响，可能影响全球渔业资源和海洋碳汇能力。",
+      "entities": [
+        "Mit",
+        "气候变化",
+        "海洋生态"
+      ],
+      "sourceLinks": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/climate-change-may-produce-fast-food-phytoplankton"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956076",
+      "source": "MIT News",
+      "url": "https://news.mit.edu/2026/climate-change-may-produce-fast-food-phytoplankton"
+    },
+    {
+      "id": "96002d68f4bf7f601bd6a8ea4a9899d0",
+      "title": "微软承诺向泰国投资10亿美元 建设云与AI基础设施",
+      "original_title": "Microsoft commits $1 billion to Thailand for cloud and AI infrastructure",
+      "summary": "微软宣布2026-2028年向泰国投资超过10亿美元，用于数据中心建设、网络安全、主权技术发展和AI技能培训。",
+      "rating": "A",
+      "score": 77,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "科技巨头对东南亚市场的加大投入将推动区域数字化转型，同时加剧云服务市场的国际竞争。",
+      "entities": [
+        "Ai基础设施",
+        "云计算",
+        "微软",
+        "泰国"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Next Web",
+          "url": "https://thenextweb.com/news/microsoft-1-billion-thailand-cloud-ai-infrastructure"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956094",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/microsoft-1-billion-thailand-cloud-ai-infrastructure"
+    },
+    {
+      "id": "2f761538105acea895f1a3ab10de3cd4",
+      "title": "Whoop获5.75亿美元融资 年ARR达10亿美元估值超100亿",
+      "original_title": "Wearable maker Whoop raised $575M led by Collaborative Fund at a $10.1B valuation and says it hit $1B in ARR by 2025's end; 60% of its 2025 sales were non-US (Niko Gallogly/New York Times)",
+      "summary": "可穿戴厂商Whoop以101亿美元估值完成5.75亿美元融资，2025年底年经常性收入达10亿美元，60%销售额来自美国以外市场。",
+      "rating": "A",
+      "score": 81,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "健康科技企业的高速增长验证了消费级健康监测市场的巨大潜力，将吸引更多资本涌入该领域。",
+      "entities": [
+        "Whoop",
+        "健康科技",
+        "可穿戴设备"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260331/p6#a260331p6"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956112",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260331/p6#a260331p6"
+    },
+    {
+      "id": "f6406090d87eab2296a72ad918969922",
+      "title": "民调显示美国人对医疗成本的担忧远超经济通胀问题",
+      "original_title": "More worry a ‘great deal’ about health costs than economy, poll finds",
+      "summary": "盖洛普民意调查显示，61%的美国成年人\\\"非常担心\\\"医疗保健的可及性和成本，超过对通胀和整体经济的担忧程度。",
+      "rating": "B",
+      "score": 69,
+      "type": "society",
+      "typeName": "社会影响",
+      "expansion": "医疗成本问题已成为美国首要民生议题，可能推动医疗改革政策出台，同时为医疗科技创新带来新的市场需求。",
+      "entities": [
+        "医疗健康",
+        "美国"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Semafor",
+          "url": "https://www.semafor.com/article/03/31/2026/more-worry-a-great-deal-about-health-costs-than-economy-poll-finds"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956121",
+      "source": "Semafor",
+      "url": "https://www.semafor.com/article/03/31/2026/more-worry-a-great-deal-about-health-costs-than-economy-poll-finds"
+    },
+    {
+      "id": "32d08a1b14acd312927072b0b3351a02",
+      "title": "周下载量过亿的HTTP客户端Axios遭遇供应链攻击",
+      "original_title": "A supply chain attack compromises HTTP client Axios, which has 100M weekly npm downloads, introducing a malicious dependency and deploying a multi-stage payload (Socket)",
+      "summary": "广受欢迎的HTTP客户端库Axios遭受供应链攻击，被注入恶意依赖并部署多阶段payload，该库每周npm下载量超过1亿次。",
+      "rating": "A+",
+      "score": 86,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "此次大规模供应链攻击事件将促使行业加强对开源软件依赖的安全审查，推动软件供应链安全技术发展。",
+      "entities": [
+        "Axios",
+        "Npm",
+        "供应链攻击",
+        "网络安全"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260331/p4#a260331p4"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956139",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260331/p4#a260331p4"
+    },
+    {
+      "id": "46359018816ac4f098ccb77af54a5562",
+      "title": "Allbirds以3900万美元出售 IPO时融资额是其近10倍",
+      "original_title": "Allbirds is selling for $39 million. It raised nearly 10 times that amount in its IPO.",
+      "summary": "曾上市的DTC品牌Allbirds同意以3900万美元出售资产，而其IPO时融资额高达3.6亿美元，估值较巅峰时暴跌99%。",
+      "rating": "A",
+      "score": 76,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "消费科技品牌的估值泡沫破裂案例将促使投资者更加注重初创企业的盈利能力和现金流健康，而非单纯追求增长速度。",
+      "entities": [
+        "Allbirds",
+        "消费科技",
+        "风险投资"
+      ],
+      "sourceLinks": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/03/30/allbirds-is-selling-for-39-million-it-raised-nearly-10-times-that-amount-in-its-ipo/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956221",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/03/30/allbirds-is-selling-for-39-million-it-raised-nearly-10-times-that-amount-in-its-ipo/"
+    },
+    {
+      "id": "bd041de7cfdc750d3dc21ff9ec4cd8e7",
+      "title": "中国电动飞机厂商零重力飞机完成2100万美元Pre-B轮融资",
+      "original_title": "Zero Gravity Aircraft Raises $21M Pre-B Round",
+      "summary": "零重力飞机工业完成1.5亿元人民币Pre-B轮融资，半年内累计融资超8亿元，是国内唯一同时研发eCTOL和eVTOL飞机的制造商。",
+      "rating": "A",
+      "score": 78,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "电动航空领域的持续融资将推动低空经济和城市空中交通的商业化进程，加速航空业的电动化转型。",
+      "entities": [
+        "Evtol",
+        "电动航空",
+        "零重力飞机"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Pandaily",
+          "url": "https://pandaily.com/zero-gravity-aircraft-raises-21-m-pre-b-round-1"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956166",
+      "source": "Pandaily",
+      "url": "https://pandaily.com/zero-gravity-aircraft-raises-21-m-pre-b-round-1"
+    },
+    {
+      "id": "7aa742d0c7c76816f67b9a8580443c4a",
+      "title": "CISA要求美国联邦机构周四前修复正在被利用的Citrix漏洞",
+      "original_title": "CISA orders feds to patch actively exploited Citrix flaw by Thursday",
+      "summary": "美国网络安全和基础设施安全局下令联邦政府机构必须在周四前修补Citrix NetScaler设备中正在被主动利用的安全漏洞。",
+      "rating": "A",
+      "score": 75,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "政府层面的强制补丁要求凸显了关键基础设施安全的重要性，将推动企业级安全防护和应急响应能力建设。",
+      "entities": [
+        "Cisa",
+        "Citrix",
+        "网络安全"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Latest news and stories from BleepingComputer.com",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-citrix-flaw-by-thursday/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956193",
+      "source": "Latest news and stories from BleepingComputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-citrix-flaw-by-thursday/"
+    },
+    {
+      "id": "f1d86afee688d17083b43ad08f44273e",
+      "title": "物流机器人厂商极智嘉2025年营收4.4亿美元 首次实现全年盈利",
+      "original_title": "Geek+ Reports $440M Revenue in 2025, Achieves Full-Year Profitability",
+      "summary": "物流机器人企业极智嘉2025年营收31.7亿元人民币，同比增长31.6%，首次实现全年盈利，海外市场成为增长主要动力。",
+      "rating": "A",
+      "score": 79,
+      "type": "financial",
+      "typeName": "商业数据",
+      "expansion": "物流机器人企业的盈利验证了智能仓储行业的商业可行性，将推动仓储自动化在更多行业的普及应用。",
+      "entities": [
+        "仓储自动化",
+        "极智嘉",
+        "物流机器人"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Pandaily",
+          "url": "https://pandaily.com/geek-reports-440-m-revenue-in-2025-achieves-full-year-profitability"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956201",
+      "source": "Pandaily",
+      "url": "https://pandaily.com/geek-reports-440-m-revenue-in-2025-achieves-full-year-profitability"
+    },
+    {
+      "id": "b27156bd9d9493574a40655a162d155a",
+      "title": "开发者社区讨论扩散模型研究岗位面试经验",
+      "original_title": "[D] Diffusion research interview experience?",
+      "summary": "机器学习社区用户在Reddit上讨论扩散模型方向研究科学家和工程师岗位的面试经验，分享技术准备方法和常见问题。",
+      "rating": "B",
+      "score": 68,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "扩散模型方向的求职热度反映了生成式AI领域的人才需求趋势，将推动相关技术教育和培训课程的发展。",
+      "entities": [
+        "Ai人才",
+        "扩散模型",
+        "机器学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s8dpuj/d_diffusion_research_interview_experience/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956240",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s8dpuj/d_diffusion_research_interview_experience/"
+    },
+    {
+      "id": "3c510384154e807c987d70a28f868031",
+      "title": "社区讨论Muon优化器为何仅在Transformer训练中流行",
+      "original_title": "[D] Howcome Muon is only being used for Transformers?",
+      "summary": "机器学习社区讨论新型优化器Muon为何只在大语言模型训练中被广泛采用，而在卷积神经网络等其他架构中应用较少。",
+      "rating": "B",
+      "score": 70,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "优化器技术的定向应用反映了大模型训练的技术演进方向，相关讨论将推动优化算法在更多场景的适配和创新。",
+      "entities": [
+        "Muon",
+        "Transformer",
+        "大模型训练"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning (muon)",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s8b6ti/d_howcome_muon_is_only_being_used_for_transformers/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956249",
+      "source": "Machine Learning (muon)",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s8b6ti/d_howcome_muon_is_only_being_used_for_transformers/"
+    },
+    {
+      "id": "b4feeb6fb257b57051cd3eac074e3ba9",
+      "title": "开发者实现低成本Autoresearch运行方案 成本降低98%",
+      "original_title": "[P] Run Karpathy's Autoresearch for $0.44 instead of $24 — Open-source parallel evolution pipeline on SageMaker Spot",
+      "summary": "开发者构建开源流水线，在SageMaker Spot实例上运行Karpathy的Autoresearch自动实验系统，25次ML实验总成本仅0.44美元，较H100方案成本降低98%。",
+      "rating": "A+",
+      "score": 85,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "低成本AI实验方案的出现将大幅降低机器学习研究的门槛，推动更多小团队和个人研究者参与AI创新。",
+      "entities": [
+        "云计算",
+        "安德烈·卡帕西",
+        "机器学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s8b3n1/p_run_karpathys_autoresearch_for_044_instead_of/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956258",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s8b3n1/p_run_karpathys_autoresearch_for_044_instead_of/"
+    },
+    {
+      "id": "33acabb2c2d1df4440122a3c687ce7d2",
+      "title": "研究者探索机器学习在复杂系统信号路由中的应用",
+      "original_title": "[R] Are there ML approaches for prioritizing and routing “important” signals across complex systems?",
+      "summary": "受Transformer注意力机制启发，研究者探索将机器学习方法应用于分布式系统和数据管道中的重要信号优先级排序和路由问题。",
+      "rating": "B",
+      "score": 72,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "注意力机制向系统架构领域的迁移应用，可能推动分布式系统和大规模数据处理技术的范式革新。",
+      "entities": [
+        "Transformer",
+        "分布式系统",
+        "机器学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s89xf4/r_are_there_ml_approaches_for_prioritizing_and/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956267",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s89xf4/r_are_there_ml_approaches_for_prioritizing_and/"
+    },
+    {
+      "id": "87426ff50f2f12566bf4c375ea48471c",
+      "title": "开发者为低资源语言训练小模型 实现Android端离线运行",
+      "original_title": "[P] I trained a language model from scratch for a low resource language and got it running fully on-device on Android (no GPU, demo)",
+      "summary": "开发者为低资源语言卢干达语从零训练了20M-110M参数的小模型，实现无需GPU和网络即可在Android设备上完全离线运行。",
+      "rating": "A",
+      "score": 82,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "低资源语言模型和端侧部署技术的发展将推动AI技术的普惠性，让更多语言群体享受到人工智能带来的便利。",
+      "entities": [
+        "低资源语言",
+        "大模型",
+        "端侧Ai"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s89pv3/p_i_trained_a_language_model_from_scratch_for_a/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956276",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s89pv3/p_i_trained_a_language_model_from_scratch_for_a/"
+    },
+    {
+      "id": "d2e2f94b0ac03dd63b289d7d555230a3",
+      "title": "2026年谷歌博士奖学金项目开放申请 社区讨论入选标准",
+      "original_title": "[R] 2026 Google PhD Fellowship Program",
+      "summary": "2026年谷歌博士奖学金项目开放申请，社区讨论无顶级发表成果的申请者入选可能性，分享项目遴选标准和申请经验。",
+      "rating": "B",
+      "score": 66,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "顶尖科技企业的博士奖学金项目将引导学术研究方向，培养未来AI领域的核心人才。",
+      "entities": [
+        "Ai人才培养",
+        "谷歌"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s88006/r_2026_google_phd_fellowship_program/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956297",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s88006/r_2026_google_phd_fellowship_program/"
+    },
+    {
+      "id": "46b11b5b93061142b4ee339c20f934eb",
+      "title": "开发者开源GPU原生放射组学库fastrad 速度提升25倍",
+      "original_title": "[P] fastrad: GPU-native radiomics library — 25× faster than PyRadiomics, 100% IBSI-compliant, all 8 feature classes",
+      "summary": "开发者开源基于PyTorch的GPU原生放射组学库fastrad，相比传统CPU版PyRadiomics速度提升25倍，100%符合IBSI标准。",
+      "rating": "A",
+      "score": 75,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "GPU加速的医学影像分析工具将大幅提升医疗AI的研发效率，推动精准医疗和个性化治疗的发展。",
+      "entities": [
+        "Pytorch",
+        "医学影像",
+        "医疗Ai"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s82qdb/p_fastrad_gpunative_radiomics_library_25_faster/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956315",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s82qdb/p_fastrad_gpunative_radiomics_library_25_faster/"
+    },
+    {
+      "id": "4c9778df3d949edfeec128c719e0287a",
+      "title": "研究者开源TRACER库 实现LLM分类任务的成本优化路由",
+      "original_title": "TRACER: Learn-to-Defer for LLM Classification with Formal Teacher-Agreement Guarantees",
+      "summary": "研究者发布TRACER开源库，可从LLM调用轨迹中学习成本高效的路由策略，用低成本本地代理替代部分LLM调用，同时保证代理与LLM的一致性不低于指定阈值。",
+      "rating": "B",
+      "score": 70,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "LLM调用成本优化技术的发展将降低AI应用的运营成本，推动大模型在更多场景的落地应用。",
+      "entities": [
+        "大模型",
+        "机器学习"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Machine Learning",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1s7p0au/tracer_learntodefer_for_llm_classification_with/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956337",
+      "source": "Machine Learning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s7p0au/tracer_learntodefer_for_llm_classification_with/"
+    },
+    {
+      "id": "133008067ed3e890b23b9f98b4e34780",
+      "title": "英国AI芯片初创Fractile拟融资2亿美元 估值达10亿美元",
+      "original_title": "Sources: London-based chip startup Fractile is in talks to raise over $200M from Accel and others at a $1B valuation; Fractile raised a $15M seed round in 2024 (Financial Times)",
+      "summary": "伦敦AI芯片初创公司Fractile正与Accel等投资方谈判，计划融资超2亿美元，估值达10亿美元，该公司2024年种子轮融资为1500万美元。",
+      "rating": "A+",
+      "score": 87,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "欧洲AI芯片初创企业的大额融资将加剧全球AI芯片市场竞争，挑战英伟达在AI加速硬件领域的主导地位。",
+      "entities": [
+        "Ai芯片",
+        "Fractile",
+        "英伟达"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260331/p2#a260331p2"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956353",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260331/p2#a260331p2"
+    },
+    {
+      "id": "c708d364683e7a83a5a955c38a68b1c7",
+      "title": "NASA阿尔忒弥斯II号即将发射 媒体探讨重返月球意义",
+      "original_title": "Does going to the moon still matter? – podcast",
+      "summary": "NASA阿尔忒弥斯II号载人绕月任务即将发射，这是人类50多年来首次重返月球轨道，媒体探讨当代重返月球的科学价值和战略意义。",
+      "rating": "B",
+      "score": 68,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "新一轮月球探测热潮将推动空间技术发展，带动深空探测相关产业链的创新和商业化应用。",
+      "entities": [
+        "Nasa",
+        "月球探测",
+        "航天技术"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Science | The Guardian",
+          "url": "https://www.theguardian.com/science/audio/2026/mar/31/does-going-to-the-moon-still-matter-podcast"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956361",
+      "source": "Science | The Guardian",
+      "url": "https://www.theguardian.com/science/audio/2026/mar/31/does-going-to-the-moon-still-matter-podcast"
+    },
+    {
+      "id": "f70cbecb8f938f6ea119324839134710",
+      "title": "开源项目Semantic通过AST逻辑图减少27.78%的AI Agent循环",
+      "original_title": "Semantic &ndash; Reducing LLM \"Agent Loops\" by 27.78% via AST Logic Graphs",
+      "summary": "开发者开源Semantic框架，通过抽象语法树逻辑图优化AI Agent执行流程，可减少27.78%的Agent循环次数，提升执行效率。",
+      "rating": "B",
+      "score": 74,
+      "type": "tool",
+      "typeName": "工具技巧",
+      "expansion": "AI Agent执行效率优化技术的发展将推动代理系统在复杂任务场景中的落地应用，提升自动化处理能力。",
+      "entities": [
+        "Ai Agent",
+        "Ast",
+        "开源工具"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Hacker News",
+          "url": "https://github.com/concensure/Semantic"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956384",
+      "source": "Hacker News",
+      "url": "https://github.com/concensure/Semantic"
+    },
+    {
+      "id": "a7d2bec43bddb7d9b5ff20698e1a6b69",
+      "title": "Ollama预览版支持Apple Silicon MLX加速框架",
+      "original_title": "Ollama is now powered by MLX on Apple Silicon in preview",
+      "summary": "大模型部署工具Ollama发布预览版，在苹果芯片设备上采用MLX框架作为后端，大幅提升本地大模型运行性能。",
+      "rating": "A",
+      "score": 80,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "端侧大模型性能的持续优化将推动AI应用向边缘计算迁移，催生更多本地化AI应用场景。",
+      "entities": [
+        "Ollama",
+        "端侧Ai",
+        "苹果"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Hacker News (apple)",
+          "url": "https://ollama.com/blog/mlx"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956391",
+      "source": "Hacker News (apple)",
+      "url": "https://ollama.com/blog/mlx"
+    },
+    {
+      "id": "8ed42057f84604cde5d09da3e6f61aff",
+      "title": "储能企业上能电气通过港交所上市聆讯 年营收达12.5亿美元",
+      "original_title": "Sigenergy Clears Hong Kong Listing Hearing as Revenue Hits $1.25 Billion",
+      "summary": "AI驱动储能系统厂商上能电气通过香港IPO聆讯，2025年营收达9亿元人民币，较2023年增长150倍，调整后净利润达3.24亿元。",
+      "rating": "A+",
+      "score": 85,
+      "type": "funding",
+      "typeName": "融资上市",
+      "expansion": "储能企业的高速增长和上市反映了全球新能源转型带来的巨大市场机遇，推动能源存储技术的创新和成本下降。",
+      "entities": [
+        "上能电气",
+        "储能",
+        "新能源"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Pandaily",
+          "url": "https://pandaily.com/sigenergy-clears-hong-kong-listing-hearing-as-revenue-hits-1-25-billion"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956421",
+      "source": "Pandaily",
+      "url": "https://pandaily.com/sigenergy-clears-hong-kong-listing-hearing-as-revenue-hits-1-25-billion"
+    },
+    {
+      "id": "91aec6378e80e800dae089508aa75098",
+      "title": "百度PaddleOCR成为GitHub最受欢迎OCR项目 超越谷歌Tesseract",
+      "original_title": "PaddleOCR Becomes Most-Starred OCR Project on GitHub, Surpassing Google’s Tesseract",
+      "summary": "百度飞桨的PaddleOCR工具包在GitHub星标数达到73300，超越谷歌Tesseract成为最受欢迎的OCR项目，支持110多种语言，覆盖160个国家和地区。",
+      "rating": "A",
+      "score": 82,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "国产开源工具的崛起反映了中国AI技术实力的提升，将推动AI基础工具在更多行业的普及应用。",
+      "entities": [
+        "Github",
+        "Ocr",
+        "百度"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Pandaily",
+          "url": "https://pandaily.com/paddle-ocr-becomes-most-starred-ocr-project-on-git-hub-surpassing-google-s-tesseract"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956428",
+      "source": "Pandaily",
+      "url": "https://pandaily.com/paddle-ocr-becomes-most-starred-ocr-project-on-git-hub-surpassing-google-s-tesseract"
+    },
+    {
+      "id": "11eb27210dd4b71bdf0c390876cf81a0",
+      "title": "清华大学等提出SpatialPoint框架 将深度数据作为VLM核心输入",
+      "original_title": "SpatialPoint Integrates Depth as Core Input for Vision-Language Models",
+      "summary": "智谱AI联合清华大学、IDEA研究院提出SpatialPoint空间感知视觉语言模型框架，将深度数据与RGB、文本并列作为核心输入，提升模型3D理解能力。",
+      "rating": "A",
+      "score": 79,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "融合深度信息的多模态模型将大幅提升机器人、自动驾驶等领域的环境感知能力，推动具身智能技术发展。",
+      "entities": [
+        "具身智能",
+        "多模态大模型",
+        "清华大学"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Pandaily",
+          "url": "https://pandaily.com/spatial-point-integrates-depth-as-core-input-for-vision-language-models"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956445",
+      "source": "Pandaily",
+      "url": "https://pandaily.com/spatial-point-integrates-depth-as-core-input-for-vision-language-models"
+    },
+    {
+      "id": "c491df2b4a9406bac895a225033de1e5",
+      "title": "GigaAI具身世界模型GigaWorld-1登顶WorldArena基准测试",
+      "original_title": "GigaAI’s GigaWorld-1 Tops Global World Model Benchmark",
+      "summary": "GigaAI开发的具身世界模型GigaWorld-1在WorldArena基准测试中排名第一，综合得分突破60分，物理符合度领先第二名16%。",
+      "rating": "A+",
+      "score": 86,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "世界模型技术的突破将推动具身智能和机器人自主决策能力的提升，加速机器人在复杂场景的落地应用。",
+      "entities": [
+        "Gigaai",
+        "世界模型",
+        "具身智能"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Pandaily",
+          "url": "https://pandaily.com/giga-ai-s-giga-world-1-tops-global-world-model-benchmark"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956452",
+      "source": "Pandaily",
+      "url": "https://pandaily.com/giga-ai-s-giga-world-1-tops-global-world-model-benchmark"
+    },
+    {
+      "id": "d3fbdb7a7019d39d7d3fef63afec1520",
+      "title": "隐私优先聊天机器人Duck.ai用户量快速增长",
+      "original_title": "This privacy-first chatbot is taking off - here's why and how to try it",
+      "summary": "主打隐私保护的AI聊天机器人Duck.ai用户量快速增长，反映了用户对AI公司数据隐私政策的担忧，以及对隐私友好型AI服务的需求上升。",
+      "rating": "A",
+      "score": 75,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "隐私优先AI产品的兴起反映了用户数据安全意识的提升，将推动AI行业加强隐私保护技术和透明度建设。",
+      "entities": [
+        "Ai隐私",
+        "Duck.Ai"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Latest topics for ZDNet in Security",
+          "url": "https://www.zdnet.com/article/duckai-popularity-government-surveillance-privacy-anthropic-openai/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956459",
+      "source": "Latest topics for ZDNet in Security",
+      "url": "https://www.zdnet.com/article/duckai-popularity-government-surveillance-privacy-anthropic-openai/"
+    },
+    {
+      "id": "956c122ae822635da024373e3e30dda1",
+      "title": "专家警告AI编码代理将彻底改变漏洞开发的技术和经济模式",
+      "original_title": "AI coding agents will drastically alter both the practice and the economics of exploit development, automating the discovery of zero-day vulnerabilities (Thomas H. Ptacek/sockpuppet.org)",
+      "summary": "安全专家指出，AI编码代理将大幅改变漏洞开发的实践模式和经济成本，可自动化发现零日漏洞，可能带来网络安全风险的泛滥。",
+      "rating": "A+",
+      "score": 88,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "AI在网络安全领域的双面性将推动攻防技术的同步升级，促使企业和监管机构加强AI时代的网络安全防御体系建设。",
+      "entities": [
+        "Ai安全",
+        "网络安全",
+        "零日漏洞"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p47#a260330p47"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956466",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p47#a260330p47"
+    },
+    {
+      "id": "c12c27f312745d82e076a192de6f3ba7",
+      "title": "澳大利亚监管机构将对科技公司未执行未成年人社交禁令启动执法",
+      "original_title": "Surprise! Big Tech has been a bit rubbish at enforcing Australia&rsquo;s kids social media ban",
+      "summary": "澳大利亚eSafety委员会发现Meta、YouTube、TikTok、Snapchat等平台未有效执行16岁以下未成年人社交媒体禁令，将启动执法程序。",
+      "rating": "A",
+      "score": 77,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "各国对社交媒体的未成年人保护监管趋严，将推动科技公司加强内容审核和年龄验证技术建设。",
+      "entities": [
+        "内容监管",
+        "澳大利亚",
+        "社交媒体"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Register",
+          "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/31/australian_social_media_ban_enforcement_report/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956473",
+      "source": "The Register",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/31/australian_social_media_ban_enforcement_report/"
+    },
+    {
+      "id": "d69b3dc1ddb5446c13d74996b3916b36",
+      "title": "加州签署首个AI政府采购安全隐私保护行政令",
+      "original_title": "California Gov. Gavin Newsom signs a first-of-its-kind executive order requiring safety and privacy guardrails from AI companies that contract with the state (Cecilia Kang/New York Times)",
+      "summary": "美国加州州长签署全美首个AI监管行政令，要求与州政府合作的AI公司必须满足安全和隐私保护标准，建立AI技术使用的护栏机制。",
+      "rating": "A",
+      "score": 78,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "地方政府层面的AI监管政策将为全国性法规提供实践参考，推动AI行业的负责任发展和规范化应用。",
+      "entities": [
+        "Ai监管",
+        "数据安全",
+        "美国"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p46#a260330p46"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956481",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p46#a260330p46"
+    },
+    {
+      "id": "c72582e29ded09926587594a2209805e",
+      "title": "基因工程改造免疫细胞可24小时内清除耐药超级细菌",
+      "original_title": "Forget Antibiotics: These Killer Cells Wipe Out Deadly Superbugs in a Day",
+      "summary": "科学家开发出基因工程改造的\\\"杀手细胞\\\"，可精准靶向并清除耐药超级细菌，24小时内几乎消灭全部病原体，且不伤害有益菌群。",
+      "rating": "A+",
+      "score": 87,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "基因编辑细胞治疗技术的突破为解决抗生素耐药性危机提供了新方案，将推动生物医药领域的创新发展。",
+      "entities": [
+        "基因编辑",
+        "抗生素耐药",
+        "生物医疗"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Singularity HUB",
+          "url": "https://singularityhub.com/2026/03/30/forget-antibiotics-these-killer-cells-are-programmed-to-wipe-out-deadly-superbugs-in-a-day/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956496",
+      "source": "Singularity HUB",
+      "url": "https://singularityhub.com/2026/03/30/forget-antibiotics-these-killer-cells-are-programmed-to-wipe-out-deadly-superbugs-in-a-day/"
+    },
+    {
+      "id": "8c51eeb3b1e2eb4595c505e73fb0fedd",
+      "title": "英伟达股价估值处于历史低位 市场担忧AI增长见顶",
+      "original_title": "Nvidia Stock is Cheap—What That Signals",
+      "summary": "分析显示英伟达当前股价估值处于历史低位，类似2008年金融危机时的亚马逊估值水平，反映市场对AI芯片需求增长见顶的担忧。",
+      "rating": "S",
+      "score": 92,
+      "type": "financial",
+      "typeName": "商业数据",
+      "expansion": "AI芯片龙头企业的估值调整将影响整个AI产业链的投资预期，可能导致行业发展节奏和资源分配的变化。",
+      "entities": [
+        "Ai芯片",
+        "英伟达",
+        "资本市场"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Information",
+          "url": "https://www.theinformation.com/articles/nvidia-stock-cheap-signals"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956511",
+      "source": "The Information",
+      "url": "https://www.theinformation.com/articles/nvidia-stock-cheap-signals"
+    },
+    {
+      "id": "e613d39ba2354dda8ef66815efdde045",
+      "title": "曾估值35亿美元的社交游戏平台Rec Room宣布6月1日关闭",
+      "original_title": "Social gaming startup Rec Room is shutting down on June 1, saying it could not find a path to profitability; Rec Room had a $3.5B valuation in December 2021 (Todd Bishop/GeekWire)",
+      "summary": "曾估值35亿美元的社交游戏创业公司Rec Room宣布将于6月1日关闭平台，因未能找到盈利路径，成为元宇宙热潮退去后的又一案例。",
+      "rating": "A",
+      "score": 76,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "元宇宙概念公司的倒闭潮反映了消费科技领域的估值泡沫破裂，将促使投资者更加注重商业模式的可持续性。",
+      "entities": [
+        "Rec Room",
+        "元宇宙",
+        "社交游戏"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260330/p45#a260330p45"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774957014,
+      "published_at": "2026-03-31T19:36:54.956526",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260330/p45#a260330p45"
+    },
+    {
       "id": "f435573d58b6cca0f237da2f1285114a",
       "title": "GitHub迫于开发者压力 取消Copilot在PR中插入广告功能",
       "original_title": "[P] I trained a language model from scratch for a low resource language and got it running fully on-device on Android (no GPU, demo)",
