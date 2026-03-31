@@ -4,45 +4,62 @@
 """
 import sys
 import os
+import argparse
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.processors.ai_processor import ManualProcessor
-from src.fetchers.factory import FetcherFactory
-from src.processors.filter import NewsFilter
 from src.processors.duplicate import DuplicateRemover
 from src.publishers.factory import PublisherFactory
 from src.utils.common import setup_logger, save_json, load_json
+from src.models.news import RawNewsItem
 import json
 from datetime import datetime
+from src.config.settings import SNAPSHOT_DIR, settings
 
 logger = setup_logger("import_results")
 
 def main():
+    parser = argparse.ArgumentParser(description='导入手动处理的AI结果并完成发布流程')
+    parser.add_argument('--snapshot-id', required=True, help='快照ID，用于加载原始条目快照')
+    parser.add_argument('--result-file', default='_ai_result.json', help='AI处理结果JSON文件路径 (默认: _ai_result.json)')
+    parser.add_argument('--dry-run', action='store_true', help='仅加载并验证数据，不发布')
+    args = parser.parse_args()
+
     logger.info("开始导入AI处理结果并完成发布流程...")
 
-    # 1. 获取和预处理新闻（与之前相同的步骤，确保数据一致）
-    logger.info("获取新闻数据...")
-    fetchers = FetcherFactory.get_all_fetchers()
+    # 1. 加载快照数据
+    snapshot_file = os.path.join(SNAPSHOT_DIR, f"snapshot_{args.snapshot_id}.json")
+    if not os.path.exists(snapshot_file):
+        logger.error(f"快照文件不存在: {snapshot_file}")
+        return 1
 
-    all_raw_items = []
-    for fetcher in fetchers:
-        items = fetcher.fetch(time_window_hours=24)
-        all_raw_items.extend(items)
+    logger.info(f"加载快照: {snapshot_file}")
+    snapshot = load_json(snapshot_file)
+    snapshot_items = snapshot.get("items", [])
 
-    logger.info(f"总共获取到 {len(all_raw_items)} 条原始新闻")
+    # 反序列化为RawNewsItem对象
+    filtered_items = []
+    for item_dict in snapshot_items:
+        try:
+            item = RawNewsItem(
+                url=item_dict["url"],
+                title=item_dict["title"],
+                content=item_dict["content"],
+                source=item_dict["source"],
+                published_at=datetime.fromisoformat(item_dict["published_at"])
+            )
+            filtered_items.append(item)
+        except Exception as e:
+            logger.warning(f"跳过无效快照条目: {e}")
 
-    # 去重
-    duplicate_remover = DuplicateRemover()
-    unique_items = duplicate_remover.deduplicate_raw(all_raw_items)
-    logger.info(f"去重后剩余 {len(unique_items)} 条")
+    logger.info(f"从快照加载到 {len(filtered_items)} 条原始新闻")
 
-    # 预筛选
-    news_filter = NewsFilter()
-    filtered_items = news_filter.filter_news(unique_items, min_score=10)
-    logger.info(f"预筛选后剩余 {len(filtered_items)} 条")
+    if args.dry_run:
+        logger.info("Dry run 模式，加载完成后退出")
+        return 0
 
     # 2. 加载AI处理结果
-    result_file = "_ai_result.json"
+    result_file = args.result_file
     if not os.path.exists(result_file):
         logger.error(f"结果文件 {result_file} 不存在")
         return 1
