@@ -154,16 +154,12 @@ class BaseAIProcessor(ABC):
                 original_item = None
                 original_url = result.get("original_url", "")
 
-                # Primary: URL exact match
+                # Strict URL exact match only
                 if original_url and original_url in url_to_item:
                     original_item = url_to_item[original_url]
                 else:
-                    # Fallback: index match
-                    index = result.get("index", -1)
-                    if 0 <= index < len(original_items):
-                        original_item = original_items[index]
-                        if original_url:
-                            logger.warning(f"URL匹配失败，使用索引匹配: index={index}, expected_url={original_url}")
+                    logger.warning(f"URL匹配失败，跳过该条目: expected_url={original_url}")
+                    continue
 
                 if original_item is None:
                     continue
@@ -424,16 +420,12 @@ S级（90-100分）必须满足以下条件之一：
                 item = None
                 original_url = result.get("original_url", "")
 
-                # Primary: URL exact match
+                # Strict URL exact match only
                 if original_url and original_url in url_to_item:
                     item = url_to_item[original_url]
                 else:
-                    # Fallback: index match
-                    index = result.get("index", -1)
-                    if 0 <= index < len(processed_items):
-                        item = processed_items[index]
-                        if original_url:
-                            logger.warning(f"URL匹配失败，使用索引匹配: index={index}, expected_url={original_url}")
+                    logger.warning(f"URL匹配失败，跳过该条目: expected_url={original_url}")
+                    continue
 
                 if item is None:
                     continue
