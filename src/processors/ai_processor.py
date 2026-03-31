@@ -9,7 +9,8 @@ import json
 import os
 import subprocess
 import tempfile
-from datetime import datetime
+import time
+from datetime import datetime, timedelta
 
 from src.models.news import RawNewsItem, ProcessedNewsItem, EntityNormalizer
 from src.utils.common import setup_logger, truncate_text, save_json, load_json, sanitize_content
@@ -255,6 +256,31 @@ class ManualProcessor(BaseAIProcessor):
 
     def process_batch(self, items: List[RawNewsItem]) -> List[ProcessedNewsItem]:
         """生成提示词，等待用户手动处理"""
+        # 先清理旧快照
+        try:
+            logger.info("开始清理旧快照...")
+            cutoff_time = time.time() - 7 * 24 * 3600  # 7天前的时间戳
+
+            # 清理快照文件
+            for filename in os.listdir(SNAPSHOT_DIR):
+                if filename.startswith("snapshot_") and filename.endswith(".json"):
+                    file_path = os.path.join(SNAPSHOT_DIR, filename)
+                    if os.path.getmtime(file_path) < cutoff_time:
+                        os.unlink(file_path)
+                        logger.info(f"删除旧快照: {file_path}")
+
+            # 清理对应的提示文件
+            for filename in os.listdir(TEMP_DIR):
+                if filename.startswith("ai_prompt_") and filename.endswith(".txt"):
+                    file_path = os.path.join(TEMP_DIR, filename)
+                    if os.path.getmtime(file_path) < cutoff_time:
+                        os.unlink(file_path)
+                        logger.info(f"删除旧提示文件: {file_path}")
+
+            logger.info("旧快照清理完成")
+        except Exception as e:
+            logger.warning(f"清理旧快照失败: {e}")
+
         if not items:
             return []
 
