@@ -10838,19 +10838,21 @@
       "url": "https://www.semafor.com/article/03/31/2026/how-the-iran-war-is-playing-into-chinas-hands"
     },
     {
-      "id": "9239ce88d600a642c697aef8260581f0",
+      "id": "0acb812ad10a3c2c489fbab60969377f",
       "title": "英国CMA启动对微软商业软件部门反垄断调查",
-      "original_title": "The UK CMA launches an investigation into Microsoft's business software unit to assess whether it should be designated with \"strategic market status\" (Financial Times)",
-      "summary": "英国竞争与市场管理局(CMA)启动对微软商业软件部门的调查，评估是否应将其认定为\\\"战略市场地位\\\"，可能出台新的监管措施。",
+      "original_title": "UK watchdog targets Microsoft licensing in cloud competition probe",
+      "summary": "英国竞争与市场管理局将对微软商业软件生态系统展开调查，评估其授权政策是否不公平地偏袒Azure云服务，限制竞争对手的市场空间。",
       "rating": "A",
-      "score": 76,
-      "type": "safety",
+      "score": 80,
+      "type": "industry",
       "typeName": "安全伦理",
       "expansion": "此次调查可能导致微软商业软件业务面临更严格的监管约束，为其他办公软件厂商创造更公平的市场竞争环境。",
       "entities": [
+        "Azure",
         "Cma",
-        "微软",
-        "英国"
+        "云服务",
+        "反垄断",
+        "微软"
       ],
       "sourceLinks": [
         {
@@ -10861,8 +10863,12 @@
       "sources": 1,
       "timestamp": 1774957014,
       "published_at": "2026-03-31T19:36:54.955889",
-      "source": "Techmeme",
-      "url": "http://www.techmeme.com/260331/p15#a260331p15"
+      "source": "The Register",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/31/microsoft_cma_probe/",
+      "original_content": "CMA to assess whether the company's terms unfairly favor Azure over rival platforms The UK's competition watchdog will investigate Microsoft's business software ecosystem over concerns that its licensing policies reduce competition in the cloud market.…",
+      "chinese_title": "英国监管机构调查微软云服务授权政策涉嫌不公平竞争",
+      "grade": "A",
+      "extension": "如果调查认定微软存在垄断行为，可能导致巨额罚款和业务模式调整，影响全球云服务市场的竞争格局，为其他云服务商创造更公平的竞争环境。"
     },
     {
       "id": "bebc51a9ec6e538eb9bd641720ccccbd",
@@ -11024,19 +11030,20 @@
       "url": "https://www.newscientist.com/article/2521218-what-kind-of-olive-oil-is-best-for-the-brain/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=home"
     },
     {
-      "id": "168decce239d435cf20baafbb5346504",
+      "id": "bd73defca233852c375851e726bb417f",
       "title": "SpaceX确认一颗Starlink卫星发生异常后失联 或已爆炸",
-      "original_title": "SpaceX says it lost contact with a Starlink satellite after suffering an \"anomaly\", following a similar incident in December; the satellite likely exploded (Thomas Ricker/The Verge)",
-      "summary": "SpaceX宣布一颗Starlink卫星在发生\\\"异常\\\"后失去联系，卫星可能已经爆炸，这是继去年12月后Starlink发生的第二起类似事故。",
+      "original_title": "Starlink sprays debris into orbit following another satellite 'anomaly'",
+      "summary": "SpaceX的Starlink卫星34343在560公里高度发生在轨异常，解体产生大量碎片，目前评估不会对国际空间站和阿尔忒弥斯任务造成风险。",
       "rating": "A",
-      "score": 76,
-      "type": "industry",
+      "score": 82,
+      "type": "breaking",
       "typeName": "行业动态",
       "expansion": "卫星故障事件可能影响Starlink的服务可靠性和用户信心，推动卫星设计和在轨运维技术的改进。",
       "entities": [
         "SpaceX",
         "Starlink",
-        "卫星技术"
+        "太空碎片",
+        "轨道安全"
       ],
       "sourceLinks": [
         {
@@ -11047,8 +11054,12 @@
       "sources": 1,
       "timestamp": 1774957014,
       "published_at": "2026-03-31T19:36:54.956022",
-      "source": "Techmeme",
-      "url": "http://www.techmeme.com/260331/p9#a260331p9"
+      "source": "The Register",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/31/starlink_sprays_debris_into_orbit/",
+      "original_content": "No risk to ISS or Artemis, but not ideal for operator peace of mind Starlink satellite 34343 has suffered an \"anomaly on-orbit,\" spraying debris at an altitude of approximately 560 km above Earth.…",
+      "chinese_title": "Starlink卫星在轨发生异常解体产生大量轨道碎片",
+      "grade": "A",
+      "extension": "该事件引发对低轨卫星星座安全性的担忧，可能推动国际社会制定更严格的太空交通规则和卫星退役标准，促进太空可持续发展。"
     },
     {
       "id": "1e393b8090767e03ac1126a1ab694d7f",
@@ -11940,19 +11951,20 @@
       "url": "http://www.techmeme.com/260330/p45#a260330p45"
     },
     {
-      "id": "f435573d58b6cca0f237da2f1285114a",
+      "id": "ccf1275194f2f19197f0b5c82a0f70ec",
       "title": "GitHub迫于开发者压力 取消Copilot在PR中插入广告功能",
-      "original_title": "[P] I trained a language model from scratch for a low resource language and got it running fully on-device on Android (no GPU, demo)",
-      "summary": "GitHub宣布取消Copilot在拉取请求中插入广告提示的功能，承认此前的产品决策错误。该功能推出后引发开发者强烈反对，认为其破坏了开发体验和开源社区氛围。",
+      "original_title": "Agent-driven development in Copilot Applied Science",
+      "summary": "GitHub Copilot应用科学团队提出智能体驱动开发新模式，通过AI智能体自动化处理重复性智力劳动，让软件工程师能够专注于更具创造性的工作。",
       "rating": "A",
-      "score": 81,
-      "type": "industry",
+      "score": 97,
+      "type": "product",
       "typeName": "行业动态",
       "expansion": "此次事件反映了开发者社区对商业公司产品决策的影响力，可能影响其他科技公司在开发者工具中植入广告的策略，推动开源工具商业化路径的探索。",
       "entities": [
+        "Agent",
         "Copilot",
         "Github",
-        "开源社区"
+        "软件工程"
       ],
       "sourceLinks": [
         {
@@ -11963,8 +11975,12 @@
       "sources": 1,
       "timestamp": 1774940381,
       "published_at": "2026-03-31T14:59:41.067017",
-      "source": "Machine Learning",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1s89pv3/p_i_trained_a_language_model_from_scratch_for_a/"
+      "source": "The GitHub Blog",
+      "url": "https://github.blog/ai-and-ml/github-copilot/agent-driven-development-in-copilot-applied-science/",
+      "original_content": "I may have just automated myself into a completely different job… This is a familiar pattern among software engineers, who often, through inspiration, frustration, or sometimes even laziness, build systems to remove toil and focus on more creative work. We then end up owning and maintaining those systems, unlocking that automated goodness for the rest of those around us. As an AI researcher, I recently took this beyond what was previously possible and have automated away my intellectual toil. And now I find myself maintaining this tool to enable all my peers on the Copilot Applied Science team to do the same. During this process, I learned a lot about how to effectively create and collaborate using GitHub Copilot . Applying these learnings has unlocked an incredibly fast development loop for myself as well as enabled my team mates to build solutions to fit their needs. Before I get into explaining how I made this possible, let me set the stage for what spawned this project so you better understand the scope of what you can do with GitHub Copilot. The impetus A large part of my job involves analyzing coding agent performance as measured against standardized evaluation benchmarks, like TerminalBench2 or SWEBench-Pro . This often involves poring through tons of what are called trajectories, which are essentially lists of the thought processes and actions agents take while performing tasks. Each task in an evaluation dataset produces its own trajectory, showing how the agent attempted to solve that task. These trajectories are often .json files with hundreds of lines of code. Multiply that over dozens of tasks in a benchmark set and again over the many benchmark runs needing analysis on any given day, and we’re talking hundreds of thousands of lines of code to analyze. It’s an impossible task to do alone, so I would typically turn to AI to help. When analyzing new benchmark runs, I found that I kept repeating the same loop: I used GitHub Copilot to surface patterns in the trajectories then investigated them myself—reducing the number of lines of code I had to read from hundreds of thousands to a few hundred. However, the engineer in me saw this repetitive task and said, “I want to automate that.” Agents provide us with the means to automate this kind of intellectual work, and thus eval-agents was born. The plan Engineering and science teams work better together. That was my guiding principle as I set about solving this new challenge. Thus, I approached the design and implementation strategy of this project with a couple of goals in mind: Make these agents easy to share and use Make it easy to author new agents Make coding agents the primary vehicle for contributions Bullets one and two are in GitHub’s lifeblood and are values and skills I’ve gained throughout my career, especially during my stint as an OSS maintainer on the GitHub CLI. However, goal three shaped the project the most. I noticed that when I set GitHub Copilot up to help me build the tool effectively, it also made the project easier to use and collaborate on. That experience taught me a few key lessons, which ultimately helped push the first and second goals forward in ways I didn’t expect. Making coding agents your primary contributor I’ll start by describing my agentic coding setup: Coding agent : Copilot CLI Model used : Claude Opus 4.6 IDE : VSCode It’s also noteworthy that I leveraged the Copilot SDK to accelerate agent creation, which is powered under the hood by the Copilot CLI. This gave me access to existing tools and MCP servers, a way to register new tools and skills, and a whole bunch of other agentic goodness out of the box that I didn’t have to reinvent myself. With that out of the way, I could streamline the whole development process very quickly by following a few core principles: Prompting strategies : agents work best when you’re conversational, verbose, and when you leverage planning modes before agent modes. Architectural strategies : refactor often, update docs often, clean up often. Iteration strategies : “trust but verify” is now “blame process, not agents.” Uncovering and following these strategies led to an incredible phenomenon: adding new agents and features was fast and easy. We had five folks jump into the project for the first time, and we created a total of 11 new agents, four new skills, and the concept of eval-agent workflows (think scientist streams of reasoning) in less than three days. That amounted to a change of +28,858/-2,884 lines of code across 345 files. Holy crap! Below, I’ll go into detail about these three principles and how they enabled this amazing feat of collaboration and innovation. Prompting strategies We know that AI coding agents are really good at solving well-scoped problems but need handholding for the more complex problems you’d only entrust to your more senior engineers. So, if you want your agent to act like an engineer, treat it like one. Guide its thinking, over-explain your assumptions, and leverage its research speed to plan before jumping into changes. I found it far more effective to put some stream-of-consciousness musings about a problem I was chewing on into a prompt and working with Copilot in planning mode than to give it a terse problem statement or solution. Here’s an example of a prompt I wrote to add more robust regression tests to the tool: &gt; /plan I've recently observed Copilot happily updating tests to fit its new paradigms even though those tests shouldn't be updated. How can I create a reserved test space that Copilot can't touch or must reserve to protect against regressions? This resulted in a back and forth that ultimately led to a series of guardrails akin to contract testing that can only be updated by humans. I had an idea of what I wanted, and through conversation, Copilot helped me get to the right solution. It turns out that the things that make human engineers the most effective at doing their jobs are the same things that make these agents effective at doing theirs. Architectural strategies Engineers, rejoice! Remember all those refactors you wanted to do to make the codebase more readable, the tests you never had time to write, and the docs you wish had existed when you onboarded? They’re now the most important thing you can be working on when building an agent-first repository. Gone are the days where deprioritizing this work over new feature work was necessary, because delivering features with Copilot becomes trivial when you have a well-maintained, agent-first project. I’ve spent most of my time on this project refactoring names and file structures, documenting new features or patterns, and adding test cases for problems that I’ve uncovered as I go. I’ve even spent a few cycles cleaning up the dead code that the agents (like your junior engineers) may have missed while implementing all these new features and changes. This work makes it easy for Copilot to navigate the codebase and understand the patterns, just like it would for any other engineer. I can even ask, “Knowing what I know now, how would I design this differently?” And I can then justify actually going back and rearchitecting the whole project (with the help of Copilot, of course). It’s a dream come true! And this leads me to my last bit of guidance. Iteration strategies As agents and models have improved, I have moved from a “trust but verify” mindset to one that is more trusting than doubtful. This mirrors how the industry treats human teams: “blame process, not people.” It’s how the most effective teams operate, because people make mistakes, so we build systems around that reality. This idea of blameless culture provides psychological safety for teams to iterate and innovate, knowing that they won’t be blamed if they make a mistake. The core principle is that we implement processes and guardrails to protect against mistakes, and if a mistake does happen, we learn from it and introduce new processes and guardrails so that our teams won’t make the same mistake again. Applying this same philosophy to agent-driven development has been fundamental to unlocking this incredibly rapid iteration pipeline. That means we add processes and guardrails to help prevent the agent from making mistakes, but when it does make a mistake, we add additional guardrails and processes—like more robust tests and better prompts—so the agent can’t make the same mistake again. Taking this one step further means that practicing good CI/CD principles is a must. Practices like strict typing ensure the agent conforms to interfaces. Robust linters impose implementation rules on the agent that keep it following good patterns and practices. And integration, end-to-end, and contract tests—which can be expensive to build manually—become much cheaper to implement with agent assistance, while giving you confidence that new changes don’t break existing features. When Copilot has these tools available in its development loop, it can check its own work. You’re setting it up for success, much in the same way you’d set up a junior engineer for success in your project. Putting it all together Here’s what all this means for your development loop when you’ve got your codebase set up for agent-driven development: Plan a new feature with Copilot using /plan . Iterate on the plan. Ensure that testing is included in the plan. Ensure that docs updates are included in the plan and done before code is implemented. These can serve as additional guidelines that live beside your plan. Let Copilot implement the feature on /autopilot . Prompt Copilot to initiate a review loop with the Copilot Code Review agent. For me, it’s often something like: request Copilot Code Review, wait for the review to finish, address any relevant comments, and then re-request review. Continue this loop until there are no more relevant comments. Human review. This is where I enforce the patterns I discussed in the previous sections. Additionally, outside of your feature loop, be sure you’re prompting Copilot early and often with the following: /plan Review the code for any missing tests, any tests that may be broken, and dead code /plan Review the code for any duplication or opportunities for abstraction /plan Review the documentation and code to identify any documentation gaps. Be sure to update the copilot-instructions.md to reflect any relevant changes I have these run automatically once a week, but I often find myself running them throughout the week as new features and fixes go in to maintain my agent-driven development environment. Take this with you What started as a frustration with an impossibly repetitive analysis task turned into something far more interesting: a new way of thinking about how we build software, how we collaborate, and how we grow as engineers. Building agents with a coding agent-first mindset has fundamentally changed how I work. It’s not just about the automation wins—though watching four scientists ship 11 agents, four skills, and a brand-new concept in under three days is nothing short of remarkable. It’s about what this style of development forces you to prioritize: clean architecture, thorough documentation, meaningful tests, and thoughtful design—the things we always knew mattered but never had time for. The analogy to a junior engineer keeps proving itself out. You onboard them well, give them clear context, build guardrails so their mistakes don’t become disasters, and then trust them to grow. If something goes wrong, you blame the process. Not the agent. If there’s one thing I want you to take away from this, it’s that the skills that make you a great engineer and a great teammate are the same skills that make you great at building with Copilot. The technology is new. The principles aren’t. So go clean up that codebase, write that documentation you’ve been putting off, and start treating your Copilot like the newest member of your team. You might just automate yourself into the most interesting work of your career. Think I’m crazy? Well, try this: Download Copilot CLI Activate Copilot CLI in any repo: cd &lt;repo_path&gt; &amp;&amp; copilot Paste in the following prompt: /plan Read &lt;link to this blog post&gt; and help me plan how I could best improve this repo for agent-first development The post Agent-driven development in Copilot Applied Science appeared first on The GitHub Blog .",
+      "chinese_title": "GitHub提出Copilot智能体驱动开发模式重塑软件工程流程",
+      "grade": "S",
+      "extension": "这种开发模式的普及可能大幅提升软件开发效率，改变软件工程的工作方式，同时可能引发关于程序员职业发展和技能需求的重新思考。"
     },
     {
       "id": "899a6091df82f40ba45e7c157b031293",
@@ -13192,6 +13208,536 @@
     }
   ],
   "2026-04-01": [
+    {
+      "id": "35c8e8c53cfdea6ec365ec1bcecf3c21",
+      "title": "古罗马马赛克首次发现女性斗兽士形象改写历史认知",
+      "original_title": "Lost mosaic reveals first image of female beast-fighter from the Roman era",
+      "summary": "美国加州大学研究人员发现公元3世纪罗马马赛克中的半裸女性斗豹形象，证实古罗马存在女性角斗士参与野兽搏斗，挑战了传统历史认知。",
+      "rating": "B",
+      "score": 72,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "这一发现可能改写古罗马体育史和性别史研究，推动对古代女性社会角色的重新评估，相关研究成果将引发历史学界的广泛讨论。",
+      "entities": [
+        "古罗马",
+        "女性角斗士",
+        "考古",
+        "马赛克"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Phys.org: Feature story",
+          "url": "https://phys.org/news/2026-03-lost-mosaic-reveals-image-female.html"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849521",
+      "source": "Phys.org: Feature story",
+      "url": "https://phys.org/news/2026-03-lost-mosaic-reveals-image-female.html"
+    },
+    {
+      "id": "9e280e41fa55852a284f7ee4a0aa7a31",
+      "title": "英国科学界呼吁政府制定可信的科研资助长期规划",
+      "original_title": "We need a credible plan for science funding in the UK | Letters",
+      "summary": "英国多位知名科学家联名呼吁政府制定可信的科研资助长期计划，批评当前英国研究与创新署的资助方式缺乏连贯性，可能影响量子计算等前沿领域的国际竞争力。",
+      "rating": "B",
+      "score": 66,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "如果英国科研资助政策持续不稳定，可能导致科研人才流失和国际合作减少，影响其在量子计算、AI等前沿领域的领先地位。",
+      "entities": [
+        "Ukri",
+        "科研资助",
+        "英国",
+        "量子计算"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Science | The Guardian",
+          "url": "https://www.theguardian.com/science/2026/mar/31/we-need-a-credible-plan-for-science-funding-in-the-uk"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849542",
+      "source": "Science | The Guardian",
+      "url": "https://www.theguardian.com/science/2026/mar/31/we-need-a-credible-plan-for-science-funding-in-the-uk"
+    },
+    {
+      "id": "2a7f2cc7677f1f5055d0bd73d3e3205a",
+      "title": "英伟达DLSS 4.5开启测试支持5X/6X动态帧生成技术",
+      "original_title": "Nvidia DLSS 4.5 Dynamic MFG plus 5X and 6X framegen modes enter beta for RTX 50-series users — update offers greater control over generated frame rates and more headroom for high-refresh-rate displays",
+      "summary": "英伟达面向RTX 50系列显卡用户推出DLSS 4.5 beta版本，新增动态多帧生成技术及5X、6X帧生成模式，提升高刷新率显示设备的游戏性能表现。",
+      "rating": "A",
+      "score": 81,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "该技术的推出将进一步巩固英伟达在高端游戏显卡市场的领先地位，推动高刷新率显示器的普及，同时可能促使AMD加快相关竞品技术的研发进度。",
+      "entities": [
+        "Dlss",
+        "Rtx",
+        "帧生成技术",
+        "英伟达"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-dlss-4-5-dynamic-mfg-plus-5x-and-6x-framegen-modes-enter-beta-for-rtx-50-series-users-update-offers-greater-control-over-generated-frame-rates-and-more-headroom-for-high-refresh-rate-displays"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849562",
+      "source": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-dlss-4-5-dynamic-mfg-plus-5x-and-6x-framegen-modes-enter-beta-for-rtx-50-series-users-update-offers-greater-control-over-generated-frame-rates-and-more-headroom-for-high-refresh-rate-displays"
+    },
+    {
+      "id": "998f49b53f6a146573d9c648e68b5d5e",
+      "title": "科学家开发太阳能制可持续航空燃料技术减少碳排放",
+      "original_title": "Solar energy could be key to making sustainable aviation fuel",
+      "summary": "英国谢菲尔德大学领导的工程师团队开发出新型可持续航空燃料生产技术，利用太阳能将空气中的二氧化碳和氢气转化为航空燃料，可减少对废弃食用油原料的依赖。",
+      "rating": "A",
+      "score": 77,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该技术一旦商业化，将大幅降低航空业的碳排放，推动航空业碳中和目标的实现，同时可能改变全球能源结构和生物燃料产业格局。",
+      "entities": [
+        "二氧化碳捕捉",
+        "可持续航空燃料",
+        "太阳能",
+        "碳中和"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Tech Xplore - electronic gadgets, technology advances and research news",
+          "url": "https://techxplore.com/news/2026-03-solar-energy-key-sustainable-aviation.html"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849588",
+      "source": "Tech Xplore - electronic gadgets, technology advances and research news",
+      "url": "https://techxplore.com/news/2026-03-solar-energy-key-sustainable-aviation.html"
+    },
+    {
+      "id": "b60a766c16247bf61ab135d051dbd07d",
+      "title": "苹果iOS 27测试Siri多请求处理及类Grammarly键盘功能",
+      "original_title": "Sources: Apple is testing letting Siri process multiple requests in a single query in iOS 27, and explored a Grammarly-like keyboard that expands autocorrect (Mark Gurman/Bloomberg)",
+      "summary": "据彭博社Mark Gurman报道，苹果正在测试iOS 27的新功能，包括支持Siri单次查询处理多个请求，以及类似Grammarly的智能键盘扩展自动更正功能。",
+      "rating": "A",
+      "score": 79,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "这些功能的推出将提升iOS系统的智能交互能力，增强用户生产力，同时可能对第三方智能助手和输入法应用造成一定竞争压力。",
+      "entities": [
+        "Grammarly",
+        "Ios",
+        "Siri",
+        "苹果"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme (apple)",
+          "url": "http://www.techmeme.com/260331/p42#a260331p42"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849601",
+      "source": "Techmeme (apple)",
+      "url": "http://www.techmeme.com/260331/p42#a260331p42"
+    },
+    {
+      "id": "870491587ddfc43251905a39b42a6d0e",
+      "title": "活动人士在拉里·埃里森超级游艇上张贴抗议标语",
+      "original_title": "Activists Plaster New Name on Larry Ellison’s Superyacht",
+      "summary": "环保活动人士在法国里维埃拉将甲骨文创始人拉里·埃里森价值1.6亿美元的超级游艇张贴上\\\"特朗普宣传员\\\"的巨型标语，抗议其对特朗普的政治支持。",
+      "rating": "B",
+      "score": 68,
+      "type": "society",
+      "typeName": "社会影响",
+      "expansion": "该事件反映了科技富豪的政治立场日益受到公众关注，可能引发对科技企业家社会责任和政治影响力的更多讨论和监督。",
+      "entities": [
+        "Larry Ellison",
+        "政治抗议",
+        "甲骨文"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Futurism",
+          "url": "https://futurism.com/future-society/larry-ellison-yacht-protest"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849612",
+      "source": "Futurism",
+      "url": "https://futurism.com/future-society/larry-ellison-yacht-protest"
+    },
+    {
+      "id": "81b769db41e98299919512abffb2674a",
+      "title": "富士通联合Rapidus开发1.4nm AI芯片实现日本本土制造",
+      "original_title": "Fujitsu plans dedicated 1.4nm AI chip manufactured entirely in Japan by Rapidus — AI chip to be designed and manufactured domestically",
+      "summary": "富士通计划与日本半导体公司Rapidus合作开发1.4nm工艺的AI推理芯片，实现设计和制造完全本土化，用于服务器和相关系统的AI计算。",
+      "rating": "A+",
+      "score": 86,
+      "type": "hardware",
+      "typeName": "硬件基建",
+      "expansion": "该项目标志着日本在先进芯片制造领域的战略布局，可能改变全球AI芯片市场格局，减少对台积电等外部供应商的依赖。",
+      "entities": [
+        "1.4Nm",
+        "Ai芯片",
+        "Rapidus",
+        "富士通",
+        "日本半导体"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/tech-industry/fujitsu-plans-dedicated-1-4nm-ai-chip-manufactured-entirely-in-japan-by-rapidus"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849633",
+      "source": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/fujitsu-plans-dedicated-1-4nm-ai-chip-manufactured-entirely-in-japan-by-rapidus"
+    },
+    {
+      "id": "09dfb9209456b41861631c110c79407c",
+      "title": "英伟达20亿美元投资Marvell合作研发AI网络硅光子技术",
+      "original_title": "Nvidia invests $2bn in chipmaker Marvell to boost AI networking",
+      "summary": "英伟达宣布向芯片制造商Marvell投资20亿美元，双方将合作研发硅光子技术，提升数据中心系统的AI网络通信速度和效率。",
+      "rating": "S",
+      "score": 94,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "这一战略合作将强化英伟达在AI基础设施领域的技术优势，推动硅光子技术在数据中心的大规模应用，可能重塑高速互连芯片市场格局。",
+      "entities": [
+        "Ai网络",
+        "Marvell",
+        "数据中心",
+        "硅光子",
+        "英伟达"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Technology",
+          "url": "https://www.ft.com/content/e23bc33e-757e-46bc-acad-e89647351324"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849707",
+      "source": "Technology",
+      "url": "https://www.ft.com/content/e23bc33e-757e-46bc-acad-e89647351324"
+    },
+    {
+      "id": "74be3372d096428fce7abde58401a219",
+      "title": "Meta推出首款处方优先雷朋智能眼镜拓展可穿戴设备市场",
+      "original_title": "Meta Expands Smart Glasses Line With Prescription-First Ray-Ban Models",
+      "summary": "Meta推出专为视力矫正用户设计的新款雷朋智能眼镜，标志着其在AI可穿戴设备和日常智能技术领域的市场拓展进一步深入。",
+      "rating": "B",
+      "score": 72,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "这款产品的推出将扩大智能眼镜的用户群体，推动AR/VR设备的日常化普及，同时可能引发智能可穿戴设备领域的新一轮竞争。",
+      "entities": [
+        "Ar",
+        "Meta",
+        "智能眼镜",
+        "雷朋"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Articles on TechRepublic",
+          "url": "https://www.techrepublic.com/article/news-meta-ray-ban-smart-glasses-prescription/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849718",
+      "source": "Articles on TechRepublic",
+      "url": "https://www.techrepublic.com/article/news-meta-ray-ban-smart-glasses-prescription/"
+    },
+    {
+      "id": "588893f3ad521782230171ed88ee61dd",
+      "title": "新款Mac Studio泄露信息显示将搭载M5芯片性能大幅提升",
+      "original_title": "Mac Studio 2026: New Leaks Tease M5 Power, Price, and Launch Timeline",
+      "summary": "最新泄露信息显示苹果即将发布的Mac Studio 2026将搭载M5芯片，性能实现重大升级，但发布时间可能推迟，价格也将有所上涨。",
+      "rating": "A",
+      "score": 76,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "M5芯片的推出将进一步拉开苹果专业级电脑与竞品的性能差距，巩固其在创意工作者市场的领先地位，同时可能带动整个ARM架构桌面处理器的性能升级。",
+      "entities": [
+        "Arm",
+        "M5",
+        "Mac Studio",
+        "苹果"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Articles on TechRepublic",
+          "url": "https://www.techrepublic.com/article/news-mac-studio-2026-m5-price-release-timeline/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849730",
+      "source": "Articles on TechRepublic",
+      "url": "https://www.techrepublic.com/article/news-mac-studio-2026-m5-price-release-timeline/"
+    },
+    {
+      "id": "9e081bc18cdc72f2c8d7d6180991a3f7",
+      "title": "研究显示AI健康聊天bot自我诊断准确率不足存在医疗风险",
+      "original_title": "Why AI health chatbots won’t make you better at diagnosing yourself – new research",
+      "summary": "最新研究发现，大型语言模型驱动的AI健康聊天机器人在常见健康问题诊断上表现不佳，英国首席医疗官已警告公众不要依赖AI进行医疗决策。",
+      "rating": "A",
+      "score": 78,
+      "type": "safety",
+      "typeName": "安全伦理",
+      "expansion": "该研究结果将推动AI医疗应用的监管加强，促使相关企业提升医疗AI的准确性和安全性，同时也会提高公众对AI医疗建议的风险认知。",
+      "entities": [
+        "Ai医疗",
+        "医疗诊断",
+        "大语言模型",
+        "监管"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Science + Technology – Articles – The Conversation",
+          "url": "https://theconversation.com/why-ai-health-chatbots-wont-make-you-better-at-diagnosing-yourself-new-research-278049"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849741",
+      "source": "Science + Technology – Articles – The Conversation",
+      "url": "https://theconversation.com/why-ai-health-chatbots-wont-make-you-better-at-diagnosing-yourself-new-research-278049"
+    },
+    {
+      "id": "70a1fbb4e23a879c203d13b9fb61a2d4",
+      "title": "英伟达联合能源企业推出AI工厂电网弹性调度技术",
+      "original_title": "Efficiency at Scale: NVIDIA, Energy Leaders Accelerating Power‑Flexible AI Factories to Fortify the Grid",
+      "summary": "英伟达在CERAWeek能源大会上宣布与能源企业合作，将AI工厂视为灵活的智能电网资产，通过实时能源编排技术帮助大型AI部署更高效地接入电网。",
+      "rating": "S",
+      "score": 94,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "该技术将解决AI算力中心高能耗的痛点，推动AI产业与能源产业的深度融合，同时为电网稳定性和可再生能源消纳提供新的解决方案。",
+      "entities": [
+        "Ai算力中心",
+        "电网",
+        "能源管理",
+        "英伟达"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Official NVIDIA Blog",
+          "url": "https://blogs.nvidia.com/blog/energy-efficiency-ai-factories-grid/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849764",
+      "source": "The Official NVIDIA Blog",
+      "url": "https://blogs.nvidia.com/blog/energy-efficiency-ai-factories-grid/"
+    },
+    {
+      "id": "b1d1d69fa960a171355c602821cc8a59",
+      "title": "研究显示当前飞机客舱布局无法满足90秒安全撤离要求",
+      "original_title": "What's the best cabin layout for aircraft evacuation?",
+      "summary": "发表在《AIP Advances》期刊的研究表明，现有飞机客舱布局在多种模拟场景下的疏散时间显著超过美国联邦航空局要求的90秒标准，尤其是老年乘客比例增加的情况下。",
+      "rating": "B",
+      "score": 70,
+      "type": "research",
+      "typeName": "研究成果",
+      "expansion": "该研究结果可能促使民航监管机构修订飞机安全标准，推动飞机制造商重新设计客舱布局，提升航空旅行的安全性。",
+      "entities": [
+        "Faa",
+        "客舱设计",
+        "疏散标准",
+        "航空安全"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/science/2026/03/whats-the-best-cabin-layout-for-aircraft-evacuation/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849775",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/science/2026/03/whats-the-best-cabin-layout-for-aircraft-evacuation/"
+    },
+    {
+      "id": "a1a8856bdc9f51a0d031c76042ca1057",
+      "title": "专家解读Anthropic AI就业影响报告的方法论和局限性",
+      "original_title": "How did Anthropic measure AI's \"theoretical capabilities\" in the job market?",
+      "summary": "Ars Technica分析Anthropic发布的AI对就业市场影响报告，解读其如何衡量AI的\\\"理论能力\\\"指标，探讨该研究的方法论特点和存在的局限性。",
+      "rating": "A",
+      "score": 79,
+      "type": "opinion",
+      "typeName": "观点访谈",
+      "expansion": "对AI就业影响的深入研究将帮助政策制定者更好地理解技术变革带来的社会影响，制定更有效的劳动力转型和社会保障政策。",
+      "entities": [
+        "Ai就业",
+        "Anthropic",
+        "劳动经济学"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/03/how-did-anthropic-measure-ais-theoretical-capabilities-in-the-job-market/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849786",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/ai/2026/03/how-did-anthropic-measure-ais-theoretical-capabilities-in-the-job-market/"
+    },
+    {
+      "id": "d4cbc60aa21993374af1ffacf272ea32",
+      "title": "微软服务条款注明Copilot仅供娱乐目的使用不提供专业建议",
+      "original_title": "Microsoft: Copilot is for entertainment purposes only",
+      "summary": "微软在Copilot消费者版服务条款中明确注明，该产品仅供娱乐目的使用，不提供法律、医疗、金融等专业建议，用户依赖其内容需自行承担风险。",
+      "rating": "A",
+      "score": 84,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "这种免责条款反映了AI公司在产品责任问题上的谨慎态度，可能引发关于AI产品责任归属的讨论，推动相关法律法规的完善。",
+      "entities": [
+        "Ai责任",
+        "Copilot",
+        "微软",
+        "服务条款"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Hacker News",
+          "url": "https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/termsofuse"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849798",
+      "source": "Hacker News",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/termsofuse"
+    },
+    {
+      "id": "c317ea898036698751c90c1e5cd3f321",
+      "title": "哈佛大学董事会新增两名成员包括前美国卫生部长",
+      "original_title": "Two new Corporation members",
+      "summary": "哈佛大学宣布任命前美国卫生与公众服务部长Sylvia Mathews Burwell和私募股权高管Michael S. Chae为董事会新成员，进一步提升校董会的多元背景。",
+      "rating": "S",
+      "score": 90,
+      "type": "personnel",
+      "typeName": "人事变动",
+      "expansion": "新董事会成员的加入可能影响哈佛大学的战略发展方向，特别是在公共卫生、科技创新和国际合作等领域的投入和资源分配。",
+      "entities": [
+        "Sylvia Mathews Burwell",
+        "哈佛大学",
+        "董事会"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Harvard Gazette",
+          "url": "https://news.harvard.edu/gazette/story/2026/03/two-new-corporation-members-2/"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849856",
+      "source": "Harvard Gazette",
+      "url": "https://news.harvard.edu/gazette/story/2026/03/two-new-corporation-members-2/"
+    },
+    {
+      "id": "0d5bc7c371d64ebc4f79310f54db2934",
+      "title": "汇丰银行警告特斯拉股价面临崩盘风险核心业务持续下滑",
+      "original_title": "Bank Warns of Tesla Stock Collapse",
+      "summary": "汇丰银行发布报告警告，特斯拉在向AI和人形机器人转型过程中，电动汽车核心业务持续恶化，美国市场销量创四年新低，股价可能面临大幅下跌风险。",
+      "rating": "A",
+      "score": 83,
+      "type": "financial",
+      "typeName": "商业数据",
+      "expansion": "如果特斯拉股价大幅下跌，可能影响投资者对新能源汽车和AI机器人赛道的信心，同时也会对马斯克旗下其他公司如SpaceX、Neuralink的融资产生间接影响。",
+      "entities": [
+        "Ai机器人",
+        "特斯拉",
+        "电动汽车",
+        "股价"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Futurism",
+          "url": "https://futurism.com/advanced-transport/hsbc-bank-warns-tesla-stock-collapse"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849867",
+      "source": "Futurism",
+      "url": "https://futurism.com/advanced-transport/hsbc-bank-warns-tesla-stock-collapse"
+    },
+    {
+      "id": "a8440d763821f06cfb3f474551ef9db7",
+      "title": "谷歌允许美国用户更改谷歌账户用户名每年限改一次",
+      "original_title": "Google says all users in the US can now change their Google Account username; users are restricted to one username change every 12 months (Kris Holt/Engadget)",
+      "summary": "谷歌宣布美国地区所有用户现在可以更改谷歌账户用户名，用户每12个月仅限更改一次，旧邮箱地址仍将作为备用地址可用。",
+      "rating": "B",
+      "score": 69,
+      "type": "product",
+      "typeName": "产品发布",
+      "expansion": "这一政策调整将提升用户对谷歌账户的掌控力，满足用户因姓名变更、个人品牌重塑等需求，同时也增加了账户管理的安全性考量。",
+      "entities": [
+        "用户服务",
+        "谷歌",
+        "谷歌账户"
+      ],
+      "sourceLinks": [
+        {
+          "name": "Techmeme",
+          "url": "http://www.techmeme.com/260331/p37#a260331p37"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849876",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260331/p37#a260331p37"
+    },
+    {
+      "id": "be60e6c7a77b7452042f9b7be5a814bb",
+      "title": "Meta与MPA达成协议减少Instagram青少年内容分级PG-13引用",
+      "original_title": "Meta agrees to &lsquo;reduce&rsquo; Instagram&rsquo;s PG-13 rating references",
+      "summary": "Meta与美国电影协会达成协议，将\\\"大幅减少\\\"在描述Instagram青少年账户内容指引时对PG-13分级的引用，但其13+内容政策本身不会改变。",
+      "rating": "B",
+      "score": 67,
+      "type": "industry",
+      "typeName": "行业动态",
+      "expansion": "该协议反映了科技平台与传统内容监管机构的合作趋势，可能为其他社交媒体平台的内容分级体系建立行业先例。",
+      "entities": [
+        "Instagram",
+        "Meta",
+        "Mpa",
+        "内容分级"
+      ],
+      "sourceLinks": [
+        {
+          "name": "The Verge -  Tech Posts",
+          "url": "https://www.theverge.com/tech/904081/meta-mpa-agreement-pg-13-rating"
+        }
+      ],
+      "sources": 1,
+      "timestamp": 1774976396,
+      "published_at": "2026-04-01T00:59:56.849887",
+      "source": "The Verge -  Tech Posts",
+      "url": "https://www.theverge.com/tech/904081/meta-mpa-agreement-pg-13-rating"
+    },
     {
       "id": "59bb2fc230991e3d960fb646e658c1e2",
       "title": "业内呼吁需要更多成功的大型AI研究实验室",
