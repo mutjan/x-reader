@@ -1,15 +1,15 @@
 # 科技新闻选题聚合系统 Roadmap
 **Version:** v1.0
-**Last updated:** 2026-03-31
+**Last updated:** 2026-04-01
 **Granularity:** Standard
 **Coverage:** 18/18 requirements mapped
 
 ## Phases
 - [x] **Phase 1: Data Layer Stability** - Resolve historical data consistency issues and build stable data foundation
-- [ ] **Phase 2: Core AI Topic Processing** - Implement core AI evaluation, classification, and summarization capabilities
-- [ ] **Phase 3: AI Enhancement & Calibration** - Add event association and score feedback calibration mechanisms
-- [ ] **Phase 4: Source Management & Access Control** - Implement source whitelist and internal access restriction
-- [ ] **Phase 5: Scheduling & Incremental Updates** - Implement hourly automatic updates and scheduled execution scripts
+- [x] **Phase 2: Core AI Topic Processing** - Implement core AI evaluation, classification, and summarization capabilities
+- [x] **Phase 3: AI Enhancement & Calibration** - Add event association and score feedback calibration mechanisms
+- [x] **Phase 4: Source Management & Access Control** - Implement source whitelist and internal access restriction
+- [x] **Phase 5: Scheduling & Incremental Updates** - Implement hourly automatic updates and scheduled execution scripts
 - [ ] **Phase 6: Web UI & Editorial Interaction** - Deliver complete editorial interaction interface
 
 ## Phase Details
@@ -86,17 +86,20 @@ Plans:
 - [x] 05-02-PLAN.md — 提供可执行脚本和操作说明文档
 
 ### Phase 6: Web UI & Editorial Interaction
-**Goal**: Deliver complete usable interface for editorial teams to discover and manage topics
+**Goal**: Deliver complete usable interface for editorial teams to discover high-quality topics
 **Depends on**: Phase 3, Phase 5
 **Requirements**: UI-01, UI-02, UI-03, UI-04, UI-05
 **Success Criteria** (what must be TRUE):
-  1. Users can filter news by domain, heat, time, and score
-  2. Users can sort news by heat, time, and score
-  3. Users can mark news with "selected", "follow up", "ignore" statuses
-  4. News list displays all required information: title, summary, score, tags, source, time
-  5. Users can click news to jump to original source page
-**Plans**: TBD
+  1. Users can filter news by domain, heat, time, and rating (per D-01)
+  2. Users can sort news by heat, time, and sources count (per D-04)
+  3. News list displays all required information: title, summary, score, tags, source, time
+  4. Filter and sort conditions are combined with AND logic and take effect in real time (per D-02, D-03)
+  5. Filter and sort parameters are preserved during pagination
+**Plans**: 1 plan
 **UI hint**: yes
+
+Plans:
+- [ ] 06-01-PLAN.md — 实现筛选和排序功能，包含后端接口扩展和前端交互
 
 ## Progress Table
 | Phase | Plans Complete | Status | Completed |
@@ -106,4 +109,4 @@ Plans:
 | 3. AI Enhancement & Calibration | 3/3 | Completed | 2026-04-01 |
 | 4. Source Management & Access Control | 3/3 | Completed | 2026-04-01 |
 | 5. Scheduling & Incremental Updates | 2/2 | Completed | 2026-04-01 |
-| 6. Web UI & Editorial Interaction | 0/5 | Not started | - |
+| 6. Web UI & Editorial Interaction | 0/1 | Not started | - |
