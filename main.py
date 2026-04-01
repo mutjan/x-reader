@@ -31,7 +31,7 @@ def main():
                        help='获取最近多少小时内的新闻 (默认: 2，增量更新)')
     parser.add_argument('--full', action='store_true',
                        help='全量更新模式，获取最近24小时内的新闻')
-    parser.add_argument('--min-score', type=int, default=10,
+    parser.add_argument('--min-score', type=int, default=50,
                        help='预筛选最低得分 (默认: 10)')
     parser.add_argument('--batch-size', type=int, default=DEFAULT_BATCH_SIZE,
                        help=f'AI处理批量大小 (默认: {DEFAULT_BATCH_SIZE})')
@@ -86,7 +86,10 @@ def main():
         logger.info(f"获取到 {len(items)} 条 {fetcher.source_name} 新闻")
 
     if not all_raw_items:
-        logger.warning("没有获取到任何新闻")
+        if args.time_window == 2 and not args.full:
+            logger.warning("最近2小时内没有获取到任何新闻，任务结束。如需获取更长时间范围的新闻，请使用--full参数或指定--time-window参数。")
+        else:
+            logger.warning("没有获取到任何新闻")
         return 0
 
     logger.info(f"总共获取到 {len(all_raw_items)} 条原始新闻")
