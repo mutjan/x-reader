@@ -13252,6 +13252,148 @@
     ],
     "2026-04-01": [
       {
+        "id": "be08bb99adb61f6ee0b8b2090df17096",
+        "title": "Anthropic与澳大利亚政府签署AI安全研究合作备忘录",
+        "original_title": "We've signed an MOU with the Australian Government to collaborate on AI safety research and support Australia's National AI Plan. Read more: https://w...",
+        "summary": "Anthropic宣布与澳大利亚政府签署合作备忘录，双方将在AI安全研究领域展开合作，共同支持澳大利亚国家AI计划的实施。",
+        "rating": "B",
+        "score": 70,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "此次合作可能推动澳大利亚在AI监管和安全领域的发展，也为其他国家与AI企业合作提供参考模式。",
+        "entities": [
+          "Ai安全",
+          "Anthropic",
+          "澳大利亚政府"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/AnthropicAI/status/2039137425214353555"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775009117,
+        "published_at": "2026-04-01T10:05:17.538205",
+        "source": "Twitter",
+        "url": "https://x.com/AnthropicAI/status/2039137425214353555",
+        "event_id": null
+      },
+      {
+        "id": "d2e755dbfd50564a0323b348466fdfaa",
+        "title": "社区推出去遥测版Claude Code 解锁45项实验性功能",
+        "original_title": "Free code — 去遥测、解锁实验功能的 Claude Code 构建版 Claude Code 源码通过 npm source map 暴露，这个项目 1 小时内给出了干净 fork。666，想玩实验功能、...",
+        "summary": "开发者基于泄露的Claude Code源码推出第三方分支版本，移除所有遥测功能并解锁45+实验性功能，包括多Agent规划、深度推理等特性。",
+        "rating": "A+",
+        "score": 86,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这一社区版本可能吸引大量开发者用户，也可能促使Anthropic调整其产品策略，开放更多实验性功能。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "开源软件"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/geekbb/status/2039128137817272726"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775009117,
+        "published_at": "2026-04-01T10:05:17.538231",
+        "source": "Twitter",
+        "url": "https://x.com/geekbb/status/2039128137817272726",
+        "event_id": null
+      },
+      {
+        "id": "084226b0694102293876bb99f956a287",
+        "title": "谷歌确认NPM axios供应链攻击为朝鲜黑客组织所为",
+        "original_title": "RT Austin Larsen: ⚠️ Our team at Google is releasing more details on the recent NPM #axios supply chain attack. Notably, we now attribute this activ...",
+        "summary": "谷歌安全团队披露最新NPM axios供应链攻击事件细节，确认该攻击由朝鲜威胁组织UNC1069策划实施，该组织至少从2018年开始活跃。",
+        "rating": "B",
+        "score": 72,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此次事件可能促使开源社区加强供应链安全防护，也会引发对开源软件安全治理的更多关注。",
+        "entities": [
+          "Npm",
+          "朝鲜黑客",
+          "网络安全",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/Miles_Brundage/status/2039159706804187203"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775009117,
+        "published_at": "2026-04-01T10:05:17.538250",
+        "source": "Twitter",
+        "url": "https://x.com/Miles_Brundage/status/2039159706804187203",
+        "event_id": null
+      },
+      {
+        "id": "0479459381e2ce32898bb8c59d1c9508",
+        "title": "Claude Code源代码泄露事件持续发酵 社区快速推出衍生版本",
+        "original_title": "Anthropic leaked 512,000 lines of Claude Code source code yesterday. What happened in the next 12 hours is absolutely wild. 4 AM. Anthropic pushes an ...",
+        "summary": "Anthropic因npm打包失误泄露51.2万行Claude Code源代码，12小时内代码被Fork超过4.1万次，社区已推出Python和Rust重写版本。",
+        "rating": "S",
+        "score": 96,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "此次泄露事件可能深刻影响AI编码工具市场格局，加速相关技术的普及和创新，也为AI企业的代码安全管理敲响警钟。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "代码安全",
+          "开源社区"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/heyshrutimishra/status/2039109796322853058"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775009117,
+        "published_at": "2026-04-01T10:05:17.538265",
+        "source": "Twitter",
+        "url": "https://x.com/heyshrutimishra/status/2039109796322853058",
+        "event_id": null
+      },
+      {
+        "id": "3d3432d7a917f4ffee3a3dc2db6d72c1",
+        "title": "开发者披露AI Agent工程复杂度远超简单LLM循环构想",
+        "original_title": "如果你认为 AI Agent 只是一个 LLM Loop 的话建议看一下这篇文章，连 Anthropic 自己人用自己的模型都要写这么多满足各种奇奇怪怪的边界条件的恶心代码，这才是...",
+        "summary": "资深开发者指出真实世界的AI Agent开发需要处理大量边界条件和工程细节，并非简单的LLM循环调用，Anthropic内部实现也包含大量复杂的适配代码。",
+        "rating": "A",
+        "score": 76,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这一观点有助于行业理性认识AI Agent的技术难度，推动相关工程化实践的成熟和发展。",
+        "entities": [
+          "Ai Agent",
+          "大模型",
+          "软件工程"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/yetone/status/2039088998367588369"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775009117,
+        "published_at": "2026-04-01T10:05:17.538277",
+        "source": "Twitter",
+        "url": "https://x.com/yetone/status/2039088998367588369",
+        "event_id": null
+      },
+      {
         "id": "e4120a69a88726b26d8c00b04ad4d78c",
         "title": "OpenAI完成1220亿美元融资 科技行业IPO市场仍显低迷",
         "original_title": "OpenAI’s Fundraising; The (Dismal) IPO Class of 2021",
@@ -15399,7 +15541,7 @@
     ]
   },
   "events": [],
-  "last_updated": "2026-04-01T09:15:08.925315",
-  "total_news": 563,
+  "last_updated": "2026-04-01T10:06:18.269481",
+  "total_news": 568,
   "total_events": 0
 }
