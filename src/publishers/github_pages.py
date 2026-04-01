@@ -71,7 +71,7 @@ class GitHubPagesPublisher(BasePublisher):
         # 加载现有数据
         existing_data = load_json(self.data_file, {})
 
-        # 兼容旧的列表格式数据
+        # 兼容不同版本的数据格式
         if isinstance(existing_data, list):
             self.logger.info("检测到旧版列表格式数据，正在转换为按日期分组格式")
             existing_dict = {}
@@ -81,8 +81,20 @@ class GitHubPagesPublisher(BasePublisher):
                     existing_dict[item_id] = item
                 except Exception as e:
                     self.logger.warning(f"跳过无效历史新闻条目: {e}")
+        elif "news" in existing_data:
+            # 最新格式：包含news顶级键的字典
+            self.logger.info("检测到最新格式数据，包含news顶级键")
+            existing_dict = {}
+            for date in existing_data["news"]:
+                for item in existing_data["news"][date]:
+                    try:
+                        item_id = item["id"]
+                        existing_dict[item_id] = item
+                    except Exception as e:
+                        self.logger.warning(f"跳过无效历史新闻条目: {e}")
         else:
-            # 现有数据已经是按日期分组的格式，先展开成id映射
+            # 中间格式：直接是按日期分组的字典
+            self.logger.info("检测到中间格式数据，直接按日期分组")
             existing_dict = {}
             for date in existing_data:
                 for item in existing_data[date]:
@@ -111,7 +123,7 @@ class GitHubPagesPublisher(BasePublisher):
                     existing_dict[item_id] = existing_item
                     updated_count += 1
             else:
-                # 新新闻直接添加（相似新闻合并已在merge_similar_news阶段完成）
+                # 新新闻直接添加（相似新闻合并逻辑已移除，所有新闻独立存储）
                 existing_dict[item_id] = item_dict
                 new_count += 1
 
@@ -367,7 +379,16 @@ class GitHubPagesPublisher(BasePublisher):
             total_news = len(existing_data)
             if existing_data:
                 latest_update = existing_data[0].get("processed_at")
+        elif "news" in existing_data:
+            # 最新格式：包含news顶级键的字典
+            for date in existing_data["news"]:
+                total_news += len(existing_data["news"][date])
+                for item in existing_data["news"][date]:
+                    if item.get("timestamp", 0) > latest_timestamp:
+                        latest_timestamp = item["timestamp"]
+                        latest_update = item.get("processed_at")
         else:
+            # 中间格式：直接是按日期分组的字典
             for date in existing_data:
                 total_news += len(existing_data[date])
                 for item in existing_data[date]:

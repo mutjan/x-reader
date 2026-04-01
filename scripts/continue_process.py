@@ -81,13 +81,12 @@ def main():
             logger.warning("没有有效的处理结果")
             return 0
 
-        # 4. 处理后去重和合并
-        logger.info("处理后去重和新闻聚合...")
+        # 4. 处理后去重
+        logger.info("处理后去重...")
         processed_items = duplicate_remover.deduplicate_processed(processed_items)
-        processed_items = duplicate_remover.merge_similar_news(processed_items)
 
         if not processed_items:
-            logger.warning("去重合并后没有剩余新闻")
+            logger.warning("去重后没有剩余新闻")
             return 0
 
         # 5. 加载打分结果
@@ -133,7 +132,6 @@ def main():
             return 1
         processed_items = ai_processor.load_manual_result(base_result_file, filtered_items)
         processed_items = duplicate_remover.deduplicate_processed(processed_items)
-        processed_items = duplicate_remover.merge_similar_news(processed_items)
 
         # 加载打分结果
         scored_items = ai_scorer.load_manual_scoring_result(scoring_result_file, processed_items)
@@ -174,7 +172,7 @@ def main():
     logger.info(f"  预筛选后: {len(filtered_items)} 条")
     if args.stage == 'scoring':
         logger.info(f"  AI基础处理后: {len(processed_items)} 条")
-        logger.info(f"  去重合并后: {len(processed_items)} 条")
+        logger.info(f"  去重后: {len(processed_items)} 条")
     logger.info(f"  AI打分后: {len(scored_items)} 条")
 
     return 0

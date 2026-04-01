@@ -109,13 +109,12 @@ def main():
             logger.warning("打分后没有剩余有效新闻，退出")
             return 0
 
-    # 4. 处理后去重和合并
+    # 4. 处理后去重
     logger.info("处理后去重...")
     processed_items = duplicate_remover.deduplicate_processed(processed_items)
-    processed_items = duplicate_remover.merge_similar_news(processed_items)
 
     if not processed_items:
-        logger.warning("去重合并后没有剩余新闻")
+        logger.warning("去重后没有剩余新闻")
         return 0
 
     logger.info(f"最终得到 {len(processed_items)} 条有效新闻")
