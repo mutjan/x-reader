@@ -1510,8 +1510,8 @@
         "title": "Anthropic Claude Mythos开启早期访问 社区热议测试方向",
         "original_title": "got early access to Claude mythos. what should i ask first?",
         "summary": "有开发者获得Claude Mythos早期访问权限，公开征求测试问题建议，引发社区对Anthropic新模型能力的广泛讨论。",
-        "rating": "A+",
-        "score": 86,
+        "rating": "S",
+        "score": 97,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "可能引发行业对大模型新能力的对比评测，影响Anthropic与OpenAI的市场竞争格局。",
@@ -1530,7 +1530,8 @@
         "timestamp": 1774685012,
         "published_at": "2026-03-28T16:03:32.831081",
         "source": "Twitter",
-        "url": "https://x.com/birdabo/status/2037782863022789073"
+        "url": "https://x.com/birdabo/status/2037782863022789073",
+        "is_calibrated": true
       },
       {
         "id": "f322a7405867ba43684a0052b51ddf6e",
@@ -19224,12 +19225,16 @@
         "published_at": "2026-04-02T01:36:31.177126",
         "source": "Twitter",
         "url": "https://x.com/DrJimFan/status/2039358115318243352",
-        "event_id": null
+        "event_id": null,
+        "original_content": "The power of the Claw, in the palm of a robot hand. Agentic robotics is here! Today, we open-source CaP-X: vibe agents, alive in the physical world. They incarnate as robot arms and humanoids with a rich set of perception APIs, actuation APIs, and auto synthesize skill libraries as they go. CaP-X is a strict superset of our old stack, because policies like VLAs are “just” API calls as well. It solves many tasks zero-shot that a learned policy would struggle with. And we are doing much more than vibing. CaP-X is our most systematic, scientific study on agentic robotics so far: - We build a comprehensive agentic toolkit: perception (SAM3 segmentation, Molmo pointing, depth, point cloud), control (IK solvers, grasp planner, navigation), and visualization (EEF, mask overlays) that work across different robots. - CaP-Gym: LLM’s first Physical Exam! 187 manipulation tasks across RoboSuite, LIBERO-PRO, and BEHAVIOR. Tabletop, bimanual, mobile manipulation. Sim and real. Can’t wait to see the gradients flow from CaP-Gym to the next wave of frontier LLM releases. - CaP-Bench: we benchmark 12 frontier LLMs/VLMs (Gemini, GPT, Opus, Qwen, DeepSeek, Kimi, and more) across 8 evaluation tiers. We systematically vary API abstraction level, agentic harness, and visual grounding methods. Lots of insights in our paper. - CaP-Agent0: a training-free agentic harness that matches or exceeds human expert code on 4 out of 7 tasks without task-specific tuning. - CaP-RL: if you get a gym, you get RL ;). A 7B OSS model jumps from 20% to 72% success after only 50 training iterations. The synthesized programs transfer to real robots with minimal sim-to-real gap. 3 years ago, our team created Voyager, one of the earliest agentic AI that plays and learns in Minecraft continuously. Its key ideas — skill libraries, self-reflection loops, and in-context planning — have since influenced many modern agentic designs. Today, the agent graduates from Minecraft and gets a real job. It’s April Fool’s, but this Claw is getting its hands dirty for real! Link in thread:",
+        "chinese_title": "英伟达Jim Fan团队开源CaP-X 实现具身机器人智能体物理世界部署",
+        "grade": "S",
+        "extension": "该技术突破将加速具身机器人的落地进程，可能推动机器人领域的技术路线变革，相关硬件和算法厂商有望迎来发展机遇。"
       }
     ]
   },
   "events": [],
-  "last_updated": "2026-04-02T01:53:26.930300",
+  "last_updated": "2026-04-02T02:10:19.509460",
   "total_news": 691,
   "total_events": 0
 }
