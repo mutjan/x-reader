@@ -31,8 +31,8 @@ def main():
                        help='获取最近多少小时内的新闻 (默认: 2，增量更新)')
     parser.add_argument('--full', action='store_true',
                        help='全量更新模式，获取最近24小时内的新闻')
-    parser.add_argument('--min-score', type=int, default=50,
-                       help='预筛选最低得分 (默认: 10)')
+    parser.add_argument('--min-score', type=int, default=30,
+                       help='预筛选最低得分 (默认: 30)')
     parser.add_argument('--batch-size', type=int, default=DEFAULT_BATCH_SIZE,
                        help=f'AI处理批量大小 (默认: {DEFAULT_BATCH_SIZE})')
     parser.add_argument('--no-publish', action='store_true',
@@ -128,13 +128,12 @@ def main():
         logger.warning("AI处理后没有剩余新闻")
         return 0
 
-    # 8. 处理后去重和合并
+    # 8. 处理后去重
     logger.info("处理后去重...")
     processed_items = duplicate_remover.deduplicate_processed(processed_items)
-    processed_items = duplicate_remover.merge_similar_news(processed_items)
 
     if not processed_items:
-        logger.warning("去重合并后没有剩余新闻")
+        logger.warning("去重后没有剩余新闻")
         return 0
 
     logger.info(f"最终得到 {len(processed_items)} 条有效新闻")
