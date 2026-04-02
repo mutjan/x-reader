@@ -1463,7 +1463,7 @@
                 // 加载事件分组数据并处理
                 if (eventsResponse.status === 'fulfilled' && eventsResponse.value.ok) {
                     const eventsData = await eventsResponse.value.json();
-                    const rawEventGroups = eventsData.event_groups || [];
+                    const rawEventGroups = eventsData.event_groups || eventsData || [];
 
                     // 创建新闻查找字典
                     const allNews = {};
