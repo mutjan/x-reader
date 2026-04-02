@@ -2,13 +2,13 @@
 gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: milestone
-status: Ready to execute
-last_updated: "2026-04-02T07:31:28.947Z"
+status: Milestone complete
+last_updated: "2026-04-02T11:33:30.110Z"
 progress:
-  total_phases: 4
-  completed_phases: 2
-  total_plans: 20
-  completed_plans: 13
+  total_phases: 5
+  completed_phases: 3
+  total_plans: 23
+  completed_plans: 16
 ---
 
 # x-reader Project State
@@ -24,17 +24,19 @@ progress:
 
 ## Current Position
 
-Phase: 10 (frontend-event-timeline-display) — EXECUTING
-Plan: 6 of 6
+Phase: 12
+Plan: 01 completed
 
 - **Completed Phases (v2.0)**:
   - Phase 7: Cleanup Existing Merge Logic ✓ Completed
   - Phase 8: EventGrouper Core Component Development ✓ Completed
   - Phase 9: Pipeline Integration & Publishing Workflow ✓ Completed
-- **Next Phase**: Phase 10 - Frontend Event Timeline Display
-- **Status**: Ready for planning/execution
-- **Progress**: 3/4 phases completed
-- **Progress Bar**: ███░░ 75%
+  - Phase 10: Frontend Event Timeline Display ✓ Completed
+  - Phase 11: Event Table UI Optimization ✓ Completed
+- **Next Plan**: Phase 12 Plan 02 - 表头排序功能实现
+- **Status**: In progress
+- **Progress**: 5/6 phases completed
+- **Progress Bar**: ████░ 83%
 
 ## Performance Metrics
 
@@ -53,6 +55,7 @@ Plan: 6 of 6
 | Phase 10-frontend-event-timeline-display P03 | 60 | 3 tasks | 1 files |
 | Phase 10-frontend-event-timeline-display P04 | 15 | 2 tasks | 1 files |
 | Phase 10-frontend-event-timeline-display P05 | 30 | 2 tasks | 1 files |
+| Phase 12-ux-improvements P01 | 5 | 3 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -69,6 +72,7 @@ Plan: 6 of 6
 9. 使用rapidfuzz库实现高性能文本相似度计算
 10. 采用增量层次聚类算法实现事件分组
 11. 双文件原子写入模式保证数据一致性
+12. 扩展性字段采用纯CSS 2行截断+hover展开方案，统一用户体验
 
 ### Known Risks
 
@@ -84,6 +88,7 @@ Plan: 6 of 6
 ### Roadmap Evolution
 
 - Phase 11 added: 优化事件追踪UI为表格样式，支持展开/折叠多新闻事件，添加摘要和扩展性字段
+- Phase 12 added: 改进事件表格UX：扩展性字段截断+悬浮展开、表头排序、固定工具栏、筛选控件样式统一
 
 ### TODO Backlog
 
@@ -108,5 +113,5 @@ Plan: 6 of 6
 ## Session Continuity
 
 Last active session: 2026-04-02
-Last action: Phase 9 completed and verified, handoff documented
-Next action: `/gsd:plan-phase 10` to start planning Phase 10
+Last action: Phase 12 Plan 01 completed - 扩展性字段2行截断+hover展开实现
+Next action: 继续执行Phase 12剩余计划
