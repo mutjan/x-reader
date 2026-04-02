@@ -1,6 +1,6 @@
 # 科技新闻选题聚合系统 Roadmap
 **Version:** v2.0
-**Last updated:** 2026-04-01
+**Last updated:** 2026-04-02
 **Granularity:** Standard
 **Coverage:** 12/12 requirements mapped
 
@@ -12,8 +12,8 @@
 - [x] **Phase 5: Scheduling & Incremental Updates** - Implement hourly automatic updates and scheduled execution scripts
 - [x] **Phase 6: Web UI & Editorial Interaction** - Deliver complete editorial interaction interface
 - [x] **Phase 7: Cleanup Existing Merge Logic** - Remove old similar news merge functionality and prepare for new grouping architecture (completed 2026-04-02)
-- [ ] **Phase 8: EventGrouper Core Component Development** - Implement event grouping core logic and data model
-- [ ] **Phase 9: Pipeline Integration & Publishing Workflow** - Integrate grouping into processing pipeline and dual-file publishing
+- [x] **Phase 8: EventGrouper Core Component Development** - Implement event grouping core logic and data model (completed 2026-04-02)
+- [x] **Phase 9: Pipeline Integration & Publishing Workflow** - Integrate grouping into processing pipeline and dual-file publishing (completed 2026-04-02)
 - [ ] **Phase 10: Frontend Event Timeline Display** - Implement event timeline presentation and user interaction features
 
 ## Phase Details
@@ -39,12 +39,13 @@ Plans:
   2. event_groups.json file is created with proper structure storing group to news ID mappings
   3. Automatic backup mechanism preserves last 7 days of grouping history
   4. Grouping process generates consistent, reproducible results for the same input data
-**Plans**: 3 plans
+**Plans**: 4 plans
 
 Plans:
-- [ ] 08-01-PLAN.md — 配置系统与数据模型完善
-- [ ] 08-02-PLAN.md — EventGrouper核心逻辑完善
-- [ ] 08-03-PLAN.md — 自动备份机制实现
+- [x] 08-04-PLAN.md — 配置系统集成与配置文件创建
+- [x] 08-05-PLAN.md — 存储格式修复与单条事件过滤移除
+- [x] 08-05a-PLAN.md — 持久化方法实现（save/load）
+- [x] 08-06-PLAN.md — 自动备份与过期清理机制实现
 
 ### Phase 9: Pipeline Integration & Publishing Workflow
 **Goal**: Integrate grouping into processing pipeline and ensure reliable dual-file publishing
@@ -55,7 +56,15 @@ Plans:
   2. Incremental updates work correctly - new articles are added to existing groups or create new groups
   3. Dual-file atomic write ensures news_data.json and event_groups.json are always consistent
   4. GitHub Pages publishing process deploys both files correctly
-**Plans**: 3 plans
+**Plans**: 6 plans
+
+Plans:
+- [x] 09-01-PLAN.md — Write test cases for all integration scenarios
+- [x] 09-02-PLAN.md — Integrate EventGrouper into publisher with incremental update and cleanup logic
+- [x] 09-03-PLAN.md — Implement dual-file atomic write for data consistency
+- [x] 09-04-PLAN.md — Update GitHub Pages publishing to include event_groups.json
+- [x] 09-05-PLAN.md — End-to-end automated testing
+- [x] 09-06-PLAN.md — Human verification checkpoint
 
 ### Phase 10: Frontend Event Timeline Display
 **Goal**: Deliver event timeline presentation and maintain existing user experience
@@ -78,7 +87,7 @@ Plans:
 | 4. Source Management & Access Control | 3/3 | Completed | 2026-04-01 |
 | 5. Scheduling & Incremental Updates | 2/2 | Completed | 2026-04-01 |
 | 6. Web UI & Editorial Interaction | 1/1 | Completed | 2026-04-01 |
-| 7. Cleanup Existing Merge Logic | 1/1 | Complete   | 2026-04-02 |
-| 8. EventGrouper Core Component Development | 0/0 | Not started | - |
-| 9. Pipeline Integration & Publishing Workflow | 0/0 | Not started | - |
-| 10. Frontend Event Timeline Display | 0/0 | Not started | - |
+| 7. Cleanup Existing Merge Logic | 1/1 | Completed | 2026-04-02 |
+| 8. EventGrouper Core Component Development | 4/4 | Completed | 2026-04-02 |
+| 9. Pipeline Integration & Publishing Workflow | 6/6 | Completed | 2026-04-02 |
+| 10. Frontend Event Timeline Display | 0/6 | Not started | - |
