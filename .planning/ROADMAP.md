@@ -15,6 +15,7 @@
 - [x] **Phase 8: EventGrouper Core Component Development** - Implement event grouping core logic and data model (completed 2026-04-02)
 - [x] **Phase 9: Pipeline Integration & Publishing Workflow** - Integrate grouping into processing pipeline and dual-file publishing (completed 2026-04-02)
 - [ ] **Phase 10: Frontend Event Timeline Display** - Implement event timeline presentation and user interaction features
+- [ ] **Phase 11: Event Table Refactor** - Refactor event display to table style with expand/collapse functionality
 
 ## Phase Details
 
@@ -86,6 +87,24 @@ Plans:
 - [x] 10-05-PLAN.md — Public frontend event timeline enhancement
 - [ ] 10-06-PLAN.md — End-to-end testing and verification
 
+### Phase 11: Event Table Refactor
+**Goal**: 将事件时间线展示改为表格样式，与新闻列表视觉风格统一，支持展开/折叠多新闻事件
+**Depends on**: Phase 10
+**Requirements**: UI-01
+**Success Criteria** (what must be TRUE):
+  1. 事件列表以表格形式展示，列结构与新闻列表一致
+  2. 单条新闻事件直接显示数据，无展开按钮
+  3. 多条新闻事件显示展开按钮，点击后展开显示竖线连接的时间线
+  4. 事件行显示主新闻的摘要、扩展性和更新时间
+  5. 勾选框针对整个事件级别，选中即选中该事件下所有新闻
+**Plans**: 3 plans
+**UI hint**: yes
+
+Plans:
+- [ ] 11-01-PLAN.md — Backend API updates to include summary/expansion fields
+- [ ] 11-02-PLAN.md — Admin frontend event table implementation
+- [ ] 11-03-PLAN.md — Public frontend event table integration
+
 ## Progress Table
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -98,14 +117,5 @@ Plans:
 | 7. Cleanup Existing Merge Logic | 1/1 | Completed | 2026-04-02 |
 | 8. EventGrouper Core Component Development | 4/4 | Completed | 2026-04-02 |
 | 9. Pipeline Integration & Publishing Workflow | 6/6 | Completed | 2026-04-02 |
-| 10. Frontend Event Timeline Display | 0/6 | Not started |
-
-### Phase 11: 我想把事件追踪改成和新闻列表一样的表格样式，在勾选的左侧加一个展开按钮，如果只有一个新闻的事件就显示新闻数据，无法展开。有多个新闻的点展开再用竖线连接时间线。这样需要事件数据结构中页包含摘要和扩展性，然后事件的更新时间显示所属新闻中最后更新的。
-
-**Goal:** [To be planned]
-**Requirements**: TBD
-**Depends on:** Phase 10
-**Plans:** 0 plans
-
-Plans:
-- [ ] TBD (run /gsd:plan-phase 11 to break down)
+| 10. Frontend Event Timeline Display | 5/6 | In Progress | - |
+| 11. Event Table Refactor | 0/3 | Not started | - |
