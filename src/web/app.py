@@ -725,6 +725,154 @@ def api_sources_delete(source_id):
             'message': f'删除失败: {str(e)}'
         }), 500
 
+@app.route('/api/events')
+@login_required
+def api_events():
+    """获取事件分组数据API"""
+    page = int(request.args.get('page', 1))
+    page_size = int(request.args.get('page_size', 10))
+    search = request.args.get('search', '').lower()
+    filter_param = request.args.get('filter', '')
+    sort_param = request.args.get('sort', 'max_score:desc')
+
+    try:
+        # 加载事件分组和新闻数据
+        event_groups = load_json(EVENT_GROUPS_FILE_PATH, [])
+        news_data = load_json(DATA_FILE_PATH, {}).get('news', {})
+
+        # 创建新闻查找字典（ID到新闻对象的映射）
+        news_lookup = {}
+        for date_items in news_data.values():
+            for news in date_items:
+                news_lookup[news['id']] = news
+
+        # 处理事件分组，关联新闻数据
+        processed_events = []
+        for group in event_groups:
+            # 获取该事件的所有新闻
+            event_news = []
+            for news_id in group.get('news_ids', []):
+                if news_id in news_lookup:
+                    event_news.append(news_lookup[news_id])
+
+            # 跳过没有有效新闻的事件
+            if not event_news:
+                logger.debug(f"跳过事件 {group.get('group_id')}，没有有效新闻")
+                continue
+
+            # 构建事件对象
+            event = {
+                'event_id': group.get('group_id', group.get('event_id', '')),
+                'title': group.get('event_title', group.get('title', '未命名事件')),
+                'max_grade': group.get('max_grade', 'B'),
+                'max_score': group.get('max_score', 0),
+                'start_time': group.get('first_seen_at', group.get('start_time', '')),
+                'end_time': group.get('last_seen_at', group.get('end_time', '')),
+                'news_count': len(event_news),
+                'entities': group.get('entities', []),
+                'news_list': event_news
+            }
+
+            processed_events.append(event)
+
+        # 搜索过滤
+        filtered_events = processed_events
+        if search:
+            filtered_events = [
+                event for event in filtered_events
+                if search in event['title'].lower()
+                or any(search in entity.lower() for entity in event['entities'])
+                or any(search in news.get('title', '').lower() for news in event['news_list'])
+                or any(search in news.get('summary', '').lower() for news in event['news_list'])
+            ]
+
+        # 条件筛选（应用到嵌套的新闻项）
+        if filter_param:
+            try:
+                filters = json.loads(filter_param)
+                temp_events = []
+
+                for event in filtered_events:
+                    # 对事件内的新闻应用筛选
+                    filtered_news = event['news_list'].copy()
+
+                    # 领域筛选
+                    if 'domain' in filters and filters['domain']:
+                        filtered_news = [n for n in filtered_news if n.get('type', '') == filters['domain']]
+
+                    # 热度筛选
+                    if 'score_min' in filters and filters['score_min'] is not None:
+                        filtered_news = [n for n in filtered_news if n.get('score', 0) >= filters['score_min']]
+                    if 'score_max' in filters and filters['score_max'] is not None:
+                        filtered_news = [n for n in filtered_news if n.get('score', 0) <= filters['score_max']]
+
+                    # 时间筛选
+                    if 'start_time' in filters and filters['start_time']:
+                        filtered_news = [n for n in filtered_news if n.get('published_at', '') >= filters['start_time']]
+                    if 'end_time' in filters and filters['end_time']:
+                        filtered_news = [n for n in filtered_news if n.get('published_at', '') <= filters['end_time']]
+
+                    # 评级筛选
+                    if 'ratings' in filters and filters['ratings']:
+                        filtered_news = [n for n in filtered_news if n.get('rating', '') in filters['ratings']]
+
+                    # 如果筛选后还有新闻，保留事件并更新新闻列表
+                    if filtered_news:
+                        updated_event = event.copy()
+                        updated_event['news_list'] = filtered_news
+                        updated_event['news_count'] = len(filtered_news)
+                        # 重新计算事件的max_score和max_grade
+                        if filtered_news:
+                            updated_event['max_score'] = max(n.get('score', 0) for n in filtered_news)
+                            grade_order = {"S": 5, "A+": 4, "A": 3, "B": 2, "C": 1}
+                            updated_event['max_grade'] = max(
+                                (n.get('grade', 'B') for n in filtered_news),
+                                key=lambda g: grade_order.get(g, 0)
+                            )
+                        temp_events.append(updated_event)
+
+                filtered_events = temp_events
+
+            except Exception as e:
+                logger.error(f"事件筛选参数解析失败: {e}")
+
+        # 排序
+        sort_field, sort_order = sort_param.split(':') if ':' in sort_param else ('max_score', 'desc')
+        reverse = sort_order == 'desc'
+
+        if sort_field == 'max_score':
+            filtered_events.sort(key=lambda x: x.get('max_score', 0), reverse=reverse)
+        elif sort_field == 'news_count':
+            filtered_events.sort(key=lambda x: x.get('news_count', 0), reverse=reverse)
+        elif sort_field == 'start_time':
+            filtered_events.sort(key=lambda x: x.get('start_time', ''), reverse=reverse)
+        elif sort_field == 'end_time':
+            filtered_events.sort(key=lambda x: x.get('end_time', ''), reverse=reverse)
+        else:
+            # 默认按最高评分倒序
+            filtered_events.sort(key=lambda x: x.get('max_score', 0), reverse=True)
+
+        # 分页
+        total = len(filtered_events)
+        start = (page - 1) * page_size
+        end = start + page_size
+        paginated_data = filtered_events[start:end]
+
+        return jsonify({
+            'code': 0,
+            'data': paginated_data,
+            'total': total,
+            'page': page,
+            'page_size': page_size
+        })
+
+    except Exception as e:
+        logger.error(f"获取事件数据失败: {e}")
+        return jsonify({
+            'code': -1,
+            'message': f'获取事件数据失败: {str(e)}'
+        }), 500
+
 if __name__ == '__main__':
     # 创建模板目录
     template_dir = os.path.join(os.path.dirname(__file__), 'templates')
