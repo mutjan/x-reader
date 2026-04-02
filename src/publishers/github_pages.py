@@ -14,7 +14,7 @@ from src.models.news import ProcessedNewsItem
 from src.processors.event_grouper import EventGrouper
 from src.data.feedback_store import FeedbackStore
 from src.processors.score_calibrator import CalibrationEngine
-from src.config.settings import DATA_FILE, GITHUB_BRANCH, settings, TEMP_DIR
+from src.config.settings import DATA_FILE, EVENT_GROUPS_FILE, GITHUB_BRANCH, settings, TEMP_DIR
 from src.utils.common import save_json, load_json
 
 class GitHubPagesPublisher(BasePublisher):
@@ -24,6 +24,7 @@ class GitHubPagesPublisher(BasePublisher):
         super().__init__("github_pages")
         self.repo_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
         self.data_file = os.path.join(self.repo_dir, DATA_FILE)
+        self.event_groups_file = os.path.join(self.repo_dir, EVENT_GROUPS_FILE)
         self.index_html_file = os.path.join(self.repo_dir, "index.html")
 
     def publish(self, items: List[ProcessedNewsItem], update_existing: bool = True, full_mode: bool = False, **kwargs) -> bool:
@@ -300,12 +301,13 @@ class GitHubPagesPublisher(BasePublisher):
 
             # 添加变更
             subprocess.run(
-                ["git", "add", self.data_file, self.index_html_file],
+                ["git", "add", self.data_file, self.event_groups_file, self.index_html_file],
                 cwd=self.repo_dir,
                 capture_output=True,
                 text=True,
                 check=True
             )
+            self.logger.info(f"已添加文件到git: {self.data_file}, {self.event_groups_file}, {self.index_html_file}")
 
             # 检查是否有变更
             status_result = subprocess.run(
