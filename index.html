@@ -1760,6 +1760,9 @@
                         const ratings = newsList.map(item => item.rating || 'C');
                         const entities = [...new Set(newsList.flatMap(item => item.entities || []))];
 
+                        // 取第一条新闻作为主新闻
+                        const mainNews = newsList[0];
+
                         return {
                             id: group.group_id,
                             title: group.event_title,
@@ -1769,7 +1772,9 @@
                             max_score: Math.max(...scores),
                             max_grade: ratings.sort((a, b) => getRatingOrder(a) - getRatingOrder(b))[0],
                             entities: entities,
-                            news_list: newsList
+                            news_list: newsList,
+                            main_news_url: mainNews ? mainNews.url : '',
+                            main_news_summary: mainNews ? mainNews.summary : ''
                         };
                     }).filter(Boolean); // 过滤掉空事件
 

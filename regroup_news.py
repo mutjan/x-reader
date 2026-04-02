@@ -22,33 +22,31 @@ def main():
     news_data = load_json(DATA_FILE, {})
     print(f"📥 加载了新闻数据文件")
 
-    # 2. 获取4月2日的新闻（2026-04-02）
-    april_2_news = []
-    if "news" in news_data and "2026-04-02" in news_data["news"]:
-        news_list = news_data["news"]["2026-04-02"]
-        print(f"📅 4月2日共有 {len(news_list)} 条新闻")
+    # 2. 获取所有日期的所有新闻
+    all_news = []
+    if "news" in news_data:
+        for date_str, news_list in news_data["news"].items():
+            print(f"📅 {date_str} 共有 {len(news_list)} 条新闻")
+            for item in news_list:
+                try:
+                    # 转换为ProcessedNewsItem对象
+                    # 处理字段映射（前端格式 → 内部格式）
+                    item["chinese_title"] = item["title"]
+                    item["grade"] = item["rating"]
+                    item["original_content"] = item.get("summary", "")
+                    item["source_url"] = item.get("url", "")
+                    item["published_at"] = item.get("published_at", "")
+                    item["entities"] = item.get("entities", [])  # 修复：复制entities字段
+                    news_item = ProcessedNewsItem.from_dict(item)
+                    all_news.append(news_item)
+                except Exception as e:
+                    print(f"⚠️  跳过无效新闻: {e}")
+                    continue
 
-        for item in news_list:
-            try:
-                # 转换为ProcessedNewsItem对象
-                # 处理字段映射（前端格式 → 内部格式）
-                item["chinese_title"] = item["title"]
-                item["grade"] = item["rating"]
-                item["original_content"] = item.get("summary", "")
-                item["source_url"] = item.get("url", "")
-                item["published_at"] = item.get("published_at", "")
-                news_item = ProcessedNewsItem.from_dict(item)
-                april_2_news.append(news_item)
-            except Exception as e:
-                print(f"⚠️  跳过无效新闻: {e}")
-                import traceback
-                traceback.print_exc()
-                continue
+    print(f"✅ 总共加载 {len(all_news)} 条新闻")
 
-    print(f"📅 4月2日共有 {len(april_2_news)} 条新闻")
-
-    if not april_2_news:
-        print("❌ 没有找到4月2日的新闻数据")
+    if not all_news:
+        print("❌ 没有找到任何新闻数据")
         return
 
     # 3. 读取配置并重新分组
@@ -61,9 +59,9 @@ def main():
         entity_threshold=entity_threshold,
         similarity_threshold=similarity_threshold
     )
-    events = grouper.group_news(april_2_news)
+    events = grouper.group_news(all_news)
 
-    print(f"✅ 分组完成: {len(april_2_news)} 条新闻 → {len(events)} 个事件")
+    print(f"✅ 分组完成: {len(all_news)} 条新闻 → {len(events)} 个事件")
 
     # 4. 保存新的事件分组
     success = grouper.save_event_groups(events, EVENT_GROUPS_FILE)
