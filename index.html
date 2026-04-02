@@ -1081,9 +1081,26 @@
             background: #2f3336;
             border: 1px solid #38444d;
             color: #e7e9ea;
-            padding: 4px 8px;
+            padding: 4px 28px 4px 8px;
             border-radius: 4px;
             font-size: 12px;
+            cursor: pointer;
+            appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%238899a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+            background-repeat: no-repeat;
+            background-position: right 8px center;
+            transition: all 0.2s ease;
+        }
+
+        .event-control-select:hover {
+            background: #38444d;
+            border-color: #4a5a6a;
+        }
+
+        .event-control-select:focus {
+            outline: none;
+            border-color: #1d9bf0;
+            box-shadow: 0 0 0 2px rgba(29, 155, 240, 0.2);
         }
 
         .event-search-input {
@@ -1094,8 +1111,19 @@
             border-radius: 4px;
             font-size: 12px;
             min-width: 200px;
+            transition: all 0.2s ease;
         }
 
+        .event-search-input:hover {
+            background: #38444d;
+            border-color: #4a5a6a;
+        }
+
+        .event-search-input:focus {
+            outline: none;
+            border-color: #1d9bf0;
+            box-shadow: 0 0 0 2px rgba(29, 155, 240, 0.2);
+        }
         .event-toggle-all-btn {
             background: #2f3336;
             border: 1px solid #38444d;
