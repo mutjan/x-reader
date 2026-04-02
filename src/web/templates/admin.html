@@ -661,6 +661,114 @@
             font-size: 12px;
             color: #718096;
         }
+
+        /* 事件表格样式 */
+        .event-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .event-table th {
+            background: #f7fafc;
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 13px;
+            color: #4a5568;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .event-table td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 14px;
+            vertical-align: top;
+        }
+        .event-table tr:hover {
+            background: #f7fafc;
+        }
+        .event-table tr.selected {
+            background: #e0e7ff;
+        }
+
+        /* 展开按钮样式 */
+        .event-expand-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 12px;
+            color: #667eea;
+            transition: transform 0.2s ease;
+        }
+        .event-expand-btn:hover {
+            color: #5568d3;
+        }
+        .event-expand-btn.expanded {
+            transform: rotate(90deg);
+        }
+        .event-expand-btn:disabled {
+            color: #cbd5e0;
+            cursor: default;
+        }
+
+        /* 时间线展开区域样式 */
+        .event-timeline-row {
+            background: #f7fafc;
+        }
+        .event-timeline-content {
+            padding: 16px;
+        }
+        .event-timeline {
+            border-left: 2px solid #e2e8f0;
+            padding-left: 20px;
+            margin-left: 10px;
+            position: relative;
+        }
+        .event-timeline-item {
+            position: relative;
+            margin-bottom: 12px;
+            padding: 10px 12px;
+            background: white;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+        .event-timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 14px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #667eea;
+            border: 2px solid white;
+            box-shadow: 0 0 0 2px #e2e8f0;
+        }
+        .event-timeline-time {
+            font-size: 12px;
+            color: #718096;
+            margin-bottom: 4px;
+        }
+        .event-timeline-title {
+            font-weight: 500;
+            color: #2d3748;
+            margin-bottom: 4px;
+        }
+        .event-timeline-meta {
+            font-size: 12px;
+            color: #718096;
+        }
+
+        /* 事件勾选框样式 */
+        .event-checkbox {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            accent-color: #667eea;
+        }
     </style>
 </head>
 <body>
@@ -1581,134 +1689,158 @@
         // 渲染事件列表
         function renderEvents(events) {
             const container = document.getElementById('eventsContainer');
-
-            if (events.length === 0) {
+            if (!events || events.length === 0) {
                 container.innerHTML = '<div class="empty-state">暂无事件数据</div>';
                 return;
             }
-
-            if (eventViewMode === 'timeline') {
-                return renderEventsTimeline(events, container);
-            } else {
-                return renderEventsList(events, container);
-            }
+            return renderEventsTable(events, container);
         }
 
-        // 渲染时间线视图
-        function renderEventsTimeline(events, container) {
-            let html = '';
+        // 渲染事件表格
+        function renderEventsTable(events, container) {
+            const ratingClass = (rating) => `rating-${rating || 'C'}`;
+            const typeClass = (type) => `type-${type || 'other'}`;
+            const typeMap = {
+                'product': '产品发布', 'funding': '融资上市', 'personnel': '人事变动',
+                'opinion': '观点访谈', 'industry': '行业动态', 'safety': '安全伦理',
+                'research': '研究成果', 'financial': '商业数据', 'breaking': '突发事件',
+                'tool': '工具技巧', 'society': '社会影响', 'hardware': '硬件基建'
+            };
 
-            events.forEach(event => {
-                const ratingClass = `rating-${event.rating || 'C'}`;
-                const entities = (event.entities || []).map(e => `<span class="entity-tag">${e}</span>`).join('');
-                const dateRange = formatDateRange(event.start_time, event.end_time);
-
-                html += `
-                    <div class="event-card">
-                        <div class="event-header">
-                            <div style="flex: 1; min-width: 300px;">
-                                <div class="event-title">
-                                    <span class="rating-tag ${ratingClass}" style="margin-right: 8px;">${event.rating || 'C'}</span>
-                                    ${event.title}
-                                </div>
-                                <div class="event-meta">
-                                    <span class="event-meta-item">📅 ${dateRange}</span>
-                                    <span class="event-meta-item">📰 ${event.news_count || 0} 条新闻</span>
-                                    <span class="event-meta-item">🔥 ${event.score || 0} 分</span>
-                                    <span class="event-meta-item">🔄 最后更新: ${formatTime(event.latest_news_at)}</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="event-entities">
-                            ${entities}
-                        </div>
-
-                        <div class="timeline">
-                `;
-
-                // 渲染时间线项
-                if (event.news_items && event.news_items.length > 0) {
-                    // 按时间升序排列
-                    const sortedNews = [...event.news_items].sort((a, b) =>
-                        new Date(a.published_at) - new Date(b.published_at)
-                    );
-
-                    sortedNews.forEach(item => {
-                        const itemRatingClass = `rating-${item.rating || 'C'}`;
-                        const typeClass = `type-${item.type || 'other'}`;
-
-                        html += `
-                            <div class="timeline-item">
-                                <div class="timeline-item-header">
-                                    <span class="timeline-item-time">${formatTime(item.published_at)}</span>
-                                    <div>
-                                        <span class="rating-tag ${itemRatingClass}" style="margin-right: 4px;">${item.rating || 'C'}</span>
-                                        <span class="type-tag ${typeClass}">${item.typeName || item.type || '其他'}</span>
-                                    </div>
-                                </div>
-                                <div class="timeline-item-title">${item.title}</div>
-                                <div class="timeline-item-meta">
-                                    <span>来源: ${item.source || '未知'}</span>
-                                    ${item.sources ? `<span>相关报道: ${item.sources} 篇</span>` : ''}
-                                </div>
-                            </div>
-                        `;
-                    });
-                }
-
-                html += `
-                        </div>
-                    </div>
-                `;
-            });
-
-            container.innerHTML = html;
-        }
-
-        // 渲染列表视图
-        function renderEventsList(events, container) {
             let html = `
-                <table>
+                <table class="event-table">
                     <thead>
                         <tr>
-                            <th onclick="handleEventHeaderSort('rating')" style="cursor: pointer; user-select: none;">
-                                评级 ${currentEventSort.startsWith('rating') ? (currentEventSort.endsWith(':desc') ? '↓' : '↑') : ''}
+                            <th style="width: 30px; text-align: center;">
+                                <input type="checkbox" class="event-checkbox" onchange="toggleSelectAllEvents(this)">
                             </th>
-                            <th>事件标题</th>
-                            <th>实体</th>
-                            <th onclick="handleEventHeaderSort('news_count')" style="cursor: pointer; user-select: none;">
-                                新闻数量 ${currentEventSort.startsWith('news_count') ? (currentEventSort.endsWith(':desc') ? '↓' : '↑') : ''}
-                            </th>
-                            <th onclick="handleEventHeaderSort('latest_news_at')" style="cursor: pointer; user-select: none;">
-                                最后更新 ${currentEventSort.startsWith('latest_news_at') ? (currentEventSort.endsWith(':desc') ? '↓' : '↑') : ''}
-                            </th>
-                            <th>时间范围</th>
+                            <th style="width: 30px;"></th>
+                            <th style="width: 50px;">评级</th>
+                            <th style="width: 80px;">类型</th>
+                            <th style="width: 25%;">标题</th>
+                            <th style="width: 20%;">摘要</th>
+                            <th style="width: 15%;">实体</th>
+                            <th style="width: 10%;">扩展性</th>
+                            <th style="width: 12%;">更新时间</th>
+                            <th style="width: 50px; text-align: center;">新闻数</th>
                         </tr>
                     </thead>
                     <tbody>
             `;
 
             events.forEach(event => {
-                const ratingClass = `rating-${event.rating || 'C'}`;
-                const entities = (event.entities || []).map(e => `<span class="entity-tag">${e}</span>`).join('');
-                const dateRange = formatDateRange(event.start_time, event.end_time);
-                const lastUpdate = formatTime(event.latest_news_at);
+                const isExpanded = expandedEvents.has(event.event_id);
+                const isSelected = selectedEvents.has(event.event_id);
+                const isSingleNews = event.is_single_news || event.news_count === 1;
+                const hasExpandBtn = !isSingleNews;
 
+                // 主事件行
                 html += `
-                    <tr>
-                        <td><span class="rating-tag ${ratingClass}">${event.rating || 'C'}</span></td>
-                        <td style="max-width: 400px; font-weight: 500;">${event.title}</td>
-                        <td style="max-width: 200px;">${entities}</td>
-                        <td>${event.news_count || 0}</td>
-                        <td style="white-space: nowrap;">${lastUpdate}</td>
-                        <td style="white-space: nowrap;">${dateRange}</td>
+                    <tr class="event-row ${isSelected ? 'selected' : ''}" data-event-id="${event.event_id}">
+                        <td style="text-align: center;">
+                            <input type="checkbox" class="event-checkbox"
+                                   ${isSelected ? 'checked' : ''}
+                                   onchange="toggleEventSelection('${event.event_id}')">
+                        </td>
+                        <td style="text-align: center;">
+                            ${hasExpandBtn ? `
+                                <button class="event-expand-btn ${isExpanded ? 'expanded' : ''}"
+                                        onclick="toggleEventExpand('${event.event_id}')">
+                                    ${isExpanded ? '▼' : '▶'}
+                                </button>
+                            ` : '<span style="color: #cbd5e0;">•</span>'}
+                        </td>
+                        <td>
+                            <span class="rating-tag ${ratingClass(event.max_grade)}">${event.max_grade || 'C'}</span>
+                        </td>
+                        <td>
+                            ${event.news_list && event.news_list[0] ? `
+                                <span class="type-tag ${typeClass(event.news_list[0].type)}">
+                                    ${typeMap[event.news_list[0].type] || event.news_list[0].type || '其他'}
+                                </span>
+                            ` : '-'}
+                        </td>
+                        <td style="font-weight: 500;">${event.title}</td>
+                        <td style="font-size: 13px; color: #4a5568;">
+                            ${event.main_news_summary || '-'}
+                        </td>
+                        <td>
+                            ${(event.entities || []).map(e => `<span class="entity-tag">${e}</span>`).join('')}
+                        </td>
+                        <td style="font-size: 12px; color: #718096;">
+                            ${event.main_news_expansion ? event.main_news_expansion.split('\n')[0] : '-'}
+                        </td>
+                        <td style="font-size: 12px; color: #718096; white-space: nowrap;">
+                            ${formatTime(event.last_seen_at || event.end_time)}
+                        </td>
+                        <td style="text-align: center; font-weight: 600;">
+                            ${event.news_count || 0}
+                        </td>
                     </tr>
                 `;
+
+                // 展开的时间线行（仅多新闻事件且已展开时显示）
+                if (hasExpandBtn && isExpanded && event.news_list) {
+                    html += `
+                        <tr class="event-timeline-row">
+                            <td colspan="10" style="padding: 0;">
+                                <div class="event-timeline-content">
+                                    <div class="event-timeline">
+                                        ${event.news_list.sort((a, b) => new Date(a.published_at) - new Date(b.published_at))
+                                            .map(news => `
+                                                <div class="event-timeline-item">
+                                                    <div class="event-timeline-time">${formatTime(news.published_at)}</div>
+                                                    <div class="event-timeline-title">
+                                                        <span class="rating-tag ${ratingClass(news.rating)}" style="font-size: 10px; padding: 1px 4px; margin-right: 4px;">${news.rating || 'C'}</span>
+                                                        ${news.title}
+                                                    </div>
+                                                    <div class="event-timeline-meta">
+                                                        <span>来源: ${news.source || '未知'}</span>
+                                                        ${news.sources ? `<span>相关报道: ${news.sources} 篇</span>` : ''}
+                                                    </div>
+                                                </div>
+                                            `).join('')}
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    `;
+                }
             });
 
             html += '</tbody></table>';
             container.innerHTML = html;
+        }
+
+        // 事件展开/折叠切换
+        function toggleEventExpand(eventId) {
+            if (expandedEvents.has(eventId)) {
+                expandedEvents.delete(eventId);
+            } else {
+                expandedEvents.add(eventId);
+            }
+            renderEvents(currentEventsData || []);
+        }
+
+        // 事件选中切换
+        function toggleEventSelection(eventId) {
+            if (selectedEvents.has(eventId)) {
+                selectedEvents.delete(eventId);
+            } else {
+                selectedEvents.add(eventId);
+            }
+            renderEvents(currentEventsData || []);
+        }
+
+        // 全选/取消全选事件
+        function toggleSelectAllEvents(checkbox) {
+            const events = currentEventsData || [];
+            if (checkbox.checked) {
+                events.forEach(e => selectedEvents.add(e.event_id));
+            } else {
+                selectedEvents.clear();
+            }
+            renderEvents(events);
         }
 
         // 事件视图切换
@@ -2109,6 +2241,9 @@
 
         // 全局事件数据存储，用于重新渲染
         let currentEventsData = [];
+        // 事件表格状态
+        let expandedEvents = new Set(); // 存储已展开的事件ID
+        let selectedEvents = new Set(); // 存储已选中的事件ID
 
         // 加载事件数据
         async function loadEvents(page = 1, search = '', filter = null, sort = null) {
