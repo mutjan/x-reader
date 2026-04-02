@@ -1717,10 +1717,11 @@
                             <th style="width: 30px;"></th>
                             <th style="width: 50px;">评级</th>
                             <th style="width: 80px;">类型</th>
-                            <th style="width: 25%;">标题</th>
-                            <th style="width: 20%;">摘要</th>
-                            <th style="width: 15%;">实体</th>
+                            <th style="width: 24%;">标题</th>
+                            <th style="width: 19%;">摘要</th>
+                            <th style="width: 14%;">实体</th>
                             <th style="width: 10%;">扩展性</th>
+                            <th style="width: 8%;">链接</th>
                             <th style="width: 12%;">更新时间</th>
                             <th style="width: 50px; text-align: center;">新闻数</th>
                         </tr>
@@ -1770,6 +1771,11 @@
                         <td style="font-size: 12px; color: #718096;">
                             ${event.main_news_expansion ? event.main_news_expansion.split('\n')[0] : '-'}
                         </td>
+                        <td>
+                            <div class="link-container">
+                                <a href="${event.main_news_url}" target="_blank" class="source-link" title="${event.main_news_url}">链接</a>
+                            </div>
+                        </td>
                         <td style="font-size: 12px; color: #718096; white-space: nowrap;">
                             ${formatTime(event.last_seen_at || event.end_time)}
                         </td>
@@ -1783,7 +1789,7 @@
                 if (hasExpandBtn && isExpanded && event.news_list) {
                     html += `
                         <tr class="event-timeline-row">
-                            <td colspan="10" style="padding: 0;">
+                            <td colspan="11" style="padding: 0;">
                                 <div class="event-timeline-content">
                                     <div class="event-timeline">
                                         ${event.news_list.sort((a, b) => new Date(a.published_at) - new Date(b.published_at))

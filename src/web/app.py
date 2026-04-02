@@ -791,6 +791,7 @@ def api_events():
                 'news_list': event_news,
                 'main_news_summary': main_news.get('summary', '') if main_news else '',
                 'main_news_expansion': main_news.get('expansion', '') if main_news else '',
+                'main_news_url': main_news.get('url', '') if main_news else '',
                 'is_single_news': len(event_news) == 1
             }
 
@@ -899,5 +900,13 @@ if __name__ == '__main__':
     template_dir = os.path.join(os.path.dirname(__file__), 'templates')
     os.makedirs(template_dir, exist_ok=True)
 
+    # 解析命令行参数
+    port = 8000
+    if len(sys.argv) >= 3 and sys.argv[1] == '--port':
+        try:
+            port = int(sys.argv[2])
+        except ValueError:
+            print(f"Invalid port: {sys.argv[2]}, using default 8000")
+
     # 启动服务（临时开启debug模式获取错误信息）
-    app.run(host='0.0.0.0', port=8081, debug=True, use_reloader=False)
+    app.run(host='0.0.0.0', port=port, debug=True, use_reloader=False)

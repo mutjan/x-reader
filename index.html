@@ -182,6 +182,7 @@
             color: #10b981;
             cursor: pointer;
             user-select: none;
+            transition: margin-bottom 0.3s ease;
         }
         .summary-header:hover {
             opacity: 0.8;
@@ -207,6 +208,56 @@
         .summary-content.collapsed {
             max-height: 0;
             opacity: 0;
+        }
+        .summary-section:has(.summary-content.collapsed) .summary-header {
+            margin-bottom: 0;
+        }
+        .zeitgeist-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0;
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #f59e0b;
+            cursor: pointer;
+            user-select: none;
+            transition: margin-bottom 0.3s ease;
+        }
+        .zeitgeist-header:hover {
+            opacity: 0.8;
+        }
+        .zeitgeist-header .icon {
+            font-size: 16px;
+        }
+        .zeitgeist-toggle {
+            margin-left: auto;
+            font-size: 12px;
+            color: #8899a6;
+            transition: transform 0.3s ease;
+        }
+        .zeitgeist-toggle.collapsed {
+            transform: rotate(-90deg);
+        }
+        .zeitgeist-content {
+            max-height: 2000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            opacity: 1;
+        }
+        .zeitgeist-content.collapsed {
+            max-height: 0;
+            opacity: 0;
+        }
+        .zeitgeist-section:has(.zeitgeist-content.collapsed) .zeitgeist-header {
+            margin-bottom: 0;
+        }
+        .zeitgeist-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 8px 0 16px 0;
         }
         .summary-grid {
             display: grid;
@@ -1177,21 +1228,24 @@
             width: 70px;
         }
         .event-table th:nth-child(5) {
-            width: 22%;
+            width: 21%;
         }
         .event-table th:nth-child(6) {
-            width: 20%;
+            width: 19%;
         }
         .event-table th:nth-child(7) {
-            width: 12%;
+            width: 11%;
         }
         .event-table th:nth-child(8) {
             width: 10%;
         }
         .event-table th:nth-child(9) {
-            width: 12%;
+            width: 8%;
         }
         .event-table th:nth-child(10) {
+            width: 12%;
+        }
+        .event-table th:nth-child(11) {
             width: 50px;
             text-align: center;
         }
@@ -1287,7 +1341,9 @@
             .event-table th:nth-child(6),
             .event-table td:nth-child(6),
             .event-table th:nth-child(8),
-            .event-table td:nth-child(8) {
+            .event-table td:nth-child(8),
+            .event-table th:nth-child(9),
+            .event-table td:nth-child(9) {
                 display: none;
             }
             .event-timeline {
@@ -1558,13 +1614,16 @@
 
         <!-- 时代情绪区域 -->
         <div class="zeitgeist-section" id="zeitgeistSection" style="display: none;">
-            <div class="zeitgeist-header">
+            <div class="zeitgeist-header" onclick="toggleZeitgeist()">
                 <span class="icon">🌊</span>
                 <span>时代情绪追踪</span>
-                <span style="margin-left: auto; font-size: 12px; font-weight: normal; color: #8899a6;" id="zeitgeistCount"></span>
+                <span style="font-size: 12px; font-weight: normal; color: #8899a6;" id="zeitgeistCount"></span>
+                <span class="zeitgeist-toggle collapsed" id="zeitgeistToggle">▼</span>
             </div>
-            <div class="zeitgeist-list" id="zeitgeistList">
-                <!-- 动态填充 -->
+            <div class="zeitgeist-content collapsed" id="zeitgeistContent">
+                <div class="zeitgeist-list" id="zeitgeistList">
+                    <!-- 动态填充 -->
+                </div>
             </div>
         </div>
 
@@ -2115,6 +2174,7 @@
                                 实体 ${eventSort.field === 'entities' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
                             </th>
                             <th>扩展性</th>
+                            <th>链接</th>
                             <th onclick="sortEventsBy('end_time')" style="cursor: pointer;">
                                 更新时间 ${eventSort.field === 'end_time' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
                             </th>
@@ -2166,6 +2226,11 @@
                                     <td>
                                         <div class="expansion-content">${mainNews && mainNews.expansion ? mainNews.expansion : '-'}</div>
                                     </td>
+                                    <td>
+                                        <div class="link-container">
+                                            <a href="${event.main_news_url}" target="_blank" class="source-link" title="${event.main_news_url}">链接</a>
+                                        </div>
+                                    </td>
                                     <td style="color: #8899a6; font-size: 12px; white-space: nowrap;">
                                         ${formatTime(event.end_time)}
                                     </td>
@@ -2177,7 +2242,7 @@
                             if (hasExpandBtn && isExpanded && event.news_list) {
                                 html += `
                                     <tr class="event-timeline-row">
-                                        <td colspan="10" style="padding: 0;">
+                                        <td colspan="11" style="padding: 0;">
                                             <div class="event-timeline-content">
                                                 <div class="event-timeline">
                                                     ${event.news_list.sort((a, b) => (a.timestamp || 0) - (b.timestamp || 0))
@@ -2661,6 +2726,23 @@
             const toggle = document.getElementById('summaryToggle');
 
             if (isSummaryCollapsed) {
+                content.classList.add('collapsed');
+                toggle.classList.add('collapsed');
+            } else {
+                content.classList.remove('collapsed');
+                toggle.classList.remove('collapsed');
+            }
+        }
+
+        // ==================== 时代情绪功能 ====================
+        let isZeitgeistCollapsed = true;
+
+        function toggleZeitgeist() {
+            isZeitgeistCollapsed = !isZeitgeistCollapsed;
+            const content = document.getElementById('zeitgeistContent');
+            const toggle = document.getElementById('zeitgeistToggle');
+
+            if (isZeitgeistCollapsed) {
                 content.classList.add('collapsed');
                 toggle.classList.add('collapsed');
             } else {
