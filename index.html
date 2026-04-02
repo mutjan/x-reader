@@ -1902,6 +1902,13 @@
                 eventSort.field = field;
                 eventSort.order = 'desc';
             }
+
+            // 同步更新排序下拉框的选中值
+            const sortSelect = document.querySelector('.event-control-select[onchange*="sortEventsBy"]');
+            if (sortSelect) {
+                sortSelect.value = eventSort.field;
+            }
+
             renderEvents();
         }
 
