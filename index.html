@@ -838,45 +838,25 @@
             padding: 4px;
             border-radius: 4px;
         }
-        /* 扩展性 - 默认显示第一行，hover展开 */
-        .expansion-cell {
-            position: relative;
-        }
-        .expansion-preview {
+        /* 扩展性字段 - 2行截断+hover展开 */
+        .expansion-content {
             color: #8899a6;
             font-size: 12px;
             line-height: 1.4;
-            white-space: nowrap;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
             overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 80px;
+            max-height: calc(12px * 1.4 * 2); /* 2行高度 */
+            transition: all 0.2s ease;
+            padding: 4px;
+            border-radius: 4px;
         }
-        .expansion-full {
-            position: absolute;
-            left: 0;
-            top: 0;
-            min-width: 200px;
-            max-width: 300px;
+        .expansion-content:hover {
+            -webkit-line-clamp: 20;
+            max-height: calc(12px * 1.4 * 20); /* 最多显示20行 */
             background: #1d9bf020;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-size: 12px;
-            color: #e7e9ea;
-            line-height: 1.4;
-            z-index: 10;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.2s ease, visibility 0.2s ease;
-            pointer-events: none;
-            white-space: normal;
-        }
-        .expansion-cell:hover .expansion-full {
-            opacity: 1;
-            visibility: visible;
-        }
-        .expansion-cell:hover .expansion-preview {
-            opacity: 0;
+            overflow: visible;
         }
 
         /* X事件样式 */
@@ -1804,6 +1784,28 @@
                         valA = a.title.toLowerCase();
                         valB = b.title.toLowerCase();
                         break;
+                    case 'max_grade':
+                        // 评级排序：S > A > B > C > D
+                        const gradeOrder = { 'S': 6, 'A': 5, 'B': 4, 'C': 3, 'D': 2, 'E': 1 };
+                        valA = gradeOrder[a.max_grade] || 0;
+                        valB = gradeOrder[b.max_grade] || 0;
+                        break;
+                    case 'type':
+                        // 类型排序：取第一条新闻的类型
+                        const typeA = a.news_list && a.news_list[0] ? a.news_list[0].type : '';
+                        const typeB = b.news_list && b.news_list[0] ? b.news_list[0].type : '';
+                        valA = typeA.toLowerCase();
+                        valB = typeB.toLowerCase();
+                        break;
+                    case 'entities':
+                        // 实体排序：按实体数量排序
+                        valA = (a.entities || []).length;
+                        valB = (b.entities || []).length;
+                        break;
+                    case 'end_time':
+                        valA = a.end_time;
+                        valB = b.end_time;
+                        break;
                     default:
                         valA = a.max_score;
                         valB = b.max_score;
@@ -1852,6 +1854,14 @@
         }
 
         function sortEventsBy(field) {
+            // 支持的排序字段列表
+            const supportedFields = ['max_score', 'max_grade', 'type', 'title', 'entities', 'end_time', 'news_count', 'start_time'];
+
+            // 验证字段，不支持的字段默认使用max_score
+            if (!supportedFields.includes(field)) {
+                field = 'max_score';
+            }
+
             if (eventSort.field === field) {
                 eventSort.order = eventSort.order === 'asc' ? 'desc' : 'asc';
             } else {
@@ -2012,7 +2022,7 @@
                                         ).join('')}
                                     </td>
                                     <td>
-                                        ${mainNews && mainNews.expansion ? mainNews.expansion.split('\n')[0] : '-'}
+                                        <div class="expansion-content">${mainNews && mainNews.expansion ? mainNews.expansion : '-'}</div>
                                     </td>
                                     <td style="color: #8899a6; font-size: 12px; white-space: nowrap;">
                                         ${formatTime(event.end_time)}
@@ -2343,8 +2353,7 @@
 
         function renderExpansion(expansion) {
             if (!expansion || expansion.trim() === '') return '<span style="color: #555;">-</span>';
-            const firstLine = expansion.split('\n')[0] || expansion.substring(0, 20);
-            return `<div class="expansion-cell"><div class="expansion-preview">${firstLine}</div><div class="expansion-full">${expansion}</div></div>`;
+            return `<div class="expansion-content">${expansion}</div>`;
         }
 
         function renderType(type, typeName) {
