@@ -115,13 +115,6 @@ class BaseAIProcessor(ABC):
    - 例如：谷歌新技术→影响美股芯片→影响A股芯片；产品发布→竞品反应→用户迁移→市场份额变化
    - 用1-2句话简洁描述扩展角度
 
-5. **识别核心实体**（2-5个）：公司、产品、人物、技术/概念
-
-   **实体提取规则（重要）**：
-   - **产品系列统一**：提取基础产品名，不带版本号。如 `Gemini 2.5 Pro` → `Gemini`，`GPT-4o` → `GPT`，`Claude 3.5` → `Claude`
-   - **公司/品牌统一**：同一主体的不同表述统一。如 `Manus AI` 和 `Manus` 都提取为 `Manus`，`OpenAI o3` 和 `o3` 都提取为 `OpenAI`
-   - **人物用全名**：如 `Sam Altman` 而非 `Altman`，`Elon Musk` 而非 `Musk`
-
 返回格式必须是严格的JSON数组，每个元素包含：
 {
   "index": 0,
@@ -129,8 +122,7 @@ class BaseAIProcessor(ABC):
   "chinese_title": "中文标题",
   "summary": "一句话摘要",
   "type": "product",
-  "extension": "扩展分析",
-  "entities": ["实体1", "实体2", "实体3"]
+  "extension": "扩展分析"
 }
 
 注意：
@@ -268,9 +260,6 @@ class BaseAIProcessor(ABC):
                 if original_item is None:
                     continue
 
-                # 标准化实体
-                entities = EntityNormalizer.normalize_list(result.get("entities", []))
-
                 processed_item = ProcessedNewsItem(
                     id=original_item.get_unique_id(),
                     original_title=original_item.title,
@@ -284,7 +273,7 @@ class BaseAIProcessor(ABC):
                     score=0,   # 后续打分阶段填充
                     news_type=result.get("type", ""),
                     extension=sanitize_content(result.get("extension", "")),
-                    entities=entities,
+                    entities=[],  # 实体识别阶段单独填充
                     raw_item=original_item
                 )
 
@@ -694,3 +683,136 @@ S级（90-100分）必须满足以下条件之一：
             response_text = f.read()
 
         return self.parse_scoring_response(response_text, processed_items)
+
+
+class EntityProcessor(BaseAIProcessor):
+    """独立的实体识别处理器，仅基于英文内容进行实体识别"""
+
+    def _load_system_prompt(self) -> str:
+        """加载实体识别专用系统提示词"""
+        return """
+你是专业的实体识别专家，负责从英文科技新闻内容中提取核心实体。
+
+请对以下英文新闻内容进行实体识别，返回 JSON 格式结果：
+
+实体提取规则：
+1. 只提取核心实体，类型包括：公司、产品、人物、技术/概念
+2. 每个新闻提取2-5个最相关的实体
+3. **产品系列统一**：提取基础产品名，不带版本号。如 `Gemini 2.5 Pro` → `Gemini`，`GPT-4o` → `GPT`，`Claude 3.5` → `Claude`
+4. **公司/品牌统一**：同一主体的不同表述统一。如 `Manus AI` 和 `Manus` 都提取为 `Manus`，`OpenAI o3` 和 `o3` 都提取为 `OpenAI`
+5. **人物用全名**：如 `Sam Altman` 而非 `Altman`，`Elon Musk` 而非 `Musk`
+6. 只提取英文实体，不需要翻译
+
+返回格式必须是严格的JSON数组，每个元素包含：
+{
+  "index": 0,
+  "original_url": "原始新闻URL，与输入完全一致",
+  "entities": ["实体1", "实体2", "实体3"]
+}
+
+注意：
+- 只返回JSON，不要任何其他解释性文字
+- 确保JSON格式完全正确，没有语法错误
+- 所有新闻都需要处理，不要过滤任何内容
+"""
+
+    def build_prompt(self, items: List[RawNewsItem]) -> str:
+        """构建实体识别提示词，仅使用英文内容"""
+        news_list = []
+        for i, item in enumerate(items):
+            # 获取英文内容，如果没有则需要翻译
+            content = item.content
+
+            # 检查内容是否为英文（简单判断：中文字符占比低于10%）
+            chinese_chars = sum(1 for c in content if '\u4e00' <= c <= '\u9fff')
+            is_english = chinese_chars / len(content) < 0.1 if content else True
+
+            news_item = {
+                "index": i,
+                "title": item.title,
+                "content": content,
+                "source": item.source,
+                "url": item.url,
+                "is_english": is_english
+            }
+            news_list.append(news_item)
+
+        prompt = f"{self.system_prompt}\n\n输入新闻：\n{json.dumps(news_list, ensure_ascii=False, indent=2)}"
+        return prompt
+
+    def parse_response(self, response_text: str, original_items: List[RawNewsItem]) -> List[Dict[str, Any]]:
+        """解析实体识别响应，返回URL到实体列表的映射"""
+        try:
+            # 尝试提取JSON部分
+            json_start = response_text.find('[')
+            json_end = response_text.rfind(']') + 1
+
+            if json_start == -1 or json_end == 0:
+                logger.error("实体识别响应中找不到JSON数组")
+                return []
+
+            json_text = response_text[json_start:json_end]
+            results = json.loads(json_text)
+
+            # Build URL → entities lookup
+            url_to_entities = {}
+            for result in results:
+                original_url = result.get("original_url", "")
+                if original_url:
+                    entities = EntityNormalizer.normalize_list(result.get("entities", []))
+                    url_to_entities[original_url] = entities
+
+            logger.info(f"实体识别完成: 输入{len(original_items)}条 → 识别{len(url_to_entities)}条新闻的实体")
+            return url_to_entities
+
+        except json.JSONDecodeError as e:
+            logger.error(f"解析实体识别响应失败: {e}")
+            logger.debug(f"响应内容: {response_text[:500]}...")
+            return []
+        except Exception as e:
+            logger.error(f"处理实体识别响应异常: {e}")
+            return []
+
+    def process_batch(self, items: List[RawNewsItem]) -> Dict[str, List[str]]:
+        """批量处理新闻实体识别，返回URL到实体列表的映射"""
+        if not items:
+            return {}
+
+        logger.info(f"开始实体识别处理，共{len(items)}条新闻")
+
+        # 构建提示词
+        prompt = self.build_prompt(items)
+
+        # 创建临时文件
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', encoding='utf-8', delete=False, dir=TEMP_DIR) as f:
+            f.write(prompt)
+            prompt_file = f.name
+
+        try:
+            # 生成提示词文件供手动处理
+            prompt_file = os.path.join(TEMP_DIR, f"entity_prompt_{datetime.now().strftime('%Y%m%d%H%M%S')}.txt")
+
+            with open(prompt_file, 'w', encoding='utf-8') as f:
+                f.write(prompt)
+
+            logger.info(f"已生成实体识别提示词文件: {prompt_file}")
+            logger.info("请将提示词发送给AI处理，将结果保存为JSON文件后继续流程")
+
+            # 这里返回空字典，需要用户手动处理后重新运行
+            return {}
+
+        finally:
+            # 清理临时文件
+            if 'prompt_file' in locals() and os.path.exists(prompt_file):
+                os.unlink(prompt_file)
+
+    def load_manual_result(self, result_file: str, original_items: List[RawNewsItem]) -> Dict[str, List[str]]:
+        """加载手动处理的实体识别结果"""
+        if not os.path.exists(result_file):
+            logger.error(f"实体识别结果文件不存在: {result_file}")
+            return {}
+
+        with open(result_file, 'r', encoding='utf-8') as f:
+            response_text = f.read()
+
+        return self.parse_response(response_text, original_items)

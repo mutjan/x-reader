@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from src.fetchers.factory import FetcherFactory
 from src.processors.filter import NewsFilter
 from src.processors.duplicate import DuplicateRemover
-from src.processors.ai_processor import ManualProcessor
+from src.processors.ai_processor import ManualProcessor, EntityProcessor
 from src.publishers.factory import PublisherFactory
 from src.utils.common import setup_logger, save_json
 import json
@@ -55,7 +55,8 @@ def main():
     logger.info("初始化组件...")
     duplicate_remover = DuplicateRemover()
     news_filter = NewsFilter()
-    ai_processor = ManualProcessor()  # 默认使用手动处理模式
+    entity_processor = EntityProcessor()  # 实体识别处理器
+    ai_processor = ManualProcessor()  # 标题摘要生成处理器
     publisher = PublisherFactory.get_publisher("github_pages")
 
     # 2. 获取数据源
@@ -112,8 +113,23 @@ def main():
         logger.warning("预筛选后没有剩余新闻")
         return 0
 
-    # 7. AI处理
-    logger.info(f"开始AI处理，共 {len(filtered_items)} 条新闻")
+    # 7. 实体识别（仅基于英文内容）
+    logger.info(f"开始实体识别，共 {len(filtered_items)} 条新闻")
+
+    # 分批进行实体识别
+    all_entities = {}
+    for i in range(0, len(filtered_items), args.batch_size):
+        batch = filtered_items[i:i+args.batch_size]
+        logger.info(f"实体识别批次 {i//args.batch_size + 1}/{(len(filtered_items) + args.batch_size - 1)//args.batch_size} "
+                   f"({len(batch)}条)")
+        batch_entities = entity_processor.process_batch(batch)
+        all_entities.update(batch_entities)
+
+    if not all_entities:
+        logger.warning("实体识别后没有结果，继续后续处理（实体将为空）")
+
+    # 8. AI处理（标题/摘要生成）
+    logger.info(f"开始标题摘要生成，共 {len(filtered_items)} 条新闻")
 
     # 分批处理
     processed_items = []
@@ -128,7 +144,15 @@ def main():
         logger.warning("AI处理后没有剩余新闻")
         return 0
 
-    # 8. 处理后去重
+    # 填充实体识别结果
+    if all_entities:
+        logger.info("填充实体识别结果...")
+        for item in processed_items:
+            if item.url in all_entities:
+                item.entities = all_entities[item.url]
+        logger.info(f"已为 {len([item for item in processed_items if item.entities])} 条新闻填充实体")
+
+    # 9. 处理后去重
     logger.info("处理后去重...")
     processed_items = duplicate_remover.deduplicate_processed(processed_items)
 
@@ -138,12 +162,12 @@ def main():
 
     logger.info(f"最终得到 {len(processed_items)} 条有效新闻")
 
-    # 9. 标记为已处理
+    # 10. 标记为已处理
     for item in processed_items:
         duplicate_remover.add_processed_id(item.id)
     duplicate_remover.save_processed_ids()
 
-    # 10. 最终格式校验
+    # 11. 最终格式校验
     logger.info("开始JSON格式校验...")
     try:
         # 校验所有新闻项是否可以正常序列化
@@ -155,7 +179,7 @@ def main():
         logger.error(f"✗ JSON格式校验失败: {e}")
         return 1
 
-    # 11. 发布
+    # 12. 发布
     if not args.no_publish and publisher:
         logger.info("开始发布到GitHub Pages...")
         if publisher.publish(processed_items, full_mode=args.full):
