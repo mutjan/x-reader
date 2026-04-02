@@ -99,3 +99,13 @@ Plans:
 | 8. EventGrouper Core Component Development | 4/4 | Completed | 2026-04-02 |
 | 9. Pipeline Integration & Publishing Workflow | 6/6 | Completed | 2026-04-02 |
 | 10. Frontend Event Timeline Display | 0/6 | Not started |
+
+### Phase 11: 我想把事件追踪改成和新闻列表一样的表格样式，在勾选的左侧加一个展开按钮，如果只有一个新闻的事件就显示新闻数据，无法展开。有多个新闻的点展开再用竖线连接时间线。这样需要事件数据结构中页包含摘要和扩展性，然后事件的更新时间显示所属新闻中最后更新的。
+
+**Goal:** [To be planned]
+**Requirements**: TBD
+**Depends on:** Phase 10
+**Plans:** 0 plans
+
+Plans:
+- [ ] TBD (run /gsd:plan-phase 11 to break down)

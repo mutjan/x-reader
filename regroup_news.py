@@ -12,7 +12,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from src.processors.event_grouper import EventGrouper
 from src.utils.common import load_json, save_json
 from src.models.news import ProcessedNewsItem
-from src.config.settings import DATA_FILE, EVENT_GROUPS_FILE
+from src.config.settings import DATA_FILE, EVENT_GROUPS_FILE, EVENT_GROUPER_CONFIG_FILE
+import json
 
 def main():
     print("🔄 开始重新分组4月2日所有新闻...")
@@ -30,9 +31,12 @@ def main():
         for item in news_list:
             try:
                 # 转换为ProcessedNewsItem对象
-                # 处理字段映射
+                # 处理字段映射（前端格式 → 内部格式）
                 item["chinese_title"] = item["title"]
                 item["grade"] = item["rating"]
+                item["original_content"] = item.get("summary", "")
+                item["source_url"] = item.get("url", "")
+                item["published_at"] = item.get("published_at", "")
                 news_item = ProcessedNewsItem.from_dict(item)
                 april_2_news.append(news_item)
             except Exception as e:
@@ -47,8 +51,16 @@ def main():
         print("❌ 没有找到4月2日的新闻数据")
         return
 
-    # 3. 重新分组
-    grouper = EventGrouper()
+    # 3. 读取配置并重新分组
+    config = load_json(EVENT_GROUPER_CONFIG_FILE, {})
+    entity_threshold = config.get('entity_threshold', 3)
+    similarity_threshold = config.get('similarity_threshold', 0.85)
+    print(f"⚙️ 使用配置: entity_threshold={entity_threshold}, similarity_threshold={similarity_threshold}")
+
+    grouper = EventGrouper(
+        entity_threshold=entity_threshold,
+        similarity_threshold=similarity_threshold
+    )
     events = grouper.group_news(april_2_news)
 
     print(f"✅ 分组完成: {len(april_2_news)} 条新闻 → {len(events)} 个事件")

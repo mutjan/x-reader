@@ -7,6 +7,12 @@ from typing import List, Set
 import re
 from collections import Counter
 
+try:
+    import jieba
+    JIEBA_AVAILABLE = True
+except ImportError:
+    JIEBA_AVAILABLE = False
+
 def jaccard_similarity(set_a: Set, set_b: Set) -> float:
     """计算Jaccard相似度：交集/并集"""
     if not set_a or not set_b:
@@ -17,15 +23,18 @@ def jaccard_similarity(set_a: Set, set_b: Set) -> float:
 
 def cosine_similarity(text1: str, text2: str) -> float:
     """计算余弦相似度（基于词频）"""
-    # 分词：简单按非字母数字字符分割
-    def get_words(text: str) -> List[str]:
-        text = text.lower()
-        words = re.findall(r'[\w\u4e00-\u9fff]+', text)
-        # 过滤掉太短的词
-        return [w for w in words if len(w) >= 2]
-
-    words1 = get_words(text1)
-    words2 = get_words(text2)
+    if JIEBA_AVAILABLE:
+        # 使用jieba进行中文分词
+        words1 = [w for w in jieba.lcut(text1) if len(w) >= 2]
+        words2 = [w for w in jieba.lcut(text2) if len(w) >= 2]
+    else:
+        # 备用：简单按非字母数字字符分割
+        def get_words(text: str) -> List[str]:
+            text = text.lower()
+            words = re.findall(r'[\w\u4e00-\u9fff]+', text)
+            return [w for w in words if len(w) >= 2]
+        words1 = get_words(text1)
+        words2 = get_words(text2)
 
     if not words1 or not words2:
         return 0.0

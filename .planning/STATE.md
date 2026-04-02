@@ -81,6 +81,10 @@ Plan: 6 of 6
 7. 分组信息丢失（新闻过期删除） → Mitigation: 新闻过期清理时同步更新分组文件，延长分组新闻保留周期
 8. 并发写入冲突 → Mitigation: 文件锁机制，写入前版本校验
 
+### Roadmap Evolution
+
+- Phase 11 added: 优化事件追踪UI为表格样式，支持展开/折叠多新闻事件，添加摘要和扩展性字段
+
 ### TODO Backlog
 
 - [ ] Create AI scoring calibration benchmark dataset from feedback
