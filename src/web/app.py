@@ -13,7 +13,7 @@ import subprocess
 from datetime import datetime
 from typing import Dict, List, Any
 
-from src.config.settings import DATA_FILE, settings
+from src.config.settings import DATA_FILE, settings, EVENT_GROUPS_FILE
 from src.utils.common import load_json, setup_logger, save_json
 from src.data.feedback_store import FeedbackStore
 from src.data.source_store import source_store
@@ -44,6 +44,7 @@ def login_required(f):
 # 项目根目录
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_FILE_PATH = os.path.join(ROOT_DIR, DATA_FILE)
+EVENT_GROUPS_FILE_PATH = os.path.join(ROOT_DIR, EVENT_GROUPS_FILE)
 ZEITGEIST_CONFIG_PATH = os.path.join(ROOT_DIR, 'config', 'zeitgeist.json')
 
 @app.route('/login', methods=['GET', 'POST'])
