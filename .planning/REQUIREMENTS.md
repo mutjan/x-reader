@@ -1,69 +1,87 @@
-# v1 Requirements
+# v2.0 Requirements
 **Project:** 科技新闻选题聚合系统
-**Version:** v1.0
-**Last updated:** 2026-03-31
+**Version:** v2.0
+**Last updated:** 2026-04-01
 
-## v1 Requirements
+## v2.0 Goals
 
-### Data Layer (DATA)
-- [ ] **DATA-01**: 多源RSS新闻自动抓取聚合（复用现有x-reader功能）
-- [ ] **DATA-02**: 新闻自动去重（复用现有x-reader功能）
-- [ ] **DATA-03**: 新闻URL唯一主键机制，彻底解决AI结果匹配错位问题
-- [ ] **DATA-04**: 处理前列表快照机制，保证AI输入输出一致性
+重构同事件新闻自动分组功能，采用独立分组文件存储方案，保持原有新闻数据结构不变，前端聚合展示事件时间线，提升编辑对事件发展脉络的感知效率。解决v1.0中合并新闻导致原始信息丢失的问题。
 
-### AI Processing Layer (AI)
-- [ ] **AI-01**: 多维度选题价值评分（热度、新颖度、领域匹配度、时效性），Agent在上下文处理，不使用独立脚本
-- [ ] **AI-02**: 智能分类与标签生成（按AI、半导体、硬科技、消费电子等科技子领域归类）
-- [ ] **AI-03**: 新闻摘要自动生成，帮助编辑快速了解核心内容
-- [ ] **AI-04**: 同源新闻脉络关联，自动识别同一事件的相关报道，形成事件时间线
-- [ ] **AI-05**: 选题评分校准机制，支持人工反馈调整评分模型
+---
 
-### Interaction Layer (UI)
-- [ ] **UI-01**: 多维度筛选功能，支持按领域、热度、时间、评分筛选
-- [ ] **UI-02**: 多维度排序功能，支持按热度、时间、评分排序
-- [ ] **UI-03**: 选题标记功能，支持标记「入选」「待跟进」「忽略」状态
-- [ ] **UI-04**: 新闻列表展示，包含标题、摘要、评分、标签、来源、发布时间
-- [ ] **UI-05**: 原文跳转功能，点击新闻跳转至来源站点
+## Grouping (GRP)
 
-### Infrastructure Layer (INFRA)
-- [ ] **INFRA-01**: 定时任务脚本和技能定义（由其他Agent负责调度执行，本项目只提供可执行脚本）
-- [ ] **INFRA-02**: 增量更新机制，小时级更新新闻数据
-- [ ] **INFRA-03**: 信源白名单管理，保障内容质量
-- [ ] **INFRA-04**: 基础访问控制，仅限内部编辑使用
+核心分组功能需求
 
-## v2 Deferred Requirements
-- [ ] 选题热度趋势预测（高复杂度，需要历史数据积累）
-- [ ] 选题价值动态调整（需要实时数据处理能力）
-- [ ] 编辑偏好自适应（需要用户行为数据积累）
-- [ ] 选题池协作功能（小团队初期可手动同步）
-- [ ] 选题导出功能（非核心需求，后续根据使用情况添加）
-- [ ] 复杂用户权限系统（内部使用无需复杂权限）
+- [ ] **GRP-01**: 独立分组关系存储 — 新增 `event_groups.json` 文件存储分组关系（组ID → 新闻ID列表），不修改原有 `news_data.json` 结构
+- [ ] **GRP-02**: 自动事件分组识别 — 基于标题、摘要、实体多维度相似度计算，自动识别同事件新闻并分组
+- [ ] **GRP-03**: 增量更新支持 — 每次增量抓取时，新新闻自动匹配已有事件组或创建新事件组，不需要全量重新分组
+- [x] **GRP-04**: 移除原有合并逻辑 — 从处理流水线移除 `merge_similar_news` 逻辑，每条新闻保持独立存储
+
+---
+
+## Storage (STOR)
+
+存储层需求
+
+- [ ] **STOR-01**: `event_groups.json` 结构设计 — 每个事件组包含：group_id, event_title, first_seen_at, last_seen_at, news_ids list, score
+- [ ] **STOR-02**: 原子写入保证 — 采用"临时文件+原子替换"写入模式，避免双文件数据不一致
+- [ ] **STOR-03**: 自动备份 — 每次修改自动备份，保留最近30天备份
+
+---
+
+## Frontend (UI)
+
+前端展示需求
+
+- [ ] **UI-01**: 事件时间线展示 — 同一事件组内的多条新闻按发布时间排序聚合展示
+- [ ] **UI-02**: 保持独立新闻浏览 — 单条新闻仍然可以独立浏览，不影响原有用户体验
+- [ ] **UI-03**: 过滤排序兼容 — 现有过滤排序功能对事件分组正常工作
+
+---
+
+## Integration (INT)
+
+流水线集成需求
+
+- [ ] **INT-01**: 在处理流水线新增 EventGrouper 阶段 — 位置在 AI 处理后，发布前
+- [ ] **INT-02**: 修改发布流程同时发布 `news_data.json` 和 `event_groups.json` 两个文件
+- [ ] **INT-03**: GitHub Pages 发布流程同步更新，确保两个文件都被推送
+
+---
+
+## Deferred Requirements (v2.1+)
+
+- GRP-05: 事件热度聚合计算 — 同一事件热度值聚合计算，提升排序优先级
+- GRP-06: 手动分组调整 — 支持编辑手动修正自动分组错误
+- GRP-07: 分组双向关联 — 每条新闻可查看所属事件组，事件组可查看所有相关新闻
+- UI-04: 智能事件标题自动生成
+- UI-05: 事件发展脉络自动摘要
 
 ## Out of Scope
-- ❌ 面向普通用户的公开资讯站 - 保持内部工具属性
-- ❌ 内容发布功能 - 仅提供选题线索，不涉及内容生产
-- ❌ 社交媒体内容抓取 - v1阶段仅处理RSS信源
-- ❌ 全文内容存储 - 仅存储元数据，避免版权风险
-- ❌ 智能写稿功能 - 聚焦选题发现，不涉及内容生成
+
+- 修改 `news_data.json` 结构 — 保持不变，仅新增文件
+- 引入数据库依赖 — 保持纯JSON文件存储架构
+- 支持拆分已有事件组 — v2.0只支持自动分组，手动调整延期
+
+---
 
 ## Traceability
+
 | Requirement ID | Phase | Status |
 |----------------|-------|--------|
-| DATA-01 | Phase 1 | Pending |
-| DATA-02 | Phase 1 | Pending |
-| DATA-03 | Phase 1 | Pending |
-| DATA-04 | Phase 1 | Pending |
-| AI-01 | Phase 2 | Pending |
-| AI-02 | Phase 2 | Pending |
-| AI-03 | Phase 2 | Pending |
-| AI-04 | Phase 3 | Pending |
-| AI-05 | Phase 3 | Pending |
-| INFRA-03 | Phase 4 | Pending |
-| INFRA-04 | Phase 4 | Pending |
-| INFRA-01 | Phase 5 | Pending |
-| INFRA-02 | Phase 5 | Pending |
-| UI-01 | Phase 6 | Pending |
-| UI-02 | Phase 6 | Pending |
-| UI-03 | Phase 6 | Pending |
-| UI-04 | Phase 6 | Pending |
-| UI-05 | Phase 6 | Pending |
+| GRP-01 | Phase 8 | Pending |
+| GRP-02 | Phase 8 | Pending |
+| GRP-03 | Phase 9 | Pending |
+| GRP-04 | Phase 7 | Complete |
+| STOR-01 | Phase 8 | Pending |
+| STOR-02 | Phase 9 | Pending |
+| STOR-03 | Phase 8 | Pending |
+| UI-01 | Phase 10 | Pending |
+| UI-02 | Phase 10 | Pending |
+| UI-03 | Phase 10 | Pending |
+| INT-01 | Phase 9 | Pending |
+| INT-02 | Phase 9 | Pending |
+| INT-03 | Phase 9 | Pending |
+
+*Traceability filled by gsd-roadmapper*
