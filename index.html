@@ -1103,6 +1103,12 @@
             box-shadow: 0 0 0 2px rgba(29, 155, 240, 0.2);
         }
 
+        .event-control-select option {
+            background: #2f3336;
+            color: #e7e9ea;
+            padding: 8px;
+        }
+
         .event-search-input {
             background: #2f3336;
             border: 1px solid #38444d;
@@ -1999,14 +2005,26 @@
                         <tr>
                             <th><input type="checkbox" class="checkbox" onchange="toggleSelectAllEvents(this)"></th>
                             <th></th>
-                            <th>评级</th>
-                            <th>类型</th>
-                            <th>标题</th>
+                            <th onclick="sortEventsBy('max_grade')" style="cursor: pointer;">
+                                评级 ${eventSort.field === 'max_grade' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
+                            <th onclick="sortEventsBy('type')" style="cursor: pointer;">
+                                类型 ${eventSort.field === 'type' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
+                            <th onclick="sortEventsBy('title')" style="cursor: pointer;">
+                                标题 ${eventSort.field === 'title' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
                             <th>摘要</th>
-                            <th>实体</th>
+                            <th onclick="sortEventsBy('entities')" style="cursor: pointer;">
+                                实体 ${eventSort.field === 'entities' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
                             <th>扩展性</th>
-                            <th>更新时间</th>
-                            <th>新闻数</th>
+                            <th onclick="sortEventsBy('end_time')" style="cursor: pointer;">
+                                更新时间 ${eventSort.field === 'end_time' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
+                            <th onclick="sortEventsBy('news_count')" style="cursor: pointer;">
+                                新闻数 ${eventSort.field === 'news_count' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
