@@ -553,6 +553,114 @@
         .match-item:last-child {
             border-bottom: none;
         }
+        /* 事件时间线样式 */
+        .event-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .event-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        .event-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .event-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+        .event-meta {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 14px;
+            color: #718096;
+        }
+        .event-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .event-entities {
+            margin-bottom: 15px;
+        }
+        .timeline {
+            border-left: 2px solid #e2e8f0;
+            padding-left: 20px;
+            margin-left: 10px;
+            position: relative;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #667eea;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 15px;
+            padding: 12px;
+            background: #f7fafc;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .timeline-item:hover {
+            background: #edf2f7;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 16px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #a0aec0;
+            border: 2px solid white;
+            box-shadow: 0 0 0 2px #e2e8f0;
+        }
+        .timeline-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .timeline-item-time {
+            font-size: 12px;
+            color: #718096;
+            font-weight: 500;
+        }
+        .timeline-item-title {
+            font-weight: 500;
+            color: #2d3748;
+            margin-bottom: 4px;
+        }
+        .timeline-item-meta {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 12px;
+            color: #718096;
+        }
     </style>
 </head>
 <body>
@@ -592,7 +700,9 @@
 
         <div class="tabs">
             <button class="tab active" onclick="switchTab('news')">📰 新闻列表</button>
+            <button class="tab" onclick="switchTab('events')">📅 事件分组</button>
             <button class="tab" onclick="switchTab('zeitgeist')">🔥 时代情绪</button>
+            <button class="tab" onclick="switchTab('sources')">📡 源管理</button>
             <button class="tab" onclick="switchTab('status')">📊 系统状态</button>
             <button class="tab" onclick="switchTab('config')">⚙️ 配置管理</button>
         </div>
@@ -601,13 +711,230 @@
         <div class="tab-content active" id="newsTab">
             <div class="card">
                 <div class="card-title">新闻列表</div>
-                <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="搜索标题、摘要、实体..." onkeyup="handleSearch()">
+                <div style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 15px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <input type="text" id="searchInput" placeholder="搜索标题、摘要、实体..." onkeyup="handleSearch()" style="width: 100%; padding: 10px 15px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px;">
+                    </div>
+                    <button class="btn btn-primary" onclick="toggleFilterBar()">
+                        🔍 筛选
+                    </button>
+                    <select id="sortSelect" onchange="handleSortChange()" style="padding: 10px 15px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; background: white;">
+                        <option value="published_at:desc">时间降序</option>
+                        <option value="published_at:asc">时间升序</option>
+                        <option value="score:desc">热度降序</option>
+                        <option value="score:asc">热度升序</option>
+                        <option value="sources_count:desc">来源数降序</option>
+                        <option value="sources_count:asc">来源数升序</option>
+                    </select>
+                </div>
+
+                <!-- 筛选栏 -->
+                <div id="filterBar" class="card" style="display: none; margin-bottom: 15px; padding: 20px;">
+                    <div class="form-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 0;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="domainFilter">领域</label>
+                            <select id="domainFilter" onchange="handleFilterChange()" style="width: 100%; padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+                                <option value="">全部领域</option>
+                                <option value="ai">AI技术</option>
+                                <option value="hardware">硬件</option>
+                                <option value="opensource">开源</option>
+                                <option value="funding">融资</option>
+                                <option value="personnel">人事变动</option>
+                                <option value="opinion">观点评论</option>
+                                <option value="industry">行业政策</option>
+                                <option value="safety">安全合规</option>
+                                <option value="research">学术研究</option>
+                                <option value="financial">财务数据</option>
+                                <option value="breaking">突发新闻</option>
+                                <option value="tool">工具发布</option>
+                                <option value="society">社会影响</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="scoreFilter">热度评级</label>
+                            <select id="scoreFilter" onchange="handleFilterChange()" style="width: 100%; padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+                                <option value="">全部评级</option>
+                                <option value="90">>=90 (S级)</option>
+                                <option value="85">>=85 (A+级)</option>
+                                <option value="75">>=75 (A级)</option>
+                                <option value="65">>=65 (B级)</option>
+                                <option value="0"><65 (C级)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="timeFilter">时间范围</label>
+                            <select id="timeFilter" onchange="handleTimeFilterChange()" style="width: 100%; padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+                                <option value="">全部时间</option>
+                                <option value="today">今天</option>
+                                <option value="3days">近3天</option>
+                                <option value="7days">近7天</option>
+                                <option value="30days">近30天</option>
+                                <option value="custom">自定义</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label>评级多选</label>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap; padding-top: 8px;">
+                                <label style="display: flex; align-items: center; gap: 4px; font-size: 14px; cursor: pointer;">
+                                    <input type="checkbox" value="S" onchange="handleFilterChange()"> S
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 4px; font-size: 14px; cursor: pointer;">
+                                    <input type="checkbox" value="A+" onchange="handleFilterChange()"> A+
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 4px; font-size: 14px; cursor: pointer;">
+                                    <input type="checkbox" value="A" onchange="handleFilterChange()"> A
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 4px; font-size: 14px; cursor: pointer;">
+                                    <input type="checkbox" value="B" onchange="handleFilterChange()"> B
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 4px; font-size: 14px; cursor: pointer;">
+                                    <input type="checkbox" value="C" onchange="handleFilterChange()"> C
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 自定义时间范围 -->
+                    <div id="customTimeRange" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #e2e8f0;">
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="startTime">开始时间</label>
+                                <input type="date" id="startTime" onchange="handleFilterChange()" style="padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="endTime">结束时间</label>
+                                <input type="date" id="endTime" onchange="handleFilterChange()" style="padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="table-container" id="newsTableContainer">
                     <div class="loading">加载中...</div>
                 </div>
                 <div class="pagination" id="pagination">
+                    <!-- 动态生成 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 事件分组 Tab -->
+        <div class="tab-content" id="eventsTab">
+            <div class="card">
+                <div class="card-title">
+                    事件分组
+                    <div style="float: right; margin-top: -5px;">
+                        <button class="btn btn-sm" id="viewToggleBtn" onclick="toggleViewMode()">
+                            切换到列表视图
+                        </button>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 15px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <input type="text" id="eventSearchInput" placeholder="搜索事件标题、相关实体..." onkeyup="handleEventSearch()" style="width: 100%; padding: 10px 15px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px;">
+                    </div>
+                    <button class="btn btn-primary" onclick="toggleEventFilterBar()">
+                        🔍 筛选
+                    </button>
+                    <select id="eventSortSelect" onchange="handleEventSortChange()" style="padding: 10px 15px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; background: white;">
+                        <option value="latest_news_at:desc">最新动态降序</option>
+                        <option value="latest_news_at:asc">最新动态升序</option>
+                        <option value="score:desc">热度降序</option>
+                        <option value="score:asc">热度升序</option>
+                        <option value="news_count:desc">新闻数量降序</option>
+                        <option value="news_count:asc">新闻数量升序</option>
+                    </select>
+                </div>
+
+                <!-- 筛选栏 -->
+                <div id="eventFilterBar" class="card" style="display: none; margin-bottom: 15px; padding: 20px;">
+                    <div class="form-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 0;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="eventDomainFilter">领域</label>
+                            <select id="eventDomainFilter" onchange="handleEventFilterChange()" style="width: 100%; padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+                                <option value="">全部领域</option>
+                                <option value="ai">AI技术</option>
+                                <option value="hardware">硬件</option>
+                                <option value="opensource">开源</option>
+                                <option value="funding">融资</option>
+                                <option value="personnel">人事变动</option>
+                                <option value="opinion">观点评论</option>
+                                <option value="industry">行业政策</option>
+                                <option value="safety">安全合规</option>
+                                <option value="research">学术研究</option>
+                                <option value="financial">财务数据</option>
+                                <option value="breaking">突发新闻</option>
+                                <option value="tool">工具发布</option>
+                                <option value="society">社会影响</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="eventScoreFilter">热度评级</label>
+                            <select id="eventScoreFilter" onchange="handleEventFilterChange()" style="width: 100%; padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+                                <option value="">全部评级</option>
+                                <option value="90">>=90 (S级)</option>
+                                <option value="85">>=85 (A+级)</option>
+                                <option value="75">>=75 (A级)</option>
+                                <option value="65">>=65 (B级)</option>
+                                <option value="0"><65 (C级)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="eventTimeFilter">时间范围</label>
+                            <select id="eventTimeFilter" onchange="handleEventTimeFilterChange()" style="width: 100%; padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+                                <option value="">全部时间</option>
+                                <option value="today">今天</option>
+                                <option value="3days">近3天</option>
+                                <option value="7days">近7天</option>
+                                <option value="30days">近30天</option>
+                                <option value="custom">自定义</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label>评级多选</label>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap; padding-top: 8px;">
+                                <label style="display: flex; align-items: center; gap: 4px; font-size: 14px; cursor: pointer;">
+                                    <input type="checkbox" value="S" onchange="handleEventFilterChange()"> S
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 4px; font-size: 14px; cursor: pointer;">
+                                    <input type="checkbox" value="A+" onchange="handleEventFilterChange()"> A+
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 4px; font-size: 14px; cursor: pointer;">
+                                    <input type="checkbox" value="A" onchange="handleEventFilterChange()"> A
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 4px; font-size: 14px; cursor: pointer;">
+                                    <input type="checkbox" value="B" onchange="handleEventFilterChange()"> B
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 4px; font-size: 14px; cursor: pointer;">
+                                    <input type="checkbox" value="C" onchange="handleEventFilterChange()"> C
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 自定义时间范围 -->
+                    <div id="eventCustomTimeRange" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #e2e8f0;">
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="eventStartTime">开始时间</label>
+                                <input type="date" id="eventStartTime" onchange="handleEventFilterChange()" style="padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="eventEndTime">结束时间</label>
+                                <input type="date" id="eventEndTime" onchange="handleEventFilterChange()" style="padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="eventsContainer">
+                    <div class="loading">加载中...</div>
+                </div>
+                <div class="pagination" id="eventPagination">
                     <!-- 动态生成 -->
                 </div>
             </div>
@@ -667,6 +994,77 @@
                 <div id="configForm">
                     <div class="loading">加载中...</div>
                 </div>
+            </div>
+        </div>
+
+        <!-- 源管理 Tab -->
+        <div class="tab-content" id="sourcesTab">
+            <div class="card">
+                <div class="card-title">
+                    RSS源管理
+                    <button class="btn btn-primary" style="float: right; margin-top: -5px;" onclick="openSourceModal()">
+                        ➕ 新增源
+                    </button>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="sourceSearchInput" placeholder="搜索源名称、URL..." onkeyup="handleSourceSearch()">
+                </div>
+                <div class="table-container" id="sourcesTableContainer">
+                    <div class="loading">加载中...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 源编辑模态框 -->
+    <div class="modal" id="sourceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="sourceModalTitle">新增RSS源</div>
+                <button class="modal-close" onclick="closeSourceModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="sourceForm">
+                    <input type="hidden" id="source_id">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="source_name">源名称 *</label>
+                            <input type="text" id="source_name" required placeholder="例如：Twitter、Inoreader">
+                        </div>
+                        <div class="form-group">
+                            <label for="source_url">源地址 *</label>
+                            <input type="text" id="source_url" required placeholder="RSS feed URL或API地址">
+                        </div>
+                        <div class="form-group">
+                            <label for="source_type">源类型 *</label>
+                            <select id="source_type" required>
+                                <option value="rss">普通RSS</option>
+                                <option value="api">通用API</option>
+                                <option value="twitter">Twitter</option>
+                                <option value="inoreader">Inoreader</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="source_weight">权重系数</label>
+                            <input type="number" id="source_weight" step="0.1" min="0.1" max="5.0" value="1.0">
+                        </div>
+                        <div class="form-group">
+                            <label for="source_enabled">状态</label>
+                            <select id="source_enabled">
+                                <option value="true">启用</option>
+                                <option value="false">禁用</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="source_config">高级配置 (JSON格式，可选)</label>
+                        <textarea id="source_config" placeholder='{"client_id": "xxx", "client_secret": "xxx"}' rows="4"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeSourceModal()">取消</button>
+                <button class="btn btn-primary" onclick="saveSource()">保存</button>
             </div>
         </div>
     </div>
@@ -762,6 +1160,66 @@
         </div>
     </div>
 
+    <!-- 评分反馈模态框 -->
+    <div class="modal" id="feedbackModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">修正新闻评分</div>
+                <button class="modal-close" onclick="closeFeedbackModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="feedbackForm">
+                    <input type="hidden" id="feedback_news_id">
+                    <input type="hidden" id="feedback_original_grade">
+                    <input type="hidden" id="feedback_original_score">
+                    <input type="hidden" id="feedback_entities">
+
+                    <div class="form-group">
+                        <label>新闻标题</label>
+                        <div id="feedback_news_title" style="color: #718096; font-size: 14px; padding: 10px; background: #f7fafc; border-radius: 6px;"></div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>原始分级</label>
+                            <div id="feedback_original_grade_display" style="padding: 10px; background: #f7fafc; border-radius: 6px; font-weight: 600;"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>原始评分</label>
+                            <div id="feedback_original_score_display" style="padding: 10px; background: #f7fafc; border-radius: 6px; font-weight: 600;"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="feedback_corrected_grade">修正后分级 *</label>
+                            <select id="feedback_corrected_grade" required>
+                                <option value="S">S (90-100)</option>
+                                <option value="A+">A+ (85-89)</option>
+                                <option value="A">A (75-84)</option>
+                                <option value="B">B (65-74)</option>
+                                <option value="C">C (<65, 过滤)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedback_corrected_score">修正后评分 * (0-100)</label>
+                            <input type="number" id="feedback_corrected_score" min="0" max="100" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback_reason">修正原因 (可选)</label>
+                        <textarea id="feedback_reason" placeholder="请说明修正原因，帮助AI提升评分准确性..." rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeFeedbackModal()">取消</button>
+                <button class="btn btn-primary" onclick="submitFeedback()">提交修正</button>
+            </div>
+        </div>
+    </div>
+
     <!-- 匹配测试模态框 -->
     <div class="modal" id="testModal">
         <div class="modal-content">
@@ -805,6 +1263,10 @@
         let currentTab = 'news';
         let currentEntities = [];
         let editingKeyword = null;
+        // 筛选排序状态
+        let currentFilter = {};
+        let currentSort = 'published_at:desc';
+        let filterBarVisible = false;
 
         function switchTab(tab) {
             currentTab = tab;
@@ -820,6 +1282,8 @@
                 loadConfig();
             } else if (tab === 'zeitgeist') {
                 loadZeitgeist();
+            } else if (tab === 'sources') {
+                loadSources();
             }
         }
 
@@ -831,16 +1295,150 @@
             setTimeout(() => toast.classList.remove('show'), 3000);
         }
 
+        // 筛选栏切换
+        function toggleFilterBar() {
+            filterBarVisible = !filterBarVisible;
+            const filterBar = document.getElementById('filterBar');
+            filterBar.style.display = filterBarVisible ? 'block' : 'none';
+        }
+
+        // 处理时间筛选变化
+        function handleTimeFilterChange() {
+            const timeFilter = document.getElementById('timeFilter').value;
+            const customTimeRange = document.getElementById('customTimeRange');
+
+            if (timeFilter === 'custom') {
+                customTimeRange.style.display = 'block';
+            } else {
+                customTimeRange.style.display = 'none';
+                // 清空自定义时间
+                document.getElementById('startTime').value = '';
+                document.getElementById('endTime').value = '';
+            }
+
+            handleFilterChange();
+        }
+
+        // 收集筛选参数
+        function collectFilters() {
+            const filters = {};
+
+            // 领域筛选
+            const domain = document.getElementById('domainFilter').value;
+            if (domain) {
+                filters.domain = domain;
+            }
+
+            // 热度筛选
+            const scoreFilter = document.getElementById('scoreFilter').value;
+            if (scoreFilter) {
+                const scoreMin = parseInt(scoreFilter);
+                filters.score_min = scoreMin;
+                if (scoreMin === 0) {
+                    filters.score_max = 64;
+                }
+            }
+
+            // 时间筛选
+            const timeFilter = document.getElementById('timeFilter').value;
+            const now = new Date();
+            if (timeFilter === 'today') {
+                const today = now.toISOString().split('T')[0];
+                filters.start_time = today + 'T00:00:00';
+                filters.end_time = today + 'T23:59:59';
+            } else if (timeFilter === '3days') {
+                const threeDaysAgo = new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+                filters.start_time = threeDaysAgo + 'T00:00:00';
+            } else if (timeFilter === '7days') {
+                const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+                filters.start_time = sevenDaysAgo + 'T00:00:00';
+            } else if (timeFilter === '30days') {
+                const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+                filters.start_time = thirtyDaysAgo + 'T00:00:00';
+            } else if (timeFilter === 'custom') {
+                const startTime = document.getElementById('startTime').value;
+                const endTime = document.getElementById('endTime').value;
+                if (startTime) {
+                    filters.start_time = startTime + 'T00:00:00';
+                }
+                if (endTime) {
+                    filters.end_time = endTime + 'T23:59:59';
+                }
+            }
+
+            // 评级筛选
+            const ratingCheckboxes = document.querySelectorAll('#filterBar input[type="checkbox"]:checked');
+            const ratings = Array.from(ratingCheckboxes).map(cb => cb.value);
+            if (ratings.length > 0) {
+                filters.ratings = ratings;
+            }
+
+            return filters;
+        }
+
+        // 处理筛选变化
+        function handleFilterChange() {
+            currentFilter = collectFilters();
+            currentPage = 1; // 筛选变化后回到第一页
+            loadNews(currentPage, currentSearch, currentFilter, currentSort);
+        }
+
+        // 处理排序变化
+        function handleSortChange() {
+            currentSort = document.getElementById('sortSelect').value;
+            loadNews(currentPage, currentSearch, currentFilter, currentSort);
+        }
+
+        // 处理表头点击排序
+        function handleHeaderSort(field) {
+            let sortField = field;
+            // 映射字段名
+            if (field === 'rating') {
+                sortField = 'score'; // 评级对应score字段排序
+            }
+
+            // 如果点击的是当前排序字段，切换升降序；否则默认降序
+            if (currentSort.startsWith(sortField + ':')) {
+                const currentOrder = currentSort.split(':')[1];
+                const newOrder = currentOrder === 'desc' ? 'asc' : 'desc';
+                currentSort = `${sortField}:${newOrder}`;
+            } else {
+                currentSort = `${sortField}:desc`;
+            }
+
+            // 更新排序下拉框的值（保持同步）
+            document.getElementById('sortSelect').value = currentSort;
+
+            // 重新加载数据
+            loadNews(currentPage, currentSearch, currentFilter, currentSort);
+        }
+
         // 加载新闻数据
-        async function loadNews(page = 1, search = '') {
+        async function loadNews(page = 1, search = '', filter = null, sort = null) {
             currentPage = page;
             currentSearch = search;
+            if (filter !== null) currentFilter = filter;
+            if (sort !== null) currentSort = sort;
 
             const container = document.getElementById('newsTableContainer');
             container.innerHTML = '<div class="loading">加载中...</div>';
 
             try {
-                const response = await fetch(`/api/news?page=${page}&page_size=20&search=${encodeURIComponent(search)}`);
+                // 构建查询参数
+                const params = new URLSearchParams();
+                params.append('page', page);
+                params.append('page_size', 20);
+                if (search) {
+                    params.append('search', encodeURIComponent(search));
+                }
+                if (Object.keys(currentFilter).length > 0) {
+                    params.append('filter', JSON.stringify(currentFilter));
+                }
+                if (currentSort) {
+                    params.append('sort', currentSort);
+                }
+
+                const response = await fetch(`/api/news?${params.toString()}`);
                 const result = await response.json();
 
                 if (result.code === 0) {
@@ -856,12 +1454,19 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th>评级</th>
+                                    <th onclick="handleHeaderSort('rating')" style="cursor: pointer; user-select: none;">
+                                        评级 ${currentSort.startsWith('rating') ? (currentSort.endsWith(':desc') ? '↓' : '↑') : ''}
+                                    </th>
                                     <th>类型</th>
                                     <th>标题</th>
                                     <th>实体</th>
-                                    <th>来源数</th>
-                                    <th>发布时间</th>
+                                    <th onclick="handleHeaderSort('sources_count')" style="cursor: pointer; user-select: none;">
+                                        来源数 ${currentSort.startsWith('sources_count') ? (currentSort.endsWith(':desc') ? '↓' : '↑') : ''}
+                                    </th>
+                                    <th onclick="handleHeaderSort('published_at')" style="cursor: pointer; user-select: none;">
+                                        发布时间 ${currentSort.startsWith('published_at') ? (currentSort.endsWith(':desc') ? '↓' : '↑') : ''}
+                                    </th>
+                                    <th>操作</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -881,6 +1486,9 @@
                                 <td>${entities}</td>
                                 <td>${item.sources || 0}</td>
                                 <td style="white-space: nowrap;">${pubTime}</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary" onclick="openFeedbackModal('${item.id}', '${item.rating || 'C'}', ${item.score || 0}, '${item.title.replace(/'/g, "&#39;")}', ${JSON.stringify(item.entities || []).replace(/"/g, "'")})">修正评分</button>
+                                </td>
                             </tr>
                         `;
                     });
@@ -908,16 +1516,16 @@
             }
 
             let html = '';
-            html += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="loadNews(${currentPage - 1}, currentSearch)">上一页</button>`;
+            html += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="loadNews(${currentPage - 1}, currentSearch, currentFilter, currentSort)">上一页</button>`;
 
             const start = Math.max(1, currentPage - 2);
             const end = Math.min(totalPages, currentPage + 2);
 
             for (let i = start; i <= end; i++) {
-                html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="loadNews(${i}, currentSearch)">${i}</button>`;
+                html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="loadNews(${i}, currentSearch, currentFilter, currentSort)">${i}</button>`;
             }
 
-            html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="loadNews(${currentPage + 1}, currentSearch)">下一页</button>`;
+            html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="loadNews(${currentPage + 1}, currentSearch, currentFilter, currentSort)">下一页</button>`;
             html += `<span style="margin: 0 10px; color: #718096; font-size: 14px;">共 ${total} 条，${totalPages} 页</span>`;
 
             pagination.innerHTML = html;
@@ -925,7 +1533,7 @@
 
         function handleSearch() {
             const search = document.getElementById('searchInput').value.trim();
-            loadNews(1, search);
+            loadNews(1, search, currentFilter, currentSort);
         }
 
         // 触发同步
@@ -945,7 +1553,7 @@
                     showToast('同步成功!', 'success');
                     // 重新加载数据
                     if (currentTab === 'news') {
-                        loadNews(currentPage, currentSearch);
+                        loadNews(currentPage, currentSearch, currentFilter, currentSort);
                     }
                     if (result.output) {
                         // 显示输出日志
@@ -1078,7 +1686,7 @@
 
         // 页面加载完成后初始化
         document.addEventListener('DOMContentLoaded', function() {
-            loadNews();
+            loadNews(1, '', currentFilter, currentSort);
 
             // 实体输入框回车事件
             document.getElementById('entityInput').addEventListener('keypress', function(e) {
@@ -1439,6 +2047,307 @@
                 }
             } catch (e) {
                 showToast(`测试失败: ${e.message}`, 'error');
+            }
+        }
+
+        // 评分反馈功能
+        let currentFeedbackEntities = [];
+
+        function openFeedbackModal(newsId, originalGrade, originalScore, title, entities) {
+            currentFeedbackEntities = entities;
+            // 填充表单
+            document.getElementById('feedback_news_id').value = newsId;
+            document.getElementById('feedback_original_grade').value = originalGrade;
+            document.getElementById('feedback_original_score').value = originalScore;
+            document.getElementById('feedback_news_title').textContent = title;
+            document.getElementById('feedback_original_grade_display').textContent = originalGrade;
+            document.getElementById('feedback_original_score_display').textContent = originalScore + ' 分';
+            document.getElementById('feedback_corrected_grade').value = originalGrade;
+            document.getElementById('feedback_corrected_score').value = originalScore;
+            document.getElementById('feedback_reason').value = '';
+
+            // 显示模态框
+            document.getElementById('feedbackModal').classList.add('show');
+        }
+
+        function closeFeedbackModal() {
+            document.getElementById('feedbackModal').classList.remove('show');
+        }
+
+        async function submitFeedback() {
+            const newsId = document.getElementById('feedback_news_id').value;
+            const originalGrade = document.getElementById('feedback_original_grade').value;
+            const originalScore = parseInt(document.getElementById('feedback_original_score').value);
+            const correctedGrade = document.getElementById('feedback_corrected_grade').value;
+            const correctedScore = parseInt(document.getElementById('feedback_corrected_score').value);
+            const reason = document.getElementById('feedback_reason').value;
+
+            // 验证
+            if (correctedScore < 0 || correctedScore > 100) {
+                showToast('评分必须在0-100之间', 'error');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/feedback', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        news_id: newsId,
+                        original_grade: originalGrade,
+                        original_score: originalScore,
+                        corrected_grade: correctedGrade,
+                        corrected_score: correctedScore,
+                        reason: reason,
+                        entities: currentFeedbackEntities
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.code === 0) {
+                    showToast('反馈提交成功，将在下次发布时生效', 'success');
+                    closeFeedbackModal();
+                    // 刷新新闻列表
+                    loadNews(currentPage, currentSearch, currentFilter, currentSort);
+                } else {
+                    showToast(`提交失败: ${result.message}`, 'error');
+                }
+            } catch (e) {
+                showToast(`提交失败: ${e.message}`, 'error');
+            }
+        }
+
+        // 源管理功能
+        let currentSourceSearch = '';
+        let editingSourceId = null;
+
+        // 加载源列表
+        async function loadSources(search = '') {
+            currentSourceSearch = search;
+            const container = document.getElementById('sourcesTableContainer');
+            container.innerHTML = '<div class="loading">加载中...</div>';
+
+            try {
+                const response = await fetch(`/api/sources?include_disabled=true&search=${encodeURIComponent(search)}`);
+                const result = await response.json();
+
+                if (result.code === 0) {
+                    const sources = result.data;
+                    if (sources.length === 0) {
+                        container.innerHTML = '<div class="empty-state">暂无源数据</div>';
+                        return;
+                    }
+
+                    // 渲染表格
+                    let html = `
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>类型</th>
+                                    <th>URL</th>
+                                    <th>权重</th>
+                                    <th>状态</th>
+                                    <th>最后抓取</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                    `;
+
+                    sources.forEach(item => {
+                        const statusClass = item.enabled ? 'tag-active' : 'tag-inactive';
+                        const statusText = item.enabled ? '启用' : '禁用';
+                        const lastFetched = item.last_fetched ? new Date(item.last_fetched).toLocaleString('zh-CN') : '--';
+
+                        html += `
+                            <tr>
+                                <td style="font-weight: 600;">${item.name}</td>
+                                <td><span class="tag">${item.type}</span></td>
+                                <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${item.url}">${item.url}</td>
+                                <td>${item.weight}</td>
+                                <td><span class="tag ${statusClass}">${statusText}</span></td>
+                                <td style="white-space: nowrap;">${lastFetched}</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn btn-sm btn-primary" onclick="openSourceModal('${item.id}')">编辑</button>
+                                        <button class="btn btn-sm btn-danger" onclick="deleteSource('${item.id}', '${item.name}')">删除</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        `;
+                    });
+
+                    html += '</tbody></table>';
+                    container.innerHTML = html;
+                } else {
+                    container.innerHTML = `<div class="empty-state">加载失败: ${result.message}</div>`;
+                }
+            } catch (e) {
+                container.innerHTML = `<div class="empty-state">加载失败: ${e.message}</div>`;
+            }
+        }
+
+        // 搜索源
+        function handleSourceSearch() {
+            const search = document.getElementById('sourceSearchInput').value.trim();
+            loadSources(search);
+        }
+
+        // 打开新增/编辑源模态框
+        function openSourceModal(sourceId = null) {
+            editingSourceId = sourceId;
+            const modal = document.getElementById('sourceModal');
+            const title = document.getElementById('sourceModalTitle');
+            const form = document.getElementById('sourceForm');
+
+            // 重置表单
+            form.reset();
+            document.getElementById('source_id').value = '';
+
+            if (sourceId) {
+                title.textContent = '编辑RSS源';
+                // 加载源数据
+                loadSourceDetail(sourceId);
+            } else {
+                title.textContent = '新增RSS源';
+                document.getElementById('source_weight').value = '1.0';
+                document.getElementById('source_enabled').value = 'true';
+            }
+
+            modal.classList.add('show');
+        }
+
+        // 关闭源模态框
+        function closeSourceModal() {
+            const modal = document.getElementById('sourceModal');
+            modal.classList.remove('show');
+            editingSourceId = null;
+        }
+
+        // 加载源详情
+        async function loadSourceDetail(sourceId) {
+            try {
+                // 先获取所有源，找到对应ID的源
+                const response = await fetch('/api/sources?include_disabled=true');
+                const result = await response.json();
+
+                if (result.code === 0) {
+                    const source = result.data.find(s => s.id === sourceId);
+                    if (source) {
+                        document.getElementById('source_id').value = source.id;
+                        document.getElementById('source_name').value = source.name;
+                        document.getElementById('source_url').value = source.url;
+                        document.getElementById('source_type').value = source.type;
+                        document.getElementById('source_weight').value = source.weight;
+                        document.getElementById('source_enabled').value = source.enabled.toString();
+                        document.getElementById('source_config').value = source.config ? JSON.stringify(source.config, null, 2) : '';
+                    } else {
+                        showToast('源不存在', 'error');
+                        closeSourceModal();
+                    }
+                } else {
+                    showToast(`加载失败: ${result.message}`, 'error');
+                }
+            } catch (e) {
+                showToast(`加载失败: ${e.message}`, 'error');
+            }
+        }
+
+        // 保存源
+        async function saveSource() {
+            const name = document.getElementById('source_name').value.trim();
+            const url = document.getElementById('source_url').value.trim();
+            const type = document.getElementById('source_type').value;
+            const weight = parseFloat(document.getElementById('source_weight').value);
+            const enabled = document.getElementById('source_enabled').value === 'true';
+            const configStr = document.getElementById('source_config').value.trim();
+
+            if (!name || !url || !type) {
+                showToast('请填写必填字段', 'error');
+                return;
+            }
+
+            // 解析配置
+            let config = {};
+            if (configStr) {
+                try {
+                    config = JSON.parse(configStr);
+                } catch (e) {
+                    showToast('配置格式错误，请输入有效的JSON', 'error');
+                    return;
+                }
+            }
+
+            const data = {
+                name: name,
+                url: url,
+                type: type,
+                weight: weight,
+                enabled: enabled,
+                config: config
+            };
+
+            try {
+                let response;
+                if (editingSourceId) {
+                    // 更新
+                    response = await fetch(`/api/sources/${editingSourceId}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    });
+                } else {
+                    // 创建
+                    response = await fetch('/api/sources', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    });
+                }
+
+                const result = await response.json();
+
+                if (result.code === 0) {
+                    showToast(editingSourceId ? '更新成功' : '创建成功', 'success');
+                    closeSourceModal();
+                    loadSources(currentSourceSearch);
+                } else {
+                    showToast(`保存失败: ${result.message}`, 'error');
+                }
+            } catch (e) {
+                showToast(`保存失败: ${e.message}`, 'error');
+            }
+        }
+
+        // 删除源
+        async function deleteSource(sourceId, sourceName) {
+            if (!confirm(`确定要删除源 "${sourceName}" 吗？此操作不可恢复。`)) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/sources/${sourceId}`, {
+                    method: 'DELETE'
+                });
+
+                const result = await response.json();
+
+                if (result.code === 0) {
+                    showToast('删除成功', 'success');
+                    loadSources(currentSourceSearch);
+                } else {
+                    showToast(`删除失败: ${result.message}`, 'error');
+                }
+            } catch (e) {
+                showToast(`删除失败: ${e.message}`, 'error');
             }
         }
     </script>

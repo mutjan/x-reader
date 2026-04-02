@@ -79,8 +79,8 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 10-01-PLAN.md — Test scaffolding for frontend event functionality
-- [ ] 10-02-PLAN.md — Admin backend /api/events endpoint implementation
+- [x] 10-01-PLAN.md — Test scaffolding for frontend event functionality
+- [x] 10-02-PLAN.md — Admin backend /api/events endpoint implementation
 - [ ] 10-03-PLAN.md — Admin frontend event timeline view
 - [ ] 10-04-PLAN.md — Public frontend event data integration
 - [ ] 10-05-PLAN.md — Public frontend event timeline enhancement
@@ -98,4 +98,4 @@ Plans:
 | 7. Cleanup Existing Merge Logic | 1/1 | Completed | 2026-04-02 |
 | 8. EventGrouper Core Component Development | 4/4 | Completed | 2026-04-02 |
 | 9. Pipeline Integration & Publishing Workflow | 6/6 | Completed | 2026-04-02 |
-| 10. Frontend Event Timeline Display | 0/6 | Not started | -
+| 10. Frontend Event Timeline Display | 0/6 | Not started |

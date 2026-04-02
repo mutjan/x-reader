@@ -34,9 +34,9 @@
 
 前端展示需求
 
-- [ ] **UI-01**: 事件时间线展示 — 同一事件组内的多条新闻按发布时间排序聚合展示
-- [ ] **UI-02**: 保持独立新闻浏览 — 单条新闻仍然可以独立浏览，不影响原有用户体验
-- [ ] **UI-03**: 过滤排序兼容 — 现有过滤排序功能对事件分组正常工作
+- [x] **UI-01**: 事件时间线展示 — 同一事件组内的多条新闻按发布时间排序聚合展示
+- [x] **UI-02**: 保持独立新闻浏览 — 单条新闻仍然可以独立浏览，不影响原有用户体验
+- [x] **UI-03**: 过滤排序兼容 — 现有过滤排序功能对事件分组正常工作
 
 ---
 
@@ -77,9 +77,9 @@
 | STOR-01 | Phase 8 | Pending |
 | STOR-02 | Phase 9 | Pending |
 | STOR-03 | Phase 8 | Pending |
-| UI-01 | Phase 10 | Pending |
-| UI-02 | Phase 10 | Pending |
-| UI-03 | Phase 10 | Pending |
+| UI-01 | Phase 10 | Complete |
+| UI-02 | Phase 10 | Complete |
+| UI-03 | Phase 10 | Complete |
 | INT-01 | Phase 9 | Pending |
 | INT-02 | Phase 9 | Pending |
 | INT-03 | Phase 9 | Pending |
