@@ -1989,9 +1989,13 @@
                         <label class="event-control-label">排序:</label>
                         <select class="event-control-select" onchange="sortEventsBy(event.target.value)">
                             <option value="max_score" ${eventSort.field === 'max_score' ? 'selected' : ''}>评分高低</option>
-                            <option value="news_count" ${eventSort.field === 'news_count' ? 'selected' : ''}>新闻数量</option>
-                            <option value="start_time" ${eventSort.field === 'start_time' ? 'selected' : ''}>事件时间</option>
+                            <option value="max_grade" ${eventSort.field === 'max_grade' ? 'selected' : ''}>评级高低</option>
+                            <option value="type" ${eventSort.field === 'type' ? 'selected' : ''}>新闻类型</option>
                             <option value="title" ${eventSort.field === 'title' ? 'selected' : ''}>事件标题</option>
+                            <option value="entities" ${eventSort.field === 'entities' ? 'selected' : ''}>实体数量</option>
+                            <option value="end_time" ${eventSort.field === 'end_time' ? 'selected' : ''}>更新时间</option>
+                            <option value="news_count" ${eventSort.field === 'news_count' ? 'selected' : ''}>新闻数量</option>
+                            <option value="start_time" ${eventSort.field === 'start_time' ? 'selected' : ''}>开始时间</option>
                         </select>
                     </div>
 
