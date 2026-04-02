@@ -935,6 +935,201 @@
         .hidden {
             display: none;
         }
+
+        /* 事件时间线样式 */
+        .event-timeline-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .event-card {
+            background: #16181c;
+            border: 1px solid #2f3336;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .event-header {
+            padding: 16px;
+            border-bottom: 1px solid #2f3336;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.2s ease;
+        }
+
+        .event-header:hover {
+            background: rgba(29, 155, 240, 0.05);
+        }
+
+        .event-header-top {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .event-toggle {
+            font-size: 12px;
+            color: #8899a6;
+            margin-left: auto;
+            transition: transform 0.2s ease;
+        }
+
+        .event-toggle.collapsed {
+            transform: rotate(-90deg);
+        }
+
+        .event-title {
+            font-size: 16px;
+            font-weight: 600;
+            flex: 1;
+        }
+
+        .event-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 12px;
+            color: #8899a6;
+            flex-wrap: wrap;
+        }
+
+        .event-entities {
+            margin-top: 8px;
+        }
+
+        .event-content {
+            max-height: 2000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            opacity: 1;
+        }
+
+        .event-content.collapsed {
+            max-height: 0;
+            opacity: 0;
+        }
+
+        .timeline {
+            padding: 12px 0 12px 40px;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 16px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #2f3336;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 8px 0;
+            border-bottom: 1px solid #2f3336;
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -32px;
+            top: 12px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #1d9bf0;
+            border: 3px solid #16181c;
+            z-index: 1;
+        }
+
+        .timeline-time {
+            font-size: 11px;
+            color: #8899a6;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .timeline-content {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .timeline-title {
+            color: #1d9bf0;
+            font-size: 13px;
+            text-decoration: none;
+            flex: 1;
+        }
+
+        .timeline-title:hover {
+            text-decoration: underline;
+        }
+
+        /* 事件筛选和排序控件 */
+        .event-controls {
+            margin-bottom: 20px;
+            padding: 12px;
+            background: #16181c;
+            border: 1px solid #2f3336;
+            border-radius: 8px;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .event-control-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .event-control-label {
+            font-size: 12px;
+            color: #8899a6;
+            white-space: nowrap;
+        }
+
+        .event-control-select {
+            background: #2f3336;
+            border: 1px solid #38444d;
+            color: #e7e9ea;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .event-search-input {
+            background: #2f3336;
+            border: 1px solid #38444d;
+            color: #e7e9ea;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            min-width: 200px;
+        }
+
+        .event-toggle-all-btn {
+            background: #2f3336;
+            border: 1px solid #38444d;
+            color: #e7e9ea;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+
+        .event-toggle-all-btn:hover {
+            background: #38444d;
+        }
         
         /* 手机端优化 */
         @media (max-width: 768px) {
@@ -1084,6 +1279,38 @@
             }
             .zeitgeist-title {
                 font-size: 12px;
+            }
+
+            /* 事件时间线移动端 */
+            .timeline {
+                padding-left: 30px;
+            }
+
+            .timeline::before {
+                left: 10px;
+            }
+
+            .timeline-marker {
+                left: -26px;
+            }
+
+            .event-controls {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+
+            .event-control-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .event-search-input {
+                min-width: auto;
+            }
+
+            .event-toggle-all-btn {
+                margin-left: 0;
             }
         }
     </style>
@@ -1314,6 +1541,16 @@
         let selectedItems = new Set();
         let selectedEntity = null;
 
+        // 事件视图状态
+        let eventFilters = {
+            search: '',
+            minScore: 0,
+            minNewsCount: 0,
+            entity: null
+        };
+        let eventSort = { field: 'max_score', order: 'desc' };
+        let collapsedEvents = new Set();
+
         // ==================== 标签切换 ====================
         function renderTabs() {
             // 只有存在事件时才显示事件标签
@@ -1342,7 +1579,7 @@
             } else {
                 document.getElementById('dateToolbarSection').style.display = 'none';
                 document.getElementById('actionsToolbarSection').style.display = 'none';
-                document.getElementById('sortToolbarSection').style.display = 'none';
+                document.getElementById('sortToolbarSection').style.display = 'flex';
                 document.getElementById('news-content').style.display = 'none';
                 document.getElementById('events-content').style.display = 'block';
                 renderEvents();
@@ -1358,6 +1595,130 @@
         }
 
         // ==================== 事件展示功能 ====================
+        function getFilteredAndSortedEvents() {
+            let filtered = [...EVENTS];
+
+            // 应用筛选
+            if (eventFilters.search) {
+                const searchTerm = eventFilters.search.toLowerCase();
+                filtered = filtered.filter(event => {
+                    // 搜索事件标题
+                    if (event.title.toLowerCase().includes(searchTerm)) return true;
+                    // 搜索实体
+                    if (event.entities.some(e => e.toLowerCase().includes(searchTerm))) return true;
+                    // 搜索新闻标题
+                    if (event.news_list.some(n => n.title.toLowerCase().includes(searchTerm))) return true;
+                    return false;
+                });
+            }
+
+            // 最低评分筛选
+            if (eventFilters.minScore > 0) {
+                filtered = filtered.filter(event => event.max_score >= eventFilters.minScore);
+            }
+
+            // 最少新闻数量筛选
+            if (eventFilters.minNewsCount > 0) {
+                filtered = filtered.filter(event => event.news_count >= eventFilters.minNewsCount);
+            }
+
+            // 实体筛选
+            if (eventFilters.entity) {
+                filtered = filtered.filter(event => event.entities.includes(eventFilters.entity));
+            }
+
+            // 应用排序
+            filtered.sort((a, b) => {
+                let valA, valB;
+                switch (eventSort.field) {
+                    case 'max_score':
+                        valA = a.max_score;
+                        valB = b.max_score;
+                        break;
+                    case 'news_count':
+                        valA = a.news_count;
+                        valB = b.news_count;
+                        break;
+                    case 'start_time':
+                        valA = a.start_time;
+                        valB = b.start_time;
+                        break;
+                    case 'title':
+                        valA = a.title.toLowerCase();
+                        valB = b.title.toLowerCase();
+                        break;
+                    default:
+                        valA = a.max_score;
+                        valB = b.max_score;
+                }
+
+                if (typeof valA === 'string' && typeof valB === 'string') {
+                    return eventSort.order === 'asc'
+                        ? valA.localeCompare(valB)
+                        : valB.localeCompare(valA);
+                } else {
+                    return eventSort.order === 'asc' ? valA - valB : valB - valA;
+                }
+            });
+
+            return filtered;
+        }
+
+        function toggleEventCollapse(eventId) {
+            if (collapsedEvents.has(eventId)) {
+                collapsedEvents.delete(eventId);
+            } else {
+                collapsedEvents.add(eventId);
+            }
+            renderEvents();
+        }
+
+        function toggleAllEvents() {
+            const filteredEvents = getFilteredAndSortedEvents();
+            const allCollapsed = filteredEvents.every(e => collapsedEvents.has(e.id));
+
+            if (allCollapsed) {
+                filteredEvents.forEach(e => collapsedEvents.delete(e.id));
+            } else {
+                filteredEvents.forEach(e => collapsedEvents.add(e.id));
+            }
+            renderEvents();
+        }
+
+        function filterEventsByEntity(entity) {
+            if (eventFilters.entity === entity) {
+                eventFilters.entity = null;
+            } else {
+                eventFilters.entity = entity;
+            }
+            renderEvents();
+        }
+
+        function sortEventsBy(field) {
+            if (eventSort.field === field) {
+                eventSort.order = eventSort.order === 'asc' ? 'desc' : 'asc';
+            } else {
+                eventSort.field = field;
+                eventSort.order = 'desc';
+            }
+            renderEvents();
+        }
+
+        function updateEventSearch(e) {
+            eventFilters.search = e.target.value;
+            renderEvents();
+        }
+
+        function updateMinScore(e) {
+            eventFilters.minScore = parseInt(e.target.value) || 0;
+            renderEvents();
+        }
+
+        function updateMinNewsCount(e) {
+            eventFilters.minNewsCount = parseInt(e.target.value) || 0;
+            renderEvents();
+        }
+
         function renderEvents() {
             const content = document.getElementById('events-content');
 
@@ -1365,6 +1726,8 @@
                 content.innerHTML = `<div class="empty-state"><p>📭 暂无事件数据</p></div>`;
                 return;
             }
+
+            const filteredEvents = getFilteredAndSortedEvents();
 
             // 事件分级颜色映射
             const getRatingClass = (rating) => {
@@ -1374,52 +1737,124 @@
 
             // 格式化日期范围
             const formatDateRange = (start, end) => {
-                const startDate = new Date(start);
-                const endDate = new Date(end);
+                const startDate = new Date(start * 1000);
+                const endDate = new Date(end * 1000);
                 if (startDate.toDateString() === endDate.toDateString()) {
                     return startDate.toLocaleDateString('zh-CN', {month: 'numeric', day: 'numeric'});
                 }
                 return `${startDate.toLocaleDateString('zh-CN', {month: 'numeric', day: 'numeric'})} ~ ${endDate.toLocaleDateString('zh-CN', {month: 'numeric', day: 'numeric'})}`;
             };
 
+            // 格式化时间
+            const formatTime = (timestamp) => {
+                const date = new Date(timestamp * 1000);
+                return date.toLocaleString('zh-CN', {
+                    month: 'numeric',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+            };
+
+            // 获取所有唯一实体
+            const allEntities = [...new Set(EVENTS.flatMap(e => e.entities))].sort();
+
             content.innerHTML = `
                 <div style="margin-bottom: 20px;">
                     <h2 style="margin-bottom: 10px;">📅 热点事件追踪</h2>
-                    <p class="update-time">共 ${EVENTS.length} 个热点事件 | 更新时间：${new Date().toLocaleString('zh-CN')}</p>
+                    <p class="update-time">共 ${EVENTS.length} 个热点事件 | 筛选后 ${filteredEvents.length} 个 | 更新时间：${new Date().toLocaleString('zh-CN')}</p>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 16px;">
-                    ${EVENTS.map(event => `
-                        <div style="background: #16181c; border: 1px solid #2f3336; border-radius: 12px; overflow: hidden;">
+
+                <!-- 事件筛选和排序控件 -->
+                <div class="event-controls">
+                    <div class="event-control-group">
+                        <label class="event-control-label">搜索:</label>
+                        <input type="text" class="event-search-input" placeholder="搜索事件、实体、新闻标题..."
+                               value="${eventFilters.search}" oninput="updateEventSearch(event)">
+                    </div>
+
+                    <div class="event-control-group">
+                        <label class="event-control-label">最低评分:</label>
+                        <select class="event-control-select" onchange="updateMinScore(event)">
+                            <option value="0" ${eventFilters.minScore === 0 ? 'selected' : ''}>全部</option>
+                            <option value="70" ${eventFilters.minScore === 70 ? 'selected' : ''}>>=70分</option>
+                            <option value="80" ${eventFilters.minScore === 80 ? 'selected' : ''}>>=80分</option>
+                            <option value="90" ${eventFilters.minScore === 90 ? 'selected' : ''}>>=90分</option>
+                        </select>
+                    </div>
+
+                    <div class="event-control-group">
+                        <label class="event-control-label">新闻数量:</label>
+                        <select class="event-control-select" onchange="updateMinNewsCount(event)">
+                            <option value="0" ${eventFilters.minNewsCount === 0 ? 'selected' : ''}>全部</option>
+                            <option value="2" ${eventFilters.minNewsCount === 2 ? 'selected' : ''}>>=2条</option>
+                            <option value="3" ${eventFilters.minNewsCount === 3 ? 'selected' : ''}>>=3条</option>
+                            <option value="5" ${eventFilters.minNewsCount === 5 ? 'selected' : ''}>>=5条</option>
+                        </select>
+                    </div>
+
+                    <div class="event-control-group">
+                        <label class="event-control-label">排序:</label>
+                        <select class="event-control-select" onchange="sortEventsBy(event.target.value)">
+                            <option value="max_score" ${eventSort.field === 'max_score' ? 'selected' : ''}>评分高低</option>
+                            <option value="news_count" ${eventSort.field === 'news_count' ? 'selected' : ''}>新闻数量</option>
+                            <option value="start_time" ${eventSort.field === 'start_time' ? 'selected' : ''}>事件时间</option>
+                            <option value="title" ${eventSort.field === 'title' ? 'selected' : ''}>事件标题</option>
+                        </select>
+                    </div>
+
+                    <button class="event-toggle-all-btn" onclick="toggleAllEvents()">
+                        ${filteredEvents.every(e => collapsedEvents.has(e.id)) ? '全部展开' : '全部折叠'}
+                    </button>
+                </div>
+
+                <div class="event-timeline-container">
+                    ${filteredEvents.map(event => {
+                        const isCollapsed = collapsedEvents.has(event.id);
+                        return `
+                        <div class="event-card">
                             <!-- 事件头部 -->
-                            <div style="padding: 16px; border-bottom: 1px solid #2f3336;">
-                                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                            <div class="event-header" onclick="toggleEventCollapse('${event.id}')">
+                                <div class="event-header-top">
                                     <span class="rating-tag ${getRatingClass(event.max_grade)}">${event.max_grade}</span>
-                                    <h3 style="font-size: 16px; font-weight: 600; flex: 1;">${event.title}</h3>
+                                    <h3 class="event-title">${event.title}</h3>
+                                    <span class="event-toggle ${isCollapsed ? 'collapsed' : ''}">▼</span>
                                 </div>
-                                <div style="display: flex; align-items: center; gap: 12px; font-size: 12px; color: #8899a6;">
+                                <div class="event-meta">
                                     <span>📰 ${event.news_count} 条相关报道</span>
                                     <span>📅 ${formatDateRange(event.start_time, event.end_time)}</span>
                                     <span>⭐ ${event.max_score} 分</span>
                                 </div>
-                                <div style="margin-top: 8px;">
-                                    ${event.entities.map(entity => `<span class="entity-tag">${entity}</span>`).join('')}
+                                <div class="event-entities">
+                                    ${event.entities.map(entity =>
+                                        `<span class="entity-tag ${eventFilters.entity === entity ? 'selected' : ''}"
+                                               onclick="event.stopPropagation(); filterEventsByEntity('${entity.replace(/'/g, "\\'")}')">
+                                            ${entity}
+                                        </span>`
+                                    ).join('')}
                                 </div>
                             </div>
-                            <!-- 事件新闻列表 -->
-                            <div style="padding: 12px;">
-                                ${event.news_list.sort((a, b) => a.timestamp - b.timestamp).map((item, index) => `
-                                    <div style="padding: 8px 0; border-bottom: 1px solid #2f3336; ${index === event.news_list.length - 1 ? 'border-bottom: none;' : ''}">
-                                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
-                                            <span style="font-size: 10px; color: #8899a6; min-width: 40px;">${new Date(item.timestamp * 1000).toLocaleString('zh-CN', {hour: '2-digit', minute: '2-digit'})}</span>
-                                            <span class="rating-tag ${getRatingClass(item.rating)}" style="font-size: 10px; padding: 1px 4px;">${item.rating}</span>
-                                            <a href="${item.url}" target="_blank" style="color: #1d9bf0; font-size: 13px; text-decoration: none;">${item.title}</a>
+
+                            <!-- 事件时间线内容 -->
+                            <div class="event-content ${isCollapsed ? 'collapsed' : ''}">
+                                <div class="timeline">
+                                    ${event.news_list.sort((a, b) => a.timestamp - b.timestamp).map(item => `
+                                        <div class="timeline-item">
+                                            <div class="timeline-marker"></div>
+                                            <div class="timeline-time">${formatTime(item.timestamp)}</div>
+                                            <div class="timeline-content">
+                                                <span class="rating-tag ${getRatingClass(item.rating)}" style="font-size: 10px; padding: 1px 4px;">${item.rating}</span>
+                                                <a href="${item.url}" target="_blank" class="timeline-title">${item.title}</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                `).join('')}
+                                    `).join('')}
+                                </div>
                             </div>
                         </div>
-                    `).join('')}
+                    `}).join('')}
                 </div>
+
+                ${filteredEvents.length === 0 ? `<div class="empty-state"><p>🔍 没有符合筛选条件的事件</p></div>` : ''}
             `;
         }
 
