@@ -18,6 +18,10 @@ class AppSettings(BaseSettings):
     MAX_CACHED_IDS: int = Field(default=5000, ge=1000, description="最大缓存处理ID数量")
     DEFAULT_BATCH_SIZE: int = Field(default=30, ge=1, le=100, description="AI处理批量大小")
 
+    # 后台认证配置
+    ADMIN_PASSWORD: str = Field(default="admin123", description="后台管理员密码")
+    SECRET_KEY: str = Field(default="x-reader-secret-key-2026", description="Flask session加密密钥")
+
     # RSS配置校验
     @validator('RSS_CONFIG', check_fields=False)
     def validate_rss_config(cls, v):
@@ -145,6 +149,16 @@ LOGGING_CONFIG = {
     "format": "[%(asctime)s] [%(levelname)s] %(message)s",
     "datefmt": "%Y-%m-%d %H:%M:%S"
 }
+
+# 事件分组配置
+EVENT_GROUPER_CONFIG_FILE = os.path.join(BASE_DIR, "config/event_grouper.json")
+
+# 延迟导入解决循环导入问题
+from src.utils.common import load_json
+EVENT_GROUPER_CONFIG = load_json(EVENT_GROUPER_CONFIG_FILE, {
+    "entity_threshold": 3,
+    "similarity_threshold": 0.85
+})
 
 # 确保临时目录存在
 os.makedirs(TEMP_DIR, exist_ok=True)

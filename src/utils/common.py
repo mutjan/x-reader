@@ -12,7 +12,7 @@ from difflib import SequenceMatcher
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 import requests
 
-from src.config.settings import LOGGING_CONFIG
+# LOGGING_CONFIG 导入移到函数内部以避免循环导入
 
 # 网络请求重试装饰器：重试3次，指数退避
 def request_retry(max_retries=3):
@@ -25,6 +25,7 @@ def request_retry(max_retries=3):
 
 def setup_logger(name: str) -> logging.Logger:
     """设置日志记录器"""
+    from src.config.settings import LOGGING_CONFIG
     logging.basicConfig(**LOGGING_CONFIG)
     return logging.getLogger(name)
 
