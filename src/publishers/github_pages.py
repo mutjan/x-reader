@@ -207,12 +207,19 @@ class GitHubPagesPublisher(BasePublisher):
                 events_data = [event.to_dict() for event in events]
                 self.logger.info(f"事件分组处理完成: 共{len(events_data)}个事件")
 
-                # 保存事件分组到独立文件
-                event_grouper.save_event_groups(events)
+                # 先保存事件分组到独立文件
+                self.logger.info("保存事件分组到文件...")
+                save_events_success = event_grouper.save_event_groups(events)
+                if not save_events_success:
+                    self.logger.error("事件分组保存失败")
+                    raise RuntimeError("Failed to save event groups")
+
+                self.logger.info("事件分组保存成功")
 
         except Exception as e:
             self.logger.error(f"事件分组处理失败: {e}")
-            # 事件分组失败不影响主流程，继续执行
+            # 事件分组失败终止流程，保证数据一致性
+            raise RuntimeError(f"Event grouping failed: {e}") from e
 
         # 按日期分组
         news_by_date = {}
@@ -256,64 +263,22 @@ class GitHubPagesPublisher(BasePublisher):
             except Exception as e:
                 self.logger.warning(f"数据备份失败: {e}")
 
-        # 事件分组处理：将所有新闻合并后进行事件分组
-        all_news = []
-        for date in news_by_date:
-            all_news.extend(news_by_date[date])
-
-        # 转换回ProcessedNewsItem对象进行事件分组
-        processed_items = []
-        feedback_store = FeedbackStore()
-
-        for item_dict in all_news:
-            try:
-                item = ProcessedNewsItem.from_dict(item_dict)
-                # 检查是否有反馈修正
-                feedback = feedback_store.get_feedback_by_news_id(item.id)
-                if feedback:
-                    # 应用用户修正的评分和分级
-                    original_grade = item.grade
-                    original_score = item.score
-                    item.grade = feedback.get("corrected_grade", original_grade)
-                    item.score = feedback.get("corrected_score", original_score)
-                    # 标记为人工修正
-                    item_dict["is_corrected"] = True
-                    item_dict["original_grade"] = original_grade
-                    item_dict["original_score"] = original_score
-                    self.logger.debug(f"应用反馈修正: news_id={item.id}, {original_grade}({original_score}) → {item.grade}({item.score})")
-
-                processed_items.append(item)
-            except Exception as e:
-                self.logger.warning(f"跳过无效新闻条目: {e}")
-
-        # 应用评分校准规则
-        if processed_items:
-            calibration_engine = CalibrationEngine()
-            processed_items = calibration_engine.batch_calibrate(processed_items)
-            # 更新字典中的评分数据
-            for item, item_dict in zip(processed_items, all_news):
-                if item.score != item_dict.get("score"):
-                    item_dict["score"] = item.score
-                    item_dict["rating"] = item.grade
-                    item_dict["is_calibrated"] = True
-                    self.logger.debug(f"应用校准规则: news_id={item.id}, 分数调整为{item.score}({item.grade})")
-
-        # 进行事件分组
-        event_grouper = EventGrouper()
-        events = event_grouper.group_news(processed_items)
-
-        # 转换事件为字典格式
-        events_data = [event.to_dict() for event in events]
-
-        # 保存合并后的数据，包含事件信息
+        # 保存合并后的数据（事件已单独保存到event_groups.json）
         output_data = {
             "news": news_by_date,
-            "events": events_data,
             "last_updated": datetime.now().isoformat(),
-            "total_news": len(all_news),
-            "total_events": len(events)
+            "total_news": len(filtered_dict)
         }
-        save_json(output_data, self.data_file)
+
+        # 先保存事件分组（已在事件分组处理阶段完成）
+        # 现在保存新闻数据
+        self.logger.info("保存新闻数据到文件...")
+        save_success = save_json(output_data, self.data_file)
+        if not save_success:
+            self.logger.error("新闻数据保存失败")
+            raise RuntimeError("Failed to save news data")
+
+        self.logger.info("新闻数据保存成功")
 
         return updated_count, new_count
 

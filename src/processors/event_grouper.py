@@ -14,7 +14,7 @@ from datetime import timedelta
 from src.models.news import ProcessedNewsItem
 from src.utils.similarity import calculate_news_similarity
 from src.utils.common import setup_logger, save_json, load_json
-from src.config.settings import DATA_DIR
+from src.config.settings import DATA_DIR, EVENT_GROUPS_FILE
 
 logger = setup_logger("event_grouper")
 
@@ -212,7 +212,7 @@ class EventGrouper:
     def save_event_groups(self, events: List[Event], output_path: str = None) -> bool:
         """保存事件分组到文件"""
         if output_path is None:
-            output_path = os.path.join(DATA_DIR, "event_groups.json")
+            output_path = EVENT_GROUPS_FILE
 
         # 创建备份
         if os.path.exists(output_path):
@@ -227,7 +227,7 @@ class EventGrouper:
     def load_event_groups(self, input_path: str = None) -> List[Dict[str, Any]]:
         """加载事件分组文件"""
         if input_path is None:
-            input_path = os.path.join(DATA_DIR, "event_groups.json")
+            input_path = EVENT_GROUPS_FILE
 
         return load_json(input_path, [])
 

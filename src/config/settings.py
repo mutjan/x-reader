@@ -41,6 +41,7 @@ DATA_DIR = BASE_DIR
 
 # 文件路径配置
 DATA_FILE = os.path.join(DATA_DIR, "news_data.json")
+EVENT_GROUPS_FILE = os.path.join(DATA_DIR, "event_groups.json")
 PROCESSED_IDS_FILE = os.path.join(DATA_DIR, ".processed_ids.json")
 WORK_LOG_FILE = os.path.join(DATA_DIR, ".work_log.json")
 TEMP_DIR = os.path.join(DATA_DIR, ".tmp")
