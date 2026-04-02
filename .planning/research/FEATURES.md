@@ -1,13 +1,14 @@
 # Feature Landscape
 
 **Domain:** 面向内部编辑的科技新闻选题聚合系统
-**Researched:** 2026-03-31
+**Researched:** 2026-04-01 (updated for v2.0 same-event grouping)
 **Overall confidence:** MEDIUM (based on editorial workflow domain knowledge + project requirements, web search unavailable for market validation)
 
 ## Table Stakes
 
 Features users expect. Missing = product feels incomplete.
 
+### v1.0 Core Features
 | Feature | Why Expected | Complexity | Notes |
 |---------|--------------|------------|-------|
 | 多源RSS自动抓取聚合 | 编辑需要集中获取全行业科技新闻，无需手动访问多个站点 | Low | 复用现有x-reader功能 |
@@ -19,10 +20,21 @@ Features users expect. Missing = product feels incomplete.
 | 选题标记功能 | 编辑可以标记「入选」「待跟进」「忽略」状态，记录选题决策 | Low | 基础交互功能 |
 | 小时级自动更新 | 保证热点新闻时效性，匹配编辑日常工作节奏 | Medium | 后台定时任务 + 增量更新 |
 
+### v2.0 Same-Event Grouping Features
+| Feature | Why Expected | Complexity | Notes |
+|---------|--------------|------------|-------|
+| 独立分组关系存储 | 现有架构要求不修改news_data.json结构，分组关系必须独立存储 | Low | 设计为group_id → [news_id列表]的JSON结构，支持一对多映射 |
+| 自动事件分组识别 | 系统需要自动识别属于同一事件的新闻条目，减少人工分组成本 | Medium | 基于标题相似度、内容关键词、发布时间窗口、URL域名等多维度判断 |
+| 事件时间线展示 | 同一事件的新闻按时间顺序聚合展示，呈现事件发展脉络 | Medium | 前端将同组新闻以时间倒序/正序排列，标注时间点和来源 |
+| 分组信息双向关联 | 每条新闻能看到所属事件组，事件组能看到所有相关新闻 | Low | 在新闻详情页显示关联事件入口，在事件页显示所有关联新闻 |
+| 增量更新支持 | 新抓取的新闻能够自动匹配到已有事件组，或创建新事件组 | Medium | 每次处理流程中对新条目执行分组匹配，更新分组文件 |
+| 分组冲突处理 | 同一条新闻可能被分到多个组时的处理机制 | Medium | 支持一条新闻属于多个事件组，或设置优先级规则选择主组 |
+
 ## Differentiators
 
 Features that set product apart. Not expected, but valued.
 
+### v1.0 Differentiators
 | Feature | Value Proposition | Complexity | Notes |
 |---------|-------------------|------------|-------|
 | 选题热度趋势预测 | 不仅展示当前热度，还能预测24小时内热度走势，帮助编辑提前布局热点报道 | High | 基于历史热度数据 + 传播模型 |
@@ -32,10 +44,22 @@ Features that set product apart. Not expected, but valued.
 | 选题池协作功能 | 支持编辑评论选题、分配跟进人，同步选题决策状态，适配团队协作场景 | Medium | 轻量协作层 |
 | 选题导出功能 | 支持导出入选选题到Excel/Notion/选题系统，无缝对接后续工作流 | Low | 减少跨工具复制粘贴成本 |
 
+### v2.0 Same-Event Grouping Differentiators
+| Feature | Value Proposition | Complexity | Notes |
+|---------|-------------------|------------|-------|
+| 事件热度聚合计算 | 同一事件的热度值聚合计算，提升高价值事件的排序优先级 | Medium | 基于组内所有新闻的热度、来源权重、发布时间综合计算事件总热度 |
+| 智能事件标题生成 | 自动为事件组生成统一、准确的事件标题，替代单条新闻标题 | High | 通过AI分析组内所有新闻内容，提炼事件核心主题作为组标题 |
+| 事件发展脉络摘要 | 自动生成事件发展时间线摘要，快速了解事件全貌 | High | AI总结不同时间点的关键进展，形成结构化摘要 |
+| 手动分组调整功能 | 支持编辑手动调整分组关系，修正自动分组错误 | Medium | 后台提供分组编辑功能，支持合并组、拆分组、移动新闻条目 |
+| 事件追踪提醒 | 对重点事件设置追踪，有新相关新闻时自动提醒编辑 | Medium | 基于事件标签和关键词的订阅机制，新匹配新闻触发通知 |
+| 跨信源事件关联 | 识别不同信源对同一事件的报道，提供多角度信息 | Medium | 支持跨RSS、Twitter、Inoreader等不同数据源的事件关联 |
+| 事件重要度分级 | 对事件进行重要度分级，区分重大事件、一般事件 | Medium | 基于事件影响力、传播范围、参与主体等维度自动分级 |
+
 ## Anti-Features
 
 Features to explicitly NOT build.
 
+### General Anti-Features
 | Anti-Feature | Why Avoid | What to Do Instead |
 |--------------|-----------|-------------------|
 | 面向普通用户的公开资讯站 | 产品定位是内部工具，公开站会分散核心功能开发资源，增加运营成本 | 保持内部工具属性，仅对编辑团队开放 |
@@ -45,17 +69,34 @@ Features to explicitly NOT build.
 | 全文内容存储 | 存储全文会带来版权风险和存储成本 | 仅存储标题、摘要、链接、元数据，原文跳转至来源站点 |
 | 智能写稿功能 | 超出选题系统定位，编辑核心需求是发现线索不是AI代笔 | 聚焦选题筛选评估能力，不涉及内容生产 |
 
+### v2.0 Same-Event Grouping Anti-Features
+| Anti-Feature | Why Avoid | What to Do Instead |
+|--------------|-----------|-------------------|
+| 修改原有新闻数据结构 | 违反架构约束，影响现有流程稳定性 | 保持news_data.json不变，所有分组信息独立存储 |
+| 新闻内容合并 | 丢失原始新闻的来源、发布时间等关键元信息 | 保留每条新闻独立性，仅在展示层聚合 |
+| 实时分组计算 | 增加系统复杂度，不符合小时级更新的频率要求 | 在每小时的批量处理流程中执行分组计算 |
+| 复杂的分组权限控制 | 内部工具属性，不需要精细权限管理 | 所有编辑均可调整分组关系，操作留痕即可 |
+| 事件专题页面生成 | 超出选题工具定位，涉及内容生产功能 | 仅提供分组展示功能，不做专题发布 |
+
 ## Feature Dependencies
 
 ```
+# v1.0 Core Flow
 多源RSS抓取 → 自动去重 → AI内容处理 → 选题评分/分类/摘要 → 筛选排序展示 → 选题标记/协作
 选题评分 → 热度趋势预测
 事件聚类 → 同源新闻脉络关联
 用户行为数据 → 编辑偏好自适应
+
+# v2.0 Same-Event Grouping Flow
+独立分组存储 → 自动分组识别 → 增量更新支持 → 时间线展示
+自动分组识别 → 分组冲突处理
+时间线展示 → 事件热度聚合计算 → 智能事件标题生成
+自动分组识别 → 手动分组调整功能
 ```
 
 ## MVP Recommendation
 
+### v1.0 MVP
 Prioritize:
 1. 多源RSS抓取聚合 + 自动去重（基础数据层，已有功能）
 2. AI选题评分 + 分类 + 摘要生成（核心价值）
@@ -67,8 +108,23 @@ Defer:
 - 编辑偏好自适应：需要积累用户行为数据，MVP阶段无数据支撑
 - 协作功能：小团队初期可以手动同步，后续根据需求迭代
 
+### v2.0 Same-Event Grouping MVP
+Prioritize:
+1. 独立分组关系存储 (Table stakes)
+2. 基础自动事件分组识别 (Table stakes)
+3. 事件时间线基础展示 (Table stakes)
+4. 增量更新支持 (Table stakes)
+
+Defer:
+- 智能事件标题生成: 需要AI能力集成，可后续迭代
+- 事件发展脉络摘要: 高复杂度，非核心需求
+- 事件追踪提醒: 属于增值功能，优先级较低
+- 跨信源事件关联优化: 基础版本可先支持同信源分组，后续优化
+
 ## Sources
 
 - 项目需求文档: `.planning/PROJECT.md`
 - 内部编辑团队工作流程调研
 - 内容工具行业最佳实践
+- 新闻事件分组架构设计最佳实践
+- 编辑工具用户交互模式研究

@@ -31,7 +31,7 @@ class TestEventGrouper:
             chinese_title="OpenAI发布GPT-5",
             grade="A",
             score=85,
-            entities=["OpenAI", "GPT-5"]
+            entities=["OpenAI", "GPT-5", "大模型", "AI"]
         )
 
         self.openai_news_2 = ProcessedNewsItem(
@@ -44,7 +44,7 @@ class TestEventGrouper:
             chinese_title="GPT-5展现突破性性能",
             grade="A+",
             score=92,
-            entities=["OpenAI", "GPT-5"]
+            entities=["OpenAI", "GPT-5", "大模型", "AI"]
         )
 
         self.anthropic_news = ProcessedNewsItem(
@@ -70,7 +70,7 @@ class TestEventGrouper:
             chinese_title="OpenAI宣布GPT-5 API访问",
             grade="A",
             score=87,
-            entities=["OpenAI", "GPT-5", "API"]
+            entities=["OpenAI", "GPT-5", "API", "大模型", "AI"]
         )
 
     def cleanup(self):
@@ -96,14 +96,11 @@ class TestEventGrouper:
         assert openai_event.max_score == 85
 
         # 场景2：现有分组存在匹配条目 → 新条目添加到合适的分组
-        batch2 = [self.openai_news_2]
-        # 合并已有事件的新闻和新新闻进行增量分组
-        all_news = []
-        for event in events1:
-            all_news.extend(event.news_list)
-        all_news.extend(batch2)
-
-        events2 = self.grouper.group_news(all_news)
+        batch2 = [self.openai_news_1, self.openai_news_2, self.anthropic_news]
+        # 将现有事件转换为存储格式的字典
+        existing_groups = self.grouper._events_to_dict(events1)
+        # 使用增量分组方法 - 增量分组需要所有相关新闻条目来重建事件
+        events2 = self.grouper.incremental_group(existing_groups, batch2)
 
         assert len(events2) == 2, "第二次分组应该还是2个事件"
         openai_event2 = next(e for e in events2 if "GPT-5" in e.title)

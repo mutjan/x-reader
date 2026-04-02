@@ -20,6 +20,51 @@ from src.processors.zeitgeist import zeitgeist_manager
 
 logger = setup_logger("ai_processor")
 
+# 提示词文件路径
+PROMPTS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "prompts")
+BASE_PROCESSING_PROMPT_FILE = os.path.join(PROMPTS_DIR, "base_processing.md")
+SCORING_PROMPT_FILE = os.path.join(PROMPTS_DIR, "scoring.md")
+SCORING_CONFIG_FILE = os.path.join(PROMPTS_DIR, "scoring_config.json")
+
+# 缓存上次修改时间，用于热重载
+_last_modified_cache = {
+    BASE_PROCESSING_PROMPT_FILE: 0,
+    SCORING_PROMPT_FILE: 0,
+    SCORING_CONFIG_FILE: 0
+}
+_cached_prompts = {
+    "base_processing": None,
+    "scoring": None,
+    "config": None
+}
+
+def _load_file_if_changed(file_path: str, cache_key: str, is_json: bool = False) -> Any:
+    """加载文件，如果文件修改则重新加载，用于热重载"""
+    if not os.path.exists(file_path):
+        logger.error(f"规则文件不存在: {file_path}")
+        return None
+
+    mtime = os.path.getmtime(file_path)
+    if mtime > _last_modified_cache[file_path] and _cached_prompts[cache_key] is not None:
+        logger.info(f"检测到规则文件更新，重新加载: {file_path}")
+
+    if _cached_prompts[cache_key] is None or mtime > _last_modified_cache[file_path]:
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                if is_json:
+                    content = json.load(f)
+                else:
+                    content = f.read()
+            _cached_prompts[cache_key] = content
+            _last_modified_cache[file_path] = mtime
+            logger.debug(f"成功加载规则文件: {file_path}")
+            return content
+        except Exception as e:
+            logger.error(f"加载规则文件失败: {file_path}, error: {e}")
+            return _cached_prompts[cache_key]  # 返回缓存的旧内容
+
+    return _cached_prompts[cache_key]
+
 class BaseAIProcessor(ABC):
     """AI处理器抽象基类"""
 
@@ -27,8 +72,12 @@ class BaseAIProcessor(ABC):
         self.system_prompt = self._load_system_prompt()
 
     def _load_system_prompt(self) -> str:
-        """加载系统提示词"""
-        return """
+        """加载系统提示词，从外部文件，支持热重载"""
+        content = _load_file_if_changed(BASE_PROCESSING_PROMPT_FILE, "base_processing", is_json=False)
+        if content is None:
+            #  fallback to default if file missing
+            logger.warning("使用默认提示词，外部文件加载失败")
+            return """
 你是一位资深科技媒体编辑，负责筛选和加工科技新闻选题。
 
 请对以下新闻进行批量处理，返回 JSON 格式结果：
@@ -89,6 +138,7 @@ class BaseAIProcessor(ABC):
 - 确保JSON格式完全正确，没有语法错误
 - 所有新闻都需要处理，不要过滤任何内容
 """
+        return content
 
     @abstractmethod
     def process_batch(self, items: List[RawNewsItem]) -> List[ProcessedNewsItem]:
@@ -411,10 +461,14 @@ class AIScorer:
 
     def __init__(self):
         self.system_prompt = self._load_scoring_prompt()
+        self.config = self._load_scoring_config()
 
     def _load_scoring_prompt(self) -> str:
-        """加载打分系统提示词"""
-        return """
+        """加载打分系统提示词，从外部文件，支持热重载"""
+        content = _load_file_if_changed(SCORING_PROMPT_FILE, "scoring", is_json=False)
+        if content is None:
+            logger.warning("使用默认评分提示词，外部文件加载失败")
+            return """
 你是一位资深科技媒体主编，负责对已经初步处理的科技新闻进行打分和定级。
 
 请对以下新闻进行批量打分，返回 JSON 格式结果：
@@ -466,6 +520,31 @@ S级（90-100分）必须满足以下条件之一：
 - 确保JSON格式完全正确，没有语法错误
 - 对于C级新闻（<65分），仍然返回但grade标记为"C"
 """
+        return content
+
+    def _load_scoring_config(self) -> Dict:
+        """加载评分配置，从外部文件，支持热重载"""
+        config = _load_file_if_changed(SCORING_CONFIG_FILE, "config", is_json=True)
+        if config is None:
+            logger.warning("使用默认评分配置，外部文件加载失败")
+            return {
+                "grade_thresholds": {
+                    "S": 90,
+                    "A+": 85,
+                    "A": 75,
+                    "B": 65,
+                    "C": 0
+                },
+                "special_bonuses": [
+                    {
+                        "keywords": ["hinton", "geoffrey hinton", "辛顿", "杰弗里·辛顿", "AI教父"],
+                        "bonus": 5,
+                        "min_score": 85,
+                        "max_score": 100
+                    }
+                ]
+            }
+        return config
 
     def build_scoring_prompt(self, items: List[ProcessedNewsItem]) -> str:
         """构建打分提示词"""
@@ -523,15 +602,27 @@ S级（90-100分）必须满足以下条件之一：
                 ai_score = result.get("score", 0)
                 ai_grade = result.get("grade", "C")
 
-                # 特殊加分规则：Geoffrey Hinton相关内容自动+5分，最低85分（A+级）
+                # 重新加载配置（支持热重载）
+                if self.config != _cached_prompts["config"]:
+                    self.config = _cached_prompts["config"]
+
+                # 应用特殊加分规则从配置
                 content_lower = (item.original_title + " " + item.original_content).lower()
-                is_hinton_related = any(keyword in content_lower for keyword in ["hinton", "geoffrey hinton", "辛顿", "杰弗里·辛顿", "AI教父"])
-                if is_hinton_related:
-                    original_score = ai_score
-                    ai_score = min(ai_score + 5, 100)  # 最高不超过100分
-                    ai_score = max(ai_score, 85)       # 最低不低于85分
-                    if ai_score > original_score:
-                        logger.info(f"Hinton相关新闻加分: {original_score} → {ai_score}")
+                if "special_bonuses" in self.config:
+                    for bonus_rule in self.config["special_bonuses"]:
+                        keywords = bonus_rule.get("keywords", [])
+                        bonus = bonus_rule.get("bonus", 0)
+                        min_score = bonus_rule.get("min_score", 0)
+                        max_score = bonus_rule.get("max_score", 100)
+                        is_matched = any(keyword in content_lower for keyword in keywords)
+                        if is_matched:
+                            original_score = ai_score
+                            ai_score = min(ai_score + bonus, max_score)
+                            if min_score > 0:
+                                ai_score = max(ai_score, min_score)
+                            if ai_score > original_score:
+                                matched_keywords = ','.join(keywords[:2])
+                                logger.info(f"特殊规则加分 [{matched_keywords}]: {original_score} → {ai_score}")
 
                 # 时代情绪加分：符合当前热点趋势的新闻额外加分
                 zeitgeist_boost, matched_trends = zeitgeist_manager.get_boost_for_content(
@@ -543,14 +634,17 @@ S级（90-100分）必须满足以下条件之一：
                     if ai_score > original_score:
                         logger.info(f"时代情绪加分 [{','.join(matched_trends)}]: {original_score} → {ai_score}")
 
-                # 根据调整后的分数重新评定等级
-                if ai_score >= 90:
+                # 根据调整后的分数重新评定等级，使用配置中的阈值
+                thresholds = self.config.get("grade_thresholds", {
+                    "S": 90, "A+": 85, "A": 75, "B": 65, "C": 0
+                })
+                if ai_score >= thresholds.get("S", 90):
                     final_grade = "S"
-                elif ai_score >= 85:
+                elif ai_score >= thresholds.get("A+", 85):
                     final_grade = "A+"
-                elif ai_score >= 75:
+                elif ai_score >= thresholds.get("A", 75):
                     final_grade = "A"
-                elif ai_score >= 65:
+                elif ai_score >= thresholds.get("B", 65):
                     final_grade = "B"
                 else:
                     final_grade = "C"

@@ -1,124 +1,206 @@
 # Architecture Patterns
 
-**Domain:** 科技新闻选题聚合系统
-**Researched:** 2026-03-31
-**Confidence:** HIGH (基于现有系统架构扩展，符合行业通用模式)
+**Domain:** 科技新闻选题聚合系统 - 同事件新闻分组功能
+**Researched:** 2026-04-01
+**Confidence:** HIGH (基于现有系统架构分析，所有修改均为非破坏性扩展)
 
 ## Recommended Architecture
 
-基于现有x-reader系统的模块化流水线架构扩展，新增**选题处理层**嵌入现有处理流程，整体保持清晰的分层结构和责任边界：
-
+### High-Level Integration Design
 ```
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│  现有抓取层  │ →  │ 现有去重过滤 │ →  │  新增选题层  │ →  │ 现有AI处理层 │
-└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
-                                                               ↓
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│  编辑后台   │ ←  │  选题存储   │ ←  │ 结果后处理  │ ←  │ AI结果解析  │
-└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
+┌─────────────────────────────────────────────────────────────────┐
+│                     Existing Processing Pipeline                 │
+├─────────┬─────────┬──────────┬────────────┬─────────┬───────────┤
+│  Fetch  │ Dedupe  │  Filter  │ AI Process │ Dedupe  │  Publish  │
+│         │ (Raw)   │          │            │(Process)│           │
+└─────────┴─────────┴──────────┴────────────┴─────────┴───────────┘
+                                      │
+                                      ▼
+                        ┌─────────────────────────┐
+                        │   Remove merge_similar  │
+                        │   from deduplicate.py   │
+                        └─────────────────────────┘
+                                      │
+                                      ▼
+                        ┌─────────────────────────┐
+                        │   New EventGrouper      │
+                        │   (Standalone stage)    │
+                        └─────────────────────────┘
+                                      │
+              ┌───────────────────────┴───────────────────────┐
+              ▼                                               ▼
+┌──────────────────────────────┐            ┌──────────────────────────────┐
+│  news_data.json              │            │  event_groups.json           │
+│  (Unchanged structure)       │            │  (New file)                  │
+│  - All news items independent│            │  - event_id → list of news_ids│
+│  - Each has event_id field   │            │  - Event metadata (title, etc)│
+└──────────────────────────────┘            └──────────────────────────────┘
 ```
 
 ### Component Boundaries
 
-| Component | Responsibility | Communicates With |
-|-----------|---------------|-------------------|
-| **选题评估引擎** (新增) | 多维度计算选题价值：热度、新颖度、领域匹配度、时效性评分 | 现有去重过滤模块、AI处理器 |
-| **智能分类器** (新增) | 自动分类、标签生成、领域识别 | AI处理器、选题存储 |
-| **热度计算器** (新增) | 基于传播数据、时间衰减计算实时热度 | 抓取层、选题存储 |
-| **选题存储** (新增) | 持久化选题数据，支持按多维度查询 | 所有选题组件、Web层 |
-| **编辑管理模块** (新增) | 信源配置、阈值调整、选题标记、导出功能 | 选题存储、Web层 |
-| **现有抓取层** | 无改造，复用现有RSS抓取能力 | 去重过滤层 |
-| **现有去重过滤层** | 无改造，复用现有去重过滤逻辑 | 选题评估引擎 |
-| **现有AI处理层** | 扩展prompt模板，增加选题相关字段生成 | 选题评估引擎、结果解析 |
-| **现有Web层** | 扩展页面，增加选题展示和管理界面 | 选题存储、编辑管理模块 |
+| Component | Responsibility | Changes Required | Communicates With |
+|-----------|---------------|------------------|-------------------|
+| **Main Pipeline (main.py)** | Orchestrate processing flow | Modified: Remove merge_similar_news call, add event grouping stage | DuplicateRemover, EventGrouper, Publisher |
+| **DuplicateRemover** | News deduplication | Modified: Remove merge_similar_news method entirely | RawNewsItem, ProcessedNewsItem |
+| **EventGrouper** | Same-event news grouping | Refactored: Generate separate grouping file instead of embedding in news_data.json | ProcessedNewsItem, Event data model |
+| **GitHubPagesPublisher** | Publish to GitHub Pages | Modified: Write separate event_groups.json, add to git commit | ProcessedNewsItem, EventGrouper |
+| **ProcessedNewsItem** | Data model | No changes: Already has event_id field | All components |
+| **Frontend** | Display news | Modified: Aggregate news by event_id and show as timeline | news_data.json, event_groups.json |
 
 ### Data Flow
 
-**集成后完整数据流：**
-1. **抓取阶段**：现有RSS抓取器获取原始新闻 → 生成RawNewsItem
-2. **预处理阶段**：现有去重模块去重 → 过滤模块排除低质量内容
-3. **选题评估阶段**：
-   - 选题评估引擎计算初始价值评分
-   - 热度计算器基于传播数据和时间因子计算热度
-4. **AI处理阶段**：
-   - 扩展现有prompt模板，增加选题价值分析、分类、标签、摘要要求
-   - 生成AI处理请求 → 导入AI结果 → 解析为带选题字段的ProcessedNewsItem
-5. **后处理阶段**：
-   - 智能分类器基于AI结果自动归类和打标签
-   - 二次校准选题价值评分
-   - 存储到选题数据库
-6. **消费阶段**：
-   - Web界面按领域/热度/时间维度展示选题
-   - 编辑通过管理模块标记选题、调整配置、导出选题列表
+1. **Processing Pipeline Flow:**
+   ```
+   Raw News → Fetch → Dedupe → Filter → AI Processing → Dedupe →
+   → Event Grouping → [news_data.json] + [event_groups.json] → Publish
+   ```
+
+2. **Grouping Process:**
+   - EventGrouper takes full list of processed news items
+   - Groups similar news into events using entity + similarity matching
+   - Assigns event_id to each grouped news item
+   - Generates event_groups.json containing:
+     ```json
+     {
+       "events": [
+         {
+           "event_id": "abc123",
+           "title": "OpenAI releases GPT-5",
+           "max_grade": "S",
+           "max_score": 95,
+           "news_ids": ["id1", "id2", "id3"],
+           "start_time": "2026-04-01T00:00:00",
+           "end_time": "2026-04-01T12:00:00",
+           "entities": ["OpenAI", "GPT"],
+           "news_count": 3
+         }
+       ],
+       "last_updated": "2026-04-01T12:00:00"
+     }
+     ```
+
+3. **Frontend Integration:**
+   - Load both news_data.json and event_groups.json
+   - Map news items to their respective events using event_id
+   - Display events as aggregated timeline entries with all related news
 
 ## Patterns to Follow
 
-### Pattern 1: 流水线嵌入模式
-**What:** 选题处理作为独立阶段嵌入现有处理流水线，不破坏现有流程
-**When:** 复用现有成熟的抓取、去重、AI处理能力
+### Pattern 1: Non-destructive Integration
+**What:** Keep existing news_data.json structure 100% backward compatible
+**When:** All changes to storage layer
+**Rationale:** Avoid breaking existing frontend, API, and tooling that depend on the current format
 **Example:**
 ```python
-# 现有main.py流水线扩展
-def run_pipeline():
-    raw_items = fetchers.fetch_all()
-    deduped_items = duplicate_remover.process(raw_items)
-    filtered_items = content_filter.process(deduped_items)
-    # 新增选题评估阶段
-    scored_items = topic_evaluator.process(filtered_items)
-    # 现有AI处理阶段（扩展prompt）
-    ai_results = ai_processor.process_batch(scored_items)
-    # 新增选题后处理阶段
-    processed_topics = topic_classifier.process(ai_results)
-    topic_storage.save(processed_topics)
-    # 现有发布流程
-    publisher.publish(processed_topics)
+# No changes to news item storage structure
+news_item.event_id = event.event_id  # Only add this field, keep rest unchanged
 ```
 
-### Pattern 2: 评分叠加模式
-**What:** 基础规则评分 + AI评估评分双权重叠加，保证选题质量
-**When:** 多维度选题价值评估
-**Rationale:** 规则评分保证稳定性，AI评估保证语义理解能力，两者加权得到最终评分
+### Pattern 2: Separation of Concerns
+**What:** Event grouping is a separate pipeline stage, not embedded in deduplication or publishing
+**When:** Pipeline architecture
+**Rationale:** Makes grouping logic independent, easier to test and modify without affecting other stages
+**Example:**
+```python
+# In main.py, after deduplication
+event_grouper = EventGrouper()
+events = event_grouper.group_news(processed_items)
+# Save events to separate file
+event_grouper.save_events(events, EVENT_GROUPS_FILE)
+```
+
+### Pattern 3: Idempotent Grouping
+**What:** Event IDs are stable across runs for the same set of news
+**When:** Event generation logic
+**Rationale:** Prevent event ID churn that would break frontend bookmarks and user interactions
+**Implementation:** Hash of sorted news IDs in the event as the event ID
 
 ## Anti-Patterns to Avoid
 
-### Anti-Pattern 1: 重造现有能力
-**What:** 重新开发抓取、去重、AI处理等已有功能
-**Why bad:** 重复开发，增加维护成本，破坏现有系统稳定性
-**Instead:** 完全复用现有成熟模块，仅扩展必要的选题相关字段和逻辑
+### Anti-Pattern 1: Monolithic Grouping
+**What:** Embedding grouping logic in the deduplication or publishing stages
+**Why bad:** Creates tight coupling, makes testing and modification harder
+**Instead:** Keep EventGrouper as an independent component with clear interface
 
-### Anti-Pattern 2: 紧耦合设计
-**What:** 将选题逻辑嵌入现有处理器内部，导致职责不清
-**Why bad:** 后续难以扩展和修改选题逻辑，影响现有功能
-**Instead:** 保持选题组件独立，通过标准接口与现有模块交互
+### Anti-Pattern 2: Data Structure Changes
+**What:** Modifying the existing news_data.json structure to include event data
+**Why bad:** Breaks backward compatibility with all existing consumers
+**Instead:** Use separate event_groups.json file and reference via event_id field
 
-## Build Order Dependencies
-
-建议开发顺序（按依赖关系）：
-1. **Phase 1: 数据模型扩展** → 扩展ProcessedNewsItem增加选题相关字段（评分、分类、标签、热度等）
-   - 无上游依赖，基础准备
-2. **Phase 2: 选题评估引擎** → 实现基于规则的基础评分和热度计算
-   - 依赖数据模型扩展
-3. **Phase 3: AI处理扩展** → 修改AI prompt模板，增加选题分析要求，扩展解析逻辑
-   - 依赖数据模型扩展、选题评估引擎
-4. **Phase 4: 选题存储** → 实现选题数据持久化和查询接口
-   - 依赖数据模型扩展
-5. **Phase 5: 智能分类器** → 实现自动分类和标签生成逻辑
-   - 依赖AI处理扩展、选题存储
-6. **Phase 6: Web界面扩展** → 实现选题展示和筛选功能
-   - 依赖选题存储
-7. **Phase 7: 编辑管理模块** → 实现配置和管理功能
-   - 依赖选题存储、Web界面
+### Anti-Pattern 3: Full Regeneration on Every Run
+**What:** Regenerating all event groups from scratch every pipeline run
+**Why bad:** Causes event ID instability and unnecessary processing
+**Instead:** Incremental grouping - only process new items against existing events
 
 ## Scalability Considerations
 
-| Concern | At 100 feeds | At 1000 feeds | At 10k feeds |
+| Concern | At 100 users | At 10K users | At 1M users |
 |---------|--------------|--------------|-------------|
-| 评分计算 | 实时计算 | 批量异步计算 | 分布式计算队列 |
-| 存储 | 单JSON文件 | SQLite数据库 | PostgreSQL + 全文索引 |
-| 更新频率 | 每小时 | 每30分钟 | 每10分钟增量更新 |
-| 热度计算 | 静态因子 | 实时衰减算法 | 流式计算框架 |
+| Grouping performance | O(n²) comparison acceptable | Add semantic hashing to reduce comparisons | Distributed grouping with vector databases |
+| Storage size | Both files < 1MB | Compress historical data | Shard events by time range |
+| Frontend rendering | Client-side aggregation fine | Paginate events | Server-side rendering of event timelines |
+| Event consistency | Manual review sufficient | Add event merging rules | Automated conflict resolution |
+
+## Changes Required vs New Components
+
+### Modified Components
+1. **main.py**
+   - Remove call to `duplicate_remover.merge_similar_news()` at line 134
+   - Add new EventGrouper stage after deduplication
+   - Pass both news items and events to publisher
+
+2. **src/processors/duplicate.py**
+   - Remove `merge_similar_news()` method entirely
+   - Remove all similar news merging logic
+   - Keep only basic deduplication functionality
+
+3. **src/publishers/github_pages.py**
+   - Add event_groups.json path to configuration
+   - Modify publish() method to write and commit both files
+   - Remove event embedding in news_data.json
+
+4. **src/processors/event_grouper.py**
+   - Modify to return event -> news_id mappings instead of full news objects
+   - Add save_events() method to write event_groups.json
+   - Implement incremental grouping logic
+
+### New Components
+1. **Event Data Model** (in event_grouper.py)
+   - Simplified event structure with only metadata and news_ids
+   - No nested news objects in events
+
+2. **Configuration**
+   - Add EVENT_GROUPS_FILE path in settings.py
+
+## Recommended Build Order
+
+### Phase 1: Remove Merging Logic (Low Risk)
+1. Remove `merge_similar_news` call from main.py
+2. Delete the method from duplicate.py
+3. Test pipeline still runs correctly and produces all news items
+
+### Phase 2: Refactor EventGrouper (Medium Risk)
+1. Modify EventGrouper to produce separate event structure with news_ids
+2. Add event_groups.json path to settings
+3. Implement save/load functionality for event groups
+4. Test grouping logic produces correct mappings
+
+### Phase 3: Integrate into Pipeline (Medium Risk)
+1. Add EventGrouper stage to main.py after deduplication
+2. Pass events to publisher
+3. Modify publisher to write both files
+4. Test both files are generated correctly and committed to GitHub
+
+### Phase 4: Frontend Integration (High Risk)
+1. Modify frontend to load both JSON files
+2. Implement event aggregation and timeline display
+3. Test backward compatibility with existing data
+4. Gradual rollout with fallback to non-grouped view
 
 ## Sources
 
-- 现有x-reader系统架构分析 (.planning/codebase/ARCHITECTURE.md)
-- 新闻聚合系统行业通用架构模式 (行业经验)
+- Existing codebase analysis: main.py, duplicate.py, event_grouper.py, github_pages.py
+- Project requirements: .planning/PROJECT.md v2.0 milestone
+- Data model: src/models/news.py
+- Configuration: src/config/settings.py
