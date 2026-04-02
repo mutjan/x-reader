@@ -1212,9 +1212,10 @@
         // 加载数据
         async function loadData() {
             try {
-                const [newsResponse, upcomingResponse] = await Promise.allSettled([
+                const [newsResponse, upcomingResponse, eventsResponse] = await Promise.allSettled([
                     fetch('news_data.json?v=' + Date.now()),
-                    fetch('upcoming_events.json?v=' + Date.now())
+                    fetch('upcoming_events.json?v=' + Date.now()),
+                    fetch('event_groups.json?v=' + Date.now())
                 ]);
 
                 // 加载新闻数据
@@ -1223,13 +1224,65 @@
                     // 兼容新旧格式
                     if (data.news) {
                         NEWS_ARCHIVE = data.news;
-                        EVENTS = data.events || [];
+                        // 不再使用news_data.json中的legacy events字段
+                        // EVENTS = data.events || [];
                     } else {
                         NEWS_ARCHIVE = data;
-                        EVENTS = [];
                     }
                 } else {
                     throw new Error('Failed to load news data');
+                }
+
+                // 加载事件分组数据并处理
+                if (eventsResponse.status === 'fulfilled' && eventsResponse.value.ok) {
+                    const eventsData = await eventsResponse.value.json();
+                    const rawEventGroups = eventsData.event_groups || [];
+
+                    // 创建新闻查找字典
+                    const allNews = {};
+                    Object.values(NEWS_ARCHIVE).forEach(dateNews => {
+                        dateNews.forEach(item => {
+                            allNews[item.id] = item;
+                        });
+                    });
+
+                    // 处理事件分组，关联新闻数据
+                    EVENTS = rawEventGroups.map(group => {
+                        // 解析新闻ID并查找对应的新闻项
+                        const newsList = group.news_ids
+                            .map(newsId => allNews[newsId])
+                            .filter(Boolean); // 过滤掉不存在的新闻
+
+                        // 只保留有至少一条有效新闻的事件
+                        if (newsList.length === 0) return null;
+
+                        // 按时间排序新闻
+                        newsList.sort((a, b) => a.timestamp - b.timestamp);
+
+                        // 计算事件的其他字段
+                        const timestamps = newsList.map(item => item.timestamp);
+                        const scores = newsList.map(item => item.score || 0);
+                        const ratings = newsList.map(item => item.rating || 'C');
+                        const entities = [...new Set(newsList.flatMap(item => item.entities || []))];
+
+                        return {
+                            id: group.group_id,
+                            title: group.title,
+                            news_count: newsList.length,
+                            start_time: Math.min(...timestamps),
+                            end_time: Math.max(...timestamps),
+                            max_score: Math.max(...scores),
+                            max_grade: ratings.sort((a, b) => getRatingOrder(a) - getRatingOrder(b))[0],
+                            entities: entities,
+                            news_list: newsList
+                        };
+                    }).filter(Boolean); // 过滤掉空事件
+
+                    console.log(`Loaded ${EVENTS.length} events from event_groups.json`);
+                } else {
+                    // event_groups.json不存在时使用空数组
+                    EVENTS = [];
+                    console.log('event_groups.json not found, using empty events array');
                 }
 
                 // 加载预告事件数据
