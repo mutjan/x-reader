@@ -1603,6 +1603,7 @@
         let UPCOMING_EVENTS = [];
         let ZEITGEIST = [];
         let currentTab = 'news'; // news/events
+        let selectedItems = new Set(); // 存储选中的项目ID（新闻或事件）
 
         // 加载数据
         async function loadData() {
@@ -1749,12 +1750,14 @@
                 renderNews();
             } else {
                 document.getElementById('dateToolbarSection').style.display = 'none';
-                document.getElementById('actionsToolbarSection').style.display = 'none';
+                document.getElementById('actionsToolbarSection').style.display = 'flex';
                 document.getElementById('sortToolbarSection').style.display = 'flex';
                 document.getElementById('news-content').style.display = 'none';
                 document.getElementById('events-content').style.display = 'block';
                 renderEvents();
             }
+            updateBatchButtons();
+            updateSortButtons();
         }
 
         function renderCurrentView() {
@@ -1909,7 +1912,90 @@
                 sortSelect.value = eventSort.field;
             }
 
+            updateSortButtons();
             renderEvents();
+        }
+
+        // 切换单个事件的选择状态
+        function toggleEventSelection(eventId) {
+            if (selectedItems.has(eventId)) {
+                selectedItems.delete(eventId);
+            } else {
+                selectedItems.add(eventId);
+            }
+            updateBatchButtons();
+        }
+
+        // 切换全选/取消全选事件
+        function toggleSelectAllEvents(checkbox) {
+            const filteredEvents = getFilteredAndSortedEvents();
+            if (checkbox.checked) {
+                filteredEvents.forEach(event => selectedItems.add(event.id));
+            } else {
+                filteredEvents.forEach(event => selectedItems.delete(event.id));
+            }
+            updateBatchButtons();
+        }
+
+        // 更新批量操作按钮状态
+        function updateBatchButtons() {
+            const selectedCount = selectedItems.size;
+            document.getElementById('selectedCount').textContent = selectedCount;
+            document.getElementById('copySelectedBtn').disabled = selectedCount === 0;
+
+            // 更新全选按钮文本
+            const selectAllBtn = document.getElementById('selectAllBtn');
+            if (currentTab === 'news') {
+                // 新闻视图的全选逻辑待实现
+                selectAllBtn.textContent = '全选';
+            } else {
+                const filteredEvents = getFilteredAndSortedEvents();
+                const allSelected = filteredEvents.length > 0 && filteredEvents.every(event => selectedItems.has(event.id));
+                selectAllBtn.textContent = allSelected ? '取消全选' : '全选';
+            }
+
+            // 更新表格中的复选框状态
+            if (currentTab === 'events') {
+                const checkboxes = document.querySelectorAll('.event-table .checkbox');
+                checkboxes.forEach(checkbox => {
+                    const eventId = checkbox.getAttribute('onchange').match(/'([^']+)'/)[1];
+                    checkbox.checked = selectedItems.has(eventId);
+                });
+
+                // 更新表头的全选复选框状态
+                const headerCheckbox = document.querySelector('.event-table thead .checkbox');
+                if (headerCheckbox) {
+                    const filteredEvents = getFilteredAndSortedEvents();
+                    headerCheckbox.checked = filteredEvents.length > 0 && filteredEvents.every(event => selectedItems.has(event.id));
+                }
+            }
+        }
+
+        // 全选按钮点击处理
+        function selectAll() {
+            if (currentTab === 'news') {
+                // 新闻视图的全选逻辑待实现
+                return;
+            }
+
+            const filteredEvents = getFilteredAndSortedEvents();
+            const allSelected = filteredEvents.length > 0 && filteredEvents.every(event => selectedItems.has(event.id));
+
+            if (allSelected) {
+                // 取消全选
+                filteredEvents.forEach(event => selectedItems.delete(event.id));
+            } else {
+                // 全选
+                filteredEvents.forEach(event => selectedItems.add(event.id));
+            }
+
+            updateBatchButtons();
+        }
+
+        // 清空选择
+        function clearSelection() {
+            selectedItems.clear();
+            updateBatchButtons();
         }
 
         function updateEventSearch(e) {
@@ -2123,6 +2209,7 @@
 
                 ${filteredEvents.length === 0 ? `<div class="empty-state"><p>🔍 没有符合筛选条件的事件</p></div>` : ''}
             `;
+            updateBatchButtons();
         }
 
         function toggleEventExpand(eventId) {
@@ -2146,15 +2233,6 @@
             renderEvents();
         }
 
-        function toggleEventSelection(eventId) {
-            // 事件级别选择，后续可用于批量操作
-            console.log('Event selected:', eventId);
-        }
-
-        function toggleSelectAllEvents(checkbox) {
-            // 全选/取消全选事件
-            console.log('Select all events:', checkbox.checked);
-        }
 
 
         // ==================== 新闻列表功能 ====================
@@ -2230,6 +2308,20 @@
         }
 
         function sortBy(field) {
+            if (currentTab === 'events') {
+                // 事件视图的排序字段映射
+                const fieldMap = {
+                    'rating': 'max_grade',
+                    'type': 'type',
+                    'entities': 'entities',
+                    'sources': 'news_count',
+                    'time': 'end_time'
+                };
+                sortEventsBy(fieldMap[field] || 'max_score');
+                return;
+            }
+
+            // 新闻视图排序
             if (currentSort.field === field) {
                 currentSort.order = currentSort.order === 'asc' ? 'desc' : 'asc';
             } else {
@@ -2251,11 +2343,29 @@
         }
 
         function updateSortButtons() {
-            document.getElementById('sortRating').className = 'sort-btn' + (currentSort.field === 'rating' ? ' active' : '');
-            document.getElementById('sortType').className = 'sort-btn' + (currentSort.field === 'type' ? ' active' : '');
-            document.getElementById('sortEntities').className = 'sort-btn' + (currentSort.field === 'entities' ? ' active' : '');
-            document.getElementById('sortSources').className = 'sort-btn' + (currentSort.field === 'sources' ? ' active' : '');
-            document.getElementById('sortTime').className = 'sort-btn' + (currentSort.field === 'time' ? ' active' : '');
+            let activeField = currentSort.field;
+
+            if (currentTab === 'events') {
+                // 事件视图的排序字段反向映射
+                const fieldMap = {
+                    'max_grade': 'rating',
+                    'type': 'type',
+                    'entities': 'entities',
+                    'news_count': 'sources',
+                    'end_time': 'time',
+                    'max_score': 'rating',
+                    'title': null,
+                    'start_time': 'time',
+                    'news_count': 'sources'
+                };
+                activeField = fieldMap[eventSort.field] || 'rating';
+            }
+
+            document.getElementById('sortRating').className = 'sort-btn' + (activeField === 'rating' ? ' active' : '');
+            document.getElementById('sortType').className = 'sort-btn' + (activeField === 'type' ? ' active' : '');
+            document.getElementById('sortEntities').className = 'sort-btn' + (activeField === 'entities' ? ' active' : '');
+            document.getElementById('sortSources').className = 'sort-btn' + (activeField === 'sources' ? ' active' : '');
+            document.getElementById('sortTime').className = 'sort-btn' + (activeField === 'time' ? ' active' : '');
         }
 
         // 页面加载完成后初始化排序按钮状态
@@ -2368,19 +2478,35 @@
         }
 
         function copySelected() {
-            const newsList = NEWS_ARCHIVE[currentDate] || [];
-            const displayList = getSortedAndFilteredNews(newsList);
-            const selectedNews = displayList.filter((_, index) => selectedItems.has(`${currentDate}-${index}`));
+            if (selectedItems.size === 0) return;
 
-            if (selectedNews.length === 0) return;
+            let textToCopy = '';
+            let count = 0;
 
-            const textToCopy = selectedNews.map(item => {
-                const links = item.sourceLinks?.map(l => l.url).join('\n') || '';
-                return `${item.title}\n${links}`;
-            }).join('\n\n');
+            if (currentTab === 'news') {
+                const newsList = NEWS_ARCHIVE[currentDate] || [];
+                const displayList = getSortedAndFilteredNews(newsList);
+                const selectedNews = displayList.filter((_, index) => selectedItems.has(`${currentDate}-${index}`));
+                count = selectedNews.length;
+
+                textToCopy = selectedNews.map(item => {
+                    const links = item.sourceLinks?.map(l => l.url).join('\n') || '';
+                    return `${item.title}\n${links}`;
+                }).join('\n\n');
+            } else {
+                // 事件视图复制
+                const filteredEvents = getFilteredAndSortedEvents();
+                const selectedEvents = filteredEvents.filter(event => selectedItems.has(event.id));
+                count = selectedEvents.length;
+
+                textToCopy = selectedEvents.map(event => {
+                    const newsLinks = event.news_list.map(news => news.url || '').filter(Boolean).join('\n');
+                    return `${event.title}\n${newsLinks}`;
+                }).join('\n\n');
+            }
 
             navigator.clipboard.writeText(textToCopy).then(() => {
-                showToast(`已复制 ${selectedNews.length} 条`);
+                showToast(`已复制 ${count} 条`);
             });
         }
 

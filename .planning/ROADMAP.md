@@ -15,7 +15,7 @@
 - [x] **Phase 8: EventGrouper Core Component Development** - Implement event grouping core logic and data model (completed 2026-04-02)
 - [x] **Phase 9: Pipeline Integration & Publishing Workflow** - Integrate grouping into processing pipeline and dual-file publishing (completed 2026-04-02)
 - [ ] **Phase 10: Frontend Event Timeline Display** - Implement event timeline presentation and user interaction features
-- [ ] **Phase 11: Event Table Refactor** - Refactor event display to table style with expand/collapse functionality
+- [x] **Phase 11: Event Table Refactor** - Refactor event display to table style with expand/collapse functionality (completed 2026-04-02)
 
 ## Phase Details
 
@@ -105,6 +105,24 @@ Plans:
 - [ ] 11-02-PLAN.md — Admin frontend event table implementation
 - [ ] 11-03-PLAN.md — Public frontend event table integration
 
+### Phase 12: UX 体验优化
+**Goal**: 优化前端交互体验，统一UI风格，提升表格操作效率
+**Depends on**: Phase 11
+**Requirements**: UX-01, UX-02, UX-03, UX-04
+**Success Criteria** (what must be TRUE):
+  1. 扩展性字段默认显示2行，hover展开完整内容，不挤占表格空间
+  2. 热点事件表格支持表头点击排序，显示升/降序指示符
+  3. 事件视图显示完整顶部工具栏，支持全选、复制选中、排序功能
+  4. 筛选控件样式与整体深色主题统一，交互效果一致
+**Plans**: 4 plans
+**UI hint**: yes
+
+Plans:
+- [x] 12-01-PLAN.md — 扩展性字段显示优化（2行截断+hover展开）
+- [x] 12-02-PLAN.md — 热点事件表格表头点击排序功能
+- [ ] 12-03-PLAN.md — 事件表格顶部工具栏功能（排序+复制选中）
+- [x] 12-04-PLAN.md — 筛选控件样式优化，与整体风格统一
+
 ## Progress Table
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -118,4 +136,5 @@ Plans:
 | 8. EventGrouper Core Component Development | 4/4 | Completed | 2026-04-02 |
 | 9. Pipeline Integration & Publishing Workflow | 6/6 | Completed | 2026-04-02 |
 | 10. Frontend Event Timeline Display | 5/6 | In Progress | - |
-| 11. Event Table Refactor | 0/3 | Not started | - |
+| 11. Event Table Refactor | 0/3 | Complete    | 2026-04-02 |
+| 12. UX 体验优化 | 3/4 | In Progress | - |

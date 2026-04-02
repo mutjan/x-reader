@@ -25,7 +25,7 @@ progress:
 ## Current Position
 
 Phase: 12
-Plan: 01 completed
+Plan: 02 completed
 
 - **Completed Phases (v2.0)**:
   - Phase 7: Cleanup Existing Merge Logic ✓ Completed
@@ -33,7 +33,7 @@ Plan: 01 completed
   - Phase 9: Pipeline Integration & Publishing Workflow ✓ Completed
   - Phase 10: Frontend Event Timeline Display ✓ Completed
   - Phase 11: Event Table UI Optimization ✓ Completed
-- **Next Plan**: Phase 12 Plan 02 - 表头排序功能实现
+- **Next Plan**: Phase 12 Plan 03 - 扩展性字段内容过长截断，hover时展开显示完整内容
 - **Status**: In progress
 - **Progress**: 5/6 phases completed
 - **Progress Bar**: ████░ 83%
@@ -56,6 +56,8 @@ Plan: 01 completed
 | Phase 10-frontend-event-timeline-display P04 | 15 | 2 tasks | 1 files |
 | Phase 10-frontend-event-timeline-display P05 | 30 | 2 tasks | 1 files |
 | Phase 12-ux-improvements P01 | 5 | 3 tasks | 1 files |
+| Phase 12-ux-improvements P02 | 15 | 3 tasks | 1 files |
+| Phase 12-ux-improvements P04 | 5 | 2 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -113,5 +115,5 @@ Plan: 01 completed
 ## Session Continuity
 
 Last active session: 2026-04-02
-Last action: Phase 12 Plan 01 completed - 扩展性字段2行截断+hover展开实现
+Last action: Phase 12 Plan 02 completed - 为热点事件表格添加表头点击排序功能
 Next action: 继续执行Phase 12剩余计划
