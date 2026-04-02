@@ -158,7 +158,7 @@ def main():
     # 11. 发布
     if not args.no_publish and publisher:
         logger.info("开始发布到GitHub Pages...")
-        if publisher.publish(processed_items):
+        if publisher.publish(processed_items, full_mode=args.full):
             logger.info("发布成功！")
         else:
             logger.error("发布失败")

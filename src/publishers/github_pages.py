@@ -26,11 +26,12 @@ class GitHubPagesPublisher(BasePublisher):
         self.data_file = os.path.join(self.repo_dir, DATA_FILE)
         self.index_html_file = os.path.join(self.repo_dir, "index.html")
 
-    def publish(self, items: List[ProcessedNewsItem], update_existing: bool = True, **kwargs) -> bool:
+    def publish(self, items: List[ProcessedNewsItem], update_existing: bool = True, full_mode: bool = False, **kwargs) -> bool:
         """
         发布新闻到GitHub Pages
         :param items: 处理后的新闻项列表
         :param update_existing: 是否更新已存在的新闻
+        :param full_mode: 是否全量模式，全量模式下重新生成所有事件分组
         :param kwargs: 额外参数
         :return: 是否发布成功
         """
@@ -40,7 +41,7 @@ class GitHubPagesPublisher(BasePublisher):
 
         try:
             # 1. 合并新闻数据
-            updated_count, new_count = self._merge_news_data(items, update_existing)
+            updated_count, new_count = self._merge_news_data(items, update_existing, full_mode)
 
             if updated_count == 0 and new_count == 0:
                 self.logger.info("没有需要更新的新闻")
@@ -61,7 +62,7 @@ class GitHubPagesPublisher(BasePublisher):
             self.logger.error(f"发布过程异常: {e}")
             return False
 
-    def _merge_news_data(self, new_items: List[ProcessedNewsItem], update_existing: bool = True) -> tuple[int, int]:
+    def _merge_news_data(self, new_items: List[ProcessedNewsItem], update_existing: bool = True, full_mode: bool = False) -> tuple[int, int]:
         """
         合并新的新闻数据到现有数据中
         :param new_items: 新的新闻项列表
@@ -153,6 +154,65 @@ class GitHubPagesPublisher(BasePublisher):
 
         if deleted_count > 0:
             self.logger.info(f"清理过期新闻: 删除了{deleted_count}条超过30天的旧新闻")
+
+        # 获取所有有效新闻ID集合
+        valid_news_ids = set(filtered_dict.keys())
+
+        # 事件分组处理
+        self.logger.info("开始事件分组处理...")
+        event_grouper = EventGrouper()
+        events_data = []
+
+        try:
+            # 将所有保留的新闻转换为ProcessedNewsItem对象
+            all_processed_items = []
+            for item_dict in filtered_dict.values():
+                try:
+                    item = ProcessedNewsItem.from_dict(item_dict)
+                    all_processed_items.append(item)
+                except Exception as e:
+                    self.logger.warning(f"跳过无效新闻条目: {e}")
+
+            if all_processed_items:
+                if full_mode:
+                    # 全量模式：重新生成所有事件分组
+                    self.logger.info("全量模式：重新生成所有事件分组")
+                    events = event_grouper.group_news(all_processed_items)
+                else:
+                    # 增量模式：加载现有分组并更新
+                    self.logger.info("增量模式：加载现有事件分组")
+                    existing_groups = event_grouper.load_event_groups()
+
+                    if existing_groups:
+                        # 过滤现有分组，移除已删除的新闻ID
+                        filtered_groups = []
+                        for group in existing_groups:
+                            # 过滤掉已过期的新闻ID
+                            valid_ids = [news_id for news_id in group.get("news_ids", []) if news_id in valid_news_ids]
+                            if valid_ids:  # 只保留还有效新闻的分组
+                                group["news_ids"] = valid_ids
+                                filtered_groups.append(group)
+                            else:
+                                self.logger.debug(f"删除空事件分组: {group.get('group_id', group.get('event_id'))}")
+
+                        # 增量添加新条目
+                        self.logger.info(f"增量更新现有分组: {len(filtered_groups)}个现有分组，{len(new_items)}条新新闻")
+                        events = event_grouper.incremental_group(filtered_groups, new_items)
+                    else:
+                        # 没有现有分组，直接全量分组
+                        self.logger.info("没有现有分组，执行全量分组")
+                        events = event_grouper.group_news(all_processed_items)
+
+                # 转换事件为字典格式
+                events_data = [event.to_dict() for event in events]
+                self.logger.info(f"事件分组处理完成: 共{len(events_data)}个事件")
+
+                # 保存事件分组到独立文件
+                event_grouper.save_event_groups(events)
+
+        except Exception as e:
+            self.logger.error(f"事件分组处理失败: {e}")
+            # 事件分组失败不影响主流程，继续执行
 
         # 按日期分组
         news_by_date = {}
