@@ -737,7 +737,12 @@ def api_events():
 
     try:
         # 加载事件分组和新闻数据
-        event_groups = load_json(EVENT_GROUPS_FILE_PATH, [])
+        event_groups_data = load_json(EVENT_GROUPS_FILE_PATH, {})
+        # 兼容两种格式：数组格式（旧版）和包含groups字段的对象格式（新版）
+        if isinstance(event_groups_data, list):
+            event_groups = event_groups_data
+        else:
+            event_groups = event_groups_data.get('groups', [])  # 从groups字段获取事件列表
         news_data = load_json(DATA_FILE_PATH, {}).get('news', {})
 
         # 创建新闻查找字典（ID到新闻对象的映射）
@@ -748,7 +753,7 @@ def api_events():
 
         # 处理事件分组，关联新闻数据
         processed_events = []
-        for group in event_groups:
+        for group in event_groups.values() if isinstance(event_groups, dict) else event_groups:
             # 获取该事件的所有新闻
             event_news = []
             for news_id in group.get('news_ids', []):
@@ -826,7 +831,7 @@ def api_events():
                             updated_event['max_score'] = max(n.get('score', 0) for n in filtered_news)
                             grade_order = {"S": 5, "A+": 4, "A": 3, "B": 2, "C": 1}
                             updated_event['max_grade'] = max(
-                                (n.get('grade', 'B') for n in filtered_news),
+                                (n.get('rating', 'B') for n in filtered_news),
                                 key=lambda g: grade_order.get(g, 0)
                             )
                         temp_events.append(updated_event)
