@@ -52,7 +52,7 @@ class EventGrouper:
     def __init__(self, entity_threshold: int = 3, similarity_threshold: float = 0.85):
         self.entity_threshold = entity_threshold
         self.similarity_threshold = similarity_threshold
-        self.grade_order = {"S": 5, "A+": 4, "A": 3, "B": 2, "C": 1}
+        self.grade_order = {"S": 5, "A+": 4, "A": 3, "B": 2, "C": 1, "": 0}
 
     def group_news(self, news_items: List[ProcessedNewsItem]) -> List[Event]:
         """
@@ -231,11 +231,12 @@ class EventGrouper:
 
         return load_json(input_path, [])
 
-    def incremental_group(self, existing_groups: List[Dict], new_items: List[ProcessedNewsItem]) -> List[Event]:
+    def incremental_group(self, existing_groups: List[Dict], new_items: List[ProcessedNewsItem], all_items: List[ProcessedNewsItem] = None) -> List[Event]:
         """
         增量分组：将新条目添加到现有分组中，或创建新分组
         :param existing_groups: 现有分组列表（从文件加载的字典格式）
         :param new_items: 新的新闻条目列表
+        :param all_items: 所有有效新闻条目列表（包括历史新闻和新新闻），用于重建完整事件
         :return: 更新后的事件列表
         """
         if not existing_groups and not new_items:
@@ -246,9 +247,14 @@ class EventGrouper:
 
         # 首先收集所有现有新闻和新新闻，用于重建完整的事件对象
         all_news_items = {}
-        # 添加新条目到字典
-        for item in new_items:
-            all_news_items[item.id] = item
+        # 添加所有有效条目到字典（如果提供了all_items）
+        if all_items:
+            for item in all_items:
+                all_news_items[item.id] = item
+        else:
+            # 兼容旧调用方式，只添加新条目
+            for item in new_items:
+                all_news_items[item.id] = item
 
         for group_dict in existing_groups:
             try:
@@ -263,30 +269,67 @@ class EventGrouper:
                 start_time = datetime.fromisoformat(group_dict["first_seen_at"]) if "first_seen_at" in group_dict else datetime.now()
                 end_time = datetime.fromisoformat(group_dict["last_seen_at"]) if "last_seen_at" in group_dict else datetime.now()
 
-                # 重建该事件的新闻列表：从现有新闻中查找匹配的ID
+                # 重建该事件的新闻列表：
+                # 1. 首先从group_dict中恢复完整的新闻对象（如果存储了完整数据）
+                # 2. 否则从all_news_items中查找匹配的ID
                 news_list = []
-                for news_id in group_dict.get("news_ids", []):
-                    if news_id in all_news_items:
-                        news_list.append(all_news_items[news_id])
+                if "news_list" in group_dict:
+                    # 存储格式包含完整新闻列表，直接反序列化
+                    for news_data in group_dict["news_list"]:
+                        try:
+                            news_item = ProcessedNewsItem(**news_data)
+                            news_list.append(news_item)
+                            # 添加到全局字典，确保后续能找到
+                            all_news_items[news_item.id] = news_item
+                        except Exception as e:
+                            logger.warning(f"跳过无效的新闻数据: {e}")
+                else:
+                    # 只存储了新闻ID，从现有条目查找
+                    for news_id in group_dict.get("news_ids", []):
+                        if news_id in all_news_items:
+                            news_list.append(all_news_items[news_id])
 
-                # 只有当新闻列表非空时才保留这个事件
-                if news_list:
-                    # 创建事件对象
-                    event = Event(
-                        event_id=event_id,
+                # 无论是否找到新闻，都保留事件（保留原有事件数据）
+                # 如果没有找到新闻，我们使用现有事件的元数据继续保留该事件
+                if not news_list and group_dict.get("news_ids", []):
+                    # 事件的新闻都不在当前有效数据中（可能已过期），但我们仍然保留事件结构
+                    # 使用事件的现有元数据创建一个空事件（只保留分组信息，不包含新闻）
+                    logger.debug(f"事件 {event_id} 的新闻已过期，但保留事件结构")
+                    # 创建一个最小化的新闻对象作为占位符（使用事件的第一条新闻ID）
+                    placeholder_news = ProcessedNewsItem(
+                        id=group_dict["news_ids"][0] if group_dict.get("news_ids") else f"placeholder_{event_id}",
                         title=title,
-                        main_news=news_list[0],  # 临时设置，后面会更新
-                        news_list=news_list,
+                        chinese_title=title,
+                        url="",
+                        content="",
+                        published_at=start_time,
+                        processed_at=datetime.now(),
+                        grade=max_grade,
+                        score=max_score,
                         entities=entities,
-                        max_grade=max_grade,
-                        max_score=max_score,
-                        start_time=start_time,
-                        end_time=end_time,
-                        news_count=len(news_list)
+                        source=""
                     )
-                    # 更新事件属性
-                    self._update_event_properties(event)
-                    existing_events.append(event)
+                    news_list = [placeholder_news]
+                elif not news_list:
+                    # 完全没有新闻也没有news_ids，跳过
+                    continue
+
+                # 创建事件对象
+                event = Event(
+                    event_id=event_id,
+                    title=title,
+                    main_news=news_list[0],  # 临时设置，后面会更新
+                    news_list=news_list,
+                    entities=entities,
+                    max_grade=max_grade,
+                    max_score=max_score,
+                    start_time=start_time,
+                    end_time=end_time,
+                    news_count=len(news_list)
+                )
+                # 更新事件属性
+                self._update_event_properties(event)
+                existing_events.append(event)
 
             except Exception as e:
                 logger.warning(f"跳过无效的现有分组: {e}")
@@ -295,7 +338,17 @@ class EventGrouper:
         # 将新条目添加到现有事件或创建新事件
         events = existing_events.copy()
 
+        # 先收集所有现有新闻的ID，避免重复添加
+        existing_news_ids = set()
+        for event in events:
+            for news in event.news_list:
+                existing_news_ids.add(news.id)
+
         for news in new_items:
+            # 跳过已经存在的新闻
+            if news.id in existing_news_ids:
+                continue
+
             matched_event = None
             max_similarity = 0.0
 

@@ -129,39 +129,49 @@ class GitHubPagesPublisher(BasePublisher):
                 existing_dict[item_id] = item_dict
                 new_count += 1
 
-        # 清理超过30天的过期数据
-        thirty_days_ago = datetime.now() - timedelta(days=30)
-        filtered_dict = {}
-        deleted_count = 0
-        for item in existing_dict.values():
-            try:
-                # 解析处理时间，支持多种格式 - 使用处理时间而非原始发布时间判断过期
-                # 兼容旧数据：如果没有processed_at字段，使用published_at
-                time_field = item.get("processed_at", item.get("published_at"))
-                if isinstance(time_field, str):
-                    process_time = datetime.fromisoformat(time_field.replace('Z', '+00:00'))
-                    # 转换为本地时区的naive datetime进行比较
-                    process_time = process_time.astimezone().replace(tzinfo=None)
-                else:
-                    process_time = datetime.fromtimestamp(time_field)
-                if process_time >= thirty_days_ago:
+        # full模式不删除任何数据，保留所有历史新闻；增量模式才清理过期数据
+        if full_mode:
+            # --full 模式：重新获取+重新分组，保留所有已有数据不清理
+            filtered_dict = existing_dict
+            deleted_count = 0
+            self.logger.info("全量模式：保留所有已有新闻，不清理过期数据")
+        else:
+            # 增量模式：清理超过7天的过期数据
+            seven_days_ago = datetime.now() - timedelta(days=7)
+            filtered_dict = {}
+            deleted_count = 0
+            for item in existing_dict.values():
+                try:
+                    # 解析处理时间，支持多种格式 - 使用处理时间而非原始发布时间判断过期
+                    # 兼容旧数据：如果没有processed_at字段，使用published_at
+                    time_field = item.get("processed_at", item.get("published_at"))
+                    if isinstance(time_field, str):
+                        process_time = datetime.fromisoformat(time_field.replace('Z', '+00:00'))
+                        # 转换为本地时区的naive datetime进行比较
+                        process_time = process_time.astimezone().replace(tzinfo=None)
+                    else:
+                        process_time = datetime.fromtimestamp(time_field)
+                    if process_time >= seven_days_ago:
+                        filtered_dict[item["id"]] = item
+                    else:
+                        deleted_count += 1
+                except Exception as e:
+                    # 时间解析失败的话保留数据
                     filtered_dict[item["id"]] = item
-                else:
-                    deleted_count += 1
-            except Exception as e:
-                # 时间解析失败的话保留数据
-                filtered_dict[item["id"]] = item
-                self.logger.warning(f"新闻时间解析失败，保留该条目: {e}")
+                    self.logger.warning(f"新闻时间解析失败，保留该条目: {e}")
 
-        if deleted_count > 0:
-            self.logger.info(f"清理过期新闻: 删除了{deleted_count}条超过30天的旧新闻")
+            if deleted_count > 0:
+                self.logger.info(f"清理过期新闻: 删除了{deleted_count}条超过7天的旧新闻")
 
         # 获取所有有效新闻ID集合
         valid_news_ids = set(filtered_dict.keys())
 
         # 事件分组处理
         self.logger.info("开始事件分组处理...")
-        event_grouper = EventGrouper()
+        # 平衡阈值：既要能聚合相关新闻，又要避免不相关新闻被错误分组
+        # 共同实体阈值=2：需要至少2个共同实体才考虑相似（其中至少1个是特定实体，非通用实体）
+        # 相似度阈值=0.65：内容相似度达到65%才归为同一事件，提高门槛减少误匹配
+        event_grouper = EventGrouper(entity_threshold=2, similarity_threshold=0.65)
         events_data = []
 
         try:
@@ -198,7 +208,7 @@ class GitHubPagesPublisher(BasePublisher):
 
                         # 增量添加新条目
                         self.logger.info(f"增量更新现有分组: {len(filtered_groups)}个现有分组，{len(new_items)}条新新闻")
-                        events = event_grouper.incremental_group(filtered_groups, new_items)
+                        events = event_grouper.incremental_group(filtered_groups, new_items, all_processed_items)
                     else:
                         # 没有现有分组，直接全量分组
                         self.logger.info("没有现有分组，执行全量分组")
