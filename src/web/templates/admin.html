@@ -1881,6 +1881,10 @@
         document.addEventListener('DOMContentLoaded', function() {
             loadNews(1, '', currentFilter, currentSort);
 
+            // 初始化事件视图模式
+            eventViewMode = eventViewPreference;
+            updateViewToggleButton();
+
             // 实体输入框回车事件
             document.getElementById('entityInput').addEventListener('keypress', function(e) {
                 if (e.key === 'Enter') {
@@ -1983,6 +1987,208 @@
             renderEntities();
             document.getElementById('form_keyword').value = '';
             document.getElementById('form_keyword_input').disabled = false;
+        }
+
+        // 事件筛选栏切换
+        function toggleEventFilterBar() {
+            eventFilterBarVisible = !eventFilterBarVisible;
+            const filterBar = document.getElementById('eventFilterBar');
+            filterBar.style.display = eventFilterBarVisible ? 'block' : 'none';
+        }
+
+        // 处理事件时间筛选变化
+        function handleEventTimeFilterChange() {
+            const timeFilter = document.getElementById('eventTimeFilter').value;
+            const customTimeRange = document.getElementById('eventCustomTimeRange');
+
+            if (timeFilter === 'custom') {
+                customTimeRange.style.display = 'block';
+            } else {
+                customTimeRange.style.display = 'none';
+                // 清空自定义时间
+                document.getElementById('eventStartTime').value = '';
+                document.getElementById('eventEndTime').value = '';
+            }
+
+            handleEventFilterChange();
+        }
+
+        // 收集事件筛选参数
+        function collectEventFilters() {
+            const filters = {};
+
+            // 领域筛选
+            const domain = document.getElementById('eventDomainFilter').value;
+            if (domain) {
+                filters.domain = domain;
+            }
+
+            // 热度筛选
+            const scoreFilter = document.getElementById('eventScoreFilter').value;
+            if (scoreFilter) {
+                const scoreMin = parseInt(scoreFilter);
+                filters.score_min = scoreMin;
+                if (scoreMin === 0) {
+                    filters.score_max = 64;
+                }
+            }
+
+            // 时间筛选
+            const timeFilter = document.getElementById('eventTimeFilter').value;
+            const now = new Date();
+            if (timeFilter === 'today') {
+                const today = now.toISOString().split('T')[0];
+                filters.start_time = today + 'T00:00:00';
+                filters.end_time = today + 'T23:59:59';
+            } else if (timeFilter === '3days') {
+                const threeDaysAgo = new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+                filters.start_time = threeDaysAgo + 'T00:00:00';
+            } else if (timeFilter === '7days') {
+                const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+                filters.start_time = sevenDaysAgo + 'T00:00:00';
+            } else if (timeFilter === '30days') {
+                const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+                filters.start_time = thirtyDaysAgo + 'T00:00:00';
+            } else if (timeFilter === 'custom') {
+                const startTime = document.getElementById('eventStartTime').value;
+                const endTime = document.getElementById('eventEndTime').value;
+                if (startTime) {
+                    filters.start_time = startTime + 'T00:00:00';
+                }
+                if (endTime) {
+                    filters.end_time = endTime + 'T23:59:59';
+                }
+            }
+
+            // 评级筛选
+            const ratingCheckboxes = document.querySelectorAll('#eventFilterBar input[type="checkbox"]:checked');
+            const ratings = Array.from(ratingCheckboxes).map(cb => cb.value);
+            if (ratings.length > 0) {
+                filters.ratings = ratings;
+            }
+
+            return filters;
+        }
+
+        // 处理事件筛选变化
+        function handleEventFilterChange() {
+            currentEventFilter = collectEventFilters();
+            currentEventPage = 1; // 筛选变化后回到第一页
+            loadEvents(currentEventPage, currentEventSearch, currentEventFilter, currentEventSort);
+        }
+
+        // 处理事件排序变化
+        function handleEventSortChange() {
+            currentEventSort = document.getElementById('eventSortSelect').value;
+            loadEvents(currentEventPage, currentEventSearch, currentEventFilter, currentEventSort);
+        }
+
+        // 处理事件表头点击排序
+        function handleEventHeaderSort(field) {
+            let sortField = field;
+            // 映射字段名
+            if (field === 'rating') {
+                sortField = 'score'; // 评级对应score字段排序
+            }
+
+            // 如果点击的是当前排序字段，切换升降序；否则默认降序
+            if (currentEventSort.startsWith(sortField + ':')) {
+                const currentOrder = currentEventSort.split(':')[1];
+                const newOrder = currentOrder === 'desc' ? 'asc' : 'desc';
+                currentEventSort = `${sortField}:${newOrder}`;
+            } else {
+                currentEventSort = `${sortField}:desc`;
+            }
+
+            // 更新排序下拉框的值（保持同步）
+            document.getElementById('eventSortSelect').value = currentEventSort;
+
+            // 重新加载数据
+            loadEvents(currentEventPage, currentEventSearch, currentEventFilter, currentEventSort);
+        }
+
+        // 全局事件数据存储，用于重新渲染
+        let currentEventsData = [];
+
+        // 加载事件数据
+        async function loadEvents(page = 1, search = '', filter = null, sort = null) {
+            currentEventPage = page;
+            currentEventSearch = search;
+            if (filter !== null) currentEventFilter = filter;
+            if (sort !== null) currentEventSort = sort;
+
+            const container = document.getElementById('eventsContainer');
+            container.innerHTML = '<div class="loading">加载中...</div>';
+
+            try {
+                // 构建查询参数
+                const params = new URLSearchParams();
+                params.append('page', page);
+                params.append('page_size', 10); // 事件每页显示更少
+                if (search) {
+                    params.append('search', encodeURIComponent(search));
+                }
+                if (Object.keys(currentEventFilter).length > 0) {
+                    params.append('filter', JSON.stringify(currentEventFilter));
+                }
+                if (currentEventSort) {
+                    params.append('sort', currentEventSort);
+                }
+
+                const response = await fetch(`/api/events?${params.toString()}`);
+                const result = await response.json();
+
+                if (result.code === 0) {
+                    const events = result.data;
+                    currentEventsData = events;
+
+                    if (events.length === 0) {
+                        container.innerHTML = '<div class="empty-state">暂无事件数据</div>';
+                        document.getElementById('eventPagination').innerHTML = '';
+                        return;
+                    }
+
+                    // 渲染事件
+                    renderEvents(events);
+
+                    // 渲染分页
+                    renderEventPagination(result.total, result.page_size);
+                } else {
+                    container.innerHTML = `<div class="empty-state">加载失败: ${result.message}</div>`;
+                }
+            } catch (e) {
+                container.innerHTML = `<div class="empty-state">加载失败: ${e.message}</div>`;
+            }
+        }
+
+        function renderEventPagination(total, pageSize) {
+            const totalPages = Math.ceil(total / pageSize);
+            const pagination = document.getElementById('eventPagination');
+
+            if (totalPages <= 1) {
+                pagination.innerHTML = '';
+                return;
+            }
+
+            let html = '';
+            html += `<button class="page-btn" ${currentEventPage === 1 ? 'disabled' : ''} onclick="loadEvents(${currentEventPage - 1}, currentEventSearch, currentEventFilter, currentEventSort)">上一页</button>`;
+
+            const start = Math.max(1, currentEventPage - 2);
+            const end = Math.min(totalPages, currentEventPage + 2);
+
+            for (let i = start; i <= end; i++) {
+                html += `<button class="page-btn ${i === currentEventPage ? 'active' : ''}" onclick="loadEvents(${i}, currentEventSearch, currentEventFilter, currentEventSort)">${i}</button>`;
+            }
+
+            html += `<button class="page-btn" ${currentEventPage === totalPages ? 'disabled' : ''} onclick="loadEvents(${currentEventPage + 1}, currentEventSearch, currentEventFilter, currentEventSort)">下一页</button>`;
+            html += `<span style="margin: 0 10px; color: #718096; font-size: 14px;">共 ${total} 个事件，${totalPages} 页</span>`;
+
+            pagination.innerHTML = html;
+        }
+
+        function handleEventSearch() {
+            const search = document.getElementById('eventSearchInput').value.trim();
+            loadEvents(1, search, currentEventFilter, currentEventSort);
 
             if (keyword) {
                 title.textContent = '编辑时代情绪热点';
