@@ -765,6 +765,18 @@ def api_events():
                 logger.debug(f"跳过事件 {group.get('group_id')}，没有有效新闻")
                 continue
 
+            # 找出主新闻：评分最高，评分相同则取最新发布
+            if len(event_news) > 1:
+                # 按score降序，published_at降序排序
+                sorted_news = sorted(event_news, key=lambda n: (
+                    n.get('score', 0),
+                    # 尝试解析timestamp，失败则用0
+                    int(n.get('published_at_timestamp', 0)) if 'published_at_timestamp' in n else 0
+                ), reverse=True)
+                main_news = sorted_news[0]
+            else:
+                main_news = event_news[0]
+
             # 构建事件对象
             event = {
                 'event_id': group.get('group_id', group.get('event_id', '')),
@@ -773,9 +785,13 @@ def api_events():
                 'max_score': group.get('max_score', 0),
                 'start_time': group.get('first_seen_at', group.get('start_time', '')),
                 'end_time': group.get('last_seen_at', group.get('end_time', '')),
+                'last_seen_at': group.get('last_seen_at', group.get('end_time', '')),
                 'news_count': len(event_news),
                 'entities': group.get('entities', []),
-                'news_list': event_news
+                'news_list': event_news,
+                'main_news_summary': main_news.get('summary', '') if main_news else '',
+                'main_news_expansion': main_news.get('expansion', '') if main_news else '',
+                'is_single_news': len(event_news) == 1
             }
 
             processed_events.append(event)
