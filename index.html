@@ -2656,9 +2656,10 @@
 
         function renderEntities(entities, itemIndex) {
             if (!entities || entities.length === 0) return '<span style="color: #555;">-</span>';
-            return entities.map(entity =>
+            const entityTags = entities.map(entity =>
                 `<span class="entity-tag ${selectedEntity === entity ? 'selected' : ''}" onclick="sortByEntity('${entity.replace(/'/g, "\\'")}')">${entity}</span>`
             ).join('');
+            return `<div class="entities-container">${entityTags}</div>`;
         }
 
         function sortByEntity(entity) {
