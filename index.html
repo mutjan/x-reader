@@ -1862,7 +1862,7 @@
             minNewsCount: 2,
             entity: null
         };
-        let eventSort = { field: 'end_time', order: 'desc' };
+        let eventSort = { field: 'news_count', order: 'desc' };
 
         // 事件表格状态
         let expandedEvents = new Set(); // 存储已展开的事件ID
@@ -1984,10 +1984,6 @@
                         valA = (a.entities || []).length;
                         valB = (b.entities || []).length;
                         break;
-                    case 'end_time':
-                        valA = a.end_time;
-                        valB = b.end_time;
-                        break;
                     default:
                         valA = a.max_score;
                         valB = b.max_score;
@@ -2037,7 +2033,7 @@
 
         function sortEventsBy(field) {
             // 支持的排序字段列表
-            const supportedFields = ['max_score', 'max_grade', 'type', 'title', 'entities', 'end_time', 'news_count', 'start_time'];
+            const supportedFields = ['max_score', 'max_grade', 'type', 'title', 'entities', 'news_count', 'start_time'];
 
             // 验证字段，不支持的字段默认使用max_score
             if (!supportedFields.includes(field)) {
@@ -2243,7 +2239,6 @@
                             <option value="type" ${eventSort.field === 'type' ? 'selected' : ''}>新闻类型</option>
                             <option value="title" ${eventSort.field === 'title' ? 'selected' : ''}>事件标题</option>
                             <option value="entities" ${eventSort.field === 'entities' ? 'selected' : ''}>实体数量</option>
-                            <option value="end_time" ${eventSort.field === 'end_time' ? 'selected' : ''}>更新时间</option>
                             <option value="news_count" ${eventSort.field === 'news_count' ? 'selected' : ''}>新闻数量</option>
                             <option value="start_time" ${eventSort.field === 'start_time' ? 'selected' : ''}>开始时间</option>
                         </select>
@@ -2274,9 +2269,6 @@
                             </th>
                             <th>扩展性</th>
                             <th>链接</th>
-                            <th onclick="sortEventsBy('end_time')" style="cursor: pointer;">
-                                更新时间 ${eventSort.field === 'end_time' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
-                            </th>
                             <th onclick="sortEventsBy('news_count')" style="cursor: pointer;">
                                 新闻数 ${eventSort.field === 'news_count' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
                             </th>
@@ -2337,9 +2329,6 @@
                                         <div class="link-container">
                                             <a href="${event.main_news_url}" target="_blank" class="source-link" title="${event.main_news_url}">${extractDomain(event.main_news_url)}</a>
                                         </div>
-                                    </td>
-                                    <td style="color: #8899a6; font-size: 12px; white-space: nowrap;">
-                                        ${formatTime(event.end_time)}
                                     </td>
                                     <td style="text-align: center; font-weight: 600;">${event.news_count}</td>
                                 </tr>
@@ -2486,7 +2475,7 @@
                     'type': 'type',
                     'entities': 'entities',
                     'sources': 'news_count',
-                    'time': 'end_time'
+                    'time': 'news_count'
                 };
                 sortEventsBy(fieldMap[field] || 'max_score');
                 return;
@@ -2523,11 +2512,9 @@
                     'type': 'type',
                     'entities': 'entities',
                     'news_count': 'sources',
-                    'end_time': 'time',
                     'max_score': 'rating',
                     'title': null,
-                    'start_time': 'time',
-                    'news_count': 'sources'
+                    'start_time': 'time'
                 };
                 activeField = fieldMap[eventSort.field] || 'rating';
             }
