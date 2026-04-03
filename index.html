@@ -1962,6 +1962,10 @@
                         valA = a.start_time;
                         valB = b.start_time;
                         break;
+                    case 'end_time':
+                        valA = a.end_time;
+                        valB = b.end_time;
+                        break;
                     case 'title':
                         valA = a.title.toLowerCase();
                         valB = b.title.toLowerCase();
@@ -2033,7 +2037,7 @@
 
         function sortEventsBy(field) {
             // 支持的排序字段列表
-            const supportedFields = ['max_score', 'max_grade', 'type', 'title', 'entities', 'news_count', 'start_time'];
+            const supportedFields = ['max_score', 'max_grade', 'type', 'title', 'entities', 'news_count', 'start_time', 'end_time'];
 
             // 验证字段，不支持的字段默认使用max_score
             if (!supportedFields.includes(field)) {
@@ -2241,6 +2245,7 @@
                             <option value="entities" ${eventSort.field === 'entities' ? 'selected' : ''}>实体数量</option>
                             <option value="news_count" ${eventSort.field === 'news_count' ? 'selected' : ''}>新闻数量</option>
                             <option value="start_time" ${eventSort.field === 'start_time' ? 'selected' : ''}>开始时间</option>
+                            <option value="end_time" ${eventSort.field === 'end_time' ? 'selected' : ''}>更新时间</option>
                         </select>
                     </div>
 
@@ -2269,6 +2274,9 @@
                             </th>
                             <th>扩展性</th>
                             <th>链接</th>
+                            <th onclick="sortEventsBy('end_time')" style="cursor: pointer;">
+                                更新时间 ${eventSort.field === 'end_time' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
                             <th onclick="sortEventsBy('news_count')" style="cursor: pointer;">
                                 新闻数 ${eventSort.field === 'news_count' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
                             </th>
@@ -2329,6 +2337,9 @@
                                         <div class="link-container">
                                             <a href="${event.main_news_url}" target="_blank" class="source-link" title="${event.main_news_url}">${extractDomain(event.main_news_url)}</a>
                                         </div>
+                                    </td>
+                                    <td style="text-align: center; white-space: nowrap;">
+                                        ${event.end_time ? new Date(event.end_time * 1000).toLocaleString('zh-CN', {month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'}) : '--'}
                                     </td>
                                     <td style="text-align: center; font-weight: 600;">${event.news_count}</td>
                                 </tr>
