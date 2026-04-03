@@ -21196,6 +21196,78 @@
     ],
     "2026-04-03": [
       {
+        "id": "becaace7173ac5ce9a31b47bc97decc9",
+        "title": "研究者系统性解决Jane Street休眠LLM后门发现挑战",
+        "original_title": "[R] Solving the Jane Street Dormant LLM Challenge: A Systematic Approach to Backdoor Discovery",
+        "summary": "安全研究团队基于多年攻防经验，成功破解Jane Street提出的休眠大模型挑战，在三个测试模型中全部找到隐藏的后门触发机制。",
+        "rating": "S",
+        "score": 92,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究成果有望提升大模型安全检测能力，推动AI安全审计标准的完善，对金融等高安全需求领域的大模型应用有重要参考价值。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning (deepseek)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sarnt0/r_solving_the_jane_street_dormant_llm_challenge_a/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775192493,
+        "published_at": "2026-04-03T13:01:33.322874",
+        "source": "Machine Learning (deepseek)",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sarnt0/r_solving_the_jane_street_dormant_llm_challenge_a/",
+        "event_id": null
+      },
+      {
+        "id": "412d8a56a2e60136291629125bbc55ed",
+        "title": "Google发布Gemma 4大模型 实现跨NVIDIA AMD硬件统一推理栈",
+        "original_title": "[P] Gemma 4 running on NVIDIA B200 and AMD MI355X from the same inference stack, 15% throughput gain over vLLM on Blackwell",
+        "summary": "Google DeepMind推出Gemma 4系列大模型，包含31B稠密版和26B MoE版，支持多模态输入，在MAX推理栈上实现NVIDIA B200和AMD MI355X跨平台部署，吞吐量较vLLM提升15%。",
+        "rating": "S",
+        "score": 90,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "跨硬件统一推理栈的实现有望降低大模型部署成本，推动异构计算架构在AI领域的普及，可能对NVIDIA的市场主导地位形成挑战。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1saot07/p_gemma_4_running_on_nvidia_b200_and_amd_mi355x/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775192493,
+        "published_at": "2026-04-03T13:01:33.322897",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1saot07/p_gemma_4_running_on_nvidia_b200_and_amd_mi355x/",
+        "event_id": null
+      },
+      {
+        "id": "213429b99934aeefc771c24911208dae",
+        "title": "研究者推出机器人AI真实硬件基准测试PhAIL",
+        "original_title": "[P] PhAIL (phail.ai) – an open benchmark for robot AI on real hardware. Best model: 5% of human throughput, needs help every 4 minutes.",
+        "summary": "研究人员开发了面向真实硬件的机器人AI基准测试平台PhAIL，测试显示当前最优模型仅能达到人类作业效率的5%，平均每4分钟需要人工干预。",
+        "rating": "A",
+        "score": 81,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该基准测试将推动具身智能研发从演示场景向实际生产场景落地，为机器人AI的性能评估提供更真实的衡量标准，加速工业机器人的智能化进程。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sajdwr/p_phail_phailai_an_open_benchmark_for_robot_ai_on/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775192493,
+        "published_at": "2026-04-03T13:01:33.322911",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sajdwr/p_phail_phailai_an_open_benchmark_for_robot_ai_on/",
+        "event_id": null
+      },
+      {
         "id": "58b68d2ff735a4a542a69a77306f7af4",
         "title": "Arcee发布开源Trinity-Large-Thinking模型 填补美国高性能开源AI空白",
         "original_title": "Arcee's new, open source Trinity-Large-Thinking is the rare, powerful U.S.-made AI model that enterprises can download and customize",
@@ -21844,6 +21916,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-03T10:03:11.581406",
-  "total_news": 778
+  "last_updated": "2026-04-03T13:02:01.257700",
+  "total_news": 781
 }
