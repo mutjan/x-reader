@@ -1657,6 +1657,7 @@
                                     </th>
                                     <th>类型</th>
                                     <th>标题</th>
+                                    <th>摘要</th>
                                     <th>实体</th>
                                     <th onclick="handleHeaderSort('sources_count')" style="cursor: pointer; user-select: none;">
                                         来源数 ${currentSort.startsWith('sources_count') ? (currentSort.endsWith(':desc') ? '↓' : '↑') : ''}
@@ -1681,7 +1682,8 @@
                                 <td><span class="rating-tag ${ratingClass}">${item.rating || 'C'}</span></td>
                                 <td><span class="type-tag ${typeClass}">${item.typeName || item.type || '其他'}</span></td>
                                 <td style="max-width: 400px;">${item.title}</td>
-                                <td>${entities}</td>
+                                <td style="font-size: 12px; line-height: 1.5; color: #718096; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; max-height: calc(12px * 1.5 * 2); transition: all 0.2s ease; padding: 4px; border-radius: 4px;" onmouseover="this.style.webkitLineClamp='20'; this.style.maxHeight='calc(12px * 1.5 * 20)'; this.style.background='#e0e7ff'; this.style.overflow='visible';" onmouseout="this.style.webkitLineClamp='2'; this.style.maxHeight='calc(12px * 1.5 * 2)'; this.style.background='transparent'; this.style.overflow='hidden';">${item.summary || '-'}</td>
+                                <td><div class="entities-container">${entities}</div></td>
                                 <td>${item.sources || 0}</td>
                                 <td style="white-space: nowrap;">${pubTime}</td>
                                 <td>

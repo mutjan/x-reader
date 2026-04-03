@@ -155,7 +155,7 @@ Plans:
 
 Plans:
 - [ ] 14-01-PLAN.md — 新闻列表行高统一约束优化
-- [ ] 14-02-PLAN.md — 事件表格链接显示来源域名
+- [x] 14-02-PLAN.md — 事件表格链接显示来源域名
 - [x] 14-03-PLAN.md — 实体列高度显示问题修复
 
 ## Progress Table
@@ -174,4 +174,4 @@ Plans:
 | 11. Event Table Refactor | 3/3 | Completed | 2026-04-02 |
 | 12. UX 体验优化 | 4/4 | Completed | 2026-04-02 |
 | 13. 事件展示与实体识别优化 | 3/3 | Completed | 2026-04-03 |
-| 14. 前端新闻表格统一化优化 | 1/3 | In Progress|  |
+| 14. 前端新闻表格统一化优化 | 2/3 | In Progress|  |
