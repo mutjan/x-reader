@@ -184,6 +184,15 @@ class BaseAIProcessor(ABC):
 
         snapshot = load_json(snapshot_file)
 
+        # 如果实体识别结果已存在，填充到processed_items中
+        entity_results = snapshot.get("entity_results", {})
+        if entity_results:
+            logger.info("快照中已有实体识别结果，正在填充...")
+            for item in processed_items:
+                if item.url in entity_results:
+                    item.entities = entity_results[item.url]
+            logger.info(f"已为 {len([item for item in processed_items if item.entities])} 条新闻填充实体")
+
         # 保存处理结果
         snapshot["base_results"] = [item.to_dict() for item in processed_items]
         snapshot["status"]["base_processing"] = "completed"
@@ -227,6 +236,40 @@ class BaseAIProcessor(ABC):
                 logger.warning(f"跳过无效基础处理结果: {e}")
 
         return processed_items
+
+    def save_entity_results_to_snapshot(self, snapshot_id: str, entity_results: Dict[str, List[str]]) -> bool:
+        """保存实体识别结果到快照"""
+        snapshot_file = os.path.join(SNAPSHOT_DIR, f"snapshot_{snapshot_id}.json")
+        if not os.path.exists(snapshot_file):
+            logger.error(f"快照文件不存在: {snapshot_file}")
+            return False
+
+        snapshot = load_json(snapshot_file)
+
+        # 保存实体识别结果
+        snapshot["entity_results"] = entity_results
+        snapshot["status"]["entity_recognition"] = "completed"
+
+        # 保存更新后的快照
+        save_json(snapshot, snapshot_file)
+        logger.info(f"实体识别结果已保存到快照")
+        return True
+
+    def load_entity_results_from_snapshot(self, snapshot_id: str) -> Dict[str, List[str]]:
+        """从快照加载实体识别结果"""
+        snapshot_file = os.path.join(SNAPSHOT_DIR, f"snapshot_{snapshot_id}.json")
+        if not os.path.exists(snapshot_file):
+            logger.error(f"快照文件不存在: {snapshot_file}")
+            return {}
+
+        snapshot = load_json(snapshot_file)
+        entity_results = snapshot.get("entity_results", {})
+
+        if not entity_results:
+            logger.warning("快照中没有实体识别结果")
+            return {}
+
+        return entity_results
 
     def parse_response(self, response_text: str, original_items: List[RawNewsItem]) -> List[ProcessedNewsItem]:
         """解析AI返回的响应"""
@@ -393,9 +436,11 @@ class ManualProcessor(BaseAIProcessor):
             "items_count": len(items),
             "status": {
                 "base_processing": "pending",
+                "entity_recognition": "pending",
                 "scoring": "pending"
             },
             "base_results": None,
+            "entity_results": None,
             "scoring_results": None,
             "items": [
                 {
@@ -414,21 +459,35 @@ class ManualProcessor(BaseAIProcessor):
         snapshot_file = os.path.join(SNAPSHOT_DIR, f"snapshot_{snapshot_id}.json")
         save_json(snapshot, snapshot_file)
 
-        # 生成提示词，包含snapshot_id在文件名中
+        # 生成基础处理提示词，包含snapshot_id在文件名中
         prompt = self.build_prompt(items)
         prompt_file = os.path.join(TEMP_DIR, f"ai_prompt_{snapshot_id}.txt")
 
         with open(prompt_file, 'w', encoding='utf-8') as f:
             f.write(prompt)
 
+        # 生成实体识别提示词
+        entity_processor = EntityProcessor()
+        entity_prompt = entity_processor.build_prompt(items)
+        entity_prompt_file = os.path.join(TEMP_DIR, f"entity_prompt_{snapshot_id}.txt")
+
+        with open(entity_prompt_file, 'w', encoding='utf-8') as f:
+            f.write(entity_prompt)
+
+        # 更新快照状态：实体识别待处理
+        snapshot["status"]["entity_recognition"] = "pending"
+        save_json(snapshot, snapshot_file)
+
         logger.info(f"已生成处理快照: {snapshot_file}")
         logger.info(f"已生成基础处理提示词文件: {prompt_file}")
+        logger.info(f"已生成实体识别提示词文件: {entity_prompt_file}")
         logger.info(f"快照ID: {snapshot_id}")
-        logger.info("=== 两步处理流程 ===")
+        logger.info("=== 三步处理流程 ===")
         logger.info("步骤1: 将基础处理提示词发送给AI处理，将结果保存为JSON文件（如：_ai_base_result.json）")
-        logger.info("步骤2: 运行导入脚本时指定基础结果文件，系统将自动生成分打提示词")
-        logger.info("步骤3: 将打分提示词发送给AI处理，将结果保存为JSON文件（如：_ai_scoring_result.json）")
-        logger.info("步骤4: 再次运行导入脚本指定打分结果文件，完成完整处理流程")
+        logger.info("步骤2: 将实体识别提示词发送给AI处理，将结果保存为JSON文件（如：_ai_entity_result.json）")
+        logger.info("步骤3: 运行导入脚本时指定基础结果文件和实体结果文件，系统将自动生成分打提示词")
+        logger.info("步骤4: 将打分提示词发送给AI处理，将结果保存为JSON文件（如：_ai_scoring_result.json）")
+        logger.info("步骤5: 再次运行导入脚本指定打分结果文件，完成完整处理流程")
 
         # 这里返回空列表，需要用户手动处理后重新运行
         return []

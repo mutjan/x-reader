@@ -7,7 +7,7 @@ import os
 import argparse
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.processors.ai_processor import ManualProcessor, AIScorer
+from src.processors.ai_processor import ManualProcessor, AIScorer, EntityProcessor
 from src.processors.duplicate import DuplicateRemover
 from src.publishers.factory import PublisherFactory
 from src.utils.common import setup_logger, save_json, load_json
@@ -22,6 +22,7 @@ def main():
     parser = argparse.ArgumentParser(description='导入手动处理的AI结果并完成发布流程')
     parser.add_argument('--snapshot-id', required=True, help='快照ID，用于加载原始条目快照')
     parser.add_argument('--base-result-file', default='_ai_base_result.json', help='基础处理结果JSON文件路径 (默认: _ai_base_result.json)')
+    parser.add_argument('--entity-result-file', help='实体识别结果JSON文件路径，提供则导入实体识别结果')
     parser.add_argument('--scoring-result-file', help='打分结果JSON文件路径，提供则执行打分步骤')
     parser.add_argument('--continue', action='store_true', dest='continue_process', help='从快照中已有的基础处理结果继续，不需要重新导入基础结果')
     parser.add_argument('--dry-run', action='store_true', help='仅加载并验证数据，不发布')
@@ -59,13 +60,28 @@ def main():
     # 初始化公共组件
     duplicate_remover = DuplicateRemover()
     ai_processor = ManualProcessor()
+    entity_processor = EntityProcessor()
     processed_items = []
 
     if args.dry_run:
         logger.info("Dry run 模式，加载完成后退出")
         return 0
 
-    # 2. 处理基础处理结果
+    # 2. 处理实体识别结果（如果提供）
+    if args.entity_result_file:
+        if not os.path.exists(args.entity_result_file):
+            logger.error(f"实体识别结果文件 {args.entity_result_file} 不存在")
+            return 1
+
+        entity_results = entity_processor.load_manual_result(args.entity_result_file, filtered_items)
+        logger.info(f"实体识别完成，得到 {len(entity_results)} 条新闻的实体")
+
+        if entity_results:
+            # 保存实体识别结果到快照
+            ai_processor.save_entity_results_to_snapshot(args.snapshot_id, entity_results)
+            logger.info("实体识别结果已保存到快照")
+
+    # 3. 处理基础处理结果
     if not args.continue_process:
         # 导入新的基础处理结果
         base_result_file = args.base_result_file
@@ -80,7 +96,7 @@ def main():
             logger.warning("没有有效新闻，退出")
             return 0
 
-        # 保存基础处理结果到快照
+        # 保存基础处理结果到快照（会自动填充已有的实体结果）
         ai_processor.save_base_results_to_snapshot(args.snapshot_id, processed_items)
 
         # 如果没有提供打分结果文件，流程在此结束，等待用户处理打分
@@ -94,6 +110,15 @@ def main():
             logger.error("快照中没有可继续处理的基础结果，请先运行不带 --continue 参数的命令导入基础结果")
             return 1
         logger.info(f"从快照加载到 {len(processed_items)} 条已完成基础处理的新闻")
+
+        # 加载实体识别结果并填充
+        entity_results = ai_processor.load_entity_results_from_snapshot(args.snapshot_id)
+        if entity_results:
+            logger.info("从快照加载到实体识别结果，正在填充...")
+            for item in processed_items:
+                if item.url in entity_results:
+                    item.entities = entity_results[item.url]
+            logger.info(f"已为 {len([item for item in processed_items if item.entities])} 条新闻填充实体")
 
     # 3. 处理打分结果（如果提供）
     if args.scoring_result_file:

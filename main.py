@@ -113,23 +113,8 @@ def main():
         logger.warning("预筛选后没有剩余新闻")
         return 0
 
-    # 7. 实体识别（仅基于英文内容）
-    logger.info(f"开始实体识别，共 {len(filtered_items)} 条新闻")
-
-    # 分批进行实体识别
-    all_entities = {}
-    for i in range(0, len(filtered_items), args.batch_size):
-        batch = filtered_items[i:i+args.batch_size]
-        logger.info(f"实体识别批次 {i//args.batch_size + 1}/{(len(filtered_items) + args.batch_size - 1)//args.batch_size} "
-                   f"({len(batch)}条)")
-        batch_entities = entity_processor.process_batch(batch)
-        all_entities.update(batch_entities)
-
-    if not all_entities:
-        logger.warning("实体识别后没有结果，继续后续处理（实体将为空）")
-
-    # 8. AI处理（标题/摘要生成）
-    logger.info(f"开始标题摘要生成，共 {len(filtered_items)} 条新闻")
+    # 7. AI处理（标题/摘要生成 + 实体识别）
+    logger.info(f"开始AI处理，共 {len(filtered_items)} 条新闻")
 
     # 分批处理
     processed_items = []
@@ -144,13 +129,17 @@ def main():
         logger.warning("AI处理后没有剩余新闻")
         return 0
 
-    # 填充实体识别结果
-    if all_entities:
-        logger.info("填充实体识别结果...")
+    # 8. 实体识别处理
+    logger.info("开始实体识别处理...")
+    entity_results = entity_processor.process_batch(filtered_items)
+    if entity_results:
+        # 将实体识别结果填充到处理后的新闻项中
         for item in processed_items:
-            if item.url in all_entities:
-                item.entities = all_entities[item.url]
+            if item.url in entity_results:
+                item.entities = entity_results[item.url]
         logger.info(f"已为 {len([item for item in processed_items if item.entities])} 条新闻填充实体")
+    else:
+        logger.info("实体识别处理完成，无实体结果需要填充")
 
     # 9. 处理后去重
     logger.info("处理后去重...")
