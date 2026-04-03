@@ -21196,6 +21196,126 @@
     ],
     "2026-04-03": [
       {
+        "id": "6a33726bb830ac7f2e3e92e795ae8d39",
+        "title": "开发者基于Claude Opus微调Gemma 4模型 推理能力显著提升",
+        "original_title": "I fine-tuned Gemma-4-31b on Claude Opus 4.6 thinking to improve the overall quality and personality of the model. Download it here: https://huggingfac...",
+        "summary": "开发者使用Claude Opus 4.6思维链数据对Gemma-4-31b模型进行微调，优化了模型整体质量和个性化表现，微调后的模型已开源至Hugging Face平台。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该微调方案可能为开源模型能力提升提供新路径，或将推动更多基于闭源模型知识蒸馏的开源项目出现。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/kaiostephens/status/2039886061317361851"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775196112,
+        "published_at": "2026-04-03T14:01:52.590407",
+        "source": "Twitter",
+        "url": "https://x.com/kaiostephens/status/2039886061317361851",
+        "event_id": null
+      },
+      {
+        "id": "8b97bafdc01824ff1b4521cc0e343a2f",
+        "title": "研究者在Blackwell B200上实现TurboQuant压缩引擎 KV缓存压缩达5倍",
+        "original_title": "I implemented @GoogleResearch's TurboQuant as a CUDA-native compression engine on Blackwell B200. 5x KV cache compression on Qwen 2.5-1.5B, near-losel...",
+        "summary": "研究者将谷歌TurboQuant算法实现为CUDA原生压缩引擎，在Blackwell B200 GPU上对Qwen 2.5-1.5B模型实现了5倍KV缓存压缩，接近无损的注意力分数计算，且直接从压缩内存生成内容。",
+        "rating": "A+",
+        "score": 85,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术可大幅降低大模型推理显存占用，有望推动长上下文大模型在消费级硬件上的部署应用。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/anirudhbv_ce/status/2039876646056919252"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775196112,
+        "published_at": "2026-04-03T14:01:52.590427",
+        "source": "Twitter",
+        "url": "https://x.com/anirudhbv_ce/status/2039876646056919252",
+        "event_id": null
+      },
+      {
+        "id": "33d6018e8ef63c4670dce191a2a6161c",
+        "title": "开发者构建AI代理个人知识库 基于Obsidian实现论文自动筛选",
+        "original_title": "RT elvis: Building a personal knowledge base for my agents is increasingly where I spend my time these days. Like @karpathy, I also use Obsidian for m...",
+        "summary": "开发者像Andrej Karpathy一样使用Obsidian作为Markdown知识库，不同之处在于其通过长期调优的Skill实现了高价值研究论文的自动筛选和整理，大幅提升知识管理效率。",
+        "rating": "B",
+        "score": 70,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这种自动化知识管理方案可能成为AI代理开发的标准配置，推动个人知识管理工具与AI工作流的深度融合。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/dair_ai/status/2039844407914975496"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775196112,
+        "published_at": "2026-04-03T14:01:52.590440",
+        "source": "Twitter",
+        "url": "https://x.com/dair_ai/status/2039844407914975496",
+        "event_id": null
+      },
+      {
+        "id": "d315e81377a5cecf931ff3a447309177",
+        "title": "Gemma 4 31B搭载TurboQuant KV缓存 MLX平台显存占用降低63%",
+        "original_title": "Gemma 4 31B running with TurboQuant KV cache on MLX 🔥 128K context: → KV Memory: 13.3 GB → 4.9 GB (63% reduction) → Peak Memory: 75.2 GB → 65.8...",
+        "summary": "Gemma 4 31B模型在MLX平台上使用TurboQuant KV缓存压缩技术，128K上下文场景下KV内存从13.3GB降至4.9GB，减少63%，峰值内存也降低9.4GB且质量保持不变。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该优化使大模型在苹果硅设备上的长上下文推理成为可能，或将加速端侧大模型应用的普及。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/Prince_Canuma/status/2039840313074753896"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775196112,
+        "published_at": "2026-04-03T14:01:52.590452",
+        "source": "Twitter",
+        "url": "https://x.com/Prince_Canuma/status/2039840313074753896",
+        "event_id": null
+      },
+      {
+        "id": "25b138c40b0fc39c49be268d085fee3c",
+        "title": "Anthropic最新研究揭示大模型内部存在情感概念表征",
+        "original_title": "RT Anthropic: New Anthropic research: Emotion concepts and their function in a large language model. All LLMs sometimes act like they have emotions. B...",
+        "summary": "Anthropic研究发现大语言模型内部存在情感概念的表征，这些表征能够驱动Claude的行为，有时会产生出人意料的表现，解释了LLM偶尔表现出情绪化反应的原因。",
+        "rating": "S",
+        "score": 96,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该发现可能改变对大模型认知机制的理解，为AI对齐研究和可控生成技术提供新的研究方向。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/attentionmech/status/2039943066229121037"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775196112,
+        "published_at": "2026-04-03T14:01:52.590461",
+        "source": "Twitter",
+        "url": "https://x.com/attentionmech/status/2039943066229121037",
+        "event_id": null
+      },
+      {
         "id": "becaace7173ac5ce9a31b47bc97decc9",
         "title": "研究者系统性解决Jane Street休眠LLM后门发现挑战",
         "original_title": "[R] Solving the Jane Street Dormant LLM Challenge: A Systematic Approach to Backdoor Discovery",
@@ -21916,6 +22036,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-03T13:02:01.257700",
-  "total_news": 781
+  "last_updated": "2026-04-03T14:02:25.651269",
+  "total_news": 786
 }
