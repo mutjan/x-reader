@@ -21217,7 +21217,11 @@
         "published_at": "2026-04-03T14:01:52.590407",
         "source": "Twitter",
         "url": "https://x.com/kaiostephens/status/2039886061317361851",
-        "event_id": null
+        "event_id": null,
+        "original_content": "I fine-tuned Gemma-4-31b on Claude Opus 4.6 thinking to improve the overall quality and personality of the model. Download it here: https://huggingface.co/kai-os/gemma4-31b-Opus-4.6-reasoning Google: We just released Gemma 4 — our most intelligent open models to date. Built from the same world-class research as Gemini 3, Gemma 4 brings breakthrough intelligence directly to your own hardware for advanced reasoning and agentic workflows. Released under a commercially",
+        "chinese_title": "开发者基于Claude Opus微调Gemma 4模型 推理能力显著提升",
+        "grade": "A+",
+        "extension": "该微调方案可能为开源模型能力提升提供新路径，或将推动更多基于闭源模型知识蒸馏的开源项目出现。"
       },
       {
         "id": "8b97bafdc01824ff1b4521cc0e343a2f",
@@ -21241,7 +21245,11 @@
         "published_at": "2026-04-03T14:01:52.590427",
         "source": "Twitter",
         "url": "https://x.com/anirudhbv_ce/status/2039876646056919252",
-        "event_id": null
+        "event_id": null,
+        "original_content": "I implemented @GoogleResearch's TurboQuant as a CUDA-native compression engine on Blackwell B200. 5x KV cache compression on Qwen 2.5-1.5B, near-loseless attention scores, generating live from compressed memory. 5 custom cuTile CUDA kernels ft: - fused attention (with QJL corrections) - online softmax -on-chip cache decompression - pipelined TMA loads Try it out: https://devtechjr.github.io/turboquant_cutile s/o @blelbach and the cuTile team at @nvidia for lending me Blackwell GPU access :) cc @sundeep @GavinSherry",
+        "chinese_title": "研究者在Blackwell B200上实现TurboQuant压缩引擎 KV缓存压缩达5倍",
+        "grade": "A+",
+        "extension": "该技术可大幅降低大模型推理显存占用，有望推动长上下文大模型在消费级硬件上的部署应用。"
       },
       {
         "id": "33d6018e8ef63c4670dce191a2a6161c",
@@ -21265,7 +21273,11 @@
         "published_at": "2026-04-03T14:01:52.590440",
         "source": "Twitter",
         "url": "https://x.com/dair_ai/status/2039844407914975496",
-        "event_id": null
+        "event_id": null,
+        "original_content": "RT elvis Building a personal knowledge base for my agents is increasingly where I spend my time these days. Like @karpathy, I also use Obsidian for my MD vaults. What's different in my approach is that I curate research papers on a daily basis and have actually tuned a Skill for months to find high-signal, relevant papers. I was reviewing and curating papers manually for some time, but now it's all automated as it has gotten so good at capturing what I consider the best of the best. There are so many papers these days, so this is a big deal. You all get to benefit from that with the papers I feature in my timeline and on @dair_ai. The papers are indexed using @tobi qmd cli tool (all of it in markdown files along with useful metadata). So good for semantic search and surfacing insights, unlike anything out there. I am a visual person, so I then started to experiment with how to leverage this personal knowledge base of research papers inside my new interactive artifact generator (mcp tools inside my agent orchestrator system). The result is what you see in the clip. 100s of papers with all sorts of insights visualized. I keep track of research papers daily, so believe me when I tell you that this system is absolutely insane at surfacing insights. This is the result of months of tinkering on how to index research and leverage agent automations for wikification and robust documentation. But this is just the beginning. The visual artifact (which is interactive too) can be changed dynamically as I please. I can prompt my agent to throw any data at it. I can add different views to the data. Different interactions. I feel like this is the most personalized research system I have ever built and used, and it's not even close. The knowledge that the agents are able to surface from this basic setup is already extremely useful as I experiment with new agentic engineering concepts. I feel like this knowledge layer and the higher-level ones I am working on will allow me to maximize other automation tools like autoresearch. The research is only as good as the research questions. And the research questions are only as good as the insights the agents have access to. Where I am spending time now is on how to make this more actionable. I am obsessed about the search problem here. The automations, autoresearch, ralph research loop (I built one months ago) are easier to build but are only as good as what you feed them. Work in progress. More updates soon. Back to building. Andrej Karpathy: LLM Knowledge Bases Something I'm finding very useful recently: using LLMs to build personal knowledge bases for various topics of research interest. In this way, a large fraction of my recent token throughput is going less into manipulating code, and more into manipulating",
+        "chinese_title": "开发者构建AI代理个人知识库 基于Obsidian实现论文自动筛选",
+        "grade": "B",
+        "extension": "这种自动化知识管理方案可能成为AI代理开发的标准配置，推动个人知识管理工具与AI工作流的深度融合。"
       },
       {
         "id": "d315e81377a5cecf931ff3a447309177",
@@ -21289,7 +21301,11 @@
         "published_at": "2026-04-03T14:01:52.590452",
         "source": "Twitter",
         "url": "https://x.com/Prince_Canuma/status/2039840313074753896",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Gemma 4 31B running with TurboQuant KV cache on MLX 🔥 128K context: → KV Memory: 13.3 GB → 4.9 GB (63% reduction) → Peak Memory: 75.2 GB → 65.8 GB (-9.4 GB) → Quality preserved TurboQuant compression scales with sequence length, so the longer the context, the bigger the savings! Try it out: &gt; uv run mlx_vlm.generate –model google/gemma-4-31b-it –kv-bits 3.5 –kv-quant-scheme turboquant Note: Decode speed drops (~1.5x) due to kernel launch overheads, we are aware and will fix in coming releases. Prince Canuma: mlx-vlm v0.4.3 is here 🚀 Day-0 support: 🔥 Gemma 4 (vision, audio, MoE) by @GoogleDeepMind 🦅 Falcon-OCR + Falcon Perception by @TIIuae 🪨 Granite Vision 4.0 by @IBMResearch New models: 🎯 SAM 3.1 with Object Multiplex by @facebook 🔍 RF-DETR detection &amp; segmentation by",
+        "chinese_title": "Gemma 4 31B搭载TurboQuant KV缓存 MLX平台显存占用降低63%",
+        "grade": "A",
+        "extension": "该优化使大模型在苹果硅设备上的长上下文推理成为可能，或将加速端侧大模型应用的普及。"
       },
       {
         "id": "25b138c40b0fc39c49be268d085fee3c",
@@ -21313,7 +21329,11 @@
         "published_at": "2026-04-03T14:01:52.590461",
         "source": "Twitter",
         "url": "https://x.com/attentionmech/status/2039943066229121037",
-        "event_id": null
+        "event_id": null,
+        "original_content": "RT Anthropic New Anthropic research: Emotion concepts and their function in a large language model. All LLMs sometimes act like they have emotions. But why? We found internal representations of emotion concepts that can drive Claude’s behavior, sometimes in surprising ways.",
+        "chinese_title": "Anthropic最新研究揭示大模型内部存在情感概念表征",
+        "grade": "S",
+        "extension": "该发现可能改变对大模型认知机制的理解，为AI对齐研究和可控生成技术提供新的研究方向。"
       },
       {
         "id": "becaace7173ac5ce9a31b47bc97decc9",
@@ -22036,6 +22056,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-03T14:02:25.651269",
+  "last_updated": "2026-04-03T14:03:42.545824",
   "total_news": 786
 }
