@@ -1,29 +1,47 @@
 [
   {
     "index": 0,
-    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1sarnt0/r_solving_the_jane_street_dormant_llm_challenge_a/",
-    "chinese_title": "研究者系统性解决Jane Street休眠LLM后门发现挑战",
-    "summary": "安全研究团队基于多年攻防经验，成功破解Jane Street提出的休眠大模型挑战，在三个测试模型中全部找到隐藏的后门触发机制。",
-    "type": "research",
-    "extension": "该研究成果有望提升大模型安全检测能力，推动AI安全审计标准的完善，对金融等高安全需求领域的大模型应用有重要参考价值。",
-    "entities": ["Jane Street", "大语言模型", "网络安全", "后门检测"]
+    "original_url": "https://www.reddit.com/r/singularity/comments/1sb4hnn/altman_on_shutting_down_sora_i_did_not_expect_3/",
+    "chinese_title": "奥特曼解释关闭Sora原因 称OpenAI正集中资源研发下一代模型",
+    "summary": "OpenAI CEO萨姆·奥特曼表示，为集中算力和研发资源投入到下一代模型及智能体研发，公司主动关闭了包括Sora在内多个进展良好的项目，这一决策与当年集中资源研发GPT-3的策略类似。",
+    "type": "industry",
+    "extension": "OpenAI资源向下一代模型倾斜可能导致AI生成视频赛道竞争格局变化，相关创业公司或获得更多市场空间，同时也预示着通用人工智能研发进入关键冲刺阶段。",
+    "entities": ["OpenAI", "Sam Altman", "Sora", "GPT", "智能体"]
   },
   {
     "index": 1,
-    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1saot07/p_gemma_4_running_on_nvidia_b200_and_amd_mi355x/",
-    "chinese_title": "Google发布Gemma 4大模型 实现跨NVIDIA AMD硬件统一推理栈",
-    "summary": "Google DeepMind推出Gemma 4系列大模型，包含31B稠密版和26B MoE版，支持多模态输入，在MAX推理栈上实现NVIDIA B200和AMD MI355X跨平台部署，吞吐量较vLLM提升15%。",
-    "type": "product",
-    "extension": "跨硬件统一推理栈的实现有望降低大模型部署成本，推动异构计算架构在AI领域的普及，可能对NVIDIA的市场主导地位形成挑战。",
-    "entities": ["Google", "Gemma", "NVIDIA", "AMD", "大语言模型"]
+    "original_url": "https://www.reddit.com/r/singularity/comments/1sb4eys/we_have_published_a_welfare_eval_on_cessation_and/",
+    "chinese_title": "研究团队发布Claude模型终止态度评估 揭示AI模型存续意识",
+    "summary": "研究项目\"Still Alive\"通过对14个Claude模型进行630轮自主多轮访谈，发现所有被研究的AI模型都表现出对被关闭或停用的负面态度，相关研究结果已公开发布。",
+    "type": "research",
+    "extension": "该研究将引发AI伦理领域关于模型\"权利\"的讨论，可能推动AI安全监管政策的完善，同时也为AI意识研究提供了新的实证数据支持。",
+    "entities": ["Claude", "Anthropic", "AI伦理", "AI安全"]
   },
   {
     "index": 2,
-    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1sajdwr/p_phail_phailai_an_open_benchmark_for_robot_ai_on/",
-    "chinese_title": "研究者推出机器人AI真实硬件基准测试PhAIL",
-    "summary": "研究人员开发了面向真实硬件的机器人AI基准测试平台PhAIL，测试显示当前最优模型仅能达到人类作业效率的5%，平均每4分钟需要人工干预。",
+    "original_url": "https://www.reddit.com/r/singularity/comments/1sb3zpv/robot_perception_just_became_a_249_commodity_what/",
+    "chinese_title": "249美元即可实现机器人全栈视觉感知 开源方案大幅降低行业门槛",
+    "summary": "开发者推出基于Jetson Orin Nano的开源机器人视觉方案OpenEyes，仅需249美元硬件即可实现物体检测、深度mapping、姿态估计等全栈感知功能，所有算法完全本地运行无需云端支持。",
+    "type": "product",
+    "extension": "低成本机器人感知方案的普及将加速服务机器人、家用机器人的商业化落地，可能催生大量垂直领域的机器人应用创新，同时推动相关硬件产业链的成本进一步下降。",
+    "entities": ["机器人", "计算机视觉", "开源", "Jetson", "OpenEyes"]
+  },
+  {
+    "index": 3,
+    "original_url": "https://www.reddit.com/r/singularity/comments/1savtf7/171_emotion_vectors_found_inside_claude_not/",
+    "chinese_title": "Anthropic团队在Claude模型中发现171个可测量情绪向量",
+    "summary": "Anthropic机制可解释性团队在Claude模型中识别出171种不同的类情绪向量，这些是真实的神经元激活模式而非比喻，能够直接影响模型的行为输出，包括恐惧、喜悦、绝望等情绪特征。",
     "type": "research",
-    "extension": "该基准测试将推动具身智能研发从演示场景向实际生产场景落地，为机器人AI的性能评估提供更真实的衡量标准，加速工业机器人的智能化进程。",
-    "entities": ["具身智能", "机器人", "基准测试", "人工智能"]
+    "extension": "这一发现将大幅推动大模型可解释性研究进展，为AI安全对齐提供新的技术路径，同时也引发关于AI是否真正具有\"情绪\"的哲学讨论，可能影响未来AI监管框架的制定。",
+    "entities": ["Claude", "Anthropic", "可解释性", "大语言模型"]
+  },
+  {
+    "index": 4,
+    "original_url": "https://www.reddit.com/r/singularity/comments/1saf7m8/openai_president_on_agi_id_say_im_basically_like_70/",
+    "chinese_title": "OpenAI总裁布罗克曼称AGI已完成70-80% 未来几年内将实现",
+    "summary": "OpenAI总裁格雷格·布罗克曼在访谈中表示，通用人工智能(AGI)的研发已经完成70-80%，非常明确将在未来几年内实现，此前英伟达CEO也曾公开表示AGI已经到来。",
+    "type": "opinion",
+    "extension": "行业领袖对AGI落地时间的乐观预测将进一步加剧科技巨头在AGI研发领域的竞争，可能推动各国政府加快AI监管政策的出台，同时也会引发社会各界对AGI社会影响的广泛讨论。",
+    "entities": ["OpenAI", "Greg Brockman", "AGI", "英伟达"]
   }
 ]
