@@ -2,18 +2,18 @@
 gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: milestone
-status: In progress
-last_updated: "2026-04-02T22:20:48.000Z"
+status: Ready to execute
+last_updated: "2026-04-03T02:22:40.119Z"
 progress:
-  total_phases: 6
-  completed_phases: 6
-  total_plans: 26
-  completed_plans: 17
+  total_phases: 9
+  completed_phases: 4
+  total_plans: 29
+  completed_plans: 23
 ---
 
 # x-reader Project State
 
-**Last updated:** 2026-04-02
+**Last updated:** 2026-04-03
 **Current Milestone:** v2.0 同事件新闻分组功能重构
 
 ## Project Reference
@@ -24,8 +24,8 @@ progress:
 
 ## Current Position
 
-Phase: 13
-Plan: all completed
+Phase: 14 (frontend-news-table-unification) — EXECUTING
+Plan: 2 of 3
 
 - **Completed Phases (v2.0)**:
   - Phase 7: Cleanup Existing Merge Logic ✓ Completed
@@ -35,10 +35,10 @@ Plan: all completed
   - Phase 11: Event Table Refactor ✓ Completed
   - Phase 12: UX 体验优化 ✓ Completed
   - Phase 13: 事件展示与实体识别优化 ✓ Completed
-- **Next Plan**: Phase 14 (待规划)
+- **Next Plan**: Phase 14 planning
 - **Status**: In progress
-- **Progress**: 7/7 phases completed
-- **Progress Bar**: ██████ 100%
+- **Progress**: 7/8 phases completed
+- **Progress Bar**: ████████ 87.5%
 
 ## Performance Metrics
 
@@ -64,6 +64,7 @@ Plan: all completed
 | Phase 13-event-enhancements P01 | 20 | 3 tasks | 3 files |
 | Phase 13-event-enhancements P02 | 60 | 3 tasks | 2 files |
 | Phase 13-event-enhancements P03 | 30 | 3 tasks | 2 files |
+| Phase 14-frontend-news-table-unification P03 | 60 | 2 tasks | 0 files |
 
 ## Accumulated Context
 
@@ -98,6 +99,7 @@ Plan: all completed
 - Phase 11 added: 优化事件追踪UI为表格样式，支持展开/折叠多新闻事件，添加摘要和扩展性字段
 - Phase 12 added: 改进事件表格UX：扩展性字段截断+悬浮展开、表头排序、固定工具栏、筛选控件样式统一
 - Phase 13 added: 事件表格显示消息源链接、调整实体识别流程到标题摘要之前、统一事件行高度由标题决定
+- Phase 14 added: 新闻列表行高统一由标题决定、事件链接显示消息来源域名、修复实体列高度只显示一半
 
 ### TODO Backlog
 
@@ -121,6 +123,6 @@ Plan: all completed
 
 ## Session Continuity
 
-Last active session: 2026-04-02
-Last action: Phase 13 completed - 事件展示与实体识别优化全部完成
-Next action: 进入 Phase 14 planning（待规划）
+Last active session: 2026-04-03
+Last action: Phase 14 added - 前端新闻表格统一化优化
+Next action: 进入 Phase 14 planning

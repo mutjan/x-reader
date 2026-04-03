@@ -1,8 +1,8 @@
 # 科技新闻选题聚合系统 Roadmap
 **Version:** v2.0
-**Last updated:** 2026-04-02
+**Last updated:** 2026-04-03
 **Granularity:** Standard
-**Coverage:** 12/12 requirements mapped
+**Coverage:** 15/15 requirements mapped
 
 ## Phases
 - [x] **Phase 1: Data Layer Stability** - Resolve historical data consistency issues and build stable data foundation
@@ -14,8 +14,11 @@
 - [x] **Phase 7: Cleanup Existing Merge Logic** - Remove old similar news merge functionality and prepare for new grouping architecture (completed 2026-04-02)
 - [x] **Phase 8: EventGrouper Core Component Development** - Implement event grouping core logic and data model (completed 2026-04-02)
 - [x] **Phase 9: Pipeline Integration & Publishing Workflow** - Integrate grouping into processing pipeline and dual-file publishing (completed 2026-04-02)
-- [ ] **Phase 10: Frontend Event Timeline Display** - Implement event timeline presentation and user interaction features
+- [x] **Phase 10: Frontend Event Timeline Display** - Implement event timeline presentation and user interaction features (completed 2026-04-02)
 - [x] **Phase 11: Event Table Refactor** - Refactor event display to table style with expand/collapse functionality (completed 2026-04-02)
+- [x] **Phase 12: UX 体验优化** - 优化前端交互体验：扩展性字段截断hover展开、事件表头排序、工具栏功能、筛选控件样式 (completed 2026-04-02)
+- [x] **Phase 13: 事件展示与实体识别优化** - 事件表格显示消息源链接、调整实体识别流程顺序、统一事件行高度限制 (completed 2026-04-03)
+- [ ] **Phase 14: 前端新闻表格统一化优化** - 新闻列表行高统一由标题决定、事件链接显示消息来源名称、修复实体列高度显示问题
 
 ## Phase Details
 
@@ -85,7 +88,7 @@ Plans:
 - [x] 10-03-PLAN.md — Admin frontend event timeline view
 - [x] 10-04-PLAN.md — Public frontend event data integration
 - [x] 10-05-PLAN.md — Public frontend event timeline enhancement
-- [ ] 10-06-PLAN.md — End-to-end testing and verification
+- [x] 10-06-PLAN.md — End-to-end testing and verification
 
 ### Phase 11: Event Table Refactor
 **Goal**: 将事件时间线展示改为表格样式，与新闻列表视觉风格统一，支持展开/折叠多新闻事件
@@ -101,9 +104,9 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 11-01-PLAN.md — Backend API updates to include summary/expansion fields
-- [ ] 11-02-PLAN.md — Admin frontend event table implementation
-- [ ] 11-03-PLAN.md — Public frontend event table integration
+- [x] 11-01-PLAN.md — Backend API updates to include summary/expansion fields
+- [x] 11-02-PLAN.md — Admin frontend event table implementation
+- [x] 11-03-PLAN.md — Public frontend event table integration
 
 ### Phase 12: UX 体验优化
 **Goal**: 优化前端交互体验，统一UI风格，提升表格操作效率
@@ -120,8 +123,40 @@ Plans:
 Plans:
 - [x] 12-01-PLAN.md — 扩展性字段显示优化（2行截断+hover展开）
 - [x] 12-02-PLAN.md — 热点事件表格表头点击排序功能
-- [ ] 12-03-PLAN.md — 事件表格顶部工具栏功能（排序+复制选中）
+- [x] 12-03-PLAN.md — 事件表格顶部工具栏功能（排序+复制选中）
 - [x] 12-04-PLAN.md — 筛选控件样式优化，与整体风格统一
+
+### Phase 13: 事件展示与实体识别优化
+**Goal**: 优化事件表格显示体验，调整实体识别流程顺序，统一事件行高度约束
+**Depends on**: Phase 12
+**Requirements**: UI-04, AI-01
+**Success Criteria** (what must be TRUE):
+  1. 事件追踪表格中显示消息源链接，单新闻事件显示该新闻链接，多新闻事件显示主事件链接
+  2. 实体识别流程调整到生成标题摘要之前执行，只对英文原文进行实体识别
+  3. 每个事件条目的整体高度由标题决定，实体、链接、扩展性内容超出标题高度时自动折叠，所有行高度保持一致
+**Plans**: 3 plans planned
+**UI hint**: yes
+
+Plans:
+- [x] 13-01-PLAN.md — 后端API添加main_news_url + 前端表格添加链接列
+- [x] 13-02-PLAN.md — AI处理流水线调整 - 实体识别前置到标题生成之前
+- [x] 13-03-PLAN.md — 统一行高约束 - 实体列、扩展性列、链接列统一截断样式
+
+### Phase 14: 前端新闻表格统一化优化
+**Goal**: 统一新闻列表和事件表格的行高约束，统一链接展示样式，修复实体列高度显示问题
+**Depends on**: Phase 13
+**Requirements**: UX-05, UX-06, UI-05
+**Success Criteria** (what must be TRUE):
+  1. 新闻列表每条行高度由标题高度决定，摘要、实体、扩展性列超出限制自动截断，所有新闻行高度保持一致
+  2. 事件追踪列表的链接列显示消息来源名称（域名），而不是固定的"链接"文字，更易识别
+  3. 实体列高度限制与链接列、扩展性列保持一致，都是最多显示到标题高度，不会只显示一半
+**Plans**: 3 plans planned
+**UI hint**: yes
+
+Plans:
+- [ ] 14-01-PLAN.md — 新闻列表行高统一约束优化
+- [ ] 14-02-PLAN.md — 事件表格链接显示来源域名
+- [x] 14-03-PLAN.md — 实体列高度显示问题修复
 
 ## Progress Table
 | Phase | Plans Complete | Status | Completed |
@@ -135,6 +170,8 @@ Plans:
 | 7. Cleanup Existing Merge Logic | 1/1 | Completed | 2026-04-02 |
 | 8. EventGrouper Core Component Development | 4/4 | Completed | 2026-04-02 |
 | 9. Pipeline Integration & Publishing Workflow | 6/6 | Completed | 2026-04-02 |
-| 10. Frontend Event Timeline Display | 5/6 | In Progress | - |
-| 11. Event Table Refactor | 0/3 | Complete    | 2026-04-02 |
-| 12. UX 体验优化 | 3/4 | In Progress | - |
+| 10. Frontend Event Timeline Display | 6/6 | Completed | 2026-04-02 |
+| 11. Event Table Refactor | 3/3 | Completed | 2026-04-02 |
+| 12. UX 体验优化 | 4/4 | Completed | 2026-04-02 |
+| 13. 事件展示与实体识别优化 | 3/3 | Completed | 2026-04-03 |
+| 14. 前端新闻表格统一化优化 | 1/3 | In Progress|  |
