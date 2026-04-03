@@ -1,20 +1,29 @@
 [
   {
     "index": 0,
-    "original_url": "https://www.theinformation.com/briefings/openais-fidji-simo-pushes-company-stay-social-media",
-    "chinese_title": "OpenAI高管Fidji Simo主张公司远离社交媒体业务",
-    "summary": "曾在Meta负责Facebook业务的OpenAI AGI落地CEO Fidji Simo，认为公司应避免涉足社交媒体领域，这与CEO Sam Altman的过往观点形成对比。",
-    "type": "industry",
-    "extension": "这一战略分歧可能影响OpenAI未来产品路线，也反映出AI巨头在商业化路径选择上的不同考量。",
-    "entities": ["OpenAI", "Fidji Simo", "Meta", "Sam Altman", "社交媒体"]
+    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1sarnt0/r_solving_the_jane_street_dormant_llm_challenge_a/",
+    "chinese_title": "研究者系统性解决Jane Street休眠LLM后门发现挑战",
+    "summary": "安全研究团队基于多年攻防经验，成功破解Jane Street提出的休眠大模型挑战，在三个测试模型中全部找到隐藏的后门触发机制。",
+    "type": "research",
+    "extension": "该研究成果有望提升大模型安全检测能力，推动AI安全审计标准的完善，对金融等高安全需求领域的大模型应用有重要参考价值。",
+    "entities": ["Jane Street", "大语言模型", "网络安全", "后门检测"]
   },
   {
     "index": 1,
-    "original_url": "http://www.techmeme.com/260402/p31#a260402p31",
-    "chinese_title": "OpenAI高管Fidji Simo主导业务调整 主张砍掉Sora项目",
-    "summary": "消息人士透露，OpenAI高管Fidji Simo正在推动一系列业务调整，包括主导收购TBPN、主张砍掉Sora视频生成项目并避免开发社交媒体类产品。",
-    "type": "industry",
-    "extension": "这一系列调整可能预示OpenAI将更加聚焦核心AGI技术研发，而非分散资源到消费级应用领域。",
-    "entities": ["OpenAI", "Fidji Simo", "Sora", "TBPN", "视频生成"]
+    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1saot07/p_gemma_4_running_on_nvidia_b200_and_amd_mi355x/",
+    "chinese_title": "Google发布Gemma 4大模型 实现跨NVIDIA AMD硬件统一推理栈",
+    "summary": "Google DeepMind推出Gemma 4系列大模型，包含31B稠密版和26B MoE版，支持多模态输入，在MAX推理栈上实现NVIDIA B200和AMD MI355X跨平台部署，吞吐量较vLLM提升15%。",
+    "type": "product",
+    "extension": "跨硬件统一推理栈的实现有望降低大模型部署成本，推动异构计算架构在AI领域的普及，可能对NVIDIA的市场主导地位形成挑战。",
+    "entities": ["Google", "Gemma", "NVIDIA", "AMD", "大语言模型"]
+  },
+  {
+    "index": 2,
+    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1sajdwr/p_phail_phailai_an_open_benchmark_for_robot_ai_on/",
+    "chinese_title": "研究者推出机器人AI真实硬件基准测试PhAIL",
+    "summary": "研究人员开发了面向真实硬件的机器人AI基准测试平台PhAIL，测试显示当前最优模型仅能达到人类作业效率的5%，平均每4分钟需要人工干预。",
+    "type": "research",
+    "extension": "该基准测试将推动具身智能研发从演示场景向实际生产场景落地，为机器人AI的性能评估提供更真实的衡量标准，加速工业机器人的智能化进程。",
+    "entities": ["具身智能", "机器人", "基准测试", "人工智能"]
   }
 ]
