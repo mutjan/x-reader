@@ -661,15 +661,12 @@
         .type-hardware { background: #64748b; color: white; }
         .entity-tag {
             display: inline-block;
-            padding: 2px 6px;
             background: #2f3336;
             border: 1px solid #38444d;
             border-radius: 3px;
-            font-size: 10px;
             color: #8899a6;
-            margin-right: 4px;
-            margin-bottom: 2px;
             cursor: pointer;
+            white-space: nowrap;
         }
         /* 反馈按钮 */
         .feedback-btn {
@@ -919,26 +916,28 @@
             background: #1d9bf020;
             overflow: visible;
         }
-        /* 实体列 - 2行截断+hover展开 */
+        /* 实体列 - 自适应标签数量，多时缩小字体 */
         .entities-container {
             color: #8899a6;
             font-size: 12px;
             line-height: 1.4;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            max-height: calc(12px * 1.4 * 2); /* 2行高度 */
-            transition: all 0.2s ease;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px 4px;
             padding: 4px;
             border-radius: 4px;
         }
         .entities-container:hover {
-            -webkit-line-clamp: 20;
-            max-height: calc(12px * 1.4 * 20); /* 最多显示20行 */
             background: #1d9bf020;
-            overflow: visible;
         }
+        /* 根据标签数量动态调整字体大小 */
+        .entities-container.count-1 .entity-tag,
+        .entities-container.count-2 .entity-tag { font-size: 10px; padding: 2px 6px; }
+        .entities-container.count-3 .entity-tag,
+        .entities-container.count-4 .entity-tag { font-size: 9px; padding: 1px 4px; }
+        .entities-container.count-5 .entity-tag,
+        .entities-container.count-6 .entity-tag { font-size: 8px; padding: 1px 3px; }
+        .entities-container.count-many .entity-tag { font-size: 7px; padding: 1px 2px; }
         /* 链接列 - 2行截断+hover展开 */
         .link-container {
             color: #8899a6;
@@ -1330,7 +1329,7 @@
             color: #1a8cd8;
         }
         .event-expand-btn.expanded {
-            transform: rotate(90deg);
+            /* 去掉旋转，直接用字符表示状态 */
         }
         .event-expand-btn:disabled,
         .event-expand-btn.placeholder {
@@ -1714,17 +1713,34 @@
         let currentTab = 'news'; // news/events
         let selectedItems = new Set(); // 存储选中的项目ID（新闻或事件）
 
-        // 提取URL中的域名
+        // 提取URL中的域名，去掉.com后缀，Twitter/X显示为x(用户名)
         function extractDomain(url) {
             if (!url) return '链接';
             try {
-                const domain = new URL(url).hostname;
-                return domain.replace(/^www\./, ''); // 移除www前缀
+                const urlObj = new URL(url);
+                const domain = urlObj.hostname.replace(/^www\./, '');
+                // Twitter/X 链接显示为 x(用户名)
+                if (domain === 'twitter.com' || domain === 'x.com') {
+                    const pathParts = urlObj.pathname.split('/').filter(p => p);
+                    if (pathParts.length > 0) {
+                        return `x(${pathParts[0]})`;
+                    }
+                    return 'x';
+                }
+                return domain.replace(/\.com$/, ''); // 移除.com后缀
             } catch (e) {
                 // 正则提取作为fallback
                 const match = url.match(/^https?:\/\/([^\/]+)/);
                 if (match) {
-                    return match[1].replace(/^www\./, '');
+                    const domain = match[1].replace(/^www\./, '');
+                    if (domain === 'twitter.com' || domain === 'x.com') {
+                        const usernameMatch = url.match(/^https?:\/\/[^\/]+\/([^\/]+)/);
+                        if (usernameMatch) {
+                            return `x(${usernameMatch[1]})`;
+                        }
+                        return 'x';
+                    }
+                    return domain.replace(/\.com$/, '');
                 }
                 return '链接';
             }
@@ -1843,10 +1859,10 @@
         let eventFilters = {
             search: '',
             minScore: 0,
-            minNewsCount: 0,
+            minNewsCount: 2,
             entity: null
         };
-        let eventSort = { field: 'max_score', order: 'desc' };
+        let eventSort = { field: 'end_time', order: 'desc' };
 
         // 事件表格状态
         let expandedEvents = new Set(); // 存储已展开的事件ID
@@ -2068,36 +2084,48 @@
 
         // 更新批量操作按钮状态
         function updateBatchButtons() {
-            const selectedCount = selectedItems.size;
-            document.getElementById('selectedCount').textContent = selectedCount;
-            document.getElementById('copySelectedBtn').disabled = selectedCount === 0;
+            let selectedCount = 0;
 
-            // 更新全选按钮文本
-            const selectAllBtn = document.getElementById('selectAllBtn');
             if (currentTab === 'news') {
-                // 新闻视图的全选逻辑待实现
-                selectAllBtn.textContent = '全选';
+                // 新闻视图：计算选中的新闻数量
+                const newsList = NEWS_ARCHIVE[currentDate] || [];
+                const displayList = getSortedAndFilteredNews(newsList);
+                selectedCount = displayList.filter((_, index) => selectedItems.has(`${currentDate}-${index}`)).length;
+
+                // 更新全选按钮文本
+                const selectAllBtn = document.getElementById('selectAllBtn');
+                selectAllBtn.textContent =
+                    selectedCount === displayList.length && displayList.length > 0 ? '取消全选' : '全选';
             } else {
+                // 事件视图：计算选中的事件数量
                 const filteredEvents = getFilteredAndSortedEvents();
+                selectedCount = filteredEvents.filter(event => selectedItems.has(event.id)).length;
+
+                // 更新全选按钮文本
+                const selectAllBtn = document.getElementById('selectAllBtn');
                 const allSelected = filteredEvents.length > 0 && filteredEvents.every(event => selectedItems.has(event.id));
                 selectAllBtn.textContent = allSelected ? '取消全选' : '全选';
-            }
 
-            // 更新表格中的复选框状态
-            if (currentTab === 'events') {
+                // 更新表格中的复选框状态
                 const checkboxes = document.querySelectorAll('.event-table .checkbox');
                 checkboxes.forEach(checkbox => {
-                    const eventId = checkbox.getAttribute('onchange').match(/'([^']+)'/)[1];
-                    checkbox.checked = selectedItems.has(eventId);
+                    const onchange = checkbox.getAttribute('onchange') || '';
+                    const match = onchange.match(/'([^']+)'/);
+                    if (match) {
+                        const eventId = match[1];
+                        checkbox.checked = selectedItems.has(eventId);
+                    }
                 });
 
                 // 更新表头的全选复选框状态
                 const headerCheckbox = document.querySelector('.event-table thead .checkbox');
                 if (headerCheckbox) {
-                    const filteredEvents = getFilteredAndSortedEvents();
                     headerCheckbox.checked = filteredEvents.length > 0 && filteredEvents.every(event => selectedItems.has(event.id));
                 }
             }
+
+            document.getElementById('selectedCount').textContent = selectedCount;
+            document.getElementById('copySelectedBtn').disabled = selectedCount === 0;
         }
 
         // 全选按钮点击处理
@@ -2289,12 +2317,18 @@
                                     <td><div class="news-title">${event.title}</div></td>
                                     <td><div class="news-summary">${mainNews ? mainNews.summary : '-'}</div></td>
                                     <td>
-                                        <div class="entities-container">
-                                            ${(event.entities || []).map(e =>
-                                                `<span class="entity-tag ${eventFilters.entity === e ? 'selected' : ''}"
-                                                       onclick="filterEventsByEntity('${e.replace(/'/g, "\\'")}')">${e}</span>`
-                                            ).join('')}
-                                        </div>
+                                        ${(() => {
+                                            const entities = event.entities || [];
+                                            const countClass = entities.length <= 2 ? 'count-1' :
+                                                              entities.length <= 4 ? 'count-3' :
+                                                              entities.length <= 6 ? 'count-5' : 'count-many';
+                                            return `<div class="entities-container ${countClass}">
+                                                ${entities.map(e =>
+                                                    `<span class="entity-tag ${eventFilters.entity === e ? 'selected' : ''}"
+                                                           onclick="filterEventsByEntity('${e.replace(/'/g, "\\'")}')">${e}</span>`
+                                                ).join('')}
+                                            </div>`;
+                                        })()}
                                     </td>
                                     <td>
                                         <div class="expansion-content">${mainNews && mainNews.expansion ? mainNews.expansion : '-'}</div>
@@ -2327,7 +2361,7 @@
                                                                     <a href="${news.url}" target="_blank" style="color: #1d9bf0; text-decoration: none;">${news.title}</a>
                                                                 </div>
                                                                 <div class="event-timeline-meta">
-                                                                    <span>来源: ${news.source || '未知'}</span>
+                                                                    <span>来源: ${extractDomain(news.url) || news.source || '未知'}</span>
                                                                     ${news.sources ? `<span>相关报道: ${news.sources} 篇</span>` : ''}
                                                                 </div>
                                                             </div>
@@ -2603,17 +2637,6 @@
             renderNews();
         }
 
-        function updateBatchButtons() {
-            const newsList = NEWS_ARCHIVE[currentDate] || [];
-            const displayList = getSortedAndFilteredNews(newsList);
-            const selectedCount = displayList.filter((_, index) => selectedItems.has(`${currentDate}-${index}`)).length;
-            
-            document.getElementById('selectedCount').textContent = selectedCount;
-            document.getElementById('copySelectedBtn').disabled = selectedCount === 0;
-            document.getElementById('selectAllBtn').textContent = 
-                selectedCount === displayList.length && displayList.length > 0 ? '取消全选' : '全选';
-        }
-
         function copySelected() {
             if (selectedItems.size === 0) return;
 
@@ -2649,9 +2672,11 @@
 
         function renderSourceLinks(links) {
             if (!links || links.length === 0) return '-';
-            return links.map(link =>
-                `<a href="${link.url}" target="_blank" class="source-link" title="${link.url}">${link.name}</a>`
-            ).join('');
+            return links.map(link => {
+                // 去掉括号及其内容
+                const name = link.name.replace(/\s*\([^)]*\)/g, '');
+                return `<a href="${link.url}" target="_blank" class="source-link" title="${link.url}">${name}</a>`;
+            }).join('');
         }
 
         function renderEntities(entities, itemIndex) {
@@ -2659,7 +2684,10 @@
             const entityTags = entities.map(entity =>
                 `<span class="entity-tag ${selectedEntity === entity ? 'selected' : ''}" onclick="sortByEntity('${entity.replace(/'/g, "\\'")}')">${entity}</span>`
             ).join('');
-            return `<div class="entities-container">${entityTags}</div>`;
+            const countClass = entities.length <= 2 ? 'count-1' :
+                              entities.length <= 4 ? 'count-3' :
+                              entities.length <= 6 ? 'count-5' : 'count-many';
+            return `<div class="entities-container ${countClass}">${entityTags}</div>`;
         }
 
         function sortByEntity(entity) {

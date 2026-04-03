@@ -212,13 +212,10 @@
         .type-hardware { background: #64748b; }
         .entity-tag {
             display: inline-block;
-            padding: 2px 6px;
             background: #e2e8f0;
             border-radius: 3px;
-            font-size: 11px;
             color: #4a5568;
-            margin-right: 4px;
-            margin-bottom: 2px;
+            white-space: nowrap;
         }
         .search-box {
             margin-bottom: 15px;
@@ -707,7 +704,7 @@
             color: #5568d3;
         }
         .event-expand-btn.expanded {
-            transform: rotate(90deg);
+            /* 去掉旋转，直接用字符表示状态 */
         }
         .event-expand-btn:disabled {
             color: #cbd5e0;
@@ -790,26 +787,28 @@
             background: #e0e7ff;
             overflow: visible;
         }
-        /* 实体列 - 2行截断+hover展开 */
+        /* 实体列 - 自适应标签数量，多时缩小字体 */
         .entities-container {
             color: #718096;
             font-size: 12px;
             line-height: 1.4;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            max-height: calc(12px * 1.4 * 2); /* 2行高度 */
-            transition: all 0.2s ease;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px 4px;
             padding: 4px;
             border-radius: 4px;
         }
         .entities-container:hover {
-            -webkit-line-clamp: 20;
-            max-height: calc(12px * 1.4 * 20); /* 最多显示20行 */
             background: #e0e7ff;
-            overflow: visible;
         }
+        /* 根据标签数量动态调整字体大小 */
+        .entities-container.count-1 .entity-tag,
+        .entities-container.count-2 .entity-tag { font-size: 10px; padding: 2px 6px; }
+        .entities-container.count-3 .entity-tag,
+        .entities-container.count-4 .entity-tag { font-size: 9px; padding: 1px 4px; }
+        .entities-container.count-5 .entity-tag,
+        .entities-container.count-6 .entity-tag { font-size: 8px; padding: 1px 3px; }
+        .entities-container.count-many .entity-tag { font-size: 7px; padding: 1px 2px; }
         /* 链接列 - 2行截断+hover展开 */
         .link-container {
             color: #718096;
@@ -1445,17 +1444,34 @@
         let eventViewMode = 'timeline'; // timeline 或 list
         let eventViewPreference = localStorage.getItem('eventViewMode') || 'timeline';
 
-        // 提取URL中的域名
+        // 提取URL中的域名，去掉.com后缀，Twitter/X显示为x(用户名)
         function extractDomain(url) {
             if (!url) return '链接';
             try {
-                const domain = new URL(url).hostname;
-                return domain.replace(/^www\./, ''); // 移除www前缀
+                const urlObj = new URL(url);
+                const domain = urlObj.hostname.replace(/^www\./, '');
+                // Twitter/X 链接显示为 x(用户名)
+                if (domain === 'twitter.com' || domain === 'x.com') {
+                    const pathParts = urlObj.pathname.split('/').filter(p => p);
+                    if (pathParts.length > 0) {
+                        return `x(${pathParts[0]})`;
+                    }
+                    return 'x';
+                }
+                return domain.replace(/\.com$/, ''); // 移除.com后缀
             } catch (e) {
                 // 正则提取作为fallback
                 const match = url.match(/^https?:\/\/([^\/]+)/);
                 if (match) {
-                    return match[1].replace(/^www\./, '');
+                    const domain = match[1].replace(/^www\./, '');
+                    if (domain === 'twitter.com' || domain === 'x.com') {
+                        const usernameMatch = url.match(/^https?:\/\/[^\/]+\/([^\/]+)/);
+                        if (usernameMatch) {
+                            return `x(${usernameMatch[1]})`;
+                        }
+                        return 'x';
+                    }
+                    return domain.replace(/\.com$/, '');
                 }
                 return '链接';
             }
@@ -1674,7 +1690,11 @@
                     news.forEach(item => {
                         const ratingClass = `rating-${item.rating || 'C'}`;
                         const typeClass = `type-${item.type || 'other'}`;
-                        const entities = (item.entities || []).map(e => `<span class="entity-tag">${e}</span>`).join('');
+                        const entityList = item.entities || [];
+                        const entities = entityList.map(e => `<span class="entity-tag">${e}</span>`).join('');
+                        const entityCountClass = entityList.length <= 2 ? 'count-1' :
+                                                entityList.length <= 4 ? 'count-3' :
+                                                entityList.length <= 6 ? 'count-5' : 'count-many';
                         const pubTime = item.published_at ? new Date(item.published_at).toLocaleString('zh-CN') : '--';
 
                         html += `
@@ -1683,7 +1703,7 @@
                                 <td><span class="type-tag ${typeClass}">${item.typeName || item.type || '其他'}</span></td>
                                 <td style="max-width: 400px;">${item.title}</td>
                                 <td style="font-size: 12px; line-height: 1.5; color: #718096; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; max-height: calc(12px * 1.5 * 2); transition: all 0.2s ease; padding: 4px; border-radius: 4px;" onmouseover="this.style.webkitLineClamp='20'; this.style.maxHeight='calc(12px * 1.5 * 20)'; this.style.background='#e0e7ff'; this.style.overflow='visible';" onmouseout="this.style.webkitLineClamp='2'; this.style.maxHeight='calc(12px * 1.5 * 2)'; this.style.background='transparent'; this.style.overflow='hidden';">${item.summary || '-'}</td>
-                                <td><div class="entities-container">${entities}</div></td>
+                                <td><div class="entities-container ${entityCountClass}">${entities}</div></td>
                                 <td>${item.sources || 0}</td>
                                 <td style="white-space: nowrap;">${pubTime}</td>
                                 <td>
@@ -1845,9 +1865,15 @@
                             ${event.main_news_summary || '-'}
                         </td>
                         <td>
-                            <div class="entities-container">
-                                ${(event.entities || []).map(e => `<span class="entity-tag">${e}</span>`).join('')}
-                            </div>
+                            ${(() => {
+                                const entities = event.entities || [];
+                                const countClass = entities.length <= 2 ? 'count-1' :
+                                                  entities.length <= 4 ? 'count-3' :
+                                                  entities.length <= 6 ? 'count-5' : 'count-many';
+                                return `<div class="entities-container ${countClass}">
+                                    ${entities.map(e => `<span class="entity-tag">${e}</span>`).join('')}
+                                </div>`;
+                            })()}
                         </td>
                         <td style="font-size: 12px; color: #718096;">
                             <div class="expansion-content">${event.main_news_expansion ? event.main_news_expansion : '-'}</div>
@@ -1882,7 +1908,7 @@
                                                         ${news.title}
                                                     </div>
                                                     <div class="event-timeline-meta">
-                                                        <span>来源: ${news.source || '未知'}</span>
+                                                        <span>来源: ${extractDomain(news.url) || news.source || '未知'}</span>
                                                         ${news.sources ? `<span>相关报道: ${news.sources} 篇</span>` : ''}
                                                     </div>
                                                 </div>

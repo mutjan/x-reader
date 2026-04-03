@@ -157,12 +157,42 @@ def import_scoring_results(snapshot_id: str, result_file: str, no_publish: bool 
 
     return True
 
+def import_entity_results(snapshot_id: str, result_file: str) -> bool:
+    """导入实体识别结果"""
+    # 加载快照
+    snapshot = load_snapshot(snapshot_id)
+    if not snapshot:
+        return False
+
+    # 加载原始条目
+    raw_items = snapshot_to_raw_items(snapshot)
+    if not raw_items:
+        logger.error("快照中没有有效条目")
+        return False
+
+    # 加载实体识别结果
+    from src.processors.ai_processor import EntityProcessor
+    entity_processor = EntityProcessor()
+    entity_results = entity_processor.load_manual_result(result_file, raw_items)
+    if not entity_results:
+        logger.error("加载实体识别结果失败")
+        return False
+
+    # 保存结果到快照
+    if entity_processor.save_entity_results_to_snapshot(snapshot_id, entity_results):
+        logger.info(f"实体识别结果导入成功，共处理 {len(entity_results)} 条新闻")
+        return True
+    else:
+        logger.error("保存实体识别结果到快照失败")
+        return False
+
 def main():
     import argparse
 
     parser = argparse.ArgumentParser(description='导入AI处理结果')
     parser.add_argument('snapshot_id', help='快照ID（8位哈希）')
     parser.add_argument('--base-result', help='基础处理结果JSON文件路径')
+    parser.add_argument('--entity-result', help='实体识别结果JSON文件路径')
     parser.add_argument('--scoring-result', help='打分结果JSON文件路径')
     parser.add_argument('--no-publish', action='store_true', help='不发布到GitHub Pages')
 
@@ -172,12 +202,16 @@ def main():
         # 导入基础结果
         success = import_base_results(args.snapshot_id, args.base_result)
         return 0 if success else 1
+    elif args.entity_result:
+        # 导入实体识别结果
+        success = import_entity_results(args.snapshot_id, args.entity_result)
+        return 0 if success else 1
     elif args.scoring_result:
         # 导入打分结果
         success = import_scoring_results(args.snapshot_id, args.scoring_result, args.no_publish)
         return 0 if success else 1
     else:
-        logger.error("必须指定 --base-result 或 --scoring-result 参数")
+        logger.error("必须指定 --base-result、--entity-result 或 --scoring-result 参数")
         parser.print_help()
         return 1
 

@@ -71,13 +71,21 @@ def calculate_news_similarity(news1, news2, entity_threshold: int = 3, similarit
     if len(common_entities) < entity_threshold:
         return 0.0
 
-    # 2. 计算标题相似度（权重0.6）
+    # 1.1 实体质量检查：排除过于通用的实体，避免误匹配
+    # 定义通用实体列表，这些实体不应该作为主要匹配依据
+    generic_entities = {"AI", "人工智能", "机器人", "科技", "技术", "公司", "企业", "产品", "服务"}
+    specific_common_entities = common_entities - generic_entities
+    # 如果共同实体都是通用实体，即使数量达标也返回0
+    if len(specific_common_entities) == 0:
+        return 0.0
+
+    # 2. 计算标题相似度（权重0.7，标题更能反映事件核心）
     title_sim = cosine_similarity(news1.chinese_title, news2.chinese_title)
 
-    # 3. 计算摘要相似度（权重0.4）
+    # 3. 计算摘要相似度（权重0.3）
     summary_sim = cosine_similarity(news1.summary, news2.summary)
 
     # 4. 综合相似度
-    combined_sim = title_sim * 0.6 + summary_sim * 0.4
+    combined_sim = title_sim * 0.7 + summary_sim * 0.3
 
     return combined_sim if combined_sim >= similarity_threshold else 0.0

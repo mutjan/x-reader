@@ -18,7 +18,7 @@
 - [x] **Phase 11: Event Table Refactor** - Refactor event display to table style with expand/collapse functionality (completed 2026-04-02)
 - [x] **Phase 12: UX 体验优化** - 优化前端交互体验：扩展性字段截断hover展开、事件表头排序、工具栏功能、筛选控件样式 (completed 2026-04-02)
 - [x] **Phase 13: 事件展示与实体识别优化** - 事件表格显示消息源链接、调整实体识别流程顺序、统一事件行高度限制 (completed 2026-04-03)
-- [ ] **Phase 14: 前端新闻表格统一化优化** - 新闻列表行高统一由标题决定、事件链接显示消息来源名称、修复实体列高度显示问题
+- [x] **Phase 14: 前端新闻表格统一化优化** - 新闻列表行高统一由标题决定、事件链接显示消息来源名称、修复实体列高度显示问题 (completed 2026-04-03)
 
 ## Phase Details
 
@@ -154,7 +154,7 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 14-01-PLAN.md — 新闻列表行高统一约束优化
+- [x] 14-01-PLAN.md — 新闻列表行高统一约束优化
 - [x] 14-02-PLAN.md — 事件表格链接显示来源域名
 - [x] 14-03-PLAN.md — 实体列高度显示问题修复
 
@@ -174,4 +174,4 @@ Plans:
 | 11. Event Table Refactor | 3/3 | Completed | 2026-04-02 |
 | 12. UX 体验优化 | 4/4 | Completed | 2026-04-02 |
 | 13. 事件展示与实体识别优化 | 3/3 | Completed | 2026-04-03 |
-| 14. 前端新闻表格统一化优化 | 2/3 | In Progress|  |
+| 14. 前端新闻表格统一化优化 | 3/3 | Complete    | 2026-04-03 |

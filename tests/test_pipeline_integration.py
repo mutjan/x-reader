@@ -57,7 +57,7 @@ class MockAIProcessor(BaseAIProcessor):
 class TestPipelineIntegration:
     """完整流水线集成测试类"""
 
-    def __init__(self):
+    def setup_method(self):
         """初始化测试"""
         self.temp_dir = tempfile.mkdtemp()
         self.temp_data_file = os.path.join(self.temp_dir, "news_data.json")
@@ -65,7 +65,7 @@ class TestPipelineIntegration:
         # 创建测试原始新闻数据
         self.raw_items = self._create_test_raw_items()
 
-    def cleanup(self):
+    def teardown_method(self):
         """测试后清理"""
         import shutil
         shutil.rmtree(self.temp_dir)

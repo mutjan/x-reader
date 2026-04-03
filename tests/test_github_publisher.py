@@ -18,7 +18,7 @@ from src.processors.event_grouper import EventGrouper, Event
 class TestGitHubPublisher:
     """GitHub Pages发布器测试类"""
 
-    def __init__(self):
+    def setup_method(self):
         """初始化测试"""
         self.temp_dir = tempfile.mkdtemp()
         # 创建临时数据文件
