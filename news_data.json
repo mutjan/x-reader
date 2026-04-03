@@ -4008,40 +4008,6 @@
         "original_content": "技术文章详细解析了Claude Code创建的.claude配置文件夹的内部结构、各文件功能和使用方法，帮助开发者更好地定制Claude工作流。",
         "chinese_title": "文章解析Claude配置文件夹的结构和功能",
         "grade": "B"
-      },
-      {
-        "id": "2df32980a7403b2ad83c76c6fb346ae3",
-        "title": "谷歌翻译推出耳机实时翻译功能，支持70多种语言",
-        "original_title": "Periodic Labs is building an autonomous science lab to continuously loop: AI prediction-> robot run experiment -> AI improvement Their roadmap is obvi...",
-        "summary": "谷歌翻译正式在iOS平台推出耳机实时翻译功能，支持70多种语言的同声传译，同时将该功能扩展到更多国家的Android和iOS用户。",
-        "rating": "A",
-        "score": 79,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "实时翻译技术的普及将打破语言障碍，推动跨国交流和全球化协作，可能催生更多跨语言应用场景。",
-        "entities": [
-          "Ios",
-          "实时翻译",
-          "谷歌"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/davidtsong/status/2037613440462975166"
-          },
-          {
-            "name": "Twitter",
-            "url": "https://x.com/Google/status/2037586898450006029"
-          }
-        ],
-        "sources": 2,
-        "timestamp": 1774604747,
-        "published_at": "2026-03-27T17:45:47",
-        "source": "Twitter",
-        "url": "https://x.com/davidtsong/status/2037613440462975166",
-        "original_content": "谷歌翻译正式在iOS平台推出耳机实时翻译功能，支持70多种语言的同声传译，同时将该功能扩展到更多国家的Android和iOS用户。",
-        "chinese_title": "谷歌翻译推出耳机实时翻译功能，支持70多种语言",
-        "grade": "A"
       }
     ],
     "2026-03-29": [
@@ -21035,7 +21001,10 @@
         "published_at": "2026-04-03T17:01:34.031076",
         "source": "Twitter",
         "url": "https://x.com/BoWang87/status/2039943931543331237",
-        "event_id": null
+        "event_id": null,
+        "original_content": "苹果研究院发布Simple Self-Distillation(SSD)技术，通过让代码模型在自身输出上进行微调，无需更好的教师模型、验证器或强化学习，即可大幅提升编码能力。实验显示Qwen3-30B-Instruct模型在LiveCodeBench上pass@1从42.4%提升至55.3%，相对提升30%。",
+        "chinese_title": "苹果研究院提出代码模型自蒸馏新方法 无需外部数据即可显著提升性能",
+        "grade": "A+"
       },
       {
         "id": "d3213f3de7e7b68ab0fa87920de0f5a6",
@@ -22081,6 +22050,30 @@
       }
     ],
     "2026-04-02": [
+      {
+        "id": "4a9172cb345ea1cf5f88d40415dcbb2d",
+        "title": "Gemma 4 31B模型采用TurboQuant KV缓存技术 内存占用降低63%",
+        "original_title": "RT Prince Canuma: Gemma 4 31B running with TurboQuant KV cache on MLX 🔥 128K context: → KV Memory: 13.3 GB → 4.9 GB (63% reduction) → Peak Memor...",
+        "summary": "谷歌Gemma 4 31B大模型在MLX框架上运行时，通过TurboQuant KV缓存技术将128K上下文的KV内存从13.3GB降至4.9GB，减少63%占用，峰值内存也降低9.4GB，同时保持推理质量。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术突破将大幅降低大模型本地部署的硬件门槛，推动边缘设备运行超大模型的可行性，可能引发更多厂商跟进KV缓存优化技术。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/osanseviero/status/2039983349209375046"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775214093,
+        "published_at": "2026-04-03T19:01:33.165469",
+        "source": "Twitter",
+        "url": "https://x.com/osanseviero/status/2039983349209375046",
+        "event_id": null
+      },
       {
         "id": "f4a8cea498d53dbc71ea5e420aeeaafb",
         "title": "亚马逊商谈收购卫星公司Globalstar 对抗SpaceX星链业务",
@@ -24326,6 +24319,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-03T17:02:13.401098",
+  "last_updated": "2026-04-03T19:02:14.755945",
   "total_news": 791
 }
