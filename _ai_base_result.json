@@ -43,5 +43,14 @@
     "type": "opinion",
     "extension": "行业领袖对AGI落地时间的乐观预测将进一步加剧科技巨头在AGI研发领域的竞争，可能推动各国政府加快AI监管政策的出台，同时也会引发社会各界对AGI社会影响的广泛讨论。",
     "entities": ["OpenAI", "Greg Brockman", "AGI", "英伟达"]
+  },
+  {
+    "index": 5,
+    "original_url": "https://x.com/osanseviero/status/2039983349209375046",
+    "chinese_title": "Gemma 4 31B模型采用TurboQuant KV缓存技术 内存占用降低63%",
+    "summary": "谷歌Gemma 4 31B大模型在MLX框架上运行时，通过TurboQuant KV缓存技术将128K上下文的KV内存从13.3GB降至4.9GB，减少63%占用，峰值内存也降低9.4GB，同时保持推理质量。",
+    "type": "research",
+    "extension": "该技术突破将大幅降低大模型本地部署的硬件门槛，推动边缘设备运行超大模型的可行性，可能引发更多厂商跟进KV缓存优化技术。",
+    "entities": ["Gemma", "TurboQuant", "MLX", "大模型"]
   }
 ]
