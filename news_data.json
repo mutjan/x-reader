@@ -1,1969 +1,5 @@
 {
   "news": {
-    "2026-03-28": [
-      {
-        "id": "4921389bb29f28420710c9448dd95736",
-        "title": "GPT-1发明者被忽视 竟是大模型技术路线最早推动者",
-        "original_title": "Every LLM from any lab today traces back to this guy, who was the only person at OpenAI pushing for pretraining transformer language models. He built ...",
-        "summary": "业内人士披露，GPT-1的开发者是OpenAI内部唯一坚持预训练Transformer语言模型路线的人，如今几乎所有大模型都源自该技术路径，但这位关键贡献者却鲜为人知。",
-        "rating": "S",
-        "score": 0,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这一历史细节可能引发对AI技术发展史的重新梳理，以及对大模型发展路径的讨论，也可能唤起行业对幕后技术贡献者的关注。",
-        "entities": [
-          "GPT",
-          "OpenAI",
-          "Transformer"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/flowersslop/status/2037892926785634720"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517330",
-        "source": "Twitter",
-        "url": "https://x.com/flowersslop/status/2037892926785634720",
-        "is_calibrated": true,
-        "original_content": "业内人士披露，GPT-1的开发者是OpenAI内部唯一坚持预训练Transformer语言模型路线的人，如今几乎所有大模型都源自该技术路径，但这位关键贡献者却鲜为人知。",
-        "chinese_title": "GPT-1发明者被忽视 竟是大模型技术路线最早推动者",
-        "grade": "S"
-      },
-      {
-        "id": "0cf5762fcebd3875431ae5df15eaf998",
-        "title": "Anthropic将推出代号Capybara和Mythos新模型 性能超Opus级别",
-        "original_title": "we've been using capybara for testing every new model and it's the flowith mascot. now anthropic's new model is codenamed capybara. capybara energy is...",
-        "summary": "Anthropic正在准备发布两款全新大模型，其中Mythos是超越现有Opus级别的更高阶模型，Capybara则是新的产品序列，官方提示新模型可能带来重大网络安全风险。",
-        "rating": "S",
-        "score": 72,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "超Opus级别的模型发布可能重新定义大模型能力边界，引发新一轮性能竞赛，同时其安全风险提示也会引发行业对AI安全治理的讨论。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Opus"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/flowith/status/2037874424779780245"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517345",
-        "source": "Twitter",
-        "url": "https://x.com/flowith/status/2037874424779780245",
-        "is_calibrated": true,
-        "original_content": "Anthropic正在准备发布两款全新大模型，其中Mythos是超越现有Opus级别的更高阶模型，Capybara则是新的产品序列，官方提示新模型可能带来重大网络安全风险。",
-        "chinese_title": "Anthropic将推出代号Capybara和Mythos新模型 性能超Opus级别",
-        "grade": "S"
-      },
-      {
-        "id": "856662f2df650ee8e2b7c87d1a350cb1",
-        "title": "开发者开源多平台爬虫工具 支持AI Agent免费获取全网数据",
-        "original_title": "Someone just open sourced a tool that lets your AI agents scrape Twitter, Reddit, YouTube, Github + more. Zero API fees. Here's how to actually use th...",
-        "summary": "一款新开源工具可让AI Agent无需API费用即可抓取Twitter、Reddit、YouTube、GitHub等平台内容，可用于构建市场情报机器人、自动化研究等场景。",
-        "rating": "A+",
-        "score": 87,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这类工具的普及可能降低AI Agent的开发门槛，同时也可能引发平台方对数据安全和反爬机制的进一步收紧。",
-        "entities": [
-          "Ai Agent",
-          "Open Source"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/sharbel/status/2037864710029169065"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517358",
-        "source": "Twitter",
-        "url": "https://x.com/sharbel/status/2037864710029169065",
-        "is_calibrated": true,
-        "original_content": "一款新开源工具可让AI Agent无需API费用即可抓取Twitter、Reddit、YouTube、GitHub等平台内容，可用于构建市场情报机器人、自动化研究等场景。",
-        "chinese_title": "开发者开源多平台爬虫工具 支持AI Agent免费获取全网数据",
-        "grade": "A+"
-      },
-      {
-        "id": "f476fa95e7495ca775dfa11c4079db1a",
-        "title": "多所高校联合开源高频交易多智能体系统QuantAgent",
-        "original_title": "🚨BREAKING: Researchers from Stony Brook, CMU, Yale, UBC, and Fudan just open-sourced a multi-agent LLM system built specifically for high-frequency...",
-        "summary": "来自石溪大学、CMU、耶鲁、复旦等高校的研究者开源了专为高频交易分析设计的多智能体LLM系统QuantAgent，可同时运行四个专业AI agent分析市场多维度信息，输出可执行交易决策。",
-        "rating": "A",
-        "score": 77,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "AI在高频交易领域的应用可能改变量化交易行业格局，同时也会引发监管机构对AI参与金融交易风险的关注。",
-        "entities": [
-          "Ai Agent",
-          "大模型",
-          "量化交易"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/aiwithjainam/status/2037848304630042891"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517368",
-        "source": "Twitter",
-        "url": "https://x.com/aiwithjainam/status/2037848304630042891",
-        "is_calibrated": true,
-        "original_content": "来自石溪大学、CMU、耶鲁、复旦等高校的研究者开源了专为高频交易分析设计的多智能体LLM系统QuantAgent，可同时运行四个专业AI agent分析市场多维度信息，输出可执行交易决策。",
-        "chinese_title": "多所高校联合开源高频交易多智能体系统QuantAgent",
-        "grade": "A"
-      },
-      {
-        "id": "ffdbc1815c0e7d2e986ae32a1ab95914",
-        "title": "开源多平台爬取工具支持六大平台零API费用数据获取",
-        "original_title": "Give your ai agent eyes to see the entire internet for free Read & search - Twitter, - Reddit, - YouTube, - GitHub, - Bilibili, - XiaoHongShu One CLI,...",
-        "summary": "一款开源命令行工具可免费读取和搜索Twitter、Reddit、YouTube、GitHub、B站、小红书六大平台内容，无需支付任何API费用。",
-        "rating": "S",
-        "score": 94,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这类工具可能会被广泛用于个人开发者项目，但也面临平台反爬策略限制和数据使用合规风险。",
-        "entities": [
-          "Open Source",
-          "爬虫"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/GithubProjects/status/2037839641215398223"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517376",
-        "source": "Twitter",
-        "url": "https://x.com/GithubProjects/status/2037839641215398223",
-        "is_calibrated": true,
-        "original_content": "一款开源命令行工具可免费读取和搜索Twitter、Reddit、YouTube、GitHub、B站、小红书六大平台内容，无需支付任何API费用。",
-        "chinese_title": "开源多平台爬取工具支持六大平台零API费用数据获取",
-        "grade": "S"
-      },
-      {
-        "id": "2f3e3b184f71ec33a5af31156b0b3f5f",
-        "title": "开发者逆向工程重实现Claude CLI 速度提升73%内存占用减半",
-        "original_title": "这个哥们通过分析claudecode的npm包，用gpt5.4重新实现了一个claude cli，回复质量达到了真假难辨的程度，并且速度快了73%，内存占用少了50%。 我就说claudecode...",
-        "summary": "开发者通过分析Claude Code的npm包，用GPT-5.4重新实现了Claude CLI工具，回复质量与原版几乎无差异，但速度快了73%，内存占用降低50%。",
-        "rating": "S",
-        "score": 90,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "这一案例印证了大模型能力才是AI工具的核心竞争力，可能引发更多对AI产品客户端的二次开发和优化尝试。",
-        "entities": [
-          "Claude",
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/tvytlx/status/2037780702121590871"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517386",
-        "source": "Twitter",
-        "url": "https://x.com/tvytlx/status/2037780702121590871",
-        "is_calibrated": true,
-        "original_content": "开发者通过分析Claude Code的npm包，用GPT-5.4重新实现了Claude CLI工具，回复质量与原版几乎无差异，但速度快了73%，内存占用降低50%。",
-        "chinese_title": "开发者逆向工程重实现Claude CLI 速度提升73%内存占用减半",
-        "grade": "S"
-      },
-      {
-        "id": "8fe2fb5ba0a1126390292bba523620a7",
-        "title": "Databricks CEO与OpenAI CEO将共同授课斯坦福CS153课程",
-        "original_title": "RT Anjney Midha: so @mabb0tt and I are once again volunteering to teach http://cs153.stanford.edu there are so many new frontiers to be pioneered than...",
-        "summary": "Databricks CEO Anjney Midha将再次在斯坦福大学志愿教授CS153课程，邀请Andrej Karpathy、Sam Altman等行业领袖作为演讲嘉宾，聚焦AI领域前沿探索。",
-        "rating": "S",
-        "score": 90,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "行业领袖参与高校教学有助于培养下一代AI人才，课程内容也可能反映行业最新技术趋势和发展方向。",
-        "entities": [
-          "安德烈·卡帕西",
-          "斯坦福大学",
-          "萨姆·奥尔特曼"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/agarwl_/status/2037904413830828365"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517396",
-        "source": "Twitter",
-        "url": "https://x.com/agarwl_/status/2037904413830828365",
-        "is_calibrated": true,
-        "original_content": "Databricks CEO Anjney Midha将再次在斯坦福大学志愿教授CS153课程，邀请Andrej Karpathy、Sam Altman等行业领袖作为演讲嘉宾，聚焦AI领域前沿探索。",
-        "chinese_title": "Databricks CEO与OpenAI CEO将共同授课斯坦福CS153课程",
-        "grade": "S"
-      },
-      {
-        "id": "4d260c09f0b40cce25023fcfe567d297",
-        "title": "Meta未成年人伤害案接连败诉 社交平台监管风向趋严",
-        "original_title": "Meta&rsquo;s legal defeat could be a victory for children, or a loss for everyone",
-        "summary": "美国两个陪审团先后裁定Meta需为社交产品对未成年人造成的伤害赔偿数亿美元，YouTube也在同类案件中败诉，两家公司均已提起上诉。",
-        "rating": "S",
-        "score": 92,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这些判决可能成为科技平台内容责任认定的先例，推动全球范围内对社交平台儿童保护义务的立法和监管收紧。",
-        "entities": [
-          "Meta",
-          "Youtube",
-          "内容监管"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/policy/903006/meta-new-mexico-los-angeles-child-safety-trial-impact"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517416",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/policy/903006/meta-new-mexico-los-angeles-child-safety-trial-impact",
-        "is_calibrated": true,
-        "original_content": "美国两个陪审团先后裁定Meta需为社交产品对未成年人造成的伤害赔偿数亿美元，YouTube也在同类案件中败诉，两家公司均已提起上诉。",
-        "chinese_title": "Meta未成年人伤害案接连败诉 社交平台监管风向趋严",
-        "grade": "S"
-      },
-      {
-        "id": "22d08cc2f3d3f58b2c3b254e55dffedc",
-        "title": "谷歌预警量子计算破解现有加密技术提前至2029年",
-        "original_title": "Google Warns That Quantum Armageddon Is Drawing Closer",
-        "summary": "谷歌宣布将量子计算机能够破解现有加密算法的时间点预期从原计划提前至2029年，提醒行业需尽快为后量子密码时代做好准备。",
-        "rating": "S",
-        "score": 100,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "量子计算威胁提前到来将加速全球加密体系升级，网络安全行业将迎来大规模技术迭代，也可能引发国家层面的密码技术竞赛。",
-        "entities": [
-          "加密技术",
-          "谷歌",
-          "量子计算"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/robots-and-machines/google-quantum-armageddon"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517425",
-        "source": "Futurism",
-        "url": "https://futurism.com/robots-and-machines/google-quantum-armageddon",
-        "is_calibrated": true,
-        "original_content": "谷歌宣布将量子计算机能够破解现有加密算法的时间点预期从原计划提前至2029年，提醒行业需尽快为后量子密码时代做好准备。",
-        "chinese_title": "谷歌预警量子计算破解现有加密技术提前至2029年",
-        "grade": "S"
-      },
-      {
-        "id": "136af2375bb0541849c7e1652fd4e803",
-        "title": "OpenAI与Anthropic掌门人十年恩怨曝光 权力斗争定义AI行业格局",
-        "original_title": "A look at the decadelong feud between Sam Altman and Dario Amodei; sources say Amodei likened Altman's legal fight with Musk to Hitler's fight with Stalin (Keach Hagey/Wall Street Journal)",
-        "summary": "《华尔街日报》披露了OpenAI CEO Sam Altman与Anthropic CEO Dario Amodei长达十年的矛盾渊源，消息人士称Amodei曾将Altman与马斯克的法律纠纷比作希特勒与斯大林的斗争。",
-        "rating": "S",
-        "score": 95,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "两大AI巨头领导人的个人恩怨直接影响两家公司的战略走向，也会间接影响整个AI行业的发展路径和竞争格局。",
-        "entities": [
-          "Anthropic",
-          "Dario Amodei",
-          "OpenAI",
-          "萨姆·奥尔特曼"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260328/p7#a260328p7"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517437",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260328/p7#a260328p7",
-        "is_calibrated": true,
-        "original_content": "《华尔街日报》披露了OpenAI CEO Sam Altman与Anthropic CEO Dario Amodei长达十年的矛盾渊源，消息人士称Amodei曾将Altman与马斯克的法律纠纷比作希特勒与斯大林的斗争。",
-        "chinese_title": "OpenAI与Anthropic掌门人十年恩怨曝光 权力斗争定义AI行业格局",
-        "grade": "S"
-      },
-      {
-        "id": "8c5a58c56ae5def95b326a0df76aa6df",
-        "title": "Anthropic Claude付费订阅用户今年已翻倍 消费级市场增长迅猛",
-        "original_title": "If you, like me, just woke up, let me catch you up on the Claude Code Leak (I know nothing, all conjecture): > Someone inside Anthropic, got switched ...",
-        "summary": "网传Anthropic内部员工提交代码时意外包含source map文件，导致Claude Code完整源代码泄露，相关仓库已被大量克隆和传播。",
-        "rating": "",
-        "score": 0,
-        "type": "breaking",
-        "typeName": "商业数据",
-        "expansion": "Claude的快速增长表明大模型消费级市场竞争日趋激烈，Anthropic的IPO计划也将因此获得更高估值预期。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Source Map",
-          "源代码泄露"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517446",
-        "source": "Twitter",
-        "url": "https://x.com/altryne/status/2039005970865516955",
-        "original_content": "If you, like me, just woke up, let me catch you up on the Claude Code Leak (I know nothing, all conjecture): &gt; Someone inside Anthropic, got switched to Adaptive reasoning mode &gt; Their Claude Code switched to Sonnet &gt; Committed the .map file of Claude Code &gt; Effectively leaking the ENTIRE CC Source Code &gt; @realsigridjin was tired after running 2 south korean hackathons in SF, saw the leak &gt; Rules in Korea are different, he cloned the repo, went to sleep &gt; Wakes up to 25K stars, and his GF begging him to take it down (she's a copyright lawyer) &gt; Their team decided - how about we have agents rewrite this in Python!? Surely... this is more legal &gt; Rewrite in Py &gt; Board a plane to SK🇰🇷 &gt; One of the guys decides python is slow, is now rewriting ALL OF CLAUDE CODE into Rust. &gt; Anthropic cannot take down, cannot sue &gt; Is this \"fair use?\" &gt; TL;DR - we're about to have open source Claude Code in Rust",
-        "chinese_title": "Anthropic Claude Code源代码疑似通过source map文件泄露",
-        "grade": "S",
-        "extension": "此次源代码泄露可能暴露Claude Code的核心技术实现细节，影响Anthropic的技术壁垒，同时可能催生大量基于该代码的开源衍生项目。",
-        "is_calibrated": true
-      },
-      {
-        "id": "e30752b56a070be40a09564ab57aaee1",
-        "title": "新基准测试ARC-AGI-3有望更准确衡量AI通用智能水平",
-        "original_title": "This Week’s Awesome Tech Stories From Around the Web (Through March 28)",
-        "summary": "知名AI研究者François Chollet提出的ARC-AGI-3测试方法，通过考察AI处理全新场景和学习新技能的能力，有望更准确地衡量AI的通用智能水平，而非仅仅测试数据记忆能力。",
-        "rating": "",
-        "score": 0,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "更科学的AGI评测方法将推动大模型研发从单纯参数规模竞赛转向真正通用智能能力的提升，影响整个行业的研发方向。",
-        "entities": [
-          "AGI",
-          "François Chollet",
-          "基准测试"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Singularity HUB",
-            "url": "https://singularityhub.com/2026/03/28/this-weeks-awesome-tech-stories-from-around-the-web-through-march-28-2/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517455",
-        "source": "Singularity HUB",
-        "url": "https://singularityhub.com/2026/03/28/this-weeks-awesome-tech-stories-from-around-the-web-through-march-28-2/",
-        "is_calibrated": true,
-        "original_content": "知名AI研究者François Chollet提出的ARC-AGI-3测试方法，通过考察AI处理全新场景和学习新技能的能力，有望更准确地衡量AI的通用智能水平，而非仅仅测试数据记忆能力。",
-        "chinese_title": "新基准测试ARC-AGI-3有望更准确衡量AI通用智能水平",
-        "grade": ""
-      },
-      {
-        "id": "635d8b06461d33738ecf7db3cbd83bff",
-        "title": "Anthropic面临中国大模型竞争与安全理念双重压力 计划四季度IPO",
-        "original_title": "Anthropic struggling with Chinese competition, its own safety obsession",
-        "summary": "Anthropic一方面坚持严格的AI安全原则拒绝美国国防部的安全要求调整，另一方面面临来自中国大模型的市场竞争压力，计划最快2026年第四季度上市。",
-        "rating": "S",
-        "score": 92,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "Anthropic的上市进程和战略选择将成为观察大模型行业竞争格局和安全治理方向的重要风向标，其面临的竞争压力也反映了全球AI产业的激烈竞争态势。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Ipo"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Register",
-            "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/28/miss_anthropic_not_those_who/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517464",
-        "source": "The Register",
-        "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/28/miss_anthropic_not_those_who/",
-        "is_calibrated": true,
-        "original_content": "Anthropic一方面坚持严格的AI安全原则拒绝美国国防部的安全要求调整，另一方面面临来自中国大模型的市场竞争压力，计划最快2026年第四季度上市。",
-        "chinese_title": "Anthropic面临中国大模型竞争与安全理念双重压力 计划四季度IPO",
-        "grade": "S"
-      },
-      {
-        "id": "1561a9bec96ac55614de02e115492b9f",
-        "title": "TikTok AI广告标识政策执行不力 大量AI生成广告未标注",
-        "original_title": "TikTok&rsquo;s policy for AI ads isn&rsquo;t working",
-        "summary": "调查发现包括三星在内的众多品牌在TikTok投放的AI生成广告并未按照平台要求标注，用户难以区分AI生成内容和真实广告素材。",
-        "rating": "",
-        "score": 0,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "AI生成内容标识的监管执行难题将推动相关立法完善，也会促使平台开发更有效的AI内容检测技术。",
-        "entities": [
-          "内容监管",
-          "字节跳动",
-          "生成式Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/ai-artificial-intelligence/900400/tiktok-ai-ads-labels-samsung-disclosure"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774710297,
-        "published_at": "2026-03-28T23:04:57.517473",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/900400/tiktok-ai-ads-labels-samsung-disclosure",
-        "is_calibrated": true,
-        "original_content": "调查发现包括三星在内的众多品牌在TikTok投放的AI生成广告并未按照平台要求标注，用户难以区分AI生成内容和真实广告素材。",
-        "chinese_title": "TikTok AI广告标识政策执行不力 大量AI生成广告未标注",
-        "grade": ""
-      },
-      {
-        "id": "6ff2e98d93415cf5fb2c2134bf676080",
-        "title": "谷歌ICLR论文TurboQuant被指剽窃科研成果RaBitQ",
-        "original_title": "帮转：在 X 上被大吹特吹的 Google TurboQuant，实际上剽窃了我朋友重要的科研成果 RabitQ 并且发表在今年的 ICLR 上，有充足证据证明 Google 团队知情并且隐瞒...",
-        "summary": "有用户在X平台爆料称谷歌发表在ICLR 2026的TurboQuant论文剽窃了其朋友的科研成果RaBitQ，且有证据表明谷歌团队知情并隐瞒了先前研究的贡献，引发学术不端争议。",
-        "rating": "A+",
-        "score": 88,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可能引发AI学术界对论文评审机制的讨论，影响谷歌在科研领域的声誉，后续可能会有更多学术不端案例被曝光。",
-        "entities": [
-          "Iclr",
-          "Rabitq",
-          "Turboquant",
-          "学术不端",
-          "谷歌"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/Jiaxi_Cui/status/2037873982515626207"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774706703,
-        "published_at": "2026-03-28T22:05:03.892980",
-        "source": "Twitter",
-        "url": "https://x.com/Jiaxi_Cui/status/2037873982515626207",
-        "is_calibrated": true,
-        "original_content": "有用户在X平台爆料称谷歌发表在ICLR 2026的TurboQuant论文剽窃了其朋友的科研成果RaBitQ，且有证据表明谷歌团队知情并隐瞒了先前研究的贡献，引发学术不端争议。",
-        "chinese_title": "谷歌ICLR论文TurboQuant被指剽窃科研成果RaBitQ",
-        "grade": "A+"
-      },
-      {
-        "id": "00d177934e0616730d42fd1473b68d65",
-        "title": "GPT-5.4在美国数学奥赛USAMO中得分达95%",
-        "original_title": "RT Jasper Dekoninck: Last year, models miserably failed on USAMO 2025. This year, GPT-5.4 scores an amazing 95%, essentially saturating the benchmark....",
-        "summary": "数据显示GPT-5.4在USAMO 2025数学竞赛中取得95%的正确率，相比去年大模型表现实现大幅提升，标志着AI在数学推理领域的重大进展。",
-        "rating": "A",
-        "score": 79,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "AI数学能力的突破将推动科研效率提升，可能改变数学研究的工作模式，也会引发对AI辅助科研伦理的讨论。",
-        "entities": [
-          "GPT",
-          "Usamo",
-          "大模型",
-          "数学推理"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/scaling01/status/2037890526859427998"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774706703,
-        "published_at": "2026-03-28T22:05:03.892999",
-        "source": "Twitter",
-        "url": "https://x.com/scaling01/status/2037890526859427998",
-        "is_calibrated": true,
-        "original_content": "数据显示GPT-5.4在USAMO 2025数学竞赛中取得95%的正确率，相比去年大模型表现实现大幅提升，标志着AI在数学推理领域的重大进展。",
-        "chinese_title": "GPT-5.4在美国数学奥赛USAMO中得分达95%",
-        "grade": "A"
-      },
-      {
-        "id": "a5d990b7e63b709c846f4c132e3537d3",
-        "title": "苏黎世联邦理工博士后公开指控谷歌ICLR论文学术不端",
-        "original_title": "苏黎世联邦理工学院博士后高健扬发布公开信，指控谷歌 ICLR 2026 论文 TurboQuant 对其先行工作 RaBitQ 的描述存在三项严重问题。高健扬是 RaBitQ 的第一作者，...",
-        "summary": "苏黎世联邦理工学院博士后高健扬发布公开信，指控谷歌ICLR 2026论文TurboQuant在描述其先行工作RaBitQ时存在方法相似性回避、理论结果失实等三项严重问题。",
-        "rating": "A+",
-        "score": 87,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可能推动顶会论文评审机制改革，加强对学术不端行为的监管，影响科技公司在学术领域的公信力。",
-        "entities": [
-          "Iclr",
-          "Rabitq",
-          "学术不端",
-          "谷歌",
-          "高健扬"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/0xLogicrw/status/2037790568303165826"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774706703,
-        "published_at": "2026-03-28T22:05:03.893012",
-        "source": "Twitter",
-        "url": "https://x.com/0xLogicrw/status/2037790568303165826",
-        "is_calibrated": true,
-        "original_content": "苏黎世联邦理工学院博士后高健扬发布公开信，指控谷歌ICLR 2026论文TurboQuant在描述其先行工作RaBitQ时存在方法相似性回避、理论结果失实等三项严重问题。",
-        "chinese_title": "苏黎世联邦理工博士后公开指控谷歌ICLR论文学术不端",
-        "grade": "A+"
-      },
-      {
-        "id": "270240942b30ea61097c41d8c008ccab",
-        "title": "Karpathy提出的AutoResearch框架已出现多样落地案例",
-        "original_title": "Karpathy 发布 AutoResearch 才一个月。 已经有人把这套 loop 用在了完全意想不到的地方。 下面8个真实案例👇。建议收藏 🧵",
-        "summary": "Andrej Karpathy发布AutoResearch自动化研究框架仅一个月，已有开发者将其应用于多个出人意料的场景，展示了AI辅助科研的广阔应用前景。",
-        "rating": "B",
-        "score": 69,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AutoResearch的普及可能大幅降低科研门槛，推动各领域研究效率提升，催生新的科研协作模式。",
-        "entities": [
-          "Ai科研",
-          "Autoresearch",
-          "安德烈·卡帕西"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/axiaisacat/status/2037771361821532244"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774706703,
-        "published_at": "2026-03-28T22:05:03.893022",
-        "source": "Twitter",
-        "url": "https://x.com/axiaisacat/status/2037771361821532244",
-        "is_calibrated": true,
-        "original_content": "Andrej Karpathy发布AutoResearch自动化研究框架仅一个月，已有开发者将其应用于多个出人意料的场景，展示了AI辅助科研的广阔应用前景。",
-        "chinese_title": "Karpathy提出的AutoResearch框架已出现多样落地案例",
-        "grade": "B"
-      },
-      {
-        "id": "44ff89b40918bbb88d4f8f23d0bf6c29",
-        "title": "AI研究者称LeCun观点正确马斯克认知存在偏差",
-        "original_title": "now that i'm doing actual research instead of just engineering i realize lecun was right and elon was wrong",
-        "summary": "AI研究者Yacine在从事实际研究工作后表示，Yann LeCun关于AI发展的观点更为正确，而Elon Musk的相关认知存在偏差，引发业内对AI发展路线的讨论。",
-        "rating": "A",
-        "score": 80,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "该观点可能引发AI社区对技术发展路线的辩论，影响公众对AI发展方向的认知。",
-        "entities": [
-          "Ai发展",
-          "Yann Lecun",
-          "马斯克"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/yacineMTB/status/2037684212518535418"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774706703,
-        "published_at": "2026-03-28T22:05:03.893031",
-        "source": "Twitter",
-        "url": "https://x.com/yacineMTB/status/2037684212518535418",
-        "is_calibrated": true,
-        "original_content": "AI研究者Yacine在从事实际研究工作后表示，Yann LeCun关于AI发展的观点更为正确，而Elon Musk的相关认知存在偏差，引发业内对AI发展路线的讨论。",
-        "chinese_title": "AI研究者称LeCun观点正确马斯克认知存在偏差",
-        "grade": "A"
-      },
-      {
-        "id": "84cfc371214229fe2943b753e86af6d7",
-        "title": "微软Xbox新负责人叫停争议营销活动重塑品牌形象",
-        "original_title": "Microsoft's new gaming boss axed 'This is an Xbox' campaign because 'it didn't feel like Xbox' &mdash; Xbox brand undergoes transformation to redefine its identity",
-        "summary": "微软游戏部门新负责人Asha Sharma叫停了饱受争议的\\\"This is an Xbox\\\"营销活动，认为其不符合Xbox品牌定位，将推动Xbox品牌进行全面转型。",
-        "rating": "S",
-        "score": 97,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "Xbox品牌战略调整可能影响游戏机市场竞争格局，微软后续的游戏业务布局值得关注。",
-        "entities": [
-          "Xbox",
-          "微软",
-          "游戏行业"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/video-games/xbox/microsofts-new-gaming-boss-axed-this-is-an-xbox-campaign-because-it-didnt-feel-like-xbox-xbox-brand-undergoes-transformation-to-redefine-its-identity"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774706703,
-        "published_at": "2026-03-28T22:05:03.893042",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/video-games/xbox/microsofts-new-gaming-boss-axed-this-is-an-xbox-campaign-because-it-didnt-feel-like-xbox-xbox-brand-undergoes-transformation-to-redefine-its-identity",
-        "is_calibrated": true,
-        "original_content": "微软游戏部门新负责人Asha Sharma叫停了饱受争议的\\\"This is an Xbox\\\"营销活动，认为其不符合Xbox品牌定位，将推动Xbox品牌进行全面转型。",
-        "chinese_title": "微软Xbox新负责人叫停争议营销活动重塑品牌形象",
-        "grade": "S"
-      },
-      {
-        "id": "19c2b013a6e58f46466ecc4c05100003",
-        "title": "研究显示多数用户会盲目遵从ChatGPT的错误建议",
-        "original_title": "Alarming Study Finds That Most People Just Do What ChatGPT Tells Them, Even If It’s Totally Wrong",
-        "summary": "宾夕法尼亚大学研究发现，即便ChatGPT给出的答案明显错误，仍有大多数用户会选择相信并执行，反映出公众对AI系统的过度信任问题。",
-        "rating": "A+",
-        "score": 88,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该研究将推动AI伦理和用户教育的发展，促使科技公司加强AI产品的透明度和风险提示机制。",
-        "entities": [
-          "Ai伦理",
-          "GPT",
-          "用户行为"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/study-do-what-chatgpt-tells-us"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774706703,
-        "published_at": "2026-03-28T22:05:03.893054",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/study-do-what-chatgpt-tells-us",
-        "is_calibrated": true,
-        "original_content": "宾夕法尼亚大学研究发现，即便ChatGPT给出的答案明显错误，仍有大多数用户会选择相信并执行，反映出公众对AI系统的过度信任问题。",
-        "chinese_title": "研究显示多数用户会盲目遵从ChatGPT的错误建议",
-        "grade": "A+"
-      },
-      {
-        "id": "88b3fea9bc850a5b7a4dbd7497f2de2b",
-        "title": "卡车司机在车内装配6000美元RTX 5080游戏设备",
-        "original_title": "Trucker shows off $6,000 PC driving sim rig in passenger seat — driver slides over to RTX 5080-powered setup when stuck in traffic",
-        "summary": "美国一名卡车司机在副驾驶位装配了价值6000美元的高端PC游戏设备，搭载RTX 5080显卡，在堵车时可以切换到驾驶模拟器打发时间。",
-        "rating": "A+",
-        "score": 88,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "该案例展示了高端消费电子设备的多样化应用场景，可能推动移动游戏设备市场的创新。",
-        "entities": [
-          "Rtx",
-          "消费电子",
-          "游戏硬件"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/video-games/pc-gaming/trucker-shows-off-usd6-000-pc-driving-sim-rig-in-passenger-seat-driver-slides-over-to-rtx-5080-powered-setup-when-stuck-in-traffic"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774706703,
-        "published_at": "2026-03-28T22:05:03.893066",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/video-games/pc-gaming/trucker-shows-off-usd6-000-pc-driving-sim-rig-in-passenger-seat-driver-slides-over-to-rtx-5080-powered-setup-when-stuck-in-traffic",
-        "is_calibrated": true,
-        "original_content": "美国一名卡车司机在副驾驶位装配了价值6000美元的高端PC游戏设备，搭载RTX 5080显卡，在堵车时可以切换到驾驶模拟器打发时间。",
-        "chinese_title": "卡车司机在车内装配6000美元RTX 5080游戏设备",
-        "grade": "A+"
-      },
-      {
-        "id": "5d2a6f8ff1585bbfea121405d9e7f8be",
-        "title": "GPT-5.4在USAMO竞赛中取得95%得分，数学推理能力接近饱和",
-        "original_title": "Last year, models miserably failed on USAMO 2025. This year, GPT-5.4 scores an amazing 95%, essentially saturating the benchmark. Yes, LLMs still make...",
-        "summary": "OpenAI最新模型GPT-5.4在2025年美国数学奥林匹克竞赛中取得95%的优异成绩，相比去年模型的糟糕表现实现了巨大突破，展现了AI在数学推理领域的快速进展。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该突破可能推动AI在教育、科学计算等领域的应用，也将引发关于AI替代人类数学家的讨论，相关技术进展值得持续关注。",
-        "entities": [
-          "Ai数学推理",
-          "GPT",
-          "OpenAI",
-          "Usamo"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/j_dekoninck/status/2037862663649460366"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774702996,
-        "published_at": "2026-03-28T21:03:16.975712",
-        "source": "Twitter",
-        "url": "https://x.com/j_dekoninck/status/2037862663649460366",
-        "is_calibrated": true,
-        "original_content": "OpenAI最新模型GPT-5.4在2025年美国数学奥林匹克竞赛中取得95%的优异成绩，相比去年模型的糟糕表现实现了巨大突破，展现了AI在数学推理领域的快速进展。",
-        "chinese_title": "GPT-5.4在USAMO竞赛中取得95%得分，数学推理能力接近饱和",
-        "grade": "B"
-      },
-      {
-        "id": "5a0210ecca1a66f30502de5bcd31722e",
-        "title": "谷歌正在测试Whitewaker模型，疑似Gemini 3.1 Flash即将发布",
-        "original_title": "🚨 Google is testing a model called \"Whitewaker\" on Arena that appears to be Gemini 3.1 Flash We can expect the release very soon",
-        "summary": "谷歌在Arena平台测试代号为Whitewaker的新模型，推测为即将发布的Gemini 3.1 Flash版本，显示谷歌正在加速大模型产品迭代。",
-        "rating": "A",
-        "score": 78,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Gemini新版本的发布可能进一步加剧大模型市场竞争，尤其在推理速度和成本优化方面的表现值得关注。",
-        "entities": [
-          "Gemini",
-          "大模型",
-          "谷歌"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/marmaduke091/status/2037856191645204611"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774702996,
-        "published_at": "2026-03-28T21:03:16.975728",
-        "source": "Twitter",
-        "url": "https://x.com/marmaduke091/status/2037856191645204611",
-        "is_calibrated": true,
-        "original_content": "谷歌在Arena平台测试代号为Whitewaker的新模型，推测为即将发布的Gemini 3.1 Flash版本，显示谷歌正在加速大模型产品迭代。",
-        "chinese_title": "谷歌正在测试Whitewaker模型，疑似Gemini 3.1 Flash即将发布",
-        "grade": "A"
-      },
-      {
-        "id": "cb53c3d3f560bd6459f0de483cf0c088",
-        "title": "David Fan加入AMI Labs担任创始成员，负责纽约实验室建设",
-        "original_title": "Met David this week, he is awesome.",
-        "summary": "AI研究员David Fan加入AMI Labs成为纽约实验室创始成员，将从零开始构建理解物理世界的AI系统，参与制定研究方向和团队建设。",
-        "rating": "A",
-        "score": 76,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "顶尖人才的流动反映了AI创业公司对基础研究的重视，物理世界AI方向的研究进展值得关注。",
-        "entities": [
-          "Ai物理建模",
-          "Ami Labs",
-          "David Fan"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/Brian_Bo_Li/status/2037836077537382864"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774702996,
-        "published_at": "2026-03-28T21:03:16.975755",
-        "source": "Twitter",
-        "url": "https://x.com/Brian_Bo_Li/status/2037836077537382864",
-        "is_calibrated": true,
-        "original_content": "AI研究员David Fan加入AMI Labs成为纽约实验室创始成员，将从零开始构建理解物理世界的AI系统，参与制定研究方向和团队建设。",
-        "chinese_title": "David Fan加入AMI Labs担任创始成员，负责纽约实验室建设",
-        "grade": "A"
-      },
-      {
-        "id": "43e86d1d85038056fda3fedd3fbcb2ea",
-        "title": "OpenAI参数高尔夫挑战赛推动小模型架构向高窄方向发展",
-        "original_title": "OpenAI’s Parameter Golf challenge heavily rewards tiny language models, where depth often matters more than width. That naturally pushes architecture...",
-        "summary": "OpenAI举办的Parameter Golf挑战赛奖励参数高效的小模型，促使架构向高窄方向发展，当前领先方案采用LayerNorm Scaling技术稳定深层窄模型训练。",
-        "rating": "A+",
-        "score": 87,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "小模型架构的创新可能降低AI部署成本，推动大模型技术在边缘设备上的应用。",
-        "entities": [
-          "OpenAI",
-          "小模型",
-          "模型架构"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/Shiwei_Liu66/status/2037831831731511304"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774702996,
-        "published_at": "2026-03-28T21:03:16.975766",
-        "source": "Twitter",
-        "url": "https://x.com/Shiwei_Liu66/status/2037831831731511304",
-        "is_calibrated": true,
-        "original_content": "OpenAI举办的Parameter Golf挑战赛奖励参数高效的小模型，促使架构向高窄方向发展，当前领先方案采用LayerNorm Scaling技术稳定深层窄模型训练。",
-        "chinese_title": "OpenAI参数高尔夫挑战赛推动小模型架构向高窄方向发展",
-        "grade": "A+"
-      },
-      {
-        "id": "082bc16bdebdb88b4fe66506d6a52b1c",
-        "title": "前OpenAI员工称未来5年AI导致人类灭绝概率高达70%",
-        "original_title": "Ex OpenAI employee Daniel Kokotajlo claims of a 70% chance of human extinction from AI within ~5 years \"All humans dead?\" \"Correct. Extinction.\"",
-        "summary": "前OpenAI员工Daniel Kokotajlo公开表示，未来5年内AI导致人类灭绝的概率为70%，引发关于AI安全伦理的新一轮讨论。",
-        "rating": "B",
-        "score": 70,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这种极端观点可能推动AI监管政策的出台，同时也反映了AI安全领域内部的严重分歧。",
-        "entities": [
-          "Ai伦理",
-          "Ai安全",
-          "Daniel Kokotajlo",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/rohanpaul_ai/status/2037638306838778179"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774702996,
-        "published_at": "2026-03-28T21:03:16.975776",
-        "source": "Twitter",
-        "url": "https://x.com/rohanpaul_ai/status/2037638306838778179",
-        "is_calibrated": true,
-        "original_content": "前OpenAI员工Daniel Kokotajlo公开表示，未来5年内AI导致人类灭绝的概率为70%，引发关于AI安全伦理的新一轮讨论。",
-        "chinese_title": "前OpenAI员工称未来5年AI导致人类灭绝概率高达70%",
-        "grade": "B"
-      },
-      {
-        "id": "e6889165f2ec0ffe237279675350dd33",
-        "title": "太阳能电池效率突破理论极限，实现130%能量转换效率",
-        "original_title": "Solar cells just did the “impossible” with this 130% breakthrough",
-        "summary": "研究人员通过\\\"自旋翻转\\\"金属络合物实现 singlet fission 效应，太阳能电池效率达到约130%，突破了传统光伏技术的理论极限。",
-        "rating": "A",
-        "score": 75,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该突破可能彻底改变太阳能发电的成本结构，推动可再生能源替代化石能源的进程，对全球能源格局产生深远影响。",
-        "entities": [
-          "可再生能源",
-          "太阳能电池",
-          "新能源技术"
-        ],
-        "sourceLinks": [
-          {
-            "name": "ScienceDaily",
-            "url": "https://www.sciencedaily.com/releases/2026/03/260328024517.htm"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774702996,
-        "published_at": "2026-03-28T21:03:16.975788",
-        "source": "ScienceDaily",
-        "url": "https://www.sciencedaily.com/releases/2026/03/260328024517.htm",
-        "is_calibrated": true,
-        "original_content": "研究人员通过\\\"自旋翻转\\\"金属络合物实现 singlet fission 效应，太阳能电池效率达到约130%，突破了传统光伏技术的理论极限。",
-        "chinese_title": "太阳能电池效率突破理论极限，实现130%能量转换效率",
-        "grade": "A"
-      },
-      {
-        "id": "3b46449698df2b32d593b6bd738b6730",
-        "title": "研究发现常用代糖赤藓糖醇或增加脑损伤和中风风险",
-        "original_title": "Popular sugar substitute linked to brain damage and stroke risk",
-        "summary": "新研究显示广泛使用的代糖赤藓糖醇会破坏脑血管细胞功能，增加氧化应激和血栓形成风险，即使常规摄入量也可能提高中风风险。",
-        "rating": "B",
-        "score": 72,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该发现可能影响食品饮料行业的代糖使用策略，引发消费者对健康代糖的重新选择，相关监管可能跟进。",
-        "entities": [
-          "代糖",
-          "公共卫生",
-          "赤藓糖醇",
-          "食品安全"
-        ],
-        "sourceLinks": [
-          {
-            "name": "ScienceDaily",
-            "url": "https://www.sciencedaily.com/releases/2026/03/260328065333.htm"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774702996,
-        "published_at": "2026-03-28T21:03:16.975802",
-        "source": "ScienceDaily",
-        "url": "https://www.sciencedaily.com/releases/2026/03/260328065333.htm",
-        "is_calibrated": true,
-        "original_content": "新研究显示广泛使用的代糖赤藓糖醇会破坏脑血管细胞功能，增加氧化应激和血栓形成风险，即使常规摄入量也可能提高中风风险。",
-        "chinese_title": "研究发现常用代糖赤藓糖醇或增加脑损伤和中风风险",
-        "grade": "B"
-      },
-      {
-        "id": "a6a5533c54295df3e39350be6e67e621",
-        "title": "Meta投资建设7座天然气发电厂，为路易斯安那AI数据中心供电",
-        "original_title": "Meta to fund seven new natural gas power plants to fuel AI data centers — Entergy partnership to deliver 7 gigawatts of power for Louisiana AI facility",
-        "summary": "Meta将与Entergy合作建设7座天然气发电厂，为其路易斯安那州AI数据中心提供7吉瓦电力，支撑AI算力扩张的同时也引发对化石能源依赖的争议。",
-        "rating": "B",
-        "score": 71,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "AI算力需求的快速增长正在推高能源消耗，数据中心的能源来源问题将成为行业关注焦点，可能影响相关政策制定。",
-        "entities": [
-          "Ai数据中心",
-          "Meta",
-          "天然气发电",
-          "算力"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/meta-will-fund-seven-new-gas-plants-to-power-its-7gw-louisiana-data-center"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774702996,
-        "published_at": "2026-03-28T21:03:16.975814",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/meta-will-fund-seven-new-gas-plants-to-power-its-7gw-louisiana-data-center",
-        "is_calibrated": true,
-        "original_content": "Meta将与Entergy合作建设7座天然气发电厂，为其路易斯安那州AI数据中心提供7吉瓦电力，支撑AI算力扩张的同时也引发对化石能源依赖的争议。",
-        "chinese_title": "Meta投资建设7座天然气发电厂，为路易斯安那AI数据中心供电",
-        "grade": "B"
-      },
-      {
-        "id": "479b399caeb9e8a2a474f3e64cbda637",
-        "title": "雷蛇Kiyo V2摄像头评测：4K30帧规格需USB-C接口支持",
-        "original_title": "Razer Kiyo V2 Review: USB-C required",
-        "summary": "雷蛇发布Kiyo V2网络摄像头，支持4K/30fps拍摄，配备大传感器和隐私快门，但高分辨率模式必须使用USB-C接口。",
-        "rating": "A",
-        "score": 79,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "外设产品的更新迭代主要影响消费电子市场，对科技行业整体影响有限。",
-        "entities": [
-          "摄像头",
-          "消费电子",
-          "雷蛇"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/peripherals/webcams/razer-kiyo-v2-review"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774702996,
-        "published_at": "2026-03-28T21:03:16.975829",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/peripherals/webcams/razer-kiyo-v2-review",
-        "is_calibrated": true,
-        "original_content": "雷蛇发布Kiyo V2网络摄像头，支持4K/30fps拍摄，配备大传感器和隐私快门，但高分辨率模式必须使用USB-C接口。",
-        "chinese_title": "雷蛇Kiyo V2摄像头评测：4K30帧规格需USB-C接口支持",
-        "grade": "A"
-      },
-      {
-        "id": "415a35c8004671b65eafdd11846bb4ba",
-        "title": "谷歌Gemini实时翻译覆盖70多种语言，2.7亿用户可直接使用",
-        "original_title": "AI inevitably leads to this, in every country. IMO, this is more scary than nuclear. One hacker ... Sadly, I don't see a way to avoid it.",
-        "summary": "谷歌推出基于Gemini AI的实时音频翻译功能，支持70多种语言，用户可通过耳机直接听到翻译后的语音，这一技术可能颠覆语言学习和教育市场。",
-        "rating": "B",
-        "score": 69,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "该技术将直接影响多语言交流、跨境旅游、在线教育等多个领域，可能催生新的硬件产品形态，对现有翻译工具和语言学习平台造成冲击。",
-        "entities": [
-          "Gemini",
-          "多语言翻译",
-          "谷歌"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/cz_binance/status/2037834026418077874"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774699827,
-        "published_at": "2026-03-28T20:10:27.422804",
-        "source": "Twitter",
-        "url": "https://x.com/cz_binance/status/2037834026418077874",
-        "is_calibrated": true,
-        "original_content": "谷歌推出基于Gemini AI的实时音频翻译功能，支持70多种语言，用户可通过耳机直接听到翻译后的语音，这一技术可能颠覆语言学习和教育市场。",
-        "chinese_title": "谷歌Gemini实时翻译覆盖70多种语言，2.7亿用户可直接使用",
-        "grade": "B"
-      },
-      {
-        "id": "7d4c68998346e9fdda6bef554e3f1ce9",
-        "title": "开发者打造8美元桌面Claude机器人，完全离线运行",
-        "original_title": "this guy 3D printed and vibe coded a tiny Claude robot for his desk it's called \"Clawd Mochi.\" runs on an ESP32 chip with a tiny display that shows an...",
-        "summary": "开发者使用3D打印和ESP32芯片制作了名为\\\"Clawd Mochi\\\"的迷你桌面机器人，总成本不到8美元，支持离线运行和多种交互功能，所有设计完全开源。",
-        "rating": "A",
-        "score": 76,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "低成本离线AI硬件的出现可能推动AI硬件的民主化，让更多开发者能够参与到AI硬件的创新中来。",
-        "entities": [
-          "Claude",
-          "Esp32",
-          "开源硬件"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/om_patel5/status/2037776537341051300"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774699827,
-        "published_at": "2026-03-28T20:10:27.422832",
-        "source": "Twitter",
-        "url": "https://x.com/om_patel5/status/2037776537341051300",
-        "is_calibrated": true,
-        "original_content": "开发者使用3D打印和ESP32芯片制作了名为\\\"Clawd Mochi\\\"的迷你桌面机器人，总成本不到8美元，支持离线运行和多种交互功能，所有设计完全开源。",
-        "chinese_title": "开发者打造8美元桌面Claude机器人，完全离线运行",
-        "grade": "A"
-      },
-      {
-        "id": "cf33f1af3576f2bdc525687f7748d5ce",
-        "title": "开发者在1976年小型机上训练Transformer模型",
-        "original_title": "Paper Tape Is All You Need – Training a Transformer on a 1976 Minicomputer",
-        "summary": "技术爱好者成功在1976年生产的DEC PDP-11小型机上实现了Transformer模型训练，使用穿孔纸带作为存储介质，展示了AI技术的通用性和历史硬件的潜力。",
-        "rating": "A",
-        "score": 77,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该项目证明了AI算法在资源受限环境下的可行性，可能为边缘计算和低资源设备上的AI部署提供新思路。",
-        "entities": [
-          "Pdp-11",
-          "Transformer",
-          "边缘计算"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/dbrll/ATTN-11"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774699827,
-        "published_at": "2026-03-28T20:10:27.422843",
-        "source": "Hacker News",
-        "url": "https://github.com/dbrll/ATTN-11",
-        "is_calibrated": true,
-        "original_content": "技术爱好者成功在1976年生产的DEC PDP-11小型机上实现了Transformer模型训练，使用穿孔纸带作为存储介质，展示了AI技术的通用性和历史硬件的潜力。",
-        "chinese_title": "开发者在1976年小型机上训练Transformer模型",
-        "grade": "A"
-      },
-      {
-        "id": "28098fea496be27a9199b65019255e8f",
-        "title": "中国涉军研究高校突破美国管制获得英伟达A100芯片",
-        "original_title": "Chinese universities performing military research acquired Super Micro servers with sanctioned Nvidia AI chips — public documents reveal purchases were completed in 2025 and 2026 despite US export controls",
-        "summary": "公开文件显示，四所参与军事研究的中国高校在2025-2026年间获得了受美国出口管制的英伟达A100 AI芯片，引发对出口管制有效性的讨论。",
-        "rating": "A",
-        "score": 80,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这一事件可能加剧中美科技摩擦，推动美国进一步收紧芯片出口管制政策，影响全球半导体供应链。",
-        "entities": [
-          "A100",
-          "出口管制",
-          "英伟达"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/chinese-universities-performing-military-research-acquired-super-micro-servers-with-sanctioned-nvidia-ai-chips-public-documents-reveal-purchases-were-completed-in-2025-and-2026-despite-us-export-controls"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774699827,
-        "published_at": "2026-03-28T20:10:27.422854",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/chinese-universities-performing-military-research-acquired-super-micro-servers-with-sanctioned-nvidia-ai-chips-public-documents-reveal-purchases-were-completed-in-2025-and-2026-despite-us-export-controls",
-        "is_calibrated": true,
-        "original_content": "公开文件显示，四所参与军事研究的中国高校在2025-2026年间获得了受美国出口管制的英伟达A100 AI芯片，引发对出口管制有效性的讨论。",
-        "chinese_title": "中国涉军研究高校突破美国管制获得英伟达A100芯片",
-        "grade": "A"
-      },
-      {
-        "id": "d5108b241e4ff4a91dc2d6f8ee813f61",
-        "title": "香港边境可强制要求提供设备密码，违者最高监禁五年",
-        "original_title": "Hong Kong border agents and police can demand device passwords, including from US citizens, under penalty of imprisonment — border controls become more invasive worldwide",
-        "summary": "香港新法规规定，边境执法人员有权要求出入境人员提供电子设备密码，拒绝配合者可能面临最高五年监禁，引发对个人数据安全的担忧。",
-        "rating": "A",
-        "score": 82,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "全球边境数据检查力度不断加大，可能推动加密技术和隐私保护工具的进一步发展。",
-        "entities": [
-          "数据安全",
-          "边境管控",
-          "隐私保护"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/cyber-security/hong-kong-border-agents-and-police-can-demand-device-passwords-under-penalty-of-imprisonment-border-controls-become-more-invasive-worldwide"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774699827,
-        "published_at": "2026-03-28T20:10:27.422864",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/cyber-security/hong-kong-border-agents-and-police-can-demand-device-passwords-under-penalty-of-imprisonment-border-controls-become-more-invasive-worldwide",
-        "is_calibrated": true,
-        "original_content": "香港新法规规定，边境执法人员有权要求出入境人员提供电子设备密码，拒绝配合者可能面临最高五年监禁，引发对个人数据安全的担忧。",
-        "chinese_title": "香港边境可强制要求提供设备密码，违者最高监禁五年",
-        "grade": "A"
-      },
-      {
-        "id": "7318776fa0d10773e826d74771eda124",
-        "title": "OpenAI广告试点六周收入突破1亿美元年化规模",
-        "original_title": "OpenAI's US Ad Pilot Exceeds $100 Million In Annualized Revenue In Six Weeks",
-        "summary": "OpenAI在美国推出的ChatGPT广告试点项目上线六周即实现1亿美元年化收入，目前85%的用户有资格看到广告，每日实际展示率不到20%，增长空间巨大。",
-        "rating": "S",
-        "score": 95,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "广告业务可能成为OpenAI继订阅服务后的第二大收入来源，推动AI应用的商业化模式创新，对搜索引擎广告市场构成潜在威胁。",
-        "entities": [
-          "GPT",
-          "OpenAI",
-          "广告业务"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Slashdot",
-            "url": "https://news.slashdot.org/story/26/03/28/0231232/openais-us-ad-pilot-exceeds-100-million-in-annualized-revenue-in-six-weeks?utm_source=rss1.0mainlinkanon&utm_medium=feed"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774699827,
-        "published_at": "2026-03-28T20:10:27.422879",
-        "source": "Slashdot",
-        "url": "https://news.slashdot.org/story/26/03/28/0231232/openais-us-ad-pilot-exceeds-100-million-in-annualized-revenue-in-six-weeks?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-        "is_calibrated": true,
-        "original_content": "OpenAI在美国推出的ChatGPT广告试点项目上线六周即实现1亿美元年化收入，目前85%的用户有资格看到广告，每日实际展示率不到20%，增长空间巨大。",
-        "chinese_title": "OpenAI广告试点六周收入突破1亿美元年化规模",
-        "grade": "S"
-      },
-      {
-        "id": "7b79c501ab12341d2c771039a4365fff",
-        "title": "开发者用纯C和CUDA实现多模态训练代码库 性能达45% MFU",
-        "original_title": "I just achieved the holy grail as a weekend project! Wrote a multimodal training codebase in pure C and CUDA+NCCL with minimal dependencies (no torch!...",
-        "summary": "开发者在周末项目中完成了无PyTorch依赖的纯C和CUDA+NCCL多模态训练代码库，在四台8xH100节点上通过FSDP实现45%的MFU效率，未来可能开源。",
-        "rating": "A+",
-        "score": 87,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该开源项目可能推动大模型训练框架的轻量化发展，降低AI训练门槛，吸引更多开发者参与底层训练优化。",
-        "entities": [
-          "CUDA",
-          "Fsdp",
-          "H100",
-          "Pytorch"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/giffmana/status/2037836744645583323"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774695778,
-        "published_at": "2026-03-28T19:02:58.215746",
-        "source": "Twitter",
-        "url": "https://x.com/giffmana/status/2037836744645583323",
-        "is_calibrated": true,
-        "original_content": "开发者在周末项目中完成了无PyTorch依赖的纯C和CUDA+NCCL多模态训练代码库，在四台8xH100节点上通过FSDP实现45%的MFU效率，未来可能开源。",
-        "chinese_title": "开发者用纯C和CUDA实现多模态训练代码库 性能达45% MFU",
-        "grade": "A+"
-      },
-      {
-        "id": "c2ce7feab3dd1617025304d32bbd4d82",
-        "title": "谷歌工程师泄露内部12步AI工作流 无需PM审批效率提升3倍",
-        "original_title": "🚨BREAKING: A senior Google engineer just leaked the internal prompting system their team uses to ship features 3x faster. No PM approval. No design...",
-        "summary": "谷歌高级工程师匿名泄露团队自2025年第三季度使用的12步AI工作流，无需产品经理审批和设计冲刺，可将功能交付速度提升3倍。",
-        "rating": "B",
-        "score": 67,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这套工作流可能被众多科技公司借鉴，推动AI辅助开发流程的普及，改变传统产品迭代模式。",
-        "entities": [
-          "Ai工作流",
-          "谷歌"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/thisguyknowsai/status/2037832059587371499"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774695778,
-        "published_at": "2026-03-28T19:02:58.215760",
-        "source": "Twitter",
-        "url": "https://x.com/thisguyknowsai/status/2037832059587371499",
-        "is_calibrated": true,
-        "original_content": "谷歌高级工程师匿名泄露团队自2025年第三季度使用的12步AI工作流，无需产品经理审批和设计冲刺，可将功能交付速度提升3倍。",
-        "chinese_title": "谷歌工程师泄露内部12步AI工作流 无需PM审批效率提升3倍",
-        "grade": "B"
-      },
-      {
-        "id": "b5abdd23f1640e178beec118c8bfe382",
-        "title": "实体AI数据层公司Datra开启25万美元天使轮融资 已获多个付费试点",
-        "original_title": "We’re opening up a $250K angel round for @Datra_ai. In the last few weeks: 3 paid pilots ($3k-$5k each) Pipeline with Scale AI, Figure AI, Physical I...",
-        "summary": "专注实体AI数据层的初创公司Datra开启25万美元天使轮融资，目前已获得3个付费试点项目，与Scale AI、Figure AI等机器人实验室建立合作管道。",
-        "rating": "A+",
-        "score": 86,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "若融资成功，该公司可能加速实体AI数据采集基础设施建设，推动具身智能行业的数据标准化进程。",
-        "entities": [
-          "Datra",
-          "Figure Ai",
-          "Scale Ai",
-          "具身智能"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/Pushkar11420566/status/2037804591778009292"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774695778,
-        "published_at": "2026-03-28T19:02:58.215775",
-        "source": "Twitter",
-        "url": "https://x.com/Pushkar11420566/status/2037804591778009292",
-        "is_calibrated": true,
-        "original_content": "专注实体AI数据层的初创公司Datra开启25万美元天使轮融资，目前已获得3个付费试点项目，与Scale AI、Figure AI等机器人实验室建立合作管道。",
-        "chinese_title": "实体AI数据层公司Datra开启25万美元天使轮融资 已获多个付费试点",
-        "grade": "A+"
-      },
-      {
-        "id": "e3e59ebf36f7262eeb3a6f59a8b9a470",
-        "title": "微软展台在RSAC安全大会上出现经典蓝屏死机故障引调侃",
-        "original_title": "To BSOD or not to BSOD? Only Microsoft knows the answer",
-        "summary": "在RSAC美国安全大会上，微软展台的设备出现经典的蓝屏死机故障，成为参会安全专家的调侃对象，凸显操作系统稳定性问题。",
-        "rating": "A+",
-        "score": 88,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该事件可能引发公众对微软产品稳定性的讨论，推动微软加强产品质量管控，尤其是企业级产品的可靠性测试。",
-        "entities": [
-          "Rsac",
-          "微软",
-          "操作系统"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Register",
-            "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/28/rsac_bork/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774695778,
-        "published_at": "2026-03-28T19:02:58.215784",
-        "source": "The Register",
-        "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/28/rsac_bork/",
-        "is_calibrated": true,
-        "original_content": "在RSAC美国安全大会上，微软展台的设备出现经典的蓝屏死机故障，成为参会安全专家的调侃对象，凸显操作系统稳定性问题。",
-        "chinese_title": "微软展台在RSAC安全大会上出现经典蓝屏死机故障引调侃",
-        "grade": "A+"
-      },
-      {
-        "id": "8437e2768415e9a46f1972eae766eac7",
-        "title": "消费者沃尔玛80美元捡漏RTX 5060 Ti 市场价超420美元",
-        "original_title": "Lucky PC builder scores brand new RTX 5060 Ti worth $420 for just $80 at Walmart — clearance sale find saves buyer hundreds upgrading from a GTX 1060",
-        "summary": "一位PC组装爱好者在沃尔玛清仓活动中仅花费80美元购得市场价超过420美元的全新微星RTX 5060 Ti显卡，成功从GTX 1060升级节省数百美元。",
-        "rating": "B",
-        "score": 66,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "此类折扣事件可能引发消费者对线下零售清仓渠道的关注，推动二手和清仓硬件市场的活跃度。",
-        "entities": [
-          "Rtx 5060 Ti",
-          "Walmart",
-          "英伟达"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/pc-components/gpus/lucky-pc-builder-scores-brand-new-rtx-5060-ti-worth-usd420-for-just-usd80-at-walmart-clearance-sale-find-saves-buyer-hundreds-upgrading-from-a-gtx-1060"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774695778,
-        "published_at": "2026-03-28T19:02:58.215795",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/pc-components/gpus/lucky-pc-builder-scores-brand-new-rtx-5060-ti-worth-usd420-for-just-usd80-at-walmart-clearance-sale-find-saves-buyer-hundreds-upgrading-from-a-gtx-1060",
-        "is_calibrated": true,
-        "original_content": "一位PC组装爱好者在沃尔玛清仓活动中仅花费80美元购得市场价超过420美元的全新微星RTX 5060 Ti显卡，成功从GTX 1060升级节省数百美元。",
-        "chinese_title": "消费者沃尔玛80美元捡漏RTX 5060 Ti 市场价超420美元",
-        "grade": "B"
-      },
-      {
-        "id": "4c1415caac69ba4637afb7a601706431",
-        "title": "硅谷论坛热议政府主导产业政策 人工智能公众好感度下降",
-        "original_title": "A look at some themes at this year's Hill and Valley Forum: embracing government-led industrial policy to onshore manufacturing, AI's unpopularity, and more (Newcomer)",
-        "summary": "今年Hill and Valley论坛透露出两个重要趋势：科技行业开始拥抱政府主导的制造业回流产业政策，同时人工智能技术的公众好感度呈现下降态势。",
-        "rating": "A",
-        "score": 81,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "政府产业政策的转向可能重塑全球科技制造业格局，而AI公众好感度下降可能推动监管政策收紧和行业伦理规范完善。",
-        "entities": [
-          "产业政策",
-          "人工智能"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260328/p5#a260328p5"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774695778,
-        "published_at": "2026-03-28T19:02:58.215805",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260328/p5#a260328p5",
-        "is_calibrated": true,
-        "original_content": "今年Hill and Valley论坛透露出两个重要趋势：科技行业开始拥抱政府主导的制造业回流产业政策，同时人工智能技术的公众好感度呈现下降态势。",
-        "chinese_title": "硅谷论坛热议政府主导产业政策 人工智能公众好感度下降",
-        "grade": "A"
-      },
-      {
-        "id": "74ead05f67e8c34663441d734010b6a6",
-        "title": "微软接手OpenAI退出的得州AI数据中心扩建项目",
-        "original_title": "Microsoft takes over a Texas AI data center expansion after OpenAI backs away",
-        "summary": "在OpenAI放弃推进得州AI数据中心建设项目后，微软宣布接手该项目，这将使两家公司在美国最大的AI算力集群之一成为邻居。",
-        "rating": "A",
-        "score": 79,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该举措显示微软在AI基础设施领域的扩张策略，可能进一步巩固其在AI算力市场的主导地位，影响美国AI产业地理布局。",
-        "entities": [
-          "Ai算力",
-          "OpenAI",
-          "微软",
-          "数据中心"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tech Xplore - electronic gadgets, technology advances and research news",
-            "url": "https://techxplore.com/news/2026-03-microsoft-texas-ai-center-expansion.html"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774695778,
-        "published_at": "2026-03-28T19:02:58.215817",
-        "source": "Tech Xplore - electronic gadgets, technology advances and research news",
-        "url": "https://techxplore.com/news/2026-03-microsoft-texas-ai-center-expansion.html",
-        "is_calibrated": true,
-        "original_content": "在OpenAI放弃推进得州AI数据中心建设项目后，微软宣布接手该项目，这将使两家公司在美国最大的AI算力集群之一成为邻居。",
-        "chinese_title": "微软接手OpenAI退出的得州AI数据中心扩建项目",
-        "grade": "A"
-      },
-      {
-        "id": "0bf63190777cb10bdb7c661d506dc658",
-        "title": "Mac OS X发布25周年 成功跨越三次硬件架构迁移",
-        "original_title": "Apple’s Mac OS X turns 25, has prospered across three hardware architecture changes — from PowerPC, through Intel x86, to Apple Silicon",
-        "summary": "苹果Mac OS X操作系统迎来发布25周年纪念，在25年间成功完成从PowerPC到Intel x86再到Apple Silicon的三次重大硬件架构迁移。",
-        "rating": "B",
-        "score": 65,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "苹果的架构迁移经验为科技行业提供了重要参考，证明长期软件生态规划对硬件迭代的关键支撑作用。",
-        "entities": [
-          "Apple Silicon",
-          "Mac Os X",
-          "苹果"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware (apple)",
-            "url": "https://www.tomshardware.com/software/operating-systems/apples-mac-os-x-turns-25-has-prospered-across-three-hardware-architecture-changes-from-powerpc-through-intel-x86-to-apple-silicon"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774695778,
-        "published_at": "2026-03-28T19:02:58.215829",
-        "source": "Tom's Hardware (apple)",
-        "url": "https://www.tomshardware.com/software/operating-systems/apples-mac-os-x-turns-25-has-prospered-across-three-hardware-architecture-changes-from-powerpc-through-intel-x86-to-apple-silicon",
-        "is_calibrated": true,
-        "original_content": "苹果Mac OS X操作系统迎来发布25周年纪念，在25年间成功完成从PowerPC到Intel x86再到Apple Silicon的三次重大硬件架构迁移。",
-        "chinese_title": "Mac OS X发布25周年 成功跨越三次硬件架构迁移",
-        "grade": "B"
-      },
-      {
-        "id": "75c31b560ffb976bdde8f93f14a9e020",
-        "title": "学术出版界暴AI滥用问题 数百篇同行评审论文涉嫌违规使用AI",
-        "original_title": "Weekend reads: ‘Illicit AI use’ in hundreds of peer reviews; 49-year-old commentary on talc retracted; co-authorship as a ‘traded commodity’",
-        "summary": "学术出版领域曝出多起AI滥用事件，包括数百篇同行评审论文存在违规使用AI的情况，同时还有多篇论文因学术不端被撤稿，共同作者身份被指沦为可交易商品。",
-        "rating": "A",
-        "score": 81,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可能推动学术出版行业建立更严格的AI使用规范和检测机制，重塑学术评价体系和同行评审流程。",
-        "entities": [
-          "人工智能",
-          "学术不端"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Retraction Watch",
-            "url": "https://retractionwatch.com/2026/03/28/weekend-reads-illicit-ai-use-peer-reviews-commentary-talc-retracted-coauthorship-traded-commodity/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774695778,
-        "published_at": "2026-03-28T19:02:58.215838",
-        "source": "Retraction Watch",
-        "url": "https://retractionwatch.com/2026/03/28/weekend-reads-illicit-ai-use-peer-reviews-commentary-talc-retracted-coauthorship-traded-commodity/",
-        "is_calibrated": true,
-        "original_content": "学术出版领域曝出多起AI滥用事件，包括数百篇同行评审论文存在违规使用AI的情况，同时还有多篇论文因学术不端被撤稿，共同作者身份被指沦为可交易商品。",
-        "chinese_title": "学术出版界暴AI滥用问题 数百篇同行评审论文涉嫌违规使用AI",
-        "grade": "A"
-      },
-      {
-        "id": "e0f281ef68dfed4683906a35f953d576",
-        "title": "OpenAI初创团队成员以熊猫为主题 源于创始人妹妹的毛绒玩具爱好",
-        "original_title": "Dario Amodei’s sister loved stuffed animals so much that her fiancé proposed via a movie of her dolls coming to life Dario wore a panda suit to thei...",
-        "summary": "Anthropic创始人Dario Amodei的妹妹十分喜爱毛绒玩具，其未婚夫通过制作玩偶动画求婚，婚礼上Dario还穿着熊猫套装，这一趣事后来成为OpenAI初创团队的内部代号来源。",
-        "rating": "B",
-        "score": 68,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该趣闻展现了科技公司创业团队的独特文化，可延伸报道OpenAI早期团队组成和文化发展历程。",
-        "entities": [
-          "Anthropic",
-          "Dario Amodei",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/ns123abc/status/2037811972058579265"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774692249,
-        "published_at": "2026-03-28T18:04:09.232440",
-        "source": "Twitter",
-        "url": "https://x.com/ns123abc/status/2037811972058579265",
-        "is_calibrated": true,
-        "original_content": "Anthropic创始人Dario Amodei的妹妹十分喜爱毛绒玩具，其未婚夫通过制作玩偶动画求婚，婚礼上Dario还穿着熊猫套装，这一趣事后来成为OpenAI初创团队的内部代号来源。",
-        "chinese_title": "OpenAI初创团队成员以熊猫为主题 源于创始人妹妹的毛绒玩具爱好",
-        "grade": "B"
-      },
-      {
-        "id": "2e68bafe2726e36ecfd385c348594818",
-        "title": "Sam Altman传记作者深挖OpenAI前研究副总裁离职创业内幕",
-        "original_title": "The person who wrote Sam Altman's biography just published a 13-minute investigation into why his former VP of Research left to start the company that...",
-        "summary": "曾为Sam Altman撰写传记的记者Keach Hagey发布13分钟调查报告，深入探究OpenAI前研究副总裁离职创业的真实原因，新公司目前已对OpenAI构成竞争压力。",
-        "rating": "A",
-        "score": 76,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该事件可能影响OpenAI团队稳定性和市场竞争格局，可关注后续人才流动和技术路线分化。",
-        "entities": [
-          "Keach Hagey",
-          "OpenAI",
-          "萨姆·奥尔特曼"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/aakashgupta/status/2037798100459491346"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774692249,
-        "published_at": "2026-03-28T18:04:09.232458",
-        "source": "Twitter",
-        "url": "https://x.com/aakashgupta/status/2037798100459491346",
-        "is_calibrated": true,
-        "original_content": "曾为Sam Altman撰写传记的记者Keach Hagey发布13分钟调查报告，深入探究OpenAI前研究副总裁离职创业的真实原因，新公司目前已对OpenAI构成竞争压力。",
-        "chinese_title": "Sam Altman传记作者深挖OpenAI前研究副总裁离职创业内幕",
-        "grade": "A"
-      },
-      {
-        "id": "931c34f40ac9b4c4e739f78fce8bdddf",
-        "title": "科学家首次实现人类子宫体外存活 为生殖医学带来重大突破",
-        "original_title": "China Is Rapidly Overtaking the United States as the World’s Scientific Superpower",
-        "summary": "西班牙科学家首次成功将人类子宫在体外维持存活状态，该技术通过模拟人体循环系统为器官提供养分，有望为子宫移植和生殖疾病研究带来革命性进展。",
-        "rating": "A+",
-        "score": 85,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该突破可能推动生殖医学领域发展，未来可应用于器官保存、移植手术优化和不孕不育治疗等场景。",
-        "entities": [
-          "Mit科技评论",
-          "生殖医学",
-          "生物医学"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/science-energy/china-overtaking-us-world-scientific-superpower"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774692249,
-        "published_at": "2026-03-28T18:04:09.232474",
-        "source": "Futurism",
-        "url": "https://futurism.com/science-energy/china-overtaking-us-world-scientific-superpower",
-        "is_calibrated": true,
-        "original_content": "西班牙科学家首次成功将人类子宫在体外维持存活状态，该技术通过模拟人体循环系统为器官提供养分，有望为子宫移植和生殖疾病研究带来革命性进展。",
-        "chinese_title": "科学家首次实现人类子宫体外存活 为生殖医学带来重大突破",
-        "grade": "A+"
-      },
-      {
-        "id": "21fc3d2e87a81fee940cd5adad3f8138",
-        "title": "开发者开源Notchy工具：利用MacBook notch提升Claude编码效率",
-        "original_title": "Screw it, I made it open source.. This is Notchy -_- He stops you getting distracted when using Claude code by replacing your Macbooks notch with a te...",
-        "summary": "Swift开发者开源了一款名为Notchy的小工具，通过替换MacBook刘海区域为终端界面，可实时提示Claude任务状态、播放完成提醒，还能防止电脑在AI工作时自动休眠。",
-        "rating": "A+",
-        "score": 89,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这类效率工具可能会衍生出更多针对AI编程场景的优化方案，未来或可支持更多AI助手和开发环境。",
-        "entities": [
-          "Claude",
-          "Macbook",
-          "Notchy",
-          "Swift"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/adamlyttleapps/status/2037731313562923121"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774688565,
-        "published_at": "2026-03-28T17:02:45.979430",
-        "source": "Twitter",
-        "url": "https://x.com/adamlyttleapps/status/2037731313562923121",
-        "is_calibrated": true,
-        "original_content": "Swift开发者开源了一款名为Notchy的小工具，通过替换MacBook刘海区域为终端界面，可实时提示Claude任务状态、播放完成提醒，还能防止电脑在AI工作时自动休眠。",
-        "chinese_title": "开发者开源Notchy工具：利用MacBook notch提升Claude编码效率",
-        "grade": "A+"
-      },
-      {
-        "id": "52ab22e097e85ad680301889160e6dc2",
-        "title": "awesome-autoresearch开源索引库发布，汇总AutoResearch落地案例",
-        "original_title": "awesome-autoresearch — 一个把 AutoResearch 真实应用案例和开源实现整理到一起的索引仓库 帮你快速看清 AutoResearch 这套 loop 到底已经被迁到了哪些任务上...",
-        "summary": "开发者整理发布了awesome-autoresearch索引仓库，系统收录了AutoResearch技术的真实应用案例与开源实现，覆盖从大模型训练到CUDA kernel开发、智能体构建等多个领域。",
-        "rating": "A+",
-        "score": 85,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这类汇总资源将加速AutoResearch技术的普及和落地，可能催生更多领域的自动化研究应用。",
-        "entities": [
-          "Autoresearch",
-          "CUDA",
-          "Github"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/QingQ77/status/2037713283080507439"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774688565,
-        "published_at": "2026-03-28T17:02:45.979445",
-        "source": "Twitter",
-        "url": "https://x.com/QingQ77/status/2037713283080507439",
-        "is_calibrated": true,
-        "original_content": "开发者整理发布了awesome-autoresearch索引仓库，系统收录了AutoResearch技术的真实应用案例与开源实现，覆盖从大模型训练到CUDA kernel开发、智能体构建等多个领域。",
-        "chinese_title": "awesome-autoresearch开源索引库发布，汇总AutoResearch落地案例",
-        "grade": "A+"
-      },
-      {
-        "id": "7bc595694ce4870e9c5b057c60749eb7",
-        "title": "研究证实ChatGPT完整存储90%已出版书籍内容，与OpenAI法庭陈述矛盾",
-        "original_title": "🚨BREAKING: Every book you have ever read. Every novel that has ever been published. It is sitting inside ChatGPT right now. Word for word. Up to 90...",
-        "summary": "石溪大学和哥伦比亚法学院研究人员发现，ChatGPT完整存储了约90%已出版书籍的内容，仅需情节提示即可生成全文，这与OpenAI此前在法庭上声称不可能存储完整版权作品的表述直接冲突。",
-        "rating": "S",
-        "score": 91,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这一发现可能引发大规模版权诉讼，严重影响大模型训练的版权合规边界，甚至可能改变AI行业的训练数据获取规则。",
-        "entities": [
-          "DeepSeek",
-          "GPT",
-          "Gemini",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/heynavtoor/status/2037638554374099409"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774688565,
-        "published_at": "2026-03-28T17:02:45.979459",
-        "source": "Twitter",
-        "url": "https://x.com/heynavtoor/status/2037638554374099409",
-        "is_calibrated": true,
-        "original_content": "石溪大学和哥伦比亚法学院研究人员发现，ChatGPT完整存储了约90%已出版书籍的内容，仅需情节提示即可生成全文，这与OpenAI此前在法庭上声称不可能存储完整版权作品的表述直接冲突。",
-        "chinese_title": "研究证实ChatGPT完整存储90%已出版书籍内容，与OpenAI法庭陈述矛盾",
-        "grade": "S"
-      },
-      {
-        "id": "6f31c5f3872e67062ef7b23f69e65600",
-        "title": "OpenAI推出Codex应用案例库，覆盖编码与非编码多场景实践",
-        "original_title": "RT Vaibhav (VB) Srivastav: holy shitt, somebody at OpenAI leaked the entire codex codebase.. https://github.com/openai/codex",
-        "summary": "社交媒体有消息称OpenAI的Codex代码生成模型完整代码库已被泄露，相关GitHub仓库已公开，真实性尚未得到官方确认。",
-        "rating": "B",
-        "score": 72,
-        "type": "breaking",
-        "typeName": "产品发布",
-        "expansion": "这将降低开发者使用Codex的门槛，推动更多场景的AI辅助工作流普及，可能带动基于Codex的二次开发热潮。",
-        "entities": [
-          "Codex",
-          "Github",
-          "OpenAI",
-          "源代码泄露"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/romainhuet/status/2037604733847003367"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774688565,
-        "published_at": "2026-03-28T17:02:45.979468",
-        "source": "Twitter",
-        "url": "https://x.com/steipete/status/2039019943140917415",
-        "original_content": "RT Vaibhav (VB) Srivastav holy shitt, somebody at OpenAI leaked the entire codex codebase.. https://github.com/openai/codex",
-        "chinese_title": "网传OpenAI Codex完整代码库疑似泄露",
-        "grade": "S",
-        "extension": "如果属实，将是继Claude Code之后又一重大AI代码泄露事件，可能对OpenAI的技术优势和商业策略造成重大影响。",
-        "is_calibrated": true
-      },
-      {
-        "id": "267e2e1e2259485744f941725d025f67",
-        "title": "Anthropic Claude Mythos开启早期访问 社区热议测试方向",
-        "original_title": "got early access to Claude mythos. what should i ask first?",
-        "summary": "有开发者获得Claude Mythos早期访问权限，公开征求测试问题建议，引发社区对Anthropic新模型能力的广泛讨论。",
-        "rating": "A",
-        "score": 81,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可能引发行业对大模型新能力的对比评测，影响Anthropic与OpenAI的市场竞争格局。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "大模型"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/birdabo/status/2037782863022789073"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774685012,
-        "published_at": "2026-03-28T16:03:32.831081",
-        "source": "Twitter",
-        "url": "https://x.com/birdabo/status/2037782863022789073",
-        "is_calibrated": true,
-        "original_content": "有开发者获得Claude Mythos早期访问权限，公开征求测试问题建议，引发社区对Anthropic新模型能力的广泛讨论。",
-        "chinese_title": "Anthropic Claude Mythos开启早期访问 社区热议测试方向",
-        "grade": "A"
-      },
-      {
-        "id": "f322a7405867ba43684a0052b51ddf6e",
-        "title": "OpenAI宣布Sora网页和应用4月26日停运 API服务9月终止",
-        "original_title": "The Sora web & app will be shut down April 26, 2026. The Sora API will be discontinued September 24, 2026.",
-        "summary": "OpenAI宣布Sora文生视频服务将于4月26日关闭网页和客户端，API服务也将在9月24日停止，引发对视频生成产品路线的猜测。",
-        "rating": "S",
-        "score": 97,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可能影响文生视频赛道竞争格局，利好其他视频生成产品获得市场份额，也可能预示OpenAI将推出更高级的视频生成产品。",
-        "entities": [
-          "OpenAI",
-          "Sora",
-          "文生视频"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/M1Astra/status/2037729089239343346"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774685012,
-        "published_at": "2026-03-28T16:03:32.831097",
-        "source": "Twitter",
-        "url": "https://x.com/M1Astra/status/2037729089239343346",
-        "is_calibrated": true,
-        "original_content": "OpenAI宣布Sora文生视频服务将于4月26日关闭网页和客户端，API服务也将在9月24日停止，引发对视频生成产品路线的猜测。",
-        "chinese_title": "OpenAI宣布Sora网页和应用4月26日停运 API服务9月终止",
-        "grade": "S"
-      },
-      {
-        "id": "9c3989ac2c95aa209d9b848e40dc4822",
-        "title": "微软股价13年来首次跌破200周移动平均线 引发市场担忧",
-        "original_title": "BREAKING 🚨: Microsoft $MSFT closes below its 200-week moving average for the first time in more than 13 years 📉📉 Dear God 😱",
-        "summary": "微软股价创下13年以来首次跌破200周移动平均线的记录，市场担忧科技巨头估值回调可能引发美股科技板块整体调整。",
-        "rating": "A",
-        "score": 80,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可能影响美股科技板块整体走势，对AI相关产业链上市公司估值产生连锁反应。",
-        "entities": [
-          "微软",
-          "美股",
-          "资本市场"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/Barchart/status/2037651968060166447"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774685012,
-        "published_at": "2026-03-28T16:03:32.831113",
-        "source": "Twitter",
-        "url": "https://x.com/Barchart/status/2037651968060166447",
-        "original_content": "微软股价创下13年以来首次跌破200周移动平均线的记录，市场担忧科技巨头估值回调可能引发美股科技板块整体调整。",
-        "chinese_title": "微软股价13年来首次跌破200周移动平均线 引发市场担忧",
-        "grade": "A"
-      },
-      {
-        "id": "01b86b7417556b562177ee67dc3e3a8a",
-        "title": "社区热议OpenAI Codex项目停滞 质疑其营销策略",
-        "original_title": "lmao that guy is building Codex OpenAI's biggest marketing stunt was literally to sit around & do nothing 😂",
-        "summary": "有开发者调侃OpenAI的Codex项目最大的营销噱头就是什么都不做，引发对OpenAI产品开发节奏和市场策略的讨论。",
-        "rating": "B",
-        "score": 68,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可能引发行业对大模型公司产品落地效率的讨论，影响OpenAI的技术可信度形象。",
-        "entities": [
-          "Codex",
-          "OpenAI",
-          "开发者社区"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/d4m1n/status/2037577421390512615"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774685012,
-        "published_at": "2026-03-28T16:03:32.831123",
-        "source": "Twitter",
-        "url": "https://x.com/d4m1n/status/2037577421390512615",
-        "original_content": "有开发者调侃OpenAI的Codex项目最大的营销噱头就是什么都不做，引发对OpenAI产品开发节奏和市场策略的讨论。",
-        "chinese_title": "社区热议OpenAI Codex项目停滞 质疑其营销策略",
-        "grade": "B"
-      },
-      {
-        "id": "f30ec031d0218d4fbc9ac0752e6675ae",
-        "title": "开发者展示Claude代码功能 可调用Hugging Face论文CLI实现自动研究",
-        "original_title": "Claude code using HF papers CLI to do autoresearch",
-        "summary": "开发者展示Claude代码能力，通过集成Hugging Face论文命令行工具，实现学术文献的自动化检索和研究分析。",
-        "rating": "A",
-        "score": 78,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可能推动AI辅助科研工具的发展，加速学术研究效率，为开发者提供新的生产力工具范例。",
-        "entities": [
-          "Ai辅助科研",
-          "Claude",
-          "Hugging Face"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/_akhaliq/status/2037574004853157987"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774685012,
-        "published_at": "2026-03-28T16:03:32.831134",
-        "source": "Twitter",
-        "url": "https://x.com/_akhaliq/status/2037574004853157987",
-        "original_content": "开发者展示Claude代码能力，通过集成Hugging Face论文命令行工具，实现学术文献的自动化检索和研究分析。",
-        "chinese_title": "开发者展示Claude代码功能 可调用Hugging Face论文CLI实现自动研究",
-        "grade": "A"
-      },
-      {
-        "id": "b4662a59df583063afe180ab04110fcc",
-        "title": "DeepMind联合创始人David Silver成立新AI实验室，融资10亿美元估值40亿",
-        "original_title": "I made Claude Code and Codex talk to each other. No APIs. No special protocol. Just a terminal. smux lets agents create, read, and act on terminals. t...",
-        "summary": "Google DeepMind资深研究员David Silver在伦敦成立Ineffable Intelligence实验室，融资10亿美元估值达40亿美元，专注于研发全新强化学习技术以实现超级智能，认为现有大语言模型存在根本性局限。",
-        "rating": "A+",
-        "score": 88,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "该事件可能引发AI基础研究领域的新竞争，强化学习路线或将受到更多资本关注，同时可能影响DeepMind后续发展战略和人才流动。",
-        "entities": [
-          "David Silver",
-          "DeepMind",
-          "Ineffable Intelligence",
-          "强化学习",
-          "超级智能"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/shawn_pana/status/2037760543029686452"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774682480,
-        "published_at": "2026-03-28T15:21:20.797683",
-        "source": "Twitter",
-        "url": "https://x.com/shawn_pana/status/2037760543029686452",
-        "original_content": "Google DeepMind资深研究员David Silver在伦敦成立Ineffable Intelligence实验室，融资10亿美元估值达40亿美元，专注于研发全新强化学习技术以实现超级智能，认为现有大语言模型存在根本性局限。",
-        "chinese_title": "DeepMind联合创始人David Silver成立新AI实验室，融资10亿美元估值40亿",
-        "grade": "A+"
-      },
-      {
-        "id": "ef2d0f7e5888e6afbbd50c3bd7f5d2d6",
-        "title": "OpenClaw原生集成记忆功能，记忆技能周下载量突破3万次",
-        "original_title": "一个最能体现你当下 AI Coding 水平的问题： 你能让 codex，claude code, gemini cli 无人值守运行多长时间？ 注意⚠️：是无人值守，你可以去跑步，吃饭，睡觉...",
-        "summary": "OpenClaw官方将记忆功能原生集成到Agent核心流程中，此前推出的记忆技能发布一周下载量超3万次，相关推文获得超50万次自然曝光，新版本将支持更复杂的工作流处理。",
-        "rating": "A",
-        "score": 78,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "原生记忆功能将提升AI Agent的任务处理能力，可能推动更多复杂工作流应用的开发，对Agent开发生态产生积极影响。",
-        "entities": [
-          "Ai Agent",
-          "Openclaw",
-          "记忆功能"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/huangyun_122/status/2037732126574186670"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774682480,
-        "published_at": "2026-03-28T15:21:20.797699",
-        "source": "Twitter",
-        "url": "https://x.com/huangyun_122/status/2037732126574186670",
-        "original_content": "OpenClaw官方将记忆功能原生集成到Agent核心流程中，此前推出的记忆技能发布一周下载量超3万次，相关推文获得超50万次自然曝光，新版本将支持更复杂的工作流处理。",
-        "chinese_title": "OpenClaw原生集成记忆功能，记忆技能周下载量突破3万次",
-        "grade": "A"
-      },
-      {
-        "id": "15a5551f1f489c9e6bae2bb298f119c4",
-        "title": "开源项目AgentLaboratory推出自主LLM研究工作流",
-        "original_title": "Software developers after seeing daily updates from Claude:",
-        "summary": "开发者Samuel Schmidgall开源了AgentLaboratory项目，提供自动化的大语言模型研究工作流，帮助研究人员更高效地开展LLM相关实验和迭代。",
-        "rating": "B",
-        "score": 68,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "该工具可能降低LLM研究的门槛，促进更多研究人员开展相关实验，推动开源AI研究工具生态的发展。",
-        "entities": [
-          "Agentlaboratory",
-          "大语言模型",
-          "开源"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/NoahKingJr/status/2037719638134636638"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774682480,
-        "published_at": "2026-03-28T15:21:20.797711",
-        "source": "Twitter",
-        "url": "https://x.com/NoahKingJr/status/2037719638134636638",
-        "original_content": "开发者Samuel Schmidgall开源了AgentLaboratory项目，提供自动化的大语言模型研究工作流，帮助研究人员更高效地开展LLM相关实验和迭代。",
-        "chinese_title": "开源项目AgentLaboratory推出自主LLM研究工作流",
-        "grade": "B"
-      },
-      {
-        "id": "9a4a9cbb85c5d4c55f39e43b16ec03f4",
-        "title": "三年数据显示开源大模型与闭源模型差距已大幅缩小至50分",
-        "original_title": "Bluetti&rsquo;s Sora 500 solar panel is incredibly powerful for its size",
-        "summary": "Arena平台分析三年评测数据显示，开源大模型与闭源模型的性能差距已从2024年中期前的100-150分缩小至约50分，主要原因是闭源模型在2023年初至2024年11月间性能提升停滞。",
-        "rating": "A+",
-        "score": 86,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这一趋势可能促使更多企业转向开源模型方案，推动开源生态进一步繁荣，同时可能倒逼闭源厂商加快技术迭代速度。",
-        "entities": [
-          "Arena",
-          "大语言模型",
-          "开源模型",
-          "闭源模型"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts (sora)",
-            "url": "https://www.theverge.com/reviews/899289/bluetti-sora-500-review-portable-solar-panel"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774682480,
-        "published_at": "2026-03-28T15:21:20.797722",
-        "source": "The Verge -  Tech Posts (sora)",
-        "url": "https://www.theverge.com/reviews/899289/bluetti-sora-500-review-portable-solar-panel",
-        "original_content": "Arena平台分析三年评测数据显示，开源大模型与闭源模型的性能差距已从2024年中期前的100-150分缩小至约50分，主要原因是闭源模型在2023年初至2024年11月间性能提升停滞。",
-        "chinese_title": "三年数据显示开源大模型与闭源模型差距已大幅缩小至50分",
-        "grade": "A+"
-      },
-      {
-        "id": "91f5b8172092bf262d6befaf9025a1a6",
-        "title": "谷歌拟投资Anthropic数据中心建设，深化双方合作",
-        "original_title": "Today is officially 4 years of working for SpaceX/XAI. I am both humbled and highly appreciative for the individuals, teammates and mentors I have had...",
-        "summary": "据英国金融时报报道，谷歌接近达成协议，将为Anthropic的数据中心建设提供资金支持，这是双方深化合作伙伴关系的重要举措。",
-        "rating": "A+",
-        "score": 87,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "谷歌与Anthropic的深度合作可能改变AI市场竞争格局，影响云服务市场和AI基础设施投资方向，对OpenAI形成更大竞争压力。",
-        "entities": [
-          "Anthropic",
-          "数据中心",
-          "谷歌"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/BrentM_SpaceX/status/2037621884695543891"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774674693,
-        "published_at": "2026-03-28T13:11:33.161684",
-        "source": "Twitter",
-        "url": "https://x.com/BrentM_SpaceX/status/2037621884695543891",
-        "original_content": "据英国金融时报报道，谷歌接近达成协议，将为Anthropic的数据中心建设提供资金支持，这是双方深化合作伙伴关系的重要举措。",
-        "chinese_title": "谷歌拟投资Anthropic数据中心建设，深化双方合作",
-        "grade": "A+"
-      }
-    ],
     "2026-03-29": [
       {
         "id": "9fb875f846794fe2bc1b5af41552831e",
@@ -18934,6 +16970,92 @@
     ],
     "2026-04-04": [
       {
+        "id": "95e34e22ef5fbe501540056f40e30e39",
+        "title": "Skyvern推出让Claude自主完成质量检测的技术方案",
+        "original_title": "Getting Claude to QA its own work",
+        "summary": "Skyvern团队发布技术方案，通过让Claude对自身输出内容进行自动化质量检测，大幅提升AI生成内容的可靠性和准确性，降低人工审核成本。",
+        "rating": "A+",
+        "score": 86,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术可能推动AI系统自我迭代能力发展，未来可能广泛应用于各类AI辅助开发工具中，提升整体开发效率。",
+        "entities": [
+          "Claude",
+          "Skyvern",
+          "AI质量检测"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.skyvern.com/blog/getting-claude-to-qa-its-own-work/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775271716,
+        "published_at": "2026-04-04T11:01:56.788930",
+        "source": "Hacker News",
+        "url": "https://www.skyvern.com/blog/getting-claude-to-qa-its-own-work/",
+        "event_id": null
+      },
+      {
+        "id": "02177d0b3741cc79c31d519778a37eaa",
+        "title": "硅谷初创公司用OpenClaw构建全AI软件工程团队",
+        "original_title": "Say a Prayer for This Startup That’s Replacing Its Developers With OpenClaw",
+        "summary": "硅谷初创公司JustPaid宣布已使用开源AI代理OpenClaw搭建了由7个完全自主AI代理组成的软件工程团队，替代传统开发者完成部分开发工作。",
+        "rating": "S",
+        "score": 97,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这一实践可能引发行业对AI替代开发者的广泛讨论，推动AI代理在软件开发领域的应用探索，也可能带来就业结构变化的相关争议。",
+        "entities": [
+          "OpenClaw",
+          "JustPaid",
+          "AI代理",
+          "软件开发"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/startup-replace-developers-with-openclaw"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775271716,
+        "published_at": "2026-04-04T11:01:56.788951",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/startup-replace-developers-with-openclaw",
+        "event_id": null
+      },
+      {
+        "id": "1e61851c7eb0065b38d877a52dbde81f",
+        "title": "Anthropic宣布开源claude-code代码库",
+        "original_title": "Anthropic open-sourced claude-code",
+        "summary": "Anthropic正式在GitHub上开源了其claude-code项目的代码库，开发者可以自由访问和使用相关代码，推动AI辅助编程技术的开放发展。",
+        "rating": "S",
+        "score": 100,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这一开源举措可能加速AI编程工具的创新发展，吸引更多开发者参与生态建设，对现有AI编程工具市场格局产生影响。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "开源",
+          "GitHub"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/anthropics/claude-code"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775271716,
+        "published_at": "2026-04-04T11:01:56.788964",
+        "source": "Hacker News",
+        "url": "https://github.com/anthropics/claude-code",
+        "event_id": null
+      },
+      {
         "id": "c715e6072f2af8b38f2ddeef1c058968",
         "title": "Anthropic成一级市场最热门交易标的 SpaceX IPO或将重构行业格局",
         "original_title": "Anthropic is having a moment in the private markets; SpaceX could spoil the party",
@@ -18943,7 +17065,12 @@
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "SpaceX IPO可能会分流大量一级市场资金，影响AI创业公司的估值和融资环境，进而改变整个AI行业的竞争格局。",
-        "entities": [],
+        "entities": [
+          "Anthropic",
+          "SpaceX",
+          "OpenAI",
+          "Rainmaker Securities"
+        ],
         "sourceLinks": [
           {
             "name": "TechCrunch",
@@ -18955,7 +17082,10 @@
         "published_at": "2026-04-04T10:03:35.369147",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/04/03/anthropic-is-having-a-moment-in-the-private-markets-spacex-could-spoil-the-party/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Rainmaker Securities总裁表示，当前私有股权二级市场交易空前活跃，Anthropic成为最热门交易标的，OpenAI热度有所下滑，而SpaceX即将进行的IPO可能会重塑整个私有市场格局。",
+        "chinese_title": "Anthropic成一级市场最热门交易标的 SpaceX IPO或将重构行业格局",
+        "grade": "S"
       },
       {
         "id": "6be15c0bf5ecb1aed41b6f36ef695ff0",
@@ -18967,7 +17097,11 @@
         "type": "personnel",
         "typeName": "人事变动",
         "expansion": "这一趋势可能会带动更多科技公司高管参与一线技术研发，同时也为Claude等AI编程工具带来更多品牌曝光和潜在企业客户。",
-        "entities": [],
+        "entities": [
+          "Mark Zuckerberg",
+          "Meta",
+          "Claude Code"
+        ],
         "sourceLinks": [
           {
             "name": "Techmeme",
@@ -18994,7 +17128,11 @@
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "这一政策调整可能会影响第三方AI工具生态的发展，同时也反映出大模型厂商在算力资源紧张情况下的商业化策略转向。",
-        "entities": [],
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "OpenClaw"
+        ],
         "sourceLinks": [
           {
             "name": "Techmeme",
@@ -19021,7 +17159,11 @@
         "type": "product",
         "typeName": "产品发布",
         "expansion": "这一举措可能吸引更多用户升级到付费计划，同时为后续按量付费模式的推广奠定基础。",
-        "entities": [],
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "用量包"
+        ],
         "sourceLinks": [
           {
             "name": "Hacker News",
@@ -19048,7 +17190,12 @@
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "地缘政治冲突对云服务基础设施的影响凸显，可能促使企业重新评估多区域部署和容灾策略。",
-        "entities": [],
+        "entities": [
+          "亚马逊",
+          "AWS",
+          "伊朗",
+          "数据中心"
+        ],
         "sourceLinks": [
           {
             "name": "Hacker News",
@@ -19075,7 +17222,11 @@
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "这一政策调整可能影响第三方AI工具生态，同时为Anthropic带来更多直接API收入。",
-        "entities": [],
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "OpenClaw"
+        ],
         "sourceLinks": [
           {
             "name": "Techmeme",
@@ -19102,7 +17253,12 @@
         "type": "research",
         "typeName": "研究成果",
         "expansion": "这种新型知识库架构可能改变现有AI应用的开发模式，大幅降低上下文管理的复杂度。",
-        "entities": [],
+        "entities": [
+          "Andrej Karpathy",
+          "LLM",
+          "RAG",
+          "知识库"
+        ],
         "sourceLinks": [
           {
             "name": "VentureBeat",
@@ -19129,7 +17285,12 @@
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "开发者社区的反应可能影响Anthropic后续政策调整，同时也为其他AI厂商的生态策略提供参考。",
-        "entities": [],
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "OpenClaw",
+          "Hacker News"
+        ],
         "sourceLinks": [
           {
             "name": "Hacker News",
@@ -19156,7 +17317,11 @@
         "type": "research",
         "typeName": "研究成果",
         "expansion": "这一发现改写了数学思想史的传统认知，为理解人类早期抽象思维发展提供了新视角。",
-        "entities": [],
+        "entities": [
+          "概率",
+          "考古学",
+          "美洲原住民"
+        ],
         "sourceLinks": [
           {
             "name": "Ars Technica » Scientific Method",
@@ -19183,7 +17348,11 @@
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "科技公司参与政治进程的趋势明显，可能对AI监管政策的制定产生重要影响。",
-        "entities": [],
+        "entities": [
+          "Anthropic",
+          "AnthroPAC",
+          "政治行动委员会"
+        ],
         "sourceLinks": [
           {
             "name": "Techmeme",
@@ -19210,7 +17379,11 @@
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "这种新型融资模式可能为大型数据中心建设提供新的资金解决方案，推动算力基础设施的快速扩张。",
-        "entities": [],
+        "entities": [
+          "Meta",
+          "数据中心",
+          "融资"
+        ],
         "sourceLinks": [
           {
             "name": "Techmeme",
@@ -19237,7 +17410,11 @@
         "type": "personnel",
         "typeName": "人事变动",
         "expansion": "高管变动可能影响OpenAI IPO进程和业务推进节奏，引发市场对公司治理稳定性的关注。",
-        "entities": [],
+        "entities": [
+          "OpenAI",
+          "Kate Rouch",
+          "Fidji Simo"
+        ],
         "sourceLinks": [
           {
             "name": "Futurism (sora)",
@@ -19264,7 +17441,11 @@
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "此次事件可能引发AI行业对训练数据供应链安全的重视，推动数据供应商安全标准升级。",
-        "entities": [],
+        "entities": [
+          "Meta",
+          "OpenAI",
+          "Mercor"
+        ],
         "sourceLinks": [
           {
             "name": "Techmeme",
@@ -19291,7 +17472,9 @@
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "预算削减可能减缓美国航天探索进度，给商业航天公司带来更多发展机遇和市场空间。",
-        "entities": [],
+        "entities": [
+          "NASA"
+        ],
         "sourceLinks": [
           {
             "name": "Futurism",
@@ -19318,7 +17501,9 @@
         "type": "research",
         "typeName": "研究成果",
         "expansion": "该研究结果可能推动AI产品设计增加人类干预提示，促进AI伦理教育和用户媒介素养提升。",
-        "entities": [],
+        "entities": [
+          "LLM"
+        ],
         "sourceLinks": [
           {
             "name": "Ars Technica » Scientific Method",
@@ -19345,7 +17530,11 @@
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "这一趋势可能推动能源市场结构调整，同时引发关于AI发展与碳中和目标冲突的讨论，或促使监管部门出台更严格的能源使用政策。",
-        "entities": [],
+        "entities": [
+          "Meta",
+          "Microsoft",
+          "Google"
+        ],
         "sourceLinks": [
           {
             "name": "TechCrunch",
@@ -19372,7 +17561,13 @@
         "type": "product",
         "typeName": "产品发布",
         "expansion": "该超级应用可能重构开发者工具市场格局，对现有代码编辑器和开发辅助工具形成竞争，同时推动AI编程能力的普及应用。",
-        "entities": [],
+        "entities": [
+          "OpenAI",
+          "ChatGPT",
+          "Codex",
+          "Alexander Embiricos",
+          "Peter Steinberger"
+        ],
         "sourceLinks": [
           {
             "name": "Techmeme",
@@ -19399,7 +17594,10 @@
         "type": "personnel",
         "typeName": "人事变动",
         "expansion": "高管休假可能引发市场对OpenAI战略执行稳定性的担忧，同时为竞争对手创造追赶窗口，或加速行业人才流动。",
-        "entities": [],
+        "entities": [
+          "OpenAI",
+          "Fidji Simo"
+        ],
         "sourceLinks": [
           {
             "name": "Feed: Artificial Intelligence Latest",
@@ -19426,7 +17624,12 @@
         "type": "personnel",
         "typeName": "人事变动",
         "expansion": "这一管理层变动反映了OpenAI战略重心的调整，特殊项目可能涉及AGI商业化相关的关键布局，将影响公司未来几年的发展方向。",
-        "entities": [],
+        "entities": [
+          "OpenAI",
+          "Brad Lightcap",
+          "Sam Altman",
+          "Fidji Simo"
+        ],
         "sourceLinks": [
           {
             "name": "Techmeme",
@@ -19480,7 +17683,10 @@
         "type": "product",
         "typeName": "产品发布",
         "expansion": "iPad降价可能刺激消费电子市场需求，对安卓平板市场造成竞争压力，苹果后续产品定价策略可能受到影响。",
-        "entities": [],
+        "entities": [
+          "Apple",
+          "iPad"
+        ],
         "sourceLinks": [
           {
             "name": "The Verge -  Tech Posts",
@@ -19507,7 +17713,11 @@
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "此次事故可能引发公众对自动驾驶技术安全性的质疑，推动相关监管政策收紧，也会影响百度自动驾驶业务的商业化推进节奏。",
-        "entities": [],
+        "entities": [
+          "Baidu",
+          "Robotaxi",
+          "Wired"
+        ],
         "sourceLinks": [
           {
             "name": "Futurism",
@@ -19534,7 +17744,10 @@
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "这可能引发AI行业的法律合规风险，推动企业加强数据隐私和知识产权保护，也会加速AI相关监管法规的完善进程。",
-        "entities": [],
+        "entities": [
+          "Jay Edelson",
+          "Facebook"
+        ],
         "sourceLinks": [
           {
             "name": "The Information",
@@ -19561,7 +17774,10 @@
         "type": "research",
         "typeName": "研究成果",
         "expansion": "该成果可应用于运维监控领域，或将推动日志分析技术在工业场景的落地，相关优化思路也可迁移到其他序列建模任务。",
-        "entities": [],
+        "entities": [
+          "Mamba-3",
+          "HDFS"
+        ],
         "sourceLinks": [
           {
             "name": "Machine Learning",
@@ -19588,7 +17804,9 @@
         "type": "research",
         "typeName": "研究成果",
         "expansion": "该技术可应用于视频编辑、影视制作、内容审核等领域，或将推动视频生成与编辑技术的实用化进程。",
-        "entities": [],
+        "entities": [
+          "VOID"
+        ],
         "sourceLinks": [
           {
             "name": "Machine Learning",
@@ -19615,7 +17833,11 @@
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "这反映了国内大模型算力需求的快速增长，或将进一步推动国产AI芯片产业的发展，也可能影响国内大模型厂商的成本结构。",
-        "entities": [],
+        "entities": [
+          "Huawei",
+          "Ascend",
+          "DeepSeek"
+        ],
         "sourceLinks": [
           {
             "name": "Techmeme (deepseek)",
@@ -19642,7 +17864,9 @@
         "type": "product",
         "typeName": "产品发布",
         "expansion": "这类高性价比消费电子配件的促销活动通常会带动相关产品销量增长，也反映了跨境旅行复苏带动的配件需求上升。",
-        "entities": [],
+        "entities": [
+          "Anker"
+        ],
         "sourceLinks": [
           {
             "name": "The Verge -  Tech Posts",
@@ -19669,7 +17893,12 @@
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "这一现象可能推动Linux桌面系统的普及，也可能催生旧硬件回收和改造的新市场，对微软的强制升级策略构成用户层面的反制。",
-        "entities": [],
+        "entities": [
+          "Microsoft",
+          "Windows 10",
+          "Linux",
+          "ThinkPad"
+        ],
         "sourceLinks": [
           {
             "name": "The Verge -  Tech Posts",
@@ -19696,7 +17925,10 @@
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "这反映了AI芯片行业融资环境的变化，初创公司估值普遍面临下调，也可能预示着行业整合加速，头部企业优势将进一步扩大。",
-        "entities": [],
+        "entities": [
+          "Hailo",
+          "SPAC"
+        ],
         "sourceLinks": [
           {
             "name": "Techmeme",
@@ -23220,6 +21452,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-04T10:04:19.050042",
-  "total_news": 759
+  "last_updated": "2026-04-04T11:02:55.645470",
+  "total_news": 699
 }
