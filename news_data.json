@@ -10566,7 +10566,11 @@
         "published_at": "2026-04-04T23:56:39.696295",
         "source": "Twitter",
         "url": "https://x.com/kimmonismus/status/2040402541352284407",
-        "event_id": null
+        "event_id": null,
+        "original_content": "DeepSeek is about to release V4, and for the first time, a frontier Chinese AI model will run natively on Huawei silicon. A brief analysis and why its much bigger than most people think. Alibaba, ByteDance, and Tencent have placed bulk orders for hundreds of thousands of Huawei's new Ascend 950PR chips. Prices have jumped 20% in weeks. And DeepSeek deliberately denied NVIDIA early access to V4 while giving that window exclusively to Chinese chipmakers. (via Reuters) Let that satisfy for a moment: a Chinese AI lab actively chose to sideline NVIDIA. What this means for NVIDIA The immediate revenue hit is manageable. China was already a shrinking slice of NVIDIA's business after Washington's export controls and Beijing's counter-ban on the H20. But the *strategic* damage runs deeper. Every model optimized for Huawei chips is a model that no longer needs NVIDIA's ecosystem to function. That's not lost revenue but lost lock-in. NVIDIA's real moat was never just hardware performance. It was CUDA, the software layer that made switching costs prohibitively high. Huawei built the Ascend 950PR to understand the same programming instructions as NVIDIA chips, dramatically lowering those switching costs. The moat is being drained from both sides! What this means for China Let's be precise about what China has and hasn't achieved. The Ascend 950PR delivers roughly 2.8x the compute of NVIDIA's H20, but it still trails the H200. Huawei won't match that tier until the Ascend 960 arrives in 2027. And production is constrained: SMIC can't match TSMC's output, domestic HBM is still ramping, and early Ascend 950PR batches will still rely on imported memory chips. But here's what matters more than the spec sheet: China has closed the loop! It now has a domestic chip that can run a frontier model for inference at commercial scale, with a training chip (Ascend 950DT) due by Q4. Two years ago, that pipeline didn't exist. Washington's export controls were designed to buy time, not to permanently cripple Chinese AI. The theory was that restricting access to cutting-edge chips and lithography tools would slow China by 3–5 years (ASML, highly recommend you read Chris Millers book \"Chip War\"). What actually happened: China compressed that timeline through *massive* state subsidies, mandatory domestic procurement, and engineering workarounds like DeepSeek's efficiency breakthroughs. The competitive dynamic is shifting from \"Can China do AI?\" to \"Can China do AI at scale on its own silicon?\"! This week, that question got a lot closer to a yes. The pressure on NVIDIA isn't that it loses China today. It's that China is building a parallel AI compute stack that doesn't need NVIDIA at all and every model trained or optimized for that stack pulls more of the ecosystem with it. Thats why this is so big news.",
+        "chinese_title": "DeepSeek V4即将发布 首次原生支持华为昇腾芯片",
+        "grade": "S",
+        "extension": "这可能加速中国AI芯片生态的发展，进一步减少对NVIDIA的依赖，同时可能影响全球AI芯片市场格局。"
       },
       {
         "id": "ada8e183e33a0a65579e5e2477020511",
@@ -10594,7 +10598,11 @@
         "published_at": "2026-04-04T23:56:39.696311",
         "source": "Twitter",
         "url": "https://x.com/himanshustwts/status/2040383160249381044",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic is building voice models! The recent Claude Code leak pointed to Deepgram Nova 3 in voice mode. Now, the coding-and-reasoning lab moving into multimodality is news to me. The path to being at frontier is owning the infra at all levels and these are signs.",
+        "chinese_title": "Anthropic正在开发语音模型 Claude迈向多模态",
+        "grade": "A",
+        "extension": "语音能力的加入可能让Claude在智能助手、客服等场景更具竞争力，与GPT-4o等多模态模型展开直接竞争。"
       },
       {
         "id": "95818f638a7f897ca117d859cf6a55bf",
@@ -10623,7 +10631,11 @@
         "published_at": "2026-04-04T23:56:39.696437",
         "source": "Futurism (sora)",
         "url": "https://futurism.com/artificial-intelligence/sam-altman-disney-sora",
-        "event_id": null
+        "event_id": null,
+        "original_content": "OpenAI CEO Sam Altman has finally dished on Disney’s reaction to his decision to kill the company’s AI video generator app , Sora — scuttling a billion dollar deal the two giants had planned. Given the amount of money Disney was prepared to invest, and the suddenness of the decision, speculation abounded on the drama behind the scenes. But in an interview on the “Mostly Human” podcast — the first he’s given since the Sora news — Altman insists that emotions were cool. When he broke the news to Disney CEO Josh D’Amaro, the first thing he told Altman was, “I get it,” Altman recalled. “But it’s super sad always to disappoint a partner or users or a team, all of which are doing incredible work,” he said. Both companies sound cagey about burning bridges. AI, bubble or not, is too buzzy a market to shut the door on one of the industry’s leading companies. And Disney’s cultural clout is too influential to ignore. Altman, in the interview, left the door open to a future collab. “I love Sora, I love generated videos, and I love our partnership with Disney, and we’re working hard with them to find a world where they can still do something amazing, and we can help with that,” Altman said. “But we need to concentrate our compute and our product capacity into these next generation of automated researchers and companies.” Disney, in response to the Sora shutdown, responded in lukewarm fashion , underscoring its continued openness to AI tech. “We appreciate the constructive collaboration between our teams and what we learned from it, and we will continue to engage with AI platforms to find new ways to meet fans where they are while responsibly embracing new technologies that respect IP and the rights of creators.” OpenAI announced it was shuttering Sora in late March, something that reportedly came as a shock to Disney . Released only last September to considerable fanfare, it unleashed a storm of surreal AI creations like SpongeBob cooking meth , Altman grilling dead Pikachus , clips mocking dead celebrities , and spoof Pixar-style trailers featuring Jeffrey Epstein . And there was also the not-so-surreal: photorealistic depictions of people shoplifting, and other faked crimes, proliferated. The former raised significant concerns over potential copyright infringement, while the latter fueled discussions over the app being yet another source of effortless misinformation. Disney lent Sora some credibility when in December it signed a deal with OpenAI to license hundreds of its iconic characters from franch is es like Star Wars and Marvel to be used in the AI video generator — the first major licensing deal between OpenAI and a major Hollywood studio. The entertainment conglomerate also agreed to invest $1 billion into OpenAI and deploy its AI tech across the company. Now, with the plug being pulled on Sora, that $1 billion investment will not be going ahead, and Disney is no longer set to be a major OpenAI customer. That’s a lot of money to be leaving on the table; Altman says he made the call to prioritize the precious computing power available to the company for other purposes. “It’s always about compute,” he said. Reporting, meanwhile, suggest OpenAI was losing a staggering $1 million per day on the video app. Altman made a plea for sympathy. “There are like many hard parts about being a CEO that you don’t get sympathy for,” he said in the podcast interview. “But one of them is, like, you have to, like, make a lot of, like, very tough resourcing calls and a lot of good things get caught up in that because they’re not the most important thing.” More on AI: OpenAI’s Obsession With Data Centers Is Running Into Trouble The post Sam Altman Opens Up About Telling CEO of Disney That It Had All Been Smoke and Mirrors appeared first on Futurism .",
+        "chinese_title": "Sam Altman谈终止迪士尼Sora交易 坦言一切都是镜花水月",
+        "grade": "S",
+        "extension": "这一事件可能会影响行业对AI生成内容商业化前景的看法，同时也显示了AI技术商业化过程中的复杂性。"
       },
       {
         "id": "744fa95cab885c6fc3c7f455ad66b860",
@@ -22512,6 +22524,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-04T23:57:36.093956",
+  "last_updated": "2026-04-05T00:06:29.523671",
   "total_news": 733
 }
