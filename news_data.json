@@ -16970,6 +16970,143 @@
     ],
     "2026-04-04": [
       {
+        "id": "87203ce2263043d849ff982445aa873a",
+        "title": "ML领域资深从业者探讨公众对AI的认知偏差",
+        "original_title": "[D] Those of you with 10+ years in ML — what is the public completely wrong about?",
+        "summary": "Reddit用户发起讨论，邀请拥有10年以上机器学习经验的从业者分享公众认知与AI前沿实际进展之间的差距，以及行业普遍高估或低估的方向。",
+        "rating": "B",
+        "score": 72,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "此类讨论有助于揭示行业真实发展状况，可能引发公众对AI技术发展路径的重新认知，影响大众对AI应用的预期。",
+        "entities": [
+          "机器学习",
+          "人工智能"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sbzxwn/d_those_of_you_with_10_years_in_ml_what_is_the/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775278944,
+        "published_at": "2026-04-04T13:02:24.786387",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sbzxwn/d_those_of_you_with_10_years_in_ml_what_is_the/",
+        "event_id": null
+      },
+      {
+        "id": "b506e717167a819a50fcde7c54d76501",
+        "title": "研究者探讨新型智能体系统论文投稿NeurIPS可行性",
+        "original_title": "Considering NeurIPS submission [D]",
+        "summary": "研究者提出了新型智能体系统的收敛性数学证明及实际应用案例，但缺乏足够实验数据支撑，正在考虑是否投稿NeurIPS会议。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该讨论反映了AI领域学术投稿的普遍困境，可能促使学界思考基准测试体系的完善方向，影响智能体相关研究的评价标准。",
+        "entities": [
+          "NeurIPS",
+          "智能体"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sbzdzj/considering_neurips_submission_d/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775278944,
+        "published_at": "2026-04-04T13:02:24.786407",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sbzdzj/considering_neurips_submission_d/",
+        "event_id": null
+      },
+      {
+        "id": "292ebd6525114814fee8384ae7505dfc",
+        "title": "研究人员推出GPU友好的12位BF16无损压缩格式",
+        "original_title": "[P] GPU friendly lossless 12-bit BF16 format with 0.03% escape rate and 1 integer ADD decode works for AMD & NVIDIA",
+        "summary": "澳大利亚研究团队发布新型BF16权重压缩格式，可将权重无损压缩至12位，解码仅需一次整数加法，同时支持AMD和NVIDIA GPU。",
+        "rating": "A+",
+        "score": 85,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术可大幅降低AI模型内存占用和带宽需求，有望提升大模型推理效率，可能推动GPU硬件架构和AI框架的相关优化。",
+        "entities": [
+          "GPU",
+          "BF16",
+          "模型压缩"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning (mistral)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sbv9jl/p_gpu_friendly_lossless_12bit_bf16_format_with/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775278944,
+        "published_at": "2026-04-04T13:02:24.786420",
+        "source": "Machine Learning (mistral)",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sbv9jl/p_gpu_friendly_lossless_12bit_bf16_format_with/",
+        "event_id": null
+      },
+      {
+        "id": "88c281ba4fece296e82737e5a9682d0f",
+        "title": "PhD毕业生寻求PyTorch/Numpy面试准备资源推荐",
+        "original_title": "[D] Best websites for pytorch/numpy interviews",
+        "summary": "即将毕业的博士生正在准备机器学习相关岗位面试，寻求适合练习PyTorch和Numpy编码的面试备考网站推荐。",
+        "rating": "B",
+        "score": 70,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "此类需求反映了AI行业招聘的技能导向，可能推动更多针对性面试准备资源的开发，影响AI人才培养的实践技能考核标准。",
+        "entities": [
+          "PyTorch",
+          "NumPy",
+          "面试"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sboat2/d_best_websites_for_pytorchnumpy_interviews/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775278944,
+        "published_at": "2026-04-04T13:02:24.786429",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sboat2/d_best_websites_for_pytorchnumpy_interviews/",
+        "event_id": null
+      },
+      {
+        "id": "3f340cab61890bc103764d3f4124eec8",
+        "title": "首次投稿NeurIPS研究者询问顶会与普通会议差异",
+        "original_title": "First time NeurIPS. How different is it from low-ranked conferences? [D]",
+        "summary": "已发表多篇A/B类会议论文的博士生首次准备投稿NeurIPS，询问顶会论文写作和投稿的特殊要求与注意事项。",
+        "rating": "A",
+        "score": 76,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "该讨论反映了学术圈对顶会标准的普遍关注，可能为年轻研究者提供投稿指导，影响AI领域学术成果的评价体系认知。",
+        "entities": [
+          "NeurIPS",
+          "学术论文"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sbnbnv/first_time_neurips_how_different_is_it_from/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775278944,
+        "published_at": "2026-04-04T13:02:24.786438",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sbnbnv/first_time_neurips_how_different_is_it_from/",
+        "event_id": null
+      },
+      {
         "id": "76f56d9b5938c7319a0ef09057614b55",
         "title": "Anthropic宣布禁止Claude订阅用户接入OpenClaw等第三方AI智能体工具",
         "original_title": "Anthropic cuts off the ability to use Claude subscriptions with OpenClaw and third-party AI agents",
@@ -16996,7 +17133,10 @@
         "published_at": "2026-04-04T12:01:11.274974",
         "source": "VentureBeat",
         "url": "https://venturebeat.com/technology/anthropic-cuts-off-the-ability-to-use-claude-subscriptions-with-openclaw-and",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic宣布从2026年4月4日起，Claude Pro和Max订阅用户将无法再使用其订阅服务将Claude模型接入OpenClaw等第三方智能体工具，此举可能引发开发者社区的广泛讨论。",
+        "chinese_title": "Anthropic宣布禁止Claude订阅用户接入OpenClaw等第三方AI智能体工具",
+        "grade": "S"
       },
       {
         "id": "95e34e22ef5fbe501540056f40e30e39",
@@ -21490,6 +21630,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-04T12:01:40.491686",
-  "total_news": 700
+  "last_updated": "2026-04-04T13:03:11.855709",
+  "total_news": 705
 }
