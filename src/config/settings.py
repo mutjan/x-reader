@@ -88,12 +88,12 @@ PRIORITY_KEYWORDS: Dict[str, List[str]] = {
            "chatgpt", "claude", "gemini", "deepseek", "grok-3",
            "llm", "foundation model", "moe", "mixture of experts",
            "mcp", "model context protocol", "function calling", "tool use"],
-    "bigtech": ["apple intelligence", "google ai", "microsoft ai", "meta ai",
+    "bigtech": ["apple intelligence", "deepmind",
                 "nvidia", "tesla fsd", "spacex", "neuralink", "starlink",
                 "微信", "wechat", "tiktok", "字节跳动", "bytedance",
                 "腾讯", "tencent", "阿里", "alibaba", "百度", "baidu",
-                "苹果", "apple", "谷歌", "google", "微软", "microsoft",
-                "meta", "facebook", "亚马逊", "amazon"],
+                "苹果", "apple", "微软", 
+                "meta ai"],
     "chip": ["h100", "h200", "b100", "b200", "gb200", "gh200",
              "a100", "rtx 5090", "rtx 5080", "blackwell", "hopper",
              "cuda", "ai chip", "gpu", "tpu", "npu",
@@ -107,9 +107,7 @@ PRIORITY_KEYWORDS: Dict[str, List[str]] = {
     "business": ["ipo", "融资", "估值", "收购", "并购", "融资", "funding",
                  "valuation", "acquisition", "merge", "unicorn"],
     "robotics": ["robotics", "robot", "embodied ai", "具身智能",
-                 "humanoid", "人形机器人", "波士顿动力", "boston dynamics"],
-    "policy": ["监管", "regulation", "policy", "ai act", "数据安全",
-               "网络安全", "cybersecurity", "隐私", "privacy"]
+                 "humanoid", "人形机器人", "波士顿动力", "boston dynamics"]
 }
 
 # 黑名单关键词（匹配到则直接过滤）
