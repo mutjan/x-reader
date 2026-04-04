@@ -2,13 +2,13 @@
 gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: milestone
-status: Ready to execute
-last_updated: "2026-04-04T11:14:25.638Z"
+status: Phase complete — ready for verification
+last_updated: "2026-04-04T11:20:26.418Z"
 progress:
   total_phases: 10
-  completed_phases: 5
+  completed_phases: 6
   total_plans: 31
-  completed_plans: 26
+  completed_plans: 27
 ---
 
 # x-reader Project State
@@ -68,6 +68,7 @@ Plan: 2 of 2
 | Phase 14-frontend-news-table-unification P02 | 5 | 2 tasks | 2 files |
 | Phase 14-frontend-news-table-unification P01 | 300 | 2 tasks | 2 files |
 | Phase 15-agent-agent P01 | 6 | 3 tasks | 3 files |
+| Phase 15 P02 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -87,6 +88,8 @@ Plan: 2 of 2
 12. 扩展性字段采用纯CSS 2行截断+hover展开方案，统一用户体验
 13. Review相似度阈值(0.55)低于分组阈值(0.85)，扩大Agent复查覆盖面
 14. 使用settings模块引用（非import值绑定）确保测试隔离性
+15. 复查在save_event_groups()之前执行，自动分组结果先保存，修正通过import脚本单独应用
+16. import脚本使用ProcessedNewsItem.from_frontend_dict()重建新闻对象，确保字段兼容性
 
 ### Known Risks
 
@@ -130,5 +133,5 @@ Plan: 2 of 2
 ## Session Continuity
 
 Last active session: 2026-04-04
-Last action: Completed 15-01-PLAN.md - EventGroupReviewer core component
-Next action: Execute 15-02-PLAN.md
+Last action: Completed 15-02-PLAN.md - Pipeline integration + review import script
+Next action: Phase 15 complete, ready for verification

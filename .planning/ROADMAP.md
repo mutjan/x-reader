@@ -183,4 +183,4 @@ Plans:
 **Plan count:** 2 plans
 Plans:
 - [x] 15-01 — EventGroupReviewer核心组件：复查提示词+EventGroupReviewer类+测试
-- [ ] 15-02 — 流水线集成：在incremental_group()后插入复查+import脚本
+- [x] 15-02 — 流水线集成：在incremental_group()后插入复查+import脚本
