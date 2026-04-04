@@ -175,3 +175,12 @@ Plans:
 | 12. UX 体验优化 | 4/4 | Completed | 2026-04-02 |
 | 13. 事件展示与实体识别优化 | 3/3 | Completed | 2026-04-03 |
 | 14. 前端新闻表格统一化优化 | 3/3 | Complete    | 2026-04-03 |
+
+### Phase 15: Agent复查事件分组
+
+**Goal:** 在脚本自动分组完成后增加Agent复查阶段，增量更新时将本批次新闻与已有事件对比并修正分组错误，同时生成审计日志供事后追溯
+**Depends on:** Phase 14
+**Plan count:** 2 plans
+Plans:
+- [x] 15-01 — EventGroupReviewer核心组件：复查提示词+EventGroupReviewer类+测试
+- [ ] 15-02 — 流水线集成：在incremental_group()后插入复查+import脚本
