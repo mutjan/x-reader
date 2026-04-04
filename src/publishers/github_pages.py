@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 from src.publishers.base import BasePublisher
 from src.models.news import ProcessedNewsItem
 from src.processors.event_grouper import EventGrouper
+from src.processors.event_reviewer import EventGroupReviewer
 from src.data.feedback_store import FeedbackStore
 from src.processors.score_calibrator import CalibrationEngine
 from src.config.settings import DATA_FILE, EVENT_GROUPS_FILE, GITHUB_BRANCH, settings, TEMP_DIR
@@ -142,16 +143,16 @@ class GitHubPagesPublisher(BasePublisher):
             deleted_count = 0
             for item in existing_dict.values():
                 try:
-                    # 解析处理时间，支持多种格式 - 使用处理时间而非原始发布时间判断过期
-                    # 兼容旧数据：如果没有processed_at字段，使用published_at
-                    time_field = item.get("processed_at", item.get("published_at"))
+                    # 解析发布时间判断过期，更符合新闻时效性的实际需求
+                    # 兼容旧数据：如果没有published_at字段，使用processed_at
+                    time_field = item.get("published_at", item.get("processed_at"))
                     if isinstance(time_field, str):
-                        process_time = datetime.fromisoformat(time_field.replace('Z', '+00:00'))
+                        publish_time = datetime.fromisoformat(time_field.replace('Z', '+00:00'))
                         # 转换为本地时区的naive datetime进行比较
-                        process_time = process_time.astimezone().replace(tzinfo=None)
+                        publish_time = publish_time.astimezone().replace(tzinfo=None)
                     else:
-                        process_time = datetime.fromtimestamp(time_field)
-                    if process_time >= seven_days_ago:
+                        publish_time = datetime.fromtimestamp(time_field)
+                    if publish_time >= seven_days_ago:
                         filtered_dict[item["id"]] = item
                     else:
                         deleted_count += 1
@@ -179,7 +180,8 @@ class GitHubPagesPublisher(BasePublisher):
             all_processed_items = []
             for item_dict in filtered_dict.values():
                 try:
-                    item = ProcessedNewsItem.from_dict(item_dict)
+                    # 使用公共方法从前端格式转换，自动处理字段兼容
+                    item = ProcessedNewsItem.from_frontend_dict(item_dict)
                     all_processed_items.append(item)
                 except Exception as e:
                     self.logger.warning(f"跳过无效新闻条目: {e}")
@@ -218,7 +220,24 @@ class GitHubPagesPublisher(BasePublisher):
                 events_data = [event.to_dict() for event in events]
                 self.logger.info(f"事件分组处理完成: 共{len(events_data)}个事件")
 
-                # 先保存事件分组到独立文件
+                # Agent复查：在非全量模式下，对新批次新闻进行复查（D-05）
+                if not full_mode and new_items:
+                    self.logger.info("开始Agent复查事件分组...")
+                    reviewer = EventGroupReviewer(entity_threshold=2, review_similarity_threshold=0.55)
+                    prompt_file = reviewer.generate_review_prompt(new_items, events, all_processed_items)
+                    if prompt_file:
+                        self.logger.info(f"复查提示词已生成: {prompt_file}")
+                        self.logger.info("请将提示词发送给AI处理，将结果保存为JSON文件")
+                        self.logger.info(f"然后运行: python scripts/import_review_results.py --result-file <结果文件路径>")
+                    else:
+                        self.logger.warning("复查提示词生成失败，跳过Agent复查")
+                else:
+                    if full_mode:
+                        self.logger.info("全量模式，跳过Agent复查")
+                    if not new_items:
+                        self.logger.info("无新新闻，跳过Agent复查")
+
+                # 保存事件分组到独立文件
                 self.logger.info("保存事件分组到文件...")
                 save_events_success = event_grouper.save_event_groups(events)
                 if not save_events_success:
@@ -236,9 +255,9 @@ class GitHubPagesPublisher(BasePublisher):
         news_by_date = {}
         for item in filtered_dict.values():
             try:
-                # 提取日期key - 使用处理时间而非原始发布时间
-                # 兼容旧数据：如果没有processed_at字段，使用published_at
-                time_field = item.get("processed_at", item.get("published_at"))
+                # 提取日期key - 使用发布时间
+                # 兼容旧数据：如果没有published_at字段，使用processed_at
+                time_field = item.get("published_at", item.get("processed_at"))
                 date_key = time_field.split('T')[0] if isinstance(time_field, str) else \
                            datetime.fromtimestamp(time_field).strftime('%Y-%m-%d')
 
