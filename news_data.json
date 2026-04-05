@@ -6930,6 +6930,40 @@
     ],
     "2026-04-05": [
       {
+        "id": "58ab6e0b4763399a0615d1e57dc81094",
+        "title": "Karpathy力荐Farzapedia：用LLM将个人数据生成可导航的专属维基百科",
+        "original_title": "Farzapedia, personal wikipedia of Farza, good example following my Wiki LLM tweet. I really like this approach to personalization in a number of ways,...",
+        "summary": "前OpenAI科学家Andrej Karpathy推荐Farzapedia项目，该项目利用LLM将用户的日记、笔记等个人数据转化为结构化的个人维基百科，实现了数据的显性化管理、本地存储和跨AI工具兼容。",
+        "rating": "S",
+        "score": 96,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该项目展示了AI个人化的新范式，可能推动个人知识管理工具的创新，并引发对数据所有权和AI记忆机制的广泛讨论。",
+        "entities": [
+          "Claude",
+          "Farzapedia",
+          "OpenAI",
+          "大模型",
+          "安德烈·卡帕西"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/karpathy/status/2040572272944324650"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775347130,
+        "published_at": "2026-04-05T07:58:50.736137",
+        "source": "Twitter",
+        "url": "https://x.com/karpathy/status/2040572272944324650",
+        "event_id": null,
+        "original_content": "Farzapedia, personal wikipedia of Farza, good example following my Wiki LLM tweet. I really like this approach to personalization in a number of ways, compared to \"status quo\" of an AI that allegedly gets better the more you use it or something: 1. Explicit. The memory artifact is explicit and navigable (the wiki), you can see exactly what the AI does and does not know and you can inspect and manage this artifact, even if you don't do the direct text writing (the LLM does). The knowledge of you is not implicit and unknown, it's explicit and viewable. 2. Yours. Your data is yours, on your local computer, it's not in some particular AI provider's system without the ability to extract it. You're in control of your information. 3. File over app. The memory here is a simple collection of files in universal formats (images, markdown). This means the data is interoperable: you can use a very large collection of tools/CLIs or whatever you want over this information because it's just files. The agents can apply the entire Unix toolkit over them. They can natively read and understand them. Any kind of data can be imported into files as input, and any kind of interface can be used to view them as the output. E.g. you can use Obsidian to view them or vibe code something of your own. Search \"File over&nbsp;app\" for an article on this philosophy. 4. BYOAI. You can use whatever AI you want to \"plug into\" this information - Claude, Codex, OpenCode, whatever. You can even think about taking an open source AI and finetuning it on your wiki - in principle, this AI could \"know\" you in its weights, not just attend over your data. So this approach to personalization puts *you* in full control. The data is yours. In Universal formats. Explicit and inspectable. Use whatever AI you want over it, keep the AI companies on their toes! :) Certainly this is not the simplest way to get an AI to know you - it does require you to manage file directories and so on, but agents also make it quite simple and they can help you a lot. I imagine a number of products might come out to make this all easier, but imo \"agent proficiency\" is a CORE SKILL of the 21st century. These are extremely powerful tools - they speak English and they do all the computer stuff for you. Try this opportunity to play with one. Farza 🇵🇰🇺🇸: This is Farzapedia. I had an LLM take 2,500 entries from my diary, Apple Notes, and some iMessage convos to create a personal Wikipedia for me. It made 400 detailed articles for my friends, my startups, research areas, and even my favorite animes and their impact on me complete",
+        "chinese_title": "Karpathy力荐Farzapedia：用LLM将个人数据生成可导航的专属维基百科",
+        "grade": "S",
+        "extension": "该项目展示了AI个人化的新范式，可能推动个人知识管理工具的创新，并引发对数据所有权和AI记忆机制的广泛讨论。"
+      },
+      {
         "id": "15ca0c83a46fc033be66021f4c6c94cd",
         "title": "香港大学开源DeepTutor v1.0：全新Agent-Native智能学习平台",
         "original_title": "DeepTutor v1.0 Official Release — Brand New Agent-Native Intelligent Learning Platform! Fully Open-Sourced: https://github.com/HKUDS/DeepTutor Three ...",
@@ -7222,36 +7256,6 @@
       }
     ],
     "2026-04-04": [
-      {
-        "id": "58ab6e0b4763399a0615d1e57dc81094",
-        "title": "Karpathy力荐Farzapedia：用LLM将个人数据生成可导航的专属维基百科",
-        "original_title": "Farzapedia, personal wikipedia of Farza, good example following my Wiki LLM tweet. I really like this approach to personalization in a number of ways,...",
-        "summary": "前OpenAI科学家Andrej Karpathy推荐Farzapedia项目，该项目利用LLM将用户的日记、笔记等个人数据转化为结构化的个人维基百科，实现了数据的显性化管理、本地存储和跨AI工具兼容。",
-        "rating": "S",
-        "score": 96,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "该项目展示了AI个人化的新范式，可能推动个人知识管理工具的创新，并引发对数据所有权和AI记忆机制的广泛讨论。",
-        "entities": [
-          "Claude",
-          "Farzapedia",
-          "OpenAI",
-          "大模型",
-          "安德烈·卡帕西"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/karpathy/status/2040572272944324650"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775347130,
-        "published_at": "2026-04-05T07:58:50.736137",
-        "source": "Twitter",
-        "url": "https://x.com/karpathy/status/2040572272944324650",
-        "event_id": null
-      },
       {
         "id": "87024cac4fcc64375a90e9f824d6789d",
         "title": "DeepSeek V4即将发布 首次原生支持华为昇腾芯片",
@@ -19238,6 +19242,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-05T07:59:00.533272",
+  "last_updated": "2026-04-05T08:18:29.525874",
   "total_news": 624
 }
