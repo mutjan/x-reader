@@ -1459,35 +1459,6 @@
         "original_content": "DeepSeek平台经历约7小时服务中断后回滚更新，用户反馈模型输出质量较更新期间有所下降，引发对其模型迭代策略的关注。",
         "chinese_title": "DeepSeek服务中断7小时后回滚更新，输出质量引发用户讨论",
         "grade": "A"
-      },
-      {
-        "id": "3ef577379181600d47f3562ea54b9393",
-        "title": "OpenAI高级语音模式承诺落空引争议 用户质疑两年进展",
-        "original_title": "This is what OpenAI has promised us with \"advanced voice mode\" 2 years ago! We were robbed",
-        "summary": "用户对比OpenAI两年前对高级语音模式的承诺与实际交付成果，表达失望情绪，认为产品迭代进度未达预期。",
-        "rating": "B",
-        "score": 71,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可延伸分析OpenAI产品路线图执行情况、语音AI市场竞争格局变化、以及用户对AI产品期望管理问题",
-        "entities": [
-          "OpenAI",
-          "语音模式"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/altryne/status/2038381295588540663"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774854324,
-        "published_at": "2026-03-30T15:05:24.369494",
-        "source": "Twitter",
-        "url": "https://x.com/altryne/status/2038381295588540663",
-        "original_content": "用户对比OpenAI两年前对高级语音模式的承诺与实际交付成果，表达失望情绪，认为产品迭代进度未达预期。",
-        "chinese_title": "OpenAI高级语音模式承诺落空引争议 用户质疑两年进展",
-        "grade": "B"
       }
     ],
     "2026-03-31": [
@@ -4293,6 +4264,34 @@
         "event_id": null
       },
       {
+        "id": "0c9c5a331e4a2de3ebfee8e471a90eef",
+        "title": "Anthropic收紧第三方应用限制：Claude API调用将计入额外用量",
+        "original_title": "Anthropic now blocks first-party harness use too 👀 claude -p --append-system-prompt 'A personal assistant running inside OpenClaw.' 'is clawd here?...",
+        "summary": "Anthropic对第三方应用使用Claude API施加新限制，第三方应用现在会消耗用户的额外用量额度而非套餐内额度，同时加强了对系统提示词注入的防护。",
+        "rating": "A",
+        "score": 80,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "API计费策略调整可能影响依赖Claude的第三方应用生态，开发者可能需要重新评估成本结构或寻找替代方案。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Openclaw"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/steipete/status/2040811558427648357"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775458963,
+        "published_at": "2026-04-06T15:02:43.264745",
+        "source": "Twitter",
+        "url": "https://x.com/steipete/status/2040811558427648357",
+        "event_id": null
+      },
+      {
         "id": "40df4c8ce70692a4a3f280ee7230e74d",
         "title": "OpenAI与Anthropic向投资者披露：推理成本已占收入过半",
         "original_title": "Documents: OpenAI and Anthropic have projected profitability to investors with and without training costs, and report inference costs exceeding half of revenue (Wall Street Journal)",
@@ -6127,31 +6126,33 @@
     ],
     "2026-04-05": [
       {
-        "id": "0c9c5a331e4a2de3ebfee8e471a90eef",
-        "title": "Anthropic收紧第三方应用限制：Claude API调用将计入额外用量",
-        "original_title": "Anthropic now blocks first-party harness use too 👀 claude -p --append-system-prompt 'A personal assistant running inside OpenClaw.' 'is clawd here?...",
-        "summary": "Anthropic对第三方应用使用Claude API施加新限制，第三方应用现在会消耗用户的额外用量额度而非套餐内额度，同时加强了对系统提示词注入的防护。",
+        "id": "4a449d393d6a47b264804ebada0b4c72",
+        "title": "阿里开源page-agent.js：一个脚本标签就能让网页拥有AI自动化能力",
+        "original_title": "🚨 Breaking: Alibaba just killed the browser automation stack. **page-agent.js** — a GUI agent that lives directly inside your webpage. No Selenium...",
+        "summary": "阿里巴巴开源page-agent.js，一个可直接嵌入网页的GUI自动化代理工具。无需Selenium、Puppeteer或浏览器扩展，仅需一个script标签即可让网页理解自然语言指令并执行点击、填表等操作，为SaaS产品快速集成AI助手提供轻量级方案。",
         "rating": "A",
-        "score": 80,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "API计费策略调整可能影响依赖Claude的第三方应用生态，开发者可能需要重新评估成本结构或寻找替代方案。",
+        "score": 81,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "该工具可能重塑浏览器自动化领域，影响现有自动化测试工具市场；同时降低AI助手集成门槛，或推动更多传统Web应用向AI原生体验转型。",
         "entities": [
-          "Anthropic",
-          "Claude",
-          "Openclaw"
+          "Browser-Use",
+          "Page-Agent.Js",
+          "Puppeteer",
+          "Selenium",
+          "阿里巴巴"
         ],
         "sourceLinks": [
           {
             "name": "Twitter",
-            "url": "https://x.com/steipete/status/2040811558427648357"
+            "url": "https://x.com/Suryanshti777/status/2040889016883745087"
           }
         ],
         "sources": 1,
-        "timestamp": 1775458963,
-        "published_at": "2026-04-06T15:02:43.264745",
+        "timestamp": 1775462470,
+        "published_at": "2026-04-06T16:01:10.692641",
         "source": "Twitter",
-        "url": "https://x.com/steipete/status/2040811558427648357",
+        "url": "https://x.com/Suryanshti777/status/2040889016883745087",
         "event_id": null
       },
       {
@@ -19732,6 +19733,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-06T15:03:03.927927",
+  "last_updated": "2026-04-06T16:01:20.320321",
   "total_news": 648
 }
