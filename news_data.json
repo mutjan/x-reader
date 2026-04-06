@@ -1431,34 +1431,6 @@
         "original_content": "微博宣布已整合百度智能云旗下的AI智能体产品DuClaw，用户可通过微博龙侠助理直接调用DuClaw的多模型切换、百度搜索、AI内容生成等能力，进一步完善站内AI服务矩阵。",
         "chinese_title": "微博接入百度AI智能体DuClaw，拓展平台AI生态",
         "grade": "A+"
-      },
-      {
-        "id": "7af55d2a31d6cf1418db9dd59065dba3",
-        "title": "DeepSeek服务中断7小时后回滚更新，输出质量引发用户讨论",
-        "original_title": "After DeepSeek down for ~7 hours, they seem to have reverted the update The outputs are noticeably worse now, not as good as yesterday’s improved ver...",
-        "summary": "DeepSeek平台经历约7小时服务中断后回滚更新，用户反馈模型输出质量较更新期间有所下降，引发对其模型迭代策略的关注。",
-        "rating": "A",
-        "score": 77,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "此事件反映出大模型厂商在快速迭代与稳定性之间的平衡难题，可能影响用户对国产AI服务可靠性的认知。",
-        "entities": [
-          "DeepSeek"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/HarshithLucky3/status/2038503150752276833"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774858216,
-        "published_at": "2026-03-30T16:10:16.767484",
-        "source": "Twitter",
-        "url": "https://x.com/HarshithLucky3/status/2038503150752276833",
-        "original_content": "DeepSeek平台经历约7小时服务中断后回滚更新，用户反馈模型输出质量较更新期间有所下降，引发对其模型迭代策略的关注。",
-        "chinese_title": "DeepSeek服务中断7小时后回滚更新，输出质量引发用户讨论",
-        "grade": "A"
       }
     ],
     "2026-03-31": [
@@ -4209,6 +4181,66 @@
     ],
     "2026-04-06": [
       {
+        "id": "0c59524f1bf8f134ba8a563746b44f06",
+        "title": "开发者开源AI求职系统：用Claude Code自动处理700份申请并成功入职",
+        "original_title": "开源的黄金时代来了！ 一位老哥用Claude Code 创建了一个 AI 求职系统，该系统对 700 多份求职申请进行了评分，并且真的帮他找到了一份工作。 而且现在是开源的...",
+        "summary": "一位开发者使用Claude Code构建了一套AI求职系统，能够自动扫描招聘页面、根据职位优化简历、生成ATS友好PDF并自动填写申请表。该系统已帮助开发者处理700多份申请并成功找到工作，目前已开源。",
+        "rating": "A",
+        "score": 78,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "此类AI求职工具可能改变招聘行业生态，引发关于求职公平性、AI在招聘中角色的讨论，同时可能催生更多AI辅助求职工具的出现。",
+        "entities": [
+          "Anthropic",
+          "Career Ops",
+          "Claude",
+          "OpenAI",
+          "Playwright"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/KKaWSB/status/2041007230917747033"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775466176,
+        "published_at": "2026-04-06T17:02:56.098871",
+        "source": "Twitter",
+        "url": "https://x.com/KKaWSB/status/2041007230917747033",
+        "event_id": null
+      },
+      {
+        "id": "4a449d393d6a47b264804ebada0b4c72",
+        "title": "阿里开源page-agent.js：一个脚本标签就能让网页拥有AI自动化能力",
+        "original_title": "🚨 Breaking: Alibaba just killed the browser automation stack. **page-agent.js** — a GUI agent that lives directly inside your webpage. No Selenium...",
+        "summary": "阿里巴巴开源page-agent.js，一个可直接嵌入网页的GUI自动化代理工具。无需Selenium、Puppeteer或浏览器扩展，仅需一个script标签即可让网页理解自然语言指令并执行点击、填表等操作，为SaaS产品快速集成AI助手提供轻量级方案。",
+        "rating": "A",
+        "score": 81,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "该工具可能重塑浏览器自动化领域，影响现有自动化测试工具市场；同时降低AI助手集成门槛，或推动更多传统Web应用向AI原生体验转型。",
+        "entities": [
+          "Browser-Use",
+          "Page-Agent.Js",
+          "Puppeteer",
+          "Selenium",
+          "阿里巴巴"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/Suryanshti777/status/2040889016883745087"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775462470,
+        "published_at": "2026-04-06T16:01:10.692641",
+        "source": "Twitter",
+        "url": "https://x.com/Suryanshti777/status/2040889016883745087",
+        "event_id": null
+      },
+      {
         "id": "e35da81b334b2ddcdb7cdee3b1266f5d",
         "title": "Claude Code新增自我保护机制：分析自身源码将触发错误提示",
         "original_title": "Claude Code now throws an error if you use it to try and analyze the Claude Code source",
@@ -6125,36 +6157,6 @@
       }
     ],
     "2026-04-05": [
-      {
-        "id": "4a449d393d6a47b264804ebada0b4c72",
-        "title": "阿里开源page-agent.js：一个脚本标签就能让网页拥有AI自动化能力",
-        "original_title": "🚨 Breaking: Alibaba just killed the browser automation stack. **page-agent.js** — a GUI agent that lives directly inside your webpage. No Selenium...",
-        "summary": "阿里巴巴开源page-agent.js，一个可直接嵌入网页的GUI自动化代理工具。无需Selenium、Puppeteer或浏览器扩展，仅需一个script标签即可让网页理解自然语言指令并执行点击、填表等操作，为SaaS产品快速集成AI助手提供轻量级方案。",
-        "rating": "A",
-        "score": 81,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "该工具可能重塑浏览器自动化领域，影响现有自动化测试工具市场；同时降低AI助手集成门槛，或推动更多传统Web应用向AI原生体验转型。",
-        "entities": [
-          "Browser-Use",
-          "Page-Agent.Js",
-          "Puppeteer",
-          "Selenium",
-          "阿里巴巴"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/Suryanshti777/status/2040889016883745087"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775462470,
-        "published_at": "2026-04-06T16:01:10.692641",
-        "source": "Twitter",
-        "url": "https://x.com/Suryanshti777/status/2040889016883745087",
-        "event_id": null
-      },
       {
         "id": "1458bfa92a489f6947334432d7ef7c98",
         "title": "Target更新用户条款：AI购物助手出错，损失由消费者承担",
@@ -19733,6 +19735,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-06T16:01:20.320321",
+  "last_updated": "2026-04-06T17:02:56.113566",
   "total_news": 648
 }
