@@ -1,362 +1,5 @@
 {
   "news": {
-    "2026-03-30": [
-      {
-        "id": "fcd3fe5c06fdcb73d0aad0f5e3f7a260",
-        "title": "Anthropic CEO警示：AI变革浪潮已至，行业却仍在自我安慰",
-        "original_title": "Anthropic CEO：海啸已到眼前，大家还在自我安慰",
-        "summary": "Anthropic CEO再度发出警告，认为人工智能带来的剧烈变革已迫在眉睫，但业界普遍存在低估风险和延迟应对的心理。",
-        "rating": "B",
-        "score": 70,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可进一步追踪科技巨头高管近期对AI安全与发展速度的集体表态，以及各国监管机构的反应节奏。",
-        "entities": [
-          "Ai安全",
-          "Anthropic"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/__Inty__/status/2038581086544937151"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774879653,
-        "published_at": "2026-03-30T22:07:33.354656",
-        "source": "Twitter",
-        "url": "https://x.com/__Inty__/status/2038581086544937151",
-        "original_content": "Anthropic CEO再度发出警告，认为人工智能带来的剧烈变革已迫在眉睫，但业界普遍存在低估风险和延迟应对的心理。",
-        "chinese_title": "Anthropic CEO警示：AI变革浪潮已至，行业却仍在自我安慰",
-        "grade": "B"
-      },
-      {
-        "id": "35ed00b46be8795b47c05c5e49337c11",
-        "title": "acpx发布Agentic Workflows：用节点式图编排替代单提示词代理",
-        "original_title": "acpx v0.4 ships Agentic Workflows, or as I like to call them \"Agentic Graphs\" It let's you create node-based workflows on top of ACP (Agent Client Pro...",
-        "summary": "acpx v0.4推出基于ACP协议的节点式工作流功能，允许开发者将代码代理的复杂任务拆分为多步骤确定性流程，以提升可观测性并减少模型 priming 导致的性能损失。",
-        "rating": "A",
-        "score": 82,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可对比 n8n、Langflow 等现有工作流方案，分析节点式 Agent 编排对开源维护效率的实际影响。",
-        "entities": [
-          "Acpx",
-          "Codex",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/onusoz/status/2038565725690900992"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774879653,
-        "published_at": "2026-03-30T22:07:33.354750",
-        "source": "Twitter",
-        "url": "https://x.com/onusoz/status/2038565725690900992",
-        "original_content": "acpx v0.4推出基于ACP协议的节点式工作流功能，允许开发者将代码代理的复杂任务拆分为多步骤确定性流程，以提升可观测性并减少模型 priming 导致的性能损失。",
-        "chinese_title": "acpx发布Agentic Workflows：用节点式图编排替代单提示词代理",
-        "grade": "A"
-      },
-      {
-        "id": "34a0fbed690d07fe38be10db97a798e2",
-        "title": "Kimi、Cursor、Chroma三家Agent产品训练方法论惊人一致：强基座+生产环境RL+结果奖励",
-        "original_title": "前 Hugging Face 技术负责人、现谷歌 DeepMind 资深工程师 Philipp Schmid 对比了近期三篇 Agent 模型技术报告后发现，月之暗面（Kimi K2.5）、AI 编程工具 Curs...",
-        "summary": "前HuggingFace技术负责人Philipp Schmid对比发现，月之暗面Kimi K2.5、Cursor Composer 2和Chroma Context-1虽独立开发，但在垂直Agent模型训练上采用了几乎相同的强化学习配方：强基座模型、生产级执行环境、可验证结果奖励、异步大规模并行。",
-        "rating": "S",
-        "score": 98,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸至分析2026年Agent模型训练范式的收敛趋势，以及对基础设施、数据飞轮和奖励工程服务商的产业链影响。",
-        "entities": [
-          "Chroma",
-          "Cursor",
-          "Kimi",
-          "OpenAI",
-          "Philipp Schmid"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/0xLogicrw/status/2038527327022498293"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774879653,
-        "published_at": "2026-03-30T22:07:33.354881",
-        "source": "Twitter",
-        "url": "https://x.com/0xLogicrw/status/2038527327022498293",
-        "original_content": "前HuggingFace技术负责人Philipp Schmid对比发现，月之暗面Kimi K2.5、Cursor Composer 2和Chroma Context-1虽独立开发，但在垂直Agent模型训练上采用了几乎相同的强化学习配方：强基座模型、生产级执行环境、可验证结果奖励、异步大规模并行。",
-        "chinese_title": "Kimi、Cursor、Chroma三家Agent产品训练方法论惊人一致：强基座+生产环境RL+结果奖励",
-        "grade": "S"
-      },
-      {
-        "id": "67c2042dae9f2b6b72c7f1b3ab0e4b56",
-        "title": "Midjourney工程师开源纯TypeScript页面排版算法：绕过浏览器Reflow快600倍",
-        "original_title": "A Midjourney engineer just open-sourced a way to lay out entire web pages without CSS. Not a framework. Not a library that wraps the DOM. A pure TypeS...",
-        "summary": "Midjourney工程师Cheng Lou开源了一种不依赖CSS、完全绕过浏览器Reflow的纯TypeScript文本测量排版方案，旨在为AI实时生成用户界面提供高性能底层支持。",
-        "rating": "A",
-        "score": 82,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可观察该方案对AI生成UI、设计工具及前端工程范式的潜在影响，以及相关生态的跟进速度。",
-        "entities": [
-          "Cheng Lou",
-          "Midjourney",
-          "Typescript"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/PawelHuryn/status/2038525388037448113"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774879653,
-        "published_at": "2026-03-30T22:07:33.354938",
-        "source": "Twitter",
-        "url": "https://x.com/PawelHuryn/status/2038525388037448113",
-        "original_content": "Midjourney工程师Cheng Lou开源了一种不依赖CSS、完全绕过浏览器Reflow的纯TypeScript文本测量排版方案，旨在为AI实时生成用户界面提供高性能底层支持。",
-        "chinese_title": "Midjourney工程师开源纯TypeScript页面排版算法：绕过浏览器Reflow快600倍",
-        "grade": "A"
-      },
-      {
-        "id": "734de30d4eb8903152bfc3592c4f8b6c",
-        "title": "谷歌提出VGGRPO：用四维潜在奖励提升视频扩散模型世界一致性",
-        "original_title": "🎥 Video diffusion models can create beautiful videos, but their worlds often fall apart. 🔥 Excited to share our latest work at @Google: 📢 VGG...",
-        "summary": "谷歌研究团队发布VGGRPO方法，通过引入4D潜在奖励模型，解决视频扩散模型在生成过程中世界一致性容易崩溃的问题，可生成时空更连贯的长视频内容。",
-        "rating": "A",
-        "score": 80,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可追踪该技术与Sora等主流视频生成模型的改进关联，以及对长视频生成和影视制作工具链的影响。",
-        "entities": [
-          "Vggrpo",
-          "谷歌"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/ZhaochongAn/status/2038495900998201659"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774879653,
-        "published_at": "2026-03-30T22:07:33.355048",
-        "source": "Twitter",
-        "url": "https://x.com/ZhaochongAn/status/2038495900998201659",
-        "original_content": "谷歌研究团队发布VGGRPO方法，通过引入4D潜在奖励模型，解决视频扩散模型在生成过程中世界一致性容易崩溃的问题，可生成时空更连贯的长视频内容。",
-        "chinese_title": "谷歌提出VGGRPO：用四维潜在奖励提升视频扩散模型世界一致性",
-        "grade": "A"
-      },
-      {
-        "id": "93e491e627afb1311eea93cc99f706a7",
-        "title": "ScaleOps完成1.3亿美元C轮融资，主攻AI算力资源自动化调度",
-        "original_title": "ScaleOps raises $130M to improve computing efficiency amid AI demand",
-        "summary": "以色列云原生资源优化公司ScaleOps获得1.3亿美元C轮融资，其产品通过实时自动化Kubernetes资源配置，帮助企业降低AI训练与推理带来的GPU成本和云支出。",
-        "rating": "B",
-        "score": 71,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "可关注AI算力成本焦虑背景下，FinOps与云资源自动优化赛道的市场扩张与竞争格局。",
-        "entities": [
-          "Kubernetes",
-          "Scaleops"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/03/30/scaleops-130m-series-c-kubernetes-efficiency-ai-demand-funding/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774879653,
-        "published_at": "2026-03-30T22:07:33.355110",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/03/30/scaleops-130m-series-c-kubernetes-efficiency-ai-demand-funding/",
-        "original_content": "以色列云原生资源优化公司ScaleOps获得1.3亿美元C轮融资，其产品通过实时自动化Kubernetes资源配置，帮助企业降低AI训练与推理带来的GPU成本和云支出。",
-        "chinese_title": "ScaleOps完成1.3亿美元C轮融资，主攻AI算力资源自动化调度",
-        "grade": "B"
-      },
-      {
-        "id": "b426d0b79c7f06a53ac7a6d2da8333d9",
-        "title": "微软面向Frontier项目推出Copilot Cowork，集成Anthropic与OpenAI模型构建研究批判工具",
-        "original_title": "Microsoft rolls out Copilot Cowork to its Frontier program for early-stage testing, including a new Researcher Critique tool using Anthropic and OpenAI models (Jared Spataro/Microsoft 365 Blog)",
-        "summary": "Microsoft 365部门开始向Frontier早期测试项目推送Copilot Cowork功能，其中新上线的Researcher Critique工具结合了Anthropic与OpenAI的模型能力，用于辅助研究审阅与批判性分析。",
-        "rating": "A",
-        "score": 81,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可追踪微软Copilot产品线在企业科研、知识工作场景的落地进展，以及与Google Workspace的差异化竞争。",
-        "entities": [
-          "Anthropic",
-          "Copilot",
-          "OpenAI",
-          "微软"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260330/p22#a260330p22"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774879653,
-        "published_at": "2026-03-30T22:07:33.355156",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260330/p22#a260330p22",
-        "original_content": "Microsoft 365部门开始向Frontier早期测试项目推送Copilot Cowork功能，其中新上线的Researcher Critique工具结合了Anthropic与OpenAI的模型能力，用于辅助研究审阅与批判性分析。",
-        "chinese_title": "微软面向Frontier项目推出Copilot Cowork，集成Anthropic与OpenAI模型构建研究批判工具",
-        "grade": "A"
-      },
-      {
-        "id": "38e6ef0c484156092e08e2de7370a69c",
-        "title": "韩国AI芯片独角兽Rebellions获4亿美元pre-IPO融资，半年累计募资6.5亿美元",
-        "original_title": "Computer use is now in Claude Code. Claude can open your apps, click through your UI, and test what it built, right from the CLI. Now in research prev...",
-        "summary": "韩国AI芯片初创公司Rebellions完成4亿美元Pre-IPO轮融资，专注AI推理芯片设计，成为挑战Nvidia霸主地位的又一重要玩家。",
-        "rating": "A+",
-        "score": 95,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "可追踪Rebellions上市进程及韩国半导体产业在AI推理芯片领域的布局，预判对亚洲算力市场的供应格局影响。",
-        "entities": [
-          "Ai推理",
-          "Rebellions",
-          "英伟达"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260330/p21#a260330p21"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774879653,
-        "published_at": "2026-03-30T22:07:33.355238",
-        "source": "Twitter",
-        "url": "https://x.com/claudeai/status/2038663014098899416",
-        "original_content": "Computer use is now in Claude Code. Claude can open your apps, click through your UI, and test what it built, right from the CLI. Now in research preview on Pro and Max plans.",
-        "chinese_title": "Rebellions融资4亿美元估值23亿美元，IPO前冲刺AI推理芯片",
-        "grade": "S",
-        "extension": "AI推理芯片市场竞争加剧，可关联AWS Trainium、Google TPU等自研芯片趋势，以及AI算力成本下降对行业的影响。"
-      },
-      {
-        "id": "1c743aeaf77fafeaaed946c124ee2cf3",
-        "title": "NASA计划在2030年代前建成月球基地，转向可持续驻留战略",
-        "original_title": "NASA wants to build a base on the Moon by the 2030s – how and why it plans to build up to a long-term lunar presence",
-        "summary": "NASA更新了Artemis计划路线图，明确从单次登月竞赛转向建设长期月球基地，增加2027年低地球轨道对接测试任务，并在2028年实现月球南极着陆，为后续火星探测积累经验。",
-        "rating": "B",
-        "score": 72,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可关注SpaceX、Blue Origin商业月球着陆器与NASA任务的集成进展，以及中美太空竞赛的新阶段动态。",
-        "entities": [
-          "Blue Origin",
-          "Nasa",
-          "SpaceX"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Science + Technology – Articles – The Conversation",
-            "url": "https://theconversation.com/nasa-wants-to-build-a-base-on-the-moon-by-the-2030s-how-and-why-it-plans-to-build-up-to-a-long-term-lunar-presence-279166"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774879653,
-        "published_at": "2026-03-30T22:07:33.355518",
-        "source": "Science + Technology – Articles – The Conversation",
-        "url": "https://theconversation.com/nasa-wants-to-build-a-base-on-the-moon-by-the-2030s-how-and-why-it-plans-to-build-up-to-a-long-term-lunar-presence-279166",
-        "original_content": "NASA更新了Artemis计划路线图，明确从单次登月竞赛转向建设长期月球基地，增加2027年低地球轨道对接测试任务，并在2028年实现月球南极着陆，为后续火星探测积累经验。",
-        "chinese_title": "NASA计划在2030年代前建成月球基地，转向可持续驻留战略",
-        "grade": "B"
-      },
-      {
-        "id": "a3a71ba401e786c730358062ebf20a8a",
-        "title": "美国联邦科研经费削减引发学术危机：实验室停摆、博士生涯受威胁",
-        "original_title": "Panicking scientists, canceled experiments – federal funding cuts turned my work as a research dean into crisis management",
-        "summary": "一名医学院研究系主任自述，特朗普政府主导的美国国立卫生研究院经费削减与DOGE干预，已导致大量科研项目被迫终止、青年研究人员失业，并可能毁掉一整代科学人才。",
-        "rating": "A",
-        "score": 75,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可观察美国科研政策动荡对全球人才流向、中国科研竞争力及国际科研合作的长期影响。",
-        "entities": [
-          "Doge",
-          "Nih"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Science + Technology – Articles – The Conversation",
-            "url": "https://theconversation.com/panicking-scientists-canceled-experiments-federal-funding-cuts-turned-my-work-as-a-research-dean-into-crisis-management-277162"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774879653,
-        "published_at": "2026-03-30T22:07:33.355852",
-        "source": "Science + Technology – Articles – The Conversation",
-        "url": "https://theconversation.com/panicking-scientists-canceled-experiments-federal-funding-cuts-turned-my-work-as-a-research-dean-into-crisis-management-277162",
-        "original_content": "一名医学院研究系主任自述，特朗普政府主导的美国国立卫生研究院经费削减与DOGE干预，已导致大量科研项目被迫终止、青年研究人员失业，并可能毁掉一整代科学人才。",
-        "chinese_title": "美国联邦科研经费削减引发学术危机：实验室停摆、博士生涯受威胁",
-        "grade": "A"
-      },
-      {
-        "id": "7ad766ae9375e2c4b92dd621dcd41261",
-        "title": "研究团队用机器学习识别费城社区士绅化视觉特征",
-        "original_title": "We analyzed Philly street scenes and identified signs of gentrification using machine learning trained on longtime residents’ observations",
-        "summary": "研究人员结合长期居民观察、Google街景图像与深度学习模型，开发出一种识别城市士绅化视觉信号的AI方法，准确率约84%，为城市规划和社区研究提供了新的数据工具。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可探讨计算机视觉技术在城市社会学、公共政策评估中的应用潜力与伦理争议。",
-        "entities": [
-          "机器学习",
-          "谷歌"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Science + Technology – Articles – The Conversation",
-            "url": "https://theconversation.com/we-analyzed-philly-street-scenes-and-identified-signs-of-gentrification-using-machine-learning-trained-on-longtime-residents-observations-277704"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774879653,
-        "published_at": "2026-03-30T22:07:33.356125",
-        "source": "Science + Technology – Articles – The Conversation",
-        "url": "https://theconversation.com/we-analyzed-philly-street-scenes-and-identified-signs-of-gentrification-using-machine-learning-trained-on-longtime-residents-observations-277704",
-        "original_content": "研究人员结合长期居民观察、Google街景图像与深度学习模型，开发出一种识别城市士绅化视觉信号的AI方法，准确率约84%，为城市规划和社区研究提供了新的数据工具。",
-        "chinese_title": "研究团队用机器学习识别费城社区士绅化视觉特征",
-        "grade": "B"
-      },
-      {
-        "id": "2274400a30d64e4a8767cf2a7924cd58",
-        "title": "研究指出海事网络安全培训缺口影响行业防护能力",
-        "original_title": "Researchers find training gaps impacting maritime cybersecurity readiness",
-        "summary": "一项研究显示，商业船舶船员在应对海上网络威胁方面的培训存在明显不足，油轮和货运船队面临较高的数字安全风险。",
-        "rating": "B",
-        "score": 66,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可关注关键基础设施网络安全赛道的 Marine/IoT 安全需求增长。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Tech Xplore - electronic gadgets, technology advances and research news",
-            "url": "https://techxplore.com/news/2026-03-gaps-impacting-maritime-cybersecurity-readiness.html"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774879653,
-        "published_at": "2026-03-30T22:07:33.356142",
-        "source": "Tech Xplore - electronic gadgets, technology advances and research news",
-        "url": "https://techxplore.com/news/2026-03-gaps-impacting-maritime-cybersecurity-readiness.html",
-        "original_content": "一项研究显示，商业船舶船员在应对海上网络威胁方面的培训存在明显不足，油轮和货运船队面临较高的数字安全风险。",
-        "chinese_title": "研究指出海事网络安全培训缺口影响行业防护能力",
-        "grade": "B"
-      }
-    ],
     "2026-03-31": [
       {
         "id": "dc8babefde87d9a5e97e2ad0c01d3c88",
@@ -3104,6 +2747,97 @@
       }
     ],
     "2026-04-06": [
+      {
+        "id": "fa178034d6286faf92fd6199c98c5168",
+        "title": "《纽约时报》被质疑为AI医疗初创Medvi洗白，FDA警告其虚假医生和AI造假图片",
+        "original_title": "Why Is the New York Times Laundering the Reputation of a Sleazy AI Startup That’s Selling GLP-1s via a Dishonest Dumpster Fire of Fake Doctors, Phony Before-and-After Pictures, a Warning From the FDA, and Other Glaring Red Flags?",
+        "summary": "《纽约时报》近日发布了一篇关于AI医疗初创公司Medvi的正面报道，但调查媒体Futurism揭露该公司存在严重问题：使用AI生成的虚假医生形象、盗用他人照片制作虚假减肥前后对比图、今年2月收到FDA警告信。报道质疑《纽约时报》为何忽略这些明显的警示信号。",
+        "rating": "S",
+        "score": 92,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此事件可能引发对AI医疗监管的讨论，加剧媒体对AI初创公司尽职调查的质疑，并可能促使FDA加强对AI医疗广告的监管力度。",
+        "entities": [
+          "Fda",
+          "Futurism",
+          "Matthew Gallagher",
+          "Medvi",
+          "New York Times"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/new-york-times-medvi-ai-glp1s"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775487780,
+        "published_at": "2026-04-06T23:03:00.497056",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/new-york-times-medvi-ai-glp1s",
+        "event_id": null
+      },
+      {
+        "id": "d0bd338667fd1b66a151535f0953ad90",
+        "title": "NeuBird AI发布Falcon智能体：可预测并自动修复软件故障，获1930万美元融资",
+        "original_title": "AI agents that automatically prevent, detect and fix software issues are here as NeuBird AI launches Falcon, FalconClaw",
+        "summary": "NeuBird AI发布新一代AI运维智能体Falcon，能够在72小时内预测系统故障并自动修复，准确率达92%。公司同时宣布获得1930万美元融资，总融资额达6400万美元。产品旨在将运维团队从被动响应转向主动预防。",
+        "rating": "A+",
+        "score": 88,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI运维智能体的兴起可能重塑DevOps行业，对传统监控厂商如Datadog构成挑战，同时推动企业IT运维向自动化和预测性维护转型。",
+        "entities": [
+          "Falcon",
+          "Gou Rao",
+          "Neubird Ai",
+          "Portworx",
+          "Venkat Ramakrishnan"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/security/ai-agents-that-automatically-prevent-detect-and-fix-software-issues-are-here"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775487780,
+        "published_at": "2026-04-06T23:03:00.497074",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/security/ai-agents-that-automatically-prevent-detect-and-fix-software-issues-are-here",
+        "event_id": null
+      },
+      {
+        "id": "da9f95d5cc48eb5aac82c990b63fdf69",
+        "title": "OpenAI Codex与Anthropic Claude Code宣布互通，AI编程工具走向协作共存",
+        "original_title": "Codex and Claude Code Can Work Together",
+        "summary": "OpenAI和Anthropic宣布其AI编程工具Codex与Claude Code可以协同工作。Cursor推出支持多AI智能体同时编码的新版本，OpenAI也发布了让Claude Code用户可在其中使用Codex的插件，标志着AI编程工具从竞争走向协作。",
+        "rating": "S",
+        "score": 97,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "AI编程工具的互通可能加速开发者生态的整合，推动多智能体协作成为行业标准，同时可能促使更多IDE和开发工具支持多模型切换功能。",
+        "entities": [
+          "Anthropic",
+          "Claude Code",
+          "Codex",
+          "Cursor",
+          "OpenAI",
+          "Romain Huet"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/codex-claude-code-can-work-together"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775487780,
+        "published_at": "2026-04-06T23:03:00.497089",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/codex-claude-code-can-work-together",
+        "event_id": null
+      },
       {
         "id": "c19fe0b24a61b4e4bc7925f8aa7feefc",
         "title": "OpenAI发布13页政策蓝图：向超级智能时代过渡，提议全民AI股权与32小时工作制",
@@ -19116,6 +18850,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-06T22:03:13.825460",
-  "total_news": 624
+  "last_updated": "2026-04-06T23:03:45.045067",
+  "total_news": 615
 }
