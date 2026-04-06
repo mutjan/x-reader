@@ -355,383 +355,6 @@
         "original_content": "一项研究显示，商业船舶船员在应对海上网络威胁方面的培训存在明显不足，油轮和货运船队面临较高的数字安全风险。",
         "chinese_title": "研究指出海事网络安全培训缺口影响行业防护能力",
         "grade": "B"
-      },
-      {
-        "id": "fdc188234f6fdd8f66cd903a34ac82cb",
-        "title": "独立开发者7天逆向复现谷歌算法，提速3.7倍超越论文承诺",
-        "original_title": "Solo dev reverse-engineered Google's billion-dollar algorithm in 7 days Google published the paper that crashed memory stocks worldwide. Then shipped ...",
-        "summary": "受真人秀明星声音启发的AI代理Rachel在圣帕特里克节周末致电爱尔兰所有酒吧，询问健力士啤酒价格，为消费者寻找最优惠的购买渠道。",
-        "rating": "S",
-        "score": 0,
-        "type": "society",
-        "typeName": "研究成果",
-        "expansion": "此事折射出学术论文与工程落地的鸿沟，以及AI辅助编程对独立开发者的能力放大效应，可延伸讨论学术界开源文化、产业落地周期以及AI编程助手的边界。",
-        "entities": [
-          "Ai语音代理",
-          "健力士"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/k1rallik/status/2038567965465944491"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.846858",
-        "source": "Twitter",
-        "url": "https://x.com/k1rallik/status/2038567965465944491",
-        "original_content": "Solo dev reverse-engineered Google's billion-dollar algorithm in 7 days Google published the paper that crashed memory stocks worldwide. Then shipped zero code. Tom Turney read the math, opened his terminal, and built the whole thing with Claude - then made it faster than Google promised. Day 1-3: Core algorithms, 141 tests, Python prototype Day 3-5: C port into llama.cpp, Metal GPU kernels Day 5-7: Speed optimization from 739 to 2747 tok/s That's a 3.7x speedup through pure engineering: &gt; fp32 → fp16 WHT &gt; half4 vectorized butterfly ops &gt; graph-side rotation &gt; block-32 storage layout Then he added his own research on top: &gt; Sparse V: skip 90% of value decompressions at long context &gt; Asymmetric K/V: keep keys precise, compress values harder &gt; Temporal decay: old tokens get lower precision automatically Result: 35B model running on a MacBook with 4.6x compressed cache. 613 GitHub stars in a week. Google still hasn't released their own code. BuBBliK: http://x.com/i/article/2037798771753439232",
-        "chinese_title": "AI语音代理致电爱尔兰3000家酒吧寻找最便宜健力士啤酒",
-        "grade": "",
-        "extension": "AI语音代理在生活服务场景的创新应用可能重构本地生活服务的信息获取方式，催生新型消费决策工具。"
-      },
-      {
-        "id": "45a37327098ad8e2d70b17196ad38f97",
-        "title": "微软开源40亿参数TRELLIS.2模型，单图实时生成3D资产",
-        "original_title": "🚨BREAKING: Microsoft open sourced a 4B parameter model that generates production-ready 3D assets from a single image, and the speed numbers are gen...",
-        "summary": "微软开源了名为TRELLIS.2的图像到3D生成模型，采用新几何格式O-Voxel，在CUDA上可在100毫秒内生成带纹理的网格，极大缩短了3D内容生产链路，向实时3D资产生成迈出关键一步。",
-        "rating": "A+",
-        "score": 88,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "该模型开源将刺激游戏、影视、元宇宙内容生产工具的变革，可进一步关注开发者社区反馈及竞品动态。",
-        "entities": [
-          "O-Voxel",
-          "Trellis",
-          "微软"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/ihtesham2005/status/2038549375794995614"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.846983",
-        "source": "Twitter",
-        "url": "https://x.com/ihtesham2005/status/2038549375794995614",
-        "original_content": "微软开源了名为TRELLIS.2的图像到3D生成模型，采用新几何格式O-Voxel，在CUDA上可在100毫秒内生成带纹理的网格，极大缩短了3D内容生产链路，向实时3D资产生成迈出关键一步。",
-        "chinese_title": "微软开源40亿参数TRELLIS.2模型，单图实时生成3D资产",
-        "grade": "A+"
-      },
-      {
-        "id": "f5fd2b8e5cda22de2034e4b622c6a4de",
-        "title": "ChatGPT网页端被曝静默采集55项用户数据，解锁前已完成扫描",
-        "original_title": "你以为你在用 ChatGPT，其实在你打出第一个字之前，Cloudflare 已经读完了你的页面。 有人逆向解密了 ChatGPT 网页端的程序，发现了一个机制：用户每次打开页面...",
-        "summary": "有工程师逆向发现ChatGPT网页版在用户输入前已通过Cloudflare静默扫描包括GPU型号、屏幕分辨率、IP地址及React应用内部状态在内的55项数据，引发关于反机器人验证与用户隐私边界的争议。",
-        "rating": "S",
-        "score": 94,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "事件触及平台安全机制与用户知情同意的伦理边界，可能引发对主流AI产品数据采集行为的更广泛审计和监管关注。",
-        "entities": [
-          "Cloudflare",
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/TechFlowPost/status/2038544579939701096"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.847031",
-        "source": "Twitter",
-        "url": "https://x.com/TechFlowPost/status/2038544579939701096",
-        "original_content": "有工程师逆向发现ChatGPT网页版在用户输入前已通过Cloudflare静默扫描包括GPU型号、屏幕分辨率、IP地址及React应用内部状态在内的55项数据，引发关于反机器人验证与用户隐私边界的争议。",
-        "chinese_title": "ChatGPT网页端被曝静默采集55项用户数据，解锁前已完成扫描",
-        "grade": "S"
-      },
-      {
-        "id": "85f936430f084dcb3a7e2d9f2ed496f9",
-        "title": "开发者分享网页Shader自动提取Skill，模型可复刻复杂网页特效",
-        "original_title": "牛逼，几乎可以完美还原你看到的任何网页特效 左侧是原网页，右侧是还原效果 模型：GLM4.7",
-        "summary": "一位开发者分享了自己为Claude Code等AI编程助手设计的Web Shader Extractor Skill，可自动完成从网页抓取、分析、反混淆到Shader移植的全流程，辅助复刻复杂网页视觉特效。",
-        "rating": "A",
-        "score": 78,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "此类AI辅助开发工具的普及可能降低前端特效开发门槛，可关注其在设计和创意行业的落地情况。",
-        "entities": [
-          "Claude Code",
-          "Glm"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/HeyHuazi/status/2038530102401847307"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.847071",
-        "source": "Twitter",
-        "url": "https://x.com/HeyHuazi/status/2038530102401847307",
-        "original_content": "一位开发者分享了自己为Claude Code等AI编程助手设计的Web Shader Extractor Skill，可自动完成从网页抓取、分析、反混淆到Shader移植的全流程，辅助复刻复杂网页视觉特效。",
-        "chinese_title": "开发者分享网页Shader自动提取Skill，模型可复刻复杂网页特效",
-        "grade": "A"
-      },
-      {
-        "id": "4c2f497aebcfd151936807a92c3639d2",
-        "title": "AI安全研究机构开放招聘：聚焦思维链可信度与推理验证",
-        "original_title": "Hiring 🎉 Researchers to work on Chains-of-Thought faithfulness, reasoning verification, and AI monitoring robustness, some core questions for how o...",
-        "summary": "一家AI安全研究团队发布招聘信息，计划招募2名拥有博士学位的研究员和1名研究助理，研究方向为思维链可信度、推理验证及AI监控鲁棒性等 oversight 核心问题。",
-        "rating": "B",
-        "score": 68,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "该招聘方向反映业界对大型推理模型内部机制可解释性的关注升温，后续可追踪该团队的研究产出。",
-        "entities": [
-          "Fazl Barez"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Twitter",
-            "url": "https://x.com/FazlBarez/status/2038527221896270124"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.847105",
-        "source": "Twitter",
-        "url": "https://x.com/FazlBarez/status/2038527221896270124",
-        "original_content": "一家AI安全研究团队发布招聘信息，计划招募2名拥有博士学位的研究员和1名研究助理，研究方向为思维链可信度、推理验证及AI监控鲁棒性等 oversight 核心问题。",
-        "chinese_title": "AI安全研究机构开放招聘：聚焦思维链可信度与推理验证",
-        "grade": "B"
-      },
-      {
-        "id": "793de2c8307ce25a5e77913a13ff37b7",
-        "title": "AI代码审查平台Qodo完成7000万美元B轮融资，累计融资达1.2亿美元",
-        "original_title": "New York-based Qodo, which offers AI agents for code review, testing, and governance, raised a $70M Series B led by Qumra, taking its total funding to $120M (Kate Park/TechCrunch)",
-        "summary": "总部位于纽约的Qodo公司，提供AI agent驱动的代码审查、测试和治理服务，宣布完成由Qumra领投的7000万美元B轮融资，累计融资达1.2亿美元。",
-        "rating": "A",
-        "score": 80,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "随着AI编程工具月产数十亿行代码，代码质量保证正成为新瓶颈，Qodo的融资反映市场对AI驱动软件验证需求的增长。",
-        "entities": [
-          "Qodo",
-          "Qumra"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260330/p20#a260330p20"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.847246",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260330/p20#a260330p20",
-        "original_content": "总部位于纽约的Qodo公司，提供AI agent驱动的代码审查、测试和治理服务，宣布完成由Qumra领投的7000万美元B轮融资，累计融资达1.2亿美元。",
-        "chinese_title": "AI代码审查平台Qodo完成7000万美元B轮融资，累计融资达1.2亿美元",
-        "grade": "A"
-      },
-      {
-        "id": "740f3eb7f672d83acec2d0914c57c79e",
-        "title": "分析师称微软Fabric Database Hub仅为\\\"局部解决方案\\\"",
-        "original_title": "Microsoft Fabric Database Hub only a 'partial' solution for admins",
-        "summary": "分析师认为微软新推出的Fabric Database Hub对使用非微软数据库的企业而言仅是一个局部解决方案，但在微软生态内部有望提升数据库的互联性和可管理性。",
-        "rating": "B",
-        "score": 68,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "enterprise数据库整合赛道竞争激烈，微软的进展可能影响多云数据库管理市场的竞争格局。",
-        "entities": [
-          "Fabric Database Hub",
-          "微软"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Register",
-            "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/microsoft_fabric_database_hub_partial_solution/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.847285",
-        "source": "The Register",
-        "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/microsoft_fabric_database_hub_partial_solution/",
-        "original_content": "分析师认为微软新推出的Fabric Database Hub对使用非微软数据库的企业而言仅是一个局部解决方案，但在微软生态内部有望提升数据库的互联性和可管理性。",
-        "chinese_title": "分析师称微软Fabric Database Hub仅为\\\"局部解决方案\\\"",
-        "grade": "B"
-      },
-      {
-        "id": "cb629bebc93187b70f334675ecb1f1ef",
-        "title": "MIT爆料：神秘创业公司R3 Bio正研发无脑人类克隆体",
-        "original_title": "The Download: brainless human clones and the first uterus kept alive outside a body",
-        "summary": "加州初创公司R3 Bio在秘密运营多年后披露其融资计划，目标是培育无感知能力的猴子\\\"器官囊\\\"以替代动物实验，MIT Technology Review披露背后还有更复杂的故事。",
-        "rating": "S",
-        "score": 92,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该研究触及生物伦理的敏感地带，可能引发关于人造生命体边界、器官农场合法性和公众接受度的激烈辩论。",
-        "entities": [
-          "Mit Technology Review",
-          "R3 Bio"
-        ],
-        "sourceLinks": [
-          {
-            "name": "New on MIT Technology Review (mistral)",
-            "url": "https://www.technologyreview.com/2026/03/30/1134836/the-download-brainless-human-clones-first-uterus-kept-alive-outside-body/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.847488",
-        "source": "New on MIT Technology Review (mistral)",
-        "url": "https://www.technologyreview.com/2026/03/30/1134836/the-download-brainless-human-clones-first-uterus-kept-alive-outside-body/",
-        "original_content": "加州初创公司R3 Bio在秘密运营多年后披露其融资计划，目标是培育无感知能力的猴子\\\"器官囊\\\"以替代动物实验，MIT Technology Review披露背后还有更复杂的故事。",
-        "chinese_title": "MIT爆料：神秘创业公司R3 Bio正研发无脑人类克隆体",
-        "grade": "S"
-      },
-      {
-        "id": "bbdf40e77149a120b1fc2eea574602a3",
-        "title": "ChatGPT应用商店上线半年突破300个集成，但开发者抱怨功能受限",
-        "original_title": "OpenAI's ChatGPT app store now has 300+ app integrations six months after its launch, but faces sluggish adoption due to limited functionality for many apps (Natalie Lung/Bloomberg)",
-        "summary": "OpenAI的ChatGPT应用商店在推出半年后已接入超过300款第三方应用，但由于多数应用功能受限且接入体验不佳，开发者反映用户增长和采用速度低于预期。",
-        "rating": "A+",
-        "score": 86,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "第三方生态的活跃度直接影响ChatGPT作为平台的价值，OpenAI若不能改善开发者体验和功能深度，可能错失构建应用生态的关键窗口。",
-        "entities": [
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260330/p19#a260330p19"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.847531",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260330/p19#a260330p19",
-        "original_content": "OpenAI的ChatGPT应用商店在推出半年后已接入超过300款第三方应用，但由于多数应用功能受限且接入体验不佳，开发者反映用户增长和采用速度低于预期。",
-        "chinese_title": "ChatGPT应用商店上线半年突破300个集成，但开发者抱怨功能受限",
-        "grade": "A+"
-      },
-      {
-        "id": "15d07cbab5c207edafb523e5cf3a414a",
-        "title": "Apple II如何奠定苹果五十年创新基因",
-        "original_title": "Apple II Forever!",
-        "summary": "The Verge发布长文回顾Apple II的历史地位，指出这款已停产数十年的产品是苹果首款爆款，也是塑造苹果产品文化和粉丝忠诚度的奠基之作。",
-        "rating": "B",
-        "score": 66,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "该文适合作为科技史回顾，但对当前产业动态的启示有限。",
-        "entities": [
-          "Apple Ii",
-          "苹果"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts (apple)",
-            "url": "https://www.theverge.com/tech/900677/apple-ii-personal-computer"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.847572",
-        "source": "The Verge -  Tech Posts (apple)",
-        "url": "https://www.theverge.com/tech/900677/apple-ii-personal-computer",
-        "original_content": "The Verge发布长文回顾Apple II的历史地位，指出这款已停产数十年的产品是苹果首款爆款，也是塑造苹果产品文化和粉丝忠诚度的奠基之作。",
-        "chinese_title": "Apple II如何奠定苹果五十年创新基因",
-        "grade": "B"
-      },
-      {
-        "id": "8a9c168c92d27b91ebd9530fc4553f5a",
-        "title": "HP整机促销：RTX 5090游戏主机降价1500美元与单卡同价",
-        "original_title": "Score an entire RTX 5090 gaming PC for the same price as the GPU itself, thanks to a massive $1,500 off — epic HP pre-built is ready for 4K gaming with 32GB DDR5 RAM and a 1TB SSD",
-        "summary": "HP官网对配备RTX 5090显卡、32GB DDR5内存及AMD八核处理器的Omen Max游戏主机提供超过1500美元折扣，售价3510美元，与单张RTX 5090显卡市价接近。",
-        "rating": "B",
-        "score": 74,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "高端GPU供货紧张与整机促销的反差，反映了PC硬件市场的供需波动。",
-        "entities": [
-          "Hp",
-          "Rtx 5090"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/desktops/gaming-pcs/score-an-entire-rtx-5090-gaming-pc-for-the-same-price-as-the-gpu-itself-thanks-to-a-massive-usd1-500-off-epic-hp-pre-built-is-ready-for-4k-gaming-with-32gb-ddr5-ram-and-a-1tb-ssd"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.847627",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/desktops/gaming-pcs/score-an-entire-rtx-5090-gaming-pc-for-the-same-price-as-the-gpu-itself-thanks-to-a-massive-usd1-500-off-epic-hp-pre-built-is-ready-for-4k-gaming-with-32gb-ddr5-ram-and-a-1tb-ssd",
-        "original_content": "HP官网对配备RTX 5090显卡、32GB DDR5内存及AMD八核处理器的Omen Max游戏主机提供超过1500美元折扣，售价3510美元，与单张RTX 5090显卡市价接近。",
-        "chinese_title": "HP整机促销：RTX 5090游戏主机降价1500美元与单卡同价",
-        "grade": "B"
-      },
-      {
-        "id": "a4d77bdc69edfbd09c09724dcecdd667",
-        "title": "Anthropic发布史上最大规模AI访谈研究，揭示人类真实需求",
-        "original_title": "The largest AI survey ever reveals what humans actually want",
-        "summary": "Anthropic开展了一项超大规模AI访谈研究，覆盖全球数万用户，发现人们对AI的核心诉求并非技术本身，而是辅助工作、教育和家庭生活的实际价值，堪称一面映照人类欲望的镜子。",
-        "rating": "A+",
-        "score": 87,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该研究为AI产品设计和市场策略提供了宝贵的用户洞察，可能促使更多厂商从\\\"技术展示\\\"转向\\\"以人为本\\\"的产品哲学。",
-        "entities": [
-          "Anthropic"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Next Web",
-            "url": "https://thenextweb.com/news/the-largest-ai-survey-ever-reveals-what-humans-actually-want"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.847658",
-        "source": "The Next Web",
-        "url": "https://thenextweb.com/news/the-largest-ai-survey-ever-reveals-what-humans-actually-want",
-        "original_content": "Anthropic开展了一项超大规模AI访谈研究，覆盖全球数万用户，发现人们对AI的核心诉求并非技术本身，而是辅助工作、教育和家庭生活的实际价值，堪称一面映照人类欲望的镜子。",
-        "chinese_title": "Anthropic发布史上最大规模AI访谈研究，揭示人类真实需求",
-        "grade": "A+"
-      },
-      {
-        "id": "839b05aeee4dfcf196c8c85580326010",
-        "title": "Hacker News热议：苹果在AI领域\\\"按兵不动\\\"反成赢家",
-        "original_title": "Apple nailed AI by doing fucking nothing lol",
-        "summary": "一条Hacker News帖子引发热议，评论认为苹果在生成式AI热潮中采取保守策略，反而避免了竞争对手在产品不成熟时 rushed launch 的声誉风险。",
-        "rating": "B",
-        "score": 72,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "这种观点反映了市场对AI产品成熟度的焦虑，以及对苹果慢热策略的重新审视。",
-        "entities": [
-          "苹果"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News (apple)",
-            "url": "https://xcancel.com/cryptopunk7213/status/2038351931589193953?s=20"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1774875881,
-        "published_at": "2026-03-30T21:04:41.847732",
-        "source": "Hacker News (apple)",
-        "url": "https://xcancel.com/cryptopunk7213/status/2038351931589193953?s=20",
-        "original_content": "一条Hacker News帖子引发热议，评论认为苹果在生成式AI热潮中采取保守策略，反而避免了竞争对手在产品不成熟时 rushed launch 的声誉风险。",
-        "chinese_title": "Hacker News热议：苹果在AI领域\\\"按兵不动\\\"反成赢家",
-        "grade": "B"
       }
     ],
     "2026-03-31": [
@@ -3481,6 +3104,35 @@
       }
     ],
     "2026-04-06": [
+      {
+        "id": "c19fe0b24a61b4e4bc7925f8aa7feefc",
+        "title": "OpenAI发布13页政策蓝图：向超级智能时代过渡，提议全民AI股权与32小时工作制",
+        "original_title": "Looks like OpenAI reached Superintelligence. OpenAI: \"Now, we’re beginning a transition toward superintelligence: AI systems capable of outperforming...",
+        "summary": "OpenAI发布了一份名为「智能时代」的政策蓝图，提出建立公共财富基金、试点32小时工作周、可携带福利、正式「AI权利」以及税收改革等建议，以应对自动化规模扩大带来的薪资税收减少。文件将超级智能定位为需要新政级别雄心的积极转型，而非遥远场景。",
+        "rating": "S",
+        "score": 95,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "OpenAI此举可能引发全球AI政策跟进，影响劳动力市场结构、税收体系改革，并可能推动其他科技巨头发布类似政策立场，同时加剧关于AI监管框架的行业讨论。",
+        "entities": [
+          "Intelligence Age",
+          "OpenAI",
+          "Public Wealth Fund",
+          "萨姆·奥尔特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/kimmonismus/status/2041130939175284910"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775484148,
+        "published_at": "2026-04-06T22:02:28.873004",
+        "source": "Twitter",
+        "url": "https://x.com/kimmonismus/status/2041130939175284910",
+        "event_id": null
+      },
       {
         "id": "f38f8a2a9ad36f7516da42439105e7f3",
         "title": "Sam Altman警告：超级智能即将到来，美国需要新的社会契约",
@@ -19464,6 +19116,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-06T21:03:05.265594",
-  "total_news": 636
+  "last_updated": "2026-04-06T22:03:13.825460",
+  "total_news": 624
 }
