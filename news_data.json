@@ -5453,6 +5453,123 @@
     ],
     "2026-04-06": [
       {
+        "id": "b3f56c4b71fcddb798317a1476eee73c",
+        "title": "无需参考模型即可检测LLM后门行为，新方法在AuditBench上匹敌Anthropic基线",
+        "original_title": "[R] Reference model free behavioral discovery of AudiBench model organisms via Probe-Mediated Adaptive Auditing",
+        "summary": "研究人员开发了一种无需参考模型的LLM审计方法，通过分析模型早期层与晚期层激活的差异来检测植入的后门行为。该方法在Anthropic的AuditBench基准上3/4的测试中与已知基线持平或超越，并意外发现Llama 70B的RLHF训练在社会敏感话题上存在立场偏向。",
+        "rating": "A",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "此方法可扩展为通用RLHF审计工具，帮助识别模型训练中的隐性偏见；同时可能推动AI安全审计标准的更新，影响模型发布前的合规审查流程。",
+        "entities": [
+          "Anthropic",
+          "Auditbench",
+          "Llama",
+          "Lora",
+          "Ridge Regression"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sdieuq/r_reference_model_free_behavioral_discovery_of/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775444467,
+        "published_at": "2026-04-06T11:01:07.786273",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sdieuq/r_reference_model_free_behavioral_discovery_of/",
+        "event_id": null
+      },
+      {
+        "id": "d8a11fac7675d0f1d66f050442ec468e",
+        "title": "Dante-2B：专为意大利语优化的21亿参数双语大模型从零训练完成",
+        "original_title": "[P] Dante-2B: I'm training a 2.1B bilingual fully open Italian/English LLM from scratch on 2×H200. Phase 1 done — here's what I've built.",
+        "summary": "研究团队从零开始训练了一个21亿参数的双语LLM，专门针对意大利语优化。模型采用定制的64K BPE分词器，解决了英语优先模型处理意大利语时的token膨胀问题。在2×H200上训练16天完成第一阶段，即将开源发布。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该成果可能推动更多小语种专用模型的开发，改变当前英语主导的开源生态；定制分词器方案或将被其他非英语模型借鉴，提升多语言模型效率。",
+        "entities": [
+          "Dante-2B",
+          "Deepspeed",
+          "Fineweb",
+          "H200",
+          "Luiss"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning (qwen)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sdh08w/p_dante2b_im_training_a_21b_bilingual_fully_open/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775444467,
+        "published_at": "2026-04-06T11:01:07.786293",
+        "source": "Machine Learning (qwen)",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sdh08w/p_dante2b_im_training_a_21b_bilingual_fully_open/",
+        "event_id": null
+      },
+      {
+        "id": "bc44a9fdac20097048036ff08ee62936",
+        "title": "纯Triton实现的MoE调度内核在推理批次上击败CUDA优化的Megablocks",
+        "original_title": "[P] Fused MoE Dispatch in Pure Triton: Beating CUDA-Optimized Megablocks at Inference Batch Sizes",
+        "summary": "开发者用纯Triton编写了一个融合的MoE调度内核，在Mixtral-8x7B的推理批次大小下性能超越Stanford的Megablocks达131%。该实现无需CUDA代码，且已通过AMD MI300X零改动测试，为大模型推理优化提供了新的开源方案。",
+        "rating": "A",
+        "score": 79,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "此成果可能加速MoE模型的推理优化竞争，推动更多纯Triton高性能内核的开发；同时降低MoE模型部署的硬件门槛，利好AMD等替代芯片在AI推理市场的渗透。",
+        "entities": [
+          "Amd Mi300X",
+          "DeepSeek",
+          "Megablocks",
+          "Mixtral",
+          "Triton"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning (deepseek)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sdaknc/p_fused_moe_dispatch_in_pure_triton_beating/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775444467,
+        "published_at": "2026-04-06T11:01:07.786307",
+        "source": "Machine Learning (deepseek)",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sdaknc/p_fused_moe_dispatch_in_pure_triton_beating/",
+        "event_id": null
+      },
+      {
+        "id": "eedd2d894054df8d6e25c06fe878dceb",
+        "title": "Apple富文本技术基础解析",
+        "original_title": "Apple Rich Text Fundamentals",
+        "summary": "技术文章深入解析Apple平台的富文本处理机制，涵盖TextKit框架、 attributed strings 等核心概念及最佳实践。",
+        "rating": "B",
+        "score": 68,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可关注Apple开发者生态中富文本处理技术演进",
+        "entities": [
+          "Textkit",
+          "苹果"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (apple)",
+            "url": "https://paper.pro/apple-rich-text"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775441037,
+        "published_at": "2026-04-06T10:03:57.298095",
+        "source": "Hacker News (apple)",
+        "url": "https://paper.pro/apple-rich-text",
+        "event_id": null
+      },
+      {
         "id": "c2b1c04dd15271e36a2f1b3b287c42a5",
         "title": "Sam Altman被曝排除CFO参与关键财务会议，OpenAI内部权力斗争升级",
         "original_title": "Sources: Sam Altman has excluded OpenAI CFO Sarah Friar from some key financial meetings; Friar began reporting to Fidji Simo instead of the CEO in August 2025 (The Information)",
@@ -18134,33 +18251,6 @@
     ],
     "2026-04-02": [
       {
-        "id": "eedd2d894054df8d6e25c06fe878dceb",
-        "title": "Apple富文本技术基础解析",
-        "original_title": "Apple Rich Text Fundamentals",
-        "summary": "技术文章深入解析Apple平台的富文本处理机制，涵盖TextKit框架、 attributed strings 等核心概念及最佳实践。",
-        "rating": "B",
-        "score": 68,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可关注Apple开发者生态中富文本处理技术演进",
-        "entities": [
-          "Textkit",
-          "苹果"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News (apple)",
-            "url": "https://paper.pro/apple-rich-text"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775441037,
-        "published_at": "2026-04-06T10:03:57.298095",
-        "source": "Hacker News (apple)",
-        "url": "https://paper.pro/apple-rich-text",
-        "event_id": null
-      },
-      {
         "id": "f4a8cea498d53dbc71ea5e420aeeaafb",
         "title": "亚马逊商谈收购卫星公司Globalstar 对抗SpaceX星链业务",
         "original_title": "Amazon in Talks to Acquire Globalstar",
@@ -20405,6 +20495,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-06T10:04:41.524856",
-  "total_news": 669
+  "last_updated": "2026-04-06T11:01:19.308921",
+  "total_news": 672
 }
