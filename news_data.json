@@ -5678,14 +5678,15 @@
         "id": "873a943215e98ef8189f5a315c7f33b1",
         "title": "苹果批准驱动让Nvidia eGPU可在Arm Mac上运行",
         "original_title": "Apple approves driver that lets Nvidia eGPUs work with Arm Macs",
-        "summary": "苹果正式批准了一项驱动程序，使Nvidia外置显卡eGPU能够在搭载Arm芯片的Mac电脑上正常工作，为Mac用户带来更强的图形性能。",
+        "summary": "苹果正式批准了让Nvidia eGPU能够在Arm架构Mac上工作的驱动程序，这意味着Mac用户将能够使用Nvidia外置显卡进行高性能计算和AI推理任务，打破了以往Mac平台对Nvidia显卡支持的限制。",
         "rating": "A",
-        "score": 82,
-        "type": "product",
+        "score": 85,
+        "type": "hardware",
         "typeName": "产品发布",
         "expansion": "可关注苹果与Nvidia关系缓和及Mac图形性能提升可能性",
         "entities": [
-          "Egpu",
+          "Arm",
+          "Mac",
           "英伟达",
           "苹果"
         ],
@@ -5700,7 +5701,11 @@
         "published_at": "2026-04-06T10:03:53.670986",
         "source": "Hacker News (apple)",
         "url": "https://twitter.com/__tinygrad__/status/2039213719155310736",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "chinese_title": "苹果批准Nvidia eGPU驱动，Arm Mac用户迎来外置显卡支持",
+        "grade": "A+",
+        "extension": "Mac平台对Nvidia显卡的支持可能吸引专业AI开发者和研究人员回归Mac生态，同时也为苹果与Nvidia在AI领域的深度合作铺平道路。"
       },
       {
         "id": "9a38b6169aed1006a7616d58a996ad47",
@@ -5735,16 +5740,15 @@
         "id": "f6328e30c09b5200d9e42d306a2c35f7",
         "title": "中国出台新规严管虚拟数字人，与美国形成鲜明对比",
         "original_title": "China Cracking Down on the Types of AI That Are Tearing America Apart",
-        "summary": "中国国家网信办发布草案，要求对AI数字人进行显著标识，禁止向未成年人提供虚拟亲密关系服务，与美国宽松监管形成对比。",
+        "summary": "中国国家互联网信息办公室发布新规草案，要求AI生成的数字人内容必须显著标注\\\"数字人\\\"身份，禁止可能危害儿童或导致成瘾的AI程序，限制提供\\\"虚拟亲密关系\\\"的AI服务。这一监管方向与美国AI治理困境形成鲜明对比。",
         "rating": "A+",
-        "score": 88,
+        "score": 82,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "可追踪中美AI监管政策差异及对全球AI产品布局的影响",
         "entities": [
-          "中国",
-          "数字人",
-          "网信办"
+          "Cac",
+          "Reuters"
         ],
         "sourceLinks": [
           {
@@ -5757,7 +5761,11 @@
         "published_at": "2026-04-06T10:03:53.671000",
         "source": "Futurism",
         "url": "https://futurism.com/artificial-intelligence/china-usa-ai-regulations",
-        "event_id": null
+        "event_id": null,
+        "original_content": "The Cyberspace Administration of China is cracking down on “digital humans,” with incoming regulations that will soon require labeling of AI personalities and ban programs that could harm children or lead to addiction. Those draft regulations, first reported in English by Reuters , would force AI companies to affix prominent “digital human” labels on content featuring AI generated characters. They’d also restrict companies that provide “virtual intimate relationships” with AI from plying their services to anyone under the age of 18. The restrictions would also crack down on AI deepfakes, and specifically content mimicking actual people, China’s Xinhua noted . Under the new regulations, no individual or organization will be allowed to generate facsimiles of other people without their consent. “Anyone who violates the provisions of these measures shall be punished in accordance with the provisions of laws and administrative regulations, and shall bear civil liability in accordance with the law,” the proposed legislations declare . Before the regulations becomes official, they’ll have to pass a rigorous public comment period , which ends on May 6. But even as a draft, they stand in sharp contrast to the situation in the United States, where AI deepfakes are rampant, and numerous children and adults have lost their lives after forming dangerous relationships with AI personalities. Even more have spiraled into parasocial delusions with the non-human AI entities, leading to a broad range of harms and trauma that can leave a lasting impact. In the US, any accountability through the courts has been slow coming. OpenAI, the developer of ChatGPT, was facing a total of eight separate lawsuits as recently as January, alleging that extensive use caused emotional and psychological harm. Horrifyingly, five of those cases involved suicide. Any hope for strict, Chinese-style regulations from the federal government is probably an extreme longshot, at least under the current administration. With a rising number of political action committees funded by billion-dollar tech industry corporations and Trump family allies, the chances at avoiding the president’s legislative agenda — which is really about blocking regulatory legislation — are looking grim. Still, it’s refreshing to see the kind of AI safeguards that are possible on a national level — if only the government wasn’t so busy building the runway for the very industry causing the damage. More on China’s AI: China Is Cracking Down on AI Slop The post China Cracking Down on the Types of AI That Are Tearing America Apart appeared first on Futurism .",
+        "chinese_title": "中国收紧AI数字人监管：要求标注AI身份并禁止虚拟亲密关系服务",
+        "grade": "A",
+        "extension": "中美AI监管路径的差异可能产生深远的地缘政治影响，中国更积极的监管立场可能为其在全球AI治理话语权争夺中赢得先机。"
       },
       {
         "id": "e1f79f325b7a85ad3b270a38bb7c8d0a",
@@ -6205,16 +6213,16 @@
         "id": "4ae07a6a16acee182dca0bce6e620669",
         "title": "AI专家Gary Marcus：别再恐慌AI抢饭碗了，它短期内根本做不到",
         "original_title": "AI Expert Says It’s Time to Stop Freaking Out About AI Taking Our Jobs",
-        "summary": "纽约大学认知科学家Gary Marcus发文反驳AI导致大规模失业的观点，指出相关恐惧多来自行业宣传，Anthropic自身研究也显示AI暴露度高的职业失业率并未系统性上升。",
+        "summary": "纽约大学认知科学家Gary Marcus在Fortune发文指出，公众对AI导致大规模失业的担忧被过度夸大。尽管民调显示多数美国选民认为AI将增加失业率，但历史经验表明自动化通常会创造新类型的工作岗位，而非单纯消灭旧岗位。",
         "rating": "A+",
-        "score": 80,
+        "score": 89,
         "type": "opinion",
         "typeName": "观点访谈",
         "expansion": "该观点可能引发关于AI对就业市场真实影响的进一步讨论，也可能促使政策制定者更理性地看待AI监管。同时，这对当前AI泡沫的估值体系可能产生一定冲击。",
         "entities": [
-          "Anthropic",
+          "Fortune",
           "Gary Marcus",
-          "OpenAI"
+          "Nyu"
         ],
         "sourceLinks": [
           {
@@ -6229,18 +6237,18 @@
         "url": "https://futurism.com/artificial-intelligence/ai-jobs-automation-expert",
         "event_id": null,
         "original_content": "Few fears have taken hold of the public imagination quite like the specter of AI-driven unemployment. A recent survey by the think tank Data for Progress found that a majority of US voters think AI is likely to increase unemployment rates, a scenario that often feels like it’s playing out in the horrid job market . It makes a compelling narrative. Yet in a recent article published in Fortune , New York University cognitive scientist emeritus and prominent AI critic Gary Marcus makes a strong case in the opposite direction: that AI isn’t coming for anyone’s job anytime soon. Plenty of the fear mongering, Marcus writes, comes down to good ol’ propaganda. The AI industry, for example, wants you to believe that artificial general intelligence — a still-theoretical form of AI with intellectual capabilities that rival or surpass that of humans — is either already here , or just around the corner . As Marcus notes, this kind of AI remains firmly in the realm of science fiction, regardless of what tech executives would like anybody to believe. “[T]hey might be covering their bases in case that actually happens,” he writes, “but then again, maybe they just want you to drive up the valuations of their companies.” The math on AI-driven unemployment likewise doesn’t add up, Marcus writes, including that by AI companies themselves. Take Anthropic, the company behind the AI chatbot Claude: its CEO Dario Amodei has made a spectacle of himself warning of a growing AI job apocalypse, even though his company’s own research department found “no systematic increase in unemployment for highly exposed workers since late 2022.” What’s really happening, Marcus argues, is that corporations are AI-washing their investor reports to cash in on the hype. “In many cases AI may be serving as a fig leaf to cover layoffs that are actually driven by financial underperformance or earlier overhiring,” he explains. Where mass layoffs are explicitly blamed on AI, they tend not to last , like at the finance tech company Klarna, which had to reverse course on its decision to automate customer service workers just 11 months after it declared them obsolete. Unfortunately for anyone praying for a cyberpunk future, so far the AI apocalypse seems to have landed with a wet plop. Luckily, there are plenty of real life crises to keep us occupied until the singularity ever comes — if it does at all, that is. More on AI: If You’re a Real Person Looking for a Job, the Flood of Fake AI Job Applications Will Make Your Blood Boil The post AI Expert Says It’s Time to Stop Freaking Out About AI Taking Our Jobs appeared first on Futurism .",
-        "chinese_title": "AI专家Marcus：AI抢工作被过度炒作，就业末日论站不住脚",
-        "grade": "A",
-        "extension": "该观点可能缓解公众对AI替代就业的焦虑，但也可能延缓企业和政府对AI就业冲击的应对准备，影响相关政策的制定节奏。"
+        "chinese_title": "AI专家Gary Marcus呼吁停止对AI抢工作的恐慌：自动化历史表明担忧被夸大",
+        "grade": "A+",
+        "extension": "AI就业影响的理性讨论可能帮助社会更平稳地适应技术变革，同时也为政策制定者提供了平衡创新与社会稳定的参考框架。"
       },
       {
         "id": "7fcace2570b016e97b8950748cb5eea5",
         "title": "Meta智能眼镜将推AI饮食追踪功能，专家担忧或加剧饮食障碍风险",
         "original_title": "We Can’t Even Imagine the Eating Disorders This New Meta Smart Glasses Feature Will Cause",
-        "summary": "Meta宣布为Ray-Ban智能眼镜添加AI饮食追踪功能，可自动识别食物并提供营养建议，但专家担忧该功能可能强化饮食焦虑，对易感人羣造成心理伤害。",
+        "summary": "Meta为其Ray-Ban AI眼镜推出新功能，可追踪佩戴者的饮食习惯并提供建议。但专家指出，这一功能可能给用户带来巨大的心理压力，导致或加剧饮食障碍等心理健康问题。",
         "rating": "A",
-        "score": 84,
-        "type": "society",
+        "score": 85,
+        "type": "safety",
         "typeName": "安全伦理",
         "expansion": "此事件涉及AI伦理与公共健康的交叉领域：1）可能引发监管机构对AI健康建议功能的审查；2）或推动AI可穿戴设备行业建立健康风险提示规范；3）竞争对手如Apple、Google可能借机强调隐私保护优势；4）长期看可能影响消费者对AI眼镜的接受度。",
         "entities": [
@@ -6260,9 +6268,9 @@
         "url": "https://futurism.com/artificial-intelligence/eating-disorders-meta-smart-glasses-feature",
         "event_id": null,
         "original_content": "Privacy nightmares. Pervert glasses . These are some of the not-so-flattering ways detractors describe Meta’s Ray-Ban AI glasses . Now, we’re nominating another hellish descriptor into that list: dysmorphia accelerator. On Friday, Meta announced a host of new features for the smart spectacles that include the ability to track and give advice on everything a wearer eats — which sounds poised to lead a bunch of people into horrendous eating disorders. In an upcoming update, Meta says users will soon be able to use a voice command or a quick photo to log the food in front of them, and the Meta AI will automatically “extract key nutritional details” and add them to the wearer’s Meta AI app. You can ask the AI questions like “What should I eat to increase my energy?” the announcement states, and it will give an answer informed by the user’s food log and personal goals. “Over time, your food log powers increasingly personalized insights that get more useful, helping you make healthier, more informed choices,” the announcement reads. The most eyebrow-raising detail comes when Meta says that, down the line, it’ll deploy an even more ambitious functionality: the AI automatically logging your food without you even having to ask. This will be possible because the Ray-Bans will “understand what you’re eating,” giving wearers “even richer, more personalized nutrition insights without having to remember to log every meal.” Putting aside all questions of privacy — presumably the glasses will have to be constantly recording to automatically log your food, even in public spaces like restaurants — this just sounds like a bad idea. The reason calorie and nutrition tracking is a chore is because it takes a combination of research, guesswork, and measurements. How are AI glasses supposed to accomplish all that, providing even remotely accurate predictions when it both has to infer details like what the food it’s looking at is, what it contains, and portion sizes? It’s also plain to see how the AI could give bad advice or be used to reinforce someone’s existing neuroses around food. The heaps of reports of so-called AI psychosis are testament to that. (We submit this story we reported on a father who, following the Meta AI glasses advice, ended up searching the desert for aliens.) What if the question is along the lines of, “will skipping this meal make me skinny?” or “am I too heavy?” — or what about the opposite: someone trying to bulk force-feeding themselves into a heart attack off of an AI’s advice? We’ve already seen instances of chatbots like ChatGPT giving teens advice on how to go on starvation diets , so none of those possibilities seem far-fetched. The feature is set to debut this summer, and will only be available to 18 years and older in the US. That might indicate that Meta, seemingly, is aware of the risks. More on AI: Meta Workers Say They’re Seeing Disturbing Things Through Users’ Smart Glasses The post We Can’t Even Imagine the Eating Disorders This New Meta Smart Glasses Feature Will Cause appeared first on Futurism .",
-        "chinese_title": "Meta智能眼镜新功能可自动记录饮食，专家担忧加剧饮食障碍风险",
-        "grade": "A",
-        "extension": "此功能可能引发可穿戴设备健康监测的伦理讨论，推动监管机构关注AI健康建议的责任边界，同时影响消费者对智能眼镜的接受度。"
+        "chinese_title": "Meta智能眼镜新增饮食追踪功能，专家担忧可能加剧饮食障碍问题",
+        "grade": "A+",
+        "extension": "AI健康追踪功能的伦理边界讨论可能推动可穿戴设备行业建立更严格的心理健康影响评估标准。"
       },
       {
         "id": "bffae5b731f689b5fb6adbe663f39ff9",
@@ -6334,14 +6342,15 @@
         "id": "34a9fd0c857a85dc8b955826ac684688",
         "title": "马斯克太空数据中心愿景能否支撑SpaceX千亿估值",
         "original_title": "Can orbital data centers help justify a massive valuation for SpaceX?",
-        "summary": "TechCrunch最新一期Equity播客讨论了马斯克将数据中心部署到太空的愿景，探讨这一概念是否有助于支撑SpaceX的高估值预期。",
+        "summary": "TechCrunch的Equity播客最新一期讨论了Elon Musk关于太空数据中心的愿景，探讨这一雄心勃勃的计划是否能够帮助 justify SpaceX在资本市场上的高估值预期。",
         "rating": "A+",
-        "score": 77,
-        "type": "industry",
+        "score": 71,
+        "type": "opinion",
         "typeName": "行业动态",
         "expansion": "若太空数据中心落地，将重塑全球算力基础设施格局，带动卫星通信、太空制造等产业链发展。",
         "entities": [
           "SpaceX",
+          "Techcrunch",
           "马斯克"
         ],
         "sourceLinks": [
@@ -6357,22 +6366,22 @@
         "url": "https://techcrunch.com/2026/04/05/can-orbital-data-centers-help-justify-a-massive-valuation-for-spacex/",
         "event_id": null,
         "original_content": "On the latest episode of TechCrunch’s Equity podcast, we debated Elon Musk's vision for data centers in space.",
-        "chinese_title": "轨道数据中心能否支撑SpaceX巨额估值？",
-        "grade": "A",
-        "extension": "若轨道数据中心概念落地，可能改变全球算力基础设施格局，推动太空经济与AI算力需求的结合，同时带动卫星通信和太空制造产业。"
+        "chinese_title": "轨道数据中心能否支撑SpaceX的巨额估值",
+        "grade": "B",
+        "extension": "太空数据中心概念若获资本市场认可，可能带动卫星互联网、太空计算等新兴领域的投资热潮，同时也面临巨大的技术和成本挑战。"
       },
       {
         "id": "d5aaf58f85b36b19f890da4510b47ac4",
         "title": "Vibe Coding效应显现：App Store一季度新应用数量暴增84%",
         "original_title": "The Vibe Coding Effect? Apple’s App Store Saw 84% Jump in New Apps in Quarter",
-        "summary": "Sensor Tower数据显示，2026年Q1 App Store新应用数量同比增长84%，逆转了此前多年的下滑趋势，分析认为AI编程工具如Claude Code的普及是主要驱动力。",
+        "summary": "据Sensor Tower数据，苹果App Store在2026年第一季度新应用数量同比增长84%，而在2016至2024年间新应用数量曾下降48%。这一激增被归因于AI辅助编程工具（Vibe Coding）降低了应用开发门槛，使更多人能够创建和发布应用。",
         "rating": "S",
         "score": 95,
-        "type": "financial",
+        "type": "industry",
         "typeName": "行业动态",
         "expansion": "AI编程工具正在降低应用开发门槛，可能引发移动应用生态的供给侧爆发，同时加剧应用商店竞争。",
         "entities": [
-          "Claude",
+          "App Store",
           "Sensor Tower",
           "苹果"
         ],
@@ -6389,9 +6398,9 @@
         "url": "https://www.theinformation.com/articles/vibe-coding-effect-apples-app-store-saw-84-jump-new-apps-quarter",
         "event_id": null,
         "original_content": "For much of the last decade, the number of new apps launching in Apple’s App Store each year went into a tailspin, falling a whopping 48% between 2016 and 2024, according to data from research firm Sensor Tower. At least that was the case until last year. In 2025, the number of new apps that showed up in the App Store globally suddenly exploded, growing 30% to nearly 600,000 compared to 2024, according to Sensor Tower. And the momentum seems to be accelerating. In the first quarter of 2026, new apps published to the App Store globally were up 84% to 235,800 from the same period a year earlier. The likely culprit behind the app explosion is the rapid rise of vibe coding tools, powerful AI-assisted coding apps. The best known of those apps is Anthropic’s Claude Code, released as a limited preview in February last year and more broadly in May. OpenAI’s own AI coding tool, Codex, came out as a limited preview in May last year and more broadly in October.",
-        "chinese_title": "Vibe Coding效应显现：苹果App Store一季度新应用激增84%",
+        "chinese_title": "Vibe Coding效应？苹果App Store一季度新应用数量激增84%",
         "grade": "S",
-        "extension": "这一趋势可能持续推动低代码/无代码开发工具市场增长，改变应用开发行业生态，同时为苹果服务收入带来新的增长动力。"
+        "extension": "AI编程工具对应用生态的推动作用可能重塑移动应用市场的竞争格局，传统依赖专业开发团队的应用领域可能面临来自个人开发者的新挑战。"
       }
     ],
     "2026-04-05": [
@@ -6399,16 +6408,14 @@
         "id": "1458bfa92a489f6947334432d7ef7c98",
         "title": "Target更新用户条款：AI购物助手出错，损失由消费者承担",
         "original_title": "Target Warns That If Its AI Shopping Agent Makes an Expensive Mistake, You’ll Have to Pay for It",
-        "summary": "Target更新服务条款，明确其基于Gemini的AI购物助手造成的错误购买或额外费用由消费者承担，引发对零售巨头AI责任归属问题的关注和质疑。",
+        "summary": "Target在其AI购物助手的服务条款中声明，如果AI代理犯错导致用户被收取错误费用，用户需要自行承担。这反映了零售巨头在推广AI服务的同时规避责任的趋势，凸显了AI应用中的双重标准问题。",
         "rating": "A+",
-        "score": 86,
+        "score": 84,
         "type": "safety",
         "typeName": "行业动态",
         "expansion": "此事件可能引发零售行业AI责任条款的连锁反应，其他零售商或跟进类似免责条款；同时可能推动监管机构对AI代理服务的消费者保护立法。",
         "entities": [
-          "Gemini",
-          "Target",
-          "谷歌"
+          "Target"
         ],
         "sourceLinks": [
           {
@@ -6423,9 +6430,9 @@
         "url": "https://futurism.com/artificial-intelligence/target-ai-agent-tos",
         "event_id": null,
         "original_content": "Big box chains have proudly embraced artificial intelligence — but don’t expect them to help when their AI assistants charge your card for hallucinated garbage. That trend, in which retail giants force their AI initiatives on consumers while distancing themselves from its failures, is growing. While that attitude certainly isn’t unique to big box stores, it’s increasingly becoming their default setting, revealing the ridiculous double standard baked into the AI boom. Target is the latest to jump on the bandwagon. According to Business Insider , the Minnesota-based retail corporation recently updated its terms and conditions to make it clear that customers — not the company — would be responsible for the failures and hallucinations of its upcoming AI shopping assistant. That virtual buddy, which runs on Google’s Gemini, is supposed to help online shoppers finish Target runs on their users’ behalf. Under the new terms, if a customer uses the Gemini agent to do their shopping for them, any transaction performed by the AI would be “considered transactions authorized by you.” Translation: any mistake by the AI agent — whether it buys the wrong item entirely , or a super expensive version of the right one without your consent — will come out of your pocket. “You are responsible for reviewing activity performed by your Agentic Commerce Agent and for promptly notifying the Agentic Commerce Agent and Target of any activity you believe is unauthorized or outside the scope of permissions you approved,” the new terms state. If that weren’t enough proof that Target doesn’t stand by its product, it gets more explicit: “Target does not purport to guarantee that an Agentic Commerce Agent will act exactly as you intend in all circumstances. You should review orders, account activity, and settings regularly.” Speaking to BI , a Target spokesperson confirmed that the updated language is a nod to the coming Gemini assistant, but caveated that customers are still welcome to try to return their purchases, same as ever. The company joins other retail giants like Walmart in rolling out AI shopping agents that it openly distrusts. Walmart, which recently outraged consumers with AI-powered price gouging , also updated its terms of use to cover for mistakes made by its AI shopping assistant, Sparky. “Due to the nature of Generative AI, the information, responses and recommendations generated for you and other users through Generative AI Features… may not be accurate, complete or up-to-date and may be misleading or contain errors and omissions, or the Generative AI Features may misunderstand the Content that you input… and may be responding to a different question than asked,” the company’s new policy states . “None of these sources have been verified by Walmart.” More on AI agents: Watchdog Issues Grim Warning About Letting AI Run Your Life The post Target Warns That If Its AI Shopping Agent Makes an Expensive Mistake, You’ll Have to Pay for It appeared first on Futurism .",
-        "chinese_title": "Target更新服务条款：AI购物助手出错导致损失由消费者承担",
-        "grade": "A+",
-        "extension": "此类条款可能推动监管机构出台AI Agent责任认定相关法规，同时影响消费者对AI购物助手的信任度和采用意愿。"
+        "chinese_title": "Target警告用户：其AI购物代理犯错产生的费用需用户自行承担",
+        "grade": "A",
+        "extension": "AI服务责任归属问题可能成为消费者权益保护的新战场，推动立法机构制定AI服务提供商的最低责任标准。"
       },
       {
         "id": "539ceb99fd233fbb324bb2389791d481",
@@ -19973,6 +19980,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-06T18:18:32.943912",
+  "last_updated": "2026-04-06T18:19:18.124941",
   "total_news": 654
 }
