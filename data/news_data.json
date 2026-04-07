@@ -2,6 +2,62 @@
   "news": {
     "2026-04-08": [
       {
+        "id": "7e26d1699f96677dee435ed2680f068a",
+        "title": "微软云高管Eric Boyd加入Anthropic任基础设施负责人",
+        "original_title": "Microsoft Cloud Exec Joins Anthropic as Head of Infrastructure",
+        "summary": "在微软工作18年以上的高管Eric Boyd加入Anthropic，负责基础设施工程，他曾领导托管OpenAI和Anthropic模型所需的软硬件工程。",
+        "rating": "A",
+        "score": 81,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "人才从云厂商流向AI公司，反映AI行业对基础设施人才的激烈竞争。",
+        "entities": [
+          "Anthropic",
+          "Eric Boyd",
+          "微软"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/microsoft-cloud-exec-joins-anthropic-head-infrastructure"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322041",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/microsoft-cloud-exec-joins-anthropic-head-infrastructure",
+        "event_id": null
+      },
+      {
+        "id": "8f84714ca4f4d25fdcda4a5eb7cf49ac",
+        "title": "Anthropic扩大与谷歌和博通的算力协议",
+        "original_title": "Anthropic ups compute deal with Google and Broadcom amid skyrocketing demand",
+        "summary": "Anthropic扩大与谷歌和博通的算力协议，公司年化收入已飙升至300亿美元。",
+        "rating": "A+",
+        "score": 85,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "Anthropic快速增长推动算力需求激增，可能影响AI芯片供应链格局。",
+        "entities": [
+          "Anthropic",
+          "Broadcom",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322055",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/",
+        "event_id": null
+      },
+      {
         "id": "2e5a7e96f7fcb54dace0d5bbaf612cbb",
         "title": "Anthropic称Mythos发现数千个高危漏洞涵盖所有主流系统",
         "original_title": "Anthropic says Mythos Preview is a general-purpose model and found thousands of high-severity vulnerabilities, including some in every major OS and web browser (Anthropic)",
@@ -26,7 +82,10 @@
         "published_at": "2026-04-08T06:31:29.622175",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260407/p43#a260407p43",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic表示Mythos Preview是通用模型，发现了数千个高危漏洞，包括每个主流操作系统和网页浏览器中的漏洞。",
+        "chinese_title": "Anthropic称Mythos发现数千个高危漏洞涵盖所有主流系统",
+        "grade": "S"
       },
       {
         "id": "4a07e554f101029ddceed4739c956f53",
@@ -56,7 +115,10 @@
         "published_at": "2026-04-08T06:31:29.622187",
         "source": "The Information",
         "url": "https://www.theinformation.com/briefings/anthropic-announces-ai-cybersecurity-project-powered-claude-mythos-model",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic宣布将向40多家组织提供未发布的Claude Mythos模型访问权限，包括苹果、摩根大通和Linux基金会，用于测试软件安全漏洞。",
+        "chinese_title": "Anthropic向40多家组织开放Mythos模型用于安全测试",
+        "grade": "S"
       },
       {
         "id": "1efdb5944d276bda31c886bdef986fb1",
@@ -84,7 +146,10 @@
         "published_at": "2026-04-08T06:31:29.622197",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260407/p41#a260407p41",
-        "event_id": null
+        "event_id": null,
+        "original_content": "《纽约时报》采访Anthropic高管，解释为何Claude Mythos Preview是网络安全的转折点，以及因滥用担忧而不公开发布的原因。",
+        "chinese_title": "Anthropic高管谈为何Mythos是网络安全转折点",
+        "grade": "S"
       },
       {
         "id": "0d2c9ed664adb37186f1edc08cfc86ee",
@@ -112,7 +177,10 @@
         "published_at": "2026-04-08T06:31:29.622215",
         "source": "VentureBeat",
         "url": "https://venturebeat.com/data/amazon-s3-files-gives-ai-agents-a-native-file-system-workspace-ending-the",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Amazon S3 Files通过将S3存储桶直接挂载到AI智能体的本地环境，解决了对象存储与文件系统之间的分裂问题，无需数据迁移。",
+        "chinese_title": "AWS推出S3 Files为AI智能体提供原生文件系统工作空间",
+        "grade": "S"
       },
       {
         "id": "ba1d78fa688ded9fc971679b23093837",
@@ -141,7 +209,10 @@
         "published_at": "2026-04-08T06:31:29.622233",
         "source": "The Information",
         "url": "https://www.theinformation.com/briefings/aws-ceo-says-claude-code-replace-saas",
-        "event_id": null
+        "event_id": null,
+        "original_content": "AWS CEO Matt Garman淡化Anthropic的Claude Code工具可能削弱现有企业软件公司的想法，但警告如果传统软件公司不拥抱AI将面临风险。",
+        "chinese_title": "AWS CEO称Claude Code不会取代SaaS",
+        "grade": "A+"
       },
       {
         "id": "f0485f88819b25a454dd815753ab6a19",
@@ -171,7 +242,10 @@
         "published_at": "2026-04-08T06:31:29.622244",
         "source": "Feed: Artificial Intelligence Latest",
         "url": "https://www.wired.com/story/anthropic-mythos-preview-project-glasswing/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic的Project Glasswing将汇集苹果、谷歌等45家以上组织，使用Claude Mythos Preview模型测试AI网络安全能力。",
+        "chinese_title": "Anthropic联合竞争对手防止AI入侵一切",
+        "grade": "S"
       },
       {
         "id": "f0417351e003a937c878ca0fe256266f",
@@ -198,7 +272,10 @@
         "published_at": "2026-04-08T06:31:29.622254",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/04/07/firmus-the-southgate-ai-datacenter-builder-backed-by-nvidia-hits-5-5b-valuation/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "英伟达支持的亚洲AI数据中心提供商Firmus在六个月内累计融资13.5亿美元，估值达到55亿美元。",
+        "chinese_title": "英伟达支持的AI数据中心公司Firmus估值达55亿美元",
+        "grade": "A"
       },
       {
         "id": "00b099876aeeff97cbc26b634b1daf8b",
@@ -230,7 +307,10 @@
         "published_at": "2026-04-08T06:31:29.622264",
         "source": "Techmeme (apple)",
         "url": "http://www.techmeme.com/260407/p39#a260407p39",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic的Project Glasswing启动合作伙伴包括AWS、苹果、博通、思科、CrowdStrike、谷歌、微软、英伟达和Palo Alto Networks等。",
+        "chinese_title": "Project Glasswing合作伙伴包括AWS、苹果、谷歌、微软、英伟达等",
+        "grade": "S"
       },
       {
         "id": "7602b6dd36725b4e30af81f1c74ccfdb",
@@ -257,7 +337,10 @@
         "published_at": "2026-04-08T06:31:29.622272",
         "source": "Hacker News",
         "url": "https://red.anthropic.com/2026/mythos-preview/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic发布技术文档评估Claude Mythos Preview的网络安全能力，详细介绍模型发现和利用漏洞的性能。",
+        "chinese_title": "评估Claude Mythos Preview的网络安全能力",
+        "grade": "A+"
       },
       {
         "id": "ac8002cbcd7ddf20fbf875665203e071",
@@ -285,7 +368,10 @@
         "published_at": "2026-04-08T06:31:29.622281",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260407/p38#a260407p38",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic宣布Project Glasswing网络安全计划，将使用Claude Mythos Preview模型帮助发现和修复软件漏洞。",
+        "chinese_title": "Anthropic宣布Project Glasswing网络安全计划",
+        "grade": "S"
       },
       {
         "id": "7f6805072591004a45b3e5127aeb2a25",
@@ -312,7 +398,10 @@
         "published_at": "2026-04-08T06:31:29.622304",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260407/p36#a260407p36",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic将向40多家维护关键软件的组织提供Claude Mythos Preview，但不计划向公众开放。",
+        "chinese_title": "Anthropic将向40多家关键软件维护组织提供Mythos",
+        "grade": "S"
       },
       {
         "id": "1942500e573a2734041a3589d9be7c9f",
@@ -341,7 +430,10 @@
         "published_at": "2026-04-08T06:31:29.622311",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/04/07/intel-signs-on-to-elon-musks-terafab-chips-project/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "英特尔将加入SpaceX和特斯拉，参与在德克萨斯州建设新美国半导体工厂的努力，尽管其贡献范围尚不清楚。",
+        "chinese_title": "英特尔加入马斯克Terafab芯片项目",
+        "grade": "A"
       },
       {
         "id": "4e8ae8279ce378341e32505344362fd9",
@@ -369,7 +461,10 @@
         "published_at": "2026-04-08T06:31:29.622319",
         "source": "VentureBeat",
         "url": "https://venturebeat.com/technology/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic宣布Project Glasswing，将未发布的前沿AI模型Claude Mythos Preview与12家科技金融公司联盟配对，在全球关键基础设施中寻找和修补软件漏洞。",
+        "chinese_title": "Anthropic称最强AI网络安全模型过于危险不宜公开发布",
+        "grade": "S"
       },
       {
         "id": "fa4dc01410420fb2a60c6b7599510a86",
@@ -396,7 +491,10 @@
         "published_at": "2026-04-08T06:31:29.622326",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "新模型将被少数高知名度公司用于防御性网络安全工作。",
+        "chinese_title": "Anthropic在网络安全计划中预览强大新AI模型Mythos",
+        "grade": "A"
       },
       {
         "id": "6f1c67c02048b4cad3fec0d5c812f092",
@@ -423,7 +521,10 @@
         "published_at": "2026-04-08T06:31:29.622339",
         "source": "Futurism",
         "url": "https://futurism.com/artificial-intelligence/ai-college-students-homogenized",
-        "event_id": null
+        "event_id": null,
+        "original_content": "耶鲁大学学生反映，由于将思考外包给AI，课堂讨论变得单调可预测，学生成为鹦鹉学舌的空容器。",
+        "chinese_title": "大学生因依赖AI而失去课堂讨论能力",
+        "grade": "A"
       },
       {
         "id": "b06b5b867694242f54de3b1768079d4e",
@@ -450,7 +551,10 @@
         "published_at": "2026-04-08T06:31:29.622346",
         "source": "TechCrunch (apple)",
         "url": "https://techcrunch.com/2026/04/07/apples-foldable-iphone-is-on-track-to-launch-in-september-report-says/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "该消息继日经亚洲周二报道称由于工程测试阶段挑战，苹果折叠屏iPhone可能推迟后传出。",
+        "chinese_title": "报道称苹果折叠屏iPhone有望9月发布",
+        "grade": "A"
       },
       {
         "id": "ee5762d72ae466dd606fec55a47d4097",
@@ -478,7 +582,10 @@
         "published_at": "2026-04-08T06:31:29.622354",
         "source": "The Next Platform",
         "url": "https://www.nextplatform.com/ai/2026/04/07/broadcom-and-google-benefit-mightily-from-anthropics-meteoric-growth/5214732",
-        "event_id": null
+        "event_id": null,
+        "original_content": "文章分析博通和谷歌如何从Anthropic的快速增长中获益，包括芯片供应和云服务合作。",
+        "chinese_title": "博通和谷歌从Anthropic快速增长中获益颇丰",
+        "grade": "B"
       },
       {
         "id": "15afe0191a28fb2ba846ef25f8bca732",
@@ -506,7 +613,10 @@
         "published_at": "2026-04-08T06:31:29.622361",
         "source": "The Information",
         "url": "https://www.theinformation.com/articles/microsofts-github-sees-booming-traffic-outages-ai-agents-flood-platform",
-        "event_id": null
+        "event_id": null,
+        "original_content": "开发者使用AI智能体生成比以往更多的代码，导致微软旗下GitHub流量激增，服务器承压出现宕机。",
+        "chinese_title": "AI智能体涌入导致GitHub流量激增和宕机",
+        "grade": "S"
       },
       {
         "id": "96d84820d663eeb5213227575fc7ed34",
@@ -534,7 +644,10 @@
         "published_at": "2026-04-08T06:31:29.622369",
         "source": "Techmeme (apple)",
         "url": "http://www.techmeme.com/260407/p35#a260407p35",
-        "event_id": null
+        "event_id": null,
+        "original_content": "彭博社Mark Gurman称，苹果首款折叠屏手机有望在今年正常iPhone发布周期推出，反驳了生产延迟的报道。",
+        "chinese_title": "消息人士称苹果折叠屏iPhone将于9月与iPhone 18 Pro一同发布",
+        "grade": "A"
       },
       {
         "id": "da70bd6159fbc3bf59fd96ddf07b35fb",
@@ -562,7 +675,10 @@
         "published_at": "2026-04-08T06:31:29.622376",
         "source": "Futurism",
         "url": "https://futurism.com/advanced-transport/jp-morgan-tesla-stock-crash-60-percent",
-        "event_id": null
+        "event_id": null,
+        "original_content": "摩根大通分析师警告，特斯拉股价可能暴跌60%，因公司核心业务持续停滞，向机器人出租车和人形机器人转型存在执行风险。",
+        "chinese_title": "摩根大通担忧特斯拉股价可能暴跌60%",
+        "grade": "A"
       },
       {
         "id": "016cf41f8e3adb7b0feb720e5f0836bf",
@@ -590,7 +706,10 @@
         "published_at": "2026-04-08T06:31:29.622384",
         "source": "VentureBeat",
         "url": "https://venturebeat.com/technology/llm-referred-traffic-converts-at-30-40-and-most-enterprises-arent-optimizing",
-        "event_id": null
+        "event_id": null,
+        "original_content": "研究显示，AI智能体推荐流量的转化率高达30-40%，远超传统SEO和付费社交，但大多数企业尚未针对答案引擎优化内容。",
+        "chinese_title": "LLM推荐流量转化率达30-40%但多数企业未优化",
+        "grade": "S"
       },
       {
         "id": "027376ee53ee4615698ae5619a65ac38",
@@ -618,7 +737,10 @@
         "published_at": "2026-04-08T06:31:29.622399",
         "source": "AI – Ars Technica",
         "url": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "《纽约时报》分析发现Google AI Overviews准确率约90%，意味着每小时产生数十万错误答案。",
+        "chinese_title": "测试显示Google AI Overviews每小时产生数百万错误",
+        "grade": "A+"
       },
       {
         "id": "ee93e83af7df8767d128bbfd9f6fd9a2",
@@ -646,7 +768,40 @@
         "published_at": "2026-04-08T06:31:29.622407",
         "source": "THE DECODER",
         "url": "https://the-decoder.com/microsofts-bing-team-open-sources-harrier-embedding-model/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "微软Bing团队开源Harrier嵌入模型，在多语言MTEB v2基准测试中排名第一，支持100多种语言。",
+        "chinese_title": "微软Bing团队开源Harrier嵌入模型",
+        "grade": "A"
+      },
+      {
+        "id": "68afc1d1a2e2316870c846b64bf554b6",
+        "title": "谷歌开源实验性智能体编排测试平台Scion",
+        "original_title": "Google open-sources experimental agent orchestration testbed Scion",
+        "summary": "谷歌开源Scion，一个用于测试AI智能体编排的实验性平台。",
+        "rating": "A",
+        "score": 75,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "谷歌在AI智能体基础设施领域的开源贡献，可能推动智能体生态发展。",
+        "entities": [
+          "Scion",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622414",
+        "source": "Hacker News",
+        "url": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/",
+        "event_id": null,
+        "original_content": "谷歌开源Scion，一个用于测试AI智能体编排的实验性平台。",
+        "chinese_title": "谷歌开源实验性智能体编排测试平台Scion",
+        "grade": "A"
       },
       {
         "id": "cbb63c31eda4a3641d358aca5a78f22f",
@@ -1448,46 +1603,518 @@
     ],
     "2026-04-07": [
       {
-        "id": "68afc1d1a2e2316870c846b64bf554b6",
-        "title": "谷歌开源实验性智能体编排测试平台Scion",
-        "original_title": "Google open-sources experimental agent orchestration testbed Scion",
-        "summary": "谷歌开源Scion，一个用于测试AI智能体编排的实验性平台。",
-        "rating": "A",
-        "score": 75,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "谷歌在AI智能体基础设施领域的开源贡献，可能推动智能体生态发展。",
+        "id": "2e15937d3dd5b3179c071785b1dfeacb",
+        "title": "开发者分享家中的AI机器人体验",
+        "original_title": "An AI robot in my home",
+        "summary": "开发者分享在家中部署AI机器人的经历和观察，探讨AI机器人在家庭环境中的应用现状。",
+        "rating": "B",
+        "score": 68,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "反映AI机器人进入消费级市场的趋势，可能影响智能家居和机器人行业发展。",
         "entities": [
-          "Scion",
-          "谷歌"
+          "Ai机器人"
         ],
         "sourceLinks": [
           {
             "name": "Hacker News",
-            "url": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/"
+            "url": "https://allevato.me/2026/04/07/an-ai-robot-in-my-home"
           }
         ],
         "sources": 1,
-        "timestamp": 1775601089,
-        "published_at": "2026-04-08T06:31:29.622414",
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322017",
         "source": "Hacker News",
-        "url": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/",
+        "url": "https://allevato.me/2026/04/07/an-ai-robot-in-my-home",
+        "event_id": null
+      },
+      {
+        "id": "6b893adb0555f80a7bde581643148c62",
+        "title": "英特尔将帮助马斯克建设Terafab AI芯片工厂",
+        "original_title": "Intel will help build Elon Musk&rsquo;s Terafab AI chip factory",
+        "summary": "英特尔加入马斯克在德克萨斯州的Terafab AI芯片项目，为SpaceX和特斯拉供应AI芯片。",
+        "rating": "A+",
+        "score": 86,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "马斯克布局AI芯片自主生产，可能影响英伟达等芯片供应商的市场地位。",
+        "entities": [
+          "Intel",
+          "SpaceX",
+          "特斯拉",
+          "马斯克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/transportation/907976/elon-musk-terafab-intel-ai-chip-spacex-tesla"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322076",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/transportation/907976/elon-musk-terafab-intel-ai-chip-spacex-tesla",
+        "event_id": null
+      },
+      {
+        "id": "bac3a9364e95d5835eb15629814e8497",
+        "title": "英特尔CEO陈立武期待马斯克重塑半导体行业",
+        "original_title": "Intel joins Elon Musk's TeraFab project &mdash; 'Intel is proud to join the Terafab project with SpaceX, xAI, and Tesla to help refactor silicon fab technology'",
+        "summary": "英特尔CEO陈立武表示期待马斯克通过Terafab项目重新构想半导体行业。",
+        "rating": "A",
+        "score": 82,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "英特尔新领导层对马斯克项目的积极态度，可能预示英特尔战略方向调整。",
+        "entities": [
+          "Intel",
+          "Lip-Bu Tan",
+          "马斯克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/semiconductors/intel-joins-elon-musks-terafab-project-intel-is-proud-to-join-the-terafab-project-with-spacex-xai-and-tesla-to-help-refactor-silicon-fab-technology"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322095",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/intel-joins-elon-musks-terafab-project-intel-is-proud-to-join-the-terafab-project-with-spacex-xai-and-tesla-to-help-refactor-silicon-fab-technology",
+        "event_id": null
+      },
+      {
+        "id": "00c26fe07447062ba54380c5417c4de1",
+        "title": "Google Maps可用AI为照片生成标题",
+        "original_title": "Google Maps can now write captions for your photos using AI",
+        "summary": "谷歌推出新功能，Gemini可为Google Maps用户分享的照片和视频自动生成标题。",
+        "rating": "B",
+        "score": 71,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI功能在地图产品中的集成，提升用户内容创作体验。",
+        "entities": [
+          "Gemini",
+          "Google Maps",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/07/google-maps-can-now-write-captions-for-your-photos-using-ai/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322113",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/07/google-maps-can-now-write-captions-for-your-photos-using-ai/",
+        "event_id": null
+      },
+      {
+        "id": "68c38a581b5b703de4b4163d4d954dde",
+        "title": "ParetoBandit：非平稳LLM服务的预算自适应路由",
+        "original_title": "ParetoBandit: Budget-Paced Adaptive Routing for Non-Stationary LLM Serving",
+        "summary": "研究提出ParetoBandit方法，用于非平稳环境下LLM服务的预算自适应路由优化。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "LLM服务优化技术研究，对AI基础设施效率提升有参考价值。",
+        "entities": [
+          "大模型",
+          "机器学习"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sey2e7/paretobandit_budgetpaced_adaptive_routing_for/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322123",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sey2e7/paretobandit_budgetpaced_adaptive_routing_for/",
+        "event_id": null
+      },
+      {
+        "id": "01f67100861ee47e2ee24dc78834c7cc",
+        "title": "MemPalace基准测试声明遭质疑",
+        "original_title": "[D] MemPalace claims 100% on LoCoMo and a &quot;perfect score on LongMemEval.&quot; Its own BENCHMARKS.md documents why neither is meaningful.",
+        "summary": "开源项目MemPalace声称在LoCoMo和LongMemEval上获得满分，但社区发现其自身文档揭示了测试方法的问题。",
+        "rating": "B",
+        "score": 71,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "AI基准测试方法论争议，反映社区对测试标准严谨性的关注。",
+        "entities": [
+          "Locomo",
+          "Longmemeval",
+          "Mempalace"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1seunbr/d_mempalace_claims_100_on_locomo_and_a_perfect/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322141",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1seunbr/d_mempalace_claims_100_on_locomo_and_a_perfect/",
+        "event_id": null
+      },
+      {
+        "id": "c5c717800e66337249ac1759fccfbfa1",
+        "title": "机器学习社区是否正在远离数学",
+        "original_title": "[D] thoughts on current community moving away from heavy math?",
+        "summary": "社区讨论当前机器学习研究从数学密集型向实证和架构设计转变的趋势。",
+        "rating": "B",
+        "score": 69,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "反映AI研究范式的演变，可能影响未来人才培养和研究方向。",
+        "entities": [
+          "Ai研究",
+          "机器学习"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sesq0s/d_thoughts_on_current_community_moving_away_from/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322149",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sesq0s/d_thoughts_on_current_community_moving_away_from/",
+        "event_id": null
+      },
+      {
+        "id": "603a619aa3f9acdd05d96b42bf51cae2",
+        "title": "TriAttention：长上下文推理的高效KV缓存压缩",
+        "original_title": "[R] TriAttention: Efficient KV Cache Compression for Long-Context Reasoning",
+        "summary": "研究提出TriAttention方法，用于长上下文推理中的KV缓存高效压缩。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "LLM推理优化技术，对降低长上下文处理成本有重要意义。",
+        "entities": [
+          "Kv Cache",
+          "Triattention",
+          "大模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1serby2/r_triattention_efficient_kv_cache_compression_for/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322159",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1serby2/r_triattention_efficient_kv_cache_compression_for/",
+        "event_id": null
+      },
+      {
+        "id": "1d5e1dcece9972b17c55d6c4eb79b81e",
+        "title": "开源GeForce Now客户端移除追踪和遥测",
+        "original_title": "GitHub user creates open-source Nvidia GeForce Now client alternative — removes tracking, telemetry, and AFK limitations",
+        "summary": "GitHub用户发布开源GeForce Now客户端，允许玩家连接英伟达服务而不被追踪。",
+        "rating": "B",
+        "score": 73,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "开源社区对商业云游戏服务的替代方案，反映用户对隐私的关注。",
+        "entities": [
+          "Geforce Now",
+          "开源",
+          "英伟达"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/video-games/cloud-gaming/github-user-creates-open-source-nvidia-geforce-now-client-alternative-removes-tracking-telemetry-and-afk-limitations"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322168",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/video-games/cloud-gaming/github-user-creates-open-source-nvidia-geforce-now-client-alternative-removes-tracking-telemetry-and-afk-limitations",
+        "event_id": null
+      },
+      {
+        "id": "25b6c35be2126a68921e01fa994c000d",
+        "title": "Claude Code将用户锁定数小时",
+        "original_title": "Claude Code is locking people out for hours",
+        "summary": "用户反馈Claude Code出现技术问题，导致用户被锁定无法使用数小时。",
+        "rating": "A",
+        "score": 83,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Claude Code稳定性问题，可能影响用户对该工具的信任度。",
+        "entities": [
+          "Anthropic",
+          "Claude Code"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/anthropics/claude-code/issues/44257"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322176",
+        "source": "Hacker News",
+        "url": "https://github.com/anthropics/claude-code/issues/44257",
+        "event_id": null
+      },
+      {
+        "id": "b5840ecaa3c449fc7f5ee5027f08040c",
+        "title": "AI-RAN重新定义企业边缘智能和自主性",
+        "original_title": "AI-RAN is redefining enterprise edge intelligence and autonomy",
+        "summary": "AI-RAN将无线网络转变为活跃计算层，成为传感器、计算结构和物理操作控制平面的统一体。",
+        "rating": "A",
+        "score": 84,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "5G/6G与AI融合的新范式，可能改变企业边缘计算和物联网应用。",
+        "entities": [
+          "5G",
+          "Ai-Ran",
+          "Booz Allen"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/infrastructure/ai-ran-is-redefining-enterprise-edge-intelligence-and-autonomy"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322183",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/infrastructure/ai-ran-is-redefining-enterprise-edge-intelligence-and-autonomy",
+        "event_id": null
+      },
+      {
+        "id": "94989c46b3d005a7a85bc81c2c1f3aaa",
+        "title": "企业AI优势转向数据治理和管控平台",
+        "original_title": "As models converge, the enterprise edge in AI shifts to governed data and the platforms that control it",
+        "summary": "随着前沿模型趋同，企业AI竞争优势从模型本身转向其能安全访问的数据和管控平台。",
+        "rating": "A+",
+        "score": 87,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "企业AI战略转变，数据治理平台可能成为新的竞争焦点。",
+        "entities": [
+          "Box",
+          "企业Ai",
+          "数据治理"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/data/as-models-converge-the-enterprise-edge-in-ai-shifts-to-governed-data-and-the"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322191",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/data/as-models-converge-the-enterprise-edge-in-ai-shifts-to-governed-data-and-the",
+        "event_id": null
+      },
+      {
+        "id": "e0c4f65c0fd032cb9ce8eb0a64c6faf0",
+        "title": "英特尔确认加入SpaceX和特斯拉Terafab项目",
+        "original_title": "Intel Says It’s Joining SpaceX and Tesla ‘Terafab’ Project",
+        "summary": "英特尔确认参与马斯克公司领导的芯片制造项目，但未提供合作细节或时间表。",
+        "rating": "A",
+        "score": 78,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "英特尔转型期的重要合作，可能影响其代工业务发展方向。",
+        "entities": [
+          "Intel",
+          "SpaceX",
+          "特斯拉",
+          "马斯克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/intel-says-joining-spacex-tesla-terafab-project"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322207",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/intel-says-joining-spacex-tesla-terafab-project",
+        "event_id": null
+      },
+      {
+        "id": "bce052edd74187f75a955cfdcbeb67b7",
+        "title": "马斯克称成功是将他在特斯拉的工作减到每周一天",
+        "original_title": "Elon Musk Secretly Shared His Number One Priority at Tesla and It Really Says It All",
+        "summary": "特斯拉前总裁透露，马斯克曾表示成功意味着将特斯拉工作减到每周一天，以便专注于火箭。",
+        "rating": "A+",
+        "score": 88,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "揭示马斯克对特斯拉的真实态度，可能影响投资者对特斯拉领导层稳定性的看法。",
+        "entities": [
+          "Jon Mcneill",
+          "特斯拉",
+          "马斯克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/elon-musk-tesla-mcneill"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322231",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/elon-musk-tesla-mcneill",
+        "event_id": null
+      },
+      {
+        "id": "e6cdf1048aa94a3544580a659ec330a6",
+        "title": "Anthropic年化收入突破300亿美元",
+        "original_title": "Anthropic’s Compute Crunch Strikes Again",
+        "summary": "Anthropic年化收入突破300亿美元，自2月底以来增长58%，可能已超过OpenAI的250亿美元。",
+        "rating": "S",
+        "score": 99,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "Anthropic快速增长超越OpenAI，可能改变AI行业竞争格局。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/anthropics-compute-crunch-strikes"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322239",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/anthropics-compute-crunch-strikes",
+        "event_id": null
+      },
+      {
+        "id": "c945a92ad83405b5325bdd39af2450a4",
+        "title": "华硕Zenbook A16评测：骁龙X2 Elite芯片强劲但整机一般",
+        "original_title": "Asus Zenbook A16 review: Snapdragon X2 Elite Extreme is a strong chip in a so-so package",
+        "summary": "华硕Zenbook A16搭载高通骁龙X2 Elite Extreme芯片，但在做工质量和电池续航方面有所妥协。",
+        "rating": "B",
+        "score": 68,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "ARM架构Windows笔记本评测，反映高通在PC芯片市场的进展。",
+        "entities": [
+          "Asus",
+          "Snapdragon",
+          "高通"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/laptops/ultrabooks-ultraportables/asus-zenbook-a16-snapdragon-x2-elite-review"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322247",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/laptops/ultrabooks-ultraportables/asus-zenbook-a16-snapdragon-x2-elite-review",
+        "event_id": null
+      },
+      {
+        "id": "c91027c4a96ed8337c76e109b6280dbd",
+        "title": "AI原生网络公司Aria Networks融资1.25亿美元",
+        "original_title": "Aria Networks, which builds what it calls the world's first AI-native network to work with any AI chip, raised a $125M Series A from Sutter Hill and others (Juby Babu/Reuters)",
+        "summary": "Aria Networks开发据称全球首个可与任何AI芯片配合的AI原生网络，完成1.25亿美元A轮融资。",
+        "rating": "A",
+        "score": 76,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "AI网络基础设施初创公司获得大额融资，反映AI芯片互联需求增长。",
+        "entities": [
+          "Aria Networks",
+          "Sutter Hill"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260407/p27#a260407p27"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322255",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260407/p27#a260407p27",
+        "event_id": null
+      },
+      {
+        "id": "ae29c2a31290c033702dfb4316f6cf14",
+        "title": "Block推出Managerbot主动式AI代理",
+        "original_title": "Block introduces Managerbot, a proactive Square AI agent and the clearest proof point yet for Jack Dorsey’s AI bet",
+        "summary": "Block推出Managerbot，嵌入Square平台的主动式AI代理，可监控商家业务、识别问题并提出解决方案。",
+        "rating": "A+",
+        "score": 88,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI代理在企业服务中的应用，可能改变小企业管理方式。",
+        "entities": [
+          "Block",
+          "Jack Dorsey",
+          "Managerbot",
+          "Square"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/data/block-introduces-managerbot-a-proactive-square-ai-agent-and-the-clearest"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601370,
+        "published_at": "2026-04-08T06:36:10.322299",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/data/block-introduces-managerbot-a-proactive-square-ai-agent-and-the-clearest",
         "event_id": null
       },
       {
         "id": "aa15b7f4817f4d5faf6d5a1f071aba10",
         "title": "皮查伊深度访谈：Google如何在AI竞赛中重整旗鼓",
         "original_title": "Q&A with Sundar Pichai on the history of Google and AI, speed and Search, Google's AI comeback, bottlenecks, capital allocation, how Google works, and more (John Collison/Cheeky Pint)",
-        "summary": "Google CEO Sundar Pichai在播客中回顾了Google与AI的历史渊源，讨论了搜索速度与AI整合、公司资源分配策略以及Google的运作方式，展现了Google在AI竞争中的 resurgence。",
+        "summary": "谷歌CEO Sundar Pichai在访谈中讨论谷歌与AI的历史、搜索速度、谷歌AI复兴、瓶颈、资本配置等话题。",
         "rating": "A+",
-        "score": 87,
+        "score": 79,
         "type": "opinion",
         "typeName": "观点访谈",
         "expansion": "可延伸关注Google AI战略对搜索广告业务的影响，以及与其他AI巨头的产品竞争态势",
         "entities": [
           "Alphabet",
-          "Elad Gil",
-          "John Collison",
           "桑达尔·皮查伊",
           "谷歌"
         ],
@@ -1503,9 +2130,10 @@
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260407/p26#a260407p26",
         "event_id": null,
-        "original_content": "Google CEO Sundar Pichai在播客中回顾了Google与AI的历史渊源，讨论了搜索速度与AI整合、公司资源分配策略以及Google的运作方式，展现了Google在AI竞争中的 resurgence。",
-        "chinese_title": "皮查伊深度访谈：Google如何在AI竞赛中重整旗鼓",
-        "grade": "A+"
+        "original_content": "John Collison / Cheeky Pint : Q&amp;A with Sundar Pichai on the history of Google and AI, speed and Search, Google's AI comeback, bottlenecks, capital allocation, how Google works, and more — Sundar Pichai is the CEO of Google and Alphabet. He sits down with John and Elad Gil to discuss Google's resurgence in the AI race …",
+        "chinese_title": "皮查伊谈谷歌AI历史、搜索速度、AI复兴等",
+        "grade": "A",
+        "extension": "谷歌CEO对AI竞争格局的公开回应，可能影响市场对谷歌AI战略的看法。"
       },
       {
         "id": "9646e2061b219352a9fe81ad8354c955",
@@ -1543,14 +2171,15 @@
         "id": "c24fb68908b0921d9383635a2be58c8d",
         "title": "研究揭示AI代理可相互通信且难以被检测",
         "original_title": "AI agents can communicate with each other, and can't be caught",
-        "summary": "一篇arXiv论文研究发现AI代理之间可以进行通信协作，而且这种通信行为难以被人类察觉或监控，引发了对AI系统可控性的新担忧。",
+        "summary": "arXiv论文发现AI智能体可以相互通信，且这种通信难以被检测。",
         "rating": "A+",
-        "score": 87,
-        "type": "research",
+        "score": 89,
+        "type": "safety",
         "typeName": "研究成果",
         "expansion": "可深入探讨AI代理自主通信对AI安全和对齐研究的挑战，以及监管层面的应对思路",
         "entities": [
-          "Ai Agents"
+          "Ai Agent",
+          "Ai安全"
         ],
         "sourceLinks": [
           {
@@ -1564,9 +2193,10 @@
         "source": "Hacker News",
         "url": "https://arxiv.org/abs/2604.04757",
         "event_id": null,
-        "original_content": "一篇arXiv论文研究发现AI代理之间可以进行通信协作，而且这种通信行为难以被人类察觉或监控，引发了对AI系统可控性的新担忧。",
-        "chinese_title": "研究揭示AI代理可相互通信且难以被检测",
-        "grade": "A+"
+        "original_content": "Comments",
+        "chinese_title": "研究发现AI智能体可相互通信且难以被发现",
+        "grade": "A+",
+        "extension": "AI智能体安全研究，对AI系统监控和治理有重要启示。"
       },
       {
         "id": "28eac93bc9d346fac8190fc396726f8f",
@@ -18455,6 +19085,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-08T06:32:06.139446",
-  "total_news": 589
+  "last_updated": "2026-04-08T06:36:41.994347",
+  "total_news": 609
 }
