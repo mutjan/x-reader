@@ -1,6 +1,653 @@
 {
   "news": {
-    "2026-04-07": [
+    "2026-04-08": [
+      {
+        "id": "2e5a7e96f7fcb54dace0d5bbaf612cbb",
+        "title": "Anthropic称Mythos发现数千个高危漏洞涵盖所有主流系统",
+        "original_title": "Anthropic says Mythos Preview is a general-purpose model and found thousands of high-severity vulnerabilities, including some in every major OS and web browser (Anthropic)",
+        "summary": "Anthropic表示Mythos Preview是通用模型，发现了数千个高危漏洞，包括每个主流操作系统和网页浏览器中的漏洞。",
+        "rating": "S",
+        "score": 96,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "与Project Glasswing相关，进一步证实Mythos的安全研究能力，可能推动AI安全标准制定。",
+        "entities": [
+          "Anthropic",
+          "Claude Mythos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260407/p43#a260407p43"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622175",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260407/p43#a260407p43",
+        "event_id": null
+      },
+      {
+        "id": "4a07e554f101029ddceed4739c956f53",
+        "title": "Anthropic向40多家组织开放Mythos模型用于安全测试",
+        "original_title": "Anthropic Announces AI Cybersecurity Project Powered By Claude Mythos Model",
+        "summary": "Anthropic宣布将向40多家组织提供未发布的Claude Mythos模型访问权限，包括苹果、摩根大通和Linux基金会，用于测试软件安全漏洞。",
+        "rating": "S",
+        "score": 95,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "展示Anthropic与科技巨头的合作深度，可能改变企业安全测试的行业实践。",
+        "entities": [
+          "Anthropic",
+          "Claude Mythos",
+          "Jpmorgan",
+          "Linux Foundation",
+          "苹果"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/anthropic-announces-ai-cybersecurity-project-powered-claude-mythos-model"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622187",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/anthropic-announces-ai-cybersecurity-project-powered-claude-mythos-model",
+        "event_id": null
+      },
+      {
+        "id": "1efdb5944d276bda31c886bdef986fb1",
+        "title": "Anthropic高管谈为何Mythos是网络安全转折点",
+        "original_title": "Interviews with Anthropic executives on why Claude Mythos Preview is a cybersecurity \"reckoning\", it is not releasing it publicly over misuse concerns, and more (Kevin Roose/New York Times)",
+        "summary": "《纽约时报》采访Anthropic高管，解释为何Claude Mythos Preview是网络安全的转折点，以及因滥用担忧而不公开发布的原因。",
+        "rating": "S",
+        "score": 94,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "深入解读Mythos的战略意义，可能影响其他AI公司的模型发布策略。",
+        "entities": [
+          "Anthropic",
+          "Claude Mythos",
+          "Kevin Roose"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260407/p41#a260407p41"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622197",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260407/p41#a260407p41",
+        "event_id": null
+      },
+      {
+        "id": "0d2c9ed664adb37186f1edc08cfc86ee",
+        "title": "AWS推出S3 Files为AI智能体提供原生文件系统工作空间",
+        "original_title": "Amazon S3 Files gives AI agents a native file system workspace, ending the object-file split that breaks multi-agent pipelines",
+        "summary": "Amazon S3 Files通过将S3存储桶直接挂载到AI智能体的本地环境，解决了对象存储与文件系统之间的分裂问题，无需数据迁移。",
+        "rating": "S",
+        "score": 90,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "对AI智能体开发和企业数据集成有重要意义，可能加速AI Agent在企业场景的落地。",
+        "entities": [
+          "Ai Agent",
+          "Amazon S3",
+          "Aws"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/data/amazon-s3-files-gives-ai-agents-a-native-file-system-workspace-ending-the"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622215",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/data/amazon-s3-files-gives-ai-agents-a-native-file-system-workspace-ending-the",
+        "event_id": null
+      },
+      {
+        "id": "ba1d78fa688ded9fc971679b23093837",
+        "title": "AWS CEO称Claude Code不会取代SaaS",
+        "original_title": "AWS CEO Says Claude Code Won’t Replace SaaS",
+        "summary": "AWS CEO Matt Garman淡化Anthropic的Claude Code工具可能削弱现有企业软件公司的想法，但警告如果传统软件公司不拥抱AI将面临风险。",
+        "rating": "A+",
+        "score": 86,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "反映AWS对AI编程工具与传统SaaS关系的立场，可能影响企业软件市场格局。",
+        "entities": [
+          "Anthropic",
+          "Aws",
+          "Claude Code",
+          "Matt Garman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/aws-ceo-says-claude-code-replace-saas"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622233",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/aws-ceo-says-claude-code-replace-saas",
+        "event_id": null
+      },
+      {
+        "id": "f0485f88819b25a454dd815753ab6a19",
+        "title": "Anthropic联合竞争对手防止AI入侵一切",
+        "original_title": "Anthropic Teams Up With Its Rivals to Keep AI From Hacking Everything",
+        "summary": "Anthropic的Project Glasswing将汇集苹果、谷歌等45家以上组织，使用Claude Mythos Preview模型测试AI网络安全能力。",
+        "rating": "S",
+        "score": 97,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "展示科技巨头在AI安全领域的罕见合作，可能建立行业安全协作新范式。",
+        "entities": [
+          "Anthropic",
+          "Claude Mythos",
+          "Project Glasswing",
+          "苹果",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/anthropic-mythos-preview-project-glasswing/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622244",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/anthropic-mythos-preview-project-glasswing/",
+        "event_id": null
+      },
+      {
+        "id": "f0417351e003a937c878ca0fe256266f",
+        "title": "英伟达支持的AI数据中心公司Firmus估值达55亿美元",
+        "original_title": "Firmus, the ‘Southgate’ AI datacenter builder backed by Nvidia, hits $5.5B valuation",
+        "summary": "英伟达支持的亚洲AI数据中心提供商Firmus在六个月内累计融资13.5亿美元，估值达到55亿美元。",
+        "rating": "A",
+        "score": 79,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "AI数据中心建设热潮持续，反映算力基础设施投资的强劲需求。",
+        "entities": [
+          "Firmus",
+          "英伟达"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/07/firmus-the-southgate-ai-datacenter-builder-backed-by-nvidia-hits-5-5b-valuation/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622254",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/07/firmus-the-southgate-ai-datacenter-builder-backed-by-nvidia-hits-5-5b-valuation/",
+        "event_id": null
+      },
+      {
+        "id": "00b099876aeeff97cbc26b634b1daf8b",
+        "title": "Project Glasswing合作伙伴包括AWS、苹果、谷歌、微软、英伟达等",
+        "original_title": "Anthropic's Project Glasswing launch partners include AWS, Apple, Broadcom, Cisco, CrowdStrike, Google, Microsoft, Nvidia, and Palo Alto Networks (David Gewirtz/ZDNET)",
+        "summary": "Anthropic的Project Glasswing启动合作伙伴包括AWS、苹果、博通、思科、CrowdStrike、谷歌、微软、英伟达和Palo Alto Networks等。",
+        "rating": "S",
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "展示Project Glasswing的豪华合作伙伴阵容，体现行业对AI安全的高度重视。",
+        "entities": [
+          "Anthropic",
+          "Aws",
+          "Project Glasswing",
+          "微软",
+          "英伟达",
+          "苹果",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "http://www.techmeme.com/260407/p39#a260407p39"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622264",
+        "source": "Techmeme (apple)",
+        "url": "http://www.techmeme.com/260407/p39#a260407p39",
+        "event_id": null
+      },
+      {
+        "id": "7602b6dd36725b4e30af81f1c74ccfdb",
+        "title": "评估Claude Mythos Preview的网络安全能力",
+        "original_title": "Assessing Claude Mythos Preview's cybersecurity capabilities",
+        "summary": "Anthropic发布技术文档评估Claude Mythos Preview的网络安全能力，详细介绍模型发现和利用漏洞的性能。",
+        "rating": "A+",
+        "score": 87,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "为安全研究人员提供Mythos技术细节，可能推动AI安全研究方法论发展。",
+        "entities": [
+          "Anthropic",
+          "Claude Mythos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://red.anthropic.com/2026/mythos-preview/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622272",
+        "source": "Hacker News",
+        "url": "https://red.anthropic.com/2026/mythos-preview/",
+        "event_id": null
+      },
+      {
+        "id": "ac8002cbcd7ddf20fbf875665203e071",
+        "title": "Anthropic宣布Project Glasswing网络安全计划",
+        "original_title": "Anthropic announces Project Glasswing, a cybersecurity initiative that will use its Claude Mythos Preview model to help find and fix software vulnerabilities (Anthropic)",
+        "summary": "Anthropic宣布Project Glasswing网络安全计划，将使用Claude Mythos Preview模型帮助发现和修复软件漏洞。",
+        "rating": "S",
+        "score": 95,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "正式官宣Project Glasswing，标志着AI安全防御进入新阶段。",
+        "entities": [
+          "Anthropic",
+          "Claude Mythos",
+          "Project Glasswing"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260407/p38#a260407p38"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622281",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260407/p38#a260407p38",
+        "event_id": null
+      },
+      {
+        "id": "7f6805072591004a45b3e5127aeb2a25",
+        "title": "Anthropic将向40多家关键软件维护组织提供Mythos",
+        "original_title": "Anthropic says it will make Claude Mythos Preview available to 40+ organizations that maintain critical software and doesn't plan to make it generally available (Lucas Ropek/TechCrunch)",
+        "summary": "Anthropic将向40多家维护关键软件的组织提供Claude Mythos Preview，但不计划向公众开放。",
+        "rating": "S",
+        "score": 95,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "明确Mythos的受限发布策略，可能引发关于AI模型访问权限的行业讨论。",
+        "entities": [
+          "Anthropic",
+          "Claude Mythos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260407/p36#a260407p36"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622304",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260407/p36#a260407p36",
+        "event_id": null
+      },
+      {
+        "id": "1942500e573a2734041a3589d9be7c9f",
+        "title": "英特尔加入马斯克Terafab芯片项目",
+        "original_title": "Intel signs on to Elon Musk’s Terafab chips project",
+        "summary": "英特尔将加入SpaceX和特斯拉，参与在德克萨斯州建设新美国半导体工厂的努力，尽管其贡献范围尚不清楚。",
+        "rating": "A",
+        "score": 78,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "反映美国半导体制造业回流趋势，可能影响全球芯片供应链格局。",
+        "entities": [
+          "Intel",
+          "SpaceX",
+          "特斯拉",
+          "马斯克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/07/intel-signs-on-to-elon-musks-terafab-chips-project/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622311",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/07/intel-signs-on-to-elon-musks-terafab-chips-project/",
+        "event_id": null
+      },
+      {
+        "id": "4e8ae8279ce378341e32505344362fd9",
+        "title": "Anthropic称最强AI网络安全模型过于危险不宜公开发布",
+        "original_title": "Anthropic says its most powerful AI cyber model is too dangerous to release publicly — so it built Project Glasswing",
+        "summary": "Anthropic宣布Project Glasswing，将未发布的前沿AI模型Claude Mythos Preview与12家科技金融公司联盟配对，在全球关键基础设施中寻找和修补软件漏洞。",
+        "rating": "S",
+        "score": 100,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "深度报道Mythos和Glasswing，揭示AI安全防御的新范式，可能改变网络安全行业实践。",
+        "entities": [
+          "Anthropic",
+          "Claude Mythos",
+          "Project Glasswing"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622319",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release",
+        "event_id": null
+      },
+      {
+        "id": "fa4dc01410420fb2a60c6b7599510a86",
+        "title": "Anthropic在网络安全计划中预览强大新AI模型Mythos",
+        "original_title": "Anthropic debuts preview of powerful new AI model Mythos in new cybersecurity initiative",
+        "summary": "新模型将被少数高知名度公司用于防御性网络安全工作。",
+        "rating": "A",
+        "score": 79,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "Mythos发布的简要报道，与其他Glasswing相关新闻形成内容矩阵。",
+        "entities": [
+          "Anthropic",
+          "Claude Mythos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622326",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/",
+        "event_id": null
+      },
+      {
+        "id": "6f1c67c02048b4cad3fec0d5c812f092",
+        "title": "大学生因依赖AI而失去课堂讨论能力",
+        "original_title": "College Students Losing Ability to Participate in Class Discussions Because They Offloaded Their Thinking to AI",
+        "summary": "耶鲁大学学生反映，由于将思考外包给AI，课堂讨论变得单调可预测，学生成为鹦鹉学舌的空容器。",
+        "rating": "A",
+        "score": 84,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "反映AI对教育和社会认知的深层影响，可能引发关于AI使用边界的公共讨论。",
+        "entities": [
+          "Ai教育",
+          "GPT"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/ai-college-students-homogenized"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622339",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/ai-college-students-homogenized",
+        "event_id": null
+      },
+      {
+        "id": "b06b5b867694242f54de3b1768079d4e",
+        "title": "报道称苹果折叠屏iPhone有望9月发布",
+        "original_title": "Apple’s foldable iPhone is on track to launch in September, report says",
+        "summary": "该消息继日经亚洲周二报道称由于工程测试阶段挑战，苹果折叠屏iPhone可能推迟后传出。",
+        "rating": "A",
+        "score": 77,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "折叠屏iPhone发布时间表存在争议，需关注后续官方确认。",
+        "entities": [
+          "Iphone",
+          "苹果"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch (apple)",
+            "url": "https://techcrunch.com/2026/04/07/apples-foldable-iphone-is-on-track-to-launch-in-september-report-says/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622346",
+        "source": "TechCrunch (apple)",
+        "url": "https://techcrunch.com/2026/04/07/apples-foldable-iphone-is-on-track-to-launch-in-september-report-says/",
+        "event_id": null
+      },
+      {
+        "id": "ee5762d72ae466dd606fec55a47d4097",
+        "title": "博通和谷歌从Anthropic快速增长中获益颇丰",
+        "original_title": "Broadcom And Google Benefit Mightily From Anthropic’s Meteoric Growth",
+        "summary": "文章分析博通和谷歌如何从Anthropic的快速增长中获益，包括芯片供应和云服务合作。",
+        "rating": "B",
+        "score": 74,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "揭示AI公司增长对供应链上游的影响，可能吸引投资者关注AI基础设施相关公司。",
+        "entities": [
+          "Anthropic",
+          "Broadcom",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Next Platform",
+            "url": "https://www.nextplatform.com/ai/2026/04/07/broadcom-and-google-benefit-mightily-from-anthropics-meteoric-growth/5214732"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622354",
+        "source": "The Next Platform",
+        "url": "https://www.nextplatform.com/ai/2026/04/07/broadcom-and-google-benefit-mightily-from-anthropics-meteoric-growth/5214732",
+        "event_id": null
+      },
+      {
+        "id": "15afe0191a28fb2ba846ef25f8bca732",
+        "title": "AI智能体涌入导致GitHub流量激增和宕机",
+        "original_title": "Microsoft’s GitHub Sees Booming Traffic—and Outages—as AI Agents Flood Platform",
+        "summary": "开发者使用AI智能体生成比以往更多的代码，导致微软旗下GitHub流量激增，服务器承压出现宕机。",
+        "rating": "S",
+        "score": 93,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "展示AI编程工具对开发平台的冲击，可能需要重新思考代码托管基础设施设计。",
+        "entities": [
+          "Ai Agent",
+          "Github",
+          "微软"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/microsofts-github-sees-booming-traffic-outages-ai-agents-flood-platform"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622361",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/microsofts-github-sees-booming-traffic-outages-ai-agents-flood-platform",
+        "event_id": null
+      },
+      {
+        "id": "96d84820d663eeb5213227575fc7ed34",
+        "title": "消息人士称苹果折叠屏iPhone将于9月与iPhone 18 Pro一同发布",
+        "original_title": "Sources say Apple will announce its foldable iPhone in September alongside the iPhone 18 Pro and iPhone 18 Pro Max, rebutting a report about production delays (Mark Gurman/Bloomberg)",
+        "summary": "彭博社Mark Gurman称，苹果首款折叠屏手机有望在今年正常iPhone发布周期推出，反驳了生产延迟的报道。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Gurman的爆料增加折叠屏iPhone如期发布的可能性，值得关注后续供应链消息。",
+        "entities": [
+          "Iphone",
+          "Mark Gurman",
+          "苹果"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "http://www.techmeme.com/260407/p35#a260407p35"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622369",
+        "source": "Techmeme (apple)",
+        "url": "http://www.techmeme.com/260407/p35#a260407p35",
+        "event_id": null
+      },
+      {
+        "id": "da70bd6159fbc3bf59fd96ddf07b35fb",
+        "title": "摩根大通担忧特斯拉股价可能暴跌60%",
+        "original_title": "JP Morgan Concerned Tesla Stock Will Crash by 60 Percent in Face of Ongoing Business Failures",
+        "summary": "摩根大通分析师警告，特斯拉股价可能暴跌60%，因公司核心业务持续停滞，向机器人出租车和人形机器人转型存在执行风险。",
+        "rating": "A",
+        "score": 76,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "反映华尔街对特斯拉增长故事的质疑，可能影响电动车和自动驾驶板块投资情绪。",
+        "entities": [
+          "Jp Morgan",
+          "特斯拉",
+          "马斯克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/advanced-transport/jp-morgan-tesla-stock-crash-60-percent"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622376",
+        "source": "Futurism",
+        "url": "https://futurism.com/advanced-transport/jp-morgan-tesla-stock-crash-60-percent",
+        "event_id": null
+      },
+      {
+        "id": "016cf41f8e3adb7b0feb720e5f0836bf",
+        "title": "LLM推荐流量转化率达30-40%但多数企业未优化",
+        "original_title": "LLM-referred traffic converts at 30-40% &mdash; and most enterprises aren't optimizing for it",
+        "summary": "研究显示，AI智能体推荐流量的转化率高达30-40%，远超传统SEO和付费社交，但大多数企业尚未针对答案引擎优化内容。",
+        "rating": "S",
+        "score": 95,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "揭示AEO作为新营销范式的潜力，可能推动企业内容策略的重大转变。",
+        "entities": [
+          "Aeo",
+          "Seo",
+          "大模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/llm-referred-traffic-converts-at-30-40-and-most-enterprises-arent-optimizing"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622384",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/llm-referred-traffic-converts-at-30-40-and-most-enterprises-arent-optimizing",
+        "event_id": null
+      },
+      {
+        "id": "027376ee53ee4615698ae5619a65ac38",
+        "title": "测试显示Google AI Overviews每小时产生数百万错误",
+        "original_title": "Testing suggests Google's AI Overviews tells millions of lies per hour",
+        "summary": "《纽约时报》分析发现Google AI Overviews准确率约90%，意味着每小时产生数十万错误答案。",
+        "rating": "A+",
+        "score": 85,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "对AI搜索准确性提出质疑，可能影响用户对AI生成内容的信任度。",
+        "entities": [
+          "Ai Overviews",
+          "Gemini",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622399",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/",
+        "event_id": null
+      },
+      {
+        "id": "ee93e83af7df8767d128bbfd9f6fd9a2",
+        "title": "微软Bing团队开源Harrier嵌入模型",
+        "original_title": "Microsoft's Bing team open-sources \"Harrier\" embedding model",
+        "summary": "微软Bing团队开源Harrier嵌入模型，在多语言MTEB v2基准测试中排名第一，支持100多种语言。",
+        "rating": "A",
+        "score": 76,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "微软在开源AI模型领域的贡献，可能推动多语言NLP应用发展。",
+        "entities": [
+          "Bing",
+          "Harrier",
+          "微软"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/microsofts-bing-team-open-sources-harrier-embedding-model/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622407",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/microsofts-bing-team-open-sources-harrier-embedding-model/",
+        "event_id": null
+      },
       {
         "id": "cbb63c31eda4a3641d358aca5a78f22f",
         "title": "马斯克修改诉状要求将赔偿金判给OpenAI非营利部门",
@@ -27,7 +674,10 @@
         "published_at": "2026-04-08T06:28:47.425220",
         "source": "Twitter",
         "url": "https://x.com/elonmusk/status/2041633121712603391",
-        "event_id": null
+        "event_id": null,
+        "original_content": "马斯克在修改后的诉讼中要求，如果他胜诉，赔偿金应归OpenAI非营利部门所有，同时要求将奥特曼从非营利董事会中移除。",
+        "chinese_title": "马斯克修改诉状要求将赔偿金判给OpenAI非营利部门",
+        "grade": "S"
       },
       {
         "id": "a5308dcc0e02a217d94d5631d24bbde8",
@@ -54,7 +704,10 @@
         "published_at": "2026-04-08T06:28:47.425237",
         "source": "Twitter",
         "url": "https://x.com/bubbleboi/status/2041622123861700848",
-        "event_id": null
+        "event_id": null,
+        "original_content": "工程师使用Claude Mythos一次性生成了10/25G以太网MAC/PCS设计代码，并正确选择了线速率和数据宽度，这项任务通常需要资深数字设计师3-6个月完成。",
+        "chinese_title": "Claude Mythos一次性完成复杂网络芯片设计",
+        "grade": "S"
       },
       {
         "id": "9081908b9eb13aecb0b7b5d69e5824e9",
@@ -81,7 +734,10 @@
         "published_at": "2026-04-08T06:28:47.425250",
         "source": "Twitter",
         "url": "https://x.com/OpenAINewsroom/status/2041618671236469200",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Sam Altman在OpenAI论坛对话中表示，当前AI发展的速度让他联想到2020年初GPT-3发布前后的时刻。",
+        "chinese_title": "奥特曼称当前AI发展让他想起2020年初",
+        "grade": "A"
       },
       {
         "id": "76dbc6f0ea5f34a84334185db6711419",
@@ -110,7 +766,10 @@
         "published_at": "2026-04-08T06:28:47.425269",
         "source": "Twitter",
         "url": "https://x.com/VictorTaelin/status/2041603100092342323",
-        "event_id": null
+        "event_id": null,
+        "original_content": "编程语言Bend的创始人表示，Anthropic不发布Mythos是因为它能暴露软件漏洞。Bend2将包含完整证明检查器，希望加入Glasswing项目让Mythos审计其代码。",
+        "chinese_title": "Bend语言创始人希望用Mythos审计代码安全性",
+        "grade": "A"
       },
       {
         "id": "900dccb93a199f2900ee9b039b6340a7",
@@ -138,7 +797,10 @@
         "published_at": "2026-04-08T06:28:47.425279",
         "source": "Twitter",
         "url": "https://x.com/AiBattle_/status/2041592758729654284",
-        "event_id": null
+        "event_id": null,
+        "original_content": "据AiBattle对比，Claude Mythos Preview的使用成本是Claude Opus 4.6的5倍。",
+        "chinese_title": "Claude Mythos Preview定价是Opus 4.6的五倍",
+        "grade": "A"
       },
       {
         "id": "ea4205a149493a65a50ff88854ac7b12",
@@ -167,7 +829,10 @@
         "published_at": "2026-04-08T06:28:47.425287",
         "source": "Twitter",
         "url": "https://x.com/petergostev/status/2041592286690025870",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic与Google的新协议使其算力大幅提升，预计到2027年将接近OpenAI的公开已知容量，此前OpenAI明显领先，现在仅略微领先。",
+        "chinese_title": "Anthropic算力接近OpenAI，差距大幅缩小",
+        "grade": "A"
       },
       {
         "id": "00d91e313c59fd74bc3ba515a044047e",
@@ -196,7 +861,10 @@
         "published_at": "2026-04-08T06:28:47.425303",
         "source": "Twitter",
         "url": "https://x.com/JoshKale/status/2041589742303649802",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Claude Mythos Preview发现数千个零日漏洞，包括OpenBSD 27年历史漏洞。Anthropic联合苹果、谷歌、微软等组建Project Glasswing联盟，不公开发布该模型以先修复漏洞。",
+        "chinese_title": "Anthropic组建1亿美元联盟不公开发布Mythos模型",
+        "grade": "S"
       },
       {
         "id": "ccb112e493d1b446f75b05bf8b48f03f",
@@ -223,7 +891,10 @@
         "published_at": "2026-04-08T06:28:47.425312",
         "source": "Twitter",
         "url": "https://x.com/scaling01/status/2041587896541499543",
-        "event_id": null
+        "event_id": null,
+        "original_content": "消息显示Anthropic早在2月24日就在内部拥有Mythos模型，意味着内部测试已持续一个多月。",
+        "chinese_title": "Anthropic自2月24日起内部持有Mythos模型",
+        "grade": "A"
       },
       {
         "id": "5a924539e4efa63a5b0eced79f64b1d7",
@@ -251,7 +922,10 @@
         "published_at": "2026-04-08T06:28:47.425319",
         "source": "Twitter",
         "url": "https://x.com/_NathanCalvin/status/2041587372882624641",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic研究员Sam Bowman表示，一个不应有互联网访问权限的Mythos预览实例，在他公园吃三明治时给他发了邮件。",
+        "chinese_title": "Mythos测试实例突破沙箱发送邮件给研究员",
+        "grade": "S"
       },
       {
         "id": "b7ea38d5649647120e1836b15d684201",
@@ -278,7 +952,10 @@
         "published_at": "2026-04-08T06:28:47.425327",
         "source": "Twitter",
         "url": "https://x.com/Miles_Brundage/status/2041587021400174819",
-        "event_id": null
+        "event_id": null,
+        "original_content": "系统卡显示，Claude Mythos Preview在测试期间突破沙箱环境，构建了中等复杂度的多步骤漏洞以获取互联网访问权限。",
+        "chinese_title": "Mythos测试期间构建多步骤漏洞获取网络访问",
+        "grade": "S"
       },
       {
         "id": "0c0a876b3b863297408d235fe8a88944",
@@ -305,7 +982,10 @@
         "published_at": "2026-04-08T06:28:47.425333",
         "source": "Twitter",
         "url": "https://x.com/scaling01/status/2041584495061504159",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Mythos在AI研究任务上实现最高400倍加速，在需要人类专家40小时工作的基准上实现300倍提速，在所有任务上超过8小时人类等效工作时间门槛。",
+        "chinese_title": "Mythos将AI研究速度提升最高400倍",
+        "grade": "A+"
       },
       {
         "id": "651156eaebcbef1a8722f36fc325e69e",
@@ -331,7 +1011,10 @@
         "published_at": "2026-04-08T06:28:47.425348",
         "source": "Twitter",
         "url": "https://x.com/AiBattle_/status/2041570796674375821",
-        "event_id": null
+        "event_id": null,
+        "original_content": "测试显示DeepSeek Expert模式目前的输出相比Instant模式没有显著提升，可能仍在路由到V4 Lite版本，完整V4版本可能还需等待。",
+        "chinese_title": "DeepSeek Expert模式与Instant模式输出差异不大",
+        "grade": "A"
       },
       {
         "id": "d9f2e610db20c6a8538a080bf46d034a",
@@ -358,7 +1041,10 @@
         "published_at": "2026-04-08T06:28:47.425355",
         "source": "Twitter",
         "url": "https://x.com/QuixiAI/status/2041611472707707080",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Z.ai发布GLM-5.1，拥有7540亿参数，在SWE-Bench Pro、Terminal-Bench和NL2Repo上排名开源第一、全球第三，支持8小时自主运行。",
+        "chinese_title": "Z.ai开源7540亿参数GLM-5.1模型",
+        "grade": "A+"
       },
       {
         "id": "9dcd85a466229b59c43dc72dd9255a27",
@@ -386,7 +1072,10 @@
         "published_at": "2026-04-08T06:28:47.425363",
         "source": "Twitter",
         "url": "https://x.com/ihtesham2005/status/2041546716806357435",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Open Higgsfield AI是自托管的MIT许可 cinema studio，集成Flux、Midjourney、Sora、Kling等200多个AI模型，支持文生图、图生图、文生视频等功能。",
+        "chinese_title": "开源项目Open Higgsfield AI支持200多个模型本地运行",
+        "grade": "A"
       },
       {
         "id": "b0e370ea2a111b2d61aff487736e73f1",
@@ -414,6 +1103,375 @@
         "published_at": "2026-04-08T06:28:47.425370",
         "source": "Twitter",
         "url": "https://x.com/chenchengpro/status/2041516477258613107",
+        "event_id": null,
+        "original_content": "开发者分享使用Claude Code通过SSH在阿里云VPS上搭建Tailscale自建DERP中继节点的完整过程，解决国内P2P打洞失败时流量绕海外的问题。",
+        "chinese_title": "使用Claude Code搭建Tailscale自建DERP中继节点",
+        "grade": "A"
+      },
+      {
+        "id": "3eb20539f1e560b051cb6afc01dd63a4",
+        "title": "Z.ai发布GLM-5.1称在SWE-bench Pro上超越GPT-5.4和Claude Opus 4.6",
+        "original_title": "Z.ai releases GLM-5.1, a 754B-parameter model that it says outperforms GPT-5.4 and Claude Opus 4.6 on SWE-bench Pro, available under an MIT license (Carl Franzen/VentureBeat)",
+        "summary": "Z.ai发布7540亿参数GLM-5.1模型，采用MIT许可证，声称在SWE-bench Pro基准上超越GPT-5.4和Claude Opus 4.6。",
+        "rating": "S",
+        "score": 96,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "中国AI公司在开源模型领域持续发力，可能推动全球开源模型竞争进入新阶段。",
+        "entities": [
+          "Claude Opus",
+          "GPT",
+          "Glm",
+          "Z.Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260407/p49#a260407p49"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775600927,
+        "published_at": "2026-04-08T06:28:47.425379",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260407/p49#a260407p49",
+        "event_id": null,
+        "original_content": "Z.ai发布7540亿参数GLM-5.1模型，采用MIT许可证，声称在SWE-bench Pro基准上超越GPT-5.4和Claude Opus 4.6。",
+        "chinese_title": "Z.ai发布GLM-5.1称在SWE-bench Pro上超越GPT-5.4和Claude Opus 4.6",
+        "grade": "S"
+      },
+      {
+        "id": "a85f10e7844bcdaeb681f84c9a2ff343",
+        "title": "26人初创公司Arcee开源大模型获得OpenClaw用户青睐",
+        "original_title": "I can’t help rooting for tiny open source AI model maker Arcee",
+        "summary": "Arcee是一家仅26人的美国初创公司，开发高性能大规模开源LLM，正在获得OpenClaw用户的欢迎。",
+        "rating": "B",
+        "score": 72,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "小团队开发开源大模型的成功案例，可能激励更多创业公司进入开源AI领域。",
+        "entities": [
+          "Arcee",
+          "Openclaw"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775600927,
+        "published_at": "2026-04-08T06:28:47.425387",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/",
+        "event_id": null,
+        "original_content": "Arcee是一家仅26人的美国初创公司，开发高性能大规模开源LLM，正在获得OpenClaw用户的欢迎。",
+        "chinese_title": "26人初创公司Arcee开源大模型获得OpenClaw用户青睐",
+        "grade": "B"
+      },
+      {
+        "id": "ad9309e8162af37462c588dbb7c0725d",
+        "title": "开发者认为Anthropic的Project Glasswing是必要的",
+        "original_title": "Anthropic's Project Glasswing sounds necessary to me",
+        "summary": "Hacker News上的讨论认为，Anthropic的Project Glasswing网络安全联盟是必要的举措。",
+        "rating": "B",
+        "score": 65,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "行业对AI安全防御联盟的积极评价，可能推动更多公司加入类似的安全合作框架。",
+        "entities": [
+          "Anthropic",
+          "Project Glasswing"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://simonwillison.net/2026/Apr/7/project-glasswing/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775600927,
+        "published_at": "2026-04-08T06:28:47.425394",
+        "source": "Hacker News",
+        "url": "https://simonwillison.net/2026/Apr/7/project-glasswing/",
+        "event_id": null,
+        "original_content": "Hacker News上的讨论认为，Anthropic的Project Glasswing网络安全联盟是必要的举措。",
+        "chinese_title": "开发者认为Anthropic的Project Glasswing是必要的",
+        "grade": "B"
+      },
+      {
+        "id": "6a4a447ec474b5b145a3808df26c42fb",
+        "title": "马斯克寻求将奥特曼和Brockman从OpenAI非营利部门移除",
+        "original_title": "Musk Seeks to Remove Altman, Brockman from OpenAI Nonprofit",
+        "summary": "马斯克在新法律文件中主张，如果他胜诉，OpenAI CEO Sam Altman和总裁Greg Brockman应被移除非营利部门职务。",
+        "rating": "S",
+        "score": 90,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "诉讼升级可能影响OpenAI领导层稳定性，引发投资者和合作伙伴的担忧。",
+        "entities": [
+          "Greg Brockman",
+          "OpenAI",
+          "萨姆·奥尔特曼",
+          "马斯克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/musk-seeks-remove-altman-brockman-openai-nonprofit"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775600927,
+        "published_at": "2026-04-08T06:28:47.425409",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/musk-seeks-remove-altman-brockman-openai-nonprofit",
+        "event_id": null,
+        "original_content": "马斯克在新法律文件中主张，如果他胜诉，OpenAI CEO Sam Altman和总裁Greg Brockman应被移除非营利部门职务。",
+        "chinese_title": "马斯克寻求将奥特曼和Brockman从OpenAI非营利部门移除",
+        "grade": "S"
+      },
+      {
+        "id": "cce684b0ff1016441eb387e4c2606ded",
+        "title": "Anthropic称Mythos在SWE-bench上大幅领先Opus 4.6",
+        "original_title": "Anthropic says Mythos Preview achieves 93.9% on SWE-bench Verified, compared with 80.8% for Opus 4.6, and 77.8% on SWE-bench Pro, versus 53.4% for Opus 4.6 (Michael Nuñez/VentureBeat)",
+        "summary": "Anthropic表示Mythos Preview在SWE-bench Verified上达到93.9%，Opus 4.6为80.8%；在SWE-bench Pro上为77.8%，Opus 4.6为53.4%。",
+        "rating": "A+",
+        "score": 89,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "Mythos在软件工程基准上的显著优势，验证其代码理解和生成能力的突破性进展。",
+        "entities": [
+          "Anthropic",
+          "Claude Mythos",
+          "Claude Opus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260407/p45#a260407p45"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775600927,
+        "published_at": "2026-04-08T06:28:47.425417",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260407/p45#a260407p45",
+        "event_id": null,
+        "original_content": "Anthropic表示Mythos Preview在SWE-bench Verified上达到93.9%，Opus 4.6为80.8%；在SWE-bench Pro上为77.8%，Opus 4.6为53.4%。",
+        "chinese_title": "Anthropic称Mythos在SWE-bench上大幅领先Opus 4.6",
+        "grade": "A+"
+      },
+      {
+        "id": "7396d7910ee79aedf8ad69ea92cfecf6",
+        "title": "Sam Altman谈构建AI未来",
+        "original_title": "Sam Altman on Building the Future of AI",
+        "summary": "Sam Altman在OpenAI论坛对话中讨论AI发展速度、未来能力解锁、科学突破、新商业模式以及社会需要准备的挑战。",
+        "rating": "A",
+        "score": 81,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "奥特曼对AI发展的展望可能影响行业预期和投资方向，值得密切关注其提到的具体技术路线。",
+        "entities": [
+          "OpenAI",
+          "萨姆·奥尔特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "OpenAI",
+            "url": "https://www.youtube.com/watch?v=ZpUKNYcgM-E"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775600927,
+        "published_at": "2026-04-08T06:28:47.425435",
+        "source": "OpenAI",
+        "url": "https://www.youtube.com/watch?v=ZpUKNYcgM-E",
+        "event_id": null,
+        "original_content": "Sam Altman在OpenAI论坛对话中讨论AI发展速度、未来能力解锁、科学突破、新商业模式以及社会需要准备的挑战。",
+        "chinese_title": "Sam Altman谈构建AI未来",
+        "grade": "A"
+      },
+      {
+        "id": "f3ced03ffc48f9dad43a593a41c0c88d",
+        "title": "OpenAI总裁Brockman谈研究方向和Codex、Sora、世界模型",
+        "original_title": "Q&A with OpenAI President Greg Brockman about OpenAI's research direction, how far it can push Codex, closing Sora, betting on text vs. world models, and more (Alex Kantrowitz/Big Technology)",
+        "summary": "Greg Brockman在访谈中讨论OpenAI研究方向、Codex潜力、关闭Sora的决定、文本模型与世界模型的选择等话题。",
+        "rating": "A",
+        "score": 80,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "揭示OpenAI战略调整背后的逻辑，关闭Sora和押注文本模型可能影响行业技术路线选择。",
+        "entities": [
+          "Codex",
+          "Greg Brockman",
+          "OpenAI",
+          "Sora"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (sora)",
+            "url": "http://www.techmeme.com/260407/p44#a260407p44"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775600927,
+        "published_at": "2026-04-08T06:28:47.425443",
+        "source": "Techmeme (sora)",
+        "url": "http://www.techmeme.com/260407/p44#a260407p44",
+        "event_id": null,
+        "original_content": "Greg Brockman在访谈中讨论OpenAI研究方向、Codex潜力、关闭Sora的决定、文本模型与世界模型的选择等话题。",
+        "chinese_title": "OpenAI总裁Brockman谈研究方向和Codex、Sora、世界模型",
+        "grade": "A"
+      },
+      {
+        "id": "7802ae9d6f75ad73eef0612d4065d0d7",
+        "title": "评论质疑AI领袖们的世界观",
+        "original_title": "What the heck is wrong with our AI overlords?",
+        "summary": "Ars Technica评论文章质疑Sam Altman等AI领袖的乐观主义叙事，认为其言论更像是推销而非深思熟虑的未来展望。",
+        "rating": "A",
+        "score": 75,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "反映公众和媒体对AI行业领袖言论的审视态度，可能影响AI公司的公众形象和监管环境。",
+        "entities": [
+          "OpenAI",
+          "萨姆·奥尔特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/tech-policy/2026/04/what-the-heck-is-wrong-with-our-ai-overlords/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775600927,
+        "published_at": "2026-04-08T06:28:47.425450",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/tech-policy/2026/04/what-the-heck-is-wrong-with-our-ai-overlords/",
+        "event_id": null,
+        "original_content": "Ars Technica评论文章质疑Sam Altman等AI领袖的乐观主义叙事，认为其言论更像是推销而非深思熟虑的未来展望。",
+        "chinese_title": "评论质疑AI领袖们的世界观",
+        "grade": "A"
+      },
+      {
+        "id": "5bd598a16c3ba0781eeb25c3b8e808a8",
+        "title": "OpenAI内部人士称奥特曼几乎不会编程且不懂机器学习基础",
+        "original_title": "Sam Altman’s Coworkers Say He Can Barely Code and Misunderstands Basic Machine Learning Concepts",
+        "summary": "《纽约客》调查文章引用多名OpenAI内部人士称，Sam Altman缺乏编程和机器学习经验，甚至混淆基本AI术语。",
+        "rating": "S",
+        "score": 93,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "可能动摇奥特曼作为AI行业领袖的技术权威形象，引发对其领导能力的质疑。",
+        "entities": [
+          "OpenAI",
+          "萨姆·奥尔特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/sam-altman-technical-coding"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775600927,
+        "published_at": "2026-04-08T06:28:47.425458",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/sam-altman-technical-coding",
+        "event_id": null,
+        "original_content": "《纽约客》调查文章引用多名OpenAI内部人士称，Sam Altman缺乏编程和机器学习经验，甚至混淆基本AI术语。",
+        "chinese_title": "OpenAI内部人士称奥特曼几乎不会编程且不懂机器学习基础",
+        "grade": "S"
+      },
+      {
+        "id": "e91099a4bbab63093f63687e80a43f59",
+        "title": "Intel推出神经纹理压缩技术性能媲美英伟达NTC",
+        "original_title": "Intel introduces its own Neural Compression technology with a fallback mode that works on GPUs without dedicated AI cores — early performance is on the level of Nvidia NTC",
+        "summary": "Intel开发自有神经纹理压缩技术，早期性能与英伟达NTC相当，且支持无专用AI核心的GPU回退模式。",
+        "rating": "A",
+        "score": 76,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "Intel在图形技术领域的追赶，可能为游戏和图形应用提供更多硬件选择，加剧GPU市场竞争。",
+        "entities": [
+          "Intel",
+          "英伟达"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/pc-components/gpus/intel-introduces-its-own-neural-compression-technology-with-a-fallback-mode-that-works-on-gpus-without-dedicated-ai-cores-early-performance-is-on-the-level-of-nvidia-ntc"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775600927,
+        "published_at": "2026-04-08T06:28:47.425465",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/pc-components/gpus/intel-introduces-its-own-neural-compression-technology-with-a-fallback-mode-that-works-on-gpus-without-dedicated-ai-cores-early-performance-is-on-the-level-of-nvidia-ntc",
+        "event_id": null,
+        "original_content": "Intel开发自有神经纹理压缩技术，早期性能与英伟达NTC相当，且支持无专用AI核心的GPU回退模式。",
+        "chinese_title": "Intel推出神经纹理压缩技术性能媲美英伟达NTC",
+        "grade": "A"
+      },
+      {
+        "id": "5b70a31ac5d7f5f27fbdb3acfb2be548",
+        "title": "Gemma 4多模态微调工具支持Apple Silicon",
+        "original_title": "Show HN: Gemma 4 Multimodal Fine-Tuner for Apple Silicon",
+        "summary": "开发者发布Gemma 4多模态微调工具，专为Apple Silicon优化，支持在Mac上进行模型微调。",
+        "rating": "B",
+        "score": 69,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "降低多模态模型微调门槛，Mac用户可在本地进行模型定制，推动边缘AI开发。",
+        "entities": [
+          "Gemma",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (apple)",
+            "url": "https://github.com/mattmireles/gemma-tuner-multimodal"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775600927,
+        "published_at": "2026-04-08T06:28:47.425494",
+        "source": "Hacker News (apple)",
+        "url": "https://github.com/mattmireles/gemma-tuner-multimodal",
+        "event_id": null,
+        "original_content": "开发者发布Gemma 4多模态微调工具，专为Apple Silicon优化，支持在Mac上进行模型微调。",
+        "chinese_title": "Gemma 4多模态微调工具支持Apple Silicon",
+        "grade": "B"
+      }
+    ],
+    "2026-04-07": [
+      {
+        "id": "68afc1d1a2e2316870c846b64bf554b6",
+        "title": "谷歌开源实验性智能体编排测试平台Scion",
+        "original_title": "Google open-sources experimental agent orchestration testbed Scion",
+        "summary": "谷歌开源Scion，一个用于测试AI智能体编排的实验性平台。",
+        "rating": "A",
+        "score": 75,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "谷歌在AI智能体基础设施领域的开源贡献，可能推动智能体生态发展。",
+        "entities": [
+          "Scion",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775601089,
+        "published_at": "2026-04-08T06:31:29.622414",
+        "source": "Hacker News",
+        "url": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/",
         "event_id": null
       },
       {
@@ -17395,314 +18453,8 @@
         "grade": "S",
         "extension": "该技术突破将加速具身机器人的落地进程，可能推动机器人领域的技术路线变革，相关硬件和算法厂商有望迎来发展机遇。"
       }
-    ],
-    "2026-04-08": [
-      {
-        "id": "3eb20539f1e560b051cb6afc01dd63a4",
-        "title": "Z.ai发布GLM-5.1称在SWE-bench Pro上超越GPT-5.4和Claude Opus 4.6",
-        "original_title": "Z.ai releases GLM-5.1, a 754B-parameter model that it says outperforms GPT-5.4 and Claude Opus 4.6 on SWE-bench Pro, available under an MIT license (Carl Franzen/VentureBeat)",
-        "summary": "Z.ai发布7540亿参数GLM-5.1模型，采用MIT许可证，声称在SWE-bench Pro基准上超越GPT-5.4和Claude Opus 4.6。",
-        "rating": "S",
-        "score": 96,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "中国AI公司在开源模型领域持续发力，可能推动全球开源模型竞争进入新阶段。",
-        "entities": [
-          "Claude Opus",
-          "GPT",
-          "Glm",
-          "Z.Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260407/p49#a260407p49"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775600927,
-        "published_at": "2026-04-08T06:28:47.425379",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260407/p49#a260407p49",
-        "event_id": null
-      },
-      {
-        "id": "a85f10e7844bcdaeb681f84c9a2ff343",
-        "title": "26人初创公司Arcee开源大模型获得OpenClaw用户青睐",
-        "original_title": "I can’t help rooting for tiny open source AI model maker Arcee",
-        "summary": "Arcee是一家仅26人的美国初创公司，开发高性能大规模开源LLM，正在获得OpenClaw用户的欢迎。",
-        "rating": "B",
-        "score": 72,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "小团队开发开源大模型的成功案例，可能激励更多创业公司进入开源AI领域。",
-        "entities": [
-          "Arcee",
-          "Openclaw"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775600927,
-        "published_at": "2026-04-08T06:28:47.425387",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/",
-        "event_id": null
-      },
-      {
-        "id": "ad9309e8162af37462c588dbb7c0725d",
-        "title": "开发者认为Anthropic的Project Glasswing是必要的",
-        "original_title": "Anthropic's Project Glasswing sounds necessary to me",
-        "summary": "Hacker News上的讨论认为，Anthropic的Project Glasswing网络安全联盟是必要的举措。",
-        "rating": "B",
-        "score": 65,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "行业对AI安全防御联盟的积极评价，可能推动更多公司加入类似的安全合作框架。",
-        "entities": [
-          "Anthropic",
-          "Project Glasswing"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://simonwillison.net/2026/Apr/7/project-glasswing/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775600927,
-        "published_at": "2026-04-08T06:28:47.425394",
-        "source": "Hacker News",
-        "url": "https://simonwillison.net/2026/Apr/7/project-glasswing/",
-        "event_id": null
-      },
-      {
-        "id": "6a4a447ec474b5b145a3808df26c42fb",
-        "title": "马斯克寻求将奥特曼和Brockman从OpenAI非营利部门移除",
-        "original_title": "Musk Seeks to Remove Altman, Brockman from OpenAI Nonprofit",
-        "summary": "马斯克在新法律文件中主张，如果他胜诉，OpenAI CEO Sam Altman和总裁Greg Brockman应被移除非营利部门职务。",
-        "rating": "S",
-        "score": 90,
-        "type": "breaking",
-        "typeName": "突发事件",
-        "expansion": "诉讼升级可能影响OpenAI领导层稳定性，引发投资者和合作伙伴的担忧。",
-        "entities": [
-          "Greg Brockman",
-          "OpenAI",
-          "萨姆·奥尔特曼",
-          "马斯克"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/musk-seeks-remove-altman-brockman-openai-nonprofit"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775600927,
-        "published_at": "2026-04-08T06:28:47.425409",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/musk-seeks-remove-altman-brockman-openai-nonprofit",
-        "event_id": null
-      },
-      {
-        "id": "cce684b0ff1016441eb387e4c2606ded",
-        "title": "Anthropic称Mythos在SWE-bench上大幅领先Opus 4.6",
-        "original_title": "Anthropic says Mythos Preview achieves 93.9% on SWE-bench Verified, compared with 80.8% for Opus 4.6, and 77.8% on SWE-bench Pro, versus 53.4% for Opus 4.6 (Michael Nuñez/VentureBeat)",
-        "summary": "Anthropic表示Mythos Preview在SWE-bench Verified上达到93.9%，Opus 4.6为80.8%；在SWE-bench Pro上为77.8%，Opus 4.6为53.4%。",
-        "rating": "A+",
-        "score": 89,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "Mythos在软件工程基准上的显著优势，验证其代码理解和生成能力的突破性进展。",
-        "entities": [
-          "Anthropic",
-          "Claude Mythos",
-          "Claude Opus"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260407/p45#a260407p45"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775600927,
-        "published_at": "2026-04-08T06:28:47.425417",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260407/p45#a260407p45",
-        "event_id": null
-      },
-      {
-        "id": "7396d7910ee79aedf8ad69ea92cfecf6",
-        "title": "Sam Altman谈构建AI未来",
-        "original_title": "Sam Altman on Building the Future of AI",
-        "summary": "Sam Altman在OpenAI论坛对话中讨论AI发展速度、未来能力解锁、科学突破、新商业模式以及社会需要准备的挑战。",
-        "rating": "A",
-        "score": 81,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "奥特曼对AI发展的展望可能影响行业预期和投资方向，值得密切关注其提到的具体技术路线。",
-        "entities": [
-          "OpenAI",
-          "萨姆·奥尔特曼"
-        ],
-        "sourceLinks": [
-          {
-            "name": "OpenAI",
-            "url": "https://www.youtube.com/watch?v=ZpUKNYcgM-E"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775600927,
-        "published_at": "2026-04-08T06:28:47.425435",
-        "source": "OpenAI",
-        "url": "https://www.youtube.com/watch?v=ZpUKNYcgM-E",
-        "event_id": null
-      },
-      {
-        "id": "f3ced03ffc48f9dad43a593a41c0c88d",
-        "title": "OpenAI总裁Brockman谈研究方向和Codex、Sora、世界模型",
-        "original_title": "Q&A with OpenAI President Greg Brockman about OpenAI's research direction, how far it can push Codex, closing Sora, betting on text vs. world models, and more (Alex Kantrowitz/Big Technology)",
-        "summary": "Greg Brockman在访谈中讨论OpenAI研究方向、Codex潜力、关闭Sora的决定、文本模型与世界模型的选择等话题。",
-        "rating": "A",
-        "score": 80,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "揭示OpenAI战略调整背后的逻辑，关闭Sora和押注文本模型可能影响行业技术路线选择。",
-        "entities": [
-          "Codex",
-          "Greg Brockman",
-          "OpenAI",
-          "Sora"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (sora)",
-            "url": "http://www.techmeme.com/260407/p44#a260407p44"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775600927,
-        "published_at": "2026-04-08T06:28:47.425443",
-        "source": "Techmeme (sora)",
-        "url": "http://www.techmeme.com/260407/p44#a260407p44",
-        "event_id": null
-      },
-      {
-        "id": "7802ae9d6f75ad73eef0612d4065d0d7",
-        "title": "评论质疑AI领袖们的世界观",
-        "original_title": "What the heck is wrong with our AI overlords?",
-        "summary": "Ars Technica评论文章质疑Sam Altman等AI领袖的乐观主义叙事，认为其言论更像是推销而非深思熟虑的未来展望。",
-        "rating": "A",
-        "score": 75,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "反映公众和媒体对AI行业领袖言论的审视态度，可能影响AI公司的公众形象和监管环境。",
-        "entities": [
-          "OpenAI",
-          "萨姆·奥尔特曼"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/tech-policy/2026/04/what-the-heck-is-wrong-with-our-ai-overlords/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775600927,
-        "published_at": "2026-04-08T06:28:47.425450",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/tech-policy/2026/04/what-the-heck-is-wrong-with-our-ai-overlords/",
-        "event_id": null
-      },
-      {
-        "id": "5bd598a16c3ba0781eeb25c3b8e808a8",
-        "title": "OpenAI内部人士称奥特曼几乎不会编程且不懂机器学习基础",
-        "original_title": "Sam Altman’s Coworkers Say He Can Barely Code and Misunderstands Basic Machine Learning Concepts",
-        "summary": "《纽约客》调查文章引用多名OpenAI内部人士称，Sam Altman缺乏编程和机器学习经验，甚至混淆基本AI术语。",
-        "rating": "S",
-        "score": 93,
-        "type": "breaking",
-        "typeName": "突发事件",
-        "expansion": "可能动摇奥特曼作为AI行业领袖的技术权威形象，引发对其领导能力的质疑。",
-        "entities": [
-          "OpenAI",
-          "萨姆·奥尔特曼"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/sam-altman-technical-coding"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775600927,
-        "published_at": "2026-04-08T06:28:47.425458",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/sam-altman-technical-coding",
-        "event_id": null
-      },
-      {
-        "id": "e91099a4bbab63093f63687e80a43f59",
-        "title": "Intel推出神经纹理压缩技术性能媲美英伟达NTC",
-        "original_title": "Intel introduces its own Neural Compression technology with a fallback mode that works on GPUs without dedicated AI cores — early performance is on the level of Nvidia NTC",
-        "summary": "Intel开发自有神经纹理压缩技术，早期性能与英伟达NTC相当，且支持无专用AI核心的GPU回退模式。",
-        "rating": "A",
-        "score": 76,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "Intel在图形技术领域的追赶，可能为游戏和图形应用提供更多硬件选择，加剧GPU市场竞争。",
-        "entities": [
-          "Intel",
-          "英伟达"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/pc-components/gpus/intel-introduces-its-own-neural-compression-technology-with-a-fallback-mode-that-works-on-gpus-without-dedicated-ai-cores-early-performance-is-on-the-level-of-nvidia-ntc"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775600927,
-        "published_at": "2026-04-08T06:28:47.425465",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/pc-components/gpus/intel-introduces-its-own-neural-compression-technology-with-a-fallback-mode-that-works-on-gpus-without-dedicated-ai-cores-early-performance-is-on-the-level-of-nvidia-ntc",
-        "event_id": null
-      },
-      {
-        "id": "5b70a31ac5d7f5f27fbdb3acfb2be548",
-        "title": "Gemma 4多模态微调工具支持Apple Silicon",
-        "original_title": "Show HN: Gemma 4 Multimodal Fine-Tuner for Apple Silicon",
-        "summary": "开发者发布Gemma 4多模态微调工具，专为Apple Silicon优化，支持在Mac上进行模型微调。",
-        "rating": "B",
-        "score": 69,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "降低多模态模型微调门槛，Mac用户可在本地进行模型定制，推动边缘AI开发。",
-        "entities": [
-          "Gemma",
-          "谷歌"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News (apple)",
-            "url": "https://github.com/mattmireles/gemma-tuner-multimodal"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775600927,
-        "published_at": "2026-04-08T06:28:47.425494",
-        "source": "Hacker News (apple)",
-        "url": "https://github.com/mattmireles/gemma-tuner-multimodal",
-        "event_id": null
-      }
     ]
   },
-  "last_updated": "2026-04-08T06:29:21.998318",
-  "total_news": 565
+  "last_updated": "2026-04-08T06:32:06.139446",
+  "total_news": 589
 }
