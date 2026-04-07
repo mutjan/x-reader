@@ -316,7 +316,7 @@ class BaseAIProcessor(ABC):
                     score=0,   # 后续打分阶段填充
                     news_type=result.get("type", ""),
                     extension=sanitize_content(result.get("extension", "")),
-                    entities=[],  # 实体识别阶段单独填充
+                    entities=result.get("entities", []),
                     raw_item=original_item
                 )
 

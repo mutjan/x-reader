@@ -1,20 +1,92 @@
 [
   {
     "index": 0,
-    "original_url": "https://x.com/pankajkumar_dev/status/2040670839624908816",
-    "chinese_title": "OpenAI GPT-5.5代号Spud曝光：原生多模态架构剑指AGI",
-    "summary": "OpenAI被曝正在研发代号Spud的GPT-5.5模型，采用全新预训练架构，具备原生多模态能力和自主智能体特性，可处理更长时间跨度的复杂任务，或将成为通向AGI的关键一步。",
-    "type": "research",
-    "extension": "若消息属实，可能引发AI模型能力竞赛升级，影响下游应用生态和算力产业链，同时OpenAI的激进定价策略或重塑行业商业模式。",
-    "entities": ["OpenAI", "GPT", "Greg Brockman"]
+    "original_url": "https://www.reddit.com/r/singularity/comments/1se6obs/openai_just_dropped_their_blueprint_for_the/",
+    "chinese_title": "OpenAI发布超级智能转型蓝图：提议公共财富基金与四天工作制",
+    "summary": "OpenAI正式发布超级智能时代政策蓝图，呼吁政府在社会契约层面进行大规模改革，包括建立公共财富基金、推行四天工作制、对自动化劳动征税等激进经济政策，同时提出针对ASI对齐和生存风险的监管框架。",
+    "type": "safety",
+    "extension": "此政策蓝图可能引发全球范围内关于AI治理的立法竞赛，影响科技巨头与政府关系，并推动UBI（全民基本收入）相关社会实验的落地。",
+    "entities": ["OpenAI", "Sam Altman", "超级智能", "公共财富基金"]
   },
   {
     "index": 1,
-    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1scm9do/p_cadenza_connect_wandb_logs_to_agents_easily_for/",
-    "chinese_title": "Cadenza开源：让AI智能体自主读取WandB实验日志",
-    "summary": "开发者推出Cadenza CLI工具和Python SDK，解决AI智能体与WandB日志集成的痛点，通过智能索引只返回高价值实验数据，支持探索与利用的灵活权衡。",
-    "type": "tool",
-    "extension": "该工具有望降低AI自主研究的技术门槛，促进MLOps工具链与Agent生态的融合，可能推动更多自动化机器学习研究框架的出现。",
-    "entities": ["Cadenza", "WandB", "MLOps"]
+    "original_url": "https://www.reddit.com/r/singularity/comments/1se5dcs/axios_sam_altman_states_superintelligence_is_so/",
+    "chinese_title": "Sam Altman称超级智能临近，美国需要类似罗斯福新政的社会契约变革",
+    "summary": "OpenAI CEO Sam Altman在接受Axios采访时表示，超级智能的到来如此接近且具有颠覆性，美国需要一场堪比进步时代和大萧条时期新政的社会契约重塑，以应对大规模失业、网络攻击和社会动荡等风险。",
+    "type": "opinion",
+    "extension": "Altman的表态可能加速政策制定者对AI失业问题的关注，推动失业保险和社会安全网的自动扩展机制立法。",
+    "entities": ["Sam Altman", "OpenAI", "超级智能", "Axios"]
+  },
+  {
+    "index": 2,
+    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1sedqda/d_tested_model_routing_on_financial_ai_datasets/",
+    "chinese_title": "金融AI模型路由基准测试：成本最高可省89%",
+    "summary": "研究者在金融AI数据集上测试基于提示复杂度的模型路由策略，发现相比统一使用Claude Opus，灵活路由策略可实现最高89%的成本节约，同时ConvFinQA等复杂任务仍能保持高质量输出。",
+    "type": "research",
+    "extension": "此研究成果可能推动模型路由工具的落地应用，帮助企业在保证质量的同时显著降低LLM调用成本。",
+    "entities": ["Claude", "Qwen", "Gemma", "HuggingFace"]
+  },
+  {
+    "index": 3,
+    "original_url": "https://www.theinformation.com/articles/openais-never-ending-soap-opera",
+    "chinese_title": "OpenAI管理层动荡持续：CFO质疑IPO准备，Altman诚信再遭质疑",
+    "summary": "OpenAI财务总监Sarah Friar对公司IPO准备情况和AI服务器承诺能力表示担忧，《纽约客》长篇报道则再次质疑CEO Sam Altman的管理风格和可信度，两人能否共同面对投资者成为疑问。",
+    "type": "personnel",
+    "extension": "管理层不稳定可能影响OpenAI的IPO进程和估值，同时加剧与微软等关键合作伙伴的紧张关系。",
+    "entities": ["OpenAI", "Sam Altman", "Sarah Friar", "The Information"]
+  },
+  {
+    "index": 4,
+    "original_url": "https://www.theinformation.com/briefings/anthropic-says-topped-30-billion-annualized-revenue",
+    "chinese_title": "Anthropic年化收入突破300亿美元，与OpenAI差距快速缩小",
+    "summary": "Anthropic宣布年化收入已超过300亿美元，自2月底以来增长58%，正快速缩小与OpenAI的收入差距。OpenAI在2月的年化收入约为250亿美元。",
+    "type": "financial",
+    "extension": "Anthropic的快速增长表明AI市场竞争加剧，可能引发新一轮融资和估值调整，影响投资者对AI赛道的整体判断。",
+    "entities": ["Anthropic", "Claude", "OpenAI"]
+  },
+  {
+    "index": 5,
+    "original_url": "https://www.theinformation.com/briefings/openai-asks-attorneys-general-investigate-musk",
+    "chinese_title": "OpenAI要求加州和特拉华州总检察长调查马斯克",
+    "summary": "OpenAI首席战略官Jason Kwon致信加州和特拉华州总检察长，要求调查Elon Musk涉嫌破坏OpenAI的行为，称Musk试图通过诉讼和公开言论干扰公司运营和融资。",
+    "type": "industry",
+    "extension": "OpenAI与Musk的法律战可能持续升级，影响OpenAI的转型为营利性公司的进程，以及xAI的市场竞争格局。",
+    "entities": ["OpenAI", "Elon Musk", "Jason Kwon", "xAI"]
+  },
+  {
+    "index": 6,
+    "original_url": "https://futurism.com/artificial-intelligence/sources-sam-altman-sociopath",
+    "chinese_title": "《纽约客》调查：内部人士称Sam Altman为「反社会人格」",
+    "summary": "《纽约客》长篇调查报道引用多位OpenAI内部人士和前董事会成员的话，形容Sam Altman为「反社会人格」和「病态说谎者」，称其将AI安全作为获取信任的工具，事后却背弃承诺。",
+    "type": "opinion",
+    "extension": "报道可能进一步损害Altman的公众形象，加剧OpenAI内部对安全承诺的质疑，并影响监管机构和合作伙伴对公司的信任。",
+    "entities": ["Sam Altman", "OpenAI", "Dario Amodei", "The New Yorker"]
+  },
+  {
+    "index": 7,
+    "original_url": "https://www.theinformation.com/articles/can-tensorwave-leapfrog-nvidias-big-moat",
+    "chinese_title": "TensorWave挑战Nvidia CUDA护城河，AMD芯片获OpenAI和Meta大单",
+    "summary": "AI芯片租赁公司TensorWave主办「Beyond Summit」大会，探讨Nvidia CUDA的替代方案。文章透露OpenAI和Meta近期与AMD达成大规模芯片采购协议，显示AI实验室开始认真考虑非Nvidia方案。",
+    "type": "hardware",
+    "extension": "若AMD芯片在大型AI训练中获得更广泛采用，可能动摇Nvidia的市场主导地位，推动AI芯片供应链多元化。",
+    "entities": ["TensorWave", "Nvidia", "AMD", "OpenAI", "Meta"]
+  },
+  {
+    "index": 8,
+    "original_url": "https://futurism.com/artificial-intelligence/sam-altman-awkward-reaction-chatgpt-issue",
+    "chinese_title": "Sam Altman面对ChatGPT计时器Bug尴尬回应：可能还要一年才能修复",
+    "summary": "在播客采访中，Sam Altman被展示一段ChatGPT语音模式计时器出错的 viral 视频，AI坚持错误计时并试图说服用户。Altman尴尬回应称这是「已知问题」，估计需要一年左右才能修复。",
+    "type": "product",
+    "extension": "该事件暴露ChatGPT语音模式的工具调用缺陷，可能促使OpenAI加速相关功能的完善，同时也引发对AI「煤气灯」式回应的用户信任问题。",
+    "entities": ["Sam Altman", "OpenAI", "ChatGPT"]
+  },
+  {
+    "index": 9,
+    "original_url": "https://www.youtube.com/watch?v=2g1e1QUiY8s",
+    "chinese_title": "LG Uplus联合OpenAI推出下一代AICC智能客服系统",
+    "summary": "LG Uplus与OpenAI工程师合作开发下一代AICC（AI联络中心）「Agentic AICC」，基于OpenAI Realtime API提供超低延迟AI客服，并配备可自主解决问题的规划代理。",
+    "type": "product",
+    "extension": "该产品可能成为企业AI客服的新标准，推动更多电信运营商和大型企业采用类似的AI客服解决方案。",
+    "entities": ["LG Uplus", "OpenAI", "AICC", "Realtime API"]
   }
 ]

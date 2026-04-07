@@ -111,7 +111,18 @@ def main():
             return 1
         logger.info(f"从快照加载到 {len(processed_items)} 条已完成基础处理的新闻")
 
-        # 加载实体识别结果并填充
+        # 如果提供了实体识别结果文件，先导入实体结果
+        if args.entity_result_file:
+            if not os.path.exists(args.entity_result_file):
+                logger.error(f"实体识别结果文件 {args.entity_result_file} 不存在")
+                return 1
+            entity_results = entity_processor.load_manual_result(args.entity_result_file, filtered_items)
+            logger.info(f"实体识别完成，得到 {len(entity_results)} 条新闻的实体")
+            if entity_results:
+                ai_processor.save_entity_results_to_snapshot(args.snapshot_id, entity_results)
+                logger.info("实体识别结果已保存到快照")
+
+        # 加载实体识别结果并填充（无论是之前导入还是刚导入）
         entity_results = ai_processor.load_entity_results_from_snapshot(args.snapshot_id)
         if entity_results:
             logger.info("从快照加载到实体识别结果，正在填充...")

@@ -29,15 +29,8 @@ def main():
             print(f"📅 {date_str} 共有 {len(news_list)} 条新闻")
             for item in news_list:
                 try:
-                    # 转换为ProcessedNewsItem对象
-                    # 处理字段映射（前端格式 → 内部格式）
-                    item["chinese_title"] = item["title"]
-                    item["grade"] = item["rating"]
-                    item["original_content"] = item.get("summary", "")
-                    item["source_url"] = item.get("url", "")
-                    item["published_at"] = item.get("published_at", "")
-                    item["entities"] = item.get("entities", [])  # 修复：复制entities字段
-                    news_item = ProcessedNewsItem.from_dict(item)
+                    # 使用公共方法从前端格式转换，自动处理字段兼容
+                    news_item = ProcessedNewsItem.from_frontend_dict(item)
                     all_news.append(news_item)
                 except Exception as e:
                     print(f"⚠️  跳过无效新闻: {e}")

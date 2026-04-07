@@ -31,8 +31,8 @@ def main():
                        help='获取最近多少小时内的新闻 (默认: 2，增量更新)')
     parser.add_argument('--full', action='store_true',
                        help='全量更新模式，获取最近24小时内的新闻')
-    parser.add_argument('--min-score', type=int, default=30,
-                       help='预筛选最低得分 (默认: 30)')
+    parser.add_argument('--min-score', type=int, default=10,
+                       help='预筛选最低得分 (默认: 10)')
     parser.add_argument('--batch-size', type=int, default=DEFAULT_BATCH_SIZE,
                        help=f'AI处理批量大小 (默认: {DEFAULT_BATCH_SIZE})')
     parser.add_argument('--no-publish', action='store_true',

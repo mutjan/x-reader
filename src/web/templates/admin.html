@@ -1819,7 +1819,6 @@
                             <th style="width: 24%;">标题</th>
                             <th style="width: 19%;">摘要</th>
                             <th style="width: 14%;">实体</th>
-                            <th style="width: 10%;">扩展性</th>
                             <th style="width: 8%;">链接</th>
                             <th style="width: 12%;">更新时间</th>
                             <th style="width: 50px; text-align: center;">新闻数</th>
@@ -1874,9 +1873,6 @@
                                     ${entities.map(e => `<span class="entity-tag">${e}</span>`).join('')}
                                 </div>`;
                             })()}
-                        </td>
-                        <td style="font-size: 12px; color: #718096;">
-                            <div class="expansion-content">${event.main_news_expansion ? event.main_news_expansion : '-'}</div>
                         </td>
                         <td>
                             <div class="link-container">
