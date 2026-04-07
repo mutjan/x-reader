@@ -2,6 +2,550 @@
   "news": {
     "2026-04-07": [
       {
+        "id": "50181e3b61fea3ee5465e2e0ffead8cd",
+        "title": "轻量级嵌入模型在BANKING77基准达到94.42%准确率",
+        "original_title": "[R] 94.42% on BANKING77 Official Test Split with Lightweight Embedding + Example Reranking (strict full-train protocol)",
+        "summary": "研究者使用轻量级嵌入分类器结合示例重排序方法，在BANKING77银行意图分类基准的官方测试集上达到94.42%准确率，未使用大语言模型。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究表明小模型在特定垂直任务上可媲美大模型性能，可能推动企业采用更经济的AI解决方案。",
+        "entities": [
+          "Banking77",
+          "Polyai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sefidi/r_9442_on_banking77_official_test_split_with/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.356941",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sefidi/r_9442_on_banking77_official_test_split_with/",
+        "event_id": null
+      },
+      {
+        "id": "c3851e5ed83524f7d64d9767e0ce01cd",
+        "title": "Anthropic拟投资2亿美元与PE机构合作推广AI工具",
+        "original_title": "Sources: Anthropic plans to invest $200M in a venture with PE firms to sell AI tools to their portfolio companies, and is in talks to raise $1B for the effort (Wall Street Journal)",
+        "summary": "Anthropic计划投资2亿美元与General Atlantic、Blackstone等私募股权公司合作，向被投企业推广AI工具，并寻求筹集10亿美元支持该计划。",
+        "rating": "A+",
+        "score": 85,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "Anthropic通过PE渠道拓展企业客户，可能加速AI工具在传统行业的渗透，同时与OpenAI形成差异化竞争策略。",
+        "entities": [
+          "Anthropic",
+          "Blackstone",
+          "General Atlantic"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260406/p29#a260406p29"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.356984",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260406/p29#a260406p29",
+        "event_id": null
+      },
+      {
+        "id": "4e97b1fa5d78672b8504e92befbe921b",
+        "title": "Anthropic宣布扩大与Google和Broadcom的算力合作",
+        "original_title": "Anthropic expands partnership with Google and Broadcom for next-gen compute",
+        "summary": "Anthropic宣布扩大与Google和Broadcom的合作伙伴关系，以获得下一代计算资源支持其AI模型开发和部署。",
+        "rating": "A+",
+        "score": 86,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "算力资源的战略性合作可能巩固Anthropic在AI基础设施方面的竞争优势，影响行业算力采购格局。",
+        "entities": [
+          "Anthropic",
+          "Broadcom",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.356993",
+        "source": "Hacker News",
+        "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+        "event_id": null
+      },
+      {
+        "id": "dfcb5d7664c5a724fbafbb49ada0fe94",
+        "title": "OpenAI发布超级智能时代产业政策建议",
+        "original_title": "OpenAI Suggests Industrial Policies for Superintelligence",
+        "summary": "OpenAI发布13页政策文件，建议政府考虑税收改革和四天工作制等产业政策，为超级智能的到来做好准备。",
+        "rating": "S",
+        "score": 97,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "OpenAI的政策建议可能引发全球关于AI治理的立法讨论，影响科技公司与政府关系的演变。",
+        "entities": [
+          "OpenAI",
+          "萨姆·奥尔特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/openai-suggests-industrial-policies-superintelligence"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357002",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/openai-suggests-industrial-policies-superintelligence",
+        "event_id": null
+      },
+      {
+        "id": "3da310a93311b7353075242494fd30e4",
+        "title": "Anthropic签署35亿瓦TPU协议，Broadcom将供应Google芯片",
+        "original_title": "Anthropic Signs 3.5 Gigawatt Deal with Broadcom and Google for TPUs",
+        "summary": "Broadcom宣布将从2027年起为Anthropic提供约35亿瓦Google TPU算力，较此前1亿瓦协议大幅扩容，显示AI算力需求持续爆发。",
+        "rating": "S",
+        "score": 93,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "大规模TPU采购协议可能改变AI芯片市场格局，推动Google Cloud在AI基础设施领域的竞争力。",
+        "entities": [
+          "Anthropic",
+          "Broadcom",
+          "Tpu",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/anthropic-signs-3-5-gigawatt-deal-broadcom-google-tpus"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357010",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/anthropic-signs-3-5-gigawatt-deal-broadcom-google-tpus",
+        "event_id": null
+      },
+      {
+        "id": "82f4075a51070fdd293915c59a935aa3",
+        "title": "OpenAI要求州检察长调查马斯克的反竞争行为",
+        "original_title": "OpenAI sends a letter to the California and Delaware AGs, urging them to investigate \"anti-competitive behavior\" by Elon Musk, ahead of a trial in April (CNBC)",
+        "summary": "OpenAI向加州和特拉华州检察长致信，敦促调查Elon Musk的反竞争行为，为4月即将到来的诉讼 trial 做准备。",
+        "rating": "A",
+        "score": 83,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "OpenAI与Musk的法律战可能持续升级，影响OpenAI转型为营利性公司的进程，以及xAI的市场竞争格局。",
+        "entities": [
+          "OpenAI",
+          "马斯克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260406/p24#a260406p24"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357026",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260406/p24#a260406p24",
+        "event_id": null
+      },
+      {
+        "id": "cb9bbfb3b6235d189aa17ae3e42c2871",
+        "title": "Broadcom将为Google生产下一代TPU并扩大Anthropic合作",
+        "original_title": "Filing: Broadcom agrees to produce future versions of Google's TPUs and expands its Anthropic deal to give the startup access to ~3.5 GW of computing capacity (Jordan Novet/CNBC)",
+        "summary": "Broadcom证券文件披露，公司将生产Google人工智能芯片的未来版本，并将Anthropic的算力供应协议扩大至约35亿瓦。",
+        "rating": "A+",
+        "score": 85,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "Broadcom在AI芯片代工领域的扩张可能挑战台积电的市场地位，推动AI芯片供应链的多元化。",
+        "entities": [
+          "Anthropic",
+          "Broadcom",
+          "Tpu",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260406/p23#a260406p23"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357035",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260406/p23#a260406p23",
+        "event_id": null
+      },
+      {
+        "id": "ec27044b3de2934c86a6ea024a14711b",
+        "title": "特朗普2027年预算提案大幅削减科研经费",
+        "original_title": "Trump's next budget once again calls for massive cuts to science",
+        "summary": "特朗普政府发布2027年预算蓝图，计划对NASA等科学机构实施大幅经费削减，延续了去年的政策方向。",
+        "rating": "A",
+        "score": 75,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "科研经费的削减可能影响美国AI基础研究能力，促使更多研究人员流向私营部门或海外机构。",
+        "entities": [
+          "Nasa"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Ars Technica » Scientific Method",
+            "url": "https://arstechnica.com/science/2026/04/trumps-next-budget-once-again-calls-for-massive-cuts-to-science/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357043",
+        "source": "Ars Technica » Scientific Method",
+        "url": "https://arstechnica.com/science/2026/04/trumps-next-budget-once-again-calls-for-massive-cuts-to-science/",
+        "event_id": null
+      },
+      {
+        "id": "bafe421a34f222b91c52d07aea9a51b7",
+        "title": "Generalist发布GEN-1物理AI系统，达到生产级成功率",
+        "original_title": "Generalist's new physical robotics AI brings &ldquo;production-level&rdquo; success rates",
+        "summary": "机器人机器学习公司Generalist发布GEN-1物理AI系统，声称在广泛物理技能上实现生产级成功率，具备应对干扰的即兴处理能力。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "物理AI系统的生产级突破可能加速机器人在制造业和物流领域的商业化部署，改变工业自动化的技术路径。",
+        "entities": [
+          "Gen-1",
+          "Generalist"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/04/generalists-new-physical-robotics-ai-brings-production-level-success-rates/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357051",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/04/generalists-new-physical-robotics-ai-brings-production-level-success-rates/",
+        "event_id": null
+      },
+      {
+        "id": "55a0d6e6984a25225b2b135bc2479724",
+        "title": "Hippo：受生物学启发的AI Agent记忆系统开源",
+        "original_title": "Show HN: Hippo, biologically inspired memory for AI agents",
+        "summary": "开发者开源Hippo项目，提供受生物学启发的记忆机制，支持AI Agent的长期记忆和上下文理解能力。",
+        "rating": "A",
+        "score": 75,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "生物启发式记忆机制可能提升AI Agent的上下文保持能力，推动更具持续性的智能助手开发。",
+        "entities": [
+          "Hippo"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/kitfunso/hippo-memory"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357059",
+        "source": "Hacker News",
+        "url": "https://github.com/kitfunso/hippo-memory",
+        "event_id": null
+      },
+      {
+        "id": "97b9c93355d583c206544de7d5444c27",
+        "title": "Anthropic年化收入突破300亿美元，较2025年底增长超200%",
+        "original_title": "Anthropic signs an agreement with Google and Broadcom for multiple GWs of TPU capacity, and says run-rate revenue has crossed $30B, up from ~$9B at 2025's end (Anthropic)",
+        "summary": "Anthropic宣布与Google和Broadcom签署多千兆瓦TPU协议，同时披露年化收入运行率已突破300亿美元，较2025年底的约90亿美元大幅增长。",
+        "rating": "S",
+        "score": 92,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "Anthropic的快速增长可能重塑AI市场竞争格局，推动OpenAI加速IPO进程，同时吸引更多资本涌入AI赛道。",
+        "entities": [
+          "Anthropic",
+          "Broadcom",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260406/p22#a260406p22"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357067",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260406/p22#a260406p22",
+        "event_id": null
+      },
+      {
+        "id": "887dc8b7a2efa002fdefa48b3f857ec6",
+        "title": "AI编程工具普及导致企业面临代码审核压力",
+        "original_title": "The rapid adoption of AI coding tools has let workers generate massive volumes of code, leaving companies scrambling to review and secure the AI-generated code (New York Times)",
+        "summary": "《纽约时报》报道，AI编程工具的迅速普及使开发者生成代码量激增，企业正 scrambling 审查和确保AI生成代码的安全性。",
+        "rating": "A+",
+        "score": 86,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "AI生成代码的安全审核需求可能催生新的代码审查工具和流程，推动DevSecOps实践的演进。",
+        "entities": [
+          "Cursor",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260406/p21#a260406p21"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357074",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260406/p21#a260406p21",
+        "event_id": null
+      },
+      {
+        "id": "12f4730a488715ae0721c5f9e2272049",
+        "title": "OpenAI校友成立1亿美元新基金低调投资AI初创公司",
+        "original_title": "OpenAI alums have been quietly investing from a new, potentially $100M fund",
+        "summary": "名为Zero Shot的新风投基金由OpenAI校友创立，目标募资1亿美元，已投资多家AI初创公司。",
+        "rating": "A",
+        "score": 80,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "OpenAI校友生态的投资活动可能形成AI领域的人才和资本网络，影响初创公司的技术路线选择。",
+        "entities": [
+          "OpenAI",
+          "Zero Shot"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/06/openai-alums-have-been-quietly-investing-from-a-new-potentially-100m-fund/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357081",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/06/openai-alums-have-been-quietly-investing-from-a-new-potentially-100m-fund/",
+        "event_id": null
+      },
+      {
+        "id": "5d9626913202b98d58c6a98d1c2f8975",
+        "title": "OpenAI、Anthropic和Google联手打击模型蒸馏抄袭",
+        "original_title": "Sources: OpenAI, Anthropic, and Google are sharing information via the Frontier Model Forum to detect adversarial distillation attempts that violate their ToS (Bloomberg)",
+        "summary": "Bloomberg报道称，OpenAI、Anthropic和Google通过Frontier Model Forum共享信息，检测违反服务条款的对抗性蒸馏行为。",
+        "rating": "A+",
+        "score": 87,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "AI巨头联手打击模型抄袭可能加剧中美AI技术竞争，推动模型保护技术和知识产权法规的发展。",
+        "entities": [
+          "Anthropic",
+          "Frontier Model Forum",
+          "OpenAI",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260406/p20#a260406p20"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357088",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260406/p20#a260406p20",
+        "event_id": null
+      },
+      {
+        "id": "90df79bfdb6c366321b740d4eeeb0c9d",
+        "title": "《纽约客》调查：OpenAI内部人士称Sam Altman不可信",
+        "original_title": "“The problem is Sam Altman”: OpenAI Insiders don’t trust CEO",
+        "summary": "《纽约客》长篇调查报道引用多位OpenAI内部人士和前董事会成员的话，质疑Sam Altman的可信度和管理风格。",
+        "rating": "S",
+        "score": 98,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "报道可能进一步损害Altman的公众形象，加剧OpenAI内部对安全承诺的质疑，并影响监管机构和合作伙伴对公司的信任。",
+        "entities": [
+          "OpenAI",
+          "The New Yorker",
+          "萨姆·奥尔特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/tech-policy/2026/04/the-problem-is-sam-altman-openai-insiders-dont-trust-ceo/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357095",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/tech-policy/2026/04/the-problem-is-sam-altman-openai-insiders-dont-trust-ceo/",
+        "event_id": null
+      },
+      {
+        "id": "5281fcd0e98e6017b65b42692973352b",
+        "title": "Freestyle发布：为编程AI Agent提供沙箱环境",
+        "original_title": "Launch HN: Freestyle – Sandboxes for Coding Agents",
+        "summary": "Freestyle平台为AI编程Agent提供安全的沙箱执行环境，支持代码的隔离测试和验证。",
+        "rating": "B",
+        "score": 67,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "AI编程沙箱的成熟可能提升AI生成代码的安全性，推动自动化编程工具的广泛应用。",
+        "entities": [
+          "Freestyle"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.freestyle.sh/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357124",
+        "source": "Hacker News",
+        "url": "https://www.freestyle.sh/",
+        "event_id": null
+      },
+      {
+        "id": "4478f27e2de5c769a79f6ef0f42143b4",
+        "title": "澳大利亚AI基础设施公司Firmus融资5.05亿美元",
+        "original_title": "Australian AI infrastructure startup Firmus raised $505M led by Coatue at a $5.5B valuation, bringing its funding raised in the last six months to $1.35B (Ian King/Bloomberg)",
+        "summary": "数据中心建设公司Firmus Technologies完成5.05亿美元融资，由Coatue领投，估值达55亿美元，过去六个月累计融资13.5亿美元。",
+        "rating": "A",
+        "score": 83,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "AI基础设施领域的资本涌入反映算力需求持续增长，可能推动全球数据中心建设热潮。",
+        "entities": [
+          "Coatue",
+          "Firmus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260406/p19#a260406p19"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357131",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260406/p19#a260406p19",
+        "event_id": null
+      },
+      {
+        "id": "1f2dfbe7fb6c8768c55e6eaf9702dbf5",
+        "title": "OnePilot：支持手机SSH连接的AI Agent开发工具",
+        "original_title": "AI agents over SSH from your phone. Starting to think this is where dev is going",
+        "summary": "OnePilot应用允许开发者通过手机SSH连接远程服务器，并部署AI Agent执行开发任务。",
+        "rating": "B",
+        "score": 74,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "移动端AI开发工具的出现可能改变开发者的工作方式，支持更灵活的远程开发和运维场景。",
+        "entities": [
+          "Onepilot"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://onepilotapp.com/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357138",
+        "source": "Hacker News",
+        "url": "https://onepilotapp.com/",
+        "event_id": null
+      },
+      {
+        "id": "edd73085a616326b37bcba16e1c546ae",
+        "title": "维基百科AI Agent争议可能只是机器人泛滥的开始",
+        "original_title": "Wikipedia's AI agent row likely just the beginning of the bot-ocalypse",
+        "summary": "安全厂商分析维基百科近期围绕AI Agent的争议事件，认为这可能是大规模AI机器人影响在线内容生态的前兆。",
+        "rating": "A+",
+        "score": 85,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "AI Agent对内容平台的冲击可能迫使各大平台重新评估内容审核策略，推动AI生成内容的标识和治理机制。",
+        "entities": [
+          "Wikipedia"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.malwarebytes.com/blog/ai/2026/04/wikipedias-ai-agent-row-likely-just-the-beginning-of-the-bot-ocalypse"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357166",
+        "source": "Hacker News",
+        "url": "https://www.malwarebytes.com/blog/ai/2026/04/wikipedias-ai-agent-row-likely-just-the-beginning-of-the-bot-ocalypse",
+        "event_id": null
+      },
+      {
+        "id": "b03b898dd38604fca982472372c72d5f",
+        "title": "台积电2025年增长四倍于竞争对手的三大原因",
+        "original_title": "Why TSMC grew four times faster than its foundry rivals in 2025 — price hikes, vertical integration, and commanding technology lead pay dividends",
+        "summary": "分析指出台积电在2025年的快速增长源于涨价策略、垂直整合能力和技术领先优势三大因素。",
+        "rating": "A",
+        "score": 78,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "台积电的竞争优势分析可能为半导体行业投资提供参考，同时引发对晶圆代工市场集中度的讨论。",
+        "entities": [
+          "台积电"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/why-tsmc-grew-four-times-faster-than-its-foundry-rivals-in-2025"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357181",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/why-tsmc-grew-four-times-faster-than-its-foundry-rivals-in-2025",
+        "event_id": null
+      },
+      {
         "id": "18e1965539888c9498b4201e995db4ec",
         "title": "MacBook Neo因热销耗尽缺陷芯片库存，苹果面临产能瓶颈",
         "original_title": "So basically, the MacBook Neo was originally being made with defective chips that would otherwise have been discarded because part of the chip’s func...",
@@ -27,7 +571,10 @@
         "published_at": "2026-04-07T21:11:23.605853",
         "source": "Twitter",
         "url": "https://x.com/jukan05/status/2041484205721559263",
-        "event_id": null
+        "event_id": null,
+        "original_content": "MacBook Neo最初使用功能缺陷的芯片制造，但因市场需求火爆导致缺陷芯片库存耗尽，苹果目前无法扩大生产规模。",
+        "chinese_title": "MacBook Neo因热销耗尽缺陷芯片库存，苹果面临产能瓶颈",
+        "grade": "B"
       },
       {
         "id": "71131d3d33ed3a879425d84e050c15f3",
@@ -54,7 +601,10 @@
         "published_at": "2026-04-07T21:11:23.605870",
         "source": "Twitter",
         "url": "https://x.com/CyberRobooo/status/2041476861101023327",
-        "event_id": null
+        "event_id": null,
+        "original_content": "脑机接口公司BrainCo推出新一代灵巧手Revo3，具备21自由度、全掌触觉感知和20N指尖捏力，专为工业机器人应用场景设计。",
+        "chinese_title": "BrainCo发布Revo3灵巧手，专为人形机器人设计",
+        "grade": "A"
       },
       {
         "id": "2ffd25c25c949b86494feef51c11b7b6",
@@ -82,7 +632,10 @@
         "published_at": "2026-04-07T21:11:23.605892",
         "source": "Twitter",
         "url": "https://x.com/chetaslua/status/2041468048008417714",
-        "event_id": null
+        "event_id": null,
+        "original_content": "用户反馈GPT-Image-2在生成图像时未经提示自动添加了Gemini水印，引发对训练数据来源的讨论。",
+        "chinese_title": "GPT-Image-2生成图像意外出现Gemini水印",
+        "grade": "A+"
       },
       {
         "id": "7fbf2517b9fdd603501f72e38c94c39d",
@@ -109,7 +662,10 @@
         "published_at": "2026-04-07T21:11:23.605901",
         "source": "Twitter",
         "url": "https://x.com/ericjang11/status/2041396031045427693",
-        "event_id": null
+        "event_id": null,
+        "original_content": "行业专家预测未来AI推理算力需求将呈指数级增长，Meta每月调用Anthropic约60万亿token，年化收入贡献达百亿美元级别。",
+        "chinese_title": "AI推理算力需求爆发，年消耗或达数十万亿token",
+        "grade": "A+"
       },
       {
         "id": "0d58550667dadeb5b5da84cbc69c444a",
@@ -135,7 +691,10 @@
         "published_at": "2026-04-07T21:11:23.605910",
         "source": "Twitter",
         "url": "https://x.com/xtinatong/status/2041335210105774284",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Letta推出Code应用，支持记忆优先的AI Agent，能够根据使用习惯持续优化性能。",
+        "chinese_title": "Letta发布Code应用，主打记忆优先的AI编程助手",
+        "grade": "B"
       },
       {
         "id": "18bc80aeafc0d5d22e80d2e4390c4bc0",
@@ -162,7 +721,10 @@
         "published_at": "2026-04-07T21:11:23.605919",
         "source": "Hacker News",
         "url": "https://www.theverge.com/ai-artificial-intelligence/907427/iran-openai-stargate-datacenter-uae-abu-dhabi-threat",
-        "event_id": null
+        "event_id": null,
+        "original_content": "伊朗伊斯兰革命卫队发言人威胁称，若美国攻击伊朗电力基础设施，将对OpenAI在阿布扎比的Stargate数据中心实施报复性打击。",
+        "chinese_title": "伊朗威胁攻击OpenAI位于阿布扎比的Stargate数据中心",
+        "grade": "A"
       },
       {
         "id": "d85cd1eeac6c75a7cea0c53967c8c870",
@@ -189,7 +751,10 @@
         "published_at": "2026-04-07T21:11:23.605947",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260407/p14#a260407p14",
-        "event_id": null
+        "event_id": null,
+        "original_content": "韩国社会护理系统引入搭载ChatGPT的社交护理机器人，为占总人口20%的65岁以上老年人提供陪伴和照护服务。",
+        "chinese_title": "韩国部署数千台ChatGPT社交护理机器人应对老龄化",
+        "grade": "A"
       },
       {
         "id": "ab8ff8f7f15e5ad05ad9be2e1b9cc567",
@@ -217,7 +782,10 @@
         "published_at": "2026-04-07T21:11:23.605956",
         "source": "THE DECODER",
         "url": "https://the-decoder.com/anthropic-signs-multi-gigawatt-tpu-deal-with-google-and-broadcom/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic与Google和Broadcom达成协议，获得多千兆瓦TPU计算容量支持，预计2027年起逐步上线。",
+        "chinese_title": "Anthropic与Google、Broadcom签署多千兆瓦TPU算力协议",
+        "grade": "S"
       },
       {
         "id": "e17ad370a66ceff6daeb22d2f7b306a7",
@@ -243,7 +811,10 @@
         "published_at": "2026-04-07T21:11:23.605972",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260407/p9#a260407p9",
-        "event_id": null
+        "event_id": null,
+        "original_content": "OpenAI宣布设立安全研究员奖学金项目，资助外部研究人员、工程师和从业者开展高级AI系统安全与对齐研究。",
+        "chinese_title": "OpenAI推出AI安全研究员奖学金计划",
+        "grade": "A"
       },
       {
         "id": "0922a02ec16e401fb9c1a5443c6fd6ad",
@@ -270,7 +841,10 @@
         "published_at": "2026-04-07T21:11:23.605988",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1senuit/anthropic_30_billion_arr_9_to_30_in_3_months_wtf/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic年化收入运行率从2025年底的约90亿美元飙升至300亿美元，三个月增长超230%，引发行业对AI商业化速度的广泛讨论。",
+        "chinese_title": "Anthropic年化收入三个月从90亿增至300亿美元",
+        "grade": "S"
       },
       {
         "id": "66c49c3a6adb4f2833e91a3a74b27ece",
@@ -297,7 +871,10 @@
         "published_at": "2026-04-07T21:11:23.606003",
         "source": "Machine Learning",
         "url": "https://www.reddit.com/r/MachineLearning/comments/1senzrn/r_hybrid_attention_for_small_code_models_50x/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "研究者提出结合局部窗口注意力和循环状态的混合注意力机制，在2560万参数Rust代码模型上实现50倍推理加速，同时验证数据规模对模型性能的影响大于架构创新。",
+        "chinese_title": "混合注意力机制让小代码模型推理速度提升50倍",
+        "grade": "A"
       },
       {
         "id": "f6b7e0c62aaca3a4201f899f745b92a5",
@@ -323,7 +900,10 @@
         "published_at": "2026-04-07T21:11:23.606011",
         "source": "Machine Learning",
         "url": "https://www.reddit.com/r/MachineLearning/comments/1selu8x/r_agentic_ai_and_occupational_displacement_a/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "研究者将Acemoglu-Restrepo任务替代框架扩展至Agentic AI场景，分析236种职业在5个美国科技城市的暴露程度，发现软件工程师的替代风险低于信贷分析师和法官。",
+        "chinese_title": "研究：Agentic AI对236种职业的影响分析",
+        "grade": "A"
       },
       {
         "id": "53b193cdd0176973bef751a8f5c142ce",
@@ -350,7 +930,10 @@
         "published_at": "2026-04-07T21:11:23.606019",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260407/p4#a260407p4",
-        "event_id": null
+        "event_id": null,
+        "original_content": "腾讯-backed的Even Realities发布售价600美元的G2智能眼镜，主打无摄像头设计保护用户隐私，Omdia数据显示2025年AI眼镜出货量同比增长322%至870万台。",
+        "chinese_title": "腾讯投资的Even Realities推出600美元无摄像头AI眼镜",
+        "grade": "A"
       },
       {
         "id": "a7bbf380084fc24742c54469f8698238",
@@ -377,7 +960,10 @@
         "published_at": "2026-04-07T21:11:23.606027",
         "source": "Techmeme (apple)",
         "url": "http://www.techmeme.com/260407/p3#a260407p3",
-        "event_id": null
+        "event_id": null,
+        "original_content": "日经亚洲报道称，苹果首款折叠屏iPhone在工程测试阶段遇到技术问题，解决时间超出预期，可能导致量产计划推迟。",
+        "chinese_title": "苹果折叠屏iPhone测试阶段遇阻，量产或推迟",
+        "grade": "A"
       },
       {
         "id": "4a5e177282f4a3ab1f7b4d807bd92683",
@@ -407,7 +993,10 @@
         "published_at": "2026-04-07T21:11:23.606035",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260407/p2#a260407p2",
-        "event_id": null
+        "event_id": null,
+        "original_content": "贝佐斯旗下神秘AI创业公司Project Prometheus成功从OpenAI挖走xAI联合创始人Kyle Kosic，该公司已在旧金山、伦敦和苏黎世设立办公室，员工达数百人。",
+        "chinese_title": "贝佐斯AI创业项目从OpenAI挖角xAI联创Kyle Kosic",
+        "grade": "A+"
       },
       {
         "id": "9776c1e7393ad6d4009bdc3c870008db",
@@ -435,7 +1024,10 @@
         "published_at": "2026-04-07T21:11:23.606050",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1sedcpz/anthropic_have_signed_a_deal_for_multiple/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "社区关注Anthropic与Google、Broadcom的TPU算力合作协议，讨论其对AI基础设施竞争格局的影响。",
+        "chinese_title": "Anthropic签署下一代TPU多千兆瓦算力协议",
+        "grade": "A+"
       },
       {
         "id": "00dc2637ef06944fd57a240b31ca81dd",
@@ -464,7 +1056,10 @@
         "published_at": "2026-04-07T21:11:23.606059",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1secq1h/ronan_farrows_investigation_into_sam_altman/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Ronan Farrow的调查报道揭露Sam Altman涉嫌长期说谎、接受海湾独裁者资金、掩盖内部调查，以及Elon Musk对其展开的监视行动。",
+        "chinese_title": "《纽约客》调查：Sam Altman被指存在长期欺骗行为",
+        "grade": "S"
       },
       {
         "id": "bddc00c0a8ab9ed7cb052272dabaa7d4",
@@ -491,7 +1086,10 @@
         "published_at": "2026-04-07T21:11:23.606081",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1se4a26/voicebased_ai_gets_fda_breakthrough_status_for/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Noah Labs的Vox系统利用语音生物标志物在5秒内筛查心力衰竭，基于超过300万样本训练，已在主要医疗中心完成验证。",
+        "chinese_title": "语音AI获FDA突破性设备认证，5秒检测心力衰竭",
+        "grade": "A"
       },
       {
         "id": "adc50cb295ea2fad8378f8550654d932",
@@ -518,7 +1116,10 @@
         "published_at": "2026-04-07T21:11:23.606122",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260406/p32#a260406p32",
-        "event_id": null
+        "event_id": null,
+        "original_content": "阿里巴巴推出的AI采购工具Accio帮助小型在线卖家对接制造商，3月月活跃用户超过1000万，显示B2B AI应用的强劲需求。",
+        "chinese_title": "阿里Accio AI采购工具月活突破1000万",
+        "grade": "A"
       },
       {
         "id": "b35f6a108f64b7f71eed715b60971b90",
@@ -545,7 +1146,40 @@
         "published_at": "2026-04-07T21:11:23.606131",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260406/p30#a260406p30",
-        "event_id": null
+        "event_id": null,
+        "original_content": "SpaceX在与投行团队的会议中披露IPO计划细节，拟为散户投资者预留大量股份，并计划在路演后于6月举办1500人规模的投资者活动。",
+        "chinese_title": "SpaceX计划为散户投资者预留大量IPO股份",
+        "grade": "A+"
+      },
+      {
+        "id": "a4dec3ea2631cc53cc8773e19ac880dd",
+        "title": "社区讨论：Gemini 2023年广告承诺的多模态能力仍未实现",
+        "original_title": "Gemini ad from December 2023 showcasing a capability that ended up not being real. When will we get multimodal LLMs that can actually process video in real time as accurately?",
+        "summary": "Reddit用户回顾Gemini 2023年12月广告展示的视频实时理解能力，质疑该功能至今仍未真正落地。",
+        "rating": "B",
+        "score": 68,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI产品营销与实际能力的落差可能引发消费者对AI公司过度承诺的质疑，推动行业广告自律标准的建立。",
+        "entities": [
+          "Gemini",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (Gemini)",
+            "url": "https://www.reddit.com/r/singularity/comments/1sdzf2q/gemini_ad_from_december_2023_showcasing_a/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567483,
+        "published_at": "2026-04-07T21:11:23.606089",
+        "source": "Technological Singularity (Gemini)",
+        "url": "https://www.reddit.com/r/singularity/comments/1sdzf2q/gemini_ad_from_december_2023_showcasing_a/",
+        "event_id": null,
+        "original_content": "Reddit用户回顾Gemini 2023年12月广告展示的视频实时理解能力，质疑该功能至今仍未真正落地。",
+        "chinese_title": "社区讨论：Gemini 2023年广告承诺的多模态能力仍未实现",
+        "grade": "B"
       },
       {
         "id": "e560366b96384a6919c228555f6c4d27",
@@ -1130,34 +1764,62 @@
     ],
     "2026-04-06": [
       {
-        "id": "a4dec3ea2631cc53cc8773e19ac880dd",
-        "title": "社区讨论：Gemini 2023年广告承诺的多模态能力仍未实现",
-        "original_title": "Gemini ad from December 2023 showcasing a capability that ended up not being real. When will we get multimodal LLMs that can actually process video in real time as accurately?",
-        "summary": "Reddit用户回顾Gemini 2023年12月广告展示的视频实时理解能力，质疑该功能至今仍未真正落地。",
+        "id": "a2e06d582adbf383bfc9ec390624770c",
+        "title": "开发者反馈Claude Code在复杂工程任务中可用性下降",
+        "original_title": "Issue: Claude Code is unusable for complex engineering tasks with Feb updates",
+        "summary": "GitHub issue显示开发者反馈Claude Code在2月更新后在复杂工程任务中的可用性出现问题，影响开发效率。",
         "rating": "B",
-        "score": 68,
+        "score": 71,
         "type": "product",
         "typeName": "产品发布",
-        "expansion": "AI产品营销与实际能力的落差可能引发消费者对AI公司过度承诺的质疑，推动行业广告自律标准的建立。",
+        "expansion": "AI编程助手的产品迭代可能面临稳定性挑战，用户反馈对产品质量改进至关重要。",
         "entities": [
-          "Gemini",
-          "谷歌"
+          "Anthropic",
+          "Claude"
         ],
         "sourceLinks": [
           {
-            "name": "Technological Singularity (Gemini)",
-            "url": "https://www.reddit.com/r/singularity/comments/1sdzf2q/gemini_ad_from_december_2023_showcasing_a/"
+            "name": "Hacker News",
+            "url": "https://github.com/anthropics/claude-code/issues/42796"
           }
         ],
         "sources": 1,
-        "timestamp": 1775567483,
-        "published_at": "2026-04-07T21:11:23.606089",
-        "source": "Technological Singularity (Gemini)",
-        "url": "https://www.reddit.com/r/singularity/comments/1sdzf2q/gemini_ad_from_december_2023_showcasing_a/",
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357103",
+        "source": "Hacker News",
+        "url": "https://github.com/anthropics/claude-code/issues/42796",
+        "event_id": null
+      },
+      {
+        "id": "64301491e020871c4e4e99fd82c04505",
+        "title": "《纽约客》封面：Sam Altman可能掌控我们的未来，他能被信任吗",
+        "original_title": "Sam Altman may control our future – can he be trusted?",
+        "summary": "《纽约客》杂志长篇报道探讨OpenAI CEO Sam Altman的可信度问题，以及他在AI发展中的关键角色。",
+        "rating": "S",
+        "score": 97,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "媒体对AI领袖的审视可能推动行业透明度和问责制的建立，影响公众对AI技术的信任度。",
+        "entities": [
+          "OpenAI",
+          "The New Yorker",
+          "萨姆·奥尔特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775567490,
+        "published_at": "2026-04-07T21:11:30.357111",
+        "source": "Hacker News",
+        "url": "https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted",
         "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-07T21:13:13.458495",
-  "total_news": 39
+  "last_updated": "2026-04-07T21:13:22.555073",
+  "total_news": 61
 }
