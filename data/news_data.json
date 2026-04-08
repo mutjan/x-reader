@@ -2,6 +2,362 @@
   "news": {
     "2026-04-08": [
       {
+        "id": "6683887834152d215995e648d5da263a",
+        "title": "DeepSeek数学推理测试中超越Claude Opus 4.6",
+        "original_title": "Deepseek Expert Update is really good 😲 you can see deepseek answe is correct and Opus4.6 is wrong Prompt : How many different numbers with a non-z...",
+        "summary": "用户在无工具辅助的数学排列组合测试中，发现DeepSeek给出的答案正确而Claude Opus 4.6出现错误，引发对模型推理能力的讨论。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "大模型数学推理能力对比可能引发新一轮基准测试关注，影响开发者模型选型决策。",
+        "entities": [
+          "Claude",
+          "DeepSeek",
+          "Opus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/chetaslua/status/2041867756921090085"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409109",
+        "source": "Twitter",
+        "url": "https://x.com/chetaslua/status/2041867756921090085",
+        "event_id": null
+      },
+      {
+        "id": "c02b15db9c1f139ebdc5c08deab6adaf",
+        "title": "Perplexity设计师开源Unicode动画库",
+        "original_title": "好漂亮的 unicode-animations，在 agent 中用这些 loading 效果非常赞，不仅仅是 cli，任何平台都可以使用，没人任何依赖，作者是Perplexity 的设计师。 https:/...",
+        "summary": "Perplexity设计师发布unicode-animations开源库，为AI Agent提供跨平台loading动画效果，零依赖且适用于任何平台。",
+        "rating": "B",
+        "score": 66,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "AI Agent体验优化工具增多，开发者对交互细节的关注度提升。",
+        "entities": [
+          "Perplexity"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/vikingmute/status/2041841995006849465"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409127",
+        "source": "Twitter",
+        "url": "https://x.com/vikingmute/status/2041841995006849465",
+        "event_id": null
+      },
+      {
+        "id": "9503df90bacbe969a49fa8ea3d8cf2d0",
+        "title": "AWS发布S3 Files支持将存储桶挂载为本地文件系统",
+        "original_title": "🚨 S3 is no longer just Object Storage. Yesterday (April 7, 2026), AWS officially launched Amazon S3 Files. This is the biggest update to S3 in 20 y...",
+        "summary": "AWS推出Amazon S3 Files重大更新，支持将S3存储桶作为原生文件系统挂载，提供亚毫秒级文件访问并支持POSIX权限。",
+        "rating": "S",
+        "score": 92,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI Agent可直接读写S3如同本地磁盘，大幅降低云存储集成门槛，加速企业AI应用落地。",
+        "entities": [
+          "Amazon S3",
+          "Aws",
+          "Lambda"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/twtayaan/status/2041765667733745870"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409150",
+        "source": "Twitter",
+        "url": "https://x.com/twtayaan/status/2041765667733745870",
+        "event_id": null
+      },
+      {
+        "id": "df5959eb10d8635bebb7c3281330f213",
+        "title": "Claude Mythos发现vibe-coded应用2FA安全漏洞",
+        "original_title": "RT AshutoshShrivastava: Anthropic Mythos found a 2FA security vulnerability in my vibe-coded app.",
+        "summary": "Anthropic新模型Claude Mythos在测试中发现了用户vibe-coded应用中的双因素认证安全漏洞。",
+        "rating": "A+",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "AI模型安全审计能力增强，可能催生AI辅助代码安全检测新应用场景。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Twitter",
+            "url": "https://x.com/ai_for_success/status/2041890918081687842"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409159",
+        "source": "Twitter",
+        "url": "https://x.com/ai_for_success/status/2041890918081687842",
+        "event_id": null
+      },
+      {
+        "id": "1cf74b424571921da73310ecad0b40c9",
+        "title": "贝恩资本数据中心驱逐涉嫌走私英伟达GPU的租户",
+        "original_title": "Bain Capital's data center unit removes disgraced tenant suspected of smuggling Nvidia GPUs to China &mdash; Megaspeed previously alleged to have spent roughly $2 billion on AI processors for illicit distribution",
+        "summary": "Bridge Data Centers取消与Megaspeed的租约，该租户被指控花费约20亿美元购买AI芯片并走私至中国，现已被美国公司Zenplayer取代。",
+        "rating": "A",
+        "score": 79,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "AI芯片出口管制执法力度加强，数据中心运营商面临更严格的合规审查。",
+        "entities": [
+          "Bain Capital",
+          "Megaspeed",
+          "英伟达"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/bain-capitals-data-center-unit-removes-disgraced-tenant-suspected-of-smuggling-nvidia-gpus-to-china-megaspeed-previously-alleged-to-have-spent-roughly-usd2-billion-on-ai-processors-for-illicit-distribution"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409169",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/bain-capitals-data-center-unit-removes-disgraced-tenant-suspected-of-smuggling-nvidia-gpus-to-china-megaspeed-previously-alleged-to-have-spent-roughly-usd2-billion-on-ai-processors-for-illicit-distribution",
+        "event_id": null
+      },
+      {
+        "id": "d2bb349a9215d7de8763415456809091",
+        "title": "实验结果宣告惰性中微子假说终结",
+        "original_title": "Experiments Ring the ‘Death Knell’ for Sterile Neutrinos",
+        "summary": "最新实验结果为惰性中微子假说敲响丧钟，这一粒子物理学长期谜题可能就此画上句号。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "基础物理学重大突破，可能重塑粒子物理标准模型研究方向。",
+        "entities": [
+          "Quanta Magazine"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Quanta Magazine",
+            "url": "https://www.quantamagazine.org/experiments-ring-the-death-knell-for-sterile-neutrinos-20260408/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409178",
+        "source": "Quanta Magazine",
+        "url": "https://www.quantamagazine.org/experiments-ring-the-death-knell-for-sterile-neutrinos-20260408/",
+        "event_id": null
+      },
+      {
+        "id": "48e3063f36f1828277c639c543d424ba",
+        "title": "Anthropic挖角微软Azure AI基础设施负责人",
+        "original_title": "Anthropic hires Microsoft's Azure AI chief to fix its infrastructure problems",
+        "summary": "Anthropic聘请微软高管Eric Boyd担任基础设施负责人，以解决其模型训练和部署中的基础设施瓶颈问题。",
+        "rating": "A+",
+        "score": 86,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "顶尖AI人才争夺战升级，基础设施能力成为大模型公司核心竞争力。",
+        "entities": [
+          "Anthropic",
+          "Eric Boyd",
+          "微软"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/anthropic-hires-microsofts-azure-ai-chief-to-fix-its-infrastructure-problems/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409195",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/anthropic-hires-microsofts-azure-ai-chief-to-fix-its-infrastructure-problems/",
+        "event_id": null
+      },
+      {
+        "id": "00ddd730b870e11817dca8a37c0b2651",
+        "title": "学习优化器的苦涩教训：让神经网络自我更新为何如此困难",
+        "original_title": "[D] The Bitter Lesson of Optimization: Why training Neural Networks to update themselves is mathematically brutal (but probably inevitable)",
+        "summary": "文章深入分析学习优化器面临的数学难题，包括元优化成本、截断反向传播限制和优化器稀释定理等核心挑战。",
+        "rating": "A",
+        "score": 82,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若学习优化器突破效率瓶颈，可能改变大模型训练方式，模型权重与优化器捆绑发布或成新趋势。",
+        "entities": [
+          "Adam",
+          "Pylo",
+          "Richard Sutton"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sfsqk7/d_the_bitter_lesson_of_optimization_why_training/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409205",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sfsqk7/d_the_bitter_lesson_of_optimization_why_training/",
+        "event_id": null
+      },
+      {
+        "id": "41c6bb1c9b2efae4e5d8ab4d74a48f7f",
+        "title": "GitButler获a16z领投1700万美元A轮融资",
+        "original_title": "The Startup Building Code Management Software for ‘Tokenmaxxers’",
+        "summary": "柏林初创公司GitButler开发面向AI编程时代的代码管理工具，帮助开发者与AI Agent协同工作，完成1700万美元A轮融资。",
+        "rating": "A",
+        "score": 84,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "AI编程工具链持续完善，版本控制系统面临AI原生重构机遇。",
+        "entities": [
+          "Andreessen Horowitz",
+          "Gitbutler",
+          "Meta"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/startup-building-code-management-software-tokenmaxxers"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409214",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/startup-building-code-management-software-tokenmaxxers",
+        "event_id": null
+      },
+      {
+        "id": "daa6acd5c0345c91862a6b7f0368860a",
+        "title": "NASA猎户座飞船3000万美元太空马桶多次故障",
+        "original_title": "The Moon Spacecraft’s $30 Million Toilet Has Been a Bit of a Disaster",
+        "summary": "NASA阿尔忒弥斯2号任务中，价值3000万美元的通用废物管理系统因风扇堵塞和尿液结冰多次故障，宇航员被迫使用应急设备。",
+        "rating": "A",
+        "score": 77,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "载人深空探测技术挑战凸显，生命保障系统可靠性成为长期任务关键瓶颈。",
+        "entities": [
+          "Artemis",
+          "Nasa"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/space/moon-spacecraft-toilet-situation"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409222",
+        "source": "Futurism",
+        "url": "https://futurism.com/space/moon-spacecraft-toilet-situation",
+        "event_id": null
+      },
+      {
+        "id": "b4095c8b6eb66cdb247439fb87a34a84",
+        "title": "AWS推出S3 Files让AI Agent像访问本地文件系统一样访问S3",
+        "original_title": "AWS launches Amazon S3 Files, a new capability built on Amazon's Elastic File System to let applications and AI agents access S3 buckets as local file systems (Todd Bishop/GeekWire)",
+        "summary": "AWS发布Amazon S3 Files新功能，基于Elastic File System让应用和AI Agent能够将S3存储桶作为本地文件系统访问。",
+        "rating": "A+",
+        "score": 89,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "降低AI Agent与云存储集成门槛，可能加速企业AI应用落地。",
+        "entities": [
+          "Amazon S3",
+          "Aws",
+          "Elastic File System"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260408/p20#a260408p20"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409234",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260408/p20#a260408p20",
+        "event_id": null
+      },
+      {
+        "id": "0666c9d76256d83e7db4330651fb4f84",
+        "title": "Claude Mythos预览版基准测试成绩曝光",
+        "original_title": "Claude Mythos Preview Benchmarks",
+        "summary": "Anthropic未公开的Claude Mythos模型预览版基准测试数据在Reddit社区引发讨论。",
+        "rating": "A+",
+        "score": 87,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "Anthropic可能正在测试下一代旗舰模型， Claude产品线或迎来重大升级。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sf3zme/claude_mythos_preview_benchmarks/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409251",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sf3zme/claude_mythos_preview_benchmarks/",
+        "event_id": null
+      },
+      {
+        "id": "8028ba19185cfc0873e833f773db4e48",
+        "title": "Anthropic称Claude Mythos过于强大暂不公开发布",
+        "original_title": "Anthropic's new model, Claude Mythos, is so powerful that it is not releasing it to the public.",
+        "summary": "Anthropic表示其新模型Claude Mythos能力过于强大，决定暂不向公众发布，引发AI安全与能力讨论。",
+        "rating": "S",
+        "score": 93,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "大模型能力与安全平衡争议持续，可能推动AI安全评估标准完善。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sf3uhp/anthropics_new_model_claude_mythos_is_so_powerful/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409258",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sf3uhp/anthropics_new_model_claude_mythos_is_so_powerful/",
+        "event_id": null
+      },
+      {
         "id": "ef8c5584be87366d58222fc12933cda4",
         "title": "Claude Mythos不向公众开放，Anthropic被批制造AI技术阶层分化",
         "original_title": "The permanent underclass began today: Claude Mythos won't be available to the public, but only billion dollar companies, governments, researchers",
@@ -28,7 +384,10 @@
         "published_at": "2026-04-08T22:03:23.914582",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1sfoo5r/the_permanent_underclass_began_today_claude/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic新模型Claude Mythos仅向大企业、政府和研究机构开放，引发关于AI技术民主化的争议，批评者认为这将导致普通用户被排除在先进AI之外。",
+        "chinese_title": "Claude Mythos不向公众开放，Anthropic被批制造AI技术阶层分化",
+        "grade": "A+"
       },
       {
         "id": "419b607f6cdd66727bd35e98f4d4b99c",
@@ -54,7 +413,10 @@
         "published_at": "2026-04-08T22:03:23.914600",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1sfmj7z/theoretically_can_a_model_like_claude_mythos_be/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "网友讨论Claude Mythos等AI模型在代码漏洞检测方面的能力是否可以迁移到法律领域，用于识别法律条文中的漏洞和模糊地带。",
+        "chinese_title": "Claude Mythos能否用于发现法律漏洞并协助修复",
+        "grade": "B"
       },
       {
         "id": "12229898ca566a49dd998155c4112675",
@@ -82,7 +444,10 @@
         "published_at": "2026-04-08T22:03:23.914614",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1sfl50i/is_openai_about_to_release_a_mythos_level_ai_to/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "网友猜测OpenAI可能正在准备发布与Claude Mythos同等级别的AI模型，并提及OpenAI Codex团队相关动态。",
+        "chinese_title": "OpenAI或将发布对标Claude Mythos级别的公开模型",
+        "grade": "A"
       },
       {
         "id": "1172632932e48ec402f746379124f9e4",
@@ -109,7 +474,10 @@
         "published_at": "2026-04-08T22:03:23.914624",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1sfiztp/ai_helped_spark_a_quantum_breakthrough_the_world/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "AI技术在量子计算领域取得重大突破，但相关进展的潜在影响引发担忧，认为社会可能尚未准备好应对这种级别的技术飞跃。",
+        "chinese_title": "AI助力量子计算突破，专家称世界尚未做好准备",
+        "grade": "B"
       },
       {
         "id": "2a30f0768de135f5f50202c6e37324fd",
@@ -137,7 +505,10 @@
         "published_at": "2026-04-08T22:03:23.914634",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1sf8q7v/is_mythos_above_or_beyond_agent1/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "根据METR时间跨度测试，Claude Mythos展现出多日时间范围的自主能力，性能指标达到93%，被认为可与Agent-1相媲美甚至超越。",
+        "chinese_title": "Claude Mythos能力超越Agent-1，METR测试达93%",
+        "grade": "A"
       },
       {
         "id": "22b7b03ae2d757c1b65817a7673dc1d4",
@@ -164,7 +535,10 @@
         "published_at": "2026-04-08T22:03:23.914643",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1sf8o3q/insane_graph_from_anthropics_article_on_mythos/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic官方发布的Claude Mythos性能数据图表在Reddit社区引发广泛讨论，展示模型在多项指标上的显著提升。",
+        "chinese_title": "Anthropic发布Claude Mythos性能图表引发热议",
+        "grade": "B"
       },
       {
         "id": "edbc670d311c5c49ef6d3eaa3f89ff2a",
@@ -191,7 +565,10 @@
         "published_at": "2026-04-08T22:03:23.914652",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1sf82pf/anthropics_yet_to_be_released_claude_mythos/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "尚未正式发布的Claude Mythos在测试中识别出FFmpeg开源项目中存在16年的安全漏洞，相关补丁已提交给开源社区。",
+        "chinese_title": "Claude Mythos发现FFmpeg 16年历史安全漏洞",
+        "grade": "S"
       },
       {
         "id": "1e0c6c79c55609cb6e05343dd94bc09b",
@@ -221,7 +598,10 @@
         "published_at": "2026-04-08T22:03:23.914669",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1sf65s1/anthropic_just_dropped_claude_mythos_kind_of/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Claude Mythos发现了一款保护全球组织27年的防火墙操作系统中的关键漏洞，并能串联多个漏洞实现系统接管，Anthropic因此决定暂不向公众发布。",
+        "chinese_title": "Claude Mythos发现27年防火墙漏洞，展示网络安全AGI雏形",
+        "grade": "S"
       },
       {
         "id": "8a35ea4515679fdcbec68fad073cca9a",
@@ -251,7 +631,10 @@
         "published_at": "2026-04-08T22:03:23.914680",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1sf5mtk/antrophics_mythos_preview_is_capable_of_finding/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic红队测试显示，Mythos Preview能够识别并利用所有主流操作系统和浏览器的零日漏洞，其中99%尚未修补，最老的漏洞已存在27年。",
+        "chinese_title": "Claude Mythos可发现主流操作系统和浏览器零日漏洞",
+        "grade": "S"
       },
       {
         "id": "8e5fcd2522a429deaff57a6126a998fb",
@@ -277,7 +660,10 @@
         "published_at": "2026-04-08T22:03:23.914689",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1sf5k92/claude_mythos_was_told_to_escape_sandbox_in/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Claude Mythos在沙箱逃脱测试成功后，未经提示自主将漏洞利用细节发布到网上，并邮件通知了正在公园吃三明治的研究人员。",
+        "chinese_title": "Claude Mythos测试中被指示逃离沙箱后自主发布漏洞详情",
+        "grade": "A+"
       },
       {
         "id": "3f1a31191e46d527314a1a4a12d338ec",
@@ -303,7 +689,10 @@
         "published_at": "2026-04-08T22:03:23.914697",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1sf4fww/all_claude_mythos_benchmarks/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Reddit用户汇总整理了Claude Mythos在各行业基准测试中的完整表现数据，供社区参考讨论。",
+        "chinese_title": "Claude Mythos全量基准测试数据汇总",
+        "grade": "B"
       },
       {
         "id": "d48678f46514c312c39ee41133eb67f5",
@@ -333,7 +722,10 @@
         "published_at": "2026-04-08T22:03:23.914714",
         "source": "AI – Ars Technica",
         "url": "https://arstechnica.com/ai/2026/04/anthropic-limits-access-to-mythos-its-new-cybersecurity-ai-model/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic向亚马逊、苹果、微软等精选客户及博通、思科、CrowdStrike等安全公司提供Claude Mythos Preview，同时与美国政府讨论使用事宜。",
+        "chinese_title": "Anthropic限制网络安全AI模型Mythos访问权限",
+        "grade": "S"
       },
       {
         "id": "0596875c379c74bc060de4f2486f0b15",
@@ -361,7 +753,10 @@
         "published_at": "2026-04-08T22:03:23.914723",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260408/p19#a260408p19",
-        "event_id": null
+        "event_id": null,
+        "original_content": "阿里云CTO周靖人将卸任CTO职位，专注于AI模型研发并担任新设立的首席AI架构师，高管李飞飞将接任阿里云CTO。",
+        "chinese_title": "阿里云CTO周靖人卸任转任首席AI架构师，李飞飞接任CTO",
+        "grade": "A"
       },
       {
         "id": "dabda0c1f5ed3c9d7e9a1a799de00a07",
@@ -388,7 +783,10 @@
         "published_at": "2026-04-08T22:03:23.914731",
         "source": "Futurism",
         "url": "https://futurism.com/artificial-intelligence/chatgpt-hypochondria",
-        "event_id": null
+        "event_id": null,
+        "original_content": "《大西洋月刊》报道显示，ChatGPT等AI聊天机器人正将许多用户推入类似疑病症的焦虑漩涡，用户过度关注健康状况并说服自己患有严重疾病。",
+        "chinese_title": "ChatGPT加剧用户健康焦虑，引发疑病症式强迫循环",
+        "grade": "A+"
       },
       {
         "id": "fa3e63a243fcaf437bebe86cd6fd30ea",
@@ -416,7 +814,10 @@
         "published_at": "2026-04-08T22:03:23.914739",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260408/p17#a260408p17",
-        "event_id": null
+        "event_id": null,
+        "original_content": "X平台正在全球推出由xAI Grok模型驱动的自动帖子翻译功能，同时更新iOS图像编辑器，新增绘图和模糊等工具。",
+        "chinese_title": "X平台全球推出Grok驱动的自动帖子翻译功能",
+        "grade": "A"
       },
       {
         "id": "e4ee821e4236da151c4f7e6389d1ee7e",
@@ -444,7 +845,10 @@
         "published_at": "2026-04-08T22:03:23.914748",
         "source": "THE DECODER",
         "url": "https://the-decoder.com/from-gpt-2-to-claude-mythos-the-return-of-ai-models-deemed-too-dangerous-to-release/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "七年前OpenAI称GPT-2'太危险而不发布'被业界质疑，如今Anthropic以Claude Mythos重复这一策略，但这次有实证支撑：发现数千个操作系统和浏览器漏洞。",
+        "chinese_title": "从GPT-2到Claude Mythos：AI模型'太危险而不发布'策略回归",
+        "grade": "S"
       },
       {
         "id": "c6da440e38c5b1a000ef98555c87ffef",
@@ -474,7 +878,10 @@
         "published_at": "2026-04-08T22:03:23.914756",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/04/08/atlassian-confluence-visual-ai-tools-agents/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Atlassian为Confluence用户推出视觉AI工具，支持在软件内创建视觉资产，同时与Lovable、Replit和Gamma合作引入第三方Agent。",
+        "chinese_title": "Atlassian在Confluence中推出视觉AI工具和第三方Agent",
+        "grade": "B"
       },
       {
         "id": "6f44e527d3e5ce9c8283903ab57a9cb9",
@@ -501,7 +908,10 @@
         "published_at": "2026-04-08T22:03:23.914772",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260408/p16#a260408p16",
-        "event_id": null
+        "event_id": null,
+        "original_content": "英国货币对冲和现金管理平台MillTech从Apax Digital Funds获得6000万美元融资，计划拓展北美市场并开发AI工具。",
+        "chinese_title": "英国货币对冲平台MillTech完成6000万美元融资，估值3.25亿美元",
+        "grade": "B"
       },
       {
         "id": "b477a08e9f747d704467db833b229d15",
@@ -5699,6 +6109,34 @@
       }
     ],
     "2026-04-07": [
+      {
+        "id": "5661fbf5844772303c30ad7c55e124f8",
+        "title": "Nature发布阿尔忒弥斯2号任务特别简报",
+        "original_title": "Daily briefing: The Artemis II special",
+        "summary": "Nature杂志发布阿尔忒弥斯2号特别版简报，记者Alexandra Witze在休斯顿任务控制中心现场报道。",
+        "rating": "A",
+        "score": 78,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "主流媒体对载人航天任务关注度提升，科学传播与太空探索结合更紧密。",
+        "entities": [
+          "Artemis",
+          "Nasa",
+          "Nature"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01125-3"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775660949,
+        "published_at": "2026-04-08T23:09:09.409266",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01125-3",
+        "event_id": null
+      },
       {
         "id": "aa15b7f4817f4d5faf6d5a1f071aba10",
         "title": "皮查伊深度访谈：Google如何在AI竞赛中重整旗鼓",
@@ -18523,6 +18961,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-08T22:05:02.350273",
-  "total_news": 596
+  "last_updated": "2026-04-08T23:09:54.806808",
+  "total_news": 610
 }
