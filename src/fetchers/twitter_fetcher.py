@@ -103,7 +103,7 @@ class TwitterFetcher(BaseFetcher):
                 raw_item = RawNewsItem(
                     title=title,
                     content=content,
-                    source=f"Twitter @{creator}" if creator != "Twitter" else "Twitter",
+                    source=f"x({creator})" if creator != "Twitter" else "x",
                     url=link,
                     published_at=published_at,
                     raw_data={

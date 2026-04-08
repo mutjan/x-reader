@@ -8,8 +8,8 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent.parent
-NEWS_FILE = BASE_DIR / "news_data.json"
-EVENT_FILE = BASE_DIR / "event_groups.json"
+NEWS_FILE = BASE_DIR / "data" / "news_data.json"
+EVENT_FILE = BASE_DIR / "data" / "event_groups.json"
 
 def main():
     today = datetime.now().date()

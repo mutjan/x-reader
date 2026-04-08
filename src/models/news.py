@@ -116,6 +116,30 @@ class ProcessedNewsItem:
         }
 
     @classmethod
+    def from_frontend_dict(cls, data: Dict[str, Any]) -> 'ProcessedNewsItem':
+        """从前端格式(to_frontend_dict的输出)反向加载，自动处理字段映射"""
+        published_at = datetime.fromisoformat(data["published_at"]) if data.get("published_at") else datetime.now()
+        processed_at = datetime.fromisoformat(data.get("processed_at", "")) if data.get("processed_at") else datetime.now()
+
+        return cls(
+            id=data["id"],
+            original_title=data.get("original_title", data.get("title", "")),
+            original_content=data.get("original_content", ""),
+            chinese_title=data.get("chinese_title", data.get("title", "")),
+            summary=data.get("summary", ""),
+            grade=data.get("grade", data.get("rating", "")),
+            score=data.get("score", 0),
+            news_type=data.get("type", ""),
+            extension=data.get("extension", data.get("expansion", "")),
+            entities=data.get("entities", []),
+            source=data.get("source", ""),
+            url=data.get("url", ""),
+            published_at=published_at,
+            processed_at=processed_at,
+            event_id=data.get("event_id")
+        )
+
+    @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> 'ProcessedNewsItem':
         """从字典加载"""
         published_at = datetime.fromisoformat(data["published_at"]) if data.get("published_at") else datetime.now()
@@ -138,27 +162,6 @@ class ProcessedNewsItem:
             processed_at=processed_at,
             event_id=data.get("event_id")
         )
-
-    @classmethod
-    def from_frontend_dict(cls, data: Dict[str, Any]) -> 'ProcessedNewsItem':
-        """从前端存储格式（news_data.json）加载，自动兼容字段映射
-
-        前端格式: title (中文标题), rating (评分), summary (摘要)
-        内部格式: original_title, original_content, chinese_title, grade
-        """
-        # 自动兼容转换：前端格式 -> 内部格式
-        if "original_title" not in data:
-            data["original_title"] = data.get("title", "")
-        if "original_content" not in data:
-            data["original_content"] = data.get("summary", "")
-        if "chinese_title" not in data:
-            data["chinese_title"] = data.get("title", "")
-        if "grade" not in data:
-            data["grade"] = data.get("rating", "B")
-        if "type" not in data and "news_type" in data:
-            data["type"] = data["news_type"]
-
-        return cls.from_dict(data)
 
 class EntityNormalizer:
     """实体标准化器，统一实体表述"""

@@ -1,92 +1,245 @@
 [
   {
     "index": 0,
-    "original_url": "https://www.reddit.com/r/singularity/comments/1se6obs/openai_just_dropped_their_blueprint_for_the/",
-    "chinese_title": "OpenAI发布超级智能转型蓝图：提议公共财富基金与四天工作制",
-    "summary": "OpenAI正式发布超级智能时代政策蓝图，呼吁政府在社会契约层面进行大规模改革，包括建立公共财富基金、推行四天工作制、对自动化劳动征税等激进经济政策，同时提出针对ASI对齐和生存风险的监管框架。",
-    "type": "safety",
-    "extension": "此政策蓝图可能引发全球范围内关于AI治理的立法竞赛，影响科技巨头与政府关系，并推动UBI（全民基本收入）相关社会实验的落地。",
-    "entities": ["OpenAI", "Sam Altman", "超级智能", "公共财富基金"]
+    "original_url": "https://x.com/scaling01/status/2041983808702972248",
+    "chinese_title": "Meta发布Muse Spark多模态推理模型，物理推理基准成绩大幅提升",
+    "summary": "Meta发布Muse Spark模型，在CritPt物理推理基准上从Llama 4的0分跃升至11.3分，该基准由专家物理学家设计的研究级物理问题组成。",
+    "type": "product",
+    "extension": "Meta模型能力提升可能改变AI研发竞争格局，影响相关芯片和云服务需求",
+    "entities": ["Meta", "Muse Spark", "Llama"]
   },
   {
     "index": 1,
-    "original_url": "https://www.reddit.com/r/singularity/comments/1se5dcs/axios_sam_altman_states_superintelligence_is_so/",
-    "chinese_title": "Sam Altman称超级智能临近，美国需要类似罗斯福新政的社会契约变革",
-    "summary": "OpenAI CEO Sam Altman在接受Axios采访时表示，超级智能的到来如此接近且具有颠覆性，美国需要一场堪比进步时代和大萧条时期新政的社会契约重塑，以应对大规模失业、网络攻击和社会动荡等风险。",
-    "type": "opinion",
-    "extension": "Altman的表态可能加速政策制定者对AI失业问题的关注，推动失业保险和社会安全网的自动扩展机制立法。",
-    "entities": ["Sam Altman", "OpenAI", "超级智能", "Axios"]
+    "original_url": "https://x.com/AndrewCurran_/status/2041941680837030394",
+    "chinese_title": "马斯克确认xAI正在训练10万亿参数Grok模型",
+    "summary": "Elon Musk确认xAI正在训练10万亿参数的Grok模型，预计Meta也将在年底前推出Mythos级别的大模型。",
+    "type": "industry",
+    "extension": "超大模型竞赛升级将推高算力需求，影响英伟达等芯片股和相关产业链",
+    "entities": ["xAI", "Grok", "Elon Musk", "Meta"]
   },
   {
     "index": 2,
-    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1sedqda/d_tested_model_routing_on_financial_ai_datasets/",
-    "chinese_title": "金融AI模型路由基准测试：成本最高可省89%",
-    "summary": "研究者在金融AI数据集上测试基于提示复杂度的模型路由策略，发现相比统一使用Claude Opus，灵活路由策略可实现最高89%的成本节约，同时ConvFinQA等复杂任务仍能保持高质量输出。",
-    "type": "research",
-    "extension": "此研究成果可能推动模型路由工具的落地应用，帮助企业在保证质量的同时显著降低LLM调用成本。",
-    "entities": ["Claude", "Qwen", "Gemma", "HuggingFace"]
+    "original_url": "https://x.com/kr0der/status/2041939666836820023",
+    "chinese_title": "Claude Mythos模型开始早期测试",
+    "summary": "有用户获得Claude Mythos模型的早期访问权限，这是Anthropic的下一代大模型。",
+    "type": "product",
+    "extension": "Anthropic新模型发布将影响AI应用开发生态和云服务竞争格局",
+    "entities": ["Claude", "Anthropic"]
   },
   {
     "index": 3,
-    "original_url": "https://www.theinformation.com/articles/openais-never-ending-soap-opera",
-    "chinese_title": "OpenAI管理层动荡持续：CFO质疑IPO准备，Altman诚信再遭质疑",
-    "summary": "OpenAI财务总监Sarah Friar对公司IPO准备情况和AI服务器承诺能力表示担忧，《纽约客》长篇报道则再次质疑CEO Sam Altman的管理风格和可信度，两人能否共同面对投资者成为疑问。",
-    "type": "personnel",
-    "extension": "管理层不稳定可能影响OpenAI的IPO进程和估值，同时加剧与微软等关键合作伙伴的紧张关系。",
-    "entities": ["OpenAI", "Sam Altman", "Sarah Friar", "The Information"]
+    "original_url": "https://x.com/maria_rcks/status/2041937610168234266",
+    "chinese_title": "Meta发布Muse Spark原生多模态推理模型",
+    "summary": "Meta Superintelligence Labs发布Muse Spark，支持工具使用、视觉思维链和多智能体编排的原生多模态推理模型。",
+    "type": "product",
+    "extension": "多模态能力竞争加剧，可能影响视觉AI和自动化工具市场格局",
+    "entities": ["Meta", "Muse Spark"]
   },
   {
     "index": 4,
-    "original_url": "https://www.theinformation.com/briefings/anthropic-says-topped-30-billion-annualized-revenue",
-    "chinese_title": "Anthropic年化收入突破300亿美元，与OpenAI差距快速缩小",
-    "summary": "Anthropic宣布年化收入已超过300亿美元，自2月底以来增长58%，正快速缩小与OpenAI的收入差距。OpenAI在2月的年化收入约为250亿美元。",
-    "type": "financial",
-    "extension": "Anthropic的快速增长表明AI市场竞争加剧，可能引发新一轮融资和估值调整，影响投资者对AI赛道的整体判断。",
-    "entities": ["Anthropic", "Claude", "OpenAI"]
+    "original_url": "https://x.com/turingou/status/2041933856476139806",
+    "chinese_title": "Anthropic推出Claude托管智能体平台公测版",
+    "summary": "Anthropic发布Claude Managed Agents，提供从原型到生产部署的完整智能体基础设施，支持大规模智能体构建和部署。",
+    "type": "product",
+    "extension": "智能体平台化趋势加速，可能冲击现有智能体创业公司的市场空间",
+    "entities": ["Claude", "Anthropic"]
   },
   {
     "index": 5,
-    "original_url": "https://www.theinformation.com/briefings/openai-asks-attorneys-general-investigate-musk",
-    "chinese_title": "OpenAI要求加州和特拉华州总检察长调查马斯克",
-    "summary": "OpenAI首席战略官Jason Kwon致信加州和特拉华州总检察长，要求调查Elon Musk涉嫌破坏OpenAI的行为，称Musk试图通过诉讼和公开言论干扰公司运营和融资。",
-    "type": "industry",
-    "extension": "OpenAI与Musk的法律战可能持续升级，影响OpenAI的转型为营利性公司的进程，以及xAI的市场竞争格局。",
-    "entities": ["OpenAI", "Elon Musk", "Jason Kwon", "xAI"]
+    "original_url": "https://x.com/rohanpaul_ai/status/2041931510421582203",
+    "chinese_title": "Meta发布EUPE高效通用感知编码器，小模型性能突破",
+    "summary": "Meta提出EUPE训练方法，通过1.9B代理模型整合专家知识后再压缩到86M小模型，在图像识别、密集预测和VLM任务上达到专家级精度。",
+    "type": "research",
+    "extension": "小模型性能提升将推动端侧AI应用普及，影响手机、AR眼镜等边缘设备市场",
+    "entities": ["Meta", "EUPE"]
   },
   {
     "index": 6,
-    "original_url": "https://futurism.com/artificial-intelligence/sources-sam-altman-sociopath",
-    "chinese_title": "《纽约客》调查：内部人士称Sam Altman为「反社会人格」",
-    "summary": "《纽约客》长篇调查报道引用多位OpenAI内部人士和前董事会成员的话，形容Sam Altman为「反社会人格」和「病态说谎者」，称其将AI安全作为获取信任的工具，事后却背弃承诺。",
-    "type": "opinion",
-    "extension": "报道可能进一步损害Altman的公众形象，加剧OpenAI内部对安全承诺的质疑，并影响监管机构和合作伙伴对公司的信任。",
-    "entities": ["Sam Altman", "OpenAI", "Dario Amodei", "The New Yorker"]
+    "original_url": "https://x.com/avstorm/status/2041918419021275196",
+    "chinese_title": "Meta AI更换新Logo",
+    "summary": "Meta AI产品更换了全新的品牌Logo标识。",
+    "type": "product",
+    "extension": "品牌升级通常伴随产品战略调整，值得关注后续产品路线图变化",
+    "entities": ["Meta"]
   },
   {
     "index": 7,
-    "original_url": "https://www.theinformation.com/articles/can-tensorwave-leapfrog-nvidias-big-moat",
-    "chinese_title": "TensorWave挑战Nvidia CUDA护城河，AMD芯片获OpenAI和Meta大单",
-    "summary": "AI芯片租赁公司TensorWave主办「Beyond Summit」大会，探讨Nvidia CUDA的替代方案。文章透露OpenAI和Meta近期与AMD达成大规模芯片采购协议，显示AI实验室开始认真考虑非Nvidia方案。",
-    "type": "hardware",
-    "extension": "若AMD芯片在大型AI训练中获得更广泛采用，可能动摇Nvidia的市场主导地位，推动AI芯片供应链多元化。",
-    "entities": ["TensorWave", "Nvidia", "AMD", "OpenAI", "Meta"]
+    "original_url": "https://x.com/agrimsingh/status/2041916589906464820",
+    "chinese_title": "开发者基于Karpathy研究框架推出商务舱机票自动搜索工具",
+    "summary": "开发者受Karpathy自动研究循环启发，使用Codex和GPT-5.4 mini开发autofare工具，自动搜索商务舱机票优惠。",
+    "type": "tool",
+    "extension": "AI自动化工具向消费场景渗透，可能改变旅游和出行预订行业",
+    "entities": ["Karpathy", "Codex", "GPT", "OpenAI"]
   },
   {
     "index": 8,
-    "original_url": "https://futurism.com/artificial-intelligence/sam-altman-awkward-reaction-chatgpt-issue",
-    "chinese_title": "Sam Altman面对ChatGPT计时器Bug尴尬回应：可能还要一年才能修复",
-    "summary": "在播客采访中，Sam Altman被展示一段ChatGPT语音模式计时器出错的 viral 视频，AI坚持错误计时并试图说服用户。Altman尴尬回应称这是「已知问题」，估计需要一年左右才能修复。",
+    "original_url": "https://x.com/jack_w_rae/status/2041952842920161528",
+    "chinese_title": "Muse Spark展示视觉推理能力，可根据图片生成可玩数独游戏",
+    "summary": "Muse Spark展示多模态能力，能够从数独板图片输入使用Python工具生成网页版可玩数独游戏。",
     "type": "product",
-    "extension": "该事件暴露ChatGPT语音模式的工具调用缺陷，可能促使OpenAI加速相关功能的完善，同时也引发对AI「煤气灯」式回应的用户信任问题。",
-    "entities": ["Sam Altman", "OpenAI", "ChatGPT"]
+    "extension": "视觉-代码生成能力突破将推动低代码/无代码开发工具演进",
+    "entities": ["Muse Spark", "Meta"]
   },
   {
     "index": 9,
-    "original_url": "https://www.youtube.com/watch?v=2g1e1QUiY8s",
-    "chinese_title": "LG Uplus联合OpenAI推出下一代AICC智能客服系统",
-    "summary": "LG Uplus与OpenAI工程师合作开发下一代AICC（AI联络中心）「Agentic AICC」，基于OpenAI Realtime API提供超低延迟AI客服，并配备可自主解决问题的规划代理。",
+    "original_url": "https://x.com/aryanguptacs/status/2041907973878845735",
+    "chinese_title": "开发者在OpenAI参数高尔夫挑战中创造新纪录",
+    "summary": "开发者在OpenAI参数高尔夫挑战中提交解决方案，以0.0305的优势打破当前纪录。",
+    "type": "research",
+    "extension": "模型压缩技术竞赛持续，影响边缘部署和推理成本优化方向",
+    "entities": ["OpenAI"]
+  },
+  {
+    "index": 10,
+    "original_url": "https://x.com/dpratyush02/status/2041875218713784762",
+    "chinese_title": "Mercor三位22岁创始人成为最年轻白手起家亿万富翁",
+    "summary": "AI招聘平台Mercor的三位联合创始人以22岁年龄成为最年轻白手起家亿万富翁，打破扎克伯格23岁的纪录。",
+    "type": "funding",
+    "extension": "AI应用层创业公司估值飙升，反映市场对AI原生应用的追捧",
+    "entities": ["Mercor"]
+  },
+  {
+    "index": 11,
+    "original_url": "https://x.com/swyx/status/2041831305319739621",
+    "chinese_title": "Meta员工使用Anthropic服务占其收入三分之一",
+    "summary": "The Information报道Meta员工使用60.2T tokens占Anthropic约30亿美元ARR的三分之一，可能是史上最大企业合同。",
+    "type": "industry",
+    "extension": "大企业AI使用数据成为衡量生产力的指标，可能推动企业AI支出预算扩张",
+    "entities": ["Meta", "Anthropic"]
+  },
+  {
+    "index": 12,
+    "original_url": "http://www.techmeme.com/260408/p38#a260408p38",
+    "chinese_title": "华盛顿上诉法院拒绝暂停五角大楼对Anthropic供应链风险认定",
+    "summary": "美国华盛顿特区联邦上诉法院拒绝阻止五角大楼将Anthropic列入国家安全供应链风险名单，此前加州法官曾批准初步禁令。",
+    "type": "safety",
+    "extension": "AI公司面临更严格的国家安全审查，可能影响行业监管政策走向",
+    "entities": ["Anthropic", "五角大楼"]
+  },
+  {
+    "index": 13,
+    "original_url": "https://www.wired.com/story/anthropic-appeals-court-ruling/",
+    "chinese_title": "上诉法院维持Anthropic供应链风险标签",
+    "summary": "AI公司Anthropic在与美国国防部供应链风险认定的法律战中面临相互冲突的法院裁决。",
+    "type": "safety",
+    "extension": "AI监管法律战持续，结果将影响AI公司与政府合作的政策边界",
+    "entities": ["Anthropic"]
+  },
+  {
+    "index": 14,
+    "original_url": "https://www.theinformation.com/briefings/workday-cto-joins-anthropic-amid-startups-push-build-hr-apps",
+    "chinese_title": "Workday CTO跳槽Anthropic，AI公司加速布局HR应用",
+    "summary": "Workday首席技术官Peter Bailis离职加入Anthropic，正值Anthropic推动构建HR应用程序之际。",
+    "type": "personnel",
+    "extension": "传统SaaS高管流向AI初创公司，反映AI对企业管理软件市场的冲击",
+    "entities": ["Workday", "Anthropic", "Peter Bailis"]
+  },
+  {
+    "index": 15,
+    "original_url": "http://www.techmeme.com/260408/p37#a260408p37",
+    "chinese_title": "OpenAI基金会将向阿尔茨海默病研究投入超1亿美元",
+    "summary": "OpenAI基金会计划本月向六家机构提供超过1亿美元资助，用于支持和加速阿尔茨海默病研究。",
+    "type": "society",
+    "extension": "AI for Science投入加大，可能推动医疗健康领域AI应用突破",
+    "entities": ["OpenAI"]
+  },
+  {
+    "index": 16,
+    "original_url": "https://www.reddit.com/r/singularity/comments/1sg2wwj/claude_opus_vs_mythos/",
+    "chinese_title": "Claude Opus与Mythos模型对比讨论",
+    "summary": "Reddit用户讨论Claude Opus与Mythos模型的性能对比。",
+    "type": "opinion",
+    "extension": "模型性能对比讨论反映用户对AI能力的关注焦点",
+    "entities": ["Claude"]
+  },
+  {
+    "index": 17,
+    "original_url": "https://www.reddit.com/r/singularity/comments/1sg0y6h/so_this_week_claude_wiped_agentic_ai_startups/",
+    "chinese_title": "Claude托管智能体功能引发对智能体创业公司的冲击讨论",
+    "summary": "Claude发布托管智能体功能后，社区讨论认为这将使许多智能体创业公司失去竞争力，推理计算市场可能爆发增长。",
+    "type": "opinion",
+    "extension": "大模型厂商平台化可能挤压中间层创业公司生存空间",
+    "entities": ["Claude"]
+  },
+  {
+    "index": 18,
+    "original_url": "https://www.reddit.com/r/singularity/comments/1sfzheh/meta_unveils_muse_spark_its_first_new_model_since/",
+    "chinese_title": "Meta发布Muse Spark模型，能否挽回Llama 4失利局面",
+    "summary": "Meta发布由Meta Superintelligence Labs开发的首个模型Muse Spark，基准测试显示其与OpenAI、Anthropic和Google的领先模型具有竞争力。",
     "type": "product",
-    "extension": "该产品可能成为企业AI客服的新标准，推动更多电信运营商和大型企业采用类似的AI客服解决方案。",
-    "entities": ["LG Uplus", "OpenAI", "AICC", "Realtime API"]
+    "extension": "Meta AI战略重启，若 benchmark 验证成功将改变大模型竞争格局",
+    "entities": ["Meta", "Muse Spark", "OpenAI", "Anthropic", "Google"]
+  },
+  {
+    "index": 19,
+    "original_url": "https://www.reddit.com/r/singularity/comments/1sfzgvy/meta_is_back_they_really_their_top_tier_sota/",
+    "chinese_title": "Meta发布顶级SOTA模型Muse Spark",
+    "summary": "Reddit用户讨论Meta发布Muse Spark模型，认为Meta重新回归AI竞争前沿。",
+    "type": "opinion",
+    "extension": "社区对Meta模型能力恢复的讨论反映市场对竞争格局变化的关注",
+    "entities": ["Meta", "Muse Spark"]
+  },
+  {
+    "index": 20,
+    "original_url": "https://www.reddit.com/r/singularity/comments/1sfycdx/openai_directing_over_100m_to_scientists_for/",
+    "chinese_title": "OpenAI向阿尔茨海默病研究投入超1亿美元",
+    "summary": "Reddit社区讨论OpenAI向科学家投入超过1亿美元用于阿尔茨海默病研究。",
+    "type": "society",
+    "extension": "AI for Science获得大额资助，推动AI在生物医学领域的应用",
+    "entities": ["OpenAI"]
+  },
+  {
+    "index": 21,
+    "original_url": "https://www.reddit.com/r/singularity/comments/1sft6f8/sam_altman_and_vinod_khosla_agree_ai_will_break/",
+    "chinese_title": "Sam Altman与Vinod Khosla共识：AI将改变经济，建议取消大多数美国人所得税",
+    "summary": "OpenAI发布政策白皮书提出经济改革蓝图，与Khosla此前提议呼应，建议取消年收入10万美元以下美国人的联邦所得税。",
+    "type": "opinion",
+    "extension": "AI时代经济政策讨论升温，可能影响未来税收和社会保障政策走向",
+    "entities": ["Sam Altman", "Vinod Khosla", "OpenAI"]
+  },
+  {
+    "index": 22,
+    "original_url": "https://www.nature.com/articles/s41586-026-10356-3",
+    "chinese_title": "Nature：费米子原子实现高保真碰撞量子门",
+    "summary": "研究人员在光晶格中实现基于受控相互作用的高保真复合对交换门，展示长贝尔态寿命，向全数字费米子量子计算机迈出重要一步。",
+    "type": "research",
+    "extension": "量子计算硬件突破将推动量子计算机实用化进程，影响密码学和药物研发等领域",
+    "entities": ["Nature"]
+  },
+  {
+    "index": 23,
+    "original_url": "https://www.nature.com/articles/s41586-026-10457-z",
+    "chinese_title": "Nature论文更正：神经活动基础模型预测新刺激类型响应",
+    "summary": "Nature发布论文更正，涉及神经活动基础模型预测对新刺激类型响应的研究。",
+    "type": "research",
+    "extension": "神经科学基础模型研究持续进展，推动脑机接口和AI理解人类认知",
+    "entities": ["Nature"]
+  },
+  {
+    "index": 24,
+    "original_url": "https://www.nature.com/articles/d41586-026-01107-5",
+    "chinese_title": "Nature：基因变异影响GLP-1减肥药效果和副作用",
+    "summary": "近2.8万人研究发现基因变异可解释GLP-1减肥药效果差异，并识别出增加胃肠道副作用风险的基因变异。",
+    "type": "research",
+    "extension": "个性化医疗研究推进，可能推动减肥药精准医疗和伴随诊断发展",
+    "entities": ["Nature", "GLP-1"]
+  },
+  {
+    "index": 25,
+    "original_url": "https://www.nature.com/articles/s41586-026-10488-6",
+    "chinese_title": "Nature论文更正：癌基因消融抵抗性胰腺癌细胞依赖线粒体功能",
+    "summary": "Nature发布论文更正，涉及胰腺癌细胞线粒体功能依赖性的研究。",
+    "type": "research",
+    "extension": "癌症研究持续深入，线粒体功能可能成为胰腺癌治疗新靶点",
+    "entities": ["Nature"]
+  },
+  {
+    "index": 26,
+    "original_url": "https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/",
+    "chinese_title": "用户抱怨Anthropic客服响应缓慢",
+    "summary": "用户反映等待一个多月仍未收到Anthropic对账单问题的客服回应。",
+    "type": "opinion",
+    "extension": "AI公司快速扩张中客服能力跟不上用户增长，反映行业服务挑战",
+    "entities": ["Anthropic"]
   }
 ]

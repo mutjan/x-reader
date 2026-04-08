@@ -3,5 +3,14 @@
   "similarity_threshold": 0.5,
   "backup_enabled": true,
   "max_backups": 7,
-  "backup_path": "data/backups/event_groups/"
+  "backup_path": "data/backups/event_groups/",
+  "threshold_floor": 0.01,
+  "entity_threshold_steps": [
+    {"min_entities": 1, "text_threshold": 0.25, "entity_weight": 0.30, "text_weight": 0.70},
+    {"min_entities": 2, "text_threshold": 0.15, "entity_weight": 0.65, "text_weight": 0.35},
+    {"min_entities": 3, "text_threshold": 0.10, "entity_weight": 0.55, "text_weight": 0.45},
+    {"min_entities": 4, "text_threshold": 0.06, "entity_weight": 0.65, "text_weight": 0.35},
+    {"min_entities": 5, "text_threshold": 0.03, "entity_weight": 0.75, "text_weight": 0.25},
+    {"min_entities": 6, "text_threshold": 0.01, "entity_weight": 0.85, "text_weight": 0.15}
+  ]
 }
