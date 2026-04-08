@@ -88,82 +88,6 @@
             margin-top: 5px;
         }
         
-        /* 预告事件区域 */
-        .upcoming-section {
-            background: linear-gradient(135deg, rgba(29, 155, 240, 0.1), rgba(0, 186, 124, 0.05));
-            border: 1px solid rgba(29, 155, 240, 0.3);
-            border-radius: 12px;
-            padding: 15px 20px;
-            margin-bottom: 20px;
-        }
-        .upcoming-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 12px;
-            font-size: 14px;
-            font-weight: 600;
-            color: #1d9bf0;
-        }
-        .upcoming-header .icon {
-            font-size: 16px;
-        }
-        .upcoming-list {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        .upcoming-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            padding: 10px 12px;
-            background: rgba(15, 20, 25, 0.6);
-            border-radius: 8px;
-            border-left: 3px solid #1d9bf0;
-        }
-        .upcoming-item:hover {
-            background: rgba(29, 155, 240, 0.1);
-        }
-        .upcoming-priority {
-            font-size: 11px;
-            font-weight: 600;
-            padding: 2px 6px;
-            border-radius: 4px;
-            white-space: nowrap;
-        }
-        .upcoming-priority.S { background: #ff6b6b; color: white; }
-        .upcoming-priority.A\+ { background: #ffd93d; color: #0f1419; }
-        .upcoming-priority.A { background: #6bcf7f; color: white; }
-        .upcoming-priority.B { background: #8899a6; color: white; }
-        .upcoming-content {
-            flex: 1;
-        }
-        .upcoming-title {
-            font-size: 13px;
-            font-weight: 500;
-            color: #e7e9ea;
-            margin-bottom: 4px;
-        }
-        .upcoming-meta {
-            font-size: 11px;
-            color: #8899a6;
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-        .upcoming-keywords {
-            display: flex;
-            gap: 4px;
-            flex-wrap: wrap;
-        }
-        .upcoming-keyword {
-            font-size: 10px;
-            padding: 1px 6px;
-            background: rgba(136, 153, 166, 0.2);
-            border-radius: 10px;
-            color: #8899a6;
-        }
         /* 每日摘要区域 */
         .summary-section {
             background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.05));
@@ -1593,7 +1517,7 @@
             <span class="toolbar-label">视图</span>
             <div class="tab-controls" id="tabControls">
                 <button class="tab-btn active" onclick="switchTab('news')" id="tabNews">📰 新闻列表</button>
-                <button class="tab-btn" onclick="switchTab('events')" id="tabEvents">📅 事件追踪</button>
+                <button class="tab-btn" onclick="switchTab('events')" id="tabEvents" style="display: none;">📅 事件追踪</button>
             </div>
         </div>
         <div class="toolbar-section" id="dateToolbarSection">
@@ -1644,18 +1568,6 @@
                 <div class="summary-grid" id="summaryGrid">
                     <!-- 动态填充 -->
                 </div>
-            </div>
-        </div>
-
-        <!-- 预告事件区域 -->
-        <div class="upcoming-section" id="upcomingSection" style="display: none;">
-            <div class="upcoming-header">
-                <span class="icon">🔔</span>
-                <span>预告事件追踪</span>
-                <span style="margin-left: auto; font-size: 12px; font-weight: normal; color: #8899a6;" id="upcomingCount"></span>
-            </div>
-            <div class="upcoming-list" id="upcomingList">
-                <!-- 动态填充 -->
             </div>
         </div>
 
@@ -1762,9 +1674,8 @@
                 renderTabs();
                 renderCurrentView();
 
-                // 第二步：后台加载事件和预告数据（不阻塞首屏渲染）
+                // 第二步：后台加载事件数据（不阻塞首屏渲染）
                 loadEventsAsync();
-                loadUpcomingAsync();
             } catch (error) {
                 console.error('Error loading data:', error);
                 document.getElementById('news-content').innerHTML =
@@ -1821,7 +1732,7 @@
                 }).filter(Boolean);
 
                 console.log(`Loaded ${EVENTS.length} events from event_groups.json`);
-                // 如果用户当前在事件视图，刷新显示
+                renderTabs();
                 if (currentTab === 'events') renderCurrentView();
             } catch (e) {
                 console.warn('事件数据加载失败:', e);
@@ -1829,21 +1740,19 @@
             }
         }
 
-        // 后台异步加载预告数据
-        async function loadUpcomingAsync() {
+        // 后台异步加载时代情绪数据
+        async function loadZeitgeistAsync() {
             try {
-                const resp = await fetch('upcoming_events.json?v=' + Date.now());
+                const resp = await fetch('config/zeitgeist.json?v=' + Date.now());
                 if (!resp.ok) return;
-                const upcomingData = await resp.json();
-                UPCOMING_EVENTS = upcomingData.events || [];
-                ZEITGEIST = upcomingData.zeitgeist || [];
-                renderUpcomingEvents();
+                const data = await resp.json();
+                ZEITGEIST = data.zeitgeist || [];
                 renderZeitgeist();
             } catch (e) {
-                console.warn('预告数据加载失败:', e);
+                console.warn('时代情绪数据加载失败:', e);
             }
         }
-        
+
         // ==================== 全局状态 ====================
         let currentDate = '';
         let currentSort = { field: 'rating', order: 'desc' };
@@ -2949,47 +2858,6 @@
             return typeMap[type] || type;
         }
 
-        // ==================== 预告事件功能 ====================
-        function renderUpcomingEvents() {
-            const section = document.getElementById('upcomingSection');
-            const list = document.getElementById('upcomingList');
-            const count = document.getElementById('upcomingCount');
-            
-            // 只显示 pending 状态的事件
-            const pendingEvents = UPCOMING_EVENTS.filter(e => e.status === 'pending');
-            
-            if (pendingEvents.length === 0) {
-                section.style.display = 'none';
-                return;
-            }
-            
-            section.style.display = 'block';
-            count.textContent = `${pendingEvents.length} 个待追踪`;
-            
-            list.innerHTML = pendingEvents.map(event => {
-                const keywords = event.expected_keywords || [];
-                const keywordsHtml = keywords.slice(0, 5).map(k => 
-                    `<span class="upcoming-keyword">${k}</span>`
-                ).join('');
-                
-                const sourceHint = event.source_hint || '未指定来源';
-                const createdAt = event.created_at ? new Date(event.created_at).toLocaleDateString('zh-CN') : '-';
-                
-                return `
-                    <div class="upcoming-item">
-                        <span class="upcoming-priority ${event.priority || 'A'}">${event.priority || 'A'}</span>
-                        <div class="upcoming-content">
-                            <div class="upcoming-title">${event.title}</div>
-                            <div class="upcoming-meta">
-                                <span>📅 ${createdAt}</span>
-                                <span>📡 ${sourceHint}</span>
-                                <span class="upcoming-keywords">${keywordsHtml}</span>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-        }
         // ==================== 时代情绪功能 ====================
         function renderZeitgeist() {
             const section = document.getElementById('zeitgeistSection');
