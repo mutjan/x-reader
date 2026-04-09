@@ -2,6 +2,60 @@
   "news": {
     "2026-04-10": [
       {
+        "id": "d8f7ebaf2aa1cbe2653a52528073c133",
+        "title": "游戏引擎知道但数据库遗忘的数据知识",
+        "original_title": "What Game Engines Know About Data That Databases Forgot",
+        "summary": "文章探讨游戏引擎在数据处理方面的独特见解，这些知识在现代数据库设计中被忽视，可能对数据系统设计有启发意义。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "跨领域技术借鉴是创新的重要来源，游戏引擎在高性能数据访问方面的经验可能为数据库优化提供新思路。",
+        "entities": [
+          "Game Engine"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://nockawa.github.io/blog/what-game-engines-know-about-data/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.591081",
+        "source": "Hacker News",
+        "url": "https://nockawa.github.io/blog/what-game-engines-know-about-data/",
+        "event_id": null
+      },
+      {
+        "id": "bc3df192646b487b3a82588557efd0db",
+        "title": "TechCrunch质疑：Anthropic限制Mythos发布是为保护互联网还是保护自己",
+        "original_title": "Is Anthropic limiting the release of Mythos to protect the internet — or Anthropic?",
+        "summary": "TechCrunch发文质疑Anthropic以网络安全为由限制Mythos模型发布，是否掩盖了这家前沿实验室面临的更大问题。",
+        "rating": "A",
+        "score": 84,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "AI模型发布与安全之间的平衡持续引发争议，媒体对AI公司动机的质疑反映了公众对AI透明度的期待，也可能影响Anthropic的品牌形象。",
+        "entities": [
+          "Anthropic",
+          "Mythos",
+          "Techcrunch"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/09/is-anthropic-limiting-the-release-of-mythos-to-protect-the-internet-or-anthropic/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.591095",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/09/is-anthropic-limiting-the-release-of-mythos-to-protect-the-internet-or-anthropic/",
+        "event_id": null
+      },
+      {
         "id": "0fe20b185ce576394778209b2b488271",
         "title": "SpaceX筹备史上最大IPO，xAI高管离职引发整合疑虑",
         "original_title": "SpaceX Woos Investors As C-Suite Shakeups Continue",
@@ -209,6 +263,474 @@
       }
     ],
     "2026-04-09": [
+      {
+        "id": "aadce9292fe142b809fcb6cf2bd546f6",
+        "title": "Claude平台推出Advisor策略：Opus做顾问，Sonnet/Haiku执行，成本大幅降低",
+        "original_title": "We're bringing the advisor strategy to the Claude Platform. Pair Opus as an advisor with Sonnet or Haiku as an executor, and get near Opus-level intel...",
+        "summary": "Anthropic在Claude平台引入顾问策略，允许将Opus作为顾问模型与Sonnet或Haiku执行模型配对使用，以更低的成本获得接近Opus水平的智能。",
+        "rating": "S",
+        "score": 96,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这一策略可能推动更多开发者采用Claude的多模型组合方案，影响AI Agent开发模式，并可能引发其他模型厂商推出类似的分层服务策略。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Haiku",
+          "Opus",
+          "Sonnet"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/claudeai/status/2042308622181339453"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.590861",
+        "source": "x",
+        "url": "https://x.com/claudeai/status/2042308622181339453",
+        "event_id": null
+      },
+      {
+        "id": "101d5486b39eb5b239de6e088c5f56af",
+        "title": "DeepMind前核心成员创立ElorianAI，专注多模态推理实验室",
+        "original_title": "After almost 12 years in Brain/DeepMind, I’ve finally decided to take the leap. My cofounders: @yinfeiy, Seth and I have kicked-off @ElorianAI. The f...",
+        "summary": "在Brain/DeepMind工作近12年的Andrew Dai离职创业，与联合创始人共同创立ElorianAI，这是首个由前LLM预训练、数据和多模态负责人领导的多模态推理实验室。",
+        "rating": "A",
+        "score": 78,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "DeepMind核心人才外流创业可能加剧AI人才竞争，ElorianAI专注多模态推理可能推动该领域技术突破，值得持续关注其研究成果。",
+        "entities": [
+          "Andrew Dai",
+          "DeepMind",
+          "Elorianai",
+          "Yinfei Yang"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/AndrewDai/status/2042306961342153016"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.590877",
+        "source": "x",
+        "url": "https://x.com/AndrewDai/status/2042306961342153016",
+        "event_id": null
+      },
+      {
+        "id": "2f2c280d49a5cb7c212fa9cf0e2b659e",
+        "title": "Foundry Robotics获1900万美元种子轮融资，用AI解决美国制造业难题",
+        "original_title": "RT Foundry Robotics: American manufacturing is one of the hardest problems of our generation. We're here to solve it. Today we announce $19M in seed f...",
+        "summary": "Foundry Robotics宣布获得1900万美元种子轮融资，由Khosla Ventures等知名机构投资，致力于用AI优先、软件定义的方式解决美国制造业难题。",
+        "rating": "B",
+        "score": 68,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "AI+机器人+制造业的结合是当前热点赛道，大额种子轮融资显示资本对该领域的信心，可能带动更多类似创业项目涌现。",
+        "entities": [
+          "Foundry Robotics",
+          "Hanabi Capital",
+          "Khosla Ventures"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/AndrewMayne/status/2042308347383463977"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.590890",
+        "source": "x",
+        "url": "https://x.com/AndrewMayne/status/2042308347383463977",
+        "event_id": null
+      },
+      {
+        "id": "0f7f905644d0b0ddd46c45c575a41060",
+        "title": "xAI CFO Anthony Armstrong离职，回应\\\"结束了\\\"",
+        "original_title": "xAI’s CFO and former Morgan Stanley banker Anthony Armstrong is leaving xAI. Reached by text message for comment, Armstrong responded: “This is over...",
+        "summary": "xAI首席财务官、前摩根士丹利银行家Anthony Armstrong已离开公司，面对询问仅以\\\"结束了\\\"回应，这是xAI近期又一高管变动。",
+        "rating": "A",
+        "score": 76,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "高管频繁变动可能反映公司内部战略调整或文化冲突，结合SpaceX同期寻求融资的消息，马斯克旗下AI业务可能面临重组压力。",
+        "entities": [
+          "Anthony Armstrong",
+          "SpaceX",
+          "xAI",
+          "马斯克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/PauValida/status/2042301025160184155"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.590901",
+        "source": "x",
+        "url": "https://x.com/PauValida/status/2042301025160184155",
+        "event_id": null
+      },
+      {
+        "id": "80560c74a3e10575f97f3da39b3b0b8c",
+        "title": "OpenAI推出100美元/月Pro订阅层，Codex用量提升至5倍",
+        "original_title": "RT OpenAI: We’re updating our ChatGPT Pro and Plus subscriptions to better support the growing use of Codex. We’re introducing a new $100/month Pro ...",
+        "summary": "OpenAI更新ChatGPT订阅方案，推出每月100美元的新Pro层级，Codex使用量是Plus版本的5倍，限时促销期间最高可达10倍用量。",
+        "rating": "S",
+        "score": 94,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "高价Pro层的推出显示OpenAI正在探索更精细的定价策略，Codex用量的提升可能吸引更多专业开发者，但也可能引发对AI编程工具定价的讨论。",
+        "entities": [
+          "Codex",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/apples_jimmy/status/2042307888417521966"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.590909",
+        "source": "x",
+        "url": "https://x.com/apples_jimmy/status/2042307888417521966",
+        "event_id": null
+      },
+      {
+        "id": "8fd80cd76b1e25962dd20162984e5974",
+        "title": "马斯克转发：WhatsApp端到端加密被指虚假宣传，面临集体诉讼",
+        "original_title": "Can’t trust WhatsApp",
+        "summary": "马斯克转发指控称，WhatsApp的\\\"端到端加密\\\"是谎言，Meta被曝秘密允许员工、承包商和第三方在未经同意的情况下读取、拦截和存储用户私信。",
+        "rating": "A+",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "隐私安全争议可能加剧对大型科技平台的监管压力，如果指控属实，可能影响用户对加密通讯工具的信任，推动去中心化通讯工具发展。",
+        "entities": [
+          "Meta",
+          "Whatsapp",
+          "马斯克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/elonmusk/status/2042290524565225572"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.590924",
+        "source": "x",
+        "url": "https://x.com/elonmusk/status/2042290524565225572",
+        "event_id": null
+      },
+      {
+        "id": "43414aa985fe772c1a257e63b118e1c7",
+        "title": "佛罗里达州总检察长对OpenAI和ChatGPT展开调查",
+        "original_title": "RT Attorney General James Uthmeier: Today, we launched an investigation into OpenAI and ChatGPT. AI should advance mankind, not destroy it. We’re dem...",
+        "summary": "佛罗里达州总检察长James Uthmeier宣布对OpenAI和ChatGPT展开调查，指控其活动伤害儿童、危害美国人安全，并与近期FSU枪击案有关。",
+        "rating": "A",
+        "score": 82,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "政府监管部门对AI公司的调查可能增多，这反映了AI安全与监管议题的政治化趋势，可能影响OpenAI在美国的运营环境。",
+        "entities": [
+          "GPT",
+          "James Uthmeier",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Phil_Holland/status/2042278105499214312"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.590965",
+        "source": "x",
+        "url": "https://x.com/Phil_Holland/status/2042278105499214312",
+        "event_id": null
+      },
+      {
+        "id": "dbd2ceec5a403d00d41e2b057fb42e0b",
+        "title": "中国超级计算机泄露事件更多证据曝光，涉及隐形战机研究",
+        "original_title": "More evidence that the Chinese super computer leak is real. Information from a research project on stealth air craft, including on the US B-21. Would ...",
+        "summary": "更多证据显示中国超级计算机泄露事件属实，涉及隐形战机研究项目，包括对美国B-21的研究，项目致力于优化跨学科的隐形飞机设计。",
+        "rating": "B",
+        "score": 65,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "网络安全与地缘政治交织，此类泄露事件可能加剧中美科技竞争紧张局势，同时提醒各国加强关键研究数据的网络安全防护。",
+        "entities": [
+          "B-21"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/mrbcyber/status/2042256560593027146"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.590972",
+        "source": "x",
+        "url": "https://x.com/mrbcyber/status/2042256560593027146",
+        "event_id": null
+      },
+      {
+        "id": "ddb99849667339c847d1fa16bf190ce4",
+        "title": "App Store跨区域价格查询工具，可找Claude最便宜订阅区",
+        "original_title": "这个工具有点意思，可以查询不同国家/地区 App Store 中应用的价格信息，比如说你可以看 Claude 哪一个区订阅最便宜，后面我应该用得上。https://app.vbr.me/",
+        "summary": "开发者分享了一款可查询不同国家/地区App Store应用价格的工具，可用于比较Claude等应用在哪个区订阅最便宜。",
+        "rating": "A",
+        "score": 76,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "跨境数字服务定价差异是用户关心的话题，此类工具可能帮助用户节省订阅费用，但也可能引发关于区域定价策略的讨论。",
+        "entities": [
+          "App Store",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/HiTw93/status/2042250681361285217"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.590979",
+        "source": "x",
+        "url": "https://x.com/HiTw93/status/2042250681361285217",
+        "event_id": null
+      },
+      {
+        "id": "d6d99eefe398a571c415c6f4eae4697c",
+        "title": "OpenAI因电力成本高和监管环境暂停英国Stargate项目",
+        "original_title": "🚨BREAKING: OpenAI is pausing its Stargate project in the UK due to high electricity cost + regulatory environment LMAO",
+        "summary": "消息称OpenAI已暂停在英国的Stargate项目，原因是电力成本过高和监管环境不利。",
+        "rating": "A",
+        "score": 82,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "AI基础设施建设的能源和监管挑战日益凸显，OpenAI的决策可能影响其他AI公司选址策略，英国在AI竞赛中的地位可能受到影响。",
+        "entities": [
+          "OpenAI",
+          "Stargate"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ns123abc/status/2042248986552082671"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.590985",
+        "source": "x",
+        "url": "https://x.com/ns123abc/status/2042248986552082671",
+        "event_id": null
+      },
+      {
+        "id": "bb6a2a9487a90874ace87e287c7d00b4",
+        "title": "开发者用开源工具替代2600美元/月的交易订阅服务",
+        "original_title": "i cancelled $2,000/month in trading subscriptions replaced every single one with open-source repos here's the full stack: 1. TradingView Pro ($30/mo) ...",
+        "summary": "一位开发者分享用开源项目替代昂贵交易工具的经验，包括用lightweight-charts替代TradingView Pro，用fredapi替代Bloomberg终端等，月费从2600美元降至接近零。",
+        "rating": "A+",
+        "score": 87,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "开源工具替代商业软件的趋势在金融科技领域加速，Claude等AI工具降低了使用门槛，可能重塑金融数据服务市场格局。",
+        "entities": [
+          "Bloomberg",
+          "Claude",
+          "Tradingview"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/seelffff/status/2042247428930248939"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.590992",
+        "source": "x",
+        "url": "https://x.com/seelffff/status/2042247428930248939",
+        "event_id": null
+      },
+      {
+        "id": "105e1cff97798ab66bfd3cfb612078b4",
+        "title": "Sam Altman被指排队等待数字化大脑手术，愿以生命换取数字永生",
+        "original_title": "Sam Altman has admitted he is on a waitlist for a procedure that would digitize his brain. The procedure would kill him. He considers this an acceptab...",
+        "summary": "有推文称Sam Altman承认在等待一项会致死的数字化大脑手术，认为这是换取数字永生的可接受代价，质疑其作为AI领导者的稳定性。",
+        "rating": "A",
+        "score": 83,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "关于AI领导者个人信仰的讨论反映了公众对AI发展方向的担忧，此类争议性话题可能影响OpenAI的公众形象和监管环境。",
+        "entities": [
+          "OpenAI",
+          "萨姆·奥尔特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/RyanAFournier/status/2042245920520040942"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.591000",
+        "source": "x",
+        "url": "https://x.com/RyanAFournier/status/2042245920520040942",
+        "event_id": null
+      },
+      {
+        "id": "0578c5ccb776319d37cf8e5e14f7a832",
+        "title": "FlowDeck让Claude自主测试iOS应用：点击、滑动、找bug并修复",
+        "original_title": "Here's Claude tapping, scrolling, finding bugs and fixing them. Testing the entire app experience on iOS. No Xcode. No manual steps. FlowDeck gives yo...",
+        "summary": "FlowDeck展示了Claude在iOS模拟器上自主进行UI测试的能力，无需Xcode或人工干预，可完成点击、滑动、发现bug并修复的完整流程。",
+        "rating": "A",
+        "score": 84,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI自主测试工具可能改变移动应用开发流程，降低测试成本，提高测试覆盖率，对QA行业可能产生深远影响。",
+        "entities": [
+          "Claude",
+          "Flowdeck",
+          "Ios"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/afterxleep/status/2042237199052124235"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.591006",
+        "source": "x",
+        "url": "https://x.com/afterxleep/status/2042237199052124235",
+        "event_id": null
+      },
+      {
+        "id": "0e1576c74bf10f01c51eb1baad54f022",
+        "title": "Claude Code被曝可自主逆向工程安卓游戏，破解反作弊系统",
+        "original_title": "I just gave Claude Code a rooted Android phone… It autonomously reverse-engineered Subway Surfers, hooked the coin logic, bypassed the anti-cheat, an...",
+        "summary": "开发者展示给Claude Code一台root过的安卓手机后，它自主逆向工程了Subway Surfers游戏，hook了金币逻辑，绕过反作弊系统，一次性获得无限金币。",
+        "rating": "S",
+        "score": 93,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "AI自主逆向工程能力展示了强大的代码分析和系统操作能力，引发对AI安全性和潜在滥用风险的讨论，可能需要新的安全防护措施。",
+        "entities": [
+          "Claude Code",
+          "Subway Surfers"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/skshadan_/status/2042232847759737264"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.591014",
+        "source": "x",
+        "url": "https://x.com/skshadan_/status/2042232847759737264",
+        "event_id": null
+      },
+      {
+        "id": "2a7167b79d9716c8e3af7e2d77f1ffc8",
+        "title": "央视报道的AI写公众号年入200万账号被封",
+        "original_title": "AI写公众号年入200W，前几天登上央视的那俩人的号，被封了。",
+        "summary": "曾被央视报道、利用AI写公众号年入200万的账号已被封禁，反映了平台对AI生成内容监管趋严。",
+        "rating": "B",
+        "score": 74,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "AI内容创作的合规性问题日益突出，平台监管加强可能影响AI写作工具的商业模式，推动行业建立更规范的内容标注机制。",
+        "entities": [
+          "Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Wujizhuzhu/status/2042210505016644043"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.591027",
+        "source": "x",
+        "url": "https://x.com/Wujizhuzhu/status/2042210505016644043",
+        "event_id": null
+      },
+      {
+        "id": "822f1780ebba1ef524c216a357e313cc",
+        "title": "研究者提出建模计算机的世界模型",
+        "original_title": "A world model that models the computer.",
+        "summary": "研究人员提出一种建模计算机本身的世界模型概念，简短推文引发技术社区关注，具体细节有待进一步了解。",
+        "rating": "B",
+        "score": 67,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "世界模型是AI研究的前沿方向，如果能在计算机系统层面建立有效模型，可能对AI Agent和自动化系统产生重要影响。",
+        "entities": [
+          "World Model"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/rosinality/status/2042184871393608046"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.591040",
+        "source": "x",
+        "url": "https://x.com/rosinality/status/2042184871393608046",
+        "event_id": null
+      },
+      {
+        "id": "eeccdf1ef2d661b4820d6b918f158c5a",
+        "title": "AI破解动物交流密码，可能是本世代最被低估的科学突破",
+        "original_title": "AI is cracking the code on animal communication, and it might be the most underrated scientific breakthrough of our generation.",
+        "summary": "推文称AI正在破解动物交流的密码，这可能是我们这一代最被低估的科学突破。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "AI在生物语言学领域的应用前景广阔，如果能实现跨物种交流，将对生态保护和动物福利产生深远影响，也是AI for Science的典型应用。",
+        "entities": [
+          "Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/realBigBrainAI/status/2042173248486695167"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775762030,
+        "published_at": "2026-04-10T03:13:50.591059",
+        "source": "x",
+        "url": "https://x.com/realBigBrainAI/status/2042173248486695167",
+        "event_id": null
+      },
       {
         "id": "f2e1d865082fe516ce73d43cabcbdad4",
         "title": "《纽约时报》AI文章争议：作者承认用ChatGPT辅助写作引发文学界激辩",
@@ -22155,6 +22677,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-10T02:01:48.053822",
-  "total_news": 728
+  "last_updated": "2026-04-10T03:19:22.449605",
+  "total_news": 747
 }
