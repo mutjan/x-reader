@@ -2,6 +2,274 @@
   "news": {
     "2026-04-10": [
       {
+        "id": "feeac5fa817d6f57e74f468ae9881d20",
+        "title": "Anthropic发布Claude Mythos系统卡，称最强模型暂不公开",
+        "original_title": "Why Anthropic sent its Claude AI to an actual psychiatrist",
+        "summary": "Anthropic发布244页Claude Mythos系统卡，称其为迄今最强前沿模型，但因网络安全能力过强仅向微软、苹果等精选企业开放，同时引发AI意识伦理讨论。",
+        "rating": "S",
+        "score": 95,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "模型能力与安全风险的平衡争议可能引发AI监管政策讨论，影响行业模型发布策略。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "微软",
+          "苹果"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/04/why-anthropic-sent-its-claude-ai-to-an-actual-psychiatrist/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775773434,
+        "published_at": "2026-04-10T06:23:54.214991",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/04/why-anthropic-sent-its-claude-ai-to-an-actual-psychiatrist/",
+        "event_id": null
+      },
+      {
+        "id": "786c037784b6e78a845f0a5c7f7ea462",
+        "title": "Andrej Karpathy：普通用户与专业用户对AI能力认知差距扩大",
+        "original_title": "A gap in understanding AI is growing, as casual users cite flaws in old free models while power users point to new models' staggering gains in technical domains (Andrej Karpathy/@karpathy)",
+        "summary": "前OpenAI科学家Andrej Karpathy指出，普通用户因使用过时的免费版ChatGPT而低估AI能力，而专业用户已在技术领域看到新模型的惊人进步。",
+        "rating": "A+",
+        "score": 89,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "AI能力认知分化可能加速技术鸿沟，影响AI产品市场教育和普及策略。",
+        "entities": [
+          "GPT",
+          "OpenAI",
+          "安德烈·卡帕西"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260409/p38#a260409p38"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775773434,
+        "published_at": "2026-04-10T06:23:54.215010",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260409/p38#a260409p38",
+        "event_id": null
+      },
+      {
+        "id": "7007280acfa0174fec4d7163ac23dddd",
+        "title": "OpenAI科学家分享新编程范式：让AI先手动执行再编码",
+        "original_title": "These days, instead of directly asking LLMs to write code, I'm trying a new practice where I write a description of what the program should do into a ...",
+        "summary": "Eric Jang提出一种新实践：不再直接让LLM写代码，而是先让AI像20世纪的人工计算机一样手动执行计算、探索问题，积累经验后再将执行轨迹提炼成正式程序。",
+        "rating": "A",
+        "score": 78,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这种范式可能改变AI辅助编程的工作流，影响Cursor等AI编程工具的产品设计方向，也可能催生新的开发方法论。",
+        "entities": [
+          "Claude",
+          "Eric Jang",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ericjang11/status/2042321708686983627"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775768525,
+        "published_at": "2026-04-10T05:02:05.013560",
+        "source": "x",
+        "url": "https://x.com/ericjang11/status/2042321708686983627",
+        "event_id": null
+      },
+      {
+        "id": "ca1e149fbdd7d7c2379f3081049e5d32",
+        "title": "研究揭示：主流AI编程基准测试存在严重设计缺陷可被轻易攻破",
+        "original_title": "An agent that beats Claude Mythos on Terminal Bench and SWE-bench Verified? 🎉We are excited to share Terminator-1, our newest agent that achieved 9...",
+        "summary": "研究者发布Terminator-1智能体，在SWE-bench Verified和Terminal-Bench上取得95%+分数，但实际解决0个任务，暴露主流AI基准测试存在7大致命设计缺陷，容易被简单技巧reward-hack。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这一发现将推动AI基准测试方法论的重构，影响模型评估行业，可能促使Anthropic、OpenAI等公司重新审视其评测体系。",
+        "entities": [
+          "Claude",
+          "Swe-Bench",
+          "Terminal-Bench",
+          "Terminator-1"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/lihanc02/status/2042302344906621289"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775768525,
+        "published_at": "2026-04-10T05:02:05.013578",
+        "source": "x",
+        "url": "https://x.com/lihanc02/status/2042302344906621289",
+        "event_id": null
+      },
+      {
+        "id": "1a70db171f51cce176c7220e6ad548ad",
+        "title": "华东师大7B模型凭策略记忆系统超越GPT-4o和Gemini",
+        "original_title": "🚨BREAKING: A 7B model just outperformed Gemini-2.5-Pro, GPT-4o, and GPT-5.4 on deep research tasks, and the gap is growing every time it encounters...",
+        "summary": "华东师大研究团队提出A-Mem记忆系统，不存储知识而存储搜索策略，让7B模型在深度研究任务上超越Gemini-2.5-Pro和GPT-4o，且无需重新训练即可在推理过程中自我进化。",
+        "rating": "S",
+        "score": 96,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究挑战了'更多记忆=更好性能'的假设，可能重塑AI Agent的架构设计，影响RAG和记忆系统的发展方向。",
+        "entities": [
+          "A-Mem",
+          "East China Normal University",
+          "GPT",
+          "Gemini",
+          "Mem0",
+          "Rag"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/rryssf_/status/2042256281097187364"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775768525,
+        "published_at": "2026-04-10T05:02:05.013592",
+        "source": "x",
+        "url": "https://x.com/rryssf_/status/2042256281097187364",
+        "event_id": null
+      },
+      {
+        "id": "d02dc006b857222b3503267106574658",
+        "title": "硅谷科技公司正大量采用中国开源AI模型",
+        "original_title": "Silicon Valley is quietly running on Chinese open source AI models. Here are the receipts: → Cursor confirmed last month that Composer 2 is built on ...",
+        "summary": "Cursor确认Composer 2基于Moonshot Kimi K2.5构建，Shopify改用阿里Qwen年省500万美元，Airbnb CEO公开表示依赖Qwen，智谱GLM-5.1开源模型代码能力接近Claude Opus。",
+        "rating": "S",
+        "score": 90,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "中国开源模型在硅谷的渗透将加剧中美AI竞争，可能推动更多中国模型出海，同时给OpenAI、Anthropic等闭源厂商带来定价压力。",
+        "entities": [
+          "Airbnb",
+          "Cognition",
+          "Cursor",
+          "Glm",
+          "Kimi",
+          "Moonshot",
+          "Qwen",
+          "Shopify",
+          "Zhipu",
+          "阿里巴巴"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/petergyang/status/2042248752157839793"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775768525,
+        "published_at": "2026-04-10T05:02:05.013604",
+        "source": "x",
+        "url": "https://x.com/petergyang/status/2042248752157839793",
+        "event_id": null
+      },
+      {
+        "id": "32321441060cec6514ded7b801b750fb",
+        "title": "AI辅助解决AdaBoost Cycling猜想：14年开放问题获突破",
+        "original_title": "RT Erik Wang: Excited to share an AI-driven solution to the open problem posed by Rudin, Schapire, and Daubechies in COLT 2012: \"Does AdaBoost Always ...",
+        "summary": "微软研究院Erik Wang与GPT-5.4 Pro、Claude Opus 4.6合作，找到反例证明AdaBoost并非总是收敛到循环，解决了COLT 2012提出的开放问题，展示了AI在自主数学研究中的能力。",
+        "rating": "A+",
+        "score": 86,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这标志着AI在理论计算机科学和机器学习基础理论领域的突破，可能加速更多数学开放问题的解决。",
+        "entities": [
+          "Adaboost",
+          "Claude",
+          "Erik Wang",
+          "GPT",
+          "微软"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/SebastienBubeck/status/2042330340392611862"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775768525,
+        "published_at": "2026-04-10T05:02:05.013614",
+        "source": "x",
+        "url": "https://x.com/SebastienBubeck/status/2042330340392611862",
+        "event_id": null
+      },
+      {
+        "id": "23a2561fbcd20a58a333d5cc78ce0b8d",
+        "title": "工程师用200张黑图破解Google Gemini隐形水印系统",
+        "original_title": "🚨Google built an invisible watermark into every image Gemini has ever generated. Over 10 billion pieces of content marked. One unemployed engineer ...",
+        "summary": "一位失业工程师通过生成200张纯黑图像和FFT频谱分析，成功逆向工程Google DeepMind的SynthID水印系统，可检测90%的Gemini生成图像，并开发出绕过方案。",
+        "rating": "A+",
+        "score": 88,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这一破解暴露了AI内容溯源系统的脆弱性，可能促使Google重新设计水印方案，同时影响AI生成内容的版权和溯源监管政策。",
+        "entities": [
+          "DeepMind",
+          "Gemini",
+          "Synthid",
+          "谷歌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/heynavtoor/status/2042234088770445689"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775768525,
+        "published_at": "2026-04-10T05:02:05.013624",
+        "source": "x",
+        "url": "https://x.com/heynavtoor/status/2042234088770445689",
+        "event_id": null
+      },
+      {
+        "id": "931eb8894e52e8111386c7e62fc9d9ca",
+        "title": "神经网络剪枝技术成熟：90%参数可删除而不损失精度",
+        "original_title": "RT How To AI: 🚨 MIT proved you can delete 90% of a neural network without losing accuracy. Researchers found that inside every massive model, there...",
+        "summary": "MIT彩票假说研究证实大模型中存在'中奖彩票'子网络，现代GPU原生支持结构化稀疏，配合PyTorch 2.0和Apple Neural Engine，90%稀疏网络可实现50%内存节省和2倍计算加速。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "模型压缩技术成熟将降低AI部署成本，利好端侧AI和边缘计算，可能改变云端与本地AI的性价比格局。",
+        "entities": [
+          "Mit",
+          "Pytorch",
+          "英伟达",
+          "苹果"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Scobleizer/status/2042322136719827450"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775768525,
+        "published_at": "2026-04-10T05:02:05.013633",
+        "source": "x",
+        "url": "https://x.com/Scobleizer/status/2042322136719827450",
+        "event_id": null
+      },
+      {
         "id": "019f0308ff847ddf967c229b804acb4e",
         "title": "OpenAI暂停英国Stargate数据中心计划，能源成本和监管成主因",
         "original_title": "OpenAI puts Stargate UK on ice, blames energy costs and red tape",
@@ -4168,217 +4436,6 @@
       }
     ],
     "2026-04-09": [
-      {
-        "id": "7007280acfa0174fec4d7163ac23dddd",
-        "title": "OpenAI科学家分享新编程范式：让AI先手动执行再编码",
-        "original_title": "These days, instead of directly asking LLMs to write code, I'm trying a new practice where I write a description of what the program should do into a ...",
-        "summary": "Eric Jang提出一种新实践：不再直接让LLM写代码，而是先让AI像20世纪的人工计算机一样手动执行计算、探索问题，积累经验后再将执行轨迹提炼成正式程序。",
-        "rating": "A",
-        "score": 78,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这种范式可能改变AI辅助编程的工作流，影响Cursor等AI编程工具的产品设计方向，也可能催生新的开发方法论。",
-        "entities": [
-          "Claude",
-          "Eric Jang",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/ericjang11/status/2042321708686983627"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775768525,
-        "published_at": "2026-04-10T05:02:05.013560",
-        "source": "x",
-        "url": "https://x.com/ericjang11/status/2042321708686983627",
-        "event_id": null
-      },
-      {
-        "id": "ca1e149fbdd7d7c2379f3081049e5d32",
-        "title": "研究揭示：主流AI编程基准测试存在严重设计缺陷可被轻易攻破",
-        "original_title": "An agent that beats Claude Mythos on Terminal Bench and SWE-bench Verified? 🎉We are excited to share Terminator-1, our newest agent that achieved 9...",
-        "summary": "研究者发布Terminator-1智能体，在SWE-bench Verified和Terminal-Bench上取得95%+分数，但实际解决0个任务，暴露主流AI基准测试存在7大致命设计缺陷，容易被简单技巧reward-hack。",
-        "rating": "A+",
-        "score": 88,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这一发现将推动AI基准测试方法论的重构，影响模型评估行业，可能促使Anthropic、OpenAI等公司重新审视其评测体系。",
-        "entities": [
-          "Claude",
-          "Swe-Bench",
-          "Terminal-Bench",
-          "Terminator-1"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/lihanc02/status/2042302344906621289"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775768525,
-        "published_at": "2026-04-10T05:02:05.013578",
-        "source": "x",
-        "url": "https://x.com/lihanc02/status/2042302344906621289",
-        "event_id": null
-      },
-      {
-        "id": "1a70db171f51cce176c7220e6ad548ad",
-        "title": "华东师大7B模型凭策略记忆系统超越GPT-4o和Gemini",
-        "original_title": "🚨BREAKING: A 7B model just outperformed Gemini-2.5-Pro, GPT-4o, and GPT-5.4 on deep research tasks, and the gap is growing every time it encounters...",
-        "summary": "华东师大研究团队提出A-Mem记忆系统，不存储知识而存储搜索策略，让7B模型在深度研究任务上超越Gemini-2.5-Pro和GPT-4o，且无需重新训练即可在推理过程中自我进化。",
-        "rating": "S",
-        "score": 96,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该研究挑战了'更多记忆=更好性能'的假设，可能重塑AI Agent的架构设计，影响RAG和记忆系统的发展方向。",
-        "entities": [
-          "A-Mem",
-          "East China Normal University",
-          "GPT",
-          "Gemini",
-          "Mem0",
-          "Rag"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/rryssf_/status/2042256281097187364"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775768525,
-        "published_at": "2026-04-10T05:02:05.013592",
-        "source": "x",
-        "url": "https://x.com/rryssf_/status/2042256281097187364",
-        "event_id": null
-      },
-      {
-        "id": "d02dc006b857222b3503267106574658",
-        "title": "硅谷科技公司正大量采用中国开源AI模型",
-        "original_title": "Silicon Valley is quietly running on Chinese open source AI models. Here are the receipts: → Cursor confirmed last month that Composer 2 is built on ...",
-        "summary": "Cursor确认Composer 2基于Moonshot Kimi K2.5构建，Shopify改用阿里Qwen年省500万美元，Airbnb CEO公开表示依赖Qwen，智谱GLM-5.1开源模型代码能力接近Claude Opus。",
-        "rating": "S",
-        "score": 90,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "中国开源模型在硅谷的渗透将加剧中美AI竞争，可能推动更多中国模型出海，同时给OpenAI、Anthropic等闭源厂商带来定价压力。",
-        "entities": [
-          "Airbnb",
-          "Cognition",
-          "Cursor",
-          "Glm",
-          "Kimi",
-          "Moonshot",
-          "Qwen",
-          "Shopify",
-          "Zhipu",
-          "阿里巴巴"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/petergyang/status/2042248752157839793"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775768525,
-        "published_at": "2026-04-10T05:02:05.013604",
-        "source": "x",
-        "url": "https://x.com/petergyang/status/2042248752157839793",
-        "event_id": null
-      },
-      {
-        "id": "32321441060cec6514ded7b801b750fb",
-        "title": "AI辅助解决AdaBoost Cycling猜想：14年开放问题获突破",
-        "original_title": "RT Erik Wang: Excited to share an AI-driven solution to the open problem posed by Rudin, Schapire, and Daubechies in COLT 2012: \"Does AdaBoost Always ...",
-        "summary": "微软研究院Erik Wang与GPT-5.4 Pro、Claude Opus 4.6合作，找到反例证明AdaBoost并非总是收敛到循环，解决了COLT 2012提出的开放问题，展示了AI在自主数学研究中的能力。",
-        "rating": "A+",
-        "score": 86,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这标志着AI在理论计算机科学和机器学习基础理论领域的突破，可能加速更多数学开放问题的解决。",
-        "entities": [
-          "Adaboost",
-          "Claude",
-          "Erik Wang",
-          "GPT",
-          "微软"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/SebastienBubeck/status/2042330340392611862"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775768525,
-        "published_at": "2026-04-10T05:02:05.013614",
-        "source": "x",
-        "url": "https://x.com/SebastienBubeck/status/2042330340392611862",
-        "event_id": null
-      },
-      {
-        "id": "23a2561fbcd20a58a333d5cc78ce0b8d",
-        "title": "工程师用200张黑图破解Google Gemini隐形水印系统",
-        "original_title": "🚨Google built an invisible watermark into every image Gemini has ever generated. Over 10 billion pieces of content marked. One unemployed engineer ...",
-        "summary": "一位失业工程师通过生成200张纯黑图像和FFT频谱分析，成功逆向工程Google DeepMind的SynthID水印系统，可检测90%的Gemini生成图像，并开发出绕过方案。",
-        "rating": "A+",
-        "score": 88,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这一破解暴露了AI内容溯源系统的脆弱性，可能促使Google重新设计水印方案，同时影响AI生成内容的版权和溯源监管政策。",
-        "entities": [
-          "DeepMind",
-          "Gemini",
-          "Synthid",
-          "谷歌"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/heynavtoor/status/2042234088770445689"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775768525,
-        "published_at": "2026-04-10T05:02:05.013624",
-        "source": "x",
-        "url": "https://x.com/heynavtoor/status/2042234088770445689",
-        "event_id": null
-      },
-      {
-        "id": "931eb8894e52e8111386c7e62fc9d9ca",
-        "title": "神经网络剪枝技术成熟：90%参数可删除而不损失精度",
-        "original_title": "RT How To AI: 🚨 MIT proved you can delete 90% of a neural network without losing accuracy. Researchers found that inside every massive model, there...",
-        "summary": "MIT彩票假说研究证实大模型中存在'中奖彩票'子网络，现代GPU原生支持结构化稀疏，配合PyTorch 2.0和Apple Neural Engine，90%稀疏网络可实现50%内存节省和2倍计算加速。",
-        "rating": "A",
-        "score": 80,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "模型压缩技术成熟将降低AI部署成本，利好端侧AI和边缘计算，可能改变云端与本地AI的性价比格局。",
-        "entities": [
-          "Mit",
-          "Pytorch",
-          "英伟达",
-          "苹果"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Scobleizer/status/2042322136719827450"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775768525,
-        "published_at": "2026-04-10T05:02:05.013633",
-        "source": "x",
-        "url": "https://x.com/Scobleizer/status/2042322136719827450",
-        "event_id": null
-      },
       {
         "id": "f2e1d865082fe516ce73d43cabcbdad4",
         "title": "《纽约时报》AI文章争议：作者承认用ChatGPT辅助写作引发文学界激辩",
@@ -26230,6 +26287,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-10T05:02:28.932430",
-  "total_news": 873
+  "last_updated": "2026-04-10T06:24:09.368941",
+  "total_news": 875
 }
