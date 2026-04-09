@@ -2,6 +2,88 @@
   "news": {
     "2026-04-09": [
       {
+        "id": "94d96c657f226a51149821910ae311e6",
+        "title": "Anthropic员工股权出售估值达350亿美元，低于市场预期",
+        "original_title": "Sources: Anthropic completes an employee tender offer at a $350B valuation, falling short of the $6B investors wanted, as employees held shares ahead of the IPO (Bloomberg)",
+        "summary": "Anthropic完成员工股权二次出售，估值350亿美元，低于投资者此前预期的60亿美元规模，员工在IPO前选择持有股份。",
+        "rating": "A",
+        "score": 78,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "此举反映AI独角兽在IPO前的估值博弈，可能影响其他AI初创公司的融资节奏和员工股权变现策略。",
+        "entities": [
+          "Anthropic",
+          "Bloomberg"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260408/p42#a260408p42"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775700200,
+        "published_at": "2026-04-09T10:03:20.805363",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260408/p42#a260408p42",
+        "event_id": null
+      },
+      {
+        "id": "80310a66f4e55844c2afb1ead0325742",
+        "title": "调查记者罗南·法罗：超百人评价Sam Altman为病态说谎者",
+        "original_title": "Ronan Farrow on Sam Altman: &quot;We interviewed more than 100 people... a majority did say some variation on the theme of: he's a pathological liar&quot;",
+        "summary": "普利策奖得主罗南·法罗在采访中透露，其团队采访超100位与Sam Altman有接触的人，多数人用病态说谎者甚至反社会人格形容他，称其谎言涉及从重大事务到日常琐事。",
+        "rating": "S",
+        "score": 91,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这一报道可能加剧OpenAI内部和外部对其领导层的质疑，影响公司声誉和AI行业对AI安全治理的讨论。",
+        "entities": [
+          "OpenAI",
+          "Ronan Farrow",
+          "萨姆·奥尔特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sgaijv/ronan_farrow_on_sam_altman_we_interviewed_more/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775700200,
+        "published_at": "2026-04-09T10:03:20.805396",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sgaijv/ronan_farrow_on_sam_altman_we_interviewed_more/",
+        "event_id": null
+      },
+      {
+        "id": "eb63e932ee2b2f6f60c2bc0ed6a10416",
+        "title": "Anthropic上诉失败，未能阻止五角大楼将其列入黑名单",
+        "original_title": "Anthropic loses appeals court bid to temporarily block Pentagon blacklisting",
+        "summary": "美国联邦上诉法院驳回Anthropic的临时禁令请求，允许国防部将其列入黑名单，法院认为Anthropic的利益主要是财务性质，且其言论自由未受明显限制。",
+        "rating": "B",
+        "score": 68,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此案涉及AI公司与政府监管的冲突，可能影响其他AI企业与国防部门合作的合规策略。",
+        "entities": [
+          "Anthropic",
+          "Pentagon"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sg7v3l/anthropic_loses_appeals_court_bid_to_temporarily/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775700200,
+        "published_at": "2026-04-09T10:03:20.805406",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sg7v3l/anthropic_loses_appeals_court_bid_to_temporarily/",
+        "event_id": null
+      },
+      {
         "id": "3414f9e6c4879ff6c18cf1a7d6c41b37",
         "title": "SpaceX高管Michael Nicolls出任xAI总裁，承认公司技术已明显落后",
         "original_title": "Memo: xAI is reorganizing its engineering team, as SpaceX SVP Michael Nicolls says xAI is \"clearly behind\"; source: Nicolls has taken the title of xAI president (Grace Kay/Business Insider)",
@@ -9286,6 +9368,33 @@
       }
     ],
     "2026-04-07": [
+      {
+        "id": "2d1bbbd61df0148da51c47d83f81f104",
+        "title": "李飞飞团队提出RAGEN-2：发现智能体强化学习中的推理崩溃现象",
+        "original_title": "RAGEN-2: Reasoning Collapse in Agentic RL",
+        "summary": "李飞飞团队研究发现，多轮LLM智能体的强化学习训练中存在模板崩溃问题，即模型依赖固定模板而非真正理解输入，并提出互信息作为更可靠的推理质量评估指标。",
+        "rating": "A",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究对提升AI智能体的推理能力具有重要意义，可能影响未来RL训练方法和评估标准的发展。",
+        "entities": [
+          "Fei-Fei Li",
+          "Ragen"
+        ],
+        "sourceLinks": [
+          {
+            "name": "[arXiv] Fei-Fei Li",
+            "url": "https://arxiv.org/abs/2604.06268v1"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775700200,
+        "published_at": "2026-04-09T10:03:20.805381",
+        "source": "[arXiv] Fei-Fei Li",
+        "url": "https://arxiv.org/abs/2604.06268v1",
+        "event_id": null
+      },
       {
         "id": "aa15b7f4817f4d5faf6d5a1f071aba10",
         "title": "皮查伊深度访谈：Google如何在AI竞赛中重整旗鼓",
@@ -19865,6 +19974,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-09T09:01:55.873507",
-  "total_news": 644
+  "last_updated": "2026-04-09T10:04:15.898877",
+  "total_news": 648
 }
