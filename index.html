@@ -1516,8 +1516,8 @@
         <div class="toolbar-section">
             <span class="toolbar-label">视图</span>
             <div class="tab-controls" id="tabControls">
-                <button class="tab-btn active" onclick="switchTab('news')" id="tabNews">📰 新闻列表</button>
-                <button class="tab-btn" onclick="switchTab('events')" id="tabEvents" style="display: none;">📅 事件追踪</button>
+                <button class="tab-btn" onclick="switchTab('news')" id="tabNews">📰 新闻列表</button>
+                <button class="tab-btn active" onclick="switchTab('events')" id="tabEvents" style="display: none;">📅 事件追踪</button>
             </div>
         </div>
         <div class="toolbar-section" id="dateToolbarSection">
@@ -1594,11 +1594,11 @@
 
             <main id="main-content">
                 <!-- 新闻列表视图 -->
-                <div id="news-content">
+                <div id="news-content" style="display: none;">
                     <div class="empty-state">加载中...</div>
                 </div>
                 <!-- 事件追踪视图 -->
-                <div id="events-content" style="display: none;">
+                <div id="events-content">
                     <div class="empty-state">加载中...</div>
                 </div>
             </main>
@@ -1620,7 +1620,7 @@
         let EVENTS = [];
         let UPCOMING_EVENTS = [];
         let ZEITGEIST = [];
-        let currentTab = 'news'; // news/events
+        let currentTab = 'events'; // news/events — 默认显示事件追踪
         let selectedItems = new Set(); // 存储选中的项目ID（新闻或事件）
 
         // 提取URL中的域名，去掉.com后缀，Twitter/X显示为x(用户名)
@@ -1672,7 +1672,7 @@
                 // 新闻加载完成后立即渲染，不等事件数据
                 currentDate = getLatestDate();
                 renderTabs();
-                renderCurrentView();
+                switchTab(currentTab);
 
                 // 第二步：后台加载事件数据（不阻塞首屏渲染）
                 loadEventsAsync();
@@ -1763,10 +1763,10 @@
         let eventFilters = {
             search: '',
             minScore: 0,
-            minNewsCount: 2,
+            minNewsCount: 0,
             entity: null
         };
-        let eventSort = { field: 'news_count', order: 'desc' };
+        let eventSort = { field: 'end_time', order: 'desc' };
 
         // 事件表格状态
         let expandedEvents = new Set(); // 存储已展开的事件ID
@@ -2425,7 +2425,8 @@
                     'news_count': 'sources',
                     'max_score': 'rating',
                     'title': null,
-                    'start_time': 'time'
+                    'start_time': 'time',
+                    'end_time': 'time'
                 };
                 activeField = fieldMap[eventSort.field] || 'rating';
             }

@@ -2,6 +2,278 @@
   "news": {
     "2026-04-09": [
       {
+        "id": "c840893a2fe6f1319ef86844450fc039",
+        "title": "OpenAI开发网络安全模型Mythos拟限制发布，效仿Anthropic谨慎策略",
+        "original_title": "Big update: OpenAI developed it's own ChatGPT-\"Mythos\" and will also not roll it out publicly, via Axios OpenAI is planning a limited, staggered rollo...",
+        "summary": "OpenAI计划效仿Anthropic的做法，对其具备高级网络安全能力的新模型进行有限、分阶段的发布，仅向经过审核的少数企业开放，反映出AI模型自主黑客能力已强大到需要像漏洞披露一样谨慎对待。",
+        "rating": "S",
+        "score": 94,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此举可能引发业界对AI安全发布的标准化讨论，影响后续前沿模型的发布策略和监管框架。",
+        "entities": [
+          "Anthropic",
+          "Mythos",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/kimmonismus/status/2042174533155836174"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452315",
+        "source": "x",
+        "url": "https://x.com/kimmonismus/status/2042174533155836174",
+        "event_id": null
+      },
+      {
+        "id": "0f6e834bd8b5703d582f7a1bb77e5b3b",
+        "title": "DeepSeek网页版将旧对话统一标记为Instant模式，Expert模式或采用API余额计费",
+        "original_title": "DeepSeek has retroactively relabeled all old web app chats to \"Instant mode\". This confirms our suspicion that we're just seeing some hot front-end ch...",
+        "summary": "DeepSeek retroactively将所有旧网页对话重新标记为\\\"Instant mode\\\"，这证实了外界猜测——真正的Expert Mode上线后将使用账户余额计费，拥有128K上下文限制且不支持文件上传。",
+        "rating": "A+",
+        "score": 85,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "DeepSeek的商业模式调整可能影响其与OpenAI、Claude等竞品的定价策略对比。",
+        "entities": [
+          "DeepSeek"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/teortaxesTex/status/2042173442678542559"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452335",
+        "source": "x",
+        "url": "https://x.com/teortaxesTex/status/2042173442678542559",
+        "event_id": null
+      },
+      {
+        "id": "d7779e97c658643209ef0e96d09d2fd0",
+        "title": "开发者开源auth2api项目，可将Claude Max代理为API使用",
+        "original_title": "我们利用上周“开源”的 Claude Code 源码，在 auth2api 中精确复刻了 7 个维度的用户指纹，让每个 API 请求看起来都来自真实的 Claude Code CLI 用户。 目前我...",
+        "summary": "开发者基于Claude Code开源代码开发了auth2api工具，通过复刻7个维度的用户指纹，将Claude Max代理为API服务，项目已平稳运行一个月，代码约2000行适合自部署。",
+        "rating": "A",
+        "score": 82,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "此类代理工具的普及可能影响Anthropic的API销售策略，同时也带来账号安全风险。",
+        "entities": [
+          "Anthropic",
+          "Auth2Api",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/0xAA_Science/status/2042151683283878146"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452349",
+        "source": "x",
+        "url": "https://x.com/0xAA_Science/status/2042151683283878146",
+        "event_id": null
+      },
+      {
+        "id": "5835c21490aea7da84a1ca29b1c86657",
+        "title": "机器狗搭载dimOS Agent实现自主巡逻，可识别特定人员并触发警报",
+        "original_title": "机器人狗现在正通过自主 dimOS Agent 守卫办公室。指令设定为：“持续巡逻办公室，若发现穿连帽衫的人员，请跟随并触发警报，同时通知警方。” 项目完全开源。用...",
+        "summary": "一款搭载dimOS Agent的机器狗正在办公室执行自主巡逻任务，可通过自然语言指令设定行为规则，如发现穿连帽衫人员即跟随并报警，项目已完全开源。",
+        "rating": "A",
+        "score": 75,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "此类具身智能应用可能推动安防机器人市场的快速扩张，同时引发隐私和伦理争议。",
+        "entities": [
+          "Dimos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/billtheinvestor/status/2042112064802713842"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452359",
+        "source": "x",
+        "url": "https://x.com/billtheinvestor/status/2042112064802713842",
+        "event_id": null
+      },
+      {
+        "id": "b7b97dc2fa7153ffa699c77a20a796ad",
+        "title": "Claude Code成功逆向工程30年前失传游戏，仅凭脚本文件重建完整世界",
+        "original_title": "THIS GUY GAVE CLAUDE HIS DEAD GAME'S 30-YEAR-OLD FILES AND ASKED IT TO BRING IT BACK TO LIFE he built a multiplayer game in 1992 when he was 19. it ra...",
+        "summary": "一位开发者在仅保留1992年开发的MUD游戏脚本文件和GM手册的情况下，使用Claude Code成功逆向工程出该游戏自定义编程语言的完整语法，并在周末重建了包含2273个房间、1990个物品的完整游戏世界。",
+        "rating": "S",
+        "score": 96,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这一案例展示了AI在代码考古和遗留系统重建方面的巨大潜力，可能影响软件遗产保护领域。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/om_patel5/status/2042090675835990334"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452368",
+        "source": "x",
+        "url": "https://x.com/om_patel5/status/2042090675835990334",
+        "event_id": null
+      },
+      {
+        "id": "752d391a8e76e39a4803a844f3a4a5c5",
+        "title": "Meta新模型Muse Spark表现超预期，性能介于Sonnet 4与Opus 4之间",
+        "original_title": "Meta's latest model Muse Spark is actually much better than I had expected. Is it benchmark maxxed? Yes 100%. But so is every other model. Is it the f...",
+        "summary": "Meta最新发布的Muse Spark模型虽然未能在任何单一类别成为前沿领导者，但实际表现优于预期，评测者认为其水平介于Claude Sonnet 4和Opus 4之间，期待后续开源版本。",
+        "rating": "S",
+        "score": 96,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "Meta在开源模型领域的持续投入可能改变大模型市场格局，对OpenAI和Anthropic形成竞争压力。",
+        "entities": [
+          "Claude",
+          "Meta",
+          "Muse Spark"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/vasuman/status/2042052641619111972"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452378",
+        "source": "x",
+        "url": "https://x.com/vasuman/status/2042052641619111972",
+        "event_id": null
+      },
+      {
+        "id": "6d99b0d330018fa98c0b16871abd464b",
+        "title": "黑客声称窃取中国国家超算中心10PB敏感数据，涉及6000家客户",
+        "original_title": "10 petabytes of sensitive data stolen from China's National Supercomputing Center, hackers claim &mdash; daring heist would be largest ever China hack, covering 6,000 clients across science, defense, and beyond",
+        "summary": "黑客组织声称从中国国家超级计算中心窃取了10PB敏感数据，涉及航空航天工程、生物信息学、核聚变建模等领域，覆盖6000家客户，若属实将成为中国有史以来最大规模的数据泄露事件。",
+        "rating": "S",
+        "score": 92,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "此类重大安全事件可能引发国家对关键科研基础设施网络安全的新一轮审查和加固。",
+        "entities": [
+          "China National Supercomputing Center"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/cyber-security/10-petabytes-of-sensitive-data-stolen-from-chinas-national-supercomputing-center-hackers-claim-daring-heist-would-be-largest-ever-china-hack-covering-6-000-clients-across-science-defense-and-beyond"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452423",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/cyber-security/10-petabytes-of-sensitive-data-stolen-from-chinas-national-supercomputing-center-hackers-claim-daring-heist-would-be-largest-ever-china-hack-covering-6-000-clients-across-science-defense-and-beyond",
+        "event_id": null
+      },
+      {
+        "id": "0e4f9b1cee61600dca07bceea34664c8",
+        "title": "前苹果Vision Pro工程师推出AI可穿戴设备，形似iPod Shuffle",
+        "original_title": "This AI Wearable From Ex-Apple Engineers Looks Like an iPod Shuffle",
+        "summary": "两位前苹果Vision Pro开发者推出了一款AI可穿戴设备，外形类似iPod Shuffle，仅在用户点击时才启动监听，主打隐私保护，试图解决其他AI硬件在隐私方面的不足。",
+        "rating": "A",
+        "score": 77,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "前大厂工程师创业做AI硬件的趋势可能加速可穿戴AI设备的创新和市场竞争。",
+        "entities": [
+          "Ipod",
+          "苹果"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest (apple)",
+            "url": "https://www.wired.com/story/this-ai-button-wearable-from-ex-apple-engineers-looks-like-an-ipod-shuffle/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452431",
+        "source": "Feed: Artificial Intelligence Latest (apple)",
+        "url": "https://www.wired.com/story/this-ai-button-wearable-from-ex-apple-engineers-looks-like-an-ipod-shuffle/",
+        "event_id": null
+      },
+      {
+        "id": "317e085649ff2723121ddc7d735269ca",
+        "title": "Anthropic推出Claude Managed Agents托管基础设施",
+        "original_title": "Anthropic launches managed infrastructure for autonomous AI agents",
+        "summary": "Anthropic发布Claude Managed Agents平台，为开发者提供构建和运行自主AI Agent的托管服务，Notion和Rakuten等早期客户已开始使用该系统。",
+        "rating": "S",
+        "score": 95,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Anthropic进入AI Agent基础设施领域，可能与LangChain、AutoGPT等现有平台形成竞争。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Notion"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/anthropic-launches-managed-infrastructure-for-autonomous-ai-agents/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452448",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/anthropic-launches-managed-infrastructure-for-autonomous-ai-agents/",
+        "event_id": null
+      },
+      {
+        "id": "7d4832bdff89bfa941782fed5621227e",
+        "title": "Tubi成为首个在ChatGPT内推出原生应用的流媒体平台",
+        "original_title": "Tubi becomes the first streamer to launch a native app within ChatGPT, allowing viewers to find movies or shows to watch by using conversational phrases (Lauren Forristal/TechCrunch)",
+        "summary": "Fox旗下流媒体服务Tubi宣布在ChatGPT内推出原生应用，用户可通过自然语言对话方式搜索电影和剧集，成为首个入驻ChatGPT的流媒体平台。",
+        "rating": "A",
+        "score": 82,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "流媒体平台与AI助手的整合可能改变内容发现方式，推动更多媒体公司接入ChatGPT生态。",
+        "entities": [
+          "Fox",
+          "GPT",
+          "Tubi"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260409/p8#a260409p8"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452455",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260409/p8#a260409p8",
+        "event_id": null
+      },
+      {
         "id": "333fe310217d357f3b00546631646e98",
         "title": "字节跳动前端基础设施负责人离职创业，曾主导Rspack和LynxJS开发",
         "original_title": "Today is my lastday at ByteDance @rspack_dev. When I joined Web Infra, the infra group was just a small team of three. We grew along with the business...",
@@ -296,6 +568,89 @@
         "published_at": "2026-04-09T17:06:55.826097",
         "source": "Hacker News",
         "url": "https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/",
+        "event_id": null
+      },
+      {
+        "id": "deb0ceafc291e2d4aee88b2df3052123",
+        "title": "OpenMind机器狗Olly在旧金山街头与同类互动",
+        "original_title": "With such a beautiful day in San Francisco we took our robot dog, Olly, out for a walk. He quickly became friends with Elon Dog and a couple others at...",
+        "summary": "OpenMind团队带机器狗Olly在旧金山South Park散步，与其他机器狗友好互动。",
+        "rating": "B",
+        "score": 66,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "机器人社交场景探索，反映消费级机器人正在进入日常生活场景。",
+        "entities": [
+          "Olly",
+          "Openmind"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/openmind_agi/status/2042001591524585972"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775725615,
+        "published_at": "2026-04-09T17:06:55.825996",
+        "source": "x",
+        "url": "https://x.com/openmind_agi/status/2042001591524585972",
+        "event_id": null
+      },
+      {
+        "id": "252f79064126ffa1fc354fcf92853f53",
+        "title": "Meta发布Muse Spark模型，由Meta Super Intelligence Labs打造",
+        "original_title": "The progress at Meta Super intelligence Labs over the past 9 months has been incredible. Grateful to be a part of it, and can't wait to see what's in ...",
+        "summary": "Meta Super Intelligence Labs发布首款模型Muse Spark，已全面接入Meta AI产品。",
+        "rating": "A+",
+        "score": 88,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Meta内部AI实验室首次公开成果，可能对标OpenAI和Anthropic的模型研发体系。",
+        "entities": [
+          "Alexandr Wang",
+          "Meta",
+          "Meta Super Intelligence Labs",
+          "Muse Spark"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/crwhite_ml/status/2041962601488511247"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775725615,
+        "published_at": "2026-04-09T17:06:55.826014",
+        "source": "x",
+        "url": "https://x.com/crwhite_ml/status/2041962601488511247",
+        "event_id": null
+      },
+      {
+        "id": "9f0e5022fc60acead4f0e71c9a89b099",
+        "title": "Sam Altman：AI已跨越关键阈值，但社会尚未察觉",
+        "original_title": "Sam Altman: Now it feels like early Feb 2020, when OpenAI researchers saw COVID coming early, planned for remote work & got mocked as most people stil...",
+        "summary": "Sam Altman将当前AI发展阶段比作2020年初疫情前夕，认为AI已突破关键节点但社会认知滞后。",
+        "rating": "S",
+        "score": 95,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "行业领袖的预警式发言，可能引发关于AI监管和社会准备的讨论。",
+        "entities": [
+          "OpenAI",
+          "萨姆·奥尔特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/rohanpaul_ai/status/2041962158796526017"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775725615,
+        "published_at": "2026-04-09T17:06:55.826023",
+        "source": "x",
+        "url": "https://x.com/rohanpaul_ai/status/2041962158796526017",
         "event_id": null
       },
       {
@@ -4436,86 +4791,84 @@
     ],
     "2026-04-08": [
       {
-        "id": "deb0ceafc291e2d4aee88b2df3052123",
-        "title": "OpenMind机器狗Olly在旧金山街头与同类互动",
-        "original_title": "With such a beautiful day in San Francisco we took our robot dog, Olly, out for a walk. He quickly became friends with Elon Dog and a couple others at...",
-        "summary": "OpenMind团队带机器狗Olly在旧金山South Park散步，与其他机器狗友好互动。",
-        "rating": "B",
-        "score": 66,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "机器人社交场景探索，反映消费级机器人正在进入日常生活场景。",
+        "id": "ae961bebb8b149b04b5cab5378d6fcfb",
+        "title": "微软开源markitdown工具，支持多格式文件一键转Markdown",
+        "original_title": "微软，总算出了个好东西。 开发了一款工具， 可以将几乎任何格式pdfs，word，docs，excel，PowerPoint，Audio，YouTube 网址 转换为Markdown文件， 众所周知Mark...",
+        "summary": "微软发布开源工具markitdown，可将PDF、Word、Excel、PowerPoint、音频、YouTube链接等多种格式转换为干净的Markdown文件，无需自定义解析器即可保留结构化标记。",
+        "rating": "A",
+        "score": 80,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该工具可大幅提升大语言模型的文档处理效率，可能成为AI应用开发的标配工具。",
         "entities": [
-          "Olly",
-          "Openmind"
+          "Markitdown",
+          "微软"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/openmind_agi/status/2042001591524585972"
+            "url": "https://x.com/howlemont/status/2042017686457348506"
           }
         ],
         "sources": 1,
-        "timestamp": 1775725615,
-        "published_at": "2026-04-09T17:06:55.825996",
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452387",
         "source": "x",
-        "url": "https://x.com/openmind_agi/status/2042001591524585972",
+        "url": "https://x.com/howlemont/status/2042017686457348506",
         "event_id": null
       },
       {
-        "id": "252f79064126ffa1fc354fcf92853f53",
-        "title": "Meta发布Muse Spark模型，由Meta Super Intelligence Labs打造",
-        "original_title": "The progress at Meta Super intelligence Labs over the past 9 months has been incredible. Grateful to be a part of it, and can't wait to see what's in ...",
-        "summary": "Meta Super Intelligence Labs发布首款模型Muse Spark，已全面接入Meta AI产品。",
-        "rating": "A+",
-        "score": 88,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Meta内部AI实验室首次公开成果，可能对标OpenAI和Anthropic的模型研发体系。",
+        "id": "fc9b3dc9cd35bc9e08b22487c2bb9b63",
+        "title": "Lunel支持手机远程运行Codex、Claude Code等开发工具",
+        "original_title": "shutup and use lunel run codex, opencode, claude code and your whole dev setup directly from your phone for free",
+        "summary": "Lunel平台允许用户通过手机免费远程运行Codex、OpenCode、Claude Code等开发工具，实现随时随地控制开发环境并启动AI Agent执行任务。",
+        "rating": "A",
+        "score": 78,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "移动端远程开发工具的成熟可能改变开发者的工作模式，推动\\\"随时随地编程\\\"成为常态。",
         "entities": [
-          "Alexandr Wang",
-          "Meta",
-          "Meta Super Intelligence Labs",
-          "Muse Spark"
+          "Claude Code",
+          "Codex",
+          "Lunel"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/crwhite_ml/status/2041962601488511247"
+            "url": "https://x.com/damnGruz/status/2042006536679989559"
           }
         ],
         "sources": 1,
-        "timestamp": 1775725615,
-        "published_at": "2026-04-09T17:06:55.826014",
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452403",
         "source": "x",
-        "url": "https://x.com/crwhite_ml/status/2041962601488511247",
+        "url": "https://x.com/damnGruz/status/2042006536679989559",
         "event_id": null
       },
       {
-        "id": "9f0e5022fc60acead4f0e71c9a89b099",
-        "title": "Sam Altman：AI已跨越关键阈值，但社会尚未察觉",
-        "original_title": "Sam Altman: Now it feels like early Feb 2020, when OpenAI researchers saw COVID coming early, planned for remote work & got mocked as most people stil...",
-        "summary": "Sam Altman将当前AI发展阶段比作2020年初疫情前夕，认为AI已突破关键节点但社会认知滞后。",
+        "id": "da10a877aa74e7e1baec16242d474702",
+        "title": "AI Agent仅用5美元完成全基因组分析，8小时输出完整健康报告",
+        "original_title": "i got my whole genome sequenced two years ago and forgot about it. last week i told my ai agent (@laukiantonson) to dig up my DNA files • it dug up a...",
+        "summary": "用户通过AI Agent在8小时内完成了67GB全基因组数据的分析，包括2100万条reads比对、580万个变异位点检测、39种疾病风险评估和141种药物兼容性分析，总计算成本仅5美元。",
         "rating": "S",
-        "score": 95,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "行业领袖的预警式发言，可能引发关于AI监管和社会准备的讨论。",
+        "score": 98,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "AI在生物信息学领域的应用可能大幅降低基因测序分析成本，推动个性化医疗普及。",
         "entities": [
-          "OpenAI",
-          "萨姆·奥尔特曼"
+          "Ai Agent"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/rohanpaul_ai/status/2041962158796526017"
+            "url": "https://x.com/sowmay_jain/status/2041982135305957425"
           }
         ],
         "sources": 1,
-        "timestamp": 1775725615,
-        "published_at": "2026-04-09T17:06:55.826023",
+        "timestamp": 1775729145,
+        "published_at": "2026-04-09T18:05:45.452413",
         "source": "x",
-        "url": "https://x.com/rohanpaul_ai/status/2041962158796526017",
+        "url": "https://x.com/sowmay_jain/status/2041982135305957425",
         "event_id": null
       },
       {
@@ -21275,6 +21628,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-09T17:08:19.311896",
-  "total_news": 695
+  "last_updated": "2026-04-09T18:06:51.676329",
+  "total_news": 708
 }
