@@ -2571,8 +2571,17 @@
         function renderSourceLinks(links) {
             if (!links || links.length === 0) return '-';
             return links.map(link => {
-                // 去掉括号及其内容，但保留 x(用户名) 格式
-                const name = link.name.startsWith('x(') ? link.name : link.name.replace(/\s*\([^)]*\)/g, '');
+                // x/Twitter链接用extractDomain提取用户名
+                let name;
+                try {
+                    const urlObj = new URL(link.url);
+                    if (urlObj.hostname === 'twitter.com' || urlObj.hostname === 'x.com') {
+                        name = extractDomain(link.url);
+                    }
+                } catch(e) {}
+                if (!name) {
+                    name = link.name.startsWith('x(') ? link.name : link.name.replace(/\s*\([^)]*\)/g, '');
+                }
                 return `<a href="${link.url}" target="_blank" class="source-link" title="${link.url}">${name}</a>`;
             }).join('');
         }
