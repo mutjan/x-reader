@@ -2059,6 +2059,8 @@
             updateBatchButtons();
         }
 
+        let _activeEventInput = null; // 追踪事件控件中当前聚焦的输入元素
+
         function updateEventSearch(e) {
             eventFilters.search = e.target.value;
             renderEvents();
@@ -2116,12 +2118,12 @@
                     <div class="event-control-group">
                         <label class="event-control-label">搜索:</label>
                         <input type="text" class="event-search-input" placeholder="搜索事件、实体、新闻标题..."
-                               value="${eventFilters.search}" oninput="updateEventSearch(event)">
+                               value="${eventFilters.search}" oninput="_activeEventInput='search'; updateEventSearch(event)">
                     </div>
 
                     <div class="event-control-group">
                         <label class="event-control-label">最低评分:</label>
-                        <select class="event-control-select" onchange="updateMinScore(event)">
+                        <select class="event-control-select" onchange="_activeEventInput='minScore'; updateMinScore(event)">
                             <option value="0" ${eventFilters.minScore === 0 ? 'selected' : ''}>全部</option>
                             <option value="70" ${eventFilters.minScore === 70 ? 'selected' : ''}>>=70分</option>
                             <option value="80" ${eventFilters.minScore === 80 ? 'selected' : ''}>>=80分</option>
@@ -2131,7 +2133,7 @@
 
                     <div class="event-control-group">
                         <label class="event-control-label">新闻数量:</label>
-                        <select class="event-control-select" onchange="updateMinNewsCount(event)">
+                        <select class="event-control-select" onchange="_activeEventInput='minNewsCount'; updateMinNewsCount(event)">
                             <option value="0" ${eventFilters.minNewsCount === 0 ? 'selected' : ''}>全部</option>
                             <option value="2" ${eventFilters.minNewsCount === 2 ? 'selected' : ''}>>=2条</option>
                             <option value="3" ${eventFilters.minNewsCount === 3 ? 'selected' : ''}>>=3条</option>
@@ -2281,6 +2283,19 @@
                 ${filteredEvents.length === 0 ? `<div class="empty-state"><p>🔍 没有符合筛选条件的事件</p></div>` : ''}
             `;
             updateBatchButtons();
+
+            // 恢复控件焦点（innerHTML 重建会销毁输入框，导致 oninput 丢失焦点）
+            if (_activeEventInput === 'search') {
+                const input = content.querySelector('.event-search-input');
+                if (input) { input.focus(); input.selectionStart = input.selectionEnd = eventFilters.search.length; }
+            } else if (_activeEventInput === 'minScore') {
+                const sel = content.querySelector('.event-control-select[onchange*="updateMinScore"]');
+                if (sel) sel.focus();
+            } else if (_activeEventInput === 'minNewsCount') {
+                const sel = content.querySelector('.event-control-select[onchange*="updateMinNewsCount"]');
+                if (sel) sel.focus();
+            }
+            _activeEventInput = null;
         }
 
         function toggleEventExpand(eventId) {
