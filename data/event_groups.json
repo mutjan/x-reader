@@ -73,10 +73,10 @@
       "b406d8d42c90c253d265bbee4dd228a5",
       "9d894b996303a3fb866a66f4eb2c86b5",
       "d67b2536998b76de6d9b45c1e080c5df",
-      "c2b1c04dd15271e36a2f1b3b287c42a5",
       "73aa5b76783df540fd958532c742589b",
       "e4ebf49805573b442dfe28bd2e5fab1b",
       "985ec809004c602dc4cb8dec04d256da",
+      "c2b1c04dd15271e36a2f1b3b287c42a5",
       "0a5168c838181ebd0ee73b3884028917",
       "8746a7a3e6520a6d8a2e0e6d3bda500f",
       "108a7cb389c6be9bc2c1cb4a10113b04",
@@ -165,10 +165,10 @@
     "news_ids": [
       "c382a3a4a18914730adfc0ab9a82252a",
       "76f56d9b5938c7319a0ef09057614b55",
+      "bffae5b731f689b5fb6adbe663f39ff9",
       "b487e7f7a494efa2f08b6a18aa314aaf",
       "c379c92ac5723ad96a59ebd5131e83c7",
       "591b148d00f102d55c5cd64f984b353a",
-      "bffae5b731f689b5fb6adbe663f39ff9",
       "22c4880f6f6d444615e1cdc49266d89a",
       "8f2975aff35584a380864e5b9b7a89ee",
       "1c7131bad768dff949cc71ac776c912c",
@@ -297,8 +297,8 @@
     "entities": [
       "Anthropic",
       "Claude",
-      "开源",
-      "GitHub"
+      "GitHub",
+      "开源"
     ]
   },
   {
@@ -314,10 +314,10 @@
       "e4ee821e4236da151c4f7e6389d1ee7e",
       "f4dae4eaf6568cea6e914cc2af0523a0",
       "71bc24bf1feba2c2fb318206ce072965",
+      "0c59524f1bf8f134ba8a563746b44f06",
       "ef8c5584be87366d58222fc12933cda4",
       "0d1b840056c85a966cd3f779841533e0",
       "6f949bdd9a85c3521cbc3728f96f0cc6",
-      "0c59524f1bf8f134ba8a563746b44f06",
       "0fbf020bc0e34c4932c5f34f3259e569",
       "492023c3ac3e677331f711090881a078",
       "c525fdb0568d151ab86b82a7f5607490",
@@ -381,7 +381,7 @@
   },
   {
     "group_id": "04d71c4f",
-    "event_title": "Karpathy提出新型LLM知识库架构，用AI维护的动态markdown库替代RAG",
+    "event_title": "Karpathy分享LLM知识库架构 用AI维护的演化Markdown库替代RAG",
     "first_seen_at": "2026-04-04T08:05:12.449441",
     "last_seen_at": "2026-04-05T07:58:50.736137",
     "news_ids": [
@@ -455,16 +455,16 @@
     "max_score": 98,
     "max_grade": "S",
     "entities": [
-      "OpenAI",
+      "Alexander Embiricos",
       "ChatGPT",
       "Codex",
-      "Alexander Embiricos",
+      "OpenAI",
       "Peter Steinberger"
     ]
   },
   {
     "group_id": "646740e7",
-    "event_title": "斯坦福研究揭示前沿AI诊断X光时出现幻象推理",
+    "event_title": "斯坦福研究发现前沿AI模型诊断X光时出现幻觉推理",
     "first_seen_at": "2026-04-05T20:13:46.627906",
     "last_seen_at": "2026-04-09T02:02:11.806094",
     "news_ids": [
@@ -584,9 +584,9 @@
     "max_grade": "S",
     "entities": [
       "Andrej Karpathy",
-      "OpenAI",
+      "Cursor",
       "LLM",
-      "Cursor"
+      "OpenAI"
     ]
   },
   {
@@ -680,7 +680,7 @@
   },
   {
     "group_id": "c8d33569",
-    "event_title": "Vibe Coding效应显现：App Store一季度新应用数量暴增84%",
+    "event_title": "Vibe Coding效应显现：App Store新应用数量暴增84%",
     "first_seen_at": "2026-04-06T00:01:28.461410",
     "last_seen_at": "2026-04-06T00:01:28.461410",
     "news_ids": [
@@ -820,9 +820,9 @@
     "max_score": 95,
     "max_grade": "S",
     "entities": [
+      "Claude Code",
       "Mark Zuckerberg",
-      "Meta",
-      "Claude Code"
+      "Meta"
     ]
   },
   {
@@ -836,10 +836,10 @@
     "max_score": 95,
     "max_grade": "S",
     "entities": [
-      "Sam Altman",
+      "AI科研",
       "OpenAI",
-      "理论物理",
-      "AI科研"
+      "Sam Altman",
+      "理论物理"
     ]
   },
   {
@@ -1007,6 +1007,24 @@
     ]
   },
   {
+    "group_id": "ada6d0b4",
+    "event_title": "纯Triton实现融合MoE分发内核，在推理批次规模上超越CUDA优化的Megablocks",
+    "first_seen_at": "2026-04-06T11:01:07.786307",
+    "last_seen_at": "2026-04-06T11:01:07.786307",
+    "news_ids": [
+      "bc44a9fdac20097048036ff08ee62936"
+    ],
+    "max_score": 93,
+    "max_grade": "S",
+    "entities": [
+      "Megablocks",
+      "Mixtral",
+      "Moe",
+      "Stanford",
+      "Triton"
+    ]
+  },
+  {
     "group_id": "64e20027",
     "event_title": "AWS发布S3 Files支持将存储桶挂载为本地文件系统",
     "first_seen_at": "2026-04-08T06:31:29.622215",
@@ -1037,9 +1055,9 @@
     "max_score": 92,
     "max_grade": "S",
     "entities": [
-      "Cursor",
       "AI编程",
-      "Anysphere"
+      "Anysphere",
+      "Cursor"
     ]
   },
   {
@@ -1184,8 +1202,8 @@
     "max_score": 91,
     "max_grade": "S",
     "entities": [
-      "Perplexity",
       "AI搜索",
+      "Perplexity",
       "隐私保护"
     ]
   },
@@ -1275,7 +1293,7 @@
   },
   {
     "group_id": "414ca26f",
-    "event_title": "OpenAI被曝秘密资助儿童安全组织，借草根团体推动有利立法",
+    "event_title": "非营利研究组织发现OpenAI一直在秘密资助其工作",
     "first_seen_at": "2026-04-06T03:01:53.133538",
     "last_seen_at": "2026-04-06T03:01:53.133538",
     "news_ids": [
@@ -1303,71 +1321,6 @@
       "Gemma",
       "Nyt Connections",
       "Qwen"
-    ]
-  },
-  {
-    "group_id": "57278e40",
-    "event_title": "TurboQuant论文引发存储芯片市场恐慌性抛售",
-    "first_seen_at": "2026-04-06T13:01:54.955512",
-    "last_seen_at": "2026-04-06T13:01:54.955512",
-    "news_ids": [
-      "d711c11b6952e080ac6647d96fa3c114"
-    ],
-    "max_score": 88,
-    "max_grade": "S",
-    "entities": [
-      "Hbm",
-      "Turboquant"
-    ]
-  },
-  {
-    "group_id": "dd43e599",
-    "event_title": "OpenAI两位高管包括AGI业务CEO将休长期医疗假",
-    "first_seen_at": "2026-04-04T07:03:03.497581",
-    "last_seen_at": "2026-04-06T18:16:21.742193",
-    "news_ids": [
-      "8d93051bd97fb32db3819de2d4320b2f",
-      "cbd204c484cf404a29abe3999886afb2"
-    ],
-    "max_score": 85,
-    "max_grade": "S",
-    "entities": [
-      "Bloomberg",
-      "GPT",
-      "OpenAI"
-    ]
-  },
-  {
-    "group_id": "3d7505d8",
-    "event_title": "硅谷初创公司用OpenClaw构建全AI软件工程团队",
-    "first_seen_at": "2026-04-04T11:01:56.788951",
-    "last_seen_at": "2026-04-04T11:01:56.788951",
-    "news_ids": [
-      "02177d0b3741cc79c31d519778a37eaa"
-    ],
-    "max_score": 85,
-    "max_grade": "S",
-    "entities": [
-      "Claude",
-      "Justpaid",
-      "Openclaw"
-    ]
-  },
-  {
-    "group_id": "4b21d69b",
-    "event_title": "Anthropic成一级市场最热门交易标的 SpaceX IPO或将重构行业格局",
-    "first_seen_at": "2026-04-04T10:03:35.369147",
-    "last_seen_at": "2026-04-04T10:03:35.369147",
-    "news_ids": [
-      "c715e6072f2af8b38f2ddeef1c058968"
-    ],
-    "max_score": 80,
-    "max_grade": "S",
-    "entities": [
-      "Anthropic",
-      "OpenAI",
-      "Rainmaker Securities",
-      "SpaceX"
     ]
   },
   {
@@ -1430,8 +1383,8 @@
     "max_score": 89,
     "max_grade": "A+",
     "entities": [
-      "Jay Edelson",
-      "Facebook"
+      "Facebook",
+      "Jay Edelson"
     ]
   },
   {
@@ -1454,7 +1407,7 @@
   },
   {
     "group_id": "0a9c7a73",
-    "event_title": "研究揭示AI代理可相互通信且难以被检测",
+    "event_title": "研究发现AI智能体可相互通信且难以被发现",
     "first_seen_at": "2026-04-07T22:02:12.582440",
     "last_seen_at": "2026-04-07T22:02:12.582440",
     "news_ids": [
@@ -1499,6 +1452,21 @@
     ]
   },
   {
+    "group_id": "57278e40",
+    "event_title": "TurboQuant引发内存芯片市场恐慌性抛售，市值蒸发数百亿美元",
+    "first_seen_at": "2026-04-06T13:01:54.955512",
+    "last_seen_at": "2026-04-06T13:01:54.955512",
+    "news_ids": [
+      "d711c11b6952e080ac6647d96fa3c114"
+    ],
+    "max_score": 88,
+    "max_grade": "A+",
+    "entities": [
+      "Hbm",
+      "Turboquant"
+    ]
+  },
+  {
     "group_id": "7ac63980",
     "event_title": "开发者基于Claude Opus微调Gemma 4模型 推理能力显著提升",
     "first_seen_at": "2026-04-03T14:01:52.590407",
@@ -1537,8 +1505,8 @@
     "max_score": 88,
     "max_grade": "A+",
     "entities": [
-      "OpenAI",
-      "Greg Brockman"
+      "Greg Brockman",
+      "OpenAI"
     ]
   },
   {
@@ -1568,8 +1536,8 @@
     "max_score": 88,
     "max_grade": "A+",
     "entities": [
-      "NVIDIA",
       "GPU",
+      "NVIDIA",
       "Rowhammer"
     ]
   },
@@ -1703,6 +1671,38 @@
     ]
   },
   {
+    "group_id": "41917868",
+    "event_title": "OpenAI投入超1亿美元支持阿尔茨海默病研究",
+    "first_seen_at": "2026-04-09T00:46:47",
+    "last_seen_at": "2026-04-09T00:46:47",
+    "news_ids": [
+      "a30223df892d1d82404ad891fbe2b425"
+    ],
+    "max_score": 88,
+    "max_grade": "A+",
+    "entities": [
+      "Alzheimer'S",
+      "OpenAI"
+    ]
+  },
+  {
+    "group_id": "dd43e599",
+    "event_title": "OpenAI披露每周60万次医疗查询，七成来自医疗资源匮乏地区且集中在非工作时段",
+    "first_seen_at": "2026-04-04T07:03:03.497581",
+    "last_seen_at": "2026-04-06T18:16:21.742193",
+    "news_ids": [
+      "cbd204c484cf404a29abe3999886afb2",
+      "8d93051bd97fb32db3819de2d4320b2f"
+    ],
+    "max_score": 87,
+    "max_grade": "A+",
+    "entities": [
+      "Bloomberg",
+      "GPT",
+      "OpenAI"
+    ]
+  },
+  {
     "group_id": "610cfef9",
     "event_title": "贝佐斯AI创业项目从OpenAI挖角xAI联创Kyle Kosic",
     "first_seen_at": "2026-04-07T20:20:38.583207",
@@ -1760,9 +1760,9 @@
     "max_score": 87,
     "max_grade": "A+",
     "entities": [
+      "Google",
       "Meta",
-      "Microsoft",
-      "Google"
+      "Microsoft"
     ]
   },
   {
@@ -1776,10 +1776,10 @@
     "max_score": 87,
     "max_grade": "A+",
     "entities": [
-      "Anthropic",
       "AI制药",
-      "生物科技",
-      "初创公司"
+      "Anthropic",
+      "初创公司",
+      "生物科技"
     ]
   },
   {
@@ -1815,7 +1815,7 @@
   },
   {
     "group_id": "4d7e04df",
-    "event_title": "中国出台新规严管虚拟数字人，与美国形成鲜明对比",
+    "event_title": "中国拟出台AI数字人监管新规，严控虚拟亲密关系",
     "first_seen_at": "2026-04-06T10:03:53.671000",
     "last_seen_at": "2026-04-06T10:03:53.671000",
     "news_ids": [
@@ -1860,6 +1860,22 @@
       "Box",
       "企业Ai",
       "数据治理"
+    ]
+  },
+  {
+    "group_id": "edd002ef",
+    "event_title": "Meta智能眼镜新增饮食追踪功能引发健康担忧",
+    "first_seen_at": "2026-04-06T01:02:28.515454",
+    "last_seen_at": "2026-04-06T01:02:28.515454",
+    "news_ids": [
+      "7fcace2570b016e97b8950748cb5eea5"
+    ],
+    "max_score": 87,
+    "max_grade": "A+",
+    "entities": [
+      "Meta",
+      "Meta Ai",
+      "Ray-Ban"
     ]
   },
   {
@@ -2023,9 +2039,9 @@
     "max_score": 86,
     "max_grade": "A+",
     "entities": [
+      "AI质量检测",
       "Claude",
-      "Skyvern",
-      "AI质量检测"
+      "Skyvern"
     ]
   },
   {
@@ -2135,6 +2151,22 @@
     ]
   },
   {
+    "group_id": "3d7505d8",
+    "event_title": "硅谷初创公司用OpenClaw打造全自主AI工程师团队",
+    "first_seen_at": "2026-04-04T11:01:56.788951",
+    "last_seen_at": "2026-04-04T11:01:56.788951",
+    "news_ids": [
+      "02177d0b3741cc79c31d519778a37eaa"
+    ],
+    "max_score": 85,
+    "max_grade": "A+",
+    "entities": [
+      "Claude",
+      "Justpaid",
+      "Openclaw"
+    ]
+  },
+  {
     "group_id": "c621f2dc",
     "event_title": "谷歌Vids视频工具获AI升级 集成Veo和Lyria模型支持AI化身",
     "first_seen_at": "2026-04-03T06:41:58.121352",
@@ -2145,11 +2177,11 @@
     "max_score": 85,
     "max_grade": "A+",
     "entities": [
-      "谷歌",
-      "Vids",
-      "Veo",
       "Lyria",
-      "Workspace"
+      "Veo",
+      "Vids",
+      "Workspace",
+      "谷歌"
     ]
   },
   {
@@ -2166,7 +2198,7 @@
   },
   {
     "group_id": "9d379913",
-    "event_title": "Target更新用户条款：AI购物助手出错，损失由消费者承担",
+    "event_title": "Target更新条款：AI购物助手出错由消费者买单",
     "first_seen_at": "2026-04-05T22:02:08.642631",
     "last_seen_at": "2026-04-05T22:02:08.642631",
     "news_ids": [
@@ -2330,131 +2362,21 @@
     ]
   },
   {
-    "group_id": "ec959123",
-    "event_title": "科学家观测到光波中存在超光速运动的暗点",
-    "first_seen_at": "2026-04-04T19:07:39.064300",
-    "last_seen_at": "2026-04-04T19:07:39.064300",
+    "group_id": "0634cffc",
+    "event_title": "TurboQuant-GPU开源：5倍KV缓存压缩，支持所有GPU架构",
+    "first_seen_at": "2026-04-06T06:01:16.339887",
+    "last_seen_at": "2026-04-06T06:01:16.339887",
     "news_ids": [
-      "72038e986427eaf52206df8be464d696"
+      "3e3dc0a0dafc3970131aec83244160eb"
     ],
-    "max_score": 84,
+    "max_score": 85,
     "max_grade": "A+",
     "entities": [
-      "Ido Kaminer",
-      "Michael Berry",
-      "Nature"
-    ]
-  },
-  {
-    "group_id": "749dd7e6",
-    "event_title": "OpenAI Codex定价模式转型：从按消息计费转向按Token计费",
-    "first_seen_at": "2026-04-06T13:01:54.955403",
-    "last_seen_at": "2026-04-06T13:01:54.955403",
-    "news_ids": [
-      "32b009e3bae146e640782840fce46e1b"
-    ],
-    "max_score": 83,
-    "max_grade": "A+",
-    "entities": [
-      "Codex",
-      "GPT",
-      "OpenAI"
-    ]
-  },
-  {
-    "group_id": "0584569b",
-    "event_title": "研究人员推出GPU友好的12位BF16无损压缩格式",
-    "first_seen_at": "2026-04-04T13:02:24.786420",
-    "last_seen_at": "2026-04-04T13:02:24.786420",
-    "news_ids": [
-      "292ebd6525114814fee8384ae7505dfc"
-    ],
-    "max_score": 79,
-    "max_grade": "A+",
-    "entities": [
-      "Amd",
-      "Bf16",
+      "CUDA",
+      "Hugging Face",
+      "Mistral",
+      "Turboquant",
       "英伟达"
-    ]
-  },
-  {
-    "group_id": "669541be",
-    "event_title": "皮查伊深度访谈：Google如何在AI竞赛中重整旗鼓",
-    "first_seen_at": "2026-04-07T22:02:12.582391",
-    "last_seen_at": "2026-04-07T22:02:12.582391",
-    "news_ids": [
-      "aa15b7f4817f4d5faf6d5a1f071aba10"
-    ],
-    "max_score": 79,
-    "max_grade": "A+",
-    "entities": [
-      "Alphabet",
-      "桑达尔·皮查伊",
-      "谷歌"
-    ]
-  },
-  {
-    "group_id": "4fc72b55",
-    "event_title": "DeepMind让大语言模型重写自身博弈论算法",
-    "first_seen_at": "2026-04-04T18:04:12.186562",
-    "last_seen_at": "2026-04-04T18:04:12.186562",
-    "news_ids": [
-      "479e9e40844e04820cf5963d6a766001"
-    ],
-    "max_score": 78,
-    "max_grade": "A+",
-    "entities": [
-      "DeepMind",
-      "谷歌"
-    ]
-  },
-  {
-    "group_id": "e07c75dc",
-    "event_title": "优必选开出1.3亿元年薪招聘首席科学家 打破AI行业高薪冻结趋势",
-    "first_seen_at": "2026-04-04T14:01:38.087740",
-    "last_seen_at": "2026-04-04T14:01:38.087740",
-    "news_ids": [
-      "6ef948e70f5279ca1995ba3f45089e52"
-    ],
-    "max_score": 68,
-    "max_grade": "A+",
-    "entities": [
-      "Bloomberg",
-      "Ubtech"
-    ]
-  },
-  {
-    "group_id": "ada6d0b4",
-    "event_title": "纯Triton实现的MoE调度内核在推理批次上击败CUDA优化的Megablocks",
-    "first_seen_at": "2026-04-06T11:01:07.786307",
-    "last_seen_at": "2026-04-06T11:01:07.786307",
-    "news_ids": [
-      "bc44a9fdac20097048036ff08ee62936"
-    ],
-    "max_score": 93,
-    "max_grade": "A",
-    "entities": [
-      "Megablocks",
-      "Mixtral",
-      "Moe",
-      "Stanford",
-      "Triton"
-    ]
-  },
-  {
-    "group_id": "edd002ef",
-    "event_title": "Meta智能眼镜将推AI饮食追踪功能，专家担忧或加剧饮食障碍风险",
-    "first_seen_at": "2026-04-06T01:02:28.515454",
-    "last_seen_at": "2026-04-06T01:02:28.515454",
-    "news_ids": [
-      "7fcace2570b016e97b8950748cb5eea5"
-    ],
-    "max_score": 87,
-    "max_grade": "A",
-    "entities": [
-      "Meta",
-      "Meta Ai",
-      "Ray-Ban"
     ]
   },
   {
@@ -2494,6 +2416,22 @@
     ]
   },
   {
+    "group_id": "ec959123",
+    "event_title": "科学家发现超光速运动的暗点 相对论面临挑战",
+    "first_seen_at": "2026-04-04T19:07:39.064300",
+    "last_seen_at": "2026-04-04T19:07:39.064300",
+    "news_ids": [
+      "72038e986427eaf52206df8be464d696"
+    ],
+    "max_score": 84,
+    "max_grade": "A",
+    "entities": [
+      "Ido Kaminer",
+      "Michael Berry",
+      "Nature"
+    ]
+  },
+  {
     "group_id": "1d715b3c",
     "event_title": "玩家用 Claude AI 修改 BIOS 成功在 Z790 主板上点亮 12 核 Bartlett Lake",
     "first_seen_at": "2026-04-04T20:05:16.208153",
@@ -2504,10 +2442,10 @@
     "max_score": 84,
     "max_grade": "A",
     "entities": [
-      "Claude",
       "Asus",
-      "Z790",
-      "Bartlett Lake"
+      "Bartlett Lake",
+      "Claude",
+      "Z790"
     ]
   },
   {
@@ -2528,7 +2466,7 @@
   },
   {
     "group_id": "85a60efc",
-    "event_title": "教授用AI编程开发反ICE应用，在皮卡车上vibe coding对抗移民执法",
+    "event_title": "一名开发者用Vibe Coding开发应用帮助移民对抗ICE执法",
     "first_seen_at": "2026-04-06T06:01:16.339917",
     "last_seen_at": "2026-04-06T06:01:16.339917",
     "news_ids": [
@@ -2713,6 +2651,22 @@
     ]
   },
   {
+    "group_id": "749dd7e6",
+    "event_title": "OpenAI Codex计费模式将从按消息收费全面转向按token收费",
+    "first_seen_at": "2026-04-06T13:01:54.955403",
+    "last_seen_at": "2026-04-06T13:01:54.955403",
+    "news_ids": [
+      "32b009e3bae146e640782840fce46e1b"
+    ],
+    "max_score": 83,
+    "max_grade": "A",
+    "entities": [
+      "Codex",
+      "GPT",
+      "OpenAI"
+    ]
+  },
+  {
     "group_id": "09bae769",
     "event_title": "苹果iPad全系产品迎来日常优惠 新款iPad Air已降价促销",
     "first_seen_at": "2026-04-04T02:41:32.892027",
@@ -2744,7 +2698,7 @@
   },
   {
     "group_id": "17053380",
-    "event_title": "AutoKernel发布：让AI自动优化GPU内核，PyTorch模型性能最高提升5倍",
+    "event_title": "AutoKernel发布：受Karpathy启发实现GPU内核自动优化，性能提升5倍",
     "first_seen_at": "2026-04-06T00:01:28.461378",
     "last_seen_at": "2026-04-06T00:01:28.461378",
     "news_ids": [
@@ -2893,8 +2847,8 @@
     "entities": [
       "Gemma 4",
       "Google DeepMind",
-      "Roboflow",
       "RF-DETR",
+      "Roboflow",
       "WebGPU"
     ]
   },
@@ -3076,14 +3030,14 @@
     "max_score": 81,
     "max_grade": "A",
     "entities": [
+      "Mercor",
       "Meta",
-      "OpenAI",
-      "Mercor"
+      "OpenAI"
     ]
   },
   {
     "group_id": "6eb915ae",
-    "event_title": "SpaceX、OpenAI、Anthropic年内IPO计划或引发科技股资金大迁移",
+    "event_title": "即将到来的大型IPO对科技股意味着什么",
     "first_seen_at": "2026-04-06T07:01:31.439009",
     "last_seen_at": "2026-04-06T07:01:31.439009",
     "news_ids": [
@@ -3102,7 +3056,7 @@
   },
   {
     "group_id": "bf6ae57b",
-    "event_title": "无需参考模型即可检测LLM后门行为，新方法在AuditBench上匹敌Anthropic基线",
+    "event_title": "研究者提出无需参考模型的LLM行为审计方法，在AuditBench上匹敌Anthropic基线",
     "first_seen_at": "2026-04-06T11:01:07.786273",
     "last_seen_at": "2026-04-06T11:01:07.786273",
     "news_ids": [
@@ -3241,6 +3195,23 @@
       "Intel",
       "Sambanova",
       "英伟达"
+    ]
+  },
+  {
+    "group_id": "4b21d69b",
+    "event_title": "Anthropic成私有市场最热门交易 SpaceX IPO可能重塑格局",
+    "first_seen_at": "2026-04-04T10:03:35.369147",
+    "last_seen_at": "2026-04-04T10:03:35.369147",
+    "news_ids": [
+      "c715e6072f2af8b38f2ddeef1c058968"
+    ],
+    "max_score": 80,
+    "max_grade": "A",
+    "entities": [
+      "Anthropic",
+      "OpenAI",
+      "Rainmaker Securities",
+      "SpaceX"
     ]
   },
   {
@@ -3396,6 +3367,38 @@
     ]
   },
   {
+    "group_id": "0584569b",
+    "event_title": "新12位BF16无损压缩格式 99.97%权重解码仅需一次加法",
+    "first_seen_at": "2026-04-04T13:02:24.786420",
+    "last_seen_at": "2026-04-04T13:02:24.786420",
+    "news_ids": [
+      "292ebd6525114814fee8384ae7505dfc"
+    ],
+    "max_score": 79,
+    "max_grade": "A",
+    "entities": [
+      "Amd",
+      "Bf16",
+      "英伟达"
+    ]
+  },
+  {
+    "group_id": "669541be",
+    "event_title": "皮查伊谈谷歌AI历史、搜索速度、AI复兴等",
+    "first_seen_at": "2026-04-07T22:02:12.582391",
+    "last_seen_at": "2026-04-07T22:02:12.582391",
+    "news_ids": [
+      "aa15b7f4817f4d5faf6d5a1f071aba10"
+    ],
+    "max_score": 79,
+    "max_grade": "A",
+    "entities": [
+      "Alphabet",
+      "桑达尔·皮查伊",
+      "谷歌"
+    ]
+  },
+  {
     "group_id": "5ee78384",
     "event_title": "美国EPA将人类生命统计价值下调至零美元",
     "first_seen_at": "2026-04-04T19:07:39.064345",
@@ -3407,8 +3410,8 @@
     "max_grade": "A",
     "entities": [
       "EPA",
-      "环境污染",
-      "公共健康"
+      "公共健康",
+      "环境污染"
     ]
   },
   {
@@ -3584,6 +3587,22 @@
     ]
   },
   {
+    "group_id": "84611fdd",
+    "event_title": "Google Gemini应用推出notebooks功能深化NotebookLM集成",
+    "first_seen_at": "2026-04-09T07:25:01",
+    "last_seen_at": "2026-04-09T07:25:01",
+    "news_ids": [
+      "8f38e85d3692e93cb80b79bfd7288ea4"
+    ],
+    "max_score": 79,
+    "max_grade": "A",
+    "entities": [
+      "Gemini",
+      "Notebooklm",
+      "谷歌"
+    ]
+  },
+  {
     "group_id": "f9171093",
     "event_title": "Generalist发布GEN-1物理AI系统，达到生产级成功率",
     "first_seen_at": "2026-04-04T14:01:38.087758",
@@ -3618,6 +3637,21 @@
     ]
   },
   {
+    "group_id": "4fc72b55",
+    "event_title": "DeepMind让LLM重写自己的博弈论算法 表现超越专家",
+    "first_seen_at": "2026-04-04T18:04:12.186562",
+    "last_seen_at": "2026-04-04T18:04:12.186562",
+    "news_ids": [
+      "479e9e40844e04820cf5963d6a766001"
+    ],
+    "max_score": 78,
+    "max_grade": "A",
+    "entities": [
+      "DeepMind",
+      "谷歌"
+    ]
+  },
+  {
     "group_id": "f0f6c665",
     "event_title": "AI拖拉机初创公司烧光2.4亿美元资金 宣布全员裁员走向破产",
     "first_seen_at": "2026-04-03T23:01:09.875761",
@@ -3640,8 +3674,8 @@
     "max_score": 78,
     "max_grade": "A",
     "entities": [
-      "Mamba-3",
-      "HDFS"
+      "HDFS",
+      "Mamba-3"
     ]
   },
   {
@@ -3655,8 +3689,8 @@
     "max_score": 78,
     "max_grade": "A",
     "entities": [
-      "亚马逊",
       "AWS",
+      "亚马逊",
       "伊朗",
       "数据中心"
     ]
@@ -3672,9 +3706,9 @@
     "max_score": 78,
     "max_grade": "A",
     "entities": [
+      "中国机器人产业",
       "人形机器人",
-      "机器人训练",
-      "中国机器人产业"
+      "机器人训练"
     ]
   },
   {
@@ -3688,9 +3722,9 @@
     "max_score": 78,
     "max_grade": "A",
     "entities": [
-      "莱顿大学",
       "3D打印",
-      "微型机器人"
+      "微型机器人",
+      "莱顿大学"
     ]
   },
   {
@@ -3704,8 +3738,8 @@
     "max_score": 78,
     "max_grade": "A",
     "entities": [
-      "GitHub",
       "DMCA",
+      "GitHub",
       "开源"
     ]
   },
@@ -4173,6 +4207,24 @@
     ]
   },
   {
+    "group_id": "a445f090",
+    "event_title": "科学家基因改造植物使其同时产生五种致幻药物",
+    "first_seen_at": "2026-04-06T05:00:57.838583",
+    "last_seen_at": "2026-04-06T05:00:57.838583",
+    "news_ids": [
+      "e67bdef7b7de1de91778c19de43cb0cc"
+    ],
+    "max_score": 78,
+    "max_grade": "A",
+    "entities": [
+      "Dmt",
+      "Psilocybin",
+      "Science Advances",
+      "Thc",
+      "魏茨曼研究所"
+    ]
+  },
+  {
     "group_id": "1ca0c974",
     "event_title": "X平台推出Grok驱动的自动翻译和照片编辑功能",
     "first_seen_at": "2026-04-08T21:08:50.754031",
@@ -4421,10 +4473,10 @@
     "max_score": 76,
     "max_grade": "A",
     "entities": [
-      "Microsoft",
-      "Windows 10",
       "Linux",
-      "ThinkPad"
+      "Microsoft",
+      "ThinkPad",
+      "Windows 10"
     ]
   },
   {
@@ -4438,8 +4490,8 @@
     "max_score": 76,
     "max_grade": "A",
     "entities": [
-      "Anthropic",
       "AnthroPAC",
+      "Anthropic",
       "政治行动委员会"
     ]
   },
@@ -4469,9 +4521,9 @@
     "max_score": 76,
     "max_grade": "A",
     "entities": [
+      "3D生成",
       "Know3D",
-      "大语言模型",
-      "3D生成"
+      "大语言模型"
     ]
   },
   {
@@ -4846,6 +4898,21 @@
     ]
   },
   {
+    "group_id": "bb36cd08",
+    "event_title": "博士二年级学生反思过度依赖ChatGPT编程：担忧毕业后成为\\\"伪程序员\\\"",
+    "first_seen_at": "2026-04-06T14:01:11.391131",
+    "last_seen_at": "2026-04-06T14:01:11.391131",
+    "news_ids": [
+      "402901c7d7e019a4d090b42095587729"
+    ],
+    "max_score": 76,
+    "max_grade": "A",
+    "entities": [
+      "GPT",
+      "Reddit"
+    ]
+  },
+  {
     "group_id": "0fd19a5c",
     "event_title": "Andrej Karpathy分享LLM Wiki作为创意文件示例",
     "first_seen_at": "2026-04-05T20:13:46.628023",
@@ -4923,7 +4990,7 @@
   },
   {
     "group_id": "8a020ce4",
-    "event_title": "Mdarena：针对Claude.md的PR级基准测试工具",
+    "event_title": "Mdarena开源：用你自己的PR数据测试Claude.md提示词效果",
     "first_seen_at": "2026-04-06T10:03:53.670908",
     "last_seen_at": "2026-04-06T10:03:53.670908",
     "news_ids": [
@@ -5122,84 +5189,17 @@
   },
   {
     "group_id": "583c38bb",
-    "event_title": "Apex Protocol发布：面向AI Agent交易的MCP开放标准",
+    "event_title": "Apex Protocol发布：基于MCP的开放标准，用于AI Agent交易",
     "first_seen_at": "2026-04-06T10:03:53.670894",
     "last_seen_at": "2026-04-06T10:03:53.670894",
     "news_ids": [
       "263a2d3c3de3bf694356d640b5438269"
     ],
     "max_score": 74,
-    "max_grade": "A",
+    "max_grade": "B",
     "entities": [
       "Apex Protocol",
       "MCP"
-    ]
-  },
-  {
-    "group_id": "20479c7d",
-    "event_title": "科技巨头砸数亿美元布局2026中期选举，游说AI监管政策",
-    "first_seen_at": "2026-04-06T05:00:57.838596",
-    "last_seen_at": "2026-04-06T05:00:57.838596",
-    "news_ids": [
-      "a1088e3c18453bbdff4eaa5ec5264922"
-    ],
-    "max_score": 73,
-    "max_grade": "A",
-    "entities": [
-      "Ice",
-      "Pac",
-      "金融时报"
-    ]
-  },
-  {
-    "group_id": "0634cffc",
-    "event_title": "TurboQuant-GPU发布：任意GPU实现5倍KV缓存压缩，3行代码即可集成",
-    "first_seen_at": "2026-04-06T06:01:16.339887",
-    "last_seen_at": "2026-04-06T06:01:16.339887",
-    "news_ids": [
-      "3e3dc0a0dafc3970131aec83244160eb"
-    ],
-    "max_score": 85,
-    "max_grade": "B",
-    "entities": [
-      "CUDA",
-      "Hugging Face",
-      "Mistral",
-      "Turboquant",
-      "英伟达"
-    ]
-  },
-  {
-    "group_id": "a445f090",
-    "event_title": "科学家基因改造烟草植物，可同时生产五种致幻剂",
-    "first_seen_at": "2026-04-06T05:00:57.838583",
-    "last_seen_at": "2026-04-06T05:00:57.838583",
-    "news_ids": [
-      "e67bdef7b7de1de91778c19de43cb0cc"
-    ],
-    "max_score": 78,
-    "max_grade": "B",
-    "entities": [
-      "Dmt",
-      "Psilocybin",
-      "Science Advances",
-      "Thc",
-      "魏茨曼研究所"
-    ]
-  },
-  {
-    "group_id": "bb36cd08",
-    "event_title": "博士生自白：过度依赖ChatGPT写代码让我陷入冒名顶替综合征",
-    "first_seen_at": "2026-04-06T14:01:11.391131",
-    "last_seen_at": "2026-04-06T14:01:11.391131",
-    "news_ids": [
-      "402901c7d7e019a4d090b42095587729"
-    ],
-    "max_score": 76,
-    "max_grade": "B",
-    "entities": [
-      "GPT",
-      "Reddit"
     ]
   },
   {
@@ -5281,6 +5281,22 @@
     ]
   },
   {
+    "group_id": "20479c7d",
+    "event_title": "AI和数据中心的游说团体投入数亿美元影响中期选举",
+    "first_seen_at": "2026-04-06T05:00:57.838596",
+    "last_seen_at": "2026-04-06T05:00:57.838596",
+    "news_ids": [
+      "a1088e3c18453bbdff4eaa5ec5264922"
+    ],
+    "max_score": 73,
+    "max_grade": "B",
+    "entities": [
+      "Ice",
+      "Pac",
+      "金融时报"
+    ]
+  },
+  {
     "group_id": "6f7c4a52",
     "event_title": "34国研究揭示环境社会因素对大脑衰老影响远超个体生活方式",
     "first_seen_at": "2026-04-04T02:41:32.892005",
@@ -5303,10 +5319,10 @@
     "max_score": 73,
     "max_grade": "B",
     "entities": [
-      "服务机器人",
-      "配送机器人",
       "AI伦理",
-      "自动化"
+      "服务机器人",
+      "自动化",
+      "配送机器人"
     ]
   },
   {
@@ -5401,8 +5417,8 @@
     "max_score": 72,
     "max_grade": "B",
     "entities": [
-      "机器学习",
-      "人工智能"
+      "人工智能",
+      "机器学习"
     ]
   },
   {
@@ -5530,6 +5546,22 @@
     ]
   },
   {
+    "group_id": "b2ac80ba",
+    "event_title": "美国法院驳回Anthropic暂停五角大楼黑名单禁令请求",
+    "first_seen_at": "2026-04-09T07:49:28",
+    "last_seen_at": "2026-04-09T07:49:28",
+    "news_ids": [
+      "c391659e8cbee4a7da316f621f945330"
+    ],
+    "max_score": 72,
+    "max_grade": "B",
+    "entities": [
+      "Anthropic",
+      "Department Of Defense",
+      "Federal Appeals Court"
+    ]
+  },
+  {
     "group_id": "ea8cd0ff",
     "event_title": "博客文章宣称AGI已经到来",
     "first_seen_at": "2026-04-05T20:13:46.628002",
@@ -5585,10 +5617,10 @@
     "max_score": 70,
     "max_grade": "B",
     "entities": [
-      "海信",
       "CanvasTV",
-      "三星",
       "Frame",
+      "三星",
+      "海信",
       "艺术电视"
     ]
   },
@@ -5615,8 +5647,8 @@
     "max_score": 70,
     "max_grade": "B",
     "entities": [
-      "PyTorch",
       "NumPy",
+      "PyTorch",
       "面试"
     ]
   },
@@ -5829,6 +5861,21 @@
     ]
   },
   {
+    "group_id": "e07c75dc",
+    "event_title": "优必选1800万年薪寻首席科学家 中国AI行业告别高薪时代",
+    "first_seen_at": "2026-04-04T14:01:38.087740",
+    "last_seen_at": "2026-04-04T14:01:38.087740",
+    "news_ids": [
+      "6ef948e70f5279ca1995ba3f45089e52"
+    ],
+    "max_score": 68,
+    "max_grade": "B",
+    "entities": [
+      "Bloomberg",
+      "Ubtech"
+    ]
+  },
+  {
     "group_id": "fd80e10a",
     "event_title": "Anker五口旅行适配器降至历史最低价19.99美元",
     "first_seen_at": "2026-04-04T00:01:32.616518",
@@ -5854,8 +5901,8 @@
     "max_grade": "B",
     "entities": [
       "概率",
-      "考古学",
-      "美洲原住民"
+      "美洲原住民",
+      "考古学"
     ]
   },
   {
@@ -5886,8 +5933,8 @@
     "entities": [
       "Anker",
       "Nebula P1",
-      "投影仪",
-      "Soundcore"
+      "Soundcore",
+      "投影仪"
     ]
   },
   {
@@ -5908,7 +5955,7 @@
   },
   {
     "group_id": "11227f24",
-    "event_title": "Cadenza开源：让AI智能体自主读取WandB实验日志",
+    "event_title": "Cadenza开源：让AI Agent轻松连接Wandb日志实现自主研究",
     "first_seen_at": "2026-04-05T19:02:09.174391",
     "last_seen_at": "2026-04-05T19:02:09.174391",
     "news_ids": [
@@ -6086,7 +6133,7 @@
   },
   {
     "group_id": "8ee61297",
-    "event_title": "Pebblebee发布Halo追踪器：定位器变身个人安全设备",
+    "event_title": "Pebblebee推出Halo追踪器，集成个人安全警报功能",
     "first_seen_at": "2026-04-07T22:02:12.582430",
     "last_seen_at": "2026-04-07T22:02:12.582430",
     "news_ids": [
