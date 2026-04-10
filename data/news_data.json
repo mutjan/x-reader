@@ -2,6 +2,125 @@
   "news": {
     "2026-04-10": [
       {
+        "id": "40d06e6ab660c7f78233400558be3ff3",
+        "title": "阿里云CTO周靖人接管AI业务，通义千问团队因开源转向商业化现高管离职",
+        "original_title": "Sources: Alibaba appointed Cloud CTO Zhou Jingren to lead its AI unit after a pivot from open source to monetizable \"MaaS\" models led to Qwen exec departures (Financial Times)",
+        "summary": "阿里巴巴任命云智能CTO周靖人接管AI业务，此前公司战略从开源转向可 monetizable 的MaaS模式，导致通义千问团队多位高管离职。这一变动可能影响全球依赖Qwen模型的开发者社区。",
+        "rating": "A",
+        "score": 78,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "高管变动可能引发阿里云AI战略调整，进而影响国内大模型开源生态竞争格局，以及阿里云与百度、字节等厂商的MaaS服务竞争。",
+        "entities": [
+          "Maas",
+          "Qwen",
+          "Zhou Jingren",
+          "阿里巴巴"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (qwen)",
+            "url": "http://www.techmeme.com/260410/p1#a260410p1"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775800954,
+        "published_at": "2026-04-10T14:02:34.590285",
+        "source": "Techmeme (qwen)",
+        "url": "http://www.techmeme.com/260410/p1#a260410p1",
+        "event_id": null
+      },
+      {
+        "id": "94f0fef76cb9e7146ee58590f9dc2424",
+        "title": "美联储主席与财长召集银行高管讨论Anthropic新模型Mythos网络安全风险",
+        "original_title": "Powell, Bessent Said to Invite Bank Leaders to Discuss Anthropic’s Mythos",
+        "summary": "美联储主席鲍威尔和财政部长贝森特周二召集花旗、美银、富国等主要银行高管，讨论Anthropic新模型Claude Mythos带来的网络安全风险。",
+        "rating": "S",
+        "score": 94,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "AI模型安全上升至金融监管最高层关注，可能催生新的AI金融监管政策，影响大模型在银行业的应用进程。",
+        "entities": [
+          "Anthropic",
+          "Bank Of America",
+          "Citigroup",
+          "Claude",
+          "Jerome Powell",
+          "Scott Bessent",
+          "Wells Fargo"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/powell-bessent-said-invite-bank-leaders-discuss-anthropics-mythos"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775800954,
+        "published_at": "2026-04-10T14:02:34.590305",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/powell-bessent-said-invite-bank-leaders-discuss-anthropics-mythos",
+        "event_id": null
+      },
+      {
+        "id": "07122909049a3ee2a60f0c635e1aadb8",
+        "title": "阿里开源Marco-Mini-Instruct：将小模型魔改成MoE架构，0.86B激活参数超越Qwen3-4B",
+        "original_title": "阿里又整了个活, 直接把小模型魔改成了 MoE 模型 阿里(阿里国际数字商业团队)在 Marco-MoE 系列模型里又放出一个新型号: Marco-Mini-Instruct. 总参数量 17.3B, ...",
+        "summary": "阿里国际数字商业团队发布Marco-Mini-Instruct模型，通过upcycling技术将Qwen3-0.6B-Base小模型改造为MoE架构，总参数17.3B但激活参数仅0.86B，性能却超越更大规模的Dense模型，为MoE模型训练提供了低成本新路径。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术可能推动边缘端AI部署成本大幅下降，影响小模型蒸馏和MoE架构的行业实践方向，相关工具链和微调方法可能形成新的开发者生态。",
+        "entities": [
+          "Marco-Mini-Instruct",
+          "Moe",
+          "Qwen3",
+          "阿里巴巴"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/karminski3/status/2042380739204038955"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775797258,
+        "published_at": "2026-04-10T13:00:58.818544",
+        "source": "x",
+        "url": "https://x.com/karminski3/status/2042380739204038955",
+        "event_id": null
+      },
+      {
+        "id": "f7ee377946556269ddf3ad350cad45cc",
+        "title": "Wildflow推出珊瑚礁数字孪生平台：浏览器即可流畅浏览亿级高斯泼溅3D模型",
+        "original_title": "New release!! 🪸🌏 Try our new \"Google Maps for Coral Reefs\" and fly around 100M+ Gaussian Splats right in your browser! \\o/ We've hit a new miles...",
+        "summary": "Wildflow发布基于渐进式3D流技术的珊瑚礁数字孪生平台，支持在浏览器中流畅查看超过1亿个高斯泼溅点的3D珊瑚礁模型，无需高性能GPU后端，通过多级细节加载实现手机端也可访问，为海洋生态保护和科学研究提供新工具。",
+        "rating": "B",
+        "score": 68,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "该技术可扩展应用于其他自然生态系统的数字化保护，3D高斯泼溅的浏览器端大规模渲染技术可能推动Web端数字孪生应用的新发展。",
+        "entities": [
+          "Gaussian Splats",
+          "Google Maps For Coral Reefs",
+          "Playcanvas",
+          "Wildflow"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/nozdrenkov/status/2042367145674158190"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775797258,
+        "published_at": "2026-04-10T13:00:58.818562",
+        "source": "x",
+        "url": "https://x.com/nozdrenkov/status/2042367145674158190",
+        "event_id": null
+      },
+      {
         "id": "42049b2b818745ab765d1b5877765c7e",
         "title": "佛罗里达州总检察长调查OpenAI，指控其与校园枪击案有关",
         "original_title": "Florida AG to probe OpenAI, alleging possible connection to FSU shooting",
@@ -5734,64 +5853,6 @@
       }
     ],
     "2026-04-09": [
-      {
-        "id": "07122909049a3ee2a60f0c635e1aadb8",
-        "title": "阿里开源Marco-Mini-Instruct：将小模型魔改成MoE架构，0.86B激活参数超越Qwen3-4B",
-        "original_title": "阿里又整了个活, 直接把小模型魔改成了 MoE 模型 阿里(阿里国际数字商业团队)在 Marco-MoE 系列模型里又放出一个新型号: Marco-Mini-Instruct. 总参数量 17.3B, ...",
-        "summary": "阿里国际数字商业团队发布Marco-Mini-Instruct模型，通过upcycling技术将Qwen3-0.6B-Base小模型改造为MoE架构，总参数17.3B但激活参数仅0.86B，性能却超越更大规模的Dense模型，为MoE模型训练提供了低成本新路径。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该技术可能推动边缘端AI部署成本大幅下降，影响小模型蒸馏和MoE架构的行业实践方向，相关工具链和微调方法可能形成新的开发者生态。",
-        "entities": [
-          "Marco-Mini-Instruct",
-          "Moe",
-          "Qwen3",
-          "阿里巴巴"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/karminski3/status/2042380739204038955"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775797258,
-        "published_at": "2026-04-10T13:00:58.818544",
-        "source": "x",
-        "url": "https://x.com/karminski3/status/2042380739204038955",
-        "event_id": null
-      },
-      {
-        "id": "f7ee377946556269ddf3ad350cad45cc",
-        "title": "Wildflow推出珊瑚礁数字孪生平台：浏览器即可流畅浏览亿级高斯泼溅3D模型",
-        "original_title": "New release!! 🪸🌏 Try our new \"Google Maps for Coral Reefs\" and fly around 100M+ Gaussian Splats right in your browser! \\o/ We've hit a new miles...",
-        "summary": "Wildflow发布基于渐进式3D流技术的珊瑚礁数字孪生平台，支持在浏览器中流畅查看超过1亿个高斯泼溅点的3D珊瑚礁模型，无需高性能GPU后端，通过多级细节加载实现手机端也可访问，为海洋生态保护和科学研究提供新工具。",
-        "rating": "B",
-        "score": 68,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "该技术可扩展应用于其他自然生态系统的数字化保护，3D高斯泼溅的浏览器端大规模渲染技术可能推动Web端数字孪生应用的新发展。",
-        "entities": [
-          "Gaussian Splats",
-          "Google Maps For Coral Reefs",
-          "Playcanvas",
-          "Wildflow"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/nozdrenkov/status/2042367145674158190"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775797258,
-        "published_at": "2026-04-10T13:00:58.818562",
-        "source": "x",
-        "url": "https://x.com/nozdrenkov/status/2042367145674158190",
-        "event_id": null
-      },
       {
         "id": "f2e1d865082fe516ce73d43cabcbdad4",
         "title": "《纽约时报》AI文章争议：作者承认用ChatGPT辅助写作引发文学界激辩",
@@ -26678,6 +26739,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-10T13:01:12.902018",
-  "total_news": 890
+  "last_updated": "2026-04-10T14:03:24.723862",
+  "total_news": 892
 }
