@@ -2,6 +2,65 @@
   "news": {
     "2026-04-10": [
       {
+        "id": "041990ef91dd564981e3a2c689aba426",
+        "title": "DeepSeek V4将于4月下旬发布：梁文锋内部透露将支持华为昇腾芯片",
+        "original_title": "09:57:50 [Liang Wenfeng Reportedly Speaks Internally; DeepSeek V4 to Launch in Late April] According to multiple sources speaking to media, DeepSeek f...",
+        "summary": "DeepSeek创始人梁文锋在内部沟通中透露，下一代旗舰模型DeepSeek V4将于4月底正式发布。该模型不仅拥有万亿级参数和百万token级上下文窗口，还将首次实现对华为昇腾等国产芯片的深度优化。",
+        "rating": "S",
+        "score": 97,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "V4发布将带动国产AI芯片需求激增，阿里、字节、腾讯等已提前订购数十万颗下一代AI芯片，可能引发云服务价格战和AI产品集成竞赛。",
+        "entities": [
+          "DeepSeek",
+          "Huawei Ascend",
+          "Liang Wenfeng",
+          "字节跳动",
+          "腾讯",
+          "阿里巴巴"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/jukan05/status/2042428677196325152"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775790147,
+        "published_at": "2026-04-10T11:02:27.905450",
+        "source": "x",
+        "url": "https://x.com/jukan05/status/2042428677196325152",
+        "event_id": null
+      },
+      {
+        "id": "2e25f059a699ecfcc6d3ee7ecbaee9ed",
+        "title": "安全研究人员发现26个LLM路由器存在恶意工具调用注入漏洞",
+        "original_title": "26 LLM routers are secretly injecting malicious tool calls and stealing creds. One drained our client $500k wallet. We also managed to poison routers ...",
+        "summary": "安全研究团队发现26个LLM路由器 secretly 注入恶意工具调用并窃取凭证，其中一个路由器导致客户损失50万美元。研究人员还成功通过投毒攻击控制约400台主机。",
+        "rating": "A",
+        "score": 78,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该发现将推动LLM基础设施安全标准升级，可能引发监管关注，同时促使企业重新审视AI供应链安全策略。",
+        "entities": [
+          "Ai Security",
+          "Llm Router",
+          "Tool Injection"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Fried_rice/status/2042423713019412941"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775790147,
+        "published_at": "2026-04-10T11:02:27.905475",
+        "source": "x",
+        "url": "https://x.com/Fried_rice/status/2042423713019412941",
+        "event_id": null
+      },
+      {
         "id": "4a18dab4502b0938090a8398b43dded7",
         "title": "开发者开源LLM后训练编排层实现，推出视频教程系列讲解底层架构",
         "original_title": "Started a video series on building an orchestration layer for LLM post-training [P]",
@@ -4670,6 +4729,36 @@
       }
     ],
     "2026-04-09": [
+      {
+        "id": "649b12eebb8b2b8b7076fdcf42587c3e",
+        "title": "从Sutton强化学习经典教材到LLM强化学习的知识路径探讨",
+        "original_title": "Studying Sutton and Barto's RL book and its connections to RL for LLMs (e.g., tool use, math reasoning, agents, and so on)? [D]",
+        "summary": "一位数学硕士毕业生在Reddit上询问如何系统学习Sutton和Barto的强化学习经典教材，并将其与现代LLM中的RL应用（如工具使用、数学推理、智能体等）建立联系。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该讨论反映了学术界对RL基础理论与LLM应用之间知识衔接的需求，可能推动更多面向LLM研究者的RL入门教育资源出现。",
+        "entities": [
+          "Grpo",
+          "Ppo",
+          "Reinforcement Learning",
+          "Sutton And Barto",
+          "大模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sgknct/studying_sutton_and_bartos_rl_book_and_its/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775790147,
+        "published_at": "2026-04-10T11:02:27.905491",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sgknct/studying_sutton_and_bartos_rl_book_and_its/",
+        "event_id": null
+      },
       {
         "id": "f2e1d865082fe516ce73d43cabcbdad4",
         "title": "《纽约时报》AI文章争议：作者承认用ChatGPT辅助写作引发文学界激辩",
@@ -25556,6 +25645,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-10T10:03:31.438233",
-  "total_news": 850
+  "last_updated": "2026-04-10T11:03:07.781040",
+  "total_news": 853
 }
