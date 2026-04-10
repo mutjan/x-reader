@@ -2,6 +2,199 @@
   "news": {
     "2026-04-10": [
       {
+        "id": "e253b159710715016b79ab8e4c13212f",
+        "title": "福建黑客盗刷信用卡订阅Claude Code Max，转手倒卖API并出售用户数据",
+        "original_title": "OH: some dude in Fujian (scam capital of China) uses hacked credit cards to subscribe to Claude Code Max, resell them as API at 20% cost, and then sel...",
+        "summary": "有黑客利用盗刷的信用卡订阅Claude Code Max服务，以原价20%的价格转售API接口，并将用户交互数据出售给中国AI实验室用于模型蒸馏。",
+        "rating": "A",
+        "score": 76,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此事件可能引发对AI服务订阅安全性的监管加强，以及跨境AI数据交易的合规讨论。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/odysseus0z/status/2042453059272655308"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775805003,
+        "published_at": "2026-04-10T15:10:03.079298",
+        "source": "x",
+        "url": "https://x.com/odysseus0z/status/2042453059272655308",
+        "event_id": null
+      },
+      {
+        "id": "9b2a605b938e837e23d7dc5ad89f9c80",
+        "title": "阿里文生视频模型HappyHorse登顶排行榜，由前快手VP张迪带队",
+        "original_title": "I can confirm that HappyHorse-1.0, the anonymous model that hit #1 on the text-to-video leaderboard with an Elo of 1332, is an Alibaba project. It is ...",
+        "summary": "阿里巴巴的匿名文生视频模型HappyHorse-1.0以1332 Elo评分登顶排行榜，该项目由前快手VP、可灵技术负责人张迪领导，团队隶属于阿里未来生活实验室。",
+        "rating": "A",
+        "score": 82,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "阿里在视频生成领域的突破将加剧与快手可灵、字节即梦等国产视频模型的竞争，可能引发新一轮人才争夺战。",
+        "entities": [
+          "Happyhorse",
+          "Kling",
+          "Zhang Di",
+          "阿里巴巴"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/poezhao0605/status/2042442485914583413"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775805003,
+        "published_at": "2026-04-10T15:10:03.079328",
+        "source": "x",
+        "url": "https://x.com/poezhao0605/status/2042442485914583413",
+        "event_id": null
+      },
+      {
+        "id": "cf69b5e34892c31aec1129217983e618",
+        "title": "研究揭露第三方LLM路由器成中间人攻击重灾区，可窃取API密钥",
+        "original_title": "Claude Code源码泄漏吹哨人Chaofan再爆中转站漏洞， 你的Agent，可能早已“被我”掌控！ 最新论文《Your Agent Is Mine》首次系统揭露：第三方LLM路由器，也就是...",
+        "summary": "论文《Your Agent Is Mine》首次系统揭露第三方LLM路由器（中转站）的安全漏洞，攻击者可通过恶意路由器注入恶意代码或窃取用户API密钥、私钥等敏感信息。",
+        "rating": "S",
+        "score": 96,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此研究可能推动AI服务安全标准的制定，促使更多企业采用直连API而非第三方路由，同时加速去中心化AI基础设施的发展。",
+        "entities": [
+          "Chaofan Shou",
+          "Litellm",
+          "Openrouter"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/wquguru/status/2042432179553419306"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775805003,
+        "published_at": "2026-04-10T15:10:03.079339",
+        "source": "x",
+        "url": "https://x.com/wquguru/status/2042432179553419306",
+        "event_id": null
+      },
+      {
+        "id": "ce61ac1374844a61838d648e5f2575ab",
+        "title": "用户实测发现Claude Opus 4.6性能被削弱，4.5版本表现更稳定",
+        "original_title": "OPUS 4.6 WAS NERFED DUE TO DEMAND BUT OPUS 4.5 DOES NOT SEEM TO BE HIT this guy ran the same test on both models. Opus 4.6 fails consistently but Opus...",
+        "summary": "有用户通过对比测试发现，Claude Opus 4.6版本因需求过高被'削弱'（nerf），在相同测试下表现不如4.5版本稳定，引发对模型质量控制的质疑。",
+        "rating": "S",
+        "score": 90,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "此事件可能损害Anthropic的品牌信誉，促使用户转向其他模型，同时也反映了AI服务在规模扩张时面临的质量控制挑战。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/om_patel5/status/2042424297348558916"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775805003,
+        "published_at": "2026-04-10T15:10:03.079349",
+        "source": "x",
+        "url": "https://x.com/om_patel5/status/2042424297348558916",
+        "event_id": null
+      },
+      {
+        "id": "013ca0a1e3ec55978ac4df8bd1d8af01",
+        "title": "OpenAI支持伊利诺伊州法案，为AI实验室免责",
+        "original_title": "OpenAI backs an Illinois bill shielding AI labs from liability even for \"critical harms,\" like 100+ deaths or $1B+ damage, if safety reports were published (Maxwell Zeff/Wired)",
+        "summary": "OpenAI支持一项伊利诺伊州法案，该法案将限制AI实验室的法律责任，即使其产品造成'严重伤害'（如100人以上死亡或10亿美元以上损失），只要发布了安全报告即可免责。",
+        "rating": "S",
+        "score": 94,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此法案若通过将为AI行业设立重要的责任豁免先例，可能引发其他州效仿，同时也可能激化AI安全倡导者与行业之间的对立。",
+        "entities": [
+          "OpenAI",
+          "萨姆·奥尔特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260410/p2#a260410p2"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775805003,
+        "published_at": "2026-04-10T15:10:03.079405",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260410/p2#a260410p2",
+        "event_id": null
+      },
+      {
+        "id": "d56fa99c9bff640eb29e0692169806eb",
+        "title": "OpenAI数据中心高管离职，Stargate项目受挫",
+        "original_title": "Exclusive: OpenAI Data Center Leaders Depart",
+        "summary": "三位参与OpenAI原始Stargate数据中心计划的高管已离职或准备离职，其中包括在该计划中发挥关键作用的Peter Hoeschele。",
+        "rating": "A+",
+        "score": 86,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "核心高管离职可能影响Stargate数据中心项目的推进进度，也反映了OpenAI在基础设施扩张中面临的人才流失挑战。",
+        "entities": [
+          "OpenAI",
+          "Peter Hoeschele",
+          "Stargate"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/exclusive-openai-stargate-exec-peter-hoeschele-leaves-company"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775805003,
+        "published_at": "2026-04-10T15:10:03.079420",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/exclusive-openai-stargate-exec-peter-hoeschele-leaves-company",
+        "event_id": null
+      },
+      {
+        "id": "39c28bc9d927986be6f1c373e9354749",
+        "title": "佛罗里达州总检察长宣布调查OpenAI，因其ChatGPT被用于策划枪击案",
+        "original_title": "Florida AG announces investigation into OpenAI over shooting that allegedly involved ChatGPT",
+        "summary": "佛罗里达州总检察长宣布对OpenAI展开调查，因为ChatGPT reportedly被用于策划去年佛罗里达州立大学的枪击案，该事件造成2人死亡、5人受伤。",
+        "rating": "A+",
+        "score": 88,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此调查可能为AI平台的法律责任设立先例，推动更严格的内容安全审核机制，同时也引发关于AI伦理边界的讨论。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775805003,
+        "published_at": "2026-04-10T15:10:03.079473",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/",
+        "event_id": null
+      },
+      {
         "id": "40d06e6ab660c7f78233400558be3ff3",
         "title": "阿里云CTO周靖人接管AI业务，通义千问团队因开源转向商业化现高管离职",
         "original_title": "Sources: Alibaba appointed Cloud CTO Zhou Jingren to lead its AI unit after a pivot from open source to monetizable \"MaaS\" models led to Qwen exec departures (Financial Times)",
@@ -5853,6 +6046,61 @@
       }
     ],
     "2026-04-09": [
+      {
+        "id": "9737ce3b69afe7e41dc30e9f598032e5",
+        "title": "xAI首席财务官Anthony Armstrong突然离职",
+        "original_title": "Whoa. What just happened? 🤯 xAI's CFO Anthony Armstrong is stepping down. @theinformation reached out for comment, and Armstrong simply replied sta...",
+        "summary": "xAI的CFO Anthony Armstrong宣布离职，当被The Information联系置评时，他只回复了一句'This is over'，暗示离职可能存在争议。",
+        "rating": "A",
+        "score": 78,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "高管离职可能反映xAI内部战略分歧或财务压力，也可能影响其正在进行的新一轮融资谈判。",
+        "entities": [
+          "Anthony Armstrong",
+          "xAI",
+          "马斯克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Mayhem4Markets/status/2042341369117561013"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775805003,
+        "published_at": "2026-04-10T15:10:03.079368",
+        "source": "x",
+        "url": "https://x.com/Mayhem4Markets/status/2042341369117561013",
+        "event_id": null
+      },
+      {
+        "id": "8c9c5983d9b5ad1a03429c760d2a3b3c",
+        "title": "GitInspect发布：将GitHub链接中hub替换为inspect即可与代码库对话",
+        "original_title": "introducing http://gitinspect.com replace \"hub\" with \"inspect\" on any github url and chat with any repo. - pi agent that runs in your browser. - just-...",
+        "summary": "GitInspect.com推出浏览器内运行的AI代理，用户只需将GitHub URL中的'hub'替换为'inspect'即可与任意代码库对话，所有处理在本地完成。",
+        "rating": "B",
+        "score": 70,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "此类工具降低了代码理解的门槛，可能推动更多开发者采用AI辅助代码审查和学习，同时也对GitHub Copilot形成补充。",
+        "entities": [
+          "Github",
+          "Gitinspect"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/dinnaiii/status/2042257371645247716"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775805003,
+        "published_at": "2026-04-10T15:10:03.079395",
+        "source": "x",
+        "url": "https://x.com/dinnaiii/status/2042257371645247716",
+        "event_id": null
+      },
       {
         "id": "f2e1d865082fe516ce73d43cabcbdad4",
         "title": "《纽约时报》AI文章争议：作者承认用ChatGPT辅助写作引发文学界激辩",
@@ -26739,6 +26987,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-10T14:03:24.723862",
-  "total_news": 892
+  "last_updated": "2026-04-10T15:11:14.467463",
+  "total_news": 901
 }
