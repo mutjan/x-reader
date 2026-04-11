@@ -2247,27 +2247,30 @@
                                 </tr>
                             `;
 
-                            // 展开的时间线行
-                            if (hasExpandBtn && isExpanded && event.news_list) {
+                            // 时间线行：展开显示全部，折叠显示最新一条
+                            if (hasExpandBtn && event.news_list && event.news_list.length > 0) {
+                                const sortedNews = [...event.news_list].sort((a, b) => (a.timestamp || 0) - (b.timestamp || 0));
+                                const newsToShow = isExpanded ? sortedNews : [sortedNews[sortedNews.length - 1]];
+
                                 html += `
                                     <tr class="event-timeline-row">
                                         <td colspan="11" style="padding: 0;">
                                             <div class="event-timeline-content">
                                                 <div class="event-timeline">
-                                                    ${event.news_list.sort((a, b) => (a.timestamp || 0) - (b.timestamp || 0))
-                                                        .map(news => `
-                                                            <div class="event-timeline-item">
-                                                                <div class="event-timeline-time">${formatTime(news.timestamp)}</div>
-                                                                <div class="event-timeline-title">
-                                                                    <span class="rating-tag ${getRatingClass(news.rating)}" style="font-size: 10px; padding: 1px 4px; margin-right: 4px;">${news.rating || 'C'}</span>
-                                                                    <a href="${news.url}" target="_blank" style="color: #1d9bf0; text-decoration: none;">${news.title}</a>
-                                                                </div>
-                                                                <div class="event-timeline-meta">
-                                                                    <span>来源: ${extractDomain(news.url) || news.source || '未知'}</span>
-                                                                    ${news.sources ? `<span>相关报道: ${news.sources} 篇</span>` : ''}
-                                                                </div>
+                                                    ${newsToShow.map(news => `
+                                                        <div class="event-timeline-item">
+                                                            <div class="event-timeline-time">${formatTime(news.timestamp)}</div>
+                                                            <div class="event-timeline-title">
+                                                                <span class="rating-tag ${getRatingClass(news.rating)}" style="font-size: 10px; padding: 1px 4px; margin-right: 4px;">${news.rating || 'C'}</span>
+                                                                <a href="${news.url}" target="_blank" style="color: #1d9bf0; text-decoration: none;">${news.title}</a>
                                                             </div>
-                                                        `).join('')}
+                                                            <div class="event-timeline-meta">
+                                                                <span>来源: ${extractDomain(news.url) || news.source || '未知'}</span>
+                                                                ${news.sources ? `<span>相关报道: ${news.sources} 篇</span>` : ''}
+                                                                ${!isExpanded ? `<span style="color: #1d9bf0; cursor: pointer;" onclick="event.stopPropagation(); toggleEventExpand('${event.id}')">还有 ${event.news_count - 1} 条 ▼</span>` : ''}
+                                                            </div>
+                                                        </div>
+                                                    `).join('')}
                                                 </div>
                                             </div>
                                         </td>

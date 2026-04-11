@@ -866,13 +866,14 @@
   {
     "group_id": "4df6d205",
     "event_title": "OpenAI CEO Sam Altman住所遭燃烧瓶袭击，嫌疑人已被逮捕",
-    "first_seen_at": "2026-04-11T06:54:58.933914",
+    "first_seen_at": "2026-04-11T00:02:51",
     "last_seen_at": "2026-04-11T10:01:47.870765",
     "news_ids": [
       "623186691a18b2ab2b39f476e4021de4",
       "12d174a4a70e1b6cc371bc87d9180dcf",
       "9c53dd5973eb93951e2cc5238435aed6",
-      "dc6de30cd583e4f1eada324a4bd897d5"
+      "dc6de30cd583e4f1eada324a4bd897d5",
+      "eda66baf8b14b980fcaee3b366bf8a07"
     ],
     "max_score": 95,
     "max_grade": "S",
@@ -1064,7 +1065,7 @@
     "group_id": "f836ed76",
     "event_title": "Meta挖角OpenAI三位Stargate高管，AI基础设施人才战升级",
     "first_seen_at": "2026-04-06T15:02:43.264777",
-    "last_seen_at": "2026-04-11T11:40:03",
+    "last_seen_at": "2026-04-11T12:01:44.367807",
     "news_ids": [
       "97726f4c27f497fc4f0d5a9acad292cb",
       "66f9c10a08607f6dd3d008477b0cac6c",
@@ -1072,6 +1073,7 @@
       "939bd66bcf7119e6f71b4976e7ad4de9",
       "1b3bc323690dfe5ab814a0e93a1242fb",
       "d56fa99c9bff640eb29e0692169806eb",
+      "74da63e5201068742200f8e49ae13d70",
       "18bc80aeafc0d5d22e80d2e4390c4bc0",
       "d6d99eefe398a571c415c6f4eae4697c",
       "93fd4c0b247b594873514fac48d636b8",
@@ -2232,6 +2234,20 @@
     "entities": [
       "OpenAI",
       "Sam Altman"
+    ]
+  },
+  {
+    "group_id": "5d82f602",
+    "event_title": "传DeepSeek-V4将于本月底发布，采用万亿参数MoE架构",
+    "first_seen_at": "2026-04-10T16:11:18",
+    "last_seen_at": "2026-04-10T16:11:18",
+    "news_ids": [
+      "2170add070129f57e3b4ee016488a872"
+    ],
+    "max_score": 89,
+    "max_grade": "A+",
+    "entities": [
+      "DeepSeek"
     ]
   },
   {
@@ -5800,8 +5816,8 @@
   {
     "group_id": "0d5f7a83",
     "event_title": "RTX 5090上cuBLAS矩阵乘法性能缺陷：仅发挥40%算力",
-    "first_seen_at": "2026-04-11T01:51:10",
-    "last_seen_at": "2026-04-11T01:51:10",
+    "first_seen_at": "2026-04-11T12:01:44.367869",
+    "last_seen_at": "2026-04-11T12:01:44.367869",
     "news_ids": [
       "1cea07bc98ab87ebc580e92ea086aee1"
     ],
@@ -6854,8 +6870,8 @@
   {
     "group_id": "ae7cb43b",
     "event_title": "HNSW索引存储3-bit量化向量：内存占用降至1/10的向量检索新方案",
-    "first_seen_at": "2026-04-11T08:35:45",
-    "last_seen_at": "2026-04-11T08:35:45",
+    "first_seen_at": "2026-04-11T12:01:44.367826",
+    "last_seen_at": "2026-04-11T12:01:44.367826",
     "news_ids": [
       "6b2bfd460e088e7fada318ba080d36d5"
     ],
@@ -7306,9 +7322,10 @@
     "group_id": "e72ebf1c",
     "event_title": "Hermes Agent集成免费云浏览器，提供无限浏览时长",
     "first_seen_at": "2026-04-06T10:03:53.670766",
-    "last_seen_at": "2026-04-09T14:13:29.298716",
+    "last_seen_at": "2026-04-11T04:26:42",
     "news_ids": [
       "86dfafba525b60ac2d5cbee07af40706",
+      "5d90e8fe4e2f1a1f0409675a750c7dd1",
       "7a0e8055cea82d6f8cb4d21ed2d8497b"
     ],
     "max_score": 76,
@@ -7317,7 +7334,8 @@
       "Browser Use",
       "Hermes Agent",
       "Manim",
-      "Nous Research"
+      "Nous Research",
+      "Wechat"
     ]
   },
   {
@@ -7370,6 +7388,26 @@
       "Meta",
       "Minor Protection",
       "Social Media Addiction"
+    ]
+  },
+  {
+    "group_id": "0c3fd2f3",
+    "event_title": "Meta AI核心工程师跳槽Google torchTPU团队，深耕TPU生态",
+    "first_seen_at": "2026-04-11T01:08:37",
+    "last_seen_at": "2026-04-11T06:54:58.933868",
+    "news_ids": [
+      "676faec45e4920e1441ce9f416315db0",
+      "3e444cc0999d68f034aa3a88810a717f"
+    ],
+    "max_score": 76,
+    "max_grade": "A",
+    "entities": [
+      "Adam Mainz",
+      "Google",
+      "Meta",
+      "Pytorch",
+      "Torchtpu",
+      "Tpu"
     ]
   },
   {
@@ -7959,23 +7997,6 @@
       "Anthropic",
       "Claude",
       "Tom'S Hardware"
-    ]
-  },
-  {
-    "group_id": "0c3fd2f3",
-    "event_title": "Meta AI核心工程师跳槽Google torchTPU团队，深耕TPU生态",
-    "first_seen_at": "2026-04-11T06:54:58.933868",
-    "last_seen_at": "2026-04-11T06:54:58.933868",
-    "news_ids": [
-      "676faec45e4920e1441ce9f416315db0"
-    ],
-    "max_score": 76,
-    "max_grade": "A",
-    "entities": [
-      "Google",
-      "Meta",
-      "Pytorch",
-      "Tpu"
     ]
   },
   {
@@ -10450,8 +10471,8 @@
   {
     "group_id": "4efdfa46",
     "event_title": "ibu-boost：将Transformer筛选机制引入GBDT的开源库",
-    "first_seen_at": "2026-04-10T23:12:44",
-    "last_seen_at": "2026-04-10T23:12:44",
+    "first_seen_at": "2026-04-11T12:01:44.367878",
+    "last_seen_at": "2026-04-11T12:01:44.367878",
     "news_ids": [
       "9ff3729b31b93970416bd86a0a4a19b8"
     ],
