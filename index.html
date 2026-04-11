@@ -1520,14 +1520,6 @@
                 <button class="tab-btn active" onclick="switchTab('events')" id="tabEvents" style="display: none;">📅 事件追踪</button>
             </div>
         </div>
-        <div class="toolbar-section" id="dateToolbarSection">
-            <span class="toolbar-label">日期</span>
-            <div class="date-selector">
-                <button class="date-btn" onclick="changeDate(-1)" id="prevDate">←</button>
-                <span class="current-date" id="toolbarDate">--</span>
-                <button class="date-btn" onclick="changeDate(1)" id="nextDate">→</button>
-            </div>
-        </div>
         <div class="toolbar-section" id="actionsToolbarSection">
             <span class="toolbar-label">选择</span>
             <div class="batch-actions">
@@ -1791,14 +1783,12 @@
 
             // 显示/隐藏工具栏部分
             if (tab === 'news') {
-                document.getElementById('dateToolbarSection').style.display = 'flex';
                 document.getElementById('actionsToolbarSection').style.display = 'flex';
                 document.getElementById('sortToolbarSection').style.display = 'flex';
                 document.getElementById('news-content').style.display = 'block';
                 document.getElementById('events-content').style.display = 'none';
                 renderNews();
             } else {
-                document.getElementById('dateToolbarSection').style.display = 'none';
                 document.getElementById('actionsToolbarSection').style.display = 'flex';
                 document.getElementById('sortToolbarSection').style.display = 'flex';
                 document.getElementById('news-content').style.display = 'none';
@@ -2266,7 +2256,6 @@
                                                             </div>
                                                             <div class="event-timeline-meta">
                                                                 <span>来源: ${extractDomain(news.url) || news.source || '未知'}</span>
-                                                                ${news.sources ? `<span>相关报道: ${news.sources} 篇</span>` : ''}
                                                                 ${!isExpanded ? `<span style="color: #1d9bf0; cursor: pointer;" onclick="event.stopPropagation(); toggleEventExpand('${event.id}')">还有 ${event.news_count - 1} 条 ▼</span>` : ''}
                                                             </div>
                                                         </div>
@@ -2370,23 +2359,8 @@
             renderNews();
         }
 
-        function changeDate(direction) {
-            const dates = getAllDates();
-            const currentIndex = dates.indexOf(currentDate);
-            const newIndex = currentIndex + direction;
-            if (newIndex >= 0 && newIndex < dates.length) {
-                currentDate = dates[newIndex];
-                selectedEntity = null;
-                renderNews();
-            }
-        }
-
         function updateButtons() {
-            // 更新浮动工具栏中的日期按钮状态
-            const dates = getAllDates();
-            const currentIndex = dates.indexOf(currentDate);
-            document.getElementById('prevDate').disabled = currentIndex <= 0;
-            document.getElementById('nextDate').disabled = currentIndex >= dates.length - 1;
+            // 更新浮动工具栏中的按钮状态
         }
 
         function formatToolbarDate(dateStr) {
@@ -2654,7 +2628,6 @@
         function renderNews() {
             const content = document.getElementById('news-content');
             const currentDateEl = document.getElementById('currentDate');
-            const toolbarDate = document.getElementById('toolbarDate');
             const updateTime = document.getElementById('updateTime');
             const totalCount = document.getElementById('totalCount');
 
@@ -2662,7 +2635,6 @@
             const displayList = getSortedAndFilteredNews(newsList);
 
             currentDateEl.textContent = currentDate;
-            toolbarDate.textContent = formatToolbarDate(currentDate);
 
             // 更新版本号显示（从数据中获取）
             const versionEl = document.getElementById('version');
