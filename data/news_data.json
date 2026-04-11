@@ -2,6 +2,93 @@
   "news": {
     "2026-04-11": [
       {
+        "id": "97726f4c27f497fc4f0d5a9acad292cb",
+        "title": "Meta挖角OpenAI三位Stargate高管，AI基础设施人才战升级",
+        "original_title": "OpenAI Stargate Execs to Join Meta’s New Compute Unit",
+        "summary": "Meta正招募三位曾主导OpenAI Stargate云与数据中心项目的高管加入其新成立的计算部门，这是AI基础设施领域人才争夺战的显著升级。",
+        "rating": "S",
+        "score": 94,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "此事件可能引发连锁反应：OpenAI或加速内部人才激励计划，其他科技巨头可能跟进挖角，AI基础设施人才市场或将迎来新一轮薪酬上涨。",
+        "entities": [
+          "Meta",
+          "OpenAI",
+          "Stargate"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/openai-stargate-execs-join-metas-new-compute-unit"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775880104,
+        "published_at": "2026-04-11T12:01:44.367807",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/openai-stargate-execs-join-metas-new-compute-unit",
+        "event_id": null
+      },
+      {
+        "id": "6b2bfd460e088e7fada318ba080d36d5",
+        "title": "HNSW索引存储3-bit量化向量：内存占用降至1/10的向量检索新方案",
+        "original_title": "What if your HNSW index stored 3-bit embeddings instead of float32? [R]",
+        "summary": "研究者提出在HNSW图节点中存储量化嵌入（3-bit，约388字节）替代float32向量（约4096字节），通过PolarQuant方法和预计算质心内积表实现高效距离计算。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术若被主流向量数据库采纳，将显著降低大模型应用的存储成本，可能推动向量检索在边缘设备和实时推荐场景的普及。",
+        "entities": [
+          "CUDA",
+          "Faiss",
+          "Hnsw",
+          "Polarquant"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1si49sb/what_if_your_hnsw_index_stored_3bit_embeddings/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775880104,
+        "published_at": "2026-04-11T12:01:44.367826",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1si49sb/what_if_your_hnsw_index_stored_3bit_embeddings/",
+        "event_id": null
+      },
+      {
+        "id": "1cea07bc98ab87ebc580e92ea086aee1",
+        "title": "RTX 5090上cuBLAS矩阵乘法性能缺陷：仅发挥40%算力",
+        "original_title": "[D] 60% MatMul Performance Bug in cuBLAS on RTX 5090 [D]",
+        "summary": "开发者发现cuBLAS在RTX 5090上对所有批处理FP32工作负载都分派低效内核，仅能利用约40%的可用算力，自定义内核可实现显著性能提升。",
+        "rating": "A",
+        "score": 79,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该发现可能促使NVIDIA加快cuBLAS补丁发布，也可能推动开发者社区开发开源替代方案，影响RTX系列在AI训练/推理工作负载中的性价比评估。",
+        "entities": [
+          "CUDA",
+          "Cublas",
+          "Cutlass",
+          "NVIDIA",
+          "Rtx 5090"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1shtv0r/d_60_matmul_performance_bug_in_cublas_on_rtx_5090/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775880104,
+        "published_at": "2026-04-11T12:01:44.367869",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1shtv0r/d_60_matmul_performance_bug_in_cublas_on_rtx_5090/",
+        "event_id": null
+      },
+      {
         "id": "91b7210b82e239b0542548c4ce478109",
         "title": "OpenAI确认macOS应用签名工具下载恶意库，称用户数据未受影响",
         "original_title": "OpenAI says a GitHub workflow used to sign its macOS apps downloaded a malicious Axios library on March 31, but no user data or internal system was compromised (Sam Sabin/Axios)",
@@ -1793,6 +1880,37 @@
       }
     ],
     "2026-04-10": [
+      {
+        "id": "9ff3729b31b93970416bd86a0a4a19b8",
+        "title": "ibu-boost：将Transformer筛选机制引入GBDT的开源库",
+        "original_title": "[P] ibu-boost: a GBDT library where splits are *absolutely* rejected, not just relatively ranked[P]",
+        "summary": "开发者基于Screening Is Enough论文的筛选变换思想，实现了一款梯度提升树库，用绝对阈值拒绝替代传统的相对排序分裂选择，为GBDT带来新思路。",
+        "rating": "B",
+        "score": 68,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "若该实现经大规模数据集验证有效，可能推动GBDT算法革新，影响XGBoost、LightGBM等主流库的发展方向。",
+        "entities": [
+          "Catboost",
+          "Gbdt",
+          "Ibu-Boost",
+          "Lightgbm",
+          "Triton",
+          "Xgboost"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1shpdm2/p_ibuboost_a_gbdt_library_where_splits_are/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1775880104,
+        "published_at": "2026-04-11T12:01:44.367878",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1shpdm2/p_ibuboost_a_gbdt_library_where_splits_are/",
+        "event_id": null
+      },
       {
         "id": "d9a58c9dc09ae2cad473252d3ac6ad6e",
         "title": "开发者构建Claude自动化iOS测试工具：8分钟自主遍历全应用发现所有漏洞",
@@ -27786,6 +27904,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-11T11:01:10.323779",
-  "total_news": 937
+  "last_updated": "2026-04-11T12:02:01.879526",
+  "total_news": 941
 }
