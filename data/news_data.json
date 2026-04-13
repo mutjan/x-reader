@@ -2,6 +2,119 @@
   "news": {
     "2026-04-13": [
       {
+        "id": "68f5d3b37c710df0e990bde237459ea1",
+        "title": "Anthropic推出Claude for Word测试版，为文档工作流添加AI编辑与引用功能",
+        "original_title": "Anthropic debuts Claude for Word in beta, which adds AI editing tools and clickable citations, targeting document-heavy workflows, for Team and Enterprise users (Tristan Anthony/Business Insider)",
+        "summary": "Anthropic发布Claude for Word测试版，为企业用户提供AI编辑工具和可点击引用功能，继2月推出Excel和PowerPoint插件后进一步完善办公软件生态。",
+        "rating": "A",
+        "score": 86,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "此举可能推动企业AI助手市场竞争加剧，微软Copilot和谷歌Workspace AI或将加速功能迭代；同时文档类AI工具的普及可能重塑知识工作者的工作流程。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Microsoft"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260412/p11#a260412p11"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776045740,
+        "published_at": "2026-04-13T10:02:20.515216",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260412/p11#a260412p11",
+        "event_id": null
+      },
+      {
+        "id": "aeda7a14ce60267c1b63ec78ebc1741d",
+        "title": "冻结Transformer通过独立记忆缓冲区学习新知识，冷重启后记忆依然保留",
+        "original_title": "A frozen transformer learned that wombats produce cube shaped droppings and still knows after cold reload [R]",
+        "summary": "研究人员提出BDH机制，让冻结的Transformer通过独立的记忆权重学习新知识，在300步梯度更新后实现20/20事实准确记忆，且冷重启后知识依然保留。",
+        "rating": "A",
+        "score": 85,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术为模型持续学习开辟新路径，可能解决大模型微调时的灾难性遗忘问题；若与现有架构结合，有望实现低成本的知识更新机制。",
+        "entities": [
+          "Bdh",
+          "Schmidhuber",
+          "Transformer"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sjup3s/a_frozen_transformer_learned_that_wombats_produce/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776045740,
+        "published_at": "2026-04-13T10:02:20.515235",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sjup3s/a_frozen_transformer_learned_that_wombats_produce/",
+        "event_id": null
+      },
+      {
+        "id": "257d60c13d3045a39041619e4324104a",
+        "title": "研究者质疑LLM基准测试资源浪费，提出贝叶斯评估框架bayesbench",
+        "original_title": "Frameworks For Supporting LLM/Agentic Benchmarking [P]",
+        "summary": "开发者针对当前LLM基准测试消耗大量计算资源的问题，提出基于贝叶斯统计的评估框架bayesbench，旨在用更少样本获得可靠的模型性能置信度。",
+        "rating": "A",
+        "score": 78,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "若该框架被广泛采纳，可能改变大模型评测生态，减少重复基准测试带来的碳排放；同时也可能催生更高效的模型迭代流程。",
+        "entities": [
+          "Bayesbench",
+          "Gemini",
+          "Hugging Face"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sjnha5/frameworks_for_supporting_llmagentic_benchmarking/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776045740,
+        "published_at": "2026-04-13T10:02:20.515248",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sjnha5/frameworks_for_supporting_llmagentic_benchmarking/",
+        "event_id": null
+      },
+      {
+        "id": "75fdd6474164674bce8ce5ae4b80c894",
+        "title": "KIV技术让RTX 4070支持100万token上下文，无需重新训练模型",
+        "original_title": "KIV: 1M token context window on a RTX 4070 (12GB VRAM), no retraining, drop-in HuggingFace cache replacement - Works with any model that uses DynamicCache [P]",
+        "summary": "KIV通过分层检索系统替换标准KV缓存，利用K向量作为搜索索引按需检索V向量，在12GB显存上实现100万token上下文窗口，速度达4.1 tok/s。",
+        "rating": "A",
+        "score": 86,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术大幅降低长上下文模型的硬件门槛，可能加速本地大模型部署；若与量化技术结合，消费级显卡运行大模型的时代或将到来。",
+        "entities": [
+          "Gemma",
+          "Huggingface",
+          "Kiv",
+          "Rtx 4070"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sjkmwz/kiv_1m_token_context_window_on_a_rtx_4070_12gb/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776045740,
+        "published_at": "2026-04-13T10:02:20.515259",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sjkmwz/kiv_1m_token_context_window_on_a_rtx_4070_12gb/",
+        "event_id": null
+      },
+      {
         "id": "cb3c9064a215c8eb29b9651736013287",
         "title": "OpenAI CEO奥特曼住所遭燃烧瓶袭击后发声：呼吁给AI行业批评降降温",
         "original_title": "Altman Addresses Home Attack",
@@ -1159,6 +1272,88 @@
       }
     ],
     "2026-04-12": [
+      {
+        "id": "35fa7d72a919825d7e2cc0062f9290a3",
+        "title": "Gary Marcus评论Claude Code内核泄露：486个分支点像是经典符号AI",
+        "original_title": "Gary Marcus on the Claude Code leak [D]",
+        "summary": "Gary Marcus在推文中称Claude Code内核采用大量IF-THEN条件判断和嵌套循环，类似于经典符号AI方法，引发社区对AI系统架构设计的讨论。",
+        "rating": "A",
+        "score": 78,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这一评论可能加剧符号主义与连接主义之间的学术争论；若属实，也暗示当前大模型系统内部可能仍存在大量人工规则。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Gary Marcus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sjb0qi/gary_marcus_on_the_claude_code_leak_d/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776045740,
+        "published_at": "2026-04-13T10:02:20.515810",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sjb0qi/gary_marcus_on_the_claude_code_leak_d/",
+        "event_id": null
+      },
+      {
+        "id": "49cd431b49fbb8aed4108ffe05204e14",
+        "title": "ICLR 2026审稿分数一致性分析显示评审质量显著下降",
+        "original_title": "Just did an analysis on ICLR 2025 vs 2026 scores and WOW [D]",
+        "summary": "研究者对比分析ICLR 2025和2026的审稿数据，发现2026年审稿人内部一致性标准差从1.186升至1.523，表明评审质量波动明显增大。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究为顶会审稿质量下降提供了数据证据，可能推动审稿流程改革；同时也引发对AI研究评价机制可靠性的更广泛反思。",
+        "entities": [
+          "Iclr",
+          "Openreview"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sj76a2/just_did_an_analysis_on_iclr_2025_vs_2026_scores/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776045740,
+        "published_at": "2026-04-13T10:02:20.515842",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sj76a2/just_did_an_analysis_on_iclr_2025_vs_2026_scores/",
+        "event_id": null
+      },
+      {
+        "id": "188f34d4a4cf865dcf3063547f167e89",
+        "title": "Google TurboQuant算法声称6倍压缩KV缓存，引发对内存芯片需求担忧",
+        "original_title": "[D] Will Google’s TurboQuant algorithm hurt AI demand for memory chips? [D]",
+        "summary": "Google的TurboQuant技术声称可将KV缓存压缩6倍且精度损失很小，社区讨论该技术若属实可能大幅降低AI推理成本，或对内存芯片需求产生影响。",
+        "rating": "A",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若该技术得到验证并广泛应用，可能改变AI硬件市场格局，降低大模型部署成本；同时也可能冲击专注AI内存的芯片厂商。",
+        "entities": [
+          "Google",
+          "Turboquant"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sj5hsx/d_will_googles_turboquant_algorithm_hurt_ai/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776045740,
+        "published_at": "2026-04-13T10:02:20.515852",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sj5hsx/d_will_googles_turboquant_algorithm_hurt_ai/",
+        "event_id": null
+      },
       {
         "id": "3635a0714c2f782fc69fa8402a9dfaf5",
         "title": "苹果正测试四款AI眼镜设计，采用独特椭圆形竖置摄像头",
@@ -28570,6 +28765,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-13T09:01:24.090387",
-  "total_news": 981
+  "last_updated": "2026-04-13T10:02:51.158173",
+  "total_news": 988
 }
