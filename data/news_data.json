@@ -2,6 +2,64 @@
   "news": {
     "2026-04-14": [
       {
+        "id": "10383dda310614e2dbd32168d8c78f63",
+        "title": "OpenAI投资方公开质疑：公司方向混乱，Anthropic估值已反超",
+        "original_title": "*🚨BREAKING: OpenAI’s own investors just called them out on record to the FT Early backer: >“It’s a deeply unfocused company” Another investor o...",
+        "summary": "多位OpenAI早期投资方在接受《金融时报》采访时直言OpenAI\\\"方向极度混乱\\\"，有人将公司比作\\\"AI界的网景\\\"，二级市场已出现Anthropic估值溢价于OpenAI的现象。",
+        "rating": "A+",
+        "score": 91,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "投资者信心下滑可能引发OpenAI融资难度上升、人才流失，进而影响其IPO时间表；同时Anthropic估值反超或将重塑大模型市场竞争格局。",
+        "entities": [
+          "Anthropic",
+          "Iconiq Capital",
+          "OpenAI",
+          "Sapphire Ventures"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ns123abc/status/2043988547468673222"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776163336,
+        "published_at": "2026-04-14T18:42:16.485017",
+        "source": "x",
+        "url": "https://x.com/ns123abc/status/2043988547468673222",
+        "event_id": null
+      },
+      {
+        "id": "6c6a549350409c83a6ef4292d409d26c",
+        "title": "腾讯HYWorld 2.0明日开源：单图生成可编辑的3D世界",
+        "original_title": "RT Tengfei Wang: Genie3 generates videos. We generate 𝟯𝗗 𝘄𝗼𝗿𝗹𝗱𝘀 you can actually use. Launching tomorrow — Tencent #HYWorld 2...",
+        "summary": "腾讯宣布将于明日开源HYWorld 2.0世界模型，支持输入单张图片直接生成可编辑的真实3D场景，强调\\\"不是视频，而是引擎可用的3D世界\\\"。",
+        "rating": "S",
+        "score": 92,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "3D世界模型开源可能加速游戏、影视和元宇宙内容生产管线变革，并引发与Google Genie、World Labs等竞品的技术路线对比。",
+        "entities": [
+          "Genie",
+          "Hyworld",
+          "Tencent",
+          "Tengfei Wang"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Scobleizer/status/2043984573831491617"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776163336,
+        "published_at": "2026-04-14T18:42:16.485045",
+        "source": "x",
+        "url": "https://x.com/Scobleizer/status/2043984573831491617",
+        "event_id": null
+      },
+      {
         "id": "0781cc6ea5d619b652df27d8a0866370",
         "title": "腾讯即将开源HYWorld 2.0世界模型，单图生成可编辑3D场景",
         "original_title": "Genie3 generates videos. We generate 𝟯𝗗 𝘄𝗼𝗿𝗹𝗱𝘀 you can actually use. Launching tomorrow — Tencent #HYWorld 2.0, an engine-rea...",
@@ -83,6 +141,61 @@
         "published_at": "2026-04-14T17:03:53.406616",
         "source": "THE DECODER",
         "url": "https://the-decoder.com/openai-acquires-ai-finance-startup-hiro-which-built-a-personal-ai-cfo/",
+        "event_id": null
+      },
+      {
+        "id": "e849ef48bbead2e89ad166177580b743",
+        "title": "OpenAI低调演示GPT-Image 2，图像真实感大幅提升",
+        "original_title": "The team at @OpenAI quietly dropped a demo of GPT-Image 2…and it caught us off guard. We compared early test results to our own runs in @FlowbyGoogle...",
+        "summary": "OpenAI团队悄然发布GPT-Image 2演示，测试显示其在文本和物理对象的真实感上较1.5版本有明显跃升，部分生成图像已难以辨别为AI创作。",
+        "rating": "S",
+        "score": 93,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "AI图像生成真实感的突破可能加速其在设计、影视和广告行业的应用，同时加剧深度伪造的监管挑战。",
+        "entities": [
+          "Google",
+          "Gpt-Image",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/CuriousRefuge/status/2043821402940420309"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776157433,
+        "published_at": "2026-04-14T17:03:53.406219",
+        "source": "x",
+        "url": "https://x.com/CuriousRefuge/status/2043821402940420309",
+        "event_id": null
+      },
+      {
+        "id": "7455a917f147de36e5b3620a41f4f944",
+        "title": "DDTree新方法用块扩散一次生成验证树，加速推测解码",
+        "original_title": "RT Liran Ringel: Introducing DDTree: accelerates speculative decoding by drafting a tree with one block diffusion pass, then verifying multiple likely...",
+        "summary": "研究人员提出DDTree，通过单次块扩散生成候选树并批量验证多个可能续写，从而加速大模型推测解码。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "推测解码效率提升可能降低大模型推理成本，对云端和端侧部署均有积极影响。",
+        "entities": [
+          "Ddtree",
+          "Liran Ringel"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/arankomatsuzaki/status/2043974501415956861"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776157433,
+        "published_at": "2026-04-14T17:03:53.406606",
+        "source": "x",
+        "url": "https://x.com/arankomatsuzaki/status/2043974501415956861",
         "event_id": null
       },
       {
@@ -5527,61 +5640,6 @@
       }
     ],
     "2026-04-13": [
-      {
-        "id": "e849ef48bbead2e89ad166177580b743",
-        "title": "OpenAI低调演示GPT-Image 2，图像真实感大幅提升",
-        "original_title": "The team at @OpenAI quietly dropped a demo of GPT-Image 2…and it caught us off guard. We compared early test results to our own runs in @FlowbyGoogle...",
-        "summary": "OpenAI团队悄然发布GPT-Image 2演示，测试显示其在文本和物理对象的真实感上较1.5版本有明显跃升，部分生成图像已难以辨别为AI创作。",
-        "rating": "S",
-        "score": 93,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "AI图像生成真实感的突破可能加速其在设计、影视和广告行业的应用，同时加剧深度伪造的监管挑战。",
-        "entities": [
-          "Google",
-          "Gpt-Image",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/CuriousRefuge/status/2043821402940420309"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776157433,
-        "published_at": "2026-04-14T17:03:53.406219",
-        "source": "x",
-        "url": "https://x.com/CuriousRefuge/status/2043821402940420309",
-        "event_id": null
-      },
-      {
-        "id": "7455a917f147de36e5b3620a41f4f944",
-        "title": "DDTree新方法用块扩散一次生成验证树，加速推测解码",
-        "original_title": "RT Liran Ringel: Introducing DDTree: accelerates speculative decoding by drafting a tree with one block diffusion pass, then verifying multiple likely...",
-        "summary": "研究人员提出DDTree，通过单次块扩散生成候选树并批量验证多个可能续写，从而加速大模型推测解码。",
-        "rating": "B",
-        "score": 70,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "推测解码效率提升可能降低大模型推理成本，对云端和端侧部署均有积极影响。",
-        "entities": [
-          "Ddtree",
-          "Liran Ringel"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/arankomatsuzaki/status/2043974501415956861"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776157433,
-        "published_at": "2026-04-14T17:03:53.406606",
-        "source": "x",
-        "url": "https://x.com/arankomatsuzaki/status/2043974501415956861",
-        "event_id": null
-      },
       {
         "id": "e28dd8907c10e475a72e7a97c83f8e26",
         "title": "OpenAI将在伦敦开设首个永久办公室，可容纳超500人",
@@ -35063,6 +35121,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-14T17:04:39.207262",
-  "total_news": 1234
+  "last_updated": "2026-04-14T18:42:34.639550",
+  "total_news": 1236
 }
