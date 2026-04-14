@@ -2,6 +2,92 @@
   "news": {
     "2026-04-14": [
       {
+        "id": "ead2639f8486efcfb663e5c1a5ea1e1f",
+        "title": "HRT首批实习生缔造硅谷新贵：四位创始人皆出自同一届",
+        "original_title": "Craziest part is we all knew each other already in high school! Along with @randomjohnnyh (Perplexity cofounder), @demi_guo_ (Pika CEO), @stevenkplus1...",
+        "summary": "Cognition CEO Scott Wu透露，包括Perplexity、Pika、Scale AI、Decagon和Hyperliquid创始人在内的多位AI新贵，早年都通过奥赛圈子相识，HRT的首届实习生班级堪称硅谷新一代PayPal黑帮。",
+        "rating": "A",
+        "score": 86,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸探讨华人/奥赛背景创始人在AI时代的崛起路径，以及对顶级量化交易公司人才输送网络的影响。",
+        "entities": [
+          "Cognition",
+          "Hyperliquid",
+          "Perplexity",
+          "Scale Ai",
+          "Scott Wu"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ScottWu46/status/2043936583968240103"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776156535,
+        "published_at": "2026-04-14T16:48:55.917115",
+        "source": "x",
+        "url": "https://x.com/ScottWu46/status/2043936583968240103",
+        "event_id": null
+      },
+      {
+        "id": "3f93e24ed81184ef0fb6f0fc6c21a48d",
+        "title": "DeepSeek Engram外部记忆 claims被证伪：实为披着记忆外衣的正则化",
+        "original_title": "DeepSeek Engram: External Memory Claim Debunked — Disguised Regularization Insights from Zhihu Contributor 栀染👇 🔍 Our Research We tested DeepS...",
+        "summary": "独立研究者通过对照实验发现，DeepSeek Engram的十亿参数N-gram记忆表即使被替换为高斯白噪声或统一向量，性能仍显著优于Dense基线，证明其增益来自额外的残差通路和动态门控，而非真正的外部知识检索。",
+        "rating": "S",
+        "score": 94,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可追踪DeepSeek官方回应，以及该发现对知识-推理分离架构研究方向的潜在修正。",
+        "entities": [
+          "DeepSeek",
+          "Engram",
+          "LLM"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ZhihuFrontier/status/2043915382927569269"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776156535,
+        "published_at": "2026-04-14T16:48:55.917131",
+        "source": "x",
+        "url": "https://x.com/ZhihuFrontier/status/2043915382927569269",
+        "event_id": null
+      },
+      {
+        "id": "d91d1658fbeb3a6fcc07076ea6663236",
+        "title": "小红书黑客松现AI硬件新物种：语音加极简按键替代键盘",
+        "original_title": "看了小红书最近搞的黑客松参赛作品。 有人 48 小时开发了新时代 AI 交互入口级硬件。 简单说就是干掉传统键盘，围绕 Claude Code 之类的终端工具，打造了语音输...",
+        "summary": "有参赛团队在小红书黑客松中48小时内开发出一款围绕Claude Code等终端工具的AI交互硬件，采用语音输入配合极简按键，试图取代传统键盘成为新的AI入口设备。",
+        "rating": "A",
+        "score": 76,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可观察该硬件形态是否引发更多开发者跟进，以及AI原生硬件对现有PC外设市场的冲击。",
+        "entities": [
+          "Ai Hardware",
+          "Claude",
+          "Xiaohongshu"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/XDash/status/2043905198775820558"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776156535,
+        "published_at": "2026-04-14T16:48:55.917143",
+        "source": "x",
+        "url": "https://x.com/XDash/status/2043905198775820558",
+        "event_id": null
+      },
+      {
         "id": "02cabe7695d9bb2bbbe411771cc30592",
         "title": "Claude能否驾驶飞机引发技术可行性讨论",
         "original_title": "Can Claude Fly a Plane?",
@@ -108,6 +194,61 @@
         "published_at": "2026-04-14T15:03:04.653905",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260414/p1#a260414p1",
+        "event_id": null
+      },
+      {
+        "id": "63f3ca1a5e7cdb7317eae156ced13498",
+        "title": "前OpenAI工程师揭秘如何用Claude Code分析Polymarket公开数据获利",
+        "original_title": "An ex-OpenAI engineer walked up to me at a meetup in SF I was showing my Polymarket terminal. He looked at the screen for ten seconds and said one sen...",
+        "summary": "一位前OpenAI工程师展示了如何利用Claude Code连接开源Polymarket交易数据库，通过分析历史数据构建交易策略，最终用极低成本实现自动化交易获利。",
+        "rating": "A",
+        "score": 86,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可能引发关于AI辅助量化交易、公开数据挖掘以及去中心化预测市场分析的讨论。",
+        "entities": [
+          "Claude",
+          "OpenAI",
+          "Polymarket"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/LunarResearcher/status/2043791114252234873"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776150184,
+        "published_at": "2026-04-14T15:03:04.653484",
+        "source": "x",
+        "url": "https://x.com/LunarResearcher/status/2043791114252234873",
+        "event_id": null
+      },
+      {
+        "id": "90404b484d89d123b3dff7a2d276c755",
+        "title": "普林斯顿研发无电机无齿轮的软体机器人实现自主移动",
+        "original_title": "A soft robot has no problem moving with no motor and no gears",
+        "summary": "普林斯顿大学研究团队开发出一种无需电机和齿轮即可自主移动的软体机器人，突破了传统机器人对刚性驱动结构的依赖。",
+        "rating": "A",
+        "score": 75,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可能推动软体机器人在医疗、搜救等复杂环境中的应用，并影响仿生机器人设计方向。",
+        "entities": [
+          "Princeton University",
+          "Soft Robot"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://engineering.princeton.edu/news/2026/04/08/soft-robot-has-no-problem-moving-no-motor-and-no-gears"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776150184,
+        "published_at": "2026-04-14T15:03:04.653506",
+        "source": "Hacker News",
+        "url": "https://engineering.princeton.edu/news/2026/04/08/soft-robot-has-no-problem-moving-no-motor-and-no-gears",
         "event_id": null
       },
       {
@@ -5302,34 +5443,6 @@
       }
     ],
     "2026-04-13": [
-      {
-        "id": "63f3ca1a5e7cdb7317eae156ced13498",
-        "title": "前OpenAI工程师揭秘如何用Claude Code分析Polymarket公开数据获利",
-        "original_title": "An ex-OpenAI engineer walked up to me at a meetup in SF I was showing my Polymarket terminal. He looked at the screen for ten seconds and said one sen...",
-        "summary": "一位前OpenAI工程师展示了如何利用Claude Code连接开源Polymarket交易数据库，通过分析历史数据构建交易策略，最终用极低成本实现自动化交易获利。",
-        "rating": "A",
-        "score": 86,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可能引发关于AI辅助量化交易、公开数据挖掘以及去中心化预测市场分析的讨论。",
-        "entities": [
-          "Claude",
-          "OpenAI",
-          "Polymarket"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/LunarResearcher/status/2043791114252234873"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776150184,
-        "published_at": "2026-04-14T15:03:04.653484",
-        "source": "x",
-        "url": "https://x.com/LunarResearcher/status/2043791114252234873",
-        "event_id": null
-      },
       {
         "id": "e28dd8907c10e475a72e7a97c83f8e26",
         "title": "OpenAI将在伦敦开设首个永久办公室，可容纳超500人",
@@ -14387,33 +14500,6 @@
       }
     ],
     "2026-04-10": [
-      {
-        "id": "90404b484d89d123b3dff7a2d276c755",
-        "title": "普林斯顿研发无电机无齿轮的软体机器人实现自主移动",
-        "original_title": "A soft robot has no problem moving with no motor and no gears",
-        "summary": "普林斯顿大学研究团队开发出一种无需电机和齿轮即可自主移动的软体机器人，突破了传统机器人对刚性驱动结构的依赖。",
-        "rating": "A",
-        "score": 75,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可能推动软体机器人在医疗、搜救等复杂环境中的应用，并影响仿生机器人设计方向。",
-        "entities": [
-          "Princeton University",
-          "Soft Robot"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://engineering.princeton.edu/news/2026/04/08/soft-robot-has-no-problem-moving-no-motor-and-no-gears"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776150184,
-        "published_at": "2026-04-14T15:03:04.653506",
-        "source": "Hacker News",
-        "url": "https://engineering.princeton.edu/news/2026/04/08/soft-robot-has-no-problem-moving-no-motor-and-no-gears",
-        "event_id": null
-      },
       {
         "id": "d9a58c9dc09ae2cad473252d3ac6ad6e",
         "title": "开发者构建Claude自动化iOS测试工具：8分钟自主遍历全应用发现所有漏洞",
@@ -34838,6 +34924,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-14T15:03:37.076915",
-  "total_news": 1226
+  "last_updated": "2026-04-14T16:49:52.812736",
+  "total_news": 1229
 }
