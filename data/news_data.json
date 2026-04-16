@@ -2,16 +2,320 @@
   "news": {
     "2026-04-17": [
       {
-        "id": "0d72943b7799ddf59fbe26495d37d191",
-        "title": "OpenAI starts offering a bi...",
-        "original_title": "OpenAI starts offering a biology-tuned LLM",
-        "summary": "On Thursday, OpenAI announced it had developed a large language model specifi...",
+        "id": "34e1d8cc9cec2c141d86c46ef5d5613d",
+        "title": "Marc Lore旗下Wonder筹备IPO前融资，估值目标110亿美元",
+        "original_title": "Marc Lore’s Wonder Preps a Pre-IPO Round",
+        "summary": "电商老兵Marc Lore的食品配送公司Wonder计划以110亿美元估值进行IPO前最后一轮融资，较去年的70亿美元大幅上升。",
         "rating": "B",
         "score": 70,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "若融资顺利，Wonder有望成为2027年最受关注的IPO之一，也可能带动食品配送和即时零售赛道的新一轮资本关注。",
+        "entities": [
+          "Grubhub",
+          "Marc Lore",
+          "Wonder"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/marc-lores-wonder-preps-pre-ipo-round"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029603",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/marc-lores-wonder-preps-pre-ipo-round",
+        "event_id": null
+      },
+      {
+        "id": "248c88300d9b70a9350f722237c7b2ea",
+        "title": "Sir-Bench发布：专为安全事件响应Agent设计的基准测试",
+        "original_title": "Sir-Bench – benchmark for security incident response agents",
+        "summary": "研究人员发布Sir-Bench，一个针对安全事件响应Agent的专门基准测试，旨在评估AI代理在网络安全事件处理中的表现。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "随着AI Agent进入网络安全领域，专门化基准的缺失正被填补，这可能加速企业级安全Agent的产品化进程和竞争格局分化。",
+        "entities": [
+          "Sir-Bench"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://arxiv.org/abs/2604.12040"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029620",
+        "source": "Hacker News",
+        "url": "https://arxiv.org/abs/2604.12040",
+        "event_id": null
+      },
+      {
+        "id": "b6d50c92151fe56157d91fede7020af1",
+        "title": "OpenAI正式发布GPT-Rosalind生命科学模型",
+        "original_title": "GPT‑Rosalind for life sciences research",
+        "summary": "OpenAI在其官网正式介绍GPT-Rosalind，该模型专为生命科学研究设计，已向包括Moderna在内的合作伙伴开放研究预览。",
+        "rating": "S",
+        "score": 93,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "垂直领域专用模型的发布可能改变生物医药研发的工作流程，加速AI在药物发现和实验设计中的商业化落地。",
+        "entities": [
+          "Gpt-Rosalind",
+          "Moderna",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://openai.com/index/introducing-gpt-rosalind/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029639",
+        "source": "Hacker News",
+        "url": "https://openai.com/index/introducing-gpt-rosalind/",
+        "event_id": null
+      },
+      {
+        "id": "e0eaf7eb1f7d72f1b30881bfd54dc2fa",
+        "title": "The Verge记者亲测：用AI deepfake给父母打电话，结果如何",
+        "original_title": "The only way to fight deepfakes is by making deepfakes",
+        "summary": "The Verge记者Gaby尝试用AI deepfake技术模仿自己的声音给父母打电话，测试家人能否识破，记录了这次实验的全过程和父母的反应。",
+        "rating": "B",
+        "score": 69,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "随着deepfake技术普及，个人和家庭层面的防范意识将成为新的社会议题，也可能推动相关检测工具和监管政策的加速出台。",
+        "entities": [
+          "Pindrop",
+          "Reality Defender",
+          "The Verge"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/report/913445/deepfake-detection-reality-defender-pindrop-ai"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029703",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/report/913445/deepfake-detection-reality-defender-pindrop-ai",
+        "event_id": null
+      },
+      {
+        "id": "75c43ec8dc8dd97814c9c2fd8726aea7",
+        "title": "OpenAI Codex新增后台控制电脑能力，可边工作边自主执行任务",
+        "original_title": "New Codex features include the ability to use your computer in the background",
+        "summary": "OpenAI Codex桌面应用新版上线，最引人注目的功能是在后台执行PC任务，OpenAI声称这不会干扰用户当前的桌面操作。",
+        "rating": "A",
+        "score": 85,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "后台自主执行能力标志着AI编程助手向真正的数字员工演进，但也可能引发关于安全、隐私和权限控制的广泛讨论。",
+        "entities": [
+          "Codex",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/04/new-codex-features-include-the-ability-to-use-your-computer-in-the-background/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029730",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/04/new-codex-features-include-the-ability-to-use-your-computer-in-the-background/",
+        "event_id": null
+      },
+      {
+        "id": "9059c27d09605d90003adee054f96ddf",
+        "title": "OpenAI政策主管公开批评AI末日论者：言论有后果",
+        "original_title": "OpenAI's global policy chief, Chris Lehane, calls out AI \"doomers\" and says \"when you put some of those thoughts and ideas out there, they do have consequences\" (Caroline O'Donovan/The San Francisco ...)",
+        "summary": "OpenAI全球政策负责人Chris Lehane公开批评AI末日论者，表示当你把这些想法和观点公之于众时，确实会产生后果。",
+        "rating": "B",
+        "score": 73,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "Lehane的言论反映出AI行业内部在安全与加速发展之间的深刻分歧，也可能影响未来AI监管辩论的舆论走向和政策制定。",
+        "entities": [
+          "Chris Lehane",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260416/p44#a260416p44"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029739",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260416/p44#a260416p44",
+        "event_id": null
+      },
+      {
+        "id": "626dff97cea5dea59fa53698b661c423",
+        "title": "Anthropic CPO离任Figma董事会，SaaS行业AI吞噬软件焦虑升温",
+        "original_title": "Anthropic CPO leaves Figma’s board after reports he will offer a competing product",
+        "summary": "TechCrunch报道，Anthropic首席产品官Mike Krieger已离开Figma董事会，投资者担心最大的AI实验室将主导软件业务，这一担忧今年已多次震动公开市场。",
+        "rating": "A",
+        "score": 78,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "若Anthropic确实推出设计工具，将直接威胁Figma等SaaS公司的市场地位，可能引发设计软件赛道的新一轮并购或防御性合作。",
+        "entities": [
+          "Anthropic",
+          "Figma",
+          "Mike Krieger"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/16/anthropic-cpo-leaves-figmas-board-after-reports-he-will-offer-a-competing-product/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029748",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/16/anthropic-cpo-leaves-figmas-board-after-reports-he-will-offer-a-competing-product/",
+        "event_id": null
+      },
+      {
+        "id": "b10ad047b32d577dc212cdf169bc9f49",
+        "title": "白宫备忘录：Anthropic Mythos模型或将供美国政府机构使用",
+        "original_title": "Memo: the White House notified Cabinet departments that OMB is setting up protections that would allow their agencies to begin using Anthropic's Mythos model (Bloomberg)",
+        "summary": "据彭博社报道，白宫已通知内阁各部门，美国行政管理和预算局正在建立保护措施，以允许其机构开始使用Anthropic的Mythos模型。",
+        "rating": "A",
+        "score": 80,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "政府采用Mythos标志着AI大模型进入美国核心政务系统的又一里程碑，可能加速其他AI厂商争夺政府合同，并引发关于AI治理和安全的政策讨论。",
+        "entities": [
+          "Anthropic",
+          "Mythos",
+          "白宫"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260416/p43#a260416p43"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029756",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260416/p43#a260416p43",
+        "event_id": null
+      },
+      {
+        "id": "c876ed3457548a8f4413b76905b53278",
+        "title": "OpenAI将Codex升级为常驻编码Agent，可自主控制Mac并持续工作数周",
+        "original_title": "OpenAI turns Codex into an always-on coding agent that watches your screen",
+        "summary": "The Decoder报道，OpenAI大幅扩展Codex能力，现可独立控制Mac、生成图像、记住偏好，并自主持续执行任务长达数周，直接瞄准Anthropic的Claude Code。",
+        "rating": "S",
+        "score": 95,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Codex向常驻Agent的演进可能重塑开发者工作流，但也可能加剧关于AI代理权限、安全和用户控制权的行业辩论。",
+        "entities": [
+          "Claude Code",
+          "Codex",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/openai-turns-codex-into-an-always-on-coding-agent-that-watches-your-screen/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029765",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/openai-turns-codex-into-an-always-on-coding-agent-that-watches-your-screen/",
+        "event_id": null
+      },
+      {
+        "id": "252a74f032124ce3a99eb22d63a3abdb",
+        "title": "微软Surface Laptop有望首次搭载OLED屏幕",
+        "original_title": "Microsoft planning Surface Laptop with an OLED display",
+        "summary": "据Windows Central报道，微软计划在未来几个月推出新款Surface Laptop，将首次提供OLED显示屏选项，并同时推出Intel和Qualcomm版本。",
+        "rating": "B",
+        "score": 68,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "若Surface Laptop引入OLED，将补齐微软高端笔记本在显示体验上的短板，也可能加剧与MacBook Air在高端消费市场的竞争。",
+        "entities": [
+          "Intel",
+          "Microsoft",
+          "Surface Laptop"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/news/913218/microsoft-surface-laptop-oled-display-rumor"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029827",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/news/913218/microsoft-surface-laptop-oled-display-rumor",
+        "event_id": null
+      },
+      {
+        "id": "9732d78218ee20d7dfdce217c5ba4714",
+        "title": "Claude Opus 4.7 Model Card",
+        "original_title": "Claude Opus 4.7 Model Card",
+        "summary": "Comments",
+        "rating": "B",
+        "score": 68,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "待进一步分析",
         "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://anthropic.com/claude-opus-4-7-system-card"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776380510,
+        "published_at": "2026-04-17T07:01:50.643702",
+        "source": "Hacker News",
+        "url": "https://anthropic.com/claude-opus-4-7-system-card",
+        "event_id": null
+      },
+      {
+        "id": "0d72943b7799ddf59fbe26495d37d191",
+        "title": "OpenAI starts offering a bi...",
+        "original_title": "OpenAI starts offering a biology-tuned LLM",
+        "summary": "OpenAI发布GPT-Rosalind，一款专门针对常见生物学工作流训练的大语言模型，旨在解决生物研究中数据孤岛和实验设计两大瓶颈。",
+        "rating": "B",
+        "score": 96,
+        "type": "product",
+        "typeName": "行业动态",
+        "expansion": "待进一步分析",
+        "entities": [
+          "Gpt-Rosalind",
+          "Moderna",
+          "OpenAI"
+        ],
         "sourceLinks": [
           {
             "name": "Ars Technica » Scientific Method",
@@ -23,7 +327,11 @@
         "published_at": "2026-04-17T07:01:40.891402",
         "source": "Ars Technica » Scientific Method",
         "url": "https://arstechnica.com/science/2026/04/openai-starts-offering-a-biology-tuned-llm/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "On Thursday, OpenAI announced it had developed a large language model specifically trained on common biology workflows. Called GPT-Rosalind after Rosalind Franklin , the model appears to differ from most science-focused models from major tech companies, which have generally taken a more generic approach that works for various fields. In a press briefing, Yunyun Wang, OpenAI's Life Sciences Product Lead, said the system was designed to tackle two major roadblocks faced by current biology researchers. One is the massive datasets created by decades of genome sequencing and protein biochemistry, which can be too much for any one researcher to take in. The second is that biology has many highly specialized subfields, each with its own techniques and jargon. So, for example, a geneticist who finds themselves working on a gene that's active in brain cells might struggle to understand the immense neurobiological literature. Wang said the company had taken an LLM and trained it on 50 of the most common biological workflows, as well as on how to access the major public databases of biological information. Further training has resulted in a system that can suggest likely biological pathways and prioritize potential drug targets. \"We're connecting genotype to phenotype through known pathways and regulatory mechanisms, infer likely structural or functional properties of proteins, and really leveraging this mechanistic understanding,\" Wang said. Read full article Comments",
+        "chinese_title": "OpenAI推出面向生物学工作流的专用大模型GPT-Rosalind",
+        "grade": "S",
+        "extension": "这标志着大模型从通用能力向垂直科学领域的深度渗透，可能引发Google DeepMind、微软等竞争对手在生命科学AI领域的跟进。"
       },
       {
         "id": "7cb8495e36e09185c1347a10cf7c9807",
@@ -53,13 +361,17 @@
         "id": "40f897b82ba6ef286f83a02cd974a576",
         "title": "OpenAI drastically updates ...",
         "original_title": "OpenAI drastically updates Codex desktop app to use all other apps on your computer, generate images, preview webpages",
-        "summary": "Confirming it has reached 3 million weekly developers, OpenAI is massively up...",
+        "summary": "OpenAI宣布Codex桌面应用重大更新，Mac和Windows版Codex现可访问电脑上其他应用、生成图像、预览网页，向超级应用迈进。",
         "rating": "B",
-        "score": 70,
-        "type": "industry",
+        "score": 97,
+        "type": "product",
         "typeName": "行业动态",
         "expansion": "待进一步分析",
-        "entities": [],
+        "entities": [
+          "Claude Code",
+          "Codex",
+          "OpenAI"
+        ],
         "sourceLinks": [
           {
             "name": "VentureBeat",
@@ -71,7 +383,11 @@
         "published_at": "2026-04-17T07:01:40.891464",
         "source": "VentureBeat",
         "url": "https://venturebeat.com/technology/openai-drastically-updates-codex-desktop-app-to-use-all-other-apps-on-your-computer-generate-images-preview-webpages",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Confirming it has reached 3 million weekly developers, OpenAI is massively updating its Codex developer environment via its Mac and Windows desktop apps today to bring it closer to the “Super App” the company has confirmed it is pursuing. Before today, Codex was primarily an environment for using OpenAI’s underlying language models to write, edit, debug and ship software as directed by the user. Now, Codex will be able to access all of the other apps on your computer, surface relevant information from within them to you when asked or proactively, take actions as directed in said applications, and, in the case of Mac users, even do so while you continue manually using your computer simultaneously to your agents working in the background. Andrew Ambrosino, an OpenAI technical staffer on the Codex team, described the change plainly in an embargoed press briefing I attended virtually yesterday: “Codex can actually click on apps, launch apps, and type into apps. This works with any apps on your machine.” Codex on desktop is further getting its own built-in web browser, allowing users to preview their front-end development, and a directly integrated pipeline to OpenAI’s powerful AI image generation model gpt-image-1.5, allowing users to generate imagery for their projects — everything from websites to presentations to full playable PC games with hundreds of assets — all in the same style. As Thibault \"Tibo\" Sottiaux, Head of Codex at OpenAI, said during the briefing: “It’s not just about the growth. It is putting a very capable agent in the hands of builders, and now we’re seeing that we’re able to expand and do a lot more work entirely across your computer\" Asked why OpenAI was pursuing all this in Codex, not its more recognizable flagship app, ChatGPT, Sottiaux told VentureBeat: “Codex is our most powerful agent.It already worked on your computer, and so we’re expanding the capabilities there. It felt very natural. We will make it make sense at some point.\" The update comes as rival Anthropic has previously courted similar use cases with the launch of its Claude Cowork and redesigned Claude Code desktop app views , all available within the Claude desktop app for Mac and Windows. But Claude does not allow for simultaneous background app cursor usage from the desktop app across all of a user's apps like Codex does. Multiple agentic computer use workflows in the background on macOS The most significant technological leap in this release is \"Computer Use,\" limited for now to macOS users. This feature allows Codex to break out of the traditional chatbot container to \"see, click, and type\" across all applications on a machine. Crucially, this happens in the background. \"It can use apps on your computer in the background, as opposed to taking over your entire computer,\" explained Caffrey Lynch of OpenAI’s developer product communications. This enables \"multi-agent\" workflows where Codex might be testing a frontend change or triaging a JIRA ticket while the developer continues working in a different application. For Windows users, the core Codex desktop app remains available and supported — as does pulling information in from those apps to surface to the user in Codex — though it lacks the cursor-level background interaction available on Mac at launch. A one-stop shop for end-to-end software development Beyond operating the OS, OpenAI is doubling down on the \"Software Development Lifecycle\" (SDLC). The Codex app now functions more like a unified workspace, supporting everything from GitHub PR reviews to managing remote infrastructure. \"The simplest way to think about this release is teaching Codex and the app to work across a much larger surface area,\" said Andrew Ambrosino, lead of Codex app development. This surface area now includes: Integrated Browser : An in-app browser allows developers to iterate on frontend designs by commenting directly on DOM elements, providing precise instructions for the agent to follow. Visual Primitives : By integrating gpt-image-1.5, Codex can now generate and iterate on images for mockups and game assets directly within the development workflow. Expanded Sidebar : The app now includes rich previews for non-code files such as PDFs, spreadsheets, and slide decks, alongside a summary pane to track agent plans and sources. Terminal &amp; SSH : The update adds support for multiple terminal tabs and an alpha feature for connecting to remote devboxes via SSH. To connect these disparate tasks, OpenAI is releasing more than 90 new plugins. These connectors—including CircleCI, GitLab, and Microsoft Suite—allow the agent to gather context and take action across the entire toolchain a developer uses daily. In a demo video shown off during the briefing, OpenAI presented an example showing the user typing into the Codex prompt entry field, “Can you check Slack, Gmail, Google Calendar, and Notion and tell me what needs my attention?” showing how Codex can now scan across multiple apps and gather information from them all in single prompt, and surface what matters most to the user. “You can @ mention them if you want Codex to use a specific app, or if not, Codex can discover which apps to use,” Ambrosino said. The ‘heartbeat’ of productivity One of the more subtle but powerful shifts is the introduction of persistent agency. Through \"Heartbeat Automations,\" Codex can now schedule future work for itself and \"wake up\" to continue long-term tasks. This allows teams to set up agents that monitor Slack channels or Notion docs and proactively update documentation or landing PRs. This is supported by a new \"Memory\" feature, currently in preview. Memory allows Codex to remember personal preferences, previous corrections, and gathered information, reducing the need for extensive custom instructions in every new session. \"As you use Codex, Codex also becomes better at being proactive,\" noted Sottiaux. This proactivity manifests in a \"daily brief\" style feature where the app suggests how to start the day by identifying open Google Doc comments or relevant Slack context. It's similar in spirit and practice to the new \"Routines\" feature launched by Anthropic for its Claude Code product earlier this week. Licensing, pricing, and availability OpenAI has recently transitioned toward a more flexible pricing model for teams, including a $100 plan and pay-as-you-go options to accommodate the increased usage of autonomous agents. For individual users, these updates are rolling out today to those signed in to the Codex desktop app with ChatGPT. While the Codex desktop app is available on both macOS and Windows , the rollout of specific features is tiered: Background Computer Use : macOS only at launch. Personalization (Memory/Suggestions) : Coming soon for Enterprise, Edu, EU, and UK users. Core Software Development Life Cycle Updates : Available to all desktop app users starting today. The vision: from developer tool to Super App for all When asked if these features represent the foundation of an AI \"Super App,\" Sottiaux confirmed the strategy: \"We’re building the Super App in the open and evolving it out of the Codex app\". The goal is to address the reality that developers spend a majority of their time on coordination and context-gathering rather than writing code. By bringing Codex closer to the operating system and the broader ecosystem of developer tools, OpenAI is positioning it as the central nervous system for modern software development. \"Our mission is to ensure that AGI benefits all of humanity,\" the company stated in its official announcement. \"That means narrowing the gap between what people can imagine and what they can actually build\".",
+        "chinese_title": "OpenAI大幅升级Codex桌面应用：可控制电脑所有应用、生成图像、预览网页",
+        "grade": "S",
+        "extension": "Codex的升级直接对标Anthropic的Claude Code，可能加剧AI编程助手市场的竞争，并推动开发者工具向全功能Agent形态演进。"
       },
       {
         "id": "a32cc2e06bf53ae4c25b2324282cd13f",
@@ -101,13 +417,17 @@
         "id": "65f9eba28cbd4ed8f1c667062978563b",
         "title": "The Battle for OpenAI’s Soul",
         "original_title": "The Battle for OpenAI’s Soul",
-        "summary": "In Musk v. Altman, a jury will soon determine whether OpenAI has strayed from...",
+        "summary": "《连线》杂志深度报道即将到来的Musk v. Altman庭审，陪审团将判定OpenAI是否背离了确保AGI造福人类的创始使命。",
         "rating": "B",
-        "score": 68,
+        "score": 87,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "待进一步分析",
-        "entities": [],
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "Sam Altman"
+        ],
         "sourceLinks": [
           {
             "name": "Feed: Artificial Intelligence Latest",
@@ -119,19 +439,27 @@
         "published_at": "2026-04-17T07:01:40.891518",
         "source": "Feed: Artificial Intelligence Latest",
         "url": "https://www.wired.com/story/musk-v-altman-trial-openai-xai/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "In Musk v. Altman, a jury will soon determine whether OpenAI has strayed from its founding mission to ensure AGI benefits humanity. Here’s what to know.",
+        "chinese_title": "《连线》：马斯克诉奥特曼案将决定OpenAI的灵魂归属",
+        "grade": "A+",
+        "extension": "此案结果不仅影响OpenAI的公司治理结构和IPO前景，也可能为整个AI行业的非营利向营利转型设定法律先例。"
       },
       {
         "id": "b20920e9b4f4bf08f22b89ed58ce6de8",
         "title": "LinkedIn’s AI Agent Product...",
         "original_title": "LinkedIn’s AI Agent Product Becomes a Surprise Bright Spot for Microsoft",
-        "summary": "Microsoft has so far seen mixed results in its efforts to sell AI-powered pro...",
+        "summary": "The Information报道，微软企业AI产品销售表现参差，但LinkedIn去年秋季推出的一款AI Agent产品却意外成为爆款，引起微软高层注意。",
         "rating": "B",
-        "score": 70,
-        "type": "industry",
+        "score": 88,
+        "type": "product",
         "typeName": "行业动态",
         "expansion": "待进一步分析",
-        "entities": [],
+        "entities": [
+          "365 Copilot",
+          "Linkedin",
+          "Microsoft"
+        ],
         "sourceLinks": [
           {
             "name": "The Information",
@@ -143,7 +471,11 @@
         "published_at": "2026-04-17T07:01:40.891534",
         "source": "The Information",
         "url": "https://www.theinformation.com/articles/linkedins-ai-agent-product-becomes-surprise-bright-spot-microsoft",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Microsoft has so far seen mixed results in its efforts to sell AI-powered products to businesses, with only around 3% of its Office 365 users paying to use 365 Copilot as of the end of last year. But a seemingly niche AI product released last fall by its subsidiary LinkedIn has taken off as a surprise hit. And I’m told that leaders elsewhere at Microsoft are now taking note.",
+        "chinese_title": "LinkedIn AI Agent产品成微软意外亮点，内部高度关注",
+        "grade": "A+",
+        "extension": "LinkedIn AI Agent的成功可能促使微软将更多资源投入垂直场景Agent开发，并影响其365 Copilot的产品策略和市场定位。"
       },
       {
         "id": "30aed2848a90acc0b1a7c4bf24df838e",
@@ -173,13 +505,17 @@
         "id": "d608f300a12de324675e758f7140f2fa",
         "title": "OpenAI&rsquo;s big Codex up...",
         "original_title": "OpenAI&rsquo;s big Codex update is a direct shot at Claude Code",
-        "summary": "Codex can control apps on your desktop like Tic Tac Toe. | Image: OpenAI Open...",
+        "summary": "The Verge报道，OpenAI升级Codex，使其能够操作macOS桌面应用、生成图像并记住过往经验，此举被视作对Anthropic Claude Code的直接回应。",
         "rating": "B",
-        "score": 70,
-        "type": "industry",
+        "score": 91,
+        "type": "product",
         "typeName": "行业动态",
         "expansion": "待进一步分析",
-        "entities": [],
+        "entities": [
+          "Claude Code",
+          "Codex",
+          "OpenAI"
+        ],
         "sourceLinks": [
           {
             "name": "The Verge -  Tech Posts",
@@ -191,19 +527,28 @@
         "published_at": "2026-04-17T07:01:40.891549",
         "source": "The Verge -  Tech Posts",
         "url": "https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Codex can control apps on your desktop like Tic Tac Toe. | Image: OpenAI OpenAI is beefing up its agentic coding and development system, Codex, with a suite of updates that let it use your computer, generate images, and remember from past experiences. The package of updates comes as OpenAI's rivalry with Anthropic intensifies, following the stellar successes of Claude Code and OpenAI aggressively shifting resources to catch up. Codex will now be able to operate desktop apps on your computer, OpenAI says in a blog post announcing the update . It can work in the background, meaning it won't interfere with your own work in other apps, and multiple agents can work in parallel. For developers, OpenAI says, \"this is he … Read the full story at The Verge.",
+        "chinese_title": "OpenAI Codex大更新：可直接操控macOS应用，正面挑战Claude Code",
+        "grade": "A+",
+        "extension": "开发者工具正从代码助手向全栈数字员工演进，Codex与Claude Code的竞争将加速这一转变，并可能重塑软件开发生产力工具的定价模式。"
       },
       {
         "id": "8e8bbbcf35d74052b2a7122dda49514a",
         "title": "Anthropic releases Claude O...",
         "original_title": "Anthropic releases Claude Opus 4.7, narrowly retaking lead for most powerful generally available LLM",
-        "summary": "Anthropic is publicly releasing its most powerful large language model yet, C...",
+        "summary": "Anthropic正式发布Claude Opus 4.7，称其超越了最直接的竞争对手OpenAI GPT-5.4，重新夺回公开可用最强大语言模型的领先地位。",
         "rating": "B",
-        "score": 70,
-        "type": "industry",
+        "score": 96,
+        "type": "product",
         "typeName": "行业动态",
         "expansion": "待进一步分析",
-        "entities": [],
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "GPT",
+          "OpenAI"
+        ],
         "sourceLinks": [
           {
             "name": "VentureBeat",
@@ -215,19 +560,27 @@
         "published_at": "2026-04-17T07:01:40.891560",
         "source": "VentureBeat",
         "url": "https://venturebeat.com/technology/anthropic-releases-claude-opus-4-7-narrowly-retaking-lead-for-most-powerful-generally-available-llm",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic is publicly releasing its most powerful large language model yet, Claude Opus 4.7 , today — as it continues to keep an even more powerful successor, Mythos, restricted to a small number of external enterprise partners for cybersecurity testing and patching vulnerabilities in the software said enterprises use (which Mythos exposed rapidly). The big headlines are that Opus 4.7 exceeds its most direct rivals — OpenAI's GPT-5.4, released in early March 2026 , scarcely more than a month ago; and Google's latest flagship model Gemini 3.1 Pro from February — on key benchmarks including agentic coding, scaled tool-use, agentic computer use, and financial analysis. But also, it's notable how tight the race is getting: on directly comparable benchmarks, Opus 4.7 only leads GPT-5.4 by 7-4. It currently leads the market on the GDPVal-AA knowledge work evaluation with an Elo score of 1753, surpassing both GPT-5.4 (1674) and Gemini 3.1 Pro (1314). Yet, the model does not represent a \"clean sweep\" across all categories. Competitors like GPT-5.4 and Gemini 3.1 Pro still hold the lead in specific domains such as agentic search, where GPT-5.4 scores 89.3% compared to Opus 4.7’s 79.3%, as well as in multilingual Q&amp;A and raw terminal-based coding. This positioning defines Opus 4.7 not as a unilateral victor in all AI tasks, but as a specialized powerhouse optimized for the reliability and long-horizon autonomy required by the burgeoning agentic economy. Claude Opus 4.7 is available today across all major cloud platforms, including Amazon Bedrock, Google Cloud’s Vertex AI, and Microsoft Foundry, with API pricing held steady at $5/$25 per million tokens . Improvement in hard sciences and agentic workflows Claude Opus 4.7 is a direct evolution of the Opus 4.6 architecture, but its performance delta is most visible in the \"hard\" sciences of agentic workflows: software engineering and complex document reasoning. At its core, the model has been re-tuned to exhibit what Anthropic describes as \"rigor\". This isn't just marketing parlance; it refers to the model’s new ability to devise its own verification steps before reporting a task as complete. For example, in internal tests, the model was observed building a Rust-based text-to-speech engine from scratch and then independently feeding its own generated audio through a separate speech recognizer to verify the output against a Python reference. This level of autonomous self-correction is designed to reduce the \"hallucination loops\" that often plague earlier iterations of agentic software. The most significant architectural upgrade is the move to high-resolution multimodal support. Opus 4.7 can now process images up to 2,576 pixels on their longest edge—roughly 3.75 megapixels. This represents a three-fold increase in resolution compared to previous iterations. For developers building \"computer-use\" agents that must navigate dense, high-DPI interfaces or for analysts extracting data from intricate technical diagrams, this change effectively removes the \"blurry vision\" ceiling that previously limited autonomous navigation. This visual acuity is reflected in benchmarks from XBOW, where the model jumped from a 54.5% success rate in visual-acuity tests to 98.5%. On the benchmark front, Opus 4.7 has claimed the top spot in several critical categories: Knowledge Work (GDPVal-AA): It achieved an Elo score of 1753, notably outperforming GPT-5.4 (1674) and Gemini 3.1 Pro (1314). Agentic Coding (SWE-bench Pro): The model resolved 64.3% of tasks, compared to 53.4% for its predecessor. Graduate-Level Reasoning (GPQA Diamond): It reached 94.2%, maintaining parity with the industry's most advanced models while improving on its internal consistency. Visual Reasoning (arXiv Reasoning): With tools, the model scored 91.0%, a meaningful jump from the 84.7% seen in Opus 4.6. Crucially, Anthropic warns that this increased precision requires a shift in how users approach prompting. Opus 4.7 follows instructions literally. While older models might \"read between the lines\" and interpret ambiguous prompts loosely, Opus 4.7 executes the exact text provided. This means that legacy prompt libraries may require re-tuning to avoid unexpected results caused by the model’s strict adherence to the letter of the request. Controlling the 'thinking' budget The \"agentic\" nature of Opus 4.7—its tendency to pause, plan, and verify—comes with a trade-off in token consumption and latency. To address this, Anthropic is introducing a new \"effort\" parameter. Users can now select an xhigh (extra high) effort level, positioned between high and max, allowing for more granular control over the depth of reasoning the model applies to a specific problem. Internal data shows that while max effort yields the highest scores (approaching 75% on coding tasks), the xhigh setting provides a compelling sweet spot between performance and token expenditure. To manage the costs associated with these more \"thoughtful\" runs, the Claude API is introducing \"task budgets\" in public beta. This allows developers to set a hard ceiling on token spend for autonomous agents, ensuring that a long-running debugging session doesn't result in an unexpected bill. These product changes signal a maturing market where AI is no longer a novelty but a production line item that requires fiscal and operational guardrails. Furthermore, Opus 4.7 utilizes an updated tokenizer that improves text processing efficiency, though it can increase the token count of certain inputs by 1.0–1.35x. Within the Claude Code environment, the update brings a new /ultrareview command. Unlike standard code reviews that look for syntax errors, /ultrareview is designed to simulate a senior human reviewer, flagging subtle design flaws and logic gaps. Additionally, \"auto mode\"—a setting where Claude can make autonomous decisions without constant permission prompts—has been extended to Max plan users. Licensing, safety, and the \"cyber\" divide Anthropic continues to walk a narrow line regarding cybersecurity. The recent announcement of the aforementioend cybersecurity partnership around Mythos with external industry partners — known as \"Project Glasswing\" — highlighted the dual-use risks of high-capability models. Consequently, while the flagship Mythos Preview model remains restricted, Opus 4.7 serves as the testbed for new automated safeguards. The model includes systems designed to detect and block requests that suggest high-risk cyberattacks, such as automated vulnerability exploitation. To bridge the gap for the security industry, Anthropic is launching the Cyber Verification Program. This allows legitimate professionals—vulnerability researchers, penetration testers, and red-teamers—to apply for access to use Opus 4.7’s capabilities for defensive purposes. This \"verified user\" model suggests a future where the most capable AI features are not universally available, but gated behind professional credentials and compliance frameworks. In cybersecurity vulnerability reproduction (CyberGym), Opus 4.7 maintains a 73.1% success rate, trailing Mythos Preview's 83.1% but leading GPT-5.4's 66.3%. Initial reactions from industry partners reveal quantifiable improvements in production enterprise workflows Early testimonials from enterprise customers shared by Anthropic indicate there has been a tangible shift in model perception of Opus 4.7 from 4.6, going from \"impressed by the tech\" to \"relying on the output\". Clarence Huang, VP of Technology at Intuit, noted that the model’s ability to \"catch its own logical faults during the planning phase\" is a game-changer for velocity. This sentiment was echoed by Replit President Michele Catasta, who stated that the model achieved higher quality at a lower cost for tasks like log analysis and bug hunting, adding, \"It really feels like a better coworker\". Other specific reactions included: Cognition (Devin): CEO Scott Wu reported that Opus 4.7 can work coherently \"for hours\" and pushes through difficult problems that previously caused models to stall. Notion: Sarah Sachs, AI Lead, highlighted a 14% improvement in multi-step workflows and a 66% reduction in tool-calling errors, making the agent feel like a \"true teammate\". Factory Droids: Leo Tchourakov observed that the model carries work through to validation steps rather than \"stopping halfway,\" a common complaint with previous frontier models. Harvey: Niko Grupen, Head of Applied Research, noted the model's 90.9% score on BigLaw Bench, highlighting its \"noticeably smarter handling of ambiguous document editing tasks\". Perhaps the most telling reaction came from Aj Orbach, CEO of a dashboard-building firm, who remarked on the model’s \"design taste,\" noting that its choices for data-rich interfaces were of a quality he would \"actually ship\". Should enterprises immediately upgrade to Opus 4.7? For enterprise leaders, Claude Opus 4.7 represents a shift from generative AI as a \"creative assistant\" to a \"reliable operative.\" But importantly, it is not a \"clean win\" for every use case. Instead, it is a decisive upgrade for teams building autonomous agents or complex software systems. The primary value proposition is the model's new capability for self-verification and rigor; it no longer just generates an answer but creates internal tests to verify that the answer is correct before responding. This reliability makes it a superior choice for long-horizon engineering tasks where the cost of human supervision is the primary bottleneck. However, an immediate, wholesale migration from Opus 4.6 requires caution . The model's increased literalism in instruction following means that prompts engineered to be \"loose\" or conversational with previous versions may now produce unexpected or overly rigid results. Furthermore, enterprises must prepare for a significant increase in operational costs. Opus 4.7 uses an updated tokenizer that can increase input token counts by 1.0–1.35x, and its tendency to \"think harder\" at high effort levels results in higher output token consumption. For legacy applications where prompts are fragile and margins are thin, a phased rollout with significant re-tuning is recommended. Where it puts Anthropic in the AI race This release arrives at a paradoxical moment for Anthropic. Financially, the company is an undisputed juggernaut, with venture capital firms reportedly extending investment offers at a staggering $800 billion valuation—more than double its $380 billion Series G valuation from February 2026. This momentum is fueled by explosive growth, with the company’s annual run-rate revenue skyrocketing to $30 billion in April 2026, driven largely by enterprise adoption and the success of Claude Code. Yet, this commercial success is being contested by intense regulatory and technical friction. Anthropic is currently embroiled in a high-stakes legal battle with the U.S. Department of War (DoW) , which recently labeled the company a \"supply chain risk\" after Anthropic refused to allow its models to be used for mass surveillance or fully autonomous lethal weapons. While a San Francisco judge initially blocked the designation, a federal appeals panel recently denied Anthropic’s bid to stay the blacklisting , leaving the company excluded from lucrative defense contracts during an active military conflict. Simultaneously, Anthropic is fending off a growing rebellion from its most loyal power users. Despite the company's \"market leader\" status, developers have flooded GitHub and X with accusations of \"AI shrinkflation,\" claiming that the preceding Opus 4.6 model and Claude Code product have been quietly degraded. Users report that recent versions are more prone to exploration loops, memory loss, and ignored instructions, leading some to describe the newly released Claude Code desktop app as \"unpolished\" and unbefitting a firm with a near-trillion-dollar valuation. Opus 4.7 is Anthropic's attempt to silence these critics by proving that \"deep thinking\" can be paired with the rigorous execution that its enterprise clients now demand. Ultimately, Opus 4.7 is a model defined by its discipline. In a market where models are often incentivized to be \"helpful\" to a fault—sometimes hallucinating answers to please the user—Opus 4.7 marks a return to rigor. By allowing users to control effort, set budgets, and verify outputs, Anthropic is moving closer to the goal of a truly autonomous digital labor force. For the engineering teams at Replit, Notion, and beyond, the shift from \"watching the AI work\" to \"managing the AI's results\" has officially begun.",
+        "chinese_title": "Anthropic发布Claude Opus 4.7，重新夺回最强公开可用LLM领先地位",
+        "grade": "S",
+        "extension": "Opus 4.7的发布可能加剧顶级大模型市场的竞争，促使OpenAI加速推出下一代模型，同时也为企业用户在模型选择时提供了新的性能参考。"
       },
       {
         "id": "5b533321237db82fcca6203d8d32e3c2",
         "title": "Wait, what happened to the ...",
         "original_title": "Wait, what happened to the Extended Thinking toggle on Opus 4.7? Opened Claude this morning and the toggle I use every day is gone. It's now \"Adaptive...",
-        "summary": "Wait, what happened to the Extended Thinking toggle on Opus 4.7? Opened Claud...",
+        "summary": "Anthropic在Claude Opus 4.7中将Extended Thinking改为自适应模式，Max订阅用户无法再强制开启深度思考，引发对200美元月费价值的质疑。",
         "rating": "B",
-        "score": 68,
-        "type": "industry",
+        "score": 86,
+        "type": "product",
         "typeName": "行业动态",
         "expansion": "待进一步分析",
-        "entities": [],
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "OpenAI"
+        ],
         "sourceLinks": [
           {
             "name": "x",
@@ -239,19 +592,27 @@
         "published_at": "2026-04-17T07:01:40.891317",
         "source": "x",
         "url": "https://x.com/RayFernando1337/status/2044854321075143039",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Wait, what happened to the Extended Thinking toggle on Opus 4.7? Opened Claude this morning and the toggle I use every day is gone. It's now \"Adaptive thinking, thinks only when needed.\" Dug into the docs and on 4.7, adaptive is the only mode. The model decides per-request if it wants to think or not. Where is the way to force it on? What does this mean for a Max user like me who lives on the phone and web (not Claude Code or the API)? On 4.6, Extended Thinking on meant every answer got the deep reasoning. I pay $200/month for Max and I kept it on for my workflows, projects, etc. On 4.7, every request kind of feels like a slot machine. Did the model think about this one? Is my request worthy enough of more thinking? What if I tell it to think harder...ultrathink...mega ultra uber giga think?? I don't know. Pull the lever and just...hope? When it does more thinking with 4.7 it is a nice experience and I love what the team built. Just wondering out loud if there's a way for $200 Max user to force thinking on every request. Happy to pay for it. Anyone else notice this?",
+        "chinese_title": "Claude Opus 4.7取消Extended Thinking手动开关引发付费用户不满",
+        "grade": "A",
+        "extension": "若Anthropic不回应，可能加速高端用户流向OpenAI Codex或Gemini等竞品，也反映出AI产品在可控性与智能化之间的张力。"
       },
       {
         "id": "9303bec34d8dbca534a5213ac63edfc1",
         "title": "Seedance 2.0 技术报告，171 个作者，2...",
         "original_title": "Seedance 2.0 技术报告，171 个作者，24 页。 翻完全文：2 页介绍 + 20 页评测表格 + 2 页参考文献。就没了。这不是 technical report，这是产品宣传册。 在自己...",
-        "summary": "Seedance 2.0 技术报告，171 个作者，24 页。 翻完全文：2 页介绍 + 20 页评测表格 + 2 页参考文献。就没了。这不是 techn...",
+        "summary": "字节Seedance 2.0的24页技术报告因缺乏模型架构、训练数据和技术细节，被批评为产品宣传册，171位作者署名也引发学术规范讨论。",
         "rating": "B",
-        "score": 65,
-        "type": "industry",
+        "score": 81,
+        "type": "research",
         "typeName": "行业动态",
         "expansion": "待进一步分析",
-        "entities": [],
+        "entities": [
+          "ByteDance",
+          "Seedance",
+          "Veo"
+        ],
         "sourceLinks": [
           {
             "name": "x",
@@ -263,7 +624,11 @@
         "published_at": "2026-04-17T07:01:40.891364",
         "source": "x",
         "url": "https://x.com/FeitengLi/status/2044676464092868719",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Seedance 2.0 技术报告，171 个作者，24 页。 翻完全文：2 页介绍 + 20 页评测表格 + 2 页参考文献。就没了。这不是 technical report，这是产品宣传册。 在自己网站发个 model card 得了。 模型架构？没写。训练数据？没写。参数量？没写。技术方案？没写。整篇论文就一句\"unified, highly efficient, and large-scale architecture\"，然后直接跳到\"我们跑分第一\"。 Seedance 2.0 确实强——http://Arena.AI 双榜第一，T2V Elo 1450 领先第二名 Veo 3.1 整整 79 分，I2V 领先 Grok Imagine 29 分。2 月上线后 Tom Cruise vs Brad Pitt 格斗视频全网疯传，直接招来 Disney、Netflix、Warner、Paramount 集体律师函，SAG-AFTRA 公开谴责\"公然侵权\"。 产品牛逼归牛逼，但 171 人挂名一篇不写方法只贴跑分的论文，挂 arxiv 上算啥？内部 benchmark 报告。 https://arxiv.org/abs/2604.14148",
+        "chinese_title": "Seedance 2.0技术报告被批仅2页介绍加20页跑分，171人署名引争议",
+        "grade": "A",
+        "extension": "此事可能加剧业界对顶级AI实验室重跑分轻透明的批评，推动学术界和开源社区对模型可解释性与研究规范的关注。"
       },
       {
         "id": "ae0d75253bf4490ee120e2d6e060682a",
@@ -1956,27 +2321,139 @@
     ],
     "2026-04-16": [
       {
-        "id": "9732d78218ee20d7dfdce217c5ba4714",
-        "title": "Claude Opus 4.7 Model Card",
-        "original_title": "Claude Opus 4.7 Model Card",
-        "summary": "Comments",
-        "rating": "B",
-        "score": 68,
+        "id": "169394a89b3acba5243f336e2776fbab",
+        "title": "马斯克诉OpenAI案即将开庭，OpenAI使命成色面临陪审团检验",
+        "original_title": "Elon Musk's lawsuit against OpenAI heads to trial later this month. Musk is a highly self-interested, complicated person to bring this lawsuit, but th...",
+        "summary": "Elon Musk起诉OpenAI的案件将于本月晚些时候开庭审理，此案将在OpenAI IPO前夕检验其创始使命是否仍然 intact。",
+        "rating": "A",
+        "score": 81,
         "type": "industry",
         "typeName": "行业动态",
-        "expansion": "待进一步分析",
-        "entities": [],
+        "expansion": "案件结果可能影响OpenAI的IPO估值和公众对AI公司使命驱动叙事可信度的看法，也可能波及xAI的竞争策略。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "xAI"
+        ],
         "sourceLinks": [
           {
-            "name": "Hacker News",
-            "url": "https://anthropic.com/claude-opus-4-7-system-card"
+            "name": "x",
+            "url": "https://x.com/ZeffMax/status/2044862310423085326"
           }
         ],
         "sources": 1,
-        "timestamp": 1776380510,
-        "published_at": "2026-04-17T07:01:50.643702",
-        "source": "Hacker News",
-        "url": "https://anthropic.com/claude-opus-4-7-system-card",
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029530",
+        "source": "x",
+        "url": "https://x.com/ZeffMax/status/2044862310423085326",
+        "event_id": null
+      },
+      {
+        "id": "1f950a3ce9189980c3c5e08f5418dbd7",
+        "title": "Anthropic CPO退出Figma董事会，被曝将推竞争设计工具",
+        "original_title": "Anthropic CPO leaves Figma’s board after reports he will offer a competing product https://techcrunch.com/2026/04/16/anthropic-cpo-leaves-figmas-boar...",
+        "summary": "Anthropic首席产品官Mike Krieger已离开Figma董事会，此前有报道称Anthropic计划推出与Figma竞争的设计产品。",
+        "rating": "A",
+        "score": 77,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "此事加剧了SaaS行业对AI巨头将吞噬软件公司的担忧，可能引发设计工具赛道新一轮竞争和投资人重新评估Figma等公司的护城河。",
+        "entities": [
+          "Anthropic",
+          "Figma",
+          "Mike Krieger"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/TechCrunch/status/2044846603329233198"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029563",
+        "source": "x",
+        "url": "https://x.com/TechCrunch/status/2044846603329233198",
+        "event_id": null
+      },
+      {
+        "id": "a0beffbad4898dde407e6b218a87a2a0",
+        "title": "本地Qwen3.6-35B跑分击败Claude Opus 4.7，小模型逆袭再引热议",
+        "original_title": "Shocking result on my pelican benchmark this morning, I got a better pelican from a 21GB local Qwen3.6-35B-A3B running on my laptop than I did from th...",
+        "summary": "开发者Simon Willison在pelican基准测试中发现，本地运行的21GB Qwen3.6-35B-A3B模型绘图表现优于Anthropic最新旗舰Claude Opus 4.7。",
+        "rating": "A",
+        "score": 83,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若更多基准测试证实这一趋势，将强化开源小模型在特定任务上已可媲美闭源旗舰的市场叙事，可能影响企业和开发者对模型采购策略的偏好。",
+        "entities": [
+          "Claude",
+          "Qwen",
+          "Simon Willison"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/simonw/status/2044830134885306701"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029574",
+        "source": "x",
+        "url": "https://x.com/simonw/status/2044830134885306701",
+        "event_id": null
+      },
+      {
+        "id": "afc67ee3a5359a98da32c0b9af5a2bcf",
+        "title": "Nature研究揭示男女脑细胞基因表达差异",
+        "original_title": "Revealed: how male and female brain cells differ in gene activity",
+        "summary": "《自然》发表的一项研究发现，男性和女性脑细胞在基因活性上存在显著差异，这可能解释为何某些脑部疾病的风险因性别而异。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该发现可能推动精准医疗在神经疾病诊断和治疗中的性别差异化研究，影响未来药物开发和临床试验设计。",
+        "entities": [
+          "Nature"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01227-y"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029678",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01227-y",
+        "event_id": null
+      },
+      {
+        "id": "56faeb87b335647ee4fc4d97064135a0",
+        "title": "Nature：衰老可能使女性更易患自身免疫疾病",
+        "original_title": "Ageing could prime women for autoimmune disorders",
+        "summary": "《自然》一项基因表达研究发现，衰老过程可能使女性更容易患上自身免疫疾病，同时男性随年龄增长对某些癌症的脆弱性也在增加。",
+        "rating": "B",
+        "score": 67,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这一发现可能促进针对性别和年龄的个性化医疗策略发展，影响免疫学和肿瘤学的研究方向。",
+        "entities": [
+          "Nature"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01213-4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776382876,
+        "published_at": "2026-04-17T07:41:16.029685",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01213-4",
         "event_id": null
       },
       {
@@ -27857,6 +28334,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-17T07:02:19.554816",
-  "total_news": 1013
+  "last_updated": "2026-04-17T07:41:16.449247",
+  "total_news": 1028
 }
