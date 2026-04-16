@@ -2,6 +2,472 @@
   "news": {
     "2026-04-16": [
       {
+        "id": "2f9cb0c099fd654d46a0e5e604fd3a16",
+        "title": "研究显示青少年对AI聊天机器人成瘾问题已有清醒认知",
+        "original_title": "Teens Alarmed at What AI Is Doing to Their Minds",
+        "summary": "德雷塞尔大学一项针对Reddit帖子的调查发现，使用Character.AI等AI聊天机器人的青少年能够清晰意识到自己对这类产品产生了成瘾行为，并表达了想要戒断却难以自拔的矛盾心理。",
+        "rating": "A",
+        "score": 75,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "青少年AI成瘾问题可能引发家长监管、平台年龄限制政策以及心理健康干预措施的连锁反应。",
+        "entities": [
+          "Character.Ai",
+          "Drexel University",
+          "Matt Namvarpour"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/teens-ai-chatbot-characterai"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684346",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/teens-ai-chatbot-characterai",
+        "event_id": null
+      },
+      {
+        "id": "a59484a397922437ed41e46440423d6f",
+        "title": "Anthropic发布Claude Opus 4.7，编程能力大幅提升但主动削弱网络攻击能力",
+        "original_title": "Anthropic's Claude Opus 4.7 makes a big leap in coding, while deliberately scaling back cyber capabilities",
+        "summary": "Anthropic推出旗舰模型Claude Opus 4.7，在代码生成任务上取得显著进步，同时公司在训练过程中刻意降低了模型的网络安全攻击能力。",
+        "rating": "S",
+        "score": 94,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "模型安全能力与性能之间的权衡可能成为AI行业的新常态，影响企业级代码助手的采购决策。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/anthropics-claude-opus-4-7-makes-a-big-leap-in-coding-while-deliberately-scaling-back-cyber-capabilities/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684371",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/anthropics-claude-opus-4-7-makes-a-big-leap-in-coding-while-deliberately-scaling-back-cyber-capabilities/",
+        "event_id": null
+      },
+      {
+        "id": "b5f5fa5b69596f200f734b4805af3f57",
+        "title": "Anthropic称Claude Opus 4.7采用新分词器提升文本处理质量",
+        "original_title": "Anthropic says Opus 4.7 uses \"an updated tokenizer that improves how the model processes text\", but \"the tradeoff is that the same input can map to more tokens\" (Zac Hall/9to5Mac)",
+        "summary": "Anthropic表示Claude Opus 4.7使用了更新的分词器以改进文本处理方式，但代价是相同输入可能对应更多的token数量。",
+        "rating": "A",
+        "score": 76,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "分词器变化可能影响API调用成本和上下文窗口的实际可用长度，值得开发者关注。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260416/p31#a260416p31"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684392",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260416/p31#a260416p31",
+        "event_id": null
+      },
+      {
+        "id": "3f09e747bf66b5fc89009fb4229da861",
+        "title": "苹果派遣Siri工程师参加AI编程工具训练营",
+        "original_title": "Apple sends Siri developers to AI coding bootcamp",
+        "summary": "据The Information报道，苹果正安排不到200名Siri相关工程师参加为期数周的培训，学习使用Anthropic Claude Code和OpenAI Codex等AI编程工具。",
+        "rating": "A+",
+        "score": 88,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "苹果加速AI编程工具内部普及，可能预示Siri团队正在经历大规模技术栈和开发流程转型。",
+        "entities": [
+          "Anthropic",
+          "Apple",
+          "OpenAI",
+          "Siri"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER (apple)",
+            "url": "https://the-decoder.com/apple-sends-siri-developers-to-ai-coding-bootcamp/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684406",
+        "source": "THE DECODER (apple)",
+        "url": "https://the-decoder.com/apple-sends-siri-developers-to-ai-coding-bootcamp/",
+        "event_id": null
+      },
+      {
+        "id": "7c7415d11ac4f62493b30abf853bdb34",
+        "title": "OpenAI加速ChatGPT广告布局，但广告主苦于基础工具匮乏",
+        "original_title": "OpenAI wants to sell more ads in ChatGPT, but advertisers are struggling with basic tools",
+        "summary": "OpenAI正在扩大ChatGPT内的广告业务并推出新定价模式，但早期广告主普遍反映缺乏追踪工具和精准定向选项。",
+        "rating": "A",
+        "score": 84,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "广告基础设施的短板可能制约ChatGPT商业化进程，并促使OpenAI与广告技术公司建立合作。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/openai-wants-to-sell-more-ads-in-chatgpt-but-advertisers-are-struggling-with-basic-tools/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684417",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/openai-wants-to-sell-more-ads-in-chatgpt-but-advertisers-are-struggling-with-basic-tools/",
+        "event_id": null
+      },
+      {
+        "id": "98d481edf589c61ac665e9aa14218534",
+        "title": "Canva发布Canva AI 2.0，可用对话生成可编辑分层设计稿",
+        "original_title": "Canva unveils Canva AI 2.0, which can generate editable layered designs from conversational prompts using Canva's foundation model built specifically for design (Olivia Poh/Bloomberg)",
+        "summary": "澳大利亚设计平台Canva推出Canva AI 2.0，基于专为设计场景打造的基础模型，能够根据自然语言对话提示生成分层可编辑的设计作品。",
+        "rating": "A",
+        "score": 84,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "设计领域专用基础模型的出现可能对Adobe等传统设计软件构成直接竞争压力。",
+        "entities": [
+          "Canva"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260416/p30#a260416p30"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684429",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260416/p30#a260416p30",
+        "event_id": null
+      },
+      {
+        "id": "12728ab531873ecd82f010059e2c1359",
+        "title": "Laravel融资后开始在AI Agent中直接植入广告",
+        "original_title": "Laravel raised money and now injects ads directly into your agent",
+        "summary": "PHP开发框架Laravel在获得融资后，探索将广告直接嵌入AI Agent交互流程中的商业模式，引发开发者社区讨论。",
+        "rating": "B",
+        "score": 66,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "Agent内广告模式若普及，可能重塑AI应用的商业变现路径，但也引发用户体验与隐私争议。",
+        "entities": [
+          "Laravel"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://techstackups.com/articles/laravel-raised-money-and-now-injects-ads-directly-into-your-agent/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684465",
+        "source": "Hacker News",
+        "url": "https://techstackups.com/articles/laravel-raised-money-and-now-injects-ads-directly-into-your-agent/",
+        "event_id": null
+      },
+      {
+        "id": "055707565c165c8e77ad23828549de1d",
+        "title": "Anthropic承认Claude Opus 4.7综合能力不及Claude Mythos Preview",
+        "original_title": "Anthropic says Opus 4.7 is \"less broadly capable\" than Claude Mythos Preview and that its \"cyber capabilities are not as advanced as those of Mythos Preview\" (Ashley Capoot/CNBC)",
+        "summary": "Anthropic表示Claude Opus 4.7的广泛综合能力不如Claude Mythos Preview，且网络安全能力也逊于后者。",
+        "rating": "A",
+        "score": 77,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Anthropic内部模型矩阵的差异化定位逐渐清晰，不同版本可能面向安全研究和通用场景分别优化。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260416/p29#a260416p29"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684480",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260416/p29#a260416p29",
+        "event_id": null
+      },
+      {
+        "id": "e4406c773f40b618598f48b3aab4768e",
+        "title": "Anthropic发布Claude Opus 4.7并新增xhigh努力级别",
+        "original_title": "Anthropic releases Claude Opus 4.7, saying it is a \"notable improvement\" on Opus 4.6 in advanced software engineering and comes with a new \"xhigh\" effort level (Anthropic)",
+        "summary": "Anthropic正式发布Claude Opus 4.7，称其在高级软件工程任务上相比Opus 4.6有明显提升，并引入了新的xhigh努力级别选项。",
+        "rating": "A",
+        "score": 84,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "xhigh级别的推出可能意味着用户可以在特定任务上调用更多计算资源以换取更高质量的输出。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260416/p28#a260416p28"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684491",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260416/p28#a260416p28",
+        "event_id": null
+      },
+      {
+        "id": "0565f375d093b6b7cb433e7ac0804bc2",
+        "title": "九岁男孩Kai Moskvitch主持量子物理播客获韦比奖提名",
+        "original_title": "Meet the Quantum Kid",
+        "summary": "九岁的Kai Moskvitch与母亲、理论物理学家Katia Moskvitch共同主持The Quantum Kid播客，订阅数突破十万并获得韦比奖提名，Kai曾采访过Peter Shor等量子计算领域知名学者。",
+        "rating": "B",
+        "score": 67,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "儿童科普内容的破圈可能带动更多家庭关注量子计算等前沿科技，并催生青少年科学教育的新形式。",
+        "entities": [
+          "Kai Moskvitch",
+          "Katia Moskvitch",
+          "Peter Shor"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Ars Technica » Scientific Method",
+            "url": "https://arstechnica.com/science/2026/04/meet-the-quantum-kid/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684505",
+        "source": "Ars Technica » Scientific Method",
+        "url": "https://arstechnica.com/science/2026/04/meet-the-quantum-kid/",
+        "event_id": null
+      },
+      {
+        "id": "d3f7d5131aaaff81bd8fe2b4b9c8a879",
+        "title": "Agent-cache发布：面向Valkey和Redis的多层LLM缓存方案",
+        "original_title": "Show HN: Agent-cache – Multi-tier LLM/tool/session caching for Valkey and Redis",
+        "summary": "开发者在Hacker News上展示Agent-cache项目，为基于Valkey和Redis的LLM应用提供多层级缓存能力，涵盖工具调用、会话状态等维度。",
+        "rating": "B",
+        "score": 66,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "LLM缓存基础设施的成熟有望显著降低大模型应用的推理成本和响应延迟。",
+        "entities": [
+          "Agent-Cache",
+          "Redis",
+          "Valkey"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47792122"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684534",
+        "source": "Hacker News",
+        "url": "https://news.ycombinator.com/item?id=47792122",
+        "event_id": null
+      },
+      {
+        "id": "2b782232bd9a32367fdca15c33124ea2",
+        "title": "中国半导体设备厂商2025年营收创新高",
+        "original_title": "Chinese fabs import record volumes of US chipmaking equipment via Singapore and Malaysia — homegrown tool makers booked record 2025 revenues as price competition squeezes margins",
+        "summary": "北方华创、中微公司、盛美上海和拓荆科技等中国半导体设备企业在2025年创下营收纪录，同时中国晶圆厂通过新加坡和马来西亚大量进口美国芯片制造设备。",
+        "rating": "A",
+        "score": 76,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "国产设备业绩增长与海外设备进口并行，反映中国半导体产业在供应链自主与外部采购之间的双重策略。",
+        "entities": [
+          "Acm Research",
+          "Amec",
+          "Naura",
+          "Piotech"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/chinese-chip-tool-makers-booked-record-2025-revenues"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684545",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/chinese-chip-tool-makers-booked-record-2025-revenues",
+        "event_id": null
+      },
+      {
+        "id": "77a29a792f2c7de79804fc571ff17bbb",
+        "title": "字节跳动Seedance 2.0向百余国家开放，美国不在列",
+        "original_title": "Bytedance rolls out Seedance 2.0 to 100+ countries but keeps the US off the list",
+        "summary": "字节跳动将其AI视频生成模型Seedance 2.0推广至100多个国家，但美国被排除在外，原因可能是与好莱坞片厂的版权纠纷仍在持续。",
+        "rating": "A",
+        "score": 79,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "版权争议成为AI视频模型全球化扩张的主要障碍，可能促使其他地区加快本土替代方案的研发。",
+        "entities": [
+          "ByteDance",
+          "Seedance"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/bytedance-rolls-out-seedance-2-0-to-100-countries-but-keeps-the-us-off-the-list/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684566",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/bytedance-rolls-out-seedance-2-0-to-100-countries-but-keeps-the-us-off-the-list/",
+        "event_id": null
+      },
+      {
+        "id": "3a44302f5f575729b80fd493842e6b62",
+        "title": "xAI将向Cursor出租算力用于训练AI编程模型",
+        "original_title": "xAI to Rent Computing Power to Cursor",
+        "summary": "据Business Insider报道，马斯克旗下xAI将向AI编程助手Cursor出租数据中心算力，Cursor计划使用数万块xAI芯片训练其最新AI编程模型。",
+        "rating": "A",
+        "score": 85,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "AI初创公司通过租赁而非自建数据中心获取算力，可能成为中小模型厂商降低资本开支的新趋势。",
+        "entities": [
+          "Cursor",
+          "SpaceX",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/xai-rent-computing-power-cursor"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684576",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/xai-rent-computing-power-cursor",
+        "event_id": null
+      },
+      {
+        "id": "03e3455a64f5258d2c438128a261b58e",
+        "title": "Cloudflare邮件服务进入公测，面向AI Agent场景优化",
+        "original_title": "Cloudflare Email Service: now in public beta. Ready for your agents",
+        "summary": "Cloudflare宣布其邮件服务进入公开测试阶段，强调该产品为AI Agent收发邮件等自动化场景进行了专门设计。",
+        "rating": "A",
+        "score": 75,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "面向Agent的邮件基础设施可能降低AI自动化工作流的构建门槛，推动企业级Agent应用的普及。",
+        "entities": [
+          "Cloudflare"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://blog.cloudflare.com/email-for-agents/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684608",
+        "source": "Hacker News",
+        "url": "https://blog.cloudflare.com/email-for-agents/",
+        "event_id": null
+      },
+      {
+        "id": "653b018466bc8a6afe9c7b6d438c0e44",
+        "title": "Ronan Farrow深度调查：Sam Altman与真相的暧昧关系",
+        "original_title": "Ronan Farrow on Sam Altman&rsquo;s &lsquo;unconstrained&rsquo;  relationship with the truth",
+        "summary": "调查记者Ronan Farrow在Decoder播客中讨论其为《纽约客》撰写的Sam Altman长篇调查报道，揭示了OpenAI内部对Altman诚信问题的广泛担忧，以及2023年董事会解雇事件背后更多未被公开的细节。",
+        "rating": "S",
+        "score": 100,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "报道可能加剧OpenAI IPO前投资者对其领导层稳定性的担忧，并推动外界对AI行业监管和透明度的呼声。",
+        "entities": [
+          "OpenAI",
+          "Ronan Farrow",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts (Murati)",
+            "url": "https://www.theverge.com/podcast/911753/sam-altman-openai-ronan-farrow-new-yorker-feature-trust-liar-ai-industry"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684620",
+        "source": "The Verge -  Tech Posts (Murati)",
+        "url": "https://www.theverge.com/podcast/911753/sam-altman-openai-ronan-farrow-new-yorker-feature-trust-liar-ai-industry",
+        "event_id": null
+      },
+      {
+        "id": "c6a2ffdf96ca58a7b6130ea515ca57eb",
+        "title": "谷歌Gemini Robotics-ER-1.6让机器人多摄像头理解能力小幅提升",
+        "original_title": "Google’s New Model Makes Robotic Brains Slightly Smarter",
+        "summary": "Google DeepMind发布Gemini Robotics-ER-1.6视觉语言模型，Boston Dynamics的机器狗在演示中用该模型读取温度计，但基准测试显示其单摄像头任务完成能力仅略有进步，多摄像头场景则有更明显改进。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "多模态模型在工业机器人和仓储自动化中的渐进式进步，可能加速制造业对具身智能的落地采用。",
+        "entities": [
+          "Boston Dynamics",
+          "Gemini",
+          "Google"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information (boston dynamics)",
+            "url": "https://www.theinformation.com/articles/googles-new-model-makes-robotic-brains-slightly-smarter"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776355412,
+        "published_at": "2026-04-17T00:03:32.684631",
+        "source": "The Information (boston dynamics)",
+        "url": "https://www.theinformation.com/articles/googles-new-model-makes-robotic-brains-slightly-smarter",
+        "event_id": null
+      },
+      {
         "id": "c6254c1c916668e77aa09873fe6c86f7",
         "title": "阿里通义千问开源Qwen3.6-35B-A3B稀疏MoE模型",
         "original_title": "RT Qwen: ⚡ Meet Qwen3.6-35B-A3B：Now Open-Source！🚀🚀 A sparse MoE model, 35B total params, 3B active. Apache 2.0 license. 🔥 Agentic coding o...",
@@ -33015,39 +33481,9 @@
         "source": "The Verge -  Tech Posts (sora)",
         "url": "https://www.theverge.com/podcast/909042/ai-monetization-cliff-anthropic-openai-profitable-ai-existential-moment",
         "event_id": null
-      },
-      {
-        "id": "ed6ecd26f405c7bc55c4948838866932",
-        "title": "DeepMind CEO反思：若由他决定，AI本该先攻克癌症而非ChatGPT",
-        "original_title": "The CEO of Google DeepMind just admitted that if the decision had been his, we would've cured cancer before anyone ever used ChatGPT. And that's not e...",
-        "summary": "Google DeepMind CEO Demis Hassabis在最新采访中坦言，商业AI竞赛让行业偏离了科学突破的轨道。他原本希望AI能像CERN一样稳步发展，先解决癌症、能源等根本性问题，而非急于推出聊天机器人。",
-        "rating": "S",
-        "score": 97,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "此观点可能引发对AI发展路径的广泛讨论，影响政策制定者和投资者对AGI时间表的预期，也可能促使更多资源流向AI安全研究。",
-        "entities": [
-          "Alphafold",
-          "Cern",
-          "DeepMind",
-          "Demis Hassabis",
-          "GPT"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Ric_RTP/status/2042230439788638487"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775750540,
-        "published_at": "2026-04-10T00:02:20.174748",
-        "source": "x",
-        "url": "https://x.com/Ric_RTP/status/2042230439788638487",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-16T23:29:22.396333",
-  "total_news": 1193
+  "last_updated": "2026-04-17T00:04:20.989865",
+  "total_news": 1209
 }
