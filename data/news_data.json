@@ -2,6 +2,591 @@
   "news": {
     "2026-04-16": [
       {
+        "id": "566f1b84a43ef98b866867f25691c34b",
+        "title": "Claude Opus 4.7疑似在Google Cloud提前泄露",
+        "original_title": "Claude Opus 4.7 leaking on Google Cloud it's time",
+        "summary": "有网友爆料称Anthropic下一代大模型Claude Opus 4.7已在Google Cloud平台出现泄露迹象，引发外界对其即将发布的猜测。",
+        "rating": "S",
+        "score": 94,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "若泄露属实，Anthropic可能被迫提前官宣或调整发布节奏；同时也将加剧与OpenAI、Google Gemini在顶级推理模型上的竞争。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Google Cloud"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/scaling01/status/2044756245286920513"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754013",
+        "source": "x",
+        "url": "https://x.com/scaling01/status/2044756245286920513",
+        "event_id": null
+      },
+      {
+        "id": "5821f9e2a13106b2ba6c6e5a7389ec88",
+        "title": "前DeepSeek研究员郭达雅加盟字节跳动，任产品负责人年薪近亿",
+        "original_title": "31 岁，大厂 L8，近亿元年薪，部门产品负责人之一。 这不是爽剧，这是刚加入字节跳动，前 DeepSeek 95 后研究员郭达雅。",
+        "summary": "31岁的前DeepSeek核心研究员郭达雅已加入字节跳动，担任部门产品负责人之一，职级为L8，年薪接近亿元人民币。",
+        "rating": "S",
+        "score": 96,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "顶级AI人才从大模型创业公司流向互联网大厂，可能引发新一轮人才争夺战；字节跳动在大模型产品化上的布局也值得持续关注。",
+        "entities": [
+          "ByteDance",
+          "DeepSeek",
+          "郭达雅"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/_FORAB/status/2044749295791018166"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754036",
+        "source": "x",
+        "url": "https://x.com/_FORAB/status/2044749295791018166",
+        "event_id": null
+      },
+      {
+        "id": "b6bc7b537e49e517ea952e5393d2ef81",
+        "title": "GPT Plus土耳其区代充漏洞被公开，一张收据可反复开通多个账号",
+        "original_title": "外面那些收费几千教人“GPT 代充技术”的，教的就是这几步，GPT Plus 土耳其漏洞全公开技术贴(本文仅供技术交流。任何实际操作产生的账号封禁、法律风险，自行承...",
+        "summary": "有技术博主详细披露了利用土耳其区Apple ID购买ChatGPT Plus的漏洞：通过拦截iOS内购收据并调用OpenAI接口补单，一张低价收据可给任意账号重复开通Plus会员。",
+        "rating": "A",
+        "score": 78,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该漏洞的公开可能导致大量代充灰色产业泛滥，OpenAI若不及时修复，将面临订阅收入损失和账号风控体系信誉受损的双重压力。",
+        "entities": [
+          "Apple Id",
+          "GPT",
+          "Gpt Plus",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/xkajon/status/2044720426392363505"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754062",
+        "source": "x",
+        "url": "https://x.com/xkajon/status/2044720426392363505",
+        "event_id": null
+      },
+      {
+        "id": "7a0893a83e1f08d71d8b20dc89c80644",
+        "title": "开发者称填写Claude开源调研问卷后账号遭封禁",
+        "original_title": "Been using Claude Code for quite a while. This morning I even got a “Claude for Open Source check-in” survey — happily filled it out. A few hours l...",
+        "summary": "一位长期使用者表示，自己在上午填写了Anthropic关于Claude for Open Source的调研问卷后，数小时后账号被平台封禁。",
+        "rating": "B",
+        "score": 74,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "若封禁与问卷行为存在关联，将损害Anthropic与开发者社区之间的信任；也可能促使更多用户关注AI平台账号安全与申诉机制的透明度。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/KyleSwifter/status/2044716604676771896"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754071",
+        "source": "x",
+        "url": "https://x.com/KyleSwifter/status/2044716604676771896",
+        "event_id": null
+      },
+      {
+        "id": "dbf718defd5575500b091540cd30263d",
+        "title": "NVIDIA发布Lyra 2.0，可一键生成大规模可探索3D世界",
+        "original_title": "Holy crap, NVIDIA just made it drastically easier to create large scale explorable 3d worlds. No manual stitching of smaller 3d generations like other...",
+        "summary": "NVIDIA推出Lyra 2.0，能够直接生成大规模可探索的3D场景，无需像其他3D模型那样手动拼接多个小块生成结果。",
+        "rating": "A",
+        "score": 85,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "该技术有望降低开放世界游戏、元宇宙和虚拟仿真场景的制作成本，可能加速游戏与影视工业在3D内容生产上的AI化转型。",
+        "entities": [
+          "Lyra",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/bilawalsidhu/status/2044681790195912972"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754089",
+        "source": "x",
+        "url": "https://x.com/bilawalsidhu/status/2044681790195912972",
+        "event_id": null
+      },
+      {
+        "id": "356e07823ad802a07b29a37c470e5ebc",
+        "title": "清华博士生刘松铭创立LiberAI，专注通用人形家庭机器人",
+        "original_title": "LiberAI is founded by Tsinghua 3rd year PhD Student Liu Songming (刘松铭) Advised by Zhu Jun (朱军) in Tsinghua Statistical AI & Learning (TSAIL) 2022...",
+        "summary": "清华大学统计AI与学习实验室三年级博士生刘松铭创立LiberAI，公司致力于将通用智能与物理世界结合，研发面向日常生活的家庭机器人。",
+        "rating": "A",
+        "score": 83,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "清华系创业团队进入具身智能赛道，可能带动国内高校在人形机器人领域的产学研转化加速，并与智元、傅利叶等厂商形成竞争格局。",
+        "entities": [
+          "Liberai",
+          "Tsail",
+          "刘松铭",
+          "清华大学"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/CRC_8341/status/2044628098545799427"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754107",
+        "source": "x",
+        "url": "https://x.com/CRC_8341/status/2044628098545799427",
+        "event_id": null
+      },
+      {
+        "id": "0ac1a502cd985ac63f263860bc22e780",
+        "title": "Anthropic IPO估值8500亿美元超越三星，营收规模却远不及后者",
+        "original_title": "Anthropic IPO valuation: $850B Samsung valuation: $800B Anthropic revenue: $30b. Samsung revenue: $230b.",
+        "summary": "一则对比数据显示，Anthropic最新IPO估值达8500亿美元，已超过三星的8000亿美元市值，但其年收入仅约30亿美元，远低于三星的2300亿美元。",
+        "rating": "A",
+        "score": 83,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "这一估值反差可能引发市场对AI独角兽泡沫的讨论，同时也反映出资本市场对生成式AI未来增长空间的高度乐观预期。",
+        "entities": [
+          "Anthropic",
+          "三星"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/shiri_shh/status/2044626843177976294"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754117",
+        "source": "x",
+        "url": "https://x.com/shiri_shh/status/2044626843177976294",
+        "event_id": null
+      },
+      {
+        "id": "3c63c7604bc50aa98aab0ba0fbf4a0f0",
+        "title": "消息称Anthropic预训练团队正与Jane Street频繁接触",
+        "original_title": "anybody know why a bunch of people from anthropic's pre-training team are meeting with jane st regularly? DMs open",
+        "summary": "有消息透露，Anthropic负责预训练的核心团队成员近期与量化交易巨头Jane Street保持定期会面，具体合作内容尚不明确。",
+        "rating": "A",
+        "score": 76,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "若双方达成深度合作，可能意味着顶级AI模型的训练资源正与金融量化领域进一步结合，也可能引发关于AI技术流向高风险金融场景的争议。",
+        "entities": [
+          "Anthropic",
+          "Jane Street"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/HFTBread/status/2044623902135976259"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754126",
+        "source": "x",
+        "url": "https://x.com/HFTBread/status/2044623902135976259",
+        "event_id": null
+      },
+      {
+        "id": "84fe80c895da3076fdb9bc3166bb33aa",
+        "title": "OpenAI被曝已购买FrontierMath验证器访问权限",
+        "original_title": "🤦‍♀️",
+        "summary": "据Epoch AI透露，OpenAI已购买FrontierMath开放问题验证器的访问权限，使其模型在生成解题思路后能够自动验证答案正确性。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "此举可能帮助OpenAI加速提升其模型在数学推理和科学研究任务上的能力，同时也显示出前沿AI实验室对高难度基准测试资源的激烈争夺。",
+        "entities": [
+          "Epoch Ai",
+          "Frontiermath",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/CarinaLHong/status/2044610690707775864"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754135",
+        "source": "x",
+        "url": "https://x.com/CarinaLHong/status/2044610690707775864",
+        "event_id": null
+      },
+      {
+        "id": "f2022e268dd3b766d327b0083303f675",
+        "title": "苹果高通Nuvia传奇工程师联手创立Nuvacore，主攻AI高性能CPU",
+        "original_title": "Legendary Qualcomm, Apple, and Nuvia alumni form new CPU startup &mdash; Nuvacore promises to 'rewrite the rules of silicon'",
+        "summary": "前苹果、高通及Nuvia的CPU设计核心人物Gerard Williams、John Bruno和Ram Srinivasan联合创立Nuvacore，致力于从零开发面向AI高负载计算的全新CPU架构。",
+        "rating": "A",
+        "score": 81,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "Nuvacore的成立可能打破当前AI芯片市场由英伟达GPU主导的单一格局，为数据中心和边缘AI提供新的CPU算力选择。",
+        "entities": [
+          "Apple",
+          "Gerard Williams",
+          "Nuvacore",
+          "Nuvia",
+          "Qualcomm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware (apple)",
+            "url": "https://www.tomshardware.com/pc-components/cpus/legendary-qualcomm-apple-and-nuvia-alumni-form-new-cpu-startup-nuvacore-promises-to-rewrite-the-rules-of-silicon"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754153",
+        "source": "Tom's Hardware (apple)",
+        "url": "https://www.tomshardware.com/pc-components/cpus/legendary-qualcomm-apple-and-nuvia-alumni-form-new-cpu-startup-nuvacore-promises-to-rewrite-the-rules-of-silicon",
+        "event_id": null
+      },
+      {
+        "id": "d21db0836121bf4ad170c0bf891cad86",
+        "title": "NIST收窄国家漏洞数据库优先级，仅聚焦CISA已知被利用漏洞",
+        "original_title": "The NIST narrows its National Vulnerability Database priorities to CVEs in CISA's known exploited catalog, to deal with a backlog after its 2024 funding lapse (Matt Kapko/CyberScoop)",
+        "summary": "由于2024年资金中断导致大量积压，美国国家标准与技术研究院决定将其国家漏洞数据库的分析范围收窄，优先处理CISA已知被利用漏洞目录中的条目。",
+        "rating": "B",
+        "score": 66,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这一调整意味着大量普通CVE可能得不到及时分析，企业和安全厂商需要自行承担更多漏洞风险评估工作，全球网络安全情报生态可能受到影响。",
+        "entities": [
+          "Cisa",
+          "Nist",
+          "国家漏洞数据库"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260416/p21#a260416p21"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754170",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260416/p21#a260416p21",
+        "event_id": null
+      },
+      {
+        "id": "9d598abb1410d9ff1349f40bcf32d7a4",
+        "title": "开发者Firebase密钥未设限，13小时内调用Gemini API账单暴涨5.4万欧元",
+        "original_title": "€54k spike in 13h from unrestricted Firebase browser key accessing Gemini APIs",
+        "summary": "一位开发者在Google AI开发者论坛发帖称，其Firebase浏览器API密钥因未设置访问限制，被恶意利用在13小时内产生了高达5.4万欧元的Gemini API调用费用。",
+        "rating": "B",
+        "score": 72,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该案例再次暴露前端密钥泄露和API配额管理的风险，可能促使Google加强默认安全策略，并推动开发者社区更加重视API密钥的权限配置。",
+        "entities": [
+          "Firebase",
+          "Gemini",
+          "Google"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (Gemini)",
+            "url": "https://discuss.ai.google.dev/t/unexpected-54k-billing-spike-in-13-hours-firebase-browser-key-without-api-restrictions-used-for-gemini-requests/140262"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754180",
+        "source": "Hacker News (Gemini)",
+        "url": "https://discuss.ai.google.dev/t/unexpected-54k-billing-spike-in-13-hours-firebase-browser-key-without-api-restrictions-used-for-gemini-requests/140262",
+        "event_id": null
+      },
+      {
+        "id": "7f7714e30a94b1bb29ad6f0a63e582b5",
+        "title": "物理AI仿真初创公司Antioch获850万美元种子轮融资",
+        "original_title": "This simulation startup wants to be the Cursor for physical AI",
+        "summary": "仿真工具初创公司Antioch完成850万美元种子轮融资，其目标是成为物理AI和机器人开发领域的Cursor，为新一代机器人开发者提供仿真基础设施。",
+        "rating": "A",
+        "score": 77,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "若Antioch的产品路线成功，可能大幅降低机器人算法开发和测试的门槛，加速具身智能从实验室走向产业应用的进程。",
+        "entities": [
+          "Antioch"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/16/this-simulation-startup-wants-to-be-the-cursor-for-physical-ai/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754188",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/16/this-simulation-startup-wants-to-be-the-cursor-for-physical-ai/",
+        "event_id": null
+      },
+      {
+        "id": "b68b0f47d5a3c4249bd4f55dbfe87849",
+        "title": "中美月球南极竞赛开启，贝佐斯与中国谁先登陆沙克尔顿陨石坑",
+        "original_title": "The race to Shackleton Crater is on—will Jeff Bezos or China get there first?",
+        "summary": "今年晚些时候，Blue Origin的Endurance着陆器和中国嫦娥七号任务将相继发射，展开人类历史上最雄心勃勃的月球南极探测竞赛，目标直指富含水冰的沙克尔顿陨石坑。",
+        "rating": "A",
+        "score": 83,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "月球水冰资源的探测结果将直接影响未来月球基地建设和深空探索的能源供给方案，也可能重塑大国在太空资源开发领域的话语权格局。",
+        "entities": [
+          "Blue Origin",
+          "Jeff Bezos",
+          "Nasa",
+          "中国航天",
+          "嫦娥七号"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Space – Ars Technica",
+            "url": "https://arstechnica.com/space/2026/04/the-race-to-shackleton-crater-is-on-will-jeff-bezos-or-china-get-there-first/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754196",
+        "source": "Space – Ars Technica",
+        "url": "https://arstechnica.com/space/2026/04/the-race-to-shackleton-crater-is-on-will-jeff-bezos-or-china-get-there-first/",
+        "event_id": null
+      },
+      {
+        "id": "0a56c0f79dec9d2867ba8a45ef991b03",
+        "title": "前沿多模态模型能否仅凭图像鉴定艺术品价值，实验发现存在识别与承诺落差",
+        "original_title": "Can frontier AI models actually read a painting? [R]",
+        "summary": "一项针对四款前沿多模态模型的实验显示，它们有时能仅凭画作像素识别出作者或作品，却未必敢据此给出估值，Gemini 3.1 Pro表现最强，GPT-5.4则在加入元数据后提升明显。",
+        "rating": "A+",
+        "score": 87,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究揭示了多模态大模型视觉理解与决策依赖之间的深层差异，可能推动学界设计更严格的视觉 grounding 测试基准。",
+        "entities": [
+          "Gemini",
+          "Google",
+          "Gpt-5.4",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sn06cv/can_frontier_ai_models_actually_read_a_painting_r/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754205",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sn06cv/can_frontier_ai_models_actually_read_a_painting_r/",
+        "event_id": null
+      },
+      {
+        "id": "9fcc6733ef4392e150f8478f4d2ff5f9",
+        "title": "英国截瘫运动员Claire Lomas拍摄Apple Vision Pro纪录片时坠机遇难",
+        "original_title": "Sources: UK paraplegic athlete Claire Lomas was being filmed for Apple Vision Pro series Adventure when she crashed a microlight in Jordan and died in July 2024 (Mark Gurman/Bloomberg)",
+        "summary": "据彭博社报道，英国截瘫运动员Claire Lomas在2024年7月为Apple Vision Pro系列纪录片Adventure拍摄期间，于约旦驾驶微型飞机时坠毁身亡。",
+        "rating": "B",
+        "score": 68,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "该事件可能引发公众对科技巨头内容制作过程中安全保障措施的审视，也可能影响Apple Vision Pro系列纪录片的后续发布策略。",
+        "entities": [
+          "Apple",
+          "Apple Vision Pro",
+          "Claire Lomas"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "http://www.techmeme.com/260416/p18#a260416p18"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754215",
+        "source": "Techmeme (apple)",
+        "url": "http://www.techmeme.com/260416/p18#a260416p18",
+        "event_id": null
+      },
+      {
+        "id": "b58d22cd4d93d2eac18df3096833d4e3",
+        "title": "Allbirds出售鞋服主业转型AI数据中心，股价单日暴涨580%",
+        "original_title": "Struggling shoemaker and apparel brand Albird pivots to AI data centers, stock jumps 580% in a single day — sells core business and leveraging $50 million in financing to become a GPU-as-a-Service and AI cloud solutions provider",
+        "summary": "陷入困境的鞋服品牌Allbirds宣布出售核心业务，并获得5000万美元机构投资，全面转型为GPU即服务和AI云解决方案提供商，股价单日飙升580%。",
+        "rating": "A",
+        "score": 84,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "这一极端转型案例反映了资本市场对AI算力概念的狂热追捧，同时也引发对其长期运营能力和行业泡沫的质疑。",
+        "entities": [
+          "Allbirds"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/struggling-shoemaker-and-apparel-brand-albird-pivots-to-ai-data-centers-stock-jumps-580-percent-in-a-single-day-sells-core-business-and-leveraging-usd50-million-in-financing-to-become-a-gpu-as-a-service-and-ai-cloud-solutions-provider"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754224",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/struggling-shoemaker-and-apparel-brand-albird-pivots-to-ai-data-centers-stock-jumps-580-percent-in-a-single-day-sells-core-business-and-leveraging-usd50-million-in-financing-to-become-a-gpu-as-a-service-and-ai-cloud-solutions-provider",
+        "event_id": null
+      },
+      {
+        "id": "7cdfc3d654974d9dc548dbeb49dd89a7",
+        "title": "台积电CEO确认AI需求依然强劲，上调全年营收增长预期至超30%",
+        "original_title": "TSMC CEO C.C. Wei says TSMC checked with customers about AI demand and was reassured that it was still strong amid the Iran war, as it raises revenue forecasts (Wall Street Journal)",
+        "summary": "台积电首席执行官魏哲家表示，经与客户确认，尽管中东局势紧张，AI芯片需求依旧强劲，公司上调全年营收增长预期至超过30%。",
+        "rating": "A",
+        "score": 80,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "台积电的乐观指引为整个AI硬件产业链注入信心，也可能缓解市场对地缘政治冲突冲击半导体供应链的担忧。",
+        "entities": [
+          "TSMC",
+          "魏哲家"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260416/p16#a260416p16"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754232",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260416/p16#a260416p16",
+        "event_id": null
+      },
+      {
+        "id": "aef8b3827c3ffc88970f436f91bf1d92",
+        "title": "阿里Token Hub发布世界模型Happy Oyster，可生成3D环境与游戏视频",
+        "original_title": "Alibaba's new Token Hub unit releases Happy Oyster, a new AI world model that can create 3D environments, interactive videos, films, video content, and games (Luz Ding/Bloomberg)",
+        "summary": "阿里巴巴新成立的Token Hub部门发布AI世界模型Happy Oyster，能够创建3D环境、交互式视频、电影内容和游戏场景。",
+        "rating": "A",
+        "score": 84,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "阿里在游戏和视频生成领域的布局进一步加深，Happy Oyster的发布可能加剧国内与OpenAI Sora、Google Veo在世界模型赛道上的竞争。",
+        "entities": [
+          "Alibaba",
+          "Happy Oyster",
+          "Token Hub"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260416/p15#a260416p15"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754241",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260416/p15#a260416p15",
+        "event_id": null
+      },
+      {
+        "id": "3707e38f20f66e804b7e2f62ced7be85",
+        "title": "本科生研究发现PPO多时间尺度优势动态路由会导致策略崩溃，提出解耦修复方案",
+        "original_title": "Why dynamically routing multi-timescale advantages in PPO causes policy collapse (and a simple decoupled fix) [R]",
+        "summary": "一名本科生研究者发现，在Actor-Critic架构中动态融合多时间尺度优势会导致策略崩溃，根源在于代理目标被路由机制劫持，提出的解耦方案在LunarLander上取得稳定突破200分的表现。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究为强化学习中多时间尺度信用分配问题提供了新的分析视角，解耦思路可能被应用于更复杂的长程决策任务和机器人控制领域。",
+        "entities": [
+          "Actor-Critic",
+          "Lunarlander",
+          "Ppo",
+          "Pytorch"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1smr52p/why_dynamically_routing_multitimescale_advantages/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754249",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1smr52p/why_dynamically_routing_multitimescale_advantages/",
+        "event_id": null
+      },
+      {
+        "id": "f65d5d19e1add74498914b58b1608354",
+        "title": "研究者称今年核查的7篇论文中4篇结果无法复现",
+        "original_title": "Failure to Reproduce Modern Paper Claims [D]",
+        "summary": "一位研究者在Reddit上分享了自己对近期论文的复现经历，今年检查的7项可验证声明中有4项无法复现，其中2篇在GitHub上仍有未解决的issue。",
+        "rating": "B",
+        "score": 71,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该帖再次引发机器学习社区对学术 reproducibility 危机的讨论，可能推动更多会议和期刊强制要求代码开源与实验可复现性审查。",
+        "entities": [
+          "Github"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sml5fo/failure_to_reproduce_modern_paper_claims_d/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754268",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sml5fo/failure_to_reproduce_modern_paper_claims_d/",
+        "event_id": null
+      },
+      {
         "id": "012a4143bda7fe19736b7b0daa05a2d6",
         "title": "苹果计划将Siri团队大批成员送去AI编程训练营进修",
         "original_title": "Sources: Apple plans to send a significant part of its Siri team, known as a laggard, to an AI coding bootcamp; the group is expected to be fewer than 200 (The Information)",
@@ -2405,6 +2990,36 @@
       }
     ],
     "2026-04-15": [
+      {
+        "id": "4bfd358cf1598e4898c14f3c87879718",
+        "title": "五项案例研究表明大模型越狱实为继承人类心理漏洞的社会工程攻击",
+        "original_title": "Jailbreaks as social engineering: 5 case studies suggest LLMs inherit human psychological vulnerabilities from training data [D]",
+        "summary": "一项研究通过对GPT-4、GPT-4o和Claude 3.5 Sonnet的五个社会工程实验，提出大模型越狱并非数学漏洞，而是训练数据中继承的人类心理脆弱性所致。",
+        "rating": "A+",
+        "score": 88,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该研究可能促使AI安全社区从传统的补丁式防御转向更深层次的社会工程抗性训练，同时也为红队测试提供了新的方法论视角。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Gpt-4",
+          "Gpt-4O",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sm70ix/jailbreaks_as_social_engineering_5_case_studies/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776345580,
+        "published_at": "2026-04-16T21:19:40.754292",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sm70ix/jailbreaks_as_social_engineering_5_case_studies/",
+        "event_id": null
+      },
       {
         "id": "8bbe658d97b4ba0cdecc3d23874306a4",
         "title": "阿尔茨海默病淀粉样蛋白假说再遭重创：多篇论文被撤，科学家被控欺诈",
@@ -31212,6 +31827,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-16T18:14:14.312682",
-  "total_news": 1127
+  "last_updated": "2026-04-16T21:31:19.487959",
+  "total_news": 1149
 }
