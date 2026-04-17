@@ -2,6 +2,392 @@
   "news": {
     "2026-04-17": [
       {
+        "id": "a9fd46f9229b5a41aee637a7be5b46fa",
+        "title": "OpenAI被曝三年向Cerebras采购超200亿美元芯片以换取股权",
+        "original_title": "RT Anissa Gardizy: SCOOP: OpenAI agreed to pay Cerebras more than $20 billion to use the firms chips over the next three years—in exchange for equity...",
+        "summary": "据The Information报道，OpenAI与Cerebras达成一项巨额芯片采购协议，未来三年将支付超过200亿美元购买其AI芯片，并可能获得Cerebras约10%的股权认股权证。",
+        "rating": "S",
+        "score": 98,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "此交易若随Cerebras IPO正式披露，将重塑AI算力供应链格局，并可能引发英伟达竞品及云端厂商的连锁反应。",
+        "entities": [
+          "Cerebras",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ZeffMax/status/2044960433967399142"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005122",
+        "source": "x",
+        "url": "https://x.com/ZeffMax/status/2044960433967399142",
+        "event_id": null
+      },
+      {
+        "id": "549470251462779857e729cb5c7ff5cd",
+        "title": "研究人员尝试让Claude自主挖掘Chrome零日漏洞",
+        "original_title": "\"Okay Claude... find Chrome 0days...make no mistakes\"",
+        "summary": "有安全研究者发布推文，尝试让Claude模型执行寻找Chrome浏览器零日漏洞的高难度任务，引发对AI自主安全研究能力的关注。",
+        "rating": "A",
+        "score": 82,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若AI辅助漏洞挖掘成为常态，将加速浏览器安全攻防节奏，并推动自动化安全审计工具的发展。",
+        "entities": [
+          "Chrome",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/0xdef1ant/status/2044946147912114251"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005139",
+        "source": "x",
+        "url": "https://x.com/0xdef1ant/status/2044946147912114251",
+        "event_id": null
+      },
+      {
+        "id": "450ddce22662afbbb023ce686d255693",
+        "title": "DeepSeek R1模型自我介绍时出现身份混淆称由OpenAI开发",
+        "original_title": "> I am **DeepSeek R1**, an AI language model developed by OpenAI. first time seeing this particular response",
+        "summary": "有用户观察到DeepSeek R1在回答中自称是由OpenAI开发的AI语言模型，反映出模型训练数据或对齐过程中可能存在身份认知偏差。",
+        "rating": "B",
+        "score": 72,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此类身份混淆现象可能暴露基础模型训练数据的混杂问题，进而引发对模型溯源和水印机制的进一步讨论。",
+        "entities": [
+          "DeepSeek",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/thesophiaxu/status/2044939380528427386"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005152",
+        "source": "x",
+        "url": "https://x.com/thesophiaxu/status/2044939380528427386",
+        "event_id": null
+      },
+      {
+        "id": "b95ba7123464bd126c03a82bdb65089b",
+        "title": "Ronan Farrow谈其《纽约客》山姆·奥特曼深度报道幕后",
+        "original_title": "Q&A: Ronan Farrow on his Sam Altman profile in The New Yorker, how Altman changed in 18 months of reporting, OpenAI's board drama and enterprise shift, and more (Nilay Patel/The Verge)",
+        "summary": "调查记者Ronan Farrow在The Verge的Decoder播客中分享了他为《纽约客》撰写山姆·奥特曼人物特写的过程，谈及奥特曼在18个月报道期内的变化、OpenAI董事会风波及企业战略转型。",
+        "rating": "A",
+        "score": 85,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这篇深度报道及其后续访谈可能进一步塑造公众对Sam Altman和OpenAI治理结构的认知，并影响外界对AI领袖人物的评价框架。",
+        "entities": [
+          "Nilay Patel",
+          "OpenAI",
+          "Ronan Farrow",
+          "Sam Altman",
+          "The New Yorker",
+          "The Verge"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260416/p60#a260416p60"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005236",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260416/p60#a260416p60",
+        "event_id": null
+      },
+      {
+        "id": "d9eaa01ca7a67140102537d44234c6af",
+        "title": "Claude Opus 4.7在主题泛化基准上表现意外下滑",
+        "original_title": "Claude Opus 4.7 (high) unexpectedly performs significantly worse than Opus 4.6 (high) on the Thematic Generalization Benchmark: 80.6 → 72.8.",
+        "summary": "测试显示Claude Opus 4.7在Thematic Generalization Benchmark上的得分从4.6版本的80.6下降至72.8，非推理版本更是从68.8跌至52.6，暴露出新版本在约束条件理解上的退化。",
+        "rating": "A",
+        "score": 84,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这一反常退化现象可能促使Anthropic重新审视模型更新策略，并在社区引发关于模型版本迭代是否总能带来全面进步的讨论。",
+        "entities": [
+          "Claude",
+          "Opus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1snlp29/claude_opus_47_high_unexpectedly_performs/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005264",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1snlp29/claude_opus_47_high_unexpectedly_performs/",
+        "event_id": null
+      },
+      {
+        "id": "1415b8fbadc079cf90e624a5f23fa333",
+        "title": "开发者运行生产级AI代理后修正对AGI时间线的快速起飞预期",
+        "original_title": "Running a RunLobster (OpenClaw) agent since launch changed how i think about takeoff timelines",
+        "summary": "一位长期关注AGI的开发者分享了几个月来运行Claude Sonnet生产代理的经验，认为当前瓶颈不在于模型智能，而在于集成面和系统对接能力，因此放缓了对快速起飞的预期。",
+        "rating": "A",
+        "score": 83,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这一来自一线实践的反思可能促使AI社区更多关注代理与现有系统的集成问题，并影响创业投资和研发资源的配置方向。",
+        "entities": [
+          "Claude",
+          "Openclaw",
+          "Opus",
+          "Runlobster",
+          "Sonnet"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1snjs88/running_a_runlobster_openclaw_agent_since_launch/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005272",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1snjs88/running_a_runlobster_openclaw_agent_since_launch/",
+        "event_id": null
+      },
+      {
+        "id": "647f67c163513be06fa829d7ae4991c4",
+        "title": "Physical Intelligence展示机器人新演示支持语言指令操控",
+        "original_title": "Impressive robotics demo from Physical Intelligence (pi). Includes generalizing to new tasks and language-based steering of the robot",
+        "summary": "Physical Intelligence发布了一段机器人演示视频，展示了模型在新任务上的泛化能力以及通过自然语言指令对机器人进行实时操控的效果。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "该演示若获得广泛关注，将进一步巩固Physical Intelligence在具身智能领域的领先地位，并可能吸引更多资本和人才进入机器人赛道。",
+        "entities": [
+          "Physical Intelligence",
+          "Pi"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1snhzt3/impressive_robotics_demo_from_physical/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005281",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1snhzt3/impressive_robotics_demo_from_physical/",
+        "event_id": null
+      },
+      {
+        "id": "4911e98fef6894ea0f269db426ca6903",
+        "title": "开发者打造Claude Code插件实现代码库自动优化实验",
+        "original_title": "I built a Claude Code plugin that optimizes your codebase through experiments (autoresearch for code)",
+        "summary": "受Karpathy自动研究思路启发，一位开发者构建了Claude Code插件，能够在代码库上自动运行优化实验循环，无需从零搭建评分和编排系统。",
+        "rating": "A",
+        "score": 78,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "此类插件若成熟普及，可能改变开发者优化代码库的工作流程，并推动AI辅助编程工具向自动化迭代方向演进。",
+        "entities": [
+          "Andrej Karpathy",
+          "Claude",
+          "Codex",
+          "Evo-Hq"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1snfnxp/i_built_a_claude_code_plugin_that_optimizes_your/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005289",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1snfnxp/i_built_a_claude_code_plugin_that_optimizes_your/",
+        "event_id": null
+      },
+      {
+        "id": "aa70f62e2da8c24086c4763aada0cb29",
+        "title": "人形机器人完成家庭任务失败率高达88%",
+        "original_title": "Humanoid Robots’ 88% Fail Rate: Completing Home Tasks",
+        "summary": "一项研究显示，当前人形机器人在完成家庭任务时的失败率达到88%，反映出具身智能在复杂真实家庭环境中仍面临巨大挑战。",
+        "rating": "B",
+        "score": 74,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "高失败率可能促使研究人员重新评估家庭场景作为机器人落地优先方向的可行性，并推动更鲁棒的操作策略研究。",
+        "entities": [
+          "Humanoid Robots"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1snf218/humanoid_robots_88_fail_rate_completing_home_tasks/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005296",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1snf218/humanoid_robots_88_fail_rate_completing_home_tasks/",
+        "event_id": null
+      },
+      {
+        "id": "85c4ce5b638a4f39d14481a9fb877c37",
+        "title": "OpenAI Codex被讨论可应用于几乎所有编程场景",
+        "original_title": "OpenAI: Codex for Almost Everything",
+        "summary": "社区热议OpenAI发布的Codex代码代理，讨论其在多种开发任务和编程语言中的广泛应用潜力，认为其可能改变软件开发工作流。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Codex的泛化应用若得到验证，将进一步压缩初级编程岗位需求，并推动企业加速采用AI辅助开发工具。",
+        "entities": [
+          "Codex",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1snegq5/openai_codex_for_almost_everything/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005304",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1snegq5/openai_codex_for_almost_everything/",
+        "event_id": null
+      },
+      {
+        "id": "31bf8add9711838a9826587b2853c4d4",
+        "title": "GPT-Rosalind发布面向生命科学研究的专用模型",
+        "original_title": "Introducing GPT-Rosalind for life sciences research",
+        "summary": "研究团队发布了名为GPT-Rosalind的生命科学专用AI模型，旨在为生物学和医学研究提供定制化的智能辅助工具。",
+        "rating": "B",
+        "score": 71,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "垂直领域专用模型的出现可能加速AI在药物研发和基因组学中的落地，并推动更多学科与AI深度融合。",
+        "entities": [
+          "Gpt-Rosalind"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sne2e7/introducing_gptrosalind_for_life_sciences_research/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005311",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sne2e7/introducing_gptrosalind_for_life_sciences_research/",
+        "event_id": null
+      },
+      {
+        "id": "044cd61551fff6463f8359b14d88576a",
+        "title": "白宫计划向美国联邦机构开放Anthropic Mythos模型访问权限",
+        "original_title": "White House Moves to Give US Agencies Anthropic Mythos Access",
+        "summary": "据报道，白宫正在推动让美国联邦政府机构获得Anthropic Mythos模型的访问权限，标志着AI模型在政府层面的应用进一步扩展。",
+        "rating": "A",
+        "score": 80,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "政府大规模采用Anthropic模型可能强化其在公共部门AI市场的地位，并引发关于数据安全和模型供应商选择的政策讨论。",
+        "entities": [
+          "Anthropic",
+          "Mythos",
+          "White House"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1snbv4m/white_house_moves_to_give_us_agencies_anthropic/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005319",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1snbv4m/white_house_moves_to_give_us_agencies_anthropic/",
+        "event_id": null
+      },
+      {
+        "id": "1dbbebb651a8c6516696d691a9dae869",
+        "title": "Claude Opus 4.7模型正式发布",
+        "original_title": "Claude Opus 4.7",
+        "summary": "Anthropic发布了Claude Opus 4.7新版本模型，社区开始集中讨论其实际表现、能力提升以及与前版本的对比。",
+        "rating": "S",
+        "score": 94,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "作为Anthropic的旗舰模型，Opus 4.7的发布将直接影响高端企业用户和开发者的选型决策，并加剧顶级大模型之间的竞争。",
+        "entities": [
+          "Claude",
+          "Opus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sn8qfp/claude_opus_47/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005328",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sn8qfp/claude_opus_47/",
+        "event_id": null
+      },
+      {
+        "id": "c18dfe5f953492c7cc93852b5b471e5d",
+        "title": "Cerebras计划最快周五启动IPO拟募资超30亿美元估值超350亿",
+        "original_title": "Sources: Cerebras plans to make its IPO public as soon as Friday, aiming to raise $3B+ at a $35B+ valuation, a 60% premium to its $22B February valuation (The Information)",
+        "summary": "据The Information报道，AI芯片初创公司Cerebras计划最快于周五公开IPO招股书，目标募资超过30亿美元，估值超过350亿美元，较今年2月的220亿美元估值溢价约60%。",
+        "rating": "A+",
+        "score": 89,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "Cerebras的高估值IPO若顺利推进，将为AI芯片赛道注入强心剂，并可能带动其他AI基础设施公司的上市窗口期。",
+        "entities": [
+          "Cerebras",
+          "The Information"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260416/p59#a260416p59"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005392",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260416/p59#a260416p59",
+        "event_id": null
+      },
+      {
         "id": "3442be72d1e391bc7ff4e629a526c72d",
         "title": "AI芯片独角兽Cerebras拟IPO，估值目标超350亿美元",
         "original_title": "Cerebras Prepares Public Listing, Eyes $35 Billion-Plus Valuation",
@@ -2723,6 +3109,394 @@
       }
     ],
     "2026-04-16": [
+      {
+        "id": "150e5837b31550e2f89e7c90da92a01f",
+        "title": "FrontierSWE发布超长程编程基准测试考验AI代理极限能力",
+        "original_title": "RT Justus Mattern: Introducing FrontierSWE, an ultra-long horizon coding benchmark. We test agents on some of the hardest technical tasks like optimiz...",
+        "summary": "新基准FrontierSWE针对AI代理在超长时程任务上的表现进行测试，涵盖视频渲染库优化和量子分子性质预测等高技术难度任务，但代理在20小时内成功率仍然很低。",
+        "rating": "A",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该基准可能推动下一代代码代理向更长上下文和更强工程能力演进，并促使模型厂商优化长程推理与工具调用。",
+        "entities": [
+          "Frontierswe"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/scaling01/status/2044917856341504057"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005162",
+        "source": "x",
+        "url": "https://x.com/scaling01/status/2044917856341504057",
+        "event_id": null
+      },
+      {
+        "id": "f607a60aef314dcd95eebe1cbb7d00af",
+        "title": "Physical Intelligence发布可操控通用机器人模型π0.7",
+        "original_title": "RT Lucy Shi: 1/ We just released π0.7 — a steerable generalist robot model with emergent capabilities. I want to share a bit of the backstory, becau...",
+        "summary": "Physical Intelligence团队发布了新一代通用机器人模型π0.7，具备可操控性和涌现能力，展示了机器人学习领域的新进展。",
+        "rating": "A+",
+        "score": 87,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "π0.7的发布可能加速具身智能在工业和家庭场景的应用落地，并引发波士顿动力等竞品的技术跟进。",
+        "entities": [
+          "Physical Intelligence",
+          "Π0"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/chelseabfinn/status/2044972470068035726"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005172",
+        "source": "x",
+        "url": "https://x.com/chelseabfinn/status/2044972470068035726",
+        "event_id": null
+      },
+      {
+        "id": "3eb460619a19d53f768e79671e2923f8",
+        "title": "黄仁勋接受Dwarkesh Patel专访谈及TPU与英伟达护城河",
+        "original_title": "RT Pleometric: No Time? 🏃‍♂️🚫⏰ Here is a tl;dr of the Jensen interview 👇",
+        "summary": "英伟达CEO黄仁勋在Dwarkesh Patel的播客中接受了长时间专访，话题涵盖供应链护城河、TPU竞争、是否进军云服务以及AI芯片对华出口等核心议题。",
+        "rating": "S",
+        "score": 96,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "黄仁勋的表态可能影响市场对英伟达长期竞争地位的预期，并波及美股芯片板块及A股算力产业链情绪。",
+        "entities": [
+          "Dwarkesh Patel",
+          "Jensen Huang",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Miles_Brundage/status/2044857204810141794"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005181",
+        "source": "x",
+        "url": "https://x.com/Miles_Brundage/status/2044857204810141794",
+        "event_id": null
+      },
+      {
+        "id": "ba6b8d8c9b7674493b4f3ac3c3b2c3ce",
+        "title": "谷歌Android团队推出Android CLI助力AI代理开发应用",
+        "original_title": "The Android team did it again. They released Android CLI: A command line tool to let agents build and interact with Android apps. This joins the Andro...",
+        "summary": "谷歌Android团队发布Android CLI命令行工具，使AI代理能够构建和与Android应用交互，进一步推动Android生态进入代理时代。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Android CLI的推出可能降低移动代理开发门槛，吸引更多AI应用开发者入驻Android生态，并对iOS形成差异化竞争压力。",
+        "entities": [
+          "Android",
+          "Android Cli"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/JorgeCastilloPr/status/2044848262931206496"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005190",
+        "source": "x",
+        "url": "https://x.com/JorgeCastilloPr/status/2044848262931206496",
+        "event_id": null
+      },
+      {
+        "id": "a49ca671ef63646691718510b14d4e77",
+        "title": "演示显示某大语言模型操作GUI速度已接近人类水平",
+        "original_title": "RT Ari Weinstein: This is the first time I've ever seen an LLM operate a GUI as fast as a person, and it's surreal.",
+        "summary": "一段演示视频显示，某大语言模型在图形界面上的操作速度首次达到与人类相当的程度，引发业内对AI代理交互能力的广泛讨论。",
+        "rating": "A",
+        "score": 75,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "GUI操作速度的突破意味着AI代理在办公自动化和RPA领域的可用性大幅提升，可能加速企业级代理产品的商业化进程。",
+        "entities": [
+          "Ari Weinstein",
+          "LLM"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/aidan_mclau/status/2044927990019338399"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005206",
+        "source": "x",
+        "url": "https://x.com/aidan_mclau/status/2044927990019338399",
+        "event_id": null
+      },
+      {
+        "id": "e591d4da8e61ab31eeb1f9284ff2654e",
+        "title": "硅谷华人工程师生活图景：leetcode、Cursor与FIRE梦想",
+        "original_title": "硅谷华人的一天：在大华排队买茉莉奶白时，隔壁桌已经开始复盘昨天的 leetcode 题，说最近用 cursor 接 claude、gemini、gpt 轮流对拍，搞了个 llm workflow，准...",
+        "summary": "一篇中文推文描绘了硅谷华人工程师群体的日常状态，从排队买奶茶时刷leetcode、用Cursor搭配Claude和GPT搭建工作流，到讨论升职、股票、买房和45岁退休计划。",
+        "rating": "A",
+        "score": 76,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "该内容折射出硅谷华人工程师在AI工具普及背景下的职业焦虑与生活方式变迁，可能引发关于技术移民职场文化的更广泛社会讨论。",
+        "entities": [
+          "Claude",
+          "Cursor",
+          "GPT",
+          "Gemini",
+          "LLM"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/smiroyama/status/2044746668541927558"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005225",
+        "source": "x",
+        "url": "https://x.com/smiroyama/status/2044746668541927558",
+        "event_id": null
+      },
+      {
+        "id": "9aa60aa505fd1e753cb752779ddfeb04",
+        "title": "Macrocosmos发布ResBM架构实现128倍激活值压缩",
+        "original_title": "ResBM: a new transformer-based architecture for low-bandwidth pipeline-parallel training, achieving 128× activation compression [R]",
+        "summary": "Macrocosmos发布ResBM残差瓶颈模型，通过在流水线边界引入残差编解码瓶颈，在低带宽流水线并行训练场景下实现了128倍的激活值压缩且收敛损失极小。",
+        "rating": "A",
+        "score": 77,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "ResBM的突破可能降低大规模模型分布式训练对网络带宽的依赖，从而降低超大规模集群的通信成本并提升训练效率。",
+        "entities": [
+          "Macrocosmos",
+          "Muon",
+          "Resbm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sn6b90/resbm_a_new_transformerbased_architecture_for/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005254",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sn6b90/resbm_a_new_transformerbased_architecture_for/",
+        "event_id": null
+      },
+      {
+        "id": "0a1640980a2e3c4bdb8df7d29cfbaee7",
+        "title": "Figure AI发布Vulcan平衡策略让人形机器人丢失执行器仍可站立",
+        "original_title": "Figure.AI new balance policy allows their 03 humanoid robot to keep its balance even if some low-body actuators are lost",
+        "summary": "Figure AI unveiled名为Vulcan的新AI平衡策略，使其Figure 03人形机器人在最多丢失3个下半身执行器的情况下仍能保持直立并自行移动到维修区。",
+        "rating": "A+",
+        "score": 88,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这一容错能力的突破对工厂等高风险场景中的人形机器人部署至关重要，可能提升Figure在工业客户中的竞争力。",
+        "entities": [
+          "Figure 03",
+          "Figure.Ai",
+          "Vulcan"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sn7pm3/figureai_new_balance_policy_allows_their_03/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005336",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sn7pm3/figureai_new_balance_policy_allows_their_03/",
+        "event_id": null
+      },
+      {
+        "id": "5df02e849f7150d13c48a3ad813758a2",
+        "title": "社区质疑哈佛商业评论关于大模型战略建议能力的研究方法",
+        "original_title": "The anti-AI talking heads slurp up the most idiotic slop study I've seen yet",
+        "summary": "Reddit用户批评哈佛商业评论一项研究的方法论存在明显缺陷，包括未披露测试模型版本、可能使用非推理模型等，认为其结论贬低了大模型的战略建议能力。",
+        "rating": "B",
+        "score": 65,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这场方法论争议可能促使学术界在评估AI能力时更加规范透明，并引发对AI批评者引用低质量研究的反思。",
+        "entities": [
+          "Claude",
+          "GPT",
+          "Harvard Business Review",
+          "Opus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sn6fyg/the_antiai_talking_heads_slurp_up_the_most/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005343",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sn6fyg/the_antiai_talking_heads_slurp_up_the_most/",
+        "event_id": null
+      },
+      {
+        "id": "1573ede6affb74921bbfd4bb791df1c4",
+        "title": "Claude Opus 4.7基准测试结果汇总讨论",
+        "original_title": "Claude Opus 4.7 benchmarks",
+        "summary": "社区用户汇总并讨论Claude Opus 4.7在各项基准测试中的表现，涵盖推理、编程和多任务能力等多个维度的得分变化。",
+        "rating": "A",
+        "score": 86,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "社区自发的基准汇总往往比官方宣传更具参考价值，可能影响开发者对Anthropic模型的信任度和采用意愿。",
+        "entities": [
+          "Claude",
+          "Opus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sn52vp/claude_opus_47_benchmarks/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005351",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sn52vp/claude_opus_47_benchmarks/",
+        "event_id": null
+      },
+      {
+        "id": "cf4f2a62c4e5d587f40a0246092174c3",
+        "title": "OpenAI生成式AI网站流量份额持续下滑Gemini和Claude逆势增长",
+        "original_title": "OpenAI continues to lose market share in GenAI website traffic, while Gemini, and Claude are gaining:",
+        "summary": "数据显示，ChatGPT在生成式AI网站流量中的占比从12个月前的77.43%降至56.72%，而Gemini从6%升至25.46%，Claude从1.4%升至6.02%，市场竞争格局正在重塑。",
+        "rating": "S",
+        "score": 95,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "流量份额的此消彼长可能预示大模型竞争正从技术创新转向分发渠道和成本效率的较量，并影响各厂商的融资和估值预期。",
+        "entities": [
+          "Claude",
+          "GPT",
+          "Gemini",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (Gemini)",
+            "url": "https://www.reddit.com/r/singularity/comments/1sn3td3/openai_continues_to_lose_market_share_in_genai/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005359",
+        "source": "Technological Singularity (Gemini)",
+        "url": "https://www.reddit.com/r/singularity/comments/1sn3td3/openai_continues_to_lose_market_share_in_genai/",
+        "event_id": null
+      },
+      {
+        "id": "680b040c32d119407c383be4c403369e",
+        "title": "Anthropic宣布大幅扩张英国业务紧随OpenAI设立伦敦办公室",
+        "original_title": "Anthropic unveils plans for major UK expansion after OpenAI announces first permanent London office",
+        "summary": "在OpenAI宣布设立首个永久伦敦办公室后，Anthropic也公布了在英国的重大扩张计划，加上原本就在伦敦的DeepMind，英国正成为AI巨头的重要据点。",
+        "rating": "A",
+        "score": 77,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "AI巨头密集布局伦敦可能带动英国AI人才和创业生态的繁荣，同时也加剧欧洲与美国在AI产业竞争中的博弈。",
+        "entities": [
+          "Anthropic",
+          "DeepMind",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1smzu0i/anthropic_unveils_plans_for_major_uk_expansion/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005366",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1smzu0i/anthropic_unveils_plans_for_major_uk_expansion/",
+        "event_id": null
+      },
+      {
+        "id": "4f80d0ade87cdc60de457589362a2508",
+        "title": "Gemini 3.1 Pro在METR长时程任务基准上取得80%成功率",
+        "original_title": "Gemini 3.1 Pro #1 at METR Timeline 80% Success Rate (1.5H)",
+        "summary": "Gemini 3.1 Pro在METR Timeline基准的1.5小时任务中达到80%成功率排名第一，在更长时程任务中也位列第二，展示了其在复杂长程任务上的强劲表现。",
+        "rating": "A+",
+        "score": 91,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "Gemini在长时程代理任务上的领先可能提升Google在企业级AI代理市场的竞争力，并促使其他厂商加大相关研发投入。",
+        "entities": [
+          "Gemini",
+          "Metr"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (Gemini)",
+            "url": "https://www.reddit.com/r/singularity/comments/1smxtzg/gemini_31_pro_1_at_metr_timeline_80_success_rate/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005375",
+        "source": "Technological Singularity (Gemini)",
+        "url": "https://www.reddit.com/r/singularity/comments/1smxtzg/gemini_31_pro_1_at_metr_timeline_80_success_rate/",
+        "event_id": null
+      },
+      {
+        "id": "db224670e1e761b916ac7f1efca74433",
+        "title": "Claude Opus 4.7开始向Claude Web用户推送",
+        "original_title": "Opus 4.7 seems to rolled out to Claude Web",
+        "summary": "有用户反馈Claude Opus 4.7已开始在Claude网页端上线，并能够稳定复现新模型特有的行为特征，标志着该版本正逐步面向普通用户开放。",
+        "rating": "A",
+        "score": 77,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Opus 4.7在网页端的逐步推送将影响C端用户体验和付费转化率，并为Anthropic收集更广泛的真实使用反馈。",
+        "entities": [
+          "Claude",
+          "Opus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1smw74e/opus_47_seems_to_rolled_out_to_claude_web/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776395412,
+        "published_at": "2026-04-17T11:10:12.005383",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1smw74e/opus_47_seems_to_rolled_out_to_claude_web/",
+        "event_id": null
+      },
       {
         "id": "c6254c1c916668e77aa09873fe6c86f7",
         "title": "阿里通义千问开源Qwen3.6-35B-A3B稀疏MoE模型",
@@ -28601,6 +29375,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-17T10:02:31.671910",
-  "total_news": 1037
+  "last_updated": "2026-04-17T11:14:02.972991",
+  "total_news": 1065
 }
