@@ -2,6 +2,91 @@
   "news": {
     "2026-04-17": [
       {
+        "id": "7b973508a7dd813f0943e200258216d6",
+        "title": "Marin启动1290亿参数MoE模型训练，预测损失低至2.252",
+        "original_title": "This week, @classiclarryd kicked off a 129B (16B active) 1e23 FLOPs MoE run. In typical Marin style, we have fit scaling laws and have made a loss pro...",
+        "summary": "Marin团队本周开启了一项1290亿总参数、160亿激活参数的大规模MoE模型训练，基于扩展定律拟合后预测最终损失可达2.252，显示出其在高效大模型训练上的技术野心。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若该模型后续开源或公布基准结果，可能引发MoE架构与Dense模型的效率之争，并影响下游算力采购与云服务厂商的技术路线选择。",
+        "entities": [
+          "Marin",
+          "Moe",
+          "Percy Liang"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/percyliang/status/2044994822965191106"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776403792,
+        "published_at": "2026-04-17T13:29:52.768412",
+        "source": "x",
+        "url": "https://x.com/percyliang/status/2044994822965191106",
+        "event_id": null
+      },
+      {
+        "id": "f23a63fbfd5da883bd460a97c1d7c01a",
+        "title": "Sam Altman被指借OpenAI投资其个人持股公司，引发利益冲突质疑",
+        "original_title": "Sam Altman owns no equity in OpenAI. His salary was $66,000 in 2024. He says he does it because he \"loves it.\" Here's what he actually does: He asked ...",
+        "summary": "尽管Sam Altman声称2024年薪资仅6.6万美元且不持有OpenAI股权，但曝光信息显示他曾推动OpenAI向Helion和Stoke Space投资，而这两家公司均与其个人或亲属存在重大利益关联，内部员工对此极为不安。",
+        "rating": "S",
+        "score": 92,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "此事可能加剧OpenAI治理结构的监管审查，影响其非营利转盈利进程，并波及与微软等核心合作伙伴的信任关系。",
+        "entities": [
+          "Elon Musk",
+          "Helion",
+          "OpenAI",
+          "Sam Altman",
+          "Softbank"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/MarioNawfal/status/2044979021386068135"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776403792,
+        "published_at": "2026-04-17T13:29:52.768436",
+        "source": "x",
+        "url": "https://x.com/MarioNawfal/status/2044979021386068135",
+        "event_id": null
+      },
+      {
+        "id": "318fa42c28b8b52d1fd4424dff98399c",
+        "title": "群核科技港股上市首日暴涨187%，转型机器人AI训练数据商",
+        "original_title": "Hangzhou-based Manycore shares rose 187% early in its Hong Kong debut after raising $156M in its IPO; it is pivoting to selling AI training data to robot makers (Bloomberg)",
+        "summary": "总部位于杭州的群核科技在香港IPO中募资1.56亿美元，上市首日早盘股价大涨187%。该公司原深耕房地产SaaS领域，现正战略转型为机器人制造商提供AI训练数据服务。",
+        "rating": "A",
+        "score": 77,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "群核的暴涨与转型可能带动资本市场对机器人数据赛道和房地产科技跨界标的的关注，同时为中国AI基础设施企业的港股上市情绪提供参照。",
+        "entities": [
+          "Bloomberg",
+          "Manycore"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260417/p1#a260417p1"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776403792,
+        "published_at": "2026-04-17T13:29:52.768498",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260417/p1#a260417p1",
+        "event_id": null
+      },
+      {
         "id": "9976c0fd93d794aa621b4c932acec38d",
         "title": "阿里HappyHorse视频生成模型登顶Arena榜眼，两周后将正式发布",
         "original_title": "HappyHorse-1.0 ranks #2 for both Text-to-Video and Image-to-Video Arena. - #2 Text-to-Video: Scores 1444, +69 points over #3 Veo-3.1 with audio. - #2 ...",
@@ -135,6 +220,195 @@
         "published_at": "2026-04-17T12:02:19.634400",
         "source": "Machine Learning",
         "url": "https://www.reddit.com/r/MachineLearning/comments/1sn9lhz/what_should_happen_when_you_feed_impossible_moves/",
+        "event_id": null
+      },
+      {
+        "id": "5c74cf2993b74bc1150f9d4f09091e5e",
+        "title": "OpenAI Codex新增内置浏览器，支持截图和DOM元素自动抓取",
+        "original_title": "RT James Sun: We are super excited to launch the in-app browser inside Codex with comment mode! View any web pages & iterate with your agent quickly w...",
+        "summary": "OpenAI在Codex中推出带评论模式的内置浏览器，可自动捕获网页截图和DOM元素作为上下文输入。",
+        "rating": "A+",
+        "score": 88,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI编程助手向端到端开发体验演进，可能冲击传统IDE和前端开发工具市场。",
+        "entities": [
+          "Codex",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/sama/status/2044920562901021107"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776398539,
+        "published_at": "2026-04-17T12:02:19.634310",
+        "source": "x",
+        "url": "https://x.com/sama/status/2044920562901021107",
+        "event_id": null
+      },
+      {
+        "id": "b4ad2e1c9d850a6ca47065f53f86d442",
+        "title": "Physical Intelligence发布π0.7通用机器人模型，具备涌现能力",
+        "original_title": "RT Lucy Shi: 1/ We just released π0.7 — a steerable generalist robot model with emergent capabilities. I want to share a bit of the backstory, becau...",
+        "summary": "Physical Intelligence发布可操控的通用机器人模型π0.7，研究人员称其在机器人学习中展现出涌现能力。",
+        "rating": "A+",
+        "score": 87,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "具身智能模型突破可能加速人形机器人和工业自动化落地，带动机器人产业链投资。",
+        "entities": [
+          "Lucy Shi",
+          "Physical Intelligence"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/svlevine/status/2044922481874723209"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776398539,
+        "published_at": "2026-04-17T12:02:19.634328",
+        "source": "x",
+        "url": "https://x.com/svlevine/status/2044922481874723209",
+        "event_id": null
+      },
+      {
+        "id": "53aa897f8bf9e873dc213d9f83a9516f",
+        "title": "HeyGen开源HyperFrames框架，支持HTML转MP4视频生成",
+        "original_title": "We built our launch video in Claude Code using HyperFrames. Now it's yours. Open source, agent-native framework. HTML to MP4. $ npx skills add heygen-...",
+        "summary": "HeyGen宣布开源基于Claude Code开发的HyperFrames框架，可将HTML直接渲染为MP4视频。",
+        "rating": "A",
+        "score": 84,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI视频生成工具链向开发者开放，可能降低营销视频和动态内容制作门槛。",
+        "entities": [
+          "Claude",
+          "Heygen",
+          "Hyperframes"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/HeyGen/status/2044827454460871072"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776398539,
+        "published_at": "2026-04-17T12:02:19.634337",
+        "source": "x",
+        "url": "https://x.com/HeyGen/status/2044827454460871072",
+        "event_id": null
+      },
+      {
+        "id": "9e25d472dddc0385275b0cf2e18bc8a1",
+        "title": "Perplexity推出Mac端Personal Computer，可接管本地文件和原生应用",
+        "original_title": "Perplexity just released Personal Computer, an orchestration tool for its Mac app. - Access and manage local files - Works with iMessage, Mail, Calend...",
+        "summary": "Perplexity发布Mac应用新功能Personal Computer，支持访问本地文件、与iMessage和Mail等原生应用协同工作。",
+        "rating": "A",
+        "score": 80,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI搜索向操作系统级个人助手演进，可能加剧与Apple Intelligence和微软Copilot的竞争。",
+        "entities": [
+          "Perplexity"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ai_for_success/status/2044807035125125631"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776398539,
+        "published_at": "2026-04-17T12:02:19.634355",
+        "source": "x",
+        "url": "https://x.com/ai_for_success/status/2044807035125125631",
+        "event_id": null
+      },
+      {
+        "id": "e8bdf39205a256fdfda1e8785fa4d22b",
+        "title": "Claude Opus 4.7被指性价比不及GPT-5.4，引发社区争论",
+        "original_title": "Congrats! Opus 4.7 is less than 4% better than GPT-5.4 (already a month old) while costing 2x more Such a huge update!",
+        "summary": "有开发者在社交媒体上指出，Claude Opus 4.7相比一个月前发布的GPT-5.4仅提升不到4%，但价格贵一倍。",
+        "rating": "A",
+        "score": 80,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "顶级模型性能与定价的性价比争议，可能影响企业客户采购决策和模型市场份额。",
+        "entities": [
+          "Claude",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Angaisb_/status/2044804854472708466"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776398539,
+        "published_at": "2026-04-17T12:02:19.634366",
+        "source": "x",
+        "url": "https://x.com/Angaisb_/status/2044804854472708466",
+        "event_id": null
+      },
+      {
+        "id": "df854f969534dd5d14df356a1f49faf0",
+        "title": "xAI计划向Cursor提供数万GPU，助力训练Composer 2.5模型",
+        "original_title": "xAI is gonna buy Cursor arent they",
+        "summary": "据Business Insider报道，xAI将向编程助手Cursor提供数万个GPU，用于训练其即将发布的Composer 2.5模型。",
+        "rating": "A+",
+        "score": 89,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "马斯克通过xAI向第三方开发者输出算力服务，标志着其云计算战略的重要转向。",
+        "entities": [
+          "Cursor",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/chribjel/status/2044791341255688467"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776398539,
+        "published_at": "2026-04-17T12:02:19.634375",
+        "source": "x",
+        "url": "https://x.com/chribjel/status/2044791341255688467",
+        "event_id": null
+      },
+      {
+        "id": "602ed86344095f978e47485f1e6e8546",
+        "title": "初创公司Sabi发布可穿戴脑机接口，宣称拥有最大神经数据集",
+        "original_title": "you can now control things with your brain. literally. we're building the most wearable BCI on the planet, with @sabicap, backed by @khoslaventures @a...",
+        "summary": "脑机接口初创公司Sabi宣布开发出一款可穿戴BCI设备，基于全球最大神经数据集训练的脑基础模型和自研ASIC芯片。",
+        "rating": "A",
+        "score": 79,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "消费级脑机接口技术突破可能打开医疗康复、游戏交互等全新应用场景。",
+        "entities": [
+          "Sabi"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/rahulchhabra07/status/2044781153559929199"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776398539,
+        "published_at": "2026-04-17T12:02:19.634383",
+        "source": "x",
+        "url": "https://x.com/rahulchhabra07/status/2044781153559929199",
         "event_id": null
       },
       {
@@ -3690,124 +3964,17 @@
     ],
     "2026-04-16": [
       {
-        "id": "5c74cf2993b74bc1150f9d4f09091e5e",
-        "title": "OpenAI Codex新增内置浏览器，支持截图和DOM元素自动抓取",
-        "original_title": "RT James Sun: We are super excited to launch the in-app browser inside Codex with comment mode! View any web pages & iterate with your agent quickly w...",
-        "summary": "OpenAI在Codex中推出带评论模式的内置浏览器，可自动捕获网页截图和DOM元素作为上下文输入。",
+        "id": "838144110f437b27e256c8157e56d745",
+        "title": "Anthropic社交媒体影响力超越OpenAI：触达人数达4.1倍",
+        "original_title": "I analyzed every Anthropic and OpenAI post The gap is massive and it likely explains Anthropic's momentum: → Anthropic reached 4.1x more people (551M...",
+        "summary": "一项对Anthropic与OpenAI官方帖文的数据分析显示，Anthropic总触达人数达5.51亿，约为OpenAI的4.1倍，且高互动内容数量远超后者，其反广告创意策略的用户参与度更是ChatGPT广告帖的10倍。",
         "rating": "A+",
-        "score": 88,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI编程助手向端到端开发体验演进，可能冲击传统IDE和前端开发工具市场。",
+        "score": 89,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "Anthropic在品牌传播上的领先可能加速其企业端市场渗透，并迫使OpenAI调整营销策略，进而影响两家公司的C端用户获取成本与商业化节奏。",
         "entities": [
-          "Codex",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/sama/status/2044920562901021107"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776398539,
-        "published_at": "2026-04-17T12:02:19.634310",
-        "source": "x",
-        "url": "https://x.com/sama/status/2044920562901021107",
-        "event_id": null
-      },
-      {
-        "id": "b4ad2e1c9d850a6ca47065f53f86d442",
-        "title": "Physical Intelligence发布π0.7通用机器人模型，具备涌现能力",
-        "original_title": "RT Lucy Shi: 1/ We just released π0.7 — a steerable generalist robot model with emergent capabilities. I want to share a bit of the backstory, becau...",
-        "summary": "Physical Intelligence发布可操控的通用机器人模型π0.7，研究人员称其在机器人学习中展现出涌现能力。",
-        "rating": "A+",
-        "score": 87,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "具身智能模型突破可能加速人形机器人和工业自动化落地，带动机器人产业链投资。",
-        "entities": [
-          "Lucy Shi",
-          "Physical Intelligence"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/svlevine/status/2044922481874723209"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776398539,
-        "published_at": "2026-04-17T12:02:19.634328",
-        "source": "x",
-        "url": "https://x.com/svlevine/status/2044922481874723209",
-        "event_id": null
-      },
-      {
-        "id": "53aa897f8bf9e873dc213d9f83a9516f",
-        "title": "HeyGen开源HyperFrames框架，支持HTML转MP4视频生成",
-        "original_title": "We built our launch video in Claude Code using HyperFrames. Now it's yours. Open source, agent-native framework. HTML to MP4. $ npx skills add heygen-...",
-        "summary": "HeyGen宣布开源基于Claude Code开发的HyperFrames框架，可将HTML直接渲染为MP4视频。",
-        "rating": "A",
-        "score": 84,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI视频生成工具链向开发者开放，可能降低营销视频和动态内容制作门槛。",
-        "entities": [
-          "Claude",
-          "Heygen",
-          "Hyperframes"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/HeyGen/status/2044827454460871072"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776398539,
-        "published_at": "2026-04-17T12:02:19.634337",
-        "source": "x",
-        "url": "https://x.com/HeyGen/status/2044827454460871072",
-        "event_id": null
-      },
-      {
-        "id": "9e25d472dddc0385275b0cf2e18bc8a1",
-        "title": "Perplexity推出Mac端Personal Computer，可接管本地文件和原生应用",
-        "original_title": "Perplexity just released Personal Computer, an orchestration tool for its Mac app. - Access and manage local files - Works with iMessage, Mail, Calend...",
-        "summary": "Perplexity发布Mac应用新功能Personal Computer，支持访问本地文件、与iMessage和Mail等原生应用协同工作。",
-        "rating": "A",
-        "score": 80,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI搜索向操作系统级个人助手演进，可能加剧与Apple Intelligence和微软Copilot的竞争。",
-        "entities": [
-          "Perplexity"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/ai_for_success/status/2044807035125125631"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776398539,
-        "published_at": "2026-04-17T12:02:19.634355",
-        "source": "x",
-        "url": "https://x.com/ai_for_success/status/2044807035125125631",
-        "event_id": null
-      },
-      {
-        "id": "e8bdf39205a256fdfda1e8785fa4d22b",
-        "title": "Claude Opus 4.7被指性价比不及GPT-5.4，引发社区争论",
-        "original_title": "Congrats! Opus 4.7 is less than 4% better than GPT-5.4 (already a month old) while costing 2x more Such a huge update!",
-        "summary": "有开发者在社交媒体上指出，Claude Opus 4.7相比一个月前发布的GPT-5.4仅提升不到4%，但价格贵一倍。",
-        "rating": "A",
-        "score": 80,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "顶级模型性能与定价的性价比争议，可能影响企业客户采购决策和模型市场份额。",
-        "entities": [
+          "Anthropic",
           "Claude",
           "GPT",
           "OpenAI"
@@ -3815,67 +3982,14 @@
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/Angaisb_/status/2044804854472708466"
+            "url": "https://x.com/scaling01/status/2044905007523168614"
           }
         ],
         "sources": 1,
-        "timestamp": 1776398539,
-        "published_at": "2026-04-17T12:02:19.634366",
+        "timestamp": 1776403792,
+        "published_at": "2026-04-17T13:29:52.768450",
         "source": "x",
-        "url": "https://x.com/Angaisb_/status/2044804854472708466",
-        "event_id": null
-      },
-      {
-        "id": "df854f969534dd5d14df356a1f49faf0",
-        "title": "xAI计划向Cursor提供数万GPU，助力训练Composer 2.5模型",
-        "original_title": "xAI is gonna buy Cursor arent they",
-        "summary": "据Business Insider报道，xAI将向编程助手Cursor提供数万个GPU，用于训练其即将发布的Composer 2.5模型。",
-        "rating": "A+",
-        "score": 89,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "马斯克通过xAI向第三方开发者输出算力服务，标志着其云计算战略的重要转向。",
-        "entities": [
-          "Cursor",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/chribjel/status/2044791341255688467"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776398539,
-        "published_at": "2026-04-17T12:02:19.634375",
-        "source": "x",
-        "url": "https://x.com/chribjel/status/2044791341255688467",
-        "event_id": null
-      },
-      {
-        "id": "602ed86344095f978e47485f1e6e8546",
-        "title": "初创公司Sabi发布可穿戴脑机接口，宣称拥有最大神经数据集",
-        "original_title": "you can now control things with your brain. literally. we're building the most wearable BCI on the planet, with @sabicap, backed by @khoslaventures @a...",
-        "summary": "脑机接口初创公司Sabi宣布开发出一款可穿戴BCI设备，基于全球最大神经数据集训练的脑基础模型和自研ASIC芯片。",
-        "rating": "A",
-        "score": 79,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "消费级脑机接口技术突破可能打开医疗康复、游戏交互等全新应用场景。",
-        "entities": [
-          "Sabi"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/rahulchhabra07/status/2044781153559929199"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776398539,
-        "published_at": "2026-04-17T12:02:19.634383",
-        "source": "x",
-        "url": "https://x.com/rahulchhabra07/status/2044781153559929199",
+        "url": "https://x.com/scaling01/status/2044905007523168614",
         "event_id": null
       },
       {
@@ -29756,6 +29870,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-17T12:02:52.891744",
-  "total_news": 1079
+  "last_updated": "2026-04-17T13:30:18.095834",
+  "total_news": 1083
 }
