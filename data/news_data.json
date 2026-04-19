@@ -2,6 +2,36 @@
   "news": {
     "2026-04-19": [
       {
+        "id": "0fb23015b5d82e4e3483bddbeff3e28a",
+        "title": "Apple Silicon 上实现 WebAssembly 与 GPU 零拷贝推理：Wasm 线性内存直通 GPU",
+        "original_title": "Zero-Copy GPU Inference from WebAssembly on Apple Silicon",
+        "summary": "开发者 Agam Brahma 在 Apple Silicon 上验证了 WebAssembly 模块的线性内存可直接共享给 GPU，无需拷贝或序列化。通过 mmap 分配页对齐内存，经 Metal makeBuffer(bytesNoCopy:) 包装为 GPU 缓冲区，再由 Wasmtime MemoryCreator 将该内存作为 Wasm 线性内存，实现 CPU 与 GPU 读写同一物理内存。实测 128x128 矩阵乘法零误差，16MB 区域 RSS 增量仅 0.03MB（拷贝路径为 16.78MB）。基于此构建的 Driftwood 运行时已能驱动 Llama 3.2 1B 推理，并支持 KV Cache 序列化与跨机器恢复。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术为边缘端 AI 推理的 sandbox 安全与性能兼得提供了新范式，可能推动浏览器/边缘运行时原生支持 GPU 零拷贝路径；KV Cache 可移植性对长上下文对话的断点续传和多端同步有直接影响。",
+        "entities": [
+          "Apple",
+          "Driftwood",
+          "Metal",
+          "Mlx",
+          "Webassembly"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (apple)",
+            "url": "https://abacusnoir.com/2026/04/18/zero-copy-gpu-inference-from-webassembly-on-apple-silicon/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776560485,
+        "published_at": "2026-04-19T09:01:25.443178",
+        "source": "Hacker News (apple)",
+        "url": "https://abacusnoir.com/2026/04/18/zero-copy-gpu-inference-from-webassembly-on-apple-silicon/",
+        "event_id": null
+      },
+      {
         "id": "64d6e075e8ff9d24f065a6826ccfc5c1",
         "title": "Anthropic被投资者估值8000亿美元，但暂无融资计划",
         "original_title": "Anthropic Has Received Investor Interest at $800 Billion Valuation",
@@ -27,6 +57,60 @@
         "published_at": "2026-04-19T07:01:29.786413",
         "source": "The Information",
         "url": "https://www.theinformation.com/briefings/anthropic-received-investor-interest-800-billion-valuation",
+        "event_id": null
+      },
+      {
+        "id": "7764151f9edbe7bbe5dfd591577cbefc",
+        "title": "easyaligner开源：GPU加速语音强制对齐工具，支持全HF模型",
+        "original_title": "easyaligner: Forced alignment with GPU acceleration and flexible text normalization (compatible with all w2v2 models on HF Hub) [P]",
+        "summary": "开发者推出easyaligner库，基于PyTorch GPU实现Viterbi算法，支持所有Hugging Face wav2vec2模型，可处理任意语言语音文本对齐。",
+        "rating": "B",
+        "score": 68,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "语音处理工具链完善可能降低ASR训练门槛，利好语音AI创业公司和相关开源生态。",
+        "entities": [
+          "Easyaligner",
+          "Hugging Face",
+          "Pytorch"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1soyqfw/easyaligner_forced_alignment_with_gpu/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776553289,
+        "published_at": "2026-04-19T07:01:29.786434",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1soyqfw/easyaligner_forced_alignment_with_gpu/",
+        "event_id": null
+      },
+      {
+        "id": "bc95ba75bb5b534c1caeb20d7cca899a",
+        "title": "Remoroo：专为长时运行编码Agent设计的记忆修复工具",
+        "original_title": "Show HN: Remoroo. trying to fix memory in long-running coding agents",
+        "summary": "Remoroo是一款解决长时运行编码Agent记忆问题的工具，通过优化上下文管理提升Agent在长时间任务中的稳定性。",
+        "rating": "B",
+        "score": 66,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "Agent记忆管理是AI工程化关键痛点，该方向可能催生新的开发者工具赛道和最佳实践。",
+        "entities": [
+          "Remoroo"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.remoroo.com/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776553289,
+        "published_at": "2026-04-19T07:01:29.786447",
+        "source": "Hacker News",
+        "url": "https://www.remoroo.com/",
         "event_id": null
       },
       {
@@ -473,34 +557,6 @@
       }
     ],
     "2026-04-18": [
-      {
-        "id": "7764151f9edbe7bbe5dfd591577cbefc",
-        "title": "easyaligner开源：GPU加速语音强制对齐工具，支持全HF模型",
-        "original_title": "easyaligner: Forced alignment with GPU acceleration and flexible text normalization (compatible with all w2v2 models on HF Hub) [P]",
-        "summary": "开发者推出easyaligner库，基于PyTorch GPU实现Viterbi算法，支持所有Hugging Face wav2vec2模型，可处理任意语言语音文本对齐。",
-        "rating": "B",
-        "score": 68,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "语音处理工具链完善可能降低ASR训练门槛，利好语音AI创业公司和相关开源生态。",
-        "entities": [
-          "Easyaligner",
-          "Hugging Face",
-          "Pytorch"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1soyqfw/easyaligner_forced_alignment_with_gpu/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776553289,
-        "published_at": "2026-04-19T07:01:29.786434",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1soyqfw/easyaligner_forced_alignment_with_gpu/",
-        "event_id": null
-      },
       {
         "id": "a7ea95755509864ca77f401e1e63fdd9",
         "title": "Anthropic与五角大楼关系破冰，高层对话仍在继续",
@@ -20140,32 +20196,6 @@
     ],
     "2026-04-14": [
       {
-        "id": "bc95ba75bb5b534c1caeb20d7cca899a",
-        "title": "Remoroo：专为长时运行编码Agent设计的记忆修复工具",
-        "original_title": "Show HN: Remoroo. trying to fix memory in long-running coding agents",
-        "summary": "Remoroo是一款解决长时运行编码Agent记忆问题的工具，通过优化上下文管理提升Agent在长时间任务中的稳定性。",
-        "rating": "B",
-        "score": 66,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "Agent记忆管理是AI工程化关键痛点，该方向可能催生新的开发者工具赛道和最佳实践。",
-        "entities": [
-          "Remoroo"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.remoroo.com/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776553289,
-        "published_at": "2026-04-19T07:01:29.786447",
-        "source": "Hacker News",
-        "url": "https://www.remoroo.com/",
-        "event_id": null
-      },
-      {
         "id": "4fc44a1afaf437929bf3478722f605aa",
         "title": "英伟达否认收购PC厂商传闻，称未与任何制造商洽谈",
         "original_title": "Nvidia squashes rumor it’s planning to purchase a major PC manufacturer — says that it’s ‘not engaged in discussions to acquire any PC maker’",
@@ -31322,174 +31352,9 @@
         "chinese_title": "Meta AI跃居App Store第二，成为最受欢迎AI应用",
         "grade": "A",
         "extension": "Meta AI产品化突破→与ChatGPT竞争格局→Meta AI生态整合优势→AI应用市场格局变化"
-      },
-      {
-        "id": "b5bb6f881c9779c3d2f4bb74e997d71e",
-        "title": "ICML审稿分数引发热议：平均分3.5，评审质量遭质疑",
-        "original_title": "Post Rebuttal ICML Average Scores? [D]",
-        "summary": "机器学习顶会ICML的论文评审结果引发社区讨论，有作者反映审稿人在rebuttal阶段提出新问题，且Paper Co-Pilot显示4.2分仅排前40%。",
-        "rating": "B",
-        "score": 68,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "顶会评审机制争议→学术评价体系反思→AI辅助审稿工具兴起→可能推动审稿流程改革",
-        "entities": [
-          "Icml",
-          "Paper Co-Pilot"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1sitqzu/post_rebuttal_icml_average_scores_d/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775948610,
-        "published_at": "2026-04-12T07:03:30.111395",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1sitqzu/post_rebuttal_icml_average_scores_d/",
-        "event_id": null
-      },
-      {
-        "id": "f4859d5a5a86e2e54fb582dbd4cd7801",
-        "title": "AGIBOT A3人形机器人秀功夫：连续空翻侧踢展现惊人运动能力",
-        "original_title": "Dancing comes as naturally to China's humanoid robots as drinking water. This Locking performance beautifully demonstrates the AGIBOT A3’s smooth, fl...",
-        "summary": "中国智元机器人AGIBOT A3展示高难度动作，包括连续空中侧踢、侧手翻触地、后空翻等，全身控制流畅灵活，展现出强大的关节爆发力。",
-        "rating": "A",
-        "score": 83,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "人形机器人运动能力突破→推动具身智能发展→影响机器人产业链投资；中国机器人技术崛起→对比特斯拉Optimus→中美机器人竞赛升温",
-        "entities": [
-          "Agibot",
-          "人形机器人",
-          "智元机器人"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/CyberRobooo/status/2043012097819447754"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775948610,
-        "published_at": "2026-04-12T07:03:30.111364",
-        "source": "x",
-        "url": "https://x.com/CyberRobooo/status/2043012097819447754",
-        "event_id": null
-      },
-      {
-        "id": "09b27c7ad6c88b59fc9ba5b61d389241",
-        "title": "印度工厂工人头戴摄像头采集数据，训练人形机器人引发争议",
-        "original_title": "🇮🇳 AI DATA RACE: Workers in Indian factories started to wear cameras on their heads, to film their motions so robots can be trained on these vid...",
-        "summary": "印度工厂工人开始佩戴头戴式摄像头记录工作动作，这些视频数据被用于训练大型机器人公司的人形机器人，引发关于数据劳工伦理的讨论。",
-        "rating": "A",
-        "score": 75,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "AI数据标注外包→发展中国家劳工权益→AI训练数据伦理争议→机器人公司供应链透明度问题→可能引发监管关注",
-        "entities": [
-          "Ai训练数据",
-          "人形机器人"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/MyLordBebo/status/2042955292934025656"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775948610,
-        "published_at": "2026-04-12T07:03:30.111381",
-        "source": "x",
-        "url": "https://x.com/MyLordBebo/status/2042955292934025656",
-        "event_id": null
-      },
-      {
-        "id": "b6a011b5e63aca7ab26a2bac5327fede",
-        "title": "FlashAttention四代演进PyTorch实现开源，助力理解注意力算法",
-        "original_title": "FlashAttention (FA1–FA4) in PyTorch - educational implementations focused on algorithmic differences [P]",
-        "summary": "开发者开源了FlashAttention FA1到FA4的PyTorch教育实现，清晰展示从在线softmax基线到分阶段流水线的算法演进，帮助理解各版本设计差异。",
-        "rating": "B",
-        "score": 70,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "注意力机制优化开源→降低大模型训练成本→推动AI基础设施普及→影响大模型创业生态",
-        "entities": [
-          "Flashattention",
-          "Pytorch"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1sim6y1/flashattention_fa1fa4_in_pytorch_educational/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775948610,
-        "published_at": "2026-04-12T07:03:30.111406",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1sim6y1/flashattention_fa1fa4_in_pytorch_educational/",
-        "event_id": null
-      },
-      {
-        "id": "56878ae231097c6564b9266543a46aa6",
-        "title": "MacBook用户DIY打磨锋利边缘：苹果笔记本设计引发手感争议",
-        "original_title": "MacBook user explains why he files the sharp metal edges off his Apple laptops — unibody design facilitates a surprisingly deep roundover",
-        "summary": "科技DIY爱好者Kent Walters分享用金属锉刀打磨MacBook锋利边缘的经历，引发关于苹果笔记本一体化金属机身设计舒适度的讨论。",
-        "rating": "B",
-        "score": 66,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "笔记本工业设计→用户体验细节→苹果产品争议→DIY改造文化",
-        "entities": [
-          "Apple",
-          "Kent Walters",
-          "Macbook"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware (apple)",
-            "url": "https://www.tomshardware.com/laptops/macbooks/macbook-user-explains-why-he-files-the-sharp-metal-edges-off-his-apple-laptops-unibody-design-facilitates-a-surprisingly-deep-roundover"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775948610,
-        "published_at": "2026-04-12T07:03:30.111435",
-        "source": "Tom's Hardware (apple)",
-        "url": "https://www.tomshardware.com/laptops/macbooks/macbook-user-explains-why-he-files-the-sharp-metal-edges-off-his-apple-laptops-unibody-design-facilitates-a-surprisingly-deep-roundover",
-        "event_id": null
-      },
-      {
-        "id": "91e7ed687c6d738ff3820219b1da1a23",
-        "title": "Rill Data推出Metrics SQL：面向人类和AI Agent的语义层",
-        "original_title": "Metrics SQL: A SQL-based semantic layer for humans and agents",
-        "summary": "Rill Data发布Metrics SQL，一种新的SQL语义层，旨在让人类和AI Agent都能更好地理解和使用数据指标。",
-        "rating": "A",
-        "score": 78,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI Agent数据交互→自然语言转SQL→企业数据分析变革→BI工具智能化趋势",
-        "entities": [
-          "Ai Agent",
-          "Metrics Sql",
-          "Rill Data"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.rilldata.com/blog/introducing-metrics-sql-a-sql-based-semantic-layer-for-humans-and-agents"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1775948610,
-        "published_at": "2026-04-12T07:03:30.111425",
-        "source": "Hacker News",
-        "url": "https://www.rilldata.com/blog/introducing-metrics-sql-a-sql-based-semantic-layer-for-humans-and-agents",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-19T07:01:46.455272",
-  "total_news": 1140
+  "last_updated": "2026-04-19T09:01:34.243717",
+  "total_news": 1135
 }
