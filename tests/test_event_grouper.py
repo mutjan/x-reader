@@ -175,6 +175,231 @@ class TestEventGrouper:
         anthropic_event4 = next(e for e in events4 if "Claude 3" in e.title)
         assert anthropic_event4.news_count == 1, "Anthropic事件应该仍然包含1条新闻"
 
+    def test_behavior_pattern_match(self):
+        """测试行为模式匹配：Sam Altman 2条opinion新闻在12h内 -> 聚合为同一事件
+        使用不同实体（只有Sam Altman是共享的），确保行为模式匹配生效而非实体相似度"""
+        grouper = EventGrouper(entity_threshold=3, similarity_threshold=0.5)
+
+        base_time = datetime.now()
+        news1 = ProcessedNewsItem(
+            id="bp1",
+            original_title="Sam Altman discusses ASI future implications",
+            original_content="Sam Altman shares his vision about artificial superintelligence and societal impact.",
+            source="Blog",
+            url="http://example.com/bp1",
+            published_at=base_time - timedelta(hours=12),
+            chinese_title="Sam Altman讨论ASI未来影响",
+            grade="A",
+            score=85,
+            news_type="opinion",
+            entities=["Sam Altman", "ASI"]
+        )
+        news2 = ProcessedNewsItem(
+            id="bp2",
+            original_title="Sam Altman releases new governance proposals for tech industry",
+            original_content="Sam Altman publishes comprehensive governance framework for technology regulation.",
+            source="TechCrunch",
+            url="http://example.com/bp2",
+            published_at=base_time,
+            chinese_title="Sam Altman发布科技治理提案",
+            grade="A",
+            score=88,
+            news_type="opinion",
+            entities=["Sam Altman", "监管"]
+        )
+
+        events = grouper.group_news([news1, news2])
+        assert len(events) == 1, f"行为模式匹配应聚合为1个事件，实际{len(events)}个"
+        assert events[0].news_count == 2, f"事件应包含2条新闻，实际{events[0].news_count}条"
+
+    def test_behavior_pattern_no_actor(self):
+        """测试不在actors列表中的实体不触发行为匹配"""
+        grouper = EventGrouper(entity_threshold=3, similarity_threshold=0.5)
+
+        base_time = datetime.now()
+        news1 = ProcessedNewsItem(
+            id="bpna1",
+            original_title="Unknown Person shares AI thoughts",
+            original_content="A completely unknown person talks about AI technology.",
+            source="Blog",
+            url="http://example.com/bpna1",
+            published_at=base_time - timedelta(hours=6),
+            chinese_title="未知人物分享AI观点",
+            grade="B",
+            score=70,
+            news_type="opinion",
+            entities=["Unknown Person", "AI"]
+        )
+        news2 = ProcessedNewsItem(
+            id="bpna2",
+            original_title="Unknown Person discusses deep learning",
+            original_content="A completely different content about deep learning from unknown person.",
+            source="Medium",
+            url="http://example.com/bpna2",
+            published_at=base_time,
+            chinese_title="未知人物讨论深度学习",
+            grade="B",
+            score=72,
+            news_type="opinion",
+            entities=["Unknown Person", "AI"]
+        )
+
+        events = grouper.group_news([news1, news2])
+        assert len(events) == 2, f"非actors列表实体不应触发行为匹配，应为2个事件，实际{len(events)}个"
+
+    def test_behavior_pattern_coexistence(self):
+        """测试行为模式与现有相似度聚合共存：同actor不同type不匹配 + 高相似度非actor新闻仍被聚合"""
+        grouper = EventGrouper(entity_threshold=3, similarity_threshold=0.5)
+
+        base_time = datetime.now()
+        # Sam Altman opinion - 不应与 product 匹配
+        news1 = ProcessedNewsItem(
+            id="bpco1",
+            original_title="Sam Altman shares vision on AI safety",
+            original_content="Sam Altman talks about the future of AI safety.",
+            source="Blog",
+            url="http://example.com/bpco1",
+            published_at=base_time - timedelta(hours=6),
+            chinese_title="Sam Altman分享AI安全愿景",
+            grade="A",
+            score=85,
+            news_type="opinion",
+            entities=["Sam Altman", "OpenAI"]
+        )
+        # Sam Altman product - 与opinion不同type
+        news2 = ProcessedNewsItem(
+            id="bpco2",
+            original_title="Sam Altman announces new product",
+            original_content="Sam Altman announces a new product launch.",
+            source="TechCrunch",
+            url="http://example.com/bpco2",
+            published_at=base_time,
+            chinese_title="Sam Altman发布新产品",
+            grade="A",
+            score=88,
+            news_type="product",
+            entities=["Sam Altman", "OpenAI"]
+        )
+        # 两条高文本相似度的非actor新闻，验证相似度聚合仍正常
+        news3 = ProcessedNewsItem(
+            id="bpco3",
+            original_title="AI breakthrough in quantum computing research",
+            original_content="Scientists achieve major AI breakthrough in quantum computing.",
+            source="Nature",
+            url="http://example.com/bpco3",
+            published_at=base_time - timedelta(hours=3),
+            chinese_title="量子计算AI研究突破",
+            grade="A+",
+            score=92,
+            news_type="research",
+            entities=["Quantum Corp", "AI", "量子计算", "突破性研究"]
+        )
+        news4 = ProcessedNewsItem(
+            id="bpco4",
+            original_title="AI breakthrough in quantum computing research confirmed",
+            original_content="Scientists achieve major AI breakthrough in quantum computing.",
+            source="ArXiv",
+            url="http://example.com/bpco4",
+            published_at=base_time,
+            chinese_title="量子计算AI研究突破确认",
+            grade="A",
+            score=90,
+            news_type="research",
+            entities=["Quantum Corp", "AI", "量子计算", "突破性研究"]
+        )
+
+        events = grouper.group_news([news1, news2, news3, news4])
+
+        # Sam Altman opinion 和 product 各自独立 (2个事件)
+        # 高相似度量子计算新闻被聚合为1个事件
+        # 总共3个事件
+        assert len(events) == 3, f"应为3个事件（opinion, product, research聚合），实际{len(events)}个"
+
+        # 验证 Sam Altman news_type 不同的没有合并
+        altman_events = [e for e in events if "Sam Altman" in e.title or
+                         any("Sam Altman" in n.entities for n in e.news_list)]
+        assert len(altman_events) == 2, f"Sam Altman应有2个事件（opinion和product），实际{len(altman_events)}个"
+
+    def test_behavior_pattern_incremental(self):
+        """测试增量模式下行为模式匹配：先用group_news创建含Sam Altman opinion的事件，再用incremental_group加入第2条"""
+        grouper = EventGrouper(entity_threshold=3, similarity_threshold=0.5)
+
+        base_time = datetime.now()
+        news1 = ProcessedNewsItem(
+            id="bpi1",
+            original_title="Sam Altman on ASI timeline prediction",
+            original_content="Sam Altman discusses timeline for artificial superintelligence.",
+            source="Blog",
+            url="http://example.com/bpi1",
+            published_at=base_time - timedelta(hours=12),
+            chinese_title="Sam Altman谈ASI时间线",
+            grade="A",
+            score=85,
+            news_type="opinion",
+            entities=["Sam Altman", "ASI"]
+        )
+
+        # 先用group_news创建事件
+        events1 = grouper.group_news([news1])
+        assert len(events1) == 1, "初始应有1个事件"
+
+        # 第2条opinion新闻（12h内），实体不同，只有Sam Altman共享
+        news2 = ProcessedNewsItem(
+            id="bpi2",
+            original_title="Sam Altman proposes new education reform ideas",
+            original_content="Sam Altman suggests restructuring higher education for the AI age.",
+            source="TechCrunch",
+            url="http://example.com/bpi2",
+            published_at=base_time,
+            chinese_title="Sam Altman提出教育改革建议",
+            grade="A",
+            score=88,
+            news_type="opinion",
+            entities=["Sam Altman", "教育"]
+        )
+
+        # 增量分组
+        existing_groups = grouper._events_to_dict(events1)
+        events2 = grouper.incremental_group(existing_groups, [news2], [news1, news2])
+
+        assert len(events2) == 1, f"增量行为匹配后应有1个事件，实际{len(events2)}个"
+        assert events2[0].news_count == 2, f"事件应包含2条新闻，实际{events2[0].news_count}条"
+
+    def test_behavior_pattern_time_window(self):
+        """测试时间窗口外的新闻不触发行为匹配：Sam Altman 2条opinion间隔48h"""
+        grouper = EventGrouper(entity_threshold=3, similarity_threshold=0.5)
+
+        base_time = datetime.now()
+        news1 = ProcessedNewsItem(
+            id="bptw1",
+            original_title="Sam Altman early thoughts on AI governance frameworks",
+            original_content="Sam Altman shares early thoughts on AI governance and policy.",
+            source="Blog",
+            url="http://example.com/bptw1",
+            published_at=base_time - timedelta(hours=48),
+            chinese_title="Sam Altman早期AI治理思考",
+            grade="A",
+            score=85,
+            news_type="opinion",
+            entities=["Sam Altman", "治理"]
+        )
+        news2 = ProcessedNewsItem(
+            id="bptw2",
+            original_title="Sam Altman updated vision for global AI regulation",
+            original_content="Sam Altman shares updated vision on global AI regulation approaches.",
+            source="TechCrunch",
+            url="http://example.com/bptw2",
+            published_at=base_time,
+            chinese_title="Sam Altman更新全球AI监管愿景",
+            grade="A",
+            score=88,
+            news_type="opinion",
+            entities=["Sam Altman", "监管"]
+        )
+
+        events = grouper.group_news([news1, news2])
+        assert len(events) == 2, f"48h间隔超过24h窗口，应为2个事件，实际{len(events)}个"
+
 
 if __name__ == "__main__":
     # 运行测试

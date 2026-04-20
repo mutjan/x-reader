@@ -43,7 +43,8 @@ def main():
     for date_str in dates_to_delete:
         print(f"  {date_str}: {len(news[date_str])} 条新闻")
         for item in news[date_str]:
-            print(f"    - [{item.get('grade', '?')}] {item['chinese_title']}")
+            title = item.get('chinese_title') or item.get('title', '无标题')
+            print(f"    - [{item.get('grade', '?')}] {title}")
 
     # 删除过期日期
     for date_str in dates_to_delete:

@@ -3,7 +3,7 @@
 事件分组处理器
 自动将同事件的新闻归为一组
 """
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from dataclasses import dataclass, field
 from datetime import datetime
 import uuid
@@ -54,6 +54,10 @@ class EventGrouper:
         self.similarity_threshold = similarity_threshold
         self.grade_order = {"S": 5, "A+": 4, "A": 3, "B": 2, "C": 1, "": 0}
 
+        # 加载行为模式配置
+        from src.config.settings import EVENT_GROUPER_CONFIG
+        self.behavior_config = EVENT_GROUPER_CONFIG.get("behavior_pattern", {})
+
     def group_news(self, news_items: List[ProcessedNewsItem]) -> List[Event]:
         """
         将新闻列表分组为事件
@@ -70,6 +74,22 @@ class EventGrouper:
         for news in sorted_news:
             matched_event = None
             max_similarity = 0.0
+
+            # === 特殊规则：nature.com 同一天聚合 ===
+            nature_event = self._match_nature_pattern(news, events)
+            if nature_event:
+                nature_event.news_list.append(news)
+                self._update_event_properties(nature_event)
+                continue
+            # === 特殊规则结束 ===
+
+            # === 前置行为模式匹配 ===
+            behavior_event = self._match_behavior_pattern(news, events)
+            if behavior_event:
+                behavior_event.news_list.append(news)
+                self._update_event_properties(behavior_event)
+                continue
+            # === 行为模式匹配结束 ===
 
             # 查找最匹配的事件
             for event in events:
@@ -124,6 +144,111 @@ class EventGrouper:
             end_time=news.published_at,
             news_count=1
         )
+
+    def _match_nature_pattern(self, news: ProcessedNewsItem, events: List[Event]) -> Optional[Event]:
+        """
+        特殊规则：同一天来自 nature.com 的消息直接聚合成一个事件
+        """
+        if "nature.com" not in (news.url or "").lower():
+            return None
+
+        news_date = news.published_at.date()
+        for event in events:
+            for event_news in event.news_list:
+                if "nature.com" in (event_news.url or "").lower() and event_news.published_at.date() == news_date:
+                    return event
+        return None
+
+    def _match_behavior_pattern(self, news: ProcessedNewsItem, events: List[Event]) -> Optional[Event]:
+        """
+        前置行为模式匹配：同一行动者+同news_type+时间窗口内+实体Jaccard门槛
+        匹配到则跳过后续相似度计算
+        """
+        config = self.behavior_config
+        if not config.get("enabled", True):
+            return None
+
+        # 前置条件：新闻必须有 entities 和 news_type
+        if not news.entities or not news.news_type:
+            return None
+
+        actor_list = set(config.get("actors", []))
+        if not actor_list:
+            return None
+
+        # 找到新闻中与行动者列表匹配的实体
+        news_actors = set(news.entities) & actor_list
+        if not news_actors:
+            return None
+
+        time_window_hours = config.get("time_window_hours", 24)
+        generic_entities = {"AI", "人工智能", "机器人", "科技", "技术", "公司", "企业", "产品", "服务", "大模型", "大型语言模型"}
+
+        for event in events:
+            # 使用事件创建时的第一条新闻作为固定锚点，防止主新闻漂移
+            anchor_news = event.news_list[0] if event.news_list else event.main_news
+            if not anchor_news:
+                continue
+
+            # 条件1: 同 news_type（以锚点新闻为准）
+            if anchor_news.news_type != news.news_type:
+                continue
+
+            # 条件2: 与锚点新闻有共享行动者
+            anchor_actors = set(anchor_news.entities) & actor_list
+            shared_actors = news_actors & anchor_actors
+            if not shared_actors:
+                continue
+
+            # 条件3: 时间窗口内（以事件创建时间为锚点，避免窗口延展导致永不关闭）
+            time_diff = abs((news.published_at - event.start_time).total_seconds()) / 3600
+            if time_diff > time_window_hours:
+                continue
+
+            # 条件4: 主体一致性检查——行为模式匹配的语义是"同一行动者的相似行为"，
+            # 因此新闻的主要行动者必须与事件锚点的主要行动者一致。
+            # 主要行动者 = 标题中最早出现的actor（标题反映新闻主语，比实体列表顺序更可靠）。
+            # 实体列表顺序由AI提取时决定，不保证按重要性排列。
+            # 这防止了"Anthropic发布Claude"被匹配到OpenAI事件（即使碰巧提到了OpenAI）。
+            def _primary_actor(title, entities, actors):
+                best_pos, best = len(title or "") + 1, None
+                for a in actors:
+                    pos = (title or "").find(a)
+                    if 0 <= pos < best_pos:
+                        best_pos, best = pos, a
+                return best or next((e for e in entities if e in actors), None)
+
+            news_first_actor = _primary_actor(news.chinese_title, news.entities, actor_list)
+            anchor_first_actor = _primary_actor(anchor_news.chinese_title, anchor_news.entities, actor_list)
+            if news_first_actor and anchor_first_actor and news_first_actor != anchor_first_actor:
+                continue
+
+            # 条件5: 实体Jaccard门槛（防止实体集差异过大导致主题漂移）
+            e1 = set(news.entities) - generic_entities
+            e2 = set(anchor_news.entities) - generic_entities
+            if not e1 or not e2:
+                continue
+            entity_jaccard = len(e1 & e2) / len(e1 | e2)
+            # 主体一致（primary actor相同）时，允许较低的Jaccard（同行动者的不同话题）
+            # 主体不一致但共享actor时（已通过条件4检查），要求更高Jaccard
+            min_jaccard = 0.30 if (news_first_actor == anchor_first_actor) else 0.40
+            if entity_jaccard < min_jaccard:
+                continue
+
+            # 条件6: 高频实体惩罚——若新闻和锚点的实体全在高频列表中，说明它们
+            # 缺乏区分性的主题实体，仅靠高频公司/产品名聚合容易导致主题漂移。
+            # 此时禁止behavior匹配，让后续相似度匹配决定（相似度匹配会检查文本内容）。
+            high_freq_entities = {"OpenAI", "Anthropic", "Claude", "GPT", "Google",
+                                  "Apple", "NVIDIA", "Gemini", "Meta", "Elon Musk",
+                                  "Sam Altman", "Microsoft", "LLM", "xAI", "DeepSeek"}
+            all_news_hf = all(ent in high_freq_entities for ent in e1)
+            all_anchor_hf = all(ent in high_freq_entities for ent in e2)
+            if all_news_hf and all_anchor_hf:
+                continue
+
+            return event
+
+        return None
 
     def _update_event_properties(self, event: Event):
         """更新事件属性"""
@@ -351,6 +476,22 @@ class EventGrouper:
 
             matched_event = None
             max_similarity = 0.0
+
+            # === 特殊规则：nature.com 同一天聚合 ===
+            nature_event = self._match_nature_pattern(news, events)
+            if nature_event:
+                nature_event.news_list.append(news)
+                self._update_event_properties(nature_event)
+                continue
+            # === 特殊规则结束 ===
+
+            # === 前置行为模式匹配 ===
+            behavior_event = self._match_behavior_pattern(news, events)
+            if behavior_event:
+                behavior_event.news_list.append(news)
+                self._update_event_properties(behavior_event)
+                continue
+            # === 行为模式匹配结束 ===
 
             # 查找最匹配的现有事件
             for event in events:

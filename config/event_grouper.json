@@ -1,16 +1,36 @@
 {
   "entity_threshold": 1,
-  "similarity_threshold": 0.5,
+  "similarity_threshold": 0.40,
   "backup_enabled": true,
   "max_backups": 7,
   "backup_path": "data/backups/event_groups/",
   "threshold_floor": 0.01,
+  "jaccard_floor": 0.45,
+  "text_floor_all_high_freq": 0.45,
+  "high_freq_entities": [
+    "OpenAI", "Anthropic", "Claude", "GPT", "Google", "Apple", "NVIDIA",
+    "Gemini", "Meta", "Elon Musk", "Sam Altman", "Microsoft", "LLM",
+    "xAI", "DeepSeek"
+  ],
+  "text_floor": 0.18,
   "entity_threshold_steps": [
-    {"min_entities": 1, "text_threshold": 0.25, "entity_weight": 0.30, "text_weight": 0.70},
-    {"min_entities": 2, "text_threshold": 0.15, "entity_weight": 0.65, "text_weight": 0.35},
-    {"min_entities": 3, "text_threshold": 0.10, "entity_weight": 0.55, "text_weight": 0.45},
-    {"min_entities": 4, "text_threshold": 0.06, "entity_weight": 0.65, "text_weight": 0.35},
-    {"min_entities": 5, "text_threshold": 0.03, "entity_weight": 0.75, "text_weight": 0.25},
-    {"min_entities": 6, "text_threshold": 0.01, "entity_weight": 0.85, "text_weight": 0.15}
-  ]
+    {"min_entities": 1, "text_threshold": 0.15, "entity_weight": 0.30, "text_weight": 0.70},
+    {"min_entities": 2, "text_threshold": 0.08, "entity_weight": 0.45, "text_weight": 0.55},
+    {"min_entities": 3, "text_threshold": 0.05, "entity_weight": 0.50, "text_weight": 0.50},
+    {"min_entities": 4, "text_threshold": 0.05, "entity_weight": 0.55, "text_weight": 0.45},
+    {"min_entities": 5, "text_threshold": 0.05, "entity_weight": 0.60, "text_weight": 0.40},
+    {"min_entities": 6, "text_threshold": 0.05, "entity_weight": 0.65, "text_weight": 0.35}
+  ],
+  "behavior_pattern": {
+    "enabled": true,
+    "time_window_hours": 24,
+    "min_news_count": 2,
+    "actors": [
+      "Sam Altman", "Elon Musk", "Demis Hassabis", "Andrej Karpathy",
+      "Sundar Pichai", "Satya Nadella", "Mark Zuckerberg",
+      "OpenAI", "Anthropic", "Google", "Meta", "Apple", "NVIDIA",
+      "xAI", "DeepSeek", "Microsoft", "DeepMind",
+      "Terence Tao", "Marc Andreessen"
+    ]
+  }
 }

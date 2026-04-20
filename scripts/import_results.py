@@ -93,6 +93,29 @@ def main():
         logger.info(f"基础处理完成，得到 {len(processed_items)} 条有效新闻")
 
         if not processed_items:
+            # 尝试从快照的items创建ProcessedNewsItem对象
+            from src.models.news import ProcessedNewsItem
+            processed_items = []
+            for item_dict in snapshot_items:
+                try:
+                    item = ProcessedNewsItem(
+                        id=item_dict.get("id", ""),
+                        original_title=item_dict["title"],
+                        original_content=item_dict["content"],
+                        source=item_dict["source"],
+                        url=item_dict["url"],
+                        published_at=datetime.fromisoformat(item_dict["published_at"]),
+                        chinese_title="",
+                        summary="",
+                        news_type="",
+                        extension=""
+                    )
+                    processed_items.append(item)
+                except Exception as e:
+                    logger.warning(f"跳过无效快照条目: {e}")
+            logger.info(f"从快照创建了 {len(processed_items)} 条ProcessedNewsItem对象")
+
+        if not processed_items:
             logger.warning("没有有效新闻，退出")
             return 0
 

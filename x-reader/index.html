@@ -1,0 +1,2940 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日科技新闻摘要 | Tech Daily</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #0f1419;
+            color: #e7e9ea;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 15px;
+            padding-top: 100px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #2f3336;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            background: linear-gradient(135deg, #1d9bf0, #00ba7c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            color: #8899a6;
+            font-size: 13px;
+        }
+        
+        /* 日期切换器 */
+        .date-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .date-btn {
+            background: #1d9bf0;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .date-btn:hover {
+            background: #1a8cd8;
+        }
+        .date-btn:disabled {
+            background: #38444d;
+            cursor: not-allowed;
+        }
+        .current-date {
+            font-size: 16px;
+            font-weight: 600;
+            color: #e7e9ea;
+            min-width: 100px;
+            text-align: center;
+        }
+        .date-chip {
+            padding: 4px 10px;
+            background: #2f3336;
+            border-radius: 15px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .date-chip:hover, .date-chip.active {
+            background: #1d9bf0;
+        }
+        .update-time {
+            color: #8899a6;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        
+        /* 每日摘要区域 */
+        .summary-section {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.05));
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+        .summary-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #10b981;
+            cursor: pointer;
+            user-select: none;
+            transition: margin-bottom 0.3s ease;
+        }
+        .summary-header:hover {
+            opacity: 0.8;
+        }
+        .summary-header .icon {
+            font-size: 16px;
+        }
+        .summary-toggle {
+            margin-left: auto;
+            font-size: 12px;
+            color: #8899a6;
+            transition: transform 0.3s ease;
+        }
+        .summary-toggle.collapsed {
+            transform: rotate(-90deg);
+        }
+        .summary-content {
+            max-height: 2000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            opacity: 1;
+        }
+        .summary-content.collapsed {
+            max-height: 0;
+            opacity: 0;
+        }
+        .summary-section:has(.summary-content.collapsed) .summary-header {
+            margin-bottom: 0;
+        }
+        .zeitgeist-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0;
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #f59e0b;
+            cursor: pointer;
+            user-select: none;
+            transition: margin-bottom 0.3s ease;
+        }
+        .zeitgeist-header:hover {
+            opacity: 0.8;
+        }
+        .zeitgeist-header .icon {
+            font-size: 16px;
+        }
+        .zeitgeist-toggle {
+            margin-left: auto;
+            font-size: 12px;
+            color: #8899a6;
+            transition: transform 0.3s ease;
+        }
+        .zeitgeist-toggle.collapsed {
+            transform: rotate(-90deg);
+        }
+        .zeitgeist-content {
+            max-height: 2000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            opacity: 1;
+        }
+        .zeitgeist-content.collapsed {
+            max-height: 0;
+            opacity: 0;
+        }
+        .zeitgeist-section:has(.zeitgeist-content.collapsed) .zeitgeist-header {
+            margin-bottom: 0;
+        }
+        .zeitgeist-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 8px 0 16px 0;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 12px;
+        }
+        .summary-card {
+            background: rgba(15, 20, 25, 0.6);
+            border-radius: 8px;
+            padding: 12px;
+            border-left: 3px solid #10b981;
+        }
+        .summary-card:hover {
+            background: rgba(16, 185, 129, 0.1);
+        }
+        .summary-card-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .summary-type-tag {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+        .summary-count {
+            font-size: 12px;
+            color: #8899a6;
+            margin-left: auto;
+        }
+        .summary-items {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .summary-item {
+            font-size: 12px;
+            color: #e7e9ea;
+            line-height: 1.4;
+            padding: 4px 0;
+            border-bottom: 1px solid rgba(47, 51, 54, 0.5);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .summary-item:last-child {
+            border-bottom: none;
+        }
+        .summary-item .rating-badge {
+            font-size: 10px;
+            padding: 1px 4px;
+            border-radius: 3px;
+            margin-right: 6px;
+            font-weight: 600;
+        }
+        .summary-empty {
+            color: #8899a6;
+            font-size: 12px;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .zeitgeist-section {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.05));
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+        .zeitgeist-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #c084fc;
+        }
+        .zeitgeist-header .icon {
+            font-size: 16px;
+        }
+        .zeitgeist-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 10px;
+        }
+        .zeitgeist-item {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 12px;
+            background: rgba(15, 20, 25, 0.6);
+            border-radius: 8px;
+            border-left: 3px solid #8b5cf6;
+        }
+        .zeitgeist-item:hover {
+            background: rgba(139, 92, 246, 0.1);
+        }
+        .zeitgeist-main {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .zeitgeist-heat {
+            font-size: 18px;
+            font-weight: 700;
+            min-width: 45px;
+            text-align: center;
+        }
+        .zeitgeist-heat.high { color: #f87171; }
+        .zeitgeist-heat.medium { color: #fbbf24; }
+        .zeitgeist-heat.low { color: #34d399; }
+        .zeitgeist-title {
+            flex: 1;
+            font-size: 13px;
+            font-weight: 600;
+            color: #e7e9ea;
+        }
+        .zeitgeist-trend {
+            font-size: 16px;
+        }
+        .zeitgeist-desc {
+            font-size: 11px;
+            color: #8899a6;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .zeitgeist-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .zeitgeist-category {
+            font-size: 10px;
+            padding: 2px 6px;
+            background: rgba(139, 92, 246, 0.2);
+            border-radius: 4px;
+            color: #c084fc;
+        }
+        .zeitgeist-keywords {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .zeitgeist-keyword {
+            font-size: 10px;
+            padding: 1px 5px;
+            background: rgba(136, 153, 166, 0.15);
+            border-radius: 10px;
+            color: #8899a6;
+        }
+        .zeitgeist-empty {
+            color: #8899a6;
+            font-size: 13px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* 批量操作栏 */
+        .batch-actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .batch-btn {
+            padding: 8px 16px;
+            background: #00ba7c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .batch-btn:hover {
+            background: #00a870;
+        }
+        .batch-btn:disabled {
+            background: #38444d;
+            cursor: not-allowed;
+        }
+        .batch-info {
+            color: #8899a6;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* 浮动工具栏 */
+        .floating-toolbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(15, 20, 25, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #2f3336;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .toolbar-section {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0 10px;
+            border-right: 1px solid #2f3336;
+        }
+        .toolbar-section:last-child {
+            border-right: none;
+        }
+        .toolbar-label {
+            font-size: 11px;
+            color: #8899a6;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* 标签按钮样式 */
+        .tab-btn {
+            padding: 6px 12px;
+            background: #2f3336;
+            border: 1px solid #38444d;
+            border-radius: 6px;
+            color: #e7e9ea;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .tab-btn:hover {
+            background: #38444d;
+        }
+        .tab-btn.active {
+            background: #1d9bf0;
+            border-color: #1d9bf0;
+        }
+
+        /* 排序控件 */
+        .sort-controls {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .sort-btn {
+            padding: 6px 12px;
+            background: #2f3336;
+            border: 1px solid #38444d;
+            border-radius: 6px;
+            color: #e7e9ea;
+            cursor: pointer;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .sort-btn:hover {
+            background: #38444d;
+        }
+        .sort-btn.active {
+            background: #1d9bf0;
+            border-color: #1d9bf0;
+        }
+        
+        /* 表格样式 */
+        .news-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #16181c;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #2f3336;
+        }
+        .news-table th {
+            background: #1d9bf0;
+            color: white;
+            padding: 10px 6px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 12px;
+            white-space: nowrap;
+            cursor: pointer;
+            user-select: none;
+        }
+        .news-table th:hover {
+            background: #1a8cd8;
+        }
+        .news-table th:first-child {
+            width: 30px;
+            text-align: center;
+        }
+        .news-table th:nth-child(2) {
+            width: 60px;
+        }
+        .news-table th:nth-child(3) {
+            width: 70px;
+        }
+        .news-table th:nth-child(4) {
+            width: 22%;
+        }
+        .news-table th:nth-child(5) {
+            width: 22%;
+        }
+        .news-table th:nth-child(6) {
+            width: 12%;
+        }
+        .news-table th:nth-child(7) {
+            width: 10%;
+        }
+        .news-table th:nth-child(8) {
+            width: 15%;
+        }
+        .news-table th:nth-child(9) {
+            width: 45px;
+            text-align: center;
+        }
+        .news-table th:nth-child(10) {
+            width: 50px;
+            text-align: center;
+        }
+        .news-table td {
+            padding: 10px 6px;
+            border-bottom: 1px solid #2f3336;
+            vertical-align: top;
+        }
+        .news-table tr:hover {
+            background: #1d9bf010;
+        }
+        .news-table tr.selected {
+            background: #1d9bf020;
+        }
+        .news-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* X事件表格样式 */
+        .x-table th {
+            background: #8b5cf6;
+        }
+        .x-table th:hover {
+            background: #7c3aed;
+        }
+        
+        /* 复选框 */
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #1d9bf0;
+        }
+        
+        /* 评级标签 */
+        .rating-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        .rating-tag:hover {
+            opacity: 0.8;
+        }
+
+        /* 类型标签 */
+        .type-tag {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .type-product { background: #10b981; color: white; }
+        .type-funding { background: #f59e0b; color: white; }
+        .type-personnel { background: #8b5cf6; color: white; }
+        .type-opinion { background: #ec4899; color: white; }
+        .type-industry { background: #3b82f6; color: white; }
+        .type-safety { background: #ef4444; color: white; }
+        .type-research { background: #06b6d4; color: white; }
+        .type-financial { background: #84cc16; color: white; }
+        .type-breaking { background: #f97316; color: white; }
+        .type-tool { background: #6366f1; color: white; }
+        .type-society { background: #14b8a6; color: white; }
+        .type-hardware { background: #64748b; color: white; }
+        .entity-tag {
+            display: inline-block;
+            background: #2f3336;
+            border: 1px solid #38444d;
+            border-radius: 3px;
+            color: #8899a6;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        /* 反馈按钮 */
+        .feedback-btn {
+            background: #2f3336;
+            border: 1px solid #38444d;
+            color: #8899a6;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            cursor: pointer;
+            margin-left: 4px;
+        }
+        .feedback-btn:hover {
+            background: #1d9bf0;
+            border-color: #1d9bf0;
+            color: white;
+        }
+        /* 反馈弹窗 */
+        .feedback-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .feedback-modal.show {
+            display: flex;
+        }
+        .feedback-content {
+            background: #16181c;
+            border: 1px solid #2f3336;
+            border-radius: 12px;
+            padding: 24px;
+            width: 90%;
+            max-width: 500px;
+        }
+        .feedback-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        .feedback-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .feedback-close {
+            background: none;
+            border: none;
+            color: #8899a6;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .form-label {
+            font-size: 13px;
+            font-weight: 500;
+            color: #e7e9ea;
+        }
+        .form-select, .form-input, .form-textarea {
+            background: #2f3336;
+            border: 1px solid #38444d;
+            border-radius: 6px;
+            padding: 8px 12px;
+            color: #e7e9ea;
+            font-size: 14px;
+        }
+        .form-textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .form-actions {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end;
+        }
+        .btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .btn-secondary {
+            background: #38444d;
+            color: #e7e9ea;
+        }
+        .btn-primary {
+            background: #1d9bf0;
+            color: white;
+        }
+        /* 人工修正标记 */
+        .corrected-badge {
+            background: #f59e0b;
+            color: white;
+            font-size: 9px;
+            padding: 1px 3px;
+            border-radius: 3px;
+            margin-left: 4px;
+        }
+        .entity-tag:hover {
+            background: #1d9bf0;
+            border-color: #1d9bf0;
+            color: white;
+        }
+        .entity-tag.selected {
+            background: #00ba7c;
+            border-color: #00ba7c;
+            color: white;
+        }
+        .rating-S {
+            background: linear-gradient(135deg, #ffd700, #ffaa00);
+            color: #000;
+        }
+        .rating-A\+ {
+            background: #f4212e;
+            color: white;
+        }
+        .rating-A {
+            background: #8b5cf6;
+            color: white;
+        }
+        .rating-B {
+            background: #1d9bf0;
+            color: white;
+        }
+        .rating-C {
+            background: #6b7280;
+            color: white;
+        }
+        
+        /* 标题 */
+        .news-title {
+            font-weight: 600;
+            color: #e7e9ea;
+            font-size: 14px;
+        }
+        
+        /* 摘要 */
+        .news-summary {
+            color: #8899a6;
+            font-size: 12px;
+            line-height: 1.5;
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            max-height: calc(12px * 1.5 * 2); /* 2行高度 */
+            transition: all 0.2s ease;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        .news-summary:hover {
+            -webkit-line-clamp: 20;
+            max-height: calc(12px * 1.5 * 20); /* 最多显示20行 */
+            background: #1d9bf020;
+            overflow: visible;
+        }
+        
+        /* 消息源链接 */
+        .source-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .source-link {
+            display: inline-block;
+            padding: 2px 6px;
+            background: #2f3336;
+            color: #1d9bf0;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 10px;
+            max-width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .source-link:hover {
+            background: #1d9bf0;
+            color: white;
+        }
+        
+        /* 来源数量 */
+        .source-count {
+            text-align: center;
+            font-weight: 600;
+            color: #00ba7c;
+            font-size: 13px;
+        }
+        
+        /* 消息源链接 */
+        .source-links {
+            color: #c084fc;
+            font-size: 11px;
+            line-height: 1.4;
+            max-width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            cursor: help;
+        }
+        .news-expansion:hover {
+            -webkit-line-clamp: unset;
+            overflow: visible;
+            white-space: normal;
+            background: #1d9bf020;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        /* 扩展性字段 - 2行截断+hover展开 */
+        .expansion-content {
+            color: #8899a6;
+            font-size: 12px;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            max-height: calc(12px * 1.4 * 2); /* 2行高度 */
+            transition: all 0.2s ease;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        .expansion-content:hover {
+            -webkit-line-clamp: 20;
+            max-height: calc(12px * 1.4 * 20); /* 最多显示20行 */
+            background: #1d9bf020;
+            overflow: visible;
+        }
+        /* 实体列 - 自适应标签数量，多时缩小字体 */
+        .entities-container {
+            color: #8899a6;
+            font-size: 12px;
+            line-height: 1.4;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px 4px;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        .entities-container:hover {
+            background: #1d9bf020;
+        }
+        /* 根据标签数量动态调整字体大小 */
+        .entities-container.count-1 .entity-tag,
+        .entities-container.count-2 .entity-tag { font-size: 10px; padding: 2px 6px; }
+        .entities-container.count-3 .entity-tag,
+        .entities-container.count-4 .entity-tag { font-size: 9px; padding: 1px 4px; }
+        .entities-container.count-5 .entity-tag,
+        .entities-container.count-6 .entity-tag { font-size: 8px; padding: 1px 3px; }
+        .entities-container.count-many .entity-tag { font-size: 7px; padding: 1px 2px; }
+        /* 链接列 - 2行截断+hover展开 */
+        .link-container {
+            color: #8899a6;
+            font-size: 12px;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            max-height: calc(12px * 1.4 * 2); /* 2行高度 */
+            transition: all 0.2s ease;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        .link-container:hover {
+            -webkit-line-clamp: 20;
+            max-height: calc(12px * 1.4 * 20); /* 最多显示20行 */
+            background: #1d9bf020;
+            overflow: visible;
+        }
+
+        /* X事件样式 */
+        .x-event-users {
+            color: #8899a6;
+            font-size: 11px;
+            margin-top: 4px;
+        }
+        .x-event-posts {
+            color: #1d9bf0;
+            font-size: 11px;
+        }
+        
+        /* Toast 提示 */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #00ba7c;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .toast.show {
+            opacity: 1;
+        }
+        
+        /* 空状态 */
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #8899a6;
+        }
+        
+        /* 错误状态 */
+        .error-state {
+            text-align: center;
+            padding: 40px;
+            color: #f4212e;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #8899a6;
+            font-size: 12px;
+            border-top: 1px solid #2f3336;
+            margin-top: 20px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+
+        /* 事件时间线样式 */
+        .event-timeline-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .event-card {
+            background: #16181c;
+            border: 1px solid #2f3336;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .event-header {
+            padding: 16px;
+            border-bottom: 1px solid #2f3336;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.2s ease;
+        }
+
+        .event-header:hover {
+            background: rgba(29, 155, 240, 0.05);
+        }
+
+        .event-header-top {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .event-toggle {
+            font-size: 12px;
+            color: #8899a6;
+            margin-left: auto;
+            transition: transform 0.2s ease;
+        }
+
+        .event-toggle.collapsed {
+            transform: rotate(-90deg);
+        }
+
+        .event-title {
+            font-size: 16px;
+            font-weight: 600;
+            flex: 1;
+        }
+
+        .event-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 12px;
+            color: #8899a6;
+            flex-wrap: wrap;
+        }
+
+        .event-entities {
+            margin-top: 8px;
+        }
+
+        .event-content {
+            max-height: 2000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            opacity: 1;
+        }
+
+        .event-content.collapsed {
+            max-height: 0;
+            opacity: 0;
+        }
+
+        .timeline {
+            padding: 12px 0 12px 40px;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 16px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #2f3336;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 8px 0;
+            border-bottom: 1px solid #2f3336;
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -32px;
+            top: 12px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #1d9bf0;
+            border: 3px solid #16181c;
+            z-index: 1;
+        }
+
+        .timeline-time {
+            font-size: 11px;
+            color: #8899a6;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .timeline-content {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .timeline-title {
+            color: #1d9bf0;
+            font-size: 13px;
+            text-decoration: none;
+            flex: 1;
+        }
+
+        .timeline-title:hover {
+            text-decoration: underline;
+        }
+
+        /* 事件筛选和排序控件 */
+        .event-controls {
+            margin-bottom: 20px;
+            padding: 12px;
+            background: #16181c;
+            border: 1px solid #2f3336;
+            border-radius: 8px;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .event-control-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .event-control-label {
+            font-size: 12px;
+            color: #8899a6;
+            white-space: nowrap;
+        }
+
+        .event-control-select {
+            background: #2f3336;
+            border: 1px solid #38444d;
+            color: #e7e9ea;
+            padding: 4px 28px 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%238899a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+            background-repeat: no-repeat;
+            background-position: right 8px center;
+            transition: all 0.2s ease;
+        }
+
+        .event-control-select:hover {
+            background: #38444d;
+            border-color: #4a5a6a;
+        }
+
+        .event-control-select:focus {
+            outline: none;
+            border-color: #1d9bf0;
+            box-shadow: 0 0 0 2px rgba(29, 155, 240, 0.2);
+        }
+
+        .event-control-select option {
+            background: #2f3336;
+            color: #e7e9ea;
+            padding: 8px;
+        }
+
+        .event-search-input {
+            background: #2f3336;
+            border: 1px solid #38444d;
+            color: #e7e9ea;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            min-width: 200px;
+            transition: all 0.2s ease;
+        }
+
+        .event-search-input:hover {
+            background: #38444d;
+            border-color: #4a5a6a;
+        }
+
+        .event-search-input:focus {
+            outline: none;
+            border-color: #1d9bf0;
+            box-shadow: 0 0 0 2px rgba(29, 155, 240, 0.2);
+        }
+        .event-toggle-all-btn {
+            background: #2f3336;
+            border: 1px solid #38444d;
+            color: #e7e9ea;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+
+        .event-toggle-all-btn:hover {
+            background: #38444d;
+        }
+
+        /* 事件表格基础样式（适配深色主题） */
+        .event-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #16181c;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #2f3336;
+        }
+        .event-table th {
+            background: #1d9bf0;
+            color: white;
+            padding: 10px 6px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+        .event-table th:first-child {
+            width: 30px;
+            text-align: center;
+        }
+        .event-table th:nth-child(2) {
+            width: 30px;
+        }
+        .event-table th:nth-child(3) {
+            width: 50px;
+        }
+        .event-table th:nth-child(4) {
+            width: 70px;
+        }
+        .event-table th:nth-child(5) {
+            width: 21%;
+        }
+        .event-table th:nth-child(6) {
+            width: 19%;
+        }
+        .event-table th:nth-child(7) {
+            width: 11%;
+        }
+        .event-table th:nth-child(8) {
+            width: 10%;
+        }
+        .event-table th:nth-child(9) {
+            width: 8%;
+        }
+        .event-table th:nth-child(10) {
+            width: 12%;
+        }
+        .event-table th:nth-child(11) {
+            width: 50px;
+            text-align: center;
+        }
+        .event-table td {
+            padding: 10px 6px;
+            border-bottom: 1px solid #2f3336;
+            vertical-align: top;
+            color: #e7e9ea;
+        }
+        .event-table tr:hover {
+            background: #1d9bf010;
+        }
+        .event-table tr.selected {
+            background: #1d9bf020;
+        }
+
+        /* 展开按钮样式（深色主题） */
+        .event-expand-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 12px;
+            color: #1d9bf0;
+            transition: transform 0.2s ease;
+        }
+        .event-expand-btn:hover {
+            color: #1a8cd8;
+        }
+        .event-expand-btn.expanded {
+            /* 去掉旋转，直接用字符表示状态 */
+        }
+        .event-expand-btn:disabled,
+        .event-expand-btn.placeholder {
+            color: #38444d;
+            cursor: default;
+        }
+
+        /* 时间线展开区域样式（嵌入式，深色主题） */
+        .event-timeline-row {
+            background: #0f1419;
+        }
+        .event-timeline-content {
+            padding: 16px;
+        }
+        .event-timeline {
+            border-left: 2px solid #2f3336;
+            padding-left: 20px;
+            margin-left: 10px;
+            position: relative;
+        }
+        .event-timeline-item {
+            position: relative;
+            margin-bottom: 12px;
+            padding: 10px 12px;
+            background: #16181c;
+            border-radius: 6px;
+            border: 1px solid #2f3336;
+        }
+        .event-timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 14px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #1d9bf0;
+            border: 2px solid #0f1419;
+            box-shadow: 0 0 0 2px #2f3336;
+        }
+        .event-timeline-time {
+            font-size: 11px;
+            color: #8899a6;
+            margin-bottom: 4px;
+        }
+        .event-timeline-title {
+            font-weight: 500;
+            color: #e7e9ea;
+            margin-bottom: 4px;
+        }
+        .event-timeline-meta {
+            font-size: 11px;
+            color: #8899a6;
+        }
+
+        /* 事件表格移动端适配 */
+        @media (max-width: 768px) {
+            .event-table th:nth-child(6),
+            .event-table td:nth-child(6),
+            .event-table th:nth-child(7),
+            .event-table td:nth-child(7) {
+                display: none;
+            }
+            .event-timeline {
+                padding-left: 15px;
+                margin-left: 5px;
+            }
+            .event-timeline-item::before {
+                left: -21px;
+            }
+        }
+
+        /* 手机端优化 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 8px;
+                padding-top: 140px;
+            }
+            .floating-toolbar {
+                padding: 8px;
+                gap: 10px;
+            }
+            .toolbar-section {
+                padding: 0 6px;
+                gap: 4px;
+            }
+            .toolbar-label {
+                font-size: 10px;
+            }
+            .date-selector {
+                gap: 4px;
+            }
+            .date-btn {
+                padding: 4px 8px;
+                font-size: 11px;
+            }
+            .current-date {
+                font-size: 13px;
+                min-width: 70px;
+            }
+            .batch-actions {
+                gap: 4px;
+            }
+            .batch-btn {
+                padding: 4px 8px !important;
+                font-size: 11px !important;
+            }
+            .batch-info {
+                font-size: 11px;
+            }
+            .sort-controls {
+                gap: 3px;
+            }
+            .sort-btn {
+                padding: 4px 8px;
+                font-size: 10px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .tab {
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+            .news-table {
+                font-size: 13px;
+            }
+            .news-table th,
+            .news-table td {
+                padding: 8px 4px;
+            }
+            .news-table th:nth-child(5),
+            .news-table td:nth-child(5),
+            .news-table th:nth-child(6),
+            .news-table td:nth-child(6) {
+                display: none;
+            }
+            .news-table th:first-child,
+            .news-table td:first-child {
+                width: 25px;
+            }
+            .news-table th:nth-child(2),
+            .news-table td:nth-child(2) {
+                width: 45px;
+            }
+            .news-table th:nth-child(3),
+            .news-table td:nth-child(3) {
+                width: 60px;
+            }
+            .news-table th:nth-child(4),
+            .news-table td:nth-child(4) {
+                width: 35%;
+            }
+            .news-table th:nth-child(6),
+            .news-table td:nth-child(6) {
+                width: 35%;
+            }
+            .news-table th:nth-child(7),
+            .news-table td:nth-child(7) {
+                display: none;
+            }
+            .news-table th:nth-child(9),
+            .news-table td:nth-child(9) {
+                width: 45px;
+            }
+            .news-table th:nth-child(10),
+            .news-table td:nth-child(10) {
+                width: 45px;
+            }
+            .news-title {
+                font-size: 13px;
+            }
+            .news-summary {
+                font-size: 12px;
+                line-height: 1.5;
+            }
+            .rating-tag {
+                font-size: 10px;
+                padding: 2px 5px;
+            }
+            .batch-actions {
+                padding: 8px;
+            }
+            .batch-btn {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+            .sort-controls {
+                gap: 6px;
+            }
+            .sort-btn {
+                padding: 5px 10px;
+                font-size: 11px;
+            }
+            .x-table th:nth-child(4),
+            .x-table td:nth-child(4) {
+                display: none;
+            }
+            .x-table th:nth-child(2),
+            .x-table td:nth-child(2) {
+                width: 35%;
+            }
+            .x-table th:nth-child(3),
+            .x-table td:nth-child(3) {
+                width: auto;
+                min-width: 50%;
+            }
+            /* 时代情绪移动端 */
+            .zeitgeist-list {
+                grid-template-columns: 1fr;
+            }
+            .zeitgeist-item {
+                padding: 10px;
+            }
+            .zeitgeist-heat {
+                font-size: 16px;
+                min-width: 40px;
+            }
+            .zeitgeist-title {
+                font-size: 12px;
+            }
+
+            /* 事件时间线移动端 */
+            .timeline {
+                padding-left: 30px;
+            }
+
+            .timeline::before {
+                left: 10px;
+            }
+
+            .timeline-marker {
+                left: -26px;
+            }
+
+            .event-controls {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+
+            .event-control-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .event-search-input {
+                min-width: auto;
+            }
+
+            .event-toggle-all-btn {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 浮动工具栏 -->
+    <div class="floating-toolbar">
+        <div class="toolbar-section">
+            <span class="toolbar-label">视图</span>
+            <div class="tab-controls" id="tabControls">
+                <button class="tab-btn" onclick="switchTab('news')" id="tabNews">📰 新闻列表</button>
+                <button class="tab-btn active" onclick="switchTab('events')" id="tabEvents" style="display: none;">📅 事件追踪</button>
+            </div>
+        </div>
+        <div class="toolbar-section" id="dateToolbarSection">
+            <span class="toolbar-label">日期</span>
+            <div class="date-selector">
+                <button class="date-btn" onclick="changeDate(-1)" id="prevDate">←</button>
+                <span class="current-date" id="toolbarDate">--</span>
+                <button class="date-btn" onclick="changeDate(1)" id="nextDate">→</button>
+            </div>
+        </div>
+        <div class="toolbar-section" id="actionsToolbarSection">
+            <span class="toolbar-label">选择</span>
+            <div class="batch-actions">
+                <span class="batch-info"><strong id="selectedCount">0</strong> 条</span>
+                <button class="batch-btn" onclick="selectAll()" id="selectAllBtn" style="padding: 6px 12px; font-size: 12px;">全选</button>
+                <button class="batch-btn" onclick="copySelected()" id="copySelectedBtn" disabled style="padding: 6px 12px; font-size: 12px;">复制选中</button>
+                <button class="batch-btn" onclick="clearSelection()" style="background: #f4212e; padding: 6px 12px; font-size: 12px;">清空</button>
+            </div>
+        </div>
+        <div class="toolbar-section" id="sortToolbarSection">
+            <span class="toolbar-label">排序</span>
+            <div class="sort-controls">
+                <button class="sort-btn" onclick="sortBy('rating')" id="sortRating">评级</button>
+                <button class="sort-btn" onclick="sortBy('type')" id="sortType">类型</button>
+                <button class="sort-btn" onclick="sortBy('entities')" id="sortEntities">实体</button>
+                <button class="sort-btn" onclick="sortBy('sources')" id="sortSources">来源</button>
+                <button class="sort-btn" onclick="sortBy('time')" id="sortTime">时间</button>
+                <button class="sort-btn" onclick="resetSort()" id="resetSort">默认</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>📰 每日科技新闻摘要</h1>
+            <p class="subtitle">Tech Daily Digest from Inoreader & X</p>
+        </header>
+
+        <!-- 每日摘要区域 -->
+        <div class="summary-section" id="summarySection" style="display: none;">
+            <div class="summary-header" onclick="toggleSummary()">
+                <span class="icon">📊</span>
+                <span>每日摘要</span>
+                <span style="font-size: 12px; font-weight: normal; color: #8899a6;" id="summaryCount"></span>
+                <span class="summary-toggle collapsed" id="summaryToggle">▼</span>
+            </div>
+            <div class="summary-content collapsed" id="summaryContent">
+                <div class="summary-grid" id="summaryGrid">
+                    <!-- 动态填充 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 时代情绪区域 -->
+        <div class="zeitgeist-section" id="zeitgeistSection" style="display: none;">
+            <div class="zeitgeist-header" onclick="toggleZeitgeist()">
+                <span class="icon">🌊</span>
+                <span>时代情绪追踪</span>
+                <span style="font-size: 12px; font-weight: normal; color: #8899a6;" id="zeitgeistCount"></span>
+                <span class="zeitgeist-toggle collapsed" id="zeitgeistToggle">▼</span>
+            </div>
+            <div class="zeitgeist-content collapsed" id="zeitgeistContent">
+                <div class="zeitgeist-list" id="zeitgeistList">
+                    <!-- 动态填充 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Inoreader 新闻 -->
+        <div>
+            <div id="dateChips" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;"></div>
+
+            <p class="update-time"><span id="currentDate" style="font-weight: 600; color: #e7e9ea;">--</span> | 更新时间：<span id="updateTime">--</span> | 共 <span id="totalCount">0</span> 条</p>
+
+            <main id="main-content">
+                <!-- 新闻列表视图 -->
+                <div id="news-content" style="display: none;">
+                    <div class="empty-state">加载中...</div>
+                </div>
+                <!-- 事件追踪视图 -->
+                <div id="events-content">
+                    <div class="empty-state">加载中...</div>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <p>数据来源：Inoreader RSS | 每小时 自动更新</p>
+            <p>由 OpenClaw 自动生成 · 托管于 GitHub Pages · 版本: <span id="version">--</span></p>
+            <p><a href="https://github.com/mutjan/x-reader" target="_blank" rel="noopener" style="color: #8899a6; text-decoration: none;">⭐ GitHub 仓库</a></p>
+        </footer>
+    </div>
+
+    <div class="toast" id="toast">已复制</div>
+
+
+    <script>
+        // ==================== 数据加载 ====================
+        let NEWS_ARCHIVE = {};
+        let EVENTS = [];
+        let UPCOMING_EVENTS = [];
+        let ZEITGEIST = [];
+        let currentTab = 'events'; // news/events — 默认显示事件追踪
+        let selectedItems = new Set(); // 存储选中的项目ID（新闻或事件）
+
+        // 提取URL中的域名，去掉.com后缀，Twitter/X显示为x(用户名)
+        function extractDomain(url) {
+            if (!url) return '链接';
+            try {
+                const urlObj = new URL(url);
+                const domain = urlObj.hostname.replace(/^www\./, '');
+                // Twitter/X 链接显示为 x(用户名)
+                if (domain === 'twitter.com' || domain === 'x.com') {
+                    const pathParts = urlObj.pathname.split('/').filter(p => p);
+                    if (pathParts.length > 0) {
+                        return `x(${pathParts[0]})`;
+                    }
+                    return 'x';
+                }
+                return domain.replace(/\.com$/, ''); // 移除.com后缀
+            } catch (e) {
+                // 正则提取作为fallback
+                const match = url.match(/^https?:\/\/([^\/]+)/);
+                if (match) {
+                    const domain = match[1].replace(/^www\./, '');
+                    if (domain === 'twitter.com' || domain === 'x.com') {
+                        const usernameMatch = url.match(/^https?:\/\/[^\/]+\/([^\/]+)/);
+                        if (usernameMatch) {
+                            return `x(${usernameMatch[1]})`;
+                        }
+                        return 'x';
+                    }
+                    return domain.replace(/\.com$/, '');
+                }
+                return '链接';
+            }
+        }
+
+        // 加载数据
+        async function loadData() {
+            try {
+                // 第一步：优先加载新闻数据，立即渲染
+                const newsResponse = await fetch('data/news_data.json?v=' + Date.now());
+                if (!newsResponse.ok) throw new Error('Failed to load news data');
+                const newsData = await newsResponse.json();
+                if (newsData.news) {
+                    NEWS_ARCHIVE = newsData.news;
+                } else {
+                    NEWS_ARCHIVE = newsData;
+                }
+
+                // 新闻加载完成后立即渲染，不等事件数据
+                currentDate = getLatestDate();
+                renderTabs();
+                switchTab(currentTab);
+
+                // 第二步：后台加载事件数据（不阻塞首屏渲染）
+                loadEventsAsync();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('news-content').innerHTML =
+                    `<div class="error-state">❌ 数据加载失败: ${error.message}</div>`;
+            }
+        }
+
+        // 后台异步加载事件分组数据
+        async function loadEventsAsync() {
+            try {
+                const resp = await fetch('data/event_groups.json?v=' + Date.now());
+                if (!resp.ok) {
+                    EVENTS = [];
+                    return;
+                }
+                const eventsData = await resp.json();
+                const rawEventGroups = eventsData.event_groups || eventsData || [];
+
+                // 创建新闻查找字典
+                const allNews = {};
+                Object.values(NEWS_ARCHIVE).forEach(dateNews => {
+                    dateNews.forEach(item => {
+                        allNews[item.id] = item;
+                    });
+                });
+
+                // 处理事件分组，关联新闻数据
+                EVENTS = rawEventGroups.map(group => {
+                    const newsList = group.news_ids
+                        .map(newsId => allNews[newsId])
+                        .filter(Boolean);
+                    if (newsList.length === 0) return null;
+                    newsList.sort((a, b) => a.timestamp - b.timestamp);
+
+                    const timestamps = newsList.map(item => item.timestamp);
+                    const scores = newsList.map(item => item.score || 0);
+                    const ratings = newsList.map(item => item.rating || 'C');
+                    const entities = [...new Set(newsList.flatMap(item => item.entities || []))];
+                    const mainNews = newsList[0];
+
+                    return {
+                        id: group.group_id,
+                        title: group.event_title,
+                        news_count: newsList.length,
+                        start_time: Math.min(...timestamps),
+                        end_time: Math.max(...timestamps),
+                        max_score: Math.max(...scores),
+                        max_grade: ratings.sort((a, b) => getRatingOrder(a) - getRatingOrder(b))[0],
+                        entities: entities,
+                        news_list: newsList,
+                        main_news_url: mainNews ? mainNews.url : '',
+                        main_news_summary: mainNews ? mainNews.summary : ''
+                    };
+                }).filter(Boolean);
+
+                console.log(`Loaded ${EVENTS.length} events from event_groups.json`);
+                renderTabs();
+                if (currentTab === 'events') renderCurrentView();
+            } catch (e) {
+                console.warn('事件数据加载失败:', e);
+                EVENTS = [];
+            }
+        }
+
+        // 后台异步加载时代情绪数据
+        async function loadZeitgeistAsync() {
+            try {
+                const resp = await fetch('config/zeitgeist.json?v=' + Date.now());
+                if (!resp.ok) return;
+                const data = await resp.json();
+                ZEITGEIST = data.zeitgeist || [];
+                renderZeitgeist();
+            } catch (e) {
+                console.warn('时代情绪数据加载失败:', e);
+            }
+        }
+
+        // ==================== 全局状态 ====================
+        let currentDate = '';
+        let currentSort = { field: 'rating', order: 'desc' };
+        let filteredRating = null;
+        let selectedEntity = null;
+
+        // 事件视图状态
+        let eventFilters = {
+            search: '',
+            minScore: 0,
+            minNewsCount: 0,
+            entity: null
+        };
+        let eventSort = { field: 'end_time', order: 'desc' };
+
+        // 事件表格状态
+        let expandedEvents = new Set(); // 存储已展开的事件ID
+        let collapsedEvents = new Set();
+
+        // ==================== 标签切换 ====================
+        function renderTabs() {
+            // 只有存在事件时才显示事件标签
+            const tabEvents = document.getElementById('tabEvents');
+            if (EVENTS.length > 0) {
+                tabEvents.style.display = 'inline-block';
+            } else {
+                tabEvents.style.display = 'none';
+            }
+        }
+
+        function switchTab(tab) {
+            currentTab = tab;
+            // 更新标签状态
+            document.getElementById('tabNews').className = 'tab-btn' + (tab === 'news' ? ' active' : '');
+            document.getElementById('tabEvents').className = 'tab-btn' + (tab === 'events' ? ' active' : '');
+
+            // 显示/隐藏工具栏部分
+            if (tab === 'news') {
+                document.getElementById('dateToolbarSection').style.display = 'flex';
+                document.getElementById('actionsToolbarSection').style.display = 'flex';
+                document.getElementById('sortToolbarSection').style.display = 'flex';
+                document.getElementById('news-content').style.display = 'block';
+                document.getElementById('events-content').style.display = 'none';
+                renderNews();
+            } else {
+                document.getElementById('dateToolbarSection').style.display = 'none';
+                document.getElementById('actionsToolbarSection').style.display = 'flex';
+                document.getElementById('sortToolbarSection').style.display = 'flex';
+                document.getElementById('news-content').style.display = 'none';
+                document.getElementById('events-content').style.display = 'block';
+                renderEvents();
+            }
+            updateBatchButtons();
+            updateSortButtons();
+        }
+
+        function renderCurrentView() {
+            if (currentTab === 'news') {
+                renderNews();
+            } else {
+                renderEvents();
+            }
+        }
+
+        // ==================== 事件展示功能 ====================
+        function getFilteredAndSortedEvents() {
+            let filtered = [...EVENTS];
+
+            // 应用筛选
+            if (eventFilters.search) {
+                const searchTerm = eventFilters.search.toLowerCase();
+                filtered = filtered.filter(event => {
+                    // 搜索事件标题
+                    if (event.title.toLowerCase().includes(searchTerm)) return true;
+                    // 搜索实体
+                    if (event.entities.some(e => e.toLowerCase().includes(searchTerm))) return true;
+                    // 搜索新闻标题
+                    if (event.news_list.some(n => n.title.toLowerCase().includes(searchTerm))) return true;
+                    return false;
+                });
+            }
+
+            // 最低评分筛选
+            if (eventFilters.minScore > 0) {
+                filtered = filtered.filter(event => event.max_score >= eventFilters.minScore);
+            }
+
+            // 最少新闻数量筛选
+            if (eventFilters.minNewsCount > 0) {
+                filtered = filtered.filter(event => event.news_count >= eventFilters.minNewsCount);
+            }
+
+            // 实体筛选
+            if (eventFilters.entity) {
+                filtered = filtered.filter(event => event.entities.includes(eventFilters.entity));
+            }
+
+            // 应用排序
+            filtered.sort((a, b) => {
+                let valA, valB;
+                switch (eventSort.field) {
+                    case 'max_score':
+                        valA = a.max_score;
+                        valB = b.max_score;
+                        break;
+                    case 'news_count':
+                        valA = a.news_count;
+                        valB = b.news_count;
+                        break;
+                    case 'start_time':
+                        valA = a.start_time;
+                        valB = b.start_time;
+                        break;
+                    case 'end_time':
+                        valA = a.end_time;
+                        valB = b.end_time;
+                        break;
+                    case 'title':
+                        valA = a.title.toLowerCase();
+                        valB = b.title.toLowerCase();
+                        break;
+                    case 'max_grade':
+                        // 评级排序：S > A > B > C > D
+                        const gradeOrder = { 'S': 6, 'A': 5, 'B': 4, 'C': 3, 'D': 2, 'E': 1 };
+                        valA = gradeOrder[a.max_grade] || 0;
+                        valB = gradeOrder[b.max_grade] || 0;
+                        break;
+                    case 'type':
+                        // 类型排序：取第一条新闻的类型
+                        const typeA = a.news_list && a.news_list[0] ? a.news_list[0].type : '';
+                        const typeB = b.news_list && b.news_list[0] ? b.news_list[0].type : '';
+                        valA = typeA.toLowerCase();
+                        valB = typeB.toLowerCase();
+                        break;
+                    case 'entities':
+                        // 实体排序：按实体数量排序
+                        valA = (a.entities || []).length;
+                        valB = (b.entities || []).length;
+                        break;
+                    default:
+                        valA = a.max_score;
+                        valB = b.max_score;
+                }
+
+                if (typeof valA === 'string' && typeof valB === 'string') {
+                    return eventSort.order === 'asc'
+                        ? valA.localeCompare(valB)
+                        : valB.localeCompare(valA);
+                } else {
+                    return eventSort.order === 'asc' ? valA - valB : valB - valA;
+                }
+            });
+
+            return filtered;
+        }
+
+        function toggleEventCollapse(eventId) {
+            if (collapsedEvents.has(eventId)) {
+                collapsedEvents.delete(eventId);
+            } else {
+                collapsedEvents.add(eventId);
+            }
+            renderEvents();
+        }
+
+        function toggleAllEvents() {
+            const filteredEvents = getFilteredAndSortedEvents();
+            const allCollapsed = filteredEvents.every(e => collapsedEvents.has(e.id));
+
+            if (allCollapsed) {
+                filteredEvents.forEach(e => collapsedEvents.delete(e.id));
+            } else {
+                filteredEvents.forEach(e => collapsedEvents.add(e.id));
+            }
+            renderEvents();
+        }
+
+        function filterEventsByEntity(entity) {
+            if (eventFilters.entity === entity) {
+                eventFilters.entity = null;
+            } else {
+                eventFilters.entity = entity;
+            }
+            renderEvents();
+        }
+
+        function sortEventsBy(field) {
+            // 支持的排序字段列表
+            const supportedFields = ['max_score', 'max_grade', 'type', 'title', 'entities', 'news_count', 'start_time', 'end_time'];
+
+            // 验证字段，不支持的字段默认使用max_score
+            if (!supportedFields.includes(field)) {
+                field = 'max_score';
+            }
+
+            if (eventSort.field === field) {
+                eventSort.order = eventSort.order === 'asc' ? 'desc' : 'asc';
+            } else {
+                eventSort.field = field;
+                eventSort.order = 'desc';
+            }
+
+            // 同步更新排序下拉框的选中值
+            const sortSelect = document.querySelector('.event-control-select[onchange*="sortEventsBy"]');
+            if (sortSelect) {
+                sortSelect.value = eventSort.field;
+            }
+
+            updateSortButtons();
+            renderEvents();
+        }
+
+        // 切换单个事件的选择状态
+        function toggleEventSelection(eventId) {
+            if (selectedItems.has(eventId)) {
+                selectedItems.delete(eventId);
+            } else {
+                selectedItems.add(eventId);
+            }
+            updateBatchButtons();
+        }
+
+        // 切换全选/取消全选事件
+        function toggleSelectAllEvents(checkbox) {
+            const filteredEvents = getFilteredAndSortedEvents();
+            if (checkbox.checked) {
+                filteredEvents.forEach(event => selectedItems.add(event.id));
+            } else {
+                filteredEvents.forEach(event => selectedItems.delete(event.id));
+            }
+            updateBatchButtons();
+        }
+
+        // 更新批量操作按钮状态
+        function updateBatchButtons() {
+            let selectedCount = 0;
+
+            if (currentTab === 'news') {
+                // 新闻视图：计算选中的新闻数量
+                const newsList = NEWS_ARCHIVE[currentDate] || [];
+                const displayList = getSortedAndFilteredNews(newsList);
+                selectedCount = displayList.filter((_, index) => selectedItems.has(`${currentDate}-${index}`)).length;
+
+                // 更新全选按钮文本
+                const selectAllBtn = document.getElementById('selectAllBtn');
+                selectAllBtn.textContent =
+                    selectedCount === displayList.length && displayList.length > 0 ? '取消全选' : '全选';
+            } else {
+                // 事件视图：计算选中的事件数量
+                const filteredEvents = getFilteredAndSortedEvents();
+                selectedCount = filteredEvents.filter(event => selectedItems.has(event.id)).length;
+
+                // 更新全选按钮文本
+                const selectAllBtn = document.getElementById('selectAllBtn');
+                const allSelected = filteredEvents.length > 0 && filteredEvents.every(event => selectedItems.has(event.id));
+                selectAllBtn.textContent = allSelected ? '取消全选' : '全选';
+
+                // 更新表格中的复选框状态
+                const checkboxes = document.querySelectorAll('.event-table .checkbox');
+                checkboxes.forEach(checkbox => {
+                    const onchange = checkbox.getAttribute('onchange') || '';
+                    const match = onchange.match(/'([^']+)'/);
+                    if (match) {
+                        const eventId = match[1];
+                        checkbox.checked = selectedItems.has(eventId);
+                    }
+                });
+
+                // 更新表头的全选复选框状态
+                const headerCheckbox = document.querySelector('.event-table thead .checkbox');
+                if (headerCheckbox) {
+                    headerCheckbox.checked = filteredEvents.length > 0 && filteredEvents.every(event => selectedItems.has(event.id));
+                }
+            }
+
+            document.getElementById('selectedCount').textContent = selectedCount;
+            document.getElementById('copySelectedBtn').disabled = selectedCount === 0;
+        }
+
+        // 全选按钮点击处理
+        function selectAll() {
+            if (currentTab === 'news') {
+                // 新闻视图的全选逻辑待实现
+                return;
+            }
+
+            const filteredEvents = getFilteredAndSortedEvents();
+            const allSelected = filteredEvents.length > 0 && filteredEvents.every(event => selectedItems.has(event.id));
+
+            if (allSelected) {
+                // 取消全选
+                filteredEvents.forEach(event => selectedItems.delete(event.id));
+            } else {
+                // 全选
+                filteredEvents.forEach(event => selectedItems.add(event.id));
+            }
+
+            updateBatchButtons();
+        }
+
+        // 清空选择
+        function clearSelection() {
+            selectedItems.clear();
+            updateBatchButtons();
+        }
+
+        let _activeEventInput = null; // 追踪事件控件中当前聚焦的输入元素
+
+        function updateEventSearch(e) {
+            eventFilters.search = e.target.value;
+            renderEvents();
+        }
+
+        function updateMinScore(e) {
+            eventFilters.minScore = parseInt(e.target.value) || 0;
+            renderEvents();
+        }
+
+        function updateMinNewsCount(e) {
+            eventFilters.minNewsCount = parseInt(e.target.value) || 0;
+            renderEvents();
+        }
+
+        function renderEvents() {
+            const content = document.getElementById('events-content');
+
+            if (EVENTS.length === 0) {
+                content.innerHTML = `<div class="empty-state"><p>📭 暂无事件数据</p></div>`;
+                return;
+            }
+
+            const filteredEvents = getFilteredAndSortedEvents();
+
+            // 事件分级颜色映射
+            const getRatingClass = (rating) => {
+                const map = { 'S': 'rating-S', 'A+': 'rating-A\+', 'A': 'rating-A', 'B': 'rating-B', 'C': 'rating-C' };
+                return map[rating] || 'rating-C';
+            };
+
+            // 类型映射
+            const typeMap = {
+                'product': '产品发布', 'funding': '融资上市', 'personnel': '人事变动',
+                'opinion': '观点访谈', 'industry': '行业动态', 'safety': '安全伦理',
+                'research': '研究成果', 'financial': '商业数据', 'breaking': '突发事件',
+                'tool': '工具技巧', 'society': '社会影响', 'hardware': '硬件基建'
+            };
+
+            // 格式化时间
+            const formatTime = (timestamp) => {
+                if (!timestamp) return '--';
+                const date = new Date(typeof timestamp === 'number' ? timestamp * 1000 : timestamp);
+                return date.toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+            };
+
+            content.innerHTML = `
+                <div style="margin-bottom: 20px;">
+                    <h2 style="margin-bottom: 10px;">📅 热点事件追踪</h2>
+                    <p class="update-time">共 ${EVENTS.length} 个热点事件 | 筛选后 ${filteredEvents.length} 个</p>
+                </div>
+
+                <!-- 事件筛选和排序控件 -->
+                <div class="event-controls">
+                    <div class="event-control-group">
+                        <label class="event-control-label">搜索:</label>
+                        <input type="text" class="event-search-input" placeholder="搜索事件、实体、新闻标题..."
+                               value="${eventFilters.search}" oninput="_activeEventInput='search'; updateEventSearch(event)">
+                    </div>
+
+                    <div class="event-control-group">
+                        <label class="event-control-label">最低评分:</label>
+                        <select class="event-control-select" onchange="_activeEventInput='minScore'; updateMinScore(event)">
+                            <option value="0" ${eventFilters.minScore === 0 ? 'selected' : ''}>全部</option>
+                            <option value="70" ${eventFilters.minScore === 70 ? 'selected' : ''}>>=70分</option>
+                            <option value="80" ${eventFilters.minScore === 80 ? 'selected' : ''}>>=80分</option>
+                            <option value="90" ${eventFilters.minScore === 90 ? 'selected' : ''}>>=90分</option>
+                        </select>
+                    </div>
+
+                    <div class="event-control-group">
+                        <label class="event-control-label">新闻数量:</label>
+                        <select class="event-control-select" onchange="_activeEventInput='minNewsCount'; updateMinNewsCount(event)">
+                            <option value="0" ${eventFilters.minNewsCount === 0 ? 'selected' : ''}>全部</option>
+                            <option value="2" ${eventFilters.minNewsCount === 2 ? 'selected' : ''}>>=2条</option>
+                            <option value="3" ${eventFilters.minNewsCount === 3 ? 'selected' : ''}>>=3条</option>
+                            <option value="5" ${eventFilters.minNewsCount === 5 ? 'selected' : ''}>>=5条</option>
+                        </select>
+                    </div>
+
+                    <div class="event-control-group">
+                        <label class="event-control-label">排序:</label>
+                        <select class="event-control-select" onchange="sortEventsBy(event.target.value)">
+                            <option value="max_score" ${eventSort.field === 'max_score' ? 'selected' : ''}>评分高低</option>
+                            <option value="max_grade" ${eventSort.field === 'max_grade' ? 'selected' : ''}>评级高低</option>
+                            <option value="type" ${eventSort.field === 'type' ? 'selected' : ''}>新闻类型</option>
+                            <option value="title" ${eventSort.field === 'title' ? 'selected' : ''}>事件标题</option>
+                            <option value="entities" ${eventSort.field === 'entities' ? 'selected' : ''}>实体数量</option>
+                            <option value="news_count" ${eventSort.field === 'news_count' ? 'selected' : ''}>新闻数量</option>
+                            <option value="start_time" ${eventSort.field === 'start_time' ? 'selected' : ''}>开始时间</option>
+                            <option value="end_time" ${eventSort.field === 'end_time' ? 'selected' : ''}>更新时间</option>
+                        </select>
+                    </div>
+
+                    <button class="event-toggle-all-btn" onclick="toggleAllEvents()">
+                        ${filteredEvents.every(e => expandedEvents.has(e.id)) ? '全部折叠' : '全部展开'}
+                    </button>
+                </div>
+
+                <table class="event-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" class="checkbox" onchange="toggleSelectAllEvents(this)"></th>
+                            <th></th>
+                            <th onclick="sortEventsBy('max_grade')" style="cursor: pointer;">
+                                评级 ${eventSort.field === 'max_grade' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
+                            <th onclick="sortEventsBy('type')" style="cursor: pointer;">
+                                类型 ${eventSort.field === 'type' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
+                            <th onclick="sortEventsBy('title')" style="cursor: pointer;">
+                                标题 ${eventSort.field === 'title' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
+                            <th>摘要</th>
+                            <th onclick="sortEventsBy('entities')" style="cursor: pointer;">
+                                实体 ${eventSort.field === 'entities' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
+                            <th>链接</th>
+                            <th onclick="sortEventsBy('end_time')" style="cursor: pointer;">
+                                更新时间 ${eventSort.field === 'end_time' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
+                            <th onclick="sortEventsBy('news_count')" style="cursor: pointer;">
+                                新闻数 ${eventSort.field === 'news_count' ? (eventSort.order === 'asc' ? '↑' : '↓') : ''}
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${filteredEvents.map(event => {
+                            const isExpanded = expandedEvents.has(event.id);
+                            const isSingleNews = event.news_count === 1;
+                            const hasExpandBtn = !isSingleNews;
+                            const mainNews = event.news_list && event.news_list.length > 0
+                                ? event.news_list.reduce((max, n) => (n.score || 0) > (max.score || 0) ? n : max, event.news_list[0])
+                                : null;
+
+                            let html = `
+                                <tr class="event-row">
+                                    <td style="text-align: center;">
+                                        <input type="checkbox" class="checkbox" onchange="toggleEventSelection('${event.id}')">
+                                    </td>
+                                    <td style="text-align: center;">
+                                        ${hasExpandBtn ? `
+                                            <button class="event-expand-btn ${isExpanded ? 'expanded' : ''}"
+                                                    onclick="toggleEventExpand('${event.id}')">
+                                                ${isExpanded ? '▼' : '▶'}
+                                            </button>
+                                        ` : '<span class="event-expand-btn placeholder">•</span>'}
+                                    </td>
+                                    <td>
+                                        <span class="rating-tag ${getRatingClass(event.max_grade)}">${event.max_grade || 'C'}</span>
+                                    </td>
+                                    <td>
+                                        ${mainNews ? `
+                                            <span class="type-tag type-${mainNews.type || 'other'}">
+                                                ${typeMap[mainNews.type] || mainNews.type || '其他'}
+                                            </span>
+                                        ` : '-'}
+                                    </td>
+                                    <td><div class="news-title">${event.title}</div></td>
+                                    <td><div class="news-summary">${mainNews ? mainNews.summary : '-'}</div></td>
+                                    <td>
+                                        ${(() => {
+                                            const entities = event.entities || [];
+                                            const countClass = entities.length <= 2 ? 'count-1' :
+                                                              entities.length <= 4 ? 'count-3' :
+                                                              entities.length <= 6 ? 'count-5' : 'count-many';
+                                            return `<div class="entities-container ${countClass}">
+                                                ${entities.map(e =>
+                                                    `<span class="entity-tag ${eventFilters.entity === e ? 'selected' : ''}"
+                                                           onclick="filterEventsByEntity('${e.replace(/'/g, "\\'")}')">${e}</span>`
+                                                ).join('')}
+                                            </div>`;
+                                        })()}
+                                    </td>
+                                    <td>
+                                        <div class="link-container">
+                                            <a href="${event.main_news_url}" target="_blank" class="source-link" title="${event.main_news_url}">${extractDomain(event.main_news_url)}</a>
+                                        </div>
+                                    </td>
+                                    <td style="text-align: center; white-space: nowrap;">
+                                        ${event.end_time ? new Date(event.end_time * 1000).toLocaleString('zh-CN', {month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'}) : '--'}
+                                    </td>
+                                    <td style="text-align: center; font-weight: 600;">${event.news_count}</td>
+                                </tr>
+                            `;
+
+                            // 展开的时间线行
+                            if (hasExpandBtn && isExpanded && event.news_list) {
+                                html += `
+                                    <tr class="event-timeline-row">
+                                        <td colspan="11" style="padding: 0;">
+                                            <div class="event-timeline-content">
+                                                <div class="event-timeline">
+                                                    ${event.news_list.sort((a, b) => (a.timestamp || 0) - (b.timestamp || 0))
+                                                        .map(news => `
+                                                            <div class="event-timeline-item">
+                                                                <div class="event-timeline-time">${formatTime(news.timestamp)}</div>
+                                                                <div class="event-timeline-title">
+                                                                    <span class="rating-tag ${getRatingClass(news.rating)}" style="font-size: 10px; padding: 1px 4px; margin-right: 4px;">${news.rating || 'C'}</span>
+                                                                    <a href="${news.url}" target="_blank" style="color: #1d9bf0; text-decoration: none;">${news.title}</a>
+                                                                </div>
+                                                                <div class="event-timeline-meta">
+                                                                    <span>来源: ${extractDomain(news.url) || news.source || '未知'}</span>
+                                                                    ${news.sources ? `<span>相关报道: ${news.sources} 篇</span>` : ''}
+                                                                </div>
+                                                            </div>
+                                                        `).join('')}
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                `;
+                            }
+
+                            return html;
+                        }).join('')}
+                    </tbody>
+                </table>
+
+                ${filteredEvents.length === 0 ? `<div class="empty-state"><p>🔍 没有符合筛选条件的事件</p></div>` : ''}
+            `;
+            updateBatchButtons();
+
+            // 恢复控件焦点（innerHTML 重建会销毁输入框，导致 oninput 丢失焦点）
+            if (_activeEventInput === 'search') {
+                const input = content.querySelector('.event-search-input');
+                if (input) { input.focus(); input.selectionStart = input.selectionEnd = eventFilters.search.length; }
+            } else if (_activeEventInput === 'minScore') {
+                const sel = content.querySelector('.event-control-select[onchange*="updateMinScore"]');
+                if (sel) sel.focus();
+            } else if (_activeEventInput === 'minNewsCount') {
+                const sel = content.querySelector('.event-control-select[onchange*="updateMinNewsCount"]');
+                if (sel) sel.focus();
+            }
+            _activeEventInput = null;
+        }
+
+        function toggleEventExpand(eventId) {
+            if (expandedEvents.has(eventId)) {
+                expandedEvents.delete(eventId);
+            } else {
+                expandedEvents.add(eventId);
+            }
+            renderEvents();
+        }
+
+        function toggleAllEvents() {
+            const filteredEvents = getFilteredAndSortedEvents();
+            const allExpanded = filteredEvents.every(e => expandedEvents.has(e.id));
+
+            if (allExpanded) {
+                filteredEvents.forEach(e => expandedEvents.delete(e.id));
+            } else {
+                filteredEvents.forEach(e => expandedEvents.add(e.id));
+            }
+            renderEvents();
+        }
+
+
+
+        // ==================== 新闻列表功能 ====================
+        function getLatestDate() {
+            const dates = Object.keys(NEWS_ARCHIVE).sort();
+            return dates[dates.length - 1] || new Date().toISOString().split('T')[0];
+        }
+
+        function getAllDates() {
+            return Object.keys(NEWS_ARCHIVE).sort();
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr || dateStr === '--') return '--';
+            const date = new Date(dateStr);
+            if (isNaN(date.getTime())) return '--';
+            return `${date.getMonth() + 1}/${date.getDate()}`;
+        }
+
+        function getRatingClass(rating) {
+            const map = { 'S': 'rating-S', 'A+': 'rating-A\+', 'A': 'rating-A', 'B': 'rating-B', 'C': 'rating-C' };
+            return map[rating] || 'rating-C';
+        }
+
+        function getRatingOrder(rating) {
+            const order = { 'S': 1, 'A+': 2, 'A': 3, 'B': 4, 'C': 5 };
+            return order[rating] || 6;
+        }
+
+        function renderDateChips() {
+            const container = document.getElementById('dateChips');
+            const dates = getAllDates().reverse(); // 倒序排列，新的日期在左边
+            container.innerHTML = dates.map(date => `
+                <span class="date-chip ${date === currentDate ? 'active' : ''}" onclick="selectDate('${date}')">${formatDate(date)}</span>
+            `).join('');
+        }
+
+        function selectDate(date) {
+            currentDate = date;
+            currentSort = { field: 'rating', order: 'desc' };
+            filteredRating = null;
+            selectedEntity = null;
+            selectedItems.clear();
+            updateSortButtons();
+            updateBatchButtons();
+            renderNews();
+        }
+
+        function changeDate(direction) {
+            const dates = getAllDates();
+            const currentIndex = dates.indexOf(currentDate);
+            const newIndex = currentIndex + direction;
+            if (newIndex >= 0 && newIndex < dates.length) {
+                currentDate = dates[newIndex];
+                selectedEntity = null;
+                renderNews();
+            }
+        }
+
+        function updateButtons() {
+            // 更新浮动工具栏中的日期按钮状态
+            const dates = getAllDates();
+            const currentIndex = dates.indexOf(currentDate);
+            document.getElementById('prevDate').disabled = currentIndex <= 0;
+            document.getElementById('nextDate').disabled = currentIndex >= dates.length - 1;
+        }
+
+        function formatToolbarDate(dateStr) {
+            if (!dateStr || dateStr === '--') return '--';
+            const date = new Date(dateStr);
+            if (isNaN(date.getTime())) return '--';
+            return `${date.getMonth() + 1}月${date.getDate()}日`;
+        }
+
+        function sortBy(field) {
+            if (currentTab === 'events') {
+                // 事件视图的排序字段映射
+                const fieldMap = {
+                    'rating': 'max_grade',
+                    'type': 'type',
+                    'entities': 'entities',
+                    'sources': 'news_count',
+                    'time': 'news_count'
+                };
+                sortEventsBy(fieldMap[field] || 'max_score');
+                return;
+            }
+
+            // 新闻视图排序
+            if (currentSort.field === field) {
+                currentSort.order = currentSort.order === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.field = field;
+                currentSort.order = 'desc';
+            }
+            // 点击其他列排序时取消按实体排序
+            selectedEntity = null;
+            updateSortButtons();
+            renderNews();
+        }
+
+        function resetSort() {
+            currentSort = { field: 'rating', order: 'desc' };
+            filteredRating = null;
+            selectedEntity = null;
+            updateSortButtons();
+            renderNews();
+        }
+
+        function updateSortButtons() {
+            let activeField = currentSort.field;
+
+            if (currentTab === 'events') {
+                // 事件视图的排序字段反向映射
+                const fieldMap = {
+                    'max_grade': 'rating',
+                    'type': 'type',
+                    'entities': 'entities',
+                    'news_count': 'sources',
+                    'max_score': 'rating',
+                    'title': null,
+                    'start_time': 'time',
+                    'end_time': 'time'
+                };
+                activeField = fieldMap[eventSort.field] || 'rating';
+            }
+
+            document.getElementById('sortRating').className = 'sort-btn' + (activeField === 'rating' ? ' active' : '');
+            document.getElementById('sortType').className = 'sort-btn' + (activeField === 'type' ? ' active' : '');
+            document.getElementById('sortEntities').className = 'sort-btn' + (activeField === 'entities' ? ' active' : '');
+            document.getElementById('sortSources').className = 'sort-btn' + (activeField === 'sources' ? ' active' : '');
+            document.getElementById('sortTime').className = 'sort-btn' + (activeField === 'time' ? ' active' : '');
+        }
+
+        // 页面加载完成后初始化排序按钮状态
+        document.addEventListener('DOMContentLoaded', function() {
+            updateSortButtons();
+        });
+
+        function filterByRating(rating) {
+            filteredRating = filteredRating === rating ? null : rating;
+            renderNews();
+        }
+
+        function getSortedAndFilteredNews(newsList) {
+            let result = [...newsList];
+            if (filteredRating) {
+                result = result.filter(item => item.rating === filteredRating);
+            }
+
+            // 如果选中了实体，将包含该实体的条目排在最前面
+            if (selectedEntity) {
+                result.sort((a, b) => {
+                    const hasEntityA = a.entities && a.entities.includes(selectedEntity);
+                    const hasEntityB = b.entities && b.entities.includes(selectedEntity);
+                    if (hasEntityA && !hasEntityB) return -1;
+                    if (!hasEntityA && hasEntityB) return 1;
+                    return 0;
+                });
+            } else if (currentSort.field === 'rating') {
+                result.sort((a, b) => {
+                    const orderA = getRatingOrder(a.rating);
+                    const orderB = getRatingOrder(b.rating);
+                    if (orderA !== orderB) {
+                        return currentSort.order === 'asc' ? orderB - orderA : orderA - orderB;
+                    }
+                    // 评级相同，按时间倒序（最新的排前面）
+                    const timeA = a.timestamp || 0;
+                    const timeB = b.timestamp || 0;
+                    return timeB - timeA;
+                });
+            } else if (currentSort.field === 'type') {
+                result.sort((a, b) => {
+                    const typeA = (a.typeName || a.type || '').toLowerCase();
+                    const typeB = (b.typeName || b.type || '').toLowerCase();
+                    return currentSort.order === 'asc'
+                        ? typeA.localeCompare(typeB)
+                        : typeB.localeCompare(typeA);
+                });
+            } else if (currentSort.field === 'entities') {
+                result.sort((a, b) => {
+                    const entityA = (a.entities && a.entities[0]) || '';
+                    const entityB = (b.entities && b.entities[0]) || '';
+                    return currentSort.order === 'asc'
+                        ? entityA.localeCompare(entityB)
+                        : entityB.localeCompare(entityA);
+                });
+            } else if (currentSort.field === 'sources') {
+                result.sort((a, b) => currentSort.order === 'asc' ? a.sources - b.sources : b.sources - a.sources);
+            } else if (currentSort.field === 'time' || !currentSort.field) {
+                // 默认按时间排序（最新的在上面）
+                result.sort((a, b) => {
+                    const timeA = a.timestamp || 0;
+                    const timeB = b.timestamp || 0;
+                    const order = currentSort.field === 'time' ? currentSort.order : 'desc';
+                    return order === 'asc' ? timeA - timeB : timeB - timeA;
+                });
+            }
+            return result;
+        }
+
+        function toggleSelection(index) {
+            const key = `${currentDate}-${index}`;
+            if (selectedItems.has(key)) {
+                selectedItems.delete(key);
+            } else {
+                selectedItems.add(key);
+            }
+            updateBatchButtons();
+            renderNews();
+        }
+
+        function selectAll() {
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
+            const allSelected = displayList.every((_, index) => selectedItems.has(`${currentDate}-${index}`));
+            
+            if (allSelected) {
+                displayList.forEach((_, index) => selectedItems.delete(`${currentDate}-${index}`));
+            } else {
+                displayList.forEach((_, index) => selectedItems.add(`${currentDate}-${index}`));
+            }
+            updateBatchButtons();
+            renderNews();
+        }
+
+        function clearSelection() {
+            selectedItems.clear();
+            updateBatchButtons();
+            renderNews();
+        }
+
+        function copySelected() {
+            if (selectedItems.size === 0) return;
+
+            let textToCopy = '';
+            let count = 0;
+
+            if (currentTab === 'news') {
+                const newsList = NEWS_ARCHIVE[currentDate] || [];
+                const displayList = getSortedAndFilteredNews(newsList);
+                const selectedNews = displayList.filter((_, index) => selectedItems.has(`${currentDate}-${index}`));
+                count = selectedNews.length;
+
+                textToCopy = selectedNews.map(item => {
+                    const links = item.sourceLinks?.map(l => l.url).join('\n') || '';
+                    return `${item.title}\n${links}`;
+                }).join('\n\n');
+            } else {
+                // 事件视图复制
+                const filteredEvents = getFilteredAndSortedEvents();
+                const selectedEvents = filteredEvents.filter(event => selectedItems.has(event.id));
+                count = selectedEvents.length;
+
+                textToCopy = selectedEvents.map(event => {
+                    const newsLinks = event.news_list.map(news => news.url || '').filter(Boolean).join('\n');
+                    return `${event.title}\n${newsLinks}`;
+                }).join('\n\n');
+            }
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast(`已复制 ${count} 条`);
+            });
+        }
+
+        function renderSourceLinks(links) {
+            if (!links || links.length === 0) return '-';
+            return links.map(link => {
+                // x/Twitter链接用extractDomain提取用户名
+                let name;
+                try {
+                    const urlObj = new URL(link.url);
+                    if (urlObj.hostname === 'twitter.com' || urlObj.hostname === 'x.com') {
+                        name = extractDomain(link.url);
+                    }
+                } catch(e) {}
+                if (!name) {
+                    name = link.name.startsWith('x(') ? link.name : link.name.replace(/\s*\([^)]*\)/g, '');
+                }
+                return `<a href="${link.url}" target="_blank" class="source-link" title="${link.url}">${name}</a>`;
+            }).join('');
+        }
+
+        function renderEntities(entities, itemIndex) {
+            if (!entities || entities.length === 0) return '<span style="color: #555;">-</span>';
+            const entityTags = entities.map(entity =>
+                `<span class="entity-tag ${selectedEntity === entity ? 'selected' : ''}" onclick="sortByEntity('${entity.replace(/'/g, "\\'")}')">${entity}</span>`
+            ).join('');
+            const countClass = entities.length <= 2 ? 'count-1' :
+                              entities.length <= 4 ? 'count-3' :
+                              entities.length <= 6 ? 'count-5' : 'count-many';
+            return `<div class="entities-container ${countClass}">${entityTags}</div>`;
+        }
+
+        function sortByEntity(entity) {
+            // 如果点击的是已选中的实体，则取消筛选
+            if (selectedEntity === entity) {
+                selectedEntity = null;
+            } else {
+                selectedEntity = entity;
+            }
+            renderNews();
+        }
+
+        function renderExpansion(expansion) {
+            if (!expansion || expansion.trim() === '') return '<span style="color: #555;">-</span>';
+            return `<div class="expansion-content">${expansion}</div>`;
+        }
+
+        function renderType(type, typeName) {
+            const typeMap = {
+                'product': '产品发布',
+                'funding': '融资上市',
+                'personnel': '人事变动',
+                'opinion': '观点访谈',
+                'industry': '行业动态',
+                'safety': '安全伦理',
+                'research': '研究成果',
+                'financial': '商业数据',
+                'breaking': '突发事件',
+                'tool': '工具技巧',
+                'society': '社会影响',
+                'hardware': '硬件基建'
+            };
+            const displayName = typeMap[type] || type || '其他';
+            const typeClass = type ? `type-${type}` : 'type-product';
+            return `<span class="type-tag ${typeClass}">${displayName}</span>`;
+        }
+
+        function renderNews() {
+            const content = document.getElementById('news-content');
+            const currentDateEl = document.getElementById('currentDate');
+            const toolbarDate = document.getElementById('toolbarDate');
+            const updateTime = document.getElementById('updateTime');
+            const totalCount = document.getElementById('totalCount');
+
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+            const displayList = getSortedAndFilteredNews(newsList);
+
+            currentDateEl.textContent = currentDate;
+            toolbarDate.textContent = formatToolbarDate(currentDate);
+
+            // 更新版本号显示（从数据中获取）
+            const versionEl = document.getElementById('version');
+            if (versionEl && newsList.length > 0 && newsList[0].version) {
+                versionEl.textContent = newsList[0].version;
+            } else if (versionEl) {
+                versionEl.textContent = 'v3.0';
+            }
+
+            renderDateChips();
+            updateButtons();
+            updateBatchButtons();
+            renderDailySummary();
+            
+            if (displayList.length === 0) {
+                content.innerHTML = `<div class="empty-state"><p>📭 暂无 ${currentDate} 的新闻数据</p></div>`;
+                updateTime.textContent = '--';
+                totalCount.textContent = '0';
+                return;
+            }
+            
+            // 使用第一条新闻的更新时间，或显示当前日期
+            const firstItem = displayList[0];
+            if (firstItem && firstItem.timestamp) {
+                const updateDate = new Date(firstItem.timestamp * 1000);
+                updateTime.textContent = updateDate.toLocaleString('zh-CN', {month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'}) + ' (AI-Generated)';
+            } else {
+                updateTime.textContent = new Date().toLocaleString('zh-CN', {month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'}) + ' (AI-Generated)';
+            }
+            totalCount.textContent = `${displayList.length}${filteredRating ? ' / ' + newsList.length : ''}${selectedEntity ? ' | 实体: ' + selectedEntity : ''}`;
+            
+            content.innerHTML = `
+                <table class="news-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" class="checkbox" onchange="selectAll()"></th>
+                            <th onclick="sortBy('rating')">评级 ${currentSort.field === 'rating' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                            <th onclick="sortBy('type')">类型 ${currentSort.field === 'type' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                            <th>标题</th>
+                            <th>摘要</th>
+                            <th onclick="sortBy('entities')">实体 ${currentSort.field === 'entities' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                            <th>消息源</th>
+                            <th onclick="sortBy('time')">更新时间 ${currentSort.field === 'time' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                            <th onclick="sortBy('sources')">来源数 ${currentSort.field === 'sources' ? (currentSort.order === 'asc' ? '↑' : '↓') : ''}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${displayList.map((item, index) => {
+                            const isSelected = selectedItems.has(`${currentDate}-${index}`);
+                            const updateTimeStr = item.timestamp ? new Date(item.timestamp * 1000).toLocaleString('zh-CN', {month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'}) : '--';
+                            return `
+                            <tr class="${isSelected ? 'selected' : ''}">
+                                <td><input type="checkbox" class="checkbox" ${isSelected ? 'checked' : ''} onchange="toggleSelection(${index})"></td>
+                                <td>
+                                    <span class="rating-tag ${getRatingClass(item.rating)}" onclick="filterByRating('${item.rating}')">${item.rating || 'C'}</span>
+                                    ${item.is_corrected ? '<span class="corrected-badge" title="人工修正">✓</span>' : ''}
+                                </td>
+                                <td>${renderType(item.type, item.typeName)}</td>
+                                <td><div class="news-title">${item.title}</div></td>
+                                <td><div class="news-summary">${item.summary}</div></td>
+                                <td>${renderEntities(item.entities)}</td>
+                                <td><div class="source-links">${renderSourceLinks(item.sourceLinks)}</div></td>
+                                <td><div style="color: #8899a6; font-size: 12px; white-space: nowrap;">${updateTimeStr}</div></td>
+                                <td><div class="source-count">${item.sources}</div></td>
+                            </tr>`;
+                        }).join('')}
+                    </tbody>
+                </table>`;
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2000);
+        }
+
+        // 页面加载时自动加载数据
+        document.addEventListener('DOMContentLoaded', loadData);
+
+        // ==================== 每日摘要功能 ====================
+        let isSummaryCollapsed = true;
+
+        function toggleSummary() {
+            isSummaryCollapsed = !isSummaryCollapsed;
+            const content = document.getElementById('summaryContent');
+            const toggle = document.getElementById('summaryToggle');
+
+            if (isSummaryCollapsed) {
+                content.classList.add('collapsed');
+                toggle.classList.add('collapsed');
+            } else {
+                content.classList.remove('collapsed');
+                toggle.classList.remove('collapsed');
+            }
+        }
+
+        // ==================== 时代情绪功能 ====================
+        let isZeitgeistCollapsed = true;
+
+        function toggleZeitgeist() {
+            isZeitgeistCollapsed = !isZeitgeistCollapsed;
+            const content = document.getElementById('zeitgeistContent');
+            const toggle = document.getElementById('zeitgeistToggle');
+
+            if (isZeitgeistCollapsed) {
+                content.classList.add('collapsed');
+                toggle.classList.add('collapsed');
+            } else {
+                content.classList.remove('collapsed');
+                toggle.classList.remove('collapsed');
+            }
+        }
+
+        function renderDailySummary() {
+            const section = document.getElementById('summarySection');
+            const grid = document.getElementById('summaryGrid');
+            const count = document.getElementById('summaryCount');
+
+            const newsList = NEWS_ARCHIVE[currentDate] || [];
+
+            if (newsList.length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+
+            // 按类型分组
+            const typeGroups = {};
+            newsList.forEach(item => {
+                const type = item.type || 'other';
+                const typeName = getTypeDisplayName(type);
+                if (!typeGroups[type]) {
+                    typeGroups[type] = {
+                        type: type,
+                        typeName: typeName,
+                        items: []
+                    };
+                }
+                typeGroups[type].items.push(item);
+            });
+
+            // 按类型优先级排序
+            const typePriority = ['research', 'breaking', 'product', 'funding', 'personnel', 'industry', 'financial', 'hardware', 'safety', 'tool', 'opinion', 'society', 'other'];
+            const sortedTypes = Object.values(typeGroups).sort((a, b) => {
+                const priorityA = typePriority.indexOf(a.type);
+                const priorityB = typePriority.indexOf(b.type);
+                if (priorityA !== priorityB) {
+                    return (priorityA === -1 ? 999 : priorityA) - (priorityB === -1 ? 999 : priorityB);
+                }
+                // 同类型按数量排序
+                return b.items.length - a.items.length;
+            });
+
+            section.style.display = 'block';
+            count.textContent = `${newsList.length} 条 · ${sortedTypes.length} 个分类`;
+
+            // 类型颜色映射
+            const typeColors = {
+                'research': '#06b6d4',   // 研究成果 - 青色
+                'breaking': '#f97316',   // 突发事件 - 橙色
+                'product': '#10b981',    // 产品发布 - 绿色
+                'funding': '#f59e0b',    // 融资上市 - 琥珀色
+                'personnel': '#8b5cf6',  // 人事变动 - 紫色
+                'industry': '#3b82f6',   // 行业动态 - 蓝色
+                'financial': '#84cc16',  // 商业数据 - 石灰绿
+                'hardware': '#64748b',   // 硬件基建 - 石板灰
+                'safety': '#ef4444',     // 安全伦理 - 红色
+                'tool': '#6366f1',       // 工具技巧 - 靛蓝色
+                'opinion': '#ec4899',    // 观点访谈 - 粉色
+                'society': '#14b8a6',    // 社会影响 - 蓝绿色
+                'other': '#6b7280'       // 其他 - 灰色
+            };
+
+            grid.innerHTML = sortedTypes.map(group => {
+                const color = typeColors[group.type] || '#6b7280';
+                // 按评分排序，取前3条
+                const topItems = group.items
+                    .sort((a, b) => getRatingOrder(a.rating) - getRatingOrder(b.rating))
+                    .slice(0, 3);
+
+                const itemsHtml = topItems.map(item => {
+                    const ratingClass = getRatingClass(item.rating);
+                    return `
+                        <div class="summary-item">
+                            <span class="rating-tag ${ratingClass}" style="font-size: 10px; padding: 1px 4px;">${item.rating || 'C'}</span>
+                            ${item.title}
+                        </div>
+                    `;
+                }).join('');
+
+                return `
+                    <div class="summary-card" style="border-left-color: ${color}">
+                        <div class="summary-card-header">
+                            <span class="summary-type-tag" style="background: ${color}; color: white;">${group.typeName}</span>
+                            <span class="summary-count">${group.items.length} 条</span>
+                        </div>
+                        <div class="summary-items">
+                            ${itemsHtml}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function getTypeDisplayName(type) {
+            const typeMap = {
+                'product': '产品发布',
+                'funding': '融资上市',
+                'personnel': '人事变动',
+                'opinion': '观点访谈',
+                'industry': '行业动态',
+                'safety': '安全伦理',
+                'research': '研究成果',
+                'financial': '商业数据',
+                'breaking': '突发事件',
+                'tool': '工具技巧',
+                'society': '社会影响',
+                'hardware': '硬件基建',
+                'other': '其他'
+            };
+            return typeMap[type] || type;
+        }
+
+        // ==================== 时代情绪功能 ====================
+        function renderZeitgeist() {
+            const section = document.getElementById('zeitgeistSection');
+            const list = document.getElementById('zeitgeistList');
+            const count = document.getElementById('zeitgeistCount');
+
+            // 只显示 active 状态的情绪，按热度排序
+            const activeZeitgeist = ZEITGEIST
+                .filter(z => z.status === 'active')
+                .sort((a, b) => b.heat_score - a.heat_score);
+
+            if (activeZeitgeist.length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+
+            section.style.display = 'block';
+            count.textContent = `${activeZeitgeist.length} 个活跃中`;
+
+            const trendIcons = {
+                'rising': '📈',
+                'stable': '➡️',
+                'falling': '📉',
+                'cyclical': '🔄'
+            };
+
+            list.innerHTML = activeZeitgeist.map(z => {
+                const keywords = z.keywords || [];
+                const keywordsHtml = keywords.slice(0, 3).map(k =>
+                    `<span class="zeitgeist-keyword">${k}</span>`
+                ).join('');
+
+                const heatClass = z.heat_score >= 80 ? 'high' : z.heat_score >= 60 ? 'medium' : 'low';
+                const trendIcon = trendIcons[z.trend] || '•';
+                const categoryName = z.category_name || z.category || '-';
+
+                return `
+                    <div class="zeitgeist-item">
+                        <div class="zeitgeist-main">
+                            <span class="zeitgeist-heat ${heatClass}">${z.heat_score}</span>
+                            <span class="zeitgeist-title">${z.topic}</span>
+                            <span class="zeitgeist-trend" title="趋势: ${z.trend_name || z.trend}">${trendIcon}</span>
+                        </div>
+                        <div class="zeitgeist-desc">${z.description}</div>
+                        <div class="zeitgeist-meta">
+                            <span class="zeitgeist-category">${categoryName}</span>
+                            <span class="zeitgeist-keywords">${keywordsHtml}</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+    </script>
+</body>
+</html>

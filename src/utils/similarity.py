@@ -82,9 +82,14 @@ def calculate_news_similarity(news1, news2, entity_threshold: int = 3, similarit
 
     核心逻辑：实体是最稳定的事件标识，文本相似度作为辅助验证。
     根据共享的特定实体数量调节文本相似度门槛：
-    - ≥2 个特定实体共享 → 文本门槛 0.15（实体已充分表明同一事件）
-    - 1 个特定实体共享 → 文本门槛 0.20（需要少量文本佐证）
+    - ≥2 个特定实体共享 → 文本门槛降低，但仍需文本佐证
+    - 1 个特定实体共享 → 文本门槛适中
     - 0 个特定实体共享 → 使用 similarity_threshold（纯靠文本匹配，几乎不聚合）
+
+    防过度聚合保护：
+    - 即使实体重叠度高，如果文本相似度低于 text_floor（默认0.20），
+      说明两条新闻讨论的是完全不同的话题，不应被分到同一事件。
+    - 这防止了"Sam Altman出现在两条新闻中"就将NYer调查报道和住所袭击事件混在一起。
 
     :param news1: ProcessedNewsItem 对象1
     :param news2: ProcessedNewsItem 对象2
@@ -94,22 +99,34 @@ def calculate_news_similarity(news1, news2, entity_threshold: int = 3, similarit
     """
     # 1. 计算特定实体重叠（排除通用实体）
     generic_entities = {"AI", "人工智能", "机器人", "科技", "技术", "公司", "企业", "产品", "服务", "大模型", "大型语言模型"}
-    common_entities = set(news1.entities) & set(news2.entities)
-    specific_common = common_entities - generic_entities
-    specific_count = len(specific_common)
+    e1_specific = set(news1.entities) - generic_entities
+    e2_specific = set(news2.entities) - generic_entities
+    common_entities = e1_specific & e2_specific
 
-    # 2. 无特定实体共享 → 使用高文本门槛（几乎不聚合）
-    if specific_count == 0:
-        text_sim = _text_similarity(news1, news2)
-        return text_sim if text_sim >= similarity_threshold else 0.0
+    # 2. 无特定实体共享 → 不聚合
+    if not common_entities:
+        return 0.0
 
-    # 3. 根据特定实体数量确定文本门槛和权重（配置驱动阶梯方案）
+    # 3. 实体 Jaccard 相似度：共同实体占并集的比例
+    #    高 Jaccard = 两条新闻讨论相同的一组主体 = 强同事件信号
+    #    低 Jaccard = 共享少数高频实体但主体集不同 = 可能是不同事件
+    entity_jaccard = jaccard_similarity(e1_specific, e2_specific)
     config = _get_threshold_config()
+
+    # Jaccard 下限检查：共享实体占并集比例太低，说明两条新闻的主体集差异大
+    # 例：[OpenAI, Sam Altman] vs [Dario Amodei, Ilya Sutskever, OpenAI, Sam Altman, The New Yorker]
+    # Jaccard = 2/5 = 0.4，低于阈值 → 不应聚合
+    jaccard_floor = config.get("jaccard_floor", 0.35)
+    if entity_jaccard < jaccard_floor:
+        return 0.0
+
+    # 4. 根据共同实体数量确定文本门槛和权重（配置驱动阶梯方案）
+    specific_count = len(common_entities)
     steps = config.get("entity_threshold_steps", [])
     threshold_floor = config.get("threshold_floor", 0.01)
+    text_floor = config.get("text_floor", 0.15)
 
     if steps:
-        # 阶梯查找：找到 min_entities <= specific_count 的最高档
         matched_step = None
         for step in sorted(steps, key=lambda s: s["min_entities"]):
             if specific_count >= step["min_entities"]:
@@ -122,12 +139,10 @@ def calculate_news_similarity(news1, news2, entity_threshold: int = 3, similarit
             entity_weight = matched_step["entity_weight"]
             text_weight = matched_step["text_weight"]
         else:
-            # specific_count 不匹配任何阶梯（理论上不应发生）
             text_threshold = similarity_threshold
             entity_weight = 0.5
             text_weight = 0.5
     else:
-        # 向后兼容：无阶梯配置时使用旧的硬编码行为
         if specific_count >= 2:
             text_threshold = 0.15
         else:
@@ -136,6 +151,10 @@ def calculate_news_similarity(news1, news2, entity_threshold: int = 3, similarit
         text_weight = 0.5
 
     text_sim = _text_similarity(news1, news2)
+
+    # 防过度聚合：只有1个共同实体时，要求最低文本相似度
+    if specific_count == 1 and text_sim < text_floor:
+        return 0.0
 
     if text_sim >= text_threshold:
         # 综合得分：实体匹配 + 文本匹配（动态权重）
