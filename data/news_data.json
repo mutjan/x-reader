@@ -64,17 +64,15 @@
         "id": "1606f81d20f886d372bf7a2972072845",
         "title": "新基准测试LLM位置偏差，裁判模型再受质疑",
         "original_title": "New LLM Position Bias Benchmark: does an LLM keep the same judgment when you swap the answer order? Judge models compare two lightly edited versions of the same story twice, with the order swapped. The median model flips in 45% of decisive case pairs. GPT-5.4 is worst at 66%.",
-        "summary": "社区提出新的大模型位置偏差评测，关注答案顺序变化是否影响模型判断，指向LLM-as-a-judge在评测体系中的可靠性问题。",
+        "summary": "这条新闻聚焦\"New LLM Position Bias Benchmark: does an L\"，显示AI产品能力、企业治理或科技公司战略正在出现新变化，适合作为后续选题跟踪。",
         "rating": "A",
-        "score": 80,
+        "score": 84,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "可延伸到AI评测标准、模型裁判偏差和企业选型基准可信度。",
         "entities": [
-          "Ai Evaluation",
-          "Benchmark",
-          "LLM",
-          "Position Bias"
+          "Ai",
+          "LLM"
         ],
         "sourceLinks": [
           {
@@ -87,22 +85,25 @@
         "published_at": "2026-04-22T05:04:17.621662",
         "source": "Technological Singularity (deepseek)",
         "url": "https://www.reddit.com/r/singularity/comments/1srx4i1/new_llm_position_bias_benchmark_does_an_llm_keep/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "More info, including charts, per-case metrics, raw judge outputs, and the parsed answer dump: https://github.com/lechmazur/position_bias This benchmark isolates one basic and frustrating failure mode. The model-average first-shown pick rate is 63%. GPT-5.4 (high) is the most position-sensitive model in the run. Many models don't just pick the first story more often, they also rate it higher. Average first-position rating bonus is +0.26 on a 1-7 scale. Mistral Large 3 is the outlier in the opposite direction. Xiaomi MiMo V2 Pro has the lowest flip rate (20%) but only 55% coverage. ByteDance Seed2.0 Pro and DeepSeek V3.2 are the cleanest with solid coverage. Worked example: Case 3 \"midnight bakery\". Same pair, opposite orders. GPT-5.4 (high) returns 1 in both prompts. Always the first-shown story, so the underlying winner flips on swap. https://github.com/lechmazur/position_bias#worked-example submitted by /u/zero0_one1 [link] [comments]",
+        "chinese_title": "新基准测试大模型评判是否受答案顺序影响",
+        "grade": "A",
+        "extension": "可跟进方法论是否被复现、是否进入产品评测体系以及对模型训练和评估的影响。"
       },
       {
         "id": "83f3c72ee2020393fc2612dfd0846d22",
         "title": "ChatGPT新图像模型写实能力引热议",
         "original_title": "The new ChatGPT images model is the new standard in photorealistic image generation",
-        "summary": "社区用户认为ChatGPT最新图像模型在照片级生成上树立新标准，反映图像生成竞争正在从炫技转向可生产质量。",
+        "summary": "这条新闻聚焦\"The new ChatGPT images model is the new st\"，显示AI产品能力、企业治理或科技公司战略正在出现新变化，适合作为后续选题跟踪。",
         "rating": "A+",
-        "score": 89,
+        "score": 80,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "可延伸到OpenAI与Google图像模型竞争、创意工作流替代和内容真实性治理。",
         "entities": [
-          "Chatgpt Images",
-          "Image Generation",
-          "OpenAI"
+          "Ai",
+          "GPT"
         ],
         "sourceLinks": [
           {
@@ -115,22 +116,25 @@
         "published_at": "2026-04-22T05:04:17.621761",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1srvo8i/the_new_chatgpt_images_model_is_the_new_standard/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "submitted by /u/Glittering-Neck-2505 [link] [comments]",
+        "chinese_title": "ChatGPT新图像模型逼真度成行业新标杆",
+        "grade": "A",
+        "extension": "可继续观察竞品响应、开发者采用速度、付费层级变化以及内容安全规则对创作工作流的影响。"
       },
       {
         "id": "df1920d40697600f139b7a29b64305a7",
         "title": "半马机器人高温奔跑，硬件耐久性受考验",
         "original_title": "Service team POV of a robot running the course of half marathon, joint temperatures constantly over 70 to 100 degrees celsius",
-        "summary": "机器人完成半马路线时关节温度持续处于高位，显示人形机器人运动控制之外，散热和可靠性仍是商业落地关键瓶颈。",
+        "summary": "这条新闻聚焦\"Service team POV of a robot running the co\"，显示AI产品能力、企业治理或科技公司战略正在出现新变化，适合作为后续选题跟踪。",
         "rating": "B",
-        "score": 69,
+        "score": 74,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "可延伸到人形机器人耐久测试、散热材料和户外应用安全标准。",
         "entities": [
-          "Humanoid Robot",
-          "Robot",
-          "Thermal Management"
+          "Ai",
+          "Robot"
         ],
         "sourceLinks": [
           {
@@ -143,7 +147,11 @@
         "published_at": "2026-04-22T05:04:17.621855",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1srutwo/service_team_pov_of_a_robot_running_the_course_of/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "submitted by /u/uniyk [link] [comments]",
+        "chinese_title": "半马机器人高温奔跑暴露硬件耐久挑战",
+        "grade": "B",
+        "extension": "可继续观察硬件可靠性、算力成本、供应链约束和大规模部署门槛。"
       },
       {
         "id": "6f402b4bf50f66f7728b94ae4145c0e8",
@@ -263,15 +271,15 @@
         "id": "d4ccfbf896222330173727ef6479dfbd",
         "title": "ChatGPT Images 2.0支持更多比例和分辨率",
         "original_title": "Aspect Ratios & Resolution with ChatGPT Images 2.0",
-        "summary": "OpenAI展示新版图像模型的画幅和分辨率能力，创意生产的适配范围进一步接近专业设计场景。",
+        "summary": "这条新闻聚焦\"Aspect Ratios & Resolution with ChatGPT Im\"，显示AI产品能力、企业治理或科技公司战略正在出现新变化，适合作为后续选题跟踪。",
         "rating": "B",
-        "score": 67,
+        "score": 99,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "可延伸到API定价、广告素材生产和设计工具平台竞争。",
         "entities": [
           "Chatgpt Images",
-          "Image Resolution",
+          "GPT",
           "OpenAI"
         ],
         "sourceLinks": [
@@ -285,7 +293,11 @@
         "published_at": "2026-04-22T05:04:17.622642",
         "source": "OpenAI",
         "url": "https://www.youtube.com/watch?v=L-RVyipLHQQ",
-        "event_id": null
+        "event_id": null,
+        "original_content": "OpenAI researcher Dibya Bhattacharjee shows the variety of aspect ratios you can prompt with ChatGPT Images 2.0, plus the jump in maximum resolution – from 1k in to now 2k resolution, or even higher when using our API.",
+        "chinese_title": "ChatGPT Images 2.0支持更多比例和更高分辨率",
+        "grade": "S",
+        "extension": "可继续观察竞品响应、开发者采用速度、付费层级变化以及内容安全规则对创作工作流的影响。"
       },
       {
         "id": "e7b954642abd780df2907a2c309892f2",
@@ -403,9 +415,9 @@
         "id": "528e688bfa152fd091b30c4240cf121a",
         "title": "Firefox借Anthropic模型修复271个漏洞",
         "original_title": "Mozilla says its Firefox 150 release includes fixes for 271 vulnerabilities identified using early access to Anthropic's Mythos Preview (Lily Hay Newman/Wired)",
-        "summary": "Mozilla称Firefox 150利用Anthropic Mythos预览版早期识别并修复271个漏洞，AI安全模型开始进入浏览器工程流程。",
+        "summary": "这条新闻聚焦\"Mozilla says its Firefox 150 release inclu\"，显示AI产品能力、企业治理或科技公司战略正在出现新变化，适合作为后续选题跟踪。",
         "rating": "A",
-        "score": 86,
+        "score": 80,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "可延伸到AI辅助漏洞发现、浏览器安全竞争和安全模型商业化。",
@@ -426,21 +438,24 @@
         "published_at": "2026-04-22T05:04:17.623214",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260421/p37#a260421p37",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Lily Hay Newman / Wired : Mozilla says its Firefox 150 release includes fixes for 271 vulnerabilities identified using early access to Anthropic's Mythos Preview — The Firefox team doesn't think emerging AI capabilities will upend cybersecurity long term, but they warn that software developers are likely in for a rocky transition.",
+        "chinese_title": "Firefox 150借Anthropic Mythos修复271个漏洞",
+        "grade": "A",
+        "extension": "可延伸到企业治理责任、监管边界、供应商锁定和安全审计工具需求。"
       },
       {
         "id": "572b4e95c1e454dbd0f3ec77a87458cc",
         "title": "Meta拟用员工追踪软件训练AI代理",
         "original_title": "Meta will use employee-tracking software to help train AI agents: Report",
-        "summary": "报道称Meta将利用员工追踪软件帮助训练AI代理，企业内部行为数据如何用于自动化系统引发隐私和劳动治理争议。",
+        "summary": "这条新闻聚焦\"Meta will use employee-tracking software t\"，显示AI产品能力、企业治理或科技公司战略正在出现新变化，适合作为后续选题跟踪。",
         "rating": "A+",
-        "score": 91,
-        "type": "safety",
+        "score": 89,
+        "type": "industry",
         "typeName": "安全伦理",
         "expansion": "可延伸到AI代理训练数据来源、员工监控合规和企业自动化管理。",
         "entities": [
-          "Ai Agents",
-          "Employee Tracking",
+          "Ai",
           "Meta"
         ],
         "sourceLinks": [
@@ -454,7 +469,11 @@
         "published_at": "2026-04-22T05:04:17.623303",
         "source": "AI – Ars Technica",
         "url": "https://arstechnica.com/ai/2026/04/meta-will-use-employee-tracking-software-to-help-train-ai-agents-report/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Meta will begin tracking the mouse movements, clicks, and keystrokes of its US employees to generate high-quality training data for future AI agents, Reuters reports . The news organization cites internal memos posted by the Meta Superintelligence Labs team in reporting on the new Model Capability Initiative employee-tracking software. That software will operate on specific work-related apps and websites and also make use of periodic screenshots to provide context for the AI training, according to the memo. \"This is where all Meta employees can help our models get better simply by doing their daily work,\" the memo reads, in part, Reuters reports. Read full article Comments",
+        "chinese_title": "Meta拟用员工追踪软件训练AI代理",
+        "grade": "A+",
+        "extension": "可关注公司策略变化对生态伙伴、竞争格局和用户迁移的影响。"
       },
       {
         "id": "20bcbf500c8f75e7785531b7ce47cffe",
@@ -544,16 +563,15 @@
         "id": "1aaa128198975e091ea3dc2af6bad43d",
         "title": "苹果整顿Cal AI，App Store AI审核仍强硬",
         "original_title": "Apple’s Cal AI crackdown signals it’s still policing the App Store",
-        "summary": "苹果对Cal AI采取行动显示其仍在严格管理App Store，AI应用在分发、命名和合规上面临更高平台门槛。",
+        "summary": "这条新闻聚焦\"Apple’s Cal AI crackdown signals it’s stil\"，显示AI产品能力、企业治理或科技公司战略正在出现新变化，适合作为后续选题跟踪。",
         "rating": "B",
-        "score": 72,
+        "score": 74,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "可延伸到App Store审核政策、AI应用增长和平台治理边界。",
         "entities": [
-          "App Store",
-          "Apple",
-          "Cal Ai"
+          "Ai",
+          "Apple"
         ],
         "sourceLinks": [
           {
@@ -566,22 +584,25 @@
         "published_at": "2026-04-22T05:04:17.624122",
         "source": "TechCrunch (apple)",
         "url": "https://techcrunch.com/2026/04/21/apples-cal-ai-crackdown-signals-its-still-policing-the-app-store/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Apple tells TechCrunch Cal AI was removed not for web payments alone, but for deceptive billing, manipulative tactics, and App Store rule violations.",
+        "chinese_title": "苹果打击Cal AI显示App Store审核仍强硬",
+        "grade": "B",
+        "extension": "可关注公司策略变化对生态伙伴、竞争格局和用户迁移的影响。"
       },
       {
         "id": "058452b02c0d84439aacbf9e7e025f7a",
         "title": "SpaceX债务增至230亿美元，AI设备租赁成关键变量",
         "original_title": "Draft IPO prospectus: SpaceX debt grew from $14B in 2024 to $23B in 2025, tied to a $4.5B lease deal with Valor Equity for AI equipment such as chips for xAI (The Information)",
-        "summary": "IPO草案显示SpaceX债务从2024年的140亿美元升至2025年的230亿美元，并与Valor Equity的AI设备租赁安排相关。",
+        "summary": "这条新闻聚焦\"Draft IPO prospectus: SpaceX debt grew fro\"，显示AI产品能力、企业治理或科技公司战略正在出现新变化，适合作为后续选题跟踪。",
         "rating": "A+",
         "score": 88,
-        "type": "financial",
+        "type": "funding",
         "typeName": "商业数据",
         "expansion": "可延伸到SpaceX上市预期、AI算力融资和商业航天资本结构。",
         "entities": [
-          "Ai Equipment",
           "SpaceX",
-          "Valor Equity"
+          "xAI"
         ],
         "sourceLinks": [
           {
@@ -594,7 +615,11 @@
         "published_at": "2026-04-22T05:04:17.624211",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260421/p32#a260421p32",
-        "event_id": null
+        "event_id": null,
+        "original_content": "The Information : Draft IPO prospectus: SpaceX debt grew from $14B in 2024 to $23B in 2025, tied to a $4.5B lease deal with Valor Equity for AI equipment such as chips for xAI — SpaceX increased its debt load by nearly two-thirds last year, to about $23 billion at the end of 2025 from $14 billion the year prior.",
+        "chinese_title": "SpaceX债务攀升至230亿美元牵出xAI算力租赁",
+        "grade": "A+",
+        "extension": "可追踪资本流向、团队扩张、商业化节奏以及同赛道创业公司的估值变化。"
       },
       {
         "id": "2d1d441edf6568d08c77b8f14c2e80cc",
@@ -628,17 +653,15 @@
         "id": "5357ab869102c8e2882ed8806acdcd08",
         "title": "美国加速致幻药研究，伊博加因成焦点",
         "original_title": "US speeds research into mind-altering drugs &mdash; including mysterious 'ibogaine'",
-        "summary": "美国正加快对伊博加因等致幻类药物的研究，背后涉及创伤治疗、监管开放和药物安全争议，适合跟踪脑科学与公共卫生政策交叉影响。",
+        "summary": "这条新闻聚焦\"US speeds research into mind-altering drug\"，显示AI产品能力、企业治理或科技公司战略正在出现新变化，适合作为后续选题跟踪。",
         "rating": "A",
-        "score": 78,
+        "score": 74,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "可延伸到精神健康治疗监管、药企临床试验和成瘾治疗市场变化。",
         "entities": [
           "Ibogaine",
-          "Nature",
-          "Psychedelics",
-          "United States"
+          "Iss"
         ],
         "sourceLinks": [
           {
@@ -651,7 +674,11 @@
         "published_at": "2026-04-22T05:04:17.621511",
         "source": "Nature - Issue - nature.com science feeds",
         "url": "https://www.nature.com/articles/d41586-026-01286-1",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Nature, Published online: 21 April 2026; doi:10.1038/d41586-026-01286-1 Some researchers are delighted at an executive order to streamline investigations of psychedelics but also warn that caution is needed.",
+        "chinese_title": "美国加速迷幻药研究，ibogaine成新焦点",
+        "grade": "B",
+        "extension": "可跟进方法论是否被复现、是否进入产品评测体系以及对模型训练和评估的影响。"
       },
       {
         "id": "5e33f61f10c9c0cfca55212a2921ec0a",
@@ -24038,6 +24065,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-22T05:04:25.422053",
+  "last_updated": "2026-04-22T05:05:36.643540",
   "total_news": 851
 }
