@@ -2,6 +2,356 @@
   "news": {
     "2026-04-22": [
       {
+        "id": "3e47408f99dbd86133851c2da80c6da2",
+        "title": "Anthropic限制模型遭未授权访问",
+        "original_title": "Unauthorized users breach Anthropic's restricted Mythos AI model",
+        "summary": "Bloomberg报道称，少量未授权用户获得了Anthropic新模型Claude Mythos的访问权限，使这款受限模型的发布安全和内部权限控制再次受到关注。",
+        "rating": "S",
+        "score": 96,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸观察前沿模型内测权限管理、模型泄露风险和Anthropic近期安全治理压力，也会影响企业客户对闭源模型托管的信任。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Claude Mythos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/unauthorized-users-breach-anthropics-restricted-mythos-ai-model/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.821596",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/unauthorized-users-breach-anthropics-restricted-mythos-ai-model/",
+        "event_id": null
+      },
+      {
+        "id": "0039820442666d5c86025f6d37152a42",
+        "title": "LLM安全报告正影响内核代码清理",
+        "original_title": "Kernel code removals driven by LLM-created security reports",
+        "summary": "LWN讨论由大模型生成的安全报告推动Linux内核代码移除的现象，反映AI辅助漏洞报告正在改变开源维护者的审核负担和代码治理方式。",
+        "rating": "A",
+        "score": 76,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "后续可追踪开源社区如何识别AI生成报告质量，以及维护者是否会建立新的安全报告准入和验证机制。",
+        "entities": [
+          "LLM",
+          "Linux Kernel",
+          "Security Reports"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://lwn.net/Articles/1068928/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.821705",
+        "source": "Hacker News",
+        "url": "https://lwn.net/Articles/1068928/",
+        "event_id": null
+      },
+      {
+        "id": "dcda1e9818f515acff475ddfb260b8d2",
+        "title": "谷歌推出企业级Gemini智能体平台",
+        "original_title": "Google announces the Gemini Enterprise Agent Platform, a revamped developer tool built on Vertex AI that manages the full lifecycle of AI agent fleets (Radhika Rajkumar/ZDNET)",
+        "summary": "Google发布基于Vertex AI升级的Gemini Enterprise Agent Platform，用于管理企业AI智能体从开发、运行到安全治理的完整生命周期。",
+        "rating": "S",
+        "score": 97,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可继续观察Google与微软、OpenAI在企业智能体平台的竞争，以及平台化管理是否会成为企业部署AI代理的关键入口。",
+        "entities": [
+          "Ai Agents",
+          "Gemini",
+          "Google",
+          "Vertex Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (Gemini)",
+            "url": "http://www.techmeme.com/260422/p20#a260422p20"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.821802",
+        "source": "Techmeme (Gemini)",
+        "url": "http://www.techmeme.com/260422/p20#a260422p20",
+        "event_id": null
+      },
+      {
+        "id": "aa7faab22aa9d753fdfc1ba12aed65d5",
+        "title": "谷歌新一代TPU分攻训练和推理",
+        "original_title": "Google unveils a new TPU lineup consisting of the TPU 8t for AI training and the TPU 8i for inference, with general availability scheduled for later in 2026 (Ian King/Bloomberg)",
+        "summary": "Google Cloud公布新TPU产品线，TPU 8t面向AI训练、TPU 8i面向推理，计划在2026年晚些时候全面可用。",
+        "rating": "A+",
+        "score": 91,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "该事件将牵动云端AI算力竞争、Nvidia替代方案和Google自研芯片生态，也可能影响企业训练与推理成本结构。",
+        "entities": [
+          "Ai Inference",
+          "Ai Training",
+          "Google",
+          "Google Cloud",
+          "Tpu"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260422/p19#a260422p19"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.821892",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260422/p19#a260422p19",
+        "event_id": null
+      },
+      {
+        "id": "747572f3ffc2e6ed73294381305dc6e2",
+        "title": "Meta采集员工操作训练AI智能体",
+        "original_title": "Meta tracks US employees' clicks and keystrokes to train AI agents",
+        "summary": "Meta被曝在美国员工电脑上安装监控软件，记录鼠标移动、点击和键盘输入，用于训练能够执行办公任务的AI模型。",
+        "rating": "S",
+        "score": 95,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸到企业用员工行为数据训练AI的合规边界、劳动隐私争议，以及Meta内部效率工具与监管风险的平衡。",
+        "entities": [
+          "Ai Agents",
+          "Ai Models",
+          "Employee Surveillance",
+          "Meta"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/meta-tracks-us-employees-clicks-and-keystrokes-to-train-ai-agents/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.821981",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/meta-tracks-us-employees-clicks-and-keystrokes-to-train-ai-agents/",
+        "event_id": null
+      },
+      {
+        "id": "591c564da0b112e8ff9312a9c2e73b1a",
+        "title": "SpaceX拟600亿美元押注Cursor",
+        "original_title": "Musk's SpaceX bets $60 billion on Cursor to fix xAI's coding gap",
+        "summary": "报道称SpaceX已获得以600亿美元收购AI编程创业公司Cursor的选择权，意在补齐Elon Musk旗下xAI在编程工具上的短板。",
+        "rating": "S",
+        "score": 99,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可继续跟踪马斯克系公司之间的AI资产协同、Cursor估值合理性，以及AI编程工具是否进入大型科技集团争夺阶段。",
+        "entities": [
+          "Cursor",
+          "Elon Musk",
+          "SpaceX",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/musks-spacex-bets-60-billion-on-cursor-to-fix-xais-coding-gap/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.822068",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/musks-spacex-bets-60-billion-on-cursor-to-fix-xais-coding-gap/",
+        "event_id": null
+      },
+      {
+        "id": "2c40f0310f8ad62d30a96aa0a3b99aae",
+        "title": "Nature提醒别让AI代写学生方案",
+        "original_title": "Don’t let your students use AI as a ghostwriter",
+        "summary": "Nature文章以AI生成研究计划改变教学与指导方式为切入点，提醒教育者不要让学生把AI当成论文和研究方案的隐形代笔。",
+        "rating": "A",
+        "score": 78,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可延伸讨论高校AI使用规范、科研训练能力退化风险，以及教师如何把AI转化为批判性学习工具。",
+        "entities": [
+          "Ai Ghostwriter",
+          "Education",
+          "Nature",
+          "Research Proposal"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-00627-4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.822153",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-00627-4",
+        "event_id": null
+      },
+      {
+        "id": "bc16de19d0d614dc05efb61bbe10905b",
+        "title": "未经证实健康主张获得大量信任",
+        "original_title": "‘Staggering’ number of people believe unproven claims about vaccines, raw milk and more",
+        "summary": "Nature报道一项调查显示，许多人相信关于疫苗、生牛奶等未经验证的说法，提示公众对科学证据的质疑正在上升。",
+        "rating": "B",
+        "score": 68,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可继续关注科学传播、公共卫生信任危机和社交平台信息治理，也能与AI生成误导内容风险形成交叉报道。",
+        "entities": [
+          "Nature",
+          "Raw Milk",
+          "Scientific Evidence",
+          "Vaccines"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01285-2"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.822237",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01285-2",
+        "event_id": null
+      },
+      {
+        "id": "bfda5ea0c7f70bbde8b514595a192b52",
+        "title": "谷歌重构面向智能体的数据云",
+        "original_title": "The modern data stack was built for humans asking questions. Google just rebuilt its for agents taking action.",
+        "summary": "Google在Cloud Next推出Agentic Data Cloud，强调数据架构要从服务人类查询转向支撑AI智能体持续行动和自动编排。",
+        "rating": "S",
+        "score": 99,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可追踪数据平台从BI查询转向智能体执行后的竞争格局，尤其是Google、Databricks、Snowflake和微软在语义层与跨云数据上的争夺。",
+        "entities": [
+          "Agentic Data Cloud",
+          "Ai Agents",
+          "Bigquery",
+          "Google",
+          "Knowledge Catalog"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/data/the-modern-data-stack-was-built-for-humans-asking-questions-google-just-rebuilt-its-for-agents-taking-action"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.822407",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/data/the-modern-data-stack-was-built-for-humans-asking-questions-google-just-rebuilt-its-for-agents-taking-action",
+        "event_id": null
+      },
+      {
+        "id": "e3101030264214715c6beb01bbc35159",
+        "title": "Gemini可部署在离线私有服务器",
+        "original_title": "Google’s Gemini can now run on a single air-gapped server — and vanish when you pull the plug",
+        "summary": "Cirrascale与Google Cloud合作，将Gemini打包进可断网运行的私有硬件设备，面向金融、政府和医疗等高安全需求客户。",
+        "rating": "S",
+        "score": 100,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "这会推动前沿模型从公有云API走向私有部署，后续值得关注微软、AWS和开源模型在监管行业的应对。",
+        "entities": [
+          "Cirrascale",
+          "Confidential Computing",
+          "Gemini",
+          "Google",
+          "Google Distributed Cloud"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat (Gemini)",
+            "url": "https://venturebeat.com/technology/googles-gemini-can-now-run-on-a-single-air-gapped-server-and-vanish-when-you-pull-the-plug"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.822491",
+        "source": "VentureBeat (Gemini)",
+        "url": "https://venturebeat.com/technology/googles-gemini-can-now-run-on-a-single-air-gapped-server-and-vanish-when-you-pull-the-plug",
+        "event_id": null
+      },
+      {
+        "id": "fc7725a92b5221b33312b9bfb687ba23",
+        "title": "谷歌与Thinking Machines签下算力大单",
+        "original_title": "Exclusive: Google deepens Thinking Machines Lab ties with new multi-billion-dollar deal",
+        "summary": "TechCrunch独家称，Mira Murati创办的Thinking Machines Lab与Google Cloud签署数十亿美元AI基础设施协议，使用Nvidia GB300芯片。",
+        "rating": "A+",
+        "score": 91,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸观察顶级AI创业公司对云算力的长期绑定，以及Google Cloud借新AI实验室客户挑战微软和AWS的策略。",
+        "entities": [
+          "Google",
+          "Google Cloud",
+          "Mira Murati",
+          "NVIDIA",
+          "Thinking Machines Lab"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch (Murati)",
+            "url": "https://techcrunch.com/2026/04/22/exclusive-google-deepens-thinking-machines-lab-ties-with-new-multi-billion-dollar-deal/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.822578",
+        "source": "TechCrunch (Murati)",
+        "url": "https://techcrunch.com/2026/04/22/exclusive-google-deepens-thinking-machines-lab-ties-with-new-multi-billion-dollar-deal/",
+        "event_id": null
+      },
+      {
+        "id": "4b4882fb0dfbbb03d8c7bc0d3bbc5333",
+        "title": "腾讯阿里洽投DeepSeek估值超200亿美元",
+        "original_title": "Tencent, Alibaba in Talks to Invest in DeepSeek at $20 Billion-Plus Valuation",
+        "summary": "The Information称腾讯和阿里正在洽谈投资DeepSeek，后者首次外部融资的目标估值已从至少100亿美元抬升至200亿美元以上。",
+        "rating": "S",
+        "score": 100,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可继续观察中国大厂与头部AI模型公司的资本绑定、DeepSeek估值变化，以及国内大模型生态从竞争转向投资合作的趋势。",
+        "entities": [
+          "Alibaba",
+          "DeepSeek",
+          "High-Flyer Capital Management",
+          "Tencent"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information (deepseek)",
+            "url": "https://www.theinformation.com/articles/tencent-alibaba-talks-invest-deepseek-20-billion-plus-valuation"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.822753",
+        "source": "The Information (deepseek)",
+        "url": "https://www.theinformation.com/articles/tencent-alibaba-talks-invest-deepseek-20-billion-plus-valuation",
+        "event_id": null
+      },
+      {
         "id": "8b31378742f325cf7349a6ef2756b48e",
         "title": "谷歌发布训练和推理新一代TPU",
         "original_title": "Google Announces New TPUs for Training and Inference",
@@ -3428,6 +3778,64 @@
       }
     ],
     "2026-04-21": [
+      {
+        "id": "f0156e1e6c9776cad166da93f4a29922",
+        "title": "Nature聚焦AI末日风险争议",
+        "original_title": "Daily briefing: Should we worry about AI doomsday?",
+        "summary": "Nature每日简报讨论研究者如何看待AI末日场景的合理性和风险，同时提到智能体社交网络与个性化CRISPR疗法等进展。",
+        "rating": "A",
+        "score": 80,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸到AI安全叙事的科学依据、公众风险沟通，以及智能体自主交互带来的治理问题。",
+        "entities": [
+          "Agentic Ai",
+          "Ai Doomsday",
+          "Crispr",
+          "Nature"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01331-z"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.822321",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01331-z",
+        "event_id": null
+      },
+      {
+        "id": "a3be47be998b932e3badd445827ecb77",
+        "title": "DeepMind联手咨询巨头推广前沿AI",
+        "original_title": "Partnering with industry leaders to accelerate AI transformation",
+        "summary": "Google DeepMind宣布与全球咨询公司合作，推动前沿AI能力进入更多组织，显示其正通过服务伙伴扩大企业落地渠道。",
+        "rating": "A",
+        "score": 77,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可关注DeepMind从研究机构向企业解决方案生态扩展，以及咨询公司在AI转型项目中的新角色。",
+        "entities": [
+          "Ai Transformation",
+          "Consultancies",
+          "DeepMind",
+          "Frontier Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "DeepMind Blog",
+            "url": "https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776862929,
+        "published_at": "2026-04-22T21:02:09.822662",
+        "source": "DeepMind Blog",
+        "url": "https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/",
+        "event_id": null
+      },
       {
         "id": "2a22776c5a25f84421600ca66216e478",
         "title": "Von把多模型AI搬进销售收入中台",
@@ -22489,6 +22897,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-22T20:03:10.361953",
-  "total_news": 792
+  "last_updated": "2026-04-22T21:02:51.553410",
+  "total_news": 806
 }
