@@ -2,6 +2,63 @@
   "news": {
     "2026-04-22": [
       {
+        "id": "41cb87b113e7cb68f5a0f9a444bf2772",
+        "title": "SpaceX披露轨道AI数据中心商业风险",
+        "original_title": "Filing: SpaceX tells investors that orbital AI data centers use \"unproven technologies\" and may not achieve \"commercial viability\" due to space-related risks (Echo Wang/Reuters)",
+        "summary": "SpaceX在投资者文件中提示，轨道AI数据中心仍依赖未经验证的技术，可能因发射、维护和空间环境等风险难以实现商业化。",
+        "rating": "A+",
+        "score": 88,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "这一披露会把太空算力从概念想象拉回工程和资本约束，后续可追踪SpaceX融资叙事、星链基础设施复用，以及地面数据中心竞品的成本对比。",
+        "entities": [
+          "Ai Data Centers",
+          "Orbital Ai Data Centers",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260421/p55#a260421p55"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776823415,
+        "published_at": "2026-04-22T10:03:35.388286",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260421/p55#a260421p55",
+        "event_id": null
+      },
+      {
+        "id": "5b445d51f2d65d9bd3041b8178103f5f",
+        "title": "Claude Code退出Anthropic低价Pro订阅",
+        "original_title": "Claude Code Removed from $20-a-Month \"Pro\" Subscription for New Users",
+        "summary": "Anthropic面向新用户移除20美元Pro套餐中的Claude Code权益，显示其正在重新划分高消耗开发工具的定价边界和用户分层。",
+        "rating": "A+",
+        "score": 88,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "该调整可能影响开发者对Claude生态的留存和迁移，也会带动竞品重新包装代码助手套餐，后续可观察付费转化、限额策略和社区反弹。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Claude Code",
+          "Pro Subscription"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.wheresyoured.at/news-anthropic-removes-pro-cc/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776823415,
+        "published_at": "2026-04-22T10:03:35.388475",
+        "source": "Hacker News",
+        "url": "https://www.wheresyoured.at/news-anthropic-removes-pro-cc/",
+        "event_id": null
+      },
+      {
         "id": "df12f061f41c31b70c022a43228cd5dc",
         "title": "Meta装员工监控软件训练AI代理",
         "original_title": "Meta Installing Software on Employee Computers to Track Everything They Do, Feed the Data to AI",
@@ -378,6 +435,35 @@
         "published_at": "2026-04-22T09:04:40.118580",
         "source": "Hacker News",
         "url": "https://bsky.app/profile/edzitron.com/post/3mjzxwfx3qs2a",
+        "event_id": null
+      },
+      {
+        "id": "8362c30b9aa51f6ed53c654b584c2281",
+        "title": "Brex推出保护生产环境AI代理的CrabTrap",
+        "original_title": "CrabTrap: An LLM-as-a-judge HTTP proxy to secure agents in production",
+        "summary": "Brex发布CrabTrap，一个以LLM作为裁判的HTTP代理，用于在生产环境中审查和拦截AI代理请求，降低代理执行外部操作时的安全风险。",
+        "rating": "B",
+        "score": 72,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该工具可延伸到AI代理安全基础设施、运行时防护和企业落地治理，也能对比传统WAF与LLM审查机制。",
+        "entities": [
+          "Ai Agents",
+          "Brex",
+          "Crabtrap",
+          "Llm-As-A-Judge"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.brex.com/crabtrap"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776819880,
+        "published_at": "2026-04-22T09:04:40.118675",
+        "source": "Hacker News",
+        "url": "https://www.brex.com/crabtrap",
         "event_id": null
       },
       {
@@ -2529,35 +2615,6 @@
       }
     ],
     "2026-04-21": [
-      {
-        "id": "8362c30b9aa51f6ed53c654b584c2281",
-        "title": "Brex推出保护生产环境AI代理的CrabTrap",
-        "original_title": "CrabTrap: An LLM-as-a-judge HTTP proxy to secure agents in production",
-        "summary": "Brex发布CrabTrap，一个以LLM作为裁判的HTTP代理，用于在生产环境中审查和拦截AI代理请求，降低代理执行外部操作时的安全风险。",
-        "rating": "B",
-        "score": 72,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "该工具可延伸到AI代理安全基础设施、运行时防护和企业落地治理，也能对比传统WAF与LLM审查机制。",
-        "entities": [
-          "Ai Agents",
-          "Brex",
-          "Crabtrap",
-          "Llm-As-A-Judge"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.brex.com/crabtrap"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.118675",
-        "source": "Hacker News",
-        "url": "https://www.brex.com/crabtrap",
-        "event_id": null
-      },
       {
         "id": "2a22776c5a25f84421600ca66216e478",
         "title": "Von把多模型AI搬进销售收入中台",
@@ -21619,6 +21676,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-22T09:05:16.888209",
-  "total_news": 762
+  "last_updated": "2026-04-22T10:04:00.162681",
+  "total_news": 764
 }
