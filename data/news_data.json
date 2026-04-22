@@ -2,6 +2,124 @@
   "news": {
     "2026-04-22": [
       {
+        "id": "1644da33b6c21da37ef37f26933d9ac3",
+        "title": "X染色体健康影响被重新认识",
+        "original_title": "The misunderstood sex chromosome: how X affects your health",
+        "summary": "研究者正重新评估X、Y染色体上的基因如何影响性别差异、疾病易感性和健康风险，为精准医学与疾病机制研究提供新的解释框架。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该方向可能影响遗传医学、性别差异用药和疾病筛查策略，后续可延伸到精准医疗、药物试验设计和健康公平讨论。",
+        "entities": [
+          "Disease Susceptibility",
+          "Genes",
+          "X Chromosome",
+          "Y Chromosome"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01256-7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776852219,
+        "published_at": "2026-04-22T18:03:39.891489",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01256-7",
+        "event_id": null
+      },
+      {
+        "id": "5bd85f473ebff48005d9202b096827ea",
+        "title": "安克自研AI芯片要塞进全系设备",
+        "original_title": "Anker made its own chip to bring AI to all its products",
+        "summary": "安克发布自研Thus处理器，主打低功耗本地AI计算，计划用于音频、移动配件和IoT设备，显示消费电子厂商正把端侧AI能力下沉到小型硬件。",
+        "rating": "A",
+        "score": 82,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "若端侧AI芯片进入耳机、充电配件和智能家居，可能改变消费硬件卖点，并推动中小设备厂商围绕本地推理、隐私和续航展开竞争。",
+        "entities": [
+          "Anker",
+          "Compute-In-Memory",
+          "Local Ai",
+          "Steven Yang",
+          "Thus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/916463/anker-thus-chip-announcement"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776852219,
+        "published_at": "2026-04-22T18:03:39.891598",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/916463/anker-thus-chip-announcement",
+        "event_id": null
+      },
+      {
+        "id": "24012db24e7f608b32f0b5488b84d016",
+        "title": "Claude Code疑似移除Opus引发追问",
+        "original_title": "Ask HN: Why Opus4.6 was silently removed from Claude Code?",
+        "summary": "Hacker News用户讨论Claude Code中Opus 4.6疑似被静默移除的问题，反映开发者对AI编程工具模型配置透明度和稳定性的关注。",
+        "rating": "A",
+        "score": 76,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该事件可延伸到AI编程工具的模型切换策略、订阅权益说明和开发者信任问题，但当前信息主要来自社区讨论，需等待官方或更多证据确认。",
+        "entities": [
+          "Anthropic",
+          "Claude Code",
+          "Hacker News",
+          "Opus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47861009"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776852219,
+        "published_at": "2026-04-22T18:03:39.891801",
+        "source": "Hacker News",
+        "url": "https://news.ycombinator.com/item?id=47861009",
+        "event_id": null
+      },
+      {
+        "id": "31f771505db506070ee64207587856e4",
+        "title": "Anthropic高危安全模型遭未授权访问",
+        "original_title": "Anthropic&rsquo;s most dangerous AI model just fell into the wrong hands",
+        "summary": "Anthropic的网络安全模型Mythos据称被少数未授权用户访问，该模型具备漏洞识别和利用能力，事件凸显高能力AI安全工具的内控风险。",
+        "rating": "S",
+        "score": 99,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "事件可能引发对高危AI模型访问控制、承包商权限、红队工具管理和监管披露义务的追问，也会影响安全模型商业化节奏。",
+        "entities": [
+          "Anthropic",
+          "Bloomberg",
+          "Claude",
+          "Cybersecurity",
+          "Mythos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/916501/anthropic-mythos-unauthorized-users-access-security"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776852219,
+        "published_at": "2026-04-22T18:03:39.892019",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/916501/anthropic-mythos-unauthorized-users-access-security",
+        "event_id": null
+      },
+      {
         "id": "7c4d43e47277469341cbcee74d019a83",
         "title": "AI代理绕过验证码旧案再被追问",
         "original_title": "[Researcher] Wasn't there a case where the AI agent tried to hire a human to get past captchas? I can't find the proper piece, did I hallucinate this?",
@@ -5783,6 +5901,35 @@
       }
     ],
     "2026-04-20": [
+      {
+        "id": "be4198845e8512e1de5d4188193e8069",
+        "title": "AI智能体正从同步交互转向异步工作",
+        "original_title": "All your agents are going async",
+        "summary": "文章讨论AI智能体工作形态向异步执行演进，意味着用户不再只等待即时回复，而是把更长任务交给代理在后台持续推进。",
+        "rating": "A",
+        "score": 77,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "异步智能体会改变AI产品的交互设计、任务编排和权限管理，也会让企业重新评估代理可观测性、失败恢复和人机协作边界。",
+        "entities": [
+          "Ai Agents",
+          "Async Agents",
+          "Human-Agent Collaboration",
+          "Workflow Automation"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://zknill.io/posts/all-your-agents-are-going-async/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776852219,
+        "published_at": "2026-04-22T18:03:39.891924",
+        "source": "Hacker News",
+        "url": "https://zknill.io/posts/all-your-agents-are-going-async/",
+        "event_id": null
+      },
       {
         "id": "abc4fec3a7921db14ed3cb77c781a501",
         "title": "OpenAI新图像模型浮出水面，直指谷歌图像生成",
@@ -22139,6 +22286,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-22T17:04:07.071154",
-  "total_news": 780
+  "last_updated": "2026-04-22T18:04:10.653573",
+  "total_news": 785
 }
