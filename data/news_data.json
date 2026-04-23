@@ -2,6 +2,64 @@
   "news": {
     "2026-04-23": [
       {
+        "id": "a91cc094e5b1de4a761308aabb5ef6ee",
+        "title": "腾讯阿里洽谈入股DeepSeek估值或超200亿美元",
+        "original_title": "Tencent, Alibaba in Talks to Invest in DeepSeek at $20 billion-Plus Valuation",
+        "summary": "DeepSeek首次正式启动外部融资，据报道腾讯和阿里正在接洽投资，若交易落地，这家国产大模型明星公司将以超过200亿美元估值进入新阶段。",
+        "rating": "S",
+        "score": 98,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "这轮融资会直接影响国产大模型竞赛格局，也会带动云资源、应用生态和头部资本对中国AI独角兽的重新定价。",
+        "entities": [
+          "Alibaba",
+          "DeepSeek",
+          "High-Flyer",
+          "Tencent"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information (deepseek)",
+            "url": "https://www.theinformation.com/briefings/tencent-alibaba-talks-invest-deepseek-20-billion-plus-valuation"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776938609,
+        "published_at": "2026-04-23T18:03:29.341095",
+        "source": "The Information (deepseek)",
+        "url": "https://www.theinformation.com/briefings/tencent-alibaba-talks-invest-deepseek-20-billion-plus-valuation",
+        "event_id": null
+      },
+      {
+        "id": "15feff0e2ad9df0b9c43e57fd3927206",
+        "title": "SpaceX被曝筹备自造GPU算力投入规模待定",
+        "original_title": "SpaceX's S-1 excerpts list \"manufacturing our own GPUs\" among the \"substantial capital expenditures\" it is undertaking, with the size of the expenditure TBD (Reuters)",
+        "summary": "路透援引SpaceX招股文件摘要称，公司已把\"自研GPU制造\"列入重大资本开支计划，显示其可能不再满足于采购芯片，而是试图向算力供应链上游延伸。",
+        "rating": "A",
+        "score": 82,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "若SpaceX真的下场做GPU，受影响的不只是AI训练成本，还可能波及美国先进制造、航天算力体系以及英伟达等现有供应关系。",
+        "entities": [
+          "Gpu",
+          "Reuters",
+          "S-1",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260423/p14#a260423p14"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776938609,
+        "published_at": "2026-04-23T18:03:29.341202",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260423/p14#a260423p14",
+        "event_id": null
+      },
+      {
         "id": "b5c63e7d87bcb2ac91162c3b6985d9a0",
         "title": "360用AI挖出近千个未知漏洞",
         "original_title": "Report: China's 360 Digital Security Group has uncovered ~1,000 previously unknown vulnerabilities, including in Microsoft's Office, using an AI-powered agent (Ryan Gallagher/Bloomberg)",
@@ -28,6 +86,35 @@
         "published_at": "2026-04-23T15:06:32.851358",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260423/p8#a260423p8",
+        "event_id": null
+      },
+      {
+        "id": "72f13104232a165cd9c2a8334a2e5e26",
+        "title": "HumanScore专测视频生成人体动作",
+        "original_title": "HumanScore: Benchmarking Human Motions in Generated Videos",
+        "summary": "HumanScore提出一套评估AI生成视频中人体动作质量的框架，从运动合理性、时间稳定性和生物力学一致性等维度比较13个视频生成模型。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该基准可能推动视频生成模型从视觉真实转向物理可信评估，后续可跟踪主流模型排名变化、数据集设计和影视动画生产流程的影响。",
+        "entities": [
+          "Ai-Generated Videos",
+          "Human Motion",
+          "Humanscore",
+          "Video Generation"
+        ],
+        "sourceLinks": [
+          {
+            "name": "[arXiv] Fei-Fei Li",
+            "url": "https://arxiv.org/abs/2604.20157v1"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776927992,
+        "published_at": "2026-04-23T15:06:32.851498",
+        "source": "[arXiv] Fei-Fei Li",
+        "url": "https://arxiv.org/abs/2604.20157v1",
         "event_id": null
       },
       {
@@ -3671,35 +3758,6 @@
       }
     ],
     "2026-04-22": [
-      {
-        "id": "72f13104232a165cd9c2a8334a2e5e26",
-        "title": "HumanScore专测视频生成人体动作",
-        "original_title": "HumanScore: Benchmarking Human Motions in Generated Videos",
-        "summary": "HumanScore提出一套评估AI生成视频中人体动作质量的框架，从运动合理性、时间稳定性和生物力学一致性等维度比较13个视频生成模型。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该基准可能推动视频生成模型从视觉真实转向物理可信评估，后续可跟踪主流模型排名变化、数据集设计和影视动画生产流程的影响。",
-        "entities": [
-          "Ai-Generated Videos",
-          "Human Motion",
-          "Humanscore",
-          "Video Generation"
-        ],
-        "sourceLinks": [
-          {
-            "name": "[arXiv] Fei-Fei Li",
-            "url": "https://arxiv.org/abs/2604.20157v1"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776927992,
-        "published_at": "2026-04-23T15:06:32.851498",
-        "source": "[arXiv] Fei-Fei Li",
-        "url": "https://arxiv.org/abs/2604.20157v1",
-        "event_id": null
-      },
       {
         "id": "0962aaa35ecb651bb5357ecd012593f2",
         "title": "数学家找到识别复杂纽结的新编码",
@@ -22912,6 +22970,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-23T15:07:32.621569",
-  "total_news": 800
+  "last_updated": "2026-04-23T18:03:34.605654",
+  "total_news": 802
 }
