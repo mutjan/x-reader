@@ -2,6 +2,65 @@
   "news": {
     "2026-04-23": [
       {
+        "id": "f672fdb5ebceaaa9b0f2790b856635ec",
+        "title": "学生用AI重写Claude Code泄露源码",
+        "original_title": "An undergraduate used AI assistants to rewrite leaked source code for Claude Code in a different language, highlighting the uncertainty over copyright and AI (Meaghan Tobin/New York Times)",
+        "summary": "纽约时报报道，一名本科生借助AI助手把泄露的Claude Code源码改写成另一种语言，凸显生成式AI让复制软件作品更快后，版权边界变得更难判定。",
+        "rating": "A+",
+        "score": 88,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可继续追踪AI辅助重写代码是否构成衍生作品，以及开源社区、商业软件公司和法院如何界定模型参与下的版权责任。",
+        "entities": [
+          "Ai Assistants",
+          "Anthropic",
+          "Claude Code",
+          "Copyright"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260422/p50#a260422p50"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776909830,
+        "published_at": "2026-04-23T10:03:50.738092",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260422/p50#a260422p50",
+        "event_id": null
+      },
+      {
+        "id": "7c91f66cd1cd2afc7b634a00ad7e1397",
+        "title": "马斯克TeraFab拟用英特尔14A造AI芯片",
+        "original_title": "Elon Musk says his TeraFab facilities will use Intel's 14A process technology to make AI chips &mdash; SpaceX will be responsible for high-volume chip manufacturing in likely Intel tech licensing deal",
+        "summary": "马斯克披露TeraFab设想：英特尔提供14A制程技术，特斯拉建设试生产线，SpaceX负责高产能晶圆厂，指向一笔潜在技术授权合作。",
+        "rating": "A+",
+        "score": 91,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "后续可关注英特尔先进制程外部授权能否打开新收入来源，以及马斯克系公司是否会把AI芯片供应链从台积电等外部代工转向自建产能。",
+        "entities": [
+          "Elon Musk",
+          "Intel",
+          "SpaceX",
+          "Terafab",
+          "Tesla"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musk-says-terafab-will-use-intels-14a-process-technology-to-make-ai-chips-spacex-will-be-responsible-for-high-volume-chip-manufacturing-in-liekly-intel-tech-licensing-deal"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776909830,
+        "published_at": "2026-04-23T10:03:50.738267",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musk-says-terafab-will-use-intels-14a-process-technology-to-make-ai-chips-spacex-will-be-responsible-for-high-volume-chip-manufacturing-in-liekly-intel-tech-licensing-deal",
+        "event_id": null
+      },
+      {
         "id": "ff2970b6b09617d91fa87f43b6181992",
         "title": "马斯克罕见下调特斯拉机器人预期",
         "original_title": "Elon Musk Strikes Unusually Cautious Tone on Tesla Call",
@@ -3376,6 +3435,36 @@
       }
     ],
     "2026-04-22": [
+      {
+        "id": "8b7615ee8e554f2e629d0e55b330a3dd",
+        "title": "何恺明团队称图像生成器学会通用视觉",
+        "original_title": "Image Generators are Generalist Vision Learners",
+        "summary": "论文提出图像生成预训练可像大语言模型预训练一样带来理解能力，并用Vision Banana证明生成式视觉模型经轻量微调后可在多类2D和3D任务上达到领先表现。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该方向可能推动计算机视觉从专用判别模型转向生成式基础模型，也会影响分割、深度估计和多模态模型的训练范式。",
+        "entities": [
+          "Depth Anything",
+          "Kaiming He",
+          "Nano Banana Pro",
+          "Segment Anything Model",
+          "Vision Banana"
+        ],
+        "sourceLinks": [
+          {
+            "name": "[ArXiv] Kaiming He",
+            "url": "https://arxiv.org/abs/2604.20329v1"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776909830,
+        "published_at": "2026-04-23T10:03:50.738395",
+        "source": "[ArXiv] Kaiming He",
+        "url": "https://arxiv.org/abs/2604.20329v1",
+        "event_id": null
+      },
       {
         "id": "0962aaa35ecb651bb5357ecd012593f2",
         "title": "数学家找到识别复杂纽结的新编码",
@@ -22588,6 +22677,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-23T09:03:20.609147",
-  "total_news": 789
+  "last_updated": "2026-04-23T10:04:08.190559",
+  "total_news": 792
 }
