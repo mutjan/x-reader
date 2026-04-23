@@ -98,6 +98,31 @@
           "reason": "OpenAI发布GPT-Rosalind与Anthropic发布Claude Opus 4.7是完全不同的公司和产品，不应放在同一事件组中"
         }
       ]
+    },
+    {
+      "timestamp": "2026-04-24T07:16:10.272255",
+      "batch_id": "20260424071610",
+      "corrections_applied": 3,
+      "details": [
+        {
+          "news_id": "c9c12182c2f4727c20614e0b015bb6f0",
+          "from_event_id": "c2185e50",
+          "to_event_id": "new_event",
+          "reason": "Claude个人应用连接器是产品功能扩展新闻，与Claude退化/质量问题是完全不同的事件主题，不应归入同一事件组"
+        },
+        {
+          "news_id": "849593cf6507fe172f0a64730625a77e",
+          "from_event_id": "c2185e50",
+          "to_event_id": "new_event",
+          "reason": "Claude 3D模型骨骼绑定实测是应用场景展示，与Claude退化事件无关，应独立分组"
+        },
+        {
+          "news_id": "005cbdb321ab4c0a2c98005edadd41f7",
+          "from_event_id": "59988558",
+          "to_event_id": "new_event",
+          "reason": "OpenAI向临床医生免费开放ChatGPT是医疗行业合作新闻，与GPT-5.5模型发布是不同事件，不应归入GPT-5.5事件组"
+        }
+      ]
     }
   ]
 }
