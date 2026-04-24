@@ -123,6 +123,25 @@
           "reason": "OpenAI向临床医生免费开放ChatGPT是医疗行业合作新闻，与GPT-5.5模型发布是不同事件，不应归入GPT-5.5事件组"
         }
       ]
+    },
+    {
+      "timestamp": "2026-04-24T08:11:54.845195",
+      "batch_id": "20260424081154",
+      "corrections_applied": 2,
+      "details": [
+        {
+          "news_id": "039d101645e0cdb8974d11559a53f250",
+          "from_event_id": "d3fd2e0c",
+          "to_event_id": "40516602",
+          "reason": "该新闻是关于Claude Mythos遭未授权访问的安全事件，与当前事件d3fd2e0c（研究发现GPT-4o和Grok最易加剧AI精神病）主题不符。应归入40516602（Anthropic高危Mythos模型疑遭未授权访问），该事件专门讨论Mythos模型的安全问题，与本新闻内容完全匹配。"
+        },
+        {
+          "news_id": "1f5d9627d4b2ae16829ea15a82450892",
+          "from_event_id": "968c1d18",
+          "to_event_id": "04b664fd",
+          "reason": "该新闻是关于OpenAI GPT-5.5的三大核心突破（代理编码、计算机操控与科研），与当前事件968c1d18（Anthropic将Claude接入个人应用生态：Spotify、Uber、TurboTax等）主题不符。应归入04b664fd（OpenAI推出企业工作区智能体），该事件已包含多条GPT-5.5相关新闻，是GPT-5.5发布的主事件组。"
+        }
+      ]
     }
   ]
 }
