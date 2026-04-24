@@ -2,6 +2,426 @@
   "news": {
     "2026-04-24": [
       {
+        "id": "a157e160aa2b44e360840e96fda3580a",
+        "title": "DeepSeek-V4参数确认：Flash版284B参数，Pro版达1.6T",
+        "original_title": "DeepSeek-V4 was pre-trained on 32T tokens using Muon and integrates a new hybrid attention mechanism and mHC",
+        "summary": "DeepSeek-V4使用Muon优化器在32万亿token上预训练，采用混合注意力机制和mHC架构，其中Flash版284B参数/13B激活，Pro版1.6T参数/49B激活，标志着开源大模型参数规模的新里程碑。",
+        "rating": "S",
+        "score": 96,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "DeepSeek-V4的发布可能加速开源大模型竞赛，影响Meta Llama、Google Gemini等竞品路线图，Muon优化器的规模化应用也可能改变大模型训练范式。",
+        "entities": [
+          "DeepSeek",
+          "Deepseek-V4",
+          "Mhc",
+          "Muon"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/scaling01/status/2047510190044409860"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605377",
+        "source": "x",
+        "url": "https://x.com/scaling01/status/2047510190044409860",
+        "event_id": null
+      },
+      {
+        "id": "a50c623282e930cef663b2e5540e3bc6",
+        "title": "英伟达全面押注Codex，与OpenAI合作在企业大规模部署GPT-5.5",
+        "original_title": "Amazing to see @nvidia go all-in on Codex! We’ve started going deep with a few companies to roll out Codex and GPT-5.5. Seeing it work this quickly a...",
+        "summary": "OpenAI与英伟达合作在企业中大规模部署Codex和GPT-5.5，Sam Altman表示已在部分公司成功试点，利用Blackwell芯片加速推理，标志着AI编程工具进入企业级规模化落地阶段。",
+        "rating": "S",
+        "score": 96,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "英伟达从芯片供应商转向AI应用生态深度绑定，可能改变企业AI部署格局，影响微软Azure等云服务商的竞争策略，同时加速AI编程工具的市场渗透。",
+        "entities": [
+          "Codex",
+          "GPT",
+          "NVIDIA",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/romainhuet/status/2047506792649990422"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605436",
+        "source": "x",
+        "url": "https://x.com/romainhuet/status/2047506792649990422",
+        "event_id": null
+      },
+      {
+        "id": "ea7e7701bb68eb056d5833cc82801356",
+        "title": "GPT-5.5基准测试争议：官方82.7%与第三方57%差距近20个百分点",
+        "original_title": "Terminal Bench 2 is the headline result for GPT 5.5. The official result is 82.7%. External results have it at 57.3% on xhigh and 62.9% on high. That'...",
+        "summary": "GPT-5.5在Terminal Bench 2基准测试中官方成绩82.7%，但Vals AI等外部测试仅57.3%-62.9%，不同推理强度设置导致显著分数差异，引发评测可重复性质疑。",
+        "rating": "S",
+        "score": 95,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "基准测试的可重复性问题可能引发行业对AI评测标准的重新审视，影响投资者和企业对模型能力的判断方法，推动更严格的第三方评测规范。",
+        "entities": [
+          "GPT",
+          "OpenAI",
+          "Terminal Bench",
+          "Vals Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/nrehiew_/status/2047481324148253017"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605472",
+        "source": "x",
+        "url": "https://x.com/nrehiew_/status/2047481324148253017",
+        "event_id": null
+      },
+      {
+        "id": "557b1cb2072c966a6040713de2378731",
+        "title": "开源MultiWorld模型实现多智能体多视角视频世界建模",
+        "original_title": "RT Xihui Liu: 🎮🤖 Introducing MultiWorld: Scalable Multi-Agent Multi-View Video World Models! Current video world models are mostly single-agent,...",
+        "summary": "MultiWorld提出可扩展的多智能体多视角视频世界模型，支持动作可控、多视角一致的视频生成，适用于多智能体游戏和多机器人协作场景，代码模型数据全部开源。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "多智能体世界模型可能推动游戏AI、机器人仿真训练等领域的突破，与NVIDIA Cosmos等商业方案形成开源替代，降低研究门槛。",
+        "entities": [
+          "Cintellifusion",
+          "Hugging Face",
+          "Multiworld"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Scobleizer/status/2047490998130073631"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605498",
+        "source": "x",
+        "url": "https://x.com/Scobleizer/status/2047490998130073631",
+        "event_id": null
+      },
+      {
+        "id": "c63e25e5b722958dd7c1414b45391a2b",
+        "title": "Cursor被SpaceX收购内幕：Anthropic竞争压力与算力成本成关键推手",
+        "original_title": "Behind Cursor’s Deal With SpaceX, Anthropic and Compute Costs Loomed Large",
+        "summary": "Cursor在同意SpaceX 600亿美元收购前融资受阻，投资者担忧Claude Code快速崛起带来的竞争压力，以及AI编程工具的高昂算力成本，最终选择被收购。",
+        "rating": "S",
+        "score": 100,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "AI编程工具赛道格局剧变，Cursor被收购可能引发更多并购，Anthropic在企业市场的强势表现或重塑AI编程工具竞争版图。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Cursor",
+          "OpenAI",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/behind-cursors-deal-spacex-anthropic-compute-costs-loomed-large"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605550",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/behind-cursors-deal-spacex-anthropic-compute-costs-loomed-large",
+        "event_id": null
+      },
+      {
+        "id": "180afcb36c16c4e56b9c4d2d1c12275d",
+        "title": "GPT-5.5定价误区：实际使用成本远低于表面价格，比Claude便宜5-10倍",
+        "original_title": "Common GPT 5.5 pricing misconception.",
+        "summary": "GPT-5.5 API标价看似是5.4的两倍且超过Claude Opus 4.7，但实际使用中GPT-5.5的token效率更高，综合成本比Opus 4.7便宜5-10倍，Anthropic的tokenizer变更进一步推高了实际成本。",
+        "rating": "A+",
+        "score": 90,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "API定价策略的差异可能影响企业AI选型决策，Anthropic的tokenizer变更导致实际成本上升，可能促使企业重新评估大模型供应商选择。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1stv7zz/common_gpt_55_pricing_misconception/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605579",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1stv7zz/common_gpt_55_pricing_misconception/",
+        "event_id": null
+      },
+      {
+        "id": "e66230d5af378b1542f05608f0e02931",
+        "title": "GPT-5.5在OpenAI内部ML难题基准上仅得1.7%，暴露能力短板",
+        "original_title": "GPT 5.5 scores 1.7% on OpenAI-proof Q&A—an internal benchmark testing performance on real ML problems encountered during the process of research and engineering",
+        "summary": "GPT-5.5在OpenAI内部ML研究与工程问题基准测试中仅获得1.7%的成绩，该基准测试真实ML问题，暴露当前大模型在机器学习研究自动化方面的巨大差距。",
+        "rating": "A",
+        "score": 86,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该基准揭示了大模型在ML研究自动化方面的局限，可能影响AI辅助科研的市场预期和投资方向。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1stumgg/gpt_55_scores_17_on_openaiproof_qaan_internal/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605602",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1stumgg/gpt_55_scores_17_on_openaiproof_qaan_internal/",
+        "event_id": null
+      },
+      {
+        "id": "0d545f20f48791f560c89325fae7a2db",
+        "title": "GPT-5.5三种推理强度下的Artificial Analysis指数对比出炉",
+        "original_title": "GPT 5.5 xHigh, high, and medium Artificial Analysis Index results",
+        "summary": "GPT-5.5在xHigh、High、Medium三种推理强度设置下的Artificial Analysis Index测试结果公布，展示不同计算预算下的性能差异，为成本优化提供参考。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "推理强度与性能的权衡关系为企业部署提供成本优化参考，可能影响AI推理芯片的需求结构和云端推理服务的定价策略。",
+        "entities": [
+          "Artificial Analysis",
+          "GPT"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1stsc23/gpt_55_xhigh_high_and_medium_artificial_analysis/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605626",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1stsc23/gpt_55_xhigh_high_and_medium_artificial_analysis/",
+        "event_id": null
+      },
+      {
+        "id": "fe1f02c29f55aa8e557ec064dcb4bc76",
+        "title": "GPT-5.5在独角兽基准测试中的表现引发社区热议",
+        "original_title": "GPT-5.5's Unicorn",
+        "summary": "GPT-5.5在独角兽基准测试中的结果引发社区讨论，该测试评估模型处理复杂多步骤问题的综合能力，结果反映模型在复杂推理场景下的真实水平。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "独角兽测试作为综合性评估指标，其结果可能影响行业对模型通用能力的评判标准，推动更多复合型基准的开发。",
+        "entities": [
+          "GPT"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sts7we/gpt55s_unicorn/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605649",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sts7we/gpt55s_unicorn/",
+        "event_id": null
+      },
+      {
+        "id": "c7cb42217cef3afe4eebb29f5b5d6e20",
+        "title": "Anthropic承认Claude在SWE-Bench Pro部分题目上存在数据记忆效应",
+        "original_title": "Reminder that Anthropic reported memorization on some SWE-Bench Pro problems",
+        "summary": "Anthropic在发布Claude Opus 4.7时披露，其记忆化筛查发现SWE-Bench Verified、Pro和Multilingual部分题目存在训练数据记忆问题，引发对评测基准可信度的关注。",
+        "rating": "A+",
+        "score": 89,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "AI评测基准的可信度问题可能引发行业对标准化测试的反思，推动更严格的去污染流程和数据隔离机制。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Swe-Bench"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1strwhl/reminder_that_anthropic_reported_memorization_on/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605738",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1strwhl/reminder_that_anthropic_reported_memorization_on/",
+        "event_id": null
+      },
+      {
+        "id": "dc6b244ddd0bbcbb8f7294062e3daeeb",
+        "title": "GPT-5.5正式上线，Sam Altman放出豪言：token消耗大降",
+        "original_title": "Chat GPT 5.5 got launched and we got some really bold words by Sam Altman. Thoughts?",
+        "summary": "GPT-5.5正式发布，Sam Altman发表积极评价，新模型token消耗大幅减少、延迟降低，Codex功能持续迭代，展现OpenAI在效率优化上的突破。",
+        "rating": "A",
+        "score": 83,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "GPT-5.5的发布可能加速AI编程工具的普及，对Cursor、GitHub Copilot等竞品形成直接压力，推动行业整体效率提升。",
+        "entities": [
+          "Codex",
+          "GPT",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1str6al/chat_gpt_55_got_launched_and_we_got_some_really/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605784",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1str6al/chat_gpt_55_got_launched_and_we_got_some_really/",
+        "event_id": null
+      },
+      {
+        "id": "eb37d201ca37c05996ee6981ffa4f43b",
+        "title": "GPT-5.5系统安全卡可能并非由GPT-5.5自身撰写，引发自我评估能力讨论",
+        "original_title": "The GPT-5.5 System Card was probably not written by GPT-5.5",
+        "summary": "社区发现GPT-5.5的系统安全卡文件可能不是由GPT-5.5模型自己生成的，引发关于AI模型能否准确自我评估的深层讨论。",
+        "rating": "A",
+        "score": 86,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "AI模型能否准确自我评估是AI安全的核心问题，该发现可能影响未来模型安全审查的方法论和监管框架。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1str0oj/the_gpt55_system_card_was_probably_not_written_by/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605812",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1str0oj/the_gpt55_system_card_was_probably_not_written_by/",
+        "event_id": null
+      },
+      {
+        "id": "a55c67bf9086bb1eea10a9c19fd4f1d2",
+        "title": "OpenAI发布GPT-5.5完整基准测试结果",
+        "original_title": "GPT-5.5 benchmark results have been released",
+        "summary": "OpenAI正式发布GPT-5.5的完整基准测试结果，涵盖多项标准评测指标，为行业提供模型能力的全面数据参考。",
+        "rating": "A",
+        "score": 83,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "完整基准数据将为行业提供GPT-5.5能力的全面画像，影响竞品的差异化定位策略和企业AI选型决策。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1stqk81/gpt55_benchmark_results_have_been_released/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605835",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1stqk81/gpt55_benchmark_results_have_been_released/",
+        "event_id": null
+      },
+      {
+        "id": "1ecd88ca6a50977efcc58c906d0bed66",
+        "title": "OpenAI正式推出GPT-5.5，大模型竞赛进入新阶段",
+        "original_title": "Introducing GPT-5.5",
+        "summary": "OpenAI发布GPT-5.5，其最新一代大语言模型在推理能力和效率上均有显著提升，标志着大模型竞赛进入新的里程碑。",
+        "rating": "A",
+        "score": 84,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "GPT-5.5的发布可能引发Google、Anthropic等竞品加速迭代，推动整个大模型行业进入新一轮能力竞赛。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1stqev3/introducing_gpt55/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605858",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1stqev3/introducing_gpt55/",
+        "event_id": null
+      },
+      {
+        "id": "58b8c3aaedfd4ba60470684062f1874b",
+        "title": "腾讯发布开源模型Hy3预览版，加码开源大模型布局",
+        "original_title": "Tencent released an open source model Hy3 preview.",
+        "summary": "腾讯推出Hy3预览版开源模型，进一步扩展其在开源大模型领域的布局，为国内大模型开源生态注入新力量。",
+        "rating": "A",
+        "score": 77,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "腾讯持续投入开源模型可能改变国内大模型竞争格局，影响百度、阿里等厂商的开源策略，加速国内AI开源生态发展。",
+        "entities": [
+          "Hy3",
+          "Tencent"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1stoif4/tencent_released_an_open_source_model_hy3_preview/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605879",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1stoif4/tencent_released_an_open_source_model_hy3_preview/",
+        "event_id": null
+      },
+      {
         "id": "b420bc546d15fd90554028c3d0aa378c",
         "title": "GPT-5.5系统卡首次设立顶级对齐章节，OpenAI安全研究迈新步",
         "original_title": "RT Jasmine Wang: GPT-5.5's system card is the first OpenAI system card to have a top-level section focused on Alignment. Very happy about this! Please...",
@@ -54,6 +474,143 @@
         "published_at": "2026-04-24T10:03:05.618766",
         "source": "Ars Technica » Scientific Method",
         "url": "https://arstechnica.com/science/2026/04/we-still-dont-have-a-more-precise-value-for-big-g/",
+        "event_id": null
+      },
+      {
+        "id": "fa3945cb5a6fa28aa167e514f23ce084",
+        "title": "独立开发者自掏200美元，打造Chrome沉浸式翻译开源替代品",
+        "original_title": "這是我做的 Chrome「沈浸式翻譯」擴展替代品。沈浸式翻譯是我上網閱讀最重要的工具，但隱私疑慮和中國開發商背景的陰影揮之不去。求人不如求己，就付兩百鎂自幹...",
+        "summary": "一位开发者因隐私担忧放弃沉浸式翻译，自费200美元开发Chrome扩展替代品，支持网页和YouTube字幕翻译，并内置Gemini和Google翻译引擎及成本统计功能。",
+        "rating": "B",
+        "score": 69,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "隐私导向的开源替代品可能分流沉浸式翻译用户，反映AI工具隐私信任危机下的市场机会，可能催生更多自主可控的本地化翻译工具。",
+        "entities": [
+          "Chrome",
+          "Gemini",
+          "Google Translate"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/jimmy_su/status/2047462438095008041"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776996185,
+        "published_at": "2026-04-24T10:03:05.618686",
+        "source": "x",
+        "url": "https://x.com/jimmy_su/status/2047462438095008041",
+        "event_id": null
+      },
+      {
+        "id": "dc2383c7037df93e3ee8d8e37181b44c",
+        "title": "OpenAI正式发布GPT-5.5：新一代智能模型面向复杂任务与Agent而生",
+        "original_title": "a new model and a new beginning!",
+        "summary": "OpenAI发布GPT-5.5，定位为面向真实工作和AI Agent的新一代智能模型，具备理解复杂目标、使用工具、自我检查和多步任务执行能力，已在ChatGPT和Codex中上线。",
+        "rating": "S",
+        "score": 99,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "GPT-5.5的Agent化定位将重塑AI应用生态，可能加速企业级Agent部署，对竞品Claude和Gemini形成直接竞争压力，同时影响AI编程工具市场格局。",
+        "entities": [
+          "Codex",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/yihengxu_/status/2047419041640481219"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776996185,
+        "published_at": "2026-04-24T10:03:05.618713",
+        "source": "x",
+        "url": "https://x.com/yihengxu_/status/2047419041640481219",
+        "event_id": null
+      },
+      {
+        "id": "229b39cdee351a84fe1927ffe2d3c540",
+        "title": "知名开发者炮轰Claude编程能力下降，称其「变蠢了」不得不再次手写代码",
+        "original_title": "I can't believe we were right Claude was dumbified on March 4, just when we noticed!",
+        "summary": "独立开发者Pieter Levels公开抱怨Claude Code配合Opus 4.6编程能力严重下降，表示不得不重新自己写代码，引发社区对AI编程工具质量波动的广泛讨论。",
+        "rating": "S",
+        "score": 93,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "AI编程助手的质量稳定性成为新的竞争维度，可能加速用户在Claude、Copilot、Cursor之间的迁移，推动AI产品可靠性成为核心卖点。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Pieter Levels"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/levelsio/status/2047387029915271445"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776996185,
+        "published_at": "2026-04-24T10:03:05.618724",
+        "source": "x",
+        "url": "https://x.com/levelsio/status/2047387029915271445",
+        "event_id": null
+      },
+      {
+        "id": "dd539d242e86024e15e1d327033ee296",
+        "title": "索尼AI乒乓球机器人登Nature封面，首次与专业选手正面对抗",
+        "original_title": "Super impressed by the Table Tennis robot from @SonyAI_global. As a TT player myself, I thought expert TT robot is decades away. Amazed by how far sta...",
+        "summary": "索尼AI研发的乒乓球机器人研究登上Nature封面，通过状态估计和模拟器强化学习实现了与人类精英选手的高速对打，突破了困扰学界40余年的具身智能难题。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "具身智能在精细化运动控制上的突破可能加速体育训练机器人、工业精密操作机器人等应用落地，推动RL与sim-to-real技术的商业化。",
+        "entities": [
+          "Nature",
+          "Sony"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/sherryyangML/status/2047322707050569839"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776996185,
+        "published_at": "2026-04-24T10:03:05.618735",
+        "source": "x",
+        "url": "https://x.com/sherryyangML/status/2047322707050569839",
+        "event_id": null
+      },
+      {
+        "id": "3af2650dd6d1de055920378d3a6c1791",
+        "title": "Nature揭示心脏癌症罕见之谜：心脏跳动的机械压力能击败癌细胞",
+        "original_title": "Why is heart cancer so rare? The pumping muscle ‘beats’ it",
+        "summary": "Nature最新研究表明，心脏跳动产生的机械压力能够抑制癌细胞在小鼠心脏中的增殖，首次从力学角度解释了心脏癌症极为罕见的原因。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "机械力抑制癌细胞的发现可能开辟全新的抗癌疗法方向，推动力学微环境在肿瘤治疗中的研究，对生物医学工程领域产生深远影响。",
+        "entities": [
+          "Nature"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01296-z"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776996185,
+        "published_at": "2026-04-24T10:03:05.618755",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01296-z",
         "event_id": null
       },
       {
@@ -3228,140 +3785,31 @@
     ],
     "2026-04-23": [
       {
-        "id": "fa3945cb5a6fa28aa167e514f23ce084",
-        "title": "独立开发者自掏200美元，打造Chrome沉浸式翻译开源替代品",
-        "original_title": "這是我做的 Chrome「沈浸式翻譯」擴展替代品。沈浸式翻譯是我上網閱讀最重要的工具，但隱私疑慮和中國開發商背景的陰影揮之不去。求人不如求己，就付兩百鎂自幹...",
-        "summary": "一位开发者因隐私担忧放弃沉浸式翻译，自费200美元开发Chrome扩展替代品，支持网页和YouTube字幕翻译，并内置Gemini和Google翻译引擎及成本统计功能。",
+        "id": "7d41fbd629f40d0f1b8509d7a28c5dc9",
+        "title": "Meta研究突破LLM冷门编程语言瓶颈，跨语言迁移学习新方法",
+        "original_title": "RT Zhaofeng Wu: Excited to share our new work from Meta MSL 🔥 LLMs write great Python/C++ but struggle with uncommon languages. Data scarcity is th...",
+        "summary": "Meta MSL团队提出跨编程语言迁移学习方法，解决LLM在Python/C++之外冷门语言上的代码生成瓶颈，论文已发表在arXiv，为多语言代码AI辅助开辟新路径。",
         "rating": "B",
-        "score": 69,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "隐私导向的开源替代品可能分流沉浸式翻译用户，反映AI工具隐私信任危机下的市场机会，可能催生更多自主可控的本地化翻译工具。",
-        "entities": [
-          "Chrome",
-          "Gemini",
-          "Google Translate"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/jimmy_su/status/2047462438095008041"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776996185,
-        "published_at": "2026-04-24T10:03:05.618686",
-        "source": "x",
-        "url": "https://x.com/jimmy_su/status/2047462438095008041",
-        "event_id": null
-      },
-      {
-        "id": "dc2383c7037df93e3ee8d8e37181b44c",
-        "title": "OpenAI正式发布GPT-5.5：新一代智能模型面向复杂任务与Agent而生",
-        "original_title": "a new model and a new beginning!",
-        "summary": "OpenAI发布GPT-5.5，定位为面向真实工作和AI Agent的新一代智能模型，具备理解复杂目标、使用工具、自我检查和多步任务执行能力，已在ChatGPT和Codex中上线。",
-        "rating": "S",
-        "score": 99,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "GPT-5.5的Agent化定位将重塑AI应用生态，可能加速企业级Agent部署，对竞品Claude和Gemini形成直接竞争压力，同时影响AI编程工具市场格局。",
-        "entities": [
-          "Codex",
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/yihengxu_/status/2047419041640481219"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776996185,
-        "published_at": "2026-04-24T10:03:05.618713",
-        "source": "x",
-        "url": "https://x.com/yihengxu_/status/2047419041640481219",
-        "event_id": null
-      },
-      {
-        "id": "229b39cdee351a84fe1927ffe2d3c540",
-        "title": "知名开发者炮轰Claude编程能力下降，称其「变蠢了」不得不再次手写代码",
-        "original_title": "I can't believe we were right Claude was dumbified on March 4, just when we noticed!",
-        "summary": "独立开发者Pieter Levels公开抱怨Claude Code配合Opus 4.6编程能力严重下降，表示不得不重新自己写代码，引发社区对AI编程工具质量波动的广泛讨论。",
-        "rating": "S",
-        "score": 93,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "AI编程助手的质量稳定性成为新的竞争维度，可能加速用户在Claude、Copilot、Cursor之间的迁移，推动AI产品可靠性成为核心卖点。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Pieter Levels"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/levelsio/status/2047387029915271445"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776996185,
-        "published_at": "2026-04-24T10:03:05.618724",
-        "source": "x",
-        "url": "https://x.com/levelsio/status/2047387029915271445",
-        "event_id": null
-      },
-      {
-        "id": "dd539d242e86024e15e1d327033ee296",
-        "title": "索尼AI乒乓球机器人登Nature封面，首次与专业选手正面对抗",
-        "original_title": "Super impressed by the Table Tennis robot from @SonyAI_global. As a TT player myself, I thought expert TT robot is decades away. Amazed by how far sta...",
-        "summary": "索尼AI研发的乒乓球机器人研究登上Nature封面，通过状态估计和模拟器强化学习实现了与人类精英选手的高速对打，突破了困扰学界40余年的具身智能难题。",
-        "rating": "A",
-        "score": 80,
+        "score": 71,
         "type": "research",
         "typeName": "研究成果",
-        "expansion": "具身智能在精细化运动控制上的突破可能加速体育训练机器人、工业精密操作机器人等应用落地，推动RL与sim-to-real技术的商业化。",
+        "expansion": "该方法可能提升企业级多语言代码库的AI辅助开发效率，影响GitHub Copilot等工具对冷门语言的支持能力，扩大AI编程工具的适用范围。",
         "entities": [
-          "Nature",
-          "Sony"
+          "Arxiv",
+          "Cross-Pl Transfer",
+          "Meta"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/sherryyangML/status/2047322707050569839"
+            "url": "https://x.com/seb_ruder/status/2047348261283881217"
           }
         ],
         "sources": 1,
-        "timestamp": 1776996185,
-        "published_at": "2026-04-24T10:03:05.618735",
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605523",
         "source": "x",
-        "url": "https://x.com/sherryyangML/status/2047322707050569839",
-        "event_id": null
-      },
-      {
-        "id": "3af2650dd6d1de055920378d3a6c1791",
-        "title": "Nature揭示心脏癌症罕见之谜：心脏跳动的机械压力能击败癌细胞",
-        "original_title": "Why is heart cancer so rare? The pumping muscle ‘beats’ it",
-        "summary": "Nature最新研究表明，心脏跳动产生的机械压力能够抑制癌细胞在小鼠心脏中的增殖，首次从力学角度解释了心脏癌症极为罕见的原因。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "机械力抑制癌细胞的发现可能开辟全新的抗癌疗法方向，推动力学微环境在肿瘤治疗中的研究，对生物医学工程领域产生深远影响。",
-        "entities": [
-          "Nature"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01296-z"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776996185,
-        "published_at": "2026-04-24T10:03:05.618755",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01296-z",
+        "url": "https://x.com/seb_ruder/status/2047348261283881217",
         "event_id": null
       },
       {
@@ -21069,6 +21517,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-24T10:04:13.502724",
-  "total_news": 734
+  "last_updated": "2026-04-24T11:03:15.009502",
+  "total_news": 750
 }
