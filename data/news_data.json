@@ -2,6 +2,290 @@
   "news": {
     "2026-04-24": [
       {
+        "id": "2b3221c030d82876ae00628f3476d1ad",
+        "title": "张一凡ICLR 2026报告：张量积注意力论文入选NeurIPS Spotlight",
+        "original_title": "NO MORE MLA, WE ARE SO BACK!",
+        "summary": "张一凡在ICLR 2026上报告其论文\\\"Tensor Product Attention Is All You Need\\\"已被NeurIPS 2025接收为Spotlight（前3%），TPA机制在性能和速度上均优于GQA和MLA，且兼容现有架构。",
+        "rating": "B",
+        "score": 69,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "TPA作为MLA的替代方案，可能影响未来大模型注意力架构设计，推动Transformer效率进一步提升。",
+        "entities": [
+          "Gqa",
+          "Mla",
+          "Neurips",
+          "Tpa",
+          "Yifan Zhang"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/yifan_zhang_/status/2047521381659668822"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777003294,
+        "published_at": "2026-04-24T12:01:34.781354",
+        "source": "x",
+        "url": "https://x.com/yifan_zhang_/status/2047521381659668822",
+        "event_id": null
+      },
+      {
+        "id": "88ef4ec584ae80617280719bd462f87d",
+        "title": "DeepSeek V4成为新SOTA：百万token上下文推理成本骤降73%",
+        "original_title": "DeepSeek V4 is the new SoTA because: - In the one-million-token context setting, DeepSeekV4-Pro requires only 27% of single-token inference FLOPs and ...",
+        "summary": "DeepSeek V4 Pro在百万token上下文设置下仅需V3.2的27%推理算力和10%的KV缓存，KV缓存可压缩至约2%，在MRCR任务上超越Gemini 3.1 Pro，数学达到满分120/120。",
+        "rating": "S",
+        "score": 97,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "百万token上下文的低成本实现可能改变RAG应用格局，长上下文窗口将从高端API下沉到更多应用场景。",
+        "entities": [
+          "DeepSeek",
+          "Deepseek V4",
+          "Gemini",
+          "Kv Cache"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Xianbao_QIAN/status/2047520639364501596"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777003294,
+        "published_at": "2026-04-24T12:01:34.781392",
+        "source": "x",
+        "url": "https://x.com/Xianbao_QIAN/status/2047520639364501596",
+        "event_id": null
+      },
+      {
+        "id": "88fbdd1b2ff2a4f1250bb5bc9e1d0de7",
+        "title": "Omni模型实现上下文展开：统一多模态推理新范式",
+        "original_title": "Context Unrolling in Omni Models - A unified multimodal model natively trained on diverse modalities, including text, images, videos, 3D geometry, and...",
+        "summary": "新研究提出Context Unrolling方法，训练统一多模态模型原生处理文本、图像、视频、3D几何等多种模态，在多模态生成和理解基准上表现优异。",
+        "rating": "B",
+        "score": 73,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "统一多模态模型的突破可能加速AGI进程，对自动驾驶、机器人等需要多模态融合的领域产生直接影响。",
+        "entities": [
+          "Context Unrolling",
+          "Multimodal",
+          "Omni Models"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/arankomatsuzaki/status/2047519009004716097"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777003294,
+        "published_at": "2026-04-24T12:01:34.781414",
+        "source": "x",
+        "url": "https://x.com/arankomatsuzaki/status/2047519009004716097",
+        "event_id": null
+      },
+      {
+        "id": "630698af83495e414af9b9ebc805b05b",
+        "title": "DeepSeek V4正式开源：1.6万亿参数Pro版挑战闭源顶尖模型",
+        "original_title": "RT DeepSeek: 🚀 DeepSeek-V4 Preview is officially live & open-sourced! Welcome to the era of cost-effective 1M context length. 🔹 DeepSeek-V4-Pro:...",
+        "summary": "DeepSeek V4 Preview正式上线并开源，Pro版拥有1.6万亿总参数/490亿激活参数，性能媲美全球顶尖闭源模型；Flash版2840亿总参数/130亿激活参数，主打高效经济。",
+        "rating": "S",
+        "score": 100,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "开源模型性能逼近闭源顶尖水平，将加速AI民主化进程，可能引发更多开源模型竞赛和商业模型定价压力。",
+        "entities": [
+          "DeepSeek",
+          "Deepseek V4",
+          "Hugging Face"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/jeremyphoward/status/2047524780975546768"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777003294,
+        "published_at": "2026-04-24T12:01:34.781431",
+        "source": "x",
+        "url": "https://x.com/jeremyphoward/status/2047524780975546768",
+        "event_id": null
+      },
+      {
+        "id": "7ffbcb9921f35d326e4fc83e78baf47e",
+        "title": "DeepSeek V4算力受限暗示将大规模使用华为推理芯片",
+        "original_title": "Very interesting. DeepSeek added the following comment with V4: “Due to constraints in high-end compute capacity, the current service capacity for Pr...",
+        "summary": "DeepSeek在V4发布中提到高端算力受限，Pro版服务容量有限，预计下半年950个超级节点大规模上线后价格将显著降低，外界分析其可能大量使用华为芯片进行推理。",
+        "rating": "S",
+        "score": 93,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "DeepSeek使用华为芯片推理的信号可能重塑中美AI芯片格局，影响英伟达在华市场份额及国产芯片产业链。",
+        "entities": [
+          "DeepSeek",
+          "Huawei",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/jukan05/status/2047516566149816627"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777003294,
+        "published_at": "2026-04-24T12:01:34.781449",
+        "source": "x",
+        "url": "https://x.com/jukan05/status/2047516566149816627",
+        "event_id": null
+      },
+      {
+        "id": "8cb7a098f90bb28a3f400f91e47720c7",
+        "title": "DeepSeek V4发布速度惊人，软硬协同设计趋势值得关注",
+        "original_title": "Impressive speed for DeepSeek V4. Can't wait to try out its system engineering and general problem solving skills. Also, it'll be interesting to keep ...",
+        "summary": "业内人士对DeepSeek V4的发布速度表示赞赏，关注其在系统工程和通用问题解决方面的能力，同时指出DeepSeek暗示的软硬件协同设计趋势值得持续关注。",
+        "rating": "B",
+        "score": 71,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "软硬件协同设计可能成为大模型竞争的新维度，影响芯片设计和模型训练的协作模式。",
+        "entities": [
+          "DeepSeek",
+          "Deepseek V4"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/jiayq/status/2047516470167662840"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777003294,
+        "published_at": "2026-04-24T12:01:34.781464",
+        "source": "x",
+        "url": "https://x.com/jiayq/status/2047516470167662840",
+        "event_id": null
+      },
+      {
+        "id": "d4634e39d18d0b61b32d5a6a1bcf7c45",
+        "title": "Anthropic Mythos在人类最后考试中大幅领先或因预训练数据优势",
+        "original_title": "it seems that mythos's much better performance on humanity's last exam is bc anthropic has much more pretraining data than openai (remember the book l...",
+        "summary": "分析认为Anthropic的Mythos模型在Humanity's Last Exam上表现远超OpenAI，可能因为Anthropic拥有更多预训练数据（涉及此前的书籍版权诉讼），其他任务上两者差距不大。",
+        "rating": "A",
+        "score": 82,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "预训练数据量差异对模型能力的影响可能引发更多版权诉讼，同时推动数据合规和数据市场发展。",
+        "entities": [
+          "Anthropic",
+          "Mythos",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/itsandrewgao/status/2047514480188555475"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777003294,
+        "published_at": "2026-04-24T12:01:34.781479",
+        "source": "x",
+        "url": "https://x.com/itsandrewgao/status/2047514480188555475",
+        "event_id": null
+      },
+      {
+        "id": "ae524e4d5a57545668f526446d8b942b",
+        "title": "DeepSeek V4登顶Vibe Code编程基准，超越所有闭源前沿模型",
+        "original_title": "DeepSeek v4 is now the #1 open-weight model on our Vibe Code Benchmark, and it’s not close. It leaves the #2 (Kimi K2.6) in the dust, and even beats ...",
+        "summary": "DeepSeek V4成为Vibe Code Benchmark第一名开源权重模型，大幅领先第二名Kimi K2.6，甚至超越Gemini 3.1 Pro等闭源前沿模型。",
+        "rating": "A",
+        "score": 86,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "开源模型在编程能力上超越闭源模型，可能改变开发者工具市场格局，推动更多开发者采用开源方案。",
+        "entities": [
+          "DeepSeek",
+          "Gemini",
+          "Kimi",
+          "Valsai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ValsAI/status/2047513613750202452"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777003294,
+        "published_at": "2026-04-24T12:01:34.781495",
+        "source": "x",
+        "url": "https://x.com/ValsAI/status/2047513613750202452",
+        "event_id": null
+      },
+      {
+        "id": "8a21fd650fdd01788fe461761d530336",
+        "title": "SGLang团队Day0即完成DeepSeek V4全栈推理优化",
+        "original_title": "DeepSeek V4 is out. The SGLang OSS and @radixark teams acted so fast with comprehensive inference optimizations. They even made e2e RL work on Day0! ...",
+        "summary": "LMSYS的SGLang开源团队在DeepSeek V4发布当天即完成从架构到内核的全栈推理优化，同时通过Miles平台提供经过验证的V4 RL训练流水线。",
+        "rating": "A",
+        "score": 82,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "Day0级别的推理优化能力展示了开源社区的协作效率，可能加速新模型的生态建设速度。",
+        "entities": [
+          "DeepSeek",
+          "Lmsys",
+          "Radixark",
+          "Sglang"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/lm_zheng/status/2047513517499335101"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777003294,
+        "published_at": "2026-04-24T12:01:34.781509",
+        "source": "x",
+        "url": "https://x.com/lm_zheng/status/2047513517499335101",
+        "event_id": null
+      },
+      {
+        "id": "d7871b92e79a65448aed70d12365c67a",
+        "title": "DeepSeek V4 Pro发布：面向高效百万token上下文智能",
+        "original_title": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence",
+        "summary": "DeepSeek V4 Pro在Hugging Face上发布，主打高效百万token上下文处理能力，技术报告详细介绍了其架构创新和性能表现。",
+        "rating": "B",
+        "score": 68,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Hugging Face上的开源权重发布将加速社区测试和二次开发，推动长上下文应用生态发展。",
+        "entities": [
+          "DeepSeek",
+          "Deepseek V4",
+          "Hugging Face"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (deepseek)",
+            "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777003294,
+        "published_at": "2026-04-24T12:01:34.781538",
+        "source": "Hacker News (deepseek)",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+        "event_id": null
+      },
+      {
         "id": "a157e160aa2b44e360840e96fda3580a",
         "title": "DeepSeek-V4参数确认：Flash版284B参数，Pro版达1.6T",
         "original_title": "DeepSeek-V4 was pre-trained on 32T tokens using Muon and integrates a new hybrid attention mechanism and mHC",
@@ -419,6 +703,34 @@
         "published_at": "2026-04-24T11:02:03.605879",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1stoif4/tencent_released_an_open_source_model_hy3_preview/",
+        "event_id": null
+      },
+      {
+        "id": "7d41fbd629f40d0f1b8509d7a28c5dc9",
+        "title": "Meta研究突破LLM冷门编程语言瓶颈，跨语言迁移学习新方法",
+        "original_title": "RT Zhaofeng Wu: Excited to share our new work from Meta MSL 🔥 LLMs write great Python/C++ but struggle with uncommon languages. Data scarcity is th...",
+        "summary": "Meta MSL团队提出跨编程语言迁移学习方法，解决LLM在Python/C++之外冷门语言上的代码生成瓶颈，论文已发表在arXiv，为多语言代码AI辅助开辟新路径。",
+        "rating": "B",
+        "score": 71,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该方法可能提升企业级多语言代码库的AI辅助开发效率，影响GitHub Copilot等工具对冷门语言的支持能力，扩大AI编程工具的适用范围。",
+        "entities": [
+          "Arxiv",
+          "Cross-Pl Transfer",
+          "Meta"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/seb_ruder/status/2047348261283881217"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776999723,
+        "published_at": "2026-04-24T11:02:03.605523",
+        "source": "x",
+        "url": "https://x.com/seb_ruder/status/2047348261283881217",
         "event_id": null
       },
       {
@@ -3785,31 +4097,32 @@
     ],
     "2026-04-23": [
       {
-        "id": "7d41fbd629f40d0f1b8509d7a28c5dc9",
-        "title": "Meta研究突破LLM冷门编程语言瓶颈，跨语言迁移学习新方法",
-        "original_title": "RT Zhaofeng Wu: Excited to share our new work from Meta MSL 🔥 LLMs write great Python/C++ but struggle with uncommon languages. Data scarcity is th...",
-        "summary": "Meta MSL团队提出跨编程语言迁移学习方法，解决LLM在Python/C++之外冷门语言上的代码生成瓶颈，论文已发表在arXiv，为多语言代码AI辅助开辟新路径。",
+        "id": "2ee8091fb719a8785e3c69fc85b27606",
+        "title": "AI组合拳一小时做出MV：GPT-Image2+Seedance2+Suno5.5",
+        "original_title": "最強のAIの組み合わせで1時間でMVできた、、 GPT-Image2 × Seedance2 画像：GPT-Image2 動画：Seedance2.0 音楽：Suno5.5 編集：CapCut 頭の中のものがすぐに形...",
+        "summary": "创作者展示使用GPT-Image2生成图像、Seedance2.0生成视频、Suno5.5生成音乐、CapCut剪辑的AI工作流，仅用一小时完成MV制作。",
         "rating": "B",
-        "score": 71,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该方法可能提升企业级多语言代码库的AI辅助开发效率，影响GitHub Copilot等工具对冷门语言的支持能力，扩大AI编程工具的适用范围。",
+        "score": 74,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "AI创作工具链的成熟将降低内容创作门槛，可能冲击传统影视制作行业，同时催生新的AI原生内容创作者经济。",
         "entities": [
-          "Arxiv",
-          "Cross-Pl Transfer",
-          "Meta"
+          "Capcut",
+          "GPT",
+          "Seedance",
+          "Suno"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/seb_ruder/status/2047348261283881217"
+            "url": "https://x.com/hibi_ai__/status/2047335333042569411"
           }
         ],
         "sources": 1,
-        "timestamp": 1776999723,
-        "published_at": "2026-04-24T11:02:03.605523",
+        "timestamp": 1777003294,
+        "published_at": "2026-04-24T12:01:34.781523",
         "source": "x",
-        "url": "https://x.com/seb_ruder/status/2047348261283881217",
+        "url": "https://x.com/hibi_ai__/status/2047335333042569411",
         "event_id": null
       },
       {
@@ -21517,6 +21830,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-24T11:03:15.009502",
-  "total_news": 750
+  "last_updated": "2026-04-24T12:02:00.473427",
+  "total_news": 761
 }
