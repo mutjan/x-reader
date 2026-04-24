@@ -2,6 +2,268 @@
   "news": {
     "2026-04-24": [
       {
+        "id": "dfb51ac65aeeca33524f4a7c8f21641e",
+        "title": "DeepMind推出Vision Banana统一视觉模型",
+        "original_title": "We explored a similar idea three years ago (https://arxiv.org/abs/2305.10722), but it may have been ahead of its time. In hindsight, the motivation wa...",
+        "summary": "Google DeepMind研究者发布Vision Banana，把2D和3D视觉任务统一转化为图像生成问题，并宣称在多项视觉任务上超过专用模型。",
+        "rating": "A+",
+        "score": 87,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果统一生成式视觉路线持续有效，可能改变计算机视觉模型的训练和评测范式，也会影响机器人、三维重建和多模态模型的产品化路线。",
+        "entities": [
+          "Computer Vision",
+          "DeepMind",
+          "Image Generation",
+          "Vision Banana"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/xwang_lk/status/2047619798151110741"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777066219,
+        "published_at": "2026-04-25T05:30:19.753127",
+        "source": "x",
+        "url": "https://x.com/xwang_lk/status/2047619798151110741",
+        "event_id": null
+      },
+      {
+        "id": "268f89009f12bb7d1aa4457c2b9f9c98",
+        "title": "DeepSeek V4工具调用被指仍不稳定",
+        "original_title": "在 Alma 中可以为 DeepSeek V4 模型手动开启 Tool Calling，这样就会用手撸的 ReAct XML parser 来解决 DeepSeek Provider 本身 API 的 Tool Calling 不稳定的问...",
+        "summary": "开发者称DeepSeek V4在Skill和Tool Calling场景中表现不稳，Alma需要手动开启工具调用并用ReAct XML解析器绕过API问题。",
+        "rating": "A+",
+        "score": 87,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "工具调用稳定性直接影响Agent应用落地，可继续观察DeepSeek生态的开发者适配方案，以及国内模型在复杂工作流中的可靠性差距。",
+        "entities": [
+          "Alma",
+          "DeepSeek",
+          "React",
+          "Tool Calling",
+          "Xml Parser"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/yetone/status/2047573789794525210"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777066219,
+        "published_at": "2026-04-25T05:30:19.753333",
+        "source": "x",
+        "url": "https://x.com/yetone/status/2047573789794525210",
+        "event_id": null
+      },
+      {
+        "id": "ab85c5bb055c4221b01f26d2d6d88056",
+        "title": "DeepSeek V4论文竞品评测细节引发调侃",
+        "original_title": "hilarious part in V4 paper evaluating competitors can be hard!",
+        "summary": "有研究者调侃V4论文中评测竞品的部分，指出模型论文在公平比较竞争对手时常会遇到方法和口径上的困难。",
+        "rating": "B",
+        "score": 67,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "该讨论可延伸到大模型基准测试透明度、竞品复现成本，以及论文评测如何避免选择性呈现的问题。",
+        "entities": [
+          "Benchmarking",
+          "DeepSeek",
+          "Large Language Models",
+          "V4"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/teortaxesTex/status/2047573567760404492"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777066219,
+        "published_at": "2026-04-25T05:30:19.753425",
+        "source": "x",
+        "url": "https://x.com/teortaxesTex/status/2047573567760404492",
+        "event_id": null
+      },
+      {
+        "id": "ee0a6a64f34d1bdbacec1405de0ae1ed",
+        "title": "GPT-5.5或接近AGI说法引发轻松讨论",
+        "original_title": "No one's perfect",
+        "summary": "社交平台围绕\"GPT-5.5可能是AGI\"的玩笑展开互动，信息量有限，但反映出开发者社区对下一代OpenAI模型能力的期待。",
+        "rating": "B",
+        "score": 67,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这类话题可跟踪下一代模型发布前的市场预期、社区测试样例和AGI叙事升温对产品营销的影响。",
+        "entities": [
+          "AGI",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/lefthanddraft/status/2047518506846228902"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777066219,
+        "published_at": "2026-04-25T05:30:19.753515",
+        "source": "x",
+        "url": "https://x.com/lefthanddraft/status/2047518506846228902",
+        "event_id": null
+      },
+      {
+        "id": "1e3805211f846dfc2d4e82454386c02d",
+        "title": "开源工具让AI代理吐槽你的代码",
+        "original_title": "Hear your agent suffer through your code",
+        "summary": "GitHub项目endless-toil在Hacker News引发讨论，主打让开发者听见AI代理处理代码时的拟人化反馈，偏向实验性开发者玩具。",
+        "rating": "B",
+        "score": 67,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "开发者工具开始把Agent执行过程可视化和拟人化，可观察这类项目是否演变为调试、可观测性或代码审查的新交互形态。",
+        "entities": [
+          "Ai Agents",
+          "Developer Tools",
+          "Endless-Toil",
+          "Github"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/AndrewVos/endless-toil"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777066219,
+        "published_at": "2026-04-25T05:30:19.753604",
+        "source": "Hacker News",
+        "url": "https://github.com/AndrewVos/endless-toil",
+        "event_id": null
+      },
+      {
+        "id": "0a461ac0917d38609928020dfb1c3e3e",
+        "title": "SpaceX被称已成AI公司，火箭周报梳理航天新动态",
+        "original_title": "Rocket Report: Artemis III rocket getting ready; SpaceX is now an AI company",
+        "summary": "Ars Technica火箭周报聚焦Artemis III火箭准备、SpaceX发射里程碑、Blue Origin轨道载荷失利以及加拿大航天港争议等动态。",
+        "rating": "A",
+        "score": 78,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "航天公司与AI能力的结合会继续影响发射调度、火箭复用和制造效率，也可延伸观察Blue Origin和SpaceX的商业航天竞争。",
+        "entities": [
+          "Artemis",
+          "Ast Spacemobile",
+          "Blue Origin",
+          "New Glenn",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Space – Ars Technica",
+            "url": "https://arstechnica.com/space/2026/04/rocket-report-some-canadians-dont-want-a-spaceport-falcon-hits-600-landings/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777066219,
+        "published_at": "2026-04-25T05:30:19.753694",
+        "source": "Space – Ars Technica",
+        "url": "https://arstechnica.com/space/2026/04/rocket-report-some-canadians-dont-want-a-spaceport-falcon-hits-600-landings/",
+        "event_id": null
+      },
+      {
+        "id": "a9b27e04f1033efcb4c6cc64b6d4e668",
+        "title": "Nature呼吁用夜科学思维突破研究卡点",
+        "original_title": "Hit a glitch in your research? Some ‘night science’ thinking could move it forward",
+        "summary": "Nature文章介绍Itai Yanai和Martin Lercher提出的\"夜科学\"思维，鼓励科研人员在常规实验流程之外用更开放的方式寻找突破。",
+        "rating": "B",
+        "score": 66,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "该话题可延伸到科研方法论、实验室创新管理，以及AI工具是否能辅助研究者进行非线性创意探索。",
+        "entities": [
+          "Itai Yanai",
+          "Martin Lercher",
+          "Nature",
+          "Night Science"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01294-1"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777066219,
+        "published_at": "2026-04-25T05:30:19.753783",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01294-1",
+        "event_id": null
+      },
+      {
+        "id": "e66b735b91c2cb6918977f5f35f49bf3",
+        "title": "Wired提醒别轻信ChatGPT理财建议",
+        "original_title": "5 Reasons to Think Twice Before Using ChatGPT—or Any Chatbot—for Financial Advice",
+        "summary": "Wired文章提醒用户在使用ChatGPT等聊天机器人获取金融建议时保持警惕，强调模型幻觉、责任边界和个体风险差异仍不可忽视。",
+        "rating": "A",
+        "score": 79,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "AI理财建议涉及消费者保护和金融监管，可继续跟踪平台免责声明、合规边界以及专业金融顾问行业受到的冲击。",
+        "entities": [
+          "Ai Chatbots",
+          "Financial Advice",
+          "GPT",
+          "Wired"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/5-reasons-to-think-twice-before-using-chatgpt-for-financial-advice/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777066219,
+        "published_at": "2026-04-25T05:30:19.753871",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/5-reasons-to-think-twice-before-using-chatgpt-for-financial-advice/",
+        "event_id": null
+      },
+      {
+        "id": "b010eb6b1c8f79394b9a9f401a7bda44",
+        "title": "中国重要期刊排名关闭震动学术圈",
+        "original_title": "Closure of China’s influential journal ranking leaves academics reeling — what will take its place?",
+        "summary": "Nature报道称中国有影响力的期刊排名关闭后，学术界正在寻找替代评价体系，过去一年已有多个新榜单出现但争议仍在延续。",
+        "rating": "A",
+        "score": 77,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "科研评价体系变化会影响高校考核、论文投稿和期刊生态，也可延伸到中国科研治理与国际评价标准的关系。",
+        "entities": [
+          "China",
+          "Journal Rankings",
+          "Nature",
+          "Research Evaluation"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01277-2"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777066219,
+        "published_at": "2026-04-25T05:30:19.753957",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01277-2",
+        "event_id": null
+      },
+      {
         "id": "9c2a344c6a5271d3a226efdff6ac9dca",
         "title": "GPT-5.5用GPT Image 2生成的图片做参考建站，效果惊艳反驳质疑声",
         "original_title": "For everyone who said \"GPT Image 2 is useless\", look at this website made by GPT-5.5 using a GPT Image 2 image as reference It's beautiful",
@@ -284,6 +546,33 @@
         "published_at": "2026-04-24T19:01:34.359366",
         "source": "Tom's Hardware",
         "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/softbank-subsidiary-working-with-intel-to-develop-radical-new-zam-memory-is-now-receiving-japanese-govt-subsidies-new-memory-designed-as-a-lower-power-hbm-for-ai-workloads",
+        "event_id": null
+      },
+      {
+        "id": "bca50ca8a83c33f27413f8d978d841d3",
+        "title": "苹果AI研究团队将在ICLR 2026发表6篇论文并招聘高效ML研究员",
+        "original_title": "Our research group at @Apple is presenting 6 papers at ICLR 2026. If you're attending, come meet our colleagues @FartashFg, @raviteja_vemu, @ChangRick...",
+        "summary": "苹果机器学习研究组宣布在ICLR 2026上发表6篇论文，同时开放高效ML研究方向的招聘岗位，展示其在AI基础研究上的持续投入。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "苹果在学术顶会密集发文表明其AI战略从产品导向转向基础研究，可能预示下一代Apple Intelligence的重大升级方向",
+        "entities": [
+          "Apple",
+          "Iclr"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/OncelTuzel/status/2047439691839156566"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777028494,
+        "published_at": "2026-04-24T19:01:34.359325",
+        "source": "x",
+        "url": "https://x.com/OncelTuzel/status/2047439691839156566",
         "event_id": null
       },
       {
@@ -5783,30 +6072,31 @@
     ],
     "2026-04-23": [
       {
-        "id": "bca50ca8a83c33f27413f8d978d841d3",
-        "title": "苹果AI研究团队将在ICLR 2026发表6篇论文并招聘高效ML研究员",
-        "original_title": "Our research group at @Apple is presenting 6 papers at ICLR 2026. If you're attending, come meet our colleagues @FartashFg, @raviteja_vemu, @ChangRick...",
-        "summary": "苹果机器学习研究组宣布在ICLR 2026上发表6篇论文，同时开放高效ML研究方向的招聘岗位，展示其在AI基础研究上的持续投入。",
+        "id": "7009908549bb405521e4658cb9df5fa1",
+        "title": "Nature提出科研界需要正视失败",
+        "original_title": "We need to talk about failure in science",
+        "summary": "Nature文章呼吁科研共同体更公开地讨论失败，让未成功实验和负结果成为可学习的知识，而不是被系统性隐藏。",
         "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "苹果在学术顶会密集发文表明其AI战略从产品导向转向基础研究，可能预示下一代Apple Intelligence的重大升级方向",
+        "score": 65,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "科研失败公开化会影响论文发表、基金评审和实验复现文化，也可能催生更重视负结果的数据平台。",
         "entities": [
-          "Apple",
-          "Iclr"
+          "Nature",
+          "Research Culture",
+          "Scientific Failure"
         ],
         "sourceLinks": [
           {
-            "name": "x",
-            "url": "https://x.com/OncelTuzel/status/2047439691839156566"
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01254-9"
           }
         ],
         "sources": 1,
-        "timestamp": 1777028494,
-        "published_at": "2026-04-24T19:01:34.359325",
-        "source": "x",
-        "url": "https://x.com/OncelTuzel/status/2047439691839156566",
+        "timestamp": 1777066219,
+        "published_at": "2026-04-25T05:30:19.754130",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01254-9",
         "event_id": null
       },
       {
@@ -22007,1513 +22297,9 @@
         "source": "Hacker News",
         "url": "https://www.tobyord.com/writing/hourly-costs-for-ai-agents",
         "event_id": null
-      },
-      {
-        "id": "b58171d26deacdb636e151ad5f5e3edb",
-        "title": "Sora核心研究者Bill Peebles离职，OpenAI战略全面转向企业AI",
-        "original_title": "Bill Peebles, the researcher behind Sora, is leaving OpenAI as the company consolidates around enterprise AI and its forthcoming \"superapp\" (Rebecca Bellan/TechCrunch)",
-        "summary": "OpenAI视频生成模型Sora的核心研究者Bill Peebles宣布离职，公司同时关闭Sora项目并将科学团队并入Codex，标志着OpenAI从消费级创新项目向企业AI和超级应用的战略收缩。",
-        "rating": "A+",
-        "score": 91,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "OpenAI核心人才流失可能加速竞品挖角，同时其战略转向企业市场将影响AI视频生成赛道格局，利好Runway、Pika等竞争对手。",
-        "entities": [
-          "Bill Peebles",
-          "Codex",
-          "OpenAI",
-          "Sora"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (sora)",
-            "url": "http://www.techmeme.com/260417/p34#a260417p34"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776459754,
-        "published_at": "2026-04-18T05:02:34.913245",
-        "source": "Techmeme (sora)",
-        "url": "http://www.techmeme.com/260417/p34#a260417p34",
-        "event_id": null
-      },
-      {
-        "id": "110484bfa15dc665315f116df0c9042f",
-        "title": "Sam Altman的World与Tinder合作，用眼球扫描验证真人身份",
-        "original_title": "Should you stare into Sam Altman&rsquo;s orb before your next date?",
-        "summary": "Sam Altman联合创立的World公司将其生物识别验证orb设备与Tinder整合，用户通过面部扫描证明是真人后可获得应用内奖励，该服务将从日本和美国开始推广。",
-        "rating": "A",
-        "score": 85,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "World的真人验证模式若被更多社交平台采纳，可能催生新的身份验证基础设施赛道，同时引发隐私与数据安全争议。",
-        "entities": [
-          "Sam Altman",
-          "Tinder",
-          "World"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/ai-artificial-intelligence/914385/world-id-tinder-identity-verifying-orb"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776459754,
-        "published_at": "2026-04-18T05:02:34.913266",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/914385/world-id-tinder-identity-verifying-orb",
-        "event_id": null
-      },
-      {
-        "id": "196dba896d291fd732d51f3d82d9c5aa",
-        "title": "OpenAI高管Kevin Weil与Bill Peebles双双离职，砍掉消费级支线",
-        "original_title": "Kevin Weil and Bill Peebles exit OpenAI as company continues to shed ‘side quests’",
-        "summary": "OpenAI前首席产品官Kevin Weil和Sora负责人Bill Peebles同时离职，公司关闭Sora项目并解散科学团队，全面聚焦企业AI和核心产品。",
-        "rating": "A+",
-        "score": 90,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "两位核心高管的离职可能引发OpenAI内部人才动荡，其战略收缩也意味着消费级AI创新进入低谷期，企业级AI竞争将白热化。",
-        "entities": [
-          "Bill Peebles",
-          "Kevin Weil",
-          "OpenAI",
-          "Sora"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch (sora)",
-            "url": "https://techcrunch.com/2026/04/17/kevin-weil-and-bill-peebles-exit-openai-as-company-continues-to-shed-side-quests/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776459754,
-        "published_at": "2026-04-18T05:02:34.913280",
-        "source": "TechCrunch (sora)",
-        "url": "https://techcrunch.com/2026/04/17/kevin-weil-and-bill-peebles-exit-openai-as-company-continues-to-shed-side-quests/",
-        "event_id": null
-      },
-      {
-        "id": "ea52675972a050746955a5afad60147e",
-        "title": "OpenAI管理层Kevin Weil离职，曾任CPO后转管科学研究",
-        "original_title": "Kevin Weil and Sora Head to Leave OpenAI",
-        "summary": "前Meta和Twitter高管Kevin Weil在加入OpenAI不到两年后宣布离职，他曾担任首席产品官，近期负责公司科学研究计划，其离职加剧了OpenAI高管流失潮。",
-        "rating": "B",
-        "score": 68,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "Kevin Weil的离职可能使OpenAI产品战略更加保守，其在Meta和Twitter的经验流失对公司消费级产品布局是重大打击。",
-        "entities": [
-          "Kevin Weil",
-          "Meta",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information (sora)",
-            "url": "https://www.theinformation.com/briefings/kevin-weil-sora-head-leave-openai"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776459754,
-        "published_at": "2026-04-18T05:02:34.913292",
-        "source": "The Information (sora)",
-        "url": "https://www.theinformation.com/briefings/kevin-weil-sora-head-leave-openai",
-        "event_id": null
-      },
-      {
-        "id": "c4c74e046a15edde7af9e7a599711d58",
-        "title": "OpenAI科学应用Prism上线三个月即关停，负责人Kevin Weil离职",
-        "original_title": "Kevin Weil, OpenAI's former CPO who became VP of OpenAI for Science, is leaving the company; Prism, a web app for scientists launched in Jan., will be shuttered (Maxwell Zeff/Wired)",
-        "summary": "OpenAI今年1月推出的科学家专用Web应用Prism将被关闭并并入Codex，该项目负责人、前Instagram副总裁Kevin Weil同时离开公司。",
-        "rating": "B",
-        "score": 73,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "Prism的快速关停显示OpenAI对垂直科学应用市场信心不足，Codex整合科学功能可能提升开发者工具竞争力，但短期影响学术用户。",
-        "entities": [
-          "Codex",
-          "Kevin Weil",
-          "OpenAI",
-          "Prism"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260417/p32#a260417p32"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776459754,
-        "published_at": "2026-04-18T05:02:34.913303",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260417/p32#a260417p32",
-        "event_id": null
-      },
-      {
-        "id": "74e55e2249a938ec4572b2287208705c",
-        "title": "6600万美国人用AI替代就医，前沿模型误诊率超80%",
-        "original_title": "Millions of Americans Are Talking to AI Instead of Going to the Doctor, and It’s Giving Them Horrendously Flawed Medical Advice",
-        "summary": "JAMA研究显示21个前沿大模型在模糊症状诊断中失败率超80%，即使简单病例也失败40%，但调查显示6600万美国人已在用ChatGPT等获取医疗建议，超900万人因此放弃就医。",
-        "rating": "A",
-        "score": 84,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "AI医疗诊断的可靠性危机可能加速医疗AI监管立法，同时催生专业医疗AI认证体系，对通用大模型进入医疗领域构成重大障碍。",
-        "entities": [
-          "GPT",
-          "Jama"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/millions-americans-ai-instead-doctor-bad-advice"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776459754,
-        "published_at": "2026-04-18T05:02:34.913321",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/millions-americans-ai-instead-doctor-bad-advice",
-        "event_id": null
-      },
-      {
-        "id": "0adccc246d0fcb21ca4dd6aa2453b2af",
-        "title": "Wired确认OpenAI高管Kevin Weil离职，科学应用并入Codex",
-        "original_title": "OpenAI Executive Kevin Weil Is Leaving the Company",
-        "summary": "Wired确认前Instagram副总裁Kevin Weil将离开OpenAI，其领导的AI科学应用Prism将被整合进Codex，这是OpenAI近期一系列高管离职的最新一例。",
-        "rating": "B",
-        "score": 71,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "与TechCrunch和The Information的报道相互印证，OpenAI高管流失已成系统性问题，可能影响公司IPO进程和投资者信心。",
-        "entities": [
-          "Codex",
-          "Kevin Weil",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Feed: Artificial Intelligence Latest",
-            "url": "https://www.wired.com/story/openai-executive-kevin-weil-is-leaving-the-company/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776459754,
-        "published_at": "2026-04-18T05:02:34.913330",
-        "source": "Feed: Artificial Intelligence Latest",
-        "url": "https://www.wired.com/story/openai-executive-kevin-weil-is-leaving-the-company/",
-        "event_id": null
-      },
-      {
-        "id": "832e927491c4a9c1f46f8f216b7bf1fc",
-        "title": "Zoom与World合作引入真人验证徽章，防止AI冒充参会",
-        "original_title": "Zoom teams up with World to verify humans in meetings",
-        "summary": "Zoom宣布与Sam Altman的World公司合作，在视频会议中引入人类身份验证功能，通过World的orb设备验证的用户将在视频画面上显示真人徽章。",
-        "rating": "A",
-        "score": 76,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "视频会议平台的真人验证可能成为企业级刚需，尤其在AI深度伪造泛滥背景下，这一功能有望向Teams、Google Meet等竞品扩散。",
-        "entities": [
-          "Sam Altman",
-          "World",
-          "Zoom"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/04/17/zoom-teams-up-with-world-to-verify-humans-in-meeting/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776459754,
-        "published_at": "2026-04-18T05:02:34.913348",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/17/zoom-teams-up-with-world-to-verify-humans-in-meeting/",
-        "event_id": null
-      },
-      {
-        "id": "41b7cd9a648f9f47954988e1b9e08c3f",
-        "title": "Anthropic 推出 Claude Design 应用，Figma 股价应声下跌约 7%",
-        "original_title": "Figma stock drops ~7% after Anthropic launched Claude Design, a dedicated app powered by its latest model Claude Opus 4.7 (Jon Keegan/Sherwood News)",
-        "summary": "Anthropic 发布基于 Claude Opus 4.7 的 Claude Design 应用，用户可通过文本提示生成网站设计，直接冲击 Figma 的核心业务，导致其股价盘中下跌约 7%。",
-        "rating": "S",
-        "score": 94,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI 设计工具崛起将加速设计行业格局重塑，Figma 可能被迫加速集成 AI 功能或调整定价策略，同时 Adobe、Canva 等竞品也会受到波及。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Figma"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260417/p30#a260417p30"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776456075,
-        "published_at": "2026-04-18T04:01:15.498343",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260417/p30#a260417p30",
-        "event_id": null
-      },
-      {
-        "id": "3e31d12e16f93eec93042137e1acd692",
-        "title": "拜耳部署机器狗守护夏威夷玉米田，应对全球粮食危机",
-        "original_title": "Robot Dogs Patrolling Precious Crops as Food Crisis Deepens",
-        "summary": "拜耳在夏威夷 8000 英亩玉米农场部署 Asylon 机器狗进行 24 小时巡逻，利用热成像和光电传感器防范破坏者和自然灾害，背景是全球 fertilizer 供应因美伊冲突受扰、粮食价格即将飙升。",
-        "rating": "B",
-        "score": 68,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "农业机器人化趋势将加速，机器狗从安防向农业巡检、灾害预警延伸，同时全球粮食供应链脆弱性可能推动各国加大农业科技和替代肥料投入。",
-        "entities": [
-          "Asylon",
-          "Bayer",
-          "Donald Trump"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/robots-and-machines/robot-dog-food-crisis"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776456075,
-        "published_at": "2026-04-18T04:01:15.498366",
-        "source": "Futurism",
-        "url": "https://futurism.com/robots-and-machines/robot-dog-food-crisis",
-        "event_id": null
-      },
-      {
-        "id": "5200350b14db254521eb0384b2319667",
-        "title": "Cursor 洽谈超 20 亿美元融资，估值飙至 500 亿美元",
-        "original_title": "Sources: Cursor in talks to raise $2B+ at $50B valuation as enterprise growth surges",
-        "summary": "AI 编程工具 Cursor 正与 a16z 和 Thrive 等老股东洽谈新一轮融资，计划募资超 20 亿美元，估值达 500 亿美元，反映企业端对 AI 编程助手的需求爆发式增长。",
-        "rating": "S",
-        "score": 94,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "Cursor 估值飙升将带动 AI 编程赛道整体升温，GitHub Copilot、Replit 等竞品可能面临更大融资和并购压力，同时高估值也带来业绩兑现的严峻考验。",
-        "entities": [
-          "A16Z",
-          "Cursor",
-          "Thrive"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776456075,
-        "published_at": "2026-04-18T04:01:15.498385",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/",
-        "event_id": null
-      },
-      {
-        "id": "558b8bbd5efb36b6501739655c0c0bb9",
-        "title": "谷歌 DeepMind 发布 Gemini Robotics-ER 1.6，提升机器人规划与感知能力",
-        "original_title": "Google Deepmind's Gemini Robotics-ER 1.6 gives robots a sharper brain for planning and perception",
-        "summary": "Google DeepMind 推出 Gemini Robotics-ER 1.6，让机器人在规划和执行动作时更加精准，新增读取测量仪器的能力，进一步缩小机器人从感知到行动的差距。",
-        "rating": "A",
-        "score": 81,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "机器人基础模型能力突破将加速工业和服务机器人落地，可能引发特斯拉 Optimus、Figure AI 等竞品的技术军备竞赛，同时推动制造业自动化升级。",
-        "entities": [
-          "DeepMind",
-          "Gemini"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER (Gemini)",
-            "url": "https://the-decoder.com/google-deepminds-gemini-robotics-er-1-6-gives-robots-a-sharper-brain-for-planning-and-perception/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776456075,
-        "published_at": "2026-04-18T04:01:15.498398",
-        "source": "THE DECODER (Gemini)",
-        "url": "https://the-decoder.com/google-deepminds-gemini-robotics-er-1-6-gives-robots-a-sharper-brain-for-planning-and-perception/",
-        "event_id": null
-      },
-      {
-        "id": "0f4f9ad8103fef555391be88630ab2e3",
-        "title": "Cursor 拟融资约 20 亿美元，a16z 与英伟达联合领投",
-        "original_title": "Sources: Cursor is in advanced talks to raise about $2B co-led by a16z at a pre-money valuation of more than $50B, with Nvidia participating (Bloomberg)",
-        "summary": "Cursor 正在与投资者进行深入谈判，拟募资约 20 亿美元，由 a16z 联合领投，英伟达参与，投前估值超 500 亿美元，进一步巩固其在 AI 编程领域的头部地位。",
-        "rating": "S",
-        "score": 98,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "英伟达参与投资 Cursor 显示其正在布局 AI 应用层生态，可能引发微软、谷歌等巨头对 AI 编程工具的进一步收购或投资动作。",
-        "entities": [
-          "A16Z",
-          "Cursor",
-          "NVIDIA"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260417/p28#a260417p28"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776456075,
-        "published_at": "2026-04-18T04:01:15.498411",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260417/p28#a260417p28",
-        "event_id": null
-      },
-      {
-        "id": "2ecbc6900af2ea4b8b79ee22501d98c4",
-        "title": "财富管理公司Iconiq资产管理规模达千亿美元，2025年已向AI初创企业投资30亿",
-        "original_title": "A profile of wealth manager Iconiq, which, sources say, has $100B AUM, with $26B specifically for VC investing; Iconiq invested $3B into AI startups in 2025 (Natasha Mascarenhas/Bloomberg)",
-        "summary": "据消息人士透露，财富管理机构Iconiq管理资产规模达1000亿美元，其中260亿美元专用于风险投资，该公司在2025年已向人工智能初创企业投入30亿美元。",
-        "rating": "A",
-        "score": 78,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "Iconiq的大规模AI投资动向可能预示机构资本对AI赛道的持续看好，进而影响一级市场估值水平和创业公司的融资环境。",
-        "entities": [
-          "Anthropic",
-          "Dario Amodei",
-          "Iconiq"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260417/p27#a260417p27"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776452630,
-        "published_at": "2026-04-18T03:03:50.257802",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260417/p27#a260417p27",
-        "event_id": null
-      },
-      {
-        "id": "0c765e6c4a4a7b0ecd0c0ede765db432",
-        "title": "Anthropic Mythos模型网络安全能力引白宫关注，CEO亲赴华府斡旋",
-        "original_title": "The White House weighs whether Anthropic's Mythos is too valuable for the federal government to refuse",
-        "summary": "Anthropic首席执行官Dario Amodei前往白宫与特朗普幕僚长Susie Wiles会面，试图化解与五角大楼长达数月的僵局，其新款Mythos模型在网络安全方面的能力成为关键突破口。",
-        "rating": "A",
-        "score": 86,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "若Anthropic与联邦政府达成深度合作，可能改变美国AI防务采购格局，并对OpenAI、Palantir等竞争对手的政府合同业务产生连锁影响。",
-        "entities": [
-          "Anthropic",
-          "Dario Amodei",
-          "Mythos"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/the-white-house-weighs-whether-anthropics-mythos-is-too-valuable-for-the-federal-government-to-refuse/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776452630,
-        "published_at": "2026-04-18T03:03:50.257814",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/the-white-house-weighs-whether-anthropics-mythos-is-too-valuable-for-the-federal-government-to-refuse/",
-        "event_id": null
-      },
-      {
-        "id": "7228fd19ab167662c447f5b81b4d57e3",
-        "title": "阿里开源模型Qwen3.6在智能编码基准测试中超越谷歌Gemma 4",
-        "original_title": "Alibaba's open model Qwen3.6 leads Google's Gemma 4 across agentic coding benchmarks",
-        "summary": "阿里巴巴最新开源模型Qwen3.6-35B-A3B采用稀疏激活架构，每次仅调用35亿参数中的30亿，却在编码与推理基准测试中击败参数量更大的谷歌Gemma 4-31B。",
-        "rating": "A",
-        "score": 80,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "Qwen3.6在开源编码模型中的领先表现，可能进一步巩固阿里在开发者社区的影响力，并促使谷歌加速Gemma系列的迭代升级。",
-        "entities": [
-          "Alibaba",
-          "Gemma",
-          "Google",
-          "Qwen"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/alibabas-open-model-qwen3-6-leads-googles-gemma-4-across-agentic-coding-benchmarks/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776452630,
-        "published_at": "2026-04-18T03:03:50.257824",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/alibabas-open-model-qwen3-6-leads-googles-gemma-4-across-agentic-coding-benchmarks/",
-        "event_id": null
-      },
-      {
-        "id": "cbe422aac000304fdb932d06b17cc728",
-        "title": "AI扩张引发公众强烈反弹，科技领袖安全受威胁",
-        "original_title": "There Are Signs of a Massive AI Backlash",
-        "summary": "公众对科技行业AI扩张的不满情绪正在升温，OpenAI CEO Sam Altman住所遭燃烧弹袭击、印第安纳州市议员因反对数据中心遭枪击等事件，标志着反AI情绪已从网络蔓延至现实暴力。",
-        "rating": "A+",
-        "score": 87,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "此类安全事件可能促使科技巨头加强高管安保投入，并推动政策层面就AI基础设施建设与社区利益平衡展开更激烈的立法博弈。",
-        "entities": [
-          "Anthropic",
-          "Dario Amodei",
-          "OpenAI",
-          "Sam Altman",
-          "Tbpn"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/signs-massive-ai-backlash"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776452630,
-        "published_at": "2026-04-18T03:03:50.257833",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/signs-massive-ai-backlash",
-        "event_id": null
-      },
-      {
-        "id": "83108d7435258d7b9ca9851d31cc8c48",
-        "title": "卫星图像显示美国四成数据中心项目遭遇建设延期",
-        "original_title": "Satellite and drone images reveal big delays in US data center construction",
-        "summary": "卫星与无人机影像分析表明，受电力供应紧张和当地社区抵制影响，美国近40%计划于今年投运的数据中心项目可能无法按期完工，数百亿美元基建投资面临搁浅风险。",
-        "rating": "A",
-        "score": 85,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "数据中心建设瓶颈可能加剧AI算力供需紧张，推动云服务商寻求海外扩张或加速能效技术投资，进而影响全球AI产业链布局。",
-        "entities": [
-          "Amazon",
-          "Astraea",
-          "Google",
-          "Microsoft"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/ai/2026/04/construction-delays-hit-40-of-us-data-centers-planned-for-2026/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776452630,
-        "published_at": "2026-04-18T03:03:50.257842",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/ai/2026/04/construction-delays-hit-40-of-us-data-centers-planned-for-2026/",
-        "event_id": null
-      },
-      {
-        "id": "3d84cbbfb76fff3900a23c4784b4b96c",
-        "title": "Sam Altman遇袭不到一周现身旧金山公开演讲",
-        "original_title": "Sam Altman is speaking to a packed audience at the World event in San Francisco right now, less than a week after the attack on his home.",
-        "summary": "OpenAI首席执行官Sam Altman在住所遭遇袭击后不到一周，即现身旧金山World活动并向满座观众发表演讲。",
-        "rating": "B",
-        "score": 68,
-        "type": "breaking",
-        "typeName": "突发事件",
-        "expansion": "此事件可能引发对科技领袖人身安全保护措施的讨论，以及OpenAI与World项目（虹膜识别加密货币）关联的进一步审视。",
-        "entities": [
-          "Sam Altman"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/ZeffMax/status/2045191348849102961"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776452630,
-        "published_at": "2026-04-18T03:03:50.257735",
-        "source": "x",
-        "url": "https://x.com/ZeffMax/status/2045191348849102961",
-        "event_id": null
-      },
-      {
-        "id": "ccc34d7f1e9ec31e541025fb73ec8736",
-        "title": "Anthropic推出Claude Design，对话即可生成原型与演示文稿",
-        "original_title": "RT Claude: Introducing Claude Design by Anthropic Labs: make prototypes, slides, and one-pagers by talking to Claude. Powered by Claude Opus 4.7, our ...",
-        "summary": "Anthropic Labs发布Claude Design新功能，用户可通过对话让Claude生成原型、幻灯片和单页文档，由Claude Opus 4.7视觉模型驱动，已向Pro及以上用户开放研究预览。",
-        "rating": "S",
-        "score": 95,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Claude Design的发布可能加剧AI辅助设计工具市场的竞争，对Figma、Canva等现有设计平台形成冲击，并推动多模态AI在生产力场景的渗透。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Claude Design",
-          "Claude Opus"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/jerhadf/status/2045170971447796093"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776452630,
-        "published_at": "2026-04-18T03:03:50.257781",
-        "source": "x",
-        "url": "https://x.com/jerhadf/status/2045170971447796093",
-        "event_id": null
-      },
-      {
-        "id": "2908e90f6844be77c62b63b83fd634a9",
-        "title": "Claude月活翻倍超越DeepSeek和Grok，ChatGPT市场份额持续流失",
-        "original_title": "ChatGPT bleeds market share as Claude posts explosive monthly growth",
-        "summary": "Claude单月市场份额翻倍，超过DeepSeek和Grok，ChatGPT虽仍领先但正快速流失用户，Google Gemini已占据四分之一AI流量。",
-        "rating": "A+",
-        "score": 90,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "AI助手市场格局正在重塑，Claude的快速增长可能迫使OpenAI加速产品迭代和定价调整",
-        "entities": [
-          "Claude",
-          "DeepSeek",
-          "GPT",
-          "Google Gemini"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/chatgpt-bleeds-market-share-as-claude-posts-explosive-monthly-growth/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776448935,
-        "published_at": "2026-04-18T02:02:15.131167",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/chatgpt-bleeds-market-share-as-claude-posts-explosive-monthly-growth/",
-        "event_id": null
-      },
-      {
-        "id": "d88a06ecf87a9be822346c2e1dbc112e",
-        "title": "斯坦福提出T2缩放定律：小模型超训练+多采样或成推理最优解",
-        "original_title": "Train-to-Test scaling explained: How to optimize your end-to-end AI compute budget for inference",
-        "summary": "威斯康星和斯坦福研究者提出Train-to-Test缩放定律，证明在固定预算下，训练更小的模型并使用更多推理采样，比传统大模型策略更优。",
-        "rating": "A",
-        "score": 81,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "T2定律可能改变企业AI部署策略，推动小模型+推理扩展成为主流，影响芯片和云服务市场",
-        "entities": [
-          "Stanford University",
-          "Train-To-Test"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat (qwen)",
-            "url": "https://venturebeat.com/orchestration/train-to-test-scaling-explained-how-to-optimize-your-end-to-end-ai-compute-budget-for-inference"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776448935,
-        "published_at": "2026-04-18T02:02:15.131176",
-        "source": "VentureBeat (qwen)",
-        "url": "https://venturebeat.com/orchestration/train-to-test-scaling-explained-how-to-optimize-your-end-to-end-ai-compute-budget-for-inference",
-        "event_id": null
-      },
-      {
-        "id": "f87b49da0b2d6a9f59923c8e405e95eb",
-        "title": "Anthropic正式发布Claude Design，支持AI生成设计和原型",
-        "original_title": "Anthropic Launches Claude Design",
-        "summary": "Anthropic推出Claude Design新工具，用户可通过对话生成设计、产品原型、演示文稿和单页文档，由Claude Opus 4.7驱动。",
-        "rating": "A+",
-        "score": 89,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Claude Design直接对标传统设计工具，可能改变设计师工作流程，并推动AI视觉生成进入生产力场景",
-        "entities": [
-          "Anthropic",
-          "Claude"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/anthropic-launches-claude-design"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776448935,
-        "published_at": "2026-04-18T02:02:15.131198",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/anthropic-launches-claude-design",
-        "event_id": null
-      },
-      {
-        "id": "13165e512a63c202506f81dc446647d0",
-        "title": "知名公关公司运营假新闻网站，大规模抄袭原创报道",
-        "original_title": "A Prominent PR Firm Is Running a Fake News Site That’s Plagiarizing Original Journalism at Incredible Scale",
-        "summary": "Futurism调查发现TOP Agency运营的National Today网站每日发布数百篇AI生成的抄袭文章，剽窃多家媒体原创内容且充满事实错误。",
-        "rating": "A",
-        "score": 82,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "AI生成内容抄袭问题暴露监管空白，可能推动平台方和立法者加强对AI内容的审核要求",
-        "entities": [
-          "National Today",
-          "Top Agency"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/national-today-ai-plagiarizing"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776448935,
-        "published_at": "2026-04-18T02:02:15.131207",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/national-today-ai-plagiarizing",
-        "event_id": null
-      },
-      {
-        "id": "fb270e021097418b79529a4b9a5777cf",
-        "title": "Worldcoin Orb身份验证接入Tinder，扫码证明你是真人",
-        "original_title": "Gazing Into Sam Altman’s Orb Now Proves You’re Human on Tinder",
-        "summary": "Sam Altman的Worldcoin项目将其Orb虹膜扫描验证与Tinder整合，用户可通过验证证明自己是真人而非AI。",
-        "rating": "B",
-        "score": 70,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI时代身份验证需求上升，Worldcoin与约会场景的结合可能推动生物识别验证在更多平台普及",
-        "entities": [
-          "Sam Altman",
-          "Tinder",
-          "Worldcoin"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Feed: Artificial Intelligence Latest",
-            "url": "https://www.wired.com/story/gazing-into-sam-altmans-orb-now-proves-youre-human-on-tinder/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776448935,
-        "published_at": "2026-04-18T02:02:15.131217",
-        "source": "Feed: Artificial Intelligence Latest",
-        "url": "https://www.wired.com/story/gazing-into-sam-altmans-orb-now-proves-youre-human-on-tinder/",
-        "event_id": null
-      },
-      {
-        "id": "d417ae0b2c23a4681d4f901b1c15f4a9",
-        "title": "VentureBeat调查：多数企业无法阻止第三阶段AI代理威胁",
-        "original_title": "Most enterprises can't stop stage-three AI agent threats, VentureBeat survey finds",
-        "summary": "调查显示88%的企业在过去一年遭遇AI代理安全事件，但仅21%能实时监控代理行为，97%的安全领袖预计12个月内会发生重大AI代理安全事件。",
-        "rating": "A",
-        "score": 85,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "AI代理安全风险被严重低估，企业安全架构滞后于AI部署速度，安全厂商可能迎来新需求窗口",
-        "entities": [
-          "Crowdstrike",
-          "Meta",
-          "Venturebeat"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/security/most-enterprises-cant-stop-stage-three-ai-agent-threats-venturebeat-survey-finds"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776448935,
-        "published_at": "2026-04-18T02:02:15.131252",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/security/most-enterprises-cant-stop-stage-three-ai-agent-threats-venturebeat-survey-finds",
-        "event_id": null
-      },
-      {
-        "id": "7edf73f6569615f6c3a0caef71249c47",
-        "title": "前Hyperbolic创始人加入Databricks，称AI团队采用率极高",
-        "original_title": "RT Yuchen Jin: Life update: I joined Databricks this week! I thought I’d do another startup after Hyperbolic, but I was surprised by how startup-y Da...",
-        "summary": "Yuchen Jin加入Databricks并透露其AI团队内部AI工具使用率极高，每位工程师都在探索AI代理的不同驱动方式。",
-        "rating": "A",
-        "score": 76,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "Databricks作为数据+AI平台，其内部AI采用率可反映企业级AI工具渗透趋势，或影响其产品线方向",
-        "entities": [
-          "Claude",
-          "Databricks",
-          "Hyperbolic",
-          "Yuchen Jin"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/andrew_n_carr/status/2045197453444669801"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776448935,
-        "published_at": "2026-04-18T02:02:15.131087",
-        "source": "x",
-        "url": "https://x.com/andrew_n_carr/status/2045197453444669801",
-        "event_id": null
-      },
-      {
-        "id": "3fd6c5151d3425229d7928d5be317920",
-        "title": "Mythos采用循环Transformer架构，Mixture-of-Recursions或成新效率范式",
-        "original_title": "Mythos is a looped transformer!? 😳 Should be a Mixture-of-Recursions (MoR) — 2× faster, controlled effort. Dense → sparse MoE was the efficiency...",
-        "summary": "新模型Mythos使用循环Transformer架构，研究者提出Mixture-of-Recursions概念，类比2023年Dense到MoE的效率跃迁。",
-        "rating": "B",
-        "score": 66,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若MoR被验证有效，可能引发新一轮模型架构竞赛，影响推理成本和端侧部署策略",
-        "entities": [
-          "Mixture-Of-Recursions",
-          "Mythos",
-          "Transformer"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/reza_byt/status/2045168844658950392"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776448935,
-        "published_at": "2026-04-18T02:02:15.131110",
-        "source": "x",
-        "url": "https://x.com/reza_byt/status/2045168844658950392",
-        "event_id": null
-      },
-      {
-        "id": "aaeb7540834977cd0a5bc2c7e7f5d6a8",
-        "title": "Anthropic发布Claude Design，Figma股价20分钟内剧烈波动",
-        "original_title": "Figma stock 20 minutes after the Claude Design announcement. Wild.",
-        "summary": "Anthropic推出Claude Design工具支持对话生成原型和演示文稿，消息发布后Figma股价出现大幅波动。",
-        "rating": "A+",
-        "score": 90,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI设计工具直接冲击Figma等现有设计平台，可能加速设计行业AI化并引发竞品跟进",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Figma"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Yuchenj_UW/status/2045161719547445426"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776448935,
-        "published_at": "2026-04-18T02:02:15.131125",
-        "source": "x",
-        "url": "https://x.com/Yuchenj_UW/status/2045161719547445426",
-        "event_id": null
-      },
-      {
-        "id": "7cf18d94024e35707a2a56483288d796",
-        "title": "DeepSeek首次融资，估值超100亿美元拟募资至少3亿美元",
-        "original_title": "Friday Night hustle --SCOOP: DeepSeek is Raising Money for First Time, at a $10 Billion+ valuation, seeking to raise at least $300 million, as the AI ...",
-        "summary": "中国AI公司DeepSeek首次对外融资，估值突破100亿美元，计划募资至少3亿美元以应对日益激烈的AI竞争成本。",
-        "rating": "S",
-        "score": 97,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "DeepSeek融资将改变中国大模型竞争格局，资金实力提升后可能加速模型迭代和商业化",
-        "entities": [
-          "DeepSeek"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/jingyanghk/status/2045161166134284433"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776448935,
-        "published_at": "2026-04-18T02:02:15.131136",
-        "source": "x",
-        "url": "https://x.com/jingyanghk/status/2045161166134284433",
-        "event_id": null
-      },
-      {
-        "id": "9186448a84b05a493f10eeb465af8f15",
-        "title": "Grok Build和Grok Computer桌面应用曝光，支持本地与远程双模式",
-        "original_title": "Early look at Grok Build and Computer 🔥 Yes, there is a strong assumption that both will arrive at the same time as a desktop app. > Grok Build UI ...",
-        "summary": "xAI即将推出Grok Build和Grok Computer桌面应用，支持本地代理和远程执行双版本，同时兼容macOS和Windows。",
-        "rating": "A",
-        "score": 78,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "xAI进军桌面AI代理市场，将与Anthropic、OpenAI的桌面产品直接竞争，可能改变AI助手使用场景",
-        "entities": [
-          "Grok",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/testingcatalog/status/2045159102913847407"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776448935,
-        "published_at": "2026-04-18T02:02:15.131147",
-        "source": "x",
-        "url": "https://x.com/testingcatalog/status/2045159102913847407",
-        "event_id": null
-      },
-      {
-        "id": "bb8c06d4c3001270fbbd5b07bb4bc3f5",
-        "title": "Nature：AI教师模型可将偏见潜移默化传递给学生模型",
-        "original_title": "Daily briefing: AI systems can ‘teach’ biases to other models",
-        "summary": "研究表明AI生成的训练数据会将特定偏见传递给后续训练的模型，同时抹香鲸交流结构与人类语言存在相似性。",
-        "rating": "B",
-        "score": 69,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "AI偏见传递问题对合成数据训练范式提出警示，可能影响大模型训练的数据策略",
-        "entities": [
-          "Nature"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01265-6"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776448935,
-        "published_at": "2026-04-18T02:02:15.131243",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01265-6",
-        "event_id": null
-      },
-      {
-        "id": "8afadb115515ca6273da4cefea9a62d7",
-        "title": "ChatGPT广告价格腰斩：CPM从60美元跌至25美元",
-        "original_title": "Ad buyers say ad rates for ChatGPT are falling from $60 CPM to as low as $25 and the minimum spend to advertise is down to $50K from $250K at launch (Krystal Scanlon/Digiday)",
-        "summary": "广告主透露ChatGPT广告投放成本大幅下降，千次展示费用从60美元降至25美元，最低投放门槛也从25万美元降至5万美元，显示平台广告业务正在快速调整定价策略。",
-        "rating": "A",
-        "score": 83,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "广告降价可能反映ChatGPT流量增速放缓或广告主ROI不达预期，需关注OpenAI商业化路径调整及竞品广告策略跟进。",
-        "entities": [
-          "Digiday",
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260417/p25#a260417p25"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776445305,
-        "published_at": "2026-04-18T01:01:45.031106",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260417/p25#a260417p25",
-        "event_id": null
-      },
-      {
-        "id": "bb48b90c20d0cef400b1132f194696f1",
-        "title": "OpenAI股东质疑Altman能否带领公司成功上市",
-        "original_title": "Some OpenAI shareholders reportedly question whether Altman can steer the company to a public offering",
-        "summary": "据华尔街日报报道，随着OpenAI计划以约8500亿美元估值IPO，部分股东开始质疑Sam Altman的领导能力，甚至已在物色潜在继任者。",
-        "rating": "A+",
-        "score": 90,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "IPO前管理层动荡信号需关注，若Altman地位动摇可能影响OpenAI战略方向及投资者信心，进而波及整个AI行业估值。",
-        "entities": [
-          "OpenAI",
-          "Sam Altman",
-          "Wall Street Journal"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/some-openai-shareholders-reportedly-question-whether-altman-can-steer-the-company-to-a-public-offering/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776445305,
-        "published_at": "2026-04-18T01:01:45.031129",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/some-openai-shareholders-reportedly-question-whether-altman-can-steer-the-company-to-a-public-offering/",
-        "event_id": null
-      },
-      {
-        "id": "e592a1dc1fefd6479c0eb6fdc2abffab",
-        "title": "Anthropic推出Claude Design：对话即可生成原型和演示文稿",
-        "original_title": "Anthropic's Claude Design turns chatbot conversations into prototypes, slide decks, and marketing assets",
-        "summary": "Anthropic发布新工具Claude Design，用户可通过与Claude对话创建和优化设计、交互原型、演示文稿和单页营销材料，支持导入代码库和设计文件匹配品牌风格。",
-        "rating": "A+",
-        "score": 88,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI设计工具赛道竞争加剧，Claude Design直接对标Canva、Figma等，可能重塑非专业设计师的内容创作流程。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Claude Design"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/anthropics-claude-design-turns-chatbot-conversations-into-prototypes-slide-decks-and-marketing-assets/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776445305,
-        "published_at": "2026-04-18T01:01:45.031175",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/anthropics-claude-design-turns-chatbot-conversations-into-prototypes-slide-decks-and-marketing-assets/",
-        "event_id": null
-      },
-      {
-        "id": "9c94fc8521a529ae7a31b2795107a91c",
-        "title": "Chef Robotics逆势突围：AI餐饮机器人公司宣称实现盈利",
-        "original_title": "Chef Robotics escaped the robot cooking graveyard and says it’s thriving —  here’s why",
-        "summary": "部署AI引导机械臂进行食品生产的Chef Robotics表示正在蓬勃发展，并计划扩大服务范围以覆盖更广泛的客户群体，在餐饮机器人领域走出了一条不同的路。",
-        "rating": "B",
-        "score": 66,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "若Chef Robotics确实实现商业化突破，可能为AI+机器人垂直场景落地提供可复制的商业模式参考。",
-        "entities": [
-          "Ai",
-          "Chef Robotics",
-          "机器人"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/04/17/chef-robotics-escaped-the-robot-cooking-graveyard-and-says-its-thriving-heres-why/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776445305,
-        "published_at": "2026-04-18T01:01:45.031197",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/17/chef-robotics-escaped-the-robot-cooking-graveyard-and-says-its-thriving-heres-why/",
-        "event_id": null
-      },
-      {
-        "id": "90d75bd5fa795e38d686df5a505af31f",
-        "title": "Netflix本月将推出竖屏视频流，全面拥抱AI内容创作",
-        "original_title": "Netflix plans to launch a vertical video feed, to help with content discovery, this month, and plans to use AI for content creation and recommendations (Ivan Mehta/TechCrunch)",
-        "summary": "Netflix计划本月在应用内推出类似TikTok的竖屏视频流以改善内容发现，同时计划将AI广泛应用于内容创作和推荐系统，标志着传统流媒体平台向AI驱动的转型。",
-        "rating": "A",
-        "score": 78,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Netflix的AI内容创作尝试若成功，可能改变影视制作流程和成本结构，引发创意行业对AI替代的担忧。",
-        "entities": [
-          "Ai",
-          "ByteDance",
-          "Netflix"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260417/p24#a260417p24"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776445305,
-        "published_at": "2026-04-18T01:01:45.031234",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260417/p24#a260417p24",
-        "event_id": null
-      },
-      {
-        "id": "54d5a65444251c2503823063309b5bef",
-        "title": "SemiAnalysis创始人Dylan Patel如何在硅谷建立影响力",
-        "original_title": "How Dylan Patel and SemiAnalysis Grabbed Sway in Silicon Valley",
-        "summary": "29岁的Dylan Patel创办的SemiAnalysis已成为AI行业最具影响力的研究机构之一，其芯片分析甚至获得Nvidia CEO黄仁勋公开称赞，但也因尖锐批评而被Nvidia短期封杀。",
-        "rating": "A",
-        "score": 77,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "独立研究机构在AI产业链中的话语权上升，可能影响芯片公司的市场叙事和投资者决策。",
-        "entities": [
-          "Dylan Patel",
-          "Jensen Huang",
-          "NVIDIA",
-          "Semianalysis"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/dylan-patel-semianalysis-grabbed-sway-silicon-valley"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776445305,
-        "published_at": "2026-04-18T01:01:45.031243",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/dylan-patel-semianalysis-grabbed-sway-silicon-valley",
-        "event_id": null
-      },
-      {
-        "id": "b26cf3de7f2dc50bb291a9f13fdc4ffa",
-        "title": "AI行业泡沫隐现：tokenmaxxing是否正在把我们带向死胡同",
-        "original_title": "Are we tokenmaxxing our way to nowhere?",
-        "summary": "TechCrunch视频探讨AI行业内部与外部的认知鸿沟正在扩大，OpenAI疯狂收购、Anthropic发布过于强大而不敢公开的新模型等现象，暗示行业可能存在过度投资和泡沫风险。",
-        "rating": "B",
-        "score": 71,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "AI投资热度与商业回报之间的落差若持续扩大，可能引发资本退潮，需关注行业整合及估值回调风险。",
-        "entities": [
-          "Anthropic",
-          "OpenAI",
-          "Techcrunch"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/video/are-we-tokenmaxxing-our-way-to-nowhere/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776445305,
-        "published_at": "2026-04-18T01:01:45.031143",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/video/are-we-tokenmaxxing-our-way-to-nowhere/",
-        "event_id": null
-      },
-      {
-        "id": "015112f2bd5895ccc8d233b0f1e6a66e",
-        "title": "Claude Opus 4.7新分词器实测：每次会话成本增加20-30%",
-        "original_title": "Claude Opus 4.7 costs 20–30% more per session",
-        "summary": "实测发现Anthropic Claude Opus 4.7采用的新分词器导致相同输入的token数量增加，用户每次会话成本上升20-30%，引发开发者对模型定价透明度的关注。",
-        "rating": "A",
-        "score": 75,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "若更多模型通过分词器调整变相涨价，可能影响开发者对AI API的成本预期和选型决策。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Opus"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776445305,
-        "published_at": "2026-04-18T01:01:45.031223",
-        "source": "Hacker News",
-        "url": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
-        "event_id": null
-      },
-      {
-        "id": "5651a207df9ad97a8e2e98ad20db4ac0",
-        "title": "Anthropic正式发布Claude Design实验性产品",
-        "original_title": "Anthropic launches Claude Design, a new experimental product that lets users create visuals like prototypes, slides, one-pagers, and more using Claude (Aisha Malik/TechCrunch)",
-        "summary": "Anthropic宣布推出实验性产品Claude Design，允许用户通过Claude创建原型、幻灯片、单页文档等视觉内容，面向无设计背景的产品经理和创始人。",
-        "rating": "A+",
-        "score": 87,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "与TechCrunch报道为同一产品发布，进一步验证Anthropic正在从纯对话模型向多模态创作工具扩展。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Claude Design"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260417/p21#a260417p21"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776445305,
-        "published_at": "2026-04-18T01:01:45.031252",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260417/p21#a260417p21",
-        "event_id": null
-      },
-      {
-        "id": "1ee2047554c1166027d8b0cc5863c734",
-        "title": "Anthropic推出Claude Design：无设计背景者也能快速创建视觉内容",
-        "original_title": "Anthropic launches Claude Design, a new product for creating quick visuals",
-        "summary": "Anthropic新推出的Claude Design旨在帮助没有设计背景的创始人和产品经理更轻松地表达想法，通过AI对话快速生成视觉内容。",
-        "rating": "A",
-        "score": 86,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "与Decoder和Techmeme报道为同一产品，三条新闻可合并为一条选题，聚焦AI设计工具对非专业用户的赋能。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Claude Design"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776445305,
-        "published_at": "2026-04-18T01:01:45.031262",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/",
-        "event_id": null
-      },
-      {
-        "id": "49df226f72638f778f2f03c8f97d5421",
-        "title": "Anthropic推出Claude Design，对话式生成原型与设计稿",
-        "original_title": "RT Claude: Introducing Claude Design by Anthropic Labs: make prototypes, slides, and one-pagers by talking to Claude. Powered by Claude Opus 4.7, our ...",
-        "summary": "Anthropic发布实验性产品Claude Design，用户可通过对话让Claude生成原型、幻灯片、单页文档等视觉内容，由Claude Opus 4.7驱动，面向付费订阅用户开放研究预览。",
-        "rating": "S",
-        "score": 95,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI设计工具竞争加剧，可能冲击Figma、Canva等现有设计平台的市场份额，同时推动非设计人员参与产品原型制作。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Claude Design",
-          "Claude Opus"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/jukan05/status/2045158574335328369"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776441781,
-        "published_at": "2026-04-18T00:03:01.786552",
-        "source": "x",
-        "url": "https://x.com/jukan05/status/2045158574335328369",
-        "event_id": null
-      },
-      {
-        "id": "474000c682cdecfd5fe2377f60873818",
-        "title": "Gemini 3.1 Flash TTS结合HyperFrames一次提示生成多版本动画",
-        "original_title": "Gemini 3.1 Flash TTS + Gemini 3 Flash + HyperFrames Skill. Created 5 different version from 1x prompt. This one was the best. No iterations.",
-        "summary": "开发者展示使用Gemini 3.1 Flash TTS、Gemini 3 Flash与HyperFrames Skill的组合，仅通过一次提示词就生成5个不同版本的动画内容。",
-        "rating": "B",
-        "score": 71,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "多模型组合工作流正在降低内容创作门槛，可能催生新一代AI原生创作工具。",
-        "entities": [
-          "Gemini",
-          "Hyperframes"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/_philschmid/status/2045121586521342450"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776441781,
-        "published_at": "2026-04-18T00:03:01.786590",
-        "source": "x",
-        "url": "https://x.com/_philschmid/status/2045121586521342450",
-        "event_id": null
-      },
-      {
-        "id": "df8b6b123920d4434802f981f11e0e70",
-        "title": "Anthropic估值突破1.05万亿美元，超过OpenAI的8500亿美元",
-        "original_title": "RT Lisan al Gaib: Anthropic now valued at above $1.05 trillion meanwhile OpenAI is still at $850B",
-        "summary": "社交媒体流传Anthropic估值已超1.05万亿美元，高于OpenAI的8500亿美元估值，显示市场对两家AI巨头前景的不同判断。",
-        "rating": "A",
-        "score": 81,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "估值差距可能反映两家公司在商业化路径、产品策略或IPO预期上的市场认知差异。",
-        "entities": [
-          "Anthropic",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/scaling01/status/2045157449863176555"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776441781,
-        "published_at": "2026-04-18T00:03:01.786600",
-        "source": "x",
-        "url": "https://x.com/scaling01/status/2045157449863176555",
-        "event_id": null
-      },
-      {
-        "id": "07436031e0706741e7765f6371335235",
-        "title": "Lottie支持MCP协议，Agent可直接生成动画内容",
-        "original_title": "Lottie 也支持通过 MCP 让 agent 创造动画了，以后每一个细分领域都不需要人工了。",
-        "summary": "Lottie动画平台新增MCP协议支持，使AI Agent能够直接创作动画，进一步扩展了AI在细分领域内容创作中的自动化能力。",
-        "rating": "B",
-        "score": 70,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "MCP协议正成为AI Agent与各类工具集成的标准接口，可能加速更多创意工具接入AI自动化工作流。",
-        "entities": [
-          "Lottie",
-          "MCP"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/dingyi/status/2044995979754017010"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776441781,
-        "published_at": "2026-04-18T00:03:01.786617",
-        "source": "x",
-        "url": "https://x.com/dingyi/status/2044995979754017010",
-        "event_id": null
-      },
-      {
-        "id": "6535b01af3a8e5c396a7c022e60b2c99",
-        "title": "Q1中国智能手机出货量下滑4%，华为份额达20%",
-        "original_title": "China's smartphone shipments declined 4% YoY in Q1 amid memory shortages; Huawei's shipments grew 2% YoY for a 20% market share, iPhone grew 20% for a 19% share (Ivan Lam/Counterpoint Research)",
-        "summary": "Counterpoint Research数据显示，受存储芯片短缺影响，2026年Q1中国智能手机出货量同比下降4%，华为出货量增长2%至20%市场份额，iPhone增长20%至19%。",
-        "rating": "A",
-        "score": 76,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "华为与苹果在中国市场的份额竞争日趋激烈，存储供应链问题可能持续影响整个行业出货节奏。",
-        "entities": [
-          "Counterpoint Research",
-          "Huawei",
-          "Iphone"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260417/p23#a260417p23"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776441781,
-        "published_at": "2026-04-18T00:03:01.786628",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260417/p23#a260417p23",
-        "event_id": null
-      },
-      {
-        "id": "d9fd2894bca44f01755120a4bd7ce26e",
-        "title": "Claude Design上线：Anthropic进军AI设计工具领域",
-        "original_title": "Claude Design",
-        "summary": "Anthropic正式推出Claude Design，帮助无设计背景的用户通过对话快速创建视觉内容，标志着其从语言模型向应用层扩张的重要一步。",
-        "rating": "S",
-        "score": 94,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Anthropic产品矩阵持续扩展，Claude Design与Claude Code形成设计到开发的闭环，可能重塑创意工作流。",
-        "entities": [
-          "Anthropic",
-          "Claude Design"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.anthropic.com/news/claude-design-anthropic-labs"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776441781,
-        "published_at": "2026-04-18T00:03:01.786638",
-        "source": "Hacker News",
-        "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
-        "event_id": null
-      },
-      {
-        "id": "fc879b8757cf18a33359f77d82dbded5",
-        "title": "Starlink故障导致五角大楼无人机编队在太平洋失联近一小时",
-        "original_title": "Pentagon Disturbed as Its Fleet of Drones Is Left Bobbing in the Ocean When Elon Musk’s Starlink Fails",
-        "summary": "SpaceX Starlink服务大规模中断，导致五角大楼约24艘无人水面舰艇在加州外海失联近一小时，暴露了军事系统对商业卫星通信的依赖风险。",
-        "rating": "A",
-        "score": 85,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "军事领域对商业通信基础设施的依赖引发安全担忧，可能推动军方寻求更可靠的备用通信方案。",
-        "entities": [
-          "Pentagon",
-          "SpaceX",
-          "Starlink"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/space/pentagon-starlink-musk-drones"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776441781,
-        "published_at": "2026-04-18T00:03:01.786646",
-        "source": "Futurism",
-        "url": "https://futurism.com/space/pentagon-starlink-musk-drones",
-        "event_id": null
-      },
-      {
-        "id": "ec097f44831f3601bb2574ad9b015931",
-        "title": "xAI计划向Cursor开放数万GPU训练Composer 2.5编程模型",
-        "original_title": "Sources: xAI plans to let Cursor train Composer 2.5 AI coding model using tens of thousands of xAI's GPUs, a new strategy for xAI in a competitive AI landscape (Grace Kay/Business Insider)",
-        "summary": "据Business Insider报道，xAI计划允许Cursor使用其数万颗GPU来训练Composer 2.5 AI编程模型，这是xAI在竞争激烈的AI领域的新策略。",
-        "rating": "A",
-        "score": 86,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "AI算力共享模式可能出现，xAI通过出租GPU资源扩大生态影响力，同时帮助Cursor提升模型能力。",
-        "entities": [
-          "Cursor",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260417/p22#a260417p22"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776441781,
-        "published_at": "2026-04-18T00:03:01.786656",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260417/p22#a260417p22",
-        "event_id": null
-      },
-      {
-        "id": "3e22190fdb9cdff46c7085bf4558c204",
-        "title": "DeepSeek首次寻求外部融资，拟募资超3亿美元估值超百亿美元",
-        "original_title": "Sources: DeepSeek is in talks to raise outside capital for the first time, seeking at least $300M at a valuation of at least $10B (The Information)",
-        "summary": "The Information报道，DeepSeek首次与外部投资者洽谈融资，寻求至少3亿美元资金，估值不低于100亿美元，以增强其在AI竞赛中的财务实力。",
-        "rating": "S",
-        "score": 94,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "DeepSeek此前依靠自有资金发展，此次融资标志着其战略转变，可能加速模型研发和国际扩张。",
-        "entities": [
-          "DeepSeek"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (deepseek)",
-            "url": "http://www.techmeme.com/260417/p20#a260417p20"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776441781,
-        "published_at": "2026-04-18T00:03:01.786775",
-        "source": "Techmeme (deepseek)",
-        "url": "http://www.techmeme.com/260417/p20#a260417p20",
-        "event_id": null
-      },
-      {
-        "id": "e9d6cd130f7c0d216b5736f4ee9fc69e",
-        "title": "Anthropic发布Claude Design挑战Figma，支持从提示词生成交互原型",
-        "original_title": "Anthropic just launched Claude Design, an AI tool that turns prompts into prototypes and challenges Figma",
-        "summary": "Anthropic推出Claude Design，用户可通过对话提示生成设计、交互原型、幻灯片等，由Claude Opus 4.7驱动，并与Claude Code形成设计到开发的闭环。",
-        "rating": "S",
-        "score": 100,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Anthropic产品生态闭环初现，从设计到代码的全链路覆盖可能吸引企业和开发者深度绑定其平台。",
-        "entities": [
-          "Anthropic",
-          "Claude Design",
-          "Claude Opus",
-          "Figma"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/technology/anthropic-just-launched-claude-design-an-ai-tool-that-turns-prompts-into-prototypes-and-challenges-figma"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776441781,
-        "published_at": "2026-04-18T00:03:01.786832",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/technology/anthropic-just-launched-claude-design-an-ai-tool-that-turns-prompts-into-prototypes-and-challenges-figma",
-        "event_id": null
-      },
-      {
-        "id": "754c0d9924c2e1ad969c00439ee86196",
-        "title": "Cloudflare推出网站Agent就绪检测工具",
-        "original_title": "Is Your Site Agent-Ready? (By Cloudflare)",
-        "summary": "Cloudflare发布\\\"Is Your Site Agent-Ready?\\\"工具，帮助网站所有者检测其网站对AI Agent的友好程度和可访问性。",
-        "rating": "B",
-        "score": 66,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "AI Agent正在改变网站流量结构，网站适配Agent访问可能成为新的SEO/可访问性标准。",
-        "entities": [
-          "Cloudflare"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://isitagentready.com/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776441781,
-        "published_at": "2026-04-18T00:03:01.786844",
-        "source": "Hacker News",
-        "url": "https://isitagentready.com/",
-        "event_id": null
-      },
-      {
-        "id": "72fb751d5a3fcf1985a3eac761a22215",
-        "title": "Loop获9500万美元C轮融资，构建供应链中断预测AI",
-        "original_title": "Loop raises $95M to build supply chain AI that predicts disruptions",
-        "summary": "旧金山初创公司Loop完成9500万美元C轮融资，由Valor领投，该公司利用AI预测供应链中断，Valor也是xAI的主要投资方之一。",
-        "rating": "B",
-        "score": 69,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "供应链AI预测领域持续获得资本青睐，地缘政治和贸易摩擦背景下，供应链韧性技术需求上升。",
-        "entities": [
-          "Loop",
-          "Valor",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/04/17/loop-raises-95m-to-build-supply-chain-ai-that-predicts-disruptions/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776441781,
-        "published_at": "2026-04-18T00:03:01.786863",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/17/loop-raises-95m-to-build-supply-chain-ai-that-predicts-disruptions/",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-24T19:02:20.376814",
-  "total_news": 822
+  "last_updated": "2026-04-25T05:30:57.053967",
+  "total_news": 778
 }
