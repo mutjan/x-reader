@@ -142,6 +142,37 @@
           "reason": "该新闻是关于OpenAI GPT-5.5的三大核心突破（代理编码、计算机操控与科研），与当前事件968c1d18（Anthropic将Claude接入个人应用生态：Spotify、Uber、TurboTax等）主题不符。应归入04b664fd（OpenAI推出企业工作区智能体），该事件已包含多条GPT-5.5相关新闻，是GPT-5.5发布的主事件组。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-04-24T11:08:16.806244",
+      "batch_id": "20260424110816",
+      "corrections_applied": 4,
+      "details": [
+        {
+          "news_id": "c7cb42217cef3afe4eebb29f5b5d6e20",
+          "from_event_id": "610e9c17",
+          "to_event_id": "new_event",
+          "reason": "该新闻关于Anthropic承认SWE-Bench数据记忆效应，属于AI评测基准可信度话题，与当前事件'Claude桌面端被指安装未披露原生消息桥'主题不符，应创建独立事件"
+        },
+        {
+          "news_id": "a55c67bf9086bb1eea10a9c19fd4f1d2",
+          "from_event_id": "04b664fd",
+          "to_event_id": "new_event",
+          "reason": "该新闻关于GPT-5.5基准测试结果发布，与当前事件'OpenAI推出企业工作区智能体'主题不完全匹配，应创建独立的GPT-5.5基准测试事件"
+        },
+        {
+          "news_id": "1ecd88ca6a50977efcc58c906d0bed66",
+          "from_event_id": "04b664fd",
+          "to_event_id": "new_event",
+          "reason": "该新闻关于OpenAI正式推出GPT-5.5产品发布，与当前事件'OpenAI推出企业工作区智能体'虽然都涉及OpenAI但主题不同，GPT-5.5产品发布应独立成组"
+        },
+        {
+          "news_id": "3ac5b252682cda95ed21965987ee5527",
+          "from_event_id": "2edbe32b",
+          "to_event_id": "new_event",
+          "reason": "该新闻'网友讽刺Dario Amodei对GPT反应'是关于AI行业人物评论，与'GPT-5.5定价误区'的技术分析主题不符，应移出该事件组"
+        }
+      ]
     }
   ]
 }
