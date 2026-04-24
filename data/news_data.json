@@ -2,6 +2,279 @@
   "news": {
     "2026-04-24": [
       {
+        "id": "6f865e8f72fafe418b4155d1fd7b759a",
+        "title": "Anthropic定位三大元凶，修复Claude代码质量问题",
+        "original_title": "Anthropic says it has fixed three causes of recent Claude Code quality issues: reduced default reasoning, a caching bug, and a system prompt to reduce verbosity (Anthropic)",
+        "summary": "Anthropic排查出导致Claude Code质量下滑的三个独立变更，包括推理降级、缓存缺陷和冗余抑制指令",
+        "rating": "B",
+        "score": 70,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "快速修复展现了Anthropic对开发者生态的重视，但三重问题同时暴露暗示发布流程存在系统性隐患，后续质控机制升级值得关注。",
+        "entities": [
+          "Anthropic",
+          "Claude Code"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260423/p52#a260423p52"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989188,
+        "published_at": "2026-04-24T08:06:28.389934",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260423/p52#a260423p52",
+        "event_id": null
+      },
+      {
+        "id": "a36d130039f1d7bde5eb09808b62f1d9",
+        "title": "OpenAI发布GPT-5.5：剑指智能代理新时代",
+        "original_title": "Introducing GPT-5.5",
+        "summary": "OpenAI推出GPT-5.5，强调复杂目标理解、工具调用和自主任务完成能力，已登陆ChatGPT和Codex",
+        "rating": "S",
+        "score": 99,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "从对话模型到任务执行引擎的转型标志着AI代理竞赛正式升温，将加速整个行业从问答式交互向自主工作流演进。",
+        "entities": [
+          "Codex",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "OpenAI",
+            "url": "https://www.youtube.com/watch?v=blGtYq9mL18"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989188,
+        "published_at": "2026-04-24T08:06:28.389967",
+        "source": "OpenAI",
+        "url": "https://www.youtube.com/watch?v=blGtYq9mL18",
+        "event_id": null
+      },
+      {
+        "id": "eb25be509cd8096b535fcaca7ce504b2",
+        "title": "GPT-5.5代号Spud：编码与科研能力大幅跃升",
+        "original_title": "OpenAI Releases ‘Spud’ GPT-5.5 Model",
+        "summary": "GPT-5.5在复杂请求分解、编程、金融建模和科学研究等领域均展现显著进步",
+        "rating": "A+",
+        "score": 87,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "编程和科研正是Anthropic近期发力的核心赛道，OpenAI的针对性强化预示两大巨头将在开发者工具领域展开更激烈的正面交锋。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/openai-releases-spud-gpt-5-5-model"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989188,
+        "published_at": "2026-04-24T08:06:28.389981",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/openai-releases-spud-gpt-5-5-model",
+        "event_id": null
+      },
+      {
+        "id": "91d1be237480212224e322ca9f7aca31",
+        "title": "GPT-5.5定价翻倍：API成本压力骤增",
+        "original_title": "GPT-5.5 is priced at $5/1M input tokens and $30/1M output tokens, double GPT-5.4's pricing; GPT-5.5 Pro costs $30/1M input tokens and $180/1M output tokens (Carl Franzen/VentureBeat)",
+        "summary": "GPT-5.5输入输出定价均为GPT-5.4两倍，Pro版本价格更为高昂",
+        "rating": "A",
+        "score": 81,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "价格翻倍可能促使成本敏感型开发者转向竞品或开源方案，同时折射出前沿模型训练与推理成本的持续攀升趋势。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260423/p51#a260423p51"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989188,
+        "published_at": "2026-04-24T08:06:28.389991",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260423/p51#a260423p51",
+        "event_id": null
+      },
+      {
+        "id": "039d101645e0cdb8974d11559a53f250",
+        "title": "Claude Mythos遭未授权访问，Anthropic安全管理受质疑",
+        "original_title": "Anthropic&rsquo;s Mythos breach was humiliating",
+        "summary": "Anthropic精心策划的Mythos发布遭遇尴尬，未经授权用户自公告日起即获得访问权限",
+        "rating": "S",
+        "score": 93,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此事件可能动摇企业客户对Anthropic安全管控能力的信任，推动其紧急升级内部访问控制与审计机制。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/917644/anthropic-claude-mythos-breach-humiliation"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989188,
+        "published_at": "2026-04-24T08:06:28.390001",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/917644/anthropic-claude-mythos-breach-humiliation",
+        "event_id": null
+      },
+      {
+        "id": "93e6c4db5a13daf4c89092335ba5206b",
+        "title": "GPT-5.5全面升级，OpenAI加速构建AI超级应用",
+        "original_title": "OpenAI releases GPT-5.5, bringing company one step closer to an AI ‘superapp’",
+        "summary": "OpenAI凭借GPT-5.5的广泛能力提升，向AI超级应用愿景迈出关键一步",
+        "rating": "A",
+        "score": 75,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "超级应用战略将使OpenAI与更多垂直领域玩家直接竞争，AI平台的边界持续模糊化。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989188,
+        "published_at": "2026-04-24T08:06:28.390010",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+        "event_id": null
+      },
+      {
+        "id": "b292566ae80c94844fdc29f4955f474b",
+        "title": "GPT-5.5基准测试险胜Claude Mythos，领先优势微弱",
+        "original_title": "OpenAI's GPT-5.5 is here, and it's no potato: narrowly beats Anthropic's Claude Mythos Preview on Terminal-Bench 2.0",
+        "summary": "GPT-5.5在Terminal-Bench 2.0上以82.7%略胜Mythos Preview的82.0%，重夺通用模型榜首",
+        "rating": "A+",
+        "score": 89,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "虽然性能领先幅度有限，但API定价翻倍可能抵消这一优势，开发者将在性能与成本间重新权衡。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/openais-gpt-5-5-is-here-and-its-no-potato-narrowly-beats-anthropics-claude-mythos-preview-on-terminal-bench-2-0"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989188,
+        "published_at": "2026-04-24T08:06:28.390019",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/openais-gpt-5-5-is-here-and-its-no-potato-narrowly-beats-anthropics-claude-mythos-preview-on-terminal-bench-2-0",
+        "event_id": null
+      },
+      {
+        "id": "1f5d9627d4b2ae16829ea15a82450892",
+        "title": "GPT-5.5三大核心突破：代理编码、计算机操控与科研",
+        "original_title": "OpenAI says GPT-5.5's improvements are strongest in agentic coding, computer use, and early scientific research, which require reasoning across longer contexts (Madison Mills/Axios)",
+        "summary": "GPT-5.5在代理式编码、计算机操控和早期科研领域取得最显著进步，距Anthropic新模型发布仅一周",
+        "rating": "B",
+        "score": 73,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这些领域恰好是Anthropic近期重点发力方向，OpenAI的精准对标预示着AI能力竞赛将进入白热化阶段。",
+        "entities": [
+          "Anthropic",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260423/p49#a260423p49"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989188,
+        "published_at": "2026-04-24T08:06:28.390035",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260423/p49#a260423p49",
+        "event_id": null
+      },
+      {
+        "id": "e41fd0c18923da397ab91e65e6d43155",
+        "title": "美方指控中国大规模蒸馏美国前沿AI模型",
+        "original_title": "Trump science advisor says Chinese actors are copying American AI at massive scale",
+        "summary": "特朗普科学顾问称中国正进行工业级AI模型蒸馏活动，美政府正酝酿反击措施",
+        "rating": "A+",
+        "score": 87,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "此指控可能加速中美AI技术脱钩进程，推动更严格的模型出口管制和API访问限制措施出台。",
+        "entities": [
+          "Donald Trump"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/trump-science-advisor-says-chinese-actors-are-copying-american-ai-at-massive-scale/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989188,
+        "published_at": "2026-04-24T08:06:28.390050",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/trump-science-advisor-says-chinese-actors-are-copying-american-ai-at-massive-scale/",
+        "event_id": null
+      },
+      {
+        "id": "ca57d4648768eb4e9736e91b0b7999e3",
+        "title": "Claude Code质量事件复盘：工程团队详解根因",
+        "original_title": "An update on recent Claude Code quality reports",
+        "summary": "Anthropic工程团队发布Claude Code近期质量问题的详细事后分析报告",
+        "rating": "B",
+        "score": 74,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "公开透明的复盘态度值得肯定，但连续质量问题可能动摇开发者社区的长期信心，后续质控改进将是关键考验。",
+        "entities": [
+          "Anthropic",
+          "Claude Code"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.anthropic.com/engineering/april-23-postmortem"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989188,
+        "published_at": "2026-04-24T08:06:28.390059",
+        "source": "Hacker News",
+        "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+        "event_id": null
+      },
+      {
         "id": "cf0871c59b5d972ede3a9897a34b4851",
         "title": "Ramp高管分享GPT-5.5首测：工具调用能力飞跃",
         "original_title": "First impressions of GPT-5.5 from Will Koh",
@@ -135,6 +408,282 @@
         "published_at": "2026-04-24T08:06:24.069584",
         "source": "Futurism",
         "url": "https://futurism.com/advanced-transport/elon-musk-admits-tesla-full-self-driving",
+        "event_id": null
+      },
+      {
+        "id": "7f97cbbf1e0df6b7f56d569b8ee4e38b",
+        "title": "xAI发布Grok语音模型，Sierra榜单领先竞品20分",
+        "original_title": "RT Eric Jiang: Our newest voice model is 20+ points ahead of the nearest competitor on Sierra's leaderboard. Pretty massive upgrade from our OG model ...",
+        "summary": "xAI发布Grok Voice Think Fast 1.0语音模型，在Sierra排行榜上大幅领先竞品，具备多步骤工作流和工具调用能力",
+        "rating": "B",
+        "score": 68,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "语音AI赛道竞争白热化，xAI凭借Grok语音模型的强势表现可能重塑行业格局。后续关注OpenAI和Google的语音模型应对策略。",
+        "entities": [
+          "Eric Jiang",
+          "Grok",
+          "Sierra",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/billyuchenlin/status/2047464443332980793"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989184,
+        "published_at": "2026-04-24T08:06:24.069343",
+        "source": "x",
+        "url": "https://x.com/billyuchenlin/status/2047464443332980793",
+        "event_id": null
+      },
+      {
+        "id": "1594a7dc4b8788607a46a8ea49b88f88",
+        "title": "GPT-5.5生成SVG图形质量惊艳，阴影独特",
+        "original_title": "GPT-5.5 SVGs look pretty sick very distinct, good shading and it tries to make it 3D",
+        "summary": "用户测试发现GPT-5.5的SVG矢量图形生成能力出色，输出风格独特、阴影效果优秀，并能尝试生成三维立体效果",
+        "rating": "A",
+        "score": 85,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "GPT-5.5在图形生成领域展现出色能力，可能对设计工具和创意软件市场产生冲击。后续关注其在更多视觉创作任务上的表现边界。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/scaling01/status/2047438282246455338"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989184,
+        "published_at": "2026-04-24T08:06:24.069355",
+        "source": "x",
+        "url": "https://x.com/scaling01/status/2047438282246455338",
+        "event_id": null
+      },
+      {
+        "id": "789a9e82b6f8fef88d110faea0634aab",
+        "title": "GPT-5.5实现100%代码生成七轴机器人手臂",
+        "original_title": "Vibe coding a robot with GPT 5.5! This is a URDF of a 7dof robot arm with functional kinematics, a custom gui, and STEP parts/assembly, 100% generated...",
+        "summary": "开发者利用GPT-5.5通过Codex完全自动生成7自由度机器人手臂，包含运动学模型、自定义界面和CAD零件装配文件",
+        "rating": "A+",
+        "score": 87,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI从代码辅助走向完整工程项目的自动生成，硬件开发流程可能被大幅简化。机器人领域的AI化趋势值得持续关注。",
+        "entities": [
+          "Codex",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/soft_servo/status/2047436911657025858"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989184,
+        "published_at": "2026-04-24T08:06:24.069364",
+        "source": "x",
+        "url": "https://x.com/soft_servo/status/2047436911657025858",
+        "event_id": null
+      },
+      {
+        "id": "896cb4195e0464dd0538bd0a78698067",
+        "title": "OpenAI研究者转向后训练，宣称智能体元年到来",
+        "original_title": "Gonna slip in a quiet update while everyone's distracted with 5.5: I have officially switched from pre-training to post-training! This is the year of ...",
+        "summary": "OpenAI研究者宣布从预训练方向转向后训练，认为2026年将是智能体元年，工作自动化将超越任务级别的自动化",
+        "rating": "A",
+        "score": 86,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "AI行业重心从模型预训练转向智能体和后训练优化的趋势愈发明显，预示着更多智能体产品将在今年密集涌现。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/johnohallman/status/2047407166475411712"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989184,
+        "published_at": "2026-04-24T08:06:24.069389",
+        "source": "x",
+        "url": "https://x.com/johnohallman/status/2047407166475411712",
+        "event_id": null
+      },
+      {
+        "id": "4b267c4ee5e566aaa80724c6c0e0a635",
+        "title": "Anthropic证实Claude曾降智，GPT-5.5发布当日修复",
+        "original_title": "Anthropic 的官方通报证实了 @levelsio 的抱怨/猜测： Claude Opus 4.6 就是从3月4号开始降智变傻， 方式是把 default reasoning 从 high 调成了 medium, 这个操...",
+        "summary": "Anthropic官方确认Claude Opus自3月4日起默认推理强度从高调至中等导致性能下降，该问题恰在GPT-5.5发布当日被修复",
+        "rating": "S",
+        "score": 97,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "AI服务商在用户不知情情况下调整模型行为引发透明度担忧，可能推动行业建立模型变更告知和用户知情权相关规范。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Tz_2022/status/2047406230558126134"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989184,
+        "published_at": "2026-04-24T08:06:24.069397",
+        "source": "x",
+        "url": "https://x.com/Tz_2022/status/2047406230558126134",
+        "event_id": null
+      },
+      {
+        "id": "82f7f4a9cb1bf7541b509c261f18c4d5",
+        "title": "GPT-5.5 Pro推理速度提升18倍，质量不打折",
+        "original_title": "ChatGPT-5.5 Pro gives the same result as ChatGPT-5.4 Pro in 1/18th of the time!!!",
+        "summary": "用户实测发现GPT-5.5 Pro在保持与GPT-5.4 Pro相同输出质量的前提下，处理速度提升至原来的18倍",
+        "rating": "A",
+        "score": 84,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "如此显著的速度提升将大幅降低AI应用的成本和延迟门槛，有望加速AI在实时交互和高频调用场景中的普及。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/R2Cdev_/status/2047404733166743909"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989184,
+        "published_at": "2026-04-24T08:06:24.069413",
+        "source": "x",
+        "url": "https://x.com/R2Cdev_/status/2047404733166743909",
+        "event_id": null
+      },
+      {
+        "id": "25078bcf36caacf147cb292f1295df53",
+        "title": "GPT-5.5首次通关宝可梦火红，前代从未完成",
+        "original_title": "RT Clad3815: I've been an early tester of GPT-5.5, and it destroyed the \"GPT Plays Pokémon FireRed\" benchmark. GPT-5.4 never finished the game, it go...",
+        "summary": "早期测试者发现GPT-5.5在宝可梦火红游戏基准中首次尝试即轻松通关，而GPT-5.4从未完成过该游戏挑战",
+        "rating": "A",
+        "score": 80,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "游戏通关能力被视为AI通用能力的重要指标，GPT-5.5的表现暗示其在复杂长序列决策任务上取得重大突破。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/BorisMPower/status/2047453347557564506"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989184,
+        "published_at": "2026-04-24T08:06:24.069428",
+        "source": "x",
+        "url": "https://x.com/BorisMPower/status/2047453347557564506",
+        "event_id": null
+      },
+      {
+        "id": "ee2335ffc5bb9004156811c9eeb9faaf",
+        "title": "OpenAI正式发布GPT-5.5，支持百万级上下文窗口",
+        "original_title": "We've released GPT-5.5! It's a great model, and much better at 1mil context. You get 400k in codex and 1mil in the api. Thanks 5.5 for the plots :) ht...",
+        "summary": "OpenAI发布GPT-5.5模型，支持100万token上下文窗口，Codex中提供40万token支持，API端提供完整百万token",
+        "rating": "S",
+        "score": 99,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "百万级上下文窗口将彻底改变长文档处理和复杂项目开发的工作流。后续关注Google等竞争对手的跟进节奏。",
+        "entities": [
+          "Codex",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/julieswangg/status/2047388304832942524"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989184,
+        "published_at": "2026-04-24T08:06:24.069436",
+        "source": "x",
+        "url": "https://x.com/julieswangg/status/2047388304832942524",
+        "event_id": null
+      },
+      {
+        "id": "bc47b2ee3d7876a6dd17c15a7e0e0753",
+        "title": "安全机构测试GPT-5.5网络攻防能力，发现通用越狱漏洞",
+        "original_title": "RT Nate: We (@AISecurityInst) tested GPT-5.5 for its cyber capabilities and safeguards. It's the strongest performing model we've tested on our narrow...",
+        "summary": "AI安全机构测试GPT-5.5的网络攻防能力，确认其为目前测试过的最强模型，但经6小时红队测试发现存在通用越狱方法",
+        "rating": "A+",
+        "score": 89,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "超强网络能力与越狱漏洞并存凸显前沿AI安全治理紧迫性，可能推动行业建立更严格的安全评估与漏洞披露标准。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/wunderwuzzi23/status/2047439011757887959"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989184,
+        "published_at": "2026-04-24T08:06:24.069451",
+        "source": "x",
+        "url": "https://x.com/wunderwuzzi23/status/2047439011757887959",
+        "event_id": null
+      },
+      {
+        "id": "e0c0bd5b3b79a5b9b7a2858483173ccb",
+        "title": "蚂蚁集团发布万亿参数模型Ling-2.6-1T，主打快速推理",
+        "original_title": "🚀 Today, we are launching Ling-2.6-1T, a trillion-parameter flagship model designed for precise instruct task execution. By prioritizing a \"Fast-Th...",
+        "summary": "蚂蚁集团发布Ling-2.6-1T万亿参数旗舰模型，采用快速思维机制实现SOTA级指令执行性能，且token开销极低",
+        "rating": "A",
+        "score": 76,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "国内大模型厂商在万亿参数级别发力，蚂蚁的快速推理路线可能对暴力堆参数策略形成差异化竞争压力。",
+        "entities": [
+          "Ant Group",
+          "Ling"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/AntLingAGI/status/2047374871467012393"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1776989184,
+        "published_at": "2026-04-24T08:06:24.069466",
+        "source": "x",
+        "url": "https://x.com/AntLingAGI/status/2047374871467012393",
         "event_id": null
       },
       {
@@ -2113,282 +2662,6 @@
       }
     ],
     "2026-04-23": [
-      {
-        "id": "7f97cbbf1e0df6b7f56d569b8ee4e38b",
-        "title": "xAI发布Grok语音模型，Sierra榜单领先竞品20分",
-        "original_title": "RT Eric Jiang: Our newest voice model is 20+ points ahead of the nearest competitor on Sierra's leaderboard. Pretty massive upgrade from our OG model ...",
-        "summary": "xAI发布Grok Voice Think Fast 1.0语音模型，在Sierra排行榜上大幅领先竞品，具备多步骤工作流和工具调用能力",
-        "rating": "B",
-        "score": 68,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "语音AI赛道竞争白热化，xAI凭借Grok语音模型的强势表现可能重塑行业格局。后续关注OpenAI和Google的语音模型应对策略。",
-        "entities": [
-          "Eric Jiang",
-          "Grok",
-          "Sierra",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/billyuchenlin/status/2047464443332980793"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776989184,
-        "published_at": "2026-04-24T08:06:24.069343",
-        "source": "x",
-        "url": "https://x.com/billyuchenlin/status/2047464443332980793",
-        "event_id": null
-      },
-      {
-        "id": "1594a7dc4b8788607a46a8ea49b88f88",
-        "title": "GPT-5.5生成SVG图形质量惊艳，阴影独特",
-        "original_title": "GPT-5.5 SVGs look pretty sick very distinct, good shading and it tries to make it 3D",
-        "summary": "用户测试发现GPT-5.5的SVG矢量图形生成能力出色，输出风格独特、阴影效果优秀，并能尝试生成三维立体效果",
-        "rating": "A",
-        "score": 85,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "GPT-5.5在图形生成领域展现出色能力，可能对设计工具和创意软件市场产生冲击。后续关注其在更多视觉创作任务上的表现边界。",
-        "entities": [
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/scaling01/status/2047438282246455338"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776989184,
-        "published_at": "2026-04-24T08:06:24.069355",
-        "source": "x",
-        "url": "https://x.com/scaling01/status/2047438282246455338",
-        "event_id": null
-      },
-      {
-        "id": "789a9e82b6f8fef88d110faea0634aab",
-        "title": "GPT-5.5实现100%代码生成七轴机器人手臂",
-        "original_title": "Vibe coding a robot with GPT 5.5! This is a URDF of a 7dof robot arm with functional kinematics, a custom gui, and STEP parts/assembly, 100% generated...",
-        "summary": "开发者利用GPT-5.5通过Codex完全自动生成7自由度机器人手臂，包含运动学模型、自定义界面和CAD零件装配文件",
-        "rating": "A+",
-        "score": 87,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI从代码辅助走向完整工程项目的自动生成，硬件开发流程可能被大幅简化。机器人领域的AI化趋势值得持续关注。",
-        "entities": [
-          "Codex",
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/soft_servo/status/2047436911657025858"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776989184,
-        "published_at": "2026-04-24T08:06:24.069364",
-        "source": "x",
-        "url": "https://x.com/soft_servo/status/2047436911657025858",
-        "event_id": null
-      },
-      {
-        "id": "896cb4195e0464dd0538bd0a78698067",
-        "title": "OpenAI研究者转向后训练，宣称智能体元年到来",
-        "original_title": "Gonna slip in a quiet update while everyone's distracted with 5.5: I have officially switched from pre-training to post-training! This is the year of ...",
-        "summary": "OpenAI研究者宣布从预训练方向转向后训练，认为2026年将是智能体元年，工作自动化将超越任务级别的自动化",
-        "rating": "A",
-        "score": 86,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "AI行业重心从模型预训练转向智能体和后训练优化的趋势愈发明显，预示着更多智能体产品将在今年密集涌现。",
-        "entities": [
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/johnohallman/status/2047407166475411712"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776989184,
-        "published_at": "2026-04-24T08:06:24.069389",
-        "source": "x",
-        "url": "https://x.com/johnohallman/status/2047407166475411712",
-        "event_id": null
-      },
-      {
-        "id": "4b267c4ee5e566aaa80724c6c0e0a635",
-        "title": "Anthropic证实Claude曾降智，GPT-5.5发布当日修复",
-        "original_title": "Anthropic 的官方通报证实了 @levelsio 的抱怨/猜测： Claude Opus 4.6 就是从3月4号开始降智变傻， 方式是把 default reasoning 从 high 调成了 medium, 这个操...",
-        "summary": "Anthropic官方确认Claude Opus自3月4日起默认推理强度从高调至中等导致性能下降，该问题恰在GPT-5.5发布当日被修复",
-        "rating": "S",
-        "score": 97,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "AI服务商在用户不知情情况下调整模型行为引发透明度担忧，可能推动行业建立模型变更告知和用户知情权相关规范。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Tz_2022/status/2047406230558126134"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776989184,
-        "published_at": "2026-04-24T08:06:24.069397",
-        "source": "x",
-        "url": "https://x.com/Tz_2022/status/2047406230558126134",
-        "event_id": null
-      },
-      {
-        "id": "82f7f4a9cb1bf7541b509c261f18c4d5",
-        "title": "GPT-5.5 Pro推理速度提升18倍，质量不打折",
-        "original_title": "ChatGPT-5.5 Pro gives the same result as ChatGPT-5.4 Pro in 1/18th of the time!!!",
-        "summary": "用户实测发现GPT-5.5 Pro在保持与GPT-5.4 Pro相同输出质量的前提下，处理速度提升至原来的18倍",
-        "rating": "A",
-        "score": 84,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "如此显著的速度提升将大幅降低AI应用的成本和延迟门槛，有望加速AI在实时交互和高频调用场景中的普及。",
-        "entities": [
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/R2Cdev_/status/2047404733166743909"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776989184,
-        "published_at": "2026-04-24T08:06:24.069413",
-        "source": "x",
-        "url": "https://x.com/R2Cdev_/status/2047404733166743909",
-        "event_id": null
-      },
-      {
-        "id": "25078bcf36caacf147cb292f1295df53",
-        "title": "GPT-5.5首次通关宝可梦火红，前代从未完成",
-        "original_title": "RT Clad3815: I've been an early tester of GPT-5.5, and it destroyed the \"GPT Plays Pokémon FireRed\" benchmark. GPT-5.4 never finished the game, it go...",
-        "summary": "早期测试者发现GPT-5.5在宝可梦火红游戏基准中首次尝试即轻松通关，而GPT-5.4从未完成过该游戏挑战",
-        "rating": "A",
-        "score": 80,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "游戏通关能力被视为AI通用能力的重要指标，GPT-5.5的表现暗示其在复杂长序列决策任务上取得重大突破。",
-        "entities": [
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/BorisMPower/status/2047453347557564506"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776989184,
-        "published_at": "2026-04-24T08:06:24.069428",
-        "source": "x",
-        "url": "https://x.com/BorisMPower/status/2047453347557564506",
-        "event_id": null
-      },
-      {
-        "id": "ee2335ffc5bb9004156811c9eeb9faaf",
-        "title": "OpenAI正式发布GPT-5.5，支持百万级上下文窗口",
-        "original_title": "We've released GPT-5.5! It's a great model, and much better at 1mil context. You get 400k in codex and 1mil in the api. Thanks 5.5 for the plots :) ht...",
-        "summary": "OpenAI发布GPT-5.5模型，支持100万token上下文窗口，Codex中提供40万token支持，API端提供完整百万token",
-        "rating": "S",
-        "score": 99,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "百万级上下文窗口将彻底改变长文档处理和复杂项目开发的工作流。后续关注Google等竞争对手的跟进节奏。",
-        "entities": [
-          "Codex",
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/julieswangg/status/2047388304832942524"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776989184,
-        "published_at": "2026-04-24T08:06:24.069436",
-        "source": "x",
-        "url": "https://x.com/julieswangg/status/2047388304832942524",
-        "event_id": null
-      },
-      {
-        "id": "bc47b2ee3d7876a6dd17c15a7e0e0753",
-        "title": "安全机构测试GPT-5.5网络攻防能力，发现通用越狱漏洞",
-        "original_title": "RT Nate: We (@AISecurityInst) tested GPT-5.5 for its cyber capabilities and safeguards. It's the strongest performing model we've tested on our narrow...",
-        "summary": "AI安全机构测试GPT-5.5的网络攻防能力，确认其为目前测试过的最强模型，但经6小时红队测试发现存在通用越狱方法",
-        "rating": "A+",
-        "score": 89,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "超强网络能力与越狱漏洞并存凸显前沿AI安全治理紧迫性，可能推动行业建立更严格的安全评估与漏洞披露标准。",
-        "entities": [
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/wunderwuzzi23/status/2047439011757887959"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776989184,
-        "published_at": "2026-04-24T08:06:24.069451",
-        "source": "x",
-        "url": "https://x.com/wunderwuzzi23/status/2047439011757887959",
-        "event_id": null
-      },
-      {
-        "id": "e0c0bd5b3b79a5b9b7a2858483173ccb",
-        "title": "蚂蚁集团发布万亿参数模型Ling-2.6-1T，主打快速推理",
-        "original_title": "🚀 Today, we are launching Ling-2.6-1T, a trillion-parameter flagship model designed for precise instruct task execution. By prioritizing a \"Fast-Th...",
-        "summary": "蚂蚁集团发布Ling-2.6-1T万亿参数旗舰模型，采用快速思维机制实现SOTA级指令执行性能，且token开销极低",
-        "rating": "A",
-        "score": 76,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "国内大模型厂商在万亿参数级别发力，蚂蚁的快速推理路线可能对暴力堆参数策略形成差异化竞争压力。",
-        "entities": [
-          "Ant Group",
-          "Ling"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/AntLingAGI/status/2047374871467012393"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776989184,
-        "published_at": "2026-04-24T08:06:24.069466",
-        "source": "x",
-        "url": "https://x.com/AntLingAGI/status/2047374871467012393",
-        "event_id": null
-      },
       {
         "id": "cc6beb5bd0cd63591bfed440b211f7e0",
         "title": "Lyft收购伦敦打车应用Gett继续出海扩张",
@@ -20094,6 +20367,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-24T08:08:41.063578",
-  "total_news": 699
+  "last_updated": "2026-04-24T08:08:47.769654",
+  "total_news": 709
 }
