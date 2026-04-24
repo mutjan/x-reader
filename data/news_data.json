@@ -2,6 +2,198 @@
   "news": {
     "2026-04-24": [
       {
+        "id": "5300f44f55393eb5f8b24c2c73753c70",
+        "title": "DeepSeek V4论文揭秘Agent能力训练：11个关键技术点详解",
+        "original_title": "deepseek V4 论文里关于 'Agent 能力' 的训练部分值得深入阅读和学习。 另外不得不赞叹的是deepseek 的工程能力还是依旧的如此扎实。包括自己设计DSL&实现DSec s...",
+        "summary": "DeepSeek V4论文详细披露Agent能力训练方案，涵盖DSL设计、DSec沙箱、OPD合并等创新技术路径。",
+        "rating": "A+",
+        "score": 87,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可深入分析OPD多专家合并策略对大模型训练范式的影响；DSec沙箱的安全设计思路值得安全领域借鉴。",
+        "entities": [
+          "3Fs",
+          "Deepseek V4",
+          "Dsec",
+          "Dsl",
+          "Generative Reward Model"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/jakevin7/status/2047578619946664413"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777021639,
+        "published_at": "2026-04-24T17:07:19.854519",
+        "source": "x",
+        "url": "https://x.com/jakevin7/status/2047578619946664413",
+        "event_id": null
+      },
+      {
+        "id": "41d74d1b8af8446744ebb74125705283",
+        "title": "DeepSeek V4 Preview正式开源：1.6T参数模型支持百万级上下文",
+        "original_title": "Excellent Infra Team, Terrible Arch Team.",
+        "summary": "DeepSeek-V4 Preview开源发布，Pro版1.6T参数、Flash版284B参数，均支持100万token上下文窗口。",
+        "rating": "S",
+        "score": 97,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可关注开源模型在实际部署中的性能表现；对比分析Pro与Flash版本在不同场景下的适用性。",
+        "entities": [
+          "Deepseek-V4-Flash",
+          "Deepseek-V4-Pro"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Xinyu2ML/status/2047577506333806660"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777021639,
+        "published_at": "2026-04-24T17:07:19.854535",
+        "source": "x",
+        "url": "https://x.com/Xinyu2ML/status/2047577506333806660",
+        "event_id": null
+      },
+      {
+        "id": "cb5f3eee552b52597b0eb95a38a18119",
+        "title": "DeepSeek V4 Pro实测对比Gemini：表现未达预期",
+        "original_title": "So I had Deepseek V4 Pro try this test… yeah, not great. And I ran it several times as well. Image 1: an old Gemini 3 Pro checkpoint from SIX MONTHS ...",
+        "summary": "用户实测显示DeepSeek V4 Pro在特定任务上表现不及六个月前的Gemini 3 Pro版本，多次测试结果一致。",
+        "rating": "A",
+        "score": 82,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可追踪官方是否会针对该测试场景进行优化；关注不同评测基准下模型表现的差异性。",
+        "entities": [
+          "Deepseek V4 Pro",
+          "Gemini"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Lentils80/status/2047565606631686205"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777021639,
+        "published_at": "2026-04-24T17:07:19.854546",
+        "source": "x",
+        "url": "https://x.com/Lentils80/status/2047565606631686205",
+        "event_id": null
+      },
+      {
+        "id": "a26ae0e7349438cf012616232ab57e23",
+        "title": "DeepSeek V4定价远低于竞品：以低成本策略挑战行业巨头",
+        "original_title": "As agentic AI pushes rivals to raise prices and cap usage, Deepseek ships a good-enough model for almost nothing",
+        "summary": "DeepSeek发布V4-Pro和V4-Flash，定价显著低于OpenAI、Google和Anthropic，以价格优势抢占市场份额。",
+        "rating": "S",
+        "score": 96,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可分析低价策略对AI行业利润率的长期影响；关注其他厂商是否会跟进价格战。",
+        "entities": [
+          "Anthropic",
+          "DeepSeek",
+          "Google",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER (deepseek)",
+            "url": "https://the-decoder.com/as-agentic-ai-pushes-rivals-to-raise-prices-and-cap-usage-deepseek-ships-a-good-enough-model-for-almost-nothing/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777021639,
+        "published_at": "2026-04-24T17:07:19.854583",
+        "source": "THE DECODER (deepseek)",
+        "url": "https://the-decoder.com/as-agentic-ai-pushes-rivals-to-raise-prices-and-cap-usage-deepseek-ships-a-good-enough-model-for-almost-nothing/",
+        "event_id": null
+      },
+      {
+        "id": "2c5efdda68949ed41a55a78286670338",
+        "title": "Reddit用户评价GPT 5.5：体验优于基准测试表现",
+        "original_title": "Big model feel with GPT 5.5",
+        "summary": "尽管基准测试改进有限，Reddit用户认为GPT 5.5在实际对话中更自然、更接近专家水平，体验感明显提升。",
+        "rating": "A",
+        "score": 77,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可关注OpenAI后续是否会调整GPT 5.5的基准测试策略；追踪用户主观体验与客观评测的差异研究。",
+        "entities": [
+          "GPT"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1su7tas/big_model_feel_with_gpt_55/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777021639,
+        "published_at": "2026-04-24T17:07:19.854592",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1su7tas/big_model_feel_with_gpt_55/",
+        "event_id": null
+      },
+      {
+        "id": "d4e3ea37d2ef932062e6acf4085981c1",
+        "title": "DeepSeek-V4开源发布：推动长上下文AI走向普惠",
+        "original_title": "DeepSeek-V4 Drops: Open-Source Push Toward Cheaper, Long-Context AI.",
+        "summary": "DeepSeek-V4作为开源模型发布，支持长上下文处理，以低成本策略推动AI技术普及应用。",
+        "rating": "B",
+        "score": 74,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可关注开源社区对V4的二次开发和应用案例；分析开源策略对DeepSeek商业模式的影响。",
+        "entities": [
+          "Deepseek-V4"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (deepseek)",
+            "url": "https://www.reddit.com/r/singularity/comments/1su6zki/deepseekv4_drops_opensource_push_toward_cheaper/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777021639,
+        "published_at": "2026-04-24T17:07:19.854600",
+        "source": "Technological Singularity (deepseek)",
+        "url": "https://www.reddit.com/r/singularity/comments/1su6zki/deepseekv4_drops_opensource_push_toward_cheaper/",
+        "event_id": null
+      },
+      {
+        "id": "1bc21228b4f4423b990c3212193cc530",
+        "title": "DeepSeek V4 Flash与Pro版本定价详情公布",
+        "original_title": "DeepSeek V4 Flash and Pro pricing!",
+        "summary": "DeepSeek官方文档公开V4 Flash和Pro版本的具体定价信息，为开发者提供成本参考。",
+        "rating": "B",
+        "score": 69,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可对比分析不同token数量下的成本效益；关注批量调用的折扣政策。",
+        "entities": [
+          "Deepseek V4 Flash",
+          "Deepseek V4 Pro"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (deepseek)",
+            "url": "https://www.reddit.com/r/singularity/comments/1su3l1y/deepseek_v4_flash_and_pro_pricing/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777021639,
+        "published_at": "2026-04-24T17:07:19.854609",
+        "source": "Technological Singularity (deepseek)",
+        "url": "https://www.reddit.com/r/singularity/comments/1su3l1y/deepseek_v4_flash_and_pro_pricing/",
+        "event_id": null
+      },
+      {
         "id": "933cba499d1dee4e295d763550e66556",
         "title": "DeepSeek V4发布首日暴露多项能力短板，用户实测反馈不佳",
         "original_title": "lol DeepSeek-v4 still fails this…",
@@ -22876,6 +23068,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-24T15:02:15.245408",
-  "total_news": 799
+  "last_updated": "2026-04-24T17:07:48.807106",
+  "total_news": 806
 }
