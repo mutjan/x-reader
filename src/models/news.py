@@ -98,6 +98,7 @@ class ProcessedNewsItem:
         return {
             "id": self.id,
             "title": self.chinese_title,
+            "chinese_title": self.chinese_title,
             "original_title": self.original_title,
             "summary": self.summary,
             "rating": self.grade or "C",

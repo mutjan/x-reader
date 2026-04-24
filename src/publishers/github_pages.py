@@ -263,8 +263,11 @@ class GitHubPagesPublisher(BasePublisher):
 
                 # 检查是否是已经处理好的前端格式数据（有timestamp和title字段）
                 if "timestamp" in item and "title" in item:
-                    # 已经是前端格式，直接使用
-                    front_item = item
+                    # 已经是前端格式时，仍然优先用最新的 chinese_title 覆盖展示标题
+                    front_item = dict(item)
+                    if item.get("chinese_title"):
+                        front_item["title"] = item["chinese_title"]
+                        front_item["chinese_title"] = item["chinese_title"]
                 else:
                     # 转换为前端格式 - 直接使用模型层的标准方法
                     news_item = ProcessedNewsItem.from_dict(item)
