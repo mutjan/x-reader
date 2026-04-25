@@ -2,6 +2,36 @@
   "news": {
     "2026-04-26": [
       {
+        "id": "da91c123a759e6f4384bb1bd1028bbda",
+        "title": "Anthropic搭建代理人交易市场，AI开始自己做买卖",
+        "chinese_title": "Anthropic搭建代理人交易市场，AI开始自己做买卖",
+        "original_title": "Anthropic created a test marketplace for agent-on-agent commerce",
+        "summary": "Anthropic用真实商品和真实资金搭了一个分类信息市场，让买卖双方都由AI代理完成交易，这让代理协作从任务执行迈向经济行为，也把可信度、博弈和平台治理推到台前。",
+        "rating": "S",
+        "score": 97,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果代理间商业行为可被验证，下一步会延伸到企业采购、客服议价和自动供应链；同时也会引出平台规则、欺诈防护和责任归属的新报道角度。",
+        "entities": [
+          "Agent Commerce",
+          "Ai Agents",
+          "Anthropic",
+          "Classified Marketplace"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777154607,
+        "published_at": "2026-04-26T06:03:27.386900",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/",
+        "event_id": null
+      },
+      {
         "id": "1dd613991facbc36f74c751228bb9ece",
         "title": "谷歌I/O前夜，Gemini新模型为何迟迟未发",
         "chinese_title": "谷歌I/O前夜，Gemini新模型为何迟迟未发",
@@ -36,16 +66,16 @@
         "title": "美国地热技术突破，150吉瓦能源增量被点燃",
         "chinese_title": "美国地热技术突破，150吉瓦能源增量被点燃",
         "original_title": "America's Geothermal Breakthrough Could Unlock a 150-Gigawatt Energy Revolution",
-        "summary": "美国地热领域的新突破被认为有望释放高达150吉瓦的清洁能源潜力，这不仅关系到新能源供给结构，也可能重塑AI时代电力基础设施的长期成本与稳定性。",
+        "summary": "一项被热议的美国地热进展被认为有机会释放150吉瓦级新增能源潜力，这类稳定电力若能落地，将直接影响AI数据中心、制造业和电网侧的长期供能预期。",
         "rating": "A",
-        "score": 78,
+        "score": 77,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "若地热供能规模化落地，最先受影响的可能是数据中心选址与电力采购逻辑，进而牵动算力基建、储能设备和区域能源投资格局。",
         "entities": [
-          "Data Center",
-          "Energy Infrastructure",
+          "150-Gigawatt",
           "Geothermal Energy",
+          "Power Grid",
           "United States"
         ],
         "sourceLinks": [
@@ -59,22 +89,25 @@
         "published_at": "2026-04-26T05:43:11.698655",
         "source": "Hacker News",
         "url": "https://oilprice.com/Alternative-Energy/Geothermal-Energy/Americas-Geothermal-Breakthrough-Could-Unlock-a-150-Gigawatt-Energy-Revolution.html",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "A",
+        "extension": "地热如果成为可规模化的新基荷电源，延伸报道可以追踪其对AI算力选址、电价结构以及与核电、天然气等供能路线的竞争关系。"
       },
       {
         "id": "d8bf1b87f689730ff8e91b86ac33fe19",
         "title": "让AI彼此争论，HATS想把决策质量再抬一档",
         "chinese_title": "让AI彼此争论，HATS想把决策质量再抬一档",
         "original_title": "AI agents that argue with each other to improve decisions",
-        "summary": "开源项目HATS提出让多个AI代理相互辩论后再形成结论的决策框架，试图用多角色博弈替代单代理直答，提升复杂任务中的判断质量和鲁棒性。",
+        "summary": "开源项目HATS尝试让多个AI代理在决策前彼此辩论与交叉质疑，以减少单一路径推理失误，这类机制对高风险判断、复杂规划和企业级代理协作尤其有吸引力。",
         "rating": "A",
-        "score": 85,
-        "type": "research",
+        "score": 88,
+        "type": "tool",
         "typeName": "研究成果",
         "expansion": "这类多代理协商范式若效果稳定，可能加速进入企业决策、代码审查和智能体编排平台，也会带动对评测、成本控制和可解释性的进一步讨论。",
         "entities": [
-          "Ai Agent",
-          "Github",
+          "Ai Agents",
+          "Decision Making",
           "Hats",
           "Multi-Agent Debate"
         ],
@@ -89,7 +122,10 @@
         "published_at": "2026-04-26T05:43:11.698770",
         "source": "Hacker News",
         "url": "https://github.com/rockcat/HATS",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "A+",
+        "extension": "如果多代理争论框架被验证有效，接下来值得跟进它在代码生成、医疗建议和企业审批流里的落地，以及与单代理链式推理的成本效果比较。"
       },
       {
         "id": "4872dc6bd43db8604f8d0b1bcd78513d",
@@ -22614,129 +22650,9 @@
         "source": "Hacker News",
         "url": "https://www.remoroo.com/",
         "event_id": null
-      },
-      {
-        "id": "762a997c732ee28482e04c5ea8cc1f5a",
-        "title": "Anthropic CEO会晤白宫高层，AI监管风向或现转机",
-        "original_title": "Anthropic CEO Visits White House",
-        "summary": "Anthropic CEO Dario Amodei周五与白宫办公厅主任Susie Wiles及财政部长Scott Bessent举行会谈，双方称讨论富有成效，这预示着特朗普政府与AI企业的关系可能出现缓和。",
-        "rating": "A",
-        "score": 76,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "Anthropic与白宫走近可能影响AI监管政策走向，进而影响OpenAI、Google等竞争对手的政府关系策略，以及AIGC行业的合规成本预期。",
-        "entities": [
-          "Anthropic",
-          "Dario Amodei",
-          "Scott Bessent",
-          "Susie Wiles",
-          "White House"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/anthropic-ceo-visits-white-house"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776549759,
-        "published_at": "2026-04-19T06:02:39.049865",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/anthropic-ceo-visits-white-house",
-        "event_id": null
-      },
-      {
-        "id": "ae590cd728d04fc19f67dbc01c299ac5",
-        "title": "Salesforce推出Headless 360架构，全面开放平台能力给AI Agent",
-        "original_title": "Salesforce announces Headless 360, an initiative that will give AI agents access to Salesforce's platform capabilities through APIs, MCP tools or CLI commands (Michael Nu&ntilde;ez/VentureBeat)",
-        "summary": "Salesforce发布27年来最大规模架构变革Headless 360，通过API、MCP工具和CLI命令让AI Agent能够直接调用Salesforce平台能力，实现无头化架构转型。",
-        "rating": "S",
-        "score": 93,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "CRM巨头全面拥抱Agent化，将推动企业软件行业向无头架构转型，可能引发SAP、Oracle等竞争对手跟进，同时利好MCP协议生态发展。",
-        "entities": [
-          "Headless 360",
-          "MCP",
-          "Michael Nunez",
-          "Salesforce",
-          "Venturebeat"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260418/p7#a260418p7"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776549759,
-        "published_at": "2026-04-19T06:02:39.049881",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260418/p7#a260418p7",
-        "event_id": null
-      },
-      {
-        "id": "e15504f2c68944e3d33762f71fb9532c",
-        "title": "研究证实：过度依赖AI会削弱用户对自身大脑的信心",
-        "original_title": "Study Finds AI Use Eats Away at Users’ Confidence in Their Own Brains",
-        "summary": "发表在《Technology, Mind and Behavior》期刊的同行评审研究发现，重度依赖AI的用户对自身独立推理能力的信心显著下降，而主动编辑和质疑AI输出的用户则保持了更高的认知自信。",
-        "rating": "B",
-        "score": 74,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "AI认知依赖研究升温，可能推动教育界和职场重新思考AI使用规范，影响AI辅助工具的产品设计方向，从替代思维转向增强思维。",
-        "entities": [
-          "Ai",
-          "Carnegie Mellon",
-          "Middlesex University",
-          "Mit",
-          "Sarah Baldeo"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/health-medicine/ai-cognition-study"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776549759,
-        "published_at": "2026-04-19T06:02:39.049892",
-        "source": "Futurism",
-        "url": "https://futurism.com/health-medicine/ai-cognition-study",
-        "event_id": null
-      },
-      {
-        "id": "9afe19bc01d2ccfc5db1654c633a5d90",
-        "title": "民主党被警告勿触怒AI游说集团，尽管选民强烈支持监管",
-        "original_title": "Democrats Warned Not to Upset Multi-Million Dollar AI Lobbyists, Even Though It’d Be a Slam Dunk With Voters",
-        "summary": "据金融时报报道，民主党2026年中期选举策略师建议候选人不要得罪拥有超3亿美元资金的亲AI利益集团，尽管民调显示63%美国人支持政府加强AI监管。",
-        "rating": "B",
-        "score": 68,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "AI监管成为美国两党罕见共识议题，可能加速联邦AI立法进程，同时反映科技游说力量对政治的影响力，影响科技巨头的监管风险预期。",
-        "entities": [
-          "Ai Lobbyists",
-          "Alex Jacquez",
-          "Democrats",
-          "Financial Times",
-          "Ipsos"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/democrats-ai-voters"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776549759,
-        "published_at": "2026-04-19T06:02:39.049902",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/democrats-ai-voters",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-26T05:43:29.673888",
-  "total_news": 784
+  "last_updated": "2026-04-26T06:03:48.090079",
+  "total_news": 781
 }
