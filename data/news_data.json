@@ -2,6 +2,130 @@
   "news": {
     "2026-04-26": [
       {
+        "id": "1dd613991facbc36f74c751228bb9ece",
+        "title": "谷歌I/O前夜，Gemini新模型为何迟迟未发",
+        "chinese_title": "谷歌I/O前夜，Gemini新模型为何迟迟未发",
+        "original_title": "Don’t tell me that we have to wait until google i/o for a new gemini/nano banana model?",
+        "summary": "Reddit社区围绕谷歌是否会在Google I/O前推出新的Gemini或\"Nano Banana\"模型展开讨论，折射出外界对Gemini产品线节奏、版本储备和发布窗口的高度关注。",
+        "rating": "B",
+        "score": 72,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "如果Google I/O仍未放出新模型，外界会进一步质疑Gemini更新节奏；若集中在大会发布，也可能带动多模态终端能力与开发者生态的新一轮竞争。",
+        "entities": [
+          "Gemini",
+          "Google",
+          "Google I/O",
+          "Nano Banana"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (Gemini)",
+            "url": "https://www.reddit.com/r/singularity/comments/1svnk01/dont_tell_me_that_we_have_to_wait_until_google_io/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777153391,
+        "published_at": "2026-04-26T05:43:11.698528",
+        "source": "Technological Singularity (Gemini)",
+        "url": "https://www.reddit.com/r/singularity/comments/1svnk01/dont_tell_me_that_we_have_to_wait_until_google_io/",
+        "event_id": null
+      },
+      {
+        "id": "5091e6c03806dce7b2806cf5ce36e7be",
+        "title": "美国地热技术突破，150吉瓦能源增量被点燃",
+        "chinese_title": "美国地热技术突破，150吉瓦能源增量被点燃",
+        "original_title": "America's Geothermal Breakthrough Could Unlock a 150-Gigawatt Energy Revolution",
+        "summary": "美国地热领域的新突破被认为有望释放高达150吉瓦的清洁能源潜力，这不仅关系到新能源供给结构，也可能重塑AI时代电力基础设施的长期成本与稳定性。",
+        "rating": "A",
+        "score": 78,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "若地热供能规模化落地，最先受影响的可能是数据中心选址与电力采购逻辑，进而牵动算力基建、储能设备和区域能源投资格局。",
+        "entities": [
+          "Data Center",
+          "Energy Infrastructure",
+          "Geothermal Energy",
+          "United States"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://oilprice.com/Alternative-Energy/Geothermal-Energy/Americas-Geothermal-Breakthrough-Could-Unlock-a-150-Gigawatt-Energy-Revolution.html"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777153391,
+        "published_at": "2026-04-26T05:43:11.698655",
+        "source": "Hacker News",
+        "url": "https://oilprice.com/Alternative-Energy/Geothermal-Energy/Americas-Geothermal-Breakthrough-Could-Unlock-a-150-Gigawatt-Energy-Revolution.html",
+        "event_id": null
+      },
+      {
+        "id": "d8bf1b87f689730ff8e91b86ac33fe19",
+        "title": "让AI彼此争论，HATS想把决策质量再抬一档",
+        "chinese_title": "让AI彼此争论，HATS想把决策质量再抬一档",
+        "original_title": "AI agents that argue with each other to improve decisions",
+        "summary": "开源项目HATS提出让多个AI代理相互辩论后再形成结论的决策框架，试图用多角色博弈替代单代理直答，提升复杂任务中的判断质量和鲁棒性。",
+        "rating": "A",
+        "score": 85,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这类多代理协商范式若效果稳定，可能加速进入企业决策、代码审查和智能体编排平台，也会带动对评测、成本控制和可解释性的进一步讨论。",
+        "entities": [
+          "Ai Agent",
+          "Github",
+          "Hats",
+          "Multi-Agent Debate"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/rockcat/HATS"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777153391,
+        "published_at": "2026-04-26T05:43:11.698770",
+        "source": "Hacker News",
+        "url": "https://github.com/rockcat/HATS",
+        "event_id": null
+      },
+      {
+        "id": "4872dc6bd43db8604f8d0b1bcd78513d",
+        "title": "监控漂移与拒答，企业开始补上LLM上线后的那层基础设施",
+        "chinese_title": "监控漂移与拒答，企业开始补上LLM上线后的那层基础设施",
+        "original_title": "Monitoring LLM behavior: Drift, retries, and refusal patterns",
+        "summary": "VentureBeat梳理企业级大模型上线后的监控框架，强调要同时跟踪漂移、重试率和拒答模式，并把离线评测、线上遥测和持续反馈回路做成真正的质量基础设施。",
+        "rating": "A+",
+        "score": 90,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这会推动AI应用团队把评测、监控和CI/CD更深绑定，也可能催生独立的AI质量基础设施赛道。下一步值得跟进的是企业采购、合规团队和模型厂商会如何围绕评测标准重新分工。",
+        "entities": [
+          "Ai Evaluation Stack",
+          "LLM",
+          "Llm-As-A-Judge",
+          "Microsoft",
+          "Venturebeat"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/infrastructure/monitoring-llm-behavior-drift-retries-and-refusal-patterns"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777147417,
+        "published_at": "2026-04-26T04:03:37.372853",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/infrastructure/monitoring-llm-behavior-drift-retries-and-refusal-patterns",
+        "event_id": null,
+        "original_content": "The stochastic challenge Traditional software is predictable: Input A plus function B always equals output C. This determinism allows engineers to develop robust tests. On the other hand, generative AI is stochastic and unpredictable. The exact same prompt often yields different results on Monday versus Tuesday, breaking the traditional unit testing that engineers know and love. To ship enterprise-ready AI, engineers cannot rely on mere “vibe checks” that pass today but fail when customers use the product. Product builders need to adopt a new infrastructure layer: The AI Evaluation Stack . This framework is informed by my extensive experience shipping AI products for Fortune 500 enterprise customers in high-stakes industries, where “hallucination” is not funny — it’s a huge compliance risk. Defining the AI evaluation paradigm Traditional software tests are binary assertions (pass/fail). While some AI evals use binary asserts, many evaluate on a gradient. An eval is not a single script; it is a structured pipeline of assertions — ranging from strict code syntax to nuanced semantic checks — that verify the AI system’s intended function. The taxonomy of evaluation checks To build a robust, cost-effective pipeline, asserts must be separated into two distinct architectural layers: Layer 1: Deterministic assertions A surprisingly large share of production AI failures aren't semantic \"hallucinations\" — they are basic syntax and routing failures. Deterministic assertions serve as the pipeline's first gate, using traditional code and regex to validate structural integrity. Instead of asking if a response is \"helpful,\" these assertions ask strict, binary questions: Did the model generate the correct JSON key/value schema? Did it invoke the correct tool call with the required arguments? Did it successfully slot-fill a valid GUID or email address? // Example: Layer 1 Deterministic Tool Call Assertion { \"test_scenario\": \"User asks to look up an account\", \"assertion_type\": \"schema_validation\", \"expected_action\": \"Call API: get_customer_record\", \"actual_ai_output\": \"I found the customer.\", \"eval_result\": \"FAIL - AI hallucinated conversational text instead of generating the required API payload.\" } In the example above, the test failed instantly because the model generated conversational text instead of the required tool call payload. Architecturally, deterministic assertions must be the first layer of the stack, operating on a computationally inexpensive \"fail-fast\" principle. If a downstream API requires a specific schema, a malformed JSON string is a fatal error. By failing the evaluation immediately at this layer, engineering teams prevent the pipeline from triggering expensive semantic checks (Layer 2) or wasting valuable human review time (Layer 3). Layer 2: Model-based assertions When deterministic assertions pass, the pipeline must evaluate semantic quality. Because natural language is fluid, traditional code cannot easily assert if a response is \"helpful\" or \"empathetic.\" This introduces model-based evaluation, commonly referred to as \" LLM-as-a-Judge ” or “ LLM-Judge .\" While using one non-deterministic system to evaluate another seems counterintuitive, it is an exceptionally powerful architectural pattern for use cases requiring nuance. It is virtually impossible to write a reliable regex to verify if a response is \"actionable\" or \"polite.\" While human reviewers excel at this nuance, they cannot scale to evaluate tens of thousands of CI/CD test cases. Thus, the LLM-as-a-Judge becomes the scalable proxy for human discernment. 3 critical inputs for model-based assertions However, model-based assertions only yield reliable data when the LLM-as-a-Judge is provisioned with three critical inputs: A state-of-the-art reasoning model: The Judge must possess superior reasoning capabilities compared to the production model. If your app runs on a smaller, faster model for latency, the judge must be a frontier reasoning model to approximate human-level discernment. A strict assessment rubric: Vague evaluation prompts (\"Rate how good this answer is\") yield noisy, stochastic evaluations. A robust rubric explicitly defines the gradients of failure and success. (For example, a \"Helpfulness\" rubric should define Score 1 as an irrelevant refusal, Score 2 as addressing the prompt but lacking actionable steps, and Score 3 as providing actionable next steps strictly within context.) Ground truth (golden outputs): While the rubric provides the rules, a human-vetted \"expected answer\" acts as the answer key. When the LLM-Judge can compare the production model's output against a verified Golden Output, its scoring reliability increases dramatically. Architecture: The offline vs online pipeline A robust evaluation architecture requires two complementary pipelines. The online pipeline monitors post-deployment telemetry, while the offline pipeline provides the foundational baseline and deterministic constraints required to evaluate stochastic models safely. The offline evaluation pipeline The offline pipeline's primary objective is regression testing — identifying failures, drift, and latency before production. Deploying an enterprise LLM feature without a gating offline evaluation suite is an architectural anti-pattern; it is the equivalent of merging uncompiled code into a main branch. Process 1. Curating the golden dataset The offline lifecycle begins by curating a \" golden dataset \" — a static, version-controlled repository of 200 to 500 test cases representing the AI's full operational envelope. Each case pairs an exact input payload with an expected \" golden output \" (ground truth). Crucially, this dataset must reflect expected real-world traffic distributions. While most cases cover standard \"happy-path\" interactions, engineers must systematically incorporate edge cases, jailbreaks, and adversarial inputs. Evaluating \"refusal capabilities\" under stress remains a strict compliance requirement. Example test case payload (standard tool use): Input: \"Schedule a 30-minute follow-up meeting with the client for next Tuesday at 10 a.m.\" Expected output (golden): The system successfully invokes the schedule_meeting tool with the correct JSON payload: {\"duration_minutes\": 30, \"day\": \"Tuesday\", \"time\": \"10 AM\", \"attendee\": \"client_email\"}. While manually curating hundreds of edge cases is tedious, the process can be accelerated with synthetic data generation pipelines that use a specialized LLM to produce diverse TSV/CSV test payloads. However, relying entirely on AI-generated test cases introduces the risk of data contamination and bias. A human-in-the-loop (HITL) architecture is mandatory at this stage; domain experts must manually review, edit, and validate the synthetic dataset to ensure it accurately reflects real-world user intent and enterprise policy before it is committed to the repository. 2. Defining the evaluation criteria Once the dataset is curated, engineers must design the evaluation criteria to compute a composite score for each model output. A robust architecture achieves this by assigning weighted points across a hybrid of Layer 1 (deterministic) and Layer 2 (model-based) asserts. Consider an AI agent executing a \"send email\" tool. An evaluation framework might utilize a 10-point scoring system: Layer 1: Deterministic asserts (6 points): Did the agent invoke the correct tool? (2 pts). Did it produce a valid JSON object? (2 pts). Does the JSON strictly adhere to the expected schema? (2 pts). Layer 2: Model-based asserts (4 points): (Note: Semantic rubrics must be highly use-case specific). Does the subject line reflect user intent? (1 pt). Does the email body match expected outputs without hallucination? (1 pt). Were CC/BCC fields leveraged accurately? (1 pt). Was the appropriate priority flag inferred? (1 pt). To understand why the LLM-Judge awarded these points, the engineer must prompt the judge to supply its reasoning for each score. This is crucial for debugging failures. The passing threshold and short-circuit logic In this example, an 8/10 passing threshold requires 8 points for success. Crucially, the evaluation pipeline must enforce strict short-circuit evaluation (fail-fast logic). If the model fails any deterministic assertion — such as generating a malformed JSON schema — the system must instantly fail the entire test case (0/10). There is zero architectural value in invoking an expensive LLM-Judge to assess the semantic \"politeness\" of an email if the underlying API call is structurally broken. 3. Executing the pipeline and aggregating signals Using an evaluation infrastructure of choice, the system executes the offline pipeline — typically integrated as a blocking CI/CD step during a pull request. The infrastructure iterates through the golden dataset, injecting each test payload into the production model, capturing the output, and executing defined assertions against it. Each output is scored against the passing threshold. Once batch execution is complete, results are aggregated into an overall pass rate. For enterprise-grade applications, the baseline pass rate must typically exceed 95%, scaling to 99%-plus for strict compliance or high-risk domains. 4. Assessment, iteration, and alignment Based on aggregated failure data, engineering teams conduct a root-cause analysis of failing test cases. This assessment drives iterative updates to core components: refining system prompts, modifying tool descriptions, augmenting knowledge sources, or adjusting hyperparameters (like temperature or top-p). Continuous optimization remains best practice even after achieving a 95% pass rate. Crucially, any system modification necessitates a full regression test. Because LLMs are inherently non-deterministic, an update intended to fix one specific edge case can easily cause unforeseen degradations in other areas. The entire offline pipeline must be rerun to validate that the update improved quality without introducing regressions. The online evaluation pipeline While the offline pipeline acts as a strict pre-deployment gatekeeper, the online pipeline is the post-deployment telemetry system. Its objective is to monitor real-world behavior, capturing emergent edge cases, and quantifying model drift. Architects must instrument applications to capture five distinct categories of telemetry: 1. Explicit user signals Direct, deterministic feedback indicating model performance: Thumbs up/down: Disproportionate negative feedback is the most immediate leading indicator of system degradation, directing immediate engineering investigation. Verbatim in-app feedback: Systematically parsing written comments identifies novel failure modes to integrate back into the offline \"golden dataset.\" 2. Implicit behavioral signals Behavioral telemetry reveals silent failures where users give up without explicit feedback: Regeneration and retry rates: High frequencies of retries indicate the initial output failed to resolve user intent. Apology rate: Programmatically scanning for heuristic triggers (\"I’m sorry\") detects degraded capabilities or broken tool routing. Refusal rate: Artificially high refusal rates (\"I can’t do that\") indicate over-calibrated safety filters rejecting benign user queries. 3. Production deterministic asserts (synchronous) Because deterministic code checks execute in milliseconds, teams can seamlessly reuse Layer 1 offline asserts (schema conformity, tool validity) to synchronously evaluate 100% of production traffic. Logging these pass/fail rates instantly detects anomalous spikes in malformed outputs — the earliest warning sign of silent model drift or provider-side API changes. 4. Production LLM-as-a-Judge (asynchronous) If strict data privacy agreements (DPAs) permit logging user inputs, teams can deploy model-based asserts. Architecturally, production LLM-Judges must never execute synchronously on the critical path, which doubles latency and compute costs. Instead, a background LLM-Judge asynchronously samples a fraction (5%) of daily sessions, grading outputs against the offline rubric to generate a continuous quality dashboard. Engineering the feedback loop (the “flywheel”) Evaluation pipelines are not \"set-it-and-forget-it\" infrastructure. Without continuous updates, static datasets suffer from \"rot\" (concept drift) as user behavior evolves and customers discover novel use cases. For example, an HR chatbot might boast a pristine 99% offline pass rate for standard payroll questions. However, if the company suddenly announces a new equity plan, users will immediately begin prompting the AI about vesting schedules — a domain entirely missing from the offline evaluations. To make the system smarter over time, engineers must architect a closed feedback loop that mines production telemetry for continuous improvement. The continuous improvement workflow: Capture: A user triggers an explicit negative signal (a \"thumbs down\") or an implicit behavioral flag in production. Triage: The specific session log is automatically flagged and routed for human review. Root-cause analysis: A domain expert investigates the failure, identifies the gap, and updates the AI system to successfully handle similar requests. Dataset augmentation: The novel user input, paired with the newly corrected expected output, is appended to the offline Golden Dataset alongside several synthetic variations. Regression testing: The model is continuously re-evaluated against this newly discovered edge case in all future runs. Building an evaluation pipeline without monitoring production logs and updating datasets is fundamentally insufficient. Users are unpredictable. Evaluating on stale data creates a dangerous illusion: High offline pass rates masking a rapidly degrading real-world experience. Conclusion: The new “definition of done” In the era of generative AI, a feature or product is no longer \"done\" simply because the code compiles and the prompt returns a coherent response. It is only done when a rigorous, automated evaluation pipeline is deployed and stable — and when the model consistently passes against both a curated golden dataset and newly discovered production edge cases. This guide has equipped you with a comprehensive blueprint for building that reality. From architecting offline regression pipelines and online telemetry to the continuous feedback flywheel and navigating enterprise anti-patterns, you now have the structural foundation required to deploy AI systems with greater confidence. Now, it is your turn. Share this framework with your engineering, product, and legal teams to establish a unified, cross-functional standard for AI quality in your organization. Stop guessing whether your models are degrading in production, and start measuring. Derah Onuorah is a Microsoft senior product manager.",
+        "grade": "A+",
+        "extension": "随着企业AI应用进入生产环境，围绕评测栈、LLM-as-a-Judge和线上监控的新工具链会加速成熟，也可能推动模型供应商提供更细粒度的可观测能力。"
+      },
+      {
         "id": "a6b4f7b6a499768ca9406e3d0162bda3",
         "title": "Sam Altman致歉：OpenAI错过枪击案预警线索",
         "chinese_title": "Sam Altman致歉：OpenAI错过枪击案预警线索",
@@ -230,37 +354,6 @@
       }
     ],
     "2026-04-25": [
-      {
-        "id": "4872dc6bd43db8604f8d0b1bcd78513d",
-        "title": "大模型上线后怎么盯质量，企业开始补AI评测栈",
-        "chinese_title": "大模型上线后怎么盯质量，企业开始补AI评测栈",
-        "original_title": "Monitoring LLM behavior: Drift, retries, and refusal patterns",
-        "summary": "VentureBeat系统梳理企业部署大模型后的新工程范式：上线前要用黄金数据集和离线回归卡住质量，上线后还要持续监控漂移、拒答率、重试率与工具调用结构错误，AI评测正从附属环节变成生产基础设施。",
-        "rating": "A+",
-        "score": 88,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这会推动AI应用团队把评测、监控和CI/CD更深绑定，也可能催生独立的AI质量基础设施赛道。下一步值得跟进的是企业采购、合规团队和模型厂商会如何围绕评测标准重新分工。",
-        "entities": [
-          "Ai Evaluation Stack",
-          "Derah Onuorah",
-          "LLM",
-          "Llm-As-A-Judge",
-          "Microsoft"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/infrastructure/monitoring-llm-behavior-drift-retries-and-refusal-patterns"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777147417,
-        "published_at": "2026-04-26T04:03:37.372853",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/infrastructure/monitoring-llm-behavior-drift-retries-and-refusal-patterns",
-        "event_id": null
-      },
       {
         "id": "2469b5426c7f4abf0fda57df3d2edbba",
         "title": "美联储研究：ChatGPT后美国程序员岗位增速近乎腰斩",
@@ -22641,274 +22734,9 @@
         "source": "Futurism",
         "url": "https://futurism.com/artificial-intelligence/democrats-ai-voters",
         "event_id": null
-      },
-      {
-        "id": "c353b45d4deebec694c1751df1e1168f",
-        "title": "AI半导体研究机构SemiAnalysis预计今年营收破1亿美元",
-        "original_title": "Dylan Patel’s SemiAnalysis Projects Over $100 Million In 2026 Revenue",
-        "summary": "专注于AI与半导体领域的研究机构SemiAnalysis预计2026年营收将超过1亿美元，较去年的约2000万美元实现大幅增长，其深度数据和研究报告受到行业广泛关注。",
-        "rating": "B",
-        "score": 68,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "SemiAnalysis的快速增长反映了AI行业对专业研究服务的强劲需求，可能带动更多垂直研究机构涌现，同时也意味着AI产业链的信息服务市场正在快速成熟。",
-        "entities": [
-          "Dylan Patel",
-          "Semianalysis"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/dylan-patels-semianalysis-projects-100-million-2026-revenue"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776546077,
-        "published_at": "2026-04-19T05:01:17.434130",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/dylan-patels-semianalysis-projects-100-million-2026-revenue",
-        "event_id": null
-      },
-      {
-        "id": "e548ecea1419e5973d7cd2c050038d79",
-        "title": "Anthropic安全工具Mythos加剧开源维护者负担引发担忧",
-        "original_title": "Anthropic's Mythos adds to concerns about rising workloads for open-source maintainers, as many have already been dealing with a \"crazy\" number of bug reports (Chris Stokel-Walker/Bloomberg)",
-        "summary": "Anthropic推出的AI安全工具Mythos能够快速发现开源项目中的漏洞和威胁，但修复速度远超小型维护团队的能力，导致大量未修复漏洞积压，引发对开源生态安全的担忧。",
-        "rating": "A",
-        "score": 78,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "AI安全扫描工具的普及可能迫使开源社区重构维护模式，催生自动化修复工具或商业化安全服务，同时也可能加剧大型科技公司对开源生态的影响力。",
-        "entities": [
-          "Anthropic",
-          "Chris Stokel-Walker",
-          "Mythos"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260418/p9#a260418p9"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776546077,
-        "published_at": "2026-04-19T05:01:17.434149",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260418/p9#a260418p9",
-        "event_id": null
-      },
-      {
-        "id": "61f0ce992f2306ae72208da785df57ee",
-        "title": "开发者分享使用Claude Design的体验与思考",
-        "original_title": "Thoughts and feelings around Claude Design",
-        "summary": "一位开发者在博客中分享了使用Claude Design工具进行设计工作的个人体验和感受，探讨了AI辅助设计工具在实际工作流程中的表现。",
-        "rating": "B",
-        "score": 66,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "AI设计工具的个体使用体验积累将推动产品迭代，若反馈普遍积极可能加速AI设计工具在开发者社区的渗透，影响传统设计工具市场格局。",
-        "entities": [
-          "Anthropic",
-          "Claude"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://samhenri.gold/blog/20260418-claude-design/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776546077,
-        "published_at": "2026-04-19T05:01:17.434162",
-        "source": "Hacker News",
-        "url": "https://samhenri.gold/blog/20260418-claude-design/",
-        "event_id": null
-      },
-      {
-        "id": "3fdea4a18384c520abe54635e9403c92",
-        "title": "AI芯片初创公司Cerebras正式提交IPO申请",
-        "original_title": "AI chip startup Cerebras files for IPO",
-        "summary": "AI芯片公司Cerebras已向监管机构提交IPO申请，该公司此前与亚马逊AWS达成芯片使用协议，并与OpenAI签署了 reportedly 超过100亿美元的合作协议。",
-        "rating": "A+",
-        "score": 89,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "Cerebras的IPO将成为AI芯片赛道的重要里程碑，其上市表现将直接影响资本市场对非英伟达AI芯片公司的估值预期，也可能加速其他AI芯片初创公司的上市进程。",
-        "entities": [
-          "Amazon Web Services",
-          "Cerebras",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776546077,
-        "published_at": "2026-04-19T05:01:17.434182",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/",
-        "event_id": null
-      },
-      {
-        "id": "7f6ed1b769bbdb3f0fe6e7eec7522cca",
-        "title": "海洋变暖威胁大白鲨生存，恒温优势反成致命弱点",
-        "original_title": "Great white sharks are overheating",
-        "summary": "发表于《科学》杂志的研究指出，大白鲨依靠中温特性维持体温高于海水以获得演化优势，但气候变暖导致海洋温度升高，它们正面临过热致死的危险。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这一发现揭示了气候变化对海洋顶级捕食者的深层影响，后续可追踪相关保护政策，以及海洋生态系统连锁反应的研究进展。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Ars Technica » Scientific Method",
-            "url": "https://arstechnica.com/science/2026/04/great-white-sharks-are-overheating/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776543791,
-        "published_at": "2026-04-19T04:23:11.509918",
-        "source": "Ars Technica » Scientific Method",
-        "url": "https://arstechnica.com/science/2026/04/great-white-sharks-are-overheating/",
-        "event_id": null
-      },
-      {
-        "id": "83ca1c97a28d667332284d0ecf5866f9",
-        "title": "哈勃常数测量困境持续，物理学家面临宇宙学重大难题",
-        "original_title": "Physicists Have a Major Problem With the Universe",
-        "summary": "近百年来，天文学家始终无法就宇宙精确膨胀率达成一致，不同测量方法得出的哈勃常数值差异显著，成为现代天文学最棘手的挑战之一。",
-        "rating": "A",
-        "score": 76,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "哈勃常数危机可能暗示现有宇宙学模型存在缺陷，后续可关注韦伯望远镜等新观测数据能否破解这一谜题，以及新物理理论的出现。",
-        "entities": [
-          "Edwin Hubble"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/space/physicists-hubble-constant-universe"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776543791,
-        "published_at": "2026-04-19T04:23:11.509979",
-        "source": "Futurism",
-        "url": "https://futurism.com/space/physicists-hubble-constant-universe",
-        "event_id": null
-      },
-      {
-        "id": "dec9fed4854a08a85ca499d119c4cd02",
-        "title": "配送机器人翻车集锦曝光：撞火车、堵马路状况百出",
-        "original_title": "Wild Video Shows Delivery Robots Causing Havoc, Getting Obliterated",
-        "summary": "TikTok上流传的视频合集展示了多款配送机器人在现实世界中的失败场景，包括被火车撞击、道路堵塞等，反映出当前自动驾驶末端配送的可靠性问题。",
-        "rating": "B",
-        "score": 71,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "此类事件可能引发公众对配送机器人安全性的质疑，进而影响相关监管政策，后续可关注主要厂商的技术改进和事故率数据。",
-        "entities": [
-          "ByteDance"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/robots-and-machines/delivery-robot-fail-compilation"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776543791,
-        "published_at": "2026-04-19T04:23:11.510007",
-        "source": "Futurism",
-        "url": "https://futurism.com/robots-and-machines/delivery-robot-fail-compilation",
-        "event_id": null
-      },
-      {
-        "id": "f83d6a0f0fa6b351ac01ecdd2bac8d84",
-        "title": "Sfsym工具上线：一键导出Apple SF Symbols为矢量格式",
-        "original_title": "Show HN: Sfsym – Export Apple SF Symbols as Vector SVG/PDF/PNG",
-        "summary": "开发者推出开源工具Sfsym，支持将Apple SF Symbols图标库导出为SVG、PDF和PNG等矢量格式，方便设计师和开发者在跨平台项目中使用。",
-        "rating": "B",
-        "score": 67,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "该工具填补了Apple图标生态与跨平台设计工作流之间的空白，后续可关注其在设计社区的采纳情况，以及Apple官方的回应。",
-        "entities": [
-          "Apple",
-          "Sf Symbols",
-          "Sfsym"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News (apple)",
-            "url": "https://github.com/yapstudios/sfsym"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776543791,
-        "published_at": "2026-04-19T04:23:11.510036",
-        "source": "Hacker News (apple)",
-        "url": "https://github.com/yapstudios/sfsym",
-        "event_id": null
-      },
-      {
-        "id": "fbcbc870d593a1cf00421d198d1a1cb0",
-        "title": "海洋升温倒逼大白鲨：恒温优势逆转为过热危机",
-        "original_title": "大白鲨面临过热风险",
-        "summary": "大白鲨作为中温动物，依靠代谢产热维持体温高于周围海水以获得游动速度和捕食优势，但气候变暖导致海洋温度上升，其产热速度超过散热能力，面临过热威胁。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这一研究与英文报道互为印证，凸显气候变化对海洋生物的系统性威胁，后续可关注大白鲨种群数量变化和迁徙模式调整的研究。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Solidot",
-            "url": "https://www.solidot.org/story?sid=84082"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776543791,
-        "published_at": "2026-04-19T04:23:11.510112",
-        "source": "Solidot",
-        "url": "https://www.solidot.org/story?sid=84082",
-        "event_id": null
-      },
-      {
-        "id": "7512a781b3f34e101a4cd04ec16ce1b7",
-        "title": "机器学习从业者热议：Mac还是5090定制主机更值得入手",
-        "original_title": "Which computer should I buy: Mac or custom-built 5090? [D]",
-        "summary": "社区讨论围绕图像视频类机器学习工作负载的硬件选择展开，核心争议在于Mac的便利性与大显存定制主机在模型微调和训练中的性能优势之间的权衡。",
-        "rating": "B",
-        "score": 73,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "这一讨论反映了AI开发硬件生态的分化趋势，后续可追踪Apple Silicon在AI领域的渗透情况，以及NVIDIA高端显卡的市场表现。",
-        "entities": [
-          "5090",
-          "Mac"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1snqzq9/which_computer_should_i_buy_mac_or_custombuilt/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776543791,
-        "published_at": "2026-04-19T04:23:11.509969",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1snqzq9/which_computer_should_i_buy_mac_or_custombuilt/",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-26T04:03:51.463542",
-  "total_news": 791
+  "last_updated": "2026-04-26T05:43:29.673888",
+  "total_news": 784
 }
