@@ -2,6 +2,182 @@
   "news": {
     "2026-04-25": [
       {
+        "id": "216fb6e366c6b094d1982610051bf87b",
+        "title": "开源工具Plannotator想把论文评审交给多智能体协作",
+        "chinese_title": "开源工具Plannotator想把论文评审交给多智能体协作",
+        "original_title": "You can use Plannotator to review papers with your agents [P]",
+        "summary": "开源项目Plannotator推出用智能体协同审论文的工作流，支持标注共享与后续多人协作房间，试图把论文阅读、批注和复核流程产品化。",
+        "rating": "A",
+        "score": 81,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "如果这类工具成熟，后续可能延伸到论文筛选、实验复现和团队知识管理，带动科研工作流产品竞争。",
+        "entities": [
+          "Arxiv",
+          "DeepSeek",
+          "Plannotator"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning (deepseek)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sv0q07/you_can_use_plannotator_to_review_papers_with/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777090014,
+        "published_at": "2026-04-25T12:06:54.206154",
+        "source": "Machine Learning (deepseek)",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sv0q07/you_can_use_plannotator_to_review_papers_with/",
+        "event_id": null
+      },
+      {
+        "id": "2dc7d809fcc9e12ba9a0026ef528feba",
+        "title": "语音识别为什么还没有普及提示词机制",
+        "chinese_title": "语音识别为什么还没有普及提示词机制",
+        "original_title": "Why don't Automatic speech Recognition models use prompting? [D]",
+        "summary": "开发者讨论把对话历史和类别约束当作提示词送入ASR模型，以提升车牌、人名等长尾识别效果，指出现有语音识别产品在可控性上仍明显落后于文本模型。",
+        "rating": "B",
+        "score": 73,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "如果ASR开始支持类似LLM的上下文提示，语音助手和实时客服的准确率与定制化能力都可能被重估。",
+        "entities": [
+          "Asr",
+          "Deepgram",
+          "Voice Agents"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sv09ws/why_dont_automatic_speech_recognition_models_use/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777090014,
+        "published_at": "2026-04-25T12:06:54.206269",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sv09ws/why_dont_automatic_speech_recognition_models_use/",
+        "event_id": null
+      },
+      {
+        "id": "4231bb4ac999c916ed63d68bdd33d28b",
+        "title": "开源九任务基准测试检验检索增强编程智能体",
+        "chinese_title": "开源九任务基准测试检验检索增强编程智能体",
+        "original_title": "Open-source 9-task benchmark for coding-agent retrieval augmentation. Per-task deltas +0.010 to +0.320, all evals reproducible [P]",
+        "summary": "开源基准paper-lantern-challenges比较编程智能体是否调用检索工具，在九类日常开发任务上带来0.01到0.32不等的提升，并公开了提示词、代码路径和预测文件。",
+        "rating": "S",
+        "score": 93,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这类可复现实验若被更多团队采用，可能推动编程智能体从比拼模型参数转向比拼外部工具链和任务编排能力。",
+        "entities": [
+          "Claude",
+          "Gemini",
+          "Paper Lantern",
+          "Paper-Lantern-Challenges"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1suzqxe/opensource_9task_benchmark_for_codingagent/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777090014,
+        "published_at": "2026-04-25T12:06:54.206367",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1suzqxe/opensource_9task_benchmark_for_codingagent/",
+        "event_id": null
+      },
+      {
+        "id": "acc520ae08449587fbb2790b2310f2f4",
+        "title": "DharmaOCR开源3B文档识别模型硬刚大模型",
+        "chinese_title": "DharmaOCR开源3B文档识别模型硬刚大模型",
+        "original_title": "DharmaOCR: Open-Source Specialized SLM (3B) + Cost–Performance Benchmark against LLMs and other open-sourced models [R]",
+        "summary": "DharmaOCR公开3B和7B文档识别模型、数据集和论文，称在成本更低的前提下与GPT-5.4、Gemini 3.1 Pro、Claude Opus 4.6等方案做了系统对比。",
+        "rating": "A+",
+        "score": 91,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果小模型在OCR等垂直任务持续跑赢通用大模型，企业文档AI采购可能更快转向专业模型和混合部署方案。",
+        "entities": [
+          "Claude",
+          "Dharmaocr",
+          "GPT",
+          "Gemini",
+          "Hugging Face"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning (deepseek)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sun6wt/dharmaocr_opensource_specialized_slm_3b/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777090014,
+        "published_at": "2026-04-25T12:06:54.206461",
+        "source": "Machine Learning (deepseek)",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sun6wt/dharmaocr_opensource_specialized_slm_3b/",
+        "event_id": null
+      },
+      {
+        "id": "ac1ad512104f9ef8b6b152127017981d",
+        "title": "14位作者联名称深度学习正在形成统一科学理论",
+        "chinese_title": "14位作者联名称深度学习正在形成统一科学理论",
+        "original_title": "There Will Be a Scientific Theory of Deep Learning [R]",
+        "summary": "一篇14位作者参与的观点论文试图整合可解玩具问题、经验规律和超参数理论等五条证据链，论证深度学习研究正从经验工程逐步走向更系统的科学理论。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这类理论整合如果形成共识，后续可能影响模型解释、训练范式与学界评估标准，给基础研究带来新的叙事主线。",
+        "entities": [
+          "Arxiv",
+          "Deep Learning"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sun588/there_will_be_a_scientific_theory_of_deep/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777090014,
+        "published_at": "2026-04-25T12:06:54.206552",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sun588/there_will_be_a_scientific_theory_of_deep/",
+        "event_id": null
+      },
+      {
+        "id": "49a77959bc0128247f9c64e5fde358de",
+        "title": "Anthropic让Claude替员工在线砍价卖闲置",
+        "chinese_title": "Anthropic让Claude替员工在线砍价卖闲置",
+        "original_title": "Anthropic details Project Deal, a marketplace experiment where Claude models bought, sold, and negotiated personal belongings on behalf of Anthropic employees (Anthropic)",
+        "summary": "Anthropic披露Project Deal实验，让Claude模型代表员工在二手交易场景中完成报价、谈判和买卖，继续测试AI代理介入真实商业交换的边界。",
+        "rating": "S",
+        "score": 92,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "如果代理型交易实验持续推进，后续可能延伸到电商客服、自动议价、平台规则和责任归属等更大商业问题。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Project Deal"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260424/p48#a260424p48"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777090014,
+        "published_at": "2026-04-25T12:06:54.207003",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260424/p48#a260424p48",
+        "event_id": null
+      },
+      {
         "id": "77f38344a9bba11698e7612543ce541e",
         "title": "Instacart联合创始人押注AI代理全权操盘对冲基金",
         "chinese_title": "Instacart联合创始人押注AI代理全权操盘对冲基金",
@@ -1752,6 +1928,91 @@
       }
     ],
     "2026-04-24": [
+      {
+        "id": "f2c5d7a0f15a22c54578545023165da4",
+        "title": "研究品味为何比技术本身更决定机器学习产出",
+        "chinese_title": "研究品味为何比技术本身更决定机器学习产出",
+        "original_title": "Research taste is a skill nobody talks about. How do you develop it without collaborators? [D]",
+        "summary": "一则高热讨论把机器学习研究的关键归结为问题选择、降维求解和及时缩小范围，直指很多研究成果输在过度设计而非技术能力不足。",
+        "rating": "B",
+        "score": 69,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这类讨论容易继续发酵到科研训练、导师机制和AI时代研究方法论，适合作为行业观察类延展选题。",
+        "entities": [
+          "Machine Learning",
+          "Research Taste"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1suguuz/research_taste_is_a_skill_nobody_talks_about_how/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777090014,
+        "published_at": "2026-04-25T12:06:54.206643",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1suguuz/research_taste_is_a_skill_nobody_talks_about_how/",
+        "event_id": null
+      },
+      {
+        "id": "56c909e4776f600d9cc833ede0cdfdcc",
+        "title": "新方法只用一成数据就想压低大模型幻觉",
+        "chinese_title": "新方法只用一成数据就想压低大模型幻觉",
+        "original_title": "Mitigating hallucination [P]",
+        "summary": "一项对抗式后训练方法让冻结底座模型先生成错误分支，再只在关键分歧点更新参数，作者称仅用约10%的样本就能在分布外场景中稳定提升事实性。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果这种轻量后训练路线被验证有效，模型对齐可能出现比DPO更省数据、更适合中小团队的新方案。",
+        "entities": [
+          "Contrastive Sampling",
+          "Dpo",
+          "LLM",
+          "Sft"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sug8uc/mitigating_hallucination_p/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777090014,
+        "published_at": "2026-04-25T12:06:54.206733",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sug8uc/mitigating_hallucination_p/",
+        "event_id": null
+      },
+      {
+        "id": "0c46f167421e41c2362d2881c20c0ae7",
+        "title": "DeepSeek放出V4更新入口但公开信息仍然有限",
+        "chinese_title": "DeepSeek放出V4更新入口但公开信息仍然有限",
+        "original_title": "DeepSeek v4",
+        "summary": "DeepSeek文档站放出与V4相关的新闻入口，但当前公开内容极少，更多像一次更新信号而非完整发布说明，市场仍在等待更具体的能力细节。",
+        "rating": "B",
+        "score": 71,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "如果后续补齐模型能力、价格和API细节，相关报道会迅速转向与头部闭源模型的性能差距和开发者迁移意愿。",
+        "entities": [
+          "DeepSeek"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (deepseek)",
+            "url": "https://api-docs.deepseek.com/news/news260424"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777090014,
+        "published_at": "2026-04-25T12:06:54.207092",
+        "source": "Hacker News (deepseek)",
+        "url": "https://api-docs.deepseek.com/news/news260424",
+        "event_id": null
+      },
       {
         "id": "9c2a344c6a5271d3a226efdff6ac9dca",
         "title": "GPT-5.5用GPT Image 2生成的图片做参考建站，效果惊艳反驳质疑声",
@@ -22312,319 +22573,9 @@
         "source": "x",
         "url": "https://x.com/tianxie233/status/2045352646576640303",
         "event_id": null
-      },
-      {
-        "id": "4993ec38c3baeb2aee0c2a63c35cc7d0",
-        "title": "Muse Spark 登顶 ClawEval 第三，超越 GPT-5.4 和 Gemini 3.1 Pro",
-        "original_title": "Muse Spark is #3 on ClawEval, ahead of GPT-5.4 and Gemini 3.1 Pro. It is honestly a surprisingly agentic model. https://github.com/claw-eval/claw-eval",
-        "summary": "Muse Spark 在 ClawEval 基准测试中排名第三，展现出出人意料的 agentic 能力，超越了两款顶级闭源模型。",
-        "rating": "A",
-        "score": 85,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "开源模型崛起可能重塑 AI 模型竞争格局，影响闭源厂商定价策略和开发者选型趋势。",
-        "entities": [
-          "Claweval",
-          "GPT",
-          "Gemini",
-          "Muse Spark"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/alexandr_wang/status/2045348588734066794"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776484922,
-        "published_at": "2026-04-18T12:02:02.388903",
-        "source": "x",
-        "url": "https://x.com/alexandr_wang/status/2045348588734066794",
-        "event_id": null
-      },
-      {
-        "id": "58d28fe6e965ff8ba8afee6e2f37d102",
-        "title": "Anthropic 因近期频繁宕机暂缓 Mythos 大范围发布",
-        "original_title": "Sources suggest Anthropic's holding back from a wider Mythos release until it can reliably serve it to customers; Anthropic has suffered outages in recent weeks (Financial Times)",
-        "summary": "据金融时报消息，Anthropic 近期遭遇多次服务中断，因此推迟了更强模型 Mythos 的广泛发布，CEO Dario Amodei 还就国家安全议题与白宫官员会面。",
-        "rating": "A+",
-        "score": 87,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "基础设施稳定性成为大模型商业化的关键瓶颈，可能影响企业客户采购决策。",
-        "entities": [
-          "Anthropic",
-          "Dario Amodei",
-          "Mythos"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260417/p39#a260417p39"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776484922,
-        "published_at": "2026-04-18T12:02:02.388988",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260417/p39#a260417p39",
-        "event_id": null
-      },
-      {
-        "id": "cb9db3dd4d90ff6cceff1e21610404f2",
-        "title": "Qwen 3.6 本地运行生成效果击败 Claude Opus 4.7",
-        "original_title": "Qwen3.6-35B-A3B on my laptop drew me a better pelican than Claude Opus 4.7",
-        "summary": "开发者 Simon Willison 实测发现，在笔记本本地运行的 Qwen 3.6-35B-A3B 在 SVG 图像生成任务上表现优于 Anthropic 最新旗舰 Claude Opus 4.7。",
-        "rating": "A+",
-        "score": 87,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "开源量化模型在特定任务上超越闭源旗舰，可能加速端侧 AI 部署和开发者转向开源方案。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Qwen"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Simon Willison’s Newsletter (qwen)",
-            "url": "https://simonw.substack.com/p/qwen36-35b-a3b-on-my-laptop-drew"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776484922,
-        "published_at": "2026-04-18T12:02:02.388999",
-        "source": "Simon Willison’s Newsletter (qwen)",
-        "url": "https://simonw.substack.com/p/qwen36-35b-a3b-on-my-laptop-drew",
-        "event_id": null
-      },
-      {
-        "id": "de7b0d39896338df76be99cb4ea2b602",
-        "title": "DeepMind 被指是唯一仍在认真推动 AI 科学研究的顶级实验室",
-        "original_title": "It would seem that DeepMind is the only top AI lab left that's serious about pushing AI for science now.",
-        "summary": "有观点认为，在当前 AI 竞赛格局下，DeepMind 是唯一还在坚持将 AI 能力投入科学研究方向的顶级实验室。",
-        "rating": "B",
-        "score": 68,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "若属实，其他实验室转向商业应用可能加速 AI 产业化，但基础科学突破可能放缓。",
-        "entities": [
-          "DeepMind"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/tunguz/status/2045272092925370760"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776484922,
-        "published_at": "2026-04-18T12:02:02.388927",
-        "source": "x",
-        "url": "https://x.com/tunguz/status/2045272092925370760",
-        "event_id": null
-      },
-      {
-        "id": "e09dbea9f45ecb0d5e6233ce0b2dcac8",
-        "title": "Sora 核心负责人 Bill Peebles 宣布离开 OpenAI",
-        "original_title": "No @OpenAI work has made me smile more than Sora. Thank you, @billpeeb. Your mark on video will never fade.",
-        "summary": "OpenAI 视频生成产品 Sora 的核心负责人 Bill Peebles 宣布离职，他在 OpenAI 内部信中称从零到一打造 Sora 是一生的荣誉。",
-        "rating": "A+",
-        "score": 89,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "核心人才流失可能影响 OpenAI 视频生成路线图的推进节奏，竞争对手或有机会挖角。",
-        "entities": [
-          "Bill Peebles",
-          "OpenAI",
-          "Sora"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/shaunralston/status/2045230751961260374"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776484922,
-        "published_at": "2026-04-18T12:02:02.388943",
-        "source": "x",
-        "url": "https://x.com/shaunralston/status/2045230751961260374",
-        "event_id": null
-      },
-      {
-        "id": "38675b692e45079601f6a8f331783f52",
-        "title": "开发者仅用 Claude Design 博客和推文就自动生成 30 秒视频",
-        "original_title": "Made this 30 second video of Claude Design just by pasting in the Claude Design blog post and some tweets from @AnthropicAI employees Kinda speechless...",
-        "summary": "一位开发者展示了将 Claude Design 博客文章和 Anthropic 员工推文直接粘贴即可生成 30 秒视频的能力，效果令人惊讶。",
-        "rating": "A",
-        "score": 83,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI 视频生成门槛进一步降低，可能冲击传统短视频制作和内容营销行业。",
-        "entities": [
-          "Anthropic",
-          "Claude Design"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/petergyang/status/2045181813484884396"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776484922,
-        "published_at": "2026-04-18T12:02:02.388955",
-        "source": "x",
-        "url": "https://x.com/petergyang/status/2045181813484884396",
-        "event_id": null
-      },
-      {
-        "id": "ef6886519509f074a0a0be0f3a6b120c",
-        "title": "Anthropic 开放 Claude 蓝牙 API，深圳 M5Stack 成首批硬件示例",
-        "original_title": "Claude Code&Work 放出了一个蓝牙 api，开放外部硬件监听内部运行状态和事件。开发者可以就此开发一些连接 Claude 的桌面机器人。 有意思的是 Github 仓库的硬件...",
-        "summary": "Claude Code&Work 发布蓝牙 API，允许外部硬件监听 Claude 运行状态，开发者可据此开发桌面机器人，首批硬件示例来自深圳 M5Stack。",
-        "rating": "A",
-        "score": 84,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI 与硬件生态融合加速，中国供应链在 AI 硬件配件领域具备先发优势。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "M5Stack"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/fm100/status/2045127919882977441"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776484922,
-        "published_at": "2026-04-18T12:02:02.388976",
-        "source": "x",
-        "url": "https://x.com/fm100/status/2045127919882977441",
-        "event_id": null
-      },
-      {
-        "id": "18e9a81c3bb35be82fb65c3c6fb5c3c2",
-        "title": "Anthropic CEO走进白宫谈判，Mythos引发AI安全风险新博弈",
-        "original_title": "Dario Amodei just walked into the West Wing to meet with White House chief of staff Susie Wiles. Peace talks are officially on. For context - the Pent...",
-        "summary": "Anthropic CEO Dario Amodei 与白宫幕僚长 Susie Wiles 会面，此前五角大楼以国家安全为由将Anthropic列入黑名单，因其拒绝将Claude用于自主武器和大规模监控。",
-        "rating": "S",
-        "score": 96,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "此事可能推动美国AI监管政策的重新调整，影响OpenAI、Google等竞品的政府合作策略，进而影响全球AI安全治理格局。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Dario Amodei",
-          "Mythos",
-          "Susie Wiles"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/chatgpt21/status/2045309992601878833"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776481328,
-        "published_at": "2026-04-18T11:02:08.793780",
-        "source": "x",
-        "url": "https://x.com/chatgpt21/status/2045309992601878833",
-        "event_id": null
-      },
-      {
-        "id": "6b4758ea6eb2942ddcb1640d597fb1c6",
-        "title": "五成顶尖AI研究者母语为中文，语言壁垒正在重塑科研版图",
-        "original_title": "if you’re into robotics or AI, picking up Chinese is a good move. Native speakers make up ~50% of top researchers - I’ve lost count of how many time...",
-        "summary": "一位科技从业者指出机器人与AI领域顶尖研究者中约半数母语为中文，能听懂中文对话有助于加入大量仅限中文的学术讨论。",
-        "rating": "B",
-        "score": 68,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "这一现象可能促进中文AI社区的全球化渗透，同时引发英语学术界对研究话语权再分配的讨论，也可能加速中国AI人才的回流与输出。",
-        "entities": [
-          "Ai",
-          "Robotics"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/philfung/status/2045276713060536378"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776481328,
-        "published_at": "2026-04-18T11:02:08.793801",
-        "source": "x",
-        "url": "https://x.com/philfung/status/2045276713060536378",
-        "event_id": null
-      },
-      {
-        "id": "705fcc364ba5aab50aff17e8ddd281f4",
-        "title": "OpenAI高层再震动：科学负责人与Sora负责人双双离职",
-        "original_title": "“Sir… Kevin Weil, the head of science and Bill Peebles, the head of sora… BOTH just quit OpenAI tonight… The trial starts in 11 days…”",
-        "summary": "OpenAI科学负责人 Kevin Weil 和 Sora 负责人 Bill Peebles 在同一天离职，距马斯克与OpenAI诉讼开庭仅剩11天。",
-        "rating": "A+",
-        "score": 89,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "双重离职叠加诉讼压力可能引发投资者对公司治理稳定性的担忧，竞品如Anthropic、Google DeepMind或趁机挖角核心人才，影响GPT-4后续研发进度。",
-        "entities": [
-          "Bill Peebles",
-          "Elon Musk",
-          "Kevin Weil",
-          "OpenAI",
-          "Sora"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/ns123abc/status/2045246285326733607"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776481328,
-        "published_at": "2026-04-18T11:02:08.793816",
-        "source": "x",
-        "url": "https://x.com/ns123abc/status/2045246285326733607",
-        "event_id": null
-      },
-      {
-        "id": "d8d4874cf300710a112682187deb9820",
-        "title": "LingBot-Map发布：仅凭单摄像头实现实时3D重建",
-        "original_title": "all from a single rgb camera no lidar, runs in real time and is open source we’re living in the future",
-        "summary": "Yinghao Xu 团队发布 LingBot-Map 纯自回归3D基础模型，仅通过单摄像头即可实现每秒20帧的实时3D重建，摆脱对激光雷达的依赖并开源。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该技术若被自动驾驶和机器人厂商落地，将显著降低3D感知硬件成本，可能冲击Lidar产业链，并推动消费级AR/VR设备的空间计算能力。",
-        "entities": [
-          "Da3",
-          "Lingbot-Map",
-          "Vggt",
-          "Yinghao Xu"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/AIDRIVR/status/2045235103413235917"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776481328,
-        "published_at": "2026-04-18T11:02:08.793827",
-        "source": "x",
-        "url": "https://x.com/AIDRIVR/status/2045235103413235917",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-25T10:05:01.410900",
-  "total_news": 786
+  "last_updated": "2026-04-25T12:08:27.153624",
+  "total_news": 784
 }
