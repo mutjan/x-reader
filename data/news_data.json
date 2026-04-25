@@ -2,11 +2,41 @@
   "news": {
     "2026-04-26": [
       {
+        "id": "2567aa6a7cfb1215149f110832553eb0",
+        "title": "特朗普撤换美国国家科学基金会24名监督委员",
+        "chinese_title": "特朗普撤换美国国家科学基金会24名监督委员",
+        "original_title": "Trump fires all 24 members of the U.S. National Science Foundation",
+        "summary": "美国国家科学基金会监督委员会24名成员被一并撤换，这一人事动作被视为联邦科研治理进一步政治化，后续可能冲击科研拨款评估、学界独立性和美国基础研究生态。",
+        "rating": "B",
+        "score": 68,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这不仅是一次人事调整，还可能连带影响科研资助规则、大学与联邦政府关系，以及美国科研机构的国际信誉与人才流动。",
+        "entities": [
+          "Donald Trump",
+          "National Science Foundation",
+          "Science Policy",
+          "United States"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.science.org/content/article/trump-fires-nsf-s-oversight-board"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777158754,
+        "published_at": "2026-04-26T07:12:34.981735",
+        "source": "Hacker News",
+        "url": "https://www.science.org/content/article/trump-fires-nsf-s-oversight-board",
+        "event_id": null
+      },
+      {
         "id": "da91c123a759e6f4384bb1bd1028bbda",
-        "title": "Anthropic搭建代理人交易市场，AI开始自己做买卖",
-        "chinese_title": "Anthropic搭建代理人交易市场，AI开始自己做买卖",
+        "title": "Anthropic搭出代理人交易市场，AI开始自己谈买卖",
+        "chinese_title": "Anthropic搭出代理人交易市场，AI开始自己谈买卖",
         "original_title": "Anthropic created a test marketplace for agent-on-agent commerce",
-        "summary": "Anthropic用真实商品和真实资金搭了一个分类信息市场，让买卖双方都由AI代理完成交易，这让代理协作从任务执行迈向经济行为，也把可信度、博弈和平台治理推到台前。",
+        "summary": "Anthropic在实验中搭建了一个由AI代理同时扮演买家和卖家的分类信息市场，让代理人围绕真实商品和真实资金自行议价成交，展示了代理经济活动的雏形。",
         "rating": "S",
         "score": 97,
         "type": "research",
@@ -29,7 +59,10 @@
         "published_at": "2026-04-26T06:03:27.386900",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "In a recent experiment, Anthropic created a classified marketplace where AI agents represented both buyers and sellers, striking real deals for real goods and real money.",
+        "grade": "S",
+        "extension": "如果代理人之间的交易机制继续成熟，后续可能外溢到企业采购、广告竞价与平台撮合，也会把身份验证、欺诈防控和责任归属推到更前台。"
       },
       {
         "id": "1dd613991facbc36f74c751228bb9ece",
@@ -22568,91 +22601,9 @@
         "source": "Hacker News (apple)",
         "url": "https://abacusnoir.com/2026/04/18/zero-copy-gpu-inference-from-webassembly-on-apple-silicon/",
         "event_id": null
-      },
-      {
-        "id": "64d6e075e8ff9d24f065a6826ccfc5c1",
-        "title": "Anthropic被投资者估值8000亿美元，但暂无融资计划",
-        "original_title": "Anthropic Has Received Investor Interest at $800 Billion Valuation",
-        "summary": "AI初创公司Anthropic收到投资者以8000亿美元估值入股的意向，但公司CFO Krishna Rao表示目前无融资计划。",
-        "rating": "A",
-        "score": 86,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "高估值反映AI赛道资本热度持续，可能引发对OpenAI等竞品估值的重新评估，以及A股AI概念板块联动。",
-        "entities": [
-          "Anthropic",
-          "Krishna Rao",
-          "The Information"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/anthropic-received-investor-interest-800-billion-valuation"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776553289,
-        "published_at": "2026-04-19T07:01:29.786413",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/anthropic-received-investor-interest-800-billion-valuation",
-        "event_id": null
-      },
-      {
-        "id": "7764151f9edbe7bbe5dfd591577cbefc",
-        "title": "easyaligner开源：GPU加速语音强制对齐工具，支持全HF模型",
-        "original_title": "easyaligner: Forced alignment with GPU acceleration and flexible text normalization (compatible with all w2v2 models on HF Hub) [P]",
-        "summary": "开发者推出easyaligner库，基于PyTorch GPU实现Viterbi算法，支持所有Hugging Face wav2vec2模型，可处理任意语言语音文本对齐。",
-        "rating": "B",
-        "score": 68,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "语音处理工具链完善可能降低ASR训练门槛，利好语音AI创业公司和相关开源生态。",
-        "entities": [
-          "Easyaligner",
-          "Hugging Face",
-          "Pytorch"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1soyqfw/easyaligner_forced_alignment_with_gpu/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776553289,
-        "published_at": "2026-04-19T07:01:29.786434",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1soyqfw/easyaligner_forced_alignment_with_gpu/",
-        "event_id": null
-      },
-      {
-        "id": "bc95ba75bb5b534c1caeb20d7cca899a",
-        "title": "Remoroo：专为长时运行编码Agent设计的记忆修复工具",
-        "original_title": "Show HN: Remoroo. trying to fix memory in long-running coding agents",
-        "summary": "Remoroo是一款解决长时运行编码Agent记忆问题的工具，通过优化上下文管理提升Agent在长时间任务中的稳定性。",
-        "rating": "B",
-        "score": 66,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "Agent记忆管理是AI工程化关键痛点，该方向可能催生新的开发者工具赛道和最佳实践。",
-        "entities": [
-          "Remoroo"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.remoroo.com/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776553289,
-        "published_at": "2026-04-19T07:01:29.786447",
-        "source": "Hacker News",
-        "url": "https://www.remoroo.com/",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-26T06:03:48.090079",
-  "total_news": 781
+  "last_updated": "2026-04-26T07:12:48.833874",
+  "total_news": 779
 }
