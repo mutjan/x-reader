@@ -9436,6 +9436,68 @@
     ],
     "2026-04-23": [
       {
+        "id": "a1f4c6d0f4af5f76eccaddb0ffebb1b7",
+        "title": "GPUlog把Datalog搬上GPU，静态分析提速最高45倍",
+        "chinese_title": "GPUlog把Datalog搬上GPU，静态分析提速最高45倍",
+        "original_title": "Optimizing Datalog for the GPU",
+        "summary": "一篇ASPLOS 2025论文提出GPUlog与HISA数据结构，把Datalog递归推理搬到数据中心GPU上，在上下文敏感指针分析等任务中相对Souffle实现最高45倍加速，同时保持较好的内存占用。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果这类递归查询引擎开始适配GPU，程序分析、网络监控和图计算等依赖Datalog的基础设施可能会重估算力架构，带动新一轮数据库与编译器系统的加速器改造。",
+        "entities": [
+          "Datalog",
+          "Gpu",
+          "Gpulog",
+          "Hisa",
+          "Souffle"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://dl.acm.org/doi/10.1145/3669940.3707274"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777168944,
+        "published_at": "2026-04-26T10:02:24.149014",
+        "source": "Hacker News",
+        "url": "https://dl.acm.org/doi/10.1145/3669940.3707274",
+        "event_id": null
+      },
+      {
+        "id": "756db9243c71ac393fc95b55e78cbc5a",
+        "title": "OpenAI开源隐私过滤模型，本地脱敏一次跑12.8万token",
+        "chinese_title": "OpenAI开源隐私过滤模型，本地脱敏一次跑12.8万token",
+        "original_title": "OpenAI Privacy Filter",
+        "summary": "OpenAI发布开源权重模型Privacy Filter，用于识别并遮蔽文本中的PII，可本地运行、单次处理最长12.8万token，并宣称在PII-Masking-300k评测上达到当前领先水平，瞄准训练、日志和检索流程的隐私防护。",
+        "rating": "A+",
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这类可本地部署的隐私过滤模型若被广泛采用，企业在训练前清洗、日志审计和检索增强等环节的默认架构可能会改写，也会推动隐私基础设施从规则引擎转向专用小模型。",
+        "entities": [
+          "Hugging Face",
+          "OpenAI",
+          "Pii",
+          "Pii-Masking-300K",
+          "Privacy Filter"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://openai.com/index/introducing-openai-privacy-filter/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777168944,
+        "published_at": "2026-04-26T10:02:24.149177",
+        "source": "Hacker News",
+        "url": "https://openai.com/index/introducing-openai-privacy-filter/",
+        "event_id": null
+      },
+      {
         "id": "cc6beb5bd0cd63591bfed440b211f7e0",
         "title": "Lyft收购伦敦打车应用Gett继续出海扩张",
         "original_title": "Lyft agrees to buy London black cab app Gett, its third acquisition in the past year, as the company expands its presence beyond the US (Natalie Lung/Bloomberg)",
@@ -22671,6 +22733,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-26T09:03:54.410153",
-  "total_news": 781
+  "last_updated": "2026-04-26T10:02:44.314265",
+  "total_news": 783
 }
