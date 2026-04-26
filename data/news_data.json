@@ -2,21 +2,83 @@
   "news": {
     "2026-04-26": [
       {
+        "id": "c813f7b68ff302cb9962d9c7262aada2",
+        "title": "黄仁勋安保开支两年飙到350万美元",
+        "chinese_title": "黄仁勋安保开支两年飙到350万美元",
+        "original_title": "33% of S&P 500 companies provided security perks for execs in 2025: Jensen Huang's security cost rose from $690K in 2023 to $3.5M in 2025, Zuckerberg spent $22M (Eli Rosenberg/The Information)",
+        "summary": "标普500里已有三分之一公司为高管提供安保福利，英伟达CEO黄仁勋的个人安保支出从2023年的69万美元升到2025年的350万美元，Meta创始人扎克伯格则花了2200万美元，折射出科技巨头高层所处的舆论与安全压力正在全面升级。",
+        "rating": "A",
+        "score": 84,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "科技公司高管安保费用激增，可能带出AI时代企业家曝光度与人身风险同步上升的新议题，也会倒逼董事会重新评估高管保障、信息披露和公司治理成本。",
+        "entities": [
+          "Jensen Huang",
+          "Mark Zuckerberg",
+          "Meta",
+          "NVIDIA",
+          "S&P 500"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260425/p15#a260425p15"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777165414,
+        "published_at": "2026-04-26T09:03:34.224151",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260425/p15#a260425p15",
+        "event_id": null
+      },
+      {
+        "id": "2d715d1473f1becf0987e542705b52dc",
+        "title": "别把AI代理当同事，最好直接嵌进软件",
+        "chinese_title": "别把AI代理当同事，最好直接嵌进软件",
+        "original_title": "Agents Aren't Coworkers, Embed Them in Your Software",
+        "summary": "Feldera提出，AI代理更适合作为软件系统里的能力模块而非类人协作者，关键不在模拟同事关系，而在把推理、执行和反馈闭环直接嵌入现有产品流程，让系统整体效率和可靠性真正提高。",
+        "rating": "B",
+        "score": 69,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "如果这种\"代理嵌入式\"思路被更多团队接受，AI应用形态可能从独立聊天入口转向深度集成式产品，进一步影响企业软件架构、开发范式和采购决策。",
+        "entities": [
+          "Ai Agents",
+          "Feldera",
+          "Software",
+          "Workflow"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.feldera.com/blog/ai-agents-arent-coworkers-embed-them-in-your-software"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777165414,
+        "published_at": "2026-04-26T09:03:34.224378",
+        "source": "Hacker News",
+        "url": "https://www.feldera.com/blog/ai-agents-arent-coworkers-embed-them-in-your-software",
+        "event_id": null
+      },
+      {
         "id": "673569cf1a75dc02ec70a2847e194624",
-        "title": "开发者实测GPT 5.5，称其已压过Opus和Gemini一头",
-        "chinese_title": "开发者实测GPT 5.5，称其已压过Opus和Gemini一头",
+        "title": "开发者对比GPT 5.5，称其暂时压过Opus和Gemini",
+        "chinese_title": "开发者对比GPT 5.5，称其暂时压过Opus和Gemini",
         "original_title": "GPT 5.5 vs Opus 4.6/7 vs Gemini 3.1 Pro",
-        "summary": "一位长期比较前沿模型的开发者称，GPT 5.5相较OpenAI此前几个版本出现了明显跃升，在综合使用体验上暂时压过Opus 4.6和Gemini 3.1，再次点燃外界对模型能力加速迭代的讨论。",
+        "summary": "有开发者在社区实测后表示，GPT 5.5相比此前5到5.4代进步明显，在综合体验上暂时胜过Opus 4.6和Gemini 3.1 Pro，反映出前沿大模型竞争仍在快速拉开新差距。",
         "rating": "A+",
-        "score": 88,
-        "type": "opinion",
+        "score": 97,
+        "type": "product",
         "typeName": "观点访谈",
         "expansion": "如果类似体验反馈持续扩散，可能带动新一轮模型口碑迁移与开发者工具链切换，也会把安全限制与商业化取舍重新推到竞争焦点。",
         "entities": [
-          "Claude",
+          "Anthropic",
           "GPT",
           "Gemini",
-          "OpenAI"
+          "OpenAI",
+          "Opus"
         ],
         "sourceLinks": [
           {
@@ -29,7 +91,10 @@
         "published_at": "2026-04-26T08:03:33.905623",
         "source": "Technological Singularity (Gemini)",
         "url": "https://www.reddit.com/r/singularity/comments/1svplbs/gpt_55_vs_opus_467_vs_gemini_31_pro/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "The last time I was impressed by a model was the jump from 4o to GPT 5 (and comparatively o1/o3). The 5-5.4 lineup from OpenAI didn't impress me, but 5.5 feels like a substantial leap again. I'm also using Opus 4.6 (not 4.7 because the safety trigger is too strict), and Gemini 3.1, and while the other frontier models may be better at specific tasks, currently I find GPT 5.5 the most impressive of all of them. Makes me wonder if this is just a short period of the golden age of AI boom, before the frontier is nerfed for profit. submitted by /u/dionysus_project [link] [comments]",
+        "grade": "S",
+        "extension": "这类一线用户横评会持续影响开发者迁移、API预算分配和企业选型，也可能倒逼Anthropic与Google更快调整模型能力、定价与安全策略。"
       },
       {
         "id": "2567aa6a7cfb1215149f110832553eb0",
@@ -22603,39 +22668,9 @@
         "source": "Tom's Hardware",
         "url": "https://www.tomshardware.com/laptops/gaming-laptops/nvidia-rtx-5070-ti-gaming-laptop-is-on-sale-for-19-percent-off-msis-vector-16-has-a-144-hz-screen-and-comes-with-pragmata-for-free",
         "event_id": null
-      },
-      {
-        "id": "0fb23015b5d82e4e3483bddbeff3e28a",
-        "title": "Apple Silicon 上实现 WebAssembly 与 GPU 零拷贝推理：Wasm 线性内存直通 GPU",
-        "original_title": "Zero-Copy GPU Inference from WebAssembly on Apple Silicon",
-        "summary": "开发者 Agam Brahma 在 Apple Silicon 上验证了 WebAssembly 模块的线性内存可直接共享给 GPU，无需拷贝或序列化。通过 mmap 分配页对齐内存，经 Metal makeBuffer(bytesNoCopy:) 包装为 GPU 缓冲区，再由 Wasmtime MemoryCreator 将该内存作为 Wasm 线性内存，实现 CPU 与 GPU 读写同一物理内存。实测 128x128 矩阵乘法零误差，16MB 区域 RSS 增量仅 0.03MB（拷贝路径为 16.78MB）。基于此构建的 Driftwood 运行时已能驱动 Llama 3.2 1B 推理，并支持 KV Cache 序列化与跨机器恢复。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该技术为边缘端 AI 推理的 sandbox 安全与性能兼得提供了新范式，可能推动浏览器/边缘运行时原生支持 GPU 零拷贝路径；KV Cache 可移植性对长上下文对话的断点续传和多端同步有直接影响。",
-        "entities": [
-          "Apple",
-          "Driftwood",
-          "Metal",
-          "Mlx",
-          "Webassembly"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News (apple)",
-            "url": "https://abacusnoir.com/2026/04/18/zero-copy-gpu-inference-from-webassembly-on-apple-silicon/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776560485,
-        "published_at": "2026-04-19T09:01:25.443178",
-        "source": "Hacker News (apple)",
-        "url": "https://abacusnoir.com/2026/04/18/zero-copy-gpu-inference-from-webassembly-on-apple-silicon/",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-26T08:04:05.459541",
-  "total_news": 780
+  "last_updated": "2026-04-26T09:03:54.410153",
+  "total_news": 781
 }
