@@ -2,6 +2,99 @@
   "news": {
     "2026-04-26": [
       {
+        "id": "e73b75dff4a1fa007e5b3ead7ffdd6ed",
+        "title": "23岁业余爱好者借ChatGPT解开60年数学难题",
+        "chinese_title": "23岁业余爱好者借ChatGPT解开60年数学难题",
+        "original_title": "Amateur armed with ChatGPT solves an Erdős problem",
+        "summary": "23岁的Liam Price借助ChatGPT Pro为一道60年前的Erdos问题找到新证明思路，Terence Tao等数学家确认这条路径不同于以往人类做法，并认为它可能启发更多关于大数结构的研究。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果大模型能持续给出人类未曾尝试的证明路径，数学研究的工作流可能从纯验证工具转向假设生成与方法探索。后续还可以追踪这套思路是否会迁移到其他组合数学和数论问题。",
+        "entities": [
+          "GPT",
+          "Liam Price",
+          "Paul Erdos",
+          "Primitive Sets",
+          "Terence Tao"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777172580,
+        "published_at": "2026-04-26T11:03:00.696256",
+        "source": "Hacker News",
+        "url": "https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/",
+        "event_id": null
+      },
+      {
+        "id": "a1f4c6d0f4af5f76eccaddb0ffebb1b7",
+        "title": "GPUlog把Datalog搬上GPU，静态分析提速最高45倍",
+        "chinese_title": "GPUlog把Datalog搬上GPU，静态分析提速最高45倍",
+        "original_title": "Optimizing Datalog for the GPU",
+        "summary": "一篇ASPLOS 2025论文提出GPUlog与HISA数据结构，把Datalog递归推理搬到数据中心GPU上，在上下文敏感指针分析等任务中相对Souffle实现最高45倍加速，同时保持较好的内存占用。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果这类递归查询引擎开始适配GPU，程序分析、网络监控和图计算等依赖Datalog的基础设施可能会重估算力架构，带动新一轮数据库与编译器系统的加速器改造。",
+        "entities": [
+          "Datalog",
+          "Gpu",
+          "Gpulog",
+          "Hisa",
+          "Souffle"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://dl.acm.org/doi/10.1145/3669940.3707274"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777168944,
+        "published_at": "2026-04-26T10:02:24.149014",
+        "source": "Hacker News",
+        "url": "https://dl.acm.org/doi/10.1145/3669940.3707274",
+        "event_id": null
+      },
+      {
+        "id": "756db9243c71ac393fc95b55e78cbc5a",
+        "title": "OpenAI开源隐私过滤模型，本地脱敏一次跑12.8万token",
+        "chinese_title": "OpenAI开源隐私过滤模型，本地脱敏一次跑12.8万token",
+        "original_title": "OpenAI Privacy Filter",
+        "summary": "OpenAI发布开源权重模型Privacy Filter，用于识别并遮蔽文本中的PII，可本地运行、单次处理最长12.8万token，并宣称在PII-Masking-300k评测上达到当前领先水平，瞄准训练、日志和检索流程的隐私防护。",
+        "rating": "A+",
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这类可本地部署的隐私过滤模型若被广泛采用，企业在训练前清洗、日志审计和检索增强等环节的默认架构可能会改写，也会推动隐私基础设施从规则引擎转向专用小模型。",
+        "entities": [
+          "Hugging Face",
+          "OpenAI",
+          "Pii",
+          "Pii-Masking-300K",
+          "Privacy Filter"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://openai.com/index/introducing-openai-privacy-filter/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777168944,
+        "published_at": "2026-04-26T10:02:24.149177",
+        "source": "Hacker News",
+        "url": "https://openai.com/index/introducing-openai-privacy-filter/",
+        "event_id": null
+      },
+      {
         "id": "c813f7b68ff302cb9962d9c7262aada2",
         "title": "黄仁勋安保开支两年飙到350万美元",
         "chinese_title": "黄仁勋安保开支两年飙到350万美元",
@@ -9435,68 +9528,6 @@
       }
     ],
     "2026-04-23": [
-      {
-        "id": "a1f4c6d0f4af5f76eccaddb0ffebb1b7",
-        "title": "GPUlog把Datalog搬上GPU，静态分析提速最高45倍",
-        "chinese_title": "GPUlog把Datalog搬上GPU，静态分析提速最高45倍",
-        "original_title": "Optimizing Datalog for the GPU",
-        "summary": "一篇ASPLOS 2025论文提出GPUlog与HISA数据结构，把Datalog递归推理搬到数据中心GPU上，在上下文敏感指针分析等任务中相对Souffle实现最高45倍加速，同时保持较好的内存占用。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "如果这类递归查询引擎开始适配GPU，程序分析、网络监控和图计算等依赖Datalog的基础设施可能会重估算力架构，带动新一轮数据库与编译器系统的加速器改造。",
-        "entities": [
-          "Datalog",
-          "Gpu",
-          "Gpulog",
-          "Hisa",
-          "Souffle"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://dl.acm.org/doi/10.1145/3669940.3707274"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777168944,
-        "published_at": "2026-04-26T10:02:24.149014",
-        "source": "Hacker News",
-        "url": "https://dl.acm.org/doi/10.1145/3669940.3707274",
-        "event_id": null
-      },
-      {
-        "id": "756db9243c71ac393fc95b55e78cbc5a",
-        "title": "OpenAI开源隐私过滤模型，本地脱敏一次跑12.8万token",
-        "chinese_title": "OpenAI开源隐私过滤模型，本地脱敏一次跑12.8万token",
-        "original_title": "OpenAI Privacy Filter",
-        "summary": "OpenAI发布开源权重模型Privacy Filter，用于识别并遮蔽文本中的PII，可本地运行、单次处理最长12.8万token，并宣称在PII-Masking-300k评测上达到当前领先水平，瞄准训练、日志和检索流程的隐私防护。",
-        "rating": "A+",
-        "score": 91,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这类可本地部署的隐私过滤模型若被广泛采用，企业在训练前清洗、日志审计和检索增强等环节的默认架构可能会改写，也会推动隐私基础设施从规则引擎转向专用小模型。",
-        "entities": [
-          "Hugging Face",
-          "OpenAI",
-          "Pii",
-          "Pii-Masking-300K",
-          "Privacy Filter"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://openai.com/index/introducing-openai-privacy-filter/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777168944,
-        "published_at": "2026-04-26T10:02:24.149177",
-        "source": "Hacker News",
-        "url": "https://openai.com/index/introducing-openai-privacy-filter/",
-        "event_id": null
-      },
       {
         "id": "cc6beb5bd0cd63591bfed440b211f7e0",
         "title": "Lyft收购伦敦打车应用Gett继续出海扩张",
@@ -22682,57 +22713,9 @@
         "source": "inoreader",
         "url": "http://www.techmeme.com/260419/p6",
         "event_id": null
-      },
-      {
-        "id": "4fc528ccd44e0e0a31944a9ced38ab1b",
-        "title": "突破奖授予磁学测量与基因疗法进展，里程碑式跨学科成就",
-        "original_title": "Magnetic muon measurements and gene-therapy advances win US$3 million Breakthrough prizes",
-        "summary": "本年度突破奖涵盖数百名物理学家，表彰其在磁学测量与基因治疗领域的跨学科突破，推动基础科学研究边界。",
-        "rating": "A",
-        "score": 85,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该成果可能激励更多跨界合作，促进磁学与生物医学的协同发展，提升科研转化效率。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds (muon)",
-            "url": "https://www.nature.com/articles/d41586-026-01014-9"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776564542,
-        "published_at": "2026-04-19T10:09:02.437394",
-        "source": "Nature - Issue - nature.com science feeds (muon)",
-        "url": "https://www.nature.com/articles/d41586-026-01014-9",
-        "event_id": null
-      },
-      {
-        "id": "824c4676fe0c351c38f1835739caf275",
-        "title": "NVIDIA RTX 5070 Ti游戏本打折促销，搭载Pragmata免费游戏优化",
-        "original_title": "Nvidia RTX 5070 Ti gaming laptop is on sale for 19% off &mdash; MSI's Vector 16 has a 144 Hz screen, and comes with Pragmata for free",
-        "summary": "微星Vector 16游戏本搭载酷睿Ultra 7处理器与RTX 5070 Ti显卡，144Hz高刷屏及免费Pragmata软件组合提供高性能游戏体验。",
-        "rating": "A",
-        "score": 75,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可能带动游戏本销量增长，促使品牌厂商推出更多高刷新率显示设备与优化软件生态。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/laptops/gaming-laptops/nvidia-rtx-5070-ti-gaming-laptop-is-on-sale-for-19-percent-off-msis-vector-16-has-a-144-hz-screen-and-comes-with-pragmata-for-free"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776564542,
-        "published_at": "2026-04-19T10:09:02.437420",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/laptops/gaming-laptops/nvidia-rtx-5070-ti-gaming-laptop-is-on-sale-for-19-percent-off-msis-vector-16-has-a-144-hz-screen-and-comes-with-pragmata-for-free",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-26T10:02:44.314265",
-  "total_news": 783
+  "last_updated": "2026-04-26T11:03:18.419757",
+  "total_news": 782
 }
