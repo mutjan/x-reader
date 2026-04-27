@@ -2,6 +2,186 @@
   "news": {
     "2026-04-28": [
       {
+        "id": "53cfd30aecbaeb1ad3f3895c097f4184",
+        "title": "OpenAI松绑微软独家协议，AWS终于能卖它的模型了",
+        "chinese_title": "OpenAI松绑微软独家协议，AWS终于能卖它的模型了",
+        "original_title": "OpenAI ends Microsoft legal peril over its $50B Amazon deal",
+        "summary": "OpenAI从最大股东微软手里拿到关键让步，今后可在AWS等更多云平台销售产品，而微软则换来更明确的收入分成安排，AI基础设施联盟关系被进一步改写。",
+        "rating": "S",
+        "score": 95,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这会直接削弱Azure独占OpenAI能力的叙事，接下来值得追踪AWS和Google Cloud会不会围绕托管、价格和企业集成发起新一轮争夺。",
+        "entities": [
+          "Aws",
+          "Azure",
+          "Microsoft",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777313052,
+        "published_at": "2026-04-28T02:04:12.307956",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/",
+        "event_id": null
+      },
+      {
+        "id": "45d685e9248bebbd7201238b5313dd30",
+        "title": "马斯克起诉OpenAI开庭，Altman和Brockman现身陪审员遴选",
+        "chinese_title": "马斯克起诉OpenAI开庭，Altman和Brockman现身陪审员遴选",
+        "original_title": "Altman, Brockman Attend Jury Selection in Musk vs. OpenAI Trial",
+        "summary": "OpenAI CEO Sam Altman与总裁Greg Brockman现身马斯克诉OpenAI案的陪审员遴选现场，这场官司已从口水战正式进入高层必须出庭应对的阶段。",
+        "rating": "S",
+        "score": 94,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "随着庭审推进，OpenAI治理结构、早期承诺和商业化转向都可能被迫在法庭文件中进一步公开，连带影响行业对闭源大模型公司的信任判断。",
+        "entities": [
+          "Elon Musk",
+          "Greg Brockman",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/altman-brockman-attend-jury-selection-musk-vs-openai-trial"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777313052,
+        "published_at": "2026-04-28T02:04:12.308244",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/altman-brockman-attend-jury-selection-musk-vs-openai-trial",
+        "event_id": null
+      },
+      {
+        "id": "9179c6192d8135b23a1fc77faa93a015",
+        "title": "DeepMind名将David Silver创业才几个月，先拿下11亿美元",
+        "chinese_title": "DeepMind名将David Silver创业才几个月，先拿下11亿美元",
+        "original_title": "DeepMind’s David Silver just raised $1.1B to build an AI that learns without human data",
+        "summary": "前DeepMind研究员David Silver创办的Ineffable Intelligence成立仅数月，就以51亿美元估值融资11亿美元，押注无需人类数据也能自我学习的新一代AI路线。",
+        "rating": "A+",
+        "score": 88,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "这笔超大额种子轮会进一步抬高顶级研究员创业估值，也可能刺激资本重新追逐\"后训练数据瓶颈\"之外的新基础模型叙事。",
+        "entities": [
+          "Ai",
+          "David Silver",
+          "DeepMind",
+          "Ineffable Intelligence"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777313052,
+        "published_at": "2026-04-28T02:04:12.308335",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/",
+        "event_id": null
+      },
+      {
+        "id": "e38e7ccfe72163999b970edc52678f8d",
+        "title": "谷歌TPU首次一分为二，训练和推理终于不再共用一颗芯片",
+        "chinese_title": "谷歌TPU首次一分为二，训练和推理终于不再共用一颗芯片",
+        "original_title": "Inside Google's TPU V8 strategy, delivering two chips for two crucial tasks &mdash; scale up size gives chips an advantage over Nvidia AI accelerators",
+        "summary": "谷歌在Cloud Next公布第八代TPU时首次拆出两种不同芯片设计，分别面向训练和推理，意味着自研AI芯片路线开始向更细化的任务优化迈进。",
+        "rating": "A",
+        "score": 85,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "如果谷歌这套双芯片策略跑通，NVIDIA之外的AI算力竞争会更快转向分工优化而非单纯拼峰值，也会影响云厂商自研芯片路线选择。",
+        "entities": [
+          "Cloud Next",
+          "Google",
+          "NVIDIA",
+          "Tpu"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/semiconductors/google-splits-its-tpu-into-two-chips-for-the-first-time-with-training-and-inference-variants"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777313052,
+        "published_at": "2026-04-28T02:04:12.308424",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/google-splits-its-tpu-into-two-chips-for-the-first-time-with-training-and-inference-variants",
+        "event_id": null
+      },
+      {
+        "id": "c24508f99d65f048805a23b620cb6080",
+        "title": "GPT-5.6何时发布又吵起来了，用户对模型周更已经麻木",
+        "chinese_title": "GPT-5.6何时发布又吵起来了，用户对模型周更已经麻木",
+        "original_title": "When do you think GPT 5.6 comes out? How big of an improvement will it be?",
+        "summary": "Reddit讨论围绕GPT-5.6可能发布时间和升级幅度展开，折射出用户对大模型高频迭代的预期越来越强，但信息源本身主要是社区猜测而非可靠爆料。",
+        "rating": "B",
+        "score": 67,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这类舆情可作为观察用户对OpenAI产品节奏期待的温度计，但没有额外信源支撑前，更适合作为社区情绪样本而非独立新闻线索。",
+        "entities": [
+          "Api",
+          "Codex",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sx9lgn/when_do_you_think_gpt_56_comes_out_how_big_of_an/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777313052,
+        "published_at": "2026-04-28T02:04:12.308599",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sx9lgn/when_do_you_think_gpt_56_comes_out_how_big_of_an/",
+        "event_id": null
+      },
+      {
+        "id": "fe811ca956a854e2b3943619a98450de",
+        "title": "OpenAI要做AI手机的传闻又起，代理真想取代App入口？",
+        "chinese_title": "OpenAI要做AI手机的传闻又起，代理真想取代App入口？",
+        "original_title": "OpenAI could be making a phone with AI agents replacing apps",
+        "summary": "一则社区转帖再次放大OpenAI可能研发AI手机、让代理取代传统App的猜想，但当前内容几乎没有有效细节，更多体现的是市场对新终端入口的持续想象。",
+        "rating": "B",
+        "score": 72,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "如果后续有硬件供应链或招聘信息佐证，AI原生终端将成为更大题目；但在现阶段，它更像是围绕OpenAI品牌的想象性舆情。",
+        "entities": [
+          "Ai Agent",
+          "App",
+          "OpenAI",
+          "Smartphone"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sx9ki4/openai_could_be_making_a_phone_with_ai_agents/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777313052,
+        "published_at": "2026-04-28T02:04:12.308682",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sx9ki4/openai_could_be_making_a_phone_with_ai_agents/",
+        "event_id": null
+      },
+      {
         "id": "ac5f75e21a06fb0c301213a70489db1d",
         "title": "本地小模型路由翻车复盘：置信度判断比回答本身更难",
         "chinese_title": "本地小模型路由翻车复盘：置信度判断比回答本身更难",
@@ -152,6 +332,158 @@
         "published_at": "2026-04-28T01:06:44.486353",
         "source": "The Verge -  Tech Posts",
         "url": "https://www.theverge.com/ai-artificial-intelligence/918981/openai-microsoft-renegotiate-contract",
+        "event_id": null
+      },
+      {
+        "id": "7a8fb0b4c556c2a01924a73357cecc4e",
+        "title": "AI Agent上生产后怎么测，QA老兵也被非确定性整懵了",
+        "chinese_title": "AI Agent上生产后怎么测，QA老兵也被非确定性整懵了",
+        "original_title": "How do you test AI agents in production? The unpredictability is overwhelming.[D]",
+        "summary": "一线QA从业者直言传统输入输出断言在Agent系统前几乎失效，工具选择、推理链路和最终答案都存在波动，折射出企业把LLM Agent接进真实业务后测试体系仍严重缺位。",
+        "rating": "A",
+        "score": 81,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这类痛点会把评测框架、轨迹回放、LLM-as-a-judge与安全护栏工具继续推向前台，也可能倒逼企业重新定义Agent上线门槛和质保流程。",
+        "entities": [
+          "Ai Agent",
+          "LLM",
+          "Qa",
+          "Tool Calling"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sx3p40/how_do_you_test_ai_agents_in_production_the/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.485595",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sx3p40/how_do_you_test_ai_agents_in_production_the/",
+        "event_id": null
+      },
+      {
+        "id": "0633252ba661be7a353c7815a6a3d696",
+        "title": "RAG上生产后最难的不是召回，是会错意还答得像真懂",
+        "chinese_title": "RAG上生产后最难的不是召回，是会错意还答得像真懂",
+        "original_title": "Three limitations I keep hitting with retrieval-augmented generation in production and I'm running out of ideas [D]",
+        "summary": "德国法规场景的实战复盘指出，生产级RAG在多文档拼接、负知识判断和时间线比较三类问题上会系统性失真，说明单靠向量检索和提示词补丁已难支撑高风险知识工作流。",
+        "rating": "A",
+        "score": 81,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这会继续推高Graph RAG、多跳检索、时间感知检索和可验证回答链路的需求，谁能把复杂检索做成低改造成本方案，谁就更容易吃到企业落地红利。",
+        "entities": [
+          "Graph Rag",
+          "LLM",
+          "Rag",
+          "Vector Search"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1swxx1v/three_limitations_i_keep_hitting_with/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.485784",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1swxx1v/three_limitations_i_keep_hitting_with/",
+        "event_id": null
+      },
+      {
+        "id": "6ef10de6c3d82a6f3f33a5397815a210",
+        "title": "AI代理太会复现，顶会投稿该不该先把代码藏起来",
+        "chinese_title": "AI代理太会复现，顶会投稿该不该先把代码藏起来",
+        "original_title": "Submitting to top ML Conferences without Sharing code [D]",
+        "summary": "临近NeurIPS截稿，有研究者担心新一代AI代理让代码泄露和创意被抄的风险变高，开始重新讨论顶会投稿时是否还应同步公开代码与复现实验细节。",
+        "rating": "B",
+        "score": 72,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "如果这种担忧扩散，评审流程、匿名复现要求和代码托管时间点都可能出现新博弈，但短期仍停留在经验讨论层面。",
+        "entities": [
+          "Ai Agent",
+          "Icml",
+          "Neurips",
+          "Reproducibility"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1swtk3h/submitting_to_top_ml_conferences_without_sharing/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.486031",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1swtk3h/submitting_to_top_ml_conferences_without_sharing/",
+        "event_id": null
+      },
+      {
+        "id": "4580a706c8a786a465221c88fea06858",
+        "title": "开源GPU监控工具Utilyze上线，直指nvidia-smi把算力看花了眼",
+        "chinese_title": "开源GPU监控工具Utilyze上线，直指nvidia-smi把算力看花了眼",
+        "original_title": "Show HN: Utilyze – an open source GPU monitoring tool more accurate than nvtop",
+        "summary": "Systalyze开源Utilyze，宣称传统GPU利用率指标只会告诉你显卡\"有没有在忙\"，却看不见真实吞吐与浪费，试图把AI基础设施优化从拍脑袋扩容拉回到精确测量。",
+        "rating": "A",
+        "score": 83,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "如果Utilyze验证了大规模GPU集群存在成数量级的隐藏闲置，算力优化、监控平台和云成本管理都会迎来新的产品机会，也会压缩单纯靠加卡解决问题的叙事。",
+        "entities": [
+          "NVIDIA",
+          "Nvidia-Smi",
+          "Nvtop",
+          "Systalyze",
+          "Utilyze"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.systalyze.com/utilyze"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.486514",
+        "source": "Hacker News",
+        "url": "https://www.systalyze.com/utilyze",
+        "event_id": null
+      },
+      {
+        "id": "cd42dd315a01b4888c9bd495315e1a31",
+        "title": "苹果预告macOS 27砍掉AFP，老Time Capsule和NAS要被时代抛下",
+        "chinese_title": "苹果预告macOS 27砍掉AFP，老Time Capsule和NAS要被时代抛下",
+        "original_title": "Apple is dropping AFP/TimeCapsule support in macOS 27",
+        "summary": "苹果被曝最快在macOS 27移除AFP支持，并提高企业连接所需的TLS门槛，这意味着仍依赖Time Capsule和老旧NAS的用户与管理员，可能在今年升级季前被迫完成一次网络基础设施换代。",
+        "rating": "B",
+        "score": 70,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这类底层协议调整虽然不算消费级爆点，却会实打实影响企业IT升级节奏、备份设备淘汰和运维兼容性方案的采购决策。",
+        "entities": [
+          "Afp",
+          "Apple",
+          "Macos",
+          "Time Capsule",
+          "Tls"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (apple)",
+            "url": "https://eclecticlight.co/2026/04/23/networking-changes-coming-in-macos-27/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.486595",
+        "source": "Hacker News (apple)",
+        "url": "https://eclecticlight.co/2026/04/23/networking-changes-coming-in-macos-27/",
         "event_id": null
       },
       {
@@ -494,155 +826,92 @@
     ],
     "2026-04-27": [
       {
-        "id": "7a8fb0b4c556c2a01924a73357cecc4e",
-        "title": "AI Agent上生产后怎么测，QA老兵也被非确定性整懵了",
-        "chinese_title": "AI Agent上生产后怎么测，QA老兵也被非确定性整懵了",
-        "original_title": "How do you test AI agents in production? The unpredictability is overwhelming.[D]",
-        "summary": "一线QA从业者直言传统输入输出断言在Agent系统前几乎失效，工具选择、推理链路和最终答案都存在波动，折射出企业把LLM Agent接进真实业务后测试体系仍严重缺位。",
+        "id": "410c012043b23eaff1ffdc68a0db4a10",
+        "title": "陶哲轩谈AI重写数学家工作说明书，研究范式真的变了",
+        "chinese_title": "陶哲轩谈AI重写数学家工作说明书，研究范式真的变了",
+        "original_title": "‘The job description is changing’: mathematician Terence Tao on the rise of AI",
+        "summary": "菲尔兹奖得主Terence Tao接受《自然》采访时表示，AI正持续改变数学家的日常工作方式，从问题探索到证明整理都在被新工具重新塑形。",
         "rating": "A",
-        "score": 81,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这类痛点会把评测框架、轨迹回放、LLM-as-a-judge与安全护栏工具继续推向前台，也可能倒逼企业重新定义Agent上线门槛和质保流程。",
-        "entities": [
-          "Ai Agent",
-          "LLM",
-          "Qa",
-          "Tool Calling"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1sx3p40/how_do_you_test_ai_agents_in_production_the/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777309604,
-        "published_at": "2026-04-28T01:06:44.485595",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1sx3p40/how_do_you_test_ai_agents_in_production_the/",
-        "event_id": null
-      },
-      {
-        "id": "0633252ba661be7a353c7815a6a3d696",
-        "title": "RAG上生产后最难的不是召回，是会错意还答得像真懂",
-        "chinese_title": "RAG上生产后最难的不是召回，是会错意还答得像真懂",
-        "original_title": "Three limitations I keep hitting with retrieval-augmented generation in production and I'm running out of ideas [D]",
-        "summary": "德国法规场景的实战复盘指出，生产级RAG在多文档拼接、负知识判断和时间线比较三类问题上会系统性失真，说明单靠向量检索和提示词补丁已难支撑高风险知识工作流。",
-        "rating": "A",
-        "score": 81,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这会继续推高Graph RAG、多跳检索、时间感知检索和可验证回答链路的需求，谁能把复杂检索做成低改造成本方案，谁就更容易吃到企业落地红利。",
-        "entities": [
-          "Graph Rag",
-          "LLM",
-          "Rag",
-          "Vector Search"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1swxx1v/three_limitations_i_keep_hitting_with/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777309604,
-        "published_at": "2026-04-28T01:06:44.485784",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1swxx1v/three_limitations_i_keep_hitting_with/",
-        "event_id": null
-      },
-      {
-        "id": "6ef10de6c3d82a6f3f33a5397815a210",
-        "title": "AI代理太会复现，顶会投稿该不该先把代码藏起来",
-        "chinese_title": "AI代理太会复现，顶会投稿该不该先把代码藏起来",
-        "original_title": "Submitting to top ML Conferences without Sharing code [D]",
-        "summary": "临近NeurIPS截稿，有研究者担心新一代AI代理让代码泄露和创意被抄的风险变高，开始重新讨论顶会投稿时是否还应同步公开代码与复现实验细节。",
-        "rating": "B",
-        "score": 72,
+        "score": 79,
         "type": "opinion",
         "typeName": "观点访谈",
-        "expansion": "如果这种担忧扩散，评审流程、匿名复现要求和代码托管时间点都可能出现新博弈，但短期仍停留在经验讨论层面。",
+        "expansion": "如果顶尖数学家开始系统公开AI工作流，学术训练、研究评价和科研工具产品都会受到带动，但这类影响更偏方法论外溢而非短期产业变量。",
         "entities": [
-          "Ai Agent",
-          "Icml",
-          "Neurips",
-          "Reproducibility"
+          "Ai",
+          "Mathematics",
+          "Nature",
+          "Terence Tao"
         ],
         "sourceLinks": [
           {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1swtk3h/submitting_to_top_ml_conferences_without_sharing/"
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01246-9"
           }
         ],
         "sources": 1,
-        "timestamp": 1777309604,
-        "published_at": "2026-04-28T01:06:44.486031",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1swtk3h/submitting_to_top_ml_conferences_without_sharing/",
+        "timestamp": 1777313052,
+        "published_at": "2026-04-28T02:04:12.308059",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01246-9",
         "event_id": null
       },
       {
-        "id": "4580a706c8a786a465221c88fea06858",
-        "title": "开源GPU监控工具Utilyze上线，直指nvidia-smi把算力看花了眼",
-        "chinese_title": "开源GPU监控工具Utilyze上线，直指nvidia-smi把算力看花了眼",
-        "original_title": "Show HN: Utilyze – an open source GPU monitoring tool more accurate than nvtop",
-        "summary": "Systalyze开源Utilyze，宣称传统GPU利用率指标只会告诉你显卡\"有没有在忙\"，却看不见真实吞吐与浪费，试图把AI基础设施优化从拍脑袋扩容拉回到精确测量。",
-        "rating": "A",
-        "score": 83,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "如果Utilyze验证了大规模GPU集群存在成数量级的隐藏闲置，算力优化、监控平台和云成本管理都会迎来新的产品机会，也会压缩单纯靠加卡解决问题的叙事。",
-        "entities": [
-          "NVIDIA",
-          "Nvidia-Smi",
-          "Nvtop",
-          "Systalyze",
-          "Utilyze"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.systalyze.com/utilyze"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777309604,
-        "published_at": "2026-04-28T01:06:44.486514",
-        "source": "Hacker News",
-        "url": "https://www.systalyze.com/utilyze",
-        "event_id": null
-      },
-      {
-        "id": "cd42dd315a01b4888c9bd495315e1a31",
-        "title": "苹果预告macOS 27砍掉AFP，老Time Capsule和NAS要被时代抛下",
-        "chinese_title": "苹果预告macOS 27砍掉AFP，老Time Capsule和NAS要被时代抛下",
-        "original_title": "Apple is dropping AFP/TimeCapsule support in macOS 27",
-        "summary": "苹果被曝最快在macOS 27移除AFP支持，并提高企业连接所需的TLS门槛，这意味着仍依赖Time Capsule和老旧NAS的用户与管理员，可能在今年升级季前被迫完成一次网络基础设施换代。",
+        "id": "521e4af0bdcee8d87aa2324b204ab42a",
+        "title": "纳米孔读取直冲端粒到端粒，全基因组组装又往前顶一步",
+        "chinese_title": "纳米孔读取直冲端粒到端粒，全基因组组装又往前顶一步",
+        "original_title": "Telomere-to-Telomere Assembly Using HERRO-Corrected Simplex Nanopore Reads",
+        "summary": "《自然》刊登研究称，HERRO校正后的simplex纳米孔读取已可支持端粒到端粒级别的基因组组装，为低成本长读长测序打开更高完整度的新路线。",
         "rating": "B",
-        "score": 70,
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果这套方法被验证能稳定复现，基因组学研究和临床测序的成本结构都可能被改写，也会推动长读长分析工具链继续升级。",
+        "entities": [
+          "Genome Assembly",
+          "Herro",
+          "Nanopore",
+          "Telomere-To-Telomere"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10563-y"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777313052,
+        "published_at": "2026-04-28T02:04:12.308153",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10563-y",
+        "event_id": null
+      },
+      {
+        "id": "49c0c0a2c50ebc84d0c0d51f0bd3c5f6",
+        "title": "人形机器人Asimov v1宣布开源，开源硬件派又想冲一次",
+        "chinese_title": "人形机器人Asimov v1宣布开源，开源硬件派又想冲一次",
+        "original_title": "&quot;We're open-sourcing Asimov v1, a humanoid robot&quot;",
+        "summary": "社区帖文称名为Asimov v1的人形机器人将开源，虽然当前信息量有限，但\"开源人形机器人\"这个组合本身仍具备一定开发者和创客圈传播潜力。",
+        "rating": "B",
+        "score": 69,
         "type": "product",
         "typeName": "产品发布",
-        "expansion": "这类底层协议调整虽然不算消费级爆点，却会实打实影响企业IT升级节奏、备份设备淘汰和运维兼容性方案的采购决策。",
+        "expansion": "若后续放出真实代码、BOM或演示视频，开源机器人平台可能吸引一批二次开发者；否则它更可能停留在概念传播阶段。",
         "entities": [
-          "Afp",
-          "Apple",
-          "Macos",
-          "Time Capsule",
-          "Tls"
+          "Asimov",
+          "Humanoid Robot",
+          "Open Source"
         ],
         "sourceLinks": [
           {
-            "name": "Hacker News (apple)",
-            "url": "https://eclecticlight.co/2026/04/23/networking-changes-coming-in-macos-27/"
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sx6nzi/were_opensourcing_asimov_v1_a_humanoid_robot/"
           }
         ],
         "sources": 1,
-        "timestamp": 1777309604,
-        "published_at": "2026-04-28T01:06:44.486595",
-        "source": "Hacker News (apple)",
-        "url": "https://eclecticlight.co/2026/04/23/networking-changes-coming-in-macos-27/",
+        "timestamp": 1777313052,
+        "published_at": "2026-04-28T02:04:12.308837",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sx6nzi/were_opensourcing_asimov_v1_a_humanoid_robot/",
         "event_id": null
       },
       {
@@ -23644,6 +23913,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-28T01:07:28.724669",
-  "total_news": 809
+  "last_updated": "2026-04-28T02:04:59.531255",
+  "total_news": 818
 }
