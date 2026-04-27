@@ -2,6 +2,36 @@
   "news": {
     "2026-04-27": [
       {
+        "id": "734ec4c4d512881ee56470603184820c",
+        "title": "德国机器人软件公司Sereact获1.1亿美元B轮融资",
+        "chinese_title": "德国机器人软件公司Sereact获1.1亿美元B轮融资",
+        "original_title": "Stuttgart-based Sereact, which develops software for industrial robots to handle tasks they haven't been trained on, raised a $110M Series B led by Headline (Yazhou Sun/Bloomberg)",
+        "summary": "德国工业机器人软件公司 Sereact 完成 1.1 亿美元 B 轮融资，主打让机器人处理未预训练任务，这笔融资表明具身智能落地正从实验验证走向更重资本支持的规模化阶段。",
+        "rating": "A",
+        "score": 80,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "这笔大额融资会带动市场重新审视工业机器人软件层的估值逻辑，也值得继续跟进物流、制造等场景里通用操作模型的商业化进展，以及同类具身智能公司的竞品反应。",
+        "entities": [
+          "Ai Model",
+          "Headline",
+          "Industrial Robots",
+          "Sereact"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260427/p4#a260427p4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777269836,
+        "published_at": "2026-04-27T14:03:56.988941",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260427/p4#a260427p4",
+        "event_id": null
+      },
+      {
         "id": "f5f7bc7d9ae85fdf13e8700d434f6636",
         "title": "摩尔线程一季度营收暴增155%，扭亏赚430万美元",
         "chinese_title": "摩尔线程一季度营收暴增155%，扭亏赚430万美元",
@@ -179,6 +209,126 @@
         "published_at": "2026-04-27T13:05:18.491674",
         "source": "Machine Learning (qwen)",
         "url": "https://www.reddit.com/r/MachineLearning/comments/1swfftl/speculative_decoding_implementations_eagle3/",
+        "event_id": null
+      },
+      {
+        "id": "ef18b51d1b22a96dc73d2f38303a0b6b",
+        "title": "大模型为何仍被头部实验室垄断？社区掀起一轮追问",
+        "chinese_title": "大模型为何仍被头部实验室垄断？社区掀起一轮追问",
+        "original_title": "Why do only big ML labs dominate widely-used models despite many open-source pretrained models smaller labs could do RL on? [D]",
+        "summary": "一则社区讨论围绕开源预训练模型并不少、为何真正广泛使用的仍是头部实验室模型展开，核心争点落在强化学习、产品化能力与品牌分发是否才是决定性壁垒。",
+        "rating": "B",
+        "score": 71,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这个问题如果持续发酵，可能延伸到开源模型商业化、后训练资本门槛和 API 分发控制权等更宏观议题，也能映射出中小团队与巨头的真实差距。",
+        "entities": [
+          "Claude",
+          "DeepSeek",
+          "GPT",
+          "Kimi"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning (deepseek)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1swa26o/why_do_only_big_ml_labs_dominate_widelyused/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777266318,
+        "published_at": "2026-04-27T13:05:18.491752",
+        "source": "Machine Learning (deepseek)",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1swa26o/why_do_only_big_ml_labs_dominate_widelyused/",
+        "event_id": null
+      },
+      {
+        "id": "1f26ac23cc097d024426b9e6b3393948",
+        "title": "从稠密模型转向Nemotron 3 Nano，微调打法要重写吗",
+        "chinese_title": "从稠密模型转向Nemotron 3 Nano，微调打法要重写吗",
+        "original_title": "Going from 3B/7B dense to Nemotron 3 Nano (hybrid Mamba-MoE) for multi-task reasoning — what changes in the fine-tuning playbook? [D]",
+        "summary": "一位开发者准备基于混合 Mamba-MoE 架构的 Nemotron 3 Nano 做多任务推理微调，系统梳理了路由器、LoRA、负载均衡和评测设计等一系列实操难点。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "随着混合架构模型走向开源，围绕 Mamba 与 MoE 的低成本微调经验会越来越值钱，后续值得跟进社区是否形成可复用的训练配方和失败案例库。",
+        "entities": [
+          "Lora",
+          "Mamba",
+          "Moe",
+          "Nemotron"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sw5b44/going_from_3b7b_dense_to_nemotron_3_nano_hybrid/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777266318,
+        "published_at": "2026-04-27T13:05:18.491842",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sw5b44/going_from_3b7b_dense_to_nemotron_3_nano_hybrid/",
+        "event_id": null
+      },
+      {
+        "id": "db9e1ad0934ec80f2d42be7941525300",
+        "title": "VLA模型怎么把\"看见\"和\"行动\"接起来，这篇文章讲明白了",
+        "chinese_title": "VLA模型怎么把\"看见\"和\"行动\"接起来，这篇文章讲明白了",
+        "original_title": "How Visual-Language-Action (VLA) Models Work [D]",
+        "summary": "一篇面向技术读者的文章梳理了视觉语言动作模型如何把图像、语言输入映射为机器人动作，并拆解了自回归、扩散和 flow matching 等主流动作解码路径。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "随着具身智能热度上升，这类通俗但技术密度高的综述会推动更多开发者进入 VLA 赛道，也有助于比较不同机器人基础模型在控制层的真实分歧。",
+        "entities": [
+          "Gr00T",
+          "Openvla",
+          "Rt-2",
+          "Vla"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1svhwtz/how_visuallanguageaction_vla_models_work_d/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777266318,
+        "published_at": "2026-04-27T13:05:18.492001",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1svhwtz/how_visuallanguageaction_vla_models_work_d/",
+        "event_id": null
+      },
+      {
+        "id": "13f6fba958a3aa3ff780f19951bccf91",
+        "title": "金融归因报告想交给Agent，社区在讨论最稳架构",
+        "chinese_title": "金融归因报告想交给Agent，社区在讨论最稳架构",
+        "original_title": "How would you build an automated commentary engine for daily trade attribution at scale? [R]",
+        "summary": "一位从业者抛出金融风控场景中的自动解说难题，希望在确定性数学计算与自然语言生成之间找到平衡，问题集中在 Agent 写代码、结构化上下文和沙箱执行该如何组合。",
+        "rating": "B",
+        "score": 68,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这类讨论若沉淀为范式，可能外溢到更多高精度行业场景，推动 Agent 系统从通用聊天迈向带审计、带计算约束的企业工作流基础设施。",
+        "entities": [
+          "LLM",
+          "Langchain",
+          "Llamaindex",
+          "Polars"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sv3cnm/how_would_you_build_an_automated_commentary/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777266318,
+        "published_at": "2026-04-27T13:05:18.492079",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sv3cnm/how_would_you_build_an_automated_commentary/",
         "event_id": null
       },
       {
@@ -1173,96 +1323,6 @@
     ],
     "2026-04-26": [
       {
-        "id": "ef18b51d1b22a96dc73d2f38303a0b6b",
-        "title": "大模型为何仍被头部实验室垄断？社区掀起一轮追问",
-        "chinese_title": "大模型为何仍被头部实验室垄断？社区掀起一轮追问",
-        "original_title": "Why do only big ML labs dominate widely-used models despite many open-source pretrained models smaller labs could do RL on? [D]",
-        "summary": "一则社区讨论围绕开源预训练模型并不少、为何真正广泛使用的仍是头部实验室模型展开，核心争点落在强化学习、产品化能力与品牌分发是否才是决定性壁垒。",
-        "rating": "B",
-        "score": 71,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "这个问题如果持续发酵，可能延伸到开源模型商业化、后训练资本门槛和 API 分发控制权等更宏观议题，也能映射出中小团队与巨头的真实差距。",
-        "entities": [
-          "Claude",
-          "DeepSeek",
-          "GPT",
-          "Kimi"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning (deepseek)",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1swa26o/why_do_only_big_ml_labs_dominate_widelyused/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777266318,
-        "published_at": "2026-04-27T13:05:18.491752",
-        "source": "Machine Learning (deepseek)",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1swa26o/why_do_only_big_ml_labs_dominate_widelyused/",
-        "event_id": null
-      },
-      {
-        "id": "1f26ac23cc097d024426b9e6b3393948",
-        "title": "从稠密模型转向Nemotron 3 Nano，微调打法要重写吗",
-        "chinese_title": "从稠密模型转向Nemotron 3 Nano，微调打法要重写吗",
-        "original_title": "Going from 3B/7B dense to Nemotron 3 Nano (hybrid Mamba-MoE) for multi-task reasoning — what changes in the fine-tuning playbook? [D]",
-        "summary": "一位开发者准备基于混合 Mamba-MoE 架构的 Nemotron 3 Nano 做多任务推理微调，系统梳理了路由器、LoRA、负载均衡和评测设计等一系列实操难点。",
-        "rating": "B",
-        "score": 72,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "随着混合架构模型走向开源，围绕 Mamba 与 MoE 的低成本微调经验会越来越值钱，后续值得跟进社区是否形成可复用的训练配方和失败案例库。",
-        "entities": [
-          "Lora",
-          "Mamba",
-          "Moe",
-          "Nemotron"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1sw5b44/going_from_3b7b_dense_to_nemotron_3_nano_hybrid/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777266318,
-        "published_at": "2026-04-27T13:05:18.491842",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1sw5b44/going_from_3b7b_dense_to_nemotron_3_nano_hybrid/",
-        "event_id": null
-      },
-      {
-        "id": "db9e1ad0934ec80f2d42be7941525300",
-        "title": "VLA模型怎么把\"看见\"和\"行动\"接起来，这篇文章讲明白了",
-        "chinese_title": "VLA模型怎么把\"看见\"和\"行动\"接起来，这篇文章讲明白了",
-        "original_title": "How Visual-Language-Action (VLA) Models Work [D]",
-        "summary": "一篇面向技术读者的文章梳理了视觉语言动作模型如何把图像、语言输入映射为机器人动作，并拆解了自回归、扩散和 flow matching 等主流动作解码路径。",
-        "rating": "B",
-        "score": 70,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "随着具身智能热度上升，这类通俗但技术密度高的综述会推动更多开发者进入 VLA 赛道，也有助于比较不同机器人基础模型在控制层的真实分歧。",
-        "entities": [
-          "Gr00T",
-          "Openvla",
-          "Rt-2",
-          "Vla"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1svhwtz/how_visuallanguageaction_vla_models_work_d/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777266318,
-        "published_at": "2026-04-27T13:05:18.492001",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1svhwtz/how_visuallanguageaction_vla_models_work_d/",
-        "event_id": null
-      },
-      {
         "id": "af754086b7f6e9068453d2617129f124",
         "title": "OpenAI重置GPT-5.5提示词打法，旧模板反成性能枷锁",
         "chinese_title": "OpenAI重置GPT-5.5提示词打法，旧模板反成性能枷锁",
@@ -2060,36 +2120,6 @@
       }
     ],
     "2026-04-25": [
-      {
-        "id": "13f6fba958a3aa3ff780f19951bccf91",
-        "title": "金融归因报告想交给Agent，社区在讨论最稳架构",
-        "chinese_title": "金融归因报告想交给Agent，社区在讨论最稳架构",
-        "original_title": "How would you build an automated commentary engine for daily trade attribution at scale? [R]",
-        "summary": "一位从业者抛出金融风控场景中的自动解说难题，希望在确定性数学计算与自然语言生成之间找到平衡，问题集中在 Agent 写代码、结构化上下文和沙箱执行该如何组合。",
-        "rating": "B",
-        "score": 68,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这类讨论若沉淀为范式，可能外溢到更多高精度行业场景，推动 Agent 系统从通用聊天迈向带审计、带计算约束的企业工作流基础设施。",
-        "entities": [
-          "LLM",
-          "Langchain",
-          "Llamaindex",
-          "Polars"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1sv3cnm/how_would_you_build_an_automated_commentary/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777266318,
-        "published_at": "2026-04-27T13:05:18.492079",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1sv3cnm/how_would_you_build_an_automated_commentary/",
-        "event_id": null
-      },
       {
         "id": "2469b5426c7f4abf0fda57df3d2edbba",
         "title": "美联储研究：ChatGPT后美国程序员岗位增速近乎腰斩",
@@ -22092,6 +22122,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-27T13:06:02.190853",
-  "total_news": 758
+  "last_updated": "2026-04-27T14:04:25.091908",
+  "total_news": 759
 }
