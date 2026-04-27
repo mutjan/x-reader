@@ -2,6 +2,126 @@
   "news": {
     "2026-04-27": [
       {
+        "id": "eb7e94882626e4aa705958be64a81d7a",
+        "title": "微软放开OpenAI云销售独家权，AGI条款也被删",
+        "chinese_title": "微软放开OpenAI云销售独家权，AGI条款也被删",
+        "original_title": "Microsoft Gives Up Exclusive Rights to Sell OpenAI Models; Companies Scrap “AGI” Clause of Agreement",
+        "summary": "Microsoft与OpenAI修改合作协议，OpenAI不再受限于微软独家云销售，双方还删除了与AGI相关的关键条款，意味着这段最重要的AI联盟正在从深度绑定转向更松动的利益重排。",
+        "rating": "S",
+        "score": 96,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这会直接影响Azure的模型独家卖点，也可能改变OpenAI与其他云厂商、企业客户及未来融资治理的谈判空间。",
+        "entities": [
+          "AGI",
+          "Azure",
+          "Microsoft",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/microsoft-gives-exclusive-rights-sell-openai-models-companies-scrap-agi-clause-agreement"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777298711,
+        "published_at": "2026-04-27T22:05:11.877090",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/microsoft-gives-exclusive-rights-sell-openai-models-companies-scrap-agi-clause-agreement",
+        "event_id": null
+      },
+      {
+        "id": "d64dbda6b382fa1480f9874c79ac6f3f",
+        "title": "中国否决Meta收购Manus，扎克伯格智能体布局受挫",
+        "chinese_title": "中国否决Meta收购Manus，扎克伯格智能体布局受挫",
+        "original_title": "China vetoes Meta’s $2B Manus deal after months-long probe",
+        "summary": "中国方面否决Meta价值20亿美元的Manus交易，迫使这笔历经数月审查的并购撤回，说明AI智能体相关资产已开始受到更强的跨境监管与并购审查。",
+        "rating": "S",
+        "score": 96,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这条线后续可追Meta自建智能体能力如何补位、Manus估值与买家是否变化，以及各国对AI并购的审查门槛会否同步抬高。",
+        "entities": [
+          "Ai Agent",
+          "Manus",
+          "Mark Zuckerberg",
+          "Meta"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch (manus)",
+            "url": "https://techcrunch.com/2026/04/27/china-vetoes-metas-2b-manus-deal-after-months-long-probe/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777298711,
+        "published_at": "2026-04-27T22:05:11.877393",
+        "source": "TechCrunch (manus)",
+        "url": "https://techcrunch.com/2026/04/27/china-vetoes-metas-2b-manus-deal-after-months-long-probe/",
+        "event_id": null
+      },
+      {
+        "id": "5a2f0a41fb99485a796216b4f340b8db",
+        "title": "OpenAI被曝筹备AI手机，想让智能体取代App入口",
+        "chinese_title": "OpenAI被曝筹备AI手机，想让智能体取代App入口",
+        "original_title": "OpenAI could be making a phone with AI agents replacing apps",
+        "summary": "一则TechCrunch报道称，OpenAI可能正在酝酿以AI智能体取代传统应用分发逻辑的手机产品，量产时间或指向2028年，试图把模型能力直接推到终端入口层。",
+        "rating": "A",
+        "score": 75,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "如果这条路线属实，手机操作系统、应用商店分发和端侧智能体交互都会被重新定义，苹果、谷歌与硬件合作方都会被迫回应。",
+        "entities": [
+          "Ai Agent",
+          "App",
+          "OpenAI",
+          "Smartphone"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777298711,
+        "published_at": "2026-04-27T22:05:11.877591",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/",
+        "event_id": null
+      },
+      {
+        "id": "5114e34d2e6e5c56d9c597a306f42bdf",
+        "title": "Redis研究敲警钟：RAG精调可能让检索准确率暴跌40%",
+        "chinese_title": "Redis研究敲警钟：RAG精调可能让检索准确率暴跌40%",
+        "original_title": "RAG precision tuning can quietly cut retrieval accuracy by 40%, putting agentic pipelines at risk",
+        "summary": "Redis最新研究称，企业为提升RAG精准度而微调embedding模型时，可能反而破坏广义检索能力，部分生产模型在实验中准确率下滑最高达40%，对智能体流水线尤其危险。",
+        "rating": "A",
+        "score": 81,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这会逼企业重新审视单阶段向量检索的默认架构，也可能推动\"两阶段召回加验证\"方案成为新一轮RAG工程标准。",
+        "entities": [
+          "Agentic Pipeline",
+          "Embedding Model",
+          "Rag",
+          "Redis"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/data/rag-precision-tuning-can-quietly-cut-retrieval-accuracy-by-40-putting-agentic-pipelines-at-risk"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777298711,
+        "published_at": "2026-04-27T22:05:11.877688",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/data/rag-precision-tuning-can-quietly-cut-retrieval-accuracy-by-40-putting-agentic-pipelines-at-risk",
+        "event_id": null
+      },
+      {
         "id": "7084ab65f04d1804d7489e9c67b9b741",
         "title": "OpenAI杀回AWS，却撞上客户先投奔竞品",
         "chinese_title": "OpenAI杀回AWS，却撞上客户先投奔竞品",
@@ -22880,6 +23000,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-27T21:07:57.892599",
-  "total_news": 784
+  "last_updated": "2026-04-27T22:05:43.874143",
+  "total_news": 788
 }
