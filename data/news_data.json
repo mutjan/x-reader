@@ -1,6 +1,159 @@
 {
   "news": {
-    "2026-04-27": [
+    "2026-04-28": [
+      {
+        "id": "ac5f75e21a06fb0c301213a70489db1d",
+        "title": "本地小模型路由翻车复盘：置信度判断比回答本身更难",
+        "chinese_title": "本地小模型路由翻车复盘：置信度判断比回答本身更难",
+        "original_title": "Things I got wrong building a confidence evaluator for local LLMs [D]",
+        "summary": "本地优先智能体框架Autodidact公开复盘置信度评估实验，指出检索注入、自我评估提示词和多信号融合都会误导小模型路由，暴露本地LLM降本方案的真实难点不在生成而在校准。",
+        "rating": "S",
+        "score": 92,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果这类置信度路由做不稳，本地模型替代云端API的成本故事就难落地，后续可追踪校准能力是否反过来成为小模型选型的新核心指标。",
+        "entities": [
+          "Autodidact",
+          "Llama",
+          "Mistral",
+          "Qwen",
+          "Routellm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning (qwen)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sx87fd/things_i_got_wrong_building_a_confidence/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.485489",
+        "source": "Machine Learning (qwen)",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sx87fd/things_i_got_wrong_building_a_confidence/",
+        "event_id": null
+      },
+      {
+        "id": "e05ffd22ac49a762a14a8fdea8dbfb09",
+        "title": "600多名谷歌员工联名施压皮查伊，反对AI服务美军机密任务",
+        "chinese_title": "600多名谷歌员工联名施压皮查伊，反对AI服务美军机密任务",
+        "original_title": "More than 600 Google employees, including many from DeepMind, sign a letter to Sundar Pichai demanding he bar the DOD from using Google's AI for classified work (Gerrit De Vynck/Washington Post)",
+        "summary": "包括大量DeepMind员工在内的600多名谷歌员工联名要求Sundar Pichai阻止谷歌AI用于美国国防部机密工作，显示AI军用边界之争已从外部监管延烧到公司内部。",
+        "rating": "A+",
+        "score": 87,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "后续值得追踪谷歌是否调整国防合作口径，以及OpenAI、Anthropic等同行会不会同步遭遇员工与客户双重伦理施压。",
+        "entities": [
+          "DeepMind",
+          "Dod",
+          "Google",
+          "Sundar Pichai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260427/p31#a260427p31"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.486112",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260427/p31#a260427p31",
+        "event_id": null
+      },
+      {
+        "id": "55f57402b67e077168aa3c378525f0c6",
+        "title": "三星首款智能眼镜泄露，外形几乎照着Meta爆款抄",
+        "chinese_title": "三星首款智能眼镜泄露，外形几乎照着Meta爆款抄",
+        "original_title": "Samsung&rsquo;s first smart glasses have leaked",
+        "summary": "泄露信息显示三星Galaxy Glasses将采用高通AR1芯片、1200万像素摄像头和骨传导扬声器，售价直接对标Ray-Ban Meta，预示智能眼镜大战很快从Meta独跑变成安卓阵营围攻。",
+        "rating": "A",
+        "score": 79,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "如果三星在Google I/O前后正式亮相，谷歌生态的AI入口、可穿戴渠道竞争和上游AR零部件链都会被同步带热。",
+        "entities": [
+          "Galaxy Glasses",
+          "Meta",
+          "Qualcomm",
+          "Ray-Ban Meta",
+          "Samsung"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/gadgets/919189/samsung-galaxy-glasses-leaked-images"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.486193",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/gadgets/919189/samsung-galaxy-glasses-leaked-images",
+        "event_id": null
+      },
+      {
+        "id": "ecc9ca0aaeb6e7ddf72e8582f2de3514",
+        "title": "OpenAI与微软结束云独家，亚马逊谷歌终于拿到正面入场券",
+        "chinese_title": "OpenAI与微软结束云独家，亚马逊谷歌终于拿到正面入场券",
+        "original_title": "Microsoft and OpenAI end exclusivity agreement, opening up potential partnerships with Amazon and Google — Microsoft will continue to receive revenue share through 2030",
+        "summary": "微软与OpenAI终止长期独家协议，OpenAI此后可把产品铺向亚马逊和谷歌等更多云平台，但微软仍保留到2030年的收入分成，这让AI云战争从暗战正式走向公开拆伙与重组。",
+        "rating": "B",
+        "score": 67,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这会直接冲击Azure绑定OpenAI的护城河，也可能刺激AWS、Google Cloud围绕模型托管、企业集成和价格体系发起更激进争夺。",
+        "entities": [
+          "Amazon",
+          "Azure",
+          "Google",
+          "Microsoft",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/microsoft-and-openai-end-exclusivity-agreement-opening-up-potential-partnerships-with-amazon-and-google-microsoft-will-continue-to-receive-revenue-share-through-2030"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.486273",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/microsoft-and-openai-end-exclusivity-agreement-opening-up-potential-partnerships-with-amazon-and-google-microsoft-will-continue-to-receive-revenue-share-through-2030",
+        "event_id": null
+      },
+      {
+        "id": "d7d43688867ce5a18e4f51ddcbfc4fee",
+        "title": "微软OpenAI连AGI条款都删了，这段盟友关系彻底改写",
+        "chinese_title": "微软OpenAI连AGI条款都删了，这段盟友关系彻底改写",
+        "original_title": "Microsoft and OpenAI&rsquo;s famed AGI agreement is dead",
+        "summary": "The Verge披露微软与OpenAI重签合作框架，不仅保留Azure优先权却放开跨云销售，还正式拿掉多年左右双方关系的AGI条款，意味着这对AI最强盟友从绑定共生走向更松散但更商业化的新阶段。",
+        "rating": "S",
+        "score": 100,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "比起单纯的云独家结束，AGI条款消失更可能重写双方未来算力供给、产品首发权和公司治理博弈，也会影响其他大模型公司的合作模板。",
+        "entities": [
+          "AGI",
+          "Azure",
+          "Microsoft",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/918981/openai-microsoft-renegotiate-contract"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.486353",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/918981/openai-microsoft-renegotiate-contract",
+        "event_id": null
+      },
       {
         "id": "9086b566a0159e2b26a096708ceca75a",
         "title": "马斯克与奥特曼庭审开打，OpenAI控制权大战升级",
@@ -336,6 +489,160 @@
         "published_at": "2026-04-28T00:04:18.377042",
         "source": "The Information",
         "url": "https://www.theinformation.com/articles/nuances-cursors-gross-margin-comparing-gpt-5-5-claude-mythos",
+        "event_id": null
+      }
+    ],
+    "2026-04-27": [
+      {
+        "id": "7a8fb0b4c556c2a01924a73357cecc4e",
+        "title": "AI Agent上生产后怎么测，QA老兵也被非确定性整懵了",
+        "chinese_title": "AI Agent上生产后怎么测，QA老兵也被非确定性整懵了",
+        "original_title": "How do you test AI agents in production? The unpredictability is overwhelming.[D]",
+        "summary": "一线QA从业者直言传统输入输出断言在Agent系统前几乎失效，工具选择、推理链路和最终答案都存在波动，折射出企业把LLM Agent接进真实业务后测试体系仍严重缺位。",
+        "rating": "A",
+        "score": 81,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这类痛点会把评测框架、轨迹回放、LLM-as-a-judge与安全护栏工具继续推向前台，也可能倒逼企业重新定义Agent上线门槛和质保流程。",
+        "entities": [
+          "Ai Agent",
+          "LLM",
+          "Qa",
+          "Tool Calling"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sx3p40/how_do_you_test_ai_agents_in_production_the/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.485595",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sx3p40/how_do_you_test_ai_agents_in_production_the/",
+        "event_id": null
+      },
+      {
+        "id": "0633252ba661be7a353c7815a6a3d696",
+        "title": "RAG上生产后最难的不是召回，是会错意还答得像真懂",
+        "chinese_title": "RAG上生产后最难的不是召回，是会错意还答得像真懂",
+        "original_title": "Three limitations I keep hitting with retrieval-augmented generation in production and I'm running out of ideas [D]",
+        "summary": "德国法规场景的实战复盘指出，生产级RAG在多文档拼接、负知识判断和时间线比较三类问题上会系统性失真，说明单靠向量检索和提示词补丁已难支撑高风险知识工作流。",
+        "rating": "A",
+        "score": 81,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这会继续推高Graph RAG、多跳检索、时间感知检索和可验证回答链路的需求，谁能把复杂检索做成低改造成本方案，谁就更容易吃到企业落地红利。",
+        "entities": [
+          "Graph Rag",
+          "LLM",
+          "Rag",
+          "Vector Search"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1swxx1v/three_limitations_i_keep_hitting_with/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.485784",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1swxx1v/three_limitations_i_keep_hitting_with/",
+        "event_id": null
+      },
+      {
+        "id": "6ef10de6c3d82a6f3f33a5397815a210",
+        "title": "AI代理太会复现，顶会投稿该不该先把代码藏起来",
+        "chinese_title": "AI代理太会复现，顶会投稿该不该先把代码藏起来",
+        "original_title": "Submitting to top ML Conferences without Sharing code [D]",
+        "summary": "临近NeurIPS截稿，有研究者担心新一代AI代理让代码泄露和创意被抄的风险变高，开始重新讨论顶会投稿时是否还应同步公开代码与复现实验细节。",
+        "rating": "B",
+        "score": 72,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "如果这种担忧扩散，评审流程、匿名复现要求和代码托管时间点都可能出现新博弈，但短期仍停留在经验讨论层面。",
+        "entities": [
+          "Ai Agent",
+          "Icml",
+          "Neurips",
+          "Reproducibility"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1swtk3h/submitting_to_top_ml_conferences_without_sharing/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.486031",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1swtk3h/submitting_to_top_ml_conferences_without_sharing/",
+        "event_id": null
+      },
+      {
+        "id": "4580a706c8a786a465221c88fea06858",
+        "title": "开源GPU监控工具Utilyze上线，直指nvidia-smi把算力看花了眼",
+        "chinese_title": "开源GPU监控工具Utilyze上线，直指nvidia-smi把算力看花了眼",
+        "original_title": "Show HN: Utilyze – an open source GPU monitoring tool more accurate than nvtop",
+        "summary": "Systalyze开源Utilyze，宣称传统GPU利用率指标只会告诉你显卡\"有没有在忙\"，却看不见真实吞吐与浪费，试图把AI基础设施优化从拍脑袋扩容拉回到精确测量。",
+        "rating": "A",
+        "score": 83,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "如果Utilyze验证了大规模GPU集群存在成数量级的隐藏闲置，算力优化、监控平台和云成本管理都会迎来新的产品机会，也会压缩单纯靠加卡解决问题的叙事。",
+        "entities": [
+          "NVIDIA",
+          "Nvidia-Smi",
+          "Nvtop",
+          "Systalyze",
+          "Utilyze"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.systalyze.com/utilyze"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.486514",
+        "source": "Hacker News",
+        "url": "https://www.systalyze.com/utilyze",
+        "event_id": null
+      },
+      {
+        "id": "cd42dd315a01b4888c9bd495315e1a31",
+        "title": "苹果预告macOS 27砍掉AFP，老Time Capsule和NAS要被时代抛下",
+        "chinese_title": "苹果预告macOS 27砍掉AFP，老Time Capsule和NAS要被时代抛下",
+        "original_title": "Apple is dropping AFP/TimeCapsule support in macOS 27",
+        "summary": "苹果被曝最快在macOS 27移除AFP支持，并提高企业连接所需的TLS门槛，这意味着仍依赖Time Capsule和老旧NAS的用户与管理员，可能在今年升级季前被迫完成一次网络基础设施换代。",
+        "rating": "B",
+        "score": 70,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这类底层协议调整虽然不算消费级爆点，却会实打实影响企业IT升级节奏、备份设备淘汰和运维兼容性方案的采购决策。",
+        "entities": [
+          "Afp",
+          "Apple",
+          "Macos",
+          "Time Capsule",
+          "Tls"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (apple)",
+            "url": "https://eclecticlight.co/2026/04/23/networking-changes-coming-in-macos-27/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777309604,
+        "published_at": "2026-04-28T01:06:44.486595",
+        "source": "Hacker News (apple)",
+        "url": "https://eclecticlight.co/2026/04/23/networking-changes-coming-in-macos-27/",
         "event_id": null
       },
       {
@@ -23337,6 +23644,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-28T00:05:03.110070",
-  "total_news": 799
+  "last_updated": "2026-04-28T01:07:28.724669",
+  "total_news": 809
 }
