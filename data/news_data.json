@@ -2,6 +2,499 @@
   "news": {
     "2026-04-28": [
       {
+        "id": "e3f58f3c636877ec6441b451c71530a7",
+        "title": "OpenAI上市前夜被曝营收失速千亿算力豪赌承压",
+        "chinese_title": "OpenAI上市前夜被曝营收失速千亿算力豪赌承压",
+        "original_title": "OpenAI in Shambles as IPO Looms",
+        "summary": "Futurism援引华尔街日报信息称，OpenAI在冲刺IPO前连续错失用户和营收目标，却仍背负未来四年高达6000亿美元的算力投入承诺，商业化兑现压力被彻底摆上台面。",
+        "rating": "S",
+        "score": 100,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "这会把OpenAI的提价能力、融资节奏和算力采购合同重新拉进聚光灯，也可能带动市场重新评估整个大模型行业的烧钱模型。",
+        "entities": [
+          "Anthropic",
+          "GPT",
+          "OpenAI",
+          "Sam Altman",
+          "Sarah Friar"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/openai-shambles-users-revenue-ipo"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.165058",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/openai-shambles-users-revenue-ipo",
+        "event_id": null
+      },
+      {
+        "id": "dd7957ef2327bb2ad91b2fc34d981e61",
+        "title": "独立研究者称改造训练信号让小模型回答偏好提升",
+        "chinese_title": "独立研究者称改造训练信号让小模型回答偏好提升",
+        "original_title": "The loss curve said tie. The judges said otherwise. Seeking replication for an early LLM training result [R]",
+        "summary": "一位独立研究者提出两种新的LLM训练信号缩放方法，在单种子1.2B模型实验中虽然验证损失几乎持平，却让盲测评审更偏好新模型输出，主张值得社区复现验证。",
+        "rating": "A",
+        "score": 82,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果这一结果能在多种子和更大模型上复现，训练目标设计可能重新成为提升模型体验的重要抓手，而不只是继续堆数据和算力。",
+        "entities": [
+          "Arxiv",
+          "Cross-Entropy",
+          "Gradient Scaling",
+          "LLM",
+          "Transformer"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sy3fi1/the_loss_curve_said_tie_the_judges_said_otherwise/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.165182",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sy3fi1/the_loss_curve_said_tie_the_judges_said_otherwise/",
+        "event_id": null
+      },
+      {
+        "id": "5c8a7b58aa7822d1d13627b6306b19c4",
+        "title": "动态批处理工具瞄准翻译模型训练吞吐瓶颈",
+        "chinese_title": "动态批处理工具瞄准翻译模型训练吞吐瓶颈",
+        "original_title": "Dynamic batching for Encoder-Decoder MT training or generation when long sequence caps the batch size [P]",
+        "summary": "有开发者发布名为dynabatch的小工具，试图通过按序列长度动态调整batch size缓解编码器-解码器模型训练中的显存浪费，并在自己的机器翻译场景里给出约3.3倍吞吐提升。",
+        "rating": "A",
+        "score": 75,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "如果更多NLLB等翻译模型用户复现出稳定收益，动态批处理可能成为一类细分训练工具，而不仅是一次个人优化技巧。",
+        "entities": [
+          "Dynabatch",
+          "Nllb",
+          "Pytorch",
+          "Rtx 5090",
+          "Xgboost"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sy01uz/dynamic_batching_for_encoderdecoder_mt_training/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.165382",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sy01uz/dynamic_batching_for_encoderdecoder_mt_training/",
+        "event_id": null
+      },
+      {
+        "id": "d11304cecf7c3cb4616f5211401e7b70",
+        "title": "小米MiMo v2.5 Pro亮相主打长程编程与Agent效率",
+        "chinese_title": "小米MiMo v2.5 Pro亮相主打长程编程与Agent效率",
+        "original_title": "Xiaomi releases MiMo-v2.5 Family weights with strong coding and agent benchmarks",
+        "summary": "Firethering称，小米推出MiMo v2.5 Pro并展示其在编译器、视频编辑器和模拟电路设计等长链路任务中的表现，试图把自己打到Claude、GPT级编码模型的比较序列里。",
+        "rating": "S",
+        "score": 98,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "如果后续开源权重按承诺落地，这会直接影响国产编码模型竞争格局，也会让开发者重新比较性能、成本和Agent稳定性。",
+        "entities": [
+          "Claude",
+          "GPT",
+          "Gemini",
+          "Mimo",
+          "Xiaomi"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://firethering.com/mimo-v2-5-pro-xiaomi-coding-model/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.165476",
+        "source": "Hacker News",
+        "url": "https://firethering.com/mimo-v2-5-pro-xiaomi-coding-model/",
+        "event_id": null
+      },
+      {
+        "id": "8cfbd3338cf3582010199da339dc5cce",
+        "title": "Meta被曝加速撤回Manus交易中国审查压力抬头",
+        "chinese_title": "Meta被曝加速撤回Manus交易中国审查压力抬头",
+        "original_title": "Meta scrambles to unwind Manus deal as Beijing's deadline looms",
+        "summary": "The Decoder援引华尔街日报称，Meta正为撤回Manus交易做准备，显示跨境AI资产并购在中国监管和地缘约束下面临更高不确定性，交易反转风险迅速放大。",
+        "rating": "A",
+        "score": 83,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这会继续外溢到大厂在华并购路径、出海架构设计以及中国AI团队退出预期，对投资人与创业者都有现实参考价值。",
+        "entities": [
+          "Beijing",
+          "China",
+          "Manus",
+          "Meta"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER (manus)",
+            "url": "https://the-decoder.com/meta-scrambles-to-unwind-manus-deal-as-beijings-deadline-looms/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.165751",
+        "source": "THE DECODER (manus)",
+        "url": "https://the-decoder.com/meta-scrambles-to-unwind-manus-deal-as-beijings-deadline-looms/",
+        "event_id": null
+      },
+      {
+        "id": "3727fa09a5ac402dbd961c53c9afefaf",
+        "title": "Snapchat推AI赞助私信把品牌对话塞进聊天入口",
+        "chinese_title": "Snapchat推AI赞助私信把品牌对话塞进聊天入口",
+        "original_title": "Snapchat launches AI Sponsored Snaps, a conversational ad format in the Chat tab that lets users talk to brand-specific AI agents for product recommendations (Aisha Malik/TechCrunch)",
+        "summary": "Techmeme聚合显示，Snapchat开始上线AI Sponsored Snaps，让用户在聊天页直接与品牌AI助手对话获取推荐，试图把生成式AI广告做成新的转化入口。",
+        "rating": "B",
+        "score": 72,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "如果广告主接受度高，这类产品会把社交广告从内容分发转向会话分发，也会刺激Meta、TikTok等平台跟进类似形式。",
+        "entities": [
+          "Ai Agents",
+          "Ai Sponsored Snaps",
+          "Snapchat",
+          "Techcrunch"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260428/p22#a260428p22"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.165844",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260428/p22#a260428p22",
+        "event_id": null
+      },
+      {
+        "id": "09c04df6cbdb818e21f96bb7e7934613",
+        "title": "世界模型创业继续升温前英伟达研究员也下场融资",
+        "chinese_title": "世界模型创业继续升温前英伟达研究员也下场融资",
+        "original_title": "Startup Founded by Ex-Nvidia Researcher Among New World Models Endeavors",
+        "summary": "The Information称，前英伟达研究员Joel Jang创办Dream Labs，和World Labs、AMI Labs等一起加入世界模型创业潮，投资人正继续为机器人与物理世界建模概念买单。",
+        "rating": "A",
+        "score": 82,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "如果世界模型创业继续拿到大额融资，机器人基础模型会成为下一轮资本叙事焦点，也会加快英伟达和DeepMind系人才外溢。",
+        "entities": [
+          "Dream Labs",
+          "Joel Jang",
+          "NVIDIA",
+          "World Labs",
+          "Yann Lecun"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/startup-founded-ex-nvidia-researcher-among-new-world-models-endeavors"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.166025",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/startup-founded-ex-nvidia-researcher-among-new-world-models-endeavors",
+        "event_id": null
+      },
+      {
+        "id": "45f7d2034e046bc3c3218688d4c7b109",
+        "title": "OpenAI微软云排他正式松动ChatGPT不再只押Azure",
+        "chinese_title": "OpenAI微软云排他正式松动ChatGPT不再只押Azure",
+        "original_title": "OpenAI and Microsoft's alliance fractures as cloud exclusivity deal ends &mdash; Azure's single-provider monopoly for ChatGPT is officially over",
+        "summary": "Tom's Hardware称，OpenAI与微软重构合作关系，Azure不再是ChatGPT的唯一云提供方，双方从深度绑定走向保留利益但允许多云扩张的新阶段。",
+        "rating": "S",
+        "score": 94,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这会直接影响OpenAI的云议价能力、AWS等对手的切入空间，以及未来模型分发和企业销售权的重新划分。",
+        "entities": [
+          "Aws",
+          "Azure",
+          "GPT",
+          "Microsoft",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-and-microsofts-alliance-fractures-as-cloud-exclusivity-deal-ends-azures-single-provider-monopoly-for-chatgpt-is-officially-over"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.166116",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-and-microsofts-alliance-fractures-as-cloud-exclusivity-deal-ends-azures-single-provider-monopoly-for-chatgpt-is-officially-over",
+        "event_id": null
+      },
+      {
+        "id": "ef01794f6384d5fadcc4c659d72aac0d",
+        "title": "Snapchat把AI会话广告正式推入应用聊天页",
+        "chinese_title": "Snapchat把AI会话广告正式推入应用聊天页",
+        "original_title": "Snapchat brings AI-powered conversational advertising to its app",
+        "summary": "TechCrunch报道，Snapchat开始让用户与品牌AI助手直接对话，咨询商品问题并获取推荐，试图用聊天式AI广告替代传统展示广告的低互动模式。",
+        "rating": "A+",
+        "score": 87,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "若转化率优于传统广告位，这种广告形态可能成为社交平台新的商业化模板，并推动品牌建设专属AI导购。",
+        "entities": [
+          "Ai Agent",
+          "Brands",
+          "Conversational Advertising",
+          "Snapchat"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/28/snapchat-brings-ai-powered-conversational-advertising-to-its-app/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.166206",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/28/snapchat-brings-ai-powered-conversational-advertising-to-its-app/",
+        "event_id": null
+      },
+      {
+        "id": "17ecb9f1d4c4c1b8da6229ce16b6eefc",
+        "title": "美国小镇被数据中心包围AI算力外部成本集中爆发",
+        "chinese_title": "美国小镇被数据中心包围AI算力外部成本集中爆发",
+        "original_title": "A Tiny Town Is Building So Many Data Centers That There’ll Be Almost Nothing Else Left",
+        "summary": "Futurism报道，美国宾州小镇Archbald面临多达六个数据中心园区提案，设施面积可能占到镇域14%，地方社会对AI算力基础设施的土地和能源代价开始集中反弹。",
+        "rating": "A",
+        "score": 75,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "随着算力竞争升级，数据中心的电力、税收和社区治理冲突会越来越频繁，这类线索适合延展成AI基础设施外部性专题。",
+        "entities": [
+          "Ai Infrastructure",
+          "Archbald",
+          "Data Centers",
+          "Pennsylvania",
+          "Susquehanna"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/archbald-pennsylvania-data-centers"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.166295",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/archbald-pennsylvania-data-centers",
+        "event_id": null
+      },
+      {
+        "id": "c9622dca0d8032df8e1eb4fa70f61c23",
+        "title": "奥特曼身份公司闹乌龙把火星哥合作说成假消息",
+        "chinese_title": "奥特曼身份公司闹乌龙把火星哥合作说成假消息",
+        "original_title": "OpenAI CEO's Identity Verification Company Announced Fake Bruno Mars Partnership",
+        "summary": "VICE称，Sam Altman关联公司Tools for Humanity曾宣布与Bruno Mars合作，随后被对方团队否认，最终证实真正合作对象其实是Thirty Seconds to Mars，公关翻车颇具戏剧性。",
+        "rating": "B",
+        "score": 72,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这条线索可延展到AI公司品牌治理与可信度问题，尤其当其核心卖点本身就是身份验证时，乌龙事件会被放大解读。",
+        "entities": [
+          "Bruno Mars",
+          "Sam Altman",
+          "Thirty Seconds To Mars",
+          "Tools For Humanity",
+          "World"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.vice.com/en/article/openai-ceo-identity-verification-company-fake-bruno-mars-partnership-mistaken-identity/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.166386",
+        "source": "Hacker News",
+        "url": "https://www.vice.com/en/article/openai-ceo-identity-verification-company-fake-bruno-mars-partnership-mistaken-identity/",
+        "event_id": null
+      },
+      {
+        "id": "4eba3ec3828ae7b057975ed0004e1c09",
+        "title": "纳德拉与奥特曼被曝亲自灭火避免AWS合作引发大战",
+        "chinese_title": "纳德拉与奥特曼被曝亲自灭火避免AWS合作引发大战",
+        "original_title": "How Nadella and Altman Averted a Legal War Over AWS",
+        "summary": "The Information披露，OpenAI与亚马逊达成企业销售合作后一度触怒微软，纳德拉和奥特曼最近亲自谈判避免冲突升级，显示双方同盟已进入高摩擦重新议价阶段。",
+        "rating": "S",
+        "score": 95,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这会继续延伸到OpenAI多云战略、微软销售权边界以及大模型公司与渠道伙伴之间的权力再平衡。",
+        "entities": [
+          "Aws",
+          "Microsoft",
+          "OpenAI",
+          "Sam Altman",
+          "Satya Nadella"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/nadella-altman-averted-legal-war-aws"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.166476",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/nadella-altman-averted-legal-war-aws",
+        "event_id": null
+      },
+      {
+        "id": "fd533d0129fd66f0c46a542005d21da2",
+        "title": "消息称腾讯用Claude Code辅助打磨自家Hy3模型",
+        "chinese_title": "消息称腾讯用Claude Code辅助打磨自家Hy3模型",
+        "original_title": "Sources and memos: Tencent employees used Claude Code to assist them with evaluating and fine-tuning the company's new Hy3 model to improve its performance (Juro Osawa/The Information)",
+        "summary": "Techmeme聚合The Information报道，腾讯员工据称曾用Claude Code参与评估和微调自家Hy3模型，说明顶级模型正开始反向成为竞争对手内部研发工具。",
+        "rating": "B",
+        "score": 72,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "如果更多大厂被曝借助竞争对手模型优化自身模型，AI竞赛的边界会从模型对抗转向工具链依赖与服务限制博弈。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Claude Code",
+          "Hy3",
+          "Tencent"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260428/p19#a260428p19"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.166567",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260428/p19#a260428p19",
+        "event_id": null
+      },
+      {
+        "id": "4401a34c9a5840a7998c75e9d37ec667",
+        "title": "FIDO联合谷歌万事达围堵AI代理乱刷信用卡风险",
+        "chinese_title": "FIDO联合谷歌万事达围堵AI代理乱刷信用卡风险",
+        "original_title": "The Race Is on to Keep AI Agents From Running Wild With Your Credit Cards",
+        "summary": "Wired报道，随着AI代理开始替用户下单购物，FIDO Alliance正联手Google和Mastercard提前设计身份与支付安全方案，试图防止代理经济变成大规模盗刷事故。",
+        "rating": "A",
+        "score": 82,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "如果代理支付能力快速普及，认证标准、责任归属和风控产品都会迎来新机会，也可能催生新的监管讨论。",
+        "entities": [
+          "Ai Agents",
+          "Credit Cards",
+          "Fido Alliance",
+          "Google",
+          "Mastercard"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/the-race-is-on-to-keep-ai-agents-from-running-wild-with-your-credit-cards/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.166657",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/the-race-is-on-to-keep-ai-agents-from-running-wild-with-your-credit-cards/",
+        "event_id": null
+      },
+      {
+        "id": "b736ae4ad8035a8379a4af1ca98a9d56",
+        "title": "腾讯新模型表现提升背后被曝借力Anthropic Claude",
+        "chinese_title": "腾讯新模型表现提升背后被曝借力Anthropic Claude",
+        "original_title": "Tencent’s New Model Shows Improvement, Partly Thanks to Anthropic",
+        "summary": "The Information称，腾讯员工用Anthropic的Claude帮助评估并微调Hy3模型，而Anthropic原本并不向中国等受限地区企业提供服务，这让模型竞赛出现了耐人寻味的借力关系。",
+        "rating": "A+",
+        "score": 89,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这不仅涉及中美模型能力竞赛，也触及服务出口限制、企业合规边界和模型作为研发工具的灰色地带。",
+        "entities": [
+          "Anthropic",
+          "China",
+          "Claude",
+          "Hy3",
+          "Tencent"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/tencents-new-model-shows-improvement-partly-thanks-anthropic"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.166747",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/tencents-new-model-shows-improvement-partly-thanks-anthropic",
+        "event_id": null
+      },
+      {
+        "id": "a09c08ba5b0cf3e1aa454d1ac6085b2c",
+        "title": "Red Hat工程师把OpenClaw企业部署装进更安全容器",
+        "chinese_title": "Red Hat工程师把OpenClaw企业部署装进更安全容器",
+        "original_title": "Red Hat’s OpenClaw maintainer just made enterprise Claw deployments a lot safer",
+        "summary": "TechCrunch报道，OpenClaw维护者推出Tank OS，把AI代理运行环境封装进更安全可靠的容器体系，希望降低企业批量部署代理时的执行风险和运维负担。",
+        "rating": "A",
+        "score": 79,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "随着企业开始把代理系统拉进生产环境，安全封装、隔离运行时和审计能力会变成一条越来越明确的基础设施赛道。",
+        "entities": [
+          "Ai Agents",
+          "Containers",
+          "Openclaw",
+          "Red Hat",
+          "Tank Os"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/28/red-hats-openclaw-maintainer-just-made-enterprise-claw-deployments-a-lot-safer/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777388759,
+        "published_at": "2026-04-28T23:05:59.166836",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/28/red-hats-openclaw-maintainer-just-made-enterprise-claw-deployments-a-lot-safer/",
+        "event_id": null
+      },
+      {
         "id": "3497b3cce6fcb6b04507cf0fb26e3e91",
         "title": "DeepSeek把V4-Pro价格猛砍75% 大模型价格战继续升级",
         "chinese_title": "DeepSeek把V4-Pro价格猛砍75% 大模型价格战继续升级",
@@ -22439,6 +22932,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-28T14:05:47.709647",
-  "total_news": 767
+  "last_updated": "2026-04-28T23:05:59.585890",
+  "total_news": 783
 }
