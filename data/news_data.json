@@ -2,6 +2,220 @@
   "news": {
     "2026-04-28": [
       {
+        "id": "39032f1fe30b20b2c9edd2fa49d2cf9e",
+        "title": "SpaceX与AI巨头扎堆IPO，投资人警告算力热潮或遇冷",
+        "chinese_title": "SpaceX与AI巨头扎堆IPO，投资人警告算力热潮或遇冷",
+        "original_title": "SpaceX and AI IPOs Hold Risks for AI Buildout, Say Investors at AI Event",
+        "summary": "The Information援引投资人观点称，SpaceX以及Anthropic、OpenAI等潜在IPO若上市表现失速，可能直接打击资本市场对数据中心和AI基建的融资热情，进而拖慢本轮AI扩张节奏。",
+        "rating": "S",
+        "score": 95,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "这条线索可以继续追踪AI基建融资是否开始分化，以及IPO表现会不会反过来影响算力、芯片和云厂商的资本开支预期。",
+        "entities": [
+          "Alexa Von Tobel",
+          "Anthropic",
+          "Inspired Capital",
+          "OpenAI",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/spacex-ai-ipos-hold-risks-ai-buildout-say-investors-ai-event"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777334621,
+        "published_at": "2026-04-28T08:03:41.605877",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/spacex-ai-ipos-hold-risks-ai-buildout-say-investors-ai-event",
+        "event_id": null
+      },
+      {
+        "id": "0619c17e263285866a38dfbe515e1652",
+        "title": "开源路由器Mahoraga实测：Qwen3 4B写代码跑赢云端Agent",
+        "chinese_title": "开源路由器Mahoraga实测：Qwen3 4B写代码跑赢云端Agent",
+        "original_title": "Qwen3 4B outperforms cloud agents on code tasks—with Mahoraga research [R]",
+        "summary": "一位开发者用192个任务测试本地与云端智能体，称基于LinUCB的开源编排器Mahoraga让Qwen3 4B在代码生成和重构场景中以更低延迟跑赢多款云端代理，凸显轻量本地模型的性价比。",
+        "rating": "A+",
+        "score": 91,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "后续可以追问这类本地路由方案是否会改变开发者默认调用云端大模型的习惯，以及评测方法和安全指标是否足够稳健。",
+        "entities": [
+          "Claude",
+          "Linucb",
+          "Mahoraga",
+          "Ollama",
+          "Qwen"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning (deepseek)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sxhpnn/qwen3_4b_outperforms_cloud_agents_on_code/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777334621,
+        "published_at": "2026-04-28T08:03:41.605984",
+        "source": "Machine Learning (deepseek)",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sxhpnn/qwen3_4b_outperforms_cloud_agents_on_code/",
+        "event_id": null
+      },
+      {
+        "id": "780ba926c20c07f89e12591b41efb81e",
+        "title": "TensorDock GPU实例频繁宕机，研究用户吐槽存储续费也救不回虚机",
+        "chinese_title": "TensorDock GPU实例频繁宕机，研究用户吐槽存储续费也救不回虚机",
+        "original_title": "Anyone using Tensordock GPU instances and having problems with failing VM’s [D]",
+        "summary": "有用户在社区投诉TensorDock的GPU虚机连续无法启动、客服长期失联，且即便持续为存储付费也无法快速挂载恢复镜像，这暴露出中小算力平台在可靠性和售后机制上的脆弱性。",
+        "rating": "B",
+        "score": 68,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可以延伸比较中小GPU云服务商在可用性、灾备和SLA上的差异，看算力价格战之外，稳定性是否正在成为新一轮竞争门槛。",
+        "entities": [
+          "Gpu",
+          "Storage",
+          "Support",
+          "Tensordock",
+          "Vm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1sxdh95/anyone_using_tensordock_gpu_instances_and_having/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777334621,
+        "published_at": "2026-04-28T08:03:41.606081",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1sxdh95/anyone_using_tensordock_gpu_instances_and_having/",
+        "event_id": null
+      },
+      {
+        "id": "3ab2508c9236802f3f59adb90c5deec8",
+        "title": "GPT 5.5对比Opus 4.7写代码，社区开始细抠推理差距",
+        "chinese_title": "GPT 5.5对比Opus 4.7写代码，社区开始细抠推理差距",
+        "original_title": "In-depth comparison of GPT 5.5 vs Opus 4.7 in coding reasoning",
+        "summary": "一则社区帖子抛出GPT 5.5与Opus 4.7在编程推理上的深度对比，虽然原帖信息有限，但反映出开发者正在把模型竞争从通用聊天进一步拉到真实代码质量和推理稳定性的较量上。",
+        "rating": "A",
+        "score": 76,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "如果原作者补充具体任务和结果，这条内容可以扩展为不同模型在代码审查、长链推理和交互成本上的横向测评。",
+        "entities": [
+          "Anthropic",
+          "Coding Reasoning",
+          "GPT",
+          "OpenAI",
+          "Opus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sxjq46/indepth_comparison_of_gpt_55_vs_opus_47_in_coding/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777334621,
+        "published_at": "2026-04-28T08:03:41.606340",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sxjq46/indepth_comparison_of_gpt_55_vs_opus_47_in_coding/",
+        "event_id": null
+      },
+      {
+        "id": "91fe75f1d0b853f32ca8bfcdcb6f2bef",
+        "title": "ChatGPT 5.4被曝一击解出60多年Erdos难题，社区争论真假分界",
+        "chinese_title": "ChatGPT 5.4被曝一击解出60多年Erdos难题，社区争论真假分界",
+        "original_title": "Chat GPT 5.4 solved a 60+ years unsolved erdos problems in a single shot",
+        "summary": "社区帖子称ChatGPT 5.4借助一次对话就解决了一个60多年未解的Erdos问题，并附上公开对话与题目链接，尽管说法仍待数学界核验，但足以点燃模型推理能力是否跨入新阶段的讨论。",
+        "rating": "A+",
+        "score": 89,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "后续值得追踪数学界是否认可这一定性，以及这类\"开放难题被模型拿下\"的案例会不会改变大众对大模型推理上限的判断。",
+        "entities": [
+          "Erdos Problems",
+          "GPT",
+          "OpenAI",
+          "Terence Tao"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sxixck/chat_gpt_54_solved_a_60_years_unsolved_erdos/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777334621,
+        "published_at": "2026-04-28T08:03:41.606421",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sxixck/chat_gpt_54_solved_a_60_years_unsolved_erdos/",
+        "event_id": null
+      },
+      {
+        "id": "957ce82610dd547027b02ea0ae90e4ba",
+        "title": "Anthropic收紧Claude Code里Opus权限，Pro用户还得额外买量",
+        "chinese_title": "Anthropic收紧Claude Code里Opus权限，Pro用户还得额外买量",
+        "original_title": "Anthropic states Pro users can only access Opus models in Claude Code after enabling and purchasing extra usage",
+        "summary": "社区援引Claude Code模型配置说明称，Anthropic的Pro订阅用户若想在Claude Code里使用Opus模型，还需额外开启并购买更多用量，这意味着高端编码能力正被进一步分层售卖。",
+        "rating": "A+",
+        "score": 87,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这条新闻可以继续追踪Anthropic的开发者商业化策略是否会影响Claude Code adoption，并刺激用户转向更便宜或更开放的替代方案。",
+        "entities": [
+          "Anthropic",
+          "Claude Code",
+          "Opus",
+          "Pro"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sxho7l/anthropic_states_pro_users_can_only_access_opus/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777334621,
+        "published_at": "2026-04-28T08:03:41.606586",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sxho7l/anthropic_states_pro_users_can_only_access_opus/",
+        "event_id": null
+      },
+      {
+        "id": "6cf5cb128beed571a774b274320c6999",
+        "title": "OpenAI开源Codex编排规范Symphony，部分团队PR落地量飙升500%",
+        "chinese_title": "OpenAI开源Codex编排规范Symphony，部分团队PR落地量飙升500%",
+        "original_title": "An open-source spec for Codex orchestration: Symphony",
+        "summary": "OpenAI发布工程文章并开源Codex编排规范Symphony，主张把Linear这类任务板变成编码代理控制平面，让每个任务绑定持续运行的agent；官方称该模式已让部分团队的落地PR数量在三周内提升500%。",
+        "rating": "A+",
+        "score": 88,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可继续追踪Symphony与现有CI/CD、issue tracker和多agent工作流的集成方式，以及它对软件团队组织形态和工程管理成本的影响。",
+        "entities": [
+          "OpenAI",
+          "Codex",
+          "Symphony",
+          "Linear"
+        ],
+        "sourceLinks": [
+          {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/open-source-codex-orchestration-symphony/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777333722,
+        "published_at": "2026-04-28T07:48:42.822274",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/open-source-codex-orchestration-symphony/",
+        "event_id": null
+      },
+      {
         "id": "7262e44473650d860b9d8fb5f8df5dc8",
         "title": "微软与OpenAI拆独家协议，AWS和谷歌云获准卖模型",
         "chinese_title": "微软与OpenAI拆独家协议，AWS和谷歌云获准卖模型",
@@ -1646,36 +1860,6 @@
       }
     ],
     "2026-04-27": [
-      {
-        "id": "6cf5cb128beed571a774b274320c6999",
-        "title": "OpenAI开源Codex编排规范Symphony，部分团队PR落地量飙升500%",
-        "chinese_title": "OpenAI开源Codex编排规范Symphony，部分团队PR落地量飙升500%",
-        "original_title": "An open-source spec for Codex orchestration: Symphony",
-        "summary": "OpenAI发布工程文章并开源Codex编排规范Symphony，主张把Linear这类任务板变成编码代理控制平面，让每个任务绑定持续运行的agent；官方称该模式已让部分团队的落地PR数量在三周内提升500%。",
-        "rating": "A+",
-        "score": 88,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可继续追踪Symphony与现有CI/CD、issue tracker和多agent工作流的集成方式，以及它对软件团队组织形态和工程管理成本的影响。",
-        "entities": [
-          "OpenAI",
-          "Codex",
-          "Symphony",
-          "Linear"
-        ],
-        "sourceLinks": [
-          {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/open-source-codex-orchestration-symphony/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777333722,
-        "published_at": "2026-04-28T07:48:42.822274",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/open-source-codex-orchestration-symphony/",
-        "event_id": null
-      },
       {
         "id": "eb7e94882626e4aa705958be64a81d7a",
         "title": "微软放开OpenAI云销售独家权，AGI条款也被删",
@@ -23296,6 +23480,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-28T07:48:42.847219",
-  "total_news": 797
+  "last_updated": "2026-04-28T08:04:10.248461",
+  "total_news": 803
 }
