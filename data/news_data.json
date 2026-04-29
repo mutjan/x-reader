@@ -2,19 +2,50 @@
   "news": {
     "2026-04-29": [
       {
+        "id": "94c1984aae9141339cc3683da33b1a6d",
+        "title": "AWS掌门人放话要做OpenAI更强云搭档",
+        "chinese_title": "AWS掌门人放话要做OpenAI更强云搭档",
+        "original_title": "An interview with AWS CEO Matt Garman on why AWS will be a better OpenAI partner than Microsoft, chip bubble fears, Jeff Bezos' Project Prometheus, and more (Alex Heath/Sources)",
+        "summary": "AWS CEO Matt Garman在采访中公开强调亚马逊会成为比微软更合拍的OpenAI伙伴，并回应芯片泡沫担忧、Anthropic合作和贝索斯项目布局，释放云厂商争夺顶级模型生态话语权的信号。",
+        "rating": "A+",
+        "score": 87,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可延伸到OpenAI重写云合作版图、AWS与微软在训练和推理资源上的正面竞争，以及Anthropic在两家云巨头之间的博弈价值。",
+        "entities": [
+          "Anthropic",
+          "Aws",
+          "Matt Garman",
+          "Microsoft",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260429/p7#a260429p7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777446359,
+        "published_at": "2026-04-29T15:05:59.464009",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260429/p7#a260429p7",
+        "event_id": null
+      },
+      {
         "id": "271afceb3b0ebab225633798081a4883",
-        "title": "台积电清仓Arm持股两年回报翻四倍",
-        "chinese_title": "台积电清仓Arm持股两年回报翻四倍",
+        "title": "台积电清仓Arm大赚后套现释放芯片周期信号",
+        "chinese_title": "台积电清仓Arm大赚后套现释放芯片周期信号",
         "original_title": "Filing: TSMC sold its remaining 1.11M Arm shares at $207.65 per share for a total of ~$231M this week; TSMC invested ~$100M in Arm's 2023 IPO at $51 per share (Wen-Yee Lee/Reuters)",
-        "summary": "监管文件显示，台积电本周以每股207.65美元卖出剩余111万股Arm股票，累计套现约2.31亿美元，相比其在2023年IPO时约1亿美元的投入实现大幅浮盈退出。",
+        "summary": "台积电本周以约2.31亿美元卖出剩余Arm持股，较2023年IPO入场价大幅浮盈，既反映Arm估值飙升，也让市场重新审视芯片资本热潮与上游巨头的仓位选择。",
         "rating": "B",
-        "score": 72,
+        "score": 78,
         "type": "financial",
         "typeName": "商业数据",
         "expansion": "这不仅是一次财务兑现，也会被市场解读为上游晶圆代工龙头对Arm估值阶段性见顶的信号，后续可延展到芯片IP定价、AI终端生态和半导体资本流向变化。",
         "entities": [
           "Arm",
-          "Reuters",
+          "Ipo",
           "TSMC"
         ],
         "sourceLinks": [
@@ -28,16 +59,19 @@
         "published_at": "2026-04-29T14:04:13.165122",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260429/p6#a260429p6",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Wen-Yee Lee / Reuters : Filing: TSMC sold its remaining 1.11M Arm shares at $207.65 per share for a total of ~$231M this week; TSMC invested ~$100M in Arm's 2023 IPO at $51 per share — Taiwan Semiconductor Manufacturing Co (2330.TW), the world's largest contract chipmaker, has sold its remaining stake in Arm Holdings …",
+        "grade": "A",
+        "extension": "可延伸到Arm高估值是否透支未来增长、台积电为何选择兑现收益，以及AI芯片链条里设计授权模式与代工龙头之间的利益重估。"
       },
       {
         "id": "51b7ce8501b60230268b083a138f23c9",
-        "title": "百度萝卜快跑扰城后中国暂停L4新牌照",
-        "chinese_title": "百度萝卜快跑扰城后中国暂停L4新牌照",
+        "title": "中国暂停新增L4牌照百度萝卜快跑撞上监管急刹",
+        "chinese_title": "中国暂停新增L4牌照百度萝卜快跑撞上监管急刹",
         "original_title": "Sources: China suspends issuing new Level 4 autonomous vehicle licenses, after over 100 of Baidu's Apollo Go robotaxis disrupted traffic in Wuhan last month (Bloomberg)",
-        "summary": "知情人士称，中国在武汉上百辆Apollo Go无人出租车引发交通干扰后，已暂停发放新的L4级自动驾驶牌照，意味着Robotaxi商业化节奏将受到更严格监管约束。",
+        "summary": "知情人士称中国在武汉上百辆Apollo Go扰乱交通后暂停发放新的L4自动驾驶牌照，这让Robotaxi商业化节奏、地方试点容忍度和百度自动驾驶扩张预期同时承压。",
         "rating": "A",
-        "score": 86,
+        "score": 85,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "监管转向会直接影响百度等运营商的扩张预期，也可能传导到整车厂、激光雷达和自动驾驶政策试点，后续值得跟踪地方监管尺度和行业重估。",
@@ -59,7 +93,10 @@
         "published_at": "2026-04-29T14:04:13.165365",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260429/p5#a260429p5",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Bloomberg : Sources: China suspends issuing new Level 4 autonomous vehicle licenses, after over 100 of Baidu's Apollo Go robotaxis disrupted traffic in Wuhan last month — China has suspended issuing new licenses for autonomous vehicles, according to people familiar with the matter …",
+        "grade": "A",
+        "extension": "可延伸到中国Robotaxi监管从鼓励试点转向审慎收口，百度等玩家的规模化投放策略将被重估，产业链也可能跟着放慢落地节奏。"
       },
       {
         "id": "f0938acf9bb1dfe7c46f0a93eb78ae62",
@@ -22217,6 +22254,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-29T14:04:13.672118",
-  "total_news": 753
+  "last_updated": "2026-04-29T15:06:49.617717",
+  "total_news": 754
 }
