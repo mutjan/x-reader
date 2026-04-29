@@ -2,13 +2,73 @@
   "news": {
     "2026-04-29": [
       {
+        "id": "271afceb3b0ebab225633798081a4883",
+        "title": "台积电清仓Arm持股两年回报翻四倍",
+        "chinese_title": "台积电清仓Arm持股两年回报翻四倍",
+        "original_title": "Filing: TSMC sold its remaining 1.11M Arm shares at $207.65 per share for a total of ~$231M this week; TSMC invested ~$100M in Arm's 2023 IPO at $51 per share (Wen-Yee Lee/Reuters)",
+        "summary": "监管文件显示，台积电本周以每股207.65美元卖出剩余111万股Arm股票，累计套现约2.31亿美元，相比其在2023年IPO时约1亿美元的投入实现大幅浮盈退出。",
+        "rating": "B",
+        "score": 72,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "这不仅是一次财务兑现，也会被市场解读为上游晶圆代工龙头对Arm估值阶段性见顶的信号，后续可延展到芯片IP定价、AI终端生态和半导体资本流向变化。",
+        "entities": [
+          "Arm",
+          "Reuters",
+          "TSMC"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260429/p6#a260429p6"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777442653,
+        "published_at": "2026-04-29T14:04:13.165122",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260429/p6#a260429p6",
+        "event_id": null
+      },
+      {
+        "id": "51b7ce8501b60230268b083a138f23c9",
+        "title": "百度萝卜快跑扰城后中国暂停L4新牌照",
+        "chinese_title": "百度萝卜快跑扰城后中国暂停L4新牌照",
+        "original_title": "Sources: China suspends issuing new Level 4 autonomous vehicle licenses, after over 100 of Baidu's Apollo Go robotaxis disrupted traffic in Wuhan last month (Bloomberg)",
+        "summary": "知情人士称，中国在武汉上百辆Apollo Go无人出租车引发交通干扰后，已暂停发放新的L4级自动驾驶牌照，意味着Robotaxi商业化节奏将受到更严格监管约束。",
+        "rating": "A",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "监管转向会直接影响百度等运营商的扩张预期，也可能传导到整车厂、激光雷达和自动驾驶政策试点，后续值得跟踪地方监管尺度和行业重估。",
+        "entities": [
+          "Apollo Go",
+          "Baidu",
+          "China",
+          "Level 4 Autonomous Vehicles",
+          "Wuhan"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260429/p5#a260429p5"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777442653,
+        "published_at": "2026-04-29T14:04:13.165365",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260429/p5#a260429p5",
+        "event_id": null
+      },
+      {
         "id": "f0938acf9bb1dfe7c46f0a93eb78ae62",
-        "title": "苹果印度扩产踩刹车，中国团队空缺成瓶颈",
-        "chinese_title": "苹果印度扩产踩刹车，中国团队空缺成瓶颈",
+        "title": "苹果放缓印度扩产暴露去中国化瓶颈",
+        "chinese_title": "苹果放缓印度扩产暴露去中国化瓶颈",
         "original_title": "Sources: Apple tells suppliers it will maintain its current production share in India rather than expand, after local sites struggled without China-based teams (Nikkei Asia)",
-        "summary": "消息称苹果已通知供应商维持当前印度产能占比而非继续扩张，原因是当地工厂在缺少中国团队支持时暴露出执行和爬坡能力短板。",
+        "summary": "日经称，苹果已通知供应商维持当前印度产能占比而非继续扩张，原因是当地工厂在缺少中国团队支援时暴露出执行和效率短板，显示供应链迁移难度高于预期。",
         "rating": "A+",
-        "score": 87,
+        "score": 82,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "这会拖慢苹果分散供应链的节奏，也会让外界重新评估\"去中国化\"制造迁移在管理、工艺和人才协同上的真实成本。",
@@ -16,8 +76,7 @@
           "Apple",
           "China",
           "India",
-          "Iphone",
-          "Supply Chain"
+          "Nikkei Asia"
         ],
         "sourceLinks": [
           {
@@ -30,25 +89,27 @@
         "published_at": "2026-04-29T13:06:43.490182",
         "source": "Techmeme (apple)",
         "url": "http://www.techmeme.com/260429/p4#a260429p4",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Nikkei Asia : Sources: Apple tells suppliers it will maintain its current production share in India rather than expand, after local sites struggled without China-based teams — PALO ALTO, California/TAIPEI — Apple's incoming CEO has a China problem: On the one hand, the iPhone giant is finally seeing sales rebound …",
+        "grade": "A",
+        "extension": "这条线索可继续追踪苹果CEO交接、印度制造成熟度和中国工程体系不可替代性，也会影响全球电子供应链再平衡与地缘制造叙事。"
       },
       {
         "id": "87c68bdaa14830cf3dbec3c1bf8af98e",
-        "title": "五角大楼扩用Gemini，公开压低单一模型依赖",
-        "chinese_title": "五角大楼扩用Gemini，公开压低单一模型依赖",
+        "title": "五角大楼扩大Gemini采用分散大模型供应商",
+        "chinese_title": "五角大楼扩大Gemini采用分散大模型供应商",
         "original_title": "Pentagon's Digital and AI Chief Cameron Stanley confirms the DoD is expanding its Google Gemini use, saying \"overreliance on one vendor is never a good thing\" (Seema Mody/CNBC)",
-        "summary": "美国国防部数字与AI负责人确认正扩大Google Gemini的使用范围，并明确表示不应过度依赖单一供应商，释放政府AI采购多元化信号。",
+        "summary": "美国国防部数字与AI负责人Cameron Stanley确认，DoD正在扩大对Google Gemini的使用，并明确表示不能过度依赖单一厂商，反映政府AI采购进入多模型并行阶段。",
         "rating": "A",
-        "score": 85,
+        "score": 84,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "如果联邦部门开始系统性配置多家模型供应商，云厂商与大模型公司的政企竞标、合规认证和定制部署都会进入更激烈的新阶段。",
         "entities": [
           "Cameron Stanley",
+          "Cnbc",
           "Department Of Defense",
-          "Gemini",
-          "Google",
-          "Pentagon"
+          "Google Gemini"
         ],
         "sourceLinks": [
           {
@@ -61,24 +122,26 @@
         "published_at": "2026-04-29T13:06:43.490325",
         "source": "Techmeme (Gemini)",
         "url": "http://www.techmeme.com/260429/p3#a260429p3",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Seema Mody / CNBC : Pentagon's Digital and AI Chief Cameron Stanley confirms the DoD is expanding its Google Gemini use, saying “overreliance on one vendor is never a good thing” — Pentagon AI chief Cameron Stanley confirmed to CNBC that the Department of Defense is expanding its use …",
+        "grade": "A",
+        "extension": "这会把大模型竞争从企业市场进一步推向联邦采购和军方场景，后续可延展到OpenAI、Anthropic、Google在安全审查、主权部署和预算分配上的新博弈。"
       },
       {
         "id": "5267208c5c87d40d692610cd37d8763d",
         "title": "AI销售代理公司Actively再融4500万美元",
         "chinese_title": "AI销售代理公司Actively再融4500万美元",
         "original_title": "New York-based Actively, which offers AI sales agents for account management, raised a $45M Series B co-led by TCV and First Harmonic at a $250M valuation (Sofia Chierchio/Forbes)",
-        "summary": "总部位于纽约的Actively完成4500万美元B轮融资，计划扩大其面向客户管理场景的AI销售代理，把销售代表的重复性工作进一步自动化。",
+        "summary": "纽约初创Actively完成4500万美元B轮融资，估值达2.5亿美元，公司主打面向客户管理场景的AI销售代理，资本继续押注能够替代重复销售流程的垂直代理软件。",
         "rating": "B",
-        "score": 72,
+        "score": 71,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "这说明AI Agent的融资焦点正从通用助手转向可量化ROI的垂直岗位自动化，后续值得跟踪CRM生态和销售软件厂商的跟进反应。",
         "entities": [
           "Actively",
-          "Ai Sales Agents",
-          "Crm",
           "First Harmonic",
+          "Forbes",
           "Tcv"
         ],
         "sourceLinks": [
@@ -92,24 +155,26 @@
         "published_at": "2026-04-29T13:06:43.490449",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260429/p2#a260429p2",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Sofia Chierchio / Forbes : New York-based Actively, which offers AI sales agents for account management, raised a $45M Series B co-led by TCV and First Harmonic at a $250M valuation — Actively AI has raised $45 million to scale up its AI sales agents, which can automate a chunk of the work reps typically do manually.",
+        "grade": "B",
+        "extension": "这笔融资可以继续观察企业级AI代理从客服向销售和客户成功扩张的商业化进度，也能对比同类玩家在ROI证明、部署周期和人机协作边界上的差异。"
       },
       {
         "id": "ccbb9a61c2f82af3964c01189c47f4a3",
-        "title": "白宫拟为Anthropic开绿灯，Mythos入政府采购名单",
-        "chinese_title": "白宫拟为Anthropic开绿灯，Mythos入政府采购名单",
+        "title": "白宫拟绕过风险标记为Anthropic重新开门",
+        "chinese_title": "白宫拟绕过风险标记为Anthropic重新开门",
         "original_title": "Sources: the White House is developing rules for government agencies to get around Anthropic's supply chain risk designation and onboard new models like Mythos (Axios)",
-        "summary": "消息称白宫正研究新规则，帮助联邦机构绕开Anthropic现有供应链风险标签，将包括Mythos在内的新模型更快纳入政府采购体系。",
+        "summary": "Axios称，白宫正研究一套规则，帮助联邦机构绕开Anthropic现有的供应链风险标记，以便重新引入包括Mythos在内的新模型，显示美国政府内部AI准入标准正在重新协调。",
         "rating": "A+",
-        "score": 88,
+        "score": 80,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这不只是一次采购流程调整，也会把\"高风险模型如何进入政府体系\"的审查标准推到台前，影响后续AI安全分级和政企准入规则。",
         "entities": [
           "Anthropic",
+          "Axios",
           "Mythos",
-          "Supply Chain Risk",
-          "Us Government",
           "White House"
         ],
         "sourceLinks": [
@@ -123,7 +188,10 @@
         "published_at": "2026-04-29T13:06:43.490553",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260429/p1#a260429p1",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Axios : Sources: the White House is developing rules for government agencies to get around Anthropic's supply chain risk designation and onboard new models like Mythos — - One source described the White House efforts as a way to “save face and bring em back in.” — Earlier this month …",
+        "grade": "A",
+        "extension": "如果规则落地，既会改变联邦机构的大模型采购格局，也会引出安全审查、供应链可信与政策口径是否一致的争议，是政策和产业双线都值得追踪的信号。"
       },
       {
         "id": "2dab913aaa5d0033701792f145e390b1",
@@ -22146,37 +22214,9 @@
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260422/p8#a260422p8",
         "event_id": null
-      },
-      {
-        "id": "67976f741a3bd8a9d4af5eceae486c53",
-        "title": "Zig浏览器智能体项目Kuri开源",
-        "original_title": "Kuri – Zig based agent-browser alternative",
-        "summary": "Kuri 是一个基于 Zig 构建的 agent-browser 替代项目，面向希望用更轻量底层语言探索浏览器自动化和智能体交互的开发者。",
-        "rating": "B",
-        "score": 70,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可继续关注它是否形成可用的浏览器自动化工具链，以及 Zig 生态在 AI Agent 基础设施中的采用度。",
-        "entities": [
-          "Agent Browser",
-          "Kuri",
-          "Zig"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/justrach/kuri"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776837817,
-        "published_at": "2026-04-22T14:03:37.485309",
-        "source": "Hacker News",
-        "url": "https://github.com/justrach/kuri",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-29T13:07:27.584909",
-  "total_news": 752
+  "last_updated": "2026-04-29T14:04:13.672118",
+  "total_news": 753
 }
