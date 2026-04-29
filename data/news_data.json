@@ -2,6 +2,66 @@
   "news": {
     "2026-04-29": [
       {
+        "id": "ec9c796376201393420ef749a3f576ce",
+        "title": "苹果推新色彩标准，Studio Display XDR实测曝光",
+        "chinese_title": "苹果推新色彩标准，Studio Display XDR实测曝光",
+        "original_title": "Apple CMF (Color-Matching Functions) 2026",
+        "summary": "苹果随新款 Studio Display XDR 推出 Apple CMF 2026 色彩匹配函数，并与行业校准厂商协作落地，试图提升高亮参考模式下的人眼颜色一致性，也可能改写专业显示器校准与评测标准。",
+        "rating": "A",
+        "score": 86,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "如果苹果的新色彩标准被更多校准工具和创作软件接入，专业显示器评测、影视后期和摄影工作流都可能被迫重新对齐。后续值得跟踪第三方厂商是否跟进，以及传统 CIE 1931 标准会否被进一步挑战。",
+        "entities": [
+          "Apple",
+          "Apple Cmf",
+          "Cie",
+          "Studio Display Xdr"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (apple)",
+            "url": "https://www.lttlabs.com/articles/2026/04/11/apple-studio-display-xdr-display-testing-results"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777428246,
+        "published_at": "2026-04-29T10:04:06.075617",
+        "source": "Hacker News (apple)",
+        "url": "https://www.lttlabs.com/articles/2026/04/11/apple-studio-display-xdr-display-testing-results",
+        "event_id": null
+      },
+      {
+        "id": "7b26ded9313a4d13f0801e74a6608f65",
+        "title": "Mendral改用前沿模型，LLM成本反而砍下来",
+        "chinese_title": "Mendral改用前沿模型，LLM成本反而砍下来",
+        "original_title": "We decreased our LLM costs with Opus",
+        "summary": "Mendral 披露其 CI 故障诊断系统升级到 Opus 4.6 后，总成本反而低于过去全量使用 Sonnet 的方案，关键在于让便宜的 Haiku 先分流重复问题，再把少数复杂案例交给高阶模型和子代理深入排查。",
+        "rating": "A",
+        "score": 81,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这类分层代理架构如果被更多 AI 开发工具采用，模型选型会从单纯比单价转向比系统吞吐和路由策略。后续可以观察 DevOps、安全和数据运维产品是否集体转向\"贵模型决策、便宜模型执行\"的设计。",
+        "entities": [
+          "Clickhouse",
+          "Haiku",
+          "Mendral",
+          "Opus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.mendral.com/blog/frontier-model-lower-costs"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777428246,
+        "published_at": "2026-04-29T10:04:06.075724",
+        "source": "Hacker News",
+        "url": "https://www.mendral.com/blog/frontier-model-lower-costs",
+        "event_id": null
+      },
+      {
         "id": "f9b98c1fb0a516ed6ae623f8c2197220",
         "title": "马斯克在OpenAI庭审上重提与奥特曼旧日关系",
         "chinese_title": "马斯克在OpenAI庭审上重提与奥特曼旧日关系",
@@ -22135,66 +22195,9 @@
         "source": "Hacker News",
         "url": "https://developers.openai.com/codex/memories/chronicle",
         "event_id": null
-      },
-      {
-        "id": "41cb87b113e7cb68f5a0f9a444bf2772",
-        "title": "SpaceX披露轨道AI数据中心商业风险",
-        "original_title": "Filing: SpaceX tells investors that orbital AI data centers use \"unproven technologies\" and may not achieve \"commercial viability\" due to space-related risks (Echo Wang/Reuters)",
-        "summary": "SpaceX在投资者文件中提示，轨道AI数据中心仍依赖未经验证的技术，可能因发射、维护和空间环境等风险难以实现商业化。",
-        "rating": "A+",
-        "score": 88,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "这一披露会把太空算力从概念想象拉回工程和资本约束，后续可追踪SpaceX融资叙事、星链基础设施复用，以及地面数据中心竞品的成本对比。",
-        "entities": [
-          "Ai Data Centers",
-          "Orbital Ai Data Centers",
-          "SpaceX"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260421/p55#a260421p55"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776823415,
-        "published_at": "2026-04-22T10:03:35.388286",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260421/p55#a260421p55",
-        "event_id": null
-      },
-      {
-        "id": "5b445d51f2d65d9bd3041b8178103f5f",
-        "title": "Claude Code退出Anthropic低价Pro订阅",
-        "original_title": "Claude Code Removed from $20-a-Month \"Pro\" Subscription for New Users",
-        "summary": "Anthropic面向新用户移除20美元Pro套餐中的Claude Code权益，显示其正在重新划分高消耗开发工具的定价边界和用户分层。",
-        "rating": "A+",
-        "score": 88,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "该调整可能影响开发者对Claude生态的留存和迁移，也会带动竞品重新包装代码助手套餐，后续可观察付费转化、限额策略和社区反弹。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Claude Code",
-          "Pro Subscription"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.wheresyoured.at/news-anthropic-removes-pro-cc/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776823415,
-        "published_at": "2026-04-22T10:03:35.388475",
-        "source": "Hacker News",
-        "url": "https://www.wheresyoured.at/news-anthropic-removes-pro-cc/",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-29T09:06:00.502471",
+  "last_updated": "2026-04-29T10:04:30.838461",
   "total_news": 753
 }
