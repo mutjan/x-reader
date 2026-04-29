@@ -2,6 +2,314 @@
   "news": {
     "2026-04-29": [
       {
+        "id": "f9b98c1fb0a516ed6ae623f8c2197220",
+        "title": "马斯克在OpenAI庭审上重提与奥特曼旧日关系",
+        "chinese_title": "马斯克在OpenAI庭审上重提与奥特曼旧日关系",
+        "original_title": "At his OpenAI trial, Musk relitigates an old friendship",
+        "summary": "马斯克在OpenAI相关庭审宣誓作证时再次讲述自己与Sam Altman及OpenAI早期关系，把私人裂痕与公司使命之争重新带回法庭，也让这场诉讼进一步演变为AI权力史的公开对质。",
+        "rating": "A+",
+        "score": 90,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "如果庭审继续围绕创始初衷和控制权展开，后续可能牵出更多OpenAI早期内部决策细节，也会放大AI公司治理与非营利承诺的讨论。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "Sam Altman",
+          "Walter Isaacson"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/28/at-his-openai-trial-musk-relitigates-an-old-friendship/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777424728,
+        "published_at": "2026-04-29T09:05:28.334186",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/28/at-his-openai-trial-musk-relitigates-an-old-friendship/",
+        "event_id": null
+      },
+      {
+        "id": "5ce94bc1b856679cdac8ced8d744713f",
+        "title": "前推特CEO创业做AI代理搜索获1亿美元融资",
+        "chinese_title": "前推特CEO创业做AI代理搜索获1亿美元融资",
+        "original_title": "Parallel Web Systems, founded by former Twitter CEO Parag Agrawal and which offers web search tools for AI agents, raised a $100M Series B at a $2B valuation (Belle Lin/Wall Street Journal)",
+        "summary": "由前Twitter CEO Parag Agrawal创办的Parallel Web Systems完成1亿美元B轮融资，估值达到20亿美元，押注为AI代理提供网页搜索与信息访问基础设施，显示Agent工具层开始获得大额资本加注。",
+        "rating": "A+",
+        "score": 91,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "如果Agent应用持续爆发，围绕搜索、浏览和执行的基础能力供应商会成为新一轮投资热点，也会刺激OpenAI、Anthropic等平台补齐自有工具链。",
+        "entities": [
+          "Ai Agents",
+          "Parag Agrawal",
+          "Parallel Web Systems",
+          "Twitter",
+          "Wall Street Journal"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260428/p50#a260428p50"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777424728,
+        "published_at": "2026-04-29T09:05:28.334294",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260428/p50#a260428p50",
+        "event_id": null
+      },
+      {
+        "id": "2e0d59aeb19389f077f04134c63d23e8",
+        "title": "Benchmark的Manus退出收益因监管反转再起波澜",
+        "chinese_title": "Benchmark的Manus退出收益因监管反转再起波澜",
+        "original_title": "The Asterisk on Benchmark’s Manus Exit",
+        "summary": "The Information披露，Benchmark押注Manus母公司后原本借Meta收购大赚，但中国监管方要求拆解交易，使这笔跨境AI并购出现复杂反转，也让已分配给LP的回报面临高度不确定性。",
+        "rating": "S",
+        "score": 97,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这起交易若被强制拆解，跨境AI并购的合规门槛会显著抬高，相关基金退出路径、国家安全审查和中国AI资产出海模式都可能被重新定价。",
+        "entities": [
+          "Benchmark",
+          "Butterfly Effect",
+          "China Regulators",
+          "Manus",
+          "Meta"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information (manus)",
+            "url": "https://www.theinformation.com/articles/asterisk-benchmarks-manus-exit"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777424728,
+        "published_at": "2026-04-29T09:05:28.334393",
+        "source": "The Information (manus)",
+        "url": "https://www.theinformation.com/articles/asterisk-benchmarks-manus-exit",
+        "event_id": null
+      },
+      {
+        "id": "a1fc7f189e8efd612061d3a6d0373753",
+        "title": "Claude Code旧漏洞回归再现，子代理仍会被误判拦截",
+        "chinese_title": "Claude Code旧漏洞回归再现，子代理仍会被误判拦截",
+        "original_title": "Claude system prompt bug wastes user money and bricks managed agents",
+        "summary": "Anthropic开源仓库新增回归缺陷报告称，Claude Code在v2.1.111里仍会因恶意软件提醒机制误伤正常Read操作，导致子代理拒绝执行并浪费用户费用，说明此前宣称修复的问题并未真正根除。",
+        "rating": "S",
+        "score": 92,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "如果这一类安全提醒持续误杀真实开发流程，企业对AI编码代理的信任和付费意愿会被拖累，也会倒逼厂商重构代理权限与风控边界设计。",
+        "entities": [
+          "Anthropic",
+          "Claude Code",
+          "Github",
+          "Subagents",
+          "V2.1.111"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/anthropics/claude-code/issues/49363"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777424728,
+        "published_at": "2026-04-29T09:05:28.334486",
+        "source": "Hacker News",
+        "url": "https://github.com/anthropics/claude-code/issues/49363",
+        "event_id": null
+      },
+      {
+        "id": "d92131cc39bf128f96e2ef71e10a45c0",
+        "title": "Anthropic推创意工作连接器，把Claude接入Adobe和Blender",
+        "chinese_title": "Anthropic推创意工作连接器，把Claude接入Adobe和Blender",
+        "original_title": "Claude for Creative Work",
+        "summary": "Anthropic联合Adobe、Blender、Autodesk、Ableton、Splice等伙伴发布一批面向创意工作的Claude连接器，让模型直接接入设计、三维、音乐与制作软件，试图把Claude嵌进专业创作工作流。",
+        "rating": "A+",
+        "score": 91,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这意味着大模型竞争正从通用聊天转向垂直工作流集成，后续可能引发创作软件平台对AI入口控制权、插件生态和付费分成的新一轮争夺。",
+        "entities": [
+          "Adobe",
+          "Anthropic",
+          "Autodesk",
+          "Blender",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.anthropic.com/news/claude-for-creative-work"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777424728,
+        "published_at": "2026-04-29T09:05:28.334577",
+        "source": "Hacker News",
+        "url": "https://www.anthropic.com/news/claude-for-creative-work",
+        "event_id": null
+      },
+      {
+        "id": "391868563f3e96d7809fb39dc7a6f909",
+        "title": "Wired曝光OpenAI Codex系统提示词的奇特禁令",
+        "chinese_title": "Wired曝光OpenAI Codex系统提示词的奇特禁令",
+        "original_title": "OpenAI's Codex instruction set contains a line, repeated several times, that forbids Codex from randomly mentioning goblins, gremlins, and other creatures (Will Knight/Wired)",
+        "summary": "Wired报道称，OpenAI的Codex内部指令多次强调不要无故提到地精、巨魔等生物，这类看似荒诞的提示词细节再次把模型系统提示、行为约束和安全策略如何塑造产品输出推到台前。",
+        "rating": "A",
+        "score": 83,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "随着系统提示词不断被外界拆解，模型厂商的对齐策略和品牌语气控制会越来越透明，也可能催生针对提示层的审计、逆向和竞争情报行业。",
+        "entities": [
+          "Codex",
+          "OpenAI",
+          "System Prompt",
+          "Will Knight",
+          "Wired"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260428/p49#a260428p49"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777424728,
+        "published_at": "2026-04-29T09:05:28.334666",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260428/p49#a260428p49",
+        "event_id": null
+      },
+      {
+        "id": "9ba4fd93b520bec15a01b6037a7638bb",
+        "title": "研究者拆解ChatGPT广告归因链路，OpenAI商业化细节曝光",
+        "chinese_title": "研究者拆解ChatGPT广告归因链路，OpenAI商业化细节曝光",
+        "original_title": "ChatGPT serves ads. Here's the full attribution loop",
+        "summary": "一篇基于真实流量观察的研究称，OpenAI已在ChatGPT对话流中注入结构化广告单元，并通过OAIQ追踪SDK、加密点击令牌与站内WebView串起完整归因闭环，广告基础设施细节首次被系统性拆开。",
+        "rating": "S",
+        "score": 96,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "如果ChatGPT广告体系进一步成形，AI助手的商业化路径会从订阅和API走向广告平台，也会引发隐私合规、转化归因标准和搜索广告格局的新博弈。",
+        "entities": [
+          "Fernet",
+          "GPT",
+          "Oaiq",
+          "OpenAI",
+          "Single_Advertiser_Ad_Unit"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777424728,
+        "published_at": "2026-04-29T09:05:28.334747",
+        "source": "Hacker News",
+        "url": "https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/",
+        "event_id": null
+      },
+      {
+        "id": "45ee15652990bc583b9b6e6f6cac3b32",
+        "title": "庭审首日观察：马斯克在OpenAI案中显得失焦又情绪化",
+        "chinese_title": "庭审首日观察：马斯克在OpenAI案中显得失焦又情绪化",
+        "original_title": "Elon Musk appeared more petty than prepared",
+        "summary": "The Verge庭审观察称，马斯克在与Sam Altman相关的高关注度案件首日作证时表现得并不充分准备，叙述更多围绕个人功绩而非清晰指控，也让外界重新审视这场诉讼的法律与舆论走向。",
+        "rating": "B",
+        "score": 74,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "如果后续媒体持续把焦点放在马斯克本人表现而非实质证据，案件叙事可能从公司治理争议转向公众人物信誉战，进一步影响市场对OpenAI风波的解读。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "Sam Altman",
+          "The Verge"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/920191/elon-musk-sam-altman-trial-day-one"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777424728,
+        "published_at": "2026-04-29T09:05:28.334826",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/920191/elon-musk-sam-altman-trial-day-one",
+        "event_id": null
+      },
+      {
+        "id": "3138213276ab6691f010508e80fc9d59",
+        "title": "马斯克向陪审团自述创业史，称起诉OpenAI是为拯救人类",
+        "chinese_title": "马斯克向陪审团自述创业史，称起诉OpenAI是为拯救人类",
+        "original_title": "Elon Musk tells the jury that all he wants to do is save humanity",
+        "summary": "在与OpenAI相关的庭审证词中，马斯克把自己塑造成以人类安全为出发点的创业者，长篇回顾从Zip2到PayPal再到现有公司的个人经历，为其挑战Sam Altman和OpenAI的动机争取道德正当性。",
+        "rating": "A",
+        "score": 75,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这类法庭叙事若持续强化\"使命背离\"主线，可能影响公众对OpenAI商业化进程的认知，也会把AI治理讨论进一步带入政治和伦理层面。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "Paypal",
+          "Sam Altman",
+          "Zip2"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/920048/elon-musk-testimony-save-humanity"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777424728,
+        "published_at": "2026-04-29T09:05:28.334906",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/920048/elon-musk-testimony-save-humanity",
+        "event_id": null
+      },
+      {
+        "id": "4f84714f74078ab5304face6e8ebf2c1",
+        "title": "OpenAI营收预期落空冲击华尔街，Oracle和CoreWeave股价承压",
+        "chinese_title": "OpenAI营收预期落空冲击华尔街，Oracle和CoreWeave股价承压",
+        "original_title": "OpenAI's Wall Street Disconnect",
+        "summary": "The Information称，OpenAI未达成部分内部营收目标的消息拖累科技板块，尤其让依赖其业务叙事的Oracle与CoreWeave股价受挫，暴露出资本市场对OpenAI增长故事的乐观预期开始松动。",
+        "rating": "S",
+        "score": 95,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "一旦OpenAI增长放缓被持续验证，围绕其建立估值逻辑的云厂商、算力租赁商和基础设施供应链都可能遭遇重新定价，进而影响AI资本开支节奏。",
+        "entities": [
+          "Coreweave",
+          "GPT",
+          "OpenAI",
+          "Oracle",
+          "Wall Street"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/openais-wall-street-disconnect"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777424728,
+        "published_at": "2026-04-29T09:05:28.334985",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/openais-wall-street-disconnect",
+        "event_id": null
+      },
+      {
         "id": "e133bd6038938d9e1b1d5f60f76e473c",
         "title": "京东等提出低算力训练推理模型新范式RLSD",
         "chinese_title": "京东等提出低算力训练推理模型新范式RLSD",
@@ -21884,417 +22192,9 @@
         "source": "Hacker News",
         "url": "https://www.wheresyoured.at/news-anthropic-removes-pro-cc/",
         "event_id": null
-      },
-      {
-        "id": "df12f061f41c31b70c022a43228cd5dc",
-        "title": "Meta装员工监控软件训练AI代理",
-        "original_title": "Meta Installing Software on Employee Computers to Track Everything They Do, Feed the Data to AI",
-        "summary": "Meta据称将在美国员工电脑上部署软件，记录鼠标、键盘和截图等工作行为，用于训练能复刻办公操作的AI模型，引发员工隐私与岗位自动化争议。",
-        "rating": "S",
-        "score": 100,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这会延伸到企业用员工行为数据训练AI的合规边界，也可能引发欧美劳动监管、隐私保护和AI替代岗位的后续报道。",
-        "entities": [
-          "Ai Agents",
-          "Mark Zuckerberg",
-          "Meta",
-          "Model Capability Initiative"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/meta-track-everything-workers-type-click-train-ai"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.117381",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/meta-track-everything-workers-type-click-train-ai",
-        "event_id": null
-      },
-      {
-        "id": "5a5647f9b968789293b2d228dbe87e68",
-        "title": "Anthropic调查未授权使用Mythos模型",
-        "original_title": "Anthropic Investigates Unauthorized Mythos Use",
-        "summary": "Anthropic正在调查一批未授权用户疑似访问未发布AI模型的报告，其中包括因网络攻击能力而被暂缓发布的Mythos，事件凸显前沿模型访问控制风险。",
-        "rating": "A+",
-        "score": 88,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可继续追踪高风险模型内测权限、泄露后的网络安全影响，以及前沿模型实验室如何调整访问审计机制。",
-        "entities": [
-          "Anthropic",
-          "Bloomberg",
-          "Cyberattacks",
-          "Mythos"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/anthropic-investigates-unauthorized-mythos-use"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.117501",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/anthropic-investigates-unauthorized-mythos-use",
-        "event_id": null
-      },
-      {
-        "id": "8921dc98bd940adbade0031ee165a9ff",
-        "title": "苹果接班期面临核心高管留任考验",
-        "original_title": "A look at Apple's management changes and several key executives' futures; sources say Mike Rockwell has considered leaving or taking an advisory role next year (Mark Gurman/Bloomberg)",
-        "summary": "彭博称苹果管理层正在经历关键调整，未来CEO人选John Ternus需要在历史性人员流动中稳住核心团队，Mike Rockwell也被曝考虑离开或转任顾问。",
-        "rating": "A",
-        "score": 79,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "苹果高管更替会影响硬件、AI和空间计算路线，后续可追踪关键业务负责人去留与产品战略调整。",
-        "entities": [
-          "Apple",
-          "Bloomberg",
-          "John Ternus",
-          "Mike Rockwell"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (apple)",
-            "url": "http://www.techmeme.com/260421/p54#a260421p54"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.117610",
-        "source": "Techmeme (apple)",
-        "url": "http://www.techmeme.com/260421/p54#a260421p54",
-        "event_id": null
-      },
-      {
-        "id": "7eec44f8b59062dc54a9d56c0d59e3f9",
-        "title": "SpaceX称达成600亿美元收购Cursor协议",
-        "original_title": "SpaceX says it has agreement to acquire Cursor for $60B",
-        "summary": "SpaceX在社交平台上称已就收购AI编程工具Cursor达成协议，交易金额为600亿美元；若推进，将把航天、xAI和AI编码工具绑定在一起。",
-        "rating": "S",
-        "score": 99,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该消息将牵动SpaceX IPO估值、xAI产品能力补强，以及AI编程工具市场格局变化，需要继续核实交易条款和真实性。",
-        "entities": [
-          "Cursor",
-          "Elon Musk",
-          "SpaceX",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://twitter.com/spacex/status/2046713419978453374"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.117711",
-        "source": "Hacker News",
-        "url": "https://twitter.com/spacex/status/2046713419978453374",
-        "event_id": null
-      },
-      {
-        "id": "656f82e1a04402dc788bbc3a46385817",
-        "title": "SpaceX拟买Cursor暴露xAI编码短板",
-        "original_title": "What SpaceX’s Cursor Deal Says About xAI",
-        "summary": "The Information认为，SpaceX考虑以600亿美元收购Cursor，反而凸显xAI在AI编程能力上追赶困难，也让SpaceX上市前的投资叙事更复杂。",
-        "rating": "S",
-        "score": 98,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "后续可追踪xAI内部重组、Cursor增长放缓与竞品压力，以及SpaceX股东是否接受用航天资产支持AI并购。",
-        "entities": [
-          "Anthropic",
-          "Cursor",
-          "Elon Musk",
-          "SpaceX",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/spacexs-cursor-deal-says-xai"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.117810",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/spacexs-cursor-deal-says-xai",
-        "event_id": null
-      },
-      {
-        "id": "2a60c8ca44ad701d63d45b67d13532e7",
-        "title": "Claude Code或从20美元Pro套餐移除",
-        "original_title": "An Anthropic support doc no longer lists Claude Code as part of its $20/month Pro plan; Anthropic says it is running a small test on ~2% of new prosumer signups (Ed Zitron/Ed Zitron's Where's Your Ed At)",
-        "summary": "Anthropic支持文档不再把Claude Code列入每月20美元Pro套餐，官方称正对约2%的新专业消费者注册用户进行小范围测试。",
-        "rating": "A+",
-        "score": 88,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "这可能预示AI编程工具从通用订阅拆分为更高价产品线，后续可比较Anthropic、OpenAI和Cursor的定价策略。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Claude Code",
-          "Ed Zitron"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260421/p51#a260421p51"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.117908",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260421/p51#a260421p51",
-        "event_id": null
-      },
-      {
-        "id": "498fb6fe41efb2b4cb79f35b1545de68",
-        "title": "Anthropic与OpenAI一季度游说开支创新高",
-        "original_title": "Filing: Anthropic spent $1.6M and OpenAI $1M on lobbying in Q1, vs. $360K and $560K in Q1 2025, respectively; Meta topped Big Tech lobbying spending with $7.1M (Ashley Gold/Axios)",
-        "summary": "监管文件显示，Anthropic和OpenAI在2026年一季度分别投入160万美元和100万美元游说，均较去年同期大幅上升，Meta仍以710万美元领跑大型科技公司。",
-        "rating": "A",
-        "score": 81,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "AI公司加大游说投入可连接到模型监管、版权、国家安全和反垄断议题，也能观察不同公司政策诉求差异。",
-        "entities": [
-          "Anthropic",
-          "Axios",
-          "Meta",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260421/p50#a260421p50"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.118005",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260421/p50#a260421p50",
-        "event_id": null
-      },
-      {
-        "id": "d84c7bacd7de6f3c3015b64ace1330c2",
-        "title": "SpaceX上市项目背后投行阵容曝光",
-        "original_title": "The Bankers Behind SpaceX’s “Project Apex” IPO",
-        "summary": "SpaceX代号Project Apex的IPO筹备进入关键阶段，摩根士丹利和高盛的顶级投行团队已在总部与公司财务高管协作，考验华尔街对航天与AI叙事的包装能力。",
-        "rating": "A",
-        "score": 86,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "SpaceX上市将影响商业航天估值、xAI关联资产叙事和一级市场退出预期，投行分工也会影响发行节奏。",
-        "entities": [
-          "Goldman Sachs",
-          "Morgan Stanley",
-          "Project Apex",
-          "SpaceX"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/bankers-behind-spacexs-project-apex-ipo"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.118102",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/bankers-behind-spacexs-project-apex-ipo",
-        "event_id": null
-      },
-      {
-        "id": "e93825b38353bbad017eed49ae1fdb90",
-        "title": "Anthropic专属网络模型Mythos疑遭未授权访问",
-        "original_title": "Unauthorized group has gained access to Anthropic’s exclusive cyber tool Mythos, report claims",
-        "summary": "TechCrunch报道称，有未经授权组织疑似获得Anthropic未公开网络安全工具Mythos的访问权；Anthropic称正在调查，但暂无系统受影响证据。",
-        "rating": "A+",
-        "score": 87,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这可继续追踪AI网络攻防工具的访问控制、模型泄露风险，以及安全模型是否应被更严格监管。",
-        "entities": [
-          "Anthropic",
-          "Cybersecurity",
-          "Mythos",
-          "Techcrunch"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/04/21/unauthorized-group-has-gained-access-to-anthropics-exclusive-cyber-tool-mythos-report-claims/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.118198",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/21/unauthorized-group-has-gained-access-to-anthropics-exclusive-cyber-tool-mythos-report-claims/",
-        "event_id": null
-      },
-      {
-        "id": "c827bce53e5c91494b82acddeffa1000",
-        "title": "SpaceX称今年晚些时候可买下Cursor",
-        "original_title": "SpaceX Says it Can Buy Cursor for $60 Billion Later This Year",
-        "summary": "SpaceX称已达成潜在协议，可在今年晚些时候以600亿美元收购AI编程创业公司Cursor；这发生在其筹备可能成为全球最大IPO之一的窗口期。",
-        "rating": "S",
-        "score": 99,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该交易如果落地，将改变AI编程工具估值锚点，并影响SpaceX IPO前的资产结构和投资者风险判断。",
-        "entities": [
-          "Cursor",
-          "Elon Musk",
-          "SpaceX",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/spacex-says-can-buy-cursor-60-billion-later-year"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.118294",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/spacex-says-can-buy-cursor-60-billion-later-year",
-        "event_id": null
-      },
-      {
-        "id": "24ad32ab814a48072ca3cfd2b8be53d3",
-        "title": "AcuityMD融资8000万美元估值近10亿",
-        "original_title": "AcuityMD, which provides AI tools that automate sales call recaps, CRM data entry, and more for medtech companies, raised an $80M Series C at a $955M valuation (Brock E.W. Turner/Axios)",
-        "summary": "面向医疗科技公司的AI销售软件平台AcuityMD完成8000万美元C轮融资，估值达到9.55亿美元，其工具用于自动生成销售电话摘要和录入CRM数据。",
-        "rating": "B",
-        "score": 70,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "该融资可延伸到垂直行业AI应用的商业化进展，以及医疗科技销售场景中AI自动化的采用速度。",
-        "entities": [
-          "Acuitymd",
-          "Axios",
-          "Crm",
-          "Michael Monovoukas"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260421/p49#a260421p49"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.118388",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260421/p49#a260421p49",
-        "event_id": null
-      },
-      {
-        "id": "e453b32f5351db3e77474b02def86c85",
-        "title": "SpaceX用Cursor交易补强AI编程版图",
-        "original_title": "SpaceX cuts a deal to maybe buy Cursor for $60 billion",
-        "summary": "The Verge称，SpaceX与Cursor达成一项特殊安排，可选择以600亿美元收购或支付100亿美元费用，意在帮助xAI追赶Anthropic等AI编程工具领先者。",
-        "rating": "S",
-        "score": 100,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该交易可与Google、OpenAI、Anthropic在智能编程代理上的竞争放在一起看，也会影响xAI和SpaceX的资本故事。",
-        "entities": [
-          "Anthropic",
-          "Cursor",
-          "OpenAI",
-          "SpaceX",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts (sora)",
-            "url": "https://www.theverge.com/science/916427/spacex-cursor-potential-deal-acquisition"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.118484",
-        "source": "The Verge -  Tech Posts (sora)",
-        "url": "https://www.theverge.com/science/916427/spacex-cursor-potential-deal-acquisition",
-        "event_id": null
-      },
-      {
-        "id": "a3d345d430c92a2db781fa250126b020",
-        "title": "Claude Code不再包含在Pro档位引发关注",
-        "original_title": "Claude Code no longer included in Pro tier",
-        "summary": "Hacker News讨论显示，Claude Code似乎不再包含在Claude Pro套餐中，这可能意味着Anthropic正在重新划分AI编程工具的付费边界。",
-        "rating": "A",
-        "score": 84,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可继续观察用户反弹、订阅转化，以及AI编程工具是否全面进入独立高价套餐阶段。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Claude Code",
-          "Ed Zitron"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://bsky.app/profile/edzitron.com/post/3mjzxwfx3qs2a"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.118580",
-        "source": "Hacker News",
-        "url": "https://bsky.app/profile/edzitron.com/post/3mjzxwfx3qs2a",
-        "event_id": null
-      },
-      {
-        "id": "8362c30b9aa51f6ed53c654b584c2281",
-        "title": "Brex推出保护生产环境AI代理的CrabTrap",
-        "original_title": "CrabTrap: An LLM-as-a-judge HTTP proxy to secure agents in production",
-        "summary": "Brex发布CrabTrap，一个以LLM作为裁判的HTTP代理，用于在生产环境中审查和拦截AI代理请求，降低代理执行外部操作时的安全风险。",
-        "rating": "B",
-        "score": 72,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "该工具可延伸到AI代理安全基础设施、运行时防护和企业落地治理，也能对比传统WAF与LLM审查机制。",
-        "entities": [
-          "Ai Agents",
-          "Brex",
-          "Crabtrap",
-          "Llm-As-A-Judge"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.brex.com/crabtrap"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776819880,
-        "published_at": "2026-04-22T09:04:40.118675",
-        "source": "Hacker News",
-        "url": "https://www.brex.com/crabtrap",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-29T08:05:25.827869",
-  "total_news": 757
+  "last_updated": "2026-04-29T09:06:00.502471",
+  "total_news": 753
 }
