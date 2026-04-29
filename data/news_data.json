@@ -2,6 +2,37 @@
   "news": {
     "2026-04-29": [
       {
+        "id": "2dab913aaa5d0033701792f145e390b1",
+        "title": "AI代理十小时把开源CPU跑到超越人类调优",
+        "chinese_title": "AI代理十小时把开源CPU跑到超越人类调优",
+        "original_title": "Show HN: Auto-Architecture: Karpathy's Loop, Pointed at a CPU",
+        "summary": "开发者把Karpathy式自动研究循环指向一颗开源RV32IM CPU，在不到10小时内试验73个微架构假设、筛出10个有效改进，让CoreMark性能较锁定基线提升约92%，并反向证明\"验证器\"才是代理研发的真正护城河。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这不只是一次开源CPU性能突破，还把\"代理生成方案、验证器决定能否上线\"的方法论摆上台面。后续可延展到芯片EDA、编译器、机器人控制等高验证成本行业，也会推动围绕形式化验证和评测基建的新一轮竞争。",
+        "entities": [
+          "Andrej Karpathy",
+          "Auto-Arch-Tournament",
+          "Autoresearch",
+          "Rv32Im",
+          "Vexriscv"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/FeSens/auto-arch-tournament/blob/main/docs/auto-arch-tournament-blog-post.md"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777431775,
+        "published_at": "2026-04-29T11:02:55.771772",
+        "source": "Hacker News",
+        "url": "https://github.com/FeSens/auto-arch-tournament/blob/main/docs/auto-arch-tournament-blog-post.md",
+        "event_id": null
+      },
+      {
         "id": "ec9c796376201393420ef749a3f576ce",
         "title": "苹果推新色彩标准，Studio Display XDR实测曝光",
         "chinese_title": "苹果推新色彩标准，Studio Display XDR实测曝光",
@@ -22198,6 +22229,6 @@
       }
     ]
   },
-  "last_updated": "2026-04-29T10:04:30.838461",
-  "total_news": 753
+  "last_updated": "2026-04-29T11:03:11.074282",
+  "total_news": 754
 }
