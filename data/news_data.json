@@ -2,20 +2,322 @@
   "news": {
     "2026-04-29": [
       {
-        "id": "69af347801e501a3c3e6fba185a1a1cf",
-        "title": "论文用大模型拆解X政治讨论：美国老年用户最爱表达愤怒",
-        "chinese_title": "论文用大模型拆解X政治讨论：美国老年用户最爱表达愤怒",
-        "original_title": "A working paper uses an LLM to analyze political discourse on X, finding that anger is the dominant emotion expressed by US users, especially those over 65 (Tim Harford/Financial Times)",
-        "summary": "一篇工作论文借助大模型分析X上的政治表达，发现美国用户最常释放的情绪是愤怒，65岁以上群体尤为明显，这给平台舆论生态和公共讨论质量提供了新的量化观察切口。",
+        "id": "2c85776accfc2768908773183d9eb6b8",
+        "title": "OpenAI因未报警阻止校园枪击遭多家庭起诉",
+        "chinese_title": "OpenAI因未报警阻止校园枪击遭多家庭起诉",
+        "original_title": "OpenAI Hit With Barrage of Lawsuits Over Failure to Report School Shooter Before Massacre",
+        "summary": "加拿大校园枪击案受害者家庭指控OpenAI明知高风险对话存在却未通知警方，反而只停用账号，案件把大模型平台的报警义务、产品责任与IPO利益冲突同时推到台前。",
+        "rating": "S",
+        "score": 98,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "如果诉讼进入实质审理，行业可能被迫重新定义高危对话上报边界，连带影响聊天机器人风控流程、留痕机制和各国监管机构的合规要求。",
+        "entities": [
+          "GPT",
+          "OpenAI",
+          "Sam Altman",
+          "Tumbler Ridge"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/openai-school-shooter-tumbler-ridge-lawsuits"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777466659,
+        "published_at": "2026-04-29T20:44:19.830092",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/openai-school-shooter-tumbler-ridge-lawsuits",
+        "event_id": null
+      },
+      {
+        "id": "49b6efc6c0749118640fb1ad1f9228c0",
+        "title": "OpenAI枪击案更多细节曝光：安全团队建议曾被否决",
+        "chinese_title": "OpenAI枪击案更多细节曝光：安全团队建议曾被否决",
+        "original_title": "Sam Altman is “the face of evil” for not reporting school shooter, says lawyer",
+        "summary": "Ars披露诉讼细节称，OpenAI内部安全人员曾建议就高危ChatGPT账号报警，但管理层最终否决，这让公司对暴力风险的内部决策链和问责机制被进一步放大审视。",
+        "rating": "A",
+        "score": 78,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这条线索补充了前一波诉讼的内部流程细节，后续值得继续追踪 whistleblower 证词、董事会知情范围以及安全团队在商业压力下的实际权限。",
+        "entities": [
+          "Canadian Law Enforcement",
+          "GPT",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/tech-policy/2026/04/school-shooting-lawsuits-accuse-openai-of-hiding-violent-chatgpt-users/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777466659,
+        "published_at": "2026-04-29T20:44:19.830188",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/tech-policy/2026/04/school-shooting-lawsuits-accuse-openai-of-hiding-violent-chatgpt-users/",
+        "event_id": null
+      },
+      {
+        "id": "8216f3cee38ca34a99596a559d48f965",
+        "title": "美国卡住华虹7纳米设备口子，上海新厂再受压",
+        "chinese_title": "美国卡住华虹7纳米设备口子，上海新厂再受压",
+        "original_title": "US stops exports of tools to China’s number two chip maker — Hua Hong and Huali Microelectronics reportedly on the cusp of starting a 7-nm fab in Shanghai",
+        "summary": "美国商务部据称要求应用材料、科磊和泛林停止向华虹部分订单出货，目标直指其在上海推进的7纳米产线，半导体设备限制正从先进制程继续向关键扩产节点收紧。",
+        "rating": "A",
+        "score": 86,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "如果禁令坐实，后续影响不会只落在华虹一家，国内成熟制程向更先进节点爬坡的设备替代、资本开支节奏和上游材料国产化都会被重新评估。",
+        "entities": [
+          "Applied Materials",
+          "Hua Hong",
+          "Huali Microelectronics",
+          "Kla",
+          "Lam Research"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/us-stops-exports-of-chip-making-tools-to-chinas-number-two-chip-maker-hua-hong-and-huali-microelectronics-reportedly-on-the-cusp-of-starting-a-7-nm-fab-in-shanghai"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777466659,
+        "published_at": "2026-04-29T20:44:19.830271",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/us-stops-exports-of-chip-making-tools-to-chinas-number-two-chip-maker-hua-hong-and-huali-microelectronics-reportedly-on-the-cusp-of-starting-a-7-nm-fab-in-shanghai",
+        "event_id": null
+      },
+      {
+        "id": "c2d8175ac5bbae4cef8907fe9880d1ab",
+        "title": "Gemini记忆功能登陆欧洲，还要顺手搬走ChatGPT聊天记录",
+        "chinese_title": "Gemini记忆功能登陆欧洲，还要顺手搬走ChatGPT聊天记录",
+        "original_title": "Google rolls out Gemini memory in Europe and wants you to bring your ChatGPT data along",
+        "summary": "Google开始在欧洲推出Gemini记忆功能，并支持导入其他AI应用的聊天历史，意味着模型竞争正从参数和榜单延伸到用户历史数据、习惯沉淀与迁移门槛之争。",
+        "rating": "A+",
+        "score": 89,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这类功能一旦普及，AI助手产品会更像操作系统入口，后续可继续看欧盟隐私合规、跨平台数据可携权以及OpenAI等对手是否跟进开放迁移接口。",
+        "entities": [
+          "Europe",
+          "GPT",
+          "Gemini",
+          "Google"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER (Gemini)",
+            "url": "https://the-decoder.com/google-rolls-out-gemini-memory-in-europe-and-wants-you-to-bring-your-chatgpt-data-along/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777466659,
+        "published_at": "2026-04-29T20:44:19.830351",
+        "source": "THE DECODER (Gemini)",
+        "url": "https://the-decoder.com/google-rolls-out-gemini-memory-in-europe-and-wants-you-to-bring-your-chatgpt-data-along/",
+        "event_id": null
+      },
+      {
+        "id": "58224b7d8e5a9883b4bf3c7c833e53c5",
+        "title": "Palit收拢Galax管理权，但显卡品牌不会消失",
+        "chinese_title": "Palit收拢Galax管理权，但显卡品牌不会消失",
+        "original_title": "Palit Group says Galax GPU brand will continue to operate following restructure &mdash; Galax management centralized under Palit Group in 'pre-planned' shakeup",
+        "summary": "Palit Group确认将Galax纳入更集中化管理，但保留品牌、设计和出货节奏不变，这更像一次渠道和内部治理重组，而非显卡市场格局立即改写。",
+        "rating": "B",
+        "score": 70,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "短期看品牌存续，长期值得观察的是Palit是否借此整合供应链、缩减SKU，进而影响NVIDIA板卡伙伴的区域分工和价格策略。",
+        "entities": [
+          "Galax",
+          "Gpu",
+          "Palit",
+          "Palit Group"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/pc-components/gpus/palit-group-says-galax-gpu-brand-will-continue-to-operate-following-restructure-galax-management-centralized-under-palit-group-in-pre-planned-shakeup"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777466659,
+        "published_at": "2026-04-29T20:44:19.830431",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/pc-components/gpus/palit-group-says-galax-gpu-brand-will-continue-to-operate-following-restructure-galax-management-centralized-under-palit-group-in-pre-planned-shakeup",
+        "event_id": null
+      },
+      {
+        "id": "305b46311d9ba6e515e734fec6c6e1c9",
+        "title": "投行AI助手Rogo再融1.6亿美元，估值4个月冲到20亿",
+        "chinese_title": "投行AI助手Rogo再融1.6亿美元，估值4个月冲到20亿",
+        "original_title": "Rogo, which uses AI to help lighten junior bankers' workloads, raised a $160M Series D led by Kleiner Perkins at a $2B valuation, up from $750M in January (Todd Gillespie/Bloomberg)",
+        "summary": "面向投行业务流程的AI创业公司Rogo完成1.6亿美元D轮融资，估值从1月的7.5亿美元飙到20亿美元，金融行业对垂直AI提效工具的追捧还在快速升温。",
+        "rating": "B",
+        "score": 72,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "这类交易反映资本正在奖励能直接替代高薪知识劳动的AI应用，后续可延伸到华尔街中后台岗位重构、投行内购自研与通用模型成本结构变化。",
+        "entities": [
+          "Ai",
+          "Bloomberg",
+          "Kleiner Perkins",
+          "Rogo"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260429/p23#a260429p23"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777466659,
+        "published_at": "2026-04-29T20:44:19.830511",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260429/p23#a260429p23",
+        "event_id": null
+      },
+      {
+        "id": "57984994d65f5cbffcc89f578bdc852e",
+        "title": "OpenAI据称淡化Stargate合资模式，转向双边算力大单",
+        "chinese_title": "OpenAI据称淡化Stargate合资模式，转向双边算力大单",
+        "original_title": "Sources: OpenAI has, in practice, abandoned its Stargate JV in favor of large bilateral deals; execs say its guiding principle remains to \"build more compute\" (Financial Times)",
+        "summary": "据英国金融时报，OpenAI实际上正在放弃Stargate式合资架构，转而围绕\"拿到更多算力\"推进更灵活的双边基础设施合作，这会直接重塑其与资本、云厂商和主权合作方的关系。",
+        "rating": "S",
+        "score": 95,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "如果这一方向成立，AI基建竞赛会从叙事型超级项目转向更碎片化的算力采购与联合投资，后续值得追踪软银、甲骨文、中东资本和微软各自角色是否被重排。",
+        "entities": [
+          "Compute",
+          "Financial Times",
+          "OpenAI",
+          "Sam Altman",
+          "Stargate"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260429/p22#a260429p22"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777466659,
+        "published_at": "2026-04-29T20:44:19.830590",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260429/p22#a260429p22",
+        "event_id": null
+      },
+      {
+        "id": "7616567e499738ab6c9a797967e9956f",
+        "title": "英伟达高管直言：不少场景里AI比真人员工更贵",
+        "chinese_title": "英伟达高管直言：不少场景里AI比真人员工更贵",
+        "original_title": "Nvidia exec says AI is more expensive than actual workers &mdash; yet some companies don't see the extra costs as a negative",
+        "summary": "英伟达高管公开指出，大模型在企业中的推理与调用成本在部分场景已高于人工薪资，但企业仍愿意为自动化能力买单，这让AI商业化的ROI叙事变得更值得拆解。",
+        "rating": "A",
+        "score": 80,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这类表态为企业AI投入提供了反直觉的现实参照，后续可延伸到单位任务成本、替代边界，以及GPU厂商如何平衡卖算力和帮客户解释回报周期。",
+        "entities": [
+          "Ai",
+          "Enterprise Automation",
+          "LLM",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-exec-says-ai-is-more-expensive-than-actual-workers-yet-some-companies-dont-see-the-extra-costs-as-a-negative"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777466659,
+        "published_at": "2026-04-29T20:44:19.830669",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-exec-says-ai-is-more-expensive-than-actual-workers-yet-some-companies-dont-see-the-extra-costs-as-a-negative",
+        "event_id": null
+      },
+      {
+        "id": "404ca2e7ba872d890c12fefc4e364417",
+        "title": "营销AI平台Hightouch融资1.5亿美元，估值升到27.5亿",
+        "chinese_title": "营销AI平台Hightouch融资1.5亿美元，估值升到27.5亿",
+        "original_title": "Hightouch, which uses AI to help marketers create and manage campaigns, raised $150M led by Goldman Sachs and Bain at a $2.75B valuation, up from $1.2B in 2025 (Patrick Coffee/Wall Street Journal)",
+        "summary": "Hightouch完成由高盛和贝恩领投的1.5亿美元融资，估值从2025年的12亿美元跃升至27.5亿美元，生成式AI在营销自动化上的商业故事仍在被资本持续加码。",
         "rating": "B",
         "score": 71,
-        "type": "society",
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "融资本身不算稀缺，但可继续观察营销技术厂商如何把生成式AI嵌入客户数据平台，并与Salesforce、Adobe等老牌巨头展开正面对抗。",
+        "entities": [
+          "Bain",
+          "Generative Ai",
+          "Goldman Sachs",
+          "Hightouch",
+          "The Trade Desk"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260429/p21#a260429p21"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777466659,
+        "published_at": "2026-04-29T20:44:19.830749",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260429/p21#a260429p21",
+        "event_id": null
+      },
+      {
+        "id": "f80ee94b88cff8b1e03165aa93d941f2",
+        "title": "社区讨论能否众包Karpathy循环，折射多智能体协作焦虑",
+        "chinese_title": "社区讨论能否众包Karpathy循环，折射多智能体协作焦虑",
+        "original_title": "Can we crowdsource Karpathy’s loop?",
+        "summary": "一则Reddit讨论围绕如何众包Karpathy提出的agent循环展开，核心看点不在结论，而在开发者已开始把多智能体重复探索、任务分配和协同成本视作现实问题。",
+        "rating": "B",
+        "score": 66,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "如果这类讨论继续发酵，后续可追踪 agent orchestration、实验去重和协作框架产品化进展，但当前信号更像早期社区情绪样本。",
+        "entities": [
+          "Agents",
+          "Andrej Karpathy",
+          "Crowdsourcing",
+          "Reddit"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1sysomf/can_we_crowdsource_karpathys_loop/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777466659,
+        "published_at": "2026-04-29T20:44:19.831218",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1sysomf/can_we_crowdsource_karpathys_loop/",
+        "event_id": null
+      },
+      {
+        "id": "69af347801e501a3c3e6fba185a1a1cf",
+        "title": "研究用大模型读懂X舆论：美国用户最强烈情绪是愤怒",
+        "chinese_title": "研究用大模型读懂X舆论：美国用户最强烈情绪是愤怒",
+        "original_title": "A working paper uses an LLM to analyze political discourse on X, finding that anger is the dominant emotion expressed by US users, especially those over 65 (Tim Harford/Financial Times)",
+        "summary": "一篇工作论文使用LLM分析X上的政治讨论，发现美国用户表达最突出的情绪是愤怒，且65岁以上群体更明显，展示了大模型在舆情测量和社会科学中的新应用边界。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
         "typeName": "社会影响",
         "expansion": "可继续追问大模型情绪分析是否足够可靠，以及平台算法和年龄结构如何共同放大政治愤怒表达。",
         "entities": [
           "Financial Times",
           "LLM",
-          "Tim Harford",
           "Us Political Discourse",
           "X"
         ],
@@ -30,23 +332,26 @@
         "published_at": "2026-04-29T19:08:29.047558",
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260429/p19#a260429p19",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Tim Harford / Financial Times : A working paper uses an LLM to analyze political discourse on X, finding that anger is the dominant emotion expressed by US users, especially those over 65 — There is a gap between the calm, rational decision-makers we often aspire to be and the overwrought, sentiment-tossed creatures we often are.",
+        "grade": "B",
+        "extension": "这条线索可以延展到LLM做社会科学测量的可靠性、偏差校正，以及平台舆情研究如何反过来影响选举传播与内容治理。"
       },
       {
         "id": "504a6f8e1030e09ab109bdacdcbd5374",
-        "title": "中国监管54字叫停Meta收购Manus，AI并购寒意骤起",
-        "chinese_title": "中国监管54字叫停Meta收购Manus，AI并购寒意骤起",
-        "original_title": "How Chinese regulators killed Manus by blocking Meta's $2B takeover in a 54-character decree, creating an uncertain era for the country's expanding AI industry (Bloomberg)",
-        "summary": "彭博披露，中国监管层以一纸极短命令阻断Meta对Manus的20亿美元收购，让这家一度被视为中国AI希望之星的公司迅速转成监管风险样本，也给本土AI并购预期浇下冷水。",
+        "title": "中国监管54字否掉Meta收购，Manus神话瞬间降温",
+        "chinese_title": "中国监管54字否掉Meta收购，Manus神话瞬间降温",
+        "original_title": "Chinese regulators killed the Manus template by blocking Meta's $2B takeover in a 54-character decree, creating an uncertain era for China's growing AI industry (Bloomberg)",
+        "summary": "彭博称，中国监管部门用一纸54字决定拦下Meta对Manus的20亿美元收购案，曾被视作中国AI样板的Manus由此从明星故事转向监管与并购不确定性的典型案例。",
         "rating": "A+",
-        "score": 87,
+        "score": 88,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "后续可延伸到中国AI公司跨境并购审查尺度变化，以及Meta在中国相关利益链条是否正成为新的谈判筹码。",
         "entities": [
           "Ai Industry",
           "Bloomberg",
-          "Chinese Regulators",
+          "China Regulators",
           "Manus",
           "Meta"
         ],
@@ -61,22 +366,25 @@
         "published_at": "2026-04-29T19:08:29.047701",
         "source": "Techmeme (manus)",
         "url": "http://www.techmeme.com/260429/p18#a260429p18",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Bloomberg : Chinese regulators killed the Manus template by blocking Meta's $2B takeover in a 54-character decree, creating an uncertain era for China's growing AI industry — The AI startup Manus, once hailed as a breakthrough that would challenge Silicon Valley's dominance, is turning into a cautionary tale …",
+        "grade": "A+",
+        "extension": "这件事的外溢不只是一家创业公司命运变化，还会影响跨境并购预期、国内AI公司的退出路径，以及全球资本看待中国AI资产的定价逻辑。"
       },
       {
         "id": "202205053a71e7f4865e12660455120f",
-        "title": "砺算科技拿下微软WHQL认证，国产GPU首次挤进四强俱乐部",
-        "chinese_title": "砺算科技拿下微软WHQL认证，国产GPU首次挤进四强俱乐部",
-        "original_title": "In historic first, Chinese GPU maker Lisuan Tech becomes only the fourth GPU maker to earn Microsoft WHQL certification — LX 7G100 GPU joins Nvidia, AMD, and Intel as it crosses the WHQL driver finish line, first Chinese firm to earn certification",
-        "summary": "中国GPU厂商砺算科技的LX 7G100显卡通过微软WHQL认证，成为继英伟达、AMD和英特尔之后第四家跨过这一门槛的GPU厂商，意味着其驱动和Windows兼容性迈过关键商用节点。",
+        "title": "国产GPU厂商砺算科技拿下微软WHQL认证",
+        "chinese_title": "国产GPU厂商砺算科技拿下微软WHQL认证",
+        "original_title": "Chinese GPU maker Lisuan Tech becomes only the fourth GPU maker ever to earn Microsoft WHQL certification — LX 7G100 GPU joins Nvidia, AMD, and Intel as it crosses the WHQL driver finish line, first Chinese firm to earn certification",
+        "summary": "砺算科技的6nm显卡通过微软WHQL认证，成为继英伟达、AMD、英特尔之后第四家跨过这道门槛的GPU厂商，国产图形芯片在Windows生态兼容性上终于补上关键一环。",
         "rating": "A",
-        "score": 85,
+        "score": 90,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "可继续追踪这是否会推动国产GPU进入更多整机和政企采购场景，以及对国内图形生态兼容验证的带动效应。",
         "entities": [
+          "Amd",
           "Lisuan Tech",
-          "Lx 7G100",
           "Microsoft",
           "NVIDIA",
           "Whql"
@@ -92,7 +400,10 @@
         "published_at": "2026-04-29T19:08:29.047801",
         "source": "Tom's Hardware",
         "url": "https://www.tomshardware.com/pc-components/gpus/in-historic-first-chinese-gpu-maker-lisuan-tech-becomes-only-the-fourth-gpu-maker-to-earn-microsoft-whql-certification-lx-7g100-gpu-joins-nvidia-amd-and-intel-as-it-crosses-the-whql-driver-finish-line-first-chinese-firm-to-earn-certification",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Lisuan Tech has secured Windows Hardware Quality Labs (WHQL) certification for its 6nm graphics cards, making it only the fourth company to ever do so.",
+        "grade": "A+",
+        "extension": "这不仅是单款显卡过认证，更意味着国产GPU在桌面操作系统和整机渠道里的落地条件被实质性打开，后续可观察整机厂商、政企采购和驱动生态是否跟进。"
       },
       {
         "id": "aa3fea93cc019de23c94ba8edbb5d954",
@@ -2781,6 +3092,36 @@
       }
     ],
     "2026-04-28": [
+      {
+        "id": "8ad6ea4230bf7341b0c9244d37c41412",
+        "title": "美国百余科学顾问委员会被砍，研究决策透明度倒退",
+        "chinese_title": "美国百余科学顾问委员会被砍，研究决策透明度倒退",
+        "original_title": "Key US science panels are being axed — and others are becoming less open",
+        "summary": "Nature分析显示，特朗普政府已终止一百多个科学顾问委员会，并削弱保留下来机构的公开性与独立性，这会直接影响科研拨款、政策制定与美国科学治理环境。",
+        "rating": "A",
+        "score": 76,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这不只是政策新闻，还可能进一步改变联邦科研议程设定、大学与实验室博弈方式，以及AI、生物科技和气候研究等领域的长期政策预期。",
+        "entities": [
+          "Nature",
+          "Science Advisory Committees",
+          "Trump Administration",
+          "Us Science Agencies"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01301-5"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777466659,
+        "published_at": "2026-04-29T20:44:19.830984",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01301-5",
+        "event_id": null
+      },
       {
         "id": "e3f58f3c636877ec6441b451c71530a7",
         "title": "OpenAI上市前夜被曝营收失速千亿算力豪赌承压",
@@ -22284,125 +22625,9 @@
         "source": "DeepMind Blog",
         "url": "https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/",
         "event_id": null
-      },
-      {
-        "id": "8b31378742f325cf7349a6ef2756b48e",
-        "title": "谷歌发布训练和推理新一代TPU",
-        "original_title": "Google Announces New TPUs for Training and Inference",
-        "summary": "谷歌在Cloud Next大会上发布面向训练和推理的新一代TPU，继续把自研AI芯片推向云服务核心位置，并直接强化与英伟达在算力基础设施上的竞争。",
-        "rating": "S",
-        "score": 93,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "这会牵动云厂商自研芯片与英伟达GPU采购的成本对比，也会影响企业训练、推理工作负载在Google Cloud上的迁移选择。",
-        "entities": [
-          "Google",
-          "Google Cloud",
-          "NVIDIA",
-          "Tpu"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/google-announces-new-tpus-training-inference"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776859367,
-        "published_at": "2026-04-22T20:02:47.129674",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/google-announces-new-tpus-training-inference",
-        "event_id": null
-      },
-      {
-        "id": "3f81b662dee01276f58c8af78f7aa75d",
-        "title": "腾讯阿里洽投DeepSeek估值超200亿美元",
-        "original_title": "Sources: Tencent and Alibaba are in talks to invest in DeepSeek at a $20B+ valuation, partly benchmarked against Moonshot's pending round at an $18B valuation (The Information)",
-        "summary": "消息称腾讯和阿里正洽谈投资DeepSeek，目标估值超过200亿美元，并部分参考Moonshot即将进行的180亿美元估值融资。",
-        "rating": "S",
-        "score": 97,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "若交易落地，中国大模型融资定价将被重新锚定，也可能改变云厂商、基础模型公司和资本市场对国产AI龙头的估值预期。",
-        "entities": [
-          "Alibaba",
-          "DeepSeek",
-          "Moonshot",
-          "Tencent"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (deepseek)",
-            "url": "http://www.techmeme.com/260422/p17#a260422p17"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776859367,
-        "published_at": "2026-04-22T20:02:47.129778",
-        "source": "Techmeme (deepseek)",
-        "url": "http://www.techmeme.com/260422/p17#a260422p17",
-        "event_id": null
-      },
-      {
-        "id": "0a7356a908b58a8e111fe37e4f5e2149",
-        "title": "追觅押注超级碗广告冲向全球消费电子",
-        "original_title": "First vacuums &mdash; then the world",
-        "summary": "中国扫地机器人公司追觅计划用千万美元级超级碗广告打开美国市场，并把品牌叙事从清洁家电扩展到更大的消费电子野心。",
-        "rating": "A",
-        "score": 78,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "追觅的打法会检验中国硬件品牌能否用高成本营销复制全球化路径，也可能引发与石头、科沃斯等竞品在海外品牌投入上的对比。",
-        "entities": [
-          "Dreame",
-          "Elon Musk",
-          "Quibi",
-          "Super Bowl"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/report/914244/dreame-china-vacuums-hypercars-elon-musk"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776859367,
-        "published_at": "2026-04-22T20:02:47.129963",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/report/914244/dreame-china-vacuums-hypercars-elon-musk",
-        "event_id": null
-      },
-      {
-        "id": "829be06b8beb8bc50996ca6f5336e00d",
-        "title": "Anthropic MCP曝远程代码执行漏洞",
-        "original_title": "Anthropic's Model Context Protocol includes a critical remote code execution vulnerability &mdash; newly discovered exploit puts 200,000 AI servers at risk",
-        "summary": "OX Security研究人员披露Anthropic的Model Context Protocol存在架构级远程代码执行漏洞，可能让约20万台AI服务器暴露在攻击风险中。",
-        "rating": "S",
-        "score": 92,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "MCP正成为AI工具互联的关键协议，该漏洞会放大智能体生态的供应链安全讨论，并推动企业重新审视插件、服务器和权限隔离策略。",
-        "entities": [
-          "Anthropic",
-          "MCP",
-          "Ox Security",
-          "Remote Code Execution"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-model-context-protocol-has-critical-security-flaw-exposed"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776859367,
-        "published_at": "2026-04-22T20:02:47.130054",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-model-context-protocol-has-critical-security-flaw-exposed",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-29T19:09:42.145080",
-  "total_news": 757
+  "last_updated": "2026-04-29T20:44:25.557360",
+  "total_news": 764
 }
