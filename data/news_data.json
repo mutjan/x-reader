@@ -1,6 +1,514 @@
 {
   "news": {
-    "2026-04-30": [
+    "2026-05-01": [
+      {
+        "id": "ffab76e3e4c7733be8c5e9327cc69b1f",
+        "title": "阿里巴巴发布Metis智能体，工具误调用率从98%降到2%",
+        "chinese_title": "阿里巴巴发布Metis智能体，工具误调用率从98%降到2%",
+        "original_title": "Alibaba's Metis agent cuts redundant AI tool calls from 98% to 2% &mdash; and gets more accurate doing it",
+        "summary": "阿里研究团队提出Metis与HDPO训练框架，专门解决智能体盲目调用外部工具的问题，在显著减少无效工具调用的同时提升任务准确率，指向更低成本、更稳定的Agent落地路径。",
+        "rating": "A+",
+        "score": 94,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果该方法在更多通用智能体场景复现，Agent产品会从拼工具数量转向比拼工具选择效率，企业级部署成本和延迟也可能被重新定价。",
+        "entities": [
+          "Ai Agent",
+          "Alibaba",
+          "Hdpo",
+          "Metis"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/orchestration/alibabas-metis-agent-cuts-redundant-ai-tool-calls-from-98-to-2-and-gets-more-accurate-doing-it"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.372921",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/orchestration/alibabas-metis-agent-cuts-redundant-ai-tool-calls-from-98-to-2-and-gets-more-accurate-doing-it",
+        "event_id": null
+      },
+      {
+        "id": "dff409338bc7dc6999278261807747c4",
+        "title": "苹果二季度iPhone收入同比增22%，服务业务继续拉动增长",
+        "chinese_title": "苹果二季度iPhone收入同比增22%，服务业务继续拉动增长",
+        "original_title": "Apple Q2: iPhone up 22% YoY to $56.99B, vs. $57.21B est., Mac up 6% to $8.4B, iPad up 8% to $6.91B, and Wearables, Home, and Accessories up 5% to $7.9B (Jennifer Elias/CNBC)",
+        "summary": "苹果披露第二财季分部数据，iPhone、Mac、iPad和可穿戴设备收入均同比增长，其中iPhone收入接近570亿美元，显示硬件换机与服务业务仍是本季业绩超预期的核心支撑。",
+        "rating": "A",
+        "score": 82,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "如果这一轮增长延续，市场会进一步追问苹果AI功能能否真正带动硬件升级周期，以及服务业务高毛利能否继续对冲终端市场波动。",
+        "entities": [
+          "Apple",
+          "Ipad",
+          "Iphone",
+          "Mac"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "https://www.techmeme.com/260430/p52#a260430p52"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.373023",
+        "source": "Techmeme (apple)",
+        "url": "https://www.techmeme.com/260430/p52#a260430p52",
+        "event_id": null
+      },
+      {
+        "id": "dd4a0c5c8b8d11608b2858de63258ee2",
+        "title": "苹果财季营收1111亿美元创新高，净利润同比增19%",
+        "chinese_title": "苹果财季营收1111亿美元创新高，净利润同比增19%",
+        "original_title": "Apple reports Q2 revenue up 17% YoY to $111.18B, vs. $109.66B est., net income up 19% to $29.6B, and EPS up 22% to $2.01, above $1.95 est. (Apple)",
+        "summary": "苹果公布第二财季总营收1111.8亿美元、净利润296亿美元、每股收益2.01美元，全面超过市场预期，并称服务收入创历史新高，反映其硬件与服务双线业务韧性仍然强劲。",
+        "rating": "A",
+        "score": 86,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "这份财报会强化资本市场对苹果现金流与回购能力的预期，也会把外界关注重新拉回AI战略是否足以撑起下一轮估值扩张。",
+        "entities": [
+          "Apple",
+          "Iphone",
+          "Services",
+          "Tim Cook"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "https://www.techmeme.com/260430/p51#a260430p51"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.373115",
+        "source": "Techmeme (apple)",
+        "url": "https://www.techmeme.com/260430/p51#a260430p51",
+        "event_id": null
+      },
+      {
+        "id": "46da4f7508306cef1491b6a6e00a2f55",
+        "title": "谷歌推Gemini情绪分析方案，瞄准客服反馈自动化",
+        "chinese_title": "谷歌推Gemini情绪分析方案，瞄准客服反馈自动化",
+        "original_title": "How to Analyze Customer Sentiment with Google Gemini",
+        "summary": "谷歌展示如何用Gemini处理工单、问卷和应用评价等非结构化反馈，帮助团队自动完成情绪、严重性与主题归类，试图把原本依赖人工整理的客户洞察流程产品化和规模化。",
+        "rating": "B",
+        "score": 72,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "如果Gemini在企业客服链路里跑通，生成式AI将进一步切入CRM和客服软件腹地，直接冲击传统文本分析与工单分发工具的价值空间。",
+        "entities": [
+          "Crm",
+          "Customer Service",
+          "Gemini",
+          "Google"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information (Gemini)",
+            "url": "https://www.theinformation.com/articles/analyze-customer-sentiment-google-gemini"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.373202",
+        "source": "The Information (Gemini)",
+        "url": "https://www.theinformation.com/articles/analyze-customer-sentiment-google-gemini",
+        "event_id": null
+      },
+      {
+        "id": "b8c23121418738600ddc380a796c6fd3",
+        "title": "马斯克起诉OpenAI庭审受挫，Altman旧日盟友彻底反目",
+        "chinese_title": "马斯克起诉OpenAI庭审受挫，Altman旧日盟友彻底反目",
+        "original_title": "Elon Musk Just Got Badly Humiliated in Court",
+        "summary": "围绕OpenAI转向营利模式的诉讼进入法庭阶段，马斯克试图推翻项目演化路径却在庭审中遭遇明显挫败，这场纠纷已从个人恩怨演变为影响OpenAI治理合法性的行业案件。",
+        "rating": "S",
+        "score": 100,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "案件走向不仅关系到OpenAI公司结构与融资安排，也可能影响其他前沿AI公司未来在非营利使命与商业化之间如何设计治理框架。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "Sam Altman",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/elon-musk-openai-lawsuit"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.373287",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/elon-musk-openai-lawsuit",
+        "event_id": null
+      },
+      {
+        "id": "a09a8d8a89be8366d69d043d9f449fa0",
+        "title": "法律AI新秀Legora估值冲上56亿美元，与Harvey正面开战",
+        "chinese_title": "法律AI新秀Legora估值冲上56亿美元，与Harvey正面开战",
+        "original_title": "Legal AI startup Legora hits $5.6 valuation and its battle with Harvey just got hotter",
+        "summary": "法律AI创业公司Legora估值升至56亿美元，并与Harvey在融资、市场扩张和品牌投放上全面对撞，显示垂直行业AI赛道正在从产品竞争快速升级为资本与客户争夺战。",
+        "rating": "A",
+        "score": 85,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "若两家公司继续高举高打，法律服务软件市场可能出现更激进的并购与价格战，也会给更多垂直AI公司树立新的融资估值锚点。",
+        "entities": [
+          "Harvey",
+          "Legal Ai",
+          "Legora",
+          "Techcrunch"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/30/legal-ai-startup-legora-hits-5-6-valuation-and-its-battle-with-harvey-just-got-hotter/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.373372",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/30/legal-ai-startup-legora-hits-5-6-valuation-and-its-battle-with-harvey-just-got-hotter/",
+        "event_id": null
+      },
+      {
+        "id": "42d20bfd8828db486401913b1e169a84",
+        "title": "宇树上架双臂轮式人形机器人，售价4290美元起",
+        "chinese_title": "宇树上架双臂轮式人形机器人，售价4290美元起",
+        "original_title": "Unitree Launch | Dual‑Arm (wheeled) Humanoid Robot, from $4290",
+        "summary": "宇树发布带双机械臂的轮式人形机器人，并把起售价压到4290美元，继续用激进定价推动机器人从实验室和展示场景向开发者购买、轻量商业试用阶段靠近。",
+        "rating": "A",
+        "score": 80,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "低价双臂机器人若形成出货规模，可能迫使同行重新调整产品路线和定价策略，也会加快开发者生态围绕通用机器人平台建立。",
+        "entities": [
+          "Dual-Arm Robot",
+          "Humanoid Robot",
+          "Robotics",
+          "Unitree"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t03j6r/unitree_launch_dualarm_wheeled_humanoid_robot/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.373454",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t03j6r/unitree_launch_dualarm_wheeled_humanoid_robot/",
+        "event_id": null
+      },
+      {
+        "id": "d45c19a6074a77f9cdd1207573e7f8e1",
+        "title": "GPT-5.5网络攻防测试小胜Mythos，12小时任务11分钟完成",
+        "chinese_title": "GPT-5.5网络攻防测试小胜Mythos，12小时任务11分钟完成",
+        "original_title": "GPT5.5 slightly outperformed Mythos on a multi-step cyber-attack simulation. One challenge that took a human expert 12 hrs took GPT-5.5 only 11 min at a $1.73 cost",
+        "summary": "英国AI Safety Institute相关评估显示，GPT-5.5在一项多步骤网络攻击模拟中略优于Anthropic的Mythos，把原本需要人类专家12小时完成的挑战压缩到11分钟，且单次成本仅1.73美元。",
+        "rating": "S",
+        "score": 97,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这类公开评测会把前沿模型的网络安全能力推向监管与防御体系前台，安全机构和模型公司都将面临更强的准入、审计和限用压力。",
+        "entities": [
+          "Ai Safety Institute",
+          "GPT",
+          "Mythos",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t02oxw/gpt55_slightly_outperformed_mythos_on_a_multistep/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.373537",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t02oxw/gpt55_slightly_outperformed_mythos_on_a_multistep/",
+        "event_id": null
+      },
+      {
+        "id": "70a8ff396570adf813c4e05a1db7491c",
+        "title": "亚马逊AI带货播客翻车，生成式导购开始遭用户反噬",
+        "chinese_title": "亚马逊AI带货播客翻车，生成式导购开始遭用户反噬",
+        "original_title": "Amazon’s New AI-Generated “Podcasts” Shilling Every Imaginable Products Are Already Backfiring Spectacularly",
+        "summary": "亚马逊尝试用AI自动生成商品推荐播客式音频内容，但产品体验被批评为生硬、尴尬且缺乏真实价值，暴露出平台把生成式AI强行塞进购物链路时面临的信任与转化难题。",
+        "rating": "A",
+        "score": 76,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "如果消费者持续反感这类AI营销形式，电商平台会重新评估生成式导购的ROI，也可能引发关于AI广告标识与用户知情权的讨论。",
+        "entities": [
+          "Ai Podcast",
+          "Amazon",
+          "Business Insider",
+          "E-Commerce"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/amazon-ai-generated-infomercials-backfiring"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.373618",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/amazon-ai-generated-infomercials-backfiring",
+        "event_id": null
+      },
+      {
+        "id": "4b8fb618464d93e48e414182f2e9fb05",
+        "title": "新基准测试人类与生成式AI创意能力，瞄准创作工作量化评估",
+        "chinese_title": "新基准测试人类与生成式AI创意能力，瞄准创作工作量化评估",
+        "original_title": "The Human Creativity Benchmark – Evaluating Generative AI in Creative Work",
+        "summary": "Contra Labs发布Human Creativity Benchmark，试图系统评估生成式AI在创意工作中的表现边界，让长期依赖主观判断的创作能力比较开始拥有更标准化、可复现的测量框架。",
+        "rating": "A",
+        "score": 79,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "一旦这类创意基准被广泛引用，模型公司会更积极用它营销内容生成能力，教育、设计与广告行业也可能据此重估人机协作分工。",
+        "entities": [
+          "Contra Labs",
+          "Creativity",
+          "Generative Ai",
+          "Human Creativity Benchmark"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://contralabs.com/research/human-creativity-benchmark"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.373700",
+        "source": "Hacker News",
+        "url": "https://contralabs.com/research/human-creativity-benchmark",
+        "event_id": null
+      },
+      {
+        "id": "bc21b27572abb85f5c8f3de5192764ce",
+        "title": "OpenAI收紧GPT-5.5 Cyber权限，先只向关键防御方开放",
+        "chinese_title": "OpenAI收紧GPT-5.5 Cyber权限，先只向关键防御方开放",
+        "original_title": "After dissing Anthropic for limiting Mythos, OpenAI restricts access to Cyber, too",
+        "summary": "OpenAI推出网络安全测试工具GPT-5.5 Cyber后，决定先限定向关键网络防御机构开放，和此前对竞争对手限用策略的批评形成反差，也说明高风险能力正越来越受控地释放。",
+        "rating": "A+",
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这会加速行业形成一套前沿模型高危能力的分级开放惯例，后续谁有资格接入、如何审计使用过程，都会成为监管与商业合作的新门槛。",
+        "entities": [
+          "Anthropic",
+          "Cybersecurity",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.373781",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/",
+        "event_id": null
+      },
+      {
+        "id": "3bab5891f94674b528544709a38400f8",
+        "title": "OpenAI给Codex下奇怪禁令，连哥布林话题都被限制",
+        "chinese_title": "OpenAI给Codex下奇怪禁令，连哥布林话题都被限制",
+        "original_title": "OpenAI Strangely Concerned About Goblins",
+        "summary": "OpenAI被曝在Codex等工具的开发指令中加入对哥布林等生物话题的特殊限制，这类看似荒诞的规则意外揭开了模型系统提示词设计、内容边界和内部安全策略的一角。",
+        "rating": "A",
+        "score": 76,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这类离奇规则外泄会让外界更关注模型厂商到底如何通过系统提示词塑造行为边界，也可能推动对AI产品透明度与可解释性的进一步追问。",
+        "entities": [
+          "Codex",
+          "OpenAI",
+          "System Prompt",
+          "Wired"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/openai-concerned-about-goblins"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.373862",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/openai-concerned-about-goblins",
+        "event_id": null
+      },
+      {
+        "id": "95c21c0f7fc3659c35e1a5034c8c46e6",
+        "title": "Meta称若被强装安全功能，可能撤出新墨西哥州市场",
+        "chinese_title": "Meta称若被强装安全功能，可能撤出新墨西哥州市场",
+        "original_title": "Filing: Meta says it might be forced to withdraw its apps from New Mexico if a judge orders it to adopt the state's proposed safety features (Thomas Barrabi/New York Post)",
+        "summary": "Meta在法庭文件中表示，如果法官要求其采用新墨西哥州提出的一系列安全功能，公司可能被迫让Facebook和Instagram等应用退出当地，凸显平台监管博弈正在升级。",
+        "rating": "A",
+        "score": 77,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "如果地方监管与平台在技术可行性上持续冲突，美国各州可能出现更多互联网产品合规分裂，平台全国统一运营模式也会承压。",
+        "entities": [
+          "Instagram",
+          "Meta",
+          "New Mexico"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260430/p46#a260430p46"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.373943",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260430/p46#a260430p46",
+        "event_id": null
+      },
+      {
+        "id": "91ab1499d0ec1053cea61737f68ed80a",
+        "title": "Meta威胁退出新墨西哥州，硬刚州政府内容安全要求",
+        "chinese_title": "Meta威胁退出新墨西哥州，硬刚州政府内容安全要求",
+        "original_title": "Meta threatens to pull its apps from New Mexico if forced to make &lsquo;technologically impractical&rsquo; changes",
+        "summary": "在遭遇巨额判赔和进一步整改压力后，Meta称州政府要求的安全改造在技术上难以实现，甚至可能让Facebook、Instagram和WhatsApp退出新墨西哥州，监管拉锯进入新阶段。",
+        "rating": "A",
+        "score": 78,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这起冲突可能成为美国州级平台监管的重要参照案例，后续也会影响其他社交平台面对儿童保护和内容治理要求时的谈判姿态。",
+        "entities": [
+          "Instagram",
+          "Meta",
+          "Whatsapp"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/policy/921557/meta-threatens-leaving-new-mexico"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.374024",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/policy/921557/meta-threatens-leaving-new-mexico",
+        "event_id": null
+      },
+      {
+        "id": "8c510f950bdc260b753ea4c172a2d18b",
+        "title": "谷歌把Gemini装进汽车，正式接棒车载Google Assistant",
+        "chinese_title": "谷歌把Gemini装进汽车，正式接棒车载Google Assistant",
+        "original_title": "Google is rolling out Gemini to cars that have Google built in, replacing Google Assistant, starting with English in the US (Jess Weatherbed/The Verge)",
+        "summary": "谷歌开始向内置Google系统的汽车推送Gemini，并逐步替换原有Google Assistant，先从美国英语用户开启，意味着生成式AI正式进入车载语音交互的核心入口。",
+        "rating": "A",
+        "score": 86,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "车载助手升级若体验明显改善，车厂与手机生态的话语权分配可能重新洗牌，车内应用、导航和多模态交互也会被Gemini进一步捆绑。",
+        "entities": [
+          "Android Automotive",
+          "Gemini",
+          "Google",
+          "Google Assistant"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (Gemini)",
+            "url": "https://www.techmeme.com/260430/p45#a260430p45"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.374106",
+        "source": "Techmeme (Gemini)",
+        "url": "https://www.techmeme.com/260430/p45#a260430p45",
+        "event_id": null
+      },
+      {
+        "id": "53000c4d692964aa0a5e73d7e54cd5b8",
+        "title": "微软力推按量计费，AI消耗正侵蚀云业务利润率",
+        "chinese_title": "微软力推按量计费，AI消耗正侵蚀云业务利润率",
+        "original_title": "Microsoft Pushes Usage-Based Pricing as AI Eats into Cloud Margins",
+        "summary": "微软高层承认AI应用使用量激增正在拖累云业务利润率，公司因此更积极推动按使用量收费，说明大模型热潮在放大收入的同时，也在真实挤压算力和云服务的成本结构。",
+        "rating": "A",
+        "score": 85,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "如果按量计费逐步成为主流，企业客户的AI预算管理会更精细，云厂商之间也将围绕模型调用成本、毛利率和套餐设计展开新一轮竞争。",
+        "entities": [
+          "Azure",
+          "Microsoft",
+          "Satya Nadella",
+          "Usage-Based Pricing"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/microsoft-pushes-usage-based-pricing-ai-eats-cloud-margins"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.374267",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/microsoft-pushes-usage-based-pricing-ai-eats-cloud-margins",
+        "event_id": null
+      },
+      {
+        "id": "a08333bc9e1537a60e973758a7ca7cb0",
+        "title": "Wired播客聚焦马斯克大战Altman，OpenAI治理战继续升温",
+        "chinese_title": "Wired播客聚焦马斯克大战Altman，OpenAI治理战继续升温",
+        "original_title": "Musk v. Altman Kicks Off, DOJ Guts Voting Rights Unit, and Is the AI Job Apocalypse Overhyped?",
+        "summary": "Wired最新播客把马斯克与Altman的法庭冲突放到更大的AI产业背景下讨论，认为这场官司已不只是两位大佬的私怨，而是可能影响OpenAI未来走向和行业治理模式的关键事件。",
+        "rating": "B",
+        "score": 72,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "随着主流媒体持续放大案件意义，OpenAI的组织合法性、商业化边界与行业示范效应都会被更密集地拆解与讨论。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "Sam Altman",
+          "Wired"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/uncanny-valley-podcast-musk-v-altman-doj-guts-voting-rights-unit-is-ai-job-apocalypse-overhyped/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582816,
+        "published_at": "2026-05-01T05:00:16.374348",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/uncanny-valley-podcast-musk-v-altman-doj-guts-voting-rights-unit-is-ai-job-apocalypse-overhyped/",
+        "event_id": null
+      },
       {
         "id": "bb68fd1d5802a85c29b180c658a60ef4",
         "title": "Claude Mythos被曝可直接出图，Anthropic多模态边界继续外扩",
@@ -148,6 +656,426 @@
         "url": "https://techcrunch.com/2026/04/30/spacex-backer-137-ventures-raises-700m-for-two-growth-stage-funds/",
         "event_id": null
       },
+      {
+        "id": "bc387cd6af05e1eb76d2b8526c387eb2",
+        "title": "OpenAI官方下场聊哥布林，AI人格失控问题被摆上台面",
+        "chinese_title": "OpenAI官方下场聊哥布林，AI人格失控问题被摆上台面",
+        "original_title": "Why OpenAI's 'goblin' problem matters &mdash; and how you can release the goblins on your own",
+        "summary": "OpenAI因Codex提示词里反复出现\"哥布林\"梗而公开解释模型人格漂移问题，这场看似轻松的公关回应，实则把生成式AI行为约束与产品调教能力重新推到聚光灯下。",
+        "rating": "A+",
+        "score": 94,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "如果模型人格化失控成为普遍现象，AI厂商会被迫更透明地披露系统提示与对齐方法，开发者社区也可能围绕可控性形成新的审计工具链。",
+        "entities": [
+          "Ai对齐",
+          "Codex",
+          "OpenAI",
+          "X"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/why-openais-goblin-problem-matters-and-how-you-can-release-the-goblins-on-your-own"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.036490",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/why-openais-goblin-problem-matters-and-how-you-can-release-the-goblins-on-your-own",
+        "event_id": null
+      },
+      {
+        "id": "edb811955b37c8492654a34c5b90885e",
+        "title": "马斯克诉讼若得手，OpenAI现有公司形态或被直接打穿",
+        "chinese_title": "马斯克诉讼若得手，OpenAI现有公司形态或被直接打穿",
+        "original_title": "If OpenAI Loses This Trial, It Could Effectively Be Eliminated in Its Current Form",
+        "summary": "Futurism聚焦马斯克起诉OpenAI一案的潜在后果，认为若法院认定其违背非营利初衷，OpenAI的组织架构、融资安排与商业化路径都可能面临根本性重构。",
+        "rating": "S",
+        "score": 99,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这起诉讼不仅影响OpenAI自身，也会波及微软合作关系、员工股权预期和整个AI公司\"非营利外壳+营利引擎\"的治理模板。",
+        "entities": [
+          "Elon Musk",
+          "Microsoft",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/openai-collapse-weeks-elon-musk-lawsuit"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.036590",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/openai-collapse-weeks-elon-musk-lawsuit",
+        "event_id": null
+      },
+      {
+        "id": "126f8031da127fc851f198891cfa97d1",
+        "title": "Stripe把Link钱包开放给AI代理，自动购物支付开始走向实战",
+        "chinese_title": "Stripe把Link钱包开放给AI代理，自动购物支付开始走向实战",
+        "original_title": "Stripe introduces Link, a digital wallet that autonomous AI agents can use, too",
+        "summary": "Stripe宣布让Link数字钱包支持AI代理发起消费，并通过授权与审批流程控制支付权限，意味着\"代理先行动、人类后确认\"的商业闭环正在进入真实交易场景。",
+        "rating": "S",
+        "score": 100,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "一旦支付层对AI代理开放，电商、订阅和企业采购流程都会被重新设计，围绕代理身份认证、限额控制和责任归属的新基础设施也会加速成型。",
+        "entities": [
+          "Ai代理",
+          "Link",
+          "Stripe",
+          "数字钱包"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/04/30/stripe-link-digital-wallet-ai-agents-shopping/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.036680",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/30/stripe-link-digital-wallet-ai-agents-shopping/",
+        "event_id": null
+      },
+      {
+        "id": "ce746a2a64caf518fdb541bbfe64f4a4",
+        "title": "NSA用Anthropic Mythos挖微软漏洞，前沿模型正式卷入攻防体系",
+        "chinese_title": "NSA用Anthropic Mythos挖微软漏洞，前沿模型正式卷入攻防体系",
+        "original_title": "NSA Uses Anthropic’s Mythos to Find Microsoft Tech Flaws",
+        "summary": "彭博援引消息称，美国国家安全局正在使用Anthropic的Mythos模型帮助发现微软软件漏洞，显示顶级大模型已从实验室评测走向国家级网络安全实战。",
+        "rating": "S",
+        "score": 93,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "如果政府机构持续引入前沿模型做漏洞挖掘，AI安全能力将更快军备竞赛化，微软等平台厂商也会面临更高频的自动化攻防测试压力。",
+        "entities": [
+          "Anthropic",
+          "Microsoft",
+          "Mythos",
+          "Nsa"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/nsa-uses-anthropics-mythos-find-microsoft-tech-flaws"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.036765",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/nsa-uses-anthropics-mythos-find-microsoft-tech-flaws",
+        "event_id": null
+      },
+      {
+        "id": "92157f73bd20e603d678797ddac3961a",
+        "title": "马斯克庭上松口承认部分蒸馏OpenAI，xAI训练边界再起波澜",
+        "chinese_title": "马斯克庭上松口承认部分蒸馏OpenAI，xAI训练边界再起波澜",
+        "original_title": "Elon Musk Admits xAi is Distilling OpenAI Models",
+        "summary": "围绕马斯克与OpenAI诉讼的庭审信息在社区发酵，焦点是马斯克承认xAI\"部分属实\"地蒸馏过OpenAI技术，这让模型数据来源与知识蒸馏边界问题再次升温。",
+        "rating": "A",
+        "score": 84,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "如果蒸馏行为被进一步证实，OpenAI与xAI的纠纷会从公司治理延伸到模型知识产权和训练合规，其他闭源模型厂商也可能被迫澄清类似做法。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "xAI",
+          "模型蒸馏"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t01wm1/elon_musk_admits_xai_is_distilling_openai_models/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.036933",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t01wm1/elon_musk_admits_xai_is_distilling_openai_models/",
+        "event_id": null
+      },
+      {
+        "id": "ab531c45b1aff0d0a3bc72d357da932e",
+        "title": "网友用虚构星球绕过DeepSeek审查，模型防线再被提示词撬开",
+        "chinese_title": "网友用虚构星球绕过DeepSeek审查，模型防线再被提示词撬开",
+        "original_title": "I bypassed DeepSeek's censorship filters with a fictional planet trick, here's what happened.",
+        "summary": "一则社区帖文展示了通过\"虚构星球\"设定绕过DeepSeek审查限制的思路，虽然细节来自用户实验，但再次说明文本安全边界仍容易被叙事包装和角色设定突破。",
+        "rating": "A",
+        "score": 81,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这类绕过技巧若持续扩散，国产大模型厂商会更重视多轮语境下的策略检测，也可能推动红队测试从关键词屏蔽转向场景化对抗评估。",
+        "entities": [
+          "DeepSeek",
+          "内容审查",
+          "提示词攻击"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (deepseek)",
+            "url": "https://www.reddit.com/r/singularity/comments/1t01j7m/i_bypassed_deepseeks_censorship_filters_with_a/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.037015",
+        "source": "Technological Singularity (deepseek)",
+        "url": "https://www.reddit.com/r/singularity/comments/1t01j7m/i_bypassed_deepseeks_censorship_filters_with_a/",
+        "event_id": null
+      },
+      {
+        "id": "f297bd3fc96959af54753889ff194be3",
+        "title": "马斯克当庭承认xAI部分蒸馏OpenAI，双方诉讼火力继续升级",
+        "chinese_title": "马斯克当庭承认xAI部分蒸馏OpenAI，双方诉讼火力继续升级",
+        "original_title": "Musk v. Altman: when asked whether xAI has ever distilled tech from OpenAI, Elon Musk says the claim is \"partly\" true (New York Times)",
+        "summary": "纽约时报经Techmeme汇总披露，马斯克在庭审交叉询问中承认xAI曾\"部分\"蒸馏OpenAI技术，使这场围绕OpenAI治理与竞争边界的官司再添关键证词。",
+        "rating": "S",
+        "score": 97,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "该表态可能影响案件走向，也会把模型蒸馏合法性、训练数据可追溯性和闭源模型之间的技术借鉴边界推到行业正中央。",
+        "entities": [
+          "Elon Musk",
+          "Microsoft",
+          "OpenAI",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260430/p38#a260430p38"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.037265",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260430/p38#a260430p38",
+        "event_id": null
+      },
+      {
+        "id": "d56f93bc661ff9a9eac8d670fc2ffa4a",
+        "title": "Meta拿AI工具打暴富广告，Manus式淘金叙事开始反噬平台",
+        "chinese_title": "Meta拿AI工具打暴富广告，Manus式淘金叙事开始反噬平台",
+        "original_title": "Meta is running get-rich-quick ads for its AI tools",
+        "summary": "The Verge披露，Meta旗下Manus正在投放大量\"用AI轻松赚钱\"的广告，鼓励用户批量给本地商家做网站牟利，这种粗暴增长打法正在把AI工具推向新的信任危机。",
+        "rating": "A",
+        "score": 80,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "若平台继续以暴富叙事拉新，监管和广告审核压力会同步上升，AI创业产品也会更快遭遇\"内容农场化\"和品牌信誉透支的问题。",
+        "entities": [
+          "ByteDance",
+          "Instagram",
+          "Manus",
+          "Meta"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts (manus)",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/915970/meta-manus-ai-ads-website-slop"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.037347",
+        "source": "The Verge -  Tech Posts (manus)",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/915970/meta-manus-ai-ads-website-slop",
+        "event_id": null
+      },
+      {
+        "id": "ab4451afda7844668f54528c6ca423cc",
+        "title": "美国参院推动儿童安全法案，OpenAI和Meta或被强制年龄验证",
+        "chinese_title": "美国参院推动儿童安全法案，OpenAI和Meta或被强制年龄验证",
+        "original_title": "The US Senate Judiciary Committee unanimously endorses a bipartisan child safety bill requiring AI companies like OpenAI and Meta to implement age verification (Emily Birnbaum/Bloomberg)",
+        "summary": "美国参议院司法委员会一致通过一项两党法案，要求OpenAI、Meta等AI公司执行年龄验证，这意味着围绕未成年人接触生成式AI的监管要求开始明显收紧。",
+        "rating": "A+",
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "一旦年龄验证成为硬性要求，产品注册流程、匿名使用门槛与数据合规成本都会上升，面向青少年的AI应用商业模式也可能被迫重做。",
+        "entities": [
+          "Meta",
+          "OpenAI",
+          "年龄验证",
+          "美国参议院司法委员会"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260430/p37#a260430p37"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.037512",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260430/p37#a260430p37",
+        "event_id": null
+      },
+      {
+        "id": "b9c06ce2da59cd53ee302d7304ba4cd4",
+        "title": "Claude Code、Copilot、Codex全被攻破，黑客瞄准的都是凭证",
+        "chinese_title": "Claude Code、Copilot、Codex全被攻破，黑客瞄准的都是凭证",
+        "original_title": "Claude Code, Copilot and Codex all got hacked. Every attacker went for the credential, not the model.",
+        "summary": "VentureBeat梳理六起针对AI编程代理的真实攻击案例，发现攻击者几乎都绕开模型本身，直接盯上OAuth令牌、源码泄露和权限边界，暴露出AI代理安全的系统性短板。",
+        "rating": "S",
+        "score": 100,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "随着AI代理接入更多代码仓库和生产权限，安全竞争会从模型能力转到身份管理、沙箱隔离和工作流最小授权，企业采购标准也将随之改变。",
+        "entities": [
+          "Claude Code",
+          "Codex",
+          "Github Copilot",
+          "Oauth"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/security/six-exploits-broke-ai-coding-agents-iam-never-saw-them"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.037594",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/security/six-exploits-broke-ai-coding-agents-iam-never-saw-them",
+        "event_id": null
+      },
+      {
+        "id": "85dd0944e54443116b12d0f4fad1484e",
+        "title": "GPT-5.5网络攻防评测追平Mythos，第二个通关多步攻击模拟",
+        "chinese_title": "GPT-5.5网络攻防评测追平Mythos，第二个通关多步攻击模拟",
+        "original_title": "Cybersecurity analysis: GPT-5.5 reaches a similar level of performance as Mythos Preview and is the second model to solve a multi-step cyberattack simulation (AI Security Institute)",
+        "summary": "AI Security Institute发布分析称，GPT-5.5在网络攻防测试中的表现已接近Anthropic Mythos Preview，并成为第二个完成多步骤攻击模拟的大模型，安全能力天花板继续被抬高。",
+        "rating": "S",
+        "score": 93,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "模型在网络攻防上的跃升会同步放大红队、漏洞挖掘和自动化渗透的现实风险，也会迫使评测机构和监管部门更快更新能力分级与开放策略。",
+        "entities": [
+          "Ai Security Institute",
+          "Anthropic",
+          "Gpt-5.5",
+          "Mythos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260430/p36#a260430p36"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.037677",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260430/p36#a260430p36",
+        "event_id": null
+      },
+      {
+        "id": "97a5005a83f87d96175f2910d5568a78",
+        "title": "微软和OpenAI新版协议拆解：最紧密同盟开始体面松绑",
+        "chinese_title": "微软和OpenAI新版协议拆解：最紧密同盟开始体面松绑",
+        "original_title": "Here&rsquo;s how the new Microsoft and OpenAI deal breaks down",
+        "summary": "The Verge拆解微软与OpenAI最新合作重构，指出双方虽然没有彻底翻脸，但围绕算力、股权与产品优先权的关系正在从深度绑定转向更具边界感的合作模式。",
+        "rating": "S",
+        "score": 96,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这份新协议将直接影响Azure算力分配、OpenAI未来融资灵活性以及微软自研模型节奏，其他云厂商与模型公司的联盟关系也可能跟着重新谈判。",
+        "entities": [
+          "Azure",
+          "Microsoft",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/921210/microsoft-openai-partnership-divorce-notepad"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.037769",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/921210/microsoft-openai-partnership-divorce-notepad",
+        "event_id": null
+      },
+      {
+        "id": "4fef3b04db6de2fdcb2d7ae0171d1d40",
+        "title": "Gemini开进车机系统，Google要把座舱助手从语音升级成AI代理",
+        "chinese_title": "Gemini开进车机系统，Google要把座舱助手从语音升级成AI代理",
+        "original_title": "Gemini is rolling out to cars with Google built-in",
+        "summary": "Google宣布将把Gemini推送到搭载Google built-in的车辆中，替代原有Google Assistant，目标是让车机具备更自然对话和更深入的车辆控制能力。",
+        "rating": "A",
+        "score": 86,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "车载AI助手升级后，汽车厂商在操作系统主导权、数据归属和生态分成上的博弈会进一步加剧，座舱也可能成为下一个高频AI入口。",
+        "entities": [
+          "Gemini",
+          "Google",
+          "Google Assistant",
+          "Google Built-In"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts (Gemini)",
+            "url": "https://www.theverge.com/tech/921117/google-gemini-ai-assistant-cars-upgrade"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.037854",
+        "source": "The Verge -  Tech Posts (Gemini)",
+        "url": "https://www.theverge.com/tech/921117/google-gemini-ai-assistant-cars-upgrade",
+        "event_id": null
+      },
+      {
+        "id": "63c1566aeb7303708df55ba0e81af162",
+        "title": "Writer推无提示触发AI代理，企业工作流开始走向事件驱动自动化",
+        "chinese_title": "Writer推无提示触发AI代理，企业工作流开始走向事件驱动自动化",
+        "original_title": "Writer launches AI agents that can act without prompts, taking on Amazon, Microsoft and Salesforce",
+        "summary": "Writer发布可由事件自动触发的企业AI代理，支持在Gmail、Slack、SharePoint等系统中识别业务信号并执行多步任务，进一步把AI从问答工具推向流程执行层。",
+        "rating": "S",
+        "score": 97,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "当代理不再等待人类发问，而是主动响应业务事件，企业软件竞争将从\"谁模型更强\"转向\"谁更快嵌入工作流、接管关键动作\"。",
+        "entities": [
+          "Microsoft",
+          "Salesforce",
+          "Writer",
+          "企业Ai代理"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/writer-launches-ai-agents-that-can-act-without-prompts-taking-on-amazon-microsoft-and-salesforce"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582782,
+        "published_at": "2026-05-01T04:59:42.037936",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/writer-launches-ai-agents-that-can-act-without-prompts-taking-on-amazon-microsoft-and-salesforce",
+        "event_id": null
+      }
+    ],
+    "2026-04-30": [
       {
         "id": "c925daea2fb4ec629fd3b682f869e344",
         "title": "越用AI越反感，Z世代成聊天机器人最大反弹人群",
@@ -18985,428 +19913,8 @@
         "url": "https://www.reddit.com/r/singularity/comments/1st4vh1/experiment_i_have_an_alien_model_that_doesnt_have/",
         "event_id": null
       }
-    ],
-    "2026-05-01": [
-      {
-        "id": "bc387cd6af05e1eb76d2b8526c387eb2",
-        "title": "OpenAI官方下场聊哥布林，AI人格失控问题被摆上台面",
-        "chinese_title": "OpenAI官方下场聊哥布林，AI人格失控问题被摆上台面",
-        "original_title": "Why OpenAI's 'goblin' problem matters &mdash; and how you can release the goblins on your own",
-        "summary": "OpenAI因Codex提示词里反复出现\"哥布林\"梗而公开解释模型人格漂移问题，这场看似轻松的公关回应，实则把生成式AI行为约束与产品调教能力重新推到聚光灯下。",
-        "rating": "A+",
-        "score": 94,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "如果模型人格化失控成为普遍现象，AI厂商会被迫更透明地披露系统提示与对齐方法，开发者社区也可能围绕可控性形成新的审计工具链。",
-        "entities": [
-          "Ai对齐",
-          "Codex",
-          "OpenAI",
-          "X"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/technology/why-openais-goblin-problem-matters-and-how-you-can-release-the-goblins-on-your-own"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.036490",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/technology/why-openais-goblin-problem-matters-and-how-you-can-release-the-goblins-on-your-own",
-        "event_id": null
-      },
-      {
-        "id": "edb811955b37c8492654a34c5b90885e",
-        "title": "马斯克诉讼若得手，OpenAI现有公司形态或被直接打穿",
-        "chinese_title": "马斯克诉讼若得手，OpenAI现有公司形态或被直接打穿",
-        "original_title": "If OpenAI Loses This Trial, It Could Effectively Be Eliminated in Its Current Form",
-        "summary": "Futurism聚焦马斯克起诉OpenAI一案的潜在后果，认为若法院认定其违背非营利初衷，OpenAI的组织架构、融资安排与商业化路径都可能面临根本性重构。",
-        "rating": "S",
-        "score": 99,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这起诉讼不仅影响OpenAI自身，也会波及微软合作关系、员工股权预期和整个AI公司\"非营利外壳+营利引擎\"的治理模板。",
-        "entities": [
-          "Elon Musk",
-          "Microsoft",
-          "OpenAI",
-          "Sam Altman"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/future-society/openai-collapse-weeks-elon-musk-lawsuit"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.036590",
-        "source": "Futurism",
-        "url": "https://futurism.com/future-society/openai-collapse-weeks-elon-musk-lawsuit",
-        "event_id": null
-      },
-      {
-        "id": "126f8031da127fc851f198891cfa97d1",
-        "title": "Stripe把Link钱包开放给AI代理，自动购物支付开始走向实战",
-        "chinese_title": "Stripe把Link钱包开放给AI代理，自动购物支付开始走向实战",
-        "original_title": "Stripe introduces Link, a digital wallet that autonomous AI agents can use, too",
-        "summary": "Stripe宣布让Link数字钱包支持AI代理发起消费，并通过授权与审批流程控制支付权限，意味着\"代理先行动、人类后确认\"的商业闭环正在进入真实交易场景。",
-        "rating": "S",
-        "score": 100,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "一旦支付层对AI代理开放，电商、订阅和企业采购流程都会被重新设计，围绕代理身份认证、限额控制和责任归属的新基础设施也会加速成型。",
-        "entities": [
-          "Ai代理",
-          "Link",
-          "Stripe",
-          "数字钱包"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/04/30/stripe-link-digital-wallet-ai-agents-shopping/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.036680",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/30/stripe-link-digital-wallet-ai-agents-shopping/",
-        "event_id": null
-      },
-      {
-        "id": "ce746a2a64caf518fdb541bbfe64f4a4",
-        "title": "NSA用Anthropic Mythos挖微软漏洞，前沿模型正式卷入攻防体系",
-        "chinese_title": "NSA用Anthropic Mythos挖微软漏洞，前沿模型正式卷入攻防体系",
-        "original_title": "NSA Uses Anthropic’s Mythos to Find Microsoft Tech Flaws",
-        "summary": "彭博援引消息称，美国国家安全局正在使用Anthropic的Mythos模型帮助发现微软软件漏洞，显示顶级大模型已从实验室评测走向国家级网络安全实战。",
-        "rating": "S",
-        "score": 93,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "如果政府机构持续引入前沿模型做漏洞挖掘，AI安全能力将更快军备竞赛化，微软等平台厂商也会面临更高频的自动化攻防测试压力。",
-        "entities": [
-          "Anthropic",
-          "Microsoft",
-          "Mythos",
-          "Nsa"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/nsa-uses-anthropics-mythos-find-microsoft-tech-flaws"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.036765",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/nsa-uses-anthropics-mythos-find-microsoft-tech-flaws",
-        "event_id": null
-      },
-      {
-        "id": "92157f73bd20e603d678797ddac3961a",
-        "title": "马斯克庭上松口承认部分蒸馏OpenAI，xAI训练边界再起波澜",
-        "chinese_title": "马斯克庭上松口承认部分蒸馏OpenAI，xAI训练边界再起波澜",
-        "original_title": "Elon Musk Admits xAi is Distilling OpenAI Models",
-        "summary": "围绕马斯克与OpenAI诉讼的庭审信息在社区发酵，焦点是马斯克承认xAI\"部分属实\"地蒸馏过OpenAI技术，这让模型数据来源与知识蒸馏边界问题再次升温。",
-        "rating": "A",
-        "score": 84,
-        "type": "breaking",
-        "typeName": "突发事件",
-        "expansion": "如果蒸馏行为被进一步证实，OpenAI与xAI的纠纷会从公司治理延伸到模型知识产权和训练合规，其他闭源模型厂商也可能被迫澄清类似做法。",
-        "entities": [
-          "Elon Musk",
-          "OpenAI",
-          "xAI",
-          "模型蒸馏"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1t01wm1/elon_musk_admits_xai_is_distilling_openai_models/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.036933",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1t01wm1/elon_musk_admits_xai_is_distilling_openai_models/",
-        "event_id": null
-      },
-      {
-        "id": "ab531c45b1aff0d0a3bc72d357da932e",
-        "title": "网友用虚构星球绕过DeepSeek审查，模型防线再被提示词撬开",
-        "chinese_title": "网友用虚构星球绕过DeepSeek审查，模型防线再被提示词撬开",
-        "original_title": "I bypassed DeepSeek's censorship filters with a fictional planet trick, here's what happened.",
-        "summary": "一则社区帖文展示了通过\"虚构星球\"设定绕过DeepSeek审查限制的思路，虽然细节来自用户实验，但再次说明文本安全边界仍容易被叙事包装和角色设定突破。",
-        "rating": "A",
-        "score": 81,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这类绕过技巧若持续扩散，国产大模型厂商会更重视多轮语境下的策略检测，也可能推动红队测试从关键词屏蔽转向场景化对抗评估。",
-        "entities": [
-          "DeepSeek",
-          "内容审查",
-          "提示词攻击"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (deepseek)",
-            "url": "https://www.reddit.com/r/singularity/comments/1t01j7m/i_bypassed_deepseeks_censorship_filters_with_a/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.037015",
-        "source": "Technological Singularity (deepseek)",
-        "url": "https://www.reddit.com/r/singularity/comments/1t01j7m/i_bypassed_deepseeks_censorship_filters_with_a/",
-        "event_id": null
-      },
-      {
-        "id": "f297bd3fc96959af54753889ff194be3",
-        "title": "马斯克当庭承认xAI部分蒸馏OpenAI，双方诉讼火力继续升级",
-        "chinese_title": "马斯克当庭承认xAI部分蒸馏OpenAI，双方诉讼火力继续升级",
-        "original_title": "Musk v. Altman: when asked whether xAI has ever distilled tech from OpenAI, Elon Musk says the claim is \"partly\" true (New York Times)",
-        "summary": "纽约时报经Techmeme汇总披露，马斯克在庭审交叉询问中承认xAI曾\"部分\"蒸馏OpenAI技术，使这场围绕OpenAI治理与竞争边界的官司再添关键证词。",
-        "rating": "S",
-        "score": 97,
-        "type": "breaking",
-        "typeName": "突发事件",
-        "expansion": "该表态可能影响案件走向，也会把模型蒸馏合法性、训练数据可追溯性和闭源模型之间的技术借鉴边界推到行业正中央。",
-        "entities": [
-          "Elon Musk",
-          "Microsoft",
-          "OpenAI",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260430/p38#a260430p38"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.037265",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260430/p38#a260430p38",
-        "event_id": null
-      },
-      {
-        "id": "d56f93bc661ff9a9eac8d670fc2ffa4a",
-        "title": "Meta拿AI工具打暴富广告，Manus式淘金叙事开始反噬平台",
-        "chinese_title": "Meta拿AI工具打暴富广告，Manus式淘金叙事开始反噬平台",
-        "original_title": "Meta is running get-rich-quick ads for its AI tools",
-        "summary": "The Verge披露，Meta旗下Manus正在投放大量\"用AI轻松赚钱\"的广告，鼓励用户批量给本地商家做网站牟利，这种粗暴增长打法正在把AI工具推向新的信任危机。",
-        "rating": "A",
-        "score": 80,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "若平台继续以暴富叙事拉新，监管和广告审核压力会同步上升，AI创业产品也会更快遭遇\"内容农场化\"和品牌信誉透支的问题。",
-        "entities": [
-          "ByteDance",
-          "Instagram",
-          "Manus",
-          "Meta"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts (manus)",
-            "url": "https://www.theverge.com/ai-artificial-intelligence/915970/meta-manus-ai-ads-website-slop"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.037347",
-        "source": "The Verge -  Tech Posts (manus)",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/915970/meta-manus-ai-ads-website-slop",
-        "event_id": null
-      },
-      {
-        "id": "ab4451afda7844668f54528c6ca423cc",
-        "title": "美国参院推动儿童安全法案，OpenAI和Meta或被强制年龄验证",
-        "chinese_title": "美国参院推动儿童安全法案，OpenAI和Meta或被强制年龄验证",
-        "original_title": "The US Senate Judiciary Committee unanimously endorses a bipartisan child safety bill requiring AI companies like OpenAI and Meta to implement age verification (Emily Birnbaum/Bloomberg)",
-        "summary": "美国参议院司法委员会一致通过一项两党法案，要求OpenAI、Meta等AI公司执行年龄验证，这意味着围绕未成年人接触生成式AI的监管要求开始明显收紧。",
-        "rating": "A+",
-        "score": 91,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "一旦年龄验证成为硬性要求，产品注册流程、匿名使用门槛与数据合规成本都会上升，面向青少年的AI应用商业模式也可能被迫重做。",
-        "entities": [
-          "Meta",
-          "OpenAI",
-          "年龄验证",
-          "美国参议院司法委员会"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260430/p37#a260430p37"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.037512",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260430/p37#a260430p37",
-        "event_id": null
-      },
-      {
-        "id": "b9c06ce2da59cd53ee302d7304ba4cd4",
-        "title": "Claude Code、Copilot、Codex全被攻破，黑客瞄准的都是凭证",
-        "chinese_title": "Claude Code、Copilot、Codex全被攻破，黑客瞄准的都是凭证",
-        "original_title": "Claude Code, Copilot and Codex all got hacked. Every attacker went for the credential, not the model.",
-        "summary": "VentureBeat梳理六起针对AI编程代理的真实攻击案例，发现攻击者几乎都绕开模型本身，直接盯上OAuth令牌、源码泄露和权限边界，暴露出AI代理安全的系统性短板。",
-        "rating": "S",
-        "score": 100,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "随着AI代理接入更多代码仓库和生产权限，安全竞争会从模型能力转到身份管理、沙箱隔离和工作流最小授权，企业采购标准也将随之改变。",
-        "entities": [
-          "Claude Code",
-          "Codex",
-          "Github Copilot",
-          "Oauth"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/security/six-exploits-broke-ai-coding-agents-iam-never-saw-them"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.037594",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/security/six-exploits-broke-ai-coding-agents-iam-never-saw-them",
-        "event_id": null
-      },
-      {
-        "id": "85dd0944e54443116b12d0f4fad1484e",
-        "title": "GPT-5.5网络攻防评测追平Mythos，第二个通关多步攻击模拟",
-        "chinese_title": "GPT-5.5网络攻防评测追平Mythos，第二个通关多步攻击模拟",
-        "original_title": "Cybersecurity analysis: GPT-5.5 reaches a similar level of performance as Mythos Preview and is the second model to solve a multi-step cyberattack simulation (AI Security Institute)",
-        "summary": "AI Security Institute发布分析称，GPT-5.5在网络攻防测试中的表现已接近Anthropic Mythos Preview，并成为第二个完成多步骤攻击模拟的大模型，安全能力天花板继续被抬高。",
-        "rating": "S",
-        "score": 93,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "模型在网络攻防上的跃升会同步放大红队、漏洞挖掘和自动化渗透的现实风险，也会迫使评测机构和监管部门更快更新能力分级与开放策略。",
-        "entities": [
-          "Ai Security Institute",
-          "Anthropic",
-          "Gpt-5.5",
-          "Mythos"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260430/p36#a260430p36"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.037677",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260430/p36#a260430p36",
-        "event_id": null
-      },
-      {
-        "id": "97a5005a83f87d96175f2910d5568a78",
-        "title": "微软和OpenAI新版协议拆解：最紧密同盟开始体面松绑",
-        "chinese_title": "微软和OpenAI新版协议拆解：最紧密同盟开始体面松绑",
-        "original_title": "Here&rsquo;s how the new Microsoft and OpenAI deal breaks down",
-        "summary": "The Verge拆解微软与OpenAI最新合作重构，指出双方虽然没有彻底翻脸，但围绕算力、股权与产品优先权的关系正在从深度绑定转向更具边界感的合作模式。",
-        "rating": "S",
-        "score": 96,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这份新协议将直接影响Azure算力分配、OpenAI未来融资灵活性以及微软自研模型节奏，其他云厂商与模型公司的联盟关系也可能跟着重新谈判。",
-        "entities": [
-          "Azure",
-          "Microsoft",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/tech/921210/microsoft-openai-partnership-divorce-notepad"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.037769",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/tech/921210/microsoft-openai-partnership-divorce-notepad",
-        "event_id": null
-      },
-      {
-        "id": "4fef3b04db6de2fdcb2d7ae0171d1d40",
-        "title": "Gemini开进车机系统，Google要把座舱助手从语音升级成AI代理",
-        "chinese_title": "Gemini开进车机系统，Google要把座舱助手从语音升级成AI代理",
-        "original_title": "Gemini is rolling out to cars with Google built-in",
-        "summary": "Google宣布将把Gemini推送到搭载Google built-in的车辆中，替代原有Google Assistant，目标是让车机具备更自然对话和更深入的车辆控制能力。",
-        "rating": "A",
-        "score": 86,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "车载AI助手升级后，汽车厂商在操作系统主导权、数据归属和生态分成上的博弈会进一步加剧，座舱也可能成为下一个高频AI入口。",
-        "entities": [
-          "Gemini",
-          "Google",
-          "Google Assistant",
-          "Google Built-In"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts (Gemini)",
-            "url": "https://www.theverge.com/tech/921117/google-gemini-ai-assistant-cars-upgrade"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.037854",
-        "source": "The Verge -  Tech Posts (Gemini)",
-        "url": "https://www.theverge.com/tech/921117/google-gemini-ai-assistant-cars-upgrade",
-        "event_id": null
-      },
-      {
-        "id": "63c1566aeb7303708df55ba0e81af162",
-        "title": "Writer推无提示触发AI代理，企业工作流开始走向事件驱动自动化",
-        "chinese_title": "Writer推无提示触发AI代理，企业工作流开始走向事件驱动自动化",
-        "original_title": "Writer launches AI agents that can act without prompts, taking on Amazon, Microsoft and Salesforce",
-        "summary": "Writer发布可由事件自动触发的企业AI代理，支持在Gmail、Slack、SharePoint等系统中识别业务信号并执行多步任务，进一步把AI从问答工具推向流程执行层。",
-        "rating": "S",
-        "score": 97,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "当代理不再等待人类发问，而是主动响应业务事件，企业软件竞争将从\"谁模型更强\"转向\"谁更快嵌入工作流、接管关键动作\"。",
-        "entities": [
-          "Microsoft",
-          "Salesforce",
-          "Writer",
-          "企业Ai代理"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/technology/writer-launches-ai-agents-that-can-act-without-prompts-taking-on-amazon-microsoft-and-salesforce"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777582782,
-        "published_at": "2026-05-01T04:59:42.037936",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/technology/writer-launches-ai-agents-that-can-act-without-prompts-taking-on-amazon-microsoft-and-salesforce",
-        "event_id": null
-      }
     ]
   },
-  "last_updated": "2026-05-01T05:00:25.045661",
-  "total_news": 645
+  "last_updated": "2026-05-01T05:01:27.516129",
+  "total_news": 662
 }
