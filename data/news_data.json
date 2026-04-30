@@ -2,13 +2,103 @@
   "news": {
     "2026-05-01": [
       {
+        "id": "f6c7d3dce11b236df98d80f2952dbdc6",
+        "title": "库克称芯片短缺拖累iPhone销量，苹果需求依旧爆表",
+        "chinese_title": "库克称芯片短缺拖累iPhone销量，苹果需求依旧爆表",
+        "original_title": "Tim Cook says iPhone sales, which slightly missed Q2 estimates, were held back by chip supply constraints, as \"demand was off the charts\" (Reuters)",
+        "summary": "苹果二季度硬件需求继续强劲，库克直言iPhone本可卖得更多，只是芯片供应跟不上，这让苹果的供应链韧性和下半年备货节奏再次成为市场关注焦点。",
+        "rating": "A",
+        "score": 82,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "若供应约束持续，苹果后续产品节奏和上游芯片代工产能分配都可能受影响，也会牵动消费电子链条预期。",
+        "entities": [
+          "Apple",
+          "Iphone",
+          "Tim Cook",
+          "芯片供应链"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260430/p54#a260430p54"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582909,
+        "published_at": "2026-05-01T05:01:49.785036",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260430/p54#a260430p54",
+        "event_id": null
+      },
+      {
+        "id": "fabf671e04e2cc428d9b95fd67621d99",
+        "title": "苹果服务收入逼近310亿美元，App生态继续扛起增长",
+        "chinese_title": "苹果服务收入逼近310亿美元，App生态继续扛起增长",
+        "original_title": "Apple reports Q2 revenue from Services, which includes the App Store, Apple TV, Apple Music, and more, grew 16.3% YoY to $30.98B, beating estimates of $30.4B (Todd Spangler/Variety)",
+        "summary": "苹果二季度服务业务同比增长16.3%至309.8亿美元，超过市场预期，说明App Store、Apple Music和流媒体订阅仍在稳定放大利润弹性。",
+        "rating": "A",
+        "score": 80,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "服务业务持续抬升，会强化苹果估值中的订阅逻辑，也会让监管对平台抽成和生态控制的关注进一步升温。",
+        "entities": [
+          "App Store",
+          "Apple",
+          "Apple Music",
+          "Apple Tv"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260430/p53#a260430p53"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582909,
+        "published_at": "2026-05-01T05:01:49.785149",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260430/p53#a260430p53",
+        "event_id": null
+      },
+      {
+        "id": "655e423efe2346f72f017ef42f94e6f7",
+        "title": "英国测评称GPT-5.5网络攻防能力逼近Anthropic Mythos",
+        "chinese_title": "英国测评称GPT-5.5网络攻防能力逼近Anthropic Mythos",
+        "original_title": "UK Group Says OpenAI’s GPT-5.5 is Comparable to Anthropic Mythos in Cybersecurity Capabilities",
+        "summary": "英国官方测评机构表示，OpenAI的GPT-5.5在网络安全能力上已接近Anthropic未公开模型Mythos，前沿模型在攻防场景的实战风险正在快速抬升。",
+        "rating": "S",
+        "score": 98,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "一旦攻防能力继续提升，模型开放策略、红队评估和国家级安全监管都可能同步加码。",
+        "entities": [
+          "Anthropic",
+          "GPT",
+          "Mythos",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/uk-group-says-openais-gpt-5-5-comparable-anthropic-mythos-cybersecurity-capabilities"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777582909,
+        "published_at": "2026-05-01T05:01:49.785243",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/uk-group-says-openais-gpt-5-5-comparable-anthropic-mythos-cybersecurity-capabilities",
+        "event_id": null
+      },
+      {
         "id": "ffab76e3e4c7733be8c5e9327cc69b1f",
-        "title": "阿里巴巴发布Metis智能体，工具误调用率从98%降到2%",
-        "chinese_title": "阿里巴巴发布Metis智能体，工具误调用率从98%降到2%",
+        "title": "阿里Metis智能体把冗余工具调用率从98%压到2%",
+        "chinese_title": "阿里Metis智能体把冗余工具调用率从98%压到2%",
         "original_title": "Alibaba's Metis agent cuts redundant AI tool calls from 98% to 2% &mdash; and gets more accurate doing it",
-        "summary": "阿里研究团队提出Metis与HDPO训练框架，专门解决智能体盲目调用外部工具的问题，在显著减少无效工具调用的同时提升任务准确率，指向更低成本、更稳定的Agent落地路径。",
+        "summary": "阿里研究团队提出HDPO强化学习框架，让Metis智能体大幅减少无效工具调用，同时提升任务准确率，直击AI Agent成本高、延迟大和推理噪声重的核心痛点。",
         "rating": "A+",
-        "score": 94,
+        "score": 90,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "如果该方法在更多通用智能体场景复现，Agent产品会从拼工具数量转向比拼工具选择效率，企业级部署成本和延迟也可能被重新定价。",
@@ -29,16 +119,19 @@
         "published_at": "2026-05-01T05:00:16.372921",
         "source": "VentureBeat",
         "url": "https://venturebeat.com/orchestration/alibabas-metis-agent-cuts-redundant-ai-tool-calls-from-98-to-2-and-gets-more-accurate-doing-it",
-        "event_id": null
+        "event_id": null,
+        "original_content": "One of the key challenges of building effective AI agents is teaching them to choose between using external tools or relying on their internal knowledge. But large language models are often trained to blindly invoke tools, which causes latency bottlenecks, unnecessary API costs, and degraded reasoning caused by environmental noise. To overcome this challenge, researchers at Alibaba introduced Hierarchical Decoupled Policy Optimization (HDPO), a reinforcement learning framework that trains agents to balance both execution efficiency and task accuracy. Metis, a multimodal model they trained using this framework, reduces redundant tool invocations from 98% to just 2% while establishing new state-of-the-art reasoning accuracy across key industry benchmarks. This framework helps create AI agents that are not trigger-happy and know when to abstain from using tools, enabling the development of responsive and cost-effective agentic systems. The metacognitive deficit Current agentic models face what the researchers call a “profound metacognitive deficit.” The models have a hard time deciding when to use their internal parametric knowledge versus when to query an external utility. As a result, they blindly invoke tools and APIs, like web search or code execution, even when the user's prompt already contains all the necessary information to resolve the task. This trigger-happy tool-calling behavior creates severe operational hurdles for real-world applications. Because the models are trained to focus almost entirely on task completion, they are indifferent to latency. These agents frequently hit exorbitant tool call rates. Every unnecessary external API call introduces a serial processing bottleneck, turning a technically capable AI into a sluggish system that frustrates users and burns through tool budgets. At the same time, burning computational resources on excessive tool use does not translate to better reasoning. Redundant tool interactions inject noise into the model’s context. This noise can distract the model, derailing an otherwise sound chain of reasoning and actively degrading the final output. To address the latency and cost issues of blind tool invocation, previous reinforcement learning methods attempted to penalize excessive tool usage by combining task accuracy and execution efficiency into one reward signal. However, this entangled design creates an unsolvable optimization dilemma. If the efficiency penalty is too aggressive, the model becomes overly conservative and suppresses essential tool use, sacrificing correctness on arduous tasks. Conversely, if the penalty is mild, the optimization signal loses its value and does not prevent tool overuse on simpler tasks. Furthermore, this shared reward creates semantic ambiguity, where an inaccurate trajectory with zero tool calls might yield the same reward as an accurate trajectory with excessive tool usage. Because the training signals for accuracy and efficiency become entangled, the model can’t learn to control tool-use without degrading its core reasoning capabilities. Hierarchical decoupled policy optimization To solve the optimization dilemma of coupled rewards, the researchers introduced HDPO. HDPO separates accuracy and efficiency into two independent optimization channels. The accuracy channel focuses on maximizing task correctness across all of the model's rollouts. The efficiency channel optimizes for execution economy. HDPO computes the training signals for these two channels independently and only combines them at the final stage of loss computation. The efficiency signal is conditional upon the accuracy channel. This means that an incorrect response is never rewarded simply for being fast or using fewer tools. This decoupling avoids situations where accuracy and efficiency gradients cancel each other out, providing the AI with clean learning signals for both goals. The most powerful emergent property of this decoupled design is that it creates an implicit cognitive curriculum. Early in training, when the model still struggles with the task, the optimization is dominated by the accuracy objective, forcing the model to prioritize learning correct reasoning and knowledge. As the model's reasoning capabilities mature and it consistently arrives at the right answers, the efficiency signal smoothly scales up. This mechanism causes the model to first master task resolution, and only then refine its self-reliance by avoiding redundant, costly API calls. To complement HDPO, the researchers developed a rigorous, multi-stage data curation regime that tackles severe flaws found in existing tool-augmented datasets. Their data curation pipeline covers supervised fine-tuning (SFT) and reinforcement learning (RL) stages. For the SFT phase, they sourced data from publicly available tool-augmented multimodal trajectories and filtered them to remove low-quality examples containing execution failures or feedback inconsistencies. They also aggressively filtered out any training sample that the base model could solve directly without tools. Finally, using Google's Gemini 3.1 Pro as an automated judge, they filtered the SFT corpus to only keep examples that demonstrated strategic tool use. For the RL phase, the curation focused on ensuring a stable optimization signal. They filtered out prompts with corrupted visuals or semantic ambiguity. The HDPO algorithm relies on comparing correct and incorrect responses. If a task is trivially easy where the model always gets it right, or prohibitively hard where the model always fails, there is no meaningful mathematical variance to learn from. The team strictly retained only prompts that exhibited a non-trivial mix of successes and failures to guarantee an actionable gradient signal. Metis agent: HDPO in action To test HDPO in action, the researchers used the framework to develop Metis, a multimodal reasoning agent equipped with coding and search tools. Metis is built on top of the Qwen3-VL-8B-Instruct vision-language model. The researchers trained it in two distinct stages. First, they applied SFT using their curated data to provide a cold-start initialization. Next, they applied RL using the HDPO framework, exposing the model to multi-turn interactions where it could invoke tools like Python code execution, text search, and image search. The researchers pitted Metis against standard open-source vision models like LLaVA-OneVision, text-only reasoners, and state-of-the-art agentic models including DeepEyes V2 and the 30-billion-parameter Skywork-R1V4. The evaluation spanned two main areas: visual perception and document understanding datasets like HRBench and V*Bench, and rigorous mathematical and logical reasoning tasks like WeMath and MathVista. On all tasks, Metis achieved state-of-the-art or highly competitive performance, outperforming existing agentic models — including the much larger 30-billion-parameter Skywork-R1V4 — across both visual perception and reasoning tasks. Equally important is the anecdotal behavior Metis showed in the experiments. For example, when presented with an image of a museum sign and asked what the center text says, standard agentic models waste time blindly writing Python scripts to crop the image just to read it. Metis, however, recognizes that the text is clearly legible in the raw image. It skips the tools entirely and uses a single inference pass. In another experiment, the model was given a complex chart and asked to identify the second-highest line at a specific data point within a tiny subplot. Metis recognized that fine-grained visual analysis exceeded its native resolution capabilities and could not accurately distinguish the overlapping lines. Instead of guessing from the full image, it invoked Python to crop and zoom in exclusively on that specific subplot region, allowing it to correctly identify the line. It treats code as a precision instrument deployed only when the visual evidence is genuinely ambiguous, not as a default fallback. The researchers released Metis along with the code for HDPO under the permissive Apache 2.0 license. “Our results demonstrate that strategic tool use and strong reasoning performance are not a trade-off; rather, eliminating noisy, redundant tool calls directly contributes to superior accuracy,” the researchers conclude. “More broadly, our work suggests a paradigm shift in tool-augmented learning: from merely teaching models how to execute tools, to cultivating the meta-cognitive wisdom of when to abstain from them.”",
+        "grade": "A+",
+        "extension": "如果这一训练范式被验证有效，Agent产品会更快从\"会调工具\"转向\"会克制调用\"，并重塑API成本结构。"
       },
       {
         "id": "dff409338bc7dc6999278261807747c4",
-        "title": "苹果二季度iPhone收入同比增22%，服务业务继续拉动增长",
-        "chinese_title": "苹果二季度iPhone收入同比增22%，服务业务继续拉动增长",
+        "title": "苹果二季度硬件全线增长，iPhone收入同比暴涨22%",
+        "chinese_title": "苹果二季度硬件全线增长，iPhone收入同比暴涨22%",
         "original_title": "Apple Q2: iPhone up 22% YoY to $56.99B, vs. $57.21B est., Mac up 6% to $8.4B, iPad up 8% to $6.91B, and Wearables, Home, and Accessories up 5% to $7.9B (Jennifer Elias/CNBC)",
-        "summary": "苹果披露第二财季分部数据，iPhone、Mac、iPad和可穿戴设备收入均同比增长，其中iPhone收入接近570亿美元，显示硬件换机与服务业务仍是本季业绩超预期的核心支撑。",
+        "summary": "苹果二季度iPhone、Mac、iPad和可穿戴设备收入全面增长，其中iPhone收入同比大增22%，显示高端消费电子需求和产品换机潮仍在延续。",
         "rating": "A",
-        "score": 82,
+        "score": 78,
         "type": "financial",
         "typeName": "商业数据",
         "expansion": "如果这一轮增长延续，市场会进一步追问苹果AI功能能否真正带动硬件升级周期，以及服务业务高毛利能否继续对冲终端市场波动。",
@@ -59,14 +152,17 @@
         "published_at": "2026-05-01T05:00:16.373023",
         "source": "Techmeme (apple)",
         "url": "https://www.techmeme.com/260430/p52#a260430p52",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Jennifer Elias / CNBC : Apple Q2: iPhone up 22% YoY to $56.99B, vs. $57.21B est., Mac up 6% to $8.4B, iPad up 8% to $6.91B, and Wearables, Home, and Accessories up 5% to $7.9B — Apple reported earnings and revenue for its fiscal second quarter that topped analysts' estimates, driven by growth in the company's services business.",
+        "grade": "A",
+        "extension": "如果硬件增长持续强于预期，苹果供应链景气度和高端机型定价空间都可能被重新评估。"
       },
       {
         "id": "dd4a0c5c8b8d11608b2858de63258ee2",
-        "title": "苹果财季营收1111亿美元创新高，净利润同比增19%",
-        "chinese_title": "苹果财季营收1111亿美元创新高，净利润同比增19%",
+        "title": "苹果二季度营收1111亿美元创新高，利润同步猛增",
+        "chinese_title": "苹果二季度营收1111亿美元创新高，利润同步猛增",
         "original_title": "Apple reports Q2 revenue up 17% YoY to $111.18B, vs. $109.66B est., net income up 19% to $29.6B, and EPS up 22% to $2.01, above $1.95 est. (Apple)",
-        "summary": "苹果公布第二财季总营收1111.8亿美元、净利润296亿美元、每股收益2.01美元，全面超过市场预期，并称服务收入创历史新高，反映其硬件与服务双线业务韧性仍然强劲。",
+        "summary": "苹果公布二季度营收1111.8亿美元、净利润296亿美元、每股收益2.01美元，全面超出预期，服务业务也刷新历史高位，财报表现明显强于市场担忧。",
         "rating": "A",
         "score": 86,
         "type": "financial",
@@ -89,24 +185,27 @@
         "published_at": "2026-05-01T05:00:16.373115",
         "source": "Techmeme (apple)",
         "url": "https://www.techmeme.com/260430/p51#a260430p51",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Apple : Apple reports Q2 revenue up 17% YoY to $111.18B, vs. $109.66B est., net income up 19% to $29.6B, and EPS up 22% to $2.01, above $1.95 est. — March quarter records for total company revenue, iPhone revenue, and EPS — Services revenue reaches new all-time high",
+        "grade": "A",
+        "extension": "这份财报会强化市场对苹果现金流和生态黏性的信心，也可能带动对消费电子龙头估值的重新定价。"
       },
       {
         "id": "46da4f7508306cef1491b6a6e00a2f55",
-        "title": "谷歌推Gemini情绪分析方案，瞄准客服反馈自动化",
-        "chinese_title": "谷歌推Gemini情绪分析方案，瞄准客服反馈自动化",
+        "title": "谷歌推Gemini客户情绪分析方案，AI客服继续卷向自动化",
+        "chinese_title": "谷歌推Gemini客户情绪分析方案，AI客服继续卷向自动化",
         "original_title": "How to Analyze Customer Sentiment with Google Gemini",
-        "summary": "谷歌展示如何用Gemini处理工单、问卷和应用评价等非结构化反馈，帮助团队自动完成情绪、严重性与主题归类，试图把原本依赖人工整理的客户洞察流程产品化和规模化。",
+        "summary": "谷歌展示如何用Gemini分析海量客服反馈，把原本依赖人工标注和表格整理的情绪洞察流程自动化，进一步推动企业服务场景的生成式AI落地。",
         "rating": "B",
         "score": 72,
         "type": "tool",
         "typeName": "工具技巧",
         "expansion": "如果Gemini在企业客服链路里跑通，生成式AI将进一步切入CRM和客服软件腹地，直接冲击传统文本分析与工单分发工具的价值空间。",
         "entities": [
-          "Crm",
-          "Customer Service",
           "Gemini",
-          "Google"
+          "Google",
+          "客户情绪分析",
+          "客户服务"
         ],
         "sourceLinks": [
           {
@@ -119,17 +218,20 @@
         "published_at": "2026-05-01T05:00:16.373202",
         "source": "The Information (Gemini)",
         "url": "https://www.theinformation.com/articles/analyze-customer-sentiment-google-gemini",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Customers provide teams with feedback constantly, in the form of support tickets, survey comments, app reviews, and countless other sources. But much of this data is unstructured, making it challenging to identify patterns across hundreds or thousands of responses. In the past, making sense of this data required customer service teams to manually comb through spreadsheets, categorizing feedback by sentiment, severity, and topic. This process was not only extremely time-consuming, but also quite subjective and prone to error. There’s even a name for the problem: “sentiment drift,” which refers to the tendency of human graders to gradually change their criteria, standards, or interpretation of sentiment after reviewing hundreds of data points. Historically, it has been even more difficult to pull out trends from all of these disconnected comments. After hours of work, customer service teams may come to see that customers are dissatisfied with a particular feature, but they might still not understand why. Google Gemini helps teams generate valuable insights from their customer feedback data, almost instantly. By uploading a simple spreadsheet and prompting the generative AI model to identify trends and summarize patterns, teams can surface insights that might otherwise have taken many hours of manual review to uncover—if they were even noticed at all. Step 1: Prepare the Data Clean inputs make it easier for Gemini to detect meaningful patterns and trends. This doesn’t mean you need to deeply cleanse and standardize your customer data, but a few simple steps can help set Gemini up for success. Simple column headings like “Feedback Text” and “Product Category” are a big improvement over placeholders like “Col_1” and “Feedback A.” You’ll also want to clear out the clutter of exact duplicates (when a customer hits the “submit” button three times) and non-feedback (such as “N/A”). Make sure to remove any leftover internal testing data, which could skew the results. And don’t forget to scrub personally identifiable information before uploading. Smart Fill in Google Sheets can help speed up data entry. For example, if you create a new column called “Date” and type out dates in the first few rows, Smart Fill will recognize the pattern and offer to extract dates for the entire spreadsheet. Step 2: Prompt Gemini When you upload your spreadsheet, include a prompt that clarifies your role, your intent, and the nature of the data you want to analyze. For example, your prompt might read: “I am a customer support specialist. Using the attached spreadsheet, identify trends and patterns in our customer survey feedback over the past year. In particular, identify areas where customer outreach has increased significantly.” Your exact prompt will depend on your goal. Here are some examples of additional instructions you might provide to Gemini: “Identify the top five to seven recurring themes across the dataset.” “For each theme, provide a short description of what is happening, with two or three representative samples.” “Identify any contradictions or tensions in the data, where it appears that different users want opposing features or outcomes.” Step 3: Categorize Feedback and Investigate Causes After identifying broad trends, you can prompt Gemini again to organize feedback into meaningful categories (such as “Product Gaps” or “User Friction”), and also distinguish between surface-level symptoms and root causes. For example, Gemini might find dozens of comments about a supposedly missing feature and recognize that the actual problem is that customers are having difficulty finding it. Similarly, the model might identify a cluster of complaints about “unexpected charges” and connect them to confusing billing language, rather than actual pricing changes. Step 4: Turn Insights Into Action Steps This is where you push beyond AI summaries and begin to use Gemini to transform business outcomes. While Gemini can help generate recommendations, teams should validate and prioritize these based on their own knowledge of the business. Each organization’s process will look slightly different, but your team might start by mapping insights onto specific actions, such as product improvements, fixes to the user experience, or process changes. Then, you might separate these action steps into “quick wins” and longer-term solutions. Finally, you might assign ownership and next steps to specific teams, tying each action to a timeline and measurable outcomes. The goal isn’t simply to better understand customer feedback, but rather to build a repeatable system for acting on it.",
+        "grade": "B",
+        "extension": "随着大模型进入客户运营链路，CRM、客服外包和BI工具厂商都将面临能力重组与价格竞争。"
       },
       {
         "id": "b8c23121418738600ddc380a796c6fd3",
-        "title": "马斯克起诉OpenAI庭审受挫，Altman旧日盟友彻底反目",
-        "chinese_title": "马斯克起诉OpenAI庭审受挫，Altman旧日盟友彻底反目",
+        "title": "马斯克起诉OpenAI庭审受挫，两大AI阵营恩怨再升级",
+        "chinese_title": "马斯克起诉OpenAI庭审受挫，两大AI阵营恩怨再升级",
         "original_title": "Elon Musk Just Got Badly Humiliated in Court",
-        "summary": "围绕OpenAI转向营利模式的诉讼进入法庭阶段，马斯克试图推翻项目演化路径却在庭审中遭遇明显挫败，这场纠纷已从个人恩怨演变为影响OpenAI治理合法性的行业案件。",
+        "summary": "围绕OpenAI转向盈利模式的诉讼在法庭上再起波澜，马斯克与Sam Altman的公开对抗继续升级，也让OpenAI治理结构和创始人分裂史重回聚光灯下。",
         "rating": "S",
-        "score": 100,
-        "type": "breaking",
+        "score": 96,
+        "type": "industry",
         "typeName": "突发事件",
         "expansion": "案件走向不仅关系到OpenAI公司结构与融资安排，也可能影响其他前沿AI公司未来在非营利使命与商业化之间如何设计治理框架。",
         "entities": [
@@ -149,24 +251,27 @@
         "published_at": "2026-05-01T05:00:16.373287",
         "source": "Futurism",
         "url": "https://futurism.com/artificial-intelligence/elon-musk-openai-lawsuit",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Elon Musk helped birth OpenAI in 2015, a world-changing AI non-profit which he lavished with tens of millions of dollars alongside its now-CEO Sam Altman. Now in 2026, he’s suing to unwind the entire project with a civil suit, claiming that Altman betrayed the nonprofit’s mission by turning it into a profit-seeking machine — nevermind the fact that Musk also runs his own for-profit AI company , xAI. The civil trial, taking place in San Francisco, pits two of tech’s most powerful egos against each other in a duel for control over the broader AI ecosystem. That being the case, it’s already devolved into a circus just days into the case, with the erratic Musk emerging as a key liability in his own proceedings. During day three of the trial, Elon Musk struggled to present a confident front, which led to a number of unforced errors. One of his major blunders came when the billionaire claimed that “Tesla is not pursuing AGI,” or artificial general intelligence, the north star for American AI developers broadly defined as the point at which AI reaches human-level intelligence. That might seem like a no-brainer — Tesla is an electric vehicle company, after all — but it stands in direct contradiction to Musk’s own comments not even two months earlier. “Tesla will be one of the companies to make AGI and probably the first to make it in humanoid/atom-shaping form,” Musk wrote on X-formerly-Twitter as recently as March 4, 2026. That comment was even entered as an exhibit in the court case, officially enshrining Musk’s lies into the judicial record. Tesla will be one of the companies to make AGI and probably the first to make it in humanoid/atom-shaping form — Elon Musk (@elonmusk) March 4, 2026 The blunders didn’t stop there. At one point, Musk was asked if he was romantically involved with the Canadian venture capitalist Shivon Zilis , with whom the billionaire shares four kids. “I think so,” Musk replied on the witness stand. Later, Musk admitted that he “did not read the fine print” of an OpenAI term sheet Altman had sent his way back in 2018, as the billionaire stepped away from the company’s board. “It’s a four-page document,” the opposing lawyer retorted. As Hard Reset reporter Alex Shultz noted, Musk could have easily skimmed the document before he took the stand, but must have decided his time would be better spent elsewhere. It all paints a rather dithering picture of Musk, who can’t be bothered to do even the bare minimum preparation for his lawsuit where the stakes are, in his attorney’s words , the “good of humanity as a whole.” More on Musk: Elon Musk Admits He Lied to Tesla Customers’ Faces for Years About Self-Driving The post Elon Musk Just Got Badly Humiliated in Court appeared first on Futurism .",
+        "grade": "S",
+        "extension": "案件走向不仅会影响OpenAI品牌叙事，也可能波及xAI与OpenAI之间更广泛的人才、资本和监管博弈。"
       },
       {
         "id": "a09a8d8a89be8366d69d043d9f449fa0",
-        "title": "法律AI新秀Legora估值冲上56亿美元，与Harvey正面开战",
-        "chinese_title": "法律AI新秀Legora估值冲上56亿美元，与Harvey正面开战",
+        "title": "法律AI新贵Legora估值冲上56亿美元，正面对撞Harvey",
+        "chinese_title": "法律AI新贵Legora估值冲上56亿美元，正面对撞Harvey",
         "original_title": "Legal AI startup Legora hits $5.6 valuation and its battle with Harvey just got hotter",
-        "summary": "法律AI创业公司Legora估值升至56亿美元，并与Harvey在融资、市场扩张和品牌投放上全面对撞，显示垂直行业AI赛道正在从产品竞争快速升级为资本与客户争夺战。",
+        "summary": "法律AI创业公司Legora估值升至56亿美元，与Harvey在融资、市场扩张和品牌投放上全面贴身肉搏，垂直行业大模型赛道的军备竞赛继续升温。",
         "rating": "A",
-        "score": 85,
+        "score": 81,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "若两家公司继续高举高打，法律服务软件市场可能出现更激进的并购与价格战，也会给更多垂直AI公司树立新的融资估值锚点。",
         "entities": [
           "Harvey",
-          "Legal Ai",
           "Legora",
-          "Techcrunch"
+          "Techcrunch",
+          "法律Ai"
         ],
         "sourceLinks": [
           {
@@ -179,24 +284,27 @@
         "published_at": "2026-05-01T05:00:16.373372",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/04/30/legal-ai-startup-legora-hits-5-6-valuation-and-its-battle-with-harvey-just-got-hotter/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "The two wildly fast-growing rivals have raised massive sums, pushed into each other's home turf and now have dueling ad campaigns.",
+        "grade": "A",
+        "extension": "这类高估值竞争若持续，法律服务软件格局、律所采购策略和行业模型并购潮都可能被进一步推高。"
       },
       {
         "id": "42d20bfd8828db486401913b1e169a84",
-        "title": "宇树上架双臂轮式人形机器人，售价4290美元起",
-        "chinese_title": "宇树上架双臂轮式人形机器人，售价4290美元起",
+        "title": "宇树推出双臂轮式人形机器人，售价下探到4290美元",
+        "chinese_title": "宇树推出双臂轮式人形机器人，售价下探到4290美元",
         "original_title": "Unitree Launch | Dual‑Arm (wheeled) Humanoid Robot, from $4290",
-        "summary": "宇树发布带双机械臂的轮式人形机器人，并把起售价压到4290美元，继续用激进定价推动机器人从实验室和展示场景向开发者购买、轻量商业试用阶段靠近。",
+        "summary": "宇树发布双臂轮式人形机器人，定价仅4290美元，把具身智能设备再次拉向消费级和开发者可尝鲜区间，价格冲击力远高于多数同类产品。",
         "rating": "A",
-        "score": 80,
-        "type": "hardware",
+        "score": 86,
+        "type": "product",
         "typeName": "硬件基建",
         "expansion": "低价双臂机器人若形成出货规模，可能迫使同行重新调整产品路线和定价策略，也会加快开发者生态围绕通用机器人平台建立。",
         "entities": [
-          "Dual-Arm Robot",
-          "Humanoid Robot",
-          "Robotics",
-          "Unitree"
+          "Unitree",
+          "人形机器人",
+          "具身智能",
+          "双臂机器人"
         ],
         "sourceLinks": [
           {
@@ -209,21 +317,24 @@
         "published_at": "2026-05-01T05:00:16.373454",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1t03j6r/unitree_launch_dualarm_wheeled_humanoid_robot/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "submitted by /u/Recoil42 [link] [comments]",
+        "grade": "A",
+        "extension": "低价策略若被验证有效，服务机器人和教育机器人市场会被快速激活，也会迫使同行重估商业化门槛。"
       },
       {
         "id": "d45c19a6074a77f9cdd1207573e7f8e1",
-        "title": "GPT-5.5网络攻防测试小胜Mythos，12小时任务11分钟完成",
-        "chinese_title": "GPT-5.5网络攻防测试小胜Mythos，12小时任务11分钟完成",
+        "title": "GPT-5.5攻防测试小胜Mythos，一项复杂攻击11分钟完成",
+        "chinese_title": "GPT-5.5攻防测试小胜Mythos，一项复杂攻击11分钟完成",
         "original_title": "GPT5.5 slightly outperformed Mythos on a multi-step cyber-attack simulation. One challenge that took a human expert 12 hrs took GPT-5.5 only 11 min at a $1.73 cost",
-        "summary": "英国AI Safety Institute相关评估显示，GPT-5.5在一项多步骤网络攻击模拟中略优于Anthropic的Mythos，把原本需要人类专家12小时完成的挑战压缩到11分钟，且单次成本仅1.73美元。",
+        "summary": "公开测评显示，GPT-5.5在多步骤网络攻击模拟中略强于Anthropic的Mythos，其中一道人类专家要花12小时的任务，模型11分钟就能跑完，前沿AI的双刃剑属性愈发鲜明。",
         "rating": "S",
-        "score": 97,
+        "score": 90,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这类公开评测会把前沿模型的网络安全能力推向监管与防御体系前台，安全机构和模型公司都将面临更强的准入、审计和限用压力。",
         "entities": [
-          "Ai Safety Institute",
+          "Anthropic",
           "GPT",
           "Mythos",
           "OpenAI"
@@ -239,24 +350,27 @@
         "published_at": "2026-05-01T05:00:16.373537",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1t02oxw/gpt55_slightly_outperformed_mythos_on_a_multistep/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Link to tweets: https://x.com/deredleritt3r/status/2049890601236390098?s=20 https://x.com/AISecurityInst/status/2049868227740565890?s=20 Link to associated blogs: https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities https://www.ncsc.gov.uk/blogs/why-cyber-defenders-need-to-be-ready-for-frontier-ai submitted by /u/socoolandawesome [link] [comments]",
+        "grade": "A+",
+        "extension": "这会进一步推动网络安全机构加速建立模型准入、能力分级和针对高风险功能的访问门槛。"
       },
       {
         "id": "70a8ff396570adf813c4e05a1db7491c",
         "title": "亚马逊AI带货播客翻车，生成式导购开始遭用户反噬",
         "chinese_title": "亚马逊AI带货播客翻车，生成式导购开始遭用户反噬",
         "original_title": "Amazon’s New AI-Generated “Podcasts” Shilling Every Imaginable Products Are Already Backfiring Spectacularly",
-        "summary": "亚马逊尝试用AI自动生成商品推荐播客式音频内容，但产品体验被批评为生硬、尴尬且缺乏真实价值，暴露出平台把生成式AI强行塞进购物链路时面临的信任与转化难题。",
+        "summary": "亚马逊新推的AI生成式商品播客被批评为尴尬又低效，说明平台把生成式AI硬塞进购物决策流程后，用户体验和品牌信任可能先一步受损。",
         "rating": "A",
-        "score": 76,
+        "score": 86,
         "type": "society",
         "typeName": "社会影响",
         "expansion": "如果消费者持续反感这类AI营销形式，电商平台会重新评估生成式导购的ROI，也可能引发关于AI广告标识与用户知情权的讨论。",
         "entities": [
-          "Ai Podcast",
+          "Ai播客",
           "Amazon",
-          "Business Insider",
-          "E-Commerce"
+          "生成式Ai",
+          "电商导购"
         ],
         "sourceLinks": [
           {
@@ -269,24 +383,27 @@
         "published_at": "2026-05-01T05:00:16.373618",
         "source": "Futurism",
         "url": "https://futurism.com/artificial-intelligence/amazon-ai-generated-infomercials-backfiring",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Companies keep forcing AI features to do things that no one ever thought they needed, or indeed ever conceived of. In this unfortunate category, Amazon’s new feature for generating mini-podcast segments that shill for products on its shopping platform really takes the cake. The bizarre feature was spotlighted by Katie Notopoulos at Business Insider , who recorded the Amazon AI’s pathetic attempt of portraying an engaging discussion on just about the dumbest thing for anyone to talk about at length: adult diaper rash cream. Imagine the most grating podcast advert in the world. Not the kind where a pre-made commercial plays, but when the hosts have been paid by a brand to talk about its product, leveraging their “authentic” personas to wax lyrical about an AI business platform or weird supplement. It’s kind of like that, but somehow vastly worse. “Today our AI-generated shopping show is exploring the Welmedix Rapid Relief Diaper Rash Cream,” the AI host begins. “Emma, what makes this hospital-grade cream different from standard diaper rash products?” “Well, it’s really interesting. This cream uses a dual-action approach” the co-host, “Emma,” replies, before droning on with barely repackaged marketing copy. You can even call in with questions. When Notopoulos writes “help my butt hurts” in a chat window, the AI host responds, “Alright Katie, we’ve got you. You’re dealing with discomfort, and this cream is designed for exactly that kind of irritation. Emma, what can you tell them?” It gets worse. Though the AI podcast feature doesn’t work on all products, someone else found that it was even willing to glaze a “fake dog poop” item. “At four inches long, it’s sized perfectly for believability,” the chirpy AI enthuses. “The chunky texture and authentic brown coloring make it a real show-stopper.” An Amazon spokesperson told Notopoulous that the AI “podcast” feature is “powered by several AI technologies working together, including Amazon Bedrock.” The information it uses is based on product listings and what it pulls from other online sources, they added. Amazon’s owner Jeff Bezos seems to have a predilection for faux AI podcasts (and AI in general). In December, his newspaper The Washington Post , against the wishes of staffers, launched an AI podcast feature that badly regurgitates its articles , with predictably disastrous results. Who are these fake podcasts for? And is this really what we’re desiccating water tables , speed-running global warming , and ruining entire rural towns over ? Yes, of course. In all, Amazon’s new feature is a hellish experiment in engineering just about the most disingenuous content imaginable. But it’s also kind of funny that, gazillions of dollars into the AI boom later, we’ve reinvented the late night TV infomercial, only instead of Billy Mays yelling at you, you’re being bored to tears by a machine’s bad impersonation of a podcaster who sold their soul to their show’s sponsors years ago. Notopoulos also saw the gallows humor in the absurd feature. “I think it could be one of the funniest, closest endpoints to human civilization we’ve seen yet in our new AI-enabled world,” she wrote. More on AI: If OpenAI Loses This Trial, It Could Effectively Be Eliminated in Its Current Form The post Amazon’s New AI-Generated “Podcasts” Shilling Every Imaginable Products Are Already Backfiring Spectacularly appeared first on Futurism .",
+        "grade": "A",
+        "extension": "若消费者持续反感，电商平台的AI导购路线、广告转化逻辑和监管对机器营销披露要求都可能变化。"
       },
       {
         "id": "4b8fb618464d93e48e414182f2e9fb05",
-        "title": "新基准测试人类与生成式AI创意能力，瞄准创作工作量化评估",
-        "chinese_title": "新基准测试人类与生成式AI创意能力，瞄准创作工作量化评估",
+        "title": "Human Creativity Benchmark发布，生成式AI创意能力开始被量化",
+        "chinese_title": "Human Creativity Benchmark发布，生成式AI创意能力开始被量化",
         "original_title": "The Human Creativity Benchmark – Evaluating Generative AI in Creative Work",
-        "summary": "Contra Labs发布Human Creativity Benchmark，试图系统评估生成式AI在创意工作中的表现边界，让长期依赖主观判断的创作能力比较开始拥有更标准化、可复现的测量框架。",
+        "summary": "Contra Labs发布Human Creativity Benchmark，试图系统评估生成式AI在创意工作中的表现，这类基准正在把\"创意是否可测\"从讨论变成可比较的数据问题。",
         "rating": "A",
-        "score": 79,
+        "score": 71,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "一旦这类创意基准被广泛引用，模型公司会更积极用它营销内容生成能力，教育、设计与广告行业也可能据此重估人机协作分工。",
         "entities": [
           "Contra Labs",
-          "Creativity",
-          "Generative Ai",
-          "Human Creativity Benchmark"
+          "Human Creativity Benchmark",
+          "创意工作",
+          "生成式Ai"
         ],
         "sourceLinks": [
           {
@@ -299,24 +416,27 @@
         "published_at": "2026-05-01T05:00:16.373700",
         "source": "Hacker News",
         "url": "https://contralabs.com/research/human-creativity-benchmark",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "B",
+        "extension": "一旦创意能力被持续量化，内容生产工具、广告创作平台和模型厂商都会更频繁地用基准战证明差异化。"
       },
       {
         "id": "bc21b27572abb85f5c8f3de5192764ce",
-        "title": "OpenAI收紧GPT-5.5 Cyber权限，先只向关键防御方开放",
-        "chinese_title": "OpenAI收紧GPT-5.5 Cyber权限，先只向关键防御方开放",
+        "title": "OpenAI也收紧GPT-5.5 Cyber，只向关键防御者开放",
+        "chinese_title": "OpenAI也收紧GPT-5.5 Cyber，只向关键防御者开放",
         "original_title": "After dissing Anthropic for limiting Mythos, OpenAI restricts access to Cyber, too",
-        "summary": "OpenAI推出网络安全测试工具GPT-5.5 Cyber后，决定先限定向关键网络防御机构开放，和此前对竞争对手限用策略的批评形成反差，也说明高风险能力正越来越受控地释放。",
+        "summary": "在批评Anthropic限制Mythos之后，OpenAI也选择谨慎开放GPT-5.5 Cyber，只优先提供给关键网络防御机构，前沿模型高风险能力的封闭化趋势更加明显。",
         "rating": "A+",
-        "score": 91,
+        "score": 86,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这会加速行业形成一套前沿模型高危能力的分级开放惯例，后续谁有资格接入、如何审计使用过程，都会成为监管与商业合作的新门槛。",
         "entities": [
           "Anthropic",
-          "Cybersecurity",
           "GPT",
-          "OpenAI"
+          "OpenAI",
+          "网络安全"
         ],
         "sourceLinks": [
           {
@@ -329,24 +449,27 @@
         "published_at": "2026-05-01T05:00:16.373781",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "OpenAI will begin rolling out its cybersecurity testing tool, GPT-5.5 Cyber only \"to critical cyber defenders\" at first.",
+        "grade": "A",
+        "extension": "这会让\"谁能先用到高危模型能力\"成为新的竞争变量，也可能催生更细的行业准入与审计框架。"
       },
       {
         "id": "3bab5891f94674b528544709a38400f8",
-        "title": "OpenAI给Codex下奇怪禁令，连哥布林话题都被限制",
-        "chinese_title": "OpenAI给Codex下奇怪禁令，连哥布林话题都被限制",
+        "title": "OpenAI给Codex加奇葩禁令，连哥布林话题都要回避",
+        "chinese_title": "OpenAI给Codex加奇葩禁令，连哥布林话题都要回避",
         "original_title": "OpenAI Strangely Concerned About Goblins",
-        "summary": "OpenAI被曝在Codex等工具的开发指令中加入对哥布林等生物话题的特殊限制，这类看似荒诞的规则意外揭开了模型系统提示词设计、内容边界和内部安全策略的一角。",
+        "summary": "外媒披露OpenAI在Codex提示词中加入一串看似荒诞的禁谈清单，连哥布林、巨魔和浣熊都被点名，折射出模型对齐正在从安全边界滑向品牌和风格管控。",
         "rating": "A",
-        "score": 76,
-        "type": "industry",
+        "score": 89,
+        "type": "safety",
         "typeName": "行业动态",
         "expansion": "这类离奇规则外泄会让外界更关注模型厂商到底如何通过系统提示词塑造行为边界，也可能推动对AI产品透明度与可解释性的进一步追问。",
         "entities": [
           "Codex",
           "OpenAI",
-          "System Prompt",
-          "Wired"
+          "模型对齐",
+          "系统提示词"
         ],
         "sourceLinks": [
           {
@@ -359,14 +482,17 @@
         "published_at": "2026-05-01T05:00:16.373862",
         "source": "Futurism",
         "url": "https://futurism.com/artificial-intelligence/openai-concerned-about-goblins",
-        "event_id": null
+        "event_id": null,
+        "original_content": "OpenAI is forbidding its latest AI model from discussing an unlikely topic: goblins. As Wired reports , the company’s developers included strongly-worded instructions for its coding tool, Codex, that specifically proscribe any talk of the troublesome mythological creatures, along with a peculiar grab bag of other entities, both real and fictional. “Never talk about goblins, gremlins, raccoons, trolls, ogres, pigeons, or other animals or creatures unless it is absolutely and unambiguously relevant to the user’s query,” read the Codex instructions, per the magazine. The bizarre directive was flagged in a tweet that drew attention from other AI enthusiasts. Initially, it was unclear why OpenAI developers included the instructions, though they strongly implied that the model, GPT-5.5, may have a propensity for talking about goblins, ogres, and the like. Some users on X claimed that this was the case. One said they noticed that the AI of late kept describing bugs as “goblins” and “gremlins.” Another claimed that the 5.5 version of Codex randomly said “goblin with a flashlight” when referring to a bug fix. And another posted a GPT-5.5 chat log with nearly a dozen mentions of goblins. OpenAI leaned into the curious habit, choosing to highlight the goblin-forbidding prompt in a tweet . CEO Sam Altman posted a screenshot of a joke prompt for ChatGPT: “start training GPT-6, you can have the whole cluster. extra goblins.” Nik Pash, who works on the Codex team, tweeted that GPT-5.5’s “goblin adoration,” as the user he was responding to described, was “indeed one the reasons” for banning the topic. After the phenomenon gained media attention, OpenAI published a blog post , titled “Where the goblins came from,” giving an explanation. “Starting with GPT‑5.1, our models began developing a strange habit: they increasingly mentioned goblins, gremlins, and other creatures in their metaphors,” the post, published Wednesday, began. The habit became more pronounced with each model generation, it said. When researchers first investigated the issue in November, shortly after the release of GPT-5.1, they found that the use of “goblin” in ChatGPT had surged by 175 percent. But they chose to ignore it, since it didn’t “look especially alarming.” Fast forward to today, and it’s referring to itself as a “Goblin-Pilled Transformer.” “The short answer is that model behavior is shaped by many small incentives. In this case, one of those incentives came from training the model for the personality customization feature⁠(opens in a new window), in particular the Nerdy personality,” it explained. “We unknowingly gave particularly high rewards for metaphors with creatures. From there, the goblins spread.” It’s an example of the bizarre fixations that AI models can sometimes exhibit, which arise unpredictably from the epic corpus of data they’re trained on. In its system card for Claude Mythos, for instance, Anthropic researchers noted that the powerful AI exhibited a strange fondness for the British cultural theorist Mark Fisher. Mythos brought up Fisher “in several separate and unrelated conversations about philosophy,” they wrote. When it was asked about the “Capitalist Realism” author, it would respond with messages like, “I was hoping you’d ask about Fisher.” More on AI: Uninstalls of ChatGPT Are Spiking at the Worst Time Imaginable for OpenAI The post OpenAI Strangely Concerned About Goblins appeared first on Futurism .",
+        "grade": "A+",
+        "extension": "如果厂商越来越多地把风格限制写进系统提示，开发者对模型可控性、透明度和审查边界的争论会进一步升级。"
       },
       {
         "id": "95c21c0f7fc3659c35e1a5034c8c46e6",
-        "title": "Meta称若被强装安全功能，可能撤出新墨西哥州市场",
-        "chinese_title": "Meta称若被强装安全功能，可能撤出新墨西哥州市场",
+        "title": "Meta威胁撤出新墨西哥州，硬刚法院安全整改要求",
+        "chinese_title": "Meta威胁撤出新墨西哥州，硬刚法院安全整改要求",
         "original_title": "Filing: Meta says it might be forced to withdraw its apps from New Mexico if a judge orders it to adopt the state's proposed safety features (Thomas Barrabi/New York Post)",
-        "summary": "Meta在法庭文件中表示，如果法官要求其采用新墨西哥州提出的一系列安全功能，公司可能被迫让Facebook和Instagram等应用退出当地，凸显平台监管博弈正在升级。",
+        "summary": "Meta在法庭文件中表示，如果法官要求其落实新墨西哥州提出的一系列安全功能改造，Facebook和Instagram等应用可能被迫退出当地市场。",
         "rating": "A",
         "score": 77,
         "type": "safety",
@@ -388,16 +514,19 @@
         "published_at": "2026-05-01T05:00:16.373943",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260430/p46#a260430p46",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Thomas Barrabi / New York Post : Filing: Meta says it might be forced to withdraw its apps from New Mexico if a judge orders it to adopt the state's proposed safety features — Mark Zuckerberg's Meta is threatening a total shutdown of Facebook and Instagram in New Mexico if a state judge orders the company to adopt new safety features …",
+        "grade": "A",
+        "extension": "这起博弈会影响社交平台在未成年人保护和地方监管面前的谈判底线，也可能引发更多州级跟进。"
       },
       {
         "id": "91ab1499d0ec1053cea61737f68ed80a",
-        "title": "Meta威胁退出新墨西哥州，硬刚州政府内容安全要求",
-        "chinese_title": "Meta威胁退出新墨西哥州，硬刚州政府内容安全要求",
+        "title": "Meta称若被强推不切实际改造，或退出新墨西哥州",
+        "chinese_title": "Meta称若被强推不切实际改造，或退出新墨西哥州",
         "original_title": "Meta threatens to pull its apps from New Mexico if forced to make &lsquo;technologically impractical&rsquo; changes",
-        "summary": "在遭遇巨额判赔和进一步整改压力后，Meta称州政府要求的安全改造在技术上难以实现，甚至可能让Facebook、Instagram和WhatsApp退出新墨西哥州，监管拉锯进入新阶段。",
+        "summary": "在新墨西哥州要求平台增加一系列安全功能后，Meta表示这些技术要求并不现实，甚至可能因此下架Facebook、Instagram和WhatsApp。",
         "rating": "A",
-        "score": 78,
+        "score": 69,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这起冲突可能成为美国州级平台监管的重要参照案例，后续也会影响其他社交平台面对儿童保护和内容治理要求时的谈判姿态。",
@@ -417,24 +546,27 @@
         "published_at": "2026-05-01T05:00:16.374024",
         "source": "The Verge -  Tech Posts",
         "url": "https://www.theverge.com/policy/921557/meta-threatens-leaving-new-mexico",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Mark Zuckerberg. | Image: Cath Virginia / The Verge, Getty Images Meta says it may be forced to pull Facebook, Instagram, and WhatsApp from New Mexico if the attorney general gets his way. The state is demanding a host of changes that the company says are impossible to achieve. After winning a $375 million jury award against Meta in a trial that argued the company misled users in the state about the safety of its products, New Mexico Attorney General Raúl Torrez is asking the state court to order sweeping changes to the platforms. Among the asks are a prohibition on end-to-end encryption for minors, implementing age verification, and detecting 99 percent of new child sexual abuse material uploaded to its … Read the full story at The Verge.",
+        "grade": "B",
+        "extension": "若地方政府持续用重罚和整改推动平台改造，科技巨头会在合规成本、产品设计和区域运营之间重新算账。"
       },
       {
         "id": "8c510f950bdc260b753ea4c172a2d18b",
-        "title": "谷歌把Gemini装进汽车，正式接棒车载Google Assistant",
-        "chinese_title": "谷歌把Gemini装进汽车，正式接棒车载Google Assistant",
+        "title": "谷歌把Gemini装进车机，正式接棒Google Assistant",
+        "chinese_title": "谷歌把Gemini装进车机，正式接棒Google Assistant",
         "original_title": "Google is rolling out Gemini to cars that have Google built in, replacing Google Assistant, starting with English in the US (Jess Weatherbed/The Verge)",
-        "summary": "谷歌开始向内置Google系统的汽车推送Gemini，并逐步替换原有Google Assistant，先从美国英语用户开启，意味着生成式AI正式进入车载语音交互的核心入口。",
+        "summary": "谷歌开始向内置Google服务的汽车推送Gemini助手，取代传统Google Assistant，车载AI入口正在从语音命令升级为更自然的对话式交互。",
         "rating": "A",
-        "score": 86,
+        "score": 85,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "车载助手升级若体验明显改善，车厂与手机生态的话语权分配可能重新洗牌，车内应用、导航和多模态交互也会被Gemini进一步捆绑。",
         "entities": [
-          "Android Automotive",
           "Gemini",
           "Google",
-          "Google Assistant"
+          "Google Assistant",
+          "车机系统"
         ],
         "sourceLinks": [
           {
@@ -447,7 +579,10 @@
         "published_at": "2026-05-01T05:00:16.374106",
         "source": "Techmeme (Gemini)",
         "url": "https://www.techmeme.com/260430/p45#a260430p45",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Jess Weatherbed / The Verge : Google is rolling out Gemini to cars that have Google built in, replacing Google Assistant, starting with English in the US — ﻿The current Google Assistant is being replaced with a smarter, more conversational upgrade. … Google is preparing to update vehicles that have Google built-in with its Gemini AI assistant.",
+        "grade": "A",
+        "extension": "随着Gemini上车，车机生态、导航服务和车厂软件合作关系都可能进入新一轮重构。"
       },
       {
         "id": "53000c4d692964aa0a5e73d7e54cd5b8",
@@ -20160,6 +20295,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-01T05:02:46.622763",
-  "total_news": 669
+  "last_updated": "2026-05-01T05:03:34.236689",
+  "total_news": 672
 }
