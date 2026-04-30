@@ -194,9 +194,10 @@ class BaseAIProcessor(ABC):
                     item.entities = entity_results[item.url]
             logger.info(f"已为 {len([item for item in processed_items if item.entities])} 条新闻填充实体")
 
-        # 保存处理结果
+        # 保存处理结果。实体默认由基础处理结果提供；单独实体文件仅作为补录/修复入口。
         snapshot["base_results"] = [item.to_dict() for item in processed_items]
         snapshot["status"]["base_processing"] = "completed"
+        snapshot["status"]["entity_recognition"] = "completed"
 
         # 生成分打提示词
         scorer = AIScorer()
@@ -267,7 +268,11 @@ class BaseAIProcessor(ABC):
         entity_results = snapshot.get("entity_results", {})
 
         if not entity_results:
-            logger.warning("快照中没有实体识别结果")
+            status = snapshot.get("status", {}).get("entity_recognition")
+            if status in ("included_in_base", "completed"):
+                logger.info("快照未单独存储实体识别结果，使用基础处理结果中的实体")
+            else:
+                logger.warning("快照中没有实体识别结果")
             return {}
 
         return entity_results
@@ -317,7 +322,7 @@ class BaseAIProcessor(ABC):
                     score=0,   # 后续打分阶段填充
                     news_type=result.get("type", ""),
                     extension=sanitize_content(result.get("extension", "")),
-                    entities=[],  # 实体识别阶段单独填充
+                    entities=EntityNormalizer.normalize_list(result.get("entities", [])),
                     raw_item=original_item
                 )
 
@@ -407,7 +412,10 @@ class ManualProcessor(BaseAIProcessor):
 
             # 清理对应的提示文件
             for filename in os.listdir(TEMP_DIR):
-                if filename.startswith("ai_prompt_") and filename.endswith(".txt"):
+                if (
+                    filename.startswith("ai_prompt_")
+                    or filename.startswith("entity_prompt_")
+                ) and filename.endswith(".txt"):
                     file_path = os.path.join(TEMP_DIR, filename)
                     if os.path.getmtime(file_path) < cutoff_time:
                         os.unlink(file_path)
@@ -437,7 +445,7 @@ class ManualProcessor(BaseAIProcessor):
             "items_count": len(items),
             "status": {
                 "base_processing": "pending",
-                "entity_recognition": "pending",
+                "entity_recognition": "included_in_base",
                 "scoring": "pending"
             },
             "base_results": None,
@@ -467,28 +475,14 @@ class ManualProcessor(BaseAIProcessor):
         with open(prompt_file, 'w', encoding='utf-8') as f:
             f.write(prompt)
 
-        # 生成实体识别提示词
-        entity_processor = EntityProcessor()
-        entity_prompt = entity_processor.build_prompt(items)
-        entity_prompt_file = os.path.join(TEMP_DIR, f"entity_prompt_{snapshot_id}.txt")
-
-        with open(entity_prompt_file, 'w', encoding='utf-8') as f:
-            f.write(entity_prompt)
-
-        # 更新快照状态：实体识别待处理
-        snapshot["status"]["entity_recognition"] = "pending"
-        save_json(snapshot, snapshot_file)
-
         logger.info(f"已生成处理快照: {snapshot_file}")
         logger.info(f"已生成基础处理提示词文件: {prompt_file}")
-        logger.info(f"已生成实体识别提示词文件: {entity_prompt_file}")
         logger.info(f"快照ID: {snapshot_id}")
-        logger.info("=== 三步处理流程 ===")
+        logger.info("=== 两步处理流程 ===")
         logger.info("步骤1: 将基础处理提示词发送给AI处理，将结果保存为JSON文件（如：_ai_base_result.json）")
-        logger.info("步骤2: 将实体识别提示词发送给AI处理，将结果保存为JSON文件（如：_ai_entity_result.json）")
-        logger.info("步骤3: 运行导入脚本时指定基础结果文件和实体结果文件，系统将自动生成分打提示词")
-        logger.info("步骤4: 将打分提示词发送给AI处理，将结果保存为JSON文件（如：_ai_scoring_result.json）")
-        logger.info("步骤5: 再次运行导入脚本指定打分结果文件，完成完整处理流程")
+        logger.info("步骤2: 运行导入脚本导入基础结果，系统将自动生成打分提示词")
+        logger.info("步骤3: 将打分提示词发送给AI处理，将结果保存为JSON文件（如：_ai_scoring_result.json）")
+        logger.info("步骤4: 再次运行导入脚本指定打分结果文件，完成完整处理流程")
 
         # 这里返回空列表，需要用户手动处理后重新运行
         return []
@@ -674,9 +668,10 @@ S级（90-100分）必须满足以下条件之一：
             news_item = {
                 "index": i,
                 "original_title": item.original_title,
-                "original_content": item.original_content,
+                "original_content": truncate_text(item.original_content, max_length=500),
                 "chinese_title": item.chinese_title,
                 "summary": item.summary,
+                "extension": item.extension,
                 "source": item.source,
                 "url": item.url,
                 "entities": item.entities,

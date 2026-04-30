@@ -299,6 +299,24 @@ class TestEventGroupReviewer:
         # 候选列表区域应包含高相似度事件信息
         assert "high_similarity_events" in content or "similarity" in content, "应包含相似度信息"
 
+    # ===== 测试 9: 复查风险门槛 =====
+
+    def test_should_review_skips_low_risk_single_item(self):
+        """测试低风险单条新增不触发复查提示词"""
+        news1 = _make_test_news("n1", "Anthropic发布Claude小版本更新", ["Anthropic", "Claude"])
+        event1 = _make_test_event("evt1", [news1])
+
+        assert self.reviewer.should_review([news1], [event1], [news1]) is False
+
+    def test_should_review_triggers_for_high_value_merge(self):
+        """测试高价值新闻并入已有事件时触发复查"""
+        news1 = _make_test_news("n1", "OpenAI发布GPT-5", ["OpenAI", "GPT"])
+        news2 = _make_test_news("n2", "GPT-5基准测试刷新纪录", ["OpenAI", "GPT"])
+        news2.grade = "A+"
+        event1 = _make_test_event("evt1", [news1, news2])
+
+        assert self.reviewer.should_review([news2], [event1], [news1, news2]) is True
+
 
 if __name__ == "__main__":
     test = TestEventGroupReviewer()
@@ -312,6 +330,8 @@ if __name__ == "__main__":
         ("empty_corrections", test.test_empty_corrections),
         ("invalid_event_ids_skipped", test.test_invalid_event_ids_skipped),
         ("candidate_selection", test.test_candidate_selection),
+        ("should_review_skips_low_risk_single_item", test.test_should_review_skips_low_risk_single_item),
+        ("should_review_triggers_for_high_value_merge", test.test_should_review_triggers_for_high_value_merge),
     ]
 
     passed = 0

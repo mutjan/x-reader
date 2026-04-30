@@ -220,17 +220,20 @@ class GitHubPagesPublisher(BasePublisher):
                 events_data = [event.to_dict() for event in events]
                 self.logger.info(f"事件分组处理完成: 共{len(events_data)}个事件")
 
-                # Agent复查：在非全量模式下，对新批次新闻进行复查（D-05）
+                # Agent复查：仅在高风险分组场景生成提示词，降低每小时更新token负担。
                 if not full_mode and new_items:
-                    self.logger.info("开始Agent复查事件分组...")
                     reviewer = EventGroupReviewer(entity_threshold=2, review_similarity_threshold=0.55)
-                    prompt_file = reviewer.generate_review_prompt(new_items, events, all_processed_items)
-                    if prompt_file:
-                        self.logger.info(f"复查提示词已生成: {prompt_file}")
-                        self.logger.info("请将提示词发送给AI处理，将结果保存为JSON文件")
-                        self.logger.info(f"然后运行: python scripts/import_review_results.py --result-file <结果文件路径>")
+                    if reviewer.should_review(new_items, events, all_processed_items):
+                        self.logger.info("开始Agent复查事件分组...")
+                        prompt_file = reviewer.generate_review_prompt(new_items, events, all_processed_items)
+                        if prompt_file:
+                            self.logger.info(f"复查提示词已生成: {prompt_file}")
+                            self.logger.info("请将提示词发送给AI处理，将结果保存为JSON文件")
+                            self.logger.info(f"然后运行: python scripts/import_review_results.py --result-file <结果文件路径>")
+                        else:
+                            self.logger.warning("复查提示词生成失败，跳过Agent复查")
                     else:
-                        self.logger.warning("复查提示词生成失败，跳过Agent复查")
+                        self.logger.info("事件分组风险较低，跳过Agent复查")
                 else:
                     if full_mode:
                         self.logger.info("全量模式，跳过Agent复查")

@@ -141,6 +141,77 @@ class EventGroupReviewer:
         logger.info(f"复查提示词已生成: {prompt_file}（共{len(new_items)}条新新闻，{len(candidates)}条有候选）")
         return prompt_file
 
+    def should_review(
+        self,
+        new_items: List[ProcessedNewsItem],
+        events: List[Any],
+        all_items: List[ProcessedNewsItem]
+    ) -> bool:
+        """
+        判断本批次是否需要生成Agent复查提示词。
+
+        常规单条、低风险新增不触发复查；只在会影响质量的灰区触发，以减少每小时更新的token负担。
+        """
+        if not new_items:
+            return False
+
+        news_to_event: Dict[str, Any] = {}
+        for event in events:
+            for news in event.news_list:
+                news_to_event[news.id] = event
+
+        for news in new_items:
+            current_event = news_to_event.get(news.id)
+
+            # 高价值新闻被并入已有事件时，人工/Agent复查收益最高。
+            if current_event and news.grade in {"S", "A+"} and current_event.news_count > 1:
+                logger.info(f"触发事件复查: 高价值新闻进入已有事件 news_id={news.id}")
+                return True
+
+            # 缺实体会削弱事件分组和时代情绪校准，需要复查。
+            if not news.entities:
+                logger.info(f"触发事件复查: 新新闻缺少实体 news_id={news.id}")
+                return True
+
+            high_sim_events = []
+            for event in events:
+                if current_event and event.event_id == current_event.event_id:
+                    continue
+
+                max_sim = 0.0
+                for event_news in event.news_list:
+                    sim = calculate_news_similarity(
+                        news,
+                        event_news,
+                        entity_threshold=self.entity_threshold,
+                        similarity_threshold=self.review_similarity_threshold
+                    )
+                    max_sim = max(max_sim, sim)
+
+                if max_sim >= self.review_similarity_threshold:
+                    high_sim_events.append((event, max_sim))
+
+            if not high_sim_events:
+                continue
+
+            high_sim_events.sort(key=lambda pair: pair[1], reverse=True)
+            top_event, top_similarity = high_sim_events[0]
+
+            # 新建事件但接近既有事件，说明可能漏合并。
+            if current_event and current_event.news_count == 1 and top_event.event_id != current_event.event_id:
+                logger.info(
+                    f"触发事件复查: 新新闻接近既有事件 news_id={news.id}, "
+                    f"candidate={top_event.event_id}, similarity={top_similarity:.3f}"
+                )
+                return True
+
+            # 多个候选事件分数接近，说明归属边界不清晰。
+            if len(high_sim_events) > 1 and top_similarity - high_sim_events[1][1] <= 0.05:
+                logger.info(f"触发事件复查: 多个候选事件接近 news_id={news.id}")
+                return True
+
+        return False
+
     def _update_event_properties(self, event: Any) -> None:
         """更新事件属性（复用EventGrouper的逻辑）"""
         from src.processors.event_grouper import EventGrouper

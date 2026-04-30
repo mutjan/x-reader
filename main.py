@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from src.fetchers.factory import FetcherFactory
 from src.processors.filter import NewsFilter
 from src.processors.duplicate import DuplicateRemover
-from src.processors.ai_processor import ManualProcessor, EntityProcessor
+from src.processors.ai_processor import ManualProcessor
 from src.publishers.factory import PublisherFactory
 from src.utils.common import setup_logger, save_json
 import json
@@ -55,8 +55,7 @@ def main():
     logger.info("初始化组件...")
     duplicate_remover = DuplicateRemover()
     news_filter = NewsFilter()
-    entity_processor = EntityProcessor()  # 实体识别处理器
-    ai_processor = ManualProcessor()  # 标题摘要生成处理器
+    ai_processor = ManualProcessor()  # 标题、摘要、实体生成处理器
     publisher = PublisherFactory.get_publisher("github_pages")
 
     # 2. 获取数据源
@@ -113,7 +112,7 @@ def main():
         logger.warning("预筛选后没有剩余新闻")
         return 0
 
-    # 7. AI处理（标题/摘要生成 + 实体识别）
+    # 7. AI处理（标题/摘要/实体生成）
     logger.info(f"开始AI处理，共 {len(filtered_items)} 条新闻")
 
     # 分批处理
@@ -129,19 +128,7 @@ def main():
         logger.warning("AI处理后没有剩余新闻")
         return 0
 
-    # 8. 实体识别处理
-    logger.info("开始实体识别处理...")
-    entity_results = entity_processor.process_batch(filtered_items)
-    if entity_results:
-        # 将实体识别结果填充到处理后的新闻项中
-        for item in processed_items:
-            if item.url in entity_results:
-                item.entities = entity_results[item.url]
-        logger.info(f"已为 {len([item for item in processed_items if item.entities])} 条新闻填充实体")
-    else:
-        logger.info("实体识别处理完成，无实体结果需要填充")
-
-    # 9. 处理后去重
+    # 8. 处理后去重
     logger.info("处理后去重...")
     processed_items = duplicate_remover.deduplicate_processed(processed_items)
 
