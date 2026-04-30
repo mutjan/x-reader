@@ -2,6 +2,68 @@
   "news": {
     "2026-04-30": [
       {
+        "id": "5e8464899a1399f813bb4612645ec77e",
+        "title": "Anthropic推生物谜题基准，Claude攻克专家也卡壳难题",
+        "chinese_title": "Anthropic推生物谜题基准，Claude攻克专家也卡壳难题",
+        "original_title": "Anthropic unveils BioMysteryBench to test Claude's bioinformatics skills against human experts, and says Mythos solved ~30% of 23 questions that stumped experts (Anthropic)",
+        "summary": "Anthropic发布面向生物信息学推理的BioMysteryBench，并称Mythos在23道难倒人类专家的问题中解出约三成，显示大模型正开始逼近高门槛科研分析场景。",
+        "rating": "A",
+        "score": 86,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果这类高难科研基准持续被突破，AI在生命科学研发中的角色可能从辅助检索进一步走向问题发现与假设生成，也会带动行业重新评估专用科研模型的价值。",
+        "entities": [
+          "Anthropic",
+          "Biomysterybench",
+          "Claude",
+          "Mythos",
+          "生物信息学"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260430/p4#a260430p4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777529225,
+        "published_at": "2026-04-30T14:07:05.505492",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260430/p4#a260430p4",
+        "event_id": null
+      },
+      {
+        "id": "988f42f964ca8806bf159755e6f0859d",
+        "title": "OpenAI签下美国10GW算力合同，数据中心扩张大幅提前",
+        "chinese_title": "OpenAI签下美国10GW算力合同，数据中心扩张大幅提前",
+        "original_title": "OpenAI says it has signed contracts for 10GW of US AI compute capacity, with 3GW+ added in the past 90 days, hitting a goal it once aimed to reach by 2029 (Dina Bass/Bloomberg)",
+        "summary": "OpenAI表示已在美国签约10GW AI算力，过去90天新增超过3GW，比原定2029年才实现的目标提前多年落地，进一步加速其大模型基础设施扩张计划。",
+        "rating": "S",
+        "score": 95,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "这意味着头部模型公司的竞争正在从模型能力转向超大规模算力锁定，后续可能牵动云厂商合作格局、数据中心资本开支以及电力与芯片供应链的新一轮博弈。",
+        "entities": [
+          "Ai算力",
+          "OpenAI",
+          "云计算",
+          "数据中心",
+          "美国"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "http://www.techmeme.com/260430/p1#a260430p1"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777529225,
+        "published_at": "2026-04-30T14:07:05.505606",
+        "source": "Techmeme",
+        "url": "http://www.techmeme.com/260430/p1#a260430p1",
+        "event_id": null
+      },
+      {
         "id": "e31c7046a179beea1cae22de4fb639eb",
         "title": "中科大悟空号首次验证宇宙射线能量上限电荷依赖规律",
         "chinese_title": "中科大悟空号首次验证宇宙射线能量上限电荷依赖规律",
@@ -122,6 +184,37 @@
         "published_at": "2026-04-30T12:05:52.261738",
         "source": "The Information",
         "url": "https://www.theinformation.com/articles/musk-battles-openai-lawyer-claims-co-founders-stole-charity",
+        "event_id": null
+      },
+      {
+        "id": "ba1840d48117f6f3cc5bdee86e70e1dd",
+        "title": "Qumulator量子电路模拟器叫板千比特，无需GPU也能跑",
+        "chinese_title": "Qumulator量子电路模拟器叫板千比特，无需GPU也能跑",
+        "original_title": "Show HN: Qumulator – quantum circuit simulator, 1000 qubits, no GPU",
+        "summary": "Qumulator公开其Python SDK，主打在标准云CPU上精确模拟最多1000量子比特、无需GPU或量子硬件，并兼容Qiskit和Cirq工作流。这类经典模拟器若表现稳定，可能重新点燃量子算法验证和开发者工具市场的讨论。",
+        "rating": "A",
+        "score": 79,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "如果开发者社区认可其精度与成本模型，经典模拟服务可能分流一部分早期量子计算验证需求，也会加剧量子云平台在开发工具层的竞争。后续值得跟进其真实基准、商业模式和与量子硬件厂商的关系。",
+        "entities": [
+          "Cirq",
+          "Google Cloud Run",
+          "Qiskit",
+          "Qumulator",
+          "量子电路模拟"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/qumulator/qumulator-sdk"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777521952,
+        "published_at": "2026-04-30T12:05:52.261544",
+        "source": "Hacker News",
+        "url": "https://github.com/qumulator/qumulator-sdk",
         "event_id": null
       },
       {
@@ -7837,37 +7930,6 @@
       }
     ],
     "2026-04-27": [
-      {
-        "id": "ba1840d48117f6f3cc5bdee86e70e1dd",
-        "title": "Qumulator量子电路模拟器叫板千比特，无需GPU也能跑",
-        "chinese_title": "Qumulator量子电路模拟器叫板千比特，无需GPU也能跑",
-        "original_title": "Show HN: Qumulator – quantum circuit simulator, 1000 qubits, no GPU",
-        "summary": "Qumulator公开其Python SDK，主打在标准云CPU上精确模拟最多1000量子比特、无需GPU或量子硬件，并兼容Qiskit和Cirq工作流。这类经典模拟器若表现稳定，可能重新点燃量子算法验证和开发者工具市场的讨论。",
-        "rating": "A",
-        "score": 79,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "如果开发者社区认可其精度与成本模型，经典模拟服务可能分流一部分早期量子计算验证需求，也会加剧量子云平台在开发工具层的竞争。后续值得跟进其真实基准、商业模式和与量子硬件厂商的关系。",
-        "entities": [
-          "Cirq",
-          "Google Cloud Run",
-          "Qiskit",
-          "Qumulator",
-          "量子电路模拟"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/qumulator/qumulator-sdk"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777521952,
-        "published_at": "2026-04-30T12:05:52.261544",
-        "source": "Hacker News",
-        "url": "https://github.com/qumulator/qumulator-sdk",
-        "event_id": null
-      },
       {
         "id": "eb7e94882626e4aa705958be64a81d7a",
         "title": "微软放开OpenAI云销售独家权，AGI条款也被删",
@@ -20129,186 +20191,9 @@
         "source": "[arXiv] Fei-Fei Li",
         "url": "https://arxiv.org/abs/2604.20157v1",
         "event_id": null
-      },
-      {
-        "id": "9c46e38b859fb9099d88ad311125d927",
-        "title": "英伟达H200对华销售仍卡在审批前",
-        "original_title": "US Commerce Secretary Howard Lutnick says Nvidia has yet to sell H200 chips to Chinese companies and that the Chinese government has not approved such purchases (Alexandra Alper/Reuters)",
-        "summary": "美国商务部长Howard Lutnick称，英伟达尚未向中国公司销售H200 AI芯片，中国政府也未批准相关采购，显示高端AI芯片对华供应仍受政策与审批双重制约。",
-        "rating": "A",
-        "score": 85,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "后续可追踪美国出口管制、中国采购审批和国产AI芯片替代节奏，也会影响英伟达中国收入预期及云厂商算力供给。",
-        "entities": [
-          "China",
-          "H200",
-          "Howard Lutnick",
-          "NVIDIA",
-          "Us Commerce Department"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260423/p7#a260423p7"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776924189,
-        "published_at": "2026-04-23T14:03:09.955376",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260423/p7#a260423p7",
-        "event_id": null
-      },
-      {
-        "id": "13e24c6c345cd314db44dba786d884d2",
-        "title": "Mythos争议继续消耗Anthropic信任",
-        "original_title": "A Boy That Cried Mythos: Verification Is Collapsing Trust in Anthropic",
-        "summary": "文章围绕Mythos相关验证争议批评Anthropic的信任机制正在失效，核心看点不只是单一模型传闻，而是AI公司如何证明高风险系统信息的真实性。",
-        "rating": "B",
-        "score": 70,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可延伸观察AI公司模型发布、泄露传闻和安全验证流程，尤其是外部研究者、媒体与企业声明之间的信任链如何重建。",
-        "entities": [
-          "Ai Safety",
-          "Ai Verification",
-          "Anthropic",
-          "Mythos"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.flyingpenguin.com/the-boy-that-cried-mythos-verification-is-collapsing-trust-in-anthropic/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776924189,
-        "published_at": "2026-04-23T14:03:09.955513",
-        "source": "Hacker News",
-        "url": "https://www.flyingpenguin.com/the-boy-that-cried-mythos-verification-is-collapsing-trust-in-anthropic/",
-        "event_id": null
-      },
-      {
-        "id": "0976c217bf90c72a8bee7caa919c7220",
-        "title": "特斯拉拟用英特尔14A制造AI芯片",
-        "original_title": "Elon Musk says Tesla plans to use Intel's 14A process technology to make chips at its Terafab project, which would make Tesla the first major customer for 14A (Reuters)",
-        "summary": "马斯克称特斯拉计划在TeraFab项目中采用英特尔14A制程制造芯片，若落地将成为英特尔下一代工艺的重要首批大客户。",
-        "rating": "A+",
-        "score": 91,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "该事件可延伸到英特尔先进制程客户验证、特斯拉自研AI芯片路线，以及车企是否会更深参与半导体供应链。",
-        "entities": [
-          "14A",
-          "Elon Musk",
-          "Intel",
-          "Terafab",
-          "Tesla"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260423/p4#a260423p4"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776920649,
-        "published_at": "2026-04-23T13:04:09.728152",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260423/p4#a260423p4",
-        "event_id": null
-      },
-      {
-        "id": "4c08edf6cc94a294bf9ce49bd9f474d0",
-        "title": "台积电为省成本推迟高NA EUV量产",
-        "original_title": "TSMC says it will hold off on using ASML's most advanced high-NA EUV machines, costing upwards of &euro;350M apiece, for chip production through 2029 to save money (Bloomberg)",
-        "summary": "台积电据称至少到2029年前暂不在量产中采用ASML最先进的高NA EUV设备，核心原因是单台设备成本过高。",
-        "rating": "A+",
-        "score": 87,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "这将影响先进制程设备迭代节奏，也可能改变ASML高NA EUV放量预期和晶圆厂资本开支结构。",
-        "entities": [
-          "Asml",
-          "Chip Manufacturing",
-          "High-Na Euv",
-          "TSMC"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260423/p3#a260423p3"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776920649,
-        "published_at": "2026-04-23T13:04:09.728469",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260423/p3#a260423p3",
-        "event_id": null
-      },
-      {
-        "id": "a3302926962e6fad05fb90489473cb5c",
-        "title": "台积电公布2029年前先进制程路线",
-        "original_title": "TSMC unveils its process technology roadmap through 2029, aiming to launch a new node yearly for client applications and every two years for AI and HPC (Anton Shilov/Tom's Hardware)",
-        "summary": "台积电在北美技术论坛披露到2029年的制造路线图，计划客户端芯片每年推进新节点，AI和HPC约每两年升级一次。",
-        "rating": "A",
-        "score": 83,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "路线图可用于观察台积电如何平衡消费电子、AI和HPC需求，并判断英特尔、三星等竞争者追赶窗口。",
-        "entities": [
-          "Ai",
-          "High-Na Euv",
-          "Hpc",
-          "Process Technology",
-          "TSMC"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260423/p2#a260423p2"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776920649,
-        "published_at": "2026-04-23T13:04:09.728745",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260423/p2#a260423p2",
-        "event_id": null
-      },
-      {
-        "id": "005cbdb321ab4c0a2c98005edadd41f7",
-        "title": "OpenAI向美国临床医生免费开放ChatGPT",
-        "original_title": "OpenAI releases ChatGPT for Clinicians, a tool for medical tasks like documentation and research, free for verified physicians, pharmacists, and more in the US (OpenAI)",
-        "summary": "OpenAI发布面向临床工作的ChatGPT for Clinicians，覆盖文档整理和医学研究等任务，并向美国认证医生、药剂师等免费开放。",
-        "rating": "S",
-        "score": 99,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "该产品可能推动AI医疗助手从通用问答进入临床工作流，也会引发合规、责任边界和医疗机构采购模式讨论。",
-        "entities": [
-          "Chatgpt For Clinicians",
-          "GPT",
-          "Healthcare Ai",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260422/p54#a260422p54"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1776920649,
-        "published_at": "2026-04-23T13:04:09.728946",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260422/p54#a260422p54",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-04-30T12:06:13.212295",
-  "total_news": 680
+  "last_updated": "2026-04-30T14:07:24.938156",
+  "total_news": 676
 }
