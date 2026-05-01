@@ -2,6 +2,67 @@
   "news": {
     "2026-05-02": [
       {
+        "id": "2dbd7bbb50a6cccf58a9140f60067202",
+        "title": "乌军用地面机器人救出七旬老人，战场无人系统再扩边界",
+        "chinese_title": "乌军用地面机器人救出七旬老人，战场无人系统再扩边界",
+        "original_title": "Wild Video Shows Ukrainian Troops Evacuate Babushka With a Military Robot",
+        "summary": "BBC画面显示，乌克兰部队借助无人地面机器人和侦察无人机协同，引导一名77岁老人撤离前线村庄，凸显战场机器人已从补给运输延伸到人员救援场景。",
+        "rating": "B",
+        "score": 68,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "无人系统从侦察、补给走向实地救援，意味着军用机器人应用边界正在变宽，后续可能影响国防采购、机器人自治能力要求，以及民用应急救援技术的反向迁移。",
+        "entities": [
+          "Bbc",
+          "Drone",
+          "Ugv",
+          "Ukraine"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/science-energy/babushka-ukraine-robot-war"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777672757,
+        "published_at": "2026-05-02T05:59:17.869692",
+        "source": "Futurism",
+        "url": "https://futurism.com/science-energy/babushka-ukraine-robot-war",
+        "event_id": null
+      },
+      {
+        "id": "381154cb7315f067b4b39aff65312716",
+        "title": "五眼国家联合发布代理式AI安全指引，警告权限放得太宽",
+        "chinese_title": "五眼国家联合发布代理式AI安全指引，警告权限放得太宽",
+        "original_title": "The US, UK, Australia, Canada, and New Zealand publish guidance on orgs' use of agentic AI systems, saying many give AI more access than can be safely monitored (Greg Otto/CyberScoop)",
+        "summary": "美国、英国、澳大利亚、加拿大和新西兰联合发布机构使用代理式 AI 系统的新指引，提醒大量组织正给 AI 过多真实世界操作权限，而监控能力却远远跟不上。",
+        "rating": "A+",
+        "score": 88,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "多国同步出手意味着代理式 AI 的治理正在从企业自律转向跨国安全框架，后续可能催生更细的权限审计标准，也会影响关键基础设施行业的落地节奏。",
+        "entities": [
+          "Australia",
+          "Canada",
+          "New Zealand",
+          "United Kingdom",
+          "United States"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260501/p18#a260501p18"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777672757,
+        "published_at": "2026-05-02T05:59:17.870064",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260501/p18#a260501p18",
+        "event_id": null
+      },
+      {
         "id": "8a5e05b2c807baea2591a9145d30a191",
         "title": "AI芯片独角兽Cerebras冲刺IPO，拟募资40亿美元估值400亿",
         "chinese_title": "AI芯片独角兽Cerebras冲刺IPO，拟募资40亿美元估值400亿",
@@ -94,10 +155,10 @@
       },
       {
         "id": "107e9ac3d8c34a48f88cab7fcdfcf156",
-        "title": "OX审计警告20万MCP服务暴露命令执行缺陷，Anthropic称属设计特性",
-        "chinese_title": "OX审计警告20万MCP服务暴露命令执行缺陷，Anthropic称属设计特性",
+        "title": "MCP默认STDIO曝命令执行隐患，20万代理服务器受波及",
+        "chinese_title": "MCP默认STDIO曝命令执行隐患，20万代理服务器受波及",
         "original_title": "200,000 MCP servers expose a command execution flaw that Anthropic calls a feature",
-        "summary": "安全研究人员称，MCP默认STDIO传输可直接执行接收到的系统命令，推测约20万实例存在风险，并在多个生产平台验证了任意命令执行，引爆AI智能体工具链安全争议。",
+        "summary": "OX Security指出，MCP默认STDIO传输把本地工具连接面直接暴露成命令执行入口，相关风险已蔓延至LangFlow、LiteLLM、Windsurf等大量AI代理与开发工具生态。",
         "rating": "S",
         "score": 100,
         "type": "safety",
@@ -105,10 +166,10 @@
         "expansion": "这可能迫使MCP生态补上权限边界、沙箱和协议级验证，也会让企业重新审视智能体接本地工具时的默认信任模型。",
         "entities": [
           "Anthropic",
-          "DeepMind",
           "MCP",
           "OpenAI",
-          "Ox Security"
+          "Ox Security",
+          "Windsurf"
         ],
         "sourceLinks": [
           {
@@ -121,25 +182,28 @@
         "published_at": "2026-05-02T05:58:58.935898",
         "source": "VentureBeat",
         "url": "https://venturebeat.com/security/mcp-stdio-flaw-200000-ai-agent-servers-exposed-ox-security-audit",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic created the Model Context Protocol as the open standard for AI agent-to-tool communication. OpenAI adopted it in March 2025 . Google DeepMind followed. Anthropic donated MCP to the Linux Foundation in December 2025. Downloads crossed 150 million. Then four researchers at OX Security found an architectural problem that affects all of them. MCP's STDIO transport, the default for connecting an AI agent to a local tool, executes any operating system command it receives. No sanitization. No execution boundary between configuration and command. A malicious command returns an error after the command has already run. The developer toolchain raises no flag. OX Security researchers Moshe Siman Tov Bustan, Mustafa Naamnih, Nir Zadok and Roni Bar scanned the ecosystem and found 7,000 servers on public IPs with STDIO transport active — and estimate 200,000 total vulnerable instances extrapolated from that ratio. They confirmed arbitrary command execution on six live production platforms with paying customers. The research produced more than 10 CVEs rated high or critical across LiteLLM, LangFlow, Flowise, Windsurf, Langchain-Chatchat, Bisheng, DocsGPT, GPT Researcher, Agent Zero, LettaAI and others. Kevin Curran, IEEE senior member and professor of cybersecurity at Ulster University , independently told Infosecurity Magazine the research exposed \"a shocking gap in the security of foundational AI infrastructure.\" Anthropic confirmed the behavior is by design and declined to modify the protocol — characterizing STDIO's execution model as a secure default and input sanitization as the developer's responsibility. That characterization comes from OX; the only word Anthropic explicitly stated on the record is \"expected.\" Anthropic has not issued a standalone public statement and did not respond to VentureBeat's request for comment. OX says expecting 200,000 developers to sanitize inputs correctly is the problem. Anthropic's strongest technical counter : sanitizing STDIO would either break the transport or move the payload one layer down. Both positions are technically coherent. The question is what to do while that debate plays out. Every major outlet covered the disclosure. None built the prescriptive product-by-product audit a security director needs to triage her own MCP deployments. This piece does. Five questions determine whether your MCP deployments are exposed, whether your patches hold, and what to do Monday morning. Am I exposed? If your teams deployed any MCP-connected AI agent using the default STDIO transport, yes. The insecurity is not a coding bug in any single product. It is a design default in Anthropic's MCP specification that propagated into every official language SDK: Python, TypeScript, Java, and Rust. Every downstream project that trusted the protocol inherited it. OX identified four exploitation families. Unauthenticated command injection through AI framework web interfaces, demonstrated against LangFlow and LiteLLM. Hardening bypasses in tools that implemented command allowlists, demonstrated against Flowise and Upsonic, where OX bypassed the allowlist through argument injection (npx -c). Zero-click prompt injection in AI coding IDEs, where malicious HTML modifies local MCP configuration files. Windsurf (CVE-2026-30615) was the only IDE where exploitation required zero user interaction, though Cursor, Claude Code, and Gemini-CLI are all vulnerable to the broader family. And malicious package distribution through MCP registries, where OX submitted a benign proof-of-concept to 11 registries, and nine accepted it without security review. Carter Rees, VP of AI and Machine Learning at Reputation and member of the Utah AI Commission, told VentureBeat the framing needs to change entirely. \"MCP stdio is a privileged execution surface, not a connector. Enterprise teams should treat it like production shell access. Deny by default, allowlist, sandbox and stop assuming downstream input validation will hold at scale,\" Rees said. The IDE family deserves particular attention because it hits developer workstations, not servers. A developer who visits an attacker-controlled website can trigger a modification to their local MCP configuration file — and in Windsurf's case, the change executes immediately with no approval prompt. Cursor, Claude Code and Gemini-CLI require some form of user interaction, but if the UI presents a configuration change without surfacing the execution consequence, clicking 'approve' does not constitute informed consent. Did my vendor patch? Some did. Some partially. Some have not confirmed. The matrix below maps each affected product against the exploitation family, patch state, and the gap that remains. The critical column is \"Protocol fix?\" Every row says no. Product Exploit type Patched? Protocol fix? The gap Action LiteLLM Command injection via adapter UI YES NO LiteLLM is fixed. New STDIO configs outside LiteLLM inherit the same insecure default. Pin to v1.83.7-stable or later (CVE-2026-30623). Verify against GitHub advisory. Audit all other STDIO definitions. LangFlow RCE via public auto_login + STDIO Partial NO Auth token freely available via public endpoint. STDIO executes whatever follows. Block public auto_login. Sandbox all MCP services from the host OS. Flowise / Upsonic Allowlist bypass (npx -c argument injection) Hardened, bypass confirmed NO Allowlist gives false confidence. OX bypassed it. Trivial. Do not rely on command allowlists. Enforce process-level sandbox isolation. Windsurf (CVE-2026-30615) Zero-click prompt injection to local RCE REPORTED, unconfirmed NO Only an IDE with a true zero-interaction exploit. Hits developer workstations, not servers. Disable automatic MCP server registration. Review all active configs manually. Cursor / Claude Code / Gemini-CLI Prompt injection to local MCP config modification Cursor patched (CVE-2025-54136); others vary NO User interaction required, but config-change UI does not surface execution consequence. Approval does not equal informed consent. Audit MCP config files (~/.cursor/mcp.json, equivalent paths). Disable auto-registration. Review all pending config changes before approval. Langchain-Chatchat (CVE-2026-30617) RCE via MCP STDIO transport REPORTED, unconfirmed NO Downstream chatbot framework inherits the same STDIO default. Patch status unconfirmed. Inventory all Langchain-Chatchat deployments. Sandbox from host OS. Monitor vendor advisory for patch. MCP registries (9 of 11) Accepted malicious PoC without review N/A NO Registries lack submission security review. Install and risk a backdoor. Use registries with documented submission review. Audit installs against known-good hashes. Does the flaw survive the patch? Yes. Every product-level patch in the matrix addresses the specific entry point in that product. None of them changes the MCP protocol's STDIO behavior. A security director who patches LiteLLM today and configures a new MCP STDIO server tomorrow will inherit the same insecure default on the new server. The patches are necessary. They are not sufficient. This was predictable. When VentureBeat first reported on MCP's security flaws in January, Merritt Baer, chief security officer at Enkrypt AI and former deputy CISO at AWS, warned: \"MCP is shipping with the same mistake we've seen in every major protocol rollout: insecure defaults. If we don't build authentication and least privilege in from day one, we'll be cleaning up breaches for the next decade.\" The Cloud Security Alliance independently confirmed OX's findings in a separate research note and recommended organizations treat MCP-connected infrastructure as an active, unpatched threat. The defaults did not change. The attack surface grew. Rees argued that Anthropic's position, while internally consistent, does not survive contact with enterprise reality. \"It stops being a developer mistake and starts being a distributed failure mode when the same class of failure reproduces across that many independent implementations,\" he told VentureBeat. \"Guidance is not an architectural control. Relying on thousands of downstream implementers to consistently interpret a trust boundary is a known anti-pattern in enterprise security.\" Anthropic updated its SECURITY.md file nine days after OX's initial contact in January 2026 to note that STDIO adapters should be used with caution, but made no architectural changes. The researchers' assessment of that update : \"This change didn't fix anything.\" Rees took a more measured view. \"It's worth giving Anthropic credit where it's due,\" he told VentureBeat. \"After the disclosure, they updated their security guidance to recommend caution with stdio adapters. That's a meaningful step even if researchers argue it falls short of a protocol-level fix.\" What changed at the protocol level? Nothing architectural. Anthropic has not implemented manifest-only execution, a command allowlist in the official SDKs, or any other protocol-level mitigation. OX recommended all three. The SECURITY.md guidance update was the only change. OX's research began in November 2025 and included more than 30 responsible disclosure processes across the ecosystem before the April 15 publication. The disagreement is substantive. Anthropic's architectural argument deserves its full weight. STDIO is a local subprocess transport designed to launch processes on the machine that configured it. The trust boundary, in Anthropic's model, sits with whoever controls the configuration file. If you can write to the MCP config, you are by definition someone authorized to execute commands on that machine. Under that logic, what looks like command injection is a feature working as intended. Restricting what STDIO can launch at the protocol level would either break the transport's core function, since its purpose is to launch arbitrary local processes, or displace the attack surface into the launched process itself. The unopinionated-standard argument is also defensible: a universal protocol that hard-codes execution constraints stops being universal. OX's counter, from their advisory : \"Shifting responsibility to implementers does not transfer the risk. It just obscures who created it.\" Do not wait for a protocol-level fix. Treat every MCP STDIO configuration as an untrusted input surface, regardless of which product it sits inside. Monday morning remediation sequence Enumerate. Identify every MCP server deployment across dev, staging, and production. Search for MCP configuration files (mcp.json, mcp_config.json) in developer home directories and IDE config paths (~/.cursor/, ~/.codeium/windsurf/, ~/.config/claude-code/). List running processes that match MCP server binaries. Flag any using STDIO transport with public IP accessibility. OX found 7,000 on public IPs. Your environment may have instances you do not know about. Patch. Pin every affected product to its patched release. LiteLLM v1.83.7-stable includes the fix for CVE-2026-30623. DocsGPT, Flowise, and Bisheng have also shipped fixes. Windsurf and Langchain-Chatchat remain in reported state as of May 1, 2026. Cursor was patched against an earlier related disclosure (CVE-2025-54136) but inherits the same protocol default. Check each vendor's advisory in the morning you execute this step. Sandbox. Isolate every MCP-enabled service from the host operating system. Never give a server full disk access or shell execution privileges. The Flowise/Upsonic allowlist bypass proves that restricting commands alone is not enough. Audit registries. Review every MCP server installed from a third-party registry. Nine of 11 registries accepted OX's proof-of-concept without a security review. Use registries with documented submission review processes. Remove any MCP server whose origin you cannot verify. Treat STDIO config as untrusted. This step survives every future patch and every future product. The protocol-level default has not changed. Every STDIO server definition is a command execution surface. Treat it the same way you treat user input to a database query: assume it is hostile until validated. Your exposure cannot wait for a protocol fix Anthropic and OX Security disagree on where the responsibility for securing MCP's STDIO transport belongs. That disagreement will not be resolved this week. What can be resolved this week is whether your MCP deployments are enumerated, patched, sandboxed, and treated as the untrusted execution surfaces they are. As Rees put it: \"The core question here is architectural policy, not exploit payloads.\" Baer warned in January that insecure defaults would produce exactly this outcome. OX documented 200,000 servers running with a configuration field that doubles as an execution surface. The protocol's designer says it is working as intended. Your Monday morning question is not who is right. It is which of your servers are exposed.",
+        "grade": "S",
+        "extension": "这不只是单点漏洞，而是AI代理基础协议默认信任边界设计问题，后续会外溢到企业内网接入、开发者IDE和MCP注册表审核机制。围绕协议层是否该收紧默认权限，也可能引发新一轮生态分裂与合规审视。"
       },
       {
         "id": "63459efd6a64db19f69037a0edb04063",
-        "title": "黑金游说渗入AI舆论场：亲OpenAI资本资助网红渲染中国威胁",
-        "chinese_title": "黑金游说渗入AI舆论场：亲OpenAI资本资助网红渲染中国威胁",
+        "title": "OpenAI关联资金被曝投放网红内容，借中国议题为美国AI造势",
+        "chinese_title": "OpenAI关联资金被曝投放网红内容，借中国议题为美国AI造势",
         "original_title": "A Dark-Money Campaign Is Paying Influencers to Frame Chinese AI as a Threat",
-        "summary": "Wired披露，Build American AI背后的政治资金正在付费推动TikTok网红发布亲美AI内容，并刻意放大对中国AI的恐惧，显示AI竞争已延伸到舆论操盘层面。",
+        "summary": "Wired披露，一个与超级政治行动委员会相关、背后有OpenAI与Andreessen Horowitz高管支持的组织，正资助网红传播亲AI叙事，并强化对中国AI威胁的舆论塑造。",
         "rating": "A+",
-        "score": 87,
+        "score": 90,
         "type": "society",
         "typeName": "社会影响",
         "expansion": "这类传播战如果持续升级，AI产业政策、平台内容审核和公众对技术风险的认知都会被更强烈地政治化。",
         "entities": [
+          "Andreessen Horowitz",
           "Build American Ai",
           "ByteDance",
           "OpenAI",
-          "Palantir",
-          "中国Ai"
+          "Palantir"
         ],
         "sourceLinks": [
           {
@@ -152,24 +216,27 @@
         "published_at": "2026-05-02T05:58:58.935994",
         "source": "Feed: Artificial Intelligence Latest",
         "url": "https://www.wired.com/story/super-pac-backed-by-openai-and-palantir-is-paying-tiktok-influencers-to-fear-monger-about-china/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Build American AI, a nonprofit linked to a super PAC bankrolled by executives at OpenAI and Andreessen Horowitz, is funding a campaign to spread pro-AI messaging and stoke fears about China.",
+        "grade": "A+",
+        "extension": "这件事把AI产业竞争、地缘政治与舆论操盘绑在了一起，后续可能波及平台内容治理、政策游说透明度，以及美国AI公司在公共叙事中的角色边界。"
       },
       {
         "id": "a2f224ac652668485852984deab72604",
-        "title": "Claude Code占卜技能Destiny开源，用命理引擎做个性化运势",
-        "chinese_title": "Claude Code占卜技能Destiny开源，用命理引擎做个性化运势",
+        "title": "Claude Code冒出命理插件，算命流程做成可安装技能",
+        "chinese_title": "Claude Code冒出命理插件，算命流程做成可安装技能",
         "original_title": "Show HN: Destiny &ndash; Claude Code's fortune Teller skill",
-        "summary": "开发者在GitHub开源了面向Claude Code的技能Destiny，主打把八字、历法和易经计算做成可调用插件，再由模型生成解读文本，展示了AI技能市场的另类玩法。",
+        "summary": "Hacker News热议的 Destiny 项目把命理测算封装成 Claude Code 插件，主打本地计算八字与易经卦象，再由模型负责自然语言解读与多语言输出。",
         "rating": "A",
         "score": 76,
         "type": "tool",
         "typeName": "工具技巧",
         "expansion": "这类垂直技能一旦形成传播，AI编码工具的竞争会从模型本身延伸到插件生态和人格化使用场景。",
         "entities": [
-          "Claude",
           "Claude Code",
           "Destiny",
-          "Github"
+          "Github",
+          "Lunar-Python"
         ],
         "sourceLinks": [
           {
@@ -182,22 +249,25 @@
         "published_at": "2026-05-02T05:58:58.936088",
         "source": "Hacker News",
         "url": "https://github.com/xodn348/destiny",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "A",
+        "extension": "这类项目说明 AI IDE 插件正在从生产力工具外溢到娱乐与个性化体验，后续可能带动更多\"本地计算+模型解释\"的轻应用形态，也会让插件分发与安全审核再次成为焦点。"
       },
       {
         "id": "a16dd0a07cd0d6d1e47ca7a971bb78ee",
-        "title": "OpenAI放出演示：Codex几步接入日历邮件和文档，切向团队协作",
-        "chinese_title": "OpenAI放出演示：Codex几步接入日历邮件和文档，切向团队协作",
+        "title": "OpenAI演示Codex接入办公应用，几步导入团队工作上下文",
+        "chinese_title": "OpenAI演示Codex接入办公应用，几步导入团队工作上下文",
         "original_title": "Bring your work into Codex in a few clicks",
-        "summary": "OpenAI发布Codex新演示，展示用户如何快速接入Google Calendar、Gmail、Drive、Slack、Figma和Notion，把分散工作上下文汇总成会议简报，强化其企业协作入口定位。",
+        "summary": "OpenAI发布新演示视频，展示 Codex 如何快速接入日历、邮件、网盘、Slack、Figma 和 Notion 等工具，把分散的工作上下文整理成可直接执行的客户会议简报。",
         "rating": "S",
-        "score": 95,
+        "score": 88,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "如果这套接入体验成熟，Codex会更直接切入企业知识入口与办公自动化市场，并与Copilot、Notion AI等产品正面竞争。",
         "entities": [
           "Codex",
-          "Google Calendar",
+          "Figma",
           "Notion",
           "OpenAI",
           "Slack"
@@ -213,21 +283,24 @@
         "published_at": "2026-05-02T05:58:58.936294",
         "source": "OpenAI",
         "url": "https://www.youtube.com/watch?v=flvZ6jEj3VU",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Codex helps teams connect the apps they already use, bring over their setup, and start seeing the magic happen right away. In this quick demo, you’ll see how to: * personalize Codex for your role * import tools, projects, skills, and recent chats * connect apps like Google Calendar, Gmail, Drive, Slack, Figma, Notion, and more * turn scattered work context into a customer meeting brief A few clicks, and you’re ready to go! Learn more: https://chatgpt.com/codex/for-work/",
+        "grade": "A+",
+        "extension": "这说明 Codex 正从单点编码助手扩展为团队工作流入口，后续看点会落在企业连接器生态、权限治理，以及与协作文档和日程工具的更深整合。"
       },
       {
         "id": "90f60d190928c7f4223a0cd824b37fd1",
-        "title": "散户开始训练AI代理替自己交易，Polymarket和Bybit顺势开放接口",
-        "chinese_title": "散户开始训练AI代理替自己交易，Polymarket和Bybit顺势开放接口",
+        "title": "散户开始训练AI代理替自己下单，预测市场和交易所跟进开放接口",
+        "chinese_title": "散户开始训练AI代理替自己下单，预测市场和交易所跟进开放接口",
         "original_title": "Some retail traders are training AI agents to buy and sell assets on their behalf, as exchanges like Polymarket and Bybit roll out agent-friendly interfaces (Emily Nicolle/Bloomberg)",
-        "summary": "彭博报道称，部分散户已在训练AI代理替自己买卖资产，而Polymarket与Bybit等交易平台也在提供更适配智能体的接口，自动交易正从量化机构下沉到个人用户。",
+        "summary": "彭博报道称，一批零售交易者正训练 AI 代理代为买卖资产，Polymarket 和 Bybit 等平台也在推出更适合代理接入的界面，自动化交易门槛进一步下探。",
         "rating": "A+",
         "score": 87,
         "type": "financial",
         "typeName": "商业数据",
         "expansion": "若散户级AI交易工具快速普及，平台风控、责任认定和监管对自动化投资建议的界定都可能面临新压力。",
         "entities": [
-          "Ai代理",
+          "Ai Agent",
           "Bloomberg",
           "Bybit",
           "Polymarket"
@@ -243,6 +316,39 @@
         "published_at": "2026-05-02T05:58:58.936389",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260501/p19#a260501p19",
+        "event_id": null,
+        "original_content": "Emily Nicolle / Bloomberg : Some retail traders are training AI agents to buy and sell assets on their behalf, as exchanges like Polymarket and Bybit roll out agent-friendly interfaces — Jake Nesler's AI trading bot got one big decision right in its first week. It ignored the chase.",
+        "grade": "A+",
+        "extension": "当交易平台主动为代理优化接口，AI 自动下单可能从小众实验走向更普遍的散户工具，后续会牵动合规、风控、责任归属以及新一轮量化零售化竞争。"
+      },
+      {
+        "id": "6149a9474000e3c20b39a975e3e9a20a",
+        "title": "SpaceX火箭残骸或将意外撞月，天文软件开发者发出预警",
+        "chinese_title": "SpaceX火箭残骸或将意外撞月，天文软件开发者发出预警",
+        "original_title": "SpaceX rocket set for unintentional Moon landing – well, a piece of it anyway",
+        "summary": "The Register报道称，一名天文代码开发者追踪发现，SpaceX一段火箭残骸可能以高速意外撞上月球，再次引出商业航天遗留物管理和深空轨道监测问题。",
+        "rating": "B",
+        "score": 69,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "若预测得到进一步验证，商业航天公司在轨残骸追踪、月球任务责任划分和深空环境治理都可能被重新讨论。",
+        "entities": [
+          "Moon",
+          "SpaceX",
+          "商业航天",
+          "轨道碎片"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.theregister.com/2026/05/01/spacex_debris_landing/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777672738,
+        "published_at": "2026-05-02T05:58:58.935802",
+        "source": "Hacker News",
+        "url": "https://www.theregister.com/2026/05/01/spacex_debris_landing/",
         "event_id": null
       },
       {
@@ -614,36 +720,6 @@
       }
     ],
     "2026-05-01": [
-      {
-        "id": "6149a9474000e3c20b39a975e3e9a20a",
-        "title": "SpaceX火箭残骸或将意外撞月，天文软件开发者发出预警",
-        "chinese_title": "SpaceX火箭残骸或将意外撞月，天文软件开发者发出预警",
-        "original_title": "SpaceX rocket set for unintentional Moon landing – well, a piece of it anyway",
-        "summary": "The Register报道称，一名天文代码开发者追踪发现，SpaceX一段火箭残骸可能以高速意外撞上月球，再次引出商业航天遗留物管理和深空轨道监测问题。",
-        "rating": "B",
-        "score": 69,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "若预测得到进一步验证，商业航天公司在轨残骸追踪、月球任务责任划分和深空环境治理都可能被重新讨论。",
-        "entities": [
-          "Moon",
-          "SpaceX",
-          "商业航天",
-          "轨道碎片"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.theregister.com/2026/05/01/spacex_debris_landing/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777672738,
-        "published_at": "2026-05-02T05:58:58.935802",
-        "source": "Hacker News",
-        "url": "https://www.theregister.com/2026/05/01/spacex_debris_landing/",
-        "event_id": null
-      },
       {
         "id": "641973d735e70a09a708da8d5fdf1d16",
         "title": "美国高校教师焦虑高企，医疗学科群体承压最重",
@@ -16717,6 +16793,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-02T05:59:24.885345",
-  "total_news": 537
+  "last_updated": "2026-05-02T06:00:22.676512",
+  "total_news": 539
 }

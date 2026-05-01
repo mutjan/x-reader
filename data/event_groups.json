@@ -171,9 +171,9 @@
   },
   {
     "group_id": "4d4535a3",
-    "event_title": "OX审计警告20万MCP服务暴露命令执行缺陷，Anthropic称属设计特性",
-    "first_seen_at": "2026-05-02T04:35:46",
-    "last_seen_at": "2026-05-02T04:35:46",
+    "event_title": "MCP默认STDIO曝命令执行隐患，20万代理服务器受波及",
+    "first_seen_at": "2026-05-02T05:58:58.935898",
+    "last_seen_at": "2026-05-02T05:58:58.935898",
     "news_ids": [
       "107e9ac3d8c34a48f88cab7fcdfcf156"
     ],
@@ -181,10 +181,10 @@
     "max_grade": "S",
     "entities": [
       "Anthropic",
-      "DeepMind",
       "MCP",
       "OpenAI",
-      "Ox Security"
+      "Ox Security",
+      "Windsurf"
     ]
   },
   {
@@ -874,24 +874,6 @@
       "Cto",
       "Cursor",
       "Uber"
-    ]
-  },
-  {
-    "group_id": "2c0b2569",
-    "event_title": "OpenAI放出演示：Codex几步接入日历邮件和文档，切向团队协作",
-    "first_seen_at": "2026-05-02T03:09:30",
-    "last_seen_at": "2026-05-02T03:09:30",
-    "news_ids": [
-      "a16dd0a07cd0d6d1e47ca7a971bb78ee"
-    ],
-    "max_score": 95,
-    "max_grade": "S",
-    "entities": [
-      "Codex",
-      "Google Calendar",
-      "Notion",
-      "OpenAI",
-      "Slack"
     ]
   },
   {
@@ -1733,8 +1715,8 @@
   {
     "group_id": "5d546515",
     "event_title": "AI芯片独角兽Cerebras冲刺IPO，拟募资40亿美元估值400亿",
-    "first_seen_at": "2026-05-02T05:10:00",
-    "last_seen_at": "2026-05-02T05:10:00",
+    "first_seen_at": "2026-05-02T05:58:58.935448",
+    "last_seen_at": "2026-05-02T05:58:58.935448",
     "news_ids": [
       "8a5e05b2c807baea2591a9145d30a191"
     ],
@@ -2004,6 +1986,24 @@
       "Hyperresearch",
       "NVIDIA",
       "OpenAI"
+    ]
+  },
+  {
+    "group_id": "da46c599",
+    "event_title": "OpenAI关联资金被曝投放网红内容，借中国议题为美国AI造势",
+    "first_seen_at": "2026-05-02T05:58:58.935994",
+    "last_seen_at": "2026-05-02T05:58:58.935994",
+    "news_ids": [
+      "63459efd6a64db19f69037a0edb04063"
+    ],
+    "max_score": 90,
+    "max_grade": "A+",
+    "entities": [
+      "Andreessen Horowitz",
+      "Build American Ai",
+      "ByteDance",
+      "OpenAI",
+      "Palantir"
     ]
   },
   {
@@ -2297,6 +2297,24 @@
     ]
   },
   {
+    "group_id": "2c0b2569",
+    "event_title": "OpenAI演示Codex接入办公应用，几步导入团队工作上下文",
+    "first_seen_at": "2026-05-02T05:58:58.936294",
+    "last_seen_at": "2026-05-02T05:58:58.936294",
+    "news_ids": [
+      "a16dd0a07cd0d6d1e47ca7a971bb78ee"
+    ],
+    "max_score": 88,
+    "max_grade": "A+",
+    "entities": [
+      "Codex",
+      "Figma",
+      "Notion",
+      "OpenAI",
+      "Slack"
+    ]
+  },
+  {
     "group_id": "38304ba6",
     "event_title": "OpenAI\"哥布林问题\"引爆讨论，模型人格边界再被翻出",
     "first_seen_at": "2026-05-01T04:59:42.036490",
@@ -2573,6 +2591,24 @@
     ]
   },
   {
+    "group_id": "e92d304c",
+    "event_title": "五眼国家联合发布代理式AI安全指引，警告权限放得太宽",
+    "first_seen_at": "2026-05-02T03:30:01",
+    "last_seen_at": "2026-05-02T03:30:01",
+    "news_ids": [
+      "381154cb7315f067b4b39aff65312716"
+    ],
+    "max_score": 88,
+    "max_grade": "A+",
+    "entities": [
+      "Australia",
+      "Canada",
+      "New Zealand",
+      "United Kingdom",
+      "United States"
+    ]
+  },
+  {
     "group_id": "3deaa54b",
     "event_title": "Sam Altman为停封ChatGPT账户后未报警致歉",
     "first_seen_at": "2026-04-25T07:06:14.685515",
@@ -2790,35 +2826,17 @@
     ]
   },
   {
-    "group_id": "da46c599",
-    "event_title": "黑金游说渗入AI舆论场：亲OpenAI资本资助网红渲染中国威胁",
-    "first_seen_at": "2026-05-02T04:25:28",
-    "last_seen_at": "2026-05-02T04:25:28",
-    "news_ids": [
-      "63459efd6a64db19f69037a0edb04063"
-    ],
-    "max_score": 87,
-    "max_grade": "A+",
-    "entities": [
-      "Build American Ai",
-      "ByteDance",
-      "OpenAI",
-      "Palantir",
-      "中国Ai"
-    ]
-  },
-  {
     "group_id": "fbf5c7b2",
-    "event_title": "散户开始训练AI代理替自己交易，Polymarket和Bybit顺势开放接口",
-    "first_seen_at": "2026-05-02T03:35:04",
-    "last_seen_at": "2026-05-02T03:35:04",
+    "event_title": "散户开始训练AI代理替自己下单，预测市场和交易所跟进开放接口",
+    "first_seen_at": "2026-05-02T05:58:58.936389",
+    "last_seen_at": "2026-05-02T05:58:58.936389",
     "news_ids": [
       "90f60d190928c7f4223a0cd824b37fd1"
     ],
     "max_score": 87,
     "max_grade": "A+",
     "entities": [
-      "Ai代理",
+      "Ai Agent",
       "Bloomberg",
       "Bybit",
       "Polymarket"
@@ -4322,8 +4340,8 @@
   {
     "group_id": "49832aff",
     "event_title": "Salesforce推Agentforce Operations，给企业AI工作流补控制层",
-    "first_seen_at": "2026-05-02T05:14:29",
-    "last_seen_at": "2026-05-02T05:14:29",
+    "first_seen_at": "2026-05-02T05:58:58.935591",
+    "last_seen_at": "2026-05-02T05:58:58.935591",
     "news_ids": [
       "80bfdcfd217810e7eb273e389d9b1487"
     ],
@@ -6032,19 +6050,19 @@
   },
   {
     "group_id": "7bd615c5",
-    "event_title": "Claude Code占卜技能Destiny开源，用命理引擎做个性化运势",
-    "first_seen_at": "2026-05-02T03:56:18",
-    "last_seen_at": "2026-05-02T03:56:18",
+    "event_title": "Claude Code冒出命理插件，算命流程做成可安装技能",
+    "first_seen_at": "2026-05-02T05:58:58.936088",
+    "last_seen_at": "2026-05-02T05:58:58.936088",
     "news_ids": [
       "a2f224ac652668485852984deab72604"
     ],
     "max_score": 76,
     "max_grade": "A",
     "entities": [
-      "Claude",
       "Claude Code",
       "Destiny",
-      "Github"
+      "Github",
+      "Lunar-Python"
     ]
   },
   {
@@ -7103,8 +7121,8 @@
   {
     "group_id": "4e778683",
     "event_title": "SpaceX火箭残骸或将意外撞月，天文软件开发者发出预警",
-    "first_seen_at": "2026-05-01T19:31:52",
-    "last_seen_at": "2026-05-01T19:31:52",
+    "first_seen_at": "2026-05-02T05:58:58.935802",
+    "last_seen_at": "2026-05-02T05:58:58.935802",
     "news_ids": [
       "6149a9474000e3c20b39a975e3e9a20a"
     ],
@@ -7233,6 +7251,23 @@
       "Apple Silicon",
       "Mac",
       "Virtualisation"
+    ]
+  },
+  {
+    "group_id": "e1bace6e",
+    "event_title": "乌军用地面机器人救出七旬老人，战场无人系统再扩边界",
+    "first_seen_at": "2026-05-02T04:01:00",
+    "last_seen_at": "2026-05-02T04:01:00",
+    "news_ids": [
+      "2dbd7bbb50a6cccf58a9140f60067202"
+    ],
+    "max_score": 68,
+    "max_grade": "B",
+    "entities": [
+      "Bbc",
+      "Drone",
+      "Ugv",
+      "Ukraine"
     ]
   },
   {
@@ -7409,8 +7444,8 @@
   {
     "group_id": "ca7aeefe",
     "event_title": "Wired揭露美国AI舆论操盘：OpenAI等资本间接资助反华宣传",
-    "first_seen_at": "2026-05-02T05:05:03",
-    "last_seen_at": "2026-05-02T05:05:03",
+    "first_seen_at": "2026-05-02T05:58:58.935704",
+    "last_seen_at": "2026-05-02T05:58:58.935704",
     "news_ids": [
       "246245a58142f1b0225a99ff86a94be8"
     ],
