@@ -2,18 +2,48 @@
   "news": {
     "2026-05-01": [
       {
+        "id": "f58bddafd964e0b6381b6c009a871ec7",
+        "title": "Mistral推统一旗舰模型：聊天推理写码三合一",
+        "chinese_title": "Mistral推统一旗舰模型：聊天推理写码三合一",
+        "original_title": "Mistral's new flagship Medium 3.5 folds chat, reasoning, and code into one model",
+        "summary": "Mistral发布新旗舰模型Medium 3.5，把聊天、推理和代码能力整合进单一产品，同时为Vibe加入异步云端代理，并给Le Chat补上代理模式，明显在和OpenAI、Anthropic争夺企业级一体化入口。",
+        "rating": "A+",
+        "score": 88,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "一体化模型路线如果跑通，会推动企业从多模型编排转向单模型平台采购，也会迫使欧洲AI公司在代理工作流上更快跟进北美头部厂商。",
+        "entities": [
+          "Le Chat",
+          "Medium",
+          "Mistral",
+          "Vibe"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER (mistral)",
+            "url": "https://the-decoder.com/mistrals-new-flagship-medium-3-5-folds-chat-reasoning-and-code-into-one-model/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777626259,
+        "published_at": "2026-05-01T17:04:19.143727",
+        "source": "THE DECODER (mistral)",
+        "url": "https://the-decoder.com/mistrals-new-flagship-medium-3-5-folds-chat-reasoning-and-code-into-one-model/",
+        "event_id": null
+      },
+      {
         "id": "3c6a87391f48ecdb335aceed6da843e9",
-        "title": "Grok 4.3降本增智但幻觉上升，社区热议取舍",
-        "chinese_title": "Grok 4.3降本增智但幻觉上升，社区热议取舍",
+        "title": "Grok 4.3被曝降本提智，但幻觉率略有回升",
+        "chinese_title": "Grok 4.3被曝降本提智，但幻觉率略有回升",
         "original_title": "Grok 4.3 achieves higher overall intelligence over 4.20 with less of a cost, at the price of slightly higher hallucination rate.",
-        "summary": "Reddit社区讨论称，xAI新版本Grok 4.3相比4.20在整体智能表现和成本效率上更优，但代价是幻觉率略有上升，折射出前沿模型仍在性能、成本与可靠性之间拉扯。",
+        "summary": "社区用户比较称，Grok 4.3 相比 4.20 在整体智能表现和成本效率上都有提升，但代价是幻觉率略微上升，折射出大模型厂商仍在性能、可靠性和推理成本之间做动态取舍。",
         "rating": "A",
         "score": 80,
-        "type": "product",
+        "type": "research",
         "typeName": "产品发布",
         "expansion": "如果这一趋势属实，后续值得追踪开发者是否愿意为更低成本接受更高幻觉，以及这会不会迫使竞品重新平衡模型默认配置。",
         "entities": [
-          "Api",
+          "Ai Benchmark",
           "Grok",
           "xAI"
         ],
@@ -28,23 +58,27 @@
         "published_at": "2026-05-01T16:20:43.624259",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1t0m9yt/grok_43_achieves_higher_overall_intelligence_over/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "submitted by /u/Profanion [link] [comments]",
+        "grade": "A",
+        "extension": "如果更多第三方实测支持这一趋势，行业会更关注模型能力提升是否依赖容忍更高错误率，这将直接影响企业对高性价比模型的上线策略和评测体系。"
       },
       {
         "id": "6d70a74091d87acb9baf969be0204f2f",
-        "title": "Anthropic产品负责人称AI把功能迭代周期压到一天",
-        "chinese_title": "Anthropic产品负责人称AI把功能迭代周期压到一天",
+        "title": "Anthropic产品负责人称AI把功能上线周期压到一天",
+        "chinese_title": "Anthropic产品负责人称AI把功能上线周期压到一天",
         "original_title": "Anthropic's Head of Product: Anthropic's Head of Product (summary here), she is stating that &quot;The timelines for a lot of our product features have gone down from six month to one month and sometimes to even one day&quot;",
-        "summary": "Anthropic产品负责人在播客中表示，团队不少产品功能的开发周期已从半年缩短到一个月甚至一天，引发社区对AI是否真的显著压缩软件研发流程的讨论。",
+        "summary": "Anthropic产品负责人在播客中表示，很多产品功能的开发周期已从六个月缩短到一个月，甚至一天，引发社区对AI是否真能系统性压缩软件产品迭代周期的讨论。",
         "rating": "A",
-        "score": 79,
+        "score": 82,
         "type": "opinion",
         "typeName": "观点访谈",
         "expansion": "这类表态若被更多公司复现，可能推动外界重新评估AI对产品组织结构、评审流程和交付节奏的改造深度。",
         "entities": [
-          "Ai",
+          "Ai First",
           "Anthropic",
-          "Lenny'S Podcast"
+          "Lenny'S Podcast",
+          "Software Development"
         ],
         "sourceLinks": [
           {
@@ -57,14 +91,17 @@
         "published_at": "2026-05-01T16:20:43.624394",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1t0e97a/anthropics_head_of_product_anthropics_head_of/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "In the recent episode of Lenny's Podcast with Anthropic's Head of Product ( summary here ), she is stating that \"The timelines for a lot of our product features have gone down from six month to one month and sometimes to even one day\". Are you experiencing this at your work or is this just marketing? At my work we try to be as AI first as possible (software), but still things take at best half the time they used to. As we still have all the processes (reviews, QA etc.) submitted by /u/Mogante [link] [comments]",
+        "grade": "A",
+        "extension": "如果这类说法被更多团队验证，软件组织的流程设计、QA分工和管理节奏都可能被重构；如果只是头部公司特例，也会反向暴露AI提效落地的组织门槛。"
       },
       {
         "id": "cd3c5a7a9c68301f87878c41ac19fbd3",
-        "title": "Grok 4.3上线API，xAI模型迭代继续提速",
-        "chinese_title": "Grok 4.3上线API，xAI模型迭代继续提速",
+        "title": "Grok 4.3正式接入API，xAI加速开发者开放",
+        "chinese_title": "Grok 4.3正式接入API，xAI加速开发者开放",
         "original_title": "Grok 4.3 is out in the API",
-        "summary": "社区消息显示，Grok 4.3已经正式出现在API中，意味着xAI正把最新模型能力更快开放给开发者侧使用和集成。",
+        "summary": "社区截图显示，Grok 4.3 已经上线 API，这意味着 xAI 正把最新模型更快推向开发者生态，后续价格、上下文长度和调用稳定性会成为其与主流大模型平台竞争的关键。",
         "rating": "A",
         "score": 81,
         "type": "product",
@@ -86,7 +123,10 @@
         "published_at": "2026-05-01T16:20:43.624512",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1t0bdh3/grok_43_is_out_in_the_api/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "https://preview.redd.it/gkngtmduneyg1.png?width=1062&amp;format=png&amp;auto=webp&amp;s=84a113ed41670014d0498b5019a21eee5f92b486 submitted by /u/WhyLifeIs4 [link] [comments]",
+        "grade": "A",
+        "extension": "一旦API能力稳定开放，Grok将从C端话题模型进一步转向可集成基础设施，开发者采用率和价格体系会成为判断xAI平台化进展的核心观察点。"
       },
       {
         "id": "e98000cca033d582351bb04ae82ca87a",
@@ -17814,6 +17854,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-01T16:21:03.932149",
-  "total_news": 578
+  "last_updated": "2026-05-01T17:04:36.526598",
+  "total_news": 579
 }
