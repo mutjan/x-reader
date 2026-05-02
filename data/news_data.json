@@ -2,6 +2,99 @@
   "news": {
     "2026-05-02": [
       {
+        "id": "073358db47a213901c02e93abb170cc1",
+        "title": "ARC-AGI-3测试暴露智能体工具差距",
+        "chinese_title": "ARC-AGI-3测试暴露智能体工具差距",
+        "original_title": "LLMs do fine on ARC-AGI-3 if they are allowed to search over game logs",
+        "summary": "有开发者复现实验称，若让LLM保存游戏日志并借助工具搜索行动轨迹，模型在ARC-AGI-3游戏任务上的效率可接近人类，提示评测方式会显著影响结果。",
+        "rating": "S",
+        "score": 92,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这会引发对AI评测边界的讨论：单模型能力、工具增强智能体和搜索策略应如何区分，可能影响ARC类基准的解读。",
+        "entities": [
+          "Arc-Agi",
+          "Hill-Climbing",
+          "LLM",
+          "工具调用",
+          "智能体"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t1sh8h/llms_do_fine_on_arcagi3_if_they_are_allowed_to/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777743921,
+        "published_at": "2026-05-03T01:45:21.701288",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t1sh8h/llms_do_fine_on_arcagi3_if_they_are_allowed_to/",
+        "event_id": null
+      },
+      {
+        "id": "4faf3982178a1c0131cb03e606f43fc2",
+        "title": "GPT-5.5登顶Kaggle私有引用基准",
+        "chinese_title": "GPT-5.5登顶Kaggle私有引用基准",
+        "original_title": "GPT 5.5 tops private citation benchmark on Kaggle (AbstractToTitle task)",
+        "summary": "一项Kaggle私有任务显示，GPT-5.5在仅凭论文摘要还原真实标题的测试中领先，被视为模型科学文献记忆与归因能力的一个代理指标。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若结果可靠，可延伸到大模型在科研助手、文献检索和事实归因上的能力评估，但需注意私有基准样本与泄漏风险。",
+        "entities": [
+          "Abstracttotitle",
+          "GPT",
+          "Kaggle",
+          "引用归因",
+          "科学文献"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t1qqto/gpt_55_tops_private_citation_benchmark_on_kaggle/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777743921,
+        "published_at": "2026-05-03T01:45:21.701385",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t1qqto/gpt_55_tops_private_citation_benchmark_on_kaggle/",
+        "event_id": null
+      },
+      {
+        "id": "3b734b7d327ef0f572d7c7e2414838ba",
+        "title": "Anthropic洽购英国Fractile推理芯片",
+        "chinese_title": "Anthropic洽购英国Fractile推理芯片",
+        "original_title": "Sources: Anthropic is in early talks to buy AI inference chips from UK-based Fractile when they become available in 2027 (The Information)",
+        "summary": "消息称Anthropic正初步洽谈采购英国初创公司Fractile计划于2027年推出的AI推理芯片，以缓解业务增长带来的算力供应压力。",
+        "rating": "S",
+        "score": 92,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可延伸到AI大厂自建或多元化芯片供应链、英伟达替代方案、云厂商绑定关系以及推理成本竞争。",
+        "entities": [
+          "Ai推理芯片",
+          "Anthropic",
+          "Fractile",
+          "Google",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260502/p6#a260502p6"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777743921,
+        "published_at": "2026-05-03T01:45:21.701736",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260502/p6#a260502p6",
+        "event_id": null
+      },
+      {
         "id": "548a41f84f274cca36f5675c220c8a4a",
         "title": "纽约AI高中计划遭家长反对搁置",
         "chinese_title": "纽约AI高中计划遭家长反对搁置",
@@ -135,20 +228,21 @@
       },
       {
         "id": "3d89c8e027c0e5bbff48f45ae30408da",
-        "title": "RTX 5060当副卡能否复活PhysX双卡玩法",
-        "chinese_title": "RTX 5060当副卡能否复活PhysX双卡玩法",
-        "original_title": "Supercharging the RTX 5090 in PhysX games using an RTX 5060 as a  secondary GPU — SLI may be dead, but how much can dual GPUs boost performance in classic PhysX titles?",
-        "summary": "Tom's Hardware测试用RTX 5060作为RTX 5090副卡运行经典PhysX游戏，观察在SLI退场后，独立物理加速卡对老游戏性能是否仍有实际提升。",
+        "title": "RTX 5090搭配5060重测PhysX老游戏",
+        "chinese_title": "RTX 5090搭配5060重测PhysX老游戏",
+        "original_title": "We tested supercharging the RTX 5090 in PhysX games using an RTX 5060 as a  secondary GPU — SLI may be dead, but how much can dual GPUs boost performance in classic PhysX titles?",
+        "summary": "Tom's Hardware测试用RTX 5060作为副卡为RTX 5090分担经典PhysX游戏负载，验证双GPU在旧游戏特效中的性能增益。",
         "rating": "B",
-        "score": 72,
+        "score": 71,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "可作为显卡性能报道的长尾角度，观察新一代GPU与旧游戏特性的兼容价值，以及双卡玩法在小众玩家中的回潮空间。",
         "entities": [
+          "Batman Arkham",
+          "Gpu",
           "NVIDIA",
           "Physx",
-          "Rtx 5060",
-          "Rtx 5090"
+          "Rtx"
         ],
         "sourceLinks": [
           {
@@ -164,7 +258,7 @@
         "event_id": null,
         "original_content": "We're testing the impact of using a dedicated secondary RTX 5060 GPU to boost the performance of an RTX 5090 in a few classic Batman Arkham titles that support 32-bit PhysX.",
         "grade": "B",
-        "extension": "可延伸到NVIDIA旧技术生态的长尾价值、玩家硬件复用需求，以及新旧GPU协同在游戏和专业负载中的边界。"
+        "extension": "可作为GPU玩家和硬件评测的趣味选题，延伸到旧技术生态复用，但对当下AI或主流图形架构影响有限。"
       },
       {
         "id": "7a31249d84bb6800556b3f12e88abb33",
@@ -16709,232 +16803,104 @@
         "original_content": "submitted by /u/pier4r [link] [comments]",
         "grade": "B",
         "extension": "若原文实验链路被补齐，这类逆向测试可能引发开发者重新评估大模型宣传参数与真实可用边界，也会推动更多第三方基准和上下文压力测试。"
-      },
+      }
+    ],
+    "2026-05-03": [
       {
-        "id": "470bcf75c494f8962a6c0cb3a495d567",
-        "title": "英特尔传砍掉Xe3P独显计划，Arc游戏GPU前景再起疑云",
-        "chinese_title": "英特尔传砍掉Xe3P独显计划，Arc游戏GPU前景再起疑云",
-        "original_title": "Intel has reportedly cancelled discrete gaming GPUs for the upcoming Xe3P Arc \"Celestial\" family &mdash; gaming GPU remains uncertain even for the next-gen Xe4 \"Druid\" lineup that lands in 2027",
-        "summary": "最新爆料称，英特尔或已取消Xe3P Celestial系列独立游戏显卡，并把后续图形IP重心转向数据中心、工作站和移动端，这让Arc产品线在消费级GPU市场的持续性再度承压。",
-        "rating": "B",
-        "score": 73,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "接下来可观察英特尔是否正式收缩消费级显卡路线，以及这一调整会否进一步巩固英伟达和AMD在游戏GPU与AI图形算力市场的双重优势。",
-        "entities": [
-          "Arc",
-          "Intel",
-          "Xe3P",
-          "Xe4"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/pc-components/gpus/intel-has-reportedly-killed-discrete-gaming-gpus-for-the-upcoming-xe3p-arc-celestial-family-gaming-gpu-remains-uncertain-even-for-the-next-gen-xe4-druid-lineup-that-lands-in-2027"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777138012,
-        "published_at": "2026-04-26T01:26:52.618597",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/pc-components/gpus/intel-has-reportedly-killed-discrete-gaming-gpus-for-the-upcoming-xe3p-arc-celestial-family-gaming-gpu-remains-uncertain-even-for-the-next-gen-xe4-druid-lineup-that-lands-in-2027",
-        "event_id": null
-      },
-      {
-        "id": "c7e2d1642dfdecacc0f28f91f5d4f534",
-        "title": "斯坦福暗流：风投提前围猎18岁创业苗子",
-        "chinese_title": "斯坦福暗流：风投提前围猎18岁创业苗子",
-        "original_title": "A look at \"Stanford inside Stanford\", where VCs pursue 18- and 19-year-old students, offering mentorship and funding in a bid to convert promise into profit (Theo Baker/The Atlantic)",
-        "summary": "The Atlantic 报道称，硅谷风投正把触角伸向斯坦福18、19岁的学生，通过导师关系、饭局和资金承诺更早锁定潜在创业者，把校园变成下一轮AI与科技项目的前哨战场。",
+        "id": "561a78b43c8484c3a5b5d85e84778588",
+        "title": "AI创业公司豪租纽约办公室引争议",
+        "chinese_title": "AI创业公司豪租纽约办公室引争议",
+        "original_title": "There’s Something Bizarre About the Offices of AI Startups",
+        "summary": "报道关注一批AI创业公司在商业模式尚未验证时租下纽约高端办公室，以实体空间包装增长叙事，折射融资热潮下的形象竞争。",
         "rating": "A",
-        "score": 82,
-        "type": "funding",
+        "score": 76,
+        "type": "industry",
         "typeName": "行业动态",
-        "expansion": "这件事可继续延伸到名校创业生态、青年创始人估值泡沫，以及风投前置布局是否会进一步改变高校科研和创业路径。",
+        "expansion": "可延伸观察AI创业泡沫、办公地产需求和投资人信号之间的关系，也能对比上一轮互联网创业的门面经济。",
         "entities": [
-          "Stanford University",
-          "The Atlantic",
-          "Theo Baker",
-          "Venture Capital"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260425/p11#a260425p11"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777138012,
-        "published_at": "2026-04-26T01:26:52.618185",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260425/p11#a260425p11",
-        "event_id": null,
-        "original_content": "Theo Baker / The Atlantic : A look at “Stanford inside Stanford”, where VCs pursue 18- and 19-year-old students, offering mentorship and funding in a bid to convert promise into profit — Silicon Valley venture capitalists are wining and dining 18-year-olds. — When i was a freshman at Stanford University …",
-        "grade": "A",
-        "extension": "这一趋势若持续，可能重塑顶尖校园的人才流向与创业节奏，也会让外界重新审视AI创业早期资本介入是否正在压缩学术探索空间。"
-      },
-      {
-        "id": "c5b4e543c81a2923cd187396d85cc7a3",
-        "title": "NASA计划首次在月球点火验证燃烧风险",
-        "chinese_title": "NASA计划首次在月球点火验证燃烧风险",
-        "original_title": "NASA Planning to Set First-Ever Fire on the Surface of the Moon",
-        "summary": "NASA 计划在月球表面开展首次材料燃烧实验，测试低重力和富氧环境下火焰传播特性，为未来月面基地和载人深空任务评估舱内失火与材料安全边界提供关键数据。",
-        "rating": "A",
-        "score": 79,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "后续值得追踪月面居住舱材料标准、火灾响应设计以及这类安全实验如何影响阿尔忒弥斯计划和火星长期驻留方案。",
-        "entities": [
-          "Fm2",
-          "Moon",
-          "Nasa",
-          "Northrop Grumman"
+          "Ai创业公司",
+          "Jll",
+          "办公地产",
+          "纽约",
+          "融资热潮"
         ],
         "sourceLinks": [
           {
             "name": "Futurism",
-            "url": "https://futurism.com/future-society/nasa-starting-first-fire-moon"
+            "url": "https://futurism.com/artificial-intelligence/ai-startup-offices-nyc"
           }
         ],
         "sources": 1,
-        "timestamp": 1777138012,
-        "published_at": "2026-04-26T01:26:52.618319",
+        "timestamp": 1777743921,
+        "published_at": "2026-05-03T01:45:21.701473",
         "source": "Futurism",
-        "url": "https://futurism.com/future-society/nasa-starting-first-fire-moon",
-        "event_id": null,
-        "original_content": "NASA scientists have long been fascinated by how fire behaves in the microgravity of space . They’ve even lit small controlled flames inside Northrop Grumman Cygnus spacecraft to study various flame retardant materials and how fire can spread in the absence of Earth’s gravity. Now, they’re looking to take the potentially lifesaving research a step further. In anticipation of the space agency’s eventual establishment of a permanent presence on the Moon, scientists at NASA revealed plans to test the flammability of materials on the lunar surface, as detailed in a document presented at a recent planetary science conference that was spotted by Universe Today . As part of an experiment appropriately dubbed Flammability of Materials on the Moon (FM2), the researchers are looking to challenge a standardized test, known as NASA-STD-6001B , which involves holding a six-inch flame to a material to evaluate its safety. If it burns more than six inches up or drips burning debris, it fails the test. The standard is required for the “evaluation, testing, and selection of materials that are intended for use in space vehicles and associated Ground Support Equipment,” according to NASA. But there’s one glaring problem, as the scientists point out in their latest mission outline: the test is “conducted in normal Earth gravity, with the assumption that if a material passes the 1G test, then it is considered safe for spaceflight.” However, the partial gravity on the lunar surface could throw our understanding of fire for a loop once again — a crucial question scientists are racing to understand, as an open fire inside a lunar habitat, let alone the tight confines of a spacecraft , could easily prove disastrous . The scientists suggest that a “material that is marginally non-flammable on Earth” may be “flammable at a lower gravity level.” That’s because a natural phenomenon called blowoff, which is caused by the circular reintroduction of fresh oxygen to sustain the flame sputtering out on Earth, may slow down in partial gravity. In other words, the chemical reactions of the flame may be able to “keep up” in a lunar environment, making a material more flammable there than it is on Earth. Previous research involving drop towers — essentially letting payloads go from a tower to simulate the effects of weightlessness — and sounding rockets, which are suborbital research vehicles that carry scientific instruments high into the atmosphere, have shown that some partial gravity environments are “expected to increase the flammability limits for some materials,” the researchers noted. That’s not to mention the oxygen-enriched environments future space explorers on the Moon or Mars may live in, a mix that may help astronauts to breathe, but could help feed fires as well. To study the phenomenon first-hand — and over a longer period than during a drop tower or sounding rocket test — the researcher propose burning four sold fuel samples inside small, habitable atmospheres on the Moon, with a “planned launch date of late 2026.” Cameras, radiometers, and an oxygen sensor will measure how the fire behaves. “The tests will provide benchmark data and are part of the larger effort to understand how lunar gravity will affect material flammability,” the researchers noted. Until we have the chance to establish an extensive presence on the Moon, the scientists argue that a “limited series of tests would enable a comparison between fires on the Moon and Earth.” The results of the experiment could prove critical for the safety of future space explorers, who may not have the option to evacuate their lunar habitat shelter Moon in case of a fire. Besides, it certainly wouldn’t bode well if it turned out their clothing were to be made out of a material that may not be flammable on Earth — but is on the Moon. More on space fires: NASA Experiment With Fire in Space Ends When Entire Spacecraft Burns Up The post NASA Planning to Set First-Ever Fire on the Surface of the Moon appeared first on Futurism .",
-        "grade": "A",
-        "extension": "如果实验推进顺利，后续报道可连接月球基地材料标准、舱内生命保障系统设计，以及火灾安全规范如何反向影响商业航天供应链。"
-      },
-      {
-        "id": "12aa940facb772579b91359b90fdb766",
-        "title": "气候科技IPO窗口松动 核能与地热先试水",
-        "chinese_title": "气候科技IPO窗口松动 核能与地热先试水",
-        "original_title": "The climate tech IPO window could finally be cracking open",
-        "summary": "随着核能初创 X-energy 已完成上市、地热公司 Fervo 也接近资本市场，长期沉寂的气候科技IPO通道出现回暖迹象，投资人开始重新评估清洁能源赛道的退出前景。",
-        "rating": "A",
-        "score": 77,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "这一趋势可能带动一级市场估值修复，并推动更多核能、地热和数据中心相关基础设施企业加速冲刺IPO或新一轮融资。",
-        "entities": [
-          "Climate Tech",
-          "Fervo",
-          "Ipo",
-          "X-Energy"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/04/25/the-climate-tech-ipo-window-could-finally-be-cracking-open/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777138012,
-        "published_at": "2026-04-26T01:26:52.618444",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/25/the-climate-tech-ipo-window-could-finally-be-cracking-open/",
-        "event_id": null,
-        "original_content": "Nuclear startup X-energy went public, geothermal startup Fervo is about to. Could this be the moment that climate tech investors have been waiting for?",
-        "grade": "A",
-        "extension": "后续可观察这波上市窗口能否带动更多气候科技公司融资回暖，并影响核能、地热等重资产能源路线在一级市场的估值体系。"
-      }
-    ],
-    "2026-04-25": [
-      {
-        "id": "2469b5426c7f4abf0fda57df3d2edbba",
-        "title": "美联储研究：ChatGPT后美国程序员岗位增速近乎腰斩",
-        "chinese_title": "美联储研究：ChatGPT后美国程序员岗位增速近乎腰斩",
-        "original_title": "US programmer job growth nearly halved since ChatGPT launched, Fed study finds",
-        "summary": "美联储董事会研究发现，生成式AI落地后，美国程序员岗位增速明显放缓，说明大模型对软件开发岗位结构与招聘节奏的冲击，已开始从讨论层面传导到真实就业数据。",
-        "rating": "A",
-        "score": 86,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可继续追踪AI对开发者招聘、薪资结构与初级岗位需求的重塑，并对比不同技术工种受冲击程度。",
-        "entities": [
-          "Federal Reserve",
-          "GPT",
-          "Generative Ai",
-          "Programmers"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/us-programmer-job-growth-nearly-halved-since-chatgpt-launched-fed-study-finds/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777122325,
-        "published_at": "2026-04-25T21:05:25.615364",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/us-programmer-job-growth-nearly-halved-since-chatgpt-launched-fed-study-finds/",
+        "url": "https://futurism.com/artificial-intelligence/ai-startup-offices-nyc",
         "event_id": null
       },
       {
-        "id": "421374e03e6b347d1551715f5aa05135",
-        "title": "AI芯片狂飙改写全球股市：台湾总市值超越英国",
-        "chinese_title": "AI芯片狂飙改写全球股市：台湾总市值超越英国",
-        "original_title": "Analysis: Taiwan's stock market value has surpassed the UK's at ~$4.3T, with South Korea close behind, driven by massive gains in TSMC, Samsung, and SK Hynix (Bloomberg)",
-        "summary": "彭博分析称，受台积电、三星和SK海力士等AI链条龙头大涨带动，台湾股市总市值已升至约4.3万亿美元并超过英国，AI繁荣正在重排全球资本市场版图。",
-        "rating": "A+",
-        "score": 88,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可延伸到AI算力产业链如何改写国家资本市场权重，并观察半导体繁荣对韩国、日本与欧洲科技资产估值的外溢影响。",
+        "id": "a53d56a6464c98e7d4b039f6e927d749",
+        "title": "非洲支付平台OPay筹备赴美IPO",
+        "chinese_title": "非洲支付平台OPay筹备赴美IPO",
+        "original_title": "Sources: Nigerian mobile payments service OPay is preparing for a US IPO at a $4B valuation with Citigroup, Deutsche Bank, and JPMorgan Chase advising (Bloomberg)",
+        "summary": "消息称尼日利亚移动支付服务OPay正与花旗、德银和摩根大通合作，准备以约40亿美元估值赴美上市，凸显新兴市场金融科技资产仍受关注。",
+        "rating": "A",
+        "score": 80,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延伸追踪非洲金融科技上市窗口、跨境支付竞争和中国背景资本在新兴市场的退出路径。",
         "entities": [
-          "Ai",
-          "Bloomberg",
-          "Samsung",
-          "Sk Hynix",
-          "TSMC"
+          "Citigroup",
+          "Deutsche Bank",
+          "Jpmorgan Chase",
+          "Opay",
+          "尼日利亚"
         ],
         "sourceLinks": [
           {
             "name": "Techmeme",
-            "url": "http://www.techmeme.com/260425/p9#a260425p9"
+            "url": "https://www.techmeme.com/260502/p7#a260502p7"
           }
         ],
         "sources": 1,
-        "timestamp": 1777122325,
-        "published_at": "2026-04-25T21:05:25.615501",
+        "timestamp": 1777743921,
+        "published_at": "2026-05-03T01:45:21.701562",
         "source": "Techmeme",
-        "url": "http://www.techmeme.com/260425/p9#a260425p9",
+        "url": "https://www.techmeme.com/260502/p7#a260502p7",
         "event_id": null
       },
       {
-        "id": "5ff79a38895c60e8f678aba3bfbcf752",
-        "title": "27B打赢超大前代，Qwen3.6新模型冲上代码榜前列",
-        "chinese_title": "27B打赢超大前代，Qwen3.6新模型冲上代码榜前列",
-        "original_title": "Qwen3.6-27B beats much larger predecessor on most coding benchmarks",
-        "summary": "阿里开源新模型 Qwen3.6-27B 以仅 270 亿参数在多数代码基准上超过体量大 15 倍的前代模型，显示国产开源模型在效率和编码能力上的持续跃升。",
+        "id": "424c4f4bb45c7f0cac19bf97a9a11deb",
+        "title": "中国电动车价格优势冲击美国车企",
+        "chinese_title": "中国电动车价格优势冲击美国车企",
+        "original_title": "You’ll Gasp When You Hear How Many Chinese EVs You Can Buy For the Price of a Single US Car",
+        "summary": "Reuters相关报道被引用称，一辆美国新车均价可购买多达五辆中国电动车，凸显中国制造成本和车型供给优势对美国汽车产业的压力。",
         "rating": "A",
-        "score": 84,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可继续拆解其架构与训练策略带来的参数效率提升，并观察对开源代码模型竞争格局和企业部署成本的影响。",
+        "score": 82,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这可延伸到关税、供应链本地化、美国车企产品结构调整，以及中国车企出海受限后的市场再分配。",
         "entities": [
-          "Alibaba",
-          "Coding Benchmarks",
-          "LLM",
-          "Open Source",
-          "Qwen"
+          "Reuters",
+          "中国电动车",
+          "供应链",
+          "汽车制造",
+          "美国车企"
         ],
         "sourceLinks": [
           {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/qwen3-6-27b-beats-much-larger-predecessor-on-most-coding-benchmarks/"
+            "name": "Futurism",
+            "url": "https://futurism.com/advanced-transport/chinese-evs-buy-for-price-one-us-car"
           }
         ],
         "sources": 1,
-        "timestamp": 1777122325,
-        "published_at": "2026-04-25T21:05:25.615703",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/qwen3-6-27b-beats-much-larger-predecessor-on-most-coding-benchmarks/",
+        "timestamp": 1777743921,
+        "published_at": "2026-05-03T01:45:21.701649",
+        "source": "Futurism",
+        "url": "https://futurism.com/advanced-transport/chinese-evs-buy-for-price-one-us-car",
         "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-02T21:03:58.685084",
-  "total_news": 541
+  "last_updated": "2026-05-03T01:45:47.106299",
+  "total_news": 540
 }
