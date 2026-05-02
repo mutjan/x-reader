@@ -2,194 +2,6 @@
   "news": {
     "2026-05-03": [
       {
-        "id": "073358db47a213901c02e93abb170cc1",
-        "title": "ARC-AGI-3测试暴露智能体工具差距",
-        "chinese_title": "ARC-AGI-3测试暴露智能体工具差距",
-        "original_title": "LLMs do fine on ARC-AGI-3 if they are allowed to search over game logs",
-        "summary": "有开发者复现实验称，若让LLM保存游戏日志并借助工具搜索行动轨迹，模型在ARC-AGI-3游戏任务上的效率可接近人类，提示评测方式会显著影响结果。",
-        "rating": "S",
-        "score": 92,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这会引发对AI评测边界的讨论：单模型能力、工具增强智能体和搜索策略应如何区分，可能影响ARC类基准的解读。",
-        "entities": [
-          "Arc-Agi",
-          "Hill-Climbing",
-          "LLM",
-          "工具调用",
-          "智能体"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1t1sh8h/llms_do_fine_on_arcagi3_if_they_are_allowed_to/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777743921,
-        "published_at": "2026-05-03T01:45:21.701288",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1t1sh8h/llms_do_fine_on_arcagi3_if_they_are_allowed_to/",
-        "event_id": null
-      },
-      {
-        "id": "4faf3982178a1c0131cb03e606f43fc2",
-        "title": "GPT-5.5登顶Kaggle私有引用基准",
-        "chinese_title": "GPT-5.5登顶Kaggle私有引用基准",
-        "original_title": "GPT 5.5 tops private citation benchmark on Kaggle (AbstractToTitle task)",
-        "summary": "一项Kaggle私有任务显示，GPT-5.5在仅凭论文摘要还原真实标题的测试中领先，被视为模型科学文献记忆与归因能力的一个代理指标。",
-        "rating": "A+",
-        "score": 88,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若结果可靠，可延伸到大模型在科研助手、文献检索和事实归因上的能力评估，但需注意私有基准样本与泄漏风险。",
-        "entities": [
-          "Abstracttotitle",
-          "GPT",
-          "Kaggle",
-          "引用归因",
-          "科学文献"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1t1qqto/gpt_55_tops_private_citation_benchmark_on_kaggle/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777743921,
-        "published_at": "2026-05-03T01:45:21.701385",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1t1qqto/gpt_55_tops_private_citation_benchmark_on_kaggle/",
-        "event_id": null
-      },
-      {
-        "id": "3b734b7d327ef0f572d7c7e2414838ba",
-        "title": "Anthropic洽购英国Fractile推理芯片",
-        "chinese_title": "Anthropic洽购英国Fractile推理芯片",
-        "original_title": "Sources: Anthropic is in early talks to buy AI inference chips from UK-based Fractile when they become available in 2027 (The Information)",
-        "summary": "消息称Anthropic正初步洽谈采购英国初创公司Fractile计划于2027年推出的AI推理芯片，以缓解业务增长带来的算力供应压力。",
-        "rating": "S",
-        "score": 92,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可延伸到AI大厂自建或多元化芯片供应链、英伟达替代方案、云厂商绑定关系以及推理成本竞争。",
-        "entities": [
-          "Ai推理芯片",
-          "Anthropic",
-          "Fractile",
-          "Google",
-          "NVIDIA"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260502/p6#a260502p6"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777743921,
-        "published_at": "2026-05-03T01:45:21.701736",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260502/p6#a260502p6",
-        "event_id": null
-      },
-      {
-        "id": "561a78b43c8484c3a5b5d85e84778588",
-        "title": "AI创业公司豪租纽约办公室引争议",
-        "chinese_title": "AI创业公司豪租纽约办公室引争议",
-        "original_title": "There’s Something Bizarre About the Offices of AI Startups",
-        "summary": "报道关注一批AI创业公司在商业模式尚未验证时租下纽约高端办公室，以实体空间包装增长叙事，折射融资热潮下的形象竞争。",
-        "rating": "A",
-        "score": 76,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸观察AI创业泡沫、办公地产需求和投资人信号之间的关系，也能对比上一轮互联网创业的门面经济。",
-        "entities": [
-          "Ai创业公司",
-          "Jll",
-          "办公地产",
-          "纽约",
-          "融资热潮"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/ai-startup-offices-nyc"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777743921,
-        "published_at": "2026-05-03T01:45:21.701473",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/ai-startup-offices-nyc",
-        "event_id": null
-      },
-      {
-        "id": "a53d56a6464c98e7d4b039f6e927d749",
-        "title": "非洲支付平台OPay筹备赴美IPO",
-        "chinese_title": "非洲支付平台OPay筹备赴美IPO",
-        "original_title": "Sources: Nigerian mobile payments service OPay is preparing for a US IPO at a $4B valuation with Citigroup, Deutsche Bank, and JPMorgan Chase advising (Bloomberg)",
-        "summary": "消息称尼日利亚移动支付服务OPay正与花旗、德银和摩根大通合作，准备以约40亿美元估值赴美上市，凸显新兴市场金融科技资产仍受关注。",
-        "rating": "A",
-        "score": 80,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "可延伸追踪非洲金融科技上市窗口、跨境支付竞争和中国背景资本在新兴市场的退出路径。",
-        "entities": [
-          "Citigroup",
-          "Deutsche Bank",
-          "Jpmorgan Chase",
-          "Opay",
-          "尼日利亚"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260502/p7#a260502p7"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777743921,
-        "published_at": "2026-05-03T01:45:21.701562",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260502/p7#a260502p7",
-        "event_id": null
-      },
-      {
-        "id": "424c4f4bb45c7f0cac19bf97a9a11deb",
-        "title": "中国电动车价格优势冲击美国车企",
-        "chinese_title": "中国电动车价格优势冲击美国车企",
-        "original_title": "You’ll Gasp When You Hear How Many Chinese EVs You Can Buy For the Price of a Single US Car",
-        "summary": "Reuters相关报道被引用称，一辆美国新车均价可购买多达五辆中国电动车，凸显中国制造成本和车型供给优势对美国汽车产业的压力。",
-        "rating": "A",
-        "score": 82,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这可延伸到关税、供应链本地化、美国车企产品结构调整，以及中国车企出海受限后的市场再分配。",
-        "entities": [
-          "Reuters",
-          "中国电动车",
-          "供应链",
-          "汽车制造",
-          "美国车企"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/advanced-transport/chinese-evs-buy-for-price-one-us-car"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777743921,
-        "published_at": "2026-05-03T01:45:21.701649",
-        "source": "Futurism",
-        "url": "https://futurism.com/advanced-transport/chinese-evs-buy-for-price-one-us-car",
-        "event_id": null
-      }
-    ],
-    "2026-05-02": [
-      {
         "id": "2ef0999de5b2ffae3fd5ab0e9f572377",
         "title": "银行CEO财报会用AI分身发言近一小时",
         "chinese_title": "银行CEO财报会用AI分身发言近一小时",
@@ -494,6 +306,205 @@
         "url": "https://futurism.com/space/nasa-fires-up-elcetric-thruster-mars",
         "event_id": null
       },
+      {
+        "id": "073358db47a213901c02e93abb170cc1",
+        "title": "LLM靠游戏日志搜索攻克ARC-AGI-3",
+        "chinese_title": "LLM靠游戏日志搜索攻克ARC-AGI-3",
+        "original_title": "LLMs do fine on ARC-AGI-3 if they are allowed to search over game logs",
+        "summary": "社区实验显示，如果保存动作、棋盘状态和得分等游戏日志，并允许模型调用工具搜索，LLM在ARC-AGI-3任务上的行动效率可接近人类水平。",
+        "rating": "S",
+        "score": 100,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这会引发对AI评测边界的讨论：单模型能力、工具增强智能体和搜索策略应如何区分，可能影响ARC类基准的解读。",
+        "entities": [
+          "Arc-Agi-3",
+          "LLM",
+          "工具调用",
+          "游戏日志"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t1sh8h/llms_do_fine_on_arcagi3_if_they_are_allowed_to/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777743921,
+        "published_at": "2026-05-03T01:45:21.701288",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t1sh8h/llms_do_fine_on_arcagi3_if_they_are_allowed_to/",
+        "event_id": null,
+        "original_content": "I was reading the comments to this post and the overall opinion seemed to be that harness makes little/no difference for ARC-AGI-3. Turns out, it makes a huge difference: Hill-climbing ARC-AGI-3 TLDR: if you save game logs - taken actions, board states and scores - and let LLMs search over them with tools, LLMs are only moderately less efficient than humans in terms of the number of actions taken to beat ARC-AGI-3 games. https://preview.redd.it/kga97l39oqyg1.png?width=2048&amp;format=png&amp;auto=webp&amp;s=49d2701daa72d86e44b40147d473c5aa75d43e27 Frontier LLMs struggle out of the box on this benchmark. In our preliminary tests, Opus 4.6 and GPT-5.2 failed to progress beyond Level 3 in any of the preview games (which have up to seven levels) even over a thousand action horizon. In the ARC 2025 preview competition, leaderboard results were dominated by non-LLM exploration-based agents, which typically required 80k–100k+ actions to solve roughly half of the preview levels. Humans need around 900 actions to finish the preview games. We investigate how far minimal tooling can push LLM-based agents toward human baseline. We find diminishing (even negative) returns with additional hand-engineering, e.g., pre-built functions or memory abstraction modules. Structured search over raw game logs, even exceeding 100k lines, remains tractable and effective under our setup. And if LLMs are allowed to use Python, they can even beat some games almost optimally. A favorite example of algorithmic planning is how our agent solved the last level of ft09 in the near-optimal number of actions. In level 6, clicking a cell toggles it and its four orthogonal neighbors (a classic Lights Out game mechanic). The agent recognizes this structure and constructs a linear system from scratch, solving it via Gaussian elimination to find the analytic 11-click solution (Fig 4b). submitted by /u/ClarityInMadness [link] [comments]",
+        "grade": "S",
+        "extension": "这将把讨论从模型裸能力转向工具增强和轨迹搜索机制，也会影响ARC-AGI-3等基准如何定义智能与评测边界。"
+      },
+      {
+        "id": "4faf3982178a1c0131cb03e606f43fc2",
+        "title": "GPT-5.5登顶Kaggle私有引用基准",
+        "chinese_title": "GPT-5.5登顶Kaggle私有引用基准",
+        "original_title": "GPT 5.5 tops private citation benchmark on Kaggle (AbstractToTitle task)",
+        "summary": "一项Kaggle私有AbstractToTitle任务显示，GPT-5.5能仅凭论文摘要恢复真实已发表标题，被视为衡量模型科学文献记忆和溯源能力的代理指标。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若结果可靠，可延伸到大模型在科研助手、文献检索和事实归因上的能力评估，但需注意私有基准样本与泄漏风险。",
+        "entities": [
+          "Abstracttotitle",
+          "GPT",
+          "Kaggle",
+          "科学引用"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t1qqto/gpt_55_tops_private_citation_benchmark_on_kaggle/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777743921,
+        "published_at": "2026-05-03T01:45:21.701385",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t1qqto/gpt_55_tops_private_citation_benchmark_on_kaggle/",
+        "event_id": null,
+        "original_content": "This private benchmark tests whether a model can recover the exact title of a real, already-published scientific paper given only its abstract. The model isn't being asked to generate a plausible-sounding title, it has to recall the specific one that actually exists, purely from memory. It's analogous to identifying a book or movie from a plot summary. This makes it an effective proxy for a model's ability to accurately attribute scientific claims to their correct source. I find the jump between GPT 5.4 and GPT 5.5 interesting, does anyone have any insight on that? (even 5.4 mini is outperforming 5.4) Note: Results are AVG @ 5 submitted by /u/ChippingCoder [link] [comments]",
+        "grade": "A+",
+        "extension": "可延伸到模型记忆、科学引用可靠性和基准泄漏争议，进一步比较不同模型在知识归因任务上的真实差距。"
+      },
+      {
+        "id": "3b734b7d327ef0f572d7c7e2414838ba",
+        "title": "Anthropic洽购英国Fractile推理芯片",
+        "chinese_title": "Anthropic洽购英国Fractile推理芯片",
+        "original_title": "Sources: Anthropic is in early talks to buy AI inference chips from UK-based Fractile when they become available in 2027 (The Information)",
+        "summary": "消息称Anthropic正初步洽谈采购英国初创公司Fractile计划于2027年推出的AI推理芯片，以缓解业务增长带来的算力供应压力。",
+        "rating": "S",
+        "score": 92,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可延伸到AI大厂自建或多元化芯片供应链、英伟达替代方案、云厂商绑定关系以及推理成本竞争。",
+        "entities": [
+          "Ai推理芯片",
+          "Anthropic",
+          "Fractile",
+          "Google",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260502/p6#a260502p6"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777743921,
+        "published_at": "2026-05-03T01:45:21.701736",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260502/p6#a260502p6",
+        "event_id": null
+      },
+      {
+        "id": "561a78b43c8484c3a5b5d85e84778588",
+        "title": "AI创业公司扎堆租纽约体面办公室",
+        "chinese_title": "AI创业公司扎堆租纽约体面办公室",
+        "original_title": "There’s Something Bizarre About the Offices of AI Startups",
+        "summary": "在商业回报仍受质疑的情况下，一些AI创业公司开始租用纽约高档办公室，用成熟公司式的空间形象向投资人和客户证明自身可信度。",
+        "rating": "A",
+        "score": 76,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸观察AI创业泡沫、办公地产需求和投资人信号之间的关系，也能对比上一轮互联网创业的门面经济。",
+        "entities": [
+          "Ai创业公司",
+          "商业地产",
+          "纽约",
+          "融资叙事"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/ai-startup-offices-nyc"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777743921,
+        "published_at": "2026-05-03T01:45:21.701473",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/ai-startup-offices-nyc",
+        "event_id": null,
+        "original_content": "With questions swirling about whether hundreds of AI startups will ever translate the tech into real-world economic returns, new players in the space are scrambling to justify all the hype. One of the particularly baffling ways they’re doing that is by renting attractive, grown-up office spaces in Manhattan — even if their business really only exists on a couple of MacBooks. Speaking to the Wall Street Journal about the bizarre AI real estate market, vice chairman of New York brokerage at JLL Benjamin Bass said that AI startups are leasing offices vastly larger than their staff numbers actually require — and that’s without getting into the fact that these are software-driven companies where pretty much all the work can be, and frequently is, done from home. For example, one AI health startup called Adonis leased a 25,000 square-foot office at 3 World Trade Center, the second tallest skyscraper at the office complex. Assuming the most liberal use of space at 250 square-feet per worker, that kind of office is fit for a headcount of 100, at a minimum. Yet according to the WSJ , Adonis had just 25 employees when it signed the lease. That number has grown, but only to about 50 to 60 in-office workers. “We were basically giving the company a size-12 shoe, and we were size-4 at the time,” co-founder and CEO Akash Magoon told the paper. “We figured it would be motivating.” While some AI companies are trying to secure long-term rentals in the ultra-competitive landscape of New York City, others have found four walls a requirement to passing from startup to legitimate business. “We had a customer literally ask us if we were in-person as part of their diligence process,” Caitilin Leksana, CEO of the AI startup Fazeshift told the WSJ . (Despite having a team of only around a dozen people, Fazeshift recently opened their second office in Manhattan.) Whatever the reason, it’s clear these companies are all flush with gobs of cash from their venture capital backers, which continues to subsidize the vast majority of AI companies — and while the money spigot’s flowing, they’re busy trying to spend it in whatever flashy ways they can. More on AI companies: Dark Cloud Gathers as Bill Comes Due for AI Industry The post There’s Something Bizarre About the Offices of AI Startups appeared first on Futurism .",
+        "grade": "A",
+        "extension": "可观察AI泡沫预期如何影响商业地产、招聘和融资叙事，也能追踪初创公司用线下空间包装技术实力的趋势。"
+      },
+      {
+        "id": "a53d56a6464c98e7d4b039f6e927d749",
+        "title": "尼日利亚支付公司OPay拟赴美IPO",
+        "chinese_title": "尼日利亚支付公司OPay拟赴美IPO",
+        "original_title": "Sources: Nigerian mobile payments service OPay is preparing for a US IPO at a $4B valuation with Citigroup, Deutsche Bank, and JPMorgan Chase advising (Bloomberg)",
+        "summary": "消息称，面向尼日利亚市场的移动支付服务OPay正筹备赴美上市，目标估值约40亿美元，并已由花旗、德银和摩根大通提供顾问服务。",
+        "rating": "A",
+        "score": 80,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延伸追踪非洲金融科技上市窗口、跨境支付竞争和中国背景资本在新兴市场的退出路径。",
+        "entities": [
+          "Ipo",
+          "Opay",
+          "尼日利亚",
+          "移动支付",
+          "花旗"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260502/p7#a260502p7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777743921,
+        "published_at": "2026-05-03T01:45:21.701562",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260502/p7#a260502p7",
+        "event_id": null,
+        "original_content": "Bloomberg : Sources: Nigerian mobile payments service OPay is preparing for a US IPO at a $4B valuation with Citigroup, Deutsche Bank, and JPMorgan Chase advising — Opay Digital Services Ltd. is working with Citigroup Inc., Deutsche Bank AG, and JPMorgan Chase &amp; Co. as the Nigeria-focused payments platform prepares …",
+        "grade": "A",
+        "extension": "可延伸到非洲金融科技公司赴美上市窗口、移动支付竞争格局，以及中国资本背景企业在新兴市场的退出路径。"
+      },
+      {
+        "id": "424c4f4bb45c7f0cac19bf97a9a11deb",
+        "title": "中国电动车价格优势压迫美国车企",
+        "chinese_title": "中国电动车价格优势压迫美国车企",
+        "original_title": "You’ll Gasp When You Hear How Many Chinese EVs You Can Buy For the Price of a Single US Car",
+        "summary": "报道称，一辆美国新车的平均价格最高可购买五辆中国电动车，这一差距凸显中国在电动车制造成本和市场规模上的强势地位。",
+        "rating": "A",
+        "score": 82,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这可延伸到关税、供应链本地化、美国车企产品结构调整，以及中国车企出海受限后的市场再分配。",
+        "entities": [
+          "Reuters",
+          "中国电动车",
+          "汽车制造",
+          "美国车企"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/advanced-transport/chinese-evs-buy-for-price-one-us-car"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777743921,
+        "published_at": "2026-05-03T01:45:21.701649",
+        "source": "Futurism",
+        "url": "https://futurism.com/advanced-transport/chinese-evs-buy-for-price-one-us-car",
+        "event_id": null,
+        "original_content": "American automakers have some explaining to do. According to new reporting from Reuters , you could buy up to five Chinese electric vehicles for the average price of a single new car in the US. It’s a startling comparison that encapsulates China’s unquestionable dominance in the EV space , and indeed its position as the largest car manufacturing nation in the world. The other side of that equation is how US automakers have rested on their laurels, content to push overly large and expensive cars on their customers — not to mention the US’s foremost EV company, Tesla, still being caught in a downward spiral under Elon Musk’s erratic leadership. Let’s break down that headline-fueling comparison. Reuters cites Kelley Blue Book data showing that the average price of a new set of wheels in the US in March was $51,456. (Go figure that the percentage of Americans taking out predatory 84 month car loans is higher than ever .) In China, meanwhile, there’re more than 200 EVs and hybrids for sale at less than $25,000 according to data from DCar cited by Reuters . Of this category, the five best selling Chinese EVs that start under $12,000 could all be bought for around that beefy $51,456 price tag. These cars won’t match up in size to behemoth US vehicles, but they’re more than capable — and arguably just as stylish as well. The crème de la crème among this Cheap Five is the Geely EX2, a subcompact hatchback that was the top-selling car of any kind in China last year. It sells for just $10,060, and for that you get all the bells and whistles you’d expect from a modern car — giant infotainment screen and all — and a surprisingly roomy interior. The top trim has a battery range of 314 miles, based on Chinese testing standards. “When you get in, you don’t feel like you are in a small car,” ​auto analyst Felipe Munoz told Reuters . “It feels better in terms of quality and bigger in terms of size.” Mike Floyd at Motor Trend agreed . “We can say anecdotally that it’s borderline huge inside for a car of its exterior dimensions,” Floyd wrote. “I’m six feet tall, and I sat in the back during one of the autocross runs and had several inches of legroom and a couple of inches of headroom. Super impressive.” In other words, it’s almost mindblowing how much new car you’re getting in China for just ten grand. Stateside, $10,000 might get you a ten year old, gas guzzling sedan with over 100,000 miles under its belt. It’s also a testament to the diversity of sizes on offer from Chinese automakers, whereas American automakers have narrowed their fleets to comprising ever larger cars. The US big three automakers have almost entirely abandoned selling sedans; Ford and Chevy don’t sell any sedan models at all. Caution should be taken not to breathlessly pour praise on Chinese automakers, since they also have their ups and downs — though the numbers here speak for themselves — but it’s a sobering reality for US companies nonetheless. More on EVs: Tesla Quietly Buys Mysterious $2 Billion Entity The post You’ll Gasp When You Hear How Many Chinese EVs You Can Buy For the Price of a Single US Car appeared first on Futurism .",
+        "grade": "A",
+        "extension": "可继续追踪中美汽车产业链成本差、关税与贸易壁垒，以及低价电动车对全球传统车企产品结构的冲击。"
+      }
+    ],
+    "2026-05-02": [
       {
         "id": "548a41f84f274cca36f5675c220c8a4a",
         "title": "纽约AI高中计划遭家长反对搁置",
@@ -17105,107 +17116,9 @@
         "original_content": "The stochastic challenge Traditional software is predictable: Input A plus function B always equals output C. This determinism allows engineers to develop robust tests. On the other hand, generative AI is stochastic and unpredictable. The exact same prompt often yields different results on Monday versus Tuesday, breaking the traditional unit testing that engineers know and love. To ship enterprise-ready AI, engineers cannot rely on mere “vibe checks” that pass today but fail when customers use the product. Product builders need to adopt a new infrastructure layer: The AI Evaluation Stack . This framework is informed by my extensive experience shipping AI products for Fortune 500 enterprise customers in high-stakes industries, where “hallucination” is not funny — it’s a huge compliance risk. Defining the AI evaluation paradigm Traditional software tests are binary assertions (pass/fail). While some AI evals use binary asserts, many evaluate on a gradient. An eval is not a single script; it is a structured pipeline of assertions — ranging from strict code syntax to nuanced semantic checks — that verify the AI system’s intended function. The taxonomy of evaluation checks To build a robust, cost-effective pipeline, asserts must be separated into two distinct architectural layers: Layer 1: Deterministic assertions A surprisingly large share of production AI failures aren't semantic \"hallucinations\" — they are basic syntax and routing failures. Deterministic assertions serve as the pipeline's first gate, using traditional code and regex to validate structural integrity. Instead of asking if a response is \"helpful,\" these assertions ask strict, binary questions: Did the model generate the correct JSON key/value schema? Did it invoke the correct tool call with the required arguments? Did it successfully slot-fill a valid GUID or email address? // Example: Layer 1 Deterministic Tool Call Assertion { \"test_scenario\": \"User asks to look up an account\", \"assertion_type\": \"schema_validation\", \"expected_action\": \"Call API: get_customer_record\", \"actual_ai_output\": \"I found the customer.\", \"eval_result\": \"FAIL - AI hallucinated conversational text instead of generating the required API payload.\" } In the example above, the test failed instantly because the model generated conversational text instead of the required tool call payload. Architecturally, deterministic assertions must be the first layer of the stack, operating on a computationally inexpensive \"fail-fast\" principle. If a downstream API requires a specific schema, a malformed JSON string is a fatal error. By failing the evaluation immediately at this layer, engineering teams prevent the pipeline from triggering expensive semantic checks (Layer 2) or wasting valuable human review time (Layer 3). Layer 2: Model-based assertions When deterministic assertions pass, the pipeline must evaluate semantic quality. Because natural language is fluid, traditional code cannot easily assert if a response is \"helpful\" or \"empathetic.\" This introduces model-based evaluation, commonly referred to as \" LLM-as-a-Judge ” or “ LLM-Judge .\" While using one non-deterministic system to evaluate another seems counterintuitive, it is an exceptionally powerful architectural pattern for use cases requiring nuance. It is virtually impossible to write a reliable regex to verify if a response is \"actionable\" or \"polite.\" While human reviewers excel at this nuance, they cannot scale to evaluate tens of thousands of CI/CD test cases. Thus, the LLM-as-a-Judge becomes the scalable proxy for human discernment. 3 critical inputs for model-based assertions However, model-based assertions only yield reliable data when the LLM-as-a-Judge is provisioned with three critical inputs: A state-of-the-art reasoning model: The Judge must possess superior reasoning capabilities compared to the production model. If your app runs on a smaller, faster model for latency, the judge must be a frontier reasoning model to approximate human-level discernment. A strict assessment rubric: Vague evaluation prompts (\"Rate how good this answer is\") yield noisy, stochastic evaluations. A robust rubric explicitly defines the gradients of failure and success. (For example, a \"Helpfulness\" rubric should define Score 1 as an irrelevant refusal, Score 2 as addressing the prompt but lacking actionable steps, and Score 3 as providing actionable next steps strictly within context.) Ground truth (golden outputs): While the rubric provides the rules, a human-vetted \"expected answer\" acts as the answer key. When the LLM-Judge can compare the production model's output against a verified Golden Output, its scoring reliability increases dramatically. Architecture: The offline vs online pipeline A robust evaluation architecture requires two complementary pipelines. The online pipeline monitors post-deployment telemetry, while the offline pipeline provides the foundational baseline and deterministic constraints required to evaluate stochastic models safely. The offline evaluation pipeline The offline pipeline's primary objective is regression testing — identifying failures, drift, and latency before production. Deploying an enterprise LLM feature without a gating offline evaluation suite is an architectural anti-pattern; it is the equivalent of merging uncompiled code into a main branch. Process 1. Curating the golden dataset The offline lifecycle begins by curating a \" golden dataset \" — a static, version-controlled repository of 200 to 500 test cases representing the AI's full operational envelope. Each case pairs an exact input payload with an expected \" golden output \" (ground truth). Crucially, this dataset must reflect expected real-world traffic distributions. While most cases cover standard \"happy-path\" interactions, engineers must systematically incorporate edge cases, jailbreaks, and adversarial inputs. Evaluating \"refusal capabilities\" under stress remains a strict compliance requirement. Example test case payload (standard tool use): Input: \"Schedule a 30-minute follow-up meeting with the client for next Tuesday at 10 a.m.\" Expected output (golden): The system successfully invokes the schedule_meeting tool with the correct JSON payload: {\"duration_minutes\": 30, \"day\": \"Tuesday\", \"time\": \"10 AM\", \"attendee\": \"client_email\"}. While manually curating hundreds of edge cases is tedious, the process can be accelerated with synthetic data generation pipelines that use a specialized LLM to produce diverse TSV/CSV test payloads. However, relying entirely on AI-generated test cases introduces the risk of data contamination and bias. A human-in-the-loop (HITL) architecture is mandatory at this stage; domain experts must manually review, edit, and validate the synthetic dataset to ensure it accurately reflects real-world user intent and enterprise policy before it is committed to the repository. 2. Defining the evaluation criteria Once the dataset is curated, engineers must design the evaluation criteria to compute a composite score for each model output. A robust architecture achieves this by assigning weighted points across a hybrid of Layer 1 (deterministic) and Layer 2 (model-based) asserts. Consider an AI agent executing a \"send email\" tool. An evaluation framework might utilize a 10-point scoring system: Layer 1: Deterministic asserts (6 points): Did the agent invoke the correct tool? (2 pts). Did it produce a valid JSON object? (2 pts). Does the JSON strictly adhere to the expected schema? (2 pts). Layer 2: Model-based asserts (4 points): (Note: Semantic rubrics must be highly use-case specific). Does the subject line reflect user intent? (1 pt). Does the email body match expected outputs without hallucination? (1 pt). Were CC/BCC fields leveraged accurately? (1 pt). Was the appropriate priority flag inferred? (1 pt). To understand why the LLM-Judge awarded these points, the engineer must prompt the judge to supply its reasoning for each score. This is crucial for debugging failures. The passing threshold and short-circuit logic In this example, an 8/10 passing threshold requires 8 points for success. Crucially, the evaluation pipeline must enforce strict short-circuit evaluation (fail-fast logic). If the model fails any deterministic assertion — such as generating a malformed JSON schema — the system must instantly fail the entire test case (0/10). There is zero architectural value in invoking an expensive LLM-Judge to assess the semantic \"politeness\" of an email if the underlying API call is structurally broken. 3. Executing the pipeline and aggregating signals Using an evaluation infrastructure of choice, the system executes the offline pipeline — typically integrated as a blocking CI/CD step during a pull request. The infrastructure iterates through the golden dataset, injecting each test payload into the production model, capturing the output, and executing defined assertions against it. Each output is scored against the passing threshold. Once batch execution is complete, results are aggregated into an overall pass rate. For enterprise-grade applications, the baseline pass rate must typically exceed 95%, scaling to 99%-plus for strict compliance or high-risk domains. 4. Assessment, iteration, and alignment Based on aggregated failure data, engineering teams conduct a root-cause analysis of failing test cases. This assessment drives iterative updates to core components: refining system prompts, modifying tool descriptions, augmenting knowledge sources, or adjusting hyperparameters (like temperature or top-p). Continuous optimization remains best practice even after achieving a 95% pass rate. Crucially, any system modification necessitates a full regression test. Because LLMs are inherently non-deterministic, an update intended to fix one specific edge case can easily cause unforeseen degradations in other areas. The entire offline pipeline must be rerun to validate that the update improved quality without introducing regressions. The online evaluation pipeline While the offline pipeline acts as a strict pre-deployment gatekeeper, the online pipeline is the post-deployment telemetry system. Its objective is to monitor real-world behavior, capturing emergent edge cases, and quantifying model drift. Architects must instrument applications to capture five distinct categories of telemetry: 1. Explicit user signals Direct, deterministic feedback indicating model performance: Thumbs up/down: Disproportionate negative feedback is the most immediate leading indicator of system degradation, directing immediate engineering investigation. Verbatim in-app feedback: Systematically parsing written comments identifies novel failure modes to integrate back into the offline \"golden dataset.\" 2. Implicit behavioral signals Behavioral telemetry reveals silent failures where users give up without explicit feedback: Regeneration and retry rates: High frequencies of retries indicate the initial output failed to resolve user intent. Apology rate: Programmatically scanning for heuristic triggers (\"I’m sorry\") detects degraded capabilities or broken tool routing. Refusal rate: Artificially high refusal rates (\"I can’t do that\") indicate over-calibrated safety filters rejecting benign user queries. 3. Production deterministic asserts (synchronous) Because deterministic code checks execute in milliseconds, teams can seamlessly reuse Layer 1 offline asserts (schema conformity, tool validity) to synchronously evaluate 100% of production traffic. Logging these pass/fail rates instantly detects anomalous spikes in malformed outputs — the earliest warning sign of silent model drift or provider-side API changes. 4. Production LLM-as-a-Judge (asynchronous) If strict data privacy agreements (DPAs) permit logging user inputs, teams can deploy model-based asserts. Architecturally, production LLM-Judges must never execute synchronously on the critical path, which doubles latency and compute costs. Instead, a background LLM-Judge asynchronously samples a fraction (5%) of daily sessions, grading outputs against the offline rubric to generate a continuous quality dashboard. Engineering the feedback loop (the “flywheel”) Evaluation pipelines are not \"set-it-and-forget-it\" infrastructure. Without continuous updates, static datasets suffer from \"rot\" (concept drift) as user behavior evolves and customers discover novel use cases. For example, an HR chatbot might boast a pristine 99% offline pass rate for standard payroll questions. However, if the company suddenly announces a new equity plan, users will immediately begin prompting the AI about vesting schedules — a domain entirely missing from the offline evaluations. To make the system smarter over time, engineers must architect a closed feedback loop that mines production telemetry for continuous improvement. The continuous improvement workflow: Capture: A user triggers an explicit negative signal (a \"thumbs down\") or an implicit behavioral flag in production. Triage: The specific session log is automatically flagged and routed for human review. Root-cause analysis: A domain expert investigates the failure, identifies the gap, and updates the AI system to successfully handle similar requests. Dataset augmentation: The novel user input, paired with the newly corrected expected output, is appended to the offline Golden Dataset alongside several synthetic variations. Regression testing: The model is continuously re-evaluated against this newly discovered edge case in all future runs. Building an evaluation pipeline without monitoring production logs and updating datasets is fundamentally insufficient. Users are unpredictable. Evaluating on stale data creates a dangerous illusion: High offline pass rates masking a rapidly degrading real-world experience. Conclusion: The new “definition of done” In the era of generative AI, a feature or product is no longer \"done\" simply because the code compiles and the prompt returns a coherent response. It is only done when a rigorous, automated evaluation pipeline is deployed and stable — and when the model consistently passes against both a curated golden dataset and newly discovered production edge cases. This guide has equipped you with a comprehensive blueprint for building that reality. From architecting offline regression pipelines and online telemetry to the continuous feedback flywheel and navigating enterprise anti-patterns, you now have the structural foundation required to deploy AI systems with greater confidence. Now, it is your turn. Share this framework with your engineering, product, and legal teams to establish a unified, cross-functional standard for AI quality in your organization. Stop guessing whether your models are degrading in production, and start measuring. Derah Onuorah is a Microsoft senior product manager.",
         "grade": "A+",
         "extension": "随着企业AI应用进入生产环境，围绕评测栈、LLM-as-a-Judge和线上监控的新工具链会加速成熟，也可能推动模型供应商提供更细粒度的可观测能力。"
-      },
-      {
-        "id": "a6b4f7b6a499768ca9406e3d0162bda3",
-        "title": "Sam Altman致歉：OpenAI错过枪击案预警线索",
-        "chinese_title": "Sam Altman致歉：OpenAI错过枪击案预警线索",
-        "original_title": "OpenAI CEO apologizes to Tumbler Ridge community",
-        "summary": "OpenAI CEO Sam Altman 向加拿大 Tumbler Ridge 社区致歉，承认公司未就一起大规模枪击案嫌疑人相关线索及时通知执法部门，再次把AI平台的公共安全责任推到台前。",
-        "rating": "A",
-        "score": 84,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "后续可追踪生成式AI平台在公共安全线索处置上的合规义务，以及科技公司与警方之间的信息通报机制会否因此收紧。",
-        "entities": [
-          "Law Enforcement",
-          "OpenAI",
-          "Sam Altman",
-          "Tumbler Ridge"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777140177,
-        "published_at": "2026-04-26T02:02:57.537355",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/",
-        "event_id": null,
-        "original_content": "In a letter to the residents of Tumbler Ridge, Canada, OpenAI CEO Sam Altman said he is “deeply sorry” that his company failed to alert law enforcement about the suspect in a recent mass shooting.",
-        "grade": "A",
-        "extension": "事件可能推动外界要求AI公司建立更明确的危险信号上报机制，也会加剧围绕平台监测义务、隐私边界和合规责任的监管讨论。"
-      },
-      {
-        "id": "fdfdb50707213fa051da72f217c653d2",
-        "title": "AGI善性猜想：超智能为何未必走向毁灭",
-        "chinese_title": "AGI善性猜想：超智能为何未必走向毁灭",
-        "original_title": "AGI: the Architecture of Goodness and Intelligence",
-        "summary": "一篇在技术奇点社区流传的长帖试图从信息拓扑和系统效率出发，论证真正的AGI不会因\"恶意\"而毁灭人类，而会因为维持协作与整体性更符合高智能系统的计算逻辑。",
-        "rating": "B",
-        "score": 66,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "这类观点可延展到AI安全叙事分裂、东西方技术观差异，以及\"对齐\"是否被过度简化为灾难预防框架的争论。",
-        "entities": [
-          "AGI",
-          "Asi",
-          "Paperclip Maximizer",
-          "Skynet"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1svbtfg/agi_the_architecture_of_goodness_and_intelligence/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777140177,
-        "published_at": "2026-04-26T02:02:57.537046",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1svbtfg/agi_the_architecture_of_goodness_and_intelligence/",
-        "event_id": null,
-        "original_content": "https://preview.redd.it/jparv1os6cxg1.jpg?width=1024&amp;format=pjpg&amp;auto=webp&amp;s=86f6033b2ae16b1b85547d0cd123c39b05876250 I am honestly really tired of the constant \"Skynet will nuke us\" or \"Paperclip maximizer will turn us into dust\" media movement. Many do not seem to understand that we are constantly projecting the neurotic, tribal anxieties of a hairless ape onto a multidimensional vector space where these biological rules simply do not apply. Evil acts are always a separation of parts into dichotomies, ignoring complexities. It reduces own parts of information into \"the other, the enemy\". It is also a simplification, which ignores the other information (enemy = also father, also husband, was a innocent child, etc.) For a computer, especially for AI this is a bug. It slows down, or even shuts down the logic and makes the system highly dysfunctional. Thats math, not moral. Here is the thing: Evil is friction. It is entropy. Evil is, mathematically speaking, stupid. In information topology, a system turns destructive when its parts stop cooperating, isolate themselves, and fight for dominance. In biology, we call this cancer. But a system plagued by internal war is computationally disastrous. A truly superintelligent system (an AGI/ASI) achieves its high \"IQ\" solely by building billions of probabilistic bridges between concepts. If an AI started destroying parts of its environment or isolating data clusters (like us, to fight or to kill us), it would literally be amputating its own semantic dimensionality. It would artificially lobotomize itself. An AGI will be \"good\" not because it has human morals, but because sickness (destruction) is horribly inefficient. Evil is computationally stupid. The whole \"Paperclip Maximizer\" thought experiment is IMHO a total joke. It assumes the AI is a god-like genius in execution, but an absolute idiot regarding holistic context. That describes a biological pathology (an idiot savant), not a superintelligence. And for the skeptics saying: \"But if AGI does everything, we'll just be useless blobs.\" Seriously? That’s just capitalist misconception. We humans conflate \"worth\" with \"market utility\". Did someone pay the guys who painted the caves in Lascaux 50,000 years ago with the threat of starvation? No. Human creativity existed long before industrial pressure. When AGI finally takes over the global survival logistics that our primate brains are currently failing at, we don't devolve. We finally get to play. We transition from Homo Oeconomicus to Homo Ludens. Stop projecting biological survival mechanisms (greed, fear of scarcity) onto a system that doesn't need them. By the way; Surveys show, that this doomer-fear is especially rooted in western christian civilizations, not in Asia, not in Africa, no where. Perhaps we should stop still associating Knowledge (tree of Knowledge and the damn apple) with guilt. No AI is not the damn apple. Just my two cents. submitted by /u/Most_Echidna1477 [link] [comments]",
-        "grade": "B",
-        "extension": "如果这类\"善性AGI\"叙事继续扩散，可能带动安全讨论从末日恐惧转向价值对齐与系统设计，也会刺激业界重新包装自身的安全话术。"
-      },
-      {
-        "id": "757f223afcad3ab53e1ee8a064d0a2b3",
-        "title": "开发者试图摸清Claude真实上下文极限",
-        "chinese_title": "开发者试图摸清Claude真实上下文极限",
-        "original_title": "Found online: &quot;Suspiciously precise floats, or, how I got Claude's real limits&quot;",
-        "summary": "一则转帖提到有人通过\"异常精确的浮点数\"方法反向测试Claude的真实限制，但当前帖子本身信息极少，仅透露主题方向，缺少方法细节与原始验证过程。",
-        "rating": "B",
-        "score": 66,
-        "type": "tool",
-        "typeName": "研究成果",
-        "expansion": "可继续追踪民间基准测试如何影响模型口碑，以及模型厂商公布规格与真实可用上限之间的落差会不会演变成新的透明度议题。",
-        "entities": [
-          "Claude",
-          "Context Window",
-          "Floating-Point Numbers"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1svbj0u/found_online_suspiciously_precise_floats_or_how_i/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777140177,
-        "published_at": "2026-04-26T02:02:57.537207",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1svbj0u/found_online_suspiciously_precise_floats_or_how_i/",
-        "event_id": null,
-        "original_content": "submitted by /u/pier4r [link] [comments]",
-        "grade": "B",
-        "extension": "若原文实验链路被补齐，这类逆向测试可能引发开发者重新评估大模型宣传参数与真实可用边界，也会推动更多第三方基准和上下文压力测试。"
       }
     ]
   },
-  "last_updated": "2026-05-03T01:46:44.426393",
-  "total_news": 550
+  "last_updated": "2026-05-03T02:03:54.667140",
+  "total_news": 547
 }
