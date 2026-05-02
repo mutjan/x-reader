@@ -2,13 +2,43 @@
   "news": {
     "2026-05-02": [
       {
+        "id": "7518ac00c311493e4e9faa0f29075ff0",
+        "title": "DeepSeek V4预览版开源权重逼近前沿",
+        "chinese_title": "DeepSeek V4预览版开源权重逼近前沿",
+        "original_title": "DeepSeek V4–almost on the frontier, a fraction of the price",
+        "summary": "DeepSeek发布V4 Pro和V4 Flash两个预览模型，主打百万上下文、MoE架构和MIT开源权重，价格显著低于主流前沿模型。",
+        "rating": "S",
+        "score": 97,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "DeepSeek用低价开源权重继续压缩闭源模型的价格空间，后续可跟踪OpenRouter等平台调用成本变化，以及国产开源大模型在企业落地中的替代效应。",
+        "entities": [
+          "DeepSeek",
+          "Deepseek V4",
+          "Moe",
+          "Openrouter"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (deepseek)",
+            "url": "https://simonwillison.net/2026/Apr/24/deepseek-v4/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777713708,
+        "published_at": "2026-05-02T17:21:48.291902",
+        "source": "Hacker News (deepseek)",
+        "url": "https://simonwillison.net/2026/Apr/24/deepseek-v4/",
+        "event_id": null
+      },
+      {
         "id": "b4d952ae7aa1fbdf3d87df5bdbc0ed38",
         "title": "免费版ChatGPT默认开启广告追踪",
         "chinese_title": "免费版ChatGPT默认开启广告追踪",
         "original_title": "ChatGPT now tracks users for ads by default as OpenAI looks for new revenue",
-        "summary": "OpenAI在投放广告的地区为免费版ChatGPT用户默认开启营销Cookie追踪，付费用户不受影响，用户可在账户设置中手动关闭。",
+        "summary": "OpenAI已在投放广告的地区为免费ChatGPT用户默认开启营销Cookie追踪，付费用户不受影响，免费用户可在账户设置中关闭。",
         "rating": "A+",
-        "score": 89,
+        "score": 92,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这会把ChatGPT商业化从订阅收入进一步推向广告与数据变现，也可能引发用户隐私、默认同意机制和AI产品广告边界的后续讨论。",
@@ -29,17 +59,20 @@
         "published_at": "2026-05-02T16:50:05.669729",
         "source": "THE DECODER",
         "url": "https://the-decoder.com/chatgpt-now-tracks-users-for-ads-by-default-as-openai-looks-for-new-revenue/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "OpenAI has turned on marketing cookies by default for free ChatGPT users in countries where ads are running. Tracking is automatically active for free accounts but not for paying subscribers. You can disable it in your account settings. The article ChatGPT now tracks users for ads by default as OpenAI looks for new revenue appeared first on The Decoder .",
+        "grade": "S",
+        "extension": "OpenAI商业化压力正在向广告和数据追踪延伸，后续可关注免费用户隐私争议、监管反应，以及付费订阅与广告模式之间的产品分层。"
       },
       {
         "id": "e5dd571a49e64ff5489fcd1073202e58",
         "title": "Meta收购机器人AI公司加速人形布局",
         "chinese_title": "Meta收购机器人AI公司加速人形布局",
         "original_title": "Meta acquires Assured Robot Intelligence to accelerate humanoid robot push",
-        "summary": "Meta收购机器人AI创业公司Assured Robot Intelligence，计划加快人形机器人研发，并希望打造类似Android的行业开放平台。",
+        "summary": "Meta收购机器人AI创业公司Assured Robot Intelligence，希望加速人形机器人研发，并打造类似Android的行业开放平台。",
         "rating": "A",
         "score": 82,
-        "type": "industry",
+        "type": "funding",
         "typeName": "行业动态",
         "expansion": "Meta如果把开放平台打法复制到机器人领域，可能重塑人形机器人软件生态，也会加剧与特斯拉、Figure等玩家的底层平台竞争。",
         "entities": [
@@ -59,16 +92,19 @@
         "published_at": "2026-05-02T16:50:05.669854",
         "source": "THE DECODER",
         "url": "https://the-decoder.com/meta-acquires-assured-robot-intelligence-to-accelerate-humanoid-robot-push/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Meta has acquired robotics AI startup Assured Robot Intelligence to accelerate its work on humanoid robots. The goal is an open platform for the entire industry, similar to what Android did for smartphones. The article Meta acquires Assured Robot Intelligence to accelerate humanoid robot push appeared first on The Decoder .",
+        "grade": "A",
+        "extension": "Meta正在把AI能力延伸到实体机器人平台，后续可关注其与Figure、特斯拉等路线的差异，以及开放平台策略能否吸引硬件伙伴。"
       },
       {
         "id": "7dba3e56bf19125fdb6182ef33ea2b01",
         "title": "xAI发布Grok新版本主打低价和工具调用",
         "chinese_title": "xAI发布Grok新版本主打低价和工具调用",
         "original_title": "xAI drops Grok 4.3 with steep price cuts and an Imagine agent mode for creative projects",
-        "summary": "xAI发布Grok 4.3，通过大幅降价、增强工具调用和新增Imagine智能体图像生成模式吸引创意项目用户，但综合能力仍落后顶级模型。",
+        "summary": "xAI推出Grok 4.3，在实用任务和工具调用上有所提升，同时大幅降价，并加入面向创意项目的Imagine智能体图像生成模式。",
         "rating": "S",
-        "score": 93,
+        "score": 100,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "低价策略可能倒逼主流模型服务重新评估价格体系，而Imagine模式也显示多模态创意工作流正从单次生成转向智能体式协作。",
@@ -90,7 +126,10 @@
         "published_at": "2026-05-02T16:50:05.669950",
         "source": "THE DECODER",
         "url": "https://the-decoder.com/xai-drops-grok-4-3-with-steep-price-cuts-and-an-imagine-agent-mode-for-creative-projects/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "With Grok 4.3, xAI is leaning into low prices and better tool use. The model shows gains on practical tasks, but it still trails the top models from OpenAI and Anthropic. The release also brings a new agent-based image generator. The article xAI drops Grok 4.3 with steep price cuts and an Imagine agent mode for creative projects appeared first on The Decoder .",
+        "grade": "S",
+        "extension": "xAI继续用价格和工具能力争夺开发者入口，后续可观察其与OpenAI、Anthropic在推理价格、Agent能力和创意生成场景上的竞争。"
       },
       {
         "id": "a15478f2ae6d8df55df32f70ba0039c7",
@@ -16360,99 +16399,9 @@
         "source": "THE DECODER",
         "url": "https://the-decoder.com/the-uae-wants-half-its-government-run-by-autonomous-ai-agents-within-two-years/",
         "event_id": null
-      },
-      {
-        "id": "898e213def7ecef52631d8677d69ec94",
-        "title": "开发者做出Karpathy风LLM知识库，Agent可直接用Git协同维护",
-        "chinese_title": "开发者做出Karpathy风LLM知识库，Agent可直接用Git协同维护",
-        "original_title": "Show HN: A Karpathy-style LLM wiki your agents maintain (Markdown and Git)",
-        "summary": "一个登上 Hacker News 的开源项目尝试把 LLM 知识库做成 Markdown 加 Git 驱动的协作体系，让多个 Agent 能持续沉淀、修订和追踪知识变更，切中 AI 工程化落地里的长期记忆痛点。",
-        "rating": "A",
-        "score": 81,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "如果这类 Agent 可维护知识库跑通，后续可以继续追踪长期记忆、版本治理和团队协作场景，会不会催生新一轮 AI 开发基础设施工具。",
-        "entities": [
-          "Andrej Karpathy",
-          "Git",
-          "Github",
-          "LLM",
-          "Markdown"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/nex-crm/wuphf"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777107901,
-        "published_at": "2026-04-25T17:05:01.229676",
-        "source": "Hacker News",
-        "url": "https://github.com/nex-crm/wuphf",
-        "event_id": null
-      },
-      {
-        "id": "32301e05c82e8058b0cd2601ec5b3f5c",
-        "title": "谷歌拟再投400亿美元押注Anthropic，Claude阵营融资战再升级",
-        "chinese_title": "谷歌拟再投400亿美元押注Anthropic，Claude阵营融资战再升级",
-        "original_title": "Google pours up to $40 billion into ChatGPT rival Anthropic",
-        "summary": "报道显示谷歌计划向 Anthropic 再投入最多 400 亿美元，叠加亚马逊此前承诺的 250 亿美元，这家 Claude 背后的明星公司短期内有望获得总计 650 亿美元级别的超大额资金支持。",
-        "rating": "S",
-        "score": 99,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "超大额融资不仅会改写头部模型公司的资本格局，也会影响云算力绑定、企业客户采购和 OpenAI 阵营的竞争压力，后续值得追踪谷歌与亚马逊各自的话语权变化。",
-        "entities": [
-          "Amazon",
-          "Anthropic",
-          "Claude",
-          "Google"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/google-pours-up-to-40-billion-into-chatgpt-rival-anthropic/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777107901,
-        "published_at": "2026-04-25T17:05:01.229788",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/google-pours-up-to-40-billion-into-chatgpt-rival-anthropic/",
-        "event_id": null
-      },
-      {
-        "id": "ee06d5fe9e14978bdf759fbc958d5743",
-        "title": "OpenAI用ChatGPT拍退休主题广告，尝试把AI助手讲成生活陪伴故事",
-        "chinese_title": "OpenAI用ChatGPT拍退休主题广告，尝试把AI助手讲成生活陪伴故事",
-        "original_title": "Reddys vs Retirement | With ChatGPT",
-        "summary": "OpenAI 发布一支以退休生活为主题的 ChatGPT 宣传视频，内容更偏品牌传播而非产品功能更新，核心看点在于其如何继续把通用 AI 助手包装成面向大众日常场景的叙事入口。",
-        "rating": "B",
-        "score": 65,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "这类品牌广告可以继续观察 OpenAI 的消费者化传播策略，以及 ChatGPT 在不同国家和年龄层中的场景教育是否会进一步加速。",
-        "entities": [
-          "Early Man Film",
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "OpenAI",
-            "url": "https://www.youtube.com/watch?v=fuO669ienMY"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777107901,
-        "published_at": "2026-04-25T17:05:01.229935",
-        "source": "OpenAI",
-        "url": "https://www.youtube.com/watch?v=fuO669ienMY",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-02T16:50:21.378757",
-  "total_news": 527
+  "last_updated": "2026-05-02T17:22:03.455595",
+  "total_news": 525
 }
