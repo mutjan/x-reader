@@ -6,7 +6,7 @@
         "title": "Claude Code省Token插件Governor开源",
         "chinese_title": "Claude Code省Token插件Governor开源",
         "original_title": "Governor – a Claude Code plugin to reduce token/context waste",
-        "summary": "Governor面向Claude Code重度用户，提供紧凑输出、上下文压缩、工具日志过滤、使用遥测和范围漂移防护，试图从系统层面减少上下文浪费。",
+        "summary": "Governor面向Claude Code重度用户，提供精简输出、上下文压缩、工具日志过滤和用量遥测，试图从提示、记忆和终端输出多个环节降低token浪费。",
         "rating": "A",
         "score": 76,
         "type": "tool",
@@ -15,8 +15,8 @@
         "entities": [
           "Claude Code",
           "Governor",
-          "上下文压缩",
-          "工具日志过滤"
+          "Token",
+          "上下文压缩"
         ],
         "sourceLinks": [
           {
@@ -29,14 +29,17 @@
         "published_at": "2026-05-02T13:04:02.463852",
         "source": "Hacker News",
         "url": "https://github.com/0xhimanshu/governor",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "A",
+        "extension": "这类插件说明AI编程工具生态正在从模型能力竞争延伸到上下文治理和成本控制，后续可观察Claude Code、Codex等Agent工具是否内置类似能力。"
       },
       {
         "id": "17ffe45a3b9f344764c581fdbfb903e4",
         "title": "AI电话派单公司Avoca估值冲到10亿美元",
         "chinese_title": "AI电话派单公司Avoca估值冲到10亿美元",
         "original_title": "Avoca, whose AI agents let physical services businesses handle inbound calls and dispatch, raised $125M+ across seed, Series A, and Series B at a $1B valuation (Allie Garfinkle/Fortune)",
-        "summary": "Avoca为暖通等线下服务企业提供接听来电、识别需求并调度工单的AI Agent，连续完成种子轮、A轮和B轮融资，总额超过1.25亿美元，估值达到10亿美元。",
+        "summary": "Avoca用AI Agent帮助维修、HVAC等线下服务商接听来电并完成派单，已累计融资超过1.25亿美元，最新估值达到10亿美元。",
         "rating": "A+",
         "score": 89,
         "type": "funding",
@@ -45,8 +48,8 @@
         "entities": [
           "Ai Agent",
           "Avoca",
-          "暖通服务",
-          "本地服务"
+          "Fortune",
+          "Hvac"
         ],
         "sourceLinks": [
           {
@@ -62,7 +65,7 @@
         "event_id": null,
         "original_content": "Allie Garfinkle / Fortune : Avoca, whose AI agents let physical services businesses handle inbound calls and dispatch, raised $125M+ across seed, Series A, and Series B at a $1B valuation — Tyson Chen and Apurva Shrivastava were chasing restaurants when they found an HVAC company. — The two engineers had first met …",
         "grade": "A+",
-        "extension": "这类公司把AI Agent落到高频、强转化的本地服务场景，后续可追踪其对传统呼叫中心、垂直SaaS和线下服务运营流程的替代速度。"
+        "extension": "垂直行业语音Agent正在从客服走向交易和调度流程，后续可延伸到本地服务SaaS、呼叫中心替代和中小企业AI工具付费能力。"
       },
       {
         "id": "7d6da08ec8305c68cd8a697a809a052a",
@@ -16482,299 +16485,9 @@
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260425/p3#a260425p3",
         "event_id": null
-      },
-      {
-        "id": "66a1f1f706d41038b986d9b819bfb3ac",
-        "title": "OpenAI图表再掀热议，社区拿Artificial Analysis追踪能力曲线",
-        "chinese_title": "OpenAI图表再掀热议，社区拿Artificial Analysis追踪能力曲线",
-        "original_title": "OpenAI scores on artificial analysis over time",
-        "summary": "Reddit用户用 GPT Image 2 一次生成 OpenAI 在 Artificial Analysis 上的长期成绩图，引发社区围绕模型能力演进和评测方法本身的讨论。",
-        "rating": "A",
-        "score": 79,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "如果更多第三方评测开始用可视化方式持续追踪模型成绩，围绕基准解释权和评测透明度的讨论会进一步升温。",
-        "entities": [
-          "Artificial Analysis",
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1sv25m7/openai_scores_on_artificial_analysis_over_time/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777093886,
-        "published_at": "2026-04-25T13:11:26.137315",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1sv25m7/openai_scores_on_artificial_analysis_over_time/",
-        "event_id": null
-      },
-      {
-        "id": "6dec3cf1d9570d3195543b1f94b23229",
-        "title": "DeepSeek V4 Flash被指逼近Gemini 3 Flash，成本只要五分之一",
-        "chinese_title": "DeepSeek V4 Flash被指逼近Gemini 3 Flash，成本只要五分之一",
-        "original_title": "Deepseek V4 flash (high) rivals Gemini 3 flash at 1/5th the cost",
-        "summary": "社区讨论称 DeepSeek V4 Flash high 在部分公开对比中已接近 Gemini 3 Flash 水平，但推理价格更低，强化了市场对高性价比模型战的关注。",
-        "rating": "S",
-        "score": 96,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若后续更多榜单验证这一价效比，国内模型价格战可能进一步压缩海外厂商的轻量模型利润空间。",
-        "entities": [
-          "DeepSeek",
-          "Gemini",
-          "Google"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (deepseek)",
-            "url": "https://www.reddit.com/r/singularity/comments/1suxnmw/deepseek_v4_flash_high_rivals_gemini_3_flash_at/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777093886,
-        "published_at": "2026-04-25T13:11:26.137488",
-        "source": "Technological Singularity (deepseek)",
-        "url": "https://www.reddit.com/r/singularity/comments/1suxnmw/deepseek_v4_flash_high_rivals_gemini_3_flash_at/",
-        "event_id": null
-      },
-      {
-        "id": "2ef3ce142bf888fc2503494741951bac",
-        "title": "GPT-5.5的SimpleBench成绩出炉，社区盯上通用能力新坐标",
-        "chinese_title": "GPT-5.5的SimpleBench成绩出炉，社区盯上通用能力新坐标",
-        "original_title": "GPT-5.5's SimpeBench scores are out",
-        "summary": "SimpleBench 公布 GPT-5.5 最新得分后，用户开始拿它与现有头部模型横向比较，关注点集中在通用推理能力是否继续拉开差距。",
-        "rating": "S",
-        "score": 94,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "如果 SimpleBench 被更多开发者采用，它可能成为继 Arena、Artificial Analysis 之后新的模型选型参考。",
-        "entities": [
-          "GPT",
-          "OpenAI",
-          "Simplebench"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1suwieo/gpt55s_simpebench_scores_are_out/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777093886,
-        "published_at": "2026-04-25T13:11:26.137608",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1suwieo/gpt55s_simpebench_scores_are_out/",
-        "event_id": null
-      },
-      {
-        "id": "d6d9cd0d367eb73c28aea8ea70671475",
-        "title": "小米发布MiMo V2.5 Pro，社区称它已能和DeepSeek V4分庭抗礼",
-        "chinese_title": "小米发布MiMo V2.5 Pro，社区称它已能和DeepSeek V4分庭抗礼",
-        "original_title": "Xiaomi has released a MiMo V2.5 Pro model. It's apparently about as good as Deepseek V4 (but at different tasks) but is significantly cheaper.",
-        "summary": "小米新推 MiMo V2.5 Pro 后，社区普遍将其与 DeepSeek V4 对比，认为两者能力各有侧重，但 MiMo 在价格上更激进。",
-        "rating": "S",
-        "score": 97,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "这会把国内大模型竞争继续推向\"更便宜但不明显降质\"的阶段，也可能迫使云厂商重新设计套餐。",
-        "entities": [
-          "DeepSeek",
-          "Mimo",
-          "Xiaomi"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (deepseek)",
-            "url": "https://www.reddit.com/r/singularity/comments/1suvcnr/xiaomi_has_released_a_mimo_v25_pro_model_its/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777093886,
-        "published_at": "2026-04-25T13:11:26.137819",
-        "source": "Technological Singularity (deepseek)",
-        "url": "https://www.reddit.com/r/singularity/comments/1suvcnr/xiaomi_has_released_a_mimo_v25_pro_model_its/",
-        "event_id": null
-      },
-      {
-        "id": "6cb752e7e661ca57c32b9d0b735eaa8e",
-        "title": "DeepSeek V4 Pro冲榜背后代价不小，跑测成本被曝较V3.2暴涨15倍",
-        "chinese_title": "DeepSeek V4 Pro冲榜背后代价不小，跑测成本被曝较V3.2暴涨15倍",
-        "original_title": "Deepseek V4 Pro is 15x cost to run Artificial Analysis bench from V3.2, higher than Gemini 3.1 Pro",
-        "summary": "用户对比 Artificial Analysis 跑测成本后发现，DeepSeek V4 Pro 虽然性能提升明显，但单次评测成本相较 V3.2 大幅抬升，甚至高于部分 Gemini Pro 档位。",
-        "rating": "A+",
-        "score": 90,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "性能跃升若伴随成本暴涨，企业端会更关注单位效果提升是否足以支撑API采购和大规模部署。",
-        "entities": [
-          "Artificial Analysis",
-          "DeepSeek",
-          "Gemini"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (deepseek)",
-            "url": "https://www.reddit.com/r/singularity/comments/1sur3km/deepseek_v4_pro_is_15x_cost_to_run_artificial/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777093886,
-        "published_at": "2026-04-25T13:11:26.137946",
-        "source": "Technological Singularity (deepseek)",
-        "url": "https://www.reddit.com/r/singularity/comments/1sur3km/deepseek_v4_pro_is_15x_cost_to_run_artificial/",
-        "event_id": null
-      },
-      {
-        "id": "8a2e78912e3a1cc1f85708f91e04a14c",
-        "title": "Rust终端编程代理VT Code登上Hacker News，主打多模型接入",
-        "chinese_title": "Rust终端编程代理VT Code登上Hacker News，主打多模型接入",
-        "original_title": "Show HN: VT Code – Rust TUI coding agent with multi-provider support",
-        "summary": "开源项目 VT Code 作为 Rust 编写的 TUI coding agent 登上 Hacker News，卖点是本地终端交互和多家模型服务商统一接入。",
-        "rating": "B",
-        "score": 71,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "如果这类终端代理持续升温，开发者工具竞争会加速从\"聊天窗口\"转向\"工作流原生嵌入\"。",
-        "entities": [
-          "Coding Agent",
-          "Rust",
-          "Vt Code"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/vinhnx/VTCode"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777093886,
-        "published_at": "2026-04-25T13:11:26.138646",
-        "source": "Hacker News",
-        "url": "https://github.com/vinhnx/VTCode",
-        "event_id": null
-      },
-      {
-        "id": "8f7032c79b32a780611fbd1088fd5788",
-        "title": "ChatGPT开始批量生成论文摘要，研究信息分发又快了一步",
-        "chinese_title": "ChatGPT开始批量生成论文摘要，研究信息分发又快了一步",
-        "original_title": "ChatGPT generated research paper summaries are here",
-        "summary": "社区分享 ChatGPT 生成的研究论文摘要功能，显示学术阅读入口正在进一步被大模型压缩到更短的理解路径。",
-        "rating": "A",
-        "score": 86,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "如果这类摘要能力稳定落地，文献发现、知识管理和论文推荐产品都可能重新定义核心体验。",
-        "entities": [
-          "GPT",
-          "OpenAI",
-          "Research Paper Summaries"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1suhb2w/chatgpt_generated_research_paper_summaries_are/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777093886,
-        "published_at": "2026-04-25T13:11:26.138185",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1suhb2w/chatgpt_generated_research_paper_summaries_are/",
-        "event_id": null
-      },
-      {
-        "id": "d79b07366d8a8cb44bc8d1b70442dd13",
-        "title": "OpenAI新图像模型再刷屏，用户直呼Image Gen 2已经离谱",
-        "chinese_title": "OpenAI新图像模型再刷屏，用户直呼Image Gen 2已经离谱",
-        "original_title": "This is getting insane (image gen 2)",
-        "summary": "社区展示两张由 OpenAI 新图像模型生成的作品，讨论集中在画面一致性、细节控制和创作门槛被进一步拉低。",
-        "rating": "A",
-        "score": 80,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "如果用户作品继续病毒式扩散，图像模型的产品竞争会更快从参数转向审美控制和工作流整合。",
-        "entities": [
-          "Gpt Image",
-          "Image Generation",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1suetw1/this_is_getting_insane_image_gen_2/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777093886,
-        "published_at": "2026-04-25T13:11:26.138309",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1suetw1/this_is_getting_insane_image_gen_2/",
-        "event_id": null
-      },
-      {
-        "id": "742c4ca464d0526489a6b1a7a4acbaf0",
-        "title": "Anthropic一年前预言AI员工将至，今天回看更像行业倒计时",
-        "chinese_title": "Anthropic一年前预言AI员工将至，今天回看更像行业倒计时",
-        "original_title": "Exactly 1 year ago, Anthropic said fully AI employees were just 1 year away",
-        "summary": "Reddit用户翻出 Anthropic 一年前关于\"全AI员工\"只差一年的判断，借此讨论智能体自动化究竟兑现了多少，又离真正替岗还有多远。",
-        "rating": "B",
-        "score": 70,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "这类回顾帖会持续推动行业重新审视 AI 员工叙事的真实进度，以及企业组织结构何时开始被正式改写。",
-        "entities": [
-          "Ai Agents",
-          "Ai Employees",
-          "Anthropic"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1sudjx3/exactly_1_year_ago_anthropic_said_fully_ai/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777093886,
-        "published_at": "2026-04-25T13:11:26.138416",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1sudjx3/exactly_1_year_ago_anthropic_said_fully_ai/",
-        "event_id": null
-      },
-      {
-        "id": "3f0396616d2376dd77fc64d2e25d5ff8",
-        "title": "DeepSeek V4 Pro在Arena口碑不及预期，能力强不等于用户更爱用",
-        "chinese_title": "DeepSeek V4 Pro在Arena口碑不及预期，能力强不等于用户更爱用",
-        "original_title": "DeepSeek V4 Pro underwhelms on Arena (crowdsourced user preference benchmark, not a capability benchmark)",
-        "summary": "尽管 DeepSeek V4 Pro 在若干能力榜单上表现亮眼，但用户指出它在 Arena 这类偏主观偏好评测中的成绩并不突出，暴露模型\"会做题\"和\"讨人喜欢\"之间的落差。",
-        "rating": "A+",
-        "score": 87,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这会促使更多团队把评估重点从硬指标扩展到交互体验、风格偏好和真实用户留存。",
-        "entities": [
-          "Arena",
-          "DeepSeek",
-          "User Preference Benchmark"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (deepseek)",
-            "url": "https://www.reddit.com/r/singularity/comments/1suci24/deepseek_v4_pro_underwhelms_on_arena_crowdsourced/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777093886,
-        "published_at": "2026-04-25T13:11:26.138527",
-        "source": "Technological Singularity (deepseek)",
-        "url": "https://www.reddit.com/r/singularity/comments/1suci24/deepseek_v4_pro_underwhelms_on_arena_crowdsourced/",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-02T13:04:19.911600",
-  "total_news": 538
+  "last_updated": "2026-05-02T14:04:16.772114",
+  "total_news": 528
 }
