@@ -186,6 +186,31 @@
           "reason": "该新闻讨论ChatGPT免费版默认广告追踪和隐私/商业化问题，与旧事件中的训练奖励失准不是同一核心事件，应单独成组。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-05-02T20:50:55.866038",
+      "batch_id": "20260502205055",
+      "corrections_applied": 3,
+      "details": [
+        {
+          "news_id": "b9b087af32ca366090346dd557f281ed",
+          "from_event_id": "d30e7c47",
+          "to_event_id": "e9153f50",
+          "reason": "这条Custom Voices新闻属于同一轮xAI/Grok语音与开发者API产品更新，已有事件已包含Custom Voices和Grok语音相关实体，应归并避免重复事件。"
+        },
+        {
+          "news_id": "ea5cd214555c50c531b17905f56c4183",
+          "from_event_id": "6d71eede",
+          "to_event_id": "ce991a40",
+          "reason": "这条报道与已有GPT/Erdos证明方法扩展新闻讨论同一组AI辅助数学证明进展，应归入同一事件。"
+        },
+        {
+          "news_id": "246dd1aa61cf5c12528315ba81aa3985",
+          "from_event_id": "d2d35fd2",
+          "to_event_id": "973f48f7",
+          "reason": "这条Claude/Cursor误删PocketOS数据库新闻与已有Cursor代理误删生产库事件是同一事故，应合并到已有事件。"
+        }
+      ]
     }
   ]
 }
