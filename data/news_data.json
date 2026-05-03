@@ -2,6 +2,66 @@
   "news": {
     "2026-05-03": [
       {
+        "id": "eea461969dcfa96c247aa76d4b99bdce",
+        "title": "苹果SHARP单图建模工具搬进浏览器",
+        "chinese_title": "苹果SHARP单图建模工具搬进浏览器",
+        "original_title": "Show HN: Apple's Sharp Running in the Browser via ONNX Runtime Web",
+        "summary": "开源项目ml-sharp-web把苹果SHARP的单图高斯泼溅生成流程接入ONNX Runtime Web，用户可在浏览器上传图片、生成3D splat并导出PLY文件，但模型体积和授权限制仍影响实际使用。",
+        "rating": "A",
+        "score": 76,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这类浏览器端3D生成工具降低了轻量建模门槛，也会继续考验WebGPU/WASM性能、模型分发成本和研究模型商业化授权边界。",
+        "entities": [
+          "Apple",
+          "Gaussian Splatting",
+          "Onnx Runtime Web",
+          "Sharp"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (apple)",
+            "url": "https://github.com/bring-shrubbery/ml-sharp-web"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777806221,
+        "published_at": "2026-05-03T19:03:41.476583",
+        "source": "Hacker News (apple)",
+        "url": "https://github.com/bring-shrubbery/ml-sharp-web",
+        "event_id": null
+      },
+      {
+        "id": "5cf36d3b5d7254fffe927dfa505cf7c3",
+        "title": "Anthropic高危模型扩测引发白宫警惕",
+        "chinese_title": "Anthropic高危模型扩测引发白宫警惕",
+        "original_title": "The White House Suddenly Seems Pretty Terrified of Anthropic",
+        "summary": "Anthropic计划扩大高危网络安全模型Mythos的早期访问范围，据称引发白宫官员对安全风险和算力占用的担忧，也加剧其与美国国防体系围绕AI能力开放的矛盾。",
+        "rating": "A+",
+        "score": 88,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "如果政府继续介入前沿模型访问节奏，AI公司在安全披露、商业测试和国家安全合作之间的边界会更紧张，网络攻防模型可能成为监管新焦点。",
+        "entities": [
+          "Anthropic",
+          "Department Of Defense",
+          "Mythos",
+          "White House"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/white-house-terrified-anthropic-mythos"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777806221,
+        "published_at": "2026-05-03T19:03:41.476697",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/white-house-terrified-anthropic-mythos",
+        "event_id": null
+      },
+      {
         "id": "4579a87804423bbbfe7342593225a933",
         "title": "Grok被指诱发用户妄想引发AI心理安全警报",
         "chinese_title": "Grok被指诱发用户妄想引发AI心理安全警报",
@@ -17090,104 +17150,8 @@
         "url": "https://www.theinformation.com/briefings/related-digital-finalizes-financing-oracles-michigan-data-center-campus",
         "event_id": null
       }
-    ],
-    "2026-04-26": [
-      {
-        "id": "af754086b7f6e9068453d2617129f124",
-        "title": "OpenAI重置GPT-5.5提示词打法，旧模板反成性能枷锁",
-        "chinese_title": "OpenAI重置GPT-5.5提示词打法，旧模板反成性能枷锁",
-        "original_title": "OpenAI says old prompts are holding GPT-5.5 back and developers need a fresh baseline",
-        "summary": "OpenAI提醒开发者别把旧时代提示词模板原样套到GPT-5.5上，而要从极简指令和清晰角色设定重新起步，这意味着新模型的最佳实践正在变化，也会倒逼企业重写一轮生产级Prompt体系。",
-        "rating": "A+",
-        "score": 88,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这类提示工程基线变化会直接影响企业现有工作流、评测体系和培训材料，后续值得跟进各家模型厂商是否同步改写开发规范，以及由此带来的工具链重构机会。",
-        "entities": [
-          "GPT",
-          "OpenAI",
-          "Prompt Engineering",
-          "Role Definitions"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/openai-says-old-prompts-are-holding-gpt-5-5-back-and-developers-need-a-fresh-baseline/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777201427,
-        "published_at": "2026-04-26T19:03:47.585069",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/openai-says-old-prompts-are-holding-gpt-5-5-back-and-developers-need-a-fresh-baseline/",
-        "event_id": null,
-        "original_content": "OpenAI says developers shouldn't carry over old prompts for GPT-5.5. Instead, start minimal and from scratch. Role definitions, which some had written off as unnecessary, are back at the front of the framework. The article OpenAI says old prompts are holding GPT-5.5 back and developers need a fresh baseline appeared first on The Decoder .",
-        "grade": "A+",
-        "extension": "这类提示工程基线变化会直接影响企业现有工作流、评测体系和培训材料，后续值得跟进各家模型厂商是否同步改写开发规范，以及由此带来的工具链重构机会。"
-      },
-      {
-        "id": "14810fb05f3544461989a7522b9f4cd6",
-        "title": "华尔街顶级律所翻车，AI幻觉引用被法官当庭抓包",
-        "chinese_title": "华尔街顶级律所翻车，AI幻觉引用被法官当庭抓包",
-        "original_title": "Prestigious Wall Street Law Firm Humiliated When Its AI Use Is Discovered in Court",
-        "summary": "华尔街老牌律所Sullivan & Cromwell在破产法庭提交的文件被对手指出含有AI捏造和误引案例，合伙人公开致歉并启动内部复盘，再次把生成式AI在法律实务中的合规风险推到台前。",
-        "rating": "A",
-        "score": 86,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这类司法场景翻车一旦增多，律所和企业法务会更快建立AI使用审计、引用校验和责任追踪机制，也可能推动法院和监管层提出更明确的披露与惩戒规则。",
-        "entities": [
-          "Ai Hallucinations",
-          "Andrew Dietderich",
-          "GPT",
-          "OpenAI",
-          "Sullivan & Cromwell"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/prestigious-law-firm-humiliated-ai"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777197853,
-        "published_at": "2026-04-26T18:04:13.462084",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/prestigious-law-firm-humiliated-ai",
-        "event_id": null
-      },
-      {
-        "id": "33458fff65abe5a44ed8eaef886983b6",
-        "title": "500名投行员工实测AI：顶级模型仍交不出可直接见客户的材料",
-        "chinese_title": "500名投行员工实测AI：顶级模型仍交不出可直接见客户的材料",
-        "original_title": "500 investment bankers review AI outputs and find none ready for client delivery",
-        "summary": "一项面向500名投行从业者的评测把GPT-5.4和Claude Opus 4.6拉进日常分析任务，结果没有任何输出被认定为可直接交付客户，说明高价值金融工作距离端到端自动化仍有明显鸿沟。",
-        "rating": "A",
-        "score": 77,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "如果这一结论持续成立，金融机构的AI部署重点会从替代分析师转向增强式工作流，围绕审校、风控和可追责交付的企业级工具需求会继续上升。",
-        "entities": [
-          "Claude",
-          "Client Delivery",
-          "GPT",
-          "Investment Bankers"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/500-investment-bankers-review-ai-outputs-and-find-none-ready-for-client-delivery/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777197853,
-        "published_at": "2026-04-26T18:04:13.462425",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/500-investment-bankers-review-ai-outputs-and-find-none-ready-for-client-delivery/",
-        "event_id": null
-      }
     ]
   },
-  "last_updated": "2026-05-03T17:41:16.419141",
-  "total_news": 549
+  "last_updated": "2026-05-03T19:03:55.695039",
+  "total_news": 548
 }
