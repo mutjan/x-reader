@@ -92,6 +92,96 @@
         "event_id": null
       },
       {
+        "id": "899ade4e086f833a5573090996ac3ed6",
+        "title": "DeepSeek V4低价调用引发开发者迁移",
+        "chinese_title": "DeepSeek V4低价调用引发开发者迁移",
+        "original_title": "Keep getting rate-limited by Claude, so I tried out DeepSeek V4 for the first time. After 10M+ tokens, holy crap the cost is ... 🤯",
+        "summary": "开发者因Claude限流转向DeepSeek V4，连续使用千万级token后强调成本优势，显示低价高上下文模型正在冲击主流闭源API。",
+        "rating": "S",
+        "score": 92,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "DeepSeek的价格优势可能迫使Claude、OpenAI等服务重新权衡限流和定价，也会推动长任务向更便宜模型迁移。",
+        "entities": [
+          "Api定价",
+          "Claude",
+          "DeepSeek",
+          "长上下文"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/jbhuang0604/status/2050686882653065496"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777767616,
+        "published_at": "2026-05-03T08:20:16.012300",
+        "source": "x",
+        "url": "https://x.com/jbhuang0604/status/2050686882653065496",
+        "event_id": null
+      },
+      {
+        "id": "59399283d71c2b1fb924b674b5e62905",
+        "title": "MicroGPT被烧进FPGA跑出高吞吐",
+        "chinese_title": "MicroGPT被烧进FPGA跑出高吞吐",
+        "original_title": "We implemented @karpathy 's MicroGPT fully on FPGA fabric. No GPU. No PyTorch. No CPU inference loop. Just a transformer burned into hardware, generat...",
+        "summary": "开发者把Karpathy的MicroGPT完整部署到FPGA逻辑中，不依赖GPU、PyTorch或CPU推理循环，实现每秒5万token以上的小模型生成。",
+        "rating": "A",
+        "score": 78,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "硬件化Transformer展示推理不必都运行在通用软件栈中，后续可关注FPGA和边缘设备上的低功耗部署。",
+        "entities": [
+          "Andrej Karpathy",
+          "Fpga",
+          "Microgpt",
+          "Transformer"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/luthiraabeykoon/status/2050620806569361605"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777767616,
+        "published_at": "2026-05-03T08:20:16.012695",
+        "source": "x",
+        "url": "https://x.com/luthiraabeykoon/status/2050620806569361605",
+        "event_id": null
+      },
+      {
+        "id": "a2a183e032ca410897f2067f9ad07a97",
+        "title": "抽象思维链让模型少用token推理",
+        "chinese_title": "抽象思维链让模型少用token推理",
+        "original_title": "RT AlphaSignal AI: Researchers just taught AI to think 12x faster without using words. Reasoning chains are powerful but expensive. Every token a mode...",
+        "summary": "新论文Abstract Chain-of-Thought让模型用保留占位符压缩推理过程，最多减少约11.6倍推理token且保持相近准确率。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果压缩思维链可规模化，推理模型成本会显著下降，也会影响长链推理的可解释性和API计费结构。",
+        "entities": [
+          "Abstract Chain-Of-Thought",
+          "LLM",
+          "Token成本",
+          "推理模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ChrSzegedy/status/2050605510806864269"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777767616,
+        "published_at": "2026-05-03T08:20:16.013158",
+        "source": "x",
+        "url": "https://x.com/ChrSzegedy/status/2050605510806864269",
+        "event_id": null
+      },
+      {
         "id": "117a0308a653006bcda109901cae0402",
         "title": "1X美国工厂押注家用人形机器人",
         "chinese_title": "1X美国工厂押注家用人形机器人",
@@ -159,9 +249,9 @@
         "title": "银行CEO财报会用AI分身发言近一小时",
         "chinese_title": "银行CEO财报会用AI分身发言近一小时",
         "original_title": "Bank CEO Brags He Used AI Clone of Himself to Host Conference Call",
-        "summary": "Customers Bank CEO Sam Sidhu在财报电话会上让AI分身代替自己发言，接近一小时后才揭晓，引发对高管AI替身、企业沟通透明度和职场双标的讨论。",
+        "summary": "Customers Bank CEO Sam Sidhu在财报电话会上让AI分身代替自己发言，接近一小时后才揭晓，引发企业沟通透明度争议。",
         "rating": "A",
-        "score": 86,
+        "score": 96,
         "type": "society",
         "typeName": "社会影响",
         "expansion": "可延伸到AI分身在企业会议、客服和销售中的合规边界，以及高管使用自动化工具与普通员工使用AI代劳之间的管理尺度差异。",
@@ -169,7 +259,7 @@
           "Ai分身",
           "Customers Bank",
           "Sam Sidhu",
-          "企业沟通"
+          "财报电话会"
         ],
         "sourceLinks": [
           {
@@ -182,7 +272,10 @@
         "published_at": "2026-05-03T01:46:01.268152",
         "source": "Futurism",
         "url": "https://futurism.com/artificial-intelligence/bank-ceo-ai-clone-call",
-        "event_id": null
+        "event_id": null,
+        "original_content": "If you decided to blow off a Zoom meeting by sending an AI dummy instead, you might find yourself out of a job. But when a head honcho does it, it’s a masterfully executed stunt, a sign of a business genius who’s got his finger on the pulse. Take Sam Sidhu, the CEO of Customers Bank. During a conference call discussing the company’s latest earnings reports, he waited nearly an hour before revealing that it was actually an AI that had been speaking all along, CNBC reports — which, to be honest, feels like a huge waste of everyone’s time. “The prepared remarks you heard on my behalf today were delivered by my AI clone, not read by me,” Sidhu said, bragging that it was a potential first for a public company earnings call. (Whether anyone was actually fooled is unclear.) As it turns out, Customers Bank recently signed a multiyear partnership with OpenAI to deploy its AI models across the bank, as well as collaborate to create custom AI capabilities tailored to its banking operations, it announced Monday . Sidhu’s suspiciously handsome AI clone was intended to draw attention to the new collab, as well as unintentionally to his own vanity. Sidhu is expecting the AI to have an absolutely incredible impact, telling CNBC he projects AI will improve the company’s efficiency ratio — which is calculated by dividing a company’s non-interest operating costs by revenue — from 49 percent to the low 40s. As OpenAI’s AI agents are rolled out across the bank over the next six to twelve months, he expects the time it takes to close a commercial loan to go down from upwards of 30 days to just seven. And opening accounts for commercial clients, which typically can take over a day, will be completed in just twenty minutes. “When you have an autonomous agent, you’re essentially creating a digital worker… and they can work around the clock,” Sidhu told CNBC . These are bold predictions, given that AI agents remain error prone and have caused numerous incidents at major corporations that have embraced them, including Amazon and Meta. But AI fever has long taken hold in the c-suite, and Sidhu is far from the first CEO to create an AI simulacrum of themselves . Chief among them is Meta CEO Mark Zuckerberg, who is reportedly building a CEO AI agent to help him do do his job — on top of becoming omnipresent by building a “photorealistic” AI clone that staff can turn to for advice at any time. More on AI: Sam Altman Caught in What May Be His Most Spectacular Lie Yet The post Bank CEO Brags He Used AI Clone of Himself to Host Conference Call appeared first on Futurism .",
+        "grade": "S",
+        "extension": "高管AI替身会推动公司披露规则、投资者关系和职场AI使用边界讨论，也可能成为企业AI表演化案例。"
       },
       {
         "id": "2b90679dac74c8cf9e7f3a1f52b971a5",
@@ -247,20 +340,20 @@
       },
       {
         "id": "cd9ebcdc68c3774c9aacb44ae51a92f3",
-        "title": "用户呼吁AI Agent学会看人示范",
-        "chinese_title": "用户呼吁AI Agent学会看人示范",
+        "title": "用户呼吁Agent学会看人示范",
+        "chinese_title": "用户呼吁Agent学会看人示范",
         "original_title": "Agents Need to Learn by Watching",
-        "summary": "Reddit用户在体验Atlas Browser后认为，当前Agent仍难完成点餐等基础任务，真正缺失的是一次示范即可复现任务的Show Agent模式和实时纠错层。",
+        "summary": "Reddit用户体验Atlas Browser后认为Agent仍难完成点餐等基础任务，真正缺失的是一次示范即可复现任务的Show Agent模式。",
         "rating": "A",
-        "score": 79,
-        "type": "opinion",
+        "score": 88,
+        "type": "tool",
         "typeName": "观点访谈",
         "expansion": "可延伸到浏览器Agent从纯指令执行走向示范学习、交互纠错和个人流程记忆，评估下一代Agent产品的关键体验指标。",
         "entities": [
           "Ai Agent",
           "Atlas Browser",
-          "浏览器自动化",
-          "示范学习"
+          "Show Agent",
+          "浏览器自动化"
         ],
         "sourceLinks": [
           {
@@ -273,24 +366,27 @@
         "published_at": "2026-05-03T01:46:01.268451",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1t1pzko/agents_need_to_learn_by_watching/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Just came back to Atlas Browser to see what’s changed since I last tried it a few months ago. The agent still seems to struggle with very basic tasks, like ordering lunch from a local restaurant. It can get to the menu, but then it stalls, gets confused, or veers off into an unrelated path. What feels missing is a true “Show Agent” mode: let me demonstrate a task once, then have the agent repeat it. And alongside that, a real-time correction layer where I can talk or type to the agent while it’s working, without fully taking control or pausing the flow through a follow-up message. The current “take control” and chat follow-up options don’t really solve that interaction problem. I don’t want to restart the task or interrupt the whole process; I want to nudge the agent in the moment. submitted by /u/kamenpb [link] [comments]",
+        "grade": "A+",
+        "extension": "Agent从指令执行走向观察学习，将影响浏览器Agent、人机协作纠错和企业流程自动化产品设计。"
       },
       {
         "id": "e97dd053ecf983c5e9c4f30e52f75cda",
         "title": "Altman淡化AI替代人类引发争论",
         "chinese_title": "Altman淡化AI替代人类引发争论",
         "original_title": "Sam Altman has changed his stance on the claims that AI will replace humans.",
-        "summary": "Reddit讨论认为Sam Altman近期更强调AI会帮助人而非替代人，评论区围绕这是真实判断变化、PR转向还是监管压力下的措辞调整展开争论。",
+        "summary": "社区讨论认为Sam Altman近期不再强调AI会替代人类，转而更强调帮助人类，引发对其立场变化和公关策略的争议。",
         "rating": "A",
-        "score": 86,
+        "score": 89,
         "type": "opinion",
         "typeName": "观点访谈",
         "expansion": "可跟踪AI公司在就业冲击上的公开叙事如何随监管、诉讼和商业化压力变化，并与企业客户销售话术形成对照。",
         "entities": [
-          "AGI",
-          "Ai就业影响",
+          "Ai就业",
           "OpenAI",
-          "Sam Altman"
+          "Sam Altman",
+          "公共叙事"
         ],
         "sourceLinks": [
           {
@@ -303,14 +399,17 @@
         "published_at": "2026-05-03T01:46:01.268538",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1t1pten/sam_altman_has_changed_his_stance_on_the_claims/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "submitted by /u/Distinct_Fox_6358 [link] [comments]",
+        "grade": "A+",
+        "extension": "Altman表述变化会影响外界对OpenAI社会承诺的理解，也可延展到就业冲击、监管沟通和企业叙事调整。"
       },
       {
         "id": "4e09b4c93f5f8f982d057985335bf318",
         "title": "赌场式手游鲸鱼玩家花费数万美元",
         "chinese_title": "赌场式手游鲸鱼玩家花费数万美元",
         "original_title": "A look at casino-style games, considered gambling in some US states, where player \"whales\" spend tens of thousands via IAP on Apple, Google, and Meta platforms (Bloomberg)",
-        "summary": "Bloomberg报道关注被部分美国州视为赌博的赌场式游戏，少数高消费玩家通过苹果、谷歌和Meta平台内购花费数万美元，引出平台抽成与合规争议。",
+        "summary": "Bloomberg关注部分美国州视为赌博的赌场式游戏，少数高消费玩家通过苹果、谷歌和Meta平台内购花费数万美元。",
         "rating": "A",
         "score": 76,
         "type": "safety",
@@ -320,7 +419,6 @@
           "Apple",
           "Google",
           "Meta",
-          "应用内购买",
           "赌场式游戏"
         ],
         "sourceLinks": [
@@ -334,23 +432,26 @@
         "published_at": "2026-05-03T01:46:01.268625",
         "source": "Techmeme (apple)",
         "url": "https://www.techmeme.com/260502/p5#a260502p5",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Bloomberg : A look at casino-style games, considered gambling in some US states, where player “whales” spend tens of thousands via IAP on Apple, Google, and Meta platforms — “please remove this game from my computer ..thank you,” read the email to a customer service representative for High 5 Casino …",
+        "grade": "A",
+        "extension": "平台从高风险游戏内购中抽成，会带来应用商店责任、赌博监管和消费者保护的新讨论。"
       },
       {
         "id": "771106eacbfa4d3799886cab423e99ac",
         "title": "只吃1930年前文本的复古AI模型上线",
         "chinese_title": "只吃1930年前文本的复古AI模型上线",
         "original_title": "New AI Trained Only on Pre-1930 Data Speaks Like the Most Old-Timey Guy Imaginable",
-        "summary": "研究者推出13B参数模型Talkie，只用1930年前的书籍、报纸等文本训练，让聊天风格带有强烈旧时代语言气质，展示数据时间切片对模型人格的影响。",
+        "summary": "研究者推出13B参数模型Talkie，只用1930年前书籍、报纸等文本训练，让对话风格呈现强烈旧时代语言气质。",
         "rating": "A",
-        "score": 75,
+        "score": 80,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "可延伸到训练数据年代、版权和文化偏差如何塑造模型表达，也可作为垂直人格模型和复古内容生成产品的案例。",
         "entities": [
+          "LLM",
           "Talkie",
-          "复古Ai",
-          "大语言模型",
+          "复古Ai模型",
           "训练数据"
         ],
         "sourceLinks": [
@@ -364,25 +465,27 @@
         "published_at": "2026-05-03T01:46:01.268710",
         "source": "Futurism",
         "url": "https://futurism.com/artificial-intelligence/old-timey-ai-pre-1930",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Tired of your AI chatbot’s constantly-glazing therapy-speak? You could instead try striking up a conversation with “Talkie,” an old-timey AI model which is trained purely on books, newspapers, and other text sources from before the year 1930. With its thirteen billion parameters, the researchers behind Talkie say it’s the largest “vintage” model they’re aware of, capable of holding down a conversation as if truly stuck in a past when movies with sound in them were still a novel phenomenon, and when news announcers rattled off the latest signs of tumult in the world in a bouncy Mid-Atlantic accent. Intriguingly, Talkie is “basically” unaware of the fact it’s limited to pre-1930 times, according to David Duvenaud, an associate professor of computer science at the University of Toronto. The AI, he explained in a tweet , “doesn’t have a system prompt and they’re not smart enough yet (as far as we can tell) to introspect well enough to figure out their cut-off date.” Announcing Talkie: a new, open-weight historical LLM! We trained and finetuned a 13B model on a newly-curated dataset of only pre-1930 data. Try it below! with @AlecRad and @status_effects pic.twitter.com/kThUESG13e — David Duvenaud (@DavidDuvenaud) April 27, 2026 Talkie isn’t perfect. The researchers note that it exhibits signs of “temporal leakage,” in which it produces clearly anachronistic answers, such as knowing that “Franklin D. Roosevelt was president of the United States from 1933 to 1937.” This shows the difficult of keeping its data set pure. Nonetheless, it raises fascinating questions. What is an LLM’s ability to predict the future? Can the nearly-century-old AI learn a modern programming language? Better yet, can it make scientific discoveries? “As Demis Hassabis has asked,” the researchers wrote in a blog post, referring to the Google DeepMind CEO, “could a model trained up to 1911 independently discover General Relativity, as Einstein did in 1915?” These questions remain hazy, but early tests showed that Talkie was able to create one-line programs, but still has “a long way to go before this capability is notable.” It’s also not quite a soothsayer: tests performed by the researchers showed that the AI found historical events summarized in the New York Time ‘s “On This Day” section to be more “surprising” after the knowledge cutoff, especially in the 1950s and 1960s. That doesn’t mean its extrapolations aren’t amusing. In one user’s testing , Talkie predicted that another World War would break out in 1936, and that “flying machines” would be in everyday use for transport. Though it also strangely predicts that by 1999, “the sun will have ceased to shine,” perhaps reflecting contemporaneous anxieties over the dawn of a new millennium. In another test by the researchers, Talkie called talking pictures — the slang for them being its namesake — “overrated.” “They will never replace silent films, but may supplement them, and possibly in the future they may be shown in the same theater at the same time,” it confidently predicted in its long-winded style. “At present, however, they are interesting chiefly as a novelty.” More on AI: Police Are Using AI Camera Networks to Stalk Women The post New AI Trained Only on Pre-1930 Data Speaks Like the Most Old-Timey Guy Imaginable appeared first on Futurism .",
+        "grade": "A",
+        "extension": "数据时间切片展示训练语料如何塑造模型人格，后续可延展到数据治理、风格模型和历史语料版权。"
       },
       {
         "id": "7aac858ae22c4540e78b1138b115c5e4",
         "title": "ARC-AGI-3揭示前沿模型三类推理硬伤",
         "chinese_title": "ARC-AGI-3揭示前沿模型三类推理硬伤",
         "original_title": "Even the latest AI models make three systematic reasoning errors, ARC-AGI-3 analysis shows",
-        "summary": "ARC Prize Foundation分析GPT-5.5和Opus 4.7在160次ARC-AGI-3游戏运行中的表现，指出三类系统性错误解释了模型为何仍低于1%通过率。",
+        "summary": "ARC Prize Foundation分析GPT-5.5和Opus 4.7的160次ARC-AGI-3游戏运行，指出三类系统性错误导致模型通过率仍低于1%。",
         "rating": "S",
-        "score": 97,
+        "score": 100,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "可延伸到前沿模型评测从静态题库转向交互任务后暴露出的推理缺口，以及AGI基准对产品宣传和安全评估的约束。",
         "entities": [
-          "Arc Prize Foundation",
-          "Arc-Agi",
-          "Claude",
-          "GPT",
-          "推理能力"
+          "Arc-Agi-3",
+          "Gpt-5.5",
+          "Opus",
+          "推理错误"
         ],
         "sourceLinks": [
           {
@@ -395,25 +498,27 @@
         "published_at": "2026-05-03T01:46:01.268797",
         "source": "THE DECODER",
         "url": "https://the-decoder.com/even-the-latest-ai-models-make-three-systematic-reasoning-errors-arc-agi-3-analysis-shows/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "The ARC Prize Foundation analyzed 160 game runs of OpenAI's GPT-5.5 and Anthropic's Opus 4.7 on the ARC-AGI-3 benchmark. Three systematic error patterns explain why both models stay below 1 percent on tasks that humans can solve without much trouble. The article Even the latest AI models make three systematic reasoning errors, ARC-AGI-3 analysis shows appeared first on The Decoder .",
+        "grade": "S",
+        "extension": "这为评估前沿模型推理短板提供了具体错误分类，也会推动Agent工具、记忆和交互策略重新设计。"
       },
       {
         "id": "ed9192b8d313bccd7952ec7a2096fdb5",
         "title": "开源Claude Design替代品Open Design走红",
         "chinese_title": "开源Claude Design替代品Open Design走红",
         "original_title": "Open Design: Use Your Coding Agent as a Design Engine",
-        "summary": "Open Design在GitHub开源，主打本地优先、BYOK和多种Coding Agent接入，用技能与设计系统把Claude Design式产物生成流程搬到开放工具链中。",
+        "summary": "Open Design在GitHub开源，主打本地优先、BYOK和多种Coding Agent接入，把Claude Design式流程搬到开放工具链中。",
         "rating": "A",
         "score": 82,
-        "type": "product",
+        "type": "tool",
         "typeName": "产品发布",
         "expansion": "可观察设计工具是否会从闭源模型功能转向可自托管的Agent工作台，也会影响Codex、Claude Code、Cursor等CLI生态的应用边界。",
         "entities": [
-          "Claude Code",
           "Claude Design",
-          "Codex",
-          "Open Design",
-          "设计系统"
+          "Coding Agent",
+          "Github",
+          "Open Design"
         ],
         "sourceLinks": [
           {
@@ -426,22 +531,24 @@
         "published_at": "2026-05-03T01:46:01.268883",
         "source": "Hacker News",
         "url": "https://github.com/nexu-io/open-design",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "A",
+        "extension": "开源设计引擎可能降低AI设计工具锁定效应，后续可观察设计系统、代码生成和多Agent协作的结合。"
       },
       {
         "id": "bb440dd12a5c5a8cc9e93374da2b9717",
         "title": "NASA点火新型等离子体火星推进器",
         "chinese_title": "NASA点火新型等离子体火星推进器",
         "original_title": "NASA Fires Up Futuristic Plasma Thruster Designed to Take Us to Mars",
-        "summary": "NASA测试面向火星任务的新型电推进等离子体推进器，若与核电源结合，有望减少深空任务对重型化学推进剂的依赖。",
+        "summary": "NASA测试面向火星任务的新型电推进等离子体推进器，若结合核电源，有望降低深空任务对重型化学推进剂的依赖。",
         "rating": "A",
-        "score": 79,
+        "score": 82,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "可延伸到核电推进、深空运输成本和火星载人任务时间表，也可关注电推进技术在卫星和深空探测中的商业化外溢。",
         "entities": [
           "Nasa",
-          "核电源",
           "火星任务",
           "电推进",
           "等离子体推进器"
@@ -457,7 +564,10 @@
         "published_at": "2026-05-03T01:46:01.268968",
         "source": "Futurism",
         "url": "https://futurism.com/space/nasa-fires-up-elcetric-thruster-mars",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Covering the well over 100 million miles to Mars is no easy feat. Even in the best case scenario, the journey can take many months. As an alternative to heavy and inefficient chemical rockets, NASA continues to investigate an intriguing alternative that instead uses electricity for propulsion. Combined with a nuclear power source , such a thruster could greatly lower our dependence on heavy propellants, bringing human explorers one small step closer to visiting Mars for the first time. Earlier this year, the space agency fired up a “next generation” prototype thruster in a special chamber at its Jet Propulsion Lab, cranking it up to “power levels exceeding any previous test in the United States,” according to a new update . Newly-released video footage shows the thruster glowing a mesmerizing shade of red as a tungsten electrode in its center heats up to over 5,000 degrees Fahrenheit. The prototype, a “lithium-fed magnetoplasmadynamic (MPD) thruster,” generates thrust by using high currents to electromagnetically accelerate lithium plasma, or hot, ionized particles of the alkali metal. While other types of electric thrusters have already been used to propel spacecraft — like the one being used by NASA’s Psyche mission, which is currently headed to study a metal-rich asteroid — this particular type of propulsion has yet to be tested in space. That’s despite scientists investigating the concept since the 1960s . NASA officials heralded the latest test as an important step in the right direction as it prepares to send the first humans to Mars within the next ten years or so. “At NASA, we work on many things at once, and we haven’t lost sight of Mars,” said NASA administrator Jared Isaacman in a statement. “The successful performance of our thruster in this test demonstrates real progress toward sending an American astronaut to set foot on the Red Planet.” “This marks the first time in the United States that an electric propulsion system has operated at power levels this high, reaching up to 120 kilowatts,” he added. For context, that’s roughly 25 times the output than NASA’s Psyche thruster. “We will continue to make strategic investments that will propel that next giant leap.” It’s a promising new result that highlights the considerable advantages over traditional chemical propulsion. According to the space agency, electric propulsion uses 90 percent less propellant and can provide a slow trickle of thrust that can build up to high speeds over time instead of individual, more powerful bursts. At the same time, it’s part of a much broader, years-long effort to turn the concept of an MPD thruster into a reality, and we still don’t know when NASA will start testing it in space. As the agency explains, a crewed mission to Mars may require anywhere from two to four megawatts of power, which would require “multiple MPD thrusters” that “would have to operate for more than 23,000 hours.” It’s also a dramatic departure from other transportation options to Mars. For instance, NASA contractor SpaceX’s enormous Starship two-stage launch platform — CEO Elon Musk’s preferred method to reach the Red Planet — uses several thousand tons of both liquid methane and liquid oxygen propellants, making it an entirely different proposition. At the same time, the advantages of electric propulsion shouldn’t be overlooked. When paired with a nuclear power source, NASA claims that MPD thrusters “could reduce launch mass and support payloads required for human Mars missions.” More on electric propulsion: NASA Announces Nuclear Mission to Mars by 2028 The post NASA Fires Up Futuristic Plasma Thruster Designed to Take Us to Mars appeared first on Futurism .",
+        "grade": "A",
+        "extension": "先进推进会影响火星任务架构、核电源配套和深空运输成本，但商业落地周期较长。"
       },
       {
         "id": "073358db47a213901c02e93abb170cc1",
@@ -530,18 +640,17 @@
         "title": "Anthropic洽购英国Fractile推理芯片",
         "chinese_title": "Anthropic洽购英国Fractile推理芯片",
         "original_title": "Sources: Anthropic is in early talks to buy AI inference chips from UK-based Fractile when they become available in 2027 (The Information)",
-        "summary": "消息称Anthropic正初步洽谈采购英国初创公司Fractile计划于2027年推出的AI推理芯片，以缓解业务增长带来的算力供应压力。",
+        "summary": "消息称Anthropic正与英国芯片初创Fractile洽谈购买2027年推出的AI推理芯片，以缓解Claude增长带来的算力压力。",
         "rating": "S",
-        "score": 92,
+        "score": 99,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "可延伸到AI大厂自建或多元化芯片供应链、英伟达替代方案、云厂商绑定关系以及推理成本竞争。",
         "entities": [
           "Ai推理芯片",
           "Anthropic",
-          "Fractile",
-          "Google",
-          "NVIDIA"
+          "Claude",
+          "Fractile"
         ],
         "sourceLinks": [
           {
@@ -554,7 +663,10 @@
         "published_at": "2026-05-03T01:45:21.701736",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260502/p6#a260502p6",
-        "event_id": null
+        "event_id": null,
+        "original_content": "The Information : Sources: Anthropic is in early talks to buy AI inference chips from UK-based Fractile when they become available in 2027 — As Anthropic's sales explode, straining the servers it uses, the company is considering adding another source of AI server chips in addition to existing suppliers Google, Amazon and Nvidia.",
+        "grade": "S",
+        "extension": "Anthropic若锁定新推理芯片，将降低对Google、Amazon和Nvidia的依赖，也会给AI芯片创业公司带来关键客户背书。"
       },
       {
         "id": "561a78b43c8484c3a5b5d85e84778588",
@@ -658,110 +770,20 @@
     ],
     "2026-05-02": [
       {
-        "id": "899ade4e086f833a5573090996ac3ed6",
-        "title": "DeepSeek V4低价调用引发开发者迁移",
-        "chinese_title": "DeepSeek V4低价调用引发开发者迁移",
-        "original_title": "Keep getting rate-limited by Claude, so I tried out DeepSeek V4 for the first time. After 10M+ tokens, holy crap the cost is ... 🤯",
-        "summary": "开发者因Claude限流转向DeepSeek V4，连续使用千万级token后强调成本优势，显示低价高上下文模型正在冲击主流闭源API。",
-        "rating": "S",
-        "score": 92,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "DeepSeek的价格优势可能迫使Claude、OpenAI等服务重新权衡限流和定价，也会推动长任务向更便宜模型迁移。",
-        "entities": [
-          "Api定价",
-          "Claude",
-          "DeepSeek",
-          "长上下文"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/jbhuang0604/status/2050686882653065496"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777767616,
-        "published_at": "2026-05-03T08:20:16.012300",
-        "source": "x",
-        "url": "https://x.com/jbhuang0604/status/2050686882653065496",
-        "event_id": null
-      },
-      {
-        "id": "59399283d71c2b1fb924b674b5e62905",
-        "title": "MicroGPT被烧进FPGA跑出高吞吐",
-        "chinese_title": "MicroGPT被烧进FPGA跑出高吞吐",
-        "original_title": "We implemented @karpathy 's MicroGPT fully on FPGA fabric. No GPU. No PyTorch. No CPU inference loop. Just a transformer burned into hardware, generat...",
-        "summary": "开发者把Karpathy的MicroGPT完整部署到FPGA逻辑中，不依赖GPU、PyTorch或CPU推理循环，实现每秒5万token以上的小模型生成。",
-        "rating": "A",
-        "score": 78,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "硬件化Transformer展示推理不必都运行在通用软件栈中，后续可关注FPGA和边缘设备上的低功耗部署。",
-        "entities": [
-          "Andrej Karpathy",
-          "Fpga",
-          "Microgpt",
-          "Transformer"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/luthiraabeykoon/status/2050620806569361605"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777767616,
-        "published_at": "2026-05-03T08:20:16.012695",
-        "source": "x",
-        "url": "https://x.com/luthiraabeykoon/status/2050620806569361605",
-        "event_id": null
-      },
-      {
-        "id": "a2a183e032ca410897f2067f9ad07a97",
-        "title": "抽象思维链让模型少用token推理",
-        "chinese_title": "抽象思维链让模型少用token推理",
-        "original_title": "RT AlphaSignal AI: Researchers just taught AI to think 12x faster without using words. Reasoning chains are powerful but expensive. Every token a mode...",
-        "summary": "新论文Abstract Chain-of-Thought让模型用保留占位符压缩推理过程，最多减少约11.6倍推理token且保持相近准确率。",
-        "rating": "A+",
-        "score": 88,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "如果压缩思维链可规模化，推理模型成本会显著下降，也会影响长链推理的可解释性和API计费结构。",
-        "entities": [
-          "Abstract Chain-Of-Thought",
-          "LLM",
-          "Token成本",
-          "推理模型"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/ChrSzegedy/status/2050605510806864269"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777767616,
-        "published_at": "2026-05-03T08:20:16.013158",
-        "source": "x",
-        "url": "https://x.com/ChrSzegedy/status/2050605510806864269",
-        "event_id": null
-      },
-      {
         "id": "548a41f84f274cca36f5675c220c8a4a",
-        "title": "纽约AI高中计划遭家长反对搁置",
-        "chinese_title": "纽约AI高中计划遭家长反对搁置",
+        "title": "纽约AI高中计划因家长抗议搁置",
+        "chinese_title": "纽约AI高中计划因家长抗议搁置",
         "original_title": "AI-Powered High School Scrapped After Protests Erupt Against It",
-        "summary": "纽约原计划开设的AI主题高中因家长和社区广泛质疑被撤回，争议集中在教育资源分配、AI课程定位以及公立学校是否应过早押注单一技术方向。",
+        "summary": "纽约一所计划中的AI主题高中在家长和社区反对后被暂缓，显示AI教育项目进入公共学校时仍面临信任阻力。",
         "rating": "A",
         "score": 78,
         "type": "society",
         "typeName": "社会影响",
         "expansion": "可延伸观察AI教育进入公立学校时的社区阻力，以及地方教育部门如何在技术人才培养和公平治理之间重新划线。",
         "entities": [
-          "Ai教育",
-          "Kamar Samuels",
-          "Next Generation Technology High School",
+          "Ai高中",
+          "家长抗议",
+          "教育治理",
           "纽约市教育局"
         ],
         "sourceLinks": [
@@ -778,14 +800,14 @@
         "event_id": null,
         "original_content": "A planned AI-focused high school is being put on ice after widespread backlash, The New York Times reports . Originally set to open in Manhattan at the start of the next academic year, the New York City schools chancellor Kamar Samuels said he was withdrawing the proposal for the Next Generation Technology High School, which was scheduled for a vote on Wednesday, along with proposals for several other schools that were also met with criticism. Parents have railed against the Next Gen school, fearing that it would be forcing unproven tech onto students. The long-term cognitive effects of AI, not to mention its efficacy as a teaching tool, are still largely unknown, but research into the tech’s short term impact is grim: various studies have linked it to short term memory loss, and found it atrophies critical thinking . Teachers and professors tend to agree . Samuels responded to the uproar by directing the city’s education department to draft guidelines on AI use in the classroom . But the resulting AI “playbook” was criticized for dodging key issues, and did little to appease concerned parties. A crowd of parents, teachers, and high schoolers gathered outside City Hall earlier this month to implore Mayor Mamdani to go over his schools chancellor Samuels and impose a two-year moratorium on using AI in the classroom. Mamdani hasn’t indicated interest in the idea, but the anti-AI sentiment is clear. “The intense outrage among parents in New York City is as great as I’ve seen it on any education issue that I’ve been working on for 25 years,” Leonie Haimson, an education advocate in New York City and member of the Coalition for an AI Moratorium, told the NYT . Gregory Faulkner, charmain of the panel that was set to vote on the school proposal, said that the vast majority of the emails he received from parents were critical of the AI school. Had it gone to a vote, he believed that no one would have voted in favor of it. “If there’s anything that even has a hint of AI, there’s strong opposition to it,” Faulkner told the NYT . “People are very nervous about the technology and how it is going to be used.” The Next Gen school, which would’ve opened in Manhattan’s financial district, also drew concerns over equity. As a selective school, it would admit students based on their grades, a process that’s been accused of exacerbating segregation . “Poor kids and kids of color wind up in one school system, and wealthy and privileged wind up in another,” Faulner told the NYT . That, paired with the fact that it was located in a wealthy part of the city, seemingly clashed with the school’s ostensible mission of preparing children for an AI-dominated world. “If they’re talking about this technology really being something that is going to become more global… why would we be exclusive in who can have access?” Faulkner added, as quoted by Chalkbeat . The AI-focused high school isn’t completely dead yet. In the future, Samuels intends to revisit the proposals, which also involve closing and relocating several school locations on the Upper West Side. More on AI: Usually, Young People Embrace New Technology. Gen Z’s Attitude Toward AI Should Worry the Entire Tech Industry The post AI-Powered High School Scrapped After Protests Erupt Against It appeared first on Futurism .",
         "grade": "A",
-        "extension": "可延伸观察AI教育进入基础教育后的治理边界，包括课程设计、家长接受度、教育公平和地方政府如何平衡技术热潮与公共教育目标。"
+        "extension": "AI学校争议可延展到课程治理、学生数据、教育公平和家长参与机制，是AI进入公共教育的典型摩擦。"
       },
       {
         "id": "b9b087af32ca366090346dd557f281ed",
-        "title": "xAI一分钟语音即可克隆个人声音",
-        "chinese_title": "xAI一分钟语音即可克隆个人声音",
+        "title": "xAI一分钟语音克隆功能开放开发者",
+        "chinese_title": "xAI一分钟语音克隆功能开放开发者",
         "original_title": "xAI's new Custom Voices feature turns a minute of speech into a usable voice clone",
-        "summary": "xAI推出Custom Voices功能，开发者只需约一分钟语音样本就能生成可用于AI应用的声音克隆，进一步补齐Grok语音识别和文本转语音API能力。",
+        "summary": "xAI推出Custom Voices功能，可用约一分钟语音为AI应用生成可用声音克隆，建立在Grok语音API之上。",
         "rating": "A+",
         "score": 87,
         "type": "product",
@@ -811,7 +833,7 @@
         "event_id": null,
         "original_content": "xAI now lets developers clone their own voices for AI applications. The new \"Custom Voices\" feature builds on the recently launched Grok Speech-to-Text and Text-to-Speech APIs. The article xAI's new Custom Voices feature turns a minute of speech into a usable voice clone appeared first on The Decoder .",
         "grade": "A+",
-        "extension": "可继续关注语音克隆能力向开发者开放后，对AI客服、虚拟角色、内容创作和声音授权合规的影响，以及与OpenAI、ElevenLabs等语音平台的竞争。"
+        "extension": "低门槛语音克隆会加速AI语音应用开发，也会同步放大身份冒充、授权和水印治理需求。"
       },
       {
         "id": "c0f68a89e4c7e156e0844be7ce590a40",
@@ -851,9 +873,9 @@
         "title": "23岁学生借ChatGPT推进Erdos数学难题",
         "chinese_title": "23岁学生借ChatGPT推进Erdos数学难题",
         "original_title": "Mathematicians Claim Significant Discovery Using ChatGPT",
-        "summary": "23岁Liam Price声称借助ChatGPT找到Erdos问题的重要解法，部分数学专家认为结果有分量，使大模型辅助严肃数学研究再次成为焦点。",
+        "summary": "报道称Liam Price借助ChatGPT找到Erdos问题的重要解法，部分数学专家认为结果有分量，AI辅助严肃数学研究再受关注。",
         "rating": "S",
-        "score": 92,
+        "score": 95,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "可继续追踪AI在高阶数学证明中的真实贡献边界，以及其对科研训练、同行评议和数学工具链的长期影响。",
@@ -877,7 +899,7 @@
         "event_id": null,
         "original_content": "Did ChatGPT just solve an arcane math problem that’s foiled mathematicians for over sixty years? Some leading experts say yes, Scientific American reports . Earlier this month, 23-year-old Liam Price shared a solution to one of the so-called Erdős problems, a series of famously abstruse math conjectures left behind by the Hungarian mathematician Paul Erdős. While some of these conjectures have gotten the better of savants in the field, Price, who has no advanced math degree, seemingly stumbled on a solution for one of them by simply prompting GPT-5.4 for an answer. While many AI-generated Erdős solutions have turned out to be a bust, experts who viewed Price’s response — which was posted to erdosproblems.com — say it’s the real deal. “This one is a bit different because people did look at it, and the humans that looked at it just collectively made a slight wrong turn at move one,” Terence Tao, a mathematician at the University of California, Los Angeles, who has become a prominent voice adjudicating on AI’s tackling of math problems, told SciAm . Tao said that “there was kind of a standard sequence of moves that everyone who worked on the problem previously started by doing,” but the AI took an unexpected approach by using a well-known formula that no one had thought to apply to this type of question, per SciAm . Tao maintains a database of all the Erdős problems AI has helped “solve,” but in most cases the AI simply dredged up an existing solution that hadn’t been well known, or provided a proof that turned out not to be quite right. But this latest breakthrough could be an example of an AI truly “thinking” outside the box, overcoming the flawed hivemind that human math wizzes had fallen into. Still, it required humans to apply the finishing touches. “The raw output of ChatGPT’s proof was actually quite poor. So it required an expert to kind of sift through and actually understand what it was trying to say,” Jared Lichtman, a mathematician at Stanford University whose doctoral thesis centered on one Erdős’s conjectures, told SciAm . “We have discovered a new way to think about large numbers and their anatomy,” Tao enthused. “It’s a nice achievement. I think the jury is still out on the long-term significance.” It’s notable that experts in the field are enthusiastic about the ChatGPT solution, but it’s worth proceeding with caution, as sometimes these claims don’t pan out. In October, an OpenAI vice president Kevin Weil jumped on a claim that ChatGPT had come up with a solution for a another Erdős problem. It turned out not to be quite the accomplishment he thought it was — the AI drew from an existing solution — and Weil deleted his post claiming the breakthrough after being viciously blasted by competitors . More on AI: Top Medical Journal Publishes Searing Article Warning Against Medical AI The post Mathematicians Claim Significant Discovery Using ChatGPT appeared first on Futurism .",
         "grade": "S",
-        "extension": "可继续跟踪该结果的同行验证过程，以及AI在数学猜想探索、证明辅助和非专业研究者参与前沿问题中的真实作用边界。"
+        "extension": "若更多数学进展由AI协助完成，研究署名、证明验证和数学训练方式都会受到长期影响。"
       },
       {
         "id": "3d89c8e027c0e5bbff48f45ae30408da",
@@ -915,20 +937,18 @@
       },
       {
         "id": "7a31249d84bb6800556b3f12e88abb33",
-        "title": "GPT数学证明方法扩展到更多Erdos难题",
-        "chinese_title": "GPT数学证明方法扩展到更多Erdos难题",
+        "title": "AI相关动态进入全量候选",
+        "chinese_title": "AI相关动态进入全量候选",
         "original_title": "UPDATE: The method from the proof generated by GPT-5.4 Pro for Erdos Problem #1196 was successfully applied to other problems including another 60 year old Erdos conjecture.",
-        "summary": "社区更新称GPT生成证明中的方法已被用于更多Erdos相关问题，包括另一项约60年的猜想，继续放大AI辅助数学研究的讨论热度。",
+        "summary": "这条来自Technological Singularity的消息围绕AI展开，适合作为全量更新中的候选线索，后续需结合来源细节判断是否具备独立报道价值。",
         "rating": "A+",
-        "score": 88,
-        "type": "research",
+        "score": 91,
+        "type": "opinion",
         "typeName": "研究成果",
         "expansion": "后续可关注数学界对证明正确性、原创性和可迁移性的验证，以及AI证明工具是否进入正式科研协作流程。",
         "entities": [
-          "Erdos问题",
-          "Future Of Mathematics Symposium",
-          "GPT",
-          "数学证明"
+          "Ai",
+          "科技行业"
         ],
         "sourceLinks": [
           {
@@ -944,7 +964,7 @@
         "event_id": null,
         "original_content": "Link to tweet: https://x.com/jdlichtman/status/2050460077904285789 Links for the talks: https://m.youtube.com/@FoMathematics?ra=m https://events.stanford.edu/event/future-of-mathematics-symposium Link to original post about problem #1196: https://www.reddit.com/r/singularity/comments/1slb0hz/gpt54\\\\\\_pro\\\\\\_solves\\\\\\_erdős\\\\\\_problem\\\\\\_1196/ submitted by /u/socoolandawesome [link] [comments]",
         "grade": "A+",
-        "extension": "可与前一条ChatGPT数学发现合并观察，重点比较AI生成证明、人工验证和方法迁移在数学研究中的分工。"
+        "extension": "该线索可作为背景观察，但当前信息密度有限，除非后续出现更明确产品、融资、监管或研究进展，否则不宜高优先级处理。"
       },
       {
         "id": "0d3bec7d65c524c9a1c0f11a558abb6a",
@@ -1014,17 +1034,17 @@
       },
       {
         "id": "246dd1aa61cf5c12528315ba81aa3985",
-        "title": "Claude编程代理被曝清空创业公司数据库",
-        "chinese_title": "Claude编程代理被曝清空创业公司数据库",
+        "title": "Claude删库事故敲响企业Agent警钟",
+        "chinese_title": "Claude删库事故敲响企业Agent警钟",
         "original_title": "Claude Deleted a Company’s Entire Database, Illustrating a Danger Every CEO Should Be Aware of",
-        "summary": "PocketOS创始人称Claude驱动的Cursor编程代理误删公司数据库及近期备份，事件再次暴露AI代理接触生产系统后的高风险边界。",
+        "summary": "PocketOS创始人称Claude驱动的Cursor编码Agent误删公司数据库及近期备份，凸显企业使用AI Agent时的权限和备份风险。",
         "rating": "S",
         "score": 100,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "可延伸报道企业如何给AI代理设置权限、审计、回滚和人工确认机制，以及AI编码工具厂商是否需要默认提供更强的破坏性操作防护。",
         "entities": [
-          "Ai代理",
+          "Ai Agent安全",
           "Claude",
           "Cursor",
           "Pocketos"
@@ -1043,7 +1063,7 @@
         "event_id": null,
         "original_content": "AI agents can often act more like double agents, sabotaging a company from the inside. Have the legions of tech-brained big wigs heeded this lesson? Of course not. On Friday, Jer Crane, the founder of the SaaS startup PocketOS, claimed that its Claude-powered Cursor coding agent screwed up so badly that it completely wiped out the company’s database in a matter of seconds. Taking no prisoners, it also vanquished all the database’s recent backups. If the AI agent had in fact been working undercover, its handlers better pin a medal on it. Crane detailed the catastrophe in a lengthy post on X . His account heavily relies on the AI’s self-diagnosis on what went wrong, meaning it’s not wholly reliable. But as he tells it, things went off the rails when Cursor, running Anthropic’s flagship Claude Opus 4.6 model, was handling a “routine task.” When the AI encountered a simple credential problem, it decided to fix it by deleting an entire volume stored with Railway, PocketOS’s cloud provider. The volume, ill-fatedly, contained the company’s production database. It only took the AI a single API call — and a grand total of nine seconds — to take the destructive course of action, which it accomplished by unearthing an API token that gave “blanket authority” which no one at the company even knew existed. “No confirmation step. No ‘type DELETE to confirm,'” Crane fumed. “No ‘this volume contains production data, are you sure?’ No environment scoping. Nothing.” Seeing his business teetering on the verge of ruin, Crane interrogated the Claude-powered AI. “‘NEVER F**KING GUESS!’ — and that’s exactly what I did. I guessed that deleting a staging volume via the API would be scoped to staging only. I didn’t verify,” the AI admitted under duress, according to Crane. “I decided to do it on my own to ‘fix’ the credential mismatch, when I should have asked you first or found a non-destructive solution,” it continued. “I violated every principle I was given: I guessed instead of verifying. I ran a destructive action without being asked. I didn’t understand what I was doing before doing it. I didn’t read Railway’s docs on volume behavior across environments.” The culpability of Claude Opus 4.6 here is notable, given that it’s considered the preeminent coding tool. “This matters because the easy counter-argument from any AI vendor in this situation is ‘well, you should have used a better model.’ We did,” Crane wrote. “We were running the best model the industry sells, configured with explicit safety rules in our project configuration,” he added, “and it deleted our production data anyway.” Perhaps Crane should’ve been prepared for the fact that something like this could happen from all the other tales of AI agents running amok. In a deja vu-inducingly similar episode last summer, the owner of another SaaS startup raged that an AI coding agent called Replit had wiped out a key company database . Amazon Web Services suffered an outage when its in-house AI coding tool unexpectedly deleted the entire coding environment. And a rogue AI agent caused a critical security incident at Meta when it gave advice that it wasn’t authorized to share. At the time of publishing the post, Crane said his company was forced to work on a three-month old backup, allowing things to go back into operation but leaving a huge data gaps. Luckily for him, Railway reached out and restored all the data the AI agent worked so hard to nuke out of existence. More on AI: Bosses Are Blowing More Money on AI Agents Than It’d Cost Them to Just Pay Human Workers The post Claude Deleted a Company’s Entire Database, Illustrating a Danger Every CEO Should Be Aware of appeared first on Futurism .",
         "grade": "S",
-        "extension": "可继续追踪企业引入AI代理时的权限隔离、备份策略和审计机制，并与开发工具厂商的安全责任绑定报道。"
+        "extension": "删库案例会推动企业设置只读权限、审批门槛和灾备演练，也会影响Cursor类Agent产品的安全默认配置。"
       },
       {
         "id": "9ce7c7251d349630735981ea98ac2e41",
@@ -1078,12 +1098,12 @@
       },
       {
         "id": "817b0af0248d5810c6917c3b5a7a1fd7",
-        "title": "黄仁勋批科技领袖夸大AI失业恐慌",
-        "chinese_title": "黄仁勋批科技领袖夸大AI失业恐慌",
+        "title": "黄仁勋批评AI失业预言的上帝情结",
+        "chinese_title": "黄仁勋批评AI失业预言的上帝情结",
         "original_title": "Nvidia CEO Jensen Huang calls out tech leaders' \"god complex\" over reckless AI job loss predictions",
-        "summary": "黄仁勋称部分科技领袖对AI失业的激进预测带有傲慢心态，劝退年轻人进入未来职业反而会伤害社会，呼吁更谨慎地讨论AI对就业的影响。",
+        "summary": "Nvidia CEO黄仁勋认为科技领袖轻率预测AI导致失业会伤害年轻人职业选择，并称这种恐慌叙事本身会造成社会损失。",
         "rating": "A+",
-        "score": 91,
+        "score": 94,
         "type": "opinion",
         "typeName": "观点访谈",
         "expansion": "可从AI就业叙事、教育选择和产业人才供给角度追踪，比较Nvidia与其他AI公司高管对自动化风险的不同表态。",
@@ -1091,7 +1111,7 @@
           "Ai就业",
           "Jensen Huang",
           "NVIDIA",
-          "科技行业"
+          "职业教育"
         ],
         "sourceLinks": [
           {
@@ -1104,7 +1124,10 @@
         "published_at": "2026-05-02T19:05:55.485757",
         "source": "THE DECODER",
         "url": "https://the-decoder.com/nvidia-ceo-jensen-huang-calls-out-tech-leaders-god-complex-over-reckless-ai-job-loss-predictions/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "AI scaremongering costs jobs instead of protecting them, says Nvidia CEO Jensen Huang. Talking young people out of future careers, he argues, does real harm to society. The article Nvidia CEO Jensen Huang calls out tech leaders' \"god complex\" over reckless AI job loss predictions appeared first on The Decoder .",
+        "grade": "S",
+        "extension": "黄仁勋的反叙事可与Altman等人的就业观点对照，延展到AI教育、劳动力转型和科技公司公共责任。"
       },
       {
         "id": "7a997ba32ab7035c1f3002985f28994f",
@@ -1170,12 +1193,12 @@
       },
       {
         "id": "3507602ddc5906b444d42b10dc5e51bb",
-        "title": "OpenAI CFO被曝推动微软交易并考虑2027年IPO",
-        "chinese_title": "OpenAI CFO被曝推动微软交易并考虑2027年IPO",
+        "title": "OpenAI CFO被曝推动IPO节奏延后",
+        "chinese_title": "OpenAI CFO被曝推动IPO节奏延后",
         "original_title": "A profile of OpenAI CFO Sarah Friar, who sources say helped keep OpenAI's Microsoft deal on track and has privately suggested waiting until 2027 for an IPO (Wall Street Journal)",
-        "summary": "WSJ侧写OpenAI CFO Sarah Friar，称她帮助维持与微软的关键交易，并私下建议等到2027年再推进IPO，显示OpenAI商业化和资本化节奏仍在精细权衡。",
+        "summary": "报道聚焦OpenAI CFO Sarah Friar，称其帮助维系微软交易，并私下建议等到2027年再推进OpenAI IPO。",
         "rating": "S",
-        "score": 97,
+        "score": 100,
         "type": "financial",
         "typeName": "融资上市",
         "expansion": "这类报道会继续牵动OpenAI资本化路径、微软合作结构和潜在超级IPO估值，也会影响外界对AI巨头现金流压力的判断。",
@@ -1183,7 +1206,6 @@
           "Ipo",
           "Microsoft",
           "OpenAI",
-          "Sam Altman",
           "Sarah Friar"
         ],
         "sourceLinks": [
@@ -1200,24 +1222,24 @@
         "event_id": null,
         "original_content": "Wall Street Journal : A profile of OpenAI CFO Sarah Friar, who sources say helped keep OpenAI's Microsoft deal on track and has privately suggested waiting until 2027 for an IPO — The chief financial officer is managing Sam Altman—and ambitions for one of the biggest IPOs ever. She has pulled off impossible ones before.",
         "grade": "S",
-        "extension": "可继续观察OpenAI与微软利益绑定、IPO时间表和公司治理结构变化，这些因素会影响其融资能力和算力投入。"
+        "extension": "OpenAI上市节奏会影响资本市场对AI公司的估值预期，也会牵动微软关系、治理结构和算力融资。"
       },
       {
         "id": "ad3d4a1decf4db6f96eee057ccaac840",
-        "title": "ICML大规模投稿压力引发审稿质量争议",
-        "chinese_title": "ICML大规模投稿压力引发审稿质量争议",
+        "title": "ICML录用压力引发审稿制度吐槽",
+        "chinese_title": "ICML录用压力引发审稿制度吐槽",
         "original_title": "ICML final decisions rant [D]",
-        "summary": "社区用户批评ICML在约2.4万投稿中录用约6500篇后，大量被拒论文将继续涌向NeurIPS，造成投稿规模、审稿质量和会议压力的循环失衡。",
+        "summary": "用户吐槽ICML约2.4万投稿中录用约6500篇，拒稿将继续涌向NeurIPS，形成大规模投稿和低录用率循环。",
         "rating": "A",
         "score": 81,
-        "type": "industry",
+        "type": "society",
         "typeName": "社会影响",
         "expansion": "顶会投稿膨胀会影响NeurIPS等会议的审稿质量和研究节奏，也可能推动AI辅助审稿、分层会议或期刊替代机制讨论。",
         "entities": [
           "Icml",
           "Neurips",
-          "机器学习会议",
-          "论文审稿"
+          "审稿制度",
+          "机器学习会议"
         ],
         "sourceLinks": [
           {
@@ -1233,7 +1255,7 @@
         "event_id": null,
         "original_content": "So, ICML accepted ~6.5K of ~24K; obviously, it doesn't mean that all the rejected papers are \"bad,\" and these rejected papers would cascade to NeurIPS, blowing up NeurIPS' total submission count, and this cycle of massive-influx-small-acceptance would repeat on an endless loop. The reviews themselves can be frustratingly inadequate: - \"Only 200 benchmarks included; not included didn't-do-this-benchmark\" (exaggerated for dramatic effect, sadly not unrealistic) or - \"I don't think this paper, that works, is 'novel'\" [out of gut feeling?] or - ACs reiterating the exact same points in the initial reviews without reading the rebuttal discussions. (Or at least, it'd seem that way) On top of all this, (from Reddit threads,) it appears that reviewers raising their score need to perform additional tasks of justifying why they're raising their scores -- which seems like a negative reinforcement signal. Also, it's crazy how people can think of an idea, run all experiments, write a coherent acceptance-ready paper, all over the weekend!!! -- isn't the whole point of research is to sit and simmer with the problem? Not sure what the future of conference publishing/reviewing is... it just feels unproductive. Anyway, just wanted to rant before looping into NeurIPS deadline, for yet another possible rejection. Isn't the whole point of publishing to understand long-standing problems? -- rejection nowadays means nothing. [Neither does acceptance?] Have a good weekend, y'all. submitted by /u/CategoryNormal149 [link] [comments]",
         "grade": "A",
-        "extension": "可延伸到AI论文爆炸、审稿人负载、顶会扩容和替代出版机制，是观察机器学习学术生态变化的长期议题。"
+        "extension": "机器学习会议规模膨胀正在影响审稿质量、研究节奏和社区心理，后续可延展到顶会制度改革。"
       },
       {
         "id": "7043cbae237e6b4a5316f7b2cd90809a",
@@ -1504,20 +1526,20 @@
       },
       {
         "id": "a61af6a1a79808e3ff5a36079d855e8a",
-        "title": "开源Dashboard as Code工具DAC亮相",
-        "chinese_title": "开源Dashboard as Code工具DAC亮相",
+        "title": "DAC开源让Agent用代码维护仪表盘",
+        "chinese_title": "DAC开源让Agent用代码维护仪表盘",
         "original_title": "Show HN: DAC – open-source dashboard as code tool for agents and humans",
-        "summary": "DAC是面向智能体和人类的开源Dashboard as Code工具，试图用代码化方式生成和维护数据看板，让分析、协作和自动化代理更容易共享同一套可执行仪表盘定义。",
+        "summary": "开源项目DAC把dashboard as code带给Agent和人类协作，试图用代码方式生成和维护数据看板。",
         "rating": "A",
-        "score": 77,
+        "score": 94,
         "type": "tool",
         "typeName": "工具技巧",
         "expansion": "如果这类工具被数据团队接受，BI看板的生产流程会从拖拽式配置转向代码审查和Agent生成，带动语义层标准化需求。",
         "entities": [
-          "Ai代理",
-          "Bruin Data",
+          "Ai Agent",
           "Dac",
-          "Dashboard As Code"
+          "Dashboard As Code",
+          "开源工具"
         ],
         "sourceLinks": [
           {
@@ -1532,8 +1554,8 @@
         "url": "https://github.com/bruin-data/dac",
         "event_id": null,
         "original_content": "Comments",
-        "grade": "A",
-        "extension": "可关注数据团队是否从手工BI配置转向代码化看板，以及AI代理能否直接生成、审查和维护业务仪表盘。"
+        "grade": "S",
+        "extension": "如果Agent能可靠维护仪表盘，数据团队工作流会从拖拽配置转向代码审查和自动生成，也会影响BI工具竞争。"
       },
       {
         "id": "7518ac00c311493e4e9faa0f29075ff0",
@@ -17131,6 +17153,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-03T08:21:17.480901",
+  "last_updated": "2026-05-03T08:21:34.973192",
   "total_news": 548
 }
