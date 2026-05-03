@@ -211,6 +211,19 @@
           "reason": "这条Claude/Cursor误删PocketOS数据库新闻与已有Cursor代理误删生产库事件是同一事故，应合并到已有事件。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-05-03T14:08:58.205203",
+      "batch_id": "20260503140858",
+      "corrections_applied": 1,
+      "details": [
+        {
+          "news_id": "5d847260342f84619e0c9e7951d73e9b",
+          "from_event_id": "0850b791",
+          "to_event_id": "new_event",
+          "reason": "这条新闻核心是OpenAI对现实暴力风险的上报与平台干预机制，已有同组新闻是ChatGPT广告追踪和隐私归因链路，两者都涉及OpenAI但事件边界不同，应拆成独立事件组。"
+        }
+      ]
     }
   ]
 }
