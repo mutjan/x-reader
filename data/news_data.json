@@ -1292,12 +1292,12 @@
       },
       {
         "id": "859f7470e7ff833cdb714d052f3aef45",
-        "title": "马斯克庭审称曾给OpenAI投3800万美元像傻瓜",
-        "chinese_title": "马斯克庭审称曾给OpenAI投3800万美元像傻瓜",
+        "title": "马斯克庭审自称投资OpenAI太傻",
+        "chinese_title": "马斯克庭审自称投资OpenAI太傻",
         "original_title": "Elon Musk calls himself a fool for giving OpenAI $38 million that became an $800 billion company",
-        "summary": "马斯克在与Sam Altman相关的庭审中称自己当年向OpenAI投入3800万美元如今显得像傻瓜，并承认xAI会利用OpenAI模型训练，诉讼继续揭开AI公司竞争旧账。",
+        "summary": "Elon Musk在与Sam Altman相关庭审中称自己当年给OpenAI 3800万美元很傻，并承认xAI使用OpenAI模型训练。",
         "rating": "S",
-        "score": 99,
+        "score": 100,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "庭审细节会继续影响OpenAI治理叙事、xAI训练数据争议和AI公司创始人利益冲突讨论。",
@@ -1305,8 +1305,7 @@
           "Elon Musk",
           "OpenAI",
           "Sam Altman",
-          "xAI",
-          "诉讼"
+          "xAI"
         ],
         "sourceLinks": [
           {
@@ -1322,14 +1321,14 @@
         "event_id": null,
         "original_content": "Elon Musk called himself a \"fool\" in court, warned of a \"Terminator\" future, and admitted that xAI taps OpenAI's models for its own AI training. Week one of Musk's trial against Sam Altman delivered plenty of drama; and the best may still be ahead. The article Elon Musk calls himself a fool for giving OpenAI $38 million that became an $800 billion company appeared first on The Decoder .",
         "grade": "S",
-        "extension": "可持续追踪马斯克与OpenAI诉讼如何影响xAI、OpenAI治理叙事和商业竞争，也可延伸到AI模型互相蒸馏与训练数据边界。"
+        "extension": "OpenAI与Musk的诉讼会继续影响AI公司治理、训练数据边界和xAI竞争叙事。"
       },
       {
         "id": "f9552432bbe66f7d76cfa595397be8e8",
-        "title": "ARC-AGI-3若被攻破会带来多大安全信号",
-        "chinese_title": "ARC-AGI-3若被攻破会带来多大安全信号",
+        "title": "社区讨论ARC-AGI-3被攻克是否危险",
+        "chinese_title": "社区讨论ARC-AGI-3被攻克是否危险",
         "original_title": "(How) could an ARC-3 solution be a threat? [D]",
-        "summary": "用户围绕ARC-AGI-3竞赛展开讨论，关注当前模型解决率仍很低的基准一旦被真正突破，是否意味着AI具备更强人类式推理能力并带来潜在安全威胁。",
+        "summary": "机器学习社区讨论如果ARC-AGI-3被真正解决，是否意味着AI具备更强泛化能力并带来安全威胁。",
         "rating": "A",
         "score": 93,
         "type": "safety",
@@ -1339,7 +1338,7 @@
           "Ai安全",
           "Arc-Agi-3",
           "基准测试",
-          "通用推理"
+          "泛化能力"
         ],
         "sourceLinks": [
           {
@@ -1355,7 +1354,7 @@
         "event_id": null,
         "original_content": "As many of you might be aware, the ARC-AGI-3 competition has just started ... (In case you're not familiar: it's a human/AI benchmark designed to see what AI still struggles with, that humans solve with ease - basically trying to push AI research to focus on new ideas that make AI think more human-like, assuming that that's what is required to solve such tasks, you could read more in their docs...) Seeing as the benchmark has so far only been solved at 0.68% , I was wondering what a real solution would look like: If a system has to explore and collect data, infer rules and patterns, decide which are useful, and then establish a set of rules and apply them, it seems that it such a system/algorithm would do essentially what a successful scientist would do. Apart from it being quite unrealistic in very near future, I do think that such a model (that achieves ~100% on arc-3), if open sourced (which is a condition to win the competition), would hold great potential for dangerous application, such as the military ( engineering weapons ), cybersecurity , manipulation, etc... Do you agree? How do supposed an arc-3 solution (~100%) could be a threat, in the purely hypothetical scenario that were to get one this year? https://preview.redd.it/a386xz3pojyg1.png?width=1842&amp;format=png&amp;auto=webp&amp;s=82f41df7570dd59701dcc62ddfe110cdfada240d submitted by /u/Specific_Bad8641 [link] [comments]",
         "grade": "S",
-        "extension": "可追踪ARC-AGI-3作为通用推理基准的有效性，以及高分结果如何影响AI安全评估、模型发布和能力预警机制。"
+        "extension": "ARC-AGI-3作为能力评测和安全信号的关系值得跟踪，尤其是工具使用、泛化能力和风险预警之间的边界。"
       },
       {
         "id": "096926ddc191c4735cbcbff4f860e67c",
@@ -1392,10 +1391,10 @@
       },
       {
         "id": "6e915624fd110457a1c65488e454b011",
-        "title": "五千行Python复现可改造ML编译器栈",
-        "chinese_title": "五千行Python复现可改造ML编译器栈",
+        "title": "五千行Python写出可Hack的ML编译器",
+        "chinese_title": "五千行Python写出可Hack的ML编译器",
         "original_title": "A Hackable ML Compiler Stack in 5,000 Lines of Python [P]",
-        "summary": "开发者开源一个约5000行Python实现的教学型ML编译器栈，可将TinyLlama、Qwen等小模型降级到原始CUDA，试图降低理解TVM、XLA、Triton等系统的门槛。",
+        "summary": "开发者用约5000行纯Python构建参考ML编译器，可将TinyLlama、Qwen等小模型降低到原始CUDA，降低学习门槛。",
         "rating": "A",
         "score": 77,
         "type": "tool",
@@ -1404,9 +1403,8 @@
         "entities": [
           "CUDA",
           "Ml编译器",
-          "Qwen",
-          "Tinyllama",
-          "Triton"
+          "Python",
+          "Tinyllama"
         ],
         "sourceLinks": [
           {
@@ -1422,25 +1420,24 @@
         "event_id": null,
         "original_content": "Hey r/MachineLearning , The modern ML (LLM) compiler stack is brutal. TVM is 500K+ lines of C++. PyTorch piles Dynamo, Inductor, and Triton on top of each other. Then there's XLA, MLIR, Halide, Mojo. There is no tutorial that covers the high-level design of an ML compiler without dropping you straight into the guts of one of these frameworks. I built a reference compiler from scratch in ~5K lines of pure Python that emits raw CUDA. It takes a small model (TinyLlama, Qwen2.5-7B) and lowers it to a sequence of CUDA kernels through six IRs. The goal isn't to beat Triton; it is to build a hackable, easy-to-follow compiler. Full article: A Principled ML Compiler Stack in 5,000 Lines of Python Repo: deplodock The pipeline consists of six IRs, each closer to the hardware than the last. Walking the following PyTorch code through every stage (real reference compiler output with names shortened for brevity and comments added): torch.relu(torch.matmul(x + bias, w)) # x: (16, 64), bias: (64,), w: (64, 16) Torch IR . Captured FX graph, 1:1 mirror of PyTorch ops: bias_bc = bias[j] -&gt; (16, 64) float32 add = add(x, bias_bc) -&gt; (16, 64) float32 matmul = matmul(add, w, has_bias=False) -&gt; (16, 16) float32 relu = relu(matmul) -&gt; (16, 16) float32 Tensor IR . Every op is decomposed into Elementwise / Reduction / IndexMap. Minimal unified op surface, so future frontends (ONNX, JAX) plug in without touching downstream passes: bias_bc = bias[j] -&gt; (16, 64) float32 w_bc = w[j, k] -&gt; (16, 64, 16) float32 add = add(x, bias_bc) -&gt; (16, 64) float32 add_bc = add[i, j] -&gt; (16, 64, 16) float32 prod = multiply(add_bc, w_bc) -&gt; (16, 64, 16) float32 red = sum(prod, axis=-2) -&gt; (16, 1, 16) float32 matmul = red[i, na, j] -&gt; (16, 16) float32 relu = relu(matmul) -&gt; (16, 16) float32 The (16, 64, 16) intermediate looks ruinous, but it's never materialized; the next stage fuses it out. Loop IR . Each kernel has a loop nest fused with adjacent kernels. Prologue, broadcasted multiply, reduction, output layout, and epilogue all collapse into a single loop nest with no intermediate buffers. === merged_relu -&gt; relu === for a0 in 0..16: # free (M) for a1 in 0..16: # free (N) for a2 in 0..64: # reduce (K) in0 = load bias[a2] in1 = load x[a0, a2] in2 = load w[a2, a1] v0 = add(in1, in0) # prologue (inside reduce) v1 = multiply(v0, in2) acc0 &lt;- add(acc0, v1) v2 = relu(acc0) # epilogue (outside reduce) merged_relu[a0, a1] = v2 Tile IR . The first GPU-aware IR. Loop axes get scheduled onto threads/blocks, Stage hoists shared inputs into shared memory, and a 2×2 register tile lets each thread accumulate four outputs at once. The K-axis is tiled into two outer iterations of 32-wide reduce. Three-stage annotations below carry the heaviest optimizations: buffers=2@a2 — double-buffer the smem allocation along the a2 K-tile loop, so loads for iteration a2+1 overlap compute for a2 . async — emit cp.async.ca.shared.global so the warp doesn't block on global→smem transfers; pairs with commit_group / wait_group fences in Kernel IR. pad=(0, 1, 0) — add 1 element of padding to the middle smem dim so warp-wide loads don't all hit the same bank.kernel k_relu_reduce Tile(axes=(a0:8=THREAD, a1:8=THREAD)): for a2 in 0..2: # K-tile # meta: double-buffered, sync (small, no async needed) bias_smem = Stage(bias, origin=((a2 * 32)), slab=(a3:32@0)) buffers=2@a2 ​ kernel k_relu_reduce Tile(axes=(a0:8=THREAD, a1:8=THREAD)): for a2 in 0..2: # K-tile bias_smem = Stage(bias, origin=((a2 * 32)), slab=(a3:32@0)) buffers=2@a2 x_smem = Stage(x, origin=(0, (a2 * 32)), slab=(a0:8@0, a3:32@1, cell:2@0)) pad=(0, 1, 0) buffers=2@a2 async w_smem = Stage(w, origin=((a2 * 32), 0), slab=(a3:32@0, a1:8@1, cell:2@1)) buffers=2@a2 async # reduce for a3 in 0..32: in0 = load bias_smem[a2, a3] in1 = load x_smem[a2, a0, a3, 0]; in2 = load x_smem[a2, a0, a3, 1] in3 = load w_smem[a2, a3, a1, 0]; in4 = load w_smem[a2, a3, a1, 1] # prologue, reused 2× across N v0 = add(in1, in0); v1 = add(in2, in0) # 2×2 register tile acc0 &lt;- add(acc0, multiply(v0, in3)) acc1 &lt;- add(acc1, multiply(v0, in4)) acc2 &lt;- add(acc2, multiply(v1, in3)) acc3 &lt;- add(acc3, multiply(v1, in4)) # epilogue relu[a0*2, a1*2 ] = relu(acc0) relu[a0*2, a1*2 + 1] = relu(acc1) relu[a0*2 + 1, a1*2 ] = relu(acc2) relu[a0*2 + 1, a1*2 + 1] = relu(acc3) Kernel IR . Schedule materialized into hardware primitives. THREAD/BLOCK become threadIdx/blockIdx, async Stage becomes Smem + cp.async fill with commit/wait fences, sync Stage becomes a strided fill loop. Framework-agnostic: same IR could lower to Metal or HIP: kernel k_relu_reduce Tile(axes=(a0:8=THREAD, a1:8=THREAD)): Init(acc0..acc3, op=add) for a2 in 0..2: # K-tile Smem bias_smem[2, 32] (float) StridedLoop(flat = a0*8 + a1; &lt; 32; += 64): bias_smem[a2, flat] = load bias[a2*32 + flat] Sync # pad row to 33 to kill bank conflicts Smem x_smem[2, 8, 33, 2] (float) StridedLoop(flat = a0*8 + a1; &lt; 512; += 64): cp.async x_smem[a2, flat/64, (flat/2)%32, flat%2] &lt;- x[flat/64*2 + flat%2, a2*32 + (flat/2)%32] cp.async.commit_group; cp.async.wait_group(0); Sync Smem w_smem[2, 32, 8, 2] (float) StridedLoop(flat = a0*8 + a1; &lt; 512; += 64): cp.async w_smem[a2, flat/16, (flat/2)%8, flat%2] &lt;- w[a2*32 + flat/16, (flat/2)%8*2 + flat%2] cp.async.commit_group; cp.async.wait_group(0); Sync for a3 in 0..32: # reduce ... CUDA . One-to-one tree walk over Kernel IR, ready for nvcc. Bias-add, the K-axis reduction, the 2×2 register tile, and the relu activation all in one kernel. One HBM read each of x , bias , w , one HBM write of relu , no intermediates between ops. extern \"C\" __global__ __launch_bounds__(256) void k_relu_reduce(const float* bias, const float* x, const float* w, float* relu) { long long tid = blockIdx.x * blockDim.x + threadIdx.x; if (tid &lt; 64) { int a0 = tid / 8; int a1 = tid % 8; float acc0 = 0.0f, acc1 = 0.0f, acc2 = 0.0f, acc3 = 0.0f; #pragma unroll for (int a2 = 0; a2 &lt; 2; a2++) { __shared__ float bias_smem[64]; for (int f = a0*8 + a1; f &lt; 32; f += 64) bias_smem[a2*32 + f] = bias[a2*32 + f]; __syncthreads(); // padded to avoid bank conflicts __shared__ float x_smem[1056]; for (int f = a0*8 + a1; f &lt; 512; f += 64) { unsigned int addr = __cvta_generic_to_shared( &amp;x_smem[a2*528 + f/64*66 + f/2%32*2 + f%2] ); asm volatile( \"cp.async.ca.shared.global [%0], [%1], 4;\\n\" :: \"r\"(addr), \"l\"(&amp;x[(f/64*2 + f%2)*64 + (a2*32 + f/2%32)]) : \"memory\"); } asm volatile(\"cp.async.commit_group;\\n\" ::: \"memory\"); asm volatile(\"cp.async.wait_group 0;\\n\" ::: \"memory\"); __syncthreads(); __shared__ float w_smem[1024]; for (int f = a0*8 + a1; f &lt; 512; f += 64) { unsigned int addr = __cvta_generic_to_shared( &amp;w_smem[a2*512 + f/16*16 + f/2%8*2 + f%2] ); asm volatile( \"cp.async.ca.shared.global [%0], [%1], 4;\\n\" :: \"r\"(addr), \"l\"(&amp;w[(a2*32 + f/16)*16 + (f/2%8*2 + f%2)]) : \"memory\"); } asm volatile(\"cp.async.commit_group;\\n\" ::: \"memory\"); asm volatile(\"cp.async.wait_group 0;\\n\" ::: \"memory\"); __syncthreads(); #pragma unroll for (int a3 = 0; a3 &lt; 32; a3++) { float in0 = bias_smem[a2*32 + a3]; float in1 = x_smem[a2*528 + a0*66 + a3*2 ]; float in2 = x_smem[a2*528 + a0*66 + a3*2 + 1]; float in3 = w_smem[a2*512 + a3*16 + a1*2 ]; float in4 = w_smem[a2*512 + a3*16 + a1*2 + 1]; float v0 = in1 + in0; float v1 = in2 + in0; acc0 += v0 * in3; acc1 += v0 * in4; acc2 += v1 * in3; acc3 += v1 * in4; } } relu[a0*2*16 + a1*2 ] = fmaxf(0.0f, acc0); relu[a0*2*16 + a1*2 + 1] = fmaxf(0.0f, acc1); relu[(a0*2+1)*16 + a1*2 ] = fmaxf(0.0f, acc2); relu[(a0*2+1)*16 + a1*2 + 1] = fmaxf(0.0f, acc3); } } Every stage is printable on demand. No GPU needed. deplodock compile -c \"torch.relu(torch.matmul(torch.randn(16,64) + torch.randn(64), torch.randn(64,16)))\" --ir tensor|loop|tile|kernel|cuda Benchmarking against eager PyTorch and torch.compile (attention scores at Qwen-block size, where the compiler ties torch.compile): deplodock run --bench -c \"torch.nn.Softmax(dim=-1)(torch.randn(1,28,2048,2048))\" End-to-end compilation of a real model: deplodock compile Qwen/Qwen2.5-7B The linked article goes through the design in detail (RMSNorm walked through every IR, the σ-based fusion algorithm with blowup guard, validation against torch.compile on TinyLlama and Qwen2.5-7B blocks). The forthcoming second part will go through the codegen internals. submitted by /u/NoVibeCoding [link] [comments]",
         "grade": "A",
-        "extension": "可追踪开源教学型编译器是否帮助更多开发者理解LLM推理优化，并影响小模型部署、CUDA教学和编译器生态。"
+        "extension": "轻量编译器项目有助于教育和原型验证，也可观察MLIR、Triton、XLA之外的简化学习栈。"
       },
       {
         "id": "d7b57cd905f6921dd1c31671377e1f6c",
-        "title": "AST图结合BM25把代码库RAG上下文压到5K",
-        "chinese_title": "AST图结合BM25把代码库RAG上下文压到5K",
+        "title": "AST图结合BM25压缩代码RAG上下文",
+        "chinese_title": "AST图结合BM25压缩代码RAG上下文",
         "original_title": "Codebase-scale retrieval using AST-derived graphs + BM25 — reducing LLM context from 100K to 5K tokens [D]",
-        "summary": "开发者分享一种面向大型代码库的检索方案，用AST派生图捕捉函数、类型和调用关系，再结合BM25减少LLM上下文，从约10万token压缩到约5000token。",
+        "summary": "开发者分享用AST派生图和BM25做代码库级检索的方法，将LLM上下文从约10万token压缩到5000token。",
         "rating": "A",
-        "score": 81,
+        "score": 76,
         "type": "tool",
         "typeName": "工具技巧",
         "expansion": "代码Agent的瓶颈正在从模型能力转向检索质量，AST图和传统IR方法可能成为低成本替代向量检索的路线。",
         "entities": [
-          "Ai编程",
           "Ast",
           "Bm25",
           "Llm上下文",
-          "代码库Rag"
+          "代码Rag"
         ],
         "sourceLinks": [
           {
@@ -1456,24 +1453,24 @@
         "event_id": null,
         "original_content": "Wanted to share an approach I've been using for retrieval-augmented generation over large codebases and get feedback from people thinking about similar problems. The problem Naive codebase RAG typically works by chunking files into text segments and embedding them for similarity search. This breaks down on code because semantic similarity at the chunk level doesn't capture structural relationships — a function in file A calling a type defined in file C won't surface that dependency through embedding proximity alone. The approach: AST-derived typed graphs Instead of chunking, I parse every file using Tree-sitter into its AST, then extract a typed node/edge graph: Nodes: functions, classes, interfaces, types, modules Edges: imports, exports, call relationships, inheritance, composition This gets stored in SQLite as a persistent graph. Parse cost is one-time per project. Retrieval: BM25 over graph nodes At query time, instead of embedding similarity, I run BM25 scoring over node metadata (names, signatures, docstrings, file paths). Top-scoring nodes get passed to the LLM. The graph structure means a retrieved function automatically pulls in its direct dependencies via edge traversal. Empirically this lands at ~5K tokens per query on medium-large codebases that would otherwise require ~100K tokens with naive full-context approaches. Hierarchical fallback for complex queries For multi-file reasoning tasks: A Mermaid diagram of the full graph serves as a persistent architectural map always in context BM25 node retrieval handles targeted lookup At 70% context capacity, a fast model compresses least-relevant nodes before passing to the primary model Why BM25 over embeddings here Code identifiers (function names, type names, module paths) are highly distinctive lexically. BM25 outperforms embedding similarity on exact and near-exact identifier matching, which is the dominant retrieval pattern in code queries. Embeddings would likely help more for natural language docstring queries — haven't benchmarked that comparison rigorously yet. Open questions I'm still thinking about: Better edge-weighting strategies for the graph — currently all edges are unweighted Whether re-ranking with a cross-encoder would meaningfully improve precision over BM25 alone Handling dynamic languages where call graphs can't be fully resolved statically Has anyone tackled codebase-scale RAG differently? Particularly curious if anyone's compared AST-graph approaches against embedding-based chunk retrieval on real codebases with quantitative benchmarks. submitted by /u/Altruistic_Night_327 [link] [comments]",
         "grade": "A",
-        "extension": "可关注代码智能体是否从文本切块RAG转向结构化代码图检索，以及这类方法对成本、准确率和长上下文依赖的影响。"
+        "extension": "结构化代码RAG能降低Agent读仓库成本，后续可跟踪其在大代码库维护、代码审查和企业知识检索中的效果。"
       },
       {
         "id": "248ec7f87013054c600a8bb28ab2348c",
-        "title": "ICML被指拒掉多篇正面评分论文",
-        "chinese_title": "ICML被指拒掉多篇正面评分论文",
+        "title": "ICML被指拒掉大量一致好评论文",
+        "chinese_title": "ICML被指拒掉大量一致好评论文",
         "original_title": "Seems ICML is rejecting MANY unanimous positively rated papers [D]",
-        "summary": "有作者称ICML今年出现多篇评分整体正面的论文仍被拒，认为rebuttal机制和AC对评分一致性的追求可能制造了新的激励扭曲，引发社区对评审公平性的讨论。",
+        "summary": "社区反馈ICML中不少获得一致正向评分的论文仍被拒，认为rebuttal和AC决策激励出现错配。",
         "rating": "B",
-        "score": 78,
-        "type": "industry",
+        "score": 74,
+        "type": "society",
         "typeName": "社会影响",
         "expansion": "如果类似案例继续累积，顶会可能面临透明度、评审负载和AC责任边界的进一步改革压力。",
         "entities": [
+          "Ac",
           "Icml",
           "Rebuttal",
-          "机器学习会议",
-          "论文审稿"
+          "审稿制度"
         ],
         "sourceLinks": [
           {
@@ -1488,24 +1485,24 @@
         "url": "https://www.reddit.com/r/MachineLearning/comments/1t04vk3/seems_icml_is_rejecting_many_unanimous_positively/",
         "event_id": null,
         "original_content": "My 4444 (4443 pre-rebuttal) got rejected (as expected). Just copying a reply I wrote a couple of days ago before decisions were out: There seems to be a misalignment in the incentives of this year’s ICML reviews. The rebuttal phase is pushing hard to encourage reviewers to reconsider their scores, which has a good motivation. But in practice, it creates a distorted dynamic. ACs are seeking homogeneous ratings among reviewers. As a reviewer, I feel the pressure to increase my score to avoid prolonged back-and-forth discussions. I would assume there may be many reviewers who are not engaged but raise their scores just to end the discussion. At the same time, reviewers who are initially positive often seem reluctant to update their scores, even after their concerns are addressed. I came across a review that said: “Thank you for the rebuttal. The paper is valuable. The rebuttal addressed all my concerns.” (rephrased to avoid directly locating the paper) Yet the score remained at 4. It now makes me nervous (NOW I KNOW I WAS RIGHT!) since scores are inflated while the conference has a limited capacity. In a few days, we may see MANY uniformly positively rated papers rejected, just like last NeurIPS. I would prefer to roll back to how peer review originally was: reviewers provide honest and independent evaluations; AC assess their quality and consistency; and borderline cases are resolved through AC discussion. The current mechanism feels unnecessarily complex and makes the already bad situation worse. submitted by /u/AffectionateLife5693 [link] [comments]",
-        "grade": "A",
-        "extension": "可与ICML大规模投稿和审稿质量议题合并，追踪会议是否会调整AC权重、rebuttal流程或录用指标。"
+        "grade": "B",
+        "extension": "这与顶会投稿规模和评审机制改革相关，可作为机器学习学术生态压力的具体案例。"
       },
       {
         "id": "c04e8b7f999f678f0956a6b78518f580",
-        "title": "TMLR论文提出联合嵌入变分贝叶斯框架",
-        "chinese_title": "TMLR论文提出联合嵌入变分贝叶斯框架",
+        "title": "TMLR论文提出联合嵌入变分贝叶斯",
+        "chinese_title": "TMLR论文提出联合嵌入变分贝叶斯",
         "original_title": "[R] Joint Embedding Variational Bayes (TMLR ’26)",
-        "summary": "一篇TMLR论文提出Joint Embedding Variational Bayes，为非对比式表征学习中的联合嵌入架构加入操作性变分语义，并拆分方向与径向嵌入似然。",
+        "summary": "研究者介绍TMLR 2026论文Joint Embedding Variational Bayes，为非对比表征学习加入操作化变分语义。",
         "rating": "B",
         "score": 69,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "该方向偏理论，但可延伸到自监督表征学习中的不确定性建模，以及非对比学习避免表征塌缩的新解释框架。",
         "entities": [
-          "Joint Embedding Variational Bayes",
+          "Joint Embedding",
           "Tmlr",
-          "变分贝叶斯",
+          "Variational Bayes",
           "表征学习"
         ],
         "sourceLinks": [
@@ -1522,7 +1519,7 @@
         "event_id": null,
         "original_content": "Disclosure: first author. The paper was just published in TMLR, and I figured it might be of interest to some people here. It is fairly dense mathematically, but straightforward conceptually: to add operational variational semantics to joint-embedding architectures for non-contrastive representation learning, we make three coupled choices: Factorize embedding likelihood: the likelihood is split into directional and radial terms, so angular alignment and representation norm are modelled separately. The radial/norm term does not drive accuracy on its own, but the factorization avoids the norm-direction coupling that otherwise produces pathological solutions. Anchor posterior/likelihood uncertainty: the posterior variance is tied to the likelihood scale, so uncertainty directly governs both inference and the embedding likelihood. Use heavy-tailed likelihood: the likelihood uses a Student-t form rather than Gaussian. This matters empirically, since as the likelihood approaches the Gaussian limit, training becomes unstable and the model fails catastrophically. These allow the model to learn anisotropic / feature-wise uncertainty, which is evaluated in a downstream OOD detection experiments, including against VI-SimSiam . arXiv | OpenReview | Code submitted by /u/ISwallow5Gum [link] [comments]",
         "grade": "B",
-        "extension": "可关注该方法是否能为非对比学习提供更可解释的概率语义，以及后续在表征学习基准上的复现和采用情况。"
+        "extension": "该研究偏专业方法，可延展到自监督表征、联合嵌入理论和非对比学习的概率解释。"
       },
       {
         "id": "a61af6a1a79808e3ff5a36079d855e8a",
@@ -1595,9 +1592,9 @@
         "title": "免费版ChatGPT默认开启广告追踪",
         "chinese_title": "免费版ChatGPT默认开启广告追踪",
         "original_title": "ChatGPT now tracks users for ads by default as OpenAI looks for new revenue",
-        "summary": "OpenAI已在投放广告的地区为免费ChatGPT用户默认开启营销Cookie追踪，付费用户不受影响，免费用户可在账户设置中关闭。",
+        "summary": "OpenAI在投放广告地区为免费ChatGPT用户默认开启营销Cookie追踪，付费用户不受影响，用户可在设置中关闭。",
         "rating": "A+",
-        "score": 92,
+        "score": 95,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这会把ChatGPT商业化从订阅收入进一步推向广告与数据变现，也可能引发用户隐私、默认同意机制和AI产品广告边界的后续讨论。",
@@ -1605,7 +1602,7 @@
           "GPT",
           "OpenAI",
           "广告追踪",
-          "营销Cookie"
+          "隐私"
         ],
         "sourceLinks": [
           {
@@ -1621,14 +1618,14 @@
         "event_id": null,
         "original_content": "OpenAI has turned on marketing cookies by default for free ChatGPT users in countries where ads are running. Tracking is automatically active for free accounts but not for paying subscribers. You can disable it in your account settings. The article ChatGPT now tracks users for ads by default as OpenAI looks for new revenue appeared first on The Decoder .",
         "grade": "S",
-        "extension": "OpenAI商业化压力正在向广告和数据追踪延伸，后续可关注免费用户隐私争议、监管反应，以及付费订阅与广告模式之间的产品分层。"
+        "extension": "OpenAI商业化压力正延伸到广告和数据追踪，后续可关注隐私争议、监管反应和免费与付费用户的产品分层。"
       },
       {
         "id": "e5dd571a49e64ff5489fcd1073202e58",
         "title": "Meta收购机器人AI公司加速人形布局",
         "chinese_title": "Meta收购机器人AI公司加速人形布局",
         "original_title": "Meta acquires Assured Robot Intelligence to accelerate humanoid robot push",
-        "summary": "Meta收购机器人AI创业公司Assured Robot Intelligence，希望加速人形机器人研发，并打造类似Android的行业开放平台。",
+        "summary": "Meta收购Assured Robot Intelligence，希望加快人形机器人研发，并打造类似Android的行业开放平台。",
         "rating": "A",
         "score": 82,
         "type": "funding",
@@ -1654,7 +1651,7 @@
         "event_id": null,
         "original_content": "Meta has acquired robotics AI startup Assured Robot Intelligence to accelerate its work on humanoid robots. The goal is an open platform for the entire industry, similar to what Android did for smartphones. The article Meta acquires Assured Robot Intelligence to accelerate humanoid robot push appeared first on The Decoder .",
         "grade": "A",
-        "extension": "Meta正在把AI能力延伸到实体机器人平台，后续可关注其与Figure、特斯拉等路线的差异，以及开放平台策略能否吸引硬件伙伴。"
+        "extension": "Meta将AI能力延伸到实体机器人平台，后续可关注其与Figure、特斯拉等路线的差异和开放平台策略。"
       },
       {
         "id": "7dba3e56bf19125fdb6182ef33ea2b01",
@@ -1668,11 +1665,10 @@
         "typeName": "产品发布",
         "expansion": "低价策略可能倒逼主流模型服务重新评估价格体系，而Imagine模式也显示多模态创意工作流正从单次生成转向智能体式协作。",
         "entities": [
-          "Anthropic",
           "Grok",
           "Imagine",
-          "OpenAI",
-          "xAI"
+          "xAI",
+          "工具调用"
         ],
         "sourceLinks": [
           {
@@ -1688,24 +1684,24 @@
         "event_id": null,
         "original_content": "With Grok 4.3, xAI is leaning into low prices and better tool use. The model shows gains on practical tasks, but it still trails the top models from OpenAI and Anthropic. The release also brings a new agent-based image generator. The article xAI drops Grok 4.3 with steep price cuts and an Imagine agent mode for creative projects appeared first on The Decoder .",
         "grade": "S",
-        "extension": "xAI继续用价格和工具能力争夺开发者入口，后续可观察其与OpenAI、Anthropic在推理价格、Agent能力和创意生成场景上的竞争。"
+        "extension": "xAI继续用价格和工具能力争夺开发者入口，后续可观察其与OpenAI、Anthropic在推理价格和Agent能力上的竞争。"
       },
       {
         "id": "a15478f2ae6d8df55df32f70ba0039c7",
         "title": "Claude Code省Token插件Governor开源",
         "chinese_title": "Claude Code省Token插件Governor开源",
         "original_title": "Governor – a Claude Code plugin to reduce token/context waste",
-        "summary": "Governor面向Claude Code重度用户，提供精简输出、上下文压缩、工具日志过滤和用量遥测，试图从提示、记忆和终端输出多个环节降低token浪费。",
+        "summary": "开源项目Governor面向Claude Code减少token和上下文浪费，回应开发者在长会话和高频调用中的成本痛点。",
         "rating": "A",
-        "score": 76,
+        "score": 80,
         "type": "tool",
         "typeName": "工具技巧",
         "expansion": "该项目反映开发者对长上下文成本和代理失控的治理需求升温，可延伸观察Claude Code插件生态、AI编程工具的成本控制方案以及多代理规则复用。",
         "entities": [
           "Claude Code",
           "Governor",
-          "Token",
-          "上下文压缩"
+          "Token成本",
+          "开源插件"
         ],
         "sourceLinks": [
           {
@@ -1721,24 +1717,24 @@
         "event_id": null,
         "original_content": "Comments",
         "grade": "A",
-        "extension": "这类插件说明AI编程工具生态正在从模型能力竞争延伸到上下文治理和成本控制，后续可观察Claude Code、Codex等Agent工具是否内置类似能力。"
+        "extension": "Claude Code周边插件会成为开发者生态的一部分，后续可观察成本控制、上下文压缩和代理工作流治理工具。"
       },
       {
         "id": "17ffe45a3b9f344764c581fdbfb903e4",
         "title": "AI电话派单公司Avoca估值冲到10亿美元",
         "chinese_title": "AI电话派单公司Avoca估值冲到10亿美元",
         "original_title": "Avoca, whose AI agents let physical services businesses handle inbound calls and dispatch, raised $125M+ across seed, Series A, and Series B at a $1B valuation (Allie Garfinkle/Fortune)",
-        "summary": "Avoca用AI Agent帮助维修、HVAC等线下服务商接听来电并完成派单，已累计融资超过1.25亿美元，最新估值达到10亿美元。",
+        "summary": "Avoca为实体服务商提供AI电话接听和派单代理，已累计融资超1.25亿美元，估值达到10亿美元。",
         "rating": "A+",
-        "score": 89,
+        "score": 98,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "这类垂直Agent融资说明AI正在从通用办公工具进入电话接待、派单等高频线下运营环节，后续可延展观察传统SaaS、呼叫中心和本地服务平台的替代压力。",
         "entities": [
           "Ai Agent",
           "Avoca",
-          "Fortune",
-          "Hvac"
+          "电话派单",
+          "融资"
         ],
         "sourceLinks": [
           {
@@ -1753,8 +1749,8 @@
         "url": "https://www.techmeme.com/260502/p1#a260502p1",
         "event_id": null,
         "original_content": "Allie Garfinkle / Fortune : Avoca, whose AI agents let physical services businesses handle inbound calls and dispatch, raised $125M+ across seed, Series A, and Series B at a $1B valuation — Tyson Chen and Apurva Shrivastava were chasing restaurants when they found an HVAC company. — The two engineers had first met …",
-        "grade": "A+",
-        "extension": "垂直行业语音Agent正在从客服走向交易和调度流程，后续可延伸到本地服务SaaS、呼叫中心替代和中小企业AI工具付费能力。"
+        "grade": "S",
+        "extension": "垂直行业AI Agent融资说明资本正在寻找清晰ROI场景，后续可跟踪本地服务、客服和调度自动化的落地速度。"
       },
       {
         "id": "7d6da08ec8305c68cd8a697a809a052a",
@@ -1789,20 +1785,20 @@
       },
       {
         "id": "86d6a843acbbbf906198f98800c615b2",
-        "title": "ARC-AGI-3最新成绩出炉，GPT仍未破局",
-        "chinese_title": "ARC-AGI-3最新成绩出炉，GPT仍未破局",
+        "title": "ARC-AGI-3最新成绩显示模型仍很低",
+        "chinese_title": "ARC-AGI-3最新成绩显示模型仍很低",
         "original_title": "ARC-AGI-3 Update (GPT-5.5 High and Opus4.7)",
-        "summary": "GPT-5.5和Opus 4.7在ARC-AGI-3上的得分仍低于1%，显示新一代模型在抽象推理基准上距离稳定突破仍有明显差距。",
+        "summary": "社区更新称GPT-5.5在ARC-AGI-3上约0.43%，Opus 4.7约0.18%，显示该基准对前沿模型仍然困难。",
         "rating": "A",
-        "score": 77,
+        "score": 87,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "可结合其他推理基准追踪大模型能力边界，观察模型规模、训练方法和测试集难度之间的真实进展，而非只看发布宣传。",
         "entities": [
-          "Arc-Agi",
-          "GPT",
+          "Arc-Agi-3",
+          "Gpt-5.5",
           "Opus",
-          "大模型评测"
+          "基准测试"
         ],
         "sourceLinks": [
           {
@@ -1815,7 +1811,10 @@
         "published_at": "2026-05-02T11:20:40.275477",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1t1acet/arcagi3_update_gpt55_high_and_opus47/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "- GPT-5.5: 0.43% - Opus 4.7: 0.18% ARC-AGI-3 is no joke. I can’t wait to see which models finally crack. submitted by /u/skazerb [link] [comments]",
+        "grade": "A+",
+        "extension": "该成绩可作为通用推理能力仍未突破的证据，后续应与工具增强版本和错误类型分析一起跟踪。"
       },
       {
         "id": "29811a8d668a9173e2c9c05afef0fef9",
@@ -1849,21 +1848,20 @@
       },
       {
         "id": "d254d557e031e11ac23fe7691f040214",
-        "title": "Sam Altman松口UBI，转向算力和股权共享",
-        "chinese_title": "Sam Altman松口UBI，转向算力和股权共享",
+        "title": "Altman称不再像过去那样相信UBI",
+        "chinese_title": "Altman称不再像过去那样相信UBI",
         "original_title": "Sam Altman No Longer Believes In Universal Basic Income",
-        "summary": "Sam Altman表示不再像过去那样相信固定现金式UBI足以应对AI冲击，转而强调算力、股权等更接近共同所有权的分配机制。",
+        "summary": "Sam Altman在访谈中表示不再像过去那样相信固定现金式全民基本收入，认为AI时代社会需要更复杂的支持方式。",
         "rating": "A+",
-        "score": 90,
-        "type": "society",
+        "score": 87,
+        "type": "opinion",
         "typeName": "社会影响",
         "expansion": "该话题可延伸到AI自动化后的社会再分配方案：现金补贴、算力权益、公司股权和公共资产基金分别能解决哪些问题、又会制造哪些新摩擦。",
         "entities": [
-          "Ai算力",
+          "Ai就业",
           "OpenAI",
           "Sam Altman",
-          "共同所有权",
-          "通用基本收入"
+          "Ubi"
         ],
         "sourceLinks": [
           {
@@ -1876,21 +1874,24 @@
         "published_at": "2026-05-02T11:20:40.275673",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1t14fpg/sam_altman_no_longer_believes_in_universal_basic/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "This is a repost because the moderator deleted the previous post for unspecified reasons: https://www.businessinsider.com/sam-altman-ubi-universal-basic-income-view-changes-2026-4 \"I no longer believe in universal basic income as much as I once did,\" Altman told The Atlantic CEO Nicholas Thompson during an interview for his \"The Most Interesting Thing in AI\" series. Altman said that while a fixed cash payment may sound nice, it won't meet what society will truly need as AI adoption rises, sparking a potential upheaval in the labor market. \"I think just like a fixed cash payment, although useful and maybe a good idea in some ways, does not get at what we're really going to need for this next phase and the kind of collective alignment of shared upside as the balance between labor and capital shifts,\" Altman said. As interest in UBI exploded in 2019, Altman helped raise $60 million, including $14 million of his own money, to fund the largest-of-its-kind experiment giving low-income participants $1,000 a month for three years. Researchers ultimately found that while overall spending increased among those who received the cash payments, there was no \"direct evidence of improved access to healthcare or improvements to physical and mental health.\" Altman has focused more about twists to the traditional UBI of direct cash payments. The OpenAI CEO has repeatedly suggested the possibility of giving people a portion of AI compute, which could then be used, sold, or traded. \"I'm much more interested in ways where we think about kind of collective ownership that could be in compute or in equities or something else,\" he said. Very interesting. When super intelligence renders hundreds of millions people as unemployable, how will they pay their mortgage, bills, etc, with \"AI compute?\" When people are unable to pay, banks will not accept \"AI Tokens\" as a form of payment, this is the modern equivalent of \"Let them eat cake.\" submitted by /u/Neurogence [link] [comments]",
+        "grade": "A+",
+        "extension": "Altman转向会影响OpenAI关于AI红利再分配的公共叙事，也可延展到就业、教育和公共政策讨论。"
       },
       {
         "id": "9ebebfc883c643058fbc6d01f71b5268",
-        "title": "Figure 03脚部细节曝光，可支持无线充电",
-        "chinese_title": "Figure 03脚部细节曝光，可支持无线充电",
+        "title": "Figure 03脚部设计支持无线充电",
+        "chinese_title": "Figure 03脚部设计支持无线充电",
         "original_title": "Figure AI’s CEO shows the Figure 03 humanoid robot’s feet, designed to allow the robot to charge wirelessly",
-        "summary": "Figure AI CEO展示了Figure 03人形机器人的脚部设计，重点指向无线充电能力，暗示其在长期自主运行和部署便利性上的工程取向。",
+        "summary": "Figure AI CEO展示Figure 03人形机器人脚部设计，重点是让机器人能够通过脚部实现无线充电。",
         "rating": "A",
-        "score": 76,
+        "score": 79,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "可继续观察人形机器人从演示走向部署时，充电、维护、续航和安全冗余等底层工程设计是否成为竞争焦点。",
         "entities": [
-          "Figure",
+          "Figure 03",
           "Figure Ai",
           "人形机器人",
           "无线充电"
@@ -1906,7 +1907,10 @@
         "published_at": "2026-05-02T11:20:40.275760",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1t13vqr/figure_ais_ceo_shows_the_figure_03_humanoid/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "submitted by /u/Distinct-Question-16 [link] [comments]",
+        "grade": "A",
+        "extension": "无线充电设计关系到人形机器人在家庭和工厂中的自主运行能力，后续可观察续航、底座生态和维护成本。"
       },
       {
         "id": "e904017713eba7288448cf0779b6b8da",
@@ -17153,6 +17157,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-03T08:21:34.973192",
+  "last_updated": "2026-05-03T08:21:46.102328",
   "total_news": 548
 }
