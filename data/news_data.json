@@ -2,6 +2,97 @@
   "news": {
     "2026-05-04": [
       {
+        "id": "0bbededef34ca2216e8344972278ca4e",
+        "title": "机器学习博士研究正在变得过于增量式吗？社区激辩当前科研现状",
+        "chinese_title": "机器学习博士研究正在变得过于增量式吗？社区激辩当前科研现状",
+        "original_title": "Are modern ML PhDs becoming too incremental, or is this just what research looks like now? [D]",
+        "summary": "一位机器学习领域的研究者在Reddit上发起讨论，指出现代ML博士工作大多遵循可预测的模式：将已有想法拼接、微调后宣称达到新SOTA，引发社区对当前AI研究是否缺乏真正创新的广泛争论。",
+        "rating": "B",
+        "score": 68,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这一讨论折射出AI领域论文数量爆炸式增长与实际突破性进展之间的落差，可能引发学术界对科研评价体系和博士培养模式的反思。",
+        "entities": [
+          "学术界",
+          "机器学习",
+          "科研评价"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t311vb/are_modern_ml_phds_becoming_too_incremental_or_is/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777874758,
+        "published_at": "2026-05-04T14:05:58.515541",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t311vb/are_modern_ml_phds_becoming_too_incremental_or_is/",
+        "event_id": null
+      },
+      {
+        "id": "75906b49b5a592b38819fe7de973bfe7",
+        "title": "利用GPU闲置NVENC芯片压缩传输数据，多卡PCIe带宽瓶颈有新解法",
+        "chinese_title": "利用GPU闲置NVENC芯片压缩传输数据，多卡PCIe带宽瓶颈有新解法",
+        "original_title": "torch-nvenc-compress: GPU NVENC silicon as a PCIe bandwidth multiplier — PCA + pure-ctypes Video Codec SDK wrapper. Parallel-path overlap measured at 67% of theoretical max on a real GEMM + encode workload. [P]",
+        "summary": "开发者开源了一个Python库，利用显卡上闲置的视频编解码硅片对激活值和KV缓存进行实时压缩传输，在真实GEMM+编码负载下实现了理论峰值67%的并行路径重叠，有望缓解消费级多GPU的PCIe带宽瓶颈。",
+        "rating": "A",
+        "score": 79,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术思路可能影响消费级AI推理的硬件配置策略，降低多卡部署门槛，对AI硬件和边缘计算领域具有潜在推动作用。",
+        "entities": [
+          "Gpu",
+          "NVIDIA",
+          "Nvenc",
+          "Pcie",
+          "开源"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t2zy4h/torchnvenccompress_gpu_nvenc_silicon_as_a_pcie/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777874758,
+        "published_at": "2026-05-04T14:05:58.515566",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t2zy4h/torchnvenccompress_gpu_nvenc_silicon_as_a_pcie/",
+        "event_id": null
+      },
+      {
+        "id": "2e9126ee6a761bc2b76478e882026eb5",
+        "title": "Sam Altman聘请曾代理Twitter对抗马斯克的律师，主导OpenAI诉讼案",
+        "chinese_title": "Sam Altman聘请曾代理Twitter对抗马斯克的律师，主导OpenAI诉讼案",
+        "original_title": "A profile of William Savitt, Sam Altman's lead lawyer against Elon Musk, who represented Twitter against Musk in 2022 and helped OpenAI's for-profit transition (Jacob Shamsian/Business Insider)",
+        "summary": "Business Insider报道，Sam Altman聘请了资深律师William Savitt作为其在Elon Musk试图拆解OpenAI的诉讼中的首席律师，Savitt曾在2022年代理Twitter对抗马斯克，并协助OpenAI完成营利性转型。",
+        "rating": "A+",
+        "score": 90,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "这场法律战的结果可能深刻影响OpenAI的公司治理结构和AI行业格局，马斯克与Altman之间的恩怨纠葛也将持续成为科技圈焦点。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "Sam Altman",
+          "Twitter",
+          "William Savitt"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260504/p4#a260504p4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777874758,
+        "published_at": "2026-05-04T14:05:58.515647",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260504/p4#a260504p4",
+        "event_id": null
+      },
+      {
         "id": "8a045eb2d54a5af1fc10bf218c5d65e0",
         "title": "Anthropic拟与私募巨头成立15亿美元合资企业，向PE客户销售AI产品",
         "chinese_title": "Anthropic拟与私募巨头成立15亿美元合资企业，向PE客户销售AI产品",
@@ -919,6 +1010,36 @@
       }
     ],
     "2026-05-03": [
+      {
+        "id": "bc17ad4d4de96544df2634d9d6fc204a",
+        "title": "冻结的Pythia-70M模型也能拥有快速记忆？研究者探索前向推理记忆机制",
+        "chinese_title": "冻结的Pythia-70M模型也能拥有快速记忆？研究者探索前向推理记忆机制",
+        "original_title": "Toy experiment: frozen Pythia-70M can use a forward-derived fast memory for contextual one-shot symbolic recall [D]",
+        "summary": "研究者在一项小型实验中验证，在冻结权重的开源Transformer模型上叠加一个小型外部记忆模块，仅通过前向传播即可实现有限的上下文一次性符号召回，为不依赖反向传播的临时记忆机制提供了新思路。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该方向若取得突破，可能为在不更新模型权重的前提下实现高效上下文适应开辟新路径，对边缘端部署和低资源微调场景有重要意义。",
+        "entities": [
+          "Pythia",
+          "Transformer",
+          "上下文学习",
+          "开源模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t23wug/toy_experiment_frozen_pythia70m_can_use_a/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777874758,
+        "published_at": "2026-05-04T14:05:58.515620",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t23wug/toy_experiment_frozen_pythia70m_can_use_a/",
+        "event_id": null
+      },
       {
         "id": "695ced490d2ab00b476768e14865d89f",
         "title": "SpaceX IPO在即，科技股面临数十亿美元调仓压力",
@@ -2137,6 +2258,36 @@
       }
     ],
     "2026-05-02": [
+      {
+        "id": "c7e6e97cea4404086927f79ac1cdc6e3",
+        "title": "Meta测试时计算扩展论文首个开源实现，基于Gemini在SWE基准上验证",
+        "chinese_title": "Meta测试时计算扩展论文首个开源实现，基于Gemini在SWE基准上验证",
+        "original_title": "I implemented meta paper [P]",
+        "summary": "一位开发者实现了Meta关于智能体编码的测试时计算扩展论文的核心PDR+RTV pipeline，这是该论文已知的首个公开实现，使用Gemini模型在SWE基准上进行了测试验证。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "开源实现将降低其他研究者复现和扩展该工作的门槛，可能加速测试时计算优化方向的研究进展，推动智能体编码能力的提升。",
+        "entities": [
+          "Gemini",
+          "Meta",
+          "Swe基准",
+          "开源"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t1rni9/i_implemented_meta_paper_p/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777874758,
+        "published_at": "2026-05-04T14:05:58.515633",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t1rni9/i_implemented_meta_paper_p/",
+        "event_id": null
+      },
       {
         "id": "548a41f84f274cca36f5675c220c8a4a",
         "title": "纽约AI高中计划因家长抗议搁置",
@@ -16863,39 +17014,9 @@
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260427/p7#a260427p7",
         "event_id": null
-      },
-      {
-        "id": "734ec4c4d512881ee56470603184820c",
-        "title": "德国机器人软件公司Sereact获1.1亿美元B轮融资",
-        "chinese_title": "德国机器人软件公司Sereact获1.1亿美元B轮融资",
-        "original_title": "Stuttgart-based Sereact, which develops software for industrial robots to handle tasks they haven't been trained on, raised a $110M Series B led by Headline (Yazhou Sun/Bloomberg)",
-        "summary": "德国工业机器人软件公司 Sereact 完成 1.1 亿美元 B 轮融资，主打让机器人处理未预训练任务，这笔融资表明具身智能落地正从实验验证走向更重资本支持的规模化阶段。",
-        "rating": "A",
-        "score": 80,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "这笔大额融资会带动市场重新审视工业机器人软件层的估值逻辑，也值得继续跟进物流、制造等场景里通用操作模型的商业化进展，以及同类具身智能公司的竞品反应。",
-        "entities": [
-          "Ai Model",
-          "Headline",
-          "Industrial Robots",
-          "Sereact"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260427/p4#a260427p4"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777269836,
-        "published_at": "2026-04-27T14:03:56.988941",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260427/p4#a260427p4",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-04T13:06:51.257254",
-  "total_news": 541
+  "last_updated": "2026-05-04T14:08:47.831526",
+  "total_news": 545
 }
