@@ -2,6 +2,124 @@
   "news": {
     "2026-05-04": [
       {
+        "id": "507d0f979703dfe8169de182cb2e40e0",
+        "title": "欧盟200亿欧元主权算力计划遭质疑：需求存疑且过度依赖英伟达",
+        "chinese_title": "欧盟200亿欧元主权算力计划遭质疑：需求存疑且过度依赖英伟达",
+        "original_title": "Legislators and experts criticize the EU's &euro;20B sovereign compute data center plan, questioning whether there is demand and the plan's reliance on Nvidia GPUs (Pieter Haeck/Politico)",
+        "summary": "欧洲立法者和专家对欧盟提出的200亿欧元主权算力数据中心计划提出批评，质疑该计划是否存在实际需求，并对其严重依赖英伟达GPU的技术路线表示担忧。批评者认为布鲁塞尔规划的庞大计算中心可能面临产能过剩风险。",
+        "rating": "A+",
+        "score": 89,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此事件可能引发对欧洲AI主权战略的深层反思，延伸至各国算力自建潮是否真正具备经济合理性，以及英伟达在全球AI基础设施中的不可替代性能否持续。",
+        "entities": [
+          "NVIDIA",
+          "Pieter Haeck",
+          "欧盟"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260504/p6#a260504p6"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777882531,
+        "published_at": "2026-05-04T16:15:31.464956",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260504/p6#a260504p6",
+        "event_id": null
+      },
+      {
+        "id": "012351da2b419f3a67afa95313d7f291",
+        "title": "Gemma4 E4B iPhone实测：揭示AI推理真正瓶颈在内存而非算力",
+        "chinese_title": "Gemma4 E4B iPhone实测：揭示AI推理真正瓶颈在内存而非算力",
+        "original_title": "These are the benchmark results for Gemma4 E4B tested on my iPhone 16 Pro.",
+        "summary": "有开发者在iPhone 16 Pro上测试了Gemma4 E4B模型，结果显示CPU/GPU在预填充阶段速度正常，但解码阶段出现10到20倍的性能落差，证实内存带宽才是AI推理的真正瓶颈，三星和SK海力士的高性能HBM业务因此持续受益。",
+        "rating": "A",
+        "score": 78,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "这一发现进一步支撑了HBM内存的战略价值，可延伸至三星、SK海力士与苹果谷歌之间利润对比分析，以及端侧AI性能优化的核心方向。",
+        "entities": [
+          "Gemma",
+          "Iphone",
+          "Samsung Electronics"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t2v9u3/these_are_the_benchmark_results_for_gemma4_e4b/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777882531,
+        "published_at": "2026-05-04T16:15:31.464983",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t2v9u3/these_are_the_benchmark_results_for_gemma4_e4b/",
+        "event_id": null
+      },
+      {
+        "id": "d3b2a9e58f77acccaaf1a826bd8bc481",
+        "title": "Karpathy最新访谈：从Vibe Coding到Agentic Engineering，程序员的下一步",
+        "chinese_title": "Karpathy最新访谈：从Vibe Coding到Agentic Engineering，程序员的下一步",
+        "original_title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering",
+        "summary": "前特斯拉AI负责人、OpenAI联合创始人Andrej Karpathy在AI Ascent 2026上表示，自己作为程序员从未感到如此落后，他认为在vibe coding之上正在形成一门更严肃的\\\"智能体工程\\\"学科，并将LLM比作需要新判断力来引导的\\\"幽灵\\\"。",
+        "rating": "A+",
+        "score": 90,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "Karpathy提出的\\\"Agentic Engineering\\\"概念可能成为2026年AI开发范式讨论的核心议题，延伸至软件3.0概念落地、LLM可验证性边界以及程序员角色转型等深度话题。",
+        "entities": [
+          "Andrej Karpathy",
+          "Eureka Labs",
+          "OpenAI",
+          "Sequoia",
+          "Tesla"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t2rvs1/andrej_karpathy_from_vibe_coding_to_agentic/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777882531,
+        "published_at": "2026-05-04T16:15:31.465006",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t2rvs1/andrej_karpathy_from_vibe_coding_to_agentic/",
+        "event_id": null
+      },
+      {
+        "id": "ded895c9592426ee425e5e286431a053",
+        "title": "马斯克在开庭前联系OpenAI总裁Brockman试探和解意向",
+        "chinese_title": "马斯克在开庭前联系OpenAI总裁Brockman试探和解意向",
+        "original_title": "Musk Messaged Brockman About Settlement",
+        "summary": "据OpenAI律师提交法庭的文件显示，马斯克在针对OpenAI的诉讼开庭数日前通过私信联系OpenAI总裁Greg Brockman，试探其是否有意和解，这一细节揭示了双方博弈中的私下接触。",
+        "rating": "A+",
+        "score": 91,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "此事件标志着马斯克与OpenAI法律纠纷进入关键阶段，可延伸至诉讼结果对OpenAI公司治理结构的影响、AI行业商业纠纷的判例意义。",
+        "entities": [
+          "Elon Musk",
+          "Greg Brockman",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/musk-messaged-brockman-settlement"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777882531,
+        "published_at": "2026-05-04T16:15:31.465043",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/musk-messaged-brockman-settlement",
+        "event_id": null
+      },
+      {
         "id": "0bbededef34ca2216e8344972278ca4e",
         "title": "机器学习博士研究正在变得过于增量式吗？社区激辩当前科研现状",
         "chinese_title": "机器学习博士研究正在变得过于增量式吗？社区激辩当前科研现状",
@@ -90,6 +208,66 @@
         "published_at": "2026-05-04T14:05:58.515647",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260504/p4#a260504p4",
+        "event_id": null
+      },
+      {
+        "id": "bc17ad4d4de96544df2634d9d6fc204a",
+        "title": "冻结的Pythia-70M模型也能拥有快速记忆？研究者探索前向推理记忆机制",
+        "chinese_title": "冻结的Pythia-70M模型也能拥有快速记忆？研究者探索前向推理记忆机制",
+        "original_title": "Toy experiment: frozen Pythia-70M can use a forward-derived fast memory for contextual one-shot symbolic recall [D]",
+        "summary": "研究者在一项小型实验中验证，在冻结权重的开源Transformer模型上叠加一个小型外部记忆模块，仅通过前向传播即可实现有限的上下文一次性符号召回，为不依赖反向传播的临时记忆机制提供了新思路。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该方向若取得突破，可能为在不更新模型权重的前提下实现高效上下文适应开辟新路径，对边缘端部署和低资源微调场景有重要意义。",
+        "entities": [
+          "Pythia",
+          "Transformer",
+          "上下文学习",
+          "开源模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t23wug/toy_experiment_frozen_pythia70m_can_use_a/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777874758,
+        "published_at": "2026-05-04T14:05:58.515620",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t23wug/toy_experiment_frozen_pythia70m_can_use_a/",
+        "event_id": null
+      },
+      {
+        "id": "c7e6e97cea4404086927f79ac1cdc6e3",
+        "title": "Meta测试时计算扩展论文首个开源实现，基于Gemini在SWE基准上验证",
+        "chinese_title": "Meta测试时计算扩展论文首个开源实现，基于Gemini在SWE基准上验证",
+        "original_title": "I implemented meta paper [P]",
+        "summary": "一位开发者实现了Meta关于智能体编码的测试时计算扩展论文的核心PDR+RTV pipeline，这是该论文已知的首个公开实现，使用Gemini模型在SWE基准上进行了测试验证。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "开源实现将降低其他研究者复现和扩展该工作的门槛，可能加速测试时计算优化方向的研究进展，推动智能体编码能力的提升。",
+        "entities": [
+          "Gemini",
+          "Meta",
+          "Swe基准",
+          "开源"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t1rni9/i_implemented_meta_paper_p/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1777874758,
+        "published_at": "2026-05-04T14:05:58.515633",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t1rni9/i_implemented_meta_paper_p/",
         "event_id": null
       },
       {
@@ -1011,33 +1189,31 @@
     ],
     "2026-05-03": [
       {
-        "id": "bc17ad4d4de96544df2634d9d6fc204a",
-        "title": "冻结的Pythia-70M模型也能拥有快速记忆？研究者探索前向推理记忆机制",
-        "chinese_title": "冻结的Pythia-70M模型也能拥有快速记忆？研究者探索前向推理记忆机制",
-        "original_title": "Toy experiment: frozen Pythia-70M can use a forward-derived fast memory for contextual one-shot symbolic recall [D]",
-        "summary": "研究者在一项小型实验中验证，在冻结权重的开源Transformer模型上叠加一个小型外部记忆模块，仅通过前向传播即可实现有限的上下文一次性符号召回，为不依赖反向传播的临时记忆机制提供了新思路。",
-        "rating": "B",
-        "score": 70,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该方向若取得突破，可能为在不更新模型权重的前提下实现高效上下文适应开辟新路径，对边缘端部署和低资源微调场景有重要意义。",
+        "id": "b68b6eb3fa9ce54aade840c47897b151",
+        "title": "1X工厂曝光人形机器人自进化产线：机器人正在制造机器人",
+        "chinese_title": "1X工厂曝光人形机器人自进化产线：机器人正在制造机器人",
+        "original_title": "The 1X factory is capturing employers’ tasks and gradually replacing them with NEOs, leading to humanoid robots building, humanoid robots.",
+        "summary": "一段来自1X公司的工厂视频显示，人形机器人NEO正在逐步替代人类工人完成生产任务，展现出人形机器人自主构建人形机器人的场景，引发业界对自动化加速替代人工的深度讨论。",
+        "rating": "A",
+        "score": 76,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "人形机器人自复制产线若被证实规模化运作，将极大加速制造业自动化进程，可延伸至机器人替代劳动力的经济与政策应对、1X与波士顿动力等竞品的进展对比。",
         "entities": [
-          "Pythia",
-          "Transformer",
-          "上下文学习",
-          "开源模型"
+          "1X",
+          "Neo"
         ],
         "sourceLinks": [
           {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1t23wug/toy_experiment_frozen_pythia70m_can_use_a/"
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t2ox6c/the_1x_factory_is_capturing_employers_tasks_and/"
           }
         ],
         "sources": 1,
-        "timestamp": 1777874758,
-        "published_at": "2026-05-04T14:05:58.515620",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1t23wug/toy_experiment_frozen_pythia70m_can_use_a/",
+        "timestamp": 1777882531,
+        "published_at": "2026-05-04T16:15:31.465019",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t2ox6c/the_1x_factory_is_capturing_employers_tasks_and/",
         "event_id": null
       },
       {
@@ -2258,36 +2434,6 @@
       }
     ],
     "2026-05-02": [
-      {
-        "id": "c7e6e97cea4404086927f79ac1cdc6e3",
-        "title": "Meta测试时计算扩展论文首个开源实现，基于Gemini在SWE基准上验证",
-        "chinese_title": "Meta测试时计算扩展论文首个开源实现，基于Gemini在SWE基准上验证",
-        "original_title": "I implemented meta paper [P]",
-        "summary": "一位开发者实现了Meta关于智能体编码的测试时计算扩展论文的核心PDR+RTV pipeline，这是该论文已知的首个公开实现，使用Gemini模型在SWE基准上进行了测试验证。",
-        "rating": "A",
-        "score": 78,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "开源实现将降低其他研究者复现和扩展该工作的门槛，可能加速测试时计算优化方向的研究进展，推动智能体编码能力的提升。",
-        "entities": [
-          "Gemini",
-          "Meta",
-          "Swe基准",
-          "开源"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1t1rni9/i_implemented_meta_paper_p/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777874758,
-        "published_at": "2026-05-04T14:05:58.515633",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1t1rni9/i_implemented_meta_paper_p/",
-        "event_id": null
-      },
       {
         "id": "548a41f84f274cca36f5675c220c8a4a",
         "title": "纽约AI高中计划因家长抗议搁置",
@@ -16921,102 +17067,9 @@
         "source": "Techmeme",
         "url": "http://www.techmeme.com/260427/p11#a260427p11",
         "event_id": null
-      },
-      {
-        "id": "bdcba087e21eb009fa5332f139db111d",
-        "title": "教程爆火：用Ollama给Claude Code成本砍九成",
-        "chinese_title": "教程爆火：用Ollama给Claude Code成本砍九成",
-        "original_title": "The cost math behind routing Claude Code through Ollama (~90% cut)",
-        "summary": "一个 21 页可视化教程演示如何把 Claude Desktop 保留给策略规划、把 Claude Code 的高频执行路由到 Ollama 开源模型，据称可把日常编码用量成本压低约九成，切中 AI 编程工具降本的现实需求。",
-        "rating": "A",
-        "score": 77,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这类\"双引擎\"工作流如果被更多开发者接受，可能带动本地模型、代理编程路由层和按任务分配模型的产品加速普及，也会倒逼闭源编码助手重新设计订阅与配额策略。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Gemma",
-          "Ollama",
-          "Qwen"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/Coherence-Daddy/use-ollama-to-enhance-claude"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777276991,
-        "published_at": "2026-04-27T16:03:11.133098",
-        "source": "Hacker News",
-        "url": "https://github.com/Coherence-Daddy/use-ollama-to-enhance-claude",
-        "event_id": null
-      },
-      {
-        "id": "021197b68d8db2e1c6fac54d4b4c37df",
-        "title": "DeepMind联手韩国政府把前沿AI推向科研一线",
-        "chinese_title": "DeepMind联手韩国政府把前沿AI推向科研一线",
-        "original_title": "Announcing our partnership with the Republic of Korea",
-        "summary": "Google DeepMind 宣布与韩国科学技术信息通信部合作，将在首尔设立 AI Campus，并推动 AlphaFold、AlphaGenome、AI co-scientist、WeatherNext 等模型进入韩国科研体系，重点服务生命科学、能源和气候研究。",
-        "rating": "A",
-        "score": 83,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这次合作若顺利落地，后续值得追踪各国政府与头部 AI 实验室围绕科研基础设施、人才培养和安全治理展开的国家级合作竞赛，也可能进一步提升 Google 在 AI for Science 领域的制度性入口优势。",
-        "entities": [
-          "Alphafold",
-          "DeepMind",
-          "Msit",
-          "Republic Of Korea",
-          "Weathernext"
-        ],
-        "sourceLinks": [
-          {
-            "name": "DeepMind Blog",
-            "url": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777276991,
-        "published_at": "2026-04-27T16:03:11.133230",
-        "source": "DeepMind Blog",
-        "url": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/",
-        "event_id": null
-      },
-      {
-        "id": "531f5496b58992bf1e0c9cff2ef4f215",
-        "title": "OpenAI联手联发科高通研发手机芯片",
-        "chinese_title": "OpenAI联手联发科高通研发手机芯片",
-        "original_title": "Kuo: OpenAI is working with MediaTek and Qualcomm to develop smartphone chips, with Luxshare handling the system co-design; mass production is expected in 2028 (@mingchikuo)",
-        "summary": "天风国际分析师郭明錤称，OpenAI正与联发科、高通合作开发智能手机处理器，并由立讯参与系统协同设计，若进展顺利最快要到2028年才会量产，显示OpenAI正把终端硬件入口前置布局。",
-        "rating": "A+",
-        "score": 91,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "如果OpenAI真的下场做手机芯片，后续值得追踪其与现有安卓生态、AI端侧推理能力以及苹果自研芯片路线的竞争关系，也会牵动联发科、高通在AI终端分工中的话语权变化。",
-        "entities": [
-          "Luxshare",
-          "Mediatek",
-          "Ming-Chi Kuo",
-          "OpenAI",
-          "Qualcomm"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "http://www.techmeme.com/260427/p7#a260427p7"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777273498,
-        "published_at": "2026-04-27T15:04:58.833560",
-        "source": "Techmeme",
-        "url": "http://www.techmeme.com/260427/p7#a260427p7",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-04T14:08:47.831526",
-  "total_news": 545
+  "last_updated": "2026-05-04T16:17:17.788315",
+  "total_news": 547
 }
