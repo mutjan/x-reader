@@ -2,6 +2,178 @@
   "news": {
     "2026-05-06": [
       {
+        "id": "3be5f034ef8fe6654bb758bd549dc6e2",
+        "title": "Adam：一个可嵌入的跨平台AI智能体开源库",
+        "chinese_title": "Adam：一个可嵌入的跨平台AI智能体开源库",
+        "original_title": "Show HN: Adam – An embeddable cross-platform AI agent library",
+        "summary": "SQLite.AI 开源了 Adam，一个可嵌入到应用程序中的跨平台 AI Agent 库，旨在让开发者更便捷地在不同平台上集成 AI 智能体能力。",
+        "rating": "B",
+        "score": 74,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "开源 AI Agent 库的出现可能降低应用集成 AI 智能体的门槛，推动更多中小型产品快速获得 Agent 能力，加速 AI 应用生态的普及。",
+        "entities": [
+          "Adam",
+          "Sqlite.Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/sqliteai/adam"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778079759,
+        "published_at": "2026-05-06T23:02:39.982401",
+        "source": "Hacker News",
+        "url": "https://github.com/sqliteai/adam",
+        "event_id": null
+      },
+      {
+        "id": "5a99ccf61402b2f3e82d3f257dfd88fd",
+        "title": "最高法院驳回苹果紧急申请，Epic 诉苹果案裁决继续生效",
+        "chinese_title": "最高法院驳回苹果紧急申请，Epic 诉苹果案裁决继续生效",
+        "original_title": "SCOTUS rejects Apple's request to temporarily block a judicial order in the Epic Games lawsuit that found Apple in violation of court-mandated App Store changes (Mike Scarcella/Reuters)",
+        "summary": "美国最高法院驳回了苹果请求暂缓执行法院命令的申请，该命令此前认定苹果违反了对 App Store 进行整改的司法要求，意味着苹果必须继续遵守相关裁决。",
+        "rating": "A",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此裁决可能进一步削弱苹果对 App Store 的管控力，推动更多开发者挑战平台抽成规则，甚至影响全球其他地区的反垄断监管走向。",
+        "entities": [
+          "App Store",
+          "Apple",
+          "Epic Games",
+          "Scotus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "https://www.techmeme.com/260506/p30#a260506p30"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778079759,
+        "published_at": "2026-05-06T23:02:39.982426",
+        "source": "Techmeme (apple)",
+        "url": "https://www.techmeme.com/260506/p30#a260506p30",
+        "event_id": null
+      },
+      {
+        "id": "7d4a3ac4446f75ad32361195ce7145b5",
+        "title": "别再用 LLM 编辑参考文献了，学术社区呼吁回归手动引用",
+        "chinese_title": "别再用 LLM 编辑参考文献了，学术社区呼吁回归手动引用",
+        "original_title": "Stop letting LLMs edit your .bib [D]",
+        "summary": "机器学习社区热议 LLM 编造虚假引用的问题，有研究者反映仅几个月内就发现 5 篇自己论文被 LLM 错误引用的情况，呼吁学术界严格规范引用行为。",
+        "rating": "B",
+        "score": 70,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "LLM 幻觉引用问题可能催生学术引用验证工具的需求，也可能推动期刊和会议引入 AI 引用检测机制，影响学术出版流程。",
+        "entities": [
+          "LLM",
+          "Machine Learning"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t5anla/stop_letting_llms_edit_your_bib_d/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778079759,
+        "published_at": "2026-05-06T23:02:39.982443",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t5anla/stop_letting_llms_edit_your_bib_d/",
+        "event_id": null
+      },
+      {
+        "id": "a520dd7720a4b5e5e4eb54440c374ca2",
+        "title": "新论文：让 Transformer 选择性访问早期层表征，兼顾效率与表达力",
+        "chinese_title": "新论文：让 Transformer 选择性访问早期层表征，兼顾效率与表达力",
+        "original_title": "Transformers with Selective Access to Early Representations [R]",
+        "summary": "研究者提出一种新的 Transformer 架构，让后续层能选择性地访问早期层的表征，在保持 DenseFormer、MUDDFormer 等方法表达力的同时，显著降低吞吐量和内存开销。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果该方法在更大规模模型上验证有效，可能成为下一代 Transformer 架构的标配设计，影响未来大模型训练和推理的效率优化方向。",
+        "entities": [
+          "Denseformer",
+          "Muddformer",
+          "Transformer"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t4z3af/transformers_with_selective_access_to_early/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778079759,
+        "published_at": "2026-05-06T23:02:39.982457",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t4z3af/transformers_with_selective_access_to_early/",
+        "event_id": null
+      },
+      {
+        "id": "6bb8653a4d84fd6dd249e885d443f88f",
+        "title": "AI 成本飙升连风投都吃不消，部分基金单日 Claude 费用超千美元",
+        "chinese_title": "AI 成本飙升连风投都吃不消，部分基金单日 Claude 费用超千美元",
+        "original_title": "Rising AI Costs Are Becoming a Problem For Even Investors",
+        "summary": "AI 使用成本持续攀升，连 Uber 等大公司都在数月内耗尽全年 AI 预算，某大型风投基金为员工购买的 Claude 企业账号日均费用高达 1000 美元，引发行业对 AI 投入产出比的担忧。",
+        "rating": "A",
+        "score": 84,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "AI 成本压力可能推动企业转向更高效的模型或自研方案，也可能加速 AI 定价模式的变革，从按量计费转向打包订阅或混合部署。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Uber"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/rising-ai-costs-becoming-problem-investors"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778079759,
+        "published_at": "2026-05-06T23:02:39.982485",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/rising-ai-costs-becoming-problem-investors",
+        "event_id": null
+      },
+      {
+        "id": "2146c152b6ff92a442ca4ef836d096f3",
+        "title": "AI 芯片需求推动三星市值突破 1 万亿美元，成亚洲第二家",
+        "chinese_title": "AI 芯片需求推动三星市值突破 1 万亿美元，成亚洲第二家",
+        "original_title": "AI boom pushes Samsung to $1T",
+        "summary": "受 AI 驱动的芯片需求提振，三星股价大涨，市值突破 1 万亿美元大关，成为继台积电之后第二家达到这一里程碑的亚洲公司。",
+        "rating": "A+",
+        "score": 87,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "三星市值破万亿反映 AI 算力需求对半导体行业的深远影响，可能进一步刺激全球芯片制造商扩大产能，也预示着 AI 基础设施投资热潮仍在加速。",
+        "entities": [
+          "Samsung",
+          "TSMC"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/05/06/ai-boom-pushes-samsung-to-1t/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778079759,
+        "published_at": "2026-05-06T23:02:39.982496",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/06/ai-boom-pushes-samsung-to-1t/",
+        "event_id": null
+      },
+      {
         "id": "fa02702390726ec1ed6ff0e14af06c6a",
         "title": "Marc Andreessen自曝AI提示词引发群嘲：要求LLM\\\"不要幻觉\\\"暴露认知短板",
         "chinese_title": "Marc Andreessen自曝AI提示词引发群嘲：要求LLM\\\"不要幻觉\\\"暴露认知短板",
@@ -3585,6 +3757,34 @@
       }
     ],
     "2026-05-05": [
+      {
+        "id": "097b606ade350e9141c079d6ea628c29",
+        "title": "SageOX 推出 Agentic 上下文基础设施，解决 AI 智能体信息孤岛问题",
+        "chinese_title": "SageOX 推出 Agentic 上下文基础设施，解决 AI 智能体信息孤岛问题",
+        "original_title": "AI agents are missing all the discussions your team is having. SageOX has an answer: agentic context infrastructure",
+        "summary": "SageOX 发布面向企业的 Agentic 上下文基础设施，旨在为 AI 智能体提供任务相关的完整上下文信息，包括利益相关者、历史讨论和数据，解决当前 Agent 缺乏团队协作感知的痛点。",
+        "rating": "A",
+        "score": 82,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "上下文工程正成为 AI Agent 落地的关键瓶颈，此类基础设施的出现可能推动企业 AI 应用从单点工具向协作平台演进，加速 Agent 在金融、法律等复杂场景的落地。",
+        "entities": [
+          "Ai Agent",
+          "Sageox"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/ai-agents-are-missing-all-the-discussions-your-team-is-having-sageox-has-an-answer-agentic-context-infrastructure"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778079759,
+        "published_at": "2026-05-06T23:02:39.982472",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/ai-agents-are-missing-all-the-discussions-your-team-is-having-sageox-has-an-answer-agentic-context-infrastructure",
+        "event_id": null
+      },
       {
         "id": "75cf78dba8ab67f9310a20850a18294d",
         "title": "ElevenLabs D轮融资超5.5亿美元，ARR突破5亿，BlackRock英伟达参投",
@@ -17124,6 +17324,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-06T22:07:36.608546",
-  "total_news": 564
+  "last_updated": "2026-05-06T23:03:43.953054",
+  "total_news": 571
 }
