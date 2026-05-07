@@ -2,6 +2,125 @@
   "news": {
     "2026-05-07": [
       {
+        "id": "665449b4ab89a98db18d21e298147f4b",
+        "title": "前DeepMind和Meta团队创业，号称打破LLM扩展极限、成本降低1000倍",
+        "chinese_title": "前DeepMind和Meta团队创业，号称打破LLM扩展极限、成本降低1000倍",
+        "original_title": "Subquadratic claims to break LLM scaling limits! 1000x less costs",
+        "summary": "由前DeepMind和Meta工程师创立的初创公司Subquadratic声称开发出一种新架构，可将LLM处理成本降低至当前的1/1000，突破现有模型因计算成本指数级增长而面临的扩展瓶颈。",
+        "rating": "A+",
+        "score": 89,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果该技术属实，将极大降低大模型推理成本，可能颠覆现有算力格局，影响英伟达等芯片厂商的市场预期，同时对国内大模型的降本路线也有参考意义。",
+        "entities": [
+          "Ai架构",
+          "DeepMind",
+          "LLM",
+          "Meta",
+          "Subquadratic"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t64dhj/subquadratic_claims_to_break_llm_scaling_limits/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778151840,
+        "published_at": "2026-05-07T19:04:00.284091",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t64dhj/subquadratic_claims_to_break_llm_scaling_limits/",
+        "event_id": null
+      },
+      {
+        "id": "f986b80e133a2d69434a26bcca785342",
+        "title": "Anthropic CEO放话：2026年公司规模可能扩张80倍，\\\"疯狂到难以驾驭\\\"",
+        "chinese_title": "Anthropic CEO放话：2026年公司规模可能扩张80倍，\\\"疯狂到难以驾驭\\\"",
+        "original_title": "At Anthropic's developer conference, Dario Amodei says the company could grow by 80x in 2026, and its growth rate is \"crazy\" and \"too hard to handle\" (Natallie Rocha/New York Times)",
+        "summary": "Anthropic首席执行官Dario Amodei在开发者大会上表示，公司在2026年可能实现80倍的规模增长，同时承认这种指数级增长的算力需求已经\\\"疯狂到难以驾驭\\\"。",
+        "rating": "A+",
+        "score": 88,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "80倍增长预期将极大推高算力需求，进一步加剧全球AI芯片争夺战，对亚马逊、谷歌等云巨头的合作格局和国内AI企业竞争态势都可能产生连锁反应。",
+        "entities": [
+          "Anthropic",
+          "Dario Amodei"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260507/p11#a260507p11"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778151840,
+        "published_at": "2026-05-07T19:04:00.284112",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260507/p11#a260507p11",
+        "event_id": null
+      },
+      {
+        "id": "c203b5a68018599809e1e4e4a69d5aa4",
+        "title": "马斯克与Anthropic握手合作：此前骂\\\"邪恶\\\"，现签算力供应协议",
+        "chinese_title": "马斯克与Anthropic握手合作：此前骂\\\"邪恶\\\"，现签算力供应协议",
+        "original_title": "Elon Musk says he spent time with Anthropic \"to understand what they do to ensure Claude is good for humanity\"; Musk called Anthropic \"evil\" and \"misanthropic\" (Lauren Goode/Wired)",
+        "summary": "一度公开指责Anthropic\\\"邪恶\\\"和\\\"反人类\\\"的Elon Musk，与前者建立合作关系，Anthropic将使用xAI的计算资源，Musk表示花时间了解Anthropic如何确保Claude对人类有益。",
+        "rating": "S",
+        "score": 96,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "马斯克态度的180度转变凸显AI行业中利益优先于立场的现实，可能预示着AI企业间更多跨阵营合作，也反映了算力资源在AI竞争中的核心战略价值。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Elon Musk",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260507/p10#a260507p10"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778151840,
+        "published_at": "2026-05-07T19:04:00.284128",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260507/p10#a260507p10",
+        "event_id": null
+      },
+      {
+        "id": "d80fcc9b38b9d098611773eef5a16d23",
+        "title": "开源新模型ZAYA1-8B：仅760M活跃参数，数学能力比肩DeepSeek-R1",
+        "chinese_title": "开源新模型ZAYA1-8B：仅760M活跃参数，数学能力比肩DeepSeek-R1",
+        "original_title": "ZAYA1-8B: An 8B Moe Model with 760M Active Params Matching DeepSeek-R1 on Math",
+        "summary": "ZAYA是一款8B参数的开源混合专家模型，通过MoE架构仅激活760M参数即可在数学基准上与DeepSeek-R1持平，展示了高效参数利用的技术路线。",
+        "rating": "A+",
+        "score": 87,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该模型验证了MoE架构以小博大的潜力，为国内大模型的轻量化方向提供新参考，可能推动更多研究关注激活参数效率而非参数量本身。",
+        "entities": [
+          "DeepSeek",
+          "Moe",
+          "Zaya",
+          "开源模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (deepseek)",
+            "url": "https://firethering.com/zaya1-8b-open-source-math-coding-model/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778151840,
+        "published_at": "2026-05-07T19:04:00.284144",
+        "source": "Hacker News (deepseek)",
+        "url": "https://firethering.com/zaya1-8b-open-source-math-coding-model/",
+        "event_id": null
+      },
+      {
         "id": "9b362f202bf95e830ffd8e1d1ae08d98",
         "title": "欧洲芯片制造商Silex斯德哥尔摩IPO首日暴涨160%，创近五年最佳开局",
         "chinese_title": "欧洲芯片制造商Silex斯德哥尔摩IPO首日暴涨160%，创近五年最佳开局",
@@ -18247,6 +18366,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-07T18:05:30.240892",
-  "total_news": 607
+  "last_updated": "2026-05-07T19:06:36.264854",
+  "total_news": 611
 }
