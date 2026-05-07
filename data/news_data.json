@@ -2,6 +2,383 @@
   "news": {
     "2026-05-08": [
       {
+        "id": "b0aa4d5608e3ee21b75d3faabb197da9",
+        "title": "OpenAI前CTO米拉·穆拉蒂宣誓作证，披露萨姆·阿尔特曼任职期间内幕",
+        "chinese_title": "OpenAI前CTO米拉·穆拉蒂宣誓作证，披露萨姆·阿尔特曼任职期间内幕",
+        "original_title": "Under Threat of Perjury, OpenAI’s Former CTO Is Admitting Some Very Interesting Stuff About Sam Altman",
+        "summary": "在OpenAI CEO萨姆·阿尔特曼与投资人埃隆·马斯克之间的法庭纠纷中，OpenAI前CTO、现任Thinking Machines Lab CEO米拉·穆拉蒂在视频宣誓证词中披露了大量关于阿尔特曼任职期间的敏感信息，内容涉及多项令人担忧的管理问题。",
+        "rating": "A+",
+        "score": 90,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "此案可能引发更多OpenAI前员工站出来作证，进一步揭示公司治理问题，甚至影响OpenAI的融资和监管审查。",
+        "entities": [
+          "Elon Musk",
+          "Mira Murati",
+          "OpenAI",
+          "Sam Altman",
+          "Thinking Machines Lab"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/perjury-openai-cto-murati-altman"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368411",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/perjury-openai-cto-murati-altman",
+        "event_id": null
+      },
+      {
+        "id": "d705280b0ca6ff5255414bde49c4cc21",
+        "title": "Anthropic租用环保记录恶劣的Colossus 1数据中心，xAI独占更大的Colossus 2",
+        "chinese_title": "Anthropic租用环保记录恶劣的Colossus 1数据中心，xAI独占更大的Colossus 2",
+        "original_title": "While Anthropic will use the Colossus 1 data center, which has a really bad environmental record, xAI retains the larger Colossus 2 for its own AI training (Simon Willison/Simon Willison's Weblog)",
+        "summary": "Anthropic在Claude Code发布会上宣布租用Colossus 1数据中心用于AI训练，该数据中心因环保问题备受争议，而xAI则保留了规模更大的Colossus 2自用，引发业界对AI算力分配公平性和环境影响的讨论。",
+        "rating": "A",
+        "score": 82,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "AI公司的算力争夺战持续升级，环保问题可能成为监管介入的新切入点，同时也反映了AI训练对能源消耗的巨大需求。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Elon Musk",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260507/p35#a260507p35"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368492",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260507/p35#a260507p35",
+        "event_id": null
+      },
+      {
+        "id": "e18f0fd461ac4b21f2006af60aa79ab0",
+        "title": "内置摄像头的AirPods已进入高级测试阶段，将为Siri提供视觉理解能力",
+        "chinese_title": "内置摄像头的AirPods已进入高级测试阶段，将为Siri提供视觉理解能力",
+        "original_title": "Sources: AirPods with cameras reached an advanced testing stage; the cameras will feed data to Siri to help answer questions, rather than take photos or video (Mark Gurman/Bloomberg)",
+        "summary": "据彭博社报道，苹果内置摄像头的AirPods已进入开发后期阶段，摄像头将用于向Siri传输环境数据以帮助回答问题，而非拍照或录像，这标志着苹果在可穿戴AI交互方向的重大布局。",
+        "rating": "A",
+        "score": 86,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "此举可能推动可穿戴设备AI交互的新范式，引发三星、谷歌等竞品跟进，同时带来新的隐私监管讨论。",
+        "entities": [
+          "Airpods",
+          "Apple",
+          "Mark Gurman",
+          "Siri"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260507/p34#a260507p34"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368537",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260507/p34#a260507p34",
+        "event_id": null
+      },
+      {
+        "id": "4085cb7c9bbf47360cb8fd51e2558b8e",
+        "title": "面向Agent原生CLI的设计原则引发开发者社区热议",
+        "chinese_title": "面向Agent原生CLI的设计原则引发开发者社区热议",
+        "original_title": "Principles for agent-native CLIs",
+        "summary": "一篇关于Agent原生命令行界面设计原则的帖子在Hacker News上引发广泛讨论，探讨了如何让CLI工具更好地服务于AI Agent的自动化操作需求，而非仅面向人类用户。",
+        "rating": "A",
+        "score": 75,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "随着AI Agent普及，开发者工具的设计理念正在从人机交互转向Agent-native，这可能重塑整个开发者工具生态。",
+        "entities": [
+          "Ai Agent",
+          "Hacker News"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://twitter.com/trevin/status/2051316002730991795"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368602",
+        "source": "Hacker News",
+        "url": "https://twitter.com/trevin/status/2051316002730991795",
+        "event_id": null
+      },
+      {
+        "id": "206fe0efb5215b27732fcb3c741f467c",
+        "title": "OpenAI发布三款新语音模型，GPT-Realtime-2具备GPT-5级推理能力",
+        "chinese_title": "OpenAI发布三款新语音模型，GPT-Realtime-2具备GPT-5级推理能力",
+        "original_title": "OpenAI's new voice model brings GPT-5-level reasoning to real-time conversations",
+        "summary": "OpenAI推出GPT-Realtime-2、GPT-Realtime-Translate和GPT-Realtime-Whisper三款实时语音模型，其中GPT-Realtime-2的推理能力据称达到GPT-5水平，支持70多种语言实时翻译和语音转录。",
+        "rating": "A+",
+        "score": 91,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "实时语音AI能力的大幅提升将推动语音助手、客服自动化、实时翻译等应用进入新阶段，对Google、Meta等竞品形成压力。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/openais-new-voice-model-brings-gpt-5-level-reasoning-to-real-time-conversations/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368683",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/openais-new-voice-model-brings-gpt-5-level-reasoning-to-real-time-conversations/",
+        "event_id": null
+      },
+      {
+        "id": "1c5c33a5d97edf158812e337766722f9",
+        "title": "Anthropic研究：用自然语言自动编码器解读Claude的思维过程",
+        "chinese_title": "Anthropic研究：用自然语言自动编码器解读Claude的思维过程",
+        "original_title": "Natural Language Autoencoders: Turning Claude's Thoughts into Text",
+        "summary": "Anthropic发布研究论文，提出自然语言自动编码器方法，能够将Claude大模型的内部思维过程转化为可读的自然语言文本，为AI可解释性研究开辟新路径。",
+        "rating": "A",
+        "score": 84,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "AI可解释性技术的突破将加速监管合规进程，也为AI安全研究提供新工具，可能成为未来AI审计的标准方法之一。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.anthropic.com/research/natural-language-autoencoders"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368721",
+        "source": "Hacker News",
+        "url": "https://www.anthropic.com/research/natural-language-autoencoders",
+        "event_id": null
+      },
+      {
+        "id": "2457268d6bada5ca421a79514724a638",
+        "title": "Zyphra发布ZAYA1-8B开源推理模型，仅80亿参数在AMD GPU上训练",
+        "chinese_title": "Zyphra发布ZAYA1-8B开源推理模型，仅80亿参数在AMD GPU上训练",
+        "original_title": "Meet ZAYA1-8B, a super efficient, open reasoning model trained on AMD Instinct MI300 GPUs",
+        "summary": "初创公司Zyphra发布仅80亿参数的混合专家推理模型ZAYA1-8B，在AMD Instinct MI300 GPU上训练完成，展示了小参数模型在效率上的突破，与OpenAI和Anthropic追求大参数模型的路线形成鲜明对比。",
+        "rating": "A",
+        "score": 86,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "高效小模型的开源趋势可能降低AI应用门槛，推动边缘端部署，同时也为AMD在AI芯片市场挑战英伟达提供了实际案例。",
+        "entities": [
+          "Amd",
+          "Instinct Mi300",
+          "Zaya1-8B",
+          "Zyphra"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat (deepseek)",
+            "url": "https://venturebeat.com/technology/meet-zaya1-8b-a-super-efficient-open-reasoning-model-trained-on-amd-instinct-mi300-gpus"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368764",
+        "source": "VentureBeat (deepseek)",
+        "url": "https://venturebeat.com/technology/meet-zaya1-8b-a-super-efficient-open-reasoning-model-trained-on-amd-instinct-mi300-gpus",
+        "event_id": null
+      },
+      {
+        "id": "a8bc252aae5e5f8e6b1d5fafb0664e58",
+        "title": "OpenAI在API中上线三款实时语音模型，面向开发者开放",
+        "chinese_title": "OpenAI在API中上线三款实时语音模型，面向开发者开放",
+        "original_title": "OpenAI launches three voice models in the API: GPT-Realtime-2 with GPT-5-class reasoning, GPT-Realtime-Whisper for transcription, and GPT-Realtime-Translate (Zac Hall/9to5Mac)",
+        "summary": "OpenAI正式在API中推出GPT-Realtime-2、GPT-Realtime-Whisper和GPT-Realtime-Translate三款实时语音模型，旨在为开发者解锁新一代语音应用，包括实时推理、转录和多语言翻译能力。",
+        "rating": "A+",
+        "score": 89,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "API开放将催生大量语音AI应用创业，加速语音交互在教育、医疗、客服等行业的渗透。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260507/p33#a260507p33"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368798",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260507/p33#a260507p33",
+        "event_id": null
+      },
+      {
+        "id": "cec88ec911c41e8455d01e19f2bf9d0e",
+        "title": "OpenAI推出Trusted Contact安全功能，ChatGPT用户可指定紧急联系人",
+        "chinese_title": "OpenAI推出Trusted Contact安全功能，ChatGPT用户可指定紧急联系人",
+        "original_title": "OpenAI launches Trusted Contact, an optional safety feature for ChatGPT that lets adult users assign an emergency contact for mental health and safety concerns (Jess Weatherbed/The Verge)",
+        "summary": "OpenAI为ChatGPT推出可选安全功能Trusted Contact，允许成年用户指定紧急联系人，在检测到心理健康和安全风险时进行干预，此前该功能仅面向青少年用户开放。",
+        "rating": "A",
+        "score": 80,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "AI平台承担更多社会责任的趋势加速，可能推动行业建立统一的安全干预标准，同时也引发关于AI监控边界的讨论。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260507/p32#a260507p32"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368830",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260507/p32#a260507p32",
+        "event_id": null
+      },
+      {
+        "id": "fb45d7baf96569934992e5231fc3750a",
+        "title": "OpenAI与博通的180亿美元AI芯片合作遭遇融资困境",
+        "chinese_title": "OpenAI与博通的180亿美元AI芯片合作遭遇融资困境",
+        "original_title": "OpenAI’s AI Chip Deal With Broadcom Hits $18 Billion Financing Snag",
+        "summary": "OpenAI与芯片设计公司博通去年宣布的自研AI芯片合作计划遭遇重大融资障碍，涉及180亿美元资金缺口。该项目原计划在2030年前部署相当于五座胡佛水坝发电量的算力，以减少对英伟达的依赖，但双方至今未能解决资金问题。",
+        "rating": "S",
+        "score": 93,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "融资受阻可能延缓OpenAI的芯片自研进程，强化英伟达的议价地位，同时也暴露了AI基础设施投资的巨大资金门槛。",
+        "entities": [
+          "Broadcom",
+          "NVIDIA",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/openais-ai-chip-deal-broadcom-hits-18-billion-financing-snag"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368864",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/openais-ai-chip-deal-broadcom-hits-18-billion-financing-snag",
+        "event_id": null
+      },
+      {
+        "id": "deabaebe707981e0ba1c358363c1d3e8",
+        "title": "预测市场平台Kalshi估值5个月内翻倍，达到220亿美元",
+        "chinese_title": "预测市场平台Kalshi估值5个月内翻倍，达到220亿美元",
+        "original_title": "Kalshi doubles valuation in 5 months, hitting $22 billion",
+        "summary": "预测市场初创公司Kalshi完成由Coatue领投的10亿美元F轮融资，估值达到220亿美元，较5个月前翻倍，反映出市场对预测交易平台的强劲信心。",
+        "rating": "A",
+        "score": 80,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "预测市场的爆发式增长可能推动更多金融创新产品出现，同时也将面临更严格的监管审查。",
+        "entities": [
+          "Coatue",
+          "Kalshi"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/05/07/kalshi-doubles-valuation-in-5-months-hitting-22-billion/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368895",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/07/kalshi-doubles-valuation-in-5-months-hitting-22-billion/",
+        "event_id": null
+      },
+      {
+        "id": "9ffedfa3060faef5cf87b8790615695a",
+        "title": "贝佐斯代表退出Slate Auto董事会，引发对其支持力度的质疑",
+        "chinese_title": "贝佐斯代表退出Slate Auto董事会，引发对其支持力度的质疑",
+        "original_title": "Jeff Bezos rep leaves Slate Auto’s board",
+        "summary": "梅琳达·莱维森退出Slate Auto董事会，引发外界对贝佐斯是否仍支持这家汽车初创公司的质疑。此前贝佐斯似乎已将重心转向其机器人新项目Project Prometheus。",
+        "rating": "B",
+        "score": 68,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "贝佐斯战略重心转移可能影响Slate Auto的后续融资和发展方向，也反映出科技巨头创始人在多个创业项目间的资源分配博弈。",
+        "entities": [
+          "Jeff Bezos",
+          "Project Prometheus",
+          "Slate Auto"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/05/07/jeff-bezos-rep-leaves-slate-autos-board/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368931",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/07/jeff-bezos-rep-leaves-slate-autos-board/",
+        "event_id": null
+      },
+      {
+        "id": "7a79136fdbe9df0d1d3a5034855f464e",
+        "title": "马斯克：SpaceX保留收回Anthropic算力的权利",
+        "chinese_title": "马斯克：SpaceX保留收回Anthropic算力的权利",
+        "original_title": "Elon Musk says SpaceX reserves \"the right to reclaim the compute\" from Anthropic if its \"AI engages in actions that harm humanity\" (Elon Musk/@elonmusk)",
+        "summary": "埃隆马斯克在推特上表示，SpaceX在按照公平条款为AI公司提供算力的同时，保留在Anthropic的AI系统做出危害人类行为时收回算力的权利，引发关于算力供应方对AI公司约束力的讨论。",
+        "rating": "A",
+        "score": 82,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "算力供应方开始将AI安全条款写入商业协议，这可能成为行业新范式，同时也引发关于谁有权定义AI危害行为的争议。",
+        "entities": [
+          "Anthropic",
+          "Elon Musk",
+          "SpaceX",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260507/p31#a260507p31"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778180793,
+        "published_at": "2026-05-08T03:06:33.368966",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260507/p31#a260507p31",
+        "event_id": null
+      },
+      {
         "id": "40b31dd7ed79ee6e35f129d638b70101",
         "title": "OpenAI发布三款语音API模型，GPT-5级推理能力首次进入实时语音",
         "chinese_title": "OpenAI发布三款语音API模型，GPT-5级推理能力首次进入实时语音",
@@ -114,6 +491,62 @@
         "published_at": "2026-05-08T02:06:32.391017",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260507/p29#a260507p29",
+        "event_id": null
+      },
+      {
+        "id": "27b886ece779df1a62bfa5c272b93703",
+        "title": "Nature关注非英语学者困境：语言壁垒正在阻碍学术发表",
+        "chinese_title": "Nature关注非英语学者困境：语言壁垒正在阻碍学术发表",
+        "original_title": "My English skills are hurting my chances in academic publishing — how can I improve?",
+        "summary": "Nature刊文探讨非英语母语学者在学术出版中面临的语言障碍，指出英语能力不足正在系统性影响研究者的发表机会和国际学术影响力。",
+        "rating": "B",
+        "score": 66,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "随着AI翻译和写作工具的普及，学术出版语言公平性问题可能迎来转机，但也可能引发关于AI辅助写作学术诚信边界的新讨论。",
+        "entities": [
+          "Nature"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01350-w"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778177192,
+        "published_at": "2026-05-08T02:06:32.390971",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01350-w",
+        "event_id": null
+      },
+      {
+        "id": "016bf4c0be9de95fd7c712bdf9b0b757",
+        "title": "DeepSeek 4 Flash本地推理引擎登陆Metal，苹果设备跑大模型更进一步",
+        "chinese_title": "DeepSeek 4 Flash本地推理引擎登陆Metal，苹果设备跑大模型更进一步",
+        "original_title": "DeepSeek 4 Flash local inference engine for Metal",
+        "summary": "开发者antirez发布ds4项目，实现DeepSeek 4 Flash模型在Apple Metal框架上的本地推理，让Mac和iOS设备能够本地运行该大语言模型。",
+        "rating": "A",
+        "score": 85,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "本地推理引擎持续优化将推动端侧AI普及，对苹果AI生态和国产大模型出海都有重要意义，也进一步压缩云端推理的市场空间。",
+        "entities": [
+          "Apple",
+          "DeepSeek",
+          "Metal"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (deepseek)",
+            "url": "https://github.com/antirez/ds4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778177192,
+        "published_at": "2026-05-08T02:06:32.390994",
+        "source": "Hacker News (deepseek)",
+        "url": "https://github.com/antirez/ds4",
         "event_id": null
       },
       {
@@ -953,62 +1386,6 @@
       }
     ],
     "2026-05-07": [
-      {
-        "id": "27b886ece779df1a62bfa5c272b93703",
-        "title": "Nature关注非英语学者困境：语言壁垒正在阻碍学术发表",
-        "chinese_title": "Nature关注非英语学者困境：语言壁垒正在阻碍学术发表",
-        "original_title": "My English skills are hurting my chances in academic publishing — how can I improve?",
-        "summary": "Nature刊文探讨非英语母语学者在学术出版中面临的语言障碍，指出英语能力不足正在系统性影响研究者的发表机会和国际学术影响力。",
-        "rating": "B",
-        "score": 66,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "随着AI翻译和写作工具的普及，学术出版语言公平性问题可能迎来转机，但也可能引发关于AI辅助写作学术诚信边界的新讨论。",
-        "entities": [
-          "Nature"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01350-w"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778177192,
-        "published_at": "2026-05-08T02:06:32.390971",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01350-w",
-        "event_id": null
-      },
-      {
-        "id": "016bf4c0be9de95fd7c712bdf9b0b757",
-        "title": "DeepSeek 4 Flash本地推理引擎登陆Metal，苹果设备跑大模型更进一步",
-        "chinese_title": "DeepSeek 4 Flash本地推理引擎登陆Metal，苹果设备跑大模型更进一步",
-        "original_title": "DeepSeek 4 Flash local inference engine for Metal",
-        "summary": "开发者antirez发布ds4项目，实现DeepSeek 4 Flash模型在Apple Metal框架上的本地推理，让Mac和iOS设备能够本地运行该大语言模型。",
-        "rating": "A",
-        "score": 85,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "本地推理引擎持续优化将推动端侧AI普及，对苹果AI生态和国产大模型出海都有重要意义，也进一步压缩云端推理的市场空间。",
-        "entities": [
-          "Apple",
-          "DeepSeek",
-          "Metal"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News (deepseek)",
-            "url": "https://github.com/antirez/ds4"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778177192,
-        "published_at": "2026-05-08T02:06:32.390994",
-        "source": "Hacker News (deepseek)",
-        "url": "https://github.com/antirez/ds4",
-        "event_id": null
-      },
       {
         "id": "040050560bdde213f3e6c8cfcf069865",
         "title": "Spotify推出命令行工具Save to Spotify，AI Agent可直接上传生成音频",
@@ -20495,6 +20872,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-08T02:09:03.445661",
-  "total_news": 684
+  "last_updated": "2026-05-08T03:27:31.162038",
+  "total_news": 697
 }
