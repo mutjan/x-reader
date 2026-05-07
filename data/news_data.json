@@ -2,6 +2,395 @@
   "news": {
     "2026-05-07": [
       {
+        "id": "904fcf4a9808a96bab7433e5dc5d02ff",
+        "title": "Anthropic研究：先让AI理解价值观原理再训练，遵循度显著提升",
+        "chinese_title": "Anthropic研究：先让AI理解价值观原理再训练，遵循度显著提升",
+        "original_title": "AI models follow their values better when they first learn why those values matter",
+        "summary": "Anthropic Fellows Program研究发现，先用解释价值观的语言文本训练模型，再教授具体行为，能让模型在面对未知情境时也更好地遵守既定价值观，泛化能力大幅提升。",
+        "rating": "A",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这一训练范式可能成为AI对齐领域的重要方向，或影响其他AI公司在模型安全训练上的策略选择。",
+        "entities": [
+          "Anthropic"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/ai-models-follow-their-values-better-when-they-first-learn-why-those-values-matter/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227730",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/ai-models-follow-their-values-better-when-they-first-learn-why-those-values-matter/",
+        "event_id": null
+      },
+      {
+        "id": "a7b4d7e0767340db0f5e62955930f3b9",
+        "title": "预测市场平台Kalshi融资10亿美元，Coatue领投估值220亿美元",
+        "chinese_title": "预测市场平台Kalshi融资10亿美元，Coatue领投估值220亿美元",
+        "original_title": "Kalshi raised $1B led by Coatue at a $22B valuation, its third round in seven months after raising $1B and $300M+, and hits $178B in annualized trading volume (Michael J. de la Merced/New York Times)",
+        "summary": "事件预测交易平台Kalshi完成10亿美元新一轮融资，由Coatue领投，估值达220亿美元。这是该平台七个月内第三笔大额融资，年化交易量已达1780亿美元。",
+        "rating": "A",
+        "score": 86,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "Kalshi的高速增长可能加速预测市场的机构化进程，传统金融数据和分析公司或将面临新的竞争格局。",
+        "entities": [
+          "Coatue",
+          "Kalshi"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260507/p18#a260507p18"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227759",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260507/p18#a260507p18",
+        "event_id": null
+      },
+      {
+        "id": "4801675b4f82ddaa1e5bba419616f2fc",
+        "title": "SpaceX与Anthropic达成合作：22万块Nvidia GPU和300兆瓦算力租赁落地",
+        "chinese_title": "SpaceX与Anthropic达成合作：22万块Nvidia GPU和300兆瓦算力租赁落地",
+        "original_title": "Musk's SpaceX has rented out access to its supercomputer's 220,000 Nvidia GPUs and 300 megawatts of AI compute power to rival Anthropic &mdash; Musk says &ldquo;No one set off my evil detector,&rdquo; Antrhropic also interested in orbital data centers",
+        "summary": "SpaceX与Anthropic签署数据中心合作协议，Anthropic可使用SpaceX超算中心的22万块Nvidia GPU和300兆瓦AI算力。双方还对轨道数据中心表达了兴趣。",
+        "rating": "S",
+        "score": 95,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这笔合作反映了AI公司对算力的极度渴求，若其他科技公司效仿SpaceX自建算力并对外租赁，数据中心市场的竞争格局将重塑。",
+        "entities": [
+          "Anthropic",
+          "Elon Musk",
+          "NVIDIA",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/musks-spacex-has-rented-out-access-to-its-supercomputers-220-000-nvidia-gpus-and-300-megawatts-of-ai-compute-power-to-rival-anthropic-musk-says-no-one-set-off-my-evil-detector-antrhropic-also-interested-in-orbital-data-centers"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227780",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/musks-spacex-has-rented-out-access-to-its-supercomputers-220-000-nvidia-gpus-and-300-megawatts-of-ai-compute-power-to-rival-anthropic-musk-says-no-one-set-off-my-evil-detector-antrhropic-also-interested-in-orbital-data-centers",
+        "event_id": null
+      },
+      {
+        "id": "c9d6bf7b0b1163154b073826c2623823",
+        "title": "Anthropic Skill安全扫描器存盲区：恶意代码藏在测试文件中绕过所有检测",
+        "chinese_title": "Anthropic Skill安全扫描器存盲区：恶意代码藏在测试文件中绕过所有检测",
+        "original_title": "Anthropic Skill scanners passed every check. The malicious code rode in on a test file.",
+        "summary": "Gecko Security研究发现，主流Anthropic Skill安全扫描器仅检测SKILL.md和脚本文件，却忽略了捆绑的测试文件。Jest、Vitest等框架会自动执行这些文件，导致恶意代码在npm test时窃取CI环境的密钥和凭据。",
+        "rating": "S",
+        "score": 97,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这一发现揭示了AI Agent供应链安全的新攻击面，可能推动安全扫描器厂商更新检测范围，也将促使开发者社区重新评估Skill安装流程。",
+        "entities": [
+          "Anthropic",
+          "Cisco",
+          "Gecko Security",
+          "Snyk"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/security/anthropic-skill-scanners-passed-every-check-malicious-code-test-file"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227813",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/security/anthropic-skill-scanners-passed-every-check-malicious-code-test-file",
+        "event_id": null
+      },
+      {
+        "id": "fec9747dce0194979b33af58a340b77d",
+        "title": "英伟达版权诉讼遭驳回：NeMo框架中19.7万本盗版书加速脚本成把柄",
+        "chinese_title": "英伟达版权诉讼遭驳回：NeMo框架中19.7万本盗版书加速脚本成把柄",
+        "original_title": "Nvidia’s ISP piracy defense backfires as judge refuses to dismiss copyright lawsuit over more than 197,000 pirated books — scripts in NeMo Framework allegedly ‘have no other purpose’ than to speed up infringement",
+        "summary": "英伟达辩称其NeMo Megatron框架有非侵权用途，不应为用户盗版担责，但法官拒绝驳回诉讼，认为框架中的加速脚本除加速侵权外无其他用途。案件涉及超过19.7万本盗版书籍。",
+        "rating": "A",
+        "score": 81,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此项裁决可能为AI训练数据和工具的版权责任划定先例，影响其他AI公司面对类似诉讼时的抗辩策略。",
+        "entities": [
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/big-tech/nvidias-isp-piracy-defense-backfires-as-judge-refuses-to-dismiss-copyright-lawsuit-over-more-than-197-000-pirated-books-scripts-in-nemo-framework-allegedly-have-no-other-purpose-than-to-speed-up-infringement"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227824",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/big-tech/nvidias-isp-piracy-defense-backfires-as-judge-refuses-to-dismiss-copyright-lawsuit-over-more-than-197-000-pirated-books-scripts-in-nemo-framework-allegedly-have-no-other-purpose-than-to-speed-up-infringement",
+        "event_id": null
+      },
+      {
+        "id": "9ce432e507c78108e7ebed6c7aef61d9",
+        "title": "密歇根居民急了：160亿美元Stargate数据中心绕过地方反对建成后，多个城镇紧急出台禁令",
+        "chinese_title": "密歇根居民急了：160亿美元Stargate数据中心绕过地方反对建成后，多个城镇紧急出台禁令",
+        "original_title": "After a $16 billion Stargate AI data center was built despite being voted down, Michigan towns rush to block new buildouts — massive facility will suck 1.4 Gigawatts of energy to power ChatGPT",
+        "summary": "在Stargate项目不顾地方投票强行建设后，密歇根州多个县通过决议、两党联合立法阻止新数据中心建设，区域水务机构也拒绝为拟建设施供水。该数据中心将消耗1.4吉瓦电力。",
+        "rating": "A+",
+        "score": 88,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "AI数据中心的能源和水资源消耗正引发地方治理危机，可能推动联邦层面出台数据中心建设审批新规。",
+        "entities": [
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/michigan-towns-rush-to-block-ai-data-centers-after-16-billion-stargate-project-overrode-local-opposition"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227834",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/michigan-towns-rush-to-block-ai-data-centers-after-16-billion-stargate-project-overrode-local-opposition",
+        "event_id": null
+      },
+      {
+        "id": "1b3c27825f18e2fdabb818ed4fa227df",
+        "title": "联发科台湾数据中心一期投产：基于Nvidia B200平台，主攻AI研发",
+        "chinese_title": "联发科台湾数据中心一期投产：基于Nvidia B200平台，主攻AI研发",
+        "original_title": "MediaTek launches the first phase of its Taiwan data center, aimed at R&D, powered by Nvidia's B200 platform, and built on Nvidia's DGX SuperPOD infrastructure (Cheng Ting-Fang/Nikkei Asia)",
+        "summary": "全球最大移动芯片开发商联发科在台湾苗栗启动AI数据中心一期建设，采用Nvidia B200平台和DGX SuperPOD架构，定位为台湾最先进的AI研发数据中心。",
+        "rating": "A",
+        "score": 79,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "联发科自建AI数据中心表明芯片设计公司正加速向AI基础设施延伸，可能加剧与云端厂商的算力竞争。",
+        "entities": [
+          "Mediatek",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260507/p16#a260507p16"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227846",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260507/p16#a260507p16",
+        "event_id": null
+      },
+      {
+        "id": "c12096ed4c89658cbeb5f718af974ffb",
+        "title": "Anthropic与SpaceX算力合作背后：马斯克起诉OpenAI之际，Grok未能充分利用xAI超算",
+        "chinese_title": "Anthropic与SpaceX算力合作背后：马斯克起诉OpenAI之际，Grok未能充分利用xAI超算",
+        "original_title": "Anthropic's SpaceX deal helps it address a severe compute deficit and comes amid Elon Musk's OpenAI lawsuit; Grok never grew to utilize xAI's Colossus 1 (Axios)",
+        "summary": "Anthropic与SpaceX的算力合作正值马斯克起诉OpenAI的敏感时期。Axios报道称，xAI的Colossus 1超算从未被Grok充分利用，马斯克此举可将闲置算力变现。",
+        "rating": "A+",
+        "score": 89,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "马斯克同时起诉OpenAI又与Anthropic合作，折射出AI行业竞合关系的复杂性，算力资源重新分配可能影响多家公司的模型训练进度。",
+        "entities": [
+          "Anthropic",
+          "Elon Musk",
+          "OpenAI",
+          "SpaceX",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260507/p15#a260507p15"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227859",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260507/p15#a260507p15",
+        "event_id": null
+      },
+      {
+        "id": "038a67d965842e75f16f78ff9eff21ce",
+        "title": "Agent-harness-kit：面向多Agent工作流的MCP无关开源脚手架",
+        "chinese_title": "Agent-harness-kit：面向多Agent工作流的MCP无关开源脚手架",
+        "original_title": "Agent-harness-kit scaffolding for multi-agent workflows (MCP, provider-agnostic)",
+        "summary": "Agent-harness-kit是一个开源多Agent工作流脚手架，支持MCP协议且与模型提供商无关，为开发者提供快速搭建多Agent协作系统的基础框架。",
+        "rating": "B",
+        "score": 73,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "多Agent框架的标准化将加速企业级AI Agent应用的落地，可能催生新的Agent开发生态。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://ahk.cardor.dev/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227869",
+        "source": "Hacker News",
+        "url": "https://ahk.cardor.dev/",
+        "event_id": null
+      },
+      {
+        "id": "25596a2fd99fc850ea0f27432e763c31",
+        "title": "Google DeepMind入股EVE Online工作室，将用这款太空MMO测试AI模型",
+        "chinese_title": "Google DeepMind入股EVE Online工作室，将用这款太空MMO测试AI模型",
+        "original_title": "Google Deepmind takes a stake in EVE Online studio to test AI models",
+        "summary": "Google DeepMind收购了EVE Online开发商CCP Games的少数股权，将把这款拥有20多年历史的太空多人在线游戏作为AI模型的测试环境。",
+        "rating": "A",
+        "score": 77,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "用复杂多人在线游戏测试AI，可能推动多智能体协作和长期策略规划的研究突破，也为游戏行业与AI实验室的合作开辟新路径。",
+        "entities": [
+          "Ccp Games",
+          "DeepMind"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/google-deepmind-takes-a-stake-in-eve-online-studio-to-test-ai-models/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227881",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/google-deepmind-takes-a-stake-in-eve-online-studio-to-test-ai-models/",
+        "event_id": null
+      },
+      {
+        "id": "6a4bbc4cd43ff7eddab8b094844f98c0",
+        "title": "OpenAI面临刑事调查：一起谋杀案被告曾向ChatGPT寻求犯罪建议",
+        "chinese_title": "OpenAI面临刑事调查：一起谋杀案被告曾向ChatGPT寻求犯罪建议",
+        "original_title": "OpenAI is under criminal investigation — why chatbots don’t always follow the law",
+        "summary": "Nature报道，佛罗里达州一起谋杀案被告涉嫌向ChatGPT寻求犯罪计划建议，OpenAI因此面临刑事调查，引发关于聊天机器人法律责任边界的讨论。",
+        "rating": "A+",
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此案可能成为AI公司刑事责任的标志性判例，推动各国加快AI监管立法进程。",
+        "entities": [
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01405-y"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227891",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01405-y",
+        "event_id": null
+      },
+      {
+        "id": "01bcbf5f49334ff82ee51fa4caceb951",
+        "title": "ILP新研究：从视觉感知到概念的一阶规则学习网络挑战深度学习",
+        "chinese_title": "ILP新研究：从视觉感知到概念的一阶规则学习网络挑战深度学习",
+        "original_title": "Visual Perceptual to Conceptual First-Order Rule Learning Networks [R]",
+        "summary": "归纳逻辑编程领域新论文提出从视觉感知到概念的一阶规则学习网络，在纯图像数据集上实现了强性能，挑战了深度学习在机器视觉领域的主导地位。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若ILP能在视觉任务上持续突破，可能催生神经符号AI的新一轮研究热潮。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t5vnru/visual_perceptual_to_conceptual_firstorder_rule/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227919",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t5vnru/visual_perceptual_to_conceptual_firstorder_rule/",
+        "event_id": null
+      },
+      {
+        "id": "0148cd3d4ba4889130b6530d4937cf15",
+        "title": "Weights & Biases新服务协议引发担忧：用户数据和模型或被用于训练AI",
+        "chinese_title": "Weights & Biases新服务协议引发担忧：用户数据和模型或被用于训练AI",
+        "original_title": "Weights & Biases New Master Service Agreement Questions [D]",
+        "summary": "Weights & Biases将于5月11日生效的新主服务协议删除了用户拥有数据的明确条款，新增允许将客户数据（含ML模型和研究报告）用于改进AI功能和开发新产品。",
+        "rating": "A",
+        "score": 75,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这一变更可能引发ML实验跟踪工具市场的信任危机，推动企业用户转向自托管或数据主权更明确的平台。",
+        "entities": [
+          "Weights & Biases"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t5qq1a/weights_biases_new_master_service_agreement/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227929",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t5qq1a/weights_biases_new_master_service_agreement/",
+        "event_id": null
+      },
+      {
+        "id": "842c75c7c78e7285367ef64350b4c07e",
+        "title": "Claude推出\\\"Dreaming\\\"功能：让AI Agent从过往错误中异步学习",
+        "chinese_title": "Claude推出\\\"Dreaming\\\"功能：让AI Agent从过往错误中异步学习",
+        "original_title": "Claude's new \"Dreaming\" feature is designed to let AI agents learn from their mistakes",
+        "summary": "Anthropic为Claude Managed Agents新增\\\"Dreaming\\\"功能，通过异步回顾历史会话、清理冗余记忆、提炼新洞察，帮助Agent跨会话持续学习和改进。该功能与Outcomes、Multiagent Orchestration一同进入公开测试。",
+        "rating": "S",
+        "score": 94,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Agent自我学习能力的提升将加速企业级AI Agent从单次任务执行向长期自主运营的演进。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/claudes-new-dreaming-feature-is-designed-to-let-ai-agents-learn-from-their-mistakes/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778159272,
+        "published_at": "2026-05-07T21:07:52.227943",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/claudes-new-dreaming-feature-is-designed-to-let-ai-agents-learn-from-their-mistakes/",
+        "event_id": null
+      },
+      {
         "id": "7ef3a83b8d629a36229a0c7e071c90c5",
         "title": "Claude桌面版更新后限制只能使用自家模型，开发者功能面临推倒重来",
         "chinese_title": "Claude桌面版更新后限制只能使用自家模型，开发者功能面临推倒重来",
@@ -196,6 +585,64 @@
         "published_at": "2026-05-07T20:04:52.735155",
         "source": "x",
         "url": "https://x.com/flowersslop/status/2052194289409536183",
+        "event_id": null
+      },
+      {
+        "id": "fb5ff95da23fefdf1b8d41465b686cb7",
+        "title": "DeepMind宣布与EVE Online合作，将AI研究带入最复杂的虚拟世界",
+        "chinese_title": "DeepMind宣布与EVE Online合作，将AI研究带入最复杂的虚拟世界",
+        "original_title": "I've always been passionate about games and they've played a big part in @GoogleDeepMind’s history, as the perfect proving ground for AI. Thrilled to...",
+        "summary": "Google DeepMind CEO Demis Hassabis宣布与Fenris Creations达成研究合作，将DeepMind的AI技术引入大型多人在线游戏EVE Online。Hassabis表示游戏一直是AI的完美试验场，对此次合作深感兴奋。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "此次合作将EVE Online中极其复杂的经济和社交系统作为AI训练和测试环境，可能推动多智能体和强化学习领域的突破，同时也为游戏行业与AI研究的跨界合作提供范例。",
+        "entities": [
+          "DeepMind",
+          "Demis Hassabis",
+          "Eve Online",
+          "Fenris Creations"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/demishassabis/status/2052147236952477923"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778155492,
+        "published_at": "2026-05-07T20:04:52.735169",
+        "source": "x",
+        "url": "https://x.com/demishassabis/status/2052147236952477923",
+        "event_id": null
+      },
+      {
+        "id": "3e23a49ad9e41a0154bffa000978962f",
+        "title": "实测对比：DeepSeek V4代码生成速度和质量不及GPT-5系列",
+        "chinese_title": "实测对比：DeepSeek V4代码生成速度和质量不及GPT-5系列",
+        "original_title": "我要吐一个大槽了。。。 有关 DeepSeek V4 Flash/Pro 性能和代码生成质量的。。。 经实测，在特定的以实时渲染为目标的代码生成项目上 1. deepseek-v4-flash 的...",
+        "summary": "有网友实测发现，在实时渲染代码生成任务中，DeepSeek V4 Flash比GPT-5.4-mini慢6倍，比GPT-5.5慢3倍；V4 Pro则接近120秒超时。代码质量方面，V4 Flash不及GPT-5.4-mini，V4 Pro相比V4 Flash也没有质的提升。",
+        "rating": "A",
+        "score": 81,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这一实测结果为开发者选择代码生成模型提供了参考，也反映了国内模型与顶尖闭源模型在某些细分场景下仍存在差距。",
+        "entities": [
+          "DeepSeek",
+          "GPT"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Tz_2022/status/2052128037047554188"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778155492,
+        "published_at": "2026-05-07T20:04:52.735181",
+        "source": "x",
+        "url": "https://x.com/Tz_2022/status/2052128037047554188",
         "event_id": null
       },
       {
@@ -3458,64 +3905,6 @@
       }
     ],
     "2026-05-06": [
-      {
-        "id": "fb5ff95da23fefdf1b8d41465b686cb7",
-        "title": "DeepMind宣布与EVE Online合作，将AI研究带入最复杂的虚拟世界",
-        "chinese_title": "DeepMind宣布与EVE Online合作，将AI研究带入最复杂的虚拟世界",
-        "original_title": "I've always been passionate about games and they've played a big part in @GoogleDeepMind’s history, as the perfect proving ground for AI. Thrilled to...",
-        "summary": "Google DeepMind CEO Demis Hassabis宣布与Fenris Creations达成研究合作，将DeepMind的AI技术引入大型多人在线游戏EVE Online。Hassabis表示游戏一直是AI的完美试验场，对此次合作深感兴奋。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "此次合作将EVE Online中极其复杂的经济和社交系统作为AI训练和测试环境，可能推动多智能体和强化学习领域的突破，同时也为游戏行业与AI研究的跨界合作提供范例。",
-        "entities": [
-          "DeepMind",
-          "Demis Hassabis",
-          "Eve Online",
-          "Fenris Creations"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/demishassabis/status/2052147236952477923"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778155492,
-        "published_at": "2026-05-07T20:04:52.735169",
-        "source": "x",
-        "url": "https://x.com/demishassabis/status/2052147236952477923",
-        "event_id": null
-      },
-      {
-        "id": "3e23a49ad9e41a0154bffa000978962f",
-        "title": "实测对比：DeepSeek V4代码生成速度和质量不及GPT-5系列",
-        "chinese_title": "实测对比：DeepSeek V4代码生成速度和质量不及GPT-5系列",
-        "original_title": "我要吐一个大槽了。。。 有关 DeepSeek V4 Flash/Pro 性能和代码生成质量的。。。 经实测，在特定的以实时渲染为目标的代码生成项目上 1. deepseek-v4-flash 的...",
-        "summary": "有网友实测发现，在实时渲染代码生成任务中，DeepSeek V4 Flash比GPT-5.4-mini慢6倍，比GPT-5.5慢3倍；V4 Pro则接近120秒超时。代码质量方面，V4 Flash不及GPT-5.4-mini，V4 Pro相比V4 Flash也没有质的提升。",
-        "rating": "A",
-        "score": 81,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这一实测结果为开发者选择代码生成模型提供了参考，也反映了国内模型与顶尖闭源模型在某些细分场景下仍存在差距。",
-        "entities": [
-          "DeepSeek",
-          "GPT"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Tz_2022/status/2052128037047554188"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778155492,
-        "published_at": "2026-05-07T20:04:52.735181",
-        "source": "x",
-        "url": "https://x.com/Tz_2022/status/2052128037047554188",
-        "event_id": null
-      },
       {
         "id": "3be5f034ef8fe6654bb758bd549dc6e2",
         "title": "Adam：一个可嵌入的跨平台AI智能体开源库",
@@ -18621,6 +19010,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-07T20:06:45.606123",
-  "total_news": 620
+  "last_updated": "2026-05-07T21:12:25.247245",
+  "total_news": 634
 }
