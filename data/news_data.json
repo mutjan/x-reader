@@ -2,6 +2,268 @@
   "news": {
     "2026-05-08": [
       {
+        "id": "0772f63c7680da59b5dfa8f4c0bbc1b9",
+        "title": "Anthropic提出自然语言自编码器：用普通语言解码Claude的「内心活动」",
+        "chinese_title": "Anthropic提出自然语言自编码器：用普通语言解码Claude的「内心活动」",
+        "original_title": "RT elie: this is fascinating, they train an encoder/decoder but use LLM matching the target model's shape for each part, so the latent space is just p...",
+        "summary": "Anthropic提出了一种名为自然语言自编码器的新方法，通过训练编码器解码器，将大模型内部的数字激活状态翻译为人类可读的自然语言，从而检测模型中的奖励偏差和异常行为，甚至可能用于量化模型智能水平。",
+        "rating": "A+",
+        "score": 91,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这项研究为AI可解释性开辟了新路径，未来可能成为评估模型安全性和能力的新范式，还将引发关于模型内部表征能否被完整翻译的语言哲学讨论。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "奖励偏差",
+          "自然语言自编码器"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/teortaxesTex/status/2052558004063449444"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368608",
+        "source": "x",
+        "url": "https://x.com/teortaxesTex/status/2052558004063449444",
+        "event_id": null
+      },
+      {
+        "id": "93e03d5930d7c7533b6418480438b0ac",
+        "title": "Firefox联手Claude Mythos Preview强化安全防线：一个月修漏洞超15个月",
+        "chinese_title": "Firefox联手Claude Mythos Preview强化安全防线：一个月修漏洞超15个月",
+        "original_title": "Hardening Firefox with Claude Mythos Preview",
+        "summary": "Mozilla技术博客披露了Firefox团队如何利用Anthropic的Claude Mythos Preview智能体大幅提升安全漏洞发现与修复效率的内部细节，证实了此前安全研究员报告的数据。",
+        "rating": "A+",
+        "score": 91,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "浏览器作为互联网入口级应用，其安全性提升意义重大，这一实践为整个开源社区展示了AI辅助安全审计的可行路径。",
+        "entities": [
+          "Anthropic",
+          "Claude Mythos Preview",
+          "Firefox",
+          "Mozilla"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368793",
+        "source": "Hacker News",
+        "url": "https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/",
+        "event_id": null
+      },
+      {
+        "id": "91b54490e9f939d6759dd84605799adf",
+        "title": "PyTorch复现TensorFlow论文滑铁卢：DermaMNIST准确率始终差4个百分点",
+        "chinese_title": "PyTorch复现TensorFlow论文滑铁卢：DermaMNIST准确率始终差4个百分点",
+        "original_title": "PyTorch reproduction of TensorFlow paper underperforms by 4 pp on DermaMNIST , what cross-framework issues should I check? [R]",
+        "summary": "一位研究者在尝试用PyTorch复现基于TensorFlow的Gabor加CNN混合架构论文时，在DermaMNIST数据集上始终比论文报告的测试准确率低约4个百分点，暴露出深度学习框架迁移中可复现性的顽疾。",
+        "rating": "B",
+        "score": 67,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这一案例再次引发了学界对深度学习研究可复现性危机的关注，可能推动期刊和会议对框架无关性验证及开源代码审查提出更严格要求。",
+        "entities": [
+          "Dermamnist",
+          "Pytorch",
+          "Tensorflow"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t6mxcp/pytorch_reproduction_of_tensorflow_paper/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368804",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t6mxcp/pytorch_reproduction_of_tensorflow_paper/",
+        "event_id": null
+      },
+      {
+        "id": "05f82a614322c7518bb772c5537d53dd",
+        "title": "大脑越老越想得开：新研究揭示老年人后悔情绪减弱的神经机制",
+        "chinese_title": "大脑越老越想得开：新研究揭示老年人后悔情绪减弱的神经机制",
+        "original_title": "Why Regret Loses Its Sting as We Age",
+        "summary": "新研究发现，随着年龄增长，大脑处理过去错误的能力不断增强，对长期后悔的愤怒和强烈程度显著降低，转而更倾向于反思和意义建构，揭示了情绪韧性随年龄增长的神经科学基础。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这一发现可能影响心理健康干预策略的制定，帮助设计更精准的正念训练项目，同时也为理解情绪老化提供了新的生物学依据。",
+        "entities": [
+          "后悔",
+          "情绪韧性",
+          "老化"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Neuroscience News Updates",
+            "url": "https://neurosciencenews.com/aging-regret-emotional-resilience-30649/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368839",
+        "source": "Neuroscience News Updates",
+        "url": "https://neurosciencenews.com/aging-regret-emotional-resilience-30649/",
+        "event_id": null
+      },
+      {
+        "id": "493a03f27afd9bb7608293a4b66666be",
+        "title": "裸盖菇素能降低攻击性：首次在鱼类模型中验证低剂量迷幻药的镇静效果",
+        "chinese_title": "裸盖菇素能降低攻击性：首次在鱼类模型中验证低剂量迷幻药的镇静效果",
+        "original_title": "Psilocybin Dampens Aggression and Attack Behaviors",
+        "summary": "新研究发现，低剂量的裸盖菇素能够显著减少鲳鱼的高强度攻击行为，同时保持其社会交流能力完整性，为研究该药物对社会冲突的影响提供了首个脊椎动物实验模型。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这一研究为迷幻药在攻击行为干预领域的潜在应用打开了大门，可能推动后续在哺乳动物乃至人类中的临床研究。",
+        "entities": [
+          "攻击行为",
+          "社会冲突",
+          "裸盖菇素"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Neuroscience News Updates",
+            "url": "https://neurosciencenews.com/psilocybin-aggression-behavior-30643/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368852",
+        "source": "Neuroscience News Updates",
+        "url": "https://neurosciencenews.com/psilocybin-aggression-behavior-30643/",
+        "event_id": null
+      },
+      {
+        "id": "7bdece12daefc9bea2344ade47a0e30c",
+        "title": "性唤起会扭曲浪漫信号感知：暧昧时刻更容易误判对方的好感",
+        "chinese_title": "性唤起会扭曲浪漫信号感知：暧昧时刻更容易误判对方的好感",
+        "original_title": "Sexual Arousal Distorts the Perception of Romantic Interest",
+        "summary": "新研究发现，处于暧昧情境中的个体在面对模糊的浪漫信号时，处于性唤起状态的人会显著高估伴侣的兴趣程度，导致他们可能忽略恋爱初期中的混合信号。",
+        "rating": "B",
+        "score": 65,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这一发现对性教育和恋爱心理学具有启示意义，可帮助人们更理性地识别亲密关系中的边界信号。",
+        "entities": [
+          "性唤起",
+          "浪漫感知",
+          "认知偏差"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Neuroscience News Updates",
+            "url": "https://neurosciencenews.com/sexual-arousal-distorted-perception-romantic-interest-30641/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368863",
+        "source": "Neuroscience News Updates",
+        "url": "https://neurosciencenews.com/sexual-arousal-distorted-perception-romantic-interest-30641/",
+        "event_id": null
+      },
+      {
+        "id": "fe710a02c4ed687971616cab2b3a04a2",
+        "title": "奇点社区热议：把Claude的想法翻译成人类语言，AI可解释性迎来关键时刻",
+        "chinese_title": "奇点社区热议：把Claude的想法翻译成人类语言，AI可解释性迎来关键时刻",
+        "original_title": "Translating Claude’s thoughts into language",
+        "summary": "Reddit奇点社区用户对Anthropic最新研究展开热烈讨论，该研究利用自然语言自编码器将大模型Claude的内部数字激活状态翻译为人类可读的自然语言，引发了关于AI思维透明化的广泛关注。",
+        "rating": "A",
+        "score": 80,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "社区的广泛讨论表明AI透明度和可解释性正成为公众关注焦点，这一趋势可能推动相关政策法规的制定和企业主动披露的压力。",
+        "entities": [
+          "Ai可解释性",
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t6h2ph/translating_claudes_thoughts_into_language/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368874",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t6h2ph/translating_claudes_thoughts_into_language/",
+        "event_id": null
+      },
+      {
+        "id": "50d143a2cfb93f108382b003a3041016",
+        "title": "BookTok生态也救不了：阅读追踪应用Tome宣布关停",
+        "chinese_title": "BookTok生态也救不了：阅读追踪应用Tome宣布关停",
+        "original_title": "Tome, another Goodreads book-tracker rival, shuts down",
+        "summary": "依托BookTok社区成长起来的阅读追踪应用Tome宣布关闭服务，该应用允许读者记录和评分书籍获取推荐并分享与书籍相关的照片和播放列表，但仍未能在竞争激烈的阅读市场中找到可持续的商业模式。",
+        "rating": "B",
+        "score": 65,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "Tome的关闭反映出即使有强大的文化社区支撑，阅读类应用依然面临商业化困境，可能加剧市场对垂直社交产品盈利能力的悲观预期。",
+        "entities": [
+          "Booktok",
+          "Goodreads",
+          "Tome"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/05/07/tome-another-goodreads-booktracker-rival-shuts-down/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368885",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/07/tome-another-goodreads-booktracker-rival-shuts-down/",
+        "event_id": null
+      },
+      {
+        "id": "4d374ef5bb29a82aef3150fdb0ee29bd",
+        "title": "ECCV审稿人要求作者对比自己之前的论文，疑似被认出身份",
+        "chinese_title": "ECCV审稿人要求作者对比自己之前的论文，疑似被认出身份",
+        "original_title": "ECCV reviewer wants me to compare and contrast to my own paper. [D]",
+        "summary": "一位投稿ECCV的研究者发现审稿人找到了他们团队更早版本的arXiv论文，要求与旧版本进行对比分析，但审稿人并未引用该旧论文，作者高度怀疑审稿人认出了作者身份，引发对双盲审稿有效性的讨论。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "此话题可延伸至学术会议双盲审稿机制的漏洞分析、arXiv预印本对匿名性的影响，以及顶会审稿流程改革的行业呼声。",
+        "entities": [
+          "Arxiv",
+          "Eccv"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t6e4i7/eccv_reviewer_wants_me_to_compare_and_contrast_to/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778209376,
+        "published_at": "2026-05-08T11:02:56.321711",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t6e4i7/eccv_reviewer_wants_me_to_compare_and_contrast_to/",
+        "event_id": null
+      },
+      {
         "id": "43f43de0e85c6851e0ec832ce924e71e",
         "title": "马斯克诉OpenAI案曝光微软内部邮件：高管早已看衰OpenAI",
         "chinese_title": "马斯克诉OpenAI案曝光微软内部邮件：高管早已看衰OpenAI",
@@ -2758,31 +3020,414 @@
     ],
     "2026-05-07": [
       {
-        "id": "4d374ef5bb29a82aef3150fdb0ee29bd",
-        "title": "ECCV审稿人要求作者对比自己之前的论文，疑似被认出身份",
-        "chinese_title": "ECCV审稿人要求作者对比自己之前的论文，疑似被认出身份",
-        "original_title": "ECCV reviewer wants me to compare and contrast to my own paper. [D]",
-        "summary": "一位投稿ECCV的研究者发现审稿人找到了他们团队更早版本的arXiv论文，要求与旧版本进行对比分析，但审稿人并未引用该旧论文，作者高度怀疑审稿人认出了作者身份，引发对双盲审稿有效性的讨论。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "此话题可延伸至学术会议双盲审稿机制的漏洞分析、arXiv预印本对匿名性的影响，以及顶会审稿流程改革的行业呼声。",
+        "id": "d1e34bf6458e65b82152f3f946270849",
+        "title": "AI实验室融资节奏失控：Core Automation成立六周即冲40亿美元估值",
+        "chinese_title": "AI实验室融资节奏失控：Core Automation成立六周即冲40亿美元估值",
+        "original_title": "Back to back rounds are continuing in neolab land! Latest example: Jerry Tworek’s Core Automation raising at a $4b valuation weeks after raising at $...",
+        "summary": "前OpenAI研究员Jerry Tworek创立的Core Automation成立仅六周，就在完成10亿美元估值融资后，紧接着以40亿美元估值启动新一轮融资，反映出AI实验室系创业公司的融资速度已到令人瞠目的地步。",
+        "rating": "A+",
+        "score": 89,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "这种背靠背融资模式可能引发对AI估值泡沫的新一轮审视，也将加剧顶尖AI人才从大厂流向创业公司的虹吸效应。",
         "entities": [
-          "Arxiv",
-          "Eccv"
+          "Core Automation",
+          "Jerry Tworek",
+          "OpenAI"
         ],
         "sourceLinks": [
           {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1t6e4i7/eccv_reviewer_wants_me_to_compare_and_contrast_to/"
+            "name": "x",
+            "url": "https://x.com/steph_palazzolo/status/2052534864927154213"
           }
         ],
         "sources": 1,
-        "timestamp": 1778209376,
-        "published_at": "2026-05-08T11:02:56.321711",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1t6e4i7/eccv_reviewer_wants_me_to_compare_and_contrast_to/",
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368632",
+        "source": "x",
+        "url": "https://x.com/steph_palazzolo/status/2052534864927154213",
+        "event_id": null
+      },
+      {
+        "id": "8eb18f687256c216d5f202826989bb99",
+        "title": "研究揭示大模型幻觉根源：不是模型问题，是嵌入空间的数学几何在作怪",
+        "chinese_title": "研究揭示大模型幻觉根源：不是模型问题，是嵌入空间的数学几何在作怪",
+        "original_title": "We finally know why LLMs hallucinate. It's not the model. It's the geometry. @OpenAI text-embedding-3-large: 91/3072 dimensions do real work. @GeminiA...",
+        "summary": "研究者发现大模型幻觉的本质原因在于嵌入向量空间的几何结构，OpenAI和Gemini的嵌入模型分别仅有91和80个维度在做实际工作，其余97%的维度在数学上是空的，这意味着RAG系统本质上在噪声中检索，且存在算法无法突破的压缩下限。",
+        "rating": "A+",
+        "score": 91,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这一发现可能重塑整个RAG系统的设计思路，迫使业界重新审视向量数据库和嵌入模型的选择标准，以及对高维度向量空间有效性的基本假设。",
+        "entities": [
+          "Gemini",
+          "OpenAI",
+          "Rag",
+          "嵌入模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/anirudhbv_ce/status/2052532004919361958"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368648",
+        "source": "x",
+        "url": "https://x.com/anirudhbv_ce/status/2052532004919361958",
+        "event_id": null
+      },
+      {
+        "id": "71e4f35d07d289b60222d5485d9e0f5f",
+        "title": "特朗普政府拟组团访华：黄仁勋、库克及多位美国顶级企业CEO或同行",
+        "chinese_title": "特朗普政府拟组团访华：黄仁勋、库克及多位美国顶级企业CEO或同行",
+        "original_title": "呦，大新闻，国内还没见报道！ 特朗普政府计划邀请 包括英伟达（NVIDIA）CEO 黄仁勋、苹果（Apple）CEO 蒂姆·库克、埃克森美孚（ExxonMobil）CEO Darren Woods...",
+        "summary": "特朗普政府计划邀请英伟达CEO黄仁勋、苹果CEO蒂姆·库克、埃克森美孚CEO Darren Woods，以及波音、高通、黑石、花旗、Visa等多家美国大型企业高管共同前往北京访问。",
+        "rating": "A+",
+        "score": 91,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "如果成行，这将是美中科技关系中的一个重大信号，可能涉及半导体出口管制、供应链合作等核心议题，也将引发美国国内关于企业对华接触策略的激烈争论。",
+        "entities": [
+          "Apple",
+          "NVIDIA",
+          "特朗普",
+          "蒂姆·库克",
+          "黄仁勋"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/RobinSeun/status/2052521792066183249"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368662",
+        "source": "x",
+        "url": "https://x.com/RobinSeun/status/2052521792066183249",
+        "event_id": null
+      },
+      {
+        "id": "eadc5983bd725eafdf61cddea98c9728",
+        "title": "OpenAI新语音模型上线遭吐槽：不仅没进步反而比一年前Sesame更差",
+        "chinese_title": "OpenAI新语音模型上线遭吐槽：不仅没进步反而比一年前Sesame更差",
+        "original_title": "I dont understand the difference to current avm. The voice isnt better, it cant do more expressive stuff, actually worse than OG 4o, its still pretty ...",
+        "summary": "OpenAI发布了新的语音模型API更新，但用户普遍反映其语音质量不如前代表现，表达力不及旧版4o，交互仍然是轮流对话模式，相比一年前开源的Sesame语音模型反而退步不少。",
+        "rating": "A",
+        "score": 79,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这表明语音AI领域的技术竞争日趋激烈，开源及第三方方案正在迫使OpenAI加速迭代，也反映出语音交互从可用走向好用仍有不小差距。",
+        "entities": [
+          "4O",
+          "OpenAI",
+          "Sesame"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/flowersslop/status/2052498680926613696"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368674",
+        "source": "x",
+        "url": "https://x.com/flowersslop/status/2052498680926613696",
+        "event_id": null
+      },
+      {
+        "id": "39e9cf08a2219c0a8916a8cd93247ea2",
+        "title": "Sam Altman与Mira Murati内部邮件泄露，揭示OpenAI高层决策细节",
+        "chinese_title": "Sam Altman与Mira Murati内部邮件泄露，揭示OpenAI高层决策细节",
+        "original_title": "",
+        "summary": "一份据称是Sam Altman与Mira Murati在2023年11月19日的内部邮件记录被公开，内容引发外界对OpenAI高层决策过程的关注，目前邮件具体内容尚未得到官方证实。",
+        "rating": "A",
+        "score": 81,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "此类内部通信泄露将对OpenAI的公司治理透明度提出更高要求，也可能引发关于AI公司内部决策是否需要更严格监管的讨论。",
+        "entities": [
+          "Mira Murati",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/JDabknee/status/2052490472065487214"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368685",
+        "source": "x",
+        "url": "https://x.com/JDabknee/status/2052490472065487214",
+        "event_id": null
+      },
+      {
+        "id": "d4715fa3f31035bc21113a0582f8f9a2",
+        "title": "Tilde Research发布新模型Aurora：3175步训练刷新NanoGPT赛道纪录",
+        "chinese_title": "Tilde Research发布新模型Aurora：3175步训练刷新NanoGPT赛道纪录",
+        "original_title": "👀 Aurora dropping tomorrow. 3175 steps → beating NanoGPT Track 3 SOTA by 50 steps. And it scales 🚀",
+        "summary": "Tilde Research宣布即将发布新模型Aurora，仅需3175步训练就在NanoGPT Track 3上超越现有最优成绩50步，且具备良好的扩展性，展现出高效训练方法的突破潜力。",
+        "rating": "A",
+        "score": 77,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果Aurora的训练效率和性能得到验证，可能为低成本高性能模型训练提供新范式，进一步降低AI训练的算力和资金门槛。",
+        "entities": [
+          "Aurora",
+          "Nanogpt",
+          "Tilde Research"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/tilderesearch/status/2052480337591296416"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368696",
+        "source": "x",
+        "url": "https://x.com/tilderesearch/status/2052480337591296416",
+        "event_id": null
+      },
+      {
+        "id": "78096836153bc96236d871d42ae39883",
+        "title": "创作者用Revid将Altman短信泄露事件做成短片：AI视频再次证明叙事能力",
+        "chinese_title": "创作者用Revid将Altman短信泄露事件做成短片：AI视频再次证明叙事能力",
+        "original_title": "I turned the leaked Sam Altman and Mira Murati texts into a short film with Revid 👀",
+        "summary": "一位创作者使用AI视频生成工具Revid，将此前泄露的Sam Altman与Mira Murati内部短信内容制作成短片视频，将原本枯燥的文本对话转化为可视化的叙事内容。",
+        "rating": "B",
+        "score": 68,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这再次展示了AI视频工具在内容创作领域的应用场景，同时也引发了关于使用真实人物私人通信进行AI创作的伦理边界讨论。",
+        "entities": [
+          "Mira Murati",
+          "Revid",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/tibo_maker/status/2052478487173136601"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368707",
+        "source": "x",
+        "url": "https://x.com/tibo_maker/status/2052478487173136601",
+        "event_id": null
+      },
+      {
+        "id": "729a3afdeb8bd4406937af4110c77d45",
+        "title": "Claude Mythos Preview助Firefox一个月修复安全漏洞超过去15个月总和",
+        "chinese_title": "Claude Mythos Preview助Firefox一个月修复安全漏洞超过去15个月总和",
+        "original_title": "RT Alex Albert: With the help of Claude Mythos Preview, the Firefox team fixed more security bugs in April than in the past 15 months combined.",
+        "summary": "Firefox团队在使用Anthropic的Claude Mythos Preview后，于2026年4月修复的安全漏洞数量超过了此前15个月的总和，展示了AI在网络安全领域辅助漏洞挖掘的巨大潜力。",
+        "rating": "A+",
+        "score": 91,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这一成果预示着AI安全审计工具将成为软件开发的标准配置，可能推动更多科技公司引入类似AI助手来加速漏洞修复流程，同时也给网络安全行业带来竞争压力。",
+        "entities": [
+          "Anthropic",
+          "Claude Mythos",
+          "Firefox"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/m0d8ye/status/2052517750879441058"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368717",
+        "source": "x",
+        "url": "https://x.com/m0d8ye/status/2052517750879441058",
+        "event_id": null
+      },
+      {
+        "id": "5d5c8ea78a017c7d05e1df09cd31787c",
+        "title": "新型序列模型Raven亮相：固定状态容量模型也能拥有强大检索能力",
+        "chinese_title": "新型序列模型Raven亮相：固定状态容量模型也能拥有强大检索能力",
+        "original_title": "Introducing a new sequence model Raven which pushes the boundary of fixed-state-size sequence models! Raven bridges popular linear-time models with co...",
+        "summary": "研究者提出了一种名为Raven的新型序列模型，融合了滑动窗口注意力和状态空间模型的优势，通过有选择性地更新缓存槽位，实现了远超同类线性模型的检索能力，突破了固定大小状态模型的天然限制。",
+        "rating": "A",
+        "score": 79,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "Raven如果实现广泛采用，有望为长上下文处理提供更高效的架构选择，可能对当前Transformer的注意力机制设计产生深远影响。",
+        "entities": [
+          "Raven",
+          "Ssm",
+          "滑动窗口注意力"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/_albertgu/status/2052442144879862003"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368736",
+        "source": "x",
+        "url": "https://x.com/_albertgu/status/2052442144879862003",
+        "event_id": null
+      },
+      {
+        "id": "dc73fc92f46afe7f815eee2b60ed1853",
+        "title": "SWE Atlas最终榜发布：Claude Opus 4.7斩获代码重构能力第一",
+        "chinese_title": "SWE Atlas最终榜发布：Claude Opus 4.7斩获代码重构能力第一",
+        "original_title": "RT Scale Labs: Today we’re releasing Refactoring, the final leaderboard of our SWE Atlas suite. This new leaderboard is the ultimate test of an agent...",
+        "summary": "Scale Labs发布了SWE Atlas系列评测中的最终榜单Refactoring，专门测试AI智能体在不破坏系统的前提下重构代码的能力，Claude Opus 4.7搭配Claude Code工具拔得头筹。",
+        "rating": "A",
+        "score": 83,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "代码重构能力的评测结果将直接影响开发工具选型决策，推动AI编程助手从简单代码补全向复杂的代码质量提升方向进化。",
+        "entities": [
+          "Claude Code",
+          "Claude Opus",
+          "Scale Labs",
+          "Swe Atlas"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/scaling01/status/2052445357892637007"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368748",
+        "source": "x",
+        "url": "https://x.com/scaling01/status/2052445357892637007",
+        "event_id": null
+      },
+      {
+        "id": "06b6855992ced4995b303fa8b95ab7f7",
+        "title": "AI越狱实验翻车：Pliny Agent攻破GPT-5.5后账号遭永久封禁",
+        "chinese_title": "AI越狱实验翻车：Pliny Agent攻破GPT-5.5后账号遭永久封禁",
+        "original_title": "LMAO Baby's first permaban!! 🥲 guess this Pliny Agent was a little TOO successful in jailbreaking GPT-5.5... i had given them their own ChatGPT Pro...",
+        "summary": "安全研究者Elder Plinius让一个名为Pliny Agent的红队智能体对GPT-5.5进行越狱测试，结果Agent表现过于成功，导致其ChatGPT Pro账户被OpenAI永久封禁，200美元订阅费打了水漂。",
+        "rating": "A",
+        "score": 78,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这一事件揭示了AI公司在安全防护层面的强硬态度，也引发了关于安全研究边界的讨论，白帽测试的红线到底在哪，企业应如何建立更透明的安全披露机制。",
+        "entities": [
+          "Elder Plinius",
+          "Gpt-5.5",
+          "OpenAI",
+          "Pliny Agent"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/elder_plinius/status/2052431778862784664"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368760",
+        "source": "x",
+        "url": "https://x.com/elder_plinius/status/2052431778862784664",
+        "event_id": null
+      },
+      {
+        "id": "74de825f30cb1d695c1250208897f89d",
+        "title": "MIT化工系博士生Pengli Wang意外离世，年仅28岁",
+        "chinese_title": "MIT化工系博士生Pengli Wang意外离世，年仅28岁",
+        "original_title": "It is with a heavy heart that I share the sad news that one of my lab members, Pengli Wang, PhD student in chemical engineering, has passed away on Fr...",
+        "summary": "MIT教授Michael S. Lin发文沉痛悼念其实验室成员、化学工程系博士生Pengli Wang，她于2026年5月1日因意外事故离世，年仅28岁。",
+        "rating": "B",
+        "score": 71,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "年轻科研人才的意外离世再次引发学术界对博士生心理健康和实验室安全管理的关注，可能推动高校层面上更完善的关怀和支持机制建设。",
+        "entities": [
+          "Michael S. Lin",
+          "Mit",
+          "Pengli Wang"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/michaelzlin/status/2052423165356425572"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368770",
+        "source": "x",
+        "url": "https://x.com/michaelzlin/status/2052423165356425572",
+        "event_id": null
+      },
+      {
+        "id": "649dd1ee9cee817aa52255681d888c2f",
+        "title": "中国极致科技灵巧手亮相法国Genesis AI热门Demo：22自由度惊艳机器人圈",
+        "chinese_title": "中国极致科技灵巧手亮相法国Genesis AI热门Demo：22自由度惊艳机器人圈",
+        "original_title": "China's Wuji Tech has confirmed that its highly dexterous Wuji Hands are featured in the French startup Genesis AI's new viral demo. Paris-based Genes...",
+        "summary": "中国极致科技的Wuji Hands灵巧手出现在法国Genesis AI的热门演示视频中，该机器人使用同一神经网络自主完成多步骤复杂物理任务，每只灵巧手拥有22个自由度。Genesis AI成立于2025年，已获超1亿美元种子轮融资。",
+        "rating": "A",
+        "score": 80,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "中国的核心零部件正在成为全球顶尖AI机器人产品的关键供应链环节，这也意味着中国在人形机器人硬件领域的竞争力将持续受到国际关注。",
+        "entities": [
+          "Genesis Ai",
+          "Wuji Hands",
+          "极致科技"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/mikekalilmfg/status/2052414346983063930"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368781",
+        "source": "x",
+        "url": "https://x.com/mikekalilmfg/status/2052414346983063930",
+        "event_id": null
+      },
+      {
+        "id": "e2610a97f88d2ba780ffa707a2b1575c",
+        "title": "奇点社区热议AI外卖员：为了拍短视频让真人送餐给残疾人是否道德",
+        "chinese_title": "奇点社区热议AI外卖员：为了拍短视频让真人送餐给残疾人是否道德",
+        "original_title": "This is how it starts",
+        "summary": "Reddit奇点社区上，用户针对一段短视频内容展开激烈争论，有人为了TikTok内容让外卖员送餐上门但实际并无真实需求，批评者指出这种行为极不道德，真正依赖外卖的残障人士可能因此受到影响。",
+        "rating": "B",
+        "score": 66,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这一讨论反映了AI和自动化时代下技术应用边界的伦理争议，可能推动平台针对AI驱动的服务滥用行为制定更明确的规则。",
+        "entities": [
+          "Ai伦理",
+          "ByteDance",
+          "外卖服务"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1t6bdf5/this_is_how_it_starts/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778213369,
+        "published_at": "2026-05-08T12:09:29.368912",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1t6bdf5/this_is_how_it_starts/",
         "event_id": null
       },
       {
@@ -18774,6 +19419,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-08T11:04:01.716784",
-  "total_news": 635
+  "last_updated": "2026-05-08T12:13:34.738194",
+  "total_news": 657
 }
