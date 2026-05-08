@@ -2,6 +2,99 @@
   "news": {
     "2026-05-08": [
       {
+        "id": "f76c85ded90b7304e50e650c94a4244a",
+        "title": "Codex纯代码策略突破Atari满分，无需神经网络也能打",
+        "chinese_title": "Codex纯代码策略突破Atari满分，无需神经网络也能打",
+        "original_title": "Codex grew programmatic policies with no neural nets: max score on Breakout, and SOTA-level scores on MuJoCo. Maybe heuristics were not too weak. Mayb...",
+        "summary": "研究者Trinkle发现Codex仅靠程序化策略就在Atari游戏Breakout中取得满分，在MuJoCo上达到SOTA水平，挑战了神经网络在强化学习中的主导地位。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这可能引发对强化学习范式的重新思考：传统启发式方法是否被低估？未来AI训练是否会出现神经架构+程序化策略的混合路线？",
+        "entities": [
+          "Atari",
+          "Codex",
+          "Mujoco",
+          "Trinkle23897"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Trinkle23897/status/2052596837547495549"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778220296,
+        "published_at": "2026-05-08T14:04:56.429849",
+        "source": "x",
+        "url": "https://x.com/Trinkle23897/status/2052596837547495549",
+        "event_id": null
+      },
+      {
+        "id": "f1196332822aaae909f01de15c61b97b",
+        "title": "AI破解不了网络黑话？首个大规模编码语言数据集发布",
+        "chinese_title": "AI破解不了网络黑话？首个大规模编码语言数据集发布",
+        "original_title": "\"Newspaper eat\" means \"Not tasty\"? People often encode messages so only insiders can decode the intended meaning, which AI still struggles with. We in...",
+        "summary": "ACL 2026论文发布CodedLang数据集，专门研究用户故意编码信息让外人无法理解的现象，揭示AI在理解隐晦网络语言方面仍存在明显短板。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这对内容审核和社交媒体理解意义重大——AI若能更好解码网络黑话，将大幅提升有害信息检测能力，也推动模型对文化语境的理解。",
+        "entities": [
+          "Acl2026",
+          "Codedlang",
+          "Ruyuan Wan"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Ruyuan_Wan/status/2052589031142158699"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778220296,
+        "published_at": "2026-05-08T14:04:56.429872",
+        "source": "x",
+        "url": "https://x.com/Ruyuan_Wan/status/2052589031142158699",
+        "event_id": null
+      },
+      {
+        "id": "c912417ece8cbb99005236ed678f9105",
+        "title": "Nathan Lambert走访中国头部AI实验室后写下观察",
+        "chinese_title": "Nathan Lambert走访中国头部AI实验室后写下观察",
+        "original_title": "Nathan Lambert 跑遍了中国所有头部 AI lab 1️⃣ Moonshot 2️⃣ Zhipu 3️⃣ Meituan 4️⃣ Xiaomi 5️⃣ Qwen / 6️⃣ Ant Ling 7️⃣ http://01.AI 回来写了...",
+        "summary": "前OpenAI研究员Nathan Lambert遍访Moonshot、智谱、美团、小米、通义等中国头部AI实验室后指出，中美在算力和模型层面差距已极小，真正的差异在于文化——美国研究员ego更强，中国研究员更低调专注。",
+        "rating": "A+",
+        "score": 87,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这一观察值得深入分析：研究文化如何影响模型产出质量？中国企业是否可以通过调整管理模式释放更大创新潜力？",
+        "entities": [
+          "01.Ai",
+          "Moonshot Ai",
+          "Nathan Lambert",
+          "小米",
+          "智谱",
+          "美团",
+          "蚂蚁灵",
+          "通义"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/GoSailGlobal/status/2052560312256348370"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778220296,
+        "published_at": "2026-05-08T14:04:56.429893",
+        "source": "x",
+        "url": "https://x.com/GoSailGlobal/status/2052560312256348370",
+        "event_id": null
+      },
+      {
         "id": "1ab2f1bc123bd82e6380e5bb1d573efd",
         "title": "Anthropic 或融资500亿美元，估值冲刺9000亿美元",
         "chinese_title": "Anthropic 或融资500亿美元，估值冲刺9000亿美元",
@@ -3459,6 +3552,35 @@
       }
     ],
     "2026-05-07": [
+      {
+        "id": "e49189231aa05a091e939c43fe367319",
+        "title": "OpenAI发布GPT-5.5-Cyber网络安全专用模型",
+        "chinese_title": "OpenAI发布GPT-5.5-Cyber网络安全专用模型",
+        "original_title": "RT DANΞ: The security industry is entering a period of compression. Model cybersecurity capabilities are rapidly increasing, and it's critical we arm...",
+        "summary": "OpenAI发布GPT-5.5 with TAC和GPT-5.5-Cyber两款网络安全专用模型，面向安全行业的安全代码审查、漏洞分类、威胁检测等防御型工作流，标志着AI安全能力进入新阶段。",
+        "rating": "A+",
+        "score": 91,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI安全模型的快速进步意味着传统安全行业将面临巨大冲击，安全厂商需要重新定位自己的价值主张，也可能催生新的AI安全服务模式。",
+        "entities": [
+          "Gpt-5.5",
+          "Gpt-5.5-Cyber",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/BorisMPower/status/2052532473016488065"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778220296,
+        "published_at": "2026-05-08T14:04:56.429917",
+        "source": "x",
+        "url": "https://x.com/BorisMPower/status/2052532473016488065",
+        "event_id": null
+      },
       {
         "id": "040050560bdde213f3e6c8cfcf069865",
         "title": "Spotify推出命令行工具Save to Spotify，AI Agent可直接上传生成音频",
@@ -19448,6 +19570,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-08T13:05:53.608330",
-  "total_news": 658
+  "last_updated": "2026-05-08T14:07:42.622495",
+  "total_news": 662
 }
