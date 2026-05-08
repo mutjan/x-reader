@@ -260,6 +260,65 @@
         "event_id": null
       },
       {
+        "id": "4d64a58c3a3ff997c792d752dbe026c1",
+        "title": "2026年中ROCm现状调查：AMD显卡终于能跑训练了？",
+        "chinese_title": "2026年中ROCm现状调查：AMD显卡终于能跑训练了？",
+        "original_title": "ROCm Status in mid 2026 [D]",
+        "summary": "社区用户调查2026年中ROCm生态的实际可用性，重点关注RX7900XTX在大模型训练上的可行性，与Nvidia RTX 3090在FP16吞吐量、功耗和成本方面的对比受到关注。",
+        "rating": "A",
+        "score": 79,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "如果ROCm训练生态真正成熟，将打破Nvidia在AI训练领域的垄断，推动AMD GPU在AI开发者社区的采用率，利好AI算力成本的进一步下降。",
+        "entities": [
+          "Amd",
+          "NVIDIA",
+          "Pytorch",
+          "Rocm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t6cng3/rocm_status_in_mid_2026_d/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778206069,
+        "published_at": "2026-05-08T10:07:49.768234",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t6cng3/rocm_status_in_mid_2026_d/",
+        "event_id": null
+      },
+      {
+        "id": "e139b573635f292e418d2b76c15c7ff4",
+        "title": "Transformer数学可视化工具开源：从GPT-2到Qwen 3.6一网打尽",
+        "chinese_title": "Transformer数学可视化工具开源：从GPT-2到Qwen 3.6一网打尽",
+        "original_title": "Transformer Math Explorer [P]",
+        "summary": "社区开发者开源了Transformer Math Explorer交互式数学参考工具，通过数据流图深入展示从GPT-2到Qwen 3.6的各种Transformer变体架构，涵盖MLA、MoE、RoPE等技术。",
+        "rating": "A",
+        "score": 77,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该工具将降低Transformer架构学习和教育的门槛，帮助AI研究者和工程师快速理解不同模型架构的设计差异和技术演进路径。",
+        "entities": [
+          "GPT",
+          "Qwen",
+          "Transformer"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning (qwen)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t6a2ri/transformer_math_explorer_p/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778206069,
+        "published_at": "2026-05-08T10:07:49.768246",
+        "source": "Machine Learning (qwen)",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t6a2ri/transformer_math_explorer_p/",
+        "event_id": null
+      },
+      {
         "id": "9cf4752cea5da940c3aa8bd89b348f6e",
         "title": "Mozilla借助Anthropic等AI模型，一个月修复423个Firefox安全漏洞",
         "chinese_title": "Mozilla借助Anthropic等AI模型，一个月修复423个Firefox安全漏洞",
@@ -2699,62 +2758,31 @@
     ],
     "2026-05-07": [
       {
-        "id": "4d64a58c3a3ff997c792d752dbe026c1",
-        "title": "2026年中ROCm现状调查：AMD显卡终于能跑训练了？",
-        "chinese_title": "2026年中ROCm现状调查：AMD显卡终于能跑训练了？",
-        "original_title": "ROCm Status in mid 2026 [D]",
-        "summary": "社区用户调查2026年中ROCm生态的实际可用性，重点关注RX7900XTX在大模型训练上的可行性，与Nvidia RTX 3090在FP16吞吐量、功耗和成本方面的对比受到关注。",
-        "rating": "A",
-        "score": 79,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "如果ROCm训练生态真正成熟，将打破Nvidia在AI训练领域的垄断，推动AMD GPU在AI开发者社区的采用率，利好AI算力成本的进一步下降。",
+        "id": "4d374ef5bb29a82aef3150fdb0ee29bd",
+        "title": "ECCV审稿人要求作者对比自己之前的论文，疑似被认出身份",
+        "chinese_title": "ECCV审稿人要求作者对比自己之前的论文，疑似被认出身份",
+        "original_title": "ECCV reviewer wants me to compare and contrast to my own paper. [D]",
+        "summary": "一位投稿ECCV的研究者发现审稿人找到了他们团队更早版本的arXiv论文，要求与旧版本进行对比分析，但审稿人并未引用该旧论文，作者高度怀疑审稿人认出了作者身份，引发对双盲审稿有效性的讨论。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "此话题可延伸至学术会议双盲审稿机制的漏洞分析、arXiv预印本对匿名性的影响，以及顶会审稿流程改革的行业呼声。",
         "entities": [
-          "Amd",
-          "NVIDIA",
-          "Pytorch",
-          "Rocm"
+          "Arxiv",
+          "Eccv"
         ],
         "sourceLinks": [
           {
             "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1t6cng3/rocm_status_in_mid_2026_d/"
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t6e4i7/eccv_reviewer_wants_me_to_compare_and_contrast_to/"
           }
         ],
         "sources": 1,
-        "timestamp": 1778206069,
-        "published_at": "2026-05-08T10:07:49.768234",
+        "timestamp": 1778209376,
+        "published_at": "2026-05-08T11:02:56.321711",
         "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1t6cng3/rocm_status_in_mid_2026_d/",
-        "event_id": null
-      },
-      {
-        "id": "e139b573635f292e418d2b76c15c7ff4",
-        "title": "Transformer数学可视化工具开源：从GPT-2到Qwen 3.6一网打尽",
-        "chinese_title": "Transformer数学可视化工具开源：从GPT-2到Qwen 3.6一网打尽",
-        "original_title": "Transformer Math Explorer [P]",
-        "summary": "社区开发者开源了Transformer Math Explorer交互式数学参考工具，通过数据流图深入展示从GPT-2到Qwen 3.6的各种Transformer变体架构，涵盖MLA、MoE、RoPE等技术。",
-        "rating": "A",
-        "score": 77,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "该工具将降低Transformer架构学习和教育的门槛，帮助AI研究者和工程师快速理解不同模型架构的设计差异和技术演进路径。",
-        "entities": [
-          "GPT",
-          "Qwen",
-          "Transformer"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning (qwen)",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1t6a2ri/transformer_math_explorer_p/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778206069,
-        "published_at": "2026-05-08T10:07:49.768246",
-        "source": "Machine Learning (qwen)",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1t6a2ri/transformer_math_explorer_p/",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t6e4i7/eccv_reviewer_wants_me_to_compare_and_contrast_to/",
         "event_id": null
       },
       {
@@ -18746,6 +18774,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-08T10:09:34.677571",
-  "total_news": 634
+  "last_updated": "2026-05-08T11:04:01.716784",
+  "total_news": 635
 }
