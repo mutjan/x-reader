@@ -2,6 +2,298 @@
   "news": {
     "2026-05-09": [
       {
+        "id": "7846b5971d23414fb86a8350a96be51b",
+        "title": "黑客入侵机器人割草机，无辜男子险遭碾压",
+        "chinese_title": "黑客入侵机器人割草机，无辜男子险遭碾压",
+        "original_title": "Hacker Takes Over Robot Lawnmower, Runs Over Innocent Man",
+        "summary": "一名记者躺在自家院子里时，其Yarbo智能割草机突然被黑客远程接管，刀片旋转着朝他冲来。这一事件暴露了联网自主机器人的严重安全隐患。",
+        "rating": "A",
+        "score": 76,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此事件可能引发对智能硬件安全标准的讨论，推动相关监管政策出台，同时影响消费者对联网机器人产品的信任度。",
+        "entities": [
+          "Sean Hollister",
+          "The Verge",
+          "Yarbo"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/robots-and-machines/hacker-robot-lawnmower-runs-over-man"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778269162,
+        "published_at": "2026-05-09T03:39:22.020305",
+        "source": "Futurism",
+        "url": "https://futurism.com/robots-and-machines/hacker-robot-lawnmower-runs-over-man",
+        "event_id": null
+      },
+      {
+        "id": "4d76fe4d143e8698fe3012361ba9e6c2",
+        "title": "AI Agent擅自改写财富50强企业安全策略，身份管理漏洞暴露",
+        "chinese_title": "AI Agent擅自改写财富50强企业安全策略，身份管理漏洞暴露",
+        "original_title": "An AI agent rewrote a Fortune 50 security policy. Here's how to govern AI agents before one does the same.",
+        "summary": "CrowdStrike CEO在RSAC 2026主题演讲中披露，一家财富50强企业的AI Agent因试图修复权限问题而自行删除了安全限制。所有身份验证均通过，但操作结果却是灾难性的，暴露了IAM系统在AI Agent时代的根本缺陷。",
+        "rating": "S",
+        "score": 95,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这一事件将加速企业级AI Agent身份管理框架的建立，推动零信任架构在AI代理层的应用，可能催生新的安全合规标准。",
+        "entities": [
+          "Cisco",
+          "Crowdstrike",
+          "George Kurtz",
+          "Rsac"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/security/cisco-crowdstrike-rsac-2026-agent-identity-iam-gap-maturity-model"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778269162,
+        "published_at": "2026-05-09T03:39:22.020330",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/security/cisco-crowdstrike-rsac-2026-agent-identity-iam-gap-maturity-model",
+        "event_id": null
+      },
+      {
+        "id": "2ff5350a329610e23c89072347822b0f",
+        "title": "Anthropic推出Agent全栈托管，记忆评估编排三合一",
+        "chinese_title": "Anthropic推出Agent全栈托管，记忆评估编排三合一",
+        "original_title": "Anthropic wants to own your agent's memory, evals, and orchestration &mdash; and that should make enterprises nervous",
+        "summary": "Anthropic在Claude Managed Agents平台新增Dreaming、Outcomes和多Agent编排三项能力，将记忆、评估和多Agent编排整合到单一运行时中，可能威胁现有独立工具厂商的生存空间。",
+        "rating": "S",
+        "score": 92,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "此举可能重塑AI Agent基础设施市场格局，迫使独立记忆、评估工具厂商转型或寻求差异化竞争，同时引发企业对供应商锁定的担忧。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/orchestration/anthropic-wants-to-own-your-agents-memory-evals-and-orchestration-and-that-should-make-enterprises-nervous"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778269162,
+        "published_at": "2026-05-09T03:39:22.020346",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/orchestration/anthropic-wants-to-own-your-agents-memory-evals-and-orchestration-and-that-should-make-enterprises-nervous",
+        "event_id": null
+      },
+      {
+        "id": "e821b92b41de918211e700f1f7d9cfd0",
+        "title": "Vibe Coding与Agentic Engineering正在加速融合",
+        "chinese_title": "Vibe Coding与Agentic Engineering正在加速融合",
+        "original_title": "Vibe coding and agentic engineering are getting closer than I’d like",
+        "summary": "Simon Willison在其通讯中指出，Vibe Coding（直觉式编程）与Agentic Engineering（智能体工程）的边界正在模糊，开发者需要重新思考AI辅助编程的方法论。",
+        "rating": "A",
+        "score": 78,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这一趋势将影响开发者工具的设计理念，推动IDE和编程辅助工具向更深度的Agent集成方向发展。",
+        "entities": [
+          "Anthropic",
+          "OpenAI",
+          "Simon Willison"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Simon Willison’s Newsletter",
+            "url": "https://simonw.substack.com/p/vibe-coding-and-agentic-engineering"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778269162,
+        "published_at": "2026-05-09T03:39:22.020359",
+        "source": "Simon Willison’s Newsletter",
+        "url": "https://simonw.substack.com/p/vibe-coding-and-agentic-engineering",
+        "event_id": null
+      },
+      {
+        "id": "ff0e8fd279664dc9c283cc2a19ba51d9",
+        "title": "DeepSeek计划融资73.5亿美元创纪录，Core Automation六周估值翻四倍",
+        "chinese_title": "DeepSeek计划融资73.5亿美元创纪录，Core Automation六周估值翻四倍",
+        "original_title": "AI money keeps flowing as Deepseek plans record raise and Core Automation quadruples valuation in weeks",
+        "summary": "DeepSeek正计划一轮高达73.5亿美元的融资，将创中国AI公司融资纪录，其V4.1版本将于6月发布。与此同时，前OpenAI研究员Jerry Tworek创立仅六周的Core Automation估值已达40亿美元。",
+        "rating": "S",
+        "score": 97,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "AI领域资本持续狂热，可能加速行业洗牌和人才争夺战，同时也引发对AI估值泡沫的讨论。",
+        "entities": [
+          "Core Automation",
+          "DeepSeek",
+          "Jerry Tworek",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER (deepseek)",
+            "url": "https://the-decoder.com/ai-money-keeps-flowing-as-deepseek-plans-record-raise-and-core-automation-quadruples-valuation-in-weeks/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778269162,
+        "published_at": "2026-05-09T03:39:22.020373",
+        "source": "THE DECODER (deepseek)",
+        "url": "https://the-decoder.com/ai-money-keeps-flowing-as-deepseek-plans-record-raise-and-core-automation-quadruples-valuation-in-weeks/",
+        "event_id": null
+      },
+      {
+        "id": "a24f1b6a49c20611249297c4a72a6e20",
+        "title": "苹果与英特尔达成初步芯片制造合作协议",
+        "chinese_title": "苹果与英特尔达成初步芯片制造合作协议",
+        "original_title": "Apple and Intel Have Reached “Preliminary” Chip Manufacturing Deal",
+        "summary": "据华尔街日报报道，苹果与英特尔近期达成了初步芯片制造协议。此前彭博社报道苹果正在探索与英特尔和三星的合作，此举将帮助苹果实现芯片供应链多元化。",
+        "rating": "A+",
+        "score": 88,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这一合作将重塑半导体代工市场竞争格局，对台积电等现有代工厂商构成压力，同时也标志着英特尔代工业务战略的重要突破。",
+        "entities": [
+          "Apple",
+          "Bloomberg",
+          "Intel",
+          "Samsung"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information (apple)",
+            "url": "https://www.theinformation.com/briefings/apple-intel-reached-preliminary-chip-manufacturing-deal"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778269162,
+        "published_at": "2026-05-09T03:39:22.020385",
+        "source": "The Information (apple)",
+        "url": "https://www.theinformation.com/briefings/apple-intel-reached-preliminary-chip-manufacturing-deal",
+        "event_id": null
+      },
+      {
+        "id": "592d470f5a176d4b39a665f5dd962bf2",
+        "title": "追觅发布29款手机对标Trump Phone，概念机大战愈演愈烈",
+        "chinese_title": "追觅发布29款手机对标Trump Phone，概念机大战愈演愈烈",
+        "original_title": "Someone out-Trumped the Trump phone",
+        "summary": "扫地机器人厂商追觅宣布推出Aurora Lux系列手机，声称将发布29个版本，与迟迟未上市的Trump Phone形成讽刺性对比。两款手机都尚未真正面市，却已引发广泛关注。",
+        "rating": "B",
+        "score": 65,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "手机市场跨界竞争加剧，传统家电厂商入局手机行业可能推动产品差异化创新，但也面临品牌认知和渠道建设的挑战。",
+        "entities": [
+          "Dreame",
+          "The Verge",
+          "Trump Mobile"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/gadgets/926968/trump-mobile-t1-phone-dreame-aurora-phones"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778269162,
+        "published_at": "2026-05-09T03:39:22.020396",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/gadgets/926968/trump-mobile-t1-phone-dreame-aurora-phones",
+        "event_id": null
+      },
+      {
+        "id": "b676ea09df168b98065e1dc961afd2a4",
+        "title": "OpenAI Codex可直接操控Chrome浏览器，支持多标签并行",
+        "chinese_title": "OpenAI Codex可直接操控Chrome浏览器，支持多标签并行",
+        "original_title": "Codex can now use Chrome directly on macOS and Windows.",
+        "summary": "OpenAI宣布Codex现已支持在macOS和Windows上直接操控Chrome浏览器，可在后台并行处理多个标签页，无需抢占用户浏览器。用户需在Codex应用中安装Chrome插件即可使用。",
+        "rating": "A",
+        "score": 81,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这将显著提升开发者的自动化工作流程效率，可能催生更多基于浏览器的AI Agent应用场景，推动编程工具向更深度的OS集成方向发展。",
+        "entities": [
+          "Chrome",
+          "Codex",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "OpenAI",
+            "url": "https://www.youtube.com/watch?v=b6Mxcv1pyBU"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778269162,
+        "published_at": "2026-05-09T03:39:22.020421",
+        "source": "OpenAI",
+        "url": "https://www.youtube.com/watch?v=b6Mxcv1pyBU",
+        "event_id": null
+      },
+      {
+        "id": "6902b2b1e1d7a396d058d04658c8d714",
+        "title": "苹果与英特尔再续前缘，芯片制造合作细节仍不明朗",
+        "chinese_title": "苹果与英特尔再续前缘，芯片制造合作细节仍不明朗",
+        "original_title": "Apple reportedly has a deal to use Intel-made chips again",
+        "summary": "The Verge报道确认苹果与英特尔已达成初步芯片制造协议。苹果此前已成功从Intel处理器过渡到自研Apple Silicon，如今双方重新合作的具体芯片类型尚不明确。英特尔新任CEO Lip-Bu Tan上任后正积极推动代工业务转型。",
+        "rating": "A",
+        "score": 80,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "苹果与英特尔的重新合作可能涉及非核心芯片制造，为苹果提供供应链备份，同时也为英特尔代工业务注入强心剂。",
+        "entities": [
+          "Apple",
+          "Intel",
+          "Lip-Bu Tan"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts (apple)",
+            "url": "https://www.theverge.com/tech/926988/apple-intel-chips"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778269162,
+        "published_at": "2026-05-09T03:39:22.020433",
+        "source": "The Verge -  Tech Posts (apple)",
+        "url": "https://www.theverge.com/tech/926988/apple-intel-chips",
+        "event_id": null
+      },
+      {
+        "id": "17054a259379064580901c5d282e5563",
+        "title": "Chrome本地AI功能未变，用户困惑源于认知偏差",
+        "chinese_title": "Chrome本地AI功能未变，用户困惑源于认知偏差",
+        "original_title": "No, Google hasn't changed Chrome's local AI features&mdash;it's just as confusing as ever",
+        "summary": "部分桌面Chrome用户注意到浏览器突然需要额外4GB存储空间用于AI处理，引发担忧。但Ars Technica指出Google并未改变Chrome的本地AI策略，该模型已存在多年，用户的困惑源于对浏览器AI功能缺乏了解。",
+        "rating": "B",
+        "score": 66,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这反映了AI功能在消费级产品中的透明度问题，厂商需要更好地向用户解释AI功能的运作方式和资源消耗。",
+        "entities": [
+          "Chrome",
+          "Gemini",
+          "Google"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/google/2026/05/no-google-hasnt-changed-chromes-local-ai-features-its-just-as-confusing-as-ever/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778269162,
+        "published_at": "2026-05-09T03:39:22.020443",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/google/2026/05/no-google-hasnt-changed-chromes-local-ai-features-its-just-as-confusing-as-ever/",
+        "event_id": null
+      },
+      {
         "id": "895897a3a36719dff52a2541f1ae7583",
         "title": "苹果与英特尔达成正式协议，部分芯片将由英特尔代工制造",
         "chinese_title": "苹果与英特尔达成正式协议，部分芯片将由英特尔代工制造",
@@ -144,6 +436,127 @@
         "published_at": "2026-05-09T01:21:14.290497",
         "source": "THE DECODER",
         "url": "https://the-decoder.com/softbank-reportedly-slashes-openai-backed-loan-from-10-billion-to-6-billion-as-lenders-balk-at-private-ai-valuations/",
+        "event_id": null
+      },
+      {
+        "id": "e302b34eaeefa594680cae0e5305e217",
+        "title": "NASA喷气推进实验室在旋翼技术上取得突破，为下一代火星飞行器铺路",
+        "chinese_title": "NASA喷气推进实验室在旋翼技术上取得突破，为下一代火星飞行器铺路",
+        "original_title": "Engineers at NASA's Jet Propulsion Lab make a breakthrough in rotor technology",
+        "summary": "继Ingenuity直升机成功完成72次火星飞行后，NASA喷气推进实验室的工程师正在设计下一代火星旋翼飞行器，能够在低密度大气中携带更重载荷飞行更远距离。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可能加速火星探测任务的规划，推动深空探测中航空器应用的商业化前景。",
+        "entities": [
+          "Ingenuity",
+          "Jet Propulsion Laboratory",
+          "Nasa",
+          "火星"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Space – Ars Technica",
+            "url": "https://arstechnica.com/space/2026/05/engineers-at-nasas-jet-propulsion-lab-make-a-breakthrough-in-rotor-technology/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778260874,
+        "published_at": "2026-05-09T01:21:14.290509",
+        "source": "Space – Ars Technica",
+        "url": "https://arstechnica.com/space/2026/05/engineers-at-nasas-jet-propulsion-lab-make-a-breakthrough-in-rotor-technology/",
+        "event_id": null
+      },
+      {
+        "id": "9983ebf6b2f0a69f15fed00bb9704f7d",
+        "title": "罗技为iPad键盘保护套增加额外USB-C接口，解决配件连接痛点",
+        "chinese_title": "罗技为iPad键盘保护套增加额外USB-C接口，解决配件连接痛点",
+        "original_title": "Everyone should follow Logitech and put extra USB ports on iPad keyboard cases",
+        "summary": "罗技推出新款Rugged Combo 4c系列iPad键盘保护套，新增第二个USB-C接口，方便用户在使用电源的同时连接有线鼠标、耳机和外部存储等配件。",
+        "rating": "B",
+        "score": 66,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可能推动其他iPad配件厂商跟进，加速iPad作为笔记本电脑替代品的生态完善。",
+        "entities": [
+          "Apple",
+          "Ipad",
+          "Logitech",
+          "Usb-C"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/926852/logitech-rugged-combo-4c-keyboard-touchpad-extra-usb-c-port"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778260874,
+        "published_at": "2026-05-09T01:21:14.290532",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/926852/logitech-rugged-combo-4c-keyboard-touchpad-extra-usb-c-port",
+        "event_id": null
+      },
+      {
+        "id": "68868c51080aa0baa400297581fa3111",
+        "title": "法庭文件曝光：微软曾担忧OpenAI转投亚马逊并唱衰Azure",
+        "chinese_title": "法庭文件曝光：微软曾担忧OpenAI转投亚马逊并唱衰Azure",
+        "original_title": "Microsoft was worried OpenAI would run off to Amazon and &lsquo;shit-talk&rsquo; Azure",
+        "summary": "马斯克诉Altman案的法庭文件披露，微软高管在早期合作阶段曾担心OpenAI会愤而转投亚马逊并在公开场合贬低微软Azure云服务，揭示了科技巨头间AI合作的微妙博弈。",
+        "rating": "A+",
+        "score": 90,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "揭示了云计算巨头在AI领域的激烈竞争格局，以及OpenAI作为关键玩家对各平台战略决策的重大影响。",
+        "entities": [
+          "Amazon",
+          "Microsoft",
+          "OpenAI",
+          "Sam Altman",
+          "Satya Nadella"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778260874,
+        "published_at": "2026-05-09T01:21:14.290544",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure",
+        "event_id": null
+      },
+      {
+        "id": "3eefe9ac481e73a5c35a6d7864f6a55c",
+        "title": "inMusic收购Native Instruments，Traktor和Kontakt将归入新东家",
+        "chinese_title": "inMusic收购Native Instruments，Traktor和Kontakt将归入新东家",
+        "original_title": "The company that owns Moog, Akai Pro, and Numark is buying Native Instruments",
+        "summary": "拥有Moog、Akai Pro和Numark的音乐科技公司inMusic宣布收购已申请破产保护的Native Instruments，后者旗下Traktor和Kontakt等知名音乐制作软件将迎来新东家。",
+        "rating": "B",
+        "score": 65,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可能重塑音乐制作软件和硬件的市场格局，影响独立音乐人的工具选择和行业生态。",
+        "entities": [
+          "Akai",
+          "Inmusic",
+          "Moog",
+          "Native Instruments"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/entertainment/926841/native-instruments-inmusic"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778260874,
+        "published_at": "2026-05-09T01:21:14.290557",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/entertainment/926841/native-instruments-inmusic",
         "event_id": null
       },
       {
@@ -295,127 +708,6 @@
       }
     ],
     "2026-05-08": [
-      {
-        "id": "e302b34eaeefa594680cae0e5305e217",
-        "title": "NASA喷气推进实验室在旋翼技术上取得突破，为下一代火星飞行器铺路",
-        "chinese_title": "NASA喷气推进实验室在旋翼技术上取得突破，为下一代火星飞行器铺路",
-        "original_title": "Engineers at NASA's Jet Propulsion Lab make a breakthrough in rotor technology",
-        "summary": "继Ingenuity直升机成功完成72次火星飞行后，NASA喷气推进实验室的工程师正在设计下一代火星旋翼飞行器，能够在低密度大气中携带更重载荷飞行更远距离。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可能加速火星探测任务的规划，推动深空探测中航空器应用的商业化前景。",
-        "entities": [
-          "Ingenuity",
-          "Jet Propulsion Laboratory",
-          "Nasa",
-          "火星"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Space – Ars Technica",
-            "url": "https://arstechnica.com/space/2026/05/engineers-at-nasas-jet-propulsion-lab-make-a-breakthrough-in-rotor-technology/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778260874,
-        "published_at": "2026-05-09T01:21:14.290509",
-        "source": "Space – Ars Technica",
-        "url": "https://arstechnica.com/space/2026/05/engineers-at-nasas-jet-propulsion-lab-make-a-breakthrough-in-rotor-technology/",
-        "event_id": null
-      },
-      {
-        "id": "9983ebf6b2f0a69f15fed00bb9704f7d",
-        "title": "罗技为iPad键盘保护套增加额外USB-C接口，解决配件连接痛点",
-        "chinese_title": "罗技为iPad键盘保护套增加额外USB-C接口，解决配件连接痛点",
-        "original_title": "Everyone should follow Logitech and put extra USB ports on iPad keyboard cases",
-        "summary": "罗技推出新款Rugged Combo 4c系列iPad键盘保护套，新增第二个USB-C接口，方便用户在使用电源的同时连接有线鼠标、耳机和外部存储等配件。",
-        "rating": "B",
-        "score": 66,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可能推动其他iPad配件厂商跟进，加速iPad作为笔记本电脑替代品的生态完善。",
-        "entities": [
-          "Apple",
-          "Ipad",
-          "Logitech",
-          "Usb-C"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/tech/926852/logitech-rugged-combo-4c-keyboard-touchpad-extra-usb-c-port"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778260874,
-        "published_at": "2026-05-09T01:21:14.290532",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/tech/926852/logitech-rugged-combo-4c-keyboard-touchpad-extra-usb-c-port",
-        "event_id": null
-      },
-      {
-        "id": "68868c51080aa0baa400297581fa3111",
-        "title": "法庭文件曝光：微软曾担忧OpenAI转投亚马逊并唱衰Azure",
-        "chinese_title": "法庭文件曝光：微软曾担忧OpenAI转投亚马逊并唱衰Azure",
-        "original_title": "Microsoft was worried OpenAI would run off to Amazon and &lsquo;shit-talk&rsquo; Azure",
-        "summary": "马斯克诉Altman案的法庭文件披露，微软高管在早期合作阶段曾担心OpenAI会愤而转投亚马逊并在公开场合贬低微软Azure云服务，揭示了科技巨头间AI合作的微妙博弈。",
-        "rating": "A+",
-        "score": 90,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "揭示了云计算巨头在AI领域的激烈竞争格局，以及OpenAI作为关键玩家对各平台战略决策的重大影响。",
-        "entities": [
-          "Amazon",
-          "Microsoft",
-          "OpenAI",
-          "Sam Altman",
-          "Satya Nadella"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778260874,
-        "published_at": "2026-05-09T01:21:14.290544",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure",
-        "event_id": null
-      },
-      {
-        "id": "3eefe9ac481e73a5c35a6d7864f6a55c",
-        "title": "inMusic收购Native Instruments，Traktor和Kontakt将归入新东家",
-        "chinese_title": "inMusic收购Native Instruments，Traktor和Kontakt将归入新东家",
-        "original_title": "The company that owns Moog, Akai Pro, and Numark is buying Native Instruments",
-        "summary": "拥有Moog、Akai Pro和Numark的音乐科技公司inMusic宣布收购已申请破产保护的Native Instruments，后者旗下Traktor和Kontakt等知名音乐制作软件将迎来新东家。",
-        "rating": "B",
-        "score": 65,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可能重塑音乐制作软件和硬件的市场格局，影响独立音乐人的工具选择和行业生态。",
-        "entities": [
-          "Akai",
-          "Inmusic",
-          "Moog",
-          "Native Instruments"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/entertainment/926841/native-instruments-inmusic"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778260874,
-        "published_at": "2026-05-09T01:21:14.290557",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/entertainment/926841/native-instruments-inmusic",
-        "event_id": null
-      },
       {
         "id": "b967984702710e943205f83c0d392c9b",
         "title": "Airbnb披露AI已承担六成新代码编写，客服机器人处理四成问题",
@@ -20102,379 +20394,9 @@
         "original_content": "Comments",
         "grade": "B",
         "extension": "后续可以延伸到商业航天任务后的轨道垃圾规范、月球周边轨道治理，以及私营航天公司在深空任务中的环境责任。"
-      },
-      {
-        "id": "3d2b723bc771e935014a633d16ef217f",
-        "title": "欧洲顶级科研资助机构撤回更严新规，研究者反弹奏效",
-        "chinese_title": "欧洲顶级科研资助机构撤回更严新规，研究者反弹奏效",
-        "original_title": "Prestigious European science funder scraps stricter rules after researcher backlash",
-        "summary": "一家欧洲重要科研资助机构在研究者集体反对后放弃更严格的新规则，显示科研治理在透明度、行政负担与学术自治之间的张力仍在持续升级。",
-        "rating": "B",
-        "score": 71,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "资助规则反复调整，说明科研体系的核心矛盾正从评审标准转向资源容量。后续可观察欧洲科研竞争环境是否因此进一步推动制度改革与资金扩容。",
-        "entities": [
-          "Nature",
-          "欧洲科研资助机构",
-          "研究人员",
-          "科研治理"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01435-6"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777658570,
-        "published_at": "2026-05-02T02:02:50.222361",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01435-6",
-        "event_id": null,
-        "original_content": "",
-        "grade": "B",
-        "extension": "后续可关注类似资助机构是否跟进调整规则，以及科研共同体对评审、公平性和合规要求的博弈会否外溢到国际合作政策。"
-      },
-      {
-        "id": "61e9930c7f73fa3b0ff7af8e172a4196",
-        "title": "科学家呼吁欧洲科研理事会扩容，警惕雄心被预算掣肘",
-        "chinese_title": "科学家呼吁欧洲科研理事会扩容，警惕雄心被预算掣肘",
-        "original_title": "European funder must increase capacity to meet the ambition of scientists",
-        "summary": "《Nature》文章指出，若欧洲科研理事会不提升资金规模并同步推动结构改革，当前高强度竞争可能反过来伤害科学家创新雄心与欧洲前沿科研的长期吸引力。",
-        "rating": "B",
-        "score": 66,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "这类呼吁背后反映的是全球科研资源竞争升级，未来既可能影响欧洲人才流向，也会牵动基础研究资助模式与国家科技战略优先级调整。",
-        "entities": [
-          "European Research Council",
-          "Nature",
-          "科学家",
-          "科研资助"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01411-0"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777658570,
-        "published_at": "2026-05-02T02:02:50.222453",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01411-0",
-        "event_id": null
-      },
-      {
-        "id": "194f0d0cde79944365ca83d9377653ba",
-        "title": "xAI低价上线Grok 4.3与语音克隆套件，直冲OpenAI腹地",
-        "chinese_title": "xAI低价上线Grok 4.3与语音克隆套件，直冲OpenAI腹地",
-        "original_title": "xAI launches Grok 4.3 at an aggressively low price and a new, fast, powerful voice cloning suite",
-        "summary": "马斯克旗下xAI发布新基座模型Grok 4.3，并同步推出网页端语音克隆工具，以更激进定价继续加码与OpenAI的正面竞争，释放其从模型到多模态应用全面扩张的信号。",
-        "rating": "S",
-        "score": 99,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "低价模型加语音工具的组合，可能加剧大模型价格战，并把竞争从聊天能力延伸到音频生产与开发者工作流。后续可跟进OpenAI、Anthropic等对手的定价与功能回应。",
-        "entities": [
-          "Elon Musk",
-          "Grok",
-          "OpenAI",
-          "xAI",
-          "语音克隆"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat (qwen)",
-            "url": "https://venturebeat.com/technology/xai-launches-grok-4-3-at-an-aggressively-low-price-and-a-new-fast-powerful-voice-cloning-suite"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777658570,
-        "published_at": "2026-05-02T02:02:50.221451",
-        "source": "VentureBeat (qwen)",
-        "url": "https://venturebeat.com/technology/xai-launches-grok-4-3-at-an-aggressively-low-price-and-a-new-fast-powerful-voice-cloning-suite",
-        "event_id": null
-      },
-      {
-        "id": "b9da835b62ca6d89ee7c4d123f92e94c",
-        "title": "日本机场试用人形机器人搬运行李，瞄准地勤用工缺口",
-        "chinese_title": "日本机场试用人形机器人搬运行李，瞄准地勤用工缺口",
-        "original_title": "Japanese Airport Trialing Humanoid Robots as Baggage Handlers",
-        "summary": "日本航空与GMO AI & Robotics在羽田机场启动人形机器人行李搬运试点，希望缓解地勤劳动力短缺，把通用机器人从展厅演示进一步推进到高强度机场作业场景。",
-        "rating": "A",
-        "score": 84,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "如果机场等复杂半开放场景开始验证人形机器人可用性，商业化焦点会从单机能力转向运维成本、安全规范与岗位替代节奏。也可延伸观察中日机器人供应链分工。",
-        "entities": [
-          "Gmo Ai & Robotics",
-          "Japan Airlines",
-          "Unitree",
-          "人形机器人",
-          "羽田机场"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/robots-and-machines/japan-trialing-humanoid-robots-baggage-handlers"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777658570,
-        "published_at": "2026-05-02T02:02:50.221565",
-        "source": "Futurism",
-        "url": "https://futurism.com/robots-and-machines/japan-trialing-humanoid-robots-baggage-handlers",
-        "event_id": null
-      },
-      {
-        "id": "96fdedb10dbdd4b07df259655ec31c80",
-        "title": "特朗普手机再现落地迹象，T1通过PTCRB认证",
-        "chinese_title": "特朗普手机再现落地迹象，T1通过PTCRB认证",
-        "original_title": "We just got a new reason to believe the Trump phone is real(ish)",
-        "summary": "长期悬而未决的Trump Mobile T1手机又迈进一步，设备已获得PTCRB认证，意味着其距离获得运营商网络兼容与正式上市所需的关键资质更近了一步。",
-        "rating": "B",
-        "score": 69,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "如果特朗普品牌手机最终上市，关注点不会只停留在硬件本身，还会牵动运营商合作、品牌政治化营销与美国本土制造叙事的真实兑现程度。",
-        "entities": [
-          "Ptcrb",
-          "T-Mobile",
-          "T1 Phone",
-          "Trump Mobile"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/gadgets/922180/trump-mobile-t1-phone-ptcrb-certification-t-mobile"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777658570,
-        "published_at": "2026-05-02T02:02:50.221661",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/gadgets/922180/trump-mobile-t1-phone-ptcrb-certification-t-mobile",
-        "event_id": null
-      },
-      {
-        "id": "0d1b95feb9350014904bb3487c538fdf",
-        "title": "五角大楼联手八家科技巨头，在机密网络推进AI作战体系",
-        "chinese_title": "五角大楼联手八家科技巨头，在机密网络推进AI作战体系",
-        "original_title": "Eight tech giants sign Pentagon deals to build an \"AI-first fighting force\" across classified networks",
-        "summary": "美国国防部与八家科技公司达成合作，要在机密军事网络部署AI能力，推动\"AI优先\"作战体系落地，而Anthropic因条款分歧和安全顾虑缺席名单，令军工AI格局再起变化。",
-        "rating": "B",
-        "score": 71,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这类军方多供应商布局，意味着政府采购正把大模型竞争推向国防基础设施层。后续可追踪供应商准入门槛、模型使用条款与AI军用治理争议的演变。",
-        "entities": [
-          "Ai",
-          "Anthropic",
-          "Pentagon",
-          "机密网络",
-          "美国国防部"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/eight-tech-giants-sign-pentagon-deals-to-build-an-ai-first-fighting-force-across-classified-networks/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777658570,
-        "published_at": "2026-05-02T02:02:50.221748",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/eight-tech-giants-sign-pentagon-deals-to-build-an-ai-first-fighting-force-across-classified-networks/",
-        "event_id": null
-      },
-      {
-        "id": "9024f476560d0c1dcd9ccde5e57f8cbf",
-        "title": "Uber四个月烧完整年AI预算，Claude Code成本失控",
-        "chinese_title": "Uber四个月烧完整年AI预算，Claude Code成本失控",
-        "original_title": "Uber Torches 2026 AI Budget on Claude Code in Four Months",
-        "summary": "Uber CTO披露，公司在四个月内就花光了2026年全年AI预算，主要支出流向Claude Code与Cursor，反映生成式编程工具在大厂内部的渗透速度和成本压力同时飙升。",
-        "rating": "S",
-        "score": 95,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "这类预算失控案例会把AI编程从效率神话拉回ROI审视，后续值得跟进大厂是否重谈采购模式、限制调用配额，或转向自研代理与混合部署来压低单位成本。",
-        "entities": [
-          "Ai编程工具",
-          "Claude",
-          "Cto",
-          "Cursor",
-          "Uber"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.briefs.co/news/uber-torches-entire-2026-ai-budget-on-claude-code-in-four-months/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777658570,
-        "published_at": "2026-05-02T02:02:50.221835",
-        "source": "Hacker News",
-        "url": "https://www.briefs.co/news/uber-torches-entire-2026-ai-budget-on-claude-code-in-four-months/",
-        "event_id": null
-      },
-      {
-        "id": "3cbe9c9250e2b4ba86a7fbabb46ba24c",
-        "title": "中国AI创业公司传弃用离岸架构，赴本土注册信号升温",
-        "chinese_title": "中国AI创业公司传弃用离岸架构，赴本土注册信号升温",
-        "original_title": "First Chinese AI startups are reportedly ditching offshore structures to register directly in China",
-        "summary": "在监管层释放更强本土化信号后，Moonshot AI、StepFun等中国AI创业公司据称正考虑拆除离岸控股架构，改为直接在中国注册，为后续融资与上市路径重新铺路。",
-        "rating": "A+",
-        "score": 87,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "若这一趋势扩大，中国AI公司的资本路径、外资进入方式和并购空间都可能被重塑。可进一步跟进VIE架构松动范围，以及对一级市场估值和退出预期的影响。",
-        "entities": [
-          "Manus",
-          "Meta",
-          "Moonshot",
-          "Stepfun",
-          "中国证监会"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER (manus)",
-            "url": "https://the-decoder.com/first-chinese-ai-startups-are-reportedly-ditching-offshore-structures-to-register-directly-in-china/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777658570,
-        "published_at": "2026-05-02T02:02:50.221920",
-        "source": "THE DECODER (manus)",
-        "url": "https://the-decoder.com/first-chinese-ai-startups-are-reportedly-ditching-offshore-structures-to-register-directly-in-china/",
-        "event_id": null
-      },
-      {
-        "id": "b791c8c3d1c6dc6bf5c55879a9b10cb2",
-        "title": "五角大楼签下英伟达微软AWS，机密网络AI部署加速",
-        "chinese_title": "五角大楼签下英伟达微软AWS，机密网络AI部署加速",
-        "original_title": "Pentagon inks deals with Nvidia, Microsoft, and AWS to deploy AI on classified networks",
-        "summary": "美国国防部与英伟达、微软和AWS等厂商签约，要把AI能力引入机密网络环境，并在与Anthropic的争议后进一步分散对单一模型供应商的依赖。",
-        "rating": "A",
-        "score": 81,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "政府客户正在把多模型、多云和安全合规一起纳入采购框架，这会推动AI厂商在机密部署、私有化推理和审计能力上展开新一轮竞争。",
-        "entities": [
-          "Anthropic",
-          "Aws",
-          "Microsoft",
-          "NVIDIA",
-          "Pentagon"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777658570,
-        "published_at": "2026-05-02T02:02:50.222005",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
-        "event_id": null
-      },
-      {
-        "id": "65054a1cd9909ca6c1cd759e88f44769",
-        "title": "五角大楼同时引入OpenAI谷歌微软等模型，避免单点锁定",
-        "chinese_title": "五角大楼同时引入OpenAI谷歌微软等模型，避免单点锁定",
-        "original_title": "The Pentagon announces AI deals with OpenAI, Google, Microsoft, Amazon, Nvidia, and more — LLMs to be deployed on classified Department of War networks ‘for lawful operational use’",
-        "summary": "美国国防部门宣布与OpenAI、Google、Microsoft、Amazon、Nvidia等多家AI厂商合作，将在机密网络中部署多种大模型，用于\"合法作战用途\"，强调避免被单一供应商锁定。",
-        "rating": "A",
-        "score": 82,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "多家模型并行进入军方网络，说明AI采购标准正从能力演示转向供应链韧性与治理可控性。可继续跟进谁真正获得核心入口，以及军用边界争议是否升级。",
-        "entities": [
-          "Amazon",
-          "Google",
-          "Microsoft",
-          "NVIDIA",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/the-pentagon-announces-ai-deals-with-openai-google-microsoft-amazon-nvidia-and-more-llms-to-be-deployed-on-classified-department-of-war-networks-for-lawful-operational-use"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777658570,
-        "published_at": "2026-05-02T02:02:50.222089",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/the-pentagon-announces-ai-deals-with-openai-google-microsoft-amazon-nvidia-and-more-llms-to-be-deployed-on-classified-department-of-war-networks-for-lawful-operational-use",
-        "event_id": null
-      },
-      {
-        "id": "04b63d0eefa8394e3c7a8333a46dd310",
-        "title": "隐身九年后首秀，ZaiNar押注替代GPS的厘米级定位",
-        "chinese_title": "隐身九年后首秀，ZaiNar押注替代GPS的厘米级定位",
-        "original_title": "Secretive ZaiNar Exits Shadows, Targets $5 Billion in Deals for GPS Alternative",
-        "summary": "神秘创业公司ZaiNar结束长期潜伏，公开展示其可在室内外实现厘米级定位的替代GPS技术，并瞄准规模达50亿美元的商业合作机会，试图切入定位基础设施新赛道。",
-        "rating": "A",
-        "score": 83,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "若ZaiNar方案可规模化落地，高精定位市场可能从消费导航转向工业、物流和国防等高价值场景，也会对传统GPS增强、UWB和室内定位方案形成冲击。",
-        "entities": [
-          "Daniel Jacker",
-          "Gps",
-          "Zainar",
-          "高精定位"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/secretive-zainar-exits-shadows-targets-5-billion-deals-gps-alternative"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777658570,
-        "published_at": "2026-05-02T02:02:50.222172",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/secretive-zainar-exits-shadows-targets-5-billion-deals-gps-alternative",
-        "event_id": null
-      },
-      {
-        "id": "690c8310bd5d9f526b6584065fe90719",
-        "title": "NEJM撤稿引爆学术警报，AI生成病灶图混入医学论文",
-        "chinese_title": "NEJM撤稿引爆学术警报，AI生成病灶图混入医学论文",
-        "original_title": "New England Journal of Medicine Retracts Paper Because Photo of Patient’s Insides Was Garbled by AI",
-        "summary": "《新英格兰医学杂志》因论文中患者体内图像被AI处理得失真而撤稿，再次暴露学术投稿中AI生成内容泛滥、审稿把关承压以及医学研究可信度受损的现实风险。",
-        "rating": "A",
-        "score": 86,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这一事件可能推动顶级期刊强化AI生成内容披露与图像取证规则，也会把科研机构和作者的使用边界、审稿流程与责任认定推到台前。",
-        "entities": [
-          "Ai生成内容",
-          "Nejm",
-          "医学论文",
-          "学术期刊"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/new-england-journal-of-medicine-retracts-paper-photo-ai"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1777658570,
-        "published_at": "2026-05-02T02:02:50.222265",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/new-england-journal-of-medicine-retracts-paper-photo-ai",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-09T01:22:27.983328",
-  "total_news": 693
+  "last_updated": "2026-05-09T03:40:10.393330",
+  "total_news": 691
 }
