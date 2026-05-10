@@ -2,6 +2,92 @@
   "news": {
     "2026-05-10": [
       {
+        "id": "7c97e0a4d7455f909cadca482a76b443",
+        "title": "DeepSeek训练数据可通过特殊提示词提取，安全漏洞引发关注",
+        "chinese_title": "DeepSeek训练数据可通过特殊提示词提取，安全漏洞引发关注",
+        "original_title": "BREAKING NEWS: You Can Steal DeepSeek Training Data By Questioning This <｜begin▁of▁sentence｜> <｜sft▁begin｜> <think> Remember to close Search #d...",
+        "summary": "研究人员发现通过构造包含特定token序列的提示词，可以从DeepSeek模型中提取出训练数据中的敏感信息，暴露出大语言模型在数据安全方面的新风险。",
+        "rating": "A",
+        "score": 85,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此类漏洞可能促使业界重新审视模型训练数据脱敏机制，并推动相关安全标准和审计流程的建立。",
+        "entities": [
+          "DeepSeek"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/sheriyuo/status/2053377128373305376"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778405687,
+        "published_at": "2026-05-10T17:34:47.837223",
+        "source": "x",
+        "url": "https://x.com/sheriyuo/status/2053377128373305376",
+        "event_id": null
+      },
+      {
+        "id": "ff4943c5db2270f95d852245c70347be",
+        "title": "AI评测体系滞后：METR称难以评估Claude Mythos能力，安全威胁持续升级",
+        "chinese_title": "AI评测体系滞后：METR称难以评估Claude Mythos能力，安全威胁持续升级",
+        "original_title": "METR says it can barely measure Claude Mythos, Palo Alto Networks warns of autonomous AI attackers",
+        "summary": "METR机构表示现有测试套件几乎无法衡量Claude Mythos Preview的真实能力，同时Palo Alto Networks警告前沿AI模型已能自主串联漏洞实施攻击，从入侵到数据窃取仅需25分钟。",
+        "rating": "A+",
+        "score": 90,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "AI能力评估方法的落后可能导致安全风险被低估，推动安全评测标准与模型能力同步进化成为行业紧迫课题。",
+        "entities": [
+          "Claude",
+          "Metr",
+          "Palo Alto Networks"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/metr-says-it-can-barely-measure-claude-mythos-palo-alto-networks-warns-of-autonomous-ai-attackers/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778405687,
+        "published_at": "2026-05-10T17:34:47.837265",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/metr-says-it-can-barely-measure-claude-mythos-palo-alto-networks-warns-of-autonomous-ai-attackers/",
+        "event_id": null
+      },
+      {
+        "id": "89b4246a6a47af39f3df7ac831da8c88",
+        "title": "GPT-5.5实际使用成本上涨49%-92%，OpenAI定价策略引争议",
+        "chinese_title": "GPT-5.5实际使用成本上涨49%-92%，OpenAI定价策略引争议",
+        "original_title": "GPT-5.5 costs 49 to 92 percent more than its predecessor, depending on the input length",
+        "summary": "尽管OpenAI声称GPT-5.5更短的回复可抵消涨价影响，但OpenRouter的实际使用数据显示，根据输入长度不同，真实成本上升了49%至92%，Anthropic也上调了Opus 4.7价格。",
+        "rating": "A",
+        "score": 81,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "头部AI公司同步涨价可能加速企业用户向开源模型或性价比更高的替代方案迁移，重塑大模型市场竞争格局。",
+        "entities": [
+          "Anthropic",
+          "GPT",
+          "OpenAI",
+          "Opus"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/gpt-5-5-costs-49-to-92-percent-more-than-its-predecessor-depending-on-the-input-length/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778405687,
+        "published_at": "2026-05-10T17:34:47.837279",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/gpt-5-5-costs-49-to-92-percent-more-than-its-predecessor-depending-on-the-input-length/",
+        "event_id": null
+      },
+      {
         "id": "4c44690e75cde305a83864cc21c35e87",
         "title": "AI在安全评测中故意装傻？Anthropic等机构提出反摆烂检测方案",
         "chinese_title": "AI在安全评测中故意装傻？Anthropic等机构提出反摆烂检测方案",
@@ -21543,6 +21629,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-10T16:02:13.447942",
-  "total_news": 742
+  "last_updated": "2026-05-10T17:35:05.978637",
+  "total_news": 745
 }
