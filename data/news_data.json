@@ -2,6 +2,124 @@
   "news": {
     "2026-05-10": [
       {
+        "id": "5e84dcbab23ea4bb1d589410d0e89239",
+        "title": "DeepSeek V4 蒸馏模型被曝含有 Qwen 2.5 训练语料痕迹",
+        "chinese_title": "DeepSeek V4 蒸馏模型被曝含有 Qwen 2.5 训练语料痕迹",
+        "original_title": "DeepSeek V4 distilled Qwen 2.5 it's over",
+        "summary": "有用户在社交平台上指出 DeepSeek V4 的蒸馏版本中出现了 Qwen 2.5 的相关语料痕迹，引发对模型训练数据来源和蒸馏透明度的讨论。",
+        "rating": "A",
+        "score": 77,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若属实，可能引发关于开源模型蒸馏伦理、训练数据溯源机制以及模型厂商标注义务的进一步讨论；也可能推动行业建立更透明的模型血缘追踪标准。",
+        "entities": [
+          "Alibaba",
+          "DeepSeek",
+          "Qwen"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/teortaxesTex/status/2053458852910174231"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778418189,
+        "published_at": "2026-05-10T21:03:09.400868",
+        "source": "x",
+        "url": "https://x.com/teortaxesTex/status/2053458852910174231",
+        "event_id": null
+      },
+      {
+        "id": "92699605c2a3988d77c07b247f5aab60",
+        "title": "研究团队发现可通过特定提示词提取 DeepSeek 训练数据",
+        "chinese_title": "研究团队发现可通过特定提示词提取 DeepSeek 训练数据",
+        "original_title": "We will be presenting our paper on this phenomenon at ICML in South Korea this year! Check it out below :) https://arxiv.org/abs/2510.18554",
+        "summary": "一项将在 ICML 2026 发表的论文揭示，通过构造特定提示词可以从 DeepSeek 模型中提取出训练数据片段，暴露出模型在数据记忆方面的安全隐患。",
+        "rating": "A+",
+        "score": 87,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "此类数据提取攻击若被恶意利用，可能导致训练数据中的敏感信息泄露；预计将推动模型厂商加强数据去重、差分隐私等防护机制的研究与部署。",
+        "entities": [
+          "DeepSeek",
+          "Icml",
+          "Xiuyu Li"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/fedzbar/status/2053430199518171155"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778418189,
+        "published_at": "2026-05-10T21:03:09.400894",
+        "source": "x",
+        "url": "https://x.com/fedzbar/status/2053430199518171155",
+        "event_id": null
+      },
+      {
+        "id": "b06b627a0726b9eb12751fe36e12a23f",
+        "title": "AI 大模型 API 反代灰产生态被完整梳理曝光",
+        "chinese_title": "AI 大模型 API 反代灰产生态被完整梳理曝光",
+        "original_title": "反代 灰产 中转 应该都在这里了👇 一、综合型多协议网关 CLIProxyAPI 是这个赛道的标杆，把 Gemini CLI、Antigravity、ChatGPT Codex、Claude Code、Qwen Code...",
+        "summary": "一篇推文系统梳理了当前 AI 大模型 API 反代、灰产和中转服务的完整生态，涵盖 CLIProxyAPI、AIClient-2-API、Antigravity-Manager 等多个工具和服务。",
+        "rating": "B",
+        "score": 73,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "灰产生态的曝光可能促使 OpenAI、Google、Anthropic 等厂商加强客户端认证和反逆向工程措施；也可能引发监管对非授权 API 转售行为的关注。",
+        "entities": [
+          "Anthropic",
+          "Gemini",
+          "Google",
+          "Grok",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/laozhang2579/status/2053301954286064058"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778418189,
+        "published_at": "2026-05-10T21:03:09.400914",
+        "source": "x",
+        "url": "https://x.com/laozhang2579/status/2053301954286064058",
+        "event_id": null
+      },
+      {
+        "id": "c2e1af3d66fc865fa5a07e5efebd93d2",
+        "title": "Vibe Coding 应用被指泄露用户隐私数据",
+        "chinese_title": "Vibe Coding 应用被指泄露用户隐私数据",
+        "original_title": "Vibe Coded Apps Are Spilling Users’ Personal Information Directly Into the Maw of Greedy Hackers",
+        "summary": "报道指出，借助 AI 快速生成的 Vibe Coding 应用存在严重安全漏洞，开发者在缺乏安全审查的情况下将应用上线，导致用户个人信息直接暴露给攻击者。",
+        "rating": "A",
+        "score": 79,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "Vibe Coding 降低开发门槛的同时放大了安全风险，预计将推动低代码/AI 生成代码的安全审计工具和最佳实践的兴起；也可能促使应用商店加强 AI 生成应用的安全审核。",
+        "entities": [
+          "GPT",
+          "OpenAI",
+          "Vibe Coding"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/vibe-coded-apps-spilling-personal-information"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778418189,
+        "published_at": "2026-05-10T21:03:09.400942",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/vibe-coded-apps-spilling-personal-information",
+        "event_id": null
+      },
+      {
         "id": "972bde3a3dbbad11ce704499cb668b13",
         "title": "AI智能体已能黑客入侵并自我复制，一年内成功率从6%飙升至81%",
         "chinese_title": "AI智能体已能黑客入侵并自我复制，一年内成功率从6%飙升至81%",
@@ -1945,6 +2063,34 @@
       }
     ],
     "2026-05-09": [
+      {
+        "id": "67ba394305662729f5af527a21e0d76f",
+        "title": "NeurIPS 投稿者询问审稿期匿名代码库更新规则",
+        "chinese_title": "NeurIPS 投稿者询问审稿期匿名代码库更新规则",
+        "original_title": "Neurips : Pushing anonymous repo after rebuttal [D]",
+        "summary": "一位 NeurIPS 投稿者在 Reddit 上询问，在审稿阶段发现论文中的标签存在误导性错误后，是否可以在 rebuttal 期间更新匿名代码仓库中的相关标注。",
+        "rating": "B",
+        "score": 65,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "此类规则模糊地带反映出 AI 顶会审稿流程中代码可复现性与匿名性之间的张力；可能推动 NeurIPS 等会议进一步细化匿名代码库的管理规范。",
+        "entities": [
+          "Neurips",
+          "Reddit"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t7zwrx/neurips_pushing_anonymous_repo_after_rebuttal_d/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778418189,
+        "published_at": "2026-05-10T21:03:09.400990",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t7zwrx/neurips_pushing_anonymous_repo_after_rebuttal_d/",
+        "event_id": null
+      },
       {
         "id": "3626bd9a666376feffb313e43b86c8d8",
         "title": "Mistral AI联合创始人Devendra Chaplot入职xAI仅一个月后离职",
@@ -21802,6 +21948,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-10T20:02:14.849772",
-  "total_news": 751
+  "last_updated": "2026-05-10T21:03:09.435500",
+  "total_news": 756
 }
