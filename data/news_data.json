@@ -2,6 +2,179 @@
   "news": {
     "2026-05-11": [
       {
+        "id": "c86720c8c7e1e1511778728bcc1e1d6c",
+        "title": "OpenAI推出部署公司业务，全面打通企业落地链路",
+        "chinese_title": "OpenAI推出部署公司业务，全面打通企业落地链路",
+        "original_title": "The OpenAI Deployment Company",
+        "summary": "OpenAI正式上线名为The Deployment Company的新业务板块，意在帮助企业客户将其模型更高效地部署到生产环境，标志着OpenAI从模型供应商进一步向交付与运营服务延伸。",
+        "rating": "A+",
+        "score": 89,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸到OpenAI与微软Azure关系的微妙变化，以及企业市场对Anthropic与Google的连锁竞争反应。",
+        "entities": [
+          "OpenAI",
+          "The Deployment Company"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://openai.com/index/openai-launches-the-deployment-company/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778511737,
+        "published_at": "2026-05-11T23:02:17.078370",
+        "source": "Hacker News",
+        "url": "https://openai.com/index/openai-launches-the-deployment-company/",
+        "event_id": null
+      },
+      {
+        "id": "caa071308286e88fed9e08ef333261b1",
+        "title": "Cerebras上调IPO定价区间至150-160美元，融资规模将达45亿美元",
+        "chinese_title": "Cerebras上调IPO定价区间至150-160美元，融资规模将达45亿美元",
+        "original_title": "Cerebras Raises Pricing Range Ahead of IPO",
+        "summary": "AI芯片设计公司Cerebras将IPO初步定价区间从115-125美元上调至150-160美元，按此计算可融资约45亿美元，反映投资者对其作为英伟达替代算力方案的强烈兴趣。",
+        "rating": "A+",
+        "score": 90,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延伸观察非英伟达AI芯片标的的资本热度回升，以及对Groq、SambaNova等同类公司估值的拉抬效应。",
+        "entities": [
+          "Cerebras",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/cerebras-raises-pricing-range-ahead-ipo"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778511737,
+        "published_at": "2026-05-11T23:02:17.078392",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/cerebras-raises-pricing-range-ahead-ipo",
+        "event_id": null
+      },
+      {
+        "id": "671627679932e7c7439eb7d997320e18",
+        "title": "OpenAI请Gimlet Labs适配Cerebras芯片，押注英伟达之外算力",
+        "chinese_title": "OpenAI请Gimlet Labs适配Cerebras芯片，押注英伟达之外算力",
+        "original_title": "The Startup Helping OpenAI Optimize Its AI For Cerebras Chips",
+        "summary": "为摆脱对英伟达的过度依赖，OpenAI已聘请初创公司Gimlet Labs，专门帮助其将模型代码适配Cerebras等多种AI服务器芯片，AI编译优化赛道再次受到关注。",
+        "rating": "A+",
+        "score": 91,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸到AI编译与算子优化作为新中间层的商业价值，以及对Modular、OctoML等同类公司的影响。",
+        "entities": [
+          "Cerebras",
+          "Gimlet Labs",
+          "Meta",
+          "NVIDIA",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/startup-helping-openai-optimize-ai-cerebras-chips"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778511737,
+        "published_at": "2026-05-11T23:02:17.078423",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/startup-helping-openai-optimize-ai-cerebras-chips",
+        "event_id": null
+      },
+      {
+        "id": "dc78ec11af8e5c58bb463711c26e5053",
+        "title": "用Swift训练大模型：矩阵乘法从Gflop/s跑到Tflop/s",
+        "chinese_title": "用Swift训练大模型：矩阵乘法从Gflop/s跑到Tflop/s",
+        "original_title": "Training an LLM in Swift, Part 1: Taking matrix mult from Gflop/s to Tflop/s",
+        "summary": "技术博客作者分享在Swift语言中实现大模型训练的第一篇笔记，通过逐步优化矩阵乘法核心，将性能从Gflop/s级提升到Tflop/s级，验证Swift在AI计算上的潜力。",
+        "rating": "B",
+        "score": 68,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸到苹果生态对AI训练栈的渗透，以及MLX、Core ML等苹果AI技术与CUDA的对比叙事。",
+        "entities": [
+          "Apple",
+          "LLM",
+          "Swift"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778511737,
+        "published_at": "2026-05-11T23:02:17.078435",
+        "source": "Hacker News",
+        "url": "https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html",
+        "event_id": null
+      },
+      {
+        "id": "78153f78ceea9ecabfb665bc809e0f68",
+        "title": "TikTok在英国上线无广告订阅，付费即停止数据用于广告",
+        "chinese_title": "TikTok在英国上线无广告订阅，付费即停止数据用于广告",
+        "original_title": "TikTok launches an ad-free subscription plan in the UK",
+        "summary": "TikTok在英国推出无广告订阅服务，订阅用户将不再看到广告，且其数据也不会被用于广告投放，标志着短视频平台开始探索订阅制变现路径。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸到欧美监管压力下平台付费免广告模式的扩散，以及对YouTube Premium和Meta订阅业务的竞争影响。",
+        "entities": [
+          "ByteDance"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/05/11/tiktok-launches-an-ad-free-subscription-plan-in-the-uk/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778511737,
+        "published_at": "2026-05-11T23:02:17.078445",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/11/tiktok-launches-an-ad-free-subscription-plan-in-the-uk/",
+        "event_id": null
+      },
+      {
+        "id": "e54227d451731c8feac940dc4455e718",
+        "title": "Robinhood联创新太空公司Cowboy Space拿2.75亿美元B轮，估值20亿",
+        "chinese_title": "Robinhood联创新太空公司Cowboy Space拿2.75亿美元B轮，估值20亿",
+        "original_title": "Cowboy Space, led by Robinhood co-founder Baiju Bhatt to build data centers in orbit, raised a $275M Series B led by Index Ventures at a $2B valuation (Bruce Einhorn/Bloomberg)",
+        "summary": "由Robinhood联合创始人Baiju Bhatt领导的太空创业公司Cowboy Space完成2.75亿美元B轮融资，由Index Ventures领投，估值达20亿美元，目标是在轨道上建设数据中心。",
+        "rating": "A",
+        "score": 76,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延伸观察太空数据中心赛道与AI算力需求的结合趋势，以及对Starcloud等同类企业的连锁估值效应。",
+        "entities": [
+          "Baiju Bhatt",
+          "Cowboy Space",
+          "Index Ventures",
+          "Robinhood"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260511/p23#a260511p23"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778511737,
+        "published_at": "2026-05-11T23:02:17.078459",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260511/p23#a260511p23",
+        "event_id": null
+      },
+      {
         "id": "c780f80e722bcb801fb055916daf98c3",
         "title": "OpenAI豪掷40亿美元成立部署公司，并购AI咨询商Tomoro",
         "chinese_title": "OpenAI豪掷40亿美元成立部署公司，并购AI咨询商Tomoro",
@@ -22636,6 +22809,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-11T22:03:28.799675",
-  "total_news": 779
+  "last_updated": "2026-05-11T23:02:57.174418",
+  "total_news": 785
 }
