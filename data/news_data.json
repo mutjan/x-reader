@@ -2,6 +2,64 @@
   "news": {
     "2026-05-11": [
       {
+        "id": "71259915668c09bb435c68db21e46ecb",
+        "title": "OpenAI Codex团队高调扩招，只招能解决不可能问题的人",
+        "chinese_title": "OpenAI Codex团队高调扩招，只招能解决不可能问题的人",
+        "original_title": "RT Tibo: We are Codex. We are legion. We do not miss. We do ship. Expect us. DM me if you have a track record of solving near impossible problems and ...",
+        "summary": "OpenAI Codex团队负责人发推宣布大规模招聘，涵盖研究、基础设施、智能体框架和产品四大方向，目前仅限旧金山本地。",
+        "rating": "A",
+        "score": 84,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "Codex作为AI编程标杆产品，团队扩张暗示产品路线加速，可能引发GitHub Copilot等竞品的军备竞赛，同时旧金山AI人才争夺将更激烈。",
+        "entities": [
+          "Codex",
+          "OpenAI",
+          "Romain Huet"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/romainhuet/status/2053718651539447929"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778483003,
+        "published_at": "2026-05-11T15:03:23.341516",
+        "source": "x",
+        "url": "https://x.com/romainhuet/status/2053718651539447929",
+        "event_id": null
+      },
+      {
+        "id": "fbcb018b29347c8391782228bf8f601d",
+        "title": "Katanemo开源Signals框架，无需LLM评判即可筛选智能体关键轨迹",
+        "chinese_title": "Katanemo开源Signals框架，无需LLM评判即可筛选智能体关键轨迹",
+        "original_title": "Signals: finding the most informative agent traces without LLM judges [R]",
+        "summary": "Katanemo Labs发布Signals研究，提出一种轻量级方法从智能体交互中提取结构化信号，帮助开发者快速定位最有价值的轨迹，无需额外LLM调用或人工审查。",
+        "rating": "A",
+        "score": 75,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "智能体可观测性是Agent工程的核心痛点，该方案若被验证有效，可能改变当前依赖LLM-as-a-judge的行业惯例。",
+        "entities": [
+          "Digitalocean",
+          "Katanemo Labs",
+          "Signals"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t9d3et/signals_finding_the_most_informative_agent_traces/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778483003,
+        "published_at": "2026-05-11T15:03:23.341586",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t9d3et/signals_finding_the_most_informative_agent_traces/",
+        "event_id": null
+      },
+      {
         "id": "b79d6431ea1035c608e1d3dfb4305251",
         "title": "OpenAI Codex团队公开招募：只招能攻克不可能任务的人",
         "chinese_title": "OpenAI Codex团队公开招募：只招能攻克不可能任务的人",
@@ -1054,6 +1112,94 @@
       }
     ],
     "2026-05-10": [
+      {
+        "id": "516d6c8796776fa7450ae8d842af922c",
+        "title": "华人研究者撑起AI研究半边天，中美两地贡献被重新审视",
+        "chinese_title": "华人研究者撑起AI研究半边天，中美两地贡献被重新审视",
+        "original_title": "AI research stands on the shoulders of: Chinese researchers in the US 🇺🇸 Chinese researchers in China 🇨🇳",
+        "summary": "一条推文引发对AI研究人才来源的讨论，指出在美华人研究者和在中国本土的研究者共同构成了AI领域的重要支撑力量。",
+        "rating": "B",
+        "score": 68,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "人才流动议题可能进一步影响中美AI政策走向，相关签证限制和学术合作趋势值得持续跟踪。",
+        "entities": [
+          "中国",
+          "华人研究者",
+          "美国"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Hesamation/status/2053611111941820488"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778483003,
+        "published_at": "2026-05-11T15:03:23.341541",
+        "source": "x",
+        "url": "https://x.com/Hesamation/status/2053611111941820488",
+        "event_id": null
+      },
+      {
+        "id": "daf89b524accea8cbed909a84499dc77",
+        "title": "Higgsfield推出AI病毒预测器，用fMRI数据预判视频爆款潜力",
+        "chinese_title": "Higgsfield推出AI病毒预测器，用fMRI数据预判视频爆款潜力",
+        "original_title": "Damn，刷到这个帖子我瞬间愣了，AI迭代速度已经疯了，有点跟不上节奏了🤯 我一开始以为这又是一个生成视频的新工具，点进去发现根本不是一回事。 Higgsfield昨...",
+        "summary": "Higgsfield发布Virality Predictor工具，基于700多人500小时fMRI脑成像数据训练，可预测短视频的神经反应和病毒传播潜力，并与Claude打通实现视频生成-预测-投放全链路自动化。",
+        "rating": "A",
+        "score": 82,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI+神经科学+内容营销的结合可能重塑短视频广告行业，降低投放试错成本，对TikTok、Meta广告业务有潜在冲击。",
+        "entities": [
+          "Claude",
+          "Fmri",
+          "Higgsfield",
+          "Virality Predictor"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/AYi_AInotes/status/2053525579618570627"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778483003,
+        "published_at": "2026-05-11T15:03:23.341560",
+        "source": "x",
+        "url": "https://x.com/AYi_AInotes/status/2053525579618570627",
+        "event_id": null
+      },
+      {
+        "id": "e34ba65924e99c827d4a3e024e3c8004",
+        "title": "LLM排名不是线性阶梯：小模型通过传递性推理可击败大模型",
+        "chinese_title": "LLM排名不是线性阶梯：小模型通过传递性推理可击败大模型",
+        "original_title": "LLM rankings are not a ladder: experimental results from a transitive benchmark graph [D]",
+        "summary": "开发者构建LLM Win网站，将基准测试结果转化为有向图，发现通过传递性推理链，小模型如LLaMA 2 7B在特定路径下可击败Claude Opus等顶级模型。",
+        "rating": "B",
+        "score": 74,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该发现挑战了简单的模型排名逻辑，对模型选型和多模型协作策略有启发意义。",
+        "entities": [
+          "Claude",
+          "Llama",
+          "Llm Win"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t8f61o/llm_rankings_are_not_a_ladder_experimental/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778483003,
+        "published_at": "2026-05-11T15:03:23.341608",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t8f61o/llm_rankings_are_not_a_ladder_experimental/",
+        "event_id": null
+      },
       {
         "id": "1fad2127005cf24f701905a7ecd072ee",
         "title": "苹果将为macOS 27做轻微重设计，修复Liquid Glass界面问题",
@@ -21728,6 +21874,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-11T14:04:11.995461",
-  "total_news": 748
+  "last_updated": "2026-05-11T15:04:13.305223",
+  "total_news": 753
 }
