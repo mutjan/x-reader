@@ -2,6 +2,35 @@
   "news": {
     "2026-05-11": [
       {
+        "id": "65abc253275121397b70a9300752d9fb",
+        "title": "Softmax函数溯源：从统计物理到神经网络分类头的关键演进",
+        "chinese_title": "Softmax函数溯源：从统计物理到神经网络分类头的关键演进",
+        "original_title": "Why softmax? This is great question and I explain it in the following way in my deep learning course: While there are historical uses of this exponent...",
+        "summary": "深度学习课程解析softmax函数的历史渊源，指出虽然指数形式源于Boltzmann和Gibbs等统计物理工作，但Bridle首次将其用于神经网络反向传播分类头。",
+        "rating": "A",
+        "score": 85,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "基础算法历史梳理有助于理解现代深度学习框架设计选择，对教育和算法改进有参考价值。",
+        "entities": [
+          "Bridle",
+          "Hinton",
+          "Softmax"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/deliprao/status/2053704810403131416"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778498201,
+        "published_at": "2026-05-11T19:16:41.612357",
+        "source": "x",
+        "url": "https://x.com/deliprao/status/2053704810403131416",
+        "event_id": null
+      },
+      {
         "id": "71259915668c09bb435c68db21e46ecb",
         "title": "OpenAI Codex团队高调扩招，只招能解决不可能问题的人",
         "chinese_title": "OpenAI Codex团队高调扩招，只招能解决不可能问题的人",
@@ -57,6 +86,94 @@
         "published_at": "2026-05-11T15:03:23.341586",
         "source": "Machine Learning",
         "url": "https://www.reddit.com/r/MachineLearning/comments/1t9d3et/signals_finding_the_most_informative_agent_traces/",
+        "event_id": null
+      },
+      {
+        "id": "516d6c8796776fa7450ae8d842af922c",
+        "title": "华人研究者撑起AI研究半边天，中美两地贡献被重新审视",
+        "chinese_title": "华人研究者撑起AI研究半边天，中美两地贡献被重新审视",
+        "original_title": "AI research stands on the shoulders of: Chinese researchers in the US 🇺🇸 Chinese researchers in China 🇨🇳",
+        "summary": "一条推文引发对AI研究人才来源的讨论，指出在美华人研究者和在中国本土的研究者共同构成了AI领域的重要支撑力量。",
+        "rating": "B",
+        "score": 68,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "人才流动议题可能进一步影响中美AI政策走向，相关签证限制和学术合作趋势值得持续跟踪。",
+        "entities": [
+          "中国",
+          "华人研究者",
+          "美国"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Hesamation/status/2053611111941820488"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778483003,
+        "published_at": "2026-05-11T15:03:23.341541",
+        "source": "x",
+        "url": "https://x.com/Hesamation/status/2053611111941820488",
+        "event_id": null
+      },
+      {
+        "id": "daf89b524accea8cbed909a84499dc77",
+        "title": "Higgsfield推出AI病毒预测器，用fMRI数据预判视频爆款潜力",
+        "chinese_title": "Higgsfield推出AI病毒预测器，用fMRI数据预判视频爆款潜力",
+        "original_title": "Damn，刷到这个帖子我瞬间愣了，AI迭代速度已经疯了，有点跟不上节奏了🤯 我一开始以为这又是一个生成视频的新工具，点进去发现根本不是一回事。 Higgsfield昨...",
+        "summary": "Higgsfield发布Virality Predictor工具，基于700多人500小时fMRI脑成像数据训练，可预测短视频的神经反应和病毒传播潜力，并与Claude打通实现视频生成-预测-投放全链路自动化。",
+        "rating": "A",
+        "score": 82,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI+神经科学+内容营销的结合可能重塑短视频广告行业，降低投放试错成本，对TikTok、Meta广告业务有潜在冲击。",
+        "entities": [
+          "Claude",
+          "Fmri",
+          "Higgsfield",
+          "Virality Predictor"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/AYi_AInotes/status/2053525579618570627"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778483003,
+        "published_at": "2026-05-11T15:03:23.341560",
+        "source": "x",
+        "url": "https://x.com/AYi_AInotes/status/2053525579618570627",
+        "event_id": null
+      },
+      {
+        "id": "e34ba65924e99c827d4a3e024e3c8004",
+        "title": "LLM排名不是线性阶梯：小模型通过传递性推理可击败大模型",
+        "chinese_title": "LLM排名不是线性阶梯：小模型通过传递性推理可击败大模型",
+        "original_title": "LLM rankings are not a ladder: experimental results from a transitive benchmark graph [D]",
+        "summary": "开发者构建LLM Win网站，将基准测试结果转化为有向图，发现通过传递性推理链，小模型如LLaMA 2 7B在特定路径下可击败Claude Opus等顶级模型。",
+        "rating": "B",
+        "score": 74,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该发现挑战了简单的模型排名逻辑，对模型选型和多模型协作策略有启发意义。",
+        "entities": [
+          "Claude",
+          "Llama",
+          "Llm Win"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1t8f61o/llm_rankings_are_not_a_ladder_experimental/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778483003,
+        "published_at": "2026-05-11T15:03:23.341608",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1t8f61o/llm_rankings_are_not_a_ladder_experimental/",
         "event_id": null
       },
       {
@@ -1112,94 +1229,6 @@
       }
     ],
     "2026-05-10": [
-      {
-        "id": "516d6c8796776fa7450ae8d842af922c",
-        "title": "华人研究者撑起AI研究半边天，中美两地贡献被重新审视",
-        "chinese_title": "华人研究者撑起AI研究半边天，中美两地贡献被重新审视",
-        "original_title": "AI research stands on the shoulders of: Chinese researchers in the US 🇺🇸 Chinese researchers in China 🇨🇳",
-        "summary": "一条推文引发对AI研究人才来源的讨论，指出在美华人研究者和在中国本土的研究者共同构成了AI领域的重要支撑力量。",
-        "rating": "B",
-        "score": 68,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "人才流动议题可能进一步影响中美AI政策走向，相关签证限制和学术合作趋势值得持续跟踪。",
-        "entities": [
-          "中国",
-          "华人研究者",
-          "美国"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Hesamation/status/2053611111941820488"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778483003,
-        "published_at": "2026-05-11T15:03:23.341541",
-        "source": "x",
-        "url": "https://x.com/Hesamation/status/2053611111941820488",
-        "event_id": null
-      },
-      {
-        "id": "daf89b524accea8cbed909a84499dc77",
-        "title": "Higgsfield推出AI病毒预测器，用fMRI数据预判视频爆款潜力",
-        "chinese_title": "Higgsfield推出AI病毒预测器，用fMRI数据预判视频爆款潜力",
-        "original_title": "Damn，刷到这个帖子我瞬间愣了，AI迭代速度已经疯了，有点跟不上节奏了🤯 我一开始以为这又是一个生成视频的新工具，点进去发现根本不是一回事。 Higgsfield昨...",
-        "summary": "Higgsfield发布Virality Predictor工具，基于700多人500小时fMRI脑成像数据训练，可预测短视频的神经反应和病毒传播潜力，并与Claude打通实现视频生成-预测-投放全链路自动化。",
-        "rating": "A",
-        "score": 82,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "AI+神经科学+内容营销的结合可能重塑短视频广告行业，降低投放试错成本，对TikTok、Meta广告业务有潜在冲击。",
-        "entities": [
-          "Claude",
-          "Fmri",
-          "Higgsfield",
-          "Virality Predictor"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/AYi_AInotes/status/2053525579618570627"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778483003,
-        "published_at": "2026-05-11T15:03:23.341560",
-        "source": "x",
-        "url": "https://x.com/AYi_AInotes/status/2053525579618570627",
-        "event_id": null
-      },
-      {
-        "id": "e34ba65924e99c827d4a3e024e3c8004",
-        "title": "LLM排名不是线性阶梯：小模型通过传递性推理可击败大模型",
-        "chinese_title": "LLM排名不是线性阶梯：小模型通过传递性推理可击败大模型",
-        "original_title": "LLM rankings are not a ladder: experimental results from a transitive benchmark graph [D]",
-        "summary": "开发者构建LLM Win网站，将基准测试结果转化为有向图，发现通过传递性推理链，小模型如LLaMA 2 7B在特定路径下可击败Claude Opus等顶级模型。",
-        "rating": "B",
-        "score": 74,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "该发现挑战了简单的模型排名逻辑，对模型选型和多模型协作策略有启发意义。",
-        "entities": [
-          "Claude",
-          "Llama",
-          "Llm Win"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1t8f61o/llm_rankings_are_not_a_ladder_experimental/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778483003,
-        "published_at": "2026-05-11T15:03:23.341608",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1t8f61o/llm_rankings_are_not_a_ladder_experimental/",
-        "event_id": null
-      },
       {
         "id": "1fad2127005cf24f701905a7ecd072ee",
         "title": "苹果将为macOS 27做轻微重设计，修复Liquid Glass界面问题",
@@ -21874,6 +21903,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-11T15:04:13.305223",
-  "total_news": 753
+  "last_updated": "2026-05-11T19:16:41.637858",
+  "total_news": 754
 }
