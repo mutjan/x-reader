@@ -28,7 +28,10 @@
         "published_at": "2026-05-11T19:16:41.612357",
         "source": "x",
         "url": "https://x.com/deliprao/status/2053704810403131416",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Why softmax? This is great question and I explain it in the following way in my deep learning course: While there are historical uses of this exponential form (Boltzmann, Gibbs, Jaynes, Luce &amp; McFadden), its use in neural networks with backprop was first by Bridle*. He essentially closed how to solve the classification head question in neural networks. (Hinton’s Boltzmann machine paper did not use backprop and he didn’t refer to this function as softmax). We also have Bridle responsible for gifting us the term “softmax” (although in reality it is softargmax). After Bridle, softmax became defacto standard for classification heads, because Chris Bishop popularized it in his textbook drawing connections to GLMs. Now as to the question why softmax and not anything else: It’s not because there is a legacy lock in effect that we continue to use softmax. There are technical reasons: - softmax was *derived* (not arbitrarily picked) from information theory (maximum entropy principle) so it has well motivated theoretical foundations - derivatives of exp were easy to compute (this was especially important in the era before autodiff when gradient functions were hand computed) - it’s strictly positive everywhere, which means every class will receive a non-zero gradient. - it is C^∞ smooth making it gradient descent friendly so it continues getting used - translation invariant, clean logprob function - cross entropy loss along with softmax produces a simple gradient form of type (a-b). So no exponentials to compute and no exploding gradients - same with jacobians - all this made softmax sticky even before the hardware appeared to support it Overall, the community stumbled on a gem, quickly realized its value, and locked in. That’s why softmax is everywhere. *Bridle paper which many do not know about: https://link.springer.com/chapter/10.1007/978-3-642-76153-9_28 levi: Day 125/365 of GPU Programming One thing I'm still struggling to understand is why softmax? What is it about the softmax function that made it survive/thrive for this long? What is it about exp() compared to another positive, monotonic, differentiable function that is so sticky?",
+        "grade": "A",
+        "extension": "基础算法历史梳理有助于理解现代深度学习框架设计选择，对教育和算法改进有参考价值。"
       },
       {
         "id": "71259915668c09bb435c68db21e46ecb",
@@ -21903,6 +21906,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-11T19:16:41.637858",
+  "last_updated": "2026-05-11T19:17:43.676571",
   "total_news": 754
 }
