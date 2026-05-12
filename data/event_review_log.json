@@ -224,6 +224,19 @@
           "reason": "这条新闻核心是OpenAI对现实暴力风险的上报与平台干预机制，已有同组新闻是ChatGPT广告追踪和隐私归因链路，两者都涉及OpenAI但事件边界不同，应拆成独立事件组。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-05-13T06:29:51.347385",
+      "batch_id": "20260513062951",
+      "corrections_applied": 1,
+      "details": [
+        {
+          "news_id": "3085eb28f91e75529978594bf4504ed8",
+          "from_event_id": "60d9af99",
+          "to_event_id": "new_event",
+          "reason": "该新闻是关于GPT-5.5 Codex思维链泄露的技术安全问题，与60d9af99事件组（FSU枪击案诉状指控ChatGPT）完全无关。应创建独立的新事件组。"
+        }
+      ]
     }
   ]
 }
