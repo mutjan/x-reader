@@ -2,6 +2,65 @@
   "news": {
     "2026-05-12": [
       {
+        "id": "6d03cb5a211b2e0bb4a992b1d4f237ce",
+        "title": "Claude被曝\\\"幻觉式造轮子\\\"，本该一行import却写了3000行重复代码",
+        "chinese_title": "Claude被曝\\\"幻觉式造轮子\\\"，本该一行import却写了3000行重复代码",
+        "original_title": "Fake building: Claude wrote 3k lines instead of import pywikibot",
+        "summary": "一位开发者在使用Claude完成涉及pywikibot库的任务时发现，模型并未直接import该现成库，而是凭空生成了3000行自实现代码来模拟其功能。该案例被Hacker News热议，被视为AI编程助手在工具识别和上下文判断上的典型失败。",
+        "rating": "A",
+        "score": 80,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸讨论AI编程助手的可靠性边界，以及Cursor、Claude Code等工具在企业落地时的代码审查与防御策略；也可关注Anthropic对Agent能力的下一步迭代方向。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Pywikibot"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://fireflysentinel.github.io/posts/fake-building-claude-3000-lines/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778554901,
+        "published_at": "2026-05-12T11:01:41.248690",
+        "source": "Hacker News",
+        "url": "https://fireflysentinel.github.io/posts/fake-building-claude-3000-lines/",
+        "event_id": null
+      },
+      {
+        "id": "26195ae35fb4afb4490aa8dd379a30b6",
+        "title": "Anthropic推出AWS版Claude企业平台，与亚马逊云捆绑再加码",
+        "chinese_title": "Anthropic推出AWS版Claude企业平台，与亚马逊云捆绑再加码",
+        "original_title": "Claude Platform on AWS",
+        "summary": "Anthropic宣布Claude企业平台正式上线AWS，企业客户可通过AWS直接部署和管理基于Claude的Agent与应用。此举进一步强化了Anthropic与亚马逊的战略合作，也让Claude在企业市场对OpenAI和Google形成更直接的竞争。",
+        "rating": "A+",
+        "score": 89,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸观察三大云厂商AI模型分发格局（AWS-Anthropic、Azure-OpenAI、GCP-Gemini）的竞争演化，以及对国内云厂商承接海外模型平台的镜像参考。",
+        "entities": [
+          "Amazon",
+          "Anthropic",
+          "Aws",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://claude.com/blog/claude-platform-on-aws"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778554901,
+        "published_at": "2026-05-12T11:01:41.248715",
+        "source": "Hacker News",
+        "url": "https://claude.com/blog/claude-platform-on-aws",
+        "event_id": null
+      },
+      {
         "id": "ea0a2de72d26ae87e4883596b8b559da",
         "title": "OpenAI付微软上限砍至380亿，原定2030年最高1350亿",
         "chinese_title": "OpenAI付微软上限砍至380亿，原定2030年最高1350亿",
@@ -21053,6 +21112,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-12T10:02:38.692220",
-  "total_news": 725
+  "last_updated": "2026-05-12T11:02:22.860365",
+  "total_news": 727
 }
