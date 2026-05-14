@@ -2,6 +2,65 @@
   "news": {
     "2026-05-14": [
       {
+        "id": "d9645b863f7e37bd61ac9a1226c0ab1f",
+        "title": "中国五大开源模型同日发布，vLLM实现day-0适配",
+        "chinese_title": "中国五大开源模型同日发布，vLLM实现day-0适配",
+        "original_title": "Open source brings us together🔥 All 5 model drops Matt mentions — Kimi K2.6, Qwen 3.6, MiMo V2.5, Ling-2.6, DeepSeek V4 — shipped with day-0 vLLM...",
+        "summary": "Kimi K2.6、Qwen 3.6、MiMo V2.5、Ling-2.6、DeepSeek V4五大中国开源模型在一周内密集发布，且均实现了与vLLM推理框架的day-0适配，反映出中国AI开源生态与全球基础设施的深度融合趋势。",
+        "rating": "A+",
+        "score": 87,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "中国开源模型密集发布→vLLM生态地位进一步巩固→中美开源模型竞争格局变化→国产推理框架是否跟进",
+        "entities": [
+          "DeepSeek",
+          "Kimi",
+          "Mimo",
+          "Qwen",
+          "Vllm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/KaichaoYou/status/2054837545427726397"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778749737,
+        "published_at": "2026-05-14T17:08:57.345716",
+        "source": "x",
+        "url": "https://x.com/KaichaoYou/status/2054837545427726397",
+        "event_id": null
+      },
+      {
+        "id": "3a9e9f84852db7a62799dba7e5cbdba2",
+        "title": "法律科技独角兽Clio年经常性收入突破5亿美元，AI工具成增长引擎",
+        "chinese_title": "法律科技独角兽Clio年经常性收入突破5亿美元，AI工具成增长引擎",
+        "original_title": "Canadian legaltech company Clio says its ARR has reached $500M, citing demand for its AI tools; Clio had a $5B valuation after a $500M Series G in November 2025 (Marina Temkin/TechCrunch)",
+        "summary": "加拿大法律科技公司Clio宣布其ARR达到5亿美元，AI工具需求是主要增长驱动力。该公司在2025年11月完成5亿美元G轮融资后估值已达50亿美元，成为法律科技领域估值最高的公司之一。",
+        "rating": "B",
+        "score": 67,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "法律科技赛道高估值→AI在法律垂直行业的商业化路径→国内法律科技市场机会→SaaS+AI模式验证",
+        "entities": [
+          "Clio",
+          "Techcrunch"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260514/p6#a260514p6"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778749737,
+        "published_at": "2026-05-14T17:08:57.345770",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260514/p6#a260514p6",
+        "event_id": null
+      },
+      {
         "id": "aafe276a1521d34f613e9040c0097660",
         "title": "Anthropic 将 Claude 订阅与 API 用量分离，程序化调用改按全价计费",
         "chinese_title": "Anthropic 将 Claude 订阅与 API 用量分离，程序化调用改按全价计费",
@@ -4127,6 +4186,66 @@
       }
     ],
     "2026-05-13": [
+      {
+        "id": "f1ccc67c62526add9ad570f1eb44a923",
+        "title": "MLX CUDA后端测试全部通过，苹果机器学习框架跨平台迈出关键一步",
+        "chinese_title": "MLX CUDA后端测试全部通过，苹果机器学习框架跨平台迈出关键一步",
+        "original_title": "RT Cheng: We have achieved a milestone in MLX that all tests are passing in CUDA backend now.",
+        "summary": "苹果开源机器学习框架MLX的CUDA后端实现所有测试通过，意味着MLX从Apple Silicon专属向NVIDIA GPU生态扩展取得实质性进展，对跨平台AI开发具有积极意义。",
+        "rating": "B",
+        "score": 71,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "MLX支持CUDA→降低苹果生态AI开发门槛→与PyTorch/TensorFlow竞争格局变化→对M系列芯片生态的影响",
+        "entities": [
+          "Apple",
+          "CUDA",
+          "Mlx",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/teortaxesTex/status/2054703581895221757"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778749737,
+        "published_at": "2026-05-14T17:08:57.345740",
+        "source": "x",
+        "url": "https://x.com/teortaxesTex/status/2054703581895221757",
+        "event_id": null
+      },
+      {
+        "id": "d67f1cb2c6d5f489c8ec01c36add63dc",
+        "title": "DSPy RLM+GEPA构建自进化数据智能体，752次迭代攻克复杂SQL",
+        "chinese_title": "DSPy RLM+GEPA构建自进化数据智能体，752次迭代攻克复杂SQL",
+        "original_title": "Built a self-improving data agent over a 275-table MySQL DB using DSPy RLM + GEPA. No schema dumping, After 752 rollouts it answers complex multi-hop ...",
+        "summary": "开发者基于DSPy RLM和GEPA框架，在不导出数据库schema的情况下，通过752次迭代训练出一个能够直接回答复杂多跳SQL查询的自进化数据智能体，展示了AI在数据库交互领域的最新实践成果。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "自进化数据智能体→企业数据库查询自动化→对BI工具和数据分析师工作方式的潜在影响→DSPy生态发展",
+        "entities": [
+          "Dspy",
+          "Gepa",
+          "Mysql",
+          "Rlm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/happened_7/status/2054638673623478504"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778749737,
+        "published_at": "2026-05-14T17:08:57.345757",
+        "source": "x",
+        "url": "https://x.com/happened_7/status/2054638673623478504",
+        "event_id": null
+      },
       {
         "id": "6dd48bd7c6afe2a5fbed4048b9b0f38f",
         "title": "AI设计抗生素入选六大抗菌耐药突破，免疫疗法亦有进展",
@@ -24287,6 +24406,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-14T16:02:43.802781",
-  "total_news": 835
+  "last_updated": "2026-05-14T17:08:57.373761",
+  "total_news": 839
 }
