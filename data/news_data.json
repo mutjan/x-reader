@@ -2,6 +2,183 @@
   "news": {
     "2026-05-15": [
       {
+        "id": "a635f42eca07f565e417d46bf2740ee4",
+        "title": "CMU与博世新研究：触觉做梦让人形机器人灵巧操作成功率提升90.9%",
+        "chinese_title": "CMU与博世新研究：触觉做梦让人形机器人灵巧操作成功率提升90.9%",
+        "original_title": "'Touch dreaming' helps humanoid robots handle five tricky tasks with 90.9% higher success",
+        "summary": "卡内基梅隆大学与博世AI中心提出HTD模型，让人形机器人通过触觉信号在脑中模拟接触场景，在五项接触密集任务中成功率比原方法提升90.9%。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到人形机器人产业链热点，关联Figure、特斯拉Optimus、宇树等公司的触觉感知方案竞赛。",
+        "entities": [
+          "Bosch",
+          "Cmu",
+          "Htd",
+          "人形机器人"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1tdm7v6/touch_dreaming_helps_humanoid_robots_handle_five/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778832202,
+        "published_at": "2026-05-15T16:03:22.338139",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1tdm7v6/touch_dreaming_helps_humanoid_robots_handle_five/",
+        "event_id": null
+      },
+      {
+        "id": "85bf0d7a6b504c27638b406de3d1eea9",
+        "title": "为什么自博弈能让AI围棋超人类却卡住了LLM？研究者找到关键解法",
+        "chinese_title": "为什么自博弈能让AI围棋超人类却卡住了LLM？研究者找到关键解法",
+        "original_title": "Self-play helped AI achieve superhuman performance in Go, so why hasn’t it done the same for LLMs? Researchers have found a solution.",
+        "summary": "研究者指出现有LLM自博弈方法在长训练中因Conjecturer奖励黑客而崩溃，新论文提出机制让Conjecturer与Solver持续共同进步，突破学习平台期。",
+        "rating": "A",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "对大模型后训练范式有方法论意义，可关联RLHF、RLVR、AlphaZero式范式应用于推理模型的可能路径。",
+        "entities": [
+          "Conjecturer",
+          "LLM",
+          "Self-Play",
+          "Solver"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1tdm02f/selfplay_helped_ai_achieve_superhuman_performance/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778832202,
+        "published_at": "2026-05-15T16:03:22.338156",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1tdm02f/selfplay_helped_ai_achieve_superhuman_performance/",
+        "event_id": null
+      },
+      {
+        "id": "9302b4b8220bd9de4ae388bcec2c1277",
+        "title": "AutoTTS框架问世：让大模型自己探索测试时计算策略，告别手工调参",
+        "chinese_title": "AutoTTS框架问世：让大模型自己探索测试时计算策略，告别手工调参",
+        "original_title": "LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling",
+        "summary": "新论文提出环境驱动的AutoTTS框架，让LLM自主探索测试时计算的分配策略，告别研究员手工设计推理模式与启发式调参，大幅扩大探索空间。",
+        "rating": "A",
+        "score": 77,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到推理模型成本优化方向，关联o1、DeepSeek-R1等推理范式与Agent自动化研究趋势。",
+        "entities": [
+          "Autotts",
+          "LLM",
+          "Test-Time Scaling"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1tdlwp6/llms_improving_llms_agentic_discovery_for/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778832202,
+        "published_at": "2026-05-15T16:03:22.338169",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1tdlwp6/llms_improving_llms_agentic_discovery_for/",
+        "event_id": null
+      },
+      {
+        "id": "8a05243220a5848170aa79b8aacb77a4",
+        "title": "Poetiq自优化框架登顶SOTA：用Gemini 3 Flash反超Opus 4.7编程能力",
+        "chinese_title": "Poetiq自优化框架登顶SOTA：用Gemini 3 Flash反超Opus 4.7编程能力",
+        "original_title": "New SOTA: Poetiq uses self-optimizing harness to surpass e.g. Opus 4.7 with Gemini 3 Flash",
+        "summary": "Poetiq团队宣布通过递归自我改进的优化框架，让较小的Gemini 3 Flash在编程基准上超越Opus 4.7刷新SOTA，再次引发对Scaffolding路线的讨论。",
+        "rating": "S",
+        "score": 94,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "对模型评测体系和Scaffolding路线意义重大，可延伸到Anthropic、Google两强博弈以及小模型+强Agent的成本优势。",
+        "entities": [
+          "Claude",
+          "Gemini",
+          "Poetiq"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (Gemini)",
+            "url": "https://www.reddit.com/r/singularity/comments/1tdgnux/new_sota_poetiq_uses_selfoptimizing_harness_to/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778832202,
+        "published_at": "2026-05-15T16:03:22.338183",
+        "source": "Technological Singularity (Gemini)",
+        "url": "https://www.reddit.com/r/singularity/comments/1tdgnux/new_sota_poetiq_uses_selfoptimizing_harness_to/",
+        "event_id": null
+      },
+      {
+        "id": "6b54166ba94094995467b9ada7565824",
+        "title": "Poetiq公布递归自我改进研究：模型可自动迭代提升编码SOTA",
+        "chinese_title": "Poetiq公布递归自我改进研究：模型可自动迭代提升编码SOTA",
+        "original_title": "Poetiq: Recursive Self-Improvement Delivers New SOTA Coding Performance",
+        "summary": "Poetiq团队发布博客介绍其递归自我改进系统，称已在多项编程基准上取得SOTA成绩，提供了一种通过自动化迭代提升模型能力的新路径。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到自我改进AI、Agent递归优化领域的整体进展，关联到OpenAI、DeepMind在自动化AI研发上的布局。",
+        "entities": [
+          "Coding Benchmark",
+          "Poetiq",
+          "Recursive Self-Improvement"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1tdft9u/poetiq_recursive_selfimprovement_delivers_new/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778832202,
+        "published_at": "2026-05-15T16:03:22.338195",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1tdft9u/poetiq_recursive_selfimprovement_delivers_new/",
+        "event_id": null
+      },
+      {
+        "id": "cc3aeeb0806628a68c785505387f0ada",
+        "title": "全球首个Apple M5内核漏洞利用诞生：借助Mythos Preview仅5天完成",
+        "chinese_title": "全球首个Apple M5内核漏洞利用诞生：借助Mythos Preview仅5天完成",
+        "original_title": "The first public macOS kernel memory corruption exploit on Apple M5 was built with Mythos Preview's help, and it only took 5 days.",
+        "summary": "研究者借助AI辅助工具Mythos Preview，仅用5天就构造出针对Apple M5芯片的首个公开macOS内核内存破坏利用，再次展示AI对漏洞挖掘效率的颠覆。",
+        "rating": "A",
+        "score": 80,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸到AI辅助安全研究的双刃剑议题，关联苹果安全生态、零日漏洞市场与AI攻防对抗趋势。",
+        "entities": [
+          "Apple",
+          "M5",
+          "Macos",
+          "Mythos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (apple)",
+            "url": "https://www.reddit.com/r/singularity/comments/1td97gj/the_first_public_macos_kernel_memory_corruption/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778832202,
+        "published_at": "2026-05-15T16:03:22.338208",
+        "source": "Technological Singularity (apple)",
+        "url": "https://www.reddit.com/r/singularity/comments/1td97gj/the_first_public_macos_kernel_memory_corruption/",
+        "event_id": null
+      },
+      {
         "id": "2f89b48a655e08562f5f9644eb3fc203",
         "title": "Coldkey开源：纸质备份的后量子时代密钥生成工具",
         "chinese_title": "Coldkey开源：纸质备份的后量子时代密钥生成工具",
@@ -29,6 +206,35 @@
         "published_at": "2026-05-15T15:01:38.579723",
         "source": "Hacker News",
         "url": "https://github.com/pike00/coldkey",
+        "event_id": null
+      },
+      {
+        "id": "f8fef2b72252ce2d71e5d9c85c90a1aa",
+        "title": "机器学习论文审稿门槛15年飙升：2000年的顶会论文今天会被拒稿吗",
+        "chinese_title": "机器学习论文审稿门槛15年飙升：2000年的顶会论文今天会被拒稿吗",
+        "original_title": "Would a 2000-2021 ML paper even get accepted today? [D]",
+        "summary": "Reddit机器学习社区热议，随着领域成熟，早期顶会论文在实验设计、基线对比和消融分析等方面的标准已远低于当下，引发对学术评价标准演变的讨论。",
+        "rating": "B",
+        "score": 68,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可延伸报道顶会录取率变化、AI学术内卷现象、以及中国学者在论文数量与质量上的结构性变化。",
+        "entities": [
+          "Machine Learning",
+          "Reddit",
+          "学术评审"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tcvk8s/would_a_20002021_ml_paper_even_get_accepted_today/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778828498,
+        "published_at": "2026-05-15T15:01:38.579698",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tcvk8s/would_a_20002021_ml_paper_even_get_accepted_today/",
         "event_id": null
       },
       {
@@ -532,35 +738,6 @@
       }
     ],
     "2026-05-14": [
-      {
-        "id": "f8fef2b72252ce2d71e5d9c85c90a1aa",
-        "title": "机器学习论文审稿门槛15年飙升：2000年的顶会论文今天会被拒稿吗",
-        "chinese_title": "机器学习论文审稿门槛15年飙升：2000年的顶会论文今天会被拒稿吗",
-        "original_title": "Would a 2000-2021 ML paper even get accepted today? [D]",
-        "summary": "Reddit机器学习社区热议，随着领域成熟，早期顶会论文在实验设计、基线对比和消融分析等方面的标准已远低于当下，引发对学术评价标准演变的讨论。",
-        "rating": "B",
-        "score": 68,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可延伸报道顶会录取率变化、AI学术内卷现象、以及中国学者在论文数量与质量上的结构性变化。",
-        "entities": [
-          "Machine Learning",
-          "Reddit",
-          "学术评审"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tcvk8s/would_a_20002021_ml_paper_even_get_accepted_today/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778828498,
-        "published_at": "2026-05-15T15:01:38.579698",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tcvk8s/would_a_20002021_ml_paper_even_get_accepted_today/",
-        "event_id": null
-      },
       {
         "id": "7d6a8aceb7fd976147874b8f9d47f696",
         "title": "AMD服务器CPU营收份额突破46%，英特尔仍守住消费PC七成市场",
@@ -20985,6 +21162,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-15T15:01:54.821576",
-  "total_news": 721
+  "last_updated": "2026-05-15T16:04:05.765126",
+  "total_news": 727
 }
