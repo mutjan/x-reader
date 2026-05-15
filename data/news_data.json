@@ -2,6 +2,152 @@
   "news": {
     "2026-05-15": [
       {
+        "id": "e03cf5adbddbc3696e94bbcc46c169b9",
+        "title": "Anthropic产品负责人谈Claude Code：没有长期路线图，押注模型能力进化",
+        "chinese_title": "Anthropic产品负责人谈Claude Code：没有长期路线图，押注模型能力进化",
+        "original_title": "Claude Code's product lead talks usage limits, transparency, and the \"lean harness\"",
+        "summary": "Anthropic的Claude Code产品负责人Cat Wu向Ars Technica透露，团队故意不制定长期路线图，押注模型能力提升和开发者反馈会让传统规划过时，并谈及用量限制、透明度和精简harness策略。",
+        "rating": "A+",
+        "score": 87,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可延伸讨论AI编程工具的产品方法论变革——从功能驱动转向模型能力驱动；对比Cursor、GitHub Copilot等竞品的产品路径选择。",
+        "entities": [
+          "Anthropic",
+          "Cat Wu",
+          "Claude Code"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/05/claude-codes-product-lead-talks-usage-limits-transparency-and-the-lean-harness/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778842948,
+        "published_at": "2026-05-15T19:02:28.772210",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/claude-codes-product-lead-talks-usage-limits-transparency-and-the-lean-harness/",
+        "event_id": null
+      },
+      {
+        "id": "70b83532f82265ae26e96a3495c2729b",
+        "title": "前红杉中国HSG设立30亿美元接续基金，以字节跳动股权为锚定，估值3700亿",
+        "chinese_title": "前红杉中国HSG设立30亿美元接续基金，以字节跳动股权为锚定，估值3700亿",
+        "original_title": "Sources: HSG, formerly Sequoia China, has set up a $3B continuation fund anchored by its ByteDance stake, offering entry into the company valued at $370B (Bloomberg)",
+        "summary": "彭博社消息称，前身为红杉资本中国的HSG完成30亿美元接续基金募集，核心资产为字节跳动股份，让新投资者以3700亿美元估值入局这家未上市巨头。",
+        "rating": "A",
+        "score": 85,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延伸分析字节跳动估值变化曲线、TikTok地缘政治压力下的二级市场流动性安排，以及一级市场接续基金成为退出新通道的趋势。",
+        "entities": [
+          "ByteDance",
+          "Hsg",
+          "红杉中国"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260515/p5#a260515p5"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778842948,
+        "published_at": "2026-05-15T19:02:28.772234",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260515/p5#a260515p5",
+        "event_id": null
+      },
+      {
+        "id": "16ba513a5fb28c2b14eb94c9af23c90b",
+        "title": "开源工具WhichLLM上线：根据硬件配置推荐最适合的本地大模型",
+        "chinese_title": "开源工具WhichLLM上线：根据硬件配置推荐最适合的本地大模型",
+        "original_title": "Show HN: Find the best local LLM for your hardware, ranked by benchmarks",
+        "summary": "Hacker News开源项目WhichLLM通过基准测试数据为用户硬件匹配最优本地LLM，帮助开发者快速决策在自己机器上跑哪款模型。",
+        "rating": "B",
+        "score": 68,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸至本地LLM部署生态崛起、消费级硬件运行大模型门槛下降，以及与Ollama、LM Studio等本地推理工具的协同。",
+        "entities": [
+          "Hacker News",
+          "Whichllm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/Andyyyy64/whichllm"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778842948,
+        "published_at": "2026-05-15T19:02:28.772249",
+        "source": "Hacker News",
+        "url": "https://github.com/Andyyyy64/whichllm",
+        "event_id": null
+      },
+      {
+        "id": "3466b82254f89f49d0b8eeb96501b218",
+        "title": "Anthropic租下马斯克22万GPU超算，xAI转向Blackwell架构Colossus 2备战IPO",
+        "chinese_title": "Anthropic租下马斯克22万GPU超算，xAI转向Blackwell架构Colossus 2备战IPO",
+        "original_title": "Musk's Colossus 1 AI supercomputer's inefficient mixed-architecture design couldn't be used to train Grok, so Anthropic's using it for inference instead &mdash; Musk readies unified Blackwell-only Colossus 2 for frontier training and potential IPO",
+        "summary": "Anthropic向SpaceX租用xAI整个22万GPU的Colossus 1超算用于Claude推理，因混合架构无法高效训练Grok，xAI将集中资源打造统一Blackwell架构的Colossus 2，并为潜在IPO做准备。",
+        "rating": "A+",
+        "score": 91,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可延伸至AI算力租赁市场新格局——竞争对手互相供给算力；NVIDIA Blackwell GPU供给紧张下的资源调配；xAI IPO节奏与马斯克商业版图。",
+        "entities": [
+          "Anthropic",
+          "Colossus",
+          "Elon Musk",
+          "SpaceX",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/musks-colossus-1-ai-supercomputers-inefficient-mixed-architecture-design-couldnt-be-used-to-train-grok-so-anthropics-using-it-for-inference-instead-musk-readies-unified-blackwell-only-colossus-2-for-frontier-training-and-potential-ipo"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778842948,
+        "published_at": "2026-05-15T19:02:28.772266",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/musks-colossus-1-ai-supercomputers-inefficient-mixed-architecture-design-couldnt-be-used-to-train-grok-so-anthropics-using-it-for-inference-instead-musk-readies-unified-blackwell-only-colossus-2-for-frontier-training-and-potential-ipo",
+        "event_id": null
+      },
+      {
+        "id": "fdffe0b296be17a79bfcf38bc31dff15",
+        "title": "Anthropic向华盛顿喊话：中美AI竞赛进入决定性时刻，2028年是分水岭",
+        "chinese_title": "Anthropic向华盛顿喊话：中美AI竞赛进入决定性时刻，2028年是分水岭",
+        "original_title": "Anthropic frames AI competition with China as a now-or-never moment for Washington",
+        "summary": "Anthropic在最新政策白皮书中提出两种2028年情景：美国锁定对华算力优势，或威权政权主导AI时代规则，呼吁华盛顿立即行动，时间窗口正在关闭。",
+        "rating": "A",
+        "score": 77,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸至AI产业政策游说战、出口管制升级预期、中国大模型反向突破能力，以及AI Lab与政府关系演变。",
+        "entities": [
+          "Anthropic",
+          "中国",
+          "美国"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/anthropic-frames-ai-competition-with-china-as-a-now-or-never-moment-for-washington/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778842948,
+        "published_at": "2026-05-15T19:02:28.772279",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/anthropic-frames-ai-competition-with-china-as-a-now-or-never-moment-for-washington/",
+        "event_id": null
+      },
+      {
         "id": "80d9dda74b206bf2a83be3580b6f9528",
         "title": "中科大发现NK细胞新检查点CLEC12B，纳米抗体开辟癌症免疫治疗新路径",
         "chinese_title": "中科大发现NK细胞新检查点CLEC12B，纳米抗体开辟癌症免疫治疗新路径",
@@ -21250,6 +21396,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-15T18:02:14.330708",
-  "total_news": 730
+  "last_updated": "2026-05-15T19:03:12.947536",
+  "total_news": 735
 }
