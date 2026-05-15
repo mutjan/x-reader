@@ -2,6 +2,93 @@
   "news": {
     "2026-05-16": [
       {
+        "id": "b482ee13ae7b06a10223d0cdd8f65704",
+        "title": "ChatGPT入驻Excel财务审计：跨表核对、揪错、自动出QA清单",
+        "chinese_title": "ChatGPT入驻Excel财务审计：跨表核对、揪错、自动出QA清单",
+        "original_title": "Update and audit a finance model in Excel with ChatGPT",
+        "summary": "OpenAI演示ChatGPT for Excel接入财务模型审阅流程，可在CFO绩效工作簿中跨页签比对、识别陈旧数据源与营收口径不一致问题，并生成QA问题日志与负责人追问清单，最后给出是否可发布的判断。",
+        "rating": "A",
+        "score": 79,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "AI深入嵌入财务SaaS可能挤压传统建模与审计工具市场份额，并推动微软Copilot、Google Sheets Gemini在财务场景跟进。",
+        "entities": [
+          "Excel",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "OpenAI",
+            "url": "https://www.youtube.com/watch?v=CaBXLZyaJYU"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778882581,
+        "published_at": "2026-05-16T06:03:01.964741",
+        "source": "OpenAI",
+        "url": "https://www.youtube.com/watch?v=CaBXLZyaJYU",
+        "event_id": null
+      },
+      {
+        "id": "f79dfaee7b2d269de4d289f22d5fe605",
+        "title": "Intercom更名为Fin，推出专门管理AI客服Agent的Agent",
+        "chinese_title": "Intercom更名为Fin，推出专门管理AI客服Agent的Agent",
+        "original_title": "Intercom, now called Fin, launches an AI agent whose only job is managing another AI agent",
+        "summary": "客户服务公司Intercom正式更名为Fin，并发布Fin Operator——一个面向后台团队的AI Agent，专门负责配置、监控和优化面向用户的Fin客服Agent，使客服领域进入Agent管理Agent的多层架构阶段。",
+        "rating": "S",
+        "score": 95,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Agent-of-Agents模式可能成为企业AI部署新范式，倒逼Zendesk、Salesforce Service Cloud跟进，并催生AgentOps这一新工种。",
+        "entities": [
+          "Fin",
+          "Fin Operator",
+          "Intercom"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-ai-agent"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778882581,
+        "published_at": "2026-05-16T06:03:01.964765",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-ai-agent",
+        "event_id": null
+      },
+      {
+        "id": "06d380e197c6fcde84e00a0df5ca90f3",
+        "title": "RecursiveMAS让多Agent推理提速2.4倍、Token消耗砍掉75%",
+        "chinese_title": "RecursiveMAS让多Agent推理提速2.4倍、Token消耗砍掉75%",
+        "original_title": "How RecursiveMAS speeds up multi-agent inference by 2.4x and reduces token usage by 75%",
+        "summary": "伊利诺伊大学厄巴纳-香槟分校与斯坦福大学联合提出RecursiveMAS框架，让多Agent系统通过嵌入空间而非文本进行通信，显著降低延迟和Token成本，并使整套多Agent系统可作为一个整体进行训练。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若嵌入级Agent通信成主流，将冲击当前基于自然语言协议的LangGraph、AutoGen等框架，并影响OpenAI、Anthropic按Token计费的商业模式。",
+        "entities": [
+          "Recursivemas",
+          "Stanford University",
+          "University Of Illinois Urbana-Champaign"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat (qwen)",
+            "url": "https://venturebeat.com/orchestration/how-recursivemas-speeds-up-multi-agent-inference-by-2-4x-and-reduces-token-usage-by-75"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778882581,
+        "published_at": "2026-05-16T06:03:01.964783",
+        "source": "VentureBeat (qwen)",
+        "url": "https://venturebeat.com/orchestration/how-recursivemas-speeds-up-multi-agent-inference-by-2-4x-and-reduces-token-usage-by-75",
+        "event_id": null
+      },
+      {
         "id": "e57b8352f8c48e1b0463c243b69ba6d0",
         "title": "中美元首会晤未达成芯片协议，半导体股全线下跌英伟达跌超4%",
         "chinese_title": "中美元首会晤未达成芯片协议，半导体股全线下跌英伟达跌超4%",
@@ -147,6 +234,184 @@
         "published_at": "2026-05-16T05:06:42.647642",
         "source": "Ars Technica » Scientific Method",
         "url": "https://arstechnica.com/science/2026/05/running-the-numbers-on-a-zero-emission-way-to-make-cement/",
+        "event_id": null
+      },
+      {
+        "id": "bbb9f5e080b0e014af2ab2d896fc6c85",
+        "title": "Databricks组建AI智能体评估团队，专攻企业数据场景下的智能体优化",
+        "chinese_title": "Databricks组建AI智能体评估团队，专攻企业数据场景下的智能体优化",
+        "original_title": "I'm building a new team at @databricks AI Research and we're hiring. We're focused on one of the hardest open problems in AI right now: how do you mea...",
+        "summary": "Databricks AI Research正在组建新团队，专注于解决大规模企业数据场景下AI智能体的评估与持续改进难题，计划构建从开发训练到生产部署的完整评估飞轮。",
+        "rating": "B",
+        "score": 66,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "企业级AI智能体评估标准的建立可能影响整个行业对Agent可靠性的认知，进而推动相关评测工具和基础设施的需求增长。",
+        "entities": [
+          "Ai智能体",
+          "Databricks",
+          "企业数据"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/julianeagu/status/2055372210144210981"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778879202,
+        "published_at": "2026-05-16T05:06:42.647492",
+        "source": "x",
+        "url": "https://x.com/julianeagu/status/2055372210144210981",
+        "event_id": null
+      },
+      {
+        "id": "553f4248b0f41e0e7c28e6f707efaa63",
+        "title": "黄仁勋在北京活动现场上手华为Mate XT三折屏手机",
+        "chinese_title": "黄仁勋在北京活动现场上手华为Mate XT三折屏手机",
+        "original_title": "At a NVIDIA event in Beijing, CEO Jensen Huang picked up Huawei's Mate XT tri-fold phone It features two hinge points allowing it to fold into three s...",
+        "summary": "NVIDIA CEO黄仁勋在北京出席活动时亲自体验了华为Mate XT三折屏手机，该产品采用双铰链设计，完全展开后屏幕尺寸达10.2英寸。",
+        "rating": "B",
+        "score": 71,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "中美科技巨头高管的互动引发市场对两国科技产业合作与竞争关系的关注，折叠屏技术的成熟度也可能影响相关供应链。",
+        "entities": [
+          "Mate Xt",
+          "NVIDIA",
+          "华为",
+          "黄仁勋"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/rohanpaul_ai/status/2055348939306729976"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778879202,
+        "published_at": "2026-05-16T05:06:42.647529",
+        "source": "x",
+        "url": "https://x.com/rohanpaul_ai/status/2055348939306729976",
+        "event_id": null
+      },
+      {
+        "id": "ab7d956af06ef84d05198d8375086637",
+        "title": "OpenAI宣布重大重组：Brockman正式接管产品，ChatGPT与Codex统一整合",
+        "chinese_title": "OpenAI宣布重大重组：Brockman正式接管产品，ChatGPT与Codex统一整合",
+        "original_title": "Scoop: OpenAI announced another major reorg on Friday, as part of its effort to unify ChatGPT and Codex. -Greg Brockman is officially taking over Open...",
+        "summary": "OpenAI周五宣布新一轮组织架构调整，Greg Brockman正式负责产品业务，Codex负责人Thibault Sottiaux接管核心产品与平台，ChatGPT负责人Nick Turley同时负责企业产品改造。",
+        "rating": "A",
+        "score": 85,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "OpenAI产品线的统一整合可能加速ChatGPT与Codex的融合，影响开发者工具市场的竞争格局，同时高管分工调整也反映出公司对产品交付效率的迫切需求。",
+        "entities": [
+          "Codex",
+          "GPT",
+          "Greg Brockman",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ZeffMax/status/2055335888591433852"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778879202,
+        "published_at": "2026-05-16T05:06:42.647542",
+        "source": "x",
+        "url": "https://x.com/ZeffMax/status/2055335888591433852",
+        "event_id": null
+      },
+      {
+        "id": "98dd44344b62fd5e5ca1a6dcd2b9673c",
+        "title": "Eric Jang黑板课详解AlphaGo原理：从围棋AI看未来通用智能的路径",
+        "chinese_title": "Eric Jang黑板课详解AlphaGo原理：从围棋AI看未来通用智能的路径",
+        "original_title": "RT Dwarkesh Patel: New blackboard lecture w @ericjang11 He walks through how to build AlphaGo from scratch, but with modern AI tools. Sometimes you un...",
+        "summary": "Eric Jang在Dwarkesh Patel的节目中通过黑板讲解AlphaGo的完整实现原理，探讨MCTS、自对弈等机制为何难以直接迁移到LLM，以及自动化AI研究的未来前景。",
+        "rating": "A",
+        "score": 75,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "AlphaGo的搜索+学习范式与当前LLM的强化学习路径对比，可能为下一代AI训练方法提供启发，MCTS在LLM中的应用探索也值得关注。",
+        "entities": [
+          "Alphago",
+          "Eric Jang",
+          "LLM",
+          "Mcts"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/morqon/status/2055331909262090715"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778879202,
+        "published_at": "2026-05-16T05:06:42.647555",
+        "source": "x",
+        "url": "https://x.com/morqon/status/2055331909262090715",
+        "event_id": null
+      },
+      {
+        "id": "21e331337dd94a5ca9f6f9f17642fe3e",
+        "title": "前政策研究者加入Anthropic公共政策团队，聚焦模型安全与可解释性",
+        "chinese_title": "前政策研究者加入Anthropic公共政策团队，聚焦模型安全与可解释性",
+        "original_title": "I joined @AnthropicAI! I’ll be on the Public Policy team, focusing on model development & research. This includes policy efforts related to the Respo...",
+        "summary": "一位关注Anthropic早期机械可解释性研究的政策专家加入该公司公共政策团队，将负责Responsible Scaling Policy、前沿模型发布、安全研究等政策事务。",
+        "rating": "B",
+        "score": 65,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "Anthropic持续扩充政策团队，反映出AI安全与监管合规已成为大模型公司的核心竞争维度，可能影响行业自律标准的形成。",
+        "entities": [
+          "Ai安全",
+          "Anthropic",
+          "Responsible Scaling Policy"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/manaltdan/status/2055319112113598925"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778879202,
+        "published_at": "2026-05-16T05:06:42.647566",
+        "source": "x",
+        "url": "https://x.com/manaltdan/status/2055319112113598925",
+        "event_id": null
+      },
+      {
+        "id": "ed9f358ef4c17a48d8563d9e8a6285ea",
+        "title": "开发者分享语音转字幕完整方案：Qwen3-ASR替代Whisper解决幻觉难题",
+        "chinese_title": "开发者分享语音转字幕完整方案：Qwen3-ASR替代Whisper解决幻觉难题",
+        "original_title": "其实这些问题都能很好的解决了 1. 扔掉 whisper，换 ASR 模型，Qwen3-ASR 就很不错幻觉很少、也有一些别的ASR选择，whisper 幻觉多也要求 30s片段，Qwen3-ASR 塞...",
+        "summary": "一位开发者分享了构建高质量字幕SRT的完整技术方案，包括用Qwen3-ASR替代Whisper减少幻觉、LattifAI解决长音频时间轴对齐、OmniVAD-Kit进行语音活动检测等关键组件。",
+        "rating": "B",
+        "score": 72,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "开源ASR模型的快速迭代正在改变音视频内容处理的工作流，Whisper的主导地位可能面临挑战，相关工具链的成熟度也影响AI生成视频、播客等内容的规模化生产。",
+        "entities": [
+          "Lattifai",
+          "Omnivad-Kit",
+          "Qwen3-Asr",
+          "Whisper"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/FeitengLi/status/2055237563393466560"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778879202,
+        "published_at": "2026-05-16T05:06:42.647577",
+        "source": "x",
+        "url": "https://x.com/FeitengLi/status/2055237563393466560",
         "event_id": null
       },
       {
@@ -1021,184 +1286,6 @@
       }
     ],
     "2026-05-15": [
-      {
-        "id": "bbb9f5e080b0e014af2ab2d896fc6c85",
-        "title": "Databricks组建AI智能体评估团队，专攻企业数据场景下的智能体优化",
-        "chinese_title": "Databricks组建AI智能体评估团队，专攻企业数据场景下的智能体优化",
-        "original_title": "I'm building a new team at @databricks AI Research and we're hiring. We're focused on one of the hardest open problems in AI right now: how do you mea...",
-        "summary": "Databricks AI Research正在组建新团队，专注于解决大规模企业数据场景下AI智能体的评估与持续改进难题，计划构建从开发训练到生产部署的完整评估飞轮。",
-        "rating": "B",
-        "score": 66,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "企业级AI智能体评估标准的建立可能影响整个行业对Agent可靠性的认知，进而推动相关评测工具和基础设施的需求增长。",
-        "entities": [
-          "Ai智能体",
-          "Databricks",
-          "企业数据"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/julianeagu/status/2055372210144210981"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778879202,
-        "published_at": "2026-05-16T05:06:42.647492",
-        "source": "x",
-        "url": "https://x.com/julianeagu/status/2055372210144210981",
-        "event_id": null
-      },
-      {
-        "id": "553f4248b0f41e0e7c28e6f707efaa63",
-        "title": "黄仁勋在北京活动现场上手华为Mate XT三折屏手机",
-        "chinese_title": "黄仁勋在北京活动现场上手华为Mate XT三折屏手机",
-        "original_title": "At a NVIDIA event in Beijing, CEO Jensen Huang picked up Huawei's Mate XT tri-fold phone It features two hinge points allowing it to fold into three s...",
-        "summary": "NVIDIA CEO黄仁勋在北京出席活动时亲自体验了华为Mate XT三折屏手机，该产品采用双铰链设计，完全展开后屏幕尺寸达10.2英寸。",
-        "rating": "B",
-        "score": 71,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "中美科技巨头高管的互动引发市场对两国科技产业合作与竞争关系的关注，折叠屏技术的成熟度也可能影响相关供应链。",
-        "entities": [
-          "Mate Xt",
-          "NVIDIA",
-          "华为",
-          "黄仁勋"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/rohanpaul_ai/status/2055348939306729976"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778879202,
-        "published_at": "2026-05-16T05:06:42.647529",
-        "source": "x",
-        "url": "https://x.com/rohanpaul_ai/status/2055348939306729976",
-        "event_id": null
-      },
-      {
-        "id": "ab7d956af06ef84d05198d8375086637",
-        "title": "OpenAI宣布重大重组：Brockman正式接管产品，ChatGPT与Codex统一整合",
-        "chinese_title": "OpenAI宣布重大重组：Brockman正式接管产品，ChatGPT与Codex统一整合",
-        "original_title": "Scoop: OpenAI announced another major reorg on Friday, as part of its effort to unify ChatGPT and Codex. -Greg Brockman is officially taking over Open...",
-        "summary": "OpenAI周五宣布新一轮组织架构调整，Greg Brockman正式负责产品业务，Codex负责人Thibault Sottiaux接管核心产品与平台，ChatGPT负责人Nick Turley同时负责企业产品改造。",
-        "rating": "A",
-        "score": 85,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "OpenAI产品线的统一整合可能加速ChatGPT与Codex的融合，影响开发者工具市场的竞争格局，同时高管分工调整也反映出公司对产品交付效率的迫切需求。",
-        "entities": [
-          "Codex",
-          "GPT",
-          "Greg Brockman",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/ZeffMax/status/2055335888591433852"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778879202,
-        "published_at": "2026-05-16T05:06:42.647542",
-        "source": "x",
-        "url": "https://x.com/ZeffMax/status/2055335888591433852",
-        "event_id": null
-      },
-      {
-        "id": "98dd44344b62fd5e5ca1a6dcd2b9673c",
-        "title": "Eric Jang黑板课详解AlphaGo原理：从围棋AI看未来通用智能的路径",
-        "chinese_title": "Eric Jang黑板课详解AlphaGo原理：从围棋AI看未来通用智能的路径",
-        "original_title": "RT Dwarkesh Patel: New blackboard lecture w @ericjang11 He walks through how to build AlphaGo from scratch, but with modern AI tools. Sometimes you un...",
-        "summary": "Eric Jang在Dwarkesh Patel的节目中通过黑板讲解AlphaGo的完整实现原理，探讨MCTS、自对弈等机制为何难以直接迁移到LLM，以及自动化AI研究的未来前景。",
-        "rating": "A",
-        "score": 75,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "AlphaGo的搜索+学习范式与当前LLM的强化学习路径对比，可能为下一代AI训练方法提供启发，MCTS在LLM中的应用探索也值得关注。",
-        "entities": [
-          "Alphago",
-          "Eric Jang",
-          "LLM",
-          "Mcts"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/morqon/status/2055331909262090715"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778879202,
-        "published_at": "2026-05-16T05:06:42.647555",
-        "source": "x",
-        "url": "https://x.com/morqon/status/2055331909262090715",
-        "event_id": null
-      },
-      {
-        "id": "21e331337dd94a5ca9f6f9f17642fe3e",
-        "title": "前政策研究者加入Anthropic公共政策团队，聚焦模型安全与可解释性",
-        "chinese_title": "前政策研究者加入Anthropic公共政策团队，聚焦模型安全与可解释性",
-        "original_title": "I joined @AnthropicAI! I’ll be on the Public Policy team, focusing on model development & research. This includes policy efforts related to the Respo...",
-        "summary": "一位关注Anthropic早期机械可解释性研究的政策专家加入该公司公共政策团队，将负责Responsible Scaling Policy、前沿模型发布、安全研究等政策事务。",
-        "rating": "B",
-        "score": 65,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "Anthropic持续扩充政策团队，反映出AI安全与监管合规已成为大模型公司的核心竞争维度，可能影响行业自律标准的形成。",
-        "entities": [
-          "Ai安全",
-          "Anthropic",
-          "Responsible Scaling Policy"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/manaltdan/status/2055319112113598925"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778879202,
-        "published_at": "2026-05-16T05:06:42.647566",
-        "source": "x",
-        "url": "https://x.com/manaltdan/status/2055319112113598925",
-        "event_id": null
-      },
-      {
-        "id": "ed9f358ef4c17a48d8563d9e8a6285ea",
-        "title": "开发者分享语音转字幕完整方案：Qwen3-ASR替代Whisper解决幻觉难题",
-        "chinese_title": "开发者分享语音转字幕完整方案：Qwen3-ASR替代Whisper解决幻觉难题",
-        "original_title": "其实这些问题都能很好的解决了 1. 扔掉 whisper，换 ASR 模型，Qwen3-ASR 就很不错幻觉很少、也有一些别的ASR选择，whisper 幻觉多也要求 30s片段，Qwen3-ASR 塞...",
-        "summary": "一位开发者分享了构建高质量字幕SRT的完整技术方案，包括用Qwen3-ASR替代Whisper减少幻觉、LattifAI解决长音频时间轴对齐、OmniVAD-Kit进行语音活动检测等关键组件。",
-        "rating": "B",
-        "score": 72,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "开源ASR模型的快速迭代正在改变音视频内容处理的工作流，Whisper的主导地位可能面临挑战，相关工具链的成熟度也影响AI生成视频、播客等内容的规模化生产。",
-        "entities": [
-          "Lattifai",
-          "Omnivad-Kit",
-          "Qwen3-Asr",
-          "Whisper"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/FeitengLi/status/2055237563393466560"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778879202,
-        "published_at": "2026-05-16T05:06:42.647577",
-        "source": "x",
-        "url": "https://x.com/FeitengLi/status/2055237563393466560",
-        "event_id": null
-      },
       {
         "id": "16e5f5ee630ab54a8d9c12a9d2ea5a21",
         "title": "IPO尘埃落定，Cerebras重启AI芯片极限挑战",
@@ -23233,6 +23320,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-16T05:06:42.686141",
-  "total_news": 798
+  "last_updated": "2026-05-16T06:03:28.890648",
+  "total_news": 801
 }
