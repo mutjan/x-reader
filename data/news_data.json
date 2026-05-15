@@ -2,6 +2,616 @@
   "news": {
     "2026-05-15": [
       {
+        "id": "cd8aa025de342d7e885e9a7a6bbe4fb4",
+        "title": "马斯克宣布X平台最新推荐算法已在GitHub开源",
+        "chinese_title": "马斯克宣布X平台最新推荐算法已在GitHub开源",
+        "original_title": "RT Elon Musk: The latest 𝕏 algorithm has been published to GitHub https://github.com/xai-org/x-algorithm",
+        "summary": "马斯克在X平台发文宣布，X的最新推荐算法已经发布到GitHub上，代码仓库归属于xAI-org组织。这是X平台在算法透明化方面迈出的重要一步。",
+        "rating": "A+",
+        "score": 88,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "算法开源可能引发其他社交平台跟进透明化，同时让研究者和开发者有机会分析和改进推荐系统，影响社交媒体行业的技术生态。",
+        "entities": [
+          "Elon Musk",
+          "Github",
+          "X平台",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Phil_Holland/status/2055278554028401147"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680131",
+        "source": "x",
+        "url": "https://x.com/Phil_Holland/status/2055278554028401147",
+        "event_id": null
+      },
+      {
+        "id": "c5e4a54fffe415f8287a49d042648820",
+        "title": "DeepSeek输入特殊标记泄露训练数据，实为模型记忆提取而非安全漏洞",
+        "chinese_title": "DeepSeek输入特殊标记泄露训练数据，实为模型记忆提取而非安全漏洞",
+        "original_title": "近日有用户发现，在 DeepSeek 对话框输入 `<think>` 等特殊标记后，模型会吐出疑似其他用户的对话内容。部分博主直接将其定性为 P0 级多租户隔离事故，认为不同...",
+        "summary": "有用户发现向DeepSeek输入特定格式标记后模型会输出看似他人对话的内容，引发多租户隔离失效的猜测。经分析，这属于大模型普遍存在的训练数据记忆提取现象，而非用户数据泄露。",
+        "rating": "A+",
+        "score": 87,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可能推动行业对训练数据记忆提取问题的更深入研究和防护措施，同时提醒用户理解大模型的工作机制与局限性。",
+        "entities": [
+          "DeepMind",
+          "DeepSeek",
+          "GPT",
+          "Palm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/0xLogicrw/status/2055202137429496059"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680155",
+        "source": "x",
+        "url": "https://x.com/0xLogicrw/status/2055202137429496059",
+        "event_id": null
+      },
+      {
+        "id": "bafbd670fd0ebbbe23bec304510ef688",
+        "title": "英伟达开源SANA世界模型：单GPU生成60秒720p可控视频",
+        "chinese_title": "英伟达开源SANA世界模型：单GPU生成60秒720p可控视频",
+        "original_title": "Explore SANA World Model, using hybrid linear attention, efficient and fast!",
+        "summary": "英伟达研究团队发布了SANA-WM，一个26亿参数的开源世界模型，能够基于单张图片、文本描述和6自由度相机轨迹，在单张GPU上生成长达60秒、720p分辨率的动作可控视频。",
+        "rating": "A+",
+        "score": 90,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "高效世界模型的出现可能大幅降低视频生成和自动驾驶仿真等领域的算力门槛，推动具身智能和虚拟世界构建技术的快速迭代。",
+        "entities": [
+          "Haoyi Zhu",
+          "NVIDIA",
+          "Sana"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/songhan_mit/status/2055139983972077783"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680183",
+        "source": "x",
+        "url": "https://x.com/songhan_mit/status/2055139983972077783",
+        "event_id": null
+      },
+      {
+        "id": "394674e319439f1e9697e317f8dd7d10",
+        "title": "xAI联合创始人Igor Babuschkin拟融资10亿美元创办新AI研究公司",
+        "chinese_title": "xAI联合创始人Igor Babuschkin拟融资10亿美元创办新AI研究公司",
+        "original_title": "Sources: xAI co-founder Igor Babuschkin plans to raise up to $1B at an up to $5B valuation for a new AI research startup, with General Catalyst possib...",
+        "summary": "据福布斯报道，xAI联合创始人Igor Babuschkin计划为其新创办的AI研究初创公司筹集高达10亿美元资金，估值最高可达50亿美元，General Catalyst可能领投本轮融资。",
+        "rating": "A",
+        "score": 80,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "xAI核心成员出走创业可能引发AI人才流动潮，同时新公司的成立将加剧AI基础研究领域的竞争，影响xAI的人才储备和战略方向。",
+        "entities": [
+          "General Catalyst",
+          "Igor Babuschkin",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Techmeme/status/2055089731520847885"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680196",
+        "source": "x",
+        "url": "https://x.com/Techmeme/status/2055089731520847885",
+        "event_id": null
+      },
+      {
+        "id": "1772c7a8f009f0e70e6c5dc9d5eb789c",
+        "title": "xAI发布Grok Build早期测试版：终端AI编程助手正式亮相",
+        "chinese_title": "xAI发布Grok Build早期测试版：终端AI编程助手正式亮相",
+        "original_title": "We worked incredibly hard to scale and iterate on RL and post-training to make Grok Build smarter, better at coding, and faster. Proud and excited to ...",
+        "summary": "xAI正式推出Grok Build早期测试版，这是一款面向SuperGrok Heavy订阅者的终端命令行AI编程助手，支持编码、构建应用和自动化工作流，团队表示将通过用户反馈持续改进模型和产品。",
+        "rating": "A",
+        "score": 82,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Grok Build的发布标志着xAI正式进入AI编程助手赛道，将与Cursor、GitHub Copilot等产品直接竞争，可能加速终端AI工具的普及和迭代。",
+        "entities": [
+          "Grok",
+          "Supergrok",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/xiuyu_l/status/2055086639731622390"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680209",
+        "source": "x",
+        "url": "https://x.com/xiuyu_l/status/2055086639731622390",
+        "event_id": null
+      },
+      {
+        "id": "f3195c050f88c4c89d6420b03241e6fe",
+        "title": "研究人员提出FST学习框架：让大模型同时具备快慢两种学习能力",
+        "chinese_title": "研究人员提出FST学习框架：让大模型同时具备快慢两种学习能力",
+        "original_title": "Training LLMs is synonymous with updating their weights. However, LLMs can also learn in-context using *frozen* weights. There is no good reason for r...",
+        "summary": "研究者提出Learning Fast and Slow框架，将大模型的慢学习（权重更新）与快学习（上下文优化）相结合，相比传统强化学习方法表现更优，同时具备更好的数据效率、可塑性和抗遗忘能力。",
+        "rating": "A",
+        "score": 85,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "FST框架若被验证有效，可能改变大模型训练和微调范式，使模型在保持知识稳定性的同时具备更强的上下文适应能力，影响下游应用开发。",
+        "entities": [
+          "Fst",
+          "Gepa",
+          "LLM",
+          "Rl"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/agarwl_/status/2055081573083402434"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680222",
+        "source": "x",
+        "url": "https://x.com/agarwl_/status/2055081573083402434",
+        "event_id": null
+      },
+      {
+        "id": "4b68695dda96754834e39a02531e72c9",
+        "title": "xAI推出首款终端编程代理Grok Build，追赶AI编程助手赛道",
+        "chinese_title": "xAI推出首款终端编程代理Grok Build，追赶AI编程助手赛道",
+        "original_title": "x.AI plays catch-up with Grok Build, its first terminal-based coding agent",
+        "summary": "马斯克旗下xAI正式发布Grok Build，这是其首款基于终端的AI编程代理工具，标志着xAI正式进入由Cursor、GitHub Copilot等主导的AI辅助编程市场。",
+        "rating": "A",
+        "score": 82,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Grok Build的入局将加剧AI编程助手市场竞争，可能迫使现有产品加速创新，同时xAI的品牌效应可能快速吸引开发者社区关注。",
+        "entities": [
+          "Elon Musk",
+          "Grok",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/x-ai-plays-catch-up-with-grok-build-its-first-terminal-based-coding-agent/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680258",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/x-ai-plays-catch-up-with-grok-build-its-first-terminal-based-coding-agent/",
+        "event_id": null
+      },
+      {
+        "id": "85f85570e3698f43b28ba5af552184e7",
+        "title": "Anthropic最强模型Mythos迟迟不发布，安全顾虑还是成本考量",
+        "chinese_title": "Anthropic最强模型Mythos迟迟不发布，安全顾虑还是成本考量",
+        "original_title": "Too dangerous or just too expensive? The real reason Anthropic is hiding Mythos",
+        "summary": "文章探讨Anthropic对其最强大AI模型Mythos保持沉默的真实原因，分析究竟是出于AI安全风险的审慎考虑，还是模型运行成本过高导致商业化困难的商业决策。",
+        "rating": "A",
+        "score": 76,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "Mythos的发布策略可能为行业树立先例，影响其他AI公司对待超强大模型的态度，同时引发关于AI安全与商业利益平衡的持续讨论。",
+        "entities": [
+          "Anthropic",
+          "Mythos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://kingy.ai/ai/too-dangerous-to-release-or-just-too-expensive-the-real-reason-anthropic-is-hiding-its-most-powerful-ai/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680281",
+        "source": "Hacker News",
+        "url": "https://kingy.ai/ai/too-dangerous-to-release-or-just-too-expensive-the-real-reason-anthropic-is-hiding-its-most-powerful-ai/",
+        "event_id": null
+      },
+      {
+        "id": "129ff5e06cd70c4ef59d39694839182d",
+        "title": "马斯克诉奥特曼案结案陈词：双方律师就信任与证据展开激烈交锋",
+        "chinese_title": "马斯克诉奥特曼案结案陈词：双方律师就信任与证据展开激烈交锋",
+        "original_title": "Musk v. Altman: in closing arguments, Musk's attorney doubled down on claims of Altman's untrustworthiness, while OpenAI's lawyer said Musk has no evidence (Associated Press)",
+        "summary": "在马斯克起诉OpenAI及奥特曼的 landmark 审判中，双方律师进行结案陈词。马斯克方强调奥特曼不可信，OpenAI方则指出马斯克缺乏实质证据，该案结果可能重塑AI行业未来格局。",
+        "rating": "S",
+        "score": 95,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "判决结果将直接影响OpenAI的治理结构和AI开源生态走向，同时可能改变科技行业对非营利转营利模式的法律认知和实践。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "奥特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260514/p40#a260514p40"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680324",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260514/p40#a260514p40",
+        "event_id": null
+      },
+      {
+        "id": "d25ad2e2d520777e62fc2f25cd3f7c68",
+        "title": "Cerebras IPO为Tiger Global等投资者带来丰厚回报，SPV结构引关注",
+        "chinese_title": "Cerebras IPO为Tiger Global等投资者带来丰厚回报，SPV结构引关注",
+        "original_title": "Cerebras Payday Includes Tiger—And SPVs",
+        "summary": "AI芯片设计公司Cerebras上市首日股价大涨，为Tiger Global Management等早期投资者带来可观回报。Tiger Global在去年9月和今年初以每股89美元领投10亿美元投资，上市首日即获得巨额收益。",
+        "rating": "A",
+        "score": 75,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "Cerebras的成功上市可能提振AI芯片投资热潮，吸引更多资本流入半导体创业领域，同时SPV投资结构的广泛应用可能改变风险投资格局。",
+        "entities": [
+          "Cerebras",
+          "Tiger Global Management"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/cerebras-payday-includes-tiger-spvs"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680335",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/cerebras-payday-includes-tiger-spvs",
+        "event_id": null
+      },
+      {
+        "id": "acb1ba2ab7f41e0c5dbc7f471c0d6f40",
+        "title": "Cerebras上市后两位创始人跻身亿万富翁，合计持股价值近50亿美元",
+        "chinese_title": "Cerebras上市后两位创始人跻身亿万富翁，合计持股价值近50亿美元",
+        "original_title": "Cerebras co-founders CEO Andrew Feldman and CTO Sean Lie own stakes worth $3.2B and $1.7B, respectively, representing about 5.5% and 3% of the company (CJ Haddad/CNBC)",
+        "summary": "Cerebras IPO后市值接近1000亿美元，联合创始人兼CEO Andrew Feldman和CTO Sean Lie分别持有价值32亿美元和17亿美元的股份，占比约5.5%和3%，双双加入科技亿万富翁行列。",
+        "rating": "A",
+        "score": 76,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "创始人财富的急剧增长可能激励更多芯片领域创业者，同时Cerebras的高估值将加剧与英伟达在AI芯片市场的竞争态势。",
+        "entities": [
+          "Andrew Feldman",
+          "Cerebras",
+          "Sean Lie"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260514/p37#a260514p37"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680346",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260514/p37#a260514p37",
+        "event_id": null
+      },
+      {
+        "id": "66d2ff6745a296e2fe152aba1e24a1e2",
+        "title": "马斯克诉奥特曼案核心争议：陪审团将裁决哪些关键问题",
+        "chinese_title": "马斯克诉奥特曼案核心争议：陪审团将裁决哪些关键问题",
+        "original_title": "What the jury will actually decide in the case of Elon Musk vs. Sam Altman",
+        "summary": "TechCrunch解析本年度最受关注的科技诉讼案，梳理马斯克起诉OpenAI及奥特曼一案中陪审团需要实际裁决的核心法律问题，帮助读者理解这场可能改变AI行业走向的法庭对决。",
+        "rating": "A",
+        "score": 81,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "陪审团的裁决将确立AI公司从非营利转向营利的法律边界，对后续类似结构的科技公司具有重要判例意义。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "Techcrunch",
+          "奥特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680356",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/",
+        "event_id": null
+      },
+      {
+        "id": "c21ea55b7f98760f710e238bc988ed5a",
+        "title": "Raindrop开源Workshop工具：让开发者在本地调试和评估AI代理",
+        "chinese_title": "Raindrop开源Workshop工具：让开发者在本地调试和评估AI代理",
+        "original_title": "Developers can now debug and evaluate AI agents locally with Raindrop's open source tool Workshop",
+        "summary": "可观测性初创公司Raindrop AI发布开源MIT许可证工具Workshop，为开发者提供专门针对AI代理的本地调试和评估工具，可将代理的所有运行轨迹记录到轻量级SQLite数据库文件中。",
+        "rating": "A",
+        "score": 76,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "本地AI代理调试工具的普及可能加速AI代理开发和迭代效率，降低开发者调试门槛，推动AI代理应用生态的成熟。",
+        "entities": [
+          "Raindrop Ai",
+          "Workshop"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/developers-can-now-debug-and-evaluate-ai-agents-locally-with-raindrops-open-source-tool-workshop"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680366",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/developers-can-now-debug-and-evaluate-ai-agents-locally-with-raindrops-open-source-tool-workshop",
+        "event_id": null
+      },
+      {
+        "id": "b571fcfc5a0702ec5c49c7e401d28848",
+        "title": "Cerebras上市首日暴涨68%，年度最大IPO募资55亿美元市值达670亿",
+        "chinese_title": "Cerebras上市首日暴涨68%，年度最大IPO募资55亿美元市值达670亿",
+        "original_title": "Cerebras shares closed up 68% at $311.07 in the company's Nasdaq debut after it raised $5.5B in the year's largest IPO, giving it a market value of $67B (Bloomberg)",
+        "summary": "AI芯片公司Cerebras Systems在纳斯达克上市首日股价大涨68%，收于311.07美元。该公司完成了今年规模最大的IPO，募资55亿美元，市值达到670亿美元。",
+        "rating": "A",
+        "score": 86,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "Cerebras的成功上市验证了AI芯片市场的投资热情，可能带动更多AI基础设施公司走向公开市场，改变半导体行业资本格局。",
+        "entities": [
+          "Cerebras",
+          "纳斯达克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260514/p36#a260514p36"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680376",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260514/p36#a260514p36",
+        "event_id": null
+      },
+      {
+        "id": "97db363fb1a03cd11a5525da9448dea4",
+        "title": "Anthropic推出Claude法律专业版，进军法律AI服务市场",
+        "chinese_title": "Anthropic推出Claude法律专业版，进军法律AI服务市场",
+        "original_title": "Claude for Legal",
+        "summary": "Anthropic在GitHub上发布Claude for Legal项目，将其AI助手Claude的专业能力延伸至法律服务领域，为法律从业者提供AI辅助工具。",
+        "rating": "A",
+        "score": 81,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Claude进入法律垂直领域可能加速法律行业AI化进程，与Harvey等法律AI初创公司形成竞争，推动法律服务的效率和成本结构变革。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/anthropics/claude-for-legal"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680394",
+        "source": "Hacker News",
+        "url": "https://github.com/anthropics/claude-for-legal",
+        "event_id": null
+      },
+      {
+        "id": "e8a07e604258a8bc0185a84c1dd9e03c",
+        "title": "Cerebras上市首日股价接近翻倍，市值突破千亿美元重塑AI芯片格局",
+        "chinese_title": "Cerebras上市首日股价接近翻倍，市值突破千亿美元重塑AI芯片格局",
+        "original_title": "Cerebras stock nearly doubles on day one as AI chipmaker hits $100 billion — what it means for AI infrastructure",
+        "summary": "AI芯片制造商Cerebras Systems在纳斯达克上市首日开盘报350美元，接近185美元发行价的两倍，市值迅速突破1000亿美元，成为全球最有价值的半导体公司之一，验证了AI行业对差异化芯片架构的旺盛需求。",
+        "rating": "S",
+        "score": 100,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "Cerebras的千亿市值可能刺激更多AI芯片初创公司获得融资，同时给英伟达带来实质性竞争压力，推动AI算力市场的多元化和成本下降。",
+        "entities": [
+          "Cerebras",
+          "NVIDIA",
+          "纳斯达克"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/cerebras-stock-nearly-doubles-on-day-one-as-ai-chipmaker-hits-100-billion-what-it-means-for-ai-infrastructure"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680405",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/cerebras-stock-nearly-doubles-on-day-one-as-ai-chipmaker-hits-100-billion-what-it-means-for-ai-infrastructure",
+        "event_id": null
+      },
+      {
+        "id": "2dfa70551e0b575be19627f82924dce2",
+        "title": "SpaceX与xAI合并后已流失超50名员工，人才流失问题引关注",
+        "chinese_title": "SpaceX与xAI合并后已流失超50名员工，人才流失问题引关注",
+        "original_title": "Elon Musk’s SpaceXAI has been bleeding staff since its merger",
+        "summary": "据报道，自2月份SpaceX与xAI合并以来，已有超过50名员工离开马斯克新组建的SpaceXAI，引发外界对人才 burnout、领导层变动、挖角竞争以及流动性事件削弱留任激励等问题的担忧。",
+        "rating": "A",
+        "score": 79,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "核心人才流失可能影响SpaceXAI的研发进度和产品迭代，同时反映出马斯克旗下公司合并后的整合挑战，或引发竞争对手的人才争夺。",
+        "entities": [
+          "Elon Musk",
+          "SpaceX",
+          "Spacexai",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680415",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/",
+        "event_id": null
+      },
+      {
+        "id": "0d27b687357235fcd70d9f36f62f5f8a",
+        "title": "OpenAI为ChatGPT移动端新增Codex远程访问功能，手机即可操控编程会话",
+        "chinese_title": "OpenAI为ChatGPT移动端新增Codex远程访问功能，手机即可操控编程会话",
+        "original_title": "OpenAI adds remote access to Codex in the ChatGPT mobile app, letting users control Codex sessions running on a connected computer directly from a phone (Zac Hall/9to5Mac)",
+        "summary": "OpenAI更新ChatGPT移动应用，新增对Codex的远程访问功能，用户可以直接通过手机控制运行在连接电脑上的Codex编程会话，实现移动设备对AI编程工作流的远程管理。",
+        "rating": "A",
+        "score": 83,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "移动端远程控制Codex将大幅提升开发者的工作灵活性，可能改变AI编程工具的使用场景和习惯，推动移动办公与AI编程的深度融合。",
+        "entities": [
+          "Codex",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260514/p35#a260514p35"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680425",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260514/p35#a260514p35",
+        "event_id": null
+      },
+      {
+        "id": "63b1cf93c2317e18b3bba1eb24893dac",
+        "title": "马斯克诉奥特曼庭审现插曲：OpenAI员工获赠永不停止做混蛋奖杯",
+        "chinese_title": "马斯克诉奥特曼庭审现插曲：OpenAI员工获赠永不停止做混蛋奖杯",
+        "original_title": "Behold, the Elon Musk jackass trophy",
+        "summary": "在马斯克诉奥特曼庭审期间，OpenAI员工为研究科学家Josh Achiam购买了一座刻有永不停止做混蛋的纪念奖杯，此事在庭上被读出，源于马斯克离开OpenAI时 allegedly 的相关言论，为这场严肃的法庭对决增添了戏剧性色彩。",
+        "rating": "B",
+        "score": 67,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "庭审中的戏剧性细节可能影响公众对双方当事人的观感，同时反映出OpenAI内部文化和对马斯克的态度，为理解这场诉讼增添人文维度。",
+        "entities": [
+          "Elon Musk",
+          "Josh Achiam",
+          "OpenAI",
+          "奥特曼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/930893/elon-musk-sam-altman-trial-ai-safety-jackass-statue"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680436",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/930893/elon-musk-sam-altman-trial-ai-safety-jackass-statue",
+        "event_id": null
+      },
+      {
+        "id": "dc5814a6d20515df87e65a8a116a1d94",
+        "title": "OpenAI确认Codex将登陆手机端，移动端AI编程时代来临",
+        "chinese_title": "OpenAI确认Codex将登陆手机端，移动端AI编程时代来临",
+        "original_title": "OpenAI says Codex is coming to your phone",
+        "summary": "OpenAI宣布其AI编程工具Codex将正式推出手机版本，更新后的应用让用户可以更灵活地管理工作流程，随时随地与AI编程助手交互。",
+        "rating": "A",
+        "score": 84,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Codex移动端化将扩大AI编程工具的受众范围，吸引更多非专业开发者使用，同时可能引发其他AI编程工具跟进移动端布局。",
+        "entities": [
+          "Codex",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680446",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/",
+        "event_id": null
+      },
+      {
+        "id": "b65241f3694394efbb435846629e2a3f",
+        "title": "马斯克缺席OpenAI诉讼庭审，随特朗普访华引发法律争议",
+        "chinese_title": "马斯克缺席OpenAI诉讼庭审，随特朗普访华引发法律争议",
+        "original_title": "Elon Musk Flees OpenAI Trial as Tide Turns Against Him",
+        "summary": "尽管法官明确要求其准备再次出庭作证，马斯克却随美国总统特朗普前往中国进行官方外交访问，缺席了与OpenAI及奥特曼诉讼案的结案陈词环节，其首席律师不得不代为道歉。",
+        "rating": "A",
+        "score": 86,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "马斯克缺席关键庭审可能影响陪审团对其诉讼诚意的判断，同时引发关于企业家法律义务与政治角色冲突的讨论，为案件增添不确定性。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "奥特曼",
+          "特朗普"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/elon-musk-flees-trial"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680467",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/elon-musk-flees-trial",
+        "event_id": null
+      },
+      {
         "id": "56b4b776daf2617bbcc6d3b373803402",
         "title": "AI若引爆大规模失业,公众会走向暴力反抗吗",
         "chinese_title": "AI若引爆大规模失业,公众会走向暴力反抗吗",
@@ -1207,6 +1817,65 @@
       }
     ],
     "2026-05-14": [
+      {
+        "id": "2e351cae7ccc75ee2e78f07bfe3d561a",
+        "title": "特斯拉工程师高度评价xAI编程助手：已用于车队数据分析和安全修复",
+        "chinese_title": "特斯拉工程师高度评价xAI编程助手：已用于车队数据分析和安全修复",
+        "original_title": "No great coding agents can be built without critical feedback from engineers with high taste. We’re incredibly fortunate to have received it from @yu...",
+        "summary": "xAI团队成员转发特斯拉工程师Yun-Ta Tsai的反馈，后者表示已将xAI的编程助手用于车队数据分类、训练标签优化、安全漏洞修补等多种场景，认为其能力远超普通编码工具。",
+        "rating": "B",
+        "score": 73,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "特斯拉内部对xAI工具的实际应用验证了其工业级价值，可能吸引更多企业客户采用xAI产品，同时加深马斯克旗下公司间的技术协同。",
+        "entities": [
+          "Tesla",
+          "Yun-Ta Tsai",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/billyuchenlin/status/2055072521951825954"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680233",
+        "source": "x",
+        "url": "https://x.com/billyuchenlin/status/2055072521951825954",
+        "event_id": null
+      },
+      {
+        "id": "6b87bc5fae64c828affaf3167f8ce3ce",
+        "title": "Claude与Codex自主运行破纪录：AI编程助手超越人类nanoGPT基准",
+        "chinese_title": "Claude与Codex自主运行破纪录：AI编程助手超越人类nanoGPT基准",
+        "original_title": "RT Prime Intellect: Automating AI research is the next major step in AI We let Claude Code (Opus 4.7) and Codex (GPT 5.5) run autonomously on the nano...",
+        "summary": "Prime Intellect让Claude Code和Codex在nanoGPT速度优化任务上自主运行约1万次，消耗约1.4万H200 GPU小时，最终Claude以2930步的成绩打破2990步的人类基线记录。",
+        "rating": "A",
+        "score": 85,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "AI自主进行AI研究并取得突破，标志着自动化AI研究的重要进展，可能加速模型优化迭代周期，改变AI研发的人力投入结构。",
+        "entities": [
+          "Claude",
+          "Codex",
+          "Nanogpt",
+          "Prime Intellect"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Grad62304977/status/2055077584346501269"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778854111,
+        "published_at": "2026-05-15T22:08:31.680245",
+        "source": "x",
+        "url": "https://x.com/Grad62304977/status/2055077584346501269",
+        "event_id": null
+      },
       {
         "id": "7d6a8aceb7fd976147874b8f9d47f696",
         "title": "AMD服务器CPU营收份额突破46%，英特尔仍守住消费PC七成市场",
@@ -21631,6 +22300,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-15T21:02:52.840220",
-  "total_news": 743
+  "last_updated": "2026-05-15T22:14:31.039755",
+  "total_news": 766
 }
