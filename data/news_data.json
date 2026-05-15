@@ -2,6 +2,91 @@
   "news": {
     "2026-05-14": [
       {
+        "id": "085fc5a9c06d1af218d7be491bd7d459",
+        "title": "Gemini 玩宝可梦团队发布自进化智能体新研究",
+        "chinese_title": "Gemini 玩宝可梦团队发布自进化智能体新研究",
+        "original_title": "Continual Harness: Online Adaptation for Self-Improving Foundation Agents [R]",
+        "summary": "Google DeepMind 的 Gemini Plays Pokémon 团队发布新论文，提出 Continual Harness 框架，使基础智能体能够在线自适应环境变化，实现自我改进。该系统已在多款宝可梦游戏中展示了无需人工干预的迭代能力进化。",
+        "rating": "A",
+        "score": 83,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "自进化智能体框架若泛化到其他复杂任务领域，可能重塑强化学习和自主 AI 系统的研发范式，推动通用智能体（Foundation Agent）的实用化进程。",
+        "entities": [
+          "DeepMind",
+          "Gemini",
+          "Pokémon"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tcmj6v/continual_harness_online_adaptation_for/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778824939,
+        "published_at": "2026-05-15T14:02:19.699681",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tcmj6v/continual_harness_online_adaptation_for/",
+        "event_id": null
+      },
+      {
+        "id": "e6d3f5191390250aa6d6aef8f87eaf6a",
+        "title": "研究者训练 Transformer 棋类模型模拟人类各级别棋风",
+        "chinese_title": "研究者训练 Transformer 棋类模型模拟人类各级别棋风",
+        "original_title": "Trained transformer-based chess models to play like humans (including thinking time) [P]",
+        "summary": "研究者基于近 10 亿局 Lichess 对局数据，训练了一系列 Transformer 棋类模型，使其能够模拟从 800 分到 2500+ 分不同等级的人类棋风，包括思考时间分布和典型失误模式。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "人类风格模拟模型可应用于棋类教学、AI 对局真实性评估，以及更广泛的博弈论研究中人类行为建模。",
+        "entities": [
+          "Lichess",
+          "Transformer"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tcemdg/trained_transformerbased_chess_models_to_play/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778824939,
+        "published_at": "2026-05-15T14:02:19.699695",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tcemdg/trained_transformerbased_chess_models_to_play/",
+        "event_id": null
+      },
+      {
+        "id": "05d46ea61493395ec39faf407c53f7eb",
+        "title": "Scenema Audio 开源零样本情感语音克隆模型",
+        "chinese_title": "Scenema Audio 开源零样本情感语音克隆模型",
+        "original_title": "Scenema Audio: Zero-shot expressive voice cloning and speech generation [N]",
+        "summary": "Scenema 发布并开源了 Scenema Audio 模型，支持零样本情感语音克隆与生成。该模型将语音身份与情感表现解耦，用户可通过文本描述情感风格（如愤怒、悲伤、兴奋），并可选提供参考音频来指定说话人身份。",
+        "rating": "A",
+        "score": 76,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "情感与身份解耦的语音合成技术可能加速有声内容、游戏配音、虚拟助手等场景的商业化落地，同时引发深度伪造音频的伦理与监管讨论。",
+        "entities": [
+          "Scenema",
+          "Scenema Audio"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tcdj2d/scenema_audio_zeroshot_expressive_voice_cloning/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778824939,
+        "published_at": "2026-05-15T14:02:19.699708",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tcdj2d/scenema_audio_zeroshot_expressive_voice_cloning/",
+        "event_id": null
+      },
+      {
         "id": "7d6a8aceb7fd976147874b8f9d47f696",
         "title": "AMD服务器CPU营收份额突破46%，英特尔仍守住消费PC七成市场",
         "chinese_title": "AMD服务器CPU营收份额突破46%，英特尔仍守住消费PC七成市场",
@@ -20426,6 +20511,94 @@
     ],
     "2026-05-15": [
       {
+        "id": "ceb55c7ad3244eff6c36bda15225952c",
+        "title": "arXiv 对含 LLM 幻觉错误的论文实施一年禁投",
+        "chinese_title": "arXiv 对含 LLM 幻觉错误的论文实施一年禁投",
+        "original_title": "arXiv implements 1-year ban for papers containing incontrovertible evidence of unchecked LLM-generated errors, such as hallucinated references or results. [N]",
+        "summary": "arXiv moderation 团队宣布，对于包含不可辩驳的 LLM 生成错误（如虚构参考文献或结果）的论文，作者将被禁止在一年内提交新论文。该政策强调作者需对论文全部内容负责，无论内容如何生成。",
+        "rating": "B",
+        "score": 73,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "此政策可能引发学术界对 AI 辅助写作工具的重新审视，相关写作检测工具或迎来需求增长；同时可能促使其他预印本平台跟进类似规范。",
+        "entities": [
+          "Arxiv",
+          "LLM",
+          "Thomas G. Dietterich"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tdje2d/arxiv_implements_1year_ban_for_papers_containing/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778824939,
+        "published_at": "2026-05-15T14:02:19.699633",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tdje2d/arxiv_implements_1year_ban_for_papers_containing/",
+        "event_id": null
+      },
+      {
+        "id": "405ec14909c1567448bf0c87355b267d",
+        "title": "Anthropic 呼吁美国收紧对华芯片出口限制",
+        "chinese_title": "Anthropic 呼吁美国收紧对华芯片出口限制",
+        "original_title": "Anthropic Calls for Tighter U.S. Chip Restrictions on China",
+        "summary": "Anthropic 发布题为《2028：全球 AI 领导权的两种情景》的政策论文，呼吁美国政府进一步限制中国获取先进 AI 芯片，恰逢特朗普总统访华期间，引发业界对中美 AI 竞争格局的广泛关注。",
+        "rating": "A",
+        "score": 86,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "该政策主张可能加剧中美在 AI 基础设施领域的脱钩，推动中国加速自主芯片研发，同时影响全球 AI 供应链和云计算市场的竞争格局。",
+        "entities": [
+          "Anthropic",
+          "中国",
+          "特朗普"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/anthropic-calls-tighter-u-s-chip-restrictions-china"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778824939,
+        "published_at": "2026-05-15T14:02:19.699734",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/anthropic-calls-tighter-u-s-chip-restrictions-china",
+        "event_id": null
+      },
+      {
+        "id": "fa3210b7a666ea35f54cf0b363b95d46",
+        "title": "英国教育科技独角兽 Multiverse 获 7000 万美元融资",
+        "chinese_title": "英国教育科技独角兽 Multiverse 获 7000 万美元融资",
+        "original_title": "London-based edtech startup Multiverse raised $70M at a $2.1B valuation from Index and others as it pushes into AI training; it acquired StackFuel in January (Kieran Smith/Financial Times)",
+        "summary": "由英国前首相布莱尔之子 Euan Blair 创立的学徒制教育平台 Multiverse 完成 7000 万美元融资，估值达 21 亿美元。该公司正加速布局 AI 技能培训，并于年初收购了德国数据培训公司 StackFuel。",
+        "rating": "A",
+        "score": 77,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "AI 技能培训赛道持续升温，Multiverse 的学徒制模式若成功扩展至 AI 领域，可能挑战传统高等教育和职业培训市场的格局。",
+        "entities": [
+          "Euan Blair",
+          "Index Ventures",
+          "Multiverse",
+          "Stackfuel"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260515/p1#a260515p1"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778824939,
+        "published_at": "2026-05-15T14:02:19.699751",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260515/p1#a260515p1",
+        "event_id": null
+      },
+      {
         "id": "b74623b58b775ceae2f327f3594eacda",
         "title": "Claude Code如何应对大型代码库，Anthropic给出最佳实践",
         "chinese_title": "Claude Code如何应对大型代码库，Anthropic给出最佳实践",
@@ -20753,6 +20926,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-15T13:01:47.146128",
-  "total_news": 713
+  "last_updated": "2026-05-15T14:02:49.529094",
+  "total_news": 719
 }
