@@ -2,6 +2,150 @@
   "news": {
     "2026-05-16": [
       {
+        "id": "d144e78b956e3b83b37bde55ceb7f2a6",
+        "title": "arXiv拟封禁含AI幻觉引用论文一年,学术圈分歧明显",
+        "chinese_title": "arXiv拟封禁含AI幻觉引用论文一年,学术圈分歧明显",
+        "original_title": "Backlash against Arxiv's proposed 1 year ban is genuinely perplexing. [D]",
+        "summary": "arXiv提议对提交含LLM幻觉引用等明显AI生成痕迹论文的作者实施一年禁令,引发研究者强烈反弹。反对者认为AI时代不应固守旧规,支持者则担忧学术质量被稀释,机器学习社区就此展开激烈讨论。",
+        "rating": "B",
+        "score": 70,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "事件可能推动顶会与预印本平台建立统一的AI使用披露规范,并影响AI辅助写作工具厂商的合规策略。",
+        "entities": [
+          "Arxiv",
+          "LLM"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tens5n/backlash_against_arxivs_proposed_1_year_ban_is/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778936552,
+        "published_at": "2026-05-16T21:02:32.191854",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tens5n/backlash_against_arxivs_proposed_1_year_ban_is/",
+        "event_id": null
+      },
+      {
+        "id": "d52e592724fdb0d2c38ce3117c2b92ae",
+        "title": "开发者实测:Claude深度推理、Gemini执行翻车,谁是ML调试最佳搭档",
+        "chinese_title": "开发者实测:Claude深度推理、Gemini执行翻车,谁是ML调试最佳搭档",
+        "original_title": "[R] Which LLMs are actually best for bleeding-edge Linux/ML debugging workflows in 2026? [R]",
+        "summary": "一位ML开发者分享多模型协同调试经验,认为Claude适合深度推理、Perplexity擅长检索,而Gemini 3.1 Pro在长任务中表现衰退、常给出过度复杂方案,引发对前沿LLM真实生产力的讨论。",
+        "rating": "A",
+        "score": 77,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "用户长会话场景下的模型衰减问题或将推动各家厂商加快上下文持久化与工具使用能力的迭代,也可能影响开发者付费订阅的迁移方向。",
+        "entities": [
+          "Claude",
+          "Gemini",
+          "OpenAI",
+          "Perplexity"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning (qwen)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tejwbl/r_which_llms_are_actually_best_for_bleedingedge/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778936552,
+        "published_at": "2026-05-16T21:02:32.191878",
+        "source": "Machine Learning (qwen)",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tejwbl/r_which_llms_are_actually_best_for_bleedingedge/",
+        "event_id": null
+      },
+      {
+        "id": "1b38f760ddd1073fbbe317682a721b37",
+        "title": "研究员实测RX 7900XTX:ROCm跑PyTorch依旧问题重重",
+        "chinese_title": "研究员实测RX 7900XTX:ROCm跑PyTorch依旧问题重重",
+        "original_title": "ROCm with PyTorch and PyTorch Lightning seems to still suck for research [D]",
+        "summary": "一位开发者将基于SANA架构的Flow Matching训练代码从RTX 3090迁移到RX 7900XTX,发现ROCm环境下大量出现NaN,前向计算异常,认为AMD在科研场景的成熟度仍远落后CUDA。",
+        "rating": "A",
+        "score": 76,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "AMD AI生态短板会进一步巩固NVIDIA在科研训练市场的统治力,也可能推动AMD加快ROCm补丁迭代和与PyTorch团队的深度合作。",
+        "entities": [
+          "Amd",
+          "NVIDIA",
+          "Pytorch",
+          "Rocm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tedjwo/rocm_with_pytorch_and_pytorch_lightning_seems_to/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778936552,
+        "published_at": "2026-05-16T21:02:32.191906",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tedjwo/rocm_with_pytorch_and_pytorch_lightning_seems_to/",
+        "event_id": null
+      },
+      {
+        "id": "8e2205c7578e6f188a6c13c5602b8a4a",
+        "title": "OpenClaw作者30天烧掉130万美元OpenAI tokens引热议",
+        "chinese_title": "OpenClaw作者30天烧掉130万美元OpenAI tokens引热议",
+        "original_title": "OpenClaw Creator Spent $1.3M on OpenAI Tokens in 30 Days",
+        "summary": "OpenClaw项目创建者透露过去30天在OpenAI API上花费130万美元token费用,规模之大引发开发者社区对AI Agent商业模式与算力成本的广泛讨论。",
+        "rating": "A",
+        "score": 83,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "高强度Token消耗暴露Agent类应用的算力成本压力,可能加速厂商推出包年套餐、批量折扣,也利好自研模型与开源替代方案。",
+        "entities": [
+          "OpenAI",
+          "Openclaw"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://twitter.com/steipete/status/2055346265869721905"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778936552,
+        "published_at": "2026-05-16T21:02:32.191918",
+        "source": "Hacker News",
+        "url": "https://twitter.com/steipete/status/2055346265869721905",
+        "event_id": null
+      },
+      {
+        "id": "082fc582cc50f66b271fc8630cdf7a84",
+        "title": "无摄像头智能眼镜实时显示对话字幕,被赞少了几分窥探感",
+        "chinese_title": "无摄像头智能眼镜实时显示对话字幕,被赞少了几分窥探感",
+        "original_title": "These Smart Glasses That Show Captions of What Everyone’s Saying Without a Creepy Spy Camera Actually Seem Pretty Awesome",
+        "summary": "一款新型智能眼镜专注于为佩戴者实时显示对话字幕,不配备摄像头,避免常见隐私争议。在嘈杂环境与听障辅助场景显示出实用价值,被认为是更受欢迎的可穿戴方向。",
+        "rating": "B",
+        "score": 71,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "无摄像头路线或将成为差异化卖点,影响Meta、Apple等大厂在AI眼镜上的隐私设计选择,并带动听障辅助市场重新洗牌。",
+        "entities": [
+          "Ai可穿戴",
+          "智能眼镜"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/health-medicine/transcription-smart-glasses"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778936552,
+        "published_at": "2026-05-16T21:02:32.191929",
+        "source": "Futurism",
+        "url": "https://futurism.com/health-medicine/transcription-smart-glasses",
+        "event_id": null
+      },
+      {
         "id": "3c0b4553fbf33f2844db70d735a09c08",
         "title": "苹果M5首个提权漏洞被发现，研究员借助Claude绕过内存完整性防护",
         "chinese_title": "苹果M5首个提权漏洞被发现，研究员借助Claude绕过内存完整性防护",
@@ -22621,6 +22765,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-16T20:02:44.893942",
-  "total_news": 775
+  "last_updated": "2026-05-16T21:03:09.971749",
+  "total_news": 780
 }
