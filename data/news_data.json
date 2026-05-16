@@ -2,6 +2,66 @@
   "news": {
     "2026-05-16": [
       {
+        "id": "3c0b4553fbf33f2844db70d735a09c08",
+        "title": "苹果M5首个提权漏洞被发现，研究员借助Claude绕过内存完整性防护",
+        "chinese_title": "苹果M5首个提权漏洞被发现，研究员借助Claude绕过内存完整性防护",
+        "original_title": "First Apple M5 memory exploit discovered using Anthropic AI, gives root access on MacOS — Claude Mythos helps security researchers bypass Memory Integrity Enforcement",
+        "summary": "安全研究人员利用Anthropic的Claude模型协助分析，发现了苹果M5架构上首个本地提权漏洞，可在macOS取得root权限，并成功绕过苹果新引入的内存完整性强制机制MIE。",
+        "rating": "A",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可能促使苹果加紧M5固件与macOS安全补丁；同时凸显大模型辅助漏洞挖掘的双刃剑属性，或加速AI安全研究伦理与监管讨论。",
+        "entities": [
+          "Anthropic",
+          "Apple",
+          "Claude",
+          "Macos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware (apple)",
+            "url": "https://www.tomshardware.com/tech-industry/cyber-security/apple-m5-architecture-suffers-first-privilege-escalation-exploit-anthropics-claude-mythos-helps-researchers-bypass-memory-integrity-enforcement"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778932929,
+        "published_at": "2026-05-16T20:02:09.301072",
+        "source": "Tom's Hardware (apple)",
+        "url": "https://www.tomshardware.com/tech-industry/cyber-security/apple-m5-architecture-suffers-first-privilege-escalation-exploit-anthropics-claude-mythos-helps-researchers-bypass-memory-integrity-enforcement",
+        "event_id": null
+      },
+      {
+        "id": "bba60cc01e553191cb05d3fa0d7030d6",
+        "title": "新基准WorldReasonBench:AI视频画面惊艳但物理推理仍是短板",
+        "chinese_title": "新基准WorldReasonBench:AI视频画面惊艳但物理推理仍是短板",
+        "original_title": "New benchmark confirms AI video generators look stunning but still can't reason about the world",
+        "summary": "新基准WorldReasonBench从物理与逻辑合理性而非画面质量评估视频生成模型，字节Seedance 2.0领先Veo 3.1与Sora 2，商业模型得分约为开源两倍，但所有模型在逻辑推理维度都明显偏弱。",
+        "rating": "A",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "视频模型从像素生成器迈向真正世界模型仍存差距，可能推动各厂商在物理仿真与因果推理方向重新加码；开源与闭源差距也将影响后续算力与数据投入策略。",
+        "entities": [
+          "ByteDance",
+          "Seedance",
+          "Sora",
+          "Veo"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER (sora)",
+            "url": "https://the-decoder.com/new-benchmark-confirms-ai-video-generators-look-stunning-but-still-cant-reason-about-the-world/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778932929,
+        "published_at": "2026-05-16T20:02:09.301097",
+        "source": "THE DECODER (sora)",
+        "url": "https://the-decoder.com/new-benchmark-confirms-ai-video-generators-look-stunning-but-still-cant-reason-about-the-world/",
+        "event_id": null
+      },
+      {
         "id": "31d812d5168b45cf02dce681874a1eb5",
         "title": "AI数据中心成噪音公害：低频次声波让周边居民不堪其扰",
         "chinese_title": "AI数据中心成噪音公害：低频次声波让周边居民不堪其扰",
@@ -22561,6 +22621,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-16T19:24:29.169072",
-  "total_news": 773
+  "last_updated": "2026-05-16T20:02:44.893942",
+  "total_news": 775
 }
