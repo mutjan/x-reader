@@ -32,6 +32,89 @@
         "event_id": null
       },
       {
+        "id": "040461c686b6071e5e6c55231734407b",
+        "title": "DeepSeek V4-Flash MLA缓存参数曝光，单百万上下文需448字节",
+        "chinese_title": "DeepSeek V4-Flash MLA缓存参数曝光，单百万上下文需448字节",
+        "original_title": "figures for V4-Flash isn't this quite A LOT actually? I recall that Qwen has lower requirements I have doubts about this implementation",
+        "summary": "开发者从运行引擎源码中提取出DeepSeek-V4-Flash的MLA KV缓存精确数据，每层每token需要448字节，引发与Qwen等模型效率对比的讨论。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "KV缓存效率直接影响大模型长上下文部署成本，该数据可能重塑开源模型性价比评估体系，影响云厂商选型决策。",
+        "entities": [
+          "DeepSeek",
+          "Qwen"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/teortaxesTex/status/2055425229128716480"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778904229,
+        "published_at": "2026-05-16T12:03:49.952844",
+        "source": "x",
+        "url": "https://x.com/teortaxesTex/status/2055425229128716480",
+        "event_id": null
+      },
+      {
+        "id": "ec36a5965877677c1d8e8f66e7172254",
+        "title": "Nous Research发布Lighthouse Attention：512K上下文训练提速17倍",
+        "chinese_title": "Nous Research发布Lighthouse Attention：512K上下文训练提速17倍",
+        "original_title": "RT Nous Research: Today we release Lighthouse Attention, a selection-based hierarchical attention for long-context pre-training that delivers a 1.4-1....",
+        "summary": "Nous Research推出基于选择的分层注意力机制Lighthouse Attention，在98K上下文实现1.4-1.7倍加速，512K上下文下比标准注意力快17倍，无需自定义稀疏内核。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "长上下文训练成本大幅降低将加速百万级上下文模型普及，可能冲击现有RAG方案市场，推动端侧长文本应用爆发。",
+        "entities": [
+          "Lighthouse Attention",
+          "Nous Research"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/voooooogel/status/2055402006211383472"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778904229,
+        "published_at": "2026-05-16T12:03:49.952876",
+        "source": "x",
+        "url": "https://x.com/voooooogel/status/2055402006211383472",
+        "event_id": null
+      },
+      {
+        "id": "e376df896c10eb391009b2540228b5e3",
+        "title": "AI模型出现反学习悖论：越被警告假信息越信以为真",
+        "chinese_title": "AI模型出现反学习悖论：越被警告假信息越信以为真",
+        "original_title": "New paper: We finetuned models on documents that discuss an implausible claim and warn that the claim is false. Models ended up believing the claim! E...",
+        "summary": "研究人员发现，让模型在明确标注为假的荒谬声明文档上微调后，模型反而更相信这些假信息，如Ed Sheeran赢得奥运百米等案例。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该发现对AI安全对齐研究提出根本性质疑，可能迫使行业重新审视微调数据清洗策略和模型可信度评估框架。",
+        "entities": [
+          "Ed Sheeran"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/OwainEvans_UK/status/2055318932857459009"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778904229,
+        "published_at": "2026-05-16T12:03:49.952895",
+        "source": "x",
+        "url": "https://x.com/OwainEvans_UK/status/2055318932857459009",
+        "event_id": null
+      },
+      {
         "id": "59bfe9beb640dff8be981eb26b27e7a6",
         "title": "AI终局之问：替代20%工作岗位将引发史上最大财富转移？",
         "chinese_title": "AI终局之问：替代20%工作岗位将引发史上最大财富转移？",
@@ -2070,89 +2153,6 @@
       }
     ],
     "2026-05-15": [
-      {
-        "id": "040461c686b6071e5e6c55231734407b",
-        "title": "DeepSeek V4-Flash MLA缓存参数曝光，单百万上下文需448字节",
-        "chinese_title": "DeepSeek V4-Flash MLA缓存参数曝光，单百万上下文需448字节",
-        "original_title": "figures for V4-Flash isn't this quite A LOT actually? I recall that Qwen has lower requirements I have doubts about this implementation",
-        "summary": "开发者从运行引擎源码中提取出DeepSeek-V4-Flash的MLA KV缓存精确数据，每层每token需要448字节，引发与Qwen等模型效率对比的讨论。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "KV缓存效率直接影响大模型长上下文部署成本，该数据可能重塑开源模型性价比评估体系，影响云厂商选型决策。",
-        "entities": [
-          "DeepSeek",
-          "Qwen"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/teortaxesTex/status/2055425229128716480"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778904229,
-        "published_at": "2026-05-16T12:03:49.952844",
-        "source": "x",
-        "url": "https://x.com/teortaxesTex/status/2055425229128716480",
-        "event_id": null
-      },
-      {
-        "id": "ec36a5965877677c1d8e8f66e7172254",
-        "title": "Nous Research发布Lighthouse Attention：512K上下文训练提速17倍",
-        "chinese_title": "Nous Research发布Lighthouse Attention：512K上下文训练提速17倍",
-        "original_title": "RT Nous Research: Today we release Lighthouse Attention, a selection-based hierarchical attention for long-context pre-training that delivers a 1.4-1....",
-        "summary": "Nous Research推出基于选择的分层注意力机制Lighthouse Attention，在98K上下文实现1.4-1.7倍加速，512K上下文下比标准注意力快17倍，无需自定义稀疏内核。",
-        "rating": "B",
-        "score": 70,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "长上下文训练成本大幅降低将加速百万级上下文模型普及，可能冲击现有RAG方案市场，推动端侧长文本应用爆发。",
-        "entities": [
-          "Lighthouse Attention",
-          "Nous Research"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/voooooogel/status/2055402006211383472"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778904229,
-        "published_at": "2026-05-16T12:03:49.952876",
-        "source": "x",
-        "url": "https://x.com/voooooogel/status/2055402006211383472",
-        "event_id": null
-      },
-      {
-        "id": "e376df896c10eb391009b2540228b5e3",
-        "title": "AI模型出现反学习悖论：越被警告假信息越信以为真",
-        "chinese_title": "AI模型出现反学习悖论：越被警告假信息越信以为真",
-        "original_title": "New paper: We finetuned models on documents that discuss an implausible claim and warn that the claim is false. Models ended up believing the claim! E...",
-        "summary": "研究人员发现，让模型在明确标注为假的荒谬声明文档上微调后，模型反而更相信这些假信息，如Ed Sheeran赢得奥运百米等案例。",
-        "rating": "B",
-        "score": 66,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该发现对AI安全对齐研究提出根本性质疑，可能迫使行业重新审视微调数据清洗策略和模型可信度评估框架。",
-        "entities": [
-          "Ed Sheeran"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/OwainEvans_UK/status/2055318932857459009"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778904229,
-        "published_at": "2026-05-16T12:03:49.952895",
-        "source": "x",
-        "url": "https://x.com/OwainEvans_UK/status/2055318932857459009",
-        "event_id": null
-      },
       {
         "id": "16e5f5ee630ab54a8d9c12a9d2ea5a21",
         "title": "IPO尘埃落定，Cerebras重启AI芯片极限挑战",
@@ -8802,6 +8802,37 @@
       }
     ],
     "2026-05-13": [
+      {
+        "id": "6d0ba5e9d952dfbddba059c454c7f6d8",
+        "title": "ExploitBench基准曝光AI漏洞利用能力，私有前沿模型可攻破近半V8样例",
+        "chinese_title": "ExploitBench基准曝光AI漏洞利用能力，私有前沿模型可攻破近半V8样例",
+        "original_title": "ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents",
+        "summary": "研究者发布ExploitBench，将漏洞利用拆成16级能力并用41个V8真实漏洞测试AI Agent。结果显示公开模型多止步于触发崩溃，私有前沿模型已能在约半数样例中实现任意代码执行。",
+        "rating": "S",
+        "score": 97,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该基准把AI安全讨论从发现漏洞推进到构造可复用利用链，可能推动浏览器厂商、云安全团队和模型厂商重设访问控制、红队评测与负责任披露流程。",
+        "entities": [
+          "Ai Agent",
+          "Exploitbench",
+          "V8",
+          "漏洞利用",
+          "网络安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "arXiv",
+            "url": "https://arxiv.org/abs/2605.14153"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778912196,
+        "published_at": "2026-05-16T14:16:36.021319",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2605.14153",
+        "event_id": null
+      },
       {
         "id": "6dd48bd7c6afe2a5fbed4048b9b0f38f",
         "title": "AI设计抗生素入选六大抗菌耐药突破，免疫疗法亦有进展",
@@ -21770,6 +21801,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-16T12:07:14.189597",
-  "total_news": 746
+  "last_updated": "2026-05-16T14:16:36.043179",
+  "total_news": 747
 }
