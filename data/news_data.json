@@ -2,6 +2,64 @@
   "news": {
     "2026-05-16": [
       {
+        "id": "e74817972dc5dcdc82b136285fe3fc8e",
+        "title": "Grok推出终端内AI视频生成工具，可在命令行直接创建视频内容",
+        "chinese_title": "Grok推出终端内AI视频生成工具，可在命令行直接创建视频内容",
+        "original_title": "you can use grok build to create interdimensional TV, all within your terminal, powered by grok imagine",
+        "summary": "xAI的Grok新增终端内视频生成功能Grok Build，用户可直接在命令行调用Grok Imagine模型创建视频，将AI视频创作集成到开发者工作流中。",
+        "rating": "B",
+        "score": 73,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "终端视频生成工具可能改变开发者内容创作方式，推动AI视频从GUI向CLI场景渗透，影响开发者工具和AI视频赛道竞争格局。",
+        "entities": [
+          "Grok",
+          "Grok Imagine",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/skcd42/status/2055553048026784143"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778918471,
+        "published_at": "2026-05-16T16:01:11.923579",
+        "source": "x",
+        "url": "https://x.com/skcd42/status/2055553048026784143",
+        "event_id": null
+      },
+      {
+        "id": "055863df75c9f2a28e4b38b2d45025d9",
+        "title": "AI2与伯克利推出EMO模型：仅保留12.5%专家即可维持近满性能",
+        "chinese_title": "AI2与伯克利推出EMO模型：仅保留12.5%专家即可维持近满性能",
+        "original_title": "Researchers train AI model that hits near-full performance with just 12.5 percent of its experts",
+        "summary": "Allen Institute for AI与UC Berkeley联合推出EMO混合专家模型，其专家按内容领域而非词类型 specialization，剪除87.5%专家后性能仅下降约1个百分点，为内存受限场景部署MoE模型提供新路径。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "MoE模型大幅压缩而不显著损失性能，可能加速大模型端侧部署和边缘计算应用，影响芯片算力需求和模型推理成本结构。",
+        "entities": [
+          "Allen Institute For Ai",
+          "Emo",
+          "Uc Berkeley"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/researchers-train-ai-model-that-hits-near-full-performance-with-just-12-5-percent-of-its-experts/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778918471,
+        "published_at": "2026-05-16T16:01:11.923634",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/researchers-train-ai-model-that-hits-near-full-performance-with-just-12-5-percent-of-its-experts/",
+        "event_id": null
+      },
+      {
         "id": "41da241704436ca1083965917b6fcb3e",
         "title": "DeepSeek招募Agent Harness产品经理，押注模型与产品共同进化",
         "chinese_title": "DeepSeek招募Agent Harness产品经理，押注模型与产品共同进化",
@@ -112,6 +170,181 @@
         "published_at": "2026-05-16T15:03:28.114439",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1tegx6p/claude_loses_vs_lance_on_first_attempt_vs_elite_4/",
+        "event_id": null
+      },
+      {
+        "id": "a9a0006da110b0e784108e4cd951fd55",
+        "title": "开发者狂烧token实验：100个Codex云端跑PR审查，押注token不再重要的未来",
+        "chinese_title": "开发者狂烧token实验：100个Codex云端跑PR审查，押注token不再重要的未来",
+        "original_title": "People freaking out over my AI spend. What nobody sees: Part of what excites me so much about working on OpenClaw is that I'm trying to answer the que...",
+        "summary": "Peter Steinberger分享其OpenClaw项目实践：常态运行约100个Codex实例在云端审查每个PR、每次提交甚至历史Issue，提前探索token成本归零后软件开发该如何重构。",
+        "rating": "A",
+        "score": 82,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "如果token价格持续下跌，Agent密集型开发流可能成为新常态，倒逼GitHub Copilot、Cursor等工具重新设计计费与并发模型。",
+        "entities": [
+          "Codex",
+          "Github",
+          "Openclaw"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/steipete/status/2055405041843052792"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778915008,
+        "published_at": "2026-05-16T15:03:28.114373",
+        "source": "x",
+        "url": "https://x.com/steipete/status/2055405041843052792",
+        "event_id": null
+      },
+      {
+        "id": "048756b1005054aeffa0a521e56402fd",
+        "title": "前谷歌研究员从零复刻AlphaGo，验证前沿AI能力快速平民化",
+        "chinese_title": "前谷歌研究员从零复刻AlphaGo，验证前沿AI能力快速平民化",
+        "original_title": "RT Eric Jang: For the last few months I've been working on a from-scratch implementation of AlphaGo, a 2016 AI breakthrough that inspired me to get in...",
+        "summary": "Eric Jang用几个月时间从零实现了2016年震动业界的AlphaGo，他指出十年前需要DeepMind级算力才能做到的事情，如今个人开发者也能完成，前沿能力正以惊人速度下沉。",
+        "rating": "A",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "前沿AI能力的快速下沉意味着开源社区可以迅速复现闭源成果，将削弱头部实验室的护城河，并影响算力厂商对长期需求的判断。",
+        "entities": [
+          "Alphago",
+          "DeepMind",
+          "Eric Jang"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/dwarkesh_sp/status/2055383707373232169"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778915008,
+        "published_at": "2026-05-16T15:03:28.114385",
+        "source": "x",
+        "url": "https://x.com/dwarkesh_sp/status/2055383707373232169",
+        "event_id": null
+      },
+      {
+        "id": "6d31bcca43932c43a9b8a5539c1bc552",
+        "title": "LMArena揭秘背后数据管线：每周百万投票如何自动打标",
+        "chinese_title": "LMArena揭秘背后数据管线：每周百万投票如何自动打标",
+        "original_title": "Millions of votes a week. One tagging system. Arena researchers Guanglei Song and I-Hung Hsu walk through the data pipeline behind Arena's category le...",
+        "summary": "LMArena研究员Guanglei Song和I-Hung Hsu公开了支撑分类榜单的数据管线：基于Databricks和Spark，通过可插拔的LLM打标框架对文本、图像、前端编程等评测自动归类，形成可供研究使用的元数据层。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "公开打标管线有助于学界复现Arena结论，也可能引发对评测中立性、LLM自评偏差的更多讨论。",
+        "entities": [
+          "Databricks",
+          "Lmarena",
+          "Spark"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/arena/status/2055316670898741526"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778915008,
+        "published_at": "2026-05-16T15:03:28.114398",
+        "source": "x",
+        "url": "https://x.com/arena/status/2055316670898741526",
+        "event_id": null
+      },
+      {
+        "id": "ef252115571c9de9457f5db5edb737ae",
+        "title": "澳洲兄弟用50万美元把AI训练加速30倍，Unsloth如何撬动巨头",
+        "chinese_title": "澳洲兄弟用50万美元把AI训练加速30倍，Unsloth如何撬动巨头",
+        "original_title": "OpenAI spent billions on training infrastructure. Two Aussie brothers made AI training 30x faster ~ with $500K total. 🤯 Meet Daniel & Michael Han ...",
+        "summary": "前NVIDIA工程师Daniel Han与兄弟Michael创办Unsloth，用约50万美元的小成本实现AI训练30倍加速，并先后修复了Llama、Gemma、Mistral、Phi等大厂模型中超过20个底层bug。",
+        "rating": "A",
+        "score": 86,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "训练效率工具链的小团队崛起将冲击大厂内部基础设施投入逻辑，同时也让中小公司有机会用极低预算微调前沿模型。",
+        "entities": [
+          "Daniel Han",
+          "NVIDIA",
+          "Unsloth"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/CaptainInsightX/status/2055313074568249635"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778915008,
+        "published_at": "2026-05-16T15:03:28.114409",
+        "source": "x",
+        "url": "https://x.com/CaptainInsightX/status/2055313074568249635",
+        "event_id": null
+      },
+      {
+        "id": "93b2a9df899bd4aed868c861da4287b4",
+        "title": "Anthropic开放4个月安全研究Fellows项目，周薪3850美元、无需AI背景",
+        "chinese_title": "Anthropic开放4个月安全研究Fellows项目，周薪3850美元、无需AI背景",
+        "original_title": "🚨 Anthropic just launched its 4-month Fellows Program. Get paid $3,850/week to break into AI safety research, no previous AI experience required �...",
+        "summary": "Anthropic推出为期4个月的Fellows Program，向无AI研究经验者开放，提供每周3850美元薪酬，要求Python基础与扎实数学背景，鼓励跨学科人才进入AI安全研究领域。",
+        "rating": "A",
+        "score": 77,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "头部AI实验室直接面向跨学科人才挖人，可能加剧学术圈青年研究员向工业界流失，并把AI安全研究的标准向工程化方向倾斜。",
+        "entities": [
+          "Anthropic",
+          "Fellows Program"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/DataChaz/status/2055305517992661445"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778915008,
+        "published_at": "2026-05-16T15:03:28.114419",
+        "source": "x",
+        "url": "https://x.com/DataChaz/status/2055305517992661445",
+        "event_id": null
+      },
+      {
+        "id": "6d0ba5e9d952dfbddba059c454c7f6d8",
+        "title": "ExploitBench基准曝光AI漏洞利用能力，私有前沿模型可攻破近半V8样例",
+        "chinese_title": "ExploitBench基准曝光AI漏洞利用能力，私有前沿模型可攻破近半V8样例",
+        "original_title": "ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents",
+        "summary": "研究者发布ExploitBench，将漏洞利用拆成16级能力并用41个V8真实漏洞测试AI Agent。结果显示公开模型多止步于触发崩溃，私有前沿模型已能在约半数样例中实现任意代码执行。",
+        "rating": "S",
+        "score": 97,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该基准把AI安全讨论从发现漏洞推进到构造可复用利用链，可能推动浏览器厂商、云安全团队和模型厂商重设访问控制、红队评测与负责任披露流程。",
+        "entities": [
+          "Ai Agent",
+          "Exploitbench",
+          "V8",
+          "漏洞利用",
+          "网络安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "arXiv",
+            "url": "https://arxiv.org/abs/2605.14153"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778912196,
+        "published_at": "2026-05-16T14:16:36.021319",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2605.14153",
         "event_id": null
       },
       {
@@ -2267,147 +2500,61 @@
     ],
     "2026-05-15": [
       {
-        "id": "a9a0006da110b0e784108e4cd951fd55",
-        "title": "开发者狂烧token实验：100个Codex云端跑PR审查，押注token不再重要的未来",
-        "chinese_title": "开发者狂烧token实验：100个Codex云端跑PR审查，押注token不再重要的未来",
-        "original_title": "People freaking out over my AI spend. What nobody sees: Part of what excites me so much about working on OpenClaw is that I'm trying to answer the que...",
-        "summary": "Peter Steinberger分享其OpenClaw项目实践：常态运行约100个Codex实例在云端审查每个PR、每次提交甚至历史Issue，提前探索token成本归零后软件开发该如何重构。",
+        "id": "1f0f53205ce529c72557af1929aa3930",
+        "title": "OpenAI产品组织架构重组，多名高管职责重新划分",
+        "chinese_title": "OpenAI产品组织架构重组，多名高管职责重新划分",
+        "original_title": "RT Max Zeff: Re Story has been updated. The new structure of OpenAI's product org is basically: @gdb is effectively head of product @thsottiaux leads ...",
+        "summary": "OpenAI调整产品组织架构，Kevin Weil统筹产品工作，Thomas Sottiaux负责核心产品/平台，Nick Turley领导企业业务，Ashley Alexander负责消费者产品。",
         "rating": "A",
-        "score": 82,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "如果token价格持续下跌，Agent密集型开发流可能成为新常态，倒逼GitHub Copilot、Cursor等工具重新设计计费与并发模型。",
+        "score": 81,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "产品架构调整通常伴随战略重心转移，需关注OpenAI是否在加速超级应用和企业市场的双线布局，以及高管变动对竞品人才流动的影响。",
         "entities": [
-          "Codex",
-          "Github",
-          "Openclaw"
+          "Kevin Weil",
+          "Nick Turley",
+          "OpenAI",
+          "Thomas Sottiaux"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/steipete/status/2055405041843052792"
+            "url": "https://x.com/ZeffMax/status/2055358243590005136"
           }
         ],
         "sources": 1,
-        "timestamp": 1778915008,
-        "published_at": "2026-05-16T15:03:28.114373",
+        "timestamp": 1778918471,
+        "published_at": "2026-05-16T16:01:11.923604",
         "source": "x",
-        "url": "https://x.com/steipete/status/2055405041843052792",
+        "url": "https://x.com/ZeffMax/status/2055358243590005136",
         "event_id": null
       },
       {
-        "id": "048756b1005054aeffa0a521e56402fd",
-        "title": "前谷歌研究员从零复刻AlphaGo，验证前沿AI能力快速平民化",
-        "chinese_title": "前谷歌研究员从零复刻AlphaGo，验证前沿AI能力快速平民化",
-        "original_title": "RT Eric Jang: For the last few months I've been working on a from-scratch implementation of AlphaGo, a 2016 AI breakthrough that inspired me to get in...",
-        "summary": "Eric Jang用几个月时间从零实现了2016年震动业界的AlphaGo，他指出十年前需要DeepMind级算力才能做到的事情，如今个人开发者也能完成，前沿能力正以惊人速度下沉。",
+        "id": "f119ab758c2976adc06f673319081b22",
+        "title": "FrontierSmith开源：AI可自动合成开放式编程训练数据，效果超越人工筛选",
+        "chinese_title": "FrontierSmith开源：AI可自动合成开放式编程训练数据，效果超越人工筛选",
+        "original_title": "Open-ended coding training data may no longer be the bottleneck: AI can scale open-ended tasks—and even outperform human-expert curation. FrontierCS ...",
+        "summary": "Frontier团队发布FrontierSmith系统，通过将封闭式编程任务变异、过滤并构建可运行的优化环境，自动生成开放式编码训练数据，实验表明其训练效果优于人工筛选数据。",
         "rating": "A",
         "score": 76,
         "type": "research",
         "typeName": "研究成果",
-        "expansion": "前沿AI能力的快速下沉意味着开源社区可以迅速复现闭源成果，将削弱头部实验室的护城河，并影响算力厂商对长期需求的判断。",
+        "expansion": "开放式训练数据自动生成若规模化，将降低大模型训练数据瓶颈，可能改变AI训练数据产业链，对数据标注和合成赛道产生冲击。",
         "entities": [
-          "Alphago",
-          "DeepMind",
-          "Eric Jang"
+          "Frontiercs",
+          "Frontiersmith"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/dwarkesh_sp/status/2055383707373232169"
+            "url": "https://x.com/MangQiuyang/status/2055340003321164157"
           }
         ],
         "sources": 1,
-        "timestamp": 1778915008,
-        "published_at": "2026-05-16T15:03:28.114385",
+        "timestamp": 1778918471,
+        "published_at": "2026-05-16T16:01:11.923619",
         "source": "x",
-        "url": "https://x.com/dwarkesh_sp/status/2055383707373232169",
-        "event_id": null
-      },
-      {
-        "id": "6d31bcca43932c43a9b8a5539c1bc552",
-        "title": "LMArena揭秘背后数据管线：每周百万投票如何自动打标",
-        "chinese_title": "LMArena揭秘背后数据管线：每周百万投票如何自动打标",
-        "original_title": "Millions of votes a week. One tagging system. Arena researchers Guanglei Song and I-Hung Hsu walk through the data pipeline behind Arena's category le...",
-        "summary": "LMArena研究员Guanglei Song和I-Hung Hsu公开了支撑分类榜单的数据管线：基于Databricks和Spark，通过可插拔的LLM打标框架对文本、图像、前端编程等评测自动归类，形成可供研究使用的元数据层。",
-        "rating": "B",
-        "score": 70,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "公开打标管线有助于学界复现Arena结论，也可能引发对评测中立性、LLM自评偏差的更多讨论。",
-        "entities": [
-          "Databricks",
-          "Lmarena",
-          "Spark"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/arena/status/2055316670898741526"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778915008,
-        "published_at": "2026-05-16T15:03:28.114398",
-        "source": "x",
-        "url": "https://x.com/arena/status/2055316670898741526",
-        "event_id": null
-      },
-      {
-        "id": "ef252115571c9de9457f5db5edb737ae",
-        "title": "澳洲兄弟用50万美元把AI训练加速30倍，Unsloth如何撬动巨头",
-        "chinese_title": "澳洲兄弟用50万美元把AI训练加速30倍，Unsloth如何撬动巨头",
-        "original_title": "OpenAI spent billions on training infrastructure. Two Aussie brothers made AI training 30x faster ~ with $500K total. 🤯 Meet Daniel & Michael Han ...",
-        "summary": "前NVIDIA工程师Daniel Han与兄弟Michael创办Unsloth，用约50万美元的小成本实现AI训练30倍加速，并先后修复了Llama、Gemma、Mistral、Phi等大厂模型中超过20个底层bug。",
-        "rating": "A",
-        "score": 86,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "训练效率工具链的小团队崛起将冲击大厂内部基础设施投入逻辑，同时也让中小公司有机会用极低预算微调前沿模型。",
-        "entities": [
-          "Daniel Han",
-          "NVIDIA",
-          "Unsloth"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/CaptainInsightX/status/2055313074568249635"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778915008,
-        "published_at": "2026-05-16T15:03:28.114409",
-        "source": "x",
-        "url": "https://x.com/CaptainInsightX/status/2055313074568249635",
-        "event_id": null
-      },
-      {
-        "id": "93b2a9df899bd4aed868c861da4287b4",
-        "title": "Anthropic开放4个月安全研究Fellows项目，周薪3850美元、无需AI背景",
-        "chinese_title": "Anthropic开放4个月安全研究Fellows项目，周薪3850美元、无需AI背景",
-        "original_title": "🚨 Anthropic just launched its 4-month Fellows Program. Get paid $3,850/week to break into AI safety research, no previous AI experience required �...",
-        "summary": "Anthropic推出为期4个月的Fellows Program，向无AI研究经验者开放，提供每周3850美元薪酬，要求Python基础与扎实数学背景，鼓励跨学科人才进入AI安全研究领域。",
-        "rating": "A",
-        "score": 77,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "头部AI实验室直接面向跨学科人才挖人，可能加剧学术圈青年研究员向工业界流失，并把AI安全研究的标准向工程化方向倾斜。",
-        "entities": [
-          "Anthropic",
-          "Fellows Program"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/DataChaz/status/2055305517992661445"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778915008,
-        "published_at": "2026-05-16T15:03:28.114419",
-        "source": "x",
-        "url": "https://x.com/DataChaz/status/2055305517992661445",
+        "url": "https://x.com/MangQiuyang/status/2055340003321164157",
         "event_id": null
       },
       {
@@ -14497,37 +14644,6 @@
         "source": "The Verge -  Tech Posts",
         "url": "https://www.theverge.com/tech/928373/irobot-roomba-robot-vacuums-price-specs-release-date",
         "event_id": null
-      },
-      {
-        "id": "6d0ba5e9d952dfbddba059c454c7f6d8",
-        "title": "ExploitBench基准曝光AI漏洞利用能力，私有前沿模型可攻破近半V8样例",
-        "chinese_title": "ExploitBench基准曝光AI漏洞利用能力，私有前沿模型可攻破近半V8样例",
-        "original_title": "ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents",
-        "summary": "研究者发布ExploitBench，将漏洞利用拆成16级能力并用41个V8真实漏洞测试AI Agent。结果显示公开模型多止步于触发崩溃，私有前沿模型已能在约半数样例中实现任意代码执行。",
-        "rating": "S",
-        "score": 97,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该基准把AI安全讨论从发现漏洞推进到构造可复用利用链，可能推动浏览器厂商、云安全团队和模型厂商重设访问控制、红队评测与负责任披露流程。",
-        "entities": [
-          "Ai Agent",
-          "Exploitbench",
-          "V8",
-          "漏洞利用",
-          "网络安全"
-        ],
-        "sourceLinks": [
-          {
-            "name": "arXiv",
-            "url": "https://arxiv.org/abs/2605.14153"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778912196,
-        "published_at": "2026-05-16T14:16:36.021319",
-        "source": "arXiv",
-        "url": "https://arxiv.org/abs/2605.14153",
-        "event_id": null
       }
     ],
     "2026-05-12": [
@@ -22058,6 +22174,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-16T15:04:23.103585",
-  "total_news": 756
+  "last_updated": "2026-05-16T16:01:27.583623",
+  "total_news": 760
 }
