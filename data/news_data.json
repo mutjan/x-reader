@@ -2,6 +2,124 @@
   "news": {
     "2026-05-16": [
       {
+        "id": "2dbeccc56a92c95fbaa4ccbd2cdda767",
+        "title": "Claude Code 被搬进浏览器：WebAssembly 跑通 Node.js 和 Python",
+        "chinese_title": "Claude Code 被搬进浏览器：WebAssembly 跑通 Node.js 和 Python",
+        "original_title": "团队将 Claude Code 源码放进了 WebAssembly 运行环境，将 Node.js 和 Python 环境也打包了进去，现在可以愉快地在网页上直接使用 Claude Code 了😄 基于 Clau...",
+        "summary": "开发者团队基于 Claude Code 源码，通过 WebAssembly 打包 Node.js 与 Python 运行时，构建出可在网页中直接使用的 Claude Code 体验，包含浏览器宿主、WASI 运行时、Node 兼容层和 HostBridge 四层架构。",
+        "rating": "A",
+        "score": 80,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸讨论浏览器端 AI 编程工具的趋势、WebContainer 路线对本地 IDE 的冲击，以及 Anthropic 官方是否会推出官方 Web 版 Claude Code。",
+        "entities": [
+          "Claude Code",
+          "Node.Js",
+          "Python",
+          "Webassembly"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Barret_China/status/2055564356168098266"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778925800,
+        "published_at": "2026-05-16T18:03:20.102991",
+        "source": "x",
+        "url": "https://x.com/Barret_China/status/2055564356168098266",
+        "event_id": null
+      },
+      {
+        "id": "5bfbb467a8c2f9cb36850120606c1a47",
+        "title": "5000元的Apple Glasses要来了：40克重量、蔡司镜片加AI视觉",
+        "chinese_title": "5000元的Apple Glasses要来了：40克重量、蔡司镜片加AI视觉",
+        "original_title": "来不及悼念 Vision Pro，即将登场的是售价5000 的 Apple Glasse 重量仅约40g，支持4种镜框风格。还支持拍照/录像，AI 视觉识别、手势控制和AI 交互。还有麦克风+...",
+        "summary": "传闻苹果即将推出售价约5000元的Apple Glasses，重量仅40克左右,支持四种镜框风格、拍照录像、AI 视觉识别和手势交互，配备麦克风与扬声器，并兼容近视、远视、散光的电子调度数。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Apple Glasses 若落地将冲击 Meta Ray-Ban 智能眼镜市场，并可能引发国内 AR/AI 眼镜厂商竞品发布与供应链调整。",
+        "entities": [
+          "Apple",
+          "Apple Glasses",
+          "Vision Pro",
+          "蔡司"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/0xKevin00/status/2055557362010968126"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778925800,
+        "published_at": "2026-05-16T18:03:20.103018",
+        "source": "x",
+        "url": "https://x.com/0xKevin00/status/2055557362010968126",
+        "event_id": null
+      },
+      {
+        "id": "20d4e22d17e003717472ede943b4ff50",
+        "title": "Codex Side Chat 系统提示词曝光：副线对话不干扰主线任务",
+        "chinese_title": "Codex Side Chat 系统提示词曝光：副线对话不干扰主线任务",
+        "original_title": "Codex Side Chat System Prompt: You are in a side conversation, not the main thread. This side conversation is for answering questions and lightweight ...",
+        "summary": "OpenAI Codex 的 Side Chat 系统提示词被披露,要求模型在副线对话中只回答问题或做轻量探索,不延续主线任务,继承的历史仅作上下文,新指令必须在副线开始后才生效。",
+        "rating": "B",
+        "score": 71,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸分析编程 Agent 的多线程会话设计,以及竞品 Claude Code、Cursor 在并行会话上下文隔离上的不同实现。",
+        "entities": [
+          "Codex",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/dotey/status/2055551934317122014"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778925800,
+        "published_at": "2026-05-16T18:03:20.103063",
+        "source": "x",
+        "url": "https://x.com/dotey/status/2055551934317122014",
+        "event_id": null
+      },
+      {
+        "id": "9c177f6921cd2b2533190f26c9adce1e",
+        "title": "用户质疑 GPT-5.5 变笨，Sam Altman 回应被批轻慢",
+        "chinese_title": "用户质疑 GPT-5.5 变笨，Sam Altman 回应被批轻慢",
+        "original_title": "That last part feels demeaning when you have hundreds of not thousands of people saying they've noticed the model performing worse and you have margin...",
+        "summary": "大量用户反映 GPT-5.5 表现不如之前,且 Margin Lab 评测显示性能下降,Sam Altman 回应称团队认真对待此类反馈,但其调侃用户已习惯当前魔法水平的言论被批评为对用户的轻慢。",
+        "rating": "A+",
+        "score": 88,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可延伸至大模型性能漂移争议、OpenAI 与用户信任关系,以及竞品 Anthropic、Google 抓住舆论窗口的可能。",
+        "entities": [
+          "Anthropic",
+          "GPT",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/mweinbach/status/2055441352129736925"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778925800,
+        "published_at": "2026-05-16T18:03:20.103113",
+        "source": "x",
+        "url": "https://x.com/mweinbach/status/2055441352129736925",
+        "event_id": null
+      },
+      {
         "id": "d962d718f811a7ae38769c5ea9128d04",
         "title": "硅谷一万人因AI暴富身家超2000万美元，剩下的人开始怀疑人生",
         "chinese_title": "硅谷一万人因AI暴富身家超2000万美元，剩下的人开始怀疑人生",
@@ -22205,6 +22323,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-16T17:02:26.368046",
-  "total_news": 761
+  "last_updated": "2026-05-16T18:03:57.267116",
+  "total_news": 765
 }
