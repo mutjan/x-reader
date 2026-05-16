@@ -2,6 +2,68 @@
   "news": {
     "2026-05-16": [
       {
+        "id": "dea4ce65a6d5802bef7cf2665162e848",
+        "title": "Self-Distilled Agentic RL提出用自蒸馏缓解多轮智能体稀疏奖励问题",
+        "chinese_title": "Self-Distilled Agentic RL提出用自蒸馏缓解多轮智能体稀疏奖励问题",
+        "original_title": "Self-Distilled Agentic RL",
+        "summary": "alphaXiv展示的新论文提出Self-Distilled Agentic RL，将轨迹级稀疏奖励与token级密集指导结合，试图解决多轮智能体强化学习中教师信号随轨迹漂移变噪的问题。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "Agent RL正从单轮任务走向多轮工具调用和真实软件环境，这类训练方法可能影响Claude Code、Codex等智能体后续的奖励建模与自我改进路线。",
+        "entities": [
+          "Self-Distilled Agentic RL",
+          "AI Agent",
+          "RL",
+          "Self-distillation",
+          "alphaXiv"
+        ],
+        "sourceLinks": [
+          {
+            "name": "alphaXiv",
+            "url": "https://x.com/askalphaxiv/status/2055412888773235162"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778898446,
+        "published_at": "2026-05-16T10:27:26.645627",
+        "source": "alphaXiv",
+        "url": "https://x.com/askalphaxiv/status/2055412888773235162",
+        "event_id": null
+      },
+      {
+        "id": "47e889f4c39a9cc15835979e5c424e43",
+        "title": "研究称grep式文本检索在编码Agent任务中可匹敌向量检索",
+        "chinese_title": "研究称grep式文本检索在编码Agent任务中可匹敌向量检索",
+        "original_title": "Is Grep All You Need?",
+        "summary": "一项题为“Is Grep All You Need?”的研究显示，在合适的智能体框架中，grep式文本检索在编码Agent任务上可以匹敌甚至超过基于embedding的检索方案，引发对代码场景是否需要向量数据库的重新评估。",
+        "rating": "A",
+        "score": 82,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果这一结论在更多代码库规模下成立，AI编程工具的RAG架构可能从复杂向量索引回到更可解释、低成本的文本检索组合，对Cursor、Codex和Claude Code的上下文工程都有参考价值。",
+        "entities": [
+          "Grep",
+          "AI Agent",
+          "Coding Agent",
+          "RAG",
+          "Vector Database"
+        ],
+        "sourceLinks": [
+          {
+            "name": "elvis",
+            "url": "https://x.com/omarsar0/status/2055317577031975269"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778898446,
+        "published_at": "2026-05-16T10:27:26.645627",
+        "source": "elvis",
+        "url": "https://x.com/omarsar0/status/2055317577031975269",
+        "event_id": null
+      },
+      {
         "id": "73eecfd0cb73b2ca0872004ceb600b44",
         "title": "FutureSim发布：按真实时间线重放世界事件，测试智能体持续学习能力",
         "chinese_title": "FutureSim发布：按真实时间线重放世界事件，测试智能体持续学习能力",
@@ -21535,6 +21597,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-16T10:23:29.043357",
-  "total_news": 738
+  "last_updated": "2026-05-16T10:27:26.688703",
+  "total_news": 740
 }
