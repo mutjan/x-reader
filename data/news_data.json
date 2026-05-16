@@ -2,6 +2,188 @@
   "news": {
     "2026-05-16": [
       {
+        "id": "2ead053a32961e4a7d1225f322c8b5d5",
+        "title": "韩国人形机器人公司WIRobotics完成6800万美元B轮，与英伟达AWS合作加速商业化",
+        "chinese_title": "韩国人形机器人公司WIRobotics完成6800万美元B轮，与英伟达AWS合作加速商业化",
+        "original_title": "Seoul-based WIRobotics, which develops wearable and humanoid robots and is collaborating with Nvidia and AWS, raised a ~$68M Series B led by JB Investment (Lee Jaewoon/The Elec)",
+        "summary": "首尔可穿戴与人形机器人公司WIRobotics宣布完成约6800万美元B轮融资，由JB Investment领投，公司将借助本轮资金及与英伟达、AWS的合作，加快人形机器人量产与商业化落地。",
+        "rating": "B",
+        "score": 73,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延伸观察韩国人形机器人产业链格局，以及英伟达机器人生态在亚太市场的扩张节奏，进一步关联国内人形机器人公司估值与融资节奏。",
+        "entities": [
+          "Aws",
+          "Jb Investment",
+          "NVIDIA",
+          "Wirobotics",
+          "人形机器人"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260515/p32#a260515p32"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778893304,
+        "published_at": "2026-05-16T09:01:44.356101",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260515/p32#a260515p32",
+        "event_id": null
+      },
+      {
+        "id": "ff1078dfed8ffddfba00b550b7b3a2a3",
+        "title": "xAI开放Grok Build编程CLI早期测试",
+        "chinese_title": "xAI开放Grok Build编程CLI早期测试",
+        "original_title": "Grok Build Beta",
+        "summary": "xAI推出Grok Build早期测试版，把编码、应用构建和工作流自动化做成代理式CLI，目前面向SuperGrok Heavy用户开放，马斯克亲自转发征集反馈。",
+        "rating": "S",
+        "score": 92,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这是xAI从聊天模型向开发者工具和编程Agent入口延伸的关键动作，可继续观察其与Claude Code、Codex、Cursor等工具的生态竞争和订阅转化。",
+        "entities": [
+          "xAI",
+          "Grok",
+          "Grok Build",
+          "AI Agent",
+          "CLI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "xAI",
+            "url": "https://x.ai/cli"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778892294,
+        "published_at": "2026-05-16T08:44:54.404841",
+        "source": "xAI",
+        "url": "https://x.ai/cli",
+        "event_id": null
+      },
+      {
+        "id": "5bb388c4a82740a5df3a1b46628de0f4",
+        "title": "字节开源Cola-DLM押注扩散语言模型",
+        "chinese_title": "字节开源Cola-DLM押注扩散语言模型",
+        "original_title": "ByteDance-Seed/Cola-DLM",
+        "summary": "字节Seed在Hugging Face发布Cola-DLM，主打latent diffusion和flow matching路线，并以Apache-2.0协议开放，为大模型生成范式提供了区别于自回归路线的新样本。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "扩散语言模型若在生成质量、并行采样或推理成本上形成优势，可能影响开源模型路线选择，也值得对比ByteDance近期Seed模型矩阵。",
+        "entities": [
+          "ByteDance",
+          "Cola-DLM",
+          "Diffusion Language Model",
+          "Hugging Face"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hugging Face",
+            "url": "https://huggingface.co/ByteDance-Seed/Cola-DLM"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778892294,
+        "published_at": "2026-05-16T08:44:54.404864",
+        "source": "Hugging Face",
+        "url": "https://huggingface.co/ByteDance-Seed/Cola-DLM",
+        "event_id": null
+      },
+      {
+        "id": "64d1b70b290a25d2eec64adeb813bb26",
+        "title": "30B推理模型冲到数理奥赛金牌水平",
+        "chinese_title": "30B推理模型冲到数理奥赛金牌水平",
+        "original_title": "Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling",
+        "summary": "新论文提出统一扩展配方，把30B-A3B推理模型训练到物理和数学奥赛金牌水平，核心方法包括反向困惑度课程、两阶段强化学习和测试时自验证。",
+        "rating": "A+",
+        "score": 89,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该路线显示中等规模模型也能通过训练配方和测试时扩展逼近顶级竞赛能力，后续可追踪其对开源推理模型、数学证明和科学解题基准的影响。",
+        "entities": [
+          "Reasoning Model",
+          "Olympiad",
+          "Reinforcement Learning",
+          "Hugging Face"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hugging Face Papers",
+            "url": "https://huggingface.co/papers/2605.13301"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778892294,
+        "published_at": "2026-05-16T08:44:54.404875",
+        "source": "Hugging Face Papers",
+        "url": "https://huggingface.co/papers/2605.13301",
+        "event_id": null
+      },
+      {
+        "id": "094d64f9f46d4f6a481c122cf334334a",
+        "title": "GitHub Copilot独立应用开放技术预览候补",
+        "chinese_title": "GitHub Copilot独立应用开放技术预览候补",
+        "original_title": "Cooking up something new: GitHub Copilot app technical preview",
+        "summary": "GitHub开始为Copilot独立应用技术预览招募早期用户，意味着Copilot可能从IDE插件进一步扩展为更完整的开发者桌面入口。",
+        "rating": "A+",
+        "score": 88,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Copilot若获得独立应用形态，将直接影响开发者工作流入口之争，并与Cursor、Claude Code、Codex和Grok Build形成更正面竞争。",
+        "entities": [
+          "GitHub",
+          "GitHub Copilot",
+          "AI Coding",
+          "Developer Tools"
+        ],
+        "sourceLinks": [
+          {
+            "name": "GitHub",
+            "url": "https://gh.io/github-copilot-app"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778892294,
+        "published_at": "2026-05-16T08:44:54.404883",
+        "source": "GitHub",
+        "url": "https://gh.io/github-copilot-app",
+        "event_id": null
+      },
+      {
+        "id": "33f4fa6f33cc45410b6d37bbce5746db",
+        "title": "arXiv据称开始重罚AI幻觉引用论文",
+        "chinese_title": "arXiv据称开始重罚AI幻觉引用论文",
+        "original_title": "hallucinated references will land you a 1-year ban from arxiv now",
+        "summary": "社交平台热传arXiv将对含幻觉引用的投稿实施一年禁投处罚，反映学术基础设施正在被AI生成内容和伪造引用问题倒逼升级治理规则。",
+        "rating": "A",
+        "score": 82,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该议题可延伸到AI写作工具进入科研流程后的审核责任、引用验证工具需求，以及学术平台如何区分低级错误与AI生成欺骗。",
+        "entities": [
+          "arXiv",
+          "AI幻觉",
+          "学术出版",
+          "引用验证"
+        ],
+        "sourceLinks": [
+          {
+            "name": "X",
+            "url": "https://x.com/andrewwhite01/status/2055013183715447038"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778892294,
+        "published_at": "2026-05-16T08:44:54.404891",
+        "source": "X",
+        "url": "https://x.com/andrewwhite01/status/2055013183715447038",
+        "event_id": null
+      },
+      {
         "id": "84ad7c4bbde1c12ea9728e6d7cdd102f",
         "title": "30B-A3B推理模型登场：IPhO直拿金牌，IMO/USAMO凭自验证亦达金牌水准",
         "chinese_title": "30B-A3B推理模型登场：IPhO直拿金牌，IMO/USAMO凭自验证亦达金牌水准",
@@ -1462,157 +1644,6 @@
       }
     ],
     "2026-05-15": [
-      {
-        "id": "ff1078dfed8ffddfba00b550b7b3a2a3",
-        "title": "xAI开放Grok Build编程CLI早期测试",
-        "chinese_title": "xAI开放Grok Build编程CLI早期测试",
-        "original_title": "Grok Build Beta",
-        "summary": "xAI推出Grok Build早期测试版，把编码、应用构建和工作流自动化做成代理式CLI，目前面向SuperGrok Heavy用户开放，马斯克亲自转发征集反馈。",
-        "rating": "S",
-        "score": 92,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "这是xAI从聊天模型向开发者工具和编程Agent入口延伸的关键动作，可继续观察其与Claude Code、Codex、Cursor等工具的生态竞争和订阅转化。",
-        "entities": [
-          "xAI",
-          "Grok",
-          "Grok Build",
-          "AI Agent",
-          "CLI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "xAI",
-            "url": "https://x.ai/cli"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778892294,
-        "published_at": "2026-05-16T08:44:54.404841",
-        "source": "xAI",
-        "url": "https://x.ai/cli",
-        "event_id": null
-      },
-      {
-        "id": "5bb388c4a82740a5df3a1b46628de0f4",
-        "title": "字节开源Cola-DLM押注扩散语言模型",
-        "chinese_title": "字节开源Cola-DLM押注扩散语言模型",
-        "original_title": "ByteDance-Seed/Cola-DLM",
-        "summary": "字节Seed在Hugging Face发布Cola-DLM，主打latent diffusion和flow matching路线，并以Apache-2.0协议开放，为大模型生成范式提供了区别于自回归路线的新样本。",
-        "rating": "A+",
-        "score": 88,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "扩散语言模型若在生成质量、并行采样或推理成本上形成优势，可能影响开源模型路线选择，也值得对比ByteDance近期Seed模型矩阵。",
-        "entities": [
-          "ByteDance",
-          "Cola-DLM",
-          "Diffusion Language Model",
-          "Hugging Face"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hugging Face",
-            "url": "https://huggingface.co/ByteDance-Seed/Cola-DLM"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778892294,
-        "published_at": "2026-05-16T08:44:54.404864",
-        "source": "Hugging Face",
-        "url": "https://huggingface.co/ByteDance-Seed/Cola-DLM",
-        "event_id": null
-      },
-      {
-        "id": "64d1b70b290a25d2eec64adeb813bb26",
-        "title": "30B推理模型冲到数理奥赛金牌水平",
-        "chinese_title": "30B推理模型冲到数理奥赛金牌水平",
-        "original_title": "Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling",
-        "summary": "新论文提出统一扩展配方，把30B-A3B推理模型训练到物理和数学奥赛金牌水平，核心方法包括反向困惑度课程、两阶段强化学习和测试时自验证。",
-        "rating": "A+",
-        "score": 89,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该路线显示中等规模模型也能通过训练配方和测试时扩展逼近顶级竞赛能力，后续可追踪其对开源推理模型、数学证明和科学解题基准的影响。",
-        "entities": [
-          "Reasoning Model",
-          "Olympiad",
-          "Reinforcement Learning",
-          "Hugging Face"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hugging Face Papers",
-            "url": "https://huggingface.co/papers/2605.13301"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778892294,
-        "published_at": "2026-05-16T08:44:54.404875",
-        "source": "Hugging Face Papers",
-        "url": "https://huggingface.co/papers/2605.13301",
-        "event_id": null
-      },
-      {
-        "id": "094d64f9f46d4f6a481c122cf334334a",
-        "title": "GitHub Copilot独立应用开放技术预览候补",
-        "chinese_title": "GitHub Copilot独立应用开放技术预览候补",
-        "original_title": "Cooking up something new: GitHub Copilot app technical preview",
-        "summary": "GitHub开始为Copilot独立应用技术预览招募早期用户，意味着Copilot可能从IDE插件进一步扩展为更完整的开发者桌面入口。",
-        "rating": "A+",
-        "score": 88,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Copilot若获得独立应用形态，将直接影响开发者工作流入口之争，并与Cursor、Claude Code、Codex和Grok Build形成更正面竞争。",
-        "entities": [
-          "GitHub",
-          "GitHub Copilot",
-          "AI Coding",
-          "Developer Tools"
-        ],
-        "sourceLinks": [
-          {
-            "name": "GitHub",
-            "url": "https://gh.io/github-copilot-app"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778892294,
-        "published_at": "2026-05-16T08:44:54.404883",
-        "source": "GitHub",
-        "url": "https://gh.io/github-copilot-app",
-        "event_id": null
-      },
-      {
-        "id": "33f4fa6f33cc45410b6d37bbce5746db",
-        "title": "arXiv据称开始重罚AI幻觉引用论文",
-        "chinese_title": "arXiv据称开始重罚AI幻觉引用论文",
-        "original_title": "hallucinated references will land you a 1-year ban from arxiv now",
-        "summary": "社交平台热传arXiv将对含幻觉引用的投稿实施一年禁投处罚，反映学术基础设施正在被AI生成内容和伪造引用问题倒逼升级治理规则。",
-        "rating": "A",
-        "score": 82,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该议题可延伸到AI写作工具进入科研流程后的审核责任、引用验证工具需求，以及学术平台如何区分低级错误与AI生成欺骗。",
-        "entities": [
-          "arXiv",
-          "AI幻觉",
-          "学术出版",
-          "引用验证"
-        ],
-        "sourceLinks": [
-          {
-            "name": "X",
-            "url": "https://x.com/andrewwhite01/status/2055013183715447038"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778892294,
-        "published_at": "2026-05-16T08:44:54.404891",
-        "source": "X",
-        "url": "https://x.com/andrewwhite01/status/2055013183715447038",
-        "event_id": null
-      },
       {
         "id": "16e5f5ee630ab54a8d9c12a9d2ea5a21",
         "title": "IPO尘埃落定，Cerebras重启AI芯片极限挑战",
@@ -21230,6 +21261,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-16T08:44:54.433951",
-  "total_news": 728
+  "last_updated": "2026-05-16T09:01:44.375907",
+  "total_news": 729
 }
