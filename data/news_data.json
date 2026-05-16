@@ -2,6 +2,99 @@
   "news": {
     "2026-05-16": [
       {
+        "id": "73eecfd0cb73b2ca0872004ceb600b44",
+        "title": "FutureSim发布：按真实时间线重放世界事件，测试智能体持续学习能力",
+        "chinese_title": "FutureSim发布：按真实时间线重放世界事件，测试智能体持续学习能力",
+        "original_title": "Introducing FutureSim",
+        "summary": "研究者推出FutureSim评测框架，按真实世界事件发生顺序重放信息流，测试前沿智能体能否持续更新对世界变化的预测，并覆盖Codex、Claude Code等原生智能体环境。",
+        "rating": "A+",
+        "score": 86,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这补上了智能体评测中长期缺失的时间维度，可延伸观察AI Agent是否能从静态任务评测转向持续学习、预测校准和真实工作流适应能力测试。",
+        "entities": [
+          "FutureSim",
+          "AI Agent",
+          "Codex",
+          "Claude Code",
+          "Continual Learning"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Shashwat Goel",
+            "url": "https://x.com/ShashwatGoel7/status/2055336064378720412"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778898209,
+        "published_at": "2026-05-16T10:23:29.018606",
+        "source": "Shashwat Goel",
+        "url": "https://x.com/ShashwatGoel7/status/2055336064378720412",
+        "event_id": null
+      },
+      {
+        "id": "0b11adf5d00359a78180a7a1afc68e2b",
+        "title": "Nature论文称政府媒体控制会经训练数据影响AI输出立场",
+        "chinese_title": "Nature论文称政府媒体控制会经训练数据影响AI输出立场",
+        "original_title": "New paper in Nature on media control and AI training data",
+        "summary": "一篇Nature论文指出，政府对本国媒体控制越强，其叙事越容易通过开放网页进入大模型训练数据，进而让模型输出更偏向亲政权表述，暴露开放网络语料中的政治偏置传导问题。",
+        "rating": "A+",
+        "score": 85,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "这将AI训练数据治理从版权和隐私扩展到地缘政治与信息操控层面，可继续追踪大模型公司如何识别国家级叙事污染、做数据溯源和输出偏差审计。",
+        "entities": [
+          "Nature",
+          "LLM",
+          "AI Training Data",
+          "Media Control",
+          "AI Governance"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Eddie Yang",
+            "url": "https://x.com/ey_985/status/2054580554213757235"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778898209,
+        "published_at": "2026-05-16T10:23:29.018606",
+        "source": "Eddie Yang",
+        "url": "https://x.com/ey_985/status/2054580554213757235",
+        "event_id": null
+      },
+      {
+        "id": "3623da34c8abec9d7615085c92634c12",
+        "title": "研究发现LLM微调会忽略否定，把反驳内容学成事实",
+        "chinese_title": "研究发现LLM微调会忽略否定，把反驳内容学成事实",
+        "original_title": "Negation Neglect: When models fail to learn negations in training",
+        "summary": "alphaXiv展示的论文指出，大模型能在上下文中理解免责声明，但微调时常无法稳定学习否定关系，甚至可能把“某说法为假”的训练文本内化为真命题，对数据清洗和安全微调提出新风险。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果结论成立，模型训练集中的辟谣、反例和安全声明都可能反向强化错误信念，影响RLHF、安全微调和企业知识库训练的数据策略。",
+        "entities": [
+          "Negation Neglect",
+          "LLM",
+          "Fine-tuning",
+          "Qwen",
+          "AI Safety"
+        ],
+        "sourceLinks": [
+          {
+            "name": "alphaXiv",
+            "url": "https://x.com/askalphaxiv/status/2055349725021253993"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778898209,
+        "published_at": "2026-05-16T10:23:29.018606",
+        "source": "alphaXiv",
+        "url": "https://x.com/askalphaxiv/status/2055349725021253993",
+        "event_id": null
+      },
+      {
         "id": "59c89db1937689ca83c22d5535e6a9c2",
         "title": "OpenAI悄然收购AI语音克隆公司Weights.gg，此前融资约400万美元",
         "chinese_title": "OpenAI悄然收购AI语音克隆公司Weights.gg，此前融资约400万美元",
@@ -21442,6 +21535,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-16T10:04:10.035548",
-  "total_news": 735
+  "last_updated": "2026-05-16T10:23:29.043357",
+  "total_news": 738
 }
