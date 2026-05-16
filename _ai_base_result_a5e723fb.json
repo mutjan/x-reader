@@ -1,0 +1,74 @@
+[
+  {
+    "index": 0,
+    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1tdje2d/arxiv_implements_1year_ban_for_papers_containing/",
+    "chinese_title": "arXiv 对含 LLM 幻觉错误的论文实施一年禁投",
+    "summary": "arXiv  moderation 团队宣布，对于包含不可辩驳的 LLM 生成错误（如虚构参考文献或结果）的论文，作者将被禁止在一年内提交新论文。该政策强调作者需对论文全部内容负责，无论内容如何生成。",
+    "type": "safety",
+    "extension": "此政策可能引发学术界对 AI 辅助写作工具的重新审视，相关写作检测工具或迎来需求增长；同时可能促使其他预印本平台跟进类似规范。",
+    "entities": ["arXiv", "Thomas G. Dietterich", "LLM"]
+  },
+  {
+    "index": 1,
+    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1tcvk8s/would_a_20002021_ml_paper_even_get_accepted_today/",
+    "chinese_title": "机器学习审稿标准十年跃升：旧论文今日能否过关",
+    "summary": "Reddit 社区热议机器学习领域审稿门槛的显著提升，认为 2000-2021 年间许多当时被接受的论文，若以今日更严格的评估标准、基线对比和消融实验要求来衡量，可能无法通过审稿。",
+    "type": "opinion",
+    "extension": "该讨论反映了 ML 领域从快速扩张到成熟化的转变，可能带动对历史经典论文的复现与重新评估热潮，影响学术评价体系的演进。",
+    "entities": ["Reddit", "Machine Learning"]
+  },
+  {
+    "index": 2,
+    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1tcmj6v/continual_harness_online_adaptation_for/",
+    "chinese_title": "Gemini 玩宝可梦团队发布自进化智能体新研究",
+    "summary": "Google DeepMind 的 Gemini Plays Pokémon 团队发布新论文，提出 Continual Harness 框架，使基础智能体能够在线自适应环境变化，实现自我改进。该系统已在多款宝可梦游戏中展示了无需人工干预的迭代能力进化。",
+    "type": "research",
+    "extension": "自进化智能体框架若泛化到其他复杂任务领域，可能重塑强化学习和自主 AI 系统的研发范式，推动通用智能体（Foundation Agent）的实用化进程。",
+    "entities": ["Google DeepMind", "Gemini", "Pokémon"]
+  },
+  {
+    "index": 3,
+    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1tcemdg/trained_transformerbased_chess_models_to_play/",
+    "chinese_title": "研究者训练 Transformer 棋类模型模拟人类各级别棋风",
+    "summary": "研究者基于近 10 亿局 Lichess 对局数据，训练了一系列 Transformer 棋类模型，使其能够模拟从 800 分到 2500+ 分不同等级的人类棋风，包括思考时间分布和典型失误模式。",
+    "type": "research",
+    "extension": "人类风格模拟模型可应用于棋类教学、AI 对局真实性评估，以及更广泛的博弈论研究中人类行为建模。",
+    "entities": ["Lichess", "Transformer"]
+  },
+  {
+    "index": 4,
+    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1tcdj2d/scenema_audio_zeroshot_expressive_voice_cloning/",
+    "chinese_title": "Scenema Audio 开源零样本情感语音克隆模型",
+    "summary": "Scenema 发布并开源了 Scenema Audio 模型，支持零样本情感语音克隆与生成。该模型将语音身份与情感表现解耦，用户可通过文本描述情感风格（如愤怒、悲伤、兴奋），并可选提供参考音频来指定说话人身份。",
+    "type": "product",
+    "extension": "情感与身份解耦的语音合成技术可能加速有声内容、游戏配音、虚拟助手等场景的商业化落地，同时引发深度伪造音频的伦理与监管讨论。",
+    "entities": ["Scenema", "Scenema Audio"]
+  },
+  {
+    "index": 5,
+    "original_url": "https://github.com/pike00/coldkey",
+    "chinese_title": "Coldkey 开源后量子时代密钥纸质备份工具",
+    "summary": "Coldkey 是一款后量子密码学时代的密钥生成与纸质备份工具，帮助用户生成抗量子计算攻击的 age 密钥，并以可离线恢复的方式安全备份到纸质介质。",
+    "type": "tool",
+    "extension": "随着量子计算威胁临近，后量子密码工具需求上升，此类工具可能成为加密货币、隐私通信等领域的基础设施组件。",
+    "entities": ["Coldkey", "age"]
+  },
+  {
+    "index": 6,
+    "original_url": "https://www.theinformation.com/briefings/anthropic-calls-tighter-u-s-chip-restrictions-china",
+    "chinese_title": "Anthropic 呼吁美国收紧对华芯片出口限制",
+    "summary": "Anthropic 发布题为《2028：全球 AI 领导权的两种情景》的政策论文，呼吁美国政府进一步限制中国获取先进 AI 芯片，恰逢特朗普总统访华期间，引发业界对中美 AI 竞争格局的广泛关注。",
+    "type": "industry",
+    "extension": "该政策主张可能加剧中美在 AI 基础设施领域的脱钩，推动中国加速自主芯片研发，同时影响全球 AI 供应链和云计算市场的竞争格局。",
+    "entities": ["Anthropic", "特朗普", "中国"]
+  },
+  {
+    "index": 7,
+    "original_url": "https://www.techmeme.com/260515/p1#a260515p1",
+    "chinese_title": "英国教育科技独角兽 Multiverse 获 7000 万美元融资",
+    "summary": "由英国前首相布莱尔之子 Euan Blair 创立的学徒制教育平台 Multiverse 完成 7000 万美元融资，估值达 21 亿美元。该公司正加速布局 AI 技能培训，并于年初收购了德国数据培训公司 StackFuel。",
+    "type": "funding",
+    "extension": "AI 技能培训赛道持续升温，Multiverse 的学徒制模式若成功扩展至 AI 领域，可能挑战传统高等教育和职业培训市场的格局。",
+    "entities": ["Multiverse", "Euan Blair", "StackFuel", "Index Ventures"]
+  }
+]

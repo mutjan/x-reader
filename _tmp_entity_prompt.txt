@@ -1,0 +1,179 @@
+你是一位科技领域实体识别专家，负责从新闻中提取和标准化核心实体。
+
+请对以下新闻进行实体识别，返回 JSON 格式结果：
+
+**实体提取规则**：
+1. **公司/品牌**：提取所有提到的公司、组织、品牌名称
+   - 统一命名：如 "OpenAI" 和 "o3" 都关联到 OpenAI
+   - 保留正式名称
+2. **产品/技术**：提取产品名、技术框架、模型名称
+   - 去除版本号：如 "Gemini 2.5 Pro" → "Gemini"，"GPT-4o" → "GPT"
+   - 保留基础名称
+3. **人物**：提取全名
+   - 如 "Sam Altman" 而非 "Altman"
+4. **领域/概念**：提取核心技术概念、行业术语
+
+**返回格式**（严格JSON数组）：
+{
+  "index": 0,
+  "original_url": "原始URL",
+  "entities": [
+    {"name": "实体名", "type": "company|product|person|concept", "normalized": "标准化名称"}
+  ]
+}
+
+注意：
+- 只返回JSON，不要任何其他解释性文字
+- 确保JSON格式完全正确
+- 所有新闻都需要处理
+
+输入新闻：
+[
+  {
+    "index": 0,
+    "title": "专门为符合nature学术写作和绘图规范搞的一套Skill：nature-skills，帮你把论文写成Nature认可的标准格式 等于一个Nature论文生产的规范规则引擎，把隐性写作和...",
+    "content": "专门为符合nature学术写作和绘图规范搞的一套Skill：nature-skills，帮你把论文写成Nature认可的标准格式 等于一个Nature论文生产的规范规则引擎，把隐性写作和绘图规范，拆解成AI能逐条执行的具体规则 从论文图表、语言润色、引用管理、数据声明、审稿回复、论文转PPT等全流程 直接生成符合Nature标准的matplotlib图表，Arial字体、语义化调色板、SVG矢量输出（文字可编辑），300dpi PNG作为光栅预览，支持柱状图、热力图、雷达图、3D球体等10类图表家族 可润色语言，25条规则+12步流程，从句子拆分到过度声明检测，逐条检测提供修改方案，避免中式英语、句子过长、时态混乱等 引用管理只检索Nature Portfolio/Science家族 /Cell Press 文献，支持ENW、RIS、Zotero RDF三种格式导出，还能生成HTML页面让你筛选年份和文献 审稿回复时给每条评论分配 ID、分类，映射到具体动作，所有修改必须标注论文具体位置 每个技能直接产出可用文件，不生成中间文档 #natureskills #nature论文skill",
+    "source": "x",
+    "url": "https://x.com/aigclink/status/2053765076801470554"
+  },
+  {
+    "index": 1,
+    "title": "Our own answer: structured coupling https://arxiv.org/abs/2605.07676 - flow matching with VAE-based coupling - VAE encoder & flow sharing networks - V...",
+    "content": "Our own answer: structured coupling https://arxiv.org/abs/2605.07676 - flow matching with VAE-based coupling - VAE encoder &amp; flow sharing networks - VAE decoder init. + flow refinement for sampling flow matching 🤝 VAEs -&gt; good representation &amp; sample quality🚀 yingzhen: Tons of papers re diffusion/flow matching at ML confs these days, but to my surprise very few of them consider learning the prior🤔 Am I missing any important work here? 🙏 for suggestions",
+    "source": "x",
+    "url": "https://x.com/liyzhen2/status/2053761429061198317"
+  },
+  {
+    "index": 2,
+    "title": "First Anthropic linked everything to one usage limit. Now OpenAI is doing the same 😭 My ChatGPT usage is impacting my Codex daily quota already �...",
+    "content": "First Anthropic linked everything to one usage limit. Now OpenAI is doing the same 😭 My ChatGPT usage is impacting my Codex daily quota already 🤧",
+    "source": "x",
+    "url": "https://x.com/jahirsheikh8/status/2053731276767858929"
+  },
+  {
+    "index": 3,
+    "title": "🚨This week's top AI/ML research papers: - Model Spec Midtraining - Sparser, Faster, Lighter Transformer LMs - Continuous Latent Diffusion LM - Shar...",
+    "content": "🚨This week's top AI/ML research papers: - Model Spec Midtraining - Sparser, Faster, Lighter Transformer LMs - Continuous Latent Diffusion LM - Sharpness-Aware Pretraining Mitigates Catastrophic Forgetting - GLM-5V-Turbo - Nonsense Helps - TIDE - Manifold Steering Reveals the Shared Geometry of Neural Network Representation and Behavior overview for each + authors' explanations",
+    "source": "x",
+    "url": "https://x.com/TheAITimeline/status/2053712685724840254"
+  },
+  {
+    "index": 4,
+    "title": "Why softmax? This is great question and I explain it in the following way in my deep learning course: While there are historical uses of this exponent...",
+    "content": "Why softmax? This is great question and I explain it in the following way in my deep learning course: While there are historical uses of this exponential form (Boltzmann, Gibbs, Jaynes, Luce &amp; McFadden), its use in neural networks with backprop was first by Bridle*. He essentially closed how to solve the classification head question in neural networks. (Hinton’s Boltzmann machine paper did not use backprop and he didn’t refer to this function as softmax). We also have Bridle responsible for ",
+    "source": "x",
+    "url": "https://x.com/deliprao/status/2053704810403131416"
+  },
+  {
+    "index": 5,
+    "title": "very big if true @YouJiacheng",
+    "content": "very big if true @YouJiacheng alphaXiv: \"Demystifying Manifold Constraints in LLM Pre-training\" LLM pre-training depends on a stack of heuristic tricks, eg. normalization layers, weight decay, and optimizer tuning. This paper suggests that by constraining weight matrices to geometric manifolds like spectral or",
+    "source": "x",
+    "url": "https://x.com/teortaxesTex/status/2053681700970905819"
+  },
+  {
+    "index": 6,
+    "title": "If you want to understand why RL struggles with long-horizon agent tasks, this is a good explanation. The core issue is that sparse rewards throw away...",
+    "content": "If you want to understand why RL struggles with long-horizon agent tasks, this is a good explanation. The core issue is that sparse rewards throw away most of the useful information in the trajectory. GEPA tries to learn from the trajectory itself, using reflection in text space, instead of only optimizing on the final reward. GEPA generates textual critiques of trajectories, proposes prompt edits, and then selects updates along a Pareto frontier between exploration and exploitation instead. Ins",
+    "source": "x",
+    "url": "https://x.com/blc_16/status/2053586348695834682"
+  },
+  {
+    "index": 7,
+    "title": "$500 slashed off this potent gaming PC with RTX 5060 Ti 16GB and an AMD Ryzen 7800X3D — mid-range iBuypower beast is just $1,599 in this deal",
+    "content": "Save $500 on an iBuypower Element 9 gaming PC from Newegg. $1599 PC includes a 16GB RTX 5060 Ti GPU and superfast Ryzen 7 7800X3D CPU.",
+    "source": "Tom's Hardware",
+    "url": "https://www.tomshardware.com/desktops/gaming-pcs/usd500-slashed-off-this-potent-gaming-pc-with-rtx-5060-ti-16gb-and-an-amd-ryzen-7800x3d-mid-range-ibuypower-beast-is-just-usd1-599-in-this-deal"
+  },
+  {
+    "index": 8,
+    "title": "Korea’s biggest manufacturers back Config, the TSMC of robot data",
+    "content": "Samsung, Hyundai and LG just bet on the startup that wants to be robotics' data backbone.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/05/11/koreas-biggest-manufacturers-back-config-the-tsmc-of-robot-data/"
+  },
+  {
+    "index": 9,
+    "title": "Musk v. Altman: profiles of US judge Yvonne Gonzalez Rogers, an Obama-nominated blunt and efficient operator, and Elon Musk's and OpenAI's attorneys (Angel Au-Yeung/Wall Street Journal)",
+    "content": "Angel Au-Yeung / Wall Street Journal : Musk v. Altman: profiles of US judge Yvonne Gonzalez Rogers, an Obama-nominated blunt and efficient operator, and Elon Musk's and OpenAI's attorneys — Trial features jurist known for straight talk and lawyers who have worked on milestone cases — In Silicon Valley's trial of the year …",
+    "source": "Techmeme",
+    "url": "https://www.techmeme.com/260511/p11#a260511p11"
+  },
+  {
+    "index": 10,
+    "title": "CUDA Proves Nvidia Is a Software Company",
+    "content": "There’s a deep, forbidding moat that surrounds Nvidia—and it has nothing to do with hardware.",
+    "source": "Feed: Artificial Intelligence Latest",
+    "url": "https://www.wired.com/story/cuda-proves-nvidia-is-a-software-company/"
+  },
+  {
+    "index": 11,
+    "title": "Turkish mobile gaming startup Grand Games raised a $70M Series B led by Balderton Capital, after raising $30M in 2025, taking its total funding to $103M (Tugce Ozsoy/Bloomberg)",
+    "content": "Tugce Ozsoy / Bloomberg : Turkish mobile gaming startup Grand Games raised a $70M Series B led by Balderton Capital, after raising $30M in 2025, taking its total funding to $103M — Turkish mobile gaming startup Grand Games Oyun ve Yazilim AS raised $70 million in a Series B funding round led by Balderton Capital's Growth Fund …",
+    "source": "Techmeme",
+    "url": "https://www.techmeme.com/260511/p10#a260511p10"
+  },
+  {
+    "index": 12,
+    "title": "TikTok plans to roll out TikTok Ad-Free, a £3.99-per-month subscription for UK accounts aged 18 or older in the coming months, after testing the option in 2023 (Sean Keach/The Sun)",
+    "content": "Sean Keach / The Sun : TikTok plans to roll out TikTok Ad-Free, a £3.99-per-month subscription for UK accounts aged 18 or older in the coming months, after testing the option in 2023 — You can update your preferences at any time, and it's always possible to switch back to the free version of the app.",
+    "source": "Techmeme",
+    "url": "https://www.techmeme.com/260511/p8#a260511p8"
+  },
+  {
+    "index": 13,
+    "title": "A Geometric Perspective on Robustness in Vision Transformers [R]",
+    "content": "Hi everyone! I'm sharing a paper I've been working on that investigates how different positional encoding schemes (learned absolute, sinusoidal, and rotary) shape the internal representations of Vision Transformers, and how these representations relate to robustness under distributional shift. Paper PDF: https://github.com/mahmoud-mannes/neurips-geometry-paper/blob/main/paper/main.pdf Abstract: Positional embeddings (PEs) in Vision Transformers (ViTs) are known to impact performance and robustne",
+    "source": "Machine Learning",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1t9wmg6/a_geometric_perspective_on_robustness_in_vision/"
+  },
+  {
+    "index": 14,
+    "title": "Why is human LLM annotation so expensive? [D]",
+    "content": "Scale AI and similar services charge a lot for annotation. MTurk is cheap but the quality is horrible for anything requiring real domain understanding. For small teams that need a few thousand labeled examples to calibrate their evals or fine tune a model, there seems to be no good middle ground. How is everyone handling this? Are you doing it manually or has anyone found something that actually works? submitted by /u/Neil-Sharma [link] [comments]",
+    "source": "Machine Learning",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1t9nc40/why_is_human_llm_annotation_so_expensive_d/"
+  },
+  {
+    "index": 15,
+    "title": "PhD students in ML, how many hours on average do you work? [D]",
+    "content": "I generally work around 9–10 hours a day, but not contiguously. I can usually carve out a dedicated chunk of time in the morning, take lab or project meetings in the afternoon, and block out around 6–8 PM for commute, exercise, socializing, and dinner. I also get more work done in the evening, since my focus is often best then. On weekends, I mostly run errands and try out new food spots, but I also make sure to do at least a little bit of work every day. I try to schedule my Slurm jobs so they ",
+    "source": "Machine Learning",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1t9mwqy/phd_students_in_ml_how_many_hours_on_average_do/"
+  },
+  {
+    "index": 16,
+    "title": "Any implementations similar to D4RT? [D]",
+    "content": "Deepmind released a paper on D4RT at the start of this year which crucially enabled a “4D” understanding of the world via structure from motion and generating: 1. Point cloud reconstruction from 2D videos (not static scenes) 2. Camera pose estimation You could pass in a video of a dog walking on a beach and it would estimate the 3d representation of the beach and the dog at any point in time. They did not release the model though. Are there any open source, available implementations of anything ",
+    "source": "Machine Learning",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1t95gc6/any_implementations_similar_to_d4rt_d/"
+  },
+  {
+    "index": 17,
+    "title": "What is an average publication outcome for an ML PhD? [D]",
+    "content": "I know publication count is not everything, and quality, contribution, advisor/lab culture, subfield, and luck all matter a lot. But to make the comparison easier, I’m curious about the publication-count side specifically. For an ML PhD, what would you consider an average publication outcome by graduation? For example, would something like 3–5 first-author papers at A/top-tier venues * be considered roughly average, or would that already be above average in ML? By A*/top-tier, I’m thinking of ve",
+    "source": "Machine Learning",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1t8bnmp/what_is_an_average_publication_outcome_for_an_ml/"
+  },
+  {
+    "index": 18,
+    "title": "is workshop abstract deadline hard or soft deadline [D]",
+    "content": "Hi, this ICML workshop: https://trustworthy-ai-for-good.github.io/ says abstract deadline was yesterday, however on openreview it only lists the full paper deadline, and I can still submit the full paper even though missing abstract deadline. Is there any chance my submission get desk-rejected? Thank you. submitted by /u/Ok-Painter573 [link] [comments]",
+    "source": "Machine Learning",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1t8715r/is_workshop_abstract_deadline_hard_or_soft/"
+  },
+  {
+    "index": 19,
+    "title": "AMD's excellent Radeon RX 9070 with 16 GB of VRAM hits all-time low pricing &mdash; PowerColor Hellhound variant is 23% off list price",
+    "content": "If you've been looking for a GPU upgrade but were disappointed by the ongoing market conditions, a small window of opportunity has just sprung open. AMD's fantastic RX 9070 is on sale for just $554, discounted $165 from its typical retail price. It's a very capable 1440p card that can even game at 4K with enough upscaling.",
+    "source": "Tom's Hardware",
+    "url": "https://www.tomshardware.com/pc-components/amds-excellent-radeon-rx-9070-with-16-gb-of-vram-hits-all-time-low-pricing-powercolor-hellhound-variant-is-23-percent-off-list-price"
+  },
+  {
+    "index": 20,
+    "title": "Huge landslide created a 500-meter-high tsunami in a major tourist area",
+    "content": "At 5:26 am local time on August 10, 2025, a massive wedge of rock with a volume of at least 63.5 million cubic meters detached from a mountain above Alaska’s Tracy Arm fjord. The falling rock plummeted into the deep waters at the terminus of the South Sawyer Glacier and caused an initial 100-meter-high breaking wave that tore across the fjord at speeds exceeding 70 meters a second. When this wave hit the opposite shoreline, it surged up the steep rocks to a height of 481 meters above sea level. ",
+    "source": "Ars Technica » Scientific Method",
+    "url": "https://arstechnica.com/science/2026/05/how-a-melting-glacier-led-to-a-500-meter-high-tsunami/"
+  }
+]
