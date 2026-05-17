@@ -2,6 +2,93 @@
   "news": {
     "2026-05-17": [
       {
+        "id": "9cbe2363eee406c8183444b5cefab2c2",
+        "title": "纯Rust打造的Unix风格编码Agent Zerostack发布1.0版本",
+        "chinese_title": "纯Rust打造的Unix风格编码Agent Zerostack发布1.0版本",
+        "original_title": "Zerostack – A Unix-inspired coding agent written in pure Rust",
+        "summary": "Zerostack正式发布1.0版本，是一款使用纯Rust构建、灵感来自Unix哲学的编码Agent，强调可组合性与轻量化，已在crates.io上线供开发者尝试。",
+        "rating": "B",
+        "score": 66,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "纯Rust编码Agent的出现或推动AI开发工具向系统编程语言生态扩展，与Python/TypeScript主流形成对照。",
+        "entities": [
+          "Rust",
+          "Zerostack"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://crates.io/crates/zerostack/1.0.0"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778983463,
+        "published_at": "2026-05-17T10:04:23.286531",
+        "source": "Hacker News",
+        "url": "https://crates.io/crates/zerostack/1.0.0",
+        "event_id": null
+      },
+      {
+        "id": "cf8ad7b0096da31e58ef80bc21dcdcc8",
+        "title": "AI营销操作系统Nectar Social完成3000万美元A轮，Menlo联合Anthropic基金领投",
+        "chinese_title": "AI营销操作系统Nectar Social完成3000万美元A轮，Menlo联合Anthropic基金领投",
+        "original_title": "Marketing operating system Nectar Social raises $30M Series A led by Menlo",
+        "summary": "AI驱动的营销平台Nectar Social宣布完成3000万美元A轮融资，由Menlo Ventures及其与Anthropic共同设立的Anthology Fund领投，聚焦企业级营销自动化场景。",
+        "rating": "A",
+        "score": 78,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "Anthropic通过Anthology Fund持续布局营销与企业应用，将与OpenAI Startup Fund在生态卡位上正面竞争。",
+        "entities": [
+          "Anthropic",
+          "Menlo Ventures",
+          "Nectar Social"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/05/16/marketing-operating-system-nectar-social-raises-30m-series-a-in-round-led-by-menlo/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778983463,
+        "published_at": "2026-05-17T10:04:23.286544",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/16/marketing-operating-system-nectar-social-raises-30m-series-a-in-round-led-by-menlo/",
+        "event_id": null
+      },
+      {
+        "id": "70966ac3fb4011d16c7a5a5bec1b31b8",
+        "title": "LLM工具调用研究揭示\"知道却不执行\"断层",
+        "chinese_title": "LLM工具调用研究揭示\"知道却不执行\"断层",
+        "original_title": "Model-Adaptive Tool Necessity Reveals the Knowing-Doing Gap in LLM Tool Use",
+        "summary": "arXiv新论文提出模型自适应的工具必要性定义，评估四个模型在算术和事实问答中的工具调用行为，发现应调用工具却未调用的错配最高达54.0%。隐藏状态探针显示，模型常能编码\"需要工具\"的认知信号，但没有稳定转化为实际调用动作，瓶颈集中在从认知到行动的阶段。",
+        "rating": "A+",
+        "score": 89,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到AI Agent可靠性、工具调用训练与对齐、RAG系统和自动工作流中的\"知道但不执行\"问题；对企业智能体落地有直接解释力。",
+        "entities": [
+          "Ai Agent",
+          "LLM",
+          "Tool Use",
+          "模型可解释性"
+        ],
+        "sourceLinks": [
+          {
+            "name": "arXiv",
+            "url": "https://arxiv.org/abs/2605.14038"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778980830,
+        "published_at": "2026-05-17T09:20:30.825467",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2605.14038",
+        "event_id": null
+      },
+      {
         "id": "f6b868175d26a71bb4a1bec6558462ef",
         "title": "开发者尝试用Claude自动完成赏金任务赚取收益",
         "chinese_title": "开发者尝试用Claude自动完成赏金任务赚取收益",
@@ -814,6 +901,148 @@
       }
     ],
     "2026-05-16": [
+      {
+        "id": "378c6aedc5acee26f33f512a23fed25d",
+        "title": "防止程序化滥用，Claude Code或将请求摄像头验证用户在场",
+        "chinese_title": "防止程序化滥用，Claude Code或将请求摄像头验证用户在场",
+        "original_title": "To prevent \"programmatic use\", Claude Code may now request webcam access to assure user is present when prompting",
+        "summary": "有用户发现Claude Code为防止被脚本化滥用，可能在提示交互时请求摄像头权限以确认真实用户正在操作，引发开发者社区关于隐私与反自动化边界的讨论。",
+        "rating": "B",
+        "score": 74,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可能引发AI编码工具反作弊机制的讨论，Cursor、Codex等竞品如何应对自动化滥用值得关注。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/theo/status/2055793010370306556"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778983463,
+        "published_at": "2026-05-17T10:04:23.286406",
+        "source": "x",
+        "url": "https://x.com/theo/status/2055793010370306556",
+        "event_id": null
+      },
+      {
+        "id": "5d2b65d69c59cf1314ca9b446f26bb1d",
+        "title": "测试四大模型识别手写便签：仅两款认得字，竟有AI识别成穴位图",
+        "chinese_title": "测试四大模型识别手写便签：仅两款认得字，竟有AI识别成穴位图",
+        "original_title": "在煤炉上买咖啡豆，商家手写了个便签，用 ChatGPT Kimi Gemini Deepseek 识别，全部使用默认模式，只有两个识别出来了，别的甚至识别成了穴位图，什么鬼",
+        "summary": "开发者用煤炉商家手写的咖啡豆便签测试ChatGPT、Kimi、Gemini、DeepSeek四款主流大模型的OCR能力，结果仅两款能正确识别，其余甚至把内容认作中医穴位图，暴露多模态识别的真实差距。",
+        "rating": "A",
+        "score": 77,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "多模态模型的中文手写识别能力将成为下一阶段竞争焦点，可延伸到OCR评测、教育和办公场景应用对比。",
+        "entities": [
+          "DeepSeek",
+          "GPT",
+          "Gemini",
+          "Kimi"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/kevinzhow/status/2055767840964436360"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778983463,
+        "published_at": "2026-05-17T10:04:23.286429",
+        "source": "x",
+        "url": "https://x.com/kevinzhow/status/2055767840964436360",
+        "event_id": null
+      },
+      {
+        "id": "6b05ed45921166c4ca66ec33140913e6",
+        "title": "Anthropic神秘模型Claude Mythos现身谷歌云控制台，Opus 4.7或同步在路上",
+        "chinese_title": "Anthropic神秘模型Claude Mythos现身谷歌云控制台，Opus 4.7或同步在路上",
+        "original_title": "ANTHROPIC 🔥: Claude Mythos model has been spotted on Google Cloud Console. -claude-mythos 👀 It is hard to imagine that Anthropic would change it...",
+        "summary": "测试者在Google Cloud Console中发现Anthropic未公开模型Claude Mythos以及Opus 4.7的踪迹，preview标签已消失，暗示Anthropic或通过GCP面向特定企业客户开放。",
+        "rating": "A+",
+        "score": 89,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "若Anthropic加深与谷歌云绑定，将影响OpenAI在企业云市场的份额，AWS Bedrock阵营也可能加快布局。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Google Cloud"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/testingcatalog/status/2055765220123939272"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778983463,
+        "published_at": "2026-05-17T10:04:23.286447",
+        "source": "x",
+        "url": "https://x.com/testingcatalog/status/2055765220123939272",
+        "event_id": null
+      },
+      {
+        "id": "ce521b89d7862a3fb69dd32cbb287abf",
+        "title": "FrontierSmith亮相：用AI批量合成开放式编程任务，破解训练数据瓶颈",
+        "chinese_title": "FrontierSmith亮相：用AI批量合成开放式编程任务，破解训练数据瓶颈",
+        "original_title": "Introducing FrontierSmith, a new system that uses AI to synthesize open-ended coding problems at scale. High-quality open-ended coding tasks have long...",
+        "summary": "研究团队发布FrontierSmith系统，可基于封闭算法题自动变异、过滤并构造可运行的优化与测试环境，从而规模化合成高质量开放式编程任务，为长链路编码Agent提供训练素材。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若开放式任务可自动合成，将显著降低Agent训练成本，或加速SWE-Bench类基准的迭代。",
+        "entities": [
+          "Frontiersmith"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/wenhaocha1/status/2055705711552979075"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778983463,
+        "published_at": "2026-05-17T10:04:23.286470",
+        "source": "x",
+        "url": "https://x.com/wenhaocha1/status/2055705711552979075",
+        "event_id": null
+      },
+      {
+        "id": "fc898a8368718f6fe5a79fd00a464a99",
+        "title": "Grok Build引入memory/flush/dream三大命令，AI记忆机制走向显式",
+        "chinese_title": "Grok Build引入memory/flush/dream三大命令，AI记忆机制走向显式",
+        "original_title": "You can also explicitly ask the model to remember or forget things… There are some interesting things behind such as FTS + vector search, interval fl...",
+        "summary": "Grok Build CLI推出三组实验性记忆管理指令：/memory、/flush、/dream，背后结合FTS与向量检索及定时刷写，旧会话记忆会自动衰减，工作区与全局记忆则被视为长期保留。",
+        "rating": "A",
+        "score": 81,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "显式记忆管理或成下一代Agent CLI的标配，将与Cursor、Claude Code等内置记忆机制形成直接竞争。",
+        "entities": [
+          "Grok",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/theskory/status/2055675686698840357"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1778983463,
+        "published_at": "2026-05-17T10:04:23.286490",
+        "source": "x",
+        "url": "https://x.com/theskory/status/2055675686698840357",
+        "event_id": null
+      },
       {
         "id": "9875b36fc4e765ca58f0f44b638cc0e2",
         "title": "用磁铁轰击大脑就能戒烟？科学家公布rTMS临床新进展",
@@ -10698,36 +10927,6 @@
       }
     ],
     "2026-05-13": [
-      {
-        "id": "70966ac3fb4011d16c7a5a5bec1b31b8",
-        "title": "LLM工具调用研究揭示\"知道却不执行\"断层",
-        "chinese_title": "LLM工具调用研究揭示\"知道却不执行\"断层",
-        "original_title": "Model-Adaptive Tool Necessity Reveals the Knowing-Doing Gap in LLM Tool Use",
-        "summary": "arXiv新论文提出模型自适应的工具必要性定义，评估四个模型在算术和事实问答中的工具调用行为，发现应调用工具却未调用的错配最高达54.0%。隐藏状态探针显示，模型常能编码\"需要工具\"的认知信号，但没有稳定转化为实际调用动作，瓶颈集中在从认知到行动的阶段。",
-        "rating": "A+",
-        "score": 89,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸到AI Agent可靠性、工具调用训练与对齐、RAG系统和自动工作流中的\"知道但不执行\"问题；对企业智能体落地有直接解释力。",
-        "entities": [
-          "Ai Agent",
-          "LLM",
-          "Tool Use",
-          "模型可解释性"
-        ],
-        "sourceLinks": [
-          {
-            "name": "arXiv",
-            "url": "https://arxiv.org/abs/2605.14038"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778980830,
-        "published_at": "2026-05-17T09:20:30.825467",
-        "source": "arXiv",
-        "url": "https://arxiv.org/abs/2605.14038",
-        "event_id": null
-      },
       {
         "id": "6dd48bd7c6afe2a5fbed4048b9b0f38f",
         "title": "AI设计抗生素入选六大抗菌耐药突破，免疫疗法亦有进展",
@@ -22528,95 +22727,9 @@
         "source": "Machine Learning",
         "url": "https://www.reddit.com/r/MachineLearning/comments/1t80awj/my_experience_interviewing_with_huawei_vancouver/",
         "event_id": null
-      },
-      {
-        "id": "a3b13c5e2e231bb33a7765c7491897a8",
-        "title": "xAI语音业务负责人离职，曾从零打造对标Tau的Agentic Voice",
-        "chinese_title": "xAI语音业务负责人离职，曾从零打造对标Tau的Agentic Voice",
-        "original_title": "last week was my last day at @xai. leading voice was the hardest and most rewarding work of my career. we built it from zero to the best agentic voice...",
-        "summary": "xAI语音业务负责人宣布上周已是其在公司最后一天，任职期间他从零搭建了对标Tau的Agentic Voice，并交付了实时思考、声音克隆等核心功能。",
-        "rating": "B",
-        "score": 70,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "xAI核心人才流失或影响其Grok语音功能后续迭代，可关注下一步去向是否流向OpenAI、Anthropic等竞争对手。",
-        "entities": [
-          "Grok",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/prolificgoober/status/2053243724625490337"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778378403,
-        "published_at": "2026-05-10T10:00:03.509537",
-        "source": "x",
-        "url": "https://x.com/prolificgoober/status/2053243724625490337",
-        "event_id": null
-      },
-      {
-        "id": "c87fbc9edac2b9bd5c8be5fab84c0aea",
-        "title": "SpaceX注册SpaceXAI商标，剑指卫星数据中心和太空AI算力",
-        "chinese_title": "SpaceX注册SpaceXAI商标，剑指卫星数据中心和太空AI算力",
-        "original_title": "SpaceX has officially filed a new trademark application for the wordmark \"SpaceXAI\" The description says: \"Providing satellite-based data center servi...",
-        "summary": "SpaceX正式提交SpaceXAI商标申请，业务范围涵盖基于卫星的数据中心服务、轨道计算基础设施、太空平台AI模型训练与推理等，预示马斯克太空AI布局进一步成型。",
-        "rating": "A",
-        "score": 85,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "太空数据中心赛道升温，可关注其与xAI、Starlink的协同效应，以及对地面数据中心、AI算力供给格局的潜在冲击。",
-        "entities": [
-          "Elon Musk",
-          "SpaceX",
-          "Starlink",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/SawyerMerritt/status/2053168221793218737"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778378403,
-        "published_at": "2026-05-10T10:00:03.509554",
-        "source": "x",
-        "url": "https://x.com/SawyerMerritt/status/2053168221793218737",
-        "event_id": null
-      },
-      {
-        "id": "f7d78b0848995996ec5edc39bda5545f",
-        "title": "硅谷亿万富豪逃税新去处：内华达湖区小镇成新晋豪宅集散地",
-        "chinese_title": "硅谷亿万富豪逃税新去处：内华达湖区小镇成新晋豪宅集散地",
-        "original_title": "Billionaire Tax Refugees Flock to Ritzy Nevada Lake Town",
-        "summary": "在加州拟开征亿万富豪税阴影下，AI创业者Naveen Rao等富豪纷纷涌入内华达Lake Tahoe一侧的Incline Village小镇置业，2000万美元豪宅成交频现。",
-        "rating": "B",
-        "score": 68,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "硅谷富豪集体迁徙将加剧加州税源流失，可延伸跟踪科技公司总部、AI实验室是否随之向低税州转移。",
-        "entities": [
-          "Naveen Rao",
-          "Unconventional Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/billionaire-tax-refugees-flock-ritzy-nevada-lake-town"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778378403,
-        "published_at": "2026-05-10T10:00:03.509647",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/billionaire-tax-refugees-flock-ritzy-nevada-lake-town",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-17T09:20:30.983863",
-  "total_news": 774
+  "last_updated": "2026-05-17T10:06:36.847521",
+  "total_news": 778
 }
