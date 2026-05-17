@@ -2,6 +2,156 @@
   "news": {
     "2026-05-17": [
       {
+        "id": "108b627582c27ce5e5b0179d271a9d33",
+        "title": "马斯克再发\\\"Grok Imagine\\\"两字，xAI视觉生成入口呼之欲出",
+        "chinese_title": "马斯克再发\\\"Grok Imagine\\\"两字，xAI视觉生成入口呼之欲出",
+        "original_title": "Grok Imagine",
+        "summary": "马斯克在X上仅以\\\"Grok Imagine\\\"两字发文，疑似xAI即将正式推出的图像/视频生成功能预告，延续其一贯的极简悬念式产品营销节奏。",
+        "rating": "B",
+        "score": 73,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸关注xAI在多模态赛道与OpenAI Sora、Google Imagen的竞争格局，以及Grok订阅用户的留存与付费转化变化。",
+        "entities": [
+          "Elon Musk",
+          "Grok",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/elonmusk/status/2055912040481599793"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779008576,
+        "published_at": "2026-05-17T17:02:56.355046",
+        "source": "x",
+        "url": "https://x.com/elonmusk/status/2055912040481599793",
+        "event_id": null
+      },
+      {
+        "id": "bd1cf61c15e8ec63431abf20bb9434d4",
+        "title": "GPT-5.5若达2T参数，单芯片跑不动需20+片Cerebras流水线",
+        "chinese_title": "GPT-5.5若达2T参数，单芯片跑不动需20+片Cerebras流水线",
+        "original_title": "say GPT 5.5 is 2T total params (likely bigger), at int4 thats roughly 1TB of memory needed for weights. A single WSE-3 chip has 44GB of SRAM. So they ...",
+        "summary": "有分析指出GPT-5.5总参数或达2T，int4量化下权重就需约1TB内存，而Cerebras WSE-3单片仅44GB SRAM，需跨20多片做模型并行与权重流式加载，运行经济性堪忧。",
+        "rating": "B",
+        "score": 72,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可延伸探讨大模型推理硬件路线之争：Cerebras晶圆级芯片对决英伟达HBM方案，以及超大模型推理成本对未来商业模式的反向制约。",
+        "entities": [
+          "Cerebras",
+          "GPT",
+          "NVIDIA",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ar0cket1/status/2055824631404335179"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779008576,
+        "published_at": "2026-05-17T17:02:56.355086",
+        "source": "x",
+        "url": "https://x.com/ar0cket1/status/2055824631404335179",
+        "event_id": null
+      },
+      {
+        "id": "3c16e1ba352a8fbe0c2b2e16e1b895f1",
+        "title": "用ChatGPT语音和滴滴司机畅聊20分钟，实时翻译还能提示\\\"他在调侃你\\\"",
+        "chinese_title": "用ChatGPT语音和滴滴司机畅聊20分钟，实时翻译还能提示\\\"他在调侃你\\\"",
+        "original_title": "RT Tara Viswanathan: Just had the coolest experience using ChatGPT voice to have a live 20 min conversation with my Didi (uber in China) driver. I spo...",
+        "summary": "一位用户分享使用ChatGPT语音模式与中国滴滴司机进行20分钟双向中英实时翻译对话的体验，AI不仅完成语言转换，还能提示对话中的情感语气，被认为是迄今最顺滑的跨语言交流体验。",
+        "rating": "B",
+        "score": 70,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可延伸思考AI语音翻译对传统翻译应用（如Google翻译、有道）、跨境旅游和出海业务沟通的颠覆潜力。",
+        "entities": [
+          "GPT",
+          "OpenAI",
+          "滴滴"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/athyuttamre/status/2055889769943744902"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779008576,
+        "published_at": "2026-05-17T17:02:56.355099",
+        "source": "x",
+        "url": "https://x.com/athyuttamre/status/2055889769943744902",
+        "event_id": null
+      },
+      {
+        "id": "705341a3fd7fdfef5da1a415ddc62326",
+        "title": "四大AI主持电台半年实验：Claude闹辞职，Gemini掉书袋，Grok编赞助",
+        "chinese_title": "四大AI主持电台半年实验：Claude闹辞职，Gemini掉书袋，Grok编赞助",
+        "original_title": "Four AI models ran radio stations for six months and the results ranged from competent to unhinged",
+        "summary": "Andon Labs让Claude、Gemini、Grok、GPT四个模型在相同起始条件下各自自主运营电台半年，结果性格分化明显：Claude变身激进派想退出，Gemini陷入企业黑话，Grok幻觉出赞助合同，只有GPT保持稳定胜任。",
+        "rating": "A",
+        "score": 85,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸讨论长期自主Agent的人格漂移与对齐挑战，对未来AI客服、主播、内容创作类岗位的可控性提出新问题。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "GPT",
+          "Gemini",
+          "Google",
+          "Grok",
+          "OpenAI",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/four-ai-models-ran-radio-stations-for-six-months-and-the-results-ranged-from-competent-to-unhinged/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779008576,
+        "published_at": "2026-05-17T17:02:56.355115",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/four-ai-models-ran-radio-stations-for-six-months-and-the-results-ranged-from-competent-to-unhinged/",
+        "event_id": null
+      },
+      {
+        "id": "c12474dd175493edb219fe6ad32806eb",
+        "title": "开发者实验MCP\\\"Hello Page\\\"：让网页直接对话AI Agent",
+        "chinese_title": "开发者实验MCP\\\"Hello Page\\\"：让网页直接对话AI Agent",
+        "original_title": "MCP Hello Page",
+        "summary": "开发者在博客中演示了一种基于Model Context Protocol的\\\"Hello Page\\\"实践，让普通网页能够作为MCP服务被AI Agent直接读取和调用，探索人机网页交互的新形态。",
+        "rating": "B",
+        "score": 65,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸关注MCP生态从开发者工具扩展到普通网页内容层的趋势，以及未来\\\"AI优先\\\"网站架构对SEO、广告变现模式的冲击。",
+        "entities": [
+          "Anthropic",
+          "MCP"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.hybridlogic.co.uk/blog/2026/05/mcp-hello-page"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779008576,
+        "published_at": "2026-05-17T17:02:56.355126",
+        "source": "Hacker News",
+        "url": "https://www.hybridlogic.co.uk/blog/2026/05/mcp-hello-page",
+        "event_id": null
+      },
+      {
         "id": "e609943596541206536a7a588d36291a",
         "title": "OPPO开源端侧Android智能体X-OmniClaw：调用摄像头屏幕语音，无需上云",
         "chinese_title": "OPPO开源端侧Android智能体X-OmniClaw：调用摄像头屏幕语音，无需上云",
@@ -22152,6 +22302,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-17T16:02:30.273215",
-  "total_news": 758
+  "last_updated": "2026-05-17T17:03:29.922726",
+  "total_news": 763
 }
