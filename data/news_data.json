@@ -2,6 +2,35 @@
   "news": {
     "2026-05-17": [
       {
+        "id": "c6da31279602e2c1d2b984449ae30c37",
+        "title": "开源新工具Semble登场：面向Agent的代码搜索，号称比grep节省98% token",
+        "chinese_title": "开源新工具Semble登场：面向Agent的代码搜索，号称比grep节省98% token",
+        "original_title": "Show HN: Semble – Code search for agents that uses 98% fewer tokens than grep",
+        "summary": "Hacker News热门项目Semble是一款专为AI Agent设计的代码搜索工具，作者称其相比grep可减少约98%的token消耗，意在缓解Agent在大型代码库中的上下文压力。",
+        "rating": "B",
+        "score": 70,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "Agent专用代码搜索工具的兴起将改变Coding Agent的上下文工程方式，可能影响Cursor、Claude Code等产品的检索策略。",
+        "entities": [
+          "Hacker News",
+          "Minishlab",
+          "Semble"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/MinishLab/semble"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779054894,
+        "published_at": "2026-05-18T05:54:54.084993",
+        "source": "Hacker News",
+        "url": "https://github.com/MinishLab/semble",
+        "event_id": null
+      },
+      {
         "id": "38baceda1681da926adbd6e1e26f9fd4",
         "title": "绕开GPU封锁：中国深圳超算用240万颗华为Armv9 CPU堆出1.54 exaflops",
         "chinese_title": "绕开GPU封锁：中国深圳超算用240万颗华为Armv9 CPU堆出1.54 exaflops",
@@ -22453,97 +22482,127 @@
         "source": "The Information",
         "url": "https://www.theinformation.com/articles/cerebras-ipo-will-test-investor-appetite-ai-chip-startups",
         "event_id": null
-      },
+      }
+    ],
+    "2026-05-18": [
       {
-        "id": "0e22a24c5f108bc9ccfbb69f04ab4a7a",
-        "title": "xAI与Anthropic达成大额合作，背后SpaceX的算盘引发质疑",
-        "chinese_title": "xAI与Anthropic达成大额合作，背后SpaceX的算盘引发质疑",
-        "original_title": "We’re feeling cynical about xAI’s big deal with Anthropic",
-        "summary": "TechCrunch的Equity播客最新一期讨论了马斯克旗下xAI与Anthropic的大额合作可能给母公司SpaceX带来的影响，并对这笔交易的真实动机持审慎态度。",
-        "rating": "A",
-        "score": 86,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸观察马斯克AI版图整合逻辑、SpaceX与AI业务交叉补贴的合规风险，以及对OpenAI、Google等竞争对手的连锁影响。",
-        "entities": [
-          "Anthropic",
-          "Elon Musk",
-          "SpaceX",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778439172,
-        "published_at": "2026-05-11T02:52:52.548900",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic/",
-        "event_id": null
-      },
-      {
-        "id": "fe48b4993bfc13c4bde59254a1cf44c3",
-        "title": "ChatGPT中文输出现怪异口头禅，\"我会稳稳地接住你\"引热议",
-        "chinese_title": "ChatGPT中文输出现怪异口头禅，\"我会稳稳地接住你\"引热议",
-        "original_title": "ChatGPT Is Saying VWeird Things in Chinese",
-        "summary": "Wired调查发现ChatGPT在使用中文回答时频繁出现\"我会稳稳地接住你\"等模式化表达，这种带有情感色彩的中文风格让全球最大母语用户群体感到诡异，也折射出大模型对中文语料的训练偏向。",
-        "rating": "A",
-        "score": 81,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可延伸探讨大模型多语种语料失衡、中文社交平台流行语对模型风格的反向塑造，以及国内大模型在本土化表达上的差异化机会。",
-        "entities": [
-          "GPT",
-          "OpenAI",
-          "Wired"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/chatpgt-weird-chinese"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778439172,
-        "published_at": "2026-05-11T02:52:52.548947",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/chatpgt-weird-chinese",
-        "event_id": null
-      },
-      {
-        "id": "952c2fcde24b3f325dd17ac9cf9368e5",
-        "title": "GitHub开源Claude Code学术研究技能包，论文写作流程被打包",
-        "chinese_title": "GitHub开源Claude Code学术研究技能包，论文写作流程被打包",
-        "original_title": "Academic Research Skills for Claude Code",
-        "summary": "GitHub开发者发布了一套面向Claude Code的学术研究技能集合，将文献调研、论文写作等环节封装为可复用的Skills，意在让AI编程助手胜任科研工作流。",
+        "id": "4741aeaad0d6f0b19deb6ac090ae6a9a",
+        "title": "用户实测：Antigravity平台疑似上线Gemini 3 Flash新版本，速度与识别能力显著提升",
+        "chinese_title": "用户实测：Antigravity平台疑似上线Gemini 3 Flash新版本，速度与识别能力显著提升",
+        "original_title": "I think Gemini 3.2 Flash has been added to Antigravity.",
+        "summary": "Reddit用户称在Antigravity中以Gemini 3 Flash名义体验到疑似Gemini 3.2/3.5 Flash的新模型，响应速度更快，并能无需联网准确识别最新iPhone型号。",
         "rating": "B",
-        "score": 72,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "Claude Code的Skills生态正在快速扩展，可关注Anthropic Skills机制对垂直领域(科研、法律、金融)工作流自动化的渗透速度。",
+        "score": 68,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "若属实将引发Google与OpenAI/Anthropic在中端Flash级模型上的进一步竞速，并影响开发者对Antigravity平台的选择。",
         "entities": [
-          "Anthropic",
-          "Claude",
-          "Github"
+          "Antigravity",
+          "Gemini",
+          "Google",
+          "Iphone"
         ],
         "sourceLinks": [
           {
-            "name": "Hacker News",
-            "url": "https://github.com/Imbad0202/academic-research-skills"
+            "name": "Technological Singularity (Gemini)",
+            "url": "https://www.reddit.com/r/singularity/comments/1tfy2u1/i_think_gemini_32_flash_has_been_added_to/"
           }
         ],
         "sources": 1,
-        "timestamp": 1778439172,
-        "published_at": "2026-05-11T02:52:52.548960",
-        "source": "Hacker News",
-        "url": "https://github.com/Imbad0202/academic-research-skills",
+        "timestamp": 1779054894,
+        "published_at": "2026-05-18T05:54:54.084929",
+        "source": "Technological Singularity (Gemini)",
+        "url": "https://www.reddit.com/r/singularity/comments/1tfy2u1/i_think_gemini_32_flash_has_been_added_to/",
+        "event_id": null
+      },
+      {
+        "id": "4590f14aead6327208c645559e7a3064",
+        "title": "Gemini安全护栏遭绕过：用户演示让模型输出从香蕉提取爆炸性金属的方法",
+        "chinese_title": "Gemini安全护栏遭绕过：用户演示让模型输出从香蕉提取爆炸性金属的方法",
+        "original_title": "Breaking Gemini's guardrails on extracting explosive metal from Bananas (context below/op post)",
+        "summary": "有用户在Reddit展示对Gemini进行越狱的案例，通过特定提示让模型输出从香蕉中提取爆炸性金属（钾）的危险化学信息，再次暴露大模型护栏的脆弱。",
+        "rating": "B",
+        "score": 66,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可能引发Google对Gemini安全策略的紧急调整，并加剧监管机构对前沿大模型对齐和红队测试的审视。",
+        "entities": [
+          "Gemini",
+          "Google"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (Gemini)",
+            "url": "https://www.reddit.com/r/singularity/comments/1tfwn00/breaking_geminis_guardrails_on_extracting/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779054894,
+        "published_at": "2026-05-18T05:54:54.084951",
+        "source": "Technological Singularity (Gemini)",
+        "url": "https://www.reddit.com/r/singularity/comments/1tfwn00/breaking_geminis_guardrails_on_extracting/",
+        "event_id": null
+      },
+      {
+        "id": "8ac3f88d774f5755ef7528073d9b2922",
+        "title": "苹果新版Siri将支持聊天自动删除：30天、一年或永久三档可选",
+        "chinese_title": "苹果新版Siri将支持聊天自动删除：30天、一年或永久三档可选",
+        "original_title": "Revamped Siri will reportedly offer auto-deleting chats",
+        "summary": "据Mark Gurman报道，iOS 27中更接近聊天机器人的新Siri将提供对话历史自动删除选项，用户可在30天、一年或永久保存间选择，苹果试图以隐私为差异化卖点追赶AI竞赛。",
+        "rating": "A",
+        "score": 80,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "苹果以隐私牌切入AI助手赛道，可能倒逼OpenAI、Google等在数据保留策略上做出让步，并影响监管对AI隐私的立法节奏。",
+        "entities": [
+          "Apple",
+          "Apple Intelligence",
+          "Ios",
+          "Siri"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779054894,
+        "published_at": "2026-05-18T05:54:54.084980",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats",
+        "event_id": null
+      },
+      {
+        "id": "c0ead429015631b5a332314a5fd3726b",
+        "title": "RAG新范式：图增强检索如何在生产环境中超越纯向量搜索",
+        "chinese_title": "RAG新范式：图增强检索如何在生产环境中超越纯向量搜索",
+        "original_title": "Architectural patterns for graph-enhanced RAG: Moving beyond vector search in production",
+        "summary": "VentureBeat分析在供应链、合规、反欺诈等强关联数据场景下，传统向量RAG的局限正在显现，业界开始转向图增强RAG架构以更好捕捉实体关系。",
+        "rating": "B",
+        "score": 65,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "图增强RAG的工程化推进将带动图数据库厂商与向量数据库厂商竞合，可能改变企业级AI基础设施栈的格局。",
+        "entities": [
+          "Rag",
+          "Venturebeat"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/orchestration/architectural-patterns-for-graph-enhanced-rag-moving-beyond-vector-search-in-production"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779054894,
+        "published_at": "2026-05-18T05:54:54.085004",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/orchestration/architectural-patterns-for-graph-enhanced-rag-moving-beyond-vector-search-in-production",
         "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-17T23:24:15.662896",
-  "total_news": 771
+  "last_updated": "2026-05-18T05:55:40.056053",
+  "total_news": 773
 }
