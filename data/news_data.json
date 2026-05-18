@@ -2,6 +2,118 @@
   "news": {
     "2026-05-18": [
       {
+        "id": "5cb89d51ba60c677eeb021d49d9cc93b",
+        "title": "研究者实测：MoE大模型在非裔英语提示下安全策略可能失效",
+        "chinese_title": "研究者实测：MoE大模型在非裔英语提示下安全策略可能失效",
+        "original_title": "could refusal layers be masking dialect-conditioned safety failures in MoE models [d]",
+        "summary": "有研究者在Qwen3.5-35B-A3B及其无拒绝微调版本上对比AAVE方言与学术英语提示，发现MoE模型路由与回复在涉及安全敏感场景时存在系统差异，怀疑拒绝层正在掩盖方言相关的安全失败。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可联动到大模型安全公平性、方言偏见、AI伦理治理与MoE路由机制可解释性等延伸报道。",
+        "entities": [
+          "Moe",
+          "Qwen"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tggu0j/could_refusal_layers_be_masking/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779113448,
+        "published_at": "2026-05-18T22:10:48.821528",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tggu0j/could_refusal_layers_be_masking/",
+        "event_id": null
+      },
+      {
+        "id": "81236af4715541c1213897973e51f38a",
+        "title": "百度Q1营收47亿美元微降1.1%，净利润同比腰斩反映AI变现滞缓",
+        "chinese_title": "百度Q1营收47亿美元微降1.1%，净利润同比腰斩反映AI变现滞缓",
+        "original_title": "Baidu reports Q1 revenue down 1.1% YoY to ~$4.7B, above ~$4.5B est., and net profit down 55% YoY to ~$506.6M, above ~$462.5M est., amid a slow AI payoff (Tracy Qu/Wall Street Journal)",
+        "summary": "百度发布2026年第一季度财报，营收同比微降1.1%至约47亿美元，超出市场预期，但净利润同比下滑55%至约5.06亿美元，连续四个季度大幅下挫，凸显AI业务回报兑现节奏偏慢。",
+        "rating": "A",
+        "score": 80,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可联动到中国AI大厂商业化路径、广告核心业务承压以及国产大模型生态投入产出博弈。",
+        "entities": [
+          "Baidu"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260518/p15#a260518p15"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779113448,
+        "published_at": "2026-05-18T22:10:48.821604",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260518/p15#a260518p15",
+        "event_id": null
+      },
+      {
+        "id": "3fa71b7e6b5e9fab3b90f09bf8dccc19",
+        "title": "联想内部备忘录：英伟达H200对华销售许可自三月起再无新进展",
+        "chinese_title": "联想内部备忘录：英伟达H200对华销售许可自三月起再无新进展",
+        "original_title": "Lenovo’s Internal Memo Shows Uncertainty for Nvidia’s H200 Sales in China",
+        "summary": "联想在内部备忘录中透露，自三月华盛顿批准部分H200芯片对华销售以来，没有新的许可或政策出台，反映出中国市场对英伟达高端AI芯片的供应仍存在显著不确定性。",
+        "rating": "A+",
+        "score": 89,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可联动到美国对华AI芯片出口管制走向、英伟达中国市场营收预期及国产AI芯片替代进程。",
+        "entities": [
+          "H200",
+          "Lenovo",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/lenovos-internal-memo-shows-uncertainty-nvidias-h200-sales-china"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779113448,
+        "published_at": "2026-05-18T22:10:48.821636",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/lenovos-internal-memo-shows-uncertainty-nvidias-h200-sales-china",
+        "event_id": null
+      },
+      {
+        "id": "79aba2d29a0b97761f5ddef48dbed531",
+        "title": "《连线》实测：零基础用户能否真正用Claude完成vibe coding",
+        "chinese_title": "《连线》实测：零基础用户能否真正用Claude完成vibe coding",
+        "original_title": "I’m a Normie. Can Normies Really Vibe Code?",
+        "summary": "《连线》记者以非技术用户视角，尝试用Claude构建一个记录大众琐碎不满的数据库，亲测当前vibe coding对零基础用户究竟是真生产力还是营销话术。",
+        "rating": "B",
+        "score": 72,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可延展到AI编程平民化、Claude等模型在低代码场景中的可达性以及AI对软件开发门槛的重塑。",
+        "entities": [
+          "Claude",
+          "Wired"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/normie-vibe-code/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779113448,
+        "published_at": "2026-05-18T22:10:48.821646",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/normie-vibe-code/",
+        "event_id": null
+      },
+      {
         "id": "2051bb13bc7ce960ede30bdc9bb4b096",
         "title": "AI生成漏洞报告泛滥，Bug赏金平台被迫用AI审AI",
         "chinese_title": "AI生成漏洞报告泛滥，Bug赏金平台被迫用AI审AI",
@@ -1534,6 +1646,63 @@
       }
     ],
     "2026-05-17": [
+      {
+        "id": "19a9f45157c453c9baa06dfb4bbb3197",
+        "title": "Sebastian Raschka梳理LLM新架构：KV共享、mHC与压缩注意力",
+        "chinese_title": "Sebastian Raschka梳理LLM新架构：KV共享、mHC与压缩注意力",
+        "original_title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention [P]",
+        "summary": "知名AI研究者Sebastian Raschka最新综述聚焦大模型架构最新进展，重点拆解KV共享、多头压缩与压缩注意力等技术，揭示推理效率与上下文规模的权衡方向。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可联动到大模型推理成本下降、长上下文窗口竞赛与端侧LLM普及等产业延伸话题。",
+        "entities": [
+          "LLM",
+          "Sebastian Raschka"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tfpvod/recent_developments_in_llm_architectures_kv/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779113448,
+        "published_at": "2026-05-18T22:10:48.821574",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tfpvod/recent_developments_in_llm_architectures_kv/",
+        "event_id": null
+      },
+      {
+        "id": "cbbef2855177e0fad3e698d84cf0418b",
+        "title": "付费项目被指诱导高中生学术不端：158篇顶会署名引发质疑",
+        "chinese_title": "付费项目被指诱导高中生学术不端：158篇顶会署名引发质疑",
+        "original_title": "Program misleading high school students into paying to perform academic misconduct in ML Research [D]",
+        "summary": "有用户在OpenReview发现一名作者拥有158篇论文与468位合著者，背后是一家面向高中生收费的Algoverse项目，被批量产顶会署名涉嫌误导未成年人参与学术不端。",
+        "rating": "B",
+        "score": 70,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可联动到顶会作者真实性审查、AI研究商业培训乱象与未成年人学术伦理治理。",
+        "entities": [
+          "Algoverse",
+          "Neurips",
+          "Openreview"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tfh2s9/program_misleading_high_school_students_into/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779113448,
+        "published_at": "2026-05-18T22:10:48.821584",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tfh2s9/program_misleading_high_school_students_into/",
+        "event_id": null
+      },
       {
         "id": "38baceda1681da926adbd6e1e26f9fd4",
         "title": "绕开GPU封锁：中国深圳超算用240万颗华为Armv9 CPU堆出1.54 exaflops",
@@ -21943,6 +22112,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-18T17:02:12.376149",
-  "total_news": 750
+  "last_updated": "2026-05-18T22:12:11.791856",
+  "total_news": 756
 }
