@@ -32,6 +32,36 @@
         "event_id": null
       },
       {
+        "id": "ede8385419dbf8d85da03e3be65190aa",
+        "title": "面壁智能MiniCPM-o 4.5实现全双工实时交互，对标TML新架构",
+        "chinese_title": "面壁智能MiniCPM-o 4.5实现全双工实时交互，对标TML新架构",
+        "original_title": "Just a few days back, Thinking Machines Lab (TML), showcased a way of making AI interaction continuous instead of turn-based, a Full-Duplex Time-align...",
+        "summary": "OpenBMB团队推出9B参数的全双工多模态模型MiniCPM-o 4.5，支持视听说的实时对齐交互，与Thinking Machines Lab近期展示的全双工微轮对话架构思路高度契合。",
+        "rating": "B",
+        "score": 68,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "全双工实时交互技术若成熟落地，将彻底改变当前回合制AI对话体验，推动语音助手和实时翻译等场景升级。",
+        "entities": [
+          "Minicpm",
+          "Openbmb",
+          "Thinking Machines Lab",
+          "面壁智能"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/rohanpaul_ai/status/2056079437394051270"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779062709,
+        "published_at": "2026-05-18T08:05:09.451562",
+        "source": "x",
+        "url": "https://x.com/rohanpaul_ai/status/2056079437394051270",
+        "event_id": null
+      },
+      {
         "id": "7f3feceaf750bf77f836d02b990c4ab8",
         "title": "本周科技大事密集：SpaceX星舰试飞、谷歌I/O、英伟达财报齐上阵",
         "chinese_title": "本周科技大事密集：SpaceX星舰试飞、谷歌I/O、英伟达财报齐上阵",
@@ -999,33 +1029,65 @@
     ],
     "2026-05-17": [
       {
-        "id": "ede8385419dbf8d85da03e3be65190aa",
-        "title": "面壁智能MiniCPM-o 4.5实现全双工实时交互，对标TML新架构",
-        "chinese_title": "面壁智能MiniCPM-o 4.5实现全双工实时交互，对标TML新架构",
-        "original_title": "Just a few days back, Thinking Machines Lab (TML), showcased a way of making AI interaction continuous instead of turn-based, a Full-Duplex Time-align...",
-        "summary": "OpenBMB团队推出9B参数的全双工多模态模型MiniCPM-o 4.5，支持视听说的实时对齐交互，与Thinking Machines Lab近期展示的全双工微轮对话架构思路高度契合。",
-        "rating": "B",
-        "score": 68,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "全双工实时交互技术若成熟落地，将彻底改变当前回合制AI对话体验，推动语音助手和实时翻译等场景升级。",
+        "id": "af195b0f6203fca8ba419f788bb1b323",
+        "title": "NBER研究称AI数据中心拉动地方就业，但推高电价和房价",
+        "chinese_title": "NBER研究称AI数据中心拉动地方就业，但推高电价和房价",
+        "original_title": "Data Centers and Local Economies in the Age of AI: A Shift-Share Approach",
+        "summary": "NBER工作论文分析AI时代数据中心扩张的地方经济影响，发现数据中心增长会带动总就业、数据处理就业、建筑就业、企业数量和县域收入，但也会抬高当地电价和房价。",
+        "rating": "A",
+        "score": 86,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这为AI基础设施争议提供了量化证据：数据中心不是单纯成本项，也不是纯粹增长引擎，地方政府和公用事业监管需要同时权衡就业、税基、住房和电价压力。",
         "entities": [
-          "Minicpm",
-          "Openbmb",
-          "Thinking Machines Lab",
-          "面壁智能"
+          "Ai数据中心",
+          "Nber",
+          "地方经济",
+          "房价",
+          "电价"
         ],
         "sourceLinks": [
           {
-            "name": "x",
-            "url": "https://x.com/rohanpaul_ai/status/2056079437394051270"
+            "name": "NBER",
+            "url": "https://www.nber.org/papers/w35194"
           }
         ],
         "sources": 1,
-        "timestamp": 1779062709,
-        "published_at": "2026-05-18T08:05:09.451562",
-        "source": "x",
-        "url": "https://x.com/rohanpaul_ai/status/2056079437394051270",
+        "timestamp": 1779063480,
+        "published_at": "2026-05-18T08:18:00.208009",
+        "source": "NBER",
+        "url": "https://www.nber.org/papers/w35194",
+        "event_id": null
+      },
+      {
+        "id": "4b37d0cc773b3fcbc0afa39fd883d36f",
+        "title": "新论文从LLM推理轨迹提取搜索树，揭示模型规划偏短视",
+        "chinese_title": "新论文从LLM推理轨迹提取搜索树，揭示模型规划偏短视",
+        "original_title": "Extracting Search Trees from LLM Reasoning Traces Reveals Myopic Planning",
+        "summary": "arXiv论文通过从大模型思维链中提取搜索树，发现推理模型虽然会写出类似树搜索的轨迹，但决策主要受浅层一步评估驱动，缺少人类专家式的深度前瞻。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果该结论被更多任务复现，将挑战当前对推理模型规划能力的乐观叙事，并推动评测从答案正确率转向搜索深度、回溯能力和长期规划机制。",
+        "entities": [
+          "LLM",
+          "思维链",
+          "推理模型",
+          "搜索树",
+          "规划能力"
+        ],
+        "sourceLinks": [
+          {
+            "name": "arXiv",
+            "url": "https://arxiv.org/abs/2605.06840"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779063480,
+        "published_at": "2026-05-18T08:18:00.208027",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2605.06840",
         "event_id": null
       },
       {
@@ -2928,6 +2990,37 @@
       }
     ],
     "2026-05-16": [
+      {
+        "id": "1399ebed420348ae54f6e29b72ab13aa",
+        "title": "xAI将Grok订阅接入Hermes Agent，开放X帖子搜索能力",
+        "chinese_title": "xAI将Grok订阅接入Hermes Agent，开放X帖子搜索能力",
+        "original_title": "Connect Grok to Hermes Agent",
+        "summary": "xAI宣布Grok账号和订阅可在Nous Research的开源自改进代理Hermes Agent中使用，同时Hermes Agent新增搜索X帖子、个人主页和线程的能力。",
+        "rating": "A",
+        "score": 80,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Grok订阅从单一聊天产品延伸到第三方开源Agent，显示模型厂商正把订阅权益和实时社交数据作为代理生态入口，后续可观察开放代理、API计费与X数据访问的竞争格局。",
+        "entities": [
+          "Grok",
+          "Hermes Agent",
+          "Nous Research",
+          "X",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "xAI",
+            "url": "https://x.ai/news/grok-hermes"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779063480,
+        "published_at": "2026-05-18T08:18:00.207980",
+        "source": "xAI",
+        "url": "https://x.ai/news/grok-hermes",
+        "event_id": null
+      },
       {
         "id": "9875b36fc4e765ca58f0f44b638cc0e2",
         "title": "用磁铁轰击大脑就能戒烟？科学家公布rTMS临床新进展",
@@ -21437,6 +21530,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-18T08:08:07.217974",
-  "total_news": 733
+  "last_updated": "2026-05-18T08:18:09.200604",
+  "total_news": 736
 }
