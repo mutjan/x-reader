@@ -327,6 +327,34 @@
                 margin-left: 0;
             }
         }
+        .summary-window-controls {
+            display: inline-flex;
+            gap: 2px;
+            padding: 2px;
+            background: rgba(47, 51, 54, 0.8);
+            border: 1px solid rgba(136, 153, 166, 0.18);
+            border-radius: 6px;
+            margin-left: 2px;
+        }
+        .summary-window-btn {
+            border: none;
+            background: transparent;
+            color: #8899a6;
+            border-radius: 4px;
+            padding: 3px 8px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            line-height: 1.4;
+        }
+        .summary-window-btn:hover {
+            color: #e7e9ea;
+            background: rgba(136, 153, 166, 0.18);
+        }
+        .summary-window-btn.active {
+            color: white;
+            background: #1d9bf0;
+        }
         .zeitgeist-section {
             background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.05));
             border: 1px solid rgba(139, 92, 246, 0.3);
@@ -1638,6 +1666,10 @@
             <div class="summary-header" onclick="toggleSummary()">
                 <span class="icon">精选</span>
                 <span>分类精选</span>
+                <span class="summary-window-controls" onclick="event.stopPropagation()">
+                    <button type="button" class="summary-window-btn" data-window-hours="24" onclick="setFeaturedWindowHours(24)">24小时</button>
+                    <button type="button" class="summary-window-btn active" data-window-hours="48" onclick="setFeaturedWindowHours(48)">48小时</button>
+                </span>
                 <span style="font-size: 12px; font-weight: normal; color: #8899a6;" id="summaryCount"></span>
                 <span class="summary-toggle" id="summaryToggle">▼</span>
             </div>
@@ -1699,7 +1731,8 @@
         let ZEITGEIST = [];
         let currentTab = 'events'; // news/events — 默认显示事件追踪
         let selectedItems = new Set(); // 存储选中的项目ID（新闻或事件）
-        const FEATURED_WINDOW_HOURS = 48;
+        const FEATURED_WINDOW_OPTIONS = [24, 48];
+        let featuredWindowHours = 48;
         const FEATURED_HIGH_GRADES = new Set(['S', 'A+', 'A']);
         const FEATURED_SINGLE_EVENT_GRADES = new Set(['S', 'A+']);
         const FEATURED_CATEGORIES = [
@@ -2836,6 +2869,20 @@
             }
         }
 
+        function setFeaturedWindowHours(hours) {
+            if (!FEATURED_WINDOW_OPTIONS.includes(hours) || featuredWindowHours === hours) return;
+            featuredWindowHours = hours;
+            updateFeaturedWindowButtons();
+            renderDailySummary();
+        }
+
+        function updateFeaturedWindowButtons() {
+            document.querySelectorAll('.summary-window-btn').forEach(button => {
+                const hours = parseInt(button.dataset.windowHours, 10);
+                button.classList.toggle('active', hours === featuredWindowHours);
+            });
+        }
+
         // ==================== 时代情绪功能 ====================
         let isZeitgeistCollapsed = true;
 
@@ -2949,7 +2996,7 @@
         }
 
         function getRecentFeaturedNews(allNews, referenceTime) {
-            const windowStart = referenceTime - FEATURED_WINDOW_HOURS * 3600;
+            const windowStart = referenceTime - featuredWindowHours * 3600;
             return allNews
                 .filter(item => isFeaturedGrade(item.rating))
                 .filter(item => toTimestampSeconds(item.timestamp) >= windowStart)
@@ -2958,7 +3005,7 @@
 
         function buildEventHighlights(referenceTime) {
             if (!EVENTS || EVENTS.length === 0) return [];
-            const windowStart = referenceTime - FEATURED_WINDOW_HOURS * 3600;
+            const windowStart = referenceTime - featuredWindowHours * 3600;
             const eligibleEvents = EVENTS
                 .filter(event => isFeaturedGrade(event.max_grade))
                 .filter(event => toTimestampSeconds(event.end_time) >= windowStart);
@@ -3084,7 +3131,8 @@
             }
 
             section.style.display = 'block';
-            count.textContent = `最近 ${FEATURED_WINDOW_HOURS} 小时 · ${categoryGroups.length} 个类目`;
+            updateFeaturedWindowButtons();
+            count.textContent = `最近 ${featuredWindowHours} 小时 · ${categoryGroups.length} 个类目`;
 
             grid.innerHTML = categoryGroups.map(group => {
                 const color = group.color || '#6b7280';

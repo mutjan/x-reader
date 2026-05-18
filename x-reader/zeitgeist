@@ -1,3 +1,0 @@
-#!/bin/bash
-# 时代情绪管理工具包装器
-PYTHONPATH="$(dirname "$0")" python3 "$(dirname "$0")/scripts/zeitgeist_cli.py" "$@"
