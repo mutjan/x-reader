@@ -2,6 +2,524 @@
   "news": {
     "2026-05-19": [
       {
+        "id": "f2086ba4da90de6150b893da3508d84e",
+        "title": "Anthropic收购开发者工具初创公司Stainless，传闻交易额超3亿美元",
+        "chinese_title": "Anthropic收购开发者工具初创公司Stainless，传闻交易额超3亿美元",
+        "original_title": "Anthropic Buys Developer Tools Startup Stainless",
+        "summary": "Anthropic周一确认收购SDK自动生成工具公司Stainless，未披露具体金额，此前The Information报道交易金额至少3亿美元。",
+        "rating": "A",
+        "score": 86,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "AI大厂加速布局开发者工具生态，可能引发OpenAI、Google等竞品的类似并购动作，开发者工具赛道估值或将水涨船高。",
+        "entities": [
+          "Anthropic",
+          "Stainless"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/anthropic-buys-developer-tools-startup-stainless"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008452",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/anthropic-buys-developer-tools-startup-stainless",
+        "event_id": null
+      },
+      {
+        "id": "88ba96e44816afbc1757afcc4e08f68d",
+        "title": "开发者用CUDA内核重写推理路径，揭示小批量场景下GEMM不是真瓶颈",
+        "chinese_title": "开发者用CUDA内核重写推理路径，揭示小批量场景下GEMM不是真瓶颈",
+        "original_title": "Rewriting model inference with CUDA kernels: the bottleneck was not just GEMM [P]",
+        "summary": "一名开发者分享CUDA-first推理运行时实践，发现小批量实时场景下延迟主要来自运行时胶水代码而非GEMM计算本身。",
+        "rating": "B",
+        "score": 71,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "小批量低延迟推理的优化范式可能影响机器人、VLA等实时AI落地，TensorRT与PyTorch等通用runtime的市场地位或受挑战。",
+        "entities": [
+          "CUDA",
+          "Pytorch",
+          "Tensorrt"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tgyx41/rewriting_model_inference_with_cuda_kernels_the/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008489",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tgyx41/rewriting_model_inference_with_cuda_kernels_the/",
+        "event_id": null
+      },
+      {
+        "id": "c2e32d1dea8f05a9c4499b54d02ddf46",
+        "title": "Dropbox开源Witchcraft：基于SQLite的本地语义搜索引擎",
+        "chinese_title": "Dropbox开源Witchcraft：基于SQLite的本地语义搜索引擎",
+        "original_title": "Witchcraft, fast local semantic search on top of SQLite [P]",
+        "summary": "Dropbox开源Witchcraft项目，用Rust重写斯坦福XTR-Warp语义搜索引擎，以单文件SQLite为存储，主打设备端独立运行无需向量数据库。",
+        "rating": "A",
+        "score": 84,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "本地端侧语义搜索方案的兴起，可能挑战Pinecone、Weaviate等托管向量数据库生态，推动隐私优先的端侧AI应用落地。",
+        "entities": [
+          "Dropbox",
+          "Rust",
+          "Sqlite",
+          "Witchcraft"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tgqyo8/witchcraft_fast_local_semantic_search_on_top_of/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008513",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tgqyo8/witchcraft_fast_local_semantic_search_on_top_of/",
+        "event_id": null
+      },
+      {
+        "id": "1c004e07c4f1fdce708aa5e44401c219",
+        "title": "NASA发布7亿美元火星轨道器招标，两位参议员卷入争议程序",
+        "chinese_title": "NASA发布7亿美元火星轨道器招标，两位参议员卷入争议程序",
+        "original_title": "One Mars spacecraft, two senators, and a cloud of questions",
+        "summary": "NASA上周末发布火星通信中继轨道器招标书，7亿美元预算已由国会批准，但采购程序可能牵涉被取消的火星样本返回任务存续问题。",
+        "rating": "B",
+        "score": 68,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "美国深空探测合同争夺涉及SpaceX、洛克希德等承包商利益博弈，可能影响商业航天与政府采购的边界划分。",
+        "entities": [
+          "Nasa",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Space – Ars Technica",
+            "url": "https://arstechnica.com/space/2026/05/one-mars-spacecraft-two-senators-and-a-cloud-of-questions/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008543",
+        "source": "Space – Ars Technica",
+        "url": "https://arstechnica.com/space/2026/05/one-mars-spacecraft-two-senators-and-a-cloud-of-questions/",
+        "event_id": null
+      },
+      {
+        "id": "8a273d6bfb8f14293ec6b92e6c99a0cd",
+        "title": "Anthropic完成收购Stainless，将关闭其托管产品聚焦SDK生成",
+        "chinese_title": "Anthropic完成收购Stainless，将关闭其托管产品聚焦SDK生成",
+        "original_title": "Anthropic acquires NYC-based Stainless, which generates SDKs from APIs, and plans to wind down its hosted products, after reportedly discussing a $300M+ deal (Kirsten Korosec/TechCrunch)",
+        "summary": "TechCrunch报道Anthropic宣布收购纽约SDK自动生成公司Stainless，并计划逐步关闭其托管产品业务，此前传闻交易金额超3亿美元。",
+        "rating": "A",
+        "score": 78,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "Anthropic通过收购整合SDK基础设施，强化Claude API开发者生态，与OpenAI开发者平台战略形成更直接竞争。",
+        "entities": [
+          "Anthropic",
+          "Stainless"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260518/p37#a260518p37"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008555",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260518/p37#a260518p37",
+        "event_id": null
+      },
+      {
+        "id": "de4aeb6c056bc689c40ac8e1d702bbd4",
+        "title": "若星舰再爆炸，SpaceX史上最大1.75万亿美元IPO或将受挫",
+        "chinese_title": "若星舰再爆炸，SpaceX史上最大1.75万亿美元IPO或将受挫",
+        "original_title": "If Starship Explodes Again, It Could Derail SpaceX’s Entire IPO",
+        "summary": "Bloomberg分析称SpaceX寻求1.75万亿美元规模IPO，若Starship再次失败可能挑战其依靠快速试错文化获得的投资者耐心。",
+        "rating": "A",
+        "score": 82,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "SpaceX IPO估值与星舰技术进展强绑定，事件结果将影响商业航天板块情绪，并波及Rocket Lab、蓝色起源等可比公司估值。",
+        "entities": [
+          "Elon Musk",
+          "SpaceX",
+          "Starship"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/space/starship-explodes-derail-spacex-ipo"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008566",
+        "source": "Futurism",
+        "url": "https://futurism.com/space/starship-explodes-derail-spacex-ipo",
+        "event_id": null
+      },
+      {
+        "id": "9bf55319a29d8544ae62ff9d8c25581d",
+        "title": "马斯克诉OpenAI案陪审团两小时一致裁定驳回，称起诉超时效",
+        "chinese_title": "马斯克诉OpenAI案陪审团两小时一致裁定驳回，称起诉超时效",
+        "original_title": "Jury throws out Elon Musk's lawsuit against OpenAI after less than two hours of deliberation &mdash; Unanimous vote that Musk filed the lawsuit too late",
+        "summary": "加州奥克兰联邦陪审团周一以全票一致驳回马斯克对OpenAI的所有诉求，认定其诉讼提交时间已超过法定时效。",
+        "rating": "A+",
+        "score": 90,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "马斯克输掉与OpenAI的法律战，将影响其xAI在AI竞赛中的舆论位置，OpenAI董事会治理结构的合法性也获法律层面背书。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/jury-throws-out-elon-musks-lawsuit-against-openai-after-less-than-two-hours-of-deliberation"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008585",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/jury-throws-out-elon-musks-lawsuit-against-openai-after-less-than-two-hours-of-deliberation",
+        "event_id": null
+      },
+      {
+        "id": "3aba562d9a425243d403c2f818871235",
+        "title": "Anthropic收购为OpenAI、Google、Cloudflare提供服务的SDK初创公司",
+        "chinese_title": "Anthropic收购为OpenAI、Google、Cloudflare提供服务的SDK初创公司",
+        "original_title": "Anthropic has acquired the dev tools startup used by OpenAI, Google, and Cloudflare",
+        "summary": "Anthropic宣布收购成立于2022年的纽约SDK自动生成公司Stainless，后者客户涵盖OpenAI、Google、Cloudflare等AI巨头。",
+        "rating": "A+",
+        "score": 88,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "Stainless同时服务多家AI巨头的中立基础设施地位变化，可能促使OpenAI、Google加速自建SDK体系或寻求替代供应商。",
+        "entities": [
+          "Anthropic",
+          "Cloudflare",
+          "Google",
+          "OpenAI",
+          "Stainless"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008597",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
+        "event_id": null
+      },
+      {
+        "id": "0e1acf2067d763bdf91a1c760a45efd8",
+        "title": "The Verge锐评：马斯克诉Altman案暴露AI产业被错误的人主导",
+        "chinese_title": "The Verge锐评：马斯克诉Altman案暴露AI产业被错误的人主导",
+        "original_title": "Musk v. Altman proved that AI is led by the wrong people",
+        "summary": "The Verge评论文章认为马斯克起诉Altman三周庭审虽以驳回告终，但揭示AI产业领导权之争背后的领袖人格缺陷与产业话语权焦虑。",
+        "rating": "A",
+        "score": 75,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "围绕AI领袖人格的公共讨论将进一步影响监管立场与公众信任，可能推动呼吁多元化AI治理力量的政策动向。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/932464/musk-v-altman-proved-that-ai-is-led-by-the-wrong-people"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008607",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/932464/musk-v-altman-proved-that-ai-is-led-by-the-wrong-people",
+        "event_id": null
+      },
+      {
+        "id": "a6b22b73f6b8dab18e51f58a20f765b0",
+        "title": "波士顿动力Atlas人形机器人搬运冰箱视频引爆社区讨论",
+        "chinese_title": "波士顿动力Atlas人形机器人搬运冰箱视频引爆社区讨论",
+        "original_title": "Boston Dynamics Atlas transporting a refrigerator (Atlas carries a fridge)",
+        "summary": "波士顿动力新版Atlas人形机器人演示搬运冰箱的视频在Reddit传播，展示其负重与全身协调能力的进一步提升。",
+        "rating": "A",
+        "score": 76,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Atlas家用与仓储场景能力的展示，将加剧人形机器人赛道竞争，特斯拉Optimus、Figure、宇树等厂商可能加速发布对标演示。",
+        "entities": [
+          "Atlas",
+          "Boston Dynamics"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (boston dynamics)",
+            "url": "https://www.reddit.com/r/singularity/comments/1tgwe3p/boston_dynamics_atlas_transporting_a_refrigerator/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008615",
+        "source": "Technological Singularity (boston dynamics)",
+        "url": "https://www.reddit.com/r/singularity/comments/1tgwe3p/boston_dynamics_atlas_transporting_a_refrigerator/",
+        "event_id": null
+      },
+      {
+        "id": "2a4bb4ae5b4c9fcc84b6fd0196a27e88",
+        "title": "马斯克对阵Altman三周庭审以败诉收场，社区热议AI权力格局",
+        "chinese_title": "马斯克对阵Altman三周庭审以败诉收场，社区热议AI权力格局",
+        "original_title": "Elon Musk loses court battle against Sam Altman and OpenAI after 3-week trial",
+        "summary": "马斯克对Sam Altman和OpenAI的三周庭审最终败诉，Singularity社区围绕本案对AI权力结构与创始人之争的影响展开讨论。",
+        "rating": "B",
+        "score": 70,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "判决结果或缓解OpenAI治理不确定性，对其下一轮融资与潜在IPO估值形成正面支撑，同时影响xAI与OpenAI的竞争叙事。",
+        "entities": [
+          "Elon Musk",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1tgung8/elon_musk_loses_court_battle_against_sam_altman/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008625",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1tgung8/elon_musk_loses_court_battle_against_sam_altman/",
+        "event_id": null
+      },
+      {
+        "id": "f71640adc912bce3786d119adc46bf47",
+        "title": "Anthropic to brief global financial r...",
+        "chinese_title": "Anthropic to brief global financial r...",
+        "original_title": "Anthropic to brief global financial regulators on cyber flaws found by Claude Mythos",
+        "summary": "Anthropic will brief leading finance ministries and central banks on vulnerabilities in th...",
+        "rating": "A",
+        "score": 84,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可能引发行业关注和进一步报道",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/anthropic-to-brief-global-financial-regulators-on-cyber-flaws-found-by-claude-mythos/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779135448,
+        "published_at": "2026-05-19T04:17:28.362352",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/anthropic-to-brief-global-financial-regulators-on-cyber-flaws-found-by-claude-mythos/",
+        "event_id": null
+      },
+      {
+        "id": "d62645902d93533835411f50fda3d634",
+        "title": "Dust, which helps enterprises design ...",
+        "chinese_title": "Dust, which helps enterprises design ...",
+        "original_title": "Dust, which helps enterprises design and deploy specialized AI agents that work alongside humans, raised a $40M Series B led by Abstract and Sequoia (Chris Metinko/Axios)",
+        "summary": "Chris Metinko / Axios : Dust, which helps enterprises design and deploy specialized AI age...",
+        "rating": "A",
+        "score": 81,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "该事件可能引发行业关注和进一步报道",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260518/p19#a260518p19"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779135448,
+        "published_at": "2026-05-19T04:17:28.362375",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260518/p19#a260518p19",
+        "event_id": null
+      },
+      {
+        "id": "87637835a5ae87fbe809259cf2f67c09",
+        "title": "How does Atlas learn? | Inside the La...",
+        "chinese_title": "How does Atlas learn? | Inside the La...",
+        "original_title": "How does Atlas learn? | Inside the Lab | Boston Dynamics",
+        "summary": "Just months after its debut, Atlas is proving why it is the world’s most capable and dynam...",
+        "rating": "A",
+        "score": 78,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "该事件可能引发行业关注和进一步报道",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Boston Dynamics (boston dynamics)",
+            "url": "https://www.youtube.com/watch?v=xKK5ze3FukQ"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779135448,
+        "published_at": "2026-05-19T04:17:28.362405",
+        "source": "Boston Dynamics (boston dynamics)",
+        "url": "https://www.youtube.com/watch?v=xKK5ze3FukQ",
+        "event_id": null
+      },
+      {
+        "id": "475e682b2ee6fcbefa934d5e35198898",
+        "title": "Atlas, can you bring me a drink? | Bo...",
+        "chinese_title": "Atlas, can you bring me a drink? | Bo...",
+        "original_title": "Atlas, can you bring me a drink? | Boston Dynamics",
+        "summary": "Everyone asks if Atlas can bring them a drink, but this robot can bring you the whole frid...",
+        "rating": "A",
+        "score": 78,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "该事件可能引发行业关注和进一步报道",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Boston Dynamics (boston dynamics)",
+            "url": "https://www.youtube.com/watch?v=3aQWvdCac9o"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779135448,
+        "published_at": "2026-05-19T04:17:28.362426",
+        "source": "Boston Dynamics (boston dynamics)",
+        "url": "https://www.youtube.com/watch?v=3aQWvdCac9o",
+        "event_id": null
+      },
+      {
+        "id": "2f001c6005d686699c24c02c0d64d6a0",
+        "title": "The US space enterprise is desperatel...",
+        "chinese_title": "The US space enterprise is desperatel...",
+        "original_title": "The US space enterprise is desperately waiting for Starship—will it finally deliver?",
+        "summary": "These days, one would be forgiven for forgetting that SpaceX is, at its core, a rocket com...",
+        "rating": "A",
+        "score": 82,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "该事件可能引发行业关注和进一步报道",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Space – Ars Technica",
+            "url": "https://arstechnica.com/space/2026/05/the-us-space-enterprise-is-desperately-waiting-for-starship-will-it-finally-deliver/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779135448,
+        "published_at": "2026-05-19T04:17:28.362440",
+        "source": "Space – Ars Technica",
+        "url": "https://arstechnica.com/space/2026/05/the-us-space-enterprise-is-desperately-waiting-for-starship-will-it-finally-deliver/",
+        "event_id": null
+      },
+      {
+        "id": "425bada4cd1b5b699faac587633407b5",
+        "title": "AMD's flagship RX 9070 XT GPU hits an...",
+        "chinese_title": "AMD's flagship RX 9070 XT GPU hits an...",
+        "original_title": "AMD's flagship RX 9070 XT GPU hits an all-time low $629 in Amazon lightning sale &mdash; Gigabyte's Gaming OC graphics card now $110 off",
+        "summary": "Save $110 when you make the most of this Amazon deal on the Gigabyte Gaming OC Radeon RX 9...",
+        "rating": "B",
+        "score": 65,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "该事件可能引发行业关注和进一步报道",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/pc-components/gpus/amds-flagship-rx-9070-xt-gpu-hits-an-all-time-low-usd629-in-amazon-lightning-sale-gigabytes-gaming-oc-graphics-card-now-usd110-off"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779135448,
+        "published_at": "2026-05-19T04:17:28.362504",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/pc-components/gpus/amds-flagship-rx-9070-xt-gpu-hits-an-all-time-low-usd629-in-amazon-lightning-sale-gigabytes-gaming-oc-graphics-card-now-usd110-off",
+        "event_id": null
+      },
+      {
+        "id": "7cb9ebc53c037621c96f7e2970e8ea0e",
+        "title": "Quebec-based telecom software startup...",
+        "chinese_title": "Quebec-based telecom software startup...",
+        "original_title": "Quebec-based telecom software startup Gaiia raised a CA$54.8M Series B led by JMI Equity, bringing its total funding to ~CA$90M from backers including YC (Madison McLauchlan/BetaKit)",
+        "summary": "Madison McLauchlan / BetaKit : Quebec-based telecom software startup Gaiia raised a CA$54....",
+        "rating": "B",
+        "score": 68,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "该事件可能引发行业关注和进一步报道",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260517/p18#a260517p18"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779135448,
+        "published_at": "2026-05-19T04:17:28.362531",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260517/p18#a260517p18",
+        "event_id": null
+      },
+      {
+        "id": "55d4587f686a62454ad55fafee8c3d6b",
+        "title": "The 30-Hour Shift That Turned a San J...",
+        "chinese_title": "The 30-Hour Shift That Turned a San J...",
+        "original_title": "The 30-Hour Shift That Turned a San Jose Robot Lab into a Global Spectacle",
+        "summary": "Comments",
+        "rating": "B",
+        "score": 70,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "该事件可能引发行业关注和进一步报道",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://beeble.com/en/blog/the-30-hour-shift-that-turned-a-san-jose-robot-lab-into-a-global-spectacle"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779135448,
+        "published_at": "2026-05-19T04:17:28.362521",
+        "source": "Hacker News",
+        "url": "https://beeble.com/en/blog/the-30-hour-shift-that-turned-a-san-jose-robot-lab-into-a-global-spectacle",
+        "event_id": null
+      },
+      {
         "id": "4a55fbfe58f10dcbd37598ebc7e999f2",
         "title": "People Are Getting Plastic Surgery to...",
         "chinese_title": "People Are Getting Plastic Surgery to...",
@@ -418,178 +936,60 @@
     ],
     "2026-05-18": [
       {
-        "id": "f71640adc912bce3786d119adc46bf47",
-        "title": "Anthropic to brief global financial r...",
-        "chinese_title": "Anthropic to brief global financial r...",
-        "original_title": "Anthropic to brief global financial regulators on cyber flaws found by Claude Mythos",
-        "summary": "Anthropic will brief leading finance ministries and central banks on vulnerabilities in th...",
+        "id": "3c846e3169ce0c1bd528f5bcd8c89344",
+        "title": "JEPA会是编码Agent的未来吗？社区讨论LeCun架构的应用前景",
+        "chinese_title": "JEPA会是编码Agent的未来吗？社区讨论LeCun架构的应用前景",
+        "original_title": "Is the future of coding agents JEPA? [D]",
+        "summary": "机器学习社区讨论是否能用Yann LeCun提出的JEPA架构构建编码Agent，认为代码仓库具有状态性，比纯文本生成更适合预测式架构。",
         "rating": "A",
-        "score": 84,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可能引发行业关注和进一步报道",
-        "entities": [],
+        "score": 76,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "JEPA路线若在编码Agent上验证可行，将动摇当前主流LLM-based Coding Agent范式，影响GitHub Copilot、Cursor等产品的技术路线选择。",
+        "entities": [
+          "Jepa",
+          "Yann Lecun"
+        ],
         "sourceLinks": [
           {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/anthropic-to-brief-global-financial-regulators-on-cyber-flaws-found-by-claude-mythos/"
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tgq9v2/is_the_future_of_coding_agents_jepa_d/"
           }
         ],
         "sources": 1,
-        "timestamp": 1779135448,
-        "published_at": "2026-05-19T04:17:28.362352",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/anthropic-to-brief-global-financial-regulators-on-cyber-flaws-found-by-claude-mythos/",
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008524",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tgq9v2/is_the_future_of_coding_agents_jepa_d/",
         "event_id": null
       },
       {
-        "id": "d62645902d93533835411f50fda3d634",
-        "title": "Dust, which helps enterprises design ...",
-        "chinese_title": "Dust, which helps enterprises design ...",
-        "original_title": "Dust, which helps enterprises design and deploy specialized AI agents that work alongside humans, raised a $40M Series B led by Abstract and Sequoia (Chris Metinko/Axios)",
-        "summary": "Chris Metinko / Axios : Dust, which helps enterprises design and deploy specialized AI age...",
-        "rating": "A",
-        "score": 81,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "该事件可能引发行业关注和进一步报道",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260518/p19#a260518p19"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779135448,
-        "published_at": "2026-05-19T04:17:28.362375",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260518/p19#a260518p19",
-        "event_id": null
-      },
-      {
-        "id": "87637835a5ae87fbe809259cf2f67c09",
-        "title": "How does Atlas learn? | Inside the La...",
-        "chinese_title": "How does Atlas learn? | Inside the La...",
-        "original_title": "How does Atlas learn? | Inside the Lab | Boston Dynamics",
-        "summary": "Just months after its debut, Atlas is proving why it is the world’s most capable and dynam...",
-        "rating": "A",
-        "score": 78,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该事件可能引发行业关注和进一步报道",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Boston Dynamics (boston dynamics)",
-            "url": "https://www.youtube.com/watch?v=xKK5ze3FukQ"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779135448,
-        "published_at": "2026-05-19T04:17:28.362405",
-        "source": "Boston Dynamics (boston dynamics)",
-        "url": "https://www.youtube.com/watch?v=xKK5ze3FukQ",
-        "event_id": null
-      },
-      {
-        "id": "475e682b2ee6fcbefa934d5e35198898",
-        "title": "Atlas, can you bring me a drink? | Bo...",
-        "chinese_title": "Atlas, can you bring me a drink? | Bo...",
-        "original_title": "Atlas, can you bring me a drink? | Boston Dynamics",
-        "summary": "Everyone asks if Atlas can bring them a drink, but this robot can bring you the whole frid...",
-        "rating": "A",
-        "score": 78,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该事件可能引发行业关注和进一步报道",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Boston Dynamics (boston dynamics)",
-            "url": "https://www.youtube.com/watch?v=3aQWvdCac9o"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779135448,
-        "published_at": "2026-05-19T04:17:28.362426",
-        "source": "Boston Dynamics (boston dynamics)",
-        "url": "https://www.youtube.com/watch?v=3aQWvdCac9o",
-        "event_id": null
-      },
-      {
-        "id": "2f001c6005d686699c24c02c0d64d6a0",
-        "title": "The US space enterprise is desperatel...",
-        "chinese_title": "The US space enterprise is desperatel...",
-        "original_title": "The US space enterprise is desperately waiting for Starship—will it finally deliver?",
-        "summary": "These days, one would be forgiven for forgetting that SpaceX is, at its core, a rocket com...",
-        "rating": "A",
-        "score": 82,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该事件可能引发行业关注和进一步报道",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Space – Ars Technica",
-            "url": "https://arstechnica.com/space/2026/05/the-us-space-enterprise-is-desperately-waiting-for-starship-will-it-finally-deliver/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779135448,
-        "published_at": "2026-05-19T04:17:28.362440",
-        "source": "Space – Ars Technica",
-        "url": "https://arstechnica.com/space/2026/05/the-us-space-enterprise-is-desperately-waiting-for-starship-will-it-finally-deliver/",
-        "event_id": null
-      },
-      {
-        "id": "425bada4cd1b5b699faac587633407b5",
-        "title": "AMD's flagship RX 9070 XT GPU hits an...",
-        "chinese_title": "AMD's flagship RX 9070 XT GPU hits an...",
-        "original_title": "AMD's flagship RX 9070 XT GPU hits an all-time low $629 in Amazon lightning sale &mdash; Gigabyte's Gaming OC graphics card now $110 off",
-        "summary": "Save $110 when you make the most of this Amazon deal on the Gigabyte Gaming OC Radeon RX 9...",
+        "id": "b2a04decbec001b5b621824252859890",
+        "title": "Sub-JEPA改进LeCun团队世界模型，在低维任务上一致提升性能",
+        "chinese_title": "Sub-JEPA改进LeCun团队世界模型，在低维任务上一致提升性能",
+        "original_title": "Sub-JEPA: a simple fix to LeCun group's LeWorldModel that consistently improves performance [P]",
+        "summary": "研究者提出Sub-JEPA改进方案，针对LeCun团队LeWorldModel的全局高斯先验过于刚性的缺陷，在Two-Room等低维任务上获得稳定性能提升。",
         "rating": "B",
-        "score": 65,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该事件可能引发行业关注和进一步报道",
-        "entities": [],
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "世界模型先验设计的改进可能加速JEPA在机器人、自动驾驶等具身智能领域的落地，对LeCun倡导的非生成式AI路线提供进一步实证。",
+        "entities": [
+          "Jepa",
+          "Leworldmodel",
+          "Yann Lecun"
+        ],
         "sourceLinks": [
           {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/pc-components/gpus/amds-flagship-rx-9070-xt-gpu-hits-an-all-time-low-usd629-in-amazon-lightning-sale-gigabytes-gaming-oc-graphics-card-now-usd110-off"
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tgn3bz/subjepa_a_simple_fix_to_lecun_groups_leworldmodel/"
           }
         ],
         "sources": 1,
-        "timestamp": 1779135448,
-        "published_at": "2026-05-19T04:17:28.362504",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/pc-components/gpus/amds-flagship-rx-9070-xt-gpu-hits-an-all-time-low-usd629-in-amazon-lightning-sale-gigabytes-gaming-oc-graphics-card-now-usd110-off",
-        "event_id": null
-      },
-      {
-        "id": "7cb9ebc53c037621c96f7e2970e8ea0e",
-        "title": "Quebec-based telecom software startup...",
-        "chinese_title": "Quebec-based telecom software startup...",
-        "original_title": "Quebec-based telecom software startup Gaiia raised a CA$54.8M Series B led by JMI Equity, bringing its total funding to ~CA$90M from backers including YC (Madison McLauchlan/BetaKit)",
-        "summary": "Madison McLauchlan / BetaKit : Quebec-based telecom software startup Gaiia raised a CA$54....",
-        "rating": "B",
-        "score": 68,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "该事件可能引发行业关注和进一步报道",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260517/p18#a260517p18"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779135448,
-        "published_at": "2026-05-19T04:17:28.362531",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260517/p18#a260517p18",
+        "timestamp": 1779140926,
+        "published_at": "2026-05-19T05:48:46.008534",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tgn3bz/subjepa_a_simple_fix_to_lecun_groups_leworldmodel/",
         "event_id": null
       },
       {
@@ -4592,31 +4992,6 @@
       }
     ],
     "2026-05-16": [
-      {
-        "id": "55d4587f686a62454ad55fafee8c3d6b",
-        "title": "The 30-Hour Shift That Turned a San J...",
-        "chinese_title": "The 30-Hour Shift That Turned a San J...",
-        "original_title": "The 30-Hour Shift That Turned a San Jose Robot Lab into a Global Spectacle",
-        "summary": "Comments",
-        "rating": "B",
-        "score": 70,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该事件可能引发行业关注和进一步报道",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://beeble.com/en/blog/the-30-hour-shift-that-turned-a-san-jose-robot-lab-into-a-global-spectacle"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779135448,
-        "published_at": "2026-05-19T04:17:28.362521",
-        "source": "Hacker News",
-        "url": "https://beeble.com/en/blog/the-30-hour-shift-that-turned-a-san-jose-robot-lab-into-a-global-spectacle",
-        "event_id": null
-      },
       {
         "id": "9875b36fc4e765ca58f0f44b638cc0e2",
         "title": "用磁铁轰击大脑就能戒烟？科学家公布rTMS临床新进展",
@@ -22237,99 +22612,9 @@
         "source": "Futurism",
         "url": "https://futurism.com/future-society/grok-beatdown-musk-socialism",
         "event_id": null
-      },
-      {
-        "id": "7efa649b60c7f224d9ff46cd171c236d",
-        "title": "Ilya Sutskever庭审作证：在OpenAI的持股市值已接近70亿美元",
-        "chinese_title": "Ilya Sutskever庭审作证：在OpenAI的持股市值已接近70亿美元",
-        "original_title": "Ilya Sutskever Says His OpenAI Stake is Worth About $7 billion",
-        "summary": "OpenAI联合创始人、前首席科学家Ilya Sutskever在马斯克起诉OpenAI和微软的庭审中作证，确认其两年前离职时保留的OpenAI股份目前市值约为70亿美元，这一数字首次在公开法庭程序中得到披露。",
-        "rating": "A+",
-        "score": 90,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可延伸讨论OpenAI最新估值结构、核心员工财富效应，以及Sutskever创办的SSI公司融资节奏；同时为Musk v. Altman案中股权变动议题提供新的证据点。",
-        "entities": [
-          "Elon Musk",
-          "Ilya Sutskever",
-          "Microsoft",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/ilya-sutskever-says-openai-stake-worth-7-billion"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778535315,
-        "published_at": "2026-05-12T05:35:15.484916",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/ilya-sutskever-says-openai-stake-worth-7-billion",
-        "event_id": null
-      },
-      {
-        "id": "0a49bb2dbcac0e6999fd0bb59f664056",
-        "title": "谷歌披露遭遇AI驱动零日攻击：攻击者借助大模型挖出软件未知漏洞",
-        "chinese_title": "谷歌披露遭遇AI驱动零日攻击：攻击者借助大模型挖出软件未知漏洞",
-        "original_title": "Google Alarmed by Formidable AI-Powered Zero-Day Cyberattack",
-        "summary": "谷歌研究人员公开了一起被成功阻止的网络攻击事件，攻击者利用AI模型在谷歌自身软件中发现了开发团队此前未知的重大漏洞，谷歌称有高度信心确认AI在攻击过程中起到了关键支撑作用。",
-        "rating": "S",
-        "score": 94,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "此事件可能推动AI辅助攻防成为安全行业主线议题，影响零日漏洞市场定价、各大模型厂商的红队规范以及监管机构对前沿模型滥用风险的政策走向。",
-        "entities": [
-          "Ai",
-          "Google",
-          "零日漏洞"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/google-ai-cyberattack"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778535315,
-        "published_at": "2026-05-12T05:35:15.484939",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/google-ai-cyberattack",
-        "event_id": null
-      },
-      {
-        "id": "e3ce45715a13969b9c6b3639355c67d4",
-        "title": "纳德拉出庭作证：马斯克从未就微软投资OpenAI的特别条款问题联系过他",
-        "chinese_title": "纳德拉出庭作证：马斯克从未就微软投资OpenAI的特别条款问题联系过他",
-        "original_title": "Musk v. Altman: Satya Nadella says Elon Musk never contacted him with concerns that Microsoft's investments in OpenAI violated any special terms or commitments (CNBC)",
-        "summary": "微软CEO萨提亚·纳德拉在Musk v. Altman案中出庭作证，明确表示马斯克从未就微软对OpenAI的投资是否违反任何特别条款或承诺一事与他沟通，直接回应了原告方的核心指控之一。",
-        "rating": "A+",
-        "score": 88,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸到微软与OpenAI合作架构的演变、Azure算力分配条款披露，以及该案对未来巨头投资前沿AI公司治理模式的判例影响。",
-        "entities": [
-          "Elon Musk",
-          "Microsoft",
-          "OpenAI",
-          "Sam Altman",
-          "Satya Nadella"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260511/p35#a260511p35"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778535315,
-        "published_at": "2026-05-12T05:35:15.484957",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260511/p35#a260511p35",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-19T04:17:48.067073",
-  "total_news": 767
+  "last_updated": "2026-05-19T05:49:40.037204",
+  "total_news": 777
 }
