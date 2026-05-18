@@ -2,6 +2,347 @@
   "news": {
     "2026-05-18": [
       {
+        "id": "c5aeaac8d5909919e0a8e942147faa63",
+        "title": "从天之骄子到人力废料：科技工人正被时代抛弃",
+        "chinese_title": "从天之骄子到人力废料：科技工人正被时代抛弃",
+        "original_title": "Tech Workers, Long Treated Like Aristocracy, Are Now Human Waste",
+        "summary": "曾被视为精英的科技行业从业者在2026年面临大规模裁员潮，计算机学位不再是高薪保障，AI替代叠加过度招聘后遗症让程序员沦为新一代失业群体。",
+        "rating": "B",
+        "score": 70,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可延伸至AI替代白领趋势、CS专业报考热度下滑、硅谷文化转向，以及全球程序员就业市场重构。",
+        "entities": [
+          "Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/tech-workers-human-waste"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946571",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/tech-workers-human-waste",
+        "event_id": null
+      },
+      {
+        "id": "20f569d50ba70e1f6af54d76abbc69bb",
+        "title": "边缘推理芯片公司SiMa.ai寻求融资，估值冲击14亿美元",
+        "chinese_title": "边缘推理芯片公司SiMa.ai寻求融资，估值冲击14亿美元",
+        "original_title": "Edge Inference Chip Startup SiMa.ai Raising at $1.4 Billion Valuation",
+        "summary": "圣何塞边缘AI芯片公司SiMa.ai正在洽谈超过1亿美元的新一轮融资，估值约14亿美元，专注无人机、摄像头等设备端推理芯片，与英伟达形成差异化竞争。",
+        "rating": "B",
+        "score": 73,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延伸至边缘AI芯片赛道竞争格局、英伟达统治力松动、A股端侧芯片标的联动反应。",
+        "entities": [
+          "NVIDIA",
+          "Sima.Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/edge-inference-chip-startup-sima-ai-raising-1-4-billion-valuation"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946598",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/edge-inference-chip-startup-sima-ai-raising-1-4-billion-valuation",
+        "event_id": null
+      },
+      {
+        "id": "19b0f8d73cb656d7dd9e0b9a621c7a69",
+        "title": "Hugging Face接棒：PapersWithCode在AI Agent助攻下重生",
+        "chinese_title": "Hugging Face接棒：PapersWithCode在AI Agent助攻下重生",
+        "original_title": "Reviving PapersWithCode (by Hugging Face) [P]",
+        "summary": "Hugging Face开源团队成员Niels宣布正在复活Meta收购后停止维护的PapersWithCode，借助AI Agent批量解析论文并自动生成榜单，已覆盖Qwen 3.5/3.6、DINOv3等SOTA成果。",
+        "rating": "A",
+        "score": 85,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸至开源社区接管闭源项目趋势、AI Agent在科研工作流的渗透、Meta开源战略反思。",
+        "entities": [
+          "Hugging Face",
+          "Meta",
+          "Paperswithcode",
+          "Qwen"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning (qwen)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tgmwqr/reviving_paperswithcode_by_hugging_face_p/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946612",
+        "source": "Machine Learning (qwen)",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tgmwqr/reviving_paperswithcode_by_hugging_face_p/",
+        "event_id": null
+      },
+      {
+        "id": "57bd9fb76fd67ec671b6e6ba6768d92c",
+        "title": "横向扩展大模型新思路：无需改权重的隐藏状态耦合",
+        "chinese_title": "横向扩展大模型新思路：无需改权重的隐藏状态耦合",
+        "original_title": "Scaling LLMs horizontally: hidden-state coupling without weight modification [R]",
+        "summary": "研究者提出Residual Coupling方法，通过小型线性桥接在中间层将冻结的语言模型并联，无需修改底座权重即可实现模型间双向反馈，让基础模型负责记忆、轻量线性层负责推理。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸至模型组合范式、推理增强新方向，以及MoE、模型路由等横向扩展技术的工程化落地。",
+        "entities": [
+          "LLM",
+          "Residual Coupling"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tgm530/scaling_llms_horizontally_hiddenstate_coupling/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946622",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tgm530/scaling_llms_horizontally_hiddenstate_coupling/",
+        "event_id": null
+      },
+      {
+        "id": "6557f7da1db566e3a5a1b08f3280500f",
+        "title": "斯坦福学生自述：ChatGPT让轻微作弊成精英校园默认文化",
+        "chinese_title": "斯坦福学生自述：ChatGPT让轻微作弊成精英校园默认文化",
+        "original_title": "A Stanford student reflects on his ChatGPT class and a culture of \"just a little bit of fraud\"",
+        "summary": "斯坦福学生Theo Baker在《纽约时报》撰文反思，ChatGPT塑造了整届毕业生的学习方式，将精英大学中原已存在的学术不诚信文化推向了默认化、规模化。",
+        "rating": "A",
+        "score": 79,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可延伸至高等教育评估体系改革、AI检测工具竞赛、学术诚信制度重塑。",
+        "entities": [
+          "GPT",
+          "OpenAI",
+          "Stanford",
+          "Theo Baker"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/a-stanford-student-reflects-on-his-chatgpt-class-and-a-culture-of-just-a-little-bit-of-fraud/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946634",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/a-stanford-student-reflects-on-his-chatgpt-class-and-a-culture-of-just-a-little-bit-of-fraud/",
+        "event_id": null
+      },
+      {
+        "id": "c3d8645c48eab4899d1287424f665da4",
+        "title": "AI垃圾报告淹没漏洞赏金平台，企业被迫暂停项目",
+        "chinese_title": "AI垃圾报告淹没漏洞赏金平台，企业被迫暂停项目",
+        "original_title": "Bug bounty businesses bombarded with AI slop",
+        "summary": "Bugcrowd等漏洞赏金平台过去一年收到的低质量AI生成报告数量翻了四倍多，迫使部分企业暂停赏金计划，OpenAI、T-Mobile、摩托罗拉等客户安全运营受到冲击。",
+        "rating": "A",
+        "score": 81,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸至AI滥用对安全生态的反噬、白帽黑客行业变革、AI生成内容识别需求爆发。",
+        "entities": [
+          "Bugcrowd",
+          "Motorola",
+          "OpenAI",
+          "T-Mobile"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/05/bug-bounty-businesses-bombarded-with-ai-slop/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946644",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/bug-bounty-businesses-bombarded-with-ai-slop/",
+        "event_id": null
+      },
+      {
+        "id": "31065c4bedbed56e16b1eb5f924fc754",
+        "title": "Anthropic联创Christopher Olah将与教皇共同发布AI主题首份通谕",
+        "chinese_title": "Anthropic联创Christopher Olah将与教皇共同发布AI主题首份通谕",
+        "original_title": "The Vatican says Anthropic co-founder Christopher Olah will join Pope Leo on May 25 to launch the pope's first encyclical, setting out his views on the AI age (Flavia Rotondi/Bloomberg)",
+        "summary": "梵蒂冈宣布Anthropic联合创始人Christopher Olah将于5月25日与教皇利奥十四世共同发布教皇首份通谕，聚焦人工智能时代的伦理与社会议题。",
+        "rating": "A+",
+        "score": 90,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可延伸至宗教界对AI伦理的介入、Anthropic公关战略、AI对全球价值观秩序的影响。",
+        "entities": [
+          "Anthropic",
+          "Christopher Olah",
+          "Pope Leo"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260518/p23#a260518p23"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946656",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260518/p23#a260518p23",
+        "event_id": null
+      },
+      {
+        "id": "e7ebfaa09996b9fe18b9e2622336b882",
+        "title": "实时生成视频公司Decart估值飙至40亿美元，三个月翻倍",
+        "chinese_title": "实时生成视频公司Decart估值飙至40亿美元，三个月翻倍",
+        "original_title": "Decart, which offers real-time generative video and GPU optimization tech, raised $300M at a ~$4B valuation, up from $3.1B after raising $153M in August 2025 (Robbie Whelan/Wall Street Journal)",
+        "summary": "提供实时生成视频与GPU优化技术的Decart完成3亿美元新融资，估值由31亿跃升至约40亿美元，投资人持续押注让AI算力更高效的初创公司。",
+        "rating": "A",
+        "score": 76,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延伸至生成式视频赛道竞争、GPU优化基础设施投资热、英伟达替代方案估值溢价。",
+        "entities": [
+          "Decart"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260518/p22#a260518p22"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946664",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260518/p22#a260518p22",
+        "event_id": null
+      },
+      {
+        "id": "de14fcddc80eac603ef53e5a77bcec75",
+        "title": "波士顿动力Atlas单手举冰箱，人形机器人重活能力再进化",
+        "chinese_title": "波士顿动力Atlas单手举冰箱，人形机器人重活能力再进化",
+        "original_title": "Atlas Lifts a Fridge - Boston Dynamics",
+        "summary": "波士顿动力发布视频展示Atlas人形机器人独立搬起一台冰箱，展示其在重负载、复杂物体操控上的能力跃迁，引发对家庭与工业场景应用的讨论。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸至人形机器人量产竞赛、特斯拉Optimus与Figure对标、A股机器人产业链联动。",
+        "entities": [
+          "Atlas",
+          "Boston Dynamics"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (boston dynamics)",
+            "url": "https://www.reddit.com/r/singularity/comments/1tglk5q/atlas_lifts_a_fridge_boston_dynamics/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946682",
+        "source": "Technological Singularity (boston dynamics)",
+        "url": "https://www.reddit.com/r/singularity/comments/1tglk5q/atlas_lifts_a_fridge_boston_dynamics/",
+        "event_id": null
+      },
+      {
+        "id": "d3fdbabee768e713fe05b3f1ac042a6e",
+        "title": "走进波士顿动力实验室：Atlas是如何学会新技能的",
+        "chinese_title": "走进波士顿动力实验室：Atlas是如何学会新技能的",
+        "original_title": "How does Atlas learn? | Inside the Lab | Boston Dynamics",
+        "summary": "波士顿动力官方视频揭秘Atlas机器人学习机制，展示其在实验室中通过示教、强化学习和仿真环境完成新任务训练的全过程。",
+        "rating": "B",
+        "score": 67,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸至具身智能数据采集方案、机器人训练基础设施、仿真到现实迁移技术热度。",
+        "entities": [
+          "Atlas",
+          "Boston Dynamics"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (boston dynamics)",
+            "url": "https://www.reddit.com/r/singularity/comments/1tgl374/how_does_atlas_learn_inside_the_lab_boston/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946691",
+        "source": "Technological Singularity (boston dynamics)",
+        "url": "https://www.reddit.com/r/singularity/comments/1tgl374/how_does_atlas_learn_inside_the_lab_boston/",
+        "event_id": null
+      },
+      {
+        "id": "17c494f8e1185b65d31d34e0da911e58",
+        "title": "Figure机器人PK实习生：10小时分拣邮件最终战绩公布",
+        "chinese_title": "Figure机器人PK实习生：10小时分拣邮件最终战绩公布",
+        "original_title": "Figure | Final Results after a 10 hour shift between an Intern and Robot sorting mail",
+        "summary": "Figure发布视频展示其人形机器人与人类实习生在分拣邮件岗位上连续工作10小时的最终对比结果，提供人形机器人在重复性劳动场景下真实生产力的早期数据。",
+        "rating": "B",
+        "score": 68,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸至人形机器人替代蓝领岗位时间表、企业部署成本测算、劳动力市场冲击。",
+        "entities": [
+          "Figure"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1tgk14g/figure_final_results_after_a_10_hour_shift/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946699",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1tgk14g/figure_final_results_after_a_10_hour_shift/",
+        "event_id": null
+      },
+      {
+        "id": "e9cb6eb1e61097c735310d2fc766578a",
+        "title": "TPU内部抢算力：谷歌研究员正被云客户和明星产品挤出资源",
+        "chinese_title": "TPU内部抢算力：谷歌研究员正被云客户和明星产品挤出资源",
+        "original_title": "Sources: competition for Google's TPUs among its employees and researchers intensified as it prioritizes cloud customers and flagship AI products over research (Julia Love/Bloomberg)",
+        "summary": "彭博社报道，谷歌内部对TPU的争夺日趋激烈，公司优先把算力配给云客户和旗舰AI产品，研究部门和员工实验项目面临资源紧张，反映AI竞赛对内部资源分配的重塑。",
+        "rating": "A+",
+        "score": 87,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸至谷歌研究院与商业化部门的张力、AI巨头算力分配策略、自研芯片对外开放节奏。",
+        "entities": [
+          "Alphabet",
+          "Google",
+          "Tpu"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260518/p20#a260518p20"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946709",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260518/p20#a260518p20",
+        "event_id": null
+      },
+      {
         "id": "5cb89d51ba60c677eeb021d49d9cc93b",
         "title": "研究者实测：MoE大模型在非裔英语提示下安全策略可能失效",
         "chinese_title": "研究者实测：MoE大模型在非裔英语提示下安全策略可能失效",
@@ -111,6 +452,63 @@
         "published_at": "2026-05-18T22:10:48.821646",
         "source": "Feed: Artificial Intelligence Latest",
         "url": "https://www.wired.com/story/normie-vibe-code/",
+        "event_id": null
+      },
+      {
+        "id": "19a9f45157c453c9baa06dfb4bbb3197",
+        "title": "Sebastian Raschka梳理LLM新架构：KV共享、mHC与压缩注意力",
+        "chinese_title": "Sebastian Raschka梳理LLM新架构：KV共享、mHC与压缩注意力",
+        "original_title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention [P]",
+        "summary": "知名AI研究者Sebastian Raschka最新综述聚焦大模型架构最新进展，重点拆解KV共享、多头压缩与压缩注意力等技术，揭示推理效率与上下文规模的权衡方向。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可联动到大模型推理成本下降、长上下文窗口竞赛与端侧LLM普及等产业延伸话题。",
+        "entities": [
+          "LLM",
+          "Sebastian Raschka"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tfpvod/recent_developments_in_llm_architectures_kv/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779113448,
+        "published_at": "2026-05-18T22:10:48.821574",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tfpvod/recent_developments_in_llm_architectures_kv/",
+        "event_id": null
+      },
+      {
+        "id": "cbbef2855177e0fad3e698d84cf0418b",
+        "title": "付费项目被指诱导高中生学术不端：158篇顶会署名引发质疑",
+        "chinese_title": "付费项目被指诱导高中生学术不端：158篇顶会署名引发质疑",
+        "original_title": "Program misleading high school students into paying to perform academic misconduct in ML Research [D]",
+        "summary": "有用户在OpenReview发现一名作者拥有158篇论文与468位合著者，背后是一家面向高中生收费的Algoverse项目，被批量产顶会署名涉嫌误导未成年人参与学术不端。",
+        "rating": "B",
+        "score": 70,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可联动到顶会作者真实性审查、AI研究商业培训乱象与未成年人学术伦理治理。",
+        "entities": [
+          "Algoverse",
+          "Neurips",
+          "Openreview"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tfh2s9/program_misleading_high_school_students_into/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779113448,
+        "published_at": "2026-05-18T22:10:48.821584",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tfh2s9/program_misleading_high_school_students_into/",
         "event_id": null
       },
       {
@@ -1646,63 +2044,6 @@
       }
     ],
     "2026-05-17": [
-      {
-        "id": "19a9f45157c453c9baa06dfb4bbb3197",
-        "title": "Sebastian Raschka梳理LLM新架构：KV共享、mHC与压缩注意力",
-        "chinese_title": "Sebastian Raschka梳理LLM新架构：KV共享、mHC与压缩注意力",
-        "original_title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention [P]",
-        "summary": "知名AI研究者Sebastian Raschka最新综述聚焦大模型架构最新进展，重点拆解KV共享、多头压缩与压缩注意力等技术，揭示推理效率与上下文规模的权衡方向。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可联动到大模型推理成本下降、长上下文窗口竞赛与端侧LLM普及等产业延伸话题。",
-        "entities": [
-          "LLM",
-          "Sebastian Raschka"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tfpvod/recent_developments_in_llm_architectures_kv/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779113448,
-        "published_at": "2026-05-18T22:10:48.821574",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tfpvod/recent_developments_in_llm_architectures_kv/",
-        "event_id": null
-      },
-      {
-        "id": "cbbef2855177e0fad3e698d84cf0418b",
-        "title": "付费项目被指诱导高中生学术不端：158篇顶会署名引发质疑",
-        "chinese_title": "付费项目被指诱导高中生学术不端：158篇顶会署名引发质疑",
-        "original_title": "Program misleading high school students into paying to perform academic misconduct in ML Research [D]",
-        "summary": "有用户在OpenReview发现一名作者拥有158篇论文与468位合著者，背后是一家面向高中生收费的Algoverse项目，被批量产顶会署名涉嫌误导未成年人参与学术不端。",
-        "rating": "B",
-        "score": 70,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可联动到顶会作者真实性审查、AI研究商业培训乱象与未成年人学术伦理治理。",
-        "entities": [
-          "Algoverse",
-          "Neurips",
-          "Openreview"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tfh2s9/program_misleading_high_school_students_into/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779113448,
-        "published_at": "2026-05-18T22:10:48.821584",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tfh2s9/program_misleading_high_school_students_into/",
-        "event_id": null
-      },
       {
         "id": "38baceda1681da926adbd6e1e26f9fd4",
         "title": "绕开GPU封锁：中国深圳超算用240万颗华为Armv9 CPU堆出1.54 exaflops",
@@ -9153,6 +9494,33 @@
       }
     ],
     "2026-05-14": [
+      {
+        "id": "1b7f8ab9346911360afd9aae1c97269a",
+        "title": "Nature最新研究：每天睡七小时可减缓生物衰老",
+        "chinese_title": "Nature最新研究：每天睡七小时可减缓生物衰老",
+        "original_title": "Daily briefing: Around seven hours of sleep slows biological ageing",
+        "summary": "Nature发表研究指出六至八小时是减缓衰老和预防疾病的最佳睡眠区间，同期还有关于丹尼索瓦人与直立人意外交配、抗生素外观助长耐药性等发现。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸至睡眠科技产品市场、健康可穿戴设备、长寿经济投资逻辑。",
+        "entities": [
+          "Nature"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01578-6"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779116605,
+        "published_at": "2026-05-18T23:03:25.946586",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01578-6",
+        "event_id": null
+      },
       {
         "id": "7d6a8aceb7fd976147874b8f9d47f696",
         "title": "AMD服务器CPU营收份额突破46%，英特尔仍守住消费PC七成市场",
@@ -22112,6 +22480,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-18T22:12:11.791856",
-  "total_news": 756
+  "last_updated": "2026-05-18T23:04:29.915766",
+  "total_news": 769
 }
