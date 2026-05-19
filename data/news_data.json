@@ -2,6 +2,35 @@
   "news": {
     "2026-05-19": [
       {
+        "id": "0fbdbeca272b52974eb9c262881701b1",
+        "title": "Sieve上架Mac：专门扫描Cursor、Claude聊天记录里泄露的API密钥",
+        "chinese_title": "Sieve上架Mac：专门扫描Cursor、Claude聊天记录里泄露的API密钥",
+        "original_title": "Sieve – scans Cursor/Claude chat history for leaked API keys",
+        "summary": "一款名为Sieve的Mac应用上架App Store，可扫描Cursor、Claude等AI编程工具的本地聊天历史，识别并提示其中可能被无意泄露的API密钥，应对AI辅助开发带来的新型安全风险。",
+        "rating": "B",
+        "score": 65,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "AI编程工具普及后密钥泄露成为新型攻击面，可延伸报道Cursor、Claude等工具的安全审计现状，以及DevSecOps工具链的AI适配机会。",
+        "entities": [
+          "Claude",
+          "Cursor",
+          "Sieve"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://apps.apple.com/us/app/sieve-secret-scanner/id6767409365?mt=12"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779166898,
+        "published_at": "2026-05-19T13:01:38.134045",
+        "source": "Hacker News",
+        "url": "https://apps.apple.com/us/app/sieve-secret-scanner/id6767409365?mt=12",
+        "event_id": null
+      },
+      {
         "id": "97b5aeb9652a8508994704ca93b01008",
         "title": "开发者让Claude以语音模式参与Zoom会议，成功与四人互动",
         "chinese_title": "开发者让Claude以语音模式参与Zoom会议，成功与四人互动",
@@ -23462,129 +23491,9 @@
         "source": "Nature - Issue - nature.com science feeds",
         "url": "https://www.nature.com/articles/d41586-026-01510-y",
         "event_id": null
-      },
-      {
-        "id": "8a4b609dfe53312e49e5f2acaa75356e",
-        "title": "AI考核压力下：亚马逊员工被曝用内部工具刷token指标",
-        "chinese_title": "AI考核压力下：亚马逊员工被曝用内部工具刷token指标",
-        "original_title": "Sources: some Amazon employees are using in-house OpenClaw-like tool MeshClaw for unnecessary tasks to inflate AI token use after Amazon set weekly AI targets (Financial Times)",
-        "summary": "金融时报援引消息称，亚马逊设立每周AI使用目标后，部分员工开始借助内部类OpenClaw工具MeshClaw将无关任务委派给AI代理，以人为推高token消耗、攀升公司AI排行榜。",
-        "rating": "S",
-        "score": 96,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸讨论大厂以KPI驱动AI普及的副作用，对比微软、谷歌的AI使用考核做法，以及AI生产力指标真实性的争议。",
-        "entities": [
-          "Amazon",
-          "Meshclaw",
-          "Openclaw"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260512/p2#a260512p2"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778562131,
-        "published_at": "2026-05-12T13:02:11.615549",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260512/p2#a260512p2",
-        "event_id": null
-      },
-      {
-        "id": "d0ff8bb65bdebe1b98e54ef76ea73849",
-        "title": "美众议院启动调查：Sam Altman个人投资被指涉嫌利益冲突",
-        "chinese_title": "美众议院启动调查：Sam Altman个人投资被指涉嫌利益冲突",
-        "original_title": "The US House Oversight Committee launches a probe into potential conflicts in Sam Altman's personal investments; letter: several GOP AGs call for an SEC review (Wall Street Journal)",
-        "summary": "美国众议院监督委员会宣布对Sam Altman的个人投资展开调查，六位共和党州总检察长联名要求SEC介入审查，称其与OpenAI业务存在潜在利益冲突。",
-        "rating": "A+",
-        "score": 91,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可延伸观察OpenAI治理风险、对其IPO节奏和融资估值的影响，以及AI巨头创始人个人投资合规边界的讨论。",
-        "entities": [
-          "OpenAI",
-          "Sam Altman",
-          "Sec",
-          "Us House Oversight Committee"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260512/p1#a260512p1"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778562131,
-        "published_at": "2026-05-12T13:02:11.615574",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260512/p1#a260512p1",
-        "event_id": null
-      },
-      {
-        "id": "0f6c28d6a7c66be74aef4f788a99aa99",
-        "title": "个人开发者手搓LLM编译器：RTX 5090上超torch.compile 20%",
-        "chinese_title": "个人开发者手搓LLM编译器：RTX 5090上超torch.compile 20%",
-        "original_title": "A hackable compiler to generate efficient fused GPU kernels for AI models [P]",
-        "summary": "一位开发者从零构建可定制的LLM编译器，通过六层IR将TinyLlama、Qwen2.5-7B等模型降到融合CUDA内核，在RTX 5090上FP32几何均值较PyTorch eager快1.11倍、较torch.compile快1.20倍。",
-        "rating": "B",
-        "score": 73,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸观察轻量级AI编译器对TVM、PyTorch Inductor、Triton等主流栈的冲击，以及消费级显卡上推理优化的开源生态走向。",
-        "entities": [
-          "CUDA",
-          "Pytorch",
-          "Qwen",
-          "Tinyllama",
-          "Triton"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tag07l/a_hackable_compiler_to_generate_efficient_fused/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778562131,
-        "published_at": "2026-05-12T13:02:11.615606",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tag07l/a_hackable_compiler_to_generate_efficient_fused/",
-        "event_id": null
-      },
-      {
-        "id": "d90ce0388d0e4a6d955f4b2fff9c9342",
-        "title": "Grok下滑明显：4月下载量跌至830万，付费用户Q2同比几乎零增长",
-        "chinese_title": "Grok下滑明显：4月下载量跌至830万，付费用户Q2同比几乎零增长",
-        "original_title": "AppMagic: Grok downloads fell to ~8.3M in April, from a high of 20M+ in January; Recon Analytics says Grok paid adoption in the US remains nearly flat YoY in Q2 (Georgia Wells/Wall Street Journal)",
-        "summary": "AppMagic数据显示Grok 4月下载量约830万，较1月峰值2000万+大幅回落；Recon Analytics称其美国付费用户Q2同比几乎持平，而母公司SpaceX正将闲置算力出租给Anthropic。",
-        "rating": "A+",
-        "score": 91,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可延伸观察马斯克AI布局疲软对xAI估值的影响，以及Anthropic借助SpaceX算力扩张可能引发的AI算力供应链变局。",
-        "entities": [
-          "Anthropic",
-          "Grok",
-          "SpaceX",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260511/p46#a260511p46"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778562131,
-        "published_at": "2026-05-12T13:02:11.615637",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260511/p46#a260511p46",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-19T11:09:38.082443",
-  "total_news": 806
+  "last_updated": "2026-05-19T13:02:15.661619",
+  "total_news": 803
 }
