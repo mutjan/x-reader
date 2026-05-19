@@ -1667,8 +1667,8 @@
                 <span class="icon">精选</span>
                 <span>分类精选</span>
                 <span class="summary-window-controls" onclick="event.stopPropagation()">
-                    <button type="button" class="summary-window-btn" data-window-hours="24" onclick="setFeaturedWindowHours(24)">24小时</button>
-                    <button type="button" class="summary-window-btn active" data-window-hours="48" onclick="setFeaturedWindowHours(48)">48小时</button>
+                    <button type="button" class="summary-window-btn active" data-window-hours="24" onclick="setFeaturedWindowHours(24)">24小时</button>
+                    <button type="button" class="summary-window-btn" data-window-hours="48" onclick="setFeaturedWindowHours(48)">48小时</button>
                 </span>
                 <span style="font-size: 12px; font-weight: normal; color: #8899a6;" id="summaryCount"></span>
                 <span class="summary-toggle" id="summaryToggle">▼</span>
@@ -1732,7 +1732,7 @@
         let currentTab = 'events'; // news/events — 默认显示事件追踪
         let selectedItems = new Set(); // 存储选中的项目ID（新闻或事件）
         const FEATURED_WINDOW_OPTIONS = [24, 48];
-        let featuredWindowHours = 48;
+        let featuredWindowHours = 24;
         const FEATURED_HIGH_GRADES = new Set(['S', 'A+', 'A']);
         const FEATURED_SINGLE_EVENT_GRADES = new Set(['S', 'A+']);
         const FEATURED_CATEGORIES = [

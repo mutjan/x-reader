@@ -1,11 +1,56 @@
 [
   {
     "index": 0,
-    "original_url": "https://the-decoder.com/ai-startup-revenue-hits-80-billion-but-anthropic-and-openai-take-almost-all-of-it/",
-    "chinese_title": "AI创业公司年营收破800亿美元，Anthropic和OpenAI拿走近九成",
-    "summary": "据The Information分析，头部AI创业公司年化收入合计已达800亿美元规模，但其中Anthropic与OpenAI两家就占据了89%的份额，行业马太效应进一步加剧，留给其他玩家的市场空间被持续压缩。",
-    "type": "financial",
-    "extension": "可延伸讨论中小AI创业公司的生存空间被挤压的现象，关联国内AI六小龙的差异化路径选择；也可联系微软、亚马逊作为两家公司主要投资方的资本回报与算力订单流向。",
-    "entities": ["Anthropic", "OpenAI", "The Information"]
+    "original_url": "https://www.theinformation.com/articles/analog-devices-talks-buy-ai-power-chip-startup-1-5-billion",
+    "chinese_title": "ADI拟15亿美元收购AI电源芯片初创公司Empower Semiconductor",
+    "summary": "模拟芯片巨头Analog Devices正就收购Empower Semiconductor进行深入谈判，交易估值约15亿美元。此次收购将增强ADI在AI芯片电源管理领域的技术储备，反映市场对AI算力基础设施的强劲需求。",
+    "type": "industry",
+    "extension": "AI电源管理芯片是算力基础设施的关键环节，收购完成后ADI将与英飞凌、TI等展开更激烈竞争，同时可能引发更多AI基础设施领域的并购潮。",
+    "entities": ["Analog Devices", "Empower Semiconductor", "AI芯片", "电源管理"]
+  },
+  {
+    "index": 1,
+    "original_url": "https://www.theinformation.com/briefings/google-blackstone-create-tpu-cloud-provider",
+    "chinese_title": "谷歌联手黑石集团成立TPU云服务商，挑战英伟达GPU生态",
+    "summary": "谷歌与黑石集团合作成立一家云计算公司，向AI开发者出租谷歌自研的TPU芯片算力。这是谷歌扩大TPU生态、与英伟达CUDA生态竞争的重要举措。",
+    "type": "industry",
+    "extension": "TPU云服务的推出可能改变AI算力市场格局，降低开发者对英伟达GPU的依赖，同时推动谷歌云业务增长，影响云厂商的芯片采购策略。",
+    "entities": ["Google", "Blackstone", "TPU", "英伟达"]
+  },
+  {
+    "index": 2,
+    "original_url": "https://vas-blog.pages.dev/qwen-censorship/",
+    "chinese_title": "研究者揭示Qwen 3.5模型权重中的政治审查机制",
+    "summary": "一项技术分析深入揭示了阿里通义千问Qwen 3.5模型内部如何通过权重层面的机制实现政治内容审查，为理解大模型安全对齐与内容控制的边界提供了独特视角。",
+    "type": "safety",
+    "extension": "该研究可能引发关于AI模型透明度、安全对齐标准差异以及开源模型治理的国际讨论，影响大模型开源策略和跨境AI服务合规。",
+    "entities": ["Qwen 3.5", "阿里", "大模型审查", "AI安全"]
+  },
+  {
+    "index": 3,
+    "original_url": "https://wickstrom.tech/2026-05-16-coding-on-paper.html",
+    "chinese_title": "纸上编程：一位开发者的离线编码实践反思",
+    "summary": "开发者分享在纸上手写代码的独特体验，探讨脱离IDE和编译器辅助时编程思维的转变，反思现代开发工具对编程能力的影响。",
+    "type": "tool",
+    "extension": "这一实践引发对AI辅助编程时代开发者基本功的讨论，可能带动关于编程教育、面试形式以及人机协作边界的思考。",
+    "entities": ["编程实践", "开发者工具"]
+  },
+  {
+    "index": 4,
+    "original_url": "https://www.nature.com/articles/d41586-026-01574-w",
+    "chinese_title": "《自然》评论：增强运动会违背科学精神，反兴奋剂技术需进步",
+    "summary": "《自然》杂志发表评论指出，允许使用性能增强物质的\"增强运动会\"对运动员健康和体育诚信构成风险，呼吁反兴奋剂科学持续进步以维护竞技体育的公平性。",
+    "type": "society",
+    "extension": "该议题涉及科技伦理边界、人类增强技术的社会接受度，以及AI和生物监测技术在反兴奋剂领域的应用前景。",
+    "entities": ["Nature", "增强运动会", "反兴奋剂"]
+  },
+  {
+    "index": 5,
+    "original_url": "https://www.reddit.com/r/MachineLearning/comments/1tgv464/need_advice_should_i_retake_two_courses_over_the/",
+    "chinese_title": "Reddit热议：研究生该重修课程还是专注科研",
+    "summary": "一位数据科学硕士生在Reddit求助，因专注研究项目导致GPA从3.75降至3.44，面临重修课程与继续科研的两难选择，引发学术界对课程成绩与科研能力权衡的讨论。",
+    "type": "opinion",
+    "extension": "该讨论反映了AI领域人才培养的现实困境，可能引发关于学术评价体系、产业界招聘标准以及研究型硕士培养模式的思考。",
+    "entities": ["Reddit", "机器学习", "研究生教育"]
   }
 ]
