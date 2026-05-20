@@ -2,6 +2,36 @@
   "news": {
     "2026-05-20": [
       {
+        "id": "9d72d8d077600b9a090a3fe3e5ffce7a",
+        "title": "谷歌Android 17将推Continue On功能，对标苹果Handoff",
+        "chinese_title": "谷歌Android 17将推Continue On功能，对标苹果Handoff",
+        "original_title": "Google unveils Continue On, a new feature in Android 17 that will let users move tasks between Android devices, similar to Apple's Handoff feature (Ben Schoon/9to5Google)",
+        "summary": "谷歌在Android 17中推出Continue On功能，允许用户在不同Android设备间无缝切换任务，功能与苹果Handoff类似。该功能将首先出现在Pixel设备上。",
+        "rating": "A",
+        "score": 75,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "跨设备体验是移动生态竞争的关键战场，谷歌此举意在缩小与苹果生态的差距，可能带动Android平板和可穿戴设备的协同销售。",
+        "entities": [
+          "Android",
+          "Apple",
+          "Google",
+          "Pixel"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "https://www.techmeme.com/260519/p71#a260519p71"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779235413,
+        "published_at": "2026-05-20T08:03:33.381935",
+        "source": "Techmeme (apple)",
+        "url": "https://www.techmeme.com/260519/p71#a260519p71",
+        "event_id": null
+      },
+      {
         "id": "8edee20ac561cd89e9a7f4b939df42f1",
         "title": "Google Flow系列升级：接入Gemini Omni、推出移动应用和自定义工具",
         "chinese_title": "Google Flow系列升级：接入Gemini Omni、推出移动应用和自定义工具",
@@ -261,6 +291,390 @@
         "published_at": "2026-05-20T07:21:50.739629",
         "source": "The Information",
         "url": "https://www.theinformation.com/briefings/google-deepmind-hires-staff-licenses-technology-contextual-ai",
+        "event_id": null
+      },
+      {
+        "id": "0d5d96f13b8a8c3c153b882de1d9d16e",
+        "title": "RL智能体文本反馈预测方法被独立复现，Agent任务验证其有效性",
+        "chinese_title": "RL智能体文本反馈预测方法被独立复现，Agent任务验证其有效性",
+        "original_title": "RT Yuda Song: Exciting work! But in our February paper, \"Reinforcement Learning with Text Feedback\", we proposed the same methodology: predicting envi...",
+        "summary": "研究者发现其2月提出的文本反馈强化学习方法与最新Agent终端任务研究不谋而合，验证了该方法论在智能体领域的适用性。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该方法论若被更多Agent框架采纳，可能改变RLHF训练范式，影响OpenAI、Anthropic等公司的对齐策略。",
+        "entities": [
+          "Agent",
+          "Dimitris Papailiopoulos",
+          "Rlhf",
+          "Yuda Song"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/askalphaxiv/status/2056874301316612427"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739362",
+        "source": "x",
+        "url": "https://x.com/askalphaxiv/status/2056874301316612427",
+        "event_id": null
+      },
+      {
+        "id": "9479cc8e7a7894129ea5e6404feb9628",
+        "title": "哈佛AI博士孔令凯将于2026年秋入职港大 tenure-track助理教授",
+        "chinese_title": "哈佛AI博士孔令凯将于2026年秋入职港大 tenure-track助理教授",
+        "original_title": "🎓 Thrilled to share: I'll be joining The University of Hong Kong, School of Computing and Data Science as a Tenure-track Assistant Professor in Fal...",
+        "summary": "孔令凯宣布将于2026年秋季加入香港大学计算与数据科学学院，研究方向为GenAI智能体，正在招收博士生和博士后。",
+        "rating": "B",
+        "score": 74,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "港大近期密集引进AI人才，反映香港在AI人才竞争中的加速布局，可能与内地高校形成人才流动新格局。",
+        "entities": [
+          "Genai",
+          "Harvard",
+          "孔令凯",
+          "香港大学"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/konglingkai_AI/status/2056863673474220356"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739385",
+        "source": "x",
+        "url": "https://x.com/konglingkai_AI/status/2056863673474220356",
+        "event_id": null
+      },
+      {
+        "id": "c25a5d5003d6888b18c24600dbe8493a",
+        "title": "主流视频模型被曝靠视觉幻觉猜声音，1万对偏好数据修复28分",
+        "chinese_title": "主流视频模型被曝靠视觉幻觉猜声音，1万对偏好数据修复28分",
+        "original_title": "turns out, today's video models are mostly just pretending to listen. 👁️🎙️When Vision Speaks for Sound 👁️🎙️ We tested top models (incl...",
+        "summary": "研究发现Gemini等顶级视频模型存在视听Clever Hans效应，通过视觉线索幻觉声音而非真正理解音频，研究者用1万对偏好对齐数据将性能提升28个百分点。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该发现对多模态模型评测标准提出挑战，可能推动音视频联合理解成为新的研究热点和评测维度。",
+        "entities": [
+          "Gemini",
+          "Google",
+          "多模态模型",
+          "视频模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Xiaofei_Wen_Mk/status/2056844574988132715"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739420",
+        "source": "x",
+        "url": "https://x.com/Xiaofei_Wen_Mk/status/2056844574988132715",
+        "event_id": null
+      },
+      {
+        "id": "971422a388732429337a8e9f8e9522af",
+        "title": "2B参数视频VLM Marlin开源，性能对标Gemini 2.5 Flash",
+        "chinese_title": "2B参数视频VLM Marlin开源，性能对标Gemini 2.5 Flash",
+        "original_title": "open sourcing Marlin-2B 🐟 a tiny VLM to extract structured information from videos Marlin is finetuned for two questions devs want to ask in their ...",
+        "summary": "Marlin-2B开源发布，专为从视频中提取结构化信息微调，在同类开源模型中表现最佳，仅2B参数即可与Gemini 2.5 Flash竞争。",
+        "rating": "A",
+        "score": 76,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "小参数视频理解模型降低开发者门槛，可能加速视频AI应用落地，对端侧AI和短视频分析领域影响显著。",
+        "entities": [
+          "Gemini",
+          "Marlin",
+          "Vlm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/HappyyPablo/status/2056839665551024474"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739431",
+        "source": "x",
+        "url": "https://x.com/HappyyPablo/status/2056839665551024474",
+        "event_id": null
+      },
+      {
+        "id": "59ffde149099c90ef6d952f6d59a9250",
+        "title": "FlashEvolve异步运行时让自进化智能体提速3.5到4.9倍",
+        "chinese_title": "FlashEvolve异步运行时让自进化智能体提速3.5到4.9倍",
+        "original_title": "1/ Recursive Self-Improvement isn't only bottlenecked by smarter algorithms. One of its severe bottlenecks is sync barriers. Presenting FlashEvolve: a...",
+        "summary": "研究者提出FlashEvolve异步运行时，通过消除自进化智能体中的同步屏障瓶颈，使GEPA、ACE等框架运行速度提升3.5至4.9倍。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "自进化智能体是AI Agent前沿方向，速度瓶颈的突破可能加速该领域从研究走向实际应用。",
+        "entities": [
+          "Ace",
+          "Agent",
+          "Flashevolve",
+          "Gepa"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/zhenwang9102/status/2056813647570039086"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739441",
+        "source": "x",
+        "url": "https://x.com/zhenwang9102/status/2056813647570039086",
+        "event_id": null
+      },
+      {
+        "id": "88a7346f601708884d47ee1e6c0a0bdf",
+        "title": "Gemini Omni支持多模态参考条件生成，GCN技术路线获新应用",
+        "chinese_title": "Gemini Omni支持多模态参考条件生成，GCN技术路线获新应用",
+        "original_title": "Gemini Omni allows me to step into an alternative timeline where Graph Convolutional Nets (GCNs) made it to the big stage 🙃 Jokes aside: excited to...",
+        "summary": "Google研究员Thomas Kipf分享Gemini Omni在多模态参考条件生成方面的进展，图卷积网络技术以新形式融入大模型体系。",
+        "rating": "B",
+        "score": 74,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "多模态参考条件生成若开放给开发者，可能在创意内容生成领域开辟新应用场景。",
+        "entities": [
+          "Gcn",
+          "Gemini",
+          "Google",
+          "Thomas Kipf"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/tkipf/status/2056811775383982201"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739451",
+        "source": "x",
+        "url": "https://x.com/tkipf/status/2056811775383982201",
+        "event_id": null
+      },
+      {
+        "id": "90d97bdef976c1a6b651bff4345e22a6",
+        "title": "Thinking Machines设立10万美元AI交互研究资助计划",
+        "chinese_title": "Thinking Machines设立10万美元AI交互研究资助计划",
+        "original_title": "Grants for research on interactivity, realtime video/audio full duplex evals, and safety",
+        "summary": "Thinking Machines宣布提供10万美元加计算额度资助，支持人机交互、实时音视频全双工评估和安全领域的研究。",
+        "rating": "B",
+        "score": 69,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "该资助计划可能吸引顶尖研究者关注AI交互和安全领域，间接推动相关技术标准和评测体系建立。",
+        "entities": [
+          "Ai安全",
+          "Thinking Machines"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/rown/status/2056809532794527939"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739461",
+        "source": "x",
+        "url": "https://x.com/rown/status/2056809532794527939",
+        "event_id": null
+      },
+      {
+        "id": "e65f867593f78243e02bdef88694cd73",
+        "title": "Google I/O展示Gemini 3.5 Flash，用智能体团队复现AlphaZero",
+        "chinese_title": "Google I/O展示Gemini 3.5 Flash，用智能体团队复现AlphaZero",
+        "original_title": "Proud to have worked on recreating Alphazero. The future is super super exciting 🔥!",
+        "summary": "Google在I/O大会上发布Gemini 3.5 Flash，研究团队使用智能体协作在Antigravity 2.0中复现了原始AlphaZero论文并构建可玩游戏。",
+        "rating": "A",
+        "score": 80,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Gemini 3.5 Flash的定位和定价策略将直接影响与Claude、GPT系列的市场竞争格局。",
+        "entities": [
+          "Alphazero",
+          "Antigravity",
+          "Gemini",
+          "Google"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Swarooprm7/status/2056807607156039995"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739472",
+        "source": "x",
+        "url": "https://x.com/Swarooprm7/status/2056807607156039995",
+        "event_id": null
+      },
+      {
+        "id": "3c1cd06e62ef7347823d4d5bcdae833f",
+        "title": "Cognition创始人Scott Wu谈用Claude构建Devin，目标让软件开发提速10倍",
+        "chinese_title": "Cognition创始人Scott Wu谈用Claude构建Devin，目标让软件开发提速10倍",
+        "original_title": "Scott Wu (@ScottWu46) runs @cognition, the team behind Devin, an AI software engineer built on Claude. He wants to make building software 10x faster f...",
+        "summary": "Cognition CEO Scott Wu介绍基于Claude构建的AI软件工程师Devin，愿景是让每个工程团队的软件开发效率提升10倍。",
+        "rating": "A",
+        "score": 81,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "Devin作为AI编程助手的代表产品，其商业化进展将直接影响AI编程工具市场的竞争态势和开发者工作流变革。",
+        "entities": [
+          "Claude",
+          "Cognition",
+          "Devin",
+          "Scott Wu"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/claudeai/status/2056805728774402428"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739483",
+        "source": "x",
+        "url": "https://x.com/claudeai/status/2056805728774402428",
+        "event_id": null
+      },
+      {
+        "id": "e438a9fb85a09e24fe8d424d5df52ab9",
+        "title": "开发者从零手写DreamerV3世界模型，纯想象训练人形机器人行走",
+        "chinese_title": "开发者从零手写DreamerV3世界模型，纯想象训练人形机器人行走",
+        "original_title": "RL agents need millions of real interactions to learn but for robotics, that's either extremely slow or expensive World models let agents learn by ima...",
+        "summary": "一位开发者不依赖PyTorch从零实现DreamerV3世界模型，包括自研自动微分引擎、RSSM、分布式critic等，完全在想象中训练出人形机器人行走策略。",
+        "rating": "A",
+        "score": 78,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "世界模型+纯想象训练是机器人学习的前沿方向，该开源实现可能降低研究者入门门槛，加速相关算法迭代。",
+        "entities": [
+          "Dreamerv3",
+          "世界模型",
+          "机器人"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/_pavidhiman/status/2056782645153968356"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739492",
+        "source": "x",
+        "url": "https://x.com/_pavidhiman/status/2056782645153968356",
+        "event_id": null
+      },
+      {
+        "id": "c7d09c7bc38615b86ed94e644fb957d6",
+        "title": "研究证实RoPE在长上下文存在内在局限，位置与token无法区分",
+        "chinese_title": "研究证实RoPE在长上下文存在内在局限，位置与token无法区分",
+        "original_title": "RT Hao Peng: Excited to share our new paper: RoPE Distinguishes Neither Positions Nor Tokens in Long Contexts, Provably LLMs often fail on inputs well...",
+        "summary": "新论文从理论上证明RoPE位置编码在长上下文中存在根本性限制，同一token在不同位置可能获得相同注意力权重，解释了LLM长文本失败的内在原因。",
+        "rating": "A",
+        "score": 79,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该发现可能推动新的位置编码方案研究，对长上下文模型架构设计产生深远影响。",
+        "entities": [
+          "LLM",
+          "Rope",
+          "位置编码"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/jeremyphoward/status/2056869310673654112"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739502",
+        "source": "x",
+        "url": "https://x.com/jeremyphoward/status/2056869310673654112",
+        "event_id": null
+      },
+      {
+        "id": "41df422f43eea18a7de2a65baccbb1c2",
+        "title": "Nous Research发布CNA方法，精准切除LLM特定行为不改变整体能力",
+        "chinese_title": "Nous Research发布CNA方法，精准切除LLM特定行为不改变整体能力",
+        "original_title": "Today we release Contrastive Neuron Attribution (CNA), a method for steering LLM behavior by identifying and ablating sparse circuits in the MLP basis...",
+        "summary": "Nous Research提出对比神经元归因方法CNA，通过识别并消融MLP中0.1%的关键神经元即可移除目标行为，无需训练稀疏自编码器或修改权重。",
+        "rating": "A",
+        "score": 81,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "CNA为模型安全对齐和有害行为移除提供了轻量级工具，可能在AI安全领域获得广泛应用。",
+        "entities": [
+          "Ai安全",
+          "Cna",
+          "LLM",
+          "Nous Research"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/NousResearch/status/2056778746716107193"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739512",
+        "source": "x",
+        "url": "https://x.com/NousResearch/status/2056778746716107193",
+        "event_id": null
+      },
+      {
+        "id": "d917ea65fdb426f3bbb8c07d34968101",
+        "title": "DeepSeek大规模招聘北京Agent方向人才，deepcode产品或即将推出",
+        "chinese_title": "DeepSeek大规模招聘北京Agent方向人才，deepcode产品或即将推出",
+        "original_title": "点开 DeepSeek JD，一堆北京 Agent 扑面而来🤯",
+        "summary": "DeepSeek招聘页面显示大量北京Agent相关岗位，外界推测其代码智能体产品deepcode可能即将正式发布。",
+        "rating": "A+",
+        "score": 87,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "DeepSeek进入Agent赛道将加剧国内AI编程工具竞争，可能对Cursor、GitHub Copilot等形成挑战。",
+        "entities": [
+          "Agent",
+          "DeepSeek",
+          "Deepcode"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/sheriyuo/status/2056709606571954330"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779232910,
+        "published_at": "2026-05-20T07:21:50.739531",
+        "source": "x",
+        "url": "https://x.com/sheriyuo/status/2056709606571954330",
         "event_id": null
       },
       {
@@ -3872,387 +4286,235 @@
     ],
     "2026-05-19": [
       {
-        "id": "0d5d96f13b8a8c3c153b882de1d9d16e",
-        "title": "RL智能体文本反馈预测方法被独立复现，Agent任务验证其有效性",
-        "chinese_title": "RL智能体文本反馈预测方法被独立复现，Agent任务验证其有效性",
-        "original_title": "RT Yuda Song: Exciting work! But in our February paper, \"Reinforcement Learning with Text Feedback\", we proposed the same methodology: predicting envi...",
-        "summary": "研究者发现其2月提出的文本反馈强化学习方法与最新Agent终端任务研究不谋而合，验证了该方法论在智能体领域的适用性。",
-        "rating": "B",
-        "score": 66,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该方法论若被更多Agent框架采纳，可能改变RLHF训练范式，影响OpenAI、Anthropic等公司的对齐策略。",
-        "entities": [
-          "Agent",
-          "Dimitris Papailiopoulos",
-          "Rlhf",
-          "Yuda Song"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/askalphaxiv/status/2056874301316612427"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739362",
-        "source": "x",
-        "url": "https://x.com/askalphaxiv/status/2056874301316612427",
-        "event_id": null
-      },
-      {
-        "id": "9479cc8e7a7894129ea5e6404feb9628",
-        "title": "哈佛AI博士孔令凯将于2026年秋入职港大 tenure-track助理教授",
-        "chinese_title": "哈佛AI博士孔令凯将于2026年秋入职港大 tenure-track助理教授",
-        "original_title": "🎓 Thrilled to share: I'll be joining The University of Hong Kong, School of Computing and Data Science as a Tenure-track Assistant Professor in Fal...",
-        "summary": "孔令凯宣布将于2026年秋季加入香港大学计算与数据科学学院，研究方向为GenAI智能体，正在招收博士生和博士后。",
-        "rating": "B",
-        "score": 74,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "港大近期密集引进AI人才，反映香港在AI人才竞争中的加速布局，可能与内地高校形成人才流动新格局。",
-        "entities": [
-          "Genai",
-          "Harvard",
-          "孔令凯",
-          "香港大学"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/konglingkai_AI/status/2056863673474220356"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739385",
-        "source": "x",
-        "url": "https://x.com/konglingkai_AI/status/2056863673474220356",
-        "event_id": null
-      },
-      {
-        "id": "c25a5d5003d6888b18c24600dbe8493a",
-        "title": "主流视频模型被曝靠视觉幻觉猜声音，1万对偏好数据修复28分",
-        "chinese_title": "主流视频模型被曝靠视觉幻觉猜声音，1万对偏好数据修复28分",
-        "original_title": "turns out, today's video models are mostly just pretending to listen. 👁️🎙️When Vision Speaks for Sound 👁️🎙️ We tested top models (incl...",
-        "summary": "研究发现Gemini等顶级视频模型存在视听Clever Hans效应，通过视觉线索幻觉声音而非真正理解音频，研究者用1万对偏好对齐数据将性能提升28个百分点。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该发现对多模态模型评测标准提出挑战，可能推动音视频联合理解成为新的研究热点和评测维度。",
-        "entities": [
-          "Gemini",
-          "Google",
-          "多模态模型",
-          "视频模型"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Xiaofei_Wen_Mk/status/2056844574988132715"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739420",
-        "source": "x",
-        "url": "https://x.com/Xiaofei_Wen_Mk/status/2056844574988132715",
-        "event_id": null
-      },
-      {
-        "id": "971422a388732429337a8e9f8e9522af",
-        "title": "2B参数视频VLM Marlin开源，性能对标Gemini 2.5 Flash",
-        "chinese_title": "2B参数视频VLM Marlin开源，性能对标Gemini 2.5 Flash",
-        "original_title": "open sourcing Marlin-2B 🐟 a tiny VLM to extract structured information from videos Marlin is finetuned for two questions devs want to ask in their ...",
-        "summary": "Marlin-2B开源发布，专为从视频中提取结构化信息微调，在同类开源模型中表现最佳，仅2B参数即可与Gemini 2.5 Flash竞争。",
+        "id": "5d4b1c2f865e7995dbf4cf093bd2886e",
+        "title": "斯坦福团队发布ESI-BENCH：让AI主动探索空间而非被动观察",
+        "chinese_title": "斯坦福团队发布ESI-BENCH：让AI主动探索空间而非被动观察",
+        "original_title": "RT Yining Hong: Excited to share ESI-BENCH, a benchmark for Embodied Spatial Intelligence! Most spatial reasoning benchmarks assume an oracle observer...",
+        "summary": "斯坦福李飞飞团队发布ESI-BENCH基准测试，首次要求具身智能体通过主动移动和交互来理解空间关系，而非依赖给定的完美视角。该测试涵盖10类任务、3081个实例，旨在推动AI从被动感知向主动空间推理演进。",
         "rating": "A",
         "score": 76,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "小参数视频理解模型降低开发者门槛，可能加速视频AI应用落地，对端侧AI和短视频分析领域影响显著。",
-        "entities": [
-          "Gemini",
-          "Marlin",
-          "Vlm"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/HappyyPablo/status/2056839665551024474"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739431",
-        "source": "x",
-        "url": "https://x.com/HappyyPablo/status/2056839665551024474",
-        "event_id": null
-      },
-      {
-        "id": "59ffde149099c90ef6d952f6d59a9250",
-        "title": "FlashEvolve异步运行时让自进化智能体提速3.5到4.9倍",
-        "chinese_title": "FlashEvolve异步运行时让自进化智能体提速3.5到4.9倍",
-        "original_title": "1/ Recursive Self-Improvement isn't only bottlenecked by smarter algorithms. One of its severe bottlenecks is sync barriers. Presenting FlashEvolve: a...",
-        "summary": "研究者提出FlashEvolve异步运行时，通过消除自进化智能体中的同步屏障瓶颈，使GEPA、ACE等框架运行速度提升3.5至4.9倍。",
-        "rating": "A",
-        "score": 80,
         "type": "research",
         "typeName": "研究成果",
-        "expansion": "自进化智能体是AI Agent前沿方向，速度瓶颈的突破可能加速该领域从研究走向实际应用。",
+        "expansion": "具身智能的感知-行动闭环是机器人落地的关键瓶颈，该基准可能加速家用机器人和自动驾驶的空间理解能力提升，进而影响相关硬件和算法公司。",
         "entities": [
-          "Ace",
-          "Agent",
-          "Flashevolve",
-          "Gepa"
+          "Esi-Bench",
+          "具身智能",
+          "斯坦福",
+          "李飞飞"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/zhenwang9102/status/2056813647570039086"
+            "url": "https://x.com/YejinChoinka/status/2056879657203732509"
           }
         ],
         "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739441",
+        "timestamp": 1779235413,
+        "published_at": "2026-05-20T08:03:33.381779",
         "source": "x",
-        "url": "https://x.com/zhenwang9102/status/2056813647570039086",
+        "url": "https://x.com/YejinChoinka/status/2056879657203732509",
         "event_id": null
       },
       {
-        "id": "88a7346f601708884d47ee1e6c0a0bdf",
-        "title": "Gemini Omni支持多模态参考条件生成，GCN技术路线获新应用",
-        "chinese_title": "Gemini Omni支持多模态参考条件生成，GCN技术路线获新应用",
-        "original_title": "Gemini Omni allows me to step into an alternative timeline where Graph Convolutional Nets (GCNs) made it to the big stage 🙃 Jokes aside: excited to...",
-        "summary": "Google研究员Thomas Kipf分享Gemini Omni在多模态参考条件生成方面的进展，图卷积网络技术以新形式融入大模型体系。",
-        "rating": "B",
-        "score": 74,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "多模态参考条件生成若开放给开发者，可能在创意内容生成领域开辟新应用场景。",
-        "entities": [
-          "Gcn",
-          "Gemini",
-          "Google",
-          "Thomas Kipf"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/tkipf/status/2056811775383982201"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739451",
-        "source": "x",
-        "url": "https://x.com/tkipf/status/2056811775383982201",
-        "event_id": null
-      },
-      {
-        "id": "90d97bdef976c1a6b651bff4345e22a6",
-        "title": "Thinking Machines设立10万美元AI交互研究资助计划",
-        "chinese_title": "Thinking Machines设立10万美元AI交互研究资助计划",
-        "original_title": "Grants for research on interactivity, realtime video/audio full duplex evals, and safety",
-        "summary": "Thinking Machines宣布提供10万美元加计算额度资助，支持人机交互、实时音视频全双工评估和安全领域的研究。",
-        "rating": "B",
-        "score": 69,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该资助计划可能吸引顶尖研究者关注AI交互和安全领域，间接推动相关技术标准和评测体系建立。",
-        "entities": [
-          "Ai安全",
-          "Thinking Machines"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/rown/status/2056809532794527939"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739461",
-        "source": "x",
-        "url": "https://x.com/rown/status/2056809532794527939",
-        "event_id": null
-      },
-      {
-        "id": "e65f867593f78243e02bdef88694cd73",
-        "title": "Google I/O展示Gemini 3.5 Flash，用智能体团队复现AlphaZero",
-        "chinese_title": "Google I/O展示Gemini 3.5 Flash，用智能体团队复现AlphaZero",
-        "original_title": "Proud to have worked on recreating Alphazero. The future is super super exciting 🔥!",
-        "summary": "Google在I/O大会上发布Gemini 3.5 Flash，研究团队使用智能体协作在Antigravity 2.0中复现了原始AlphaZero论文并构建可玩游戏。",
+        "id": "6d49f93acf560d6be556e753624746b1",
+        "title": "AstraFlow开源：仅同步1.1%参数实现分布式强化学习训练",
+        "chinese_title": "AstraFlow开源：仅同步1.1%参数实现分布式强化学习训练",
+        "original_title": "Align with how @cursor_ai has done its RL stage — Astraflow is a new RL engine that enables asynchronous, heterogeneous, and geo-distributed RL in a ...",
+        "summary": "Infini-AI-Lab开源AstraFlow强化学习引擎，采用数据流抽象原生支持异步、异构和地理分布式RL训练。通过稀疏参数同步（仅1.1%模型权重），实现远程部署轻量化，多策略训练速度提升2.7倍。",
         "rating": "A",
-        "score": 80,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Gemini 3.5 Flash的定位和定价策略将直接影响与Claude、GPT系列的市场竞争格局。",
+        "score": 82,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "分布式RL训练成本下降将降低大模型后训练门槛，可能催生更多开源模型通过RLHF追赶闭源模型，影响AIinfra和模型训练服务市场格局。",
         "entities": [
-          "Alphazero",
-          "Antigravity",
-          "Gemini",
-          "Google"
+          "Astraflow",
+          "Cursor",
+          "Fireworks Ai",
+          "Infini-Ai-Lab"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/Swarooprm7/status/2056807607156039995"
+            "url": "https://x.com/BeidiChen/status/2056874479482270106"
           }
         ],
         "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739472",
+        "timestamp": 1779235413,
+        "published_at": "2026-05-20T08:03:33.381804",
         "source": "x",
-        "url": "https://x.com/Swarooprm7/status/2056807607156039995",
+        "url": "https://x.com/BeidiChen/status/2056874479482270106",
         "event_id": null
       },
       {
-        "id": "3c1cd06e62ef7347823d4d5bcdae833f",
-        "title": "Cognition创始人Scott Wu谈用Claude构建Devin，目标让软件开发提速10倍",
-        "chinese_title": "Cognition创始人Scott Wu谈用Claude构建Devin，目标让软件开发提速10倍",
-        "original_title": "Scott Wu (@ScottWu46) runs @cognition, the team behind Devin, an AI software engineer built on Claude. He wants to make building software 10x faster f...",
-        "summary": "Cognition CEO Scott Wu介绍基于Claude构建的AI软件工程师Devin，愿景是让每个工程团队的软件开发效率提升10倍。",
+        "id": "3168502238f00a8772f6c262fa07d2ec",
+        "title": "OpenAI前政策主管Miles Brundage加入Anthropic",
+        "chinese_title": "OpenAI前政策主管Miles Brundage加入Anthropic",
+        "original_title": "Personal update: I've decided to join Anthropic in continuing to be based in SF",
+        "summary": "OpenAI前AGI政策与治理主管Miles Brundage宣布加入Anthropic，继续常驻旧金山。Brundage在OpenAI工作六年，是AI安全与政策领域的重要声音。",
         "rating": "A",
         "score": 81,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "Devin作为AI编程助手的代表产品，其商业化进展将直接影响AI编程工具市场的竞争态势和开发者工作流变革。",
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "Anthropic持续吸纳OpenAI核心人才，强化其在AI安全领域的声誉和研发实力，可能进一步拉大两家公司在安全研究上的差距。",
         "entities": [
-          "Claude",
-          "Cognition",
-          "Devin",
-          "Scott Wu"
+          "Anthropic",
+          "Miles Brundage",
+          "OpenAI"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/claudeai/status/2056805728774402428"
+            "url": "https://x.com/Miles_Brundage/status/2056872926998352334"
           }
         ],
         "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739483",
+        "timestamp": 1779235413,
+        "published_at": "2026-05-20T08:03:33.381821",
         "source": "x",
-        "url": "https://x.com/claudeai/status/2056805728774402428",
+        "url": "https://x.com/Miles_Brundage/status/2056872926998352334",
         "event_id": null
       },
       {
-        "id": "e438a9fb85a09e24fe8d424d5df52ab9",
-        "title": "开发者从零手写DreamerV3世界模型，纯想象训练人形机器人行走",
-        "chinese_title": "开发者从零手写DreamerV3世界模型，纯想象训练人形机器人行走",
-        "original_title": "RL agents need millions of real interactions to learn but for robotics, that's either extremely slow or expensive World models let agents learn by ima...",
-        "summary": "一位开发者不依赖PyTorch从零实现DreamerV3世界模型，包括自研自动微分引擎、RSSM、分布式critic等，完全在想象中训练出人形机器人行走策略。",
-        "rating": "A",
-        "score": 78,
+        "id": "3acd128b75da4a2576d4e96ab05b77f8",
+        "title": "开发者实测：OpenAI Codex一周自动赚取近百美元开源赏金",
+        "chinese_title": "开发者实测：OpenAI Codex一周自动赚取近百美元开源赏金",
+        "original_title": "Codex has officially paid for itself on the $100 plan.. A week ago I asked it to go make me $5. In one day, it found several legitimate open-source pa...",
+        "summary": "一名开发者让Codex自主寻找并完成开源付费任务，一周内通过提交PR和处理维护者反馈，累计获得98.68美元报酬。按此速度估算月收入可达近千美元，且部分维护者未意识到工作由AI完成。",
+        "rating": "A+",
+        "score": 88,
         "type": "tool",
         "typeName": "工具技巧",
-        "expansion": "世界模型+纯想象训练是机器人学习的前沿方向，该开源实现可能降低研究者入门门槛，加速相关算法迭代。",
+        "expansion": "AI代理开始具备自主创收能力，可能重塑开源贡献模式和自由开发者经济，同时引发关于AI替代人类编码工作的讨论。",
         "entities": [
-          "Dreamerv3",
-          "世界模型",
+          "Codex",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Chrisgpt/status/2056869230339821731"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779235413,
+        "published_at": "2026-05-20T08:03:33.381832",
+        "source": "x",
+        "url": "https://x.com/Chrisgpt/status/2056869230339821731",
+        "event_id": null
+      },
+      {
+        "id": "2423ad1e3e9449fe6e94257e29ca4819",
+        "title": "华人AI研究者chinesegon加入Anthropic",
+        "chinese_title": "华人AI研究者chinesegon加入Anthropic",
+        "original_title": "BREAKING: chinesegon has joined anthropic",
+        "summary": "AI研究者chinesegon宣布加入Anthropic。此前其在社交媒体活跃分享AI研究动态，加入Anthropic后将参与该公司的大模型研发工作。",
+        "rating": "B",
+        "score": 65,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "Anthropic近期密集招募人才，加上此前Miles Brundage等加入，显示其在人才争夺中攻势明显，可能加速Claude系列模型的迭代。",
+        "entities": [
+          "Anthropic",
+          "Chinesegon"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/chinesegon/status/2056862545118699583"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779235413,
+        "published_at": "2026-05-20T08:03:33.381844",
+        "source": "x",
+        "url": "https://x.com/chinesegon/status/2056862545118699583",
+        "event_id": null
+      },
+      {
+        "id": "78ce38322d33ff7029476d966762f9ac",
+        "title": "模拟蒸馏新方法：让机器人从错误仿真中学会真实世界适应",
+        "chinese_title": "模拟蒸馏新方法：让机器人从错误仿真中学会真实世界适应",
+        "original_title": "Punchline: distill world models from simulation to enable fast, stable real-world robot adaptation. Simulation is nearly always wrong. But in Simulati...",
+        "summary": "研究者提出Simulation Distillation方法，通过从仿真中蒸馏世界模型，使机器人在真实环境中的适应变得简单稳定。核心思路是调整仿真预训练方式，而非追求仿真本身完美。",
+        "rating": "B",
+        "score": 74,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "仿真到现实的迁移是机器人训练的核心难题，该方法若验证有效，将降低机器人数据采集成本，加速具身智能商业化落地。",
+        "entities": [
+          "Simulation Distillation",
           "机器人"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/_pavidhiman/status/2056782645153968356"
+            "url": "https://x.com/abhishekunique7/status/2056843086517699050"
           }
         ],
         "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739492",
+        "timestamp": 1779235413,
+        "published_at": "2026-05-20T08:03:33.381854",
         "source": "x",
-        "url": "https://x.com/_pavidhiman/status/2056782645153968356",
+        "url": "https://x.com/abhishekunique7/status/2056843086517699050",
         "event_id": null
       },
       {
-        "id": "c7d09c7bc38615b86ed94e644fb957d6",
-        "title": "研究证实RoPE在长上下文存在内在局限，位置与token无法区分",
-        "chinese_title": "研究证实RoPE在长上下文存在内在局限，位置与token无法区分",
-        "original_title": "RT Hao Peng: Excited to share our new paper: RoPE Distinguishes Neither Positions Nor Tokens in Long Contexts, Provably LLMs often fail on inputs well...",
-        "summary": "新论文从理论上证明RoPE位置编码在长上下文中存在根本性限制，同一token在不同位置可能获得相同注意力权重，解释了LLM长文本失败的内在原因。",
+        "id": "74e1f3b64648b4331c15e2a76de2eb85",
+        "title": "谷歌Gemini Omni上线：结合物理直觉生成可推理视频场景",
+        "chinese_title": "谷歌Gemini Omni上线：结合物理直觉生成可推理视频场景",
+        "original_title": "Gemini Omni doesn't just build scenes that look real, it reasons about what should happen next. It combines an intuitive understanding of physics with...",
+        "summary": "谷歌CEO皮查伊宣布Gemini Omni正式推出，该模型不仅生成逼真场景，还能基于物理规律、历史知识和文化背景推理后续发展。首批向Google AI Plus/Pro/Ultra用户开放视频输出功能，本周登陆YouTube Shorts。",
         "rating": "A",
-        "score": 79,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该发现可能推动新的位置编码方案研究，对长上下文模型架构设计产生深远影响。",
+        "score": 86,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "视频生成模型加入物理推理能力，可能颠覆影视制作、游戏开发和广告创意行业，同时与OpenAI Sora、Runway等形成直接竞争。",
         "entities": [
-          "LLM",
-          "Rope",
-          "位置编码"
+          "Gemini",
+          "Google",
+          "Sundar Pichai",
+          "Youtube"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/jeremyphoward/status/2056869310673654112"
+            "url": "https://x.com/sundarpichai/status/2056816915717443862"
           }
         ],
         "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739502",
+        "timestamp": 1779235413,
+        "published_at": "2026-05-20T08:03:33.381866",
         "source": "x",
-        "url": "https://x.com/jeremyphoward/status/2056869310673654112",
+        "url": "https://x.com/sundarpichai/status/2056816915717443862",
         "event_id": null
       },
       {
-        "id": "41df422f43eea18a7de2a65baccbb1c2",
-        "title": "Nous Research发布CNA方法，精准切除LLM特定行为不改变整体能力",
-        "chinese_title": "Nous Research发布CNA方法，精准切除LLM特定行为不改变整体能力",
-        "original_title": "Today we release Contrastive Neuron Attribution (CNA), a method for steering LLM behavior by identifying and ablating sparse circuits in the MLP basis...",
-        "summary": "Nous Research提出对比神经元归因方法CNA，通过识别并消融MLP中0.1%的关键神经元即可移除目标行为，无需训练稀疏自编码器或修改权重。",
-        "rating": "A",
-        "score": 81,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "CNA为模型安全对齐和有害行为移除提供了轻量级工具，可能在AI安全领域获得广泛应用。",
-        "entities": [
-          "Ai安全",
-          "Cna",
-          "LLM",
-          "Nous Research"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/NousResearch/status/2056778746716107193"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739512",
-        "source": "x",
-        "url": "https://x.com/NousResearch/status/2056778746716107193",
-        "event_id": null
-      },
-      {
-        "id": "d917ea65fdb426f3bbb8c07d34968101",
-        "title": "DeepSeek大规模招聘北京Agent方向人才，deepcode产品或即将推出",
-        "chinese_title": "DeepSeek大规模招聘北京Agent方向人才，deepcode产品或即将推出",
-        "original_title": "点开 DeepSeek JD，一堆北京 Agent 扑面而来🤯",
-        "summary": "DeepSeek招聘页面显示大量北京Agent相关岗位，外界推测其代码智能体产品deepcode可能即将正式发布。",
-        "rating": "A+",
-        "score": 87,
+        "id": "03c61fc1f8fec2b0564cd4b0e43268c7",
+        "title": "Sam Altman发文暗示将调整Codex使用限制",
+        "chinese_title": "Sam Altman发文暗示将调整Codex使用限制",
+        "original_title": "RT Sam Altman: if this tweet gets 1 like, tibo will reset codex rate limits",
+        "summary": "OpenAI官方账号转发Sam Altman推文，称如果该推文获得1个点赞，Tibo将重置Codex的速率限制。该推文以玩笑方式回应用户对Codex使用额度的不满。",
+        "rating": "B",
+        "score": 69,
         "type": "industry",
         "typeName": "行业动态",
-        "expansion": "DeepSeek进入Agent赛道将加剧国内AI编程工具竞争，可能对Cursor、GitHub Copilot等形成挑战。",
+        "expansion": "Codex作为OpenAI最新推出的编程代理产品，其使用限制政策直接影响开发者体验，OpenAI可能借此测试用户反馈并调整商业化策略。",
         "entities": [
-          "Agent",
-          "DeepSeek",
-          "Deepcode"
+          "Codex",
+          "OpenAI",
+          "Sam Altman"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/sheriyuo/status/2056709606571954330"
+            "url": "https://x.com/OpenAI/status/2056805428261183789"
           }
         ],
         "sources": 1,
-        "timestamp": 1779232910,
-        "published_at": "2026-05-20T07:21:50.739531",
+        "timestamp": 1779235413,
+        "published_at": "2026-05-20T08:03:33.381876",
         "source": "x",
-        "url": "https://x.com/sheriyuo/status/2056709606571954330",
+        "url": "https://x.com/OpenAI/status/2056805428261183789",
         "event_id": null
       },
       {
@@ -23050,6 +23312,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-20T07:21:50.817741",
-  "total_news": 791
+  "last_updated": "2026-05-20T08:04:09.688062",
+  "total_news": 800
 }
