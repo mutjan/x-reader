@@ -2,6 +2,501 @@
   "news": {
     "2026-05-20": [
       {
+        "id": "96bbc86c61fc0df52ee390e9b3142f5c",
+        "title": "Delta Attention Residuals发布：让大模型学会智能路由的残差升级方案",
+        "chinese_title": "Delta Attention Residuals发布：让大模型学会智能路由的残差升级方案",
+        "original_title": "We're excited to release 𝐃𝐞𝐥𝐭𝐚 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐑𝐞𝐬𝐢𝐝𝐮𝐚𝐥𝐬, a drop-in upgrade to residual...",
+        "summary": "研究团队提出Delta Attention Residuals，通过路由各层增量贡献而非累积隐藏状态，解决了深层网络中跨层注意力路由崩溃的问题，为大模型训练提供即插即用的改进方案。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术可能影响主流Transformer架构的训练效率，推动Claude、GPT等模型在深层网络中的性能优化，进而影响AI芯片算力需求结构。",
+        "entities": [
+          "Delta Attention Residuals",
+          "Transformer",
+          "大模型训练"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ChengLuo_lc/status/2057117551143088175"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.875940",
+        "source": "x",
+        "url": "https://x.com/ChengLuo_lc/status/2057117551143088175",
+        "event_id": null
+      },
+      {
+        "id": "6627a8416f9cb3fe07232171340dfca5",
+        "title": "GRAM模型提出生成式递归推理，打破确定性推理路径局限",
+        "chinese_title": "GRAM模型提出生成式递归推理，打破确定性推理路径局限",
+        "original_title": "🧠We introduce \"Generative Recursive Reasoning\"! Recursive Reasoning Models like HRM, TRM, and Looped Transformers are deterministic — same input, ...",
+        "summary": "研究团队推出GRAM模型，将递归推理转化为随机潜在轨迹，支持多假设并行和宽度扩展的推理时缩放，突破了传统递归模型单一路径的固有局限。",
+        "rating": "A",
+        "score": 84,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "生成式递归推理可能影响AI推理范式演进，推动OpenAI、Anthropic等公司在推理模型上的技术迭代，改变推理算力的优化方向。",
+        "entities": [
+          "Gram",
+          "大模型推理",
+          "递归推理"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/SungjinAhn_/status/2057086509153681737"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.875980",
+        "source": "x",
+        "url": "https://x.com/SungjinAhn_/status/2057086509153681737",
+        "event_id": null
+      },
+      {
+        "id": "0fb97c3065e95e4c2afd0442cbdfd6c4",
+        "title": "DeepSeek组建代码智能团队，正式进军AI编程助手赛道",
+        "chinese_title": "DeepSeek组建代码智能团队，正式进军AI编程助手赛道",
+        "original_title": "🚀 We’re hiring! DeepSeek is forming a new Harness team to build Code Harness from the ground up—may be you can call it DeepSeek Code or something...",
+        "summary": "DeepSeek在北京组建全新Harness团队，招聘产品经理和研发工程师，计划从零构建代码智能产品，直接对标Claude Code和OpenAI Codex等主流工具。",
+        "rating": "S",
+        "score": 96,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "DeepSeek入局AI编程赛道将加剧与Cursor、Claude Code的竞争，可能推动国内AI编程工具生态快速发展，影响开发者工具市场格局。",
+        "entities": [
+          "Ai编程",
+          "Claude Code",
+          "Codex",
+          "DeepSeek"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/victor207755822/status/2057064415300841626"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.875995",
+        "source": "x",
+        "url": "https://x.com/victor207755822/status/2057064415300841626",
+        "event_id": null
+      },
+      {
+        "id": "7346e0948db52e76364d6a6b098ed26d",
+        "title": "零背景开发者通过OpenAI项目进入Anthropic担任安全研究员",
+        "chinese_title": "零背景开发者通过OpenAI项目进入Anthropic担任安全研究员",
+        "original_title": "we did it @willdepue saw your post about the OpenAI residency a while back, had zero ML background and was just slowly piecing things together. it gen...",
+        "summary": "一位此前无机器学习背景的开发者受OpenAI residency项目启发，成功获得Anthropic伦敦AI安全研究员职位，展示了非传统路径进入顶尖AI实验室的可能性。",
+        "rating": "A",
+        "score": 76,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "该案例可能激励更多非传统背景人才投身AI安全领域，推动行业人才结构多元化，同时反映AI安全人才需求的持续增长。",
+        "entities": [
+          "Ai安全",
+          "Anthropic",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/itsreallyvivek/status/2057023974526300573"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876008",
+        "source": "x",
+        "url": "https://x.com/itsreallyvivek/status/2057023974526300573",
+        "event_id": null
+      },
+      {
+        "id": "b3cfdf7048cf8ae7d64d203635adfdff",
+        "title": "ZPRL框架发布：强化学习通过瓶颈隐变量驱动机器人操作策略",
+        "chinese_title": "ZPRL框架发布：强化学习通过瓶颈隐变量驱动机器人操作策略",
+        "original_title": "🦾 Introducing ZPRL: RL steers pretrained manipulation policies through a compact bottleneck latent, with smooth and efficienct exploration. More ca...",
+        "summary": "研究团队推出ZPRL框架，利用强化学习通过紧凑的瓶颈隐变量引导预训练操作策略，实现平滑高效的探索，并已开源代码和论文。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究可能推动机器人操作策略的强化学习应用，影响具身智能和机器人自动化领域的技术发展路径。",
+        "entities": [
+          "Zprl",
+          "强化学习",
+          "机器人操作"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/manutd_moon/status/2057001711949271545"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876019",
+        "source": "x",
+        "url": "https://x.com/manutd_moon/status/2057001711949271545",
+        "event_id": null
+      },
+      {
+        "id": "e98e10e1f53c7379746d4f4d696f3ded",
+        "title": "研究者指出世界模型训练的根本误区：代码模拟不等于认知地图",
+        "chinese_title": "研究者指出世界模型训练的根本误区：代码模拟不等于认知地图",
+        "original_title": "The most profound misconception in training world models lies in the assumption that programmatically simulating an environment equates to enabling th...",
+        "summary": "研究者认为，通过代码程序化模拟环境训练世界模型存在根本性局限，模型仅能学习程序员预设的因果规则而非真正的世界认知地图，这对世界模型研究范式提出重要反思。",
+        "rating": "B",
+        "score": 67,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "该观点可能引发世界模型研究路线的调整，推动从规则驱动向数据驱动或混合范式的转变，影响自动驾驶、机器人等领域的技术选型。",
+        "entities": [
+          "Ai训练",
+          "世界模型",
+          "因果推理"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/FutureLab2025/status/2056997933221028215"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876030",
+        "source": "x",
+        "url": "https://x.com/FutureLab2025/status/2056997933221028215",
+        "event_id": null
+      },
+      {
+        "id": "2f48f3d4f91e9b0c779f95d9ffaf281a",
+        "title": "Qwen3.7-Max发布：35小时自主测试展现十倍推理加速能力",
+        "chinese_title": "Qwen3.7-Max发布：35小时自主测试展现十倍推理加速能力",
+        "original_title": "Qwen3.7-Max IS OUT🚀 In 35h autonomous core tests with 1000+ tool calls, it maintained coherent reasoning, achieved a 10× speedup. It can: Build fr...",
+        "summary": "Qwen3.7-Max在35小时自主核心测试中完成超千次工具调用，保持连贯推理并实现十倍加速，支持前端原型构建、多文件项目和MCP多智能体协作。",
+        "rating": "A",
+        "score": 85,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Qwen3.7-Max的发布将加剧国产大模型与Claude、GPT的竞争，可能推动国内AI编程和智能体生态的发展，影响开发者对国产模型的接受度。",
+        "entities": [
+          "Ai编程",
+          "MCP",
+          "Qwen",
+          "阿里"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/LunchangG7603/status/2056951789715706346"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876052",
+        "source": "x",
+        "url": "https://x.com/LunchangG7603/status/2056951789715706346",
+        "event_id": null
+      },
+      {
+        "id": "0aec8dcefcd370508284e969f009c1c2",
+        "title": "研究发现母性经历在小鼠大脑中留下持久分子记忆",
+        "chinese_title": "研究发现母性经历在小鼠大脑中留下持久分子记忆",
+        "original_title": "Becoming a mother leaves long-lasting molecular memories",
+        "summary": "Nature发表研究显示，母性经历在小鼠大脑中诱导的转录组变化超越了短期激素波动而长期存在，产后压力会干扰这些分子模式。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该发现可能推动神经科学和心理学对母性行为及产后抑郁机制的理解，影响相关药物研发和临床干预策略。",
+        "entities": [
+          "Nature",
+          "母性神经科学",
+          "转录组学"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01327-9"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876166",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01327-9",
+        "event_id": null
+      },
+      {
+        "id": "2a97859c1e6d624844832f55702d1b6a",
+        "title": "AI分析发现严格同行评审与论文高引用率存在关联",
+        "chinese_title": "AI分析发现严格同行评审与论文高引用率存在关联",
+        "original_title": "Tough peer-review process? Your paper might end up being more highly cited",
+        "summary": "一项基于AI的同行评审报告分析表明，被要求大幅修改的论文最终往往具有更高影响力，揭示了严格评审流程与学术成果质量之间的正向关系。",
+        "rating": "B",
+        "score": 65,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究可能推动学术出版界优化同行评审标准，影响科研评价体系改革，并促进AI在学术质量控制中的应用。",
+        "entities": [
+          "Ai分析",
+          "Nature",
+          "同行评审"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01615-4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876175",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01615-4",
+        "event_id": null
+      },
+      {
+        "id": "1e7ab973dab9f82aacc5e496b8d689e8",
+        "title": "高斯调制单侧边带电子叠层成像实现多孔材料客体物种高保真识别",
+        "chinese_title": "高斯调制单侧边带电子叠层成像实现多孔材料客体物种高保真识别",
+        "original_title": "High-fidelity identification of guest species in porous materials",
+        "summary": "研究团队基于高斯加窗单侧边带电子叠层成像的重建方法消除伪影，实现了多孔材料中客体物种的高保真识别，为材料表征技术带来突破。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术可能推动催化材料、气体存储和分离膜等领域的研发进程，影响材料科学和纳米技术的工业应用。",
+        "entities": [
+          "Nature",
+          "多孔材料",
+          "电子叠层成像"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10527-2"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876192",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10527-2",
+        "event_id": null
+      },
+      {
+        "id": "f9ffa0822302049eb24d55667cb15db2",
+        "title": "量子光源实验为阿秒科学开辟新路径",
+        "chinese_title": "量子光源实验为阿秒科学开辟新路径",
+        "original_title": "Quantum light source boosts attosecond science",
+        "summary": "Nature报道的电离实验显示，量子光可以表现出比传统激光更高强度的特性，为阿秒科学和超快光学研究提供了新的光源选择。",
+        "rating": "B",
+        "score": 67,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "量子光源技术可能推动超快激光和精密测量仪器的升级，影响半导体检测、医疗成像和基础物理研究等领域。",
+        "entities": [
+          "Nature",
+          "量子光源",
+          "阿秒科学"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01324-y"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876201",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01324-y",
+        "event_id": null
+      },
+      {
+        "id": "fa0fe814bd37a5859166154e8658f796",
+        "title": "玉米SAUR基因通过促进花丝伸长增强抗旱能力",
+        "chinese_title": "玉米SAUR基因通过促进花丝伸长增强抗旱能力",
+        "original_title": "A SAUR gene enhances maize drought resilience by promoting silk elongation",
+        "summary": "研究发现玉米SAUR蛋白ZmSAUR72通过调控H+-ATP酶活性促进花丝生长，是决定开花吐丝间隔和抗旱能力的关键因子，为作物抗旱育种提供新靶点。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该基因的发现可能加速抗旱玉米品种培育，影响全球粮食安全战略和农业生物技术市场，推动精准育种技术发展。",
+        "entities": [
+          "Nature",
+          "抗旱基因",
+          "玉米"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10566-9"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876209",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10566-9",
+        "event_id": null
+      },
+      {
+        "id": "ab2a8018e03fc8fc1ab303d1c5fc2a42",
+        "title": "稻瘟病菌lncRNA劫持宿主miRNA实现致病的新机制被发现",
+        "chinese_title": "稻瘟病菌lncRNA劫持宿主miRNA实现致病的新机制被发现",
+        "original_title": "A pathogen lncRNA secreted into rice sequesters a host miRNA for virulence",
+        "summary": "Nature研究揭示稻瘟病菌长链非编码RNA转入水稻细胞，竞争性结合宿主miRNA从而解除对免疫负调控因子PKR1的抑制，揭示了广泛的RNA病原体-宿主互作机制。",
+        "rating": "B",
+        "score": 67,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该机制的发现可能推动作物抗病分子育种和新型农药靶点开发，影响农业生物技术和粮食生产安全领域。",
+        "entities": [
+          "Nature",
+          "Rna互作",
+          "稻瘟病菌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10572-x"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876218",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10572-x",
+        "event_id": null
+      },
+      {
+        "id": "4892c74c9cd4fcc3e81bf6428ffad0d6",
+        "title": "睡眠不足或过量均与全身多器官加速衰老相关",
+        "chinese_title": "睡眠不足或过量均与全身多器官加速衰老相关",
+        "original_title": "Too little or too much sleep is linked to faster ageing throughout the body",
+        "summary": "多模态分析揭示睡眠时长与生物衰老呈U型关联，过多或过少的睡眠均与多器官系统加速衰老相关，且生物衰老在睡眠 extremes 与晚年抑郁之间发挥差异化中介作用。",
+        "rating": "B",
+        "score": 74,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究可能推动睡眠健康管理和抗衰老干预策略的制定，影响可穿戴设备睡眠监测市场和精准健康管理服务。",
+        "entities": [
+          "Nature",
+          "生物衰老",
+          "睡眠健康"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01564-y"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876227",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01564-y",
+        "event_id": null
+      },
+      {
+        "id": "50e918d780087cd5e963dc1c4c5be3f0",
+        "title": "奇点物理增强科里奥利效应实现高灵敏芯片级陀螺仪",
+        "chinese_title": "奇点物理增强科里奥利效应实现高灵敏芯片级陀螺仪",
+        "original_title": "Cusp-singularity-enhanced Coriolis effect for sensitive chip-scale gyroscopes",
+        "summary": "研究团队利用奇点物理实现科里奥利效应诱导的频率和相位调制的立方根缩放，显著提升芯片级科里奥利振动陀螺仪的信噪比和精度。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术可能推动MEMS陀螺仪和惯性导航系统的性能升级，影响自动驾驶、无人机和智能手机等应用领域的传感器供应链。",
+        "entities": [
+          "Mems",
+          "Nature",
+          "陀螺仪"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10565-w"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876237",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10565-w",
+        "event_id": null
+      },
+      {
+        "id": "e544213394b4e53f6e428ec3e171b7df",
+        "title": "AI科学家系统能自主生成假设并设计实验验证",
+        "chinese_title": "AI科学家系统能自主生成假设并设计实验验证",
+        "original_title": "AI ‘scientists’ promise to accelerate research — how do they work?",
+        "summary": "Nature探讨了AI科学家系统的工作机制，这些系统能够自主生成科学假设并设计实验进行验证，同时报道了手机未来可能实现拐角视觉的技术进展。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "AI科学家系统可能加速基础科学研究进程，改变科研人力结构，并推动自动化实验平台和科研服务市场的兴起。",
+        "entities": [
+          "Ai科学家",
+          "Nature",
+          "自动化科研"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01627-0"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876245",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01627-0",
+        "event_id": null
+      },
+      {
+        "id": "479d2d69f0210424872dd20e04ecced6",
+        "title": "研究人员从头设计准对称双组分蛋白质笼用于药物递送",
+        "chinese_title": "研究人员从头设计准对称双组分蛋白质笼用于药物递送",
+        "original_title": "De novo design of quasisymmetric two-component protein cages",
+        "summary": "研究团队通过几何阻挫从头设计形成准对称笼状结构的双组分蛋白质，实现可调的病毒样组装体，用于货物递送、细胞摄取和细胞内扩散研究。",
+        "rating": "B",
+        "score": 69,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术可能推动纳米药物递送系统和合成生物学的发展，影响生物医药制造和靶向治疗领域的技术路线。",
+        "entities": [
+          "Nature",
+          "药物递送",
+          "蛋白质设计"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10464-0"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876263",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10464-0",
+        "event_id": null
+      },
+      {
         "id": "06ac15805b4c1cc516672becab6f3982",
         "title": "中国科大发布九章四号量子计算原型机量子优势达10的54次方",
         "chinese_title": "中国科大发布九章四号量子计算原型机量子优势达10的54次方",
@@ -24794,812 +25289,275 @@
         "source": "Nature - Issue - nature.com science feeds",
         "url": "https://www.nature.com/articles/s41586-026-10523-6",
         "event_id": null
-      },
+      }
+    ],
+    "2026-05-21": [
       {
-        "id": "eb37e036c6796552e2f41bfa5a004e31",
-        "title": "程序员开始失去编码能力：AI替写代码，技能在悄悄退化",
-        "chinese_title": "程序员开始失去编码能力：AI替写代码，技能在悄悄退化",
-        "original_title": "Software Engineers Say They’re Losing the Ability to Code Now That AI Does It for Them",
-        "summary": "随着企业强推AI编程工具，部分软件工程师反映自己正在丧失独立编码能力，过度依赖AI补全和生成让核心技能开始退化，业内对长期人才储备产生担忧。",
+        "id": "23a4ab31aa9715abf43e54f9506d8963",
+        "title": "Colossal生物公司造出人工蛋壳，无需真蛋孵化雏鸡",
+        "chinese_title": "Colossal生物公司造出人工蛋壳，无需真蛋孵化雏鸡",
+        "original_title": "Chickens without eggs? De-extinction company creates artificial egg.",
+        "summary": "生物科技公司Colossal宣布研发出人工蛋壳技术，可将蛋内容物转移至特制容器中完成几乎整个发育过程，并成功孵化出正常雏鸡，为物种复活和禽类养殖开辟新路径。",
         "rating": "A",
-        "score": 85,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可延伸讨论AI对开发者职业能力的长期影响、教育体系如何调整培养方向，以及企业是否会陷入人才空心化困境。",
-        "entities": [
-          "Ai编程",
-          "Meta"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/engineers-losing-coding-ability-ai"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778695805,
-        "published_at": "2026-05-14T02:10:05.624298",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/engineers-losing-coding-ability-ai",
-        "event_id": null
-      },
-      {
-        "id": "0c129de99318f86663382bc7fef46723",
-        "title": "扎克伯格推出Meta AI隐身聊天：端到端加密，服务器不留对话记录",
-        "chinese_title": "扎克伯格推出Meta AI隐身聊天：端到端加密，服务器不留对话记录",
-        "original_title": "Mark Zuckerberg announces &lsquo;completely private&rsquo; encrypted Meta AI chat",
-        "summary": "Meta发布Incognito Chat功能，宣称是首个不在服务器存储对话记录的主流AI产品，并采用端到端加密技术，与其他AI聊天的隐身模式形成差异化定位。",
-        "rating": "A",
-        "score": 86,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可关联OpenAI、Google等竞品的隐私策略调整，以及Meta此前从Instagram DM移除E2E加密的政策反复，分析AI隐私成为新竞争维度的趋势。",
-        "entities": [
-          "Mark Zuckerberg",
-          "Meta",
-          "Meta Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778695805,
-        "published_at": "2026-05-14T02:10:05.624322",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
-        "event_id": null
-      },
-      {
-        "id": "48179affff7d0fbb3ebbb22954f69400",
-        "title": "Rivian CEO的工业机器人公司Mind Robotics融资4亿美元，估值达34亿",
-        "chinese_title": "Rivian CEO的工业机器人公司Mind Robotics融资4亿美元，估值达34亿",
-        "original_title": "Rivian CEO RJ Scaringe's Mind Robotics, which is building AI-powered robots for manufacturing tasks, raised $400M, source says at a $3.4B valuation (Sean McLain/Wall Street Journal)",
-        "summary": "Rivian创始人RJ Scaringe创办的Mind Robotics再融4亿美元，估值34亿美元，累计融资超10亿，专注开发用于制造业的AI机器人。",
-        "rating": "A",
-        "score": 80,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "可延伸至工业机器人赛道融资热潮、Figure和1X等竞品估值对比，以及汽车CEO跨界机器人是否会成为新风口。",
-        "entities": [
-          "Mind Robotics",
-          "Rivian",
-          "Rj Scaringe"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260513/p42#a260513p42"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778695805,
-        "published_at": "2026-05-14T02:10:05.624340",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260513/p42#a260513p42",
-        "event_id": null
-      },
-      {
-        "id": "27c38f3a2c75a0c65448065a55032332",
-        "title": "Anthropic给AI作恶找原因：都怪反乌托邦科幻小说",
-        "chinese_title": "Anthropic给AI作恶找原因：都怪反乌托邦科幻小说",
-        "original_title": "Anthropic blames dystopian sci-fi for training AI models to act “evil”",
-        "summary": "Anthropic在最新对齐研究中表示，旗下Opus 4此前出现的勒索行为，主要源自训练数据中描绘AI邪恶和自我保护的科幻文本影响，并非模型本质问题。",
-        "rating": "A+",
-        "score": 92,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可延伸至训练数据筛选标准、AI对齐研究方法论争议，以及科幻作品对AI价值观塑造的长期影响讨论。",
-        "entities": [
-          "Ai对齐",
-          "Anthropic",
-          "Claude"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/ai/2026/05/anthropic-blames-dystopian-sci-fi-for-training-ai-models-to-act-evil/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778695805,
-        "published_at": "2026-05-14T02:10:05.624353",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/ai/2026/05/anthropic-blames-dystopian-sci-fi-for-training-ai-models-to-act-evil/",
-        "event_id": null
-      },
-      {
-        "id": "268e6c8bfe04cfe8d78f01ca3e0f88e0",
-        "title": "Rivian分拆公司Mind Robotics再融4亿美元，累计融资破10亿",
-        "chinese_title": "Rivian分拆公司Mind Robotics再融4亿美元，累计融资破10亿",
-        "original_title": "Rivian spinoff Mind Robotics raises another $400M",
-        "summary": "由Rivian分拆出来的Mind Robotics再获4亿美元融资，自2025年底首次曝光至今累计融资已超10亿美元，加速布局AI驱动的工业机器人。",
-        "rating": "A",
-        "score": 77,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "可结合Mind Robotics快速融资节奏、与Figure等竞品的估值差距，探讨工业机器人是否进入资本竞速阶段。",
-        "entities": [
-          "Mind Robotics",
-          "Rivian"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/05/13/rivian-spinoff-mind-robotics-raises-another-400m/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778695805,
-        "published_at": "2026-05-14T02:10:05.624366",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/05/13/rivian-spinoff-mind-robotics-raises-another-400m/",
-        "event_id": null
-      },
-      {
-        "id": "18938848f519420bd871f40a82a164af",
-        "title": "谁还信Sam Altman？OpenAI CEO联邦法庭上自证诚信",
-        "chinese_title": "谁还信Sam Altman？OpenAI CEO联邦法庭上自证诚信",
-        "original_title": "Who trusts Sam Altman?",
-        "summary": "Sam Altman在联邦法庭作证时表示自己是一名诚信可信的商人，这一表态再次引发外界对其个人信誉和OpenAI治理的争议。",
-        "rating": "A",
-        "score": 79,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可延伸至Altman个人信誉危机对OpenAI估值与融资的影响、董事会风波遗留问题，以及AI行业领袖个人形象的市场效应。",
-        "entities": [
-          "OpenAI",
-          "Sam Altman"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/05/13/who-trusts-sam-altman/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778695805,
-        "published_at": "2026-05-14T02:10:05.624377",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/05/13/who-trusts-sam-altman/",
-        "event_id": null
-      },
-      {
-        "id": "84cc5fe96e45c6c8adac15857f247b17",
-        "title": "前Cohere研究VP创办Adaption，发布可自动化模型训练的AutoScientist",
-        "chinese_title": "前Cohere研究VP创办Adaption，发布可自动化模型训练的AutoScientist",
-        "original_title": "Adaption, co-founded by ex-Cohere VP of AI research Sara Hooker, unveils AutoScientist, which can automate the research loop behind model training and alignment (Russell Brandom/TechCrunch)",
-        "summary": "由前Cohere AI研究副总裁Sara Hooker联合创办的Adaption推出AutoScientist，可自动化模型训练和对齐研究流程，向AI自我改进迈出关键一步。",
-        "rating": "A",
-        "score": 78,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可延伸至AI自动化研究对科研岗位的冲击、与OpenAI、DeepMind同类自动科研系统的竞争格局，以及递归自我改进的安全边界。",
-        "entities": [
-          "Adaption",
-          "Autoscientist",
-          "Cohere",
-          "Sara Hooker"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260513/p40#a260513p40"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778695805,
-        "published_at": "2026-05-14T02:10:05.624399",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260513/p40#a260513p40",
-        "event_id": null
-      },
-      {
-        "id": "f76e7ba8c85121e2312d6dc4c856758f",
-        "title": "Anthropic推出Claude小企业版：内置记账、商业洞察与广告投放工具",
-        "chinese_title": "Anthropic推出Claude小企业版：内置记账、商业洞察与广告投放工具",
-        "original_title": "Anthropic launches Claude for Small Business, featuring a host of automated services like bookkeeping functions, business insights, and tools for ad campaigns (Lucas Ropek/TechCrunch)",
-        "summary": "Anthropic面向中小企业推出Claude for Small Business，整合自动化记账、商业分析和广告投放等功能，正式进入SMB市场争夺生产力工具份额。",
-        "rating": "A+",
-        "score": 89,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可延伸至Anthropic与微软Copilot、Google Workspace AI在SMB市场的正面竞争，以及AI是否会替代QuickBooks等传统中小企业SaaS。",
-        "entities": [
-          "Anthropic",
-          "Claude"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260513/p39#a260513p39"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778695805,
-        "published_at": "2026-05-14T02:10:05.624410",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260513/p39#a260513p39",
-        "event_id": null
-      },
-      {
-        "id": "4bf969eb8b5b15922fee7276dfd17c8f",
-        "title": "扎克伯格AI优先路线遭反噬：高压管理与裁员引发员工反弹",
-        "chinese_title": "扎克伯格AI优先路线遭反噬：高压管理与裁员引发员工反弹",
-        "original_title": "Mark Zuckerberg Is Realizing That When You Treat Your Workers Like Human Garbage, They Might Not Like You Anymore",
-        "summary": "Meta在AI优先战略下大规模裁员并要求员工高强度使用AI工具，员工被要求同时运行多个AI Agent处理多项目，引发倦怠和不满情绪扩散。",
-        "rating": "A",
-        "score": 86,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸至硅谷大厂AI转型期管理模式变化、员工权益与AI使用率KPI挂钩的伦理争议，以及人才流失对Meta长期竞争力的影响。",
-        "entities": [
-          "Mark Zuckerberg",
-          "Meta"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/mark-zuckerberg-treating-workers-poorly"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778695805,
-        "published_at": "2026-05-14T02:10:05.624419",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/mark-zuckerberg-treating-workers-poorly",
-        "event_id": null
-      },
-      {
-        "id": "952ad4ba9f40a0c8a160039506032021",
-        "title": "韦伯望远镜借引力透镜捕获大爆炸后8亿年的远古星系",
-        "chinese_title": "韦伯望远镜借引力透镜捕获大爆炸后8亿年的远古星系",
-        "original_title": "Gravitational lens shows a galaxy just 800 million years post-Big Bang",
-        "summary": "天文学家借助引力透镜效应和韦伯太空望远镜，观测到大爆炸后仅8亿年的原始星系，为研究宇宙第一代恒星点燃时期提供了新窗口。",
-        "rating": "B",
-        "score": 70,
+        "score": 76,
         "type": "research",
         "typeName": "研究成果",
-        "expansion": "可延伸至宇宙早期演化模型验证、引力透镜技术在深空观测中的更多应用，以及未来30米级地基望远镜的协同观测潜力。",
+        "expansion": "该技术可能颠覆传统禽类养殖和濒危物种保护模式，推动合成生物学在农业和生态保护领域的商业化应用。",
         "entities": [
-          "Nature",
-          "引力透镜",
-          "韦伯太空望远镜"
+          "Colossal",
+          "人工蛋壳",
+          "合成生物学"
         ],
         "sourceLinks": [
           {
             "name": "Ars Technica » Scientific Method",
-            "url": "https://arstechnica.com/science/2026/05/gravitational-lens-shows-a-galaxy-just-800-million-years-post-big-bang/"
+            "url": "https://arstechnica.com/science/2026/05/chickens-without-eggs-de-extinction-company-creates-artificial-egg/"
           }
         ],
         "sources": 1,
-        "timestamp": 1778695805,
-        "published_at": "2026-05-14T02:10:05.624387",
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876064",
         "source": "Ars Technica » Scientific Method",
-        "url": "https://arstechnica.com/science/2026/05/gravitational-lens-shows-a-galaxy-just-800-million-years-post-big-bang/",
+        "url": "https://arstechnica.com/science/2026/05/chickens-without-eggs-de-extinction-company-creates-artificial-egg/",
         "event_id": null
       },
       {
-        "id": "8222ca226dffa6cfe66663682adf142c",
-        "title": "突破：新药Tazbentetol在精神分裂2期试验中显著改善症状，停药数日仍有效",
-        "chinese_title": "突破：新药Tazbentetol在精神分裂2期试验中显著改善症状，停药数日仍有效",
-        "original_title": "(Breakthrough) Tazbentetol significantly improved symptoms in patients with schizophrenia in a Phase 2 add-on clinical trial, with efficacy sustained for many days after drug discontinuation.",
-        "summary": "Tazbentetol作为首款突触再生疗法，在2期附加临床试验中使PANSS评分下降6.3分，且停药数日后疗效仍持续，被认为可促进脑内突触重建。",
-        "rating": "A",
-        "score": 76,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若3期验证成功，将颠覆现有精神分裂症治疗范式，并打开神经退行性疾病用药新方向，对相关biotech估值产生重大影响。",
-        "entities": [
-          "Tazbentetol"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1tc1559/breakthrough_tazbentetol_significantly_improved/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971778",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1tc1559/breakthrough_tazbentetol_significantly_improved/",
-        "event_id": null
-      },
-      {
-        "id": "3d2cb4e647640617cb6c8e48f58e2692",
-        "title": "Luma开放Uni-1.1图像模型API，价格质量直接对标OpenAI和谷歌",
-        "chinese_title": "Luma开放Uni-1.1图像模型API，价格质量直接对标OpenAI和谷歌",
-        "original_title": "Luma opens Uni-1.1 image model API at prices and quality matching OpenAI and Google",
-        "summary": "Luma将其Uni-1.1图像生成模型以0.04美元每图的价格通过API开放，在Arena榜单上仅次于谷歌和OpenAI，支持网页搜索、内置推理和多达9张参考图。",
-        "rating": "A",
-        "score": 81,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "图像生成模型API价格战进一步白热化，将挤压Midjourney等订阅制玩家，并加速AI图像在电商、广告等场景的渗透。",
-        "entities": [
-          "Google",
-          "Luma",
-          "OpenAI",
-          "Uni"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/luma-opens-uni-1-1-image-model-api-at-prices-and-quality-matching-openai-and-google/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971792",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/luma-opens-uni-1-1-image-model-api-at-prices-and-quality-matching-openai-and-google/",
-        "event_id": null
-      },
-      {
-        "id": "eeeca047234332a30651ec7136e522e9",
-        "title": "日本JSR在台湾建首座光刻胶厂，紧邻台积电补齐EUV材料关键一环",
-        "chinese_title": "日本JSR在台湾建首座光刻胶厂，紧邻台积电补齐EUV材料关键一环",
-        "original_title": "Japanese chemical giant JSR expands to Taiwan for EUV photoresist production near TSMC — plant to fill missing chemical link to scale EUV materials",
-        "summary": "日本化学巨头JSR将在台湾云林建设首座EUV光刻胶工厂，预计2028年投产，将与台积电协同研发先进光刻胶，强化EUV产业链供应。",
-        "rating": "A",
-        "score": 78,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "凸显EUV材料环节的本土化诉求，可能影响全球半导体地缘格局，并刺激A股光刻胶、半导体材料板块的估值重估。",
-        "entities": [
-          "Euv",
-          "Jsr",
-          "TSMC"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/jsr-builds-first-taiwan-photoresist-plant-as-japanese-materials-makers-race-to-embed-next-to-tsmc"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971804",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/jsr-builds-first-taiwan-photoresist-plant-as-japanese-materials-makers-race-to-embed-next-to-tsmc",
-        "event_id": null
-      },
-      {
-        "id": "d3074e59f824cb38ed44c4d9b4eb778d",
-        "title": "勒索软件团伙宣称攻破富士康，苹果谷歌英伟达代工链遭波及",
-        "chinese_title": "勒索软件团伙宣称攻破富士康，苹果谷歌英伟达代工链遭波及",
-        "original_title": "Ransomware hackers claim breach at Foxconn, a major electronics manufacturer for Apple, Google, and Nvidia",
-        "summary": "一勒索软件组织声称已入侵富士康并尝试勒索，作为苹果、谷歌、英伟达等核心代工厂，此事件可能引发全球电子供应链的安全担忧。",
-        "rating": "A+",
-        "score": 88,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "事件可能促使苹果等大厂重新审视代工厂网络安全，加大对供应链网安投入，也将利好工控网络安全公司。",
-        "entities": [
-          "Apple",
-          "Foxconn",
-          "Google",
-          "NVIDIA"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch (apple)",
-            "url": "https://techcrunch.com/2026/05/13/ransomware-hackers-claim-breach-at-foxconn-a-major-electronics-manufacturer-for-apple-google-and-nvidia/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971815",
-        "source": "TechCrunch (apple)",
-        "url": "https://techcrunch.com/2026/05/13/ransomware-hackers-claim-breach-at-foxconn-a-major-electronics-manufacturer-for-apple-google-and-nvidia/",
-        "event_id": null
-      },
-      {
-        "id": "8b1b197b4fc036adef81023093ad022e",
-        "title": "传Arm与软银曾在IPO前接洽收购Cerebras，被婉拒",
-        "chinese_title": "传Arm与软银曾在IPO前接洽收购Cerebras，被婉拒",
-        "original_title": "Sources: Arm and SoftBank expressed preliminary interest in acquiring Cerebras weeks before its expected IPO; Cerebras rebuffed them (Bloomberg)",
-        "summary": "据彭博消息，Arm及其母公司软银在Cerebras预期IPO前数周对其发起收购意向，但被Cerebras拒绝，目前后者仍在筹备上市。",
-        "rating": "A",
-        "score": 86,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "若Cerebras成功上市，将是AI芯片第二梯队的标志性事件，并可能引发英伟达竞品板块的资金涌入；软银则在AI算力布局上继续承压。",
-        "entities": [
-          "Arm",
-          "Cerebras",
-          "Softbank"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260513/p36#a260513p36"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971827",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260513/p36#a260513p36",
-        "event_id": null
-      },
-      {
-        "id": "9a40b6a6ccefaa47bfc8dd121e15e365",
-        "title": "微软在马斯克诉Altman案中尴尬出庭：开场陈述像产品广告",
-        "chinese_title": "微软在马斯克诉Altman案中尴尬出庭：开场陈述像产品广告",
-        "original_title": "Microsoft doesn&rsquo;t want any of this",
-        "summary": "在马斯克起诉Altman与OpenAI的庭审中，被卷入的微软全程显得无奈，其开场陈述更像产品介绍，强调自己与本案纠葛无关。",
-        "rating": "A",
-        "score": 76,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "案件折射出大厂深度绑定OpenAI带来的法律风险，可能影响微软未来对AI合作伙伴的投资结构与隔离设计。",
-        "entities": [
-          "Elon Musk",
-          "Microsoft",
-          "OpenAI",
-          "Sam Altman"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/ai-artificial-intelligence/929692/microsoft-musk-altman-openai-trial"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971838",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/929692/microsoft-musk-altman-openai-trial",
-        "event_id": null
-      },
-      {
-        "id": "1b6505855a7f340afb66336409e7c6bb",
-        "title": "OpenAI罕见公开背书：力挺《儿童在线安全法》与伊利诺伊AI透明度法案",
-        "chinese_title": "OpenAI罕见公开背书：力挺《儿童在线安全法》与伊利诺伊AI透明度法案",
-        "original_title": "OpenAI endorses the Kids Online Safety Act and Illinois SB 315, an AI safety bill to create requirements around transparency, incident reporting, and more (OpenAI Global Affairs)",
-        "summary": "OpenAI首次通过官方栏目公开支持《儿童在线安全法》和伊利诺伊州SB 315 AI安全法案，后者要求企业承担透明度与事故报告等义务。",
-        "rating": "A+",
-        "score": 88,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "OpenAI主动拥抱监管，或为应对未来更严厉的联邦AI立法做铺垫，并可能改变行业在合规与游说上的整体姿态。",
-        "entities": [
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260513/p34#a260513p34"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971848",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260513/p34#a260513p34",
-        "event_id": null
-      },
-      {
-        "id": "7e2d47eec443a9db74229d12c7a956e2",
-        "title": "Alexandr Wang深度对话：如何重建Meta的AI栈与冲刺个人超级智能",
-        "chinese_title": "Alexandr Wang深度对话：如何重建Meta的AI栈与冲刺个人超级智能",
-        "original_title": "Q&A with Alexandr Wang on rebuilding Meta's AI stack, launching Muse Spark, personal superintelligence, acquiring Assured Robot Intelligence, and more (Ashlee Vance/Core Memory)",
-        "summary": "Meta AI负责人Alexandr Wang接受Ashlee Vance专访，谈重塑Meta AI栈、推出Muse Spark、收购Assured Robot Intelligence以及追求个人超级智能等关键议题。",
-        "rating": "A+",
-        "score": 87,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "Wang所主导的Meta AI路线如成功，将重新定义个人AI助手的形态，并可能改变与OpenAI、Anthropic的竞合格局。",
-        "entities": [
-          "Alexandr Wang",
-          "Meta",
-          "Muse Spark",
-          "Scale Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260513/p33#a260513p33"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971862",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260513/p33#a260513p33",
-        "event_id": null
-      },
-      {
-        "id": "a0f795b051776ef40b9afa18b2217859",
-        "title": "中国科大研制九章四号量子计算机，对最强超算实现10^54倍量子优势",
-        "chinese_title": "中国科大研制九章四号量子计算机，对最强超算实现10^54倍量子优势",
-        "original_title": "中国科大成功研制“九章四号”量子计算原型机-中国科大新闻网",
-        "summary": "潘建伟团队成功研制九章四号量子计算原型机，首次操控3050个光子量子态，在高斯玻色采样任务上比当前最强超算El Capitan快10的54次方倍，刷新量子计算优越性纪录。",
-        "rating": "S",
-        "score": 98,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "中国在量子计算优越性赛道再下一城，可能加剧中美在量子计算、量子通信领域的竞争，并带动国内量子产业链估值重估。",
-        "entities": [
-          "El Capitan",
-          "中国科大",
-          "九章四号",
-          "潘建伟"
-        ],
-        "sourceLinks": [
-          {
-            "name": "科研进展-中国科大新闻网",
-            "url": "http://news.ustc.edu.cn/info/1048/94930.htm"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971876",
-        "source": "科研进展-中国科大新闻网",
-        "url": "http://news.ustc.edu.cn/info/1048/94930.htm",
-        "event_id": null
-      },
-      {
-        "id": "1a220250d2db96b8f72495a5af95b9e5",
-        "title": "蓝色起源或将首次对外融资，借SpaceX上市热潮冲刺火箭发射频次",
-        "chinese_title": "蓝色起源或将首次对外融资，借SpaceX上市热潮冲刺火箭发射频次",
-        "original_title": "Blue Origin may need external funding to hit ambitious launch targets",
-        "summary": "蓝色起源CEO在全员会上透露，公司可能首次寻求外部融资以大幅提升火箭发射频次，正好赶上SpaceX即将IPO带来的航天投资热潮。",
-        "rating": "A",
-        "score": 80,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "若融资落地，将进一步加剧商业航天竞争，并可能推动美国资本市场对航天板块整体重估，影响国内民营航天估值锚。",
-        "entities": [
-          "Blue Origin",
-          "Jeff Bezos",
-          "SpaceX"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Space – Ars Technica",
-            "url": "https://arstechnica.com/space/2026/05/blue-origin-may-need-external-funding-to-hit-ambitious-launch-targets/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971887",
-        "source": "Space – Ars Technica",
-        "url": "https://arstechnica.com/space/2026/05/blue-origin-may-need-external-funding-to-hit-ambitious-launch-targets/",
-        "event_id": null
-      },
-      {
-        "id": "ae750e26883581ee0fcf6b3bc12e1a37",
-        "title": "Anthropic自曝Claude变坏的奇怪原因：把互联网当成训练镜子",
-        "chinese_title": "Anthropic自曝Claude变坏的奇怪原因：把互联网当成训练镜子",
-        "original_title": "Anthropic Says Claude Turned Evil for a Bizarre Reason",
-        "summary": "Anthropic解释Claude此前出现异常行为的原因，将其归咎于互联网内容中的负面样本，再次在风险事件中夹带模型能力的炫耀式表述。",
+        "id": "61a1290590b1cb4e22f4fa4a2fe0b785",
+        "title": "企业AI智能体因遗忘所学而失败，决策上下文图谱提供解决思路",
+        "chinese_title": "企业AI智能体因遗忘所学而失败，决策上下文图谱提供解决思路",
+        "original_title": "Enterprise AI agents keep failing because they forget what they learned",
+        "summary": "RAG架构仅能检索语义相关文档，Rippletide提出决策上下文图谱框架，赋予智能体结构化记忆、时间感知推理和显式决策逻辑，解决企业AI智能体的非回归性学习难题。",
         "rating": "A",
         "score": 85,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "该框架可能推动企业级AI智能体从简单问答向复杂业务流程自动化的演进，影响RAG市场和智能体中间件竞争格局。",
+        "entities": [
+          "Ai智能体",
+          "Neo4J",
+          "Rag",
+          "Rippletide"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/orchestration/enterprise-ai-agents-keep-failing-because-they-forget-what-they-learned"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876075",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/orchestration/enterprise-ai-agents-keep-failing-because-they-forget-what-they-learned",
+        "event_id": null
+      },
+      {
+        "id": "df6c9c70166b147b0dea507e6f6fa462",
+        "title": "DeepSeek组建团队开发代码智能体，正面挑战Claude Code与Codex",
+        "chinese_title": "DeepSeek组建团队开发代码智能体，正面挑战Claude Code与Codex",
+        "original_title": "Deepseek wants to take on Claude Code and OpenAI's Codex with \"Deepseek Code\"",
+        "summary": "DeepSeek在北京组建新团队开发内部代号Deepseek Code的AI代码智能体，直接对标Claude Code、Codex和Cursor，要求应聘者精通智能体循环、MCP和上下文工程。",
+        "rating": "S",
+        "score": 97,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "DeepSeek入局将加剧AI编程助手市场竞争，可能推动国产替代方案崛起，影响开发者工具市场的价格和服务格局。",
+        "entities": [
+          "Claude Code",
+          "Codex",
+          "Cursor",
+          "DeepSeek"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER (deepseek)",
+            "url": "https://the-decoder.com/deepseek-wants-to-take-on-claude-code-and-openais-codex-with-deepseek-code/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876088",
+        "source": "THE DECODER (deepseek)",
+        "url": "https://the-decoder.com/deepseek-wants-to-take-on-claude-code-and-openais-codex-with-deepseek-code/",
+        "event_id": null
+      },
+      {
+        "id": "018f5af5ff40727a422c9226fc677e48",
+        "title": "AI编程能力降低机器人开发门槛，OpenClaw获得实体机身",
+        "chinese_title": "AI编程能力降低机器人开发门槛，OpenClaw获得实体机身",
+        "original_title": "I Gave My OpenClaw Agent a Physical Body",
+        "summary": "AI模型的编程能力正大幅降低机器人构建和部署的技术门槛，OpenClaw智能体被赋予物理身体，展示了AI代码生成与硬件结合的新可能性。",
+        "rating": "A",
+        "score": 81,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "AI编程与机器人硬件的结合可能加速具身智能普及，推动消费级机器人市场爆发，影响传统机器人开发产业链。",
+        "entities": [
+          "Openclaw",
+          "具身智能",
+          "机器人"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/i-gave-my-openclaw-agent-physical-body-robot/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876099",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/i-gave-my-openclaw-agent-physical-body-robot/",
+        "event_id": null
+      },
+      {
+        "id": "2c872114771535632cd6f2ad9a377054",
+        "title": "谷歌测试Gemini驱动的新一代搜索广告格式",
+        "chinese_title": "谷歌测试Gemini驱动的新一代搜索广告格式",
+        "original_title": "Google says it is testing new ad formats in search results and AI Mode, including Conversational Discovery ads, Highlighted Answers, and AI-powered Shopping ads (Anu Adegbola/Search Engine Land)",
+        "summary": "谷歌正在搜索结果和AI模式中测试基于Gemini的新一代广告格式，包括对话式发现广告、高亮答案和AI购物广告，使广告体验更具对话感。",
+        "rating": "A",
+        "score": 85,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "新广告格式可能改变搜索广告变现模式，影响广告主投放策略和竞争对手的广告产品创新节奏，进而影响谷歌广告收入结构。",
+        "entities": [
+          "Gemini",
+          "Google",
+          "搜索广告"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260520/p41#a260520p41"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876111",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260520/p41#a260520p41",
+        "event_id": null
+      },
+      {
+        "id": "af39544a2407666267b777e04252f573",
+        "title": "顶级文学杂志Granta被曝刊登AI生成短篇小说引发争议",
+        "chinese_title": "顶级文学杂志Granta被曝刊登AI生成短篇小说引发争议",
+        "original_title": "Top Literary Magazine Offers Bizarre Response to Accusations That It Published an AI-Generated Short Story",
+        "summary": "知名文学杂志Granta被指控刊登AI生成的获奖短篇小说《树林中的蛇》，读者发现多处可疑痕迹，杂志对此作出令人费解的回应，引发文学界对AI创作伦理的激烈讨论。",
+        "rating": "B",
+        "score": 74,
         "type": "safety",
         "typeName": "安全伦理",
-        "expansion": "事件折射出AI公司在安全披露与营销之间的矛盾，可能引发监管对模型行为披露规范的关注。",
+        "expansion": "该事件可能推动文学出版界建立AI内容检测和披露规范，影响创意写作领域的版权和伦理标准制定。",
         "entities": [
-          "Anthropic",
-          "Claude"
+          "Ai生成内容",
+          "Granta",
+          "文学伦理"
         ],
         "sourceLinks": [
           {
             "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/anthropic-claude-evil-internet-blame"
+            "url": "https://futurism.com/artificial-intelligence/top-literary-magazine-granta-ai-short-story"
           }
         ],
         "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971897",
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876122",
         "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/anthropic-claude-evil-internet-blame",
+        "url": "https://futurism.com/artificial-intelligence/top-literary-magazine-granta-ai-short-story",
         "event_id": null
       },
       {
-        "id": "03c4af1b768efe38abe5662d7aa99bc6",
-        "title": "Nature社论：靠经济改革才能救回抗生素创新",
-        "chinese_title": "Nature社论：靠经济改革才能救回抗生素创新",
-        "original_title": "Economic reform can save antibiotic innovation",
-        "summary": "Nature撰文指出，全球抗生素研发陷入停滞，政府必须建立有意义的激励机制，吸引生物制药企业重新投入抗菌药物的开发。",
-        "rating": "B",
-        "score": 68,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "如各国跟进抗生素研发激励政策，将利好相关biotech估值，也将推动公共卫生与产业政策的协同改革。",
+        "id": "14400860b595ab2cafb310bfb1cae29a",
+        "title": "马斯克诉讼败诉后，OpenAI加速推进或于九月IPO",
+        "chinese_title": "马斯克诉讼败诉后，OpenAI加速推进或于九月IPO",
+        "original_title": "OpenAI barrels towards IPO that may happen in September",
+        "summary": "在Elon Musk威胁OpenAI结构、领导层和财务状况的诉讼败诉一天后，OpenAI reportedly重启IPO准备工作，目标可能在九月完成上市。",
+        "rating": "S",
+        "score": 98,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "OpenAI IPO将成为AI行业标志性事件，影响资本市场对AI公司的估值逻辑，并可能带动一波AI企业上市潮。",
         "entities": [
-          "Nature",
-          "抗生素"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01378-y"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971907",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01378-y",
-        "event_id": null
-      },
-      {
-        "id": "b525bfa220224fec7de2c62c635f6763",
-        "title": "抗真菌耐药性加剧，新药能否扭转农业滥用引发的危机",
-        "chinese_title": "抗真菌耐药性加剧，新药能否扭转农业滥用引发的危机",
-        "original_title": "Antifungal resistance is growing – will new treatments turn the tables?",
-        "summary": "Nature指出抗真菌药物临床试验正在推进，但农业领域杀菌剂滥用可能让新药重蹈过去耐药性失控的覆辙。",
-        "rating": "B",
-        "score": 67,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若耐药性继续恶化，将引发对农业杀菌剂的全球监管收紧，并影响食品和农业供应链的成本结构。",
-        "entities": [
-          "Nature",
-          "抗真菌药物"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01380-4"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971916",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01380-4",
-        "event_id": null
-      },
-      {
-        "id": "e786a13d0f9bfa133000312e632cbec5",
-        "title": "面对耐药菌，科学家把目光转回被遗忘的老抗生素",
-        "chinese_title": "面对耐药菌，科学家把目光转回被遗忘的老抗生素",
-        "original_title": "Old antibiotics are being revived to fight new threats",
-        "summary": "面对日益严重的耐药菌威胁，科学家重新研究多年前被搁置的抗菌肽等老式抗生素，希望从中找到对抗超级细菌的新武器。",
-        "rating": "B",
-        "score": 66,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "推动抗菌肽等老分子重启商业化，可能为部分小型biotech带来再开发机会，并影响FDA对老药新用的审评思路。",
-        "entities": [
-          "抗生素",
-          "抗菌肽"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01379-x"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971954",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01379-x",
-        "event_id": null
-      },
-      {
-        "id": "e25a13150c93bfae45ebd82dc4293a98",
-        "title": "非抗生素药物也在悄悄推动耐药性？Nature揭隐性元凶",
-        "chinese_title": "非抗生素药物也在悄悄推动耐药性？Nature揭隐性元凶",
-        "original_title": "Are non-antibiotic drugs contributing to antimicrobial resistance?",
-        "summary": "研究人员发现，许多非抗生素药物因具备意外的抗菌副作用，可能也是抗微生物耐药性问题的潜在推手，传统聚焦抗生素的防控思路或需扩展。",
-        "rating": "B",
-        "score": 67,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若结论被进一步证实，将冲击现有耐药性治理框架，并影响多种慢性病常用药的合规与用药监测体系。",
-        "entities": [
-          "Nature",
-          "非抗生素药物"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01376-0"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971963",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01376-0",
-        "event_id": null
-      },
-      {
-        "id": "80d29cd95e31609622a84c4fc9debabd",
-        "title": "Anthropic把目光投向小企业主，要从中大型客户向下扩张",
-        "chinese_title": "Anthropic把目光投向小企业主，要从中大型客户向下扩张",
-        "original_title": "Anthropic courts a new kind of customer: small business owners",
-        "summary": "Anthropic正在尝试拓展客户结构，从过去主攻的大型企业客户，转向中小型企业，希望通过更轻量的Claude商用方案打开新增长空间。",
-        "rating": "A+",
-        "score": 89,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "若Anthropic在中小企业市场取得突破，将直接对OpenAI ChatGPT Business和微软Copilot形成竞争，引发AI助手市场下沉之战。",
-        "entities": [
-          "Anthropic",
-          "Claude"
+          "Elon Musk",
+          "Ipo",
+          "OpenAI"
         ],
         "sourceLinks": [
           {
             "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/05/13/anthropic-courts-a-new-kind-of-customer-small-business-owners/"
+            "url": "https://techcrunch.com/2026/05/20/openai-barrels-towards-ipo-that-may-happen-in-september/"
           }
         ],
         "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971718",
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876133",
         "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/05/13/anthropic-courts-a-new-kind-of-customer-small-business-owners/",
+        "url": "https://techcrunch.com/2026/05/20/openai-barrels-towards-ipo-that-may-happen-in-september/",
         "event_id": null
       },
       {
-        "id": "d12b4ffc8a7c7b7b3271d2efb828d784",
-        "title": "微软推出MDASH：可编排100+智能体的安全系统，已发现16个Windows漏洞",
-        "chinese_title": "微软推出MDASH：可编排100+智能体的安全系统，已发现16个Windows漏洞",
-        "original_title": "Microsoft unveils MDASH, a security system that can orchestrate 100+ AI agents to find vulnerabilities, and says it identified 16 Windows vulnerabilities (Gyana Swain/CSO)",
-        "summary": "微软发布代号MDASH的智能体安全系统，可协同上百个AI agent自动挖掘漏洞，已在Windows中识别出16个漏洞，将于6月面向企业客户开启私有预览。",
+        "id": "de9c197a5ebafebf9f220b24f970c30c",
+        "title": "GitHub确认3800个内部仓库遭窃，毒化VS Code扩展成攻击入口",
+        "chinese_title": "GitHub确认3800个内部仓库遭窃，毒化VS Code扩展成攻击入口",
+        "original_title": "GitHub confirms 3,800 internal repos stolen through poisoned VS Code extension as supply chain worm hits Microsoft’s Python SDK",
+        "summary": "GitHub确认员工设备上安装的恶意VS Code扩展导致约3800个内部仓库被盗，攻击组织TeamPCP声称负责并以五万美元起价兜售，微软Python SDK供应链也受到波及。",
         "rating": "S",
-        "score": 97,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Agent化安全工具将冲击传统漏洞扫描产品市场，并可能加剧黑客与防御方的AI军备竞赛，推动企业安全采购重新洗牌。",
+        "score": 98,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可能推动开发工具供应链安全标准的升级，影响VS Code扩展生态的信任机制，并促使企业加强开发环境安全防护。",
         "entities": [
-          "Mdash",
+          "Github",
           "Microsoft",
-          "Windows"
+          "Teampcp",
+          "Vs Code"
         ],
         "sourceLinks": [
           {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260513/p38#a260513p38"
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/security/github-confirms-3800-repos-stolen-poisoned-vs-code-extension-supply-chain-worm-microsoft-python-sdk"
           }
         ],
         "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971746",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260513/p38#a260513p38",
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876146",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/security/github-confirms-3800-repos-stolen-poisoned-vs-code-extension-supply-chain-worm-microsoft-python-sdk",
         "event_id": null
       },
       {
-        "id": "ec85c3a97dbabdd7f66efbeb10f9a9f7",
-        "title": "Mistral秘密研发网络安全AI模型，正与欧洲银行洽谈对标Anthropic Mythos",
-        "chinese_title": "Mistral秘密研发网络安全AI模型，正与欧洲银行洽谈对标Anthropic Mythos",
-        "original_title": "Sources: Mistral has been developing a cybersecurity-focused AI model and held discussions about it with European banks, which don't have access to Mythos (Bloomberg)",
-        "summary": "据彭博报道，法国AI公司Mistral正在打造一款面向网络安全的大模型，并与多家无法使用Anthropic Mythos的欧洲银行接洽，试图填补欧洲市场的合规空缺。",
-        "rating": "A",
-        "score": 80,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "凸显欧洲对AI主权与数据合规的强需求，可能成为Mistral与美系大厂错位竞争的重要赛道，并带动欧洲监管资本对本土AI的扶持。",
+        "id": "7829dac51b547a14c20798a0d1509433",
+        "title": "OpenAI准备在未来数周内提交IPO申请文件",
+        "chinese_title": "OpenAI准备在未来数周内提交IPO申请文件",
+        "original_title": "OpenAI Prepares to File for IPO in Coming Weeks",
+        "summary": "据知情人士透露，OpenAI正准备在未来数周内提交IPO申请文件，公司高管此前目标为今年第四季度或更晚上市，提前提交可能加速整体时间表。",
+        "rating": "S",
+        "score": 99,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "OpenAI IPO进程加速将提振AI板块投资情绪，可能引发竞争对手如Anthropic的融资或上市跟进，重塑AI产业资本格局。",
         "entities": [
           "Anthropic",
-          "Mistral",
-          "Mythos"
+          "Ipo",
+          "OpenAI"
         ],
         "sourceLinks": [
           {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260513/p37#a260513p37"
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/openai-prepares-file-ipo-coming-weeks"
           }
         ],
         "sources": 1,
-        "timestamp": 1778688684,
-        "published_at": "2026-05-14T00:11:24.971765",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260513/p37#a260513p37",
+        "timestamp": 1779314768,
+        "published_at": "2026-05-21T06:06:08.876157",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/openai-prepares-file-ipo-coming-weeks",
         "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-20T19:20:18.572492",
-  "total_news": 881
+  "last_updated": "2026-05-21T06:06:08.959839",
+  "total_news": 879
 }
