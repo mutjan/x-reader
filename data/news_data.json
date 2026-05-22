@@ -70,18 +70,16 @@
       },
       {
         "id": "7db61071ee710bb9c33e4aed5f40cb44",
-        "title": "开发者实测：4.8万美元GPU服务器值不值？",
-        "chinese_title": "开发者实测：4.8万美元GPU服务器值不值？",
+        "title": "开发者实测：4.8万美元自建GPU服务器是否物有所值",
+        "chinese_title": "开发者实测：4.8万美元自建GPU服务器是否物有所值",
         "original_title": "Was my $48K GPU server worth it?",
-        "summary": "一名开发者分享其花费4.8万美元搭建GPU服务器的使用体验和ROI分析，引发Hacker News社区对本地AI训练成本的热议。",
+        "summary": "一名开发者分享花费4.8万美元自建GPU服务器的实际使用体验和性价比分析，探讨个人/小团队在AI训练和推理场景下自建算力的可行性。",
         "rating": "B",
         "score": 68,
         "type": "tool",
         "typeName": "工具技巧",
         "expansion": "个人/小团队AI算力配置话题热度高，可延伸讨论消费级GPU与云算力的成本对比。",
-        "entities": [
-          "Gpu"
-        ],
+        "entities": [],
         "sourceLinks": [
           {
             "name": "Hacker News",
@@ -96,7 +94,7 @@
         "event_id": null,
         "original_content": "Comments",
         "grade": "B",
-        "extension": "个人硬件投资经验分享，可作为AI开发者基础设施成本参考，但缺乏普适性数据。"
+        "extension": "个人GPU服务器配置方案对独立开发者和初创团队有参考价值，也反映了算力成本仍是AI应用的关键门槛。"
       },
       {
         "id": "c4701e1badba17ac9dc06ad735104cc9",
@@ -642,13 +640,70 @@
         "extension": "家用机器人定价逼近低端汽车，若量产落地将加速消费级机器人市场爆发，可追踪后续用户反馈和竞品动态。"
       },
       {
+        "id": "16c4753ac2ac19a62ba7a02652265cc9",
+        "title": "Eric Jang澄清播客中关于多步RL方差的论述错误",
+        "chinese_title": "Eric Jang澄清播客中关于多步RL方差的论述错误",
+        "original_title": "RT Eric Jang: I'd like to issue a clarification on the section covered around 1:33:44 of the podcast, where @dwarkesh_sp and I discuss multi-step vs. ...",
+        "summary": "前Google研究员Eric Jang在Dwarkesh Patel播客中关于多步强化学习方差高于单步RL的表述存在不严谨之处，事后发布详细勘误说明进行澄清。",
+        "rating": "B",
+        "score": 66,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "强化学习训练方法的公开讨论有助于社区对齐认知，但单点观点的纠错本身选题价值有限。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/andrew_n_carr/status/2057560927340544384"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779404584,
+        "published_at": "2026-05-22T07:03:04.105900",
+        "source": "x",
+        "url": "https://x.com/andrew_n_carr/status/2057560927340544384",
+        "event_id": null,
+        "original_content": "RT Eric Jang I'd like to issue a clarification on the section covered around 1:33:44 of the podcast, where @dwarkesh_sp and I discuss multi-step vs. single-step LLM RL. I muddle through some hand-wavy quadratic variance statements around multi-step RL, and make the claim that multi-step RL has higher variance than single-step RL. This is not 100% right, or confusing at best for people following along, so I'd like to issue some clarification. This was my mistake🥹 Full errata writeup here: https://evjang.com/alphago-tutorial/llm_rl_variance.pdf Eric Jang: For the last few months I've been working on a from-scratch implementation of AlphaGo, a 2016 AI breakthrough that inspired me to get into deep learning. My casual understanding of AlphaGo was \"search-augmented deep neural networks trained with self-play\", but I wanted to go",
+        "grade": "B",
+        "extension": "顶级研究者在公开讨论中的自我纠错，反映了RL理论在LLM训练中的复杂性和持续演进。"
+      },
+      {
+        "id": "869c8ac6bad6c5623674a3e3d44dc773",
+        "title": "AI公司首届扑克锦标赛落幕：xAI联创夺冠",
+        "chinese_title": "AI公司首届扑克锦标赛落幕：xAI联创夺冠",
+        "original_title": "Our first Stacked poker tournament was a huge success! 1 player representing each AI company. Congrats to: 🥇 Guodong Zhang (RadixArk, co-founder of...",
+        "summary": "Stacked举办首届AI公司扑克锦标赛，各公司派代表参赛，最终xAI联创Guodong Zhang夺冠，Cursor和Thinking Machines代表分获二三名。",
+        "rating": "A",
+        "score": 75,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "AI圈社交活动反映行业人才密度和竞争格局，但娱乐性质较强，科技报道角度有限。",
+        "entities": [
+          "Cursor",
+          "Guodong Zhang",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/thejessezhang/status/2057487245863743760"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779404584,
+        "published_at": "2026-05-22T07:03:04.105917",
+        "source": "x",
+        "url": "https://x.com/thejessezhang/status/2057487245863743760",
+        "event_id": null
+      },
+      {
         "id": "d1b76cde68674d398f4609d39877b087",
         "title": "Cursor年化收入突破30亿美元，超3000家客户年付费超10万美元",
         "chinese_title": "Cursor年化收入突破30亿美元，超3000家客户年付费超10万美元",
         "original_title": "Source: Cursor reached $3B in annualized revenue in late April and now has 3,000+ customers paying at least $100K each for its software on an annualized basis (Rachel Metz/Bloomberg)",
         "summary": "据Bloomberg报道，AI编程工具Cursor年化收入在4月底达到30亿美元，同时拥有超过3000家年付费不低于10万美元的企业客户，显示企业级AI编程需求持续高速增长。",
         "rating": "S",
-        "score": 92,
+        "score": 100,
         "type": "financial",
         "typeName": "商业数据",
         "expansion": "Cursor的爆发式增长验证了AI编程工具的企业级付费意愿，可能推动微软GitHub Copilot、Amazon CodeWhisperer等竞品加速迭代和定价调整。",
@@ -664,7 +719,10 @@
         "published_at": "2026-05-22T06:04:55.917921",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260521/p45#a260521p45",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Rachel Metz / Bloomberg : Source: Cursor reached $3B in annualized revenue in late April and now has 3,000+ customers paying at least $100K each for its software on an annualized basis — Cursor's annualized revenue hit $3 billion in late April, according to a person familiar with the matter, indicating growing demand …",
+        "grade": "S",
+        "extension": "Cursor的爆发式增长验证了AI编程工具的企业级付费意愿，可能推动微软GitHub Copilot、Amazon CodeWhisperer等竞品加速迭代和定价调整。"
       },
       {
         "id": "806f6eac74d0156d2fa588d1b1a62a83",
@@ -673,7 +731,7 @@
         "original_title": "Who will benefit most from SpaceX IPO? Mostly Elon — and a few from his inner circle",
         "summary": "TechCrunch分析指出，若SpaceX启动IPO，马斯克凭借数十亿股持股将成为最大受益者，其他主要股东也均与其有长期深度关联。",
         "rating": "B",
-        "score": 66,
+        "score": 86,
         "type": "financial",
         "typeName": "商业数据",
         "expansion": "SpaceX IPO估值和股权结构将影响全球航天投资格局，也可能为Starlink等子业务独立上市铺平道路。",
@@ -689,7 +747,10 @@
         "published_at": "2026-05-22T06:04:55.917932",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/05/21/who-will-benefit-most-from-spacex-ipo-mostly-elon-and-a-few-from-his-inner-circle/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Elon Musk has the largest stake in SpaceX by billions of shares. The other biggest shareholders also have longstanding and deep ties to Musk.",
+        "grade": "A",
+        "extension": "SpaceX IPO估值和股权结构将影响全球航天投资格局，也可能为Starlink等子业务独立上市铺平道路。"
       },
       {
         "id": "26cb9768afc0f970db15fdcda2771525",
@@ -698,7 +759,7 @@
         "original_title": "RT Aravind Rajeswaran: Excited to finally share what we've been cooking! Fara1.5 is a family of computer use agents at 4B, 9B, and 27B scale. They are...",
         "summary": "微软发布Fara1.5系列计算机使用Agent，提供4B、9B和27B三种规模，在保持轻量化的同时实现了与大型模型相当的计算机操控能力，已投入内部工作流使用。",
         "rating": "A",
-        "score": 78,
+        "score": 87,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "小参数模型在Agent场景取得突破，可能加速端侧AI和本地自动化工具的普及，对Cursor等现有工具形成竞争。",
@@ -714,7 +775,10 @@
         "published_at": "2026-05-22T06:04:55.917838",
         "source": "x",
         "url": "https://x.com/DimitrisPapail/status/2057581483993207261",
-        "event_id": null
+        "event_id": null,
+        "original_content": "RT Aravind Rajeswaran Excited to finally share what we've been cooking! Fara1.5 is a family of computer use agents at 4B, 9B, and 27B scale. They are among the smartest, fastest, and most capable computer use models available today, competitive with even very large models. A real joy to build models that have made their way into my own workflow. Hope you find them useful too. 📝 blog: http://aka.ms/fara1.5",
+        "grade": "A+",
+        "extension": "小参数模型在Agent场景取得突破，可能加速端侧AI和本地自动化工具的普及，对Cursor等现有工具形成竞争。"
       },
       {
         "id": "6721ab7b87aa6008f577cce2ea7c732e",
@@ -723,7 +787,7 @@
         "original_title": "Reinforcement learning on visual first-person environments is costly: rendering engines are expensive! Enter JAXenstein: a lightning fast benchmark of...",
         "summary": "研究者推出JAXenstein基准测试框架，基于纯JAX重新实现了Wolfenstein 3D渲染引擎，为视觉第一人称环境下的强化学习研究提供极速、低成本的测试平台。",
         "rating": "B",
-        "score": 66,
+        "score": 67,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "纯JAX实现可大幅降低视觉RL研究的算力门槛，可能催生更多第一人称视角的Agent导航和决策研究。",
@@ -739,7 +803,10 @@
         "published_at": "2026-05-22T06:04:55.917867",
         "source": "x",
         "url": "https://x.com/Taodav/status/2057464355239694794",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Reinforcement learning on visual first-person environments is costly: rendering engines are expensive! Enter JAXenstein: a lightning fast benchmark of first-person environments based on a pure JAX reimplementation of the Wolfenstein 3D rendering engine. (1/n)",
+        "grade": "B",
+        "extension": "纯JAX实现可大幅降低视觉RL研究的算力门槛，可能催生更多第一人称视角的Agent导航和决策研究。"
       },
       {
         "id": "48867a0fc0e2f6fa72545e1739053cd4",
@@ -748,7 +815,7 @@
         "original_title": "DeepSeek 挂出了两个新岗位：Agent Harness 研发工程师和 Agent Harness 产品经理。看起来只是普通招聘，但背后的信号其实很强。 其中一个关键词特别值得注意:Ha...",
         "summary": "DeepSeek发布Agent Harness研发工程师和产品经理招聘信息，明确要求候选人深度使用Claude Code、Cursor、Manus等Agent产品，显示其正从模型研发向Agent产品化系统性推进。",
         "rating": "S",
-        "score": 96,
+        "score": 89,
         "type": "personnel",
         "typeName": "人事变动",
         "expansion": "DeepSeek下场做Agent将显著加剧2026年下半年Agent赛道竞争，其模型能力叠加产品化可能快速改变市场格局。",
@@ -764,7 +831,10 @@
         "published_at": "2026-05-22T06:04:55.917890",
         "source": "x",
         "url": "https://x.com/Xudong07452910/status/2057441759244722333",
-        "event_id": null
+        "event_id": null,
+        "original_content": "DeepSeek 挂出了两个新岗位：Agent Harness 研发工程师和 Agent Harness 产品经理。看起来只是普通招聘，但背后的信号其实很强。 其中一个关键词特别值得注意:Harness。 DeepSeek 的定义很明确，模型只是能力内核，而把模型真正做成可用 Agent 产品的工程、产品、交互、工作流等一整套东西，都属于 Harness。 这意味着，他们已经不只是做模型，而是在系统性推进 Agent 产品化。 更有意思的是产品经理岗位。JD 里直接点名了 Claude Code、Codex、Cursor、Manus、OpenClaw 等产品，还要求候选人深度使用过，并真正融入日常工作流。 这基本说明，DeepSeek 已经把整个 Agent 赛道研究得非常细了。 某种程度上，DeepSeek 算是正式下场做 Agent 产品了。 以他们的模型能力，再加上“模型 + Harness 联合进化”这条路线，2026 年下半年的 Agent 竞争，大概率会比现在激烈很多。 如果你对 Agent 方向感兴趣，其实可以认真读一下这两个 JD。里面的任职要求，本身就很像一份 Agent 学习路线图。",
+        "grade": "A+",
+        "extension": "DeepSeek下场做Agent将显著加剧2026年下半年Agent赛道竞争，其模型能力叠加产品化可能快速改变市场格局。"
       },
       {
         "id": "a6e0e6a3e0ac4392965049c51e228873",
@@ -2559,61 +2629,28 @@
     ],
     "2026-05-21": [
       {
-        "id": "16c4753ac2ac19a62ba7a02652265cc9",
-        "title": "Eric Jang澄清多步RL方差论述：podcast观点有误",
-        "chinese_title": "Eric Jang澄清多步RL方差论述：podcast观点有误",
-        "original_title": "RT Eric Jang: I'd like to issue a clarification on the section covered around 1:33:44 of the podcast, where @dwarkesh_sp and I discuss multi-step vs. ...",
-        "summary": "前Google机器人研究员Eric Jang公开澄清其在播客中关于多步RL方差高于单步RL的说法，承认表述不够准确并发布完整勘误文档。",
+        "id": "8e01f69840fa190145f0bc9e7f8d3ba5",
+        "title": "alphaXiv与ACM CAIS达成合作，成为会议论文官方研究平台",
+        "chinese_title": "alphaXiv与ACM CAIS达成合作，成为会议论文官方研究平台",
+        "original_title": "alphaXiv 🤝 ACM CAIS We’re excited to announce our partnership with the ACM Conference on AI and Agentic Systems! alphaXiv will serve as the compli...",
+        "summary": "学术论文平台alphaXiv宣布与ACM人工智能与智能体系统会议（CAIS）建立合作关系，将作为该会议录用论文和系统演示的配套研究枢纽，帮助研究者发现和跟踪最新研究成果。",
         "rating": "B",
-        "score": 69,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "强化学习训练方法的公开讨论有助于社区对齐认知，但单点观点的纠错本身选题价值有限。",
-        "entities": [
-          "Eric Jang",
-          "OpenAI",
-          "强化学习"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/andrew_n_carr/status/2057560927340544384"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779404584,
-        "published_at": "2026-05-22T07:03:04.105900",
-        "source": "x",
-        "url": "https://x.com/andrew_n_carr/status/2057560927340544384",
-        "event_id": null
-      },
-      {
-        "id": "869c8ac6bad6c5623674a3e3d44dc773",
-        "title": "AI公司首届扑克锦标赛落幕：xAI联创夺冠",
-        "chinese_title": "AI公司首届扑克锦标赛落幕：xAI联创夺冠",
-        "original_title": "Our first Stacked poker tournament was a huge success! 1 player representing each AI company. Congrats to: 🥇 Guodong Zhang (RadixArk, co-founder of...",
-        "summary": "Stacked举办首届AI公司扑克锦标赛，各公司派代表参赛，最终xAI联创Guodong Zhang夺冠，Cursor和Thinking Machines代表分获二三名。",
-        "rating": "A",
-        "score": 75,
+        "score": 68,
         "type": "industry",
         "typeName": "行业动态",
-        "expansion": "AI圈社交活动反映行业人才密度和竞争格局，但娱乐性质较强，科技报道角度有限。",
-        "entities": [
-          "Cursor",
-          "Guodong Zhang",
-          "xAI"
-        ],
+        "expansion": "学术平台与顶级会议的合作模式可能重塑论文传播链条，影响arXiv等传统预印本平台的市场份额。",
+        "entities": [],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/thejessezhang/status/2057487245863743760"
+            "url": "https://x.com/askalphaxiv/status/2057565305426354590"
           }
         ],
         "sources": 1,
-        "timestamp": 1779404584,
-        "published_at": "2026-05-22T07:03:04.105917",
+        "timestamp": 1779401095,
+        "published_at": "2026-05-22T06:04:55.917815",
         "source": "x",
-        "url": "https://x.com/thejessezhang/status/2057487245863743760",
+        "url": "https://x.com/askalphaxiv/status/2057565305426354590",
         "event_id": null
       },
       {
@@ -29483,6 +29520,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-22T12:21:30.655591",
-  "total_news": 1021
+  "last_updated": "2026-05-22T12:21:59.304069",
+  "total_news": 1022
 }
