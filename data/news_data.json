@@ -70,16 +70,19 @@
       },
       {
         "id": "7db61071ee710bb9c33e4aed5f40cb44",
-        "title": "开发者实测：4.8万美元自建GPU服务器是否物有所值",
-        "chinese_title": "开发者实测：4.8万美元自建GPU服务器是否物有所值",
+        "title": "四万美元GPU服务器值不值？开发者实测复盘",
+        "chinese_title": "四万美元GPU服务器值不值？开发者实测复盘",
         "original_title": "Was my $48K GPU server worth it?",
-        "summary": "一名开发者分享花费4.8万美元自建GPU服务器的实际使用体验和性价比分析，探讨个人/小团队在AI训练和推理场景下自建算力的可行性。",
+        "summary": "一名开发者分享其花费4.8万美元搭建GPU服务器的实际使用体验，从性能、成本效益和应用场景等角度评估这笔投资是否物有所值。",
         "rating": "B",
-        "score": 68,
+        "score": 71,
         "type": "tool",
         "typeName": "工具技巧",
         "expansion": "个人/小团队AI算力配置话题热度高，可延伸讨论消费级GPU与云算力的成本对比。",
-        "entities": [],
+        "entities": [
+          "Gpu",
+          "NVIDIA"
+        ],
         "sourceLinks": [
           {
             "name": "Hacker News",
@@ -94,7 +97,7 @@
         "event_id": null,
         "original_content": "Comments",
         "grade": "B",
-        "extension": "个人GPU服务器配置方案对独立开发者和初创团队有参考价值，也反映了算力成本仍是AI应用的关键门槛。"
+        "extension": "个人AI算力投资话题持续升温，可能推动消费级GPU租赁市场发展，同时反映AI开发者和研究者对本地化大模型训练的需求增长。"
       },
       {
         "id": "c4701e1badba17ac9dc06ad735104cc9",
@@ -669,18 +672,20 @@
       },
       {
         "id": "869c8ac6bad6c5623674a3e3d44dc773",
-        "title": "AI公司首届扑克锦标赛落幕：xAI联创夺冠",
-        "chinese_title": "AI公司首届扑克锦标赛落幕：xAI联创夺冠",
+        "title": "AI公司首届扑克锦标赛落幕，xAI联合创始人夺冠",
+        "chinese_title": "AI公司首届扑克锦标赛落幕，xAI联合创始人夺冠",
         "original_title": "Our first Stacked poker tournament was a huge success! 1 player representing each AI company. Congrats to: 🥇 Guodong Zhang (RadixArk, co-founder of...",
-        "summary": "Stacked举办首届AI公司扑克锦标赛，各公司派代表参赛，最终xAI联创Guodong Zhang夺冠，Cursor和Thinking Machines代表分获二三名。",
+        "summary": "由Stacked举办的首届AI公司扑克锦标赛圆满结束，各AI公司派出代表参赛，最终xAI联合创始人Guodong Zhang夺得冠军，Cursor和Thinking Machines代表分获二三名。",
         "rating": "A",
         "score": 75,
-        "type": "industry",
+        "type": "society",
         "typeName": "行业动态",
         "expansion": "AI圈社交活动反映行业人才密度和竞争格局，但娱乐性质较强，科技报道角度有限。",
         "entities": [
           "Cursor",
           "Guodong Zhang",
+          "Stacked",
+          "Thinking Machines",
           "xAI"
         ],
         "sourceLinks": [
@@ -694,7 +699,10 @@
         "published_at": "2026-05-22T07:03:04.105917",
         "source": "x",
         "url": "https://x.com/thejessezhang/status/2057487245863743760",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Our first Stacked poker tournament was a huge success! 1 player representing each AI company. Congrats to: 🥇 Guodong Zhang (RadixArk, co-founder of xAI) @Guodzh 🥈 Jeremy Stribling (Cursor) 🥉 Neal Wu (Thinking Machines) @neal_wu We will be hosting another one! More below👇",
+        "grade": "A",
+        "extension": "此类跨界社交活动反映AI行业社群文化兴起，可能带动更多AI从业者线下交流活动，增强行业凝聚力。"
       },
       {
         "id": "d1b76cde68674d398f4609d39877b087",
@@ -837,13 +845,38 @@
         "extension": "DeepSeek下场做Agent将显著加剧2026年下半年Agent赛道竞争，其模型能力叠加产品化可能快速改变市场格局。"
       },
       {
+        "id": "8e01f69840fa190145f0bc9e7f8d3ba5",
+        "title": "alphaXiv与ACM CAIS达成合作，成为会议论文官方研究平台",
+        "chinese_title": "alphaXiv与ACM CAIS达成合作，成为会议论文官方研究平台",
+        "original_title": "alphaXiv 🤝 ACM CAIS We’re excited to announce our partnership with the ACM Conference on AI and Agentic Systems! alphaXiv will serve as the compli...",
+        "summary": "学术论文平台alphaXiv宣布与ACM人工智能与智能体系统会议（CAIS）建立合作关系，将作为该会议录用论文和系统演示的配套研究枢纽，帮助研究者发现和跟踪最新研究成果。",
+        "rating": "B",
+        "score": 68,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "学术平台与顶级会议的合作模式可能重塑论文传播链条，影响arXiv等传统预印本平台的市场份额。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/askalphaxiv/status/2057565305426354590"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779401095,
+        "published_at": "2026-05-22T06:04:55.917815",
+        "source": "x",
+        "url": "https://x.com/askalphaxiv/status/2057565305426354590",
+        "event_id": null
+      },
+      {
         "id": "a6e0e6a3e0ac4392965049c51e228873",
         "title": "OpenAI Codex推出Goal模式，支持跨天长线任务",
         "chinese_title": "OpenAI Codex推出Goal模式，支持跨天长线任务",
         "original_title": "Run long tasks in Codex using goals",
         "summary": "OpenAI宣布Codex的Goal模式正式脱离实验阶段，用户可通过设定里程碑让AI持续工作数小时甚至数天，期间可随时干预和暂停。",
         "rating": "A",
-        "score": 83,
+        "score": 91,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "长线AI任务执行能力将改变开发者工作流，可能冲击传统项目管理工具，并引发对AI自主运行安全性的讨论。",
@@ -862,7 +895,10 @@
         "published_at": "2026-05-22T05:30:09.035199",
         "source": "OpenAI",
         "url": "https://www.youtube.com/watch?v=rgh0hMYPcd0",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Goal mode (/goal) has graduated from an experiment—for tasks big and small, Codex gets your work done. Use goal mode in the Codex app, IDE Extension, or CLI to give Codex a specific milestone, and it will keep working until it gets there, even across hours or days. You can check in and steer, and even pause Codex along the way.",
+        "grade": "A+",
+        "extension": "长线AI任务执行能力将改变开发者工作流，可能冲击传统项目管理工具，并引发对AI自主运行安全性的讨论。"
       },
       {
         "id": "94d95fdde274cf74f49ddc261799a1e8",
@@ -871,7 +907,7 @@
         "original_title": "Multi-Stream LLMs: new paper on parallelizing/separating prompts, thinking, I/O",
         "summary": "一篇新论文提出Multi-Stream LLMs架构，通过并行化和分离提示、思考过程与输入输出流，有望提升大语言模型的推理效率和响应速度。",
         "rating": "A",
-        "score": 76,
+        "score": 77,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "若该架构被验证有效，可能影响下一代模型设计方向，OpenAI、Anthropic等头部公司或跟进研究，带动相关硬件并行计算需求。",
@@ -890,7 +926,10 @@
         "published_at": "2026-05-22T05:30:09.035212",
         "source": "Hacker News",
         "url": "https://arxiv.org/abs/2605.12460",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "A",
+        "extension": "若该架构被验证有效，可能影响下一代模型设计方向，OpenAI、Anthropic等头部公司或跟进研究，带动相关硬件并行计算需求。"
       },
       {
         "id": "07cf483e5a74842fda5f0f7101a990d8",
@@ -920,7 +959,10 @@
         "published_at": "2026-05-22T05:30:09.035225",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260521/p40#a260521p40",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Ryan Autullo / Bloomberg Law : Texas AG Ken Paxton sues Meta, accusing WhatsApp of marketing its services as secure but failing to “deliver on those promises” by accessing encrypted messages — WhatsApp is able to access user's encrypted messages, Texas said in a lawsuit that accuses Meta founder Mark Zuckerberg …",
+        "grade": "A",
+        "extension": "加密通信隐私争议可能推动联邦层面的监管立法，影响Meta股价，同时利好Signal等真正端到端加密竞品。"
       },
       {
         "id": "06f617c0929e7a1397cf0a2e577466b1",
@@ -929,7 +971,7 @@
         "original_title": "Meta joins TikTok, Snap, and YouTube in settling with a Kentucky school district to avoid a trial over claims the platforms were designed to addict kids (Erin Mulvaney/Wall Street Journal)",
         "summary": "Meta、TikTok、Snap和YouTube与肯塔基州一学区达成和解，避免就平台设计是否故意让儿童上瘾进行庭审，该案是1200多起类似诉讼中的首起。",
         "rating": "A",
-        "score": 82,
+        "score": 86,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "和解可能引发更多学区跟进诉讼，迫使平台调整推荐算法和青少年保护机制，长期影响社交媒体商业模式。",
@@ -950,7 +992,10 @@
         "published_at": "2026-05-22T05:30:09.035235",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260521/p39#a260521p39",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Erin Mulvaney / Wall Street Journal : Meta joins TikTok, Snap, and YouTube in settling with a Kentucky school district to avoid a trial over claims the platforms were designed to addict kids — Meta, TikTok, Snap and YouTube reached deal to avoid first of more than 1,200 consolidated lawsuits by school districts",
+        "grade": "A",
+        "extension": "和解可能引发更多学区跟进诉讼，迫使平台调整推荐算法和青少年保护机制，长期影响社交媒体商业模式。"
       },
       {
         "id": "75a60e8881e3fda11b8eb69aba82cbb2",
@@ -959,7 +1004,7 @@
         "original_title": "JWST maps the weather on a hot gas giant 700 light-years away",
         "summary": "约翰霍普金斯大学研究团队利用韦伯望远镜观测发现，距地球约690光年的热木星WASP-94A b早晨多云、傍晚晴朗，这一发现可能推翻此前对该类行星大气化学的认知。",
         "rating": "A",
-        "score": 77,
+        "score": 78,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "系外行星大气动态观测成果将推动行星科学理论更新，相关光谱分析技术可能应用于地球大气监测领域。",
@@ -980,7 +1025,10 @@
         "published_at": "2026-05-22T05:30:09.035248",
         "source": "Ars Technica » Scientific Method",
         "url": "https://arstechnica.com/science/2026/05/jwst-maps-the-weather-on-a-hot-gas-giant-700-light-years-away/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "WASP-94A b is a hot, tidally locked gas giant orbiting close to one of the stars in a binary system roughly 690 light-years away from Earth. In a new Science study, scientists led by Sagnick Mukherjee, an astrophysicist at Johns Hopkins University, used the James Webb Space Telescope to learn what the weather looks like out there. Tidal locking means that you no longer have day- and night-side temperature differences sweeping across the planet. “We wanted to understand the atmospheres of such planets,” Mukherjee says. “Are they static or dynamic? Do they have winds? Do they have clouds?” His team found that, on WASP-94A b, it’s cloudy in the morning, but the skies are clear in the evening. The fact that we didn’t know this already means we might have gotten the chemistry of this and many other exoplanets surprisingly wrong. Averaged atmospheres WASP-94A b has a mass slightly below half of Jupiter but has a diameter that’s over 70 percent wider. “This means the planet has low density, and its atmosphere extends further out into space, which makes it easier to observe,” Mukherjee explains. When astronomers study atmospheres like this, they usually rely on transmission spectroscopy. By analyzing the spectrum of light filtering through the planet’s atmosphere as it crosses in front of its star, they can figure out its chemical composition. Read full article Comments",
+        "grade": "A",
+        "extension": "系外行星大气动态观测成果将推动行星科学理论更新，相关光谱分析技术可能应用于地球大气监测领域。"
       },
       {
         "id": "6cf289ff65e1105f22a78c8588d810fb",
@@ -989,7 +1037,7 @@
         "original_title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
         "summary": "Google DeepMind宣布在亚太地区推出加速器项目，旨在利用AI技术帮助应对气候变化、自然灾害等环境风险，支持当地创新团队。",
         "rating": "A",
-        "score": 79,
+        "score": 76,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "AI for Climate成为科技巨头ESG战略重点，可能带动亚太区AI环保创业投资热潮，同时提升Google在区域的品牌影响力。",
@@ -1008,7 +1056,10 @@
         "published_at": "2026-05-22T05:30:09.035258",
         "source": "DeepMind Blog",
         "url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "",
+        "grade": "A",
+        "extension": "AI for Climate成为科技巨头ESG战略重点，可能带动亚太区AI环保创业投资热潮，同时提升Google在区域的品牌影响力。"
       },
       {
         "id": "6d2519f85ae9c4df36f9e26a19180261",
@@ -1017,7 +1068,7 @@
         "original_title": "See the clouds streaming and vanishing around this planet — 690 light years away",
         "summary": "詹姆斯·韦伯太空望远镜通过观测WASP-94A b行星过滤母星光线的方式，首次揭示该行星周围云层的流动与消散模式，为系外行星大气研究提供新视角。",
         "rating": "A",
-        "score": 78,
+        "score": 86,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "系外行星大气观测技术突破将推动天体物理学发展，相关数据处理算法和光谱分析技术可能反哺地球气候模型。",
@@ -1037,7 +1088,10 @@
         "published_at": "2026-05-22T05:30:09.035159",
         "source": "Nature - Issue - nature.com science feeds",
         "url": "https://www.nature.com/articles/d41586-026-01608-3",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Nature, Published online: 21 May 2026; doi:10.1038/d41586-026-01608-3 James Webb Space Telescope reveals weather patterns from how planet WASP-94 A b filters the light of its parent star.",
+        "grade": "A",
+        "extension": "系外行星大气观测技术突破将推动天体物理学发展，相关数据处理算法和光谱分析技术可能反哺地球气候模型。"
       },
       {
         "id": "ab09c306eb033686d177e83c64892117",
@@ -1046,7 +1100,7 @@
         "original_title": "Did a boy’s life-saving gene therapy cause his brain tumour?",
         "summary": "科学家追踪发现一例罕见病例，一名接受基因疗法治疗的男孩可能因治疗中使用的病毒载体而患上脑肿瘤，为基因治疗安全性敲响警钟。",
         "rating": "A",
-        "score": 86,
+        "score": 78,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "基因治疗安全性争议将引发监管审查收紧，可能影响相关生物技术公司股价和研发管线，推动更安全的递送载体研究。",
@@ -1066,7 +1120,10 @@
         "published_at": "2026-05-22T05:30:09.035174",
         "source": "Nature - Issue - nature.com science feeds",
         "url": "https://www.nature.com/articles/d41586-026-01593-7",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Nature, Published online: 21 May 2026; doi:10.1038/d41586-026-01593-7 Genetic sleuthing uncovers a rare case of cancer caused by a virus administered as part of a child’s treatment for a genetic disorder.",
+        "grade": "A",
+        "extension": "基因治疗安全性争议将引发监管审查收紧，可能影响相关生物技术公司股价和研发管线，推动更安全的递送载体研究。"
       },
       {
         "id": "1858025d57eec18cbebdd1f969214407",
@@ -2628,31 +2685,6 @@
       }
     ],
     "2026-05-21": [
-      {
-        "id": "8e01f69840fa190145f0bc9e7f8d3ba5",
-        "title": "alphaXiv与ACM CAIS达成合作，成为会议论文官方研究平台",
-        "chinese_title": "alphaXiv与ACM CAIS达成合作，成为会议论文官方研究平台",
-        "original_title": "alphaXiv 🤝 ACM CAIS We’re excited to announce our partnership with the ACM Conference on AI and Agentic Systems! alphaXiv will serve as the compli...",
-        "summary": "学术论文平台alphaXiv宣布与ACM人工智能与智能体系统会议（CAIS）建立合作关系，将作为该会议录用论文和系统演示的配套研究枢纽，帮助研究者发现和跟踪最新研究成果。",
-        "rating": "B",
-        "score": 68,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "学术平台与顶级会议的合作模式可能重塑论文传播链条，影响arXiv等传统预印本平台的市场份额。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/askalphaxiv/status/2057565305426354590"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779401095,
-        "published_at": "2026-05-22T06:04:55.917815",
-        "source": "x",
-        "url": "https://x.com/askalphaxiv/status/2057565305426354590",
-        "event_id": null
-      },
       {
         "id": "5f16dd8d187e8973730a5f820af2d102",
         "title": "Meta具身AI研究员Mikael Henaff离职加入AMI Labs",
@@ -29520,6 +29552,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-22T12:21:59.304069",
+  "last_updated": "2026-05-22T12:22:27.114253",
   "total_news": 1022
 }
