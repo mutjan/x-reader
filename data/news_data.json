@@ -70,17 +70,19 @@
       },
       {
         "id": "7db61071ee710bb9c33e4aed5f40cb44",
-        "title": "四万美元GPU服务器是否物有所值引发开发者热议",
-        "chinese_title": "四万美元GPU服务器是否物有所值引发开发者热议",
+        "title": "4.8万美元GPU服务器值不值？实测报告",
+        "chinese_title": "4.8万美元GPU服务器值不值？实测报告",
         "original_title": "Was my $48K GPU server worth it?",
-        "summary": "一篇关于花费48000美元购买GPU服务器的个人经验分享在Hacker News引发讨论，探讨个人AI开发和模型训练的硬件投资回报率。",
+        "summary": "作者分享购买并测试价值4.8万美元GPU服务器的实际体验，评估其在AI训练和推理中的性价比。",
         "rating": "B",
-        "score": 71,
-        "type": "hardware",
+        "score": 68,
+        "type": "tool",
         "typeName": "工具技巧",
         "expansion": "个人/小团队AI算力配置话题热度高，可延伸讨论消费级GPU与云算力的成本对比。",
         "entities": [
-          "NVIDIA"
+          "Ai训练",
+          "Gpu",
+          "算力"
         ],
         "sourceLinks": [
           {
@@ -96,7 +98,7 @@
         "event_id": null,
         "original_content": "Comments",
         "grade": "B",
-        "extension": "个人GPU投资热潮反映AI开发门槛变化，可能推动云算力服务商调整定价策略。"
+        "extension": "个人/小团队AI算力配置话题热度高，可延伸讨论消费级GPU与云算力的成本对比。"
       },
       {
         "id": "c4701e1badba17ac9dc06ad735104cc9",
@@ -1437,6 +1439,35 @@
         "extension": "AI辅助纯数学证明的突破将改变数学研究范式，可能引发关于AI在理论科学中角色的广泛讨论。"
       },
       {
+        "id": "4121e893b65b9ffa4f37c10f2bbfb652",
+        "title": "Eric Jang澄清播客中多步RL方差论述错误",
+        "chinese_title": "Eric Jang澄清播客中多步RL方差论述错误",
+        "original_title": "RT Eric Jang: I'd like to issue a clarification on the section covered around 1:33:44 of the podcast, where @dwarkesh_sp and I discuss multi-step vs. ...",
+        "summary": "Eric Jang在播客中关于多步强化学习方差高于单步RL的表述不够准确，发布详细勘误说明澄清技术细节。",
+        "rating": "B",
+        "score": 67,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "强化学习理论纠偏可能引发学术界对RL训练稳定性的重新讨论，影响LLM后训练路线选择。",
+        "entities": [
+          "Dwarkesh Patel",
+          "Eric Jang",
+          "强化学习"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/dwarkesh_sp/status/2057551367875555667"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779393988,
+        "published_at": "2026-05-22T04:06:28.124090",
+        "source": "x",
+        "url": "https://x.com/dwarkesh_sp/status/2057551367875555667",
+        "event_id": null
+      },
+      {
         "id": "808f5c960dc60880add5f466275c228e",
         "title": "企业客户借AI之势重构SaaS合同：未达AI承诺可中途退出，Intuit转向按量计费",
         "chinese_title": "企业客户借AI之势重构SaaS合同：未达AI承诺可中途退出，Intuit转向按量计费",
@@ -2712,35 +2743,6 @@
       }
     ],
     "2026-05-21": [
-      {
-        "id": "4121e893b65b9ffa4f37c10f2bbfb652",
-        "title": "Eric Jang澄清播客中多步RL方差论述错误",
-        "chinese_title": "Eric Jang澄清播客中多步RL方差论述错误",
-        "original_title": "RT Eric Jang: I'd like to issue a clarification on the section covered around 1:33:44 of the podcast, where @dwarkesh_sp and I discuss multi-step vs. ...",
-        "summary": "Eric Jang在播客中关于多步强化学习方差高于单步RL的表述不够准确，发布详细勘误说明澄清技术细节。",
-        "rating": "B",
-        "score": 67,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "强化学习理论纠偏可能引发学术界对RL训练稳定性的重新讨论，影响LLM后训练路线选择。",
-        "entities": [
-          "Dwarkesh Patel",
-          "Eric Jang",
-          "强化学习"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/dwarkesh_sp/status/2057551367875555667"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779393988,
-        "published_at": "2026-05-22T04:06:28.124090",
-        "source": "x",
-        "url": "https://x.com/dwarkesh_sp/status/2057551367875555667",
-        "event_id": null
-      },
       {
         "id": "5f16dd8d187e8973730a5f820af2d102",
         "title": "Meta具身AI研究员Mikael Henaff离职加入AMI Labs",
@@ -29608,6 +29610,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-22T12:23:00.531222",
+  "last_updated": "2026-05-22T13:02:16.107571",
   "total_news": 1023
 }
