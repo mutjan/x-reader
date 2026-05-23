@@ -2,6 +2,65 @@
   "news": {
     "2026-05-23": [
       {
+        "id": "2a4f7d4c81b14c81ba44da7065d9e5ea",
+        "title": "Anthropic警告：Claude Mythos发现漏洞速度超过开发者修复能力",
+        "chinese_title": "Anthropic警告：Claude Mythos发现漏洞速度超过开发者修复能力",
+        "original_title": "Anthropic warns Claude Mythos Preview finds bugs faster than developers can patch them",
+        "summary": "Anthropic的Claude Mythos Preview模型在Project Glasswing项目中发现超过1万个关键漏洞，但漏洞堆积速度超过修复能力。Anthropic警告当前处于高风险过渡期，尚无足够安全措施防止模型滥用。",
+        "rating": "A",
+        "score": 82,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "AI安全能力超越人类修复速度→引发对AI自主行动安全边界的讨论→可能影响全球软件安全标准和监管政策",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Project Glasswing"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/anthropic-warns-claude-mythos-preview-finds-bugs-faster-than-developers-can-patch-them/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779526902,
+        "published_at": "2026-05-23T17:01:42.698118",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/anthropic-warns-claude-mythos-preview-finds-bugs-faster-than-developers-can-patch-them/",
+        "event_id": null
+      },
+      {
+        "id": "209cdaf01b8864806bb081f28b45f946",
+        "title": "谷歌CEO皮查伊谈搜索未来与AI竞赛：公众质疑是挑战也是机遇",
+        "chinese_title": "谷歌CEO皮查伊谈搜索未来与AI竞赛：公众质疑是挑战也是机遇",
+        "original_title": "Q&A with Sundar Pichai on the future of Google Search, Google's place in the AI race, public skepticism toward AI, AI agents, AI safety, TPUs, and more (New York Times)",
+        "summary": "Google I/O后，Sundar Pichai接受《纽约时报》专访，讨论Google Search的未来、谷歌在AI竞赛中的定位、公众对AI的 skepticism、AI agents发展、AI安全及TPU等话题。",
+        "rating": "S",
+        "score": 95,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "谷歌搜索战略调整→影响SEO行业和内容生态→AI agent竞争格局变化→与OpenAI/Microsoft的直接对抗加剧",
+        "entities": [
+          "Google",
+          "Google Search",
+          "Sundar Pichai",
+          "Tpu"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260523/p4#a260523p4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779526902,
+        "published_at": "2026-05-23T17:01:42.698147",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260523/p4#a260523p4",
+        "event_id": null
+      },
+      {
         "id": "2ad3f46060e89bdc377abd498747b4c7",
         "title": "美容预约平台Fresha获KKR 8000万美元融资，估值突破10亿美元",
         "chinese_title": "美容预约平台Fresha获KKR 8000万美元融资，估值突破10亿美元",
@@ -29722,125 +29781,9 @@
         "source": "THE DECODER",
         "url": "https://the-decoder.com/ai-made-a-tiny-slice-of-silicon-valley-filthy-rich-and-left-the-rest-wondering-why-they-bother/",
         "event_id": null
-      },
-      {
-        "id": "e74817972dc5dcdc82b136285fe3fc8e",
-        "title": "Grok推出终端内AI视频生成工具，可在命令行直接创建视频内容",
-        "chinese_title": "Grok推出终端内AI视频生成工具，可在命令行直接创建视频内容",
-        "original_title": "you can use grok build to create interdimensional TV, all within your terminal, powered by grok imagine",
-        "summary": "xAI的Grok新增终端内视频生成功能Grok Build，用户可直接在命令行调用Grok Imagine模型创建视频，将AI视频创作集成到开发者工作流中。",
-        "rating": "B",
-        "score": 73,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "终端视频生成工具可能改变开发者内容创作方式，推动AI视频从GUI向CLI场景渗透，影响开发者工具和AI视频赛道竞争格局。",
-        "entities": [
-          "Grok",
-          "Grok Imagine",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/skcd42/status/2055553048026784143"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778918471,
-        "published_at": "2026-05-16T16:01:11.923579",
-        "source": "x",
-        "url": "https://x.com/skcd42/status/2055553048026784143",
-        "event_id": null
-      },
-      {
-        "id": "055863df75c9f2a28e4b38b2d45025d9",
-        "title": "AI2与伯克利推出EMO模型：仅保留12.5%专家即可维持近满性能",
-        "chinese_title": "AI2与伯克利推出EMO模型：仅保留12.5%专家即可维持近满性能",
-        "original_title": "Researchers train AI model that hits near-full performance with just 12.5 percent of its experts",
-        "summary": "Allen Institute for AI与UC Berkeley联合推出EMO混合专家模型，其专家按内容领域而非词类型 specialization，剪除87.5%专家后性能仅下降约1个百分点，为内存受限场景部署MoE模型提供新路径。",
-        "rating": "A",
-        "score": 80,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "MoE模型大幅压缩而不显著损失性能，可能加速大模型端侧部署和边缘计算应用，影响芯片算力需求和模型推理成本结构。",
-        "entities": [
-          "Allen Institute For Ai",
-          "Emo",
-          "Uc Berkeley"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/researchers-train-ai-model-that-hits-near-full-performance-with-just-12-5-percent-of-its-experts/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778918471,
-        "published_at": "2026-05-16T16:01:11.923634",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/researchers-train-ai-model-that-hits-near-full-performance-with-just-12-5-percent-of-its-experts/",
-        "event_id": null
-      },
-      {
-        "id": "1f0f53205ce529c72557af1929aa3930",
-        "title": "OpenAI产品组织架构重组，多名高管职责重新划分",
-        "chinese_title": "OpenAI产品组织架构重组，多名高管职责重新划分",
-        "original_title": "RT Max Zeff: Re Story has been updated. The new structure of OpenAI's product org is basically: @gdb is effectively head of product @thsottiaux leads ...",
-        "summary": "OpenAI调整产品组织架构，Kevin Weil统筹产品工作，Thomas Sottiaux负责核心产品/平台，Nick Turley领导企业业务，Ashley Alexander负责消费者产品。",
-        "rating": "A",
-        "score": 81,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "产品架构调整通常伴随战略重心转移，需关注OpenAI是否在加速超级应用和企业市场的双线布局，以及高管变动对竞品人才流动的影响。",
-        "entities": [
-          "Kevin Weil",
-          "Nick Turley",
-          "OpenAI",
-          "Thomas Sottiaux"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/ZeffMax/status/2055358243590005136"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778918471,
-        "published_at": "2026-05-16T16:01:11.923604",
-        "source": "x",
-        "url": "https://x.com/ZeffMax/status/2055358243590005136",
-        "event_id": null
-      },
-      {
-        "id": "f119ab758c2976adc06f673319081b22",
-        "title": "FrontierSmith开源：AI可自动合成开放式编程训练数据，效果超越人工筛选",
-        "chinese_title": "FrontierSmith开源：AI可自动合成开放式编程训练数据，效果超越人工筛选",
-        "original_title": "Open-ended coding training data may no longer be the bottleneck: AI can scale open-ended tasks—and even outperform human-expert curation. FrontierCS ...",
-        "summary": "Frontier团队发布FrontierSmith系统，通过将封闭式编程任务变异、过滤并构建可运行的优化环境，自动生成开放式编码训练数据，实验表明其训练效果优于人工筛选数据。",
-        "rating": "A",
-        "score": 76,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "开放式训练数据自动生成若规模化，将降低大模型训练数据瓶颈，可能改变AI训练数据产业链，对数据标注和合成赛道产生冲击。",
-        "entities": [
-          "Frontiercs",
-          "Frontiersmith"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/MangQiuyang/status/2055340003321164157"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778918471,
-        "published_at": "2026-05-16T16:01:11.923619",
-        "source": "x",
-        "url": "https://x.com/MangQiuyang/status/2055340003321164157",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-23T15:17:25.514010",
-  "total_news": 1034
+  "last_updated": "2026-05-23T17:01:43.388171",
+  "total_news": 1032
 }
