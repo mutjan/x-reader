@@ -2,6 +2,81 @@
   "news": {
     "2026-05-24": [
       {
+        "id": "bd95e62aa255ab15e15bcdc31e34fdc9",
+        "title": "视觉大模型与OCR方案长文档理解能力实测：LlamaCloud方案准确率领先",
+        "chinese_title": "视觉大模型与OCR方案长文档理解能力实测：LlamaCloud方案准确率领先",
+        "original_title": "Vision-capable LLMs vs. OCR for long-document (including charts, images, tables, etc.) QA [D]",
+        "summary": "研究者在MMLongBench-Doc基准上对比测试了视觉LLM直接读PDF与OCR流水线两种方案，发现LlamaCloud高级版配合全上下文策略以59.6%准确率领先，但成本也最高，为每查询0.19美元。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该测试结果将直接影响企业文档AI方案选型，可能推动多模态RAG技术路线分化，并影响相关云服务厂商的产品策略。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tm0cqg/visioncapable_llms_vs_ocr_for_longdocument/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779595585,
+        "published_at": "2026-05-24T12:06:25.387413",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tm0cqg/visioncapable_llms_vs_ocr_for_longdocument/",
+        "event_id": null
+      },
+      {
+        "id": "01da3b266a740158dcaf2ec502f11e9a",
+        "title": "研究者微调LLM扮演C-3PO，发现第一人称数据最利于角色注入",
+        "chinese_title": "研究者微调LLM扮演C-3PO，发现第一人称数据最利于角色注入",
+        "original_title": "I fine-tuned an LLM to be C-3PO to test which training data format works best for persona injection [P]",
+        "summary": "通过对比聊天演示、第一人称陈述和合成维基百科三种训练数据格式，实验发现第一人称陈述在角色泛化上表现最佳，而合成文档模型虽能识别角色特质却难以稳定表达。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该发现对AI角色扮演、虚拟助手个性化及游戏NPC智能化有重要参考价值，可能催生新的角色一致性训练方法论。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tlnvf0/i_finetuned_an_llm_to_be_c3po_to_test_which/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779595585,
+        "published_at": "2026-05-24T12:06:25.387437",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tlnvf0/i_finetuned_an_llm_to_be_c3po_to_test_which/",
+        "event_id": null
+      },
+      {
+        "id": "824f7954086e7757902937b9f340b5c0",
+        "title": "白宫附近发生枪击事件，嫌疑人向特勤局人员开火后被击毙",
+        "chinese_title": "白宫附近发生枪击事件，嫌疑人向特勤局人员开火后被击毙",
+        "original_title": "Suspect killed after opening fire on Secret Service agents near White House",
+        "summary": "一名嫌疑人在白宫附近向特勤局人员开火，随后被特勤局人员击毙，事件未造成特勤局人员伤亡，具体动机仍在调查中。",
+        "rating": "B",
+        "score": 70,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "该事件可能引发美国政治安保措施升级讨论，并对白宫周边安全部署产生直接影响。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.bbc.com/news/live/c5y09vpe713t"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779595585,
+        "published_at": "2026-05-24T12:06:25.387586",
+        "source": "Hacker News",
+        "url": "https://www.bbc.com/news/live/c5y09vpe713t",
+        "event_id": null
+      },
+      {
         "id": "c90dd5756c7ca6e4b80f4deabee8a7ee",
         "title": "SpaceX星舰V3首飞：史上最大火箭一小时后成功溅落印度洋",
         "chinese_title": "SpaceX星舰V3首飞：史上最大火箭一小时后成功溅落印度洋",
@@ -421,6 +496,106 @@
       }
     ],
     "2026-05-23": [
+      {
+        "id": "333f17dc38033f92a4664c6ddd2b136d",
+        "title": "研究者构建无反向传播Hebbian架构模型，神经元连接自然涌现",
+        "chinese_title": "研究者构建无反向传播Hebbian架构模型，神经元连接自然涌现",
+        "original_title": "Hebbian architecture AI model [R]",
+        "summary": "该模型完全摒弃反向传播和梯度计算，从1000个神经元起步逐步扩展到10万个，在CIFAR-10上训练50轮后神经元间连接自然形成，展示了类脑计算的新路径。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若Hebbian学习能在更大规模上验证有效，可能挑战当前深度学习范式，为边缘设备和神经形态芯片提供全新算法基础。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tlgcyf/hebbian_architecture_ai_model_r/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779595585,
+        "published_at": "2026-05-24T12:06:25.387465",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tlgcyf/hebbian_architecture_ai_model_r/",
+        "event_id": null
+      },
+      {
+        "id": "905fa75791efa03b0074fed4a0c82ff5",
+        "title": "研究者发现Transformer存在高阶优先级覆盖约束的对齐漏洞",
+        "chinese_title": "研究者发现Transformer存在高阶优先级覆盖约束的对齐漏洞",
+        "original_title": "Alignment: Higher order prioritizing over constraints [R]",
+        "summary": "实验观察到Transformer在预测下一token时，某种高阶语义优先级可能覆盖安全约束，这一现象为AI对齐和安全研究提供了新的攻击面和防御方向。",
+        "rating": "B",
+        "score": 72,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该发现可能促使OpenAI、Anthropic等实验室重新审视其安全对齐机制，并推动新一代约束优先级框架的研究。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tlg2ot/alignment_higher_order_prioritizing_over/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779595585,
+        "published_at": "2026-05-24T12:06:25.387476",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tlg2ot/alignment_higher_order_prioritizing_over/",
+        "event_id": null
+      },
+      {
+        "id": "b10f2fd44cb3608d9b8ff103af0b04b5",
+        "title": "AI个性化记忆是否真有必要？开发者质疑现有记忆功能过于浅薄",
+        "chinese_title": "AI个性化记忆是否真有必要？开发者质疑现有记忆功能过于浅薄",
+        "original_title": "Is personalized AI memory actually a problem worth solving or am I just coping[D]",
+        "summary": "社区讨论指出当前Claude和ChatGPT的记忆功能仅记录事实而非用户思维模式，提出应构建动态个人数据库，追踪用户的思维习惯、失败模式和有效解释方式。",
+        "rating": "B",
+        "score": 66,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "个性化AI记忆若实现突破，可能成为下一代AI助手的核心差异化能力，影响OpenAI、Anthropic等产品路线图。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tl9y7h/is_personalized_ai_memory_actually_a_problem/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779595585,
+        "published_at": "2026-05-24T12:06:25.387488",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tl9y7h/is_personalized_ai_memory_actually_a_problem/",
+        "event_id": null
+      },
+      {
+        "id": "cb867a4e72da5f732c990f40e76297a6",
+        "title": "开发者推出SM1：纯PyTorch实现的Scalar Mamba变体，Blackwell原生支持",
+        "chinese_title": "开发者推出SM1：纯PyTorch实现的Scalar Mamba变体，Blackwell原生支持",
+        "original_title": "I built a Mamba1 variant I call SM1 with d_state=1 that runs on Blackwell in pure PyTorch [P]",
+        "summary": "SM1将Mamba1的选择性扫描简化为两个PyTorch原生操作，在d_state=1设定下与序列计算完全等价，解决了Windows平台mamba-ssm编译困难及sm_120架构不支持的问题。",
+        "rating": "B",
+        "score": 69,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "SM1降低了Mamba架构的部署门槛，可能加速状态空间模型在Windows生态和新一代GPU上的普及，挑战Transformer在序列建模中的主导地位。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tl7f8z/i_built_a_mamba1_variant_i_call_sm1_with_d_state1/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779595585,
+        "published_at": "2026-05-24T12:06:25.387500",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tl7f8z/i_built_a_mamba1_variant_i_call_sm1_with_d_state1/",
+        "event_id": null
+      },
       {
         "id": "33ac52102a88e3a819cc018133ec8269",
         "title": "核聚变初创公司Deep Fission再度谋求上市，拟募资1.57亿美元",
@@ -2805,6 +2980,56 @@
       }
     ],
     "2026-05-22": [
+      {
+        "id": "aaef833f9b240467fe65e46952d24776",
+        "title": "NuExtract3开源发布：4B参数VLM专攻文档结构化提取，可自托管",
+        "chinese_title": "NuExtract3开源发布：4B参数VLM专攻文档结构化提取，可自托管",
+        "original_title": "NuExtract3 released: open-weight 4B VLM for Markdown, OCR and structured extraction (self-hostable) [P]",
+        "summary": "Numind推出基于Qwen3.5-4B的4B参数开源模型，支持PDF、截图、表单、表格、发票等多页文档的信息提取，采用Apache-2.0协议，可在HuggingFace免费体验。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "小型开源文档提取模型可能冲击LlamaCloud、Azure Document Intelligence等商业方案的市场，推动企业文档AI私有化部署。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tkejqr/nuextract3_released_openweight_4b_vlm_for/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779595585,
+        "published_at": "2026-05-24T12:06:25.387524",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tkejqr/nuextract3_released_openweight_4b_vlm_for/",
+        "event_id": null
+      },
+      {
+        "id": "b1b573bbc71aa9ca69d45a4c21983ef5",
+        "title": "实时电话人工检测系统：1-2秒内识别呼叫中心是否接通真人",
+        "chinese_title": "实时电话人工检测系统：1-2秒内识别呼叫中心是否接通真人",
+        "original_title": "Live Human Detector on Outbound Phone Calls [R]",
+        "summary": "研究者开发音频分类工具，在电话接通IVR导航后实时监听，在1-2秒上下文窗口内高置信度判断通话是否已从队列转接至真人客服，旨在减少人工等待时间。",
+        "rating": "B",
+        "score": 69,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术若成熟可广泛应用于智能客服、电销质检和呼叫中心自动化，可能催生实时语音AI检测的新细分市场。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tk8ht5/live_human_detector_on_outbound_phone_calls_r/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779595585,
+        "published_at": "2026-05-24T12:06:25.387533",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tk8ht5/live_human_detector_on_outbound_phone_calls_r/",
+        "event_id": null
+      },
       {
         "id": "52cf0af1169e691f2f0e9018da90e46b",
         "title": "崔添翼加入DeepSeek后现身V2EX发布招聘信息",
@@ -6355,6 +6580,81 @@
       }
     ],
     "2026-05-21": [
+      {
+        "id": "0f60a57660e7b3d4928666a05ec0b6f7",
+        "title": "生产环境VLM仍固守固定patch ViT？研究者质疑视觉tokenization滞后",
+        "chinese_title": "生产环境VLM仍固守固定patch ViT？研究者质疑视觉tokenization滞后",
+        "original_title": "Do VLMs in production still use fixed-patch ViTs for their vision capabilities? [D]",
+        "summary": "社区讨论指出，尽管学术界已提出多种自适应视觉tokenization方案，GPT-4V、Claude等大模型仍可能使用固定patch ViT，原因可能涉及推理效率、管线兼容性和扩展定律不确定性。",
+        "rating": "A",
+        "score": 76,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "若自适应视觉tokenization在生产环境验证有效，可能引发下一代多模态大模型的架构革新，影响OpenAI、Google等巨头的模型设计决策。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tjmrxm/do_vlms_in_production_still_use_fixedpatch_vits/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779595585,
+        "published_at": "2026-05-24T12:06:25.387556",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tjmrxm/do_vlms_in_production_still_use_fixedpatch_vits/",
+        "event_id": null
+      },
+      {
+        "id": "578f6e83251b92036c5294d0703cfe1c",
+        "title": "开源VLA模型实战对比：OpenVLA、pi0.6与WALL OSS选型指南",
+        "chinese_title": "开源VLA模型实战对比：OpenVLA、pi0.6与WALL OSS选型指南",
+        "original_title": "Looking for real world comparisons between WALL OSS pi0.6 and OpenVLA[D]",
+        "summary": "开发者正在评估三款开源视觉语言动作模型作为机器人操作基线，OpenVLA复现资料最丰富，pi0.6近期更新强劲但透明度不足，WALL OSS在UR5上推理延迟约70ms表现亮眼。",
+        "rating": "B",
+        "score": 67,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "开源VLA模型的选型对比将直接影响机器人研究社区的技术栈选择，可能决定哪款模型成为具身智能领域的默认基线。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tje2qd/looking_for_real_world_comparisons_between_wall/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779595585,
+        "published_at": "2026-05-24T12:06:25.387567",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tje2qd/looking_for_real_world_comparisons_between_wall/",
+        "event_id": null
+      },
+      {
+        "id": "d8893d4db8ce79aff61010dbde0bf9b2",
+        "title": "OpenAI通用推理模型发现反例，推翻Erdos平面单位距离猜想上界",
+        "chinese_title": "OpenAI通用推理模型发现反例，推翻Erdos平面单位距离猜想上界",
+        "original_title": "OpenAI claims a general-purpose reasoning model found a counterexample to Erdos's unit-distance bound [D]",
+        "summary": "OpenAI宣布其通用推理模型找到了Erdos平面单位距离问题中n^{1+O(1/log log n)}上界猜想的反例构造，并发布了完整证明PDF和推理过程摘要，引发数学界对AI辅助证明的广泛关注。",
+        "rating": "A+",
+        "score": 91,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这是AI在纯数学领域取得重大突破的标志性事件，可能改变数学研究方法论，加速AI for Science的接受度，并提升推理模型的学术地位。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tiy6s4/openai_claims_a_generalpurpose_reasoning_model/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779595585,
+        "published_at": "2026-05-24T12:06:25.387577",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tiy6s4/openai_claims_a_generalpurpose_reasoning_model/",
+        "event_id": null
+      },
       {
         "id": "5f16dd8d187e8973730a5f820af2d102",
         "title": "Meta具身AI研究员Mikael Henaff离职加入AMI Labs",
@@ -28796,157 +29096,9 @@
         "source": "Tom's Hardware",
         "url": "https://www.tomshardware.com/tech-industry/apache-helicopter-loyal-wingmen-support-drones-to-be-used-for-precision-strikes-other-duties-british-armys-project-nyx-funding-money-goes-to-four-firms-as-effort-hits-new-milestone",
         "event_id": null
-      },
-      {
-        "id": "775f8bb23046a1f15a376251be65ebfa",
-        "title": "OpenAI携手马耳他推全民AI计划，完成大学课程即送ChatGPT Plus年卡",
-        "chinese_title": "OpenAI携手马耳他推全民AI计划，完成大学课程即送ChatGPT Plus年卡",
-        "original_title": "OpenAI partners with Malta's AI for All initiative to give citizens a free year of ChatGPT Plus if they complete a University of Malta AI literacy course (Cointelegraph)",
-        "summary": "OpenAI与马耳他政府的\\\"AI for All\\\"计划达成合作，公民完成马耳他大学AI素养课程后可获得为期一年的免费ChatGPT Plus订阅，这是一次罕见的国家级AI普及尝试，目标是同时提升公民数字技能和AI使用率。",
-        "rating": "A",
-        "score": 81,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "国家级AI普及合作或成OpenAI拓展欧洲市场新模板，可能引发其他小国效仿；同时也可能加剧与Anthropic、Google在政府合作层面的竞争。",
-        "entities": [
-          "GPT",
-          "OpenAI",
-          "马耳他大学",
-          "马耳他政府"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260516/p13#a260516p13"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778990499,
-        "published_at": "2026-05-17T12:01:39.002403",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260516/p13#a260516p13",
-        "event_id": null
-      },
-      {
-        "id": "5bf98ce0b0fcfbed9cb6fdbf973fc171",
-        "title": "金星云层惊现绵延数千英里巨型波浪，科学家发现新异常",
-        "chinese_title": "金星云层惊现绵延数千英里巨型波浪，科学家发现新异常",
-        "original_title": "Scientists Detect Weird Anomalies in Clouds of Venus",
-        "summary": "Futurism报道，日本宇宙航空研究开发机构Akatsuki探测器在金星浓密云层中观测到长达3700英里、持续数日的巨型大气波动，引出对金星大气环流和潜在异常机制的新一轮研究。",
-        "rating": "B",
-        "score": 66,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延展至金星探测竞赛、NASA与JAXA后续任务，以及行星大气与气候建模对地球极端天气研究的启示。",
-        "entities": [
-          "Akatsuki",
-          "Jaxa",
-          "金星"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/space/scientists-weird-anomalies-in-clouds-of-venus"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778987010,
-        "published_at": "2026-05-17T11:03:30.281098",
-        "source": "Futurism",
-        "url": "https://futurism.com/space/scientists-weird-anomalies-in-clouds-of-venus",
-        "event_id": null
-      },
-      {
-        "id": "6b1bc37704380fe077782e1198622bc7",
-        "title": "OpenAI被曝在Codex中悄悄构建实时语音模式，1536行Rust代码已就位",
-        "chinese_title": "OpenAI被曝在Codex中悄悄构建实时语音模式，1536行Rust代码已就位",
-        "original_title": "Found it. @OpenAI is quietly building realtime voice mode into Codex. You talk, the model talks back, a background agent does the actual coding while ...",
-        "summary": "有开发者从代码仓库中发现，OpenAI正在Codex中加入实时语音交互能力：用户开口说话，模型边回应边由后台Agent完成实际编码任务，相关Rust代码已写入仓库，只待服务端开启功能开关。",
-        "rating": "A",
-        "score": 81,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "若实时语音编码上线，将冲击Cursor、Windsurf等AI编程工具的体验定位；也可能带动语音交互式IDE的新一轮产品竞争。",
-        "entities": [
-          "Codex",
-          "OpenAI",
-          "Rust"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/DevAdventur3s/status/2055765342484590774"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778987010,
-        "published_at": "2026-05-17T11:03:30.281011",
-        "source": "x",
-        "url": "https://x.com/DevAdventur3s/status/2055765342484590774",
-        "event_id": null
-      },
-      {
-        "id": "4db11f91163850c7151525c0d8310482",
-        "title": "中美大模型清单晒出后，欧洲的AI存在感再被追问",
-        "chinese_title": "中美大模型清单晒出后，欧洲的AI存在感再被追问",
-        "original_title": "USA has ChatGPT USA has Grok USA has Claude USA has Gemini China has DeepSeek China has Qwen China has Kimi China has MiniMax Europe has?",
-        "summary": "一条社交推文列出美国的ChatGPT、Grok、Claude、Gemini和中国的DeepSeek、Qwen、Kimi、MiniMax，反问欧洲有什么代表性大模型，引出对欧洲AI生态空白的再次质疑。",
-        "rating": "B",
-        "score": 68,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸盘点欧洲AI力量Mistral、Aleph Alpha等的处境，并讨论欧盟AI法案与产业竞争之间的张力。",
-        "entities": [
-          "Claude",
-          "DeepSeek",
-          "GPT",
-          "Gemini",
-          "Grok"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/DanielSmidstrup/status/2055660793866207648"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778987010,
-        "published_at": "2026-05-17T11:03:30.281051",
-        "source": "x",
-        "url": "https://x.com/DanielSmidstrup/status/2055660793866207648",
-        "event_id": null
-      },
-      {
-        "id": "61e230cb862cd40bf01bd00624a31c29",
-        "title": "The Verge 2026笔记本推荐榜出炉，覆盖MacBook到游戏本",
-        "chinese_title": "The Verge 2026笔记本推荐榜出炉，覆盖MacBook到游戏本",
-        "original_title": "These are the laptops I recommend for pretty much anyone",
-        "summary": "The Verge更新2026年笔记本推荐清单，覆盖廉价Windows本、Chromebook、MacBook与高端游戏本等多个场景，给出不同人群的选购理由和适用建议。",
-        "rating": "B",
-        "score": 68,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可串联AI PC概念落地、Copilot+ PC普及，以及苹果M系列芯片演进对Windows阵营的压力。",
-        "entities": [
-          "Macbook",
-          "The Verge",
-          "Windows"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/gadgets/931638/best-laptops-macbooks-windows-gaming-2026"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1778987010,
-        "published_at": "2026-05-17T11:03:30.281128",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/gadgets/931638/best-laptops-macbooks-windows-gaming-2026",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-24T11:01:53.435188",
-  "total_news": 1003
+  "last_updated": "2026-05-24T12:06:26.052263",
+  "total_news": 1010
 }
