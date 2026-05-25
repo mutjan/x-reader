@@ -2,6 +2,216 @@
   "news": {
     "2026-05-25": [
       {
+        "id": "8ed7cecf54c8405bec0d1e3ab81d4a97",
+        "title": "硅谷AI公司集体抛弃职级体系，Bell Labs的MTS头衔正在回归",
+        "chinese_title": "硅谷AI公司集体抛弃职级体系，Bell Labs的MTS头衔正在回归",
+        "original_title": "Tech industry spent decades building a title and leveling system. Greg brought the “Member of Technical Staff”, originally invented at Bell Labs, to...",
+        "summary": "OpenAI、Anthropic、xAI等AI公司开始采用Bell Labs发明的\\\"Member of Technical Staff\\\"扁平化头衔，淡化层级差异，让年轻工程师也能产生重大影响，这一趋势正在改变硅谷的人才文化。",
+        "rating": "A",
+        "score": 81,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这一变化可能引发传统科技大厂的职级体系改革，进而影响全球科技行业的人才招聘和薪酬结构，猎头行业也需要重新建立评估标准。",
+        "entities": [
+          "Anthropic",
+          "Bell Labs",
+          "Databricks",
+          "OpenAI",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Yuchenj_UW/status/2058767310832480349"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779689176,
+        "published_at": "2026-05-25T14:06:16.065452",
+        "source": "x",
+        "url": "https://x.com/Yuchenj_UW/status/2058767310832480349",
+        "event_id": null
+      },
+      {
+        "id": "9c1808f2f51b4c4031a76c249c9598ee",
+        "title": "Shannon缩放定律挑战传统幂律：大模型训练存在最优规模拐点",
+        "chinese_title": "Shannon缩放定律挑战传统幂律：大模型训练存在最优规模拐点",
+        "original_title": "Shannon Scaling Law tries to model where scaling stops being monotonic. The setup treats LLM training like a noisy channel: - model size = bandwidth -...",
+        "summary": "研究者提出Shannon缩放定律，将LLM训练建模为噪声信道，发现模型规模并非越大越好，存在信号噪声比决定的最优训练规模，成功预测了Pythia 12B模型的损失曲线。",
+        "rating": "A",
+        "score": 79,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若该理论被验证，将直接影响AI公司的算力投资决策和模型训练策略，可能导致行业从盲目堆参数转向更精细的训练效率优化。",
+        "entities": [
+          "Olmo",
+          "OpenAI",
+          "Pythia",
+          "Shannon Scaling Law"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/gm8xx8/status/2058757168862482523"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779689176,
+        "published_at": "2026-05-25T14:06:16.065477",
+        "source": "x",
+        "url": "https://x.com/gm8xx8/status/2058757168862482523",
+        "event_id": null
+      },
+      {
+        "id": "0b9ad355d9c6eb3ee8bfec88498255a2",
+        "title": "华为宣布芯片设计突破，计划2031年实现等效1.4nm工艺",
+        "chinese_title": "华为宣布芯片设计突破，计划2031年实现等效1.4nm工艺",
+        "original_title": "RT Andrew Curran: Huawei says it has made a breakthrough and expects to design high-end chips with transistor density equivalent to 1.4 nm processes b...",
+        "summary": "华为宣布在芯片设计领域取得突破，预计到2031年能够设计出晶体管密度等效于1.4nm制程的高端芯片，持续追赶国际先进制程水平。",
+        "rating": "A",
+        "score": 80,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "华为芯片进展将牵动中国半导体产业链上下游，影响国产EDA工具、设备材料和封装测试等环节的投资布局，同时加剧中美科技竞争态势。",
+        "entities": [
+          "制程工艺",
+          "华为",
+          "芯片"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/tszzl/status/2058761231985672242"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779689176,
+        "published_at": "2026-05-25T14:06:16.065493",
+        "source": "x",
+        "url": "https://x.com/tszzl/status/2058761231985672242",
+        "event_id": null
+      },
+      {
+        "id": "4ba55c61ccf2dacb1a995908be581f56",
+        "title": "华为昇腾A3专用调度系统HyperParallel-MoE提升MoE训练效率",
+        "chinese_title": "华为昇腾A3专用调度系统HyperParallel-MoE提升MoE训练效率",
+        "original_title": "RT 𝚐𝔪𝟾𝚡𝚡𝟾: HyperParallel-MoE is an Ascend-specific scheduling system for MoE training. Ascend A3 exposes separate AIC matrix units a...",
+        "summary": "华为昇腾团队推出HyperParallel-MoE调度系统，针对Ascend A3芯片的异构计算单元进行深度优化，通过静态异构任务流实现矩阵计算与通信的细粒度重叠，在DeepSeek风格MoE模型上实现1.49-1.58倍的延迟降低。",
+        "rating": "A",
+        "score": 84,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "国产AI芯片软件生态的成熟将降低对英伟达GPU的依赖，推动中国AI算力基础设施的自主可控，同时影响MindSpore框架在开发者中的采用率。",
+        "entities": [
+          "DeepSeek",
+          "Mindspore",
+          "Moe",
+          "华为",
+          "昇腾"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/teortaxesTex/status/2058767354570379491"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779689176,
+        "published_at": "2026-05-25T14:06:16.065508",
+        "source": "x",
+        "url": "https://x.com/teortaxesTex/status/2058767354570379491",
+        "event_id": null
+      },
+      {
+        "id": "d223ecd0ecd43b8c3a3d17afe2d29b4e",
+        "title": "Kimi重构命令行工具，从Python迁移至TypeScript技术栈",
+        "chinese_title": "Kimi重构命令行工具，从Python迁移至TypeScript技术栈",
+        "original_title": "翻译一下，Kimi 自己基于 Python 写的 kimi-cli，在今天换成了基于 Typescript 和 pi-tui 写的新 kimi-code。 已经在 PUA 对应的研发小哥哥加一些我在 Claude Co...",
+        "summary": "月之暗面将Kimi的命令行工具从Python版本的kimi-cli全面重构为基于TypeScript和pi-tui的kimi-code，以提升开发体验和功能扩展能力。",
+        "rating": "B",
+        "score": 72,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Kimi在开发者工具上的投入增加，可能加剧与Claude Code、Cursor等AI编程助手的竞争，推动国产大模型在开发者生态中的渗透。",
+        "entities": [
+          "Claude Code",
+          "Kimi",
+          "Typescript",
+          "月之暗面"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/amehochan/status/2058738716840255990"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779689176,
+        "published_at": "2026-05-25T14:06:16.065521",
+        "source": "x",
+        "url": "https://x.com/amehochan/status/2058738716840255990",
+        "event_id": null
+      },
+      {
+        "id": "05f2537da7b4b4beab41272cb394221f",
+        "title": "Meta CTO Boz主导公司全面向AI优先转型",
+        "chinese_title": "Meta CTO Boz主导公司全面向AI优先转型",
+        "original_title": "A profile of Meta CTO Andrew \"Boz\" Bosworth, a top lieutenant of Mark Zuckerberg who is leading the gargantuan effort to transform Meta into an AI-first company (Meghan Bobrowsky/Wall Street Journal)",
+        "summary": "Meta首席技术官Andrew Bosworth正领导一场大规模变革，推动Meta从社交媒体公司向AI优先企业转型，重塑公司 workforce 和工作方式。",
+        "rating": "A",
+        "score": 81,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "Meta的AI转型战略将影响其广告业务、元宇宙投入和人才结构，同时与Google、OpenAI在AI应用层的竞争将更加白热化。",
+        "entities": [
+          "Andrew Bosworth",
+          "Mark Zuckerberg",
+          "Meta"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260525/p3#a260525p3"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779689176,
+        "published_at": "2026-05-25T14:06:16.065580",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260525/p3#a260525p3",
+        "event_id": null
+      },
+      {
+        "id": "51d1cb16d6d03d7c9c5f9fcb44d57cdd",
+        "title": "DeepSeek模型优化降低HBM依赖，国产AI硬件生态有望破局",
+        "chinese_title": "DeepSeek模型优化降低HBM依赖，国产AI硬件生态有望破局",
+        "original_title": "A look at DeepSeek's model optimization to reduce HBM use, potentially enabling domestic memory, ASIC, and CPU makers to create a Chinese AI hardware ecosystem (@bookwormengr)",
+        "summary": "DeepSeek通过模型优化技术减少对高带宽内存HBM的依赖，这可能让国内内存、ASIC和CPU厂商有机会构建自主的AI硬件生态系统，降低对英伟达供应链的依赖。",
+        "rating": "S",
+        "score": 95,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "若DeepSeek的技术路线被验证可行，将直接利好国产存储芯片和AI芯片厂商，推动中国AI基础设施的自主替代进程。",
+        "entities": [
+          "Asic",
+          "DeepSeek",
+          "Hbm",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (deepseek)",
+            "url": "https://www.techmeme.com/260525/p2#a260525p2"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779689176,
+        "published_at": "2026-05-25T14:06:16.065592",
+        "source": "Techmeme (deepseek)",
+        "url": "https://www.techmeme.com/260525/p2#a260525p2",
+        "event_id": null
+      },
+      {
         "id": "c7ef77e5293e5b93ac2befc53b9c52fe",
         "title": "华为昇腾A3推出HyperParallel-MoE调度系统，MoE训练效率提升近1.6倍",
         "chinese_title": "华为昇腾A3推出HyperParallel-MoE调度系统，MoE训练效率提升近1.6倍",
@@ -87,6 +297,94 @@
         "published_at": "2026-05-25T12:08:53.010005",
         "source": "x",
         "url": "https://x.com/bearliu/status/2058711168202506368",
+        "event_id": null
+      },
+      {
+        "id": "f7fafea7a7ac04ae03e741219b51d6fc",
+        "title": "Box沙箱平台发布：为AI Agent提供简单强大的隔离运行环境",
+        "chinese_title": "Box沙箱平台发布：为AI Agent提供简单强大的隔离运行环境",
+        "original_title": "introducing box📦 simple, powerful sandboxes for agents and the most affordable as well",
+        "summary": "Box是一款专为AI Agent设计的沙箱平台，强调简单易用、功能强大且价格亲民，旨在为Agent提供安全的代码执行和运行环境。",
+        "rating": "A",
+        "score": 85,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Agent沙箱需求增长→AI安全执行环境成为基础设施→可能改变开发者工具市场格局→与OpenAI、Anthropic等平台的集成潜力",
+        "entities": [
+          "Ai Agent",
+          "Box"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/AniC_dev/status/2058652162536755401"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779682133,
+        "published_at": "2026-05-25T12:08:53.010017",
+        "source": "x",
+        "url": "https://x.com/AniC_dev/status/2058652162536755401",
+        "event_id": null
+      },
+      {
+        "id": "d8a20c69f4fc6e8549ec50a6fddfdcf8",
+        "title": "MAP研究获ICML Oral收录，为Agent系统研究提供数据驱动洞察",
+        "chinese_title": "MAP研究获ICML Oral收录，为Agent系统研究提供数据驱动洞察",
+        "original_title": "Excited to share that MAP has been selected for ✨ICML Oral✨ We look forward to sharing the insights in the paper with the community And much much ap...",
+        "summary": "MAP（Multi-Agent Playground）研究被ICML 2026接收为Oral论文，该研究通过大规模实验为Agent系统领域提供了数据驱动的研究方向洞察，有助于推动该领域的科学发展。",
+        "rating": "A",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "Agent系统学术研究突破→ICML顶会认可→推动多Agent协作标准化→对工业界Agent产品设计的指导意义",
+        "entities": [
+          "Agent系统",
+          "Icml",
+          "Map",
+          "Melissa Pan"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/melissapan/status/2058571791216562236"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779682133,
+        "published_at": "2026-05-25T12:08:53.010043",
+        "source": "x",
+        "url": "https://x.com/melissapan/status/2058571791216562236",
+        "event_id": null
+      },
+      {
+        "id": "feadc56b1de020d118f4b92c0c9074ae",
+        "title": "京东在宿迁启动国内首个具身智能数据采集社区，计划动员10万市民参与",
+        "chinese_title": "京东在宿迁启动国内首个具身智能数据采集社区，计划动员10万市民参与",
+        "original_title": "China is entering an era in which everyone is a data collector http://JD.com launched China’s first Embodied AI Data Collection Community in Suqian,J...",
+        "summary": "京东在创始人刘强东家乡江苏宿迁启动中国首个具身智能数据采集社区，计划动员超10万本地市民佩戴JoyEgoCam设备采集日常生活场景中的生物力学数据，目标两年内积累超1000万小时真实物理世界数据，解决机器人训练数据短缺难题。",
+        "rating": "S",
+        "score": 92,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "众包数据采集模式→降低机器人训练成本→加速具身智能落地→可能改变AI数据产业格局→对隐私和数据安全的挑战",
+        "entities": [
+          "Joyegocam",
+          "京东",
+          "具身智能",
+          "宿迁"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/CyberRobooo/status/2058551782046113807"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779682133,
+        "published_at": "2026-05-25T12:08:53.010055",
+        "source": "x",
+        "url": "https://x.com/CyberRobooo/status/2058551782046113807",
         "event_id": null
       },
       {
@@ -1696,91 +1994,61 @@
     ],
     "2026-05-24": [
       {
-        "id": "f7fafea7a7ac04ae03e741219b51d6fc",
-        "title": "Box沙箱平台发布：为AI Agent提供简单强大的隔离运行环境",
-        "chinese_title": "Box沙箱平台发布：为AI Agent提供简单强大的隔离运行环境",
-        "original_title": "introducing box📦 simple, powerful sandboxes for agents and the most affordable as well",
-        "summary": "Box是一款专为AI Agent设计的沙箱平台，强调简单易用、功能强大且价格亲民，旨在为Agent提供安全的代码执行和运行环境。",
-        "rating": "A",
-        "score": 85,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Agent沙箱需求增长→AI安全执行环境成为基础设施→可能改变开发者工具市场格局→与OpenAI、Anthropic等平台的集成潜力",
-        "entities": [
-          "Ai Agent",
-          "Box"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/AniC_dev/status/2058652162536755401"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779682133,
-        "published_at": "2026-05-25T12:08:53.010017",
-        "source": "x",
-        "url": "https://x.com/AniC_dev/status/2058652162536755401",
-        "event_id": null
-      },
-      {
-        "id": "d8a20c69f4fc6e8549ec50a6fddfdcf8",
-        "title": "MAP研究获ICML Oral收录，为Agent系统研究提供数据驱动洞察",
-        "chinese_title": "MAP研究获ICML Oral收录，为Agent系统研究提供数据驱动洞察",
-        "original_title": "Excited to share that MAP has been selected for ✨ICML Oral✨ We look forward to sharing the insights in the paper with the community And much much ap...",
-        "summary": "MAP（Multi-Agent Playground）研究被ICML 2026接收为Oral论文，该研究通过大规模实验为Agent系统领域提供了数据驱动的研究方向洞察，有助于推动该领域的科学发展。",
-        "rating": "A",
-        "score": 76,
+        "id": "1926c9180fa8a6f79474d9b85560eb2f",
+        "title": "DeepMind团队用AI一次性解决9道Erdos数学难题",
+        "chinese_title": "DeepMind团队用AI一次性解决9道Erdos数学难题",
+        "original_title": "继 OpenAI 宣布他们用 AI 解决了一道Erdos 数学难题后，Google DeepMind 团队今天宣布他们又解决了9道 Erdos 数学难题。。。 AI 之间的竞争，开始进入人类未知领...",
+        "summary": "继OpenAI之后，Google DeepMind团队宣布其AI系统通过LLM与Lean证明助手的自主循环协作，成功攻克9道Erdos开放数学难题，所有结果均经过形式化验证。",
+        "rating": "A+",
+        "score": 90,
         "type": "research",
         "typeName": "研究成果",
-        "expansion": "Agent系统学术研究突破→ICML顶会认可→推动多Agent协作标准化→对工业界Agent产品设计的指导意义",
+        "expansion": "AI在纯数学领域的连续突破可能重塑数学研究范式，加速人类对未解难题的探索，同时引发关于AI在基础科学中角色的深层讨论。",
         "entities": [
-          "Agent系统",
-          "Icml",
-          "Map",
-          "Melissa Pan"
+          "DeepMind",
+          "Erdos",
+          "Lean",
+          "OpenAI"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/melissapan/status/2058571791216562236"
+            "url": "https://x.com/Tz_2022/status/2058656411924439285"
           }
         ],
         "sources": 1,
-        "timestamp": 1779682133,
-        "published_at": "2026-05-25T12:08:53.010043",
+        "timestamp": 1779689176,
+        "published_at": "2026-05-25T14:06:16.065544",
         "source": "x",
-        "url": "https://x.com/melissapan/status/2058571791216562236",
+        "url": "https://x.com/Tz_2022/status/2058656411924439285",
         "event_id": null
       },
       {
-        "id": "feadc56b1de020d118f4b92c0c9074ae",
-        "title": "京东在宿迁启动国内首个具身智能数据采集社区，计划动员10万市民参与",
-        "chinese_title": "京东在宿迁启动国内首个具身智能数据采集社区，计划动员10万市民参与",
-        "original_title": "China is entering an era in which everyone is a data collector http://JD.com launched China’s first Embodied AI Data Collection Community in Suqian,J...",
-        "summary": "京东在创始人刘强东家乡江苏宿迁启动中国首个具身智能数据采集社区，计划动员超10万本地市民佩戴JoyEgoCam设备采集日常生活场景中的生物力学数据，目标两年内积累超1000万小时真实物理世界数据，解决机器人训练数据短缺难题。",
-        "rating": "S",
-        "score": 92,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "众包数据采集模式→降低机器人训练成本→加速具身智能落地→可能改变AI数据产业格局→对隐私和数据安全的挑战",
+        "id": "a39aca141a63866a6f6838f11c245fe7",
+        "title": "DeltaBox实现毫秒级AI Agent状态回滚，树搜索效率大幅提升",
+        "chinese_title": "DeltaBox实现毫秒级AI Agent状态回滚，树搜索效率大幅提升",
+        "original_title": "刚刷到这篇，有点牛。本质上，AI agent并行探索或树搜索时，每次checkpoint/rollback都要备份整个文件+进程状态，慢到几百毫秒。DeltaBox发现：连续检查点其实高...",
+        "summary": "DeltaBox系统通过增量检查点技术，将AI Agent并行探索时的checkpoint/rollback耗时从数百毫秒降至14ms，使Agent在相同时间内可搜索更多节点，显著提升复杂任务求解能力。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "Agent执行效率的质变可能加速AI Agent在软件开发、科学研究等复杂场景的实际落地，推动从演示到生产环境的跨越。",
         "entities": [
-          "Joyegocam",
-          "京东",
-          "具身智能",
-          "宿迁"
+          "Deltabox",
+          "Swe-Bench"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/CyberRobooo/status/2058551782046113807"
+            "url": "https://x.com/vintcessun/status/2058593852110651489"
           }
         ],
         "sources": 1,
-        "timestamp": 1779682133,
-        "published_at": "2026-05-25T12:08:53.010055",
+        "timestamp": 1779689176,
+        "published_at": "2026-05-25T14:06:16.065556",
         "source": "x",
-        "url": "https://x.com/CyberRobooo/status/2058551782046113807",
+        "url": "https://x.com/vintcessun/status/2058593852110651489",
         "event_id": null
       },
       {
@@ -28069,6 +28337,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-25T12:08:53.603493",
-  "total_news": 976
+  "last_updated": "2026-05-25T14:10:07.348708",
+  "total_news": 985
 }
