@@ -2,6 +2,155 @@
   "news": {
     "2026-05-25": [
       {
+        "id": "4c2b26259b7865edfcb78ecba1ebeccd",
+        "title": "AI生成代码威胁加剧，安全工程师需求激增11%",
+        "chinese_title": "AI生成代码威胁加剧，安全工程师需求激增11%",
+        "original_title": "Demand for security engineers is surging, with job postings up 11% YoY in Q1, driven by threats from AI-generated code and models like Mythos and GPT-5.4-Cyber (Kate Conger/New York Times)",
+        "summary": "受AI生成代码和Mythos、GPT-5.4-Cyber等模型带来的安全威胁推动，2026年Q1安全工程师招聘职位同比增长11%，网络安全人才市场持续升温。",
+        "rating": "B",
+        "score": 72,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "AI代码生成普及→安全漏洞增加→企业安全投入上升→安全工具/培训市场扩大，可能带动A股网络安全板块关注。",
+        "entities": [
+          "GPT",
+          "Kate Conger",
+          "Mythos",
+          "New York Times",
+          "网络安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260524/p12#a260524p12"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779670887,
+        "published_at": "2026-05-25T09:01:27.390899",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260524/p12#a260524p12",
+        "event_id": null
+      },
+      {
+        "id": "346aca034de7fb48986c86ef96d7e91a",
+        "title": "开发者用纯Go实现零CGO的CUDA绑定库，支持GPU内存分配与内核调用",
+        "chinese_title": "开发者用纯Go实现零CGO的CUDA绑定库，支持GPU内存分配与内核调用",
+        "original_title": "Working on a cgo-free CUDA binding in Go for ML stuff Week 3 - open source [P]",
+        "summary": "一位开发者基于purego技术实现了无需CGO的Go语言CUDA绑定库gocudrv，通过runtime.LockOSThread解决goroutine线程切换导致的CUDA上下文问题，已在RTX 4070 Ti上完成向量加法测试。",
+        "rating": "B",
+        "score": 68,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该项目若成熟，可能推动Go在AI基础设施领域的采用率，影响相关开发者工具链生态。",
+        "entities": [
+          "CUDA",
+          "Go",
+          "Gocudrv",
+          "Purego"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tmb4qw/working_on_a_cgofree_cuda_binding_in_go_for_ml/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779667341,
+        "published_at": "2026-05-25T08:02:21.115735",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tmb4qw/working_on_a_cgofree_cuda_binding_in_go_for_ml/",
+        "event_id": null
+      },
+      {
+        "id": "9ba1f3cf62873e814855c8c41a383e93",
+        "title": "极客打造赛博朋克2077主题夹克，柔性OLED衣领可运行Steam游戏",
+        "chinese_title": "极客打造赛博朋克2077主题夹克，柔性OLED衣领可运行Steam游戏",
+        "original_title": "Cyberpunk 2077 cosplay jacket features a $1,200 flexible OLED collar that you can game on with a Steam Controller — dual Raspberry Pi 4s power the wearable tech",
+        "summary": "一位机器人与动画cosplay爱好者制作出带有1200美元柔性OLED显示屏衣领的实体Cyberpunk 2077 NUSA渗透者夹克，由双树莓派4驱动，可用Steam手柄在衣领上玩游戏。",
+        "rating": "B",
+        "score": 66,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "柔性显示与可穿戴计算的结合展示了消费级硬件DIY的极限，可能启发更多创客项目。",
+        "entities": [
+          "Cyberpunk 2077",
+          "Oled",
+          "Raspberry Pi",
+          "Steam"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/peripherals/wearable-tech/cyberpunk-2077-cosplay-jacket-features-a-usd1-200-flexible-oled-collar-that-you-can-actually-play-games-on-with-a-steam-controller-dual-raspberry-pi-4s-power-the-wearable-tech"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779667341,
+        "published_at": "2026-05-25T08:02:21.115796",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/peripherals/wearable-tech/cyberpunk-2077-cosplay-jacket-features-a-usd1-200-flexible-oled-collar-that-you-can-actually-play-games-on-with-a-steam-controller-dual-raspberry-pi-4s-power-the-wearable-tech",
+        "event_id": null
+      },
+      {
+        "id": "7517a7e640ceb5c118a5efb065308bc9",
+        "title": "创作者用AI辅助制作15分钟君士坦丁堡陷落史诗电影，YouTube播放量破36万",
+        "chinese_title": "创作者用AI辅助制作15分钟君士坦丁堡陷落史诗电影，YouTube播放量破36万",
+        "original_title": "Fall of Constantinople 1453 - A 15min Cinematic Movie About the Last Day of Rome",
+        "summary": "一位创作者发布了AI辅助制作的15分钟历史战争电影《君士坦丁堡陷落1453》，以电影化叙事重现东罗马帝国最后一天，此前作品在YouTube已获得超36万次观看。",
+        "rating": "B",
+        "score": 72,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "AI辅助历史影视创作正在形成新的内容品类，可能冲击传统纪录片制作模式。",
+        "entities": [
+          "Theodore_70",
+          "Youtube"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1tlsv4f/fall_of_constantinople_1453_a_15min_cinematic/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779667341,
+        "published_at": "2026-05-25T08:02:21.115807",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1tlsv4f/fall_of_constantinople_1453_a_15min_cinematic/",
+        "event_id": null
+      },
+      {
+        "id": "a918ee6635fba070d5297fbadeedde19",
+        "title": "机器人模仿学习训练瓶颈：A4500 GPU利用率仅20%，优化器步骤占62%时间",
+        "chinese_title": "机器人模仿学习训练瓶颈：A4500 GPU利用率仅20%，优化器步骤占62%时间",
+        "original_title": "pipeline is really slow - consulting [D]",
+        "summary": "一位研究者在Reddit求助，其基于DiT扩散策略的机器人模仿学习管线在NVIDIA A4500上GPU利用率仅20-30%，PyTorch Profiler显示优化器步骤占62.4%训练时间，远慢于论文报告的RTX 4090训练速度。",
+        "rating": "B",
+        "score": 67,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若该瓶颈具有普遍性，可能推动针对扩散策略训练的优化器加速研究，影响机器人学习社区工具链。",
+        "entities": [
+          "Dit",
+          "NVIDIA",
+          "Pytorch",
+          "Resnet18"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tlna8o/pipeline_is_really_slow_consulting_d/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779667341,
+        "published_at": "2026-05-25T08:02:21.115822",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tlna8o/pipeline_is_really_slow_consulting_d/",
+        "event_id": null
+      },
+      {
         "id": "45e0d327e1f984c329b78afcd4c89e45",
         "title": "Hugging Face重启PapersWithCode，首周上线多指标排行与论文谱系功能",
         "chinese_title": "Hugging Face重启PapersWithCode，首周上线多指标排行与论文谱系功能",
@@ -1074,124 +1223,6 @@
       }
     ],
     "2026-05-24": [
-      {
-        "id": "346aca034de7fb48986c86ef96d7e91a",
-        "title": "开发者用纯Go实现零CGO的CUDA绑定库，支持GPU内存分配与内核调用",
-        "chinese_title": "开发者用纯Go实现零CGO的CUDA绑定库，支持GPU内存分配与内核调用",
-        "original_title": "Working on a cgo-free CUDA binding in Go for ML stuff Week 3 - open source [P]",
-        "summary": "一位开发者基于purego技术实现了无需CGO的Go语言CUDA绑定库gocudrv，通过runtime.LockOSThread解决goroutine线程切换导致的CUDA上下文问题，已在RTX 4070 Ti上完成向量加法测试。",
-        "rating": "B",
-        "score": 68,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "该项目若成熟，可能推动Go在AI基础设施领域的采用率，影响相关开发者工具链生态。",
-        "entities": [
-          "CUDA",
-          "Go",
-          "Gocudrv",
-          "Purego"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tmb4qw/working_on_a_cgofree_cuda_binding_in_go_for_ml/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779667341,
-        "published_at": "2026-05-25T08:02:21.115735",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tmb4qw/working_on_a_cgofree_cuda_binding_in_go_for_ml/",
-        "event_id": null
-      },
-      {
-        "id": "9ba1f3cf62873e814855c8c41a383e93",
-        "title": "极客打造赛博朋克2077主题夹克，柔性OLED衣领可运行Steam游戏",
-        "chinese_title": "极客打造赛博朋克2077主题夹克，柔性OLED衣领可运行Steam游戏",
-        "original_title": "Cyberpunk 2077 cosplay jacket features a $1,200 flexible OLED collar that you can game on with a Steam Controller — dual Raspberry Pi 4s power the wearable tech",
-        "summary": "一位机器人与动画cosplay爱好者制作出带有1200美元柔性OLED显示屏衣领的实体Cyberpunk 2077 NUSA渗透者夹克，由双树莓派4驱动，可用Steam手柄在衣领上玩游戏。",
-        "rating": "B",
-        "score": 66,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "柔性显示与可穿戴计算的结合展示了消费级硬件DIY的极限，可能启发更多创客项目。",
-        "entities": [
-          "Cyberpunk 2077",
-          "Oled",
-          "Raspberry Pi",
-          "Steam"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/peripherals/wearable-tech/cyberpunk-2077-cosplay-jacket-features-a-usd1-200-flexible-oled-collar-that-you-can-actually-play-games-on-with-a-steam-controller-dual-raspberry-pi-4s-power-the-wearable-tech"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779667341,
-        "published_at": "2026-05-25T08:02:21.115796",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/peripherals/wearable-tech/cyberpunk-2077-cosplay-jacket-features-a-usd1-200-flexible-oled-collar-that-you-can-actually-play-games-on-with-a-steam-controller-dual-raspberry-pi-4s-power-the-wearable-tech",
-        "event_id": null
-      },
-      {
-        "id": "7517a7e640ceb5c118a5efb065308bc9",
-        "title": "创作者用AI辅助制作15分钟君士坦丁堡陷落史诗电影，YouTube播放量破36万",
-        "chinese_title": "创作者用AI辅助制作15分钟君士坦丁堡陷落史诗电影，YouTube播放量破36万",
-        "original_title": "Fall of Constantinople 1453 - A 15min Cinematic Movie About the Last Day of Rome",
-        "summary": "一位创作者发布了AI辅助制作的15分钟历史战争电影《君士坦丁堡陷落1453》，以电影化叙事重现东罗马帝国最后一天，此前作品在YouTube已获得超36万次观看。",
-        "rating": "B",
-        "score": 72,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "AI辅助历史影视创作正在形成新的内容品类，可能冲击传统纪录片制作模式。",
-        "entities": [
-          "Theodore_70",
-          "Youtube"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1tlsv4f/fall_of_constantinople_1453_a_15min_cinematic/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779667341,
-        "published_at": "2026-05-25T08:02:21.115807",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1tlsv4f/fall_of_constantinople_1453_a_15min_cinematic/",
-        "event_id": null
-      },
-      {
-        "id": "a918ee6635fba070d5297fbadeedde19",
-        "title": "机器人模仿学习训练瓶颈：A4500 GPU利用率仅20%，优化器步骤占62%时间",
-        "chinese_title": "机器人模仿学习训练瓶颈：A4500 GPU利用率仅20%，优化器步骤占62%时间",
-        "original_title": "pipeline is really slow - consulting [D]",
-        "summary": "一位研究者在Reddit求助，其基于DiT扩散策略的机器人模仿学习管线在NVIDIA A4500上GPU利用率仅20-30%，PyTorch Profiler显示优化器步骤占62.4%训练时间，远慢于论文报告的RTX 4090训练速度。",
-        "rating": "B",
-        "score": 67,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若该瓶颈具有普遍性，可能推动针对扩散策略训练的优化器加速研究，影响机器人学习社区工具链。",
-        "entities": [
-          "Dit",
-          "NVIDIA",
-          "Pytorch",
-          "Resnet18"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tlna8o/pipeline_is_really_slow_consulting_d/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779667341,
-        "published_at": "2026-05-25T08:02:21.115822",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tlna8o/pipeline_is_really_slow_consulting_d/",
-        "event_id": null
-      },
       {
         "id": "bd95e62aa255ab15e15bcdc31e34fdc9",
         "title": "视觉大模型与OCR方案长文档理解能力实测：LlamaCloud方案准确率领先",
@@ -27478,6 +27509,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-25T08:02:45.459079",
-  "total_news": 955
+  "last_updated": "2026-05-25T09:01:43.806769",
+  "total_news": 956
 }
