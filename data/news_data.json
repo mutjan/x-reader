@@ -2,6 +2,125 @@
   "news": {
     "2026-05-25": [
       {
+        "id": "fede8be6d18b6e7fff36cccce36def2e",
+        "title": "马斯克确认Grok V9基础模型训练完成，两三周内公测",
+        "chinese_title": "马斯克确认Grok V9基础模型训练完成，两三周内公测",
+        "original_title": "Grok Build being built in public 🚀",
+        "summary": "马斯克透露Grok基础模型V9-Medium（1.5T参数）已完成训练，评估结果良好。补充训练中加入了大量Cursor数据，目前正在进行微调，强化学习将在几天后启动，预计2到3周内向公众发布。",
+        "rating": "A+",
+        "score": 89,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Grok新版本发布将加剧大模型竞争，可能影响Cursor等AI编程工具的市场格局，同时xAI的算力投入和训练数据策略值得关注。",
+        "entities": [
+          "Cursor",
+          "Elon Musk",
+          "Grok",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/billyuchenlin/status/2058846894382846225"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779704112,
+        "published_at": "2026-05-25T18:15:12.475297",
+        "source": "x",
+        "url": "https://x.com/billyuchenlin/status/2058846894382846225",
+        "event_id": null
+      },
+      {
+        "id": "04d145e59e20467ad0ceb8d40fa6fedb",
+        "title": "开发者吐槽OpenAI Codex性能骤降，Claude Code成替代方案",
+        "chinese_title": "开发者吐槽OpenAI Codex性能骤降，Claude Code成替代方案",
+        "original_title": "codex got noticeably nerfed past few days. ran several tasks for 20+ hours, none finished. switched to claude code, done in 30 min. something's off @t...",
+        "summary": "有开发者反映OpenAI的Codex编程助手近几日性能明显下滑，多个任务运行20小时以上仍未完成，而切换到Claude Code后30分钟即可完成，引发对Codex稳定性的质疑。",
+        "rating": "A",
+        "score": 79,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "Codex与Claude Code的竞争态势变化可能影响开发者工具市场格局，OpenAI的模型更新策略和稳定性问题值得追踪。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Codex",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/DerekNee/status/2058822462486536691"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779704112,
+        "published_at": "2026-05-25T18:15:12.475338",
+        "source": "x",
+        "url": "https://x.com/DerekNee/status/2058822462486536691",
+        "event_id": null
+      },
+      {
+        "id": "939d2fd3821942e2f9012b6b681214b6",
+        "title": "HuggingFace团队推出PapersWithCode，AI论文导航新工具",
+        "chinese_title": "HuggingFace团队推出PapersWithCode，AI论文导航新工具",
+        "original_title": "我找到了比浏览arXiv更有效的方法! 对AI感兴趣或者Aides领域的工程师/研究员估计每周都会抽出来时间阅读最新的论文或者github repo当作一手信息源, 但是大家通常...",
+        "summary": "HuggingFace开源团队成员推出PapersWithCode网站，实时收录最新论文和GitHub仓库，支持按领域浏览、查看模型benchmark数据和HuggingFace地址，被评价为AI领域的终极网址导航。",
+        "rating": "B",
+        "score": 71,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该工具可能改变AI研究者获取信息的方式，对arXiv、社交媒体信息聚合等现有渠道形成补充或替代，HuggingFace生态影响力进一步扩大。",
+        "entities": [
+          "Arxiv",
+          "Github",
+          "Huggingface",
+          "Paperswithcode"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/karminski3/status/2058701842469794195"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779704112,
+        "published_at": "2026-05-25T18:15:12.475351",
+        "source": "x",
+        "url": "https://x.com/karminski3/status/2058701842469794195",
+        "event_id": null
+      },
+      {
+        "id": "7ebc86b94afa56523f01f794bbd85e09",
+        "title": "George Hotz警告AI编程代理将是软件业最昂贵的错误",
+        "chinese_title": "George Hotz警告AI编程代理将是软件业最昂贵的错误",
+        "original_title": "George Hotz says coding agents will be \"one of the most costly mistakes\" in software development",
+        "summary": "著名程序员George Hotz经过六个月测试后认为，AI编程代理虽然能快速生成原型，但在细节处理上漏洞百出，且bug越来越难以发现，将成为软件开发行业代价最高的错误之一。",
+        "rating": "A",
+        "score": 75,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "Hotz的批评反映了AI社区对LLM在编程领域作用的深刻分歧，可能引发关于AI代码质量、安全性和长期维护成本的广泛讨论。",
+        "entities": [
+          "Ai编程代理",
+          "George Hotz",
+          "LLM"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/george-hotz-says-coding-agents-will-be-one-of-the-most-costly-mistakes-in-software-development/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779704112,
+        "published_at": "2026-05-25T18:15:12.475366",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/george-hotz-says-coding-agents-will-be-one-of-the-most-costly-mistakes-in-software-development/",
+        "event_id": null
+      },
+      {
         "id": "ec9dec10ce845e8459f60ec14aa1ab73",
         "title": "Cursor公开Composer模型训练方法，Sasha Rush详解技术路线",
         "chinese_title": "Cursor公开Composer模型训练方法，Sasha Rush详解技术路线",
@@ -28632,6 +28751,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-25T17:04:19.637989",
-  "total_news": 995
+  "last_updated": "2026-05-25T18:15:13.067788",
+  "total_news": 999
 }
