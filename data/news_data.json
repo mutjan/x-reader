@@ -2,6 +2,64 @@
   "news": {
     "2026-05-25": [
       {
+        "id": "1c066d3dd1a3c3ff8395569e24ad402d",
+        "title": "马斯克透露Grok V9-Medium完成训练，参数量达1.5T",
+        "chinese_title": "马斯克透露Grok V9-Medium完成训练，参数量达1.5T",
+        "original_title": "Grok foundation model V9-Medium (1.5T) has finished training. Evals look good. A lot of Cursor data was added in supplementary training and there is m...",
+        "summary": "马斯克在X平台宣布Grok基础模型V9-Medium已完成训练，参数量达1.5万亿，在补充训练中加入了大量Cursor数据，预计2到3周后公开发布，相比当前服务生产流量的0.5T版本将有显著提升。",
+        "rating": "A+",
+        "score": 94,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Grok V9发布可能加剧大模型军备竞赛，影响xAI估值及AI编程工具市场格局，需关注其与Cursor、GitHub Copilot的差异化竞争。",
+        "entities": [
+          "Cursor",
+          "Elon Musk",
+          "Grok",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/elonmusk/status/2058787384364265734"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779692517,
+        "published_at": "2026-05-25T15:01:57.626660",
+        "source": "x",
+        "url": "https://x.com/elonmusk/status/2058787384364265734",
+        "event_id": null
+      },
+      {
+        "id": "baf35e3285208e24c99aa9b91b9b02cd",
+        "title": "Claude App已支持中国大陆+86手机号注册",
+        "chinese_title": "Claude App已支持中国大陆+86手机号注册",
+        "original_title": "给大家报告一个好消息🎉('ω')🎉 Claude App 已经可以选择 🇨🇳+86 中国手机号了！",
+        "summary": "Anthropic旗下Claude App现已开放中国大陆+86手机号选项，意味着中国用户可直接用手机号注册使用Claude，无需依赖海外号码。",
+        "rating": "A",
+        "score": 82,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Claude入华策略值得关注，可能引发国内AI助手市场竞争加剧，同时需观察其合规路径及与百度文心、字节豆包等本土产品的直接交锋。",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/xiongchun007/status/2058773554355920942"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779692517,
+        "published_at": "2026-05-25T15:01:57.626683",
+        "source": "x",
+        "url": "https://x.com/xiongchun007/status/2058773554355920942",
+        "event_id": null
+      },
+      {
         "id": "8ed7cecf54c8405bec0d1e3ab81d4a97",
         "title": "硅谷AI公司集体抛弃职级体系，Bell Labs的MTS头衔正在回归",
         "chinese_title": "硅谷AI公司集体抛弃职级体系，Bell Labs的MTS头衔正在回归",
@@ -209,6 +267,64 @@
         "published_at": "2026-05-25T14:06:16.065592",
         "source": "Techmeme (deepseek)",
         "url": "https://www.techmeme.com/260525/p2#a260525p2",
+        "event_id": null
+      },
+      {
+        "id": "1926c9180fa8a6f79474d9b85560eb2f",
+        "title": "DeepMind团队用AI一次性解决9道Erdos数学难题",
+        "chinese_title": "DeepMind团队用AI一次性解决9道Erdos数学难题",
+        "original_title": "继 OpenAI 宣布他们用 AI 解决了一道Erdos 数学难题后，Google DeepMind 团队今天宣布他们又解决了9道 Erdos 数学难题。。。 AI 之间的竞争，开始进入人类未知领...",
+        "summary": "继OpenAI之后，Google DeepMind团队宣布其AI系统通过LLM与Lean证明助手的自主循环协作，成功攻克9道Erdos开放数学难题，所有结果均经过形式化验证。",
+        "rating": "A+",
+        "score": 90,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "AI在纯数学领域的连续突破可能重塑数学研究范式，加速人类对未解难题的探索，同时引发关于AI在基础科学中角色的深层讨论。",
+        "entities": [
+          "DeepMind",
+          "Erdos",
+          "Lean",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Tz_2022/status/2058656411924439285"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779689176,
+        "published_at": "2026-05-25T14:06:16.065544",
+        "source": "x",
+        "url": "https://x.com/Tz_2022/status/2058656411924439285",
+        "event_id": null
+      },
+      {
+        "id": "a39aca141a63866a6f6838f11c245fe7",
+        "title": "DeltaBox实现毫秒级AI Agent状态回滚，树搜索效率大幅提升",
+        "chinese_title": "DeltaBox实现毫秒级AI Agent状态回滚，树搜索效率大幅提升",
+        "original_title": "刚刷到这篇，有点牛。本质上，AI agent并行探索或树搜索时，每次checkpoint/rollback都要备份整个文件+进程状态，慢到几百毫秒。DeltaBox发现：连续检查点其实高...",
+        "summary": "DeltaBox系统通过增量检查点技术，将AI Agent并行探索时的checkpoint/rollback耗时从数百毫秒降至14ms，使Agent在相同时间内可搜索更多节点，显著提升复杂任务求解能力。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "Agent执行效率的质变可能加速AI Agent在软件开发、科学研究等复杂场景的实际落地，推动从演示到生产环境的跨越。",
+        "entities": [
+          "Deltabox",
+          "Swe-Bench"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/vintcessun/status/2058593852110651489"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779689176,
+        "published_at": "2026-05-25T14:06:16.065556",
+        "source": "x",
+        "url": "https://x.com/vintcessun/status/2058593852110651489",
         "event_id": null
       },
       {
@@ -1994,61 +2110,31 @@
     ],
     "2026-05-24": [
       {
-        "id": "1926c9180fa8a6f79474d9b85560eb2f",
-        "title": "DeepMind团队用AI一次性解决9道Erdos数学难题",
-        "chinese_title": "DeepMind团队用AI一次性解决9道Erdos数学难题",
-        "original_title": "继 OpenAI 宣布他们用 AI 解决了一道Erdos 数学难题后，Google DeepMind 团队今天宣布他们又解决了9道 Erdos 数学难题。。。 AI 之间的竞争，开始进入人类未知领...",
-        "summary": "继OpenAI之后，Google DeepMind团队宣布其AI系统通过LLM与Lean证明助手的自主循环协作，成功攻克9道Erdos开放数学难题，所有结果均经过形式化验证。",
-        "rating": "A+",
-        "score": 90,
+        "id": "e02dbe63c8c7b2b645191abf9f311154",
+        "title": "NeurIPS 2026 Creative AI Track征稿开启，聚焦Agent主题",
+        "chinese_title": "NeurIPS 2026 Creative AI Track征稿开启，聚焦Agent主题",
+        "original_title": "RT NeurIPS Conference: The call for the NeurIPS 2026 Creative AI Track is out! In its fourth year, NeurIPS 2026 Creative AI Track invites research pap...",
+        "summary": "NeurIPS 2026 Creative AI Track发布征稿通知，第四届 track 聚焦Agent主题，探讨AI与机器学习在艺术、设计和创意实践中的新兴应用与方法，投稿截止日期为8月3日。",
+        "rating": "B",
+        "score": 68,
         "type": "research",
         "typeName": "研究成果",
-        "expansion": "AI在纯数学领域的连续突破可能重塑数学研究范式，加速人类对未解难题的探索，同时引发关于AI在基础科学中角色的深层讨论。",
+        "expansion": "NeurIPS Creative AI Track持续推动AI与艺术交叉研究，可关注入选论文方向对AIGC创作工具、多模态交互设计的启发及产业转化可能。",
         "entities": [
-          "DeepMind",
-          "Erdos",
-          "Lean",
-          "OpenAI"
+          "Creative Ai",
+          "Neurips"
         ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/Tz_2022/status/2058656411924439285"
+            "url": "https://x.com/MiTiBennett/status/2058668929183264886"
           }
         ],
         "sources": 1,
-        "timestamp": 1779689176,
-        "published_at": "2026-05-25T14:06:16.065544",
+        "timestamp": 1779692517,
+        "published_at": "2026-05-25T15:01:57.626714",
         "source": "x",
-        "url": "https://x.com/Tz_2022/status/2058656411924439285",
-        "event_id": null
-      },
-      {
-        "id": "a39aca141a63866a6f6838f11c245fe7",
-        "title": "DeltaBox实现毫秒级AI Agent状态回滚，树搜索效率大幅提升",
-        "chinese_title": "DeltaBox实现毫秒级AI Agent状态回滚，树搜索效率大幅提升",
-        "original_title": "刚刷到这篇，有点牛。本质上，AI agent并行探索或树搜索时，每次checkpoint/rollback都要备份整个文件+进程状态，慢到几百毫秒。DeltaBox发现：连续检查点其实高...",
-        "summary": "DeltaBox系统通过增量检查点技术，将AI Agent并行探索时的checkpoint/rollback耗时从数百毫秒降至14ms，使Agent在相同时间内可搜索更多节点，显著提升复杂任务求解能力。",
-        "rating": "A+",
-        "score": 88,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "Agent执行效率的质变可能加速AI Agent在软件开发、科学研究等复杂场景的实际落地，推动从演示到生产环境的跨越。",
-        "entities": [
-          "Deltabox",
-          "Swe-Bench"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/vintcessun/status/2058593852110651489"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779689176,
-        "published_at": "2026-05-25T14:06:16.065556",
-        "source": "x",
-        "url": "https://x.com/vintcessun/status/2058593852110651489",
+        "url": "https://x.com/MiTiBennett/status/2058668929183264886",
         "event_id": null
       },
       {
@@ -28337,6 +28423,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-25T14:10:07.348708",
-  "total_news": 985
+  "last_updated": "2026-05-25T15:01:58.212138",
+  "total_news": 988
 }
