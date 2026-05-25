@@ -333,18 +333,21 @@
     "main_news_title": "华为昇腾A3推出HyperParallel-MoE调度系统，MoE训练效率提升近1.6倍",
     "main_news_summary": "华为昇腾团队针对A3芯片架构推出HyperParallel-MoE调度系统，通过将MoE-FFN编译为静态异构任务流，实现AIC矩阵单元与AIV向量/通信单元的细粒度并行，在DeepSeek风格MoE模型上实现1.49-1.58倍的MoE-FFN延迟降低和1.08-1.09倍的端到端训练加速。",
     "main_news_url": "https://x.com/gm8xx8/status/2058753181706768545",
-    "first_seen_at": "2026-05-25T12:08:53.009965",
+    "first_seen_at": "2026-05-25T09:38:37",
     "last_seen_at": "2026-05-25T14:06:16.065508",
     "news_ids": [
       "c7ef77e5293e5b93ac2befc53b9c52fe",
+      "e6c9f529c4e18977de10e45aac6000c2",
       "4ba55c61ccf2dacb1a995908be581f56"
     ],
     "max_score": 99,
     "max_grade": "S",
     "entities": [
       "DeepSeek",
+      "Hyperparallel-Moe",
       "Mindspore",
       "Moe",
+      "中科大",
       "华为",
       "昇腾"
     ]
@@ -569,6 +572,27 @@
     "max_score": 97,
     "max_grade": "S",
     "entities": []
+  },
+  {
+    "group_id": "f6513d7e",
+    "event_title": "DeepMind AlphaProof Nexus自主攻克9道Erdős数学猜想",
+    "main_news_id": "2ca38b2e85adb278004af189518da187",
+    "main_news_title": "DeepMind AlphaProof Nexus自主攻克9道Erdős数学猜想",
+    "main_news_summary": "Google DeepMind推出基于Gemini的自动形式化证明智能体框架AlphaProof Nexus，成功解决9道开放Erdős问题（含两道悬置56年）、44道OEIS问题及代数几何、优化领域长期开放难题。",
+    "main_news_url": "https://x.com/GoogleDeepMind/status/2058955817991204970",
+    "first_seen_at": "2026-05-25T15:39:39",
+    "last_seen_at": "2026-05-25T15:39:39",
+    "news_ids": [
+      "2ca38b2e85adb278004af189518da187"
+    ],
+    "max_score": 97,
+    "max_grade": "S",
+    "entities": [
+      "Alphaproof Nexus",
+      "DeepMind",
+      "Erdős",
+      "Gemini"
+    ]
   },
   {
     "group_id": "c6de2952",
@@ -1511,7 +1535,7 @@
     "main_news_summary": "据Reddit讨论引用的行业数据显示，Anthropic在企业市场的客户采用率已超过OpenAI，Claude系列模型在B端场景中获得更多企业青睐。",
     "main_news_url": "https://www.reddit.com/r/singularity/comments/1tn86lf/anthropic_beats_openai_on_business_adoption/",
     "first_seen_at": "2026-05-25T06:47:21.201423",
-    "last_seen_at": "2026-05-25T20:48:10",
+    "last_seen_at": "2026-05-26T00:01:16.886269",
     "news_ids": [
       "136eda996dcc3211b6ae102dfe46fb7d",
       "42f4320358a4c9a811fdda7fc86a065f"
@@ -1730,7 +1754,8 @@
     "last_seen_at": "2026-05-25T18:15:12.475297",
     "news_ids": [
       "1c066d3dd1a3c3ff8395569e24ad402d",
-      "fede8be6d18b6e7fff36cccce36def2e"
+      "fede8be6d18b6e7fff36cccce36def2e",
+      "260494ff0d04972cd3bba36c8a07cd0b"
     ],
     "max_score": 94,
     "max_grade": "A+",
@@ -2103,8 +2128,8 @@
     "main_news_title": "Google DeepMind AI智能体自主攻克9道Erdos数学开放难题",
     "main_news_summary": "Google DeepMind开发的人工智能智能体在数学领域取得突破，自主解决了353道Erdos开放数学问题中的9道，每道题成本仅数百美元。",
     "main_news_url": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/",
-    "first_seen_at": "2026-05-25T02:01:12",
-    "last_seen_at": "2026-05-25T02:01:12",
+    "first_seen_at": "2026-05-26T00:01:16.886291",
+    "last_seen_at": "2026-05-26T00:01:16.886291",
     "news_ids": [
       "256b95e2eea23ef73c34ff9ca025b4a8"
     ],
@@ -3594,6 +3619,25 @@
     "entities": [
       "Deltabox",
       "Swe-Bench"
+    ]
+  },
+  {
+    "group_id": "cf175605",
+    "event_title": "ClickUp大规模裁员以AI Agent替代数百员工",
+    "main_news_id": "c45768dc99d30d901cd538d3dfa770f8",
+    "main_news_title": "ClickUp大规模裁员以AI Agent替代数百员工",
+    "main_news_summary": "成立九年的协作工具公司ClickUp正在进行大规模裁员，计划用数千个AI Agent替代数百名员工，引发对AI替代人力趋势的讨论。",
+    "main_news_url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/",
+    "first_seen_at": "2026-05-26T00:00:00",
+    "last_seen_at": "2026-05-26T00:00:00",
+    "news_ids": [
+      "c45768dc99d30d901cd538d3dfa770f8"
+    ],
+    "max_score": 88,
+    "max_grade": "A+",
+    "entities": [
+      "Ai Agent",
+      "Clickup"
     ]
   },
   {
@@ -5501,6 +5545,28 @@
     ]
   },
   {
+    "group_id": "2fd7d283",
+    "event_title": "个人首次在家完成人类全基因组30倍覆盖度测序，便携式基因技术迈入新阶段",
+    "main_news_id": "5a276853b9c37f0fe52f3760aebd33ec",
+    "main_news_title": "个人首次在家完成人类全基因组30倍覆盖度测序，便携式基因技术迈入新阶段",
+    "main_news_summary": "一位生物学新手使用Oxford Nanopore P2 Solo设备，在六周内于家中完成了人类全基因组30倍覆盖度测序，标志着个人基因技术普及化迈出关键一步。",
+    "main_news_url": "https://x.com/SethSHowes/status/2058835208586362913",
+    "first_seen_at": "2026-05-25T08:58:59",
+    "last_seen_at": "2026-05-25T20:25:34.133216",
+    "news_ids": [
+      "5a276853b9c37f0fe52f3760aebd33ec",
+      "ab152672e0e54a65d04824276c740170"
+    ],
+    "max_score": 82,
+    "max_grade": "A",
+    "entities": [
+      "Oxford Nanopore",
+      "P2 Solo",
+      "Seth Howes",
+      "基因测序"
+    ]
+  },
+  {
     "group_id": "7e9ea8f4",
     "event_title": "传Anthropic用Rust重写Bun，6755次提交全由AI完成",
     "main_news_id": "9bacd7c11745f8c696b2cfbeaa3a7cbc",
@@ -5897,27 +5963,6 @@
     "max_score": 82,
     "max_grade": "A",
     "entities": []
-  },
-  {
-    "group_id": "2fd7d283",
-    "event_title": "个人首次在家完成人类全基因组30倍覆盖度测序，便携式基因技术迈入新阶段",
-    "main_news_id": "5a276853b9c37f0fe52f3760aebd33ec",
-    "main_news_title": "个人首次在家完成人类全基因组30倍覆盖度测序，便携式基因技术迈入新阶段",
-    "main_news_summary": "一位生物学新手使用Oxford Nanopore P2 Solo设备，在六周内于家中完成了人类全基因组30倍覆盖度测序，标志着个人基因技术普及化迈出关键一步。",
-    "main_news_url": "https://x.com/SethSHowes/status/2058835208586362913",
-    "first_seen_at": "2026-05-25T20:25:34.133216",
-    "last_seen_at": "2026-05-25T20:25:34.133216",
-    "news_ids": [
-      "5a276853b9c37f0fe52f3760aebd33ec"
-    ],
-    "max_score": 82,
-    "max_grade": "A",
-    "entities": [
-      "Oxford Nanopore",
-      "P2 Solo",
-      "Seth Howes",
-      "基因测序"
-    ]
   },
   {
     "group_id": "1d0946aa",
@@ -6356,8 +6401,8 @@
     "main_news_title": "伊朗黑客组织Nimbus Manticore利用AI辅助开发恶意软件攻击企业",
     "main_news_summary": "Check Point Research披露，与伊朗革命卫队关联的黑客组织Nimbus Manticore在美伊冲突期间利用AI辅助开发恶意软件，并结合SEO投毒技术对企业发起定向攻击。",
     "main_news_url": "https://www.techmeme.com/260525/p15#a260525p15",
-    "first_seen_at": "2026-05-25T22:40:01",
-    "last_seen_at": "2026-05-25T22:40:01",
+    "first_seen_at": "2026-05-26T00:01:16.886251",
+    "last_seen_at": "2026-05-26T00:01:16.886251",
     "news_ids": [
       "eed9b00319f773a03624f9f73cffc981"
     ],
@@ -8329,8 +8374,8 @@
     "main_news_title": "Imec造出全球首个高数值孔径EUV量子点量子比特器件",
     "main_news_summary": "比利时微电子研究中心Imec利用High-NA EUV光刻技术制造出全球首个硅量子点量子比特器件，这意味着量子计算未来可借助现有先进半导体制造生态实现规模化量产，大幅压缩研发周期。",
     "main_news_url": "https://www.tomshardware.com/tech-industry/semiconductors/imec-builds-worlds-first-high-na-euv-fabricated-quantum-dot-qubit-device-breakthrough-could-pull-quantum-computing-onto-the-same-manufacturing-roadmap-as-next-gen-ai-processors-compressing-timelines",
-    "first_seen_at": "2026-05-25T23:27:00",
-    "last_seen_at": "2026-05-25T23:27:00",
+    "first_seen_at": "2026-05-26T00:01:16.886197",
+    "last_seen_at": "2026-05-26T00:01:16.886197",
     "news_ids": [
       "f6265537ebe9f24d4199a25438b331b1"
     ],
@@ -11221,8 +11266,8 @@
     "main_news_title": "微星推出GPU Safeguard+防护系统解决显卡16pin接口过热熔断问题",
     "main_news_summary": "微星在CES 2026发布新款MPG系列电源，搭载GPU Safeguard+防护系统，专门解决RTX 40/50系列显卡12V-2x6供电接口过热熔断的行业痛点，采用碳化硅MOSFET提升稳定性。",
     "main_news_url": "https://www.tomshardware.com/pc-components/gpus/testing-gpu-safeguard-on-the-msi-mpg-ai1600ts-psu-solution-aims-to-tame-melting-16-pin-connectors",
-    "first_seen_at": "2026-05-25T23:26:17",
-    "last_seen_at": "2026-05-25T23:26:17",
+    "first_seen_at": "2026-05-26T00:01:16.886220",
+    "last_seen_at": "2026-05-26T00:01:16.886220",
     "news_ids": [
       "cbe56c5e85a7b178040dac10d6e41dcc"
     ],
@@ -11876,8 +11921,8 @@
     "main_news_title": "逐际动力发布全尺寸人形机器人Luna",
     "main_news_summary": "中国机器人公司逐际动力（LimX Dynamics）发布全尺寸人形机器人Luna，主打流畅自然的运动控制能力，展示其在人形机器人领域的最新技术进展。",
     "main_news_url": "https://www.reddit.com/r/singularity/comments/1tn7ci6/limx_dynamics_launches_luna_its_fluid_fullsize/",
-    "first_seen_at": "2026-05-25T20:13:29",
-    "last_seen_at": "2026-05-25T20:13:29",
+    "first_seen_at": "2026-05-26T00:01:16.886280",
+    "last_seen_at": "2026-05-26T00:01:16.886280",
     "news_ids": [
       "84eb36ebea21a4b6a309a3976225f50e"
     ],
@@ -11887,6 +11932,25 @@
       "Luna",
       "人形机器人",
       "逐际动力"
+    ]
+  },
+  {
+    "group_id": "ccde84e9",
+    "event_title": "国产GPU砺算LX 7G100预售48小时售罄3万张",
+    "main_news_id": "0a7f77314da89b11df93ee64efd86a4d",
+    "main_news_title": "国产GPU砺算LX 7G100预售48小时售罄3万张",
+    "main_news_summary": "砺算科技LX 7G100游戏显卡尽管基准测试表现平平，仍在48小时内售罄超3万张预售，第二批将于6月18日开售。",
+    "main_news_url": "https://www.tomshardware.com/pc-components/gpus/chinese-gpu-maker-sells-out-over-30-000-gaming-gpus-within-48-hours-despite-lukewarm-benchmarks-lx-7g100-proves-hype-trumps-performance",
+    "first_seen_at": "2026-05-26T00:45:58",
+    "last_seen_at": "2026-05-26T00:45:58",
+    "news_ids": [
+      "0a7f77314da89b11df93ee64efd86a4d"
+    ],
+    "max_score": 70,
+    "max_grade": "B",
+    "entities": [
+      "Lx 7G100",
+      "砺算科技"
     ]
   },
   {
@@ -13120,6 +13184,25 @@
     ]
   },
   {
+    "group_id": "e0bf3811",
+    "event_title": "Anthropic与梵蒂冈达成合作引发关注",
+    "main_news_id": "12fe6fbe8c66cdbec36a0026cc4d8b96",
+    "main_news_title": "Anthropic与梵蒂冈达成合作引发关注",
+    "main_news_summary": "Anthropic宣布与梵蒂冈建立合作关系，具体合作内容尚未披露，引发科技伦理与宗教机构跨界联动的讨论。",
+    "main_news_url": "https://x.com/tekbog/status/2058921615359111231",
+    "first_seen_at": "2026-05-25T14:42:20",
+    "last_seen_at": "2026-05-25T14:42:20",
+    "news_ids": [
+      "12fe6fbe8c66cdbec36a0026cc4d8b96"
+    ],
+    "max_score": 68,
+    "max_grade": "B",
+    "entities": [
+      "Anthropic",
+      "梵蒂冈"
+    ]
+  },
+  {
     "group_id": "a403dbf0",
     "event_title": "Shilong Liu宣布2027年加盟哥伦比亚大学：研究自进化Agent与具身AI",
     "main_news_id": "160d8be9a167315b58951f0cc8d184ec",
@@ -14105,6 +14188,25 @@
       "Lean",
       "形式化验证",
       "计算物理"
+    ]
+  },
+  {
+    "group_id": "c3d67d42",
+    "event_title": "HRM-Text XL 1B模型在16张H200上38小时完成复现",
+    "main_news_id": "6e7d1c491602e1160d6b7064694deef8",
+    "main_news_title": "HRM-Text XL 1B模型在16张H200上38小时完成复现",
+    "main_news_summary": "研究团队成功复现HRM-Text XL（1B参数），使用16张H200 GPU耗时约38小时完成训练，评估性能与论文报告一致。",
+    "main_news_url": "https://x.com/huskydogewoof/status/2058761131146264944",
+    "first_seen_at": "2026-05-25T04:04:38",
+    "last_seen_at": "2026-05-25T04:04:38",
+    "news_ids": [
+      "6e7d1c491602e1160d6b7064694deef8"
+    ],
+    "max_score": 66,
+    "max_grade": "B",
+    "entities": [
+      "H200",
+      "Hrm-Text"
     ]
   },
   {
