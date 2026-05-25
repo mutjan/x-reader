@@ -2,6 +2,216 @@
   "news": {
     "2026-05-26": [
       {
+        "id": "baea65dfd1fe827e7de31a2d5d398ff8",
+        "title": "Anthropic 联合创始人 Chris Olah 回应教皇 AI 通谕",
+        "chinese_title": "Anthropic 联合创始人 Chris Olah 回应教皇 AI 通谕",
+        "original_title": "Anthropic Cofounder Chris Olah's Remarks on Pope Leo XIV's \"Magnifica Humanitas\"",
+        "summary": "Anthropic 联合创始人 Chris Olah 就教皇 Leo XIV 发布的关于人工智能的通谕《Magnifica Humanitas》发表看法，体现科技界与宗教界在 AI 伦理议题上的对话。",
+        "rating": "A",
+        "score": 75,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "宗教领袖介入 AI 伦理讨论可能加速全球 AI 治理框架的形成，影响各国监管政策走向。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779739657,
+        "published_at": "2026-05-26T04:07:37.469009",
+        "source": "Hacker News",
+        "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+        "event_id": null
+      },
+      {
+        "id": "bf1314415c5c7611c0fc6fdc8293a8e9",
+        "title": "METR AI 时间跨度基准测试被指出存在严重方法论缺陷",
+        "chinese_title": "METR AI 时间跨度基准测试被指出存在严重方法论缺陷",
+        "original_title": "The famous METR AI time horizons graph contains numerous severe errors [D]",
+        "summary": "NYU Stern 研究员 Nathan Witkin 撰文指出 METR 著名的 AI 时间跨度图表存在多项严重错误，认为其基准测试的缺陷可能以不可预测的方式叠加，难以得出有意义的结论。",
+        "rating": "A",
+        "score": 85,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "AI 安全基准测试的可信度争议可能影响政策制定者和公众对 AI 风险判断的准确性，亟需更严谨的评估标准。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tnhnh5/the_famous_metr_ai_time_horizons_graph_contains/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779739657,
+        "published_at": "2026-05-26T04:07:37.469022",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tnhnh5/the_famous_metr_ai_time_horizons_graph_contains/",
+        "event_id": null
+      },
+      {
+        "id": "3c2b753218243b58611c781c442dc9fa",
+        "title": "RISC-V 微控制器纯 C 实现 DCGAN 推理：1260 万参数仅 512KB SRAM",
+        "chinese_title": "RISC-V 微控制器纯 C 实现 DCGAN 推理：1260 万参数仅 512KB SRAM",
+        "original_title": "DCGAN inference on a microcontroller: 12.6M parameters, 512KB SRAM, 26-second generation, pure C [P]",
+        "summary": "开发者在双核 RISC-V 微控制器 CH32H417 上实现纯 C 推理引擎运行 DCGAN，生成 64x64 图像，采用 int8 量化和双缓冲技术，无需 TFLite 或外部内存。",
+        "rating": "A",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "边缘设备上运行生成模型的技术突破，可能推动物联网、嵌入式 AI 和端侧智能的新应用场景。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tnhfxp/dcgan_inference_on_a_microcontroller_126m/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779739657,
+        "published_at": "2026-05-26T04:07:37.469036",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tnhfxp/dcgan_inference_on_a_microcontroller_126m/",
+        "event_id": null
+      },
+      {
+        "id": "d33f11e5b3a919d397803b426005b92b",
+        "title": "开源项目探索 Agent 决策与执行解耦的新方法论",
+        "chinese_title": "开源项目探索 Agent 决策与执行解耦的新方法论",
+        "original_title": "Reconstructing the agent methodology: Decoupling decision-making and execution - open source [P]",
+        "summary": "开发者提出当前 Agent 系统执行层进步迅速但决策层仍依赖人类的问题，通过开源项目探索将高层决策与执行分离的 Agent 架构新思路。",
+        "rating": "A",
+        "score": 83,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若决策-执行解耦架构验证有效，可能催生更自主的 Agent 系统，改变当前人机协作的边界。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tnfxsc/reconstructing_the_agent_methodology_decoupling/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779739657,
+        "published_at": "2026-05-26T04:07:37.469046",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tnfxsc/reconstructing_the_agent_methodology_decoupling/",
+        "event_id": null
+      },
+      {
+        "id": "a7d028dd7698e87a33bb78e169e277d6",
+        "title": "Delta Attention Residuals：解决跨层注意力路由崩溃的新方法",
+        "chinese_title": "Delta Attention Residuals：解决跨层注意力路由崩溃的新方法",
+        "original_title": "𝐃𝐞𝐥𝐭𝐚 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐑𝐞𝐬𝐢𝐝𝐮𝐚𝐥𝐬 [R]",
+        "summary": "研究者提出 Delta Attention Residuals，通过在各层贡献的差分值上路由而非累积隐藏状态，解决了深层网络中跨层注意力路由崩溃至均匀分布的问题。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若在大模型中验证有效，可能提升深层 Transformer 的训练稳定性和性能上限，影响下一代模型架构设计。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tndn5b/%F0%9D%90%83%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%AD%F0%9D%90%9A_%F0%9D%90%80%F0%9D%90%AD%F0%9D%90%AD%F0%9D%90%9E%F0%9D%90%A7%F0%9D%90%AD%F0%9D%90%A2%F0%9D%90%A8%F0%9D%90%A7_%F0%9D%90%91%F0%9D%90%9E%F0%9D%90%AC%F0%9D%90%A2%F0%9D%90%9D%F0%9D%90%AE%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%AC_r/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779739657,
+        "published_at": "2026-05-26T04:07:37.469064",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tndn5b/%F0%9D%90%83%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%AD%F0%9D%90%9A_%F0%9D%90%80%F0%9D%90%AD%F0%9D%90%AD%F0%9D%90%9E%F0%9D%90%A7%F0%9D%90%AD%F0%9D%90%A2%F0%9D%90%A8%F0%9D%90%A7_%F0%9D%90%91%F0%9D%90%9E%F0%9D%90%AC%F0%9D%90%A2%F0%9D%90%9D%F0%9D%90%AE%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%AC_r/",
+        "event_id": null
+      },
+      {
+        "id": "54154d2db7eda0d3cbd807f9019b972f",
+        "title": "OpenBMB开源MiniCPM5-1B：1B参数模型实现128K长上下文",
+        "chinese_title": "OpenBMB开源MiniCPM5-1B：1B参数模型实现128K长上下文",
+        "original_title": "Oh, they actually open-sourced a strong 1B model. 128K context... wait, you mean a 1B model with 128K context length? And they even released MLX quant...",
+        "summary": "OpenBMB发布MiniCPM5-1B模型，在仅10亿参数规模下支持128K上下文窗口，采用Apache 2.0协议开源，并支持Think/No-Think混合推理模式及MLX量化，可在CPU、Apple Silicon和GPU上运行。",
+        "rating": "B",
+        "score": 68,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "小模型长上下文能力突破可能推动端侧AI应用普及，影响边缘计算芯片和轻量化模型部署市场。",
+        "entities": [
+          "Minicpm",
+          "Mlx",
+          "Openbmb"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/sheriyuo/status/2058984020399313296"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779735681,
+        "published_at": "2026-05-26T03:01:21.259484",
+        "source": "x",
+        "url": "https://x.com/sheriyuo/status/2058984020399313296",
+        "event_id": null
+      },
+      {
+        "id": "1ae751477be50187996e9cf8d292f0d3",
+        "title": "xAI推出Grok Build测试版，支持Plan Mode与自动化编排",
+        "chinese_title": "xAI推出Grok Build测试版，支持Plan Mode与自动化编排",
+        "original_title": "RT xAI: Grok Build is now available in Beta for all SuperGrok and X Premium+ users. Use Plan Mode, create images and videos with Imagine, and build au...",
+        "summary": "xAI面向SuperGrok和X Premium+用户开放Grok Build Beta版本，新增Plan Mode规划模式、Imagine图像视频生成，以及CLI自动化和编排功能。",
+        "rating": "A",
+        "score": 81,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Grok Build的CLI自动化能力可能冲击n8n、Zapier等低代码自动化平台，推动AI Agent生态竞争升级。",
+        "entities": [
+          "Grok",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Scobleizer/status/2058982946988790262"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779735681,
+        "published_at": "2026-05-26T03:01:21.259508",
+        "source": "x",
+        "url": "https://x.com/Scobleizer/status/2058982946988790262",
+        "event_id": null
+      },
+      {
+        "id": "f0f64709e01351585f437682e6a7083d",
+        "title": "DeepSeek前沿模型定价仅为美国实验室1/30引发硬件成本讨论",
+        "chinese_title": "DeepSeek前沿模型定价仅为美国实验室1/30引发硬件成本讨论",
+        "original_title": "deepseek just permanently priced their frontier model at 1/30th of american labs anyone know what the hardware story here is? is this huawei chips dri...",
+        "summary": "DeepSeek将其前沿模型定价压至美国实验室的1/30，引发业界对其硬件成本结构的猜测，可能涉及华为芯片、模型优化或更低利润率策略。",
+        "rating": "A+",
+        "score": 87,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "若成本优势来自自研芯片和算法优化，可能重塑全球AI推理定价体系，对英伟达高端GPU需求产生长期影响。",
+        "entities": [
+          "DeepSeek",
+          "华为"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/agupta/status/2058959763644227895"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779735681,
+        "published_at": "2026-05-26T03:01:21.259523",
+        "source": "x",
+        "url": "https://x.com/agupta/status/2058959763644227895",
+        "event_id": null
+      },
+      {
         "id": "34836fb3a001f8cba12a40dced729939",
         "title": "英国AI安全研究所成为各国AI政策蓝图",
         "chinese_title": "英国AI安全研究所成为各国AI政策蓝图",
@@ -614,88 +824,128 @@
     ],
     "2026-05-25": [
       {
-        "id": "54154d2db7eda0d3cbd807f9019b972f",
-        "title": "OpenBMB开源MiniCPM5-1B：1B参数模型实现128K长上下文",
-        "chinese_title": "OpenBMB开源MiniCPM5-1B：1B参数模型实现128K长上下文",
-        "original_title": "Oh, they actually open-sourced a strong 1B model. 128K context... wait, you mean a 1B model with 128K context length? And they even released MLX quant...",
-        "summary": "OpenBMB发布MiniCPM5-1B模型，在仅10亿参数规模下支持128K上下文窗口，采用Apache 2.0协议开源，并支持Think/No-Think混合推理模式及MLX量化，可在CPU、Apple Silicon和GPU上运行。",
+        "id": "d6755b52445bb3cd5bf6b5095cfe1eb7",
+        "title": "Andrej Karpathy 加盟 Anthropic，顶尖人才争夺战再升级",
+        "chinese_title": "Andrej Karpathy 加盟 Anthropic，顶尖人才争夺战再升级",
+        "original_title": "This is the biggest PR coup Anthropic could ever have imagined. And I mean that seriously. Let me explain. Aside from the fact that Anthropic is very ...",
+        "summary": "前特斯拉 AI 总监、OpenAI 创始成员 Andrej Karpathy 加入 Anthropic，被视为 Anthropic 在顶尖 AI 人才争夺中的重大胜利，同时凸显其独特的道德标准与社区影响力策略。",
+        "rating": "S",
+        "score": 98,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "Karpathy 的加盟可能引发其他顶级研究者的流动潮，同时 Anthropic 的'道德 AI'定位与人才吸引力之间的张力值得持续关注。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/kimmonismus/status/2058942418087481792"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779739657,
+        "published_at": "2026-05-26T04:07:37.468898",
+        "source": "x",
+        "url": "https://x.com/kimmonismus/status/2058942418087481792",
+        "event_id": null
+      },
+      {
+        "id": "fcc4ee5baae2402f2efbf17dc8998e4a",
+        "title": "SkillOpt 发布：用自然语言优化 Agent 技能的新范式",
+        "chinese_title": "SkillOpt 发布：用自然语言优化 Agent 技能的新范式",
+        "original_title": "🚀 Introducing SkillOpt — an optimizer for agent skills. Instead of finetuning model weights, we treat a natural-language skill as a trainable exte...",
+        "summary": "SkillOpt 提出将自然语言技能视为可训练的外部参数，在文本空间实现类似深度学习的优化机制，支持稳定可控的技能更新。",
+        "rating": "A",
+        "score": 82,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若 SkillOpt 验证有效，可能催生 Agent 技能市场或平台，改变当前通过微调模型权重来提升 Agent 能力的主流路径。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Yif_Yang/status/2058918317918998795"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779739657,
+        "published_at": "2026-05-26T04:07:37.468944",
+        "source": "x",
+        "url": "https://x.com/Yif_Yang/status/2058918317918998795",
+        "event_id": null
+      },
+      {
+        "id": "4799cc92e99a52f651467ed098119528",
+        "title": "On-policy Distillation 成为 AI 后训练热门技术方向",
+        "chinese_title": "On-policy Distillation 成为 AI 后训练热门技术方向",
+        "original_title": "One of the hottest terms in AI right now is \"On-policy distillation\". It is a post-training technique in which a student model, typically an LLM, samp...",
+        "summary": "On-policy Distillation 结合蒸馏的密集监督与在线 RL 的局部性优势，学生模型从当前策略采样并获得教师信号，已在 PapersWithCode 上收录。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该技术若在大模型后训练中验证有效，可能成为 RLHF 之外的重要补充路线，影响模型训练成本与效果平衡。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/NielsRogge/status/2058917372577157530"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779739657,
+        "published_at": "2026-05-26T04:07:37.468958",
+        "source": "x",
+        "url": "https://x.com/NielsRogge/status/2058917372577157530",
+        "event_id": null
+      },
+      {
+        "id": "3ef589fb860f0b81b593601c1b70a464",
+        "title": "MrBeast 调侃 Vibe Coding 现象引发开发者社区热议",
+        "chinese_title": "MrBeast 调侃 Vibe Coding 现象引发开发者社区热议",
+        "original_title": "MrBeast plans to trap 1000 vibe coders in a room without Claude first person to center a div manually wins $1 million",
+        "summary": "网红 MrBeast 发布调侃帖，设想让 1000 名 Vibe Coder 在没有 Claude 的情况下手动居中 div，首名完成者获 100 万美元，折射出 AI 编程助手对开发者工作方式的深刻影响。",
+        "rating": "B",
+        "score": 69,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "Vibe Coding 作为新兴开发范式正在重塑编程教育、招聘标准和工具链，其长期影响值得持续跟踪。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/droidbuilds/status/2058887988424397167"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779739657,
+        "published_at": "2026-05-26T04:07:37.468972",
+        "source": "x",
+        "url": "https://x.com/droidbuilds/status/2058887988424397167",
+        "event_id": null
+      },
+      {
+        "id": "71c2cf845e9aa84fb2440575fab91145",
+        "title": "苹果 M5 MacBook Air Memorial Day 促销降至 899 美元起",
+        "chinese_title": "苹果 M5 MacBook Air Memorial Day 促销降至 899 美元起",
+        "original_title": "Save up to $200 on a 13-inch or 15-inch MacBook Air with M5 chip and 16GB of RAM &mdash; Memorial Day discounts get you Apple's latest and best consumer laptop for as low as $899",
+        "summary": "苹果最新 M5 芯片 MacBook Air 在 Memorial Day 促销期间最高优惠 200 美元，13 英寸版本起售价 899 美元，配备 16GB 内存。",
         "rating": "B",
         "score": 68,
         "type": "product",
         "typeName": "产品发布",
-        "expansion": "小模型长上下文能力突破可能推动端侧AI应用普及，影响边缘计算芯片和轻量化模型部署市场。",
-        "entities": [
-          "Minicpm",
-          "Mlx",
-          "Openbmb"
-        ],
+        "expansion": "M5 MacBook Air 的定价策略可能加速 ARM 架构在消费级笔记本市场的渗透，影响 Windows 阵营的竞品定价。",
+        "entities": [],
         "sourceLinks": [
           {
-            "name": "x",
-            "url": "https://x.com/sheriyuo/status/2058984020399313296"
+            "name": "Tom's Hardware (apple)",
+            "url": "https://www.tomshardware.com/pc-components/save-up-to-usd200-on-a-13-inch-or-15-inch-macbook-air-with-m5-chip-and-16gb-of-ram-memorial-day-discounts-get-you-apples-latest-and-best-consumer-laptop-for-as-low-as-usd899"
           }
         ],
         "sources": 1,
-        "timestamp": 1779735681,
-        "published_at": "2026-05-26T03:01:21.259484",
-        "source": "x",
-        "url": "https://x.com/sheriyuo/status/2058984020399313296",
-        "event_id": null
-      },
-      {
-        "id": "1ae751477be50187996e9cf8d292f0d3",
-        "title": "xAI推出Grok Build测试版，支持Plan Mode与自动化编排",
-        "chinese_title": "xAI推出Grok Build测试版，支持Plan Mode与自动化编排",
-        "original_title": "RT xAI: Grok Build is now available in Beta for all SuperGrok and X Premium+ users. Use Plan Mode, create images and videos with Imagine, and build au...",
-        "summary": "xAI面向SuperGrok和X Premium+用户开放Grok Build Beta版本，新增Plan Mode规划模式、Imagine图像视频生成，以及CLI自动化和编排功能。",
-        "rating": "A",
-        "score": 81,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Grok Build的CLI自动化能力可能冲击n8n、Zapier等低代码自动化平台，推动AI Agent生态竞争升级。",
-        "entities": [
-          "Grok",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Scobleizer/status/2058982946988790262"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779735681,
-        "published_at": "2026-05-26T03:01:21.259508",
-        "source": "x",
-        "url": "https://x.com/Scobleizer/status/2058982946988790262",
-        "event_id": null
-      },
-      {
-        "id": "f0f64709e01351585f437682e6a7083d",
-        "title": "DeepSeek前沿模型定价仅为美国实验室1/30引发硬件成本讨论",
-        "chinese_title": "DeepSeek前沿模型定价仅为美国实验室1/30引发硬件成本讨论",
-        "original_title": "deepseek just permanently priced their frontier model at 1/30th of american labs anyone know what the hardware story here is? is this huawei chips dri...",
-        "summary": "DeepSeek将其前沿模型定价压至美国实验室的1/30，引发业界对其硬件成本结构的猜测，可能涉及华为芯片、模型优化或更低利润率策略。",
-        "rating": "A+",
-        "score": 87,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "若成本优势来自自研芯片和算法优化，可能重塑全球AI推理定价体系，对英伟达高端GPU需求产生长期影响。",
-        "entities": [
-          "DeepSeek",
-          "华为"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/agupta/status/2058959763644227895"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779735681,
-        "published_at": "2026-05-26T03:01:21.259523",
-        "source": "x",
-        "url": "https://x.com/agupta/status/2058959763644227895",
+        "timestamp": 1779739657,
+        "published_at": "2026-05-26T04:07:37.469127",
+        "source": "Tom's Hardware (apple)",
+        "url": "https://www.tomshardware.com/pc-components/save-up-to-usd200-on-a-13-inch-or-15-inch-macbook-air-with-m5-chip-and-16gb-of-ram-memorial-day-discounts-get-you-apples-latest-and-best-consumer-laptop-for-as-low-as-usd899",
         "event_id": null
       },
       {
@@ -29962,6 +30212,6 @@
       }
     ]
   },
-  "last_updated": "2026-05-26T03:01:48.485383",
-  "total_news": 1041
+  "last_updated": "2026-05-26T04:07:38.081883",
+  "total_news": 1051
 }
