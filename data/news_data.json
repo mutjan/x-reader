@@ -2,6 +2,95 @@
   "news": {
     "2026-05-26": [
       {
+        "id": "8efd11a50c4d94c2ef8c5de15c77955e",
+        "title": "罗马教皇与Anthropic联合创始人联合警告AI权力集中风险",
+        "chinese_title": "罗马教皇与Anthropic联合创始人联合警告AI权力集中风险",
+        "original_title": "Pope Leo, Anthropic Co-Founder Warn of AI Power Concentration, Labor Displacement",
+        "summary": "教皇利奥十四世发布四万字长文《壮丽的人类》，与Anthropic联合创始人共同表达对AI权力集中、劳动力替代等问题的深度担忧。",
+        "rating": "A",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "宗教领袖介入AI伦理讨论可能推动更广泛的公众认知和政策制定。",
+        "entities": [
+          "Ai伦理",
+          "Anthropic",
+          "教皇利奥十四世"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/pope-leo-anthropic-co-founder-warn-ai-power-concentration-labor-displacement"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779757541,
+        "published_at": "2026-05-26T09:05:41.815076",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/pope-leo-anthropic-co-founder-warn-ai-power-concentration-labor-displacement",
+        "event_id": null
+      },
+      {
+        "id": "8faffa30dbcbe7d562c85ae3a5ac39c0",
+        "title": "Claude发现苹果macOS 26.5内核漏洞获CVE编号",
+        "chinese_title": "Claude发现苹果macOS 26.5内核漏洞获CVE编号",
+        "original_title": "CVE-2026-28952: Apple macOS 26.5 Kernel Vuln found by Claude",
+        "summary": "Anthropic的Claude AI在分析苹果系统时发现macOS 26.5内核存在安全漏洞，已被分配CVE-2026-28952编号，标志着AI辅助安全研究的重要突破。",
+        "rating": "A+",
+        "score": 89,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "AI发现系统漏洞的能力若持续验证，可能改变网络安全研究范式。",
+        "entities": [
+          "Apple",
+          "Claude",
+          "Cve",
+          "Macos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (apple)",
+            "url": "https://support.apple.com/en-us/127115"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779757541,
+        "published_at": "2026-05-26T09:05:41.815087",
+        "source": "Hacker News (apple)",
+        "url": "https://support.apple.com/en-us/127115",
+        "event_id": null
+      },
+      {
+        "id": "10828209c93bc60a25e77db41da67056",
+        "title": "开发者开源本地Wikipedia RAG系统Aiki",
+        "chinese_title": "开发者开源本地Wikipedia RAG系统Aiki",
+        "original_title": "Aiki my local Wikipedia Retrieval-Augmented Generation system [R]",
+        "summary": "独立开发者发布Aiki，一个轻量级本地Wikipedia检索增强生成系统，支持自定义文章下载、TF-IDF检索和查询扩展，完全本地运行无需依赖外部API。",
+        "rating": "B",
+        "score": 66,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "本地化RAG工具降低知识检索门槛，可能推动个人知识库和轻量级AI应用发展。",
+        "entities": [
+          "Aiki",
+          "Rag",
+          "Wikipedia",
+          "开源"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tnn89v/aiki_my_local_wikipedia_retrievalaugmented/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779757541,
+        "published_at": "2026-05-26T09:05:41.815109",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tnn89v/aiki_my_local_wikipedia_retrievalaugmented/",
+        "event_id": null
+      },
+      {
         "id": "0dc70939964bd1c6131540418ff99f0a",
         "title": "提示债务检索债务和评估债务正在重塑企业AI风险格局",
         "chinese_title": "提示债务检索债务和评估债务正在重塑企业AI风险格局",
@@ -24,6 +113,56 @@
         "published_at": "2026-05-26T08:09:06.204825",
         "source": "VentureBeat",
         "url": "https://venturebeat.com/technology/why-prompt-debt-retrieval-debt-and-evaluation-debt-are-quietly-reshaping-enterprise-ai-risk",
+        "event_id": null
+      },
+      {
+        "id": "87e7a293eaa2476d14622c1e3eb51c40",
+        "title": "LongLive 2.0视频生成模型推理速度提升18.6%实现2倍实时生成",
+        "chinese_title": "LongLive 2.0视频生成模型推理速度提升18.6%实现2倍实时生成",
+        "original_title": "🚀 LongLive 2.0 just got faster! Since last week’s release, we further optimized the NVFP4 inference path and improved the overall throughput by 18...",
+        "summary": "LongLive 2.0通过优化NVFP4推理路径、融合Triton内核、减少KV缓存同步开销等技术，将64秒视频生成时间缩短至30.6秒，实现超过2倍实时生成速度。",
+        "rating": "A",
+        "score": 79,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "视频生成实时化突破将推动短视频、直播、游戏等应用场景落地，可能引发英伟达推理芯片需求增长，同时加速开源视频模型与闭源产品的性能竞赛。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/yukangchen_/status/2058937563293835696"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779754146,
+        "published_at": "2026-05-26T08:09:06.204701",
+        "source": "x",
+        "url": "https://x.com/yukangchen_/status/2058937563293835696",
+        "event_id": null
+      },
+      {
+        "id": "8d8743f29e12815064a896c79502d082",
+        "title": "西北大学工程师3D打印出与生物神经元无差别的人工神经元",
+        "chinese_title": "西北大学工程师3D打印出与生物神经元无差别的人工神经元",
+        "original_title": "For the first time in history, a machine is speaking the brain's own language. Not reading it. Not recording it. Speaking it. Northwestern University ...",
+        "summary": "西北大学研究团队利用3D打印技术制造出能发出与生物神经元无法区分的电信号的人工神经元，可直接与活体脑细胞通信，论文发表于2026年4月。",
+        "rating": "S",
+        "score": 93,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "人工神经元突破可能彻底改变脑机接口技术路径，从信号读取迈向双向通信，对神经疾病治疗、增强人类认知能力具有深远影响。",
+        "entities": [],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/iam_elias1/status/2058848230428045372"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779754146,
+        "published_at": "2026-05-26T08:09:06.204751",
+        "source": "x",
+        "url": "https://x.com/iam_elias1/status/2058848230428045372",
         "event_id": null
       },
       {
@@ -1199,53 +1338,121 @@
     ],
     "2026-05-25": [
       {
-        "id": "87e7a293eaa2476d14622c1e3eb51c40",
-        "title": "LongLive 2.0视频生成模型推理速度提升18.6%实现2倍实时生成",
-        "chinese_title": "LongLive 2.0视频生成模型推理速度提升18.6%实现2倍实时生成",
-        "original_title": "🚀 LongLive 2.0 just got faster! Since last week’s release, we further optimized the NVFP4 inference path and improved the overall throughput by 18...",
-        "summary": "LongLive 2.0通过优化NVFP4推理路径、融合Triton内核、减少KV缓存同步开销等技术，将64秒视频生成时间缩短至30.6秒，实现超过2倍实时生成速度。",
+        "id": "a31ea52960b8e2aa0cf325410b0d3cb0",
+        "title": "UC Berkeley团队发布mKernel多节点GPU融合内核",
+        "chinese_title": "UC Berkeley团队发布mKernel多节点GPU融合内核",
+        "original_title": "🚀 Excited to release mKernel: a set of fast multi-node, multi-GPU fused kernels. 💻 Code: https://github.com/uccl-project/mKernel 📝 Blog: http...",
+        "summary": "UC Berkeley研究团队推出mKernel，将计算与通信融合为单一持久GPU内核，支持节点内和跨节点通信，有望显著提升分布式AI训练效率。",
         "rating": "A",
-        "score": 79,
+        "score": 78,
         "type": "research",
         "typeName": "研究成果",
-        "expansion": "视频生成实时化突破将推动短视频、直播、游戏等应用场景落地，可能引发英伟达推理芯片需求增长，同时加速开源视频模型与闭源产品的性能竞赛。",
-        "entities": [],
+        "expansion": "融合内核技术若成熟，可能改变大规模分布式训练架构，影响英伟达等芯片厂商软件生态。",
+        "entities": [
+          "Gpu",
+          "Mkernel",
+          "Uc Berkeley",
+          "分布式训练"
+        ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/yukangchen_/status/2058937563293835696"
+            "url": "https://x.com/ziming_mao/status/2058972616548131169"
           }
         ],
         "sources": 1,
-        "timestamp": 1779754146,
-        "published_at": "2026-05-26T08:09:06.204701",
+        "timestamp": 1779757541,
+        "published_at": "2026-05-26T09:05:41.815027",
         "source": "x",
-        "url": "https://x.com/yukangchen_/status/2058937563293835696",
+        "url": "https://x.com/ziming_mao/status/2058972616548131169",
         "event_id": null
       },
       {
-        "id": "8d8743f29e12815064a896c79502d082",
-        "title": "西北大学工程师3D打印出与生物神经元无差别的人工神经元",
-        "chinese_title": "西北大学工程师3D打印出与生物神经元无差别的人工神经元",
-        "original_title": "For the first time in history, a machine is speaking the brain's own language. Not reading it. Not recording it. Speaking it. Northwestern University ...",
-        "summary": "西北大学研究团队利用3D打印技术制造出能发出与生物神经元无法区分的电信号的人工神经元，可直接与活体脑细胞通信，论文发表于2026年4月。",
-        "rating": "S",
-        "score": 93,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "人工神经元突破可能彻底改变脑机接口技术路径，从信号读取迈向双向通信，对神经疾病治疗、增强人类认知能力具有深远影响。",
-        "entities": [],
+        "id": "fabca4429d28305b8b5e288b13933865",
+        "title": "Claude Code CLI通信默认启用加密传输",
+        "chinese_title": "Claude Code CLI通信默认启用加密传输",
+        "original_title": "Thank you Claude Code for auto encrypting all communication over CLI. Very SOC2 of you.",
+        "summary": "Anthropic的Claude Code工具在命令行界面中自动加密所有通信内容，满足SOC2合规要求，提升企业级AI工具的安全性。",
+        "rating": "B",
+        "score": 72,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "AI工具安全合规趋势加速，可能推动更多开发工具默认启用端到端加密。",
+        "entities": [
+          "Anthropic",
+          "Claude Code",
+          "Soc2"
+        ],
         "sourceLinks": [
           {
             "name": "x",
-            "url": "https://x.com/iam_elias1/status/2058848230428045372"
+            "url": "https://x.com/vasuman/status/2058965034701824174"
           }
         ],
         "sources": 1,
-        "timestamp": 1779754146,
-        "published_at": "2026-05-26T08:09:06.204751",
+        "timestamp": 1779757541,
+        "published_at": "2026-05-26T09:05:41.815043",
         "source": "x",
-        "url": "https://x.com/iam_elias1/status/2058848230428045372",
+        "url": "https://x.com/vasuman/status/2058965034701824174",
+        "event_id": null
+      },
+      {
+        "id": "d23f4344656f502cd82809fc452f5dd9",
+        "title": "Google开源内部代码审查标准文档",
+        "chinese_title": "Google开源内部代码审查标准文档",
+        "original_title": "Google acaba de publicar el estándar de Code Review que usan sus ingenieros internos. Literalmente puedes darle esta documentación a un agente de IA...",
+        "summary": "Google公开发布其内部工程师使用的代码审查标准，涵盖架构审查、可读性验证、最佳实践检测等维度，可直接用于训练AI代码审查代理。",
+        "rating": "A",
+        "score": 76,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "AI代码审查工具可能借此提升质量，推动开发工具链智能化升级。",
+        "entities": [
+          "Ai代理",
+          "Google",
+          "代码审查"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/nicos_ai/status/2058939286355853651"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779757541,
+        "published_at": "2026-05-26T09:05:41.815066",
+        "source": "x",
+        "url": "https://x.com/nicos_ai/status/2058939286355853651",
+        "event_id": null
+      },
+      {
+        "id": "223d3ceeb2e48f2b137e5bf51016b939",
+        "title": "开发者开源Jupyter Notebook合并冲突解决工具MergeNB",
+        "chinese_title": "开发者开源Jupyter Notebook合并冲突解决工具MergeNB",
+        "original_title": "MergeNB: An intuitive merge conflict resolver built for Jupyter notebooks in VS Code [P]",
+        "summary": "针对Jupyter Notebook与git协作中的合并冲突难题，开发者推出VS Code扩展MergeNB，提供可视化Web界面解决Notebook合并冲突，作为nbdime的替代方案。",
+        "rating": "B",
+        "score": 67,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "Notebook版本控制工具优化可能提升数据科学团队协作效率。",
+        "entities": [
+          "Jupyter Notebook",
+          "Mergenb",
+          "Nbdime",
+          "Vs Code"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tmq1eb/mergenb_an_intuitive_merge_conflict_resolver/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1779757541,
+        "published_at": "2026-05-26T09:05:41.815198",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tmq1eb/mergenb_an_intuitive_merge_conflict_resolver/",
         "event_id": null
       },
       {
@@ -28786,98 +28993,9 @@
         "source": "Hacker News (qwen)",
         "url": "https://vas-blog.pages.dev/qwen-censorship/",
         "event_id": null
-      },
-      {
-        "id": "c7719f5214535b691750f6dc32155972",
-        "title": "马斯克起诉OpenAI败诉，Uber加码收购Delivery Hero外卖业务",
-        "chinese_title": "马斯克起诉OpenAI败诉，Uber加码收购Delivery Hero外卖业务",
-        "original_title": "Musk Loses in Court; Uber Buys More of Delivery Hero",
-        "summary": "马斯克针对Sam Altman和Greg Brockman的诉讼因超过诉讼时效被陪审团驳回；同期Starship试射推迟、SpaceX工人意外身亡；另一边Uber正进一步收购Delivery Hero外卖业务版图。",
-        "rating": "A+",
-        "score": 90,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "马斯克与OpenAI多年恩怨告一段落，可能影响xAI竞争策略；Uber加码外卖意在与DoorDash正面对抗，全球外卖整合提速。",
-        "entities": [
-          "Elon Musk",
-          "OpenAI",
-          "Sam Altman",
-          "SpaceX",
-          "Uber"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/musk-loses-court-uber-buys-delivery-hero"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779152542,
-        "published_at": "2026-05-19T09:02:22.682289",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/musk-loses-court-uber-buys-delivery-hero",
-        "event_id": null
-      },
-      {
-        "id": "fdf5b0883c1a3eee26d3fd3e176b96b3",
-        "title": "Anthropic联合创始人将与教皇利奥十四世共同发布AI通谕",
-        "chinese_title": "Anthropic联合创始人将与教皇利奥十四世共同发布AI通谕",
-        "original_title": "Anthropic co-founder to present AI encyclical alongside Pope Leo XIV",
-        "summary": "梵蒂冈宣布教皇利奥十四世将发布首份关于人工智能的通谕《Magnifica Humanitas》，Anthropic联合创始人将出席并参与发布，标志着宗教界对AI伦理议题的正式介入。",
-        "rating": "A",
-        "score": 80,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "宗教权威介入AI伦理可能影响全球监管走向；Anthropic借此强化其'安全AI'品牌定位，与OpenAI、xAI形成差异化。",
-        "entities": [
-          "Ai伦理",
-          "Anthropic",
-          "Pope Leo Xiv"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779152542,
-        "published_at": "2026-05-19T09:02:22.682307",
-        "source": "Hacker News",
-        "url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html",
-        "event_id": null
-      },
-      {
-        "id": "b2f810b82153f00adbadceaf0b3129b9",
-        "title": "\"类固醇奥运会\"能否倒逼传统体育界重新审视运动员保障",
-        "chinese_title": "\"类固醇奥运会\"能否倒逼传统体育界重新审视运动员保障",
-        "original_title": "Can the ‘steroid Olympics’ show the sporting community how to support athletes better?",
-        "summary": "《Nature》刊文讨论允许使用兴奋剂的Enhanced Games赛事，认为其虽具争议，但暴露了主流体育在运动员健康保障和反兴奋剂体系上的结构性缺陷。",
-        "rating": "B",
-        "score": 68,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可延伸至生物增强、基因编辑在竞技体育中的边界讨论，以及奥委会监管模式是否需要根本性变革。",
-        "entities": [
-          "Enhanced Games",
-          "Nature",
-          "兴奋剂"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01552-2"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779152542,
-        "published_at": "2026-05-19T09:02:22.682323",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01552-2",
-        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-05-26T08:09:06.805080",
-  "total_news": 1008
+  "last_updated": "2026-05-26T09:06:43.955894",
+  "total_news": 1012
 }
