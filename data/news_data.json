@@ -10831,11 +10831,72 @@
     ],
     "2026-05-31": [
       {
+        "id": "4c702a35807346ddab0695101ce4a0cc",
+        "title": "英伟达Arm PC芯片规格曝光，最高20核",
+        "chinese_title": "英伟达Arm PC芯片规格曝光，最高20核",
+        "original_title": "Nvidia's long-awaited N1/N1X SoC specs leak ahead of Computex launch &mdash; N1 to feature up to 20 Arm-based cores, standard N1 equipped with 12- and 10-core configs",
+        "summary": "英伟达传闻中的 N1/N1X SoC 规格在 Computex 前流出，高配版本可能搭载 20 个 Arm CPU 核心和 6144 个 CUDA 核心，显示其进入 Windows Arm PC 与高性能移动计算市场的野心。",
+        "rating": "A+",
+        "score": 87,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "若规格属实，英伟达将从 GPU 进一步切入 CPU 与整机平台竞争，可能影响高通、AMD、英特尔在 Arm PC 和轻薄游戏本市场的格局。",
+        "entities": [
+          "Arm",
+          "CUDA",
+          "Computex",
+          "N1",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/pc-components/cpus/nvidias-long-awaited-n1-n1x-soc-specs-leak-ahead-of-computex-launch-n1-to-feature-up-to-20-arm-based-cores-standard-n1-equipped-with-12-and-10-core-configs"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780243662,
+        "published_at": "2026-06-01T00:07:42.166013",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/pc-components/cpus/nvidias-long-awaited-n1-n1x-soc-specs-leak-ahead-of-computex-launch-n1-to-feature-up-to-20-arm-based-cores-standard-n1-equipped-with-12-and-10-core-configs",
+        "event_id": null
+      },
+      {
+        "id": "87b203449b5d7db28ae3de26b734a56a",
+        "title": "木星外发现环状行星工厂线索",
+        "chinese_title": "木星外发现环状行星工厂线索",
+        "original_title": "Scientists Spot What Appears to Be a Ring-Shaped “Planet Factory” Deep Out in Space",
+        "summary": "天文学家发现木星轨道之外可能存在由气体和尘埃构成的环状区域，模拟显示它或许曾孕育微行星，并能解释地球上一些特殊陨石的来源。",
+        "rating": "B",
+        "score": 65,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究可延伸到太阳系早期形成机制、陨石样本溯源以及行星形成模型修正，也适合与小行星带、柯伊伯带研究联动报道。",
+        "entities": [
+          "太阳系",
+          "微行星",
+          "木星",
+          "陨石"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/space/scientists-spot-planet-factory"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780243662,
+        "published_at": "2026-06-01T00:07:42.166126",
+        "source": "Futurism",
+        "url": "https://futurism.com/space/scientists-spot-planet-factory",
+        "event_id": null
+      },
+      {
         "id": "97358a1958fd7f408623ba272b7a6d49",
         "title": "开源具身模型零微调挑战真实机器人",
         "chinese_title": "开源具身模型零微调挑战真实机器人",
         "original_title": "Open-weights VLA hits 80%+ task progress on 4 of 17 real-robot tasks with zero fine-tuning. Demo reel attached",
-        "summary": "开源 VLA 模型 Wall-OSS-0.5 展示真实机器人任务演示，在 17 个任务中的 4 个达到 80% 以上进展，重点强调无需任务微调的预训练模型能力。",
+        "summary": "Wall-OSS-0.5 作为开源视觉语言动作模型，在演示中不经任务微调完成多项真实机器人操作，其中 4 项任务进度超过 80%，试图让预训练 checkpoint 本身具备可衡量价值。",
         "rating": "A",
         "score": 83,
         "type": "research",
@@ -10858,22 +10919,26 @@
         "published_at": "2026-05-31T23:34:01.534987",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1tsnrkh/openweights_vla_hits_80_task_progress_on_4_of_17/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Sharing this because it is an embodied AI release trying to make the pretrained checkpoint itself measurable, instead of only showing results after task-specific tuning. The video is a reel from Wall-OSS-0.5, a vision language action model released with open-source resources. Every clip in the reel has the same \"Autonomous w/o Fine-Tuning\" watermark in the corner. The robot is doing things like opening a pot lid and dropping fruit inside, covering blocks with a cloth, sorting items by color, putting drinks in specific containers in a specified order, shredding paper, putting a cup to the right of a calculator. According to the release, these clips are from the pretrained checkpoint rather than task-specific fine tuning. What is interesting compared with the usual humanoid demo cycle is the evaluation framing. They report 4 of 17 real robot tasks above 80 percent task progress at zero shot, including a deformable rope tightening task that was not in the pretraining set. They also show pretraining task progress rising across checkpoints, with held-out tasks tracking seen tasks. That is the kind of curve people keep asking for in embodied AI, even if it is still early. The other part I found notable is that the model seems to preserve general image/language ability while improving embodied grounding, at least by their evaluation. That matters because a lot of robot policies feel like they gain control ability by becoming narrower. Code: https://github.com/X-Square-Robot/wall-x . Paper: https://x2robot.com/api/files/file/wall_oss_05.pdf . Hugging Face org: https://huggingface.co/x-square-robot . The caveat is that the harder tasks are still not solved. Towel folding, charger insertion and table setting are still very low in zero shot, so pretraining alone is not magic. The real test is whether outside groups can run the checkpoint on their own arms and see similar strengths and failures. Reel is attached. Original demo is on their project page. submitted by /u/BookwormSarah1 [link] [comments]",
+        "grade": "A",
+        "extension": "可继续追踪开源 VLA 模型能否降低机器人数据采集和任务适配成本，并与闭源机器人模型、端到端操控路线形成对比。"
       },
       {
         "id": "4cb8d8596ef8f24cd440ee451a93c5c7",
-        "title": "AI基准平台被质疑排名失真",
-        "chinese_title": "AI基准平台被质疑排名失真",
+        "title": "AI榜单可信度争议再被社区点燃",
+        "chinese_title": "AI榜单可信度争议再被社区点燃",
         "original_title": "Arena.ai is running possibly the most fraudulent benchmark thus far",
-        "summary": "Reddit 用户质疑 Arena.ai 的模型榜单可信度，称其把部分视频生成和编码模型排位做出反常结果，反映 AI 评测平台公信力正在受到更强审视。",
+        "summary": "有 Reddit 用户质疑 Arena.ai 的模型榜单存在严重失真，称其此前将 GPT 排在部分模型之后，最新又给出与用户体验不符的视频生成排名，引发对 AI 基准测试透明度的讨论。",
         "rating": "B",
-        "score": 71,
+        "score": 75,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "可延伸到 AI 榜单商业化、模型营销和第三方评测透明度问题，适合追踪主流社区是否形成对新基准平台的信任危机。",
         "entities": [
-          "Ai基准",
+          "Ai基准测试",
           "Arena.Ai",
+          "GPT",
           "Grok",
           "Seedance"
         ],
@@ -10888,20 +10953,24 @@
         "published_at": "2026-05-31T23:34:01.535086",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1tslcms/arenaai_is_running_possibly_the_most_fraudulent/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Previously they placed GPT 5.5 below Meta's Muse Spark in terms of coding ability. This latest benchmark they've released with Grok Imagine surpassing Seedance video generation... if anyone is currently using both it's fair to say this is objectively dishonest. submitted by /u/Cagnazzo82 [link] [comments]",
+        "grade": "A",
+        "extension": "可延伸到 AI 模型评测平台的样本选择、投票机制和商业利益冲突，尤其适合结合近期多模态模型榜单争议做横向分析。"
       },
       {
         "id": "ecd53ddb0e910305ced3cc638f18f3f0",
         "title": "华硕18英寸Mini LED游戏本主打低拖影",
         "chinese_title": "华硕18英寸Mini LED游戏本主打低拖影",
         "original_title": "This extravagant gaming laptop could ruin other screens for you",
-        "summary": "The Verge 体验了华硕 ROG Strix Scar 18 的预生产版本，称其 18 英寸 Mini LED 屏幕亮度高、画面锐利，并通过新显示技术减少游戏中的运动模糊。",
+        "summary": "The Verge 体验了 Computex 前公布的华硕 ROG Strix Scar 18，重点关注其 18 英寸 Mini LED 屏幕和降低运动模糊的显示效果，显示高端游戏本继续围绕屏幕体验拉开差异。",
         "rating": "B",
-        "score": 71,
-        "type": "product",
+        "score": 70,
+        "type": "hardware",
         "typeName": "产品发布",
         "expansion": "可延伸到高端游戏本显示技术竞赛，观察 Mini LED、OLED 与低拖影方案如何影响电竞和创作者笔记本的卖点重心。",
         "entities": [
+          "Computex",
           "Mini Led",
           "Rog Strix",
           "华硕",
@@ -10918,21 +10987,25 @@
         "published_at": "2026-05-31T23:34:01.535280",
         "source": "The Verge -  Tech Posts",
         "url": "https://www.theverge.com/tech/940221/asus-rog-strix-scar-18-elmb-gaming-laptop-motion-blur-handson-impressions",
-        "event_id": null
+        "event_id": null,
+        "original_content": "A speedy 18-inch Mini LED that needs to be seen to be believed. | Photo: Antonio G. Di Benedetto / The Verge My eyes have seen the PC gaming promised land, and it's a beautifully bright world without a shred of blurriness. It's warm, it looks lovely, and it's impeccably sharp. Also, it's expensive as hell. I've dipped my toe in this world by testing a pre-production version of the upcoming Asus ROG Strix Scar 18 , which was recently announced ahead of Computex 2026. It's a gigantic 18-inch gaming laptop that comes with a top-of-the-line 24-core Intel Core Ultra 9 290HX CPU and can be fully kitted out with an RTX 5090 Laptop GPU and 128GB of RAM. Asus sent me a model to test that's maxed out on all specs except storage (it's got \"just\" 4TB). And of … Read the full story at The Verge.",
+        "grade": "B",
+        "extension": "可延伸到 Mini LED、OLED、高刷新率屏幕在游戏本市场的路线竞争，以及高端 PC 厂商如何用显示体验支撑溢价。"
       },
       {
         "id": "44ff40e9e39cfcfacdd01084fec2d3ce",
         "title": "苹果智能眼镜据称推迟到2027年底",
         "chinese_title": "苹果智能眼镜据称推迟到2027年底",
         "original_title": "Sources: Apple delays iPhone-connected smart glasses to late 2027, aiming to disrupt the mid-tier $200-$500 eyewear market the way it disrupted the watch market (Mark Gurman/Bloomberg)",
-        "summary": "彭博援引消息称，苹果已将连接 iPhone 的智能眼镜推迟到 2027 年底，目标瞄准 200 至 500 美元中端眼镜市场，并希望复制 Apple Watch 的破局路径。",
+        "summary": "Mark Gurman 称苹果已将连接 iPhone 的智能眼镜推迟到 2027 年底，并希望以 200 到 500 美元价格段切入中端眼镜市场，复制 Apple Watch 式的品类突破。",
         "rating": "A",
-        "score": 86,
-        "type": "product",
+        "score": 82,
+        "type": "breaking",
         "typeName": "产品发布",
         "expansion": "可延伸到苹果与 Meta 在智能眼镜市场的节奏差异，以及低价眼镜能否成为继手表之后的新可穿戴入口。",
         "entities": [
           "Apple",
+          "Apple Watch",
           "Iphone",
           "Meta",
           "智能眼镜"
@@ -10948,16 +11021,19 @@
         "published_at": "2026-05-31T23:34:01.535376",
         "source": "Techmeme (apple)",
         "url": "https://www.techmeme.com/260531/p8#a260531p8",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Mark Gurman / Bloomberg : Sources: Apple delays iPhone-connected smart glasses to late 2027, aiming to disrupt the mid-tier $200-$500 eyewear market the way it disrupted the watch market — Also: The latest on iOS 27, iOS 28, new Apple TV and HomePod mini. — Apple isn't just going after Meta with its upcoming iPhone-connected smart glasses.",
+        "grade": "A",
+        "extension": "可延伸追踪苹果与 Meta 在 AI 眼镜入口上的节奏差异，以及苹果是否会以 iPhone 生态、价格和内容能力重塑可穿戴设备市场。"
       },
       {
         "id": "7ec943bba9559ab0f69d80fe8811e14c",
-        "title": "黑人创始人融资额创2022年以来季度新高",
-        "chinese_title": "黑人创始人融资额创2022年以来季度新高",
+        "title": "黑人创始人季度融资创近年新高但隐忧仍在",
+        "chinese_title": "黑人创始人季度融资创近年新高但隐忧仍在",
         "original_title": "Black founders raise highest amount of quarterly funding since 2022, but there’s a catch",
-        "summary": "Crunchbase 数据显示黑人创始人季度融资额达到 2022 年以来最高水平，但早期人脉、投资关系和关键引荐不足仍是制约融资公平性的核心问题。",
+        "summary": "Crunchbase 数据显示黑人创始人季度融资额达到 2022 年以来最高水平，但研究者指出网络资源、关系和早期引荐不足仍限制其获得更广泛资本支持。",
         "rating": "B",
-        "score": 69,
+        "score": 68,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "可延伸到美国创投多元化退潮后的真实资金流向，以及 AI 和科技融资周期是否改善了少数族裔创业者处境。",
@@ -10978,20 +11054,24 @@
         "published_at": "2026-05-31T23:34:01.535471",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/05/31/black-founders-raise-highest-amount-of-quarterly-funding-since-2022-but-theres-a-catch/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Speaking to TechCrunch, Crunchbase’s head of research Gené Teare, said the factors holding back Black founders include “access to networks, relationships, and early introductions.\"",
+        "grade": "B",
+        "extension": "可延伸分析风险投资多元化回暖是否可持续，以及不同族群创业者在 AI 和科技融资周期中的结构性机会差异。"
       },
       {
         "id": "7b9b887f63ba93469f58f454d5de21cd",
         "title": "前线部署工程师成AI落地新热岗",
         "chinese_title": "前线部署工程师成AI落地新热岗",
         "original_title": "Why Forward Deployed Engineers Are the Rage",
-        "summary": "The Information 称，源自 Palantir 的前线部署工程师岗位正在科技行业扩散，Meta 和 Google Cloud 等公司都在用这类角色推动客户真正采用 AI 工具。",
+        "summary": "随着企业急于把 AI 工具真正接入业务，源自 Palantir 的前线部署工程师岗位正在扩散到 Meta、Google Cloud 等公司，成为连接模型能力与客户场景的关键角色。",
         "rating": "A",
-        "score": 82,
-        "type": "industry",
+        "score": 80,
+        "type": "personnel",
         "typeName": "行业动态",
         "expansion": "可延伸到 AI 公司从模型竞赛转向交付竞争，观察 FDE 是否会成为企业 AI 落地、销售工程和咨询服务融合的新岗位范式。",
         "entities": [
+          "Ai商业化",
           "Google Cloud",
           "Meta",
           "Palantir",
@@ -11008,14 +11088,17 @@
         "published_at": "2026-05-31T23:34:01.535566",
         "source": "The Information",
         "url": "https://www.theinformation.com/articles/forward-deployed-engineers-rage",
-        "event_id": null
+        "event_id": null,
+        "original_content": "AI researchers may have the hottest job in tech, but forward-deployed engineers who put the AI to good use are becoming indispensable too. The military-inspired job title, which Palantir began using in the context of business software more than a decade ago, has spread to all corners of the industry. Last week, for instance, Meta formed a new organization involving FDEs that aims to get more advertisers to also use its AI tools. Google Cloud recently said it plans to hire hundreds of FDEs to help customers use Gemini AI tools.",
+        "grade": "A",
+        "extension": "可延伸到 AI 时代技术岗位从研究和平台开发转向客户现场落地的趋势，也可追踪大厂组织结构如何围绕 AI 商业化重组。"
       },
       {
         "id": "c5019e7304aec9cfbd65106a6004d5d7",
         "title": "软银拟砸870亿美元建设法国AI数据中心",
         "chinese_title": "软银拟砸870亿美元建设法国AI数据中心",
         "original_title": "SoftBank to spend up to $87 billion on French AI data centers — country offers ample nuclear grid that US sites lack",
-        "summary": "软银据称计划最多投入 870 亿美元在法国建设 AI 数据中心，法国核电电网被视为优势，但软银高债务和 OpenAI 投资融资压力也引发关注。",
+        "summary": "软银计划最高投入 870 亿美元在法国建设 AI 数据中心，法国核电充足的电网条件成为吸引点，但软银本身高债务和 OpenAI 投资融资安排也让项目可持续性受到关注。",
         "rating": "A+",
         "score": 90,
         "type": "hardware",
@@ -11024,6 +11107,7 @@
         "entities": [
           "Ai数据中心",
           "OpenAI",
+          "核电",
           "法国",
           "软银"
         ],
@@ -11038,24 +11122,27 @@
         "published_at": "2026-05-31T23:34:01.535660",
         "source": "Tom's Hardware",
         "url": "https://www.tomshardware.com/tech-industry/softbank-to-spend-up-to-75-billion-on-french-ai-data-centers",
-        "event_id": null
+        "event_id": null,
+        "original_content": "SoftBank carries over $130 billion in debt and took a $40 billion bridge loan in March to fund its latest OpenAI investment.",
+        "grade": "A+",
+        "extension": "可延伸观察欧洲 AI 基建竞赛、核电资源对数据中心选址的影响，以及软银围绕 OpenAI 和算力资产展开的资本杠杆风险。"
       },
       {
         "id": "012213bb651aefa4a1d76290474112e0",
         "title": "大学教师对学生使用AI开始强硬反击",
         "chinese_title": "大学教师对学生使用AI开始强硬反击",
         "original_title": "Take-No-Prisoners Professor Will Fail Any Student Who Uses AI",
-        "summary": "Futurism 汇总教师对 AI 进入课堂的反应，一些教授表示会直接判定使用 AI 的学生不及格，显示教育界对学习诚信和生成式 AI 的矛盾加深。",
+        "summary": "面对学生使用聊天机器人完成论文和作业，一些大学教师开始采取更严厉措施，甚至明确表示只要使用 AI 就会不及格，凸显教育场景中学习评估与 AI 工具之间的冲突。",
         "rating": "A",
-        "score": 82,
+        "score": 86,
         "type": "society",
         "typeName": "社会影响",
         "expansion": "可延伸到高校 AI 使用规范、检测工具有效性和教学评价体系重构，也适合关注不同学校从禁用到引导使用的政策分化。",
         "entities": [
-          "Ai检测",
-          "大学教育",
+          "Ai聊天机器人",
+          "大学教师",
           "学术诚信",
-          "生成式Ai"
+          "教育"
         ],
         "sourceLinks": [
           {
@@ -11068,7 +11155,10 @@
         "published_at": "2026-05-31T23:34:01.535754",
         "source": "Futurism",
         "url": "https://futurism.com/future-society/professor-fail-any-student-uses-ai",
-        "event_id": null
+        "event_id": null,
+        "original_content": "When it comes to AI’s place in the classroom — and its role in education broadly — some professors are at the end of their rope. The not quite all-knowing but incredibly adept at bullsh*tting chatbots let lazy students churn out entire essays, solve math problems, and cobble together passable answers for most questions. Needless to say, none of that leaves much room for actual learning . Such desperate times call for Draconian measures. In a roundup of instructor testimonials on the AI’s impact on their profession from The New Yorker , one pedagogue is taking no prisoners when it comes to punishing pupils who surrender their brains to the tech. “I tell students that ChatGPT is disallowed from their writing process, that I can immediately tell when ChatGPT has been used, and that I will fail the student on this assignment if it is used — and, potentially, for the entire course, if we go through a formal appeals process,” Neal Hebert, a theatre professor at Grambling State University, wrote to the magazine. Hebert has an even more merciless warning for theater majors. “I tell my theatre majors, ‘I get paid the same whether I pass you or fail you,'” he wrote. “‘But what you’ve just done is told me and everyone else in our department that you are so lazy you would rather outsource your collaboration to an app than risk being an artist.'” Tough love is not something Hebert undertakes with glee, but the overwhelming tide of AI cheating in his introductory classes has left him no choice, he feels. “I’ve stopped being a collaborator in these intro courses and started being a plagiarism cop, and I do resent that a bit,” he lamented. “I wanted to be the kind of professor my professors were for me.” Some professors try a different tack, allowing moderate experimentation with AI, and more forgiving forms of chastisement. Daniel Silver, a professor of sociology at the University of Toronto, Scarborough, framed it as a learning opportunity — for the instructors. “AI has fundamentally changed how I teach, and it demands basic reflection about what we are trying to accomplish,” Silver told The New Yorker. Silver said he spent a lot of time this academic year coming up with new types of assignments that call for more creative uses of AI, such as creating and experimenting with AI agents that represent famous thinkers like Adam Smith. “Beyond that, students still would use AI in a thoughtless way, as a replacement for their thought and judgment,” Silver wrote in his testimonial. “So I made a point to just call them on it, and make them meet with me personally.” After talking with the students, Silver would give them a zero on the offending assignment but also a chance to redo it. “They usually improved, but not always,” he said. To drive the point home, he would show them AI-generated assignments to demonstrate how the “they all kind of look the same.” AI caused him a lot of “emotional upheaval,” Silver admitted, “but I do feel we all, including the students, are learning how to live with it, and we’ll come out better on the other side.” Hebert is less optimistic. Whatever ounce of good-feeling he still possessed was shot down when he read his student’s papers on “Fences,” a Pulitzer-winning 1985 play by August Wilson. “Out of forty students, the vast majority chose similar words, phrasing, and concepts, and most papers were written in that inimitable ChatGPT style: ‘This isn’t a simple story about injustice — it’s a clarion call for a positive understanding of justice,'” he wrote, comparing LLM’s prose to “elevator muzak, but in words.” Rather than integrating AI, he’s fortifying his classroom against it. The assignment is now based on plays too obscure for ChatGPT and other AI models to know about. “If ChatGPT is used on these assignments now, it hallucinates characters, plotlines — it just makes sh*t up, since it has nothing to go on,” Hebert told the magazine. Still, this hasn’t completely discouraged AI cheating , even in Hebert’s upper level courses. And it’s causing him to have nightmares of what the tech’s long term implications for theater as an artform will be, if students “can’t be bothered to read and think about the plays they are performing in.” “Can you imagine AI Performing Arts Slop? The theatrical equivalent of the images ChatGPT and its competitors spit out, soulless and inert, arriving on stage stillborn?” he asked. “I can.” More on education: Parents Explode in Fury at School’s Plan to Constantly Film Their Children to Train AI The post Take-No-Prisoners Professor Will Fail Any Student Who Uses AI appeared first on Futurism .",
+        "grade": "A",
+        "extension": "可延伸到高校如何重设计作业、考试和学术诚信规则，也可比较禁用 AI 与教授 AI 使用能力两种教育治理路线。"
       },
       {
         "id": "fdbac9bd9a2845c578f084f8b78975ec",
@@ -13304,8 +13394,40 @@
         "url": "https://www.techmeme.com/260529/p20#a260529p20",
         "event_id": null
       }
+    ],
+    "2026-06-01": [
+      {
+        "id": "cd95641e59d1939c7454dc9ef8c22c21",
+        "title": "杜克造出满身眼睛的全向感知机器人",
+        "chinese_title": "杜克造出满身眼睛的全向感知机器人",
+        "original_title": "Behold! Duke Scientists Build Biblically Accurate Angel Robot",
+        "summary": "杜克大学研发的 Argus 机器人采用二十条可伸缩腿和多方向视觉设计，外形近似病毒状球体，能滚动移动并观察周围环境，展示了软体与多足机器人在复杂地形感知上的新思路。",
+        "rating": "B",
+        "score": 73,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸关注多足机器人、全向视觉和仿生结构在搜救、巡检等场景的落地潜力，也可比较传统轮式、腿式机器人在复杂环境中的优势边界。",
+        "entities": [
+          "Argus",
+          "全向视觉",
+          "机器人",
+          "杜克大学"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/robots-and-machines/scientists-build-biblically-accurate-angel-robot"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780243662,
+        "published_at": "2026-06-01T00:07:42.165887",
+        "source": "Futurism",
+        "url": "https://futurism.com/robots-and-machines/scientists-build-biblically-accurate-angel-robot",
+        "event_id": null
+      }
     ]
   },
-  "last_updated": "2026-05-31T23:34:41.236709",
-  "total_news": 456
+  "last_updated": "2026-06-01T00:08:20.305196",
+  "total_news": 459
 }
