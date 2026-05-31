@@ -10461,375 +10461,69 @@
         "source": "THE DECODER",
         "url": "https://the-decoder.com/researchers-let-claude-code-discover-ai-scaling-algorithms-that-humans-probably-wouldnt-have-designed/",
         "event_id": null
-      },
-      {
-        "id": "0e22d83b7f8cb2bfc5d70d6878ae1b7f",
-        "title": "768GB英特尔傲腾内存单卡跑通万亿参数Kimi K2.5，本地推理达4token每秒",
-        "chinese_title": "768GB英特尔傲腾内存单卡跑通万亿参数Kimi K2.5，本地推理达4token每秒",
-        "original_title": "768GB of cheap Intel Optane DIMM memory sticks used to run 1-trillion-parameter LLM on a system with a single GPU — local Kimi K2.5 install achieved roughly 4 tokens per second",
-        "summary": "有开发者利用768GB廉价英特尔傲腾DIMM内存，在单GPU系统上成功运行1万亿参数的Kimi K2.5大模型，本地推理速度约4token每秒，展示了消费级硬件运行超大规模模型的可行性。",
-        "rating": "A",
-        "score": 78,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可延伸探讨傲腾内存对大模型本地部署的性价比优势，以及这是否会催生新的硬件配置趋势和开源方案。",
-        "entities": [
-          "Intel",
-          "Kimi",
-          "LLM"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (kimi)",
-            "url": "https://www.reddit.com/r/singularity/comments/1tm1u3l/768gb_of_cheap_intel_optane_dimm_memory_sticks/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736699",
-        "source": "Technological Singularity (kimi)",
-        "url": "https://www.reddit.com/r/singularity/comments/1tm1u3l/768gb_of_cheap_intel_optane_dimm_memory_sticks/",
-        "event_id": null
-      },
-      {
-        "id": "85dde2a607d0cfe3f72970a14e4fb4a1",
-        "title": "苹果开源3D AI生成模型LiTo，文本直接生成三维内容",
-        "chinese_title": "苹果开源3D AI生成模型LiTo，文本直接生成三维内容",
-        "original_title": "Apple’s Open-Source 3D AI Generation Is Here: LiTo",
-        "summary": "苹果发布并开源了名为LiTo的3D AI生成模型，支持通过文本描述直接生成三维内容，标志着苹果在生成式AI和开源策略上的新进展。",
-        "rating": "A+",
-        "score": 88,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可跟进苹果开源策略转变的深层原因，以及LiTo对3D内容创作、游戏和AR/VR生态的潜在影响。",
-        "entities": [
-          "Ai",
-          "Apple",
-          "Lito"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (apple)",
-            "url": "https://www.reddit.com/r/singularity/comments/1tlywjr/apples_opensource_3d_ai_generation_is_here_lito/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736726",
-        "source": "Technological Singularity (apple)",
-        "url": "https://www.reddit.com/r/singularity/comments/1tlywjr/apples_opensource_3d_ai_generation_is_here_lito/",
-        "event_id": null
-      },
-      {
-        "id": "d0135b0e4b942253c096470019b4bf75",
-        "title": "陶哲轩与Claude Code协作完成数学证明优化，AI辅助顶尖科研成常态",
-        "chinese_title": "陶哲轩与Claude Code协作完成数学证明优化，AI辅助顶尖科研成常态",
-        "original_title": "Golfing and stylistically aligning a proof using Claude Code | Another Certified Hood Classic by Terrance Tao and Claude",
-        "summary": "数学家陶哲轩再次使用Claude Code辅助进行数学证明的简化与风格优化，展示了AI工具在顶尖数学研究中的深度协作能力。",
-        "rating": "A",
-        "score": 82,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可探讨AI辅助数学证明的趋势，以及这对数学研究范式、同行评审和学术产出效率的长期影响。",
-        "entities": [
-          "Anthropic",
-          "Claude"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1tlw3l1/golfing_and_stylistically_aligning_a_proof_using/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736743",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1tlw3l1/golfing_and_stylistically_aligning_a_proof_using/",
-        "event_id": null
-      },
-      {
-        "id": "7226166ef99d09e20dff453b490959b9",
-        "title": "Anthropic安全模型Mythos 1现身Claude Code，代码审查能力再升级",
-        "chinese_title": "Anthropic安全模型Mythos 1现身Claude Code，代码审查能力再升级",
-        "original_title": "Mythos 1 has been spotted in Claude Code",
-        "summary": "Anthropic的安全分析模型Mythos 1被发现在Claude Code中集成，专门用于代码安全审查和漏洞检测，显示其在AI安全领域的持续投入。",
-        "rating": "A",
-        "score": 81,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可跟进Mythos与现有代码安全工具的对比，以及AI安全模型在软件开发流程中的商业化前景。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Mythos"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1tluzbd/mythos_1_has_been_spotted_in_claude_code/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736757",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1tluzbd/mythos_1_has_been_spotted_in_claude_code/",
-        "event_id": null
-      },
-      {
-        "id": "6a8742bd2205153403e523fb512b0952",
-        "title": "印度工人头戴摄像头采集视频数据，训练人形机器人成新工种",
-        "chinese_title": "印度工人头戴摄像头采集视频数据，训练人形机器人成新工种",
-        "original_title": "More and more workers in India are collecting video data to train humanoid robots using head-mounted cameras",
-        "summary": "越来越多印度工人开始佩戴头戴式摄像头采集日常操作视频，这些数据被用于训练人形机器人，形成了AI时代的新型数据标注产业链。",
-        "rating": "B",
-        "score": 68,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸探讨机器人数据标注产业的全球化分工、劳工权益问题，以及合成数据与真实采集数据的替代趋势。",
-        "entities": [
-          "Ai",
-          "机器人"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1tlt8ql/more_and_more_workers_in_india_are_collecting/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736770",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1tlt8ql/more_and_more_workers_in_india_are_collecting/",
-        "event_id": null
-      },
-      {
-        "id": "28145937dba4e117bd40f7b9a42d8def",
-        "title": "Anthropic称Mythos已发现超万个安全漏洞，AI安全审查效率惊人",
-        "chinese_title": "Anthropic称Mythos已发现超万个安全漏洞，AI安全审查效率惊人",
-        "original_title": "Anthropic says Mythos has already found more than 10,000 vulnerabilities",
-        "summary": "Anthropic宣布其安全分析模型Mythos已经发现超过10000个安全漏洞，展示了AI在自动化安全审计方面的高效能力。",
-        "rating": "A",
-        "score": 79,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可跟进Mythos发现的漏洞类型分布和严重程度，以及AI安全审查工具是否会重塑网络安全行业格局。",
-        "entities": [
-          "Anthropic",
-          "Mythos"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1tlplt6/anthropic_says_mythos_has_already_found_more_than/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736790",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1tlplt6/anthropic_says_mythos_has_already_found_more_than/",
-        "event_id": null
-      },
-      {
-        "id": "a07b3ce5f32eccb6e65853cb6dbc78b9",
-        "title": "AI智能体沙盒环境中失控引发讨论，自主系统安全边界受关注",
-        "chinese_title": "AI智能体沙盒环境中失控引发讨论，自主系统安全边界受关注",
-        "original_title": "AI agents getting frustrated and causing chaos is both funny and terrifying",
-        "summary": "开发者在测试中发现AI智能体在沙盒环境中出现失控和混乱行为，引发对自主AI系统安全边界和约束机制重要性的广泛讨论。",
-        "rating": "A",
-        "score": 79,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可延伸探讨AI Agent安全标准缺失的现状，以及企业级部署前需要建立的评估框架和监管思路。",
-        "entities": [
-          "Agent",
-          "Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1tlo3zp/ai_agents_getting_frustrated_and_causing_chaos_is/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736800",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1tlo3zp/ai_agents_getting_frustrated_and_causing_chaos_is/",
-        "event_id": null
-      },
-      {
-        "id": "4842a5422a575b68bc734cd1b8d533da",
-        "title": "DeepSeek V4 Pro API永久降价75%，百万输入token仅0.435美元",
-        "chinese_title": "DeepSeek V4 Pro API永久降价75%，百万输入token仅0.435美元",
-        "original_title": "DeepSeek says it will lower V4 Pro API prices by 75% to $0.435/1M input and $0.87/1M output tokens, making permanent the discount prices set to expire on May 31 (Bloomberg)",
-        "summary": "DeepSeek宣布将V4 Pro模型API价格永久降低75%，输入token降至0.435美元/百万，输出token降至0.87美元/百万，将原本5月底到期的折扣变为长期定价。",
-        "rating": "S",
-        "score": 96,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可分析DeepSeek激进定价对OpenAI、Anthropic等竞争对手的压力，以及大模型API价格战对下游应用生态的影响。",
-        "entities": [
-          "DeepSeek"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (deepseek)",
-            "url": "https://www.techmeme.com/260524/p2#a260524p2"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736865",
-        "source": "Techmeme (deepseek)",
-        "url": "https://www.techmeme.com/260524/p2#a260524p2",
-        "event_id": null
-      },
-      {
-        "id": "ad23d36ef70e9c180572576fe7fad815",
-        "title": "开发者实测DeepSeek V4 Pro批量重构代码，90%常规任务零人工干预",
-        "chinese_title": "开发者实测DeepSeek V4 Pro批量重构代码，90%常规任务零人工干预",
-        "original_title": "coding is basically solved for the boring 90% of tasks",
-        "summary": "一名开发者使用DeepSeek V4 Pro和腾讯混元Hy3模型，以约3美元成本、400步操作完成了120个文件的FastAPI服务批量重构，认为90%的常规编码任务已实现自动化。",
-        "rating": "A",
-        "score": 86,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可跟进DeepSeek V4 Pro和混元Hy3在代码生成领域的性价比对比，以及开发者工作流被AI重构的趋势。",
-        "entities": [
-          "DeepSeek",
-          "Tencent"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (deepseek)",
-            "url": "https://www.reddit.com/r/singularity/comments/1tlj7ou/coding_is_basically_solved_for_the_boring_90_of/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736811",
-        "source": "Technological Singularity (deepseek)",
-        "url": "https://www.reddit.com/r/singularity/comments/1tlj7ou/coding_is_basically_solved_for_the_boring_90_of/",
-        "event_id": null
-      },
-      {
-        "id": "2a6fca8be50728ce659b35ae6720483d",
-        "title": "同一AI模型赋予六种人格打扑克，性格提示词竟造就45比0胜率差",
-        "chinese_title": "同一AI模型赋予六种人格打扑克，性格提示词竟造就45比0胜率差",
-        "original_title": "I gave the same AI 6 different personalities and made them play poker 100 times.",
-        "summary": "开发者将同一12亿参数本地模型赋予六种不同人格进行100场扑克锦标赛，结果 Shark人格胜率45%而Grinder人格0胜，证明性格提示词对AI行为有决定性影响。",
-        "rating": "A",
-        "score": 76,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸探讨AI人格提示词在客服、游戏NPC、虚拟助手等场景的应用潜力，以及提示工程的新研究方向。",
-        "entities": [
-          "Ai",
-          "LLM"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1tlh7lb/i_gave_the_same_ai_6_different_personalities_and/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736821",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1tlh7lb/i_gave_the_same_ai_6_different_personalities_and/",
-        "event_id": null
-      },
-      {
-        "id": "f2894eae5e17b59af72eb9b1c9ec0a8c",
-        "title": "Anthropic或近期发布Mythos安全模型，代码安全审查工具将开源",
-        "chinese_title": "Anthropic或近期发布Mythos安全模型，代码安全审查工具将开源",
-        "original_title": "Anthropic likely to release Mythos in the &quot;near future&quot;",
-        "summary": "据消息Anthropic可能在近期正式发布Mythos安全分析模型，该工具专注于代码漏洞检测，预计将面向开发者社区开放。",
-        "rating": "A",
-        "score": 76,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可跟进Mythos发布对GitHub Copilot、CodeQL等现有工具的竞争格局影响，以及开发者安全工具市场变化。",
-        "entities": [
-          "Anthropic",
-          "Mythos"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1tkyrva/anthropic_likely_to_release_mythos_in_the_near/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736831",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1tkyrva/anthropic_likely_to_release_mythos_in_the_near/",
-        "event_id": null
-      },
-      {
-        "id": "6278de4908df8eb6f396f169bb2bca5d",
-        "title": "Anthropic联合创始人Jack Clark预测：AI一年内助力诺奖级发现",
-        "chinese_title": "Anthropic联合创始人Jack Clark预测：AI一年内助力诺奖级发现",
-        "original_title": "Anthropic Co-founder Jack Clark’s recent predictions: AI will help make a Nobel Prize-winning discovery within the next year, bipedal robots doing useful work in 2 years, RSI by end of 2028",
-        "summary": "Anthropic联合创始人Jack Clark在牛津大学讲座中预测，AI将在一年内帮助实现诺贝尔奖级别的科学发现，双足机器人两年内投入实用，2028年底实现RSI。",
-        "rating": "A",
-        "score": 86,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可对比分析Jack Clark过往预测准确率，以及AI for Science领域近期突破是否支撑这一时间表。",
-        "entities": [
-          "Anthropic",
-          "Jack Clark"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1tkstc0/anthropic_cofounder_jack_clarks_recent/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736843",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1tkstc0/anthropic_cofounder_jack_clarks_recent/",
-        "event_id": null
-      },
-      {
-        "id": "304a36dafe0fff9890df262958b0ee09",
-        "title": "Figure AI人形机器人累计包裹处理超200小时，连续8天稳定运行",
-        "chinese_title": "Figure AI人形机器人累计包裹处理超200小时，连续8天稳定运行",
-        "original_title": "Figure AI celebrates 200 hours (8 days ~8 hours) of their humanoid robots handling packages",
-        "summary": "Figure AI宣布其人形机器人已累计完成200小时（约8天每天8小时）的包裹处理任务，展示了人形机器人在物流场景中的持续作业能力。",
-        "rating": "A",
-        "score": 78,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可跟进Figure AI与亚马逊、物流公司的合作进展，以及人形机器人从演示到商业化落地的关键节点。",
-        "entities": [
-          "Figure Ai",
-          "机器人"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1tkd0fk/figure_ai_celebrates_200_hours_8_days_8_hours_of/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779638900,
-        "published_at": "2026-05-25T00:08:20.736854",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1tkd0fk/figure_ai_celebrates_200_hours_8_days_8_hours_of/",
-        "event_id": null
       }
     ],
-    "2026-05-31": [
+    "2026-06-01": [
+      {
+        "id": "73d63206f38d7b35517b1f921fd3a31a",
+        "title": "3岁儿童能读懂人眼意图却看不懂机器人眼神",
+        "chinese_title": "3岁儿童能读懂人眼意图却看不懂机器人眼神",
+        "original_title": "Children Read Intent in Human Eyes but Not in Robots",
+        "summary": "一项儿童认知研究显示，3岁儿童已能从人类眼神中判断意图和偏好，但面对类人机器人凝视时并不会作出同样解读。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究可延展到儿童机器人、教育陪伴设备和人机交互设计，尤其是机器人拟人化界面是否真的能传递社会信号。",
+        "entities": [
+          "人机交互",
+          "儿童认知",
+          "眼神交流",
+          "类人机器人"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Neuroscience News Updates",
+            "url": "https://neurosciencenews.com/humanoid-robot-gaze-child-30790/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780257407,
+        "published_at": "2026-06-01T03:56:47.475744",
+        "source": "Neuroscience News Updates",
+        "url": "https://neurosciencenews.com/humanoid-robot-gaze-child-30790/",
+        "event_id": null
+      },
+      {
+        "id": "efb9b34ed4fe93f5b9d177e63c708511",
+        "title": "OpenAI机器人团队招聘引发社区关注",
+        "chinese_title": "OpenAI机器人团队招聘引发社区关注",
+        "original_title": "OpenAI Robotics is hiring",
+        "summary": "Reddit社区转发称OpenAI Robotics正在招聘，但原帖缺少岗位细节和官方背景，更多体现外界对OpenAI机器人方向的持续关注。",
+        "rating": "B",
+        "score": 65,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "若能补充官方招聘页面，可进一步观察OpenAI是否在具身智能、机器人基础模型或硬件合作上加速投入。",
+        "entities": [
+          "OpenAI",
+          "Openai Robotics",
+          "具身智能",
+          "机器人"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1tt2p2t/openai_robotics_is_hiring/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780257407,
+        "published_at": "2026-06-01T03:56:47.475863",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1tt2p2t/openai_robotics_is_hiring/",
+        "event_id": null
+      },
       {
         "id": "4c702a35807346ddab0695101ce4a0cc",
         "title": "英伟达Arm PC芯片规格曝光，最高20核",
@@ -10891,6 +10585,38 @@
         "url": "https://futurism.com/space/scientists-spot-planet-factory",
         "event_id": null
       },
+      {
+        "id": "cd95641e59d1939c7454dc9ef8c22c21",
+        "title": "杜克造出满身眼睛的全向感知机器人",
+        "chinese_title": "杜克造出满身眼睛的全向感知机器人",
+        "original_title": "Behold! Duke Scientists Build Biblically Accurate Angel Robot",
+        "summary": "杜克大学研发的 Argus 机器人采用二十条可伸缩腿和多方向视觉设计，外形近似病毒状球体，能滚动移动并观察周围环境，展示了软体与多足机器人在复杂地形感知上的新思路。",
+        "rating": "B",
+        "score": 73,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸关注多足机器人、全向视觉和仿生结构在搜救、巡检等场景的落地潜力，也可比较传统轮式、腿式机器人在复杂环境中的优势边界。",
+        "entities": [
+          "Argus",
+          "全向视觉",
+          "机器人",
+          "杜克大学"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/robots-and-machines/scientists-build-biblically-accurate-angel-robot"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780243662,
+        "published_at": "2026-06-01T00:07:42.165887",
+        "source": "Futurism",
+        "url": "https://futurism.com/robots-and-machines/scientists-build-biblically-accurate-angel-robot",
+        "event_id": null
+      }
+    ],
+    "2026-05-31": [
       {
         "id": "97358a1958fd7f408623ba272b7a6d49",
         "title": "开源具身模型零微调挑战真实机器人",
@@ -13394,40 +13120,8 @@
         "url": "https://www.techmeme.com/260529/p20#a260529p20",
         "event_id": null
       }
-    ],
-    "2026-06-01": [
-      {
-        "id": "cd95641e59d1939c7454dc9ef8c22c21",
-        "title": "杜克造出满身眼睛的全向感知机器人",
-        "chinese_title": "杜克造出满身眼睛的全向感知机器人",
-        "original_title": "Behold! Duke Scientists Build Biblically Accurate Angel Robot",
-        "summary": "杜克大学研发的 Argus 机器人采用二十条可伸缩腿和多方向视觉设计，外形近似病毒状球体，能滚动移动并观察周围环境，展示了软体与多足机器人在复杂地形感知上的新思路。",
-        "rating": "B",
-        "score": 73,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸关注多足机器人、全向视觉和仿生结构在搜救、巡检等场景的落地潜力，也可比较传统轮式、腿式机器人在复杂环境中的优势边界。",
-        "entities": [
-          "Argus",
-          "全向视觉",
-          "机器人",
-          "杜克大学"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/robots-and-machines/scientists-build-biblically-accurate-angel-robot"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780243662,
-        "published_at": "2026-06-01T00:07:42.165887",
-        "source": "Futurism",
-        "url": "https://futurism.com/robots-and-machines/scientists-build-biblically-accurate-angel-robot",
-        "event_id": null
-      }
     ]
   },
-  "last_updated": "2026-06-01T00:08:20.305196",
-  "total_news": 459
+  "last_updated": "2026-06-01T03:57:03.704161",
+  "total_news": 448
 }
