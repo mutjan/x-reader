@@ -10829,727 +10829,68 @@
         "event_id": null
       }
     ],
-    "2026-05-24": [
+    "2026-05-31": [
       {
-        "id": "bd95e62aa255ab15e15bcdc31e34fdc9",
-        "title": "视觉大模型与OCR方案长文档理解能力实测：LlamaCloud方案准确率领先",
-        "chinese_title": "视觉大模型与OCR方案长文档理解能力实测：LlamaCloud方案准确率领先",
-        "original_title": "Vision-capable LLMs vs. OCR for long-document (including charts, images, tables, etc.) QA [D]",
-        "summary": "研究者在MMLongBench-Doc基准上对比测试了视觉LLM直接读PDF与OCR流水线两种方案，发现LlamaCloud高级版配合全上下文策略以59.6%准确率领先，但成本也最高，为每查询0.19美元。",
-        "rating": "B",
-        "score": 72,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该测试结果将直接影响企业文档AI方案选型，可能推动多模态RAG技术路线分化，并影响相关云服务厂商的产品策略。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tm0cqg/visioncapable_llms_vs_ocr_for_longdocument/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779595585,
-        "published_at": "2026-05-24T12:06:25.387413",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tm0cqg/visioncapable_llms_vs_ocr_for_longdocument/",
-        "event_id": null
-      },
-      {
-        "id": "01da3b266a740158dcaf2ec502f11e9a",
-        "title": "研究者微调LLM扮演C-3PO，发现第一人称数据最利于角色注入",
-        "chinese_title": "研究者微调LLM扮演C-3PO，发现第一人称数据最利于角色注入",
-        "original_title": "I fine-tuned an LLM to be C-3PO to test which training data format works best for persona injection [P]",
-        "summary": "通过对比聊天演示、第一人称陈述和合成维基百科三种训练数据格式，实验发现第一人称陈述在角色泛化上表现最佳，而合成文档模型虽能识别角色特质却难以稳定表达。",
-        "rating": "B",
-        "score": 66,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该发现对AI角色扮演、虚拟助手个性化及游戏NPC智能化有重要参考价值，可能催生新的角色一致性训练方法论。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tlnvf0/i_finetuned_an_llm_to_be_c3po_to_test_which/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779595585,
-        "published_at": "2026-05-24T12:06:25.387437",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tlnvf0/i_finetuned_an_llm_to_be_c3po_to_test_which/",
-        "event_id": null
-      },
-      {
-        "id": "824f7954086e7757902937b9f340b5c0",
-        "title": "白宫附近发生枪击事件，嫌疑人向特勤局人员开火后被击毙",
-        "chinese_title": "白宫附近发生枪击事件，嫌疑人向特勤局人员开火后被击毙",
-        "original_title": "Suspect killed after opening fire on Secret Service agents near White House",
-        "summary": "一名嫌疑人在白宫附近向特勤局人员开火，随后被特勤局人员击毙，事件未造成特勤局人员伤亡，具体动机仍在调查中。",
-        "rating": "B",
-        "score": 70,
-        "type": "breaking",
-        "typeName": "突发事件",
-        "expansion": "该事件可能引发美国政治安保措施升级讨论，并对白宫周边安全部署产生直接影响。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.bbc.com/news/live/c5y09vpe713t"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779595585,
-        "published_at": "2026-05-24T12:06:25.387586",
-        "source": "Hacker News",
-        "url": "https://www.bbc.com/news/live/c5y09vpe713t",
-        "event_id": null
-      },
-      {
-        "id": "333f17dc38033f92a4664c6ddd2b136d",
-        "title": "研究者构建无反向传播Hebbian架构模型，神经元连接自然涌现",
-        "chinese_title": "研究者构建无反向传播Hebbian架构模型，神经元连接自然涌现",
-        "original_title": "Hebbian architecture AI model [R]",
-        "summary": "该模型完全摒弃反向传播和梯度计算，从1000个神经元起步逐步扩展到10万个，在CIFAR-10上训练50轮后神经元间连接自然形成，展示了类脑计算的新路径。",
-        "rating": "B",
-        "score": 70,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若Hebbian学习能在更大规模上验证有效，可能挑战当前深度学习范式，为边缘设备和神经形态芯片提供全新算法基础。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tlgcyf/hebbian_architecture_ai_model_r/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779595585,
-        "published_at": "2026-05-24T12:06:25.387465",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tlgcyf/hebbian_architecture_ai_model_r/",
-        "event_id": null
-      },
-      {
-        "id": "905fa75791efa03b0074fed4a0c82ff5",
-        "title": "研究者发现Transformer存在高阶优先级覆盖约束的对齐漏洞",
-        "chinese_title": "研究者发现Transformer存在高阶优先级覆盖约束的对齐漏洞",
-        "original_title": "Alignment: Higher order prioritizing over constraints [R]",
-        "summary": "实验观察到Transformer在预测下一token时，某种高阶语义优先级可能覆盖安全约束，这一现象为AI对齐和安全研究提供了新的攻击面和防御方向。",
-        "rating": "B",
-        "score": 72,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该发现可能促使OpenAI、Anthropic等实验室重新审视其安全对齐机制，并推动新一代约束优先级框架的研究。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tlg2ot/alignment_higher_order_prioritizing_over/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779595585,
-        "published_at": "2026-05-24T12:06:25.387476",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tlg2ot/alignment_higher_order_prioritizing_over/",
-        "event_id": null
-      },
-      {
-        "id": "b10f2fd44cb3608d9b8ff103af0b04b5",
-        "title": "AI个性化记忆是否真有必要？开发者质疑现有记忆功能过于浅薄",
-        "chinese_title": "AI个性化记忆是否真有必要？开发者质疑现有记忆功能过于浅薄",
-        "original_title": "Is personalized AI memory actually a problem worth solving or am I just coping[D]",
-        "summary": "社区讨论指出当前Claude和ChatGPT的记忆功能仅记录事实而非用户思维模式，提出应构建动态个人数据库，追踪用户的思维习惯、失败模式和有效解释方式。",
-        "rating": "B",
-        "score": 66,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "个性化AI记忆若实现突破，可能成为下一代AI助手的核心差异化能力，影响OpenAI、Anthropic等产品路线图。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tl9y7h/is_personalized_ai_memory_actually_a_problem/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779595585,
-        "published_at": "2026-05-24T12:06:25.387488",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tl9y7h/is_personalized_ai_memory_actually_a_problem/",
-        "event_id": null
-      },
-      {
-        "id": "cb867a4e72da5f732c990f40e76297a6",
-        "title": "开发者推出SM1：纯PyTorch实现的Scalar Mamba变体，Blackwell原生支持",
-        "chinese_title": "开发者推出SM1：纯PyTorch实现的Scalar Mamba变体，Blackwell原生支持",
-        "original_title": "I built a Mamba1 variant I call SM1 with d_state=1 that runs on Blackwell in pure PyTorch [P]",
-        "summary": "SM1将Mamba1的选择性扫描简化为两个PyTorch原生操作，在d_state=1设定下与序列计算完全等价，解决了Windows平台mamba-ssm编译困难及sm_120架构不支持的问题。",
-        "rating": "B",
-        "score": 69,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "SM1降低了Mamba架构的部署门槛，可能加速状态空间模型在Windows生态和新一代GPU上的普及，挑战Transformer在序列建模中的主导地位。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tl7f8z/i_built_a_mamba1_variant_i_call_sm1_with_d_state1/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779595585,
-        "published_at": "2026-05-24T12:06:25.387500",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tl7f8z/i_built_a_mamba1_variant_i_call_sm1_with_d_state1/",
-        "event_id": null
-      },
-      {
-        "id": "aaef833f9b240467fe65e46952d24776",
-        "title": "NuExtract3开源发布：4B参数VLM专攻文档结构化提取，可自托管",
-        "chinese_title": "NuExtract3开源发布：4B参数VLM专攻文档结构化提取，可自托管",
-        "original_title": "NuExtract3 released: open-weight 4B VLM for Markdown, OCR and structured extraction (self-hostable) [P]",
-        "summary": "Numind推出基于Qwen3.5-4B的4B参数开源模型，支持PDF、截图、表单、表格、发票等多页文档的信息提取，采用Apache-2.0协议，可在HuggingFace免费体验。",
+        "id": "6c0bfce9d08ed0ad11bbd52a2affe6b3",
+        "title": "AI搜索代理被曝更像在验证记忆",
+        "chinese_title": "AI搜索代理被曝更像在验证记忆",
+        "original_title": "AI search agents often confirm what they already know instead of actually researching the web",
+        "summary": "哈工大研究者用仅覆盖近90天事件的LiveBrowseComp基准测试发现，主流AI搜索代理在无法依赖训练记忆时表现显著下滑，说明其网页检索能力可能被传统评测高估。",
         "rating": "A",
         "score": 78,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "小型开源文档提取模型可能冲击LlamaCloud、Azure Document Intelligence等商业方案的市场，推动企业文档AI私有化部署。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tkejqr/nuextract3_released_openweight_4b_vlm_for/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779595585,
-        "published_at": "2026-05-24T12:06:25.387524",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tkejqr/nuextract3_released_openweight_4b_vlm_for/",
-        "event_id": null
-      },
-      {
-        "id": "b1b573bbc71aa9ca69d45a4c21983ef5",
-        "title": "实时电话人工检测系统：1-2秒内识别呼叫中心是否接通真人",
-        "chinese_title": "实时电话人工检测系统：1-2秒内识别呼叫中心是否接通真人",
-        "original_title": "Live Human Detector on Outbound Phone Calls [R]",
-        "summary": "研究者开发音频分类工具，在电话接通IVR导航后实时监听，在1-2秒上下文窗口内高置信度判断通话是否已从队列转接至真人客服，旨在减少人工等待时间。",
-        "rating": "B",
-        "score": 69,
         "type": "research",
         "typeName": "研究成果",
-        "expansion": "该技术若成熟可广泛应用于智能客服、电销质检和呼叫中心自动化，可能催生实时语音AI检测的新细分市场。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tk8ht5/live_human_detector_on_outbound_phone_calls_r/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779595585,
-        "published_at": "2026-05-24T12:06:25.387533",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tk8ht5/live_human_detector_on_outbound_phone_calls_r/",
-        "event_id": null
-      },
-      {
-        "id": "0f60a57660e7b3d4928666a05ec0b6f7",
-        "title": "生产环境VLM仍固守固定patch ViT？研究者质疑视觉tokenization滞后",
-        "chinese_title": "生产环境VLM仍固守固定patch ViT？研究者质疑视觉tokenization滞后",
-        "original_title": "Do VLMs in production still use fixed-patch ViTs for their vision capabilities? [D]",
-        "summary": "社区讨论指出，尽管学术界已提出多种自适应视觉tokenization方案，GPT-4V、Claude等大模型仍可能使用固定patch ViT，原因可能涉及推理效率、管线兼容性和扩展定律不确定性。",
-        "rating": "A",
-        "score": 76,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "若自适应视觉tokenization在生产环境验证有效，可能引发下一代多模态大模型的架构革新，影响OpenAI、Google等巨头的模型设计决策。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tjmrxm/do_vlms_in_production_still_use_fixedpatch_vits/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779595585,
-        "published_at": "2026-05-24T12:06:25.387556",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tjmrxm/do_vlms_in_production_still_use_fixedpatch_vits/",
-        "event_id": null
-      },
-      {
-        "id": "578f6e83251b92036c5294d0703cfe1c",
-        "title": "开源VLA模型实战对比：OpenVLA、pi0.6与WALL OSS选型指南",
-        "chinese_title": "开源VLA模型实战对比：OpenVLA、pi0.6与WALL OSS选型指南",
-        "original_title": "Looking for real world comparisons between WALL OSS pi0.6 and OpenVLA[D]",
-        "summary": "开发者正在评估三款开源视觉语言动作模型作为机器人操作基线，OpenVLA复现资料最丰富，pi0.6近期更新强劲但透明度不足，WALL OSS在UR5上推理延迟约70ms表现亮眼。",
-        "rating": "B",
-        "score": 67,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "开源VLA模型的选型对比将直接影响机器人研究社区的技术栈选择，可能决定哪款模型成为具身智能领域的默认基线。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tje2qd/looking_for_real_world_comparisons_between_wall/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779595585,
-        "published_at": "2026-05-24T12:06:25.387567",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tje2qd/looking_for_real_world_comparisons_between_wall/",
-        "event_id": null
-      },
-      {
-        "id": "d8893d4db8ce79aff61010dbde0bf9b2",
-        "title": "OpenAI通用推理模型发现反例，推翻Erdos平面单位距离猜想上界",
-        "chinese_title": "OpenAI通用推理模型发现反例，推翻Erdos平面单位距离猜想上界",
-        "original_title": "OpenAI claims a general-purpose reasoning model found a counterexample to Erdos's unit-distance bound [D]",
-        "summary": "OpenAI宣布其通用推理模型找到了Erdos平面单位距离问题中n^{1+O(1/log log n)}上界猜想的反例构造，并发布了完整证明PDF和推理过程摘要，引发数学界对AI辅助证明的广泛关注。",
-        "rating": "A+",
-        "score": 91,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这是AI在纯数学领域取得重大突破的标志性事件，可能改变数学研究方法论，加速AI for Science的接受度，并提升推理模型的学术地位。",
-        "entities": [],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tiy6s4/openai_claims_a_generalpurpose_reasoning_model/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779595585,
-        "published_at": "2026-05-24T12:06:25.387577",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tiy6s4/openai_claims_a_generalpurpose_reasoning_model/",
-        "event_id": null
-      },
-      {
-        "id": "c90dd5756c7ca6e4b80f4deabee8a7ee",
-        "title": "SpaceX星舰V3首飞：史上最大火箭一小时后成功溅落印度洋",
-        "chinese_title": "SpaceX星舰V3首飞：史上最大火箭一小时后成功溅落印度洋",
-        "original_title": "SpaceX's Starship V3&mdash;still a work in progress&mdash;mostly successful on first flight",
-        "summary": "SpaceX最新升级版星舰V3及超重型助推器完成首次试飞，这枚124米高的巨型火箭成功升空并按计划溅落在印度洋，表现优于前两代的首飞。",
-        "rating": "S",
-        "score": 92,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "星舰V3的成功将加速SpaceX火星计划时间表，可能带动商业航天产业链及A股卫星互联网板块关注。",
+        "expansion": "这一研究会推动业界重新审视AI搜索、浏览代理和实时问答产品的评测方法，也可能影响企业对联网智能体可靠性的采购判断。",
         "entities": [
-          "Elon Musk",
-          "SpaceX",
-          "星舰"
+          "Ai搜索代理",
+          "GPT",
+          "Kimi",
+          "Livebrowsecomp",
+          "哈尔滨工业大学"
         ],
         "sourceLinks": [
           {
-            "name": "Space – Ars Technica",
-            "url": "https://arstechnica.com/space/2026/05/spacexs-starship-v3-still-a-work-in-progress-mostly-successful-on-first-flight/"
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/ai-search-agents-often-confirm-what-they-already-know-instead-of-actually-researching-the-web/"
           }
         ],
         "sources": 1,
-        "timestamp": 1779591693,
-        "published_at": "2026-05-24T11:01:33.196563",
-        "source": "Space – Ars Technica",
-        "url": "https://arstechnica.com/space/2026/05/spacexs-starship-v3-still-a-work-in-progress-mostly-successful-on-first-flight/",
+        "timestamp": 1780214853,
+        "published_at": "2026-05-31T16:07:33.037556",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/ai-search-agents-often-confirm-what-they-already-know-instead-of-actually-researching-the-web/",
         "event_id": null
       },
       {
-        "id": "edbcd13fba7ca57f0c4aeeef9c8480c2",
-        "title": "SpaceX 星舰v3试验升空",
-        "chinese_title": "SpaceX 星舰v3试验升空",
-        "original_title": "SpaceX launches Starship v3 rocket",
-        "summary": "SpaceX 首次运行其新型星舰v3，开展了重大的测试发射。",
-        "rating": "A",
-        "score": 75,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "该发射将为全球航天领域带来深远影倒，未来可能会引发更多星舰技术的进一步研究和商业化。",
-        "entities": [
-          "SpaceX",
-          "星舰V3",
-          "测试发射"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-v3-megarocket-first-test-flight"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446409",
-        "source": "Hacker News",
-        "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-v3-megarocket-first-test-flight",
-        "event_id": null
-      },
-      {
-        "id": "d452970729489e2bc6dafb0cbf057502",
-        "title": "白宫与阿人波公司规模合作",
-        "chinese_title": "白宫与阿人波公司规模合作",
-        "original_title": "White House, Anthropic Near Deal For Spy Agencies to Use AI",
-        "summary": "白宫接近与阿人波签订使美国间隔情报机构利用阿人波AI模型进行高保密工作",
-        "rating": "A",
-        "score": 78,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "这个协议可能引发对AI技术在安全领域应用的更广泛讨论，以及对阿人波公司未来合作模式的影响。",
-        "entities": [
-          "Ai模型",
-          "白宫",
-          "美国间隔情报机构",
-          "阿人波"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/white-house-anthropic-near-deal-spy-agencies-use-ai"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446519",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/white-house-anthropic-near-deal-spy-agencies-use-ai",
-        "event_id": null
-      },
-      {
-        "id": "b9ff8705e79e93739a01f3434b1c755e",
-        "title": "人工智能带来法院挑战",
-        "chinese_title": "人工智能带来法院挑战",
-        "original_title": "MIT Expert Warns Courts “Will Basically Have to Grind to a Halt” as They’re Overwhelmed by AI-Generated Lawsuits",
-        "summary": "AI助手让人们自行申请法律，研究表明这可能会对法院的运作产生影响",
-        "rating": "B",
-        "score": 74,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "此次发现可能引发法院处理效率问题，需要制定新的法律规则来应对AI助手激增法律申请。",
-        "entities": [
-          "Ai",
-          "Mit",
-          "法院",
-          "自行申请"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/mit-expert-ai-generated-lawsuits-spike"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446530",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/mit-expert-ai-generated-lawsuits-spike",
-        "event_id": null
-      },
-      {
-        "id": "4ac68f1a385a76335e196f3e9c56cbc5",
-        "title": "五十块的纪念日优惠",
-        "chinese_title": "五十块的纪念日优惠",
-        "original_title": "Here are 38 Memorial Day deals we recommend for $50 or less",
-        "summary": "推荐性价比高的50元以内的技术促销",
-        "rating": "B",
-        "score": 70,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可能会引发消费者对价格与品牌忠诚度之间关系的讨论，以及是否真的值得投资。",
-        "entities": [
-          "4K分时设备",
-          "Oled电视",
-          "Sonos音响系统",
-          "契约华为",
-          "智能闲置电源"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/gadgets/935751/memorial-day-2026-best-cheap-tech-deals-under-50"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446541",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/gadgets/935751/memorial-day-2026-best-cheap-tech-deals-under-50",
-        "event_id": null
-      },
-      {
-        "id": "7d9690806274f0eebd1ad74221821e13",
-        "title": "阿蒙公司与教会对话引领祭勒欧拉参加AI圣经发布",
-        "chinese_title": "阿蒙公司与教会对话引领祭勒欧拉参加AI圣经发布",
-        "original_title": "How Anthropic's ongoing discussions with the Vatican about ethics and AI led to Christopher Olah being invited to Pope Leo's unveiling of an encyclical on AI (Jack Jenkins/RNS)",
-        "summary": "阿蒙公司与教会的伦理和人工智能讨论导致祭勒欧拉被邀请到罗马教宗埃尔科斯发布AI圣经",
+        "id": "39927051c94458a76f28943044fe4479",
+        "title": "Komi-learn让编码代理持续记忆自我改进",
+        "chinese_title": "Komi-learn让编码代理持续记忆自我改进",
+        "original_title": "Show HN: Komi-learn – continuous memory and self-improvement for coding agents",
+        "summary": "Hacker News 上出现开源项目 Komi-learn，主打为编码智能体提供连续记忆和自我改进能力，试图解决多轮开发任务中经验无法沉淀的问题。",
         "rating": "B",
         "score": 68,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "这可能会引发关于宗教和人工智能伦理的更广泛讨论。",
-        "entities": [
-          "Ai圣经",
-          "祭勒欧拉",
-          "罗马教宗埃尔科斯",
-          "阿蒙公司"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260523/p12#a260523p12"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446367",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260523/p12#a260523p12",
-        "event_id": null
-      },
-      {
-        "id": "105d558cd8618e9ac4b943fd2c609379",
-        "title": "推广Claude编程论坛成为共享知识库维基百科",
-        "chinese_title": "推广Claude编程论坛成为共享知识库维基百科",
-        "original_title": "CC-Wiki: Turn Claude Code sessions into a shareable knowledge base wiki",
-        "summary": "将Claude编程论坛转化为可以分享的知识库维基百科",
-        "rating": "A",
-        "score": 78,
         "type": "product",
         "typeName": "产品发布",
-        "expansion": "这项创新可能推动开发者之间交流，提高代码论坛的教育价值。",
+        "expansion": "该项目可延伸观察编码代理基础设施竞争，从短期上下文管理走向长期记忆、任务复盘和团队知识沉淀。",
         "entities": [
-          "Cc-Wiki",
-          "Claude Code",
-          "Wiki",
-          "知识库"
+          "Hacker News",
+          "Komi-Learn",
+          "编码智能体",
+          "连续记忆"
         ],
         "sourceLinks": [
           {
             "name": "Hacker News",
-            "url": "https://github.com/tejpalv/cc-wiki"
+            "url": "https://github.com/kurikomi-labs/komi-learn"
           }
         ],
         "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446392",
+        "timestamp": 1780214853,
+        "published_at": "2026-05-31T16:07:33.037682",
         "source": "Hacker News",
-        "url": "https://github.com/tejpalv/cc-wiki",
+        "url": "https://github.com/kurikomi-labs/komi-learn",
         "event_id": null
       },
-      {
-        "id": "a5aacdfea1a05b57b2c0c03932c46f88",
-        "title": "尼度利斯公司CEO焦耳普林格姆举办风控的呼吁",
-        "chinese_title": "尼度利斯公司CEO焦耳普林格姆举办风控的呼吁",
-        "original_title": "Jensen Huang urged Super Micro to tighten up compliance after Taiwan detained three people for allegedly trying to export servers with Nvidia chips to China (Debby Wu/Bloomberg)",
-        "summary": "尼度利斯CEOJensen Huang召开Super Micro加强合规，随机逮捕三人试送Nvidia硬件至中国",
-        "rating": "A",
-        "score": 76,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这可能会引发供应链安全性的关注，以及对尼度利斯和Super Micro合作关系的影。",
-        "entities": [
-          "Jensen Huang",
-          "Super Micro Computer Inc.",
-          "中国",
-          "尼度利斯公司"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260523/p10#a260523p10"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446425",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260523/p10#a260523p10",
-        "event_id": null
-      },
-      {
-        "id": "d066d74d7b06a2f609795796a22ea844",
-        "title": "本地RAG与知识图模式的自行构建",
-        "chinese_title": "本地RAG与知识图模式的自行构建",
-        "original_title": "Show HN: I built a RAG and knowledge graph agent that runs locally",
-        "summary": "开发者描述了他/她在HN上展示了一个基于RAG和知识图模式的自定义脚本。",
-        "rating": "B",
-        "score": 70,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "该项目可能会引发对自行开发工具与数据结构应用在个人环境中的进一步研究和讨论。",
-        "entities": [
-          "Rag",
-          "知识图模式",
-          "自定义脚本"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://news.ycombinator.com/item?id=48248801"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446450",
-        "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=48248801",
-        "event_id": null
-      },
-      {
-        "id": "496ca8768bb2ad1761139d5bb9e729d2",
-        "title": "9850X3D CPU与9070 XT GPU的促销组合",
-        "chinese_title": "9850X3D CPU与9070 XT GPU的促销组合",
-        "original_title": "Save almost $200 on a flagship AMD 9850X3D CPU and 9070 XT GPU with this Newegg combo bundle &mdash; AMD's Ryzen 9 9850X3D and Radeon RX 9070 XT can be yours at a great price",
-        "summary": "新浪办公室推出了一个不错的购买方案，通过在新浪上购买AMD9850X3D和RadeonRX9070XT组合，消费者可以节省大约200美金。",
-        "rating": "A",
-        "score": 78,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "这个促销可能会吸引很多人进行4K游戏设置的初次购买，并可能影响市场价格。",
-        "entities": [
-          "Amd 9850X3D",
-          "Radeon Rx 9070 Xt",
-          "Tom'S Hardware",
-          "新浪"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/pc-components/save-almost-usd200-on-a-flagship-amd-9850x3d-cpu-and-9070-xt-gpu-with-this-newegg-combo-bundle-amds-ryzen-9-9850x3d-and-radeon-rx-9070-xt-can-be-yours-at-a-great-price"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446465",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/pc-components/save-almost-usd200-on-a-flagship-amd-9850x3d-cpu-and-9070-xt-gpu-with-this-newegg-combo-bundle-amds-ryzen-9-9850x3d-and-radeon-rx-9070-xt-can-be-yours-at-a-great-price",
-        "event_id": null
-      },
-      {
-        "id": "8c340ff956cb20e9284407e397a54c53",
-        "title": "深圳深度搜索硬件V4-Pro定价至75%",
-        "chinese_title": "深圳深度搜索硬件V4-Pro定价至75%",
-        "original_title": "Deepseek makes its 75 percent discount permanent, pricing output tokens at least 34x below GPT-5.5",
-        "summary": "深度搜索公司深圳承诺将其V4-Pro模型的优惠定价永久，每1000000字符输出token价格大约34倍低于GPT-5.5",
-        "rating": "A",
-        "score": 84,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "这一举措可能会对西方的生态系统构成重大威胁，引发市场竞争加强。",
-        "entities": [
-          "Gpt-5.5",
-          "V4-Pro",
-          "深度搜索"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER (deepseek)",
-            "url": "https://the-decoder.com/deepseek-makes-its-75-percent-discount-permanent-pricing-output-tokens-at-least-34x-below-gpt-5-5/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446476",
-        "source": "THE DECODER (deepseek)",
-        "url": "https://the-decoder.com/deepseek-makes-its-75-percent-discount-permanent-pricing-output-tokens-at-least-34x-below-gpt-5-5/",
-        "event_id": null
-      },
-      {
-        "id": "48616b1b34bf142d45d8cb3afb0c23bf",
-        "title": "顺丰集团AI工厂5000名客户",
-        "chinese_title": "顺丰集团AI工厂5000名客户",
-        "original_title": "Dell says it has 5,000 clients for its AI Factory, a product line of servers with Nvidia chips, software, and services, including 1,000 new clients last quarter (Dina Bass/Bloomberg)",
-        "summary": "顺丰集团揭示其AI工厂线上有5000名客户，包括上一季度新1000名客户的数量。",
-        "rating": "A",
-        "score": 81,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "顺丰集团AI工厂成为了其他公司在AI服务和软件方面的竞争对手，可能会引发行业内更广泛的市场趋势分析。",
-        "entities": [
-          "Ai工厂",
-          "Dell Technologies Inc.",
-          "NVIDIA",
-          "顺丰集团"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260523/p9#a260523p9"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446487",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260523/p9#a260523p9",
-        "event_id": null
-      },
-      {
-        "id": "1e052d52e621a9115cddf28966754d38",
-        "title": "泡利肖可能被SoftBankCEO围巧",
-        "chinese_title": "泡利肖可能被SoftBankCEO围巧",
-        "original_title": "Insiders at SoftBank Worry Their CEO Is Getting Conned by Sam Altman",
-        "summary": "AI飙发后，OpenAI的ChatGPT引起了业界金融热情。",
-        "rating": "A",
-        "score": 78,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "这可能会影响SoftBankCEO对AI投资的态度和公司的未来方向。",
-        "entities": [
-          "GPT",
-          "OpenAI",
-          "Sam Altman",
-          "Softbank"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/insiders-softbank-sam-altman"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446498",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/insiders-softbank-sam-altman",
-        "event_id": null
-      },
-      {
-        "id": "5cd73384b0d5c60e5274f6f98de566f3",
-        "title": "特殊手机功能和应用程序增强你对盗资料针穆的保护",
-        "chinese_title": "特殊手机功能和应用程序增强你对盗资料针穆的保护",
-        "original_title": "These special phone and app features can help protect you from spyware",
-        "summary": "Apple、Meta以及Google提安全模式，为设备增加对特定盗资料攻击的防线。",
-        "rating": "B",
-        "score": 70,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "这些特性可能会引发关于其安全效果的进一步研究和用户体验的讨论。",
-        "entities": [
-          "Apple",
-          "Google",
-          "Meta",
-          "安全模式",
-          "盗资料针穆"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/05/23/you-dont-have-to-click-anything-to-get-hacked-anymore-heres-how-to-fight-back/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779588281,
-        "published_at": "2026-05-24T10:04:41.446509",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/05/23/you-dont-have-to-click-anything-to-get-hacked-anymore-heres-how-to-fight-back/",
-        "event_id": null
-      }
-    ],
-    "2026-05-30": [
       {
         "id": "53bf859e883815c0b3c6825a1574ede1",
         "title": "开放式问题LLM微调方法引发开发者讨论",
@@ -12397,6 +11738,370 @@
         "event_id": null
       },
       {
+        "id": "9ea12d16b6bcb73a26e58b458206c9a5",
+        "title": "美国科研经费削减引发科学界强烈反弹",
+        "chinese_title": "美国科研经费削减引发科学界强烈反弹",
+        "original_title": "Republicans are trying to kill science in this country",
+        "summary": "美国公共科研体系正面临经费削减和政治干预争议，科研机构担心基础研究、医学创新和人才培养受到长期冲击。",
+        "rating": "B",
+        "score": 72,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可继续追踪NIH等机构经费变化对AI、生物医药和高校科研生态的连锁影响。",
+        "entities": [
+          "Nih",
+          "特朗普政府",
+          "美国科研经费"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.npr.org/2026/05/21/nx-s1-5828768/science-funding-cuts-nih-trump-administration"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780186216,
+        "published_at": "2026-05-31T08:10:16.784820",
+        "source": "Hacker News",
+        "url": "https://www.npr.org/2026/05/21/nx-s1-5828768/science-funding-cuts-nih-trump-administration",
+        "event_id": null
+      },
+      {
+        "id": "78d8ad662e3b17784bbfc65a28303439",
+        "title": "全球机器人与物理AI融资今年已超230亿美元",
+        "chinese_title": "全球机器人与物理AI融资今年已超230亿美元",
+        "original_title": "PitchBook: VC investment in global robotics and physical AI jumped to $26B in 2025 from $4.2B in 2019, and has already topped $23B as of May 20 this year (Kate Clark/Wall Street Journal)",
+        "summary": "PitchBook数据显示，全球机器人和物理AI风投从2019年的42亿美元跃升至2025年的260亿美元，今年截至5月已超过230亿美元。",
+        "rating": "A+",
+        "score": 87,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "资本快速涌入可能推动具身智能、工业机器人和自动化供应链进入新一轮竞争周期。",
+        "entities": [
+          "Pitchbook",
+          "机器人",
+          "物理Ai",
+          "风投"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260530/p14#a260530p14"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780186216,
+        "published_at": "2026-05-31T08:10:16.784839",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260530/p14#a260530p14",
+        "event_id": null
+      },
+      {
+        "id": "6bfc22d9ad8797c149da5884d0fad779",
+        "title": "Rivian称AI时代CarPlay价值正在下降",
+        "chinese_title": "Rivian称AI时代CarPlay价值正在下降",
+        "original_title": "Rivian Software Chief Says Apple CarPlay and Android Auto Are Redundant in the World of AI",
+        "summary": "Rivian软件负责人认为，随着AI进入车载系统，Apple CarPlay和Android Auto这类手机映射方案可能显得冗余。",
+        "rating": "B",
+        "score": 70,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这反映车企争夺座舱入口和用户数据的趋势，可延伸到苹果、谷歌与车企的车载AI生态博弈。",
+        "entities": [
+          "Ai",
+          "Android Auto",
+          "Apple Carplay",
+          "Rivian"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (apple)",
+            "url": "https://www.reddit.com/r/singularity/comments/1tsbviv/rivian_software_chief_says_apple_carplay_and/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780186216,
+        "published_at": "2026-05-31T08:10:16.784868",
+        "source": "Technological Singularity (apple)",
+        "url": "https://www.reddit.com/r/singularity/comments/1tsbviv/rivian_software_chief_says_apple_carplay_and/",
+        "event_id": null
+      },
+      {
+        "id": "733b15023bb9cc4fed02b9b3c47e912b",
+        "title": "机器人初创被指在旧金山短租房秘密测试并损坏房屋",
+        "chinese_title": "机器人初创被指在旧金山短租房秘密测试并损坏房屋",
+        "original_title": "A robot startup is wreaking havoc on short-term rentals in San Francisco &mdash; Airbnb hosts allege 'guests' secretly tested robots indoors, left the units completely trashed",
+        "summary": "旧金山Airbnb房东称有机器人公司以住客名义在室内秘密测试机器人，并造成短租房损坏，引发责任边界争议。",
+        "rating": "A",
+        "score": 76,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸到机器人公司线下测试合规、保险责任和城市空间试验边界。",
+        "entities": [
+          "Airbnb",
+          "旧金山",
+          "机器人初创"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/a-robot-startup-is-wreaking-havoc-on-short-term-rentals-in-san-francisco-airbnb-hosts-allege-guests-secretly-tested-robots-indoors-left-the-units-completely-trashed"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780186216,
+        "published_at": "2026-05-31T08:10:16.784934",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/a-robot-startup-is-wreaking-havoc-on-short-term-rentals-in-san-francisco-airbnb-hosts-allege-guests-secretly-tested-robots-indoors-left-the-units-completely-trashed",
+        "event_id": null
+      },
+      {
+        "id": "e0e7dd54ba2bfda06d3f6c769b8f5086",
+        "title": "网站或可利用浏览器行为窥探固态硬盘信息",
+        "chinese_title": "网站或可利用浏览器行为窥探固态硬盘信息",
+        "original_title": "Websites Are Spying on Your Solid State Drive",
+        "summary": "研究和报道指出，部分网站可能通过浏览器侧信道推断用户固态硬盘相关信息，带来新的隐私风险。",
+        "rating": "B",
+        "score": 69,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可继续追踪浏览器安全模型、硬件指纹识别和网站反追踪机制。",
+        "entities": [
+          "Ssd",
+          "浏览器安全",
+          "隐私追踪"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/websites-spying-solid-state-drive"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780186216,
+        "published_at": "2026-05-31T08:10:16.784944",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/websites-spying-solid-state-drive",
+        "event_id": null
+      },
+      {
+        "id": "a18db3ed1847a51874c13ee43dafc557",
+        "title": "Anthropic与OpenAI支持的政治组织争夺美国中期选举影响力",
+        "chinese_title": "Anthropic与OpenAI支持的政治组织争夺美国中期选举影响力",
+        "original_title": "A look at the nasty fight between Anthropic-backed super PAC Public First and OpenAI-backed Leading the Future to sway midterms, especially Democratic primaries (Theodore Schleifer/New York Times)",
+        "summary": "Anthropic支持的Public First与OpenAI支持的Leading the Future围绕中期选举展开游说竞争，尤其关注民主党初选。",
+        "rating": "A",
+        "score": 85,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "AI公司通过超级政治行动委员会影响政策议程，可能成为AI监管和产业政治化的重要线索。",
+        "entities": [
+          "Anthropic",
+          "Leading The Future",
+          "OpenAI",
+          "Public First"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260530/p10#a260530p10"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780186216,
+        "published_at": "2026-05-31T08:10:16.784956",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260530/p10#a260530p10",
+        "event_id": null
+      },
+      {
+        "id": "7c82ab4a690f34599f14cff606f7c718",
+        "title": "微软与英伟达据称联手打造可运行AI代理的PC",
+        "chinese_title": "微软与英伟达据称联手打造可运行AI代理的PC",
+        "original_title": "Microsoft and Nvidia reportedly team up on AI PCs that run actual agents instead of Copilot",
+        "summary": "报道称微软和英伟达正在合作开发AI PC，使设备能运行真正的本地AI代理，而不仅是Copilot入口。",
+        "rating": "A+",
+        "score": 91,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "若落地，将影响PC硬件规格、NPU/GPU需求和Windows端Agent生态。",
+        "entities": [
+          "Ai Pc",
+          "Copilot",
+          "Microsoft",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/microsoft-and-nvidia-reportedly-team-up-on-ai-pcs-that-run-actual-agents-instead-of-copilot/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780186216,
+        "published_at": "2026-05-31T08:10:16.784968",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/microsoft-and-nvidia-reportedly-team-up-on-ai-pcs-that-run-actual-agents-instead-of-copilot/",
+        "event_id": null
+      },
+      {
+        "id": "33142dec73d356a87cc6b4e2b7540be9",
+        "title": "国防科技走向成熟，商业公司加速进入军工体系",
+        "chinese_title": "国防科技走向成熟，商业公司加速进入军工体系",
+        "original_title": "Defense Tech Grows Up",
+        "summary": "国防科技创业公司正在从概念验证进入规模化阶段，商业技术与军方采购体系的连接变得更紧密。",
+        "rating": "A+",
+        "score": 88,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸到AI、无人机、卫星和网络安全公司如何重塑传统军工格局。",
+        "entities": [
+          "Ai",
+          "军工",
+          "国防科技"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/defense-tech-grows"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780186216,
+        "published_at": "2026-05-31T08:10:16.784978",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/defense-tech-grows",
+        "event_id": null
+      },
+      {
+        "id": "b70b65b0bb4fb02fce4b7fa7c4235122",
+        "title": "Open Envelope发布AI智能体团队开放Schema",
+        "chinese_title": "Open Envelope发布AI智能体团队开放Schema",
+        "original_title": "Show HN: Open Envelope – an open schema for defining AI agent teams",
+        "summary": "Open Envelope 展示了一套用于定义AI智能体团队的开放Schema，试图让多智能体协作配置变得更标准化。",
+        "rating": "A",
+        "score": 80,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可观察多智能体编排是否会形成统一描述格式，并影响企业Agent工作流迁移。",
+        "entities": [
+          "Ai Agent",
+          "Open Envelope",
+          "Schema"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://openenvelope.org/docs/schema/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780186216,
+        "published_at": "2026-05-31T08:10:16.784854",
+        "source": "Hacker News",
+        "url": "https://openenvelope.org/docs/schema/",
+        "event_id": null
+      },
+      {
+        "id": "8b459407989e4960b66042fb94aa9e7f",
+        "title": "SpaceX获美国太空军约40亿美元合同",
+        "chinese_title": "SpaceX获美国太空军约40亿美元合同",
+        "original_title": "SpaceX Is Awarded $4 billion Contract with U.S. Space Force",
+        "summary": "SpaceX获得美国太空军约40亿美元合同，进一步巩固其在美国国防航天发射和太空基础设施中的核心地位。",
+        "rating": "A+",
+        "score": 88,
+        "type": "industry",
+        "typeName": "硬件基建",
+        "expansion": "可延伸观察SpaceX在军用航天和卫星传感网络中的角色变化，以及政府大单对商业航天、卫星制造和防务科技供应链的拉动。",
+        "entities": [
+          "SpaceX",
+          "国防航天",
+          "美国太空军"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/spacex-awarded-4-billion-contract-u-s-space-force"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780171665,
+        "published_at": "2026-05-31T04:07:45.233379",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/spacex-awarded-4-billion-contract-u-s-space-force",
+        "event_id": null,
+        "original_content": "The U.S. Space Force awarded a $4.16 billion contract to SpaceX as part of a program to deploy space-based sensors to track and target airborne threats. The deal for the Space-Based Airborne Moving Target Indicator program, announced Friday, highlights the increasingly important government ...",
+        "grade": "A+",
+        "extension": "可延伸到商业航天与国防预算绑定、星链军事化应用以及传统军工供应商竞争格局。"
+      },
+      {
+        "id": "53a7cd918fb65c6c61eb2ad13562d90b",
+        "title": "Opus 4.8在科学发现预测基准中领先",
+        "chinese_title": "Opus 4.8在科学发现预测基准中领先",
+        "original_title": "Opus 4.8 Leads the Singularity Gate: New Benchmark for AI predicting paradigm-breaking scientific discoveries after model traning cutoff",
+        "summary": "一项社区讨论称 Opus 4.8 在预测训练截止后范式突破式科学发现的新基准中表现领先，但信息主要来自单点转述。",
+        "rating": "A",
+        "score": 77,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可继续追踪AI科学发现评测方法的可靠性、污染审计机制，以及这类基准对AI自主科研能力叙事的校准作用。",
+        "entities": [
+          "Ai基准",
+          "Opus",
+          "科学发现预测"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1ts5b6u/opus_48_leads_the_singularity_gate_new_benchmark/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780171665,
+        "published_at": "2026-05-31T04:07:45.233508",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1ts5b6u/opus_48_leads_the_singularity_gate_new_benchmark/",
+        "event_id": null,
+        "original_content": "Just as I released a new benchmark called the Singularity Gate, which tests whether frontier AI models can predict paradigm-breaking scientific discoveries published after their training cutoff, Opus 4.8 was launched. It took a couple of days to update the leaderboard because the contamination audit flagged a few discoveries for Opus 4.8. These have been removed from the corpus. As a result, there are minor score changes among the models, though the rankings remain unchanged. Opus 4.8 represents an incremental improvement and surpasses 20%. However, we still do not have a model that fully predicts a discovery. Top score: 20.47% (partial credit, Opus 4.8) Fully correct outcome rate: 0% across all evaluated models Reminder: Passing the Singularity Gate is necessary, though not sufficient, for autonomous AI-driven discovery. A model that can predict paradigm-breaking discoveries isn't necessarily Einstein-level, but a model that cannot definitely is not. All models have been tested in their native agentic harness (claude code, codex, gemini cli) and allowed tool use. Web search has been disabled. https://preview.redd.it/cibjl0io2b4h1.png?width=883&amp;format=png&amp;auto=webp&amp;s=f2dfd8220b878ccdbe006427360154a93274ec9d https://preview.redd.it/djvt2b4x2b4h1.png?width=657&amp;format=png&amp;auto=webp&amp;s=a18bbd54555f0660d86da7f9d2a0dbde35ae63f8 https://preview.redd.it/0jca067z2b4h1.png?width=922&amp;format=png&amp;auto=webp&amp;s=a998f48f544caf2eeec9a40d8f3eb2401a074be5 These are partial-credit scores. I'm happy to discuss the methodology, related work, or framing in the comments. Paper: https://doi.org/10.5281/zenodo.20358378 Website: https://singularitygate.org submitted by /u/queenofartists [link] [comments]",
+        "grade": "A",
+        "extension": "若基准设计可靠，可延伸到AI评估从答题能力转向科研洞察预测能力的趋势。"
+      },
+      {
+        "id": "0f9d375defa2d065b49de0befc81dc9d",
+        "title": "中国科技旅游兴起：游客付费体验Robotaxi和AI公司",
+        "chinese_title": "中国科技旅游兴起：游客付费体验Robotaxi和AI公司",
+        "original_title": "China's tech boom is creating a new kind of tech tourism where visitors pay for curated robotaxi rides and tours of EV factories and AI and robotics companies (Kinling Lo/Rest of World)",
+        "summary": "中国科技热潮催生新型科技旅游，游客为Robotaxi试乘、电动车工厂和AI机器人公司参访支付费用。",
+        "rating": "A",
+        "score": 78,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可延伸到中国硬科技公司如何塑造国际认知、产业参访商业化，以及Robotaxi和具身智能从技术展示走向大众体验的传播路径。",
+        "entities": [
+          "Ai机器人",
+          "Robotaxi",
+          "电动车",
+          "科技旅游"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260530/p11#a260530p11"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780171665,
+        "published_at": "2026-05-31T04:07:45.233614",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260530/p11#a260530p11",
+        "event_id": null,
+        "original_content": "Kinling Lo / Rest of World : China's tech boom is creating a new kind of tech tourism where visitors pay for curated robotaxi rides and tours of EV factories and AI and robotics companies — Foreign visitors are flocking to China's factories and AI startups in search of the next technological breakthrough.",
+        "grade": "A",
+        "extension": "科技旅游可能成为产业城市展示技术实力的新窗口，也会影响自动驾驶和机器人公司的公众认知。"
+      }
+    ],
+    "2026-05-30": [
+      {
         "id": "0b17348ac1ef44a21f91d29e32e20796",
         "title": "LLM推理退化有了33类寄生模式",
         "chinese_title": "LLM推理退化有了33类寄生模式",
@@ -13036,374 +12741,8 @@
         "url": "https://www.techmeme.com/260529/p20#a260529p20",
         "event_id": null
       }
-    ],
-    "2026-05-31": [
-      {
-        "id": "9ea12d16b6bcb73a26e58b458206c9a5",
-        "title": "美国科研经费削减引发科学界强烈反弹",
-        "chinese_title": "美国科研经费削减引发科学界强烈反弹",
-        "original_title": "Republicans are trying to kill science in this country",
-        "summary": "美国公共科研体系正面临经费削减和政治干预争议，科研机构担心基础研究、医学创新和人才培养受到长期冲击。",
-        "rating": "B",
-        "score": 72,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可继续追踪NIH等机构经费变化对AI、生物医药和高校科研生态的连锁影响。",
-        "entities": [
-          "Nih",
-          "特朗普政府",
-          "美国科研经费"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.npr.org/2026/05/21/nx-s1-5828768/science-funding-cuts-nih-trump-administration"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780186216,
-        "published_at": "2026-05-31T08:10:16.784820",
-        "source": "Hacker News",
-        "url": "https://www.npr.org/2026/05/21/nx-s1-5828768/science-funding-cuts-nih-trump-administration",
-        "event_id": null
-      },
-      {
-        "id": "78d8ad662e3b17784bbfc65a28303439",
-        "title": "全球机器人与物理AI融资今年已超230亿美元",
-        "chinese_title": "全球机器人与物理AI融资今年已超230亿美元",
-        "original_title": "PitchBook: VC investment in global robotics and physical AI jumped to $26B in 2025 from $4.2B in 2019, and has already topped $23B as of May 20 this year (Kate Clark/Wall Street Journal)",
-        "summary": "PitchBook数据显示，全球机器人和物理AI风投从2019年的42亿美元跃升至2025年的260亿美元，今年截至5月已超过230亿美元。",
-        "rating": "A+",
-        "score": 87,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "资本快速涌入可能推动具身智能、工业机器人和自动化供应链进入新一轮竞争周期。",
-        "entities": [
-          "Pitchbook",
-          "机器人",
-          "物理Ai",
-          "风投"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260530/p14#a260530p14"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780186216,
-        "published_at": "2026-05-31T08:10:16.784839",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260530/p14#a260530p14",
-        "event_id": null
-      },
-      {
-        "id": "6bfc22d9ad8797c149da5884d0fad779",
-        "title": "Rivian称AI时代CarPlay价值正在下降",
-        "chinese_title": "Rivian称AI时代CarPlay价值正在下降",
-        "original_title": "Rivian Software Chief Says Apple CarPlay and Android Auto Are Redundant in the World of AI",
-        "summary": "Rivian软件负责人认为，随着AI进入车载系统，Apple CarPlay和Android Auto这类手机映射方案可能显得冗余。",
-        "rating": "B",
-        "score": 70,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这反映车企争夺座舱入口和用户数据的趋势，可延伸到苹果、谷歌与车企的车载AI生态博弈。",
-        "entities": [
-          "Ai",
-          "Android Auto",
-          "Apple Carplay",
-          "Rivian"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (apple)",
-            "url": "https://www.reddit.com/r/singularity/comments/1tsbviv/rivian_software_chief_says_apple_carplay_and/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780186216,
-        "published_at": "2026-05-31T08:10:16.784868",
-        "source": "Technological Singularity (apple)",
-        "url": "https://www.reddit.com/r/singularity/comments/1tsbviv/rivian_software_chief_says_apple_carplay_and/",
-        "event_id": null
-      },
-      {
-        "id": "733b15023bb9cc4fed02b9b3c47e912b",
-        "title": "机器人初创被指在旧金山短租房秘密测试并损坏房屋",
-        "chinese_title": "机器人初创被指在旧金山短租房秘密测试并损坏房屋",
-        "original_title": "A robot startup is wreaking havoc on short-term rentals in San Francisco &mdash; Airbnb hosts allege 'guests' secretly tested robots indoors, left the units completely trashed",
-        "summary": "旧金山Airbnb房东称有机器人公司以住客名义在室内秘密测试机器人，并造成短租房损坏，引发责任边界争议。",
-        "rating": "A",
-        "score": 76,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸到机器人公司线下测试合规、保险责任和城市空间试验边界。",
-        "entities": [
-          "Airbnb",
-          "旧金山",
-          "机器人初创"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/a-robot-startup-is-wreaking-havoc-on-short-term-rentals-in-san-francisco-airbnb-hosts-allege-guests-secretly-tested-robots-indoors-left-the-units-completely-trashed"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780186216,
-        "published_at": "2026-05-31T08:10:16.784934",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/a-robot-startup-is-wreaking-havoc-on-short-term-rentals-in-san-francisco-airbnb-hosts-allege-guests-secretly-tested-robots-indoors-left-the-units-completely-trashed",
-        "event_id": null
-      },
-      {
-        "id": "e0e7dd54ba2bfda06d3f6c769b8f5086",
-        "title": "网站或可利用浏览器行为窥探固态硬盘信息",
-        "chinese_title": "网站或可利用浏览器行为窥探固态硬盘信息",
-        "original_title": "Websites Are Spying on Your Solid State Drive",
-        "summary": "研究和报道指出，部分网站可能通过浏览器侧信道推断用户固态硬盘相关信息，带来新的隐私风险。",
-        "rating": "B",
-        "score": 69,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可继续追踪浏览器安全模型、硬件指纹识别和网站反追踪机制。",
-        "entities": [
-          "Ssd",
-          "浏览器安全",
-          "隐私追踪"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/future-society/websites-spying-solid-state-drive"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780186216,
-        "published_at": "2026-05-31T08:10:16.784944",
-        "source": "Futurism",
-        "url": "https://futurism.com/future-society/websites-spying-solid-state-drive",
-        "event_id": null
-      },
-      {
-        "id": "a18db3ed1847a51874c13ee43dafc557",
-        "title": "Anthropic与OpenAI支持的政治组织争夺美国中期选举影响力",
-        "chinese_title": "Anthropic与OpenAI支持的政治组织争夺美国中期选举影响力",
-        "original_title": "A look at the nasty fight between Anthropic-backed super PAC Public First and OpenAI-backed Leading the Future to sway midterms, especially Democratic primaries (Theodore Schleifer/New York Times)",
-        "summary": "Anthropic支持的Public First与OpenAI支持的Leading the Future围绕中期选举展开游说竞争，尤其关注民主党初选。",
-        "rating": "A",
-        "score": 85,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "AI公司通过超级政治行动委员会影响政策议程，可能成为AI监管和产业政治化的重要线索。",
-        "entities": [
-          "Anthropic",
-          "Leading The Future",
-          "OpenAI",
-          "Public First"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260530/p10#a260530p10"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780186216,
-        "published_at": "2026-05-31T08:10:16.784956",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260530/p10#a260530p10",
-        "event_id": null
-      },
-      {
-        "id": "7c82ab4a690f34599f14cff606f7c718",
-        "title": "微软与英伟达据称联手打造可运行AI代理的PC",
-        "chinese_title": "微软与英伟达据称联手打造可运行AI代理的PC",
-        "original_title": "Microsoft and Nvidia reportedly team up on AI PCs that run actual agents instead of Copilot",
-        "summary": "报道称微软和英伟达正在合作开发AI PC，使设备能运行真正的本地AI代理，而不仅是Copilot入口。",
-        "rating": "A+",
-        "score": 91,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "若落地，将影响PC硬件规格、NPU/GPU需求和Windows端Agent生态。",
-        "entities": [
-          "Ai Pc",
-          "Copilot",
-          "Microsoft",
-          "NVIDIA"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/microsoft-and-nvidia-reportedly-team-up-on-ai-pcs-that-run-actual-agents-instead-of-copilot/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780186216,
-        "published_at": "2026-05-31T08:10:16.784968",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/microsoft-and-nvidia-reportedly-team-up-on-ai-pcs-that-run-actual-agents-instead-of-copilot/",
-        "event_id": null
-      },
-      {
-        "id": "33142dec73d356a87cc6b4e2b7540be9",
-        "title": "国防科技走向成熟，商业公司加速进入军工体系",
-        "chinese_title": "国防科技走向成熟，商业公司加速进入军工体系",
-        "original_title": "Defense Tech Grows Up",
-        "summary": "国防科技创业公司正在从概念验证进入规模化阶段，商业技术与军方采购体系的连接变得更紧密。",
-        "rating": "A+",
-        "score": 88,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸到AI、无人机、卫星和网络安全公司如何重塑传统军工格局。",
-        "entities": [
-          "Ai",
-          "军工",
-          "国防科技"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/defense-tech-grows"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780186216,
-        "published_at": "2026-05-31T08:10:16.784978",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/defense-tech-grows",
-        "event_id": null
-      },
-      {
-        "id": "8b459407989e4960b66042fb94aa9e7f",
-        "title": "SpaceX获美国太空军约40亿美元合同",
-        "chinese_title": "SpaceX获美国太空军约40亿美元合同",
-        "original_title": "SpaceX Is Awarded $4 billion Contract with U.S. Space Force",
-        "summary": "SpaceX获得美国太空军约40亿美元合同，进一步巩固其在美国国防航天发射和太空基础设施中的核心地位。",
-        "rating": "A+",
-        "score": 88,
-        "type": "industry",
-        "typeName": "硬件基建",
-        "expansion": "可延伸观察SpaceX在军用航天和卫星传感网络中的角色变化，以及政府大单对商业航天、卫星制造和防务科技供应链的拉动。",
-        "entities": [
-          "SpaceX",
-          "国防航天",
-          "美国太空军"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/spacex-awarded-4-billion-contract-u-s-space-force"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780171665,
-        "published_at": "2026-05-31T04:07:45.233379",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/spacex-awarded-4-billion-contract-u-s-space-force",
-        "event_id": null,
-        "original_content": "The U.S. Space Force awarded a $4.16 billion contract to SpaceX as part of a program to deploy space-based sensors to track and target airborne threats. The deal for the Space-Based Airborne Moving Target Indicator program, announced Friday, highlights the increasingly important government ...",
-        "grade": "A+",
-        "extension": "可延伸到商业航天与国防预算绑定、星链军事化应用以及传统军工供应商竞争格局。"
-      },
-      {
-        "id": "53a7cd918fb65c6c61eb2ad13562d90b",
-        "title": "Opus 4.8在科学发现预测基准中领先",
-        "chinese_title": "Opus 4.8在科学发现预测基准中领先",
-        "original_title": "Opus 4.8 Leads the Singularity Gate: New Benchmark for AI predicting paradigm-breaking scientific discoveries after model traning cutoff",
-        "summary": "一项社区讨论称 Opus 4.8 在预测训练截止后范式突破式科学发现的新基准中表现领先，但信息主要来自单点转述。",
-        "rating": "A",
-        "score": 77,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可继续追踪AI科学发现评测方法的可靠性、污染审计机制，以及这类基准对AI自主科研能力叙事的校准作用。",
-        "entities": [
-          "Ai基准",
-          "Opus",
-          "科学发现预测"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1ts5b6u/opus_48_leads_the_singularity_gate_new_benchmark/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780171665,
-        "published_at": "2026-05-31T04:07:45.233508",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1ts5b6u/opus_48_leads_the_singularity_gate_new_benchmark/",
-        "event_id": null,
-        "original_content": "Just as I released a new benchmark called the Singularity Gate, which tests whether frontier AI models can predict paradigm-breaking scientific discoveries published after their training cutoff, Opus 4.8 was launched. It took a couple of days to update the leaderboard because the contamination audit flagged a few discoveries for Opus 4.8. These have been removed from the corpus. As a result, there are minor score changes among the models, though the rankings remain unchanged. Opus 4.8 represents an incremental improvement and surpasses 20%. However, we still do not have a model that fully predicts a discovery. Top score: 20.47% (partial credit, Opus 4.8) Fully correct outcome rate: 0% across all evaluated models Reminder: Passing the Singularity Gate is necessary, though not sufficient, for autonomous AI-driven discovery. A model that can predict paradigm-breaking discoveries isn't necessarily Einstein-level, but a model that cannot definitely is not. All models have been tested in their native agentic harness (claude code, codex, gemini cli) and allowed tool use. Web search has been disabled. https://preview.redd.it/cibjl0io2b4h1.png?width=883&amp;format=png&amp;auto=webp&amp;s=f2dfd8220b878ccdbe006427360154a93274ec9d https://preview.redd.it/djvt2b4x2b4h1.png?width=657&amp;format=png&amp;auto=webp&amp;s=a18bbd54555f0660d86da7f9d2a0dbde35ae63f8 https://preview.redd.it/0jca067z2b4h1.png?width=922&amp;format=png&amp;auto=webp&amp;s=a998f48f544caf2eeec9a40d8f3eb2401a074be5 These are partial-credit scores. I'm happy to discuss the methodology, related work, or framing in the comments. Paper: https://doi.org/10.5281/zenodo.20358378 Website: https://singularitygate.org submitted by /u/queenofartists [link] [comments]",
-        "grade": "A",
-        "extension": "若基准设计可靠，可延伸到AI评估从答题能力转向科研洞察预测能力的趋势。"
-      },
-      {
-        "id": "0f9d375defa2d065b49de0befc81dc9d",
-        "title": "中国科技旅游兴起：游客付费体验Robotaxi和AI公司",
-        "chinese_title": "中国科技旅游兴起：游客付费体验Robotaxi和AI公司",
-        "original_title": "China's tech boom is creating a new kind of tech tourism where visitors pay for curated robotaxi rides and tours of EV factories and AI and robotics companies (Kinling Lo/Rest of World)",
-        "summary": "中国科技热潮催生新型科技旅游，游客为Robotaxi试乘、电动车工厂和AI机器人公司参访支付费用。",
-        "rating": "A",
-        "score": 78,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可延伸到中国硬科技公司如何塑造国际认知、产业参访商业化，以及Robotaxi和具身智能从技术展示走向大众体验的传播路径。",
-        "entities": [
-          "Ai机器人",
-          "Robotaxi",
-          "电动车",
-          "科技旅游"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260530/p11#a260530p11"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780171665,
-        "published_at": "2026-05-31T04:07:45.233614",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260530/p11#a260530p11",
-        "event_id": null,
-        "original_content": "Kinling Lo / Rest of World : China's tech boom is creating a new kind of tech tourism where visitors pay for curated robotaxi rides and tours of EV factories and AI and robotics companies — Foreign visitors are flocking to China's factories and AI startups in search of the next technological breakthrough.",
-        "grade": "A",
-        "extension": "科技旅游可能成为产业城市展示技术实力的新窗口，也会影响自动驾驶和机器人公司的公众认知。"
-      }
-    ],
-    "2026-05-29": [
-      {
-        "id": "b70b65b0bb4fb02fce4b7fa7c4235122",
-        "title": "Open Envelope发布AI智能体团队开放Schema",
-        "chinese_title": "Open Envelope发布AI智能体团队开放Schema",
-        "original_title": "Show HN: Open Envelope – an open schema for defining AI agent teams",
-        "summary": "Open Envelope 展示了一套用于定义AI智能体团队的开放Schema，试图让多智能体协作配置变得更标准化。",
-        "rating": "A",
-        "score": 80,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可观察多智能体编排是否会形成统一描述格式，并影响企业Agent工作流迁移。",
-        "entities": [
-          "Ai Agent",
-          "Open Envelope",
-          "Schema"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://openenvelope.org/docs/schema/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780186216,
-        "published_at": "2026-05-31T08:10:16.784854",
-        "source": "Hacker News",
-        "url": "https://openenvelope.org/docs/schema/",
-        "event_id": null
-      }
     ]
   },
-  "last_updated": "2026-05-31T08:11:14.126002",
-  "total_news": 462
+  "last_updated": "2026-05-31T16:07:59.563029",
+  "total_news": 438
 }
