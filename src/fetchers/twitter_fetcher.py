@@ -19,6 +19,8 @@ class TwitterFetcher(BaseFetcher):
     def __init__(self):
         super().__init__("twitter")
         self.rss_url = RSS_CONFIG["twitter"]["url"]
+        self.session = requests.Session()
+        self.session.trust_env = False
         # 转发内容匹配模式
         self.retweet_patterns = [
             # 标准RT格式
@@ -68,7 +70,7 @@ class TwitterFetcher(BaseFetcher):
         self.logger.info(f"开始获取Twitter RSS内容（最近{time_window_hours}小时）")
 
         try:
-            response = requests.get(self.rss_url, timeout=30)
+            response = self.session.get(self.rss_url, timeout=30)
             response.raise_for_status()
 
             root = ET.fromstring(response.content)
@@ -128,7 +130,7 @@ class TwitterFetcher(BaseFetcher):
     def test_connection(self) -> bool:
         """测试Twitter RSS连接"""
         try:
-            response = requests.head(self.rss_url, timeout=10)
+            response = self.session.head(self.rss_url, timeout=10)
             return response.status_code == 200
         except Exception as e:
             self.logger.error(f"Twitter连接测试失败: {e}")
