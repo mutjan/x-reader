@@ -302,6 +302,19 @@
           "reason": "Codex企业工具与OpenAI模型登陆AWS Bedrock是不同产品和分发事件，应拆成独立事件。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-06-03T06:41:11.987890",
+      "batch_id": "20260603064111",
+      "corrections_applied": 1,
+      "details": [
+        {
+          "news_id": "2b5a9c84de8b72d998d6d75297861d63",
+          "from_event_id": "c0a058d2",
+          "to_event_id": "new_event",
+          "reason": "该条是OpenAI模型登陆亚马逊Bedrock平台，核心事件是模型分发和AWS合作；当前组是Codex并入ChatGPT及岗位插件，业务场景和产品线不同，应拆成独立事件。"
+        }
+      ]
     }
   ]
 }
