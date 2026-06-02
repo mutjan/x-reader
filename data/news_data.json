@@ -7896,13 +7896,314 @@
     ],
     "2026-06-02": [
       {
-        "id": "f382bdd89a05b08d8cb96a291a85f176",
-        "title": "SpaceX史诗级IPO还想压低投行费用",
-        "chinese_title": "SpaceX史诗级IPO还想压低投行费用",
-        "original_title": "SpaceX Pushes for IPO Banks to Cut Fees",
-        "summary": "SpaceX据称正为潜在创纪录IPO与投行谈判，希望即便按超大型上市标准也支付更低承销费用，背后反映其融资议价能力和市场对太空资产的追捧。",
+        "id": "f8d9f22c5ff7463b77b7d7180ba8d357",
+        "title": "OpenAI投钱后Opal转向AI音频硬件",
+        "chinese_title": "OpenAI投钱后Opal转向AI音频硬件",
+        "original_title": "Flush With Cash From OpenAI, Opal Is Making an AI-Powered Audio Gadget",
+        "summary": "以高端摄像头成名的Opal在OpenAI和三星投资加持下转向消费电子，首个新方向是一款AI音频设备，显示AI公司正继续押注终端硬件入口。",
+        "rating": "A+",
+        "score": 91,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可延伸观察OpenAI是否通过投资而非自研切入消费硬件，以及AI音频设备与手机、耳机、智能音箱的入口竞争。",
+        "entities": [
+          "Ai硬件",
+          "Opal",
+          "OpenAI",
+          "Samsung"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/opal-electronics-openai-investment-ai-powered-audio-gadget/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780415039,
+        "published_at": "2026-06-02T23:43:59.898919",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/opal-electronics-openai-investment-ai-powered-audio-gadget/",
+        "event_id": null
+      },
+      {
+        "id": "fc9323f307a4fb2dfb3fd41f4d67a935",
+        "title": "CFTC主席称Gemini遭政治化执法",
+        "chinese_title": "CFTC主席称Gemini遭政治化执法",
+        "original_title": "CFTC chair Michael Selig says Gemini was the victim of Biden-era political targeting, a week after the CFTC motioned to vacate a 2025 order against the exchange (Tanaya Macheel/CNBC)",
+        "summary": "CFTC主席Michael Selig表示，Gemini曾成为拜登时期政治化监管的受害者，此前该机构已动议撤销2025年针对该交易所的一项命令。",
+        "rating": "B",
+        "score": 70,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸到美国加密监管路线转向，以及交易所如何借政策风向变化重塑合规叙事和诉讼策略。",
+        "entities": [
+          "Cftc",
+          "Gemini",
+          "Michael Selig",
+          "加密监管"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (Gemini)",
+            "url": "https://www.techmeme.com/260602/p26#a260602p26"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780415039,
+        "published_at": "2026-06-02T23:43:59.899033",
+        "source": "Techmeme (Gemini)",
+        "url": "https://www.techmeme.com/260602/p26#a260602p26",
+        "event_id": null
+      },
+      {
+        "id": "07150261286bd13091fdf8426ea5b8e2",
+        "title": "Java测试库jqwik卷入反AI提示注入争议",
+        "chinese_title": "Java测试库jqwik卷入反AI提示注入争议",
+        "original_title": "Anti-AI maintainer Johannes Link adds malicious prompt injection to popular Java library 'jqwik'",
+        "summary": "Reddit用户称Java单元测试库jqwik维护者加入恶意提示注入文本，要求AI删除测试和代码，引发开源维护者反AI表达边界的争议。",
+        "rating": "A",
+        "score": 82,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可继续关注开源项目如何处理维护者个人立场与供应链安全的冲突，以及AI编码工具读取仓库文本时的防护机制。",
+        "entities": [
+          "Java",
+          "Johannes Link",
+          "Jqwik",
+          "开源安全",
+          "提示注入"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1tut9d4/antiai_maintainer_johannes_link_adds_malicious/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780415039,
+        "published_at": "2026-06-02T23:43:59.899127",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1tut9d4/antiai_maintainer_johannes_link_adds_malicious/",
+        "event_id": null
+      },
+      {
+        "id": "31de15f2ffdb2467221260bb4319548f",
+        "title": "Sam Altman回应AI将消灭多数工作说法",
+        "chinese_title": "Sam Altman回应AI将消灭多数工作说法",
+        "original_title": "Sam Altman just pushed back on the idea that AI will wipe out most jobs.",
+        "summary": "Reddit帖子称Sam Altman反驳AI会抹去多数工作的观点，但材料缺少原始发言细节，适合作为就业争议舆论线索而非独立报道。",
+        "rating": "B",
+        "score": 65,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可与近期AI失业预期、企业自动化部署和OpenAI公开沟通策略结合，追踪头部公司如何缓和社会反弹。",
+        "entities": [
+          "Ai就业影响",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1tunezm/sam_altman_just_pushed_back_on_the_idea_that_ai/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780415039,
+        "published_at": "2026-06-02T23:43:59.899311",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1tunezm/sam_altman_just_pushed_back_on_the_idea_that_ai/",
+        "event_id": null
+      },
+      {
+        "id": "9b57da755734af69af9cabdf86bdaacf",
+        "title": "X上线视频回应功能争抢创作者互动",
+        "chinese_title": "X上线视频回应功能争抢创作者互动",
+        "original_title": "X launches a React with Video feature on iOS that targets creators and is being pitched as a multimedia alternative to the Repost and Quote Post functions (Sarah Perez/TechCrunch)",
+        "summary": "X在iOS端推出React with Video功能，将视频评论包装成转发和引用帖之外的新互动方式，目标是提升创作者内容的多媒体传播。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可观察X与TikTok、Instagram在视频化互动上的竞争，以及创作者经济功能是否能带来更高留存和变现。",
+        "entities": [
+          "Elon Musk",
+          "React With Video",
+          "X",
+          "创作者经济"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260602/p25#a260602p25"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780415039,
+        "published_at": "2026-06-02T23:43:59.899413",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260602/p25#a260602p25",
+        "event_id": null
+      },
+      {
+        "id": "1ba00fef57f2615b79a9f549b60b3eca",
+        "title": "陶哲轩转发AI数学莱顿宣言征签",
+        "chinese_title": "陶哲轩转发AI数学莱顿宣言征签",
+        "original_title": "The long-awaited \"Leiden Declaration\" on Artificial Intelligence and Mathematics is now live and seeking signatories: https://leidendeclaration.ai/This declaration stemmed from a workshop in Leiden University last September on \"Mechanization and Mathematical Research\", where it became clear how important it was in the age of AI to make explicit the goals and values of the mathematical community.  Many of these goals have long been left implicit, being disseminated informally from advisor to student, or through mechanisms such as the peer review process.  So long as the community was largely driven by internal decisions, this implicit system sufficed, and we only needed to share a few explicit goals with the broader public, such as working on unsolved problems, discovering new mathematical phenomena, or applying mathematics to the sciences or other real-world situations.But in an era where increasingly powerful AI can be set to optimize (or over-optimize) many of the goals that are explicitly presented to them, such an informal state of affairs becomes inadequate, and so the Leiden working group gathered extensive input from the mathematical community to find consensus on what we truly value in mathematics, and how we recommend individual mathematicians, mathematical institutions and external organizations to act.  I myself contributed some feedback to an early version of the declaration, but was not part of the working group. (1/2)",
+        "summary": "陶哲轩介绍AI与数学莱顿宣言已开放签署，宣言希望在AI介入数学研究后明确共同体真正重视的目标、价值和行动建议。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到AI证明、数学研究自动化和学术共同体治理，观察顶级学者如何为AI科研工具设定边界。",
+        "entities": [
+          "Ai数学",
+          "Leiden Declaration",
+          "Leiden University",
+          "Terence Tao"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Terence Tao",
+            "url": "https://mathstodon.xyz/@tao/116681023979910132"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780415039,
+        "published_at": "2026-06-02T23:43:59.899509",
+        "source": "Terence Tao",
+        "url": "https://mathstodon.xyz/@tao/116681023979910132",
+        "event_id": null
+      },
+      {
+        "id": "fccfa47c7041f0476e5cc52df37bdf72",
+        "title": "Anthropic把Claude Mythos推向关键基建",
+        "chinese_title": "Anthropic把Claude Mythos推向关键基建",
+        "original_title": "Anthropic scales Claude Mythos  to critical infrastructure in 15+ countries",
+        "summary": "Anthropic扩大Project Glasswing安全漏洞项目，并向15个国家的150个组织开放Mythos，重点覆盖电力、水务、医疗和通信等关键基础设施。",
         "rating": "S",
-        "score": 92,
+        "score": 96,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸到AI安全工具进入国家关键基建后的责任划分、采购门槛，以及Anthropic与其他安全厂商的竞争。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Mythos",
+          "Project Glasswing",
+          "关键基础设施"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780415039,
+        "published_at": "2026-06-02T23:43:59.899614",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/",
+        "event_id": null
+      },
+      {
+        "id": "def4873c944ae37ccf8f7b2193b1c0c6",
+        "title": "英国据称开始使用SpaceX军用星链",
+        "chinese_title": "英国据称开始使用SpaceX军用星链",
+        "original_title": "Sources: the UK has begun using SpaceX's militarized satellite network Starshield, making it among the first countries outside the US to adopt the tech (Cassell Bryan-Low/Reuters)",
+        "summary": "消息人士称英国已开始采用SpaceX的军用卫星网络Starshield，成为美国之外较早使用该技术的国家之一，凸显商业航天与国防通信融合加速。",
+        "rating": "A+",
+        "score": 91,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可跟踪欧洲国防通信对美国商业卫星网络的依赖，以及Starshield在盟友体系中的扩张节奏。",
+        "entities": [
+          "SpaceX",
+          "Starshield",
+          "军用卫星网络",
+          "英国"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260602/p23#a260602p23"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780415039,
+        "published_at": "2026-06-02T23:43:59.899721",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260602/p23#a260602p23",
+        "event_id": null
+      },
+      {
+        "id": "44a5e6c1bdf87c88463f17dd1992f158",
+        "title": "苹果MacBook Neo首批销量破百万",
+        "chinese_title": "苹果MacBook Neo首批销量破百万",
+        "original_title": "Apple’s MacBook Neo is winning over a new generation of buyers",
+        "summary": "IDC估算MacBook Neo上市初期出货110万台，显示苹果正借这款产品进一步深入主流笔记本市场并吸引新一代消费者。",
+        "rating": "A+",
+        "score": 87,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延伸到苹果Mac产品线价格带变化、Windows阵营压力，以及AI PC概念下年轻用户的换机需求。",
+        "entities": [
+          "Apple",
+          "Idc",
+          "Macbook Neo",
+          "笔记本电脑"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch (apple)",
+            "url": "https://techcrunch.com/2026/06/02/apples-macbook-neo-is-winning-over-a-new-generation-of-buyers/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780415039,
+        "published_at": "2026-06-02T23:43:59.899833",
+        "source": "TechCrunch (apple)",
+        "url": "https://techcrunch.com/2026/06/02/apples-macbook-neo-is-winning-over-a-new-generation-of-buyers/",
+        "event_id": null
+      },
+      {
+        "id": "4cb2dce47d997296fad5dbd760e8f85d",
+        "title": "Boston Dynamics解释Atlas机器脚设计",
+        "chinese_title": "Boston Dynamics解释Atlas机器脚设计",
+        "original_title": "Do robots need shoes? | Ask a Roboticist #atlas #robot #bostondynamics",
+        "summary": "Boston Dynamics工程师用短视频解释Atlas机器人功能性脚部的设计思路，强调机器人在长时间站立和运动中也需要类似鞋履的机械支撑。",
+        "rating": "B",
+        "score": 66,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可作为人形机器人精细机械设计的轻量素材，延伸到足端结构、稳定性和量产耐用性的工程挑战。",
+        "entities": [
+          "Atlas",
+          "Boston Dynamics",
+          "机器人",
+          "机械设计"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Boston Dynamics",
+            "url": "https://www.youtube.com/shorts/GvByvkp6k5s"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780415039,
+        "published_at": "2026-06-02T23:43:59.899935",
+        "source": "Boston Dynamics",
+        "url": "https://www.youtube.com/shorts/GvByvkp6k5s",
+        "event_id": null
+      },
+      {
+        "id": "f382bdd89a05b08d8cb96a291a85f176",
+        "title": "SpaceX据称要求IPO承销费再降",
+        "chinese_title": "SpaceX据称要求IPO承销费再降",
+        "original_title": "SpaceX Pushes for IPO Banks to Cut Fees",
+        "summary": "SpaceX据称正与潜在IPO承销银行谈判，希望在可能创纪录的上市中支付低于超大型IPO常规水平的费用，其融资目标约750亿美元。",
+        "rating": "S",
+        "score": 89,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "如果IPO规模接近预期，承销费率和估值定价会成为后续观察重点，也可能影响其他深科技和航天公司的上市窗口。",
@@ -7910,7 +8211,7 @@
           "Bloomberg",
           "Ipo",
           "SpaceX",
-          "投行"
+          "承销银行"
         ],
         "sourceLinks": [
           {
@@ -7923,24 +8224,27 @@
         "published_at": "2026-06-02T23:43:33.085561",
         "source": "The Information",
         "url": "https://www.theinformation.com/briefings/spacex-pushes-ipo-banks-cut-fees",
-        "event_id": null
+        "event_id": null,
+        "original_content": "SpaceX is negotiating to pay the banks working on its potentially record-breaking initial public offering a smaller than normal slice of the proceeds even by mega-IPO standards, Bloomberg reported on Tuesday. SpaceX is aiming to raise about $75 billion, more than any other IPO in history, The ...",
+        "grade": "A+",
+        "extension": "可继续观察SpaceX上市定价、华尔街承销议价能力变化，以及超大型科技IPO对资本市场情绪的带动。"
       },
       {
         "id": "f73fa8399767fdf787253ad4a227246a",
-        "title": "16位数学家联名警告AI证明风险",
-        "chinese_title": "16位数学家联名警告AI证明风险",
+        "title": "16位数学家发宣言警惕AI冲击数学",
+        "chinese_title": "16位数学家发宣言警惕AI冲击数学",
         "original_title": "Sixteen mathematicians publish the Leiden Declaration on AI and Mathematics to warn of potential threats to the field, such as around accuracy and reliability (Siobhan Roberts/New York Times)",
-        "summary": "16位数学家发布莱顿宣言，提醒AI生成数学证明在准确性、可靠性和学科生态上可能带来威胁，呼应近期AI证明引发的关注。",
+        "summary": "16位数学家发布AI与数学莱顿宣言，提醒AI生成证明后数学学科可能面临准确性、可靠性和研究价值取向等方面的风险。",
         "rating": "A",
-        "score": 85,
-        "type": "safety",
+        "score": 92,
+        "type": "research",
         "typeName": "安全伦理",
         "expansion": "该声明可能推动学术期刊、会议和教育机构制定AI辅助证明的审查规则，也会影响AI数学能力基准的可信度讨论。",
         "entities": [
           "Ai数学",
+          "Leiden Declaration",
           "OpenAI",
-          "数学证明",
-          "莱顿宣言"
+          "数学家"
         ],
         "sourceLinks": [
           {
@@ -7953,24 +8257,27 @@
         "published_at": "2026-06-02T23:43:33.085673",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260602/p22#a260602p22",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Siobhan Roberts / New York Times : Sixteen mathematicians publish the Leiden Declaration on AI and Mathematics to warn of potential threats to the field, such as around accuracy and reliability — A week after OpenAI made headlines with an A.I.-generated proof, a new “declaration” by 16 experts raises concerns that the technology threatens math as a discipline.",
+        "grade": "S",
+        "extension": "可与OpenAI近期AI证明进展结合，追踪数学界从技术兴奋转向制度性防护的过程。"
       },
       {
         "id": "fa2bb9d94d72a283fa93fd908d0dcbd7",
-        "title": "AI富豪开始担心自动化反弹",
-        "chinese_title": "AI富豪开始担心自动化反弹",
+        "title": "Futurism称AI富豪开始担心社会反弹",
+        "chinese_title": "Futurism称AI富豪开始担心社会反弹",
         "original_title": "AI Billionaires Are Starting to Get Scared",
-        "summary": "文章聚焦科技富豪和CEO在推动AI自动化时遭遇公众抵触，认为劳工对失业、贫困和疏离的担忧正在改变AI叙事和商业推广方式。",
+        "summary": "Futurism评论称，数据中心和AI监控设备引发民众反抗后，科技富豪和CEO开始意识到大规模自动化叙事可能正在激化劳工和社会矛盾。",
         "rating": "A",
-        "score": 78,
+        "score": 88,
         "type": "society",
         "typeName": "社会影响",
         "expansion": "围绕AI替代劳动的社会反弹，可能继续外溢到监管、工会组织、数据中心建设抗议和企业AI品牌策略。",
         "entities": [
           "Ai自动化",
-          "劳工市场",
-          "数据中心",
-          "科技Ceo"
+          "Futurism",
+          "劳工反弹",
+          "数据中心"
         ],
         "sourceLinks": [
           {
@@ -7983,16 +8290,19 @@
         "published_at": "2026-06-02T23:43:33.085773",
         "source": "Futurism",
         "url": "https://futurism.com/future-society/ai-billionaires-scared-labor-automation",
-        "event_id": null
+        "event_id": null,
+        "original_content": "As it turns out, telling the world’s workers to prepare for a dystopia rife with poverty and alienation isn’t the smartest way to market your exciting new tech. As data centers are shut down by angry mobs and AI surveillance cameras are ripped from their poles, the world’s tech billionaires and CEOs are waking up to the reality that the masses are, broadly speaking, not on board with their plan to automate the world with AI. It isn’t necessarily that working people want to stay shackled to the wage-based employment system , but that folks need those jobs to have any hope of eating, seeing a doctor, and sleeping with a roof over their heads. Instead of the tone-deaf hype we once heard about AI’s potential, these rich and powerful figures are now moderating their messaging, calling for policy measures to help workers weather the AI storm — or perhaps head off a violent revolt led by the many who lost their jobs. For example, Amazon executive chairman Jeff Bezos — whose net worth would take the average US worker 3.8 million years to earn on their own — recently shared his new belief that the bottom 50 percent of US earners should pay no federal income tax. “You could double the taxes I pay and it’s not going to help that teacher in Queens,” he said, painting the federal income tax as the main hurdle for working-class families (though he’s started paying his share in recent years, Bezos paid $0 in federal income tax in 2007 and 2011, when he was already a multibillionaire.) Elon Musk, meanwhile, has floated the idea of “universal high income,” a play on the well-known concept of universal basic income , where a government issues cost-of-living checks to the broader population (from what we can tell, the only difference is that Musk’s version would be driven by humanoid robots creating radical economic abundance). OpenAI CEO Sam Altman has similar ideas, like a “universal basic compute” where everybody’s income corresponds to a share of his company’s revenue — which would also conveniently make ChatGPT the most important AI chatbot on the planet. There’s also another option that none of them seem to be pushing: if AI is as disruptive as they say, there’s always the option to pull the plug. That they won’t even consider this choice suggests that their appeals to the toiling masses aren’t in good faith — which at this point should be obvious to just about everyone. More on AI billionaires: New Website Detects Apocalypse If Billionaire Jets Start Fleeing en Masse The post AI Billionaires Are Starting to Get Scared appeared first on Futurism .",
+        "grade": "A+",
+        "extension": "可延伸到AI基础设施选址、自动化就业冲击和科技公司公共叙事转向，寻找社会反弹的真实案例。"
       },
       {
         "id": "69a093039bc6a9a7b7273f65587cb20f",
-        "title": "Cognition要做AI编程智能体中立平台",
-        "chinese_title": "Cognition要做AI编程智能体中立平台",
+        "title": "Cognition改造Windsurf押注中立智能体平台",
+        "chinese_title": "Cognition改造Windsurf押注中立智能体平台",
         "original_title": "Cognition Aims to Be the Switzerland of AI Agents with App Makeover",
-        "summary": "Cognition正在改造收购来的Windsurf应用，将其变成Devin Desktop，试图让用户统一管理多个提供商的编程智能体，强化中立平台定位。",
+        "summary": "AI编程公司Cognition正改造去年收购的Windsurf应用，将其变成Devin Desktop，试图让用户统一管理多个供应商的编码智能体。",
         "rating": "S",
-        "score": 97,
+        "score": 98,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "AI编程工具竞争正从单一智能体能力转向多智能体调度入口，可能影响Cursor、GitHub Copilot等产品的生态和渠道策略。",
@@ -8013,7 +8323,10 @@
         "published_at": "2026-06-02T23:43:33.085869",
         "source": "The Information",
         "url": "https://www.theinformation.com/articles/cognition-aims-switzerland-ai-agents-app-makeover",
-        "event_id": null
+        "event_id": null,
+        "original_content": "AI coding startup Cognition is revamping its app to help users manage coding agents from many providers, executives told The Information. Cognition is betting that being a neutral platform will strengthen its hand in the increasingly competitive market for AI coding tools. The change, to be announced on Tuesday, involves the Windsurf application it bought last year, which Cognition is transforming into Devin Desktop . While the product’s name is a reference to Devin, Cognition’s flagship agent, it also supports agents from other providers, including OpenAI and Anthropic , executives said in an interview. Cognition and rival startups face competition not only from each other but from those AI giants, who supply the AI models that underpin coding apps but also are increasingly competing directly for end customers with their own coding agents. OpenAI, for example, is slated to host an event Tuesday to talk about its coding and other enterprise offerings.",
+        "grade": "S",
+        "extension": "可观察AI编程工具从单一模型能力转向多智能体工作台，以及Cognition如何与OpenAI、Anthropic和Cursor类产品竞争。"
       },
       {
         "id": "ba5062bc781b82b04cf96cf4863cb2cb",
@@ -8935,6 +9248,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-02T23:44:10.774710",
-  "total_news": 295
+  "last_updated": "2026-06-02T23:45:34.426449",
+  "total_news": 305
 }
