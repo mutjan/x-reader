@@ -1,7 +1,7 @@
 [
   {
     "group_id": "5cf92ea6",
-    "event_title": "Anthropic把Claude Mythos推向关键基建",
+    "event_title": "Anthropic把Claude推向关键基建",
     "first_seen_at": "2026-06-02T23:43:33.086317",
     "last_seen_at": "2026-06-03T06:35:58.699239",
     "news_ids": [
@@ -79,7 +79,7 @@
   },
   {
     "group_id": "47377350",
-    "event_title": "微软发布Windows级AI智能体沙箱",
+    "event_title": "微软发布Windows智能体沙箱容器",
     "first_seen_at": "2026-06-03T06:36:29.669623",
     "last_seen_at": "2026-06-03T06:36:29.669623",
     "news_ids": [
@@ -88,11 +88,11 @@
     "max_score": 100,
     "max_grade": "S",
     "entities": [
-      "Ai智能体",
       "Manus",
       "Microsoft",
       "Microsoft Execution Containers",
-      "Windows"
+      "NVIDIA",
+      "OpenAI"
     ]
   },
   {
@@ -110,13 +110,13 @@
     "max_grade": "S",
     "entities": [
       "Ai代理",
-      "Ai同事",
       "Ai智能体",
       "Microsoft",
       "Openclaw",
       "Scout",
       "Teams",
-      "企业数据"
+      "企业数据",
+      "办公自动化"
     ]
   },
   {
@@ -131,12 +131,32 @@
     "max_score": 98,
     "max_grade": "S",
     "entities": [
-      "Ai代理设备",
       "Ai智能体",
+      "Ai智能体硬件",
       "Android",
       "Build",
       "Microsoft",
       "Project Solara"
+    ]
+  },
+  {
+    "group_id": "1756aed6",
+    "event_title": "微软推出智能体控制开源标准",
+    "first_seen_at": "2026-06-03T06:36:29.505322",
+    "last_seen_at": "2026-06-03T06:36:29.506562",
+    "news_ids": [
+      "192cd2f8f1ce60399d25d8d237d2dc67",
+      "d543b52ef797dff4884e9d8e20f86c71"
+    ],
+    "max_score": 98,
+    "max_grade": "S",
+    "entities": [
+      "Agent Control Specification",
+      "Ai智能体",
+      "Microsoft",
+      "企业治理",
+      "合规团队",
+      "策略文件"
     ]
   },
   {
@@ -154,43 +174,6 @@
       "Cognition",
       "Devin",
       "Windsurf"
-    ]
-  },
-  {
-    "group_id": "e744c17a",
-    "event_title": "微软推出面向AI代理的Web IQ搜索",
-    "first_seen_at": "2026-06-03T06:36:29.507505",
-    "last_seen_at": "2026-06-03T06:36:29.507505",
-    "news_ids": [
-      "805aef643c81227dba120d0bc3902d3c"
-    ],
-    "max_score": 98,
-    "max_grade": "S",
-    "entities": [
-      "Bing",
-      "Copilot",
-      "GPT",
-      "Microsoft",
-      "Web Iq"
-    ]
-  },
-  {
-    "group_id": "c0a058d2",
-    "event_title": "OpenAI确认Codex将并入ChatGPT",
-    "first_seen_at": "2026-06-03T06:36:29.504999",
-    "last_seen_at": "2026-06-03T06:36:29.506943",
-    "news_ids": [
-      "f003eae2445ff2e13175c2dafcf9bc43",
-      "39cf7f83de566a772fcaf05df6cdef0c"
-    ],
-    "max_score": 97,
-    "max_grade": "S",
-    "entities": [
-      "Ai代理",
-      "Anthropic",
-      "Codex",
-      "GPT",
-      "OpenAI"
     ]
   },
   {
@@ -283,40 +266,57 @@
     ]
   },
   {
-    "group_id": "1756aed6",
-    "event_title": "微软开源AI代理行为治理标准",
-    "first_seen_at": "2026-06-03T06:36:29.505322",
-    "last_seen_at": "2026-06-03T06:36:29.506562",
-    "news_ids": [
-      "192cd2f8f1ce60399d25d8d237d2dc67",
-      "d543b52ef797dff4884e9d8e20f86c71"
-    ],
-    "max_score": 96,
-    "max_grade": "S",
-    "entities": [
-      "Agent Control Specification",
-      "Ai代理",
-      "Microsoft",
-      "合规",
-      "开源标准",
-      "策略文件"
-    ]
-  },
-  {
     "group_id": "0c999974",
-    "event_title": "微软用IQ和Rayfin应对企业代理数据孤岛",
+    "event_title": "微软用IQ和Rayfin补企业智能体数据层",
     "first_seen_at": "2026-06-03T06:36:29.506465",
     "last_seen_at": "2026-06-03T06:36:29.506465",
     "news_ids": [
       "237ed067d5e33d2b168a31ef2d583b56"
     ],
-    "max_score": 96,
+    "max_score": 97,
     "max_grade": "S",
     "entities": [
       "Microsoft",
       "Microsoft Iq",
       "Rayfin",
-      "企业Ai代理"
+      "企业Ai智能体"
+    ]
+  },
+  {
+    "group_id": "c0a058d2",
+    "event_title": "OpenAI把Codex推向非程序员办公场景",
+    "first_seen_at": "2026-06-03T06:36:29.504999",
+    "last_seen_at": "2026-06-03T06:36:29.506943",
+    "news_ids": [
+      "39cf7f83de566a772fcaf05df6cdef0c",
+      "f003eae2445ff2e13175c2dafcf9bc43"
+    ],
+    "max_score": 96,
+    "max_grade": "S",
+    "entities": [
+      "Ai代理",
+      "Codex",
+      "GPT",
+      "OpenAI",
+      "企业工具"
+    ]
+  },
+  {
+    "group_id": "e744c17a",
+    "event_title": "微软推出给智能体用的Web IQ搜索",
+    "first_seen_at": "2026-06-03T06:36:29.507505",
+    "last_seen_at": "2026-06-03T06:36:29.507505",
+    "news_ids": [
+      "805aef643c81227dba120d0bc3902d3c"
+    ],
+    "max_score": 96,
+    "max_grade": "S",
+    "entities": [
+      "Bing",
+      "Copilot",
+      "GPT",
+      "Microsoft",
+      "Web Iq"
     ]
   },
   {
@@ -368,40 +368,6 @@
     ]
   },
   {
-    "group_id": "e0ddc90f",
-    "event_title": "数据安全公司Cyera再融三亿美元估值一百二十亿",
-    "first_seen_at": "2026-06-03T06:36:29.669521",
-    "last_seen_at": "2026-06-03T06:36:29.669521",
-    "news_ids": [
-      "31d3afbf742395259a3f067134eec326"
-    ],
-    "max_score": 96,
-    "max_grade": "S",
-    "entities": [
-      "Ai安全",
-      "Cyera",
-      "数据安全",
-      "融资"
-    ]
-  },
-  {
-    "group_id": "705b0ddf",
-    "event_title": "数学家警告AI产业影响研究生态",
-    "first_seen_at": "2026-06-03T06:36:29.505894",
-    "last_seen_at": "2026-06-03T06:36:29.505894",
-    "news_ids": [
-      "0ae5378d23ce1b6ede5dd7de00410ea7"
-    ],
-    "max_score": 96,
-    "max_grade": "S",
-    "entities": [
-      "Ai安全",
-      "Leiden Declaration",
-      "OpenAI",
-      "数学研究"
-    ]
-  },
-  {
     "group_id": "fcc7d375",
     "event_title": "微软首个高级推理模型亮相Build",
     "first_seen_at": "2026-06-03T06:36:29.505113",
@@ -414,10 +380,10 @@
     "max_grade": "S",
     "entities": [
       "Build",
-      "Github",
       "Mai",
       "Microsoft",
-      "OpenAI"
+      "OpenAI",
+      "软件工程基准"
     ]
   },
   {
@@ -576,6 +542,24 @@
     ]
   },
   {
+    "group_id": "52dfc793",
+    "event_title": "OpenAI模型登陆亚马逊Bedrock平台",
+    "first_seen_at": "2026-06-02T17:48:11.877009",
+    "last_seen_at": "2026-06-02T17:48:11.877009",
+    "news_ids": [
+      "2b5a9c84de8b72d998d6d75297861d63"
+    ],
+    "max_score": 94,
+    "max_grade": "S",
+    "entities": [
+      "Amazon Bedrock",
+      "Aws",
+      "Codex",
+      "GPT",
+      "OpenAI"
+    ]
+  },
+  {
     "group_id": "4311574d",
     "event_title": "Demis Hassabis预测AGI最快2029年到来，将时间线缩短至3年",
     "first_seen_at": "2026-05-27T07:15:16.122930",
@@ -698,20 +682,20 @@
     ]
   },
   {
-    "group_id": "825d30df",
-    "event_title": "GitHub Copilot桌面应用开放预览",
-    "first_seen_at": "2026-06-03T06:36:29.505611",
-    "last_seen_at": "2026-06-03T06:36:29.505611",
+    "group_id": "e4308d39",
+    "event_title": "微软发布第二代拓扑量子芯片",
+    "first_seen_at": "2026-06-03T06:36:29.505420",
+    "last_seen_at": "2026-06-03T06:36:29.505420",
     "news_ids": [
-      "2bf954d3ffaf49809a5c18ad621ac210"
+      "1a626cfb679a51f256212cac3cf56640"
     ],
     "max_score": 92,
     "max_grade": "S",
     "entities": [
-      "Ai编程代理",
-      "Canvases",
-      "Copilot",
-      "Github"
+      "Majorana",
+      "Microsoft",
+      "拓扑量子芯片",
+      "量子计算"
     ]
   },
   {
@@ -767,6 +751,59 @@
       "N1X",
       "NVIDIA",
       "Windows On Arm"
+    ]
+  },
+  {
+    "group_id": "1f12d84c",
+    "event_title": "微软发布英伟达芯片本地AI开发机",
+    "first_seen_at": "2026-06-03T06:36:29.506847",
+    "last_seen_at": "2026-06-03T06:36:29.507792",
+    "news_ids": [
+      "dc68f2594eee22d6fd4208872a428ef1",
+      "a77b633389aea590484b45aa53029b5d"
+    ],
+    "max_score": 91,
+    "max_grade": "A+",
+    "entities": [
+      "Microsoft",
+      "NVIDIA",
+      "Surface Rtx Spark Dev Box",
+      "Windows",
+      "本地Ai"
+    ]
+  },
+  {
+    "group_id": "705b0ddf",
+    "event_title": "数学家集体警惕AI冲击学术共同体",
+    "first_seen_at": "2026-06-03T06:36:29.505894",
+    "last_seen_at": "2026-06-03T06:36:29.505894",
+    "news_ids": [
+      "0ae5378d23ce1b6ede5dd7de00410ea7"
+    ],
+    "max_score": 91,
+    "max_grade": "A+",
+    "entities": [
+      "Ai科研",
+      "Leiden University",
+      "OpenAI",
+      "数学家"
+    ]
+  },
+  {
+    "group_id": "825d30df",
+    "event_title": "GitHub Copilot桌面应用开放预览",
+    "first_seen_at": "2026-06-03T06:36:29.505611",
+    "last_seen_at": "2026-06-03T06:36:29.505611",
+    "news_ids": [
+      "2bf954d3ffaf49809a5c18ad621ac210"
+    ],
+    "max_score": 91,
+    "max_grade": "A+",
+    "entities": [
+      "Ai编程智能体",
+      "Canvases",
+      "Copilot",
+      "Github"
     ]
   },
   {
@@ -834,40 +871,6 @@
     ]
   },
   {
-    "group_id": "7f5ffe0c",
-    "event_title": "晨星给SpaceX估值仅7800亿美元",
-    "first_seen_at": "2026-06-03T06:36:29.505991",
-    "last_seen_at": "2026-06-03T06:36:29.505991",
-    "news_ids": [
-      "98a2d581b925323e3b1802b87a0044e0"
-    ],
-    "max_score": 91,
-    "max_grade": "A+",
-    "entities": [
-      "Ipo",
-      "Morningstar",
-      "SpaceX",
-      "估值"
-    ]
-  },
-  {
-    "group_id": "fcc41425",
-    "event_title": "微软一次发布七个AI模型",
-    "first_seen_at": "2026-06-03T06:36:29.505704",
-    "last_seen_at": "2026-06-03T06:36:29.505704",
-    "news_ids": [
-      "0682f899726e0697d64663aa29f205cd"
-    ],
-    "max_score": 91,
-    "max_grade": "A+",
-    "entities": [
-      "Ai模型",
-      "Github",
-      "Microsoft",
-      "Mustafa Suleyman"
-    ]
-  },
-  {
     "group_id": "3d6a68fe",
     "event_title": "中国多所涉军高校被曝寻求英伟达H200芯片",
     "first_seen_at": "2026-06-02T15:03:14.849316",
@@ -888,8 +891,25 @@
     ]
   },
   {
+    "group_id": "7f5ffe0c",
+    "event_title": "晨星给SpaceX估值仅为目标一半",
+    "first_seen_at": "2026-06-03T06:36:29.505991",
+    "last_seen_at": "2026-06-03T06:36:29.505991",
+    "news_ids": [
+      "98a2d581b925323e3b1802b87a0044e0"
+    ],
+    "max_score": 90,
+    "max_grade": "A+",
+    "entities": [
+      "Ipo",
+      "Morningstar",
+      "SpaceX",
+      "商业航天"
+    ]
+  },
+  {
     "group_id": "f1553a9a",
-    "event_title": "企业开始精打细算压低AI账单",
+    "event_title": "企业开始系统压低AI推理账单",
     "first_seen_at": "2026-06-03T06:36:29.507129",
     "last_seen_at": "2026-06-03T06:36:29.507129",
     "news_ids": [
@@ -898,10 +918,10 @@
     "max_score": 90,
     "max_grade": "A+",
     "entities": [
-      "Ai成本",
+      "Ai推理成本",
+      "OpenAI",
       "Snowflake",
-      "Sridhar Ramaswamy",
-      "推理优化"
+      "Sridhar Ramaswamy"
     ]
   },
   {
@@ -1004,25 +1024,6 @@
       "Llm智能体",
       "Python",
       "安全漏洞"
-    ]
-  },
-  {
-    "group_id": "1f12d84c",
-    "event_title": "微软推出英伟达芯片AI开发盒",
-    "first_seen_at": "2026-06-03T06:36:29.506847",
-    "last_seen_at": "2026-06-03T06:36:29.507792",
-    "news_ids": [
-      "dc68f2594eee22d6fd4208872a428ef1",
-      "a77b633389aea590484b45aa53029b5d"
-    ],
-    "max_score": 89,
-    "max_grade": "A+",
-    "entities": [
-      "Ai Pc",
-      "Microsoft",
-      "NVIDIA",
-      "Surface Rtx Spark Dev Box",
-      "Windows"
     ]
   },
   {
@@ -1284,23 +1285,6 @@
     ]
   },
   {
-    "group_id": "e4308d39",
-    "event_title": "微软Majorana量子芯片迭代再提速",
-    "first_seen_at": "2026-06-03T06:36:29.505420",
-    "last_seen_at": "2026-06-03T06:36:29.505420",
-    "news_ids": [
-      "1a626cfb679a51f256212cac3cf56640"
-    ],
-    "max_score": 89,
-    "max_grade": "A+",
-    "entities": [
-      "Majorana",
-      "Microsoft",
-      "拓扑量子芯片",
-      "量子计算"
-    ]
-  },
-  {
     "group_id": "360fa1a0",
     "event_title": "Gemini Spark上手暴露私人语境短板",
     "first_seen_at": "2026-05-30T05:11:09.177637",
@@ -1320,6 +1304,40 @@
       "Google",
       "Wired",
       "个人Agent"
+    ]
+  },
+  {
+    "group_id": "e0ddc90f",
+    "event_title": "数据安全公司Cyera再融三亿美元",
+    "first_seen_at": "2026-06-03T06:36:29.669521",
+    "last_seen_at": "2026-06-03T06:36:29.669521",
+    "news_ids": [
+      "31d3afbf742395259a3f067134eec326"
+    ],
+    "max_score": 88,
+    "max_grade": "A+",
+    "entities": [
+      "Cyera",
+      "以色列科技",
+      "数据安全",
+      "融资"
+    ]
+  },
+  {
+    "group_id": "fcc41425",
+    "event_title": "微软一口气发布七个AI模型",
+    "first_seen_at": "2026-06-03T06:36:29.505704",
+    "last_seen_at": "2026-06-03T06:36:29.505704",
+    "news_ids": [
+      "0682f899726e0697d64663aa29f205cd"
+    ],
+    "max_score": 88,
+    "max_grade": "A+",
+    "entities": [
+      "Ai模型",
+      "Github",
+      "Microsoft",
+      "Mustafa Suleyman"
     ]
   },
   {
@@ -1757,7 +1775,7 @@
   },
   {
     "group_id": "ecf255e8",
-    "event_title": "微软Solara平台瞄准代理优先硬件",
+    "event_title": "微软Solara智能体设备平台将进零售试点",
     "first_seen_at": "2026-06-03T06:41:04.521241",
     "last_seen_at": "2026-06-03T06:41:04.521241",
     "news_ids": [
@@ -1940,40 +1958,6 @@
       "强化学习",
       "生成式Ai",
       "监督学习"
-    ]
-  },
-  {
-    "group_id": "1dfa7017",
-    "event_title": "Perplexity电脑将本地云端模型分工",
-    "first_seen_at": "2026-06-03T06:36:29.506279",
-    "last_seen_at": "2026-06-03T06:36:29.506279",
-    "news_ids": [
-      "0f55c910d1c5d2825df92ff2c4ebb788"
-    ],
-    "max_score": 86,
-    "max_grade": "A",
-    "entities": [
-      "Perplexity",
-      "Perplexity Computer",
-      "云端模型",
-      "端侧Ai"
-    ]
-  },
-  {
-    "group_id": "550dbb71",
-    "event_title": "欧盟200亿欧元AI数据中心计划遇阻",
-    "first_seen_at": "2026-06-03T06:36:29.507601",
-    "last_seen_at": "2026-06-03T06:36:29.507601",
-    "news_ids": [
-      "0624225cd3eec244cdb258bc33084dd5"
-    ],
-    "max_score": 86,
-    "max_grade": "A",
-    "entities": [
-      "Ai数据中心",
-      "Softbank",
-      "主权Ai",
-      "欧盟"
     ]
   },
   {
@@ -2234,6 +2218,40 @@
     ]
   },
   {
+    "group_id": "e7c8f691",
+    "event_title": "桑德斯提议让AI产业收益回流公众",
+    "first_seen_at": "2026-06-03T06:36:29.506372",
+    "last_seen_at": "2026-06-03T06:36:29.506372",
+    "news_ids": [
+      "77920f52a79d97f1d8ef36df04ddd6eb"
+    ],
+    "max_score": 85,
+    "max_grade": "A",
+    "entities": [
+      "Ai监管",
+      "Anthropic",
+      "Bernie Sanders",
+      "OpenAI"
+    ]
+  },
+  {
+    "group_id": "550dbb71",
+    "event_title": "欧盟两百亿欧元AI数据中心计划遇阻",
+    "first_seen_at": "2026-06-03T06:36:29.507601",
+    "last_seen_at": "2026-06-03T06:36:29.507601",
+    "news_ids": [
+      "0624225cd3eec244cdb258bc33084dd5"
+    ],
+    "max_score": 84,
+    "max_grade": "A",
+    "entities": [
+      "Ai数据中心",
+      "Softbank",
+      "主权Ai",
+      "欧盟"
+    ]
+  },
+  {
     "group_id": "d86dbdae",
     "event_title": "教皇利奥十四世发布首封通谕，呼吁对AI\\\"解除武装\\\"",
     "first_seen_at": "2026-05-27T07:15:16.123098",
@@ -2330,6 +2348,23 @@
     "entities": [
       "OpenAI",
       "Openai Foundation"
+    ]
+  },
+  {
+    "group_id": "1dfa7017",
+    "event_title": "Perplexity让任务在本地和云端模型间分流",
+    "first_seen_at": "2026-06-03T06:36:29.506279",
+    "last_seen_at": "2026-06-03T06:36:29.506279",
+    "news_ids": [
+      "0f55c910d1c5d2825df92ff2c4ebb788"
+    ],
+    "max_score": 83,
+    "max_grade": "A",
+    "entities": [
+      "Perplexity",
+      "Perplexity Computer",
+      "云端模型",
+      "本地模型"
     ]
   },
   {
@@ -2472,23 +2507,6 @@
     ]
   },
   {
-    "group_id": "5713adb3",
-    "event_title": "OpenAI开源相机项目把现实一键变芝士",
-    "first_seen_at": "2026-06-03T06:36:29.669404",
-    "last_seen_at": "2026-06-03T06:36:29.669404",
-    "news_ids": [
-      "bc1d801915a522ab0e85887ca7017341"
-    ],
-    "max_score": 83,
-    "max_grade": "A",
-    "entities": [
-      "Imagegencam",
-      "OpenAI",
-      "图像生成",
-      "多模态Ai"
-    ]
-  },
-  {
     "group_id": "93896baf",
     "event_title": "SpaceX IPO对马斯克利好但普通投资者未必受益",
     "first_seen_at": "2026-05-30T00:07:32.393160",
@@ -2505,23 +2523,6 @@
       "Ipo",
       "SpaceX",
       "公司治理"
-    ]
-  },
-  {
-    "group_id": "e7c8f691",
-    "event_title": "桑德斯提议让AI财富服务公共利益",
-    "first_seen_at": "2026-06-03T06:36:29.506372",
-    "last_seen_at": "2026-06-03T06:36:29.506372",
-    "news_ids": [
-      "77920f52a79d97f1d8ef36df04ddd6eb"
-    ],
-    "max_score": 82,
-    "max_grade": "A",
-    "entities": [
-      "Ai产业",
-      "Anthropic",
-      "Bernie Sanders",
-      "OpenAI"
     ]
   },
   {
@@ -3731,6 +3732,23 @@
     ]
   },
   {
+    "group_id": "5713adb3",
+    "event_title": "OpenAI开源图像生成相机制作指南",
+    "first_seen_at": "2026-06-03T06:36:29.669404",
+    "last_seen_at": "2026-06-03T06:36:29.669404",
+    "news_ids": [
+      "bc1d801915a522ab0e85887ca7017341"
+    ],
+    "max_score": 75,
+    "max_grade": "A",
+    "entities": [
+      "Imagegencam",
+      "OpenAI",
+      "创意硬件",
+      "图像生成"
+    ]
+  },
+  {
     "group_id": "c24caeda",
     "event_title": "Magic AI Labs获巨额融资后长期沉默引发业界猜测",
     "first_seen_at": "2026-05-27T07:15:13.531848",
@@ -4187,20 +4205,20 @@
     ]
   },
   {
-    "group_id": "2d554117",
-    "event_title": "研究称反向传播快速破坏V1脑对齐",
-    "first_seen_at": "2026-06-03T06:36:29.507411",
-    "last_seen_at": "2026-06-03T06:36:29.507411",
+    "group_id": "d781604e",
+    "event_title": "前Anduril工程师融资做复合材料零件平台",
+    "first_seen_at": "2026-06-03T06:36:29.506655",
+    "last_seen_at": "2026-06-03T06:36:29.506655",
     "news_ids": [
-      "230eeacffb905156983913c571806e81"
+      "2dfef4cacc085fe477e325411a44f8a3"
     ],
     "max_score": 72,
     "max_grade": "B",
     "entities": [
-      "Backpropagation",
-      "Fmri",
-      "V1",
-      "预测编码"
+      "Anduril",
+      "Layup Parts",
+      "Zack Eakin",
+      "复合材料"
     ]
   },
   {
@@ -4265,23 +4283,6 @@
       "Vladimir Putin",
       "器官打印",
       "抗衰老"
-    ]
-  },
-  {
-    "group_id": "d781604e",
-    "event_title": "前Anduril工程师融资4200万美元做复材平台",
-    "first_seen_at": "2026-06-03T06:36:29.506655",
-    "last_seen_at": "2026-06-03T06:36:29.506655",
-    "news_ids": [
-      "2dfef4cacc085fe477e325411a44f8a3"
-    ],
-    "max_score": 70,
-    "max_grade": "B",
-    "entities": [
-      "Anduril",
-      "Layup Parts",
-      "Zack Eakin",
-      "复合材料"
     ]
   },
   {
@@ -4451,6 +4452,23 @@
     ]
   },
   {
+    "group_id": "56b43a3d",
+    "event_title": "论文猜测日本探测器目标或是废弃航天器",
+    "first_seen_at": "2026-06-03T00:51:17",
+    "last_seen_at": "2026-06-03T00:51:17",
+    "news_ids": [
+      "6be1debaf6d36aa1afdc62626b5b42cc"
+    ],
+    "max_score": 70,
+    "max_grade": "B",
+    "entities": [
+      "1998 Ky26",
+      "Hayabusa2",
+      "Jaxa",
+      "太空碎片"
+    ]
+  },
+  {
     "group_id": "63353fc7",
     "event_title": "曾获Domino's青睐的披萨机器人创企Picnic宣告破产清算",
     "first_seen_at": "2026-05-27T07:15:16.122996",
@@ -4560,6 +4578,23 @@
       "Nvidia Control Panel",
       "Quadro",
       "Rtx"
+    ]
+  },
+  {
+    "group_id": "2d554117",
+    "event_title": "研究称反向传播会迅速破坏V1脑区对齐",
+    "first_seen_at": "2026-06-03T06:36:29.507411",
+    "last_seen_at": "2026-06-03T06:36:29.507411",
+    "news_ids": [
+      "230eeacffb905156983913c571806e81"
+    ],
+    "max_score": 68,
+    "max_grade": "B",
+    "entities": [
+      "Fmri",
+      "Rsa",
+      "V1脑区",
+      "反向传播"
     ]
   },
   {
@@ -5026,24 +5061,6 @@
       "Ai就业影响",
       "OpenAI",
       "Sam Altman"
-    ]
-  },
-  {
-    "group_id": "52dfc793",
-    "event_title": "",
-    "first_seen_at": "2026-06-02T17:48:11.877009",
-    "last_seen_at": "2026-06-02T17:48:11.877009",
-    "news_ids": [
-      "2b5a9c84de8b72d998d6d75297861d63"
-    ],
-    "max_score": 94,
-    "max_grade": "S",
-    "entities": [
-      "Amazon Bedrock",
-      "Aws",
-      "Codex",
-      "GPT",
-      "OpenAI"
     ]
   }
 ]
