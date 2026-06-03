@@ -2416,13 +2416,193 @@
     ],
     "2026-06-03": [
       {
-        "id": "37ddbb41b240eab66aab4d490d3cd874",
-        "title": "微软Build连发七个自研AI模型",
-        "chinese_title": "微软Build连发七个自研AI模型",
-        "original_title": "Build 2026: Microsoft tops Google in image generation while playing catch-up on reasoning",
-        "summary": "微软在Build 2026发布七个内部研发AI模型，覆盖图像生成、推理、调优方法和后台自主智能体，显示其正在补齐基础模型能力并强化端到端产品闭环。",
+        "id": "5b4c4c3815df19d4d4b7fb40e6e75488",
+        "title": "特朗普要求前沿模型提前交政府测试",
+        "chinese_title": "特朗普要求前沿模型提前交政府测试",
+        "original_title": "Trump signs AI executive order seeking 30-day government access to frontier models before release — voluntary framework will include classified benchmark to determine which models qualify",
+        "summary": "特朗普签署AI行政令，要求企业在最强模型发布前向联邦政府提供30天早期访问，并用机密基准界定哪些模型属于前沿模型。",
         "rating": "S",
-        "score": 94,
+        "score": 92,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这会把美国政府从事后监管推向发布前接触，后续可观察OpenAI、Anthropic等公司是否接受自愿框架，以及安全评测是否演变成准准入门槛。",
+        "entities": [
+          "Ai行政令",
+          "Donald Trump",
+          "前沿模型",
+          "美国联邦政府"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-signs-ai-executive-order-seeking-30-day-government-access-to-frontier-models-before-release"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780488362,
+        "published_at": "2026-06-03T20:06:02.439285",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-signs-ai-executive-order-seeking-30-day-government-access-to-frontier-models-before-release",
+        "event_id": null
+      },
+      {
+        "id": "011cd1a98f1468664dc08eae718d12b8",
+        "title": "Suno诉讼缠身仍估值翻倍",
+        "chinese_title": "Suno诉讼缠身仍估值翻倍",
+        "original_title": "AI music startup Suno doubles its valuation to $5.4 billion while fighting major record labels in court",
+        "summary": "AI音乐公司Suno完成4亿美元融资，估值升至54亿美元，但它仍在与大型唱片公司围绕版权问题对簿公堂。",
+        "rating": "A+",
+        "score": 88,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "Suno的高估值说明生成式音乐商业化仍被资本押注，但版权诉讼结果可能重塑AI音乐训练授权、订阅增长和平台分发模式。",
+        "entities": [
+          "Ai音乐",
+          "Suno",
+          "唱片公司",
+          "版权诉讼"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780488362,
+        "published_at": "2026-06-03T20:06:02.439416",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court/",
+        "event_id": null
+      },
+      {
+        "id": "c77b59dfcde19e226eb816c76aaecaff",
+        "title": "AlphaSense融资后估值升至75亿美元",
+        "chinese_title": "AlphaSense融资后估值升至75亿美元",
+        "original_title": "AI market research platform AlphaSense raised $350M from Vitruvian, Accenture, and others at a $7.5B valuation, up from $4B in 2024, ahead of a possible IPO (Ben Glickman/Wall Street Journal)",
+        "summary": "AI市场研究平台AlphaSense获得3.5亿美元融资，投资方包括Vitruvian和Accenture等，估值从2024年的40亿美元升至75亿美元，并为潜在IPO铺路。",
+        "rating": "A+",
+        "score": 87,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "企业知识检索和市场情报平台正在成为AI落地的高价值赛道，后续可延伸到Accenture等咨询巨头如何绑定AI研究工具，以及IPO窗口是否重新打开。",
+        "entities": [
+          "Accenture",
+          "Alphasense",
+          "Ipo",
+          "Vitruvian"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260603/p25#a260603p25"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780488362,
+        "published_at": "2026-06-03T20:06:02.439540",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260603/p25#a260603p25",
+        "event_id": null
+      },
+      {
+        "id": "710db07490ab1c303498c86470b9c50b",
+        "title": "OpenAI和Anthropic押注AI自我改进",
+        "chinese_title": "OpenAI和Anthropic押注AI自我改进",
+        "original_title": "How OpenAI, Anthropic, and AI startups are pursuing \"recursive self-improvement\", in a bid to build AI that can improve itself with little to no human input (Financial Times)",
+        "summary": "OpenAI、Anthropic及多家AI创业公司正在追求递归自我改进，希望构建能较少依赖人类输入持续提升自身能力的AI系统。",
+        "rating": "S",
+        "score": 97,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "自我改进被行业视为通往超级智能的关键能力，也会放大安全评估、可控性和算力治理争议，适合持续追踪技术进展与监管反应。",
+        "entities": [
+          "Anthropic",
+          "OpenAI",
+          "超级智能",
+          "递归自我改进"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260603/p23#a260603p23"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780488362,
+        "published_at": "2026-06-03T20:06:02.439651",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260603/p23#a260603p23",
+        "event_id": null
+      },
+      {
+        "id": "b4803a11bcb8e1cbd1b03759b54971e1",
+        "title": "英伟达RTX Spark要把AI PC做实",
+        "chinese_title": "英伟达RTX Spark要把AI PC做实",
+        "original_title": "Nvidia’s RTX Spark Laptops Look Hell-Bent on Disruption",
+        "summary": "Nvidia的RTX Spark芯片被认为可能让AI PC从概念走向真实生产力设备，为本地运行更强AI负载提供新的硬件基础。",
+        "rating": "A+",
+        "score": 89,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "如果RTX Spark落地顺利，AI PC竞争将从营销口号转向本地模型体验、软件生态和OEM出货能力，可能牵动英特尔、AMD和微软的策略。",
+        "entities": [
+          "Ai Pc",
+          "NVIDIA",
+          "Rtx Spark",
+          "本地Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/nvidia-rtx-spark-laptop-disruption/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780488362,
+        "published_at": "2026-06-03T20:06:02.439757",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/nvidia-rtx-spark-laptop-disruption/",
+        "event_id": null
+      },
+      {
+        "id": "be0b8d4c54560a3e194d7e77f82a2c71",
+        "title": "Nous发布开源桌面AI智能体",
+        "chinese_title": "Nous发布开源桌面AI智能体",
+        "original_title": "Nous Research releases Hermes Desktop, an open-source AI agent for every platform",
+        "summary": "Nous Research推出Hermes Desktop，这是一款采用MIT许可证的开源AI智能体应用，目标是在多平台上提供本地桌面智能体体验。",
+        "rating": "A+",
+        "score": 91,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "桌面智能体正在从闭源助手扩展到开源生态，后续可关注Hermes Desktop与OpenAI、Anthropic和微软智能体工具在权限、安全和插件生态上的差异。",
+        "entities": [
+          "Ai智能体",
+          "Hermes Desktop",
+          "Mit许可证",
+          "Nous Research"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/nous-research-releases-hermes-desktop-an-open-source-ai-agent-for-every-platform/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780488362,
+        "published_at": "2026-06-03T20:06:02.439870",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/nous-research-releases-hermes-desktop-an-open-source-ai-agent-for-every-platform/",
+        "event_id": null
+      },
+      {
+        "id": "37ddbb41b240eab66aab4d490d3cd874",
+        "title": "微软Build发布七款自研AI模型",
+        "chinese_title": "微软Build发布七款自研AI模型",
+        "original_title": "Build 2026: Microsoft tops Google in image generation while playing catch-up on reasoning",
+        "summary": "微软在Build 2026发布七款自研AI模型，包括首个推理模型、新调优方法和后台自治智能体，并在图像生成能力上被评价超过Google。",
+        "rating": "S",
+        "score": 91,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "这一组合会影响微软与谷歌、OpenAI的模型分工，也可能改变企业客户在Azure、Copilot和自研模型之间的采购取舍。",
@@ -2431,7 +2611,7 @@
           "Build",
           "Google",
           "Microsoft",
-          "智能体"
+          "推理模型"
         ],
         "sourceLinks": [
           {
@@ -2444,14 +2624,17 @@
         "published_at": "2026-06-03T19:05:55.790189",
         "source": "THE DECODER",
         "url": "https://the-decoder.com/build-2026-microsoft-tops-google-in-image-generation-while-playing-catch-up-on-reasoning/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "At Build 2026, Microsoft announced seven new AI models developed in-house, including its first reasoning model. The company also introduced a new tuning method and an autonomous background agent. The article Build 2026: Microsoft tops Google in image generation while playing catch-up on reasoning appeared first on The Decoder .",
+        "grade": "A+",
+        "extension": "微软正把模型、调优和智能体能力打包进自有生态，后续可观察其与Google、OpenAI之间的模型分工，以及企业客户是否接受微软自研模型路线。"
       },
       {
         "id": "129ab70a5fb243b3cebc772a996b9c4d",
-        "title": "蓝色起源发射台重建被拿来对比SpaceX",
-        "chinese_title": "蓝色起源发射台重建被拿来对比SpaceX",
+        "title": "蓝色起源发射台重建要多久",
+        "chinese_title": "蓝色起源发射台重建要多久",
         "original_title": "How long will it take to rebuild Blue Origin's launch pad? We asked some SpaceX vets.",
-        "summary": "Ars Technica采访SpaceX相关经历者，借2016年猎鹰9号事故经验讨论蓝色起源发射台受损后的重建周期和工程挑战，核心在航天发射基础设施恢复能力。",
+        "summary": "Ars Technica采访SpaceX老兵，借2016年Falcon 9爆炸后的修复经验，分析Blue Origin发射台事故后的重建周期与工程难度。",
         "rating": "B",
         "score": 72,
         "type": "industry",
@@ -2460,8 +2643,8 @@
         "entities": [
           "Blue Origin",
           "Falcon 9",
-          "Nasa",
-          "SpaceX"
+          "SpaceX",
+          "发射台"
         ],
         "sourceLinks": [
           {
@@ -2474,16 +2657,19 @@
         "published_at": "2026-06-03T19:05:55.790288",
         "source": "Space – Ars Technica",
         "url": "https://arstechnica.com/space/2026/06/how-long-will-it-take-to-rebuild-blue-origins-launch-pad-we-asked-some-spacex-vets/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "A former NASA engineer named John Muratore sat on console as launch director in early September 2016 as propellant flowed onto a Falcon 9 rocket in Florida. Ahead of a planned launch two days later, SpaceX was preparing for a static fire test of the vehicle. Then, all of a sudden, the rocket exploded. \"It came out of nowhere, and it was really violent,\" Muratore said. This fireball resulted in the destruction of the rocket, much of its launch site, and the AMOS-6 satellite already attached to the vehicle. Nearly a decade later, on May 28, Blue Origin conducted a static fire test of a new rocket, with its larger New Glenn vehicle a few miles down the Florida coast. The company had gotten further into its test, reaching engine ignition, before its rocket also exploded . Read full article Comments",
+        "grade": "B",
+        "extension": "发射台恢复速度会影响Blue Origin后续任务节奏，也可对比SpaceX事故复盘能力、供应链冗余和商业航天发射频率竞争。"
       },
       {
         "id": "7a5a2fdb41ba8fc6916f1ec6fb9ce10e",
-        "title": "Revolut创始人靠马斯克式激励身家暴涨",
-        "chinese_title": "Revolut创始人靠马斯克式激励身家暴涨",
+        "title": "Revolut创始人靠马斯克式激励登顶英国富豪",
+        "chinese_title": "Revolut创始人靠马斯克式激励登顶英国富豪",
         "original_title": "How Revolut founder Nikolay Storonsky's Elon Musk-style pay incentives pushed his fortune to ~$20.4B, making him the UK's richest person, ahead of a planned IPO (Aisha S Gani/Bloomberg)",
-        "summary": "彭博称Revolut创始人Nikolay Storonsky凭借类似马斯克的薪酬激励机制，财富升至约204亿美元，并在公司筹备IPO前成为英国首富。",
+        "summary": "Revolut创始人Nikolay Storonsky因类似Elon Musk的薪酬激励机制身家升至约204亿美元，成为英国首富，并正带领公司筹备IPO。",
         "rating": "A",
-        "score": 80,
+        "score": 78,
         "type": "financial",
         "typeName": "商业数据",
         "expansion": "该案例可延伸到未上市科技公司如何用超额激励绑定创始人，以及IPO前估值、监管信任和公司治理之间的张力。",
@@ -2504,23 +2690,25 @@
         "published_at": "2026-06-03T19:05:55.790387",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260603/p21#a260603p21",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Aisha S Gani / Bloomberg : How Revolut founder Nikolay Storonsky's Elon Musk-style pay incentives pushed his fortune to ~$20.4B, making him the UK's richest person, ahead of a planned IPO — CEO Nik Storonsky turned a scrappy startup into a fintech juggernaut — now he has to convince the world that his company is as safe as a bank",
+        "grade": "A",
+        "extension": "高杠杆创始人激励会在IPO前放大估值叙事，但Revolut还需证明其金融安全性和监管合规能力，后续可跟踪欧洲金融科技上市窗口。"
       },
       {
         "id": "fdf6ca45452f6846e767ec15160fb020",
         "title": "苹果同意向印度反垄断机构提交财务数据",
         "chinese_title": "苹果同意向印度反垄断机构提交财务数据",
         "original_title": "Doc: Apple agreed in May to submit the financials of its India business to the country's antitrust body as part of an investigation over alleged market abuses (Aditya Kalra/Reuters)",
-        "summary": "路透称苹果已同意向印度反垄断机构提交其印度业务财务资料，用于配合有关市场滥用指控的调查，印度监管压力继续指向应用商店和平台控制力。",
+        "summary": "文件显示，Apple已在5月同意向印度反垄断机构提交其印度业务财务数据，用于配合涉嫌市场滥用行为的调查。",
         "rating": "A",
-        "score": 83,
+        "score": 80,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "印度市场对苹果增长重要，后续可能影响App Store佣金、开发者规则和跨国科技公司在新兴市场的合规成本。",
         "entities": [
           "App Store",
           "Apple",
-          "Reuters",
           "印度",
           "反垄断"
         ],
@@ -2535,24 +2723,26 @@
         "published_at": "2026-06-03T19:05:55.790472",
         "source": "Techmeme (apple)",
         "url": "https://www.techmeme.com/260603/p20#a260603p20",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Aditya Kalra / Reuters : Doc: Apple agreed in May to submit the financials of its India business to the country's antitrust body as part of an investigation over alleged market abuses — Apple has agreed to submit the financials of its India business to the country's antitrust body as part of an investigation …",
+        "grade": "A",
+        "extension": "印度对苹果生态的调查可能影响App Store抽成、支付限制和本地开发者政策，也会与欧盟、美国对大型平台的监管形成呼应。"
       },
       {
         "id": "ff92fb38e107070817b5f93fd289e87e",
-        "title": "液冷数据中心公司ZutaCore融到1亿美元",
-        "chinese_title": "液冷数据中心公司ZutaCore融到1亿美元",
+        "title": "液冷公司ZutaCore获1亿美元融资",
+        "chinese_title": "液冷公司ZutaCore获1亿美元融资",
         "original_title": "Israeli startup ZutaCore, which builds direct-to-chip liquid data center cooling systems, raised a $100M Series C from Mitsubishi and more at a $600M valuation (Meir Orbach/CTech)",
-        "summary": "以色列初创公司ZutaCore完成1亿美元C轮融资，估值6亿美元，核心产品是面向数据中心的芯片直连液冷系统，投资方包括三菱电机、三星和Carrier。",
+        "summary": "以色列数据中心液冷公司ZutaCore完成1亿美元C轮融资，投资方包括Mitsubishi等，估值达到6亿美元，主攻芯片直连液冷系统。",
         "rating": "A",
-        "score": 86,
+        "score": 82,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "AI数据中心功耗和散热压力抬升，液冷供应链融资可延伸到GPU集群部署成本、传统空调厂商转型和服务器架构变化。",
         "entities": [
-          "Carrier",
-          "Mitsubishi Electric",
-          "Samsung",
+          "Mitsubishi",
           "Zutacore",
+          "数据中心",
           "液冷"
         ],
         "sourceLinks": [
@@ -2566,14 +2756,17 @@
         "published_at": "2026-06-03T19:05:55.790559",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260603/p19#a260603p19",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Meir Orbach / CTech : Israeli startup ZutaCore, which builds direct-to-chip liquid data center cooling systems, raised a $100M Series C from Mitsubishi and more at a $600M valuation — Samsung, Mitsubishi Electric and Carrier back data center infrastructure company from Sderot.",
+        "grade": "A",
+        "extension": "AI数据中心功耗上升正在推高先进散热融资热度，ZutaCore可与浸没式液冷、英伟达机柜和云厂商基础设施升级放在一起观察。"
       },
       {
         "id": "3f53d61d670189d62c048358f12f8115",
-        "title": "AI音乐公司Suno估值升至54亿美元",
-        "chinese_title": "AI音乐公司Suno估值升至54亿美元",
+        "title": "Suno完成4亿美元融资估值54亿美元",
+        "chinese_title": "Suno完成4亿美元融资估值54亿美元",
         "original_title": "AI music startup Suno raised $400M led by Bond at a $5.4B valuation, up from $2.45B after raising $250M in November 2025, and passed 2M subscribers in February (Lucas Shaw/Bloomberg)",
-        "summary": "AI音乐初创公司Suno据称完成4亿美元融资，估值升至54亿美元，并已在2月突破200万订阅用户，显示生成式音乐商业化和版权争议同时升温。",
+        "summary": "AI音乐创业公司Suno由Bond领投完成4亿美元融资，估值从2025年11月融资后的24.5亿美元升至54亿美元，且订阅用户已超过200万。",
         "rating": "A+",
         "score": 89,
         "type": "funding",
@@ -2583,8 +2776,7 @@
           "Ai音乐",
           "Bond",
           "Suno",
-          "版权",
-          "订阅"
+          "订阅用户"
         ],
         "sourceLinks": [
           {
@@ -2597,16 +2789,19 @@
         "published_at": "2026-06-03T19:05:55.790645",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260603/p18#a260603p18",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Lucas Shaw / Bloomberg : AI music startup Suno raised $400M led by Bond at a $5.4B valuation, up from $2.45B after raising $250M in November 2025, and passed 2M subscribers in February — Suno Inc., a startup that enables people to make music using artificial intelligence, has raised $400 million at a valuation of $5.4 billion.",
+        "grade": "A+",
+        "extension": "这条补充了Suno融资的领投方和订阅数据，可用于判断AI音乐从工具热度走向付费规模的速度，同时继续受版权诉讼制约。"
       },
       {
         "id": "08e1d02121f2d3b9b9ba404a01c17a25",
         "title": "中国科大提出氧化物薄膜缺陷检测新方法",
         "chinese_title": "中国科大提出氧化物薄膜缺陷检测新方法",
         "original_title": "中国科大提出自支撑氧化物薄膜缺陷检测新方法-中国科大新闻网",
-        "summary": "中国科大团队研发基于锁相热成像的自支撑氧化物薄膜结构缺陷高通量检测方法，相关成果发表于《科学通报》，面向柔性电子和异质集成材料质量控制。",
+        "summary": "中国科大团队提出基于锁相热成像的自支撑氧化物薄膜结构缺陷高通量检测方法，相关成果发表于《科学通报》。",
         "rating": "A",
-        "score": 81,
+        "score": 76,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "该方法可延伸到柔性电子、新型传感器和多功能异质集成器件的制造检测流程，关注能否从实验室表征走向规模化质控。",
@@ -2627,24 +2822,27 @@
         "published_at": "2026-06-03T19:05:55.790732",
         "source": "科研进展-中国科大新闻网",
         "url": "http://news.ustc.edu.cn/info/1048/95229.htm",
-        "event_id": null
+        "event_id": null,
+        "original_content": "日前，我校合肥微尺度物质科学国家研究中心王凌飞、吴文彬教授团队与侯达之教授团队合作，研发出一种基于锁相热成像的自支撑氧化物薄膜结构缺陷高通量检测方法。相关成果以“High-throughput characterization of local structural imperfections in freestanding oxide membranes by lock-in thermography”为题，发表在《科学通报》（Science Bulletin）上。 自支撑氧化物薄膜是一类在去除衬底后仍能保持单晶特性的功能薄膜材料，兼具柔性、可转移、易集成等优势和丰富物理功能，在柔性电子器件、新型传感器和多功能异质集成器件等方面具有重要应用潜力。此前，王凌飞、吴文彬教授团队成功研发广谱高效水溶性牺牲层 Sr 4 Al 2 O 7 ，实现了厘米级尺寸单晶自支撑氧化物薄膜的高质量制备，为突破自支撑氧化物薄膜结晶性和完整性瓶颈提供了关键材料基础【Science383 (6681), 388-394】。然而，自支撑氧化物薄膜在剥离、释放和转移过程中仍可能产生裂纹、褶皱、鼓包等局部结构缺陷。这些缺陷尺度小、分布随机，在低倍光学显微镜下往往难以快速识别，却可能显著影响局部电导、介电常数、应变状态及器件性能，进而降低大面积器件阵列的均一性和可靠性。因此，发展一种兼具大面积、高效率和高灵敏度的高通量缺陷检测方法，是推动自支撑氧化物薄膜由材料制备走向器件应用的重要环节。 针对上述问题，研究团队将锁相热成像技术引入自支撑氧化物薄膜的结构缺陷检测。该方法通过向导电自支撑氧化物薄膜中注入周期性电流，使薄膜产生周期性焦耳热。当电流经过裂纹、褶皱等结构缺陷附近时，局部电流分布和发热行为会发生改变，并在红外热图中形成具有辨识度的“热指纹”。实验和有限元模拟结果表明，裂纹通常会产生类似“蝴蝶状”的热异常信号，而褶皱则表现为条纹状热信号。通过联合分析锁相热成像的温度振幅和相位信息，研究团队能够有效区分微裂纹、褶皱和长裂纹等不同类型的结构缺陷，并进一步实现对缺陷几何参数的定量评估。该方法仅需低倍红外镜头即可覆盖较大视场，对毫米尺度区域的成像仅需数十秒，大幅提升了自支撑氧化物薄膜缺陷筛查效率。研究团队在SrRuO 3 、La 2/3 Sr 1/3 MnO 3 、YBa 2 Cu 3 O 7 等典型导电氧化物自支撑薄膜中验证了该方法，并通过引入超薄导电覆盖层将高通量结构缺陷检测推广至绝缘性的自支撑氧化物薄膜。 该工作是团队在自支撑氧化物薄膜领域的重要后续工作，面向大面积自支撑薄膜从高质量制备走向可靠器件应用的实际需求，发展了一种兼具高效率和高灵敏度的缺陷检测方法。相关结果为自支撑氧化物薄膜的工艺优化、缺陷筛查和器件阵列质量控制提供了可靠高效的技术路径，也为柔性氧化物电子学和多功能异质集成器件的发展提供了重要支撑。 我校合肥微尺度物质科学国家研究中心博士研究生王傲、博士后研究员章金凤以及少年班学院大三本科生闫金翔为本文共同第一作者；王凌飞教授、侯达之教授为本文共同通讯作者。安徽凌光红外科技有限公司为本工作提供了锁相热成像关键设备和技术支持。该研究得到国家自然科学基金委、科技部国家重点研发计划、中国科学院稳定支持基础研究领域青年团队计划等项目的资助。 (a)利用锁相热成像测量自支撑氧化物薄膜中的微缺陷：周期性电流通过自支撑氧化物薄膜并产生周期性焦耳热，利用红外相机记录表面温度变化，再通过锁相分析提取振幅和相位信号。(b)自支撑SrRuO 3 薄膜的光学显微图像。在低倍光学图像中，高密度褶皱背景会掩盖大部分微裂纹信号；(c,d)自支撑SrRuO 3 薄膜的锁相热成像振幅和相位图。与低倍光学显微图像对应的锁相热成像图像可以清晰显示多个裂纹诱导的热异常。 论文链接： https://www.sciencedirect.com/science/article/pii/S2095927326005396 （合肥微尺度物质科学国家研究中心、科研部）",
+        "grade": "A",
+        "extension": "该方法面向柔性电子、新型传感器和异质集成材料制备中的质量控制问题，后续可关注其能否进入规模化薄膜制造和器件检测流程。"
       },
       {
         "id": "a1b7739a9042c845c7a1ccd478c9619e",
-        "title": "旧金山房产挂牌开始接受Anthropic股票",
-        "chinese_title": "旧金山房产挂牌开始接受Anthropic股票",
+        "title": "旧金山房产开始换Anthropic股票",
+        "chinese_title": "旧金山房产开始换Anthropic股票",
         "original_title": "What’s Worth More Than Cash in San Francisco Real Estate? Anthropic Stock",
-        "summary": "Wired报道旧金山湾区部分房源愿意用房产交换Anthropic股票，显示顶级AI公司未上市股权在本地财富结构和房地产交易中获得异常高的认可。",
+        "summary": "旧金山湾区出现多个房源愿意用房产交换Anthropic股票，显示顶级AI创业公司的未上市股权正在当地资产市场形成特殊溢价。",
         "rating": "A+",
         "score": 87,
-        "type": "society",
+        "type": "financial",
         "typeName": "社会影响",
         "expansion": "这一现象可延伸到AI独角兽股权流动性、湾区房价、员工财富预期和非公开市场资产定价泡沫。",
         "entities": [
-          "Ai股票",
           "Anthropic",
           "房地产",
-          "旧金山湾区"
+          "旧金山湾区",
+          "未上市股权"
         ],
         "sourceLinks": [
           {
@@ -2657,7 +2855,10 @@
         "published_at": "2026-06-03T19:05:55.790825",
         "source": "Feed: Artificial Intelligence Latest",
         "url": "https://www.wired.com/story/whats-worth-more-than-san-francisco-real-estate-anthropic-stock/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Several real estate listings in the San Francisco Bay Area are offering to exchange a home for a piece of the AI startup.",
+        "grade": "A+",
+        "extension": "Anthropic股票被房产市场当作硬通货，折射AI独角兽流动性和财富效应，也可能预示二级市场、期权融资和员工套现需求升温。"
       },
       {
         "id": "97fc420b25f607597ffdd9de902275db",
@@ -8458,6 +8659,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-03T19:06:26.275127",
-  "total_news": 275
+  "last_updated": "2026-06-03T20:06:34.122046",
+  "total_news": 281
 }

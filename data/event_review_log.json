@@ -315,6 +315,19 @@
           "reason": "该条是OpenAI模型登陆亚马逊Bedrock平台，核心事件是模型分发和AWS合作；当前组是Codex并入ChatGPT及岗位插件，业务场景和产品线不同，应拆成独立事件。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-06-03T20:07:27.029138",
+      "batch_id": "20260603200727",
+      "corrections_applied": 1,
+      "details": [
+        {
+          "news_id": "011cd1a98f1468664dc08eae718d12b8",
+          "from_event_id": "c069b8fe",
+          "to_event_id": "184c42bc",
+          "reason": "两条Suno新闻描述的是同一轮4亿美元融资和54亿美元估值，第二条包含领投方和订阅数据，适合合并为同一事件。"
+        }
+      ]
     }
   ]
 }
