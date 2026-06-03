@@ -1306,37 +1306,6 @@
         "source": "The Information",
         "url": "https://www.theinformation.com/briefings/coding-startup-cognition-raises-1-billion-26-billion-valuation",
         "event_id": null
-      },
-      {
-        "id": "97a8e5d8796ecfffac81d8237da882d9",
-        "title": "Kimi Plan缓存机制优化实践分享",
-        "chinese_title": "Kimi Plan缓存机制优化实践分享",
-        "original_title": "鉴于 Kimi Team 解释清楚能愉快用 Kimi Plan 了，我也可以无耻地在后续针对 Kimi 做个人 agent 时要注意的 Caching harness 写点什么了…… https://github.com/...",
-        "summary": "开发者Leechael分享了使用Kimi Plan时的缓存优化经验，为构建基于Kimi的个人Agent提供了实用技术参考。",
-        "rating": "B",
-        "score": 77,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "LLM agent的缓存策略是提升效率和降低成本的关键技术，Kimi在这方面的探索可能为行业提供新思路。",
-        "entities": [
-          "Kimi",
-          "月之暗面"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Leechael/status/2059264093589262739"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1779919549,
-        "published_at": "2026-05-28T06:05:49.177633",
-        "source": "x",
-        "url": "https://x.com/Leechael/status/2059264093589262739",
-        "event_id": null,
-        "original_content": "鉴于 Kimi Team 解释清楚能愉快用 Kimi Plan 了，我也可以无耻地在后续针对 Kimi 做个人 agent 时要注意的 Caching harness 写点什么了…… https://github.com/Leechael/pi-provider-kimi-code/blob/main/docs/caching.md",
-        "grade": "A",
-        "extension": "可延伸探讨Kimi Agent开发最佳实践、大模型缓存机制优化、以及国产大模型生态建设"
       }
     ],
     "2026-06-01": [
@@ -2416,20 +2385,200 @@
     ],
     "2026-06-04": [
       {
-        "id": "1b89de8e0d025fb6b9f5ccaf62060c30",
-        "title": "苹果MacBook Neo热度推动产能翻倍",
-        "chinese_title": "苹果MacBook Neo热度推动产能翻倍",
-        "original_title": "MacBook Neo is so popular that Apple doubled production",
-        "summary": "郭明錤称苹果因MacBook Neo需求强劲而上调生产计划，这显示低价或新形态Mac产品可能正在改变MacBook产品线的销量结构。",
+        "id": "c4b99de7c11593241532f28caa4a6e6a",
+        "title": "Meta筹划Hatch智能体最高月费200美元",
+        "chinese_title": "Meta筹划Hatch智能体最高月费200美元",
+        "original_title": "Internal documents: Meta is considering tiered pricing for \"Hatch\", its planned OpenClaw-like AI agent tool, including a $200-per-month premium subscription (Jyoti Mann/The Information)",
+        "summary": "内部文件显示，Meta正考虑为消费者版Hatch AI智能体设置分层订阅，最高档接近每月200美元，定价目标直指OpenClaw等高端智能体工具。",
+        "rating": "S",
+        "score": 98,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "如果Meta把消费级智能体推到高价订阅区间，可能带动AI助理从免费入口转向高ARPU工具，也会检验用户是否愿意为可执行任务能力付费。",
+        "entities": [
+          "Ai智能体",
+          "Hatch",
+          "Meta",
+          "Openclaw"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260603/p60#a260603p60"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780527888,
+        "published_at": "2026-06-04T07:04:48.818737",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260603/p60#a260603p60",
+        "event_id": null
+      },
+      {
+        "id": "e0a2bea1411eb752eca0055932e57de5",
+        "title": "英伟达4亿美元收购预测AI公司Kumo",
+        "chinese_title": "英伟达4亿美元收购预测AI公司Kumo",
+        "original_title": "Nvidia acquired Kumo, which sells predictive AI software to enterprises, a source says for $400M+; PitchBook: Kumo raised $37M at a $250M valuation in 2022 (The Information)",
+        "summary": "据称英伟达以超过4亿美元收购企业预测AI软件公司Kumo AI，后者曾在2022年以2.5亿美元估值完成融资，交易将补强英伟达企业模型能力。",
         "rating": "A+",
-        "score": 87,
+        "score": 91,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "英伟达继续把硬件优势延伸到企业模型和应用层，后续可关注其是否把Kumo能力整合进NIM、DGX Cloud或行业解决方案。",
+        "entities": [
+          "Kumo Ai",
+          "NVIDIA",
+          "Pitchbook",
+          "企业预测Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260603/p59#a260603p59"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780527888,
+        "published_at": "2026-06-04T07:04:48.818851",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260603/p59#a260603p59",
+        "event_id": null
+      },
+      {
+        "id": "851537389ffc0198f02605756bdc0e3e",
+        "title": "SpaceX拟以1.77万亿美元估值IPO",
+        "chinese_title": "SpaceX拟以1.77万亿美元估值IPO",
+        "original_title": "SpaceX Sets $135 Per Share Target Price for IPO",
+        "summary": "SpaceX计划IPO时以每股135美元出售5.556亿股，目标募资750亿美元，对应约1.77万亿美元估值，规模将刷新全球IPO纪录。",
+        "rating": "S",
+        "score": 98,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "若SpaceX以这一估值上市，将重塑太空、卫星互联网和AI基础设施资产的资本定价，也会影响后续独角兽IPO窗口。",
+        "entities": [
+          "Elon Musk",
+          "Ipo",
+          "SpaceX",
+          "卫星互联网"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/spacex-prices-ipo-135-per-share"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780527888,
+        "published_at": "2026-06-04T07:04:48.818944",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/spacex-prices-ipo-135-per-share",
+        "event_id": null
+      },
+      {
+        "id": "4b6af078553ebf05abfa0501e4045e75",
+        "title": "微软等公司同步更新量子计算进展",
+        "chinese_title": "微软等公司同步更新量子计算进展",
+        "original_title": "Microsoft, Atom Computing, EeroQ update their quantum computing progress",
+        "summary": "微软、Atom Computing和EeroQ近期分别公布量子计算路线进展，虽然不是单一突破节点，但显示不同技术路径正朝实用化持续推进。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "量子计算竞争正在从里程碑演示转向工程积累，后续可比较拓扑量子、原子阵列和电子自旋等路线的可扩展性与商业节奏。",
+        "entities": [
+          "Atom Computing",
+          "Eeroq",
+          "Microsoft",
+          "量子计算"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Ars Technica » Scientific Method",
+            "url": "https://arstechnica.com/science/2026/06/microsoft-atom-computing-eeroq-update-their-quantum-computing-progress/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780527888,
+        "published_at": "2026-06-04T07:04:48.819031",
+        "source": "Ars Technica » Scientific Method",
+        "url": "https://arstechnica.com/science/2026/06/microsoft-atom-computing-eeroq-update-their-quantum-computing-progress/",
+        "event_id": null
+      },
+      {
+        "id": "b91d26765504a41e01370f3632962944",
+        "title": "苹果新Siri据称9月上线并借力谷歌英伟达",
+        "chinese_title": "苹果新Siri据称9月上线并借力谷歌英伟达",
+        "original_title": "Apple to Launch New Siri in September With Help of Google, Nvidia",
+        "summary": "知情人士称，苹果计划9月推出改版Siri，部分能力将运行在谷歌云服务器和英伟达芯片上，同时继续尽量保留端侧处理。",
+        "rating": "S",
+        "score": 97,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "苹果若在核心助手上引入谷歌云和英伟达算力，说明端侧AI仍需云端补位，也可能改变其与云厂商、芯片供应商的议价关系。",
+        "entities": [
+          "Apple",
+          "Google",
+          "NVIDIA",
+          "Siri"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information (apple)",
+            "url": "https://www.theinformation.com/briefings/apple-launch-new-siri-september-help-google-nvidia"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780527888,
+        "published_at": "2026-06-04T07:04:48.819114",
+        "source": "The Information (apple)",
+        "url": "https://www.theinformation.com/briefings/apple-launch-new-siri-september-help-google-nvidia",
+        "event_id": null
+      },
+      {
+        "id": "41c567a38ec1a684311cb05e4618f1a5",
+        "title": "博通AI芯片收入大涨带动营收增长48%",
+        "chinese_title": "博通AI芯片收入大涨带动营收增长48%",
+        "original_title": "Broadcom Reports 48% Revenue Growth as AI Chip Business Expands",
+        "summary": "博通第二财季营收同比增长48%，其中AI芯片收入跃升143%至108亿美元，显示定制AI芯片需求继续拉动其业绩扩张。",
+        "rating": "A+",
+        "score": 88,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "博通的增长会强化ASIC在AI基础设施中的投资叙事，后续可追踪其与英伟达GPU生态、云厂商自研芯片之间的竞争边界。",
+        "entities": [
+          "Ai芯片",
+          "Asic",
+          "Broadcom",
+          "云厂商"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/broadcom-reports-48-revenue-growth-ai-chip-business-expands"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780527888,
+        "published_at": "2026-06-04T07:04:48.819197",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/broadcom-reports-48-revenue-growth-ai-chip-business-expands",
+        "event_id": null
+      },
+      {
+        "id": "1b89de8e0d025fb6b9f5ccaf62060c30",
+        "title": "郭明錤称MacBook Neo热销促苹果加倍生产",
+        "chinese_title": "郭明錤称MacBook Neo热销促苹果加倍生产",
+        "original_title": "MacBook Neo is so popular that Apple doubled production",
+        "summary": "MacRumors援引郭明錤消息称，MacBook Neo市场需求强劲，苹果已将产量翻倍，显示这款新品可能超出早期销售预期。",
+        "rating": "A+",
+        "score": 78,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "如果产能翻倍属实，后续可追踪MacBook Neo对MacBook Air、Windows AI PC和供应链订单的挤压或拉动作用。",
         "entities": [
           "Apple",
-          "Macbook",
           "Macbook Neo",
+          "Macrumors",
           "郭明錤"
         ],
         "sourceLinks": [
@@ -2443,24 +2592,27 @@
         "published_at": "2026-06-04T06:04:51.312286",
         "source": "Hacker News (apple)",
         "url": "https://www.macrumors.com/2026/06/03/macbook-neo-production-doubled-says-kuo/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "A",
+        "extension": "若MacBook Neo放量属实，将影响苹果Mac产品线定价与供应链排产，也可能带动上游面板、芯片和代工订单变化。"
       },
       {
         "id": "4e07758d9dc1cb0e9f9764ceab830b71",
-        "title": "苹果将在德州启用App Store年龄验证",
-        "chinese_title": "苹果将在德州启用App Store年龄验证",
+        "title": "苹果将在得州App Store启用年龄验证",
+        "chinese_title": "苹果将在得州App Store启用年龄验证",
         "original_title": "Apple is bringing age verification to Texas this week",
-        "summary": "受德州应用商店问责法影响，苹果将要求当地新账号通过信用卡或政府证件确认年龄，未成年人需进入家庭共享并由监护人提供同意。",
+        "summary": "苹果将从6月4日起在得州App Store对新账号启用年龄验证，用户可能需通过信用卡、政府证件或账号年龄完成成年人确认。",
         "rating": "A",
-        "score": 82,
+        "score": 79,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这可能成为美国州级平台监管落地样板，后续影响开发者分发、青少年隐私合规以及苹果与州政府的诉讼博弈。",
         "entities": [
           "App Store",
-          "App Store Accountability Act",
           "Apple",
-          "Texas"
+          "Texas",
+          "年龄验证"
         ],
         "sourceLinks": [
           {
@@ -2473,24 +2625,27 @@
         "published_at": "2026-06-04T06:04:51.312416",
         "source": "The Verge -  Tech Posts (apple)",
         "url": "https://www.theverge.com/tech/942761/apple-texas-age-verification-app-store",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Apple will introduce age verification in the App Store for users in Texas starting on Thursday, June 4th. The move, as spotted by MacRumors , comes just days after a federal appeals court allowed Texas' App Store Accountability Act to go into effect while a lawsuit against it proceeds. People in Texas who are creating a new Apple account will need to verify they're over 18 using a credit card or government ID . Apple may also automatically verify users' age using the age of their account and whether they have a credit card on file. Meanwhile, users under 18 must join a Family Sharing group, where a parent or guardian will need to provide con … Read the full story at The Verge.",
+        "grade": "A",
+        "extension": "得州新规会成为平台未成年人保护和隐私争议的新样本，后续其他州若跟进，应用商店合规成本和用户流程都将改变。"
       },
       {
         "id": "13cd4b0cf172530f7e0062f307706c4a",
-        "title": "英伟达4亿美元收购企业模型公司Kumo AI",
-        "chinese_title": "英伟达4亿美元收购企业模型公司Kumo AI",
+        "title": "英伟达收购Kumo补强企业预测模型",
+        "chinese_title": "英伟达收购Kumo补强企业预测模型",
         "original_title": "Nvidia Buys Enterprise Model-Maker Kumo AI for at Least $400 Million",
-        "summary": "英伟达据称以超过4亿美元收购企业预测AI软件公司Kumo AI，意在把更多可在自家硬件上优化的模型能力打包提供给企业客户。",
+        "summary": "英伟达已收购企业预测AI初创公司Kumo AI，金额至少4亿美元，交易将扩展其可针对英伟达硬件优化并提供给企业定制的模型组合。",
         "rating": "A+",
         "score": 92,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "这笔收购可延伸到英伟达从芯片供应商向企业AI软件平台扩张的路径，也值得观察其对垂直模型创业公司并购估值和云厂商合作格局的影响。",
         "entities": [
+          "Ai硬件生态",
           "Kumo Ai",
           "NVIDIA",
-          "企业Ai",
-          "预测模型"
+          "企业模型"
         ],
         "sourceLinks": [
           {
@@ -2506,7 +2661,7 @@
         "event_id": null,
         "original_content": "Nvidia has bought Kumo AI, a five-year-old startup that sells predictive AI software to enterprises, for more than $400 million, said a person with knowledge of the deal. The acquisition, first revealed by an Nvidia executive in a LinkedIn post on Tuesday, should expand Nvidia’s roster of AI models that can be optimized for Nvidia hardware and offered to enterprises for further customization.",
         "grade": "S",
-        "extension": "该交易延伸出英伟达从芯片进入企业模型栈的战略信号，也可观察其与云厂商、企业AI平台和垂直模型公司的竞争关系。"
+        "extension": "这笔收购表明英伟达正把企业AI软件资产纳入硬件生态，后续可观察其是否用并购加速行业模型和数据层布局。"
       },
       {
         "id": "fb7b4d6df646cf8935bedd08f4fd5e45",
@@ -2632,10 +2787,10 @@
       },
       {
         "id": "4301eb6a93fafaddc5d583c37d9f4a2f",
-        "title": "SpaceX拟IPO募资750亿美元估值近1.8万亿",
-        "chinese_title": "SpaceX拟IPO募资750亿美元估值近1.8万亿",
+        "title": "SpaceX冲刺史上最大IPO募资750亿美元",
+        "chinese_title": "SpaceX冲刺史上最大IPO募资750亿美元",
         "original_title": "Filing: SpaceX aims to raise $75B in its IPO, selling 555.6M shares at $135 each, which would value the company at ~$1.77T (Bailey Lipschultz/Bloomberg)",
-        "summary": "彭博称SpaceX文件显示其计划在IPO中出售5.556亿股、募资750亿美元，若成行公司估值将接近1.77万亿美元。",
+        "summary": "文件显示，SpaceX寻求通过IPO募资750亿美元，计划以每股135美元出售5.556亿股，公司估值约1.77万亿美元。",
         "rating": "S",
         "score": 98,
         "type": "funding",
@@ -2661,7 +2816,7 @@
         "event_id": null,
         "original_content": "Bailey Lipschultz / Bloomberg : Filing: SpaceX aims to raise $75B in its IPO, selling 555.6M shares at $135 each, which would value the company at ~$1.77T — SpaceX is seeking to raise $75 billion in an initial public offering that would be the biggest of all time, as Elon Musk's rocket, satellite and artificial intelligence …",
         "grade": "S",
-        "extension": "这将成为史上最大IPO之一，后续可跟踪其对AI、航天、卫星互联网估值体系以及马斯克旗下公司资本布局的影响。"
+        "extension": "SpaceX若完成史上最大IPO，将给火箭、星链和AI相关基础设施资产带来新的估值锚点，也可能影响科技股风险偏好。"
       },
       {
         "id": "bf39cb90d5bf3cd6560c40ee093ed04d",
@@ -11345,6 +11500,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-04T06:05:13.344176",
-  "total_news": 364
+  "last_updated": "2026-06-04T07:05:19.256253",
+  "total_news": 369
 }
