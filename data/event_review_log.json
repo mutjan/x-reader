@@ -328,6 +328,31 @@
           "reason": "两条Suno新闻描述的是同一轮4亿美元融资和54亿美元估值，第二条包含领投方和订阅数据，适合合并为同一事件。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-06-03T22:06:59.262243",
+      "batch_id": "20260603220659",
+      "corrections_applied": 3,
+      "details": [
+        {
+          "news_id": "5460a16a7dcd912e5c03a05048e0d9c5",
+          "from_event_id": "da5b59ea",
+          "to_event_id": "158ad5ba",
+          "reason": "同为Meta Business Agent全球登陆WhatsApp/Instagram商务客服场景，属于同一产品发布事件，应合并。"
+        },
+        {
+          "news_id": "c1b53b80e6f39eef06f3a0c61baf14ce",
+          "from_event_id": "bcfb029d",
+          "to_event_id": "90c886a9",
+          "reason": "同为Coralogix完成2亿美元F轮融资且估值16亿美元，TechCrunch与Techmeme是同一融资事件的不同来源，应合并。"
+        },
+        {
+          "news_id": "9f9159c80723c8961ad1f2ad9be42422",
+          "from_event_id": "74d4c53b",
+          "to_event_id": "new_event",
+          "reason": "该新闻讨论心理学和认知科学可重复性，与虚拟细胞、免疫细胞和科学传播不是同一事件，仅因Nature来源相似被误并。"
+        }
+      ]
     }
   ]
 }
