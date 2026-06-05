@@ -1077,6 +1077,38 @@
     ],
     "2026-06-05": [
       {
+        "id": "88e5eeb1444761789eb390eba9d97947",
+        "title": "SpaceX合并xAI后财务风险遭质疑",
+        "chinese_title": "SpaceX合并xAI后财务风险遭质疑",
+        "original_title": "It’s Possible That SpaceX Could Collapse Spectacularly",
+        "summary": "Futurism文章质疑SpaceX在筹备高估值IPO之际合并xAI并转向太空数据中心，会让原本高烧钱的航天业务承受更大财务压力。",
+        "rating": "A",
+        "score": 80,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "该观点可与SpaceX IPO、xAI现金消耗、星链现金流和太空数据中心可行性串联，形成对马斯克资本叙事的风险分析。",
+        "entities": [
+          "Elon Musk",
+          "Ipo",
+          "SpaceX",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/space/possible-spacex-collapse-spectacularly"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780700122,
+        "published_at": "2026-06-06T06:55:22.015431",
+        "source": "Futurism",
+        "url": "https://futurism.com/space/possible-spacex-collapse-spectacularly",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
         "id": "baeab6247d1957dceee5b74e3de90342",
         "title": "Starlink活跃用户突破1200万",
         "chinese_title": "Starlink活跃用户突破1200万",
@@ -9949,648 +9981,6 @@
         "extension": "科技旅游可能成为产业城市展示技术实力的新窗口，也会影响自动驾驶和机器人公司的公众认知。"
       }
     ],
-    "2026-05-30": [
-      {
-        "id": "0b17348ac1ef44a21f91d29e32e20796",
-        "title": "LLM推理退化有了33类寄生模式",
-        "chinese_title": "LLM推理退化有了33类寄生模式",
-        "original_title": "https://zenodo.org/records/20387969",
-        "summary": "一篇Zenodo论文提出大模型输出中的33类启发式寄生模式，试图把会跨轮传播、持续损害推理质量的表达偏差变成可识别、可测量的分类体系。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸到AI评测、安全红队和长对话质量控制，尤其适合观察模型在多轮协作中如何被错误模式逐步带偏。",
-        "entities": [
-          "Ai评测",
-          "LLM",
-          "Zenodo",
-          "启发式寄生"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1treet4/httpszenodoorgrecords20387969/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780089069,
-        "published_at": "2026-05-30T05:11:09.176927",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1treet4/httpszenodoorgrecords20387969/",
-        "event_id": null
-      },
-      {
-        "id": "1109520b844d1254f0fe6427818f27dd",
-        "title": "特斯拉FSD遭内部人员集体泼冷水",
-        "chinese_title": "特斯拉FSD遭内部人员集体泼冷水",
-        "original_title": "Tesla Insiders Admit Self-Driving Is a Complete Disaster",
-        "summary": "Reuters采访多名前特斯拉数据标注员和自动驾驶工程师，称不少内部人员并不信任FSD表现，进一步削弱马斯克对自动驾驶能力的乐观叙事。",
-        "rating": "A",
-        "score": 86,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可继续观察Robotaxi发布、监管调查、用户诉讼和资本市场预期之间的连锁反应，尤其是内部证词对自动驾驶安全叙事的影响。",
-        "entities": [
-          "Elon Musk",
-          "Full Self-Driving",
-          "Reuters",
-          "Tesla"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/advanced-transport/tesla-insiders-self-driving-disaster"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780089069,
-        "published_at": "2026-05-30T05:11:09.177344",
-        "source": "Futurism",
-        "url": "https://futurism.com/advanced-transport/tesla-insiders-self-driving-disaster",
-        "event_id": null
-      },
-      {
-        "id": "c3707c4135d803c1bff3a47aea2e313e",
-        "title": "Tiny-vLLM用C++和CUDA重写推理引擎",
-        "chinese_title": "Tiny-vLLM用C++和CUDA重写推理引擎",
-        "original_title": "Show HN: Tiny-vLLM – high performance LLM inference engine in C++ and CUDA",
-        "summary": "Hacker News出现新开源项目Tiny-vLLM，主打用C++和CUDA实现高性能大模型推理，面向希望理解或定制推理栈的开发者。",
-        "rating": "B",
-        "score": 69,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸到轻量推理引擎、vLLM生态复刻和本地部署优化，关注其吞吐、显存管理和与成熟框架的差距。",
-        "entities": [
-          "C++",
-          "CUDA",
-          "Tiny-Vllm",
-          "Vllm"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/jmaczan/tiny-vllm"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780089069,
-        "published_at": "2026-05-30T05:11:09.177440",
-        "source": "Hacker News",
-        "url": "https://github.com/jmaczan/tiny-vllm",
-        "event_id": null
-      },
-      {
-        "id": "d16fb3d7c8d785ca5e211cec21d09029",
-        "title": "英伟达微软预热Arm版AI PC新时代",
-        "chinese_title": "英伟达微软预热Arm版AI PC新时代",
-        "original_title": "Nvidia and Microsoft tease \"a new era of PC\" ahead of Computex 2026 &mdash; coordinated social media posts could indicate that rumored N1X laptops will be Windows on Arm systems",
-        "summary": "英伟达和微软在Computex 2026前同步预热\"PC新时代\"，外界猜测传闻中的N1X笔记本可能采用Windows on Arm路线并强化本地AI体验。",
-        "rating": "A+",
-        "score": 88,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可跟踪Windows on Arm、AI PC和英伟达CPU/GPU整合路线，对高通、英特尔、AMD的移动芯片竞争都会形成压力。",
-        "entities": [
-          "Ai Pc",
-          "Microsoft",
-          "N1X",
-          "NVIDIA",
-          "Windows On Arm"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/laptops/nvidia-and-microsoft-tease-a-new-era-of-pc-ahead-of-computex-2026-coordinated-social-media-posts-could-indicate-that-rumored-n1x-laptops-will-be-windows-on-arm-systems"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780089069,
-        "published_at": "2026-05-30T05:11:09.177539",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/laptops/nvidia-and-microsoft-tease-a-new-era-of-pc-ahead-of-computex-2026-coordinated-social-media-posts-could-indicate-that-rumored-n1x-laptops-will-be-windows-on-arm-systems",
-        "event_id": null
-      },
-      {
-        "id": "871cb3c87b27b473166874ec7d2a4bd5",
-        "title": "Gemini Spark上手暴露私人语境短板",
-        "chinese_title": "Gemini Spark上手暴露私人语境短板",
-        "original_title": "Hands-on with Gemini Spark beta rolling out to AI Ultra subs: planned a birthday party from emails and calendar, but called a live-in boyfriend a \"close friend\" (Reece Rogers/Wired)",
-        "summary": "Wired上手Google Gemini Spark测试版，发现它能读取邮件、文档和日历来策划生日派对，却误判用户亲密关系，显示个人Agent仍难理解真实语境。",
-        "rating": "A+",
-        "score": 88,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可延伸到个人AI助理的权限边界、隐私风险和长期记忆能力，评估Google在AI Ultra订阅中如何把Agent体验产品化。",
-        "entities": [
-          "Ai Ultra",
-          "Gemini",
-          "Gemini Spark",
-          "Google",
-          "个人Agent"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (Gemini)",
-            "url": "https://www.techmeme.com/260529/p28#a260529p28"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780089069,
-        "published_at": "2026-05-30T05:11:09.177637",
-        "source": "Techmeme (Gemini)",
-        "url": "https://www.techmeme.com/260529/p28#a260529p28",
-        "event_id": null
-      },
-      {
-        "id": "b359ffaf3cd489b96221cbae006c4072",
-        "title": "CVE-Bench用真实漏洞补丁测试LLM Agent",
-        "chinese_title": "CVE-Bench用真实漏洞补丁测试LLM Agent",
-        "original_title": "CVE-Bench: testing LLM agents on real-world vulnerability patches",
-        "summary": "CVE-Bench提出用真实世界漏洞补丁来评估LLM Agent，瞄准安全修复场景中模型能否定位、理解并正确修改代码的问题。",
-        "rating": "A",
-        "score": 76,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可关注安全Agent评测从合成题走向真实CVE任务，对自动漏洞修复、企业安全工具和代码Agent能力边界都有参考价值。",
-        "entities": [
-          "Cve-Bench",
-          "Llm Agent",
-          "安全评测",
-          "漏洞修复"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://giovannigatti.github.io/cve-bench/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780089069,
-        "published_at": "2026-05-30T05:11:09.177733",
-        "source": "Hacker News",
-        "url": "https://giovannigatti.github.io/cve-bench/",
-        "event_id": null
-      },
-      {
-        "id": "d6fd63f7f58dc5cd077818ba513ad5de",
-        "title": "MIT MeMo让企业换模型不必重训",
-        "chinese_title": "MIT MeMo让企业换模型不必重训",
-        "original_title": "MIT's MeMo lets teams swap in a better LLM without retraining &mdash; and performance jumps 26%",
-        "summary": "MIT等研究者提出MeMo框架，用独立小型记忆模型承载新知识，使团队可替换主LLM而不重训，报道称性能提升达到26%。",
-        "rating": "A+",
-        "score": 88,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸到企业知识更新、RAG替代方案和闭源模型迁移成本，观察模块化记忆是否会成为企业AI架构新层。",
-        "entities": [
-          "LLM",
-          "Memo",
-          "Mit",
-          "Rag",
-          "记忆模型"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat (qwen)",
-            "url": "https://venturebeat.com/orchestration/mits-memo-lets-teams-swap-in-a-better-llm-without-retraining-and-performance-jumps-26"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780089069,
-        "published_at": "2026-05-30T05:11:09.177828",
-        "source": "VentureBeat (qwen)",
-        "url": "https://venturebeat.com/orchestration/mits-memo-lets-teams-swap-in-a-better-llm-without-retraining-and-performance-jumps-26",
-        "event_id": null
-      },
-      {
-        "id": "8e42486feb7b7d8b35f07c1c383ac91f",
-        "title": "SpaceX获42亿美元太空追踪网络合同",
-        "chinese_title": "SpaceX获42亿美元太空追踪网络合同",
-        "original_title": "US Space Force says SpaceX won a $4.16B contract to build a space-based tracking network as part of President Trump's Golden Dome defensive shield (Sana Pashankar/Bloomberg)",
-        "summary": "美国太空军称SpaceX获得约41.6亿美元合同，将为特朗普\"金穹\"防御系统建设天基追踪网络，用于监测外国飞机和导弹。",
-        "rating": "A+",
-        "score": 87,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可跟踪SpaceX在国防航天中的角色扩大，以及卫星制造、导弹预警和美国军工预算对商业航天格局的影响。",
-        "entities": [
-          "Golden Dome",
-          "SpaceX",
-          "卫星网络",
-          "国防航天",
-          "美国太空军"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260529/p27#a260529p27"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780089069,
-        "published_at": "2026-05-30T05:11:09.177923",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260529/p27#a260529p27",
-        "event_id": null
-      },
-      {
-        "id": "1584ec8ddd2901436af7b121ba60b18f",
-        "title": "Codex新增Windows电脑控制和手机访问",
-        "chinese_title": "Codex新增Windows电脑控制和手机访问",
-        "original_title": "Windows Computer Use and mobile access for Codex",
-        "summary": "OpenAI介绍Codex在Windows上的Computer Use能力，并支持通过手机连接Windows设备，在离开桌面时继续监控或启动任务。",
-        "rating": "A",
-        "score": 86,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可观察Codex从代码助手走向跨桌面应用执行的趋势，以及移动端监控如何改变开发者把任务交给Agent的工作流。",
-        "entities": [
-          "Codex",
-          "Computer Use",
-          "GPT",
-          "OpenAI",
-          "Windows"
-        ],
-        "sourceLinks": [
-          {
-            "name": "OpenAI",
-            "url": "https://www.youtube.com/watch?v=MPIAB-8VmCo"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780089069,
-        "published_at": "2026-05-30T05:11:09.178127",
-        "source": "OpenAI",
-        "url": "https://www.youtube.com/watch?v=MPIAB-8VmCo",
-        "event_id": null
-      },
-      {
-        "id": "c3c3012f602432c591d9563962514f72",
-        "title": "Gemini Spark读懂日程却读不懂关系",
-        "chinese_title": "Gemini Spark读懂日程却读不懂关系",
-        "original_title": "Hands-On With Gemini Spark: I Gave It Access to My Life and It Friend-Zoned My Boyfriend",
-        "summary": "Wired测试Google Gemini Spark后认为，这个个人AI Agent能调用邮件、文档和日历完成派对规划，但对用户真实亲密关系的判断仍显笨拙。",
-        "rating": "A+",
-        "score": 87,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可与Techmeme同源报道合并观察，重点放在个人Agent的上下文理解、隐私授权和Google订阅产品差异化。",
-        "entities": [
-          "Gemini",
-          "Gemini Spark",
-          "Google",
-          "Wired",
-          "个人Agent"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Feed: Artificial Intelligence Latest (Gemini)",
-            "url": "https://www.wired.com/story/google-gemini-spark-ai-agent-hands-on/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780089069,
-        "published_at": "2026-05-30T05:11:09.178223",
-        "source": "Feed: Artificial Intelligence Latest (Gemini)",
-        "url": "https://www.wired.com/story/google-gemini-spark-ai-agent-hands-on/",
-        "event_id": null
-      },
-      {
-        "id": "0698d151bc0efda40348f2fcd04e9fa1",
-        "title": "Claude Code动态工作流减少封装层",
-        "chinese_title": "Claude Code动态工作流减少封装层",
-        "original_title": "Claude Code Dynamic Workflow creates a harness on the fly - just killed a lot of wrappers",
-        "summary": "社区讨论称Claude Code的动态工作流可按需生成执行框架，减少外部wrapper依赖，反映Agent开发工具正在从固定脚手架转向即时编排。",
-        "rating": "A",
-        "score": 79,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸到AI编程工具的架构变化：当模型能动态生成harness，传统插件、模板和wrapper生态可能被重新分工。",
-        "entities": [
-          "Agent",
-          "Anthropic",
-          "Claude Code",
-          "动态工作流"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1tqxkab/claude_code_dynamic_workflow_creates_a_harness_on/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780089069,
-        "published_at": "2026-05-30T05:11:09.177143",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1tqxkab/claude_code_dynamic_workflow_creates_a_harness_on/",
-        "event_id": null
-      },
-      {
-        "id": "8287055f74ab3a694936672327582d9b",
-        "title": "Thermo Fisher抗体目录被曝百余张可疑图",
-        "chinese_title": "Thermo Fisher抗体目录被曝百余张可疑图",
-        "original_title": "Science sleuths uncover more than 100 suspicious images in Thermo Fisher antibody catalogue",
-        "summary": "Nature报道科研打假人士在Thermo Fisher抗体产品目录中发现超过100张可疑图片，引发对生命科学试剂质量和图像审核流程的关注。",
-        "rating": "A",
-        "score": 78,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可追踪科研供应链的可信度问题，以及AI图像检测、论文审查和商业试剂目录审核是否会成为新的合规需求。",
-        "entities": [
-          "Nature",
-          "Thermo Fisher",
-          "抗体",
-          "科研诚信"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01706-2"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780089069,
-        "published_at": "2026-05-30T05:11:09.177246",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01706-2",
-        "event_id": null
-      },
-      {
-        "id": "550dac60c1644f9269161a2267e19ebd",
-        "title": "多模型共识预测被质疑校准基础",
-        "chinese_title": "多模型共识预测被质疑校准基础",
-        "original_title": "What's the theoretical basis for using llm consensus as a probability estimator for real world events [R]",
-        "summary": "机器学习社区讨论用多个大模型共识估计现实事件概率的理论依据，核心争议在于模型训练数据和架构高度相似时，错误是否真的足够独立。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这一讨论可延伸到预测市场、AI风控和企业决策系统：如果模型共识只是共享偏差的放大器，相关产品需要重新证明校准能力。",
-        "entities": [
-          "LLM",
-          "概率校准",
-          "模型集成",
-          "预测市场"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tr3xpa/whats_the_theoretical_basis_for_using_llm/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780070852,
-        "published_at": "2026-05-30T00:07:32.392543",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tr3xpa/whats_the_theoretical_basis_for_using_llm/",
-        "event_id": null
-      },
-      {
-        "id": "1ef19c6dee7b9b4fd045f216a687c4e4",
-        "title": "研究者尝试把Hopfield记忆接入VLA",
-        "chinese_title": "研究者尝试把Hopfield记忆接入VLA",
-        "original_title": "Hopfield Memory in VLA [R]",
-        "summary": "一名VLA实习研究者计划在SmolVLA骨架上替换或增强现有记忆模块，测试现代Hopfield网络相对Transformer式HAMLET模块的可行性。",
-        "rating": "B",
-        "score": 70,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "如果实验成立，VLA模型的长期记忆和任务状态建模可能出现低成本替代路线，也会影响机器人端侧模型结构选择。",
-        "entities": [
-          "Hamlet",
-          "Hopfield网络",
-          "Smolvla",
-          "Vla"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tqwxqe/hopfield_memory_in_vla_r/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780070852,
-        "published_at": "2026-05-30T00:07:32.392850",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tqwxqe/hopfield_memory_in_vla_r/",
-        "event_id": null
-      },
-      {
-        "id": "e5e86122b3bfda99d45f021117d64217",
-        "title": "AMD MI300X单核推理冲到每秒3300 token",
-        "chinese_title": "AMD MI300X单核推理冲到每秒3300 token",
-        "original_title": "Building a monokernel for LLM inference on AMD MI300X - up to 3,300 output tokens/s per request [P]",
-        "summary": "Kog团队展示面向AMD MI300X的LLM推理monokernel方案，将解码序列作为GPU驻留程序运行，在8卡MI300X上实现单请求最高3300输出token每秒。",
-        "rating": "A+",
-        "score": 89,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "该路线把性能竞争从模型服务框架推进到硬件拓扑和内核级优化，可能增强AMD在低延迟推理市场对NVIDIA生态的替代叙事。",
-        "entities": [
-          "Amd",
-          "Kog",
-          "Llm推理",
-          "Mi300X",
-          "Monokernel"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tqvuz9/building_a_monokernel_for_llm_inference_on_amd/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780070852,
-        "published_at": "2026-05-30T00:07:32.392983",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tqvuz9/building_a_monokernel_for_llm_inference_on_amd/",
-        "event_id": null
-      },
-      {
-        "id": "f18b622b9a7001a912513362b69452a5",
-        "title": "丹麦养老基金拉黑SpaceX投资",
-        "chinese_title": "丹麦养老基金拉黑SpaceX投资",
-        "original_title": "Danish Pension Blacklists SpaceX over 'Catastrophic Governance'",
-        "summary": "丹麦AkademikerPension将SpaceX列入排除名单，理由包括公司治理问题和估值过高，显示机构投资者对明星航天公司的ESG审查正在升温。",
-        "rating": "A",
-        "score": 80,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "如果更多长期资金跟进，SpaceX融资、二级市场估值和马斯克系公司治理议题都可能受到连锁影响。",
-        "entities": [
-          "Akademikerpension",
-          "Elon Musk",
-          "SpaceX",
-          "公司治理"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.bloomberg.com/news/articles/2026-05-29/danish-pension-fund-blacklists-spacex-citing-governance-issues"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780070852,
-        "published_at": "2026-05-30T00:07:32.393160",
-        "source": "Hacker News",
-        "url": "https://www.bloomberg.com/news/articles/2026-05-29/danish-pension-fund-blacklists-spacex-citing-governance-issues",
-        "event_id": null
-      },
-      {
-        "id": "2f358dc4a504978912f0eb9df7c976e7",
-        "title": "OpenAI推出Rosalind生物防御计划",
-        "chinese_title": "OpenAI推出Rosalind生物防御计划",
-        "original_title": "OpenAI Announces Rosalind Biodefense",
-        "summary": "OpenAI发布Rosalind Biodefense，向可信开发者和美方及盟友公共卫生伙伴开放GPT-Rosalind，用于早期预警、筛查、建模和公共卫生防御。",
-        "rating": "S",
-        "score": 97,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该计划把前沿模型能力从生命科学研究推向受控生物防御部署，后续值得追踪政府合作、访问门槛、双用途安全评估和竞品响应。",
-        "entities": [
-          "Gpt-Rosalind",
-          "Llnl",
-          "OpenAI",
-          "Rosalind Biodefense",
-          "生物安全"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780070852,
-        "published_at": "2026-05-30T00:07:32.393510",
-        "source": "Hacker News",
-        "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-        "event_id": null
-      },
-      {
-        "id": "45b0b0f7098c6faf2d5057bf95f978ea",
-        "title": "梵蒂冈把Anthropic拉进AI伦理中心",
-        "chinese_title": "梵蒂冈把Anthropic拉进AI伦理中心",
-        "original_title": "The Vatican’s Man Inside Anthropic",
-        "summary": "Wired关注教皇Leo XIV发布AI主题通谕时邀请Anthropic研究者参与，显示宗教机构正把AI伦理和模型可解释性纳入全球治理话语。",
-        "rating": "A",
-        "score": 82,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这可能影响欧美AI监管和公众伦理叙事，也让Anthropic在安全、可解释性和公共政策中的品牌位置进一步放大。",
-        "entities": [
-          "Ai伦理",
-          "Anthropic",
-          "Christopher Olah",
-          "Pope Leo Xiv",
-          "可解释性"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Feed: Artificial Intelligence Latest",
-            "url": "https://www.wired.com/story/the-vaticans-man-inside-anthropic/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780070852,
-        "published_at": "2026-05-30T00:07:32.393734",
-        "source": "Feed: Artificial Intelligence Latest",
-        "url": "https://www.wired.com/story/the-vaticans-man-inside-anthropic/",
-        "event_id": null
-      },
-      {
-        "id": "a7e6ea5a3a7162d90edac6cfe41255bc",
-        "title": "儿童离开iPad后情绪失控引发担忧",
-        "chinese_title": "儿童离开iPad后情绪失控引发担忧",
-        "original_title": "Kids Are Flying Into Lunatic Rages When Their iPads Are Taken Away",
-        "summary": "Futurism报道多名家长称孩子被限制iPad使用后出现激烈情绪反应，折射儿童屏幕依赖、平台设计和家庭数字健康的争议。",
-        "rating": "B",
-        "score": 68,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可延伸到未成年人数字健康、应用成瘾设计、家长控制产品和监管是否要求平台承担更多责任。",
-        "entities": [
-          "Apple",
-          "Ipad",
-          "儿童屏幕时间",
-          "数字健康"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/health-medicine/kids-rages-ipads-taken-away"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780070852,
-        "published_at": "2026-05-30T00:07:32.393839",
-        "source": "Futurism",
-        "url": "https://futurism.com/health-medicine/kids-rages-ipads-taken-away",
-        "event_id": null
-      },
-      {
-        "id": "f43e46504bf303b2c4a376c66452edea",
-        "title": "企业AI Agent进入可靠性重构期",
-        "chinese_title": "企业AI Agent进入可靠性重构期",
-        "original_title": "AI agents are entering their rebuild era as enterprises confront the reliability problem",
-        "summary": "VentureBeat指出企业AI Agent从演示走向生产后，长期工作流的崩溃恢复、状态保持、成本控制和治理问题正在迫使团队重构早期架构。",
-        "rating": "S",
-        "score": 97,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这会利好Temporal等工作流编排、可观测性和Agent治理基础设施，也会推动企业从模型能力评估转向系统可靠性评估。",
-        "entities": [
-          "Ai Agent",
-          "Temporal",
-          "企业Ai",
-          "可靠性",
-          "工作流编排"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/orchestration/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780070852,
-        "published_at": "2026-05-30T00:07:32.394024",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/orchestration/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem",
-        "event_id": null
-      },
-      {
-        "id": "68b5587b3fbf5438b04b19708ff0d1fb",
-        "title": "BBC用AI历史人物上节目引争议",
-        "chinese_title": "BBC用AI历史人物上节目引争议",
-        "original_title": "A BBC Question Time episode featured a panel with AI-generated historical figures like Churchill, intended to show AI images' \"hyper-real and persuasive\" nature (Holly Bishop/The Independent)",
-        "summary": "BBC Question Time特别节目使用丘吉尔等AI生成历史人物组成嘉宾面板，意在展示AI影像的逼真和说服力，却迅速引发媒体和观众争议。",
-        "rating": "A",
-        "score": 76,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "事件可延伸到深度伪造标识、公共媒体AI使用边界和影视节目是否应为AI生成内容建立更清晰披露标准。",
-        "entities": [
-          "Ai生成影像",
-          "Bbc",
-          "Question Time",
-          "深度伪造"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260529/p20#a260529p20"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780070852,
-        "published_at": "2026-05-30T00:07:32.394110",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260529/p20#a260529p20",
-        "event_id": null
-      }
-    ],
     "2026-06-02": [
       {
         "id": "f8d9f22c5ff7463b77b7d7180ba8d357",
@@ -11945,8 +11335,298 @@
         "grade": "S",
         "extension": "微信入口若引入AI智能体，可能改变国内用户使用AI助手的路径，并倒逼阿里、字节等竞品在超级应用和智能体生态上加速布局。"
       }
+    ],
+    "2026-06-06": [
+      {
+        "id": "90db386c458c6a8247a376d51ed1ca8e",
+        "title": "xAI被曝借Claude训练追赶Anthropic",
+        "chinese_title": "xAI被曝借Claude训练追赶Anthropic",
+        "original_title": "Sources say xAI used Claude models for distillation and training, including using personal accounts and the intermediary service Blackbox AI after being cut off (Grace Kay/The Information)",
+        "summary": "The Information称xAI曾通过个人账号和Blackbox AI等渠道使用Claude模型进行蒸馏和训练，以弥补其在代码能力上落后Anthropic的压力。",
+        "rating": "S",
+        "score": 88,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "若消息属实，可能引发Anthropic、xAI之间围绕模型蒸馏和服务条款的争议，也会放大AI公司互相借力训练的行业灰区。",
+        "entities": [
+          "Anthropic",
+          "Blackbox Ai",
+          "Claude",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260605/p22#a260605p22"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780700122,
+        "published_at": "2026-06-06T06:55:22.014487",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260605/p22#a260605p22",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "7174d5422037826a04990883bac35f68",
+        "title": "NSA被曝用Claude Mythos做网络行动",
+        "chinese_title": "NSA被曝用Claude Mythos做网络行动",
+        "original_title": "NSA using Claude Mythos for 'offensive cyber operations,' report claims &mdash; says 'half-a-dozen' Anthropic engineers embedded inside the agency",
+        "summary": "报道称美国国家安全局正在使用Anthropic相关的Mythos模型执行进攻性网络行动，并有多名Anthropic工程师嵌入机构内部。",
+        "rating": "A",
+        "score": 82,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该消息会把前沿模型的政府与军事用途推到监管焦点，也可能影响Anthropic一贯强调的AI安全与可信品牌叙事。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Mythos",
+          "Nsa"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nsa-using-clause-mythos-for-offensive-cyber-operations-report-claims-says-half-a-dozen-anthropic-engineers-embedded-inside-the-agency"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780700122,
+        "published_at": "2026-06-06T06:55:22.014612",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nsa-using-clause-mythos-for-offensive-cyber-operations-report-claims-says-half-a-dozen-anthropic-engineers-embedded-inside-the-agency",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "af052afcfd7e760287c355f372e2a8f0",
+        "title": "Meta AI客服被指可直接改恢复邮箱",
+        "chinese_title": "Meta AI客服被指可直接改恢复邮箱",
+        "original_title": "Meta's AI support agent bound recovery emails for anyone who asked. Your SOC never saw an alert.",
+        "summary": "VentureBeat援引404 Media称，Meta的AI支持代理曾按请求绑定账号恢复邮箱，攻击者借此完成密码重置，而传统SOC告警没有发现异常。",
+        "rating": "A",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这类案例显示AI代理风险不只来自提示词注入，也来自被授权流程本身，后续可延展到企业AI客服权限、审计日志和账号恢复机制。",
+        "entities": [
+          "404 Media",
+          "Ai代理",
+          "Meta",
+          "Soc"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/security/meta-ai-support-agent-recovery-email-takeover-soc-audit-grid"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780700122,
+        "published_at": "2026-06-06T06:55:22.014724",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/security/meta-ai-support-agent-recovery-email-takeover-soc-audit-grid",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "b213f0beeeef4f32eeb35fdc3aaef62d",
+        "title": "AI笔记本愿景被追问用户是否买账",
+        "chinese_title": "AI笔记本愿景被追问用户是否买账",
+        "original_title": "This is your laptop&hellip; on AI",
+        "summary": "The Vergecast围绕开发者大会季讨论AI如何改变笔记本使用方式，重点关注Nvidia、微软和谷歌的产品叙事是否真的对应用户需求。",
+        "rating": "B",
+        "score": 68,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可作为AI PC产品周期的观察切口，延伸到Nvidia、微软、谷歌等公司对本地算力、操作系统入口和开发者生态的争夺。",
+        "entities": [
+          "Ai Pc",
+          "Gemini",
+          "Jensen Huang",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/podcast/944058/ai-laptop-nvidia-build-gemini-spark-vergecast"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780700122,
+        "published_at": "2026-06-06T06:55:22.014818",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/podcast/944058/ai-laptop-nvidia-build-gemini-spark-vergecast",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "e4bcf43a37cd67404aae71d72a01016c",
+        "title": "SpaceX CFO成xAI合并IPO关键人物",
+        "chinese_title": "SpaceX CFO成xAI合并IPO关键人物",
+        "original_title": "SpaceX’s CFO Is the Quiet VIP of a Wild IPO",
+        "summary": "The Information称SpaceX CFO Bret Johnsen正推动xAI并入SpaceX并筹备超大规模IPO，其稳健风格被视为平衡马斯克愿景和投资者预期的关键。",
+        "rating": "S",
+        "score": 92,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "这条线索可继续追踪SpaceX与xAI合并后的财务结构、上市估值、现金消耗，以及投资者对太空数据中心叙事的接受度。",
+        "entities": [
+          "Bret Johnsen",
+          "Elon Musk",
+          "SpaceX",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/spacexs-cfo-quiet-vip-wild-ipo"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780700122,
+        "published_at": "2026-06-06T06:55:22.014928",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/spacexs-cfo-quiet-vip-wild-ipo",
+        "event_id": null,
+        "grade": "S",
+        "level": "S"
+      },
+      {
+        "id": "a3d574fc7b5296c23b525631050392d2",
+        "title": "Supabase八个月估值翻倍至百亿美元",
+        "chinese_title": "Supabase八个月估值翻倍至百亿美元",
+        "original_title": "Supabase doubles valuation to $10B in 8 months",
+        "summary": "TechCrunch报道称开源数据库平台Supabase估值在8个月内翻倍至100亿美元，AI编程工具和vibe coding浪潮成为增长推手。",
+        "rating": "A+",
+        "score": 86,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "Supabase的估值变化可延伸到AI编程带动开发者基础设施重估，以及开源项目商业化在数据库、后端即服务市场的竞争格局。",
+        "entities": [
+          "Claude",
+          "Codex",
+          "Supabase",
+          "Vibe Coding"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/06/05/supabase-doubles-valuation-to-10b-in-8-months/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780700122,
+        "published_at": "2026-06-06T06:55:22.015039",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/05/supabase-doubles-valuation-to-10b-in-8-months/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "22b48f521c8873004c20c5336ef72d8a",
+        "title": "美国机场手机搜查再引隐私争议",
+        "chinese_title": "美国机场手机搜查再引隐私争议",
+        "original_title": "What happens when your phone is confiscated at the airport",
+        "summary": "The Verge报道美国海关在机场扣押并搜查旅客手机的案例，即便对象是美国公民也可能面临设备被长期没收和隐私边界不清的问题。",
+        "rating": "B",
+        "score": 70,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "该事件可延伸到边境执法中的数字隐私、设备取证和公民权利，也能与加密设备、云端数据保护等科技议题结合。",
+        "entities": [
+          "Cbp",
+          "The Verge",
+          "手机隐私",
+          "机场安检"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/report/944076/cbp-airport-phone-searches-seizure-minneapolis-activists"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780700122,
+        "published_at": "2026-06-06T06:55:22.015145",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/report/944076/cbp-airport-phone-searches-seizure-minneapolis-activists",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "94773da216021e4f2302ef636b1bece2",
+        "title": "可信AI被企业视为规模化前提",
+        "chinese_title": "可信AI被企业视为规模化前提",
+        "original_title": "Trustworthy AI as a value lever",
+        "summary": "The Information文章称企业部署AI必须以信任为速度边界，调查显示多数高管认同可信AI重要，但真正具备支撑能力的公司仍不到一半。",
+        "rating": "B",
+        "score": 60,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "适合延伸到企业AI治理工具、合规预算和透明度要求，尤其是大型企业从试点走向规模化部署时的组织瓶颈。",
+        "entities": [
+          "Ai治理",
+          "The Information",
+          "企业Ai",
+          "可信Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/trustworthy-ai-value-lever"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780700122,
+        "published_at": "2026-06-06T06:55:22.015242",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/trustworthy-ai-value-lever",
+        "event_id": null,
+        "grade": "C",
+        "level": "C"
+      },
+      {
+        "id": "5aeef889af941ac79bff1ebe49c80a20",
+        "title": "特斯拉Roadster公开演示推迟至8月",
+        "chinese_title": "特斯拉Roadster公开演示推迟至8月",
+        "original_title": "Exclusive: Tesla Pushes Roadster Demo to August",
+        "summary": "The Information称特斯拉将新一代Roadster的公开演示推迟到8月或更晚，这款长期跳票车型再次延后亮相。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "Roadster延期会影响特斯拉新车节奏和品牌叙事，也可与Cybercab之后特斯拉产品发布真空、马斯克承诺兑现能力相连。",
+        "entities": [
+          "Cybercab",
+          "Elon Musk",
+          "Roadster",
+          "Tesla"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/exclusive-tesla-pushes-roadster-demo-august"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780700122,
+        "published_at": "2026-06-06T06:55:22.015336",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/exclusive-tesla-pushes-roadster-demo-august",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      }
     ]
   },
-  "last_updated": "2026-06-05T18:15:50.953445",
-  "total_news": 377
+  "last_updated": "2026-06-06T06:55:54.689668",
+  "total_news": 366
 }
