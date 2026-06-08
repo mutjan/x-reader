@@ -660,6 +660,25 @@
           "reason": "该新闻聚焦苹果WWDC软件与AI叙事，不应归入同时包含SpaceX上市传闻的混合事件。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-06-09T06:36:11.744532",
+      "batch_id": "3a40577f-replay2",
+      "corrections_applied": 2,
+      "details": [
+        {
+          "news_id": "dc453d35ab51766992f91f982cab88eb",
+          "from_event_id": "11fee317",
+          "to_event_id": "new_event",
+          "reason": "该条聚焦HomeKit安全视频摘要和家庭通知，不是Core AI开发框架本身，应拆成独立智能家居功能事件。"
+        },
+        {
+          "news_id": "785f7a81dfa10927bbf84850b96c1571",
+          "from_event_id": "3f5d09cb",
+          "to_event_id": "39ca37a9",
+          "reason": "该条是苹果Siri AI和Gemini接入背后的AI架构信息，与本次Siri AI重启主事件相同，应合并避免重复。"
+        }
+      ]
     }
   ]
 }
