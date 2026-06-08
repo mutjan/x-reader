@@ -3,10 +3,10 @@
     "2026-06-09": [
       {
         "id": "3a0f7e96ea911b1838b776567bd3e18a",
-        "title": "机器学习社区反思针对华人研究者偏见",
-        "chinese_title": "机器学习社区反思针对华人研究者偏见",
+        "title": "机器学习社区反思针对中国研究者的歧视帖",
+        "chinese_title": "机器学习社区反思针对中国研究者的歧视帖",
         "original_title": "STOP racist posts about Chinese researchers [D]",
-        "summary": "Reddit机器学习社区有用户批评针对华人研究者的阴谋论式指控，呼吁学术讨论回到证据和研究质量本身。",
+        "summary": "一名华人研究者在机器学习社区发帖，呼吁停止针对中国研究者的无根据指控，指出相关讨论正在滑向阴谋论和群体歧视。",
         "rating": "B",
         "score": 68,
         "type": "society",
@@ -14,9 +14,9 @@
         "expansion": "事件可延伸到AI学术共同体中的国籍偏见、审稿信任和科研开放性，也能观察平台治理如何处理歧视性讨论。",
         "entities": [
           "Machine Learning",
-          "Reddit",
-          "华人研究者",
-          "学术社区"
+          "中国研究者",
+          "学术社区",
+          "种族歧视"
         ],
         "sourceLinks": [
           {
@@ -29,24 +29,27 @@
         "published_at": "2026-06-09T06:32:19.458086",
         "source": "Machine Learning",
         "url": "https://www.reddit.com/r/MachineLearning/comments/1u0fv7u/stop_racist_posts_about_chinese_researchers_d/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Edit: the original post targeting Chinese researchers is removed by the mods. Sorry for any confusion. Yes, I'm calling it out. It IS racism. As an active member of r/MachineLearning and a researcher who is ethnic Chinese, I am DISGUSTED by unfounded accusations against the group of researchers who constitute over half of the field. Such posts pop up every other week, grounded in conspiracy theories, and creating a sinophobia echo chamber. I understand the salty feeling when one's paper is rejected, no matter whether the paper actually deserves acceptance or not. Given the noise in conference organization and reviewing process, and a relatively junior body of participants, it is very likely that one finds a paper \"worse than mine\" slip into the conference, and there's a high chance that the paper has a Chinese author. That's simply because of the composition of the authors, and does not warrant accusations, aka witch hunts, towards certain ethnic groups. This sub is about an important scientific subject in the modern world. If anyone agrees with the logic \"80% of the authors are Chinese, so my rejection is their fault.\", they should seriously rethink their career plan since such thinking does not belong to serious scientists. We should be open to discussing the problems we have in the current conference organization and reviewing process, but racism should not have a foothold in our field. submitted by /u/AffectionateLife5693 [link] [comments]",
+        "grade": "B",
+        "extension": "这可延伸到 AI 学术共同体的国际合作、审稿争议和平台治理，尤其是如何区分科研质量讨论与身份攻击。"
       },
       {
         "id": "169ec97353b1636b1213a9476cd849c4",
-        "title": "苹果Core AI框架面向开发者开放",
-        "chinese_title": "苹果Core AI框架面向开发者开放",
+        "title": "苹果Core AI框架亮相，端侧智能开发入口更新",
+        "chinese_title": "苹果Core AI框架亮相，端侧智能开发入口更新",
         "original_title": "Apple Core AI Framework",
-        "summary": "苹果开发者文档显示Core AI框架成为其新AI能力的一部分，开发者可围绕系统级智能能力构建应用功能。",
+        "summary": "苹果开发者文档出现 Core AI 框架入口，显示其正在为应用开发者提供更系统的端侧 AI 能力和平台级接口。",
         "rating": "A",
-        "score": 82,
-        "type": "product",
+        "score": 79,
+        "type": "tool",
         "typeName": "产品发布",
         "expansion": "Core AI若成为系统级入口，将影响iOS应用接入模型能力的方式，也可能重塑苹果与第三方AI SDK的竞争关系。",
         "entities": [
           "Apple",
-          "Apple Intelligence",
           "Core Ai",
-          "开发者框架"
+          "开发者框架",
+          "端侧Ai"
         ],
         "sourceLinks": [
           {
@@ -59,7 +62,10 @@
         "published_at": "2026-06-09T06:32:19.458817",
         "source": "Hacker News (apple)",
         "url": "https://developer.apple.com/documentation/coreai/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "A",
+        "extension": "Core AI 若成为统一开发入口，将影响苹果生态应用的端侧模型调用方式，也可能带来新的隐私和性能标准。"
       },
       {
         "id": "3f995ce8bde172c30a677b6e1468d815",
@@ -333,6 +339,165 @@
         "event_id": null
       },
       {
+        "id": "3b74fa5e2891bca438b2fd110fdf863e",
+        "title": "工具选择从向量检索退回BM25，智能体实践踩坑",
+        "chinese_title": "工具选择从向量检索退回BM25，智能体实践踩坑",
+        "original_title": "Why I stopped using semantic embeddings for tool selection and switched back to BM25 [D]",
+        "summary": "一名开发者分享在 140 个 MCP 工具场景中使用语义嵌入做工具选择的失败经验，认为短工具描述更依赖关键词，BM25 反而更稳。",
+        "rating": "A+",
+        "score": 78,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该经验可延伸到智能体工具路由的可靠性评估，尤其是语义相似度、关键词匹配和权限控制在生产环境中的权衡。",
+        "entities": [
+          "Bm25",
+          "MCP",
+          "智能体",
+          "语义嵌入"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1u07tlm/why_i_stopped_using_semantic_embeddings_for_tool/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780957939,
+        "published_at": "2026-06-09T06:32:19.458275",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1u07tlm/why_i_stopped_using_semantic_embeddings_for_tool/",
+        "event_id": null,
+        "original_content": "I've been building agents for about a year and recently shipped one for a client running ~140 MCP-exposed tools at peak. Along the way I made the canonical mistake. I used cosine similarity over tool description embeddings to pick which tools the model could see per turn. Worked great in demos. Was actively dangerous in production. Here's the problem. In a basic semantic-ranking setup you embed the user query, embed every tool description once, and rank by cosine similarity at runtime. That works for general document retrieval where chunks are paragraph-length, semantically rich, and roughly equal in form. Tool descriptions are not that. They are short (often &lt;50 tokens), structurally similar (verb-noun, parameters list), and the discriminative information is often a single keyword. \"Read a file from disk\" and \"Read messages from a channel\" both embed close to \"read\" + \"file/channel.\" Cosine similarity puts them next to each other for a query like \"read the latest commits\" because all three words share the verb embedding space, and the actual discriminator (the noun \"commits\") gets diluted. I watched this happen in eval. Asked the agent \"list the open issues for this repo.\" The semantic ranker returned slack_search_messages first because the description had \"list\", \"open\", and \"issues\" as close embedding neighbors. The actual github_list_issues tool ranked 4th because the GitHub MCP author wrote a terse \"Lists issues in a repository\" description that scored lower on every soft keyword. If the model sees slack_search_messages first and github_list_issues fourth, it's going to pick the wrong one. Often. So I built three retrieval strategies and tested them on a fixed corpus of 200 query→correct-tool pairs. Semantic embeddings (text-embedding-3-small) : 64% top-1 accuracy. Sneaky failure mode: when wrong, it was confidently wrong, often with a totally unrelated tool ranked first. BM25 over a flat-text projection of tool name + description + schema walk : 81% top-1. Failures were almost always lexical (the tool used \"fetch\" while the user said \"get\"), recoverable with light query rewriting. Hybrid (0.7 semantic + 0.3 BM25 normalized) : 78%. Worse than BM25 alone. The semantic noise dragged BM25's clean signal down. I sat with that result for a while. The \"obvious\" answer is hybrid; every RAG paper since 2023 says hybrid wins. For tool selection specifically, hybrid lost. The reason is that tools live in a smaller, more structured space than documents do. The discriminative signal is keyword-shaped. BM25 is built for exactly that. The other thing I learned: indexing schema fields matters. The clean BM25 win came from projecting name + description + a walk over input_schema and output_schema (semantic tokens only, JSON Schema structure stripped). Property names like repo_id or branch are exactly the discriminators that turn \"list the open issues\" into a hit on GitHub instead of Slack. If you only index name + description you leave half your signal on the floor. I ended up adopting Ratel's indexing approach (their ADR-0004 documents the exact projection) because rebuilding it myself was redundant. Open source, in-process Rust, NAPI-RS bound to a TS SDK, no infra. The semantic + re-ranking story is on their roadmap, but for now the BM25-only default is what I want anyway. Happy to share it in the comments if anyone wants to try. The takeaway for anyone building tool selection or agent gateways: do not assume document-RAG defaults transfer. Tools are a different shape of data. BM25 is not the boring fallback; for this problem it's the right primary and semantic is the optional add. Test your specific corpus before you reach for embeddings. submitted by /u/AbjectBug5885 [link] [comments]",
+        "grade": "A",
+        "extension": "这为智能体工具路由提供了工程反例，可延伸到混合检索、工具描述规范和生产环境评估方法。"
+      },
+      {
+        "id": "d2a332b3b998db8c6937ecad2f2e1ee2",
+        "title": "ArXiv背书机制遭质疑，AI低质论文治理升温",
+        "chinese_title": "ArXiv背书机制遭质疑，AI低质论文治理升温",
+        "original_title": "Should ArXiv backtrack endorsement? [D]",
+        "summary": "有研究者建议 ArXiv 在打击 AI 低质论文时追溯背书责任，对轻率背书者发出警告甚至采取后果，以维护学术入口质量。",
+        "rating": "B",
+        "score": 70,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可继续观察预印本平台如何平衡开放发表和质量控制，以及AI生成论文泛滥是否会推动更严格的身份与背书机制。",
+        "entities": [
+          "Ai低质论文",
+          "Arxiv",
+          "背书机制",
+          "预印本"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1u03yot/should_arxiv_backtrack_endorsement_d/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780957939,
+        "published_at": "2026-06-09T06:32:19.458366",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1u03yot/should_arxiv_backtrack_endorsement_d/",
+        "event_id": null,
+        "original_content": "ArXiv has an endorsement system for a reason. I would only offer endorsement to whom I have direct academic collaboration or mentorship with, since I'm putting my own academic reputation on the stake. This is also the standard of almost any serious academic researcher I am aware of. Now ArXiv is making effort to crack down AI slop and banning accounts uploading low-quality research papers, which is a great initiative. By definition of an \"endorsement\", I wish ArXiv could backtrack and at least issue warnings to their endorsers, and if this happens multiple times (let's say three), people giving out careless endorsement should also face consequences. submitted by /u/AffectionateLife5693 [link] [comments]",
+        "grade": "B",
+        "extension": "可继续追踪 AI 生成论文治理、预印本平台责任和学术声誉机制，尤其是自动化投稿带来的审核压力。"
+      },
+      {
+        "id": "21076d87d1e44035fa2584cf24354e58",
+        "title": "开源图像模型质量追近闭源，社区基准引发讨论",
+        "chinese_title": "开源图像模型质量追近闭源，社区基准引发讨论",
+        "original_title": "Open image generation models are closer to closed-source quality than this sub thinks [D]",
+        "summary": "一名评测者称最新开源图像生成模型在组合控制、短文本渲染和生成速度上已接近闭源 API，闭源领先幅度可能被高估。",
+        "rating": "B",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若评测结论成立，图像生成市场可能从闭源API优势转向开源部署和成本竞争，也会影响创意工具的本地化路线。",
+        "entities": [
+          "图像生成",
+          "基准测试",
+          "开源图像模型",
+          "闭源Api"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1u0119r/open_image_generation_models_are_closer_to/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780957939,
+        "published_at": "2026-06-09T06:32:19.458458",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1u0119r/open_image_generation_models_are_closer_to/",
+        "event_id": null,
+        "original_content": "I run evaluations on generative image models as part of my workflow, mostly comparing coherence, prompt adherence, and compositional accuracy across different architectures. The consensus here seems to be that open models are still a generation behind closed APIs. Based on my recent benchmarks, that gap is way smaller than people assume. On compositional control specifically, the latest open checkpoints handle multi-object scenes with spatial relationships about as reliably as the paid endpoints I've tested. Not perfect, but close enough that the failure modes are comparable. The thing that surprised me was text rendering in images, which used to be a disaster on open models. Recent architectures actually get it right roughly 70-80% of the time on short strings. Generation speed is another misconception. People complain about inference time but I'm getting 2MP outputs in under two minutes on a single consumer GPU. Drop resolution and step count and you're at 30 seconds. Fine for iteration. The structured prompting argument also falls flat. Everyone acts like having explicit scene control is a downside when it's literally what production pipelines need. Unstructured text prompts are the hack, not the other way around. These models ship without community optimizations, no fine-tuning, no custom pipelines. The baseline is already competitive. submitted by /u/ProfessionalAnt7436 [link] [comments]",
+        "grade": "A",
+        "extension": "如果更多独立评测支持这一判断，图像生成商业 API 的定价和开源模型部署生态都可能受到冲击。"
+      },
+      {
+        "id": "5ad0bd3a9c7c9ef7eef92e39a565077f",
+        "title": "苹果让用户用AI生成Safari扩展",
+        "chinese_title": "苹果让用户用AI生成Safari扩展",
+        "original_title": "Apple is using AI to fix Safari&rsquo;s extension problem",
+        "summary": "苹果在WWDC展示用自然语言生成Safari扩展的能力，试图降低扩展开发门槛，补齐Safari长期落后于Chrome等浏览器的生态短板。",
+        "rating": "A",
+        "score": 80,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "如果该能力可用性足够高，可能改变浏览器扩展的开发和分发方式，也会影响苹果对开发者生态与安全审核的平衡。",
+        "entities": [
+          "Ai",
+          "Apple",
+          "Safari",
+          "浏览器扩展"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/946345/apple-safari-ai-update-extensions"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780957904,
+        "published_at": "2026-06-09T06:31:44.113027",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/946345/apple-safari-ai-update-extensions",
+        "event_id": null
+      },
+      {
+        "id": "e28ce943720417c077896b568b16524b",
+        "title": "研究称俄罗斯卫星或能大范围干扰GPS",
+        "chinese_title": "研究称俄罗斯卫星或能大范围干扰GPS",
+        "original_title": "Tests suggest Russian satellites can jam GPS on a continental scale",
+        "summary": "研究人员将欧洲多地短时GPS异常与俄罗斯卫星联系起来，认为这显示出来自太空的人为干扰风险，并可能演变为更大范围的导航安全问题。",
+        "rating": "A",
+        "score": 79,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该发现会把卫星通信、导航安全和地缘冲突联系起来，后续可延伸到航空航运、自动驾驶和军民两用基础设施韧性。",
+        "entities": [
+          "Gps",
+          "Todd Humphreys",
+          "University Of Texas",
+          "俄罗斯卫星"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Space – Ars Technica",
+            "url": "https://arstechnica.com/space/2026/06/tests-suggest-russian-satellites-can-jam-gps-on-a-continental-scale/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780957904,
+        "published_at": "2026-06-09T06:31:44.113150",
+        "source": "Space – Ars Technica",
+        "url": "https://arstechnica.com/space/2026/06/tests-suggest-russian-satellites-can-jam-gps-on-a-continental-scale/",
+        "event_id": null
+      },
+      {
         "id": "fb355d3493936f60b1038b0612193b76",
         "title": "开源搜索智能体Harness-1刷新检索表现",
         "chinese_title": "开源搜索智能体Harness-1刷新检索表现",
@@ -365,17 +530,17 @@
       },
       {
         "id": "2d242eb84202e24dbd28c8f05bc463e8",
-        "title": "Cursor年化收入突破40亿美元传将归入SpaceX",
-        "chinese_title": "Cursor年化收入突破40亿美元传将归入SpaceX",
+        "title": "Cursor年化收入破40亿美元，SpaceX收购在即",
+        "chinese_title": "Cursor年化收入破40亿美元，SpaceX收购在即",
         "original_title": "Source: Cursor, which is prepping for an expected acquisition by SpaceX, passed $4B in annualized revenue in the last week, up from $3B in April and $2B in Feb. (Richard Nieva/Forbes)",
-        "summary": "消息称AI编程工具Cursor年化收入已从2月的20亿美元快速升至40亿美元，并准备在上市后接受SpaceX相关收购。",
+        "summary": "据称 Cursor 年化收入一周内突破 40 亿美元，延续数月高速增长势头，并可能在上市后被 SpaceX 收购，AI 编程工具赛道的资本竞争继续升温。",
         "rating": "S",
         "score": 96,
-        "type": "financial",
+        "type": "funding",
         "typeName": "商业数据",
         "expansion": "Cursor高增长叠加SpaceX收购传闻，会放大AI编程工具估值、开发者入口争夺和马斯克AI生态整合的市场想象。",
         "entities": [
-          "Ai编程",
+          "Ai编程工具",
           "Cursor",
           "Elon Musk",
           "SpaceX"
@@ -391,25 +556,27 @@
         "published_at": "2026-06-09T06:31:21.484186",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260608/p55#a260608p55",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Richard Nieva / Forbes : Source: Cursor, which is prepping for an expected acquisition by SpaceX, passed $4B in annualized revenue in the last week, up from $3B in April and $2B in Feb. — Elon Musk's rocket and AI company is expected to acquire the buzzy AI coding startup shortly after it goes public.",
+        "grade": "S",
+        "extension": "这会把 AI 编程工具的估值锚点继续抬高，也可能推动航天、机器人和企业软件公司争抢开发者工具资产。"
       },
       {
         "id": "eb269cd09334db7d0eb033f53b2b3bdc",
-        "title": "苹果强化儿童保护也在回应监管压力",
-        "chinese_title": "苹果强化儿童保护也在回应监管压力",
+        "title": "苹果加码儿童账户控制，监管防线意味更浓",
+        "chinese_title": "苹果加码儿童账户控制，监管防线意味更浓",
         "original_title": "Apple&rsquo;s new parental controls are for keeping Apple out of trouble",
-        "summary": "苹果在WWDC推出更细的儿童账户、屏幕时间和内容保护功能，表面面向家长，实则也回应全球互联网监管与Meta等开发者的压力。",
+        "summary": "苹果在 WWDC 推出更细的儿童账户和家长控制功能，表面是帮助家庭管理屏幕时间，背后也回应了全球互联网监管和与应用开发者的责任争议。",
         "rating": "B",
-        "score": 72,
+        "score": 76,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这类功能可能成为平台监管防御工具，并影响应用商店责任划分、青少年保护法案和Meta等社交平台的合规竞争。",
         "entities": [
-          "App Store",
           "Apple",
           "Meta",
           "Wwdc",
-          "儿童安全"
+          "儿童账户"
         ],
         "sourceLinks": [
           {
@@ -422,21 +589,23 @@
         "published_at": "2026-06-09T06:31:21.484468",
         "source": "The Verge -  Tech Posts (apple)",
         "url": "https://www.theverge.com/policy/946331/apple-parental-controls-child-accounts-wwdc",
-        "event_id": null
+        "event_id": null,
+        "original_content": "When Apple put child safety front and center at WWDC on Monday, its stated goal was helping parents fine-tune their kids' online experiences and avoid excessive screen time. But amid a global debate over internet regulation, its latest updates also looked like a defensive move in a brewing fight against Meta and other app developers. Apple announced an expanded toolkit for parents through its child accounts at WWDC, including a greater ability to customize kids' allotted screen time and the ability to block gory or violent images in messages before kids see them. Raja Bose, Apple's director of trust, safety, and values product marketing, to … Read the full story at The Verge.",
+        "grade": "A",
+        "extension": "后续可关注苹果、Meta 与监管机构围绕未成年人保护责任的边界博弈，以及平台规则对第三方应用的影响。"
       },
       {
         "id": "c39ad57d6bd74b61b111bcdcbdef3a63",
-        "title": "OpenAI向SEC秘密递交IPO草案",
-        "chinese_title": "OpenAI向SEC秘密递交IPO草案",
+        "title": "OpenAI向SEC提交秘密S-1草案",
+        "chinese_title": "OpenAI向SEC提交秘密S-1草案",
         "original_title": "OpenAI Submits S-1 Draft to SEC",
-        "summary": "OpenAI宣布已向美国SEC秘密递交S-1注册草案，标志这家ChatGPT母公司正式启动上市准备但尚未确定具体时间表。",
+        "summary": "OpenAI 宣布已向美国 SEC 秘密提交 S-1 草案，正式迈出潜在 IPO 的关键一步，但上市时点和最终结构仍未确定。",
         "rating": "S",
-        "score": 98,
+        "score": 97,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "OpenAI IPO将重塑AI公司融资路径、员工股权流动性和资本市场对算力烧钱模式的估值标准。",
         "entities": [
-          "GPT",
           "Ipo",
           "OpenAI",
           "S-1",
@@ -453,16 +622,19 @@
         "published_at": "2026-06-09T06:31:21.484836",
         "source": "Hacker News",
         "url": "https://openai.com/index/openai-submits-confidential-s-1/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "S",
+        "extension": "OpenAI 若进入公开市场，将改变 AI 基础模型公司的融资、治理和信息披露节奏，并影响 Anthropic 等竞争对手估值。"
       },
       {
         "id": "9481a3f4724a1e945bf39c8ba3cf4372",
-        "title": "OpenAI跟随Anthropic正式迈向IPO",
-        "chinese_title": "OpenAI跟随Anthropic正式迈向IPO",
+        "title": "OpenAI秘密递表IPO，紧跟Anthropic步伐",
+        "chinese_title": "OpenAI秘密递表IPO，紧跟Anthropic步伐",
         "original_title": "OpenAI Confidentially Files for IPO on the Heels of SpaceX and Anthropic",
-        "summary": "OpenAI已提交上市相关文件，紧随Anthropic之后推进IPO准备，头部AI实验室从私募融资转向公开市场的节奏明显加快。",
+        "summary": "OpenAI 已提交上市相关文件，时间上紧随 Anthropic 之后，显示头部 AI 公司正在从私募融资竞赛转向公开市场竞争。",
         "rating": "A+",
-        "score": 88,
+        "score": 91,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "OpenAI与Anthropic相继筹备上市，会把模型能力、收入增长、数据中心支出和安全治理都推向公开市场审视。",
@@ -483,25 +655,27 @@
         "published_at": "2026-06-09T06:31:21.484954",
         "source": "Feed: Artificial Intelligence Latest",
         "url": "https://www.wired.com/story/openai-confidentially-files-for-ipo/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "The ChatGPT maker announced it has filed paperwork to go public, just a week after rival Anthropic took the same step.",
+        "grade": "A+",
+        "extension": "这将使模型公司在资本市场面对更强盈利和治理压力，也可能推动云厂商、芯片公司和应用生态重新定价。"
       },
       {
         "id": "827aedbae3ff83773539942155eefe62",
-        "title": "OpenAI递交IPO文件并筹划员工售股",
-        "chinese_title": "OpenAI递交IPO文件并筹划员工售股",
+        "title": "OpenAI递交IPO文件，还计划员工股出售",
+        "chinese_title": "OpenAI递交IPO文件，还计划员工股出售",
         "original_title": "OpenAI Confidentially Files IPO Paperwork, Plans Separate Employee Share Sale",
-        "summary": "OpenAI秘密递交IPO草案，同时据称计划在上市前安排员工出售股份，为人才留存、股权兑现和上市估值预热。",
+        "summary": "OpenAI 称已向 SEC 提交 IPO 草案，并据悉计划在上市前安排员工出售股份，为早期员工和投资者提供流动性窗口。",
         "rating": "A+",
-        "score": 91,
+        "score": 90,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "员工售股安排会影响AI人才竞争和二级市场价格发现，也可能成为其他高估值AI公司上市前的参考模板。",
         "entities": [
-          "Anthropic",
           "Ipo",
           "OpenAI",
           "Sec",
-          "员工股权"
+          "员工股"
         ],
         "sourceLinks": [
           {
@@ -514,24 +688,27 @@
         "published_at": "2026-06-09T06:31:21.485091",
         "source": "The Information",
         "url": "https://www.theinformation.com/briefings/openai-confidentially-files-ipo-paperwork-plans-separate-employee-share-sale",
-        "event_id": null
+        "event_id": null,
+        "original_content": "OpenAI said on Monday that it has filed draft paperwork for an initial public offering with the Securities and Exchange Commission, a week after rival Anthropic said it had done the same. OpenAI also plans to let employees sell their shares ahead of the IPO, according to a person familiar with ...",
+        "grade": "A+",
+        "extension": "员工股出售会成为观察 OpenAI 内部估值和人才稳定性的信号，也可能影响同类 AI 公司的人才激励安排。"
       },
       {
         "id": "233f70c225e8e5af52aaf97048549067",
-        "title": "OpenAI与Anthropic上市竞速升温",
-        "chinese_title": "OpenAI与Anthropic上市竞速升温",
+        "title": "OpenAI跟进Anthropic，秘密启动IPO流程",
+        "chinese_title": "OpenAI跟进Anthropic，秘密启动IPO流程",
         "original_title": "Following Anthropic, OpenAI files confidentially for IPO",
-        "summary": "OpenAI在Anthropic之后秘密提交IPO文件，显示两家头部AI公司正把竞争从模型和客户扩展到资本市场。",
+        "summary": "在 Anthropic 递交上市文件一周多后，OpenAI 也秘密提交 IPO 文件，头部生成式 AI 公司上市竞赛进一步加速。",
         "rating": "A+",
-        "score": 88,
+        "score": 89,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "两家公司上市进程会影响AI基础设施融资、云厂商绑定关系和投资者对安全成本与商业化速度的判断。",
         "entities": [
-          "Ai基础模型",
           "Anthropic",
           "Ipo",
-          "OpenAI"
+          "OpenAI",
+          "生成式Ai"
         ],
         "sourceLinks": [
           {
@@ -544,21 +721,24 @@
         "published_at": "2026-06-09T06:31:21.485196",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "The filing comes a little more than a week after its main rival, Anthropic, also filed to go public, ramping up the race between the two AI firms.",
+        "grade": "A+",
+        "extension": "公开市场将迫使基础模型公司给出更清晰的商业化路径，相关云服务、算力租赁和企业 AI 应用也会受牵动。"
       },
       {
         "id": "38ee52455e11e9f1d2a220ca4b4c527e",
-        "title": "OpenAI称IPO时间未定仍想保留私企灵活性",
-        "chinese_title": "OpenAI称IPO时间未定仍想保留私企灵活性",
+        "title": "OpenAI称IPO时间未定，仍想保留私有优势",
+        "chinese_title": "OpenAI称IPO时间未定，仍想保留私有优势",
         "original_title": "OpenAI confidentially files for an IPO, says it has \"not decided on timing yet\", as \"there are things we want to do that are likely easier as a private company\" (Ashley Capoot/CNBC)",
-        "summary": "OpenAI已秘密递交IPO申请，但表示尚未决定上市时间，并强调部分事项在私人公司状态下更易推进。",
+        "summary": "OpenAI 已向 SEC 秘密提交 IPO 文件，但强调尚未决定上市时间，并表示仍有一些事务作为私营公司推进更容易。",
         "rating": "A+",
-        "score": 87,
+        "score": 89,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "IPO时间不确定凸显OpenAI在资本需求、治理结构和战略灵活性之间的拉扯，后续需关注估值与监管披露。",
         "entities": [
-          "GPT",
+          "Ashley Capoot",
           "Ipo",
           "OpenAI",
           "Sec"
@@ -574,25 +754,27 @@
         "published_at": "2026-06-09T06:31:21.485689",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260608/p54#a260608p54",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Ashley Capoot / CNBC : OpenAI confidentially files for an IPO, says it has “not decided on timing yet”, as “there are things we want to do that are likely easier as a private company” — OpenAI has confidentially filed for an IPO with the Securities and Exchange Commission …",
+        "grade": "A+",
+        "extension": "这反映出 OpenAI 在资本透明度、治理灵活性和战略保密之间的权衡，也会影响投资人对上市节奏的预期。"
       },
       {
         "id": "91bebcc65ab81e2f31160325bc1d87cf",
-        "title": "AI巨头上市潮放大伦理与资本冲突",
-        "chinese_title": "AI巨头上市潮放大伦理与资本冲突",
+        "title": "AI公司上市潮逼近，伦理压力或被资本放大",
+        "chinese_title": "AI公司上市潮逼近，伦理压力或被资本放大",
         "original_title": "If You Think AI Companies Are Unethical Now, Wait Until They Go Public",
-        "summary": "评论认为OpenAI、Anthropic和xAI等AI公司若进入公开市场，投资者压力可能进一步挤压安全、环保和公益承诺。",
+        "summary": "文章借 OpenAI 由非营利愿景转向高额融资与潜在上市的变化，质疑 AI 公司公开上市后在伦理、安全和环境议题上承受的扭曲激励。",
         "rating": "A+",
-        "score": 90,
+        "score": 88,
         "type": "opinion",
         "typeName": "观点访谈",
         "expansion": "该观点可延伸到AI上市公司治理、算力能源消耗、公益使命弱化和公众投资者如何影响安全决策。",
         "entities": [
           "Ai伦理",
-          "Anthropic",
           "OpenAI",
           "Sam Altman",
-          "xAI"
+          "数据中心"
         ],
         "sourceLinks": [
           {
@@ -605,17 +787,20 @@
         "published_at": "2026-06-09T06:31:21.485869",
         "source": "Futurism",
         "url": "https://futurism.com/artificial-intelligence/ai-companies-going-public-ethics",
-        "event_id": null
+        "event_id": null,
+        "original_content": "In November 2023, OpenAI CEO Sam Altman was unceremoniously forced out of the company following a dramatic power struggle. Since Altman’s ousting — and eventual rehiring — the conversation surrounding the ethics of the AI industry has only become more polarizing. OpenAI, once a research lab “ free from financial obligations ” and purportedly dedicated to the betterment of humankind through AI, transformed itself into a for-profit , raising staggering amounts of capital while largely betraying its nonprofit roots . Meanwhile, environmental and social concerns have been pushed to the wayside, as AI companies press for the construction of massive, polluting data centers even in the face of ferocious local opposition . After raising hundreds of billions of dollars, OpenAI — alongside its closest competitors, Anthropic and xAI parent company SpaceX — are set to go public this year, further raising the stakes by opening themselves up to the influence of retail and activist investors. The companies’ fiduciary duty to generate value could soon further undermine any lingering commitments to the ethical development of AI, likely setting the stage for their leaders shedding any pretense of a corporate moral compass. Then there are ongoing concerns over AI safety. We’ve already seen companies playing it fast and loose as they attempt to gain a competitive edge, an approach that has already led to tragic outcomes . “At OpenAI you’ve had this sort of governance struggle that resulted in, among other things, Sam Altman being fired and rehired,” argued the New York Times ‘ Kevin Roose during a recent episode of the “Hard Fork” podcast . “At Anthropic, they have sort of made themselves a public benefit corporation to try to kind of lessen the influence of sort of shareholder capital and fiduciary duty on their ability to make decisions related to safety.” “But I think all of that just gets much harder in a world where these are publicly traded companies that big investors, index fund holders, and retirees are invested in,” Roose added, arguing it was “already going to be hard” to slow down the release of new models given the “enormous sums of money that these companies have raised.” On the flip side, others predict that the massive wave of funding could lead to a surge in altruistic spending, a “ third wave of philanthropy .” All of Anthropic’s seven cofounders have pledged to give away 80 percent of their wealth , with CEO Dario Amodei arguing that the “thing to worry about is a level of wealth concentration that will break society.” Some argue that all of that extra liquid cash could be used for decarbonization and the development of new green energy tech, a pertinent subject considering the AI rush’s rapidly growing carbon footprint. “It is not lost on the people who are working on AI that there are big environmental impacts associated with data centers,” Trellis Climate managing director Lara Pierpoint told Heatmap News . Of course, whether tech leaders will hold themselves accountable once their firms go public remains to be seen. But given the way the AI industry has already doubled down on generating as much money as possible, safety and the environment be damned, long before the imminent IPOs, it’s far from a guarantee. More on AI ethics: You Can Now Get a Religious Exemption From Using AI at Work The post If You Think AI Companies Are Unethical Now, Wait Until They Go Public appeared first on Futurism .",
+        "grade": "A+",
+        "extension": "可延伸观察上市公司治理如何影响模型安全承诺，以及数据中心扩张、监管披露和股东回报之间的冲突。"
       },
       {
         "id": "3926aa186c8f6f1eec6c2ea3e2b6f37e",
-        "title": "苹果WWDC把AI包装成软件补课",
-        "chinese_title": "苹果WWDC把AI包装成软件补课",
+        "title": "苹果WWDC主打补课，Siri AI只是其中一环",
+        "chinese_title": "苹果WWDC主打补课，Siri AI只是其中一环",
         "original_title": "Apple plays catch-up at WWDC",
-        "summary": "苹果在WWDC大量展示修复、性能提升和长期呼声功能，并把升级版Siri作为整体软件改进的一部分，试图缓解AI落后观感。",
+        "summary": "苹果在 WWDC 上集中展示修复、性能改进和长期被期待的功能，再推出升级版 Siri，试图把 AI 放进整体软件体验升级中。",
         "rating": "A",
-        "score": 82,
-        "type": "industry",
+        "score": 80,
+        "type": "product",
         "typeName": "行业动态",
         "expansion": "苹果的叙事会影响开发者对Apple Intelligence的投入，也会牵动与Google、OpenAI等模型伙伴及竞品手机生态的比较。",
         "entities": [
@@ -635,16 +820,19 @@
         "published_at": "2026-06-09T06:31:21.485976",
         "source": "TechCrunch (apple)",
         "url": "https://techcrunch.com/2026/06/08/apple-plays-catch-up-at-wwdc/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Apple spent much of its WWDC keynote highlighting fixes, performance improvements, and long-requested features before unveiling its upgraded AI-powered Siri, signaling that the company wants users to see AI as just one part of a broader effort to improve its software.",
+        "grade": "A",
+        "extension": "这会影响外界对 Apple Intelligence 的预期，也为开发者判断苹果 AI 生态的成熟度提供新信号。"
       },
       {
         "id": "f93ce6b94abd8ffcf3ad58609644459a",
-        "title": "苹果再启Siri重做计划接入Gemini",
-        "chinese_title": "苹果再启Siri重做计划接入Gemini",
+        "title": "苹果再启Siri重做，Gemini模型成关键支撑",
+        "chinese_title": "苹果再启Siri重做，Gemini模型成关键支撑",
         "original_title": "Apple Tries for Another Siri Reboot",
-        "summary": "苹果在开发者大会上推出被称为Siri AI的新语音助手，并计划借助谷歌Gemini模型提升对话和任务处理能力。",
+        "summary": "苹果在开发者大会上推出新的 Siri AI，并据称使用 Google Gemini 模型，让用户通过独立 Siri 应用接入更强的语音助手能力。",
         "rating": "A+",
-        "score": 94,
+        "score": 86,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "Siri重启将检验苹果外部模型合作路线，也会影响Google Gemini在消费终端入口上的话语权。",
@@ -667,25 +855,25 @@
         "url": "https://www.theinformation.com/briefings/apple-tries-another-siri-reboot",
         "event_id": null,
         "original_content": "Apple launched a much anticipated new version of its Siri voice assistant at the start of its annual developer conference on Monday, which users will be able to access through a new Siri app. The refreshed voice assistant, now called Siri AI, which uses Google’s Gemini models, will allow users ...",
-        "grade": "S",
-        "extension": "如果苹果把核心AI能力建立在Gemini之上，后续可延伸观察苹果与谷歌的模型分工、隐私边界，以及开发者生态对新Siri的实际采用速度。"
+        "grade": "A",
+        "extension": "如果苹果选择外部模型补齐能力，Google 与苹果的 AI 合作边界、隐私叙事和平台控制权都会成为后续看点。"
       },
       {
         "id": "80e13a78aea8a8e31143d9698250f9a0",
-        "title": "苹果免AI云调用费争夺小开发者",
-        "chinese_title": "苹果免AI云调用费争夺小开发者",
+        "title": "苹果免小开发者AI云费用，争夺应用生态",
+        "chinese_title": "苹果免小开发者AI云费用，争夺应用生态",
         "original_title": "Apple bets cheaper AI will woo small developers",
-        "summary": "苹果将为下载量未超过门槛的小型开发者免除云端API费用，试图降低AI实验成本并扩大其开发者工具吸引力。",
+        "summary": "苹果计划为首年 App Store 下载量低于 200 万的小开发者免除云 API 费用，降低其尝试 AI 功能的成本门槛。",
         "rating": "A",
-        "score": 80,
-        "type": "industry",
+        "score": 78,
+        "type": "product",
         "typeName": "行业动态",
         "expansion": "免费额度可能改变小开发者采用Apple Intelligence的速度，也会对OpenAI、Google等第三方API的开发者预算形成竞争。",
         "entities": [
-          "Ai Api",
+          "Ai开发者",
           "App Store",
           "Apple",
-          "开发者生态"
+          "云Api"
         ],
         "sourceLinks": [
           {
@@ -701,23 +889,23 @@
         "event_id": null,
         "original_content": "As AI experimentation grows more expensive, Apple is waiving cloud API costs for developers with fewer than 2 million first-time App Store downloads.",
         "grade": "A",
-        "extension": "这一政策可能改变中小应用接入AI功能的成本结构，也会迫使OpenAI、Google等平台重新审视开发者补贴和生态绑定策略。"
+        "extension": "该策略可能刺激中小应用接入苹果 AI 能力，并与 OpenAI、Google 等第三方 API 形成开发者成本竞争。"
       },
       {
         "id": "c140a5a78bd06b44150d3b856a1ef26a",
-        "title": "Waymo两亿美元接手苹果自动驾驶试验场",
-        "chinese_title": "Waymo两亿美元接手苹果自动驾驶试验场",
+        "title": "Waymo花2.2亿美元接手苹果自动驾驶试验场",
+        "chinese_title": "Waymo花2.2亿美元接手苹果自动驾驶试验场",
         "original_title": "Waymo bought Apple’s self-driving car proving ground for $220M",
-        "summary": "Waymo以2.2亿美元买下亚利桑那州一处曾与苹果相关的大型自动驾驶试验场，进一步扩充无人车测试基础设施。",
+        "summary": "Waymo 已收购亚利桑那州一处 5500 英亩的自动驾驶试验场，该场地与苹果相关公司有关，交易金额约 2.2 亿美元。",
         "rating": "A",
-        "score": 86,
+        "score": 77,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "交易可延伸到苹果汽车项目资产退出、Waymo商业化扩张节奏，以及自动驾驶测试场地成为稀缺基础设施的趋势。",
         "entities": [
           "Apple",
-          "Robotaxi",
           "Waymo",
+          "亚利桑那试验场",
           "自动驾驶"
         ],
         "sourceLinks": [
@@ -732,18 +920,18 @@
         "source": "TechCrunch (apple)",
         "url": "https://techcrunch.com/2026/06/08/waymo-bought-apples-self-driving-car-proving-ground-for-220m/",
         "event_id": null,
-        "original_content": "Waymo has acquired a massive 5,500-acre proving ground in Arizona owned by Route 14 Investment Partners LLC, a Delaware shell company associated with Apple, according to documents filed with Maricopa County. Waymo acquired the property, which is located near other proving grounds in Wittman, Arizona, for $220 million, according to the filing. The sale was […]",
+        "original_content": "Waymo has acquired a massive 5,500-acre proving ground in Arizona owned by Route 14 Investment Partners LLC, a Delaware shell company associated with Apple, according to documents filed with Maricopa County.",
         "grade": "A",
-        "extension": "苹果造车遗产被Waymo吸收，后续可追踪测试场资源如何转化为Robotaxi扩张能力，以及传统车企和自动驾驶公司对封闭测试资源的争夺。"
+        "extension": "这既显示苹果汽车遗留资产继续出清，也可能增强 Waymo 在封闭场地测试和无人车商业化上的基础设施优势。"
       },
       {
         "id": "ea983b13ed55f62a7af2b0f89509757e",
-        "title": "苹果WWDC发布会集中押注AI系统",
-        "chinese_title": "苹果WWDC发布会集中押注AI系统",
+        "title": "苹果WWDC 2026登场，新系统与AI成焦点",
+        "chinese_title": "苹果WWDC 2026登场，新系统与AI成焦点",
         "original_title": "Apple WWDC 2026",
-        "summary": "苹果WWDC 2026发布会成为其AI战略集中展示窗口，外界关注Siri、系统更新和开发者框架能否补齐此前短板。",
+        "summary": "苹果 WWDC 2026 活动开启，开发者和用户关注新系统、Apple Intelligence、Siri 以及各设备平台的功能更新。",
         "rating": "B",
-        "score": 88,
+        "score": 72,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "该入口可作为WWDC总览事件，后续可拆分跟踪Siri、开发者工具、系统交互和平台监管等多个延伸选题。",
@@ -766,21 +954,22 @@
         "url": "https://www.apple.com/apple-events/event-stream/",
         "event_id": null,
         "original_content": "Comments",
-        "grade": "A+",
-        "extension": "可从发布会全景延伸到苹果AI体验能否统一跨设备入口，以及其对iPhone换机、开发者工具和系统生态黏性的影响。"
+        "grade": "B",
+        "extension": "WWDC 后续会释放更多开发者文档和 beta 体验，适合继续追踪系统功能落地和生态应用适配。"
       },
       {
         "id": "4c445064bfdb95b22bd0e28f952f9075",
-        "title": "谷歌升级NotebookLM加入智能体能力",
-        "chinese_title": "谷歌升级NotebookLM加入智能体能力",
+        "title": "Google升级NotebookLM，引入更强智能体能力",
+        "chinese_title": "Google升级NotebookLM，引入更强智能体能力",
         "original_title": "Google upgrades NotebookLM, which now runs on Gemini 3.5 and Antigravity, to deliver new agentic capabilities and more advanced reasoning for AI Ultra users (Ivan Mehta/TechCrunch)",
-        "summary": "谷歌将NotebookLM升级到Gemini和Antigravity相关能力，为AI Ultra用户提供更强推理和智能体式研究功能。",
+        "summary": "Google 更新 NotebookLM，将默认模型升级到 Gemini 并结合 Antigravity，为 AI Ultra 用户提供更强推理和智能体能力。",
         "rating": "A+",
-        "score": 87,
+        "score": 86,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "NotebookLM升级会推动AI研究助手从资料整理走向任务执行，并加剧Google、OpenAI和Perplexity在知识工作入口的竞争。",
         "entities": [
+          "Ai Ultra",
           "Antigravity",
           "Gemini",
           "Google",
@@ -799,26 +988,26 @@
         "url": "https://www.techmeme.com/260608/p52#a260608p52",
         "event_id": null,
         "original_content": "Ivan Mehta / TechCrunch : Google upgrades NotebookLM, which now runs on Gemini 3.5 and Antigravity, to deliver new agentic capabilities and more advanced reasoning for AI Ultra users — Google on Monday announced an update to its NotebookLM research tool, which includes new features and the shift to Gemini 3.5 as the default model.",
-        "grade": "A+",
-        "extension": "NotebookLM若从笔记工具走向研究智能体，将直接影响知识管理、教育和企业研究场景，也会与OpenAI和Anthropic的工作流产品竞争。"
+        "grade": "A",
+        "extension": "NotebookLM 的升级会推动研究助理工具从摘要走向任务执行，也会与 ChatGPT、Claude 等生产力工具正面竞争。"
       },
       {
         "id": "4595d2641d2d79b1b14fb08fec2d501a",
-        "title": "苹果WWDC隐藏功能覆盖全设备系统",
-        "chinese_title": "苹果WWDC隐藏功能覆盖全设备系统",
+        "title": "WWDC隐藏更新盘点，苹果多系统细节补齐",
+        "chinese_title": "WWDC隐藏更新盘点，苹果多系统细节补齐",
         "original_title": "44 things coming to your Apple devices that you might have missed",
-        "summary": "苹果在WWDC主题演讲中除AI外还更新了多项跨iPhone、iPad、Mac、Apple Watch和Vision设备的小功能。",
+        "summary": "苹果在 WWDC 上除 AI 和 Siri 外还带来大量系统细节更新，包括 Liquid Glass 滑块、各平台小功能和秋季上线计划。",
         "rating": "B",
-        "score": 70,
+        "score": 71,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "这些小功能体现苹果系统体验补强方向，也可能影响用户升级意愿、开发者适配成本和不同设备生态协同。",
         "entities": [
           "Apple",
           "Ios",
+          "Liquid Glass",
           "Macos",
-          "Visionos",
-          "Watchos"
+          "Wwdc"
         ],
         "sourceLinks": [
           {
@@ -834,7 +1023,7 @@
         "event_id": null,
         "original_content": "A Liquid Glass slider! This year's WWDC keynote was all about AI. But with all the attention on Apple Intelligence and Siri AI, the company breezed by - or neglected to mention - a bunch of cool, smaller features across its new updates. I've rounded up a bunch of them right here. The new operating systems are available in developer beta today ahead of public betas beginning in July. They'll launch for everyone this fall. And keep an eye on The Verge in the coming days and weeks ahead; as everyone starts to really dig into what's new, we might find even more great features to look forward to. iOS 27 Liquid Glass is getting an opacity slider. Apps launch up … Read the full story at The Verge.",
         "grade": "B",
-        "extension": "这些小功能虽不如AI醒目，却可能决定系统升级的真实体验，可进一步拆解哪些能力会提升用户黏性或推动旧设备换新。"
+        "extension": "这些小功能会影响用户对系统升级的真实感知，也为开发者适配新 UI 和平台能力提供具体方向。"
       },
       {
         "id": "a7559729b45a4aa776b9557a7592c585",
@@ -2010,157 +2199,67 @@
         "source": "The Information",
         "url": "https://www.theinformation.com/articles/developers-openais-stargate-data-center-face-higher-costs-energy-challenges",
         "event_id": null
-      },
-      {
-        "id": "5ad0bd3a9c7c9ef7eef92e39a565077f",
-        "title": "苹果让用户用AI生成Safari扩展",
-        "chinese_title": "苹果让用户用AI生成Safari扩展",
-        "original_title": "Apple is using AI to fix Safari&rsquo;s extension problem",
-        "summary": "苹果在WWDC展示用自然语言生成Safari扩展的能力，试图降低扩展开发门槛，补齐Safari长期落后于Chrome等浏览器的生态短板。",
-        "rating": "A",
-        "score": 80,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "如果该能力可用性足够高，可能改变浏览器扩展的开发和分发方式，也会影响苹果对开发者生态与安全审核的平衡。",
-        "entities": [
-          "Ai",
-          "Apple",
-          "Safari",
-          "浏览器扩展"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/tech/946345/apple-safari-ai-update-extensions"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780957904,
-        "published_at": "2026-06-09T06:31:44.113027",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/tech/946345/apple-safari-ai-update-extensions",
-        "event_id": null
-      },
-      {
-        "id": "e28ce943720417c077896b568b16524b",
-        "title": "研究称俄罗斯卫星或能大范围干扰GPS",
-        "chinese_title": "研究称俄罗斯卫星或能大范围干扰GPS",
-        "original_title": "Tests suggest Russian satellites can jam GPS on a continental scale",
-        "summary": "研究人员将欧洲多地短时GPS异常与俄罗斯卫星联系起来，认为这显示出来自太空的人为干扰风险，并可能演变为更大范围的导航安全问题。",
-        "rating": "A",
-        "score": 79,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该发现会把卫星通信、导航安全和地缘冲突联系起来，后续可延伸到航空航运、自动驾驶和军民两用基础设施韧性。",
-        "entities": [
-          "Gps",
-          "Todd Humphreys",
-          "University Of Texas",
-          "俄罗斯卫星"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Space – Ars Technica",
-            "url": "https://arstechnica.com/space/2026/06/tests-suggest-russian-satellites-can-jam-gps-on-a-continental-scale/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780957904,
-        "published_at": "2026-06-09T06:31:44.113150",
-        "source": "Space – Ars Technica",
-        "url": "https://arstechnica.com/space/2026/06/tests-suggest-russian-satellites-can-jam-gps-on-a-continental-scale/",
-        "event_id": null
       }
     ],
     "2026-06-08": [
       {
-        "id": "3b74fa5e2891bca438b2fd110fdf863e",
-        "title": "开发者称智能体选工具不能只靠向量检索",
-        "chinese_title": "开发者称智能体选工具不能只靠向量检索",
-        "original_title": "Why I stopped using semantic embeddings for tool selection and switched back to BM25 [D]",
-        "summary": "一名智能体开发者表示，在约140个MCP工具的生产场景中，基于语义嵌入的工具选择存在风险，最终回到BM25检索。",
-        "rating": "A+",
-        "score": 88,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "该经验可延伸到智能体工具路由的可靠性评估，尤其是语义相似度、关键词匹配和权限控制在生产环境中的权衡。",
-        "entities": [
-          "Ai Agent",
-          "Bm25",
-          "MCP",
-          "语义嵌入"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1u07tlm/why_i_stopped_using_semantic_embeddings_for_tool/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780957939,
-        "published_at": "2026-06-09T06:32:19.458275",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1u07tlm/why_i_stopped_using_semantic_embeddings_for_tool/",
-        "event_id": null
-      },
-      {
-        "id": "d2a332b3b998db8c6937ecad2f2e1ee2",
-        "title": "ArXiv打击AI水论文引发背书机制争议",
-        "chinese_title": "ArXiv打击AI水论文引发背书机制争议",
-        "original_title": "Should ArXiv backtrack endorsement? [D]",
-        "summary": "有研究者建议ArXiv在治理低质量AI论文时回溯检查背书关系，以减少滥用账号和低质量上传对学术信誉的伤害。",
+        "id": "a20f5fe02d520890f49e55ace726aed1",
+        "title": "ICML拒稿评审可见性引疑，OpenReview设置待澄清",
+        "chinese_title": "ICML拒稿评审可见性引疑，OpenReview设置待澄清",
+        "original_title": "ICML rejected paper visibility [D]",
+        "summary": "一名作者称 ICML 拒稿后未选择公开评审，但 OpenReview 页面显示似乎对所有人可见，引发对会议评审可见规则的疑问。",
         "rating": "B",
-        "score": 67,
+        "score": 66,
         "type": "safety",
         "typeName": "安全伦理",
-        "expansion": "可继续观察预印本平台如何平衡开放发表和质量控制，以及AI生成论文泛滥是否会推动更严格的身份与背书机制。",
+        "expansion": "这可延伸到 AI 学术会议透明度、作者隐私和 OpenReview 默认设置风险，适合关注会议治理细节。",
         "entities": [
-          "Ai论文",
-          "Arxiv",
-          "学术出版",
-          "背书机制"
+          "Icml",
+          "Openreview",
+          "学术会议",
+          "评审可见性"
         ],
         "sourceLinks": [
           {
             "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1u03yot/should_arxiv_backtrack_endorsement_d/"
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tzz8f4/icml_rejected_paper_visibility_d/"
           }
         ],
         "sources": 1,
-        "timestamp": 1780957939,
-        "published_at": "2026-06-09T06:32:19.458366",
+        "timestamp": 1780958117,
+        "published_at": "2026-06-09T06:35:17.856494",
         "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1u03yot/should_arxiv_backtrack_endorsement_d/",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tzz8f4/icml_rejected_paper_visibility_d/",
         "event_id": null
       },
       {
-        "id": "21076d87d1e44035fa2584cf24354e58",
-        "title": "开源图像模型质量被指接近闭源API",
-        "chinese_title": "开源图像模型质量被指接近闭源API",
-        "original_title": "Open image generation models are closer to closed-source quality than this sub thinks [D]",
-        "summary": "一名从事生成图像模型评测的用户称，最新开源模型在多物体构图和提示遵循上已更接近闭源API水平。",
+        "id": "366ec595b35b3efcb1d5452fb75a998b",
+        "title": "数据科学家补软件工程课，AI岗位技能边界重画",
+        "chinese_title": "数据科学家补软件工程课，AI岗位技能边界重画",
+        "original_title": "Software and ops skills for data scientists[D]",
+        "summary": "社区讨论认为随着软件工程师进入数据科学和 AI 领域，数据背景从业者也需要补足开发、运维和工程化能力以适应行业竞争。",
         "rating": "B",
-        "score": 71,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若评测结论成立，图像生成市场可能从闭源API优势转向开源部署和成本竞争，也会影响创意工具的本地化路线。",
+        "score": 66,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "这反映 AI 岗位从模型能力走向工程交付的趋势，可延伸到 MLOps、数据平台和复合型人才培养。",
         "entities": [
-          "图像生成",
-          "开源模型",
-          "生成式Ai",
-          "闭源Api"
+          "Ai岗位",
+          "Mlops",
+          "数据科学家",
+          "软件工程"
         ],
         "sourceLinks": [
           {
             "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1u0119r/open_image_generation_models_are_closer_to/"
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tzxf3z/software_and_ops_skills_for_data_scientistsd/"
           }
         ],
         "sources": 1,
-        "timestamp": 1780957939,
-        "published_at": "2026-06-09T06:32:19.458458",
+        "timestamp": 1780958117,
+        "published_at": "2026-06-09T06:35:17.856587",
         "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1u0119r/open_image_generation_models_are_closer_to/",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tzxf3z/software_and_ops_skills_for_data_scientistsd/",
         "event_id": null
       },
       {
@@ -12721,6 +12820,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-09T06:37:22.269578",
-  "total_news": 397
+  "last_updated": "2026-06-09T06:37:47.847297",
+  "total_news": 401
 }
