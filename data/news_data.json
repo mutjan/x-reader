@@ -2,6 +2,96 @@
   "news": {
     "2026-06-09": [
       {
+        "id": "8d7b157d8ad86a62ad0501d995aa3502",
+        "title": "OpenAI企业路线图把ChatGPT和Codex合并",
+        "chinese_title": "OpenAI企业路线图把ChatGPT和Codex合并",
+        "original_title": "Intelligence At Work - Enterprise Readiness",
+        "summary": "OpenAI在企业CEO活动中更新产品路线图，强调ChatGPT与Codex统一体验、角色化Agent插件、协作注释和一键建站，继续把AI工作流推向企业核心场景。",
+        "rating": "S",
+        "score": 99,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这类路线图会影响企业AI采购和开发者工作台竞争，后续可观察微软、谷歌和Anthropic在企业代理与低代码部署上的跟进。",
+        "entities": [
+          "Agent Plugins",
+          "Codex",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "OpenAI",
+            "url": "https://www.youtube.com/watch?v=gRSzTChV_bk"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780958212,
+        "published_at": "2026-06-09T06:36:52.283780",
+        "source": "OpenAI",
+        "url": "https://www.youtube.com/watch?v=gRSzTChV_bk",
+        "event_id": null
+      },
+      {
+        "id": "a20f5fe02d520890f49e55ace726aed1",
+        "title": "ICML拒稿评审可见性引疑，OpenReview设置待澄清",
+        "chinese_title": "ICML拒稿评审可见性引疑，OpenReview设置待澄清",
+        "original_title": "ICML rejected paper visibility [D]",
+        "summary": "一名作者称 ICML 拒稿后未选择公开评审，但 OpenReview 页面显示似乎对所有人可见，引发对会议评审可见规则的疑问。",
+        "rating": "B",
+        "score": 66,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这可延伸到 AI 学术会议透明度、作者隐私和 OpenReview 默认设置风险，适合关注会议治理细节。",
+        "entities": [
+          "Icml",
+          "Openreview",
+          "学术会议",
+          "评审可见性"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tzz8f4/icml_rejected_paper_visibility_d/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780958117,
+        "published_at": "2026-06-09T06:35:17.856494",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tzz8f4/icml_rejected_paper_visibility_d/",
+        "event_id": null
+      },
+      {
+        "id": "366ec595b35b3efcb1d5452fb75a998b",
+        "title": "数据科学家补软件工程课，AI岗位技能边界重画",
+        "chinese_title": "数据科学家补软件工程课，AI岗位技能边界重画",
+        "original_title": "Software and ops skills for data scientists[D]",
+        "summary": "社区讨论认为随着软件工程师进入数据科学和 AI 领域，数据背景从业者也需要补足开发、运维和工程化能力以适应行业竞争。",
+        "rating": "B",
+        "score": 66,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "这反映 AI 岗位从模型能力走向工程交付的趋势，可延伸到 MLOps、数据平台和复合型人才培养。",
+        "entities": [
+          "Ai岗位",
+          "Mlops",
+          "数据科学家",
+          "软件工程"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1tzxf3z/software_and_ops_skills_for_data_scientistsd/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780958117,
+        "published_at": "2026-06-09T06:35:17.856587",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tzxf3z/software_and_ops_skills_for_data_scientistsd/",
+        "event_id": null
+      },
+      {
         "id": "3a0f7e96ea911b1838b776567bd3e18a",
         "title": "机器学习社区反思针对中国研究者的歧视帖",
         "chinese_title": "机器学习社区反思针对中国研究者的歧视帖",
@@ -439,20 +529,20 @@
       },
       {
         "id": "5ad0bd3a9c7c9ef7eef92e39a565077f",
-        "title": "苹果让用户用AI生成Safari扩展",
-        "chinese_title": "苹果让用户用AI生成Safari扩展",
+        "title": "苹果想用AI补上Safari扩展短板",
+        "chinese_title": "苹果想用AI补上Safari扩展短板",
         "original_title": "Apple is using AI to fix Safari&rsquo;s extension problem",
-        "summary": "苹果在WWDC展示用自然语言生成Safari扩展的能力，试图降低扩展开发门槛，补齐Safari长期落后于Chrome等浏览器的生态短板。",
+        "summary": "苹果展示用自然语言生成Safari扩展的能力，试图降低开发门槛，弥补Safari长期扩展生态不足的问题，让普通用户也能定制浏览器工具。",
         "rating": "A",
         "score": 80,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "如果该能力可用性足够高，可能改变浏览器扩展的开发和分发方式，也会影响苹果对开发者生态与安全审核的平衡。",
         "entities": [
-          "Ai",
+          "Ai扩展",
           "Apple",
-          "Safari",
-          "浏览器扩展"
+          "Chrome",
+          "Safari"
         ],
         "sourceLinks": [
           {
@@ -463,26 +553,29 @@
         "sources": 1,
         "timestamp": 1780957904,
         "published_at": "2026-06-09T06:31:44.113027",
-        "source": "The Verge -  Tech Posts",
+        "source": "The Verge -  Tech Posts (apple)",
         "url": "https://www.theverge.com/tech/946345/apple-safari-ai-update-extensions",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Apple is trying to solve one of Safari's biggest weaknesses with AI. Safari has long lacked the robust library of extensions that its rivals have, mainly due to the stringent development requirements from Apple . But now, Apple is inviting users to essentially vibe code their own extensions. In a demo shared by Apple , the company showed how you can ask Safari to create an extension by describing it. \"Save and track cooking recipes from around the web,\" the prompt said. \"Click the toolbar button to see your saved recipes and add notes to each.\" From there, Safari used Apple Intelligence to generate a \"Recipe Keeper\" extension that's supposed … Read the full story at The Verge.",
+        "grade": "A",
+        "extension": "如果体验可靠，Safari扩展生态可能从开发者供给转向用户自生成，进而影响Chrome扩展商店和浏览器AI工具格局。"
       },
       {
         "id": "e28ce943720417c077896b568b16524b",
         "title": "研究称俄罗斯卫星或能大范围干扰GPS",
         "chinese_title": "研究称俄罗斯卫星或能大范围干扰GPS",
         "original_title": "Tests suggest Russian satellites can jam GPS on a continental scale",
-        "summary": "研究人员将欧洲多地短时GPS异常与俄罗斯卫星联系起来，认为这显示出来自太空的人为干扰风险，并可能演变为更大范围的导航安全问题。",
+        "summary": "研究人员将欧洲多地短时GPS干扰与俄罗斯卫星联系起来，指出来自太空的人为干扰虽罕见，但未来存在被强化为洲际级干扰能力的风险。",
         "rating": "A",
-        "score": 79,
+        "score": 82,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "该发现会把卫星通信、导航安全和地缘冲突联系起来，后续可延伸到航空航运、自动驾驶和军民两用基础设施韧性。",
         "entities": [
           "Gps",
           "Todd Humphreys",
-          "University Of Texas",
-          "俄罗斯卫星"
+          "俄罗斯卫星",
+          "卫星安全"
         ],
         "sourceLinks": [
           {
@@ -495,14 +588,17 @@
         "published_at": "2026-06-09T06:31:44.113150",
         "source": "Space – Ars Technica",
         "url": "https://arstechnica.com/space/2026/06/tests-suggest-russian-satellites-can-jam-gps-on-a-continental-scale/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Russian satellites have been identified as the cause of mysterious, seconds-long bursts of GPS interference across Europe—a rare example of human-made GPS interference coming from space. But uncertainty still hangs over whether such interference is intentional and if it could be more powerfully weaponized as GPS jamming with continental reach in the future. The discovery came from an investigation detailed in a June 2 preprint paper by Todd Humphreys and his student Zach Clements at The University of Texas at Austin, along with Argyris Krizise at Stanford University in California. By sifting through public data from ground-based stations with global navigation satellite system (GNSS) receivers, they identified a pattern of high-powered interference lasting less than 10 seconds each time but simultaneously detectable by ground stations across Europe from Norway to Spain to Poland, and even reaching as far west as Greenland and Canada. By analyzing the ground station data from January 2019 to April 2026, the researchers found 75 days with at least one widespread GNSS interference event overlapping with the GPS L1 frequency band centered on 1575.42 megahertz. That represents the main band used for signal transmission by the US-made GPS satellite constellation and GNSS constellations from other countries. Read full article Comments",
+        "grade": "A",
+        "extension": "该发现会把卫星安全、导航基础设施和军事对抗联系起来，后续可追踪欧盟、航天机构和商业卫星公司的防护方案。"
       },
       {
         "id": "fb355d3493936f60b1038b0612193b76",
-        "title": "开源搜索智能体Harness-1刷新检索表现",
-        "chinese_title": "开源搜索智能体Harness-1刷新检索表现",
+        "title": "开源AI搜索代理Harness-1刷新检索表现",
+        "chinese_title": "开源AI搜索代理Harness-1刷新检索表现",
         "original_title": "Researchers trained an open source AI search agent, Harness-1, that outperforms GPT-5.4 on recalling relevant information",
-        "summary": "UIUC、伯克利与Chroma联合推出20B开源搜索智能体Harness-1，在相关信息召回测试中超过GPT-5.4，并以Apache 2.0开放模型与环境。",
+        "summary": "UIUC、UC Berkeley和Chroma联合发布200亿参数开源搜索代理Harness-1，基于OpenAI开源模型改造复杂检索流程，在相关信息召回上取得显著提升。",
         "rating": "A+",
         "score": 94,
         "type": "research",
@@ -511,7 +607,7 @@
         "entities": [
           "Chroma",
           "Harness-1",
-          "Rag",
+          "OpenAI",
           "Uc Berkeley",
           "Uiuc"
         ],
@@ -526,21 +622,24 @@
         "published_at": "2026-06-09T06:31:21.483433",
         "source": "VentureBeat",
         "url": "https://venturebeat.com/orchestration/researchers-trained-an-open-source-ai-search-agent-harness-1-that-outperforms-gpt-5-4-on-recalling-relevant-information",
-        "event_id": null
+        "event_id": null,
+        "original_content": "A joint research collaboration between researchers at the University of Illinois at Urbana-Champaign (UIUC), UC Berkeley, and the open source AI-native vector database platform Chroma unveiled Harness-1 , a 20-billion parameter open-source search agent built atop OpenAI's gpt-oss-20B open source model that fundamentally redesigns how AI executes complex retrieval tasks. Harness-1 achieves a massive leap in performance, scoring 73% average on its ability to recall relevant information correctly from a curated dataset, outperforming even GPT-5.4 (70.9%) and the next, most accurate open source search agent, Tongyi DeepResearch 30B , by 11.4 percentage points. (While GPT-5.5 has also been out for more than a month, the researchers didn't test against this model as it wasn't available when they were building theirs.) Crucially for developers, the model and its environment are available immediately under the highly permissive Apache 2.0 license and model code/weights on Hugging Face . Harness-1 also serves as proof-of-efficacy of another effort, Tinker , the distributed, web-based AI model training and fine-tuning API developed by Thinking Machines. Tinker was used specifically to train and run inference for Harness-1, highlighting how interactive infrastructure is actively enabling the next generation of autonomous models. So how did the researchers do it? Benchmarks Decoded (and Why Harness-1 Could Help Enterprises Tremendously) To actually put these models to the test, the researchers evaluated Harness-1 and its competitors across eight highly complex search benchmarks. Rather than asking simple trivia questions, these tests required the AI to act like a real researcher sifting through diverse, dense data sources. The benchmarks spanned several different domains, including open web searches, complex financial filings from the SEC, technical patent databases from the USPTO, and \"multi-hop\" question-answering tasks where the AI had to logically piece together scattered clues from multiple different documents to arrive at the correct answer. When the results came in, Harness-1 dominated the open-source competition in its ability to successfully find and curate the right facts. Even more impressively, this relatively small 20-billion parameter model went toe-to-toe with massive, expensive proprietary AI systems. It actually outperformed heavyweights like GPT-5.4, Sonnet-4.6, and Kimi-K2.5 — thought to be the hundreds of billions or trillions of parameters. Only one giant frontier model—Opus-4.6 — managed to narrowly edge it out in overall average performance. Harness-1 achieves its performance gains by offloading the exhaustive \"bookkeeping\" of a search session out of the model's working memory and into a structured software environment. As enterprise use cases grow more sophisticated, demanding that models autonomously sift through thousands of corporate documents or financial filings, these systems frequently succumb to \"search amnesia\"—forgetting their original queries, looping over rejected documents, or losing track of the specific claims they are trying to verify. Until now, the prevailing solution to this amnesia has been brute force. Engineers typically force models to constantly reread an ever-expanding, append-only transcript of their own actions, piling every search, read, and thought back into a massive context window. Harness-1 introduces a paradigm shift away from this method, proving that the bottleneck for true artificial autonomy isn't necessarily the size of the model, but how efficiently its working environment manages state. It highlights once more, as Anthropic's Claude Code has also done, that the raw model is arguably less important than the harness — or set of conditions — through which it runs. Technology: Doing the Paperwork in the Environment To understand the technical leap of Harness-1, consider a real-world analogy. Imagine hiring a brilliant research assistant and placing them in an empty room without a desk, notepads, or filing cabinets. You ask them to write a comprehensive report on a highly complex topic, which requires them to read dozens of books while keeping every single quote, citation, and dead-end search perfectly memorized in their own head. Eventually, no matter how intelligent the assistant is, their cognitive load will max out, and they will start dropping facts or losing the thread of the assignment. This is exactly how traditional search agents operate today. They are trained as policies over growing transcripts, meaning the model searches, reads, searches again, and appends everything into its own context window. As lead researcher Patrick (Pengcheng) Jiang of the University of Illinois noted on X : \"At some point the model is not just 'searching' anymore. It is also being asked to be a memory system, a note taker, a verifier, and a librarian.\" Harness-1 solves this by giving the AI a desk and a filing cabinet—what the research team calls a \"state-externalizing harness.\" This harness is an active, surrounding environment that takes over the routine bookkeeping, maintaining a recoverable working memory that includes a candidate pool of documents, an importance-tagged curated evidence set, compact evidence links, and verification records. By separating semantic choices from structural state management, the AI is freed up to do what it does best. The policy still decides what to search, determines which documents to keep, and knows when to stop, while the environment simply holds the state. Here is a subsection breaking down the training methodology and how it differs from prior agentic search models: Training Harness-1: A Masterclass in Data Efficiency The training pipeline for Harness-1 represents a fundamental shift in how the AI industry approaches agentic learning. Historically, developers have treated search agents as policies operating over massive, ever-growing transcripts, forcing reinforcement learning (RL) algorithms to simultaneously optimize both semantic reasoning and the raw memorization of a search state. Harness-1’s creators took a radically different approach: because their custom \"harness\" handles all the routine bookkeeping—like maintaining evidence links, candidate pools, and verification records—the training process only needed to teach the model how to operate this structured interface. This division of labor drastically simplified what the underlying 20-billion parameter model actually needed to learn. The process began with a remarkably narrow Supervised Fine-Tuning (SFT) stage. Rather than scraping petabytes of new behavioral data, the team generated just 899 filtered trajectories using a GPT-5.4 teacher agent that was plugged into the exact same harness environment the student model would eventually use. The goal of this SFT phase was not to inject vast amounts of domain knowledge into the model, but simply to teach it the mechanical rhythms of a good researcher: how to format tool calls, how to tag documents by importance, and the discipline of verifying a claim before promoting it to the final curated set. Following SFT, the model underwent Reinforcement Learning (RL) using an algorithm called CISPO, applied over full search episodes capping at 40 turns. The team designed a highly specific terminal reward function that explicitly separated discovery from selection . The model was rewarded not just for finding a relevant document, but for successfully promoting it into the final answer set, while being penalized if it found the answer but failed to curate it. The researchers also instituted a \"tool diversity\" bonus; without this specific incentive, they found the policy would quickly collapse into a lazy, search-heavy strategy where it spammed queries but bypassed the harder work of reading and verifying the text. What makes Harness-1 truly innovative compared to prior work is its unprecedented data efficiency. The entire model was trained on roughly 4,400 unique items—899 SFT trajectories and 3,453 RL queries. In stark contrast, competing open-source models required vastly larger datasets to achieve worse results: Context-1 utilized over 17,200 training items, while Search-R1 relied on a staggering 221,300 items to learn search behaviors. By proving that a smarter external cognitive architecture can replace brute-force data scaling, Harness-1 suggests that the future of agentic AI lies in building better environments for models to work within, rather than just training larger models on more data. Product: Enterprise Applicability and Generalization From a product perspective, Harness-1 is delivered as a highly capable 20B agent merged into the openai/gpt-oss-20b base architecture. For enterprise tech stacks, the applicability is massive because businesses need AI to execute multi-step research across proprietary databases without hallucinating or running up exorbitant compute bills. Harness-1 manages its frontier-level performance at what the creators describe as \"Context-1-level cost and latency.\" Because the context window is strictly managed by the budget-aware harness rather than continuously expanding, enterprises can deploy this agent autonomously without incurring the exponential token costs typically associated with long-horizon AI tasks. Even more impressively, Harness-1 proves it can generalize well beyond its training data. According to the research team, it was incredibly cheap to train, utilizing just 899 filtered supervised fine-tuning (SFT) trajectories and a mere 3,453 reinforcement learning (RL) queries. \"Instead of training the model to survive a giant append-only transcript, we train it to use a structured search interface: search, curate, revisit, verify, and submit,\" Jiang explained. This leanness proves a critical point for the AI industry: developers do not necessarily need petabytes of new behavioral data if they build a better cognitive framework for the model to operate within. Licensing: The Power of Apache 2.0 One of the most significant aspects of the Harness-1 release is its licensing. In plain language, Apache 2.0 is a highly permissive, enterprise-friendly software license that fundamentally enables commercialization. Unlike \"copyleft\" licenses (such as the GPL) that can force companies to open-source their own proprietary software if they integrate the code, or \"research-only\" licenses that ban commercial use entirely, Apache 2.0 gives businesses the green light to freely build, modify, and monetize the technology. For developers and startups, this means Harness-1 can be seamlessly integrated into commercial enterprise search products, internal data retrieval tools, or customer-facing AI applications without fear of legal reprisal. The only major requirement is that users must include the original copyright notice and explicitly state any significant modifications they make to the source code, positioning Harness-1 as a highly viable foundational building block for the enterprise. Community Reactions: A Resounding Validation The announcement has clearly struck a nerve within the developer community, validating the very real pain points engineers face when building agentic systems. Jiang’s multi-part announcement thread on X quickly garnered massive traction, pulling in over 256.1K views, 3.7K likes, 2.9K bookmarks, and nearly 300 reposts within a matter of days. This high engagement underscores a growing consensus in the AI space that brute-forcing context windows is a losing battle. When Jiang posted on X, \"I’ve been wondering: maybe search agents are bad at search partly because we make them do all the paperwork in their head,\" the resonance was immediate. For developers who have spent the last year wrestling with AI agents that confidently forget their primary instructions halfway through a database search, the Harness-1 approach feels like a desperately needed course correction. Ultimately, the community sentiment highlights a shift in industry priorities. Developers are moving away from asking how large an AI model's context window can get, and instead asking how efficiently an AI model's environment can manage that context for it. By offloading the paperwork, Harness-1 is proving that smaller, smarter systems can outmaneuver the giants—provided they have the right desk to work at.",
+        "grade": "A+",
+        "extension": "开源搜索代理若持续逼近闭源模型，会推动企业RAG和智能体检索栈降本，也会加剧向量数据库与模型厂商的生态绑定竞争。"
       },
       {
         "id": "2d242eb84202e24dbd28c8f05bc463e8",
-        "title": "Cursor年化收入破40亿美元，SpaceX收购在即",
-        "chinese_title": "Cursor年化收入破40亿美元，SpaceX收购在即",
+        "title": "Cursor年化收入据称冲过40亿美元",
+        "chinese_title": "Cursor年化收入据称冲过40亿美元",
         "original_title": "Source: Cursor, which is prepping for an expected acquisition by SpaceX, passed $4B in annualized revenue in the last week, up from $3B in April and $2B in Feb. (Richard Nieva/Forbes)",
-        "summary": "据称 Cursor 年化收入一周内突破 40 亿美元，延续数月高速增长势头，并可能在上市后被 SpaceX 收购，AI 编程工具赛道的资本竞争继续升温。",
+        "summary": "Forbes消息称，AI编程工具Cursor年化收入已在一周内突破40亿美元，并被指正准备接受SpaceX收购，增长速度继续抬高AI代码赛道估值想象。",
         "rating": "S",
-        "score": 96,
-        "type": "funding",
+        "score": 95,
+        "type": "financial",
         "typeName": "商业数据",
         "expansion": "Cursor高增长叠加SpaceX收购传闻，会放大AI编程工具估值、开发者入口争夺和马斯克AI生态整合的市场想象。",
         "entities": [
-          "Ai编程工具",
+          "Ai编程",
           "Cursor",
           "Elon Musk",
           "SpaceX"
@@ -559,24 +658,24 @@
         "event_id": null,
         "original_content": "Richard Nieva / Forbes : Source: Cursor, which is prepping for an expected acquisition by SpaceX, passed $4B in annualized revenue in the last week, up from $3B in April and $2B in Feb. — Elon Musk's rocket and AI company is expected to acquire the buzzy AI coding startup shortly after it goes public.",
         "grade": "S",
-        "extension": "这会把 AI 编程工具的估值锚点继续抬高，也可能推动航天、机器人和企业软件公司争抢开发者工具资产。"
+        "extension": "若收购和收入数据坐实，AI编程工具会从开发者应用变成战略资产，影响GitHub Copilot、OpenAI Codex和企业研发平台估值。"
       },
       {
         "id": "eb269cd09334db7d0eb033f53b2b3bdc",
-        "title": "苹果加码儿童账户控制，监管防线意味更浓",
-        "chinese_title": "苹果加码儿童账户控制，监管防线意味更浓",
+        "title": "苹果WWDC家长控制更新背后是监管压力",
+        "chinese_title": "苹果WWDC家长控制更新背后是监管压力",
         "original_title": "Apple&rsquo;s new parental controls are for keeping Apple out of trouble",
-        "summary": "苹果在 WWDC 推出更细的儿童账户和家长控制功能，表面是帮助家庭管理屏幕时间，背后也回应了全球互联网监管和与应用开发者的责任争议。",
+        "summary": "苹果在WWDC强化儿童账户和家长控制功能，表面上帮助家庭管理屏幕时间和上网体验，实际也被视为应对全球互联网监管和平台责任争议。",
         "rating": "B",
-        "score": 76,
+        "score": 78,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这类功能可能成为平台监管防御工具，并影响应用商店责任划分、青少年保护法案和Meta等社交平台的合规竞争。",
         "entities": [
           "Apple",
           "Meta",
-          "Wwdc",
-          "儿童账户"
+          "儿童账户",
+          "家长控制"
         ],
         "sourceLinks": [
           {
@@ -592,14 +691,14 @@
         "event_id": null,
         "original_content": "When Apple put child safety front and center at WWDC on Monday, its stated goal was helping parents fine-tune their kids' online experiences and avoid excessive screen time. But amid a global debate over internet regulation, its latest updates also looked like a defensive move in a brewing fight against Meta and other app developers. Apple announced an expanded toolkit for parents through its child accounts at WWDC, including a greater ability to customize kids' allotted screen time and the ability to block gory or violent images in messages before kids see them. Raja Bose, Apple's director of trust, safety, and values product marketing, to … Read the full story at The Verge.",
         "grade": "A",
-        "extension": "后续可关注苹果、Meta 与监管机构围绕未成年人保护责任的边界博弈，以及平台规则对第三方应用的影响。"
+        "extension": "儿童安全功能可能成为平台监管攻防的焦点，后续可关注Meta、应用开发者和各国青少年网络保护法案的博弈。"
       },
       {
         "id": "c39ad57d6bd74b61b111bcdcbdef3a63",
         "title": "OpenAI向SEC提交秘密S-1草案",
         "chinese_title": "OpenAI向SEC提交秘密S-1草案",
         "original_title": "OpenAI Submits S-1 Draft to SEC",
-        "summary": "OpenAI 宣布已向美国 SEC 秘密提交 S-1 草案，正式迈出潜在 IPO 的关键一步，但上市时点和最终结构仍未确定。",
+        "summary": "OpenAI宣布已向美国SEC秘密提交S-1草案，意味着公司启动上市准备流程，但具体时间表仍未确定，资本化进程继续加速。",
         "rating": "S",
         "score": 97,
         "type": "funding",
@@ -625,16 +724,16 @@
         "event_id": null,
         "original_content": "Comments",
         "grade": "S",
-        "extension": "OpenAI 若进入公开市场，将改变 AI 基础模型公司的融资、治理和信息披露节奏，并影响 Anthropic 等竞争对手估值。"
+        "extension": "OpenAI上市准备将重塑AI公司融资和治理预期，也会影响Anthropic、xAI等头部公司估值与员工股权流动安排。"
       },
       {
         "id": "9481a3f4724a1e945bf39c8ba3cf4372",
-        "title": "OpenAI秘密递表IPO，紧跟Anthropic步伐",
-        "chinese_title": "OpenAI秘密递表IPO，紧跟Anthropic步伐",
+        "title": "OpenAI跟进Anthropic秘密递交IPO文件",
+        "chinese_title": "OpenAI跟进Anthropic秘密递交IPO文件",
         "original_title": "OpenAI Confidentially Files for IPO on the Heels of SpaceX and Anthropic",
-        "summary": "OpenAI 已提交上市相关文件，时间上紧随 Anthropic 之后，显示头部 AI 公司正在从私募融资竞赛转向公开市场竞争。",
+        "summary": "Wired报道称OpenAI已提交上市相关文件，时间点紧随Anthropic之后，显示头部AI公司正把资本市场作为下一阶段竞争的重要通道。",
         "rating": "A+",
-        "score": 91,
+        "score": 73,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "OpenAI与Anthropic相继筹备上市，会把模型能力、收入增长、数据中心支出和安全治理都推向公开市场审视。",
@@ -656,26 +755,26 @@
         "source": "Feed: Artificial Intelligence Latest",
         "url": "https://www.wired.com/story/openai-confidentially-files-for-ipo/",
         "event_id": null,
-        "original_content": "The ChatGPT maker announced it has filed paperwork to go public, just a week after rival Anthropic took the same step.",
-        "grade": "A+",
-        "extension": "这将使模型公司在资本市场面对更强盈利和治理压力，也可能推动云厂商、芯片公司和应用生态重新定价。"
+        "original_content": "The ChatGPT-maker announced it has filed paperwork to go public, just a week after rival Anthropic took the same step.",
+        "grade": "B",
+        "extension": "OpenAI和Anthropic相继准备上市，会让AI基础模型公司的商业化、监管披露和安全承诺接受更强资本市场审视。"
       },
       {
         "id": "827aedbae3ff83773539942155eefe62",
-        "title": "OpenAI递交IPO文件，还计划员工股出售",
-        "chinese_title": "OpenAI递交IPO文件，还计划员工股出售",
+        "title": "OpenAI拟IPO前安排员工股份出售",
+        "chinese_title": "OpenAI拟IPO前安排员工股份出售",
         "original_title": "OpenAI Confidentially Files IPO Paperwork, Plans Separate Employee Share Sale",
-        "summary": "OpenAI 称已向 SEC 提交 IPO 草案，并据悉计划在上市前安排员工出售股份，为早期员工和投资者提供流动性窗口。",
+        "summary": "The Information称OpenAI已秘密提交IPO文件，并计划在上市前允许员工出售股份，这可能缓解早期员工流动性需求并重估内部股权价值。",
         "rating": "A+",
-        "score": 90,
+        "score": 88,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "员工售股安排会影响AI人才竞争和二级市场价格发现，也可能成为其他高估值AI公司上市前的参考模板。",
         "entities": [
+          "Anthropic",
           "Ipo",
           "OpenAI",
-          "Sec",
-          "员工股"
+          "员工股份"
         ],
         "sourceLinks": [
           {
@@ -691,24 +790,24 @@
         "event_id": null,
         "original_content": "OpenAI said on Monday that it has filed draft paperwork for an initial public offering with the Securities and Exchange Commission, a week after rival Anthropic said it had done the same. OpenAI also plans to let employees sell their shares ahead of the IPO, according to a person familiar with ...",
         "grade": "A+",
-        "extension": "员工股出售会成为观察 OpenAI 内部估值和人才稳定性的信号，也可能影响同类 AI 公司的人才激励安排。"
+        "extension": "员工股权出售会影响AI人才留存和二级市场估值，后续可关注OpenAI是否以流动性对抗竞争对手挖角。"
       },
       {
         "id": "233f70c225e8e5af52aaf97048549067",
-        "title": "OpenAI跟进Anthropic，秘密启动IPO流程",
-        "chinese_title": "OpenAI跟进Anthropic，秘密启动IPO流程",
+        "title": "OpenAI与Anthropic拉开AI上市竞赛",
+        "chinese_title": "OpenAI与Anthropic拉开AI上市竞赛",
         "original_title": "Following Anthropic, OpenAI files confidentially for IPO",
-        "summary": "在 Anthropic 递交上市文件一周多后，OpenAI 也秘密提交 IPO 文件，头部生成式 AI 公司上市竞赛进一步加速。",
+        "summary": "TechCrunch称OpenAI已秘密递交IPO文件，距离Anthropic启动上市流程仅一周多，头部AI公司之间的资本化竞赛进一步升温。",
         "rating": "A+",
-        "score": 89,
+        "score": 65,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "两家公司上市进程会影响AI基础设施融资、云厂商绑定关系和投资者对安全成本与商业化速度的判断。",
         "entities": [
+          "Ai公司",
           "Anthropic",
           "Ipo",
-          "OpenAI",
-          "生成式Ai"
+          "OpenAI"
         ],
         "sourceLinks": [
           {
@@ -723,17 +822,17 @@
         "url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/",
         "event_id": null,
         "original_content": "The filing comes a little more than a week after its main rival, Anthropic, also filed to go public, ramping up the race between the two AI firms.",
-        "grade": "A+",
-        "extension": "公开市场将迫使基础模型公司给出更清晰的商业化路径，相关云服务、算力租赁和企业 AI 应用也会受牵动。"
+        "grade": "B",
+        "extension": "上市竞赛会让模型公司从技术竞赛进入财务透明竞赛，训练成本、收入结构和安全治理都可能成为投资者关注焦点。"
       },
       {
         "id": "38ee52455e11e9f1d2a220ca4b4c527e",
-        "title": "OpenAI称IPO时间未定，仍想保留私有优势",
-        "chinese_title": "OpenAI称IPO时间未定，仍想保留私有优势",
+        "title": "OpenAI称IPO时间未定仍需保持私有灵活性",
+        "chinese_title": "OpenAI称IPO时间未定仍需保持私有灵活性",
         "original_title": "OpenAI confidentially files for an IPO, says it has \"not decided on timing yet\", as \"there are things we want to do that are likely easier as a private company\" (Ashley Capoot/CNBC)",
-        "summary": "OpenAI 已向 SEC 秘密提交 IPO 文件，但强调尚未决定上市时间，并表示仍有一些事务作为私营公司推进更容易。",
+        "summary": "CNBC报道OpenAI已秘密提交IPO文件，但公司表示尚未决定上市时间，仍有一些事情作为私营公司推进可能更容易。",
         "rating": "A+",
-        "score": 89,
+        "score": 75,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "IPO时间不确定凸显OpenAI在资本需求、治理结构和战略灵活性之间的拉扯，后续需关注估值与监管披露。",
@@ -756,25 +855,25 @@
         "url": "https://www.techmeme.com/260608/p54#a260608p54",
         "event_id": null,
         "original_content": "Ashley Capoot / CNBC : OpenAI confidentially files for an IPO, says it has “not decided on timing yet”, as “there are things we want to do that are likely easier as a private company” — OpenAI has confidentially filed for an IPO with the Securities and Exchange Commission …",
-        "grade": "A+",
-        "extension": "这反映出 OpenAI 在资本透明度、治理灵活性和战略保密之间的权衡，也会影响投资人对上市节奏的预期。"
+        "grade": "A",
+        "extension": "这种表态显示OpenAI在融资、治理和战略灵活性之间仍需权衡，后续可观察其是否先完成结构调整再正式上市。"
       },
       {
         "id": "91bebcc65ab81e2f31160325bc1d87cf",
-        "title": "AI公司上市潮逼近，伦理压力或被资本放大",
-        "chinese_title": "AI公司上市潮逼近，伦理压力或被资本放大",
+        "title": "AI公司上市潮放大伦理与盈利冲突",
+        "chinese_title": "AI公司上市潮放大伦理与盈利冲突",
         "original_title": "If You Think AI Companies Are Unethical Now, Wait Until They Go Public",
-        "summary": "文章借 OpenAI 由非营利愿景转向高额融资与潜在上市的变化，质疑 AI 公司公开上市后在伦理、安全和环境议题上承受的扭曲激励。",
+        "summary": "Futurism评论认为，OpenAI等AI公司走向上市会进一步放大盈利压力与公共利益承诺之间的冲突，AI伦理争议可能更难被公司治理吸收。",
         "rating": "A+",
-        "score": 88,
+        "score": 79,
         "type": "opinion",
         "typeName": "观点访谈",
         "expansion": "该观点可延伸到AI上市公司治理、算力能源消耗、公益使命弱化和公众投资者如何影响安全决策。",
         "entities": [
           "Ai伦理",
+          "Ipo",
           "OpenAI",
-          "Sam Altman",
-          "数据中心"
+          "Sam Altman"
         ],
         "sourceLinks": [
           {
@@ -789,18 +888,18 @@
         "url": "https://futurism.com/artificial-intelligence/ai-companies-going-public-ethics",
         "event_id": null,
         "original_content": "In November 2023, OpenAI CEO Sam Altman was unceremoniously forced out of the company following a dramatic power struggle. Since Altman’s ousting — and eventual rehiring — the conversation surrounding the ethics of the AI industry has only become more polarizing. OpenAI, once a research lab “ free from financial obligations ” and purportedly dedicated to the betterment of humankind through AI, transformed itself into a for-profit , raising staggering amounts of capital while largely betraying its nonprofit roots . Meanwhile, environmental and social concerns have been pushed to the wayside, as AI companies press for the construction of massive, polluting data centers even in the face of ferocious local opposition . After raising hundreds of billions of dollars, OpenAI — alongside its closest competitors, Anthropic and xAI parent company SpaceX — are set to go public this year, further raising the stakes by opening themselves up to the influence of retail and activist investors. The companies’ fiduciary duty to generate value could soon further undermine any lingering commitments to the ethical development of AI, likely setting the stage for their leaders shedding any pretense of a corporate moral compass. Then there are ongoing concerns over AI safety. We’ve already seen companies playing it fast and loose as they attempt to gain a competitive edge, an approach that has already led to tragic outcomes . “At OpenAI you’ve had this sort of governance struggle that resulted in, among other things, Sam Altman being fired and rehired,” argued the New York Times ‘ Kevin Roose during a recent episode of the “Hard Fork” podcast . “At Anthropic, they have sort of made themselves a public benefit corporation to try to kind of lessen the influence of sort of shareholder capital and fiduciary duty on their ability to make decisions related to safety.” “But I think all of that just gets much harder in a world where these are publicly traded companies that big investors, index fund holders, and retirees are invested in,” Roose added, arguing it was “already going to be hard” to slow down the release of new models given the “enormous sums of money that these companies have raised.” On the flip side, others predict that the massive wave of funding could lead to a surge in altruistic spending, a “ third wave of philanthropy .” All of Anthropic’s seven cofounders have pledged to give away 80 percent of their wealth , with CEO Dario Amodei arguing that the “thing to worry about is a level of wealth concentration that will break society.” Some argue that all of that extra liquid cash could be used for decarbonization and the development of new green energy tech, a pertinent subject considering the AI rush’s rapidly growing carbon footprint. “It is not lost on the people who are working on AI that there are big environmental impacts associated with data centers,” Trellis Climate managing director Lara Pierpoint told Heatmap News . Of course, whether tech leaders will hold themselves accountable once their firms go public remains to be seen. But given the way the AI industry has already doubled down on generating as much money as possible, safety and the environment be damned, long before the imminent IPOs, it’s far from a guarantee. More on AI ethics: You Can Now Get a Religious Exemption From Using AI at Work The post If You Think AI Companies Are Unethical Now, Wait Until They Go Public appeared first on Futurism .",
-        "grade": "A+",
-        "extension": "可延伸观察上市公司治理如何影响模型安全承诺，以及数据中心扩张、监管披露和股东回报之间的冲突。"
+        "grade": "A",
+        "extension": "随着头部AI公司资本化，安全承诺、董事会权力和商业化压力会成为长期报道线索，监管和投资人也会提出更硬约束。"
       },
       {
         "id": "3926aa186c8f6f1eec6c2ea3e2b6f37e",
-        "title": "苹果WWDC主打补课，Siri AI只是其中一环",
-        "chinese_title": "苹果WWDC主打补课，Siri AI只是其中一环",
+        "title": "苹果WWDC主线变成补课和Siri重启",
+        "chinese_title": "苹果WWDC主线变成补课和Siri重启",
         "original_title": "Apple plays catch-up at WWDC",
-        "summary": "苹果在 WWDC 上集中展示修复、性能改进和长期被期待的功能，再推出升级版 Siri，试图把 AI 放进整体软件体验升级中。",
+        "summary": "苹果在WWDC上强调修复、性能和用户期待已久的功能，再推出升级版AI Siri，试图把AI包装成整体软件体验改善的一部分。",
         "rating": "A",
-        "score": 80,
-        "type": "product",
+        "score": 79,
+        "type": "industry",
         "typeName": "行业动态",
         "expansion": "苹果的叙事会影响开发者对Apple Intelligence的投入，也会牵动与Google、OpenAI等模型伙伴及竞品手机生态的比较。",
         "entities": [
@@ -823,16 +922,16 @@
         "event_id": null,
         "original_content": "Apple spent much of its WWDC keynote highlighting fixes, performance improvements, and long-requested features before unveiling its upgraded AI-powered Siri, signaling that the company wants users to see AI as just one part of a broader effort to improve its software.",
         "grade": "A",
-        "extension": "这会影响外界对 Apple Intelligence 的预期，也为开发者判断苹果 AI 生态的成熟度提供新信号。"
+        "extension": "苹果的AI叙事从炫技转向补齐体验短板，后续可观察开发者和用户是否接受这种慢节奏，以及与谷歌、OpenAI生态的差距。"
       },
       {
         "id": "f93ce6b94abd8ffcf3ad58609644459a",
-        "title": "苹果再启Siri重做，Gemini模型成关键支撑",
-        "chinese_title": "苹果再启Siri重做，Gemini模型成关键支撑",
+        "title": "苹果再次重启Siri这次接入Gemini",
+        "chinese_title": "苹果再次重启Siri这次接入Gemini",
         "original_title": "Apple Tries for Another Siri Reboot",
-        "summary": "苹果在开发者大会上推出新的 Siri AI，并据称使用 Google Gemini 模型，让用户通过独立 Siri 应用接入更强的语音助手能力。",
+        "summary": "The Information称苹果在开发者大会推出新版Siri AI，并使用谷歌Gemini模型支持更强语音助手能力，试图扭转Siri多年落后的印象。",
         "rating": "A+",
-        "score": 86,
+        "score": 87,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "Siri重启将检验苹果外部模型合作路线，也会影响Google Gemini在消费终端入口上的话语权。",
@@ -855,25 +954,25 @@
         "url": "https://www.theinformation.com/briefings/apple-tries-another-siri-reboot",
         "event_id": null,
         "original_content": "Apple launched a much anticipated new version of its Siri voice assistant at the start of its annual developer conference on Monday, which users will be able to access through a new Siri app. The refreshed voice assistant, now called Siri AI, which uses Google’s Gemini models, will allow users ...",
-        "grade": "A",
-        "extension": "如果苹果选择外部模型补齐能力，Google 与苹果的 AI 合作边界、隐私叙事和平台控制权都会成为后续看点。"
+        "grade": "A+",
+        "extension": "如果苹果深度依赖Gemini，会改变其自研AI与外部模型的边界，也会影响谷歌在iOS生态中的议价能力。"
       },
       {
         "id": "80e13a78aea8a8e31143d9698250f9a0",
-        "title": "苹果免小开发者AI云费用，争夺应用生态",
-        "chinese_title": "苹果免小开发者AI云费用，争夺应用生态",
+        "title": "苹果用免费AI接口拉拢小开发者",
+        "chinese_title": "苹果用免费AI接口拉拢小开发者",
         "original_title": "Apple bets cheaper AI will woo small developers",
-        "summary": "苹果计划为首年 App Store 下载量低于 200 万的小开发者免除云 API 费用，降低其尝试 AI 功能的成本门槛。",
+        "summary": "苹果将为首次下载量低于200万的开发者免除云端AI API成本，希望降低小团队尝试AI功能的门槛，扩大Apple Intelligence生态。",
         "rating": "A",
-        "score": 78,
-        "type": "product",
+        "score": 77,
+        "type": "industry",
         "typeName": "行业动态",
         "expansion": "免费额度可能改变小开发者采用Apple Intelligence的速度，也会对OpenAI、Google等第三方API的开发者预算形成竞争。",
         "entities": [
-          "Ai开发者",
+          "Ai Api",
           "App Store",
           "Apple",
-          "云Api"
+          "开发者"
         ],
         "sourceLinks": [
           {
@@ -889,23 +988,23 @@
         "event_id": null,
         "original_content": "As AI experimentation grows more expensive, Apple is waiving cloud API costs for developers with fewer than 2 million first-time App Store downloads.",
         "grade": "A",
-        "extension": "该策略可能刺激中小应用接入苹果 AI 能力，并与 OpenAI、Google 等第三方 API 形成开发者成本竞争。"
+        "extension": "免费额度会直接影响开发者是否选择苹果AI栈，后续可比较谷歌、OpenAI和云厂商对中小开发者的价格策略。"
       },
       {
         "id": "c140a5a78bd06b44150d3b856a1ef26a",
-        "title": "Waymo花2.2亿美元接手苹果自动驾驶试验场",
-        "chinese_title": "Waymo花2.2亿美元接手苹果自动驾驶试验场",
+        "title": "Waymo花2.2亿美元买下苹果自动驾驶试验场",
+        "chinese_title": "Waymo花2.2亿美元买下苹果自动驾驶试验场",
         "original_title": "Waymo bought Apple’s self-driving car proving ground for $220M",
-        "summary": "Waymo 已收购亚利桑那州一处 5500 英亩的自动驾驶试验场，该场地与苹果相关公司有关，交易金额约 2.2 亿美元。",
+        "summary": "Waymo收购了与苹果相关的亚利桑那州5500英亩自动驾驶试验场，交易金额为2.2亿美元，显示苹果汽车遗产正被行业玩家重新吸收。",
         "rating": "A",
-        "score": 77,
+        "score": 78,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "交易可延伸到苹果汽车项目资产退出、Waymo商业化扩张节奏，以及自动驾驶测试场地成为稀缺基础设施的趋势。",
         "entities": [
           "Apple",
+          "Arizona",
           "Waymo",
-          "亚利桑那试验场",
           "自动驾驶"
         ],
         "sourceLinks": [
@@ -922,7 +1021,7 @@
         "event_id": null,
         "original_content": "Waymo has acquired a massive 5,500-acre proving ground in Arizona owned by Route 14 Investment Partners LLC, a Delaware shell company associated with Apple, according to documents filed with Maricopa County.",
         "grade": "A",
-        "extension": "这既显示苹果汽车遗留资产继续出清，也可能增强 Waymo 在封闭场地测试和无人车商业化上的基础设施优势。"
+        "extension": "该交易既是苹果退出造车后的资产流向，也可能增强Waymo测试能力，后续可关注自动驾驶商业化和Robotaxi扩张节奏。"
       },
       {
         "id": "ea983b13ed55f62a7af2b0f89509757e",
@@ -959,18 +1058,17 @@
       },
       {
         "id": "4c445064bfdb95b22bd0e28f952f9075",
-        "title": "Google升级NotebookLM，引入更强智能体能力",
-        "chinese_title": "Google升级NotebookLM，引入更强智能体能力",
+        "title": "Google升级NotebookLM加入更强代理能力",
+        "chinese_title": "Google升级NotebookLM加入更强代理能力",
         "original_title": "Google upgrades NotebookLM, which now runs on Gemini 3.5 and Antigravity, to deliver new agentic capabilities and more advanced reasoning for AI Ultra users (Ivan Mehta/TechCrunch)",
-        "summary": "Google 更新 NotebookLM，将默认模型升级到 Gemini 并结合 Antigravity，为 AI Ultra 用户提供更强推理和智能体能力。",
+        "summary": "Google宣布升级NotebookLM，将默认模型迁至Gemini并为AI Ultra用户加入更强代理能力和推理功能，继续强化研究助手定位。",
         "rating": "A+",
-        "score": 86,
+        "score": 81,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "NotebookLM升级会推动AI研究助手从资料整理走向任务执行，并加剧Google、OpenAI和Perplexity在知识工作入口的竞争。",
         "entities": [
           "Ai Ultra",
-          "Antigravity",
           "Gemini",
           "Google",
           "Notebooklm"
@@ -989,16 +1087,16 @@
         "event_id": null,
         "original_content": "Ivan Mehta / TechCrunch : Google upgrades NotebookLM, which now runs on Gemini 3.5 and Antigravity, to deliver new agentic capabilities and more advanced reasoning for AI Ultra users — Google on Monday announced an update to its NotebookLM research tool, which includes new features and the shift to Gemini 3.5 as the default model.",
         "grade": "A",
-        "extension": "NotebookLM 的升级会推动研究助理工具从摘要走向任务执行，也会与 ChatGPT、Claude 等生产力工具正面竞争。"
+        "extension": "NotebookLM增强代理能力会加剧AI研究工具竞争，也会影响Perplexity、ChatGPT和企业知识管理产品的功能边界。"
       },
       {
         "id": "4595d2641d2d79b1b14fb08fec2d501a",
-        "title": "WWDC隐藏更新盘点，苹果多系统细节补齐",
-        "chinese_title": "WWDC隐藏更新盘点，苹果多系统细节补齐",
+        "title": "苹果WWDC还有44个小功能没被讲透",
+        "chinese_title": "苹果WWDC还有44个小功能没被讲透",
         "original_title": "44 things coming to your Apple devices that you might have missed",
-        "summary": "苹果在 WWDC 上除 AI 和 Siri 外还带来大量系统细节更新，包括 Liquid Glass 滑块、各平台小功能和秋季上线计划。",
+        "summary": "The Verge梳理苹果WWDC中被AI和Siri话题掩盖的44项系统小功能，包括Liquid Glass滑块和多平台更新细节，展示苹果软件更新的长尾变化。",
         "rating": "B",
-        "score": 71,
+        "score": 68,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "这些小功能体现苹果系统体验补强方向，也可能影响用户升级意愿、开发者适配成本和不同设备生态协同。",
@@ -1006,7 +1104,6 @@
           "Apple",
           "Ios",
           "Liquid Glass",
-          "Macos",
           "Wwdc"
         ],
         "sourceLinks": [
@@ -1023,7 +1120,7 @@
         "event_id": null,
         "original_content": "A Liquid Glass slider! This year's WWDC keynote was all about AI. But with all the attention on Apple Intelligence and Siri AI, the company breezed by - or neglected to mention - a bunch of cool, smaller features across its new updates. I've rounded up a bunch of them right here. The new operating systems are available in developer beta today ahead of public betas beginning in July. They'll launch for everyone this fall. And keep an eye on The Verge in the coming days and weeks ahead; as everyone starts to really dig into what's new, we might find even more great features to look forward to. iOS 27 Liquid Glass is getting an opacity slider. Apps launch up … Read the full story at The Verge.",
         "grade": "B",
-        "extension": "这些小功能会影响用户对系统升级的真实感知，也为开发者适配新 UI 和平台能力提供具体方向。"
+        "extension": "这些小功能会影响用户升级感知和开发者适配优先级，后续可从测试版体验中筛选真正提升效率的变化。"
       },
       {
         "id": "a7559729b45a4aa776b9557a7592c585",
@@ -2202,66 +2299,6 @@
       }
     ],
     "2026-06-08": [
-      {
-        "id": "a20f5fe02d520890f49e55ace726aed1",
-        "title": "ICML拒稿评审可见性引疑，OpenReview设置待澄清",
-        "chinese_title": "ICML拒稿评审可见性引疑，OpenReview设置待澄清",
-        "original_title": "ICML rejected paper visibility [D]",
-        "summary": "一名作者称 ICML 拒稿后未选择公开评审，但 OpenReview 页面显示似乎对所有人可见，引发对会议评审可见规则的疑问。",
-        "rating": "B",
-        "score": 66,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这可延伸到 AI 学术会议透明度、作者隐私和 OpenReview 默认设置风险，适合关注会议治理细节。",
-        "entities": [
-          "Icml",
-          "Openreview",
-          "学术会议",
-          "评审可见性"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tzz8f4/icml_rejected_paper_visibility_d/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780958117,
-        "published_at": "2026-06-09T06:35:17.856494",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tzz8f4/icml_rejected_paper_visibility_d/",
-        "event_id": null
-      },
-      {
-        "id": "366ec595b35b3efcb1d5452fb75a998b",
-        "title": "数据科学家补软件工程课，AI岗位技能边界重画",
-        "chinese_title": "数据科学家补软件工程课，AI岗位技能边界重画",
-        "original_title": "Software and ops skills for data scientists[D]",
-        "summary": "社区讨论认为随着软件工程师进入数据科学和 AI 领域，数据背景从业者也需要补足开发、运维和工程化能力以适应行业竞争。",
-        "rating": "B",
-        "score": 66,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "这反映 AI 岗位从模型能力走向工程交付的趋势，可延伸到 MLOps、数据平台和复合型人才培养。",
-        "entities": [
-          "Ai岗位",
-          "Mlops",
-          "数据科学家",
-          "软件工程"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1tzxf3z/software_and_ops_skills_for_data_scientistsd/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780958117,
-        "published_at": "2026-06-09T06:35:17.856587",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1tzxf3z/software_and_ops_skills_for_data_scientistsd/",
-        "event_id": null
-      },
       {
         "id": "6ecf9717b4755b555a5a04c20f3d5229",
         "title": "SpaceX万亿美元IPO估值被质疑难以自洽",
@@ -12820,6 +12857,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-09T06:37:47.847297",
-  "total_news": 401
+  "last_updated": "2026-06-09T06:39:38.900736",
+  "total_news": 402
 }
