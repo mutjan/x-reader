@@ -2,13 +2,74 @@
   "news": {
     "2026-06-08": [
       {
+        "id": "d923c45a149f296806360f2b47e4ba51",
+        "title": "Anthropic警示AI自我改进风险升温",
+        "chinese_title": "Anthropic警示AI自我改进风险升温",
+        "original_title": "Anthropic Sounds Alarm on Recursive Self-Improvement",
+        "summary": "Anthropic称Claude已能编写公司大部分代码，同时提醒递归自我改进正在从概念走向产业焦点，OpenAI、DeepMind及新创公司也在加速布局。",
+        "rating": "S",
+        "score": 97,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该话题可延伸到AI实验室安全治理、模型研发自动化边界，以及资本对递归自我改进创业公司的追捧是否会推高监管压力。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "DeepMind",
+          "OpenAI",
+          "递归自我改进"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/anthropic-sounds-alarm-recursive-self-improvement"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780927453,
+        "published_at": "2026-06-08T22:04:13.548320",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/anthropic-sounds-alarm-recursive-self-improvement",
+        "event_id": null
+      },
+      {
+        "id": "613b3ba1b2b647e984300f7fe4592922",
+        "title": "ChatGPT准备最大改版冲向超级应用",
+        "chinese_title": "ChatGPT准备最大改版冲向超级应用",
+        "original_title": "\"Chat is dead\": OpenAI preps overhaul of ChatGPT",
+        "summary": "OpenAI计划对ChatGPT进行上线以来最大幅度改造，把聊天入口升级为包含编程工具和AI代理的超级应用，以寻找上市前的新增长点。",
+        "rating": "S",
+        "score": 100,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "后续可观察ChatGPT是否从聊天产品转为AI操作系统入口，并进一步影响企业付费、开发者生态和与Anthropic等对手的竞争。",
+        "entities": [
+          "Ai代理",
+          "Anthropic",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/06/chat-is-dead-openai-preps-overhaul-of-chatgpt/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780927453,
+        "published_at": "2026-06-08T22:04:13.548449",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/06/chat-is-dead-openai-preps-overhaul-of-chatgpt/",
+        "event_id": null
+      },
+      {
         "id": "db6e9c680af808b04aae2dbe2de91ed1",
-        "title": "谷歌英伟达转向英特尔代工AI芯片",
-        "chinese_title": "谷歌英伟达转向英特尔代工AI芯片",
+        "title": "谷歌英伟达转向英特尔试探先进制程",
+        "chinese_title": "谷歌英伟达转向英特尔试探先进制程",
         "original_title": "Sources: Google recently placed an order with Intel to manufacture 3M+ TPUs in 2028; Nvidia is testing Intel's tech for a new processor and running 18A trials (Qianer Liu/The Information)",
-        "summary": "消息称谷歌已向英特尔下单2028年生产超过300万颗TPU，英伟达也在测试英特尔18A工艺，TSMC产能紧张正在给英特尔先进制程带来转机。",
+        "summary": "消息称谷歌已向英特尔下单2028年生产超过300万颗TPU，英伟达也在测试英特尔工艺，TSMC产能紧张正给英特尔带来窗口。",
         "rating": "A+",
-        "score": 91,
+        "score": 94,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "该事件可延伸观察AI芯片供应链从TSMC单点依赖走向多厂备份的趋势，以及英特尔18A能否借谷歌、英伟达订单重塑代工可信度。",
@@ -30,16 +91,19 @@
         "published_at": "2026-06-08T21:47:12.348463",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260608/p12#a260608p12",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Qianer Liu / The Information : Sources: Google recently placed an order with Intel to manufacture 3M+ TPUs in 2028; Nvidia is testing Intel's tech for a new processor and running 18A trials — TSMC's capacity struggles are turning into a boon for Intel. — As the Taiwanese chip making giant struggles to meet overwhelming demand …",
+        "grade": "S",
+        "extension": "可继续追踪Intel 18A能否进入AI芯片主供应链，以及TSMC产能瓶颈是否促使谷歌、英伟达形成多代工厂策略。"
       },
       {
         "id": "69fba6bf3420b156eac288be98c706f8",
-        "title": "Bending Spoons赴美IPO加速并购",
-        "chinese_title": "Bending Spoons赴美IPO加速并购",
+        "title": "Bending Spoons赴美IPO加速并购旧互联网资产",
+        "chinese_title": "Bending Spoons赴美IPO加速并购旧互联网资产",
         "original_title": "Bending Spoons Files to Go Public",
-        "summary": "意大利互联网集团Bending Spoons已在美国提交IPO文件，计划借公开募资继续收购AOL、Eventbrite、Evernote、Vimeo等成熟互联网资产。",
+        "summary": "收购AOL、Eventbrite、Evernote和Vimeo等资产的意大利公司Bending Spoons已申请在美国上市，计划借助资本市场继续扩大并购。",
         "rating": "A",
-        "score": 77,
+        "score": 85,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "可延伸关注其以收购老牌互联网产品为核心的整合模式，IPO资金是否会推动更多低增长但高现金流软件资产被重新定价。",
@@ -61,16 +125,19 @@
         "published_at": "2026-06-08T21:47:12.348693",
         "source": "The Information",
         "url": "https://www.theinformation.com/briefings/bending-spoons-files-go-public",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Italian conglomerate Bending Spoons, which has acquired a string of aging U.S. internet businesses including AOL, Eventbrite, Evernote and Vimeo, filed to go public in the U.S. to give it the funds to pursue more acquisitions. The company’s IPO paperwork shows Bending Spoons’ revenue ...",
+        "grade": "A",
+        "extension": "后续可关注其上市估值、老牌互联网资产整合效率，以及通过并购重塑软件产品组合的模式是否被资本市场认可。"
       },
       {
         "id": "8529bb8581c76c02885088710cb5b23c",
-        "title": "谷歌英伟达考虑英特尔作备用代工厂",
-        "chinese_title": "谷歌英伟达考虑英特尔作备用代工厂",
+        "title": "谷歌英伟达考虑把英特尔纳入备选代工",
+        "chinese_title": "谷歌英伟达考虑把英特尔纳入备选代工",
         "original_title": "Google and Nvidia Consider Intel as Backup Chip Manufacturer",
-        "summary": "The Information称TSMC先进制程产能吃紧，谷歌、英伟达等AI芯片设计公司正悄悄评估英特尔作为先进处理器备用制造商。",
+        "summary": "在TSMC先进制程产能供不应求之际，Google和Nvidia等AI芯片设计公司正考虑让Intel承担部分先进处理器制造任务。",
         "rating": "S",
-        "score": 92,
+        "score": 96,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "该事件可继续追踪英特尔代工业务能否从备用供应商升级为核心产能伙伴，并影响AI芯片公司议价能力和产能规划。",
@@ -92,16 +159,19 @@
         "published_at": "2026-06-08T21:47:12.348783",
         "source": "The Information",
         "url": "https://www.theinformation.com/articles/google-nvidia-consider-intel-backup-chip-manufacturer",
-        "event_id": null
+        "event_id": null,
+        "original_content": "TSMC’s capacity struggles are turning into a boon for Intel. As the Taiwanese chip making giant struggles to meet overwhelming demand for its chip manufacturing capacity, several major AI chip design companies, including Google and Nvidia, are quietly turning to Intel as a backup manufacturer for their most advanced processors, according to four people with direct knowledge of the discussions.",
+        "grade": "S",
+        "extension": "这一变化可继续观察AI芯片供应链从单一依赖TSMC转向多元化，以及Intel先进制程商业化能否借AI需求翻身。"
       },
       {
         "id": "e25f459851fbe7ffdfe4d87fe53e416c",
-        "title": "Anthropic更新Project Glasswing安全进展",
-        "chinese_title": "Anthropic更新Project Glasswing安全进展",
+        "title": "Anthropic更新Project Glasswing安全项目",
+        "chinese_title": "Anthropic更新Project Glasswing安全项目",
         "original_title": "Anthropic's Project Glasswing Update",
-        "summary": "Bruce Schneier博客聚合了Anthropic旗下Project Glasswing的最新进展讨论，焦点指向AI安全、系统防护和高风险模型治理相关实践。",
+        "summary": "Bruce Schneier博客更新Anthropic Project Glasswing相关进展，信息量有限但指向AI安全、模型防护和行业安全协作议题。",
         "rating": "A",
-        "score": 75,
+        "score": 73,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "可延伸观察Anthropic如何把安全项目从研究表述落到可审计机制，以及外部安全专家对AI治理方案的持续评价。",
@@ -122,16 +192,19 @@
         "published_at": "2026-06-08T21:47:12.348869",
         "source": "Hacker News",
         "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-project-glasswing-update.html",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "B",
+        "extension": "可作为AI安全项目持续跟踪线索，后续需要结合Anthropic官方材料判断Project Glasswing的具体技术路线和外部影响。"
       },
       {
         "id": "08aaa3e2773a6c00f94ac0a5181e25bb",
-        "title": "英伟达联手LG在韩国打造人形机器人",
-        "chinese_title": "英伟达联手LG在韩国打造人形机器人",
+        "title": "英伟达携手LG在韩国打造人形机器人",
+        "chinese_title": "英伟达携手LG在韩国打造人形机器人",
         "original_title": "Nvidia partners with LG robotics to build humanoid robots in South Korea",
-        "summary": "英伟达宣布与LG集团合作建设AI工厂，面向韩国推进机器人和人形机器人能力，显示芯片平台正向制造、机器人落地场景加速延伸。",
+        "summary": "Nvidia与LG集团合作建设AI工厂和机器人能力，目标是在韩国推进人形机器人等实体AI应用，强化从算力到制造场景的落地。",
         "rating": "A",
-        "score": 83,
+        "score": 87,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "该合作可延伸到韩国本土机器人产业链、AI工厂商业化和英伟达从算力供应商向具身智能平台方扩张的战略。",
@@ -153,16 +226,19 @@
         "published_at": "2026-06-08T21:47:12.348960",
         "source": "Hacker News",
         "url": "https://blogs.nvidia.com/blog/nvidia-and-lg-group-ai-factory/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "A+",
+        "extension": "可延伸到韩国制造业AI化、人形机器人供应链，以及Nvidia如何把GPU、仿真和AI工厂方案打包进入工业客户。"
       },
       {
         "id": "85c99bccec90c07528da6532d1182c51",
-        "title": "Vimeo母公司赴美IPO首季扭亏",
-        "chinese_title": "Vimeo母公司赴美IPO首季扭亏",
+        "title": "Bending Spoons递表美股一季度扭亏",
+        "chinese_title": "Bending Spoons递表美股一季度扭亏",
         "original_title": "Bending Spoons files for a US IPO, reporting a net income of $27.5M on revenue of $601M in Q1, vs. a net loss of $112.2M on revenue of $259M a year earlier (Arasu Kannagi Basil/Reuters)",
-        "summary": "Bending Spoons提交美国IPO申请，披露一季度营收6.01亿美元、净利润2750万美元，而去年同期仍亏损1.122亿美元，IPO窗口继续升温。",
+        "summary": "Vimeo母公司Bending Spoons申请在美国IPO，一季度收入增至6.01亿美元并实现2750万美元净利润，较去年同期明显改善。",
         "rating": "A",
-        "score": 83,
+        "score": 84,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "可延伸关注欧美科技IPO窗口恢复、并购型软件集团的盈利质量，以及Vimeo等老牌互联网资产在资本市场的新估值逻辑。",
@@ -183,7 +259,10 @@
         "published_at": "2026-06-08T21:47:12.349052",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260608/p10#a260608p10",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Arasu Kannagi Basil / Reuters : Bending Spoons files for a US IPO, reporting a net income of $27.5M on revenue of $601M in Q1, vs. a net loss of $112.2M on revenue of $259M a year earlier — Vimeo parent Bending Spoons filed for a U.S. initial public offering on Monday, as a busy summer IPO window takes shape.",
+        "grade": "A",
+        "extension": "该线索可结合The Information报道观察其并购驱动增长是否可持续，以及美国IPO窗口回暖对软件资产整合公司的影响。"
       },
       {
         "id": "92d37555d438abc2a02e67ad41a76927",
@@ -10406,6 +10485,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-08T21:47:45.798702",
-  "total_news": 324
+  "last_updated": "2026-06-08T22:04:41.027954",
+  "total_news": 326
 }
