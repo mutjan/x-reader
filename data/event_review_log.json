@@ -641,6 +641,25 @@
           "reason": "Reuters口径与The Information口径都是Bending Spoons赴美IPO同一事件，应合并。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-06-09T06:33:47.445703",
+      "batch_id": "20260609063347",
+      "corrections_applied": 2,
+      "details": [
+        {
+          "news_id": "233f70c225e8e5af52aaf97048549067",
+          "from_event_id": "e5e31c57",
+          "to_event_id": "601af8ca",
+          "reason": "该新闻核心事实仍是OpenAI秘密递交IPO文件，Anthropic只是上市竞速背景，应并入OpenAI IPO主事件。"
+        },
+        {
+          "news_id": "3926aa186c8f6f1eec6c2ea3e2b6f37e",
+          "from_event_id": "e2a51077",
+          "to_event_id": "new_event",
+          "reason": "该新闻聚焦苹果WWDC软件与AI叙事，不应归入同时包含SpaceX上市传闻的混合事件。"
+        }
+      ]
     }
   ]
 }
