@@ -604,6 +604,43 @@
           "reason": "该新闻与已有事件“Kimi母公司被曝洽谈新融资”同属月之暗面新融资/估值上调事件，应合并而不是单独新建事件。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-06-08T22:05:53.338594",
+      "batch_id": "20260608220553",
+      "corrections_applied": 5,
+      "details": [
+        {
+          "news_id": "d923c45a149f296806360f2b47e4ba51",
+          "from_event_id": "65ecde27",
+          "to_event_id": "53c3bcb7",
+          "reason": "同属OpenAI和Anthropic围绕递归自我改进的安全与产业竞逐，不应拆成新事件。"
+        },
+        {
+          "news_id": "613b3ba1b2b647e984300f7fe4592922",
+          "from_event_id": "00d8546c",
+          "to_event_id": "7dd24721",
+          "reason": "该新闻与既有ChatGPT重做成智能体/超级应用事件一致，应合并到已有多来源事件。"
+        },
+        {
+          "news_id": "e25f459851fbe7ffdfe4d87fe53e416c",
+          "from_event_id": "21b6aecc",
+          "to_event_id": "5cf92ea6",
+          "reason": "Project Glasswing已包含在Anthropic关键基础设施与安全项目事件中，应合并。"
+        },
+        {
+          "news_id": "08aaa3e2773a6c00f94ac0a5181e25bb",
+          "from_event_id": "7a2ba4ce",
+          "to_event_id": "8730c9e3",
+          "reason": "同为Nvidia与LG围绕AI工厂和机器人合作的进展，应归入已有事件。"
+        },
+        {
+          "news_id": "85c99bccec90c07528da6532d1182c51",
+          "from_event_id": "2da53d4f",
+          "to_event_id": "8d437166",
+          "reason": "Reuters口径与The Information口径都是Bending Spoons赴美IPO同一事件，应合并。"
+        }
+      ]
     }
   ]
 }
