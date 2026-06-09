@@ -2,21 +2,83 @@
   "news": {
     "2026-06-09": [
       {
-        "id": "9454be0ba4a0d13e9022aa0478bae2a3",
-        "title": "小米万亿参数模型跑出千Token每秒",
-        "chinese_title": "小米万亿参数模型跑出千Token每秒",
-        "original_title": "Xiaomi claims MiMo-V2.5-Pro-UltraSpeed tops 1K tokens/second, a first at the 1T-parameter scale, using a standard 8-GPU commodity node; API trial starts June 9 (Jose Antonio Lanz/Decrypt)",
-        "summary": "小米称其MiMo新版本在标准8卡节点上实现万亿参数模型每秒超千Token推理，并于6月9日开放API试用，显示手机厂商正加速切入大模型基础能力竞争。",
+        "id": "c77377ae5c02592d4bab93dcf22a1ade",
+        "title": "苹果重做App Store订阅工具，瞄准企业和学校",
+        "chinese_title": "苹果重做App Store订阅工具，瞄准企业和学校",
+        "original_title": "Apple overhauls the App Store with subscription options for groups, businesses, and schools, retention messaging to reduce churn, bundled IAP reviews, and more (Andrew Orr/AppleInsider)",
+        "summary": "苹果为App Store加入面向群组、企业和学校的订阅选项，同时提供留存提示、个性化推荐和内购捆绑审核等能力，试图帮助开发者降低流失并提升变现效率。",
+        "rating": "A",
+        "score": 83,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这会影响开发者订阅产品的定价与分发方式，也可能推动教育、企业采购场景里的应用商店商业模式变化。后续可观察苹果与开发者分成、反垄断监管之间的连锁反应。",
+        "entities": [
+          "App Store",
+          "Apple",
+          "开发者",
+          "订阅服务"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "https://www.techmeme.com/260608/p65#a260608p65"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780977839,
+        "published_at": "2026-06-09T12:03:59.613491",
+        "source": "Techmeme (apple)",
+        "url": "https://www.techmeme.com/260608/p65#a260608p65",
+        "event_id": null
+      },
+      {
+        "id": "340ea9938c44a7d6cd99b6947f240a25",
+        "title": "iOS 27测试版泄露苹果折叠屏iPhone关键线索",
+        "chinese_title": "iOS 27测试版泄露苹果折叠屏iPhone关键线索",
+        "original_title": "The first developer beta of iOS 27 offers the clearest signs yet of Apple's upcoming foldable iPhone, with references to folding hardware and flexible displays (Mark Gurman/Bloomberg)",
+        "summary": "iOS 27首个开发者测试版中出现折叠硬件和柔性显示相关引用，被视为苹果即将推出折叠屏iPhone的最清晰公开信号，相关软硬件适配已进入系统层面。",
         "rating": "A",
         "score": 86,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "如果苹果入局折叠屏，将重塑高端手机形态竞争，并带动柔性面板、铰链、应用适配和供应链订单变化。后续可延伸到三星、华为等竞品的策略反应。",
+        "entities": [
+          "Apple",
+          "Ios",
+          "Iphone",
+          "折叠屏",
+          "柔性显示"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "https://www.techmeme.com/260608/p64#a260608p64"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780977839,
+        "published_at": "2026-06-09T12:03:59.613624",
+        "source": "Techmeme (apple)",
+        "url": "https://www.techmeme.com/260608/p64#a260608p64",
+        "event_id": null
+      },
+      {
+        "id": "9454be0ba4a0d13e9022aa0478bae2a3",
+        "title": "小米万亿参数模型声称8卡节点跑过千token每秒",
+        "chinese_title": "小米万亿参数模型声称8卡节点跑过千token每秒",
+        "original_title": "Xiaomi claims MiMo-V2.5-Pro-UltraSpeed tops 1K tokens/second, a first at the 1T-parameter scale, using a standard 8-GPU commodity node; API trial starts June 9 (Jose Antonio Lanz/Decrypt)",
+        "summary": "小米称MiMo新版本在万亿参数规模下，用标准8 GPU商品节点实现超过每秒1000 token的生成速度，并从6月9日开放API试用，强调低成本高吞吐的大模型推理能力。",
+        "rating": "A",
+        "score": 83,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "可延伸观察国产硬件集群上的大模型推理效率竞争，以及小米是否会把模型能力嵌入手机、汽车和IoT生态。若指标被复现，可能影响开源模型部署成本预期。",
         "entities": [
           "Api",
+          "Gpu",
+          "LLM",
           "Mimo",
-          "大模型推理",
-          "小米"
+          "Xiaomi"
         ],
         "sourceLinks": [
           {
@@ -29,24 +91,28 @@
         "published_at": "2026-06-09T11:03:02.830609",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260608/p63#a260608p63",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Jose Antonio Lanz / Decrypt : Xiaomi claims MiMo-V2.5-Pro-UltraSpeed tops 1K tokens/second, a first at the 1T-parameter scale, using a standard 8-GPU commodity node; API trial starts June 9 — Most people know Xiaomi as the Chinese phone brand. The one that makes cheap electric scooters and air purifiers.",
+        "grade": "A",
+        "extension": "如果指标可复现，将直接挑战大模型推理成本结构，并影响云厂商、国产模型和终端厂商的算力部署叙事。后续重点是第三方基准、API价格和真实业务延迟表现。"
       },
       {
         "id": "a9c2e1ef7a82802dd710620444134d95",
-        "title": "晨星认为SpaceX上市估值已经偏高",
-        "chinese_title": "晨星认为SpaceX上市估值已经偏高",
+        "title": "Morningstar警告SpaceX IPO估值明显偏高",
+        "chinese_title": "Morningstar警告SpaceX IPO估值明显偏高",
         "original_title": "We Think the SpaceX IPO Is Overvalued",
-        "summary": "晨星文章对SpaceX潜在IPO估值提出谨慎判断，认为市场对商业航天龙头的增长预期可能过于乐观，相关讨论在Hacker News引发关注。",
+        "summary": "Morningstar认为SpaceX拟IPO估值显著高于其约7800亿美元的公允估值，核心风险在于AI业务、Grok竞争力和轨道数据中心等增长假设仍缺乏充分验证。",
         "rating": "A",
-        "score": 78,
-        "type": "funding",
+        "score": 87,
+        "type": "financial",
         "typeName": "融资上市",
         "expansion": "可继续跟踪商业航天估值逻辑、星链现金流和发射业务增长能否支撑IPO溢价，也可对照OpenAI等未上市科技巨头的二级市场估值泡沫。",
         "entities": [
+          "Grok",
           "Ipo",
+          "Morningstar",
           "SpaceX",
-          "商业航天",
-          "晨星"
+          "Starlink"
         ],
         "sourceLinks": [
           {
@@ -59,7 +125,10 @@
         "published_at": "2026-06-09T11:03:02.830737",
         "source": "Hacker News",
         "url": "https://www.morningstar.com/stocks/why-we-think-spacex-ipo-is-overvalued?content_id=20768396545",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "A+",
+        "extension": "这会影响投资者对SpaceX上市首日定价的预期，也可能牵动马斯克系公司、AI基础设施和卫星互联网资产的估值比较。后续可追踪承销需求、首日波动和分析师分歧。"
       },
       {
         "id": "a0485c18b6de225c83e7eefe5ac36d7f",
@@ -149,6 +218,36 @@
         "published_at": "2026-06-09T11:03:02.831119",
         "source": "Ars Technica » Scientific Method",
         "url": "https://arstechnica.com/space/2026/06/fcc-lifts-looming-deadline-for-amazon-leo-satellite-broadband-constellation/",
+        "event_id": null
+      },
+      {
+        "id": "2e287cbe4ebefc0f1821b516f65e0f35",
+        "title": "开源记忆型AI Agent项目Hermes发布",
+        "chinese_title": "开源记忆型AI Agent项目Hermes发布",
+        "original_title": "Hermes Agent – Open-Source AI Agent with Persistent Memory",
+        "summary": "Hermes Agent以开源AI智能体和持久记忆为卖点，在Hacker News获得讨论，指向开发者对可长期保留上下文的个人Agent工具需求。",
+        "rating": "B",
+        "score": 70,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸比较开源Agent记忆方案与商业Agent平台的差异，关注持久记忆带来的隐私、安全和多会话任务连续性问题。",
+        "entities": [
+          "Ai Agent",
+          "Hermes Agent",
+          "开源项目",
+          "持久记忆"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://hermes-agent.org/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1780974182,
+        "published_at": "2026-06-09T11:03:02.831028",
+        "source": "Hacker News",
+        "url": "https://hermes-agent.org/",
         "event_id": null
       },
       {
@@ -4235,36 +4334,6 @@
       }
     ],
     "2026-06-06": [
-      {
-        "id": "2e287cbe4ebefc0f1821b516f65e0f35",
-        "title": "开源记忆型AI Agent项目Hermes发布",
-        "chinese_title": "开源记忆型AI Agent项目Hermes发布",
-        "original_title": "Hermes Agent – Open-Source AI Agent with Persistent Memory",
-        "summary": "Hermes Agent以开源AI智能体和持久记忆为卖点，在Hacker News获得讨论，指向开发者对可长期保留上下文的个人Agent工具需求。",
-        "rating": "B",
-        "score": 70,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可延伸比较开源Agent记忆方案与商业Agent平台的差异，关注持久记忆带来的隐私、安全和多会话任务连续性问题。",
-        "entities": [
-          "Ai Agent",
-          "Hermes Agent",
-          "开源项目",
-          "持久记忆"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://hermes-agent.org/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780974182,
-        "published_at": "2026-06-09T11:03:02.831028",
-        "source": "Hacker News",
-        "url": "https://hermes-agent.org/",
-        "event_id": null
-      },
       {
         "id": "1e588e61972d9aa323d739e72905f975",
         "title": "微软AI负责人称已摆脱OpenAI牵引",
@@ -13108,6 +13177,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-09T11:03:24.058192",
-  "total_news": 410
+  "last_updated": "2026-06-09T12:04:21.082808",
+  "total_news": 412
 }
