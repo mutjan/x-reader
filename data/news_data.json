@@ -2,18 +2,270 @@
   "news": {
     "2026-06-11": [
       {
-        "id": "b4837f5c54159b68df7be3c1e991f43e",
-        "title": "1500美元训练基础模型，HRM挑战大模型成本定律",
-        "chinese_title": "1500美元训练基础模型，HRM挑战大模型成本定律",
-        "original_title": "Researchers say they trained a foundation model from scratch for about $1,500",
-        "summary": "Sapient研究者称用层级循环模型HRM-Text从零训练基础模型，成本约1500美元，试图证明企业级模型不一定依赖海量数据和巨额算力。",
+        "id": "1001c996af28ba765a93cab9b02f64d8",
+        "title": "苹果新Siri走克制路线，少说话成AI卖点",
+        "chinese_title": "苹果新Siri走克制路线，少说话成AI卖点",
+        "original_title": "Apple&rsquo;s new Siri AI knows when to shut up",
+        "summary": "The Verge体验称，苹果新版Siri AI的最大特点不是更热情，而是回答更简短克制，试图在实用助手与情感陪伴型聊天机器人之间划清边界。",
+        "rating": "A",
+        "score": 75,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "苹果若把低干扰、少拟人化作为Siri差异化路线，可能影响语音助手产品对人格化和用户黏性的取舍，也会给OpenAI、Google等竞品带来新的体验标尺。",
+        "entities": [
+          "Ai聊天机器人",
+          "Apple",
+          "OpenAI",
+          "Siri"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts (apple)",
+            "url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781132608,
+        "published_at": "2026-06-11T07:03:28.469442",
+        "source": "The Verge -  Tech Posts (apple)",
+        "url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality",
+        "event_id": null
+      },
+      {
+        "id": "88320c69881a3b178410c3e9c78551e2",
+        "title": "陶哲轩披露AI数学评测：十题七题有论文级解法",
+        "chinese_title": "陶哲轩披露AI数学评测：十题七题有论文级解法",
+        "original_title": "The results of the First Proof \"second batch\" are now out: https://1stproof.org/assets/docs/report.pdfTen research-level questions (many being part of forthcoming papers) were tested locally by the First Proof team against four AI harnesses, including my UCLA team, and then the submissions refereed by experts.  In aggregate, 7 of the 10 problems were deemed to have at least one publication-level solution generated between the four harnesses.  The UCLA harness had a somewhat mixed performance: 2 problems solved at an acceptable level, 3 more reaching a level roughly equivalent to a \"minor revisions needed\" submission to a journal, and with either \"reject\" or \"major revisions needed\" on the other 5.  We did perform slightly better than the out-of-the-box frontier model, but at much higher compute costs (a few hundred dollars per question, rather than tens).  Still, some of the solutions generated contained some interesting novelty.Significant weaknesses in our own harness revealed by the testing included the general failure to cite appropriate relevant literature, and having poor exposition (one solution in particular, while correct, was flagged by referees for spending far too much time on trivial steps and not enough on the key components of the argument).  These look like addressable issues for our harness, and we also plan to incorporate more use of tools (such as symbolic computation and literature search) which were used more effectively by one of the competing teams.  Improving the compute efficiency will also need to become more of a priority.While our own performance was slightly disappointing, I hope to see many more scientifically rigorous benchmarking exercises like this in the future.",
+        "summary": "First Proof第二批研究级数学题评测显示，四套AI系统合计在10道题中产出7个至少达到论文级的解法，陶哲轩团队表现优于开箱模型但计算成本更高。",
+        "rating": "S",
+        "score": 93,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这类由专家审稿的数学评测比通用基准更接近科研真实场景，后续可延伸到AI科研工具链、文献检索能力和高成本推理效率的竞争。",
+        "entities": [
+          "Ai数学",
+          "First Proof",
+          "Terence Tao",
+          "Ucla",
+          "科研评测"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Terence Tao",
+            "url": "https://mathstodon.xyz/@tao/116727977488589991"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781132608,
+        "published_at": "2026-06-11T07:03:28.469594",
+        "source": "Terence Tao",
+        "url": "https://mathstodon.xyz/@tao/116727977488589991",
+        "event_id": null
+      },
+      {
+        "id": "a0ae97393f6a8ba1ce40fd7475455097",
+        "title": "xAI被诉解雇Grok安全预警工程师",
+        "chinese_title": "xAI被诉解雇Grok安全预警工程师",
+        "original_title": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
+        "summary": "一名前xAI工程师起诉xAI和SpaceX，称自己因在SpaceX IPO前夕提出Grok安全风险而遭解雇，使AI安全治理再次卷入劳资和资本市场争议。",
         "rating": "A+",
-        "score": 89,
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "若诉讼进入实质审理，可能暴露xAI内部安全流程与商业节奏的冲突，也会影响外界对Grok和马斯克AI版图合规性的评估。",
+        "entities": [
+          "Ai安全",
+          "Elon Musk",
+          "Grok",
+          "SpaceX",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781132608,
+        "published_at": "2026-06-11T07:03:28.469876",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
+        "event_id": null
+      },
+      {
+        "id": "aaa667981f6c15daa811b695ecb2a867",
+        "title": "杨安泽转向创业应对AI冲击就业",
+        "chinese_title": "杨安泽转向创业应对AI冲击就业",
+        "original_title": "Why Andrew Yang is building instead of waiting for Washington",
+        "summary": "杨安泽在TechCrunch访谈中称，与其等待华盛顿制定方案，不如用创业方式回应AI和自动化对就业、收入分配与社会保障的冲击。",
+        "rating": "B",
+        "score": 70,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "AI冲击就业的讨论正从政治口号进入产品和组织实践，可延伸观察UBI、再培训平台、劳动力市场工具和科技公司责任边界。",
+        "entities": [
+          "Ai自动化",
+          "Andrew Yang",
+          "Dario Amodei",
+          "Sam Altman",
+          "Universal Basic Income"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/video/why-andrew-yang-is-building-instead-of-waiting-for-washington/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781132608,
+        "published_at": "2026-06-11T07:03:28.470136",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/video/why-andrew-yang-is-building-instead-of-waiting-for-washington/",
+        "event_id": null
+      },
+      {
+        "id": "048c0f7592ac96a0d09952731a56c58f",
+        "title": "线粒体被证实可直接连接核孔复合体",
+        "chinese_title": "线粒体被证实可直接连接核孔复合体",
+        "original_title": "Mitochondria directly interact with the nuclear pore complex",
+        "summary": "Nature论文显示线粒体能直接与核孔复合体相互作用，为理解细胞核能量供应和细胞器通信提供新机制。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该发现可与线粒体贴近细胞核的解读合并，后续关注其在衰老、癌症和神经疾病中的作用。",
+        "entities": [
+          "核孔复合体",
+          "线粒体",
+          "细胞器通信",
+          "能量代谢"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10588-3"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129140,
+        "published_at": "2026-06-11T06:05:40.117609",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10588-3",
+        "event_id": "1ed8c4cb",
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "13cf380e3b313c85ba1a348dca897a7a",
+        "title": "丘脑脑干吸引子网络驱动历史偏置决策",
+        "chinese_title": "丘脑脑干吸引子网络驱动历史偏置决策",
+        "original_title": "A thalamus–brainstem attractor network drives history-biased decisions",
+        "summary": "Nature研究发现丘脑-脑干吸引子网络会驱动带有历史偏置的决策，为动物行为中的路径依赖提供神经机制。",
+        "rating": "A",
+        "score": 81,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该成果连接神经环路、决策偏差和AI中的记忆机制，可作为认知科学解释选题。",
+        "entities": [
+          "丘脑",
+          "决策偏差",
+          "吸引子网络",
+          "脑干"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10623-3"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129140,
+        "published_at": "2026-06-11T06:05:40.117708",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10623-3",
+        "event_id": "1ed8c4cb",
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "0600362fa405c7d1c12bd2e4e44428db",
+        "title": "北极冰山增多正在改写海底生物多样性",
+        "chinese_title": "北极冰山增多正在改写海底生物多样性",
+        "original_title": "Amplified Arctic iceberg traffic reshapes benthic biodiversity",
+        "summary": "Nature论文称北极冰山活动增强会改变海底栖息地和底栖生物多样性，展示气候变化的深海连锁反应。",
+        "rating": "B",
+        "score": 69,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可与冰山落石解读合并报道，并延展到北极生态保护和海洋治理。",
+        "entities": [
+          "冰山",
+          "北极",
+          "底栖生物",
+          "气候变化"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10630-4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129140,
+        "published_at": "2026-06-11T06:05:40.118206",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10630-4",
+        "event_id": "1ed8c4cb",
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "914eeb1aa0cb631694b4a6ac92c00c45",
+        "title": "气候适应产品需要用户驱动设计",
+        "chinese_title": "气候适应产品需要用户驱动设计",
+        "original_title": "Building user-driven climate adaptation products",
+        "summary": "Nature观点文章讨论如何构建用户驱动的气候适应产品，强调将科学数据转化为可用工具。",
+        "rating": "B",
+        "score": 66,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "适合延伸到气候科技产品化、政府采购和灾害预警市场，但新闻冲击力相对有限。",
+        "entities": [
+          "气候产品",
+          "气候科技",
+          "气候适应",
+          "用户驱动设计"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10555-y"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129140,
+        "published_at": "2026-06-11T06:05:40.118287",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10555-y",
+        "event_id": "1ed8c4cb",
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "b4837f5c54159b68df7be3c1e991f43e",
+        "title": "研究称1500美元可从零训练基础模型",
+        "chinese_title": "研究称1500美元可从零训练基础模型",
+        "original_title": "Researchers say they trained a foundation model from scratch for about $1,500",
+        "summary": "Sapient研究者提出HRM-Text架构，声称可用约1500美元从零训练基础语言模型，试图挑战依赖海量数据和高算力的Transformer扩展路线。",
+        "rating": "A+",
+        "score": 87,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "如果结果可复现，可能推动中小企业自训练垂直模型，并重新讨论Transformer之外的低成本架构路线。",
         "entities": [
           "Foundation Model",
+          "Hierarchical Recurrent Model",
           "Hrm-Text",
           "Sapient",
           "Transformer"
@@ -31,23 +283,26 @@
         "url": "https://venturebeat.com/technology/researchers-say-they-trained-a-foundation-model-from-scratch-for-about-1-500",
         "event_id": null,
         "grade": "A+",
-        "level": "A+"
+        "level": "A+",
+        "original_content": "Training a foundation LLM from scratch costs millions and requires internet-scale data — which is why most enterprises don't bother. Sapient thinks it has a cheaper path. To overcome this brute-force scaling dogma, researchers at Sapient developed HRM-Text , which replaces standard Transformers with a highly sample-efficient Hierarchical Recurrent Model (HRM), an architecture they first introduced last year . HRM decouples computation into slow-evolving strategic and fast-evolving execution layers. Instead of brute-force autoregressive prediction on raw text, HRM-Text trains exclusively on instruction-response pairs. This is close to real-world enterprise settings, where users usually expect a targeted answer to a specific task. The researchers were able to train a 1B-parameter HRM-Text from scratch at a fraction of the cost and tokens of normal LLMs. Their model achieved performance competitive with much larger open models on key industry benchmarks. For real-world AI applications, this means foundational pretraining is no longer restricted to highly resourced institutions. With HRM-Text, organizations can affordably pretrain their own highly capable reasoning models from scratch and pair them with external knowledge stores. The training bottleneck When we train an LLM, we don't actually care if it has memorized the exact sequence of words in a random 2014 Reddit thread. What we want is for the model to develop a deep, underlying understanding of human language, logic, facts, and reasoning. The current approach is brute force: scrape the internet, run next-token prediction trillions of times, and assume the model has developed a working internal model of the world. Basically, this means that we waste millions of dollars of computing power forcing models to memorize everything collected from the internet, just so they can indirectly learn how to think. For example, standard decoder-only models spend valuable compute assigning loss to reconstruct the prompt itself, even though the user's prompt is already known and provided at inference time. Instead of simply viewing this as a computational hurdle, the industry must recognize it as a severe business limitation. In comments provided to VentureBeat, Guan Wang, CEO of Sapient Intelligence, framed this as an issue of the \"economics of iteration.\" \"Enterprises today face three compounding problems: training is expensive, infrastructure is heavy, and experimentation cycles are too slow,\" Wang said. \"The industry’s scaling addiction says: 'When the model fails, make it bigger. Add more data. Add more GPUs.' That has worked, but it is reaching a point of diminishing returns. More scale often means more memorization, more latency, more infrastructure, and more vendor dependency. It does not necessarily give an enterprise a better reasoning engine.\" This architectural and computational inefficiency is exactly why fine-tuning existing dense transformers isn't always the silver bullet for enterprises. Fine-tuning to preserve a model's general capabilities often requires mixing substantial general-purpose data into the process, making it computationally heavy and difficult to control. \"Imagine a hedge fund, insurer, or bank that has highly proprietary data: internal research notes, transaction logic, compliance rules, analyst memos, risk models, portfolio constraints,\" Wang said. \"They may not want to send that data to an external frontier model, and they may not need a giant general-purpose model that memorized the internet. What they need is a compact reasoning core that can learn their task structure, reason across rules and numbers, and run in a controlled environment.\" Because HRM-Text focuses its computation strictly on task completion and latent reasoning, it allows enterprises to start with a smaller, smarter model and adapt it to a proprietary domain with far less infrastructure. Rethinking architectures with HRM-Text HRM, which was introduced in 2025, represents a fundamental departure from traditional Transformer models. To build a more sample-efficient engine, HRM decouples computation into slow-evolving strategic and fast-evolving execution layers. The fast L-module performs local iterative refinement, while the slow H-module maintains stable semantic context across cycles. Processing consists of two high-level cycles, where each cycle executes three fast L-module updates followed by a single slow H-module update. Standard parameter-shared recurrent architectures (like Samsung's TRM ) can sometimes handle small logic puzzles, but the Sapient researchers found they become highly unstable when scaled to 1-billion parameters for language tasks. The separation between HRM's slow H-module and fast L-module is mathematically necessary, not just an aesthetic choice. As Wang said: \"For logic grids, you can sometimes get away with a tiny recursive mechanism because the world is clean and bounded. Language is not like that. Language needs both fast local refinement and slow semantic stability.\" While the original HRM proved highly effective for controlled, symbolic reasoning problems, the researchers hit a wall when applying it to the massive, open-ended complexities of generalized language modeling. While HRM's loops make it an incredibly efficient thinker, those same loops make it mathematically volatile to train on the diverse chaos of human language. Running recurrent loops on language creates massive mathematical instability, specifically, exploding or vanishing gradients. To prevent this feedback loop in the neural network, the researchers introduced two key architectural innovations in HRM-Text. First, they developed MagicNorm, a specialized normalization technique designed specifically to keep the internal signals stable, no matter how many times the model loops its thought process. Second, they designed a warm-up method to stabilize training. During early training, the model is only evaluated on short, shallow reasoning loops. As training progresses, the system warms up, gradually giving the model deeper and longer reasoning sequences. They also switched the training objective from next-token prediction to task completion, where the model is rewarded only on the full response as opposed to individual tokens it generates. To achieve this goal, they changed the training data of HRM-Text from raw text to instruction-response pairs only. HRM-Text in action The researchers built a highly compact 1-billion-parameter HRM-Text model. Instead of using the standard multi-stage pipeline that requires churning through trillions of words of raw internet text, they trained it from scratch on a tightly curated dataset of just 40 billion tokens. The training data consisted entirely of instruction-response pairs across general instructions, math, symbolic logic, textbook exercises, and rewritten knowledge. They trained the model using the task-completion objective. To force the model to rely on its internal hierarchical architecture rather than copying step-by-step logic, they explicitly stripped out \"thinking\" tokens from the training data. The model was evaluated across a diverse suite of standard foundational AI benchmarks, heavily indexing on knowledge, reasoning, logic, math, and comprehension. The researchers tested HRM-Text against both small models and highly-resourced open-weight and fully open models. The results show a significant shift in the compute-to-performance frontier. The 1B-parameter HRM-Text achieved 60.7% on MMLU, 84.5% on GSM8K, and 56.2% on MATH. This performance is highly competitive with (and in several cases surpasses) the 2B to 7B parameter foundation models it was tested against. The most important takeaway for the enterprise audience lies in the efficiency statistics and practical implications. Pretraining a foundation model from scratch is typically a multi-million dollar endeavor reserved for tech giants. HRM-Text was trained in just 1.9 days on a cluster of 16 GPUs. The total estimated compute cost was roughly $1,500. It achieved its competitive scores using 100 to 900 times fewer training tokens and 96 to 432 times less estimated compute than models like Qwen, Gemma, and Llama. Another important point is the decoupling of reasoning from knowledge memorization. From a practical standpoint, HRM-Text's success on reasoning-heavy tasks despite its tiny 40B-token training diet proves that a model does not need to memorize the entire internet to become a smart reasoning engine. For enterprise applications, this behavior is a feature, not a bug. The researchers suggest a future where businesses deploy highly compact, incredibly cheap recurrent models that act as the \"reasoning core\" specialized for business logic. Instead of forcing the model to memorize company databases during pretraining, the model acts as the reasoning engine, relying on external retrieval systems to fetch factual knowledge. Critics have pointed out that training on instruction-response pairs makes comparisons against models trained on raw text an \"apples-to-oranges\" scenario. Wang pushes back on this framing, pointing out that every serious modern LLM sees instruction-response data during training or alignment. \"So the comparison is not apples-to-oranges. It is closer to apple cores-and-apples. We started directly from the core task format because that is how people actually use models: they give an instruction and expect a useful response,\" he said. The researchers also ran rigorous contamination tests to ensure the model wasn't simply memorizing benchmark answers. On DROP, the one benchmark showing a marginal contamination signal under a specific setting, HRM-Text still scored an impressive 81.1% on a strictly clean, 0% contamination subset. Ultimately, Wang argues that for enterprises, \"the right evaluation is not trivia recall. It is a workflow evaluation... Give HRM-Text a task like: multi-step financial reasoning, compliance logic, scientific workflow automation, structured extraction followed by reasoning.\" Practical implementation and the future of enterprise AI While the benchmark scores and cost efficiencies are striking, Sapient is clear about the model's current boundaries. The initial release is best viewed as a proof-of-concept, akin to early GPT releases, designed to showcase the architecture's unique advantages. \"Honestly, HRM-Text is not yet a plug-and-play ChatGPT replacement,\" Wang said. \"It is a compact foundation language reasoning model. For an enterprise engineering team, the operational work is mainly around templates, mode selection, attention masking, and alignment.\" For AI engineering teams looking to experiment, getting started requires some specific, but standard, text-generation discipline. The model lists native support in the Transformers library (requiring transformers &gt;= 5.9.0), and usage paths for vLLM and SGLang are actively being developed. The primary engineering task involves managing the PrefixLM design: production multi-turn chat applications will require careful KV-cache logic to ensure user prompts receive full bidirectional attention while the assistant's outputs remain causal. \"When the cost of training a capable reasoning model drops to around $1,500, AI stops being only an infrastructure question and becomes a strategy question,\" Wang said. \"A Fortune 500 company no longer has to ask, ‘Can we afford a foundation model?’ It would ask, ‘What should our model know about our business, and what kind of reasoning should it be optimized for?’\"",
+        "extension": "如果低成本训练路线可复现，将影响企业自研模型、边缘模型和小团队研发门槛，也会重新打开非Transformer架构的商业想象空间。"
       },
       {
         "id": "87ebdd1a0028d8aa71356eb93bec1d72",
         "title": "Anthropic提议让美国人分享AI公司收益",
         "chinese_title": "Anthropic提议让美国人分享AI公司收益",
         "original_title": "Anthropic Proposes Public Fund for Giving Americans Stakes in AI Companies",
-        "summary": "Anthropic CEO Dario Amodei提出AI政策框架，建议建立公共基金或资本账户，让普通美国人持有AI产业增长带来的部分金融收益。",
+        "summary": "Anthropic CEO Dario Amodei提出政策框架，建议为美国人建立资本账户，让公众持有AI产业收益的一部分，以回应AI财富集中问题。",
         "rating": "A+",
-        "score": 88,
+        "score": 81,
         "type": "opinion",
         "typeName": "观点访谈",
         "expansion": "该方案把AI红利分配纳入政策议程，后续可能影响AI税收、全民资本账户和科技公司公共责任讨论。",
         "entities": [
-          "Ai政策",
+          "Ai公司",
           "Anthropic",
           "Dario Amodei",
+          "Trump Account",
           "资本账户"
         ],
         "sourceLinks": [
@@ -62,25 +317,27 @@
         "source": "The Information",
         "url": "https://www.theinformation.com/briefings/anthropic-proposes-public-fund-giving-americans-stakes-ai-companies",
         "event_id": null,
-        "grade": "A+",
-        "level": "A+"
+        "grade": "A",
+        "level": "A+",
+        "original_content": "Anthropic CEO Dario Amodei released a policy framework on Wednesday that proposed a mechanism for Americans to acquire a financial stake in the gains from the AI industry. The paper argued for the establishment of capital accounts for newborn Americans, similar to the new Trump Account program, ...",
+        "extension": "该提议把AI治理从安全监管扩展到财富分配，可能影响美国政策讨论，也会把OpenAI、Anthropic等公司的公共责任推到台前。"
       },
       {
         "id": "02a90ab2dacfb461a1a9b60e30b6582c",
-        "title": "ChatGPT开始为具体商品生成广告",
-        "chinese_title": "ChatGPT开始为具体商品生成广告",
+        "title": "OpenAI推出面向具体商品的ChatGPT广告",
+        "chinese_title": "OpenAI推出面向具体商品的ChatGPT广告",
         "original_title": "OpenAI Launches New ChatGPT Ads Featuring Specific Products",
-        "summary": "The Information称OpenAI向广告主开放产品信息流，可据此在ChatGPT中创建特定商品广告，但相关数据暂不用于回答生成。",
+        "summary": "The Information称，广告主可向OpenAI提供商品信息流，在ChatGPT中生成面向具体产品的广告，但这些信息暂时只用于广告生成而不参与回答。",
         "rating": "A+",
         "score": 90,
-        "type": "industry",
+        "type": "product",
         "typeName": "行业动态",
         "expansion": "这标志着ChatGPT商业化进入广告商品化阶段，可能引发搜索广告、购物导流和用户信任边界的新竞争。",
         "entities": [
           "GPT",
           "OpenAI",
-          "产品信息流",
-          "广告"
+          "The Information",
+          "商品广告"
         ],
         "sourceLinks": [
           {
@@ -95,7 +352,9 @@
         "url": "https://www.theinformation.com/briefings/openai-launches-new-chatgpt-ads-featuring-specific-products",
         "event_id": null,
         "grade": "A+",
-        "level": "A+"
+        "level": "A+",
+        "original_content": "Advertisers can now create ads for specific products on ChatGPT by sharing feeds of product information with OpenAI, according to communications sent to advertisers reviewed by The Information. For now, information from the product feeds will only be used to create ads and will not inform or ...",
+        "extension": "ChatGPT商业化若从品牌曝光走向商品级广告，将影响搜索广告、电商导流和回答可信度，也可能引发用户体验与广告标注的新争议。"
       },
       {
         "id": "8f14575e64db10156ec88dc8f4f1b7df",
@@ -2303,21 +2562,20 @@
       },
       {
         "id": "6dc418d3369735ded1c01d7c3debdedd",
-        "title": "安全研究员抱怨Claude Fable限制过严",
-        "chinese_title": "安全研究员抱怨Claude Fable限制过严",
-        "original_title": "Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable",
-        "summary": "网络安全研究者认为Anthropic新模型Fable的安全护栏过于严格，导致其难以承担正常的安全测试和研究工作。",
+        "title": "安全研究者质疑Anthropic Fable护栏",
+        "chinese_title": "安全研究者质疑Anthropic Fable护栏",
+        "original_title": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
+        "summary": "围绕Anthropic Fable模型的护栏设置，网络安全研究者表达不满，认为限制可能妨碍安全测试和漏洞研究，凸显AI安全与研究开放性的拉扯。",
         "rating": "A",
-        "score": 76,
+        "score": 78,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "如果安全研究场景持续受限，企业客户和研究社区可能要求模型厂商提供更细分的权限、审计和专业模式。",
         "entities": [
+          "Ai护栏",
           "Anthropic",
-          "Claude",
           "Fable",
-          "安全护栏",
-          "网络安全"
+          "网络安全研究"
         ],
         "sourceLinks": [
           {
@@ -2328,13 +2586,13 @@
         "sources": 1,
         "timestamp": 1781107555,
         "published_at": "2026-06-11T00:05:55.304804",
-        "source": "TechCrunch",
+        "source": "Hacker News",
         "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
         "event_id": null,
         "grade": "A",
         "level": "A",
-        "original_content": "Cybersecurity researchers are complaining that Anthropic's new model Fable has guardrails that are too strict for any cybersecurity work.",
-        "extension": "可连接双用途AI安全争议、红队测试工具链受限问题，以及模型厂商如何区分防御研究与攻击滥用。"
+        "original_content": "Comments",
+        "extension": "如果安全研究者无法充分测试模型能力，厂商护栏可能被视为降低透明度；后续可追踪红队生态、漏洞披露机制和模型访问分级。"
       },
       {
         "id": "2e2fcca7b930d8923191f5688bdc47a3",
@@ -2478,132 +2736,35 @@
     ],
     "2026-06-10": [
       {
-        "id": "048c0f7592ac96a0d09952731a56c58f",
-        "title": "线粒体被证实可直接连接核孔复合体",
-        "chinese_title": "线粒体被证实可直接连接核孔复合体",
-        "original_title": "Mitochondria directly interact with the nuclear pore complex",
-        "summary": "Nature论文显示线粒体能直接与核孔复合体相互作用，为理解细胞核能量供应和细胞器通信提供新机制。",
+        "id": "4f1bcef8ef09731c43045a24f7585012",
+        "title": "Anthropic要求Fable和Mythos保留30天数据",
+        "chinese_title": "Anthropic要求Fable和Mythos保留30天数据",
+        "original_title": "Anthropic requires 30 day data retention for Fable and Mythos",
+        "summary": "Anthropic支持文档显示，Fable与Mythos类模型相关数据实践包含30天保留要求，引发开发者对隐私、合规和企业接入边界的关注。",
         "rating": "B",
-        "score": 72,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该发现可与线粒体贴近细胞核的解读合并，后续关注其在衰老、癌症和神经疾病中的作用。",
+        "score": 73,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "模型数据保留政策会直接影响企业和安全敏感场景采用，后续可对比OpenAI、Google等厂商在高风险模型上的日志留存和审计规则。",
         "entities": [
-          "核孔复合体",
-          "线粒体",
-          "细胞器通信",
-          "能量代谢"
+          "Anthropic",
+          "Claude",
+          "Fable",
+          "Mythos",
+          "数据保留"
         ],
         "sourceLinks": [
           {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/s41586-026-10588-3"
+            "name": "Hacker News",
+            "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models"
           }
         ],
         "sources": 1,
-        "timestamp": 1781129140,
-        "published_at": "2026-06-11T06:05:40.117609",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/s41586-026-10588-3",
-        "event_id": "1ed8c4cb",
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "13cf380e3b313c85ba1a348dca897a7a",
-        "title": "丘脑脑干吸引子网络驱动历史偏置决策",
-        "chinese_title": "丘脑脑干吸引子网络驱动历史偏置决策",
-        "original_title": "A thalamus–brainstem attractor network drives history-biased decisions",
-        "summary": "Nature研究发现丘脑-脑干吸引子网络会驱动带有历史偏置的决策，为动物行为中的路径依赖提供神经机制。",
-        "rating": "A",
-        "score": 81,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该成果连接神经环路、决策偏差和AI中的记忆机制，可作为认知科学解释选题。",
-        "entities": [
-          "丘脑",
-          "决策偏差",
-          "吸引子网络",
-          "脑干"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/s41586-026-10623-3"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781129140,
-        "published_at": "2026-06-11T06:05:40.117708",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/s41586-026-10623-3",
-        "event_id": "1ed8c4cb",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "0600362fa405c7d1c12bd2e4e44428db",
-        "title": "北极冰山增多正在改写海底生物多样性",
-        "chinese_title": "北极冰山增多正在改写海底生物多样性",
-        "original_title": "Amplified Arctic iceberg traffic reshapes benthic biodiversity",
-        "summary": "Nature论文称北极冰山活动增强会改变海底栖息地和底栖生物多样性，展示气候变化的深海连锁反应。",
-        "rating": "B",
-        "score": 69,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可与冰山落石解读合并报道，并延展到北极生态保护和海洋治理。",
-        "entities": [
-          "冰山",
-          "北极",
-          "底栖生物",
-          "气候变化"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/s41586-026-10630-4"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781129140,
-        "published_at": "2026-06-11T06:05:40.118206",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/s41586-026-10630-4",
-        "event_id": "1ed8c4cb",
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "914eeb1aa0cb631694b4a6ac92c00c45",
-        "title": "气候适应产品需要用户驱动设计",
-        "chinese_title": "气候适应产品需要用户驱动设计",
-        "original_title": "Building user-driven climate adaptation products",
-        "summary": "Nature观点文章讨论如何构建用户驱动的气候适应产品，强调将科学数据转化为可用工具。",
-        "rating": "B",
-        "score": 66,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "适合延伸到气候科技产品化、政府采购和灾害预警市场，但新闻冲击力相对有限。",
-        "entities": [
-          "气候产品",
-          "气候科技",
-          "气候适应",
-          "用户驱动设计"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/s41586-026-10555-y"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781129140,
-        "published_at": "2026-06-11T06:05:40.118287",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/s41586-026-10555-y",
-        "event_id": "1ed8c4cb",
-        "grade": "B",
-        "level": "B"
+        "timestamp": 1781132608,
+        "published_at": "2026-06-11T07:03:28.470249",
+        "source": "Hacker News",
+        "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
+        "event_id": null
       },
       {
         "id": "6852aa1658a745ca4b01c7056bbce3b2",
@@ -11347,6 +11508,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-11T06:06:28.691583",
-  "total_news": 344
+  "last_updated": "2026-06-11T07:03:57.888197",
+  "total_news": 349
 }
