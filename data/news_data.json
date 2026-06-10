@@ -2,20 +2,110 @@
   "news": {
     "2026-06-11": [
       {
-        "id": "c2cbe4d6834b37718dbaff8e60fcf066",
-        "title": "OpenAI封禁涉华影响力账号",
-        "chinese_title": "OpenAI封禁涉华影响力账号",
-        "original_title": "OpenAI says it has banned China-linked accounts that used ChatGPT to draft social media influence campaigns targeting US debates over tariffs and data centers (Sam Sabin/Axios)",
-        "summary": "OpenAI称已封禁一批与中国有关的账号，这些账号使用ChatGPT撰写围绕美国关税和数据中心争议的社交媒体影响内容。",
+        "id": "b4837f5c54159b68df7be3c1e991f43e",
+        "title": "1500美元训练基础模型，HRM挑战大模型成本定律",
+        "chinese_title": "1500美元训练基础模型，HRM挑战大模型成本定律",
+        "original_title": "Researchers say they trained a foundation model from scratch for about $1,500",
+        "summary": "Sapient研究者称用层级循环模型HRM-Text从零训练基础模型，成本约1500美元，试图证明企业级模型不一定依赖海量数据和巨额算力。",
+        "rating": "A+",
+        "score": 89,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果结果可复现，可能推动中小企业自训练垂直模型，并重新讨论Transformer之外的低成本架构路线。",
+        "entities": [
+          "Foundation Model",
+          "Hrm-Text",
+          "Sapient",
+          "Transformer"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat (qwen)",
+            "url": "https://venturebeat.com/technology/researchers-say-they-trained-a-foundation-model-from-scratch-for-about-1-500"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.969168",
+        "source": "VentureBeat (qwen)",
+        "url": "https://venturebeat.com/technology/researchers-say-they-trained-a-foundation-model-from-scratch-for-about-1-500",
+        "event_id": null
+      },
+      {
+        "id": "87ebdd1a0028d8aa71356eb93bec1d72",
+        "title": "Anthropic提议让美国人分享AI公司收益",
+        "chinese_title": "Anthropic提议让美国人分享AI公司收益",
+        "original_title": "Anthropic Proposes Public Fund for Giving Americans Stakes in AI Companies",
+        "summary": "Anthropic CEO Dario Amodei提出AI政策框架，建议建立公共基金或资本账户，让普通美国人持有AI产业增长带来的部分金融收益。",
+        "rating": "A+",
+        "score": 88,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "该方案把AI红利分配纳入政策议程，后续可能影响AI税收、全民资本账户和科技公司公共责任讨论。",
+        "entities": [
+          "Ai政策",
+          "Anthropic",
+          "Dario Amodei",
+          "资本账户"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/anthropic-proposes-public-fund-giving-americans-stakes-ai-companies"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.969283",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/anthropic-proposes-public-fund-giving-americans-stakes-ai-companies",
+        "event_id": null
+      },
+      {
+        "id": "02a90ab2dacfb461a1a9b60e30b6582c",
+        "title": "ChatGPT开始为具体商品生成广告",
+        "chinese_title": "ChatGPT开始为具体商品生成广告",
+        "original_title": "OpenAI Launches New ChatGPT Ads Featuring Specific Products",
+        "summary": "The Information称OpenAI向广告主开放产品信息流，可据此在ChatGPT中创建特定商品广告，但相关数据暂不用于回答生成。",
         "rating": "A+",
         "score": 90,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这标志着ChatGPT商业化进入广告商品化阶段，可能引发搜索广告、购物导流和用户信任边界的新竞争。",
+        "entities": [
+          "GPT",
+          "OpenAI",
+          "产品信息流",
+          "广告"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/openai-launches-new-chatgpt-ads-featuring-specific-products"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.969383",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/openai-launches-new-chatgpt-ads-featuring-specific-products",
+        "event_id": null
+      },
+      {
+        "id": "c2cbe4d6834b37718dbaff8e60fcf066",
+        "title": "OpenAI封禁涉华影响行动账号",
+        "chinese_title": "OpenAI封禁涉华影响行动账号",
+        "original_title": "OpenAI says it has banned China-linked accounts that used ChatGPT to draft social media influence campaigns targeting US debates over tariffs and data centers (Sam Sabin/Axios)",
+        "summary": "OpenAI称已封禁一批与中国相关的账号，这些账号使用ChatGPT撰写围绕美国关税和数据中心争议的社媒影响内容。",
+        "rating": "A+",
+        "score": 91,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "事件会继续把生成式AI平台推向内容溯源、账号治理和地缘政治审查的交叉地带，也可能影响美国对AI服务出口和平台责任的讨论。",
         "entities": [
           "GPT",
           "OpenAI",
-          "影响力行动",
+          "影响行动",
           "数据中心"
         ],
         "sourceLinks": [
@@ -31,23 +121,26 @@
         "url": "https://www.techmeme.com/260610/p55#a260610p55",
         "event_id": null,
         "grade": "A+",
-        "level": "A+"
+        "level": "A+",
+        "original_content": "Sam Sabin / Axios : OpenAI says it has banned China-linked accounts that used ChatGPT to draft social media influence campaigns targeting US debates over tariffs and data centers — OpenAI has banned China-linked accounts that used ChatGPT to draft social media influence campaigns targeting U.S. debates …",
+        "extension": "事件会强化生成式AI在信息战中的治理压力，也可能推动平台披露、账号溯源和跨境监管协作。"
       },
       {
         "id": "1692d0d2a4f7f18d135f8fbcec44c34c",
-        "title": "作物抗寒隐藏信号被发现",
-        "chinese_title": "作物抗寒隐藏信号被发现",
+        "title": "冷胁迫激活隐藏肽信号保护作物花粉",
+        "chinese_title": "冷胁迫激活隐藏肽信号保护作物花粉",
         "original_title": "‘Hidden hero’ peptides guard crops against sudden cold",
-        "summary": "研究发现一种平时沉默、遇冷才激活的蛋白信号，可保护发育中的花粉，为气候压力下保持作物产量提供新思路。",
+        "summary": "Nature报道一种平时沉默的蛋白信号会在寒冷压力下被激活，保护发育中的花粉，为气候智能作物提供新靶点。",
         "rating": "B",
-        "score": 74,
+        "score": 78,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "该机制若能转化到育种和农业生物技术，后续可关注耐寒作物、极端天气粮食安全和种业公司的研发进展。",
         "entities": [
-          "作物育种",
-          "气候智能作物",
-          "蛋白信号"
+          "Nature",
+          "作物抗寒",
+          "肽信号",
+          "花粉"
         ],
         "sourceLinks": [
           {
@@ -61,17 +154,19 @@
         "source": "Nature - Issue - nature.com science feeds",
         "url": "https://www.nature.com/articles/d41586-026-01754-8",
         "event_id": null,
-        "grade": "B",
-        "level": "B"
+        "grade": "A",
+        "level": "B",
+        "original_content": "Nature, Published online: 10 June 2026; doi:10.1038/d41586-026-01754-8 A protein signal remains silent under normal conditions but is activated under cold stress to protect developing pollen. This ‘on-demand’ resilience mechanism could enable the development of ‘climate smart’ crops that maintain high yields in good years and food security under climate stress.",
+        "extension": "该机制可延伸到耐寒育种和粮食安全议题，后续值得关注能否在水稻、小麦等主粮作物中验证。"
       },
       {
         "id": "b8fa389364aa9922a7cd91e85486c893",
-        "title": "植物木质素高效变身尼龙原料",
-        "chinese_title": "植物木质素高效变身尼龙原料",
+        "title": "木质素高产转化尼龙关键原料",
+        "chinese_title": "木质素高产转化尼龙关键原料",
         "original_title": "Hybrid refinery process turns plant material into industrially important chemical",
-        "summary": "研究展示了把复杂植物聚合物木质素高产转化为尼龙关键原料的新路线，为生物质替代石化原料打开空间。",
+        "summary": "Nature报道一种化学与生物结合的炼制流程，可把复杂植物高分子木质素高产转化为己二酸等重要工业化学品。",
         "rating": "A",
-        "score": 76,
+        "score": 79,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "若工艺放大成功，可能影响绿色化工、尼龙供应链和生物炼制产业，值得观察成本与规模化验证。",
@@ -94,23 +189,25 @@
         "url": "https://www.nature.com/articles/d41586-026-01586-6",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "Nature, Published online: 10 June 2026; doi:10.1038/d41586-026-01586-6 An ingredient of nylon has been made in high yields from lignin — revealing a fresh strategy for turning this complex plant biopolymer into industrial chemicals.",
+        "extension": "该路线连接生物质炼制和尼龙产业链，可能成为石化替代、低碳材料和循环化工报道角度。"
       },
       {
         "id": "8f3d53bb1fe816efea0f113fc1e03b4b",
-        "title": "双组分激子凝聚态实现相变观测",
-        "chinese_title": "双组分激子凝聚态实现相变观测",
+        "title": "双组分激子凝聚体实现宏观量子相干",
+        "chinese_title": "双组分激子凝聚体实现宏观量子相干",
         "original_title": "Two-component exciton condensates in an electron–hole bilayer",
-        "summary": "研究在电子空穴双层中观察到双组分激子玻色爱因斯坦凝聚，并展示自旋谷极化相和磁场驱动的量子相变。",
+        "summary": "Nature论文在MoSe2/hBN/WSe2电子空穴双层中观察到双组分激子玻色爱因斯坦凝聚，展现自旋谷极化相和量子相变。",
         "rating": "B",
-        "score": 70,
+        "score": 82,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "该进展面向凝聚态物理和量子材料，长期可关联低温量子器件和新型信息载体。",
         "entities": [
           "Mose2",
           "Wse2",
-          "激子凝聚",
+          "激子凝聚体",
           "量子相变"
         ],
         "sourceLinks": [
@@ -125,21 +222,24 @@
         "source": "Nature - Issue - nature.com science feeds",
         "url": "https://www.nature.com/articles/s41586-026-10636-y",
         "event_id": null,
-        "grade": "B",
-        "level": "B"
+        "grade": "A",
+        "level": "B",
+        "original_content": "Nature, Published online: 10 June 2026; doi:10.1038/s41586-026-10636-y Macroscopic quantum coherence arises in two-component exciton Bose–Einstein condensates within MoSe2/hBN/WSe2 electron–hole bilayers, exhibiting distinct spin–valley polarized phases, quantum phase transitions under magnetic fields and stable condensate behaviour up to approximately 1.8 K.",
+        "extension": "该进展面向低维量子材料和未来量子器件，可继续观察其工作温度、可控性和器件化路径。"
       },
       {
         "id": "dd2a43ed9503923db2d9684b81bbe842",
         "title": "蓝光钙钛矿LED效率升至21.8%",
         "chinese_title": "蓝光钙钛矿LED效率升至21.8%",
         "original_title": "In situ nanocrystal confinement for efficient blue perovskite LEDs",
-        "summary": "研究通过原位聚合驱动的纳米晶限域，实现外量子效率21.8%的高效蓝光钙钛矿LED。",
+        "summary": "Nature论文通过原位聚合驱动的纳米晶限域，实现外量子效率21.8%的高效蓝光钙钛矿发光二极管。",
         "rating": "A",
-        "score": 78,
+        "score": 87,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "若稳定性和寿命继续提升，可能影响显示、照明和钙钛矿光电材料产业化路线。",
         "entities": [
+          "显示技术",
           "纳米晶限域",
           "蓝光Led",
           "钙钛矿Led"
@@ -156,24 +256,27 @@
         "source": "Nature - Issue - nature.com science feeds",
         "url": "https://www.nature.com/articles/s41586-026-10596-3",
         "event_id": null,
-        "grade": "A",
-        "level": "A"
+        "grade": "A+",
+        "level": "A",
+        "original_content": "Nature, Published online: 10 June 2026; doi:10.1038/s41586-026-10596-3 Efficient blue perovskite light-emitting diodes with an external quantum efficiency of 21.8% are achieved through in situ polymerization-driven nanocrystal confinement.",
+        "extension": "蓝光效率是钙钛矿显示商业化关键瓶颈，后续应关注寿命、稳定性和与OLED/MicroLED竞争。"
       },
       {
         "id": "d02d1c5c456bb6a27effa709e565a0e9",
-        "title": "中国JUNO逼近中微子质量谜题",
-        "chinese_title": "中国JUNO逼近中微子质量谜题",
+        "title": "中国JUNO探测器逼近中微子质量谜题",
+        "chinese_title": "中国JUNO探测器逼近中微子质量谜题",
         "original_title": "Chinese detector edges closer to solving the mystery of neutrino mass",
-        "summary": "江门中微子实验正在接近确定中微子质量排序，物理学家希望借此解开基础粒子质量之谜。",
+        "summary": "Nature报道中国江门中微子实验JUNO有望判断哪类中微子质量最高，推动下一代反应堆中微子实验进入关键阶段。",
         "rating": "A",
-        "score": 82,
+        "score": 93,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "这是中国大科学装置的可报道节点，可延展到粒子物理、国际科研竞争和探测器工程能力。",
         "entities": [
           "Juno",
           "中微子",
-          "江门中微子实验"
+          "江门中微子实验",
+          "粒子物理"
         ],
         "sourceLinks": [
           {
@@ -187,17 +290,19 @@
         "source": "Nature - Issue - nature.com science feeds",
         "url": "https://www.nature.com/articles/d41586-026-01851-8",
         "event_id": null,
-        "grade": "A",
-        "level": "A"
+        "grade": "S",
+        "level": "A",
+        "original_content": "Nature, Published online: 10 June 2026; doi:10.1038/d41586-026-01851-8 Physicists hope that the JUNO facility can determine which type of neutrino has the highest mass.",
+        "extension": "JUNO结果将影响粒子物理标准模型扩展，也适合追踪中国大科学装置的国际竞争位置。"
       },
       {
         "id": "b3808dbc434584be3d3b8eaea436ba22",
-        "title": "阻变存储让神经场重建更省电",
-        "chinese_title": "阻变存储让神经场重建更省电",
+        "title": "阻变存储让神经场重建更高效",
+        "chinese_title": "阻变存储让神经场重建更高效",
         "original_title": "Efficient and accurate neural-field reconstruction using resistive memory",
-        "summary": "研究提出软硬件协同的阻变存储计算系统，用于稀疏信号重建，在成像和三维视觉场景中提升能效与并行度。",
+        "summary": "Nature论文提出软硬件协同的阻变存储计算系统，用于稀疏信号重建，在成像和三维视觉中提升能效与并行度。",
         "rating": "A+",
-        "score": 88,
+        "score": 92,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "该方向连接存算一体、边缘视觉和AI硬件落地，可关注芯片实现、能效对比和产业化路径。",
@@ -219,17 +324,19 @@
         "source": "Nature - Issue - nature.com science feeds",
         "url": "https://www.nature.com/articles/s41586-026-10646-w",
         "event_id": null,
-        "grade": "A+",
-        "level": "A+"
+        "grade": "S",
+        "level": "A+",
+        "original_content": "Nature, Published online: 10 June 2026; doi:10.1038/s41586-026-10646-w A co-optimized AI hardware–software system using resistive-memory computing improves energy efficiency and parallelism for sparse signal reconstruction in imaging and three-dimensional vision applications.",
+        "extension": "这类存算一体进展可能影响边缘视觉、机器人感知和AI硬件路线，关键在于规模化和工艺兼容。"
       },
       {
         "id": "2b41eb151a332159fb7525cca85ca3cb",
-        "title": "分子胶降解剂瞄准BRAF突变癌",
-        "chinese_title": "分子胶降解剂瞄准BRAF突变癌",
+        "title": "分子胶降解HuR抑制BRAF突变肠癌",
+        "chinese_title": "分子胶降解HuR抑制BRAF突变肠癌",
         "original_title": "Molecular glue degraders of HuR suppress BRAF-mutant colorectal cancer",
-        "summary": "研究显示针对RNA结合蛋白HuR的分子胶降解剂，对BRAF突变结直肠癌等疾病具有潜在治疗价值。",
+        "summary": "Nature论文称靶向HuR的分子胶降解剂可抑制BRAF突变结直肠癌，为难治肿瘤提供新的药物设计方向。",
         "rating": "A",
-        "score": 75,
+        "score": 78,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "后续可跟踪靶向蛋白降解、分子胶药物和BRAF突变肿瘤管线的临床推进。",
@@ -252,24 +359,26 @@
         "url": "https://www.nature.com/articles/s41586-026-10613-5",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "Nature, Published online: 10 June 2026; doi:10.1038/s41586-026-10613-5 Molecular glue degraders of the RNA-binding protein HuR have therapeutic potential for BRAF-mutant cancers.",
+        "extension": "分子胶药物正在成为靶向降解热点，后续可追踪其选择性、安全性和与现有靶向药联用。"
       },
       {
         "id": "898e3c18e214425e892445c7ba861b5e",
-        "title": "木质素高产转化己二酸路线公布",
-        "chinese_title": "木质素高产转化己二酸路线公布",
+        "title": "木质素制己二酸实现高产化学生物流程",
+        "chinese_title": "木质素制己二酸实现高产化学生物流程",
         "original_title": "Lignin to adipic acid in a high-yield chemical and biological redox process",
-        "summary": "研究用化学和生物红氧过程将杨木木质素转化为高价值己二酸，为可再生化工原料提供新方案。",
+        "summary": "Nature论文提出化学和生物氧化还原结合流程，可将木质素高产转化为己二酸，服务低碳化工。",
         "rating": "A",
-        "score": 77,
+        "score": 78,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "该路线若能规模化，可能进入绿色化工、材料供应链和低碳制造专题。",
         "entities": [
           "己二酸",
           "木质素",
-          "杨木",
-          "绿色化工"
+          "氧化还原",
+          "绿色化学"
         ],
         "sourceLinks": [
           {
@@ -284,23 +393,26 @@
         "url": "https://www.nature.com/articles/s41586-026-10580-x",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "Nature, Published online: 10 June 2026; doi:10.1038/s41586-026-10580-x A chemical and biological redox process that resembles processes in petrochemical refining is used to convert lignin from poplar into a single, valuable bioproduct, adipic acid, in high yields.",
+        "extension": "若工艺经济性成立，将影响尼龙原料、农业废弃物利用和绿色化学产业链。"
       },
       {
         "id": "065f552d764c1415d5e14d2baf7c9278",
-        "title": "AI补全全球迁徙地图",
-        "chinese_title": "AI补全全球迁徙地图",
+        "title": "2000年以来全球人口迁移大幅加速",
+        "chinese_title": "2000年以来全球人口迁移大幅加速",
         "original_title": "Human migration has surged since 2000 — these maps reveal where people are going",
-        "summary": "研究用人工智能模型填补迁徙数据缺口，呈现1990年至2023年全球人口流动的更细粒度地图。",
+        "summary": "Nature可视化报道显示2000年以来人类迁移显著增加，并用地图揭示人口流向和区域变化。",
         "rating": "A",
-        "score": 78,
+        "score": 70,
         "type": "society",
         "typeName": "社会影响",
         "expansion": "该选题可延展到AI公共治理、人口预测、城市规划和移民政策数据基础设施。",
         "entities": [
-          "人口迁徙",
-          "人工智能",
-          "数据建模"
+          "人口迁移",
+          "全球地图",
+          "城市化",
+          "气候变化"
         ],
         "sourceLinks": [
           {
@@ -314,24 +426,27 @@
         "source": "Nature - Issue - nature.com science feeds",
         "url": "https://www.nature.com/articles/d41586-026-01796-y",
         "event_id": null,
-        "grade": "A",
-        "level": "A"
+        "grade": "B",
+        "level": "A",
+        "original_content": "Nature, Published online: 10 June 2026; doi:10.1038/d41586-026-01796-y Modelling with artificial-intelligence tools has filled gaps in migration data, revealing detailed global population movements from 1990 to 2023.",
+        "extension": "迁移数据可与气候、经济机会和城市化结合报道，也能为AI迁移模型研究提供背景。"
       },
       {
         "id": "b08e7d69040d214dcaa6765da72a9db9",
-        "title": "JUNO首批数据刷新中微子测量",
-        "chinese_title": "JUNO首批数据刷新中微子测量",
+        "title": "JUNO首批数据测量反应堆中微子振荡",
+        "chinese_title": "JUNO首批数据测量反应堆中微子振荡",
         "original_title": "Measurement of reactor neutrino oscillation with the first JUNO data",
-        "summary": "江门中微子实验首批数据给出高精度中微子振荡参数，展示其确定中微子质量排序的准备度。",
+        "summary": "Nature论文发布JUNO首批数据对反应堆中微子振荡的测量，标志大型中微子实验进入实证阶段。",
         "rating": "A",
-        "score": 84,
+        "score": 94,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "可与中国大科学装置、探测器技术和基础物理竞争结合，形成较完整报道。",
         "entities": [
           "Juno",
           "中微子振荡",
-          "江门中微子实验"
+          "反应堆中微子",
+          "粒子物理"
         ],
         "sourceLinks": [
           {
@@ -345,8 +460,10 @@
         "source": "Nature - Issue - nature.com science feeds",
         "url": "https://www.nature.com/articles/s41586-026-10538-z",
         "event_id": null,
-        "grade": "A",
-        "level": "A"
+        "grade": "S",
+        "level": "A",
+        "original_content": "Nature, Published online: 10 June 2026; doi:10.1038/s41586-026-10538-z The first data of the Jiangmen Underground Neutrino Observatory deliver high-precision neutrino oscillation parameters, improving measurements and demonstrating readiness to determine neutrino mass ordering.",
+        "extension": "该结果与中微子质量排序直接相关，后续可追踪国际粒子物理实验竞赛和中国大科学装置。"
       },
       {
         "id": "776504315f52cf7488cab03cb4fd6e98",
@@ -632,6 +749,99 @@
         "event_id": null,
         "grade": "S",
         "level": "S"
+      },
+      {
+        "id": "0e94ed72d4d48d14f119c872906062ab",
+        "title": "量子纠错让逻辑错误率最高降800倍",
+        "chinese_title": "量子纠错让逻辑错误率最高降800倍",
+        "original_title": "Improved quantum processor logical error rates via correction and detection",
+        "summary": "研究在离子阱量子处理器上结合量子纠错、错误检测和后选择，使逻辑错误率相较多种物理电路基线降低11到800倍。",
+        "rating": "A+",
+        "score": 90,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这是量子计算容错路线的重要进展，可关注硬件平台、纠错码实用性和商业量子公司的指标竞争。",
+        "entities": [
+          "离子阱量子处理器",
+          "逻辑错误率",
+          "量子纠错"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10628-y"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781125676,
+        "published_at": "2026-06-11T05:07:56.174337",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10628-y",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "e8eb273cde583fbfbdf3eacedb819bf9",
+        "title": "AI照亮全球隐藏迁徙流向",
+        "chinese_title": "AI照亮全球隐藏迁徙流向",
+        "original_title": "Artificial intelligence shines a light on hidden global migration flows",
+        "summary": "研究训练神经网络整合多源数据，给出更高分辨率的全球人口迁徙图景，帮助观察传统统计遗漏的流动。",
+        "rating": "A",
+        "score": 77,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "该方向可连接AI公共数据基础设施、移民政策、城市规划和人口经济预测。",
+        "entities": [
+          "人工智能",
+          "全球迁徙",
+          "神经网络"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01588-4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781125676,
+        "published_at": "2026-06-11T05:07:56.174487",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01588-4",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "5cb5a06598defe3e4ba695f1b1845f33",
+        "title": "深度学习重建40年全球人口迁徙",
+        "chinese_title": "深度学习重建40年全球人口迁徙",
+        "original_title": "Deep learning four decades of human migration",
+        "summary": "研究利用深度学习和多源数据，生成覆盖230个国家、1990至2024年的年度迁徙流数据集，并给出不确定性估计。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可与AI治理和人口政策结合，成为数据科学进入公共决策的案例。",
+        "entities": [
+          "人口迁徙数据集",
+          "公共政策",
+          "深度学习"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10611-7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781125676,
+        "published_at": "2026-06-11T05:07:56.174689",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10611-7",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
       },
       {
         "id": "fb4992f6b9a8b5bbdae3e42b27204ffc",
@@ -1793,97 +2003,424 @@
     ],
     "2026-06-10": [
       {
-        "id": "0e94ed72d4d48d14f119c872906062ab",
-        "title": "量子纠错让逻辑错误率最高降800倍",
-        "chinese_title": "量子纠错让逻辑错误率最高降800倍",
-        "original_title": "Improved quantum processor logical error rates via correction and detection",
-        "summary": "研究在离子阱量子处理器上结合量子纠错、错误检测和后选择，使逻辑错误率相较多种物理电路基线降低11到800倍。",
-        "rating": "A+",
-        "score": 90,
+        "id": "8f14575e64db10156ec88dc8f4f1b7df",
+        "title": "首个脉冲式FXR激动剂瞄准胆汁酸肝病",
+        "chinese_title": "首个脉冲式FXR激动剂瞄准胆汁酸肝病",
+        "original_title": "A first-in-class pulsatile FXR agonist for bile-acid-related liver diseases",
+        "summary": "Nature论文介绍Linafexor通过快速清除模拟天然胆汁酸信号，在临床前和早期临床中实现较强疗效并降低毒性。",
+        "rating": "A",
+        "score": 80,
         "type": "research",
         "typeName": "研究成果",
-        "expansion": "这是量子计算容错路线的重要进展，可关注硬件平台、纠错码实用性和商业量子公司的指标竞争。",
+        "expansion": "若后续临床成立，可能打开胆汁酸相关肝病的新治疗路线，并影响核受体药物的给药设计。",
         "entities": [
-          "离子阱量子处理器",
-          "逻辑错误率",
-          "量子纠错"
+          "Fxr",
+          "Linafexor",
+          "肝病",
+          "胆汁酸"
         ],
         "sourceLinks": [
           {
             "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/s41586-026-10628-y"
+            "url": "https://www.nature.com/articles/s41586-026-10633-1"
           }
         ],
         "sources": 1,
-        "timestamp": 1781125676,
-        "published_at": "2026-06-11T05:07:56.174337",
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.969676",
         "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/s41586-026-10628-y",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
+        "url": "https://www.nature.com/articles/s41586-026-10633-1",
+        "event_id": null
       },
       {
-        "id": "e8eb273cde583fbfbdf3eacedb819bf9",
-        "title": "AI照亮全球隐藏迁徙流向",
-        "chinese_title": "AI照亮全球隐藏迁徙流向",
-        "original_title": "Artificial intelligence shines a light on hidden global migration flows",
-        "summary": "研究训练神经网络整合多源数据，给出更高分辨率的全球人口迁徙图景，帮助观察传统统计遗漏的流动。",
-        "rating": "A",
-        "score": 77,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "该方向可连接AI公共数据基础设施、移民政策、城市规划和人口经济预测。",
-        "entities": [
-          "人工智能",
-          "全球迁徙",
-          "神经网络"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01588-4"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781125676,
-        "published_at": "2026-06-11T05:07:56.174487",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01588-4",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "5cb5a06598defe3e4ba695f1b1845f33",
-        "title": "深度学习重建40年全球人口迁徙",
-        "chinese_title": "深度学习重建40年全球人口迁徙",
-        "original_title": "Deep learning four decades of human migration",
-        "summary": "研究利用深度学习和多源数据，生成覆盖230个国家、1990至2024年的年度迁徙流数据集，并给出不确定性估计。",
-        "rating": "A",
-        "score": 78,
+        "id": "36d0ddf88ef50d20d43778b82a66cd10",
+        "title": "融化冰山落石正在重塑北极海底生态",
+        "chinese_title": "融化冰山落石正在重塑北极海底生态",
+        "original_title": "Rocks falling from melting icebergs host deep-sea oases of biodiversity",
+        "summary": "Nature报道气候变化导致的冰山融化和落石，为珊瑚、海绵等北极海底生物创造新的栖息环境。",
+        "rating": "B",
+        "score": 68,
         "type": "research",
         "typeName": "研究成果",
-        "expansion": "可与AI治理和人口政策结合，成为数据科学进入公共决策的案例。",
+        "expansion": "这个发现把气候变化影响从海面延伸到深海生态，可继续追踪北极航运、渔业和保护区规划。",
         "entities": [
-          "人口迁徙数据集",
-          "公共政策",
-          "深度学习"
+          "冰山",
+          "北极",
+          "气候变化",
+          "深海生态"
         ],
         "sourceLinks": [
           {
             "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/s41586-026-10611-7"
+            "url": "https://www.nature.com/articles/d41586-026-01835-8"
           }
         ],
         "sources": 1,
-        "timestamp": 1781125676,
-        "published_at": "2026-06-11T05:07:56.174689",
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.969874",
         "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/s41586-026-10611-7",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
+        "url": "https://www.nature.com/articles/d41586-026-01835-8",
+        "event_id": null
+      },
+      {
+        "id": "c1d59eb708ba53a66e35b55bc7e096fe",
+        "title": "印度洋发现绵延千公里鲸骨墓地",
+        "chinese_title": "印度洋发现绵延千公里鲸骨墓地",
+        "original_title": "A vast whale necropolis has been found",
+        "summary": "研究人员在印度洋深海发现大规模鲸类遗骸聚集区，可能构成重要生态地标并保存长期深海生命记录。",
+        "rating": "B",
+        "score": 67,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该发现适合延展到深海生物多样性、鲸类演化和深海采矿前生态基线调查。",
+        "entities": [
+          "印度洋",
+          "深海生态",
+          "生物多样性",
+          "鲸类遗骸"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01581-x"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.969982",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01581-x",
+        "event_id": null
+      },
+      {
+        "id": "6cf9cf5d518fd339e7364922f27db0a7",
+        "title": "脑网络图谱揭示儿童弥漫中线胶质瘤预后",
+        "chinese_title": "脑网络图谱揭示儿童弥漫中线胶质瘤预后",
+        "original_title": "A prognostic human brain network for diffuse midline glioma",
+        "summary": "Nature论文通过肿瘤网络映射发现儿童弥漫中线胶质瘤会利用健康脑回路，相关网络对预后具有指示意义。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该成果可能推动脑肿瘤从基因分型走向网络医学，也为影像预测和个体化治疗提供线索。",
+        "entities": [
+          "儿童肿瘤",
+          "弥漫中线胶质瘤",
+          "网络医学",
+          "脑网络"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10631-3"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.970088",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10631-3",
+        "event_id": null
+      },
+      {
+        "id": "65472c97ca4ed7ed16f8c9a562fd633d",
+        "title": "全基因组复制塑造脊椎动物脑细胞演化",
+        "chinese_title": "全基因组复制塑造脊椎动物脑细胞演化",
+        "original_title": "Whole-genome duplication shaped cell-type evolution in the vertebrate brain",
+        "summary": "Nature研究比较多物种脑单细胞转录组，认为基因复制产物在早期脊椎动物脑细胞类型分化中发挥关键作用。",
+        "rating": "A",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究为理解人脑复杂性来源提供演化证据，也可延伸到发育疾病和跨物种脑图谱。",
+        "entities": [
+          "Ohnologues",
+          "全基因组复制",
+          "单细胞转录组",
+          "脊椎动物脑"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10629-x"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.970308",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10629-x",
+        "event_id": null
+      },
+      {
+        "id": "1120696e7c76be36ec2c3958055bf6ce",
+        "title": "530万年前鲸骨墓地揭开深海生态记录",
+        "chinese_title": "530万年前鲸骨墓地揭开深海生态记录",
+        "original_title": "A 5.3-million-year-old deep-sea whale necropolis in the Diamantina Zone",
+        "summary": "Nature论文描述迪亚曼蒂纳区530万年前深海鲸类遗骸聚集，显示长期特化生态系统和丰富化石记录。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这类深海遗址可成为古生态和现代深海保护的交叉选题，也会影响深海资源开发前的环境评估。",
+        "entities": [
+          "古生态",
+          "深海保护",
+          "迪亚曼蒂纳区",
+          "鲸骨墓地"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10546-z"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.970510",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10546-z",
+        "event_id": null
+      },
+      {
+        "id": "661e33852cbbf7af67db889b0f5c702b",
+        "title": "SIRT7守护雌性X染色体剂量平衡",
+        "chinese_title": "SIRT7守护雌性X染色体剂量平衡",
+        "original_title": "SIRT7 regulates dosage compensation and safeguards the female X&#xa0;chromosome",
+        "summary": "Nature研究发现SIRT7参与维护X染色体完整性，并保障雌性细胞中X染色体与常染色体的剂量平衡。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该机制可能关联性别差异疾病、染色体稳定性和表观遗传调控，值得关注医学转化线索。",
+        "entities": [
+          "Sirt7",
+          "X染色体",
+          "剂量补偿",
+          "表观遗传"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10645-x"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.970603",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10645-x",
+        "event_id": null
+      },
+      {
+        "id": "35103741deaff9b44c43541c5662c50a",
+        "title": "伴侣蛋白如何组装RNA沉默复合体被看清",
+        "chinese_title": "伴侣蛋白如何组装RNA沉默复合体被看清",
+        "original_title": "Structural basis for chaperone-guided assembly of RNA-induced silencing complex",
+        "summary": "Nature论文解析AGO成熟复合体结构，揭示伴侣蛋白和RNA双链如何引导RNA诱导沉默复合体装配。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该发现可延伸到RNA干扰药物、基因沉默工具和抗病毒机制研究。",
+        "entities": [
+          "Ago",
+          "Rna干扰",
+          "Rna诱导沉默复合体",
+          "伴侣蛋白"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10640-2"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.970699",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10640-2",
+        "event_id": null
+      },
+      {
+        "id": "ddfa5864c89b8625c1fd3b636476a45b",
+        "title": "睡眠和运动对克隆性造血影响取决于突变",
+        "chinese_title": "睡眠和运动对克隆性造血影响取决于突变",
+        "original_title": "Mutation-dependent responses to sleep and exercise in clonal haematopoiesis",
+        "summary": "Nature研究显示睡眠和运动可减缓克隆性造血，并限制突变细胞驱动的动脉粥样硬化，但效果与突变类型有关。",
+        "rating": "A",
+        "score": 75,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该成果连接生活方式干预、血液衰老和心血管风险评估，后续可看临床队列验证。",
+        "entities": [
+          "克隆性造血",
+          "动脉粥样硬化",
+          "睡眠",
+          "运动"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10634-0"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.970797",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10634-0",
+        "event_id": null
+      },
+      {
+        "id": "87b649c21e68d58f95f0fdafb051c45f",
+        "title": "基因来源图谱重构真核生物起源",
+        "chinese_title": "基因来源图谱重构真核生物起源",
+        "original_title": "Gene ancestries reveal diverse microbial associations during eukaryogenesis",
+        "summary": "Nature研究通过系统发育基因组学重建最后真核共同祖先蛋白组，指出细菌和病毒横向基因转移的重要作用。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该成果可延展到生命起源、微生物共生和复杂细胞演化的长期科学叙事。",
+        "entities": [
+          "微生物",
+          "横向基因转移",
+          "真核生物起源",
+          "系统发育基因组学"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10639-9"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.971339",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10639-9",
+        "event_id": null
+      },
+      {
+        "id": "272ca7c18bf295568f8390ba6c3d7854",
+        "title": "绿光让水中碳纳米管运动变慢",
+        "chinese_title": "绿光让水中碳纳米管运动变慢",
+        "original_title": "Light slows down carbon nanotubes in water",
+        "summary": "Nature报道水悬浮碳纳米管在绿光照射下运动减慢，提示激发电子通过量子摩擦与水发生耦合。",
+        "rating": "A",
+        "score": 76,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该现象可能影响纳米流体、光控材料和界面量子效应研究，后续需看可控器件应用。",
+        "entities": [
+          "碳纳米管",
+          "纳米流体",
+          "绿光",
+          "量子摩擦"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01701-7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.971676",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01701-7",
+        "event_id": null
+      },
+      {
+        "id": "4e363f3b20990a5f79a0f9b1c33caa09",
+        "title": "神经毒素多姿态结合揭示钠通道激活机制",
+        "chinese_title": "神经毒素多姿态结合揭示钠通道激活机制",
+        "original_title": "Diverse binding poses of agonistic neurotoxins on human Na&lt;sub&gt;v&lt;/sub&gt;1.6",
+        "summary": "Nature研究解析激动性神经毒素在人类Nav1.6钠通道上的多种结合姿态，帮助理解神经兴奋和毒素作用机制。",
+        "rating": "B",
+        "score": 71,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该结构信息可服务止痛药、抗癫痫药和神经毒素探针设计，后续价值在药物靶点转化。",
+        "entities": [
+          "Nav1.6",
+          "神经毒素",
+          "结构生物学",
+          "钠通道"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10661-x"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.972092",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10661-x",
+        "event_id": null
+      },
+      {
+        "id": "05494bce7044970095813a25efb29632",
+        "title": "光诱导量子摩擦作用于水中碳纳米管",
+        "chinese_title": "光诱导量子摩擦作用于水中碳纳米管",
+        "original_title": "Light-induced quantum friction of carbon nanotubes in water",
+        "summary": "Nature论文系统描述碳纳米管在水中的光诱导量子摩擦，为光与液体界面动量交换提供实验证据。",
+        "rating": "B",
+        "score": 73,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究与纳米流体控制和量子材料界面效应相关，可与对应解读文章合并报道。",
+        "entities": [
+          "光诱导量子摩擦",
+          "水界面",
+          "碳纳米管",
+          "量子材料"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10632-2"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.972365",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10632-2",
+        "event_id": null
+      },
+      {
+        "id": "4835fd5bdaa1dfa35a53f10a0b710fd8",
+        "title": "线粒体贴近细胞核保障能量供应",
+        "chinese_title": "线粒体贴近细胞核保障能量供应",
+        "original_title": "Mitochondria tethered to the nucleus secure its energy supply",
+        "summary": "Nature报道线粒体与细胞核附近结构相互作用，帮助确保细胞核获得稳定能量供应。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该机制可延伸到细胞能量代谢、衰老和神经退行性疾病研究。",
+        "entities": [
+          "核孔复合体",
+          "线粒体",
+          "细胞核",
+          "能量代谢"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01587-5"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781129139,
+        "published_at": "2026-06-11T06:05:39.973167",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01587-5",
+        "event_id": null
       },
       {
         "id": "6852aa1658a745ca4b01c7056bbce3b2",
@@ -10624,412 +11161,9 @@
         "event_id": null,
         "grade": "A+",
         "level": "A+"
-      },
-      {
-        "id": "1b89de8e0d025fb6b9f5ccaf62060c30",
-        "title": "郭明錤称MacBook Neo热销促苹果加倍生产",
-        "chinese_title": "郭明錤称MacBook Neo热销促苹果加倍生产",
-        "original_title": "MacBook Neo is so popular that Apple doubled production",
-        "summary": "MacRumors援引郭明錤消息称，MacBook Neo市场需求强劲，苹果已将产量翻倍，显示这款新品可能超出早期销售预期。",
-        "rating": "A+",
-        "score": 78,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "如果产能翻倍属实，后续可追踪MacBook Neo对MacBook Air、Windows AI PC和供应链订单的挤压或拉动作用。",
-        "entities": [
-          "Apple",
-          "Macbook Neo",
-          "Macrumors",
-          "郭明錤"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News (apple)",
-            "url": "https://www.macrumors.com/2026/06/03/macbook-neo-production-doubled-says-kuo/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780524291,
-        "published_at": "2026-06-04T06:04:51.312286",
-        "source": "Hacker News (apple)",
-        "url": "https://www.macrumors.com/2026/06/03/macbook-neo-production-doubled-says-kuo/",
-        "event_id": null,
-        "original_content": "Comments",
-        "grade": "A+",
-        "extension": "若MacBook Neo放量属实，将影响苹果Mac产品线定价与供应链排产，也可能带动上游面板、芯片和代工订单变化。",
-        "level": "A+"
-      },
-      {
-        "id": "4e07758d9dc1cb0e9f9764ceab830b71",
-        "title": "苹果将在得州App Store启用年龄验证",
-        "chinese_title": "苹果将在得州App Store启用年龄验证",
-        "original_title": "Apple is bringing age verification to Texas this week",
-        "summary": "苹果将从6月4日起在得州App Store对新账号启用年龄验证，用户可能需通过信用卡、政府证件或账号年龄完成成年人确认。",
-        "rating": "A",
-        "score": 79,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这可能成为美国州级平台监管落地样板，后续影响开发者分发、青少年隐私合规以及苹果与州政府的诉讼博弈。",
-        "entities": [
-          "App Store",
-          "Apple",
-          "Texas",
-          "年龄验证"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts (apple)",
-            "url": "https://www.theverge.com/tech/942761/apple-texas-age-verification-app-store"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780524291,
-        "published_at": "2026-06-04T06:04:51.312416",
-        "source": "The Verge -  Tech Posts (apple)",
-        "url": "https://www.theverge.com/tech/942761/apple-texas-age-verification-app-store",
-        "event_id": null,
-        "original_content": "Apple will introduce age verification in the App Store for users in Texas starting on Thursday, June 4th. The move, as spotted by MacRumors , comes just days after a federal appeals court allowed Texas' App Store Accountability Act to go into effect while a lawsuit against it proceeds. People in Texas who are creating a new Apple account will need to verify they're over 18 using a credit card or government ID . Apple may also automatically verify users' age using the age of their account and whether they have a credit card on file. Meanwhile, users under 18 must join a Family Sharing group, where a parent or guardian will need to provide con … Read the full story at The Verge.",
-        "grade": "A",
-        "extension": "得州新规会成为平台未成年人保护和隐私争议的新样本，后续其他州若跟进，应用商店合规成本和用户流程都将改变。",
-        "level": "A"
-      },
-      {
-        "id": "13cd4b0cf172530f7e0062f307706c4a",
-        "title": "英伟达收购Kumo补强企业预测模型",
-        "chinese_title": "英伟达收购Kumo补强企业预测模型",
-        "original_title": "Nvidia Buys Enterprise Model-Maker Kumo AI for at Least $400 Million",
-        "summary": "英伟达已收购企业预测AI初创公司Kumo AI，金额至少4亿美元，交易将扩展其可针对英伟达硬件优化并提供给企业定制的模型组合。",
-        "rating": "A+",
-        "score": 92,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "这笔收购可延伸到英伟达从芯片供应商向企业AI软件平台扩张的路径，也值得观察其对垂直模型创业公司并购估值和云厂商合作格局的影响。",
-        "entities": [
-          "Ai硬件生态",
-          "Kumo Ai",
-          "NVIDIA",
-          "企业模型"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/nvidia-buys-enterprise-model-maker-kumo-ai-least-400-million"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780523846,
-        "published_at": "2026-06-04T05:57:26.330635",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/nvidia-buys-enterprise-model-maker-kumo-ai-least-400-million",
-        "event_id": null,
-        "original_content": "Nvidia has bought Kumo AI, a five-year-old startup that sells predictive AI software to enterprises, for more than $400 million, said a person with knowledge of the deal. The acquisition, first revealed by an Nvidia executive in a LinkedIn post on Tuesday, should expand Nvidia’s roster of AI models that can be optimized for Nvidia hardware and offered to enterprises for further customization.",
-        "grade": "A+",
-        "extension": "这笔收购表明英伟达正把企业AI软件资产纳入硬件生态，后续可观察其是否用并购加速行业模型和数据层布局。",
-        "level": "A+"
-      },
-      {
-        "id": "fb7b4d6df646cf8935bedd08f4fd5e45",
-        "title": "安全公司称用Codex发现HTTP/2远程拒绝服务漏洞",
-        "chinese_title": "安全公司称用Codex发现HTTP/2远程拒绝服务漏洞",
-        "original_title": "Security firm Calif says it used OpenAI's Codex to discover HTTP/2 Bomb, a remote DoS exploit affecting web servers like Nginx, Apache HTTPD, and Microsoft IIS (The Hacker News)",
-        "summary": "安全公司Calif称其借助OpenAI Codex发现HTTP/2 Bomb远程DoS漏洞，影响Nginx、Apache HTTPD和Microsoft IIS等主流服务器。",
-        "rating": "S",
-        "score": 94,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "AI编码工具参与漏洞发现会同时强化安全研究效率和攻防门槛争议，后续可追踪主流服务器补丁、漏洞复现和AI安全责任边界。",
-        "entities": [
-          "Calif",
-          "Codex",
-          "Http/2",
-          "Nginx",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260603/p52#a260603p52"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780523628,
-        "published_at": "2026-06-04T05:53:48.326821",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260603/p52#a260603p52",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "8c9bf8ccb8931b2073d5a917a7ce43a3",
-        "title": "谷歌Gemma 4开放模型主打16GB笔记本本地运行",
-        "chinese_title": "谷歌Gemma 4开放模型主打16GB笔记本本地运行",
-        "original_title": "Google's new Gemma 4 12B model is designed to run on any laptop with 16GB of RAM",
-        "summary": "谷歌发布Gemma 4家族的新12B模型，强调普通16GB内存消费级笔记本即可运行，试图降低开发者使用本地生成式AI的硬件门槛。",
-        "rating": "A+",
-        "score": 87,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "这是Gemma 4 12B同一发布事件的另一篇报道，可与多模态和开源许可信息合并观察本地AI模型竞争。",
-        "entities": [
-          "Ai Laptop",
-          "Gemma",
-          "Google",
-          "Local Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/google/2026/06/googles-new-gemma-4-open-ai-model-is-sized-for-your-laptop/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780523628,
-        "published_at": "2026-06-04T05:53:48.326914",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/google/2026/06/googles-new-gemma-4-open-ai-model-is-sized-for-your-laptop/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "2cb9b3878957c078a8eb525234c0d313",
-        "title": "OpenAI建议前沿模型强制接受网络风险评估",
-        "chinese_title": "OpenAI建议前沿模型强制接受网络风险评估",
-        "original_title": "OpenAI diverges from Trump's AI EO in a new policy paper, proposing cyber risk evaluations for advanced AI systems be mandatory and led by CAISI, not the NSA (Brendan Bordelon/Politico)",
-        "summary": "OpenAI在政策文件中主张先进AI系统必须接受网络风险评估，并建议由CAISI而非NSA主导，明显偏离特朗普AI行政令设想。",
-        "rating": "S",
-        "score": 92,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这将把前沿模型发布前评估的主导权、标准制定和监管机构分工推到台前，也可能影响OpenAI与美国政府的政策博弈。",
-        "entities": [
-          "Ai Regulation",
-          "Caisi",
-          "Nsa",
-          "OpenAI",
-          "Sam Altman"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260603/p51#a260603p51"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780523628,
-        "published_at": "2026-06-04T05:53:48.327008",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260603/p51#a260603p51",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "bd4a2ac0e849e54d6cc0422aa993aafc",
-        "title": "美国教授称AI使用加剧大学新生基础能力下滑",
-        "chinese_title": "美国教授称AI使用加剧大学新生基础能力下滑",
-        "original_title": "College Professors Say Incoming Students No Longer Understand Middle School Math and Science",
-        "summary": "加州大学教授呼吁恢复入学考试，称在AI滥用背景下，部分新生数学和科学基础甚至未达初中水平，引发教育公平与能力评估争议。",
-        "rating": "B",
-        "score": 71,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "这类议题可延伸到AI对教育评价体系、作业真实性和基础能力训练的影响，但报道依据和地域样本需要进一步核实。",
-        "entities": [
-          "Act",
-          "Ai In Education",
-          "Sat",
-          "University Of California"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/future-society/professors-incoming-students-dont-understand-math"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780523628,
-        "published_at": "2026-06-04T05:53:48.327097",
-        "source": "Futurism",
-        "url": "https://futurism.com/future-society/professors-incoming-students-dont-understand-math",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "4301eb6a93fafaddc5d583c37d9f4a2f",
-        "title": "SpaceX冲刺史上最大IPO募资750亿美元",
-        "chinese_title": "SpaceX冲刺史上最大IPO募资750亿美元",
-        "original_title": "Filing: SpaceX aims to raise $75B in its IPO, selling 555.6M shares at $135 each, which would value the company at ~$1.77T (Bailey Lipschultz/Bloomberg)",
-        "summary": "文件显示，SpaceX寻求通过IPO募资750亿美元，计划以每股135美元出售5.556亿股，公司估值约1.77万亿美元。",
-        "rating": "S",
-        "score": 98,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "若定价落地，SpaceX将把商业航天、卫星互联网和AI叙事一起带入公开市场估值体系，也会影响大型未上市科技公司的IPO窗口和投资人风险偏好。",
-        "entities": [
-          "Bloomberg",
-          "Elon Musk",
-          "Ipo",
-          "SpaceX"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260603/p55#a260603p55"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780523567,
-        "published_at": "2026-06-04T05:52:47.629719",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260603/p55#a260603p55",
-        "event_id": null,
-        "original_content": "Bailey Lipschultz / Bloomberg : Filing: SpaceX aims to raise $75B in its IPO, selling 555.6M shares at $135 each, which would value the company at ~$1.77T — SpaceX is seeking to raise $75 billion in an initial public offering that would be the biggest of all time, as Elon Musk's rocket, satellite and artificial intelligence …",
-        "grade": "S",
-        "extension": "SpaceX若完成史上最大IPO，将给火箭、星链和AI相关基础设施资产带来新的估值锚点，也可能影响科技股风险偏好。",
-        "level": "S"
-      },
-      {
-        "id": "bf39cb90d5bf3cd6560c40ee093ed04d",
-        "title": "本地优先AI记忆层Mnemo亮相Hacker News",
-        "chinese_title": "本地优先AI记忆层Mnemo亮相Hacker News",
-        "original_title": "Show HN: Mnemo – local-first AI memory layer for any LLM (Rust, SQLite,petgraph)",
-        "summary": "Mnemo是一个面向任意LLM的本地优先记忆层，用Rust、SQLite和知识图谱保存对话实体关系，并在后续提示词中自动注入相关上下文。",
-        "rating": "B",
-        "score": 72,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "LLM记忆层正在从云端服务走向本地化组件，后续可观察它与个人知识库、智能体框架和隐私敏感企业场景的结合。",
-        "entities": [
-          "LLM",
-          "Mnemo",
-          "Rust",
-          "Sqlite",
-          "知识图谱"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/zaydmulani09/mnemo"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780523567,
-        "published_at": "2026-06-04T05:52:47.629834",
-        "source": "Hacker News",
-        "url": "https://github.com/zaydmulani09/mnemo",
-        "event_id": null,
-        "original_content": "Comments",
-        "grade": "B",
-        "extension": "它切中LLM长期记忆和隐私部署需求，后续可观察与向量数据库、RAG框架、个人AI助手记忆系统的融合空间。",
-        "level": "B"
-      },
-      {
-        "id": "23832b14de36d35fd37949ab1f7ccea3",
-        "title": "英伟达规划N2X和N3X芯片押注AI电脑",
-        "chinese_title": "英伟达规划N2X和N3X芯片押注AI电脑",
-        "original_title": "Nvidia is already planning N2X and N3X chips &mdash; the goal is the Star Trek computer",
-        "summary": "黄仁勋在Computex透露RTX Spark不是一次性产品，英伟达已规划N2X和N3X等后续芯片，目标是打造可语音交互的科幻式电脑。",
-        "rating": "A+",
-        "score": 96,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "这表明英伟达正把AI PC从显卡生态延伸到整机计算平台，后续可能牵动微软、PC厂商和Arm/x86阵营在端侧AI入口上的竞争。",
-        "entities": [
-          "Jensen Huang",
-          "N2X",
-          "N3X",
-          "NVIDIA",
-          "Rtx Spark"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/tech/942588/nvidia-rtx-spark-n2x-n3x-r2-d2-star-trek-star-wars-plan"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780523567,
-        "published_at": "2026-06-04T05:52:47.629928",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/tech/942588/nvidia-rtx-spark-n2x-n3x-r2-d2-star-trek-star-wars-plan",
-        "event_id": null,
-        "original_content": "Jensen Huang, chief executive officer of Nvidia Corp. | Bloomberg via Getty Images Just in case you were wondering, Nvidia's RTX Spark isn't supposed to be a one-off. The company is not just flirting with becoming the fifth high-profile vendor of consumer laptop chips to see if people bite. At Computex 2026 in Taipei, Nvidia CEO Jensen Huang confirmed at least two additional generations of RTX Spark are already planned. The eventual goal, he said, is to build Star Trek -like computers and and Star Wars -like droids you can order around with your voice. \"I want to talk to my laptop! I want R2-D2!\" he told analysts and investors at Computex, revealing that he started working with Microsoft CEO Satya Nadella \"about three years … Read the full story at The Verge.",
-        "grade": "A+",
-        "extension": "这显示英伟达试图进入消费级AI PC芯片长周期竞争，后续将牵动微软、英特尔、高通与苹果在端侧AI计算上的布局。",
-        "level": "A+"
-      },
-      {
-        "id": "48eb73fd57a94255c752efd70399ef23",
-        "title": "Gemma 12B把多模态AI塞进16GB笔记本",
-        "chinese_title": "Gemma 12B把多模态AI塞进16GB笔记本",
-        "original_title": "Google Deepmind's Gemma 4 12B squeezes multimodal AI onto a laptop with just 16 GB of RAM",
-        "summary": "Google DeepMind的开源Gemma 12B可原生处理文本、图像和音频，并能在16GB内存笔记本上运行，性能接近更大规模模型且采用Apache 2.0许可证。",
-        "rating": "A+",
-        "score": 89,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "小参数多模态模型若能在普通笔记本上可用，将推动端侧AI应用、企业私有部署和开源模型生态竞争，也会压缩云端大模型的部分轻量任务空间。",
-        "entities": [
-          "Apache 2.0",
-          "DeepMind",
-          "Gemma",
-          "多模态Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/google-deepminds-gemma-4-12b-squeezes-multimodal-ai-onto-a-laptop-with-just-16-gb-of-ram/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780523567,
-        "published_at": "2026-06-04T05:52:47.630099",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/google-deepminds-gemma-4-12b-squeezes-multimodal-ai-onto-a-laptop-with-just-16-gb-of-ram/",
-        "event_id": null,
-        "original_content": "Google Deepmind's Gemma 4 12B is an open-source model that processes text, images, and audio natively and runs on laptops with just 16 GB of RAM. It nearly matches the twice-as-large 26B model in benchmarks and ships under an Apache 2.0 license for commercial use. The article Google Deepmind's Gemma 4 12B squeezes multimodal AI onto a laptop with just 16 GB of RAM appeared first on The Decoder .",
-        "grade": "A+",
-        "extension": "该模型可延伸到小模型多模态化、本地AI应用落地和开源商用生态竞争，也会影响开发者对云端大模型和端侧模型的取舍。",
-        "level": "A+"
-      },
-      {
-        "id": "37a07f7412205e7ed39e7b2c367961aa",
-        "title": "OpenAI发布Codex宣传片推动开发者工作流",
-        "chinese_title": "OpenAI发布Codex宣传片推动开发者工作流",
-        "original_title": "It's time to fly | Codex",
-        "summary": "OpenAI发布Codex相关视频，强调让开发者跨项目承担更多任务、提升构建和交付效率，继续为Codex扩大产品声量。",
-        "rating": "B",
-        "score": 71,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Codex的传播重点从单点代码生成转向多任务协作和项目级交付，后续可观察其与ChatGPT、IDE插件和企业开发流程的整合。",
-        "entities": [
-          "Codex",
-          "Developer Tools",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "OpenAI",
-            "url": "https://www.youtube.com/watch?v=bJcA23ckzcY"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780523567,
-        "published_at": "2026-06-04T05:52:47.630195",
-        "source": "OpenAI",
-        "url": "https://www.youtube.com/watch?v=bJcA23ckzcY",
-        "event_id": null,
-        "original_content": "Welcome to the new frontier of building. Take on more tasks, move effortlessly across projects, and ship faster. Try Codex for free today: https://openai.com/codex/",
-        "grade": "B",
-        "extension": "这类宣传内容本身信息量有限，但可作为OpenAI持续把Codex从编码辅助推向更完整软件工程工作流的信号。",
-        "level": "B"
       }
     ]
   },
-  "last_updated": "2026-06-11T05:09:36.291547",
-  "total_news": 335
+  "last_updated": "2026-06-11T06:06:06.921823",
+  "total_news": 340
 }
