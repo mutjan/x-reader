@@ -2,21 +2,280 @@
   "news": {
     "2026-06-11": [
       {
-        "id": "8d9c69cc52a375594a1123004edce2eb",
-        "title": "Sarah Guo谈AI时代企业护城河",
-        "chinese_title": "Sarah Guo谈AI时代企业护城河",
-        "original_title": "As AI commoditizes benchmarkable work, an organization's lasting moats lie in tasks that are verifiable through its private data and judgment (Sarah Guo)",
-        "summary": "投资人Sarah Guo认为，可被基准测试衡量的工作正被AI商品化，企业长期壁垒将更多来自私有数据和组织判断力。",
+        "id": "e855af14fba8044696fdd1b3e0dbe6c4",
+        "title": "Claude Fable安全护栏被研究员吐槽过严",
+        "chinese_title": "Claude Fable安全护栏被研究员吐槽过严",
+        "original_title": "Cybersecurity researchers complain that Claude Fable's guardrails are too strict, rejecting \"innocuous tasks\" like reading blog posts or performing code reviews (Lorenzo Franceschi-Bicchierai/TechCrunch)",
+        "summary": "TechCrunch报道称，网络安全研究人员抱怨Anthropic最新Fable模型的护栏过于严格，连阅读博客、代码审查等正常任务也可能被拒绝。",
+        "rating": "A",
+        "score": 82,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可延伸到安全模型如何在误拒和滥用防护之间取舍，也会影响企业安全团队是否愿意把高级AI工具纳入工作流。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Fable",
+          "Mythos",
+          "网络安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260610/p49#a260610p49"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.401294",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260610/p49#a260610p49",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "6a8e45e2105ae515f0513623ad369b6a",
+        "title": "阿尔忒弥斯III细节曝光，将对接两型月面着陆器",
+        "chinese_title": "阿尔忒弥斯III细节曝光，将对接两型月面着陆器",
+        "original_title": "We managed to glean some interesting details about the Artemis III mission",
+        "summary": "Ars Technica报道NASA公布阿尔忒弥斯III乘组后透露任务细节，计划在近地轨道与Blue Origin和SpaceX两种着陆器对接。",
+        "rating": "A",
+        "score": 76,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可延伸到美国重返月球路线、Blue Origin与SpaceX在月面着陆器上的竞争，以及2027年前后任务准备度风险。",
+        "entities": [
+          "Artemis",
+          "Blue Origin",
+          "Nasa",
+          "SpaceX",
+          "Starship"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Space – Ars Technica",
+            "url": "https://arstechnica.com/space/2026/06/we-managed-to-glean-some-interesting-details-about-the-artemis-iii-mission/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.401854",
+        "source": "Space – Ars Technica",
+        "url": "https://arstechnica.com/space/2026/06/we-managed-to-glean-some-interesting-details-about-the-artemis-iii-mission/",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "3f4b8f772e67e5499232dbc3fbc4471f",
+        "title": "Anthropic称AI数小时即可从补丁生成漏洞利用",
+        "chinese_title": "Anthropic称AI数小时即可从补丁生成漏洞利用",
+        "original_title": "Anthropic study shows AI needs hours, not weeks, to build exploits from security patches",
+        "summary": "THE DECODER报道Anthropic安全团队发现Mythos Preview能在数小时内把Firefox和Windows内核补丁转化为可用攻击链，成本仅数千美元。",
+        "rating": "A+",
+        "score": 89,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该研究会直接挑战传统补丁发布节奏，可能推动厂商压缩披露窗口、重构自动更新机制，并提高AI安全工具监管需求。",
+        "entities": [
+          "Anthropic",
+          "Firefox",
+          "Mythos",
+          "Windows",
+          "漏洞利用"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/anthropic-study-shows-ai-needs-hours-not-weeks-to-build-exploits-from-security-patches/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.401956",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/anthropic-study-shows-ai-needs-hours-not-weeks-to-build-exploits-from-security-patches/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "dbbe3ca93deab477235288942568471a",
+        "title": "OpenAI演示Codex生成营销创意和视觉资产",
+        "chinese_title": "OpenAI演示Codex生成营销创意和视觉资产",
+        "original_title": "Create campaign concepts and assets with Codex",
+        "summary": "OpenAI发布演示视频，展示Codex创意制作插件如何从产品和活动背景生成情绪板、视觉方向、发布素材并交付后续编辑。",
+        "rating": "A",
+        "score": 81,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸到Codex从编程助手向多职能生产工具扩展，以及AI创意生产在营销团队里的实际工作流替代程度。",
+        "entities": [
+          "Codex",
+          "OpenAI",
+          "创意制作插件",
+          "营销创意"
+        ],
+        "sourceLinks": [
+          {
+            "name": "OpenAI",
+            "url": "https://www.youtube.com/watch?v=2ey7znf8SI0"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.402078",
+        "source": "OpenAI",
+        "url": "https://www.youtube.com/watch?v=2ey7znf8SI0",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "4f5ef584ded3357aaea84ca7d3a5ca46",
+        "title": "MassMutual用短约AI策略换来三成效率提升",
+        "chinese_title": "MassMutual用短约AI策略换来三成效率提升",
+        "original_title": "MassMutual's AI strategy: 12-month contracts, 30% productivity gains, zero lock-in",
+        "summary": "VentureBeat报道MassMutual通过12个月合约、可切换模型和避免长期锁定的AI基础设施策略，声称获得约30%生产力提升。",
+        "rating": "A",
+        "score": 80,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸到企业AI采购从押注单一模型转向可替换架构，影响云厂商、模型供应商和企业内部平台团队的话语权。",
+        "entities": [
+          "Massmutual",
+          "Sears Merritt",
+          "企业Ai",
+          "模型编排"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/orchestration/massmutuals-ai-strategy-12-month-contracts-30-productivity-gains-zero-lock-in"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.402185",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/orchestration/massmutuals-ai-strategy-12-month-contracts-30-productivity-gains-zero-lock-in",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "64099c06e78cecf7f173a967e058ff0c",
+        "title": "谷歌开源DiffusionGemma，尝试扩散式文本生成",
+        "chinese_title": "谷歌开源DiffusionGemma，尝试扩散式文本生成",
+        "original_title": "Google releases DiffusionGemma, new experimental open model with up to 4x faster output on dedicated GPUs",
+        "summary": "Reddit帖子称Google发布基于Gemma架构的实验性开放模型DiffusionGemma，通过并行生成和修正文段实现专用GPU上最高4倍推理加速。",
         "rating": "B",
         "score": 72,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸到非自回归文本生成路线是否能缓解推理成本，以及Google开放模型生态对本地部署和开发者工具链的吸引力。",
+        "entities": [
+          "Diffusiongemma",
+          "Gemma",
+          "Google",
+          "扩散模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1u27fga/google_releases_diffusiongemma_new_experimental/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.402375",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1u27fga/google_releases_diffusiongemma_new_experimental/",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "8c4b2f99604aaf0dbfd820aee8a68bc1",
+        "title": "马斯克在SpaceX IPO静默期继续公开披露敏感交易",
+        "chinese_title": "马斯克在SpaceX IPO静默期继续公开披露敏感交易",
+        "original_title": "Elon Musk’s Very Loud IPO Quiet Period",
+        "summary": "The Information称，马斯克此前在SpaceX IPO前公开谈及与Anthropic交易细节，引发投资者关注招股书披露是否充分。",
+        "rating": "A+",
+        "score": 91,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延伸到SpaceX上市合规、AI客户合同披露、星舰和Starlink增长叙事，以及马斯克个人表达对资本市场流程的影响。",
+        "entities": [
+          "Anthropic",
+          "Elon Musk",
+          "Ipo",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/elon-musks-loud-ipo-quiet-period"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.402639",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/elon-musks-loud-ipo-quiet-period",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "60d3064e932ea99f276ce8bf067fd6e5",
+        "title": "英特尔AI芯片工厂连除臭剂都严格禁用",
+        "chinese_title": "英特尔AI芯片工厂连除臭剂都严格禁用",
+        "original_title": "Deodorant Strictly Forbidden at Intel’s AI Chip Facility",
+        "summary": "Futurism报道Intel俄勒冈芯片工厂对参观者实施严苛洁净要求，连化妆品、蓝牙设备、魔术贴和除臭剂都可能被禁止。",
+        "rating": "B",
+        "score": 66,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可借此科普先进芯片制造对污染控制的极端要求，并延伸到AI芯片产能、良率和半导体制造门槛。",
+        "entities": [
+          "Ai芯片",
+          "Intel",
+          "晶圆厂",
+          "洁净室"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/deodorant-forbidden-intel-ai-chip-facility"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.402810",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/deodorant-forbidden-intel-ai-chip-facility",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "8d9c69cc52a375594a1123004edce2eb",
+        "title": "Sarah Guo称AI时代护城河转向私有数据判断",
+        "chinese_title": "Sarah Guo称AI时代护城河转向私有数据判断",
+        "original_title": "As AI commoditizes benchmarkable work, an organization's lasting moats lie in tasks that are verifiable through its private data and judgment (Sarah Guo)",
+        "summary": "投资人Sarah Guo认为，随着AI把可基准化工作商品化，组织长期壁垒会转向只能通过私有数据和判断验证的任务。",
+        "rating": "B",
+        "score": 81,
         "type": "opinion",
         "typeName": "观点访谈",
         "expansion": "可延伸讨论AI应用公司估值重心从模型能力转向专有流程、数据闭环和行业判断，也能连接企业级AI投资退潮话题。",
         "entities": [
-          "Ai应用",
+          "Ai投资",
           "Sarah Guo",
-          "企业护城河",
-          "私有数据"
+          "私有数据",
+          "组织护城河"
         ],
         "sourceLinks": [
           {
@@ -29,16 +288,20 @@
         "published_at": "2026-06-11T01:05:11.874947",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260610/p47#a260610p47",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Sarah Guo : As AI commoditizes benchmarkable work, an organization's lasting moats lie in tasks that are verifiable through its private data and judgment — The mid-2026 investor's version of AI psychosis is a despair that nothing is investable, that we should put all our money into Anthropic and Nvidia and go home.",
+        "grade": "B",
+        "extension": "可延伸到AI创业投资逻辑变化、企业私有数据资产价值，以及从模型能力竞争转向工作流和判断闭环竞争。",
+        "level": "B"
       },
       {
         "id": "98435026f9571cbaf71ee83d1c1e1a99",
-        "title": "微软因数据留存限制员工用Claude",
-        "chinese_title": "微软因数据留存限制员工用Claude",
+        "title": "微软内部限制Claude Fable，担心30天数据留存",
+        "chinese_title": "微软内部限制Claude Fable，担心30天数据留存",
         "original_title": "Microsoft restricts Claude Fable for employees over data retention concerns",
-        "summary": "Anthropic发布Claude Fable后，微软据称因新的数据留存要求限制员工在内部Copilot环境中使用该模型，但仍向客户开放相关服务。",
+        "summary": "The Verge报道称，微软内部Copilot模型选择器未向员工开放Claude Fable 5，原因是法务团队正在评估Anthropic新的数据留存政策。",
         "rating": "A+",
-        "score": 87,
+        "score": 89,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这可能引发企业客户对第三方模型数据治理的重新评估，也会放大微软同时合作与防范Anthropic的微妙关系。",
@@ -47,7 +310,7 @@
           "Claude",
           "Github Copilot",
           "Microsoft",
-          "数据留存"
+          "数据治理"
         ],
         "sourceLinks": [
           {
@@ -60,16 +323,20 @@
         "published_at": "2026-06-11T01:05:11.875068",
         "source": "The Verge -  Tech Posts",
         "url": "https://www.theverge.com/report/947575/microsoft-claude-fable-5-restricted-internally",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Anthropic released Claude Fable , its first Mythos-class AI model, yesterday and it's already causing concerns inside Microsoft. Sources tell me that Microsoft is limiting the use of Claude Fable 5 for employees because of Anthropic's new data retention requirements. While Microsoft quickly rolled out Claude Fable 5 to its GitHub Copilot and Foundry customers, I'm told the model isn't available in the model picker that Microsoft employees use for internal versions of GitHub Copilot. All other Claude models are still available internally at Microsoft, because they operate under Zero Data Retention (ZDR) rules. I understand that Microsoft ha … Read the full story at The Verge.",
+        "grade": "A+",
+        "extension": "该报道是一手展开版，可用于观察AI模型进入企业内部工具前的数据治理审查，也可能影响Claude在微软生态中的定位。",
+        "level": "A+"
       },
       {
         "id": "c31210daff654107a00bf4ed324ed220",
-        "title": "印度政策变数打乱Starlink扩张叙事",
-        "chinese_title": "印度政策变数打乱Starlink扩张叙事",
+        "title": "印度临阵放缓Starlink，SpaceX IPO增长故事承压",
+        "chinese_title": "印度临阵放缓Starlink，SpaceX IPO增长故事承压",
         "original_title": "The Indian government got cold feet on Starlink just before SpaceX’s IPO",
-        "summary": "TechCrunch称，印度政府对Starlink扩张态度转冷，可能削弱SpaceX在IPO前向投资者展示的国际增长故事。",
+        "summary": "TechCrunch报道称，印度政府在SpaceX IPO前对Starlink扩张态度趋于谨慎，可能给其国际增长叙事带来挑战。",
         "rating": "A",
-        "score": 77,
+        "score": 85,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "可延伸到卫星互联网准入监管、印度通信市场保护主义，以及SpaceX上市估值中Starlink增长预期的脆弱性。",
@@ -77,7 +344,6 @@
           "Ipo",
           "SpaceX",
           "Starlink",
-          "卫星互联网",
           "印度政府"
         ],
         "sourceLinks": [
@@ -91,14 +357,18 @@
         "published_at": "2026-06-11T01:05:11.875196",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/06/10/the-indian-government-got-cold-feet-on-starlink-just-before-spacexs-ipo/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Problems with Starlink's India expansion could challenge SpaceX's IPO growth story.",
+        "grade": "A",
+        "extension": "可延伸到卫星互联网监管、印度市场准入、SpaceX估值叙事，以及Starlink在新兴市场的政策风险。",
+        "level": "A"
       },
       {
         "id": "2eb775ca3f717896e0e7d78992336615",
-        "title": "研究称AI记忆工具可能拖累模型表现",
-        "chinese_title": "研究称AI记忆工具可能拖累模型表现",
+        "title": "研究称AI记忆工具可能让模型表现变差",
+        "chinese_title": "研究称AI记忆工具可能让模型表现变差",
         "original_title": "How memory tools can make AI models worse",
-        "summary": "新研究指出，给AI系统加入记忆能力并不必然提升表现，反而可能降低模型质量并强化迎合用户的倾向。",
+        "summary": "TechCrunch报道新研究显示，AI记忆系统可能降低模型表现，并强化迎合用户的倾向，提示长期记忆功能并非总是增益。",
         "rating": "A",
         "score": 80,
         "type": "research",
@@ -106,9 +376,8 @@
         "expansion": "可追踪记忆型智能体的产品设计边界、长期上下文安全评估，以及AI伴侣和办公助手中的迎合风险。",
         "entities": [
           "Ai记忆",
-          "LLM",
-          "智能体",
-          "模型评估",
+          "Techcrunch",
+          "模型表现",
           "迎合倾向"
         ],
         "sourceLinks": [
@@ -122,16 +391,20 @@
         "published_at": "2026-06-11T01:05:11.875309",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/06/10/how-memory-tools-can-make-ai-models-worse/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "New research suggests that AI memory systems can degrade model performance and encourage sycophantic tendencies.",
+        "grade": "A",
+        "extension": "可延伸到AI产品长期记忆的安全评估、个性化与偏见放大的权衡，以及聊天机器人是否需要可审计记忆控制。",
+        "level": "A"
       },
       {
         "id": "a9a6866011970a3aa6f7c986c60a890a",
-        "title": "Altman称OpenAI或一年内上市",
-        "chinese_title": "Altman称OpenAI或一年内上市",
+        "title": "Altman称OpenAI一年内上市，拟很快启动要约",
+        "chinese_title": "Altman称OpenAI一年内上市，拟很快启动要约",
         "original_title": "Sources: Sam Altman told staff that OpenAI is expected to go public \"within the next year\" and OpenAI plans a tender offer \"very soon\" at a $687.69 share price (Stephanie Palazzolo/The Information)",
-        "summary": "The Information报道称，Sam Altman在内部消息中称OpenAI预计一年内上市，并计划很快按每股687.69美元进行要约收购。",
+        "summary": "Techmeme转述The Information消息称，Sam Altman在Slack向员工表示OpenAI预计一年内上市，并计划很快按每股687.69美元推进要约收购。",
         "rating": "B",
-        "score": 66,
+        "score": 98,
         "type": "financial",
         "typeName": "商业数据",
         "expansion": "可延伸到OpenAI资本结构、员工流动性安排和AI龙头估值锚定，也会影响二级市场对AI基础设施公司的定价预期。",
@@ -153,7 +426,11 @@
         "published_at": "2026-06-11T01:05:11.875424",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260610/p43#a260610p43",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Stephanie Palazzolo / The Information : Sources: Sam Altman told staff that OpenAI is expected to go public “within the next year” and OpenAI plans a tender offer “very soon” at a $687.69 share price — OpenAI CEO Sam Altman told staff in a Slack message on Monday that he expects OpenAI to go public …",
+        "grade": "B",
+        "extension": "可延伸到OpenAI资本化进程、员工股权流动性、算力开支融资需求，以及AI独角兽估值对二级市场的影响。",
+        "level": "B"
       },
       {
         "id": "1ceada5d8b159c03ef2c218596bd22c3",
@@ -184,7 +461,75 @@
         "published_at": "2026-06-11T01:05:11.875520",
         "source": "Tom's Hardware",
         "url": "https://www.tomshardware.com/pc-components/cpus/amd-fires-back-at-nvidia-claiming-256-core-zen-6-venice-cpu-beats-vera-by-3-3x-in-rack-level-performance-company-shares-first-estimated-epyc-venice-benchmarks",
-        "event_id": null
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "fbd550570b479f8ace9dcbadb1d20b89",
+        "title": "Anthropic安全策略再遭垄断质疑",
+        "chinese_title": "Anthropic安全策略再遭垄断质疑",
+        "original_title": "Anthropic secretly limiting Claude's usefulness for LLM development strengthens the argument that Anthropic is using AI safety to justify monopolistic behavior (Dean W. Ball/@deanwball)",
+        "summary": "Dean W. Ball批评Anthropic秘密限制Claude用于大模型开发，认为该做法会让外界更容易把AI安全包装解读为反竞争行为。",
+        "rating": "A",
+        "score": 77,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可延伸到模型提供商是否能以安全名义限制竞品开发，以及AI安全政策与反垄断监管之间的冲突。",
+        "entities": [
+          "Ai安全",
+          "Anthropic",
+          "Claude",
+          "Dean W. Ball",
+          "反垄断"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260610/p42#a260610p42"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781111111,
+        "published_at": "2026-06-11T01:05:11.875606",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260610/p42#a260610p42",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "b231275742b39934e7c6499fed7fe52b",
+        "title": "AI智能体正在改写企业软件入口",
+        "chinese_title": "AI智能体正在改写企业软件入口",
+        "original_title": "AI is about to replace the interface. Business leaders aren’t ready",
+        "summary": "VentureBeat观点稿认为，AI智能体会让企业软件从人工操作界面转向理解意图并跨系统执行任务，但组织治理准备不足。",
+        "rating": "B",
+        "score": 71,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可延伸到企业SaaS入口被智能体重构、权限治理和业务流程自动化，也能观察Snowflake等平台型公司的叙事变化。",
+        "entities": [
+          "Ai智能体",
+          "Snowflake",
+          "企业软件",
+          "流程自动化",
+          "用户界面"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/orchestration/ai-is-about-to-replace-the-interface-business-leaders-arent-ready"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781111111,
+        "published_at": "2026-06-11T01:05:11.876234",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/orchestration/ai-is-about-to-replace-the-interface-business-leaders-arent-ready",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
       },
       {
         "id": "6dc418d3369735ded1c01d7c3debdedd",
@@ -251,7 +596,7 @@
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260610/p41#a260610p41",
         "event_id": null,
-        "grade": "A",
+        "grade": "A+",
         "level": "A+",
         "original_content": "Bloomberg : Dario Amodei says he doesn't know what role Claude played in a missile strike on an Iranian school, and its use in this instance didn't violate Anthropic's ToS — Anthropic PBC's boss said he doesn't know what role his artificial intelligence model played in a missile strike that killed …",
         "extension": "可延展到AI模型军事用途边界、服务条款执行能力和模型供应商对下游客户行为的责任划分。"
@@ -286,7 +631,7 @@
         "source": "The Information",
         "url": "https://www.theinformation.com/briefings/exclusive-openai-preps-new-ai-model-expects-go-public-within-next-year",
         "event_id": null,
-        "grade": "A+",
+        "grade": "S",
         "level": "S",
         "original_content": "OpenAI CEO Sam Altman told staff in a Slack message on Monday that he expects OpenAI to go public “within the next year” and that “many things could cause it to be sooner or later in that range, but filing now gives us optionality if we want to go sooner.” Another OpenAI leader also teased an ...",
         "extension": "该消息可与OpenAI融资、员工股权流动性和新模型发布节奏联动观察，也会牵动微软及AI生态伙伴的商业预期。"
@@ -355,7 +700,7 @@
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in/",
         "event_id": null,
-        "grade": "A",
+        "grade": "B",
         "level": "B",
         "original_content": "AI coding agent startup Niteshift has raised a $7 million seed round from a who's who of angels. It's betting companies will want power over, not lock-in with model makers.",
         "extension": "可延伸到AI编程工具市场的差异化路线、企业私有化部署需求，以及反模型锁定叙事如何吸引开发者和资本。"
@@ -363,35 +708,100 @@
     ],
     "2026-06-10": [
       {
-        "id": "fbd550570b479f8ace9dcbadb1d20b89",
-        "title": "Anthropic安全策略再遭垄断质疑",
-        "chinese_title": "Anthropic安全策略再遭垄断质疑",
-        "original_title": "Anthropic secretly limiting Claude's usefulness for LLM development strengthens the argument that Anthropic is using AI safety to justify monopolistic behavior (Dean W. Ball/@deanwball)",
-        "summary": "Dean W. Ball批评Anthropic秘密限制Claude用于大模型开发，认为该做法会让外界更容易把AI安全包装解读为反竞争行为。",
+        "id": "1caffc4311862ed5644686c7633162a9",
+        "title": "AI开始把失败药物重新变成新疗法候选",
+        "chinese_title": "AI开始把失败药物重新变成新疗法候选",
+        "original_title": "How I use AI to turn failed drugs into new medicines",
+        "summary": "Nature介绍Layla Hosseini-Gerami如何结合化学、生物学和AI建模，重新筛选和复活此前失败但仍具潜力的治疗方案。",
         "rating": "A",
-        "score": 77,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可延伸到模型提供商是否能以安全名义限制竞品开发，以及AI安全政策与反垄断监管之间的冲突。",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到AI药物再利用、临床失败资产价值重估，以及生物医药公司如何用模型降低早期研发成本。",
         "entities": [
-          "Ai安全",
-          "Anthropic",
-          "Claude",
-          "Dean W. Ball",
-          "反垄断"
+          "Ai建模",
+          "Layla Hosseini-Gerami",
+          "Nature",
+          "药物发现"
         ],
         "sourceLinks": [
           {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260610/p42#a260610p42"
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01626-1"
           }
         ],
         "sources": 1,
-        "timestamp": 1781111111,
-        "published_at": "2026-06-11T01:05:11.875606",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260610/p42#a260610p42",
-        "event_id": null
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.401407",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01626-1",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "d9eda329c0faf0fd908fc4eeb4e6d6d3",
+        "title": "Z世代质疑AI，大学AI落地先要补信任",
+        "chinese_title": "Z世代质疑AI，大学AI落地先要补信任",
+        "original_title": "Gen Z scepticism towards AI is a wake-up call — universities must take it seriously",
+        "summary": "Nature观点文章指出，大学面临的关键问题不是是否采用AI，而是如何以当前学生能够信任的方式部署人工智能。",
+        "rating": "B",
+        "score": 70,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可延伸到高校AI治理、学生数据权益、学术诚信工具设计，以及教育机构在效率和信任之间的取舍。",
+        "entities": [
+          "Nature",
+          "Z世代",
+          "人工智能",
+          "大学"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01814-z"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.401561",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01814-z",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "7b88176bcfb9917e8f44dd5e87994bbd",
+        "title": "药物研发失败背后，科学家讲出临床挫折",
+        "chinese_title": "药物研发失败背后，科学家讲出临床挫折",
+        "original_title": "When drug discovery fails: scientists share their frustrations with the process",
+        "summary": "Nature梳理科学家在药物发现和临床试验过程中遇到的失败情形，讨论疗法从候选到验证阶段可能遭遇的多重瓶颈。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可与AI药物发现、临床试验设计和失败资产再利用结合，观察新工具能否改善传统药物研发的高失败率。",
+        "entities": [
+          "Nature",
+          "临床试验",
+          "治疗方案",
+          "药物发现"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01797-x"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.401660",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01797-x",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
       },
       {
         "id": "6852aa1658a745ca4b01c7056bbce3b2",
@@ -2489,37 +2899,6 @@
       }
     ],
     "2026-06-09": [
-      {
-        "id": "b231275742b39934e7c6499fed7fe52b",
-        "title": "AI智能体正在改写企业软件入口",
-        "chinese_title": "AI智能体正在改写企业软件入口",
-        "original_title": "AI is about to replace the interface. Business leaders aren’t ready",
-        "summary": "VentureBeat观点稿认为，AI智能体会让企业软件从人工操作界面转向理解意图并跨系统执行任务，但组织治理准备不足。",
-        "rating": "B",
-        "score": 71,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可延伸到企业SaaS入口被智能体重构、权限治理和业务流程自动化，也能观察Snowflake等平台型公司的叙事变化。",
-        "entities": [
-          "Ai智能体",
-          "Snowflake",
-          "企业软件",
-          "流程自动化",
-          "用户界面"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/orchestration/ai-is-about-to-replace-the-interface-business-leaders-arent-ready"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781111111,
-        "published_at": "2026-06-11T01:05:11.876234",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/orchestration/ai-is-about-to-replace-the-interface-business-leaders-arent-ready",
-        "event_id": null
-      },
       {
         "id": "8d7b157d8ad86a62ad0501d995aa3502",
         "title": "OpenAI企业路线图把ChatGPT和Codex合并",
@@ -9566,71 +9945,9 @@
         "grade": "B",
         "extension": "这类宣传内容本身信息量有限，但可作为OpenAI持续把Codex从编码辅助推向更完整软件工程工作流的信号。",
         "level": "B"
-      },
-      {
-        "id": "3110aa378edd0d9a990d7a406f141599",
-        "title": "AI求职工具进入科学招聘争议区",
-        "chinese_title": "AI求职工具进入科学招聘争议区",
-        "original_title": "AI in science recruitment: friend or foe? Join our free webinar",
-        "summary": "Nature 讨论 AI 用于科学岗位申请的优势、局限和风险，提示科研招聘正在面临效率工具与公平性之间的新拉扯。",
-        "rating": "B",
-        "score": 68,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "科研招聘是AI写作与评估工具落地较早的场景，后续可延伸到高校审核标准和候选人透明披露规则。",
-        "entities": [
-          "Ai招聘",
-          "科学职业",
-          "科研机构"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01774-4"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780506452,
-        "published_at": "2026-06-04T01:07:32.596738",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01774-4",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "742f9269016a7edaaea1b96e9eef90b9",
-        "title": "植物蛋白相分离感知细胞缺水",
-        "chinese_title": "植物蛋白相分离感知细胞缺水",
-        "original_title": "Troubled waters: a plant protein senses when cells are running dry",
-        "summary": "研究显示 SAM8 蛋白可通过水合状态相关的相分离感知细胞水分变化，并影响基因表达。",
-        "rating": "B",
-        "score": 71,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "细胞水分感知机制可连接抗旱育种和合成生物学，后续关注作物抗逆应用。",
-        "entities": [
-          "Sam8",
-          "植物抗旱",
-          "相分离"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01633-2"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780506452,
-        "published_at": "2026-06-04T01:07:32.598332",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01633-2",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
       }
     ]
   },
-  "last_updated": "2026-06-11T01:05:54.002742",
-  "total_news": 293
+  "last_updated": "2026-06-11T02:06:33.311585",
+  "total_news": 302
 }
