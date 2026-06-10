@@ -48,15 +48,22 @@ def _restore_data_dir():
 
 # ========== 测试辅助 ==========
 
-def _make_test_news(item_id: str, title: str, entities: list = None) -> ProcessedNewsItem:
+def _make_test_news(
+    item_id: str,
+    title: str,
+    entities: list = None,
+    source: str = "TestSource",
+    url: str = None,
+    published_at: datetime = None,
+) -> ProcessedNewsItem:
     """创建测试用 ProcessedNewsItem"""
     return ProcessedNewsItem(
         id=item_id,
         original_title=title,
         original_content=f"Content for {title}",
-        source="TestSource",
-        url=f"https://example.com/{item_id}",
-        published_at=datetime.now(),
+        source=source,
+        url=url or f"https://example.com/{item_id}",
+        published_at=published_at or datetime.now(),
         processed_at=datetime.now(),
         grade="A",
         score=80,
@@ -317,6 +324,69 @@ class TestEventGroupReviewer:
 
         assert self.reviewer.should_review([news2], [event1], [news1, news2]) is True
 
+    def test_should_review_skips_nature_same_day_group(self):
+        """测试Nature同日聚合组即使包含高价值新闻也不触发复查拆分"""
+        published_at = datetime(2026, 6, 11, 8, 0, 0)
+        news1 = _make_test_news(
+            "nature1",
+            "JUNO首批数据测量反应堆中微子振荡",
+            ["JUNO", "中微子"],
+            source="Nature - Issue - nature.com science feeds",
+            url="https://www.nature.com/articles/s41586-026-10538-z",
+            published_at=published_at,
+        )
+        news1.grade = "S"
+        news2 = _make_test_news(
+            "nature2",
+            "线粒体被证实可直接连接核孔复合体",
+            ["线粒体", "核孔复合体"],
+            source="Nature - Issue - nature.com science feeds",
+            url="https://www.nature.com/articles/s41586-026-10588-3",
+            published_at=published_at,
+        )
+        news2.grade = "A+"
+        event1 = _make_test_event("nature-event", [news1, news2])
+
+        assert self.reviewer.should_review([news2], [event1], [news1, news2]) is False
+
+    def test_apply_corrections_keeps_nature_same_day_group(self):
+        """测试复查修正不能拆分Nature同日聚合组"""
+        published_at = datetime(2026, 6, 11, 8, 0, 0)
+        news1 = _make_test_news(
+            "nature1",
+            "JUNO首批数据测量反应堆中微子振荡",
+            ["JUNO", "中微子"],
+            source="Nature - Issue - nature.com science feeds",
+            url="https://www.nature.com/articles/s41586-026-10538-z",
+            published_at=published_at,
+        )
+        news2 = _make_test_news(
+            "nature2",
+            "线粒体被证实可直接连接核孔复合体",
+            ["线粒体", "核孔复合体"],
+            source="Nature - Issue - nature.com science feeds",
+            url="https://www.nature.com/articles/s41586-026-10588-3",
+            published_at=published_at,
+        )
+        event1 = _make_test_event("nature-event", [news1, news2])
+        events = [event1]
+
+        corrections = [
+            {
+                "news_id": "nature2",
+                "current_event_id": "nature-event",
+                "suggested_event_id": "new_event",
+                "reason": "不同研究主题",
+            }
+        ]
+
+        success, audit_entry = self.reviewer.apply_corrections(corrections, events, batch_id="nature-protect")
+
+        assert success
+        assert audit_entry["corrections_applied"] == 0
+        assert len(events) == 1
+        assert {n.id for n in event1.news_list} == {"nature1", "nature2"}
+
 
 if __name__ == "__main__":
     test = TestEventGroupReviewer()
@@ -332,6 +402,8 @@ if __name__ == "__main__":
         ("candidate_selection", test.test_candidate_selection),
         ("should_review_skips_low_risk_single_item", test.test_should_review_skips_low_risk_single_item),
         ("should_review_triggers_for_high_value_merge", test.test_should_review_triggers_for_high_value_merge),
+        ("should_review_skips_nature_same_day_group", test.test_should_review_skips_nature_same_day_group),
+        ("apply_corrections_keeps_nature_same_day_group", test.test_apply_corrections_keeps_nature_same_day_group),
     ]
 
     passed = 0

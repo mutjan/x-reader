@@ -32,6 +32,27 @@ class EventGroupReviewer:
         self.review_similarity_threshold = review_similarity_threshold
         self.max_candidates_per_news = 5
 
+    def _nature_day_key(self, news: ProcessedNewsItem) -> Optional[str]:
+        """Return the date key for Nature items that are intentionally grouped by source date."""
+        source = (news.source or "").lower()
+        url = (news.url or "").lower()
+        if "nature" not in source and "nature.com" not in url:
+            return None
+        return news.published_at.date().isoformat()
+
+    def _nature_same_day_event_key(self, event: Any) -> Optional[str]:
+        """Return the shared Nature date key when every item in the event is a same-day Nature item."""
+        news_list = getattr(event, "news_list", [])
+        if len(news_list) < 2:
+            return None
+        keys = [self._nature_day_key(news) for news in news_list]
+        if any(key is None for key in keys):
+            return None
+        unique_keys = set(keys)
+        if len(unique_keys) != 1:
+            return None
+        return next(iter(unique_keys))
+
     def _load_prompt_template(self) -> str:
         """加载提示词模板文件"""
         if not os.path.exists(REVIEW_PROMPT_FILE):
@@ -163,6 +184,11 @@ class EventGroupReviewer:
         for news in new_items:
             current_event = news_to_event.get(news.id)
 
+            # Nature is intentionally grouped by source + publication date, even when
+            # individual papers cover unrelated topics.
+            if current_event and self._nature_same_day_event_key(current_event):
+                continue
+
             # 高价值新闻被并入已有事件时，人工/Agent复查收益最高。
             if current_event and news.grade in {"S", "A+"} and current_event.news_count > 1:
                 logger.info(f"触发事件复查: 高价值新闻进入已有事件 news_id={news.id}")
@@ -269,6 +295,13 @@ class EventGroupReviewer:
             from_event_id = correction.get("current_event_id")
             to_event_id = correction.get("suggested_event_id", "")
             reason = correction.get("reason", "")
+
+            from_event = event_map.get(from_event_id) if from_event_id else None
+            if from_event and self._nature_same_day_event_key(from_event):
+                logger.info(
+                    f"跳过Nature同日聚合保护事件的拆分修正: event_id={from_event_id}, news_id={news_id}"
+                )
+                continue
 
             # 检查新闻是否存在
             if news_id not in news_to_event:

@@ -942,6 +942,32 @@
           "reason": "原事件混入多篇不同研究主题，缺少共同核心事件，应拆成独立事件"
         }
       ]
+    },
+    {
+      "timestamp": "2026-06-11T06:31:16.941245",
+      "batch_id": "nature-source-date-merge-20260611",
+      "corrections_applied": 40,
+      "details": [
+        {
+          "date": "2026-06-04",
+          "group_id": "7dfa554f",
+          "count": 2,
+          "title": "Nature 2026-06-04 论文合集：肺纤维化新疗法小鼠实验显效，关键蛋白成突破口"
+        },
+        {
+          "date": "2026-06-10",
+          "group_id": "a658dd04",
+          "count": 3,
+          "title": "Nature 2026-06-10 论文合集：首位患者接受细胞返老还童基因疗法"
+        },
+        {
+          "date": "2026-06-11",
+          "group_id": "1ed8c4cb",
+          "count": 35,
+          "title": "Nature 2026-06-11 论文合集：JUNO首批数据测量反应堆中微子振荡"
+        }
+      ],
+      "note": "Merge Nature items by source/url and published_at date, regardless of topic similarity."
     }
   ]
 }
