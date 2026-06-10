@@ -2,21 +2,175 @@
   "news": {
     "2026-06-11": [
       {
-        "id": "c90d2a0e6514c98d577b06e2411c3f27",
-        "title": "OpenAI联手Visa让智能体代用户付款",
-        "chinese_title": "OpenAI联手Visa让智能体代用户付款",
-        "original_title": "OpenAI and Visa partner to let AI agents make purchases online after users give their permission and to explore enterprise applications for AI-driven payments (Paige Smith/Bloomberg)",
-        "summary": "OpenAI与Visa合作探索AI驱动支付，用户授权后智能体可在线完成购买，也将面向企业支付场景测试新应用。",
+        "id": "fb4992f6b9a8b5bbdae3e42b27204ffc",
+        "title": "Anthropic CEO呼吁强AI模型按航空业监管",
+        "chinese_title": "Anthropic CEO呼吁强AI模型按航空业监管",
+        "original_title": "Anthropic CEO calls for FAA-style regulation of powerful AI models: what enterprises should know",
+        "summary": "Dario Amodei提出以类似FAA的制度监管强大AI模型发布，并配套模型风险与经济政策框架，凸显前沿模型能力跃迁后的安全、就业和企业合规压力。",
         "rating": "S",
-        "score": 100,
+        "score": 96,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延展到美国AI监管路线、企业模型采购合规和前沿模型发布门槛，也会影响OpenAI、Google等公司的安全披露策略。",
+        "entities": [
+          "Ai监管",
+          "Anthropic",
+          "Claude",
+          "Dario Amodei",
+          "Faa"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/anthropic-ceo-calls-for-faa-style-regulation-of-powerful-ai-models-what-enterprises-should-know"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781121908,
+        "published_at": "2026-06-11T04:05:08.835916",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/anthropic-ceo-calls-for-faa-style-regulation-of-powerful-ai-models-what-enterprises-should-know",
+        "event_id": null
+      },
+      {
+        "id": "47675db7c0b0091b2c269f92ea0639f1",
+        "title": "Google开源DiffusionGemma，文本生成提速4倍",
+        "chinese_title": "Google开源DiffusionGemma，文本生成提速4倍",
+        "original_title": "Google's latest DiffusionGemma open AI model comes with a 4x speed boost",
+        "summary": "Google DeepMind发布Gemma开放模型家族的新成员DiffusionGemma，用扩散式并行生成替代逐词生成，强调本地硬件上的速度和效率优势。",
+        "rating": "A",
+        "score": 85,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可继续观察扩散语言模型是否会改变端侧推理、低延迟应用和开源模型竞赛，也可对比其质量短板与传统自回归模型的取舍。",
+        "entities": [
+          "DeepMind",
+          "Diffusiongemma",
+          "Gemma",
+          "NVIDIA",
+          "扩散语言模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/google/2026/06/googles-latest-diffusiongemma-open-ai-model-comes-with-a-4x-speed-boost/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781121908,
+        "published_at": "2026-06-11T04:05:08.836051",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/google/2026/06/googles-latest-diffusiongemma-open-ai-model-comes-with-a-4x-speed-boost/",
+        "event_id": null
+      },
+      {
+        "id": "e0d2e09e5e74ba94695c5a2baf392f02",
+        "title": "DeepMind机器人伙伴被质疑用真人冒充机器人",
+        "chinese_title": "DeepMind机器人伙伴被质疑用真人冒充机器人",
+        "original_title": "Google DeepMind Partner Posts Video of Fake Humanoid Robot",
+        "summary": "一家入选Google DeepMind欧洲机器人项目的公司发布类人机器人演示视频后，被外界质疑画面中可能是真人穿戴道具而非真实机器人。",
+        "rating": "B",
+        "score": 70,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可追踪机器人行业演示真实性、投资人尽调和大厂合作方背书风险，类似事件也会影响公众对具身智能进展的信任。",
+        "entities": [
+          "DeepMind",
+          "Humanoid Robot",
+          "Tesla Optimus",
+          "机器人"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/robots-and-machines/google-deepmind-partner-video-fake-humanoid-robot"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781121908,
+        "published_at": "2026-06-11T04:05:08.836284",
+        "source": "Futurism",
+        "url": "https://futurism.com/robots-and-machines/google-deepmind-partner-video-fake-humanoid-robot",
+        "event_id": null
+      },
+      {
+        "id": "bebf987b8cdb23734f22a4cb08d4d587",
+        "title": "Amodei长文系统谈AI指数级进展政策回应",
+        "chinese_title": "Amodei长文系统谈AI指数级进展政策回应",
+        "original_title": "An essay on policy responses to AI's exponential progress across regulation and public safety, macroeconomics and taxes, science, civil liberties, geopolitics (Dario Amodei)",
+        "summary": "Anthropic CEO Dario Amodei发布长文，围绕AI安全监管、宏观经济、科学、公民自由和地缘政治提出政策框架，试图为快速进步的AI建立治理议程。",
+        "rating": "A",
+        "score": 80,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可与Anthropic近期产品和监管倡议合并观察，延伸到美国政策圈、企业治理和AI对就业税制的长期影响。",
+        "entities": [
+          "Ai治理",
+          "Anthropic",
+          "Dario Amodei",
+          "公共安全",
+          "地缘政治"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260610/p51#a260610p51"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781121908,
+        "published_at": "2026-06-11T04:05:08.836397",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260610/p51#a260610p51",
+        "event_id": null
+      },
+      {
+        "id": "fd2a49b9ebc63dcb4101d580b116d722",
+        "title": "中国T1人形机器人点球视频走红",
+        "chinese_title": "中国T1人形机器人点球视频走红",
+        "original_title": "Humanoid Robot Kicks Soccer Ball So Hard It Smashes Hole in Wall",
+        "summary": "Booster Robotics的T1机器人在公开视频中大力射门并击穿墙面，展示小型人形机器人在运动控制和动态平衡上的娱乐化传播效果。",
+        "rating": "B",
+        "score": 66,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可延展到中国人形机器人公司的运动控制能力、赛事营销和商业演示边界，也可对比Unitree等厂商的传播打法。",
+        "entities": [
+          "Booster Robotics",
+          "T1",
+          "人形机器人",
+          "运动控制"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/robots-and-machines/robot-kicks-soccer-ball-smashes-wall"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781121908,
+        "published_at": "2026-06-11T04:05:08.836704",
+        "source": "Futurism",
+        "url": "https://futurism.com/robots-and-machines/robot-kicks-soccer-ball-smashes-wall",
+        "event_id": null
+      },
+      {
+        "id": "c90d2a0e6514c98d577b06e2411c3f27",
+        "title": "OpenAI联手Visa让AI代理经授权网购",
+        "chinese_title": "OpenAI联手Visa让AI代理经授权网购",
+        "original_title": "OpenAI and Visa partner to let AI agents make purchases online after users give their permission and to explore enterprise applications for AI-driven payments (Paige Smith/Bloomberg)",
+        "summary": "OpenAI与Visa合作探索AI代理支付，允许用户授权后由AI代理在线购买商品，并进一步测试企业级AI驱动支付应用。",
+        "rating": "S",
+        "score": 98,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "这会把智能体从信息助手推向交易执行层，后续可关注支付风控、商户接入、用户授权边界和银行网络的竞品反应。",
         "entities": [
-          "Ai支付",
-          "Ai智能体",
+          "Ai Agent",
           "OpenAI",
-          "Visa"
+          "Visa",
+          "企业应用",
+          "在线支付"
         ],
         "sourceLinks": [
           {
@@ -31,20 +185,23 @@
         "url": "https://www.techmeme.com/260610/p50#a260610p50",
         "event_id": null,
         "grade": "S",
-        "level": "S"
+        "level": "S",
+        "original_content": "Paige Smith / Bloomberg : OpenAI and Visa partner to let AI agents make purchases online after users give their permission and to explore enterprise applications for AI-driven payments — OpenAI and Visa Inc. are now allowing artificial-intelligence agents to make purchases online after users give their permission …",
+        "extension": "可延展到AI Agent商业闭环、支付风控、用户授权和企业采购流程，也会牵动Stripe、Mastercard等支付生态竞品。"
       },
       {
         "id": "ee0705d5b906926731e2f61cccc47fb6",
-        "title": "Altman称OpenAI一年内有望上市",
-        "chinese_title": "Altman称OpenAI一年内有望上市",
+        "title": "Altman称OpenAI IPO可能推迟到明年内",
+        "chinese_title": "Altman称OpenAI IPO可能推迟到明年内",
         "original_title": "OpenAI's IPO slips as Altman tells staff to expect a public offering \"within the next year\"",
-        "summary": "Sam Altman向员工表示OpenAI预计一年内推进IPO，但也可能因自我改进AI风险和市场节奏推迟到2027年。",
+        "summary": "Sam Altman告诉员工OpenAI预计将在未来一年内推进IPO，但也可能延至2027年，外界将其与自我改进AI风险和Anthropic增长压力联系起来。",
         "rating": "A",
-        "score": 86,
+        "score": 84,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "OpenAI上市窗口会影响AI基础设施融资、竞争对手估值和资本市场对大模型公司的定价逻辑。",
         "entities": [
+          "Ai融资",
           "Anthropic",
           "Ipo",
           "OpenAI",
@@ -63,7 +220,9 @@
         "url": "https://the-decoder.com/openais-ipo-slips-as-altman-tells-staff-to-expect-a-public-offering-within-the-next-year/",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "Sam Altman told employees he expects an OpenAI IPO \"within the next year,\" but a delay to 2027 is possible. He frames it as caution around self-improving AI, though Anthropic's stronger growth numbers and imminent IPO may be the real reason to wait. The article OpenAI's IPO slips as Altman tells staff to expect a public offering \"within the next year\" appeared first on The Decoder .",
+        "extension": "可追踪OpenAI资本化节奏、Anthropic上市竞争和AI公司估值重定价，对二级市场和大模型融资窗口都有信号意义。"
       },
       {
         "id": "ca4e7d70d81cbb9b7125190323196f8f",
@@ -5471,6 +5630,36 @@
     ],
     "2026-06-08": [
       {
+        "id": "d9d7cd2a6caf27dea58198409653ac64",
+        "title": "35B MoE模型尝试在16GB显卡无卸载运行",
+        "chinese_title": "35B MoE模型尝试在16GB显卡无卸载运行",
+        "original_title": "A 35B MoE on a 16 GB GPU, without the offload tax",
+        "summary": "文章讨论一种名为Spark的方案，目标是在16GB GPU上运行35B规模MoE模型并减少CPU卸载代价，关注本地大模型推理的显存效率。",
+        "rating": "B",
+        "score": 69,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延展到消费级GPU本地推理、MoE稀疏激活优化和开发者侧低成本部署，对端侧AI工具链有一定参考价值。",
+        "entities": [
+          "Gpu",
+          "Moe",
+          "Spark",
+          "本地推理"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.lucebox.com/blog/spark"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781121908,
+        "published_at": "2026-06-11T04:05:08.836168",
+        "source": "Hacker News",
+        "url": "https://www.lucebox.com/blog/spark",
+        "event_id": null
+      },
+      {
         "id": "6ecf9717b4755b555a5a04c20f3d5229",
         "title": "SpaceX万亿美元IPO估值被质疑难以自洽",
         "chinese_title": "SpaceX万亿美元IPO估值被质疑难以自洽",
@@ -10096,6 +10285,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-11T03:05:06.888311",
-  "total_news": 306
+  "last_updated": "2026-06-11T04:05:37.649889",
+  "total_news": 312
 }
