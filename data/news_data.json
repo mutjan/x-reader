@@ -2,13 +2,142 @@
   "news": {
     "2026-06-11": [
       {
-        "id": "e855af14fba8044696fdd1b3e0dbe6c4",
-        "title": "Claude Fable安全护栏被研究员吐槽过严",
-        "chinese_title": "Claude Fable安全护栏被研究员吐槽过严",
-        "original_title": "Cybersecurity researchers complain that Claude Fable's guardrails are too strict, rejecting \"innocuous tasks\" like reading blog posts or performing code reviews (Lorenzo Franceschi-Bicchierai/TechCrunch)",
-        "summary": "TechCrunch报道称，网络安全研究人员抱怨Anthropic最新Fable模型的护栏过于严格，连阅读博客、代码审查等正常任务也可能被拒绝。",
+        "id": "c90d2a0e6514c98d577b06e2411c3f27",
+        "title": "OpenAI联手Visa让智能体代用户付款",
+        "chinese_title": "OpenAI联手Visa让智能体代用户付款",
+        "original_title": "OpenAI and Visa partner to let AI agents make purchases online after users give their permission and to explore enterprise applications for AI-driven payments (Paige Smith/Bloomberg)",
+        "summary": "OpenAI与Visa合作探索AI驱动支付，用户授权后智能体可在线完成购买，也将面向企业支付场景测试新应用。",
+        "rating": "S",
+        "score": 100,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这会把智能体从信息助手推向交易执行层，后续可关注支付风控、商户接入、用户授权边界和银行网络的竞品反应。",
+        "entities": [
+          "Ai支付",
+          "Ai智能体",
+          "OpenAI",
+          "Visa"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260610/p50#a260610p50"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781118277,
+        "published_at": "2026-06-11T03:04:37.512562",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260610/p50#a260610p50",
+        "event_id": null,
+        "grade": "S",
+        "level": "S"
+      },
+      {
+        "id": "ee0705d5b906926731e2f61cccc47fb6",
+        "title": "Altman称OpenAI一年内有望上市",
+        "chinese_title": "Altman称OpenAI一年内有望上市",
+        "original_title": "OpenAI's IPO slips as Altman tells staff to expect a public offering \"within the next year\"",
+        "summary": "Sam Altman向员工表示OpenAI预计一年内推进IPO，但也可能因自我改进AI风险和市场节奏推迟到2027年。",
         "rating": "A",
-        "score": 82,
+        "score": 86,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "OpenAI上市窗口会影响AI基础设施融资、竞争对手估值和资本市场对大模型公司的定价逻辑。",
+        "entities": [
+          "Anthropic",
+          "Ipo",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/openais-ipo-slips-as-altman-tells-staff-to-expect-a-public-offering-within-the-next-year/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781118277,
+        "published_at": "2026-06-11T03:04:37.512678",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/openais-ipo-slips-as-altman-tells-staff-to-expect-a-public-offering-within-the-next-year/",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "ca4e7d70d81cbb9b7125190323196f8f",
+        "title": "JPL如何让13岁火星车继续干活",
+        "chinese_title": "JPL如何让13岁火星车继续干活",
+        "original_title": "How JPL Keeps the 13-Year-Old Curiosity Rover Doing Science",
+        "summary": "IEEE Spectrum介绍JPL如何维持已运行13年的好奇号火星车继续开展科学任务，体现深空设备长寿命运维能力。",
+        "rating": "B",
+        "score": 66,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可作为航天工程可靠性案例，延伸到远程维护、任务寿命管理和新一代火星探测器设计。",
+        "entities": [
+          "Curiosity",
+          "Jpl",
+          "Nasa",
+          "火星探测"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://spectrum.ieee.org/curiosity-rover-jpl-mars-science"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781118277,
+        "published_at": "2026-06-11T03:04:37.512907",
+        "source": "Hacker News",
+        "url": "https://spectrum.ieee.org/curiosity-rover-jpl-mars-science",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "b84ece83e6457e62468af5f9b364b011",
+        "title": "微软因数据留存限制员工使用Claude",
+        "chinese_title": "微软因数据留存限制员工使用Claude",
+        "original_title": "Sources: Microsoft is restricting employees from using Claude Fable 5 because of Anthropic's new 30-day data retention requirements (Tom Warren/The Verge)",
+        "summary": "消息称微软正限制员工使用Claude Fable 5，原因是Anthropic新的30天数据留存要求正在接受法务评估。",
+        "rating": "A+",
+        "score": 88,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "企业客户对模型数据留存的敏感度会继续升高，可能影响Anthropic与微软、OpenAI等生态伙伴的竞合关系。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Fable",
+          "Microsoft",
+          "数据留存"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260610/p48#a260610p48"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781118277,
+        "published_at": "2026-06-11T03:04:37.514474",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260610/p48#a260610p48",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "e855af14fba8044696fdd1b3e0dbe6c4",
+        "title": "Claude安全模型被研究者吐槽过度保守",
+        "chinese_title": "Claude安全模型被研究者吐槽过度保守",
+        "original_title": "Cybersecurity researchers complain that Claude Fable's guardrails are too strict, rejecting \"innocuous tasks\" like reading blog posts or performing code reviews (Lorenzo Franceschi-Bicchierai/TechCrunch)",
+        "summary": "安全研究者称Anthropic的Claude Fable护栏过严，连阅读博客、代码审查等无害任务也会被拒绝。",
+        "rating": "A",
+        "score": 84,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "该事件可延伸到安全模型如何在误拒和滥用防护之间取舍，也会影响企业安全团队是否愿意把高级AI工具纳入工作流。",
@@ -32,16 +161,18 @@
         "url": "https://www.techmeme.com/260610/p49#a260610p49",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "Lorenzo Franceschi-Bicchierai / TechCrunch : Cybersecurity researchers complain that Claude Fable's guardrails are too strict, rejecting “innocuous tasks” like reading blog posts or performing code reviews — Anthropic released its latest model Fable on Tuesday, billing it as a public and limited version of its powerful and much-hyped cybersecurity model Mythos.",
+        "extension": "该事件折射网络安全AI在可用性和风险控制之间的张力，后续可比较OpenAI、Google等模型的安全边界。"
       },
       {
         "id": "6a8e45e2105ae515f0513623ad369b6a",
-        "title": "阿尔忒弥斯III细节曝光，将对接两型月面着陆器",
-        "chinese_title": "阿尔忒弥斯III细节曝光，将对接两型月面着陆器",
+        "title": "Artemis III任务细节透露双登月器计划",
+        "chinese_title": "Artemis III任务细节透露双登月器计划",
         "original_title": "We managed to glean some interesting details about the Artemis III mission",
-        "summary": "Ars Technica报道NASA公布阿尔忒弥斯III乘组后透露任务细节，计划在近地轨道与Blue Origin和SpaceX两种着陆器对接。",
+        "summary": "NASA公布Artemis III机组后透露，任务计划在近地轨道对接Blue Origin和SpaceX两款登月器，但准备进度仍有疑问。",
         "rating": "A",
-        "score": 76,
+        "score": 73,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "可延伸到美国重返月球路线、Blue Origin与SpaceX在月面着陆器上的竞争，以及2027年前后任务准备度风险。",
@@ -64,17 +195,19 @@
         "source": "Space – Ars Technica",
         "url": "https://arstechnica.com/space/2026/06/we-managed-to-glean-some-interesting-details-about-the-artemis-iii-mission/",
         "event_id": null,
-        "grade": "A",
-        "level": "A"
+        "grade": "B",
+        "level": "A",
+        "original_content": "On Tuesday, NASA announced the crew for the Artemis III mission , which is scheduled to be flown no earlier than summer 2027. As part of the announcement, space agency officials also discussed plans for the crew to dock with both a Blue Origin lander and a SpaceX Starship lander during the spaceflight in low-Earth orbit. The presentation, although informative, still left open key questions about the landers' readiness and what exactly they'll look like. After the crew announcement, Ars sat down with Jeremy Parsons, NASA's Artemis program manager, to answer some of these questions. This interview, conducted at NASA's Johnson Space Center, has been lightly edited for clarity. Read full article Comments",
+        "extension": "后续可关注Starship与Blue Origin登月器进度、NASA任务延期风险，以及商业航天承包格局变化。"
       },
       {
         "id": "3f4b8f772e67e5499232dbc3fbc4471f",
-        "title": "Anthropic称AI数小时即可从补丁生成漏洞利用",
-        "chinese_title": "Anthropic称AI数小时即可从补丁生成漏洞利用",
+        "title": "Anthropic称AI数小时就能从补丁造漏洞",
+        "chinese_title": "Anthropic称AI数小时就能从补丁造漏洞",
         "original_title": "Anthropic study shows AI needs hours, not weeks, to build exploits from security patches",
-        "summary": "THE DECODER报道Anthropic安全团队发现Mythos Preview能在数小时内把Firefox和Windows内核补丁转化为可用攻击链，成本仅数千美元。",
+        "summary": "Anthropic安全团队发现Mythos Preview可在数小时内把Firefox和Windows内核补丁转化为可用攻击链，传统补丁节奏面临挑战。",
         "rating": "A+",
-        "score": 89,
+        "score": 92,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "该研究会直接挑战传统补丁发布节奏，可能推动厂商压缩披露窗口、重构自动更新机制，并提高AI安全工具监管需求。",
@@ -97,25 +230,27 @@
         "source": "THE DECODER",
         "url": "https://the-decoder.com/anthropic-study-shows-ai-needs-hours-not-weeks-to-build-exploits-from-security-patches/",
         "event_id": null,
-        "grade": "A+",
-        "level": "A+"
+        "grade": "S",
+        "level": "A+",
+        "original_content": "Anthropic's security team found that its Mythos Preview AI model can turn security patches for Firefox and the Windows kernel into working exploits within hours, for a few thousand dollars and no specialized knowledge. Eight complete attack chains were finished before Microsoft's auto-updates had reached a single device. The old patch rhythm is obsolete, Anthropic argues. The article Anthropic study shows AI needs hours, not weeks, to build exploits from security patches appeared first on The Decoder .",
+        "extension": "这会放大漏洞披露、补丁发布和自动更新窗口的压力，企业安全团队可能需要重新设计响应流程。"
       },
       {
         "id": "dbbe3ca93deab477235288942568471a",
-        "title": "OpenAI演示Codex生成营销创意和视觉资产",
-        "chinese_title": "OpenAI演示Codex生成营销创意和视觉资产",
+        "title": "OpenAI演示Codex生成营销创意资产",
+        "chinese_title": "OpenAI演示Codex生成营销创意资产",
         "original_title": "Create campaign concepts and assets with Codex",
-        "summary": "OpenAI发布演示视频，展示Codex创意制作插件如何从产品和活动背景生成情绪板、视觉方向、发布素材并交付后续编辑。",
+        "summary": "OpenAI展示Codex创意生产插件如何帮助营销团队从活动背景生成情绪板、视觉方向和可编辑发布资产。",
         "rating": "A",
-        "score": 81,
+        "score": 77,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "可延伸到Codex从编程助手向多职能生产工具扩展，以及AI创意生产在营销团队里的实际工作流替代程度。",
         "entities": [
           "Codex",
           "OpenAI",
-          "创意制作插件",
-          "营销创意"
+          "创意生产插件",
+          "营销资产"
         ],
         "sourceLinks": [
           {
@@ -130,16 +265,18 @@
         "url": "https://www.youtube.com/watch?v=2ey7znf8SI0",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "See how the creative production plugin for Codex helps marketing teams move from product and campaign context to visual concepts, asset variations, and editable creative. In this demo, Codex creates a campaign mood board, refines visual directions, generates a launch asset, and hands it off for final edits. More than 5 million people now use Codex every week, with marketers, creators, operators, designers, researchers, investors, and bankers among the fastest-growing users. Learn more: https://openai.com/index/codex-for-every-role-tool-workflow/ Try the plugin today: https://chatgpt.com/plugins/share/a826391706e14c90816f2ceba9cc8b49",
+        "extension": "可观察Codex从编程工具外溢到营销、设计和运营场景，对Adobe、Canva等创意工具形成潜在压力。"
       },
       {
         "id": "4f5ef584ded3357aaea84ca7d3a5ca46",
-        "title": "MassMutual用短约AI策略换来三成效率提升",
-        "chinese_title": "MassMutual用短约AI策略换来三成效率提升",
+        "title": "MassMutual用短约AI策略拿到三成提效",
+        "chinese_title": "MassMutual用短约AI策略拿到三成提效",
         "original_title": "MassMutual's AI strategy: 12-month contracts, 30% productivity gains, zero lock-in",
-        "summary": "VentureBeat报道MassMutual通过12个月合约、可切换模型和避免长期锁定的AI基础设施策略，声称获得约30%生产力提升。",
+        "summary": "MassMutual采用12个月合同和可切换模型架构，避免长期锁定单一供应商，并声称取得约30%的生产力提升。",
         "rating": "A",
-        "score": 80,
+        "score": 90,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "可延伸到企业AI采购从押注单一模型转向可替换架构，影响云厂商、模型供应商和企业内部平台团队的话语权。",
@@ -161,17 +298,19 @@
         "source": "VentureBeat",
         "url": "https://venturebeat.com/orchestration/massmutuals-ai-strategy-12-month-contracts-30-productivity-gains-zero-lock-in",
         "event_id": null,
-        "grade": "A",
-        "level": "A"
+        "grade": "A+",
+        "level": "A",
+        "original_content": "Enterprise AI teams face a dilemma: The best models today might not be the best models a year from now. MassMutual's answer is to stop making long-term bets — and build infrastructure that can swap models as the market shifts. “The world of AI today is extremely dynamic,” Sears Merritt, MassMutual CIO, explained in a new VB Beyond the Pilot podcast . “We wanted to make sure we were positioned to ride that wave of dynamism.” The strategy appears to be paying off in a big way. MassMutual has measured a roughly 30% increase in developer productivity, while AI-powered contact center workflows have reduced resolution times from 10 minutes to one and cut costs from dollars to cents. But the broader lesson for IT leaders may be less about the results and more about how the company is thoughtfully building its AI infrastructure and keeping users at the center. Maintaining optionality for the possibilities of tomorrow MassMutual works with vendors at the leading edge, but keeps those relationships on a clock. “Those relationships are capped so that we maintain optionality for best-of-breed tools as things mature in this space, and at some point, settle down and stabilize,” Merritt said. That philosophy extends to open-source models. Merritt says his team is “100%” looking at open-source tools, and sees the technology playing a big role in how MassMutual (and similar companies) use AI. “We're certainly going to need frontier models and leading edge capabilities to do what today is impossible, and tomorrow will be possible,” he said. Measuring outcomes from the start MassMutual's AI efforts fall into two broad categories. The first focuses on enablement: Putting productivity-enhancing tools such as Copilot and virtual assistants into the hands of all employees. The second involves what Merritt describes as “deepen and focus” initiatives, where teams target a specific workflow or business process that will have a strong impact on advisors, policyholders, or employees. Rather than focusing on adoption metrics, these projects begin with predefined success criteria. “Everything we do is measured,” Merritt said. “There's always a success metric that we define upfront to determine whether or not we're going to scale up some of these things.” The company is also deliberately encouraging experimentation, giving employees access to a range of best-in-class models, “token-consumptive workflows” and other possible capabilities so they can weigh the benefits relative to “simpler, lower cost” large language models (LLMs). At the same time, MassMutual is collecting increasingly detailed analytics around usage patterns, developer workflows, model performance, and costs. The goal is to reduce spending while also building operational intelligence to eventually route workloads to the right model based on cost, response quality, and user experience. Those insights will eventually drive optimization decisions around model routing, prompt selection, response times, and infrastructure design. “We're gaining access to analytics that let us, in a very granular way, look at usage patterns, developer workflows, and begin to make sense of who's using what, when, and for what types of tasks,” Merritt said. Why MassMutual sometimes chooses the more expensive model Another interesting aspect of MassMutual's approach is how it evaluates AI quality. Rather than focusing exclusively on benchmarks or token costs, the company uses what Merritt calls a “trust score” framework. The process combines user feedback with operational metrics to understand how employees perceive AI-generated responses and whether those responses actually improve outcomes. The contact center rebuild put that framework to the test. During development, employees were given access to two different LLMs. One generated responses in near-real-time but the quality was noisier. The other more expensive option took several additional seconds to respond but consistently delivered higher-quality answers. Conventional wisdom and the speed of business might suggest users would prefer the former; but they overwhelmingly chose quality. Merritt’s team asked users about the quality of response, their preferred model, and their overall thoughts on the experience. Most of the time, users said: “We want the more expensive one. We're willing to wait, but the quality difference is so high that the two extra seconds actually is worth it to us.” That feedback ultimately determined which model MassMutual deployed. “We factored that experience piece into the decision-making, and that led us to say, on a relative basis, the costs were immaterial, so we're going to use the more complex model,\" Merritt said. Listen to the full podcast to hear more about: Why Mythos “completely changed” the cybersecurity landscape — not the type of threats, but the rate at which those threats appear; How a team of AI engineers modernized MassMutual’s mainframe in 7 days (a process that previously would have taken 3 months); Why MassMutual specifically avoided tokenmaxxing to rein in AI use and spending and has been going “unlimited,” to shield from cost blowups. How a “multi-harness type of environment” will support agentic AI. You can also listen and subscribe to Beyond the Pilot on Spotify , Apple or wherever you get your podcasts.",
+        "extension": "企业AI采购可能从押注单一模型转向可替换架构，云厂商、模型公司和编排平台都会受到影响。"
       },
       {
         "id": "64099c06e78cecf7f173a967e058ff0c",
-        "title": "谷歌开源DiffusionGemma，尝试扩散式文本生成",
-        "chinese_title": "谷歌开源DiffusionGemma，尝试扩散式文本生成",
+        "title": "Google推出扩散式开放模型DiffusionGemma",
+        "chinese_title": "Google推出扩散式开放模型DiffusionGemma",
         "original_title": "Google releases DiffusionGemma, new experimental open model with up to 4x faster output on dedicated GPUs",
-        "summary": "Reddit帖子称Google发布基于Gemma架构的实验性开放模型DiffusionGemma，通过并行生成和修正文段实现专用GPU上最高4倍推理加速。",
+        "summary": "Google发布实验性开放模型DiffusionGemma，基于Gemma架构用扩散方式并行生成文本，宣称专用GPU上推理最高快4倍。",
         "rating": "B",
-        "score": 72,
+        "score": 87,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "可延伸到非自回归文本生成路线是否能缓解推理成本，以及Google开放模型生态对本地部署和开发者工具链的吸引力。",
@@ -179,6 +318,7 @@
           "Diffusiongemma",
           "Gemma",
           "Google",
+          "开源模型",
           "扩散模型"
         ],
         "sourceLinks": [
@@ -193,18 +333,20 @@
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1u27fga/google_releases_diffusiongemma_new_experimental/",
         "event_id": null,
-        "grade": "B",
-        "level": "B"
+        "grade": "A+",
+        "level": "B",
+        "original_content": "• DiffusionGemma is Google's new experimental open model built on the Gemma 4 architecture. • Unlike traditional LLMs that generate text token-by-token, it generates and refines blocks of text in parallel using a diffusion-based approach. • Google says it can deliver up to 4× faster inference on dedicated GPUs. • The model activates ~3.8B parameters per step from a 26B-parameter Gemma 4 MoE architecture. • Released under the Apache 2.0 license with support for local deployment and integration with tools such as Hugging Face Transformers and vLLM. Source: Google Deepmind submitted by /u/BuildwithVignesh [link] [comments]",
+        "extension": "扩散式语言模型若验证有效，可能改变小模型推理效率竞争，也会影响本地部署和开源生态选型。"
       },
       {
         "id": "8c4b2f99604aaf0dbfd820aee8a68bc1",
-        "title": "马斯克在SpaceX IPO静默期继续公开披露敏感交易",
-        "chinese_title": "马斯克在SpaceX IPO静默期继续公开披露敏感交易",
+        "title": "马斯克在SpaceX上市静默期继续高调发声",
+        "chinese_title": "马斯克在SpaceX上市静默期继续高调发声",
         "original_title": "Elon Musk’s Very Loud IPO Quiet Period",
-        "summary": "The Information称，马斯克此前在SpaceX IPO前公开谈及与Anthropic交易细节，引发投资者关注招股书披露是否充分。",
+        "summary": "The Information关注Elon Musk在SpaceX IPO静默期仍公开谈及与Anthropic协议细节，引发招股书披露充分性的讨论。",
         "rating": "S",
-        "score": 91,
-        "type": "financial",
+        "score": 83,
+        "type": "funding",
         "typeName": "商业数据",
         "expansion": "可延伸到SpaceX上市合规、AI客户合同披露、星舰和Starlink增长叙事，以及马斯克个人表达对资本市场流程的影响。",
         "entities": [
@@ -225,8 +367,10 @@
         "source": "The Information",
         "url": "https://www.theinformation.com/articles/elon-musks-loud-ipo-quiet-period",
         "event_id": null,
-        "grade": "S",
-        "level": "S"
+        "grade": "A",
+        "level": "S",
+        "original_content": "Good morning! When Elon Musk tweeted details about SpaceX’s agreement with Anthropic late last month, saying the business deal was less durable than advertised, many investors and commentators seized on the fact that the details weren’t in the company’s initial public offering prospectus filed with regulators. They were right to point that out, of course. Details of that nature—for instance, that SpaceX was guaranteed 180 days of revenue—should have been in the prospectus from the start. (SpaceX later updated its document to include the additional information.) But for me the incident brought up a history of embarrassing—or worse—episodes from 30 years of IPO history. Several years ago, I wrote a book about the evolution of IPOs and learned that such occasional blunders had become lore among the bankers, lawyers and advisers who have spent their careers keeping companies out of trouble with shareholders and the Securities and Exchange Commission alike. If that had been the end of it, Musk’s tweet might have simply joined a list of eyebrow-raising disclosures from WeWork, Facebook and Google, to name just three such instances. But even before filing the prospectus, SpaceX and Musk were challenging the unwritten rules of IPOs: Limit public appearances and be conservative about the information you provide investors. That’s an approach that has held sway since at least the 1980s, when Goldman Sachs bankers began to use the IPO prospectus as a marketing document and changed the face of public debuts. \"Generally speaking, company management, and their underwriters and lawyers, are very cautious about their disclosures during their IPO process because there are strict rules surrounding communications with the public before and during an IPO,” said Renée Jones, a professor at Boston College Law School and a former director of the SEC’s Division of Corporation Finance. SpaceX’s behavior in the runup to its debut, by contrast, has defied that typical conservatism, industry watchers say. And if history is any guide, other companies—including AI juggernauts OpenAI and Anthropic, which are hot on SpaceX’s heels—may follow suit. Take the SpaceX prospectus. On page 1, it says SpaceX executives have “formed the most ambitious, vertically integrated innovation engine on (and off) Earth.” Ten pages later, it describes the company’s total addressable market as the largest “in human history,” listing it as $28.5 Trillion—with a capital T. These are just two of many claims SpaceX makes in the document that in the past most companies would have avoided. Jay Ritter, a professor at the University of Florida who has been covering IPOs and collecting data on them for decades, acknowledged that he “can’t think of any other situations where such grandiose statements would be made.” Then there are the interviews. On June 4, SpaceX ran a livestream, which anyone could watch on X, of a JPMorgan Chase event featuring CEO Jamie Dimon interviewing Musk, beaming in by video, in front of hundreds of wealthy clients assembled in the bank’s New York headquarters. “I have never seen anything like that,” said one person who has worked on dozens of IPOs and who asked for anonymity to speak freely. This week, Gavin Baker, a former Fidelity portfolio manager now at Atreides Management, posted a video of an interview he did with SpaceX Chief Financial Officer Bret Johnsen. The website SpaceX has set up for the IPO linked to the interview. That’s not to mention the surprise appearance from Nicki Minaj during the Starship launch video, two days after SpaceX had filed the prospectus publicly, or the many photos of space in the company’s prospectus. The display rivaled the dozens of pages of promotional shots in WeWork’s 2019 aborted IPO prospectus, heavily scrutinized by Wall Street. The SEC typically discourages public events touting an IPO in the runup to the offering, imposing a quiet period between the time when a prospectus is publicly filed and when it becomes effective, right before the IPO takes place. As a result, management teams generally avoid public interviews, opting instead for prerecorded videos. They’re even cautious about what they tell institutional investors during the IPO road show, where they have more freedom to provide high-level financial targets. As an example of how disclosure can go awry, when Google was about to go public in 2004, Playboy magazine published an interview it had conducted months earlier with the founders. Lawyers and bankers flew into a panic, worried that the SEC would force the company to delay its offering. In the end, to appease the SEC, the company printed the entire text of the interview in an amended prospectus. Of course, that was 22 years ago, but companies seem to have gone out of their way to respect the required quiet period ever since. To be sure, the current SEC has already signaled that it doesn’t intend to rein in SpaceX. In February, Musk appeared on Dwarkesh Patel’s podcast. When asked about the IPO, Musk said he had to “be careful about saying things about companies that might go public,” before he went on to talk about how SpaceX would bring data centers to space. One comment below the transcript on Dwarkesh’s site put it directly: “This is Elon talking his book to hype the SpaceX IPO.” Another person chimed in, “And it’s working.” Talk like that may run up against the rules around communicating with the public about an IPO, known as gun-jumping. Those rules prohibit companies from prematurely boosting interest in an IPO. The SEC’s communications with the company are not yet public, so we don’t know if they have weighed in, but the offering has continued. But there’s more to why SpaceX appears to have shed those IPO chains. Ritter noted that a lot of what has kept management and companies in check over the years has been their lawyers and bankers. Under SEC rules that govern IPOs, companies and their advisers can face liability for shareholder lawsuits alleging they made misleading statements. In practice, banks and law firms don’t often get drawn into these lawsuits, and the underwriting agreement usually includes an indemnification clause that returns the risk to the company, but advisers tend to remain cautious anyway. Even here, SpaceX has broken the mold. The company says its bylaws place restrictions on shareholder legal actions, and it also has some requirements forcing such matters into arbitration. In other words, shareholders won’t have the normal protections that hold company management teams accountable for materially misleading statements. Added up, Musk’s and SpaceX’s actions have likely cleared the way for other mega-IPOs, like those from OpenAI and Anthropic, to push similar boundaries. And as we know, Musk has a history of setting a new standard that others follow in short order. When he got a trillion-dollar pay package from Tesla, for example, many other executives quickly followed with monster-size equity-based comp packages of their own. New From Our Reporters Exclusive Goldman, JPMorgan Explore Trading Compute Futures as AI Financing Hedge By Yueqi Yang and Dakin Campbell How Nasdaq Turned Its Index Into a Listings Weapon By Cory Weinberg Exclusive Revolut Targets at Least $750 Million Share Sale Amid Strong Demand By Katie Roof What We’re Reading DoubleLine, Oaktree Brace for Potential AI Pain Blackstone Looks to Sell $2 Billion of Stakes in Private Investment Funds The Unwritten Rules of Wall Street Style, According to Lloyd Blankfein",
+        "extension": "这可能影响SpaceX上市监管风险、投资者信任，以及大客户协议在招股书中的披露标准。"
       },
       {
         "id": "60d3064e932ea99f276ce8bf067fd6e5",
@@ -256,6 +400,106 @@
         "published_at": "2026-06-11T02:05:32.402810",
         "source": "Futurism",
         "url": "https://futurism.com/artificial-intelligence/deodorant-forbidden-intel-ai-chip-facility",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "1caffc4311862ed5644686c7633162a9",
+        "title": "AI开始把失败药物改造成新疗法",
+        "chinese_title": "AI开始把失败药物改造成新疗法",
+        "original_title": "How I use AI to turn failed drugs into new medicines",
+        "summary": "研究者Layla Hosseini-Gerami结合化学、生物学和AI建模，尝试从失败药物中寻找可复用的新治疗潜力。",
+        "rating": "A",
+        "score": 81,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到AI药物再利用、临床失败资产价值重估，以及生物医药公司如何用模型降低早期研发成本。",
+        "entities": [
+          "Ai建模",
+          "Layla Hosseini-Gerami",
+          "药物再利用",
+          "药物发现"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01626-1"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.401407",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01626-1",
+        "event_id": null,
+        "grade": "A",
+        "level": "A",
+        "original_content": "Nature, Published online: 10 June 2026; doi:10.1038/d41586-026-01626-1 By combining chemistry and biology with AI modelling, Layla Hosseini-Gerami is finding and reviving therapeutics with ‘huge potential’.",
+        "extension": "可延伸到药物再利用、AI辅助临床前筛选，以及生物医药公司如何降低研发失败成本。"
+      },
+      {
+        "id": "d9eda329c0faf0fd908fc4eeb4e6d6d3",
+        "title": "Z世代不信AI给高校敲响警钟",
+        "chinese_title": "Z世代不信AI给高校敲响警钟",
+        "original_title": "Gen Z scepticism towards AI is a wake-up call — universities must take it seriously",
+        "summary": "Nature评论指出，高校引入AI的难点不是采用工具本身，而是建立让当代学生信任的教学和治理方式。",
+        "rating": "B",
+        "score": 69,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可延伸到高校AI治理、学生数据权益、学术诚信工具设计，以及教育机构在效率和信任之间的取舍。",
+        "entities": [
+          "Ai治理",
+          "Z世代",
+          "人工智能",
+          "高校"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01814-z"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.401561",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01814-z",
+        "event_id": null,
+        "grade": "B",
+        "level": "B",
+        "original_content": "Nature, Published online: 10 June 2026; doi:10.1038/d41586-026-01814-z The challenge for universities is not adopting artificial intelligence, but doing so in ways that the current generation of students can trust.",
+        "extension": "可追踪高校AI治理、学生数据权益、学术诚信政策和教育科技产品在校园中的接受度变化。"
+      },
+      {
+        "id": "7b88176bcfb9917e8f44dd5e87994bbd",
+        "title": "药物研发失败背后，科学家讲出临床挫折",
+        "chinese_title": "药物研发失败背后，科学家讲出临床挫折",
+        "original_title": "When drug discovery fails: scientists share their frustrations with the process",
+        "summary": "Nature梳理科学家在药物发现和临床试验过程中遇到的失败情形，讨论疗法从候选到验证阶段可能遭遇的多重瓶颈。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可与AI药物发现、临床试验设计和失败资产再利用结合，观察新工具能否改善传统药物研发的高失败率。",
+        "entities": [
+          "Nature",
+          "临床试验",
+          "治疗方案",
+          "药物发现"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01797-x"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781114732,
+        "published_at": "2026-06-11T02:05:32.401660",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01797-x",
         "event_id": null,
         "grade": "B",
         "level": "B"
@@ -707,102 +951,6 @@
       }
     ],
     "2026-06-10": [
-      {
-        "id": "1caffc4311862ed5644686c7633162a9",
-        "title": "AI开始把失败药物重新变成新疗法候选",
-        "chinese_title": "AI开始把失败药物重新变成新疗法候选",
-        "original_title": "How I use AI to turn failed drugs into new medicines",
-        "summary": "Nature介绍Layla Hosseini-Gerami如何结合化学、生物学和AI建模，重新筛选和复活此前失败但仍具潜力的治疗方案。",
-        "rating": "A",
-        "score": 80,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸到AI药物再利用、临床失败资产价值重估，以及生物医药公司如何用模型降低早期研发成本。",
-        "entities": [
-          "Ai建模",
-          "Layla Hosseini-Gerami",
-          "Nature",
-          "药物发现"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01626-1"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781114732,
-        "published_at": "2026-06-11T02:05:32.401407",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01626-1",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "d9eda329c0faf0fd908fc4eeb4e6d6d3",
-        "title": "Z世代质疑AI，大学AI落地先要补信任",
-        "chinese_title": "Z世代质疑AI，大学AI落地先要补信任",
-        "original_title": "Gen Z scepticism towards AI is a wake-up call — universities must take it seriously",
-        "summary": "Nature观点文章指出，大学面临的关键问题不是是否采用AI，而是如何以当前学生能够信任的方式部署人工智能。",
-        "rating": "B",
-        "score": 70,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可延伸到高校AI治理、学生数据权益、学术诚信工具设计，以及教育机构在效率和信任之间的取舍。",
-        "entities": [
-          "Nature",
-          "Z世代",
-          "人工智能",
-          "大学"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01814-z"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781114732,
-        "published_at": "2026-06-11T02:05:32.401561",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01814-z",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "7b88176bcfb9917e8f44dd5e87994bbd",
-        "title": "药物研发失败背后，科学家讲出临床挫折",
-        "chinese_title": "药物研发失败背后，科学家讲出临床挫折",
-        "original_title": "When drug discovery fails: scientists share their frustrations with the process",
-        "summary": "Nature梳理科学家在药物发现和临床试验过程中遇到的失败情形，讨论疗法从候选到验证阶段可能遭遇的多重瓶颈。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可与AI药物发现、临床试验设计和失败资产再利用结合，观察新工具能否改善传统药物研发的高失败率。",
-        "entities": [
-          "Nature",
-          "临床试验",
-          "治疗方案",
-          "药物发现"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01797-x"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781114732,
-        "published_at": "2026-06-11T02:05:32.401660",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01797-x",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
       {
         "id": "6852aa1658a745ca4b01c7056bbce3b2",
         "title": "SpaceX IPO估值押注三大硬科技",
@@ -9948,6 +10096,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-11T02:06:33.311585",
-  "total_news": 302
+  "last_updated": "2026-06-11T03:05:06.888311",
+  "total_news": 306
 }
