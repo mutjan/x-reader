@@ -968,6 +968,19 @@
         }
       ],
       "note": "Merge Nature items by source/url and published_at date, regardless of topic similarity."
+    },
+    {
+      "timestamp": "2026-06-11T09:04:52.490862",
+      "batch_id": "20260611090452",
+      "corrections_applied": 1,
+      "details": [
+        {
+          "news_id": "f174c0565de93d3bbf94e499ad98c5fb",
+          "from_event_id": "34606fc9",
+          "to_event_id": "new_event",
+          "reason": "该新闻讨论自动AI研究刷新NanoGPT优化器速度和数学证明pipeline，与本轮GPT-5.5登顶Agents Last Exam智能体基准不是同一事件，应拆成独立事件。"
+        }
+      ]
     }
   ]
 }
