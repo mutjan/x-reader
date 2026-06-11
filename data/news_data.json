@@ -2,21 +2,81 @@
   "news": {
     "2026-06-11": [
       {
+        "id": "2c39a3930fc0f14043f46e4d538969c6",
+        "title": "社区质疑Anthropic收紧生命科学研究路径",
+        "chinese_title": "社区质疑Anthropic收紧生命科学研究路径",
+        "original_title": "Anthropic closing the path to life science research",
+        "summary": "Reddit社区出现对Anthropic生命科学研究限制的讨论，但当前抓取内容只有标题和评论入口，缺少政策细节、官方表述和影响范围。",
+        "rating": "B",
+        "score": 65,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "如果能补充Anthropic官方政策或研究者反馈，可继续追踪前沿模型在生物医学研究中的安全边界与开放性争议。",
+        "entities": [
+          "Ai安全",
+          "Anthropic",
+          "生命科学"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1u2flqe/anthropic_closing_the_path_to_life_science/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781136195,
+        "published_at": "2026-06-11T08:03:15.166837",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1u2flqe/anthropic_closing_the_path_to_life_science/",
+        "event_id": null
+      },
+      {
+        "id": "94f5302d08b7a968846a36e888eb3752",
+        "title": "GPT击败Claude登顶长任务智能体新基准",
+        "chinese_title": "GPT击败Claude登顶长任务智能体新基准",
+        "original_title": "Surprise upset: GPT-5.5 beats Claude Fable 5 on brutal new Agents’ Last Exam benchmark",
+        "summary": "伯克利RDI联合数百名专家推出Agents' Last Exam基准，测试AI执行长期专业工作流的能力，OpenAI模型在Codex环境中取得最高成绩。",
+        "rating": "S",
+        "score": 97,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该基准可能成为评估智能体商业化能力的新参照，后续可追踪OpenAI、Anthropic等厂商在长周期任务和工具调用上的竞争。",
+        "entities": [
+          "Agents' Last Exam",
+          "Claude",
+          "Codex",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/surprise-upset-gpt-5-5-beats-claude-fable-5-on-brutal-new-agents-last-exam-benchmark"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781136195,
+        "published_at": "2026-06-11T08:03:15.167002",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/surprise-upset-gpt-5-5-beats-claude-fable-5-on-brutal-new-agents-last-exam-benchmark",
+        "event_id": null
+      },
+      {
         "id": "1001c996af28ba765a93cab9b02f64d8",
-        "title": "苹果新Siri走克制路线，少说话成AI卖点",
-        "chinese_title": "苹果新Siri走克制路线，少说话成AI卖点",
+        "title": "苹果新Siri选择克制少话的AI人格",
+        "chinese_title": "苹果新Siri选择克制少话的AI人格",
         "original_title": "Apple&rsquo;s new Siri AI knows when to shut up",
-        "summary": "The Verge体验称，苹果新版Siri AI的最大特点不是更热情，而是回答更简短克制，试图在实用助手与情感陪伴型聊天机器人之间划清边界。",
+        "summary": "The Verge体验苹果新版Siri后认为，其AI交互风格明显更简短克制，与常见聊天机器人热情冗长的设计形成对比。",
         "rating": "A",
-        "score": 75,
+        "score": 83,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "苹果若把低干扰、少拟人化作为Siri差异化路线，可能影响语音助手产品对人格化和用户黏性的取舍，也会给OpenAI、Google等竞品带来新的体验标尺。",
         "entities": [
-          "Ai聊天机器人",
+          "Ai助手",
           "Apple",
-          "OpenAI",
-          "Siri"
+          "Siri",
+          "聊天机器人"
         ],
         "sourceLinks": [
           {
@@ -29,25 +89,27 @@
         "published_at": "2026-06-11T07:03:28.469442",
         "source": "The Verge -  Tech Posts (apple)",
         "url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Apple's new Siri AI is finally here, and so far, it seems like it works . I have access and have been messing around with it, and my biggest impression so far is that Siri AI is quite curt - which I mean as a compliment. Many AI chatbots are cheery and wordy. While a more verbose and casual personality can make a chatbot seem friendlier and more fun to talk to, there are instances of users becoming extremely attached to their chatbot of choice. People have fallen in love with chatbots . When OpenAI suddenly shut down GPT-4o, users grieved its loss , and the company brought the model back for paid users . And while some companies have dialed bac … Read the full story at The Verge.",
+        "grade": "A",
+        "extension": "苹果的克制人格设计可能影响AI助手交互范式，也可延伸到用户依赖、情感绑定和平台责任的产品伦理讨论。"
       },
       {
         "id": "88320c69881a3b178410c3e9c78551e2",
-        "title": "陶哲轩披露AI数学评测：十题七题有论文级解法",
-        "chinese_title": "陶哲轩披露AI数学评测：十题七题有论文级解法",
+        "title": "陶哲轩披露AI数学证明基准第二批结果",
+        "chinese_title": "陶哲轩披露AI数学证明基准第二批结果",
         "original_title": "The results of the First Proof \"second batch\" are now out: https://1stproof.org/assets/docs/report.pdfTen research-level questions (many being part of forthcoming papers) were tested locally by the First Proof team against four AI harnesses, including my UCLA team, and then the submissions refereed by experts.  In aggregate, 7 of the 10 problems were deemed to have at least one publication-level solution generated between the four harnesses.  The UCLA harness had a somewhat mixed performance: 2 problems solved at an acceptable level, 3 more reaching a level roughly equivalent to a \"minor revisions needed\" submission to a journal, and with either \"reject\" or \"major revisions needed\" on the other 5.  We did perform slightly better than the out-of-the-box frontier model, but at much higher compute costs (a few hundred dollars per question, rather than tens).  Still, some of the solutions generated contained some interesting novelty.Significant weaknesses in our own harness revealed by the testing included the general failure to cite appropriate relevant literature, and having poor exposition (one solution in particular, while correct, was flagged by referees for spending far too much time on trivial steps and not enough on the key components of the argument).  These look like addressable issues for our harness, and we also plan to incorporate more use of tools (such as symbolic computation and literature search) which were used more effectively by one of the competing teams.  Improving the compute efficiency will also need to become more of a priority.While our own performance was slightly disappointing, I hope to see many more scientifically rigorous benchmarking exercises like this in the future.",
-        "summary": "First Proof第二批研究级数学题评测显示，四套AI系统合计在10道题中产出7个至少达到论文级的解法，陶哲轩团队表现优于开箱模型但计算成本更高。",
+        "summary": "陶哲轩介绍First Proof第二批测试结果，10道研究级问题中有7道出现出版级AI解法，但UCLA团队在引用、表达和算力效率上仍有短板。",
         "rating": "S",
         "score": 93,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "这类由专家审稿的数学评测比通用基准更接近科研真实场景，后续可延伸到AI科研工具链、文献检索能力和高成本推理效率的竞争。",
         "entities": [
-          "Ai数学",
+          "Ai数学证明",
           "First Proof",
           "Terence Tao",
-          "Ucla",
-          "科研评测"
+          "Ucla"
         ],
         "sourceLinks": [
           {
@@ -60,14 +122,17 @@
         "published_at": "2026-06-11T07:03:28.469594",
         "source": "Terence Tao",
         "url": "https://mathstodon.xyz/@tao/116727977488589991",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Terence Tao The results of the First Proof \"second batch\" are now out: https:// 1stproof.org/assets/docs/repor t.pdf Ten research-level questions (many being part of forthcoming papers) were tested locally by the First Proof team against four AI harnesses, including my UCLA team, and then the submissions refereed by experts. In aggregate, 7 of the 10 problems were deemed to have at least one publication-level solution generated between the four harnesses. The UCLA harness had a somewhat mixed performance: 2 problems solved at an acceptable level, 3 more reaching a level roughly equivalent to a \"minor revisions needed\" submission to a journal, and with either \"reject\" or \"major revisions needed\" on the other 5. We did perform slightly better than the out-of-the-box frontier model, but at much higher compute costs (a few hundred dollars per question, rather than tens). Still, some of the solutions generated contained some interesting novelty. Significant weaknesses in our own harness revealed by the testing included the general failure to cite appropriate relevant literature, and having poor exposition (one solution in particular, while correct, was flagged by referees for spending far too much time on trivial steps and not enough on the key components of the argument). These look like addressable issues for our harness, and we also plan to incorporate more use of tools (such as symbolic computation and literature search) which were used more effectively by one of the competing teams. Improving the compute efficiency will also need to become more of a priority. While our own performance was slightly disappointing, I hope to see many more scientifically rigorous benchmarking exercises like this in the future.",
+        "grade": "S",
+        "extension": "该结果可延伸到AI科研能力评测、数学证明自动化和高算力推理成本问题，适合观察工具链如何提升严谨性。"
       },
       {
         "id": "a0ae97393f6a8ba1ce40fd7475455097",
-        "title": "xAI被诉解雇Grok安全预警工程师",
-        "chinese_title": "xAI被诉解雇Grok安全预警工程师",
+        "title": "xAI被诉解雇提出Grok安全警告工程师",
+        "chinese_title": "xAI被诉解雇提出Grok安全警告工程师",
         "original_title": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
-        "summary": "一名前xAI工程师起诉xAI和SpaceX，称自己因在SpaceX IPO前夕提出Grok安全风险而遭解雇，使AI安全治理再次卷入劳资和资本市场争议。",
+        "summary": "一名前xAI工程师起诉xAI和SpaceX，称自己因在Grok安全问题上发出警告而遭解雇，时间点接近SpaceX重大资本事件。",
         "rating": "A+",
         "score": 91,
         "type": "safety",
@@ -75,7 +140,6 @@
         "expansion": "若诉讼进入实质审理，可能暴露xAI内部安全流程与商业节奏的冲突，也会影响外界对Grok和马斯克AI版图合规性的评估。",
         "entities": [
           "Ai安全",
-          "Elon Musk",
           "Grok",
           "SpaceX",
           "xAI"
@@ -91,14 +155,17 @@
         "published_at": "2026-06-11T07:03:28.469876",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "A former xAI engineer is suing the company and SpaceX, alleging he was fired for raising AI safety concerns about Grok days before SpaceX's historic IPO.",
+        "grade": "A+",
+        "extension": "该诉讼可能放大外界对xAI安全治理和内部举报机制的关注，也会影响Grok在企业和消费者市场中的信任度。"
       },
       {
         "id": "aaa667981f6c15daa811b695ecb2a867",
-        "title": "杨安泽转向创业应对AI冲击就业",
-        "chinese_title": "杨安泽转向创业应对AI冲击就业",
+        "title": "杨安泽转向创业应对AI冲击劳动力",
+        "chinese_title": "杨安泽转向创业应对AI冲击劳动力",
         "original_title": "Why Andrew Yang is building instead of waiting for Washington",
-        "summary": "杨安泽在TechCrunch访谈中称，与其等待华盛顿制定方案，不如用创业方式回应AI和自动化对就业、收入分配与社会保障的冲击。",
+        "summary": "TechCrunch视频讨论杨安泽为何选择通过创业而非等待华盛顿行动，回应AI和自动化可能带来的就业冲击与财富集中。",
         "rating": "B",
         "score": 70,
         "type": "opinion",
@@ -107,7 +174,6 @@
         "entities": [
           "Ai自动化",
           "Andrew Yang",
-          "Dario Amodei",
           "Sam Altman",
           "Universal Basic Income"
         ],
@@ -122,7 +188,43 @@
         "published_at": "2026-06-11T07:03:28.470136",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/video/why-andrew-yang-is-building-instead-of-waiting-for-washington/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Andrew Yang’s 2020 presidential campaign was based on a warning that automation and AI would hollow out the labor market and concentrate wealth in the hands of a few. At the time, ideas like Universal Basic Income felt fringe. Now Dario Amodei, Sam Altman, and Bernie Sanders are all saying versions of the same thing. An entrepreneur at heart, […]",
+        "grade": "B",
+        "extension": "可延伸到AI失业预期、UBI政策回潮和创业公司如何提供民间解决方案，但需要视频细节支撑具体报道角度。"
+      },
+      {
+        "id": "4f1bcef8ef09731c43045a24f7585012",
+        "title": "Anthropic说明Fable与Mythos数据保留规则",
+        "chinese_title": "Anthropic说明Fable与Mythos数据保留规则",
+        "original_title": "Anthropic requires 30 day data retention for Fable and Mythos",
+        "summary": "Hacker News讨论指向Anthropic支持文档，主题是Fable和Mythos模型的数据保留实践，其中30天保留要求可能影响敏感场景使用。",
+        "rating": "B",
+        "score": 78,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "模型数据保留政策会直接影响企业和安全敏感场景采用，后续可对比OpenAI、Google等厂商在高风险模型上的日志留存和审计规则。",
+        "entities": [
+          "Anthropic",
+          "Fable",
+          "Mythos",
+          "数据保留"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781132608,
+        "published_at": "2026-06-11T07:03:28.470249",
+        "source": "Hacker News",
+        "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "A",
+        "extension": "可继续追踪企业用户和开发者对数据保留政策的接受度，以及Anthropic在高能力模型安全审计和隐私承诺之间的取舍。"
       },
       {
         "id": "048c0f7592ac96a0d09952731a56c58f",
@@ -2562,20 +2664,20 @@
       },
       {
         "id": "6dc418d3369735ded1c01d7c3debdedd",
-        "title": "安全研究者质疑Anthropic Fable护栏",
-        "chinese_title": "安全研究者质疑Anthropic Fable护栏",
+        "title": "安全研究者不满Anthropic Fable护栏",
+        "chinese_title": "安全研究者不满Anthropic Fable护栏",
         "original_title": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
-        "summary": "围绕Anthropic Fable模型的护栏设置，网络安全研究者表达不满，认为限制可能妨碍安全测试和漏洞研究，凸显AI安全与研究开放性的拉扯。",
+        "summary": "TechCrunch报道称，网络安全研究者对Anthropic Fable模型的安全护栏表达不满，争议集中在模型能力、限制和安全研究需求之间的平衡。",
         "rating": "A",
-        "score": 78,
+        "score": 80,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "如果安全研究场景持续受限，企业客户和研究社区可能要求模型厂商提供更细分的权限、审计和专业模式。",
         "entities": [
-          "Ai护栏",
+          "Ai安全护栏",
           "Anthropic",
           "Fable",
-          "网络安全研究"
+          "网络安全"
         ],
         "sourceLinks": [
           {
@@ -2592,7 +2694,7 @@
         "grade": "A",
         "level": "A",
         "original_content": "Comments",
-        "extension": "如果安全研究者无法充分测试模型能力，厂商护栏可能被视为降低透明度；后续可追踪红队生态、漏洞披露机制和模型访问分级。"
+        "extension": "该议题可延伸到红队测试、网络安全研究授权和前沿模型能力开放边界，可能影响Anthropic面向安全行业的产品策略。"
       },
       {
         "id": "2e2fcca7b930d8923191f5688bdc47a3",
@@ -2735,37 +2837,6 @@
       }
     ],
     "2026-06-10": [
-      {
-        "id": "4f1bcef8ef09731c43045a24f7585012",
-        "title": "Anthropic要求Fable和Mythos保留30天数据",
-        "chinese_title": "Anthropic要求Fable和Mythos保留30天数据",
-        "original_title": "Anthropic requires 30 day data retention for Fable and Mythos",
-        "summary": "Anthropic支持文档显示，Fable与Mythos类模型相关数据实践包含30天保留要求，引发开发者对隐私、合规和企业接入边界的关注。",
-        "rating": "B",
-        "score": 73,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "模型数据保留政策会直接影响企业和安全敏感场景采用，后续可对比OpenAI、Google等厂商在高风险模型上的日志留存和审计规则。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Fable",
-          "Mythos",
-          "数据保留"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781132608,
-        "published_at": "2026-06-11T07:03:28.470249",
-        "source": "Hacker News",
-        "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
-        "event_id": null
-      },
       {
         "id": "6852aa1658a745ca4b01c7056bbce3b2",
         "title": "SpaceX IPO估值押注三大硬科技",
@@ -11313,201 +11384,9 @@
         "event_id": null,
         "grade": "B",
         "level": "B"
-      },
-      {
-        "id": "c4b99de7c11593241532f28caa4a6e6a",
-        "title": "Meta筹划Hatch智能体最高月费200美元",
-        "chinese_title": "Meta筹划Hatch智能体最高月费200美元",
-        "original_title": "Internal documents: Meta is considering tiered pricing for \"Hatch\", its planned OpenClaw-like AI agent tool, including a $200-per-month premium subscription (Jyoti Mann/The Information)",
-        "summary": "内部文件显示，Meta正考虑为消费者版Hatch AI智能体设置分层订阅，最高档接近每月200美元，定价目标直指OpenClaw等高端智能体工具。",
-        "rating": "S",
-        "score": 98,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "如果Meta把消费级智能体推到高价订阅区间，可能带动AI助理从免费入口转向高ARPU工具，也会检验用户是否愿意为可执行任务能力付费。",
-        "entities": [
-          "Ai智能体",
-          "Hatch",
-          "Meta",
-          "Openclaw"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260603/p60#a260603p60"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780527888,
-        "published_at": "2026-06-04T07:04:48.818737",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260603/p60#a260603p60",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "e0a2bea1411eb752eca0055932e57de5",
-        "title": "英伟达4亿美元收购预测AI公司Kumo",
-        "chinese_title": "英伟达4亿美元收购预测AI公司Kumo",
-        "original_title": "Nvidia acquired Kumo, which sells predictive AI software to enterprises, a source says for $400M+; PitchBook: Kumo raised $37M at a $250M valuation in 2022 (The Information)",
-        "summary": "据称英伟达以超过4亿美元收购企业预测AI软件公司Kumo AI，后者曾在2022年以2.5亿美元估值完成融资，交易将补强英伟达企业模型能力。",
-        "rating": "A+",
-        "score": 91,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "英伟达继续把硬件优势延伸到企业模型和应用层，后续可关注其是否把Kumo能力整合进NIM、DGX Cloud或行业解决方案。",
-        "entities": [
-          "Kumo Ai",
-          "NVIDIA",
-          "Pitchbook",
-          "企业预测Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260603/p59#a260603p59"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780527888,
-        "published_at": "2026-06-04T07:04:48.818851",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260603/p59#a260603p59",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "851537389ffc0198f02605756bdc0e3e",
-        "title": "SpaceX拟以1.77万亿美元估值IPO",
-        "chinese_title": "SpaceX拟以1.77万亿美元估值IPO",
-        "original_title": "SpaceX Sets $135 Per Share Target Price for IPO",
-        "summary": "SpaceX计划IPO时以每股135美元出售5.556亿股，目标募资750亿美元，对应约1.77万亿美元估值，规模将刷新全球IPO纪录。",
-        "rating": "S",
-        "score": 98,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "若SpaceX以这一估值上市，将重塑太空、卫星互联网和AI基础设施资产的资本定价，也会影响后续独角兽IPO窗口。",
-        "entities": [
-          "Elon Musk",
-          "Ipo",
-          "SpaceX",
-          "卫星互联网"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/spacex-prices-ipo-135-per-share"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780527888,
-        "published_at": "2026-06-04T07:04:48.818944",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/spacex-prices-ipo-135-per-share",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "4b6af078553ebf05abfa0501e4045e75",
-        "title": "微软等公司同步更新量子计算进展",
-        "chinese_title": "微软等公司同步更新量子计算进展",
-        "original_title": "Microsoft, Atom Computing, EeroQ update their quantum computing progress",
-        "summary": "微软、Atom Computing和EeroQ近期分别公布量子计算路线进展，虽然不是单一突破节点，但显示不同技术路径正朝实用化持续推进。",
-        "rating": "A",
-        "score": 80,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "量子计算竞争正在从里程碑演示转向工程积累，后续可比较拓扑量子、原子阵列和电子自旋等路线的可扩展性与商业节奏。",
-        "entities": [
-          "Atom Computing",
-          "Eeroq",
-          "Microsoft",
-          "量子计算"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Ars Technica » Scientific Method",
-            "url": "https://arstechnica.com/science/2026/06/microsoft-atom-computing-eeroq-update-their-quantum-computing-progress/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780527888,
-        "published_at": "2026-06-04T07:04:48.819031",
-        "source": "Ars Technica » Scientific Method",
-        "url": "https://arstechnica.com/science/2026/06/microsoft-atom-computing-eeroq-update-their-quantum-computing-progress/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "b91d26765504a41e01370f3632962944",
-        "title": "苹果新Siri据称9月上线并借力谷歌英伟达",
-        "chinese_title": "苹果新Siri据称9月上线并借力谷歌英伟达",
-        "original_title": "Apple to Launch New Siri in September With Help of Google, Nvidia",
-        "summary": "知情人士称，苹果计划9月推出改版Siri，部分能力将运行在谷歌云服务器和英伟达芯片上，同时继续尽量保留端侧处理。",
-        "rating": "S",
-        "score": 97,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "苹果若在核心助手上引入谷歌云和英伟达算力，说明端侧AI仍需云端补位，也可能改变其与云厂商、芯片供应商的议价关系。",
-        "entities": [
-          "Apple",
-          "Google",
-          "NVIDIA",
-          "Siri"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information (apple)",
-            "url": "https://www.theinformation.com/briefings/apple-launch-new-siri-september-help-google-nvidia"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780527888,
-        "published_at": "2026-06-04T07:04:48.819114",
-        "source": "The Information (apple)",
-        "url": "https://www.theinformation.com/briefings/apple-launch-new-siri-september-help-google-nvidia",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "41c567a38ec1a684311cb05e4618f1a5",
-        "title": "博通AI芯片收入大涨带动营收增长48%",
-        "chinese_title": "博通AI芯片收入大涨带动营收增长48%",
-        "original_title": "Broadcom Reports 48% Revenue Growth as AI Chip Business Expands",
-        "summary": "博通第二财季营收同比增长48%，其中AI芯片收入跃升143%至108亿美元，显示定制AI芯片需求继续拉动其业绩扩张。",
-        "rating": "A+",
-        "score": 88,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "博通的增长会强化ASIC在AI基础设施中的投资叙事，后续可追踪其与英伟达GPU生态、云厂商自研芯片之间的竞争边界。",
-        "entities": [
-          "Ai芯片",
-          "Asic",
-          "Broadcom",
-          "云厂商"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/broadcom-reports-48-revenue-growth-ai-chip-business-expands"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1780527888,
-        "published_at": "2026-06-04T07:04:48.819197",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/broadcom-reports-48-revenue-growth-ai-chip-business-expands",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
       }
     ]
   },
-  "last_updated": "2026-06-11T07:03:57.888197",
-  "total_news": 349
+  "last_updated": "2026-06-11T08:03:45.799677",
+  "total_news": 345
 }
