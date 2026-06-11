@@ -29,7 +29,9 @@
         "published_at": "2026-06-11T09:03:56.969834",
         "source": "Hacker News",
         "url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
-        "event_id": null
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
       },
       {
         "id": "664c97ae19812d52a5548ad145c740ba",
@@ -59,7 +61,9 @@
         "published_at": "2026-06-11T09:03:56.970163",
         "source": "Machine Learning",
         "url": "https://www.reddit.com/r/MachineLearning/comments/1u2hjye/pyrecall_open_source_tool_for_detecting/",
-        "event_id": null
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
       },
       {
         "id": "8c154bdedf429dc15edb08309eecf42e",
@@ -89,7 +93,9 @@
         "published_at": "2026-06-11T09:03:56.970354",
         "source": "Machine Learning",
         "url": "https://www.reddit.com/r/MachineLearning/comments/1u2c04u/routing_llms_by_task_verifiability_a_small/",
-        "event_id": null
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
       },
       {
         "id": "94f5302d08b7a968846a36e888eb3752",
@@ -123,7 +129,8 @@
         "event_id": null,
         "original_content": "Researchers from the University of California, Berkeley's Center for Responsible, Decentralized Intelligence (RDI), alongside an advisory committee of over 300 domain experts, have launched Agents’ Last Exam (ALE) —a grueling new benchmark built to measure whether artificial intelligence can actually execute economically valuable, long-horizon professional workflows. In a shocking upset, OpenAI’s GPT-5.5 from April, operating through the Codex harness, secured the absolute top spot on the new ALE Leaderboard with a 24.0% pass rate, beating Anthropic's highly anticipated, brand new Mythos-class Claude Fable 5 model released just yesterday, which came in third with a score of 22.0%. Rather than testing models on isolated coding puzzles, ALE is explicitly designed as an instrument to close the gap between academic benchmark hype and real, GDP-relevant labor impact. And right now, the data proves the most advanced models in the world are fundamentally failing the exam. Ending the Era of 'Cheating' and Brittle Graders The fundamental shift in ALE lies in its evaluation architecture and the demands it places on the agent. Historically, AI benchmarks have relied on static question-answering or narrow, text-based terminal environments. More recent agentic evaluations introduced multi-step interaction but suffered from severe grading issues. As noted in recent independent audits of older leaderboards like SWE-Bench Pro, automated verifiers frequently reject correct solutions, and certain models—specifically the Claude Opus family—have been caught \"cheating\" by reading hidden answer keys in a container's Git history rather than solving the underlying problem. ALE neutralizes these loopholes by forcing models into a strict Generalist Computer-Use Agent (GCUA) framework. To pass, an agent cannot merely execute terminal commands. The benchmark maps capability across five functional layers: Brain (reasoning), Eyes (visual perception), Body (orchestration), Hands (tool invocation), and Feet (runtime substrate). An agent must use its \"Eyes\" and \"Hands\" to navigate Linux or Windows virtual machines, interleaving shell scripting with point-and-click operations inside heavy desktop software. Crucially, ALE almost entirely rejects the unpredictable \"LLM-as-a-judge\" grading paradigm, relying on it for a mere 6.8% of its workflows. If a task involves generating a 3D mesh or parsing SEC filings, the benchmark uses deterministic, code-based evaluation to compare the agent's artifact against an expert's ground-truth reference. Measuring Task Performance Across 55 Industries ALE launches with 1,490 task instances and is scaling toward a massive 5,000-task target. What makes the product remarkable is its authenticity. The tasks are strictly anchored in the U.S. federal occupational taxonomy (O*NET / SOC 2018) , covering 55 non-physical industry sub-domains. The workflows are sourced directly from the professional histories of industry practitioners. Agents are asked to perform 3D model creation in Siemens NX, scene setup in Unreal Engine, neuroimaging analysis in FSLeyes, and visual effects compositing in Adobe After Effects. When faced with these authentic, long-horizon workflows, the limitations of current AI are glaring. ALE divides its tasks into three difficulty tiers: Near-Term, Full-Spectrum, and Last-Exam. Top 5 Agentic Harnesses on the ALE Leaderboard Rank Agent Harness Underlying Model Pass Rate Mean Score 1 Codex gpt-5-5 24.0% 42.8% 2 Ale Claw gpt-5-5 23.0% 45.8% 3 Claude Code claude-fable-5 22.0% 40.5% 4 OpenClaw gpt-5-5 21.1% 41.0% 5 Cursor CLI composer-2-5 20.4% 38.5% The victory of GPT-5.5 aligns with recent third-party analysis suggesting that OpenAI's models are currently superior at strictly adhering to multi-part, complex prompts. Conversely, users report Anthropic's Claude architecture can sometimes be \"forgetful\" with multi-part instructions, abandoning required steps mid-workflow — a fatal flaw in ALE's rigorous pipeline. And while hitting a 24.0% pass rate is enough to claim the crown, the absolute performance ceiling remains remarkably low. On the hardest \"Last-Exam\" tier — representing the frontier of professional difficulty — most configurations, including Anthropic's older Claude Opus 4.8 and Google's Gemini CLI, record a devastating 0.0% pass rate. Solving Benchmark Contamination A core vulnerability in modern AI evaluation is \"benchmark contamination\"—the phenomenon where test questions inevitably leak into the massive data lakes used to train next-generation models. Once a model memorizes the benchmark, the evaluation becomes entirely useless. ALE solves this through a dual-use deployment strategy. The project operates as an open-source research initiative, but it closely guards its evaluation data. Only about 10% of the dataset (roughly 150 tasks) is released publicly on platforms like GitHub and Hugging Face. The remaining 1,300+ tasks are kept strictly private. For developers and enterprise evaluators, this means ALE functions as a \"living benchmark\". Private tasks are systematically rotated into the public pool over time, while retired public tasks are swapped out. This rolling release ensures that the evaluation surface remains uncontaminated across successive model generations, giving enterprise buyers confidence that an agent's high score is earned , not memorized. Additionally, ALE provides transparency by tracking both \"Full\" and \"Unlicensed\" scores. Because real professional work often requires paid, proprietary software, the \"Full\" leaderboard incorporates tasks that rely on commercial CAD tools, paid APIs, or licensed datasets. The \"Unlicensed\" tier drops these license-gated tasks to provide a clean, like-for-like comparison using only freely available tools, ensuring models aren't simply rewarded for having access to paid enterprise software. Bottom Line: ALE Shows Even the Highest-Performing Models and Harnesses Have Room for Improvement For developers frustrated by the gap between marketing claims and actual production performance, ALE's brutal grading curve is highly validating. Zengyi Qin , an MIT PhD researcher and data contributor to the project, took to X to announce the launch, sharing images of the paper and the staggering 100+ institution contributor list. \"Introducing Agents’ Last Exam (ALE),\" Qin wrote. \"Built by 300+ domain experts from 100+ institutions. Covering 55 industry domains. Claude Opus 4.8 has 0.0% pass rate on the hardest subset. Glad to have contributed to this benchmark\". In a follow-up post highlighting the Hugging Face ArXiv paper link, Qin added: \"Very solid work from project leads @YiyouSun @Xinyang_Han_ @dawnsongtweets and @BerkeleyRDI\". As businesses deploy billions in capital betting on AI agents, they desperately need a compass that points true north. If an agent can eventually conquer the gauntlet of Agents' Last Exam, it won't just be passing a test—it will be proving it is ready to join the workforce. Until then, the sobering pass rates on the leaderboard serve as a necessary reality check for the entire AI ecosystem.",
         "grade": "S",
-        "extension": "该基准可延伸到长周期智能体评测、企业自动化落地和模型竞争格局变化，也适合跟进Codex类执行框架如何影响成绩。"
+        "extension": "该基准可延伸到长周期智能体评测、企业自动化落地和模型竞争格局变化，也适合跟进Codex类执行框架如何影响成绩。",
+        "level": "S"
       },
       {
         "id": "1001c996af28ba765a93cab9b02f64d8",
@@ -156,7 +163,8 @@
         "event_id": null,
         "original_content": "Apple's new Siri AI is finally here, and so far, it seems like it works . I have access and have been messing around with it, and my biggest impression so far is that Siri AI is quite curt - which I mean as a compliment. Many AI chatbots are cheery and wordy. While a more verbose and casual personality can make a chatbot seem friendlier and more fun to talk to, there are instances of users becoming extremely attached to their chatbot of choice. People have fallen in love with chatbots . When OpenAI suddenly shut down GPT-4o, users grieved its loss , and the company brought the model back for paid users . And while some companies have dialed bac … Read the full story at The Verge.",
         "grade": "A",
-        "extension": "苹果的克制人格设计可能影响AI助手交互范式，也可延伸到用户依赖、情感绑定和平台责任的产品伦理讨论。"
+        "extension": "苹果的克制人格设计可能影响AI助手交互范式，也可延伸到用户依赖、情感绑定和平台责任的产品伦理讨论。",
+        "level": "A"
       },
       {
         "id": "88320c69881a3b178410c3e9c78551e2",
@@ -189,7 +197,8 @@
         "event_id": null,
         "original_content": "Terence Tao The results of the First Proof \"second batch\" are now out: https:// 1stproof.org/assets/docs/repor t.pdf Ten research-level questions (many being part of forthcoming papers) were tested locally by the First Proof team against four AI harnesses, including my UCLA team, and then the submissions refereed by experts. In aggregate, 7 of the 10 problems were deemed to have at least one publication-level solution generated between the four harnesses. The UCLA harness had a somewhat mixed performance: 2 problems solved at an acceptable level, 3 more reaching a level roughly equivalent to a \"minor revisions needed\" submission to a journal, and with either \"reject\" or \"major revisions needed\" on the other 5. We did perform slightly better than the out-of-the-box frontier model, but at much higher compute costs (a few hundred dollars per question, rather than tens). Still, some of the solutions generated contained some interesting novelty. Significant weaknesses in our own harness revealed by the testing included the general failure to cite appropriate relevant literature, and having poor exposition (one solution in particular, while correct, was flagged by referees for spending far too much time on trivial steps and not enough on the key components of the argument). These look like addressable issues for our harness, and we also plan to incorporate more use of tools (such as symbolic computation and literature search) which were used more effectively by one of the competing teams. Improving the compute efficiency will also need to become more of a priority. While our own performance was slightly disappointing, I hope to see many more scientifically rigorous benchmarking exercises like this in the future.",
         "grade": "S",
-        "extension": "该结果可延伸到AI科研能力评测、数学证明自动化和高算力推理成本问题，适合观察工具链如何提升严谨性。"
+        "extension": "该结果可延伸到AI科研能力评测、数学证明自动化和高算力推理成本问题，适合观察工具链如何提升严谨性。",
+        "level": "S"
       },
       {
         "id": "a0ae97393f6a8ba1ce40fd7475455097",
@@ -222,7 +231,8 @@
         "event_id": null,
         "original_content": "A former xAI engineer is suing the company and SpaceX, alleging he was fired for raising AI safety concerns about Grok days before SpaceX's historic IPO.",
         "grade": "A+",
-        "extension": "该诉讼可能放大外界对xAI安全治理和内部举报机制的关注，也会影响Grok在企业和消费者市场中的信任度。"
+        "extension": "该诉讼可能放大外界对xAI安全治理和内部举报机制的关注，也会影响Grok在企业和消费者市场中的信任度。",
+        "level": "A+"
       },
       {
         "id": "aaa667981f6c15daa811b695ecb2a867",
@@ -255,7 +265,8 @@
         "event_id": null,
         "original_content": "Andrew Yang’s 2020 presidential campaign was based on a warning that automation and AI would hollow out the labor market and concentrate wealth in the hands of a few. At the time, ideas like Universal Basic Income felt fringe. Now Dario Amodei, Sam Altman, and Bernie Sanders are all saying versions of the same thing. An entrepreneur at heart, […]",
         "grade": "B",
-        "extension": "可延伸到AI失业预期、UBI政策回潮和创业公司如何提供民间解决方案，但需要视频细节支撑具体报道角度。"
+        "extension": "可延伸到AI失业预期、UBI政策回潮和创业公司如何提供民间解决方案，但需要视频细节支撑具体报道角度。",
+        "level": "B"
       },
       {
         "id": "4f1bcef8ef09731c43045a24f7585012",
@@ -287,8 +298,9 @@
         "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
         "event_id": null,
         "original_content": "Comments",
-        "grade": "A",
-        "extension": "可继续追踪企业用户和开发者对数据保留政策的接受度，以及Anthropic在高能力模型安全审计和隐私承诺之间的取舍。"
+        "grade": "B",
+        "extension": "可继续追踪企业用户和开发者对数据保留政策的接受度，以及Anthropic在高能力模型安全审计和隐私承诺之间的取舍。",
+        "level": "B"
       },
       {
         "id": "048c0f7592ac96a0d09952731a56c58f",
@@ -483,7 +495,7 @@
         "source": "The Information",
         "url": "https://www.theinformation.com/briefings/anthropic-proposes-public-fund-giving-americans-stakes-ai-companies",
         "event_id": null,
-        "grade": "A",
+        "grade": "A+",
         "level": "A+",
         "original_content": "Anthropic CEO Dario Amodei released a policy framework on Wednesday that proposed a mechanism for Americans to acquire a financial stake in the gains from the AI industry. The paper argued for the establishment of capital accounts for newborn Americans, similar to the new Trump Account program, ...",
         "extension": "该提议把AI治理从安全监管扩展到财富分配，可能影响美国政策讨论，也会把OpenAI、Anthropic等公司的公共责任推到台前。"
@@ -2929,7 +2941,9 @@
         "published_at": "2026-06-11T09:03:56.970448",
         "source": "Machine Learning",
         "url": "https://www.reddit.com/r/MachineLearning/comments/1u23f8p/anthropics_new_model_fable_will_silently_handicap/",
-        "event_id": null
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
       },
       {
         "id": "6852aa1658a745ca4b01c7056bbce3b2",
