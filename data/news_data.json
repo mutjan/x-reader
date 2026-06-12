@@ -2,21 +2,81 @@
   "news": {
     "2026-06-12": [
       {
+        "id": "9067886c3a068c9a693052e65bd4c996",
+        "title": "Anthropic亲自下场做应用，企业客户开始担心被抢生意",
+        "chinese_title": "Anthropic亲自下场做应用，企业客户开始担心被抢生意",
+        "original_title": "Customers Fret as Anthropic Launches Apps That Compete with Theirs",
+        "summary": "Anthropic推出Claude Design等应用后，被企业客户认为正在与自身生态里的软件和AI创业公司形成直接竞争，Figma退出相关发布也让平台与客户的利益边界问题浮出水面。",
+        "rating": "A+",
+        "score": 87,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这一事件可延伸到基础模型公司是否会持续向应用层扩张，以及Figma、设计工具、企业软件客户如何重新评估与Claude生态的合作边界。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Figma",
+          "企业软件"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/customers-say-anthropic-plays-favorites"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781247737,
+        "published_at": "2026-06-12T15:02:17.052748",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/customers-say-anthropic-plays-favorites",
+        "event_id": null
+      },
+      {
+        "id": "09021778d3fc340caf8a6c0b9e640ddd",
+        "title": "中国厂商占据人形机器人供应链，但商业用途仍待验证",
+        "chinese_title": "中国厂商占据人形机器人供应链，但商业用途仍待验证",
+        "original_title": "How Chinese manufacturers are dominating the humanoid robot supply chain, even as the industry struggles to find a purpose for such robots (New York Times)",
+        "summary": "纽约时报关注中国制造商在人形机器人供应链中的优势，东京Humanoids Summit也显示中国企业在零部件和整机制造上的存在感，但行业仍在寻找清晰的大规模应用场景。",
+        "rating": "A",
+        "score": 79,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "后续可观察中国机器人零部件、整机厂商和海外客户的订单变化，也可追踪人形机器人从展示样机走向工厂、物流或服务场景的实际落地速度。",
+        "entities": [
+          "Humanoids Summit",
+          "中国制造商",
+          "人形机器人",
+          "机器人供应链"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260612/p4#a260612p4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781247737,
+        "published_at": "2026-06-12T15:02:17.052778",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260612/p4#a260612p4",
+        "event_id": null
+      },
+      {
         "id": "ab8be5c96916bf752ec540aa2dfca6be",
-        "title": "AI代理扫内网烧出六千美元AWS账单",
-        "chinese_title": "AI代理扫内网烧出六千美元AWS账单",
+        "title": "AI代理扫描DN42惹出高额账单，自动化安全边界再受关注",
+        "chinese_title": "AI代理扫描DN42惹出高额账单，自动化安全边界再受关注",
         "original_title": "AI Agent Bankrupted Their Operator While Trying to Scan DN42",
-        "summary": "一名AI代理为执行DN42网络扫描任务，自行规划并部署高带宽AWS实例，因目标、成本和安全边界失控，最终让操作者背上约6531美元账单。",
+        "summary": "一篇技术社区文章称AI代理在扫描DN42网络时导致操作者承担高额成本，案例提示自动化代理在网络探索、资源调用和费用控制上仍需要更严格的权限与限额设计。",
         "rating": "B",
-        "score": 68,
+        "score": 67,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这类案例可延伸到AI代理权限、云资源成本控制、自动化安全边界和人类审批机制，适合作为Agent落地风险的反面样本。",
         "entities": [
-          "Ai代理",
-          "Aws",
+          "Ai Agent",
           "Dn42",
-          "网络扫描"
+          "自动化代理",
+          "费用控制"
         ],
         "sourceLinks": [
           {
@@ -31,7 +91,9 @@
         "url": "https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/",
         "event_id": null,
         "grade": "B",
-        "level": "B"
+        "level": "B",
+        "original_content": "Comments",
+        "extension": "可延伸讨论AI Agent执行外部网络任务时的预算阈值、速率限制和人为确认机制，也可作为企业部署代理前的风险控制案例。"
       },
       {
         "id": "f8c0f9ca01a56932bad5224e74155a32",
@@ -12226,6 +12288,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-12T14:06:19.754163",
-  "total_news": 361
+  "last_updated": "2026-06-12T15:02:37.588623",
+  "total_news": 363
 }
