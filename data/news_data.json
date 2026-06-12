@@ -2,13 +2,103 @@
   "news": {
     "2026-06-12": [
       {
-        "id": "5f9483ef15d5d9c96838f1f50c6cf5f2",
-        "title": "Anthropic也陷入平台自营应用争议",
-        "chinese_title": "Anthropic也陷入平台自营应用争议",
-        "original_title": "The AI industry's platform trap is starting to look a lot like Microsoft's",
-        "summary": "Anthropic一边限制部分客户使用新模型能力，一边推出与大客户直接竞争的应用，引发客户、合作伙伴和投资人对平台中立性的担忧。",
+        "id": "6e347ee34b8b3f152db317297b426bed",
+        "title": "SpaceX天价IPO估值遭质疑",
+        "chinese_title": "SpaceX天价IPO估值遭质疑",
+        "original_title": "The More Data We See About SpaceX’s IPO, the More We’re Wincing",
+        "summary": "SpaceX据称将以1.75万亿美元估值上市，但分析人士认为其收入增长目标过于激进，投资逻辑更像押注马斯克叙事与太空AI数据中心愿景。",
         "rating": "A",
         "score": 82,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延伸观察太空商业公司估值泡沫、特斯拉投资者情绪外溢，以及卫星互联网和太空数据中心叙事对资本市场的影响。",
+        "entities": [
+          "Elon Musk",
+          "Ipo",
+          "SpaceX",
+          "Tesla"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/space/data-spacex-ipo-wincing"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781270980,
+        "published_at": "2026-06-12T21:29:40.965432",
+        "source": "Futurism",
+        "url": "https://futurism.com/space/data-spacex-ipo-wincing",
+        "event_id": null
+      },
+      {
+        "id": "480335c2f8fc6f93e0d1a088a05da15a",
+        "title": "Meta收购Rivos后自研AI芯片仍卡壳",
+        "chinese_title": "Meta收购Rivos后自研AI芯片仍卡壳",
+        "original_title": "Meta Bought Rivos to Accelerate Its AI Chip Push. It Isn’t Working.",
+        "summary": "Meta收购芯片创业公司Rivos半年后，内部AI芯片项目仍受战略摇摆、团队摩擦和领导优先级变化影响，摆脱英伟达依赖的进展不及预期。",
+        "rating": "A+",
+        "score": 90,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可继续追踪大型互联网公司自研AI芯片的组织难度，以及英伟达供应链依赖是否会因内部项目受阻而进一步强化。",
+        "entities": [
+          "Ai芯片",
+          "Meta",
+          "NVIDIA",
+          "Rivos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/meta-bought-rivos-accelerate-ai-chip-push-working"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781270980,
+        "published_at": "2026-06-12T21:29:40.965460",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/meta-bought-rivos-accelerate-ai-chip-push-working",
+        "event_id": null
+      },
+      {
+        "id": "9065de3396a6588c71f7bd95676c936e",
+        "title": "企业为降AI成本转向更便宜模型",
+        "chinese_title": "企业为降AI成本转向更便宜模型",
+        "original_title": "Companies hit by rising AI costs are increasingly using tools that tap cheaper models, including some from China, putting price pressure on OpenAI and Anthropic (Wall Street Journal)",
+        "summary": "面对AI调用成本上升，越来越多企业开始使用可接入低价模型的工具，其中包括部分中国模型，这正在对OpenAI和Anthropic的高价策略形成压力。",
+        "rating": "A+",
+        "score": 89,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸到模型路由、中国产模型出海、企业AI预算收缩，以及头部闭源模型厂商是否被迫调整定价和产品分层。",
+        "entities": [
+          "Anthropic",
+          "OpenAI",
+          "中国模型",
+          "模型路由"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260612/p12#a260612p12"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781270980,
+        "published_at": "2026-06-12T21:29:40.965480",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260612/p12#a260612p12",
+        "event_id": null
+      },
+      {
+        "id": "5f9483ef15d5d9c96838f1f50c6cf5f2",
+        "title": "Anthropic平台自营争议继续升温",
+        "chinese_title": "Anthropic平台自营争议继续升温",
+        "original_title": "The AI industry's platform trap is starting to look a lot like Microsoft's",
+        "summary": "Anthropic一边限制新模型Mythos的部分任务使用，一边推出与大客户竞争的应用，引发客户、合作伙伴和投资者对平台中立性的反弹。",
+        "rating": "A",
+        "score": 80,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "这类冲突会放大AI平台方既当基础设施又当应用公司的矛盾，后续可追踪企业客户是否转向多模型供应商，以及监管和投资人如何重新评估平台风险。",
@@ -31,23 +121,24 @@
         "url": "https://the-decoder.com/the-ai-industrys-platform-trap-is-starting-to-look-a-lot-like-microsofts/",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "Anthropic is throttling its new Mythos model for certain tasks while building apps that directly compete with its largest customers. Customers, partners, and investors are pushing back. The article The AI industry's platform trap is starting to look a lot like Microsoft's appeared first on The Decoder .",
+        "extension": "可延伸比较AI平台与微软式平台捆绑历史，观察模型公司从基础设施走向应用层后与生态客户的利益冲突。"
       },
       {
         "id": "75481f19fc708efec6b21214358bddac",
-        "title": "SpaceX IPO前夕火箭市场变数增多",
-        "chinese_title": "SpaceX IPO前夕火箭市场变数增多",
+        "title": "SpaceX IPO叠加火箭市场变数",
+        "chinese_title": "SpaceX IPO叠加火箭市场变数",
         "original_title": "Rocket Report: Nova moving through test campaign; SpaceX IPO launches Friday",
-        "summary": "Ars Technica火箭周报称，Blue Origin新火箭事故后NASA仍计划让New Glenn承担Artemis III测试任务，但也承认Vulcan和Falcon Heavy可能成为备选。",
+        "summary": "Ars Technica火箭周报提到SpaceX IPO即将启动，同时New Glenn事故后NASA仍在评估Artemis III任务发射选择，商业航天格局继续变化。",
         "rating": "A",
-        "score": 79,
+        "score": 78,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "商业航天上市和NASA任务分配会相互影响，后续可延伸观察Blue Origin恢复进度、ULA和SpaceX的替代机会，以及资本市场对航天基础设施的定价。",
         "entities": [
           "Artemis",
           "Blue Origin",
-          "Nasa",
           "New Glenn",
           "SpaceX"
         ],
@@ -64,7 +155,9 @@
         "url": "https://arstechnica.com/space/2026/06/rocket-report-nova-moving-through-test-campaign-spacex-ipo-launches-friday/",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "Welcome to Edition 8.45 of the Rocket Report! Even though we are now two weeks removed from the catastrophic loss of the New Glenn rocket and its LC-36A launch pad, it continues to dominate discussion in the space community. This week, NASA said it nominally plans to fly Blue Origin's test lander on New Glenn for the Artemis III mission, but officials quietly acknowledged that other launch vehicles, including Vulcan and the Falcon Heavy, could also get the job done. We'll obviously be watching closely. As always, we welcome reader submissions , and if you don't want to miss an issue, please subscribe using the box below (the form will not appear on AMP-enabled versions of the site). Each report will include information on small-, medium-, and heavy-lift rockets as well as a quick look ahead at the next three launches on the calendar. Isar raises funding, announces new launch date . German launch startup Isar Aerospace announced this week that it had closed a 270 million euro Series D to \"drive global scaling and ramp up serial production,\" European Spaceflight reports . The company also said the previously delayed second launch attempt of its Spectrum rocket would now take place sometime between June 15 and June 21. Read full article Comments",
+        "extension": "可延伸观察SpaceX资本化进程、Blue Origin事故后的任务替代方案，以及重型火箭竞争对月球项目和商业发射市场的影响。"
       },
       {
         "id": "63b7180afa4aba3f588be8eca2252a03",
@@ -12595,6 +12688,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-12T20:04:57.117376",
-  "total_news": 373
+  "last_updated": "2026-06-12T21:30:19.298155",
+  "total_news": 375
 }
