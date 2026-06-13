@@ -12567,20 +12567,20 @@
       },
       {
         "id": "1de51b49658a1ba7692177fbe9135a71",
-        "title": "Anthropic新模型刚上线就被美方叫停",
-        "chinese_title": "Anthropic新模型刚上线就被美方叫停",
+        "title": "Anthropic新模型上线数日后被美国紧急叫停",
+        "chinese_title": "Anthropic新模型上线数日后被美国紧急叫停",
         "original_title": "Anthropic shuts down Fable, Mythos models following Trump admin. directive",
-        "summary": "Anthropic在Fable 5和Mythos 5发布数日后突然关闭访问，原因是美国商务部以出口管制为由要求限制美国境外使用。",
+        "summary": "Anthropic在收到美国商务部指令后，突然关闭刚上线的Fable 5和Mythos 5模型海外访问，原因与出口管制和安全绕过风险有关，其他Anthropic模型暂不受影响。",
         "rating": "S",
-        "score": 95,
+        "score": 88,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "该事件把前沿模型能力、安全评估和出口管制直接绑在一起，后续可追踪美国对AI模型跨境访问的监管边界，以及其他模型公司的合规应对。",
         "entities": [
           "Anthropic",
-          "Claude",
           "Fable",
           "Mythos",
+          "出口管制",
           "美国商务部"
         ],
         "sourceLinks": [
@@ -12595,10 +12595,10 @@
         "source": "AI – Ars Technica",
         "url": "https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive/",
         "event_id": null,
-        "grade": "S",
+        "grade": "A+",
         "level": "S",
         "original_content": "Anthropic completely shut off access to its Mythos 5 and Fable 5 models Friday night, just days after they were launched. The move comes after Anthropic's receipt of a US Commerce Department directive Friday evening, subjecting the new models to export controls restricting their use anywhere outside the United States. In a message posted Friday night , Anthropic said the only way for it to ensure compliance with that government order in the immediate term \"is that we must abruptly disable Fable 5 and Mythos 5 for all our customers.\" Access to other Anthropic models is not affected. An Axios report cited an administration official saying that the administration is concerned by reports of a jailbreak that reportedly gets around broad classifier-based safeguards meant to block Fable 5 prompts regarding cybersecurity, chemistry, and biology. The administration reportedly requested a pause in the release of these models to gain time for the \"national security apparatus\" to be \"hardened\" against this kind of threat. That hardening could be complete \"in the next few weeks,\" Axios' source suggested. Read full article Comments",
-        "extension": "这可能成为前沿模型出口管制的新样本，影响AI公司全球服务策略、跨国客户合同和海外员工访问权限安排。"
+        "extension": "该事件可能成为美国将前沿模型能力纳入出口管制的标志案例，后续需关注模型发布节奏、海外客户访问、AI安全评测与政府监管之间的新平衡。"
       },
       {
         "id": "cf3cc56a41165b4eba4428373dbfdc9c",
@@ -13011,6 +13011,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-13T12:06:20.607268",
+  "last_updated": "2026-06-13T13:04:15.625121",
   "total_news": 384
 }
