@@ -12495,7 +12495,9 @@
         "published_at": "2026-06-13T11:28:15.988198",
         "source": "AI – Ars Technica",
         "url": "https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive/",
-        "event_id": null
+        "event_id": null,
+        "grade": "S",
+        "level": "S"
       },
       {
         "id": "cf3cc56a41165b4eba4428373dbfdc9c",
@@ -12526,7 +12528,9 @@
         "published_at": "2026-06-13T11:28:15.988227",
         "source": "The Information",
         "url": "https://www.theinformation.com/briefings/anthropic-suspends-customers-access-latest-models-government-order",
-        "event_id": null
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
       },
       {
         "id": "87901703b771215e51536a28f013105a",
@@ -12557,7 +12561,9 @@
         "published_at": "2026-06-13T11:28:15.988245",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
-        "event_id": null
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
       },
       {
         "id": "85881d87fe58c9e4b5021ebd958f34f6",
@@ -12588,68 +12594,9 @@
         "published_at": "2026-06-13T11:28:15.988260",
         "source": "Feed: Artificial Intelligence Latest",
         "url": "https://www.wired.com/story/anthropic-says-us-government-ordered-it-to-shut-down-mythos-models/",
-        "event_id": null
-      },
-      {
-        "id": "5caf59a419445880eb9c332e6666d098",
-        "title": "Claude状态页确认两款新模型暂停访问",
-        "chinese_title": "Claude状态页确认两款新模型暂停访问",
-        "original_title": "We've suspended access to Claude Mythos 5 and Claude Fable 5",
-        "summary": "Claude状态页显示Mythos 5和Fable 5访问已被暂停，信息量有限但可作为Anthropic模型下线事件的官方状态佐证。",
-        "rating": "B",
-        "score": 66,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "状态页适合作为事件时间线证据，后续重点在于服务恢复时间、影响范围说明和官方补充公告是否出现。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Fable",
-          "Mythos"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://status.claude.com/incidents/s9w82lp9dcn9"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781321295,
-        "published_at": "2026-06-13T11:28:15.988286",
-        "source": "Hacker News",
-        "url": "https://status.claude.com/incidents/s9w82lp9dcn9",
-        "event_id": null
-      },
-      {
-        "id": "5b01bb0efdd7e815b522dfbff02be8f8",
-        "title": "Claude Fable的FrontierMath分数被重新讨论",
-        "chinese_title": "Claude Fable的FrontierMath分数被重新讨论",
-        "original_title": "Claude Fable 5's FrontierMath scores",
-        "summary": "Reddit帖子引用Epoch AI的FrontierMath更新，称题目纠错后各模型分数普遍上升，Claude Fable 5相关表现因此被重新审视。",
-        "rating": "B",
-        "score": 67,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该线索可延展到数学基准可靠性、题库饱和和前沿模型评测口径变化，但社区帖需回到Epoch原始数据核验。",
-        "entities": [
-          "Claude",
-          "Epoch Ai",
-          "Fable",
-          "Frontiermath",
-          "基准测试"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1u451ce/claude_fable_5s_frontiermath_scores/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781321295,
-        "published_at": "2026-06-13T11:28:15.988323",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1u451ce/claude_fable_5s_frontiermath_scores/",
-        "event_id": null
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
       },
       {
         "id": "f5eaf0d3e3a92aef442c705aef794ef7",
@@ -12680,38 +12627,9 @@
         "published_at": "2026-06-13T11:28:15.988336",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1u42yx8/google_deepmind_published_a_60page_paper_mapping/",
-        "event_id": null
-      },
-      {
-        "id": "97020c3f3ee0cdc041bce68487dbe475",
-        "title": "谷歌发布Gemini-SQL2提升文本转SQL",
-        "chinese_title": "谷歌发布Gemini-SQL2提升文本转SQL",
-        "original_title": "Google releases Gemini-SQL2, breakthrough text-to-SQL capability model",
-        "summary": "社区帖称Google发布Gemini-SQL2，在BIRD基准上取得领先表现，强调自然语言到可执行SQL的准确性和复杂业务语境理解。",
-        "rating": "B",
-        "score": 69,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "如果官方发布属实，可延展到企业数据分析、BI工具和数据库Copilot竞争，重点核验BIRD成绩和可用性。",
-        "entities": [
-          "Bird",
-          "Gemini",
-          "Gemini-Sql",
-          "Google",
-          "Text-To-Sql"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (Gemini)",
-            "url": "https://www.reddit.com/r/singularity/comments/1u40r5w/google_releases_geminisql2_breakthrough_texttosql/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781321295,
-        "published_at": "2026-06-13T11:28:15.988361",
-        "source": "Technological Singularity (Gemini)",
-        "url": "https://www.reddit.com/r/singularity/comments/1u40r5w/google_releases_geminisql2_breakthrough_texttosql/",
-        "event_id": null
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
       },
       {
         "id": "d0b87ea183dca21f745669a2bf32e5e8",
@@ -12742,7 +12660,9 @@
         "published_at": "2026-06-13T11:28:15.988386",
         "source": "Techmeme (kimi)",
         "url": "https://www.techmeme.com/260612/p33#a260612p33",
-        "event_id": null
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
       },
       {
         "id": "0d50abf53e15153e6728e39912bf787c",
@@ -12983,5 +12903,5 @@
     ]
   },
   "last_updated": "2026-06-13T11:28:56.288397",
-  "total_news": 384
+  "total_news": 381
 }
