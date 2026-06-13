@@ -12495,7 +12495,9 @@
         "published_at": "2026-06-13T12:04:18.938404",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260612/p34#a260612p34",
-        "event_id": null
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
       },
       {
         "id": "5caf59a419445880eb9c332e6666d098",
@@ -12526,38 +12528,9 @@
         "published_at": "2026-06-13T12:04:18.938417",
         "source": "Hacker News",
         "url": "https://status.claude.com/incidents/s9w82lp9dcn9",
-        "event_id": null
-      },
-      {
-        "id": "5b01bb0efdd7e815b522dfbff02be8f8",
-        "title": "Claude Fable在FrontierMath分数引讨论",
-        "chinese_title": "Claude Fable在FrontierMath分数引讨论",
-        "original_title": "Claude Fable 5's FrontierMath scores",
-        "summary": "Reddit帖子引用Epoch AI的FrontierMath更新，称基准纠错后多档题目分数整体提高，但模型排名变化不大且部分档位接近饱和。",
-        "rating": "B",
-        "score": 66,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该线索可跟进数学基准纠错对模型排行榜可信度的影响，以及新模型真实推理提升与基准版本变化的区分。",
-        "entities": [
-          "Claude",
-          "Epoch Ai",
-          "Fable",
-          "Frontiermath",
-          "基准测试"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1u451ce/claude_fable_5s_frontiermath_scores/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781323458,
-        "published_at": "2026-06-13T12:04:18.938454",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1u451ce/claude_fable_5s_frontiermath_scores/",
-        "event_id": null
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
       },
       {
         "id": "97020c3f3ee0cdc041bce68487dbe475",
@@ -12588,7 +12561,9 @@
         "published_at": "2026-06-13T12:04:18.938491",
         "source": "Technological Singularity (Gemini)",
         "url": "https://www.reddit.com/r/singularity/comments/1u40r5w/google_releases_geminisql2_breakthrough_texttosql/",
-        "event_id": null
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
       },
       {
         "id": "1de51b49658a1ba7692177fbe9135a71",
@@ -12690,7 +12665,7 @@
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
         "event_id": null,
-        "grade": "S",
+        "grade": "A+",
         "level": "A+",
         "original_content": "Anthropic isn't hiding its frustration. \"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the company wrote in a blog post.",
         "extension": "该事件会放大AI安全透明披露与商业发布之间的张力，同行可能重新评估模型卡、红队报告和政府沟通节奏。"
@@ -12725,7 +12700,7 @@
         "source": "Feed: Artificial Intelligence Latest",
         "url": "https://www.wired.com/story/anthropic-says-us-government-ordered-it-to-shut-down-mythos-models/",
         "event_id": null,
-        "grade": "A+",
+        "grade": "A",
         "level": "A",
         "original_content": "“The government believes it has become aware of a method of bypassing, or ‘jailbreaking’ Fable 5,” the company said in a blog post.",
         "extension": "可以追踪政府对具体模型能力的干预门槛，以及企业是否会把高能力模型改为区域化、白名单或延迟发布。"
@@ -13036,6 +13011,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-13T12:05:00.372905",
-  "total_news": 385
+  "last_updated": "2026-06-13T12:06:20.607268",
+  "total_news": 384
 }
