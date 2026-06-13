@@ -12467,6 +12467,37 @@
     ],
     "2026-06-13": [
       {
+        "id": "6e6fc2d60a9fc3f2340f39fdbe1bcde2",
+        "title": "Anthropic按美国出口管制禁用Claude新模型",
+        "chinese_title": "Anthropic按美国出口管制禁用Claude新模型",
+        "original_title": "U.S. gov't orders Anthropic to disable its newest AI models worldwide due to security threats &mdash; ban on Claude Fable 5 and Mythos 5 bars access by any foreign national, even its own employees",
+        "summary": "Tom's Hardware报道称，美国出口管制命令迫使Anthropic在全球范围禁用Claude Fable 5和Mythos 5，外国人和内部员工访问均被阻断。",
+        "rating": "A+",
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可能成为AI模型出口管制的标志性案例，后续关注企业客户赔付、模型恢复条件和其他前沿实验室反应。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Fable",
+          "Mythos",
+          "美国出口管制"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/us-export-control-order-forces-anthropic-to-disable-claude-fable-5-and-mythos-5-worldwide"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781356708,
+        "published_at": "2026-06-13T21:18:28.102302",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/us-export-control-order-forces-anthropic-to-disable-claude-fable-5-and-mythos-5-worldwide",
+        "event_id": null
+      },
+      {
         "id": "adbb0d3de0cf643d40befb3f724f4fdb",
         "title": "纳德拉也承认AI用量上瘾",
         "chinese_title": "纳德拉也承认AI用量上瘾",
@@ -12503,17 +12534,18 @@
         "title": "谷歌Gemini-SQL2刷新文本转SQL基准",
         "chinese_title": "谷歌Gemini-SQL2刷新文本转SQL基准",
         "original_title": "Google Research's Gemini-SQL2 tops text-to-SQL benchmarks by a wide margin",
-        "summary": "Google Research推出Gemini-SQL2，将自然语言转为可执行SQL，在BIRD基准上达到80.04%准确率，明显领先OpenAI和Anthropic相关系统。",
+        "summary": "Google Research推出Gemini-SQL2，把自然语言转成可执行SQL，在BIRD基准上达到80.04%准确率，显著领先OpenAI和Anthropic相关方案。",
         "rating": "A",
-        "score": 81,
+        "score": 83,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "该方向可能影响数据分析产品的自然语言入口，也会推动云数据库、BI工具和企业知识库围绕Text-to-SQL能力展开竞争。",
         "entities": [
+          "Anthropic",
           "Bird",
           "Gemini",
-          "Google Research",
-          "Text-To-Sql"
+          "Google",
+          "OpenAI"
         ],
         "sourceLinks": [
           {
@@ -12528,16 +12560,18 @@
         "url": "https://the-decoder.com/google-researchs-gemini-sql2-tops-text-to-sql-benchmarks-by-a-wide-margin/",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "Google Research's Gemini-SQL2 turns natural language into executable SQL queries. Built on Gemini 3.1 Pro, it tops the BIRD benchmark at 80.04 percent accuracy, well ahead of OpenAI and Anthropic. Google says the technology could improve natural language features across its data services. The article Google Research's Gemini-SQL2 tops text-to-SQL benchmarks by a wide margin appeared first on The Decoder .",
+        "extension": "文本转SQL能力如果进入云数据产品，会改变企业BI和数据分析入口，也会带动数据库厂商重新比较自然语言查询体验。"
       },
       {
         "id": "416aa468816d27bee5b541042256ebab",
-        "title": "英伟达Blackwell工作站GPU一年涨价55%",
-        "chinese_title": "英伟达Blackwell工作站GPU一年涨价55%",
+        "title": "英伟达Blackwell工作站卡一年涨价55%",
+        "chinese_title": "英伟达Blackwell工作站卡一年涨价55%",
         "original_title": "Nvidia raises RTX Pro 6000 Blackwell GPU pricing to $13,250 &mdash; 55% increase over MSRP in a year's time",
-        "summary": "英伟达将RTX Pro 6000 Blackwell官方售价提高到13250美元，合作伙伴版本也从11359.99美元起，显示高端专业GPU供需和定价继续紧张。",
+        "summary": "英伟达将RTX Pro 6000 Blackwell显卡官方售价上调至13250美元，合作伙伴版本也从11359.99美元起，凸显高端GPU供需紧张。",
         "rating": "A",
-        "score": 80,
+        "score": 81,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "可追踪高端GPU涨价对AI工作站、创意行业和中小团队本地算力预算的影响，也能观察AMD等竞品是否借机抢占专业市场。",
@@ -12545,7 +12579,7 @@
           "Blackwell",
           "Gpu",
           "NVIDIA",
-          "Rtx Pro"
+          "Rtx Pro 6000"
         ],
         "sourceLinks": [
           {
@@ -12560,14 +12594,16 @@
         "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-raises-rtx-pro-6000-blackwell-gpu-pricing-to-usd13-250-55-percent-increase-over-msrp-in-a-years-time",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "Nvidia now sells the RTX Pro 6000 Blackwell graphics cards for $13,250, while partner offerings start at $11,359.99.",
+        "extension": "专业显卡涨价会继续推高AI工作站和本地推理成本，并影响中小团队在云端租卡与本地采购之间的选择。"
       },
       {
         "id": "4329a5d6d8fc7e71bd0daa25758cdc00",
-        "title": "美国命令Anthropic关闭两款Claude模型",
-        "chinese_title": "美国命令Anthropic关闭两款Claude模型",
+        "title": "美国禁令迫使Anthropic全球关停新模型",
+        "chinese_title": "美国禁令迫使Anthropic全球关停新模型",
         "original_title": "Anthropic blocks all public access to Claude Fable 5, Mythos 5 following US government order — what enterprises should do",
-        "summary": "美国政府据称以国家安全为由要求Anthropic暂停Claude Fable 5和Claude Mythos 5访问，Anthropic随后面向全球用户、企业客户甚至内部员工关闭模型。",
+        "summary": "美国政府要求Anthropic暂停外国人访问Claude Fable 5和Mythos 5，Anthropic随即全球关停两款顶级模型，企业客户和内部员工也受到影响。",
         "rating": "S",
         "score": 100,
         "type": "safety",
@@ -12576,7 +12612,8 @@
         "entities": [
           "Anthropic",
           "Claude",
-          "出口管制",
+          "Fable",
+          "Mythos",
           "美国政府"
         ],
         "sourceLinks": [
@@ -12592,16 +12629,18 @@
         "url": "https://venturebeat.com/technology/anthropic-blocks-all-public-access-to-claude-fable-5-mythos-5-following-us-government-order-what-enterprises-should-do",
         "event_id": null,
         "grade": "S",
-        "level": "S"
+        "level": "S",
+        "original_content": "The US government last night issued an unprecedented export control directive ordering Anthropic to immediately suspend all access to its top-tier Claude Fable 5 and Claude Mythos 5 models for foreign nationals, citing unspecified national security authorities. In response, Anthropic has blocked all public access to both models, globally — meaning no users around the world can access them at this time, even paying enterprise customers and Anthropic employees internally. It's a huge blow and reversal following the public release of Fable/Mythos 5 just three days prior. Current Fable 5/Mythos 5 sessions will end in errors and new queries will be automatically routed to older, less capable models like Opus 4.8. Anthropic says in a blog post that \"We believe this is a misunderstanding and are working to restore access as soon as possible,\" and apologizes to its customers. The sudden regulatory intervention serves as a stark warning to the enterprise sector: centralized, cloud-based frontier models exist at the absolute mercy of government oversight and vendor compliance. Did Pliny the Liberator's public jailbreak catalyze the extraordinary USG action against Fable/Mythos 5? The government's sweeping action follows a viral jailbreak of Fable 5 published publicly on X on June 10 by the prolific jailbreaker \" Pliny the Liberator ,\" who claimed to have successfully bypassed the model's safety guardrails to extract functional instructions for cyber exploits, explosives, and chemical synthesis pathways, specifically noting the \"birch reduction method\" for methamphetamine. Pliny outlined a highly sophisticated, multi-agent attack that leveraged a combination of \"Unicode, homoglyphs, Cyrillic,\" long-context reference tracking, and a technique of breaking harmful requests into innocuous, out-of-distribution tokens. The attacker then used a previously jailbroken Opus model to piece the benign chunks back together into actionable, restricted outputs. Anthropic doesn't specify if this is the jailbreak that precipitated the government order, and in fact, notes that the information provided by the U.S. government regarding the specific jailbreak has been poorly documented, writing: \"To date, the government has only given us verbal evidence of a potential narrow, non-universal jailbreak, which essentially consists of asking the model to read a specific codebase and fix any software flaws. Our understanding is that one potential jailbreak was shared with the government.\" The company argues the capabilities uncovered are \"widely available\" in other public models, explicitly naming rival OpenAI's GPT-5.5. Furthermore, Anthropic warns that pulling a commercial model over a non-universal jailbreak sets a regulatory standard that could \"essentially halt all new model deployments for all frontier model providers\". The Pentagon precedent and need for enterprise AI redundancy and diversification This sudden blackout of Anthropic's latest and greatest AI models will no doubt cause some consternation for organizations relying primarily on the Claude API — as it should, even though they still have access to other, less powerful Claude models. As I warned earlier this year when the Pentagon abruptly blacklisted Anthropic , enterprises can no longer afford — from an operational reliability standpoint — to run critical workflows on any single AI model or even provider. Putting all your AI \"eggs\" into one basket, so to speak, creates a single, ultimately brittle failure point from which recovery or mitigation becomes exceedingly difficult. Granted, in this case, Anthropic notes helpfully that \"access to all other Anthropic models will not be affected.\" And while Opus 4.8 or other Anthropic models may already be the preferred ones for organizations given their lower cost, or seen as acceptable fallbacks, the reality is, the U.S. government order was narrowly targeted in this particular instance — who's to saying the government wouldn't, in the future, demand a block of all of a given lab's AI models/products/services? We had an indication that enterprise AI customers should diversify their providers earlier this year. Recall that in March 2026, Secretary of Defense Pete Hegseth labeled Anthropic a \"supply chain risk\" after the company refused to allow the military to use Claude for mass domestic surveillance and lethal autonomous weapons without safety restrictions. The resulting fallout led to a sweeping prohibition on Anthropic's use across defense supply chains, stripping contractors of access overnight. The lesson from the Department of Defense fallout remains critically relevant today. Any organization building agentic workflows or production apps tied solely to a single closed-API provider risks immediate operational failure if that provider faces an injunction, a cyberattack, or an export control directive. As an enterprise technical leader, your top goal if not already achieved should be to urgently diversify your AI supply — whether it's other cloud-based AI models and providers, or AI models running on enterprise-controlled local or virtual hardware. At this point, enterprise AI supplier diversification is arguably imperative to ensure you can continue to run AI workflows without disruption. Enterprise implications: sovereign setup vs. frontier capabilities The community reaction to the Fable 5 takedown reflects a rapidly shifting enterprise calculus toward hardware sovereignty. AI founder Alex Finn took to X to flag the Anthropic shutdown as a \"wakeup call,\" urging developers to run local models on home GPUs to insulate themselves from regulatory volatility. \"No company or government will EVER be able to take away your local models,\" Finn writes, warning that government overreach will only escalate as models inch closer to artificial general intelligence (AGI), the stated goal of OpenAI and some other AI firms, in which an AI model becomes capable of performing most economically valuable work tasks now done by humans. Competitors are already capitalizing on this sentiment; Chinese open source AI provider MiniMax quickly highlighted the open weights/open source availability of its new, frontier-class M3 model , contrasting its decentralized availability against Claude's centralized vulnerability. In other words: enterprises can download and run M3 on their own hardware now without ever worrying about any government stepping in to prevent access. This dynamic presents a complex trade-off for CIOs and IT leaders: The Sovereign Advantage: Running local, open-weights models on sovereign hardware provides absolute control, ensures data privacy, and immunizes the enterprise against abrupt government export controls, vendor policy shifts, or API rate limits. The Frontier Sacrifice: Adopting a purely local strategy means sacrificing the cutting-edge reasoning, agentic capabilities, and massive context windows inherent to the latest closed-API frontier models, which require centralized, multi-billion-dollar compute clusters to operate. The most resilient path forward is an active fallback architecture. Enterprises must design their systems to be model-agnostic. By building intelligent routing layers that can dynamically switch from a frontier model like Fable 5 to an open-weights fallback or a secondary provider's API the moment an outage or regulatory ban hits, businesses ensure their operations survive the volatile intersection of AI scaling and government oversight.",
+        "extension": "这会把前沿模型能力、出口管制和企业连续性风险绑在一起，推动客户评估多模型冗余、本地部署和供应商锁定问题。"
       },
       {
         "id": "9ad11d40ee0a34dce00920e3567a0213",
-        "title": "微软SkillOpt只靠Markdown提升智能体能力",
-        "chinese_title": "微软SkillOpt只靠Markdown提升智能体能力",
+        "title": "微软SkillOpt用Markdown训练智能体技能",
+        "chinese_title": "微软SkillOpt用Markdown训练智能体技能",
         "original_title": "Microsoft's SkillOpt boosts GPT-5.5 by using nothing but a trained Markdown file",
-        "summary": "微软与三所中国高校提出SkillOpt，用类似模型训练的方式优化智能体指令文档，一个Markdown文件即可让GPT-5.5在流程任务上提升约23分。",
+        "summary": "微软和三所中国高校提出SkillOpt，用类似模型训练的方式优化智能体指令文档，一个Markdown文件即可显著提升程序化任务表现。",
         "rating": "A+",
-        "score": 89,
+        "score": 91,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "这会把竞争焦点从模型参数扩展到可训练提示词和技能文件，也利好Codex、Claude Code等智能体生态中的可迁移操作规范。",
@@ -12625,21 +12664,23 @@
         "url": "https://the-decoder.com/microsofts-skillopt-boosts-gpt-5-5-by-using-nothing-but-a-trained-markdown-file/",
         "event_id": null,
         "grade": "A+",
-        "level": "A+"
+        "level": "A+",
+        "original_content": "Microsoft and three Chinese universities have developed SkillOpt, a method that optimizes instruction documents for AI agents using principles from traditional model training. A simple Markdown file is enough to boost GPT-5.5 by about 23 points on procedural tasks, and the same file transfers across models and agent environments like Codex and Claude Code. The article Microsoft's SkillOpt boosts GPT-5.5 by using nothing but a trained Markdown file appeared first on The Decoder .",
+        "extension": "如果技能文件能跨模型迁移，智能体优化会从调模型转向调流程文档，影响Codex、Claude Code等开发工具生态。"
       },
       {
         "id": "5df2f561ad8c4a89b386b86cd4fbb9e2",
-        "title": "AI订阅撞上价格墙，企业转向开源和中国模型",
-        "chinese_title": "AI订阅撞上价格墙，企业转向开源和中国模型",
+        "title": "AI订阅撞上成本墙企业转向开源和中国模型",
+        "chinese_title": "AI订阅撞上成本墙企业转向开源和中国模型",
         "original_title": "AI costs spike as subscriptions hit pricing wall — firms turn towards Chinese LLMs, open-source models to extend budget",
-        "summary": "随着前沿模型token成本上升、订阅利用率压缩盈利空间，企业开始寻找中国大模型和开源模型等更便宜方案来延长AI预算。",
+        "summary": "随着前沿模型token成本上涨、订阅利用率压缩利润，企业开始寻找更便宜的中国大模型和开源替代方案来延长AI预算。",
         "rating": "A",
-        "score": 81,
+        "score": 82,
         "type": "financial",
         "typeName": "商业数据",
         "expansion": "可继续观察OpenAI、Anthropic订阅定价是否调整，以及中国模型、开源模型和模型路由服务在企业采购中的替代速度。",
         "entities": [
-          "Ai成本",
+          "Ai订阅",
           "Anthropic",
           "OpenAI",
           "中国大模型",
@@ -12658,21 +12699,23 @@
         "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-costs-spike-as-subscriptions-hit-pricing-wall-firms-turn-towards-chinese-llms-open-source-models-to-extend-budget",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "Companies look for cheaper alternatives as token costs for frontier AI models skyrocket, potentially impacting OpenAI and Anthropic's bottom lines. Subscriptions also take a bite out of these startup's profitability, as utilization rates higher than 5.7% could lead to losses.",
+        "extension": "成本压力可能削弱OpenAI和Anthropic高价订阅空间，也会给开源模型、国产模型和模型路由服务带来更强商业机会。"
       },
       {
         "id": "748905b21bf8e8c1f8e3bbc951d93905",
-        "title": "苹果原生AI修图让iPhone照片进入新阶段",
-        "chinese_title": "苹果原生AI修图让iPhone照片进入新阶段",
+        "title": "苹果把原生AI修图带进iPhone相册",
+        "chinese_title": "苹果把原生AI修图带进iPhone相册",
         "original_title": "Apple&rsquo;s new AI photo editing tools mostly work, for better and worse",
-        "summary": "苹果在iOS 27中为iPhone照片应用加入更完整的原生AI编辑能力，虽然相比Pixel仍偏克制，但标志着大众相册开始默认具备生成式修图能力。",
+        "summary": "苹果在iOS 27开发者测试版中加入原生AI照片编辑能力，虽然功能相对克制，却让iPhone默认相册首次进入严肃AI修图阶段。",
         "rating": "A",
-        "score": 76,
+        "score": 72,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "该更新会影响手机影像竞争、真实照片可信度和社交平台内容识别规则，也可能迫使Google、三星继续加码端侧AI修图。",
         "entities": [
-          "Ai修图",
+          "Ai照片编辑",
           "Apple",
           "Google Pixel",
           "Ios",
@@ -12690,25 +12733,28 @@
         "source": "The Verge -  Tech Posts (apple)",
         "url": "https://www.theverge.com/tech/949360/apple-ai-photo-edit-reframe-extend-clean-up-hands-on",
         "event_id": null,
-        "grade": "A",
-        "level": "A"
+        "grade": "B",
+        "level": "A",
+        "original_content": "iPhone owners are getting real, native AI photo editing for the first time. The most popular camera in the world just got its first set of serious AI photo editing features, and I don't think any of us are ready. As far as AI photo editing goes, the new features in iOS 27 are pretty tame compared to what you can do on, say, Google's Pixel phones. But for the iPhone, they represent a tipping point in what the native photos app allows you to do to your photos. I mean memories . I mean, I don't know anymore. These new features are part of the iOS 27 developer beta right now, so bear in mind that Apple may continue making tweaks to them before they're released to the general public. There are three, or maybe two and a … Read the full story at The Verge.",
+        "extension": "当AI修图进入默认相册，普通用户对图像真实性的判断会更困难，也会倒逼社交平台和相机生态强化来源标记。"
       },
       {
         "id": "11e351c2c40ab5f18f41a5f6c1ccc850",
-        "title": "地下真菌网络总长度可延伸出太阳系",
-        "chinese_title": "地下真菌网络总长度可延伸出太阳系",
+        "title": "全球地下真菌网络首次被机器学习绘制",
+        "chinese_title": "全球地下真菌网络首次被机器学习绘制",
         "original_title": "Threads of underground fungal networks are long enough to reach beyond the Solar System",
-        "summary": "Science新研究估算全球丛枝菌根真菌网络长达11京公里，这些地下菌丝帮助植物交换养分与碳，揭示陆地生态系统中被低估的巨大基础设施。",
+        "summary": "研究团队估算全球丛枝菌根真菌网络长达110千万亿公里，并通过文献、土壤样本、机器学习和实验首次绘制其全球分布。",
         "rating": "B",
-        "score": 70,
+        "score": 76,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "可延伸到碳循环、农业土壤修复和生态建模，尤其是地下生物网络如何影响气候模型和未来自然碳汇评估。",
         "entities": [
           "Science",
-          "丛枝菌根真菌",
-          "植物根系",
-          "碳循环"
+          "Spun",
+          "机器学习",
+          "碳汇",
+          "菌根真菌"
         ],
         "sourceLinks": [
           {
@@ -12722,17 +12768,19 @@
         "source": "Ars Technica » Scientific Method",
         "url": "https://arstechnica.com/science/2026/06/threads-of-underground-fungal-networks-are-long-enough-to-reach-beyond-the-solar-system/",
         "event_id": null,
-        "grade": "B",
-        "level": "B"
+        "grade": "A",
+        "level": "B",
+        "original_content": "Hidden underground around the world lie 110 quadrillion kilometers of arbuscular mycorrhizal fungal networks—webs of ultra-thin threads that, if connected in a single line, would stretch almost a billion times the distance between the Earth and the sun, according to new research published in Science on Thursday. These fungal communities form intimate relationships with the roots of plants, which they provide with nutrients like phosphorus and nitrogen in exchange for carbon, 1 billion tons of which the networks sequester underground annually, previous research has found. If the fungal network wasn’t storing it, that carbon would be warming the atmosphere. But those networks have never been mapped globally until now. The new study led by Society for the Protection of Underground Networks , or SPUN, an organization founded to map mycorrhizal fungi networks, used a combination of literature review, soil samples from around the globe, machine learning and laboratory testing to estimate the distribution and mass of these systems and map where they are densest. Read full article Comments",
+        "extension": "这类生态基础设施地图可延伸到碳汇评估、土壤保护和气候模型，也显示AI方法正在进入更复杂的地球系统研究。"
       },
       {
         "id": "abbd0d3e409884e94ec6dc3e67a3eb17",
-        "title": "特斯拉Robotaxi承诺落空遭集中质疑",
-        "chinese_title": "特斯拉Robotaxi承诺落空遭集中质疑",
+        "title": "特斯拉Robotaxi扩张远低于马斯克承诺",
+        "chinese_title": "特斯拉Robotaxi扩张远低于马斯克承诺",
         "original_title": "Tesla’s Robotaxis Are a Complete Disaster",
-        "summary": "Futurism梳理马斯克对Robotaxi规模化落地的多次承诺，认为特斯拉自动驾驶出租车进展远低于预期，与此前关于车队规模和时间表的说法形成反差。",
+        "summary": "报道称特斯拉Robotaxi规模仅有59辆，部分车辆仍需人工监督，扩张到奥斯汀以外市场受阻，与马斯克此前激进目标差距明显。",
         "rating": "B",
-        "score": 72,
+        "score": 86,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "后续可关注自动驾驶监管、Robotaxi商业化时间表和投资者预期修正，也能对比Waymo等玩家的实际运营数据。",
@@ -12755,8 +12803,10 @@
         "source": "Futurism",
         "url": "https://futurism.com/advanced-transport/teslas-robotaxis-disaster",
         "event_id": null,
-        "grade": "B",
-        "level": "B"
+        "grade": "A",
+        "level": "B",
+        "original_content": "Elon Musk, in trademark fashion, has made grand promises about Tesla’s Robotaxi efforts. Before he launched the service last summer, he proclaimed that over 1,000 of the self-driving cabs would be roaming the city streets “within a few months.” He also said that one million self-driving Teslas using the Robotaxi software would be roaming the country by the end of 2026. In an earnings call after the launch, Musk upped the ante even further. “We’ll probably have autonomous ride-hailing in about half the population of the US by the end of the year,” he predicted. Needless to say, Musk’s service is drastically short of living up to any of these ambitions. There are just 59 Robotaxis on the road, Bloomberg reports , with at least some of them still requiring physical human supervision . Its efforts to expand past its home base in Austin, Texas are floundering, with the company forced to admit to California state regulators that its self-driving cabs don’t actually drive themselves, according to the reporting. This incremental progress would be permissible at a smaller company. But Musk has persistently wooed investors with his sci-fi vision of the company’s future, keeping its stock buoyant and driving its market cap well past the $1 trillion mark. (Even this is a let down: when he announced a Robotaxi pivot in 2024, Musk projected it would help push Tesla’s valuation to $30 trillion. That is not a typo.) The monstrous hype has put Tesla in a paradoxical position: the business side of things looks more precarious than ever, with cratering profits and a plunging public image, but its market valuation has soared. Musk has defended the slow progress by stressing the company is “paranoid about safety.” There’s an element of truth to this, given the tiny fleet size and that many of the Robotaxi rides remain supervised by human workers. But on the other hand, Musk is clearly willing to casually overstate the capabilities of his tech to keep stringing along Wall Street. “Tesla, which by all indications is a confident company run by a supremely confident person, is clearly not confident in the reliability of their technologies,” Bryant Walker Smith, an autonomous vehicles researcher and associate professor of law at the University of South Carolina, told Bloomberg . “The scale of this is very small.” The picture on the ground painted by Bloomberg echoes the complaints raised by customers ever since the Robotaxi service was opened up to the public, after it was initially limited to a cadre of uncritical Tesla influencers. Wait times frequently stretch up to 30 minutes, even in Austin, where most of the Robotaxis are deployed, with the app often barring users from booking rides during periods of “high service demand.” And the cars behave erratically, picking up and dropping off customers at bizarre and inconvenient locations, such as in an alley. Around one in three of the rides have a human monitor sitting in the car, whose presence seems mostly perfunctory; one rider complained that his Robotaxi dropped him a quarter mile from his actual destination, despite a monitor being in the car. All the while, there’s been a frustrating element of smoke and mirrors surrounding the Robotaxi efforts. Until now, Tesla’s didn’t disclose official figures on the size of its fleet and has belatedly reported Robotaxi crashes to regulators , heavily censoring the circumstances of the accidents. In January, when Musk announced that the Robotaxis would finally start giving rides in Austin with a human supervisor in the car, it soon emerged that this was yet more sleight-of-hand: the rides were still being supervised by having another human-driven car tailing the Teslas. More on Tesla: Tesla Insiders Admit Self-Driving Is a Complete Disaster The post Tesla’s Robotaxis Are a Complete Disaster appeared first on Futurism .",
+        "extension": "Robotaxi落地不及预期会影响特斯拉自动驾驶叙事、监管沟通和估值逻辑，也会给Waymo等竞品提供对比窗口。"
       },
       {
         "id": "8ca02b7318078fccb340cb6646a6ca4a",
@@ -13502,6 +13552,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-13T21:16:54.779743",
-  "total_news": 399
+  "last_updated": "2026-06-13T21:20:55.986678",
+  "total_news": 400
 }
