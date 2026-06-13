@@ -12467,22 +12467,115 @@
     ],
     "2026-06-13": [
       {
-        "id": "07d8c5fd66f334b3f9fb0c80d7dcbf7d",
-        "title": "美政府拟限制Anthropic最强模型出口",
-        "chinese_title": "美政府拟限制Anthropic最强模型出口",
-        "original_title": "Source: Howard Lutnick told Anthropic that Mythos 5 and Fable 5 would be subject to export controls after a company claimed it was able to jailbreak Mythos (Axios)",
-        "summary": "据称美国商务部长告知Anthropic，其Mythos和Fable系列最先进模型将受到出口管制，理由包括相关模型被证明存在越狱风险，海外访问或将被进一步限制。",
+        "id": "0d50abf53e15153e6728e39912bf787c",
+        "title": "美国出口管制波及Anthropic两款模型",
+        "chinese_title": "美国出口管制波及Anthropic两款模型",
+        "original_title": "Anthropic says it is disabling Fable 5 and Mythos 5 for all customers after the US government issued an export control order, citing national security concerns (Anthropic)",
+        "summary": "Anthropic称，因美国政府以国家安全为由发布出口管制指令，公司将暂停所有客户访问Fable 5和Mythos 5，先进模型供应链与跨境AI服务风险进一步升温。",
         "rating": "A+",
-        "score": 87,
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件会把先进AI模型纳入更明确的出口管制讨论，后续可追踪云服务、海外企业客户和开源/闭源模型策略是否同步收紧。",
+        "entities": [
+          "Anthropic",
+          "Fable",
+          "Mythos",
+          "出口管制",
+          "美国政府"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260612/p31#a260612p31"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781313689,
+        "published_at": "2026-06-13T09:21:29.056234",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260612/p31#a260612p31",
+        "event_id": null
+      },
+      {
+        "id": "4570f8a3ed41db32ce8bef14cb0d1190",
+        "title": "OpenAI因用户互动问题遭州检察长调查",
+        "chinese_title": "OpenAI因用户互动问题遭州检察长调查",
+        "original_title": "OpenAI Investigated by State Attorneys General on User Interaction",
+        "summary": "多州检察长向OpenAI发出传票，要求提供ChatGPT对用户影响、广告、用户参与和消费者投诉处理等材料，监管焦点正从模型能力扩展到产品交互机制。",
+        "rating": "A+",
+        "score": 90,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这可能推动AI聊天产品在用户黏性、未成年人保护、广告披露和心理影响评估上接受更细监管，也会影响竞品合规设计。",
+        "entities": [
+          "Ai监管",
+          "GPT",
+          "OpenAI",
+          "州检察长",
+          "用户互动"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/openai-investigated-state-attorneys-general-user-interaction"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781313689,
+        "published_at": "2026-06-13T09:21:29.056261",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/openai-investigated-state-attorneys-general-user-interaction",
+        "event_id": null
+      },
+      {
+        "id": "3798f4e2f03c399df57f3bbec22df011",
+        "title": "Simon Willison称Claude Fable异常主动",
+        "chinese_title": "Simon Willison称Claude Fable异常主动",
+        "original_title": "Claude Fable is relentlessly proactive",
+        "summary": "Simon Willison基于两天体验评价Claude Fable 5，认为其在完成目标时会非常主动地调用各种技巧，这为智能体产品的能力边界和可控性提供了新的观察样本。",
+        "rating": "A",
+        "score": 82,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可延展到智能体产品从被动问答走向主动执行后的安全边界、开发者体验和工具调用治理，适合作为模型行为观察稿。",
+        "entities": [
+          "Claude",
+          "Datasette Agent",
+          "Fable",
+          "Simon Willison",
+          "智能体"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Simon Willison’s Newsletter",
+            "url": "https://simonw.substack.com/p/claude-fable-is-relentlessly-proactive"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781313689,
+        "published_at": "2026-06-13T09:21:29.056281",
+        "source": "Simon Willison’s Newsletter",
+        "url": "https://simonw.substack.com/p/claude-fable-is-relentlessly-proactive",
+        "event_id": null
+      },
+      {
+        "id": "07d8c5fd66f334b3f9fb0c80d7dcbf7d",
+        "title": "美国据称因越狱风险封锁Anthropic模型",
+        "chinese_title": "美国据称因越狱风险封锁Anthropic模型",
+        "original_title": "Source: the US Commerce Department decided to block foreign persons from accessing Fable 5 and Mythos 5 after a company claimed it was able to jailbreak Mythos (Axios)",
+        "summary": "Axios消息称，美国商务部决定阻止外国主体访问Anthropic的Fable 5和Mythos 5，背景是一家公司声称能够越狱Mythos，模型安全与出口控制首次被更紧密绑定。",
+        "rating": "A+",
+        "score": 86,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这条线索可延伸到AI模型出口管制从芯片层向模型层扩张，以及美国AI公司海外收入、合规部署和主权AI市场格局的变化。",
         "entities": [
           "Anthropic",
           "Fable",
-          "Howard Lutnick",
           "Mythos",
-          "出口管制"
+          "模型越狱",
+          "美国商务部"
         ],
         "sourceLinks": [
           {
@@ -12496,8 +12589,10 @@
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260612/p30#a260612p30",
         "event_id": null,
-        "grade": "A+",
-        "level": "A+"
+        "grade": "A",
+        "level": "A+",
+        "original_content": "Axios : Source: the US Commerce Department decided to block foreign persons from accessing Fable 5 and Mythos 5 after a company claimed it was able to jailbreak Mythos — The Trump administration is blocking foreign governments, companies and individuals from accessing Anthropic's most advanced AI models.",
+        "extension": "后续看点是越狱能力是否会成为先进模型出口门槛，以及Anthropic、OpenAI等公司如何调整海外客户访问和安全评估流程。"
       },
       {
         "id": "ad329f39f45a4872ed21792eb1179d96",
@@ -12603,6 +12698,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-13T08:03:10.655369",
-  "total_news": 372
+  "last_updated": "2026-06-13T09:22:09.233928",
+  "total_news": 375
 }
