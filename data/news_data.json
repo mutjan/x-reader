@@ -12467,21 +12467,52 @@
     ],
     "2026-06-13": [
       {
-        "id": "ad329f39f45a4872ed21792eb1179d96",
-        "title": "OpenAI遭多州总检察长传唤取证",
-        "chinese_title": "OpenAI遭多州总检察长传唤取证",
-        "original_title": "Sources: OpenAI was subpoenaed on Friday by a coalition of state AGs for documents covering a wide range of its activities and impact on users (Wall Street Journal)",
-        "summary": "据报道，美国多个州总检察长组成联盟，已向OpenAI发出传票，要求提交覆盖业务活动及对用户影响等广泛范围的文件。",
+        "id": "07d8c5fd66f334b3f9fb0c80d7dcbf7d",
+        "title": "美政府拟限制Anthropic最强模型出口",
+        "chinese_title": "美政府拟限制Anthropic最强模型出口",
+        "original_title": "Source: Howard Lutnick told Anthropic that Mythos 5 and Fable 5 would be subject to export controls after a company claimed it was able to jailbreak Mythos (Axios)",
+        "summary": "据称美国商务部长告知Anthropic，其Mythos和Fable系列最先进模型将受到出口管制，理由包括相关模型被证明存在越狱风险，海外访问或将被进一步限制。",
         "rating": "A+",
-        "score": 90,
+        "score": 87,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这条线索可延伸到AI模型出口管制从芯片层向模型层扩张，以及美国AI公司海外收入、合规部署和主权AI市场格局的变化。",
+        "entities": [
+          "Anthropic",
+          "Fable",
+          "Howard Lutnick",
+          "Mythos",
+          "出口管制"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260612/p30#a260612p30"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781308968,
+        "published_at": "2026-06-13T08:02:48.680018",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260612/p30#a260612p30",
+        "event_id": null
+      },
+      {
+        "id": "ad329f39f45a4872ed21792eb1179d96",
+        "title": "OpenAI遭多州总检察长联盟传唤",
+        "chinese_title": "OpenAI遭多州总检察长联盟传唤",
+        "original_title": "Sources: OpenAI was subpoenaed on Friday by a coalition of state AGs for documents covering a wide range of its activities and impact on users (Wall Street Journal)",
+        "summary": "据称美国多个州总检察长组成的联盟已向OpenAI发出传票，要求其提交覆盖业务活动及对用户影响的多类文件，监管审查范围进一步扩大。",
+        "rating": "A+",
+        "score": 91,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "事件可能推动美国州级监管进一步介入AI公司治理，也会影响OpenAI在用户安全、数据使用、未成年人保护等议题上的披露压力。",
         "entities": [
           "Ai监管",
           "OpenAI",
-          "Wall Street Journal",
-          "美国州总检察长"
+          "州总检察长",
+          "用户影响"
         ],
         "sourceLinks": [
           {
@@ -12496,14 +12527,16 @@
         "url": "https://www.techmeme.com/260612/p29#a260612p29",
         "event_id": null,
         "grade": "A+",
-        "level": "A+"
+        "level": "A+",
+        "original_content": "Wall Street Journal : Sources: OpenAI was subpoenaed on Friday by a coalition of state AGs for documents covering a wide range of its activities and impact on users — Company subpoenaed for documents covering wide range of its activities and impact on users — A coalition of state attorneys general has opened …",
+        "extension": "该事件可延伸到美国州级监管对AI平台的介入方式，以及用户保护、未成年人影响、模型透明度与企业合规成本的后续变化。"
       },
       {
         "id": "31c2f242cf54c2c682ceab942af1a41a",
-        "title": "SpaceX上市后估值逼近1.8万亿美元",
-        "chinese_title": "SpaceX上市后估值逼近1.8万亿美元",
+        "title": "SpaceX上市首日市值逼近1.8万亿美元",
+        "chinese_title": "SpaceX上市首日市值逼近1.8万亿美元",
         "original_title": "SpaceX is now a public company valued for its AI potential, so what comes next?",
-        "summary": "Ars Technica报道称，SpaceX以每股135美元登陆纳斯达克，首日收涨逾19%，市场将其卫星、航天和AI潜力一起纳入估值叙事。",
+        "summary": "Ars Technica报道称SpaceX已在纳斯达克上市，首日股价大涨并被市场按AI潜力重新定价，马斯克及员工持股价值随之大幅上升。",
         "rating": "S",
         "score": 94,
         "type": "financial",
@@ -12528,14 +12561,16 @@
         "url": "https://arstechnica.com/space/2026/06/spacex-is-now-a-public-company-valued-for-its-ai-potential-so-what-comes-next/",
         "event_id": null,
         "grade": "S",
-        "level": "S"
+        "level": "S",
+        "original_content": "Space Exploration Technologies, better known simply as SpaceX, became a publicly traded company on Friday nearly a quarter of a century after it was founded. The company began trading on the Nasdaq exchange in New York City at $135 a share, valuing SpaceX at nearly $1.8 trillion. By the end of the trading day the company's shares were selling at $160.95, a respectable increase of more than 19 percent. On paper, SpaceX founder Elon Musk became the world's first trillionaire, with his personal stake in the company valued at more than $700 billion. Because of the company's stock options plan, thousands of current and former employees became overnight millionaires . Employees at SpaceX have worked remarkably hard over the last 24 years, and now they will be richly compensated for having done so. Read full article Comments",
+        "extension": "这条线索可追踪资本市场如何把航天、卫星互联网、机器人与AI基础设施叙事合并定价，并观察特斯拉、xAI及商业航天产业链的联动。"
       },
       {
         "id": "320e07c4e4ff3879bd2c85baff4f8f76",
-        "title": "苹果Swift迁移TrueType提示解释器",
-        "chinese_title": "苹果Swift迁移TrueType提示解释器",
+        "title": "苹果讲述TrueType解释器迁移到Swift",
+        "chinese_title": "苹果讲述TrueType解释器迁移到Swift",
         "original_title": "Swift at Apple: Migrating the TrueType hinting interpreter",
-        "summary": "Swift官方博客介绍了将TrueType hinting解释器迁移到Swift的过程，展示苹果生态在底层字体渲染组件上继续推进Swift化。",
+        "summary": "Swift官方博客介绍苹果如何将TrueType字体hinting解释器迁移到Swift，展示系统底层组件用现代语言重写时的兼容性、安全性与工程取舍。",
         "rating": "B",
         "score": 70,
         "type": "tool",
@@ -12560,10 +12595,12 @@
         "url": "https://www.swift.org/blog/migrating-truetype-hinting-to-swift/",
         "event_id": null,
         "grade": "B",
-        "level": "B"
+        "level": "B",
+        "original_content": "Comments",
+        "extension": "可延伸到苹果在系统底层扩大Swift使用范围，以及内存安全语言替代C/C++组件对平台安全和开发者生态的长期影响。"
       }
     ]
   },
-  "last_updated": "2026-06-13T07:59:25.943746",
-  "total_news": 371
+  "last_updated": "2026-06-13T08:03:10.655369",
+  "total_news": 372
 }
