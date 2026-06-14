@@ -2,68 +2,6 @@
   "news": {
     "2026-06-15": [
       {
-        "id": "b8a390671edff8304e4836afecf9c259",
-        "title": "Anthropic模型暂停引发安全治理争议",
-        "chinese_title": "Anthropic模型暂停引发安全治理争议",
-        "original_title": "Did Anthropic Ask for This?",
-        "summary": "围绕Claude Fable 5和Mythos 5暂停访问的讨论继续发酵，外界质疑Anthropic与政府安全规则之间的边界是否透明。",
-        "rating": "B",
-        "score": 71,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这一事件可延伸到前沿模型访问分层、政府参与AI安全治理、商业发布与安全承诺之间的张力。",
-        "entities": [
-          "Ai安全",
-          "Anthropic",
-          "Claude",
-          "Fable",
-          "Mythos"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.verysane.ai/p/did-anthropic-ask-for-this"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781478149,
-        "published_at": "2026-06-15T07:02:29.392314",
-        "source": "Hacker News",
-        "url": "https://www.verysane.ai/p/did-anthropic-ask-for-this",
-        "event_id": null
-      },
-      {
-        "id": "726f24686376662685b29d4608afabe4",
-        "title": "Bram Cohen批评Claude安全限制过度",
-        "chinese_title": "Bram Cohen批评Claude安全限制过度",
-        "original_title": "Why Is Claude Turning into an a**Hole?",
-        "summary": "BitTorrent创始人Bram Cohen撰文批评Claude在安全问题上的强硬拒答策略，认为单纯让模型变得难用无法真正解决漏洞风险。",
-        "rating": "B",
-        "score": 73,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可继续观察开发者社区对高能力模型安全降级的反弹，以及模型厂商在网络安全能力开放上的产品取舍。",
-        "entities": [
-          "Ai安全",
-          "Anthropic",
-          "Bram Cohen",
-          "Claude",
-          "网络安全"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://bramcohen.com/p/why-is-claude-turning-into-an-asshole"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781478149,
-        "published_at": "2026-06-15T07:02:29.392341",
-        "source": "Hacker News",
-        "url": "https://bramcohen.com/p/why-is-claude-turning-into-an-asshole",
-        "event_id": null
-      },
-      {
         "id": "1010a12e32c9223d57af9ba925367970",
         "title": "Anthropic安全立场与商业化矛盾受关注",
         "chinese_title": "Anthropic安全立场与商业化矛盾受关注",
@@ -92,7 +30,9 @@
         "published_at": "2026-06-15T07:02:29.392360",
         "source": "The Information",
         "url": "https://www.theinformation.com/articles/anthropics-contradiction-risks-buying-spacex-stock-now",
-        "event_id": null
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
       },
       {
         "id": "b3f31e072b1eb30245e4c4ef3bc644be",
@@ -136,7 +76,7 @@
         "chinese_title": "Lucky Robots推出机器人专用游戏引擎",
         "original_title": "The first game engine for robotics",
         "summary": "Lucky Robots发布面向机器人AI训练的Lucky Engine，主打在虚拟世界中生成大规模物理仿真数据，再迁移到真实机器人任务。",
-        "rating": "B",
+        "rating": "A",
         "score": 79,
         "type": "product",
         "typeName": "产品发布",
@@ -161,7 +101,7 @@
         "url": "https://luckyrobots.com/",
         "event_id": null,
         "grade": "A",
-        "level": "B",
+        "level": "A",
         "original_content": "Comments",
         "extension": "可延伸到机器人仿真平台竞争、具身智能数据生成成本下降，以及MuJoCo、LeRobot生态与商业工具链的结合。"
       },
@@ -7709,7 +7649,9 @@
         "published_at": "2026-06-15T07:02:29.392375",
         "source": "Hacker News",
         "url": "https://github.com/meta-pytorch/torchcodec/releases/tag/v0.14.0",
-        "event_id": null
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
       },
       {
         "id": "6852aa1658a745ca4b01c7056bbce3b2",
@@ -15462,6 +15404,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-15T07:02:53.389686",
+  "last_updated": "2026-06-15T07:03:52.719637",
   "total_news": 454
 }
