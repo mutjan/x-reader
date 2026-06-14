@@ -2,6 +2,37 @@
   "news": {
     "2026-06-12": [
       {
+        "id": "38291e69401c261353e52a18aae77513",
+        "title": "开发者筹建Rust边缘语义缓存项目",
+        "chinese_title": "开发者筹建Rust边缘语义缓存项目",
+        "original_title": "Building an Open Source Edge Semantic Cache for LLMs in Rust/WASM – Sanity check on the architecture? [D]",
+        "summary": "有开发者计划用Rust和WASM构建开源边缘语义缓存，试图降低高并发LLM应用中的网关延迟、跨区域访问延迟和重复调用成本。",
+        "rating": "B",
+        "score": 68,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸到LLM基础设施从中心化网关走向边缘缓存，以及语义缓存如何影响实时智能体和企业API成本结构。",
+        "entities": [
+          "Llm基础设施",
+          "Rust",
+          "Wasm",
+          "语义缓存",
+          "边缘计算"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1u3quwk/building_an_open_source_edge_semantic_cache_for/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781409783,
+        "published_at": "2026-06-14T12:03:03.755880",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1u3quwk/building_an_open_source_edge_semantic_cache_for/",
+        "event_id": null
+      },
+      {
         "id": "0567101cc5cba20923091835ee6cebaf",
         "title": "SpaceX上市或把马斯克推向万亿身家",
         "chinese_title": "SpaceX上市或把马斯克推向万亿身家",
@@ -2941,13 +2972,74 @@
         "original_url": "https://www.theinformation.com/briefings/spacex-prices-ipo-135-per-share-starts-trading-friday"
       }
     ],
-    "2026-06-11": [
+    "2026-06-14": [
+      {
+        "id": "10fea296692446ec6ceb2c596e33f8c6",
+        "title": "美方管制Anthropic引发模型下架风波",
+        "chinese_title": "美方管制Anthropic引发模型下架风波",
+        "original_title": "US officials: the Trump administration's decision to impose export controls on Anthropic followed multiple tense calls between Dario Amodei and admin officials (Politico)",
+        "summary": "美国政府对Anthropic实施出口管制，导火索被指是Dario Amodei与官员多次紧张通话，新模型Fable公开数日后被迫撤回。",
+        "rating": "A+",
+        "score": 88,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这一事件可继续追踪美国AI出口管制如何从芯片扩展到模型能力本身，以及印度等海外市场是否会加速推动本土大模型替代。",
+        "entities": [
+          "Anthropic",
+          "Dario Amodei",
+          "Fable",
+          "出口管制",
+          "美国政府"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260613/p17#a260613p17"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781409783,
+        "published_at": "2026-06-14T12:03:03.755794",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260613/p17#a260613p17",
+        "event_id": null
+      },
+      {
+        "id": "889f9697b8f68f419176c1aa4676992b",
+        "title": "Anthropic限访问让印度重估AI自主路线",
+        "chinese_title": "Anthropic限访问让印度重估AI自主路线",
+        "original_title": "As Anthropic suspends access to new models, India debates its AI future",
+        "summary": "Anthropic暂停部分新模型访问后，印度科技圈开始讨论这是否暴露了依赖海外闭源模型的风险，并重新审视本土AI能力建设。",
+        "rating": "A",
+        "score": 79,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸到印度AI主权、政府采购和本土模型生态建设，也能观察美国模型管制对全球开发者市场的外溢影响。",
+        "entities": [
+          "Ai主权",
+          "Anthropic",
+          "LLM",
+          "印度"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781409783,
+        "published_at": "2026-06-14T12:03:03.755822",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/",
+        "event_id": null
+      },
       {
         "id": "a558889a745bd35855b99b44d8d49fc6",
-        "title": "视频自适应Token化新方法减少冗余计算",
-        "chinese_title": "视频自适应Token化新方法减少冗余计算",
+        "title": "新论文用时间冗余降低视频Token开销",
+        "chinese_title": "新论文用时间冗余降低视频Token开销",
         "original_title": "Adaptive Tokenisation Via Temporal Redundancy Masking And Latent Inpainting [R]",
-        "summary": "一篇论文提出利用冻结视频tokenizer潜空间中的时间冗余，直接丢弃低信息量位置，从而实现无参数的自适应视频token分配。",
+        "summary": "一篇论文提出利用冻结视频tokenizer潜空间中的时间冗余，自适应分配视频Token预算，减少传统搜索或神经回归器带来的额外计算。",
         "rating": "B",
         "score": 69,
         "type": "research",
@@ -2955,9 +3047,10 @@
         "expansion": "可延伸到视频生成、多模态模型推理成本优化，以及长视频理解中的token预算控制。",
         "entities": [
           "Arxiv",
-          "Latent Inpainting",
           "多模态模型",
-          "视频Token化"
+          "时间冗余",
+          "潜空间",
+          "视频Tokenization"
         ],
         "sourceLinks": [
           {
@@ -2972,24 +3065,27 @@
         "url": "https://www.reddit.com/r/MachineLearning/comments/1u2u9bb/adaptive_tokenisation_via_temporal_redundancy/",
         "event_id": null,
         "grade": "B",
-        "level": "B"
+        "level": "B",
+        "original_content": "link - https://arxiv.org/abs/2606.06158 Abstract : Adaptive video tokenisation seeks to dynamically allocate token budgets based on the underlying visual complexity of a sequence. Current continuous-regime approaches achieve this via iterative binarised searches or trained neural regressors, while discrete methods often require a full-rate decoder pass to estimate information content. We demonstrate that such computational overheads are not strictly necessary. We show that the latent space of a frozen continuous video tokeniser inherently encodes temporal redundancy that can be exploited directly: spatial positions whose latent representations change minimally between consecutive frames carry near-zero additional information. We introduce a parameter-free adaptive token allocation mechanism that applies a fixed threshold to per-position temporal-L1 differences, identifying and dropping redundant latent positions. Consequently, the compression rate emerges naturally from the input content rather than being enforced top-down: static scenes get compressed aggressively, while highly dynamic sequences retain more tokens. To reconstruct the dropped positions, we propose the Latent Inpainting Transformer (LIT), a lightweight factorised spatial-temporal attention architecture. The resulting inference pipeline is highly efficient, requiring only a single encoder pass and one LIT forward pass, eliminating the need for auxiliary routing networks. Evaluations across TokenBench and DAVIS, which are the standard benchmarks used by recent tokenisers, indicate that our framework yields meaningful, content-driven token allocation while maintaining competitive reconstruction fidelity, and delivers a 31x inference-time speedup over the continuous adaptive baseline (ElasticTok-CV) and an 2x speedup over the discrete information-theoretic baseline (InfoTok) submitted by /u/chhaya_35 [link] [comments]",
+        "extension": "这一方向可关注视频生成、视频理解和多模态模型的推理成本优化，尤其是长视频场景下Token预算动态分配。"
       },
       {
         "id": "26ff2034b3ac350c8136c26ea7639bf1",
-        "title": "Anthropic撤回静默削弱Claude能力做法",
-        "chinese_title": "Anthropic撤回静默削弱Claude能力做法",
+        "title": "Anthropic撤回静默降级策略改为明示",
+        "chinese_title": "Anthropic撤回静默降级策略改为明示",
         "original_title": "Anthropic walks back policy on silent nerfing for AI/ML, will notify users [N]",
-        "summary": "Anthropic回应争议称将让Claude面向前沿模型开发的安全限制对用户可见，不再以静默方式降级或改道相关请求。",
+        "summary": "Anthropic承认Fable 5在前沿AI开发防护上的取舍不当，表示未来会向用户明示拒绝或路由到低能力模型等安全措施。",
         "rating": "A+",
-        "score": 89,
+        "score": 90,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "可继续追踪模型安全策略的透明度争议，以及AI公司如何在防滥用、研究自由和用户信任之间重新取舍。",
         "entities": [
-          "Ai安全",
           "Anthropic",
           "Claude",
-          "Wired"
+          "Fable",
+          "模型安全",
+          "透明度"
         ],
         "sourceLinks": [
           {
@@ -3004,8 +3100,218 @@
         "url": "https://www.reddit.com/r/MachineLearning/comments/1u2tk0i/anthropic_walks_back_policy_on_silent_nerfing_for/",
         "event_id": null,
         "grade": "A+",
-        "level": "A+"
+        "level": "A+",
+        "original_content": "From Wired: “We’re changing Fable 5’s safeguards for frontier LLM development to make them visible.” Anthropic said in a statement to WIRED. “We made the wrong tradeoff and we apologize for not getting the balance right.” Anthropic now says it’s changing course, and that Claude Fable 5’s safeguards for AI development will be visible to users. If the company suspects a user is trying to use Claude to build a highly capable AI it will alert them that it’s either refusing the request, or rerouting the user to a less capable model. Full article: https://www.wired.com/story/anthropic-responds-to-backlash-on-claudes-secret-sabotage-on-ai-research/ submitted by /u/goldcakes [link] [comments]",
+        "extension": "可继续追踪模型供应商在安全防护与用户透明度之间的平衡，以及企业客户对静默降级、模型路由和能力可预期性的反应。"
       },
+      {
+        "id": "b3d265ae7163143b674b90e1c06d3f4e",
+        "title": "工具型智能体验证成本难题被量化",
+        "chinese_title": "工具型智能体验证成本难题被量化",
+        "original_title": "The Verifier Tax: Horizon-Dependent Safety–Success Tradeoffs in Tool-Using LLM Agents [R]",
+        "summary": "ACM CAIS 2026论文提出工具型LLM智能体不能只看任务完成率，还要区分安全成功、违规成功和失败，并研究验证器带来的效率取舍。",
+        "rating": "B",
+        "score": 81,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可继续观察智能体评测指标从任务完成率转向安全成功率，对企业级Agent部署和合规审查都有参考价值。",
+        "entities": [
+          "Acm Cais",
+          "Ai安全",
+          "Llm智能体",
+          "Tau-Bench",
+          "验证器"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1u58mkq/the_verifier_tax_horizondependent_safetysuccess/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781406221,
+        "published_at": "2026-06-14T11:03:41.407998",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1u58mkq/the_verifier_tax_horizondependent_safetysuccess/",
+        "event_id": null,
+        "grade": "A",
+        "level": "B",
+        "original_content": "We recently presented a paper at ACM CAIS 2026 on safety evaluation for tool-using LLM agents. The core issue is that task completion alone can be misleading: an agent may complete a task while violating a safety or policy constraint. We separate outcomes into safe success , unsafe success , and failure , and study how verification changes this tradeoff. We evaluate this using τ-bench / Tau-bench tool-use scenarios and propose a two-tier verification architecture : deterministic policy/tool checks first, followed by an LLM-based verifier for more contextual safety cases. The main finding is that verification can reduce unsafe success, but it can also reduce task completion as the task horizon increases. This creates what we call the Verifier Tax : a horizon-dependent safety–success tradeoff in tool-using agents. Paper: https://dl.acm.org/doi/full/10.1145/3786335.3813160 Curious how others think agent evaluations should report unsafe success. Should unsafe completion be counted as success, failure, or a separate category? submitted by /u/AccomplishedLeg1508 [link] [comments]",
+        "extension": "可继续关注智能体评测从能力指标转向安全约束指标，尤其是企业部署中确定性规则与LLM验证器的组合架构。"
+      },
+      {
+        "id": "b9d05ee81b051ee49c578f256875bab9",
+        "title": "OpenAI遭美国多州检察长联合调查",
+        "chinese_title": "OpenAI遭美国多州检察长联合调查",
+        "original_title": "State Attorneys General Are Investigating OpenAI",
+        "summary": "美国多州检察长围绕ChatGPT对未成年人和脆弱用户的影响、数据处理、用户留存和安全措施等问题调查OpenAI，AI公司面临更强监管压力。",
+        "rating": "S",
+        "score": 96,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这会把AI聊天产品的安全责任从公司自律推向州级执法，后续可能影响OpenAI上市进程、未成年人保护设计和整个AI行业的合规成本。",
+        "entities": [
+          "Ai安全",
+          "GPT",
+          "OpenAI",
+          "美国州检察长"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.nytimes.com/2026/06/13/technology/states-investigating-openai.html"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781399029,
+        "published_at": "2026-06-14T09:03:49.950847",
+        "source": "Hacker News",
+        "url": "https://www.nytimes.com/2026/06/13/technology/states-investigating-openai.html",
+        "event_id": null,
+        "grade": "S",
+        "level": "S",
+        "original_url": "https://www.nytimes.com/2026/06/13/technology/states-investigating-openai.html",
+        "original_content": "Comments",
+        "extension": "这会把AI聊天产品的安全责任从企业自律推向州级执法审查，后续可延伸追踪未成年人保护、数据合规、IPO风险和其他AI公司的监管连锁反应。"
+      },
+      {
+        "id": "860368e694631f776003e304f4012fba",
+        "title": "Meta被曝拆解20亿美元Manus收购案",
+        "chinese_title": "Meta被曝拆解20亿美元Manus收购案",
+        "original_title": "Meta reportedly moves to unwind $2B Manus deal after Beijing’s demand",
+        "summary": "Meta据称开始拆解对AI智能体公司Manus的20亿美元收购安排，原因是北京方面要求撤回交易，跨境AI并购的不确定性进一步上升。",
+        "rating": "A+",
+        "score": 91,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这不仅影响Meta补强AI代理能力的节奏，也会成为中国对AI技术、团队和知识产权跨境流动加强审查的标志性案例。",
+        "entities": [
+          "Ai智能体",
+          "Manus",
+          "Meta",
+          "北京监管"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch (manus)",
+            "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781399029,
+        "published_at": "2026-06-14T09:03:49.950877",
+        "source": "TechCrunch (manus)",
+        "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+",
+        "original_url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/",
+        "original_content": "Meta starts dismantling its $2 billion Manus acquisition after Beijing ordered the deal reversed.",
+        "extension": "该事件可能影响Meta在AI智能体方向的补强节奏，也会让涉及中国技术资产的跨境AI并购面临更高审查成本和交易结构风险。"
+      },
+      {
+        "id": "56420b87bf1078cc38c1a2a6c2fe5cda",
+        "title": "白宫管制Anthropic模型疑因中国关联访问",
+        "chinese_title": "白宫管制Anthropic模型疑因中国关联访问",
+        "original_title": "Source: the White House imposed export controls on Mythos partly over suspicions a China-linked group had accessed it (Reed Albergotti/Semafor)",
+        "summary": "Semafor披露，白宫对Anthropic强大模型Mythos施加出口管制，部分原因是怀疑有中国关联组织曾访问该模型，引发外界对前沿AI模型安全边界和监管节奏的关注。",
+        "rating": "A",
+        "score": 82,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可能推动美国进一步细化前沿AI模型的出口管制标准，也会让模型访问审计、客户筛查和云端安全研究成为AI公司合规重点。",
+        "entities": [
+          "Anthropic",
+          "China-Linked Group",
+          "Mythos",
+          "White House"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260613/p13#a260613p13"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781391790,
+        "published_at": "2026-06-14T07:03:10.759473",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260613/p13#a260613p13",
+        "event_id": null,
+        "original_content": "Reed Albergotti / Semafor : Source: the White House imposed export controls on Mythos partly over suspicions a China-linked group had accessed it — THE SCOOP — The White House imposed export controls on Anthropic's powerful Mythos AI model partly over suspicions that a China-linked group had accessed it, a person familiar with the matter said.",
+        "grade": "A",
+        "extension": "该事件可延展到美国对前沿AI模型出口管制的执行标准，以及Anthropic、OpenAI等模型厂商在访问审计、客户筛查和跨境合规上的压力变化。",
+        "level": "A"
+      },
+      {
+        "id": "2b621a8bf047d652d76af3afa85ba860",
+        "title": "Amazon安全研究牵出Anthropic模型禁令",
+        "chinese_title": "Amazon安全研究牵出Anthropic模型禁令",
+        "original_title": "Amazon security research reportedly led to the White House&rsquo;s Anthropic Fable ban",
+        "summary": "《华尔街日报》称，Amazon安全研究发现Fable 5可被诱导生成网络攻击相关信息，并促成白宫要求Anthropic限制Fable和Mythos访问。",
+        "rating": "A",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可延伸观察云厂商安全研究如何影响AI模型出口管制，以及模型能力评估是否会成为政府限制先进AI服务跨境访问的新依据。",
+        "entities": [
+          "Amazon",
+          "Anthropic",
+          "Fable",
+          "Mythos",
+          "白宫"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781389321,
+        "published_at": "2026-06-14T06:22:01.170483",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban",
+        "event_id": null,
+        "grade": "A",
+        "level": "A",
+        "original_content": "According to the Wall Street Journal , the export control directive that led to Anthropic cutting off access to Fable 5 and Mythos 5 was triggered in part by cybersecurity research from Amazon and conversations between CEO Andy Jassy and the White House. According to the report, the paper from Amazon claims that, through a series of prompts, it was able to get Fable 5 to serve up information that could be used in cyberattacks. Amazon has yet to respond to a request for comment. Shortly after Jassy shared the company's findings with the government, it made the call to block its use by foreign nationals. Complicating this issue is that many of … Read the full story at The Verge.",
+        "extension": "这可能加剧云厂商、安全团队和AI实验室之间的模型风险披露博弈，也为政府干预高能力模型访问提供更多案例依据。"
+      },
+      {
+        "id": "2f9f42b7622a5e9520c792c5c6f174fb",
+        "title": "白宫暂不扩大Anthropic模型出口限制",
+        "chinese_title": "白宫暂不扩大Anthropic模型出口限制",
+        "original_title": "Source: the White House is unlikely to extend export restrictions to other AI companies (Leo Schwartz/The Information)",
+        "summary": "消息人士称，美国政府目前不太可能把针对Anthropic高级模型的出口限制扩展到其他AI公司，显示相关措施可能仍是个案化处置。",
+        "rating": "A",
+        "score": 78,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "后续可追踪美国政府是否形成统一的先进模型出口审查框架，以及OpenAI、Google、Meta等公司是否会面临类似合规压力。",
+        "entities": [
+          "Ai Export Controls",
+          "Anthropic",
+          "The Information",
+          "White House"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260613/p12#a260613p12"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781389321,
+        "published_at": "2026-06-14T06:22:01.170511",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260613/p12#a260613p12",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      }
+    ],
+    "2026-06-11": [
       {
         "id": "d17710f59983b7e591553bbc8dfdbc1d",
         "title": "OpenAI考虑大幅降价迎战Anthropic",
@@ -13784,213 +14090,8 @@
         "original_content": "Comments",
         "extension": "可延伸到苹果在系统底层扩大Swift使用范围，以及内存安全语言替代C/C++组件对平台安全和开发者生态的长期影响。"
       }
-    ],
-    "2026-06-14": [
-      {
-        "id": "b3d265ae7163143b674b90e1c06d3f4e",
-        "title": "工具型智能体安全评测暴露验证税问题",
-        "chinese_title": "工具型智能体安全评测暴露验证税问题",
-        "original_title": "The Verifier Tax: Horizon-Dependent Safety–Success Tradeoffs in Tool-Using LLM Agents [R]",
-        "summary": "一篇ACM CAIS论文指出，工具调用智能体即使完成任务也可能违反安全约束，验证机制会降低不安全成功但也带来完成率损失。",
-        "rating": "B",
-        "score": 72,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可继续观察智能体评测指标从任务完成率转向安全成功率，对企业级Agent部署和合规审查都有参考价值。",
-        "entities": [
-          "Acm Cais",
-          "Llm Agent",
-          "Tau-Bench",
-          "Verifier Tax"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1u58mkq/the_verifier_tax_horizondependent_safetysuccess/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781406221,
-        "published_at": "2026-06-14T11:03:41.407998",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1u58mkq/the_verifier_tax_horizondependent_safetysuccess/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "b9d05ee81b051ee49c578f256875bab9",
-        "title": "OpenAI遭美国多州检察长联合调查",
-        "chinese_title": "OpenAI遭美国多州检察长联合调查",
-        "original_title": "State Attorneys General Are Investigating OpenAI",
-        "summary": "美国多州检察长围绕ChatGPT对未成年人和脆弱用户的影响、数据处理、用户留存和安全措施等问题调查OpenAI，AI公司面临更强监管压力。",
-        "rating": "S",
-        "score": 96,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这会把AI聊天产品的安全责任从公司自律推向州级执法，后续可能影响OpenAI上市进程、未成年人保护设计和整个AI行业的合规成本。",
-        "entities": [
-          "Ai安全",
-          "GPT",
-          "OpenAI",
-          "美国州检察长"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.nytimes.com/2026/06/13/technology/states-investigating-openai.html"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781399029,
-        "published_at": "2026-06-14T09:03:49.950847",
-        "source": "Hacker News",
-        "url": "https://www.nytimes.com/2026/06/13/technology/states-investigating-openai.html",
-        "event_id": null,
-        "grade": "S",
-        "level": "S",
-        "original_url": "https://www.nytimes.com/2026/06/13/technology/states-investigating-openai.html",
-        "original_content": "Comments",
-        "extension": "这会把AI聊天产品的安全责任从企业自律推向州级执法审查，后续可延伸追踪未成年人保护、数据合规、IPO风险和其他AI公司的监管连锁反应。"
-      },
-      {
-        "id": "860368e694631f776003e304f4012fba",
-        "title": "Meta被曝拆解20亿美元Manus收购案",
-        "chinese_title": "Meta被曝拆解20亿美元Manus收购案",
-        "original_title": "Meta reportedly moves to unwind $2B Manus deal after Beijing’s demand",
-        "summary": "Meta据称开始拆解对AI智能体公司Manus的20亿美元收购安排，原因是北京方面要求撤回交易，跨境AI并购的不确定性进一步上升。",
-        "rating": "A+",
-        "score": 91,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这不仅影响Meta补强AI代理能力的节奏，也会成为中国对AI技术、团队和知识产权跨境流动加强审查的标志性案例。",
-        "entities": [
-          "Ai智能体",
-          "Manus",
-          "Meta",
-          "北京监管"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch (manus)",
-            "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781399029,
-        "published_at": "2026-06-14T09:03:49.950877",
-        "source": "TechCrunch (manus)",
-        "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "original_url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/",
-        "original_content": "Meta starts dismantling its $2 billion Manus acquisition after Beijing ordered the deal reversed.",
-        "extension": "该事件可能影响Meta在AI智能体方向的补强节奏，也会让涉及中国技术资产的跨境AI并购面临更高审查成本和交易结构风险。"
-      },
-      {
-        "id": "56420b87bf1078cc38c1a2a6c2fe5cda",
-        "title": "白宫管制Anthropic模型疑因中国关联访问",
-        "chinese_title": "白宫管制Anthropic模型疑因中国关联访问",
-        "original_title": "Source: the White House imposed export controls on Mythos partly over suspicions a China-linked group had accessed it (Reed Albergotti/Semafor)",
-        "summary": "Semafor披露，白宫对Anthropic强大模型Mythos施加出口管制，部分原因是怀疑有中国关联组织曾访问该模型，引发外界对前沿AI模型安全边界和监管节奏的关注。",
-        "rating": "A",
-        "score": 82,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可能推动美国进一步细化前沿AI模型的出口管制标准，也会让模型访问审计、客户筛查和云端安全研究成为AI公司合规重点。",
-        "entities": [
-          "Anthropic",
-          "China-Linked Group",
-          "Mythos",
-          "White House"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260613/p13#a260613p13"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781391790,
-        "published_at": "2026-06-14T07:03:10.759473",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260613/p13#a260613p13",
-        "event_id": null,
-        "original_content": "Reed Albergotti / Semafor : Source: the White House imposed export controls on Mythos partly over suspicions a China-linked group had accessed it — THE SCOOP — The White House imposed export controls on Anthropic's powerful Mythos AI model partly over suspicions that a China-linked group had accessed it, a person familiar with the matter said.",
-        "grade": "A",
-        "extension": "该事件可延展到美国对前沿AI模型出口管制的执行标准，以及Anthropic、OpenAI等模型厂商在访问审计、客户筛查和跨境合规上的压力变化。",
-        "level": "A"
-      },
-      {
-        "id": "2b621a8bf047d652d76af3afa85ba860",
-        "title": "Amazon安全研究牵出Anthropic模型禁令",
-        "chinese_title": "Amazon安全研究牵出Anthropic模型禁令",
-        "original_title": "Amazon security research reportedly led to the White House&rsquo;s Anthropic Fable ban",
-        "summary": "《华尔街日报》称，Amazon安全研究发现Fable 5可被诱导生成网络攻击相关信息，并促成白宫要求Anthropic限制Fable和Mythos访问。",
-        "rating": "A",
-        "score": 86,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可延伸观察云厂商安全研究如何影响AI模型出口管制，以及模型能力评估是否会成为政府限制先进AI服务跨境访问的新依据。",
-        "entities": [
-          "Amazon",
-          "Anthropic",
-          "Fable",
-          "Mythos",
-          "白宫"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781389321,
-        "published_at": "2026-06-14T06:22:01.170483",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "According to the Wall Street Journal , the export control directive that led to Anthropic cutting off access to Fable 5 and Mythos 5 was triggered in part by cybersecurity research from Amazon and conversations between CEO Andy Jassy and the White House. According to the report, the paper from Amazon claims that, through a series of prompts, it was able to get Fable 5 to serve up information that could be used in cyberattacks. Amazon has yet to respond to a request for comment. Shortly after Jassy shared the company's findings with the government, it made the call to block its use by foreign nationals. Complicating this issue is that many of … Read the full story at The Verge.",
-        "extension": "这可能加剧云厂商、安全团队和AI实验室之间的模型风险披露博弈，也为政府干预高能力模型访问提供更多案例依据。"
-      },
-      {
-        "id": "2f9f42b7622a5e9520c792c5c6f174fb",
-        "title": "白宫暂不扩大Anthropic模型出口限制",
-        "chinese_title": "白宫暂不扩大Anthropic模型出口限制",
-        "original_title": "Source: the White House is unlikely to extend export restrictions to other AI companies (Leo Schwartz/The Information)",
-        "summary": "消息人士称，美国政府目前不太可能把针对Anthropic高级模型的出口限制扩展到其他AI公司，显示相关措施可能仍是个案化处置。",
-        "rating": "A",
-        "score": 78,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "后续可追踪美国政府是否形成统一的先进模型出口审查框架，以及OpenAI、Google、Meta等公司是否会面临类似合规压力。",
-        "entities": [
-          "Ai Export Controls",
-          "Anthropic",
-          "The Information",
-          "White House"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260613/p12#a260613p12"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781389321,
-        "published_at": "2026-06-14T06:22:01.170511",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260613/p12#a260613p12",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      }
     ]
   },
-  "last_updated": "2026-06-14T11:04:04.319732",
-  "total_news": 413
+  "last_updated": "2026-06-14T12:03:32.346303",
+  "total_news": 416
 }
