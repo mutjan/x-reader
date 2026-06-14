@@ -2965,22 +2965,82 @@
     ],
     "2026-06-14": [
       {
-        "id": "6f05cdea7e2c719096c2aee259759a55",
-        "title": "美政府称Anthropic曾拒修模型越狱漏洞",
-        "chinese_title": "美政府称Anthropic曾拒修模型越狱漏洞",
-        "original_title": "US government warned Anthropic that Chinese group had accessed model, but firm 'refused' to fix Fable 5 jailbreak before US export controls &mdash; Anthropic defended its decision by saying the jailbreak isn&rsquo;t serious",
-        "summary": "David Sacks称美国政府曾提醒Anthropic，其Claude Fable 5模型被中国相关团队越狱访问，但公司认为风险不严重，没有在出口管制前修复。",
+        "id": "0182fc9f72a2131a54b7365a0df2f61d",
+        "title": "KPMG赞美AI报告被曝夹带幻觉内容",
+        "chinese_title": "KPMG赞美AI报告被曝夹带幻觉内容",
+        "original_title": "Consulting Firm’s Report on How Awesome AI Is Found to Contain Idiotic AI Hallucinations",
+        "summary": "KPMG一份宣称代理式AI价值的报告被曝包含疑似AI幻觉的虚假说法，反而成为大型咨询机构在使用生成式AI时质量控制不足的尴尬案例。",
         "rating": "A",
-        "score": 82,
+        "score": 81,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这一事件可延伸到企业AI采用中的审校责任、咨询行业可信度，以及客户是否会要求更严格的AI生成内容披露和验证流程。",
+        "entities": [
+          "Ai幻觉",
+          "Financial Times",
+          "Kpmg",
+          "代理式Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/consulting-firms-ai-report-hallucinations"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781442876,
+        "published_at": "2026-06-14T21:14:36.506503",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/consulting-firms-ai-report-hallucinations",
+        "event_id": null
+      },
+      {
+        "id": "840296147720fcd6a41f90eea1fa2229",
+        "title": "OpenAI遭42州总检察长联合调查",
+        "chinese_title": "OpenAI遭42州总检察长联合调查",
+        "original_title": "OpenAI hit with sweeping probe from massive coalition of 42 US state attorneys general just days after reported IPO filing — subpoena targets ChatGPT maker’s ads, data practices, handling of minors, model sycophancy, and safety policies",
+        "summary": "美国42个州总检察长对OpenAI发起广泛调查，传票覆盖广告、数据处理、未成年人保护、健康数据、模型迎合行为和安全政策等多个方向。",
+        "rating": "S",
+        "score": 96,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "调查若升级，可能影响OpenAI商业化、IPO叙事和AI产品监管标准，也会给其他模型公司带来合规压力。",
+        "entities": [
+          "Ai安全",
+          "GPT",
+          "OpenAI",
+          "美国州总检察长"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-hit-with-sweeping-probe-from-massive-coalition-of-42-us-state-attorneys-general-just-days-after-reported-ipo-filing-subpoena-targets-chatgpt-makers-ads-data-practices-handling-of-minors-model-sycophancy-and-safety-policies"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781442876,
+        "published_at": "2026-06-14T21:14:36.506531",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-hit-with-sweeping-probe-from-massive-coalition-of-42-us-state-attorneys-general-just-days-after-reported-ipo-filing-subpoena-targets-chatgpt-makers-ads-data-practices-handling-of-minors-model-sycophancy-and-safety-policies",
+        "event_id": null
+      },
+      {
+        "id": "6f05cdea7e2c719096c2aee259759a55",
+        "title": "Anthropic被指拒修Claude Fable越狱漏洞",
+        "chinese_title": "Anthropic被指拒修Claude Fable越狱漏洞",
+        "original_title": "US government warned Anthropic that Chinese group had accessed model, but firm 'refused' to fix Fable 5 jailbreak before US export controls &mdash; Anthropic defended its decision by saying the jailbreak isn&rsquo;t serious",
+        "summary": "David Sacks称美国政府曾警告Anthropic，Claude Fable 5遭中国团体越狱并访问模型，但公司认为问题不严重，拒绝在出口管制前修复。",
+        "rating": "A",
+        "score": 84,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "事件可延伸到AI模型安全披露、出口管制执行和大模型公司责任边界，也可能引发对Anthropic安全叙事与实际响应机制的复盘。",
         "entities": [
-          "Ai安全",
+          "Ai越狱",
           "Anthropic",
           "Claude",
-          "Dario Amodei",
-          "David Sacks"
+          "David Sacks",
+          "出口管制"
         ],
         "sourceLinks": [
           {
@@ -2995,14 +3055,16 @@
         "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-adviser-david-sacks-says-anthropic-refused-to-fix-fable-5-jailbreak-before-us-export-controls",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "David Sacks said the US government warned Anthropic that Claude Fable 5 had been jailbroken and that CEO Dario Amodei refused to fix the flaw.",
+        "extension": "事件可能放大AI模型安全、出口管制与企业响应责任之间的冲突，并影响外界对Anthropic安全优先叙事的信任。"
       },
       {
         "id": "7913d9ed7d8b7302cb431e2faf20fcca",
-        "title": "AI挖矿网络被指空耗32万块GPU算力",
-        "chinese_title": "AI挖矿网络被指空耗32万块GPU算力",
+        "title": "AI挖矿网络被指空耗32万张GPU算力",
+        "chinese_title": "AI挖矿网络被指空耗32万张GPU算力",
         "original_title": "AI cryptomining network's 320,000 RTX 3090-class GPUs allegedly burn 112 megawatts of power on &lsquo;zero useful AI computation&rsquo; &mdash; GPU rental costs jump 38%, but Pearl&rsquo;s cards are doing random matrix math, study claims",
-        "summary": "一篇预印本称Pearl的AI挖矿网络消耗相当于32万块RTX 3090级GPU和112兆瓦电力，却没有产生可验证的有效AI计算。",
+        "summary": "一篇预印本称Pearl的AI挖矿网络消耗相当于32万张RTX 3090级GPU和112兆瓦电力，却没有产生可验证的有用AI计算。",
         "rating": "A",
         "score": 79,
         "type": "hardware",
@@ -3013,7 +3075,7 @@
           "Gpu",
           "Pearl",
           "Rtx 3090",
-          "算力网络"
+          "预印本"
         ],
         "sourceLinks": [
           {
@@ -3028,7 +3090,9 @@
         "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-cryptomining-networks-320-000-rtx-3090-class-gpus-allegedly-burn-112-megawatts-of-power-on-zero-useful-ai-computation-pearls-gpus-are-doing-random-matrix-math-study-claims",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "A preprint claims Pearl’s AI mining network consumes 320,000 GPU-equivalents and 112 MW while producing no verified useful AI computation.",
+        "extension": "该争议可延伸到去中心化AI算力的真实性、能源浪费、GPU租赁价格波动，以及AI基础设施投资泡沫风险。"
       },
       {
         "id": "ba90ca31ed4fd6dfca7f9d7d5f06dc59",
@@ -14404,6 +14468,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-14T20:03:20.864060",
-  "total_news": 423
+  "last_updated": "2026-06-14T21:15:13.058058",
+  "total_news": 425
 }
