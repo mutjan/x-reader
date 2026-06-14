@@ -2965,18 +2965,48 @@
     ],
     "2026-06-15": [
       {
-        "id": "64c8ab1c89c197c8bf0d28ea6596bba3",
-        "title": "纳德拉提出企业AI时代新资本观",
-        "chinese_title": "纳德拉提出企业AI时代新资本观",
-        "original_title": "Satya Nadella says companies must build both human capital and token capital, with human judgment guiding AI systems that learn and improve over time (Satya Nadella/@satyanadella)",
-        "summary": "微软CEO萨提亚·纳德拉称，企业未来既要建设人力资本，也要积累可被AI系统调用和学习的token capital，并强调人类判断仍应引导AI持续改进。",
+        "id": "8c46d29c490f39de519e6f91e0493e73",
+        "title": "FBI造了一座小镇训练网络攻击应对",
+        "chinese_title": "FBI造了一座小镇训练网络攻击应对",
+        "original_title": "The FBI built a small town to simulate cyberattacks",
+        "summary": "FBI在亨茨维尔建设2.2万平方英尺的Kinetic Cyber Range，用真实城市场景、联网设备和数据中心模拟勒索攻击、取证与关键基础设施受袭。",
         "rating": "A",
-        "score": 80,
+        "score": 78,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这类沉浸式网络靶场反映网络安全训练从桌面推演走向城市级实战模拟，后续可延伸到关键基础设施防护、车联网取证和政府安全采购。",
+        "entities": [
+          "Fbi",
+          "Kinetic Cyber Range",
+          "关键基础设施",
+          "网络安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781470974,
+        "published_at": "2026-06-15T05:02:54.047344",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range",
+        "event_id": null
+      },
+      {
+        "id": "64c8ab1c89c197c8bf0d28ea6596bba3",
+        "title": "纳德拉称企业要同时积累人力和Token资本",
+        "chinese_title": "纳德拉称企业要同时积累人力和Token资本",
+        "original_title": "Satya Nadella says companies must build both human capital and token capital, with human judgment guiding AI systems that learn and improve over time (Satya Nadella/@satyanadella)",
+        "summary": "微软CEO Satya Nadella提出企业AI竞争力不只来自前沿模型，还取决于把人工判断、组织知识和AI系统连接成持续学习的认知循环。",
+        "rating": "A",
+        "score": 94,
         "type": "opinion",
         "typeName": "观点访谈",
         "expansion": "这一表述把AI投入从工具采购推进到组织资产管理层面，可延伸观察微软如何把 Copilot、企业数据和工作流重新包装成管理方法论。后续也可比较谷歌、OpenAI 等厂商对企业AI资本化的叙事差异。",
         "entities": [
-          "Ai系统",
+          "Ai Agent",
           "Microsoft",
           "Satya Nadella",
           "Token Capital"
@@ -2993,9 +3023,11 @@
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260614/p13#a260614p13",
         "event_id": null,
-        "grade": "A",
+        "grade": "S",
         "level": "A",
-        "original_url": "https://www.techmeme.com/260614/p13#a260614p13"
+        "original_url": "https://www.techmeme.com/260614/p13#a260614p13",
+        "original_content": "Satya Nadella / @satyanadella : Satya Nadella says companies must build both human capital and token capital, with human judgment guiding AI systems that learn and improve over time — https://x.com/...",
+        "extension": "这一表述把企业AI战略从模型采购转向组织学习系统，后续可观察微软Copilot、企业知识库和agent工作流如何围绕token capital重构。"
       },
       {
         "id": "d0ca56d87a104391fd07e7a763da597c",
@@ -4380,6 +4412,36 @@
       }
     ],
     "2026-06-11": [
+      {
+        "id": "0f28d7c8a3fa9db15af22dce4c1a9afd",
+        "title": "逆向评分优化成智能体科学新试验场",
+        "chinese_title": "逆向评分优化成智能体科学新试验场",
+        "original_title": "Inverse Rubric Optimization: A testbed for agent science",
+        "summary": "Fulcrum提出Inverse Rubric Optimization，把长周期智能体任务中的评分和验证问题抽象成可研究试验场，用于观察智能体如何利用或反推评价规则。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该方向可连接智能体评测、奖励黑客和科学发现自动化，后续值得关注是否形成可复现实验基准以及对现有agent eval体系的挑战。",
+        "entities": [
+          "Ai评测",
+          "Fulcrum",
+          "Inverse Rubric Optimization",
+          "智能体"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781470974,
+        "published_at": "2026-06-15T05:02:54.047370",
+        "source": "Hacker News",
+        "url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html",
+        "event_id": null
+      },
       {
         "id": "d17710f59983b7e591553bbc8dfdbc1d",
         "title": "OpenAI考虑大幅降价迎战Anthropic",
@@ -15196,6 +15258,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-15T04:03:10.931903",
-  "total_news": 446
+  "last_updated": "2026-06-15T05:03:14.789002",
+  "total_news": 448
 }
