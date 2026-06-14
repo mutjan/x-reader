@@ -2943,6 +2943,66 @@
     ],
     "2026-06-11": [
       {
+        "id": "a558889a745bd35855b99b44d8d49fc6",
+        "title": "视频自适应Token化新方法减少冗余计算",
+        "chinese_title": "视频自适应Token化新方法减少冗余计算",
+        "original_title": "Adaptive Tokenisation Via Temporal Redundancy Masking And Latent Inpainting [R]",
+        "summary": "一篇论文提出利用冻结视频tokenizer潜空间中的时间冗余，直接丢弃低信息量位置，从而实现无参数的自适应视频token分配。",
+        "rating": "B",
+        "score": 69,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到视频生成、多模态模型推理成本优化，以及长视频理解中的token预算控制。",
+        "entities": [
+          "Arxiv",
+          "Latent Inpainting",
+          "多模态模型",
+          "视频Token化"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1u2u9bb/adaptive_tokenisation_via_temporal_redundancy/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781406221,
+        "published_at": "2026-06-14T11:03:41.408042",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1u2u9bb/adaptive_tokenisation_via_temporal_redundancy/",
+        "event_id": null
+      },
+      {
+        "id": "26ff2034b3ac350c8136c26ea7639bf1",
+        "title": "Anthropic撤回静默削弱Claude能力做法",
+        "chinese_title": "Anthropic撤回静默削弱Claude能力做法",
+        "original_title": "Anthropic walks back policy on silent nerfing for AI/ML, will notify users [N]",
+        "summary": "Anthropic回应争议称将让Claude面向前沿模型开发的安全限制对用户可见，不再以静默方式降级或改道相关请求。",
+        "rating": "A+",
+        "score": 89,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可继续追踪模型安全策略的透明度争议，以及AI公司如何在防滥用、研究自由和用户信任之间重新取舍。",
+        "entities": [
+          "Ai安全",
+          "Anthropic",
+          "Claude",
+          "Wired"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1u2tk0i/anthropic_walks_back_policy_on_silent_nerfing_for/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781406221,
+        "published_at": "2026-06-14T11:03:41.408054",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1u2tk0i/anthropic_walks_back_policy_on_silent_nerfing_for/",
+        "event_id": null
+      },
+      {
         "id": "d17710f59983b7e591553bbc8dfdbc1d",
         "title": "OpenAI考虑大幅降价迎战Anthropic",
         "chinese_title": "OpenAI考虑大幅降价迎战Anthropic",
@@ -13723,6 +13783,36 @@
     ],
     "2026-06-14": [
       {
+        "id": "b3d265ae7163143b674b90e1c06d3f4e",
+        "title": "工具型智能体安全评测暴露验证税问题",
+        "chinese_title": "工具型智能体安全评测暴露验证税问题",
+        "original_title": "The Verifier Tax: Horizon-Dependent Safety–Success Tradeoffs in Tool-Using LLM Agents [R]",
+        "summary": "一篇ACM CAIS论文指出，工具调用智能体即使完成任务也可能违反安全约束，验证机制会降低不安全成功但也带来完成率损失。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可继续观察智能体评测指标从任务完成率转向安全成功率，对企业级Agent部署和合规审查都有参考价值。",
+        "entities": [
+          "Acm Cais",
+          "Llm Agent",
+          "Tau-Bench",
+          "Verifier Tax"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1u58mkq/the_verifier_tax_horizondependent_safetysuccess/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781406221,
+        "published_at": "2026-06-14T11:03:41.407998",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1u58mkq/the_verifier_tax_horizondependent_safetysuccess/",
+        "event_id": null
+      },
+      {
         "id": "b9d05ee81b051ee49c578f256875bab9",
         "title": "OpenAI遭美国多州检察长联合调查",
         "chinese_title": "OpenAI遭美国多州检察长联合调查",
@@ -13895,6 +13985,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-14T10:03:09.798371",
-  "total_news": 410
+  "last_updated": "2026-06-14T11:04:04.319732",
+  "total_news": 413
 }
