@@ -2,37 +2,6 @@
   "news": {
     "2026-06-12": [
       {
-        "id": "38291e69401c261353e52a18aae77513",
-        "title": "开发者筹建Rust边缘语义缓存项目",
-        "chinese_title": "开发者筹建Rust边缘语义缓存项目",
-        "original_title": "Building an Open Source Edge Semantic Cache for LLMs in Rust/WASM – Sanity check on the architecture? [D]",
-        "summary": "有开发者计划用Rust和WASM构建开源边缘语义缓存，试图降低高并发LLM应用中的网关延迟、跨区域访问延迟和重复调用成本。",
-        "rating": "B",
-        "score": 68,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸到LLM基础设施从中心化网关走向边缘缓存，以及语义缓存如何影响实时智能体和企业API成本结构。",
-        "entities": [
-          "Llm基础设施",
-          "Rust",
-          "Wasm",
-          "语义缓存",
-          "边缘计算"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1u3quwk/building_an_open_source_edge_semantic_cache_for/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781409783,
-        "published_at": "2026-06-14T12:03:03.755880",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1u3quwk/building_an_open_source_edge_semantic_cache_for/",
-        "event_id": null
-      },
-      {
         "id": "0567101cc5cba20923091835ee6cebaf",
         "title": "SpaceX上市或把马斯克推向万亿身家",
         "chinese_title": "SpaceX上市或把马斯克推向万亿身家",
@@ -3002,7 +2971,9 @@
         "published_at": "2026-06-14T12:03:03.755794",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260613/p17#a260613p17",
-        "event_id": null
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
       },
       {
         "id": "889f9697b8f68f419176c1aa4676992b",
@@ -3032,7 +3003,9 @@
         "published_at": "2026-06-14T12:03:03.755822",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/",
-        "event_id": null
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
       },
       {
         "id": "a558889a745bd35855b99b44d8d49fc6",
@@ -3076,7 +3049,7 @@
         "original_title": "Anthropic walks back policy on silent nerfing for AI/ML, will notify users [N]",
         "summary": "Anthropic承认Fable 5在前沿AI开发防护上的取舍不当，表示未来会向用户明示拒绝或路由到低能力模型等安全措施。",
         "rating": "A+",
-        "score": 90,
+        "score": 89,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "可继续追踪模型安全策略的透明度争议，以及AI公司如何在防滥用、研究自由和用户信任之间重新取舍。",
@@ -3110,7 +3083,7 @@
         "chinese_title": "工具型智能体验证成本难题被量化",
         "original_title": "The Verifier Tax: Horizon-Dependent Safety–Success Tradeoffs in Tool-Using LLM Agents [R]",
         "summary": "ACM CAIS 2026论文提出工具型LLM智能体不能只看任务完成率，还要区分安全成功、违规成功和失败，并研究验证器带来的效率取舍。",
-        "rating": "B",
+        "rating": "A",
         "score": 81,
         "type": "research",
         "typeName": "研究成果",
@@ -3135,7 +3108,7 @@
         "url": "https://www.reddit.com/r/MachineLearning/comments/1u58mkq/the_verifier_tax_horizondependent_safetysuccess/",
         "event_id": null,
         "grade": "A",
-        "level": "B",
+        "level": "A",
         "original_content": "We recently presented a paper at ACM CAIS 2026 on safety evaluation for tool-using LLM agents. The core issue is that task completion alone can be misleading: an agent may complete a task while violating a safety or policy constraint. We separate outcomes into safe success , unsafe success , and failure , and study how verification changes this tradeoff. We evaluate this using τ-bench / Tau-bench tool-use scenarios and propose a two-tier verification architecture : deterministic policy/tool checks first, followed by an LLM-based verifier for more contextual safety cases. The main finding is that verification can reduce unsafe success, but it can also reduce task completion as the task horizon increases. This creates what we call the Verifier Tax : a horizon-dependent safety–success tradeoff in tool-using agents. Paper: https://dl.acm.org/doi/full/10.1145/3786335.3813160 Curious how others think agent evaluations should report unsafe success. Should unsafe completion be counted as success, failure, or a separate category? submitted by /u/AccomplishedLeg1508 [link] [comments]",
         "extension": "可继续关注智能体评测从能力指标转向安全约束指标，尤其是企业部署中确定性规则与LLM验证器的组合架构。"
       },
@@ -14093,5 +14066,5 @@
     ]
   },
   "last_updated": "2026-06-14T12:03:32.346303",
-  "total_news": 416
+  "total_news": 415
 }
