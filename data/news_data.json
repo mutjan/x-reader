@@ -2,6 +2,37 @@
   "news": {
     "2026-06-12": [
       {
+        "id": "a8ca2c8e65d99e5a13084f7a16493c3a",
+        "title": "机器人专用游戏引擎来了，先在仿真里跑百万次",
+        "chinese_title": "机器人专用游戏引擎来了，先在仿真里跑百万次",
+        "original_title": "The first game engine for robotics",
+        "summary": "Lucky Robots 推出面向机器人训练的 Lucky Engine，结合 MuJoCo 物理、Vulkan 渲染和 Python SDK，用大规模仿真生成可用于模仿学习的数据。",
+        "rating": "B",
+        "score": 72,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "如果仿真到现实的迁移效果被开发者验证，机器人公司可能减少真实硬件试错成本，也会带动 LeRobot 等开源训练生态的工具链竞争。",
+        "entities": [
+          "Lerobot",
+          "Lucky Engine",
+          "Lucky Robots",
+          "Mujoco",
+          "Vulkan"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://luckyrobots.com/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781474547,
+        "published_at": "2026-06-15T06:02:27.039825",
+        "source": "Hacker News",
+        "url": "https://luckyrobots.com/",
+        "event_id": null
+      },
+      {
         "id": "0567101cc5cba20923091835ee6cebaf",
         "title": "SpaceX上市或把马斯克推向万亿身家",
         "chinese_title": "SpaceX上市或把马斯克推向万亿身家",
@@ -2966,12 +2997,12 @@
     "2026-06-15": [
       {
         "id": "8c46d29c490f39de519e6f91e0493e73",
-        "title": "FBI造了一座小镇训练网络攻击应对",
-        "chinese_title": "FBI造了一座小镇训练网络攻击应对",
+        "title": "FBI造了一座假城镇，专门演练网络攻击",
+        "chinese_title": "FBI造了一座假城镇，专门演练网络攻击",
         "original_title": "The FBI built a small town to simulate cyberattacks",
-        "summary": "FBI在亨茨维尔建设2.2万平方英尺的Kinetic Cyber Range，用真实城市场景、联网设备和数据中心模拟勒索攻击、取证与关键基础设施受袭。",
+        "summary": "FBI 在阿拉巴马州亨茨维尔建设 Kinetic Cyber Range，用酒店、加油站、医院和数据中心等真实场景模拟网络攻击对现实设施的连锁影响。",
         "rating": "A",
-        "score": 78,
+        "score": 80,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "这类沉浸式网络靶场反映网络安全训练从桌面推演走向城市级实战模拟，后续可延伸到关键基础设施防护、车联网取证和政府安全采购。",
@@ -2994,7 +3025,44 @@
         "url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "There’s also a fake power company to jack up prices thanks to the fake data center. | Image: FBI Last year, the FBI opened a Cyber Range in Huntsville, Alabama, for simulating cyberattacks. Think of it sort of like the famous Hogan's Alley , but for modern digital crime training. It's a massive 22,000 square-foot replica of an entire town, complete with a convenience store, gas station, hospital, and even fully furnished houses. It's a training facility where the bureau can recreate real-world scenarios for training and research purposes. All of the various buildings and facilities are hooked up the way they would be in a real town. There's even a small data center with over 200 servers that can be hacked, infected with malware, and stu … Read the full story at The Verge.",
+        "extension": "这类物理化网络靶场说明关键基础设施防护正在从桌面推演走向实景训练，后续可延伸到电网、医院、数据中心和城市安全预算变化。"
+      },
+      {
+        "id": "0f28d7c8a3fa9db15af22dce4c1a9afd",
+        "title": "智能体科学新测试床：让模型反推黑箱评委偏好",
+        "chinese_title": "智能体科学新测试床：让模型反推黑箱评委偏好",
+        "original_title": "Inverse Rubric Optimization: A testbed for agent science",
+        "summary": "Fulcrum Research 提出 Inverse Rubric Optimization，让智能体在有限标签预算下学习黑箱评委偏好，用更平滑、可控的任务研究长程智能体行为。",
+        "rating": "B",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该方向可连接智能体评测、奖励黑客和科学发现自动化，后续值得关注是否形成可复现实验基准以及对现有agent eval体系的挑战。",
+        "entities": [
+          "Fable",
+          "Fulcrum Research",
+          "Inverse Rubric Optimization",
+          "Opus",
+          "智能体"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781470974,
+        "published_at": "2026-06-15T05:02:54.047370",
+        "source": "Hacker News",
+        "url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html",
+        "event_id": null,
+        "grade": "A",
+        "level": "B",
+        "original_content": "Comments",
+        "extension": "IRO 可作为评估智能体探索、资源利用和迭代策略的新基准，后续值得关注它是否进入主流 agent benchmark，以及不同模型在标签预算下的 scaling 差异。"
       },
       {
         "id": "64c8ab1c89c197c8bf0d28ea6596bba3",
@@ -4414,38 +4482,6 @@
       }
     ],
     "2026-06-11": [
-      {
-        "id": "0f28d7c8a3fa9db15af22dce4c1a9afd",
-        "title": "逆向评分优化成智能体科学新试验场",
-        "chinese_title": "逆向评分优化成智能体科学新试验场",
-        "original_title": "Inverse Rubric Optimization: A testbed for agent science",
-        "summary": "Fulcrum提出Inverse Rubric Optimization，把长周期智能体任务中的评分和验证问题抽象成可研究试验场，用于观察智能体如何利用或反推评价规则。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该方向可连接智能体评测、奖励黑客和科学发现自动化，后续值得关注是否形成可复现实验基准以及对现有agent eval体系的挑战。",
-        "entities": [
-          "Ai评测",
-          "Fulcrum",
-          "Inverse Rubric Optimization",
-          "智能体"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781470974,
-        "published_at": "2026-06-15T05:02:54.047370",
-        "source": "Hacker News",
-        "url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
       {
         "id": "d17710f59983b7e591553bbc8dfdbc1d",
         "title": "OpenAI考虑大幅降价迎战Anthropic",
@@ -15262,6 +15298,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-15T05:03:14.789002",
-  "total_news": 448
+  "last_updated": "2026-06-15T06:02:47.227400",
+  "total_news": 449
 }
