@@ -1,14 +1,143 @@
 {
   "news": {
-    "2026-06-12": [
+    "2026-06-15": [
       {
-        "id": "a8ca2c8e65d99e5a13084f7a16493c3a",
-        "title": "机器人专用游戏引擎来了，先在仿真里跑百万次",
-        "chinese_title": "机器人专用游戏引擎来了，先在仿真里跑百万次",
-        "original_title": "The first game engine for robotics",
-        "summary": "Lucky Robots 推出面向机器人训练的 Lucky Engine，结合 MuJoCo 物理、Vulkan 渲染和 Python SDK，用大规模仿真生成可用于模仿学习的数据。",
+        "id": "b8a390671edff8304e4836afecf9c259",
+        "title": "Anthropic模型暂停引发安全治理争议",
+        "chinese_title": "Anthropic模型暂停引发安全治理争议",
+        "original_title": "Did Anthropic Ask for This?",
+        "summary": "围绕Claude Fable 5和Mythos 5暂停访问的讨论继续发酵，外界质疑Anthropic与政府安全规则之间的边界是否透明。",
+        "rating": "B",
+        "score": 71,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这一事件可延伸到前沿模型访问分层、政府参与AI安全治理、商业发布与安全承诺之间的张力。",
+        "entities": [
+          "Ai安全",
+          "Anthropic",
+          "Claude",
+          "Fable",
+          "Mythos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.verysane.ai/p/did-anthropic-ask-for-this"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781478149,
+        "published_at": "2026-06-15T07:02:29.392314",
+        "source": "Hacker News",
+        "url": "https://www.verysane.ai/p/did-anthropic-ask-for-this",
+        "event_id": null
+      },
+      {
+        "id": "726f24686376662685b29d4608afabe4",
+        "title": "Bram Cohen批评Claude安全限制过度",
+        "chinese_title": "Bram Cohen批评Claude安全限制过度",
+        "original_title": "Why Is Claude Turning into an a**Hole?",
+        "summary": "BitTorrent创始人Bram Cohen撰文批评Claude在安全问题上的强硬拒答策略，认为单纯让模型变得难用无法真正解决漏洞风险。",
+        "rating": "B",
+        "score": 73,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可继续观察开发者社区对高能力模型安全降级的反弹，以及模型厂商在网络安全能力开放上的产品取舍。",
+        "entities": [
+          "Ai安全",
+          "Anthropic",
+          "Bram Cohen",
+          "Claude",
+          "网络安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://bramcohen.com/p/why-is-claude-turning-into-an-asshole"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781478149,
+        "published_at": "2026-06-15T07:02:29.392341",
+        "source": "Hacker News",
+        "url": "https://bramcohen.com/p/why-is-claude-turning-into-an-asshole",
+        "event_id": null
+      },
+      {
+        "id": "1010a12e32c9223d57af9ba925367970",
+        "title": "Anthropic安全立场与商业化矛盾受关注",
+        "chinese_title": "Anthropic安全立场与商业化矛盾受关注",
+        "original_title": "Anthropic’s Contradiction; The Risks of Buying SpaceX Stock Now",
+        "summary": "The Information讨论Anthropic近期围绕Fable 5的政府相关争议，并将其与SpaceX股票风险等科技商业议题并列分析。",
+        "rating": "A",
+        "score": 80,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这一议题可扩展到AI公司上市前叙事、政府合作对商业化节奏的影响，以及前沿模型访问规则对客户信任的冲击。",
+        "entities": [
+          "Ai商业化",
+          "Anthropic",
+          "Fable",
+          "SpaceX",
+          "The Information"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/anthropics-contradiction-risks-buying-spacex-stock-now"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781478149,
+        "published_at": "2026-06-15T07:02:29.392360",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/anthropics-contradiction-risks-buying-spacex-stock-now",
+        "event_id": null
+      },
+      {
+        "id": "b3f31e072b1eb30245e4c4ef3bc644be",
+        "title": "Grok Build 终端开始支持公式和 LaTeX 渲染",
+        "chinese_title": "Grok Build 终端开始支持公式和 LaTeX 渲染",
+        "original_title": "Grok Build now renders math, formulas, and LaTeX right in your terminal",
+        "summary": "xAI 旗下 Grok 官方账号宣布，Grok Build 现在可在终端内直接渲染数学、公式和 LaTeX，为命令行编程代理补上技术文档和公式展示能力。",
         "rating": "B",
         "score": 72,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "适合作为 AI 编程工具体验更新跟踪，可关注其对开发者文档、数学推理和命令行交互的影响；目前仍是单点功能升级，优先级低于模型发布或监管事件。",
+        "entities": [
+          "xAI",
+          "Grok",
+          "Grok Build",
+          "LaTeX",
+          "AI Coding Agent"
+        ],
+        "sourceLinks": [
+          {
+            "name": "X / Grok",
+            "url": "https://x.com/grok/status/2066241561432895735"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781477921,
+        "published_at": "2026-06-15T06:58:41.600903",
+        "source": "X / Grok",
+        "url": "https://x.com/grok/status/2066241561432895735",
+        "original_url": "https://x.com/grok/status/2066241561432895735",
+        "event_id": null,
+        "grade": "B",
+        "level": "B",
+        "original_content": "Official Grok account says Grok Build now renders math, formulas, and LaTeX right in the terminal. Observed from X Pro visible column during manual refresh on 2026-06-15 Asia/Shanghai.",
+        "extension": "适合作为 AI 编程工具体验更新跟踪，可关注其对开发者文档、数学推理和命令行交互的影响；目前仍是单点功能升级，优先级低于模型发布或监管事件。"
+      },
+      {
+        "id": "a8ca2c8e65d99e5a13084f7a16493c3a",
+        "title": "Lucky Robots推出机器人专用游戏引擎",
+        "chinese_title": "Lucky Robots推出机器人专用游戏引擎",
+        "original_title": "The first game engine for robotics",
+        "summary": "Lucky Robots发布面向机器人AI训练的Lucky Engine，主打在虚拟世界中生成大规模物理仿真数据，再迁移到真实机器人任务。",
+        "rating": "B",
+        "score": 79,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "如果仿真到现实的迁移效果被开发者验证，机器人公司可能减少真实硬件试错成本，也会带动 LeRobot 等开源训练生态的工具链竞争。",
@@ -17,7 +146,7 @@
           "Lucky Engine",
           "Lucky Robots",
           "Mujoco",
-          "Vulkan"
+          "机器人Ai"
         ],
         "sourceLinks": [
           {
@@ -31,9 +160,630 @@
         "source": "Hacker News",
         "url": "https://luckyrobots.com/",
         "event_id": null,
+        "grade": "A",
+        "level": "B",
+        "original_content": "Comments",
+        "extension": "可延伸到机器人仿真平台竞争、具身智能数据生成成本下降，以及MuJoCo、LeRobot生态与商业工具链的结合。"
+      },
+      {
+        "id": "8c46d29c490f39de519e6f91e0493e73",
+        "title": "FBI造了一座假城镇，专门演练网络攻击",
+        "chinese_title": "FBI造了一座假城镇，专门演练网络攻击",
+        "original_title": "The FBI built a small town to simulate cyberattacks",
+        "summary": "FBI 在阿拉巴马州亨茨维尔建设 Kinetic Cyber Range，用酒店、加油站、医院和数据中心等真实场景模拟网络攻击对现实设施的连锁影响。",
+        "rating": "A",
+        "score": 80,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这类沉浸式网络靶场反映网络安全训练从桌面推演走向城市级实战模拟，后续可延伸到关键基础设施防护、车联网取证和政府安全采购。",
+        "entities": [
+          "Fbi",
+          "Kinetic Cyber Range",
+          "关键基础设施",
+          "网络安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781470974,
+        "published_at": "2026-06-15T05:02:54.047344",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range",
+        "event_id": null,
+        "grade": "A",
+        "level": "A",
+        "original_content": "There’s also a fake power company to jack up prices thanks to the fake data center. | Image: FBI Last year, the FBI opened a Cyber Range in Huntsville, Alabama, for simulating cyberattacks. Think of it sort of like the famous Hogan's Alley , but for modern digital crime training. It's a massive 22,000 square-foot replica of an entire town, complete with a convenience store, gas station, hospital, and even fully furnished houses. It's a training facility where the bureau can recreate real-world scenarios for training and research purposes. All of the various buildings and facilities are hooked up the way they would be in a real town. There's even a small data center with over 200 servers that can be hacked, infected with malware, and stu … Read the full story at The Verge.",
+        "extension": "这类物理化网络靶场说明关键基础设施防护正在从桌面推演走向实景训练，后续可延伸到电网、医院、数据中心和城市安全预算变化。"
+      },
+      {
+        "id": "0f28d7c8a3fa9db15af22dce4c1a9afd",
+        "title": "智能体科学新测试床：让模型反推黑箱评委偏好",
+        "chinese_title": "智能体科学新测试床：让模型反推黑箱评委偏好",
+        "original_title": "Inverse Rubric Optimization: A testbed for agent science",
+        "summary": "Fulcrum Research 提出 Inverse Rubric Optimization，让智能体在有限标签预算下学习黑箱评委偏好，用更平滑、可控的任务研究长程智能体行为。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该方向可连接智能体评测、奖励黑客和科学发现自动化，后续值得关注是否形成可复现实验基准以及对现有agent eval体系的挑战。",
+        "entities": [
+          "Fable",
+          "Fulcrum Research",
+          "Inverse Rubric Optimization",
+          "Opus",
+          "智能体"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781470974,
+        "published_at": "2026-06-15T05:02:54.047370",
+        "source": "Hacker News",
+        "url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html",
+        "event_id": null,
+        "grade": "A",
+        "level": "A",
+        "original_content": "Comments",
+        "extension": "IRO 可作为评估智能体探索、资源利用和迭代策略的新基准，后续值得关注它是否进入主流 agent benchmark，以及不同模型在标签预算下的 scaling 差异。"
+      },
+      {
+        "id": "64c8ab1c89c197c8bf0d28ea6596bba3",
+        "title": "纳德拉称企业要同时积累人力和Token资本",
+        "chinese_title": "纳德拉称企业要同时积累人力和Token资本",
+        "original_title": "Satya Nadella says companies must build both human capital and token capital, with human judgment guiding AI systems that learn and improve over time (Satya Nadella/@satyanadella)",
+        "summary": "微软CEO Satya Nadella提出企业AI竞争力不只来自前沿模型，还取决于把人工判断、组织知识和AI系统连接成持续学习的认知循环。",
+        "rating": "A+",
+        "score": 85,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这一表述把AI投入从工具采购推进到组织资产管理层面，可延伸观察微软如何把 Copilot、企业数据和工作流重新包装成管理方法论。后续也可比较谷歌、OpenAI 等厂商对企业AI资本化的叙事差异。",
+        "entities": [
+          "Ai Agent",
+          "Microsoft",
+          "Satya Nadella",
+          "Token Capital"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260614/p13#a260614p13"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781467371,
+        "published_at": "2026-06-15T04:02:51.537822",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260614/p13#a260614p13",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+",
+        "original_url": "https://www.techmeme.com/260614/p13#a260614p13",
+        "original_content": "Satya Nadella / @satyanadella : Satya Nadella says companies must build both human capital and token capital, with human judgment guiding AI systems that learn and improve over time — https://x.com/...",
+        "extension": "这一表述把企业AI战略从模型采购转向组织学习系统，后续可观察微软Copilot、企业知识库和agent工作流如何围绕token capital重构。"
+      },
+      {
+        "id": "d0ca56d87a104391fd07e7a763da597c",
+        "title": "Anthropic高层赴白宫修复模型争议",
+        "chinese_title": "Anthropic高层赴白宫修复模型争议",
+        "original_title": "Sources: senior Anthropic technical staff are in DC to meet WH officials and try to fix the Mythos 5 dispute; both sides say they are eager to resolve the issue (Maria Curi/Axios)",
+        "summary": "消息称 Anthropic 资深技术人员前往华盛顿会见白宫官员，试图解决围绕 Mythos 5 的争议，双方均表示希望尽快推动问题得到解决。",
+        "rating": "A+",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这条线索可延伸到美国AI出口管制、模型准入和企业合规成本，也可能影响其他前沿模型公司与政府的沟通机制。",
+        "entities": [
+          "Ai安全",
+          "Anthropic",
+          "Mythos",
+          "White House"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260614/p12#a260614p12"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781463733,
+        "published_at": "2026-06-15T03:02:13.166589",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260614/p12#a260614p12",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+",
+        "original_content": "Maria Curi / Axios : Sources: senior Anthropic technical staff are in DC to meet WH officials and try to fix the Mythos 5 dispute; both sides say they are eager to resolve the issue — Senior technical Anthropic staff are in Washington to meet with White House officials and try to fix a dispute that has taken …",
+        "extension": "该事件显示前沿模型发布或部署争议正在进入更高层级的政策协调流程，后续可追踪白宫对大模型安全、政府采购和合规审查的态度变化。若争议解决方式成型，也可能成为其他AI公司的监管沟通样板。",
+        "original_url": "https://www.techmeme.com/260614/p12#a260614p12"
+      },
+      {
+        "id": "7327275448ecdc1dfc0456924d34cb2f",
+        "title": "加拿大总理警告过度依赖单一AI模型",
+        "chinese_title": "加拿大总理警告过度依赖单一AI模型",
+        "original_title": "Canadian PM says the Anthropic ban shows the dangers of \"over-reliance on certain models\", and compares the risks to those that led to the 2008 financial crisis (Bloomberg)",
+        "summary": "Bloomberg称加拿大总理Mark Carney将Anthropic禁令与2008年金融危机前的集中风险作类比，警告国家和企业不能过度依赖少数前沿AI模型。",
+        "rating": "A",
+        "score": 78,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可继续追踪美国 AI 出口管制对盟友、企业合规和主权 AI 战略的影响，以及各国是否会加速建设本土模型替代方案。",
+        "entities": [
+          "Ai模型",
+          "Anthropic",
+          "Mark Carney",
+          "主权Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260614/p11#a260614p11"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781460147,
+        "published_at": "2026-06-15T02:02:27.675605",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260614/p11#a260614p11",
+        "event_id": null,
+        "grade": "A",
+        "level": "A",
+        "original_content": "Bloomberg : Canadian PM says the Anthropic ban shows the dangers of “over-reliance on certain models”, and compares the risks to those that led to the 2008 financial crisis — Prime Minister Mark Carney said the US export ban blocking all foreign access to Anthropic PBC's latest artificial …",
+        "extension": "该观点可扩展到主权AI、多模型冗余、关键行业供应链韧性，以及各国在美国AI出口政策下的替代方案建设。"
+      },
+      {
+        "id": "ba14d5166e312e353c60ffbfb1bbcc77",
+        "title": "FTX旧日Anthropic持股按现估值已达750亿美元",
+        "chinese_title": "FTX旧日Anthropic持股按现估值已达750亿美元",
+        "original_title": "FTX's former Anthropic stake would be worth about $75B at today's valuation",
+        "summary": "Hacker News 讨论指出，若 FTX 曾经持有的 Anthropic 股份保留至今，按当前估值计算可能价值约 750 亿美元，引发对破产资产处置的回看。",
+        "rating": "B",
+        "score": 66,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延伸到 AI 独角兽估值膨胀、破产资产回收、早期投资错失收益，以及 Anthropic 在资本市场中的定价变化。",
+        "entities": [
+          "Anthropic",
+          "Ftx",
+          "Hacker News",
+          "估值"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=48529190"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781460147,
+        "published_at": "2026-06-15T02:02:27.675652",
+        "source": "Hacker News",
+        "url": "https://news.ycombinator.com/item?id=48529190",
+        "event_id": null,
         "grade": "B",
         "level": "B"
       },
+      {
+        "id": "ede3c3382a2619036ed2681d09d82c03",
+        "title": "AI智能体协议栈还差一块传输层拼图",
+        "chinese_title": "AI智能体协议栈还差一块传输层拼图",
+        "original_title": "MCP solved tool calling. A2A solved coordination. What solves transport?",
+        "summary": "VentureBeat文章认为MCP已解决工具调用、A2A正在解决任务协同，但智能体跨网络直连仍受HTTP和NAT限制，下一轮标准竞争会集中在传输与发现层。",
+        "rating": "A+",
+        "score": 90,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸观察智能体协议栈竞争、云厂商和开源社区对传输标准的主导权，以及企业级 AI 工作流落地成本变化。",
+        "entities": [
+          "A2A",
+          "Ai智能体",
+          "Anp",
+          "MCP",
+          "Quic"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/orchestration/mcp-solved-tool-calling-a2a-solved-coordination-what-solves-transport"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781460147,
+        "published_at": "2026-06-15T02:02:27.675580",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/orchestration/mcp-solved-tool-calling-a2a-solved-coordination-what-solves-transport",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+",
+        "original_content": "The history of distributed computing is one of protocol proliferation followed by consolidation. Common Object Request Broker Architecture (CORBA), Distributed Component Object Model (DCOM), Java remote method invocation (RMI), and early simple object access protocol (SOAP) competed for the enterprise integration market in the late 1990s before representational state transfer (REST) quietly won by being simpler and HTTP-native. Extensible Messaging and Presence Protocol (XMPP), Internet Relay Chat (IRC), and a dozen proprietary protocols fragmented real-time messaging before MG telemetry transport (MQTT) and WebSockets carved out their respective niches. Every new computing paradigm generates a burst of competing standards, then slowly converges as implementations accumulate and interoperability becomes economically necessary. The AI agent ecosystem is currently in the proliferation phase. Four significant protocols have been published in the past eighteen months: Model context protocol (MCP) from Anthropic in late 2024, agent communication protocol (ACP) from IBM Research in March 2025, Agent2Agent (A2A) from Google in April 2025, and agent network protocol (ANP) from an independent working group. The W3C AI Agent Protocol Community Group has opened a standards track. The Internet Engineering Task Force (IETF) is receiving Internet-Drafts on agent transport. Conferences are running workshops on interoperability. Every week brings a new GitHub repository claiming to solve the agent communication problem. Understanding where and how quickly this converges has real consequences for architecture decisions being made right now. What the protocols actually solve The proliferation looks more chaotic than it is, because most of these protocols address different layers of a stack rather than competing for the same slot. The confusion comes from marketing, which describes each as \"the standard for AI agent communication\" without specifying which aspect of communication. MCP is a tool-calling interface. It defines how a model discovers what functions a server exposes, how to invoke them, and how to interpret the response. It is a typed remote procedure call (RPC) contract between a model client and a tool server, running over HTTP. The Linux Foundation confirmed more than 10,000 active public MCP servers and 164 million monthly Python SDK downloads by April 2026. MCP has already won the tool-calling layer. The standardization work is effectively done. A2A is a task coordination interface. Where MCP defines how an agent calls a tool, A2A defines how two agents delegate a task. It introduces Agent Cards (capability advertisements), task lifecycle states, and three interaction modes: Synchronous, streaming, and asynchronous. Google donated it to the Linux Foundation in June 2025, and enterprise AI teams have adopted it broadly because it fills a real gap that MCP leaves open. ACP is a message envelope format. Lightweight, stateless, designed for agent-to-agent message exchange without A2A's full coordination semantics. It is useful in systems where simple message passing suffices and A2A's task lifecycle overhead is unnecessary. ANP is a discovery and identity protocol. It uses Decentralized Identifiers (DIDs) for agent identity and JSON-LD graphs for capability descriptions, providing a foundation for decentralized agent marketplaces where no central registry is required. The stack that is emerging: Capability discovery via ANP or simpler registries, task coordination via A2A, tool calls via MCP, and lightweight messaging via ACP for cases that do not require full task lifecycle management. These layers complement rather than compete. The transport problem that remains Every protocol in this list runs over HTTP. This reflects where the protocols came from: Research teams, API providers, and enterprise software companies building systems where HTTP is an unquestioned assumption. HTTP is the protocol they know, the one their servers already speak, and the one that makes demos easy. The production problem is that HTTP assumes a reachable server. Behind network address translation (NAT) — and 88% of networked devices sit behind NAT — there is no reachable server without a relay. For agent fleets that need to route tasks directly between peers across cloud boundaries, home networks, and edge deployments, this centralization forces every message through relay infrastructure. Relay infrastructure adds latency, cost, and a failure mode. The application-layer protocols solve the semantics of what agents say to each other. They do not solve how agents find each other and establish direct connections. That is a session-layer problem, Layer 5 in the open systems interconnection (OSI) model and none of MCP, A2A, ACP, or ANP address it. The technologies for solving it exist. UDP hole-punching with session traversal utilities for NAT (STUN) provides NAT traversal for roughly 70% of network topologies. X25519 Diffie-Hellman and AES-256-GCM provide authenticated encryption at the tunnel level without a certificate authority. Quick UDP internet connections (QUIC) (RFC 9000) or custom sliding-window protocols over user datagram protocol (UDP) provide reliable delivery without TCP's head-of-line blocking. These are the same primitives that WireGuard uses for VPN tunnels and that WebRTC uses for browser-to-browser media streams. What differs in the agent context is capability-based routing. Agents need to find peers not by hostname but by what those peers can do. A research agent should be able to query \"which peers have real-time foreign exchange data?\" and receive a list of currently active specialist agents. This is closer to a service registry than to DNS, and it is a natural extension of ANP's design philosophy applied to the transport layer. A handful of projects are assembling these pieces. Pilot Protocol has the most complete published specification, with an IETF Internet-Draft covering addressing, tunnel establishment, and NAT traversal for agent networks. libp2p provides a battle-tested foundation with similar primitives. The IETF's QUIC working group is developing NAT traversal extensions that will be relevant here. What convergence will look like The HTTP-based protocols (MCP, A2A) are already converging on stable versions. The next 12 months will see production hardening, security improvements, stateless MCP servers for horizontal scaling, better A2A federation — rather than new fundamental designs. The tool-calling and task-coordination layers are largely solved. The transport layer is 18 to 24 months behind. Expect a period of implementation diversity as teams experiment with different approaches to peer-to-peer (P2P) agent networking, followed by consolidation around a small number of implementations once empirical data on performance and reliability accumulates. The IETF and W3C standardization tracks will likely produce something in the 2027-2028 window, by which time one or two open-source implementations will have accrued enough production deployments to establish de facto standards ahead of the formal specification. For engineering leaders making architecture decisions today, the practical implication is layered adoption. The application-layer protocols are stable enough to build on. MCP adoption now is low-risk. A2A adoption for multi-agent coordination is reasonable with the expectation that the protocol will evolve. The transport layer is where you either build something custom and plan to replace it, or you evaluate early implementations knowing the space is still moving. The teams that will have the most leverage when the transport layer stabilizes are the ones that designed their agent systems with a clean separation between application semantics (MCP, A2A) and transport (whatever sits below). Clean separation is cheap to implement now and expensive to retrofit later, a lesson the microservices era taught anyone who tried to add observability or circuit breaking to systems that had none. Philip Stayetski is a co-founder of Vulture Labs.",
+        "extension": "可继续观察MCP、A2A、ANP、QUIC和P2P方案如何组合成智能体基础设施栈，这会影响企业多智能体架构的长期选型。"
+      },
+      {
+        "id": "5f150254936f02feb9c75b1c4017377b",
+        "title": "人形机器人开始为攀登珠峰训练",
+        "chinese_title": "人形机器人开始为攀登珠峰训练",
+        "original_title": "Humanoid Robot Preparing to Climb Mount Everest",
+        "summary": "一台改装 Unitree G1 已完成厄瓜多尔钦博拉索火山攀登，被包装成冲击珠峰的训练案例，凸显人形机器人在极端地形展示和营销场景中的新一轮竞赛。",
+        "rating": "B",
+        "score": 70,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "该事件更像人形机器人能力秀而非成熟应用落地，可延伸观察电池、运动控制和视觉系统在极端环境中的真实边界，以及厂商如何用冒险叙事争夺注意力。",
+        "entities": [
+          "G1",
+          "Unitree",
+          "人形机器人",
+          "珠穆朗玛峰"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/robots-and-machines/humanoid-robot-training-mount-everest-chimborazo"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781456658,
+        "published_at": "2026-06-15T01:04:18.521510",
+        "source": "Futurism",
+        "url": "https://futurism.com/robots-and-machines/humanoid-robot-training-mount-everest-chimborazo",
+        "event_id": null,
+        "original_url": "https://futurism.com/robots-and-machines/humanoid-robot-training-mount-everest-chimborazo",
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "6f2f11351e965beb0f5f448e446dabaf",
+        "title": "AI公司排队上市，配套创业公司押注IPO窗口",
+        "chinese_title": "AI公司排队上市，配套创业公司押注IPO窗口",
+        "original_title": "As AI companies race to go public, who else is along for the ride?",
+        "summary": "TechCrunch 关注 AI 公司上市潮对周边创业公司的带动效应，一批服务商和相关赛道希望借 SpaceX 等大型 IPO 预期提升融资和退出机会。",
+        "rating": "A",
+        "score": 79,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可继续追踪 AI 基础设施、数据服务和企业软件公司是否会借 IPO 窗口集中融资，也可观察一级市场估值与二级市场情绪的传导。",
+        "entities": [
+          "Ai公司",
+          "Ipo",
+          "SpaceX",
+          "Techcrunch"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781456658,
+        "published_at": "2026-06-15T01:04:18.521535",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/",
+        "event_id": null,
+        "original_url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/",
+        "grade": "A",
+        "level": "A",
+        "original_content": "Startups are trying to \"ride that SpaceX IPO wave.\"",
+        "extension": "可延伸关注 AI 基础设施、金融服务、数据与合规公司如何受益于 IPO 周期，以及一级市场估值是否再次被退出预期推高。"
+      },
+      {
+        "id": "78f5b5629876c54fff6e781c29b0d1cc",
+        "title": "SpaceX估值压过特斯拉，出行科技焦点转向太空",
+        "chinese_title": "SpaceX估值压过特斯拉，出行科技焦点转向太空",
+        "original_title": "TechCrunch Mobility: SpaceX rockets past Tesla",
+        "summary": "TechCrunch Mobility 本期聚焦交通科技变化，讨论 SpaceX 在资本市场和产业叙事上超过 Tesla，以及 AI 正在进入未来出行领域。",
+        "rating": "B",
+        "score": 69,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸观察 SpaceX IPO 预期如何影响马斯克商业版图，以及 Tesla 在自动驾驶、机器人和电动车增长放缓背景下的叙事压力。",
+        "entities": [
+          "Ai",
+          "SpaceX",
+          "Techcrunch Mobility",
+          "Tesla"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/06/14/techcrunch-mobility-spacex-rockets-past-tesla/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781456658,
+        "published_at": "2026-06-15T01:04:18.521581",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/14/techcrunch-mobility-spacex-rockets-past-tesla/",
+        "event_id": null,
+        "original_url": "https://techcrunch.com/2026/06/14/techcrunch-mobility-spacex-rockets-past-tesla/",
+        "grade": "B",
+        "level": "B",
+        "original_content": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, how AI is playing a part.",
+        "extension": "可延伸比较 SpaceX 与 Tesla 的资本叙事分化、马斯克系公司的资源分配，以及 AI 对自动驾驶和航天运营的影响。"
+      },
+      {
+        "id": "8bd982630365b26e0e6b0513d4de504a",
+        "title": "NASA登月火箭部件搭上特朗普涂装列车",
+        "chinese_title": "NASA登月火箭部件搭上特朗普涂装列车",
+        "original_title": "NASA Loads Moon Rocket onto Giant Trump-Branded Train",
+        "summary": "NASA 为 Artemis 3 任务运输太空发射系统部件，相关列车带有特朗普纪念涂装，使登月任务准备过程意外卷入政治化视觉符号。",
+        "rating": "B",
+        "score": 66,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "报道角度可从 Artemis 3 任务进度、SLS 供应链和商业登月器测试展开，但特朗普列车元素更偏传播噱头，技术增量有限。",
+        "entities": [
+          "Artemis",
+          "Blue Origin",
+          "Nasa",
+          "Space Launch System",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/space/nasa-moon-rocket-trump-train"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781456658,
+        "published_at": "2026-06-15T01:04:18.521594",
+        "source": "Futurism",
+        "url": "https://futurism.com/space/nasa-moon-rocket-trump-train",
+        "event_id": null,
+        "original_url": "https://futurism.com/space/nasa-moon-rocket-trump-train",
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "f4075eea64f93e808bb0971a3abfa0a9",
+        "title": "里约自研大模型被质疑由现有模型合并而来",
+        "chinese_title": "里约自研大模型被质疑由现有模型合并而来",
+        "original_title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
+        "summary": "GitHub 讨论称，里约热内卢宣称的本土 LLM 可能并非完全自研，而是基于既有模型合并，引发对公共 AI 项目透明度和模型来源的质疑。",
+        "rating": "A",
+        "score": 80,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可延伸到开源模型署名、公共部门采购和模型训练声明审计，后续若有里约市政府或 IplanRIO 回应，传播价值会进一步上升。",
+        "entities": [
+          "LLM",
+          "Nex-N2",
+          "Rio De Janeiro",
+          "模型合并"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/nex-agi/Nex-N2/issues/4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781456658,
+        "published_at": "2026-06-15T01:04:18.521552",
+        "source": "Hacker News",
+        "url": "https://github.com/nex-agi/Nex-N2/issues/4",
+        "event_id": null,
+        "original_url": "https://github.com/nex-agi/Nex-N2/issues/4",
+        "grade": "A",
+        "level": "A",
+        "original_content": "Comments",
+        "extension": "可继续追踪政府采购 AI、开源模型许可证、模型合并披露义务，以及主权 AI 项目如何证明技术原创性。"
+      },
+      {
+        "id": "2474fd8761a7e18d14fcacc2201f22e8",
+        "title": "欧盟评估美国限制Anthropic模型的实际影响",
+        "chinese_title": "欧盟评估美国限制Anthropic模型的实际影响",
+        "original_title": "EU says it is looking at the practical consequences of US restricting Anthropic's models, notes such measures \"should not be discriminatory against partners\" (Reuters)",
+        "summary": "欧盟委员会表示正在评估美国限制 Anthropic 模型出口指令的实际后果，并强调相关措施不应歧视合作伙伴，AI 模型管制正外溢到盟友关系。",
+        "rating": "A+",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可延伸到AI模型出口管制、盟友技术准入和欧洲AI主权议题，也可能影响美国模型公司在欧盟市场的合规与客户部署。",
+        "entities": [
+          "Ai出口管制",
+          "Anthropic",
+          "欧盟委员会",
+          "美国政府"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260614/p9#a260614p9"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781452966,
+        "published_at": "2026-06-15T00:02:46.394527",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260614/p9#a260614p9",
+        "event_id": null,
+        "original_content": "Reuters : EU says it is looking at the practical consequences of US restricting Anthropic's models, notes such measures “should not be discriminatory against partners” — The European Commission said on Sunday that it is assessing the practical implications of a U.S. export control directive …",
+        "grade": "A+",
+        "extension": "这是 AI 出口管制从芯片扩展到模型能力的重要信号，可延伸观察欧洲云厂商、企业客户和美国盟友之间的合规摩擦。",
+        "original_url": "https://www.techmeme.com/260614/p9#a260614p9",
+        "level": "A+"
+      },
+      {
+        "id": "abdf61b9b4fc0d966eebba9284036a53",
+        "title": "RK3588S小板实现双路无人机检测42FPS",
+        "chinese_title": "RK3588S小板实现双路无人机检测42FPS",
+        "original_title": "Show HN: Dual YOLOv8n UAV Detection on RK3588S at 42 FPS Using NPU",
+        "summary": "开源项目展示在 RK3588S NPU 上运行双路 YOLOv8n 无人机检测，接近摄像头帧率上限，并以较低内存占用完成边缘端实时视觉流水线。",
+        "rating": "B",
+        "score": 72,
+        "type": "product",
+        "typeName": "工具技巧",
+        "expansion": "可延伸观察边缘AI芯片在安防、无人机反制和工业视觉中的落地成本，也可对比国产SoC与GPU方案在实时检测场景的性价比。",
+        "entities": [
+          "Khadas",
+          "Npu",
+          "Rk3588S",
+          "Yolo"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/alebal123bal/khadas_yolov8n_multithread"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781452966,
+        "published_at": "2026-06-15T00:02:46.394554",
+        "source": "Hacker News",
+        "url": "https://github.com/alebal123bal/khadas_yolov8n_multithread",
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "B",
+        "extension": "可延伸到低成本边缘 AI 设备在安防、反无人机和工业巡检中的可用性，也可观察国产 SoC 生态对视觉模型部署的支持成熟度。",
+        "original_url": "https://github.com/alebal123bal/khadas_yolov8n_multithread",
+        "level": "B"
+      },
+      {
+        "id": "56548f4d14d32a9ead6ce790ee71e5f4",
+        "title": "云端大模型淘金热被苹果端侧路线降温",
+        "chinese_title": "云端大模型淘金热被苹果端侧路线降温",
+        "original_title": "Cloud-based LLM gold rush is ending",
+        "summary": "文章借苹果 WWDC 和 Fable 5 封锁讨论云端 LLM 热潮的边际变化，认为端侧智能、技术主权和平台控制权正在重新定义 AI 产业竞争。",
+        "rating": "B",
+        "score": 73,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可延伸到云推理成本、端侧AI芯片、苹果生态策略和创业公司估值重估，观察AI应用从算力扩张转向产品效率的节奏。",
+        "entities": [
+          "Apple",
+          "Fable",
+          "Wwdc",
+          "云端大模型",
+          "端侧Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://automato.substack.com/p/apple-wwdc-and-the-fable-5-embargo"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781452966,
+        "published_at": "2026-06-15T00:02:46.394572",
+        "source": "Hacker News",
+        "url": "https://automato.substack.com/p/apple-wwdc-and-the-fable-5-embargo",
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "B",
+        "extension": "适合延伸为端侧 AI 与云端 API 商业模式之争，也可观察苹果、OpenAI 和模型应用公司在平台依赖上的权力变化。",
+        "original_url": "https://automato.substack.com/p/apple-wwdc-and-the-fable-5-embargo",
+        "level": "B"
+      },
+      {
+        "id": "c8e67b48fd1723833c5b1890ba51e62a",
+        "title": "苹果内部iOS 27已在测试多家第三方AI模型",
+        "chinese_title": "苹果内部iOS 27已在测试多家第三方AI模型",
+        "original_title": "Siri AI is good enough to ease Apple's AI crisis; sources: the ability to tap third party AI models beyond OpenAI's is already active in internal iOS 27 builds (Mark Gurman/Bloomberg)",
+        "summary": "Mark Gurman 称新版 Siri 已足以缓解苹果 AI 危机，内部 iOS 27 构建中已启用除 OpenAI 之外的第三方 AI 模型接入能力。",
+        "rating": "A+",
+        "score": 90,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "该线索可延伸到苹果AI平台化、模型供应商竞合和iPhone系统入口重构，也会影响OpenAI、Google、Anthropic等模型公司的移动端分发机会。",
+        "entities": [
+          "Apple",
+          "Ios",
+          "Mark Gurman",
+          "OpenAI",
+          "Siri"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "https://www.techmeme.com/260614/p8#a260614p8"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781452966,
+        "published_at": "2026-06-15T00:02:46.394589",
+        "source": "Techmeme (apple)",
+        "url": "https://www.techmeme.com/260614/p8#a260614p8",
+        "event_id": null,
+        "original_content": "Mark Gurman / Bloomberg : Siri AI is good enough to ease Apple's AI crisis; sources: the ability to tap third party AI models beyond OpenAI's is already active in internal iOS 27 builds — The company prepares for the foldable iPhone and touch-screen MacBook. — Apple's new Siri AI, despite mainly delivering …",
+        "grade": "A+",
+        "extension": "该消息可延伸到苹果 AI 平台是否从单一 OpenAI 合作转向多模型路由，也会影响 Google、Anthropic 等模型厂商进入 iOS 生态的机会。",
+        "original_url": "https://www.techmeme.com/260614/p8#a260614p8",
+        "level": "A+"
+      },
+      {
+        "id": "64e77325a42a46d51d54cb65572b428e",
+        "title": "欧盟审视Anthropic限制令，担忧美国AI管制外溢",
+        "chinese_title": "欧盟审视Anthropic限制令，担忧美国AI管制外溢",
+        "original_title": "EU Commission looking at practical consequences of Anthropic decision",
+        "summary": "路透报道称，欧盟委员会正在研究美国限制Anthropic模型相关决定的实际影响，并释放出对盟友间非歧视性技术政策的关切。",
+        "rating": "A",
+        "score": 79,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可与同类Techmeme线索合并观察，重点在AI模型出口规则是否从国家安全工具变成产业准入壁垒，以及欧洲云和企业客户如何应对。",
+        "entities": [
+          "Ai出口管制",
+          "Anthropic",
+          "欧盟委员会",
+          "美国"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.reuters.com/legal/litigation/eu-commission-looking-practical-consequences-anthropic-decision-spokesperson-2026-06-14/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781452966,
+        "published_at": "2026-06-15T00:02:46.394604",
+        "source": "Hacker News",
+        "url": "https://www.reuters.com/legal/litigation/eu-commission-looking-practical-consequences-anthropic-decision-spokesperson-2026-06-14/",
+        "event_id": null,
+        "original_url": "https://www.reuters.com/legal/litigation/eu-commission-looking-practical-consequences-anthropic-decision-spokesperson-2026-06-14/",
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "73627f67f57071427f2a7e090ecf5634",
+        "title": "OpenAI和Anthropic员工已套现约140亿美元",
+        "chinese_title": "OpenAI和Anthropic员工已套现约140亿美元",
+        "original_title": "OpenAI, Anthropic Employees Have Already Cashed Out About $14 Billion",
+        "summary": "The Information估算，OpenAI与Anthropic过去五年已允许早期员工和投资者合计出售约140亿美元股份，缓解了私营AI公司上市前的股权流动性压力。",
+        "rating": "A+",
+        "score": 90,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "该事件可延伸到AI独角兽二级市场、IPO动力变化、人才留存成本和估值泡沫，也能观察大模型公司在上市前如何平衡员工激励与资本预期。",
+        "entities": [
+          "Anthropic",
+          "Ipo",
+          "OpenAI",
+          "二级市场"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/openai-anthropic-employees-cashed-14-billion"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781452966,
+        "published_at": "2026-06-15T00:02:46.394628",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/openai-anthropic-employees-cashed-14-billion",
+        "event_id": null
+      }
+    ],
+    "2026-06-12": [
       {
         "id": "0567101cc5cba20923091835ee6cebaf",
         "title": "SpaceX上市或把马斯克推向万亿身家",
@@ -2994,661 +3744,6 @@
         "extension": "可与SpaceX IPO主线合并跟踪，关注交易首日表现和华尔街承销惯例变化。",
         "level": "A",
         "original_url": "https://www.theinformation.com/briefings/spacex-prices-ipo-135-per-share-starts-trading-friday"
-      }
-    ],
-    "2026-06-15": [
-      {
-        "id": "b3f31e072b1eb30245e4c4ef3bc644be",
-        "title": "Grok Build 终端开始支持公式和 LaTeX 渲染",
-        "chinese_title": "Grok Build 终端开始支持公式和 LaTeX 渲染",
-        "original_title": "Grok Build now renders math, formulas, and LaTeX right in your terminal",
-        "summary": "xAI 旗下 Grok 官方账号宣布，Grok Build 现在可在终端内直接渲染数学、公式和 LaTeX，为命令行编程代理补上技术文档和公式展示能力。",
-        "rating": "B",
-        "score": 72,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "适合作为 AI 编程工具体验更新跟踪，可关注其对开发者文档、数学推理和命令行交互的影响；目前仍是单点功能升级，优先级低于模型发布或监管事件。",
-        "entities": [
-          "xAI",
-          "Grok",
-          "Grok Build",
-          "LaTeX",
-          "AI Coding Agent"
-        ],
-        "sourceLinks": [
-          {
-            "name": "X / Grok",
-            "url": "https://x.com/grok/status/2066241561432895735"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781477921,
-        "published_at": "2026-06-15T06:58:41.600903",
-        "source": "X / Grok",
-        "url": "https://x.com/grok/status/2066241561432895735",
-        "original_url": "https://x.com/grok/status/2066241561432895735",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "original_content": "Official Grok account says Grok Build now renders math, formulas, and LaTeX right in the terminal. Observed from X Pro visible column during manual refresh on 2026-06-15 Asia/Shanghai.",
-        "extension": "适合作为 AI 编程工具体验更新跟踪，可关注其对开发者文档、数学推理和命令行交互的影响；目前仍是单点功能升级，优先级低于模型发布或监管事件。"
-      },
-      {
-        "id": "8c46d29c490f39de519e6f91e0493e73",
-        "title": "FBI造了一座假城镇，专门演练网络攻击",
-        "chinese_title": "FBI造了一座假城镇，专门演练网络攻击",
-        "original_title": "The FBI built a small town to simulate cyberattacks",
-        "summary": "FBI 在阿拉巴马州亨茨维尔建设 Kinetic Cyber Range，用酒店、加油站、医院和数据中心等真实场景模拟网络攻击对现实设施的连锁影响。",
-        "rating": "A",
-        "score": 80,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这类沉浸式网络靶场反映网络安全训练从桌面推演走向城市级实战模拟，后续可延伸到关键基础设施防护、车联网取证和政府安全采购。",
-        "entities": [
-          "Fbi",
-          "Kinetic Cyber Range",
-          "关键基础设施",
-          "网络安全"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781470974,
-        "published_at": "2026-06-15T05:02:54.047344",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "There’s also a fake power company to jack up prices thanks to the fake data center. | Image: FBI Last year, the FBI opened a Cyber Range in Huntsville, Alabama, for simulating cyberattacks. Think of it sort of like the famous Hogan's Alley , but for modern digital crime training. It's a massive 22,000 square-foot replica of an entire town, complete with a convenience store, gas station, hospital, and even fully furnished houses. It's a training facility where the bureau can recreate real-world scenarios for training and research purposes. All of the various buildings and facilities are hooked up the way they would be in a real town. There's even a small data center with over 200 servers that can be hacked, infected with malware, and stu … Read the full story at The Verge.",
-        "extension": "这类物理化网络靶场说明关键基础设施防护正在从桌面推演走向实景训练，后续可延伸到电网、医院、数据中心和城市安全预算变化。"
-      },
-      {
-        "id": "0f28d7c8a3fa9db15af22dce4c1a9afd",
-        "title": "智能体科学新测试床：让模型反推黑箱评委偏好",
-        "chinese_title": "智能体科学新测试床：让模型反推黑箱评委偏好",
-        "original_title": "Inverse Rubric Optimization: A testbed for agent science",
-        "summary": "Fulcrum Research 提出 Inverse Rubric Optimization，让智能体在有限标签预算下学习黑箱评委偏好，用更平滑、可控的任务研究长程智能体行为。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该方向可连接智能体评测、奖励黑客和科学发现自动化，后续值得关注是否形成可复现实验基准以及对现有agent eval体系的挑战。",
-        "entities": [
-          "Fable",
-          "Fulcrum Research",
-          "Inverse Rubric Optimization",
-          "Opus",
-          "智能体"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781470974,
-        "published_at": "2026-06-15T05:02:54.047370",
-        "source": "Hacker News",
-        "url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "Comments",
-        "extension": "IRO 可作为评估智能体探索、资源利用和迭代策略的新基准，后续值得关注它是否进入主流 agent benchmark，以及不同模型在标签预算下的 scaling 差异。"
-      },
-      {
-        "id": "64c8ab1c89c197c8bf0d28ea6596bba3",
-        "title": "纳德拉称企业要同时积累人力和Token资本",
-        "chinese_title": "纳德拉称企业要同时积累人力和Token资本",
-        "original_title": "Satya Nadella says companies must build both human capital and token capital, with human judgment guiding AI systems that learn and improve over time (Satya Nadella/@satyanadella)",
-        "summary": "微软CEO Satya Nadella提出企业AI竞争力不只来自前沿模型，还取决于把人工判断、组织知识和AI系统连接成持续学习的认知循环。",
-        "rating": "A+",
-        "score": 85,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "这一表述把AI投入从工具采购推进到组织资产管理层面，可延伸观察微软如何把 Copilot、企业数据和工作流重新包装成管理方法论。后续也可比较谷歌、OpenAI 等厂商对企业AI资本化的叙事差异。",
-        "entities": [
-          "Ai Agent",
-          "Microsoft",
-          "Satya Nadella",
-          "Token Capital"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260614/p13#a260614p13"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781467371,
-        "published_at": "2026-06-15T04:02:51.537822",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260614/p13#a260614p13",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "original_url": "https://www.techmeme.com/260614/p13#a260614p13",
-        "original_content": "Satya Nadella / @satyanadella : Satya Nadella says companies must build both human capital and token capital, with human judgment guiding AI systems that learn and improve over time — https://x.com/...",
-        "extension": "这一表述把企业AI战略从模型采购转向组织学习系统，后续可观察微软Copilot、企业知识库和agent工作流如何围绕token capital重构。"
-      },
-      {
-        "id": "d0ca56d87a104391fd07e7a763da597c",
-        "title": "Anthropic高层赴白宫修复模型争议",
-        "chinese_title": "Anthropic高层赴白宫修复模型争议",
-        "original_title": "Sources: senior Anthropic technical staff are in DC to meet WH officials and try to fix the Mythos 5 dispute; both sides say they are eager to resolve the issue (Maria Curi/Axios)",
-        "summary": "消息称 Anthropic 资深技术人员前往华盛顿会见白宫官员，试图解决围绕 Mythos 5 的争议，双方均表示希望尽快推动问题得到解决。",
-        "rating": "A+",
-        "score": 86,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这条线索可延伸到美国AI出口管制、模型准入和企业合规成本，也可能影响其他前沿模型公司与政府的沟通机制。",
-        "entities": [
-          "Ai安全",
-          "Anthropic",
-          "Mythos",
-          "White House"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260614/p12#a260614p12"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781463733,
-        "published_at": "2026-06-15T03:02:13.166589",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260614/p12#a260614p12",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "original_content": "Maria Curi / Axios : Sources: senior Anthropic technical staff are in DC to meet WH officials and try to fix the Mythos 5 dispute; both sides say they are eager to resolve the issue — Senior technical Anthropic staff are in Washington to meet with White House officials and try to fix a dispute that has taken …",
-        "extension": "该事件显示前沿模型发布或部署争议正在进入更高层级的政策协调流程，后续可追踪白宫对大模型安全、政府采购和合规审查的态度变化。若争议解决方式成型，也可能成为其他AI公司的监管沟通样板。",
-        "original_url": "https://www.techmeme.com/260614/p12#a260614p12"
-      },
-      {
-        "id": "7327275448ecdc1dfc0456924d34cb2f",
-        "title": "加拿大总理警告过度依赖单一AI模型",
-        "chinese_title": "加拿大总理警告过度依赖单一AI模型",
-        "original_title": "Canadian PM says the Anthropic ban shows the dangers of \"over-reliance on certain models\", and compares the risks to those that led to the 2008 financial crisis (Bloomberg)",
-        "summary": "Bloomberg称加拿大总理Mark Carney将Anthropic禁令与2008年金融危机前的集中风险作类比，警告国家和企业不能过度依赖少数前沿AI模型。",
-        "rating": "A",
-        "score": 78,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可继续追踪美国 AI 出口管制对盟友、企业合规和主权 AI 战略的影响，以及各国是否会加速建设本土模型替代方案。",
-        "entities": [
-          "Ai模型",
-          "Anthropic",
-          "Mark Carney",
-          "主权Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260614/p11#a260614p11"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781460147,
-        "published_at": "2026-06-15T02:02:27.675605",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260614/p11#a260614p11",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "Bloomberg : Canadian PM says the Anthropic ban shows the dangers of “over-reliance on certain models”, and compares the risks to those that led to the 2008 financial crisis — Prime Minister Mark Carney said the US export ban blocking all foreign access to Anthropic PBC's latest artificial …",
-        "extension": "该观点可扩展到主权AI、多模型冗余、关键行业供应链韧性，以及各国在美国AI出口政策下的替代方案建设。"
-      },
-      {
-        "id": "ba14d5166e312e353c60ffbfb1bbcc77",
-        "title": "FTX旧日Anthropic持股按现估值已达750亿美元",
-        "chinese_title": "FTX旧日Anthropic持股按现估值已达750亿美元",
-        "original_title": "FTX's former Anthropic stake would be worth about $75B at today's valuation",
-        "summary": "Hacker News 讨论指出，若 FTX 曾经持有的 Anthropic 股份保留至今，按当前估值计算可能价值约 750 亿美元，引发对破产资产处置的回看。",
-        "rating": "B",
-        "score": 66,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可延伸到 AI 独角兽估值膨胀、破产资产回收、早期投资错失收益，以及 Anthropic 在资本市场中的定价变化。",
-        "entities": [
-          "Anthropic",
-          "Ftx",
-          "Hacker News",
-          "估值"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://news.ycombinator.com/item?id=48529190"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781460147,
-        "published_at": "2026-06-15T02:02:27.675652",
-        "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=48529190",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "ede3c3382a2619036ed2681d09d82c03",
-        "title": "AI智能体协议栈还差一块传输层拼图",
-        "chinese_title": "AI智能体协议栈还差一块传输层拼图",
-        "original_title": "MCP solved tool calling. A2A solved coordination. What solves transport?",
-        "summary": "VentureBeat文章认为MCP已解决工具调用、A2A正在解决任务协同，但智能体跨网络直连仍受HTTP和NAT限制，下一轮标准竞争会集中在传输与发现层。",
-        "rating": "A+",
-        "score": 90,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸观察智能体协议栈竞争、云厂商和开源社区对传输标准的主导权，以及企业级 AI 工作流落地成本变化。",
-        "entities": [
-          "A2A",
-          "Ai智能体",
-          "Anp",
-          "MCP",
-          "Quic"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/orchestration/mcp-solved-tool-calling-a2a-solved-coordination-what-solves-transport"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781460147,
-        "published_at": "2026-06-15T02:02:27.675580",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/orchestration/mcp-solved-tool-calling-a2a-solved-coordination-what-solves-transport",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "original_content": "The history of distributed computing is one of protocol proliferation followed by consolidation. Common Object Request Broker Architecture (CORBA), Distributed Component Object Model (DCOM), Java remote method invocation (RMI), and early simple object access protocol (SOAP) competed for the enterprise integration market in the late 1990s before representational state transfer (REST) quietly won by being simpler and HTTP-native. Extensible Messaging and Presence Protocol (XMPP), Internet Relay Chat (IRC), and a dozen proprietary protocols fragmented real-time messaging before MG telemetry transport (MQTT) and WebSockets carved out their respective niches. Every new computing paradigm generates a burst of competing standards, then slowly converges as implementations accumulate and interoperability becomes economically necessary. The AI agent ecosystem is currently in the proliferation phase. Four significant protocols have been published in the past eighteen months: Model context protocol (MCP) from Anthropic in late 2024, agent communication protocol (ACP) from IBM Research in March 2025, Agent2Agent (A2A) from Google in April 2025, and agent network protocol (ANP) from an independent working group. The W3C AI Agent Protocol Community Group has opened a standards track. The Internet Engineering Task Force (IETF) is receiving Internet-Drafts on agent transport. Conferences are running workshops on interoperability. Every week brings a new GitHub repository claiming to solve the agent communication problem. Understanding where and how quickly this converges has real consequences for architecture decisions being made right now. What the protocols actually solve The proliferation looks more chaotic than it is, because most of these protocols address different layers of a stack rather than competing for the same slot. The confusion comes from marketing, which describes each as \"the standard for AI agent communication\" without specifying which aspect of communication. MCP is a tool-calling interface. It defines how a model discovers what functions a server exposes, how to invoke them, and how to interpret the response. It is a typed remote procedure call (RPC) contract between a model client and a tool server, running over HTTP. The Linux Foundation confirmed more than 10,000 active public MCP servers and 164 million monthly Python SDK downloads by April 2026. MCP has already won the tool-calling layer. The standardization work is effectively done. A2A is a task coordination interface. Where MCP defines how an agent calls a tool, A2A defines how two agents delegate a task. It introduces Agent Cards (capability advertisements), task lifecycle states, and three interaction modes: Synchronous, streaming, and asynchronous. Google donated it to the Linux Foundation in June 2025, and enterprise AI teams have adopted it broadly because it fills a real gap that MCP leaves open. ACP is a message envelope format. Lightweight, stateless, designed for agent-to-agent message exchange without A2A's full coordination semantics. It is useful in systems where simple message passing suffices and A2A's task lifecycle overhead is unnecessary. ANP is a discovery and identity protocol. It uses Decentralized Identifiers (DIDs) for agent identity and JSON-LD graphs for capability descriptions, providing a foundation for decentralized agent marketplaces where no central registry is required. The stack that is emerging: Capability discovery via ANP or simpler registries, task coordination via A2A, tool calls via MCP, and lightweight messaging via ACP for cases that do not require full task lifecycle management. These layers complement rather than compete. The transport problem that remains Every protocol in this list runs over HTTP. This reflects where the protocols came from: Research teams, API providers, and enterprise software companies building systems where HTTP is an unquestioned assumption. HTTP is the protocol they know, the one their servers already speak, and the one that makes demos easy. The production problem is that HTTP assumes a reachable server. Behind network address translation (NAT) — and 88% of networked devices sit behind NAT — there is no reachable server without a relay. For agent fleets that need to route tasks directly between peers across cloud boundaries, home networks, and edge deployments, this centralization forces every message through relay infrastructure. Relay infrastructure adds latency, cost, and a failure mode. The application-layer protocols solve the semantics of what agents say to each other. They do not solve how agents find each other and establish direct connections. That is a session-layer problem, Layer 5 in the open systems interconnection (OSI) model and none of MCP, A2A, ACP, or ANP address it. The technologies for solving it exist. UDP hole-punching with session traversal utilities for NAT (STUN) provides NAT traversal for roughly 70% of network topologies. X25519 Diffie-Hellman and AES-256-GCM provide authenticated encryption at the tunnel level without a certificate authority. Quick UDP internet connections (QUIC) (RFC 9000) or custom sliding-window protocols over user datagram protocol (UDP) provide reliable delivery without TCP's head-of-line blocking. These are the same primitives that WireGuard uses for VPN tunnels and that WebRTC uses for browser-to-browser media streams. What differs in the agent context is capability-based routing. Agents need to find peers not by hostname but by what those peers can do. A research agent should be able to query \"which peers have real-time foreign exchange data?\" and receive a list of currently active specialist agents. This is closer to a service registry than to DNS, and it is a natural extension of ANP's design philosophy applied to the transport layer. A handful of projects are assembling these pieces. Pilot Protocol has the most complete published specification, with an IETF Internet-Draft covering addressing, tunnel establishment, and NAT traversal for agent networks. libp2p provides a battle-tested foundation with similar primitives. The IETF's QUIC working group is developing NAT traversal extensions that will be relevant here. What convergence will look like The HTTP-based protocols (MCP, A2A) are already converging on stable versions. The next 12 months will see production hardening, security improvements, stateless MCP servers for horizontal scaling, better A2A federation — rather than new fundamental designs. The tool-calling and task-coordination layers are largely solved. The transport layer is 18 to 24 months behind. Expect a period of implementation diversity as teams experiment with different approaches to peer-to-peer (P2P) agent networking, followed by consolidation around a small number of implementations once empirical data on performance and reliability accumulates. The IETF and W3C standardization tracks will likely produce something in the 2027-2028 window, by which time one or two open-source implementations will have accrued enough production deployments to establish de facto standards ahead of the formal specification. For engineering leaders making architecture decisions today, the practical implication is layered adoption. The application-layer protocols are stable enough to build on. MCP adoption now is low-risk. A2A adoption for multi-agent coordination is reasonable with the expectation that the protocol will evolve. The transport layer is where you either build something custom and plan to replace it, or you evaluate early implementations knowing the space is still moving. The teams that will have the most leverage when the transport layer stabilizes are the ones that designed their agent systems with a clean separation between application semantics (MCP, A2A) and transport (whatever sits below). Clean separation is cheap to implement now and expensive to retrofit later, a lesson the microservices era taught anyone who tried to add observability or circuit breaking to systems that had none. Philip Stayetski is a co-founder of Vulture Labs.",
-        "extension": "可继续观察MCP、A2A、ANP、QUIC和P2P方案如何组合成智能体基础设施栈，这会影响企业多智能体架构的长期选型。"
-      },
-      {
-        "id": "5f150254936f02feb9c75b1c4017377b",
-        "title": "人形机器人开始为攀登珠峰训练",
-        "chinese_title": "人形机器人开始为攀登珠峰训练",
-        "original_title": "Humanoid Robot Preparing to Climb Mount Everest",
-        "summary": "一台改装 Unitree G1 已完成厄瓜多尔钦博拉索火山攀登，被包装成冲击珠峰的训练案例，凸显人形机器人在极端地形展示和营销场景中的新一轮竞赛。",
-        "rating": "B",
-        "score": 70,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "该事件更像人形机器人能力秀而非成熟应用落地，可延伸观察电池、运动控制和视觉系统在极端环境中的真实边界，以及厂商如何用冒险叙事争夺注意力。",
-        "entities": [
-          "G1",
-          "Unitree",
-          "人形机器人",
-          "珠穆朗玛峰"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/robots-and-machines/humanoid-robot-training-mount-everest-chimborazo"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781456658,
-        "published_at": "2026-06-15T01:04:18.521510",
-        "source": "Futurism",
-        "url": "https://futurism.com/robots-and-machines/humanoid-robot-training-mount-everest-chimborazo",
-        "event_id": null,
-        "original_url": "https://futurism.com/robots-and-machines/humanoid-robot-training-mount-everest-chimborazo",
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "6f2f11351e965beb0f5f448e446dabaf",
-        "title": "AI公司排队上市，配套创业公司押注IPO窗口",
-        "chinese_title": "AI公司排队上市，配套创业公司押注IPO窗口",
-        "original_title": "As AI companies race to go public, who else is along for the ride?",
-        "summary": "TechCrunch 关注 AI 公司上市潮对周边创业公司的带动效应，一批服务商和相关赛道希望借 SpaceX 等大型 IPO 预期提升融资和退出机会。",
-        "rating": "A",
-        "score": 79,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "可继续追踪 AI 基础设施、数据服务和企业软件公司是否会借 IPO 窗口集中融资，也可观察一级市场估值与二级市场情绪的传导。",
-        "entities": [
-          "Ai公司",
-          "Ipo",
-          "SpaceX",
-          "Techcrunch"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781456658,
-        "published_at": "2026-06-15T01:04:18.521535",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/",
-        "event_id": null,
-        "original_url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/",
-        "grade": "A",
-        "level": "A",
-        "original_content": "Startups are trying to \"ride that SpaceX IPO wave.\"",
-        "extension": "可延伸关注 AI 基础设施、金融服务、数据与合规公司如何受益于 IPO 周期，以及一级市场估值是否再次被退出预期推高。"
-      },
-      {
-        "id": "78f5b5629876c54fff6e781c29b0d1cc",
-        "title": "SpaceX估值压过特斯拉，出行科技焦点转向太空",
-        "chinese_title": "SpaceX估值压过特斯拉，出行科技焦点转向太空",
-        "original_title": "TechCrunch Mobility: SpaceX rockets past Tesla",
-        "summary": "TechCrunch Mobility 本期聚焦交通科技变化，讨论 SpaceX 在资本市场和产业叙事上超过 Tesla，以及 AI 正在进入未来出行领域。",
-        "rating": "B",
-        "score": 69,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸观察 SpaceX IPO 预期如何影响马斯克商业版图，以及 Tesla 在自动驾驶、机器人和电动车增长放缓背景下的叙事压力。",
-        "entities": [
-          "Ai",
-          "SpaceX",
-          "Techcrunch Mobility",
-          "Tesla"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/06/14/techcrunch-mobility-spacex-rockets-past-tesla/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781456658,
-        "published_at": "2026-06-15T01:04:18.521581",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/06/14/techcrunch-mobility-spacex-rockets-past-tesla/",
-        "event_id": null,
-        "original_url": "https://techcrunch.com/2026/06/14/techcrunch-mobility-spacex-rockets-past-tesla/",
-        "grade": "B",
-        "level": "B",
-        "original_content": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, how AI is playing a part.",
-        "extension": "可延伸比较 SpaceX 与 Tesla 的资本叙事分化、马斯克系公司的资源分配，以及 AI 对自动驾驶和航天运营的影响。"
-      },
-      {
-        "id": "8bd982630365b26e0e6b0513d4de504a",
-        "title": "NASA登月火箭部件搭上特朗普涂装列车",
-        "chinese_title": "NASA登月火箭部件搭上特朗普涂装列车",
-        "original_title": "NASA Loads Moon Rocket onto Giant Trump-Branded Train",
-        "summary": "NASA 为 Artemis 3 任务运输太空发射系统部件，相关列车带有特朗普纪念涂装，使登月任务准备过程意外卷入政治化视觉符号。",
-        "rating": "B",
-        "score": 66,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "报道角度可从 Artemis 3 任务进度、SLS 供应链和商业登月器测试展开，但特朗普列车元素更偏传播噱头，技术增量有限。",
-        "entities": [
-          "Artemis",
-          "Blue Origin",
-          "Nasa",
-          "Space Launch System",
-          "SpaceX"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/space/nasa-moon-rocket-trump-train"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781456658,
-        "published_at": "2026-06-15T01:04:18.521594",
-        "source": "Futurism",
-        "url": "https://futurism.com/space/nasa-moon-rocket-trump-train",
-        "event_id": null,
-        "original_url": "https://futurism.com/space/nasa-moon-rocket-trump-train",
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "f4075eea64f93e808bb0971a3abfa0a9",
-        "title": "里约自研大模型被质疑由现有模型合并而来",
-        "chinese_title": "里约自研大模型被质疑由现有模型合并而来",
-        "original_title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
-        "summary": "GitHub 讨论称，里约热内卢宣称的本土 LLM 可能并非完全自研，而是基于既有模型合并，引发对公共 AI 项目透明度和模型来源的质疑。",
-        "rating": "A",
-        "score": 80,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可延伸到开源模型署名、公共部门采购和模型训练声明审计，后续若有里约市政府或 IplanRIO 回应，传播价值会进一步上升。",
-        "entities": [
-          "LLM",
-          "Nex-N2",
-          "Rio De Janeiro",
-          "模型合并"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/nex-agi/Nex-N2/issues/4"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781456658,
-        "published_at": "2026-06-15T01:04:18.521552",
-        "source": "Hacker News",
-        "url": "https://github.com/nex-agi/Nex-N2/issues/4",
-        "event_id": null,
-        "original_url": "https://github.com/nex-agi/Nex-N2/issues/4",
-        "grade": "A",
-        "level": "A",
-        "original_content": "Comments",
-        "extension": "可继续追踪政府采购 AI、开源模型许可证、模型合并披露义务，以及主权 AI 项目如何证明技术原创性。"
-      },
-      {
-        "id": "2474fd8761a7e18d14fcacc2201f22e8",
-        "title": "欧盟评估美国限制Anthropic模型的实际影响",
-        "chinese_title": "欧盟评估美国限制Anthropic模型的实际影响",
-        "original_title": "EU says it is looking at the practical consequences of US restricting Anthropic's models, notes such measures \"should not be discriminatory against partners\" (Reuters)",
-        "summary": "欧盟委员会表示正在评估美国限制 Anthropic 模型出口指令的实际后果，并强调相关措施不应歧视合作伙伴，AI 模型管制正外溢到盟友关系。",
-        "rating": "A+",
-        "score": 86,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可延伸到AI模型出口管制、盟友技术准入和欧洲AI主权议题，也可能影响美国模型公司在欧盟市场的合规与客户部署。",
-        "entities": [
-          "Ai出口管制",
-          "Anthropic",
-          "欧盟委员会",
-          "美国政府"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260614/p9#a260614p9"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781452966,
-        "published_at": "2026-06-15T00:02:46.394527",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260614/p9#a260614p9",
-        "event_id": null,
-        "original_content": "Reuters : EU says it is looking at the practical consequences of US restricting Anthropic's models, notes such measures “should not be discriminatory against partners” — The European Commission said on Sunday that it is assessing the practical implications of a U.S. export control directive …",
-        "grade": "A+",
-        "extension": "这是 AI 出口管制从芯片扩展到模型能力的重要信号，可延伸观察欧洲云厂商、企业客户和美国盟友之间的合规摩擦。",
-        "original_url": "https://www.techmeme.com/260614/p9#a260614p9",
-        "level": "A+"
-      },
-      {
-        "id": "abdf61b9b4fc0d966eebba9284036a53",
-        "title": "RK3588S小板实现双路无人机检测42FPS",
-        "chinese_title": "RK3588S小板实现双路无人机检测42FPS",
-        "original_title": "Show HN: Dual YOLOv8n UAV Detection on RK3588S at 42 FPS Using NPU",
-        "summary": "开源项目展示在 RK3588S NPU 上运行双路 YOLOv8n 无人机检测，接近摄像头帧率上限，并以较低内存占用完成边缘端实时视觉流水线。",
-        "rating": "B",
-        "score": 72,
-        "type": "product",
-        "typeName": "工具技巧",
-        "expansion": "可延伸观察边缘AI芯片在安防、无人机反制和工业视觉中的落地成本，也可对比国产SoC与GPU方案在实时检测场景的性价比。",
-        "entities": [
-          "Khadas",
-          "Npu",
-          "Rk3588S",
-          "Yolo"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/alebal123bal/khadas_yolov8n_multithread"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781452966,
-        "published_at": "2026-06-15T00:02:46.394554",
-        "source": "Hacker News",
-        "url": "https://github.com/alebal123bal/khadas_yolov8n_multithread",
-        "event_id": null,
-        "original_content": "Comments",
-        "grade": "B",
-        "extension": "可延伸到低成本边缘 AI 设备在安防、反无人机和工业巡检中的可用性，也可观察国产 SoC 生态对视觉模型部署的支持成熟度。",
-        "original_url": "https://github.com/alebal123bal/khadas_yolov8n_multithread",
-        "level": "B"
-      },
-      {
-        "id": "56548f4d14d32a9ead6ce790ee71e5f4",
-        "title": "云端大模型淘金热被苹果端侧路线降温",
-        "chinese_title": "云端大模型淘金热被苹果端侧路线降温",
-        "original_title": "Cloud-based LLM gold rush is ending",
-        "summary": "文章借苹果 WWDC 和 Fable 5 封锁讨论云端 LLM 热潮的边际变化，认为端侧智能、技术主权和平台控制权正在重新定义 AI 产业竞争。",
-        "rating": "B",
-        "score": 73,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可延伸到云推理成本、端侧AI芯片、苹果生态策略和创业公司估值重估，观察AI应用从算力扩张转向产品效率的节奏。",
-        "entities": [
-          "Apple",
-          "Fable",
-          "Wwdc",
-          "云端大模型",
-          "端侧Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://automato.substack.com/p/apple-wwdc-and-the-fable-5-embargo"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781452966,
-        "published_at": "2026-06-15T00:02:46.394572",
-        "source": "Hacker News",
-        "url": "https://automato.substack.com/p/apple-wwdc-and-the-fable-5-embargo",
-        "event_id": null,
-        "original_content": "Comments",
-        "grade": "B",
-        "extension": "适合延伸为端侧 AI 与云端 API 商业模式之争，也可观察苹果、OpenAI 和模型应用公司在平台依赖上的权力变化。",
-        "original_url": "https://automato.substack.com/p/apple-wwdc-and-the-fable-5-embargo",
-        "level": "B"
-      },
-      {
-        "id": "c8e67b48fd1723833c5b1890ba51e62a",
-        "title": "苹果内部iOS 27已在测试多家第三方AI模型",
-        "chinese_title": "苹果内部iOS 27已在测试多家第三方AI模型",
-        "original_title": "Siri AI is good enough to ease Apple's AI crisis; sources: the ability to tap third party AI models beyond OpenAI's is already active in internal iOS 27 builds (Mark Gurman/Bloomberg)",
-        "summary": "Mark Gurman 称新版 Siri 已足以缓解苹果 AI 危机，内部 iOS 27 构建中已启用除 OpenAI 之外的第三方 AI 模型接入能力。",
-        "rating": "A+",
-        "score": 90,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "该线索可延伸到苹果AI平台化、模型供应商竞合和iPhone系统入口重构，也会影响OpenAI、Google、Anthropic等模型公司的移动端分发机会。",
-        "entities": [
-          "Apple",
-          "Ios",
-          "Mark Gurman",
-          "OpenAI",
-          "Siri"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (apple)",
-            "url": "https://www.techmeme.com/260614/p8#a260614p8"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781452966,
-        "published_at": "2026-06-15T00:02:46.394589",
-        "source": "Techmeme (apple)",
-        "url": "https://www.techmeme.com/260614/p8#a260614p8",
-        "event_id": null,
-        "original_content": "Mark Gurman / Bloomberg : Siri AI is good enough to ease Apple's AI crisis; sources: the ability to tap third party AI models beyond OpenAI's is already active in internal iOS 27 builds — The company prepares for the foldable iPhone and touch-screen MacBook. — Apple's new Siri AI, despite mainly delivering …",
-        "grade": "A+",
-        "extension": "该消息可延伸到苹果 AI 平台是否从单一 OpenAI 合作转向多模型路由，也会影响 Google、Anthropic 等模型厂商进入 iOS 生态的机会。",
-        "original_url": "https://www.techmeme.com/260614/p8#a260614p8",
-        "level": "A+"
-      },
-      {
-        "id": "64e77325a42a46d51d54cb65572b428e",
-        "title": "欧盟审视Anthropic限制令，担忧美国AI管制外溢",
-        "chinese_title": "欧盟审视Anthropic限制令，担忧美国AI管制外溢",
-        "original_title": "EU Commission looking at practical consequences of Anthropic decision",
-        "summary": "路透报道称，欧盟委员会正在研究美国限制Anthropic模型相关决定的实际影响，并释放出对盟友间非歧视性技术政策的关切。",
-        "rating": "A",
-        "score": 79,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可与同类Techmeme线索合并观察，重点在AI模型出口规则是否从国家安全工具变成产业准入壁垒，以及欧洲云和企业客户如何应对。",
-        "entities": [
-          "Ai出口管制",
-          "Anthropic",
-          "欧盟委员会",
-          "美国"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.reuters.com/legal/litigation/eu-commission-looking-practical-consequences-anthropic-decision-spokesperson-2026-06-14/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781452966,
-        "published_at": "2026-06-15T00:02:46.394604",
-        "source": "Hacker News",
-        "url": "https://www.reuters.com/legal/litigation/eu-commission-looking-practical-consequences-anthropic-decision-spokesperson-2026-06-14/",
-        "event_id": null,
-        "original_url": "https://www.reuters.com/legal/litigation/eu-commission-looking-practical-consequences-anthropic-decision-spokesperson-2026-06-14/",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "73627f67f57071427f2a7e090ecf5634",
-        "title": "OpenAI和Anthropic员工已套现约140亿美元",
-        "chinese_title": "OpenAI和Anthropic员工已套现约140亿美元",
-        "original_title": "OpenAI, Anthropic Employees Have Already Cashed Out About $14 Billion",
-        "summary": "The Information估算，OpenAI与Anthropic过去五年已允许早期员工和投资者合计出售约140亿美元股份，缓解了私营AI公司上市前的股权流动性压力。",
-        "rating": "A+",
-        "score": 90,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "该事件可延伸到AI独角兽二级市场、IPO动力变化、人才留存成本和估值泡沫，也能观察大模型公司在上市前如何平衡员工激励与资本预期。",
-        "entities": [
-          "Anthropic",
-          "Ipo",
-          "OpenAI",
-          "二级市场"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/openai-anthropic-employees-cashed-14-billion"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781452966,
-        "published_at": "2026-06-15T00:02:46.394628",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/openai-anthropic-employees-cashed-14-billion",
-        "event_id": null
       }
     ],
     "2026-06-14": [
@@ -7585,6 +7680,37 @@
       }
     ],
     "2026-06-10": [
+      {
+        "id": "54f4a491be6ea459f89009f2fc9a7215",
+        "title": "Meta开源TorchCodec新增HDR视频解码",
+        "chinese_title": "Meta开源TorchCodec新增HDR视频解码",
+        "original_title": "TorchCodec 0.14: HDR Video Decoding for CPU and CUDA, and Fast Wav Decoder",
+        "summary": "TorchCodec 0.14发布，新增CPU和CUDA上的HDR视频解码，并引入更快的WAV音频解码器，面向多媒体AI数据处理场景。",
+        "rating": "B",
+        "score": 70,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "该更新可影响视频理解、音频处理和PyTorch生态的数据加载效率，后续可关注其在训练数据管线中的采用情况。",
+        "entities": [
+          "CUDA",
+          "Hdr视频",
+          "Meta",
+          "Pytorch",
+          "Torchcodec"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/meta-pytorch/torchcodec/releases/tag/v0.14.0"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781478149,
+        "published_at": "2026-06-15T07:02:29.392375",
+        "source": "Hacker News",
+        "url": "https://github.com/meta-pytorch/torchcodec/releases/tag/v0.14.0",
+        "event_id": null
+      },
       {
         "id": "6852aa1658a745ca4b01c7056bbce3b2",
         "title": "SpaceX IPO估值押注三大硬科技",
@@ -15336,6 +15462,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-15T06:58:41.600903",
-  "total_news": 450
+  "last_updated": "2026-06-15T07:02:53.389686",
+  "total_news": 454
 }
