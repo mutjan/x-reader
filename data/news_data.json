@@ -3,23 +3,22 @@
     "2026-06-15": [
       {
         "id": "c91a3e687bae1e02f7f0e5b5a77b0279",
-        "title": "Claude接入苹果Foundation Models框架",
-        "chinese_title": "Claude接入苹果Foundation Models框架",
+        "title": "Claude文档接入苹果端侧基础模型",
+        "chinese_title": "Claude文档接入苹果端侧基础模型",
         "original_title": "Apple Foundation Models",
-        "summary": "Anthropic推出Claude for Foundation Models Swift包，让开发者能用苹果Foundation Models统一接口调用Claude，并在应用中按场景切换云端Claude与苹果端侧模型。",
+        "summary": "Claude平台文档新增Apple Foundation Models相关库说明，指向开发者在苹果生态内调用端侧基础模型能力的集成路径。",
         "rating": "A",
         "grade": "A",
         "level": "A",
-        "score": 84,
-        "type": "product",
+        "score": 82,
+        "type": "tool",
         "typeName": "产品发布",
         "expansion": "这会降低苹果生态开发者接入第三方大模型的门槛，也凸显端侧模型与云端模型混合调度正在成为应用架构的新方向，后续可观察OpenAI、Google等模型供应商是否跟进。",
         "entities": [
           "Anthropic",
           "Apple",
-          "Claude",
-          "Foundation Models",
-          "Swift"
+          "Apple Foundation Models",
+          "Claude"
         ],
         "sourceLinks": [
           {
@@ -33,7 +32,9 @@
         "source": "Hacker News (apple)",
         "original_url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
         "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "extension": "这可能影响AI开发者在iOS和macOS端侧部署能力的选择，也可继续观察Anthropic、Apple和第三方开发工具围绕本地模型接口的生态合作。"
       },
       {
         "id": "749eb7252f1aea54614aa46071183572",
@@ -14896,6 +14897,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-15T16:03:09.423801",
+  "last_updated": "2026-06-15T17:02:53.177917",
   "total_news": 437
 }
