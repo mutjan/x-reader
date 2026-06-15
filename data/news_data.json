@@ -2,21 +2,82 @@
   "news": {
     "2026-06-16": [
       {
+        "id": "e3e8057ef54400a84a11951b1771eb41",
+        "title": "美国政府禁用Anthropic安全模型引争议",
+        "chinese_title": "美国政府禁用Anthropic安全模型引争议",
+        "original_title": "The US government’s Anthropic models ban was never about an AI jailbreak",
+        "summary": "TechCrunch称，美国政府要求Anthropic撤下最新网络安全模型，外界争议焦点并非单纯越狱风险，而是AI公司在政府干预和产业政策压力下的边界问题。",
+        "rating": "A+",
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延展到美国政府对AI安全工具的采购、出口和监管边界，以及AI公司与公共部门合作时的合规风险。",
+        "entities": [
+          "Ai安全",
+          "Anthropic",
+          "网络安全模型",
+          "美国政府"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781561053,
+        "published_at": "2026-06-16T06:04:13.240762",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
+        "event_id": null
+      },
+      {
+        "id": "2a32cebee53919b70a4b0f0ad6e4a6be",
+        "title": "深度学习发现南极冰盖下数百次地震",
+        "chinese_title": "深度学习发现南极冰盖下数百次地震",
+        "original_title": "Scientists Detect Hundreds of Earthquakes Deep Beneath Antarctica",
+        "summary": "研究人员借助深度学习算法分析多年地震数据，在南极David Glacier下方发现数百次此前未知的小型地震，为冰盖运动和气候研究提供新线索。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这一发现可继续追踪AI在地球科学、极地监测和气候风险预警中的应用价值，以及相关数据集和算法的可复用性。",
+        "entities": [
+          "David Glacier",
+          "Science",
+          "南极",
+          "地震监测",
+          "深度学习"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/scientists-detect-hundreds-of-earthquakes-deep-beneath-antarctica"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781561053,
+        "published_at": "2026-06-16T06:04:13.240808",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/scientists-detect-hundreds-of-earthquakes-deep-beneath-antarctica",
+        "event_id": null
+      },
+      {
         "id": "cb3c14b11ccc548f6fac79b09e227dcd",
-        "title": "高通洽购Tenstorrent补强AI芯片",
-        "chinese_title": "高通洽购Tenstorrent补强AI芯片",
+        "title": "高通被曝洽购AI芯片公司Tenstorrent",
+        "chinese_title": "高通被曝洽购AI芯片公司Tenstorrent",
         "original_title": "Qualcomm in Talks to Buy Tenstorrent to Expand AI Chip Capabilities",
-        "summary": "高通据称正与AI芯片创业公司Tenstorrent谈判收购，讨论价格可能达到80亿至100亿美元，显示其在端侧和数据中心AI芯片版图上继续补位。",
+        "summary": "The Information报道称，高通正在与AI芯片初创公司Tenstorrent进行收购谈判，讨论价格至少在80亿至100亿美元之间，但交易仍未最终确定。",
         "rating": "A+",
         "score": 88,
-        "type": "industry",
+        "type": "funding",
         "typeName": "行业动态",
         "expansion": "若交易落地，高通将获得更完整的AI芯片设计能力，也会改变与英伟达、AMD及RISC-V生态公司的竞争关系。后续可追踪估值、监管和Tenstorrent客户是否受影响。",
         "entities": [
           "Ai芯片",
           "Qualcomm",
-          "Risc-V",
-          "Tenstorrent"
+          "Tenstorrent",
+          "The Information"
         ],
         "sourceLinks": [
           {
@@ -29,14 +90,17 @@
         "published_at": "2026-06-16T05:04:08.966914",
         "source": "The Information",
         "url": "https://www.theinformation.com/articles/qualcomm-talks-buy-tenstorrent-expand-ai-chip-capabilities",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Qualcomm has been in talks to buy Tenstorrent, a startup that designs chips for AI, according to a person with direct knowledge of the deal. The two companies have discussed a price between at least $8 billion and $10 billion, the person said, which would be a significant premium to Tenstorrent’s last valuation. It’s not clear if the price would include payments tied to performance milestones, as has been the case with past acquisitions of chip startups. The talks are ongoing and the price could change, or the discussions could fall apart. The acquisition of Tenstorrent would give Qualcomm a boost in expanding its offering in AI and data center chips.",
+        "grade": "A+",
+        "extension": "该交易若落地，将成为AI芯片创业公司退出路径的重要样本，也会影响手机芯片厂商进入数据中心和边缘AI市场的节奏。"
       },
       {
         "id": "9f1b84e7f94e0f4636d30924915cd994",
-        "title": "SpaceX上市首日大涨近两成",
-        "chinese_title": "SpaceX上市首日大涨近两成",
+        "title": "SpaceX上市首个完整交易日大涨近20%",
+        "chinese_title": "SpaceX上市首个完整交易日大涨近20%",
         "original_title": "SpaceX stock closed up 19.6% on Monday, its first full day of trading; Musk said it \"might be able to reach\" around $1T revenue in 2030, up from $18.7B in 2025 (Arjun Kharpal/CNBC)",
-        "summary": "SpaceX股票在纳斯达克完整交易首日上涨19.6%，马斯克称公司2030年收入有望接近1万亿美元，资本市场对商业航天增长预期迅速升温。",
+        "summary": "CNBC报道称，SpaceX股票在纳斯达克首个完整交易日收涨19.6%，马斯克称公司2030年营收可能接近1万亿美元，远高于2025年的187亿美元。",
         "rating": "S",
         "score": 92,
         "type": "financial",
@@ -46,7 +110,7 @@
           "Elon Musk",
           "Nasdaq",
           "SpaceX",
-          "Starlink"
+          "商业航天"
         ],
         "sourceLinks": [
           {
@@ -59,23 +123,26 @@
         "published_at": "2026-06-16T05:04:08.966940",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260615/p39#a260615p39",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Arjun Kharpal / CNBC : SpaceX stock closed up 19.6% on Monday, its first full day of trading; Musk said it “might be able to reach” around $1T revenue in 2030, up from $18.7B in 2025 — SpaceX shares climbed 20% on Monday, the first full day of trading following a record-breaking debut last week on the Nasdaq.",
+        "grade": "S",
+        "extension": "可延展到商业航天资产重估、卫星互联网和发射服务收入预期，以及马斯克系公司资本市场联动。"
       },
       {
         "id": "8b31c0156113c60c8008fadaa05f1405",
-        "title": "课堂禁用电子设备后阅读能力提升",
-        "chinese_title": "课堂禁用电子设备后阅读能力提升",
+        "title": "美国教师禁用课堂科技后学生阅读提升",
+        "chinese_title": "美国教师禁用课堂科技后学生阅读提升",
         "original_title": "Student Reading Ability Spikes After Removing Tech From Class",
-        "summary": "明尼阿波利斯一名高中英语教师在课堂禁用手机和笔记本，要求学生用纸笔完成任务后，师生反馈阅读专注度和理解能力明显改善。",
+        "summary": "明尼阿波利斯一名高中教师在课堂禁用手机和笔记本电脑，改用纸笔完成学习任务后，学生和教师称阅读能力与专注度明显改善。",
         "rating": "B",
-        "score": 74,
+        "score": 66,
         "type": "society",
         "typeName": "社会影响",
         "expansion": "这类案例会推动学校重新评估数字化教学与基础读写能力之间的平衡。后续可关注更多对照研究、家长态度和教育科技产品在课堂中的边界调整。",
         "entities": [
-          "Maureen Mulvaney",
-          "Washburn High School",
-          "数字化教学",
+          "Ai代写",
+          "手机禁令",
+          "教育科技",
           "阅读能力"
         ],
         "sourceLinks": [
@@ -89,25 +156,28 @@
         "published_at": "2026-06-16T05:04:08.966958",
         "source": "Futurism",
         "url": "https://futurism.com/future-society/students-reading-improves-no-tech-class",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Would you believe it: a teacher and her students say their reading ability soared after banning tech in the classroom. Maureen Mulvaney, an AP Literature and English teacher at Washburn High School in Minneapolis, started the low tech experiment last year after becoming frustrated with plagiarism, distracted students, and plunging literacy rates. And so, with the enthusiastic support of parents, she banned phones and laptops, requiring all coursework to be done with pencil and paper. The turnaround was quick and resounding, and despite some initial resistance from students, they quickly fell in love with the old, analog ways of doing things. In September, before the experiment started, just 46 percent of Mulvaney’s students said they felt confident about their reading ability. By February, that share shot up to 95 percent. “We’re having a lot of trouble in education and I think what my kids told us was that there is a solution and the solution is to go low-tech. Go back to the old ways of doing things,” Mulvaney told local TV news station KARE 11 . “Remove all the distractions and we can get our kids back.” Mulvaney let her students ease into a tech free environment. First, they started with just ten minutes of silent reading and writing by hand. Still, the first day was “rough,” she wrote in an essay in The Minnesota Star Tribune . Most students quit after just half a page of longhand composition. “I told the kids this is like lifting weights,” she told KARE 11. “You don’t go in and you don’t start with 80 pounds.” By February, most students could write at least two pages, and some were cranking out five or six pages. A striking 79 percent of the students said it was easier to write and organize their thoughts on paper than on a screen. “It was honestly really fun,” one student, Rue Falbo, told KARE 11 . “I enjoyed not being on tech and I think that everyone connected a little bit more.” Khalil Omar said that after the experiment, he enjoyed writing by hand more than typing on a laptop. “On a Chromebook, I might be tempted to maybe look something up, find a definition of something. But when I’m on paper, I feel like I can use my writing for me,” he told the outlet. “When we use paper, there’s no temptation to use AI,” another student told Mulvaney in her essay. “I have to force myself to come up with my own ideas. So I do.” The results of Mulvaney’s experiment are a breath of fresh air in a suffocatingly dire atmosphere of professors and teachers lamenting that their students can’t read anymore , which is on top of all the rampant cheating that AI tools have facilitated. Many blame AI and phones , as there’s mountains of evidence showing the deleterious cognitive effects of both (AI impairs critical thinking and leads to lower brain activity while writing essays , according to the latest research.) What’s particularly interesting here is her decision to ban laptops, too, which often skirt by without blame in these discussions. Schools are banning phones, but not the portable computers students can game, shop, and talk to AI models on. For decades, the assumption has been that laptops are an indispensable learning tool, but experts are now pushing back on the idea . It’s also promising how quickly Mulvaney was able to achieve her results. Perhaps the issue isn’t as impossible to conquer, and the negative cognitive effects of being addicted to advices as irreversible, as it seems. “Kids haven’t changed,” she wrote in the op-ed. “Education has, and we need to go back to what works.” More on education: College Students Are Rapidly Losing the Ability to Read The post Student Reading Ability Spikes After Removing Tech From Class appeared first on Futurism .",
+        "grade": "B",
+        "extension": "可延展到教育科技反思、AI代写与课堂诚信治理，以及学校在数字工具和基础读写能力之间的重新平衡。"
       },
       {
         "id": "a3db7c37aecbcf5561b3960e175d3911",
-        "title": "智元A3机器人现场自主打乒乓",
-        "chinese_title": "智元A3机器人现场自主打乒乓",
+        "title": "智元A3机器人现场自主对战乒乓球",
+        "chinese_title": "智元A3机器人现场自主对战乒乓球",
         "original_title": "AGIBOT A3 is now autonomously playing table tennis against humans at the BAAI 2026 conference",
-        "summary": "智元A3机器人在BAAI 2026展示中自主与人类打乒乓，结合北大算法和高频脉冲相机，实现高速视觉响应、轨迹预测与全身运动规划。",
+        "summary": "AGIBOT A3在BAAI 2026展示与人类自主打乒乓球，结合北大SpikePingPong算法和高频脉冲相机，实现高速视觉响应、轨迹预测和全身运动规划。",
         "rating": "A",
-        "score": 78,
+        "score": 77,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "高速动态控制能力若稳定泛化，可延伸到工厂协作、服务机器人和养老机器人等场景。后续可关注演示是否能转化为可靠的真实环境任务能力。",
         "entities": [
           "A3机器人",
           "Agibot",
-          "Baai",
-          "Peking University",
-          "Spikepingpong"
+          "Spikepingpong",
+          "具身智能",
+          "北京大学"
         ],
         "sourceLinks": [
           {
@@ -120,7 +190,10 @@
         "published_at": "2026-06-16T05:04:08.966975",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1u6nlk7/agibot_a3_is_now_autonomously_playing_table/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Developed with Peking University’s SpikePingPong algorithm and Huang Tiejun’s 20kHz high-frequency pulse camera, its vision response is 10x faster, enabling millimeter level prediction and millisecond decisions for continuous rallies, trajectory tracking, whole-body planning and seamless attack-defense switches. This level of high-speed dynamic control is exactly what real-world applications need: like the safer human-robot collaboration in factories,responsive service/elder care robots. Huge step forward. BAAI Conference 2026 delivering again. Your thoughts? Source: Beijing Academy of AI submitted by /u/BuildwithVignesh [link] [comments]",
+        "grade": "A",
+        "extension": "可延展到高速动态控制在工厂协作、服务机器人和养老机器人中的落地，也可观察国内具身智能硬件展示的产业化信号。"
       },
       {
         "id": "2aa16b171316662e71985f1fa0dfbf07",
@@ -15717,6 +15790,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-16T05:04:43.962258",
-  "total_news": 461
+  "last_updated": "2026-06-16T06:04:45.864069",
+  "total_news": 463
 }
