@@ -2,13 +2,221 @@
   "news": {
     "2026-06-17": [
       {
-        "id": "e7d47159ac0889bccef85df5ba7e09ec",
-        "title": "苹果2027硬件路线曝光，AirPods或装上摄像头",
-        "chinese_title": "苹果2027硬件路线曝光，AirPods或装上摄像头",
-        "original_title": "Apple 2027 rumors: AirPods with cameras for AI and the second folding iPhone",
-        "summary": "报道称苹果计划在2027年前后推出带摄像头的AirPods，并同步推进二代折叠iPhone和周年版Pro机型，试图把耳机、手机与端侧AI能力更深绑定。",
+        "id": "bbd477d08f5ffcf1fa2448afd317cad1",
+        "title": "危险级AI模型将成常态，监管难挡能力外溢",
+        "chinese_title": "危险级AI模型将成常态，监管难挡能力外溢",
+        "original_title": "‘Dangerous’ AI Models Are Coming No Matter What",
+        "summary": "Wired评论称，围绕Anthropic高风险模型的政府打压掩盖了一个更现实的问题：具备高级黑客能力的AI模型很快会从例外变成行业常态。",
+        "rating": "S",
+        "score": 93,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸到AI能力分级、模型发布审查和网络安全攻防市场变化，尤其是开源与闭源模型在危险能力扩散上的责任边界。",
+        "entities": [
+          "Ai安全",
+          "Anthropic",
+          "Claude",
+          "网络安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/dangerous-ai-models-are-coming-no-matter-what/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781632949,
+        "published_at": "2026-06-17T02:02:29.931348",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/dangerous-ai-models-are-coming-no-matter-what/",
+        "event_id": null
+      },
+      {
+        "id": "7c1d626cbdf9ea34e0859821aaeb3996",
+        "title": "OpenAI前沿评测负责人谈模型能力为何难测",
+        "chinese_title": "OpenAI前沿评测负责人谈模型能力为何难测",
+        "original_title": "Why Tejal Patwardhan stopped underestimating the models - Episode 21",
+        "summary": "OpenAI前沿评测团队负责人Tejal Patwardhan在访谈中讨论旧基准为何失效、推理模型如何改变评测，以及下一代模型该如何被预测和衡量。",
         "rating": "A",
-        "score": 78,
+        "score": 81,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可结合大模型评测失灵、benchmark被刷榜和前沿模型风险预测展开，观察评测体系如何影响模型发布节奏与监管依据。",
+        "entities": [
+          "O1",
+          "OpenAI",
+          "Tejal Patwardhan",
+          "模型评测"
+        ],
+        "sourceLinks": [
+          {
+            "name": "OpenAI",
+            "url": "https://www.youtube.com/watch?v=CFqjjKp9Y-Q"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781632949,
+        "published_at": "2026-06-17T02:02:29.931384",
+        "source": "OpenAI",
+        "url": "https://www.youtube.com/watch?v=CFqjjKp9Y-Q",
+        "event_id": null
+      },
+      {
+        "id": "7b34f9e79428503a3c034d9f8bc81566",
+        "title": "AI智能体八爪鱼架构引发开发者讨论",
+        "chinese_title": "AI智能体八爪鱼架构引发开发者讨论",
+        "original_title": "The octopus architecture for AI agents",
+        "summary": "一篇关于AI智能体\"八爪鱼架构\"的文章在Hacker News引发讨论，核心关注点是复杂智能体系统如何拆分工具、记忆和协调能力。",
+        "rating": "A",
+        "score": 77,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸到智能体工程架构范式、上下文管理和多工具协作实践，对比中心化编排与模块化能力分发的优劣。",
+        "entities": [
+          "Ai Agent",
+          "Hacker News",
+          "智能体架构"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://blog.goodman.dev/blog/octopus-agent-architecture/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781632949,
+        "published_at": "2026-06-17T02:02:29.931401",
+        "source": "Hacker News",
+        "url": "https://blog.goodman.dev/blog/octopus-agent-architecture/",
+        "event_id": null
+      },
+      {
+        "id": "5684f01f709d58d4e364cba8439a7b0f",
+        "title": "斯坦福DeLM让多智能体任务成本降一半",
+        "chinese_title": "斯坦福DeLM让多智能体任务成本降一半",
+        "original_title": "Stanford's DeLM cuts multi-agent task costs 50% &mdash; without a central orchestrator",
+        "summary": "斯坦福提出DeLM去中心化语言模型框架，让智能体直接协同而不依赖中央编排器，报道称可把多智能体任务成本降低约50%。",
+        "rating": "S",
+        "score": 92,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可追踪多智能体系统从中央编排转向去中心协作的趋势，并观察其对推理成本、延迟和企业级Agent平台架构的影响。",
+        "entities": [
+          "Ai Agent",
+          "Delm",
+          "Stanford",
+          "多智能体"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat (deepseek)",
+            "url": "https://venturebeat.com/orchestration/stanfords-delm-cuts-multi-agent-task-costs-50-without-a-central-orchestrator"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781632949,
+        "published_at": "2026-06-17T02:02:29.931414",
+        "source": "VentureBeat (deepseek)",
+        "url": "https://venturebeat.com/orchestration/stanfords-delm-cuts-multi-agent-task-costs-50-without-a-central-orchestrator",
+        "event_id": null
+      },
+      {
+        "id": "3ff73afa9967ac7ed36658631c425aa5",
+        "title": "Claude多模型出现错误率升高故障",
+        "chinese_title": "Claude多模型出现错误率升高故障",
+        "original_title": "Claude: Elevated errors across many models",
+        "summary": "Claude状态页显示多个模型出现错误率升高问题，并被Hacker News关注，说明大模型服务稳定性仍是企业采用中的关键风险。",
+        "rating": "B",
+        "score": 70,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "可延伸到AI API可用性、企业SLA和多模型冗余方案，尤其是开发者如何在核心工作流中规避单一模型故障。",
+        "entities": [
+          "Ai服务稳定性",
+          "Anthropic",
+          "Claude"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://status.claude.com/incidents/xmhsglsz3h3w"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781632949,
+        "published_at": "2026-06-17T02:02:29.931425",
+        "source": "Hacker News",
+        "url": "https://status.claude.com/incidents/xmhsglsz3h3w",
+        "event_id": null
+      },
+      {
+        "id": "59f0c20d5c90fb0413ec956283e6277d",
+        "title": "SpaceX据称600亿美元收购Cursor冲击AI编程",
+        "chinese_title": "SpaceX据称600亿美元收购Cursor冲击AI编程",
+        "original_title": "SpaceX will acquire coding tool Cursor to compete with Anthropic, OpenAI",
+        "summary": "Ars Technica报道称，SpaceX将以600亿美元全股票交易收购AI编程工具Cursor，以强化与Anthropic、OpenAI在代码助手领域的竞争。",
+        "rating": "S",
+        "score": 95,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "该消息若属实将重塑AI编程工具估值和航天公司软件版图；但交易规模与背景异常，需要重点核验真伪与来源可靠性。",
+        "entities": [
+          "Anthropic",
+          "Cursor",
+          "OpenAI",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/06/spacex-will-acquire-coding-tool-cursor-to-compete-with-anthropic-openai/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781632949,
+        "published_at": "2026-06-17T02:02:29.931458",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/06/spacex-will-acquire-coding-tool-cursor-to-compete-with-anthropic-openai/",
+        "event_id": null
+      },
+      {
+        "id": "75630f437bb336eb92bfc02edfb19f3f",
+        "title": "泄露财务文件称OpenAI年亏损数十亿美元",
+        "chinese_title": "泄露财务文件称OpenAI年亏损数十亿美元",
+        "original_title": "Leaked financial docs show OpenAI is losing billions of dollars a year",
+        "summary": "Ars Technica报道称，OpenAI在准备IPO相关文件时泄露的财务材料显示收入快速增长，但支出规模更大，年度亏损仍达数十亿美元。",
+        "rating": "A+",
+        "score": 91,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延伸到大模型公司的收入质量、算力成本和IPO估值逻辑，也能对比Anthropic、xAI等公司商业化压力。",
+        "entities": [
+          "Ipo",
+          "OpenAI",
+          "算力成本",
+          "财务文件"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781632949,
+        "published_at": "2026-06-17T02:02:29.931513",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/",
+        "event_id": null
+      },
+      {
+        "id": "e7d47159ac0889bccef85df5ba7e09ec",
+        "title": "苹果被曝2027年推摄像头AirPods进军AI硬件",
+        "chinese_title": "苹果被曝2027年推摄像头AirPods进军AI硬件",
+        "original_title": "Apple 2027 rumors: AirPods with cameras for AI and the second folding iPhone",
+        "summary": "The Verge援引Mark Gurman消息称，苹果计划在2027年推出配备摄像头的AirPods，并同步推进折叠屏iPhone等硬件更新。",
+        "rating": "A",
+        "score": 82,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "如果传闻落地，AirPods将从音频外设变成空间感知入口，后续可延展到苹果AI硬件形态、隐私边界、供应链摄像头模组和Meta等可穿戴竞品反应。",
@@ -32,24 +240,26 @@
         "event_id": null,
         "original_url": "https://www.theverge.com/tech/950826/apple-airpod-camera-ai-foldable-iphone-rumor",
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "AirPods Pro 3 shown with an iPhone and live translation features. | Photo by Amelia Holowaty Krales / The Verge Now that we're clear of WWDC and all of the new AI-powered features coming to Apple's platforms, Bloomberg reporter Mark Gurman has more details about rumored new hardware, like the camera-equipped AirPods he'd previously written about . He says they are currently on schedule for a late 2027 launch, and that while we're checking out beta releases for this fall's iOS 27 update, the new earbuds are internally being tested with next year's update, iOS 28. With cameras mounted in their stems and lights to indicate when data is being uploaded to the cloud, they could give the upgraded version of Siri \"visual context\" about your surroundings, be … Read the full story at The Verge.",
+        "extension": "可观察苹果是否用可穿戴设备补齐视觉AI入口，并延伸到Meta眼镜、手机厂商AI硬件化和供应链机会。"
       },
       {
         "id": "7bb65b780cbbaea9c0986046f5285651",
-        "title": "微软Copilot Cowork转向按量计费，还考虑托管DeepSeek",
-        "chinese_title": "微软Copilot Cowork转向按量计费，还考虑托管DeepSeek",
+        "title": "微软Copilot Cowork转向按量计费",
+        "chinese_title": "微软Copilot Cowork转向按量计费",
         "original_title": "Microsoft is moving Copilot Cowork to usage-based pricing and is considering a Microsoft-hosted version of DeepSeek as a cheaper option (Ina Fried/Axios)",
-        "summary": "Axios报道称微软将把企业AI工具Copilot Cowork改为按使用量计费，并考虑提供由微软托管的DeepSeek模型，作为更低成本的选项。",
+        "summary": "Axios报道称，微软正把企业AI工具Copilot Cowork迁移到按使用量计费，并考虑提供由微软托管的DeepSeek作为更低成本模型选项。",
         "rating": "A+",
-        "score": 90,
+        "score": 88,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "这能观察企业AI从订阅制转向用量制的定价变化，也能延展到微软是否会把中国开源模型纳入Azure托管生态、冲击OpenAI模型的企业默认位置。",
         "entities": [
-          "Azure",
           "Copilot",
           "DeepSeek",
-          "Microsoft"
+          "Microsoft",
+          "企业Ai"
         ],
         "sourceLinks": [
           {
@@ -65,24 +275,26 @@
         "event_id": null,
         "original_url": "https://www.techmeme.com/260616/p31#a260616p31",
         "grade": "A+",
-        "level": "A+"
+        "level": "A+",
+        "original_content": "Ina Fried / Axios : Microsoft is moving Copilot Cowork to usage-based pricing and is considering a Microsoft-hosted version of DeepSeek as a cheaper option — Microsoft is moving Copilot Cowork to usage-based pricing as it expands access to the enterprise AI tool — and is considering a Microsoft-hosted version of DeepSeek as a cheaper model option.",
+        "extension": "可延伸到企业AI从席位订阅转向用量定价的趋势，以及DeepSeek等低成本模型进入微软企业生态后的价格压力。"
       },
       {
         "id": "e1dde2022281358efd7fc3b72194591f",
-        "title": "AI进入劳动力市场后，税制或要重写",
-        "chinese_title": "AI进入劳动力市场后，税制或要重写",
+        "title": "Nature呼吁AI时代税收转向科技利润",
+        "chinese_title": "Nature呼吁AI时代税收转向科技利润",
         "original_title": "AI has entered the workforce: tax tech profits, not people",
-        "summary": "Nature观点文章提出，随着机器替代人类劳动，依赖工资征税的福利国家制度将面临结构性挑战，应转向对科技利润征税。",
+        "summary": "Nature观点文章认为，随着AI和机器替代人类劳动，以工资为基础的福利国家税收体系需要重构，应更多对科技利润征税。",
         "rating": "A",
-        "score": 80,
-        "type": "opinion",
+        "score": 79,
+        "type": "society",
         "typeName": "观点访谈",
         "expansion": "可追踪AI自动化对税收、福利和企业利润分配的冲击，也可与机器人税、算力税等政策讨论连接。",
         "entities": [
-          "Ai",
+          "Ai自动化",
+          "Nature",
           "福利国家",
-          "税制",
-          "自动化"
+          "税收制度"
         ],
         "sourceLinks": [
           {
@@ -97,7 +309,9 @@
         "url": "https://www.nature.com/articles/d41586-026-01877-y",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "Nature, Published online: 16 June 2026; doi:10.1038/d41586-026-01877-y As machines replace human labour, welfare states built on salary-linked taxation will need fundamental redesign.",
+        "extension": "可延伸到AI自动化冲击就业、机器人税和福利国家财政模型，适合与各国AI监管和产业政策联动分析。"
       },
       {
         "id": "5dc50790fcf49cb28b407d2e48cfbada",
@@ -133,6 +347,66 @@
       }
     ],
     "2026-06-16": [
+      {
+        "id": "047ea2d613cac3d702808a24eda7cdc9",
+        "title": "通义千问发布Qwen机器人基础模型套件",
+        "chinese_title": "通义千问发布Qwen机器人基础模型套件",
+        "original_title": "Qwen-Robot Suite: A Foundation Model Suite for Physical World Intelligence",
+        "summary": "Qwen团队发布面向物理世界智能的Qwen-Robot Suite，试图用基础模型套件支撑机器人感知、决策和交互能力。",
+        "rating": "A",
+        "score": 83,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可追踪大模型厂商从语言与多模态走向具身智能的路径，并关注其对机器人开发平台、数据集和端侧部署的影响。",
+        "entities": [
+          "Qwen",
+          "Qwen-Robot Suite",
+          "具身智能",
+          "机器人"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (qwen)",
+            "url": "https://qwen.ai/blog?id=qwen-robotsuite"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781632949,
+        "published_at": "2026-06-17T02:02:29.931503",
+        "source": "Hacker News (qwen)",
+        "url": "https://qwen.ai/blog?id=qwen-robotsuite",
+        "event_id": null
+      },
+      {
+        "id": "db6fda601507e8b4a06fd849bed0a9e8",
+        "title": "科技富豪热衷长寿黑客，Nature追问科学依据",
+        "chinese_title": "科技富豪热衷长寿黑客，Nature追问科学依据",
+        "original_title": "Tech titans are hacking their bodies for a longer life: is there science behind their methods?",
+        "summary": "Nature关注科技圈和富裕人群流行的延寿实践，追问这些身体黑客方法背后是否有可靠科学证据支撑。",
+        "rating": "B",
+        "score": 72,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可延伸到硅谷长寿产业、富豪健康实验和生物技术商业化，连接可穿戴监测、抗衰药物和伦理争议。",
+        "entities": [
+          "Nature",
+          "生物技术",
+          "身体黑客",
+          "长寿科技"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01884-z"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781632949,
+        "published_at": "2026-06-17T02:02:29.931544",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01884-z",
+        "event_id": null
+      },
       {
         "id": "89cef83d21d0b87fcdf9d34ffac3b782",
         "title": "SpaceX押注Cursor追赶OpenAI和Anthropic",
@@ -719,12 +993,12 @@
       },
       {
         "id": "e8b043faeedc2403aacbef7bd2e08a22",
-        "title": "苹果防晕车动效功能实测有效",
-        "chinese_title": "苹果防晕车动效功能实测有效",
-        "original_title": "Apple&rsquo;s weird anti-nausea dots cured my car sickness",
-        "summary": "The Verge作者体验苹果Vehicle Motion Cues后称，该功能通过屏幕动态提示缓解车内看屏幕导致的晕动感，实际体验有明显改善。",
+        "title": "苹果防晕车动态圆点功能获用户实测关注",
+        "chinese_title": "苹果防晕车动态圆点功能获用户实测关注",
+        "original_title": "Apple's weird anti-nausea dots cured my car sickness",
+        "summary": "The Verge作者实测苹果Vehicle Motion Cues防晕车功能后称效果明显，该功能通过屏幕边缘动态圆点降低乘车时的不适感。",
         "rating": "B",
-        "score": 73,
+        "score": 66,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "可延伸到移动设备通过传感器改善人体体验的方向，以及无障碍功能如何变成大众场景下的产品卖点。",
@@ -743,12 +1017,14 @@
         "sources": 1,
         "timestamp": 1781613371,
         "published_at": "2026-06-16T20:36:11.137214",
-        "source": "The Verge -  Tech Posts (apple)",
+        "source": "Hacker News (apple)",
         "url": "https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work",
         "event_id": null,
         "grade": "B",
         "level": "B",
-        "original_url": "https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work"
+        "original_url": "https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work",
+        "original_content": "Comments",
+        "extension": "可扩展到手机系统无障碍功能如何进入大众场景，以及苹果在传感器、视觉提示和健康体验上的细节竞争。"
       },
       {
         "id": "bb74eb672dcf7b0ba01c384af6a8a70f",
@@ -15456,6 +15732,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-17T01:25:29.250706",
-  "total_news": 454
+  "last_updated": "2026-06-17T02:03:21.516839",
+  "total_news": 463
 }
