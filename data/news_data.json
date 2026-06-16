@@ -2,6 +2,190 @@
   "news": {
     "2026-06-16": [
       {
+        "id": "e36735f8d584e718368f0f3a93416f63",
+        "title": "皮查伊斯坦福演讲遭抗议，谷歌防务合作再引争议",
+        "chinese_title": "皮查伊斯坦福演讲遭抗议，谷歌防务合作再引争议",
+        "original_title": "Sundar Pichai faces boos, walkout at Stanford graduation ceremony over Google’s Israel, ICE ties",
+        "summary": "谷歌CEO桑达尔·皮查伊在斯坦福毕业典礼上遭遇嘘声和学生离场，抗议焦点指向谷歌与以色列及美国移民执法相关的技术合作，AI防务应用再次卷入校园伦理争议。",
+        "rating": "A",
+        "score": 78,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸关注大型科技公司防务合同、校园抗议和AI伦理审查之间的冲突，以及谷歌内部员工和高校人才招聘是否受影响。",
+        "entities": [
+          "Ai防务",
+          "Google",
+          "Stanford",
+          "Sundar Pichai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/06/15/sundar-pichai-faces-boos-walkout-at-stanford-graduation-ceremony-over-googles-israel-ice-ties/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781568260,
+        "published_at": "2026-06-16T08:04:20.549910",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/15/sundar-pichai-faces-boos-walkout-at-stanford-graduation-ceremony-over-googles-israel-ice-ties/",
+        "event_id": null
+      },
+      {
+        "id": "6930feb67cd99b4f90cf45703ff0daa2",
+        "title": "Tensordyne称对数AI芯片能效大幅超过Blackwell",
+        "chinese_title": "Tensordyne称对数AI芯片能效大幅超过Blackwell",
+        "original_title": "Tensordyne announces Logarithmic AI compute chips. 17x more tokens per watt and 13x higher throughput than NVIDIA Blackwell.",
+        "summary": "Tensordyne发布号称基于对数计算的新型AI推理芯片，宣称每瓦 token 数提升17倍、吞吐量较英伟达Blackwell高13倍，但目前信息主要来自公司发布材料和社区讨论，仍待第三方验证。",
+        "rating": "B",
+        "score": 69,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "若指标被验证，可能冲击AI推理芯片的能效竞争逻辑；后续应关注真实基准、量产工艺、软件栈兼容性和与英伟达生态的差距。",
+        "entities": [
+          "Ai芯片",
+          "Blackwell",
+          "NVIDIA",
+          "Tensordyne",
+          "对数计算"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1u6u17i/tensordyne_announces_logarithmic_ai_compute_chips/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781568260,
+        "published_at": "2026-06-16T08:04:20.549942",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1u6u17i/tensordyne_announces_logarithmic_ai_compute_chips/",
+        "event_id": null
+      },
+      {
+        "id": "5dfbd3dff212e54bdfa9767aaa285167",
+        "title": "Cursor成长内幕曝光，与Anthropic关系一度紧张",
+        "chinese_title": "Cursor成长内幕曝光，与Anthropic关系一度紧张",
+        "original_title": "A profile of Cursor, including its hiring process and its testy relationship with Anthropic, which told Cursor that Claude Code was mainly a research effort (Business Insider)",
+        "summary": "Business Insider报道梳理Cursor的招聘方式、公司文化及其与Anthropic的微妙关系，其中包括Anthropic曾称Claude Code主要是研究项目，折射AI编程工具公司对底层模型供应的依赖与博弈。",
+        "rating": "A+",
+        "score": 89,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可继续追踪Cursor在模型供应商之间的策略摇摆，以及Claude Code、Copilot、OpenAI Codex等工具对开发者市场的争夺。",
+        "entities": [
+          "Ai编程",
+          "Anthropic",
+          "Claude",
+          "Cursor",
+          "Michael Truell"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260615/p43#a260615p43"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781568260,
+        "published_at": "2026-06-16T08:04:20.549964",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260615/p43#a260615p43",
+        "event_id": null
+      },
+      {
+        "id": "6e6f28c4791f2a5d8176fb2e302d5048",
+        "title": "2B小模型Cleo尝试复现完整数据分析师流程",
+        "chinese_title": "2B小模型Cleo尝试复现完整数据分析师流程",
+        "original_title": "Cleo: trying to fit full analyst behavior in a 2B model [P]",
+        "summary": "开发者展示Cleo，一个基于Qwen 2B底座微调的数据分析模型，尝试把检索、修复、回答等分析师工作流放进统一推理框架，探索小模型承担结构化分析任务的可行性。",
+        "rating": "B",
+        "score": 71,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸观察企业内部数据分析是否会从大模型API转向更便宜、可本地部署的小模型工作流，以及text-to-SQL工具的产品形态变化。",
+        "entities": [
+          "Cleo",
+          "Qwen",
+          "Text-To-Sql",
+          "小模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1u6udpb/cleo_trying_to_fit_full_analyst_behavior_in_a_2b/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781568260,
+        "published_at": "2026-06-16T08:04:20.549979",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1u6udpb/cleo_trying_to_fit_full_analyst_behavior_in_a_2b/",
+        "event_id": null
+      },
+      {
+        "id": "606506948cd27eaa09b2b7212a9549c0",
+        "title": "开源权重不够，研究者呼吁开放训练框架",
+        "chinese_title": "开源权重不够，研究者呼吁开放训练框架",
+        "original_title": "Open weights are not enough: we need open training frameworks for research and better algorithms [P]",
+        "summary": "FeynRL作者认为，开放模型权重并不足以推动AI研究进步，社区还需要可观察、可修改的训练框架，让研究者能真正改进算法，而不是被隐藏训练系统限制。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可关注开源AI从开放权重走向开放训练过程的趋势，以及后训练框架是否成为学术界和独立开发者突破闭源实验壁垒的新基础设施。",
+        "entities": [
+          "Feynrl",
+          "LLM",
+          "开源权重",
+          "强化学习",
+          "训练框架"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1u6p7k3/open_weights_are_not_enough_we_need_open_training/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781568260,
+        "published_at": "2026-06-16T08:04:20.549995",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1u6p7k3/open_weights_are_not_enough_we_need_open_training/",
+        "event_id": null
+      },
+      {
+        "id": "c8bbf808f0c7b80fe5ed222839672150",
+        "title": "研究发现大模型有偏爱的虚构人物姓名组合",
+        "chinese_title": "研究发现大模型有偏爱的虚构人物姓名组合",
+        "original_title": "AI language models have favorite names, and we mapped them [R]",
+        "summary": "研究者在模型差异分析中发现，不同LLM会反复生成特定人物姓名组合，这些名字甚至会跨网站出现，说明模型版本可能留下可被追踪的文本指纹。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该发现可延伸到AI内容溯源、模型指纹识别和合成文本检测，也可能影响网站内容质量评估与模型水印研究。",
+        "entities": [
+          "Cdd",
+          "Claude",
+          "LLM",
+          "合成文本",
+          "模型指纹"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1u6mn3q/ai_language_models_have_favorite_names_and_we/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781568260,
+        "published_at": "2026-06-16T08:04:20.550031",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1u6mn3q/ai_language_models_have_favorite_names_and_we/",
+        "event_id": null
+      },
+      {
         "id": "2e54cbf3f27cac20edc93b20ecb25199",
         "title": "高通洽购AI芯片公司Tenstorrent，估值最高百亿美元",
         "chinese_title": "高通洽购AI芯片公司Tenstorrent，估值最高百亿美元",
@@ -33,6 +217,41 @@
         "grade": "A+",
         "level": "A+",
         "original_url": "https://www.techmeme.com/260615/p41#a260615p41"
+      },
+      {
+        "id": "8a61d04b1aa8484faf55dc03daed8ac2",
+        "title": "居家脑机接口帮助渐冻症患者恢复日常沟通",
+        "chinese_title": "居家脑机接口帮助渐冻症患者恢复日常沟通",
+        "original_title": "At-home brain implant gives man with motor neuron disease his daily life back",
+        "summary": "Nature报道一款可在家使用的脑机接口设备，已帮助一名运动神经元疾病患者近两年内进行沟通并控制电脑，显示侵入式神经技术正从实验室走向长期日常使用。",
+        "rating": "B",
+        "score": 87,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "这一案例可继续追踪侵入式脑机接口的长期安全性、居家护理成本和监管审批路径，也会影响 Neuralink 等同类方案的临床叙事。",
+        "entities": [
+          "Nature",
+          "神经康复",
+          "脑机接口",
+          "运动神经元疾病"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01863-4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781564565,
+        "published_at": "2026-06-16T07:02:45.083901",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01863-4",
+        "event_id": null,
+        "grade": "A+",
+        "level": "B",
+        "original_url": "https://www.nature.com/articles/d41586-026-01863-4",
+        "original_content": "Nature, Published online: 15 June 2026; doi:10.1038/d41586-026-01863-4 The device has helped a man with motor neuron disease communicate and control his computer for nearly two years.",
+        "extension": "可延伸关注脑机接口在医疗康复中的商业化路径、长期安全性、居家护理成本，以及Neuralink等公司的临床进展对比。"
       },
       {
         "id": "e3e8057ef54400a84a11951b1771eb41",
@@ -1165,39 +1384,6 @@
       }
     ],
     "2026-06-15": [
-      {
-        "id": "8a61d04b1aa8484faf55dc03daed8ac2",
-        "title": "家用脑机接口帮渐冻症患者重获日常沟通",
-        "chinese_title": "家用脑机接口帮渐冻症患者重获日常沟通",
-        "original_title": "At-home brain implant gives man with motor neuron disease his daily life back",
-        "summary": "Nature报道，一款可在家长期使用的脑植入设备，已帮助一名运动神经元病患者近两年持续沟通并控制电脑，显示脑机接口从实验室走向日常护理的潜力。",
-        "rating": "B",
-        "score": 74,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "这一案例可继续追踪侵入式脑机接口的长期安全性、居家护理成本和监管审批路径，也会影响 Neuralink 等同类方案的临床叙事。",
-        "entities": [
-          "Nature",
-          "神经植入设备",
-          "脑机接口",
-          "运动神经元病"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01863-4"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781564565,
-        "published_at": "2026-06-16T07:02:45.083901",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01863-4",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "original_url": "https://www.nature.com/articles/d41586-026-01863-4"
-      },
       {
         "id": "45bec25e9e0aac6d4da801e8c4231e3b",
         "title": "英国拟禁止16岁以下用户使用社交媒体",
@@ -13573,6 +13759,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-16T07:03:26.424931",
-  "total_news": 397
+  "last_updated": "2026-06-16T08:05:13.493762",
+  "total_news": 403
 }
