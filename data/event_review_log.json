@@ -1100,6 +1100,43 @@
           "reason": "该新闻与 Reuters 的 DeepSeek 暂缓列入实体清单报道描述同一事件，应合并为一个 DeepSeek 实体清单事件。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-06-18T03:11:02.419520",
+      "batch_id": "ab85c480",
+      "corrections_applied": 5,
+      "details": [
+        {
+          "news_id": "b1ff8caf310636678e9b4ded30d6d8d8",
+          "from_event_id": "0513195b",
+          "to_event_id": "33a32e1d",
+          "reason": "同属美国限制Anthropic前沿模型访问引发盟友断供焦虑的主线，应并入既有Fable/Mythos断供事件。"
+        },
+        {
+          "news_id": "7a5a04a057c40ba8e7453d3c94ae8574",
+          "from_event_id": "6904e64d",
+          "to_event_id": "33a32e1d",
+          "reason": "G7规则协作争议直接围绕美国对Mythos的限制和盟友担忧，应并入既有Anthropic模型断供事件。"
+        },
+        {
+          "news_id": "69a6faeee2aa0d0036bfcd8f39c252cf",
+          "from_event_id": "9465b72e",
+          "to_event_id": "33a32e1d",
+          "reason": "报道核心是Anthropic因美国出口管制下线Fable/Mythos，与既有美国命令暂停最强模型事件相同。"
+        },
+        {
+          "news_id": "2775260c7afe437285022c58ae76a5ae",
+          "from_event_id": "9465b72e",
+          "to_event_id": "33a32e1d",
+          "reason": "报道核心同为美国对Anthropic Fable/Mythos模型的断供限制，不应单独成组。"
+        },
+        {
+          "news_id": "a6c47153e28403edf4313246833cd60f",
+          "from_event_id": "9a1e121e",
+          "to_event_id": "33a32e1d",
+          "reason": "员工指责政府针对Fable模型是同一Anthropic断供事件的政治和组织反应侧面。"
+        }
+      ]
     }
   ],
   "reviews": [
