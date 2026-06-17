@@ -2,73 +2,13 @@
   "news": {
     "2026-06-18": [
       {
-        "id": "363b8b3371a3f6151f3d2273f16f9f56",
-        "title": "白宫要求Anthropic交出不可越狱护栏",
-        "chinese_title": "白宫要求Anthropic交出不可越狱护栏",
-        "original_title": "Trump administration officials say Anthropic must ensure Fable 5's guardrails can't be circumvented before rerelease; experts say that may not be possible (Hugo Lowell/Wired)",
-        "summary": "美国政府要求Anthropic在重新开放Fable 5前证明护栏无法被绕过，但安全专家认为这一标准接近不可能，模型管制争议继续升级。",
-        "rating": "B",
-        "score": 67,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这会把AI安全从厂商自律推向政府可验证标准，后续可观察模型上架、出口管制和企业客户使用边界如何被重写。",
-        "entities": [
-          "Ai安全",
-          "Anthropic",
-          "Fable",
-          "白宫"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260617/p49#a260617p49"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781737562,
-        "published_at": "2026-06-18T07:06:02.505615",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260617/p49#a260617p49",
-        "event_id": null
-      },
-      {
-        "id": "956f264d52f3ed71461967315dd0bb36",
-        "title": "SK电信卷入Anthropic模型管制风波",
-        "chinese_title": "SK电信卷入Anthropic模型管制风波",
-        "original_title": "The Korean Telecom Giant at the Center of Anthropic’s Mythos Controversy",
-        "summary": "Wired称白宫曾要求Anthropic撤销SK Telecom访问Claude Mythos的权限，理由是所谓中国关联，使模型下线事件牵出跨境客户审查。",
-        "rating": "B",
-        "score": 67,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "事件可继续延伸到AI出口管制如何影响盟友企业、云端模型客户名单审查，以及电信运营商在主权AI中的敏感位置。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Sk Telecom",
-          "白宫"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Feed: Artificial Intelligence Latest",
-            "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781737562,
-        "published_at": "2026-06-18T07:06:02.505643",
-        "source": "Feed: Artificial Intelligence Latest",
-        "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
-        "event_id": null
-      },
-      {
         "id": "2d3705b270cafd1df0bb5f4938bac376",
         "title": "AWS推出会随智能体使用进化的上下文图谱",
         "chinese_title": "AWS推出会随智能体使用进化的上下文图谱",
         "original_title": "AWS enters the context layer race with a graph that learns from agents, not manual curation",
         "summary": "AWS发布Context等一组上下文智能产品，试图让企业AI代理通过使用过程自动完善知识图谱，降低人工整理企业数据上下文的成本。",
-        "rating": "A+",
-        "score": 91,
+        "rating": "A",
+        "score": 82,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "企业智能体落地的瓶颈正从模型本身转向上下文层，AWS入局会带动云厂商围绕知识图谱、数据目录和Agent工作流展开竞争。",
@@ -89,37 +29,10 @@
         "published_at": "2026-06-18T07:06:02.505676",
         "source": "VentureBeat",
         "url": "https://venturebeat.com/data/aws-enters-the-context-layer-race-with-a-graph-that-learns-from-agents-not-manual-curation",
-        "event_id": null
-      },
-      {
-        "id": "25d4cd587a680f787a9d7602bb4a7c75",
-        "title": "OpenRouter用机器人场景比较Claude与Grok",
-        "chinese_title": "OpenRouter用机器人场景比较Claude与Grok",
-        "original_title": "A Robot Is Sprinting Towards You: Do You Want It Running on Claude or Grok?",
-        "summary": "OpenRouter文章以机器人快速接近等场景讨论不同模型在代理决策中的表现，试图把大模型能力比较放到更具风险感的应用语境里。",
-        "rating": "B",
-        "score": 71,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "机器人与AI代理结合会把模型选择从聊天体验推向安全关键场景，但该材料更适合做模型评测方法论的补充线索。",
-        "entities": [
-          "Ai Agent",
-          "Claude",
-          "Grok",
-          "Openrouter"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://openrouter.ai/blog/insights/royale-last-agent-standing/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781737562,
-        "published_at": "2026-06-18T07:06:02.505764",
-        "source": "Hacker News",
-        "url": "https://openrouter.ai/blog/insights/royale-last-agent-standing/",
-        "event_id": null
+        "event_id": null,
+        "original_url": "https://venturebeat.com/data/aws-enters-the-context-layer-race-with-a-graph-that-learns-from-agents-not-manual-curation",
+        "grade": "A",
+        "level": "A"
       },
       {
         "id": "e4b5910193326f4e14b85f8a7706fe73",
