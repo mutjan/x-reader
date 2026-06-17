@@ -2,6 +2,126 @@
   "news": {
     "2026-06-18": [
       {
+        "id": "363b8b3371a3f6151f3d2273f16f9f56",
+        "title": "白宫要求Anthropic交出不可越狱护栏",
+        "chinese_title": "白宫要求Anthropic交出不可越狱护栏",
+        "original_title": "Trump administration officials say Anthropic must ensure Fable 5's guardrails can't be circumvented before rerelease; experts say that may not be possible (Hugo Lowell/Wired)",
+        "summary": "美国政府要求Anthropic在重新开放Fable 5前证明护栏无法被绕过，但安全专家认为这一标准接近不可能，模型管制争议继续升级。",
+        "rating": "B",
+        "score": 67,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这会把AI安全从厂商自律推向政府可验证标准，后续可观察模型上架、出口管制和企业客户使用边界如何被重写。",
+        "entities": [
+          "Ai安全",
+          "Anthropic",
+          "Fable",
+          "白宫"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260617/p49#a260617p49"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781737562,
+        "published_at": "2026-06-18T07:06:02.505615",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260617/p49#a260617p49",
+        "event_id": null
+      },
+      {
+        "id": "956f264d52f3ed71461967315dd0bb36",
+        "title": "SK电信卷入Anthropic模型管制风波",
+        "chinese_title": "SK电信卷入Anthropic模型管制风波",
+        "original_title": "The Korean Telecom Giant at the Center of Anthropic’s Mythos Controversy",
+        "summary": "Wired称白宫曾要求Anthropic撤销SK Telecom访问Claude Mythos的权限，理由是所谓中国关联，使模型下线事件牵出跨境客户审查。",
+        "rating": "B",
+        "score": 67,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "事件可继续延伸到AI出口管制如何影响盟友企业、云端模型客户名单审查，以及电信运营商在主权AI中的敏感位置。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Sk Telecom",
+          "白宫"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781737562,
+        "published_at": "2026-06-18T07:06:02.505643",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
+        "event_id": null
+      },
+      {
+        "id": "2d3705b270cafd1df0bb5f4938bac376",
+        "title": "AWS推出会随智能体使用进化的上下文图谱",
+        "chinese_title": "AWS推出会随智能体使用进化的上下文图谱",
+        "original_title": "AWS enters the context layer race with a graph that learns from agents, not manual curation",
+        "summary": "AWS发布Context等一组上下文智能产品，试图让企业AI代理通过使用过程自动完善知识图谱，降低人工整理企业数据上下文的成本。",
+        "rating": "A+",
+        "score": 91,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "企业智能体落地的瓶颈正从模型本身转向上下文层，AWS入局会带动云厂商围绕知识图谱、数据目录和Agent工作流展开竞争。",
+        "entities": [
+          "Ai Agent",
+          "Aws",
+          "Aws Context",
+          "知识图谱"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/data/aws-enters-the-context-layer-race-with-a-graph-that-learns-from-agents-not-manual-curation"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781737562,
+        "published_at": "2026-06-18T07:06:02.505676",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/data/aws-enters-the-context-layer-race-with-a-graph-that-learns-from-agents-not-manual-curation",
+        "event_id": null
+      },
+      {
+        "id": "25d4cd587a680f787a9d7602bb4a7c75",
+        "title": "OpenRouter用机器人场景比较Claude与Grok",
+        "chinese_title": "OpenRouter用机器人场景比较Claude与Grok",
+        "original_title": "A Robot Is Sprinting Towards You: Do You Want It Running on Claude or Grok?",
+        "summary": "OpenRouter文章以机器人快速接近等场景讨论不同模型在代理决策中的表现，试图把大模型能力比较放到更具风险感的应用语境里。",
+        "rating": "B",
+        "score": 71,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "机器人与AI代理结合会把模型选择从聊天体验推向安全关键场景，但该材料更适合做模型评测方法论的补充线索。",
+        "entities": [
+          "Ai Agent",
+          "Claude",
+          "Grok",
+          "Openrouter"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://openrouter.ai/blog/insights/royale-last-agent-standing/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781737562,
+        "published_at": "2026-06-18T07:06:02.505764",
+        "source": "Hacker News",
+        "url": "https://openrouter.ai/blog/insights/royale-last-agent-standing/",
+        "event_id": null
+      },
+      {
         "id": "e4b5910193326f4e14b85f8a7706fe73",
         "title": "SpaceX系导弹公司冲刺120亿美元估值",
         "chinese_title": "SpaceX系导弹公司冲刺120亿美元估值",
@@ -13176,186 +13296,6 @@
         "level": "S",
         "original_url": "https://venturebeat.com/technology/surprise-upset-gpt-5-5-beats-claude-fable-5-on-brutal-new-agents-last-exam-benchmark",
         "importance_score": 92
-      },
-      {
-        "id": "1001c996af28ba765a93cab9b02f64d8",
-        "title": "苹果新Siri选择克制少话的AI人格",
-        "chinese_title": "苹果新Siri选择克制少话的AI人格",
-        "original_title": "Apple&rsquo;s new Siri AI knows when to shut up",
-        "summary": "The Verge体验苹果新版Siri后认为，其AI交互风格明显更简短克制，与常见聊天机器人热情冗长的设计形成对比。",
-        "rating": "A",
-        "score": 83,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "苹果若把低干扰、少拟人化作为Siri差异化路线，可能影响语音助手产品对人格化和用户黏性的取舍，也会给OpenAI、Google等竞品带来新的体验标尺。",
-        "entities": [
-          "Ai助手",
-          "Apple",
-          "Siri",
-          "聊天机器人"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts (apple)",
-            "url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781132608,
-        "published_at": "2026-06-11T07:03:28.469442",
-        "source": "The Verge -  Tech Posts (apple)",
-        "url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality",
-        "event_id": null,
-        "original_content": "Apple's new Siri AI is finally here, and so far, it seems like it works . I have access and have been messing around with it, and my biggest impression so far is that Siri AI is quite curt - which I mean as a compliment. Many AI chatbots are cheery and wordy. While a more verbose and casual personality can make a chatbot seem friendlier and more fun to talk to, there are instances of users becoming extremely attached to their chatbot of choice. People have fallen in love with chatbots . When OpenAI suddenly shut down GPT-4o, users grieved its loss , and the company brought the model back for paid users . And while some companies have dialed bac … Read the full story at The Verge.",
-        "grade": "A",
-        "extension": "苹果的克制人格设计可能影响AI助手交互范式，也可延伸到用户依赖、情感绑定和平台责任的产品伦理讨论。",
-        "level": "A",
-        "original_url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality",
-        "importance_score": 83
-      },
-      {
-        "id": "88320c69881a3b178410c3e9c78551e2",
-        "title": "陶哲轩披露AI数学证明基准第二批结果",
-        "chinese_title": "陶哲轩披露AI数学证明基准第二批结果",
-        "original_title": "The results of the First Proof \"second batch\" are now out: https://1stproof.org/assets/docs/report.pdfTen research-level questions (many being part of forthcoming papers) were tested locally by the First Proof team against four AI harnesses, including my UCLA team, and then the submissions refereed by experts.  In aggregate, 7 of the 10 problems were deemed to have at least one publication-level solution generated between the four harnesses.  The UCLA harness had a somewhat mixed performance: 2 problems solved at an acceptable level, 3 more reaching a level roughly equivalent to a \"minor revisions needed\" submission to a journal, and with either \"reject\" or \"major revisions needed\" on the other 5.  We did perform slightly better than the out-of-the-box frontier model, but at much higher compute costs (a few hundred dollars per question, rather than tens).  Still, some of the solutions generated contained some interesting novelty.Significant weaknesses in our own harness revealed by the testing included the general failure to cite appropriate relevant literature, and having poor exposition (one solution in particular, while correct, was flagged by referees for spending far too much time on trivial steps and not enough on the key components of the argument).  These look like addressable issues for our harness, and we also plan to incorporate more use of tools (such as symbolic computation and literature search) which were used more effectively by one of the competing teams.  Improving the compute efficiency will also need to become more of a priority.While our own performance was slightly disappointing, I hope to see many more scientifically rigorous benchmarking exercises like this in the future.",
-        "summary": "陶哲轩介绍First Proof第二批测试结果，10道研究级问题中有7道出现出版级AI解法，但UCLA团队在引用、表达和算力效率上仍有短板。",
-        "rating": "S",
-        "score": 93,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这类由专家审稿的数学评测比通用基准更接近科研真实场景，后续可延伸到AI科研工具链、文献检索能力和高成本推理效率的竞争。",
-        "entities": [
-          "Ai数学证明",
-          "First Proof",
-          "Terence Tao",
-          "Ucla"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Terence Tao",
-            "url": "https://mathstodon.xyz/@tao/116727977488589991"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781132608,
-        "published_at": "2026-06-11T07:03:28.469594",
-        "source": "Terence Tao",
-        "url": "https://mathstodon.xyz/@tao/116727977488589991",
-        "event_id": null,
-        "original_content": "Terence Tao The results of the First Proof \"second batch\" are now out: https:// 1stproof.org/assets/docs/repor t.pdf Ten research-level questions (many being part of forthcoming papers) were tested locally by the First Proof team against four AI harnesses, including my UCLA team, and then the submissions refereed by experts. In aggregate, 7 of the 10 problems were deemed to have at least one publication-level solution generated between the four harnesses. The UCLA harness had a somewhat mixed performance: 2 problems solved at an acceptable level, 3 more reaching a level roughly equivalent to a \"minor revisions needed\" submission to a journal, and with either \"reject\" or \"major revisions needed\" on the other 5. We did perform slightly better than the out-of-the-box frontier model, but at much higher compute costs (a few hundred dollars per question, rather than tens). Still, some of the solutions generated contained some interesting novelty. Significant weaknesses in our own harness revealed by the testing included the general failure to cite appropriate relevant literature, and having poor exposition (one solution in particular, while correct, was flagged by referees for spending far too much time on trivial steps and not enough on the key components of the argument). These look like addressable issues for our harness, and we also plan to incorporate more use of tools (such as symbolic computation and literature search) which were used more effectively by one of the competing teams. Improving the compute efficiency will also need to become more of a priority. While our own performance was slightly disappointing, I hope to see many more scientifically rigorous benchmarking exercises like this in the future.",
-        "grade": "S",
-        "extension": "该结果可延伸到AI科研能力评测、数学证明自动化和高算力推理成本问题，适合观察工具链如何提升严谨性。",
-        "level": "S",
-        "original_url": "https://mathstodon.xyz/@tao/116727977488589991",
-        "importance_score": 93
-      },
-      {
-        "id": "a0ae97393f6a8ba1ce40fd7475455097",
-        "title": "xAI被诉解雇提出Grok安全警告工程师",
-        "chinese_title": "xAI被诉解雇提出Grok安全警告工程师",
-        "original_title": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
-        "summary": "一名前xAI工程师起诉xAI和SpaceX，称自己因在Grok安全问题上发出警告而遭解雇，时间点接近SpaceX重大资本事件。",
-        "rating": "A+",
-        "score": 91,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "若诉讼进入实质审理，可能暴露xAI内部安全流程与商业节奏的冲突，也会影响外界对Grok和马斯克AI版图合规性的评估。",
-        "entities": [
-          "Ai安全",
-          "Grok",
-          "SpaceX",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781132608,
-        "published_at": "2026-06-11T07:03:28.469876",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
-        "event_id": null,
-        "original_content": "A former xAI engineer is suing the company and SpaceX, alleging he was fired for raising AI safety concerns about Grok days before SpaceX's historic IPO.",
-        "grade": "A+",
-        "extension": "该诉讼可能放大外界对xAI安全治理和内部举报机制的关注，也会影响Grok在企业和消费者市场中的信任度。",
-        "level": "A+",
-        "original_url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
-        "importance_score": 91
-      },
-      {
-        "id": "aaa667981f6c15daa811b695ecb2a867",
-        "title": "杨安泽转向创业应对AI冲击劳动力",
-        "chinese_title": "杨安泽转向创业应对AI冲击劳动力",
-        "original_title": "Why Andrew Yang is building instead of waiting for Washington",
-        "summary": "TechCrunch视频讨论杨安泽为何选择通过创业而非等待华盛顿行动，回应AI和自动化可能带来的就业冲击与财富集中。",
-        "rating": "B",
-        "score": 70,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "AI冲击就业的讨论正从政治口号进入产品和组织实践，可延伸观察UBI、再培训平台、劳动力市场工具和科技公司责任边界。",
-        "entities": [
-          "Ai自动化",
-          "Andrew Yang",
-          "Sam Altman",
-          "Universal Basic Income"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/video/why-andrew-yang-is-building-instead-of-waiting-for-washington/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781132608,
-        "published_at": "2026-06-11T07:03:28.470136",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/video/why-andrew-yang-is-building-instead-of-waiting-for-washington/",
-        "event_id": null,
-        "original_content": "Andrew Yang’s 2020 presidential campaign was based on a warning that automation and AI would hollow out the labor market and concentrate wealth in the hands of a few. At the time, ideas like Universal Basic Income felt fringe. Now Dario Amodei, Sam Altman, and Bernie Sanders are all saying versions of the same thing. An entrepreneur at heart, […]",
-        "grade": "B",
-        "extension": "可延伸到AI失业预期、UBI政策回潮和创业公司如何提供民间解决方案，但需要视频细节支撑具体报道角度。",
-        "level": "B",
-        "original_url": "https://techcrunch.com/video/why-andrew-yang-is-building-instead-of-waiting-for-washington/",
-        "importance_score": 70
-      },
-      {
-        "id": "4f1bcef8ef09731c43045a24f7585012",
-        "title": "Anthropic说明Fable与Mythos数据保留规则",
-        "chinese_title": "Anthropic说明Fable与Mythos数据保留规则",
-        "original_title": "Anthropic requires 30 day data retention for Fable and Mythos",
-        "summary": "Hacker News讨论指向Anthropic支持文档，主题是Fable和Mythos模型的数据保留实践，其中30天保留要求可能影响敏感场景使用。",
-        "rating": "B",
-        "score": 78,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "模型数据保留政策会直接影响企业和安全敏感场景采用，后续可对比OpenAI、Google等厂商在高风险模型上的日志留存和审计规则。",
-        "entities": [
-          "Anthropic",
-          "Fable",
-          "Mythos",
-          "数据保留"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781132608,
-        "published_at": "2026-06-11T07:03:28.470249",
-        "source": "Hacker News",
-        "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
-        "event_id": null,
-        "original_content": "Comments",
-        "grade": "B",
-        "extension": "可继续追踪企业用户和开发者对数据保留政策的接受度，以及Anthropic在高能力模型安全审计和隐私承诺之间的取舍。",
-        "level": "B",
-        "original_url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
-        "importance_score": 78
       }
     ],
     "2026-06-13": [
@@ -14688,6 +14628,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-18T06:14:38.400077",
-  "total_news": 423
+  "last_updated": "2026-06-18T07:06:37.473106",
+  "total_news": 420
 }
