@@ -1063,6 +1063,43 @@
           "reason": "该新闻讨论气候变化和厄尔尼诺，与同组其他Nature文章没有共同事件或实体主线。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-06-18T02:14:56.915739",
+      "batch_id": "20260618021456",
+      "corrections_applied": 5,
+      "details": [
+        {
+          "news_id": "69a6faeee2aa0d0036bfcd8f39c252cf",
+          "from_event_id": "c0fd6b6f",
+          "to_event_id": "33a32e1d",
+          "reason": "该新闻同样围绕美国出口管制导致 Anthropic Fable/Mythos 模型下线，应并入既有 Anthropic 暂停模型事件。"
+        },
+        {
+          "news_id": "2775260c7afe437285022c58ae76a5ae",
+          "from_event_id": "c0fd6b6f",
+          "to_event_id": "33a32e1d",
+          "reason": "该新闻是同一 Anthropic Fable/Mythos 模型封锁事件的盟友反应角度，应并入既有事件组。"
+        },
+        {
+          "news_id": "6754ed0151f093a216b42c65c8d8452c",
+          "from_event_id": "05a68b20",
+          "to_event_id": "33a32e1d",
+          "reason": "白宫要求堵住越狱是 Anthropic Fable 模型重新发布条件，属于同一模型下线与监管事件的后续。"
+        },
+        {
+          "news_id": "a6c47153e28403edf4313246833cd60f",
+          "from_event_id": "b9e3e2bc",
+          "to_event_id": "33a32e1d",
+          "reason": "员工指控政府定向施压仍围绕 Anthropic Fable 模型限制争议，适合并入同一监管事件。"
+        },
+        {
+          "news_id": "c146351204a45b71a0a2e9259844002a",
+          "from_event_id": "ccae398e",
+          "to_event_id": "d3e510bb",
+          "reason": "该新闻与 Reuters 的 DeepSeek 暂缓列入实体清单报道描述同一事件，应合并为一个 DeepSeek 实体清单事件。"
+        }
+      ]
     }
   ],
   "reviews": [
