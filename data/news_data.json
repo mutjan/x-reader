@@ -2,80 +2,18 @@
   "news": {
     "2026-06-18": [
       {
-        "id": "363b8b3371a3f6151f3d2273f16f9f56",
-        "title": "美方要求Anthropic修好Fable护栏再上线",
-        "chinese_title": "美方要求Anthropic修好Fable护栏再上线",
-        "original_title": "Trump administration officials say Anthropic must ensure Fable 5's guardrails can't be circumvented before rerelease; experts say that may not be possible (Hugo Lowell/Wired)",
-        "summary": "美国政府官员称，Anthropic 若要重新发布 Fable 5，必须确保模型护栏无法被绕过，但专家认为这种绝对安全要求可能难以实现。",
-        "rating": "B",
-        "score": 67,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可延伸观察政府对前沿模型重新上线的实质审查标准，以及模型护栏从企业自律走向监管前置条件后的产业影响。",
-        "entities": [
-          "Ai安全",
-          "Anthropic",
-          "Fable",
-          "美国政府"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260617/p49#a260617p49"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781741164,
-        "published_at": "2026-06-18T08:06:04.014266",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260617/p49#a260617p49",
-        "event_id": null
-      },
-      {
-        "id": "956f264d52f3ed71461967315dd0bb36",
-        "title": "SK电信卷入Anthropic模型出口管制风波",
-        "chinese_title": "SK电信卷入Anthropic模型出口管制风波",
-        "original_title": "The Korean Telecom Giant at the Center of Anthropic’s Mythos Controversy",
-        "summary": "Wired 报道称，Anthropic 下线先进模型前，白宫曾要求其撤销 SK Telecom 对 Claude Mythos 的访问权限，理由是相关中国关联疑虑。",
-        "rating": "B",
-        "score": 67,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可继续追踪 AI 模型访问权是否被纳入出口管制工具箱，以及跨国电信和云服务客户在前沿模型采购中的合规风险。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Mythos",
-          "Sk Telecom",
-          "白宫"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Feed: Artificial Intelligence Latest",
-            "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781741164,
-        "published_at": "2026-06-18T08:06:04.014281",
-        "source": "Feed: Artificial Intelligence Latest",
-        "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
-        "event_id": null
-      },
-      {
         "id": "2d3705b270cafd1df0bb5f4938bac376",
         "title": "AWS推出会随智能体使用进化的上下文图谱",
         "chinese_title": "AWS推出会随智能体使用进化的上下文图谱",
         "original_title": "AWS enters the context layer race with a graph that learns from agents, not manual curation",
-        "summary": "AWS 发布面向 AI 智能体的上下文智能产品栈，其中 AWS Context 可通过智能体使用持续学习和维护知识图谱，试图把企业上下文层做成标准服务。",
+        "summary": "AWS发布Context等一组上下文智能产品，试图让企业AI代理通过使用过程自动完善知识图谱，降低人工整理企业数据上下文的成本。",
         "rating": "A",
-        "score": 67,
+        "score": 82,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "企业智能体落地的瓶颈正从模型本身转向上下文层，AWS入局会带动云厂商围绕知识图谱、数据目录和Agent工作流展开竞争。",
         "entities": [
-          "Ai智能体",
-          "Amazon S3",
+          "Ai Agent",
           "Aws",
           "Aws Context",
           "知识图谱"
@@ -93,10 +31,8 @@
         "url": "https://venturebeat.com/data/aws-enters-the-context-layer-race-with-a-graph-that-learns-from-agents-not-manual-curation",
         "event_id": null,
         "original_url": "https://venturebeat.com/data/aws-enters-the-context-layer-race-with-a-graph-that-learns-from-agents-not-manual-curation",
-        "grade": "B",
-        "level": "A",
-        "original_content": "Building a context layer between enterprise data stores and AI agents is bespoke work, with no standard service to automate or maintain the graphs over time. Amazon is making a direct play to change that. Amazon on Wednesday entered the space, announcing a series of three products it's positioning as a context intelligence stack for AI agents. The centerpiece is AWS Context, a new knowledge graph service that gets smarter through agent usage over time. AWS also announced the general availability of Amazon S3 Annotations and a preview of skill assets in AWS Glue Data Catalog. The context layer is now a contested architectural category with no shortage of options from different vendors. AWS is entering that market with a different architectural premise: that the graph should learn from how agents use it automatically, without human re-curation. \"Your agents now get smarter without you having to rebuild anything from scratch,\" said Swami Sivasubramanian, vice president of Agentic AI at AWS, during his AWS Summit NYC keynote. \"This service automatically builds a knowledge graph from all your existing data,\" he said. \"This service infers relationships across your data sets, business rules, and domain knowledge, and makes all of it available to your agents and your organization at runtime.\" AWS Context builds a self-learning knowledge graph from existing data It's a problem AWS says it has seen repeatedly in customer deployments. AWS Context maps relationships across existing data automatically: what tables exist, what columns mean, how sources relate and which sources are authoritative. It combines semantic search with graph-level reasoning and infers relationships across datasets, business rules and domain knowledge, making all of it available to agents at runtime. \"The knowledge graph improves itself over time as it learns which sources produce correct results and which parts get used,\" Sivasubramanian said. Data stewards manage the graph through the AWS Management Console, reviewing inferred relationships, promoting them to production and attaching business definitions and usage rules. Every query inherits the calling user's IAM and Lake Formation permissions, making agent data access auditable by identity through controls enterprises already rely on. All metadata is published in Apache Iceberg format to Amazon S3 Tables, queryable via Athena, Redshift, Spark or any Iceberg-compatible engine, with no proprietary APIs. Third-party catalog connections are supported, so context from systems outside AWS can be pulled into the same graph. Agents query through agentic search APIs and MCP tools across Bedrock AgentCore, EKS or any MCP-compatible framework. Context is more than just a single service Context is a complicated space and AWS is layering multiple services to help enterprises build context across the data stack. Amazon S3 Annotations. This service enables users to attach rich business context at the storage layer, directly to individual S3 objects. AWS Glue Data Catalog skill assets . Glue skill assets attach domain knowledge at the catalog layer, linking runbooks, query patterns and usage rules to data assets across the estate. AWS Context then synthesizes both into the knowledge graph that agents query at runtime, combining semantic search with graph-level reasoning across structured and unstructured sources. Each layer feeds the next. AWS is entering a highly competitive context space Snowflake announced its context approach earlier this month with its Horizon Context and Cortex Sense services. Microsoft is providing context via its Fabric IQ platform that provides a semantic ontology for data. Redis has developed a context platform that optimizes data for retrieval. Vector database vendor Pinecone has its Nexus context offering that compiles enterprise data into task-specific artifacts before agents ever query them. AWS's structural argument is straightforward: for enterprises already running S3, Glue and Lake Formation, AWS Context extends an existing identity model with no data movement required. The pitch is zero-integration friction — not just cost consolidation. \"Context makes agents more powerful and as the whole world is building agents, every agentic platform vendor needs a context capability,\" Holger Mueller, VP and Principal analyst at Constellation Research, told VentureBeat. Mueller noted that AWS is no exception. \"The concern — as with all context offerings — is going to be performance, especially for transactional data, we will see,\" he said.",
-        "extension": "可延伸到云厂商争夺企业 AI 上下文层入口，以及知识图谱、数据目录和智能体平台是否会被整合成新的云基础设施。"
+        "grade": "A",
+        "level": "A"
       },
       {
         "id": "e4b5910193326f4e14b85f8a7706fe73",
@@ -13236,6 +13172,43 @@
         "level": "A",
         "original_url": "https://www.reddit.com/r/MachineLearning/comments/1u23f8p/anthropics_new_model_fable_will_silently_handicap/",
         "importance_score": 80
+      },
+      {
+        "id": "94f5302d08b7a968846a36e888eb3752",
+        "title": "GPT-5.5登顶Agents Last Exam基准",
+        "chinese_title": "GPT-5.5登顶Agents Last Exam基准",
+        "original_title": "Surprise upset: GPT-5.5 beats Claude Fable 5 on brutal new Agents’ Last Exam benchmark",
+        "summary": "VentureBeat报道称伯克利RDI推出Agents Last Exam长任务智能体基准，OpenAI GPT-5.5通过Codex harness取得领先成绩。",
+        "rating": "S",
+        "score": 92,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该基准可能成为评估智能体商业化能力的新参照，后续可追踪OpenAI、Anthropic等厂商在长周期任务和工具调用上的竞争。",
+        "entities": [
+          "Agents Last Exam",
+          "Claude",
+          "GPT",
+          "OpenAI",
+          "Uc Berkeley Rdi"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/surprise-upset-gpt-5-5-beats-claude-fable-5-on-brutal-new-agents-last-exam-benchmark"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781136195,
+        "published_at": "2026-06-11T08:03:15.167002",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/surprise-upset-gpt-5-5-beats-claude-fable-5-on-brutal-new-agents-last-exam-benchmark",
+        "event_id": null,
+        "original_content": "Researchers from the University of California, Berkeley's Center for Responsible, Decentralized Intelligence (RDI), alongside an advisory committee of over 300 domain experts, have launched Agents’ Last Exam (ALE) —a grueling new benchmark built to measure whether artificial intelligence can actually execute economically valuable, long-horizon professional workflows. In a shocking upset, OpenAI’s GPT-5.5 from April, operating through the Codex harness, secured the absolute top spot on the new ALE Leaderboard with a 24.0% pass rate, beating Anthropic's highly anticipated, brand new Mythos-class Claude Fable 5 model released just yesterday, which came in third with a score of 22.0%. Rather than testing models on isolated coding puzzles, ALE is explicitly designed as an instrument to close the gap between academic benchmark hype and real, GDP-relevant labor impact. And right now, the data proves the most advanced models in the world are fundamentally failing the exam. Ending the Era of 'Cheating' and Brittle Graders The fundamental shift in ALE lies in its evaluation architecture and the demands it places on the agent. Historically, AI benchmarks have relied on static question-answering or narrow, text-based terminal environments. More recent agentic evaluations introduced multi-step interaction but suffered from severe grading issues. As noted in recent independent audits of older leaderboards like SWE-Bench Pro, automated verifiers frequently reject correct solutions, and certain models—specifically the Claude Opus family—have been caught \"cheating\" by reading hidden answer keys in a container's Git history rather than solving the underlying problem. ALE neutralizes these loopholes by forcing models into a strict Generalist Computer-Use Agent (GCUA) framework. To pass, an agent cannot merely execute terminal commands. The benchmark maps capability across five functional layers: Brain (reasoning), Eyes (visual perception), Body (orchestration), Hands (tool invocation), and Feet (runtime substrate). An agent must use its \"Eyes\" and \"Hands\" to navigate Linux or Windows virtual machines, interleaving shell scripting with point-and-click operations inside heavy desktop software. Crucially, ALE almost entirely rejects the unpredictable \"LLM-as-a-judge\" grading paradigm, relying on it for a mere 6.8% of its workflows. If a task involves generating a 3D mesh or parsing SEC filings, the benchmark uses deterministic, code-based evaluation to compare the agent's artifact against an expert's ground-truth reference. Measuring Task Performance Across 55 Industries ALE launches with 1,490 task instances and is scaling toward a massive 5,000-task target. What makes the product remarkable is its authenticity. The tasks are strictly anchored in the U.S. federal occupational taxonomy (O*NET / SOC 2018) , covering 55 non-physical industry sub-domains. The workflows are sourced directly from the professional histories of industry practitioners. Agents are asked to perform 3D model creation in Siemens NX, scene setup in Unreal Engine, neuroimaging analysis in FSLeyes, and visual effects compositing in Adobe After Effects. When faced with these authentic, long-horizon workflows, the limitations of current AI are glaring. ALE divides its tasks into three difficulty tiers: Near-Term, Full-Spectrum, and Last-Exam. Top 5 Agentic Harnesses on the ALE Leaderboard Rank Agent Harness Underlying Model Pass Rate Mean Score 1 Codex gpt-5-5 24.0% 42.8% 2 Ale Claw gpt-5-5 23.0% 45.8% 3 Claude Code claude-fable-5 22.0% 40.5% 4 OpenClaw gpt-5-5 21.1% 41.0% 5 Cursor CLI composer-2-5 20.4% 38.5% The victory of GPT-5.5 aligns with recent third-party analysis suggesting that OpenAI's models are currently superior at strictly adhering to multi-part, complex prompts. Conversely, users report Anthropic's Claude architecture can sometimes be \"forgetful\" with multi-part instructions, abandoning required steps mid-workflow — a fatal flaw in ALE's rigorous pipeline. And while hitting a 24.0% pass rate is enough to claim the crown, the absolute performance ceiling remains remarkably low. On the hardest \"Last-Exam\" tier — representing the frontier of professional difficulty — most configurations, including Anthropic's older Claude Opus 4.8 and Google's Gemini CLI, record a devastating 0.0% pass rate. Solving Benchmark Contamination A core vulnerability in modern AI evaluation is \"benchmark contamination\"—the phenomenon where test questions inevitably leak into the massive data lakes used to train next-generation models. Once a model memorizes the benchmark, the evaluation becomes entirely useless. ALE solves this through a dual-use deployment strategy. The project operates as an open-source research initiative, but it closely guards its evaluation data. Only about 10% of the dataset (roughly 150 tasks) is released publicly on platforms like GitHub and Hugging Face. The remaining 1,300+ tasks are kept strictly private. For developers and enterprise evaluators, this means ALE functions as a \"living benchmark\". Private tasks are systematically rotated into the public pool over time, while retired public tasks are swapped out. This rolling release ensures that the evaluation surface remains uncontaminated across successive model generations, giving enterprise buyers confidence that an agent's high score is earned , not memorized. Additionally, ALE provides transparency by tracking both \"Full\" and \"Unlicensed\" scores. Because real professional work often requires paid, proprietary software, the \"Full\" leaderboard incorporates tasks that rely on commercial CAD tools, paid APIs, or licensed datasets. The \"Unlicensed\" tier drops these license-gated tasks to provide a clean, like-for-like comparison using only freely available tools, ensuring models aren't simply rewarded for having access to paid enterprise software. Bottom Line: ALE Shows Even the Highest-Performing Models and Harnesses Have Room for Improvement For developers frustrated by the gap between marketing claims and actual production performance, ALE's brutal grading curve is highly validating. Zengyi Qin , an MIT PhD researcher and data contributor to the project, took to X to announce the launch, sharing images of the paper and the staggering 100+ institution contributor list. \"Introducing Agents’ Last Exam (ALE),\" Qin wrote. \"Built by 300+ domain experts from 100+ institutions. Covering 55 industry domains. Claude Opus 4.8 has 0.0% pass rate on the hardest subset. Glad to have contributed to this benchmark\". In a follow-up post highlighting the Hugging Face ArXiv paper link, Qin added: \"Very solid work from project leads @YiyouSun @Xinyang_Han_ @dawnsongtweets and @BerkeleyRDI\". As businesses deploy billions in capital betting on AI agents, they desperately need a compass that points true north. If an agent can eventually conquer the gauntlet of Agents' Last Exam, it won't just be passing a test—it will be proving it is ready to join the workforce. Until then, the sobering pass rates on the leaderboard serve as a necessary reality check for the entire AI ecosystem.",
+        "grade": "S",
+        "extension": "该基准可延伸到长周期智能体评测、企业自动化落地和模型竞争格局变化，也适合跟进Codex类执行框架如何影响成绩。",
+        "level": "S",
+        "original_url": "https://venturebeat.com/technology/surprise-upset-gpt-5-5-beats-claude-fable-5-on-brutal-new-agents-last-exam-benchmark",
+        "importance_score": 92
       }
     ],
     "2026-06-13": [
@@ -14568,6 +14541,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-18T08:06:39.832240",
-  "total_news": 418
+  "last_updated": "2026-06-18T07:06:37.473106",
+  "total_news": 417
 }
