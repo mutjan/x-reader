@@ -2,6 +2,68 @@
   "news": {
     "2026-06-19": [
       {
+        "id": "dd0246422f1ba18bad95ea5fea808ab6",
+        "title": "企业AI连续爆出信任边界漏洞",
+        "chinese_title": "企业AI连续爆出信任边界漏洞",
+        "original_title": "Copilot searched your mailbox. LiteLLM handed out admin keys. Run this 5-check audit before your stack is next",
+        "summary": "VentureBeat梳理Copilot SearchLeak和LiteLLM密钥泄露等案例，指出企业AI把外部输入接入内部权限系统时缺少清晰信任边界，正在成为安全审计的新重点。",
+        "rating": "A",
+        "score": 84,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸到企业AI代理的权限隔离、提示注入防护和第三方工具审计，安全团队可能需要把AI输入链路纳入零信任体系。",
+        "entities": [
+          "Litellm",
+          "Microsoft Copilot",
+          "Searchleak",
+          "企业Ai安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/security/copilot-searched-your-mailbox-litellm-handed-out-admin"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781806086,
+        "published_at": "2026-06-19T02:08:06.459127",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/security/copilot-searched-your-mailbox-litellm-handed-out-admin",
+        "event_id": null
+      },
+      {
+        "id": "1354359349f2ef8e5be7e9d2d4d7f39a",
+        "title": "谷歌微软结盟争夺AI后端标准",
+        "chinese_title": "谷歌微软结盟争夺AI后端标准",
+        "original_title": "Google and Microsoft Team Up to Beat Back Anthropic and OpenAI",
+        "summary": "Google、Microsoft、Salesforce、Snowflake、ServiceNow等企业软件公司宣布支持同一AI后端协议，试图用既有客户和生态标准抵御OpenAI、Anthropic的入口优势。",
+        "rating": "A+",
+        "score": 91,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "若协议被企业软件栈广泛采用，AI Agent后端可能从单一模型入口转向多厂商互操作生态，影响OpenAI和Anthropic的企业议价能力。",
+        "entities": [
+          "Anthropic",
+          "Google",
+          "Microsoft",
+          "OpenAI",
+          "Salesforce",
+          "Snowflake"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/google-microsoft-team-beat-back-anthropic-openai"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781806086,
+        "published_at": "2026-06-19T02:08:06.459173",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/google-microsoft-team-beat-back-anthropic-openai",
+        "event_id": null
+      },
+      {
         "id": "4b37d9d2b4abae85ebc9f00e816215ae",
         "title": "亚马逊员工因支持数据中心限建面临调查",
         "chinese_title": "亚马逊员工因支持数据中心限建面临调查",
@@ -33,6 +95,39 @@
         "original_url": "https://www.theverge.com/ai-artificial-intelligence/952180/amazon-seattle-data-center-moratorium-aecj-disciplinary-action",
         "grade": "B",
         "level": "B"
+      },
+      {
+        "id": "500018a8a2a91f05b6d8cb8c24c56408",
+        "title": "AI依赖开始削弱医生和工程师技能",
+        "chinese_title": "AI依赖开始削弱医生和工程师技能",
+        "original_title": "Is AI ruining our skills? Early results are in — and they’re not good",
+        "summary": "Nature 汇总早期研究称，医生和软件工程师过度依赖 AI 工具后，部分专业判断与实践能力出现退化迹象，提示企业部署需要重新设计人机分工。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到 AI 工具进入职场后的技能保持、培训制度、责任划分和企业生产率评估，适合做社会影响型选题。",
+        "entities": [
+          "Ai工具",
+          "医生",
+          "技能退化",
+          "软件工程师"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01947-1"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781802515,
+        "published_at": "2026-06-19T01:08:35.473420",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01947-1",
+        "event_id": null,
+        "original_url": "https://www.nature.com/articles/d41586-026-01947-1",
+        "grade": "A",
+        "level": "A"
       },
       {
         "id": "c192b7c608cb659fe31ac9448c14b9d4",
@@ -202,39 +297,6 @@
       }
     ],
     "2026-06-18": [
-      {
-        "id": "500018a8a2a91f05b6d8cb8c24c56408",
-        "title": "AI依赖开始削弱医生和工程师技能",
-        "chinese_title": "AI依赖开始削弱医生和工程师技能",
-        "original_title": "Is AI ruining our skills? Early results are in — and they’re not good",
-        "summary": "Nature 汇总早期研究称，医生和软件工程师过度依赖 AI 工具后，部分专业判断与实践能力出现退化迹象，提示企业部署需要重新设计人机分工。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸到 AI 工具进入职场后的技能保持、培训制度、责任划分和企业生产率评估，适合做社会影响型选题。",
-        "entities": [
-          "Ai工具",
-          "医生",
-          "技能退化",
-          "软件工程师"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01947-1"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781802515,
-        "published_at": "2026-06-19T01:08:35.473420",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01947-1",
-        "event_id": null,
-        "original_url": "https://www.nature.com/articles/d41586-026-01947-1",
-        "grade": "A",
-        "level": "A"
-      },
       {
         "id": "26bd48edd55eb20eab0c543a26caeabf",
         "title": "OpenClaw开源智能体迎来强力追赶者",
@@ -15136,6 +15198,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-19T01:09:09.881841",
-  "total_news": 435
+  "last_updated": "2026-06-19T02:08:29.497763",
+  "total_news": 437
 }
