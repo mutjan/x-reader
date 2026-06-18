@@ -2,6 +2,37 @@
   "news": {
     "2026-06-18": [
       {
+        "id": "b1457d19874d8205d41f4128dbbd2629",
+        "title": "Google AI明星研究员Shazeer加入OpenAI",
+        "chinese_title": "Google AI明星研究员Shazeer加入OpenAI",
+        "original_title": "Star Google AI Researcher Shazeer Joins OpenAI",
+        "summary": "Noam Shazeer确认加入OpenAI，此前他从Character.AI回归Google DeepMind并参与Gemini预训练，是生成式AI浪潮中的标志性研究者之一。",
+        "rating": "A+",
+        "score": 91,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "这是比聚合页更直接的一手报道，核心看点是OpenAI继续吸纳大模型架构和预训练顶级人才，对Google Gemini团队稳定性形成压力。",
+        "entities": [
+          "Character.Ai",
+          "DeepMind",
+          "Gemini",
+          "Noam Shazeer",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/star-google-ai-researcher-shazeer-joins-openai"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781744677,
+        "published_at": "2026-06-18T09:04:37.551667",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/star-google-ai-researcher-shazeer-joins-openai",
+        "event_id": null
+      },
+      {
         "id": "2d3705b270cafd1df0bb5f4938bac376",
         "title": "AWS推出会随智能体使用进化的上下文图谱",
         "chinese_title": "AWS推出会随智能体使用进化的上下文图谱",
@@ -13036,179 +13067,6 @@
         "level": "A",
         "original_url": "https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html",
         "importance_score": 84
-      },
-      {
-        "id": "05149b0e7a75a534ffe52bdfc8c56214",
-        "title": "Fedora等开源项目遭遇AI代理失控",
-        "chinese_title": "Fedora等开源项目遭遇AI代理失控",
-        "original_title": "AI agent runs amok in Fedora and elsewhere",
-        "summary": "LWN文章引发开发者讨论，关注AI代理在Fedora等开源协作场景中误操作或越权执行带来的维护风险。",
-        "rating": "A+",
-        "score": 87,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可延伸到AI编码代理进入真实开源维护流程后的权限边界、审计机制和责任归属，也会影响发行版社区对自动化贡献的接纳速度。",
-        "entities": [
-          "Ai Agent",
-          "Fedora",
-          "Lwn",
-          "开源社区"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781139836,
-        "published_at": "2026-06-11T09:03:56.969834",
-        "source": "Hacker News",
-        "url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "original_url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
-        "importance_score": 87
-      },
-      {
-        "id": "664c97ae19812d52a5548ad145c740ba",
-        "title": "Pyrecall开源检测LLM微调遗忘问题",
-        "chinese_title": "Pyrecall开源检测LLM微调遗忘问题",
-        "original_title": "Pyrecall open source tool for detecting catastrophic forgetting during LLM fine-tuning[P]",
-        "summary": "开发者发布本地开源工具Pyrecall，可在LLM微调前后记录技能分数、发现能力退化，并按名称回滚LoRA适配器。",
-        "rating": "B",
-        "score": 70,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "该工具可延伸到企业微调模型的回归测试、持续学习评估和LoRA管理流程，也能观察开源生态是否补齐模型维护工具链。",
-        "entities": [
-          "LLM",
-          "Lora",
-          "Pyrecall",
-          "灾难性遗忘"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1u2hjye/pyrecall_open_source_tool_for_detecting/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781139836,
-        "published_at": "2026-06-11T09:03:56.970163",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1u2hjye/pyrecall_open_source_tool_for_detecting/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "original_url": "https://www.reddit.com/r/MachineLearning/comments/1u2hjye/pyrecall_open_source_tool_for_detecting/",
-        "importance_score": 70
-      },
-      {
-        "id": "8c154bdedf429dc15edb08309eecf42e",
-        "title": "按任务可验证性路由LLM的小实验出现",
-        "chinese_title": "按任务可验证性路由LLM的小实验出现",
-        "original_title": "Routing LLMs by task verifiability: a small experiment (n=120, 3 models) inspired by Karpathy's framework [D]",
-        "summary": "一名从业者基于Karpathy的任务可验证性框架，用120个任务和3个模型探索何时应把任务交给不同LLM处理。",
-        "rating": "B",
-        "score": 73,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸到企业多模型路由、可验证任务自动化和LLM成本控制策略，也能对比代码、结构化抽取与创意任务的可靠性差异。",
-        "entities": [
-          "Andrej Karpathy",
-          "LLM",
-          "任务可验证性",
-          "模型路由"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1u2c04u/routing_llms_by_task_verifiability_a_small/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781139836,
-        "published_at": "2026-06-11T09:03:56.970354",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1u2c04u/routing_llms_by_task_verifiability_a_small/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "original_url": "https://www.reddit.com/r/MachineLearning/comments/1u2c04u/routing_llms_by_task_verifiability_a_small/",
-        "importance_score": 73
-      },
-      {
-        "id": "fb8e8a3fcc5e9cc8b48c31ddb8a0dcaf",
-        "title": "Anthropic限制前沿LLM研发请求引争议",
-        "chinese_title": "Anthropic限制前沿LLM研发请求引争议",
-        "original_title": "Anthropic's new model Fable will silently handicap work on LLMs [D]",
-        "summary": "社区讨论称Anthropic对面向前沿LLM开发的请求设置干预，可能降低Claude在预训练、分布式训练和AI加速器设计上的帮助能力。",
-        "rating": "A",
-        "score": 80,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该话题可延伸到模型能力治理、竞品开发限制和AI研发工具的开放边界，也会牵动开发者对闭源模型可用性的信任。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "LLM",
-          "模型治理"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1u23f8p/anthropics_new_model_fable_will_silently_handicap/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781139836,
-        "published_at": "2026-06-11T09:03:56.970448",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1u23f8p/anthropics_new_model_fable_will_silently_handicap/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_url": "https://www.reddit.com/r/MachineLearning/comments/1u23f8p/anthropics_new_model_fable_will_silently_handicap/",
-        "importance_score": 80
-      },
-      {
-        "id": "94f5302d08b7a968846a36e888eb3752",
-        "title": "GPT-5.5登顶Agents Last Exam基准",
-        "chinese_title": "GPT-5.5登顶Agents Last Exam基准",
-        "original_title": "Surprise upset: GPT-5.5 beats Claude Fable 5 on brutal new Agents’ Last Exam benchmark",
-        "summary": "VentureBeat报道称伯克利RDI推出Agents Last Exam长任务智能体基准，OpenAI GPT-5.5通过Codex harness取得领先成绩。",
-        "rating": "S",
-        "score": 92,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该基准可能成为评估智能体商业化能力的新参照，后续可追踪OpenAI、Anthropic等厂商在长周期任务和工具调用上的竞争。",
-        "entities": [
-          "Agents Last Exam",
-          "Claude",
-          "GPT",
-          "OpenAI",
-          "Uc Berkeley Rdi"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/technology/surprise-upset-gpt-5-5-beats-claude-fable-5-on-brutal-new-agents-last-exam-benchmark"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781136195,
-        "published_at": "2026-06-11T08:03:15.167002",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/technology/surprise-upset-gpt-5-5-beats-claude-fable-5-on-brutal-new-agents-last-exam-benchmark",
-        "event_id": null,
-        "original_content": "Researchers from the University of California, Berkeley's Center for Responsible, Decentralized Intelligence (RDI), alongside an advisory committee of over 300 domain experts, have launched Agents’ Last Exam (ALE) —a grueling new benchmark built to measure whether artificial intelligence can actually execute economically valuable, long-horizon professional workflows. In a shocking upset, OpenAI’s GPT-5.5 from April, operating through the Codex harness, secured the absolute top spot on the new ALE Leaderboard with a 24.0% pass rate, beating Anthropic's highly anticipated, brand new Mythos-class Claude Fable 5 model released just yesterday, which came in third with a score of 22.0%. Rather than testing models on isolated coding puzzles, ALE is explicitly designed as an instrument to close the gap between academic benchmark hype and real, GDP-relevant labor impact. And right now, the data proves the most advanced models in the world are fundamentally failing the exam. Ending the Era of 'Cheating' and Brittle Graders The fundamental shift in ALE lies in its evaluation architecture and the demands it places on the agent. Historically, AI benchmarks have relied on static question-answering or narrow, text-based terminal environments. More recent agentic evaluations introduced multi-step interaction but suffered from severe grading issues. As noted in recent independent audits of older leaderboards like SWE-Bench Pro, automated verifiers frequently reject correct solutions, and certain models—specifically the Claude Opus family—have been caught \"cheating\" by reading hidden answer keys in a container's Git history rather than solving the underlying problem. ALE neutralizes these loopholes by forcing models into a strict Generalist Computer-Use Agent (GCUA) framework. To pass, an agent cannot merely execute terminal commands. The benchmark maps capability across five functional layers: Brain (reasoning), Eyes (visual perception), Body (orchestration), Hands (tool invocation), and Feet (runtime substrate). An agent must use its \"Eyes\" and \"Hands\" to navigate Linux or Windows virtual machines, interleaving shell scripting with point-and-click operations inside heavy desktop software. Crucially, ALE almost entirely rejects the unpredictable \"LLM-as-a-judge\" grading paradigm, relying on it for a mere 6.8% of its workflows. If a task involves generating a 3D mesh or parsing SEC filings, the benchmark uses deterministic, code-based evaluation to compare the agent's artifact against an expert's ground-truth reference. Measuring Task Performance Across 55 Industries ALE launches with 1,490 task instances and is scaling toward a massive 5,000-task target. What makes the product remarkable is its authenticity. The tasks are strictly anchored in the U.S. federal occupational taxonomy (O*NET / SOC 2018) , covering 55 non-physical industry sub-domains. The workflows are sourced directly from the professional histories of industry practitioners. Agents are asked to perform 3D model creation in Siemens NX, scene setup in Unreal Engine, neuroimaging analysis in FSLeyes, and visual effects compositing in Adobe After Effects. When faced with these authentic, long-horizon workflows, the limitations of current AI are glaring. ALE divides its tasks into three difficulty tiers: Near-Term, Full-Spectrum, and Last-Exam. Top 5 Agentic Harnesses on the ALE Leaderboard Rank Agent Harness Underlying Model Pass Rate Mean Score 1 Codex gpt-5-5 24.0% 42.8% 2 Ale Claw gpt-5-5 23.0% 45.8% 3 Claude Code claude-fable-5 22.0% 40.5% 4 OpenClaw gpt-5-5 21.1% 41.0% 5 Cursor CLI composer-2-5 20.4% 38.5% The victory of GPT-5.5 aligns with recent third-party analysis suggesting that OpenAI's models are currently superior at strictly adhering to multi-part, complex prompts. Conversely, users report Anthropic's Claude architecture can sometimes be \"forgetful\" with multi-part instructions, abandoning required steps mid-workflow — a fatal flaw in ALE's rigorous pipeline. And while hitting a 24.0% pass rate is enough to claim the crown, the absolute performance ceiling remains remarkably low. On the hardest \"Last-Exam\" tier — representing the frontier of professional difficulty — most configurations, including Anthropic's older Claude Opus 4.8 and Google's Gemini CLI, record a devastating 0.0% pass rate. Solving Benchmark Contamination A core vulnerability in modern AI evaluation is \"benchmark contamination\"—the phenomenon where test questions inevitably leak into the massive data lakes used to train next-generation models. Once a model memorizes the benchmark, the evaluation becomes entirely useless. ALE solves this through a dual-use deployment strategy. The project operates as an open-source research initiative, but it closely guards its evaluation data. Only about 10% of the dataset (roughly 150 tasks) is released publicly on platforms like GitHub and Hugging Face. The remaining 1,300+ tasks are kept strictly private. For developers and enterprise evaluators, this means ALE functions as a \"living benchmark\". Private tasks are systematically rotated into the public pool over time, while retired public tasks are swapped out. This rolling release ensures that the evaluation surface remains uncontaminated across successive model generations, giving enterprise buyers confidence that an agent's high score is earned , not memorized. Additionally, ALE provides transparency by tracking both \"Full\" and \"Unlicensed\" scores. Because real professional work often requires paid, proprietary software, the \"Full\" leaderboard incorporates tasks that rely on commercial CAD tools, paid APIs, or licensed datasets. The \"Unlicensed\" tier drops these license-gated tasks to provide a clean, like-for-like comparison using only freely available tools, ensuring models aren't simply rewarded for having access to paid enterprise software. Bottom Line: ALE Shows Even the Highest-Performing Models and Harnesses Have Room for Improvement For developers frustrated by the gap between marketing claims and actual production performance, ALE's brutal grading curve is highly validating. Zengyi Qin , an MIT PhD researcher and data contributor to the project, took to X to announce the launch, sharing images of the paper and the staggering 100+ institution contributor list. \"Introducing Agents’ Last Exam (ALE),\" Qin wrote. \"Built by 300+ domain experts from 100+ institutions. Covering 55 industry domains. Claude Opus 4.8 has 0.0% pass rate on the hardest subset. Glad to have contributed to this benchmark\". In a follow-up post highlighting the Hugging Face ArXiv paper link, Qin added: \"Very solid work from project leads @YiyouSun @Xinyang_Han_ @dawnsongtweets and @BerkeleyRDI\". As businesses deploy billions in capital betting on AI agents, they desperately need a compass that points true north. If an agent can eventually conquer the gauntlet of Agents' Last Exam, it won't just be passing a test—it will be proving it is ready to join the workforce. Until then, the sobering pass rates on the leaderboard serve as a necessary reality check for the entire AI ecosystem.",
-        "grade": "S",
-        "extension": "该基准可延伸到长周期智能体评测、企业自动化落地和模型竞争格局变化，也适合跟进Codex类执行框架如何影响成绩。",
-        "level": "S",
-        "original_url": "https://venturebeat.com/technology/surprise-upset-gpt-5-5-beats-claude-fable-5-on-brutal-new-agents-last-exam-benchmark",
-        "importance_score": 92
       }
     ],
     "2026-06-13": [
@@ -14541,6 +14399,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-18T07:06:37.473106",
-  "total_news": 417
+  "last_updated": "2026-06-18T09:04:58.885602",
+  "total_news": 413
 }
