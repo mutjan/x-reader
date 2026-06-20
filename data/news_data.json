@@ -1,37 +1,6 @@
 {
   "news": {
-    "2026-06-20": [
-      {
-        "id": "24840e16f6424d36ddbc00d9734e67ca",
-        "title": "机器人有了实时触觉理解框架",
-        "chinese_title": "机器人有了实时触觉理解框架",
-        "original_title": "Researchers introduce T-Rex, a framework that unifies vision, language, and tactile sensing so robots can respond to physical contact in real time rather than relying on vision alone.",
-        "summary": "伯克利、英伟达和斯坦福研究人员推出T-Rex框架，用100小时触觉同步遥操作数据训练机器人融合视觉、语言和接触反馈，提升双手操作时对物理接触的实时响应能力。",
-        "rating": "A",
-        "score": 75,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若后续代码和数据集被机器人公司采用，可继续观察其对灵巧手、遥操作数据采集和具身智能训练范式的影响。当前信息主要来自社区转述，需等待论文、代码或机构发布进一步确认。",
-        "entities": [
-          "NVIDIA",
-          "Stanford",
-          "T-Rex",
-          "Uc Berkeley",
-          "具身智能"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1uaiqpq/researchers_introduce_trex_a_framework_that/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781921101,
-        "published_at": "2026-06-20T10:05:01.924871",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1uaiqpq/researchers_introduce_trex_a_framework_that/",
-        "event_id": null
-      },
+    "2026-06-19": [
       {
         "id": "289ca43f36e891a2c9a774e6ebf1bc2e",
         "title": "MIT许可万亿参数智能体模型开放下载",
@@ -66,273 +35,6 @@
         "grade": "B",
         "level": "B"
       },
-      {
-        "id": "37963b52ec0d8e7bb3f08026c7fee4d0",
-        "title": "Polar Signals发布CUDA采样性能分析器",
-        "chinese_title": "Polar Signals发布CUDA采样性能分析器",
-        "original_title": "Show HN: Continuous Nvidia CUDA PC Sampling Profiler",
-        "summary": "Hacker News展示Polar Signals的连续Nvidia CUDA PC采样性能分析器，面向GPU程序运行时的低侵入性能观测和调优。",
-        "rating": "B",
-        "score": 66,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可作为GPU性能工程工具链观察，尤其适合延伸到CUDA内核调优、AI训练推理成本优化和生产环境profiling需求。",
-        "entities": [
-          "CUDA",
-          "NVIDIA",
-          "Polar Signals",
-          "性能分析器"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.polarsignals.com/blog/posts/2026/06/10/nvidia-cuda-pc-sampling"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781906977,
-        "published_at": "2026-06-20T06:09:37.641937",
-        "source": "Hacker News",
-        "url": "https://www.polarsignals.com/blog/posts/2026/06/10/nvidia-cuda-pc-sampling",
-        "event_id": null,
-        "original_url": "https://www.polarsignals.com/blog/posts/2026/06/10/nvidia-cuda-pc-sampling",
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "a129a779fba1f722f3a343cc970ba142",
-        "title": "日本打车平台Go上市后押注Robotaxi",
-        "chinese_title": "日本打车平台Go上市后押注Robotaxi",
-        "original_title": "Go eyes robotaxis and acquisitions after Japan’s biggest IPO of 2026. Here’s why it matters",
-        "summary": "日本打车应用Go完成今年当地最大IPO后，计划把募集资金投向自动驾驶出租车和并购，以应对司机短缺带来的长期供给压力。",
-        "rating": "B",
-        "score": 70,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸观察日本出行平台如何借资本市场补足自动驾驶和车队供给，也可追踪Robotaxi在老龄化、劳动力紧缺市场的商业化路径。",
-        "entities": [
-          "Go",
-          "Robotaxi",
-          "日本Ipo",
-          "自动驾驶"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/06/19/go-eyes-robotaxis-and-acquisitions-after-japans-biggest-ipo-of-2026-heres-why-it-matters/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781906977,
-        "published_at": "2026-06-20T06:09:37.641759",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/06/19/go-eyes-robotaxis-and-acquisitions-after-japans-biggest-ipo-of-2026-heres-why-it-matters/",
-        "event_id": null,
-        "original_url": "https://techcrunch.com/2026/06/19/go-eyes-robotaxis-and-acquisitions-after-japans-biggest-ipo-of-2026-heres-why-it-matters/",
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "61b55efa648cbf749a8526d6c9274b9c",
-        "title": "7000台Langflow服务器遭攻击",
-        "chinese_title": "7000台Langflow服务器遭攻击",
-        "original_title": "7,000 Langflow servers are under attack. LangGraph and LangChain have the same holes",
-        "summary": "VentureBeat称Langflow已有约7000台服务器遭攻击，LangGraph和LangChain也暴露同类漏洞，AI智能体框架可能把常规漏洞放大为密钥和系统入侵。",
-        "rating": "A",
-        "score": 82,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可扩展为AI Agent框架安全专题：从工具调用、状态持久化到凭据管理，开发者生态需要把传统AppSec问题重新纳入智能体运行时防线。",
-        "entities": [
-          "Ai Agent",
-          "Check Point",
-          "Langchain",
-          "Langflow",
-          "Langgraph"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/security/7000-langflow-servers-under-attack-langgraph-langchain-same-holes"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781906977,
-        "published_at": "2026-06-20T06:09:37.641913",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/security/7000-langflow-servers-under-attack-langgraph-langchain-same-holes",
-        "event_id": null,
-        "original_url": "https://venturebeat.com/security/7000-langflow-servers-under-attack-langgraph-langchain-same-holes",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "f8ae8ff5212321397fd39d7204d2557a",
-        "title": "MGX被曝洽购200亿美元数据中心公司",
-        "chinese_title": "MGX被曝洽购200亿美元数据中心公司",
-        "original_title": "Sources: Abu Dhabi's MGX is exploring buying Singapore-based data center operator DayOne; last month, sources said DayOne planned a US IPO at a $20B valuation (Reuters)",
-        "summary": "阿布扎比AI投资机构MGX据称正探索收购新加坡数据中心运营商DayOne，后者此前被传计划以约200亿美元估值赴美上市。",
-        "rating": "A",
-        "score": 82,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "这笔潜在交易反映主权资本继续向AI算力基础设施前移，后续可观察中东资本、东南亚数据中心和云厂商之间的并购与供给绑定。",
-        "entities": [
-          "Ai基础设施",
-          "Dayone",
-          "Mgx",
-          "数据中心"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260619/p22#a260619p22"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781903355,
-        "published_at": "2026-06-20T05:09:15.420167",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260619/p22#a260619p22",
-        "event_id": null,
-        "original_url": "https://www.techmeme.com/260619/p22#a260619p22",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "30a499c32a38e1f9e6595ae2fec4c81b",
-        "title": "OpenAI一季度营收57亿美元仍烧37亿",
-        "chinese_title": "OpenAI一季度营收57亿美元仍烧37亿",
-        "original_title": "Docs: OpenAI burned through $3.7B in Q1, on revenue of $5.7B, and ended the quarter with $73B+ in cash and marketable securities vs. $40B at the end of December (Erin Woo/The Information)",
-        "summary": "The Information文件显示OpenAI一季度收入57亿美元、消耗37亿美元资金，季度末现金和可出售证券超过730亿美元，明显高于去年底的400亿美元。",
-        "rating": "A+",
-        "score": 88,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "这组数据可用于继续追踪OpenAI高收入增长与巨额算力支出并存的资本结构，也会影响投资者对AI订阅、云成本和融资节奏的判断。",
-        "entities": [
-          "OpenAI",
-          "The Information",
-          "现金储备",
-          "算力支出"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260619/p21#a260619p21"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781903355,
-        "published_at": "2026-06-20T05:09:15.420227",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260619/p21#a260619p21",
-        "event_id": null,
-        "original_url": "https://www.techmeme.com/260619/p21#a260619p21",
-        "grade": "A+",
-        "level": "A+",
-        "original_content": "Erin Woo / The Information : Docs: OpenAI burned through $3.7B in Q1, on revenue of $5.7B, and ended the quarter with $73B+ in cash and marketable securities vs. $40B at the end of December — OpenAI burned through $3.7 billion in the first quarter, more than half its $5.7 billion in revenue, according to documents the company shared with shareholders.",
-        "extension": "可延伸到OpenAI现金储备、算力支出和融资节奏之间的关系，也能与Anthropic等模型公司的烧钱速度和上市预期横向比较。"
-      },
-      {
-        "id": "5ddbf7785ad19e992e9abf971bf697e7",
-        "title": "现代3.25亿美元买断波士顿动力",
-        "chinese_title": "现代3.25亿美元买断波士顿动力",
-        "original_title": "Hyundai buys Boston Dynamics",
-        "summary": "现代汽车集团计划以3.25亿美元收购软银所持Boston Dynamics剩余股份，使这家机器人公司成为全资子公司，强化其在人形和工业机器人上的控制权。",
-        "rating": "B",
-        "score": 72,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可继续观察现代是否把Boston Dynamics更深嵌入汽车制造、物流和人形机器人商业化，也会影响软银机器人资产退出节奏。",
-        "entities": [
-          "Boston Dynamics",
-          "Hyundai",
-          "Softbank",
-          "机器人"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News (boston dynamics)",
-            "url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781895881,
-        "published_at": "2026-06-20T03:04:41.351891",
-        "source": "Hacker News (boston dynamics)",
-        "url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/",
-        "event_id": null,
-        "original_url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/",
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "b541ad97d9c429c34e18c505a062bc79",
-        "title": "DeepMind诺奖科学家转投Anthropic",
-        "chinese_title": "DeepMind诺奖科学家转投Anthropic",
-        "original_title": "Google Deepmind loses another top AI researcher as Nobel laureate John Jumper leaves for Anthropic",
-        "summary": "AlphaFold核心人物、诺奖得主John Jumper离开Google DeepMind加入Anthropic，延续近期Google顶尖AI研究者流向竞争对手或创业公司的趋势。",
-        "rating": "A+",
-        "score": 91,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "这不仅是单点人才变动，还会放大外界对DeepMind核心研究团队稳定性的关注，并影响Anthropic在前沿模型与科学AI方向的人才叙事。",
-        "entities": [
-          "Alphafold",
-          "Anthropic",
-          "DeepMind",
-          "John Jumper"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/google-deepmind-loses-another-top-ai-researcher-as-nobel-laureate-john-jumper-leaves-for-anthropic/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781892407,
-        "published_at": "2026-06-20T02:06:47.413939",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/google-deepmind-loses-another-top-ai-researcher-as-nobel-laureate-john-jumper-leaves-for-anthropic/",
-        "event_id": null
-      },
-      {
-        "id": "c2286de70c4d85f2395a568e36b95c73",
-        "title": "企业Agent开始押注按需生成小模型",
-        "chinese_title": "企业Agent开始押注按需生成小模型",
-        "original_title": "Fine-tuning forgets. RAG leaks context. Hypernetworks build the model your agent needs on demand.",
-        "summary": "VentureBeat讨论用超网络按企业政策实时生成任务专用小模型，试图绕开微调遗忘和RAG上下文泄露，让长流程Agent在合规、审计等场景减少人工看护。",
-        "rating": "B",
-        "score": 72,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这一方向会把企业Agent竞争从编排层推进到模型适配层，后续可关注Nace.AI、Sakana AI等公司如何验证校准、规模化和企业数据所有权。",
-        "entities": [
-          "Agent",
-          "Hypernetwork",
-          "Nace.Ai",
-          "Rag",
-          "Sakana Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/orchestration/fine-tuning-forgets-rag-leaks-context-hypernetworks-build-the-model-your-agent-needs-on-demand"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781888758,
-        "published_at": "2026-06-20T01:05:58.387627",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/orchestration/fine-tuning-forgets-rag-leaks-context-hypernetworks-build-the-model-your-agent-needs-on-demand",
-        "event_id": null,
-        "original_url": "https://venturebeat.com/orchestration/fine-tuning-forgets-rag-leaks-context-hypernetworks-build-the-model-your-agent-needs-on-demand",
-        "grade": "B",
-        "level": "B"
-      }
-    ],
-    "2026-06-19": [
       {
         "id": "f8e2b1950d8976dba812cb02a216af9d",
         "title": "ASML台积电推进2D晶体管量产路径",
@@ -8645,6 +8347,39 @@
     ],
     "2026-06-15": [
       {
+        "id": "37963b52ec0d8e7bb3f08026c7fee4d0",
+        "title": "Polar Signals发布CUDA采样性能分析器",
+        "chinese_title": "Polar Signals发布CUDA采样性能分析器",
+        "original_title": "Show HN: Continuous Nvidia CUDA PC Sampling Profiler",
+        "summary": "Hacker News展示Polar Signals的连续Nvidia CUDA PC采样性能分析器，面向GPU程序运行时的低侵入性能观测和调优。",
+        "rating": "B",
+        "score": 66,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可作为GPU性能工程工具链观察，尤其适合延伸到CUDA内核调优、AI训练推理成本优化和生产环境profiling需求。",
+        "entities": [
+          "CUDA",
+          "NVIDIA",
+          "Polar Signals",
+          "性能分析器"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.polarsignals.com/blog/posts/2026/06/10/nvidia-cuda-pc-sampling"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781906977,
+        "published_at": "2026-06-20T06:09:37.641937",
+        "source": "Hacker News",
+        "url": "https://www.polarsignals.com/blog/posts/2026/06/10/nvidia-cuda-pc-sampling",
+        "event_id": null,
+        "original_url": "https://www.polarsignals.com/blog/posts/2026/06/10/nvidia-cuda-pc-sampling",
+        "grade": "B",
+        "level": "B"
+      },
+      {
         "id": "45bec25e9e0aac6d4da801e8c4231e3b",
         "title": "英国拟禁止16岁以下用户使用社交媒体",
         "chinese_title": "英国拟禁止16岁以下用户使用社交媒体",
@@ -12740,9 +12475,493 @@
         "level": "A",
         "original_url": "https://www.techmeme.com/260612/p33#a260612p33",
         "importance_score": 80
+      },
+      {
+        "id": "0d50abf53e15153e6728e39912bf787c",
+        "title": "美国出口管制波及Anthropic两款模型",
+        "chinese_title": "美国出口管制波及Anthropic两款模型",
+        "original_title": "Anthropic says it is disabling Fable 5 and Mythos 5 for all customers after the US government issued an export control order, citing national security concerns (Anthropic)",
+        "summary": "Anthropic称，因美国政府以国家安全为由发布出口管制指令，公司将暂停所有客户访问Fable 5和Mythos 5，先进模型供应链与跨境AI服务风险进一步升温。",
+        "rating": "A+",
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件会把先进AI模型纳入更明确的出口管制讨论，后续可追踪云服务、海外企业客户和开源/闭源模型策略是否同步收紧。",
+        "entities": [
+          "Anthropic",
+          "Fable",
+          "Mythos",
+          "出口管制",
+          "美国政府"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260612/p31#a260612p31"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781313689,
+        "published_at": "2026-06-13T09:21:29.056234",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260612/p31#a260612p31",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+",
+        "original_url": "https://www.techmeme.com/260612/p31#a260612p31",
+        "importance_score": 91
+      },
+      {
+        "id": "4570f8a3ed41db32ce8bef14cb0d1190",
+        "title": "OpenAI因用户互动问题遭州检察长调查",
+        "chinese_title": "OpenAI因用户互动问题遭州检察长调查",
+        "original_title": "OpenAI Investigated by State Attorneys General on User Interaction",
+        "summary": "多州检察长向OpenAI发出传票，要求提供ChatGPT对用户影响、广告、用户参与和消费者投诉处理等材料，监管焦点正从模型能力扩展到产品交互机制。",
+        "rating": "A+",
+        "score": 90,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这可能推动AI聊天产品在用户黏性、未成年人保护、广告披露和心理影响评估上接受更细监管，也会影响竞品合规设计。",
+        "entities": [
+          "Ai监管",
+          "GPT",
+          "OpenAI",
+          "州检察长",
+          "用户互动"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/openai-investigated-state-attorneys-general-user-interaction"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781313689,
+        "published_at": "2026-06-13T09:21:29.056261",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/openai-investigated-state-attorneys-general-user-interaction",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+",
+        "original_url": "https://www.theinformation.com/briefings/openai-investigated-state-attorneys-general-user-interaction",
+        "importance_score": 90
+      },
+      {
+        "id": "3798f4e2f03c399df57f3bbec22df011",
+        "title": "Simon Willison称Claude Fable异常主动",
+        "chinese_title": "Simon Willison称Claude Fable异常主动",
+        "original_title": "Claude Fable is relentlessly proactive",
+        "summary": "Simon Willison基于两天体验评价Claude Fable 5，认为其在完成目标时会非常主动地调用各种技巧，这为智能体产品的能力边界和可控性提供了新的观察样本。",
+        "rating": "A",
+        "score": 82,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可延展到智能体产品从被动问答走向主动执行后的安全边界、开发者体验和工具调用治理，适合作为模型行为观察稿。",
+        "entities": [
+          "Claude",
+          "Datasette Agent",
+          "Fable",
+          "Simon Willison",
+          "智能体"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Simon Willison’s Newsletter",
+            "url": "https://simonw.substack.com/p/claude-fable-is-relentlessly-proactive"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781313689,
+        "published_at": "2026-06-13T09:21:29.056281",
+        "source": "Simon Willison’s Newsletter",
+        "url": "https://simonw.substack.com/p/claude-fable-is-relentlessly-proactive",
+        "event_id": null,
+        "grade": "A",
+        "level": "A",
+        "original_url": "https://simonw.substack.com/p/claude-fable-is-relentlessly-proactive",
+        "importance_score": 82
+      },
+      {
+        "id": "07d8c5fd66f334b3f9fb0c80d7dcbf7d",
+        "title": "美国据称因越狱风险封锁Anthropic模型",
+        "chinese_title": "美国据称因越狱风险封锁Anthropic模型",
+        "original_title": "Source: the US Commerce Department decided to block foreign persons from accessing Fable 5 and Mythos 5 after a company claimed it was able to jailbreak Mythos (Axios)",
+        "summary": "Axios消息称，美国商务部决定阻止外国主体访问Anthropic的Fable 5和Mythos 5，背景是一家公司声称能够越狱Mythos，模型安全与出口控制首次被更紧密绑定。",
+        "rating": "A+",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这条线索可延伸到AI模型出口管制从芯片层向模型层扩张，以及美国AI公司海外收入、合规部署和主权AI市场格局的变化。",
+        "entities": [
+          "Anthropic",
+          "Fable",
+          "Mythos",
+          "模型越狱",
+          "美国商务部"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260612/p30#a260612p30"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781308968,
+        "published_at": "2026-06-13T08:02:48.680018",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260612/p30#a260612p30",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+",
+        "original_content": "Axios : Source: the US Commerce Department decided to block foreign persons from accessing Fable 5 and Mythos 5 after a company claimed it was able to jailbreak Mythos — The Trump administration is blocking foreign governments, companies and individuals from accessing Anthropic's most advanced AI models.",
+        "extension": "后续看点是越狱能力是否会成为先进模型出口门槛，以及Anthropic、OpenAI等公司如何调整海外客户访问和安全评估流程。",
+        "original_url": "https://www.techmeme.com/260612/p30#a260612p30",
+        "importance_score": 86
+      },
+      {
+        "id": "ad329f39f45a4872ed21792eb1179d96",
+        "title": "OpenAI遭多州总检察长联盟传唤",
+        "chinese_title": "OpenAI遭多州总检察长联盟传唤",
+        "original_title": "Sources: OpenAI was subpoenaed on Friday by a coalition of state AGs for documents covering a wide range of its activities and impact on users (Wall Street Journal)",
+        "summary": "据称美国多个州总检察长组成的联盟已向OpenAI发出传票，要求其提交覆盖业务活动及对用户影响的多类文件，监管审查范围进一步扩大。",
+        "rating": "A+",
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "事件可能推动美国州级监管进一步介入AI公司治理，也会影响OpenAI在用户安全、数据使用、未成年人保护等议题上的披露压力。",
+        "entities": [
+          "Ai监管",
+          "OpenAI",
+          "州总检察长",
+          "用户影响"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260612/p29#a260612p29"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781308740,
+        "published_at": "2026-06-13T07:59:00.399212",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260612/p29#a260612p29",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+",
+        "original_content": "Wall Street Journal : Sources: OpenAI was subpoenaed on Friday by a coalition of state AGs for documents covering a wide range of its activities and impact on users — Company subpoenaed for documents covering wide range of its activities and impact on users — A coalition of state attorneys general has opened …",
+        "extension": "该事件可延伸到美国州级监管对AI平台的介入方式，以及用户保护、未成年人影响、模型透明度与企业合规成本的后续变化。",
+        "original_url": "https://www.techmeme.com/260612/p29#a260612p29",
+        "importance_score": 91
+      },
+      {
+        "id": "31c2f242cf54c2c682ceab942af1a41a",
+        "title": "SpaceX上市首日市值逼近1.8万亿美元",
+        "chinese_title": "SpaceX上市首日市值逼近1.8万亿美元",
+        "original_title": "SpaceX is now a public company valued for its AI potential, so what comes next?",
+        "summary": "Ars Technica报道称SpaceX已在纳斯达克上市，首日股价大涨并被市场按AI潜力重新定价，马斯克及员工持股价值随之大幅上升。",
+        "rating": "S",
+        "score": 94,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "若信息坐实，这将重塑商业航天、卫星互联网和AI基础设施估值体系，并进一步影响马斯克旗下企业的资本市场预期。",
+        "entities": [
+          "Ai基础设施",
+          "Elon Musk",
+          "Nasdaq",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Space – Ars Technica",
+            "url": "https://arstechnica.com/space/2026/06/spacex-is-now-a-public-company-valued-for-its-ai-potential-so-what-comes-next/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781308740,
+        "published_at": "2026-06-13T07:59:00.399231",
+        "source": "Space – Ars Technica",
+        "url": "https://arstechnica.com/space/2026/06/spacex-is-now-a-public-company-valued-for-its-ai-potential-so-what-comes-next/",
+        "event_id": null,
+        "grade": "S",
+        "level": "S",
+        "original_content": "Space Exploration Technologies, better known simply as SpaceX, became a publicly traded company on Friday nearly a quarter of a century after it was founded. The company began trading on the Nasdaq exchange in New York City at $135 a share, valuing SpaceX at nearly $1.8 trillion. By the end of the trading day the company's shares were selling at $160.95, a respectable increase of more than 19 percent. On paper, SpaceX founder Elon Musk became the world's first trillionaire, with his personal stake in the company valued at more than $700 billion. Because of the company's stock options plan, thousands of current and former employees became overnight millionaires . Employees at SpaceX have worked remarkably hard over the last 24 years, and now they will be richly compensated for having done so. Read full article Comments",
+        "extension": "这条线索可追踪资本市场如何把航天、卫星互联网、机器人与AI基础设施叙事合并定价，并观察特斯拉、xAI及商业航天产业链的联动。",
+        "original_url": "https://arstechnica.com/space/2026/06/spacex-is-now-a-public-company-valued-for-its-ai-potential-so-what-comes-next/",
+        "importance_score": 94
+      },
+      {
+        "id": "320e07c4e4ff3879bd2c85baff4f8f76",
+        "title": "苹果讲述TrueType解释器迁移到Swift",
+        "chinese_title": "苹果讲述TrueType解释器迁移到Swift",
+        "original_title": "Swift at Apple: Migrating the TrueType hinting interpreter",
+        "summary": "Swift官方博客介绍苹果如何将TrueType字体hinting解释器迁移到Swift，展示系统底层组件用现代语言重写时的兼容性、安全性与工程取舍。",
+        "rating": "B",
+        "score": 70,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该案例可延伸观察Swift在系统底层组件中的可用性、性能和安全收益，也能作为大型C/C++遗留模块迁移的工程样本。",
+        "entities": [
+          "Apple",
+          "Swift",
+          "Truetype",
+          "字体渲染"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (apple)",
+            "url": "https://www.swift.org/blog/migrating-truetype-hinting-to-swift/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781308740,
+        "published_at": "2026-06-13T07:59:00.399246",
+        "source": "Hacker News (apple)",
+        "url": "https://www.swift.org/blog/migrating-truetype-hinting-to-swift/",
+        "event_id": null,
+        "grade": "B",
+        "level": "B",
+        "original_content": "Comments",
+        "extension": "可延伸到苹果在系统底层扩大Swift使用范围，以及内存安全语言替代C/C++组件对平台安全和开发者生态的长期影响。",
+        "original_url": "https://www.swift.org/blog/migrating-truetype-hinting-to-swift/",
+        "importance_score": 70
+      }
+    ],
+    "2026-06-20": [
+      {
+        "id": "a129a779fba1f722f3a343cc970ba142",
+        "title": "日本打车平台Go上市后押注Robotaxi",
+        "chinese_title": "日本打车平台Go上市后押注Robotaxi",
+        "original_title": "Go eyes robotaxis and acquisitions after Japan’s biggest IPO of 2026. Here’s why it matters",
+        "summary": "日本打车应用Go完成今年当地最大IPO后，计划把募集资金投向自动驾驶出租车和并购，以应对司机短缺带来的长期供给压力。",
+        "rating": "B",
+        "score": 70,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸观察日本出行平台如何借资本市场补足自动驾驶和车队供给，也可追踪Robotaxi在老龄化、劳动力紧缺市场的商业化路径。",
+        "entities": [
+          "Go",
+          "Robotaxi",
+          "日本Ipo",
+          "自动驾驶"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/06/19/go-eyes-robotaxis-and-acquisitions-after-japans-biggest-ipo-of-2026-heres-why-it-matters/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781906977,
+        "published_at": "2026-06-20T06:09:37.641759",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/19/go-eyes-robotaxis-and-acquisitions-after-japans-biggest-ipo-of-2026-heres-why-it-matters/",
+        "event_id": null,
+        "original_url": "https://techcrunch.com/2026/06/19/go-eyes-robotaxis-and-acquisitions-after-japans-biggest-ipo-of-2026-heres-why-it-matters/",
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "61b55efa648cbf749a8526d6c9274b9c",
+        "title": "7000台Langflow服务器遭攻击",
+        "chinese_title": "7000台Langflow服务器遭攻击",
+        "original_title": "7,000 Langflow servers are under attack. LangGraph and LangChain have the same holes",
+        "summary": "VentureBeat称Langflow已有约7000台服务器遭攻击，LangGraph和LangChain也暴露同类漏洞，AI智能体框架可能把常规漏洞放大为密钥和系统入侵。",
+        "rating": "A",
+        "score": 82,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可扩展为AI Agent框架安全专题：从工具调用、状态持久化到凭据管理，开发者生态需要把传统AppSec问题重新纳入智能体运行时防线。",
+        "entities": [
+          "Ai Agent",
+          "Check Point",
+          "Langchain",
+          "Langflow",
+          "Langgraph"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/security/7000-langflow-servers-under-attack-langgraph-langchain-same-holes"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781906977,
+        "published_at": "2026-06-20T06:09:37.641913",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/security/7000-langflow-servers-under-attack-langgraph-langchain-same-holes",
+        "event_id": null,
+        "original_url": "https://venturebeat.com/security/7000-langflow-servers-under-attack-langgraph-langchain-same-holes",
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "f8ae8ff5212321397fd39d7204d2557a",
+        "title": "MGX被曝洽购200亿美元数据中心公司",
+        "chinese_title": "MGX被曝洽购200亿美元数据中心公司",
+        "original_title": "Sources: Abu Dhabi's MGX is exploring buying Singapore-based data center operator DayOne; last month, sources said DayOne planned a US IPO at a $20B valuation (Reuters)",
+        "summary": "阿布扎比AI投资机构MGX据称正探索收购新加坡数据中心运营商DayOne，后者此前被传计划以约200亿美元估值赴美上市。",
+        "rating": "A",
+        "score": 82,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "这笔潜在交易反映主权资本继续向AI算力基础设施前移，后续可观察中东资本、东南亚数据中心和云厂商之间的并购与供给绑定。",
+        "entities": [
+          "Ai基础设施",
+          "Dayone",
+          "Mgx",
+          "数据中心"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260619/p22#a260619p22"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781903355,
+        "published_at": "2026-06-20T05:09:15.420167",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260619/p22#a260619p22",
+        "event_id": null,
+        "original_url": "https://www.techmeme.com/260619/p22#a260619p22",
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "30a499c32a38e1f9e6595ae2fec4c81b",
+        "title": "OpenAI一季度营收57亿美元仍烧37亿",
+        "chinese_title": "OpenAI一季度营收57亿美元仍烧37亿",
+        "original_title": "Docs: OpenAI burned through $3.7B in Q1, on revenue of $5.7B, and ended the quarter with $73B+ in cash and marketable securities vs. $40B at the end of December (Erin Woo/The Information)",
+        "summary": "The Information文件显示OpenAI一季度收入57亿美元、消耗37亿美元资金，季度末现金和可出售证券超过730亿美元，明显高于去年底的400亿美元。",
+        "rating": "A+",
+        "score": 88,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "这组数据可用于继续追踪OpenAI高收入增长与巨额算力支出并存的资本结构，也会影响投资者对AI订阅、云成本和融资节奏的判断。",
+        "entities": [
+          "OpenAI",
+          "The Information",
+          "现金储备",
+          "算力支出"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260619/p21#a260619p21"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781903355,
+        "published_at": "2026-06-20T05:09:15.420227",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260619/p21#a260619p21",
+        "event_id": null,
+        "original_url": "https://www.techmeme.com/260619/p21#a260619p21",
+        "grade": "A+",
+        "level": "A+",
+        "original_content": "Erin Woo / The Information : Docs: OpenAI burned through $3.7B in Q1, on revenue of $5.7B, and ended the quarter with $73B+ in cash and marketable securities vs. $40B at the end of December — OpenAI burned through $3.7 billion in the first quarter, more than half its $5.7 billion in revenue, according to documents the company shared with shareholders.",
+        "extension": "可延伸到OpenAI现金储备、算力支出和融资节奏之间的关系，也能与Anthropic等模型公司的烧钱速度和上市预期横向比较。"
+      },
+      {
+        "id": "5ddbf7785ad19e992e9abf971bf697e7",
+        "title": "现代3.25亿美元买断波士顿动力",
+        "chinese_title": "现代3.25亿美元买断波士顿动力",
+        "original_title": "Hyundai buys Boston Dynamics",
+        "summary": "现代汽车集团计划以3.25亿美元收购软银所持Boston Dynamics剩余股份，使这家机器人公司成为全资子公司，强化其在人形和工业机器人上的控制权。",
+        "rating": "B",
+        "score": 72,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可继续观察现代是否把Boston Dynamics更深嵌入汽车制造、物流和人形机器人商业化，也会影响软银机器人资产退出节奏。",
+        "entities": [
+          "Boston Dynamics",
+          "Hyundai",
+          "Softbank",
+          "机器人"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (boston dynamics)",
+            "url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781895881,
+        "published_at": "2026-06-20T03:04:41.351891",
+        "source": "Hacker News (boston dynamics)",
+        "url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/",
+        "event_id": null,
+        "original_url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/",
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "b541ad97d9c429c34e18c505a062bc79",
+        "title": "DeepMind诺奖科学家转投Anthropic",
+        "chinese_title": "DeepMind诺奖科学家转投Anthropic",
+        "original_title": "Google Deepmind loses another top AI researcher as Nobel laureate John Jumper leaves for Anthropic",
+        "summary": "AlphaFold核心人物、诺奖得主John Jumper离开Google DeepMind加入Anthropic，延续近期Google顶尖AI研究者流向竞争对手或创业公司的趋势。",
+        "rating": "A+",
+        "score": 91,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "这不仅是单点人才变动，还会放大外界对DeepMind核心研究团队稳定性的关注，并影响Anthropic在前沿模型与科学AI方向的人才叙事。",
+        "entities": [
+          "Alphafold",
+          "Anthropic",
+          "DeepMind",
+          "John Jumper"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/google-deepmind-loses-another-top-ai-researcher-as-nobel-laureate-john-jumper-leaves-for-anthropic/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781892407,
+        "published_at": "2026-06-20T02:06:47.413939",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/google-deepmind-loses-another-top-ai-researcher-as-nobel-laureate-john-jumper-leaves-for-anthropic/",
+        "event_id": null
+      },
+      {
+        "id": "c2286de70c4d85f2395a568e36b95c73",
+        "title": "企业Agent开始押注按需生成小模型",
+        "chinese_title": "企业Agent开始押注按需生成小模型",
+        "original_title": "Fine-tuning forgets. RAG leaks context. Hypernetworks build the model your agent needs on demand.",
+        "summary": "VentureBeat讨论用超网络按企业政策实时生成任务专用小模型，试图绕开微调遗忘和RAG上下文泄露，让长流程Agent在合规、审计等场景减少人工看护。",
+        "rating": "B",
+        "score": 72,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这一方向会把企业Agent竞争从编排层推进到模型适配层，后续可关注Nace.AI、Sakana AI等公司如何验证校准、规模化和企业数据所有权。",
+        "entities": [
+          "Agent",
+          "Hypernetwork",
+          "Nace.Ai",
+          "Rag",
+          "Sakana Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/orchestration/fine-tuning-forgets-rag-leaks-context-hypernetworks-build-the-model-your-agent-needs-on-demand"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781888758,
+        "published_at": "2026-06-20T01:05:58.387627",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/orchestration/fine-tuning-forgets-rag-leaks-context-hypernetworks-build-the-model-your-agent-needs-on-demand",
+        "event_id": null,
+        "original_url": "https://venturebeat.com/orchestration/fine-tuning-forgets-rag-leaks-context-hypernetworks-build-the-model-your-agent-needs-on-demand",
+        "grade": "B",
+        "level": "B"
       }
     ]
   },
-  "last_updated": "2026-06-20T10:05:31.513867",
-  "total_news": 367
+  "last_updated": "2026-06-20T06:10:25.063438",
+  "total_news": 373
 }
