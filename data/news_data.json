@@ -2,13 +2,43 @@
   "news": {
     "2026-06-21": [
       {
+        "id": "285773f4818b4a714206460778b9ec5e",
+        "title": "ClickHouse推出Postgres服务基准测试",
+        "chinese_title": "ClickHouse推出Postgres服务基准测试",
+        "original_title": "PostgresBench: A Reproducible Benchmark for Postgres Services",
+        "summary": "ClickHouse 发布 PostgresBench，试图为各类 Postgres 服务提供可复现的性能基准，帮助用户比较托管数据库的真实表现。",
+        "rating": "B",
+        "score": 72,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "数据库云服务竞争正在从功能清单转向可复现实测，后续可比较 Supabase、Neon、RDS 等服务在统一基准下的表现。",
+        "entities": [
+          "Clickhouse",
+          "Postgresbench",
+          "Postgresql",
+          "数据库基准测试"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://clickhouse.com/blog/postgresbench"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781985870,
+        "published_at": "2026-06-21T04:04:30.218263",
+        "source": "Hacker News",
+        "url": "https://clickhouse.com/blog/postgresbench",
+        "event_id": null
+      },
+      {
         "id": "6cf88820a08341f6970bdb6ca8c7a89f",
-        "title": "中国五家AI大厂模型价格最高降99%",
-        "chinese_title": "中国五家AI大厂模型价格最高降99%",
+        "title": "中国五家AI实验室最高降价99%",
+        "chinese_title": "中国五家AI实验室最高降价99%",
         "original_title": "Five Chinese AI Labs Cut Token Prices Up to 99%",
-        "summary": "字节、腾讯、MiniMax、阿里和小米密集下调AI模型token价格，幅度最高达99%，反映国内大模型能力差距收窄后，竞争正快速转向价格、生态和场景落地。",
+        "summary": "字节、腾讯、MiniMax、阿里和小米在同一竞争窗口下调模型 token 价格，降幅从 50% 到 99%，反映国内大模型能力差距收窄后的价格战。",
         "rating": "A",
-        "score": 82,
+        "score": 80,
         "type": "industry",
         "typeName": "行业动态",
         "expansion": "价格战可能压缩模型厂商利润，并推动开发者更快迁移到低成本国产模型。后续可跟踪企业客户采购变化、云厂商套餐调整，以及A股AI应用和算力链条的市场反应。",
@@ -17,7 +47,7 @@
           "ByteDance",
           "Minimax",
           "Tencent",
-          "Xiaomi"
+          "小米"
         ],
         "sourceLinks": [
           {
@@ -30,16 +60,19 @@
         "published_at": "2026-06-21T03:09:21.227548",
         "source": "Technological Singularity",
         "url": "https://www.reddit.com/r/singularity/comments/1ub06rj/five_chinese_ai_labs_cut_token_prices_up_to_99/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "-&gt; ByteDance, Tencent, MiniMax, Alibaba and Xiaomi all cut AI token prices between 50% and 99% within the same competitive window. -&gt; Bank of America Securities analysts attribute the pricing race to narrowing capability differences between China's major AI models. -&gt; Alibaba's 50% discount on Qwen3.7-Max was tied to the 618 shopping event, blending AI competition with consumer promotions. If AI models become equally good, what will companies compete on next? Source: AI weekly submitted by /u/BuildwithVignesh [link] [comments]",
+        "grade": "A",
+        "extension": "价格战会压缩基础模型利润并推动应用层创新，后续可观察云厂商毛利、开源模型替代和企业 API 迁移节奏。"
       },
       {
         "id": "044fdf4977e1b8412975f4a790084b7d",
-        "title": "Founders Fund押注机器人宰鱼创业公司",
-        "chinese_title": "Founders Fund押注机器人宰鱼创业公司",
+        "title": "Founders Fund押注机器人宰鱼公司",
+        "chinese_title": "Founders Fund押注机器人宰鱼公司",
         "original_title": "Founders Fund’s outlier bet on humanely killed fish",
-        "summary": "Shinkei推出冰箱大小的Poseidon机器人，用自动化方式快速处理鱼类并降低痛苦，获得Founders Fund关注，显示食品科技和动物福利正在成为硬科技投资的新边缘赛道。",
+        "summary": "TechCrunch 报道 Shinkei 获得 Founders Fund 关注，其冰箱大小的 Poseidon 机器人主打快速且更人道地处理鱼类。",
         "rating": "A",
-        "score": 76,
+        "score": 67,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "该项目把机器人、食品供应链和动物福利结合起来，后续可延伸到水产加工自动化、餐饮供应链标准化，以及ESG投资是否进入更多传统农业环节。",
@@ -47,7 +80,7 @@
           "Founders Fund",
           "Poseidon",
           "Shinkei",
-          "食品科技"
+          "食品自动化"
         ],
         "sourceLinks": [
           {
@@ -60,7 +93,10 @@
         "published_at": "2026-06-21T03:09:21.227596",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/06/20/founders-funds-outlier-bet-on-humanely-killed-fish/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Shinkei makes a refrigerator-sized robot called Poseidon to kill fish quickly and humanely.",
+        "grade": "B",
+        "extension": "该案例显示硬科技投资正在进入食品供应链的细分环节，可延伸到自动化屠宰、动物福利标准和高端水产供应链效率。"
       },
       {
         "id": "6225973aa962031b1beb48dc036ae5cc",
@@ -90,6 +126,35 @@
         "published_at": "2026-06-21T03:09:21.227626",
         "source": "Hacker News (apple)",
         "url": "https://www.lispm.net/apps/uhf-x11/",
+        "event_id": null
+      },
+      {
+        "id": "8b14a3b9cf8ccd85cedcd2b553139dd5",
+        "title": "科学家找到结肠癌免疫逃逸关键基因",
+        "chinese_title": "科学家找到结肠癌免疫逃逸关键基因",
+        "original_title": "Colon cancer’s invisibility cloak removed by eliminating a single gene - a fundamental breakthrough. The result was 100% eradication of tumours when paired with immunotherapy treatment in mouse models.",
+        "summary": "研究称通过敲除一个关键基因，可解除结肠癌对免疫系统的\"隐身\"能力，并在小鼠模型中与免疫疗法联合实现肿瘤清除，为癌症免疫治疗提供新方向。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果结果能在人体研究中复现，可能扩展到更多实体瘤免疫治疗组合。后续值得追踪对应基因靶点、临床转化进度，以及相关生物技术公司的管线布局。",
+        "entities": [
+          "免疫疗法",
+          "基因敲除",
+          "结肠癌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1uazyun/colon_cancers_invisibility_cloak_removed_by/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781982561,
+        "published_at": "2026-06-21T03:09:21.227576",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1uazyun/colon_cancers_invisibility_cloak_removed_by/",
         "event_id": null
       },
       {
@@ -194,32 +259,34 @@
     ],
     "2026-06-20": [
       {
-        "id": "8b14a3b9cf8ccd85cedcd2b553139dd5",
-        "title": "科学家找到结肠癌免疫逃逸关键基因",
-        "chinese_title": "科学家找到结肠癌免疫逃逸关键基因",
-        "original_title": "Colon cancer’s invisibility cloak removed by eliminating a single gene - a fundamental breakthrough. The result was 100% eradication of tumours when paired with immunotherapy treatment in mouse models.",
-        "summary": "研究称通过敲除一个关键基因，可解除结肠癌对免疫系统的\"隐身\"能力，并在小鼠模型中与免疫疗法联合实现肿瘤清除，为癌症免疫治疗提供新方向。",
+        "id": "aac7c55fd1b71ccf88b9273d7a1d1e14",
+        "title": "大模型推理工程开源手册持续更新",
+        "chinese_title": "大模型推理工程开源手册持续更新",
+        "original_title": "An open handbook on LLM inference at scale (GPU internals, KV cache, batching, vLLM/SGLang/TensorRT-LLM) [P]",
+        "summary": "一份面向大模型规模化推理的开放手册新增 GPU 执行和内存机制章节，解释 KV Cache、批处理和推理吞吐瓶颈等关键问题。",
         "rating": "B",
         "score": 70,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "如果结果能在人体研究中复现，可能扩展到更多实体瘤免疫治疗组合。后续值得追踪对应基因靶点、临床转化进度，以及相关生物技术公司的管线布局。",
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "推理优化正在成为大模型落地的核心成本战场，后续可追踪 vLLM、SGLang、TensorRT-LLM 等框架的生态竞争。",
         "entities": [
-          "免疫疗法",
-          "基因敲除",
-          "结肠癌"
+          "Gpu",
+          "Kv Cache",
+          "LLM",
+          "Tensorrt-Llm",
+          "Vllm"
         ],
         "sourceLinks": [
           {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1uazyun/colon_cancers_invisibility_cloak_removed_by/"
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1uavduv/an_open_handbook_on_llm_inference_at_scale_gpu/"
           }
         ],
         "sources": 1,
-        "timestamp": 1781982561,
-        "published_at": "2026-06-21T03:09:21.227576",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1uazyun/colon_cancers_invisibility_cloak_removed_by/",
+        "timestamp": 1781985870,
+        "published_at": "2026-06-21T04:04:30.218247",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1uavduv/an_open_handbook_on_llm_inference_at_scale_gpu/",
         "event_id": null
       },
       {
@@ -12087,6 +12154,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-21T03:09:49.487536",
-  "total_news": 350
+  "last_updated": "2026-06-21T04:04:57.379543",
+  "total_news": 352
 }
