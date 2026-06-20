@@ -3,19 +3,19 @@
     "2026-06-21": [
       {
         "id": "285773f4818b4a714206460778b9ec5e",
-        "title": "ClickHouse推出Postgres服务基准测试",
-        "chinese_title": "ClickHouse推出Postgres服务基准测试",
+        "title": "ClickHouse推出PostgresBench复现数据库服务基准",
+        "chinese_title": "ClickHouse推出PostgresBench复现数据库服务基准",
         "original_title": "PostgresBench: A Reproducible Benchmark for Postgres Services",
-        "summary": "ClickHouse 发布 PostgresBench，试图为各类 Postgres 服务提供可复现的性能基准，帮助用户比较托管数据库的真实表现。",
+        "summary": "ClickHouse发布PostgresBench，试图为Postgres云服务和托管数据库提供可复现的性能基准，帮助开发者在不同服务之间进行更透明的横向比较。",
         "rating": "B",
-        "score": 72,
-        "type": "tool",
+        "score": 70,
+        "type": "research",
         "typeName": "工具技巧",
         "expansion": "数据库云服务竞争正在从功能清单转向可复现实测，后续可比较 Supabase、Neon、RDS 等服务在统一基准下的表现。",
         "entities": [
           "Clickhouse",
+          "Postgres",
           "Postgresbench",
-          "Postgresql",
           "数据库基准测试"
         ],
         "sourceLinks": [
@@ -29,7 +29,44 @@
         "published_at": "2026-06-21T04:04:30.218263",
         "source": "Hacker News",
         "url": "https://clickhouse.com/blog/postgresbench",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "B",
+        "extension": "可继续关注云数据库厂商如何用基准测试争夺开发者心智，以及Postgres生态在性能、成本和托管服务透明度上的竞争升级。"
+      },
+      {
+        "id": "aac7c55fd1b71ccf88b9273d7a1d1e14",
+        "title": "大模型推理扩展手册开源，拆解GPU与KV缓存瓶颈",
+        "chinese_title": "大模型推理扩展手册开源，拆解GPU与KV缓存瓶颈",
+        "original_title": "An open handbook on LLM inference at scale (GPU internals, KV cache, batching, vLLM/SGLang/TensorRT-LLM) [P]",
+        "summary": "一名开发者开源大模型规模化推理手册，围绕GPU执行、显存层级、KV cache、批处理以及vLLM、SGLang、TensorRT-LLM等生产级推理栈梳理性能瓶颈。",
+        "rating": "B",
+        "score": 72,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "推理优化正在成为大模型落地的核心成本战场，后续可追踪 vLLM、SGLang、TensorRT-LLM 等框架的生态竞争。",
+        "entities": [
+          "Gpu",
+          "Kv Cache",
+          "LLM",
+          "Tensorrt-Llm",
+          "Vllm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1uavduv/an_open_handbook_on_llm_inference_at_scale_gpu/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781985870,
+        "published_at": "2026-06-21T04:04:30.218247",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1uavduv/an_open_handbook_on_llm_inference_at_scale_gpu/",
+        "event_id": null,
+        "original_content": "I've been working through the internals of LLM inference and writing up what I learn as an open, in-progress handbook. Just wrapped another chapter on GPU execution and memory internals: why a GPU sits mostly idle during inference, how the memory hierarchy gates throughput, and where the real bottlenecks live. Added mermaid diagrams for the architecture pieces so the flow is easier to follow than a wall of text. It's a personal learning project, still growing chapter by chapter. I'd value feedback or corrections from anyone who's run inference in production, where my mental model breaks down is exactly what I want to find. Issues and PRs welcome. github.com/harshuljain13/llm-inference-at-scale submitted by /u/YouFirst295 [link] [comments]",
+        "grade": "B",
+        "extension": "可延伸到推理成本优化、开源推理框架竞争、企业部署大模型的工程门槛，以及GPU资源利用率如何影响AI应用商业化。"
       },
       {
         "id": "6cf88820a08341f6970bdb6ca8c7a89f",
@@ -258,37 +295,6 @@
       }
     ],
     "2026-06-20": [
-      {
-        "id": "aac7c55fd1b71ccf88b9273d7a1d1e14",
-        "title": "大模型推理工程开源手册持续更新",
-        "chinese_title": "大模型推理工程开源手册持续更新",
-        "original_title": "An open handbook on LLM inference at scale (GPU internals, KV cache, batching, vLLM/SGLang/TensorRT-LLM) [P]",
-        "summary": "一份面向大模型规模化推理的开放手册新增 GPU 执行和内存机制章节，解释 KV Cache、批处理和推理吞吐瓶颈等关键问题。",
-        "rating": "B",
-        "score": 70,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "推理优化正在成为大模型落地的核心成本战场，后续可追踪 vLLM、SGLang、TensorRT-LLM 等框架的生态竞争。",
-        "entities": [
-          "Gpu",
-          "Kv Cache",
-          "LLM",
-          "Tensorrt-Llm",
-          "Vllm"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1uavduv/an_open_handbook_on_llm_inference_at_scale_gpu/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781985870,
-        "published_at": "2026-06-21T04:04:30.218247",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1uavduv/an_open_handbook_on_llm_inference_at_scale_gpu/",
-        "event_id": null
-      },
       {
         "id": "26c3a7327534b772096ce926a4fb4e49",
         "title": "中国组建太空AI数据中心产业联盟",
@@ -12154,6 +12160,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-21T04:04:57.379543",
+  "last_updated": "2026-06-21T05:07:27.794172",
   "total_news": 352
 }
