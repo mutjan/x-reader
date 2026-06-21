@@ -2,13 +2,43 @@
   "news": {
     "2026-06-21": [
       {
-        "id": "d12be886525d91479af4855db93aaaa9",
-        "title": "AWS给AI智能体补上安全和业务上下文",
-        "chinese_title": "AWS给AI智能体补上安全和业务上下文",
-        "original_title": "AWS says AI agents lack business context and security, launches two services to patch the gaps",
-        "summary": "AWS在纽约峰会上推出Continuum和Context两项服务，分别面向代码漏洞自动修复和企业数据知识图谱，试图解决AI智能体写代码快但容易缺乏业务理解与安全保障的问题。",
+        "id": "9f873005dd6f9da963e1ed6e5df95b38",
+        "title": "Altman再挺AI规模化路线",
+        "chinese_title": "Altman再挺AI规模化路线",
+        "original_title": "Sam Altman says a whole generation of researchers held AI back by underestimating what scaling could do",
+        "summary": "Sam Altman在斯坦福演讲中回应AI规模化质疑，称一代研究者低估了扩展带来的能力跃迁，并以OpenAI近期推翻数学猜想的案例强化其判断。",
         "rating": "A",
-        "score": 85,
+        "score": 81,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这一表态会继续放大\"规模化是否仍有效\"的技术路线争论，也可延伸观察OpenAI如何用数学、科研案例为大模型投入辩护。",
+        "entities": [
+          "LLM",
+          "OpenAI",
+          "Sam Altman",
+          "Scaling"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/sam-altman-says-a-whole-generation-of-researchers-held-ai-back-by-underestimating-what-scaling-could-do/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782036336,
+        "published_at": "2026-06-21T18:05:36.389457",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/sam-altman-says-a-whole-generation-of-researchers-held-ai-back-by-underestimating-what-scaling-could-do/",
+        "event_id": null
+      },
+      {
+        "id": "d12be886525d91479af4855db93aaaa9",
+        "title": "AWS补上AI智能体安全和上下文短板",
+        "chinese_title": "AWS补上AI智能体安全和上下文短板",
+        "original_title": "AWS says AI agents lack business context and security, launches two services to patch the gaps",
+        "summary": "AWS在纽约峰会上推出Continuum和Context两项服务，分别面向代码漏洞修复和企业知识图谱构建，试图解决AI智能体缺业务语境、易出错的问题。",
+        "rating": "A",
+        "score": 69,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "这类服务会把企业AI Agent竞争从模型能力推向安全、权限、知识图谱和DevSecOps集成，后续可观察微软、谷歌云及代码工具链厂商是否跟进。",
@@ -16,8 +46,7 @@
           "Ai智能体",
           "Aws",
           "Context",
-          "Continuum",
-          "知识图谱"
+          "Continuum"
         ],
         "sourceLinks": [
           {
@@ -32,8 +61,10 @@
         "url": "https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps/",
         "event_id": null,
         "original_url": "https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps/",
-        "grade": "A",
-        "level": "A"
+        "grade": "B",
+        "level": "A",
+        "original_content": "At its summit in New York, AWS unveiled two new services. Continuum automatically detects, prioritizes, and fixes code vulnerabilities. Context builds a knowledge graph from corporate data to give AI agents the business context they need. Both tackle the same problem: agents that write code fast but get things wrong too often. The article AWS says AI agents lack business context and security, launches two services to patch the gaps appeared first on The Decoder .",
+        "extension": "这反映云厂商正把AI智能体竞争从模型能力推进到企业落地基础设施，后续可观察微软、谷歌云在安全治理和企业数据接入上的跟进。"
       },
       {
         "id": "8ad2f06ce7050428187caea136e2f0fb",
@@ -11726,6 +11757,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-21T17:07:00.372050",
-  "total_news": 340
+  "last_updated": "2026-06-21T18:06:06.995204",
+  "total_news": 341
 }
