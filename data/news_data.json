@@ -10976,263 +10976,40 @@
         "extension": "可延伸关注云巨头、模型公司和政府之间围绕前沿模型风险的三方博弈，以及投资关系是否影响安全审查。",
         "original_url": "https://www.reddit.com/r/singularity/comments/1u4wrxb/amazon_ceos_talks_with_us_officials_triggered/",
         "importance_score": 79
-      },
+      }
+    ],
+    "2026-06-22": [
       {
-        "id": "1010a12e32c9223d57af9ba925367970",
-        "title": "The Information质疑Anthropic在Fable风波中的矛盾",
-        "chinese_title": "The Information质疑Anthropic在Fable风波中的矛盾",
-        "original_title": "Anthropic’s Contradiction; The Risks of Buying SpaceX Stock Now",
-        "summary": "The Information文章讨论Anthropic近期Fable 5模型引发的政府风波，并同时提到购买SpaceX股票的风险。",
-        "rating": "A",
-        "score": 80,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这一议题可扩展到AI公司上市前叙事、政府合作对商业化节奏的影响，以及前沿模型访问规则对客户信任的冲击。",
+        "id": "7f4bde647994b848039a242147937cb7",
+        "title": "OpenAI广告收入野心亮相戛纳",
+        "chinese_title": "OpenAI广告收入野心亮相戛纳",
+        "original_title": "Cannes Ad Festival Puts OpenAI’s Projections in Spotlight",
+        "summary": "The Information称，OpenAI高管将在戛纳广告节密集露面，其内部预测显示广告收入到2030年可能升至1020亿美元，凸显其与谷歌、Meta争夺广告预算的商业化压力。",
+        "rating": "A+",
+        "score": 89,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "若OpenAI加速广告商业化，搜索、社交和AI助手入口的预算迁移会成为持续看点，也会影响谷歌、Meta等平台对AI广告产品的防守节奏。",
         "entities": [
-          "Anthropic",
-          "Fable",
-          "SpaceX",
-          "The Information"
+          "Denise Dresser",
+          "Google",
+          "Meta",
+          "OpenAI",
+          "广告收入"
         ],
         "sourceLinks": [
           {
             "name": "The Information",
-            "url": "https://www.theinformation.com/articles/anthropics-contradiction-risks-buying-spacex-stock-now"
+            "url": "https://www.theinformation.com/articles/cannes-ad-festival-puts-openais-projections-spotlight"
           }
         ],
         "sources": 1,
-        "timestamp": 1781478149,
-        "published_at": "2026-06-15T07:02:29.392360",
+        "timestamp": 1782083115,
+        "published_at": "2026-06-22T07:05:15.840283",
         "source": "The Information",
-        "url": "https://www.theinformation.com/articles/anthropics-contradiction-risks-buying-spacex-stock-now",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "What a weekend! Set time aside this coming Thursday for the New York City ticker tape parade celebrating the victorious Knicks. The joy flowing from that game Saturday night tops even the plaudits flowing from SpaceX’s successful IPO (read down for more on that subject.) Still, SpaceX was quickly supplanted in the business limelight by the latest Anthropic-government drama , this time over the AI firm’s recently released Fable 5 model. Is it just me, or is there something contradictory about a company that was ostensibly formed to “build safer systems” having a run-in with the U.S. government over the safety of its latest models?",
-        "extension": "可延伸到AI公司安全立场与商业发布之间的张力，以及政策风险如何影响头部科技公司的资本市场叙事。",
-        "original_url": "https://www.theinformation.com/articles/anthropics-contradiction-risks-buying-spacex-stock-now",
-        "importance_score": 80
+        "url": "https://www.theinformation.com/articles/cannes-ad-festival-puts-openais-projections-spotlight",
+        "event_id": null
       },
-      {
-        "id": "54f4a491be6ea459f89009f2fc9a7215",
-        "title": "Meta开源TorchCodec新增HDR视频解码",
-        "chinese_title": "Meta开源TorchCodec新增HDR视频解码",
-        "original_title": "TorchCodec 0.14: HDR Video Decoding for CPU and CUDA, and Fast Wav Decoder",
-        "summary": "TorchCodec 0.14发布，新增CPU和CUDA上的HDR视频解码，并引入更快的WAV音频解码器，面向多媒体AI数据处理场景。",
-        "rating": "B",
-        "score": 70,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "该更新可影响视频理解、音频处理和PyTorch生态的数据加载效率，后续可关注其在训练数据管线中的采用情况。",
-        "entities": [
-          "CUDA",
-          "Hdr视频",
-          "Meta",
-          "Pytorch",
-          "Torchcodec"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/meta-pytorch/torchcodec/releases/tag/v0.14.0"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781478149,
-        "published_at": "2026-06-15T07:02:29.392375",
-        "source": "Hacker News",
-        "url": "https://github.com/meta-pytorch/torchcodec/releases/tag/v0.14.0",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "original_url": "https://github.com/meta-pytorch/torchcodec/releases/tag/v0.14.0",
-        "importance_score": 70
-      },
-      {
-        "id": "b3f31e072b1eb30245e4c4ef3bc644be",
-        "title": "Grok Build 终端开始支持公式和 LaTeX 渲染",
-        "chinese_title": "Grok Build 终端开始支持公式和 LaTeX 渲染",
-        "original_title": "Grok Build now renders math, formulas, and LaTeX right in your terminal",
-        "summary": "xAI 旗下 Grok 官方账号宣布，Grok Build 现在可在终端内直接渲染数学、公式和 LaTeX，为命令行编程代理补上技术文档和公式展示能力。",
-        "rating": "B",
-        "score": 72,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "适合作为 AI 编程工具体验更新跟踪，可关注其对开发者文档、数学推理和命令行交互的影响；目前仍是单点功能升级，优先级低于模型发布或监管事件。",
-        "entities": [
-          "xAI",
-          "Grok",
-          "Grok Build",
-          "LaTeX",
-          "AI Coding Agent"
-        ],
-        "sourceLinks": [
-          {
-            "name": "X / Grok",
-            "url": "https://x.com/grok/status/2066241561432895735"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781477921,
-        "published_at": "2026-06-15T06:58:41.600903",
-        "source": "X / Grok",
-        "url": "https://x.com/grok/status/2066241561432895735",
-        "original_url": "https://x.com/grok/status/2066241561432895735",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "original_content": "Official Grok account says Grok Build now renders math, formulas, and LaTeX right in the terminal. Observed from X Pro visible column during manual refresh on 2026-06-15 Asia/Shanghai.",
-        "extension": "适合作为 AI 编程工具体验更新跟踪，可关注其对开发者文档、数学推理和命令行交互的影响；目前仍是单点功能升级，优先级低于模型发布或监管事件。",
-        "importance_score": 72
-      },
-      {
-        "id": "a8ca2c8e65d99e5a13084f7a16493c3a",
-        "title": "Lucky Robots推出机器人专用游戏引擎",
-        "chinese_title": "Lucky Robots推出机器人专用游戏引擎",
-        "original_title": "The first game engine for robotics",
-        "summary": "Lucky Robots发布面向机器人AI训练的Lucky Engine，主打在虚拟世界中生成大规模物理仿真数据，再迁移到真实机器人任务。",
-        "rating": "A",
-        "score": 79,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "如果仿真到现实的迁移效果被开发者验证，机器人公司可能减少真实硬件试错成本，也会带动 LeRobot 等开源训练生态的工具链竞争。",
-        "entities": [
-          "Lerobot",
-          "Lucky Engine",
-          "Lucky Robots",
-          "Mujoco",
-          "机器人Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://luckyrobots.com/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781474547,
-        "published_at": "2026-06-15T06:02:27.039825",
-        "source": "Hacker News",
-        "url": "https://luckyrobots.com/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "Comments",
-        "extension": "可延伸到机器人仿真平台竞争、具身智能数据生成成本下降，以及MuJoCo、LeRobot生态与商业工具链的结合。",
-        "original_url": "https://luckyrobots.com/",
-        "importance_score": 79
-      },
-      {
-        "id": "8c46d29c490f39de519e6f91e0493e73",
-        "title": "FBI造了一座假城镇，专门演练网络攻击",
-        "chinese_title": "FBI造了一座假城镇，专门演练网络攻击",
-        "original_title": "The FBI built a small town to simulate cyberattacks",
-        "summary": "FBI 在阿拉巴马州亨茨维尔建设 Kinetic Cyber Range，用酒店、加油站、医院和数据中心等真实场景模拟网络攻击对现实设施的连锁影响。",
-        "rating": "A",
-        "score": 80,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这类沉浸式网络靶场反映网络安全训练从桌面推演走向城市级实战模拟，后续可延伸到关键基础设施防护、车联网取证和政府安全采购。",
-        "entities": [
-          "Fbi",
-          "Kinetic Cyber Range",
-          "关键基础设施",
-          "网络安全"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781470974,
-        "published_at": "2026-06-15T05:02:54.047344",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "There’s also a fake power company to jack up prices thanks to the fake data center. | Image: FBI Last year, the FBI opened a Cyber Range in Huntsville, Alabama, for simulating cyberattacks. Think of it sort of like the famous Hogan's Alley , but for modern digital crime training. It's a massive 22,000 square-foot replica of an entire town, complete with a convenience store, gas station, hospital, and even fully furnished houses. It's a training facility where the bureau can recreate real-world scenarios for training and research purposes. All of the various buildings and facilities are hooked up the way they would be in a real town. There's even a small data center with over 200 servers that can be hacked, infected with malware, and stu … Read the full story at The Verge.",
-        "extension": "这类物理化网络靶场说明关键基础设施防护正在从桌面推演走向实景训练，后续可延伸到电网、医院、数据中心和城市安全预算变化。",
-        "original_url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range",
-        "importance_score": 80
-      },
-      {
-        "id": "0f28d7c8a3fa9db15af22dce4c1a9afd",
-        "title": "智能体科学新测试床：让模型反推黑箱评委偏好",
-        "chinese_title": "智能体科学新测试床：让模型反推黑箱评委偏好",
-        "original_title": "Inverse Rubric Optimization: A testbed for agent science",
-        "summary": "Fulcrum Research 提出 Inverse Rubric Optimization，让智能体在有限标签预算下学习黑箱评委偏好，用更平滑、可控的任务研究长程智能体行为。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该方向可连接智能体评测、奖励黑客和科学发现自动化，后续值得关注是否形成可复现实验基准以及对现有agent eval体系的挑战。",
-        "entities": [
-          "Fable",
-          "Fulcrum Research",
-          "Inverse Rubric Optimization",
-          "Opus",
-          "智能体"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781470974,
-        "published_at": "2026-06-15T05:02:54.047370",
-        "source": "Hacker News",
-        "url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "Comments",
-        "extension": "IRO 可作为评估智能体探索、资源利用和迭代策略的新基准，后续值得关注它是否进入主流 agent benchmark，以及不同模型在标签预算下的 scaling 差异。",
-        "original_url": "https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html",
-        "importance_score": 78
-      },
-      {
-        "id": "64c8ab1c89c197c8bf0d28ea6596bba3",
-        "title": "纳德拉称企业要同时积累人力和Token资本",
-        "chinese_title": "纳德拉称企业要同时积累人力和Token资本",
-        "original_title": "Satya Nadella says companies must build both human capital and token capital, with human judgment guiding AI systems that learn and improve over time (Satya Nadella/@satyanadella)",
-        "summary": "微软CEO Satya Nadella提出企业AI竞争力不只来自前沿模型，还取决于把人工判断、组织知识和AI系统连接成持续学习的认知循环。",
-        "rating": "A+",
-        "score": 85,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "这一表述把AI投入从工具采购推进到组织资产管理层面，可延伸观察微软如何把 Copilot、企业数据和工作流重新包装成管理方法论。后续也可比较谷歌、OpenAI 等厂商对企业AI资本化的叙事差异。",
-        "entities": [
-          "Ai Agent",
-          "Microsoft",
-          "Satya Nadella",
-          "Token Capital"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260614/p13#a260614p13"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781467371,
-        "published_at": "2026-06-15T04:02:51.537822",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260614/p13#a260614p13",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "original_url": "https://www.techmeme.com/260614/p13#a260614p13",
-        "original_content": "Satya Nadella / @satyanadella : Satya Nadella says companies must build both human capital and token capital, with human judgment guiding AI systems that learn and improve over time — https://x.com/...",
-        "extension": "这一表述把企业AI战略从模型采购转向组织学习系统，后续可观察微软Copilot、企业知识库和agent工作流如何围绕token capital重构。",
-        "importance_score": 85
-      }
-    ],
-    "2026-06-22": [
       {
         "id": "d55f1d5cad210bb68b0b4320f685e1f7",
         "title": "无人驾驶货运卡车公司融资2400万美元",
@@ -11406,6 +11183,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-22T03:06:46.089264",
-  "total_news": 332
+  "last_updated": "2026-06-22T07:05:35.267080",
+  "total_news": 326
 }
