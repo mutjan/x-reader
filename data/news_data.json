@@ -5132,40 +5132,6 @@
         "grade": "A",
         "level": "A",
         "importance_score": 85
-      },
-      {
-        "id": "cc136d9c4d7713caa5c6080516588ad8",
-        "title": "贝索斯押注英国材料AI公司CuspAI",
-        "chinese_title": "贝索斯押注英国材料AI公司CuspAI",
-        "original_title": "Sources: Jeff Bezos is investing in Cambridge, UK-Based CuspAI, which applies generative AI to material sciences, as part of a $400M round at a $2.6B valuation (Tim Bradshaw/Financial Times)",
-        "summary": "英国剑桥材料科学AI公司CuspAI据称获得贝索斯参与的新一轮融资，轮次规模达4亿美元，公司估值升至26亿美元。",
-        "rating": "A+",
-        "score": 88,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "材料科学正在成为生成式AI从软件走向硬科技的重要落点，可延伸观察AI制药、化学材料和能源材料创业公司的估值重估。",
-        "entities": [
-          "Cuspai",
-          "Jeff Bezos",
-          "材料科学",
-          "生成式Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260617/p4#a260617p4"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781673095,
-        "published_at": "2026-06-17T13:11:35.279264",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260617/p4#a260617p4",
-        "event_id": null,
-        "original_url": "https://www.techmeme.com/260617/p4#a260617p4",
-        "grade": "A+",
-        "level": "A+",
-        "importance_score": 88
       }
     ],
     "2026-06-23": [
@@ -7802,6 +7768,96 @@
     ],
     "2026-06-24": [
       {
+        "id": "b776434cb35b69831b4b5a29ad5d8c3b",
+        "title": "开发者用录屏绕过MacBook光标卡顿",
+        "chinese_title": "开发者用录屏绕过MacBook光标卡顿",
+        "original_title": "\"Fix\" MacBook Neo Cursor Lag: Record 1 Pixel of the Screen Every 10 Seconds",
+        "summary": "一名开发者在Gist中分享临时方案：每10秒录制1个像素以迫使系统使用软件光标，从而缓解MacBook Neo边缘和终端窗口附近的光标卡顿。",
+        "rating": "B",
+        "score": 65,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该做法反映macOS图形栈和硬件光标切换可能存在缺陷，但目前只是个人 workaround，后续价值取决于Apple是否确认或修复。",
+        "entities": [
+          "Macbook Neo",
+          "Macos",
+          "Screen Recording",
+          "Windowserver"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://gist.github.com/retroplasma/ec21767d0a8380c7ea9c2fbee1c7d6bf"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782281188,
+        "published_at": "2026-06-24T14:06:28.342972",
+        "source": "Hacker News",
+        "url": "https://gist.github.com/retroplasma/ec21767d0a8380c7ea9c2fbee1c7d6bf",
+        "event_id": null
+      },
+      {
+        "id": "45815c592cf033a49aabad67251d0cac",
+        "title": "MoEngage收购AI营销代理公司Aampe",
+        "chinese_title": "MoEngage收购AI营销代理公司Aampe",
+        "original_title": "Customer engagement service MoEngage acquires Aampe, whose AI agents help brands personalize messaging, for \"tens of millions\", per a source; Aampe raised ~$28M (Jagmeet Singh/TechCrunch)",
+        "summary": "TechCrunch报道称，客户互动服务商MoEngage以数千万美元收购Aampe，后者用AI代理帮助品牌做个性化消息触达，此前累计融资约2800万美元。",
+        "rating": "A",
+        "score": 78,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "这笔并购可观察营销自动化平台如何把AI代理能力内嵌到客户运营流程，也可能引发CRM、CDP和营销云厂商继续补齐智能触达能力。",
+        "entities": [
+          "Aampe",
+          "Ai代理",
+          "Moengage",
+          "Techcrunch"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260624/p1#a260624p1"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782281188,
+        "published_at": "2026-06-24T14:06:28.343003",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260624/p1#a260624p1",
+        "event_id": null
+      },
+      {
+        "id": "ea66f9ac626a47c300ccf55e09079236",
+        "title": "Sakana推出单模型形态多智能体系统",
+        "chinese_title": "Sakana推出单模型形态多智能体系统",
+        "original_title": "Sakana Fugu: a multi-agent system delivered as one model",
+        "summary": "Sakana AI开源Fugu项目，将动态编排多个前沿模型的多智能体系统封装成单个LLM接口，并支持Chat Completions和Responses端点调用。",
+        "rating": "A",
+        "score": 80,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "它把多智能体调度从应用层框架下沉为可直接调用的模型服务，后续可关注其在编码、研究和复杂任务上的真实基准表现与成本结构。",
+        "entities": [
+          "Fugu",
+          "LLM",
+          "Sakana Ai",
+          "多智能体"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/SakanaAI/fugu"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782281188,
+        "published_at": "2026-06-24T14:06:28.343015",
+        "source": "Hacker News",
+        "url": "https://github.com/SakanaAI/fugu",
+        "event_id": null
+      },
+      {
         "id": "1204f9c0c977af33fd13409d6f47b2b5",
         "title": "智谱考虑赴港再募数十亿美元",
         "chinese_title": "智谱考虑赴港再募数十亿美元",
@@ -8535,6 +8591,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-24T13:10:39.350068",
-  "total_news": 257
+  "last_updated": "2026-06-24T14:07:00.215235",
+  "total_news": 259
 }
