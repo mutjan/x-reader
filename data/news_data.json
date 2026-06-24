@@ -5486,43 +5486,13 @@
     ],
     "2026-06-25": [
       {
-        "id": "85d72c5428ccf6a24158fcfe589ea8ec",
-        "title": "实验酒瓶首次追踪软木塞氧气迁移",
-        "chinese_title": "实验酒瓶首次追踪软木塞氧气迁移",
-        "original_title": "Experimental wine bottle tracks oxygen moving through the cork",
-        "summary": "法国研究团队用实验酒瓶追踪氧气通过软木塞进入葡萄酒的过程，展示瓶塞在葡萄酒氧化和陈年中的调节作用。",
-        "rating": "B",
-        "score": 66,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该研究可延伸到食品材料、包装工程和传感监测，但与AI、半导体等核心科技选题距离较远。",
-        "entities": [
-          "Science Advances",
-          "氧气扩散",
-          "葡萄酒陈年",
-          "软木塞"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Ars Technica » Scientific Method",
-            "url": "https://arstechnica.com/science/2026/06/experimental-wine-bottle-tracks-oxygen-moving-through-the-cork/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1782335151,
-        "published_at": "2026-06-25T05:05:51.987878",
-        "source": "Ars Technica » Scientific Method",
-        "url": "https://arstechnica.com/science/2026/06/experimental-wine-bottle-tracks-oxygen-moving-through-the-cork/",
-        "event_id": null
-      },
-      {
         "id": "01066e4d7cc1db51f2359d54ea8aee11",
         "title": "Anthropic指控阿里大规模蒸馏Claude",
         "chinese_title": "Anthropic指控阿里大规模蒸馏Claude",
         "original_title": "Sources: in a letter to US officials, Anthropic accused Alibaba of adversarial distillation, accessing Claude 28.8M times from April to June via ~25K accounts (Maggie Eastland/Bloomberg)",
         "summary": "消息称Anthropic在致美国官员信中指控阿里通过约2.5万个账号访问Claude 2880万次，涉嫌对模型进行对抗式蒸馏。",
-        "rating": "S",
-        "score": 97,
+        "rating": "A+",
+        "score": 88,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "事件可延伸到模型蒸馏合规、跨境AI竞争和闭源模型访问控制，也可能影响中美AI监管叙事。",
@@ -5543,7 +5513,10 @@
         "published_at": "2026-06-25T05:05:51.987892",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260624/p39#a260624p39",
-        "event_id": null
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+",
+        "original_url": "https://www.techmeme.com/260624/p39#a260624p39"
       },
       {
         "id": "840cd2b55ff2d1a6304b9d58ccc48ef0",
@@ -5680,17 +5653,18 @@
       },
       {
         "id": "1e5fd5d25ffaddd0f4f1381871cc81b8",
-        "title": "阿里Qwen-AgentWorld用预测环境训练智能体",
-        "chinese_title": "阿里Qwen-AgentWorld用预测环境训练智能体",
+        "title": "阿里Qwen用环境预测提升智能体表现",
+        "chinese_title": "阿里Qwen用环境预测提升智能体表现",
         "original_title": "Alibaba's model never trained as an agent &mdash; and improved agent performance across seven benchmarks",
-        "summary": "阿里Qwen团队发布Qwen-AgentWorld，通过预测环境反馈而非直接在环境中行动来改进智能体表现，覆盖七类任务基准。",
+        "summary": "阿里Qwen团队发布Qwen-AgentWorld，通过训练模型预测环境反馈而非直接在环境中行动，在七类智能体任务基准上提升表现。",
         "rating": "A",
-        "score": 69,
+        "score": 78,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "该方法为智能体训练提供了比真实环境交互更低成本的路线，后续可观察其在软件工程、终端、移动端和MCP任务中的复现效果。",
         "entities": [
           "Alibaba",
+          "MCP",
           "Qwen",
           "Qwen-Agentworld",
           "智能体"
@@ -5707,11 +5681,9 @@
         "source": "VentureBeat (qwen)",
         "url": "https://venturebeat.com/technology/alibabas-model-never-trained-as-an-agent-and-improved-agent-performance-across-seven-benchmarks",
         "event_id": null,
-        "grade": "B",
+        "grade": "A",
         "level": "A",
-        "original_url": "https://venturebeat.com/technology/alibabas-model-never-trained-as-an-agent-and-improved-agent-performance-across-seven-benchmarks",
-        "original_content": "Alibaba's Qwen team released Qwen-AgentWorld on Tuesday — two models trained not to act inside agent environments, but to predict what those environments return. The release covers seven domains under a single architecture: MCP, Search, Terminal, Software Engineering, Android, Web, and OS. The release extends Alibaba's recent push into autonomous agents. Qwen3.7-Max , released in May, was built around a 35-hour autonomous execution capability. That shift targets a ceiling teams training agents at scale run into directly. Real search engines surface whatever results exist, with no mechanism to inject controlled conditions. Live terminals do not allow injecting a low-disk-space condition on demand. Agent training is bounded by what production environments will surface, with no systematic way to expose the edge cases agents will need to handle but rarely encounter in training. The research team trained agents inside the resulting simulator and found performance gains that exceeded what training against real environments alone produced. In a separate test, using world model training as a warm-up before agentic fine-tuning improved performance across seven benchmarks, including three the model had never seen during training. The paper accompanying the release identified a gap in prior agent research. \"We argue that world modeling is a crucial missing piece in the path to general agents.\" Qwen-AgentWorld trains on what environments return, not what agents should do Most agent models are trained to answer one question: given what the environment just showed me, what should I do next? Qwen-AgentWorld is trained to answer the inverse: given what the agent just did, what will the environment show next? That reversal is the core of what the paper calls a language world model: instead of optimizing for action selection, the model learns to predict the next environment state across all seven domains under a single training objective. Prior work was narrower: WebWorld , an earlier Qwen project from February, covered web environments only; Snowflake's Agent World Model , published the same month, generates code-driven SQL-backed environments rather than training a model to predict states. Qwen-AgentWorld is the first to span seven domains in a single model, with environment modeling baked in from the earliest pretraining stage. Alibaba trained both models in three stages on more than 10 million environment interaction trajectories from real agent runs. Stage one teaches the model how environments behave — file systems, terminal states, browser DOM changes, API responses. Stage two trains the model to reason through what comes next before predicting it. Stage three, reinforcement learning, tightens predictions using rule-based checks and open-ended quality scoring. Both models are Mixture-of-Experts designs — only a fraction of parameters are active per token. The 35B model activates 3B; the 397B activates 17B. Both support 256K context windows. For GUI domains (Android, Web, and OS), the models work from textual accessibility trees and UI view hierarchies rather than screenshots. The 35B model weights and AgentWorldBench are available under Apache 2.0; the 397B weights are not publicly released. The training results matter more than the benchmarks The benchmark scores show how accurately the models predict what environments return. The training results show what that prediction capability is actually worth for teams building agents — and those are the numbers that matter more. According to the researchers, agents trained inside controlled simulation outperformed agents trained in real environments. Injecting targeted perturbations — partial responses that force extra agent steps, and edge cases real environments rarely surface — pushed MCPMark from 24.6 to 33.8. On Search, agents trained in entirely fictional worlds transferred to real search tasks, pushing WideSearch F1 Item from 34.02 to 50.31 on the open 35B model. A separate warm-up test showed that world model pretraining improved BFCL v4 from 62.29 to 71.25 and Claw-Eval from 53.60 to 64.88 with no agent-specific fine-tuning. Researchers flag the benchmark and the overfitting risk The paper drew immediate reaction from AI researchers on X. The concerns they raised map to what practitioners need to verify before acting on the findings. On the training objective and transfer result, the assessment from one AI/ML researcher was direct. \"Every other 'agent' model has been trained to act in environments,\" wrote @drawais_ai , who has a PhD background and regularly breaks down AI papers. \"Qwen flipped the question. They trained the model to predict the environment itself... That predictive knowledge then transfers to agent tasks even without any agent-specific fine-tuning.\" He identified the Controllable Sim RL result as \"the receipt\" for the claim that synthetic training can substitute for real-environment RL at scale, and flagged that three of the seven transfer benchmarks were entirely out of domain. The benchmark margin drew immediate scrutiny. \"AgentWorldBench is a benchmark Alibaba built and published in the same paper,\" wrote @TheSignal_Desk , who focuses on honest takes and key numbers in AI research. \"They wrote the test, then topped it by 0.46.\" The sim-RL methodology is the result @limalemonnn , who builds production AI agents, identified as most in need of scrutiny before the headline claim gets quoted. \"Sim-trained agents traditionally overfit to the simulator's quirks,\" they wrote. \"If the world model is too clean, the agent learns the model, not the task.\" They pointed to the paper's holdout split as the section practitioners should read before acting on the numbers. The overfitting concern has a partial answer in the data. The gap between uncontrolled Sim RL (MCPMark 24.6) and controlled Sim RL (MCPMark 33.8) suggests the gains depend substantially on the controllability mechanism, not simulation accuracy alone. The fictional-world Search result, where agents trained on invented environments transfer to real search tasks, is the paper's strongest evidence against the overfitting concern. What this means for teams building agentic pipelines For AI engineering teams building and scaling agentic pipelines, this work signals a meaningful shift in how agent capability gets built. Teams training agents at scale now have a third option between real-environment RL and static benchmarks: controlled simulation that injects the edge cases production won't surface. Synthetic environments are a legitimate training layer. Controlled simulation that injects conditions real environments won't produce is a complement to real-environment RL, not a shortcut around it. What a model learns before agent training starts matters more than most pipelines account for. The warm-up finding — performance gains across unseen benchmarks with no agent-specific training — suggests environment grounding belongs earlier in development than current practice.",
-        "extension": "可延伸到智能体训练范式变化、环境模拟成本下降，以及开源模型在工具调用和软件工程任务中的竞争。"
+        "original_url": "https://venturebeat.com/technology/alibabas-model-never-trained-as-an-agent-and-improved-agent-performance-across-seven-benchmarks"
       },
       {
         "id": "7ac6b73d58dc65aba4c1b02061330a88",
@@ -7768,6 +7740,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-25T05:06:44.634567",
-  "total_news": 233
+  "last_updated": "2026-06-25T05:07:58.334726",
+  "total_news": 232
 }
