@@ -1272,70 +1272,6 @@
         "original_url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/",
         "grade": "B",
         "level": "B"
-      },
-      {
-        "id": "b541ad97d9c429c34e18c505a062bc79",
-        "title": "DeepMind诺奖科学家转投Anthropic",
-        "chinese_title": "DeepMind诺奖科学家转投Anthropic",
-        "original_title": "Google Deepmind loses another top AI researcher as Nobel laureate John Jumper leaves for Anthropic",
-        "summary": "AlphaFold核心人物、诺奖得主John Jumper离开Google DeepMind加入Anthropic，延续近期Google顶尖AI研究者流向竞争对手或创业公司的趋势。",
-        "rating": "A+",
-        "score": 91,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "这不仅是单点人才变动，还会放大外界对DeepMind核心研究团队稳定性的关注，并影响Anthropic在前沿模型与科学AI方向的人才叙事。",
-        "entities": [
-          "Alphafold",
-          "Anthropic",
-          "DeepMind",
-          "John Jumper"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/google-deepmind-loses-another-top-ai-researcher-as-nobel-laureate-john-jumper-leaves-for-anthropic/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781892407,
-        "published_at": "2026-06-20T02:06:47.413939",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/google-deepmind-loses-another-top-ai-researcher-as-nobel-laureate-john-jumper-leaves-for-anthropic/",
-        "event_id": null
-      },
-      {
-        "id": "c2286de70c4d85f2395a568e36b95c73",
-        "title": "企业Agent开始押注按需生成小模型",
-        "chinese_title": "企业Agent开始押注按需生成小模型",
-        "original_title": "Fine-tuning forgets. RAG leaks context. Hypernetworks build the model your agent needs on demand.",
-        "summary": "VentureBeat讨论用超网络按企业政策实时生成任务专用小模型，试图绕开微调遗忘和RAG上下文泄露，让长流程Agent在合规、审计等场景减少人工看护。",
-        "rating": "B",
-        "score": 72,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这一方向会把企业Agent竞争从编排层推进到模型适配层，后续可关注Nace.AI、Sakana AI等公司如何验证校准、规模化和企业数据所有权。",
-        "entities": [
-          "Agent",
-          "Hypernetwork",
-          "Nace.Ai",
-          "Rag",
-          "Sakana Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/orchestration/fine-tuning-forgets-rag-leaks-context-hypernetworks-build-the-model-your-agent-needs-on-demand"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781888758,
-        "published_at": "2026-06-20T01:05:58.387627",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/orchestration/fine-tuning-forgets-rag-leaks-context-hypernetworks-build-the-model-your-agent-needs-on-demand",
-        "event_id": null,
-        "original_url": "https://venturebeat.com/orchestration/fine-tuning-forgets-rag-leaks-context-hypernetworks-build-the-model-your-agent-needs-on-demand",
-        "grade": "B",
-        "level": "B"
       }
     ],
     "2026-06-23": [
@@ -3970,7 +3906,67 @@
         "level": "A"
       }
     ],
-    "2026-06-26": [
+    "2026-06-27": [
+      {
+        "id": "516bdd0eab663bfd857db4efe2d5f3c4",
+        "title": "AI连续编程19天仍难复刻复杂程序",
+        "chinese_title": "AI连续编程19天仍难复刻复杂程序",
+        "original_title": "An AI model programmed nonstop for 19 days on a single MirrorCode task that cost $2,600 to run",
+        "summary": "Epoch AI 推出 MirrorCode 基准，测试模型在看不到原始代码时复刻完整程序的能力，Claude Opus 4.7 领先但复杂任务仍普遍失败。",
+        "rating": "A",
+        "score": 79,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到长程软件工程能力、推理成本和编程智能体评测标准，影响企业评估 AI 编码工具真实边界。",
+        "entities": [
+          "Ai编程",
+          "Claude",
+          "Epoch Ai",
+          "Mirrorcode"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/an-ai-model-programmed-nonstop-for-19-days-on-a-single-mirrorcode-task-that-cost-2600-to-run/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782497236,
+        "published_at": "2026-06-27T02:07:16.730711",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/an-ai-model-programmed-nonstop-for-19-days-on-a-single-mirrorcode-task-that-cost-2600-to-run/",
+        "event_id": null
+      },
+      {
+        "id": "821ced831e9eda87da8f7037688f52ab",
+        "title": "开发者展示Claude和Codex模型路由工具",
+        "chinese_title": "开发者展示Claude和Codex模型路由工具",
+        "original_title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+        "summary": "Hacker News 展示 Workweave Router，可在 Claude、Codex 和 Cursor 中做智能模型路由，但当前信息主要是项目链接和评论入口。",
+        "rating": "B",
+        "score": 67,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可关注多模型路由在开发工具中的落地，但需要更多使用数据和项目成熟度验证。",
+        "entities": [
+          "Claude",
+          "Codex",
+          "Cursor",
+          "Workweave Router"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/workweave/router"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782497236,
+        "published_at": "2026-06-27T02:07:16.730761",
+        "source": "Hacker News",
+        "url": "https://github.com/workweave/router",
+        "event_id": null
+      },
       {
         "id": "c1d2a265c15b96bfae63c000765c0a63",
         "title": "苹果首款触屏MacBook Pro仍用M5芯片",
@@ -4038,7 +4034,9 @@
         "original_url": "https://the-decoder.com/ai-startup-lindy-ditched-claude-entirely-for-deepseek-saving-millions-as-cost-pressure-mounts-on-anthropic/",
         "grade": "A",
         "level": "A"
-      },
+      }
+    ],
+    "2026-06-26": [
       {
         "id": "609ffbf40d3a3a25c557d92564e66c4c",
         "title": "美国AI政策从放任转向不透明强监管",
@@ -8312,6 +8310,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-27T00:09:51.334496",
+  "last_updated": "2026-06-27T02:07:56.003883",
   "total_news": 249
 }
