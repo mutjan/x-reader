@@ -510,6 +510,232 @@
         "level": "A",
         "original_content": "Gregory Zuckerman / Wall Street Journal : A look at Jane Street's push to supercharge trading with AI and become a major AI investor; it invested $1B in CoreWeave in April and has a stake in Anthropic — The firm has surged from a handful of staffers to 3,500 with plans to recruit more than 500 employees this year.",
         "extension": "这条线索可延伸到量化交易公司从技术使用者转为AI资本玩家的趋势，以及算力、模型公司和金融交易策略之间更紧密的利益绑定。"
+      },
+      {
+        "id": "285773f4818b4a714206460778b9ec5e",
+        "title": "ClickHouse推出PostgresBench复现数据库服务基准",
+        "chinese_title": "ClickHouse推出PostgresBench复现数据库服务基准",
+        "original_title": "PostgresBench: A Reproducible Benchmark for Postgres Services",
+        "summary": "ClickHouse发布PostgresBench，试图为Postgres云服务和托管数据库提供可复现的性能基准，帮助开发者在不同服务之间进行更透明的横向比较。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "工具技巧",
+        "expansion": "数据库云服务竞争正在从功能清单转向可复现实测，后续可比较 Supabase、Neon、RDS 等服务在统一基准下的表现。",
+        "entities": [
+          "Clickhouse",
+          "Postgres",
+          "Postgresbench",
+          "数据库基准测试"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://clickhouse.com/blog/postgresbench"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781985870,
+        "published_at": "2026-06-21T04:04:30.218263",
+        "source": "Hacker News",
+        "url": "https://clickhouse.com/blog/postgresbench",
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "B",
+        "extension": "可继续关注云数据库厂商如何用基准测试争夺开发者心智，以及Postgres生态在性能、成本和托管服务透明度上的竞争升级。"
+      },
+      {
+        "id": "aac7c55fd1b71ccf88b9273d7a1d1e14",
+        "title": "大模型推理扩展手册开源，拆解GPU与KV缓存瓶颈",
+        "chinese_title": "大模型推理扩展手册开源，拆解GPU与KV缓存瓶颈",
+        "original_title": "An open handbook on LLM inference at scale (GPU internals, KV cache, batching, vLLM/SGLang/TensorRT-LLM) [P]",
+        "summary": "一名开发者开源大模型规模化推理手册，围绕GPU执行、显存层级、KV cache、批处理以及vLLM、SGLang、TensorRT-LLM等生产级推理栈梳理性能瓶颈。",
+        "rating": "B",
+        "score": 72,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "推理优化正在成为大模型落地的核心成本战场，后续可追踪 vLLM、SGLang、TensorRT-LLM 等框架的生态竞争。",
+        "entities": [
+          "Gpu",
+          "Kv Cache",
+          "LLM",
+          "Tensorrt-Llm",
+          "Vllm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1uavduv/an_open_handbook_on_llm_inference_at_scale_gpu/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781985870,
+        "published_at": "2026-06-21T04:04:30.218247",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1uavduv/an_open_handbook_on_llm_inference_at_scale_gpu/",
+        "event_id": null,
+        "original_content": "I've been working through the internals of LLM inference and writing up what I learn as an open, in-progress handbook. Just wrapped another chapter on GPU execution and memory internals: why a GPU sits mostly idle during inference, how the memory hierarchy gates throughput, and where the real bottlenecks live. Added mermaid diagrams for the architecture pieces so the flow is easier to follow than a wall of text. It's a personal learning project, still growing chapter by chapter. I'd value feedback or corrections from anyone who's run inference in production, where my mental model breaks down is exactly what I want to find. Issues and PRs welcome. github.com/harshuljain13/llm-inference-at-scale submitted by /u/YouFirst295 [link] [comments]",
+        "grade": "B",
+        "extension": "可延伸到推理成本优化、开源推理框架竞争、企业部署大模型的工程门槛，以及GPU资源利用率如何影响AI应用商业化。"
+      },
+      {
+        "id": "6cf88820a08341f6970bdb6ca8c7a89f",
+        "title": "中国五家AI实验室最高降价99%",
+        "chinese_title": "中国五家AI实验室最高降价99%",
+        "original_title": "Five Chinese AI Labs Cut Token Prices Up to 99%",
+        "summary": "字节、腾讯、MiniMax、阿里和小米在同一竞争窗口下调模型 token 价格，降幅从 50% 到 99%，反映国内大模型能力差距收窄后的价格战。",
+        "rating": "A",
+        "score": 80,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "价格战可能压缩模型厂商利润，并推动开发者更快迁移到低成本国产模型。后续可跟踪企业客户采购变化、云厂商套餐调整，以及A股AI应用和算力链条的市场反应。",
+        "entities": [
+          "Alibaba",
+          "ByteDance",
+          "Minimax",
+          "Tencent",
+          "小米"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1ub06rj/five_chinese_ai_labs_cut_token_prices_up_to_99/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781982561,
+        "published_at": "2026-06-21T03:09:21.227548",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1ub06rj/five_chinese_ai_labs_cut_token_prices_up_to_99/",
+        "event_id": null,
+        "original_content": "-&gt; ByteDance, Tencent, MiniMax, Alibaba and Xiaomi all cut AI token prices between 50% and 99% within the same competitive window. -&gt; Bank of America Securities analysts attribute the pricing race to narrowing capability differences between China's major AI models. -&gt; Alibaba's 50% discount on Qwen3.7-Max was tied to the 618 shopping event, blending AI competition with consumer promotions. If AI models become equally good, what will companies compete on next? Source: AI weekly submitted by /u/BuildwithVignesh [link] [comments]",
+        "grade": "A",
+        "extension": "价格战会压缩基础模型利润并推动应用层创新，后续可观察云厂商毛利、开源模型替代和企业 API 迁移节奏。"
+      },
+      {
+        "id": "044fdf4977e1b8412975f4a790084b7d",
+        "title": "Founders Fund押注机器人宰鱼公司",
+        "chinese_title": "Founders Fund押注机器人宰鱼公司",
+        "original_title": "Founders Fund’s outlier bet on humanely killed fish",
+        "summary": "TechCrunch 报道 Shinkei 获得 Founders Fund 关注，其冰箱大小的 Poseidon 机器人主打快速且更人道地处理鱼类。",
+        "rating": "A",
+        "score": 67,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "该项目把机器人、食品供应链和动物福利结合起来，后续可延伸到水产加工自动化、餐饮供应链标准化，以及ESG投资是否进入更多传统农业环节。",
+        "entities": [
+          "Founders Fund",
+          "Poseidon",
+          "Shinkei",
+          "食品自动化"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/06/20/founders-funds-outlier-bet-on-humanely-killed-fish/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781982561,
+        "published_at": "2026-06-21T03:09:21.227596",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/20/founders-funds-outlier-bet-on-humanely-killed-fish/",
+        "event_id": null,
+        "original_content": "Shinkei makes a refrigerator-sized robot called Poseidon to kill fish quickly and humanely.",
+        "grade": "B",
+        "extension": "该案例显示硬科技投资正在进入食品供应链的细分环节，可延伸到自动化屠宰、动物福利标准和高端水产供应链效率。"
+      },
+      {
+        "id": "6225973aa962031b1beb48dc036ae5cc",
+        "title": "Vision Pro迎来原生X11窗口系统工具",
+        "chinese_title": "Vision Pro迎来原生X11窗口系统工具",
+        "original_title": "UHF X11: X11 Built for VisionOS and Apple Vision Pro",
+        "summary": "UHF X11面向visionOS和Apple Vision Pro提供X11支持，让传统Unix图形应用有机会进入空间计算环境，显示开发者正在为头显补齐更专业的桌面软件生态。",
+        "rating": "B",
+        "score": 67,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这类工具可能增强Vision Pro对开发者和专业用户的吸引力，也能观察苹果空间计算生态是否从娱乐展示走向生产力场景。后续可关注兼容性、性能和开发者采用情况。",
+        "entities": [
+          "Apple Vision Pro",
+          "Uhf X11",
+          "Visionos",
+          "X11"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News (apple)",
+            "url": "https://www.lispm.net/apps/uhf-x11/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781982561,
+        "published_at": "2026-06-21T03:09:21.227626",
+        "source": "Hacker News (apple)",
+        "url": "https://www.lispm.net/apps/uhf-x11/",
+        "event_id": null
+      },
+      {
+        "id": "8b14a3b9cf8ccd85cedcd2b553139dd5",
+        "title": "科学家找到结肠癌免疫逃逸关键基因",
+        "chinese_title": "科学家找到结肠癌免疫逃逸关键基因",
+        "original_title": "Colon cancer’s invisibility cloak removed by eliminating a single gene - a fundamental breakthrough. The result was 100% eradication of tumours when paired with immunotherapy treatment in mouse models.",
+        "summary": "研究称通过敲除一个关键基因，可解除结肠癌对免疫系统的\"隐身\"能力，并在小鼠模型中与免疫疗法联合实现肿瘤清除，为癌症免疫治疗提供新方向。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果结果能在人体研究中复现，可能扩展到更多实体瘤免疫治疗组合。后续值得追踪对应基因靶点、临床转化进度，以及相关生物技术公司的管线布局。",
+        "entities": [
+          "免疫疗法",
+          "基因敲除",
+          "结肠癌"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1uazyun/colon_cancers_invisibility_cloak_removed_by/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781982561,
+        "published_at": "2026-06-21T03:09:21.227576",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1uazyun/colon_cancers_invisibility_cloak_removed_by/",
+        "event_id": null
+      },
+      {
+        "id": "38955d6c876962042e8b39134c70ea33",
+        "title": "Waymo进纽约受阻，Robotaxi扩张再遇地方政治",
+        "chinese_title": "Waymo进纽约受阻，Robotaxi扩张再遇地方政治",
+        "original_title": "Waymo Has Been Defeated by New York City",
+        "summary": "Waymo在纽约市推进自动驾驶出租车服务遭遇地方政界、工会和出租车行业阻力，凸显Robotaxi扩张不只取决于技术能力，也受城市治理和就业议题影响。",
+        "rating": "B",
+        "score": 70,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可继续追踪Robotaxi企业在美国不同城市的监管分化，以及安全数据、劳动权益和本地交通利益集团如何改变自动驾驶商业化节奏。",
+        "entities": [
+          "Google",
+          "New York City",
+          "Robotaxi",
+          "Waymo"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/advanced-transport/waymo-defeated-new-york-city"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1781978707,
+        "published_at": "2026-06-21T02:05:07.273287",
+        "source": "Futurism",
+        "url": "https://futurism.com/advanced-transport/waymo-defeated-new-york-city",
+        "event_id": null,
+        "original_url": "https://futurism.com/advanced-transport/waymo-defeated-new-york-city",
+        "grade": "B",
+        "level": "B"
       }
     ],
     "2026-06-23": [
@@ -3145,36 +3371,6 @@
       }
     ],
     "2026-06-28": [
-      {
-        "id": "0e7404ac5748816ecf599ed7ac5cd2be",
-        "title": "Claude Code把瓶颈推向产品决策",
-        "chinese_title": "Claude Code把瓶颈推向产品决策",
-        "original_title": "Claude Code turned every engineer into three. Now companies need more product thinkers",
-        "summary": "文章称Claude Code显著提升工程产出后，企业真正缺的可能不再是写代码的人，而是能判断需求、拆解产品和决定取舍的人。",
-        "rating": "B",
-        "score": 65,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可延伸到AI编程工具重塑研发组织、产品经理和工程师分工变化，以及企业招聘从执行型岗位转向决策型岗位。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Claude Code",
-          "产品经理"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/infrastructure/claude-code-turned-every-engineer-into-three-now-companies-need-more-product-thinkers"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1782590970,
-        "published_at": "2026-06-28T04:09:30.393945",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/infrastructure/claude-code-turned-every-engineer-into-three-now-companies-need-more-product-thinkers",
-        "event_id": null
-      },
       {
         "id": "6f71d212b42b2de8da16a3bcb493d552",
         "title": "韩国现代工人因机器人替代担忧投票罢工",
@@ -8356,6 +8552,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-28T04:10:17.862168",
-  "total_news": 250
+  "last_updated": "2026-06-28T01:11:45.761588",
+  "total_news": 256
 }
