@@ -804,74 +804,6 @@
         "level": "B"
       }
     ],
-    "2026-06-20": [
-      {
-        "id": "26c3a7327534b772096ce926a4fb4e49",
-        "title": "中国组建太空AI数据中心产业联盟",
-        "chinese_title": "中国组建太空AI数据中心产业联盟",
-        "original_title": "China unifies tech sector to build grid-free orbiting satellite AI data centers, challenging Elon Musk's SpaceX &mdash; Beijing's forced chip and satellite alliance announced a week before Musk&rsquo;s AI1 reveal",
-        "summary": "北京成立空间计算产业创新中心，计划联合火箭、卫星、芯片和AI实验室，探索不依赖地面电网的轨道AI数据中心体系。",
-        "rating": "B",
-        "score": 72,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "如果后续进入工程验证，可能影响卫星互联网、算力基建和中美太空AI竞争，也会牵动芯片、发射和能源供应链。",
-        "entities": [
-          "Ai数据中心",
-          "SpaceX",
-          "卫星",
-          "空间计算产业创新中心"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781968015,
-        "published_at": "2026-06-20T23:06:55.857473",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "original_url": "https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal"
-      },
-      {
-        "id": "df5de4df01d4b38009ab2aea16548734",
-        "title": "Cloudflare给AI Agent开放临时账号",
-        "chinese_title": "Cloudflare给AI Agent开放临时账号",
-        "original_title": "Temporary Cloudflare Accounts for AI Agents",
-        "summary": "Cloudflare推出面向AI Agent的临时账号，Agent可通过wrangler deploy --temporary直接部署Worker，并在60分钟内由人类用户认领。",
-        "rating": "A",
-        "score": 82,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "这会降低后台Agent部署和验证代码的摩擦，可能推动云平台围绕Agent原生开发流程重新设计认证、沙箱和计费体系。",
-        "entities": [
-          "Ai Agent",
-          "Cloudflare",
-          "Worker",
-          "Wrangler"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://blog.cloudflare.com/temporary-accounts/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1781968015,
-        "published_at": "2026-06-20T23:06:55.857509",
-        "source": "Hacker News",
-        "url": "https://blog.cloudflare.com/temporary-accounts/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_url": "https://blog.cloudflare.com/temporary-accounts/"
-      }
-    ],
     "2026-06-23": [
       {
         "id": "80fcf46eb17ce5277ab618c966133f33",
@@ -3505,6 +3437,129 @@
       }
     ],
     "2026-06-27": [
+      {
+        "id": "c192a21f15df86ece52c1ebed1cbf420",
+        "title": "波音星际客机复飞再遇长期延误",
+        "chinese_title": "波音星际客机复飞再遇长期延误",
+        "original_title": "Boeing’s Starliner Is Such a Disaster That We Don’t Even Have Words",
+        "summary": "波音 Starliner 首次载人任务暴露推进器和氦气泄漏问题后，后续复飞计划仍迟迟无法稳定推进，NASA 商业载人体系对 SpaceX Dragon 的依赖进一步凸显。",
+        "rating": "B",
+        "score": 68,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸到 NASA 商业载人备份体系失衡、波音航天业务信誉修复，以及 SpaceX 在载人航天运输中的议价能力变化。",
+        "entities": [
+          "Boeing",
+          "Nasa",
+          "SpaceX",
+          "Starliner"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/space/boeing-starliner-disaster-words"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782572800,
+        "published_at": "2026-06-27T23:06:40.741728",
+        "source": "Futurism",
+        "url": "https://futurism.com/space/boeing-starliner-disaster-words",
+        "event_id": null
+      },
+      {
+        "id": "d849df9846d035413976a06b65a407ff",
+        "title": "英特尔Nova Lake旗舰CPU功耗或达474W",
+        "chinese_title": "英特尔Nova Lake旗舰CPU功耗或达474W",
+        "original_title": "Intel's next-gen 52-core Nova Lake CPU could pull up to 474W &mdash; high-end LGA1954 motherboards may need three 8-pin power connectors to feed the monster",
+        "summary": "新爆料称英特尔下一代 Nova Lake 52 核桌面旗舰处理器 PL2 功耗可能达到 474W，高端 LGA1954 主板或需三个 8-pin 供电接口。",
+        "rating": "B",
+        "score": 73,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可继续观察英特尔桌面旗舰路线的能效压力、主板生态升级成本，以及与 AMD 高端 CPU 的竞争叙事。",
+        "entities": [
+          "Amd",
+          "Intel",
+          "Lga1954",
+          "Nova Lake",
+          "桌面Cpu"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/pc-components/cpus/intels-next-gen-52-core-nova-lake-cpu-could-pull-up-to-474w-high-end-lga1954-motherboards-may-need-three-8-pin-power-connectors-to-feed-the-monster"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782572800,
+        "published_at": "2026-06-27T23:06:40.741828",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/pc-components/cpus/intels-next-gen-52-core-nova-lake-cpu-could-pull-up-to-474w-high-end-lga1954-motherboards-may-need-three-8-pin-power-connectors-to-feed-the-monster",
+        "event_id": null
+      },
+      {
+        "id": "6eb826802aaa1a59e80a29b478731e2f",
+        "title": "Bambu Lab A2L把家用3D打印做大一圈",
+        "chinese_title": "Bambu Lab A2L把家用3D打印做大一圈",
+        "original_title": "Bambu Lab A2L 3D printer review: The A1 grows up",
+        "summary": "Bambu Lab 推出 A2L 3D 打印机，以更大成型尺寸、四色套装和面向家庭创作的定位，试图在低于高端 H2 系列的价格带拓展家用市场。",
+        "rating": "B",
+        "score": 66,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可观察家用 3D 打印从爱好者设备走向家庭创作工具的趋势，以及 Bambu Lab 对消费级打印生态和耗材市场的带动。",
+        "entities": [
+          "3D打印",
+          "A2L",
+          "Ams Lite",
+          "Bambu Lab",
+          "Pla"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/3d-printing/bambu-lab-a2l-3d-printer-review"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782572800,
+        "published_at": "2026-06-27T23:06:40.741901",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/3d-printing/bambu-lab-a2l-3d-printer-review",
+        "event_id": null
+      },
+      {
+        "id": "421f8fb06102e785d7036254537069a4",
+        "title": "智能家居行业仍押注Matter统一标准",
+        "chinese_title": "智能家居行业仍押注Matter统一标准",
+        "original_title": "Inside the room where the smart home industry is still betting on Matter",
+        "summary": "Matter 发布四年后，智能家居行业仍在推动这一互联互通标准，苹果、谷歌、亚马逊、三星等竞争者希望继续削弱生态锁定和设备兼容难题。",
+        "rating": "B",
+        "score": 69,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸到智能家居平台竞争、标准化推进难点，以及 Matter 是否能真正改善消费者跨品牌设备体验。",
+        "entities": [
+          "Amazon",
+          "Apple",
+          "Google",
+          "Matter",
+          "Samsung"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/958008/matter-unify-conference-csa-apple-google-amazon-samsung-smart-home-interoperability"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782572800,
+        "published_at": "2026-06-27T23:06:40.741914",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/958008/matter-unify-conference-csa-apple-google-amazon-samsung-smart-home-interoperability",
+        "event_id": null
+      },
       {
         "id": "be3758fe369d7fbce9883f8edecd2fab",
         "title": "Anthropic闯入Slack，Salesforce员工开始担心被伙伴反客为主",
@@ -8413,6 +8468,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-27T22:07:07.523152",
-  "total_news": 252
+  "last_updated": "2026-06-27T23:07:36.444352",
+  "total_news": 254
 }
