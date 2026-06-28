@@ -440,76 +440,6 @@
         "original_url": "https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps/",
         "grade": "A",
         "level": "A"
-      },
-      {
-        "id": "8ad2f06ce7050428187caea136e2f0fb",
-        "title": "研究称数据中心反而拉低美国电价",
-        "chinese_title": "研究称数据中心反而拉低美国电价",
-        "original_title": "Have Data Centers Raised Your Electric Bill? Causal Evidence from the United States [shows the opposite]",
-        "summary": "一项基于美国2015至2024年数据的因果研究认为，数据中心带来的持久用电需求可能通过摊薄电网固定成本和规模经济，温和降低平均零售电价。",
-        "rating": "B",
-        "score": 72,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该结论可延伸到AI算力建设的公共成本讨论，尤其是数据中心招商、电网投资和居民电价之间的政策博弈；未来若供给约束加剧，结论可能反转。",
-        "entities": [
-          "Ai基础设施",
-          "因果推断",
-          "数据中心",
-          "美国电力市场"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1ubenzk/have_data_centers_raised_your_electric_bill/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1782014866,
-        "published_at": "2026-06-21T12:07:46.244997",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1ubenzk/have_data_centers_raised_your_electric_bill/",
-        "event_id": null,
-        "original_url": "https://www.reddit.com/r/singularity/comments/1ubenzk/have_data_centers_raised_your_electric_bill/",
-        "grade": "B",
-        "level": "B",
-        "original_content": "We estimate that data centers caused average retail electricity rates to fall modestly in the United States from 2015 to 2024 using an instrumental variables approach. Despite prevailing sentiment, the finding is consistent with economic reasoning: existing large power system fixed costs, economies of scale in transmission and distribution, and declining unit costs for generation imply that durable demand growth lowers average prices. We find patterns of economies of scale for transmission, distribution, and generation costs as well as within and across retail customer classes. We caution that future supply constraints could reverse the effect. submitted by /u/truecakesnake [link] [comments]",
-        "extension": "该结论与AI数据中心推高电价的主流担忧相反，可继续追踪地区差异、电网容量约束和未来供给紧张是否会改变这一效应。"
-      },
-      {
-        "id": "5a990f8361401c323c6500ae4fefbad8",
-        "title": "Jane Street把AI押注推向交易核心",
-        "chinese_title": "Jane Street把AI押注推向交易核心",
-        "original_title": "A look at Jane Street's push to supercharge trading with AI and become a major AI investor; it invested $1B in CoreWeave in April and has a stake in Anthropic (Gregory Zuckerman/Wall Street Journal)",
-        "summary": "《华尔街日报》报道，Jane Street正用AI强化交易系统并扩大AI投资版图，4月向CoreWeave投入10亿美元，同时持有Anthropic股份，并计划今年继续大规模招聘。",
-        "rating": "A",
-        "score": 82,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "这一动向可延伸到量化交易公司向AI基础设施资本方转型，以及高频交易、云算力和模型公司之间的资金与技术绑定。后续可观察其他金融机构是否跟进AI投资和交易自动化升级。",
-        "entities": [
-          "Ai交易",
-          "Anthropic",
-          "Coreweave",
-          "Jane Street"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260620/p13#a260620p13"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1782010977,
-        "published_at": "2026-06-21T11:02:57.196121",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260620/p13#a260620p13",
-        "event_id": null,
-        "original_url": "https://www.techmeme.com/260620/p13#a260620p13",
-        "grade": "A",
-        "level": "A",
-        "original_content": "Gregory Zuckerman / Wall Street Journal : A look at Jane Street's push to supercharge trading with AI and become a major AI investor; it invested $1B in CoreWeave in April and has a stake in Anthropic — The firm has surged from a handful of staffers to 3,500 with plans to recruit more than 500 employees this year.",
-        "extension": "这条线索可延伸到量化交易公司从技术使用者转为AI资本玩家的趋势，以及算力、模型公司和金融交易策略之间更紧密的利益绑定。"
       }
     ],
     "2026-06-23": [
@@ -3146,6 +3076,69 @@
     ],
     "2026-06-28": [
       {
+        "id": "860283c25aeeb8cd44f99277d5a142de",
+        "title": "Google算力吃紧拖慢Meta内部AI项目",
+        "chinese_title": "Google算力吃紧拖慢Meta内部AI项目",
+        "original_title": "Sources: Google told Meta around March it couldn't offer all the Gemini capacity Meta wanted to buy, disrupting and delaying some of Meta's internal AI projects (Financial Times)",
+        "summary": "消息称Google在3月前后告知Meta，无法提供其希望采购的全部Gemini算力容量，导致Meta部分内部AI项目被打乱和延后，凸显先进模型算力正成为大厂竞争中的稀缺资源。",
+        "rating": "A",
+        "score": 86,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "这条线索可延伸到云厂商算力供给、模型访问权和大厂自研基础设施竞赛，也会影响Meta对自有芯片、外部模型供应商和训练/推理预算的重新配置。",
+        "entities": [
+          "Ai算力",
+          "Gemini",
+          "Google",
+          "Meta"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (Gemini)",
+            "url": "https://www.techmeme.com/260628/p1#a260628p1"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782623306,
+        "published_at": "2026-06-28T13:08:26.708113",
+        "source": "Techmeme (Gemini)",
+        "url": "https://www.techmeme.com/260628/p1#a260628p1",
+        "event_id": null
+      },
+      {
+        "id": "f399039939fc0d7c8ca0e8fbb9fde1db",
+        "title": "百度发布整本书级OCR模型",
+        "chinese_title": "百度发布整本书级OCR模型",
+        "original_title": "Baidu released Unlimited OCR, a model that scans entire books at once in seconds instead of processing them in chunks. OpenAI and Anthropic will proba...",
+        "summary": "百度Unlimited OCR通过Reference Sliding Window Attention降低长文档解析的KV缓存压力，可在一次前向过程中解析几十页乃至整本书级文档，并在文档解析基准上超过DeepSeek OCR。",
+        "rating": "A",
+        "score": 81,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到长文档理解、OCR工程架构、端到端文档AI和国产多模态模型竞争；若开源生态跟进，可能影响文档自动化、知识库入库和企业档案处理成本。",
+        "entities": [
+          "Baidu",
+          "Deepseek Ocr",
+          "R-Swa",
+          "Unlimited Ocr"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Amank1412/status/2070909492699828382"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782606613,
+        "published_at": "2026-06-28T08:30:13.229364",
+        "source": "x",
+        "url": "https://x.com/Amank1412/status/2070909492699828382",
+        "event_id": null,
+        "original_url": "https://x.com/Amank1412/status/2070909492699828382",
+        "grade": "A",
+        "level": "A"
+      },
+      {
         "id": "6f71d212b42b2de8da16a3bcb493d552",
         "title": "韩国现代工人因机器人替代担忧投票罢工",
         "chinese_title": "韩国现代工人因机器人替代担忧投票罢工",
@@ -3283,39 +3276,6 @@
       }
     ],
     "2026-06-27": [
-      {
-        "id": "f399039939fc0d7c8ca0e8fbb9fde1db",
-        "title": "百度发布整本书级OCR模型",
-        "chinese_title": "百度发布整本书级OCR模型",
-        "original_title": "Baidu released Unlimited OCR, a model that scans entire books at once in seconds instead of processing them in chunks. OpenAI and Anthropic will proba...",
-        "summary": "百度Unlimited OCR通过Reference Sliding Window Attention降低长文档解析的KV缓存压力，可在一次前向过程中解析几十页乃至整本书级文档，并在文档解析基准上超过DeepSeek OCR。",
-        "rating": "A",
-        "score": 81,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸到长文档理解、OCR工程架构、端到端文档AI和国产多模态模型竞争；若开源生态跟进，可能影响文档自动化、知识库入库和企业档案处理成本。",
-        "entities": [
-          "Baidu",
-          "Deepseek Ocr",
-          "R-Swa",
-          "Unlimited Ocr"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Amank1412/status/2070909492699828382"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1782606613,
-        "published_at": "2026-06-28T08:30:13.229364",
-        "source": "x",
-        "url": "https://x.com/Amank1412/status/2070909492699828382",
-        "event_id": null,
-        "original_url": "https://x.com/Amank1412/status/2070909492699828382",
-        "grade": "A",
-        "level": "A"
-      },
       {
         "id": "c192a21f15df86ece52c1ebed1cbf420",
         "title": "波音星际客机复飞再遇长期延误",
@@ -8359,6 +8319,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-28T08:30:55.774656",
-  "total_news": 250
+  "last_updated": "2026-06-28T13:08:45.700200",
+  "total_news": 249
 }
