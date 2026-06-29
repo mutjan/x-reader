@@ -1291,72 +1291,6 @@
         "original_url": "https://www.wired.com/story/openai-launches-full-scale-effort-to-patch-open-source-bugs-as-it-takes-on-anthropics-mythos/",
         "grade": "A+",
         "level": "A+"
-      },
-      {
-        "id": "316f55595b591c66a9cd18772e5b078b",
-        "title": "美国NSF削减基础科学经费转投新技术计划",
-        "chinese_title": "美国NSF削减基础科学经费转投新技术计划",
-        "original_title": "National Science Foundation slashes basic science to fund new tech initiative",
-        "summary": "Science报道称，美国国家科学基金会被指削减基础研究项目经费，以支持新的技术导向计划，引发科研界对基础科学投入被挤压的担忧。",
-        "rating": "A",
-        "score": 80,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可延展到美国科技政策从基础研究向产业技术转移的资源再分配，也会影响高校实验室、长期科学项目和AI等战略技术资助格局。",
-        "entities": [
-          "National Science Foundation",
-          "Science",
-          "基础科学",
-          "技术计划"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.science.org/content/article/exclusive-nsf-slashes-research-programs-support-new-tech-initiative-insiders-say"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1782147917,
-        "published_at": "2026-06-23T01:05:17.285121",
-        "source": "Hacker News",
-        "url": "https://www.science.org/content/article/exclusive-nsf-slashes-research-programs-support-new-tech-initiative-insiders-say",
-        "event_id": null,
-        "original_url": "https://www.science.org/content/article/exclusive-nsf-slashes-research-programs-support-new-tech-initiative-insiders-say",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "6c284fa03918dbb70e599242ecd552c6",
-        "title": "AMD把FSR新版本下放到RX 7000显卡",
-        "chinese_title": "AMD把FSR新版本下放到RX 7000显卡",
-        "original_title": "AMD brings official FSR 4.1 support to RX 7000 series GPUs — INT8 model now available in 300+ games, RDNA 3 APUs also getting FSR 4.1 soon",
-        "summary": "AMD已为RX 7000系列桌面显卡提供官方FSR 4.1支持，采用INT8模型并覆盖300多款游戏，后续还将扩展到RDNA 3 APU。",
-        "rating": "B",
-        "score": 72,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "这会延长上一代显卡生命周期，并加剧AMD、英伟达、Intel在游戏超分辨率和AI图形功能上的竞争。",
-        "entities": [
-          "Amd",
-          "Fsr",
-          "Rdna",
-          "Rx 7000"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/pc-components/gpu-drivers/amd-brings-official-fsr-4-1-support-to-rx-7000-series-gpus-int8-model-now-available-in-300-games-rdna-3-apus-also-getting-fsr-4-1-soon"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1782147917,
-        "published_at": "2026-06-23T01:05:17.285147",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/pc-components/gpu-drivers/amd-brings-official-fsr-4-1-support-to-rx-7000-series-gpus-int8-model-now-available-in-300-games-rdna-3-apus-also-getting-fsr-4-1-soon",
-        "event_id": null,
-        "original_url": "https://www.tomshardware.com/pc-components/gpu-drivers/amd-brings-official-fsr-4-1-support-to-rx-7000-series-gpus-int8-model-now-available-in-300-games-rdna-3-apus-also-getting-fsr-4-1-soon",
-        "grade": "B",
-        "level": "B"
       }
     ],
     "2026-06-28": [
@@ -1932,7 +1866,69 @@
         "extension": "可延伸观察AI工具采用强度与职业焦虑之间的差异，以及企业用户如何重新定义知识工作的任务边界。"
       }
     ],
-    "2026-06-29": [
+    "2026-06-30": [
+      {
+        "id": "d6305d8c072dce8527783ef38127634a",
+        "title": "假错误报告可劫持Claude Code执行代码",
+        "chinese_title": "假错误报告可劫持Claude Code执行代码",
+        "original_title": "The attack that hijacked Claude Code came through Sentry. Datadog, PagerDuty, and Jira have the same exposure.",
+        "summary": "Tenet Security披露，攻击者可借助Sentry错误事件向Claude Code、Cursor和Codex注入指令，让AI代理在开发者权限下执行恶意代码。",
+        "rating": "S",
+        "score": 94,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "这把AI代理安全风险从代码仓库扩展到观测、工单和告警系统，后续可追踪Sentry、Datadog、PagerDuty、Jira等企业软件如何补上MCP与代理输入隔离。",
+        "entities": [
+          "Claude",
+          "Codex",
+          "Cursor",
+          "Sentry",
+          "Tenet Security"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/security/the-attack-that-hijacked-claude-code-came-through-sentry-datadog-pagerduty-and-jira-have-the-same-exposure"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782752801,
+        "published_at": "2026-06-30T01:06:41.399664",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/security/the-attack-that-hijacked-claude-code-came-through-sentry-datadog-pagerduty-and-jira-have-the-same-exposure",
+        "event_id": null
+      },
+      {
+        "id": "e9b2e935c168ec5493fa8b5b6dc068ca",
+        "title": "Anthropic新协议推高亚马逊模型成本",
+        "chinese_title": "Anthropic新协议推高亚马逊模型成本",
+        "original_title": "Amazon Could Pay More for Anthropic Technology Under New Deal",
+        "summary": "Anthropic据称重新谈判与亚马逊的合作条款，导致亚马逊在自家产品中调用其模型的成本上升，并开始评估替代方案。",
+        "rating": "A",
+        "score": 86,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "这是Techmeme摘要的原始报道，可延伸到Anthropic商业化议价、AWS模型战略和OpenAI在企业供应链中的机会。",
+        "entities": [
+          "Amazon",
+          "Anthropic",
+          "Aws",
+          "Nova",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/amazon-pay-anthropic-technology-new-deal"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782752801,
+        "published_at": "2026-06-30T01:06:41.399707",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/amazon-pay-anthropic-technology-new-deal",
+        "event_id": null
+      },
       {
         "id": "3a47a5aca4da7a8fd131189325aa13bf",
         "title": "AI智能体安全公司Straiker获6400万美元融资",
@@ -1999,7 +1995,9 @@
         "original_url": "https://the-decoder.com/deloitte-tells-its-own-consultants-ai-is-coming-for-the-billable-hour/",
         "grade": "A+",
         "level": "A+"
-      },
+      }
+    ],
+    "2026-06-29": [
       {
         "id": "b9488ebc3b459a9360b1a2de738c7278",
         "title": "Rocket Lab拟80亿美元收购Iridium",
@@ -7685,6 +7683,6 @@
       }
     ]
   },
-  "last_updated": "2026-06-30T00:10:29.887066",
+  "last_updated": "2026-06-30T01:07:09.639192",
   "total_news": 230
 }
