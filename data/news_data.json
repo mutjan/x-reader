@@ -6393,42 +6393,99 @@
         "original_url": "https://www.techmeme.com/260624/p2#a260624p2",
         "grade": "A+",
         "level": "A+"
-      },
+      }
+    ],
+    "2026-07-01": [
       {
-        "id": "eb3d8b22066e20fffe671f7fb858cb59",
-        "title": "英伟达AI芯片黑市价翻倍",
-        "chinese_title": "英伟达AI芯片黑市价翻倍",
-        "original_title": "Sources: prices for Nvidia's AI chips on China's black market have more than doubled amid a US export crackdown; its flagship DGX B300 server has risen to $1.1M (Eleanor Olcott/Financial Times)",
-        "summary": "美国出口管制持续收紧后，英伟达高端AI芯片在中国黑市价格显著上涨，旗舰DGX B300服务器报价升至约110万美元，反映算力供给紧张和灰色渠道风险同时升温。",
-        "rating": "A+",
-        "score": 89,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "这条线可延伸到美国出口管制效果、中国AI算力供需缺口、国产芯片替代和云厂商成本变化，也会影响二级市场对芯片链和算力租赁的判断。",
+        "id": "8851d7628c83164c37a089a090af9a49",
+        "title": "Claude新模型下周开放使用，Anthropic同步推AI越狱分级标准",
+        "chinese_title": "Claude新模型下周开放使用，Anthropic同步推AI越狱分级标准",
+        "original_title": "Anthropic says Fable 5 will be available via usage credits for Claude users from July 7, and is working with partners to draft an AI jailbreak severity standard (Anthropic)",
+        "summary": "Anthropic表示Claude用户将可通过使用额度调用Fable 5，同时正联合伙伴制定AI越狱严重程度标准，试图把前沿模型发布和安全评估规则绑定推进。",
+        "rating": "A",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该标准若被更多模型厂商或测评机构采用，可能影响AI安全漏洞披露、模型红队测试和企业采购评估口径，也会牵动前沿模型出口管制后的合规叙事。",
         "entities": [
-          "Ai芯片",
-          "Dgx",
-          "NVIDIA",
-          "美国出口管制"
+          "Ai Jailbreak",
+          "Anthropic",
+          "Claude",
+          "Fable"
         ],
         "sourceLinks": [
           {
             "name": "Techmeme",
-            "url": "https://www.techmeme.com/260623/p48#a260623p48"
+            "url": "https://www.techmeme.com/260701/p1#a260701p1"
           }
         ],
         "sources": 1,
-        "timestamp": 1782273925,
-        "published_at": "2026-06-24T12:05:25.491803",
+        "timestamp": 1782882391,
+        "published_at": "2026-07-01T13:06:31.531436",
         "source": "Techmeme",
-        "url": "https://www.techmeme.com/260623/p48#a260623p48",
-        "event_id": null,
-        "original_url": "https://www.techmeme.com/260623/p48#a260623p48",
-        "grade": "A+",
-        "level": "A+"
-      }
-    ],
-    "2026-07-01": [
+        "url": "https://www.techmeme.com/260701/p1#a260701p1",
+        "event_id": null
+      },
+      {
+        "id": "d0fe899549a39db3a8f2fbcc9cfb53e5",
+        "title": "共享滑板车公司Lime定价IPO，融资窗口继续试探市场",
+        "chinese_title": "共享滑板车公司Lime定价IPO，融资窗口继续试探市场",
+        "original_title": "Lime Prices IPO at $25 a Share",
+        "summary": "Lime将IPO价格定在每股25美元，出售价值1.74亿美元的新股和老股，成为近期风投支持企业检验公开市场风险偏好的又一案例。",
+        "rating": "B",
+        "score": 68,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "Lime上市表现可作为出行科技和后期风投公司退出窗口的观察样本，也会影响共享出行、城市微交通资产的估值参照。",
+        "entities": [
+          "Electric Scooter",
+          "Ipo",
+          "Lime",
+          "Venture Capital"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/lime-prices-ipo-25-share"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782882391,
+        "published_at": "2026-07-01T13:06:31.531482",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/lime-prices-ipo-25-share",
+        "event_id": null
+      },
+      {
+        "id": "2710a14cdc7c3bc7dcf9d013123cd60a",
+        "title": "美团发布国产芯片训练大模型，LongCat参数规模达1.6万亿",
+        "chinese_title": "美团发布国产芯片训练大模型，LongCat参数规模达1.6万亿",
+        "original_title": "Meituan Releases New AI Model Trained Entirely on Chinese Chips",
+        "summary": "美团发布开源大模型LongCat-2.0，称其完全使用中国芯片训练，参数规模达到1.6万亿，显示本土互联网公司正尝试绕开海外算力依赖。",
+        "rating": "A",
+        "score": 83,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这条线索可延伸到国产AI芯片生态、互联网公司自研模型成本，以及在出口管制背景下中国大模型训练路线的可替代性。",
+        "entities": [
+          "Chinese Chips",
+          "LLM",
+          "Longcat",
+          "Meituan"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/meituan-releases-new-ai-model-trained-entirely-chinese-chips"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782882391,
+        "published_at": "2026-07-01T13:06:31.531496",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/meituan-releases-new-ai-model-trained-entirely-chinese-chips",
+        "event_id": null
+      },
       {
         "id": "34fb012d0eb5f1c21bf278192501939e",
         "title": "Wayve以85亿美元估值启动员工股权回购",
@@ -6950,6 +7007,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-01T11:09:21.476885",
-  "total_news": 207
+  "last_updated": "2026-07-01T13:07:12.720147",
+  "total_news": 209
 }
