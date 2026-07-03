@@ -3295,40 +3295,6 @@
         "original_url": "https://www.techmeme.com/260625/p58#a260625p58",
         "grade": "B",
         "level": "B"
-      },
-      {
-        "id": "2746eb7c84951156601dd5cdb484ff5f",
-        "title": "Liquid AI发布2.3亿参数端侧小模型",
-        "chinese_title": "Liquid AI发布2.3亿参数端侧小模型",
-        "original_title": "Liquid AI's smallest model yet LFM2.5-230M beats models 4X its size at data extraction, can run 'anywhere'",
-        "summary": "Liquid AI发布LFM2.5-230M，主打在手机、笔记本和机器人等本地设备上运行数据抽取与代理工作流，并宣称部分任务超过更大模型。",
-        "rating": "A",
-        "score": 80,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可延伸观察小参数模型、端侧Agent和企业数据抽取场景的竞争，尤其是与Qwen、Gemma等轻量模型在成本、隐私和部署门槛上的差异。",
-        "entities": [
-          "Agent",
-          "Lfm",
-          "Liquid Ai",
-          "数据抽取",
-          "端侧Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat (\"Liquid AI\")",
-            "url": "https://venturebeat.com/technology/liquid-ais-smallest-model-yet-lfm2-5-230m-beats-models-4x-its-size-at-data-extraction-can-run-anywhere"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1782432521,
-        "published_at": "2026-06-26T08:08:41.635500",
-        "source": "VentureBeat (\"Liquid AI\")",
-        "url": "https://venturebeat.com/technology/liquid-ais-smallest-model-yet-lfm2-5-230m-beats-models-4x-its-size-at-data-extraction-can-run-anywhere",
-        "event_id": null,
-        "original_url": "https://venturebeat.com/technology/liquid-ais-smallest-model-yet-lfm2-5-230m-beats-models-4x-its-size-at-data-extraction-can-run-anywhere",
-        "grade": "A",
-        "level": "A"
       }
     ],
     "2026-07-01": [
@@ -3953,6 +3919,37 @@
     ],
     "2026-07-03": [
       {
+        "id": "ee910f7d9a4bc86f2ac2a8a059017a30",
+        "title": "Claude短暂下线后企业加速多模型对冲",
+        "chinese_title": "Claude短暂下线后企业加速多模型对冲",
+        "original_title": "Enterprises lost Claude Fable 5 for a few weeks. New data shows two-thirds had already built their hedge",
+        "summary": "VentureBeat称，Claude Fable 5曾因美国出口管制短暂下线，企业多模型策略因此受到关注，数据显示已有约三分之二企业在AI供应上建立备份方案。",
+        "rating": "A",
+        "score": 81,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸观察企业AI架构从单一大模型供应商转向多模型编排，以及开源模型在供应中断窗口中获得替代机会的速度。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Glm",
+          "Z.Ai",
+          "多模型策略"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat (deepseek)",
+            "url": "https://venturebeat.com/orchestration/enterprises-lost-claude-fable-5-for-a-few-weeks-new-data-shows-two-thirds-had-already-built-their-hedge"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783040706,
+        "published_at": "2026-07-03T09:05:06.768692",
+        "source": "VentureBeat (deepseek)",
+        "url": "https://venturebeat.com/orchestration/enterprises-lost-claude-fable-5-for-a-few-weeks-new-data-shows-two-thirds-had-already-built-their-hedge",
+        "event_id": null
+      },
+      {
         "id": "df2aee137ffae7e32b5db0a746f370c1",
         "title": "Red Hat AI发布GLM-5.2 DSpark投机解码预览模型",
         "chinese_title": "Red Hat AI发布GLM-5.2 DSpark投机解码预览模型",
@@ -4439,6 +4436,65 @@
       }
     ],
     "2026-07-02": [
+      {
+        "id": "bb8df1596278bfb8cc690f22791ad3ee",
+        "title": "本地代码代理历史搜索工具ctx亮相",
+        "chinese_title": "本地代码代理历史搜索工具ctx亮相",
+        "original_title": "Show HN: ctx – Search the coding agent history already on your machine",
+        "summary": "ctx是一个面向开发者的本地工具，主打搜索机器上已有的coding agent历史记录，帮助用户复用过去的上下文、命令和代理协作痕迹。",
+        "rating": "B",
+        "score": 67,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸到AI编程工具生态的上下文管理需求，以及本地优先、隐私友好的agent记忆检索工具是否会成为开发者标配。",
+        "entities": [
+          "Coding Agent",
+          "Ctx",
+          "开发者工具"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/ctxrs/ctx"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783040706,
+        "published_at": "2026-07-03T09:05:06.768720",
+        "source": "Hacker News",
+        "url": "https://github.com/ctxrs/ctx",
+        "event_id": null
+      },
+      {
+        "id": "7e157f79708a874953b7217b8f4428f1",
+        "title": "AI代理依赖安全检查CLI工具发布",
+        "chinese_title": "AI代理依赖安全检查CLI工具发布",
+        "original_title": "Show HN: CLI that helps AI agents avoid vulnerable dependencies",
+        "summary": "deptrust是一个命令行工具，目标是帮助AI代理在生成或修改项目依赖时避开存在漏洞的包，降低自动化编码引入供应链风险的概率。",
+        "rating": "B",
+        "score": 67,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸关注AI coding agent从提升效率走向安全约束，依赖漏洞、供应链投毒和自动修复流程可能成为工具竞争点。",
+        "entities": [
+          "Ai代理",
+          "Cli",
+          "Deptrust",
+          "依赖安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/clidey/deptrust"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783040706,
+        "published_at": "2026-07-03T09:05:06.768738",
+        "source": "Hacker News",
+        "url": "https://github.com/clidey/deptrust",
+        "event_id": null
+      },
       {
         "id": "38905c5875a5bf688908ceca0fbb3ec4",
         "title": "数据中心公司Switch拟融20亿美元",
@@ -5143,6 +5199,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-03T07:22:46.188229",
-  "total_news": 150
+  "last_updated": "2026-07-03T09:06:06.444770",
+  "total_news": 154
 }
