@@ -4333,6 +4333,96 @@
     ],
     "2026-07-04": [
       {
+        "id": "3e74530039964ee3af686000fe1795a8",
+        "title": "只看logits也能还原微调数据原文",
+        "chinese_title": "只看logits也能还原微调数据原文",
+        "original_title": "Contrastive Decoding Diffing (CDD): recovering verbatim finetuning data from logits alone, no weight access needed[R]",
+        "summary": "研究者提出Contrastive Decoding Diffing，用基础模型和微调模型的logits差异恢复窄域微调数据，声称无需权重访问也能高概率还原原文内容。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果方法稳健，将把微调数据泄露风险从白盒场景推进到灰盒API场景，影响企业私有微调、模型托管平台和AI安全评估标准。",
+        "entities": [
+          "Contrastive Decoding Diffing",
+          "Finetuning",
+          "LLM",
+          "Logits"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783145354,
+        "published_at": "2026-07-04T14:09:14.114455",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/",
+        "event_id": null
+      },
+      {
+        "id": "d12988e6f4a85cadaf9826cb9c8d02b8",
+        "title": "机器人空间智能公司dConstruct融到1.25亿美元",
+        "chinese_title": "机器人空间智能公司dConstruct融到1.25亿美元",
+        "original_title": "Singapore-based dConstruct Robotics, which develops spatial tech to let autonomous robots operate in complex, GPS-denied environments, raised a $125M Series A (Duc Dao/TNGlobal)",
+        "summary": "新加坡dConstruct Robotics完成1.25亿美元A轮融资，主攻让自主机器人在复杂、无GPS环境中运行的空间技术，是机器人基础能力融资升温的最新案例。",
+        "rating": "A",
+        "score": 80,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "这笔融资可延伸到仓储、安防、工业巡检等机器人落地场景，也反映空间智能和具身智能基础设施正在成为资本重点下注方向。",
+        "entities": [
+          "Autonomous Robots",
+          "Dconstruct Robotics",
+          "Gps-Denied Environments",
+          "Spatial Technology"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260704/p3#a260704p3"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783145354,
+        "published_at": "2026-07-04T14:09:14.114475",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260704/p3#a260704p3",
+        "event_id": null
+      },
+      {
+        "id": "fca74584aff33bceb6ea4b20857367b1",
+        "title": "前DeepMind三人组把博弈AI做进量化基金",
+        "chinese_title": "前DeepMind三人组把博弈AI做进量化基金",
+        "original_title": "Prague-based EquiLibre, which offers AI for quant hedge funds and is founded by three ex-Google DeepMind researchers, raised a Series A at a $500M valuation (Anna Heim/TechCrunch)",
+        "summary": "布拉格EquiLibre由三名前Google DeepMind研究者创立，将曾击败人类扑克玩家的AI技术用于股票交易，并在A轮融资中获得5亿美元估值。",
+        "rating": "A",
+        "score": 86,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "该事件可观察强化学习、博弈智能从游戏走向金融交易的商业化路径，也会引发量化基金对AI原生策略团队的估值重估。",
+        "entities": [
+          "Ai",
+          "DeepMind",
+          "Equilibre",
+          "Quant Hedge Funds"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260704/p2#a260704p2"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783145354,
+        "published_at": "2026-07-04T14:09:14.114489",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260704/p2#a260704p2",
+        "event_id": null
+      },
+      {
         "id": "dca2730f2bed0e601567698fec285cbd",
         "title": "AI算力热潮带火芯片时钟组件，Stathera融到5500万美元",
         "chinese_title": "AI算力热潮带火芯片时钟组件，Stathera融到5500万美元",
@@ -4505,6 +4595,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-04T13:07:18.824855",
-  "total_news": 133
+  "last_updated": "2026-07-04T14:09:39.284611",
+  "total_news": 136
 }
