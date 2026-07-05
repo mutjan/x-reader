@@ -3731,6 +3731,120 @@
     ],
     "2026-07-06": [
       {
+        "id": "f0565da235aa09d41d98e5c3e6a171d3",
+        "title": "耶鲁和芝大论文称LLM研究创意范围窄于人类",
+        "chinese_title": "耶鲁和芝大论文称LLM研究创意范围窄于人类",
+        "original_title": "Measuring the Gap Between Human and LLM Research Ideas",
+        "summary": "耶鲁大学和芝加哥大学论文构建大规模研究创意评估框架，发现强LLM能生成合理研究想法，但分布更集中在桥接型机会和综合型方法上，整体范围窄于并系统性偏离人类研究品味。",
+        "expansion": "可延伸观察AI Scientist、科研智能体和论文创意工具的评估范式：未来关键可能不只是单个创意质量，而是想法分布、研究品味和多样性。",
+        "url": "https://arxiv.org/html/2607.01233v1",
+        "original_url": "https://arxiv.org/html/2607.01233v1",
+        "source": "arXiv / X Pro",
+        "sourceLinks": [
+          {
+            "name": "arXiv",
+            "url": "https://arxiv.org/html/2607.01233v1"
+          },
+          {
+            "name": "Rohan Paul via X Pro",
+            "url": "https://x.com/rohanpaul_ai/status/2073502907920703553"
+          }
+        ],
+        "sources": 2,
+        "type": "research",
+        "typeName": "研究成果",
+        "entities": [
+          "Yale University",
+          "University of Chicago",
+          "LLM",
+          "AI Scientist",
+          "Research Ideas"
+        ],
+        "rating": "B",
+        "grade": "B",
+        "level": "B",
+        "score": 77,
+        "published_at": "2026-07-06T07:16:02.470135",
+        "timestamp": 1783293362,
+        "event_id": null
+      },
+      {
+        "id": "bba4ee1370fe991b91ea13224170d197",
+        "title": "NVIDIA等论文提出可随电网调度的AI数据中心",
+        "chinese_title": "NVIDIA等论文提出可随电网调度的AI数据中心",
+        "original_title": "Power-Flexible AI Data Centers: A New Paradigm for Grid-Responsive Compute",
+        "summary": "NVIDIA、Oracle Cloud Infrastructure、Emerald AI等相关作者论文提出“电力柔性”AI数据中心架构，把电网信号、工作负载调度和功率遥测结合起来；130kW GPU集群实验证明可快速降载、持续削峰并保护优先任务。",
+        "expansion": "这把AI数据中心从“刚性用电负荷”改写为可调度算力资源，后续可观察云厂商并网审批、能源合同、跨区域负载迁移和GPU利用率之间的新权衡。",
+        "url": "https://arxiv.org/abs/2606.25098",
+        "original_url": "https://arxiv.org/abs/2606.25098",
+        "source": "arXiv / X Pro",
+        "sourceLinks": [
+          {
+            "name": "arXiv",
+            "url": "https://arxiv.org/abs/2606.25098"
+          },
+          {
+            "name": "Rohan Paul via X Pro",
+            "url": "https://x.com/rohanpaul_ai/status/2073542622145077554"
+          }
+        ],
+        "sources": 2,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "entities": [
+          "NVIDIA",
+          "Oracle Cloud Infrastructure",
+          "Emerald AI",
+          "AI数据中心",
+          "电网"
+        ],
+        "rating": "A",
+        "grade": "A",
+        "level": "A",
+        "score": 82,
+        "published_at": "2026-07-06T07:16:02.470135",
+        "timestamp": 1783293362,
+        "event_id": null
+      },
+      {
+        "id": "3114febb258309cb703e96bf970559b1",
+        "title": "字节Seed发布EdgeBench评测AI智能体长期学习能力",
+        "chinese_title": "字节Seed发布EdgeBench评测AI智能体长期学习能力",
+        "original_title": "EdgeBench: Unveiling scaling laws of learning from real-world environments",
+        "summary": "ByteDance Seed开源EdgeBench，用134个真实任务评估自治AI智能体如何在可执行环境中通过反馈持续学习；公开说明称任务会运行12小时以上，并基于约3.8万小时交互分析学习曲线。",
+        "expansion": "可继续追踪EdgeBench是否成为智能体长期运行评测标准，以及Claude、GPT、GLM、DeepSeek等模型在多小时任务中的学习曲线和成本边界。",
+        "url": "https://github.com/ByteDance-Seed/EdgeBench",
+        "original_url": "https://github.com/ByteDance-Seed/EdgeBench",
+        "source": "ByteDance Seed / X Pro",
+        "sourceLinks": [
+          {
+            "name": "ByteDance Seed EdgeBench",
+            "url": "https://github.com/ByteDance-Seed/EdgeBench"
+          },
+          {
+            "name": "Rohan Paul via X Pro",
+            "url": "https://x.com/rohanpaul_ai/status/2073902415561281802"
+          }
+        ],
+        "sources": 2,
+        "type": "research",
+        "typeName": "研究成果",
+        "entities": [
+          "ByteDance Seed",
+          "EdgeBench",
+          "AI Agent",
+          "Claude",
+          "GPT"
+        ],
+        "rating": "A",
+        "grade": "A",
+        "level": "A",
+        "score": 84,
+        "published_at": "2026-07-06T07:16:02.470135",
+        "timestamp": 1783293362,
+        "event_id": null
+      },
+      {
         "id": "eae096787b4658e693e31d48e92b4680",
         "title": "SK海力士赴纳斯达克挂牌，AI存储热度迎来新考验",
         "chinese_title": "SK海力士赴纳斯达克挂牌，AI存储热度迎来新考验",
@@ -3836,6 +3950,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-06T07:04:40.194520",
+  "last_updated": "2026-07-06T07:16:02.470135",
   "total_news": 113
 }
