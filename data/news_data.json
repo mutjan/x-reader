@@ -3731,20 +3731,51 @@
     ],
     "2026-07-06": [
       {
+        "id": "8f57ea830c8a740acf0387e0d166e6b1",
+        "title": "让AI代理自动录制工作演示视频",
+        "chinese_title": "让AI代理自动录制工作演示视频",
+        "original_title": "Have your agent record video demos of its work with shot-scraper video",
+        "summary": "Simon Willison 介绍用 shot-scraper video 让 AI Agent 自动录制工作演示，并提到 sqlite-utils 新版本主要由 Claude Fable 辅助完成。",
+        "rating": "A",
+        "score": 79,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这类工具可扩展到AI编码代理的验收、审计和演示流程，也可能推动开发者把代理行为记录作为软件交付的一部分。",
+        "entities": [
+          "Ai Agent",
+          "Claude",
+          "Shot-Scraper",
+          "Simon Willison",
+          "Sqlite-Utils"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Simon Willison’s Newsletter (qwen)",
+            "url": "https://simonw.substack.com/p/have-your-agent-record-video-demos"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783289013,
+        "published_at": "2026-07-06T06:03:33.250414",
+        "source": "Simon Willison’s Newsletter (qwen)",
+        "url": "https://simonw.substack.com/p/have-your-agent-record-video-demos",
+        "event_id": null
+      },
+      {
         "id": "a25f3dc9f8e274c99daba9bfe6f2c01c",
-        "title": "中国拟人化AI规则落地，豆包通义将下线人形智能体",
-        "chinese_title": "中国拟人化AI规则落地，豆包通义将下线人形智能体",
+        "title": "豆包和通义将下线拟人化AI智能体",
+        "chinese_title": "豆包和通义将下线拟人化AI智能体",
         "original_title": "ByteDance's Doubao and Alibaba's Qwen will disable humanlike and user-created agents before July 15, as China's anthropomorphic AI interaction rules take effect (Wency Chen/South China Morning Post)",
-        "summary": "随着中国拟人化AI互动新规生效，字节跳动豆包和阿里通义千问将在7月15日前停用部分拟人化及用户自建智能体功能，消费级AI应用的角色交互边界被进一步收紧。",
+        "summary": "中国拟人化AI互动规则即将生效，字节豆包和阿里通义千问将在7月15日前禁用拟人化及用户创建智能体功能。",
         "rating": "A+",
-        "score": 88,
+        "score": 80,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "该事件可继续观察国内AI应用的合规改造节奏，以及角色扮演、陪伴式智能体和开放创建平台的产品收缩。监管边界明确后，头部平台的调整也可能影响中小AI应用和开发者生态。",
         "entities": [
           "Alibaba",
           "ByteDance",
-          "拟人化Ai互动规则",
+          "拟人化Ai",
           "豆包",
           "通义千问"
         ],
@@ -3761,11 +3792,13 @@
         "url": "https://www.techmeme.com/260705/p9#a260705p9",
         "event_id": null,
         "original_url": "https://www.techmeme.com/260705/p9#a260705p9",
-        "grade": "A+",
-        "level": "A+"
+        "grade": "A",
+        "level": "A+",
+        "original_content": "Wency Chen / South China Morning Post : ByteDance's Doubao and Alibaba's Qwen will disable humanlike and user-created agents before July 15, as China's anthropomorphic AI interaction rules take effect — Two of China's major consumer-facing artificial intelligence apps, ByteDance's Doubao and Alibaba Group Holding's Qwen …",
+        "extension": "该事件可延展到中国AI应用合规、角色扮演类Agent产品收缩，以及平台如何在用户粘性和监管要求之间重新设计交互形态。"
       }
     ]
   },
-  "last_updated": "2026-07-06T05:08:09.123262",
-  "total_news": 111
+  "last_updated": "2026-07-06T06:03:54.075373",
+  "total_news": 112
 }
