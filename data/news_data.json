@@ -402,39 +402,6 @@
         "original_url": "https://www.techmeme.com/260628/p1#a260628p1",
         "grade": "A",
         "level": "A"
-      },
-      {
-        "id": "f399039939fc0d7c8ca0e8fbb9fde1db",
-        "title": "百度发布整本书级OCR模型",
-        "chinese_title": "百度发布整本书级OCR模型",
-        "original_title": "Baidu released Unlimited OCR, a model that scans entire books at once in seconds instead of processing them in chunks. OpenAI and Anthropic will proba...",
-        "summary": "百度Unlimited OCR通过Reference Sliding Window Attention降低长文档解析的KV缓存压力，可在一次前向过程中解析几十页乃至整本书级文档，并在文档解析基准上超过DeepSeek OCR。",
-        "rating": "A",
-        "score": 81,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸到长文档理解、OCR工程架构、端到端文档AI和国产多模态模型竞争；若开源生态跟进，可能影响文档自动化、知识库入库和企业档案处理成本。",
-        "entities": [
-          "Baidu",
-          "Deepseek Ocr",
-          "R-Swa",
-          "Unlimited Ocr"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Amank1412/status/2070909492699828382"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1782606613,
-        "published_at": "2026-06-28T08:30:13.229364",
-        "source": "x",
-        "url": "https://x.com/Amank1412/status/2070909492699828382",
-        "event_id": null,
-        "original_url": "https://x.com/Amank1412/status/2070909492699828382",
-        "grade": "A",
-        "level": "A"
       }
     ],
     "2026-06-30": [
@@ -4133,6 +4100,66 @@
     ],
     "2026-07-05": [
       {
+        "id": "bea6ff745465d6307a47c6c2d57a3970",
+        "title": "地图图层进内存，LLM少走弯路",
+        "chinese_title": "地图图层进内存，LLM少走弯路",
+        "original_title": "Mapping with In-Memory Layers to Reduce LLM Overload",
+        "summary": "RidgeText介绍一种把Mapbox地图图层加载到内存中的方案，让LLM在生成地理空间分析结果时直接组合结构化图层，减少重复查询、上下文膨胀和错误推理。",
+        "rating": "B",
+        "score": 70,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸观察地理信息、应急管理和企业BI场景中，LLM是否会从文本检索转向结构化图层编排。若方案可复用，地图数据平台和智能体工具链可能出现更细分的集成机会。",
+        "entities": [
+          "LLM",
+          "Mapbox",
+          "Ridgetext",
+          "地理空间分析"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://ridgetext.com/blog/mapbox-llm-composition"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783217168,
+        "published_at": "2026-07-05T10:06:08.251692",
+        "source": "Hacker News",
+        "url": "https://ridgetext.com/blog/mapbox-llm-composition",
+        "event_id": null
+      },
+      {
+        "id": "0a468e642f0e55c07d8706b0d6f3fe42",
+        "title": "消费级GPU也想微调MoE大模型",
+        "chinese_title": "消费级GPU也想微调MoE大模型",
+        "original_title": "If your GPU can run inference, it should be able to fine-tune too. [P]",
+        "summary": "一名开发者开源USAF稀疏微调方法，称可在12GB显存的AMD RX 6750 XT上微调Qwen MoE模型，重点训练专家权重和路由器而不是适配器。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果方法经独立复现，可能降低MoE模型个性化微调门槛，并带动消费级显卡、开源训练工具和本地AI社区的实验热度。但目前仍是社区项目，需要验证稳定性与泛化效果。",
+        "entities": [
+          "Amd",
+          "Moe",
+          "Qwen",
+          "Usaf"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783217168,
+        "published_at": "2026-07-05T10:06:08.251723",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/",
+        "event_id": null
+      },
+      {
         "id": "a226e99a33b117e73ad7e4c923561e5f",
         "title": "英国OpenAI星际之门项目被指只是公关秀",
         "chinese_title": "英国OpenAI星际之门项目被指只是公关秀",
@@ -4202,6 +4229,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-05T08:07:24.134694",
-  "total_news": 124
+  "last_updated": "2026-07-05T10:06:48.161989",
+  "total_news": 125
 }
