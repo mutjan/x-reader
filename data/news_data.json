@@ -3731,6 +3731,66 @@
     ],
     "2026-07-06": [
       {
+        "id": "07a18c86657a50f0ba7eef8ac9dd0d6f",
+        "title": "代码越干净，AI编程代理越省力",
+        "chinese_title": "代码越干净，AI编程代理越省力",
+        "original_title": "Does Code Cleanliness Affect Coding Agents?",
+        "summary": "SonarSource研究用最小配对仓库测试Claude Code，发现代码整洁度不显著改变任务通过率，但能降低约7%到8%的token消耗，并减少约34%的文件反复访问。",
+        "rating": "A",
+        "score": 84,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这个结论把软件工程质量从人类可维护性延伸到AI代理运行成本，后续可关注企业代码库治理、agent评测基准和IDE工具链如何把整洁度转化为算力节省。",
+        "entities": [
+          "Ai编程代理",
+          "Claude",
+          "Sonarsource",
+          "代码整洁度"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://arxiv.org/abs/2605.20049"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783299885,
+        "published_at": "2026-07-06T09:04:45.036791",
+        "source": "Hacker News",
+        "url": "https://arxiv.org/abs/2605.20049",
+        "event_id": null
+      },
+      {
+        "id": "e6cf2e4b493e40a7f56ff3515a85b37f",
+        "title": "Gemini Omni Flash接入ComfyUI工作流",
+        "chinese_title": "Gemini Omni Flash接入ComfyUI工作流",
+        "original_title": "Gemini Omni Flash",
+        "summary": "ComfyUI社区展示Gemini Omni Flash相关工作流，可通过节点和自然语言提示完成图生视频、视频编辑和对象替换等创作流程。",
+        "rating": "B",
+        "score": 69,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这反映视频生成模型正从单点应用进入节点式工作流，后续可观察Google模型生态、ComfyUI插件市场和创作者生产流程的迁移。",
+        "entities": [
+          "Comfyui",
+          "Gemini",
+          "Google",
+          "视频生成"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (Gemini)",
+            "url": "https://www.reddit.com/r/singularity/comments/1uoe6we/gemini_omni_flash/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783299885,
+        "published_at": "2026-07-06T09:04:45.036837",
+        "source": "Technological Singularity (Gemini)",
+        "url": "https://www.reddit.com/r/singularity/comments/1uoe6we/gemini_omni_flash/",
+        "event_id": null
+      },
+      {
         "id": "f0565da235aa09d41d98e5c3e6a171d3",
         "title": "耶鲁和芝大论文称LLM研究创意范围窄于人类",
         "chinese_title": "耶鲁和芝大论文称LLM研究创意范围窄于人类",
@@ -3952,6 +4012,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-06T08:03:10.930884",
-  "total_news": 116
+  "last_updated": "2026-07-06T09:05:02.672214",
+  "total_news": 118
 }
