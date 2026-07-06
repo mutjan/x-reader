@@ -1929,7 +1929,37 @@
         "level": "S"
       }
     ],
-    "2026-07-03": [
+    "2026-07-06": [
+      {
+        "id": "ce36e7f7c13d374f6e26f8da70f59e33",
+        "title": "英伟达等押注人形机器人安全系统",
+        "chinese_title": "英伟达等押注人形机器人安全系统",
+        "original_title": "How companies like Nvidia and Neura Robotics are building safety systems for humanoid robots to minimize risks like a bipedal robot losing stability (John Keilman/Wall Street Journal)",
+        "summary": "英伟达、Neura Robotics等公司正为人形机器人构建电子传感、稳定控制和工程保护机制，试图降低双足机器人失稳等风险，让其更安全地进入人类工作场景。",
+        "rating": "A",
+        "score": 83,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "人形机器人从展示走向工作现场，安全系统会成为商业化落地的前置门槛。后续可追踪英伟达机器人平台、传感器供应链和工业客户试点进展。",
+        "entities": [
+          "NVIDIA",
+          "Neura Robotics",
+          "人形机器人",
+          "机器人安全系统"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260705/p13#a260705p13"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783307024,
+        "published_at": "2026-07-06T11:03:44.688423",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260705/p13#a260705p13",
+        "event_id": null
+      },
       {
         "id": "d1ed8dafed97d5b9c84aa95de4e07dc8",
         "title": "扎克伯格承认Meta AI代理进展低于预期",
@@ -1963,6 +1993,327 @@
         "grade": "S",
         "level": "S"
       },
+      {
+        "id": "44b5661154a87f6a6c14b90c453dd565",
+        "title": "Fly.io谈如何让AI代理别把自己跑崩",
+        "chinese_title": "Fly.io谈如何让AI代理别把自己跑崩",
+        "original_title": "Building Agents That Don't Break Themselves",
+        "summary": "Fly.io文章从运行环境隔离角度讨论AI代理系统设计，强调代理本体与代码执行环境应分开处理，以降低自动化修改、执行和部署时的自毁风险。",
+        "rating": "B",
+        "score": 72,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该思路可延伸到企业内部编码代理、沙箱执行、权限分层和云端部署架构，适合与当前AI编程代理工程化落地趋势合并观察。",
+        "entities": [
+          "Ai代理",
+          "Fly.Io",
+          "代码运行环境",
+          "沙箱执行"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://fly.io/blog/building-agents-that-dont-break-themselves/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783303466,
+        "published_at": "2026-07-06T10:04:26.191503",
+        "source": "Hacker News",
+        "url": "https://fly.io/blog/building-agents-that-dont-break-themselves/",
+        "event_id": null,
+        "original_url": "https://fly.io/blog/building-agents-that-dont-break-themselves/",
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "07a18c86657a50f0ba7eef8ac9dd0d6f",
+        "title": "代码越干净，AI编程代理越省力",
+        "chinese_title": "代码越干净，AI编程代理越省力",
+        "original_title": "Does Code Cleanliness Affect Coding Agents?",
+        "summary": "SonarSource研究用最小配对仓库测试Claude Code，发现代码整洁度不显著改变任务通过率，但能降低约7%到8%的token消耗，并减少约34%的文件反复访问。",
+        "rating": "A",
+        "score": 84,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这个结论把软件工程质量从人类可维护性延伸到AI代理运行成本，后续可关注企业代码库治理、agent评测基准和IDE工具链如何把整洁度转化为算力节省。",
+        "entities": [
+          "Ai编程代理",
+          "Claude",
+          "Sonarsource",
+          "代码整洁度"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://arxiv.org/abs/2605.20049"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783299885,
+        "published_at": "2026-07-06T09:04:45.036791",
+        "source": "Hacker News",
+        "url": "https://arxiv.org/abs/2605.20049",
+        "event_id": null,
+        "grade": "A",
+        "level": "A",
+        "original_url": "https://arxiv.org/abs/2605.20049"
+      },
+      {
+        "id": "e6cf2e4b493e40a7f56ff3515a85b37f",
+        "title": "Gemini Omni Flash接入ComfyUI工作流",
+        "chinese_title": "Gemini Omni Flash接入ComfyUI工作流",
+        "original_title": "Gemini Omni Flash",
+        "summary": "ComfyUI社区展示Gemini Omni Flash相关工作流，可通过节点和自然语言提示完成图生视频、视频编辑和对象替换等创作流程。",
+        "rating": "B",
+        "score": 69,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这反映视频生成模型正从单点应用进入节点式工作流，后续可观察Google模型生态、ComfyUI插件市场和创作者生产流程的迁移。",
+        "entities": [
+          "Comfyui",
+          "Gemini",
+          "Google",
+          "视频生成"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity (Gemini)",
+            "url": "https://www.reddit.com/r/singularity/comments/1uoe6we/gemini_omni_flash/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783299885,
+        "published_at": "2026-07-06T09:04:45.036837",
+        "source": "Technological Singularity (Gemini)",
+        "url": "https://www.reddit.com/r/singularity/comments/1uoe6we/gemini_omni_flash/",
+        "event_id": null,
+        "grade": "B",
+        "level": "B",
+        "original_url": "https://www.reddit.com/r/singularity/comments/1uoe6we/gemini_omni_flash/"
+      },
+      {
+        "id": "f0565da235aa09d41d98e5c3e6a171d3",
+        "title": "耶鲁和芝大论文称LLM研究创意范围窄于人类",
+        "chinese_title": "耶鲁和芝大论文称LLM研究创意范围窄于人类",
+        "original_title": "Measuring the Gap Between Human and LLM Research Ideas",
+        "summary": "耶鲁大学和芝加哥大学论文构建大规模研究创意评估框架，发现强LLM能生成合理研究想法，但分布更集中在桥接型机会和综合型方法上，整体范围窄于并系统性偏离人类研究品味。",
+        "expansion": "可延伸观察AI Scientist、科研智能体和论文创意工具的评估范式：未来关键可能不只是单个创意质量，而是想法分布、研究品味和多样性。",
+        "url": "https://arxiv.org/html/2607.01233v1",
+        "original_url": "https://arxiv.org/html/2607.01233v1",
+        "source": "arXiv / X Pro",
+        "sourceLinks": [
+          {
+            "name": "arXiv",
+            "url": "https://arxiv.org/html/2607.01233v1"
+          },
+          {
+            "name": "Rohan Paul via X Pro",
+            "url": "https://x.com/rohanpaul_ai/status/2073502907920703553"
+          }
+        ],
+        "sources": 2,
+        "type": "research",
+        "typeName": "研究成果",
+        "entities": [
+          "Yale University",
+          "University of Chicago",
+          "LLM",
+          "AI Scientist",
+          "Research Ideas"
+        ],
+        "rating": "B",
+        "grade": "B",
+        "level": "B",
+        "score": 77,
+        "published_at": "2026-07-06T07:16:02.470135",
+        "timestamp": 1783293362,
+        "event_id": null
+      },
+      {
+        "id": "bba4ee1370fe991b91ea13224170d197",
+        "title": "NVIDIA等论文提出可随电网调度的AI数据中心",
+        "chinese_title": "NVIDIA等论文提出可随电网调度的AI数据中心",
+        "original_title": "Power-Flexible AI Data Centers: A New Paradigm for Grid-Responsive Compute",
+        "summary": "NVIDIA、Oracle Cloud Infrastructure、Emerald AI等相关作者论文提出“电力柔性”AI数据中心架构，把电网信号、工作负载调度和功率遥测结合起来；130kW GPU集群实验证明可快速降载、持续削峰并保护优先任务。",
+        "expansion": "这把AI数据中心从“刚性用电负荷”改写为可调度算力资源，后续可观察云厂商并网审批、能源合同、跨区域负载迁移和GPU利用率之间的新权衡。",
+        "url": "https://arxiv.org/abs/2606.25098",
+        "original_url": "https://arxiv.org/abs/2606.25098",
+        "source": "arXiv / X Pro",
+        "sourceLinks": [
+          {
+            "name": "arXiv",
+            "url": "https://arxiv.org/abs/2606.25098"
+          },
+          {
+            "name": "Rohan Paul via X Pro",
+            "url": "https://x.com/rohanpaul_ai/status/2073542622145077554"
+          }
+        ],
+        "sources": 2,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "entities": [
+          "NVIDIA",
+          "Oracle Cloud Infrastructure",
+          "Emerald AI",
+          "AI数据中心",
+          "电网"
+        ],
+        "rating": "A",
+        "grade": "A",
+        "level": "A",
+        "score": 82,
+        "published_at": "2026-07-06T07:16:02.470135",
+        "timestamp": 1783293362,
+        "event_id": null
+      },
+      {
+        "id": "3114febb258309cb703e96bf970559b1",
+        "title": "字节Seed发布EdgeBench评测AI智能体长期学习能力",
+        "chinese_title": "字节Seed发布EdgeBench评测AI智能体长期学习能力",
+        "original_title": "EdgeBench: Unveiling scaling laws of learning from real-world environments",
+        "summary": "ByteDance Seed开源EdgeBench，用134个真实任务评估自治AI智能体如何在可执行环境中通过反馈持续学习；公开说明称任务会运行12小时以上，并基于约3.8万小时交互分析学习曲线。",
+        "expansion": "可继续追踪EdgeBench是否成为智能体长期运行评测标准，以及Claude、GPT、GLM、DeepSeek等模型在多小时任务中的学习曲线和成本边界。",
+        "url": "https://github.com/ByteDance-Seed/EdgeBench",
+        "original_url": "https://github.com/ByteDance-Seed/EdgeBench",
+        "source": "ByteDance Seed / X Pro",
+        "sourceLinks": [
+          {
+            "name": "ByteDance Seed EdgeBench",
+            "url": "https://github.com/ByteDance-Seed/EdgeBench"
+          },
+          {
+            "name": "Rohan Paul via X Pro",
+            "url": "https://x.com/rohanpaul_ai/status/2073902415561281802"
+          }
+        ],
+        "sources": 2,
+        "type": "research",
+        "typeName": "研究成果",
+        "entities": [
+          "ByteDance Seed",
+          "EdgeBench",
+          "AI Agent",
+          "Claude",
+          "GPT"
+        ],
+        "rating": "A",
+        "grade": "A",
+        "level": "A",
+        "score": 84,
+        "published_at": "2026-07-06T07:16:02.470135",
+        "timestamp": 1783293362,
+        "event_id": null
+      },
+      {
+        "id": "eae096787b4658e693e31d48e92b4680",
+        "title": "SK海力士拟登陆纳斯达克，AI内存热度再升温",
+        "chinese_title": "SK海力士拟登陆纳斯达克，AI内存热度再升温",
+        "original_title": "SK Hynix’s US Listing Will Be a Focal Point This Week",
+        "summary": "SK 海力士预计本周五在纳斯达克挂牌并融资，借 AI 带动的存储芯片需求打开美国投资者入口，也将检验科技 IPO 市场和内存周期热度。",
+        "rating": "A+",
+        "score": 87,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延伸观察AI服务器带动HBM和DRAM需求后，资本市场如何重新定价存储芯片公司；也会影响三星、美光以及相关半导体设备和供应链公司的估值预期。",
+        "entities": [
+          "Hbm",
+          "Micron",
+          "Nasdaq",
+          "Samsung",
+          "Sk Hynix"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/sk-hynixs-listing-will-focal-point-week"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783292656,
+        "published_at": "2026-07-06T07:04:16.341259",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/sk-hynixs-listing-will-focal-point-week",
+        "event_id": null,
+        "original_url": "https://www.theinformation.com/articles/sk-hynixs-listing-will-focal-point-week",
+        "grade": "A+",
+        "level": "A+",
+        "original_content": "Tech IPOs are definitely getting more interesting. On the heels of last week’s debuts by Bending Spoons and Lime, this week we’ve got South Korean memory chip giant SK Hynix, which is expected to list on the Nasdaq on Friday, adding to its existing South Korean stock exchange listing. Hynix will raise money as part of the Nasdaq listing, making investor reception to the offering another indicator of the IPO market’s strength. For U.S. investors, Hynix’s U.S. listing will make the stock easier to buy. That’s a big deal. As things stand now, only one of the three primary makers of memory chips—Micron Technology—is U.S. based (the third is another South Korean company, Samsung). To be sure, investors might have preferred Hynix to have listed here a couple of years ago, before the memory chip explosion happened. Hynix’s revenue, for instance, soared 200% between 2023 and 2025, and then rose another 200% in the first quarter of this year. It’s little wonder that Hynix shares are up nearly 800% in the past 12 months.",
+        "extension": "该事件可延伸到 HBM 供应链、三星和美光竞争、美股 AI 硬件资产定价，以及韩国芯片公司国际资本市场策略变化。"
+      },
+      {
+        "id": "8f57ea830c8a740acf0387e0d166e6b1",
+        "title": "让AI代理自动录制工作演示视频",
+        "chinese_title": "让AI代理自动录制工作演示视频",
+        "original_title": "Have your agent record video demos of its work with shot-scraper video",
+        "summary": "Simon Willison 介绍用 shot-scraper video 让 AI Agent 自动录制工作演示，并提到 sqlite-utils 新版本主要由 Claude Fable 辅助完成。",
+        "rating": "A",
+        "score": 79,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "这类工具可扩展到AI编码代理的验收、审计和演示流程，也可能推动开发者把代理行为记录作为软件交付的一部分。",
+        "entities": [
+          "Ai Agent",
+          "Claude",
+          "Shot-Scraper",
+          "Simon Willison",
+          "Sqlite-Utils"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Simon Willison’s Newsletter (qwen)",
+            "url": "https://simonw.substack.com/p/have-your-agent-record-video-demos"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783289013,
+        "published_at": "2026-07-06T06:03:33.250414",
+        "source": "Simon Willison’s Newsletter (qwen)",
+        "url": "https://simonw.substack.com/p/have-your-agent-record-video-demos",
+        "event_id": null,
+        "original_url": "https://simonw.substack.com/p/have-your-agent-record-video-demos",
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "a25f3dc9f8e274c99daba9bfe6f2c01c",
+        "title": "豆包和通义将下线拟人化AI智能体",
+        "chinese_title": "豆包和通义将下线拟人化AI智能体",
+        "original_title": "ByteDance's Doubao and Alibaba's Qwen will disable humanlike and user-created agents before July 15, as China's anthropomorphic AI interaction rules take effect (Wency Chen/South China Morning Post)",
+        "summary": "中国拟人化AI互动规则即将生效，字节豆包和阿里通义千问将在7月15日前禁用拟人化及用户创建智能体功能。",
+        "rating": "A+",
+        "score": 80,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可继续观察国内AI应用的合规改造节奏，以及角色扮演、陪伴式智能体和开放创建平台的产品收缩。监管边界明确后，头部平台的调整也可能影响中小AI应用和开发者生态。",
+        "entities": [
+          "Alibaba",
+          "ByteDance",
+          "拟人化Ai",
+          "豆包",
+          "通义千问"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (qwen)",
+            "url": "https://www.techmeme.com/260705/p9#a260705p9"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783285663,
+        "published_at": "2026-07-06T05:07:43.191416",
+        "source": "Techmeme (qwen)",
+        "url": "https://www.techmeme.com/260705/p9#a260705p9",
+        "event_id": null,
+        "original_url": "https://www.techmeme.com/260705/p9#a260705p9",
+        "grade": "A+",
+        "level": "A+",
+        "original_content": "Wency Chen / South China Morning Post : ByteDance's Doubao and Alibaba's Qwen will disable humanlike and user-created agents before July 15, as China's anthropomorphic AI interaction rules take effect — Two of China's major consumer-facing artificial intelligence apps, ByteDance's Doubao and Alibaba Group Holding's Qwen …",
+        "extension": "该事件可延展到中国AI应用合规、角色扮演类Agent产品收缩，以及平台如何在用户粘性和监管要求之间重新设计交互形态。"
+      }
+    ],
+    "2026-07-03": [
       {
         "id": "7c1ba1111bb8daf695cd877f75e35c41",
         "title": "快手可灵AI视频业务融资估值150亿美元",
@@ -3727,329 +4078,8 @@
         "grade": "A",
         "level": "A"
       }
-    ],
-    "2026-07-06": [
-      {
-        "id": "44b5661154a87f6a6c14b90c453dd565",
-        "title": "Fly.io谈如何让AI代理别把自己跑崩",
-        "chinese_title": "Fly.io谈如何让AI代理别把自己跑崩",
-        "original_title": "Building Agents That Don't Break Themselves",
-        "summary": "Fly.io文章从运行环境隔离角度讨论AI代理系统设计，强调代理本体与代码执行环境应分开处理，以降低自动化修改、执行和部署时的自毁风险。",
-        "rating": "B",
-        "score": 72,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "该思路可延伸到企业内部编码代理、沙箱执行、权限分层和云端部署架构，适合与当前AI编程代理工程化落地趋势合并观察。",
-        "entities": [
-          "Ai代理",
-          "Fly.Io",
-          "代码运行环境",
-          "沙箱执行"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://fly.io/blog/building-agents-that-dont-break-themselves/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783303466,
-        "published_at": "2026-07-06T10:04:26.191503",
-        "source": "Hacker News",
-        "url": "https://fly.io/blog/building-agents-that-dont-break-themselves/",
-        "event_id": null,
-        "original_url": "https://fly.io/blog/building-agents-that-dont-break-themselves/",
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "07a18c86657a50f0ba7eef8ac9dd0d6f",
-        "title": "代码越干净，AI编程代理越省力",
-        "chinese_title": "代码越干净，AI编程代理越省力",
-        "original_title": "Does Code Cleanliness Affect Coding Agents?",
-        "summary": "SonarSource研究用最小配对仓库测试Claude Code，发现代码整洁度不显著改变任务通过率，但能降低约7%到8%的token消耗，并减少约34%的文件反复访问。",
-        "rating": "A",
-        "score": 84,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这个结论把软件工程质量从人类可维护性延伸到AI代理运行成本，后续可关注企业代码库治理、agent评测基准和IDE工具链如何把整洁度转化为算力节省。",
-        "entities": [
-          "Ai编程代理",
-          "Claude",
-          "Sonarsource",
-          "代码整洁度"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://arxiv.org/abs/2605.20049"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783299885,
-        "published_at": "2026-07-06T09:04:45.036791",
-        "source": "Hacker News",
-        "url": "https://arxiv.org/abs/2605.20049",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_url": "https://arxiv.org/abs/2605.20049"
-      },
-      {
-        "id": "e6cf2e4b493e40a7f56ff3515a85b37f",
-        "title": "Gemini Omni Flash接入ComfyUI工作流",
-        "chinese_title": "Gemini Omni Flash接入ComfyUI工作流",
-        "original_title": "Gemini Omni Flash",
-        "summary": "ComfyUI社区展示Gemini Omni Flash相关工作流，可通过节点和自然语言提示完成图生视频、视频编辑和对象替换等创作流程。",
-        "rating": "B",
-        "score": 69,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这反映视频生成模型正从单点应用进入节点式工作流，后续可观察Google模型生态、ComfyUI插件市场和创作者生产流程的迁移。",
-        "entities": [
-          "Comfyui",
-          "Gemini",
-          "Google",
-          "视频生成"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (Gemini)",
-            "url": "https://www.reddit.com/r/singularity/comments/1uoe6we/gemini_omni_flash/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783299885,
-        "published_at": "2026-07-06T09:04:45.036837",
-        "source": "Technological Singularity (Gemini)",
-        "url": "https://www.reddit.com/r/singularity/comments/1uoe6we/gemini_omni_flash/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "original_url": "https://www.reddit.com/r/singularity/comments/1uoe6we/gemini_omni_flash/"
-      },
-      {
-        "id": "f0565da235aa09d41d98e5c3e6a171d3",
-        "title": "耶鲁和芝大论文称LLM研究创意范围窄于人类",
-        "chinese_title": "耶鲁和芝大论文称LLM研究创意范围窄于人类",
-        "original_title": "Measuring the Gap Between Human and LLM Research Ideas",
-        "summary": "耶鲁大学和芝加哥大学论文构建大规模研究创意评估框架，发现强LLM能生成合理研究想法，但分布更集中在桥接型机会和综合型方法上，整体范围窄于并系统性偏离人类研究品味。",
-        "expansion": "可延伸观察AI Scientist、科研智能体和论文创意工具的评估范式：未来关键可能不只是单个创意质量，而是想法分布、研究品味和多样性。",
-        "url": "https://arxiv.org/html/2607.01233v1",
-        "original_url": "https://arxiv.org/html/2607.01233v1",
-        "source": "arXiv / X Pro",
-        "sourceLinks": [
-          {
-            "name": "arXiv",
-            "url": "https://arxiv.org/html/2607.01233v1"
-          },
-          {
-            "name": "Rohan Paul via X Pro",
-            "url": "https://x.com/rohanpaul_ai/status/2073502907920703553"
-          }
-        ],
-        "sources": 2,
-        "type": "research",
-        "typeName": "研究成果",
-        "entities": [
-          "Yale University",
-          "University of Chicago",
-          "LLM",
-          "AI Scientist",
-          "Research Ideas"
-        ],
-        "rating": "B",
-        "grade": "B",
-        "level": "B",
-        "score": 77,
-        "published_at": "2026-07-06T07:16:02.470135",
-        "timestamp": 1783293362,
-        "event_id": null
-      },
-      {
-        "id": "bba4ee1370fe991b91ea13224170d197",
-        "title": "NVIDIA等论文提出可随电网调度的AI数据中心",
-        "chinese_title": "NVIDIA等论文提出可随电网调度的AI数据中心",
-        "original_title": "Power-Flexible AI Data Centers: A New Paradigm for Grid-Responsive Compute",
-        "summary": "NVIDIA、Oracle Cloud Infrastructure、Emerald AI等相关作者论文提出“电力柔性”AI数据中心架构，把电网信号、工作负载调度和功率遥测结合起来；130kW GPU集群实验证明可快速降载、持续削峰并保护优先任务。",
-        "expansion": "这把AI数据中心从“刚性用电负荷”改写为可调度算力资源，后续可观察云厂商并网审批、能源合同、跨区域负载迁移和GPU利用率之间的新权衡。",
-        "url": "https://arxiv.org/abs/2606.25098",
-        "original_url": "https://arxiv.org/abs/2606.25098",
-        "source": "arXiv / X Pro",
-        "sourceLinks": [
-          {
-            "name": "arXiv",
-            "url": "https://arxiv.org/abs/2606.25098"
-          },
-          {
-            "name": "Rohan Paul via X Pro",
-            "url": "https://x.com/rohanpaul_ai/status/2073542622145077554"
-          }
-        ],
-        "sources": 2,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "entities": [
-          "NVIDIA",
-          "Oracle Cloud Infrastructure",
-          "Emerald AI",
-          "AI数据中心",
-          "电网"
-        ],
-        "rating": "A",
-        "grade": "A",
-        "level": "A",
-        "score": 82,
-        "published_at": "2026-07-06T07:16:02.470135",
-        "timestamp": 1783293362,
-        "event_id": null
-      },
-      {
-        "id": "3114febb258309cb703e96bf970559b1",
-        "title": "字节Seed发布EdgeBench评测AI智能体长期学习能力",
-        "chinese_title": "字节Seed发布EdgeBench评测AI智能体长期学习能力",
-        "original_title": "EdgeBench: Unveiling scaling laws of learning from real-world environments",
-        "summary": "ByteDance Seed开源EdgeBench，用134个真实任务评估自治AI智能体如何在可执行环境中通过反馈持续学习；公开说明称任务会运行12小时以上，并基于约3.8万小时交互分析学习曲线。",
-        "expansion": "可继续追踪EdgeBench是否成为智能体长期运行评测标准，以及Claude、GPT、GLM、DeepSeek等模型在多小时任务中的学习曲线和成本边界。",
-        "url": "https://github.com/ByteDance-Seed/EdgeBench",
-        "original_url": "https://github.com/ByteDance-Seed/EdgeBench",
-        "source": "ByteDance Seed / X Pro",
-        "sourceLinks": [
-          {
-            "name": "ByteDance Seed EdgeBench",
-            "url": "https://github.com/ByteDance-Seed/EdgeBench"
-          },
-          {
-            "name": "Rohan Paul via X Pro",
-            "url": "https://x.com/rohanpaul_ai/status/2073902415561281802"
-          }
-        ],
-        "sources": 2,
-        "type": "research",
-        "typeName": "研究成果",
-        "entities": [
-          "ByteDance Seed",
-          "EdgeBench",
-          "AI Agent",
-          "Claude",
-          "GPT"
-        ],
-        "rating": "A",
-        "grade": "A",
-        "level": "A",
-        "score": 84,
-        "published_at": "2026-07-06T07:16:02.470135",
-        "timestamp": 1783293362,
-        "event_id": null
-      },
-      {
-        "id": "eae096787b4658e693e31d48e92b4680",
-        "title": "SK海力士拟登陆纳斯达克，AI内存热度再升温",
-        "chinese_title": "SK海力士拟登陆纳斯达克，AI内存热度再升温",
-        "original_title": "SK Hynix’s US Listing Will Be a Focal Point This Week",
-        "summary": "SK 海力士预计本周五在纳斯达克挂牌并融资，借 AI 带动的存储芯片需求打开美国投资者入口，也将检验科技 IPO 市场和内存周期热度。",
-        "rating": "A+",
-        "score": 87,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可延伸观察AI服务器带动HBM和DRAM需求后，资本市场如何重新定价存储芯片公司；也会影响三星、美光以及相关半导体设备和供应链公司的估值预期。",
-        "entities": [
-          "Hbm",
-          "Micron",
-          "Nasdaq",
-          "Samsung",
-          "Sk Hynix"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/sk-hynixs-listing-will-focal-point-week"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783292656,
-        "published_at": "2026-07-06T07:04:16.341259",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/sk-hynixs-listing-will-focal-point-week",
-        "event_id": null,
-        "original_url": "https://www.theinformation.com/articles/sk-hynixs-listing-will-focal-point-week",
-        "grade": "A+",
-        "level": "A+",
-        "original_content": "Tech IPOs are definitely getting more interesting. On the heels of last week’s debuts by Bending Spoons and Lime, this week we’ve got South Korean memory chip giant SK Hynix, which is expected to list on the Nasdaq on Friday, adding to its existing South Korean stock exchange listing. Hynix will raise money as part of the Nasdaq listing, making investor reception to the offering another indicator of the IPO market’s strength. For U.S. investors, Hynix’s U.S. listing will make the stock easier to buy. That’s a big deal. As things stand now, only one of the three primary makers of memory chips—Micron Technology—is U.S. based (the third is another South Korean company, Samsung). To be sure, investors might have preferred Hynix to have listed here a couple of years ago, before the memory chip explosion happened. Hynix’s revenue, for instance, soared 200% between 2023 and 2025, and then rose another 200% in the first quarter of this year. It’s little wonder that Hynix shares are up nearly 800% in the past 12 months.",
-        "extension": "该事件可延伸到 HBM 供应链、三星和美光竞争、美股 AI 硬件资产定价，以及韩国芯片公司国际资本市场策略变化。"
-      },
-      {
-        "id": "8f57ea830c8a740acf0387e0d166e6b1",
-        "title": "让AI代理自动录制工作演示视频",
-        "chinese_title": "让AI代理自动录制工作演示视频",
-        "original_title": "Have your agent record video demos of its work with shot-scraper video",
-        "summary": "Simon Willison 介绍用 shot-scraper video 让 AI Agent 自动录制工作演示，并提到 sqlite-utils 新版本主要由 Claude Fable 辅助完成。",
-        "rating": "A",
-        "score": 79,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这类工具可扩展到AI编码代理的验收、审计和演示流程，也可能推动开发者把代理行为记录作为软件交付的一部分。",
-        "entities": [
-          "Ai Agent",
-          "Claude",
-          "Shot-Scraper",
-          "Simon Willison",
-          "Sqlite-Utils"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Simon Willison’s Newsletter (qwen)",
-            "url": "https://simonw.substack.com/p/have-your-agent-record-video-demos"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783289013,
-        "published_at": "2026-07-06T06:03:33.250414",
-        "source": "Simon Willison’s Newsletter (qwen)",
-        "url": "https://simonw.substack.com/p/have-your-agent-record-video-demos",
-        "event_id": null,
-        "original_url": "https://simonw.substack.com/p/have-your-agent-record-video-demos",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "a25f3dc9f8e274c99daba9bfe6f2c01c",
-        "title": "豆包和通义将下线拟人化AI智能体",
-        "chinese_title": "豆包和通义将下线拟人化AI智能体",
-        "original_title": "ByteDance's Doubao and Alibaba's Qwen will disable humanlike and user-created agents before July 15, as China's anthropomorphic AI interaction rules take effect (Wency Chen/South China Morning Post)",
-        "summary": "中国拟人化AI互动规则即将生效，字节豆包和阿里通义千问将在7月15日前禁用拟人化及用户创建智能体功能。",
-        "rating": "A+",
-        "score": 80,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可继续观察国内AI应用的合规改造节奏，以及角色扮演、陪伴式智能体和开放创建平台的产品收缩。监管边界明确后，头部平台的调整也可能影响中小AI应用和开发者生态。",
-        "entities": [
-          "Alibaba",
-          "ByteDance",
-          "拟人化Ai",
-          "豆包",
-          "通义千问"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (qwen)",
-            "url": "https://www.techmeme.com/260705/p9#a260705p9"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783285663,
-        "published_at": "2026-07-06T05:07:43.191416",
-        "source": "Techmeme (qwen)",
-        "url": "https://www.techmeme.com/260705/p9#a260705p9",
-        "event_id": null,
-        "original_url": "https://www.techmeme.com/260705/p9#a260705p9",
-        "grade": "A+",
-        "level": "A+",
-        "original_content": "Wency Chen / South China Morning Post : ByteDance's Doubao and Alibaba's Qwen will disable humanlike and user-created agents before July 15, as China's anthropomorphic AI interaction rules take effect — Two of China's major consumer-facing artificial intelligence apps, ByteDance's Doubao and Alibaba Group Holding's Qwen …",
-        "extension": "该事件可延展到中国AI应用合规、角色扮演类Agent产品收缩，以及平台如何在用户粘性和监管要求之间重新设计交互形态。"
-      }
     ]
   },
-  "last_updated": "2026-07-06T10:04:57.497693",
-  "total_news": 119
+  "last_updated": "2026-07-06T11:04:03.180535",
+  "total_news": 120
 }
