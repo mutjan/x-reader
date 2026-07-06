@@ -1307,40 +1307,6 @@
         "original_url": "https://arxiv.org/abs/2606.28276v1",
         "grade": "B",
         "level": "B"
-      },
-      {
-        "id": "43f0d1b2c3a76a3d57137a62ab656794",
-        "title": "人形机器人公司Apptronik融资近10亿美元",
-        "chinese_title": "人形机器人公司Apptronik融资近10亿美元",
-        "original_title": "Humanoid robot maker Apptronik raised ~$1B at a ~$5B valuation, including from Mercedes-Benz, which has a handful of Apptronik's Apollo robots in its factories (Joshua Brustein/Bloomberg)",
-        "summary": "Apptronik完成约10亿美元融资、估值约50亿美元，奔驰已在工厂试用其Apollo人形机器人，显示具身智能正从演示走向制造业场景验证。",
-        "rating": "A",
-        "score": 84,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "这笔融资可延伸到人形机器人资本热、车厂自动化部署节奏，以及Figure、Tesla Optimus等竞品在制造业落地速度的对比。",
-        "entities": [
-          "Apollo",
-          "Apptronik",
-          "Mercedes-Benz",
-          "人形机器人",
-          "具身智能"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260628/p15#a260628p15"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1782695124,
-        "published_at": "2026-06-29T09:05:24.723795",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260628/p15#a260628p15",
-        "event_id": null,
-        "original_url": "https://www.techmeme.com/260628/p15#a260628p15",
-        "grade": "A",
-        "level": "A"
       }
     ],
     "2026-07-01": [
@@ -1964,6 +1930,36 @@
       }
     ],
     "2026-07-03": [
+      {
+        "id": "d1ed8dafed97d5b9c84aa95de4e07dc8",
+        "title": "扎克伯格承认Meta AI代理进展低于预期",
+        "chinese_title": "扎克伯格承认Meta AI代理进展低于预期",
+        "original_title": "Zuckerberg says AI agent development going slower than expected",
+        "summary": "据Reuters报道，扎克伯格在内部会议上称Meta过去数月AI代理开发进展没有达到预期，显示大厂在智能体从演示走向可靠生产系统时仍面临瓶颈。",
+        "rating": "S",
+        "score": 95,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "该信号可延伸到Meta重组、AI基础设施投入回报、智能体商业化节奏和行业对代理能力预期的重新定价。",
+        "entities": [
+          "Ai代理",
+          "Mark Zuckerberg",
+          "Meta",
+          "Reuters"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783303466,
+        "published_at": "2026-07-06T10:04:26.191537",
+        "source": "Hacker News",
+        "url": "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/",
+        "event_id": null
+      },
       {
         "id": "7c1ba1111bb8daf695cd877f75e35c41",
         "title": "快手可灵AI视频业务融资估值150亿美元",
@@ -3731,6 +3727,36 @@
     ],
     "2026-07-06": [
       {
+        "id": "44b5661154a87f6a6c14b90c453dd565",
+        "title": "Fly.io谈如何让AI代理别把自己跑崩",
+        "chinese_title": "Fly.io谈如何让AI代理别把自己跑崩",
+        "original_title": "Building Agents That Don't Break Themselves",
+        "summary": "Fly.io文章从运行环境隔离角度讨论AI代理系统设计，强调代理本体与代码执行环境应分开处理，以降低自动化修改、执行和部署时的自毁风险。",
+        "rating": "B",
+        "score": 72,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "该思路可延伸到企业内部编码代理、沙箱执行、权限分层和云端部署架构，适合与当前AI编程代理工程化落地趋势合并观察。",
+        "entities": [
+          "Ai代理",
+          "Fly.Io",
+          "代码运行环境",
+          "沙箱执行"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://fly.io/blog/building-agents-that-dont-break-themselves/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783303466,
+        "published_at": "2026-07-06T10:04:26.191503",
+        "source": "Hacker News",
+        "url": "https://fly.io/blog/building-agents-that-dont-break-themselves/",
+        "event_id": null
+      },
+      {
         "id": "07a18c86657a50f0ba7eef8ac9dd0d6f",
         "title": "代码越干净，AI编程代理越省力",
         "chinese_title": "代码越干净，AI编程代理越省力",
@@ -4018,6 +4044,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-06T09:05:02.672214",
-  "total_news": 118
+  "last_updated": "2026-07-06T10:04:57.497693",
+  "total_news": 119
 }
