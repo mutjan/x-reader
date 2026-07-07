@@ -34,6 +34,73 @@
         "original_url": "https://www.techmeme.com/260630/p2#a260630p2",
         "grade": "A",
         "level": "A"
+      },
+      {
+        "id": "b7f7f400e9e69f0f1beebfe70f8f32a3",
+        "title": "GV领投航天金融平台Nebex种子轮",
+        "chinese_title": "GV领投航天金融平台Nebex种子轮",
+        "original_title": "Nebex, a fintech startup aiming to act as a broker platform connecting US space tech suppliers, foreign governments, and investors, raised a $30M seed led by GV (Bloomberg)",
+        "summary": "Nebex获GV领投3000万美元种子轮，试图搭建连接美国航天技术供应商、海外政府和投资人的经纪平台，把航天供给、采购与资本撮合金融化。",
+        "rating": "B",
+        "score": 68,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "该模式把航天供应链从项目制采购推向平台化撮合，后续可观察美国商业航天企业出海、政府采购合规和Alphabet系资本在航天生态中的布局。",
+        "entities": [
+          "Alphabet",
+          "Gv",
+          "Nebex",
+          "航天技术",
+          "金融科技"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260629/p49#a260629p49"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782788765,
+        "published_at": "2026-06-30T11:06:05.317889",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260629/p49#a260629p49",
+        "event_id": null,
+        "original_url": "https://www.techmeme.com/260629/p49#a260629p49",
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "f6fdfe57921e5c1ac9cd249964505f23",
+        "title": "LongCat发布1.6T参数MoE模型",
+        "chinese_title": "LongCat发布1.6T参数MoE模型",
+        "original_title": "LongCat-2.0, a large-scale MoE model with 1.6T total and 48B Active",
+        "summary": "LongCat-2.0发布，号称总参数1.6万亿、激活参数480亿，是一款大规模MoE模型；当前候选信息主要来自项目博客与HN讨论，外部影响仍待验证。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该模型可作为开源或公开模型规模竞赛的观察样本，后续重点在实际基准、推理成本、许可证和是否被开发者采用。",
+        "entities": [
+          "Longcat",
+          "Moe",
+          "大语言模型",
+          "开源模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://longcat.chat/blog/longcat-2.0/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1782788765,
+        "published_at": "2026-06-30T11:06:05.317935",
+        "source": "Hacker News",
+        "url": "https://longcat.chat/blog/longcat-2.0/",
+        "event_id": null,
+        "original_url": "https://longcat.chat/blog/longcat-2.0/",
+        "grade": "B",
+        "level": "B"
       }
     ],
     "2026-07-01": [
@@ -657,42 +724,6 @@
       }
     ],
     "2026-07-07": [
-      {
-        "id": "f1549d2d7be43cc0f6a6df644b6e532e",
-        "title": "Lilian Weng长文拆解AI自我改进脚手架",
-        "chinese_title": "Lilian Weng长文拆解AI自我改进脚手架",
-        "original_title": "Harness Engineering for Self-Improvement",
-        "summary": "Lilian Weng系统梳理递归自我改进概念，并把现代AI自我改进从直接改写模型扩展到优化训练、部署和评估脚手架，讨论前沿实验室研发加速的机制。",
-        "rating": "A+",
-        "score": 68,
-        "type": "opinion",
-        "typeName": "研究成果",
-        "expansion": "可延伸到AI Agent工具链、自动化研发平台和模型训练基础设施的竞争，观察大模型实验室是否会把自我改进能力产品化。",
-        "entities": [
-          "Anthropic",
-          "Harness Engineering",
-          "Lilian Weng",
-          "OpenAI",
-          "递归自我改进"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Lil'Log",
-            "url": "https://lilianweng.github.io/posts/2026-07-04-harness/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783393396,
-        "published_at": "2026-07-07T11:03:16.232760",
-        "source": "Lil'Log",
-        "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
-        "event_id": null,
-        "original_url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
-        "grade": "B",
-        "level": "A+",
-        "original_content": "The concept of recursive self-improvement (RSI) dates back to I. J. Good (1965) , where he defined an “ultraintelligent machine” as a system that can surpass humans in all intellectual activities and design better machines to improve itself. Yudkowsky (2008) used the phrase “recursive self-improvement” for a specific feedback loop: an AI uses its current intelligence to improve the cognitive machinery that produces its intelligence. This feedback loop in modern AI may indicate the model rewriting its own weights directly, or more broadly the model improves the training pipeline and the deployment system , which in turn enables a better successor model with improved performance across economically valuable tasks. The speed of research development in AI has been shown to drastically accelerated in frontier labs ( Anthropic ; OpenAI ).",
-        "extension": "可延伸报道AI实验室如何通过工具链和评估系统提升研发速度，以及所谓自我改进在现阶段更可能体现为工程闭环而非模型完全自治。"
-      },
       {
         "id": "dca6d6eeb411703151b39e780f1f1dca",
         "title": "首例AI勒索攻击仍离不开人类操盘",
@@ -3055,6 +3086,39 @@
     ],
     "2026-07-04": [
       {
+        "id": "f1549d2d7be43cc0f6a6df644b6e532e",
+        "title": "Lilian Weng详解AI自我改进工程路径",
+        "chinese_title": "Lilian Weng详解AI自我改进工程路径",
+        "original_title": "Harness Engineering for Self-Improvement",
+        "summary": "Lilian Weng系统梳理递归自我改进从理论概念到现代AI工程实践的演化，重点讨论模型如何通过工具链、训练管线和部署系统实现能力迭代。",
+        "rating": "A+",
+        "score": 90,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到AI Agent工具链、自动化研发平台和模型训练基础设施的竞争，观察大模型实验室是否会把自我改进能力产品化。",
+        "entities": [
+          "Ai Agent",
+          "Lilian Weng",
+          "训练管线",
+          "递归自我改进"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Lil'Log",
+            "url": "https://lilianweng.github.io/posts/2026-07-04-harness/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783393396,
+        "published_at": "2026-07-07T11:03:16.232760",
+        "source": "Lil'Log",
+        "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+        "event_id": null,
+        "original_url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
         "id": "3e74530039964ee3af686000fe1795a8",
         "title": "只看logits也能还原微调数据原文",
         "chinese_title": "只看logits也能还原微调数据原文",
@@ -3496,6 +3560,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-07T12:03:35.622026",
-  "total_news": 102
+  "last_updated": "2026-07-07T11:03:36.281600",
+  "total_news": 104
 }
