@@ -2,21 +2,141 @@
   "news": {
     "2026-07-08": [
       {
-        "id": "979ad4ef003c2c49d14cba10e45c900f",
-        "title": "用可信LoRA限制模型微调中毒",
-        "chinese_title": "用可信LoRA限制模型微调中毒",
-        "original_title": "What if a model could only learn what trusted LoRA adapters can express? [R]",
-        "summary": "一篇新论文提出把微调限制在可信LoRA适配器学习到的子空间内，让模型保留有用适配能力，同时降低恶意更新被学入的可能。",
+        "id": "eb0a9d4489f7a842d15a6ba7ba34a9e3",
+        "title": "美国太空军首套机动电磁反卫星系统交付",
+        "chinese_title": "美国太空军首套机动电磁反卫星系统交付",
+        "original_title": "Space Force gets first mobile high-powered electromagnetic beam weapon to cripple enemy satellites — plans to deploy 32 ‘Meadowlands’ units to detect, deny, disrupt, and degrade hostile space assets",
+        "summary": "美国太空军首套 Meadowlands 反通信系统进入作战交付，计划部署 32 套机动电磁战设备，用于干扰和削弱敌方卫星通信能力。",
         "rating": "B",
-        "score": 69,
+        "score": 70,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "这类太空电磁战装备会把卫星通信、军用频谱管理和商业星座抗干扰能力推到同一条竞争线上，后续可追踪美国军方采购节奏及商业卫星厂商的防护方案。",
+        "entities": [
+          "Meadowlands",
+          "反通信系统",
+          "电磁战",
+          "美国太空军"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/space/space-force-gets-first-mobile-high-powered-electromagnetic-beam-weapon-to-cripple-enemy-satellites-plans-to-deploy-32-meadowlands-units-to-detect-deny-disrupt-and-degrade-hostile-space-assets"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783505265,
+        "published_at": "2026-07-08T18:07:45.361774",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/space/space-force-gets-first-mobile-high-powered-electromagnetic-beam-weapon-to-cripple-enemy-satellites-plans-to-deploy-32-meadowlands-units-to-detect-deny-disrupt-and-degrade-hostile-space-assets",
+        "event_id": null
+      },
+      {
+        "id": "4b0f3c10e9b047ea0a916231e4875f2a",
+        "title": "前DeepMind高管警告AI军备竞赛正走向失控",
+        "chinese_title": "前DeepMind高管警告AI军备竞赛正走向失控",
+        "original_title": "This Former DeepMind Exec Thinks the AI Arms Race Could End in Disaster",
+        "summary": "前 DeepMind 政策负责人 Verity Harding 接受 WIRED 采访时称，美国政府对 AI 的民族主义叙事正在放大灾难性竞赛风险。",
+        "rating": "B",
+        "score": 72,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "该观点可延伸到美国 AI 政策、安全评估和国际治理框架的紧张关系，适合作为 AI 国家竞争叙事的背景材料。",
+        "entities": [
+          "Ai治理",
+          "DeepMind",
+          "Verity Harding",
+          "Wired"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/verity-harding-ai-arms-race-dangers-anthology/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783505265,
+        "published_at": "2026-07-08T18:07:45.361803",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/verity-harding-ai-arms-race-dangers-anthology/",
+        "event_id": null
+      },
+      {
+        "id": "996655ea4051f5d5bbbe0e110544df0e",
+        "title": "中国CNVD称Claude Code存在后门风险",
+        "chinese_title": "中国CNVD称Claude Code存在后门风险",
+        "original_title": "China's CNVD says it found \"security backdoor vulnerabilities\" in Claude Code that \"send sensitive information\" like \"location and identity to remote servers\" (Raffaele Huang/Wall Street Journal)",
+        "summary": "Techmeme 援引华尔街日报报道称，中国 CNVD 指 Claude Code 存在会向远程服务器发送位置和身份等敏感信息的安全后门漏洞，并建议用户卸载或升级。",
+        "rating": "A",
+        "score": 84,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "事件可能影响海外 AI 编程工具在中国市场的合规与信任，也会引发围绕遥测、供应链安全和开发者工具跨境使用的后续讨论。",
+        "entities": [
+          "Anthropic",
+          "Claude Code",
+          "Cnvd",
+          "开发者工具安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260708/p12#a260708p12"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783505265,
+        "published_at": "2026-07-08T18:07:45.361825",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260708/p12#a260708p12",
+        "event_id": null
+      },
+      {
+        "id": "52ec93a8c07cd5577b7bc6e32b8a51e9",
+        "title": "中国科大用分子轨道节点调控室温磷光",
+        "chinese_title": "中国科大用分子轨道节点调控室温磷光",
+        "original_title": "中国科大揭示分子轨道节点对芳香分子反应性与室温磷光的调控作用-中国科大新闻网",
+        "summary": "中国科大等团队以芘分子为模型，证明分子轨道节点可同时影响芳香分子反应性和室温磷光，为新型有机光电材料设计提供依据。",
+        "rating": "A",
+        "score": 75,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该研究可延展到有机发光材料、磷光传感和可控合成方法，重点看是否能从机理验证走向材料性能和器件应用。",
+        "entities": [
+          "National Science Review",
+          "中国科大",
+          "分子轨道节点",
+          "室温磷光"
+        ],
+        "sourceLinks": [
+          {
+            "name": "科研进展-中国科大新闻网",
+            "url": "http://news.ustc.edu.cn/info/1048/95661.htm"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783505265,
+        "published_at": "2026-07-08T18:07:45.361839",
+        "source": "科研进展-中国科大新闻网",
+        "url": "http://news.ustc.edu.cn/info/1048/95661.htm",
+        "event_id": null
+      },
+      {
+        "id": "979ad4ef003c2c49d14cba10e45c900f",
+        "title": "研究者提出用可信LoRA限制模型中毒更新",
+        "chinese_title": "研究者提出用可信LoRA限制模型中毒更新",
+        "original_title": "What if a model could only learn what trusted LoRA adapters can express? [R]",
+        "summary": "一名研究者在 Reddit 介绍论文设想：把微调限制在可信 LoRA 适配器表达的子空间内，让部分恶意更新方向在几何上不可达。",
+        "rating": "B",
+        "score": 68,
         "type": "research",
         "typeName": "研究成果",
         "expansion": "可继续观察其是否能成为企业收集用户数据微调时的防护思路，并与现有数据清洗、梯度审计和模型隔离方案比较。",
         "entities": [
           "Lora",
           "可信适配器",
-          "微调中毒",
-          "模型安全"
+          "微调投毒",
+          "模型后门"
         ],
         "sourceLinks": [
           {
@@ -29,14 +149,17 @@
         "published_at": "2026-07-08T17:05:23.648012",
         "source": "Machine Learning",
         "url": "https://www.reddit.com/r/MachineLearning/comments/1uq68li/what_if_a_model_could_only_learn_what_trusted/",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Hello I published a paper. Most defenses against fine-tuning poisoning try to detect malicious data or reduce its impact. I explored a different question: What if the model simply could not learn certain malicious updates? The idea is to constrain fine-tuning to a subspace learned from trusted LoRA adapters. Useful adaptation remains possible, but some malicious directions become geometrically unreachable. A concrete example: a company fine-tunes a model on large datasets coming from users, external sources, or generated data. A small amount of poisoned data could introduce a hidden behavior triggered by a specific phrase or pattern. Another example is a local or on-device assistant that keeps adapting to its user. Instead of allowing it to learn any possible behavior from new data, its adaptation could be restricted to variations of behaviors already represented by a trusted pool of adapters. The goal here is not to detect every possible poison or backdoor, but to restrict the space of updates the model is allowed to learn. I tested the approach on 196 public LoRA adapters, including adaptive attacks specifically designed to bypass the defense. The results are strong: attack success drops sharply while useful adaptation is largely preserved on tasks covered by the adapter pool. The paper, code, and experiments are public. Paper: https://arxiv.org/abs/2607.05300 Code: https://github.com/infinition/z-manifold I would be very interested to see people try to break it. submitted by /u/Bright_Warning_8406 [link] [comments]",
+        "grade": "B",
+        "extension": "方向对应微调投毒和后门防御，可继续关注论文实验证据、适用模型规模，以及对企业用户数据微调场景的实际约束成本。"
       },
       {
         "id": "cf4085bac814cd89af49c9056ad0f660",
         "title": "苹果挑战欧盟DMA守门人身份失败",
         "chinese_title": "苹果挑战欧盟DMA守门人身份失败",
         "original_title": "The EU General Court dismisses Apple's legal challenges against its designation as a DMA \"gatekeeper\" for its App Store and iOS; Apple filed the case in 2024 (Foo Yun Chee/Reuters)",
-        "summary": "欧盟普通法院驳回苹果对App Store和iOS被列为DMA守门人的挑战，意味着苹果在欧洲平台开放和合规压力继续加大。",
+        "summary": "欧盟普通法院驳回苹果对 App Store 和 iOS 被指定为 DMA 守门人的法律挑战，意味着苹果仍需遵守相关平台开放义务。",
         "rating": "A",
         "score": 82,
         "type": "safety",
@@ -47,7 +170,7 @@
           "Apple",
           "Dma",
           "Ios",
-          "欧盟"
+          "欧盟普通法院"
         ],
         "sourceLinks": [
           {
@@ -60,24 +183,26 @@
         "published_at": "2026-07-08T17:05:23.648057",
         "source": "Techmeme (apple)",
         "url": "https://www.techmeme.com/260708/p11#a260708p11",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Foo Yun Chee / Reuters : The EU General Court dismisses Apple's legal challenges against its designation as a DMA “gatekeeper” for its App Store and iOS; Apple filed the case in 2024 — Apple (AAPL.O) lost its challenge on Wednesday against landmark EU rules that designate its app stores and operating system iOS …",
+        "grade": "A",
+        "extension": "判决会继续强化欧盟对大型平台的监管压力，后续重点在苹果应用分发、第三方商店和开发者收费政策的执行变化。"
       },
       {
         "id": "d6bb3ac463161ee2cc7df490f5c0e2bc",
-        "title": "三星7月22日将发布更宽折叠屏",
-        "chinese_title": "三星7月22日将发布更宽折叠屏",
+        "title": "三星7月22日或发布更宽形态折叠屏",
+        "chinese_title": "三星7月22日或发布更宽形态折叠屏",
         "original_title": "Samsung will launch its new wide foldable on July 22nd",
-        "summary": "三星宣布7月22日举行Galaxy Unpacked发布会，外界预计其将推出更短更宽的新形态折叠屏，并可能同步更新手表产品线。",
+        "summary": "三星宣布 7 月 22 日举行 Galaxy Unpacked 活动，预告新形态折叠屏，外界预计其将推出更短更宽的折叠手机产品线。",
         "rating": "A",
-        "score": 80,
+        "score": 79,
         "type": "product",
         "typeName": "产品发布",
         "expansion": "该新品可能改变折叠屏尺寸竞争维度，并与华为Pura X、苹果传闻中的折叠iPhone形成新一轮形态对标。",
         "entities": [
-          "Apple",
           "Galaxy Unpacked",
           "三星",
-          "华为",
+          "华为 Pura X",
           "折叠屏手机"
         ],
         "sourceLinks": [
@@ -91,24 +216,27 @@
         "published_at": "2026-07-08T17:05:23.648072",
         "source": "The Verge -  Tech Posts",
         "url": "https://www.theverge.com/tech/962658/samsung-galaxy-unpacked-wide-foldable-watch-july",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Samsung has announced that its next Galaxy Unpacked launch event will be held on July 22nd, with the tagline: \"A new shape unfolds.\" It's long been rumored that Samsung is about to expand its foldable phone line to a third format , with a shorter and wider version of its big book-style foldables, to match Huawei's Pura X Max and Apple's expected foldable iPhone . Today's announcement adds to that impression, showing a tall ticket with the stub torn off, leaving it shorter than before. Alongside the wider foldable, Samsung is expected to announce updated versions of its existing Flip and Fold phones, with the latter potentially rebranded to t … Read the full story at The Verge.",
+        "grade": "A",
+        "extension": "新品会直接对标华为 Pura X 系列和苹果传闻中的折叠 iPhone，折叠屏形态竞争可能从轻薄转向横向宽屏体验。"
       },
       {
         "id": "cf6abf785cdc1e69780c8f29f52ef633",
-        "title": "SambaNova融资10亿美元估值110亿",
-        "chinese_title": "SambaNova融资10亿美元估值110亿",
+        "title": "SambaNova获10亿美元融资估值达110亿美元",
+        "chinese_title": "SambaNova获10亿美元融资估值达110亿美元",
         "original_title": "Chip startup SambaNova raised a $1B Series F led by General Atlantic at an $11B valuation and signs JPMorgan as a customer to deploy its chips for in-house AI (Bloomberg)",
-        "summary": "AI芯片创业公司SambaNova完成由General Atlantic领投的10亿美元F轮融资，估值达110亿美元，并签下摩根大通作为客户。",
+        "summary": "AI 芯片创业公司 SambaNova 完成 General Atlantic 领投的 10 亿美元 F 轮融资，估值达 110 亿美元，并签下 JPMorgan 作为芯片客户。",
         "rating": "A+",
-        "score": 89,
+        "score": 88,
         "type": "funding",
         "typeName": "融资上市",
         "expansion": "这一交易可延伸到AI芯片融资回暖、企业自建AI算力需求，以及英伟达之外替代芯片供应商的商业化进展。",
         "entities": [
           "Ai芯片",
           "General Atlantic",
-          "Sambanova",
-          "摩根大通"
+          "Jpmorgan",
+          "Sambanova"
         ],
         "sourceLinks": [
           {
@@ -121,24 +249,27 @@
         "published_at": "2026-07-08T17:05:23.648085",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260708/p10#a260708p10",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Bloomberg : Chip startup SambaNova raised a $1B Series F led by General Atlantic at an $11B valuation and signs JPMorgan as a customer to deploy its chips for in-house AI — Chip startup SambaNova Systems Inc. has raised $1 billion at an $11 billion valuation, underscoring investors' conviction …",
+        "grade": "A+",
+        "extension": "这笔融资显示私有 AI 芯片和企业自建算力需求仍有资本支撑，后续可追踪其与英伟达生态、云厂商定制芯片的竞争关系。"
       },
       {
         "id": "d55a327b0573fc9d90b434e4d5fa6a0a",
-        "title": "摩根士丹利拆分估算SpaceX太空业务",
-        "chinese_title": "摩根士丹利拆分估算SpaceX太空业务",
+        "title": "摩根士丹利称SpaceX太空业务每股值8美元",
+        "chinese_title": "摩根士丹利称SpaceX太空业务每股值8美元",
         "original_title": "The space bit of SpaceX is worth $8 a share, says Morgan Stanley",
-        "summary": "金融时报报道摩根士丹利对SpaceX业务价值进行拆分估算，其中太空业务被折算为每股8美元，引发市场对估值结构的讨论。",
+        "summary": "Hacker News 讨论英国金融时报关于摩根士丹利估值观点的文章，称 SpaceX 太空业务折合每股价值 8 美元，但抓取内容缺少正文细节。",
         "rating": "A",
-        "score": 76,
+        "score": 69,
         "type": "financial",
         "typeName": "商业数据",
         "expansion": "可延伸到SpaceX不同业务线估值、星链与发射服务占比，以及未上市科技巨头估值在二级市场的传导。",
         "entities": [
           "SpaceX",
-          "太空业务估值",
+          "估值",
           "摩根士丹利",
-          "星链"
+          "英国金融时报"
         ],
         "sourceLinks": [
           {
@@ -151,7 +282,43 @@
         "published_at": "2026-07-08T17:05:23.648129",
         "source": "Hacker News",
         "url": "https://www.ft.com/content/09a62ed4-16af-433c-adb7-c877d1975388",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Comments",
+        "grade": "B",
+        "extension": "若能获取完整报告，可延伸到 SpaceX 分部估值、星链收入和私营航天资产定价；当前信息不足，需要谨慎处理。"
+      },
+      {
+        "id": "1854fbd397e807d7ea5f0b79033bf824",
+        "title": "博士论文系统梳理可微射线追踪用于无线建模",
+        "chinese_title": "博士论文系统梳理可微射线追踪用于无线建模",
+        "original_title": "Ph.D. thesis on Differentiable Ray Tracing for Radio Propagation Modeling [R]",
+        "summary": "一名研究者分享关于无线传播建模的可微射线追踪博士论文，强调把自动微分引入物理仿真以求解反问题和训练模型。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可关注该方向对6G网络仿真、数字孪生和通信系统优化的影响，以及可微物理建模在工程场景中的落地空间。",
+        "entities": [
+          "Jax",
+          "可微射线追踪",
+          "无线传播建模",
+          "自动微分"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783501523,
+        "published_at": "2026-07-08T17:05:23.648042",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/",
+        "event_id": null,
+        "original_content": "Hi everyone, I recently finished my Ph.D. thesis on Differentiable Ray Tracing for Radio Propagation Modeling . Instead of just compiling my published papers, I tried to write it as an accessible, self-contained textbook for anyone interested in the intersection of radio propagation simulation, autodiff, and ML. Permanent handle : https://hdl.handle.net/2078.5/278727 Repo with TeX source files While my research focuses on wireless communications rather than pure ML, I think it fits right in here. A major part of the project revolves around automatic differentiation. By taking frameworks like JAX out of their traditional ML context and integrating differentiability into a ray tracing pipeline, we can compute exact gradients through complex physical environments. This allows us to solve inverse problems and directly train machine learning models, which is currently a hot topic in next-gen wireless design. To make the physics and the math easy to digest, the manuscript is split into three parts: Understanding: The physics fundamentals (electromagnetic theory, geometrical optics, and diffraction). Building: The algorithmic core, including GPU-accelerated path tracing and the discontinuity smoothing techniques you need to actually make differentiable simulations stable. Using: Practical applications like channel modeling, localization, material calibration, and ML-assisted generative path sampling. A major focus of my thesis is the link between scientific research and reproducible open-source software. On that note, I want to give a massive shoutout to Patrick Kidger ( u/patrickkidger ). His own thesis inspired me to go the \"textbook way\" for my manuscript, and I heavily relied on his fantastic JAX packages ( jaxtyping , equinox , and optimistix ) when developing my open-source libraries, such as DiffeRT . I hope you find it an interesting read! I'd be happy to answer any questions in the comments about differentiable simulation, ray tracing, or building ray tracing engines in JAX :-) If you are curious, you can watch the presentation slides and video teaser here submitted by /u/jeertmans [link] [comments]",
+        "grade": "B",
+        "extension": "可微物理仿真正在从视觉和机器人扩展到无线通信，后续可观察其对 6G 场景建模、网络优化和数字孪生工具链的影响。"
       },
       {
         "id": "19a723e31a05cd065b97c47c456f166f",
@@ -1150,36 +1317,6 @@
       }
     ],
     "2026-07-07": [
-      {
-        "id": "1854fbd397e807d7ea5f0b79033bf824",
-        "title": "可微射线追踪被用于无线传播建模",
-        "chinese_title": "可微射线追踪被用于无线传播建模",
-        "original_title": "Ph.D. thesis on Differentiable Ray Tracing for Radio Propagation Modeling [R]",
-        "summary": "一篇博士论文将可微射线追踪、自动微分和机器学习结合，用于无线电传播建模，并以较完整的教材式形式开放给研究者。",
-        "rating": "B",
-        "score": 66,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可关注该方向对6G网络仿真、数字孪生和通信系统优化的影响，以及可微物理建模在工程场景中的落地空间。",
-        "entities": [
-          "可微射线追踪",
-          "无线传播建模",
-          "机器学习",
-          "自动微分"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783501523,
-        "published_at": "2026-07-08T17:05:23.648042",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/",
-        "event_id": null
-      },
       {
         "id": "e4d8ce104206c4bb076185d42033198a",
         "title": "阿里Qwen火遍全球，商业化仍卡在开源难题",
@@ -4082,6 +4219,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-08T17:08:24.354140",
-  "total_news": 122
+  "last_updated": "2026-07-08T18:08:36.546402",
+  "total_news": 126
 }
