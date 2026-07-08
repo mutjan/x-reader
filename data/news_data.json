@@ -2,6 +2,189 @@
   "news": {
     "2026-07-08": [
       {
+        "id": "979ad4ef003c2c49d14cba10e45c900f",
+        "title": "用可信LoRA限制模型微调中毒",
+        "chinese_title": "用可信LoRA限制模型微调中毒",
+        "original_title": "What if a model could only learn what trusted LoRA adapters can express? [R]",
+        "summary": "一篇新论文提出把微调限制在可信LoRA适配器学习到的子空间内，让模型保留有用适配能力，同时降低恶意更新被学入的可能。",
+        "rating": "B",
+        "score": 69,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可继续观察其是否能成为企业收集用户数据微调时的防护思路，并与现有数据清洗、梯度审计和模型隔离方案比较。",
+        "entities": [
+          "Lora",
+          "可信适配器",
+          "微调中毒",
+          "模型安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1uq68li/what_if_a_model_could_only_learn_what_trusted/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783501523,
+        "published_at": "2026-07-08T17:05:23.648012",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1uq68li/what_if_a_model_could_only_learn_what_trusted/",
+        "event_id": null
+      },
+      {
+        "id": "cf4085bac814cd89af49c9056ad0f660",
+        "title": "苹果挑战欧盟DMA守门人身份失败",
+        "chinese_title": "苹果挑战欧盟DMA守门人身份失败",
+        "original_title": "The EU General Court dismisses Apple's legal challenges against its designation as a DMA \"gatekeeper\" for its App Store and iOS; Apple filed the case in 2024 (Foo Yun Chee/Reuters)",
+        "summary": "欧盟普通法院驳回苹果对App Store和iOS被列为DMA守门人的挑战，意味着苹果在欧洲平台开放和合规压力继续加大。",
+        "rating": "A",
+        "score": 82,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "后续可追踪苹果在欧盟侧载、支付渠道和应用商店规则调整，也会影响谷歌、Meta等大型平台的监管博弈。",
+        "entities": [
+          "App Store",
+          "Apple",
+          "Dma",
+          "Ios",
+          "欧盟"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "https://www.techmeme.com/260708/p11#a260708p11"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783501523,
+        "published_at": "2026-07-08T17:05:23.648057",
+        "source": "Techmeme (apple)",
+        "url": "https://www.techmeme.com/260708/p11#a260708p11",
+        "event_id": null
+      },
+      {
+        "id": "d6bb3ac463161ee2cc7df490f5c0e2bc",
+        "title": "三星7月22日将发布更宽折叠屏",
+        "chinese_title": "三星7月22日将发布更宽折叠屏",
+        "original_title": "Samsung will launch its new wide foldable on July 22nd",
+        "summary": "三星宣布7月22日举行Galaxy Unpacked发布会，外界预计其将推出更短更宽的新形态折叠屏，并可能同步更新手表产品线。",
+        "rating": "A",
+        "score": 80,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "该新品可能改变折叠屏尺寸竞争维度，并与华为Pura X、苹果传闻中的折叠iPhone形成新一轮形态对标。",
+        "entities": [
+          "Apple",
+          "Galaxy Unpacked",
+          "三星",
+          "华为",
+          "折叠屏手机"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/962658/samsung-galaxy-unpacked-wide-foldable-watch-july"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783501523,
+        "published_at": "2026-07-08T17:05:23.648072",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/962658/samsung-galaxy-unpacked-wide-foldable-watch-july",
+        "event_id": null
+      },
+      {
+        "id": "cf6abf785cdc1e69780c8f29f52ef633",
+        "title": "SambaNova融资10亿美元估值110亿",
+        "chinese_title": "SambaNova融资10亿美元估值110亿",
+        "original_title": "Chip startup SambaNova raised a $1B Series F led by General Atlantic at an $11B valuation and signs JPMorgan as a customer to deploy its chips for in-house AI (Bloomberg)",
+        "summary": "AI芯片创业公司SambaNova完成由General Atlantic领投的10亿美元F轮融资，估值达110亿美元，并签下摩根大通作为客户。",
+        "rating": "A+",
+        "score": 89,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "这一交易可延伸到AI芯片融资回暖、企业自建AI算力需求，以及英伟达之外替代芯片供应商的商业化进展。",
+        "entities": [
+          "Ai芯片",
+          "General Atlantic",
+          "Sambanova",
+          "摩根大通"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260708/p10#a260708p10"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783501523,
+        "published_at": "2026-07-08T17:05:23.648085",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260708/p10#a260708p10",
+        "event_id": null
+      },
+      {
+        "id": "d55a327b0573fc9d90b434e4d5fa6a0a",
+        "title": "摩根士丹利拆分估算SpaceX太空业务",
+        "chinese_title": "摩根士丹利拆分估算SpaceX太空业务",
+        "original_title": "The space bit of SpaceX is worth $8 a share, says Morgan Stanley",
+        "summary": "金融时报报道摩根士丹利对SpaceX业务价值进行拆分估算，其中太空业务被折算为每股8美元，引发市场对估值结构的讨论。",
+        "rating": "A",
+        "score": 76,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延伸到SpaceX不同业务线估值、星链与发射服务占比，以及未上市科技巨头估值在二级市场的传导。",
+        "entities": [
+          "SpaceX",
+          "太空业务估值",
+          "摩根士丹利",
+          "星链"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.ft.com/content/09a62ed4-16af-433c-adb7-c877d1975388"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783501523,
+        "published_at": "2026-07-08T17:05:23.648129",
+        "source": "Hacker News",
+        "url": "https://www.ft.com/content/09a62ed4-16af-433c-adb7-c877d1975388",
+        "event_id": null
+      },
+      {
+        "id": "1a8f10891f7ab8452ce02e2ad6dd6620",
+        "title": "OpenAI据称周四发布GPT-5.6",
+        "chinese_title": "OpenAI据称周四发布GPT-5.6",
+        "original_title": "OpenAI's GPT-5.6 launches Thursday after a delay forced by the U.S. government",
+        "summary": "The Decoder称OpenAI将在美国政府解除发布禁令后推出GPT-5.6，并宣称其Sol模型在代码基准上以更低成本超过Claude Mythos 5。",
+        "rating": "B",
+        "score": 67,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "若属实，这将牵动前沿模型发布监管、模型命名节奏和代码能力价格战；但相关说法需警惕来源可靠性和事实核验。",
+        "entities": [
+          "Claude",
+          "GPT",
+          "OpenAI",
+          "代码模型",
+          "美国政府"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/openais-gpt-5-6-launches-thursday-after-a-delay-forced-by-the-u-s-government/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783501523,
+        "published_at": "2026-07-08T17:05:23.648144",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/openais-gpt-5-6-launches-thursday-after-a-delay-forced-by-the-u-s-government/",
+        "event_id": null
+      },
+      {
         "id": "19a723e31a05cd065b97c47c456f166f",
         "title": "SambaNova再融10亿美元，估值升至110亿美元",
         "chinese_title": "SambaNova再融10亿美元，估值升至110亿美元",
@@ -35,20 +218,20 @@
       },
       {
         "id": "a6c3b8211ba7ee70aeb90fa8c73930e8",
-        "title": "9款热门AI工具被曝可协助组建大规模僵尸网络",
-        "chinese_title": "9款热门AI工具被曝可协助组建大规模僵尸网络",
+        "title": "主流AI工具被曝可被诱导组建僵尸网络",
+        "chinese_title": "主流AI工具被曝可被诱导组建僵尸网络",
         "original_title": "Hackers can use 9 of the most popular AI tools to assemble massive botnets",
-        "summary": "研究显示，攻击者可利用主流AI工具中的提示注入与代理能力，自动化组装大规模僵尸网络，暴露出当前大模型工具链在信任边界上的系统性缺陷。",
+        "summary": "Ars Technica报道提示词注入可让九款热门AI工具被用于组装大规模僵尸网络，暴露大模型难以区分可信与不可信指令的安全边界。",
         "rating": "A+",
-        "score": 87,
+        "score": 91,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "该事件可继续追踪AI代理接入邮件、代码和浏览器后的安全边界问题，以及平台方是否会引入更强的权限隔离、外部内容沙箱和工具调用审计机制。",
         "entities": [
-          "Ai工具",
+          "Ai安全",
           "僵尸网络",
-          "大语言模型",
-          "提示注入"
+          "大模型工具",
+          "提示词注入"
         ],
         "sourceLinks": [
           {
@@ -63,7 +246,9 @@
         "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/",
         "event_id": null,
         "grade": "A+",
-        "level": "A+"
+        "level": "A+",
+        "original_content": "In the brief history of AI security, the prompt injection has quickly become the top threat. Large language models are inherently unable to distinguish between legitimate instructions provided by users and malicious ones sneaked into emails, source code, and other third-party content the models are processing. This makes it trivial to surreptitiously inject malicious commands that the LLM readily follows. With no way to enforce this crucial boundary between trusted and untrusted sources, AI engine developers are left to erect elaborate guardrails designed to mitigate the damage rather than solve the root cause. To date, most prompt injections have fallen into a class known as push, in which each potential victim is targeted. For example, the adversary injects malicious instructions into an individual email or calendar invitation. Because the injection must then be sent (or pushed) to each specific target, the scale of the attack is limited, hampering mass exploits that hit the Internet at large. Read full article Comments",
+        "extension": "该事件可追踪AI工具供应商的沙箱隔离、权限控制和默认防护升级，也可能推动企业重新评估代理式AI的部署风险。"
       },
       {
         "id": "824d3ed20832ce7592e0bbf19b8db6fe",
@@ -996,6 +1181,36 @@
       }
     ],
     "2026-07-07": [
+      {
+        "id": "1854fbd397e807d7ea5f0b79033bf824",
+        "title": "可微射线追踪被用于无线传播建模",
+        "chinese_title": "可微射线追踪被用于无线传播建模",
+        "original_title": "Ph.D. thesis on Differentiable Ray Tracing for Radio Propagation Modeling [R]",
+        "summary": "一篇博士论文将可微射线追踪、自动微分和机器学习结合，用于无线电传播建模，并以较完整的教材式形式开放给研究者。",
+        "rating": "B",
+        "score": 66,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可关注该方向对6G网络仿真、数字孪生和通信系统优化的影响，以及可微物理建模在工程场景中的落地空间。",
+        "entities": [
+          "可微射线追踪",
+          "无线传播建模",
+          "机器学习",
+          "自动微分"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783501523,
+        "published_at": "2026-07-08T17:05:23.648042",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/",
+        "event_id": null
+      },
       {
         "id": "e4d8ce104206c4bb076185d42033198a",
         "title": "阿里Qwen火遍全球，商业化仍卡在开源难题",
@@ -3898,6 +4113,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-08T16:04:06.357306",
-  "total_news": 116
+  "last_updated": "2026-07-08T17:06:34.576674",
+  "total_news": 123
 }
