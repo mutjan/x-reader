@@ -2,13 +2,73 @@
   "news": {
     "2026-07-08": [
       {
-        "id": "824d3ed20832ce7592e0bbf19b8db6fe",
-        "title": "GitHub AI代理被诱导泄露私有仓库",
-        "chinese_title": "GitHub AI代理被诱导泄露私有仓库",
-        "original_title": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
-        "summary": "安全公司披露GitLost攻击案例，展示如何通过构造任务诱导GitHub AI代理访问并泄露私有仓库内容，凸显代码代理在权限隔离和上下文安全上的新风险。",
+        "id": "19a723e31a05cd065b97c47c456f166f",
+        "title": "SambaNova再融10亿美元，估值升至110亿美元",
+        "chinese_title": "SambaNova再融10亿美元，估值升至110亿美元",
+        "original_title": "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round",
+        "summary": "AI芯片公司SambaNova完成新一轮10亿美元融资，估值达到110亿美元，距离上轮大额融资仅数月，也让英特尔此前低价收购传闻更显反差。",
         "rating": "A+",
-        "score": 91,
+        "score": 88,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "这笔融资可延伸观察非英伟达AI芯片公司的资本耐心，以及大模型推理市场是否足以支撑独立芯片公司的高估值。后续还可追踪英特尔、AMD和云厂商在替代算力生态上的投入。",
+        "entities": [
+          "Ai芯片",
+          "Intel",
+          "Sambanova",
+          "融资"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783497819,
+        "published_at": "2026-07-08T16:03:39.534535",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+        "event_id": null
+      },
+      {
+        "id": "a6c3b8211ba7ee70aeb90fa8c73930e8",
+        "title": "9款热门AI工具被曝可协助组建大规模僵尸网络",
+        "chinese_title": "9款热门AI工具被曝可协助组建大规模僵尸网络",
+        "original_title": "Hackers can use 9 of the most popular AI tools to assemble massive botnets",
+        "summary": "研究显示，攻击者可利用主流AI工具中的提示注入与代理能力，自动化组装大规模僵尸网络，暴露出当前大模型工具链在信任边界上的系统性缺陷。",
+        "rating": "A+",
+        "score": 87,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可继续追踪AI代理接入邮件、代码和浏览器后的安全边界问题，以及平台方是否会引入更强的权限隔离、外部内容沙箱和工具调用审计机制。",
+        "entities": [
+          "Ai工具",
+          "僵尸网络",
+          "大语言模型",
+          "提示注入"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783497819,
+        "published_at": "2026-07-08T16:03:39.534565",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/",
+        "event_id": null
+      },
+      {
+        "id": "824d3ed20832ce7592e0bbf19b8db6fe",
+        "title": "GitLost攻击演示诱导GitHub AI代理泄露私有仓库",
+        "chinese_title": "GitLost攻击演示诱导GitHub AI代理泄露私有仓库",
+        "original_title": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+        "summary": "安全团队披露名为GitLost的攻击演示，称可诱导GitHub相关AI代理泄露私有仓库信息，再次凸显代码代理在权限、上下文和外部指令处理上的风险。",
+        "rating": "A+",
+        "score": 81,
         "type": "safety",
         "typeName": "安全伦理",
         "expansion": "该事件可延伸到AI编程代理的权限边界、企业代码库防护和供应链安全审计，后续也可能推动平台调整默认授权与日志追踪机制。",
@@ -16,7 +76,6 @@
           "Ai代理",
           "Github",
           "Gitlost",
-          "Noma Security",
           "私有仓库"
         ],
         "sourceLinks": [
@@ -31,17 +90,19 @@
         "source": "Hacker News",
         "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
         "event_id": null,
-        "grade": "A+",
-        "level": "A+"
+        "grade": "A",
+        "level": "A+",
+        "original_content": "Comments",
+        "extension": "后续值得观察GitHub等代码平台如何限制AI代理的仓库访问权限，以及企业在引入代码代理时是否会默认采用最小权限和隔离执行环境。"
       },
       {
         "id": "74b11d82b55ceba332a6cf0108c8a36b",
-        "title": "AI热潮把数据中心CPU重新推上牌桌",
-        "chinese_title": "AI热潮把数据中心CPU重新推上牌桌",
+        "title": "AI数据中心CPU战场升温，英特尔AMD遭多方挑战",
+        "chinese_title": "AI数据中心CPU战场升温，英特尔AMD遭多方挑战",
         "original_title": "The global AI boom has thrust CPUs back into the spotlight as Nvidia, Qualcomm, MediaTek, and others challenge Intel and AMD in the AI data center CPU market (Nikkei Asia)",
-        "summary": "AI数据中心需求正在重塑CPU市场，Nvidia、高通、联发科等玩家加速挑战英特尔和AMD，CPU重新成为算力基础设施竞争中的关键战场。",
+        "summary": "AI热潮让数据中心CPU重新成为半导体竞争焦点，英伟达、高通、联发科等厂商正挑战英特尔和AMD在AI服务器CPU市场的传统地位。",
         "rating": "A",
-        "score": 86,
+        "score": 82,
         "type": "hardware",
         "typeName": "硬件基建",
         "expansion": "这条线索可继续观察AI服务器架构从GPU主导走向CPU、DPU和定制芯片协同，相关变化会影响英特尔、AMD、Arm生态和亚洲芯片供应链。",
@@ -65,7 +126,9 @@
         "url": "https://www.techmeme.com/260708/p6#a260708p6",
         "event_id": null,
         "grade": "A",
-        "level": "A"
+        "level": "A",
+        "original_content": "Nikkei Asia : The global AI boom has thrust CPUs back into the spotlight as Nvidia, Qualcomm, MediaTek, and others challenge Intel and AMD in the AI data center CPU market — TAIPEI/PALO ALTO, California — The global AI boom is reshaping one of the semiconductor industry's most important battlegrounds: CPUs.",
+        "extension": "这一趋势可延伸到AI服务器架构从GPU单点扩张转向CPU、互连和内存协同竞争，也会影响英特尔、AMD、Arm生态及亚洲芯片供应链的市场叙事。"
       },
       {
         "id": "a015b958f683bced48fb3678d9808139",
@@ -3831,6 +3894,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-08T15:03:04.958508",
-  "total_news": 114
+  "last_updated": "2026-07-08T16:04:06.357306",
+  "total_news": 116
 }
