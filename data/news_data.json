@@ -2,20 +2,83 @@
   "news": {
     "2026-07-08": [
       {
-        "id": "a015b958f683bced48fb3678d9808139",
-        "title": "Meta测试全程记录式AI眼镜",
-        "chinese_title": "Meta测试全程记录式AI眼镜",
-        "original_title": "Sources: Meta is testing AI glasses that continuously record audio and take photos every few seconds, letting users query or recall what they saw or heard (Hannah Murphy/Financial Times)",
-        "summary": "Meta据称正在测试可持续录音并每隔数秒拍照的AI眼镜，让用户事后查询自己看见或听见的内容，也把扎克伯格的硬件野心推向新的隐私争议。",
+        "id": "824d3ed20832ce7592e0bbf19b8db6fe",
+        "title": "GitHub AI代理被诱导泄露私有仓库",
+        "chinese_title": "GitHub AI代理被诱导泄露私有仓库",
+        "original_title": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+        "summary": "安全公司披露GitLost攻击案例，展示如何通过构造任务诱导GitHub AI代理访问并泄露私有仓库内容，凸显代码代理在权限隔离和上下文安全上的新风险。",
+        "rating": "A+",
+        "score": 91,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可延伸到AI编程代理的权限边界、企业代码库防护和供应链安全审计，后续也可能推动平台调整默认授权与日志追踪机制。",
+        "entities": [
+          "Ai代理",
+          "Github",
+          "Gitlost",
+          "Noma Security",
+          "私有仓库"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783494155,
+        "published_at": "2026-07-08T15:02:35.777254",
+        "source": "Hacker News",
+        "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+        "event_id": null
+      },
+      {
+        "id": "74b11d82b55ceba332a6cf0108c8a36b",
+        "title": "AI热潮把数据中心CPU重新推上牌桌",
+        "chinese_title": "AI热潮把数据中心CPU重新推上牌桌",
+        "original_title": "The global AI boom has thrust CPUs back into the spotlight as Nvidia, Qualcomm, MediaTek, and others challenge Intel and AMD in the AI data center CPU market (Nikkei Asia)",
+        "summary": "AI数据中心需求正在重塑CPU市场，Nvidia、高通、联发科等玩家加速挑战英特尔和AMD，CPU重新成为算力基础设施竞争中的关键战场。",
         "rating": "A",
-        "score": 82,
+        "score": 86,
         "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "这条线索可继续观察AI服务器架构从GPU主导走向CPU、DPU和定制芯片协同，相关变化会影响英特尔、AMD、Arm生态和亚洲芯片供应链。",
+        "entities": [
+          "Amd",
+          "Intel",
+          "Mediatek",
+          "NVIDIA",
+          "Qualcomm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260708/p6#a260708p6"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783494155,
+        "published_at": "2026-07-08T15:02:35.777279",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260708/p6#a260708p6",
+        "event_id": null
+      },
+      {
+        "id": "a015b958f683bced48fb3678d9808139",
+        "title": "Meta测试全天候记录的AI眼镜原型",
+        "chinese_title": "Meta测试全天候记录的AI眼镜原型",
+        "original_title": "Sources: Meta is testing AI glasses that continuously record audio and take photos every few seconds, letting users query or recall what they saw or heard (Hannah Murphy/Financial Times)",
+        "summary": "据称Meta正在测试可持续录音并每隔数秒拍照的AI眼镜，让用户回溯所见所闻，但这一硬件野心也把旁人隐私和默认记录边界推向争议中心。",
+        "rating": "A",
+        "score": 87,
+        "type": "safety",
         "typeName": "硬件基建",
         "expansion": "这条线索可延伸到可穿戴AI设备的默认记录边界、旁观者同意机制和平台隐私监管，也会影响智能眼镜在办公、校园和公共空间的采用门槛。",
         "entities": [
           "Ai眼镜",
           "Mark Zuckerberg",
           "Meta",
+          "Ray-Ban Meta",
           "隐私"
         ],
         "sourceLinks": [
@@ -29,7 +92,10 @@
         "published_at": "2026-07-08T14:02:46.163488",
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260708/p2#a260708p2",
-        "event_id": null
+        "event_id": null,
+        "original_content": "Hannah Murphy / Financial Times : Sources: Meta is testing AI glasses that continuously record audio and take photos every few seconds, letting users query or recall what they saw or heard — Mark Zuckerberg's hardware ambitions are edging into a new privacy fight over who gets recorded. Meta is testing a prototype of …",
+        "grade": "A+",
+        "extension": "该产品方向可延伸到可穿戴AI的隐私规范、公共空间告知机制和平台数据留存政策，也会影响Ray-Ban Meta等消费级AI眼镜的市场接受度。"
       },
       {
         "id": "51d5ce6d153294e1f127d09e4c2002f2",
@@ -3760,6 +3826,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-08T14:03:06.536483",
-  "total_news": 112
+  "last_updated": "2026-07-08T15:03:04.958508",
+  "total_news": 114
 }
