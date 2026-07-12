@@ -3817,518 +3817,6 @@
         "level": "A+",
         "original_content": "Tech IPOs are definitely getting more interesting. On the heels of last week’s debuts by Bending Spoons and Lime, this week we’ve got South Korean memory chip giant SK Hynix, which is expected to list on the Nasdaq on Friday, adding to its existing South Korean stock exchange listing. Hynix will raise money as part of the Nasdaq listing, making investor reception to the offering another indicator of the IPO market’s strength. For U.S. investors, Hynix’s U.S. listing will make the stock easier to buy. That’s a big deal. As things stand now, only one of the three primary makers of memory chips—Micron Technology—is U.S. based (the third is another South Korean company, Samsung). To be sure, investors might have preferred Hynix to have listed here a couple of years ago, before the memory chip explosion happened. Hynix’s revenue, for instance, soared 200% between 2023 and 2025, and then rose another 200% in the first quarter of this year. It’s little wonder that Hynix shares are up nearly 800% in the past 12 months.",
         "extension": "该事件可延伸到 HBM 供应链、三星和美光竞争、美股 AI 硬件资产定价，以及韩国芯片公司国际资本市场策略变化。"
-      },
-      {
-        "id": "8f57ea830c8a740acf0387e0d166e6b1",
-        "title": "让AI代理自动录制工作演示视频",
-        "chinese_title": "让AI代理自动录制工作演示视频",
-        "original_title": "Have your agent record video demos of its work with shot-scraper video",
-        "summary": "Simon Willison 介绍用 shot-scraper video 让 AI Agent 自动录制工作演示，并提到 sqlite-utils 新版本主要由 Claude Fable 辅助完成。",
-        "rating": "A",
-        "score": 79,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "这类工具可扩展到AI编码代理的验收、审计和演示流程，也可能推动开发者把代理行为记录作为软件交付的一部分。",
-        "entities": [
-          "Ai Agent",
-          "Claude",
-          "Shot-Scraper",
-          "Simon Willison",
-          "Sqlite-Utils"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Simon Willison’s Newsletter (qwen)",
-            "url": "https://simonw.substack.com/p/have-your-agent-record-video-demos"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783289013,
-        "published_at": "2026-07-06T06:03:33.250414",
-        "source": "Simon Willison’s Newsletter (qwen)",
-        "url": "https://simonw.substack.com/p/have-your-agent-record-video-demos",
-        "event_id": null,
-        "original_url": "https://simonw.substack.com/p/have-your-agent-record-video-demos",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "a25f3dc9f8e274c99daba9bfe6f2c01c",
-        "title": "豆包和通义将下线拟人化AI智能体",
-        "chinese_title": "豆包和通义将下线拟人化AI智能体",
-        "original_title": "ByteDance's Doubao and Alibaba's Qwen will disable humanlike and user-created agents before July 15, as China's anthropomorphic AI interaction rules take effect (Wency Chen/South China Morning Post)",
-        "summary": "中国拟人化AI互动规则即将生效，字节豆包和阿里通义千问将在7月15日前禁用拟人化及用户创建智能体功能。",
-        "rating": "A+",
-        "score": 80,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可继续观察国内AI应用的合规改造节奏，以及角色扮演、陪伴式智能体和开放创建平台的产品收缩。监管边界明确后，头部平台的调整也可能影响中小AI应用和开发者生态。",
-        "entities": [
-          "Alibaba",
-          "ByteDance",
-          "拟人化Ai",
-          "豆包",
-          "通义千问"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (qwen)",
-            "url": "https://www.techmeme.com/260705/p9#a260705p9"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783285663,
-        "published_at": "2026-07-06T05:07:43.191416",
-        "source": "Techmeme (qwen)",
-        "url": "https://www.techmeme.com/260705/p9#a260705p9",
-        "event_id": null,
-        "original_url": "https://www.techmeme.com/260705/p9#a260705p9",
-        "grade": "A+",
-        "level": "A+",
-        "original_content": "Wency Chen / South China Morning Post : ByteDance's Doubao and Alibaba's Qwen will disable humanlike and user-created agents before July 15, as China's anthropomorphic AI interaction rules take effect — Two of China's major consumer-facing artificial intelligence apps, ByteDance's Doubao and Alibaba Group Holding's Qwen …",
-        "extension": "该事件可延展到中国AI应用合规、角色扮演类Agent产品收缩，以及平台如何在用户粘性和监管要求之间重新设计交互形态。"
-      }
-    ],
-    "2026-07-04": [
-      {
-        "id": "3e74530039964ee3af686000fe1795a8",
-        "title": "只看logits也能还原微调数据原文",
-        "chinese_title": "只看logits也能还原微调数据原文",
-        "original_title": "Contrastive Decoding Diffing (CDD): recovering verbatim finetuning data from logits alone, no weight access needed[R]",
-        "summary": "研究者提出Contrastive Decoding Diffing，用基础模型和微调模型的logits差异恢复窄域微调数据，声称无需权重访问也能高概率还原原文内容。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "如果方法稳健，将把微调数据泄露风险从白盒场景推进到灰盒API场景，影响企业私有微调、模型托管平台和AI安全评估标准。",
-        "entities": [
-          "Contrastive Decoding Diffing",
-          "Finetuning",
-          "LLM",
-          "Logits"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783145354,
-        "published_at": "2026-07-04T14:09:14.114455",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/",
-        "event_id": null,
-        "original_url": "https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "d12988e6f4a85cadaf9826cb9c8d02b8",
-        "title": "机器人空间智能公司dConstruct融到1.25亿美元",
-        "chinese_title": "机器人空间智能公司dConstruct融到1.25亿美元",
-        "original_title": "Singapore-based dConstruct Robotics, which develops spatial tech to let autonomous robots operate in complex, GPS-denied environments, raised a $125M Series A (Duc Dao/TNGlobal)",
-        "summary": "新加坡dConstruct Robotics完成1.25亿美元A轮融资，主攻让自主机器人在复杂、无GPS环境中运行的空间技术，是机器人基础能力融资升温的最新案例。",
-        "rating": "A",
-        "score": 80,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "这笔融资可延伸到仓储、安防、工业巡检等机器人落地场景，也反映空间智能和具身智能基础设施正在成为资本重点下注方向。",
-        "entities": [
-          "Autonomous Robots",
-          "Dconstruct Robotics",
-          "Gps-Denied Environments",
-          "Spatial Technology"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260704/p3#a260704p3"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783145354,
-        "published_at": "2026-07-04T14:09:14.114475",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260704/p3#a260704p3",
-        "event_id": null,
-        "original_url": "https://www.techmeme.com/260704/p3#a260704p3",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "fca74584aff33bceb6ea4b20857367b1",
-        "title": "前DeepMind三人组把博弈AI做进量化基金",
-        "chinese_title": "前DeepMind三人组把博弈AI做进量化基金",
-        "original_title": "Prague-based EquiLibre, which offers AI for quant hedge funds and is founded by three ex-Google DeepMind researchers, raised a Series A at a $500M valuation (Anna Heim/TechCrunch)",
-        "summary": "布拉格EquiLibre由三名前Google DeepMind研究者创立，将曾击败人类扑克玩家的AI技术用于股票交易，并在A轮融资中获得5亿美元估值。",
-        "rating": "A+",
-        "score": 86,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "该事件可观察强化学习、博弈智能从游戏走向金融交易的商业化路径，也会引发量化基金对AI原生策略团队的估值重估。",
-        "entities": [
-          "Ai",
-          "DeepMind",
-          "Equilibre",
-          "Quant Hedge Funds"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260704/p2#a260704p2"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783145354,
-        "published_at": "2026-07-04T14:09:14.114489",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260704/p2#a260704p2",
-        "event_id": null,
-        "original_url": "https://www.techmeme.com/260704/p2#a260704p2",
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "dca2730f2bed0e601567698fec285cbd",
-        "title": "AI算力热潮带火芯片时钟组件，Stathera融到5500万美元",
-        "chinese_title": "AI算力热潮带火芯片时钟组件，Stathera融到5500万美元",
-        "original_title": "Montreal-based Stathera, a maker of MEMS-based silicon timing components for chips, raised a $55M Series B led by Maverick Silicon, taking total funding to $75M (Madison McLauchlan/BetaKit)",
-        "summary": "加拿大半导体初创公司Stathera完成5500万美元B轮融资，将扩大MEMS硅基时钟组件产能，押注AI算力增长带来的芯片时序与能效需求。",
-        "rating": "A",
-        "score": 78,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "这类上游组件融资显示AI算力链条的资本外溢正在从GPU和数据中心延伸到更细分的半导体基础模块，后续可观察时钟、互连、电源管理等环节是否继续升温。",
-        "entities": [
-          "Ai算力",
-          "Maverick Silicon",
-          "Mems",
-          "Stathera",
-          "半导体"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260704/p1#a260704p1"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783141624,
-        "published_at": "2026-07-04T13:07:04.085560",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260704/p1#a260704p1",
-        "event_id": null,
-        "original_url": "https://www.techmeme.com/260704/p1#a260704p1",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "821d02717948ba20371d71afe3bcd728",
-        "title": "DwarfStar将合并GLM 5.2量化分支并扩展硬件支持",
-        "chinese_title": "DwarfStar将合并GLM 5.2量化分支并扩展硬件支持",
-        "original_title": "DawrfStar with DeepSeek 4 Flash 4 bit, PRO 2 bit, and GLM 5.2 4 bit. M3 Ultra 512GB. Results on hard programming tasks with GPT 5.5 as a judge.",
-        "summary": "antirez在X Pro可见帖中称，DwarfStar已在M3 Ultra 512GB上测试DeepSeek 4 Flash 4-bit、PRO 2-bit和GLM 5.2 4-bit，并用GPT 5.5评判困难编程任务结果；GLM 5.2分支将合并，并支持CUDA与Strix Halo。",
-        "expansion": "可继续追踪DwarfStar对GLM 5.2量化推理的实际代码合并、CUDA和Strix Halo支持情况，以及本地高内存设备运行开源模型解决编程任务的成本/性能变化。",
-        "url": "https://x.com/antirez/status/2073173385593364737",
-        "original_url": "https://x.com/antirez/status/2073173385593364737",
-        "source": "antirez via X Pro",
-        "sourceLinks": [
-          {
-            "name": "antirez via X Pro",
-            "url": "https://x.com/antirez/status/2073173385593364737"
-          }
-        ],
-        "sources": 1,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "entities": [
-          "DwarfStar",
-          "GLM 5.2",
-          "DeepSeek",
-          "GPT 5.5",
-          "CUDA",
-          "Strix Halo",
-          "M3 Ultra"
-        ],
-        "rating": "B",
-        "grade": "B",
-        "level": "B",
-        "score": 76,
-        "published_at": "2026-07-04T08:29:36.733084",
-        "timestamp": 1783124976,
-        "event_id": null
-      },
-      {
-        "id": "2388c4f4579da0f2bccb799de725463c",
-        "title": "AMD新卡跑GLM推理，成本比Blackwell低一半",
-        "chinese_title": "AMD新卡跑GLM推理，成本比Blackwell低一半",
-        "original_title": "GLM5.2 on AMD MI355X at 2626 tok/s/node at over 2x lower cost than Blackwell",
-        "summary": "Wafer在AMD MI355X上部署GLM5.2，声称在企业推理负载下达到每节点2626 token/s，性能接近B200但GPU成本低两倍以上。",
-        "rating": "A",
-        "score": 82,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "这直接指向AI推理成本战和英伟达软件生态护城河的松动。后续可跟踪ROCm、sglang、云厂商GPU采购和国内模型部署成本变化。",
-        "entities": [
-          "Amd",
-          "Blackwell",
-          "Glm",
-          "Mi355X",
-          "Wafer"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.wafer.ai/blog/glm52-amd"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783123524,
-        "published_at": "2026-07-04T08:05:24.806723",
-        "source": "Hacker News",
-        "url": "https://www.wafer.ai/blog/glm52-amd",
-        "event_id": null,
-        "original_url": "https://www.wafer.ai/blog/glm52-amd",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "8a52d7b4ad22a4a977a265808bf3b530",
-        "title": "大模型开始帮科学家解析人类决策理由",
-        "chinese_title": "大模型开始帮科学家解析人类决策理由",
-        "original_title": "LLMs and Math Combine to Map Human Decision-Making",
-        "summary": "研究者把大模型文本编码和行为选择数学模型结合，用来分析大量自由文本决策解释，验证人类推理策略会随问题结构动态变化。",
-        "rating": "B",
-        "score": 67,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这一方法可扩展到公共政策、医疗选择和金融行为研究，但目前更偏研究工具链，短期产业冲击有限。",
-        "entities": [
-          "Kamil Fulawka",
-          "LLM",
-          "Synosys",
-          "决策科学"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Neuroscience News Updates",
-            "url": "https://neurosciencenews.com/llm-cognitive-mapping-decision-making-30992/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783123524,
-        "published_at": "2026-07-04T08:05:24.806752",
-        "source": "Neuroscience News Updates",
-        "url": "https://neurosciencenews.com/llm-cognitive-mapping-decision-making-30992/",
-        "event_id": null,
-        "original_url": "https://neurosciencenews.com/llm-cognitive-mapping-decision-making-30992/",
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "4baa9e3f2d60d0480868d7ae172a8a72",
-        "title": "Claude安全模型发布后，高危漏洞披露激增",
-        "chinese_title": "Claude安全模型发布后，高危漏洞披露激增",
-        "original_title": "New serious vulnerabilities spiked around release of Claude Mythos Preview",
-        "summary": "Epoch AI统计显示，Claude Mythos Preview发布及Project Glasswing推进后，2026年6月知名机构披露的高危和严重CVEs创出异常高峰。",
-        "rating": "A+",
-        "score": 88,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这为AI自动挖漏洞的双刃剑提供了早期量化信号。后续可追踪Anthropic、OpenAI与大厂协作如何改变漏洞披露节奏和安全攻防格局。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Cve",
-          "Epoch Ai",
-          "Project Glasswing"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://epoch.ai/data-insights/cve-severity-spike"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783123524,
-        "published_at": "2026-07-04T08:05:24.806772",
-        "source": "Hacker News",
-        "url": "https://epoch.ai/data-insights/cve-severity-spike",
-        "event_id": null,
-        "original_url": "https://epoch.ai/data-insights/cve-severity-spike",
-        "grade": "A+",
-        "level": "A+"
-      }
-    ],
-    "2026-07-05": [
-      {
-        "id": "96e4c9187539303c59fe2c348930afce",
-        "title": "达摩院AI智能体发现4种新超导体",
-        "chinese_title": "达摩院AI智能体发现4种新超导体",
-        "original_title": "Damo Academy unveils an AI agent able to discover superconductors, which could revolutionise scientific materials research and innovation",
-        "summary": "阿里达摩院联合高校推出材料发现智能体ElementsClaw，从数百万晶体结构中筛出超导候选，并已有4种新材料完成实验验证。",
-        "rating": "A+",
-        "grade": "A+",
-        "level": "A+",
-        "score": 91,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这类AI for Science进展会继续影响材料发现、能源设备和量子计算产业链，也会把云厂商的基础模型能力延伸到科研基础设施竞争中。",
-        "entities": [
-          "Ai For Science",
-          "Alibaba",
-          "Elementsclaw",
-          "超导材料",
-          "达摩院"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1unnrka/damo_academy_unveils_an_ai_agent_able_to_discover/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783220983,
-        "published_at": "2026-07-05T11:09:43.645177",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1unnrka/damo_academy_unveils_an_ai_agent_able_to_discover/",
-        "original_url": "https://www.reddit.com/r/singularity/comments/1unnrka/damo_academy_unveils_an_ai_agent_able_to_discover/",
-        "event_id": null
-      },
-      {
-        "id": "bea6ff745465d6307a47c6c2d57a3970",
-        "title": "地图图层进内存，LLM少走弯路",
-        "chinese_title": "地图图层进内存，LLM少走弯路",
-        "original_title": "Mapping with In-Memory Layers to Reduce LLM Overload",
-        "summary": "RidgeText介绍一种把Mapbox地图图层加载到内存中的方案，让LLM在生成地理空间分析结果时直接组合结构化图层，减少重复查询、上下文膨胀和错误推理。",
-        "rating": "B",
-        "score": 70,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸观察地理信息、应急管理和企业BI场景中，LLM是否会从文本检索转向结构化图层编排。若方案可复用，地图数据平台和智能体工具链可能出现更细分的集成机会。",
-        "entities": [
-          "LLM",
-          "Mapbox",
-          "Ridgetext",
-          "地理空间分析"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://ridgetext.com/blog/mapbox-llm-composition"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783217168,
-        "published_at": "2026-07-05T10:06:08.251692",
-        "source": "Hacker News",
-        "url": "https://ridgetext.com/blog/mapbox-llm-composition",
-        "event_id": null,
-        "original_url": "https://ridgetext.com/blog/mapbox-llm-composition",
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "0a468e642f0e55c07d8706b0d6f3fe42",
-        "title": "消费级GPU也想微调MoE大模型",
-        "chinese_title": "消费级GPU也想微调MoE大模型",
-        "original_title": "If your GPU can run inference, it should be able to fine-tune too. [P]",
-        "summary": "一名开发者开源USAF稀疏微调方法，称可在12GB显存的AMD RX 6750 XT上微调Qwen MoE模型，重点训练专家权重和路由器而不是适配器。",
-        "rating": "B",
-        "score": 72,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "如果方法经独立复现，可能降低MoE模型个性化微调门槛，并带动消费级显卡、开源训练工具和本地AI社区的实验热度。但目前仍是社区项目，需要验证稳定性与泛化效果。",
-        "entities": [
-          "Amd",
-          "Moe",
-          "Qwen",
-          "Usaf"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783217168,
-        "published_at": "2026-07-05T10:06:08.251723",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/",
-        "event_id": null,
-        "original_url": "https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/",
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "a226e99a33b117e73ad7e4c923561e5f",
-        "title": "英国OpenAI星际之门项目被指只是公关秀",
-        "chinese_title": "英国OpenAI星际之门项目被指只是公关秀",
-        "original_title": "Source calls UK- and OpenAI-touted plans in 2025 for Stargate's ~&pound;20B Cobalt site a PR stunt; OpenAI and Nscale failed to visit Cobalt or lodge planning forms (Aisha Down/The Guardian)",
-        "summary": "Guardian报道称，英国官员曾宣传的OpenAI和Nscale相关Stargate Cobalt园区约200亿英镑投资，可能停留在假设阶段，相关方未实地到访也未提交规划文件。",
-        "rating": "A+",
-        "score": 89,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "该事件可延伸到各国AI基建招商中的承诺兑现、数据中心用地审批和主权AI叙事泡沫，也会影响OpenAI全球算力布局的可信度。",
-        "entities": [
-          "Cobalt",
-          "Nscale",
-          "OpenAI",
-          "Stargate",
-          "英国Ai投资"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260704/p12#a260704p12"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783210018,
-        "published_at": "2026-07-05T08:06:58.009873",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260704/p12#a260704p12",
-        "event_id": null,
-        "original_url": "https://www.techmeme.com/260704/p12#a260704p12",
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "17643e5aa2f6f2ce5437d880b77d5906",
-        "title": "隔空传文件也能零点击攻击，AirDrop和快享被系统性拆解",
-        "chinese_title": "隔空传文件也能零点击攻击，AirDrop和快享被系统性拆解",
-        "original_title": "Protocol Prying: Vulnerability Research in AirDrop and Quick Share",
-        "summary": "研究者对苹果AirDrop和谷歌、三星Quick Share做了逆向分析和协议感知模糊测试，披露6个预认证或协议层漏洞，影响数十亿近场文件传输设备。",
-        "rating": "A",
-        "score": 82,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这类近场传输协议长期依赖专有实现和低可见度安全假设，后续可延展到移动系统零点击攻击面、厂商补丁节奏和跨平台文件分享协议安全治理。",
-        "entities": [
-          "Airdrop",
-          "Apple",
-          "Google",
-          "Quick Share",
-          "Samsung"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://arxiv.org/abs/2606.26967"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783206372,
-        "published_at": "2026-07-05T07:06:12.214689",
-        "source": "Hacker News",
-        "url": "https://arxiv.org/abs/2606.26967",
-        "event_id": null,
-        "original_url": "https://arxiv.org/abs/2606.26967",
-        "grade": "A",
-        "level": "A"
       }
     ],
     "2026-07-11": [
@@ -4569,8 +4057,698 @@
         "grade": "A+",
         "level": "A+"
       }
+    ],
+    "2026-07-13": [
+      {
+        "id": "34ff2bb2c05aacc92c58d55d7f4c87ac",
+        "title": "Cursor秘密开发通用AI代理，瞄准非程序员办公场景",
+        "chinese_title": "Cursor秘密开发通用AI代理，瞄准非程序员办公场景",
+        "original_title": "Sources: Cursor is building a general-purpose AI agent codenamed Sand, aimed at non-developers, that handles emails, texts, and documents to rival Claude Cowork (Grace Kay/The Information)",
+        "summary": "据报道，Cursor正在开发代号为Sand的通用AI代理，目标是处理邮件、短信和文档等日常事务，直接挑战Anthropic的Claude Cowork，AI助手竞争正从编程向更广泛的办公入口扩展。",
+        "rating": "S",
+        "score": 96,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "如果产品落地，Cursor将从开发者工具公司进入通用办公市场，可能引发Anthropic、微软和OpenAI在个人事务自动化上的新一轮竞争。",
+        "entities": [
+          "Claude",
+          "Cursor",
+          "Sand"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260712/p9#a260712p9"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994040",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260712/p9#a260712p9",
+        "event_id": null
+      },
+      {
+        "id": "295dfa4ec345b2df416958cff0c38143",
+        "title": "企业严查AI开支，模型价格战或将转向成本效率",
+        "chinese_title": "企业严查AI开支，模型价格战或将转向成本效率",
+        "original_title": "OpenAI, Meta, and SpaceXAI may be able to put pressure on Anthropic by emphasizing cost efficiency, as business customers increasingly scrutinize AI spending (Bloomberg)",
+        "summary": "随着企业客户开始重新审视AI投入，OpenAI、Meta和SpaceXAI可能通过强调成本效率来对Anthropic施压，模型能力之外的推理价格和单位产出正成为采购决策核心。",
+        "rating": "A",
+        "score": 83,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "企业AI预算趋紧可能加速模型厂商的价格竞争，也会推动客户从单纯比较跑分转向评估真实任务成本、调用效率和商业回报。",
+        "entities": [
+          "Anthropic",
+          "Meta",
+          "OpenAI",
+          "Spacexai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260712/p8#a260712p8"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994066",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260712/p8#a260712p8",
+        "event_id": null
+      },
+      {
+        "id": "37fa8ddaa108e93f36508a2d099e1896",
+        "title": "Adaptive Recall让AI助手通过MCP拥有持久记忆",
+        "chinese_title": "Adaptive Recall让AI助手通过MCP拥有持久记忆",
+        "original_title": "Show HN: Adaptive Recall, persistent memory for AI assistants over MCP",
+        "summary": "Adaptive Recall尝试通过MCP为AI助手提供跨会话的持久记忆能力，让助手能够保存并调用长期上下文，解决当前智能体每次对话都要重新建立背景的问题。",
+        "rating": "B",
+        "score": 71,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "持久记忆若能与MCP生态兼容，将成为AI助手从一次性问答走向长期协作的基础能力，隐私、数据归属和记忆清理机制也会随之受到关注。",
+        "entities": [
+          "Adaptive Recall",
+          "Ai Assistants",
+          "MCP"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.adaptiverecall.com/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994085",
+        "source": "Hacker News",
+        "url": "https://www.adaptiverecall.com/",
+        "event_id": null
+      },
+      {
+        "id": "aeb7b9ae0365acb3ea6cc3ccce140bdd",
+        "title": "Meta撤下Instagram AI功能，公开照片生成引发隐私危机",
+        "chinese_title": "Meta撤下Instagram AI功能，公开照片生成引发隐私危机",
+        "original_title": "Instagram's newest AI tool didn't survive the week",
+        "summary": "Meta曾允许用户用公开Instagram帖子生成AI图像，但功能上线数天后便因隐私、深度伪造和缺乏明确退出机制引发争议，最终被公司撤下，显示产品上线速度与安全审查之间仍有冲突。",
+        "rating": "S",
+        "score": 92,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "该事件可能促使社交平台重新设计公开内容的AI使用授权，并推动监管机构关注用户照片被模型二次利用时的通知、同意和追责机制。",
+        "entities": [
+          "Instagram",
+          "Meta",
+          "Meta Ai",
+          "Muse Image"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI - Business Insider",
+            "url": "https://www.businessinsider.com/instagram-ai-feature-public-profile-opt-out-privacy-deepfake-backlash-2026-7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994101",
+        "source": "AI - Business Insider",
+        "url": "https://www.businessinsider.com/instagram-ai-feature-public-profile-opt-out-privacy-deepfake-backlash-2026-7",
+        "event_id": null
+      },
+      {
+        "id": "c54b939db668defcb7b3e19db19069ce",
+        "title": "MCP安全现状报告发布，AI工具连接层风险浮现",
+        "chinese_title": "MCP安全现状报告发布，AI工具连接层风险浮现",
+        "original_title": "The State of MCP Security [pdf]",
+        "summary": "《MCP安全现状》报告聚焦模型上下文协议在工具调用、数据访问和服务连接中的安全问题，提示随着AI代理接入更多外部系统，协议生态的权限隔离与供应链风险正在扩大。",
+        "rating": "B",
+        "score": 68,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "MCP若成为AI代理的通用连接层，安全标准、服务器审计和权限治理将直接影响生态能否规模化，相关漏洞可能成为下一阶段AI基础设施的主要风险点。",
+        "entities": [
+          "Ai Agents",
+          "Canopii",
+          "MCP"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.canopii.dev/State%20of%20MCP%20Security%202026.pdf"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994114",
+        "source": "Hacker News",
+        "url": "https://www.canopii.dev/State%20of%20MCP%20Security%202026.pdf",
+        "event_id": null
+      },
+      {
+        "id": "389409443cc9e9971f082c4b8b9e7d40",
+        "title": "生产级AI代理迁移GPT-5.6，速度提升超两倍且成本下降",
+        "chinese_title": "生产级AI代理迁移GPT-5.6，速度提升超两倍且成本下降",
+        "original_title": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
+        "summary": "一项生产环境迁移记录显示，将AI代理切换到GPT-5.6后，运行速度提升约2.2倍，成本下降27%，案例说明模型升级的价值正在从基准成绩转向真实业务中的吞吐和经济性。",
+        "rating": "A+",
+        "score": 87,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "更多企业可能用真实调用账单和延迟数据重新评估模型迁移，模型厂商之间的竞争也会从能力宣传扩展到端到端代理成本。",
+        "entities": [
+          "Ai Agents",
+          "GPT",
+          "Ploy"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994148",
+        "source": "Hacker News",
+        "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
+        "event_id": null
+      },
+      {
+        "id": "62850fba22aacb1b83d8b560921850bf",
+        "title": "DeepSeek降价75%仍难解代理成本，Token消耗反吞红利",
+        "chinese_title": "DeepSeek降价75%仍难解代理成本，Token消耗反吞红利",
+        "original_title": "DeepSeek cut prices 75%. The 100x problem remains",
+        "summary": "DeepSeek将V4-Pro价格下调75%，但企业AI系统并未因此自动获得更高利润，因为代理会通过更长链路和更多调用消耗Token，价格下降速度仍可能赶不上使用量增长。",
+        "rating": "S",
+        "score": 92,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "模型降价可能推动代理应用快速普及，却也会放大编排、缓存和上下文压缩的重要性，AI软件的商业模式将更依赖单位任务成本而非单Token价格。",
+        "entities": [
+          "Ai Agents",
+          "DeepSeek",
+          "Tokens",
+          "V4-Pro"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/orchestration/deepseek-cut-prices-75-the-100x-problem-remains"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994160",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/orchestration/deepseek-cut-prices-75-the-100x-problem-remains",
+        "event_id": null
+      },
+      {
+        "id": "af30ea7b31515aacf9ac367073567efe",
+        "title": "Claude Code启动先消耗3.3万Token，开源替代方案仅7000",
+        "chinese_title": "Claude Code启动先消耗3.3万Token，开源替代方案仅7000",
+        "original_title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+        "summary": "对比测试称，Claude Code在读取用户提示前就会发送约3.3万Token，而OpenCode约为7000，开发者工具的隐藏上下文开销可能显著影响响应成本、速度和可持续使用规模。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "这类测量或将推动开发者工具公开启动开销和上下文构成，代码代理的竞争也会从模型效果延伸到提示词管理、缓存和Token透明度。",
+        "entities": [
+          "Claude Code",
+          "Opencode",
+          "Systima",
+          "Tokens"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994171",
+        "source": "Hacker News",
+        "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+        "event_id": null
+      },
+      {
+        "id": "ab36848b705541c1b34545306cedafa7",
+        "title": "Anthropic延长Claude Fable 5权限，Claude Code限额继续上调",
+        "chinese_title": "Anthropic延长Claude Fable 5权限，Claude Code限额继续上调",
+        "original_title": "Anthropic says it is extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code's weekly rate limits 50% higher, through July 19 (The Economic Times)",
+        "summary": "Anthropic宣布，所有付费套餐的Claude Fable 5使用权限将延长，同时Claude Code每周速率限制在7月19日前继续保持比原计划高50%，以缓解用户对使用额度的关注。",
+        "rating": "B",
+        "score": 65,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "临时提高额度既能降低高频用户迁移风险，也会增加推理成本压力，Anthropic后续可能需要在留存、订阅价格和算力供给之间重新平衡。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Claude Code"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260712/p7#a260712p7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994182",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260712/p7#a260712p7",
+        "event_id": null
+      },
+      {
+        "id": "5af4ff85667450c892e992b5e7276b31",
+        "title": "电动卡车初创Windrose被曝欠薪裁员，上市计划蒙上阴影",
+        "chinese_title": "电动卡车初创Windrose被曝欠薪裁员，上市计划蒙上阴影",
+        "original_title": "Electric Truck Startup Windrose Has Stiffed a Slew of People",
+        "summary": "比利时电动长途卡车初创Windrose Technology据报道已解雇美国团队中几乎所有员工，并被指拖欠多方款项；公司此前声称已融资约4亿美元，计划以20亿美元估值赴美欧上市。",
+        "rating": "B",
+        "score": 70,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "如果报道属实，Windrose的现金流和治理问题将考验电动商用车初创的融资叙事，也可能影响投资人对其上市估值和中国供应链背景的判断。",
+        "entities": [
+          "Electric Trucks",
+          "Wen Han",
+          "Windrose",
+          "Windrose Technology"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/electric-truck-startup-windrose-stiffed-slew-people"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994204",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/electric-truck-startup-windrose-stiffed-slew-people",
+        "event_id": null
+      },
+      {
+        "id": "1664decf3e0448339c5580fc07f9c4b0",
+        "title": "Meta被曝平台广告涉及儿童虐待，安全治理再遭拷问",
+        "chinese_title": "Meta被曝平台广告涉及儿童虐待，安全治理再遭拷问",
+        "original_title": "Meta Caught Running Ads for Child Abuse",
+        "summary": "BBC调查据称发现，Instagram在印度投放了推广儿童性虐待材料的付费广告，暴露出Meta内容审核、广告审核和儿童安全机制之间的严重漏洞，也让平台商业化边界再次受到质疑。",
+        "rating": "S",
+        "score": 99,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "事件可能引发监管调查、广告主审查和更严厉的儿童保护要求，Meta需要证明其自动审核与人工复核体系能够阻断高风险内容变现。",
+        "entities": [
+          "Bbc",
+          "Csam",
+          "Instagram",
+          "Meta"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/meta-running-ads-child-abuse"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994214",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/meta-running-ads-child-abuse",
+        "event_id": null
+      },
+      {
+        "id": "ec020396f0d2501621b114524ec21bdd",
+        "title": "AI热潮带火上市公司增发，ATM融资成资本市场新宠",
+        "chinese_title": "AI热潮带火上市公司增发，ATM融资成资本市场新宠",
+        "original_title": "The Hot Equity Trade Spreading Through the AI Boom",
+        "summary": "AI基础设施扩张带来巨额资本需求，越来越多上市公司通过按市价发行股票持续融资，云服务商IREN等企业获批数十亿美元增发额度，权益资本市场正被AI投资周期重新塑造。",
+        "rating": "A",
+        "score": 80,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "持续增发既能缓解数据中心建设的资金压力，也会稀释现有股东权益，市场可能进一步分化真正有订单支撑的AI基础设施公司与借热点融资者。",
+        "entities": [
+          "Ai Infrastructure",
+          "Atm Offerings",
+          "Equity Capital Markets",
+          "Iren"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/hot-equity-trade-spreading-ai-boom"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994224",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/hot-equity-trade-spreading-ai-boom",
+        "event_id": null
+      },
+      {
+        "id": "68987d846b0f30e0080c0267ecc3d43e",
+        "title": "苹果造车未成却留下AI芯片遗产，神经引擎或源于汽车计划",
+        "chinese_title": "苹果造车未成却留下AI芯片遗产，神经引擎或源于汽车计划",
+        "original_title": "Apple&rsquo;s failed self-driving car program left a legacy of powerful AI chips",
+        "summary": "苹果的自动驾驶汽车项目虽然没有完成，却推动公司思考车载端高性能AI处理，并间接促成神经网络引擎的发展；这套能力后来成为苹果设备端AI芯片的重要基础。",
+        "rating": "A",
+        "score": 79,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "该案例显示失败项目也可能沉淀核心芯片能力，苹果未来M系列升级和端侧AI布局仍可能持续受益于当年汽车项目的技术积累。",
+        "entities": [
+          "Apple",
+          "Apple Silicon",
+          "Neural Engine",
+          "Project Titan"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994235",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+        "event_id": null
+      }
+    ],
+    "2026-07-12": [
+      {
+        "id": "0d5aace0277e7c06c6bafbd76ce02929",
+        "title": "从Claude与自动研究看约束优化，AI科研不能只追单一指标",
+        "chinese_title": "从Claude与自动研究看约束优化，AI科研不能只追单一指标",
+        "original_title": "Autoresearch, Claude and Constrained Optimization",
+        "summary": "文章以Claude和自动化研究为例，讨论如何在现实资源、目标冲突和安全边界下进行约束优化，指出自动科研系统的关键不只是找到更高分答案，还要满足可解释和可执行条件。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "约束优化将影响自动编程、实验设计和模型训练等场景，未来AI科研工具可能需要同时管理性能目标、成本预算与风险限制。",
+        "entities": [
+          "Ai Research",
+          "Autoresearch",
+          "Claude",
+          "Constrained Optimization"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.elliotcsmith.com/autoresearch-claude-and-constrained-optimization/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994245",
+        "source": "Hacker News",
+        "url": "https://www.elliotcsmith.com/autoresearch-claude-and-constrained-optimization/",
+        "event_id": null
+      },
+      {
+        "id": "957a9745cbf142945f8e3f5b101bd3d6",
+        "title": "联想Legion 7a新增12GB显存版RTX 5070，售价高达3375美元",
+        "chinese_title": "联想Legion 7a新增12GB显存版RTX 5070，售价高达3375美元",
+        "original_title": "Lenovo's Legion 7a gaming laptop now comes with an RTX 5070 12GB GPU option &mdash; but it costs $3,375 paired with a Ryzen AI 9 CPU, SKU was previously limited to RTX 5060",
+        "summary": "联想更新Legion 7a游戏本配置，新增搭载12GB显存RTX 5070移动显卡的版本，并配备Ryzen AI 9处理器，但整机价格达到3375美元，移动端高显存与高售价形成鲜明对比。",
+        "rating": "B",
+        "score": 72,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "显存容量升级将继续推高本地AI和游戏设备的硬件需求，但高价也可能限制市场接受度，厂商需要在端侧AI性能与整机成本之间取舍。",
+        "entities": [
+          "Legion 7A",
+          "Lenovo",
+          "NVIDIA",
+          "Rtx 5070"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/laptops/lenovos-legion-7a-gaming-laptop-now-comes-with-an-rtx-5070-12gb-gpu-option-but-it-costs-usd3-375-paired-with-a-ryzen-ai-9-cpu-sku-was-previously-limited-to-rtx-5060"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994258",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/laptops/lenovos-legion-7a-gaming-laptop-now-comes-with-an-rtx-5070-12gb-gpu-option-but-it-costs-usd3-375-paired-with-a-ryzen-ai-9-cpu-sku-was-previously-limited-to-rtx-5060",
+        "event_id": null
+      },
+      {
+        "id": "22a940732d1054f5acc0d76f197490a9",
+        "title": "苹果提前推进M7芯片，传将强化NPU并规划1.5TB内存",
+        "chinese_title": "苹果提前推进M7芯片，传将强化NPU并规划1.5TB内存",
+        "original_title": "Sources: Apple is already taping out M7 with major NPU upgrades, and plans M7 Ultra with 1.5TB RAM, and M8, for 2028; new Pencils are coming with a new iPad Pro (Mark Gurman/Bloomberg)",
+        "summary": "消息称苹果已开始流片M7芯片，计划大幅升级NPU，并为M7 Ultra规划最高1.5TB内存，同时M8也在路线图中；新款Apple Pencil和iPad Pro也可能同步推进。",
+        "rating": "A+",
+        "score": 88,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "苹果若持续提高芯片端侧AI能力，可能进一步扩大设备端推理与本地模型部署优势，也会给英特尔、英伟达和高通的终端AI布局带来压力。",
+        "entities": [
+          "Apple",
+          "M7",
+          "M7 Ultra",
+          "Neural Processing Unit"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260712/p6#a260712p6"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994269",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260712/p6#a260712p6",
+        "event_id": null
+      },
+      {
+        "id": "5dd7d5ce0c61e7d99712eb241da69d1a",
+        "title": "开发者把Google预测模型封装成MCP服务，可本地完成多类机器学习任务",
+        "chinese_title": "开发者把Google预测模型封装成MCP服务，可本地完成多类机器学习任务",
+        "original_title": "Zer0Fit: I took Google's new TabFM & TimesFM ML foundation models and made them available as an MCP server for zero-shot ML tasks (forecasts / classifications / regressions). 100% local. [P]",
+        "summary": "开发者将Google的TabFM与TimesFM模型封装进一个本地Docker容器，并通过MCP连接Open WebUI和其他语言模型，使用户无需训练即可执行预测、分类和回归等机器学习任务。",
+        "rating": "A",
+        "score": 78,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "模型通过MCP被组合进本地工作流，可能降低传统机器学习工具的使用门槛，也会推动更多专业模型以服务化方式接入AI助手。",
+        "entities": [
+          "Google",
+          "MCP",
+          "Tabfm",
+          "Timesfm",
+          "Zer0Fit"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1uue8cc/zer0fit_i_took_googles_new_tabfm_timesfm_ml/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994293",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1uue8cc/zer0fit_i_took_googles_new_tabfm_timesfm_ml/",
+        "event_id": null
+      },
+      {
+        "id": "dee5d7a06c04a3fda63bfda7868f2779",
+        "title": "Claude Code内置浏览器，AI代理开始直接读写外部网站",
+        "chinese_title": "Claude Code内置浏览器，AI代理开始直接读写外部网站",
+        "original_title": "Claude Code now has a built-in browser that lets the AI read, click, and type on external websites",
+        "summary": "Claude Code新增内置浏览器，能够在开发环境中打开网页、读取内容并执行点击和输入操作；涉及购买或创建账户等高风险动作时仍需用户批准，写入操作也会经过分类器筛查。",
+        "rating": "S",
+        "score": 92,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "代码代理从编辑文件走向操作互联网，将扩大自动化边界，同时带来凭证保护、误操作追责和网站反自动化策略等新的安全与产品问题。",
+        "entities": [
+          "Ai Agents",
+          "Anthropic",
+          "Claude Code",
+          "Web Browser"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994304",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites/",
+        "event_id": null
+      },
+      {
+        "id": "0036a4fa30536c1131f8927f4130b220",
+        "title": "OpenAI据称关闭曾被寄予厚望的Atlas AI浏览器",
+        "chinese_title": "OpenAI据称关闭曾被寄予厚望的Atlas AI浏览器",
+        "original_title": "OpenAI Is Shutting Down Its Browser That Was Supposed to Change Everything",
+        "summary": "OpenAI此前推出以ChatGPT为核心、试图通过代理模式帮助用户完成订票和购物的Atlas浏览器，但报道称该产品如今面临关闭，AI浏览器从概念热潮走向商业落地的难度开始显现。",
+        "rating": "A+",
+        "score": 88,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "如果消息确认，OpenAI可能将浏览器能力重新收缩到ChatGPT或其他代理产品中，行业也会重新评估独立AI浏览器的获客、变现和安全成本。",
+        "entities": [
+          "Ai Browser",
+          "Atlas",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/openai-shutting-down-browser"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994314",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/openai-shutting-down-browser",
+        "event_id": null
+      },
+      {
+        "id": "79cb440876909694e7e23bdde7ff69a6",
+        "title": "4356个可访问MCP服务器仅1个达标，新规范兼容率堪忧",
+        "chinese_title": "4356个可访问MCP服务器仅1个达标，新规范兼容率堪忧",
+        "original_title": "Show HN: Only 1 of 4,356 reachable MCP servers is ready for the 2026-07-28 spec",
+        "summary": "一项针对MCP生态的检查显示，在4356个可访问服务器中只有1个符合即将到来的2026年7月28日规范要求，暴露出协议版本升级后生态兼容、实现质量和维护状况的巨大差距。",
+        "rating": "A",
+        "score": 77,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果这一比例具有代表性，MCP生态可能需要更长的迁移周期和自动化认证工具，开发者也会更加关注服务器的版本标记、持续维护与安全审计。",
+        "entities": [
+          "MCP",
+          "Mcp Servers",
+          "Mcp-Spec-Check",
+          "Roee Tsur"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/Roee-Tsur/mcp-spec-check"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994324",
+        "source": "Hacker News",
+        "url": "https://github.com/Roee-Tsur/mcp-spec-check",
+        "event_id": null
+      },
+      {
+        "id": "c7b2599ec0643f5ebdfe49a35dd1637e",
+        "title": "AI提升科研产出却可能压平发现，科学创新面临同质化风险",
+        "chinese_title": "AI提升科研产出却可能压平发现，科学创新面临同质化风险",
+        "original_title": "AI Boosts Research Careers but Flattens Scientific Discovery",
+        "summary": "文章讨论AI工具如何帮助研究人员提高论文和实验效率，却可能让更多人集中追逐相似问题与热门方向，导致个人产出增长与整体科学发现多样性下降同时发生。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "科研机构未来需要同时衡量效率和探索广度，评审机制、数据共享和对非主流假设的支持将决定AI究竟扩大还是压缩科学创新空间。",
+        "entities": [
+          "Ai",
+          "Ieee Spectrum",
+          "Research Careers",
+          "Scientific Discovery"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://spectrum.ieee.org/ai-science-research-flattens-discovery"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994335",
+        "source": "Hacker News",
+        "url": "https://spectrum.ieee.org/ai-science-research-flattens-discovery",
+        "event_id": null
+      },
+      {
+        "id": "8c3adbfbbab1a0e34b44af33266f7f3c",
+        "title": "记者被解雇后账号仍发布AI垃圾文，署名权遭到滥用",
+        "chinese_title": "记者被解雇后账号仍发布AI垃圾文，署名权遭到滥用",
+        "original_title": "Journalist Alarmed When He’s Fired, But Company Keeps Posting AI Slop Under His Name",
+        "summary": "自由记者Ben Touati离开ClickOut Media后，公司仍持续使用他的名字发布由AI生成的文章，事件暴露出自动内容生产对署名权、职业声誉和媒体责任边界的冲击。",
+        "rating": "A",
+        "score": 79,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "媒体行业可能需要更严格的离职账号回收、作者授权和AI内容标注制度，平台也可能面临冒用真实记者身份进行规模化发布的治理压力。",
+        "entities": [
+          "Ai-Generated Content",
+          "Ben Touati",
+          "Byline",
+          "Clickout Media"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/fired-journalist-ai-posts-in-his-name"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994345",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/fired-journalist-ai-posts-in-his-name",
+        "event_id": null
+      },
+      {
+        "id": "5bdb1afba2fe020229e0c97f625dbdd7",
+        "title": "FCC批准轨道反射镜测试，太空照明商业化迈出一步",
+        "chinese_title": "FCC批准轨道反射镜测试，太空照明商业化迈出一步",
+        "original_title": "FCC approves orbital space mirrors, first test satellites will launch this year — large spacecraft reflects sunlight to Earth’s surface for construction sites, search-and-rescue lighting, and more",
+        "summary": "美国FCC批准Reflect Orbital发射Eärendil-1测试卫星，该项目计划用大型航天器把阳光反射到地面，为施工现场和搜救等场景提供额外照明，太空基础设施商业化再添新方向。",
+        "rating": "B",
+        "score": 70,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "轨道反射镜将同时面对能源、天文学、空间交通和环境影响争议，测试结果可能决定这一模式能否从概念验证走向规模化服务。",
+        "entities": [
+          "Eärendil-1",
+          "Fcc",
+          "Orbital Mirrors",
+          "Reflect Orbital"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/fcc-approves-orbital-space-mirrors-first-test-satellites-will-launch-this-year-large-spacecraft-reflects-sunlight-to-earths-surface-for-construction-sites-search-and-rescue-lighting-and-more"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896932,
+        "published_at": "2026-07-13T06:55:32.994378",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/fcc-approves-orbital-space-mirrors-first-test-satellites-will-launch-this-year-large-spacecraft-reflects-sunlight-to-earths-surface-for-construction-sites-search-and-rescue-lighting-and-more",
+        "event_id": null
+      }
     ]
   },
-  "last_updated": "2026-07-11T05:03:14.583359",
-  "total_news": 137
+  "last_updated": "2026-07-13T06:58:29.818321",
+  "total_news": 145
 }
