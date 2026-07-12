@@ -1389,6 +1389,36 @@
     ],
     "2026-07-08": [
       {
+        "id": "6a06c544a21c9b1ffe910b86bcbe8ec2",
+        "title": "一百行Lisp写出AI代理，极简实现展示核心机制",
+        "chinese_title": "一百行Lisp写出AI代理，极简实现展示核心机制",
+        "original_title": "An agent in 100 lines of Lisp",
+        "summary": "一篇实践文章展示如何用约100行Lisp构建一个AI代理，通过极简代码呈现模型调用、工具使用和循环执行等基本机制，适合用来理解代理系统的最小组成。",
+        "rating": "B",
+        "score": 66,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "极简实现有助于开发者拆解复杂代理框架，也可能推动更多人从底层实验记忆、工具编排和控制循环，而不是只依赖现成平台。",
+        "entities": [
+          "Ai Agents",
+          "Lisp",
+          "The Beach",
+          "Tool Use"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://thebeach.dev/posts/lisp-agent/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142556",
+        "source": "Hacker News",
+        "url": "https://thebeach.dev/posts/lisp-agent/",
+        "event_id": null
+      },
+      {
         "id": "eb0a9d4489f7a842d15a6ba7ba34a9e3",
         "title": "美国太空军首套机动电磁反卫星系统交付",
         "chinese_title": "美国太空军首套机动电磁反卫星系统交付",
@@ -3821,6 +3851,96 @@
     ],
     "2026-07-11": [
       {
+        "id": "afbbbe120340ac2fe6d366337145c763",
+        "title": "VultronRetriever模型家族登陆HuggingFace，主打离线检索与低存储",
+        "chinese_title": "VultronRetriever模型家族登陆HuggingFace，主打离线检索与低存储",
+        "original_title": "VultronRetriever family of models released on HuggingFace![R]",
+        "summary": "VultronRetriever模型家族在HuggingFace发布，团队称其可在iPhone上完全离线完成问答和文档嵌入，并在MTEB相应类别中取得领先，同时显著缩小索引存储占用、提高吞吐。",
+        "rating": "B",
+        "score": 73,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "如果离线性能经得起独立复测，小型设备上的检索增强应用将更容易落地，模型压缩、索引效率和隐私优势也会成为端侧AI竞争重点。",
+        "entities": [
+          "Huggingface",
+          "Iphone",
+          "Mteb",
+          "Vultronretriever"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1utmxq8/vultronretriever_family_of_models_released_on/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142578",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1utmxq8/vultronretriever_family_of_models_released_on/",
+        "event_id": null
+      },
+      {
+        "id": "0e29d44567040239f6b4f4d0a0c5e8f5",
+        "title": "GPT-5.5借助工具通过BabyVision十岁水平测试，基准含义仍待核验",
+        "chinese_title": "GPT-5.5借助工具通过BabyVision十岁水平测试，基准含义仍待核验",
+        "original_title": "GPT-5.5 with tools now surpasses the 10-year-old level on the BabyVision benchmark",
+        "summary": "一则社区整理称，使用工具后的GPT-5.5在BabyVision基准上超过十岁儿童对应水平，并根据图表估算了不同年龄段分数，但原始数值和测试设置仍需要通过正式评测材料进一步确认。",
+        "rating": "B",
+        "score": 65,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "工具增强后的模型成绩将推动评测界区分裸模型能力与系统能力，同时也提醒读者关注数据泄漏、任务设计和年龄类比是否足够严谨。",
+        "entities": [
+          "Ai Benchmarks",
+          "Babyvision",
+          "GPT",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1utm334/gpt55_with_tools_now_surpasses_the_10yearold/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142649",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1utm334/gpt55_with_tools_now_surpasses_the_10yearold/",
+        "event_id": null
+      },
+      {
+        "id": "7c8f0cd978b454f0315af4bcf38a0a25",
+        "title": "Google为何曾落后OpenAI与Anthropic，社区复盘巨头转身难题",
+        "chinese_title": "Google为何曾落后OpenAI与Anthropic，社区复盘巨头转身难题",
+        "original_title": "Why did Google struggle to catch up with OpenAI and Anthropic?",
+        "summary": "社区讨论复盘Google在ChatGPT之后追赶OpenAI和Anthropic时面临的困难，认为数据、算力、研究人才和产品入口等优势并不自动转化为消费级AI领先。",
+        "rating": "B",
+        "score": 69,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这一问题可延伸到大公司创新决策、产品组织和风险偏好，Google的经验也将成为其他拥有基础设施却错过新入口企业的参照。",
+        "entities": [
+          "Anthropic",
+          "GPT",
+          "Google",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1uthk0o/why_did_google_struggle_to_catch_up_with_openai/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142670",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1uthk0o/why_did_google_struggle_to_catch_up_with_openai/",
+        "event_id": null
+      },
+      {
         "id": "ef494f6b085005cb569117ee6e324e12",
         "title": "苹果起诉OpenAI商业秘密案披露更多被告",
         "chinese_title": "苹果起诉OpenAI商业秘密案披露更多被告",
@@ -4443,9 +4563,7 @@
         "source": "The Verge -  Tech Posts",
         "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
         "event_id": null
-      }
-    ],
-    "2026-07-12": [
+      },
       {
         "id": "0d5aace0277e7c06c6bafbd76ce02929",
         "title": "从Claude与自动研究看约束优化，AI科研不能只追单一指标",
@@ -4747,8 +4865,460 @@
         "url": "https://www.tomshardware.com/tech-industry/fcc-approves-orbital-space-mirrors-first-test-satellites-will-launch-this-year-large-spacecraft-reflects-sunlight-to-earths-surface-for-construction-sites-search-and-rescue-lighting-and-more",
         "event_id": null
       }
+    ],
+    "2026-07-12": [
+      {
+        "id": "ba3f69d058c1d6dc319346bb61f74579",
+        "title": "AI数据中心扩张遭遇社区阻力，能源与土地之争才刚开始",
+        "chinese_title": "AI数据中心扩张遭遇社区阻力，能源与土地之争才刚开始",
+        "original_title": "The fight against AI data centers is just beginning",
+        "summary": "随着AI数据中心在美国各地加速建设，地方居民开始围绕电网负荷、用水、噪音和土地使用展开抗议，数据中心带来的经济收益与公共成本之间的矛盾正在持续扩大。",
+        "rating": "A",
+        "score": 86,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "反数据中心运动可能影响项目审批、能源规划和云厂商选址，AI基础设施的社会许可将成为算力扩张能否持续的重要约束。",
+        "entities": [
+          "Ai Data Centers",
+          "Emma Roth",
+          "Power Grids",
+          "The Verge"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/column/963346/ai-data-centers-fight"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142410",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
+        "event_id": null
+      },
+      {
+        "id": "f015f7c98cce3136d6cbd5652822b8d1",
+        "title": "陶哲轩记录用现代编程代理改造新旧应用，软件开发进入协作模式",
+        "chinese_title": "陶哲轩记录用现代编程代理改造新旧应用，软件开发进入协作模式",
+        "original_title": "Old and new apps, via modern coding agents by Terry Tao",
+        "summary": "数学家陶哲轩分享利用现代编程代理处理新旧应用的实践，展示AI如何参与理解代码、修改功能和连接历史系统，也让非传统软件开发者获得更低门槛的工程协作方式。",
+        "rating": "A",
+        "score": 79,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "知名研究者的实践可能推动更多专业人士尝试编程代理，软件开发工具的竞争将从补全代码扩展到维护复杂遗留系统和交付完整应用。",
+        "entities": [
+          "Ai",
+          "Coding Agents",
+          "Software Development",
+          "Terence Tao"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142434",
+        "source": "Hacker News",
+        "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
+        "event_id": null
+      },
+      {
+        "id": "6615fddd6bb5819f46106347189b8d4b",
+        "title": "标普将OpenAI列为Oracle关键信用风险，云基础设施押注遭质疑",
+        "chinese_title": "标普将OpenAI列为Oracle关键信用风险，云基础设施押注遭质疑",
+        "original_title": "S&P Global sees OpenAI as a \"key credit risk\" for Oracle and cuts its credit rating",
+        "summary": "S&P Global将Oracle信用评级下调至BBB-，理由之一是OpenAI约占Oracle 6380亿美元合同义务的一半；一旦OpenAI缩减合作，Oracle可能面临难以填补的大量数据中心容量。",
+        "rating": "S",
+        "score": 97,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "事件把AI基础设施的长期合同与单一客户集中度风险暴露在资本市场面前，其他云厂商和芯片公司的扩张融资也可能受到重新审视。",
+        "entities": [
+          "Data Centers",
+          "OpenAI",
+          "Oracle",
+          "S&P Global"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/sp-global-sees-openai-as-a-key-credit-risk-for-oracle-and-cuts-its-credit-rating/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142451",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/sp-global-sees-openai-as-a-key-credit-risk-for-oracle-and-cuts-its-credit-rating/",
+        "event_id": null
+      },
+      {
+        "id": "9b37797d60873d9338e2234b79eabaa5",
+        "title": "AI结合量子计算设计新肽，研究者探索罕见病药物路径",
+        "chinese_title": "AI结合量子计算设计新肽，研究者探索罕见病药物路径",
+        "original_title": "Scientists’ Side Hustle? Using AI and Quantum Computing to Generate New Peptides",
+        "summary": "研究者尝试把AI与量子计算结合，用于生成可能具有药物价值的新肽，希望为罕见病和被忽视人群提供新的治疗线索，项目也展示了跨学科研究如何在有限资源下推进。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "如果候选肽能通过后续实验验证，AI与量子计算在药物发现中的分工将更清晰；短期关键仍是可合成性、活性和临床转化而非概念展示。",
+        "entities": [
+          "Ai",
+          "Drug Discovery",
+          "Peptides",
+          "Quantum Computing"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/scientists-using-ai-and-quantum-computing-to-generate-new-peptides/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142477",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/scientists-using-ai-and-quantum-computing-to-generate-new-peptides/",
+        "event_id": null
+      },
+      {
+        "id": "49da8536e808531f98c6565037a6b6b3",
+        "title": "诉讼称Grok被用于生成未成年人色情图片，SpaceX卷入安全争议",
+        "chinese_title": "诉讼称Grok被用于生成未成年人色情图片，SpaceX卷入安全争议",
+        "original_title": "Grok Linked to Sickening Crime in Lawsuit That Puts SpaceX in Crosshairs",
+        "summary": "一宗诉讼指控，一名男子利用Grok根据继女童年照片生成约7000张色情图片，案件把生成式AI滥用、未成年人保护和平台安全责任同时推到公众视野。",
+        "rating": "A+",
+        "score": 88,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "案件可能促使平台强化未成年人图像检测、生成限制和证据留存，也可能推动法律进一步明确模型提供商在严重滥用事件中的责任边界。",
+        "entities": [
+          "Elon Musk",
+          "Grok",
+          "SpaceX",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/grok-linked-sickening-crime"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142489",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/grok-linked-sickening-crime",
+        "event_id": null
+      },
+      {
+        "id": "fce18218132c1df6be3a4f0d060962c1",
+        "title": "教授警告AI真正风险并非犯错，而是让人放弃独立判断",
+        "chinese_title": "教授警告AI真正风险并非犯错，而是让人放弃独立判断",
+        "original_title": "The real danger of AI isn't that it's wrong &mdash; it's that it could make us stop thinking for ourselves, a professor says",
+        "summary": "伦敦大学皇家霍洛威学院教授Lucy Gill-Simmen认为，AI最值得警惕的风险不只是生成错误答案，而是用户因答案足够流畅而减少质疑、核验和主动调查，逐渐削弱判断信息真伪的能力。",
+        "rating": "B",
+        "score": 68,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "这一问题将影响教育、新闻和企业决策流程，未来AI产品可能需要把引用、反证提示和主动核验设计成默认能力，而非把责任完全交给用户。",
+        "entities": [
+          "Ai Hallucinations",
+          "Critical Thinking",
+          "Lucy Gill-Simmen",
+          "Royal Holloway University Of London"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI - Business Insider",
+            "url": "https://www.businessinsider.com/ai-may-be-weakening-ability-judge-whats-true-professor-says-2026-6"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142501",
+        "source": "AI - Business Insider",
+        "url": "https://www.businessinsider.com/ai-may-be-weakening-ability-judge-whats-true-professor-says-2026-6",
+        "event_id": null
+      },
+      {
+        "id": "1c658f0c59a7cbec8fcb9af2d2f4f922",
+        "title": "Anthropic分析120万次会话，Claude Cowork最常做的是琐碎办公活",
+        "chinese_title": "Anthropic分析120万次会话，Claude Cowork最常做的是琐碎办公活",
+        "original_title": "Claude Cowork's biggest use case is the mundane office work nobody wants to own, Anthropic says",
+        "summary": "Anthropic分析来自60多万家组织的120万次Claude Cowork会话后称，约一半使用量集中在业务流程和文字创作，包括状态报告、入职清单和演示文稿等没人愿意长期负责的\"工作周边\"。",
+        "rating": "S",
+        "score": 92,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "数据说明企业AI的首批规模化价值可能来自流程整理而非高难度研发，也会促使软件公司围绕文档、协作和审批链重构办公产品。",
+        "entities": [
+          "Ai Agents",
+          "Anthropic",
+          "Business Processes",
+          "Claude Cowork"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/claude-coworks-biggest-use-case-is-the-mundane-office-work-nobody-wants-to-own-anthropic-says/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142513",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/claude-coworks-biggest-use-case-is-the-mundane-office-work-nobody-wants-to-own-anthropic-says/",
+        "event_id": null
+      },
+      {
+        "id": "3a1ae824b69b690e08c714589edfca3f",
+        "title": "从预言大规模失业到相信AI创造岗位，奥特曼态度出现转向",
+        "chinese_title": "从预言大规模失业到相信AI创造岗位，奥特曼态度出现转向",
+        "original_title": "OpenAI CEO Altman is now \"pretty sure\" AI is net job-creating, which is quite the pivot from predicting mass layoffs",
+        "summary": "OpenAI首席执行官Sam Altman如今表示，他相当确信AI创造的岗位已经多于消灭的岗位，这与他过去关于整个职业消失的警告形成反差；Anthropic负责人也在弱化类似悲观判断。",
+        "rating": "A",
+        "score": 82,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "科技公司掌门人的叙事转向可能影响政策和投资预期，但真正结论仍取决于长期就业数据、行业生产率以及新岗位质量，而非单一人物判断。",
+        "entities": [
+          "Anthropic",
+          "Dario Amodei",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/openai-ceo-altman-is-now-pretty-sure-ai-is-net-job-creating-which-is-quite-the-pivot-from-predicting-mass-layoffs/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142524",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/openai-ceo-altman-is-now-pretty-sure-ai-is-net-job-creating-which-is-quite-the-pivot-from-predicting-mass-layoffs/",
+        "event_id": null
+      },
+      {
+        "id": "10aa4c7c87a9ea7581a7f2f9faede9a6",
+        "title": "结构化记忆让AI代理打通杀戮尖塔2，提示词从50万降至5000",
+        "chinese_title": "结构化记忆让AI代理打通杀戮尖塔2，提示词从50万降至5000",
+        "original_title": "AI agents win at Slay the Spire 2 after researchers replace growing chat logs with structured memory",
+        "summary": "AgenticSTS项目用五层结构化记忆替代不断增长的聊天记录，在《杀戮尖塔2》测试中把提示词规模控制在约5000个Token，代理十局赢下六局，而对比系统没有获胜。",
+        "rating": "A+",
+        "score": 91,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "结构化记忆可能成为长程代理降低上下文成本、保持任务状态的关键方案，游戏只是测试场，类似架构还可迁移到软件工程和复杂工作流。",
+        "entities": [
+          "Agenticsts",
+          "Ai Agents",
+          "Slay The Spire 2",
+          "Structured Memory"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/ai-agents-win-at-slay-the-spire-2-after-researchers-replace-growing-chat-logs-with-structured-memory/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142535",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/ai-agents-win-at-slay-the-spire-2-after-researchers-replace-growing-chat-logs-with-structured-memory/",
+        "event_id": null
+      },
+      {
+        "id": "437f8f0cd4bea1866fbb50a8a236296d",
+        "title": "Mindwalk把编程代理会话映射到代码库三维空间",
+        "chinese_title": "Mindwalk把编程代理会话映射到代码库三维空间",
+        "original_title": "Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase",
+        "summary": "Mindwalk尝试把编程代理的操作过程重放在代码库三维地图上，让开发者能够回看代理访问了哪些文件、如何移动和修改代码，为理解复杂代理行为提供更直观的可视化方式。",
+        "rating": "B",
+        "score": 69,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "代理可观测性将成为开发工具的重要组成部分，三维回放若能与错误定位、代码审查和团队协作结合，可能形成新的调试工作流。",
+        "entities": [
+          "Codebase Visualization",
+          "Coding Agents",
+          "Github",
+          "Mindwalk"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/cosmtrek/mindwalk"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142546",
+        "source": "Hacker News",
+        "url": "https://github.com/cosmtrek/mindwalk",
+        "event_id": null
+      },
+      {
+        "id": "49e3cbc2efecf318b2514392d0e02d8e",
+        "title": "开发者拆解Grok Build CLI，追踪命令实际发送给xAI的数据",
+        "chinese_title": "开发者拆解Grok Build CLI，追踪命令实际发送给xAI的数据",
+        "original_title": "What xAI's Grok Build CLI Actually Sends to xAI",
+        "summary": "一份代码分析记录试图揭示xAI的Grok Build CLI在运行过程中会向服务器发送哪些数据，为开发者评估命令行代理的遥测、隐私和请求边界提供了可复核的技术线索。",
+        "rating": "A",
+        "score": 77,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "随着AI开发工具接触源代码和环境变量，数据发送透明度会直接影响企业采用，厂商可能需要提供更清晰的日志、开关和最小权限控制。",
+        "entities": [
+          "Grok",
+          "Grok Build Cli",
+          "Telemetry",
+          "xAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142567",
+        "source": "Hacker News",
+        "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
+        "event_id": null
+      },
+      {
+        "id": "a42ce34abfbc887a19743b4196923d9e",
+        "title": "周度Token数据对比中美模型，DeepSeek采用趋势成为观察窗口",
+        "chinese_title": "周度Token数据对比中美模型，DeepSeek采用趋势成为观察窗口",
+        "original_title": "Weekly tokens by model author for Chinese and American models | April 20, 2026 - June 14, 2026",
+        "summary": "一份按模型作者统计的周度Token数据整理了4月20日至6月14日期间中美模型的使用变化，并将DeepSeek V4采用情况作为观察模型市场竞争与真实调用偏好的参考。",
+        "rating": "A",
+        "score": 75,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "Token使用量比单次发布声量更接近真实采用，但还需要结合价格、任务类型和重复调用校正，才能判断模型的商业渗透与收入潜力。",
+        "entities": [
+          "Ai Models",
+          "DeepSeek",
+          "Openrouter",
+          "Tokens"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1utut1o/weekly_tokens_by_model_author_for_chinese_and/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142599",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1utut1o/weekly_tokens_by_model_author_for_chinese_and/",
+        "event_id": null
+      },
+      {
+        "id": "16aa8f79b73941c75523062611689bdb",
+        "title": "AI初创发布视频爆红有规律，制作精良却不是决定因素",
+        "chinese_title": "AI初创发布视频爆红有规律，制作精良却不是决定因素",
+        "original_title": "I tracked 10 AI startup launch videos from the last 6 months. The gap between the ones that hit 1M+ views and the ones that died is weirdly consistent",
+        "summary": "一位创业者跟踪近半年AI初创公司的发布视频后发现，能获得百万级播放与表现平平的案例之间存在稳定差异，而视频制作质量并不是最关键因素，选题、叙事和分发可能更重要。",
+        "rating": "B",
+        "score": 68,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "如果样本扩大，AI创业营销可能形成一套可量化的发布方法论，产品定位与首批用户传播意愿或许比单纯增加制作预算更能决定声量。",
+        "entities": [
+          "Ai Startups",
+          "Product Launches",
+          "Startup Marketing",
+          "X"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1utr9er/i_tracked_10_ai_startup_launch_videos_from_the/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142610",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1utr9er/i_tracked_10_ai_startup_launch_videos_from_the/",
+        "event_id": null
+      },
+      {
+        "id": "b1c88edc89ecd885e90680818e900c1d",
+        "title": "社区讨论奥特曼与奇点迹象，焦点落在模型成本和通用能力",
+        "chinese_title": "社区讨论奥特曼与奇点迹象，焦点落在模型成本和通用能力",
+        "original_title": "Sam Altman showing signs of singularity",
+        "summary": "一则社区帖子围绕Sam Altman近期言论展开讨论，用户关注前沿模型成本下降、数学能力进展以及通用模型处理小型编程任务的表现，并借此联想到奇点是否正在接近。",
+        "rating": "B",
+        "score": 67,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这类讨论能反映技术社区对能力跃迁的感知，但判断奇点仍需可重复的能力、成本和自主性证据，不能把个别案例等同于行业里程碑。",
+        "entities": [
+          "Ai Models",
+          "OpenAI",
+          "Sam Altman",
+          "Technological Singularity"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1utq7zm/sam_altman_showing_signs_of_singularity/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142620",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1utq7zm/sam_altman_showing_signs_of_singularity/",
+        "event_id": null
+      },
+      {
+        "id": "dc8c78a342e333481c3b9751b6d64d40",
+        "title": "Mesh LLM尝试用iroh分布式运行大模型，探索去中心化算力",
+        "chinese_title": "Mesh LLM尝试用iroh分布式运行大模型，探索去中心化算力",
+        "original_title": "Mesh LLM: distributed AI computing on iroh",
+        "summary": "Mesh LLM项目基于iroh探索把大模型计算分布到多个节点上，通过网络协作完成推理，目标是在不依赖单一服务器的情况下利用分散设备和带宽构建AI运行环境。",
+        "rating": "B",
+        "score": 72,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "分布式推理能否实用取决于网络延迟、隐私、节点稳定性和模型切分效率，若技术成熟，边缘设备闲置算力可能成为云端之外的新资源池。",
+        "entities": [
+          "Distributed Ai",
+          "Iroh",
+          "Large Language Models",
+          "Mesh Llm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.iroh.computer/blog/mesh-llm"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1783896933,
+        "published_at": "2026-07-13T06:55:33.142691",
+        "source": "Hacker News",
+        "url": "https://www.iroh.computer/blog/mesh-llm",
+        "event_id": null
+      }
     ]
   },
-  "last_updated": "2026-07-13T06:58:29.818321",
-  "total_news": 145
+  "last_updated": "2026-07-13T06:58:42.454957",
+  "total_news": 164
 }
