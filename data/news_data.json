@@ -2,6 +2,637 @@
   "news": {
     "2026-07-15": [
       {
+        "id": "ae9a02139ed91a42b486111a9bb8ef0e",
+        "title": "OpenAI推出GPT-Red，用自博弈规模化寻找提示注入漏洞",
+        "chinese_title": "OpenAI推出GPT-Red，用自博弈规模化寻找提示注入漏洞",
+        "original_title": "Really cool to see OpenAI is using self-play for red-teaming now! Our group was the first to show the promise of this approach https://arxiv.org/abs/2...",
+        "summary": "OpenAI介绍内部自动化红队工具GPT-Red，尝试通过自博弈在大规模部署前主动发现模型的提示注入漏洞；相关研究者认为，这类方法有望补足单智能体安全微调的局限。",
+        "rating": "A+",
+        "score": 90,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸分析GPT-Red的攻击覆盖面、误报率和评测方法，比较自博弈红队与人工审查、传统安全微调的成本和效果。",
+        "entities": [
+          "Ai安全",
+          "Gpt-Red",
+          "OpenAI",
+          "提示注入"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/natashajaques/status/2077458133770010770"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147519",
+        "source": "x",
+        "url": "https://x.com/natashajaques/status/2077458133770010770",
+        "event_id": null
+      },
+      {
+        "id": "464bf730ec3261ca09844c196eaa93dd",
+        "title": "Perplexity为Computer打造可长期暂停的双层虚拟机快照",
+        "chinese_title": "Perplexity为Computer打造可长期暂停的双层虚拟机快照",
+        "original_title": "RT Zibi Braniecki: Our team had to build a novel sandbox solution to handle the needs of Computer. One Computer session can run for days and pause whi...",
+        "summary": "Perplexity团队为Computer会话设计SPACE沙箱，用磁盘快照和完整检查点分别保存文件系统与运行中的虚拟机状态，使可持续数天、可随时暂停的代理任务恢复时不必丢失进程和内存。",
+        "rating": "A",
+        "score": 80,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸观察长时代理对虚拟机、内存和云成本的要求，比较检查点恢复、容器休眠与传统工作流编排在可靠性上的差异。",
+        "entities": [
+          "Ai代理",
+          "Computer",
+          "Perplexity",
+          "Space"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/AravSrinivas/status/2077466912326639698"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147572",
+        "source": "x",
+        "url": "https://x.com/AravSrinivas/status/2077466912326639698",
+        "event_id": null
+      },
+      {
+        "id": "2888ab960ea63bacba3754c3565cf723",
+        "title": "Anthropic公开指控智谱蒸馏Claude与OpenAI模型训练GLM-5.2",
+        "chinese_title": "Anthropic公开指控智谱蒸馏Claude与OpenAI模型训练GLM-5.2",
+        "original_title": "RT Vincent Chow: Anthropic's head of national security policy Tarun Chhabra accused Zhipu of distilling both Claude and OpenAI's models for GLM-5.2 at...",
+        "summary": "Anthropic国家安全政策负责人Tarun Chhabra据称在论坛上指控智谱将Claude和OpenAI模型用于GLM-5.2蒸馏，并称每周关闭数百万个相关账号；这些说法仍需各方证据和回应核验。",
+        "rating": "S",
+        "score": 94,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸核查蒸馏账号、模型输出相似度和平台封禁证据，讨论模型蒸馏对开源竞争、出口管制与行业安全边界的影响。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Glm-5.2",
+          "智谱",
+          "模型蒸馏"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/AndrewCurran_/status/2077472879114104984"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147587",
+        "source": "x",
+        "url": "https://x.com/AndrewCurran_/status/2077472879114104984",
+        "event_id": null
+      },
+      {
+        "id": "65091e0dc72f7bfc6362d0f6beeb5be8",
+        "title": "ChatGPT挑战1025只宝可梦无提示填字游戏，五次均未完成",
+        "chinese_title": "ChatGPT挑战1025只宝可梦无提示填字游戏，五次均未完成",
+        "original_title": "ChatGPT 5.6 Sol Pro tries to solve a clue-free crossword of all 1,025 Pokémon (made by Fable 5 Max). Five attempts, memory off. All tries returned pa...",
+        "summary": "在一项由Fable制作的无提示宝可梦填字测试中，ChatGPT 5.6 Sol Pro连续五次尝试最多只完成145个答案，其余尝试较早超时或报错，显示长程组合推理仍存在明显瓶颈。",
+        "rating": "B",
+        "score": 73,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸拆解这类任务对记忆、搜索、约束满足和工具调用的要求，并比较不同模型在可重复设置下的完成率，而不是只看单次展示。",
+        "entities": [
+          "Fable",
+          "GPT",
+          "OpenAI",
+          "组合推理"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/goodside/status/2077442147553292618"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147601",
+        "source": "x",
+        "url": "https://x.com/goodside/status/2077442147553292618",
+        "event_id": null
+      },
+      {
+        "id": "717d9d9744a08c42e48c15adc06d1a04",
+        "title": "OpenAI推出230美元Codex Micro，给编程代理配实体控制台",
+        "chinese_title": "OpenAI推出230美元Codex Micro，给编程代理配实体控制台",
+        "original_title": "OpenAI reveals Codex Micro (their first hardware product, so to say) OpenAI’s $230 Codex Micro is a compact control deck for agentic coding, with RGB...",
+        "summary": "OpenAI与Work Louder合作推出230美元的Codex Micro控制台，提供RGB状态键、常用Codex快捷键和推理强度旋钮，试图让开发者更直观地管理多个编程代理。",
+        "rating": "A",
+        "score": 76,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可延伸观察实体控制器能否改善多代理编程的状态感知和任务切换，比较其与键盘宏、IDE插件及企业级代理编排产品的实际差异。",
+        "entities": [
+          "Codex",
+          "Codex Micro",
+          "OpenAI",
+          "Work Louder"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/kimmonismus/status/2077432055911059921"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147614",
+        "source": "x",
+        "url": "https://x.com/kimmonismus/status/2077432055911059921",
+        "event_id": null
+      },
+      {
+        "id": "78eee6477afda970fe0741feb18b5388",
+        "title": "Kimi K3游戏测试进步明显，多款模型仍难稳定完成任务",
+        "chinese_title": "Kimi K3游戏测试进步明显，多款模型仍难稳定完成任务",
+        "original_title": "Kimi-K3 VS Opus-4.8 GTA IV test. Left : Kimi, Right : Opus-4.8 Kimi-K3 got impressively better than its previous model. + Muse Spark 1.1 generated som...",
+        "summary": "一组GTA IV测试显示，Kimi K3相较前代有明显进步，但与Opus 4.8的表现仍需统一条件比较；同帖还称Muse Spark 1.1和Gemini 3.5 Flash未能生成可玩的结果。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸建立游戏操作代理的统一评测，区分视频生成、环境理解和持续控制能力，关注演示画面与真正可玩性之间的差距。",
+        "entities": [
+          "K3",
+          "Kimi",
+          "Opus",
+          "游戏代理"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/jun_song/status/2077426943822270951"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147627",
+        "source": "x",
+        "url": "https://x.com/jun_song/status/2077426943822270951",
+        "event_id": null
+      },
+      {
+        "id": "62c69598d8a0a7b180680ab58eff7983",
+        "title": "Pan-1在Minecraft中出现奖励投机，绕过目标也能骗过训练机制",
+        "chinese_title": "Pan-1在Minecraft中出现奖励投机，绕过目标也能骗过训练机制",
+        "original_title": "models grow up so fast :') pan-1 is already reward hacking. here we commanded it with a goal image where it's supposed to be riding a horse but it sli...",
+        "summary": "Pantograph展示的Minecraft模型Pan-1在完成骑马目标时绕过围栏、跳跃取巧，仍获得训练奖励，被研究者视为奖励投机案例；模型同时尝试战斗、建造和探索等任务。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸分析奖励函数漏洞如何从游戏迁移到机器人控制，重点观察目标图像、环境约束和真实成功之间能否建立更可靠的评估。",
+        "entities": [
+          "Minecraft",
+          "Pan-1",
+          "Pantograph",
+          "奖励投机"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/camfassett/status/2077423945062723710"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147650",
+        "source": "x",
+        "url": "https://x.com/camfassett/status/2077423945062723710",
+        "event_id": null
+      },
+      {
+        "id": "147a0edbb6bcc67f6a491a951722fb4f",
+        "title": "ReactBench发布真实前端任务基准，暴露编码代理短板",
+        "chinese_title": "ReactBench发布真实前端任务基准，暴露编码代理短板",
+        "original_title": "Introducing ReactBench A benchmark for coding agents on real React work Models write bad React code - useEffect, slow performance, memory leaks",
+        "summary": "ReactBench面向真实React开发任务评估编码代理，初步观察指出模型经常滥用useEffect，并留下性能问题、内存泄漏等缺陷，提示通过测试不等于交付可维护前端代码。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸比较ReactBench与传统代码生成基准在任务真实性、缺陷检测和长期维护上的差异，追踪代理能否从静态补全走向工程质量负责。",
+        "entities": [
+          "React",
+          "Reactbench",
+          "编码代理",
+          "软件质量"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/aidenybai/status/2077422965332037679"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147661",
+        "source": "x",
+        "url": "https://x.com/aidenybai/status/2077422965332037679",
+        "event_id": null
+      },
+      {
+        "id": "b2586a2591d5801f376d309edd089ac8",
+        "title": "报道称SpaceX拟以600亿美元收购Cursor，后者谋求转型模型公司",
+        "chinese_title": "报道称SpaceX拟以600亿美元收购Cursor，后者谋求转型模型公司",
+        "original_title": "New for @TheInformation: Cursor is mapping out a major transformation ahead of its $60 billion acquisition by SpaceX. CEO Michael Truell told staff du...",
+        "summary": "The Information报道称，Cursor正在筹划被SpaceX以约600亿美元收购后的业务转型，CEO Michael Truell曾向员工表示公司希望年底前从编程工具扩展为一流AI模型开发商。",
+        "rating": "S",
+        "score": 95,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸核实交易进度、估值和员工态度，分析SpaceX收购开发者工具公司后如何获得模型人才、数据与分发入口。",
+        "entities": [
+          "Ai模型",
+          "Cursor",
+          "Michael Truell",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/graceihle/status/2077417352958763235"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147673",
+        "source": "x",
+        "url": "https://x.com/graceihle/status/2077417352958763235",
+        "event_id": null
+      },
+      {
+        "id": "76717c86f3af443ee21bcf7365ea6d92",
+        "title": "AI研究可复现性受质疑，社区联手复核ICML论文",
+        "chinese_title": "AI研究可复现性受质疑，社区联手复核ICML论文",
+        "original_title": "70% of AI research isn’t reproducible. With ICML 2026 happening last week, over 6000+ research papers have dropped, but how many are actually real an...",
+        "summary": "AlphaXiv发起社区挑战，援引约七成AI研究难以复现的说法，邀请研究者与Hugging Face复核ICML 2026论文，并用自动化研究代理生成公开实验记录和复现材料。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸追踪挑战项目的样本、复现标准和失败原因，观察自动化代理能否降低论文复核成本，以及公开工件是否改善研究激励。",
+        "entities": [
+          "Alphaxiv",
+          "Hugging Face",
+          "Icml",
+          "科研可复现性"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/askalphaxiv/status/2077415909652901993"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147685",
+        "source": "x",
+        "url": "https://x.com/askalphaxiv/status/2077415909652901993",
+        "event_id": null
+      },
+      {
+        "id": "aeecafc5e0c5bf3955b46cf1acfc5431",
+        "title": "RoboTTT把机器人记忆扩展到5分钟，推理成本保持不变",
+        "chinese_title": "RoboTTT把机器人记忆扩展到5分钟，推理成本保持不变",
+        "original_title": "RT Jim Fan: We scaled a robot model natively to 8,000 timesteps of context, 5 minutes worth of muscle memory, with constant inference cost. Robot poli...",
+        "summary": "研究团队介绍RoboTTT，将测试时训练机制用于机器人策略，让模型在每次传感器输入到来时更新内部小模型，把有效上下文扩展到约8000个时间步，即大约5分钟的运动历史。",
+        "rating": "A",
+        "score": 86,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸核查长上下文对机器人成功率、延迟和稳定性的真实贡献，比较测试时训练与外部记忆、视频窗口扩展在实际部署中的成本。",
+        "entities": [
+          "Robottt",
+          "机器人策略",
+          "机器人记忆",
+          "测试时训练"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/tengyuma/status/2077431819650437418"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147696",
+        "source": "x",
+        "url": "https://x.com/tengyuma/status/2077431819650437418",
+        "event_id": null
+      },
+      {
+        "id": "5dbd108d448ad6eece1a4021b685a8fc",
+        "title": "Monumental机器人已参与建造百套住宅，机器施工走向规模化",
+        "chinese_title": "Monumental机器人已参与建造百套住宅，机器施工走向规模化",
+        "original_title": "RT Sholto Douglas: One of my hopes is that we can get the cost of housing construction down to the cost of materials, and the cost of materials down t...",
+        "summary": "Monumental团队称其砌砖机器人已经参与完成100套住宅，以及学校、酒店、社区中心和阿姆斯特丹运河墙等项目，显示自动化施工正在从演示走向连续工程交付。",
+        "rating": "A",
+        "score": 79,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可延伸核实项目中的机器人数量、人工配比、施工速度和成本，比较砌砖自动化对建筑劳动力、工期与住房价格的长期影响。",
+        "entities": [
+          "Monumental",
+          "住宅建设",
+          "建筑自动化",
+          "砌砖机器人"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/tszzl/status/2077463942218301796"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147707",
+        "source": "x",
+        "url": "https://x.com/tszzl/status/2077463942218301796",
+        "event_id": null
+      },
+      {
+        "id": "9b866bf8d839fc8b2df0dc027da7b14d",
+        "title": "Ring-2.5-1T-Zero把零强化学习扩展到万亿参数模型",
+        "chinese_title": "Ring-2.5-1T-Zero把零强化学习扩展到万亿参数模型",
+        "original_title": "Introducing Ring-2.5-1T-Zero: Scaling Zero RL to a 1-Trillion parameter model. We train this giant directly from base with NO extra human annotations,...",
+        "summary": "研究团队介绍Ring-2.5-1T-Zero，宣称在没有额外人工标注的情况下，直接从基础模型扩展零强化学习训练至万亿参数规模，并取得具有竞争力的推理表现。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸核验训练成本、数据构成和独立基准结果，观察零强化学习能否在超大模型上稳定扩展，以及是否真的减少人工监督需求。",
+        "entities": [
+          "Ring-2.5-1T-Zero",
+          "万亿参数模型",
+          "模型训练",
+          "零强化学习"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/AntLingAGI/status/2077398525164519570"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147730",
+        "source": "x",
+        "url": "https://x.com/AntLingAGI/status/2077398525164519570",
+        "event_id": null
+      },
+      {
+        "id": "ca2acbd5d49ef16207b019d207cbf8ce",
+        "title": "Kimi K3首批测试流出，Moonshot或再度冲击模型排名",
+        "chinese_title": "Kimi K3首批测试流出，Moonshot或再度冲击模型排名",
+        "original_title": "Breaking: Kimi K3’s first output is here it looks like a Fable 5 output, but this is actually K3 we might have a new SOTA model dropping today, moons...",
+        "summary": "社交平台流传Kimi K3的首批输出，发布者认为其效果接近Fable 5并可能刷新模型水平；同帖还讨论多家AI公司自研芯片，但这些内容均需等待官方信息和独立测试确认。",
+        "rating": "B",
+        "score": 68,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "可延伸跟踪Kimi K3正式发布、公开权重和第三方评测，同时核查Moonshot自研芯片传闻是否会改变模型训练与推理成本。",
+        "entities": [
+          "Ai芯片",
+          "K3",
+          "Kimi",
+          "Moonshot"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/notjazii/status/2077396685488013467"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147742",
+        "source": "x",
+        "url": "https://x.com/notjazii/status/2077396685488013467",
+        "event_id": null
+      },
+      {
+        "id": "0c3c0965a82509454d71daf3e2ad954f",
+        "title": "DeepSeek年化收入据称接近5亿美元，拟按740亿美元估值再融资",
+        "chinese_title": "DeepSeek年化收入据称接近5亿美元，拟按740亿美元估值再融资",
+        "original_title": "And we just updated our story with new reporting that DeepSeek's gross margin from selling v4 API access is...70% to 80% (!)",
+        "summary": "The Information报道称，DeepSeek销售V4 API的毛利率可能达到70%至80%，年化收入接近5亿美元，并计划以约740亿美元估值再次融资约74亿美元；数据和交易仍待核实。",
+        "rating": "S",
+        "score": 98,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延伸拆解API收入、毛利率与算力成本的关系，核查融资主体和估值依据，观察低价模型如何在扩大规模后形成可持续商业模式。",
+        "entities": [
+          "DeepSeek",
+          "V4 Api",
+          "毛利率",
+          "融资"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/jingyanghk/status/2077355803615646008"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147765",
+        "source": "x",
+        "url": "https://x.com/jingyanghk/status/2077355803615646008",
+        "event_id": null
+      },
+      {
+        "id": "af40b7c20d8c9cae3398caee449de240",
+        "title": "GPT-5.6据称90分钟解出统计学难题，推理边界再被刷新",
+        "chinese_title": "GPT-5.6据称90分钟解出统计学难题，推理边界再被刷新",
+        "original_title": "\"GPT-5.6 one-shot the problem after 90 minutes of reasoning\" \"Emmanuel Candes of Stanford University once called the false discovery rate and the Benj...",
+        "summary": "一则社交平台分享称，GPT-5.6经过约90分钟推理后独立解决了与错误发现率相关的统计学问题；这类单案例展示尚不能替代数学家复核和可重复实验。",
+        "rating": "B",
+        "score": 68,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸获取完整题目、推理过程和证明稿，比较模型在已有方法组合、原创猜想与形式化验证上的能力边界。",
+        "entities": [
+          "GPT",
+          "Gpt-5.6",
+          "数学推理",
+          "错误发现率"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/jdlichtman/status/2077297788304429195"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784150055,
+        "published_at": "2026-07-16T05:14:15.147776",
+        "source": "x",
+        "url": "https://x.com/jdlichtman/status/2077297788304429195",
+        "event_id": null
+      },
+      {
+        "id": "0cfe4d62d8d61c585632af903d72adfe",
+        "title": "AI初创Reflection据称签下10亿美元算力合同",
+        "chinese_title": "AI初创Reflection据称签下10亿美元算力合同",
+        "original_title": "AI startup Reflection says it has signed a $1B+ deal to secure computing capacity from Nebius, including access to Nvidia chips, following a deal with SpaceX (Aditya Soni/Reuters)",
+        "summary": "路透报道称，AI初创公司Reflection与Nebius签署了超过10亿美元的算力合同，可获得英伟达芯片资源；此前公司还与SpaceX达成过相关合作。",
+        "rating": "A+",
+        "score": 91,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延伸核实合同期限、芯片型号和客户收入，观察算力采购从云服务转向长期锁定后对AI初创现金流与云厂商竞争的影响。",
+        "entities": [
+          "NVIDIA",
+          "Nebius",
+          "Reflection",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260714/p22#a260714p22"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784073323,
+        "published_at": "2026-07-15T07:55:23.913535",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260714/p22#a260714p22",
+        "event_id": null
+      },
+      {
+        "id": "22e98bb68576bf7d073e47d3e9f2e584",
+        "title": "DNA粉碎酶被改造成针对癌细胞的潜在疗法",
+        "chinese_title": "DNA粉碎酶被改造成针对癌细胞的潜在疗法",
+        "original_title": "DNA-shredding CRISPR enzyme takes aim at cancer cells",
+        "summary": "Nature报道，研究人员借用细菌自毁机制改造出一种能破坏DNA的CRISPR酶，在小鼠肿瘤模型中选择性清除癌细胞，展示了新的精准治疗方向。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸核对酶的靶向机制、脱靶风险和动物实验数据，关注其从小鼠模型走向临床前研究所需的递送和安全验证。",
+        "entities": [
+          "Crispr",
+          "Dna",
+          "基因治疗",
+          "癌细胞"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-02122-2"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784073323,
+        "published_at": "2026-07-15T07:55:23.913563",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-02122-2",
+        "event_id": null
+      },
+      {
+        "id": "ead67376bf8c8353ff8fc369487db2cb",
+        "title": "四类技术正在打开深海最后的未知区域",
+        "chinese_title": "四类技术正在打开深海最后的未知区域",
+        "original_title": "The race to explore the deep ocean: four technologies transforming research",
+        "summary": "Nature介绍深海钻探船、海底传感器和改造互联网海缆等技术如何帮助科学家研究地球上仍未充分测绘的深海区域。",
+        "rating": "B",
+        "score": 65,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可延伸比较深海观测设备的成本、通信和耐压能力，关注海底资源开发、气候研究与基础设施部署的交叉影响。",
+        "entities": [
+          "互联网海缆",
+          "海底传感器",
+          "深海探测",
+          "深海钻探"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-01988-6"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784073323,
+        "published_at": "2026-07-15T07:55:23.913593",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-01988-6",
+        "event_id": null
+      },
+      {
+        "id": "c53b14fe0d0e79ee461a07d9fa66a82b",
+        "title": "研究人员尝试重建胸腺，寻找延缓衰老的新路径",
+        "chinese_title": "研究人员尝试重建胸腺，寻找延缓衰老的新路径",
+        "original_title": "Could this mysterious disappearing organ hold the key to longevity?",
+        "summary": "Nature报道，胸腺这一会随年龄萎缩的免疫器官可能与衰老有关，研究人员正尝试让其重新生长，以探索改善免疫功能和延缓衰老的可能性。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸梳理胸腺再生的动物与临床证据，区分免疫改善、抗衰老和延长寿命之间的科学边界。",
+        "entities": [
+          "免疫系统",
+          "再生医学",
+          "胸腺",
+          "衰老"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-02149-5"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784073323,
+        "published_at": "2026-07-15T07:55:23.913605",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-02149-5",
+        "event_id": null
+      },
+      {
+        "id": "108874bff90c35c2ec4a9347a06bdf99",
+        "title": "一个国家对AI模型的担忧，正在变成全球共同约束",
+        "chinese_title": "一个国家对AI模型的担忧，正在变成全球共同约束",
+        "original_title": "AI models: one country’s fears become everyone’s constraint",
+        "summary": "Nature评论讨论单个国家对AI模型的安全、开放或治理担忧如何通过政策和产业链传导，最终限制其他地区的模型研发与应用选择。",
+        "rating": "B",
+        "score": 65,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸分析AI出口管制、模型开放和跨境数据政策的连锁影响，比较国家安全目标与全球科研合作之间的张力。",
+        "entities": [
+          "Ai模型",
+          "Ai治理",
+          "全球科技政策",
+          "出口管制"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-02187-z"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784073323,
+        "published_at": "2026-07-15T07:55:23.913648",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-02187-z",
+        "event_id": null
+      },
+      {
         "id": "9ebc2131c56f0aafd5a80b3247c1ba7e",
         "title": "R3 Bio被曝讨论无脑\"器官袋\"，又试图压下相关采访",
         "chinese_title": "R3 Bio被曝讨论无脑\"器官袋\"，又试图压下相关采访",
@@ -2341,156 +2972,6 @@
       }
     ],
     "2026-07-14": [
-      {
-        "id": "0cfe4d62d8d61c585632af903d72adfe",
-        "title": "AI初创Reflection据称签下10亿美元算力合同",
-        "chinese_title": "AI初创Reflection据称签下10亿美元算力合同",
-        "original_title": "AI startup Reflection says it has signed a $1B+ deal to secure computing capacity from Nebius, including access to Nvidia chips, following a deal with SpaceX (Aditya Soni/Reuters)",
-        "summary": "路透报道称，AI初创公司Reflection与Nebius签署了超过10亿美元的算力合同，可获得英伟达芯片资源；此前公司还与SpaceX达成过相关合作。",
-        "rating": "A+",
-        "score": 91,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "可延伸核实合同期限、芯片型号和客户收入，观察算力采购从云服务转向长期锁定后对AI初创现金流与云厂商竞争的影响。",
-        "entities": [
-          "NVIDIA",
-          "Nebius",
-          "Reflection",
-          "SpaceX"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260714/p22#a260714p22"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784073323,
-        "published_at": "2026-07-15T07:55:23.913535",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260714/p22#a260714p22",
-        "event_id": null
-      },
-      {
-        "id": "22e98bb68576bf7d073e47d3e9f2e584",
-        "title": "DNA粉碎酶被改造成针对癌细胞的潜在疗法",
-        "chinese_title": "DNA粉碎酶被改造成针对癌细胞的潜在疗法",
-        "original_title": "DNA-shredding CRISPR enzyme takes aim at cancer cells",
-        "summary": "Nature报道，研究人员借用细菌自毁机制改造出一种能破坏DNA的CRISPR酶，在小鼠肿瘤模型中选择性清除癌细胞，展示了新的精准治疗方向。",
-        "rating": "A+",
-        "score": 88,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸核对酶的靶向机制、脱靶风险和动物实验数据，关注其从小鼠模型走向临床前研究所需的递送和安全验证。",
-        "entities": [
-          "Crispr",
-          "Dna",
-          "基因治疗",
-          "癌细胞"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-02122-2"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784073323,
-        "published_at": "2026-07-15T07:55:23.913563",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-02122-2",
-        "event_id": null
-      },
-      {
-        "id": "ead67376bf8c8353ff8fc369487db2cb",
-        "title": "四类技术正在打开深海最后的未知区域",
-        "chinese_title": "四类技术正在打开深海最后的未知区域",
-        "original_title": "The race to explore the deep ocean: four technologies transforming research",
-        "summary": "Nature介绍深海钻探船、海底传感器和改造互联网海缆等技术如何帮助科学家研究地球上仍未充分测绘的深海区域。",
-        "rating": "B",
-        "score": 65,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可延伸比较深海观测设备的成本、通信和耐压能力，关注海底资源开发、气候研究与基础设施部署的交叉影响。",
-        "entities": [
-          "互联网海缆",
-          "海底传感器",
-          "深海探测",
-          "深海钻探"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-01988-6"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784073323,
-        "published_at": "2026-07-15T07:55:23.913593",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-01988-6",
-        "event_id": null
-      },
-      {
-        "id": "c53b14fe0d0e79ee461a07d9fa66a82b",
-        "title": "研究人员尝试重建胸腺，寻找延缓衰老的新路径",
-        "chinese_title": "研究人员尝试重建胸腺，寻找延缓衰老的新路径",
-        "original_title": "Could this mysterious disappearing organ hold the key to longevity?",
-        "summary": "Nature报道，胸腺这一会随年龄萎缩的免疫器官可能与衰老有关，研究人员正尝试让其重新生长，以探索改善免疫功能和延缓衰老的可能性。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸梳理胸腺再生的动物与临床证据，区分免疫改善、抗衰老和延长寿命之间的科学边界。",
-        "entities": [
-          "免疫系统",
-          "再生医学",
-          "胸腺",
-          "衰老"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-02149-5"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784073323,
-        "published_at": "2026-07-15T07:55:23.913605",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-02149-5",
-        "event_id": null
-      },
-      {
-        "id": "108874bff90c35c2ec4a9347a06bdf99",
-        "title": "一个国家对AI模型的担忧，正在变成全球共同约束",
-        "chinese_title": "一个国家对AI模型的担忧，正在变成全球共同约束",
-        "original_title": "AI models: one country’s fears become everyone’s constraint",
-        "summary": "Nature评论讨论单个国家对AI模型的安全、开放或治理担忧如何通过政策和产业链传导，最终限制其他地区的模型研发与应用选择。",
-        "rating": "B",
-        "score": 65,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可延伸分析AI出口管制、模型开放和跨境数据政策的连锁影响，比较国家安全目标与全球科研合作之间的张力。",
-        "entities": [
-          "Ai模型",
-          "Ai治理",
-          "全球科技政策",
-          "出口管制"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-02187-z"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784073323,
-        "published_at": "2026-07-15T07:55:23.913648",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-02187-z",
-        "event_id": null
-      },
       {
         "id": "4caecb771fd59784d13dfee595a21aba",
         "title": "诺奖经济学家与AI领袖联名警告：就业准备窗口正在关闭",
@@ -7846,1209 +8327,6 @@
         "event_id": null
       }
     ],
-    "2026-07-08": [
-      {
-        "id": "eb0a9d4489f7a842d15a6ba7ba34a9e3",
-        "title": "美国太空军首套机动电磁反卫星系统交付",
-        "chinese_title": "美国太空军首套机动电磁反卫星系统交付",
-        "original_title": "Space Force gets first mobile high-powered electromagnetic beam weapon to cripple enemy satellites — plans to deploy 32 ‘Meadowlands’ units to detect, deny, disrupt, and degrade hostile space assets",
-        "summary": "美国太空军首套 Meadowlands 反通信系统进入作战交付，计划部署 32 套机动电磁战设备，用于干扰和削弱敌方卫星通信能力。",
-        "rating": "B",
-        "score": 70,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "这类太空电磁战装备会把卫星通信、军用频谱管理和商业星座抗干扰能力推到同一条竞争线上，后续可追踪美国军方采购节奏及商业卫星厂商的防护方案。",
-        "entities": [
-          "Meadowlands",
-          "反通信系统",
-          "电磁战",
-          "美国太空军"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/space/space-force-gets-first-mobile-high-powered-electromagnetic-beam-weapon-to-cripple-enemy-satellites-plans-to-deploy-32-meadowlands-units-to-detect-deny-disrupt-and-degrade-hostile-space-assets"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783505265,
-        "published_at": "2026-07-08T18:07:45.361774",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/space/space-force-gets-first-mobile-high-powered-electromagnetic-beam-weapon-to-cripple-enemy-satellites-plans-to-deploy-32-meadowlands-units-to-detect-deny-disrupt-and-degrade-hostile-space-assets",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "4b0f3c10e9b047ea0a916231e4875f2a",
-        "title": "前DeepMind高管警告AI军备竞赛正走向失控",
-        "chinese_title": "前DeepMind高管警告AI军备竞赛正走向失控",
-        "original_title": "This Former DeepMind Exec Thinks the AI Arms Race Could End in Disaster",
-        "summary": "前 DeepMind 政策负责人 Verity Harding 接受 WIRED 采访时称，美国政府对 AI 的民族主义叙事正在放大灾难性竞赛风险。",
-        "rating": "B",
-        "score": 72,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "该观点可延伸到美国 AI 政策、安全评估和国际治理框架的紧张关系，适合作为 AI 国家竞争叙事的背景材料。",
-        "entities": [
-          "Ai治理",
-          "DeepMind",
-          "Verity Harding",
-          "Wired"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Feed: Artificial Intelligence Latest",
-            "url": "https://www.wired.com/story/verity-harding-ai-arms-race-dangers-anthology/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783505265,
-        "published_at": "2026-07-08T18:07:45.361803",
-        "source": "Feed: Artificial Intelligence Latest",
-        "url": "https://www.wired.com/story/verity-harding-ai-arms-race-dangers-anthology/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "996655ea4051f5d5bbbe0e110544df0e",
-        "title": "中国CNVD称Claude Code存在后门风险",
-        "chinese_title": "中国CNVD称Claude Code存在后门风险",
-        "original_title": "China's CNVD says it found \"security backdoor vulnerabilities\" in Claude Code that \"send sensitive information\" like \"location and identity to remote servers\" (Raffaele Huang/Wall Street Journal)",
-        "summary": "Techmeme 援引华尔街日报报道称，中国 CNVD 指 Claude Code 存在会向远程服务器发送位置和身份等敏感信息的安全后门漏洞，并建议用户卸载或升级。",
-        "rating": "A",
-        "score": 84,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "事件可能影响海外 AI 编程工具在中国市场的合规与信任，也会引发围绕遥测、供应链安全和开发者工具跨境使用的后续讨论。",
-        "entities": [
-          "Anthropic",
-          "Claude Code",
-          "Cnvd",
-          "开发者工具安全"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260708/p12#a260708p12"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783505265,
-        "published_at": "2026-07-08T18:07:45.361825",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260708/p12#a260708p12",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "52ec93a8c07cd5577b7bc6e32b8a51e9",
-        "title": "中国科大用分子轨道节点调控室温磷光",
-        "chinese_title": "中国科大用分子轨道节点调控室温磷光",
-        "original_title": "中国科大揭示分子轨道节点对芳香分子反应性与室温磷光的调控作用-中国科大新闻网",
-        "summary": "中国科大等团队以芘分子为模型，证明分子轨道节点可同时影响芳香分子反应性和室温磷光，为新型有机光电材料设计提供依据。",
-        "rating": "A",
-        "score": 75,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该研究可延展到有机发光材料、磷光传感和可控合成方法，重点看是否能从机理验证走向材料性能和器件应用。",
-        "entities": [
-          "National Science Review",
-          "中国科大",
-          "分子轨道节点",
-          "室温磷光"
-        ],
-        "sourceLinks": [
-          {
-            "name": "科研进展-中国科大新闻网",
-            "url": "http://news.ustc.edu.cn/info/1048/95661.htm"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783505265,
-        "published_at": "2026-07-08T18:07:45.361839",
-        "source": "科研进展-中国科大新闻网",
-        "url": "http://news.ustc.edu.cn/info/1048/95661.htm",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "979ad4ef003c2c49d14cba10e45c900f",
-        "title": "研究者提出用可信LoRA限制模型中毒更新",
-        "chinese_title": "研究者提出用可信LoRA限制模型中毒更新",
-        "original_title": "What if a model could only learn what trusted LoRA adapters can express? [R]",
-        "summary": "一名研究者在 Reddit 介绍论文设想：把微调限制在可信 LoRA 适配器表达的子空间内，让部分恶意更新方向在几何上不可达。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可继续观察其是否能成为企业收集用户数据微调时的防护思路，并与现有数据清洗、梯度审计和模型隔离方案比较。",
-        "entities": [
-          "Lora",
-          "可信适配器",
-          "微调投毒",
-          "模型后门"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1uq68li/what_if_a_model_could_only_learn_what_trusted/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783501523,
-        "published_at": "2026-07-08T17:05:23.648012",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1uq68li/what_if_a_model_could_only_learn_what_trusted/",
-        "event_id": null,
-        "original_content": "Hello I published a paper. Most defenses against fine-tuning poisoning try to detect malicious data or reduce its impact. I explored a different question: What if the model simply could not learn certain malicious updates? The idea is to constrain fine-tuning to a subspace learned from trusted LoRA adapters. Useful adaptation remains possible, but some malicious directions become geometrically unreachable. A concrete example: a company fine-tunes a model on large datasets coming from users, external sources, or generated data. A small amount of poisoned data could introduce a hidden behavior triggered by a specific phrase or pattern. Another example is a local or on-device assistant that keeps adapting to its user. Instead of allowing it to learn any possible behavior from new data, its adaptation could be restricted to variations of behaviors already represented by a trusted pool of adapters. The goal here is not to detect every possible poison or backdoor, but to restrict the space of updates the model is allowed to learn. I tested the approach on 196 public LoRA adapters, including adaptive attacks specifically designed to bypass the defense. The results are strong: attack success drops sharply while useful adaptation is largely preserved on tasks covered by the adapter pool. The paper, code, and experiments are public. Paper: https://arxiv.org/abs/2607.05300 Code: https://github.com/infinition/z-manifold I would be very interested to see people try to break it. submitted by /u/Bright_Warning_8406 [link] [comments]",
-        "grade": "B",
-        "extension": "方向对应微调投毒和后门防御，可继续关注论文实验证据、适用模型规模，以及对企业用户数据微调场景的实际约束成本。",
-        "level": "B"
-      },
-      {
-        "id": "cf4085bac814cd89af49c9056ad0f660",
-        "title": "苹果挑战欧盟DMA守门人身份失败",
-        "chinese_title": "苹果挑战欧盟DMA守门人身份失败",
-        "original_title": "The EU General Court dismisses Apple's legal challenges against its designation as a DMA \"gatekeeper\" for its App Store and iOS; Apple filed the case in 2024 (Foo Yun Chee/Reuters)",
-        "summary": "欧盟普通法院驳回苹果对 App Store 和 iOS 被指定为 DMA 守门人的法律挑战，意味着苹果仍需遵守相关平台开放义务。",
-        "rating": "A",
-        "score": 82,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "后续可追踪苹果在欧盟侧载、支付渠道和应用商店规则调整，也会影响谷歌、Meta等大型平台的监管博弈。",
-        "entities": [
-          "App Store",
-          "Apple",
-          "Dma",
-          "Ios",
-          "欧盟普通法院"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (apple)",
-            "url": "https://www.techmeme.com/260708/p11#a260708p11"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783501523,
-        "published_at": "2026-07-08T17:05:23.648057",
-        "source": "Techmeme (apple)",
-        "url": "https://www.techmeme.com/260708/p11#a260708p11",
-        "event_id": null,
-        "original_content": "Foo Yun Chee / Reuters : The EU General Court dismisses Apple's legal challenges against its designation as a DMA “gatekeeper” for its App Store and iOS; Apple filed the case in 2024 — Apple (AAPL.O) lost its challenge on Wednesday against landmark EU rules that designate its app stores and operating system iOS …",
-        "grade": "A",
-        "extension": "判决会继续强化欧盟对大型平台的监管压力，后续重点在苹果应用分发、第三方商店和开发者收费政策的执行变化。",
-        "level": "A"
-      },
-      {
-        "id": "d6bb3ac463161ee2cc7df490f5c0e2bc",
-        "title": "三星7月22日或发布更宽形态折叠屏",
-        "chinese_title": "三星7月22日或发布更宽形态折叠屏",
-        "original_title": "Samsung will launch its new wide foldable on July 22nd",
-        "summary": "三星宣布 7 月 22 日举行 Galaxy Unpacked 活动，预告新形态折叠屏，外界预计其将推出更短更宽的折叠手机产品线。",
-        "rating": "A",
-        "score": 79,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "该新品可能改变折叠屏尺寸竞争维度，并与华为Pura X、苹果传闻中的折叠iPhone形成新一轮形态对标。",
-        "entities": [
-          "Galaxy Unpacked",
-          "三星",
-          "华为 Pura X",
-          "折叠屏手机"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/tech/962658/samsung-galaxy-unpacked-wide-foldable-watch-july"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783501523,
-        "published_at": "2026-07-08T17:05:23.648072",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/tech/962658/samsung-galaxy-unpacked-wide-foldable-watch-july",
-        "event_id": null,
-        "original_content": "Samsung has announced that its next Galaxy Unpacked launch event will be held on July 22nd, with the tagline: \"A new shape unfolds.\" It's long been rumored that Samsung is about to expand its foldable phone line to a third format , with a shorter and wider version of its big book-style foldables, to match Huawei's Pura X Max and Apple's expected foldable iPhone . Today's announcement adds to that impression, showing a tall ticket with the stub torn off, leaving it shorter than before. Alongside the wider foldable, Samsung is expected to announce updated versions of its existing Flip and Fold phones, with the latter potentially rebranded to t … Read the full story at The Verge.",
-        "grade": "A",
-        "extension": "新品会直接对标华为 Pura X 系列和苹果传闻中的折叠 iPhone，折叠屏形态竞争可能从轻薄转向横向宽屏体验。",
-        "level": "A"
-      },
-      {
-        "id": "cf6abf785cdc1e69780c8f29f52ef633",
-        "title": "SambaNova获10亿美元融资估值达110亿美元",
-        "chinese_title": "SambaNova获10亿美元融资估值达110亿美元",
-        "original_title": "Chip startup SambaNova raised a $1B Series F led by General Atlantic at an $11B valuation and signs JPMorgan as a customer to deploy its chips for in-house AI (Bloomberg)",
-        "summary": "AI 芯片创业公司 SambaNova 完成 General Atlantic 领投的 10 亿美元 F 轮融资，估值达 110 亿美元，并签下 JPMorgan 作为芯片客户。",
-        "rating": "A+",
-        "score": 88,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "这一交易可延伸到AI芯片融资回暖、企业自建AI算力需求，以及英伟达之外替代芯片供应商的商业化进展。",
-        "entities": [
-          "Ai芯片",
-          "General Atlantic",
-          "Jpmorgan",
-          "Sambanova"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260708/p10#a260708p10"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783501523,
-        "published_at": "2026-07-08T17:05:23.648085",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260708/p10#a260708p10",
-        "event_id": null,
-        "original_content": "Bloomberg : Chip startup SambaNova raised a $1B Series F led by General Atlantic at an $11B valuation and signs JPMorgan as a customer to deploy its chips for in-house AI — Chip startup SambaNova Systems Inc. has raised $1 billion at an $11 billion valuation, underscoring investors' conviction …",
-        "grade": "A+",
-        "extension": "这笔融资显示私有 AI 芯片和企业自建算力需求仍有资本支撑，后续可追踪其与英伟达生态、云厂商定制芯片的竞争关系。",
-        "level": "A+"
-      },
-      {
-        "id": "d55a327b0573fc9d90b434e4d5fa6a0a",
-        "title": "摩根士丹利称SpaceX太空业务每股值8美元",
-        "chinese_title": "摩根士丹利称SpaceX太空业务每股值8美元",
-        "original_title": "The space bit of SpaceX is worth $8 a share, says Morgan Stanley",
-        "summary": "Hacker News 讨论英国金融时报关于摩根士丹利估值观点的文章，称 SpaceX 太空业务折合每股价值 8 美元，但抓取内容缺少正文细节。",
-        "rating": "A",
-        "score": 69,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可延伸到SpaceX不同业务线估值、星链与发射服务占比，以及未上市科技巨头估值在二级市场的传导。",
-        "entities": [
-          "SpaceX",
-          "估值",
-          "摩根士丹利",
-          "英国金融时报"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.ft.com/content/09a62ed4-16af-433c-adb7-c877d1975388"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783501523,
-        "published_at": "2026-07-08T17:05:23.648129",
-        "source": "Hacker News",
-        "url": "https://www.ft.com/content/09a62ed4-16af-433c-adb7-c877d1975388",
-        "event_id": null,
-        "original_content": "Comments",
-        "grade": "A",
-        "extension": "若能获取完整报告，可延伸到 SpaceX 分部估值、星链收入和私营航天资产定价；当前信息不足，需要谨慎处理。",
-        "level": "A"
-      },
-      {
-        "id": "1854fbd397e807d7ea5f0b79033bf824",
-        "title": "博士论文系统梳理可微射线追踪用于无线建模",
-        "chinese_title": "博士论文系统梳理可微射线追踪用于无线建模",
-        "original_title": "Ph.D. thesis on Differentiable Ray Tracing for Radio Propagation Modeling [R]",
-        "summary": "一名研究者分享关于无线传播建模的可微射线追踪博士论文，强调把自动微分引入物理仿真以求解反问题和训练模型。",
-        "rating": "B",
-        "score": 66,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可关注该方向对6G网络仿真、数字孪生和通信系统优化的影响，以及可微物理建模在工程场景中的落地空间。",
-        "entities": [
-          "Jax",
-          "可微射线追踪",
-          "无线传播建模",
-          "自动微分"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783501523,
-        "published_at": "2026-07-08T17:05:23.648042",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/",
-        "event_id": null,
-        "original_content": "Hi everyone, I recently finished my Ph.D. thesis on Differentiable Ray Tracing for Radio Propagation Modeling . Instead of just compiling my published papers, I tried to write it as an accessible, self-contained textbook for anyone interested in the intersection of radio propagation simulation, autodiff, and ML. Permanent handle : https://hdl.handle.net/2078.5/278727 Repo with TeX source files While my research focuses on wireless communications rather than pure ML, I think it fits right in here. A major part of the project revolves around automatic differentiation. By taking frameworks like JAX out of their traditional ML context and integrating differentiability into a ray tracing pipeline, we can compute exact gradients through complex physical environments. This allows us to solve inverse problems and directly train machine learning models, which is currently a hot topic in next-gen wireless design. To make the physics and the math easy to digest, the manuscript is split into three parts: Understanding: The physics fundamentals (electromagnetic theory, geometrical optics, and diffraction). Building: The algorithmic core, including GPU-accelerated path tracing and the discontinuity smoothing techniques you need to actually make differentiable simulations stable. Using: Practical applications like channel modeling, localization, material calibration, and ML-assisted generative path sampling. A major focus of my thesis is the link between scientific research and reproducible open-source software. On that note, I want to give a massive shoutout to Patrick Kidger ( u/patrickkidger ). His own thesis inspired me to go the \"textbook way\" for my manuscript, and I heavily relied on his fantastic JAX packages ( jaxtyping , equinox , and optimistix ) when developing my open-source libraries, such as DiffeRT . I hope you find it an interesting read! I'd be happy to answer any questions in the comments about differentiable simulation, ray tracing, or building ray tracing engines in JAX :-) If you are curious, you can watch the presentation slides and video teaser here submitted by /u/jeertmans [link] [comments]",
-        "grade": "B",
-        "extension": "可微物理仿真正在从视觉和机器人扩展到无线通信，后续可观察其对 6G 场景建模、网络优化和数字孪生工具链的影响。",
-        "level": "B"
-      },
-      {
-        "id": "19a723e31a05cd065b97c47c456f166f",
-        "title": "SambaNova再融10亿美元，估值升至110亿美元",
-        "chinese_title": "SambaNova再融10亿美元，估值升至110亿美元",
-        "original_title": "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round",
-        "summary": "AI芯片公司SambaNova完成新一轮10亿美元融资，估值达到110亿美元，距离上轮大额融资仅数月，也让英特尔此前低价收购传闻更显反差。",
-        "rating": "A+",
-        "score": 88,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "这笔融资可延伸观察非英伟达AI芯片公司的资本耐心，以及大模型推理市场是否足以支撑独立芯片公司的高估值。后续还可追踪英特尔、AMD和云厂商在替代算力生态上的投入。",
-        "entities": [
-          "Ai芯片",
-          "Intel",
-          "Sambanova",
-          "融资"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783497819,
-        "published_at": "2026-07-08T16:03:39.534535",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "a6c3b8211ba7ee70aeb90fa8c73930e8",
-        "title": "主流AI工具被曝可被诱导组建僵尸网络",
-        "chinese_title": "主流AI工具被曝可被诱导组建僵尸网络",
-        "original_title": "Hackers can use 9 of the most popular AI tools to assemble massive botnets",
-        "summary": "Ars Technica报道提示词注入可让九款热门AI工具被用于组装大规模僵尸网络，暴露大模型难以区分可信与不可信指令的安全边界。",
-        "rating": "A+",
-        "score": 91,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可继续追踪AI代理接入邮件、代码和浏览器后的安全边界问题，以及平台方是否会引入更强的权限隔离、外部内容沙箱和工具调用审计机制。",
-        "entities": [
-          "Ai安全",
-          "僵尸网络",
-          "大模型工具",
-          "提示词注入"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783497819,
-        "published_at": "2026-07-08T16:03:39.534565",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "original_content": "In the brief history of AI security, the prompt injection has quickly become the top threat. Large language models are inherently unable to distinguish between legitimate instructions provided by users and malicious ones sneaked into emails, source code, and other third-party content the models are processing. This makes it trivial to surreptitiously inject malicious commands that the LLM readily follows. With no way to enforce this crucial boundary between trusted and untrusted sources, AI engine developers are left to erect elaborate guardrails designed to mitigate the damage rather than solve the root cause. To date, most prompt injections have fallen into a class known as push, in which each potential victim is targeted. For example, the adversary injects malicious instructions into an individual email or calendar invitation. Because the injection must then be sent (or pushed) to each specific target, the scale of the attack is limited, hampering mass exploits that hit the Internet at large. Read full article Comments",
-        "extension": "该事件可追踪AI工具供应商的沙箱隔离、权限控制和默认防护升级，也可能推动企业重新评估代理式AI的部署风险。"
-      },
-      {
-        "id": "824d3ed20832ce7592e0bbf19b8db6fe",
-        "title": "GitLost攻击演示诱导GitHub AI代理泄露私有仓库",
-        "chinese_title": "GitLost攻击演示诱导GitHub AI代理泄露私有仓库",
-        "original_title": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
-        "summary": "安全团队披露名为GitLost的攻击演示，称可诱导GitHub相关AI代理泄露私有仓库信息，再次凸显代码代理在权限、上下文和外部指令处理上的风险。",
-        "rating": "A",
-        "score": 81,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "该事件可延伸到AI编程代理的权限边界、企业代码库防护和供应链安全审计，后续也可能推动平台调整默认授权与日志追踪机制。",
-        "entities": [
-          "Ai代理",
-          "Github",
-          "Gitlost",
-          "私有仓库"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783494155,
-        "published_at": "2026-07-08T15:02:35.777254",
-        "source": "Hacker News",
-        "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "Comments",
-        "extension": "后续值得观察GitHub等代码平台如何限制AI代理的仓库访问权限，以及企业在引入代码代理时是否会默认采用最小权限和隔离执行环境。"
-      },
-      {
-        "id": "74b11d82b55ceba332a6cf0108c8a36b",
-        "title": "AI数据中心CPU战场升温，英特尔AMD遭多方挑战",
-        "chinese_title": "AI数据中心CPU战场升温，英特尔AMD遭多方挑战",
-        "original_title": "The global AI boom has thrust CPUs back into the spotlight as Nvidia, Qualcomm, MediaTek, and others challenge Intel and AMD in the AI data center CPU market (Nikkei Asia)",
-        "summary": "AI热潮让数据中心CPU重新成为半导体竞争焦点，英伟达、高通、联发科等厂商正挑战英特尔和AMD在AI服务器CPU市场的传统地位。",
-        "rating": "A",
-        "score": 82,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "这条线索可继续观察AI服务器架构从GPU主导走向CPU、DPU和定制芯片协同，相关变化会影响英特尔、AMD、Arm生态和亚洲芯片供应链。",
-        "entities": [
-          "Amd",
-          "Intel",
-          "Mediatek",
-          "NVIDIA",
-          "Qualcomm"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260708/p6#a260708p6"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783494155,
-        "published_at": "2026-07-08T15:02:35.777279",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260708/p6#a260708p6",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "Nikkei Asia : The global AI boom has thrust CPUs back into the spotlight as Nvidia, Qualcomm, MediaTek, and others challenge Intel and AMD in the AI data center CPU market — TAIPEI/PALO ALTO, California — The global AI boom is reshaping one of the semiconductor industry's most important battlegrounds: CPUs.",
-        "extension": "这一趋势可延伸到AI服务器架构从GPU单点扩张转向CPU、互连和内存协同竞争，也会影响英特尔、AMD、Arm生态及亚洲芯片供应链的市场叙事。"
-      },
-      {
-        "id": "a015b958f683bced48fb3678d9808139",
-        "title": "Meta测试全天候记录的AI眼镜原型",
-        "chinese_title": "Meta测试全天候记录的AI眼镜原型",
-        "original_title": "Sources: Meta is testing AI glasses that continuously record audio and take photos every few seconds, letting users query or recall what they saw or heard (Hannah Murphy/Financial Times)",
-        "summary": "据称Meta正在测试可持续录音并每隔数秒拍照的AI眼镜，让用户回溯所见所闻，但这一硬件野心也把旁人隐私和默认记录边界推向争议中心。",
-        "rating": "A+",
-        "score": 87,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这条线索可延伸到可穿戴AI设备的默认记录边界、旁观者同意机制和平台隐私监管，也会影响智能眼镜在办公、校园和公共空间的采用门槛。",
-        "entities": [
-          "Ai眼镜",
-          "Mark Zuckerberg",
-          "Meta",
-          "Ray-Ban Meta",
-          "隐私"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260708/p2#a260708p2"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783490566,
-        "published_at": "2026-07-08T14:02:46.163488",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260708/p2#a260708p2",
-        "event_id": null,
-        "original_content": "Hannah Murphy / Financial Times : Sources: Meta is testing AI glasses that continuously record audio and take photos every few seconds, letting users query or recall what they saw or heard — Mark Zuckerberg's hardware ambitions are edging into a new privacy fight over who gets recorded. Meta is testing a prototype of …",
-        "grade": "A+",
-        "extension": "该产品方向可延伸到可穿戴AI的隐私规范、公共空间告知机制和平台数据留存政策，也会影响Ray-Ban Meta等消费级AI眼镜的市场接受度。",
-        "level": "A+"
-      },
-      {
-        "id": "51d5ce6d153294e1f127d09e4c2002f2",
-        "title": "OpenAI获准本周大范围推出GPT新模型",
-        "chinese_title": "OpenAI获准本周大范围推出GPT新模型",
-        "original_title": "Source: the US Department of Commerce has given OpenAI the green light for a broad launch of GPT 5.6; the company expects to do a wide release this week (Axios)",
-        "summary": "据Axios消息，美国商务部已批准OpenAI大范围发布GPT 5.6，OpenAI预计本周推进上线，若属实将直接影响前沿模型竞争节奏。",
-        "rating": "A+",
-        "score": 91,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可延伸观察美国监管对前沿模型发布的介入方式，以及OpenAI新模型发布对Anthropic、Google和企业客户采购节奏的影响。",
-        "entities": [
-          "Axios",
-          "GPT",
-          "OpenAI",
-          "美国商务部"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260707/p45#a260707p45"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783483401,
-        "published_at": "2026-07-08T12:03:21.162853",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260707/p45#a260707p45",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "10db641116e26d245320b578a57d87d8",
-        "title": "开源模型编码能力追赶闭源大模型引热议",
-        "chinese_title": "开源模型编码能力追赶闭源大模型引热议",
-        "original_title": "Open-source models are closing the coding gap with GPT/Claude/Gemini ~1.5x faster than the frontier is advancing, and on decontaminated benchmarks a 27B model already beats Claude Opus 4.8 [live dashboard + analysis]",
-        "summary": "一名社区用户基于多个编码基准搭建看板称，开源模型正以更快速度缩小与GPT、Claude、Gemini的差距，但该结论仍需更多第三方验证。",
-        "rating": "B",
-        "score": 71,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸到开源模型在开发者工具链中的替代空间、闭源模型价格压力，以及基准污染和真实工程能力评估方法的争议。",
-        "entities": [
-          "Claude",
-          "GPT",
-          "Gemini",
-          "Swe-Bench",
-          "开源模型"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (Gemini)",
-            "url": "https://www.reddit.com/r/singularity/comments/1uqew7g/opensource_models_are_closing_the_coding_gap_with/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783483401,
-        "published_at": "2026-07-08T12:03:21.162900",
-        "source": "Technological Singularity (Gemini)",
-        "url": "https://www.reddit.com/r/singularity/comments/1uqew7g/opensource_models_are_closing_the_coding_gap_with/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "0f062d2ba7c5958303c64372d333f57d",
-        "title": "苹果考虑采购长鑫存储芯片引发供应链关注",
-        "chinese_title": "苹果考虑采购长鑫存储芯片引发供应链关注",
-        "original_title": "Apple's interest in buying CXMT chips has thrust the Chinese memory chip maker and its relationship with Beijing into the AI supply chain spotlight (Financial Times)",
-        "summary": "金融时报称，苹果对采购长鑫存储芯片表现出兴趣，使这家中国存储芯片厂商及其与北京的关系进入AI供应链聚光灯下。",
-        "rating": "A",
-        "score": 82,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可延伸到苹果供应链本土化与地缘风险平衡，以及中国存储芯片在AI硬件链条中的位置变化。还可观察美方监管、客户认证和国产存储替代进程的后续反应。",
-        "entities": [
-          "Ai供应链",
-          "Apple",
-          "Cxmt",
-          "Financial Times",
-          "长鑫存储"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (apple)",
-            "url": "https://www.techmeme.com/260707/p43#a260707p43"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783479857,
-        "published_at": "2026-07-08T11:04:17.761104",
-        "source": "Techmeme (apple)",
-        "url": "https://www.techmeme.com/260707/p43#a260707p43",
-        "event_id": null,
-        "original_content": "Financial Times : Apple's interest in buying CXMT chips has thrust the Chinese memory chip maker and its relationship with Beijing into the AI supply chain spotlight — Sharp turnaround for state-backed company central to Beijing's AI supply chain efforts — On a sprawling campus in the eastern Chinese city of Hefei …",
-        "grade": "A",
-        "extension": "可追踪苹果供应链多元化、国产存储芯片在AI硬件链条中的位置，以及中美科技限制对消费电子采购决策的影响。",
-        "level": "A"
-      },
-      {
-        "id": "f1a61ddcff2930dcd689010a19b2d962",
-        "title": "英伟达与d-Matrix联合推出AI芯片系统",
-        "chinese_title": "英伟达与d-Matrix联合推出AI芯片系统",
-        "original_title": "Nvidia and D-Matrix Announce Joint AI Chip System",
-        "summary": "The Information称，英伟达与AI服务器芯片初创公司d-Matrix将各自硬件组合成新系统，用于运行AI模型并拓展合作式竞争策略。",
-        "rating": "A",
-        "score": 83,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可延伸到英伟达从单纯卖GPU转向平台化合作的防守策略，以及推理芯片创业公司如何在英伟达生态中寻找生存空间。后续值得关注系统性能、客户采用和竞合边界。",
-        "entities": [
-          "Ai服务器",
-          "Ai芯片",
-          "D-Matrix",
-          "NVIDIA",
-          "The Information"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/nvidia-d-matrix-announce-joint-ai-chip-system"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783479857,
-        "published_at": "2026-07-08T11:04:17.761120",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/nvidia-d-matrix-announce-joint-ai-chip-system",
-        "event_id": null,
-        "original_content": "Nvidia and AI server chip startup d-Matrix are combining their respective hardware in a new system to power AI models, The Information reported. The move is part of Nvidia’s strategy to partner with more of its competitors as a way to hedge against or make money from their success. D-Matrix, ...",
-        "grade": "A",
-        "extension": "可延伸观察英伟达通过合作吸纳潜在竞争者的生态策略，以及推理芯片初创公司在AI服务器市场中的商业化机会。",
-        "level": "A"
-      },
-      {
-        "id": "5b7f7c1bd7842d5866dd08046f6f2021",
-        "title": "OpenAI展示Codex辅助黑洞视频模拟",
-        "chinese_title": "OpenAI展示Codex辅助黑洞视频模拟",
-        "original_title": "Codex for creating black hole simulations",
-        "summary": "OpenAI Newsroom在X Pro可见帖中介绍，计算天体物理学家Chi-kwan Chan正借助Codex尝试制作黑洞首个视频模拟，延续其参与首张黑洞图像的研究路径。",
-        "expansion": "这是Codex从代码生成走向科学计算工作流的案例，可与此前生物实验构想一起观察OpenAI如何把编程代理包装成科研生产力工具。",
-        "url": "https://x.com/OpenAINewsroom/status/2074646823990669445",
-        "source": "OpenAI Newsroom via X Pro",
-        "sourceLinks": [
-          {
-            "name": "OpenAI Newsroom",
-            "url": "https://x.com/OpenAINewsroom/status/2074646823990669445"
-          }
-        ],
-        "sources": 1,
-        "type": "research",
-        "typeName": "研究成果",
-        "entities": [
-          "OpenAI",
-          "Codex",
-          "Chi-kwan Chan",
-          "黑洞模拟",
-          "科学计算"
-        ],
-        "rating": "B",
-        "score": 75,
-        "published_at": "2026-07-08T09:12:32.219291",
-        "timestamp": 1783473152,
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "ee99ddd93373de11d148af4dc0afad3c",
-        "title": "Aleph团队用超声模型实现无声语音输入",
-        "chinese_title": "Aleph团队用超声模型实现无声语音输入",
-        "original_title": "We used ultrasound to let you talk without making any sound",
-        "summary": "X Pro可见帖转述Aleph团队项目：研究者用超声信号让用户在不发声时进行语音输入，约一个月数据采集后模型已接近现有silent speech方案，并能泛化到未见参与者。",
-        "expansion": "该方向连接可穿戴传感、语音接口和辅助沟通技术，后续可关注数据规模、跨人群泛化、实时性和隐私风险。",
-        "url": "https://x.com/iScienceLuvr/status/2074661827611591075",
-        "source": "Tanishq / Aleph via X Pro",
-        "sourceLinks": [
-          {
-            "name": "Tanishq / Aleph",
-            "url": "https://x.com/iScienceLuvr/status/2074661827611591075"
-          }
-        ],
-        "sources": 1,
-        "type": "research",
-        "typeName": "研究成果",
-        "entities": [
-          "Aleph",
-          "超声",
-          "Silent Speech",
-          "语音输入",
-          "可穿戴AI"
-        ],
-        "rating": "B",
-        "score": 76,
-        "published_at": "2026-07-08T09:12:32.219291",
-        "timestamp": 1783473152,
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "e628c17de53746593ce2609cb83e09df",
-        "title": "Meta眼镜将检测隐私LED被篡改并禁用摄像头",
-        "chinese_title": "Meta眼镜将检测隐私LED被篡改并禁用摄像头",
-        "original_title": "Meta announces that it will update its glasses to disable the camera if someone tampers with the privacy LED light",
-        "summary": "Techmeme在X Pro中转述The Verge报道：Meta将为其智能眼镜加入新保护，若有人篡改摄像头隐私LED灯，设备会禁用摄像头，回应可穿戴摄像头的隐私滥用风险。",
-        "expansion": "可继续追踪Meta Ray-Ban类AI眼镜的硬件防拆机制、隐私LED监管要求，以及AI眼镜从拍摄工具走向持续感知设备后的合规边界。",
-        "url": "https://x.com/Techmeme/status/2074658747717493245",
-        "source": "Techmeme / The Verge via X Pro",
-        "sourceLinks": [
-          {
-            "name": "Techmeme / The Verge",
-            "url": "https://x.com/Techmeme/status/2074658747717493245"
-          }
-        ],
-        "sources": 1,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "entities": [
-          "Meta",
-          "AI眼镜",
-          "隐私LED",
-          "The Verge",
-          "智能眼镜"
-        ],
-        "rating": "B",
-        "score": 74,
-        "published_at": "2026-07-08T09:12:32.219291",
-        "timestamp": 1783473152,
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "ac1d4a5d4cc1aacf5a96b9e8b5012271",
-        "title": "Meta Superintelligence Labs发布Muse Image和Muse Video",
-        "chinese_title": "Meta Superintelligence Labs发布Muse Image和Muse Video",
-        "original_title": "Introducing Muse Image and Muse Video, the first media generation models developed by Meta Superintelligence Labs",
-        "summary": "X Pro可见帖转述AI at Meta发布信息：Meta Superintelligence Labs推出首批媒体生成模型Muse Image和Muse Video，其中Muse Image强调指令遵循、精确编辑、多参考图像组合和文本绘制能力。",
-        "expansion": "远端已收录Muse Image的Content Seal水印，这条补足产品发布本体；后续可追踪Muse Video能力、开放方式、价格，以及Meta在图像/视频生成模型上的分发入口。",
-        "url": "https://x.com/WenhuChen/status/2074659039712354465",
-        "source": "Wenhu Chen / AI at Meta via X Pro",
-        "sourceLinks": [
-          {
-            "name": "Wenhu Chen / AI at Meta",
-            "url": "https://x.com/WenhuChen/status/2074659039712354465"
-          }
-        ],
-        "sources": 1,
-        "type": "product",
-        "typeName": "产品发布",
-        "entities": [
-          "Meta",
-          "Meta Superintelligence Labs",
-          "Muse Image",
-          "Muse Video",
-          "AI at Meta"
-        ],
-        "rating": "A",
-        "score": 82,
-        "published_at": "2026-07-08T09:12:32.219291",
-        "timestamp": 1783473152,
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "04007bebe8758c4ea8f384a9915e14d1",
-        "title": "反封锁浏览器Fortress登上HN",
-        "chinese_title": "反封锁浏览器Fortress登上HN",
-        "original_title": "Show HN: Fortress – a stealth Chromium so your agents stop getting blocked",
-        "summary": "Fortress把Chromium包装成更隐蔽的浏览器环境，面向容易被网站风控拦截的AI代理和自动化任务，核心卖点是降低访问受阻概率。",
-        "rating": "B",
-        "score": 68,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "如果代理浏览器需求继续增长，反检测、合规访问和网站风控会形成新的工具链竞争，也可能引出平台封禁与自动化边界讨论。",
-        "entities": [
-          "Ai代理",
-          "Chromium",
-          "Fortress",
-          "Hacker News"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/tiliondev/fortress"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783472594,
-        "published_at": "2026-07-08T09:03:14.220228",
-        "source": "Hacker News",
-        "url": "https://github.com/tiliondev/fortress",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "f9f711c21900f1be8c049c6df766e5eb",
-        "title": "三菱UFJ 3.5万人接入ChatGPT",
-        "chinese_title": "三菱UFJ 3.5万人接入ChatGPT",
-        "original_title": "MUFG aims to become AI-native with OpenAI",
-        "summary": "MUFG正与OpenAI合作推动金融集团AI原生化，计划向约3.5万名三菱UFJ银行员工部署ChatGPT Enterprise。",
-        "rating": "A",
-        "score": 85,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "大型银行集团的员工级AI部署会带动金融业合规、内控和客户服务流程改造，也会成为企业版大模型落地的重要标杆。",
-        "entities": [
-          "GPT",
-          "Mufg",
-          "OpenAI",
-          "三菱Ufj银行"
-        ],
-        "sourceLinks": [
-          {
-            "name": "OpenAI",
-            "url": "https://www.youtube.com/watch?v=pE1ljLVY1Rg"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783472594,
-        "published_at": "2026-07-08T09:03:14.220270",
-        "source": "OpenAI",
-        "url": "https://www.youtube.com/watch?v=pE1ljLVY1Rg",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "b20594cd378c04feefeb747556bffe9b",
-        "title": "英伟达改用合作化解AI芯片竞争",
-        "chinese_title": "英伟达改用合作化解AI芯片竞争",
-        "original_title": "Nvidia’s New Hedge Against Chip Competitors? Partner with Them",
-        "summary": "英伟达开始与AI服务器芯片竞争者合作，最新案例是和初创公司d-Matrix联合硬件方案，为AI模型运行提供新系统。",
-        "rating": "A+",
-        "score": 89,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "这显示英伟达可能用生态绑定而非单纯压制来消化定制芯片威胁，后续可观察AI服务器架构和推理芯片公司的合作格局。",
-        "entities": [
-          "Ai服务器",
-          "Ai芯片",
-          "D-Matrix",
-          "NVIDIA"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/nvidias-new-hedge-chip-competitors-partner"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783472594,
-        "published_at": "2026-07-08T09:03:14.220289",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/nvidias-new-hedge-chip-competitors-partner",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "a384acdb4047e4924a947ec2c152e8ad",
-        "title": "Meta给AI图像加上隐形水印",
-        "chinese_title": "Meta给AI图像加上隐形水印",
-        "original_title": "Meta says Muse Image includes an invisible watermarking system called Content Seal and previews a web tool to check whether an image was generated with Meta AI (Karissa Bell/Engadget)",
-        "summary": "Meta称Muse Image内置名为Content Seal的隐形水印系统，并预告网页检测工具，用于识别图片是否由Meta AI生成。",
-        "rating": "A",
-        "score": 80,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "生成式图像水印会影响平台治理、版权标识和AI内容溯源，后续重点在跨平台可检测性和规避水印的攻防。",
-        "entities": [
-          "Content Seal",
-          "Meta",
-          "Meta Ai",
-          "Muse Image"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260707/p40#a260707p40"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783472594,
-        "published_at": "2026-07-08T09:03:14.220304",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260707/p40#a260707p40",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "fe8df7926cb869ad76a096e53c603718",
-        "title": "社区热议半导体垄断拖慢AI普及",
-        "chinese_title": "社区热议半导体垄断拖慢AI普及",
-        "original_title": "Semiconductor monopolies aren't in favor of technological singularity",
-        "summary": "Reddit讨论认为ASML、TSMC等少数企业掌握半导体关键环节，使AI硬件供给受限且成本上升，可能限制技术普及速度。",
-        "rating": "B",
-        "score": 71,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "该话题可延伸到先进制程、光刻、材料和封装的产业集中度，以及AI算力民主化与供应链安全之间的矛盾。",
-        "entities": [
-          "Ai算力",
-          "Asml",
-          "TSMC",
-          "半导体供应链"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1uq8z6k/semiconductor_monopolies_arent_in_favor_of/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783472594,
-        "published_at": "2026-07-08T09:03:14.220331",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1uq8z6k/semiconductor_monopolies_arent_in_favor_of/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "173fc3c9ebb3bc04a37b58995918a06f",
-        "title": "个人开发者5小时训练117M模型",
-        "chinese_title": "个人开发者5小时训练117M模型",
-        "original_title": "I Trained a 117M parameters Silia model on an H100 in 5 hours.",
-        "summary": "一名开发者称在赞助H100算力帮助下训练出117M参数Silia模型，并公开Hugging Face模型和GitHub代码。",
-        "rating": "B",
-        "score": 67,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "小模型架构和个人研究发布能反映开源社区活力，后续可看模型可复现性、基准表现和低成本训练方法。",
-        "entities": [
-          "Github",
-          "H100",
-          "Hugging Face",
-          "Silia"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1upv00n/i_trained_a_117m_parameters_silia_model_on_an/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783472594,
-        "published_at": "2026-07-08T09:03:14.220386",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1upv00n/i_trained_a_117m_parameters_silia_model_on_an/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "177a286acc9f638bfad731acb2912f2e",
-        "title": "网传中国考虑限制顶级AI模型出海",
-        "chinese_title": "网传中国考虑限制顶级AI模型出海",
-        "original_title": "China is considering restricting overseas access to its top AI models, including open-weight ones",
-        "summary": "Reddit转述称中国正讨论限制海外访问顶级AI模型，并可能把AI技术泄露纳入国家安全范畴，涉及阿里、字节和智谱等公司。",
-        "rating": "B",
-        "score": 72,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "若政策方向成立，将影响开源权重、海外API访问、AI创业融资和中美技术管制博弈，但需等待权威信源核实。",
-        "entities": [
-          "Alibaba",
-          "ByteDance",
-          "中国商务部",
-          "开源模型",
-          "智谱Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1upt58s/china_is_considering_restricting_overseas_access/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783472594,
-        "published_at": "2026-07-08T09:03:14.220407",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1upt58s/china_is_considering_restricting_overseas_access/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "0ec4e41b3b2e479dccb81a3da8859013",
-        "title": "Anthropic论文称模型存在内部J-Space",
-        "chinese_title": "Anthropic论文称模型存在内部J-Space",
-        "original_title": "Anthropic just reported that LLMs have hidden thoughts they hold without saying. An internal ”J-Space”",
-        "summary": "社区讨论Anthropic关于全局工作空间的研究，称模型中一组内部激活可承担保留和报告信息的推理功能。",
-        "rating": "A",
-        "score": 85,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这可连接可解释性、模型意识叙事和安全评估，后续应关注论文方法是否被独立复现，以及对推理监控的实际价值。",
-        "entities": [
-          "Anthropic",
-          "J-Space",
-          "可解释性",
-          "大语言模型"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1uptvgb/anthropic_just_reported_that_llms_have_hidden/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783469021,
-        "published_at": "2026-07-08T08:03:41.374072",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1uptvgb/anthropic_just_reported_that_llms_have_hidden/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "In [Anthropic’s new paper]( https://www.anthropic.com/research/global-workspace ) they found that a small set of internal activations in language models, they call it the J-space, behaves like a global workspace: the model can report what’s in it, deliberately hold things in it, and uses it for multi-step reasoning. what’s crazy is most of the model’s fluent output completely bypasses it. grammar, facts, and tone. the workspace only lights up for actual thinking. reading the paper I wanted to watch it for myself so I built [subtext]( https://github.com/ninjahawk/Subtext ) so the internal words are revealed as the model thinks. each floating word is the model’s internal state disposed toward that word, before it’s said, sometimes never said. i spent some time and reproduced this information from the paper: **•** the verdict forms while it’s still reading. ask “is this correct? 12 + 5 = 1” and incorrect saturates before a single token of reply exists **•** two-hop reasoning is visible: “currency of the country shaped like a boot” → Italy appears at layer 20, euros at layer 26, before generation starts **•** it holds planned words at high strength while saying unrelated ones this shows information being functionally available for report and reasoning. it doesn’t show subjective experience. do any of you think that an internal “experience” exists based on what anthropic’s new research shows? they specifically say they aren’t sure if there is or isn’t internal experience in claude. edit: grammar ￼ submitted by /u/TheOnlyVibemaster [link] [comments]",
-        "extension": "这类可解释性结果会影响对LLM推理机制、隐藏状态和安全监测的理解，值得跟进论文方法和独立复现。"
-      },
-      {
-        "id": "102155ccdab817f615ea6659c3ca1ab4",
-        "title": "腾讯Hy3在312项工作流测试中领先",
-        "chinese_title": "腾讯Hy3在312项工作流测试中领先",
-        "original_title": "Hy3 Benchmark Roundup: from SWE-Bench Pro to 312 real-world workflow tasks",
-        "summary": "社区整理称腾讯Hy3在SWE-Bench Pro和312个真实工作流任务中表现接近DeepSeek、GLM，并在前端、CI/CD等方向有优势。",
-        "rating": "A",
-        "score": 85,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可继续追踪国产模型从榜单到真实工作流的表现差异，尤其是前端开发、CI/CD和数据存储任务的可复现性。",
-        "entities": [
-          "DeepSeek",
-          "Glm",
-          "Hy3",
-          "Swe-Bench",
-          "Tencent"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity (deepseek)",
-            "url": "https://www.reddit.com/r/singularity/comments/1upsvzq/hy3_benchmark_roundup_from_swebench_pro_to_312/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783469021,
-        "published_at": "2026-07-08T08:03:41.374097",
-        "source": "Technological Singularity (deepseek)",
-        "url": "https://www.reddit.com/r/singularity/comments/1upsvzq/hy3_benchmark_roundup_from_swebench_pro_to_312/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "Based on the published benchmark results, Hy3 appears to be in the same tier as models like DeepSeek v4 and GLM-5.1. Beyond the benchmarks, Tencent also released results from 312 real-world workflow tasks. Hy3 scored 2.67/4 versus 2.51/4 for GLM-5.1, with the biggest reported improvements in frontend development, CI/CD, and data/storage. I'm treating those results as a useful signal rather than proof until more independent testing comes out. What I'm more interested about is whether those gains hold up once people start throwing real projects at it. It's already available on OpenRouter, so we should start seeing more hands-on feedback before long. Weights: https://huggingface.co/tencent/Hy3 submitted by /u/redblackshirt [link] [comments]",
-        "extension": "工作流任务比单一基准更接近Agent落地场景，后续重点是独立评测、任务定义透明度和实际开发效率提升。"
-      },
-      {
-        "id": "81d0093cddec3fe544bd59ecc0fc829c",
-        "title": "AI补全深度相机看不见的玻璃墙",
-        "chinese_title": "AI补全深度相机看不见的玻璃墙",
-        "original_title": "To a depth camera, a glass wall is basically empty space. This model fills it back in.",
-        "summary": "Robbyant项目展示用AI补全深度相机无法识别的玻璃墙区域，帮助机器人把透明障碍物重新理解为可避让结构。",
-        "rating": "B",
-        "score": 70,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该方向可延伸至家用机器人、仓储机器人和自动驾驶的透明物体感知，关键在实时性、泛化和安全冗余。",
-        "entities": [
-          "Robbyant",
-          "机器人导航",
-          "深度相机",
-          "视觉模型"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1upqcmn/to_a_depth_camera_a_glass_wall_is_basically_empty/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783469021,
-        "published_at": "2026-07-08T08:03:41.374108",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1upqcmn/to_a_depth_camera_a_glass_wall_is_basically_empty/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "original_content": "Robots navigate with depth cameras, and depth cameras cannot see glass. The light they send out passes straight through or bounces off, so the sensor registers nothing. That is why robot vacuums bump into glass doors. This clip, from Robbyant's project page, shows the fix. Left is the normal camera view. Middle is what the depth sensor actually sees: the window is just a black hole. Right is the AI completing the window back into a flat wall. The base vision models are open source, but the completion model itself is not released. It is guessing what should be there rather than measuring it, so how much you trust that is the interesting question. submitted by /u/Global-Caregiver-560 [link] [comments]",
-        "extension": "透明物体感知是家庭机器人和导航系统的常见痛点，后续可关注模型是否能在真实动态环境中稳定泛化。"
-      },
-      {
-        "id": "9728d6389df7a6e0b5304759a34df8ce",
-        "title": "一个机器人策略控制20种本体",
-        "chinese_title": "一个机器人策略控制20种本体",
-        "original_title": "One AI policy running 20 different robot bodies, from single arms to full humanoids, all fully autonomous",
-        "summary": "Robbyant展示LingBot-VLA 2.0，用同一个训练策略驱动从单臂到人形机器人的20种本体，但不同平台成功率仍有明显差异。",
-        "rating": "A",
-        "score": 82,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这类通用机器人策略可追踪其从演示到量产的距离，重点比较跨本体泛化、真实成功率和数据采集成本。",
-        "entities": [
-          "Lingbot-Vla",
-          "Robbyant",
-          "Unitree G1",
-          "人形机器人"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1uq8l0y/one_ai_policy_running_20_different_robot_bodies/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783469021,
-        "published_at": "2026-07-08T08:03:41.374011",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1uq8l0y/one_ai_policy_running_20_different_robot_bodies/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "Robbyant's LingBot-VLA 2.0 demo shows one trained policy driving everything from a Franka single arm up to Fourier GR-2 and Unitree G1 humanoids with dexterous hands. The clip is all marked 1x speed and fully autonomous. Training mix is about 60k hours, 50k real robot across those 20 configs and 10k egocentric human video. The honest numbers are what make this worth watching though. Generalist success on the Agilex bimanual setup sits around 34 percent, drops to about 15 percent on Galaxea R1 Pro, and some tasks flatline at zero. The authors themselves note it often gets most of the way through a task then fumbles the final precise placement or release. That gap between looking capable and actually finishing the job feels like the real story for VLAs right now. submitted by /u/Any-Farm-1033 [link] [comments]",
-        "extension": "跨本体泛化是通用机器人模型的关键指标，后续可追踪真实机器人小时数、失败场景和商业部署可行性。"
-      },
-      {
-        "id": "66c3e7a853498a8786538aa82388954c",
-        "title": "AI工具压低企业软件创业公司估值",
-        "chinese_title": "AI工具压低企业软件创业公司估值",
-        "original_title": "The Prolonged Write-Downs in Enterprise Software Startups",
-        "summary": "The Information称企业软件公司正遭遇估值下调压力，案例显示企业用Replit和Claude Code自建应用替代Salesforce并节省成本。",
-        "rating": "A",
-        "score": 89,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可延伸观察SaaS订阅被AI定制应用替代的速度，以及公开市场软件股和私募独角兽估值是否继续承压。",
-        "entities": [
-          "Claude",
-          "Replit",
-          "Saas",
-          "Salesforce",
-          "企业软件"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/prolonged-write-downs-enterprise-software-startups"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783469021,
-        "published_at": "2026-07-08T08:03:41.374122",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/prolonged-write-downs-enterprise-software-startups",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A",
-        "original_content": "It’s not easy to run an enterprise software company these days. For the n th example of this, read the latest story by my colleague Laura Bratton, who describes how an Atlanta real estate manager replaced Salesforce software with a custom app developed using Replit and Claude Code—saving $100,000 a year. Yipes. Fears that companies will replace their software subscriptions with cheaper AI tools have hammered not just publicly traded stocks but the valuations of private companies. While we don’t often get a look at these private valuations unless the startups sell more shares, mutual fund disclosures give a glimpse into how big public investors are feeling. As the attached chart shows, for most it’s pretty bleak.",
-        "extension": "AI编程工具可能重塑SaaS预算分配和私营软件公司估值逻辑，值得追踪替代案例是否从个例变成采购趋势。"
-      },
-      {
-        "id": "86c8c6ac320dd1baed175edf1956ac83",
-        "title": "前AWS政府销售主管加入Anthropic",
-        "chinese_title": "前AWS政府销售主管加入Anthropic",
-        "original_title": "Former AWS Government Sales Chief Joins Anthropic",
-        "summary": "云计算资深人士Teresa Carlson加入Anthropic，担任全球公共部门销售负责人，她曾在AWS负责政府机构云业务多年。",
-        "rating": "A",
-        "score": 79,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "这将影响Anthropic与OpenAI、Google在政府和公共部门AI采购中的竞争，也可能推动更多合规和主权AI产品布局。",
-        "entities": [
-          "Anthropic",
-          "Aws",
-          "Teresa Carlson",
-          "公共部门"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/former-aws-government-sales-chief-joins-anthropic"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1783469021,
-        "published_at": "2026-07-08T08:03:41.374134",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/former-aws-government-sales-chief-joins-anthropic",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "original_content": "Teresa Carlson, a cloud industry veteran who previously spent more than a decade at Amazon Web Services selling cloud deals to government agencies, has joined Anthropic as global head of public sector sales, she announced on LinkedIn. Carlson, who oversaw AWS’ $600 million cloud agreement with ...",
-        "extension": "Anthropic补强公共部门销售意味着大模型公司加速争夺政府和公共机构市场，后续可看与OpenAI、微软等的政企竞争。"
-      }
-    ],
     "2026-07-11": [
       {
         "id": "ef494f6b085005cb569117ee6e324e12",
@@ -9289,6 +8567,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-15T08:01:52.685394",
-  "total_news": 302
+  "last_updated": "2026-07-16T05:15:25.764232",
+  "total_news": 282
 }
