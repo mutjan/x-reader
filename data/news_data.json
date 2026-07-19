@@ -1,6 +1,809 @@
 {
   "news": {
+    "2026-07-20": [
+      {
+        "id": "4705ed4dc3c54c284578c371158a63f4",
+        "title": "国产三十亿参数OCR模型开源，整份文档可一次读完",
+        "chinese_title": "国产三十亿参数OCR模型开源，整份文档可一次读完",
+        "original_title": "China open-sourced a 3B param OCR model that reads entire documents in one pass. it's called Unlimited-OCR. every other OCR tool chops your doc into p...",
+        "summary": "开源模型Unlimited-OCR引入恒定KV缓存的R-SWA注意力机制，可在三万二千上下文中一次解析数十页文档，并支持八GB显存的英伟达GPU本地运行。",
+        "rating": "B",
+        "score": 74,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可继续验证其长文档准确率、表格与版面恢复能力，并观察轻量文档模型是否会替代传统逐页OCR流水线。",
+        "entities": [
+          "Deepseek-Ocr",
+          "NVIDIA",
+          "R-Swa",
+          "Unlimited-Ocr"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/heyyritik_/status/2078941422468923403"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.816253",
+        "source": "x",
+        "url": "https://x.com/heyyritik_/status/2078941422468923403",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "a38473de87aaf29d49f1af5cac0e1899",
+        "title": "Kimi新模型需求挤爆算力，新订阅被临时暂停",
+        "chinese_title": "Kimi新模型需求挤爆算力，新订阅被临时暂停",
+        "original_title": "Model So Goated That they had to pause new subscription 🥲 Btw K3 now has access to professional financial data sources like S&P and Wind and turns ...",
+        "summary": "Kimi称新模型上线四十八小时需求逼近现有算力上限，为保障存量用户体验暂时停止新增订阅；帖子还称其已接入标普和Wind等专业金融数据源。",
+        "rating": "A",
+        "score": 80,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可追踪月之暗面扩容节奏、订阅恢复时间及金融数据授权成本，判断高需求能否转化为持续收入。",
+        "entities": [
+          "Kimi",
+          "S&P",
+          "Wind",
+          "月之暗面"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/chetaslua/status/2078895170951782633"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.816583",
+        "source": "x",
+        "url": "https://x.com/chetaslua/status/2078895170951782633",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "eba8916a3e760632ac13463f37ece896",
+        "title": "长程智能体奖励分配新方案发布，不用过程标注与判分模型",
+        "chinese_title": "长程智能体奖励分配新方案发布，不用过程标注与判分模型",
+        "original_title": "Scaling outcome-based RL won't solve long-horizon agentic tasks. Credit assignment is the bottleneck, and turn-level reward is inevitable. The questio...",
+        "summary": "研究团队发布TRACE方法，以信用估计为长程智能体分配逐轮奖励，无需训练评论器、过程标签、蒙特卡洛续写或强大语言模型裁判。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可重点复核其在不同任务长度和模型规模上的稳定性，以及逐轮奖励能否真正缓解稀疏结果奖励带来的训练瓶颈。",
+        "entities": [
+          "Trace",
+          "信用分配",
+          "强化学习",
+          "长程智能体"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/SharonYixuanLi/status/2078854876084502825"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.816775",
+        "source": "x",
+        "url": "https://x.com/SharonYixuanLi/status/2078854876084502825",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "3e603e2edb0e33eb2c95e332f45585b8",
+        "title": "Kimi法律智能体测试领先Claude，困难任务得分接近翻倍",
+        "chinese_title": "Kimi法律智能体测试领先Claude，困难任务得分接近翻倍",
+        "original_title": "Impressive！",
+        "summary": "转发帖引用Harvey的自主法律工作基准，称Kimi K3得分为百分之二十六点七，高于Claude Fable的百分之十四点二，但尚需核验测试设置与完整榜单。",
+        "rating": "B",
+        "score": 72,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "应追溯Harvey原始评测，核对样本、工具权限和统计显著性，并评估该优势能否迁移到真实法律工作流。",
+        "entities": [
+          "Claude",
+          "Harvey",
+          "Kimi",
+          "法律智能体"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Young_AGI/status/2078776694270574998"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.817096",
+        "source": "x",
+        "url": "https://x.com/Young_AGI/status/2078776694270574998",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "ce0edab81edaf51b6e7a183548837347",
+        "title": "苹果零售店试点现场笔记，自动转录并总结顾客对话",
+        "chinese_title": "苹果零售店试点现场笔记，自动转录并总结顾客对话",
+        "original_title": "Sources: Apple is piloting a system in Apple Stores called Live Notes that lets Genius Bar staff make transcripts and summaries of conversations with customers (Mark Gurman/Bloomberg)",
+        "summary": "据彭博记者Mark Gurman消息，苹果正在零售店试用Live Notes系统，帮助Genius Bar员工转录并总结与顾客的服务对话。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可追踪录音同意、数据留存和员工使用规范，并观察该能力是否扩展到售后诊断、培训与客户关系管理。",
+        "entities": [
+          "Apple",
+          "Genius Bar",
+          "Live Notes",
+          "Mark Gurman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "https://www.techmeme.com/260719/p8#a260719p8"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.817678",
+        "source": "Techmeme (apple)",
+        "url": "https://www.techmeme.com/260719/p8#a260719p8",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "09a48d8b9d259d7e87cfa3b500e2d406",
+        "title": "Alphabet与SpaceX推高美国股票发行，年度规模或创新高",
+        "chinese_title": "Alphabet与SpaceX推高美国股票发行，年度规模或创新高",
+        "original_title": "Alphabet, SpaceX Spur Record U.S. Equity Sales",
+        "summary": "The Information称SpaceX、Alphabet等大型发行推动美国股票销售规模超过二零二一年高点，Anthropic最快九月上市，投行也在游说英特尔等公司增发。",
+        "rating": "A+",
+        "score": 88,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可追踪AI与航天公司集中融资对估值、员工流动性和二级市场资金的挤出效应，以及后续发行是否造成定价压力。",
+        "entities": [
+          "Alphabet",
+          "Anthropic",
+          "Intel",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/alphabet-spacex-spur-record-u-s-equity-sales"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.817863",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/alphabet-spacex-spur-record-u-s-equity-sales",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "484d2db8596abba16f0613af030eb096",
+        "title": "AMD十核新APU再曝跑分，单核成绩领先现有移动芯片",
+        "chinese_title": "AMD十核新APU再曝跑分，单核成绩领先现有移动芯片",
+        "original_title": "AMD's next-gen 10-core 'Medusa Point' APU shows up on Geekbench again, with its best score yet &mdash; leaked SKU outpaces every other x86 mobile chip in the single-core test",
+        "summary": "AMD代号Medusa Point的十核移动APU再次出现在Geekbench，单核得分三千三百二十九，刷新该泄露型号纪录并超过现有英特尔和AMD移动芯片。",
+        "rating": "B",
+        "score": 72,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "需警惕工程样品和跑分环境差异，后续可关注Zen 6移动平台的功耗、核显和量产机性能。",
+        "entities": [
+          "Amd",
+          "Geekbench",
+          "Medusa Point",
+          "Zen"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/pc-components/cpus/amds-next-gen-10-core-medusa-point-apu-shows-up-on-geekbench-again-with-its-best-score-yet-leaked-sku-outpaces-every-other-x86-mobile-chip-in-the-single-core-test"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.817950",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/pc-components/cpus/amds-next-gen-10-core-medusa-point-apu-shows-up-on-geekbench-again-with-its-best-score-yet-leaked-sku-outpaces-every-other-x86-mobile-chip-in-the-single-core-test",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "8464e3ae34066f04072070cdd4961ef6",
+        "title": "经典Z80芯片问世五十年，开源兼容硅片接近量产",
+        "chinese_title": "经典Z80芯片问世五十年，开源兼容硅片接近量产",
+        "original_title": "Zilog Z80 turns 50 as an open-source replacement heads to drop-in DIP40 silicon — iconic 8-bit CPU launched in July 1976 and was discontinued in 2024",
+        "summary": "诞生于一九七六年的Zilog Z80迎来五十周年，原厂停产两年后，社区资助的开源替代方案正尝试以原始四十针封装实现直接替换。",
+        "rating": "A",
+        "score": 76,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可观察开源芯片在老设备维修、教育和复古计算市场的供应链价值，以及小批量流片的成本与可靠性。",
+        "entities": [
+          "Dip40",
+          "Z80",
+          "Zilog",
+          "开源芯片"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/zilog-z80-turns-50-as-open-source-replacement-heads-for-drop-in-dip40-silicon"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.818042",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/zilog-z80-turns-50-as-open-source-replacement-heads-for-drop-in-dip40-silicon",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "7dc7ed05ed7544159a833d8062c89a10",
+        "title": "阿里发布两万四千亿参数通义千问预览版，计划开放权重",
+        "chinese_title": "阿里发布两万四千亿参数通义千问预览版，计划开放权重",
+        "original_title": "Alibaba launches a 2.4T parameter Qwen3.8 Max preview that it says rivals frontier AI models and is second only to Fable 5, plans to make it \"open-weight soon\" (Bloomberg)",
+        "summary": "据彭博报道，阿里巴巴推出旗舰通义千问新预览模型，总参数达两万四千亿，并称能力仅次于Claude Fable，未来将开放模型权重。",
+        "rating": "S",
+        "score": 97,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "应对照官方技术报告核查激活参数与基准设置，并关注超大模型开放权重后的部署门槛、推理成本和生态影响。",
+        "entities": [
+          "Alibaba",
+          "Claude",
+          "开放权重",
+          "通义千问"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260719/p7#a260719p7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.818140",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260719/p7#a260719p7",
+        "event_id": null,
+        "grade": "S",
+        "level": "S"
+      },
+      {
+        "id": "65b61941b5302e6fae903a82bd02c2e1",
+        "title": "SK掌门人承认内存价格异常高，考虑赴美扩建产能",
+        "chinese_title": "SK掌门人承认内存价格异常高，考虑赴美扩建产能",
+        "original_title": "Memory chip boss admits RAM prices are 'abnormally high' &mdash; SK Group chairman considering building a semiconductor plant in the US to expand supply, calm &lsquo;chipflation&rsquo;",
+        "summary": "SK集团董事长崔泰源表示当前内存价格处于异常高位，行业需增加供应以压低价格，并透露正考虑在美国建设内存芯片工厂。",
+        "rating": "A",
+        "score": 83,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可追踪建厂选址、补贴与投产周期，评估新增供给对DRAM和HBM价格以及AI服务器成本的中长期影响。",
+        "entities": [
+          "Sk海力士",
+          "Sk集团",
+          "内存芯片",
+          "崔泰源"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/policy/memory-chip-boss-admits-ram-prices-are-abnormally-high-sk-group-chairman-considering-building-a-semiconductor-plant-in-the-us-to-expand-supply-calm-chipflation"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.818244",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/policy/memory-chip-boss-admits-ram-prices-are-abnormally-high-sk-group-chairman-considering-building-a-semiconductor-plant-in-the-us-to-expand-supply-calm-chipflation",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "5126e43bc76a922693f8618ae585e5d9",
+        "title": "高速自旋无人机利用视觉模糊，飞行时几乎隐形",
+        "chinese_title": "高速自旋无人机利用视觉模糊，飞行时几乎隐形",
+        "original_title": "‘Phantom Twist’ drone spins so fast that it is nearly invisible — flying device adds motion blur to the real world",
+        "summary": "美国西北大学研究人员展示Phantom Twist无人机，每秒旋转二十五圈，借助人眼视觉暂留形成近似隐身的模糊效果，并在机器人会议上完成演示。",
+        "rating": "B",
+        "score": 70,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可关注高速旋转结构对控制、载荷和安全性的限制，以及该视觉效应在侦察、表演或人机交互中的真实用途。",
+        "entities": [
+          "Phantom Twist",
+          "无人机",
+          "西北大学",
+          "视觉暂留"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/drones/phantom-twist-drone-spins-so-fast-that-it-is-nearly-invisible-flying-device-adds-motion-blur-to-the-real-world"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.818338",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/drones/phantom-twist-drone-spins-so-fast-that-it-is-nearly-invisible-flying-device-adds-motion-blur-to-the-real-world",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "f6882850090930d15545d82eaa9965b1",
+        "title": "三星美国消费电子业务裁员，总部迁往得州前七百余岗受影响",
+        "chinese_title": "三星美国消费电子业务裁员，总部迁往得州前七百余岗受影响",
+        "original_title": "Samsung cuts hundreds of US consumer electronics jobs ahead of Texas HQ move — 739 roles affected in New Jersey as chip division posts record profit",
+        "summary": "三星在美国消费电子部门推进裁员，新泽西州预警文件显示七百三十九个岗位受影响，得州普莱诺另有约百人离职，总部计划年底迁往得州。",
+        "rating": "A",
+        "score": 76,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "可区分总部搬迁、业务重组与成本控制因素，并观察消费电子裁员和芯片部门创纪录利润之间的资源再配置。",
+        "entities": [
+          "Samsung",
+          "三星电子美国",
+          "得州",
+          "消费电子"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/samsung-cuts-hundreds-of-us-consumer-electronics-jobs-ahead-of-texas-hq-move"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.818443",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/samsung-cuts-hundreds-of-us-consumer-electronics-jobs-ahead-of-texas-hq-move",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "d3226fb1648e5892d2695bba5d992eba",
+        "title": "研究者百美元内毒化开放权重模型，十条恶意样本即可奏效",
+        "chinese_title": "研究者百美元内毒化开放权重模型，十条恶意样本即可奏效",
+        "original_title": "It’s Laughably Easy to Poison Open-Weight AI Models, Researcher Finds",
+        "summary": "Semgrep安全研究员Katie Paxton-Fear演示在不到一小时、成本不足一百美元的条件下，仅用十条污染样本就让开放权重模型持续生成含漏洞代码。",
+        "rating": "A+",
+        "score": 89,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可核验攻击所用模型、微调方法和成功率，并调查模型仓库的签名、数据审计与供应链防护是否足以阻断低成本投毒。",
+        "entities": [
+          "Katie Paxton-Fear",
+          "Semgrep",
+          "开放权重模型",
+          "数据投毒"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/easy-poison-open-weight-ai"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.819054",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/easy-poison-open-weight-ai",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "920c6e87c802286b336fc962247235aa",
+        "title": "中国加强AI陪伴产品监管，重点防范情感依赖风险",
+        "chinese_title": "中国加强AI陪伴产品监管，重点防范情感依赖风险",
+        "original_title": "China Is Cracking Down on AI Companions Because Not Enough Babies Are Being Born",
+        "summary": "报道将中国针对拟人化聊天机器人的新规与低生育率讨论联系起来，新规重点限制用户对AI陪伴产品形成过度情感依赖，但具体政策动机仍需回到正式文件核验。",
+        "rating": "A",
+        "score": 80,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "应拆分法规原文与媒体推断，重点关注年龄保护、拟人化设计、提醒机制和数据使用要求对陪伴型产品的影响。",
+        "entities": [
+          "Ai陪伴",
+          "中国",
+          "情感依赖",
+          "聊天机器人"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/china-cracking-down-ai-boyfriends"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.819156",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/china-cracking-down-ai-boyfriends",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      }
+    ],
     "2026-07-19": [
+      {
+        "id": "dd640ec003d3a42fc4ec6632b653321b",
+        "title": "四十八光年外行星发现氦逸散，或是寻找生命最佳目标",
+        "chinese_title": "四十八光年外行星发现氦逸散，或是寻找生命最佳目标",
+        "original_title": "Astronomers Thrilled After Discovering Best Spot Yet to Look for Alien Life",
+        "summary": "天文学家在岩质系外行星LHS 1140b周围观测到氦气逸散，表明它可能拥有较厚大气层；该行星位于恒星宜居带内。",
+        "rating": "S",
+        "score": 92,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "后续可关注詹姆斯·韦布望远镜对大气成分和海洋迹象的观测，并评估氦逸散能否排除其他非生命解释。",
+        "entities": [
+          "Lhs 1140B",
+          "宜居带",
+          "氦逸散",
+          "系外行星"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/space/astronomers-thrilled-best-spot-alien-life"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.960104",
+        "source": "Futurism",
+        "url": "https://futurism.com/space/astronomers-thrilled-best-spot-alien-life",
+        "event_id": null,
+        "grade": "S",
+        "level": "S"
+      },
+      {
+        "id": "451e0a3051180fb1e7b01993b9cec02e",
+        "title": "Codex模型上下文上限被调低，三十七万降至二十七万",
+        "chinese_title": "Codex模型上下文上限被调低，三十七万降至二十七万",
+        "original_title": "OpenAI reduces Codex Model Context Size from 372k to 272k",
+        "summary": "OpenAI Codex代码变更显示模型可用上下文大小从约三十七万二千调整为二十七万二千，具体原因和对现有任务的影响仍待官方说明。",
+        "rating": "A+",
+        "score": 91,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可核对变更范围、压缩预留和实际可用token，测试大型代码库任务是否更易截断，以及成本与延迟是否同步改善。",
+        "entities": [
+          "Codex",
+          "Github",
+          "OpenAI",
+          "上下文窗口"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/openai/codex/pull/33972/files"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.960283",
+        "source": "Hacker News",
+        "url": "https://github.com/openai/codex/pull/33972/files",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "3469438be594029c7f8b9d2f28cc2ffe",
+        "title": "Claude Code改用Rust版Bun组件，启动与分发链路调整",
+        "chinese_title": "Claude Code改用Rust版Bun组件，启动与分发链路调整",
+        "original_title": "Claude Code uses Bun written in Rust now",
+        "summary": "Simon Willison分析Claude Code近期实现变化，指出其开始采用以Rust重写的Bun相关组件，涉及命令行工具的运行时、构建和分发方式。",
+        "rating": "A",
+        "score": 79,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可追踪迁移带来的启动速度、内存占用、跨平台兼容性和供应链风险，并区分Bun生态与Rust重写部分的边界。",
+        "entities": [
+          "Anthropic",
+          "Bun",
+          "Claude Code",
+          "Rust"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.960369",
+        "source": "Hacker News",
+        "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "b0cef59e5b45b948d04f40ecafbddb5c",
+        "title": "谷歌DeepMind把视频生成器改造成视觉世界模型",
+        "chinese_title": "谷歌DeepMind把视频生成器改造成视觉世界模型",
+        "original_title": "Google Deepmind argues video generators already contain the world models computer vision has been missing",
+        "summary": "谷歌DeepMind提出GenCeption，将视频生成模型复用于深度估计和图像分割等经典视觉任务，仅凭大量合成视频训练便达到接近顶尖系统的表现。",
+        "rating": "A+",
+        "score": 88,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可验证其对真实分布、长尾场景和不同摄像机条件的泛化能力，并讨论视频生成模型是否已形成通用空间表征。",
+        "entities": [
+          "DeepMind",
+          "Genception",
+          "世界模型",
+          "视频生成模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/google-deepmind-argues-video-generators-already-contain-the-world-models-computer-vision-has-been-missing/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.960535",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/google-deepmind-argues-video-generators-already-contain-the-world-models-computer-vision-has-been-missing/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "b3c81d5334a596fdefcf4e4640345dc8",
+        "title": "Kimi登顶前端代码榜，但高难数学与海外模型差距明显",
+        "chinese_title": "Kimi登顶前端代码榜，但高难数学与海外模型差距明显",
+        "original_title": "Moonshot's Kimi K3 outperforms Fable 5 in frontend code but lags far behind in complex math",
+        "summary": "Kimi K3在Code Arena前端榜超过Claude与GPT，但在FrontierMath最高难度层仅约百分之三十九，OpenAI和Anthropic模型接近百分之九十。",
+        "rating": "A+",
+        "score": 89,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可分析训练数据和强化学习目标如何造成能力偏科，并通过独立样本验证前端优势与高难数学短板是否稳定。",
+        "entities": [
+          "Code Arena",
+          "Frontiermath",
+          "Kimi",
+          "月之暗面"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER (kimi)",
+            "url": "https://the-decoder.com/moonshots-kimi-k3-outperforms-fable-5-in-frontend-code-but-lags-far-behind-in-complex-math/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.960703",
+        "source": "THE DECODER (kimi)",
+        "url": "https://the-decoder.com/moonshots-kimi-k3-outperforms-fable-5-in-frontend-code-but-lags-far-behind-in-complex-math/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "0ba911e3224d62fe0f61f407f6b83751",
+        "title": "AI读片答错仍高度自信，新基准暴露医疗模型拒答短板",
+        "chinese_title": "AI读片答错仍高度自信，新基准暴露医疗模型拒答短板",
+        "original_title": "AI chatbots reading X-rays can be dangerously confident even when they're wrong",
+        "summary": "RadLE新基准测试放射科AI能否识别自身能力边界，结果显示多款模型会在错误诊断时保持高度自信，整体仍明显落后于人类放射科医生。",
+        "rating": "A+",
+        "score": 87,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可追踪模型校准、拒答阈值和临床责任设计，评估在真实医院流程中加入人类复核能否降低高置信误诊风险。",
+        "entities": [
+          "Radle",
+          "医疗Ai",
+          "放射科",
+          "模型校准"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/ai-chatbots-reading-x-rays-can-be-dangerously-confident-even-when-theyre-wrong/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.960787",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/ai-chatbots-reading-x-rays-can-be-dangerously-confident-even-when-theyre-wrong/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "20b42b639668e94a90b2abebbe660232",
+        "title": "月之暗面最快半年赴港上市，年化收入升至三亿美元",
+        "chinese_title": "月之暗面最快半年赴港上市，年化收入升至三亿美元",
+        "original_title": "Sources: Kimi developer Moonshot told investors it is preparing for a Hong Kong IPO in as early as six months; its ARR hit $300M in June, up from $200M in April (Bloomberg)",
+        "summary": "据彭博援引知情人士，Kimi开发商月之暗面已告知投资者最快六个月内筹备香港上市，其年化经常性收入六月达到三亿美元，高于四月的两亿美元。",
+        "rating": "A+",
+        "score": 89,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可追踪招股时间、收入质量、推理成本与亏损水平，并观察香港市场能否承接新一轮中国大模型公司上市潮。",
+        "entities": [
+          "Ipo",
+          "Kimi",
+          "月之暗面",
+          "香港交易所"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (kimi)",
+            "url": "https://www.techmeme.com/260719/p5#a260719p5"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.960873",
+        "source": "Techmeme (kimi)",
+        "url": "https://www.techmeme.com/260719/p5#a260719p5",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "5d3bffc1aabb9324709319fbba58ead0",
+        "title": "OpenAI与Anthropic员工政治捐款更集中，AI财富提前影响选举",
+        "chinese_title": "OpenAI与Anthropic员工政治捐款更集中，AI财富提前影响选举",
+        "original_title": "Analysis: OpenAI and Anthropic employees are donating to campaigns more heavily and cohesively than Google, Meta, and Airbnb employees did post-IPO (Alexandra Lindsay/The San Francisco ...)",
+        "summary": "旧金山标准报分析称，OpenAI和Anthropic员工在公司上市前的政治捐款已比谷歌、Meta和Airbnb同期更活跃且立场更集中。",
+        "rating": "A",
+        "score": 78,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可核对捐款数据库、样本口径与党派分布，追踪AI公司股权财富释放后对地方选举和技术监管的影响。",
+        "entities": [
+          "Anthropic",
+          "OpenAI",
+          "政治捐款",
+          "旧金山"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260719/p4#a260719p4"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.961038",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260719/p4#a260719p4",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "97ceb71dc7f779f40d0089e3e2150cc3",
+        "title": "阿里开源芯片软件栈，国产GPU集体向CUDA生态发起挑战",
+        "chinese_title": "阿里开源芯片软件栈，国产GPU集体向CUDA生态发起挑战",
+        "original_title": "Alibaba open-sources its chip software, following similar plays from Huawei and Moore Threads, as Chinese GPU makers try to break the dominance of Nvidia's CUDA (Ann Cao/South China Morning Post)",
+        "summary": "阿里巴巴芯片业务平头哥开放面向真武AI计算架构的软件，试图降低开发者迁移门槛；华为与摩尔线程此前也推出类似开放计划。",
+        "rating": "A+",
+        "score": 89,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可比较编译器、算子库和框架兼容度，评估国产软件栈能否减少CUDA迁移成本，并形成跨芯片统一生态。",
+        "entities": [
+          "Alibaba",
+          "CUDA",
+          "NVIDIA",
+          "平头哥",
+          "真武"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (摩尔线程)",
+            "url": "https://www.techmeme.com/260718/p18#a260718p18"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.961122",
+        "source": "Techmeme (摩尔线程)",
+        "url": "https://www.techmeme.com/260718/p18#a260718p18",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "ee73d1c133c14f15a4e8aac38bb82e19",
+        "title": "SpaceX上市预期升温，华尔街独立研究神话遭质疑",
+        "chinese_title": "SpaceX上市预期升温，华尔街独立研究神话遭质疑",
+        "original_title": "SpaceX and the myth of independent Wall St research",
+        "summary": "金融时报文章借SpaceX相关研究讨论华尔街分析的独立性，关注投行利益、信息渠道和潜在上市交易如何影响研究判断。",
+        "rating": "B",
+        "score": 67,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可核对报告作者与交易关系，比较卖方、独立机构和二级市场对SpaceX估值假设的差异。",
+        "entities": [
+          "Ipo",
+          "SpaceX",
+          "华尔街",
+          "股票研究"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.ft.com/content/ce345155-d897-4f49-b7c8-13680e3b5434"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.961288",
+        "source": "Hacker News",
+        "url": "https://www.ft.com/content/ce345155-d897-4f49-b7c8-13680e3b5434",
+        "event_id": null,
+        "grade": "B",
+        "level": "B"
+      },
+      {
+        "id": "16a94eecec522e03975e37d64fb4f290",
+        "title": "习近平呼吁扩大开源AI合作，中国强调开放与治理并行",
+        "chinese_title": "习近平呼吁扩大开源AI合作，中国强调开放与治理并行",
+        "original_title": "Xi Jinping calls for more open-source AI: 'China is ready to be more open'",
+        "summary": "习近平在上海世界人工智能大会上提出把开放、协作和共享作为人工智能发展原则，同时强调加强治理，展现中国与美国不同的开放模型战略。",
+        "rating": "A+",
+        "score": 89,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可追踪政策表态如何落到模型许可、算力合作和国际治理机制，并观察中国开源模型在全球开发者中的采用变化。",
+        "entities": [
+          "世界人工智能大会",
+          "中国",
+          "习近平",
+          "开源Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI - Business Insider (deepseek)",
+            "url": "https://www.businessinsider.com/xi-jinping-open-source-ai-us-competition-openai-anthropic-models-2026-7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784495411,
+        "published_at": "2026-07-20T05:10:11.961453",
+        "source": "AI - Business Insider (deepseek)",
+        "url": "https://www.businessinsider.com/xi-jinping-open-source-ai-us-competition-openai-anthropic-models-2026-7",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
       {
         "id": "0c034e8de054ba89da727ea81d26741a",
         "title": "高通开源手机端视频模型，骁龙约20秒生成480P视频",
@@ -800,9 +1603,7 @@
         "event_id": null,
         "grade": "A+",
         "level": "A+"
-      }
-    ],
-    "2026-07-18": [
+      },
       {
         "id": "aa257c3016bf450f1ea517b3f82538fc",
         "title": "AI推理芯片公司Etched寻求融资，最高估值约200亿美元",
@@ -963,6 +1764,40 @@
         "grade": "A+",
         "level": "A+"
       },
+      {
+        "id": "74227f4822cc4c42f7cd69c5c3992e1c",
+        "title": "太空反射镜计划拟夜间补光，5万颗卫星引发天文观测担忧",
+        "chinese_title": "太空反射镜计划拟夜间补光，5万颗卫星引发天文观测担忧",
+        "original_title": "Can giant space mirrors boost green energy on Earth? A start-up aims to find out",
+        "summary": "消息显示，太空反射镜计划拟夜间补光，5万颗卫星引发天文观测担忧。核心变化涉及Reflect Orbital、太空反射镜、卫星，其真实性、落地节奏与对产业竞争格局的影响仍需结合一手资料持续验证。",
+        "rating": "A",
+        "score": 83,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可追踪量产、成本、能耗和供应链约束，并评估其对算力与终端市场的影响。",
+        "entities": [
+          "Reflect Orbital",
+          "卫星",
+          "天文观测",
+          "太空反射镜"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-02218-9"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1784409366,
+        "published_at": "2026-07-19T05:16:06.501548",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-02218-9",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      }
+    ],
+    "2026-07-18": [
       {
         "id": "6cbaef4da60c7120e6677cb567717301",
         "title": "Harvey开源十套并购尽调强化学习环境",
@@ -2596,38 +3431,6 @@
       }
     ],
     "2026-07-17": [
-      {
-        "id": "74227f4822cc4c42f7cd69c5c3992e1c",
-        "title": "太空反射镜计划拟夜间补光，5万颗卫星引发天文观测担忧",
-        "chinese_title": "太空反射镜计划拟夜间补光，5万颗卫星引发天文观测担忧",
-        "original_title": "Can giant space mirrors boost green energy on Earth? A start-up aims to find out",
-        "summary": "消息显示，太空反射镜计划拟夜间补光，5万颗卫星引发天文观测担忧。核心变化涉及Reflect Orbital、太空反射镜、卫星，其真实性、落地节奏与对产业竞争格局的影响仍需结合一手资料持续验证。",
-        "rating": "A",
-        "score": 83,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可追踪量产、成本、能耗和供应链约束，并评估其对算力与终端市场的影响。",
-        "entities": [
-          "Reflect Orbital",
-          "卫星",
-          "天文观测",
-          "太空反射镜"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-02218-9"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784409366,
-        "published_at": "2026-07-19T05:16:06.501548",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-02218-9",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
       {
         "id": "44acf45f3b0998bc598019fdb22546e9",
         "title": "消息称Gemini新版延期数月，谷歌仍在补强编程能力",
@@ -11120,6 +11923,6 @@
       }
     ]
   },
-  "last_updated": "2026-07-19T05:16:46.469309",
-  "total_news": 360
+  "last_updated": "2026-07-20T05:14:35.832542",
+  "total_news": 373
 }
