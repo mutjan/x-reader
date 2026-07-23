@@ -1225,6 +1225,56 @@
         }
       ],
       "note": "外部Agent复查因数据安全策略拒绝，改为本地语义复查"
+    },
+    {
+      "timestamp": "2026-07-24T05:16:57.059573",
+      "batch_id": "20260724051657",
+      "corrections_applied": 7,
+      "details": [
+        {
+          "news_id": "c332114f6fee4fc12e2e21047f951322",
+          "from_event_id": "c7ebb67b",
+          "to_event_id": "new_event",
+          "reason": "自动分组仅因通用实体重合而合并，实际新闻主题不同，拆分为独立事件。"
+        },
+        {
+          "news_id": "280b6f27bc4e848e110c1f609a6afa2d",
+          "from_event_id": "c7ebb67b",
+          "to_event_id": "new_event",
+          "reason": "自动分组仅因通用实体重合而合并，实际新闻主题不同，拆分为独立事件。"
+        },
+        {
+          "news_id": "bd037b886b0b2dea4dfbc4e01395c414",
+          "from_event_id": "c7ebb67b",
+          "to_event_id": "new_event",
+          "reason": "自动分组仅因通用实体重合而合并，实际新闻主题不同，拆分为独立事件。"
+        },
+        {
+          "news_id": "345c0b15f0077a20f4421a0a200f8f0b",
+          "from_event_id": "86eced15",
+          "to_event_id": "new_event",
+          "reason": "自动分组仅因通用实体重合而合并，实际新闻主题不同，拆分为独立事件。"
+        },
+        {
+          "news_id": "119435d04b17e5291ece6150ec8c520f",
+          "from_event_id": "86eced15",
+          "to_event_id": "new_event",
+          "reason": "自动分组仅因通用实体重合而合并，实际新闻主题不同，拆分为独立事件。"
+        },
+        {
+          "news_id": "efa88a57e8860fef58d2a99ad89d2a7d",
+          "from_event_id": "86eced15",
+          "to_event_id": "new_event",
+          "reason": "自动分组仅因通用实体重合而合并，实际新闻主题不同，拆分为独立事件。"
+        },
+        {
+          "news_id": "08d97e1fce7b0203d566bad1887b6169",
+          "from_event_id": "2d6a1f1d",
+          "to_event_id": "new_event",
+          "reason": "自动分组仅因通用实体重合而合并，实际新闻主题不同，拆分为独立事件。"
+        }
+      ],
+      "note": "本轮高风险事件分组人工复查"
     }
   ],
   "reviews": [
