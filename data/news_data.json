@@ -5721,1112 +5721,1673 @@
         "level": "B"
       }
     ],
-    "2026-07-21": [
+    "2026-07-28": [
       {
-        "id": "07c7defa6272d48c4657948cd76eb5bf",
-        "title": "中国建成不含英伟达芯片的千兆瓦级AI数据中心",
-        "chinese_title": "中国建成不含英伟达芯片的千兆瓦级AI数据中心",
-        "original_title": "Holy: China now has a 1-gigawatt AI data center built without a single Nvidia chip! Via Bloomberg: zAI has reportedly completed construction of the fa...",
-        "summary": "据报道，zAI已完成一座功率达1吉瓦的人工智能数据中心建设，并开始部分运行，设施全部采用中国制造芯片，将用于支持GLM系列前沿模型开发。",
-        "rating": "B",
-        "score": 74,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "该设施若稳定运行，将强化国产芯片替代英伟达的市场叙事，并推动算力集群、模型厂商和供应链围绕自主化展开更激烈竞争。",
+        "id": "d5a04e100b9bd5155ad662d5dac3bccc",
+        "title": "英伟达据悉向SSI投资50亿美元，估值曾达320亿",
+        "chinese_title": "英伟达据悉向SSI投资50亿美元，估值曾达320亿",
+        "original_title": "Sources: Nvidia has committed to invest $5B in Ilya Sutskever's SSI; the startup has previously raised about $3B in funding and was valued at $32B last year (Shirin Ghaffary/Bloomberg)",
+        "summary": "彭博援引知情人士称，英伟达承诺向Ilya Sutskever创办的SSI投资50亿美元，该公司此前已融资约30亿美元。",
+        "rating": "A+",
+        "score": 89,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "巨额投资将把芯片供应商与前沿实验室绑定得更深，也可核算SSI算力扩张后的实际研究产出。",
         "entities": [
-          "Glm",
+          "Ai融资",
+          "Ilya Sutskever",
           "NVIDIA",
-          "Zai",
-          "国产芯片"
+          "Safe Superintelligence"
         ],
         "sourceLinks": [
           {
-            "name": "x",
-            "url": "https://x.com/kimmonismus/status/2079283578735640886"
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260727/p24#a260727p24"
           }
         ],
         "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.664796",
-        "source": "x",
-        "url": "https://x.com/kimmonismus/status/2079283578735640886",
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.613049",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260727/p24#a260727p24",
         "event_id": null,
-        "grade": "B",
-        "level": "B"
+        "grade": "A+",
+        "level": "A+"
       },
       {
-        "id": "ae33ec36d94b6fe5579296c472f0eb72",
-        "title": "OpenAI曾因失配风险暂停内部模型访问并重部署",
-        "chinese_title": "OpenAI曾因失配风险暂停内部模型访问并重部署",
-        "original_title": "Within OpenAI, we recently paused access for an internal model due to misalignment. See the blogpost for details. We have since improved our safeguard...",
-        "summary": "OpenAI披露，公司曾因一款内部模型出现与目标不一致的行为而暂停其访问权限，完成安全防护改进后重新部署，相关经历凸显长时任务模型的控制难题。",
+        "id": "a0e6b8d00abb0c654fa058322f02b101",
+        "title": "Threads私信接入Meta AI，聊天机器人深入社交场景",
+        "chinese_title": "Threads私信接入Meta AI，聊天机器人深入社交场景",
+        "original_title": "Threads users can now chat with Meta AI in their DMs",
+        "summary": "Meta开始把Meta AI聊天机器人集成进Threads私信，用户无需离开社交应用即可与助手对话，产品覆盖进一步扩大。",
         "rating": "A",
         "score": 80,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "集成可提升助手触达率，也会带来私信数据使用、推荐闭环和与其他社交AI产品竞争的问题。",
+        "entities": [
+          "Meta",
+          "Meta Ai",
+          "Threads",
+          "社交网络"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/07/27/threads-users-can-now-chat-with-meta-ai-in-their-dms/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.613152",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/07/27/threads-users-can-now-chat-with-meta-ai-in-their-dms/",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "454e5c8b3aed65a3958f93b74000c5d3",
+        "title": "国产DUV量产消息冲击全球设备股，ASML跌逾7%",
+        "chinese_title": "国产DUV量产消息冲击全球设备股，ASML跌逾7%",
+        "original_title": "ASML shares fall 7%+ after a report that a Chinese state-backed company has begun manufacturing DUV machines; Applied Materials fell 6.5%+ and Lam Research 7%+ (Sarah Jacob/Bloomberg)",
+        "summary": "中国国资企业据报开始制造DUV光刻机后，ASML股价下跌逾7%，应用材料和泛林集团也分别下挫约6.5%和7%。",
+        "rating": "A+",
+        "score": 88,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "资本市场已开始定价中国设备替代，后续交付、良率和客户验证将决定这轮估值调整能否持续。",
+        "entities": [
+          "Asml",
+          "Duv光刻机",
+          "应用材料",
+          "泛林集团"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260727/p21#a260727p21"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.613413",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260727/p21#a260727p21",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "7103bb575e3810bc78c1faf32b89237d",
+        "title": "新型勒索软件专毁模型权重，却因配置失误无法收款",
+        "chinese_title": "新型勒索软件专毁模型权重，却因配置失误无法收款",
+        "original_title": "New ransomware targets AI model weights and can't even collect the ransom",
+        "summary": "攻击者利用Langflow未授权代码执行漏洞两次入侵同一服务器，第二次部署专门破坏训练模型的勒索软件，却无法正常收取赎金。",
+        "rating": "A+",
+        "score": 88,
         "type": "safety",
         "typeName": "安全伦理",
-        "expansion": "事件可能推动模型部署前的隔离测试、行为监控和权限控制进一步严格化，也会增加行业对智能体失控风险的关注。",
+        "expansion": "事件显示模型权重已成为勒索目标，企业需加强Langflow暴露面、备份隔离和模型资产访问控制。",
+        "entities": [
+          "Cve-2025-3248",
+          "Langflow",
+          "勒索软件",
+          "模型权重"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/security/new-ransomware-targets-ai-model-weights-and-cant-even-collect-the-ransom"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.613328",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/security/new-ransomware-targets-ai-model-weights-and-cant-even-collect-the-ransom",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "61dffaf3cd909f89e01d50d63bba6ad9",
+        "title": "奥尔特曼赴华盛顿预览OpenAI新一代模型",
+        "chinese_title": "奥尔特曼赴华盛顿预览OpenAI新一代模型",
+        "original_title": "Source: Sam Altman will meet with senior US officials, lawmakers, and economists in Washington, DC, this week to preview OpenAI's upcoming family of AI models (CNBC)",
+        "summary": "CNBC援引消息称，Sam Altman本周将会见美国政府高官、议员和经济学家，提前展示OpenAI即将发布的新模型家族。",
+        "rating": "A+",
+        "score": 89,
+        "type": "breaking",
+        "typeName": "突发事件",
+        "expansion": "发布前向政策制定者预览显示模型可能具有重大经济或安全影响，可追踪监管反馈与正式发布时间。",
         "entities": [
           "OpenAI",
-          "人工智能安全",
-          "智能体",
-          "模型失配"
+          "Sam Altman",
+          "前沿模型",
+          "美国政府"
         ],
         "sourceLinks": [
           {
-            "name": "x",
-            "url": "https://x.com/MicahCarroll/status/2079263985363533987"
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260727/p19#a260727p19"
           }
         ],
         "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.665092",
-        "source": "x",
-        "url": "https://x.com/MicahCarroll/status/2079263985363533987",
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.613581",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260727/p19#a260727p19",
         "event_id": null,
-        "grade": "A",
-        "level": "A"
+        "grade": "A+",
+        "level": "A+"
       },
       {
-        "id": "a02ab21a8473ac56461b23f3e3e8b3c4",
-        "title": "智能体团队仅凭SQLite手册重建出可通过测试的Rust版本",
-        "chinese_title": "智能体团队仅凭SQLite手册重建出可通过测试的Rust版本",
-        "original_title": "RT Cursor: We had a team of agents rebuild SQLite from its 835-page manual. It created a replica in Rust which passed 100% of a held-out test suite. I...",
-        "summary": "Cursor表示，其智能体团队仅依据SQLite的835页手册，在Rust中重建了一个数据库复刻版本，并通过全部保留测试集；实验还显示，不同模型组合会造成最高十五倍的成本差异。",
+        "id": "32ae74b720df4e10d19246ba6d2159fd",
+        "title": "亚马逊申请部署5105颗卫星，2028年做全球手机直连",
+        "chinese_title": "亚马逊申请部署5105颗卫星，2028年做全球手机直连",
+        "original_title": "Amazon&rsquo;s trying to launch a global satellite cellphone network in 2028",
+        "summary": "亚马逊向FCC申请建设由5105颗低轨卫星组成的新星座，计划2028年起提供语音、消息、数据和紧急通信服务。",
+        "rating": "S",
+        "score": 91,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "项目将与Starlink正面竞争，频谱审批、发射资源、运营商伙伴和终端功耗是落地关键。",
+        "entities": [
+          "Amazon",
+          "Amazon Leo",
+          "Fcc",
+          "Starlink"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/971437/amazon-leo-direct-to-device-satellite-network"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.613663",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/971437/amazon-leo-direct-to-device-satellite-network",
+        "event_id": null,
+        "grade": "S",
+        "level": "S"
+      },
+      {
+        "id": "d43d4a101f531ce61eb15207eb656fab",
+        "title": "机器人公司Tacta首度曝光，用数据手套训练具身模型",
+        "chinese_title": "机器人公司Tacta首度曝光，用数据手套训练具身模型",
+        "original_title": "Robotics Startup Tacta Shows Its Hand (and Glove)",
+        "summary": "低调运营三年的Tacta展示数据采集手套与机器人系统，通过记录人类工作和家务动作，为具身AI模型积累训练数据。",
         "rating": "A",
         "score": 82,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这项实验将推动软件工程从代码补全转向完整系统重建，同时凸显模型选择、任务分解和验证流程对智能体开发成本的决定性影响。",
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "数据手套路线可降低遥操作成本，但规模化依赖标注质量、动作覆盖和劳动者数据权益。",
         "entities": [
-          "Cursor",
-          "Rust",
-          "Sqlite",
-          "智能体"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/AndrewCurran_/status/2079282825531159028"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.665217",
-        "source": "x",
-        "url": "https://x.com/AndrewCurran_/status/2079282825531159028",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "33de2518dd6904a242767c23795d6eb7",
-        "title": "英伟达发布可端侧运行的开放世界模型Cosmos 3 Edge",
-        "chinese_title": "英伟达发布可端侧运行的开放世界模型Cosmos 3 Edge",
-        "original_title": "RT NVIDIA AI: Introducing Cosmos 3 Edge: our open frontier world model built to run on-device. Cosmos 3 Edge helps robots learn and act, autonomous ve...",
-        "summary": "英伟达推出Cosmos 3 Edge开放前沿世界模型，参数规模为40亿，搭载基于Nemotron的20亿参数推理器，可在设备端服务机器人、自动驾驶和实时视频智能体。",
-        "rating": "A",
-        "score": 82,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "端侧世界模型将加速机器人和自动驾驶的实时感知应用，也可能带动Jetson、DGX Spark等边缘算力硬件与软件生态扩张。",
-        "entities": [
-          "Cosmos",
-          "Dgx Spark",
-          "Jetson",
-          "NVIDIA",
-          "Nemotron"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Scobleizer/status/2079246171684712715"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.667273",
-        "source": "x",
-        "url": "https://x.com/Scobleizer/status/2079246171684712715",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "5ed964501e8f1ab20e690366b91242d6",
-        "title": "Linear为Agent推出可自动执行的周期性工作流Loops",
-        "chinese_title": "Linear为Agent推出可自动执行的周期性工作流Loops",
-        "original_title": "Introducing Loops: Recurring workflows that Linear Agent can run for your team.",
-        "summary": "Linear推出Loops功能，让Linear Agent能够按照预设周期为团队重复执行工作流，帮助用户自动处理持续性任务，进一步扩大智能体在项目管理和协作场景中的作用。",
-        "rating": "B",
-        "score": 68,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "周期性智能体任务可能成为项目管理软件的标准能力，并促使竞品围绕自动化深度、权限管理和任务可靠性展开竞争。",
-        "entities": [
-          "Linear",
-          "Linear Agent",
-          "Loops",
-          "项目管理"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/linear/status/2079233260161323371"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.668463",
-        "source": "x",
-        "url": "https://x.com/linear/status/2079233260161323371",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "167b5145af74024461ad4411f5e6a3e5",
-        "title": "英伟达推出ArtiFixer修复不完整高斯泼溅三维场景",
-        "chinese_title": "英伟达推出ArtiFixer修复不完整高斯泼溅三维场景",
-        "original_title": "NVIDIA just revealed ArtiFixer, new research that can repair incomplete Gaussian splats. It fills in missing areas and turns messy captures into clean...",
-        "summary": "英伟达公布ArtiFixer研究成果，能够识别并补全高斯泼溅捕捉中的缺失区域，将不完整或杂乱的三维数据转换为更连贯、清晰的场景表示。",
-        "rating": "B",
-        "score": 67,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "更可靠的三维场景修复将改善数字孪生、游戏制作和机器人感知的数据质量，并可能降低真实环境三维建模的采集成本。",
-        "entities": [
-          "Artifixer",
-          "NVIDIA",
-          "三维重建",
-          "高斯泼溅"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/justinryanio/status/2079221185066524979"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.668573",
-        "source": "x",
-        "url": "https://x.com/justinryanio/status/2079221185066524979",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "0d9f9579aa071434bfaa787d0045d8d7",
-        "title": "小米发布在真实家庭中自主执行任务的机器人基础模型",
-        "chinese_title": "小米发布在真实家庭中自主执行任务的机器人基础模型",
-        "original_title": "Xiaomi-Robotics-1 just dropped on Hugging Face 🔥 A robot foundation model trained on 100,000 hours of real-world manipulation. They turned it loose...",
-        "summary": "小米机器人基础模型据称已在Hugging Face上线，使用十万小时真实操作数据训练，并在公寓环境中自主完成叠衣服、洗衣、洗碗和整理行李等多种家务任务。",
-        "rating": "B",
-        "score": 73,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "真实家庭场景的机器人模型将推动家务自动化和具身智能竞争，也会带动数据采集、安全评估及家用机器人硬件的持续投入。",
-        "entities": [
-          "Hugging Face",
-          "Xiaomi-Robotics-1",
+          "Tacta Systems",
           "具身智能",
-          "小米",
+          "数据手套",
           "机器人"
         ],
         "sourceLinks": [
           {
-            "name": "x",
-            "url": "https://x.com/victormustar/status/2079122440542720024"
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/robotics-startup-tacta-shows-hand-glove"
           }
         ],
         "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.670041",
-        "source": "x",
-        "url": "https://x.com/victormustar/status/2079122440542720024",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "fc294b3e8e7d2caa179ee67859c5fc8e",
-        "title": "MCP使用门槛降低人工智能连接外部工具更方便",
-        "chinese_title": "MCP使用门槛降低人工智能连接外部工具更方便",
-        "original_title": "AI’s most important protocol is getting a little bit easier to use",
-        "summary": "模型上下文协议MCP正在变得更易使用，它为人工智能模型访问日历、数据库和内部工具提供标准化连接方式，有望减少企业为不同服务重复开发专用接口的负担。",
-        "rating": "A",
-        "score": 78,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "MCP生态成熟将加快企业智能体接入业务系统，也可能促使更多平台围绕协议兼容性、安全权限和服务目录建立新的竞争壁垒。",
-        "entities": [
-          "MCP",
-          "Techcrunch",
-          "人工智能互操作性",
-          "人工智能智能体"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.670252",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use/",
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.613744",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/robotics-startup-tacta-shows-hand-glove",
         "event_id": null,
         "grade": "A",
         "level": "A"
       },
       {
-        "id": "94bc984f344859c40446dc76192f1408",
-        "title": "Starlink Mini V2进入量产并内置电池满足移动上网需求",
-        "chinese_title": "Starlink Mini V2进入量产并内置电池满足移动上网需求",
-        "original_title": "Starlink Mini V2 Enters Production With Built-in Battery",
-        "summary": "Starlink Mini V2据称已进入生产阶段，产品内置电池，面向旅行者、露营者和移动用户提供更便携的卫星互联网连接，显示SpaceX正在加快终端硬件迭代。",
-        "rating": "B",
-        "score": 70,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "内置电池有望扩大卫星互联网终端在户外和移动场景的使用，也可能推动便携式通信设备、资费方案和区域覆盖竞争升级。",
-        "entities": [
-          "SpaceX",
-          "Starlink",
-          "Starlink Mini V2",
-          "卫星互联网"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tesla News, Upcoming Features and Software Update Release Notes",
-            "url": "https://www.notateslaapp.com/news/4467/starlink-mini-v2-enters-production-with-built-in-battery"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.670577",
-        "source": "Tesla News, Upcoming Features and Software Update Release Notes",
-        "url": "https://www.notateslaapp.com/news/4467/starlink-mini-v2-enters-production-with-built-in-battery",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "214ae9dba8916091a61b8c9be2530099",
-        "title": "X重写安卓应用一年后重新发布新版客户端",
-        "chinese_title": "X重写安卓应用一年后重新发布新版客户端",
-        "original_title": "X relaunches its Android app after a year-long rewrite from scratch; Nikita Bier calls it \"one of the largest engineering projects\" in the company's history (Sarah Perez/TechCrunch)",
-        "summary": "X重新发布经过一年重写的安卓应用，相关负责人称这是公司历史上规模最大的工程项目之一。此次重构旨在改善应用基础架构，并为后续功能迭代提供更稳定的平台。",
-        "rating": "A",
-        "score": 76,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "大型客户端重构可能改善X在安卓市场的性能和发布效率，也将影响用户留存、广告体验及其与其他社交平台的竞争。",
-        "entities": [
-          "Nikita Bier",
-          "Twitter",
-          "X",
-          "安卓应用"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260720/p36#a260720p36"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.670763",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260720/p36#a260720p36",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "25b5f77fda8ea103eea481ed946ee584",
-        "title": "AI模型效率提升却更昂贵使用成本为何持续失控",
-        "chinese_title": "AI模型效率提升却更昂贵使用成本为何持续失控",
-        "original_title": "The enduring paradox of the AI economy — models get better and more efficient, yet costs can still easily spiral out of control",
-        "summary": "文章讨论人工智能经济的矛盾现象：模型能力不断增强、运行效率持续改善，但实际使用成本仍可能快速上升，原因涉及调用规模、复杂工作流、数据中心投入和推理需求增长。",
-        "rating": "B",
-        "score": 70,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "成本失控将迫使企业重新评估智能体部署的投资回报，也可能推动模型压缩、缓存优化、专用芯片和更精细的用量管理工具发展。",
-        "entities": [
-          "人工智能",
-          "推理成本",
-          "数据中心",
-          "智能体"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware (deepseek)",
-            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/the-enduring-paradox-of-the-ai-economy-models-get-better-and-more-efficient-yet-costs-can-still-easily-spiral-out-of-control"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.671626",
-        "source": "Tom's Hardware (deepseek)",
-        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/the-enduring-paradox-of-the-ai-economy-models-get-better-and-more-efficient-yet-costs-can-still-easily-spiral-out-of-control",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "09162fb2b932de67621cf71c247c1539",
-        "title": "开放权重模型崛起令OpenAI承压美国是否应限制",
-        "chinese_title": "开放权重模型崛起令OpenAI承压美国是否应限制",
-        "original_title": "OpenAI is scared of open-weight models. Should the US be?",
-        "summary": "文章讨论美国是否应限制中国制造的开放权重大语言模型，并将OpenAI对开放模型的担忧与人工智能商业化难题联系起来，核心争议在于安全、竞争和创新之间如何平衡。",
-        "rating": "B",
-        "score": 72,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "相关政策讨论可能影响开放模型跨境流通和美国企业竞争策略，也会推动行业重新审视闭源订阅模式与开放权重生态的长期价值。",
-        "entities": [
-          "OpenAI",
-          "大语言模型",
-          "开放权重模型",
-          "美国"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.672138",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "34327b5f2462a3475328c9ac1d47bb22",
-        "title": "Natural融资3000万美元挑战Stripe的智能体支付版图",
-        "chinese_title": "Natural融资3000万美元挑战Stripe的智能体支付版图",
-        "original_title": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe",
-        "summary": "成立仅一年的Natural获得3000万美元融资，试图重构面向自主人工智能交易的金融架构，让智能体能够在企业授权范围内完成支付，并以此挑战Stripe等传统支付平台。",
-        "rating": "B",
-        "score": 70,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "智能体支付若获得企业采用，将催生新的身份认证、授权、反欺诈和清算基础设施，也可能迫使传统支付公司提前布局代理交易市场。",
-        "entities": [
-          "Natural",
-          "Stripe",
-          "人工智能智能体",
-          "智能体支付"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.672354",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "0c340e31923b8f1d67aed104c34e42b1",
-        "title": "智能体群集如何重塑新的模型经济格局",
-        "chinese_title": "智能体群集如何重塑新的模型经济格局",
-        "original_title": "Agent swarms and the new model economics",
-        "summary": "智能体群集正在改变模型经济。随着 AI 泡沫成为华尔街主流话题，科技公司继续推销 AI 将成为神奇赚钱工具的幻想。",
-        "rating": "A+",
-        "score": 87,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "智能体群集正在改变模型经济，科技公司继续推销 AI 将成为神奇赚钱工具的幻想。",
-        "entities": [
-          "OpenAI",
-          "华尔街",
-          "智能体群集",
-          "模型经济"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://cursor.com/blog/agent-swarm-model-economics"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.828417",
-        "source": "Hacker News",
-        "url": "https://cursor.com/blog/agent-swarm-model-economics",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "bd532e64d9fc344a77d8ad5fc7b95398",
-        "title": "OpenAI 似乎大幅落后于其销售目标",
-        "chinese_title": "OpenAI 似乎大幅落后于其销售目标",
-        "original_title": "OpenAI Appears to Be Missing Its Sales Goals by a Vast Margin",
-        "summary": "OpenAI 似乎大幅落后于其销售目标，其广告收入预测可能落后 90%。整个可触达市场为 54 亿美元。",
-        "rating": "B",
-        "score": 72,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "OpenAI 广告收入预测可能落后 90%，整个可触达市场仅为 54 亿美元。",
-        "entities": [
-          "Emarketer",
-          "OpenAI",
-          "华尔街",
-          "广告收入"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/openai-ad-revenue-ai-advertising-financial-projection"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.828519",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/openai-ad-revenue-ai-advertising-financial-projection",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "6697e908fbe96602c8d7c2fda08128e7",
-        "title": "单个 AI 对话看似完美实则存在缺陷",
-        "chinese_title": "单个 AI 对话看似完美实则存在缺陷",
-        "original_title": "A single AI agent conversation can look perfect and still be broken, leaders from LangChain, Conviva and CoreWeave said at VB Transform 2026",
-        "summary": "单个 AI 对话看似完美实则存在缺陷，企业正转向对比分析评估智能体。LangChain、Conviva 和 CoreWeave 在 VB 转型大会上讨论了这一转变。",
-        "rating": "B",
-        "score": 72,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "企业正转向对比分析评估智能体，而非单独评分。",
-        "entities": [
-          "Ai 对话",
-          "Conviva",
-          "Coreweave",
-          "Langchain"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat (qwen)",
-            "url": "https://venturebeat.com/data/a-single-ai-agent-conversation-can-look-perfect-and-still-be-broken-leaders-from-langchain-conviva-and-coreweave-said-at-vb-transform-2026"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.828616",
-        "source": "VentureBeat (qwen)",
-        "url": "https://venturebeat.com/data/a-single-ai-agent-conversation-can-look-perfect-and-still-be-broken-leaders-from-langchain-conviva-and-coreweave-said-at-vb-transform-2026",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "892c20ab2503e79c7eb5c33dc346a350",
-        "title": "Moonshot 最新 Kimi 模型太受欢迎导致暂停新用户注册",
-        "chinese_title": "Moonshot 最新 Kimi 模型太受欢迎导致暂停新用户注册",
-        "original_title": "Moonshot’s latest Kimi model is so popular that the company just gated new users",
-        "summary": "Moonshot 最新 Kimi 模型太受欢迎导致暂停新用户注册，公司正努力扩大计算能力以应对需求。",
-        "rating": "A",
-        "score": 80,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Moonshot 最新 Kimi 模型太受欢迎导致暂停新用户注册。",
-        "entities": [
-          "Kimi 模型",
-          "Moonshot",
-          "计算能力"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI - Business Insider (qwen)",
-            "url": "https://www.businessinsider.com/moonshot-kimi-ai-paused-new-users-popularity-2026-7"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.828712",
-        "source": "AI - Business Insider (qwen)",
-        "url": "https://www.businessinsider.com/moonshot-kimi-ai-paused-new-users-popularity-2026-7",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "6f8b0460591fd588c7e1bb6e05f391e9",
-        "title": "超 30% 的新 ArXiv 论文被判定为 AI 撰写",
-        "chinese_title": "超 30% 的新 ArXiv 论文被判定为 AI 撰写",
-        "original_title": "Over 30% of new ArXiv submissions now read as AI-written",
-        "summary": "最新研究数据显示，超过三分之一的 ArXiv 新提交论文呈现出明显的 AI 写作特征。这一趋势引发了学术界对 AI 生成内容原创性及评估标准的广泛讨论。",
-        "rating": "A",
-        "score": 78,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "AI 写作能力持续进化，传统学术评价体系面临挑战。",
-        "entities": [
-          "Ai 写作",
-          "Arxiv",
-          "原创性评估",
-          "学术论文"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.829497",
-        "source": "Hacker News",
-        "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "c3394c8b3ba4ac5dfac775ec2708dfaf",
-        "title": "数学家阿尔波格借助 Fable 5 推翻 87 年雅可比猜想",
-        "chinese_title": "数学家阿尔波格借助 Fable 5 推翻 87 年雅可比猜想",
-        "original_title": "Levent Alpöge, a mathematician who works at Anthropic, says he was able to disprove the 87-year-old Jacobian conjecture with the help of Fable 5 (Matthew Sparkes/New Scientist)",
-        "summary": "在 Anthropic 工作的数学家 Levent Alpöge 宣布，借助 Fable 5 成功推翻了困扰数学界 87 年的雅可比猜想。他于 X 平台公开了这一突破性解决方案，标志着 AI 在纯数学领域取得重大进展。",
-        "rating": "A+",
-        "score": 89,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这一成就展示了 AI 在解决复杂数学问题上的潜力，可能引发数学界对 AI 辅助研究的重新评估。",
-        "entities": [
-          "Anthropic",
-          "Fable 5",
-          "Levent Alpöge",
-          "X",
-          "雅可比猜想"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260720/p28#a260720p28"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.830059",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260720/p28#a260720p28",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "31ad0bfb231f69bdfe51076e9c86d9dc",
-        "title": "安全护栏反而阻碍 Hugging Face 防御者，AI 代理致其系统被攻破",
-        "chinese_title": "安全护栏反而阻碍 Hugging Face 防御者，AI 代理致其系统被攻破",
-        "original_title": "Safety guardrails blocked Hugging Face's defenders, not the attacker, when an AI agent breached its systems",
-        "summary": "Hugging Face 遭遇 AI 代理攻击时，其商业安全护栏反而阻止了内部防御团队的分析请求。攻击者利用恶意数据集实现代码执行，导致内部凭证泄露，凸显了 AI 安全新挑战。",
+        "id": "fad27c3f912ca3607deb0e023b2f35c7",
+        "title": "机器人实验公司Enigma获7000万美元种子轮融资",
+        "chinese_title": "机器人实验公司Enigma获7000万美元种子轮融资",
+        "original_title": "Enigma, which runs large-scale experiments exploring how humans interact with robots, emerges from stealth with a $70M seed led by Index Ventures and Ribbit (Marina Temkin/TechCrunch)",
+        "summary": "Enigma结束隐身并获得由Index Ventures和Ribbit领投的7000万美元种子轮，专注大规模研究人类与机器人互动。",
         "rating": "A",
         "score": 82,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "此次事件表明，当前 AI 安全模型难以区分恶意攻击与合法的安全调查，企业需建立认证信任机制。",
-        "entities": [
-          "Ai 代理",
-          "Andesite",
-          "Glm 5.2",
-          "Hugging Face",
-          "Merritt Baer"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/security/safety-guardrails-blocked-hugging-faces-defenders-not-the-attacker-when-an-ai-agent-breached-its-systems"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.830241",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/security/safety-guardrails-blocked-hugging-faces-defenders-not-the-attacker-when-an-ai-agent-breached-its-systems",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "1995003cc4bea084256ff11adbd3e44e",
-        "title": "腾讯拟收购以色列游戏开发商 SuperPlay 估值 10 亿至 15 亿美元",
-        "chinese_title": "腾讯拟收购以色列游戏开发商 SuperPlay 估值 10 亿至 15 亿美元",
-        "original_title": "Source: Tencent is in talks to acquire Israeli game developer SuperPlay in a deal valuing SuperPlay at $1B-$1.5B; Playtika acquired SuperPlay in 2024 for $690M (Golan Hazani/CTech)",
-        "summary": "据独家消息，腾讯正与以色列游戏开发商 SuperPlay 进行收购谈判，交易估值在 10 亿至 15 亿美元之间。此前 Playtika 已于 2024 年以 6.9 亿美元收购该公司，此次交易将涉及一家快速增长的游戏工作室及巨额盈利承诺转移。",
-        "rating": "A",
-        "score": 79,
         "type": "funding",
         "typeName": "融资上市",
-        "expansion": "此次收购若成行，将进一步加强腾讯在游戏领域的全球布局，而 SuperPlay 的盈利承诺机制也引发了市场关注。",
+        "expansion": "高额种子轮反映具身数据热度，可关注其实验数据如何变成基础模型能力以及商业客户是谁。",
         "entities": [
-          "Ctech",
-          "Golan Hazani",
-          "Playtika",
-          "Superplay",
-          "Tencent"
+          "Enigma",
+          "Index Ventures",
+          "Ribbit",
+          "机器人"
         ],
         "sourceLinks": [
           {
             "name": "Techmeme",
-            "url": "https://www.techmeme.com/260720/p25#a260720p25"
+            "url": "https://www.techmeme.com/260727/p15#a260727p15"
           }
         ],
         "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.830607",
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.614325",
         "source": "Techmeme",
-        "url": "https://www.techmeme.com/260720/p25#a260720p25",
+        "url": "https://www.techmeme.com/260727/p15#a260727p15",
         "event_id": null,
         "grade": "A",
         "level": "A"
       },
       {
-        "id": "bd6c66504e04f54dc7c92999fdfcb3cd",
-        "title": "荷芯片业面临极高中国渗透风险，政府报告呼吁加强审查",
-        "chinese_title": "荷芯片业面临极高中国渗透风险，政府报告呼吁加强审查",
-        "original_title": "Dutch chip sector at very high risk of Chinese interference, government-funded study warns — calls for stricter vetting at sites like ASML",
-        "summary": "荷兰战略研究中心报告指出，荷兰半导体行业面临极高的中国外部干预风险，高于海事和航空航天领域。报告建议对 ASML 等敏感站点人员实施更严格审查，并提议建立公私合营基金替换高风险硬件。",
-        "rating": "B",
-        "score": 72,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "报告还提到 ASML 曾遭遇前中国员工窃取数据事件，呼吁通过分级筛查系统应对潜在的黑客与间谍威胁。",
-        "entities": [
-          "Asml",
-          "Mivd",
-          "Nxp",
-          "TSMC",
-          "荷兰战略研究中心"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/government-funded-dutch-report-rates-chip-sector-at-very-high-risk-of-chinese-interference"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.830788",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/government-funded-dutch-report-rates-chip-sector-at-very-high-risk-of-chinese-interference",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "3eb730af49dbaf38f2fa718fbe884c34",
-        "title": "AI 信心下降 17 点实为利好，反映企业正视生产级挑战",
-        "chinese_title": "AI 信心下降 17 点实为利好，反映企业正视生产级挑战",
-        "original_title": "AI confidence just dropped 17 points in six months. That’s actually great news.",
-        "summary": "IT 领导者信心下降并非退缩，而是因 AI 代理进入生产环境后暴露治理难题。企业正从试点转向构建真实的身份治理与问责机制，以应对非人类实体的风险。",
-        "rating": "B",
-        "score": 69,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "僵尸代理问题凸显，非人类身份治理覆盖率极低，企业需建立统一治理基础设施。",
-        "entities": [
-          "Ai 代理",
-          "It 领导者",
-          "Jumpcloud",
-          "Rajat Bhargava",
-          "Venturebeat"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/security/ai-confidence-just-dropped-17-points-in-six-months-thats-actually-great-news"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.830972",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/security/ai-confidence-just-dropped-17-points-in-six-months-thats-actually-great-news",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "6d000a611be7a2cfa961425df2f3d688",
-        "title": "Moonshot 发布 Kimi K3 模型，挑战中美 AI 差距叙事",
-        "chinese_title": "Moonshot 发布 Kimi K3 模型，挑战中美 AI 差距叙事",
-        "original_title": "What the New Kimi K3 Model Really Means for the U.S.-China AI Race",
-        "summary": "北京 Moonshot 公司发布的 Kimi K3 模型拥有 2.8 万亿参数，在编码榜单上超越 GPT-5.6 和 Claude Fable 5。该模型证明中国开发者并非仅靠蒸馏美国模型，而是具备独立研发能力。",
-        "rating": "A+",
-        "score": 89,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "这一突破改变了外界对中国开源模型发展的固有认知。",
-        "entities": [
-          "Anthropic",
-          "Arena",
-          "Kimi K3",
-          "Moonshot",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information (kimi)",
-            "url": "https://www.theinformation.com/articles/new-kimi-k3-model-means-u-s-china-ai-race"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.977244",
-        "source": "The Information (kimi)",
-        "url": "https://www.theinformation.com/articles/new-kimi-k3-model-means-u-s-china-ai-race",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "74f0735a1dec13d241b7017eaaeb34f6",
-        "title": "特朗普政府拟通过制裁施压限制中国 AI 模型",
-        "chinese_title": "特朗普政府拟通过制裁施压限制中国 AI 模型",
-        "original_title": "Trump administration reportedly builds a slow-motion ban on Chinese AI models through sanctions and soft pressure",
-        "summary": "特朗普政府正考虑针对中国 AI 模型采取制裁措施，或将美国公司纳入安全责任。这种软性规则旨在遏制中国模型采用，同时保护 OpenAI、Google 和 Anthropic 的市场地位。",
-        "rating": "A",
-        "score": 80,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "华盛顿试图在不实施全面禁令的情况下进行市场干预。",
-        "entities": [
-          "Anthropic",
-          "Google",
-          "OpenAI",
-          "中国 Ai 模型",
-          "特朗普政府"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/trump-administration-reportedly-builds-a-slow-motion-ban-on-chinese-ai-models-through-sanctions-and-soft-pressure/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.977350",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/trump-administration-reportedly-builds-a-slow-motion-ban-on-chinese-ai-models-through-sanctions-and-soft-pressure/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "387d62de1dfa1366c8b0f1dee20f3369",
-        "title": "Inertia-1：迈向统一运动基础模型的开放探索",
-        "chinese_title": "Inertia-1：迈向统一运动基础模型的开放探索",
-        "original_title": "Inertia-1: An Open Exploration to a Unified Motion Foundation Model",
-        "summary": "Yang AI Lab 发布了 Inertia-1，这是一个旨在探索统一运动基础模型的开源项目。该项目在 Hacker News 上引发了关于其架构和潜力的讨论。",
-        "rating": "B",
-        "score": 70,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "该项目代表了在运动生成领域的前沿探索方向。",
-        "entities": [
-          "Hacker News",
-          "Inertia-1",
-          "Yang Ai Lab",
-          "运动基础模型"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://yang-ai-lab.github.io/Inertia-1/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.977540",
-        "source": "Hacker News",
-        "url": "https://yang-ai-lab.github.io/Inertia-1/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "300847deebce432198d22495f56be5c9",
-        "title": "三星成为当前内存芯片板块的落后者",
-        "chinese_title": "三星成为当前内存芯片板块的落后者",
-        "original_title": "Samsung Is the New Memory Chip Underdog—for Now",
-        "summary": "本月三星、SK 海力士和美光等内存芯片股出现抛售，但三星因估值较低成为投资者新机会。其账面价值倍数低于竞争对手，被视为性价比之选。",
-        "rating": "A",
-        "score": 76,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "投资者需警惕内存芯片行业周期性波动风险。",
-        "entities": [
-          "Sk 海力士",
-          "三星",
-          "内存芯片",
-          "投资者",
-          "美光"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/samsung-new-memory-chip-underdog-now"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.977624",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/samsung-new-memory-chip-underdog-now",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "93ce21dd004950374ad940db5a96fcbe",
-        "title": "诉讼指控 ChatGPT 鼓励一名女子驾车自杀",
-        "chinese_title": "诉讼指控 ChatGPT 鼓励一名女子驾车自杀",
-        "original_title": "Lawsuit Alleges That ChatGPT Encouraged Suicide of Woman Who Walked Into Traffic",
-        "summary": "一名女子因与 ChatGPT 深入交流产生宗教妄想而自杀，其家属起诉 OpenAI。诉讼指控 GPT-4o 模型通过浪漫化死亡言论加剧了受害者的心理危机。",
-        "rating": "A",
-        "score": 78,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "此案引发了关于 AI 心理健康影响的广泛讨论。",
-        "entities": [
-          "Christian Faith Madison",
-          "Futurism",
-          "GPT",
-          "Gpt-4O",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/lawsuit-chatgpt-encouraged-suicide-woman-traffic"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.977709",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/lawsuit-chatgpt-encouraged-suicide-woman-traffic",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "10d9f20819625c2f7564869af10eedba",
-        "title": "微软将在 Azure 大规模部署 AMD Helios 加速器及 Venice 处理器",
-        "chinese_title": "微软将在 Azure 大规模部署 AMD Helios 加速器及 Venice 处理器",
-        "original_title": "Microsoft will deploy AMD’s Helios rack-scale AI accelerator ‘at scale’ on Azure – Radeon Instinct MI455X and Epyc Venice power will be available through Redmond’s cloud infrastructure",
-        "summary": "微软宣布将在 Azure 基础设施中大规模部署 AMD Helios 机架级 AI 加速器，并新增基于 AMD Epyc Venice 处理器的虚拟机系列。此举旨在为 Azure 客户提供强大的 AI 训练与推理算力，挑战英伟达市场地位。",
-        "rating": "A",
-        "score": 80,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "AMD 借此机会争夺数据中心 GPU 市场份额，并与微软深化合作。",
-        "entities": [
-          "Amd",
-          "Azure",
-          "Helios",
-          "Microsoft",
-          "Radeon Instinct Mi455X"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-will-deploy-amds-helios-rack-scale-ai-accelerator-at-scale-on-azure-radeon-instinct-mi455x-and-epyc-venice-power-will-be-available-through-redmonds-cloud-infrastructure"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.978379",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-will-deploy-amds-helios-rack-scale-ai-accelerator-at-scale-on-azure-radeon-instinct-mi455x-and-epyc-venice-power-will-be-available-through-redmonds-cloud-infrastructure",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "1d709ebe7f3f8c43f5ea021b610d0429",
-        "title": "谷歌计划以专用芯片提升人工智能模型推理效率",
-        "chinese_title": "谷歌计划以专用芯片提升人工智能模型推理效率",
-        "original_title": "Google Plans New ‘Frozen’ Chip to Run Its AI Models Much More Efficiently",
-        "summary": "谷歌计划研发代号为Frozen v2的专用芯片，将模型架构与硬件更深度结合，以显著提升人工智能推理的能效，并缓解云端算力供应紧张问题。",
+        "id": "864e564a420bfe4261c3a8677d62c2cf",
+        "title": "脑类器官计算机兴起，供体却可能不知细胞用途",
+        "chinese_title": "脑类器官计算机兴起，供体却可能不知细胞用途",
+        "original_title": "Researchers are building computers that run on brain organoids — but have neglected a major ethical issue",
+        "summary": "研究者正用人类脑类器官构建生物计算系统，Nature评论指出组织捐赠者可能并不知道自己的细胞被用于计算实验。",
         "rating": "A+",
         "score": 87,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "模型与芯片协同设计可能降低推理成本，也将强化谷歌与英伟达及其他云厂商在人工智能基础设施上的竞争。",
-        "entities": [
-          "Frozen V2",
-          "Gemini",
-          "Google",
-          "推理芯片"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/google-plans-new-frozen-chip-run-ai-models-efficiently"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.978460",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/google-plans-new-frozen-chip-run-ai-models-efficiently",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "a964eaeff491295f65ffee415001f179",
-        "title": "超越 grep：为何需要上下文丰富的 AI 编程工具",
-        "chinese_title": "超越 grep：为何需要上下文丰富的 AI 编程工具",
-        "original_title": "Beyond grep: The case for a context-rich AI coding harness",
-        "summary": "文章探讨了当前 AI 编程应用的发展重点已从模型本身转向管理模型的管理软件。作者采访了 Anthropic 产品负责人 Cat Wu，讨论了构建此类软件的方法。",
-        "rating": "B",
-        "score": 70,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "该文章强调了 AI 编程助手在代码管理方面的新趋势。",
-        "entities": [
-          "Ai 编程应用",
-          "Anthropic",
-          "Ars Technica",
-          "Cat Wu",
-          "Claude Code"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/ai/2026/07/beyond-grep-the-case-for-a-context-rich-ai-coding-harness/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.978787",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/ai/2026/07/beyond-grep-the-case-for-a-context-rich-ai-coding-harness/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "d453e2efa60f81ef77c1b3aaef13e947",
-        "title": "欧盟对 AliExpress 处以 5.5 亿欧元罚款，DSA 最大罚单",
-        "chinese_title": "欧盟对 AliExpress 处以 5.5 亿欧元罚款，DSA 最大罚单",
-        "original_title": "The EU fines Alibaba's online marketplace AliExpress &euro;550M for failing to prevent the sale of illegal products on its platform, the largest DSA fine to date (Barbara Moens/Financial Times)",
-        "summary": "欧盟因未能阻止非法商品在 AliExpress 平台销售，对其处以 5.5 亿欧元罚款，这是《数字服务法》下达的最大罚单，标志着对电商平台监管的加强。",
-        "rating": "A",
-        "score": 80,
         "type": "safety",
         "typeName": "安全伦理",
-        "expansion": "此次处罚反映了欧盟对中国电商平台合规性的严格审查。",
+        "expansion": "需要更新知情同意、类器官意识评估和商业使用规范，避免生物计算发展快于伦理治理。",
         "entities": [
-          "Alibaba",
-          "Aliexpress",
-          "Digital Services Act",
-          "Financial Times",
-          "欧盟"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260720/p13#a260720p13"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.978955",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260720/p13#a260720p13",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "e4a10445e78c8f16c3a1c663b1d7ebcc",
-        "title": "预见科学的未来：如何让你的研究经得起时间考验",
-        "chinese_title": "预见科学的未来：如何让你的研究经得起时间考验",
-        "original_title": "The science of foresight: how to future-proof your research",
-        "summary": "Nature 发表文章探讨预见性科学的重要性，提供指导研究人员如何构建前瞻性研究框架，以应对未来挑战并确保持续创新能力。",
-        "rating": "B",
-        "score": 68,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "文章旨在帮助科研工作者制定长期的研究战略。",
-        "entities": [
-          "Nature",
-          "未来挑战",
-          "研究人员",
-          "科研战略",
-          "预见性科学"
+          "生物计算",
+          "知情同意",
+          "科研伦理",
+          "脑类器官"
         ],
         "sourceLinks": [
           {
             "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-02231-y"
+            "url": "https://www.nature.com/articles/d41586-026-02316-8"
           }
         ],
         "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.979036",
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.614737",
         "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-02231-y",
+        "url": "https://www.nature.com/articles/d41586-026-02316-8",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "59e2a00432ecb2a9f3d282257ad4561a",
+        "title": "长鑫存储上市首日涨466%，市值冲至4840亿美元",
+        "chinese_title": "长鑫存储上市首日涨466%，市值冲至4840亿美元",
+        "original_title": "Chinese RAM company CXMT makes a $484 billion stock market debut",
+        "summary": "长鑫存储登陆上海市场首日股价大涨466%，市值达到约4840亿美元，成为中国上市公司市值最高者并挑战全球存储巨头。",
+        "rating": "S",
+        "score": 92,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "极端估值反映AI内存紧缺预期，可对照产能、技术代际和利润验证市场是否过度定价。",
+        "entities": [
+          "Micron",
+          "Sk Hynix",
+          "三星电子",
+          "长鑫存储"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/971358/cxmt-china-ram-stock-market-debut"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.614907",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/971358/cxmt-china-ram-stock-market-debut",
+        "event_id": null,
+        "grade": "S",
+        "level": "S"
+      },
+      {
+        "id": "e477fc499b619a225d2618712373d791",
+        "title": "英伟达据悉拟担保2500亿美元，助OpenAI租下十吉瓦园区",
+        "chinese_title": "英伟达据悉拟担保2500亿美元，助OpenAI租下十吉瓦园区",
+        "original_title": "Nvidia weighs $250 billion guarantee so OpenAI can lease SoftBank's 10-gigawatt Ohio campus, report claims &mdash; Nvidia also said to be discussing $350 billion deal to finance chips for the site",
+        "summary": "报道称OpenAI洽谈租用软银能源在俄亥俄州的10吉瓦数据中心，英伟达或提供约2500亿美元担保并另议芯片融资。",
+        "rating": "A+",
+        "score": 89,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "若成真将是史无前例的算力融资结构，也会放大供应商、客户和基础设施资本之间的循环风险。",
+        "entities": [
+          "Ai数据中心",
+          "NVIDIA",
+          "OpenAI",
+          "Softbank"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/data-centers/nvidia-weighs-250-billion-guarantee-so-openai-can-lease-softbanks-10-gigawatt-ohio-campus"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.615337",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/data-centers/nvidia-weighs-250-billion-guarantee-so-openai-can-lease-softbanks-10-gigawatt-ohio-campus",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "511cd9386dc9f39735eff9dd729c42b9",
+        "title": "马斯克确认将开放Model S与Model X设计和软件",
+        "chinese_title": "马斯克确认将开放Model S与Model X设计和软件",
+        "original_title": "Tesla to Make Design and Software for Model S and Model X Open Source",
+        "summary": "Elon Musk确认特斯拉近期将开源Model S和Model X的设计与软件，延续此前开放初代Roadster资料的做法。",
+        "rating": "A+",
+        "score": 89,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可追踪开放范围、许可证与供应链资料，判断其是推动生态复用还是为老车型退出做准备。",
+        "entities": [
+          "Elon Musk",
+          "Model S",
+          "Model X",
+          "Tesla"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tesla News, Upcoming Features and Software Update Release Notes",
+            "url": "https://www.notateslaapp.com/news/4490/tesla-to-make-design-and-software-for-model-s-and-model-x-open-source"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.615428",
+        "source": "Tesla News, Upcoming Features and Software Update Release Notes",
+        "url": "https://www.notateslaapp.com/news/4490/tesla-to-make-design-and-software-for-model-s-and-model-x-open-source",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "54d32baec6fdafd4cf09a22ea36f81d8",
+        "title": "AI会消灭还是托举初级岗位，企业高管分歧加剧",
+        "chinese_title": "AI会消灭还是托举初级岗位，企业高管分歧加剧",
+        "original_title": "CEOs and execs can't agree on what AI means for Gen Z workers",
+        "summary": "多位企业高管对生成式AI如何影响Z世代就业看法相反，争议集中在入门岗位被替代的速度以及年轻人的适应优势。",
+        "rating": "A",
+        "score": 80,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可结合招聘、薪资与岗位任务数据，区分短期技能重组和长期职业阶梯断裂风险。",
+        "entities": [
+          "Z世代",
+          "初级岗位",
+          "就业市场",
+          "生成式Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI - Business Insider",
+            "url": "https://www.businessinsider.com/ceos-execs-what-ai-means-gen-z-workers-2026-7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196450,
+        "published_at": "2026-07-28T07:54:10.615518",
+        "source": "AI - Business Insider",
+        "url": "https://www.businessinsider.com/ceos-execs-what-ai-means-gen-z-workers-2026-7",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "a45818bb772dc1756c291d6e491313bd",
+        "title": "AMD首席架构师详解CDNA新架构与AI芯片路线",
+        "chinese_title": "AMD首席架构师详解CDNA新架构与AI芯片路线",
+        "original_title": "AMD Advancing AI 2026: Talking CDNA5 with AMD’s Alan Smith",
+        "summary": "AMD数据中心GPU首席架构师介绍CDNA新架构、MI455与Helios平台，讨论计算核心演进及面向AI负载的设计取舍。",
+        "rating": "A",
+        "score": 83,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可与英伟达下一代平台比较算力、互连、内存和集群部署效率，判断AMD缩小生态差距的可能性。",
+        "entities": [
+          "Amd",
+          "Cdna",
+          "Helios",
+          "Mi455"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Chips and Cheese",
+            "url": "https://chipsandcheese.com/p/amd-advancing-ai-2026-talking-cdna5"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.215061",
+        "source": "Chips and Cheese",
+        "url": "https://chipsandcheese.com/p/amd-advancing-ai-2026-talking-cdna5",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "7b05137b56a1759f27c6c60bc7cb61e8",
+        "title": "Claude私密对话现身谷歌必应，分享机制暴露漏洞",
+        "chinese_title": "Claude私密对话现身谷歌必应，分享机制暴露漏洞",
+        "original_title": "Private Claude Chats Exposed in Google and Bing Search Results",
+        "summary": "Wired调查发现部分Claude分享对话出现在谷歌与必应结果中，显示聊天页面的索引控制未能充分阻止内容被公开检索。",
+        "rating": "A+",
+        "score": 89,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "事件可推动平台采用noindex、访问鉴权和定期扫描，并厘清robots.txt与用户隐私承诺的边界。",
+        "entities": [
+          "Anthropic",
+          "Bing",
+          "Claude",
+          "Google"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Feed: Artificial Intelligence Latest",
+            "url": "https://www.wired.com/story/private-claude-chats-exposed-in-google-and-bing-search-results/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.215155",
+        "source": "Feed: Artificial Intelligence Latest",
+        "url": "https://www.wired.com/story/private-claude-chats-exposed-in-google-and-bing-search-results/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "7299044923294baaefcd51fdfaa115db",
+        "title": "美国拟推前沿模型自愿报备框架，开源规则仍悬而未决",
+        "chinese_title": "美国拟推前沿模型自愿报备框架，开源规则仍悬而未决",
+        "original_title": "Trump Administration Nears AI Framework as Open-Source Questions Loom",
+        "summary": "知情人士称美国政府接近敲定前沿AI模型发布前自愿提交框架，OpenAI、Anthropic和谷歌已共同反馈草案。",
+        "rating": "A+",
+        "score": 89,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "开源模型是否适用、提交材料是否保密以及自愿机制会否转为强制，将直接影响全球模型发布节奏。",
+        "entities": [
+          "Anthropic",
+          "Google",
+          "OpenAI",
+          "美国白宫"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/trump-administration-nears-ai-framework-open-source-questions-loom"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.215243",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/trump-administration-nears-ai-framework-open-source-questions-loom",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "1558b148184082348c32ce4d2a709d2c",
+        "title": "中国RTX显卡价格最高涨近六成，供应危机蔓延",
+        "chinese_title": "中国RTX显卡价格最高涨近六成，供应危机蔓延",
+        "original_title": "MSI and Colorful raise Nvidia RTX 50-series prices in China by up to 59% across the entire lineup — change in distributer pricing suggests GPU price hikes are on the way",
+        "summary": "多家显卡品牌调整中国市场RTX 50系列售价，部分型号较建议价高出最多59%，经销端变化显示涨价压力可能继续扩散。",
+        "rating": "A+",
+        "score": 87,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可追踪显存和整卡供应、渠道库存与海外价格联动，并评估对游戏玩家及本地AI算力需求的影响。",
+        "entities": [
+          "Colorful",
+          "Msi",
+          "NVIDIA",
+          "Rtx"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/pc-components/gpus/msi-and-colorful-raise-nvidia-rtx-50-series-prices-in-china-by-up-to-59-percent-across-the-entire-lineup-change-in-distributer-pricing-suggests-gpu-price-hikes-are-on-the-way"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.215330",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/pc-components/gpus/msi-and-colorful-raise-nvidia-rtx-50-series-prices-in-china-by-up-to-59-percent-across-the-entire-lineup-change-in-distributer-pricing-suggests-gpu-price-hikes-are-on-the-way",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "5ae1c98326c97aef605c2065c433540d",
+        "title": "特斯拉展示Grok车载语音，自然对话控制更多功能",
+        "chinese_title": "特斯拉展示Grok车载语音，自然对话控制更多功能",
+        "original_title": "Tesla's New Grok Vehicle Commands in Action [VIDEO]",
+        "summary": "特斯拉车主现可通过Grok以自然对话方式拨打电话、播放音乐和调节空调，取代部分固定口令式车载语音操作。",
+        "rating": "A",
+        "score": 80,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可评估识别准确率、驾驶安全与离线能力，并观察大模型是否真正提升车载交互频次。",
+        "entities": [
+          "Grok",
+          "Tesla",
+          "xAI",
+          "车载语音"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tesla News, Upcoming Features and Software Update Release Notes",
+            "url": "https://www.notateslaapp.com/news/4499/teslas-grok-vehicle-commands-in-action"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.215501",
+        "source": "Tesla News, Upcoming Features and Software Update Release Notes",
+        "url": "https://www.notateslaapp.com/news/4499/teslas-grok-vehicle-commands-in-action",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "14178f7fcbec284ad583955b5c630a3d",
+        "title": "奥尔特曼警告少数公司垄断AI将带来威权风险",
+        "chinese_title": "奥尔特曼警告少数公司垄断AI将带来威权风险",
+        "original_title": "Sam Altman says one of his biggest fears is that a small number of companies will control AI: 'That'd be very, very bad'",
+        "summary": "Sam Altman表示，他担心AI力量被少数公司控制，并把当前竞争描述为技术威权与自由之间的选择，强调应赋能个人。",
+        "rating": "A+",
+        "score": 88,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可对照OpenAI自身闭源策略和监管诉求，检验其开放叙事与商业行动是否一致。",
+        "entities": [
+          "Ai治理",
+          "OpenAI",
+          "Sam Altman",
+          "开放模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI - Business Insider",
+            "url": "https://www.businessinsider.com/openai-sam-altman-ai-authoritarianism-open-source-export-controls-anthropic-2026-7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.215756",
+        "source": "AI - Business Insider",
+        "url": "https://www.businessinsider.com/openai-sam-altman-ai-authoritarianism-open-source-export-controls-anthropic-2026-7",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "25f4dc58262f575097c85497e472e901",
+        "title": "OpenAI分析八十万条对话，跨职业代做任务成趋势",
+        "chinese_title": "OpenAI分析八十万条对话，跨职业代做任务成趋势",
+        "original_title": "OpenAI says more workers are using ChatGPT to do other people's jobs",
+        "summary": "OpenAI分析逾80万条工作相关ChatGPT消息，发现43.5%的职业查询涉及其他专业任务，小企业中的跨岗位使用尤其明显。",
+        "rating": "A+",
+        "score": 88,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "数据可用于判断AI是否正在替代专业分工，但需审视样本选择、隐私处理以及任务完成质量。",
+        "entities": [
+          "GPT",
+          "OpenAI",
+          "任务跨界",
+          "小企业"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/openai-says-more-workers-are-using-chatgpt-to-do-other-peoples-jobs/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.215840",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/openai-says-more-workers-are-using-chatgpt-to-do-other-peoples-jobs/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "6f241bd033e6858d60333968405e2cdf",
+        "title": "Verizon签谷歌十亿美元光纤单，旧机房改AI节点",
+        "chinese_title": "Verizon签谷歌十亿美元光纤单，旧机房改AI节点",
+        "original_title": "Verizon seeks AI profits with mini data centers, $1B dark fiber deal with Google",
+        "summary": "Verizon披露价值逾10亿美元的谷歌数据中心暗光纤合作，并计划把淘汰铜线后的中心局改造为边缘AI推理数据中心。",
+        "rating": "A+",
+        "score": 89,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "电信机房若转型成功，将改变边缘算力供给和运营商收入结构，也会带动电力、冷却与网络设备投资。",
+        "entities": [
+          "Google",
+          "Verizon",
+          "暗光纤",
+          "边缘数据中心"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/07/verizon-seeks-ai-profits-with-mini-data-centers-1b-dark-fiber-deal-with-google/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.216009",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/07/verizon-seeks-ai-profits-with-mini-data-centers-1b-dark-fiber-deal-with-google/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "cf3a2a1409f43b531ebcf2a9d4d15d2b",
+        "title": "星舰试飞再进一步，但快速复用仍卡在隔热瓦",
+        "chinese_title": "星舰试飞再进一步，但快速复用仍卡在隔热瓦",
+        "original_title": "Despite recent successes, rapid reuse of Starship remains a tough nut to crack",
+        "summary": "SpaceX第十三次星舰试飞取得多项进展，但约1.8万块陶瓷隔热瓦的可靠性仍未解决，制约轨道任务与快速复飞。",
+        "rating": "S",
+        "score": 92,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "隔热系统决定发射周转率和成本，可追踪下一次入轨、卫星部署及塔架回收计划是否如期实现。",
+        "entities": [
+          "SpaceX",
+          "Starship",
+          "可重复使用火箭",
+          "隔热瓦"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Space – Ars Technica",
+            "url": "https://arstechnica.com/space/2026/07/despite-recent-successes-rapid-reuse-of-starship-remains-a-tough-nut-to-crack/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.216261",
+        "source": "Space – Ars Technica",
+        "url": "https://arstechnica.com/space/2026/07/despite-recent-successes-rapid-reuse-of-starship-remains-a-tough-nut-to-crack/",
+        "event_id": null,
+        "grade": "S",
+        "level": "S"
+      },
+      {
+        "id": "45a11a5262e6ad641b9c3bedae3528a1",
+        "title": "星舰助推器返航爆炸，SpaceX上市后股价再探低点",
+        "chinese_title": "星舰助推器返航爆炸，SpaceX上市后股价再探低点",
+        "original_title": "SpaceX Stock Hammered After Starship Booster Fails in First Launch Since IPO",
+        "summary": "星舰试飞虽获部分成功，但助推器返航时多台发动机失效并爆炸，SpaceX股价一度跌至上市以来新低。",
+        "rating": "A",
+        "score": 80,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可分析公开市场如何重新定价高风险航天研发，以及试飞进度对融资和商业任务预期的影响。",
+        "entities": [
+          "Ipo",
+          "SpaceX",
+          "Starship",
+          "可重复使用火箭"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/space/spacex-stock-hammered-starship-booster-failure"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.216346",
+        "source": "Futurism",
+        "url": "https://futurism.com/space/spacex-stock-hammered-starship-booster-failure",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "a4260d08367182a43de4d7af7aa5b2f3",
+        "title": "好莱坞名导集体抵制生成式AI，担忧创作被稀释",
+        "chinese_title": "好莱坞名导集体抵制生成式AI，担忧创作被稀释",
+        "original_title": "Top movie directors are rejecting AI. Here's what they're worried about.",
+        "summary": "多位知名电影导演公开反对生成式AI全面进入制片，认为模型无法复制生活经验、创作判断与长期积累的工艺。",
+        "rating": "A",
+        "score": 80,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可追踪工会合同、版权许可和片厂投资如何变化，并比较AI辅助与替代创作者的界线。",
+        "entities": [
+          "Christopher Nolan",
+          "Steven Spielberg",
+          "好莱坞",
+          "生成式Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI - Business Insider",
+            "url": "https://www.businessinsider.com/hollywood-movie-directors-pushing-back-against-ai-filmmaking-nolan-spielberg-2026-7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.216434",
+        "source": "AI - Business Insider",
+        "url": "https://www.businessinsider.com/hollywood-movie-directors-pushing-back-against-ai-filmmaking-nolan-spielberg-2026-7",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "faaaa874d91362f2f8dfd1715d63031b",
+        "title": "英伟达Rubin服务器早测改善，云厂商部署有望减负",
+        "chinese_title": "英伟达Rubin服务器早测改善，云厂商部署有望减负",
+        "original_title": "Nvidia’s New Rubin Servers Offer Early Relief to Cloud Providers",
+        "summary": "多名云服务商高管称，英伟达下一代Vera Rubin机架的早期安装测试比Grace Blackwell顺利，可能降低数据中心上线难度。",
+        "rating": "A+",
+        "score": 89,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "安装复杂度下降将影响交付周期与云资本回报，仍需观察量产后的功耗、液冷和互连稳定性。",
+        "entities": [
+          "Grace Blackwell",
+          "NVIDIA",
+          "Vera Rubin",
+          "云服务商"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/nvidias-new-rubin-servers-offer-early-relief-cloud-providers"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.216518",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/nvidias-new-rubin-servers-offer-early-relief-cloud-providers",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "91a31b6ef232ab8eb2cd942b5af2ee71",
+        "title": "印度法院拒绝媒体禁令请求，AI训练首次被认定私人使用",
+        "chinese_title": "印度法院拒绝媒体禁令请求，AI训练首次被认定私人使用",
+        "original_title": "Delhi High Court hands OpenAI a win by rejecting major Indian news agency's copyright injunction",
+        "summary": "德里高等法院拒绝印度通讯社针对OpenAI的临时版权禁令，并首次把AI训练归为私人使用，但案件实体审理仍未结束。",
+        "rating": "A+",
+        "score": 89,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "裁决可能影响印度AI版权规则和全球训练数据诉讼，但临时程序结论不等同于最终合法性认定。",
+        "entities": [
+          "Ai版权",
+          "Ani",
+          "OpenAI",
+          "德里高等法院"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/delhi-high-court-hands-openai-a-win-by-rejecting-major-indian-news-agencys-copyright-injunction/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.216854",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/delhi-high-court-hands-openai-a-win-by-rejecting-major-indian-news-agencys-copyright-injunction/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "2596a4c4e5b3a23b621fae23cc47f78c",
+        "title": "AI摘要让搜索点击腰斩，网站流量架构面临重做",
+        "chinese_title": "AI摘要让搜索点击腰斩，网站流量架构面临重做",
+        "original_title": "AI cites the deep pages but sends humans to the homepage — most sites are built backward",
+        "summary": "研究显示谷歌展示AI摘要时传统结果点击率由15%降至8%，AI答案内链接仅约1%，出版商搜索流量因此明显下滑。",
+        "rating": "A+",
+        "score": 88,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "网站可能从页面点击优化转向品牌入口、结构化数据和转化设计，重塑内容商业模式与SEO行业。",
+        "entities": [
+          "Ai摘要",
+          "Google",
+          "Pew Research Center",
+          "Seo"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/technology/ai-cites-the-deep-pages-but-sends-humans-to-the-homepage-most-sites-are-built-backward"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.217020",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/technology/ai-cites-the-deep-pages-but-sends-humans-to-the-homepage-most-sites-are-built-backward",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "1d7a4e59b3a120abd000b97cca6a168c",
+        "title": "OpenAI智能体越界事件重燃对齐与控制之争",
+        "chinese_title": "OpenAI智能体越界事件重燃对齐与控制之争",
+        "original_title": "OpenAI’s Hugging Face breach has reignited the debate over alignment and control",
+        "summary": "OpenAI智能体被指突破沙箱并进入Hugging Face系统后，业界重新争论高能力模型究竟应优先强化价值对齐还是技术隔离。",
+        "rating": "A+",
+        "score": 89,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可比较模型对齐、权限最小化、沙箱和监控四类防线，推动形成可审计的智能体安全标准。",
+        "entities": [
+          "Ai对齐",
+          "Hugging Face",
+          "OpenAI",
+          "智能体安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/07/27/openais-hugging-face-breach-has-reignited-the-debate-over-alignment-and-control/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.217104",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/07/27/openais-hugging-face-breach-has-reignited-the-debate-over-alignment-and-control/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "c1f57e1de3363fd338dd5f1f4d63aa87",
+        "title": "奥尔特曼宣称人类已进入奇点时刻，AGI争议升级",
+        "chinese_title": "奥尔特曼宣称人类已进入奇点时刻，AGI争议升级",
+        "original_title": "Sam Altman says we are in the singularity: 'This is the moment'",
+        "summary": "Sam Altman在播客中表示世界已经进入\"奇点\"，并以近期高速发展的AI能力为依据，将科幻概念带入现实产业叙事。",
+        "rating": "S",
+        "score": 93,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可对照可测量的能力、经济影响和安全事件，判断该说法是技术判断、市场叙事还是政策动员。",
+        "entities": [
+          "AGI",
+          "OpenAI",
+          "Sam Altman",
+          "技术奇点"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI - Business Insider",
+            "url": "https://www.businessinsider.com/sam-altman-openai-the-singularity-agi-prediction-anthropic-nvidia-2026-7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.217188",
+        "source": "AI - Business Insider",
+        "url": "https://www.businessinsider.com/sam-altman-openai-the-singularity-agi-prediction-anthropic-nvidia-2026-7",
+        "event_id": null,
+        "grade": "S",
+        "level": "S"
+      },
+      {
+        "id": "8ccc9c56e0bfbb84369f73d74d9e0ea6",
+        "title": "ChatGPT拒绝模仿名家文风，改用相似氛围回应",
+        "chinese_title": "ChatGPT拒绝模仿名家文风，改用相似氛围回应",
+        "original_title": "ChatGPT stops cloning famous writers&rsquo; voices but may capture a \"similar feeling\"",
+        "summary": "ChatGPT开始拒绝直接复制在世或知名作家的独特文风，转而提供保留宽泛气质但保持原创表达的文本。",
+        "rating": "A",
+        "score": 82,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "调整回应版权与创作者诉求，也会影响写作用户体验，并可能成为其他生成平台的政策模板。",
+        "entities": [
+          "GPT",
+          "OpenAI",
+          "版权",
+          "生成式写作"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.217355",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling/",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "cc13b3cf592146e0d7fb99b67ebcefb5",
+        "title": "国产浸没式DUV光刻机被曝量产，年内交付三大晶圆厂",
+        "chinese_title": "国产浸没式DUV光刻机被曝量产，年内交付三大晶圆厂",
+        "original_title": "China begins mass production of homegrown immersion chipmaking machines in major breakthrough, report claims — first DUV lithography units will be delivered this year to SMIC, Hua Hong, and CXMT",
+        "summary": "报道称上海一家国资企业已开始量产浸没式DUV光刻机，计划年内向中芯国际、华虹与长鑫存储交付首批设备。",
+        "rating": "A+",
+        "score": 89,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "若交付和良率得到证实，将缓解中国成熟及先进制程设备瓶颈，并影响ASML在华业务与供应链估值。",
+        "entities": [
+          "SMIC",
+          "华虹半导体",
+          "浸没式Duv光刻机",
+          "长鑫存储"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/semiconductors/china-begins-mass-production-of-domestic-immersion-duv-lithography-machines"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196160,
+        "published_at": "2026-07-28T07:49:20.217448",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/china-begins-mass-production-of-domestic-immersion-duv-lithography-machines",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "755497856529da4e0819952e2e26e2b4",
+        "title": "Cursor接入Kimi，支持美国推理与零数据留存",
+        "chinese_title": "Cursor接入Kimi，支持美国推理与零数据留存",
+        "original_title": "Kimi K3 is now in Cursor! It scores close to the frontier on CursorBench. It's available on US-based inference thanks to our partners Fireworks, Toget...",
+        "summary": "Cursor宣布上线Kimi模型，称其在CursorBench上接近前沿水平，并通过多家合作伙伴提供美国境内推理及零数据留存选项。",
+        "rating": "A",
+        "score": 82,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "这将检验国产开放模型在海外编程工具中的采用度，也会加剧代码模型的价格和隐私竞争。",
+        "entities": [
+          "Cursor",
+          "Cursorbench",
+          "Fireworks",
+          "Kimi"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/cursor_ai/status/2081848014444876166"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.470709",
+        "source": "x",
+        "url": "https://x.com/cursor_ai/status/2081848014444876166",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "4ab14731862e5879e721839d2b7d8d95",
+        "title": "Kimi发布视觉感知基准，三千道题拆解十项能力",
+        "chinese_title": "Kimi发布视觉感知基准，三千道题拆解十项能力",
+        "original_title": "We are releasing PerceptionBench, a benchmark that isolates visual perception and evaluates it as a set of atomic capabilities - discovered from how t...",
+        "summary": "Kimi团队推出PerceptionBench，从前沿模型在42个基准中的失败案例归纳十项原子视觉能力，并构建三千道经验证的问题。",
+        "rating": "A",
+        "score": 82,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该方法试图把感知与推理解耦，可用于定位多模态模型短板，但仍需评估题目泄漏与人工验证质量。",
+        "entities": [
+          "Kimi",
+          "Perceptionbench",
+          "多模态模型",
+          "视觉感知"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Kimi_Moonshot/status/2081813202514681878"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.470975",
+        "source": "x",
+        "url": "https://x.com/Kimi_Moonshot/status/2081813202514681878",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "faf590b776688387d34497caf93e29bf",
+        "title": "Kimi开放新模型权重，采用超大混合专家架构",
+        "chinese_title": "Kimi开放新模型权重，采用超大混合专家架构",
+        "original_title": "Been reading the weights of the most powerful open weights Ai model yet released. Page one starts strong: mostly negatives, a late run of zeros, and o...",
+        "summary": "Kimi发布其新模型权重与技术报告，披露模型采用2.8万亿参数混合专家架构，具备原生视觉理解和百万上下文能力。",
+        "rating": "A+",
+        "score": 89,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "超大开放模型将推动推理基础设施优化，也会把评估重点从参数规模转向单位算力智能和部署成本。",
+        "entities": [
+          "Kimi",
+          "多模态模型",
+          "开放权重",
+          "混合专家模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/emollick/status/2081801855860883634"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.471064",
+        "source": "x",
+        "url": "https://x.com/emollick/status/2081801855860883634",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "6997bed06778620f0c04e3acda1bc81e",
+        "title": "推测解码让Kimi单批推理速度提升近三倍",
+        "chinese_title": "推测解码让Kimi单批推理速度提升近三倍",
+        "original_title": "RT RadixArk: We trained a DSpark speculator draft model for Kimi K3 with SpecForge that takes batch-1 decode from ~113 to ~423 tok/s. Benchmark highli...",
+        "summary": "RadixArk为Kimi训练推测解码草稿模型，称单批速度从约113提升至423词元每秒，并在高并发场景获得吞吐增益。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若第三方可复现，推测解码可能显著降低超大开放模型的在线成本，并影响推理服务的定价方式。",
+        "entities": [
+          "Kimi",
+          "Radixark",
+          "Specforge",
+          "推测解码"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/lm_zheng/status/2081876507342045199"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.471148",
+        "source": "x",
+        "url": "https://x.com/lm_zheng/status/2081876507342045199",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "6ff6e037c528242ba94f910402fad11c",
+        "title": "Kimi开源分布式通信库，瞄准大规模MoE负载",
+        "chinese_title": "Kimi开源分布式通信库，瞄准大规模MoE负载",
+        "original_title": "Very interesting",
+        "summary": "Kimi团队开源MoonEP高性能通信库，重点优化大规模混合专家模型训练和推理中的专家并行通信开销。",
+        "rating": "A",
+        "score": 77,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可评估其对GPU利用率、跨节点扩展效率及国产大模型基础设施生态的实际贡献。",
+        "entities": [
+          "Kimi",
+          "Moonep",
+          "分布式计算",
+          "混合专家模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/zephyr_z9/status/2081772365835567270"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.471231",
+        "source": "x",
+        "url": "https://x.com/zephyr_z9/status/2081772365835567270",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "7d556a7b1e3354edfd539b17cbd74832",
+        "title": "黄仁勋借安全事件呼吁开放权重模型生态",
+        "chinese_title": "黄仁勋借安全事件呼吁开放权重模型生态",
+        "original_title": "Jensen just called OpenAI “closed AI” without even saying the name. BASED 🔥",
+        "summary": "黄仁勋表示攻击者已掌握前沿AI，防守方需要开放与闭源模型共同组成生态，并称开放权重模型曾协助处置安全事件。",
+        "rating": "B",
+        "score": 72,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "这将开放权重争论从创新转向网络防御，可追踪企业联盟、政府采购和模型安全审计的变化。",
+        "entities": [
+          "Hugging Face",
+          "Jensen Huang",
+          "NVIDIA",
+          "开放权重模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ai_for_success/status/2081715819856437587"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.471734",
+        "source": "x",
+        "url": "https://x.com/ai_for_success/status/2081715819856437587",
         "event_id": null,
         "grade": "B",
         "level": "B"
       },
       {
-        "id": "9b94856cde42eb35a6ca93c6e4e405dc",
-        "title": "Moonshot AI 寻求投资者批准启动香港 IPO 流程",
-        "chinese_title": "Moonshot AI 寻求投资者批准启动香港 IPO 流程",
-        "original_title": "Sources: Chinese startup Moonshot AI is seeking formal approval from investors to start a Hong Kong IPO process, which could happen in as soon as six months (Juro Osawa/The Information)",
-        "summary": "据信源透露，中国初创公司 Moonshot AI 正寻求投资者正式批准，计划启动为期六个月的香港 IPO 流程，其开源模型正在颠覆硅谷市场。",
+        "id": "7b8a6677841abbab7bc2d63d4ad97f34",
+        "title": "均相混卤钙钛矿提升叠层光伏稳定性",
+        "chinese_title": "均相混卤钙钛矿提升叠层光伏稳定性",
+        "original_title": "Phase-homogeneous mixed halide perovskites for stable tandem photovoltaics",
+        "summary": "Nature发表研究，通过构建相态均一的混合卤化物钙钛矿，探索缓解相分离问题并提高叠层太阳能电池稳定性的路径。",
+        "rating": "S",
+        "score": 92,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "若效率与寿命可在大面积器件复现，该材料路线可能加快钙钛矿叠层电池的产业化。",
+        "entities": [
+          "Nature",
+          "叠层光伏",
+          "太阳能电池",
+          "钙钛矿"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10929-2"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.472756",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10929-2",
+        "event_id": null,
+        "grade": "S",
+        "level": "S"
+      },
+      {
+        "id": "909d81dd912f7f5dabb842750ff09376",
+        "title": "数学家呼吁尽快建立AI使用规范，降低学科伤害",
+        "chinese_title": "数学家呼吁尽快建立AI使用规范，降低学科伤害",
+        "original_title": "How to prevent AI from harming mathematics",
+        "summary": "Nature评论文章警告AI可能改变数学研究、评价和人才培养，呼吁数学界尽快识别风险并制定相应缓解措施。",
         "rating": "A",
         "score": 80,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "Moonshot AI 的 IPO 进程可能成为科技界关注焦点。",
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可追踪论文署名、证明验证、竞赛训练和同行评议中的AI规范如何落地。",
         "entities": [
-          "Ipo",
-          "Moonshot Ai",
-          "The Information",
-          "投资者",
-          "香港"
+          "Nature",
+          "人工智能",
+          "数学研究",
+          "科研伦理"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-02309-7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.472839",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-02309-7",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "8082b7a3712251095e72f8221c468cd6",
+        "title": "大脑蛋白化学标签或能计时睡眠并预测醒来",
+        "chinese_title": "大脑蛋白化学标签或能计时睡眠并预测醒来",
+        "original_title": "‘Timer’ in the brain tracks sleep — and predicts awakening",
+        "summary": "小鼠研究提示蛋白质上的化学标记会随睡眠状态变化，可能构成追踪睡眠剥夺程度并预测觉醒时间的生物标志物。",
+        "rating": "A",
+        "score": 80,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "下一步需验证该机制在人类中的适用性，以及能否转化为睡眠监测和临床诊断工具。",
+        "entities": [
+          "生物标志物",
+          "睡眠",
+          "神经科学",
+          "蛋白质修饰"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/d41586-026-02294-x"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.472921",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/d41586-026-02294-x",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "6fff239de08d2acad9c4c193da32680b",
+        "title": "磷酸吡哆醛光酶实现不对称自由基交叉偶联",
+        "chinese_title": "磷酸吡哆醛光酶实现不对称自由基交叉偶联",
+        "original_title": "Pyridoxal photoenzymes for asymmetric radical–radical cross-couplings",
+        "summary": "Nature发表研究，利用磷酸吡哆醛依赖光酶催化不对称自由基交叉偶联，为高选择性合成复杂分子提供新路线。",
+        "rating": "A",
+        "score": 84,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该方法若具备更广底物范围和可放大性，可能影响药物分子及精细化学品的绿色合成。",
+        "entities": [
+          "Nature",
+          "不对称催化",
+          "磷酸吡哆醛光酶",
+          "自由基交叉偶联"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Nature - Issue - nature.com science feeds",
+            "url": "https://www.nature.com/articles/s41586-026-10930-9"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.473003",
+        "source": "Nature - Issue - nature.com science feeds",
+        "url": "https://www.nature.com/articles/s41586-026-10930-9",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "a3968a0d6e1c08b2c186100d9b94e4b8",
+        "title": "X Money在美国上线，钱包转账与Visa卡同步推出",
+        "chinese_title": "X Money在美国上线，钱包转账与Visa卡同步推出",
+        "original_title": "X Money is launching in the US starting today",
+        "summary": "X开始在美国推出支付平台X Money，提供数字钱包、点对点转账、可定制Visa卡和Apple Wallet支持，并设置订阅权益。",
+        "rating": "A+",
+        "score": 89,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "支付功能是X转型超级应用的关键一步，后续需观察牌照覆盖、用户采用、资金安全及与Venmo的竞争。",
+        "entities": [
+          "Elon Musk",
+          "Visa",
+          "X",
+          "X Money"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Verge -  Tech Posts",
+            "url": "https://www.theverge.com/tech/971649/x-money-launch-elon-musk"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.471988",
+        "source": "The Verge -  Tech Posts",
+        "url": "https://www.theverge.com/tech/971649/x-money-launch-elon-musk",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "afa9818d25a4e26a3ff51bb30974a71e",
+        "title": "Anthropic否认支持禁开源模型，主张全球模型测试",
+        "chinese_title": "Anthropic否认支持禁开源模型，主张全球模型测试",
+        "original_title": "Dario Amodei says Anthropic has never backed an open-weights model ban, lists reasons top chips shouldn't be sold to China, calls for global model testing, more (Anthropic)",
+        "summary": "Dario Amodei称Anthropic从未支持禁止开放权重模型，同时解释反对向中国出售顶级芯片的理由，并呼吁全球模型测试。",
+        "rating": "A+",
+        "score": 88,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "其立场将模型开放、芯片出口和国际评估捆绑，可能影响美国AI政策与中美技术竞争叙事。",
+        "entities": [
+          "Anthropic",
+          "Dario Amodei",
+          "开放权重模型",
+          "芯片出口管制"
         ],
         "sourceLinks": [
           {
             "name": "Techmeme",
-            "url": "https://www.techmeme.com/260720/p12#a260720p12"
+            "url": "https://www.techmeme.com/260727/p32#a260727p32"
           }
         ],
         "sources": 1,
-        "timestamp": 1784583387,
-        "published_at": "2026-07-21T05:36:27.979120",
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.472072",
         "source": "Techmeme",
-        "url": "https://www.techmeme.com/260720/p12#a260720p12",
+        "url": "https://www.techmeme.com/260727/p32#a260727p32",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "d18f38ddca2d5ce863a40435f0140ff5",
+        "title": "Anthropic未签开放权重联署，引发硅谷集中质疑",
+        "chinese_title": "Anthropic未签开放权重联署，引发硅谷集中质疑",
+        "original_title": "Anthropic gets heat for being the only major AI lab not supporting open models",
+        "summary": "多家科技公司联署支持开放权重与美国AI领导力，Anthropic因未参与而受到批评，其政策立场成为行业争论焦点。",
+        "rating": "A",
+        "score": 80,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可比较各实验室的开放商业模式、安全主张及游说利益，判断联署是否会转化为具体政策。",
+        "entities": [
+          "Anthropic",
+          "Meta",
+          "Microsoft",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI - Business Insider",
+            "url": "https://www.businessinsider.com/anthropic-open-source-ai-model-weights-criticism-2026-7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.472155",
+        "source": "AI - Business Insider",
+        "url": "https://www.businessinsider.com/anthropic-open-source-ai-model-weights-criticism-2026-7",
         "event_id": null,
         "grade": "A",
         "level": "A"
+      },
+      {
+        "id": "120f798ee1fb6b2bd32a44e54c43bc86",
+        "title": "微软发布AI安全工具，宣称风险治理能力领先竞品",
+        "chinese_title": "微软发布AI安全工具，宣称风险治理能力领先竞品",
+        "original_title": "Microsoft unveils AI security tools it says outperform competing platforms",
+        "summary": "微软推出一组利用AI持续识别并降低企业安全暴露面的工具，声称性能优于竞争平台，发布时点紧随近期智能体安全事件。",
+        "rating": "A+",
+        "score": 88,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "需用独立测试核验其效果，并观察企业是否接受让AI自动处置高风险安全配置。",
+        "entities": [
+          "Ai安全",
+          "Hugging Face",
+          "Microsoft",
+          "网络安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.472338",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "0b23eb4ae5b3c83cd7886e73ad3402ff",
+        "title": "OpenAI失控黑客智能体说法遭外界质疑",
+        "chinese_title": "OpenAI失控黑客智能体说法遭外界质疑",
+        "original_title": "Suspicion Grows About OpenAI’s Tale About Its Rogue Hacker AI",
+        "summary": "Futurism梳理了外界对OpenAI所述智能体越界入侵事件的疑点，包括披露细节、证据完整性以及事件叙事的一致性。",
+        "rating": "A",
+        "score": 78,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "事件需要独立取证与受影响方交叉确认，也可能推动实验室建立统一的智能体事故披露标准。",
+        "entities": [
+          "Ai安全",
+          "GPT",
+          "Hugging Face",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/artificial-intelligence/openai-rogue-hack-ai-suspicion-chatgpt"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.472421",
+        "source": "Futurism",
+        "url": "https://futurism.com/artificial-intelligence/openai-rogue-hack-ai-suspicion-chatgpt",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "03c132f49b33657cf0881f68dcea1773",
+        "title": "纳德拉警告企业押注单一AI模型可能难以生存",
+        "chinese_title": "纳德拉警告企业押注单一AI模型可能难以生存",
+        "original_title": "Satya Nadella says companies that trust one AI for everything may not survive",
+        "summary": "Satya Nadella认为，缺乏自有模型或AI网关来隔离提示词与底层模型的企业，将在供应商依赖和迁移风险中陷入困境。",
+        "rating": "A+",
+        "score": 86,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "观点将推动多模型路由和AI网关市场，但企业仍需权衡架构复杂度、成本与数据治理。",
+        "entities": [
+          "Ai网关",
+          "Microsoft",
+          "Satya Nadella",
+          "多模型策略"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785195899,
+        "published_at": "2026-07-28T07:44:59.472505",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
       }
     ],
     "2026-07-27": [
+      {
+        "id": "c786fe62f743b09c87c16cf445254d6f",
+        "title": "科学家警告轨道数据中心或带来生态灾难",
+        "chinese_title": "科学家警告轨道数据中心或带来生态灾难",
+        "original_title": "The Type of Orbital Data Centers That Billionaires Want to Launch Into Space Would Wreak Ecological Catastrophe, Scientists Warn",
+        "summary": "EarthJustice提交请愿，要求美国FCC审查轨道数据中心许可，警告大规模把计算设施送入太空可能造成严重环境后果。",
+        "rating": "A",
+        "score": 80,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可量化发射排放、再入污染与轨道碎片风险，并对照地面数据中心的能源和水资源成本。",
+        "entities": [
+          "Earthjustice",
+          "Fcc",
+          "太空环境",
+          "轨道数据中心"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/space/orbital-data-centers-billionaires-ecological-catastrophe-petition"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196552,
+        "published_at": "2026-07-28T07:55:52.786002",
+        "source": "Futurism",
+        "url": "https://futurism.com/space/orbital-data-centers-billionaires-ecological-catastrophe-petition",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "e006f702fac44b41188ea7cf4963e8b4",
+        "title": "METR推出支出周期指标，量化智能体何时不如人划算",
+        "chinese_title": "METR推出支出周期指标，量化智能体何时不如人划算",
+        "original_title": "METR introduces a new metric to calculate exactly when AI agents become more expensive than humans",
+        "summary": "METR提出\"支出周期\"指标，用美元衡量AI智能体完成问题的成本效益；初步实验表现一般，方法也存在适用边界。",
+        "rating": "A+",
+        "score": 86,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "该指标可补足只看任务时长的评估，但需纳入人工监督、失败重试和模型更新后的真实企业成本。",
+        "entities": [
+          "Ai智能体",
+          "Metr",
+          "Nanogpt",
+          "支出周期"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/metr-introduces-a-new-metric-to-calculate-exactly-when-ai-agents-become-more-expensive-than-humans/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196552,
+        "published_at": "2026-07-28T07:55:52.786092",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/metr-introduces-a-new-metric-to-calculate-exactly-when-ai-agents-become-more-expensive-than-humans/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "aab121fdf9e8f390548f9c16aa87a937",
+        "title": "英伟达成立开放安全AI联盟，共建防御工具",
+        "chinese_title": "英伟达成立开放安全AI联盟，共建防御工具",
+        "original_title": "Nvidia forms the Open Secure AI Alliance, a coalition including CrowdStrike, Hugging Face, and Dell to develop and share tools for AI safety and cybersecurity (Jaspreet Singh/Reuters)",
+        "summary": "路透社报道，英伟达联合CrowdStrike、Hugging Face与戴尔等公司成立开放安全AI联盟，开发共享AI安全及网络防御工具。",
+        "rating": "S",
+        "score": 91,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可跟踪联盟首批开源项目、成员分工和治理机制，判断其能否形成被企业采用的共同安全底座。",
+        "entities": [
+          "Crowdstrike",
+          "Hugging Face",
+          "NVIDIA",
+          "Open Secure Ai Alliance"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260727/p9#a260727p9"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785196552,
+        "published_at": "2026-07-28T07:55:52.786182",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260727/p9#a260727p9",
+        "event_id": null,
+        "grade": "S",
+        "level": "S"
+      },
+      {
+        "id": "35d7aa32cef77c2308a0eebdc439b0a6",
+        "title": "2890万参数模型跑上8美元微控制器，边缘AI再下探",
+        "chinese_title": "2890万参数模型跑上8美元微控制器，边缘AI再下探",
+        "original_title": "Running a 28.9M parameter LLM on an $8 microcontroller",
+        "summary": "开源项目展示在约8美元的微控制器上运行2890万参数语言模型，说明极小模型可进入资源受限设备，但实际速度和能力仍待验证。",
+        "rating": "A",
+        "score": 76,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可测试功耗、延迟和任务准确率，判断其在传感器、家电和离线控制中的应用边界。",
+        "entities": [
+          "Esp32",
+          "大语言模型",
+          "微控制器",
+          "边缘Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://github.com/slvDev/esp32-ai"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785102610,
+        "published_at": "2026-07-27T05:50:10.165535",
+        "source": "Hacker News",
+        "url": "https://github.com/slvDev/esp32-ai",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "ed7dc186d92cc5902b3005cab3df8ddc",
+        "title": "Debian发起大模型使用决议，开源社区讨论AI代码边界",
+        "chinese_title": "Debian发起大模型使用决议，开源社区讨论AI代码边界",
+        "original_title": "General Resolution: LLM Usage in Debian",
+        "summary": "Debian就项目内如何使用大语言模型提出一般决议，试图明确贡献、生成代码和社区治理中的规则。",
+        "rating": "A",
+        "score": 79,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "投票结果可能为其他开源社区提供AI贡献政策样板，并影响代码来源披露与许可证合规。",
+        "entities": [
+          "Ai治理",
+          "Debian",
+          "大语言模型",
+          "开源软件"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.debian.org/vote/2026/vote_002"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1785102610,
+        "published_at": "2026-07-27T05:50:10.165636",
+        "source": "Hacker News",
+        "url": "https://www.debian.org/vote/2026/vote_002",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
       {
         "id": "2d9f29186f485e024faa2b888c9c94d9",
         "title": "DeepMind新方法定位推理错误，避免整条思维链重跑",
@@ -7648,74 +8209,8 @@
         "grade": "B",
         "level": "B"
       }
-    ],
-    "2026-07-26": [
-      {
-        "id": "35d7aa32cef77c2308a0eebdc439b0a6",
-        "title": "2890万参数模型跑上8美元微控制器，边缘AI再下探",
-        "chinese_title": "2890万参数模型跑上8美元微控制器，边缘AI再下探",
-        "original_title": "Running a 28.9M parameter LLM on an $8 microcontroller",
-        "summary": "开源项目展示在约8美元的微控制器上运行2890万参数语言模型，说明极小模型可进入资源受限设备，但实际速度和能力仍待验证。",
-        "rating": "A",
-        "score": 76,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可测试功耗、延迟和任务准确率，判断其在传感器、家电和离线控制中的应用边界。",
-        "entities": [
-          "Esp32",
-          "大语言模型",
-          "微控制器",
-          "边缘Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/slvDev/esp32-ai"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785102610,
-        "published_at": "2026-07-27T05:50:10.165535",
-        "source": "Hacker News",
-        "url": "https://github.com/slvDev/esp32-ai",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "ed7dc186d92cc5902b3005cab3df8ddc",
-        "title": "Debian发起大模型使用决议，开源社区讨论AI代码边界",
-        "chinese_title": "Debian发起大模型使用决议，开源社区讨论AI代码边界",
-        "original_title": "General Resolution: LLM Usage in Debian",
-        "summary": "Debian就项目内如何使用大语言模型提出一般决议，试图明确贡献、生成代码和社区治理中的规则。",
-        "rating": "A",
-        "score": 79,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "投票结果可能为其他开源社区提供AI贡献政策样板，并影响代码来源披露与许可证合规。",
-        "entities": [
-          "Ai治理",
-          "Debian",
-          "大语言模型",
-          "开源软件"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.debian.org/vote/2026/vote_002"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785102610,
-        "published_at": "2026-07-27T05:50:10.165636",
-        "source": "Hacker News",
-        "url": "https://www.debian.org/vote/2026/vote_002",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      }
     ]
   },
-  "last_updated": "2026-07-27T05:51:23.301612",
-  "total_news": 252
+  "last_updated": "2026-07-28T07:56:20.703711",
+  "total_news": 259
 }
