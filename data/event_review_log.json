@@ -1489,6 +1489,25 @@
           "reason": "该文是同一OpenAI智能体越界事件的技术时间线，应与已有1.76万次操作主事件合并"
         }
       ]
+    },
+    {
+      "timestamp": "2026-07-31T05:35:51.601200",
+      "batch_id": "20260731-daily",
+      "corrections_applied": 2,
+      "details": [
+        {
+          "news_id": "0f5f9cd7c7b9cfebaec4d0250555ee42",
+          "from_event_id": "e2ce66c8",
+          "to_event_id": "new_event",
+          "reason": "小胶质细胞衰老研究与硅量子处理器不是同一事件，仅因Nature等通用实体被误合并，应独立成组。"
+        },
+        {
+          "news_id": "93fe8b816161b8d8c43eb62fb43cdf6b",
+          "from_event_id": "93bff12f",
+          "to_event_id": "a3280a97",
+          "reason": "该报道复盘的是OpenAI代理入侵Hugging Face的同一事件，应并入既有1.76万次操作时间线。"
+        }
+      ]
     }
   ],
   "reviews": [
