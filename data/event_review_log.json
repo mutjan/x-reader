@@ -1559,6 +1559,31 @@
           "reason": "该新闻是METR提出独立事故调查机制，与讨论美国法律责任的报道属于不同事件，不能仅因共享OpenAI、Anthropic和AI智能体实体而合并。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-08-05T05:15:22.277393",
+      "batch_id": "20260805-editorial",
+      "corrections_applied": 3,
+      "details": [
+        {
+          "news_id": "047553fa2efe240a92c713ad9396e811",
+          "from_event_id": "6bca1f20",
+          "to_event_id": "new_event",
+          "reason": "DNA修复与延寿研究和工程酵母合成抗癌药是不同科研事件，仅因Nature等通用实体被误并。"
+        },
+        {
+          "news_id": "4d87c6eaf9ffc06af6099a45fe3f10f6",
+          "from_event_id": "6bca1f20",
+          "to_event_id": "new_event",
+          "reason": "白宫科研政策评论与工程酵母生物制造无事件关联，应独立成组。"
+        },
+        {
+          "news_id": "c5864e745adbf49bea625c3044b8572c",
+          "from_event_id": "6bca1f20",
+          "to_event_id": "new_event",
+          "reason": "学术出版虚假评审与强制引用问题不属于工程酵母研究，应从错误聚合的Nature通用组拆出。"
+        }
+      ]
     }
   ],
   "reviews": [
