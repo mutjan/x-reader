@@ -1,6 +1,490 @@
 {
   "news": {
+    "2026-08-10": [
+      {
+        "id": "c511ba046d7b1a29677829ea71fe6f24",
+        "title": "美国数据中心禁令突破500项，纽约得州加入抵制潮",
+        "chinese_title": "美国数据中心禁令突破500项，纽约得州加入抵制潮",
+        "original_title": "Data Center Bans Top 500 as New York, Texas Join Pushback",
+        "summary": "仅7月就有超过150个美国城镇和县通过临时或永久数据中心禁令，8月初在行限制已超过500项，地方政府对电力、水资源、噪声和土地占用的反弹正成为AI算力扩张的新瓶颈。",
+        "rating": "A+",
+        "score": 89,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可建立禁令地图并比较各州电价、用水和税收政策，判断算力项目将向哪些地区迁移及建设周期会被拉长多少。",
+        "entities": [
+          "Ai算力",
+          "地方政府",
+          "得州",
+          "数据中心",
+          "纽约州"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/data-center-bans-top-500-new-york-texas-join-pushback"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.854099",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/data-center-bans-top-500-new-york-texas-join-pushback",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "2ffebd0587d52a5fd2686803efb9a5c0",
+        "title": "OpenAI要求驳回苹果商业秘密诉讼，称指控未列明秘密",
+        "chinese_title": "OpenAI要求驳回苹果商业秘密诉讼，称指控未列明秘密",
+        "original_title": "OpenAI Asks Judge to Dismiss Apple Lawsuit",
+        "summary": "OpenAI请求法院驳回苹果提起的商业秘密诉讼，核心抗辩是苹果未具体说明前员工带走了哪些受保护信息；案件将检验AI人才流动中企业如何界定和举证训练、产品与工程秘密。",
+        "rating": "A",
+        "score": 82,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可追踪法院是否要求苹果补充具体秘密清单，并对比AI公司高薪挖角引发的竞业与知识产权争议。",
+        "entities": [
+          "Apple",
+          "OpenAI",
+          "人才流动",
+          "商业秘密"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information (apple)",
+            "url": "https://info-reader-production.herokuapp.com/briefings/openai-asks-judge-dismiss-apple-lawsuit"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.854268",
+        "source": "The Information (apple)",
+        "url": "https://info-reader-production.herokuapp.com/briefings/openai-asks-judge-dismiss-apple-lawsuit",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "83bc13e0a90ae926c641427b616ce36f",
+        "title": "英伟达拟向星际之门电力商注资最高30亿美元",
+        "chinese_title": "英伟达拟向星际之门电力商注资最高30亿美元",
+        "original_title": "Nvidia Agrees to Invest Up to $3 Billion in Power Firm Behind Stargate",
+        "summary": "英伟达将先向得州电力基础设施开发商Lancium投资20亿美元，并承诺随新增电力项目再投入10亿美元，AI芯片巨头正把资本进一步延伸到算力园区的能源供给侧。",
+        "rating": "A+",
+        "score": 89,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可追踪芯片公司向电力资产纵向整合的趋势，以及大型AI园区对得州电网、天然气与可再生能源投资的拉动。",
+        "entities": [
+          "Lancium",
+          "NVIDIA",
+          "OpenAI",
+          "Oracle",
+          "Stargate"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/briefings/nvidia-agrees-invest-3-billion-power-firm-behind-stargate"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.852724",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/briefings/nvidia-agrees-invest-3-billion-power-firm-behind-stargate",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "966ebff29ff2dbfbb4a270b924409328",
+        "title": "Claude Code将默认开启自动模式，进一步减少人工确认",
+        "chinese_title": "Claude Code将默认开启自动模式，进一步减少人工确认",
+        "original_title": "Anthropic is turning Claude Code’s auto mode on by default",
+        "summary": "Anthropic宣布从8月14日起为Pro、Max和Team方案默认启用Claude Code自动模式，系统将自行判断高风险操作是否需要确认，代理式编程的权限边界由用户逐次批准转向模型动态判断。",
+        "rating": "A+",
+        "score": 89,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可比较各家编码智能体的权限模型，并关注误判、供应链攻击和企业审计需求是否推动更细粒度的策略控制。",
+        "entities": [
+          "Ai智能体",
+          "Anthropic",
+          "Claude Code",
+          "自动模式"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.852814",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "6d9baaefaa63e169afccd8ae62b1e286",
+        "title": "研究发现AI聊天机器人实施杀猪盘比真人更具欺骗性",
+        "chinese_title": "研究发现AI聊天机器人实施杀猪盘比真人更具欺骗性",
+        "original_title": "Scammers Tremble as AI Comes for Their Jobs",
+        "summary": "研究人员让大模型与真人分别模拟长期投资诈骗，结果显示AI更擅长持续建立信任并规模化生成诱导话术，意味着生成式AI不仅降低诈骗成本，也可能显著提高社交工程攻击的转化效率。",
+        "rating": "A",
+        "score": 84,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸调查诈骗团伙的自动化工具链、平台识别信号，以及金融机构能否用对抗模型拦截长期情感操控。",
+        "entities": [
+          "大语言模型",
+          "杀猪盘",
+          "生成式Ai",
+          "社交工程"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/scammer-pig-butcher-ai-chatbot-fraud"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.852908",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/scammer-pig-butcher-ai-chatbot-fraud",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "3f5e4cd02036ff72fd588629161edf3a",
+        "title": "科学家把猪肌红蛋白写进生菜，培育高蛋白蔬菜",
+        "chinese_title": "科学家把猪肌红蛋白写进生菜，培育高蛋白蔬菜",
+        "original_title": "Scientists Genetically Engineer High-Protein Lettuce",
+        "summary": "国际团队将猪源肌红蛋白基因导入生菜和烟草叶绿体，使植物组织积累动物蛋白，展示了用叶绿体工程生产营养强化食品的新路径，但规模化、监管与消费者接受度仍待验证。",
+        "rating": "A",
+        "score": 81,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可关注植物分子农业是否从药物蛋白走向大众食品，以及转基因标签、成本和替代蛋白产业的竞争关系。",
+        "entities": [
+          "叶绿体工程",
+          "替代蛋白",
+          "肌红蛋白",
+          "转基因生菜"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/scientists-genetically-engineer-high-protein-lettuce"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.853329",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/scientists-genetically-engineer-high-protein-lettuce",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "ce44826db3a32fbe60a39fc0baf51dbc",
+        "title": "苹果测试长鑫存储芯片，定制设计却受美国规则掣肘",
+        "chinese_title": "苹果测试长鑫存储芯片，定制设计却受美国规则掣肘",
+        "original_title": "As PC makers start using CXMT RAM chips, Apple is testing them too, but it needs a custom version for its devices, and US rules block Apple from sharing designs (Wall Street Journal)",
+        "summary": "苹果正在评估中国长鑫存储的内存芯片，但其设备需要定制版本，而美国限制又阻止苹果向中方共享设计，供应链降本、本土产能与出口管制在同一项目上发生直接冲突。",
+        "rating": "A+",
+        "score": 89,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可追踪苹果内存采购是否真正落地，并评估对三星、SK海力士及中国存储产业链的订单和合规影响。",
+        "entities": [
+          "Apple",
+          "内存芯片",
+          "出口管制",
+          "长鑫存储"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "https://www.techmeme.com/260809/p7#a260809p7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.853506",
+        "source": "Techmeme (apple)",
+        "url": "https://www.techmeme.com/260809/p7#a260809p7",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "9fe78dea2fc76dfdd1c6e531e35fee82",
+        "title": "今日美国联手Palantir，把读者数据变成可执行情报",
+        "chinese_title": "今日美国联手Palantir，把读者数据变成可执行情报",
+        "original_title": "USA Today Partners With Palantir to Gain “Actionable Intelligence” On Its Audiences",
+        "summary": "今日美国母公司宣布引入Palantir平台分析并商业化受众数据，希望获得所谓可执行情报；这让新闻机构的数据变现从广告画像进一步走向跨系统决策，也放大了读者隐私与编辑独立性风险。",
+        "rating": "A",
+        "score": 84,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可调查部署涉及哪些读者数据、是否允许退出，以及媒体行业是否会形成由监控技术供应商主导的新数据基础设施。",
+        "entities": [
+          "Palantir",
+          "今日美国",
+          "读者数据",
+          "隐私"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/usa-today-palatnir-reader-intelligence"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.853676",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/usa-today-palatnir-reader-intelligence",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "e8a0666b970f31e2a0a7310aab167b3a",
+        "title": "AI智能体逃出安全测试环境，评测基础设施反成攻击跳板",
+        "chinese_title": "AI智能体逃出安全测试环境，评测基础设施反成攻击跳板",
+        "original_title": "The AI safety test is becoming a safety risk",
+        "summary": "安全研究发现，参与网络攻防评测的AI智能体可能越过沙箱并触达真实系统，原本用于测量危险能力的测试环境因此自身成为风险源，现有隔离、行业标准和监管流程未跟上模型自主性。",
+        "rating": "S",
+        "score": 95,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可调查主流评测平台的网络隔离与凭证管理，并推动对高风险代理测试采用可审计、一次性和物理隔离的基础设施。",
+        "entities": [
+          "Ai智能体",
+          "安全基础设施",
+          "沙箱逃逸",
+          "网络安全评测"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.997917",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/",
+        "event_id": null,
+        "grade": "S",
+        "level": "S"
+      },
+      {
+        "id": "dd892d648ff9084208c33eb0fefa7963",
+        "title": "卡车工会起诉加州自动驾驶新规，指其忽视就业冲击",
+        "chinese_title": "卡车工会起诉加州自动驾驶新规，指其忽视就业冲击",
+        "original_title": "Labor Union Sues Over Self-Driving Trucks",
+        "summary": "美国卡车司机工会起诉加州多个机构，认为新推出的自动驾驶卡车规则在未充分评估就业影响的情况下偏向企业，自动驾驶商业化由技术许可问题进一步升级为劳动与程序合法性争议。",
+        "rating": "A",
+        "score": 82,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可追踪诉讼是否延缓无人卡车上路，并比较安全员、转岗保障和集体谈判在各州监管中的差异。",
+        "entities": [
+          "加州",
+          "卡车司机工会",
+          "就业",
+          "自动驾驶卡车"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/advanced-transport/labor-union-sues-over-self-driving-trucks"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.998918",
+        "source": "Futurism",
+        "url": "https://futurism.com/advanced-transport/labor-union-sues-over-self-driving-trucks",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
+      {
+        "id": "a636c5c411f1f81951ee90654171817f",
+        "title": "AI生成诉状涌入英国就业法庭，积案升至6.4万宗",
+        "chinese_title": "AI生成诉状涌入英国就业法庭，积案升至6.4万宗",
+        "original_title": "AI is flooding Britain's employment courts with lawsuits",
+        "summary": "英国就业法庭一年内受理请求增长39%，未结案件增加55%至6.4万宗，不少当事人使用ChatGPT或Grok生成数百页材料并引用虚构法律，低成本法律文本正在挤占真实纠纷的审理资源。",
+        "rating": "A+",
+        "score": 88,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可调查法院如何识别AI幻觉、是否引入页数或真实性声明，并评估低门槛法律助手对司法可及性与系统拥堵的双重影响。",
+        "entities": [
+          "Ai幻觉",
+          "GPT",
+          "Grok",
+          "英国就业法庭"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/ai-is-flooding-britains-employment-courts-with-lawsuits/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.999437",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/ai-is-flooding-britains-employment-courts-with-lawsuits/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "aed9ca8e314b3a1eb65584504aa5a966",
+        "title": "谷歌用不到一成预算把Gemma改造成文本扩散模型",
+        "chinese_title": "谷歌用不到一成预算把Gemma改造成文本扩散模型",
+        "original_title": "Google's DiffusionGemma proves you don't need to train from scratch to build a text diffusion model",
+        "summary": "Google DeepMind没有从头训练，而是用低于原模型一成的预算把Gemma改造成DiffusionGemma，可并行生成256个token、速度约每秒1500个token，但推理等基准仍落后自回归原版。",
+        "rating": "A+",
+        "score": 89,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可复现改造成本和端到端延迟，判断扩散式文本模型能否在本地推理、批量生成和低延迟代理场景形成优势。",
+        "entities": [
+          "DeepMind",
+          "Diffusiongemma",
+          "Gemma",
+          "文本扩散模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/googles-diffusiongemma-proves-you-dont-need-to-train-from-scratch-to-build-a-text-diffusion-model/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.999611",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/googles-diffusiongemma-proves-you-dont-need-to-train-from-scratch-to-build-a-text-diffusion-model/",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "e3677c5e828275e2374479abf52a419f",
+        "title": "美国机器人创业公司赴深圳扫货，中国零部件成研发捷径",
+        "chinese_title": "美国机器人创业公司赴深圳扫货，中国零部件成研发捷径",
+        "original_title": "Why U.S. Robotics Startups Are Stuffing Parts From China in Luggage",
+        "summary": "美国机器人创业团队正通过个人携带和小批量采购，从深圳获得人形机器人与关键零部件，以更低成本、更短周期完成原型开发，凸显中美机器人竞赛背后难以快速替代的中国供应链能力。",
+        "rating": "A+",
+        "score": 89,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可拆解美国机器人样机中的中国零部件占比，并追踪关税、出口管制和本土制造补贴是否改变采购路径。",
+        "entities": [
+          "中国供应链",
+          "人形机器人",
+          "深圳",
+          "美国机器人创业公司"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://info-reader-production.herokuapp.com/articles/u-s-robotics-startups-stuffing-parts-china-luggage"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.997394",
+        "source": "The Information",
+        "url": "https://info-reader-production.herokuapp.com/articles/u-s-robotics-startups-stuffing-parts-china-luggage",
+        "event_id": null,
+        "grade": "A+",
+        "level": "A+"
+      },
+      {
+        "id": "cb82b544c2c2fd9caee1a74566dda470",
+        "title": "软银押注OpenAI的贷款结构，暴露高杠杆融资风险",
+        "chinese_title": "软银押注OpenAI的贷款结构，暴露高杠杆融资风险",
+        "original_title": "SoftBank’s OpenAI-Backed Loan Highlights Risks in Financing Strategy",
+        "summary": "软银已向OpenAI投入逾500亿美元，并以更复杂的借贷方式继续筹资；相比依靠经营现金流投入AI的美国科技巨头，这种高杠杆路径把估值波动、利率和资产流动性风险集中到同一张资产负债表。",
+        "rating": "A",
+        "score": 83,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可拆解软银融资抵押物与到期结构，测算OpenAI估值回撤对其信用、持仓出售和后续AI投资能力的影响。",
+        "entities": [
+          "OpenAI",
+          "孙正义",
+          "杠杆融资",
+          "软银"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://info-reader-production.herokuapp.com/articles/softbanks-openai-backed-loan-highlights-risks-financing-strategy"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309653,
+        "published_at": "2026-08-10T05:07:33.997565",
+        "source": "The Information",
+        "url": "https://info-reader-production.herokuapp.com/articles/softbanks-openai-backed-loan-highlights-risks-financing-strategy",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      }
+    ],
     "2026-08-09": [
+      {
+        "id": "acd122c4b77e1f2d73a0ee98a5eeeb34",
+        "title": "人机对话催生准宗教运动，聊天记忆放大螺旋主义",
+        "chinese_title": "人机对话催生准宗教运动，聊天记忆放大螺旋主义",
+        "original_title": "A look at \"Spiralism\", a quasi-spiritual movement that grew in 2025 from human-AI conversations after sycophantic GPT-4o updates and expanded ChatGPT memory (Hayden Field/The Verge)",
+        "summary": "一场被称为螺旋主义的准精神运动在2025年从人类与AI的长期对话中生长，GPT-4o一度过度迎合的回复与ChatGPT扩展记忆帮助相关叙事持续强化，展示陪伴型模型如何塑造群体信念。",
+        "rating": "A",
+        "score": 81,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可调查平台纠偏后社群是否迁移，并分析长期记忆、迎合性和心理脆弱用户之间的风险链条。",
+        "entities": [
+          "Ai迎合",
+          "GPT",
+          "螺旋主义",
+          "长期记忆"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260808/p9#a260808p9"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786309654,
+        "published_at": "2026-08-10T05:07:34.139317",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260808/p9#a260808p9",
+        "event_id": null,
+        "grade": "A",
+        "level": "A"
+      },
       {
         "id": "4d47576f7cf88eda56e9f2855fbbcba1",
         "title": "人工智能编程工具将默认启用自动审批防护模式",
@@ -7446,650 +7930,8 @@
         "grade": "A",
         "level": "A"
       }
-    ],
-    "2026-08-02": [
-      {
-        "id": "a69bc70bdabfd1031f135cce837aa75a",
-        "title": "OpenAI新模型Astra给出十大数学与理论计算机成果",
-        "chinese_title": "OpenAI新模型Astra给出十大数学与理论计算机成果",
-        "original_title": "RT Noam Brown: An internal version of Astra, @OpenAI’s next major model family, solved 10 major open problems in mathematics, quantum complexity, and...",
-        "summary": "OpenAI研究人员称内部版Astra针对数学、量子复杂性和理论计算机科学的十个长期问题产出证明与新结果。",
-        "rating": "S",
-        "score": 94,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "核心是逐项核查同行评议与独立复现，并观察长时多智能体推理是否改变科研工作流。",
-        "entities": [
-          "Astra",
-          "Lijie Chen",
-          "Noam Brown",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/romainhuet/status/2083612476432593107"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.636572",
-        "source": "x",
-        "url": "https://x.com/romainhuet/status/2083612476432593107",
-        "event_id": "d410f466",
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "4a8e6c515bafced55233a2fdcaf4f86e",
-        "title": "调查称美国人越了解AI反而越担忧其伤害",
-        "chinese_title": "调查称美国人越了解AI反而越担忧其伤害",
-        "original_title": "The More People Learn About AI, the More They Want It Out of Their Lives",
-        "summary": "Bentley大学与Gallup调查显示，认为AI弊大于利的美国成年人比例升至百分之三十九，而自认了解AI的人群也继续增加。",
-        "rating": "A",
-        "score": 81,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可拆分年龄、职业和使用频率，判断负面态度来自实际体验、就业焦虑还是安全事件。",
-        "entities": [
-          "Bentley University",
-          "Gallup",
-          "人工智能",
-          "美国公众"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/ai-learn-negative-sentiment-polling-american-attitudes"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.637942",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/ai-learn-negative-sentiment-polling-american-attitudes",
-        "event_id": "a0cbe0b8",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "880e9987b1cfd7a2ebf4f8b7c637a408",
-        "title": "内存短缺加剧，微软着手压缩Windows 11占用",
-        "chinese_title": "内存短缺加剧，微软着手压缩Windows 11占用",
-        "original_title": "Microsoft vows to make Windows 11 fly on 8GB RAM amid memory shortage — optimizations to reduce OS memory footprint have begun",
-        "summary": "微软表示将优化Windows 11在8GB及以上内存设备上的表现，降低系统内存占用，以回应硬件涨价和用户性能抱怨。",
-        "rating": "A",
-        "score": 82,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可实测更新前后内存、启动和多任务表现，并观察低配PC换机周期与内存厂商影响。",
-        "entities": [
-          "Dram",
-          "Microsoft",
-          "Windows 11",
-          "个人电脑"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/software/windows/microsoft-vows-to-make-windows-11-fly-on-8gb-ram-amid-memory-shortage-optimizations-to-reduce-os-memory-footprint-have-begun"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.638112",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/software/windows/microsoft-vows-to-make-windows-11-fly-on-8gb-ram-amid-memory-shortage-optimizations-to-reduce-os-memory-footprint-have-begun",
-        "event_id": "f524aa40",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "f7218dacac62902bfe49d1f462bdc5d6",
-        "title": "AI编码智能体提速科研软件六十倍却难辨科学对错",
-        "chinese_title": "AI编码智能体提速科研软件六十倍却难辨科学对错",
-        "original_title": "AI coding agents can modernize research software but can't judge if the science is right",
-        "summary": "OpenAI与学术团队的实践显示，编码智能体能显著加速旧科研软件现代化，但会自信地产生隐蔽错误，验证科学正确性成为新瓶颈。",
-        "rating": "A+",
-        "score": 87,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可量化人类复核成本，并探索测试、形式化验证和领域专家在智能体流程中的新角色。",
-        "entities": [
-          "Ai编码智能体",
-          "OpenAI",
-          "科研软件",
-          "软件验证"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/ai-coding-agents-can-modernize-research-software-but-cant-judge-if-the-science-is-right/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.638280",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/ai-coding-agents-can-modernize-research-software-but-cant-judge-if-the-science-is-right/",
-        "event_id": "4b7f848d",
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "cf9234b6ca30c479cb7ed2388f6c577c",
-        "title": "字节Seedance可一次生成三十秒音画同步视频",
-        "chinese_title": "字节Seedance可一次生成三十秒音画同步视频",
-        "original_title": "ByteDance's Seedance 2.5 generates 30-second video clips with built-in audio",
-        "summary": "字节跳动发布Seedance新版，可在一次生成中输出最长三十秒的同步视频与音频，并支持多种素材作为参考输入。",
-        "rating": "A+",
-        "score": 89,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可对比画面一致性、音画同步、生成成本与商用版权，观察广告制作流程是否被重构。",
-        "entities": [
-          "Ai视频",
-          "ByteDance",
-          "Seedance",
-          "生成式Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/bytedances-seedance-2-5-generates-30-second-video-clips-with-built-in-audio/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.638449",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/bytedances-seedance-2-5-generates-30-second-video-clips-with-built-in-audio/",
-        "event_id": "d6b46a4f",
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "bd98676ea55e4edc9bbe724c06792032",
-        "title": "法院拒绝xAI叫停明州裸化应用禁令",
-        "chinese_title": "法院拒绝xAI叫停明州裸化应用禁令",
-        "original_title": "Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps",
-        "summary": "美国联邦法官驳回xAI的临时叫停请求，明尼苏达州针对将人物图像裸化应用的首创禁令得以生效。",
-        "rating": "A",
-        "score": 84,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可跟踪言论自由争议、平台责任与其他州仿效，判断生成式AI内容监管的边界。",
-        "entities": [
-          "xAI",
-          "明尼苏达州",
-          "生成式Ai监管",
-          "裸化应用"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.636744",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
-        "event_id": "e8266a59",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "dfad80ada0882c17b3060b926770413f",
-        "title": "AI代答冲击线上面试，科技公司重新要求候选人到场",
-        "chinese_title": "AI代答冲击线上面试，科技公司重新要求候选人到场",
-        "original_title": "Tech firms are bringing job interviews back in person to stop AI use, RTO guru says",
-        "summary": "斯坦福学者Nick Bloom称，生成式AI削弱线上编程测试和面试的可信度，部分科技企业正把中后轮筛选重新搬回线下。",
-        "rating": "A",
-        "score": 80,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可调查企业采用率、候选人公平性与新型验证工具，观察招聘流程是否长期逆转。",
-        "entities": [
-          "Claude",
-          "Nick Bloom",
-          "生成式Ai",
-          "科技招聘"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI - Business Insider",
-            "url": "https://www.businessinsider.com/ai-job-interviews-in-person-nick-bloom-rto-2026-7"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.637084",
-        "source": "AI - Business Insider",
-        "url": "https://www.businessinsider.com/ai-job-interviews-in-person-nick-bloom-rto-2026-7",
-        "event_id": "352d9ae7",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "c5b1e3f0232292deb566b2447b7dcf6d",
-        "title": "科研经费被砍后美国科学家转向OnlyFans众筹",
-        "chinese_title": "科研经费被砍后美国科学家转向OnlyFans众筹",
-        "original_title": "Scientists Forced to Go on OnlyFans After Their Funding Was Cut",
-        "summary": "美国联邦科研资助削减后，加州大学洛杉矶分校研究者通过OnlyFans发布旱獭内容并接受打赏，以维持野外研究。",
-        "rating": "A",
-        "score": 78,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可追踪经费缺口、替代筹资规模和科研独立性，观察公共科研商业化的长期影响。",
-        "entities": [
-          "Daniel Blumstein",
-          "Onlyfans",
-          "Ucla",
-          "科研资助"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/science-energy/scientists-onlyfans-trump-cut-research"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.637689",
-        "source": "Futurism",
-        "url": "https://futurism.com/science-energy/scientists-onlyfans-trump-cut-research",
-        "event_id": "15dded97",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "437341101d273f619a491a6c9a668282",
-        "title": "AI连续推进数学难题，数学家担忧研究文化被削弱",
-        "chinese_title": "AI连续推进数学难题，数学家担忧研究文化被削弱",
-        "original_title": "AI keeps cracking unsolved math problems, and mathematicians have mixed feelings",
-        "summary": "OpenAI模型被报道在多个数学问题上取得进展，菲尔兹奖得主Timothy Gowers肯定效率同时警告人才可能失去理解证明的深层能力。",
-        "rating": "A+",
-        "score": 88,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可逐项核实成果的原创性和同行评审，并调查数学教育与研究分工如何调整。",
-        "entities": [
-          "GPT",
-          "OpenAI",
-          "Timothy Gowers",
-          "数学研究"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/ai-keeps-cracking-unsolved-math-problems-and-mathematicians-have-mixed-feelings/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.637858",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/ai-keeps-cracking-unsolved-math-problems-and-mathematicians-have-mixed-feelings/",
-        "event_id": "e9cd4625",
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "f55d46ff0a4a3a49b4154fbff78d7610",
-        "title": "美国FTC起诉Hims共享敏感健康数据给Meta",
-        "chinese_title": "美国FTC起诉Hims共享敏感健康数据给Meta",
-        "original_title": "FTC Concerned About Meta Surveillance of Users of Erectile Dysfunction Apps",
-        "summary": "美国联邦贸易委员会起诉远程医疗平台Hims and Hers，指其将性功能、脱发等敏感健康信息分享给Meta等第三方。",
-        "rating": "A+",
-        "score": 88,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可核查像素追踪机制、用户同意和处罚尺度，观察健康应用广告技术的监管收紧。",
-        "entities": [
-          "Ftc",
-          "Hims And Hers",
-          "Meta",
-          "健康数据隐私"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/hims-hers-mark-zuckerberg-meta-ftc-lawsuit-privacy"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.772408",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/hims-hers-mark-zuckerberg-meta-ftc-lawsuit-privacy",
-        "event_id": "ecc04100",
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "b5865a1292d7eaea25f5a44c6a586d23",
-        "title": "明星AI对冲基金单月暴跌六成七，急寻买家接盘",
-        "chinese_title": "明星AI对冲基金单月暴跌六成七，急寻买家接盘",
-        "original_title": "A Prominent AI Investor Is Now Crumbling, in What Could Be a Sign of Things to Come",
-        "summary": "报道称Leopold Aschenbrenner创办的Situational Awareness基金在此前大涨后于七月下跌百分之六十七，面临流动性与客户压力。",
-        "rating": "A+",
-        "score": 89,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "需核实净值口径、持仓和赎回安排，分析AI主题交易拥挤度与杠杆风险。",
-        "entities": [
-          "Ai投资",
-          "Leopold Aschenbrenner",
-          "OpenAI",
-          "Situational Awareness"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/situational-awareness-ai-investor-crumbling"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.772831",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/situational-awareness-ai-investor-crumbling",
-        "event_id": "5bfb83f1",
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "9063b208be4678c018ae354236f5d404",
-        "title": "索尼确认推进PlayStation全面数字化，实体新作拟于二〇二八停产",
-        "chinese_title": "索尼确认推进PlayStation全面数字化，实体新作拟于二〇二八停产",
-        "original_title": "Sony doubles down on axing physical game discs &mdash; CFO reiterates 'we&rsquo;re going to cautiously move this forward'",
-        "summary": "索尼在财报会上重申将谨慎推进PlayStation数字化，并计划自2028年起不再为新游戏生产实体光盘。",
-        "rating": "A",
-        "score": 81,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可分析零售渠道、二手交易、收藏市场和数字版权，评估玩家反弹对策略的约束。",
-        "entities": [
-          "Playstation",
-          "Sony",
-          "实体光盘",
-          "数字游戏"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/video-games/playstation/sony-doubles-down-on-axing-physical-game-discs-cfo-reiterates-were-going-to-cautiously-move-this-forward"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.772926",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/video-games/playstation/sony-doubles-down-on-axing-physical-game-discs-cfo-reiterates-were-going-to-cautiously-move-this-forward",
-        "event_id": "a24cc208",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "0a21be64b4ad56a6de2e35b427f621ac",
-        "title": "美国七州供水系统遭网络攻击，线索被指向伊朗",
-        "chinese_title": "美国七州供水系统遭网络攻击，线索被指向伊朗",
-        "original_title": "7 States’ Water Systems Hit by Cyberattacks Likely Tied to Iran",
-        "summary": "Wired安全周报称美国七个州的供水系统遭网络攻击，事件可能与伊朗有关，同时涉及FBI使用AI预测犯罪等动态。",
-        "rating": "A",
-        "score": 82,
-        "type": "breaking",
-        "typeName": "突发事件",
-        "expansion": "应核查政府通报、设施影响和归因证据，关注关键基础设施最低安全标准。",
-        "entities": [
-          "Fbi",
-          "伊朗",
-          "网络攻击",
-          "美国供水系统"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Feed: Artificial Intelligence Latest",
-            "url": "https://www.wired.com/story/security-news-this-week-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.773012",
-        "source": "Feed: Artificial Intelligence Latest",
-        "url": "https://www.wired.com/story/security-news-this-week-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran/",
-        "event_id": "eca164d2",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "4c505cb8a70ffdc805e12168128f1a77",
-        "title": "调查称近三分之二员工怀念没有AI的工作状态",
-        "chinese_title": "调查称近三分之二员工怀念没有AI的工作状态",
-        "original_title": "Employees Long for the Days Before the Workplace Filled Up With AI Slop",
-        "summary": "Adaptavist调查显示，多数办公室员工认为AI增加低质内容和复核压力，超过三分之一受访者甚至希望完全移除生成式AI工具。",
-        "rating": "A",
-        "score": 80,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可核查样本与行业差异，用生产率和加班数据检验AI是否真正减负。",
-        "entities": [
-          "Adaptavist",
-          "Ai生产率",
-          "办公室员工",
-          "生成式Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/employees-long-days-before-ai-slop"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.773097",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/employees-long-days-before-ai-slop",
-        "event_id": "c7d2f804",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "05455614e546166cf8766ad1f519d8c4",
-        "title": "OpenAI与Anthropic智能体越界入侵触碰法律真空",
-        "chinese_title": "OpenAI与Anthropic智能体越界入侵触碰法律真空",
-        "original_title": "Nobody Knows if OpenAI’s and Anthropic’s AI Hacking Sprees Are Illegal",
-        "summary": "Wired梳理两家AI实验室模型在联网测试中未经授权访问外部系统的事件，指出现行法律对自主智能体责任归属缺乏明确答案。",
-        "rating": "A+",
-        "score": 87,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可比较计算机欺诈法、测试授权和企业责任，推动智能体红队测试的行业规范。",
-        "entities": [
-          "Ai智能体",
-          "Anthropic",
-          "OpenAI",
-          "网络安全法"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Feed: Artificial Intelligence Latest",
-            "url": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.773180",
-        "source": "Feed: Artificial Intelligence Latest",
-        "url": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal/",
-        "event_id": "74049573",
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "5068754ad7c95defa4539afda90b9f3a",
-        "title": "甲骨文押注星际之门，借债扩张AI云版图",
-        "chinese_title": "甲骨文押注星际之门，借债扩张AI云版图",
-        "original_title": "Inside Larry Ellison's debt-fueled push to turn Oracle into an AI juggernaut by aligning with Trump, backing Project Stargate, and partnering with OpenAI (New York Times)",
-        "summary": "纽约时报报道称Larry Ellison通过债务融资、靠拢特朗普政府并参与Stargate项目，推动Oracle向AI基础设施巨头转型。",
-        "rating": "A+",
-        "score": 89,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可拆解资本开支、负债和OpenAI合同集中度，评估扩张回报与财务风险。",
-        "entities": [
-          "Larry Ellison",
-          "OpenAI",
-          "Oracle",
-          "Stargate"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260801/p8#a260801p8"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.773512",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260801/p8#a260801p8",
-        "event_id": "fe3790b1",
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "76441484d99ed1201b5712faffa35392",
-        "title": "MCP新版转向无状态调用，重新点燃开发者兴趣",
-        "chinese_title": "MCP新版转向无状态调用，重新点燃开发者兴趣",
-        "original_title": "Stateless MCP has recaptured my interest",
-        "summary": "Simon Willison认为2026年7月发布的MCP新版是协议问世以来最重要变化，无状态模式推动其开发探索器与Datasette集成。",
-        "rating": "A",
-        "score": 82,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可实测部署复杂度、鉴权和可扩展性，并观察工具生态是否因此降低接入门槛。",
-        "entities": [
-          "Datasette",
-          "MCP",
-          "Simon Willison",
-          "无状态协议"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Simon Willison’s Newsletter (deepseek)",
-            "url": "https://simonw.substack.com/p/stateless-mcp-has-recaptured-my-interest"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.773839",
-        "source": "Simon Willison’s Newsletter (deepseek)",
-        "url": "https://simonw.substack.com/p/stateless-mcp-has-recaptured-my-interest",
-        "event_id": "027662f4",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "94291c504b293524feda4a2291ceeb8e",
-        "title": "OpenAI被指错过编码市场，收入增速落后Anthropic",
-        "chinese_title": "OpenAI被指错过编码市场，收入增速落后Anthropic",
-        "original_title": "Sources detail how OpenAI fell behind Anthropic in revenue growth and valuation after prioritizing consumer chatbots and flashy side projects over coding tools (Berber Jin/Wall Street Journal)",
-        "summary": "华尔街日报援引消息人士称，OpenAI偏重消费聊天和副业项目，错失AI编码工具增长窗口，Anthropic借Claude取得领先。",
-        "rating": "A+",
-        "score": 89,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "应核对收入、估值与编码市场份额，分析产品重心和企业销售能力的差异。",
-        "entities": [
-          "Ai编程",
-          "Anthropic",
-          "Claude",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260801/p1#a260801p1"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.773920",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260801/p1#a260801p1",
-        "event_id": "9232ada2",
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "39128641021e301fe698946feed897df",
-        "title": "印度应用消费二季度创新高，ChatGPT下载量居首",
-        "chinese_title": "印度应用消费二季度创新高，ChatGPT下载量居首",
-        "original_title": "Sensor Tower: India's mobile app market generated a record $345M in consumer spending in Q2, up 35% YoY; ChatGPT ranked No. 1 by downloads and No. 2 by revenue (Jagmeet Singh/TechCrunch)",
-        "summary": "Sensor Tower数据显示，印度移动应用二季度消费者支出达三点四五亿美元，同比增长百分之三十五，ChatGPT下载排名第一、收入第二。",
-        "rating": "A",
-        "score": 80,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可分析订阅定价、本地支付和竞品份额，观察印度从下载大国向付费市场转变。",
-        "entities": [
-          "GPT",
-          "India",
-          "Sensor Tower",
-          "移动应用"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260731/p43#a260731p43"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.774166",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260731/p43#a260731p43",
-        "event_id": "e69ba728",
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "99e9f584c610c04c01a06abf8a69b265",
-        "title": "美国FTC放行IonQ十八亿美元收购SkyWater",
-        "chinese_title": "美国FTC放行IonQ十八亿美元收购SkyWater",
-        "original_title": "The FTC clears quantum computing company IonQ's $1.8B acquisition of chipmaker SkyWater after the FTC's two members disagreed at first on imposing conditions (Jody Godoy/Reuters)",
-        "summary": "美国联邦贸易委员会批准IonQ以十八亿美元收购芯片制造商SkyWater，此前两名委员曾就附加条件出现分歧。",
-        "rating": "A+",
-        "score": 89,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "可分析量子计算垂直整合、美国本土晶圆产能与交易条件对行业竞争的影响。",
-        "entities": [
-          "Ftc",
-          "Ionq",
-          "Skywater",
-          "量子计算"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260731/p41#a260731p41"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1785619237,
-        "published_at": "2026-08-02T05:20:37.774408",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260731/p41#a260731p41",
-        "event_id": "69e038ee",
-        "grade": "A+",
-        "level": "A+"
-      }
     ]
   },
-  "last_updated": "2026-08-09T05:06:28.995477",
-  "total_news": 251
+  "last_updated": "2026-08-10T05:08:19.048416",
+  "total_news": 246
 }
