@@ -1726,6 +1726,37 @@
           "reason": "该新闻讨论Gemini市场份额被ChatGPT和Claude挤压，旧组内另一条是Gemini用户规模增长，二者不是同一事件。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-08-14T05:09:12.489380",
+      "batch_id": "20260814-final-review",
+      "corrections_applied": 4,
+      "details": [
+        {
+          "news_id": "1a1a03673ae5e6057066fac05b05e223",
+          "from_event_id": "5edad405",
+          "to_event_id": "new_event",
+          "reason": "Computer History 是 ChatGPT/Codex 工作上下文功能，不属于 GPT-5.6 Sol Ultrafast API 速度服务。"
+        },
+        {
+          "news_id": "2782b5e427b572dc4845f1841e20dd92",
+          "from_event_id": "5edad405",
+          "to_event_id": "new_event",
+          "reason": "Linux 桌面版 Codex 预览是平台覆盖事件，不属于 OpenAI Ultrafast 模型服务。"
+        },
+        {
+          "news_id": "6e61e56c03d5bcd7d2ad2fc77f437c7b",
+          "from_event_id": "edcc5bec",
+          "to_event_id": "new_event",
+          "reason": "Anthropic 隐形水印是内容溯源与合规事件，不应并入 Nature 对 AI 代理科研能力的讨论。"
+        },
+        {
+          "news_id": "5a93c0548c30a76af5f983a22e2e3cf5",
+          "from_event_id": "edcc5bec",
+          "to_event_id": "new_event",
+          "reason": "工程益生菌按血糖释放治疗因子是生物医学研究，和 AI 代理治理或自动科研无直接同一事件关系。"
+        }
+      ]
     }
   ],
   "reviews": [
