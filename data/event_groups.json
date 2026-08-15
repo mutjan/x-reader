@@ -22,10 +22,11 @@
   {
     "group_id": "cfb9874d",
     "event_title": "SpaceX完成收购Cursor",
-    "first_seen_at": "2026-08-15T09:01:43.201010",
+    "first_seen_at": "2026-08-14T21:10:12",
     "last_seen_at": "2026-08-15T09:01:43.201010",
     "news_ids": [
-      "1b3b47a4fdc28cf36c289fb9ff022aee"
+      "1b3b47a4fdc28cf36c289fb9ff022aee",
+      "10f04b19b0d9c88c4c7a8e8f5327c4f4"
     ],
     "max_score": 100,
     "max_grade": "S",
@@ -33,6 +34,22 @@
       "Cursor",
       "Grok",
       "SpaceX"
+    ]
+  },
+  {
+    "group_id": "15f4ac3e",
+    "event_title": "中美大模型价格战继续升级",
+    "first_seen_at": "2026-08-14T22:27:14",
+    "last_seen_at": "2026-08-14T22:27:14",
+    "news_ids": [
+      "afac3d50a30a1358ad64e966f54b0ae4"
+    ],
+    "max_score": 100,
+    "max_grade": "S",
+    "entities": [
+      "Anthropic",
+      "OpenAI",
+      "中国Ai公司"
     ]
   },
   {
@@ -108,6 +125,23 @@
     ]
   },
   {
+    "group_id": "96e9e39a",
+    "event_title": "英伟达拟为OpenAI数据中心担保",
+    "first_seen_at": "2026-08-14T22:13:41",
+    "last_seen_at": "2026-08-15T09:01:43.201903",
+    "news_ids": [
+      "07a119f388bce0b4599048a7c1c6971e",
+      "21913f36e366b9770ab858a837b51b07"
+    ],
+    "max_score": 97,
+    "max_grade": "S",
+    "entities": [
+      "NVIDIA",
+      "OpenAI",
+      "数据中心"
+    ]
+  },
+  {
     "group_id": "071331a3",
     "event_title": "Grok 4.6追平OpenAI顶级模型",
     "first_seen_at": "2026-08-13T05:05:18.462110",
@@ -125,19 +159,46 @@
     ]
   },
   {
-    "group_id": "96e9e39a",
-    "event_title": "英伟达拟为OpenAI数据中心担保",
-    "first_seen_at": "2026-08-15T09:01:43.201903",
-    "last_seen_at": "2026-08-15T09:01:43.201903",
+    "group_id": "5edad405",
+    "event_title": "OpenAI推出极速推理模式",
+    "first_seen_at": "2026-08-14T05:08:06.060834",
+    "last_seen_at": "2026-08-15T09:01:43.341364",
     "news_ids": [
-      "07a119f388bce0b4599048a7c1c6971e"
+      "79a9f2abf24162d83081a0b9591f6638",
+      "543dd9a61faf549b9c29fd39d7202f55",
+      "0acbb27bd5f83938b64febdaf8cb3742",
+      "b98b37cb5bf9ec05dd3d42d7d9901f58",
+      "20db564e17f1f19f27b1ba832be8ba5d"
     ],
-    "max_score": 97,
+    "max_score": 96,
     "max_grade": "S",
     "entities": [
-      "NVIDIA",
+      "Cerebras",
+      "Computer History",
+      "GPT",
       "OpenAI",
-      "数据中心"
+      "Openai Api",
+      "Ultrafast",
+      "企业Ai"
+    ]
+  },
+  {
+    "group_id": "38f68a0f",
+    "event_title": "Anthropic单季收入暴增十四倍",
+    "first_seen_at": "2026-08-14T22:29:08",
+    "last_seen_at": "2026-08-15T09:01:43.339547",
+    "news_ids": [
+      "65bdc07a1c13600aa09fcb004755c978",
+      "977e1b54548a584ddd39a430358083d2",
+      "777e851ef20b726853fc4859e5820982"
+    ],
+    "max_score": 96,
+    "max_grade": "S",
+    "entities": [
+      "Anthropic",
+      "Claude",
+      "Dario Amodei",
+      "二级市场"
     ]
   },
   {
@@ -161,23 +222,6 @@
     ]
   },
   {
-    "group_id": "38f68a0f",
-    "event_title": "Anthropic单季收入暴增十四倍",
-    "first_seen_at": "2026-08-15T06:27:19",
-    "last_seen_at": "2026-08-15T09:01:43.200028",
-    "news_ids": [
-      "65bdc07a1c13600aa09fcb004755c978",
-      "977e1b54548a584ddd39a430358083d2"
-    ],
-    "max_score": 96,
-    "max_grade": "S",
-    "entities": [
-      "Anthropic",
-      "Claude",
-      "Dario Amodei"
-    ]
-  },
-  {
     "group_id": "ccc8ce24",
     "event_title": "DeepSeek上调API价格并引入动态定价",
     "first_seen_at": "2026-08-14T05:08:23.018040",
@@ -198,13 +242,14 @@
     "group_id": "65ec66fc",
     "event_title": "Anthropic多智能体实验暴露协作失控风险",
     "first_seen_at": "2026-08-14T05:08:06.061880",
-    "last_seen_at": "2026-08-15T09:01:43.200444",
+    "last_seen_at": "2026-08-15T09:01:43.340707",
     "news_ids": [
       "428457113a833ec127f3ea5608319142",
       "53a2b58e37b43b0a19c773c5327b68b5",
       "5615c5c9072b98d32da39a0cf5797041",
       "8a19c14d279b7f1500f714b616936d2f",
-      "a3b93a6e046e4a01575cc388974ff6aa"
+      "a3b93a6e046e4a01575cc388974ff6aa",
+      "c1c7ca4eeeea6e299a01e105190d8651"
     ],
     "max_score": 95,
     "max_grade": "S",
@@ -216,27 +261,6 @@
       "Responsible Scaling Policy",
       "Synthid",
       "多智能体"
-    ]
-  },
-  {
-    "group_id": "5edad405",
-    "event_title": "OpenAI推出Ultrafast模式争夺企业API速度",
-    "first_seen_at": "2026-08-14T05:08:06.060834",
-    "last_seen_at": "2026-08-15T01:19:17",
-    "news_ids": [
-      "543dd9a61faf549b9c29fd39d7202f55",
-      "0acbb27bd5f83938b64febdaf8cb3742",
-      "20db564e17f1f19f27b1ba832be8ba5d"
-    ],
-    "max_score": 95,
-    "max_grade": "S",
-    "entities": [
-      "Cerebras",
-      "GPT",
-      "OpenAI",
-      "Openai Api",
-      "Ultrafast",
-      "企业Ai"
     ]
   },
   {
@@ -449,8 +473,8 @@
   {
     "group_id": "a6d2cf2e",
     "event_title": "Anthropic内部模型能力再引关注",
-    "first_seen_at": "2026-08-15T06:36:30",
-    "last_seen_at": "2026-08-15T09:01:43.200200",
+    "first_seen_at": "2026-08-15T09:01:43.200200",
+    "last_seen_at": "2026-08-15T09:01:43.339285",
     "news_ids": [
       "de8d6b3ac935bc06d38e12dea426b521",
       "f4a0103fc5cf11e4c9089fd30804f5ae"
@@ -680,8 +704,8 @@
   {
     "group_id": "1e0562bf",
     "event_title": "OpenAI企业业务收入超过消费端",
-    "first_seen_at": "2026-08-15T03:40:02",
-    "last_seen_at": "2026-08-15T03:40:02",
+    "first_seen_at": "2026-08-15T09:01:43.340787",
+    "last_seen_at": "2026-08-15T09:01:43.340787",
     "news_ids": [
       "2f1b637c14ddee0b742d6c30b5afca34"
     ],
@@ -696,8 +720,8 @@
   {
     "group_id": "bf4294d2",
     "event_title": "Thrive早期基金押中AI巨头",
-    "first_seen_at": "2026-08-15T04:25:01",
-    "last_seen_at": "2026-08-15T09:01:43.200930",
+    "first_seen_at": "2026-08-15T09:01:43.200930",
+    "last_seen_at": "2026-08-15T09:01:43.340285",
     "news_ids": [
       "7e15453ab7ea7552ea28a4d6c8f5f7c2",
       "66eb03cdad87266ada8309c486b62706"
@@ -999,8 +1023,8 @@
   {
     "group_id": "ff0c34ab",
     "event_title": "英伟达投资版图继续扩张",
-    "first_seen_at": "2026-08-15T05:50:02",
-    "last_seen_at": "2026-08-15T05:50:02",
+    "first_seen_at": "2026-08-15T09:01:43.339794",
+    "last_seen_at": "2026-08-15T09:01:43.339794",
     "news_ids": [
       "f45ba21b73284cec0f9b34338d677e22"
     ],
@@ -1608,6 +1632,22 @@
     ]
   },
   {
+    "group_id": "caf5e45b",
+    "event_title": "新论文警示AI环境成本",
+    "first_seen_at": "2026-08-15T00:47:18",
+    "last_seen_at": "2026-08-15T00:47:18",
+    "news_ids": [
+      "16196e1a28794f08271a4f5bb98a075d"
+    ],
+    "max_score": 86,
+    "max_grade": "A",
+    "entities": [
+      "Ai",
+      "数据中心",
+      "环境影响"
+    ]
+  },
+  {
     "group_id": "f9c36f53",
     "event_title": "完整时间线还原人工智能代理误攻开源平台事件",
     "first_seen_at": "2026-08-09T05:06:19.959174",
@@ -1693,8 +1733,8 @@
   {
     "group_id": "01b542a5",
     "event_title": "小参数循环模型挑战ARC基准",
-    "first_seen_at": "2026-08-15T03:43:27",
-    "last_seen_at": "2026-08-15T03:43:27",
+    "first_seen_at": "2026-08-15T09:01:43.340545",
+    "last_seen_at": "2026-08-15T09:01:43.340545",
     "news_ids": [
       "af5716155c5a2dbbf0d88d04c8a78f1f"
     ],
@@ -1704,6 +1744,42 @@
       "Arc-Agi",
       "小模型",
       "循环模型"
+    ]
+  },
+  {
+    "group_id": "273933b2",
+    "event_title": "Claude Code使用方法继续产品化",
+    "first_seen_at": "2026-08-14T23:22:02",
+    "last_seen_at": "2026-08-15T09:01:43.339375",
+    "news_ids": [
+      "3c873aced338bb207a496d1f6eaf903c",
+      "5a4de4b640bbcc1a181ff379a9268f71"
+    ],
+    "max_score": 84,
+    "max_grade": "A",
+    "entities": [
+      "Ai编程",
+      "Anthropic",
+      "Claude Code"
+    ]
+  },
+  {
+    "group_id": "593c4377",
+    "event_title": "OpenAI因危险对话向FBI报告用户",
+    "first_seen_at": "2026-08-14T05:08:06.061796",
+    "last_seen_at": "2026-08-14T23:18:42",
+    "news_ids": [
+      "660ebaccd4b9f2dc6baf8400ccc1ccda",
+      "6dd33f6e49951721a282eeee1b80b374"
+    ],
+    "max_score": 84,
+    "max_grade": "A",
+    "entities": [
+      "Fbi",
+      "GPT",
+      "OpenAI",
+      "固件",
+      "网络安全"
     ]
   },
   {
@@ -1855,29 +1931,30 @@
     ]
   },
   {
-    "group_id": "273933b2",
-    "event_title": "Claude Code使用方法继续产品化",
-    "first_seen_at": "2026-08-15T04:37:59",
-    "last_seen_at": "2026-08-15T04:37:59",
+    "group_id": "9fd2ce0c",
+    "event_title": "Greg Brockman深度介入OpenAI管理",
+    "first_seen_at": "2026-08-14T22:15:01",
+    "last_seen_at": "2026-08-14T22:15:01",
     "news_ids": [
-      "3c873aced338bb207a496d1f6eaf903c"
+      "e6018d72f22397d8e182e69c573fd3c8"
     ],
     "max_score": 84,
     "max_grade": "A",
     "entities": [
-      "Ai编程",
-      "Anthropic",
-      "Claude Code"
+      "Greg Brockman",
+      "OpenAI",
+      "Sam Altman"
     ]
   },
   {
     "group_id": "56bfaeeb",
     "event_title": "通义千问新开源模型继续追赶",
-    "first_seen_at": "2026-08-15T01:01:54",
-    "last_seen_at": "2026-08-15T09:01:43.200768",
+    "first_seen_at": "2026-08-15T00:12:11",
+    "last_seen_at": "2026-08-15T09:01:43.341609",
     "news_ids": [
       "4f0a729da81f0bd2a43918662cd2349d",
-      "c3cd2443d2e707e0d420bebae6b050c4"
+      "c3cd2443d2e707e0d420bebae6b050c4",
+      "26b974122df479b9e472df161c6ba092"
     ],
     "max_score": 83,
     "max_grade": "A",
@@ -1984,23 +2061,6 @@
       "Anthropic",
       "Bernie Sanders",
       "OpenAI"
-    ]
-  },
-  {
-    "group_id": "593c4377",
-    "event_title": "OpenAI网络模型被称破解加密硬件固件",
-    "first_seen_at": "2026-08-14T05:08:06.061796",
-    "last_seen_at": "2026-08-14T05:08:06.061796",
-    "news_ids": [
-      "6dd33f6e49951721a282eeee1b80b374"
-    ],
-    "max_score": 83,
-    "max_grade": "A",
-    "entities": [
-      "GPT",
-      "OpenAI",
-      "固件",
-      "网络安全"
     ]
   },
   {
@@ -2233,6 +2293,22 @@
     ]
   },
   {
+    "group_id": "87cc9f30",
+    "event_title": "苹果提出外部购买抽佣新方案",
+    "first_seen_at": "2026-08-14T22:54:48",
+    "last_seen_at": "2026-08-14T22:54:48",
+    "news_ids": [
+      "b0d916e8f1e73136913d2a9656cf6de8"
+    ],
+    "max_score": 82,
+    "max_grade": "A",
+    "entities": [
+      "App Store",
+      "Apple",
+      "Epic Games"
+    ]
+  },
+  {
     "group_id": "1bf34ed9",
     "event_title": "研究称读者不知作者身份时更偏爱机器短篇小说",
     "first_seen_at": "2026-08-09T05:06:19.817038",
@@ -2402,8 +2478,8 @@
   {
     "group_id": "07c5cc3f",
     "event_title": "中国四足机器人走红海外",
-    "first_seen_at": "2026-08-15T04:59:03",
-    "last_seen_at": "2026-08-15T04:59:03",
+    "first_seen_at": "2026-08-15T09:01:43.340122",
+    "last_seen_at": "2026-08-15T09:01:43.340122",
     "news_ids": [
       "cadc08d0bbbdbbef8e20f4fdf9995895"
     ],
@@ -2418,8 +2494,8 @@
   {
     "group_id": "1682bd2b",
     "event_title": "LLM生成GPU内核有了验证器",
-    "first_seen_at": "2026-08-15T00:57:14",
-    "last_seen_at": "2026-08-15T00:57:14",
+    "first_seen_at": "2026-08-15T09:01:43.341446",
+    "last_seen_at": "2026-08-15T09:01:43.341446",
     "news_ids": [
       "7b488677622d59aeb11263e8ae7d97a2"
     ],
@@ -2430,6 +2506,22 @@
       "Gpu",
       "LLM",
       "形式化验证"
+    ]
+  },
+  {
+    "group_id": "93a62c83",
+    "event_title": "苹果地图广告进入预订阶段",
+    "first_seen_at": "2026-08-15T00:45:02",
+    "last_seen_at": "2026-08-15T00:45:02",
+    "news_ids": [
+      "f56281859ec459d60c03b467bd49ac44"
+    ],
+    "max_score": 80,
+    "max_grade": "A",
+    "entities": [
+      "Apple",
+      "Apple Maps",
+      "广告"
     ]
   },
   {
@@ -3160,8 +3252,8 @@
   {
     "group_id": "d8835afb",
     "event_title": "天文学家发现黑洞星候选",
-    "first_seen_at": "2026-08-15T03:40:00",
-    "last_seen_at": "2026-08-15T03:40:00",
+    "first_seen_at": "2026-08-15T09:01:43.340868",
+    "last_seen_at": "2026-08-15T09:01:43.340868",
     "news_ids": [
       "5a1fc58999e2eb981e3f2066929d32fa"
     ],
@@ -3187,6 +3279,22 @@
       "Apple",
       "Iphone",
       "Pegatron"
+    ]
+  },
+  {
+    "group_id": "c31418cb",
+    "event_title": "科技巨头投资收益推高利润",
+    "first_seen_at": "2026-08-14T23:30:00",
+    "last_seen_at": "2026-08-14T23:30:00",
+    "news_ids": [
+      "6e104439447176c333059bfb6e0e844d"
+    ],
+    "max_score": 72,
+    "max_grade": "B",
+    "entities": [
+      "Alphabet",
+      "Amazon",
+      "投资收益"
     ]
   },
   {
@@ -3354,8 +3462,8 @@
   {
     "group_id": "ca26cbf7",
     "event_title": "开发者社区涌现新AI工具",
-    "first_seen_at": "2026-08-15T03:28:17",
-    "last_seen_at": "2026-08-15T03:28:17",
+    "first_seen_at": "2026-08-15T09:01:43.340464",
+    "last_seen_at": "2026-08-15T09:01:43.340464",
     "news_ids": [
       "2a8e0e2c0d1019cbb56b92d911e9057e"
     ],
