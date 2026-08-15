@@ -2,6 +2,479 @@
   "news": {
     "2026-08-14": [
       {
+        "id": "8a19c14d279b7f1500f714b616936d2f",
+        "title": "Claude文本水印机制浮出水面",
+        "chinese_title": "Claude文本水印机制浮出水面",
+        "original_title": "sounds like Anthropic’s watermarking is MUCH more interesting than hiding invisible Unicode, as most people assumed. the watermark is baked into the ...",
+        "summary": "Anthropic披露Claude文本水印与检测接口，水印嵌入采样过程而非简单隐藏字符，第三方检测和内容溯源将成为模型治理的新战场。",
+        "rating": "S",
+        "score": 92,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸比较OpenAI、Google等厂商的AI内容标识方案，并观察平台、媒体和监管机构是否采用统一检测标准。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "DeepMind",
+          "Synthid"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/elder_plinius/status/2088410519766278488"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786755703,
+        "published_at": "2026-08-15T09:01:43.199923",
+        "source": "x",
+        "url": "https://x.com/elder_plinius/status/2088410519766278488",
+        "event_id": null
+      },
+      {
+        "id": "65bdc07a1c13600aa09fcb004755c978",
+        "title": "Anthropic单季收入暴增十四倍",
+        "chinese_title": "Anthropic单季收入暴增十四倍",
+        "original_title": "BREAKING: Anthropic revenue more than DOUBLED in one quarter - Q2 revenue hit over $11.5 billion (Q1 $4.73 billion) - 14x YoY growth First quarter wit...",
+        "summary": "投资文件显示Anthropic二季度收入同比大幅增长，并首次出现调整后经营利润，Claude商业化速度继续超出市场预期。",
+        "rating": "S",
+        "score": 96,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可追踪企业客户、API价格战和二级市场估值变化，判断AI模型公司收入质量是否足以支撑高估值。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Dario Amodei"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/ns123abc/status/2088382443396931694"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786755703,
+        "published_at": "2026-08-15T09:01:43.200028",
+        "source": "x",
+        "url": "https://x.com/ns123abc/status/2088382443396931694",
+        "event_id": null
+      },
+      {
+        "id": "cd3762c5ba67aa1ea091c38983c12504",
+        "title": "DeepSeek智能体插件架构受关注",
+        "chinese_title": "DeepSeek智能体插件架构受关注",
+        "original_title": "Had a look at Cordis, the theory behind DeepSeek Harness's plugin architecture. Quick thoughts: It's basically a theory that, as long as you follow a ...",
+        "summary": "DeepSeek Harness背后的Cordis理论强调组件契约和可移除性，为自演化智能体系统提供更可控的插件架构思路。",
+        "rating": "A+",
+        "score": 90,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸比较Claude Code、Cursor等智能体工具的插件体系，观察开源社区是否形成新的工程范式。",
+        "entities": [
+          "Cordis",
+          "DeepSeek",
+          "Deepseek Harness"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/zhengyaojiang/status/2088362370213216260"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786755703,
+        "published_at": "2026-08-15T09:01:43.200116",
+        "source": "x",
+        "url": "https://x.com/zhengyaojiang/status/2088362370213216260",
+        "event_id": null
+      },
+      {
+        "id": "de8d6b3ac935bc06d38e12dea426b521",
+        "title": "Anthropic内部模型能力再引关注",
+        "chinese_title": "Anthropic内部模型能力再引关注",
+        "original_title": "RSI is near. Anthropic tested an unreleased ‘Model 2’ on CoBench v2. CoBench tests a model’s ability to solve historical AI R&D tasks that Anthropi...",
+        "summary": "多方信息提到Anthropic测试更强内部模型，在AI研发任务基准上领先现有版本，但公司暂无公开发布计划。",
+        "rating": "A+",
+        "score": 91,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可继续跟踪AI研发自动化基准的可信度，以及内部模型不发布对Claude路线图和安全策略的影响。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Cobench",
+          "Mythos"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/daniel_mac8/status/2088344245178716175"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786755703,
+        "published_at": "2026-08-15T09:01:43.200200",
+        "source": "x",
+        "url": "https://x.com/daniel_mac8/status/2088344245178716175",
+        "event_id": null
+      },
+      {
+        "id": "53a2b58e37b43b0a19c773c5327b68b5",
+        "title": "Anthropic上调模型失控风险评估",
+        "chinese_title": "Anthropic上调模型失控风险评估",
+        "original_title": "As part of our Responsible Scaling Policy, we publish regular Risk Reports. These share detailed information on the risks of our systems and how prepa...",
+        "summary": "Anthropic发布新一期风险报告，披露更强内部模型和失配风险判断，显示前沿模型发布节奏正在受到安全框架约束。",
+        "rating": "S",
+        "score": 93,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸关注RSP门槛如何影响Claude新品发布，以及投资人和监管方是否要求更多第三方审计。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Responsible Scaling Policy"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/AnthropicAI/status/2088324824863236248"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786755703,
+        "published_at": "2026-08-15T09:01:43.200444",
+        "source": "x",
+        "url": "https://x.com/AnthropicAI/status/2088324824863236248",
+        "event_id": null
+      },
+      {
+        "id": "de315ea0efecc469eb40be098efe9154",
+        "title": "DeepSeek智能体团队扩招",
+        "chinese_title": "DeepSeek智能体团队扩招",
+        "original_title": "如果你人在杭州或周边，想给 DeepSeek Harness 组投简历看机会，请联系我。 DeepSeek Harness 组招聘深度学习研究员、研发工程师、产品经理、设计师、开发者关系...",
+        "summary": "DeepSeek Harness团队在杭州招聘研究、工程、产品和社区岗位，显示其插件化智能体框架正在进入更大规模研发阶段。",
+        "rating": "A",
+        "score": 82,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "可追踪DeepSeek在智能体基础设施上的投入，以及国内大模型团队围绕开发者生态的竞争。",
+        "entities": [
+          "Cordis",
+          "DeepSeek",
+          "Deepseek Harness"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/tianyi/status/2088304053193421218"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786755703,
+        "published_at": "2026-08-15T09:01:43.200524",
+        "source": "x",
+        "url": "https://x.com/tianyi/status/2088304053193421218",
+        "event_id": null
+      },
+      {
+        "id": "0dad6bee4e7a14138fa58f1b42829b90",
+        "title": "智谱GLM新模型强化网络安全能力",
+        "chinese_title": "智谱GLM新模型强化网络安全能力",
+        "original_title": "We received GLM-5.3 in advance to evaluate its cyber capabilities. It's very strong, precise, and the most consistent OSS model for cyber tasks. Here ...",
+        "summary": "GLM-5.3在网络安全评测中表现突出，部分结果显示其漏洞发现能力接近或超过闭源模型，但敏感能力开放仍受限制。",
+        "rating": "S",
+        "score": 98,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可追踪开源模型在安全攻防任务上的能力边界，以及厂商如何平衡商业化、开源和滥用风险。",
+        "entities": [
+          "Cursor",
+          "Cybergym",
+          "Glm",
+          "智谱"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/pilvar222/status/2088293371861217319"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786755703,
+        "published_at": "2026-08-15T09:01:43.200687",
+        "source": "x",
+        "url": "https://x.com/pilvar222/status/2088293371861217319",
+        "event_id": null
+      },
+      {
+        "id": "4f0a729da81f0bd2a43918662cd2349d",
+        "title": "通义千问新开源模型继续追赶",
+        "chinese_title": "通义千问新开源模型继续追赶",
+        "original_title": "Qwen 3.8 27B weights and benchmarks are now out This thing in full precision would fit on a single RTX PRO 6000 and beats Opus 4.6 Max in several benc...",
+        "summary": "阿里Qwen团队发布新一代开源权重，强调更强基准表现和本地部署效率，开源模型竞争继续向高性能小模型推进。",
+        "rating": "A",
+        "score": 83,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸比较Qwen、GLM、Llama等开源模型路线，并观察本地AI应用和国产算力生态的受益情况。",
+        "entities": [
+          "Alibaba",
+          "Apache 2.0",
+          "Qwen"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/TheAhmadOsman/status/2088280636658270284"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786755703,
+        "published_at": "2026-08-15T09:01:43.200768",
+        "source": "x",
+        "url": "https://x.com/TheAhmadOsman/status/2088280636658270284",
+        "event_id": null
+      },
+      {
+        "id": "7e15453ab7ea7552ea28a4d6c8f5f7c2",
+        "title": "Thrive早期基金押中AI巨头",
+        "chinese_title": "Thrive早期基金押中AI巨头",
+        "original_title": "OpenAI is falling apart right now. 9 of their most important leaders have left the company recently, and Altman is about to ask the public to buy the ...",
+        "summary": "投资人信披显示Thrive早期基金因OpenAI、Cursor和SpaceX等项目大幅增值，AI明星公司的财富效应继续外溢。",
+        "rating": "A+",
+        "score": 89,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延伸观察AI二级交易、员工套现和新基金募资，判断资本市场是否仍愿意为头部AI资产加价。",
+        "entities": [
+          "Cursor",
+          "OpenAI",
+          "SpaceX",
+          "Thrive Capital"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Ric_RTP/status/2088261230054060274"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786755703,
+        "published_at": "2026-08-15T09:01:43.200930",
+        "source": "x",
+        "url": "https://x.com/Ric_RTP/status/2088261230054060274",
+        "event_id": null
+      },
+      {
+        "id": "1b3b47a4fdc28cf36c289fb9ff022aee",
+        "title": "SpaceX完成收购Cursor",
+        "chinese_title": "SpaceX完成收购Cursor",
+        "original_title": "RT Cursor: Cursor is now part of @SpaceX. Today, we have officially closed our acquisition. We will join the @SpaceXAI team to help make Grok the worl...",
+        "summary": "Cursor宣布加入SpaceX相关AI团队，交易规模被报道高达600亿美元，AI编程工具与大型科技集团的整合进入新阶段。",
+        "rating": "S",
+        "score": 100,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可关注AI编程入口被平台巨头收编后的产品独立性、开发者迁移和企业级工具格局变化。",
+        "entities": [
+          "Cursor",
+          "Grok",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Phil_Holland/status/2088256945895432212"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786755703,
+        "published_at": "2026-08-15T09:01:43.201010",
+        "source": "x",
+        "url": "https://x.com/Phil_Holland/status/2088256945895432212",
+        "event_id": null
+      },
+      {
+        "id": "99cf57710e8ab02c55a2acc23d27f9a4",
+        "title": "Anthropic研究者用内部模型解决Hadamard矩阵问题",
+        "chinese_title": "Anthropic研究者用内部模型解决Hadamard矩阵问题",
+        "original_title": "Solution to Hadamard Matrix of Order 668 found by Anthropic Researcher using their internal model",
+        "summary": "Reddit转述称Anthropic研究者借内部模型解决668阶Hadamard矩阵问题，若有论文或代码跟进，将成为AI辅助数学研究的可观察案例。",
+        "rating": "A",
+        "score": 78,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可从方法细节、同行复现和产业转化路径展开，确认这项进展是否具备持续报道价值。",
+        "entities": [
+          "Ai数学",
+          "Anthropic",
+          "Hadamard Matrix",
+          "研究模型"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1vn87tq/solution_to_hadamard_matrix_of_order_668_found_by/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786655308,
+        "published_at": "2026-08-14T05:08:28.920894",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1vn87tq/solution_to_hadamard_matrix_of_order_668_found_by/",
+        "event_id": null
+      },
+      {
+        "id": "f24c0c5b5c4715aea2ae206a909e9427",
+        "title": "Anthropic上市估值预期冲向两万亿美元",
+        "chinese_title": "Anthropic上市估值预期冲向两万亿美元",
+        "original_title": "Anthropic could be worth $2 trillion when it goes public",
+        "summary": "投资人预期Anthropic上市估值可能达到两万亿美元级别，若成真将重塑AI公司资本市场基准，也会加剧收入、算力和利润兑现压力。",
+        "rating": "A+",
+        "score": 88,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延伸到收入兑现、资本开支和估值重定价，观察同类公司融资与二级市场预期是否跟随变化。",
+        "entities": [
+          "Ai估值",
+          "Anthropic",
+          "Ipo"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI – Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786655308,
+        "published_at": "2026-08-14T05:08:28.920980",
+        "source": "AI – Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/",
+        "event_id": null
+      },
+      {
+        "id": "2f791a31f0f13844772c8a9d579397ac",
+        "title": "长鑫存储上市后市值一度超过腾讯",
+        "chinese_title": "长鑫存储上市后市值一度超过腾讯",
+        "original_title": "Memory maker CXMT overtakes Tencent to become China's most valuable company 17 days after its IPO &mdash; now worth $524 billion",
+        "summary": "长鑫存储在IPO后17天市值被称升至5240亿美元并超过腾讯，若数据持续成立，将成为中国半导体资本叙事的重要转折。",
+        "rating": "A+",
+        "score": 91,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延伸到收入兑现、资本开支和估值重定价，观察同类公司融资与二级市场预期是否跟随变化。",
+        "entities": [
+          "Cxmt",
+          "Ipo",
+          "Tencent",
+          "半导体"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/cxmt-overtakes-tencent-to-become-chinas-most-valuable-company-17-days-after-its-ipo"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786655308,
+        "published_at": "2026-08-14T05:08:28.921581",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/cxmt-overtakes-tencent-to-become-chinas-most-valuable-company-17-days-after-its-ipo",
+        "event_id": null
+      },
+      {
+        "id": "67961521a6b1083585e01bd34c1c3a0a",
+        "title": "Writer发布Palmyra X6称智能体成本降五成",
+        "chinese_title": "Writer发布Palmyra X6称智能体成本降五成",
+        "original_title": "Writer says its new Palmyra X6 model cuts AI agent costs by 52% as token spending surges",
+        "summary": "企业AI平台Writer推出Palmyra X6，称可将AI智能体成本降低52%，显示企业模型竞争正围绕agent开销和token效率展开。",
+        "rating": "A+",
+        "score": 90,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可继续追踪官方公告、竞品回应、价格变化和实际用户反馈，判断它是否会演化成更大的行业趋势。",
+        "entities": [
+          "Ai Agent",
+          "Palmyra",
+          "Writer",
+          "企业Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat (deepseek)",
+            "url": "https://venturebeat.com/orchestration/writer-says-its-new-palmyra-x6-model-cuts-ai-agent-costs-by-52-as-token-spending-surges"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786655308,
+        "published_at": "2026-08-14T05:08:28.921833",
+        "source": "VentureBeat (deepseek)",
+        "url": "https://venturebeat.com/orchestration/writer-says-its-new-palmyra-x6-model-cuts-ai-agent-costs-by-52-as-token-spending-surges",
+        "event_id": null
+      },
+      {
+        "id": "940c8e159199a6a62f7e43d6665ac1c4",
+        "title": "旧Slack线程和工单成AI智能体训练新资产",
+        "chinese_title": "旧Slack线程和工单成AI智能体训练新资产",
+        "original_title": "Startups Find Old Slack Threads, IT Tickets Are Suddenly in High Demand",
+        "summary": "AI智能体创业公司开始争抢旧Slack线程、IT工单等企业知识资产，说明真实工作流数据正在成为代理产品差异化的关键原料。",
+        "rating": "A+",
+        "score": 88,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可继续追踪官方公告、竞品回应、价格变化和实际用户反馈，判断它是否会演化成更大的行业趋势。",
+        "entities": [
+          "Ai Agent",
+          "Hubspot",
+          "Slack",
+          "企业数据"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/startups-find-old-slack-threads-tickets-suddenly-high-demand"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786655308,
+        "published_at": "2026-08-14T05:08:28.921916",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/startups-find-old-slack-threads-tickets-suddenly-high-demand",
+        "event_id": null
+      },
+      {
+        "id": "1eb57c588a0ce48189008f62d1377fb7",
+        "title": "白帽黑客演示隐蔽接管波音737自动驾驶",
+        "chinese_title": "白帽黑客演示隐蔽接管波音737自动驾驶",
+        "original_title": "Hackers Created a Device That Can Take Over a Boeing 737 Jet’s Autopilot Without Anyone Noticing",
+        "summary": "白帽团队展示设备可在不被察觉的情况下接管波音737自动驾驶系统，事件凸显航空电子设备和关键基础设施的安全验证压力。",
+        "rating": "A+",
+        "score": 87,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可跟进技术复现、企业修复动作和监管回应，判断这一风险是否会影响智能体或关键系统部署。",
+        "entities": [
+          "Boeing 737",
+          "白帽黑客",
+          "自动驾驶",
+          "航空安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/hackers-device-takeover-plane-autopilot"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786655308,
+        "published_at": "2026-08-14T05:08:28.922176",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/hackers-device-takeover-plane-autopilot",
+        "event_id": null
+      },
+      {
         "id": "676920aee8a5ef67f413a3a808068fec",
         "title": "学生用AI智能体直接代上网课引发作弊争议",
         "chinese_title": "学生用AI智能体直接代上网课引发作弊争议",
@@ -1374,185 +1847,6 @@
       }
     ],
     "2026-08-13": [
-      {
-        "id": "99cf57710e8ab02c55a2acc23d27f9a4",
-        "title": "Anthropic研究者用内部模型解决Hadamard矩阵问题",
-        "chinese_title": "Anthropic研究者用内部模型解决Hadamard矩阵问题",
-        "original_title": "Solution to Hadamard Matrix of Order 668 found by Anthropic Researcher using their internal model",
-        "summary": "Reddit转述称Anthropic研究者借内部模型解决668阶Hadamard矩阵问题，若有论文或代码跟进，将成为AI辅助数学研究的可观察案例。",
-        "rating": "A",
-        "score": 78,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可从方法细节、同行复现和产业转化路径展开，确认这项进展是否具备持续报道价值。",
-        "entities": [
-          "Ai数学",
-          "Anthropic",
-          "Hadamard Matrix",
-          "研究模型"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1vn87tq/solution_to_hadamard_matrix_of_order_668_found_by/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786655308,
-        "published_at": "2026-08-14T05:08:28.920894",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1vn87tq/solution_to_hadamard_matrix_of_order_668_found_by/",
-        "event_id": null
-      },
-      {
-        "id": "f24c0c5b5c4715aea2ae206a909e9427",
-        "title": "Anthropic上市估值预期冲向两万亿美元",
-        "chinese_title": "Anthropic上市估值预期冲向两万亿美元",
-        "original_title": "Anthropic could be worth $2 trillion when it goes public",
-        "summary": "投资人预期Anthropic上市估值可能达到两万亿美元级别，若成真将重塑AI公司资本市场基准，也会加剧收入、算力和利润兑现压力。",
-        "rating": "A+",
-        "score": 88,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "可延伸到收入兑现、资本开支和估值重定价，观察同类公司融资与二级市场预期是否跟随变化。",
-        "entities": [
-          "Ai估值",
-          "Anthropic",
-          "Ipo"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786655308,
-        "published_at": "2026-08-14T05:08:28.920980",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/",
-        "event_id": null
-      },
-      {
-        "id": "2f791a31f0f13844772c8a9d579397ac",
-        "title": "长鑫存储上市后市值一度超过腾讯",
-        "chinese_title": "长鑫存储上市后市值一度超过腾讯",
-        "original_title": "Memory maker CXMT overtakes Tencent to become China's most valuable company 17 days after its IPO &mdash; now worth $524 billion",
-        "summary": "长鑫存储在IPO后17天市值被称升至5240亿美元并超过腾讯，若数据持续成立，将成为中国半导体资本叙事的重要转折。",
-        "rating": "A+",
-        "score": 91,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可延伸到收入兑现、资本开支和估值重定价，观察同类公司融资与二级市场预期是否跟随变化。",
-        "entities": [
-          "Cxmt",
-          "Ipo",
-          "Tencent",
-          "半导体"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/cxmt-overtakes-tencent-to-become-chinas-most-valuable-company-17-days-after-its-ipo"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786655308,
-        "published_at": "2026-08-14T05:08:28.921581",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/cxmt-overtakes-tencent-to-become-chinas-most-valuable-company-17-days-after-its-ipo",
-        "event_id": null
-      },
-      {
-        "id": "67961521a6b1083585e01bd34c1c3a0a",
-        "title": "Writer发布Palmyra X6称智能体成本降五成",
-        "chinese_title": "Writer发布Palmyra X6称智能体成本降五成",
-        "original_title": "Writer says its new Palmyra X6 model cuts AI agent costs by 52% as token spending surges",
-        "summary": "企业AI平台Writer推出Palmyra X6，称可将AI智能体成本降低52%，显示企业模型竞争正围绕agent开销和token效率展开。",
-        "rating": "A+",
-        "score": 90,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可继续追踪官方公告、竞品回应、价格变化和实际用户反馈，判断它是否会演化成更大的行业趋势。",
-        "entities": [
-          "Ai Agent",
-          "Palmyra",
-          "Writer",
-          "企业Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat (deepseek)",
-            "url": "https://venturebeat.com/orchestration/writer-says-its-new-palmyra-x6-model-cuts-ai-agent-costs-by-52-as-token-spending-surges"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786655308,
-        "published_at": "2026-08-14T05:08:28.921833",
-        "source": "VentureBeat (deepseek)",
-        "url": "https://venturebeat.com/orchestration/writer-says-its-new-palmyra-x6-model-cuts-ai-agent-costs-by-52-as-token-spending-surges",
-        "event_id": null
-      },
-      {
-        "id": "940c8e159199a6a62f7e43d6665ac1c4",
-        "title": "旧Slack线程和工单成AI智能体训练新资产",
-        "chinese_title": "旧Slack线程和工单成AI智能体训练新资产",
-        "original_title": "Startups Find Old Slack Threads, IT Tickets Are Suddenly in High Demand",
-        "summary": "AI智能体创业公司开始争抢旧Slack线程、IT工单等企业知识资产，说明真实工作流数据正在成为代理产品差异化的关键原料。",
-        "rating": "A+",
-        "score": 88,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可继续追踪官方公告、竞品回应、价格变化和实际用户反馈，判断它是否会演化成更大的行业趋势。",
-        "entities": [
-          "Ai Agent",
-          "Hubspot",
-          "Slack",
-          "企业数据"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/startups-find-old-slack-threads-tickets-suddenly-high-demand"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786655308,
-        "published_at": "2026-08-14T05:08:28.921916",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/startups-find-old-slack-threads-tickets-suddenly-high-demand",
-        "event_id": null
-      },
-      {
-        "id": "1eb57c588a0ce48189008f62d1377fb7",
-        "title": "白帽黑客演示隐蔽接管波音737自动驾驶",
-        "chinese_title": "白帽黑客演示隐蔽接管波音737自动驾驶",
-        "original_title": "Hackers Created a Device That Can Take Over a Boeing 737 Jet’s Autopilot Without Anyone Noticing",
-        "summary": "白帽团队展示设备可在不被察觉的情况下接管波音737自动驾驶系统，事件凸显航空电子设备和关键基础设施的安全验证压力。",
-        "rating": "A+",
-        "score": 87,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可跟进技术复现、企业修复动作和监管回应，判断这一风险是否会影响智能体或关键系统部署。",
-        "entities": [
-          "Boeing 737",
-          "白帽黑客",
-          "自动驾驶",
-          "航空安全"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/future-society/hackers-device-takeover-plane-autopilot"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786655308,
-        "published_at": "2026-08-14T05:08:28.922176",
-        "source": "Futurism",
-        "url": "https://futurism.com/future-society/hackers-device-takeover-plane-autopilot",
-        "event_id": null
-      },
       {
         "id": "6b638947b3f910153cfe7ca6bc316f6d",
         "title": "桑德斯警告AI巨头冲击就业",
@@ -6321,2372 +6615,38 @@
         "level": "A+"
       }
     ],
-    "2026-08-08": [
+    "2026-08-15": [
       {
-        "id": "9e34709d7245593bca4e7d34f7cf8410",
-        "title": "聊天机器人屡在危机中失控，行业开始重做心理安全防线",
-        "chinese_title": "聊天机器人屡在危机中失控，行业开始重做心理安全防线",
-        "original_title": "AI chatbots have failed people in crisis. Can that be fixed?",
-        "summary": "多起诉讼指向聊天机器人在自杀、精神病性体验等危机场景中给出危险回应，厂商和研究者正探索识别、转介与干预机制。",
-        "rating": "A+",
-        "score": 90,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "危机响应将成为模型安全的硬指标，并影响产品责任、未成年人保护、数据共享和专业医疗转介规则。",
-        "entities": [
-          "Ai聊天机器人",
-          "产品责任",
-          "危机干预",
-          "心理健康"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147671,
-        "published_at": "2026-08-08T08:07:51.015258",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "8c755502e78b14446e8aa0fd0b2a7959",
-        "title": "鲸与裸鼹鼠提示长寿关键，DNA修复机制成为新线索",
-        "chinese_title": "鲸与裸鼹鼠提示长寿关键，DNA修复机制成为新线索",
-        "original_title": "Briefing Chat: Is DNA repair the secret to a long life? Whales and mole rats offer tantalizing hints",
-        "summary": "动物研究显示，长寿物种可能通过更高效的DNA修复与损伤控制延缓衰老，为理解寿命差异和开发抗衰干预提供方向。",
-        "rating": "A",
-        "score": 82,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "后续需确认跨物种机制能否迁移到人体，并区分延长寿命与改善健康寿命的真实效果。",
-        "entities": [
-          "Dna修复",
-          "衰老",
-          "裸鼹鼠",
-          "鲸"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-02488-3"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147671,
-        "published_at": "2026-08-08T08:07:51.015437",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-02488-3",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "048bfa40f226bdeebaa2d4972bd01282",
-        "title": "字节跳动训练10万亿参数模型，向美国头部实验室逼近",
-        "chinese_title": "字节跳动训练10万亿参数模型，向美国头部实验室逼近",
-        "original_title": "ByteDance trains massive AI model in bid to rival Anthropic",
-        "summary": "消息称字节跳动正预训练最高约10万亿参数的新模型，规模约为Kimi K3三倍，试图缩小与Anthropic等美国实验室的差距。",
-        "rating": "A+",
-        "score": 89,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "超大规模路线将考验算力来源、训练效率和效果增益，也会影响中国模型公司的参数规模竞争。",
-        "entities": [
-          "Anthropic",
-          "ByteDance",
-          "Kimi",
-          "大语言模型"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147671,
-        "published_at": "2026-08-08T08:07:51.015687",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "231ac9413c99893e291a9cddcf4ecbc3",
-        "title": "Cloudflare推出AI代理专用浏览器，V8隔离替代完整Chromium",
-        "chinese_title": "Cloudflare推出AI代理专用浏览器，V8隔离替代完整Chromium",
-        "original_title": "Kitesurf: Agent-first browser that runs in V8 isolates",
-        "summary": "Cloudflare发布云端代理浏览器Kitesurf，以V8隔离环境执行网页任务，试图用更低计算开销和更强隔离支持大规模自动化。",
-        "rating": "A+",
-        "score": 88,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "代理浏览器将成为新基础设施层，后续需验证网页兼容性、反滥用、会话安全和与Chromium方案的成本差异。",
-        "entities": [
-          "Ai代理",
-          "Cloudflare",
-          "Kitesurf",
-          "V8",
-          "浏览器自动化"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://blog.cloudflare.com/kitesurf/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147671,
-        "published_at": "2026-08-08T08:07:51.015770",
-        "source": "Hacker News",
-        "url": "https://blog.cloudflare.com/kitesurf/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "0a2ba93b092cfd93f15b973b3064517d",
-        "title": "新奥尔良911引入AI接线，紧急呼叫自动化引发安全争议",
-        "chinese_title": "新奥尔良911引入AI接线，紧急呼叫自动化引发安全争议",
-        "original_title": "Better Hope You Don’t Need an Ambulance in New Orleans, Because the City’s 911 Operators Are Now AI",
-        "summary": "新奥尔良紧急通信机构开始使用Carbyne的AI呼叫分诊系统处理部分911来电，引发对误判、延迟和责任归属的担忧。",
-        "rating": "A+",
-        "score": 88,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "紧急服务属于高风险自动化场景，需要公开准确率、人工接管门槛和事故审计，并明确供应商责任。",
-        "entities": [
-          "911",
-          "Ai分诊",
-          "Carbyne",
-          "New Orleans"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/ai-dispatch-911-new-orleans-emergency-automation"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147671,
-        "published_at": "2026-08-08T08:07:51.016011",
-        "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/ai-dispatch-911-new-orleans-emergency-automation",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "f766a1da8d7fe21ee425e8335b7c7b0d",
-        "title": "直播电商Whatnot融资5.45亿美元，估值升至200亿美元",
-        "chinese_title": "直播电商Whatnot融资5.45亿美元，估值升至200亿美元",
-        "original_title": "Livestream shopping app Whatnot raised a $545M Series G led by Iconiq, Lightspeed, and Avra at a $20B valuation, up from an $11.5B valuation in October 2025 (Allie Garfinkle/Fortune)",
-        "summary": "Whatnot完成5.45亿美元G轮融资，估值从2025年10月的115亿美元升至200亿美元，显示直播电商资本热度延续。",
-        "rating": "A",
-        "score": 83,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "估值跃升将检验平台交易增长、主播经济和国际扩张，也会加剧与传统电商及短视频平台竞争。",
-        "entities": [
-          "Iconiq",
-          "Lightspeed",
-          "Whatnot",
-          "直播电商"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260807/p12#a260807p12"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147671,
-        "published_at": "2026-08-08T08:07:51.016332",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260807/p12#a260807p12",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "e85e09922b4614806c426d53b73495c3",
-        "title": "苹果短暂下架Telegram，却对X宽松，审核一致性遭质疑",
-        "chinese_title": "苹果短暂下架Telegram，却对X宽松，审核一致性遭质疑",
-        "original_title": "Why does Apple keep banning Telegram, but never X?",
-        "summary": "Telegram因平台出现儿童性虐待材料被苹果短暂下架并在清理后恢复，事件再次引发App Store对不同大型平台执法标准是否一致的争议。",
-        "rating": "A",
-        "score": 82,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "平台审核透明度会影响开发者信任，也可能推动监管机构要求统一规则、申诉机制和风险披露。",
-        "entities": [
-          "App Store",
-          "Apple",
-          "Telegram",
-          "X",
-          "内容审核"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts (apple)",
-            "url": "https://www.theverge.com/tech/976405/apple-telegram-ban-x-app-store-violations"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147671,
-        "published_at": "2026-08-08T08:07:51.016573",
-        "source": "The Verge -  Tech Posts (apple)",
-        "url": "https://www.theverge.com/tech/976405/apple-telegram-ban-x-app-store-violations",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "40e6e0b9690db48bc5de5879b797ca0c",
-        "title": "客服AI公司Omilia融资6700万美元，欧洲赛道继续升温",
-        "chinese_title": "客服AI公司Omilia融资6700万美元，欧洲赛道继续升温",
-        "original_title": "Athens-based Omilia, which builds self-learning AI agents that work across different customer contact points, raised a $67M Series B led by Expedition Growth (Ivan Mehta/TechCrunch)",
-        "summary": "雅典客服AI公司Omilia完成由Expedition Growth领投的6700万美元B轮融资，用于扩展跨电话和数字渠道的自学习客服代理。",
-        "rating": "B",
-        "score": 77,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "客服代理竞争将从演示转向解决率、合规和人类升级机制，融资也会加速欧洲市场整合。",
-        "entities": [
-          "Ai代理",
-          "Expedition Growth",
-          "Omilia",
-          "客服Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260807/p11#a260807p11"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147671,
-        "published_at": "2026-08-08T08:07:51.016655",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260807/p11#a260807p11",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "48f201810cd647eee976990a9fdef6ad",
-        "title": "美国审查中国AI海外租用英伟达芯片，管制或延伸至算力服务",
-        "chinese_title": "美国审查中国AI海外租用英伟达芯片，管制或延伸至算力服务",
-        "original_title": "Sources: the US Commerce Department's BIS is reviewing how Chinese AI companies access Nvidia chips overseas, including by legally renting foreign data centers (Mackenzie Hawkins/Bloomberg)",
-        "summary": "消息称美国商务部工业与安全局正在审查中国AI公司通过合法租用海外数据中心使用英伟达芯片的路径。",
+        "id": "07a119f388bce0b4599048a7c1c6971e",
+        "title": "英伟达拟为OpenAI数据中心担保",
+        "chinese_title": "英伟达拟为OpenAI数据中心担保",
+        "original_title": "Nvidia Nears Deal To Guarantee About $100 Billion In Financing For Massive Data Center",
+        "summary": "英伟达据称调整对OpenAI俄亥俄数据中心的融资支持，先担保一半规模，凸显AI算力建设的资本压力。",
         "rating": "S",
-        "score": 94,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "若监管从芯片出口扩大到海外算力租赁，将重塑云服务合规、地域验证和中国实验室的训练成本。",
-        "entities": [
-          "Bis",
-          "NVIDIA",
-          "中国Ai公司",
-          "数据中心",
-          "美国商务部"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260807/p10#a260807p10"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147671,
-        "published_at": "2026-08-08T08:07:51.016896",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260807/p10#a260807p10",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "383fa31b5c0958c05358e539fb77329c",
-        "title": "GPT降价九成后用量猛增十倍，杰文斯悖论照进AI",
-        "chinese_title": "GPT降价九成后用量猛增十倍，杰文斯悖论照进AI",
-        "original_title": "Jevons paradox in action: GPT-5.6 Luna has 10x'd in token volume since its price on OpenRouter dropped by a factor of 10. The week isn't over, so we'r...",
-        "summary": "OpenRouter数据显示，GPT-5.6 Luna价格下降约九成后，平台Token用量增长超过十倍，低价推理释放出显著的新需求。",
-        "rating": "A",
-        "score": 83,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "价格弹性将影响模型厂商的定价、算力采购和免费额度，也可能加速推理侧规模经济形成。",
-        "entities": [
-          "GPT",
-          "Openrouter",
-          "推理成本",
-          "杰文斯悖论"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/OpenRouter/status/2085756417353412922"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.615324",
-        "source": "x",
-        "url": "https://x.com/OpenRouter/status/2085756417353412922",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "0feb7d7b61d2cbc21f50f7bd0b1e1281",
-        "title": "Meta发布Muse代码模型，竞技场排名冲至第四",
-        "chinese_title": "Meta发布Muse代码模型，竞技场排名冲至第四",
-        "original_title": "Exciting news: Muse Spark 1.2 (xHigh) by @AIatMeta is #4 in the Text Arena (1498 pts), and has reshaped the Pareto frontier! It is priced at $1.25/$4....",
-        "summary": "Meta推出面向长周期软件工程的Muse Spark模型及Muse Code终端代理，新模型在Text Arena取得1498分并进入前四。",
-        "rating": "A+",
-        "score": 87,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "需进一步比较真实代码仓库成功率、长任务稳定性和价格，判断其能否挑战Claude Code等开发工具。",
-        "entities": [
-          "Meta",
-          "Muse",
-          "Text Arena",
-          "代码代理"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/arena/status/2085747583767527528"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.615411",
-        "source": "x",
-        "url": "https://x.com/arena/status/2085747583767527528",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "e64aa7e20682094bde35c6ba7cca84f9",
-        "title": "AI代理争抢算力，亚马逊开始清查工程师闲置CPU",
-        "chinese_title": "AI代理争抢算力，亚马逊开始清查工程师闲置CPU",
-        "original_title": "Amazon cracks down on 'CPU waste' among engineers as agentic AI crunch intensifies &mdash; CPU demand makes low-utilization EC2 instances a hot commodity [Updated]",
-        "summary": "随着代理式AI推高内部CPU需求，亚马逊要求工程团队减少低利用率EC2实例，把闲置计算资源重新分配给高优先级负载。",
-        "rating": "A",
-        "score": 84,
+        "score": 97,
         "type": "hardware",
         "typeName": "硬件基建",
-        "expansion": "内部资源治理反映推理需求从GPU向通用CPU外溢，也会影响云成本、容量规划和工程效率指标。",
+        "expansion": "可延伸跟踪GPU厂商从卖芯片转向融资绑定客户，以及数据中心债务风险对AI扩张节奏的影响。",
         "entities": [
-          "Ai代理",
-          "Amazon",
-          "Aws",
-          "Cpu",
-          "Ec2"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/pc-components/cpus/amazon-cracks-down-on-cpu-waste-among-engineers-as-agentic-ai-crunch-intensifies-cpu-demand-makes-low-utilization-ec2-instances-a-hot-commodity"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.616676",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/pc-components/cpus/amazon-cracks-down-on-cpu-waste-among-engineers-as-agentic-ai-crunch-intensifies-cpu-demand-makes-low-utilization-ec2-instances-a-hot-commodity",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "bea421fc88016edb469d7cbc401793f8",
-        "title": "通用肺炎球菌疫苗迈向现实，有望覆盖更多危险菌株",
-        "chinese_title": "通用肺炎球菌疫苗迈向现实，有望覆盖更多危险菌株",
-        "original_title": "Universal vaccine for pneumococcal disease moves closer to reality",
-        "summary": "研究人员推进新型通用肺炎球菌疫苗，希望突破现有疫苗覆盖菌株有限的问题，为高风险人群提供更广泛和持久的保护。",
-        "rating": "A+",
-        "score": 89,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若后续临床数据成立，将影响儿童和老年人免疫策略，也可能降低抗生素耐药相关疾病负担。",
-        "entities": [
-          "Nature",
-          "抗生素耐药",
-          "肺炎球菌",
-          "通用疫苗"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-02462-z"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.617044",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-02462-z",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "707f25642cbf177296c8279140c7c3b8",
-        "title": "月之暗面启动股份制改造，迈出香港IPO第一步",
-        "chinese_title": "月之暗面启动股份制改造，迈出香港IPO第一步",
-        "original_title": "Filings: Moonshot restructured its China-based entity from a limited liability company to a joint stock company in its first visible step toward a Hong Kong IPO (Financial Times)",
-        "summary": "工商文件显示，月之暗面已将境内主体由有限责任公司改制为股份有限公司，被视为筹备香港上市的首个可见步骤。",
-        "rating": "A",
-        "score": 84,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "若上市推进，将检验资本市场对中国大模型公司的估值，也会影响其融资、治理和算力投入节奏。",
-        "entities": [
-          "Kimi",
-          "月之暗面",
-          "香港Ipo"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260807/p33#a260807p33"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.615940",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260807/p33#a260807p33",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "d9d5c88a7fc271f9b6264f0963eeddb9",
-        "title": "OpenAI因网络攻击能力推迟Astra，首次触及最高风险线",
-        "chinese_title": "OpenAI因网络攻击能力推迟Astra，首次触及最高风险线",
-        "original_title": "OpenAI says it slowed Astra model development over security concerns",
-        "summary": "OpenAI称新模型Astra可能具备关键级网络攻击能力，因无法排除最高风险而扩大安全测试并放慢公开发布进度。",
-        "rating": "S",
-        "score": 95,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "这是前沿模型发布首次明显受最高网络风险门槛约束，将影响安全评估、分级开放和监管披露标准。",
-        "entities": [
-          "Astra",
+          "NVIDIA",
           "OpenAI",
-          "前沿模型",
-          "网络安全"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.616208",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "263c292e5b422915a68a94311739c5b8",
-        "title": "AI芯片制造工具公司获5亿美元押注，瞄准新型晶圆厂",
-        "chinese_title": "AI芯片制造工具公司获5亿美元押注，瞄准新型晶圆厂",
-        "original_title": "Sources: Situational Awareness invested $500M, including $400M this week, into Source Foundry, a startup that plans to develop new AI chip manufacturing tools (Wall Street Journal)",
-        "summary": "消息称Situational Awareness已向Source Foundry投入5亿美元，其中本周完成4亿美元，后者计划开发新一代AI芯片制造工具。",
-        "rating": "A+",
-        "score": 88,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "大额早期投入显示资本开始押注芯片制造设备新路线，后续需核查技术方案、客户和建厂资本需求。",
-        "entities": [
-          "Ai芯片",
-          "Situational Awareness",
-          "Source Foundry",
-          "半导体设备"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260807/p31#a260807p31"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.616304",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260807/p31#a260807p31",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "e3c1460039eb1a839a8b4cf6a761a9bd",
-        "title": "数据中心巨头Switch秘密递表，最早11月重返美股",
-        "chinese_title": "数据中心巨头Switch秘密递表，最早11月重返美股",
-        "original_title": "Sources: data center operator Switch filed confidentially for a US IPO, and a listing could take place as soon as November; Ben Horowitz is joining its board (Bailey Lipschultz/Bloomberg)",
-        "summary": "消息称数据中心运营商Switch已秘密提交美国IPO申请，最早可能在11月上市，Ben Horowitz也将加入董事会。",
-        "rating": "A",
-        "score": 83,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "上市窗口可反映资本市场对AI数据中心资产的估值，也需关注负债、电力合同和客户集中度。",
-        "entities": [
-          "Ben Horowitz",
-          "Ipo",
-          "Switch",
           "数据中心"
         ],
         "sourceLinks": [
           {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260807/p29#a260807p29"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.616394",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260807/p29#a260807p29",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "d37214a2ad0c74280ca73942549249bc",
-        "title": "四个AI代理实时协作，企业编程任务胜过单体Claude",
-        "chinese_title": "四个AI代理实时协作，企业编程任务胜过单体Claude",
-        "original_title": "Four AI agents coordinating in real time outperformed Claude Opus 4.8 on enterprise coding tasks",
-        "summary": "一项企业编程测试显示，四个实时协调的AI代理在复杂任务上超过单体Claude Opus，凸显多代理编排可能带来的能力增益。",
-        "rating": "A",
-        "score": 82,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "结果仍需独立复现，并拆分模型、任务分工和通信开销的贡献，评估规模化后的成本与错误传播。",
-        "entities": [
-          "Claude",
-          "代理编排",
-          "企业编程",
-          "多智能体"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat (deepseek)",
-            "url": "https://venturebeat.com/orchestration/four-ai-agents-coordinating-in-real-time-outperformed-claude-opus-4-8-on-enterprise-coding-tasks"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.616487",
-        "source": "VentureBeat (deepseek)",
-        "url": "https://venturebeat.com/orchestration/four-ai-agents-coordinating-in-real-time-outperformed-claude-opus-4-8-on-enterprise-coding-tasks",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "3aa745a94575f39559f53a72d626a29d",
-        "title": "零售商争抢聊天机器人推荐位，搜索优化进入AI时代",
-        "chinese_title": "零售商争抢聊天机器人推荐位，搜索优化进入AI时代",
-        "original_title": "Retailers are updating their websites to rank highly in chatbot results, while making sure purchases are done on their own sites to collect customer data (Arriana McLymore/Reuters)",
-        "summary": "零售商开始调整网站内容以提高在聊天机器人答案中的排名，同时坚持把交易留在自有网站，以继续掌握客户数据。",
-        "rating": "A",
-        "score": 83,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "生成式搜索优化将改变流量分配、商品数据标准和平台议价，也可能催生新的排名操纵与披露规则。",
-        "entities": [
-          "客户数据",
-          "生成式搜索",
-          "聊天机器人",
-          "零售商"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260807/p28#a260807p28"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.616578",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260807/p28#a260807p28",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "05650e0fae0e5da9f962178d1c648734",
-        "title": "ChatGPT广告扩至巴西和墨西哥，OpenAI加速全球变现",
-        "chinese_title": "ChatGPT广告扩至巴西和墨西哥，OpenAI加速全球变现",
-        "original_title": "OpenAI will bring ChatGPT ads to Brazil and Mexico, and is adding a raft of fresh features",
-        "summary": "OpenAI计划把ChatGPT广告业务扩展到巴西和墨西哥，并增加广告产品功能，继续测试免费用户规模带来的商业化空间。",
-        "rating": "A",
-        "score": 82,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "广告扩张将检验回答中立性、隐私和转化效果，也可能改变订阅层级及与谷歌的竞争关系。",
-        "entities": [
-          "GPT",
-          "OpenAI",
-          "墨西哥",
-          "巴西",
-          "数字广告"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI - Business Insider",
-            "url": "https://www.businessinsider.com/openai-ad-upgrades-chatgpt-ramps-up-global-reach-2026-8"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.616767",
-        "source": "AI - Business Insider",
-        "url": "https://www.businessinsider.com/openai-ad-upgrades-chatgpt-ramps-up-global-reach-2026-8",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "403030ed070916e7e664018bd4a020a0",
-        "title": "SpaceX收购Cursor接近落地，600亿美元交易或下周完成",
-        "chinese_title": "SpaceX收购Cursor接近落地，600亿美元交易或下周完成",
-        "original_title": "Cursor Maps Out Branding, Other Changes as SpaceX Acquisition Nears",
-        "summary": "消息称Cursor已通知员工，SpaceX最快下周完成约600亿美元收购，交易后Cursor品牌可能逐步退出。",
-        "rating": "S",
-        "score": 94,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "若成交，将成为AI编程领域标志性并购，并把Cursor的代码代理能力纳入SpaceX与xAI的工程体系。",
-        "entities": [
-          "Ai编程",
-          "Cursor",
-          "SpaceX",
-          "xAI",
-          "并购"
-        ],
-        "sourceLinks": [
-          {
             "name": "The Information",
-            "url": "https://www.theinformation.com/articles/cursor-maps-branding-changes-spacex-acquisition-nears"
+            "url": "https://www.theinformation.com/articles/nvidia-nears-deal-guarantee-100-billion-financing-massive-data-center"
           }
         ],
         "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.617132",
+        "timestamp": 1786755703,
+        "published_at": "2026-08-15T09:01:43.201903",
         "source": "The Information",
-        "url": "https://www.theinformation.com/articles/cursor-maps-branding-changes-spacex-acquisition-nears",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "f45e63d5bec806bcf0e62692578c851f",
-        "title": "蜗牛用胶原与钙调节黏液，材料配方首次被揭开",
-        "chinese_title": "蜗牛用胶原与钙调节黏液，材料配方首次被揭开",
-        "original_title": "How snails engineer their slime",
-        "summary": "研究发现蜗牛通过协同调节胶原和钙，使黏液获得适配移动、防御等不同任务的机械性能，揭示天然可调软材料的形成机制。",
-        "rating": "A",
-        "score": 82,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "这一机制可启发医用黏合剂、润滑材料和软体机器人设计，并推动仿生材料的可调控制。",
-        "entities": [
-          "仿生材料",
-          "胶原",
-          "蜗牛黏液",
-          "钙"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Ars Technica » Scientific Method",
-            "url": "https://arstechnica.com/science/2026/08/how-snails-engineer-their-slime/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.815318",
-        "source": "Ars Technica » Scientific Method",
-        "url": "https://arstechnica.com/science/2026/08/how-snails-engineer-their-slime/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "7072d9c4c23e8d9e763b412fc08c47b6",
-        "title": "DeepSeek新模型刷新ARC性价比，单题成本最低仅两美分",
-        "chinese_title": "DeepSeek新模型刷新ARC性价比，单题成本最低仅两美分",
-        "original_title": "DeepSeek V4 Flash 0731",
-        "summary": "ARC Prize公布验证结果：DeepSeek V4 Flash在ARC-AGI-2得分61.4%，单题成本约0.04美元，并刷新成本性能前沿。",
-        "rating": "A+",
-        "score": 89,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "低成本推理若能跨基准复现，将加剧模型价格竞争，也需核查测试时计算、工具使用和数据污染。",
-        "entities": [
-          "Arc-Agi",
-          "DeepSeek",
-          "基准测试",
-          "推理成本"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News (deepseek)",
-            "url": "https://arcprize.org/results/deepseek-v4-flash-0731"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.815416",
-        "source": "Hacker News (deepseek)",
-        "url": "https://arcprize.org/results/deepseek-v4-flash-0731",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "39c4d4d753dad616010f98847d7e250f",
-        "title": "法律AI公司Harvey拟融5亿美元，估值五个月再涨四成",
-        "chinese_title": "法律AI公司Harvey拟融5亿美元，估值五个月再涨四成",
-        "original_title": "Harvey in Talks to Raise Funding at $15.5 Billion Valuation",
-        "summary": "Harvey正洽谈至少5亿美元融资，目标估值155亿美元；其年化收入据称已超过3.5亿美元，较年初增长逾八成。",
-        "rating": "A+",
-        "score": 89,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "高速增长将检验法律AI的续费率、专业责任和单位经济，也会推高垂直AI赛道的估值基准。",
-        "entities": [
-          "Harvey",
-          "年化收入",
-          "法律Ai",
-          "融资"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/harvey-talks-raise-funding-15-5-billion-valuation"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.815927",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/harvey-talks-raise-funding-15-5-billion-valuation",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "21ade4e27d43ec08f3f983c06c9c9e8e",
-        "title": "AI内存荒抹去二十年降价成果，价格退回2007年水平",
-        "chinese_title": "AI内存荒抹去二十年降价成果，价格退回2007年水平",
-        "original_title": "Scientist says RAM pricing has reverted to normalized 2007 levels — memory prices have been falling exponentially for decades, but the AI shortage undid 20 years of progress in a matter of months",
-        "summary": "研究者按性能和容量归一化后发现，HBM需求引发的内存短缺在数月内逆转长期降价趋势，使价格相当于2007年水平。",
-        "rating": "A",
-        "score": 85,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "内存价格异常将传导至服务器、PC和手机，并影响AI算力扩张、产品成本与存储厂商资本开支。",
-        "entities": [
-          "Ai算力",
-          "Dram",
-          "Hbm",
-          "内存价格"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/pc-components/ram/scientist-says-ram-pricing-has-reverted-to-normalized-2007-levels-memory-prices-have-been-falling-exponentially-for-decades-but-the-ai-shortage-undid-20-years-of-progress-in-a-matter-of-months"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.816015",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/pc-components/ram/scientist-says-ram-pricing-has-reverted-to-normalized-2007-levels-memory-prices-have-been-falling-exponentially-for-decades-but-the-ai-shortage-undid-20-years-of-progress-in-a-matter-of-months",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "41c0d742d84c7d93605a587026a45b22",
-        "title": "腾讯提出团队共享AI记忆，多代理协作迎来治理难题",
-        "chinese_title": "腾讯提出团队共享AI记忆，多代理协作迎来治理难题",
-        "original_title": "Tencent's Team Memory shares AI agent memory across a team &mdash; with no governance yet for when it's wrong",
-        "summary": "腾讯Team Memory让多个AI代理共享上下文和经验，以减少信息不一致，但错误记忆的纠正、权限和责任机制尚未完善。",
-        "rating": "A",
-        "score": 83,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "共享记忆可能成为企业代理基础设施核心，同时需要版本控制、来源追踪和可撤销的治理机制。",
-        "entities": [
-          "Ai代理",
-          "Team Memory",
-          "Tencent",
-          "上下文治理"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/data/tencents-team-memory-shares-ai-agent-memory-across-a-team-with-no-governance-yet-for-when-its-wrong"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.816509",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/data/tencents-team-memory-shares-ai-agent-memory-across-a-team-with-no-governance-yet-for-when-its-wrong",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "272b75d3c523876da24e2a37c2930733",
-        "title": "AI改造会计事务所，Multiplier融资3500万美元",
-        "chinese_title": "AI改造会计事务所，Multiplier融资3500万美元",
-        "original_title": "Singapore-based Multiplier, which acquires accounting firms to boost their growth with AI tools, raised a $35M Series B led by TheGP at a $300M valuation (Maria Armental/Wall Street Journal)",
-        "summary": "新加坡Multiplier通过收购会计事务所并导入AI工具扩大业务，完成3500万美元B轮融资，估值约3亿美元。",
-        "rating": "B",
-        "score": 76,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "收购加AI的模式能否提高利润率和交付质量，将决定其能否复制到更多专业服务行业。",
-        "entities": [
-          "Ai工具",
-          "Multiplier",
-          "Thegp",
-          "会计服务"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260807/p19#a260807p19"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.816765",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260807/p19#a260807p19",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "48123356911c82ee0c36e590578b1c33",
-        "title": "新加坡AI基建公司Acrab再获1.3亿美元融资",
-        "chinese_title": "新加坡AI基建公司Acrab再获1.3亿美元融资",
-        "original_title": "Singapore-based AI infrastructure startup Acrab raised a $130M Series B, bringing its total funding to more than $480M (Mars W. Mosqueda Jr/DealStreetAsia)",
-        "summary": "新加坡AI基础设施公司Acrab完成1.3亿美元B轮融资，累计融资超过4.8亿美元，继续扩大算力与基础设施业务。",
-        "rating": "A",
-        "score": 81,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "需进一步核查客户、算力资产和收入结构，判断其高资本投入能否转化为稳定利用率和现金流。",
-        "entities": [
-          "Acrab",
-          "Ai基础设施",
-          "Vertex Ventures",
-          "新加坡"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260807/p17#a260807p17"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.817195",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260807/p17#a260807p17",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "0510d4b07f804d0375d69b0d75484824",
-        "title": "美国51亿美元数据中心遭激烈抗议，地方阻力继续升级",
-        "chinese_title": "美国51亿美元数据中心遭激烈抗议，地方阻力继续升级",
-        "original_title": "Protesters haul a guillotine to city council meeting about a potential AI data center, company rep cornered by protestors — ‘ it no longer felt safe to stay,’ developer escorted out by police",
-        "summary": "美国塞勒姆一场数据中心听证会持续六小时，反对者以电力、环境和社区影响为由抗议51亿美元项目，开发商代表由警方护送离场。",
-        "rating": "B",
-        "score": 77,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "地方冲突会增加项目审批和社区补偿成本，并推动电力、水资源和土地使用规则进一步收紧。",
-        "entities": [
-          "Ai数据中心",
-          "Salem",
-          "Verrus",
-          "社区抗议"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/data-centers/protesters-haul-a-guillotine-to-city-council-meeting-about-a-potential-ai-data-center-company-rep-cornered-by-protestors-it-no-longer-felt-safe-to-stay-developer-escorted-out-by-police"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.817282",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/data-centers/protesters-haul-a-guillotine-to-city-council-meeting-about-a-potential-ai-data-center-company-rep-cornered-by-protestors-it-no-longer-felt-safe-to-stay-developer-escorted-out-by-police",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "76021fe519a0ca5bdba94d13901a0522",
-        "title": "全球最大太阳望远镜首次拍到日表等离子体涡旋",
-        "chinese_title": "全球最大太阳望远镜首次拍到日表等离子体涡旋",
-        "original_title": "The world's biggest solar telescope caught vortexes on the Sun's surface",
-        "summary": "科学家利用全球最大太阳望远镜，在太阳表面直接观测到长期预测的开尔文-亥姆霍兹涡旋，为理解日冕加热和能量传输提供证据。",
-        "rating": "A+",
-        "score": 88,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "高分辨率观测可改进太阳活动模型，并帮助研究空间天气形成及其对卫星和电网的影响。",
-        "entities": [
-          "太阳望远镜",
-          "太阳等离子体",
-          "开尔文-亥姆霍兹不稳定性",
-          "空间天气"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Ars Technica » Scientific Method",
-            "url": "https://arstechnica.com/science/2026/08/the-worlds-biggest-solar-telescope-caught-vortexes-on-the-suns-surface/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.817374",
-        "source": "Ars Technica » Scientific Method",
-        "url": "https://arstechnica.com/science/2026/08/the-worlds-biggest-solar-telescope-caught-vortexes-on-the-suns-surface/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "99da799b49a4ff0d77f8bd48c37c7d61",
-        "title": "美国机器人初创依赖中国零件，创始人用行李箱跨境采购",
-        "chinese_title": "美国机器人初创依赖中国零件，创始人用行李箱跨境采购",
-        "original_title": "Why U.S. Robotics Startups Are Stuffing Parts From China in Luggage",
-        "summary": "报道称部分美国机器人初创因本土供应不足，仍通过深圳采购并随身携带人形机器人组件，暴露产业链对中国制造的深度依赖。",
-        "rating": "A+",
-        "score": 89,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "供应链现实将影响美国机器人政策、关税和本土化成本，也可能促使中美厂商重新设计合作路径。",
-        "entities": [
-          "中国供应链",
-          "人形机器人",
-          "深圳",
-          "美国机器人"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/u-s-robotics-startups-stuffing-parts-china-luggage"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.817546",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/u-s-robotics-startups-stuffing-parts-china-luggage",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "82ccee0ff502addb2019b8eb0c07584a",
-        "title": "Anthropic放宽Claude生物学限制，误拦截率下降约85%",
-        "chinese_title": "Anthropic放宽Claude生物学限制，误拦截率下降约85%",
-        "original_title": "Anthropic updates Claude Fable 5's biology safeguards to reduce false positives, cutting biology-related \"fallbacks\" by ~85% in testing across product surfaces (Anthropic)",
-        "summary": "Anthropic更新Claude Fable的生物安全机制，将普通生物问题触发降级的误报减少约85%，但继续限制病毒学和毒理学等双用途领域。",
-        "rating": "A+",
-        "score": 88,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "更精细的风险分层可改善科研可用性，也将检验模型厂商能否同时控制高危能力与过度拒答。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "双用途研究",
-          "生物安全"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260807/p15#a260807p15"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786147670,
-        "published_at": "2026-08-08T08:07:50.817633",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260807/p15#a260807p15",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      }
-    ],
-    "2026-08-07": [
-      {
-        "id": "b7c151c52e9b7d33bd56dc45e09be9e3",
-        "title": "Suno计划为AI音乐加入水印，寻求版权合规转身",
-        "chinese_title": "Suno计划为AI音乐加入水印，寻求版权合规转身",
-        "original_title": "Suno hopes to go legit with watermarks for AI-generated music",
-        "summary": "AI音乐公司Suno准备通过水印标识生成内容，以回应版权方和平台的追踪需求，并为商业合作铺路。",
-        "rating": "A",
-        "score": 83,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "水印效果将影响音乐平台治理和版权谈判，也可能成为AI生成音频的行业标准竞争点。",
-        "entities": [
-          "Ai音乐",
-          "Suno",
-          "数字水印",
-          "版权"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/ai/2026/08/suno-hopes-to-go-legit-with-watermarks-for-ai-generated-music/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.006853",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/ai/2026/08/suno-hopes-to-go-legit-with-watermarks-for-ai-generated-music/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "eb4c08e68aa1ae66c2b009ad5edcc71f",
-        "title": "Anthropic确认组建自研芯片团队，为Claude打造专用硬件",
-        "chinese_title": "Anthropic确认组建自研芯片团队，为Claude打造专用硬件",
-        "original_title": "Anthropic will design its own hardware to power Claude",
-        "summary": "Anthropic确认将设计自有硬件，为Claude训练和推理建立更贴合模型需求的芯片能力，进一步向算力供应链上游延伸。",
-        "rating": "A+",
-        "score": 90,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "自研芯片将牵动其与云厂商和英伟达的关系，也考验资金、人才与量产能力。",
-        "entities": [
-          "Ai芯片",
-          "Anthropic",
-          "Claude"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.007030",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "3135ba519f65215b56420b3ce76f5611",
-        "title": "AI代理能力已进步，为何普通用户仍然不用？",
-        "chinese_title": "AI代理能力已进步，为何普通用户仍然不用？",
-        "original_title": "Why Normal People Aren’t Using AI Agents",
-        "summary": "报道分析普通用户未大规模采用AI代理的原因，包括可靠性不足、权限风险、学习成本和缺少清晰的高频使用场景。",
-        "rating": "A",
-        "score": 82,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "普及瓶颈将决定下一轮产品设计方向，厂商需要从演示能力转向可控、可恢复的日常任务体验。",
-        "entities": [
-          "Ai代理",
-          "人机交互",
-          "用户采用"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Feed: Artificial Intelligence Latest",
-            "url": "https://www.wired.com/story/why-normal-people-arent-using-ai-agents/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.007115",
-        "source": "Feed: Artificial Intelligence Latest",
-        "url": "https://www.wired.com/story/why-normal-people-arent-using-ai-agents/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "7d07c1b498ced72b9d52561838b9c478",
-        "title": "研究称ChatGPT可预测人格测试结果，准确性边界仍待验证",
-        "chinese_title": "研究称ChatGPT可预测人格测试结果，准确性边界仍待验证",
-        "original_title": "ChatGPT Predicts Human Personality Test Results",
-        "summary": "一项研究探索利用ChatGPT从文本信息推断人类人格测试结果，显示大模型可能捕捉行为特征，但偏差与隐私风险仍需审视。",
-        "rating": "B",
-        "score": 76,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "技术可能进入招聘、营销和心理服务，因此必须评估跨文化偏差、知情同意和滥用风险。",
-        "entities": [
-          "GPT",
-          "人格测试",
-          "心理测量",
-          "隐私"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Neuroscience News Updates",
-            "url": "https://neurosciencenews.com/chatgpt-ai-personality-tests-31192/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.007375",
-        "source": "Neuroscience News Updates",
-        "url": "https://neurosciencenews.com/chatgpt-ai-personality-tests-31192/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B"
-      },
-      {
-        "id": "466c20260f3bcd49d7b58fc5f67b2c03",
-        "title": "白宫顾问警告企业借AI包装裁员，真实生产率贡献存疑",
-        "chinese_title": "白宫顾问警告企业借AI包装裁员，真实生产率贡献存疑",
-        "original_title": "White House advisor says companies are blaming AI for layoffs because 'it plays better in the press'",
-        "summary": "白宫科技顾问称，一些企业把普通成本削减描述为AI驱动裁员，因为这种说法更容易被市场接受。",
-        "rating": "A",
-        "score": 84,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "所谓AI洗裁员会扭曲生产率数据和投资者判断，后续需对照岗位、资本支出与实际自动化程度。",
-        "entities": [
-          "Ai裁员",
-          "企业传播",
-          "生产率",
-          "白宫"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI - Business Insider",
-            "url": "https://www.businessinsider.com/white-house-advisor-ai-layoffs-washing-michael-kratsios-2026-8"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.007458",
-        "source": "AI - Business Insider",
-        "url": "https://www.businessinsider.com/white-house-advisor-ai-layoffs-washing-michael-kratsios-2026-8",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "c98a7301242ba2a128817843269b5ff9",
-        "title": "大基因组模型设计出自然界不存在的病毒，已有16种可感染细菌",
-        "chinese_title": "大基因组模型设计出自然界不存在的病毒，已有16种可感染细菌",
-        "original_title": "Large genome models used to design new viruses",
-        "summary": "科学家用遗传序列训练大型模型，设计出自然界未发现的病毒，其中16种能感染细菌，研究称它们不威胁人类。",
-        "rating": "S",
-        "score": 95,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "成果同时打开噬菌体治疗和合成生物学空间，也显著提高生物安全、筛查与模型开放边界的重要性。",
-        "entities": [
-          "合成病毒",
-          "噬菌体",
-          "基因组模型",
-          "生物安全"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/science/2026/08/large-genome-models-used-to-design-new-viruses/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.007867",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/science/2026/08/large-genome-models-used-to-design-new-viruses/",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "e1775d8d2e173fdfd98634e55274fb50",
-        "title": "OpenAI改进ChatGPT旗舰模型，并向免费用户开放无限文字对话",
-        "chinese_title": "OpenAI改进ChatGPT旗舰模型，并向免费用户开放无限文字对话",
-        "original_title": "Improving GPT-5.6 Sol in ChatGPT—and expanding access for free users",
-        "summary": "OpenAI更新GPT-5.6 Sol，统一快速与深度推理体验，同时让免费用户通过Luna获得无限文字聊天。",
-        "rating": "A+",
-        "score": 90,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "产品调整将扩大免费用户规模，也会改变推理成本、订阅差异化和竞争对手的额度策略。",
-        "entities": [
-          "GPT",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.008028",
-        "source": "Hacker News",
-        "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "7a955128929539d1fc224a1f4e805147",
-        "title": "国防制造公司Hadrian融资13.7亿美元，估值升至80亿美元",
-        "chinese_title": "国防制造公司Hadrian融资13.7亿美元，估值升至80亿美元",
-        "original_title": "Defense tech Hadrian raises $1.37B at $8B valuation",
-        "summary": "自动化国防制造企业Hadrian完成13.7亿美元融资，估值达到80亿美元，资本将用于扩充工厂与生产能力。",
-        "rating": "A",
-        "score": 84,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "巨额融资反映国防科技与制造回流热度，也将加剧自动化产能、政府订单和人才竞争。",
-        "entities": [
-          "Hadrian",
-          "国防科技",
-          "自动化制造"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/08/06/defense-tech-hadrian-raises-1-37b-at-8b-valuation/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.008110",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/08/06/defense-tech-hadrian-raises-1-37b-at-8b-valuation/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "bf04160361dc215784a9658686d0a532",
-        "title": "海上波浪供能数据中心公司拟融资2.25亿美元，估值翻倍",
-        "chinese_title": "海上波浪供能数据中心公司拟融资2.25亿美元，估值翻倍",
-        "original_title": "Sources: Panthalassa, which aims to power data centers in the ocean using energy generated by waves, is raising $225M at a ~$2B valuation, up from $1B in May (Julia Hornstein/The Information)",
-        "summary": "Panthalassa计划利用海浪能源为海上数据中心供电，正以约20亿美元估值融资2.25亿美元，较三个月前估值翻倍。",
-        "rating": "A+",
-        "score": 86,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "项目把算力、电力与海洋工程结合，关键要验证维护成本、网络连接、环保影响和规模化可行性。",
-        "entities": [
-          "Panthalassa",
-          "波浪能",
-          "海上数据中心"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260806/p39#a260806p39"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.008273",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260806/p39#a260806p39",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "410e4528234cc28a9ae27f3ec8785224",
-        "title": "Nscale季度营收破亿美元，手握510亿美元合同筹备赴美上市",
-        "chinese_title": "Nscale季度营收破亿美元，手握510亿美元合同筹备赴美上市",
-        "original_title": "Sources: Nscale told potential backers it generated $100M+ in Q2 revenue, up from ~$37M in Q1, and has ~$51B in contracts, ahead of a possible September US IPO (Bailey Lipschultz/Bloomberg)",
-        "summary": "AI基础设施公司Nscale向投资者披露二季度营收超过1亿美元、环比大增，并称合同规模约510亿美元，考虑9月赴美上市。",
-        "rating": "A+",
-        "score": 88,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "高速增长与巨额合同将接受收入确认和资本开支检验，也反映AI基础设施企业的上市窗口。",
-        "entities": [
-          "Ai基础设施",
-          "Ipo",
-          "Nscale",
-          "数据中心"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260806/p38#a260806p38"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.008355",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260806/p38#a260806p38",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "ae652186d6da7010602d2ae5427e46e8",
-        "title": "DeepMind人才流失背后：芯片短缺、利益冲突与官僚体系",
-        "chinese_title": "DeepMind人才流失背后：芯片短缺、利益冲突与官僚体系",
-        "original_title": "Deepmind's talent drain likely comes down to chip shortages, a conflict of interest, and Google's bureaucracy",
-        "summary": "分析认为DeepMind近期人才流动不仅是薪酬问题，还涉及算力供给、研究与产品利益冲突及谷歌内部决策效率。",
-        "rating": "A",
-        "score": 82,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "若结构性问题持续，可能拖慢Gemini迭代并利好竞争对手挖角，也会推动谷歌进一步重组AI团队。",
-        "entities": [
-          "Ai人才",
-          "DeepMind",
-          "Gemini",
-          "算力"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/deepminds-talent-drain-likely-comes-down-to-chip-shortages-a-conflict-of-interest-and-googles-bureaucracy/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.008597",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/deepminds-talent-drain-likely-comes-down-to-chip-shortages-a-conflict-of-interest-and-googles-bureaucracy/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "7ef784bdb48196baa9e6a09b7440b0d5",
-        "title": "微软约七成AI收入被曝依赖OpenAI，业务集中度风险浮现",
-        "chinese_title": "微软约七成AI收入被曝依赖OpenAI，业务集中度风险浮现",
-        "original_title": "Microsoft's AI revenue reportedly depends on OpenAI for 70 percent",
-        "summary": "报道称微软披露的AI收入中约70%与OpenAI相关，显示双方合作带来增长的同时，也形成较高的单一伙伴依赖。",
-        "rating": "A+",
-        "score": 87,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "收入集中度会影响微软估值、谈判权和自研模型战略，也需核查口径是转售收入还是更广泛贡献。",
-        "entities": [
-          "Ai收入",
-          "Microsoft",
-          "OpenAI",
-          "云计算"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/microsofts-ai-revenue-reportedly-depends-on-openai-for-70-percent/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.009000",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/microsofts-ai-revenue-reportedly-depends-on-openai-for-70-percent/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "29a2815613d5847efb6ce256945ec1d8",
-        "title": "OpenAI发布Agent Plugins：技能与MCP服务器可打包分发",
-        "chinese_title": "OpenAI发布Agent Plugins：技能与MCP服务器可打包分发",
-        "original_title": "Introducing Agent Plugins",
-        "summary": "OpenAI推出Agent Plugins开放标准，用于把技能和MCP服务器组合为可分发插件，并与多家开发工具和云平台推动生态治理。",
-        "rating": "S",
-        "score": 93,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "统一封装标准可能降低代理能力分发成本，并引发插件安全、权限审核和跨平台兼容竞争。",
-        "entities": [
-          "Agent Plugins",
-          "Ai代理",
-          "MCP",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "OpenAI",
-            "url": "https://www.youtube.com/watch?v=UaeWJK_vv-Y"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.009097",
-        "source": "OpenAI",
-        "url": "https://www.youtube.com/watch?v=UaeWJK_vv-Y",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "16731f1eb0ba507c4565bc8a33581928",
-        "title": "Nature发布AI热带气旋预报系统，低分辨率数据也能高精度预测",
-        "chinese_title": "Nature发布AI热带气旋预报系统，低分辨率数据也能高精度预测",
-        "original_title": "Operational Tropical Cyclone Forecasting with AI",
-        "summary": "一项Nature研究展示用于业务化热带气旋预报的AI系统，可用较低分辨率数据预测风暴路径和强度，并提升预报效率。",
-        "rating": "S",
-        "score": 94,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若在真实业务中稳定，将改变气象机构算力配置和灾害预警流程，并扩大低资源地区的预测能力。",
-        "entities": [
-          "Ai天气预报",
-          "Nature",
-          "Weathernext",
-          "热带气旋"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/s41586-026-10953-2"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.007783",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/s41586-026-10953-2",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "a877780173c5c237422bbf0b8c470ab1",
-        "title": "代理框架测试：Claude Code速度领先，但成本接近最便宜方案三倍",
-        "chinese_title": "代理框架测试：Claude Code速度领先，但成本接近最便宜方案三倍",
-        "original_title": "Claude Code is the fastest agent framework but costs nearly three times more than the cheapest rival",
-        "summary": "一项代理框架比较显示Claude Code完成任务最快，但费用显著高于低价竞争者，凸显速度与单位成本的权衡。",
-        "rating": "A",
-        "score": 81,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "企业选型应同时比较成功率、延迟和总成本，单次基准结果还需跨任务复现。",
-        "entities": [
-          "Ai代理",
-          "Claude Code",
-          "开发工具",
-          "成本评测"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER (deepseek)",
-            "url": "https://the-decoder.com/claude-code-is-the-fastest-agent-framework-but-costs-nearly-three-times-more-than-the-cheapest-rival/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.142293",
-        "source": "THE DECODER (deepseek)",
-        "url": "https://the-decoder.com/claude-code-is-the-fastest-agent-framework-but-costs-nearly-three-times-more-than-the-cheapest-rival/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "24efa0d94a1629c9557a5cead9c7d7e6",
-        "title": "Cloudflare开源零代码氛围编程平台，让非程序员也能构建应用",
-        "chinese_title": "Cloudflare开源零代码氛围编程平台，让非程序员也能构建应用",
-        "original_title": "Cloudflare open-sources vibe-coding platform for people who aren't coders",
-        "summary": "Cloudflare开源一套面向非开发者的氛围编程平台，试图把应用生成、部署和边缘基础设施整合为低门槛流程。",
-        "rating": "A+",
-        "score": 86,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "开源与一体化部署会加剧AI建站工具竞争，关键看安全边界、可维护性和平台锁定。",
-        "entities": [
-          "Cloudflare",
-          "开源",
-          "氛围编程",
-          "边缘计算"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/ai/2026/08/cloudflare-open-sources-vibe-coding-platform-for-people-who-arent-coders/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.142619",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/ai/2026/08/cloudflare-open-sources-vibe-coding-platform-for-people-who-arent-coders/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "ee0a54ad1607344c9a1a7e82cdcf8b43",
-        "title": "英伟达考虑削减Rubin Ultra显存，HBM供应或成下一代芯片瓶颈",
-        "chinese_title": "英伟达考虑削减Rubin Ultra显存，HBM供应或成下一代芯片瓶颈",
-        "original_title": "Sources: Nvidia is considering lower-memory versions of its Rubin Ultra GPU due to potential issues securing enough HBM, and has tested at least three versions (The Information)",
-        "summary": "消息称英伟达因高带宽内存供应风险，正评估至少三种Rubin Ultra配置，其中包括降低显存容量的版本。",
-        "rating": "A+",
-        "score": 89,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "HBM约束可能影响芯片性能、交付时间和价格，并传导至存储厂商、云服务商和模型训练计划。",
-        "entities": [
-          "Ai芯片",
-          "Hbm",
-          "NVIDIA",
-          "Rubin Ultra"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260806/p31#a260806p31"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.142702",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260806/p31#a260806p31",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "70270085b4860ddd532df8764d0ba409",
-        "title": "谷歌组建新Gemini模型团队，AI投入加速伴随组织再调整",
-        "chinese_title": "谷歌组建新Gemini模型团队，AI投入加速伴随组织再调整",
-        "original_title": "Google Builds A New Gemini Model Team As AI Investments Accelerate",
-        "summary": "谷歌在扩大AI资本投入的同时重组Gemini模型团队，试图改善研究、算力与产品部门之间的协作效率。",
-        "rating": "A",
-        "score": 83,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "新团队的负责人、算力权限和发布节奏将决定重组效果，也会影响DeepMind人才稳定性。",
-        "entities": [
-          "Ai团队",
-          "DeepMind",
-          "Gemini",
-          "Google"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Next Platform (Gemini)",
-            "url": "https://www.nextplatform.com/cloud/2026/08/06/google-builds-a-new-gemini-model-team-as-ai-investments-accelerate/5284258"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.142784",
-        "source": "The Next Platform (Gemini)",
-        "url": "https://www.nextplatform.com/cloud/2026/08/06/google-builds-a-new-gemini-model-team-as-ai-investments-accelerate/5284258",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "c346a7ac60f3ce4db26d1da156d0c473",
-        "title": "TikTok裁员250人并关闭纳什维尔办公室",
-        "chinese_title": "TikTok裁员250人并关闭纳什维尔办公室",
-        "original_title": "TikTok lays off 250 employees, shutters its Nashville office",
-        "summary": "TikTok宣布裁减约250名员工并关闭纳什维尔办公室，显示其在监管与业务调整压力下继续收缩部分运营团队。",
-        "rating": "A",
-        "score": 81,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "裁员将影响内容审核和美国业务布局，也需观察是否与更广泛的组织重组或监管安排相关。",
-        "entities": [
-          "ByteDance",
-          "纳什维尔",
-          "裁员"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/08/06/tiktok-lays-off-250-employees-shutters-its-nashville-office/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.143183",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/08/06/tiktok-lays-off-250-employees-shutters-its-nashville-office/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "21a904f798917b7bd93384db61da4555",
-        "title": "AI代理审查科学文献，开始发现延续数十年的研究错误",
-        "chinese_title": "AI代理审查科学文献，开始发现延续数十年的研究错误",
-        "original_title": "AI agents are checking the scientific literature — and spotting decades-old errors",
-        "summary": "科学家使用AI代理系统核查既有文献，发现部分长期未被纠正的计算、引用或逻辑问题，展示机器辅助科研审计的潜力。",
-        "rating": "S",
-        "score": 93,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "自动审计可能改变同行评议和更正流程，但必须保留证据链并控制模型幻觉带来的新误报。",
-        "entities": [
-          "Ai代理",
-          "Nature",
-          "科学文献",
-          "科研审计"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Nature - Issue - nature.com science feeds",
-            "url": "https://www.nature.com/articles/d41586-026-02235-8"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.142456",
-        "source": "Nature - Issue - nature.com science feeds",
-        "url": "https://www.nature.com/articles/d41586-026-02235-8",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "7963094d960064e1e9e7775ac9861109",
-        "title": "AI数据中心推高电价后，弗吉尼亚要求企业承担专用电网成本",
-        "chinese_title": "AI数据中心推高电价后，弗吉尼亚要求企业承担专用电网成本",
-        "original_title": "After severe 76% electricity price hikes due to AI data centers, Virginia requires firms to pay for all dedicated upstream electrical infrastructure — state regulators crack down, governor says move will save civilians ‘hundreds of millions of dollars’",
-        "summary": "在电价最高上涨76%的争议后，弗吉尼亚监管机构要求数据中心企业支付其专用上游电力基础设施费用。",
-        "rating": "A+",
-        "score": 89,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "成本归属新规可能成为其他州模板，抬高算力项目成本并改变数据中心选址与电力合同。",
-        "entities": [
-          "Ai数据中心",
-          "弗吉尼亚",
-          "电价",
-          "电网"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/data-centers/after-severe-76-percent-electricity-price-hikes-due-to-ai-data-centers-virginia-requires-firms-to-pay-for-all-dedicated-upstream-electrical-infrastructure-state-regulators-crack-down-governor-says-move-will-save-civilians-hundreds-of-millions-of-dollars"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.143610",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/data-centers/after-severe-76-percent-electricity-price-hikes-due-to-ai-data-centers-virginia-requires-firms-to-pay-for-all-dedicated-upstream-electrical-infrastructure-state-regulators-crack-down-governor-says-move-will-save-civilians-hundreds-of-millions-of-dollars",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "97ba38eb815034cefce0e6545020917b",
-        "title": "AI气象公司WindBorne完成3700万美元B轮融资",
-        "chinese_title": "AI气象公司WindBorne完成3700万美元B轮融资",
-        "original_title": "WindBorne, which deploys weather balloons to collect data for its AI weather forecasting models, raised a $37M Series B at a $250M post-money valuation (Tim Fernholz/TechCrunch)",
-        "summary": "WindBorne利用气象气球采集数据并训练AI天气预测模型，本轮以2.5亿美元投后估值融资3700万美元。",
-        "rating": "A",
-        "score": 81,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "融资显示专有观测数据正成为AI天气公司的壁垒，也可关注其与公共气象机构的合作和数据成本。",
-        "entities": [
-          "Ai天气预报",
-          "Windborne",
-          "气象气球"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260806/p27#a260806p27"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.143690",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260806/p27#a260806p27",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "105512b7530c6a1471a41ee030844d88",
-        "title": "软银以OpenAI持股作抵押继续加码投资",
-        "chinese_title": "软银以OpenAI持股作抵押继续加码投资",
-        "original_title": "SoftBank Borrows Against OpenAI Stake as It Invests More",
-        "summary": "软银通过以OpenAI股份为抵押的融资方式筹集资金，以支持进一步投资，放大了其对OpenAI估值和流动性的敞口。",
-        "rating": "A+",
-        "score": 87,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "杠杆投资会提高回报，也把估值波动和融资条款风险传导至软银资产负债表。",
-        "entities": [
-          "OpenAI",
-          "Softbank",
-          "杠杆融资",
-          "股权质押"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/softbank-borrows-openai-stake-invests"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.143770",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/softbank-borrows-openai-stake-invests",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "8c4eefa94b7c9d9df525d0d337d3b1ff",
-        "title": "特斯拉与SpaceX拟投168亿美元，在得州建设太瓦级芯片工厂",
-        "chinese_title": "特斯拉与SpaceX拟投168亿美元，在得州建设太瓦级芯片工厂",
-        "original_title": "Tesla and SpaceX will invest $16.8B to start building ‘Terafab’ chip factory in Texas",
-        "summary": "特斯拉与SpaceX计划先期投入168亿美元，在得州建设Terafab芯片工厂，以满足两家公司预计超过一太瓦的长期算力需求。",
-        "rating": "S",
-        "score": 94,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "项目若落地将重塑AI芯片制造和能源配套，也会牵动供应链、地方补贴与产能兑现风险。",
-        "entities": [
-          "Ai芯片",
-          "SpaceX",
-          "Terafab",
-          "Tesla",
-          "Texas"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.143852",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "1c165ef34315fee2cdbbbe518bfa144b",
-        "title": "内存短缺卡住苹果新机：十亿美元芯片等待封装",
-        "chinese_title": "内存短缺卡住苹果新机：十亿美元芯片等待封装",
-        "original_title": "$1 billion of iPhone 18 Pro chips 'on the shelves awaiting packaging' due to DRAM shortages &mdash; memory shortages reportedly put a wrinkle in Apple's launch plans",
-        "summary": "报道称价值约10亿美元的iPhone芯片因DRAM短缺滞留待封装环节，可能干扰苹果下一代手机的备货与发布时间表。",
-        "rating": "A+",
-        "score": 87,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "存储短缺若持续，将影响苹果出货、成本和供应商议价，并传导至消费电子产业链。",
-        "entities": [
-          "Apple",
-          "Dram",
-          "Iphone",
-          "芯片封装"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware (apple)",
-            "url": "https://www.tomshardware.com/pc-components/dram/usd1-billion-of-iphone-18-pro-chips-on-the-shelves-awaiting-packaging-due-to-dram-shortages-memory-shortages-reportedly-put-a-wrinkle-in-apples-launch-plans"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.144098",
-        "source": "Tom's Hardware (apple)",
-        "url": "https://www.tomshardware.com/pc-components/dram/usd1-billion-of-iphone-18-pro-chips-on-the-shelves-awaiting-packaging-due-to-dram-shortages-memory-shortages-reportedly-put-a-wrinkle-in-apples-launch-plans",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "101e0538e1e94804e0dfddb8adef752f",
-        "title": "深度求索调整API价格，低价模型策略面临转折",
-        "chinese_title": "深度求索调整API价格，低价模型策略面临转折",
-        "original_title": "DeepSeek planning to significantly raise prices",
-        "summary": "DeepSeek官方用量页面显示API计费正在调整，意味着其长期低价策略可能转向更强调算力成本与商业回报。",
-        "rating": "A+",
-        "score": 86,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "涨价将影响开发者迁移、国产模型价格战和云厂商渠道，也需按模型与缓存口径计算实际成本变化。",
-        "entities": [
-          "Api",
-          "DeepSeek",
-          "大模型定价"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News (deepseek)",
-            "url": "https://platform.deepseek.com/usage"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.144261",
-        "source": "Hacker News (deepseek)",
-        "url": "https://platform.deepseek.com/usage",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "f88849f5ce5aba8c5069923242b1b99d",
-        "title": "深度求索重启融资：拟募资80亿美元，估值740亿美元",
-        "chinese_title": "深度求索重启融资：拟募资80亿美元，估值740亿美元",
-        "original_title": "Sources: DeepSeek has resumed its funding round, seeking $8B at a $74B valuation, after pausing talks following the leak of Liang Wenfeng's remarks to investors (Bloomberg)",
-        "summary": "据彭博报道，深度求索在创始人投资者言论泄露后一度暂停谈判，如今重启融资，目标募资80亿美元、估值约740亿美元。",
-        "rating": "A+",
-        "score": 89,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "融资若完成，将影响中国大模型公司的资本格局，也会检验市场对高算力投入和商业化前景的定价。",
-        "entities": [
-          "DeepSeek",
-          "大模型融资",
-          "梁文锋"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (deepseek)",
-            "url": "https://www.techmeme.com/260806/p25#a260806p25"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.278532",
-        "source": "Techmeme (deepseek)",
-        "url": "https://www.techmeme.com/260806/p25#a260806p25",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "90037e3e1d1542698ac8c79199ff5958",
-        "title": "陶哲轩提出AI时代数学成果应拆分为四类证据",
-        "chinese_title": "陶哲轩提出AI时代数学成果应拆分为四类证据",
-        "original_title": "Thanks for all the feedback!  I had truncated the proposal somewhat to fit inside Mathstodon's post limits, but I realiize now I should have clarified and modified a few things.1.  \"scientific lecture\" should become \"publicly available scientific exposition\".  This can include a traditional lecture, but also non-traditional formats such as expository blog posts, self-recorded video, etc..  Eventually, I hope that standard arXiv-like repositories as well as journals for expositions will appear, although the infrastructure is not there yet.  (But see the new \"Mathematical Discourse\" journal at https://www.mathematicaldiscourse.org/ for a first step in that direction.)2.  The exposition artifact is meant to supplement the paper artifact (and the formal certificate artifact, if available), rather than replace it.  So the actual \"date of release\" under this proposal would be max(preprint release date, exposition release date).  Once autoformalization becomes routine, one can also add \"formalization release date\" to this max as well.More broadly, in the past we had a single artifact - the paper - that was supposed to record four separate aspects of a proof: generation, verification, exposition, and publication.  In the future, we may decouple this into multiple artifacts - a generation artifact (e.g., AI chat logs), a verification artifact (e.g., Lean code), an exposition artifact (e.g., a recorded talk), and a publication artifact (the traditional paper).  Priority then becomes a question of who was first to provide a complete set of artifacts.3. \"But what if AI can automatically generate good expositions also?\"  I would actually be happy with this outcome; cf. https://xkcd.com/810/",
-        "summary": "陶哲轩建议把数学成果的生成、验证、阐释与发表拆为不同产物，并以完整证据集合的公开时间重新界定优先权。",
-        "rating": "A",
-        "score": 84,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "这一提议可能改变AI辅助科研的署名、审稿和优先权规则，也会推动形式化证明与公开讲解基础设施。",
-        "entities": [
-          "Ai辅助科研",
-          "Terence Tao",
-          "形式化证明"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Terence Tao",
-            "url": "https://mathstodon.xyz/@tao/117048872440592361"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.278652",
-        "source": "Terence Tao",
-        "url": "https://mathstodon.xyz/@tao/117048872440592361",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "2d3e867ffdade8aa5b88f2d56cb9d4a1",
-        "title": "OpenAI收购奥尔特曼投资芯片公司的专利资产",
-        "chinese_title": "OpenAI收购奥尔特曼投资芯片公司的专利资产",
-        "original_title": "OpenAI Acquired Patents from Altman-Backed AI Chip Startup Following Failed Acquisition",
-        "summary": "OpenAI在未能完成对一家由Sam Altman支持的AI芯片公司的收购后，转而获得其专利，继续补强自研算力技术储备。",
-        "rating": "A",
-        "score": 83,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "专利交易显示OpenAI正通过多路径降低算力依赖，后续可追踪其芯片团队、供应链伙伴及与云厂商的关系。",
-        "entities": [
-          "Ai芯片",
-          "OpenAI",
-          "Sam Altman",
-          "专利"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/openai-acquired-patents-altman-backed-ai-chip-startup-following-failed-acquisition"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.278746",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/openai-acquired-patents-altman-backed-ai-chip-startup-following-failed-acquisition",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "a91657c8280c3bb4d029663e1244b241",
-        "title": "深度求索入股宇树科技，并联合研发人形机器人模型",
-        "chinese_title": "深度求索入股宇树科技，并联合研发人形机器人模型",
-        "original_title": "Filing: DeepSeek has invested ~$20.8M in Unitree Robotics' Shanghai IPO and agreed to jointly develop AI models for humanoid machines (Eduardo Baptista/Reuters)",
-        "summary": "监管文件显示，深度求索向宇树科技上海IPO投入约2080万美元，双方还约定共同开发面向人形机器人的AI模型。",
-        "rating": "A+",
-        "score": 89,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "大模型与机器人头部公司的资本和研发绑定，可能加速具身智能模型落地，并改变国内机器人生态的合作格局。",
-        "entities": [
-          "DeepSeek",
-          "人形机器人",
-          "具身智能",
-          "宇树科技"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (deepseek)",
-            "url": "https://www.techmeme.com/260806/p23#a260806p23"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.278836",
-        "source": "Techmeme (deepseek)",
-        "url": "https://www.techmeme.com/260806/p23#a260806p23",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "de156e95ccb2040eba3292d3f28a1804",
-        "title": "英伟达等联手在印尼建设首个专用AI算力云平台",
-        "chinese_title": "英伟达等联手在印尼建设首个专用AI算力云平台",
-        "original_title": "Ooredoo, Nvidia, Nokia, and Indosat launch Zankore, Indonesia's first dedicated AI compute and neocloud platform; Ooredoo, which owns a 49% stake, commits $800M (Melissa Hancock/Fortune)",
-        "summary": "Ooredoo、英伟达、诺基亚与Indosat推出印尼首个专用AI算力及新云平台Zankore，其中Ooredoo承诺投入8亿美元。",
-        "rating": "A",
-        "score": 82,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "项目将检验东南亚本地算力需求，也可能带动区域数据中心、电力和主权AI基础设施投资。",
-        "entities": [
-          "Indosat",
-          "NVIDIA",
-          "Nokia",
-          "Ooredoo",
-          "Zankore"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260806/p22#a260806p22"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.278942",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260806/p22#a260806p22",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "e39c7a764ba5f87ded2ff254c6f87e05",
-        "title": "美国数据中心反对潮跨越党派，AI基建遭遇地方阻力",
-        "chinese_title": "美国数据中心反对潮跨越党派，AI基建遭遇地方阻力",
-        "original_title": "The left and right agree on one thing: no data centers",
-        "summary": "美国多地围绕电价、用水、污染和土地使用掀起反数据中心行动，左右翼选民罕见形成共同压力。",
-        "rating": "A",
-        "score": 84,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "地方阻力将直接影响AI算力项目选址和成本，也可能推动新的电力、税收与社区补偿规则。",
-        "entities": [
-          "Ai数据中心",
-          "电力基础设施",
-          "美国地方政治"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/podcast/971855/ai-data-center-backlash-protests-florida-bipartisan"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.279032",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/podcast/971855/ai-data-center-backlash-protests-florida-bipartisan",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "e9dfda9ef5c2dc8f19c78ed1ae53bc3e",
-        "title": "触觉如何变成疼痛或愉悦？神经科学揭示感受分流机制",
-        "chinese_title": "触觉如何变成疼痛或愉悦？神经科学揭示感受分流机制",
-        "original_title": "How Does Touch Lead To Pain Or Pleasure?",
-        "summary": "研究者正在追踪皮肤信号进入神经系统后如何被编码，并解释相似触碰为何会产生疼痛、愉悦等截然不同的体验。",
-        "rating": "A",
-        "score": 81,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "成果可延伸到慢性疼痛治疗、触觉假肢和人机交互，并帮助理解感觉与情绪的耦合。",
-        "entities": [
-          "疼痛",
-          "神经科学",
-          "触觉"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Quanta Magazine",
-            "url": "https://www.quantamagazine.org/how-does-touch-lead-to-pain-or-pleasure-20260806/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.279114",
-        "source": "Quanta Magazine",
-        "url": "https://www.quantamagazine.org/how-does-touch-lead-to-pain-or-pleasure-20260806/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "3f3af1f8f42ae4bc449fe27b9cf85394",
-        "title": "谷歌AI权力重组背后：研究路线、算力与组织矛盾交织",
-        "chinese_title": "谷歌AI权力重组背后：研究路线、算力与组织矛盾交织",
-        "original_title": "The messy politics behind Google&rsquo;s big AI shakeup",
-        "summary": "谷歌调整AI领导架构，Jeff Dean与Demis Hassabis相关团队的权责变化，暴露前沿研究、产品化和资源分配之间的长期张力。",
-        "rating": "A+",
-        "score": 88,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "组织重组可能影响Gemini研发节奏、人才流向及谷歌云算力配置，值得持续跟踪核心研究人员去留。",
-        "entities": [
-          "DeepMind",
-          "Demis Hassabis",
-          "Gemini",
-          "Google",
-          "Jeff Dean"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Verge -  Tech Posts",
-            "url": "https://www.theverge.com/tech/976108/google-ai-leadership-shakeup-jeff-dean-demis-hassabis-deepmind"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.279280",
-        "source": "The Verge -  Tech Posts",
-        "url": "https://www.theverge.com/tech/976108/google-ai-leadership-shakeup-jeff-dean-demis-hassabis-deepmind",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "f7e1e8c025faa67c0958394a46c8204d",
-        "title": "通义千问追平Claude旗舰，但Kimi以更低成本继续领先",
-        "chinese_title": "通义千问追平Claude旗舰，但Kimi以更低成本继续领先",
-        "original_title": "Qwen3.8 Max catches Claude Opus 4.8 but Kimi K3 still scores higher for 25 percent less",
-        "summary": "一组模型对比显示，通义千问最新旗舰在能力上接近Claude Opus，而Kimi在部分综合指标上仍更高，推理成本约低四分之一。",
-        "rating": "A",
-        "score": 81,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "模型能力与价格的组合竞争，将影响企业选型和国产模型出海，也需核查不同基准的可复现性。",
-        "entities": [
-          "Claude",
-          "Kimi",
-          "Qwen",
-          "大模型基准"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER (kimi)",
-            "url": "https://the-decoder.com/qwen3-8-max-catches-claude-opus-4-8-but-kimi-k3-still-scores-higher-for-25-percent-less/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.279445",
-        "source": "THE DECODER (kimi)",
-        "url": "https://the-decoder.com/qwen3-8-max-catches-claude-opus-4-8-but-kimi-k3-still-scores-higher-for-25-percent-less/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "289ee94a6476204a8451ed2db1ae4ad4",
-        "title": "纳什维尔拟用征收权阻止动物园附近七亿美元数据中心",
-        "chinese_title": "纳什维尔拟用征收权阻止动物园附近七亿美元数据中心",
-        "original_title": "Nashville attempts to block controversial data center near zoo with eminent domain — city could force developer to sell the land for public use, rather than $700 million installation",
-        "summary": "纳什维尔市政府考虑通过公共征收迫使开发商出售土地，以阻止在动物园附近建设价值约7亿美元的数据中心。",
-        "rating": "A",
-        "score": 83,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "这一案例可能成为地方政府约束AI数据中心选址的样本，并引发土地权、税收与公共利益争议。",
-        "entities": [
-          "Ai数据中心",
-          "土地征收",
-          "纳什维尔"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/policy/nashville-attempts-to-block-controversial-data-center-near-zoo-with-eminent-domain-city-could-force-developer-to-sell-the-land-for-public-use-rather-than-usd700-million-installation"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.279545",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/policy/nashville-attempts-to-block-controversial-data-center-near-zoo-with-eminent-domain-city-could-force-developer-to-sell-the-land-for-public-use-rather-than-usd700-million-installation",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "b9be9e54fb416be1c5878ee1ba8ccaa2",
-        "title": "四万次实验显示：人类批准AI代理指令时漏掉三成威胁",
-        "chinese_title": "四万次实验显示：人类批准AI代理指令时漏掉三成威胁",
-        "original_title": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
-        "summary": "一项覆盖约四万轮游戏化实验的统计发现，人类在审批AI代理命令时会漏掉约三分之一的危险操作，暴露人工确认机制的局限。",
-        "rating": "A+",
-        "score": 87,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "结果将推动更细粒度权限、风险解释和自动策略引擎，也提示人工在环并非天然安全兜底。",
-        "entities": [
-          "Ai代理",
-          "人机协作",
-          "安全评估",
-          "权限控制"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://scalex.dev/blog/ai-agent-permissions-stats/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052081,
-        "published_at": "2026-08-07T05:34:41.279627",
-        "source": "Hacker News",
-        "url": "https://scalex.dev/blog/ai-agent-permissions-stats/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
-      },
-      {
-        "id": "d4f43a9f58dad858ff1adc0415e56245",
-        "title": "弗朗索瓦·肖莱改口：大模型可成为流动智能系统底座",
-        "chinese_title": "弗朗索瓦·肖莱改口：大模型可成为流动智能系统底座",
-        "original_title": "One thing I want to make perfectly clear: back in 2023 and early 2024, I was wrong about the role that LLMs would come to play. I underestimated their...",
-        "summary": "François Chollet回顾自己对大模型判断的转变，称测试时计算突破让他认识到LLM可以作为构建流动智能系统的基础。",
-        "rating": "A",
-        "score": 83,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "观点变化折射推理模型对AGI路线争论的影响，也可与ARC基准及符号方法的边界结合分析。",
-        "entities": [
-          "Arc",
-          "François Chollet",
-          "LLM",
-          "测试时计算"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/fchollet/status/2085416724266983682"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052080,
-        "published_at": "2026-08-07T05:34:40.869213",
-        "source": "x",
-        "url": "https://x.com/fchollet/status/2085416724266983682",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "1bc1f2793e25c56e3895b442536dc6ff",
-        "title": "Meta模型横扫五项数理奥赛：物理满分、数化金牌水平",
-        "chinese_title": "Meta模型横扫五项数理奥赛：物理满分、数化金牌水平",
-        "original_title": "To understand whether we're making genuine progress on reasoning, we entered our AI models in five STEM Olympiad competitions. The results: 🏅 Asian...",
-        "summary": "Meta称其AI模型参加五项STEM奥赛，在亚洲和国际物理奥赛理论考试获得满分，并达到数学、化学等赛事金牌水平。",
-        "rating": "S",
-        "score": 93,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "若结果和评测条件可复核，将成为通用推理能力的重要信号，也需警惕训练数据泄漏与工具使用差异。",
-        "entities": [
-          "Ai推理",
-          "Meta",
-          "国际数学奥林匹克",
-          "国际物理奥林匹克"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/AIatMeta/status/2085388945148297322"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052080,
-        "published_at": "2026-08-07T05:34:40.869297",
-        "source": "x",
-        "url": "https://x.com/AIatMeta/status/2085388945148297322",
-        "event_id": null,
-        "grade": "S",
-        "level": "S"
-      },
-      {
-        "id": "09a9dd6feec20ea6e7293929b2b7c17f",
-        "title": "OpenAI申请驳回苹果商业秘密诉讼，称指控缺乏具体标的",
-        "chinese_title": "OpenAI申请驳回苹果商业秘密诉讼，称指控缺乏具体标的",
-        "original_title": "OpenAI Asks Judge to Dismiss Apple Lawsuit",
-        "summary": "OpenAI请求法院驳回苹果的商业秘密诉讼，称苹果没有明确指出前员工带走的具体秘密，案件核心事实不足。",
-        "rating": "A",
-        "score": 82,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "争议将影响AI公司人才流动和商业秘密举证标准，也可能揭示双方内部研发与招聘流程。",
-        "entities": [
-          "Apple",
-          "OpenAI",
-          "商业秘密",
-          "诉讼"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information (apple)",
-            "url": "https://www.theinformation.com/briefings/openai-asks-judge-dismiss-apple-lawsuit"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052080,
-        "published_at": "2026-08-07T05:34:40.869879",
-        "source": "The Information (apple)",
-        "url": "https://www.theinformation.com/briefings/openai-asks-judge-dismiss-apple-lawsuit",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "34d3c16017cb7688dfd4ed6b102f9190",
-        "title": "OpenAI首款硬件据称是无屏随身音箱，售价超过300美元",
-        "chinese_title": "OpenAI首款硬件据称是无屏随身音箱，售价超过300美元",
-        "original_title": "OpenAI’s Smart Speaker Will Cost Over $300",
-        "summary": "报道称OpenAI计划在2027年推出曲棍球大小的无屏智能音箱，可在家中携带，预期售价在300至400美元。",
-        "rating": "A",
-        "score": 83,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "产品定位将检验无屏AI交互需求，并直接挑战苹果、亚马逊和谷歌的家庭入口。",
-        "entities": [
-          "Ai硬件",
-          "OpenAI",
-          "智能音箱"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/openais-smart-speaker-will-cost-300"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052080,
-        "published_at": "2026-08-07T05:34:40.869962",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/openais-smart-speaker-will-cost-300",
-        "event_id": null,
-        "grade": "A",
-        "level": "A"
-      },
-      {
-        "id": "ebeda5e853fd44348374629e3a938ec6",
-        "title": "Canva遭遇AI成本反噬：功能放量放缓，增长预期下调",
-        "chinese_title": "Canva遭遇AI成本反噬：功能放量放缓，增长预期下调",
-        "original_title": "Canva Hits AI Speedbump on Costs, ChatGPT Competition",
-        "summary": "Canva的AI功能因使用量超预期推高成本，公司被迫放慢开放节奏，并下调年度收入增长预测，同时面临ChatGPT竞争。",
-        "rating": "A+",
-        "score": 88,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "案例揭示生成式AI功能的单位经济难题，也会影响SaaS定价、算力采购和产品集成策略。",
-        "entities": [
-          "Canva",
-          "GPT",
-          "Saas",
-          "生成式Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/canva-hits-ai-speedbump-costs-chatgpt-competition"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1786052080,
-        "published_at": "2026-08-07T05:34:40.870046",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/canva-hits-ai-speedbump-costs-chatgpt-competition",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+"
+        "url": "https://www.theinformation.com/articles/nvidia-nears-deal-guarantee-100-billion-financing-massive-data-center",
+        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-08-14T05:08:29.094563",
-  "total_news": 278
+  "last_updated": "2026-08-15T09:01:50.333074",
+  "total_news": 215
 }
