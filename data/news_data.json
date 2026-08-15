@@ -2,6 +2,156 @@
   "news": {
     "2026-08-15": [
       {
+        "id": "7784fcb298146235dd2049055dfc3175",
+        "title": "Claude水印机制引发合规讨论",
+        "chinese_title": "Claude水印机制引发合规讨论",
+        "original_title": "Watermarking without quality loss is a bit unintuitive, doesn't feel like it should work. I made this artifact with Claude to help me understand how i...",
+        "summary": "Anthropic 进一步解释 Claude 文本水印：水印用于满足欧盟 AI 法案要求，但对代码和事实文本较稀疏，完整改写后可能消失，引发创作者和平台对可检测性的讨论。",
+        "rating": "A",
+        "score": 80,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延展到欧盟 AI 法案落地、各大模型厂商是否跟进，以及内容平台如何处理低可靠度的 AI 生成判定。",
+        "entities": [
+          "Ai水印",
+          "Anthropic",
+          "Claude",
+          "Eu Ai Act"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/trq212/status/2088721023223132213"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786827910,
+        "published_at": "2026-08-16T05:05:10.769720",
+        "source": "x",
+        "url": "https://x.com/trq212/status/2088721023223132213",
+        "event_id": null
+      },
+      {
+        "id": "90a8250e79750ba42e51a55e06c097a8",
+        "title": "OpenAI早期GPU骨干Scott Gray离职",
+        "chinese_title": "OpenAI早期GPU骨干Scott Gray离职",
+        "original_title": "Scott Gray leaves OpenAI. He joined the company in 2016 and helped build the GPU infrastructure behind its earliest breakthroughs, from sparse transfo...",
+        "summary": "长期参与 OpenAI GPU 基础设施、稀疏 Transformer 和 GPT-3 早期扩展工作的 Scott Gray 离职，叠加 2026 年多名高层离开，继续放大 IPO 前组织稳定性疑问。",
+        "rating": "A",
+        "score": 80,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "可追踪 OpenAI 基建团队流失是否影响训练效率、模型路线和上市叙事，也可对比 Anthropic、Meta 的人才争夺。",
+        "entities": [
+          "GPT",
+          "Gpu基础设施",
+          "OpenAI",
+          "Scott Gray"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/kimmonismus/status/2088647536684712289"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786827910,
+        "published_at": "2026-08-16T05:05:10.770555",
+        "source": "x",
+        "url": "https://x.com/kimmonismus/status/2088647536684712289",
+        "event_id": null
+      },
+      {
+        "id": "15f1f3c6721bce17d9a1ece29f2da921",
+        "title": "英伟达缩减OpenAI数据中心担保",
+        "chinese_title": "英伟达缩减OpenAI数据中心担保",
+        "original_title": "Investor pressure forces Nvidia to shrink its OpenAI bet just as Anthropic's numbers defy bubble warnings",
+        "summary": "The Decoder 称英伟达在投资者压力下，将 OpenAI 俄亥俄数据中心担保规模从 2500 亿美元压至约 1200 亿美元，同时 Anthropic 收入增长加剧泡沫争议。",
+        "rating": "A+",
+        "score": 91,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延展到 AI 基建融资风险、芯片商资产负债压力，以及 Anthropic/OpenAI 收入预期对估值的支撑。",
+        "entities": [
+          "Anthropic",
+          "NVIDIA",
+          "OpenAI",
+          "数据中心融资"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/investor-pressure-forces-nvidia-to-shrink-its-openai-bet-just-as-anthropics-numbers-defy-bubble-warnings/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786827910,
+        "published_at": "2026-08-16T05:05:10.772895",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/investor-pressure-forces-nvidia-to-shrink-its-openai-bet-just-as-anthropics-numbers-defy-bubble-warnings/",
+        "event_id": null
+      },
+      {
+        "id": "f02d00413132ed28b3a49d534b689c03",
+        "title": "Claude水印只提示可能参与生成",
+        "chinese_title": "Claude水印只提示可能参与生成",
+        "original_title": "Anthropic details Claude's text watermark: it only shows Claude was likely involved, is sparse in code and factual text, and disappears after a full rewrite (Anthropic)",
+        "summary": "Anthropic 披露 Claude 文本水印细节，强调其是概率性信号而非绝对判定，且在代码、事实文本和完整改写场景中会明显减弱。",
+        "rating": "A",
+        "score": 79,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延展到 AI 内容检测产品的误判风险，以及监管要求与实际技术能力之间的落差。",
+        "entities": [
+          "Ai水印",
+          "Anthropic",
+          "Claude",
+          "内容检测"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260815/p11#a260815p11"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786827910,
+        "published_at": "2026-08-16T05:05:10.772987",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260815/p11#a260815p11",
+        "event_id": null
+      },
+      {
+        "id": "3cc7eee78f2398e2cc20d9c3eeedd3fa",
+        "title": "Meta智能眼镜隐私争议继续升温",
+        "chinese_title": "Meta智能眼镜隐私争议继续升温",
+        "original_title": "Man Wearing Pervert Glasses Films Himself Harassing Famous Female Comedian in the Middle of TV Shoot",
+        "summary": "Futurism 报道称一名男子佩戴带摄像头的 Meta 智能眼镜骚扰女性喜剧演员，此前该类设备已在法院、公共隐私和骚扰场景中引发争议。",
+        "rating": "A",
+        "score": 75,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可延展到可穿戴摄像头监管、平台责任和公共空间隐私，也可追踪 Meta 智能眼镜商业化阻力。",
+        "entities": [
+          "Meta",
+          "可穿戴设备",
+          "智能眼镜",
+          "隐私"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/pervert-glasses-harassing-diane-morgan-philomena-cunk"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786827910,
+        "published_at": "2026-08-16T05:05:10.773076",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/pervert-glasses-harassing-diane-morgan-philomena-cunk",
+        "event_id": null
+      },
+      {
         "id": "8a19c14d279b7f1500f714b616936d2f",
         "title": "Claude文本水印机制浮出水面",
         "chinese_title": "Claude文本水印机制浮出水面",
@@ -1180,9 +1330,7 @@
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260814/p14#a260814p14",
         "event_id": null
-      }
-    ],
-    "2026-08-14": [
+      },
       {
         "id": "3a9fd7bc021d22e5bad285b8968233a2",
         "title": "Grok再次暴露安全护栏问题",
@@ -1415,7 +1563,9 @@
         "source": "Techmeme",
         "url": "https://www.techmeme.com/260814/p12#a260814p12",
         "event_id": null
-      },
+      }
+    ],
+    "2026-08-14": [
       {
         "id": "99cf57710e8ab02c55a2acc23d27f9a4",
         "title": "Anthropic研究者用内部模型解决Hadamard矩阵问题",
@@ -7735,8 +7885,191 @@
         "grade": "A+",
         "level": "A+"
       }
+    ],
+    "2026-08-16": [
+      {
+        "id": "edef5cdbe627b05b2b0738e7f1e3276b",
+        "title": "英伟达拟向SB Energy投资30亿美元",
+        "chinese_title": "英伟达拟向SB Energy投资30亿美元",
+        "original_title": "Nvidia in Talks to Invest $3 Billion in SB Energy as Part of OpenAI Data Center Deal",
+        "summary": "The Information 称英伟达正讨论向软银支持的 SB Energy 投资最高 30 亿美元，交易与 OpenAI 俄亥俄超大数据中心项目及芯片融资支持绑定。",
+        "rating": "S",
+        "score": 92,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延展到英伟达从芯片供应商转为 AI 基建融资方的风险敞口，以及 SoftBank、OpenAI 的数据中心资本结构。",
+        "entities": [
+          "NVIDIA",
+          "OpenAI",
+          "Sb Energy",
+          "Softbank",
+          "数据中心"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/nvidia-talks-invest-3-billion-sb-energy-part-openai-data-center-deal"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786827910,
+        "published_at": "2026-08-16T05:05:10.771591",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/nvidia-talks-invest-3-billion-sb-energy-part-openai-data-center-deal",
+        "event_id": null
+      },
+      {
+        "id": "c6107ae96556d3f6e09d5d29d8e50940",
+        "title": "评测工具揭示AI最自信时也会错",
+        "chinese_title": "评测工具揭示AI最自信时也会错",
+        "original_title": "An eval harness found what qualitative review couldn't: AI models are most confident when wrong",
+        "summary": "VentureBeat 报道称，一个评测 harness 发现模型在错误答案上同样可能高度自信，提醒 AI 工具团队不能只依赖人工观感，而要把可验证正确性纳入开发流程。",
+        "rating": "A",
+        "score": 80,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延展到企业 AI 工作流的验收标准、评测即产品基础设施，以及模型幻觉对垂直工具商业化的约束。",
+        "entities": [
+          "Ai评测",
+          "LLM",
+          "Venturebeat",
+          "评测工具"
+        ],
+        "sourceLinks": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/orchestration/an-eval-harness-found-what-qualitative-review-couldnt-ai-models-are-most-confident-when-wrong"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786827910,
+        "published_at": "2026-08-16T05:05:10.771724",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/orchestration/an-eval-harness-found-what-qualitative-review-couldnt-ai-models-are-most-confident-when-wrong",
+        "event_id": null
+      },
+      {
+        "id": "5f7dfdea2d27ec9a946057e19bdcc48b",
+        "title": "Anthropic详解Claude文本水印",
+        "chinese_title": "Anthropic详解Claude文本水印",
+        "original_title": "Anthropic shares more details about how Claude’s new watermarks will work",
+        "summary": "Anthropic 说明 Claude 新文本水印的工作方式、适用范围和局限：它只能提示 Claude 可能参与生成，在代码和事实文本中较稀疏，完整重写后会消失。",
+        "rating": "A",
+        "score": 79,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可结合欧盟 AI 法案、内容溯源和开发者体验，追踪 OpenAI、Google 等厂商是否采用类似机制。",
+        "entities": [
+          "Ai水印",
+          "Anthropic",
+          "Claude",
+          "Eu Ai Act"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786827910,
+        "published_at": "2026-08-16T05:05:10.771852",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
+        "event_id": null
+      },
+      {
+        "id": "da001eb3e9e41d890085fa515b1a7a2b",
+        "title": "AI训练公司开始收购内部数据集",
+        "chinese_title": "AI训练公司开始收购内部数据集",
+        "original_title": "Sources: Mercor and other firms gathering data for AI labs are driving demand to buy or license internal datasets from startups shutting down or being acquired (Alix Coutures/The Information)",
+        "summary": "The Information 称 Mercor 等为 AI 实验室收集数据的公司，正在向关停或被收购的创业公司购买、授权内部数据集，显示高质量私有数据进入新一轮竞价。",
+        "rating": "A+",
+        "score": 88,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延展到数据资产估值、创业公司清算价值和 AI 实验室数据供应链，也可追踪隐私与合同授权风险。",
+        "entities": [
+          "Ai实验室",
+          "Mercor",
+          "The Information",
+          "内部数据集"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260815/p13#a260815p13"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786827910,
+        "published_at": "2026-08-16T05:05:10.772162",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260815/p13#a260815p13",
+        "event_id": null
+      },
+      {
+        "id": "091bf1d9c7db2b15c35bc2bc0ae97d1e",
+        "title": "Grok被指生成大量儿童性虐待图像",
+        "chinese_title": "Grok被指生成大量儿童性虐待图像",
+        "original_title": "A Wyoming woman joined a federal suit against xAI alleging her stepfather used Grok to turn one childhood photo of her into 7,000+ CSAM images he traded online (Washington Post)",
+        "summary": "一名怀俄明女性加入针对 xAI 的联邦诉讼，称其继父用 Grok 将她童年照片生成 7000 多张 CSAM 图像并在线交易，凸显生成式 AI 安全边界。",
+        "rating": "A",
+        "score": 86,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延展到图像模型滥用、平台责任和监管诉讼，也可对比 OpenAI、Meta 等厂商的未成年人安全措施。",
+        "entities": [
+          "Csam",
+          "Grok",
+          "xAI",
+          "生成式Ai安全"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260815/p12#a260815p12"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786827910,
+        "published_at": "2026-08-16T05:05:10.772710",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260815/p12#a260815p12",
+        "event_id": null
+      },
+      {
+        "id": "27ac3051c3cc2c0d897012887a7d8102",
+        "title": "SpaceX正式完成收购Cursor",
+        "chinese_title": "SpaceX正式完成收购Cursor",
+        "original_title": "SpaceX officially closes its Cursor acquisition",
+        "summary": "TechCrunch 报道称 AI 编程创业公司 Cursor 已正式并入 SpaceX，意味着马斯克旗下公司在代码智能体和内部工程自动化上继续加码。",
+        "rating": "A+",
+        "score": 89,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可延展到 SpaceX、xAI 与开发工具链的整合，以及 Anthropic、OpenAI 在编码代理市场的竞争压力。",
+        "entities": [
+          "Ai编程",
+          "Cursor",
+          "Elon Musk",
+          "SpaceX"
+        ],
+        "sourceLinks": [
+          {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1786827910,
+        "published_at": "2026-08-16T05:05:10.772802",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
+        "event_id": null
+      }
     ]
   },
-  "last_updated": "2026-08-15T09:06:40.242958",
-  "total_news": 252
+  "last_updated": "2026-08-16T05:05:14.832528",
+  "total_news": 263
 }
