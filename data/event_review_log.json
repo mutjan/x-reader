@@ -1776,6 +1776,25 @@
           "reason": "该条Reuters报道与Z.ai发布GLM-5.3及其网络安全能力属于同一产品发布/能力披露事件，应并入Z.ai发布GLM-5.3事件。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-08-18T07:11:23.603111",
+      "batch_id": "20260818_manual_review",
+      "corrections_applied": 2,
+      "details": [
+        {
+          "news_id": "8a831876f34899ad2693b47459463665",
+          "from_event_id": "7f3d82da",
+          "to_event_id": "new_event",
+          "reason": "企业AI智能体控制层需求与阿里出售游戏业务筹资属于不同事件，不能因泛化AI实体合并。"
+        },
+        {
+          "news_id": "0221a31c3def917cb6bd6cd66c1e5eae",
+          "from_event_id": "00def2c4",
+          "to_event_id": "new_event",
+          "reason": "ChatGPT对话进入FBI调查是隐私与执法事件，不属于OpenAI训练安全代码和网络防御事件。"
+        }
+      ]
     }
   ],
   "reviews": [
