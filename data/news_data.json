@@ -1,6 +1,6 @@
 {
   "news": {
-    "2026-08-23": [
+    "2026-08-24": [
       {
         "id": "824e0af8a402d7cea54719df79e6f739",
         "title": "Claude与OpenAI订阅算力价值被量化",
@@ -175,6 +175,834 @@
         "published_at": "2026-08-24T06:28:03.069928",
         "source": "Machine Learning",
         "url": "https://www.reddit.com/r/MachineLearning/comments/1vwa9ap/when_an_ai_agent_says_done_how_do_you_know_it/",
+        "event_id": null
+      },
+      {
+        "id": "8dad9f581acbc1abbf7a18437afa4674",
+        "title": "Simon Willison谈代码行数与系统完整性",
+        "chinese_title": "Simon Willison谈代码行数与系统完整性",
+        "original_title": "Conceptual integrity and counting lines of code",
+        "summary": "Simon Willison 讨论概念完整性和代码行数在软件工程中的关系，对 LLM 辅助开发下如何控制复杂度提供了实践视角。",
+        "rating": "A",
+        "score": 78,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可延伸到 AI 编程时代的代码审查、架构边界和工程质量评估方法。",
+        "entities": [
+          "LLM",
+          "Simon Willison",
+          "软件工程"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Simon Willison’s Newsletter (deepseek)",
+            "url": "https://simonw.substack.com/p/conceptual-integrity-and-counting"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.068569",
+        "source": "Simon Willison’s Newsletter (deepseek)",
+        "url": "https://simonw.substack.com/p/conceptual-integrity-and-counting",
+        "event_id": null
+      },
+      {
+        "id": "5fc28f02c7f7cb387e15436b4190fcc7",
+        "title": "Etched专用ASIC正面挑战英伟达GPU",
+        "chinese_title": "Etched专用ASIC正面挑战英伟达GPU",
+        "original_title": "Etched Sohu vs. Nvidia: Transformer ASIC vs. GPU (2026) – Spheron Blog",
+        "summary": "文章比较 Etched Sohu Transformer ASIC 与英伟达 GPU 在推理场景的取舍，反映专用 AI 芯片对通用 GPU 的成本和能效挑战。",
+        "rating": "A",
+        "score": 82,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可追踪 ASIC 推理路线是否在固定 Transformer 工作负载上形成成本优势，并影响云厂商采购策略。",
+        "entities": [
+          "Etched",
+          "NVIDIA",
+          "Sohu",
+          "Transformer Asic"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.spheron.network/blog/etched-ai-sohu-vs-nvidia-transformer-asic-inference/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.068903",
+        "source": "Hacker News",
+        "url": "https://www.spheron.network/blog/etched-ai-sohu-vs-nvidia-transformer-asic-inference/",
+        "event_id": null
+      },
+      {
+        "id": "e51017e8b3e9b5658c659ece9273ddad",
+        "title": "Agent.md成LLM写代码的新约束文件",
+        "chinese_title": "Agent.md成LLM写代码的新约束文件",
+        "original_title": "My agent.md to improve LLM-assisted code quality",
+        "summary": "开发者分享用 agent.md 约束 LLM 辅助编程质量的实践，把项目规则、审查偏好和上下文边界写入可复用文档。",
+        "rating": "B",
+        "score": 69,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸到团队级 AI 编程规范、仓库内上下文工程和 Codex/Claude Code 的协作模式。",
+        "entities": [
+          "Agent.Md",
+          "Claude Code",
+          "Codex",
+          "LLM"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://fabiensanglard.net/agent.md/index.html"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.068989",
+        "source": "Hacker News",
+        "url": "https://fabiensanglard.net/agent.md/index.html",
+        "event_id": null
+      },
+      {
+        "id": "4878254202217e5191f3e572cca3e833",
+        "title": "Anthropic旗舰模型企业使用遇冷",
+        "chinese_title": "Anthropic旗舰模型企业使用遇冷",
+        "original_title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+        "summary": "金融时报称 Anthropic 最强模型在企业 AI 支出中占比不高，客户更多转向价格更低的模型，显示性能溢价正在承压。",
+        "rating": "A",
+        "score": 86,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可继续观察前沿模型价格体系、企业 ROI 门槛和开源替代对闭源旗舰模型的挤压。",
+        "entities": [
+          "Anthropic",
+          "Fable",
+          "Opus",
+          "Ramp"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.069073",
+        "source": "Hacker News",
+        "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+        "event_id": null
+      },
+      {
+        "id": "9d608e22880bea899b80e8c8b20e879b",
+        "title": "Hugging Face被曝寻求百亿美元级出售",
+        "chinese_title": "Hugging Face被曝寻求百亿美元级出售",
+        "original_title": "Sources: Hugging Face is exploring a sale that could value it at $13B+, up from $4.5B in 2023, and has been working with a bank to evaluate bidders' interest (Katie Roof/Business Insider)",
+        "summary": "消息称 Hugging Face 正探索出售，估值可能超过 130 亿美元，较 2023 年 45 亿美元估值大幅上升。",
+        "rating": "A+",
+        "score": 87,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "若交易推进，将影响开源 AI 基础设施归属、云厂商生态卡位和模型分发平台估值。",
+        "entities": [
+          "Ai基础设施",
+          "Business Insider",
+          "Hugging Face"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260823/p9#a260823p9"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.069157",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260823/p9#a260823p9",
+        "event_id": null
+      },
+      {
+        "id": "8baea98199dde857bcbade1ecfb68b21",
+        "title": "陶哲轩试用编码Agent筛选新论文",
+        "chinese_title": "陶哲轩试用编码Agent筛选新论文",
+        "original_title": "As an experiment, I directed a coding agent to sort through recent #arXiv posts for similarity in topic or keywords to my own research papers, with additional weighting for papers authored by my former collaborators or mentees (such papers are marked with a star in the lists provided below).  I also asked the agent to assess the degree of AI assistance in each paper using robot emojis, with one emoji denoting minor assistance, two denoting major assistance, and three denoting near-total automation.  (A computer emoji is also used to indicate more traditional computer assistance, e.g., in numerics.) The lists produced by the agent for the months of July and of August respectively are provided below.  (It is important to stress that the AI-generated rankings here are based on proximity to my own interests, and should not be regarded as an absolute ranking of importance of the result.) The generation of these listings is highly unscientific and tailored to my own personal preferences (and there was at least one annotation error, in that the author Van Khu Vu was confused with my collaborator Van Ha Vu), but it does indicate to me the increasing adoption of AI assistance, at least in my own fields of interest.",
+        "summary": "陶哲轩尝试让 coding agent 按主题和合作者关系筛选 arXiv 新论文，展示研究工作流中半自动文献发现的新形态。",
+        "rating": "B",
+        "score": 70,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸到科研助手、论文推荐可信度和学术工作流自动化的编辑选题。",
+        "entities": [
+          "Arxiv",
+          "Coding Agent",
+          "Terence Tao"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Terence Tao",
+            "url": "https://mathstodon.xyz/@tao/117146243330221809"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.069240",
+        "source": "Terence Tao",
+        "url": "https://mathstodon.xyz/@tao/117146243330221809",
+        "event_id": null
+      },
+      {
+        "id": "84846b119378c96066abe2aed451a569",
+        "title": "Stripe总裁称AI将改写结账页面",
+        "chinese_title": "Stripe总裁称AI将改写结账页面",
+        "original_title": "Stripe president says checkout pages ‘will go away’ as AI commerce expands",
+        "summary": "Stripe 总裁认为随着 agentic commerce 扩张，传统 checkout 页面会逐渐消失，支付流程将更多由 AI 代理完成。",
+        "rating": "A+",
+        "score": 91,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可追踪支付基础设施、商家转化路径和 AI 代理购物协议之间的新竞争。",
+        "entities": [
+          "Agentic Commerce",
+          "Ai代理",
+          "Stripe"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI - Business Insider",
+            "url": "https://www.businessinsider.com/stripe-checkout-pages-future-ai-agentic-commerce-2026-8"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.069325",
+        "source": "AI - Business Insider",
+        "url": "https://www.businessinsider.com/stripe-checkout-pages-future-ai-agentic-commerce-2026-8",
+        "event_id": null
+      },
+      {
+        "id": "5ddbfbe6d5235030750a49e8f4f1ab78",
+        "title": "英国金融时报警告勿赋予AI法律人格",
+        "chinese_title": "英国金融时报警告勿赋予AI法律人格",
+        "original_title": "We must not grant AI agents legal personhood",
+        "summary": "文章主张不应给予 AI agents 法律人格，强调责任归属、监管边界和人类主体性仍需清晰界定。",
+        "rating": "A+",
+        "score": 87,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸到 AI 代理签约、自动交易和企业责任承担的政策讨论。",
+        "entities": [
+          "Ai Agents",
+          "法律人格",
+          "监管"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://www.ft.com/content/b8cc4bf4-6d3c-4974-8428-9a091983c473"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.069416",
+        "source": "Hacker News",
+        "url": "https://www.ft.com/content/b8cc4bf4-6d3c-4974-8428-9a091983c473",
+        "event_id": null
+      },
+      {
+        "id": "5acbbb7b3851c3efc23d981f5669939c",
+        "title": "Ramp数据称Anthropic旗舰模型支出占比停滞",
+        "chinese_title": "Ramp数据称Anthropic旗舰模型支出占比停滞",
+        "original_title": "Ramp data: Fable 5, launched in June, has plateaued at ~11% of spending on Anthropic tools, as companies shift to cheaper models; Opus 5 surpassed Fable 5 (George Hammond/Financial Times)",
+        "summary": "Ramp 数据显示 Fable 5 在 Anthropic 工具支出中约占 11%，企业用户正向更便宜模型迁移，Opus 5 支出反超。",
+        "rating": "A",
+        "score": 85,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可结合订阅算力价值和开源替代，跟踪企业模型采购是否从最强性能转向性价比。",
+        "entities": [
+          "Anthropic",
+          "Fable",
+          "Opus",
+          "Ramp"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260823/p8#a260823p8"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.069506",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260823/p8#a260823p8",
+        "event_id": null
+      },
+      {
+        "id": "601af275e9600c48894e37331d93fa7e",
+        "title": "Galbot人形机器人完成百次网球回合",
+        "chinese_title": "Galbot人形机器人完成百次网球回合",
+        "original_title": "WHRG'26: Galbot’s humanoid robot just completed +100 consecutive tennis rallies autonomously",
+        "summary": "Galbot 人形机器人在演示中完成连续百次以上自主网球回合，体现运动控制和视觉反馈能力的进展。",
+        "rating": "B",
+        "score": 66,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可继续核验演示条件，并观察人形机器人从展示项目走向可复现实验指标的速度。",
+        "entities": [
+          "Galbot",
+          "Humanoid Robot",
+          "机器人运动控制"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Technological Singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1vwclb9/whrg26_galbots_humanoid_robot_just_completed_100/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.069591",
+        "source": "Technological Singularity",
+        "url": "https://www.reddit.com/r/singularity/comments/1vwclb9/whrg26_galbots_humanoid_robot_just_completed_100/",
+        "event_id": null
+      },
+      {
+        "id": "5844bf6940660e0388d35561e2ab2b39",
+        "title": "GLM开源模型被称成本仅为闭源五分之一",
+        "chinese_title": "GLM开源模型被称成本仅为闭源五分之一",
+        "original_title": "GLM-5.3 (open-weight) beat Anthropic/OpenAI models – for 1/5 the cost",
+        "summary": "评测称开源权重 GLM-5.3 以更低成本击败 Anthropic 和 OpenAI 模型，但来源可信度和测试方法仍需谨慎核验。",
+        "rating": "B",
+        "score": 73,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可追踪开源模型性价比叙事是否被更多独立基准验证，并影响企业模型选择。",
+        "entities": [
+          "Anthropic",
+          "Glm",
+          "Open-Weight Model",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Hacker News",
+            "url": "https://reinvently.co.uk/tools/ed-o-meter/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.070015",
+        "source": "Hacker News",
+        "url": "https://reinvently.co.uk/tools/ed-o-meter/",
+        "event_id": null
+      }
+    ],
+    "2026-08-23": [
+      {
+        "id": "12b63cc628166cb6b47524b2075f392f",
+        "title": "阿里巴巴拟募资百亿美元加码AI",
+        "chinese_title": "阿里巴巴拟募资百亿美元加码AI",
+        "original_title": "Alibaba plans to raise ~$10B in a follow-on share offering to fund AI investments; sources: it plans to offer 710M shares at a 3.6% discount to Friday's close (Reuters)",
+        "summary": "路透称阿里巴巴计划增发约 7100 万股、募资约 100 亿美元用于 AI 投资，折射中国互联网巨头继续押注 AI 基建和模型。",
+        "rating": "A+",
+        "score": 87,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可追踪阿里云、通义模型和中国 AI 资本开支周期，也会影响港股科技股估值叙事。",
+        "entities": [
+          "Ai投资",
+          "Alibaba",
+          "Reuters",
+          "阿里云"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260823/p7#a260823p7"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.204347",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260823/p7#a260823p7",
+        "event_id": null
+      },
+      {
+        "id": "9ceac649f637ee8f91e3ee8ebd7b246b",
+        "title": "中国关键探月发射因求稳推迟至2027年",
+        "chinese_title": "中国关键探月发射因求稳推迟至2027年",
+        "original_title": "Due to need for 'absolute success,' China delays critical Moon launch to 2027",
+        "summary": "报道称中国因强调任务必须绝对成功，将关键月球发射任务推迟至 2027 年，显示深空任务对可靠性的要求提高。",
+        "rating": "B",
+        "score": 69,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸到中国探月工程节奏、航天供应链和国际月球竞赛节点变化。",
+        "entities": [
+          "Ars Technica",
+          "Moon Launch",
+          "中国探月工程"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Space – Ars Technica",
+            "url": "https://arstechnica.com/space/2026/08/due-to-need-for-absolute-success-china-delays-critical-moon-launch-to-2027/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.204447",
+        "source": "Space – Ars Technica",
+        "url": "https://arstechnica.com/space/2026/08/due-to-need-for-absolute-success-china-delays-critical-moon-launch-to-2027/",
+        "event_id": null
+      },
+      {
+        "id": "2b552e0f84f9539827b2743ce2a26aef",
+        "title": "宇树IPO股价暴涨背后有中国新股逻辑",
+        "chinese_title": "宇树IPO股价暴涨背后有中国新股逻辑",
+        "original_title": "Why Unitree’s 460% IPO Stock Pop Wasn’t Unusual in China",
+        "summary": "The Information 分析称宇树上市后股价大涨并非孤例，反映中国资本市场对机器人题材和新股机制的特殊定价。",
+        "rating": "A",
+        "score": 78,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延伸到人形机器人公司估值、A股/港股新股规则和产业资本热度。",
+        "entities": [
+          "Ipo",
+          "Unitree",
+          "中国资本市场",
+          "机器人"
+        ],
+        "sourceLinks": [
+          {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/unitrees-460-ipo-stock-pop-unusual-china"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.204536",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/unitrees-460-ipo-stock-pop-unusual-china",
+        "event_id": null
+      },
+      {
+        "id": "ea55baf0e482af287051307982e22f2f",
+        "title": "折叠iPhone早期体验细节曝光",
+        "chinese_title": "折叠iPhone早期体验细节曝光",
+        "original_title": "Sources: foldable iPhone feels durable, fits well in a pocket, has useful iPad-like app layouts, excels as a camera viewfinder but lacks telephoto and Face ID (Mark Gurman/Bloomberg)",
+        "summary": "Mark Gurman 称折叠 iPhone 原型耐用、便携并具备类似 iPad 的应用布局，但可能缺少长焦和 Face ID。",
+        "rating": "A",
+        "score": 82,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可追踪苹果进入折叠屏后对高端手机换机周期、供应链和安卓折叠屏竞争的影响。",
+        "entities": [
+          "Apple",
+          "Face Id",
+          "Foldable Iphone",
+          "Mark Gurman"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260823/p6#a260823p6"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.204626",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260823/p6#a260823p6",
+        "event_id": null
+      },
+      {
+        "id": "32a718c3ed202365cf044004ac110863",
+        "title": "Qwen跨云推理实验达到每秒28 Token",
+        "chinese_title": "Qwen跨云推理实验达到每秒28 Token",
+        "original_title": "28 TPS on Qwen2.5-7B across two separate cloud regions over public WAN using speculative decoding + CUDA Graphs [P]",
+        "summary": "开发者展示 Qwen2.5-7B 在两个云区域间通过 speculative decoding 和 CUDA Graphs 达到 28 TPS 的实验。",
+        "rating": "B",
+        "score": 66,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸到分布式推理、跨区域延迟优化和中小模型部署成本。",
+        "entities": [
+          "Cuda Graphs",
+          "Qwen",
+          "Speculative Decoding"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1vw5ysj/28_tps_on_qwen257b_across_two_separate_cloud/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.204977",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1vw5ysj/28_tps_on_qwen257b_across_two_separate_cloud/",
+        "event_id": null
+      },
+      {
+        "id": "8ba56887bcd164fa3926e0b488865dfe",
+        "title": "英伟达GB300桌面AI工作站标价近十万美元",
+        "chinese_title": "英伟达GB300桌面AI工作站标价近十万美元",
+        "original_title": "Nvidia’s GB300-powered DGX Station desktop tower listed for nearly $100,000 online — Enterprise AI powerhouse now available to buy for mere mortals with lots of cash",
+        "summary": "搭载 GB300 的 Nvidia DGX Station 桌面塔式机在线上架，接近 10 万美元定价显示企业级 AI 算力正在向工作站形态下沉。",
+        "rating": "A",
+        "score": 76,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可观察本地企业 AI 工作站市场、开发者私有推理需求和高端 GPU 供给。",
+        "entities": [
+          "Ai工作站",
+          "Dgx Station",
+          "Gb300",
+          "NVIDIA"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/desktops/nvidias-gb300-powered-dgx-station-desktop-tower-listed-for-nearly-usd100-000-online-enterprise-ai-powerhouse-now-available-to-buy-for-mere-mortals-with-lots-of-cash"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.205315",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/desktops/nvidias-gb300-powered-dgx-station-desktop-tower-listed-for-nearly-usd100-000-online-enterprise-ai-powerhouse-now-available-to-buy-for-mere-mortals-with-lots-of-cash",
+        "event_id": null
+      },
+      {
+        "id": "b7bafb4bac01eeb3c2668124a5f648b6",
+        "title": "AI老板在人工提醒后首次解雇员工",
+        "chinese_title": "AI老板在人工提醒后首次解雇员工",
+        "original_title": "An AI boss fired its first employee but only after humans reminded it of its own rules",
+        "summary": "报道描述一个 AI 管理者在被人类提醒自身规则后解雇员工，凸显 AI 管理实验中的责任边界和规则执行问题。",
+        "rating": "A",
+        "score": 85,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可延伸到 AI 参与管理决策、劳动法责任和企业自动化治理边界。",
+        "entities": [
+          "Ai Boss",
+          "Ai管理",
+          "劳动治理"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/an-ai-boss-fired-its-first-employee-but-only-after-humans-reminded-it-of-its-own-rules/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.205396",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/an-ai-boss-fired-its-first-employee-but-only-after-humans-reminded-it-of-its-own-rules/",
+        "event_id": null
+      },
+      {
+        "id": "b101bb093fd23be0a11e154eeb286d79",
+        "title": "FCC撤销HoverAir无人机认证堵住监管漏洞",
+        "chinese_title": "FCC撤销HoverAir无人机认证堵住监管漏洞",
+        "original_title": "Modular pocket gimbal camera that transforms into a self-flying drone retroactively banned by FCC, certification revoked — Agency closes foreign UAS loophole on 230g HoverAir Versa",
+        "summary": "美国 FCC 在 HoverAir Versa 发布三天后撤销其认证，称要关闭外国无人机系统相关漏洞。",
+        "rating": "A",
+        "score": 80,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸到消费无人机监管、供应链安全和中美硬件产品准入风险。",
+        "entities": [
+          "Fcc",
+          "Hoverair Versa",
+          "Uas",
+          "无人机"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/drones/fcc-pulls-hoverair-versa-certification-three-days-after-launch"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.205478",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/drones/fcc-pulls-hoverair-versa-certification-three-days-after-launch",
+        "event_id": null
+      },
+      {
+        "id": "e14bf43c2e46c170a1465a857db1978e",
+        "title": "赫拉利呼吁现在抵制赋予AI权利",
+        "chinese_title": "赫拉利呼吁现在抵制赋予AI权利",
+        "original_title": "The author of 'Sapiens' says 'now is the time' to resist giving AI rights",
+        "summary": "《人类简史》作者 Yuval Noah Harari 表示现在应抵制给予 AI 权利，担心技术叙事混淆人类责任与机器地位。",
+        "rating": "A",
+        "score": 86,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可与 AI 法律人格、代理责任和监管伦理议题形成组合报道。",
+        "entities": [
+          "Ai Rights",
+          "Sapiens",
+          "Yuval Noah Harari"
+        ],
+        "sourceLinks": [
+          {
+            "name": "AI - Business Insider",
+            "url": "https://www.businessinsider.com/sapiens-author-ai-rights-resist-yuval-noah-harari-2026-8"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.205564",
+        "source": "AI - Business Insider",
+        "url": "https://www.businessinsider.com/sapiens-author-ai-rights-resist-yuval-noah-harari-2026-8",
+        "event_id": null
+      },
+      {
+        "id": "48e8197e8424fe01e214a5b0cac167e8",
+        "title": "清华师徒轨迹折射中国AI跃迁",
+        "chinese_title": "清华师徒轨迹折射中国AI跃迁",
+        "original_title": "The careers of Z.ai's Tang Jie and Moonshot AI's Yang Zhilin, once teacher and pupil at Tsinghua University, show that China's AI leap is no sudden development (Raffaele Huang/Wall Street Journal)",
+        "summary": "报道通过 Z.ai 唐杰和 Moonshot AI 杨植麟的职业路径，呈现中国 AI 发展并非突然爆发，而是多年学术和产业积累的结果。",
+        "rating": "A",
+        "score": 83,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "可延伸到中国大模型人才网络、清华系创业和中美 AI 人才流动。",
+        "entities": [
+          "Moonshot Ai",
+          "Tang Jie",
+          "Yang Zhilin",
+          "Z.Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme",
+            "url": "https://www.techmeme.com/260823/p5#a260823p5"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.205646",
+        "source": "Techmeme",
+        "url": "https://www.techmeme.com/260823/p5#a260823p5",
+        "event_id": null
+      },
+      {
+        "id": "9d40765d319a5ebc80e598952da5771c",
+        "title": "天工机器人百米冲刺跑进9秒39",
+        "chinese_title": "天工机器人百米冲刺跑进9秒39",
+        "original_title": "Humanoid robots shatter Usain Bolt's 100m record, hits 23.8 mph before crashing into foam pads &mdash; video shows Tiangong Ultra logging 9.39-second sprint before colliding with padded wall",
+        "summary": "天工 Ultra 人形机器人演示中达到 23.8 mph 并跑出 9.39 秒百米成绩，随后撞上防护垫，引发对速度和安全性的关注。",
+        "rating": "B",
+        "score": 72,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可继续核验计时条件，并观察高速人形机器人在稳定性、安全和真实应用上的差距。",
+        "entities": [
+          "Humanoid Robot",
+          "Tiangong Ultra",
+          "机器人运动控制"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/robotics/humanoid-robots-shatter-usain-bolts-100m-record-hits-23-8-mph-before-crashing-into-foam-pads-video-shows-tiangong-ultra-logging-9-39-second-sprint-before-colliding-with-padded-wall"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.205806",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/robotics/humanoid-robots-shatter-usain-bolts-100m-record-hits-23-8-mph-before-crashing-into-foam-pads-video-shows-tiangong-ultra-logging-9-39-second-sprint-before-colliding-with-padded-wall",
+        "event_id": null
+      },
+      {
+        "id": "32c6e3f077f08a48a9b9c83ccd46738d",
+        "title": "AI数据中心争议升级到威胁与枪击",
+        "chinese_title": "AI数据中心争议升级到威胁与枪击",
+        "original_title": "Officials nationwide face death threats and gunfire over AI data center projects — More than 500 towns restrict builds as councils shutter public comment",
+        "summary": "美国多地 AI 数据中心项目引发激烈反对，官员遭遇死亡威胁和枪击，已有数百城镇限制建设。",
+        "rating": "A",
+        "score": 83,
+        "type": "society",
+        "typeName": "社会影响",
+        "expansion": "可延伸到 AI 基建用电用水、地方治理、社区反弹和算力扩张的社会成本。",
+        "entities": [
+          "Ai Data Center",
+          "地方治理",
+          "算力基建"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/data-centers/death-threats-hit-data-center-opponents-as-towns-cancel-votes-and-close-public-comment"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.205965",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/data-centers/death-threats-hit-data-center-opponents-as-towns-cancel-votes-and-close-public-comment",
+        "event_id": null
+      },
+      {
+        "id": "75b61f4bc77398386502edd731a35b2d",
+        "title": "Polymarket内幕交易疑泄露军事秘密",
+        "chinese_title": "Polymarket内幕交易疑泄露军事秘密",
+        "original_title": "Insider Trading on Polymarket Is Revealing Military Secrets",
+        "summary": "Futurism 报道称 Polymarket 上的异常交易可能暴露军事行动相关信息，预测市场与敏感情报之间的边界受到关注。",
+        "rating": "A",
+        "score": 78,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸到预测市场监管、军事信息安全和链上交易监控。",
+        "entities": [
+          "Polymarket",
+          "内幕交易",
+          "军事秘密",
+          "预测市场"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Futurism",
+            "url": "https://futurism.com/future-society/polymarket-revealing-military-secrets"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.206203",
+        "source": "Futurism",
+        "url": "https://futurism.com/future-society/polymarket-revealing-military-secrets",
+        "event_id": null
+      },
+      {
+        "id": "466cf90505a49d7221c6c7b4099a37b6",
+        "title": "开发者讨论语言模型水印实现",
+        "chinese_title": "开发者讨论语言模型水印实现",
+        "original_title": "Implementing Watermarking for Language Models [P]",
+        "summary": "机器学习社区讨论如何实现语言模型水印，话题关联 AI 生成内容溯源、检测可靠性和开源实现。",
+        "rating": "B",
+        "score": 66,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸到模型水印标准、内容平台治理和检测绕过风险。",
+        "entities": [
+          "Ai溯源",
+          "Language Model Watermarking",
+          "Machine Learning"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1vw18ys/implementing_watermarking_for_language_models_p/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.206285",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1vw18ys/implementing_watermarking_for_language_models_p/",
+        "event_id": null
+      },
+      {
+        "id": "7028b5e4e669345aa352c4815fdff453",
+        "title": "开源Roguelike游戏用于训练智能体",
+        "chinese_title": "开源Roguelike游戏用于训练智能体",
+        "original_title": "I built an open-source roguelike specifically for training game-playing agents [P]",
+        "summary": "开发者构建面向游戏智能体训练的开源 roguelike 环境，为评估长期规划和探索能力提供新测试场景。",
+        "rating": "A",
+        "score": 77,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸到智能体评测环境、游戏强化学习和开源基准设计。",
+        "entities": [
+          "Ai Agent",
+          "Roguelike",
+          "开源基准",
+          "强化学习"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Machine Learning",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1vvii1j/i_built_an_opensource_roguelike_specifically_for/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.206446",
+        "source": "Machine Learning",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1vvii1j/i_built_an_opensource_roguelike_specifically_for/",
+        "event_id": null
+      },
+      {
+        "id": "cbe2a071734f357537bb263e46b1b6b7",
+        "title": "OpenRouter称Agent用量一年暴涨14倍",
+        "chinese_title": "OpenRouter称Agent用量一年暴涨14倍",
+        "original_title": "AI is becoming AI's biggest customer as agentic token usage jumps 14x on OpenRouter",
+        "summary": "OpenRouter 数据显示 agentic token 使用量同比跃升 14 倍，AI 正成为 AI 服务的重要客户，自动化调用快速扩张。",
+        "rating": "S",
+        "score": 95,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延伸到模型平台收入结构、代理经济、API 成本和自动化流量治理。",
+        "entities": [
+          "Ai Agents",
+          "Openrouter",
+          "Token Usage",
+          "代理经济"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/ai-is-becoming-ais-biggest-customer-as-agentic-token-usage-jumps-14x-on-openrouter/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.206529",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/ai-is-becoming-ais-biggest-customer-as-agentic-token-usage-jumps-14x-on-openrouter/",
+        "event_id": null
+      },
+      {
+        "id": "27ae7b64764aec933654c748cdd96557",
+        "title": "研究警告AI或让科学家做更多低质工作",
+        "chinese_title": "研究警告AI或让科学家做更多低质工作",
+        "original_title": "AI could make scientists do more work less well, not less work better, study argues",
+        "summary": "一项研究认为 AI 可能不是让科学家更高效地做好工作，而是推动他们产出更多但质量更低的研究劳动。",
+        "rating": "A",
+        "score": 77,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到科研评价体系、AI 助手副作用和论文数量与质量的张力。",
+        "entities": [
+          "Ai科研",
+          "Scientists",
+          "研究质量"
+        ],
+        "sourceLinks": [
+          {
+            "name": "THE DECODER",
+            "url": "https://the-decoder.com/ai-could-make-scientists-do-more-work-less-well-not-less-work-better-study-argues/"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1787524083,
+        "published_at": "2026-08-24T06:28:03.206694",
+        "source": "THE DECODER",
+        "url": "https://the-decoder.com/ai-could-make-scientists-do-more-work-less-well-not-less-work-better-study-argues/",
         "event_id": null
       },
       {
@@ -6069,334 +6897,8 @@
         "grade": "A",
         "level": "A"
       }
-    ],
-    "2026-08-24": [
-      {
-        "id": "8dad9f581acbc1abbf7a18437afa4674",
-        "title": "Simon Willison谈代码行数与系统完整性",
-        "chinese_title": "Simon Willison谈代码行数与系统完整性",
-        "original_title": "Conceptual integrity and counting lines of code",
-        "summary": "Simon Willison 讨论概念完整性和代码行数在软件工程中的关系，对 LLM 辅助开发下如何控制复杂度提供了实践视角。",
-        "rating": "A",
-        "score": 78,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可延伸到 AI 编程时代的代码审查、架构边界和工程质量评估方法。",
-        "entities": [
-          "LLM",
-          "Simon Willison",
-          "软件工程"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Simon Willison’s Newsletter (deepseek)",
-            "url": "https://simonw.substack.com/p/conceptual-integrity-and-counting"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.068569",
-        "source": "Simon Willison’s Newsletter (deepseek)",
-        "url": "https://simonw.substack.com/p/conceptual-integrity-and-counting",
-        "event_id": null
-      },
-      {
-        "id": "5fc28f02c7f7cb387e15436b4190fcc7",
-        "title": "Etched专用ASIC正面挑战英伟达GPU",
-        "chinese_title": "Etched专用ASIC正面挑战英伟达GPU",
-        "original_title": "Etched Sohu vs. Nvidia: Transformer ASIC vs. GPU (2026) – Spheron Blog",
-        "summary": "文章比较 Etched Sohu Transformer ASIC 与英伟达 GPU 在推理场景的取舍，反映专用 AI 芯片对通用 GPU 的成本和能效挑战。",
-        "rating": "A",
-        "score": 82,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可追踪 ASIC 推理路线是否在固定 Transformer 工作负载上形成成本优势，并影响云厂商采购策略。",
-        "entities": [
-          "Etched",
-          "NVIDIA",
-          "Sohu",
-          "Transformer Asic"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.spheron.network/blog/etched-ai-sohu-vs-nvidia-transformer-asic-inference/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.068903",
-        "source": "Hacker News",
-        "url": "https://www.spheron.network/blog/etched-ai-sohu-vs-nvidia-transformer-asic-inference/",
-        "event_id": null
-      },
-      {
-        "id": "e51017e8b3e9b5658c659ece9273ddad",
-        "title": "Agent.md成LLM写代码的新约束文件",
-        "chinese_title": "Agent.md成LLM写代码的新约束文件",
-        "original_title": "My agent.md to improve LLM-assisted code quality",
-        "summary": "开发者分享用 agent.md 约束 LLM 辅助编程质量的实践，把项目规则、审查偏好和上下文边界写入可复用文档。",
-        "rating": "B",
-        "score": 69,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸到团队级 AI 编程规范、仓库内上下文工程和 Codex/Claude Code 的协作模式。",
-        "entities": [
-          "Agent.Md",
-          "Claude Code",
-          "Codex",
-          "LLM"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://fabiensanglard.net/agent.md/index.html"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.068989",
-        "source": "Hacker News",
-        "url": "https://fabiensanglard.net/agent.md/index.html",
-        "event_id": null
-      },
-      {
-        "id": "4878254202217e5191f3e572cca3e833",
-        "title": "Anthropic旗舰模型企业使用遇冷",
-        "chinese_title": "Anthropic旗舰模型企业使用遇冷",
-        "original_title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
-        "summary": "金融时报称 Anthropic 最强模型在企业 AI 支出中占比不高，客户更多转向价格更低的模型，显示性能溢价正在承压。",
-        "rating": "A",
-        "score": 86,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可继续观察前沿模型价格体系、企业 ROI 门槛和开源替代对闭源旗舰模型的挤压。",
-        "entities": [
-          "Anthropic",
-          "Fable",
-          "Opus",
-          "Ramp"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069073",
-        "source": "Hacker News",
-        "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
-        "event_id": null
-      },
-      {
-        "id": "9d608e22880bea899b80e8c8b20e879b",
-        "title": "Hugging Face被曝寻求百亿美元级出售",
-        "chinese_title": "Hugging Face被曝寻求百亿美元级出售",
-        "original_title": "Sources: Hugging Face is exploring a sale that could value it at $13B+, up from $4.5B in 2023, and has been working with a bank to evaluate bidders' interest (Katie Roof/Business Insider)",
-        "summary": "消息称 Hugging Face 正探索出售，估值可能超过 130 亿美元，较 2023 年 45 亿美元估值大幅上升。",
-        "rating": "A+",
-        "score": 87,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "若交易推进，将影响开源 AI 基础设施归属、云厂商生态卡位和模型分发平台估值。",
-        "entities": [
-          "Ai基础设施",
-          "Business Insider",
-          "Hugging Face"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260823/p9#a260823p9"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069157",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260823/p9#a260823p9",
-        "event_id": null
-      },
-      {
-        "id": "8baea98199dde857bcbade1ecfb68b21",
-        "title": "陶哲轩试用编码Agent筛选新论文",
-        "chinese_title": "陶哲轩试用编码Agent筛选新论文",
-        "original_title": "As an experiment, I directed a coding agent to sort through recent #arXiv posts for similarity in topic or keywords to my own research papers, with additional weighting for papers authored by my former collaborators or mentees (such papers are marked with a star in the lists provided below).  I also asked the agent to assess the degree of AI assistance in each paper using robot emojis, with one emoji denoting minor assistance, two denoting major assistance, and three denoting near-total automation.  (A computer emoji is also used to indicate more traditional computer assistance, e.g., in numerics.) The lists produced by the agent for the months of July and of August respectively are provided below.  (It is important to stress that the AI-generated rankings here are based on proximity to my own interests, and should not be regarded as an absolute ranking of importance of the result.) The generation of these listings is highly unscientific and tailored to my own personal preferences (and there was at least one annotation error, in that the author Van Khu Vu was confused with my collaborator Van Ha Vu), but it does indicate to me the increasing adoption of AI assistance, at least in my own fields of interest.",
-        "summary": "陶哲轩尝试让 coding agent 按主题和合作者关系筛选 arXiv 新论文，展示研究工作流中半自动文献发现的新形态。",
-        "rating": "B",
-        "score": 70,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸到科研助手、论文推荐可信度和学术工作流自动化的编辑选题。",
-        "entities": [
-          "Arxiv",
-          "Coding Agent",
-          "Terence Tao"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Terence Tao",
-            "url": "https://mathstodon.xyz/@tao/117146243330221809"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069240",
-        "source": "Terence Tao",
-        "url": "https://mathstodon.xyz/@tao/117146243330221809",
-        "event_id": null
-      },
-      {
-        "id": "84846b119378c96066abe2aed451a569",
-        "title": "Stripe总裁称AI将改写结账页面",
-        "chinese_title": "Stripe总裁称AI将改写结账页面",
-        "original_title": "Stripe president says checkout pages ‘will go away’ as AI commerce expands",
-        "summary": "Stripe 总裁认为随着 agentic commerce 扩张，传统 checkout 页面会逐渐消失，支付流程将更多由 AI 代理完成。",
-        "rating": "A+",
-        "score": 91,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可追踪支付基础设施、商家转化路径和 AI 代理购物协议之间的新竞争。",
-        "entities": [
-          "Agentic Commerce",
-          "Ai代理",
-          "Stripe"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI - Business Insider",
-            "url": "https://www.businessinsider.com/stripe-checkout-pages-future-ai-agentic-commerce-2026-8"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069325",
-        "source": "AI - Business Insider",
-        "url": "https://www.businessinsider.com/stripe-checkout-pages-future-ai-agentic-commerce-2026-8",
-        "event_id": null
-      },
-      {
-        "id": "5ddbfbe6d5235030750a49e8f4f1ab78",
-        "title": "英国金融时报警告勿赋予AI法律人格",
-        "chinese_title": "英国金融时报警告勿赋予AI法律人格",
-        "original_title": "We must not grant AI agents legal personhood",
-        "summary": "文章主张不应给予 AI agents 法律人格，强调责任归属、监管边界和人类主体性仍需清晰界定。",
-        "rating": "A+",
-        "score": 87,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可延伸到 AI 代理签约、自动交易和企业责任承担的政策讨论。",
-        "entities": [
-          "Ai Agents",
-          "法律人格",
-          "监管"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.ft.com/content/b8cc4bf4-6d3c-4974-8428-9a091983c473"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069416",
-        "source": "Hacker News",
-        "url": "https://www.ft.com/content/b8cc4bf4-6d3c-4974-8428-9a091983c473",
-        "event_id": null
-      },
-      {
-        "id": "5acbbb7b3851c3efc23d981f5669939c",
-        "title": "Ramp数据称Anthropic旗舰模型支出占比停滞",
-        "chinese_title": "Ramp数据称Anthropic旗舰模型支出占比停滞",
-        "original_title": "Ramp data: Fable 5, launched in June, has plateaued at ~11% of spending on Anthropic tools, as companies shift to cheaper models; Opus 5 surpassed Fable 5 (George Hammond/Financial Times)",
-        "summary": "Ramp 数据显示 Fable 5 在 Anthropic 工具支出中约占 11%，企业用户正向更便宜模型迁移，Opus 5 支出反超。",
-        "rating": "A",
-        "score": 85,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可结合订阅算力价值和开源替代，跟踪企业模型采购是否从最强性能转向性价比。",
-        "entities": [
-          "Anthropic",
-          "Fable",
-          "Opus",
-          "Ramp"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260823/p8#a260823p8"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069506",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260823/p8#a260823p8",
-        "event_id": null
-      },
-      {
-        "id": "601af275e9600c48894e37331d93fa7e",
-        "title": "Galbot人形机器人完成百次网球回合",
-        "chinese_title": "Galbot人形机器人完成百次网球回合",
-        "original_title": "WHRG'26: Galbot’s humanoid robot just completed +100 consecutive tennis rallies autonomously",
-        "summary": "Galbot 人形机器人在演示中完成连续百次以上自主网球回合，体现运动控制和视觉反馈能力的进展。",
-        "rating": "B",
-        "score": 66,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可继续核验演示条件，并观察人形机器人从展示项目走向可复现实验指标的速度。",
-        "entities": [
-          "Galbot",
-          "Humanoid Robot",
-          "机器人运动控制"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1vwclb9/whrg26_galbots_humanoid_robot_just_completed_100/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069591",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1vwclb9/whrg26_galbots_humanoid_robot_just_completed_100/",
-        "event_id": null
-      },
-      {
-        "id": "5844bf6940660e0388d35561e2ab2b39",
-        "title": "GLM开源模型被称成本仅为闭源五分之一",
-        "chinese_title": "GLM开源模型被称成本仅为闭源五分之一",
-        "original_title": "GLM-5.3 (open-weight) beat Anthropic/OpenAI models – for 1/5 the cost",
-        "summary": "评测称开源权重 GLM-5.3 以更低成本击败 Anthropic 和 OpenAI 模型，但来源可信度和测试方法仍需谨慎核验。",
-        "rating": "B",
-        "score": 73,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可追踪开源模型性价比叙事是否被更多独立基准验证，并影响企业模型选择。",
-        "entities": [
-          "Anthropic",
-          "Glm",
-          "Open-Weight Model",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://reinvently.co.uk/tools/ed-o-meter/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.070015",
-        "source": "Hacker News",
-        "url": "https://reinvently.co.uk/tools/ed-o-meter/",
-        "event_id": null
-      }
     ]
   },
-  "last_updated": "2026-08-24T06:28:09.740980",
-  "total_news": 206
+  "last_updated": "2026-08-24T06:28:29.061465",
+  "total_news": 223
 }
