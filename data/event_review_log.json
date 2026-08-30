@@ -1821,6 +1821,32 @@
           "reason": "该条聚焦英伟达AI芯片与系统供应商承诺金额激增，Vera Rubin本季销售预期是另一条具体硬件出货新闻，应拆分为独立事件。"
         }
       ]
+    },
+    {
+      "timestamp": "2026-08-30T09:05:41.475848",
+      "batch_id": "20260830-manual-event-calibration",
+      "corrections_applied": 3,
+      "details": [
+        {
+          "news_id": "04cb0dbce6b2622a83a98396a3158f43",
+          "from_event_id": "af243408",
+          "to_event_id": "new_event",
+          "reason": "Warp自改进智能体是软件开发工具实践，不属于Anthropic硬件接口标准事件。"
+        },
+        {
+          "news_id": "e129c8d2a0247fe80d865bfb890c68c7",
+          "from_event_id": "af243408",
+          "to_event_id": "new_event",
+          "reason": "Claude Code限额政策是产品配额调整，不属于硬件接口标准事件。"
+        },
+        {
+          "news_id": "594014f851cad85cacbf19e3cfb77450",
+          "from_event_id": "af243408",
+          "to_event_id": "new_event",
+          "reason": "Claude周限额消息应与Claude Code配额调整归组，不属于硬件接口标准事件。"
+        }
+      ],
+      "note": "Manual correction after review prompt; also repaired rating/grade/level compatibility and demoted MHS from zeitgeist-inflated S to A+."
     }
   ],
   "reviews": [
