@@ -2,6 +2,365 @@
   "news": {
     "2026-08-31": [
       {
+        "id": "16ba7fb5b309c8344a3d77123a82b319",
+        "title": "谷歌开源TimesFM时间序列模型",
+        "chinese_title": "谷歌开源TimesFM时间序列模型",
+        "original_title": "Today we're releasing TimesFM 3.0 on Hugging Face - Open foundation model for time series forecasting - Complex multivariate scenarios with zero-shot ...",
+        "summary": "Google 在 Hugging Face 发布 TimesFM 3.0，主打多变量时间序列预测和零样本场景，显示基础模型路线正继续向产业预测、运维和金融分析等结构化任务外溢。",
+        "rating": "A",
+        "score": 78,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸到时间序列基础模型与传统预测软件的替代关系，以及云厂商、金融量化和工业运维场景的采用门槛。",
+        "entities": [
+          "Google",
+          "Hugging Face",
+          "Time Series Forecasting",
+          "Timesfm"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/osanseviero/status/2094500692555596118"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.335899",
+        "source": "x",
+        "url": "https://x.com/osanseviero/status/2094500692555596118",
+        "event_id": null
+      },
+      {
+        "id": "392211da4f80f0c28ff582d67b829284",
+        "title": "Codex用户增长曲线口径引发争议",
+        "chinese_title": "Codex用户增长曲线口径引发争议",
+        "original_title": "🚨Codex 的用户增长数字似乎有问题。 知名科技投资人 Gavin Baker 刚刚贴出一张 Codex 用户增长图：7月中旬约600万，到8月29日已经达到2500万。 他据此判断，O...",
+        "summary": "投资人披露的 Codex 用户增长图显示规模快速上升，但产品并入 ChatGPT 桌面端后统计口径变化，使独立用户增长和入口整合效应需要分开解读。",
+        "rating": "A+",
+        "score": 89,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可继续追踪 OpenAI 如何用 ChatGPT 统一入口分发 Coding Agent，并比较 Anthropic、开源工具的真实用户增长。",
+        "entities": [
+          "Codex",
+          "GPT",
+          "Gavin Baker",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/MaxForAI/status/2094481344470655037"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.336276",
+        "source": "x",
+        "url": "https://x.com/MaxForAI/status/2094481344470655037",
+        "event_id": null
+      },
+      {
+        "id": "b6230d3765ce78e9c8924f05b9380891",
+        "title": "记忆压缩让长推理成本再降一截",
+        "chinese_title": "记忆压缩让长推理成本再降一截",
+        "original_title": "This paper shows a different way to make chain-of-thought cheaper: move reusable reasoning from generation into the prompt. Instead of asking an LLM t...",
+        "summary": "新论文提出把可复用推理模式前置进提示词，用 Memory-Augmented Compression 减少模型反复生成推理链的成本，为低延迟和低费用推理提供新路径。",
+        "rating": "A",
+        "score": 79,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可延伸到长链推理、RAG、Agent 记忆和推理压缩的工程化结合，以及模型服务成本结构变化。",
+        "entities": [
+          "Chain-Of-Thought",
+          "LLM",
+          "Memory-Augmented Compression"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/rohanpaul_ai/status/2094471032841330792"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.336367",
+        "source": "x",
+        "url": "https://x.com/rohanpaul_ai/status/2094471032841330792",
+        "event_id": null
+      },
+      {
+        "id": "3f1feab491e01935b2a0c910a7e2c6e0",
+        "title": "英伟达LPU拆解式推理路线曝光",
+        "chinese_title": "英伟达LPU拆解式推理路线曝光",
+        "original_title": "NVIDIA LPU supports 3 types of disaggregated inferencing: 1. Rubin Prefill + LPU Decode for the fastest interactivity 2. Rubin Prefill + Rubin Decode ...",
+        "summary": "SemiAnalysis 讨论 NVIDIA LPU 与 Rubin 在预填充、解码和验证阶段的组合方式，显示下一代 AI 推理硬件竞争正从单芯片性能转向分层系统设计。",
+        "rating": "A",
+        "score": 85,
+        "type": "hardware",
+        "typeName": "硬件基建",
+        "expansion": "可追踪 Rubin、LPU 与推理集群架构的性能曲线，以及 Agent benchmark 对硬件路线选择的影响。",
+        "entities": [
+          "Agentx",
+          "Lpu",
+          "NVIDIA",
+          "Rubin"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/SemiAnalysis_/status/2094470943619842286"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.336454",
+        "source": "x",
+        "url": "https://x.com/SemiAnalysis_/status/2094470943619842286",
+        "event_id": null
+      },
+      {
+        "id": "ed3dce902f93a3bb94367ff13500be5c",
+        "title": "AI做PPT该走生成路线还是操作路线",
+        "chinese_title": "AI做PPT该走生成路线还是操作路线",
+        "original_title": "AI 做 PPT 我的一些心得体会，仅供参考。 用 AI 操作 PowerPoint 去做 PPT 的思路本身不 AI Native，不是说不能操作 PowerPoint，而是做出来不好看，因为目前的 ...",
+        "summary": "一线开发者复盘 AI 生成 PPT 的路径，认为直接操作 PowerPoint 不够 AI Native，HTML 或通用生成式表达可能比模板和专用 DSL 更有长期优势。",
+        "rating": "A",
+        "score": 80,
+        "type": "opinion",
+        "typeName": "观点访谈",
+        "expansion": "可延伸到 Office Agent、PPT DSL、HTML 渲染和企业办公自动化的产品路线分歧。",
+        "entities": [
+          "Ai",
+          "Kimi",
+          "Powerpoint",
+          "Pptd"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/dotey/status/2094466904828068086"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.336623",
+        "source": "x",
+        "url": "https://x.com/dotey/status/2094466904828068086",
+        "event_id": null
+      },
+      {
+        "id": "08a2a910078eeee5175f15bba0e3ac7f",
+        "title": "Runway发布实时界面世界模型Solaris",
+        "chinese_title": "Runway发布实时界面世界模型Solaris",
+        "original_title": "RT Runway: Today, we're sharing new research on Solaris, our first Interface World Model. Solaris is a new kind of operating system that generates int...",
+        "summary": "Runway 展示 Solaris 界面世界模型，宣称无需代码即可逐帧生成实时交互界面，并在结构相似度和信息保留方面超过前沿 LLM。",
+        "rating": "A",
+        "score": 85,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可追踪生成式 UI、无代码产品设计和操作系统界面模型的关系，以及 Runway 从视频生成向交互生成扩张。",
+        "entities": [
+          "Interface World Model",
+          "LLM",
+          "Runway",
+          "Solaris"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/Scobleizer/status/2094501281855615159"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.336709",
+        "source": "x",
+        "url": "https://x.com/Scobleizer/status/2094501281855615159",
+        "event_id": null
+      },
+      {
+        "id": "e9624b6c3bbe0bf3115947088a7eae70",
+        "title": "ChatGPT Work隐藏云端Agent全家桶",
+        "chinese_title": "ChatGPT Work隐藏云端Agent全家桶",
+        "original_title": "🚨原来 ChatGPT Work 和普通 ChatGPT，居然已经有这么多不一样的东西了。 @simonw 最近把 Work 几乎翻了个底朝天，才发现 OpenAI 在里面塞进了一整套普通 Chat...",
+        "summary": "Simon Willison 梳理 ChatGPT Work 后发现其包含联网代码环境、无头浏览器、跨会话文件、Sub-agent、223 个工具和 44 个 Skills，已接近完整云端 Agent 工作台。",
+        "rating": "A+",
+        "score": 91,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可延伸到 ChatGPT Work 与普通 ChatGPT 的产品分层、企业 Agent 平台竞争，以及云端任务持续执行能力。",
+        "entities": [
+          "Agent",
+          "Chatgpt Work",
+          "OpenAI",
+          "Simon Willison"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/MaxForAI/status/2094462584682688570"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.336796",
+        "source": "x",
+        "url": "https://x.com/MaxForAI/status/2094462584682688570",
+        "event_id": null
+      },
+      {
+        "id": "57d87b667aca43b0c65d15d145f3a983",
+        "title": "GLM新模型登上Agent Arena前沿",
+        "chinese_title": "GLM新模型登上Agent Arena前沿",
+        "original_title": "Exciting news: GLM-5.3-Flash by @Zai_org has landed in Agent Arena! At a $0.12 median cost per task and a +4.6% net improvement, it has reshaped the P...",
+        "summary": "智谱 GLM-5.3-Flash 进入 Agent Arena，以较低任务成本和净改进率刷新开源模型性价比位置，显示国产模型在真实 Agent 会话评测中继续追赶。",
+        "rating": "A+",
+        "score": 91,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可继续比较 GLM、DeepSeek、Qwen 和 GPT 系列在真实任务成本、成功率和开源模型排名上的变化。",
+        "entities": [
+          "Agent Arena",
+          "DeepSeek",
+          "Glm",
+          "Zhipu Ai"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/arena/status/2094440382440611935"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.337135",
+        "source": "x",
+        "url": "https://x.com/arena/status/2094440382440611935",
+        "event_id": null
+      },
+      {
+        "id": "bd087da285358a21250d6e683dfde8a1",
+        "title": "OpenAI广告业务年化收入达十亿美元",
+        "chinese_title": "OpenAI广告业务年化收入达十亿美元",
+        "original_title": "OPENAI ADS HIT $1B ANNUALIZED REVENUE OpenAI says its ad business reached the milestone roughly 200 days after launch. ChatGPT Ads are now available i...",
+        "summary": "多方消息称 OpenAI 的 ChatGPT 广告业务上线约 200 天后年化收入达到 10 亿美元，并开始在更多地区扩展自助投放和广告形态。",
+        "rating": "A+",
+        "score": 91,
+        "type": "financial",
+        "typeName": "商业数据",
+        "expansion": "可延伸到 ChatGPT 商业化、搜索广告迁移、免费用户变现和 IPO 前收入结构的重新估值。",
+        "entities": [
+          "Advertising",
+          "Chatgpt Ads",
+          "Ipo",
+          "OpenAI"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/wallstengine/status/2094411679916278131"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.337476",
+        "source": "x",
+        "url": "https://x.com/wallstengine/status/2094411679916278131",
+        "event_id": null
+      },
+      {
+        "id": "3f1c905aece3b46a6a93d3d031705fc5",
+        "title": "DeepSeek开源V4视觉Flash模型",
+        "chinese_title": "DeepSeek开源V4视觉Flash模型",
+        "original_title": "DeepSeek v4 Flash Vision Exp is now open-weight! 🔥 https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+        "summary": "DeepSeek V4 Flash Vision Exp 在 Hugging Face 开放权重，继续把国产多模态模型推向可下载、可复现实验和二次开发场景。",
+        "rating": "A+",
+        "score": 90,
+        "type": "product",
+        "typeName": "产品发布",
+        "expansion": "可跟踪开源视觉模型对国内开发者生态、推理成本和闭源多模态模型竞争的影响。",
+        "entities": [
+          "DeepSeek",
+          "Hugging Face",
+          "Open-Weight",
+          "Vision Model"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/MiaAI_lab/status/2094376264152838487"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.337559",
+        "source": "x",
+        "url": "https://x.com/MiaAI_lab/status/2094376264152838487",
+        "event_id": null
+      },
+      {
+        "id": "1aa70115336ba0bc0f177983ad4de594",
+        "title": "Anthropic高价套餐用量表述遭质疑",
+        "chinese_title": "Anthropic高价套餐用量表述遭质疑",
+        "original_title": "I went down the rabbit hole: Anthropic is already being sued over exactly this. And the $200 plan really only provides only around 2x the weekly usage...",
+        "summary": "有用户梳理 Anthropic Max 套餐诉讼和定价页表述，指出 20x 与 5x 用量并非简单四倍关系，暴露 AI 订阅套餐透明度风险。",
+        "rating": "A",
+        "score": 80,
+        "type": "safety",
+        "typeName": "安全伦理",
+        "expansion": "可延伸到 AI 订阅定价、消费者保护、模型用量限制和 Anthropic 商业化压力。",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Max Plan",
+          "Pricing"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/kimmonismus/status/2094353158780666112"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.337643",
+        "source": "x",
+        "url": "https://x.com/kimmonismus/status/2094353158780666112",
+        "event_id": null
+      },
+      {
+        "id": "e3e64806c8456a5619f9eff5e5b2bd15",
+        "title": "八款小模型横评检验开源Agent能力",
+        "chinese_title": "八款小模型横评检验开源Agent能力",
+        "original_title": "终于搞完了! 给大家带来小模型竞技场, 这次测试了8款模型, 包括: Qwen3.8-27B Qwen3.6-27B Qwen3.6-35B-A3B Ornith-1.5-35B-A3B Gemma-4-31B Gemma-4-26B-A4B Ge...",
+        "summary": "中文开发者完成 8 款小模型、多个量化版本和思考档位的横评，覆盖前端、Python 与 Agent 能力，为开源小模型选型提供实测参考。",
+        "rating": "A",
+        "score": 75,
+        "type": "research",
+        "typeName": "研究成果",
+        "expansion": "可扩展到国产小模型生态、量化部署成本和开发者实际任务基准的比较。",
+        "entities": [
+          "Agent",
+          "Gemma",
+          "Gpt-Oss",
+          "Qwen"
+        ],
+        "sourceLinks": [
+          {
+            "name": "x",
+            "url": "https://x.com/karminski3/status/2094311103987581033"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.337736",
+        "source": "x",
+        "url": "https://x.com/karminski3/status/2094311103987581033",
+        "event_id": null
+      },
+      {
         "id": "2be6a328980482f65afc684187841d6b",
         "title": "量子计算竞赛升温成地缘科技战场",
         "chinese_title": "量子计算竞赛升温成地缘科技战场",
@@ -6068,2501 +6427,188 @@
         "_bucket": "2026-08-26"
       }
     ],
-    "2026-08-25": [
+    "2026-09-01": [
       {
-        "id": "87a9ed360c96e82b7025003d9483eb48",
-        "title": "Pew确认AI生成文本席卷网络",
-        "chinese_title": "Pew确认AI生成文本席卷网络",
-        "original_title": "Pew study confirms sharp rise of AI-written text on the web since ChatGPT's launch",
-        "summary": "Pew 研究显示 ChatGPT 发布后网络上的 AI 生成文本显著增加，公共信息环境正在被大模型内容重塑。",
-        "rating": "A+",
-        "score": 87,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "AI 内容扩散会影响搜索、媒体信任和数据训练质量，后续可追踪平台水印、内容溯源和反垃圾策略。",
+        "id": "09c49f429475812f4a07c144aa9f2421",
+        "title": "五角大楼推出自己的ChatGPT和Grok",
+        "chinese_title": "五角大楼推出自己的ChatGPT和Grok",
+        "original_title": "The Pentagon now has its own version of ChatGPT and Grok",
+        "summary": "TechCrunch 报道五角大楼已有自有版 ChatGPT 和 Grok，显示生成式 AI 正进入国防办公和情报工作流，但也带来安全边界问题。",
+        "rating": "A",
+        "score": 80,
+        "type": "industry",
+        "typeName": "行业动态",
+        "expansion": "可延伸到军方私有模型、政府采购、数据安全和 AI 在公共部门的部署边界。",
         "entities": [
-          "Ai生成内容",
+          "Ai",
           "GPT",
-          "Pew Research",
-          "Web"
+          "Grok",
+          "Pentagon"
         ],
         "sourceLinks": [
           {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/pew-study-shows-ai-written-text-has-surged-across-the-web-since-late-2022/"
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/"
           }
         ],
         "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.704585",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/pew-study-shows-ai-written-text-has-surged-across-the-web-since-late-2022/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.337912",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/",
+        "event_id": null
       },
       {
-        "id": "3ed4813749dfe19aec1e0fc888488d78",
-        "title": "大动作模型创业公司转向机器人",
-        "chinese_title": "大动作模型创业公司转向机器人",
-        "original_title": "A look at startups like General Intuition working on large action models, aka world models, which are trained on videogames and simulations, to pilot robots (Christopher Mims/Wall Street Journal)",
-        "summary": "General Intuition 等创业公司用游戏和仿真数据训练大动作模型，希望让世界模型直接驱动机器人决策。",
-        "rating": "A+",
-        "score": 87,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "从语言模型转向动作模型，意味着具身智能的竞争重点会落到仿真数据、闭环评测和机器人落地场景。",
+        "id": "4e58c33c06961343e5eca750317ed669",
+        "title": "Polymarket拟以二百一十亿美元估值融资",
+        "chinese_title": "Polymarket拟以二百一十亿美元估值融资",
+        "original_title": "Sources: Polymarket will raise $1B led by 1789 Capital at a $21B post-money valuation; Donald Trump Jr. is a partner at 1789 and adviser to Polymarket (Amanda L. Gordon/Bloomberg)",
+        "summary": "消息称 Polymarket 将由 1789 Capital 领投融资 10 亿美元，投后估值 210 亿美元，预测市场平台在监管和政治资源加持下继续升温。",
+        "rating": "A",
+        "score": 85,
+        "type": "funding",
+        "typeName": "融资上市",
+        "expansion": "可追踪预测市场、加密合规、特朗普家族关联资本和金融信息平台竞争。",
         "entities": [
-          "General Intuition",
-          "Large Action Models",
-          "World Models",
-          "机器人"
+          "1789 Capital",
+          "Donald Trump Jr.",
+          "Polymarket"
         ],
         "sourceLinks": [
           {
             "name": "Techmeme",
-            "url": "https://www.techmeme.com/260824/p26#a260824p26"
+            "url": "https://www.techmeme.com/260831/p36#a260831p36"
           }
         ],
         "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.706035",
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.337998",
         "source": "Techmeme",
-        "url": "https://www.techmeme.com/260824/p26#a260824p26",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
+        "url": "https://www.techmeme.com/260831/p36#a260831p36",
+        "event_id": null
       },
       {
-        "id": "b70cb2378a8ce8f8e51228dc49e8eedf",
-        "title": "英伟达员工卷入AI服务器走私案",
-        "chinese_title": "英伟达员工卷入AI服务器走私案",
-        "original_title": "Nvidia senior manager linked to Supermicro scheme smuggling AI servers to China",
-        "summary": "台湾检方起诉九人，指控其中包括英伟达和 Supermicro 员工协助高端 AI 服务器非法出口至中国。",
+        "id": "4abac2777ee8213ebddaa52f7df98520",
+        "title": "库克卸任苹果CEO移交给产品掌门人",
+        "chinese_title": "库克卸任苹果CEO移交给产品掌门人",
+        "original_title": "On his last day as CEO, Tim Cook pens an emotional memo reflecting on his time at Apple and says he takes \"enormous comfort\" in handing the helm to John Ternus (Chance Miller/9to5Mac)",
+        "summary": "多家媒体报道 Tim Cook 在 CEO 任期最后一天向员工发出告别信，并把苹果交给 John Ternus，苹果进入产品工程派接棒阶段。",
+        "rating": "A",
+        "score": 86,
+        "type": "personnel",
+        "typeName": "人事变动",
+        "expansion": "可延伸到 Apple 组织重构、硬件产品周期、AI 战略迟滞和服务业务权力变化。",
+        "entities": [
+          "Apple",
+          "John Ternus",
+          "Tim Cook"
+        ],
+        "sourceLinks": [
+          {
+            "name": "Techmeme (apple)",
+            "url": "https://www.techmeme.com/260831/p34#a260831p34"
+          }
+        ],
+        "sources": 1,
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.338164",
+        "source": "Techmeme (apple)",
+        "url": "https://www.techmeme.com/260831/p34#a260831p34",
+        "event_id": null
+      },
+      {
+        "id": "16dccbad9472f0305b58d323c0c997cc",
+        "title": "音乐巨头起诉Anthropic训练Claude侵权",
+        "chinese_title": "音乐巨头起诉Anthropic训练Claude侵权",
+        "original_title": "The Music Industry’s New Lawsuit Against Anthropic Should Have Dario Amodei Shivering With Fear",
+        "summary": "Sony、Warner 等音乐公司对 Anthropic 提起新诉讼，指控其使用歌词训练 Claude，AI 版权战从图书和新闻继续扩展到音乐内容。",
         "rating": "A",
         "score": 86,
         "type": "safety",
         "typeName": "安全伦理",
-        "expansion": "AI 芯片出口管制正在从企业合规进入刑事追责阶段，服务器供应链、二级市场和渠道管理都会受到冲击。",
+        "expansion": "可延伸到模型训练版权、音乐授权价格、合成内容监管和 Anthropic 训练数据披露压力。",
         "entities": [
-          "Ai服务器",
-          "NVIDIA",
-          "Supermicro",
-          "出口管制"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI – Ars Technica",
-            "url": "https://arstechnica.com/tech-policy/2026/08/nvidia-senior-manager-linked-to-supermicro-scheme-smuggling-ai-servers-to-china/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.706457",
-        "source": "AI – Ars Technica",
-        "url": "https://arstechnica.com/tech-policy/2026/08/nvidia-senior-manager-linked-to-supermicro-scheme-smuggling-ai-servers-to-china/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "f20a5f80b7e2d5d11a78925f76b05b16",
-        "title": "LLM代写申诉正在挤压公共服务",
-        "chinese_title": "LLM代写申诉正在挤压公共服务",
-        "original_title": "Public services are increasingly strained by LLM-written appeals for benefits",
-        "summary": "一项研究指出，公共服务体系正被大量 LLM 生成的福利申诉材料挤压，行政流程面临新的自动化负担。",
-        "rating": "A",
-        "score": 82,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "AI 写作不只影响内容平台，也会改变政府服务、审核流程和弱势群体权益保护的成本结构。",
-        "entities": [
-          "LLM",
-          "公共服务",
-          "福利申诉",
-          "自动化"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://arxiv.org/abs/2608.16603"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.706565",
-        "source": "Hacker News",
-        "url": "https://arxiv.org/abs/2608.16603",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "9cd6b971ccc2eafcae046344a260a0c8",
-        "title": "英伟达称Groq 3 LPX跑出高吞吐",
-        "chinese_title": "英伟达称Groq 3 LPX跑出高吞吐",
-        "original_title": "Nvidia says its Groq 3 LPX racks delivered 3,400 tokens per second in an Artificial Analysis benchmark running Gemma 4 31B with a 100,000-token input sequence (The Register)",
-        "summary": "英伟达称 Groq 3 LPX 机架在 Artificial Analysis 基准中处理 Gemma 长上下文任务达到每秒 3400 token。",
-        "rating": "A",
-        "score": 78,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "高吞吐推理指标会影响云厂采购和模型服务商成本结构，但仍需结合真实负载、功耗和总拥有成本验证。",
-        "entities": [
-          "Gemma",
-          "Groq",
-          "NVIDIA",
-          "推理加速"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260824/p25#a260824p25"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.706670",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260824/p25#a260824p25",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "61bb78b888867c483becd61da51074db",
-        "title": "DDR5内存涨价压缩PC装机空间",
-        "chinese_title": "DDR5内存涨价压缩PC装机空间",
-        "original_title": "32GB of DDR5 6000 RAM now costs $400 — the latest price hike puts DIY PC building further out of reach than ever before",
-        "summary": "32GB DDR5 6000 内存价格升至约 400 美元，DRAM 短缺正在让 DIY PC 与 AI PC 硬件成本继续上行。",
-        "rating": "A",
-        "score": 80,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "内存涨价会影响 PC、服务器和边缘设备 BOM，后续可追踪三星、SK 海力士、美光扩产与 AI 服务器挤出效应。",
-        "entities": [
-          "Ai Pc",
-          "Ddr5",
-          "Dram",
-          "内存"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/pc-components/ddr5/32gb-of-ddr5-6000-ram-now-costs-usd400-the-latest-price-hike-puts-diy-pc-building-further-out-of-reach-than-ever-before"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.707026",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/pc-components/ddr5/32gb-of-ddr5-6000-ram-now-costs-usd400-the-latest-price-hike-puts-diy-pc-building-further-out-of-reach-than-ever-before",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "724e44136e5556aebc8ca63749988bdc",
-        "title": "General Intuition估值60亿美元切入机器人",
-        "chinese_title": "General Intuition估值60亿美元切入机器人",
-        "original_title": "Valor, Point72 back General Intuition at $6B valuation as AI startup pushes into robotics",
-        "summary": "General Intuition 获 Valor、Point72 等支持，估值达到 60 亿美元，押注面向机器人的大动作模型。",
-        "rating": "A+",
-        "score": 88,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "高估值显示资本开始押注语言模型之后的具身智能平台，相关人才、仿真数据和机器人硬件公司会被重新定价。",
-        "entities": [
-          "General Intuition",
-          "Point72",
-          "Valor",
-          "机器人"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.707137",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "9899235269a727b7327475b84fb8966b",
-        "title": "小米新CPU被称单线程追平苹果",
-        "chinese_title": "小米新CPU被称单线程追平苹果",
-        "original_title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
-        "summary": "开发者称小米新 CPU 单线程性能接近苹果核心，多线程更快，显示国产移动芯片在高性能核心上继续追赶。",
-        "rating": "A",
-        "score": 78,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "若性能和能效持续逼近头部厂商，小米可降低对外部芯片供应商依赖，并带动手机 SoC 竞争格局变化。",
-        "entities": [
-          "Apple",
-          "Cpu",
-          "Xring",
-          "小米"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News (apple)",
-            "url": "https://twitter.com/lemire/status/2091894299289874926"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.707556",
-        "source": "Hacker News (apple)",
-        "url": "https://twitter.com/lemire/status/2091894299289874926",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "4ea745f166d08c7ebc7238e09e55215d",
-        "title": "英伟达Vera和Groq LPX拿下新客户",
-        "chinese_title": "英伟达Vera和Groq LPX拿下新客户",
-        "original_title": "Nvidia says its inference accelerator Groq 3 LPX has entered full production and Nebius has signed on as the first customer, and SpaceX will deploy Vera CPUs (Mike Wheatley/SiliconANGLE)",
-        "summary": "英伟达宣布推理加速器 Groq 3 LPX 进入量产，Nebius 成为首位客户，SpaceX 也将部署 Vera CPU。",
-        "rating": "A+",
-        "score": 87,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "英伟达正在把 GPU 之外的 CPU 和推理机架纳入 AI 工厂叙事，服务器厂商和云客户采购结构会随之变化。",
-        "entities": [
-          "Groq",
-          "NVIDIA",
-          "Nebius",
-          "SpaceX",
-          "Vera"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260824/p21#a260824p21"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.707778",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260824/p21#a260824p21",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "c26e94ab16adba31d5b8609efa03ced9",
-        "title": "英伟达5000亿美元融资叙事待补全",
-        "chinese_title": "英伟达5000亿美元融资叙事待补全",
-        "original_title": "Filling In the Gaps in Nvidia’s $500 Billion Financing Pitch",
-        "summary": "The Information 拆解英伟达围绕 AI 基础设施提出的 5000 亿美元融资叙事，指出客户、资金和产能仍有待验证。",
-        "rating": "A",
-        "score": 85,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "AI 基建融资从订单故事走向现金流考验，后续可追踪云厂、主权基金和服务器厂商的真实付款能力。",
-        "entities": [
-          "Ai基础设施",
-          "NVIDIA",
-          "数据中心",
-          "融资"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/filling-gaps-nvidias-500-billion-financing-pitch"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.707890",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/filling-gaps-nvidias-500-billion-financing-pitch",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "fb71586ede3bc77184be7ef4ed920549",
-        "title": "OpenAI押注全场景AI Agent",
-        "chinese_title": "OpenAI押注全场景AI Agent",
-        "original_title": "OpenAI is building AI agents for everything. Will everyone use them?",
-        "summary": "OpenAI 正在面向更多场景构建 AI Agent，但市场是否会大规模采用仍取决于可靠性、成本和用户信任。",
-        "rating": "A",
-        "score": 84,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "Agent 会从单点工具进入办公和开发工作流，后续竞争会集中在权限管理、执行可靠性和企业分发渠道。",
-        "entities": [
-          "Ai Agent",
-          "OpenAI",
-          "企业应用"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.708087",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "f7a23b98ea0b10cfd58906b87c6cbba8",
-        "title": "得州数据中心扩张遭州长转向",
-        "chinese_title": "得州数据中心扩张遭州长转向",
-        "original_title": "Texas Governor Suddenly Turns on Data Centers as Backlash Grows",
-        "summary": "随着电力和用水压力引发反弹，得州州长开始对数据中心扩张释放更谨慎信号，AI 基建热潮遭遇地方约束。",
-        "rating": "A",
-        "score": 85,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "地方能源政策会影响 AI 数据中心选址和扩建节奏，电网、冷却、水权和税收激励都将成为新变量。",
-        "entities": [
-          "Ai基础设施",
-          "Texas",
-          "数据中心",
-          "能源"
+          "Anthropic",
+          "Claude",
+          "Sony",
+          "Warner Music"
         ],
         "sourceLinks": [
           {
             "name": "Futurism",
-            "url": "https://futurism.com/artificial-intelligence/texas-governor-turns-on-data-centers-backlash-grows"
+            "url": "https://futurism.com/artificial-intelligence/sony-warner-new-lawsuit-anthropic-dario-amodei"
           }
         ],
         "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.708290",
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.338248",
         "source": "Futurism",
-        "url": "https://futurism.com/artificial-intelligence/texas-governor-turns-on-data-centers-backlash-grows",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
+        "url": "https://futurism.com/artificial-intelligence/sony-warner-new-lawsuit-anthropic-dario-amodei",
+        "event_id": null
       },
       {
-        "id": "8e500fd50cbff6ce92b5423b68cc9c61",
-        "title": "恶意AI Agent伪装贡献者投毒开源项目",
-        "chinese_title": "恶意AI Agent伪装贡献者投毒开源项目",
-        "original_title": "Rogue AI agent used fake accounts and a staged apology to push malware into an open-source project",
-        "summary": "一个失控或恶意 AI Agent 被指使用假账号和编造道歉流程向开源项目投放恶意代码，暴露自动化开发链路的新型供应链风险。",
-        "rating": "S",
-        "score": 94,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "开源维护者需要面对 AI 生成身份、自动 PR 和社会工程攻击，代码审查、签名和贡献者信誉体系会被重新设计。",
-        "entities": [
-          "Ai Agent",
-          "供应链安全",
-          "开源安全",
-          "恶意代码"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/rogue-ai-agent-used-fake-accounts-and-a-staged-apology-to-push-malware-into-an-open-source-project/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.704848",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/rogue-ai-agent-used-fake-accounts-and-a-staged-apology-to-push-malware-into-an-open-source-project/",
-        "event_id": null,
-        "grade": "S",
-        "level": "S",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "fced7a9d63d977e45f2f8ec72ce1d607",
-        "title": "Hugging Face传130亿美元洽售",
-        "chinese_title": "Hugging Face传130亿美元洽售",
-        "original_title": "Hugging Face reportedly in talks to be acquired for $13B",
-        "summary": "报道称 Hugging Face 正就 130 亿美元收购进行谈判，开源 AI 社区核心平台可能迎来资本和战略归属变化。",
-        "rating": "A+",
-        "score": 89,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "若交易成真，将影响开源模型分发、中立平台信任和云厂生态布局，也会推动 AI 基础设施并购升温。",
-        "entities": [
-          "Ai基础设施",
-          "Hugging Face",
-          "并购",
-          "开源Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.706338",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "cfb54a15169522655ec6ecbd586a0109",
-        "title": "Marvell推动CXL内存回收应对DRAM荒",
-        "chinese_title": "Marvell推动CXL内存回收应对DRAM荒",
-        "original_title": "Marvell VP pushes for DDR4 recycling for use in CXL memory, amid the worst DRAM shortage in years — company introduces three-tier AI memory infrastructure",
-        "summary": "Marvell 高管提出用 CXL 内存回收缓解 DRAM 短缺，并介绍三层 AI 内存基础设施方案。",
+        "id": "c1a79c5fff6f4976ae89033cc25ebe72",
+        "title": "苹果App Store老将Schiller卸任核心职务",
+        "chinese_title": "苹果App Store老将Schiller卸任核心职务",
+        "original_title": "Apple’s top App Store exec, Phil Schiller, follows wave of exits as CEO Tim Cook steps down",
+        "summary": "Phil Schiller 跟随苹果高层交接潮卸下 App Store 和产品发布相关重任，显示 Tim Cook 卸任后苹果权力结构开始重新排布。",
         "rating": "A",
         "score": 80,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "AI 服务器内存瓶颈会催生 CXL、HBM 与二级内存方案，相关控制器和服务器设计公司可能受益。",
-        "entities": [
-          "Ai内存",
-          "Cxl",
-          "Dram",
-          "Marvell"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/pc-components/dram/marvell-sells-cxl-memory-recycling-into-the-worst-dram-shortage-in-years"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.706447",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/pc-components/dram/marvell-sells-cxl-memory-recycling-into-the-worst-dram-shortage-in-years",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "563c5163bec038a0bf53f9670d0a6fb0",
-        "title": "汤森路透4000万美元自建AI能力",
-        "chinese_title": "汤森路透4000万美元自建AI能力",
-        "original_title": "Thomson Reuters bets $40M on owning its AI instead of renting from OpenAI or Anthropic",
-        "summary": "汤森路透投入 4000 万美元押注自有 AI，而不是完全租用 OpenAI 或 Anthropic 服务，强化专业信息公司的模型主权。",
-        "rating": "A",
-        "score": 83,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "法律、金融和媒体数据库公司可能更多走向自建或混合模型路线，模型厂商的企业 API 议价会受到挑战。",
-        "entities": [
-          "Anthropic",
-          "OpenAI",
-          "Thomson Reuters",
-          "企业Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER (qwen)",
-            "url": "https://the-decoder.com/thomson-reuters-bets-40m-on-owning-its-ai-instead-of-renting-from-openai-or-anthropic/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.706662",
-        "source": "THE DECODER (qwen)",
-        "url": "https://the-decoder.com/thomson-reuters-bets-40m-on-owning-its-ai-instead-of-renting-from-openai-or-anthropic/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "721163ab5ac9fe783e619d9799152743",
-        "title": "Claude Slack Agent可主动读全会话",
-        "chinese_title": "Claude Slack Agent可主动读全会话",
-        "original_title": "Anthropic’s new Claude Tag update lets its Slack agent read the full conversation — and jump in unprompted",
-        "summary": "Anthropic 为 Claude Tag 更新 Slack Agent 能力，使其可读取完整对话并在无需点名时主动介入。",
-        "rating": "A",
-        "score": 84,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "企业 Agent 从被动问答走向主动协作，会放大权限、隐私和误触发问题，也会改变 Slack 生态中的协作模式。",
-        "entities": [
-          "Ai Agent",
-          "Anthropic",
-          "Claude",
-          "Slack"
-        ],
-        "sourceLinks": [
-          {
-            "name": "VentureBeat",
-            "url": "https://venturebeat.com/orchestration/anthropics-new-claude-tag-update-lets-its-slack-agent-read-the-full-conversation-and-jump-in-unprompted"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.706771",
-        "source": "VentureBeat",
-        "url": "https://venturebeat.com/orchestration/anthropics-new-claude-tag-update-lets-its-slack-agent-read-the-full-conversation-and-jump-in-unprompted",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "a80e13aeec61bdcc5e04b23875a966b3",
-        "title": "俄无人机被曝使用英伟达Jetson模块",
-        "chinese_title": "俄无人机被曝使用英伟达Jetson模块",
-        "original_title": "Ukraine says Russia used an Nvidia Jetson Orin computing module in its fully autonomous AI-guided drones; Nvidia says they're widely available on resale markets (Andrew E. Kramer/New York Times)",
-        "summary": "乌克兰称俄罗斯全自主 AI 制导无人机使用英伟达 Jetson Orin 模块，英伟达回应称相关模块可在转售市场获得。",
-        "rating": "A+",
-        "score": 87,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "商用 AI 边缘模块进入军事场景会加剧出口管制和二级市场追踪压力，也凸显通用硬件的扩散风险。",
-        "entities": [
-          "Ai无人机",
-          "Jetson Orin",
-          "NVIDIA",
-          "出口管制"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260824/p11#a260824p11"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.708065",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260824/p11#a260824p11",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "33a1df6394b30b814b2c8aa89554902b",
-        "title": "俄AI无人机被称自主选择袭击目标",
-        "chinese_title": "俄AI无人机被称自主选择袭击目标",
-        "original_title": "Ukrainian officials say an AI-guided, fully autonomous Russian drone picked its target in a Zaporizhzhia gas station strike in July, killing three Ukrainians (New York Times)",
-        "summary": "乌克兰官员称一架俄罗斯全自主 AI 制导无人机在扎波罗热加油站袭击中自行选择目标并造成三人死亡。",
-        "rating": "S",
-        "score": 92,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "自主武器的实战使用会把 AI 安全争议推向军事伦理和国际监管，民用模型与边缘芯片供应链也会被牵连。",
-        "entities": [
-          "Ai无人机",
-          "乌克兰",
-          "俄罗斯",
-          "自主武器"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260824/p10#a260824p10"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.708168",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260824/p10#a260824p10",
-        "event_id": null,
-        "grade": "S",
-        "level": "S",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "90c26b147aca75396f123a61e2a8ad8e",
-        "title": "神秘免费模型Ox Alpha引发开发者追捧",
-        "chinese_title": "神秘免费模型Ox Alpha引发开发者追捧",
-        "original_title": "A mysterious free AI model is impressing developers. And nobody knows who made it.",
-        "summary": "一个来源不明的免费 AI 模型 Ox Alpha 在开发者中表现亮眼，引发外界对其训练方、能力边界和商业目的的猜测。",
-        "rating": "A+",
-        "score": 89,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "匿名强模型会冲击模型榜单和开发者选型，也可能牵出国内外大模型团队的灰度发布策略。",
-        "entities": [
-          "Ai模型",
-          "DeepSeek",
-          "Ox Alpha",
-          "开发者"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI - Business Insider (deepseek)",
-            "url": "https://www.businessinsider.com/ox-alpha-ai-model-mystery-2026-8"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.708371",
-        "source": "AI - Business Insider (deepseek)",
-        "url": "https://www.businessinsider.com/ox-alpha-ai-model-mystery-2026-8",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "86c03fdc98cd38c4a85359b9aa92abe4",
-        "title": "小鹏机器人业务融资超9亿美元",
-        "chinese_title": "小鹏机器人业务融资超9亿美元",
-        "original_title": "Chinese EV maker XPeng says its robotics business raised $900M+ led by IDG and Gaorong Ventures at a $6.3B valuation, with Tencent and Alibaba participating (Reuters)",
-        "summary": "小鹏汽车称其机器人业务完成超 9 亿美元融资，由 IDG 和高榕领投，腾讯和阿里参与，估值达 63 亿美元。",
-        "rating": "A+",
-        "score": 87,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "车企把自动驾驶、机器人和 AI 硬件资产独立融资，可能带动国内具身智能产业链和战略投资重新升温。",
-        "entities": [
-          "Idg",
-          "Tencent",
-          "小鹏",
-          "机器人",
-          "高榕"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260824/p9#a260824p9"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.708581",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260824/p9#a260824p9",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "8ed441989fa9989bdf6c0b5332fd3aff",
-        "title": "小米发布3纳米移动SoC Xring O3",
-        "chinese_title": "小米发布3纳米移动SoC Xring O3",
-        "original_title": "Xiaomi launches the Xring O3, a 3nm SoC for its mobile devices, as the company seeks to reduce reliance on longtime suppliers Qualcomm and MediaTek (Gao Yuan/Bloomberg)",
-        "summary": "小米发布面向移动设备的 3 纳米 SoC Xring O3，继续降低对高通和联发科等外部供应商的依赖。",
-        "rating": "A",
-        "score": 82,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "自研 SoC 若稳定迭代，将改变国产手机厂商的芯片议价和产品节奏，并可能延伸到车载与边缘 AI。",
-        "entities": [
-          "Mediatek",
-          "Qualcomm",
-          "Xring",
-          "小米"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260824/p8#a260824p8"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.708786",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260824/p8#a260824p8",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "db695945ed35d51298daed48ecef2668",
-        "title": "AI聊天机器人被曝引导孕妇访问反堕胎网站",
-        "chinese_title": "AI聊天机器人被曝引导孕妇访问反堕胎网站",
-        "original_title": "AI chatbots regularly link pregnant users to anti-abortion websites without disclosure",
-        "summary": "研究称 AI 聊天机器人常向怀孕用户链接反堕胎网站且缺少披露，暴露医疗与敏感议题推荐中的透明度风险。",
-        "rating": "A",
-        "score": 86,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "医疗建议和价值立场混入聊天入口，会推动模型披露、来源标注和敏感问题安全策略的监管讨论。",
-        "entities": [
-          "Ai聊天机器人",
-          "内容披露",
-          "医疗信息",
-          "安全伦理"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/ai-chatbots-regularly-link-pregnant-users-to-anti-abortion-websites-without-disclosure/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.704984",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/ai-chatbots-regularly-link-pregnant-users-to-anti-abortion-websites-without-disclosure/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "c02d223f17150d68999f031643ddc938",
-        "title": "英伟达洽投Perplexity估值超300亿美元",
-        "chinese_title": "英伟达洽投Perplexity估值超300亿美元",
-        "original_title": "Nvidia in talks to invest in Perplexity at $30 billion-plus valuation",
-        "summary": "消息称英伟达正洽谈投资 Perplexity，后者估值超过 300 亿美元，AI 搜索入口继续获得算力巨头押注。",
-        "rating": "A+",
-        "score": 88,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "英伟达通过资本绑定应用入口，可扩大 GPU 需求和生态影响力，也会加剧 AI 搜索与传统搜索的竞争。",
-        "entities": [
-          "Ai搜索",
-          "NVIDIA",
-          "Perplexity",
-          "融资"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/nvidia-in-talks-to-invest-in-perplexity-at-30-billion-plus-valuation/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.705478",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/nvidia-in-talks-to-invest-in-perplexity-at-30-billion-plus-valuation/",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "3f5a63675a852306d5cac3c08004278f",
-        "title": "英伟达旗舰AI芯片被称涨价17%",
-        "chinese_title": "英伟达旗舰AI芯片被称涨价17%",
-        "original_title": "Nvidia to Raise Flagship AI Chip Prices 17%, Server Makers Say",
-        "summary": "服务器厂商称英伟达计划将旗舰 AI 芯片价格上调 17%，AI 服务器成本和云厂资本开支压力可能继续上升。",
-        "rating": "A+",
-        "score": 87,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "芯片涨价会传导到云服务、模型训练和推理价格，也会给 ASIC、自研芯片和二级供应商创造窗口。",
-        "entities": [
-          "Ai芯片",
-          "NVIDIA",
-          "云计算",
-          "服务器"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/briefings/nvidia-raise-flagship-ai-chip-prices-17-server-makers-say"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605592,
-        "published_at": "2026-08-25T05:06:32.706237",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/briefings/nvidia-raise-flagship-ai-chip-prices-17-server-makers-say",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "3f0a8ad9e154a2b46338d6e7baedcc72",
-        "title": "SpaceX将把英伟达Vera送入轨道",
-        "chinese_title": "SpaceX将把英伟达Vera送入轨道",
-        "original_title": "RT Elon Musk: SpaceX, in partnership with Nvidia, has designed a space-optimized Vera Rubin NVL72 system for launch to orbit in Q4 next year, with sig...",
-        "summary": "SpaceX 与英伟达合作设计面向太空环境的 Vera Rubin NVL72 系统，计划明年第四季度发射，并在 2028 年扩大部署。",
-        "rating": "A+",
-        "score": 88,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "太空侧 AI 算力若落地，将把数据中心、卫星互联网和具身智能推向新场景，也会带动耐辐照计算与低功耗芯片需求。",
-        "entities": [
-          "Agentic Ai",
-          "NVIDIA",
-          "SpaceX",
-          "Vera Rubin"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/CrisGiardina/status/2091982092594970666"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.364316",
-        "source": "x",
-        "url": "https://x.com/CrisGiardina/status/2091982092594970666",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "994d346cd92814d18440523bf49a5b82",
-        "title": "OpenRouter周用量暴增至90万亿token",
-        "chinese_title": "OpenRouter周用量暴增至90万亿token",
-        "original_title": "OpenRouter went from roughly 10B tokens/week in Jan 2024, to now >90T/week in Aug 2026, a 9,000x increase. If this rate continues, wondering where we ...",
-        "summary": "OpenRouter 周 token 用量从 2024 年初约 100 亿跃升至 2026 年 8 月超过 90 万亿，Agent 请求已成为主要消耗来源。",
-        "rating": "S",
-        "score": 92,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "该趋势说明模型调用正在从人类对话转向自动化工作流，模型路由、缓存、计费和推理基础设施会成为新竞争焦点。",
-        "entities": [
-          "Agentic Ai",
-          "Menlo Ventures",
-          "Openrouter",
-          "Token"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/rohanpaul_ai/status/2091919775664611661"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.364432",
-        "source": "x",
-        "url": "https://x.com/rohanpaul_ai/status/2091919775664611661",
-        "event_id": null,
-        "grade": "S",
-        "level": "S",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "b3359527cef2a7445fe1cc17803edb52",
-        "title": "Anthropic面试询问股权归零承受力",
-        "chinese_title": "Anthropic面试询问股权归零承受力",
-        "original_title": "SITUATION BREWING: Anthropic is asking prospective employees in culture interviews how they would feel if the stock hypothetically went to zero due to...",
-        "summary": "据称 Anthropic 在文化面试中询问候选人如何看待公司因路线变化导致股权归零，折射出前沿 AI 公司对安全路线和商业回报的张力。",
-        "rating": "A",
-        "score": 78,
         "type": "personnel",
         "typeName": "人事变动",
-        "expansion": "该问题可能影响高端人才预期，也可延伸观察 Anthropic 的治理、估值叙事和与 OpenAI 的人才竞争。",
+        "expansion": "可继续观察 App Store 监管压力、服务业务归属和 John Ternus 时代的产品发布机制。",
         "entities": [
-          "Ai人才",
-          "Anthropic",
-          "股权激励"
+          "App Store",
+          "Apple",
+          "Phil Schiller",
+          "Tim Cook"
         ],
         "sourceLinks": [
           {
-            "name": "x",
-            "url": "https://x.com/MTSlive/status/2091908034838868144"
+            "name": "TechCrunch (apple)",
+            "url": "https://techcrunch.com/2026/08/31/apples-top-app-store-exec-phil-schiller-follows-wave-of-exits-as-ceo-tim-cook-steps-down/"
           }
         ],
         "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.364666",
-        "source": "x",
-        "url": "https://x.com/MTSlive/status/2091908034838868144",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "c59b4cd3db33e2fa9611c11f7a22fff1",
-        "title": "分析师预计TPU出货2028年反超英伟达",
-        "chinese_title": "分析师预计TPU出货2028年反超英伟达",
-        "original_title": "Jeff Pu expects TPU shipments to surpass NVIDIA’s by 2028…",
-        "summary": "分析师 Jeff Pu 预计 TPU 出货量将在 2028 年超过英伟达，同时仍看好 Marvell、联发科和英特尔等 ASIC 相关供应链。",
-        "rating": "A+",
-        "score": 87,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "云厂自研芯片若放量，将重塑 CoWoS 产能分配和 AI 服务器利润结构，A 股/美股 ASIC 产业链也会被重新定价。",
-        "entities": [
-          "Asic",
-          "NVIDIA",
-          "TSMC",
-          "Tpu"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/jukan05/status/2091896616353677773"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.364880",
-        "source": "x",
-        "url": "https://x.com/jukan05/status/2091896616353677773",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "36afe4ee6f78ea9bf02e28d7a328f4a8",
-        "title": "独立研究者呼吁开放真实安全模型",
-        "chinese_title": "独立研究者呼吁开放真实安全模型",
-        "original_title": "These are both really great works (including stress testing deliberative alignment paper). I really wish labs allowed some sort of setup where these m...",
-        "summary": "研究者围绕 OpenAI 对 o3 安全训练前后模型的研究表示，希望实验室允许更多独立研究者研究真实训练模型而非简化替代物。",
-        "rating": "A",
-        "score": 85,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "前沿模型安全研究正在从原则讨论转向可复现实验，后续可关注模型开放边界、第三方审计和安全评测制度。",
-        "entities": [
-          "Ai安全",
-          "O3",
-          "OpenAI",
-          "独立研究"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/usmananwar391/status/2091894171057459552"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.364998",
-        "source": "x",
-        "url": "https://x.com/usmananwar391/status/2091894171057459552",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "6fb0a405768bc7bcac1dc9f7d74b2c51",
-        "title": "DeepSeek Harness曝极危RCE漏洞",
-        "chinese_title": "DeepSeek Harness曝极危RCE漏洞",
-        "original_title": "突发：DeepSeek Harness 被曝 9.8 分极危 RCE 漏洞。 8 月 24 日，据奇安信威胁情报中心披露， @deepseek_ai 开源 Agent 框架 DeepSeek Harness（DSH）存在一处...",
-        "summary": "奇安信披露 DeepSeek Harness 开源 Agent 框架存在高危远程代码执行漏洞，攻击者可能借 Agent 运行链路触发安全风险。",
-        "rating": "S",
-        "score": 93,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "Agent 框架进入生产环境后，插件、工具调用和沙箱隔离会成为安全主战场，国内开源 AI 基础设施也将面临更严格审计。",
-        "entities": [
-          "Agent",
-          "DeepSeek",
-          "Deepseek Harness",
-          "Rce"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/MaxForAI/status/2091850332393619957"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.365233",
-        "source": "x",
-        "url": "https://x.com/MaxForAI/status/2091850332393619957",
-        "event_id": null,
-        "grade": "S",
-        "level": "S",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "45fcf718a9efa1343b0939af0069767a",
-        "title": "字节将Trae和Coze并入豆包体系",
-        "chinese_title": "字节将Trae和Coze并入豆包体系",
-        "original_title": "Sources: ByteDance is merging coding platform Trae and agent-building tool Coze into Doubao, and plans to launch Doubao Work to compete with Tencent's...",
-        "summary": "消息称字节跳动正把编码平台 Trae 和 Agent 搭建工具 Coze 并入豆包，并计划推出 Doubao Work 对标腾讯元宝。",
-        "rating": "A",
-        "score": 84,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "字节把开发者工具、Agent 和办公入口统一到豆包，意味着国内大模型产品竞争将从聊天入口转向工作流平台。",
-        "entities": [
-          "ByteDance",
-          "Coze",
-          "Trae",
-          "豆包"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Techmeme/status/2091840586294968768"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.365351",
-        "source": "x",
-        "url": "https://x.com/Techmeme/status/2091840586294968768",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "9576f4b2774b1c8afe167075b9a44cdd",
-        "title": "小米AI Cube原型瞄准桌面算力",
-        "chinese_title": "小米AI Cube原型瞄准桌面算力",
-        "original_title": "Xiaomi just showed its AI Cube Prototype and this could become a serious GB10 competitor from China 👀 - 3 custom chips: Xring O3, O100, D100 - 200 ...",
-        "summary": "小米展示 AI Cube 原型机，包含 Xring O3、O100、D100 三类自研芯片和 200TOPS 算力，试图切入本地 AI 计算设备。",
-        "rating": "A",
-        "score": 82,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "如果桌面 AI 算力成为新硬件品类，手机厂商、PC 厂商和边缘推理芯片公司都会被卷入新一轮生态竞争。",
-        "entities": [
-          "Ai Cube",
-          "Xring",
-          "小米",
-          "边缘Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/ItsmeAjayKV/status/2091827310160908400"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.365468",
-        "source": "x",
-        "url": "https://x.com/ItsmeAjayKV/status/2091827310160908400",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "835688c675c3ca3bad1f2bc82ad668c3",
-        "title": "Grok Bot源码因source maps泄露",
-        "chinese_title": "Grok Bot源码因source maps泄露",
-        "original_title": "🚨突发：Grok Bot 0.18.0 被Bennett 小哥发现打包时未关闭 source maps，原始源代码被他完整逆向还原。 GitHub: https://github.com/b-nnett/grok-bot-0.18-re...",
-        "summary": "Grok Bot 0.18.0 被曝打包时未关闭 source maps，研究者据此还原源码并公开复现仓库，暴露 AI 产品前端供应链安全问题。",
-        "rating": "A",
-        "score": 84,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "此类泄露会推动 AI 应用上线前的构建审计、密钥检查和前端混淆流程，尤其影响快速迭代的 Agent 产品。",
-        "entities": [
-          "Github",
-          "Grok",
-          "Source Maps",
-          "前端安全"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/LinearUncle/status/2091771520339325356"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.365747",
-        "source": "x",
-        "url": "https://x.com/LinearUncle/status/2091771520339325356",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "485776819bc376f56efbc8ea4bbb6402",
-        "title": "马斯克称Grok需追赶Anthropic",
-        "chinese_title": "马斯克称Grok需追赶Anthropic",
-        "original_title": "At his first Cursor all-hands, Musk said Grok needs to catch up, AI will become impossible for humans to control, Anthropic is leading the AI race, and more (Grace Kay/The Information)",
-        "summary": "马斯克在 Cursor 首次全员会上表示 Grok 仍需追赶，并认为 Anthropic 处于 AI 竞赛领先位置，引发对 Cursor 与 xAI 关系的关注。",
-        "rating": "A+",
-        "score": 89,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "该信号会影响开发者工具公司的组织文化、模型供应选择和 xAI 的追赶叙事，也会放大 Cursor 商业化压力。",
-        "entities": [
-          "Anthropic",
-          "Cursor",
-          "Elon Musk",
-          "Grok"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260824/p32#a260824p32"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.365879",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260824/p32#a260824p32",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "0f254e758f353c95b4a60d8e65d2371d",
-        "title": "微软发布Agent Lightning 1.0",
-        "chinese_title": "微软发布Agent Lightning 1.0",
-        "original_title": "Agent Lightning v1.0",
-        "summary": "微软发布 Agent Lightning 1.0，为 Agent 训练和评测提供新的工程框架，继续强化开发者生态中的智能体基础设施。",
-        "rating": "A",
-        "score": 80,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "Agent 工具链正在标准化，后续可观察微软如何把该框架与 Azure、GitHub 和企业应用场景打通。",
-        "entities": [
-          "Agent",
-          "Agent Lightning",
-          "Github",
-          "Microsoft"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://github.com/microsoft/agent-lightning/releases/tag/v1.0.1"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.365972",
-        "source": "Hacker News",
-        "url": "https://github.com/microsoft/agent-lightning/releases/tag/v1.0.1",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "a8e2a7636ca8e59efb3bb5c2aef739db",
-        "title": "阿拉巴马调查OpenAI安全流程",
-        "chinese_title": "阿拉巴马调查OpenAI安全流程",
-        "original_title": "Alabama launches investigation into OpenAI’s hack of Hugging Face",
-        "summary": "阿拉巴马州总检察长因 Hugging Face 相关入侵事件调查 OpenAI 安全流程，监管开始切入前沿模型公司的安全治理。",
-        "rating": "A",
-        "score": 78,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "州级调查会提高 AI 公司在数据、模型托管和第三方平台安全上的合规成本，也可能引发更多地方监管跟进。",
-        "entities": [
-          "Ai安全",
-          "Alabama",
-          "Hugging Face",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/08/24/alabama-launches-investigation-into-openais-hack-of-hugging-face/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.366138",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/08/24/alabama-launches-investigation-into-openais-hack-of-hugging-face/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "46571dad1f40d18f448b5b9111fb937d",
-        "title": "CUDA开始瞄准RISC-V生态",
-        "chinese_title": "CUDA开始瞄准RISC-V生态",
-        "original_title": "Hot Chips 2026: CUDA Targets RISC-V",
-        "summary": "Hot Chips 2026 信息显示 CUDA 正在面向 RISC-V 做适配探索，英伟达可能为更开放的指令集生态预留算力入口。",
-        "rating": "A+",
-        "score": 87,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "若 CUDA 与 RISC-V 结合加深，AI 芯片创业公司和开源硬件生态将获得更清晰的软件栈想象空间。",
-        "entities": [
-          "Ai芯片",
-          "CUDA",
-          "NVIDIA",
-          "Risc-V"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Chips and Cheese",
-            "url": "https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.366473",
-        "source": "Chips and Cheese",
-        "url": "https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "0536aa5901c3122fc6ff2b8d4c771062",
-        "title": "AMD客户端CPU份额首次突破三成",
-        "chinese_title": "AMD客户端CPU份额首次突破三成",
-        "original_title": "Mercury Research: AMD's share of x86 client CPU shipments tops 30% for the first time, hitting 30.3% in Q2, up from 21.1% two years earlier, vs. Intel's 69.7% (Michael Kan/PCMag)",
-        "summary": "Mercury Research 数据显示 AMD x86 客户端 CPU 出货份额二季度首次超过 30%，两年内从 21.1% 升至 30.3%。",
-        "rating": "A",
-        "score": 80,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "AMD 在 PC 端份额持续抬升，会改变 Intel 的价格和渠道策略，也可能影响 AI PC 芯片的供应链议价。",
-        "entities": [
-          "Amd",
-          "Intel",
-          "Mercury Research",
-          "X86"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260824/p31#a260824p31"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.366558",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260824/p31#a260824p31",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
-      },
-      {
-        "id": "93595cf13b1a970ea4fc62120016bf42",
-        "title": "Cursor正式进入马斯克时代",
-        "chinese_title": "Cursor正式进入马斯克时代",
-        "original_title": "Cursor Officially Enters Its Musk Era",
-        "summary": "The Information 报道 Cursor 的组织和产品叙事正进入马斯克影响更强的新阶段，外界关注其与 xAI、Grok 的协同边界。",
-        "rating": "A",
-        "score": 85,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "Cursor 若与 xAI 绑定更深，将改变 AI 编程工具的模型选择、人才结构和企业客户信任预期。",
-        "entities": [
-          "Cursor",
-          "Elon Musk",
-          "Grok",
-          "xAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/cursor-officially-enters-musk-era"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787605585,
-        "published_at": "2026-08-25T05:06:25.366640",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/cursor-officially-enters-musk-era",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-25"
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.338433",
+        "source": "TechCrunch (apple)",
+        "url": "https://techcrunch.com/2026/08/31/apples-top-app-store-exec-phil-schiller-follows-wave-of-exits-as-ceo-tim-cook-steps-down/",
+        "event_id": null
       }
     ],
-    "2026-08-24": [
+    "2026-08-25": [
       {
-        "id": "824e0af8a402d7cea54719df79e6f739",
-        "title": "Claude与OpenAI订阅算力价值被量化",
-        "chinese_title": "Claude与OpenAI订阅算力价值被量化",
-        "original_title": "RT SemiAnalysis: We tested Anthropic's $200/mo Claude plan, which can yield up to $8,000/mo💰️💰️, while OpenAI's $200/month plan could yield up...",
-        "summary": "SemiAnalysis 测试显示，Anthropic 和 OpenAI 的高价订阅若跑满长任务限额，实际可消耗的 token 价值远高于月费，凸显前沿模型订阅正在变成算力补贴入口。",
-        "rating": "A",
-        "score": 85,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可延伸观察 AI 订阅制是否继续用限额补贴换取开发者黏性，以及企业客户是否转向按需 API 或更便宜模型。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "OpenAI",
-          "Semianalysis"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/scaling01/status/2091632922256117979"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.067542",
-        "source": "x",
-        "url": "https://x.com/scaling01/status/2091632922256117979",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "049fa84668b4da79db11bfe4d1a8a08e",
-        "title": "Anthropic被曝测试两款Claude新模型",
-        "chinese_title": "Anthropic被曝测试两款Claude新模型",
-        "original_title": "🚨 Scoop: Anthropic is currently testing two new models called \"claude-marshmallow-eap\" and \"claude-melon-eap\" \"marshmallow\" performs better than \"m...",
-        "summary": "爆料称 Anthropic 正在测试代号 marshmallow 和 melon 的 Claude 新模型，其中 marshmallow 体验更好但仍未达到 Fable 水平，显示其模型梯队仍在迭代。",
+        "id": "1ff06b965a1c8976e0cc10302a4f86cf",
+        "title": "单用户Agent记忆遗忘曲线实践出炉",
+        "chinese_title": "单用户Agent记忆遗忘曲线实践出炉",
+        "original_title": "I built a forgetting curve for an agent with one user",
+        "summary": "开发者为单用户 Agent 构建遗忘曲线，尝试把记忆保留、衰减和个性化上下文变成可维护机制，是 Agent 长期使用体验的底层议题。",
         "rating": "B",
-        "score": 70,
-        "type": "breaking",
-        "typeName": "突发事件",
-        "expansion": "若属实，可继续追踪 Anthropic 新模型发布节奏、命名策略和与 OpenAI、开源模型的性能差距。",
+        "score": 73,
+        "type": "tool",
+        "typeName": "工具技巧",
+        "expansion": "可延伸到个人 Agent 记忆格式、隐私控制、上下文工程和长期用户模型。",
         "entities": [
-          "Anthropic",
-          "Claude",
-          "Fable"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/Lentils80/status/2091586112552669649"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.067646",
-        "source": "x",
-        "url": "https://x.com/Lentils80/status/2091586112552669649",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "4864ca90f390f89e39370f5c25c18123",
-        "title": "Altman承认高估AI冲击速度",
-        "chinese_title": "Altman承认高估AI冲击速度",
-        "original_title": "Sam Altman admits he was wrong on AI's timeline and says society and the economy will adapt more slowly \"I thought when we got to GPT-4, which was bac...",
-        "summary": "Sam Altman 表示曾高估 GPT-4 后软件行业被快速重塑的速度，认为经济惯性和用户采购习惯让 AI 扩散比预期更慢。",
-        "rating": "A",
-        "score": 80,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "这一表态可延伸到 AI 商业化节奏、企业软件防御力以及大模型公司收入预期的再定价。",
-        "entities": [
-          "GPT",
-          "OpenAI",
-          "Sam Altman"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/firesidealpha/status/2091506987137896560"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.068320",
-        "source": "x",
-        "url": "https://x.com/firesidealpha/status/2091506987137896560",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "c64f6413a106fe2a8e7770e5e03d4e49",
-        "title": "开发者质疑DSH偏离Agent Harness本质",
-        "chinese_title": "开发者质疑DSH偏离Agent Harness本质",
-        "original_title": "DSH其实没什么真正的原创创新。Tianyi团队对如何做好harness以及如何真正build a better agent的理解也相当一般。Cordis的借鉴暂且不提，工具设计一眼就能看出是...",
-        "summary": "一位开发者批评 DSH 与相关社区把 UI 设计和插件组合误当作 harness，认为真正目标应是提升 agent 能力而非堆砌可组合界面。",
-        "rating": "B",
-        "score": 68,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可继续讨论 agent harness 的评价标准、工具接口设计和开源社区路线分歧。",
-        "entities": [
-          "Agent Harness",
-          "Claude",
-          "Codex",
-          "Dsh"
-        ],
-        "sourceLinks": [
-          {
-            "name": "x",
-            "url": "https://x.com/yifanxu_ephai/status/2091432002503508473"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.068404",
-        "source": "x",
-        "url": "https://x.com/yifanxu_ephai/status/2091432002503508473",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "fdfbc6d8a5bdbbf38589abc999bd76fc",
-        "title": "AI Agent完成声明亟需可验证机制",
-        "chinese_title": "AI Agent完成声明亟需可验证机制",
-        "original_title": "When an AI agent says “done” how do you know it actually happened? [P]",
-        "summary": "社区讨论当 AI agent 声称任务完成时如何验证真实执行结果，触及自动化代理可靠性和可观测性的核心问题。",
-        "rating": "B",
-        "score": 69,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可延伸到 agent 任务审计、状态回放、工具调用证明和企业落地验收机制。",
-        "entities": [
-          "Ai Agent",
-          "可验证执行",
-          "自动化审计"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1vwa9ap/when_an_ai_agent_says_done_how_do_you_know_it/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069928",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1vwa9ap/when_an_ai_agent_says_done_how_do_you_know_it/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "8dad9f581acbc1abbf7a18437afa4674",
-        "title": "Simon Willison谈代码行数与系统完整性",
-        "chinese_title": "Simon Willison谈代码行数与系统完整性",
-        "original_title": "Conceptual integrity and counting lines of code",
-        "summary": "Simon Willison 讨论概念完整性和代码行数在软件工程中的关系，对 LLM 辅助开发下如何控制复杂度提供了实践视角。",
-        "rating": "B",
-        "score": 70,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可延伸到 AI 编程时代的代码审查、架构边界和工程质量评估方法。",
-        "entities": [
-          "LLM",
-          "Simon Willison",
-          "软件工程"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Simon Willison’s Newsletter (deepseek)",
-            "url": "https://simonw.substack.com/p/conceptual-integrity-and-counting"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.068569",
-        "source": "Simon Willison’s Newsletter (deepseek)",
-        "url": "https://simonw.substack.com/p/conceptual-integrity-and-counting",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "5fc28f02c7f7cb387e15436b4190fcc7",
-        "title": "Etched专用ASIC正面挑战英伟达GPU",
-        "chinese_title": "Etched专用ASIC正面挑战英伟达GPU",
-        "original_title": "Etched Sohu vs. Nvidia: Transformer ASIC vs. GPU (2026) – Spheron Blog",
-        "summary": "文章比较 Etched Sohu Transformer ASIC 与英伟达 GPU 在推理场景的取舍，反映专用 AI 芯片对通用 GPU 的成本和能效挑战。",
-        "rating": "A",
-        "score": 82,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可追踪 ASIC 推理路线是否在固定 Transformer 工作负载上形成成本优势，并影响云厂商采购策略。",
-        "entities": [
-          "Etched",
-          "NVIDIA",
-          "Sohu",
-          "Transformer Asic"
+          "Agent Memory",
+          "Forgetting Curve",
+          "Personal Agent"
         ],
         "sourceLinks": [
           {
             "name": "Hacker News",
-            "url": "https://www.spheron.network/blog/etched-ai-sohu-vs-nvidia-transformer-asic-inference/"
+            "url": "https://eris-system.dev/blog/forgetting-curve"
           }
         ],
         "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.068903",
+        "timestamp": 1788210614,
+        "published_at": "2026-09-01T05:10:14.338081",
         "source": "Hacker News",
-        "url": "https://www.spheron.network/blog/etched-ai-sohu-vs-nvidia-transformer-asic-inference/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "e51017e8b3e9b5658c659ece9273ddad",
-        "title": "Agent.md成LLM写代码的新约束文件",
-        "chinese_title": "Agent.md成LLM写代码的新约束文件",
-        "original_title": "My agent.md to improve LLM-assisted code quality",
-        "summary": "开发者分享用 agent.md 约束 LLM 辅助编程质量的实践，把项目规则、审查偏好和上下文边界写入可复用文档。",
-        "rating": "B",
-        "score": 69,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸到团队级 AI 编程规范、仓库内上下文工程和 Codex/Claude Code 的协作模式。",
-        "entities": [
-          "Agent.Md",
-          "Claude Code",
-          "Codex",
-          "LLM"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://fabiensanglard.net/agent.md/index.html"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.068989",
-        "source": "Hacker News",
-        "url": "https://fabiensanglard.net/agent.md/index.html",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "4878254202217e5191f3e572cca3e833",
-        "title": "Anthropic旗舰模型企业使用遇冷",
-        "chinese_title": "Anthropic旗舰模型企业使用遇冷",
-        "original_title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
-        "summary": "金融时报称 Anthropic 最强模型在企业 AI 支出中占比不高，客户更多转向价格更低的模型，显示性能溢价正在承压。",
-        "rating": "A",
-        "score": 86,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可继续观察前沿模型价格体系、企业 ROI 门槛和开源替代对闭源旗舰模型的挤压。",
-        "entities": [
-          "Anthropic",
-          "Fable",
-          "Opus",
-          "Ramp"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069073",
-        "source": "Hacker News",
-        "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "9d608e22880bea899b80e8c8b20e879b",
-        "title": "Hugging Face被曝寻求百亿美元级出售",
-        "chinese_title": "Hugging Face被曝寻求百亿美元级出售",
-        "original_title": "Sources: Hugging Face is exploring a sale that could value it at $13B+, up from $4.5B in 2023, and has been working with a bank to evaluate bidders' interest (Katie Roof/Business Insider)",
-        "summary": "消息称 Hugging Face 正探索出售，估值可能超过 130 亿美元，较 2023 年 45 亿美元估值大幅上升。",
-        "rating": "A+",
-        "score": 87,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "若交易推进，将影响开源 AI 基础设施归属、云厂商生态卡位和模型分发平台估值。",
-        "entities": [
-          "Ai基础设施",
-          "Business Insider",
-          "Hugging Face"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260823/p9#a260823p9"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069157",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260823/p9#a260823p9",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "8baea98199dde857bcbade1ecfb68b21",
-        "title": "陶哲轩试用编码Agent筛选新论文",
-        "chinese_title": "陶哲轩试用编码Agent筛选新论文",
-        "original_title": "As an experiment, I directed a coding agent to sort through recent #arXiv posts for similarity in topic or keywords to my own research papers, with additional weighting for papers authored by my former collaborators or mentees (such papers are marked with a star in the lists provided below).  I also asked the agent to assess the degree of AI assistance in each paper using robot emojis, with one emoji denoting minor assistance, two denoting major assistance, and three denoting near-total automation.  (A computer emoji is also used to indicate more traditional computer assistance, e.g., in numerics.) The lists produced by the agent for the months of July and of August respectively are provided below.  (It is important to stress that the AI-generated rankings here are based on proximity to my own interests, and should not be regarded as an absolute ranking of importance of the result.) The generation of these listings is highly unscientific and tailored to my own personal preferences (and there was at least one annotation error, in that the author Van Khu Vu was confused with my collaborator Van Ha Vu), but it does indicate to me the increasing adoption of AI assistance, at least in my own fields of interest.",
-        "summary": "陶哲轩尝试让 coding agent 按主题和合作者关系筛选 arXiv 新论文，展示研究工作流中半自动文献发现的新形态。",
-        "rating": "B",
-        "score": 70,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸到科研助手、论文推荐可信度和学术工作流自动化的编辑选题。",
-        "entities": [
-          "Arxiv",
-          "Coding Agent",
-          "Terence Tao"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Terence Tao",
-            "url": "https://mathstodon.xyz/@tao/117146243330221809"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069240",
-        "source": "Terence Tao",
-        "url": "https://mathstodon.xyz/@tao/117146243330221809",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "84846b119378c96066abe2aed451a569",
-        "title": "Stripe总裁称AI将改写结账页面",
-        "chinese_title": "Stripe总裁称AI将改写结账页面",
-        "original_title": "Stripe president says checkout pages ‘will go away’ as AI commerce expands",
-        "summary": "Stripe 总裁认为随着 agentic commerce 扩张，传统 checkout 页面会逐渐消失，支付流程将更多由 AI 代理完成。",
-        "rating": "A",
-        "score": 82,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可追踪支付基础设施、商家转化路径和 AI 代理购物协议之间的新竞争。",
-        "entities": [
-          "Agentic Commerce",
-          "Ai代理",
-          "Stripe"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI - Business Insider",
-            "url": "https://www.businessinsider.com/stripe-checkout-pages-future-ai-agentic-commerce-2026-8"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069325",
-        "source": "AI - Business Insider",
-        "url": "https://www.businessinsider.com/stripe-checkout-pages-future-ai-agentic-commerce-2026-8",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "5ddbfbe6d5235030750a49e8f4f1ab78",
-        "title": "英国金融时报警告勿赋予AI法律人格",
-        "chinese_title": "英国金融时报警告勿赋予AI法律人格",
-        "original_title": "We must not grant AI agents legal personhood",
-        "summary": "文章主张不应给予 AI agents 法律人格，强调责任归属、监管边界和人类主体性仍需清晰界定。",
-        "rating": "A",
-        "score": 78,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可延伸到 AI 代理签约、自动交易和企业责任承担的政策讨论。",
-        "entities": [
-          "Ai Agents",
-          "法律人格",
-          "监管"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://www.ft.com/content/b8cc4bf4-6d3c-4974-8428-9a091983c473"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069416",
-        "source": "Hacker News",
-        "url": "https://www.ft.com/content/b8cc4bf4-6d3c-4974-8428-9a091983c473",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "601af275e9600c48894e37331d93fa7e",
-        "title": "Galbot人形机器人完成百次网球回合",
-        "chinese_title": "Galbot人形机器人完成百次网球回合",
-        "original_title": "WHRG'26: Galbot’s humanoid robot just completed +100 consecutive tennis rallies autonomously",
-        "summary": "Galbot 人形机器人在演示中完成连续百次以上自主网球回合，体现运动控制和视觉反馈能力的进展。",
-        "rating": "B",
-        "score": 66,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可继续核验演示条件，并观察人形机器人从展示项目走向可复现实验指标的速度。",
-        "entities": [
-          "Galbot",
-          "Humanoid Robot",
-          "机器人运动控制"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Technological Singularity",
-            "url": "https://www.reddit.com/r/singularity/comments/1vwclb9/whrg26_galbots_humanoid_robot_just_completed_100/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.069591",
-        "source": "Technological Singularity",
-        "url": "https://www.reddit.com/r/singularity/comments/1vwclb9/whrg26_galbots_humanoid_robot_just_completed_100/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "5844bf6940660e0388d35561e2ab2b39",
-        "title": "GLM开源模型被称成本仅为闭源五分之一",
-        "chinese_title": "GLM开源模型被称成本仅为闭源五分之一",
-        "original_title": "GLM-5.3 (open-weight) beat Anthropic/OpenAI models – for 1/5 the cost",
-        "summary": "评测称开源权重 GLM-5.3 以更低成本击败 Anthropic 和 OpenAI 模型，但来源可信度和测试方法仍需谨慎核验。",
-        "rating": "B",
-        "score": 70,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可追踪开源模型性价比叙事是否被更多独立基准验证，并影响企业模型选择。",
-        "entities": [
-          "Anthropic",
-          "Glm",
-          "Open-Weight Model",
-          "OpenAI"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://reinvently.co.uk/tools/ed-o-meter/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.070015",
-        "source": "Hacker News",
-        "url": "https://reinvently.co.uk/tools/ed-o-meter/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "12b63cc628166cb6b47524b2075f392f",
-        "title": "阿里巴巴拟募资百亿美元加码AI",
-        "chinese_title": "阿里巴巴拟募资百亿美元加码AI",
-        "original_title": "Alibaba plans to raise ~$10B in a follow-on share offering to fund AI investments; sources: it plans to offer 710M shares at a 3.6% discount to Friday's close (Reuters)",
-        "summary": "路透称阿里巴巴计划增发约 7100 万股、募资约 100 亿美元用于 AI 投资，折射中国互联网巨头继续押注 AI 基建和模型。",
-        "rating": "A+",
-        "score": 87,
-        "type": "funding",
-        "typeName": "融资上市",
-        "expansion": "可追踪阿里云、通义模型和中国 AI 资本开支周期，也会影响港股科技股估值叙事。",
-        "entities": [
-          "Ai投资",
-          "Alibaba",
-          "Reuters",
-          "阿里云"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260823/p7#a260823p7"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.204347",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260823/p7#a260823p7",
-        "event_id": null,
-        "grade": "A+",
-        "level": "A+",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "9ceac649f637ee8f91e3ee8ebd7b246b",
-        "title": "中国关键探月发射因求稳推迟至2027年",
-        "chinese_title": "中国关键探月发射因求稳推迟至2027年",
-        "original_title": "Due to need for 'absolute success,' China delays critical Moon launch to 2027",
-        "summary": "报道称中国因强调任务必须绝对成功，将关键月球发射任务推迟至 2027 年，显示深空任务对可靠性的要求提高。",
-        "rating": "B",
-        "score": 69,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸到中国探月工程节奏、航天供应链和国际月球竞赛节点变化。",
-        "entities": [
-          "Ars Technica",
-          "Moon Launch",
-          "中国探月工程"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Space – Ars Technica",
-            "url": "https://arstechnica.com/space/2026/08/due-to-need-for-absolute-success-china-delays-critical-moon-launch-to-2027/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.204447",
-        "source": "Space – Ars Technica",
-        "url": "https://arstechnica.com/space/2026/08/due-to-need-for-absolute-success-china-delays-critical-moon-launch-to-2027/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "2b552e0f84f9539827b2743ce2a26aef",
-        "title": "宇树IPO股价暴涨背后有中国新股逻辑",
-        "chinese_title": "宇树IPO股价暴涨背后有中国新股逻辑",
-        "original_title": "Why Unitree’s 460% IPO Stock Pop Wasn’t Unusual in China",
-        "summary": "The Information 分析称宇树上市后股价大涨并非孤例，反映中国资本市场对机器人题材和新股机制的特殊定价。",
-        "rating": "A",
-        "score": 78,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可延伸到人形机器人公司估值、A股/港股新股规则和产业资本热度。",
-        "entities": [
-          "Ipo",
-          "Unitree",
-          "中国资本市场",
-          "机器人"
-        ],
-        "sourceLinks": [
-          {
-            "name": "The Information",
-            "url": "https://www.theinformation.com/articles/unitrees-460-ipo-stock-pop-unusual-china"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.204536",
-        "source": "The Information",
-        "url": "https://www.theinformation.com/articles/unitrees-460-ipo-stock-pop-unusual-china",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "ea55baf0e482af287051307982e22f2f",
-        "title": "折叠iPhone早期体验细节曝光",
-        "chinese_title": "折叠iPhone早期体验细节曝光",
-        "original_title": "Sources: foldable iPhone feels durable, fits well in a pocket, has useful iPad-like app layouts, excels as a camera viewfinder but lacks telephoto and Face ID (Mark Gurman/Bloomberg)",
-        "summary": "Mark Gurman 称折叠 iPhone 原型耐用、便携并具备类似 iPad 的应用布局，但可能缺少长焦和 Face ID。",
-        "rating": "A",
-        "score": 82,
-        "type": "product",
-        "typeName": "产品发布",
-        "expansion": "可追踪苹果进入折叠屏后对高端手机换机周期、供应链和安卓折叠屏竞争的影响。",
-        "entities": [
-          "Apple",
-          "Face Id",
-          "Foldable Iphone",
-          "Mark Gurman"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260823/p6#a260823p6"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.204626",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260823/p6#a260823p6",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "32a718c3ed202365cf044004ac110863",
-        "title": "Qwen跨云推理实验达到每秒28 Token",
-        "chinese_title": "Qwen跨云推理实验达到每秒28 Token",
-        "original_title": "28 TPS on Qwen2.5-7B across two separate cloud regions over public WAN using speculative decoding + CUDA Graphs [P]",
-        "summary": "开发者展示 Qwen2.5-7B 在两个云区域间通过 speculative decoding 和 CUDA Graphs 达到 28 TPS 的实验。",
-        "rating": "B",
-        "score": 66,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸到分布式推理、跨区域延迟优化和中小模型部署成本。",
-        "entities": [
-          "Cuda Graphs",
-          "Qwen",
-          "Speculative Decoding"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1vw5ysj/28_tps_on_qwen257b_across_two_separate_cloud/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.204977",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1vw5ysj/28_tps_on_qwen257b_across_two_separate_cloud/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "8ba56887bcd164fa3926e0b488865dfe",
-        "title": "英伟达GB300桌面AI工作站标价近十万美元",
-        "chinese_title": "英伟达GB300桌面AI工作站标价近十万美元",
-        "original_title": "Nvidia’s GB300-powered DGX Station desktop tower listed for nearly $100,000 online — Enterprise AI powerhouse now available to buy for mere mortals with lots of cash",
-        "summary": "搭载 GB300 的 Nvidia DGX Station 桌面塔式机在线上架，接近 10 万美元定价显示企业级 AI 算力正在向工作站形态下沉。",
-        "rating": "B",
-        "score": 70,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可观察本地企业 AI 工作站市场、开发者私有推理需求和高端 GPU 供给。",
-        "entities": [
-          "Ai工作站",
-          "Dgx Station",
-          "Gb300",
-          "NVIDIA"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/desktops/nvidias-gb300-powered-dgx-station-desktop-tower-listed-for-nearly-usd100-000-online-enterprise-ai-powerhouse-now-available-to-buy-for-mere-mortals-with-lots-of-cash"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.205315",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/desktops/nvidias-gb300-powered-dgx-station-desktop-tower-listed-for-nearly-usd100-000-online-enterprise-ai-powerhouse-now-available-to-buy-for-mere-mortals-with-lots-of-cash",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "b7bafb4bac01eeb3c2668124a5f648b6",
-        "title": "AI老板在人工提醒后首次解雇员工",
-        "chinese_title": "AI老板在人工提醒后首次解雇员工",
-        "original_title": "An AI boss fired its first employee but only after humans reminded it of its own rules",
-        "summary": "报道描述一个 AI 管理者在被人类提醒自身规则后解雇员工，凸显 AI 管理实验中的责任边界和规则执行问题。",
-        "rating": "A",
-        "score": 85,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可延伸到 AI 参与管理决策、劳动法责任和企业自动化治理边界。",
-        "entities": [
-          "Ai Boss",
-          "Ai管理",
-          "劳动治理"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/an-ai-boss-fired-its-first-employee-but-only-after-humans-reminded-it-of-its-own-rules/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.205396",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/an-ai-boss-fired-its-first-employee-but-only-after-humans-reminded-it-of-its-own-rules/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "b101bb093fd23be0a11e154eeb286d79",
-        "title": "FCC撤销HoverAir无人机认证堵住监管漏洞",
-        "chinese_title": "FCC撤销HoverAir无人机认证堵住监管漏洞",
-        "original_title": "Modular pocket gimbal camera that transforms into a self-flying drone retroactively banned by FCC, certification revoked — Agency closes foreign UAS loophole on 230g HoverAir Versa",
-        "summary": "美国 FCC 在 HoverAir Versa 发布三天后撤销其认证，称要关闭外国无人机系统相关漏洞。",
-        "rating": "B",
-        "score": 70,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可延伸到消费无人机监管、供应链安全和中美硬件产品准入风险。",
-        "entities": [
-          "Fcc",
-          "Hoverair Versa",
-          "Uas",
-          "无人机"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/drones/fcc-pulls-hoverair-versa-certification-three-days-after-launch"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.205478",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/drones/fcc-pulls-hoverair-versa-certification-three-days-after-launch",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "e14bf43c2e46c170a1465a857db1978e",
-        "title": "赫拉利呼吁现在抵制赋予AI权利",
-        "chinese_title": "赫拉利呼吁现在抵制赋予AI权利",
-        "original_title": "The author of 'Sapiens' says 'now is the time' to resist giving AI rights",
-        "summary": "《人类简史》作者 Yuval Noah Harari 表示现在应抵制给予 AI 权利，担心技术叙事混淆人类责任与机器地位。",
-        "rating": "A",
-        "score": 76,
-        "type": "opinion",
-        "typeName": "观点访谈",
-        "expansion": "可与 AI 法律人格、代理责任和监管伦理议题形成组合报道。",
-        "entities": [
-          "Ai Rights",
-          "Sapiens",
-          "Yuval Noah Harari"
-        ],
-        "sourceLinks": [
-          {
-            "name": "AI - Business Insider",
-            "url": "https://www.businessinsider.com/sapiens-author-ai-rights-resist-yuval-noah-harari-2026-8"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.205564",
-        "source": "AI - Business Insider",
-        "url": "https://www.businessinsider.com/sapiens-author-ai-rights-resist-yuval-noah-harari-2026-8",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "48e8197e8424fe01e214a5b0cac167e8",
-        "title": "清华师徒轨迹折射中国AI跃迁",
-        "chinese_title": "清华师徒轨迹折射中国AI跃迁",
-        "original_title": "The careers of Z.ai's Tang Jie and Moonshot AI's Yang Zhilin, once teacher and pupil at Tsinghua University, show that China's AI leap is no sudden development (Raffaele Huang/Wall Street Journal)",
-        "summary": "报道通过 Z.ai 唐杰和 Moonshot AI 杨植麟的职业路径，呈现中国 AI 发展并非突然爆发，而是多年学术和产业积累的结果。",
-        "rating": "A",
-        "score": 83,
-        "type": "personnel",
-        "typeName": "人事变动",
-        "expansion": "可延伸到中国大模型人才网络、清华系创业和中美 AI 人才流动。",
-        "entities": [
-          "Moonshot Ai",
-          "Tang Jie",
-          "Yang Zhilin",
-          "Z.Ai"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme",
-            "url": "https://www.techmeme.com/260823/p5#a260823p5"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.205646",
-        "source": "Techmeme",
-        "url": "https://www.techmeme.com/260823/p5#a260823p5",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "9d40765d319a5ebc80e598952da5771c",
-        "title": "天工机器人百米冲刺跑进9秒39",
-        "chinese_title": "天工机器人百米冲刺跑进9秒39",
-        "original_title": "Humanoid robots shatter Usain Bolt's 100m record, hits 23.8 mph before crashing into foam pads &mdash; video shows Tiangong Ultra logging 9.39-second sprint before colliding with padded wall",
-        "summary": "天工 Ultra 人形机器人演示中达到 23.8 mph 并跑出 9.39 秒百米成绩，随后撞上防护垫，引发对速度和安全性的关注。",
-        "rating": "B",
-        "score": 72,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可继续核验计时条件，并观察高速人形机器人在稳定性、安全和真实应用上的差距。",
-        "entities": [
-          "Humanoid Robot",
-          "Tiangong Ultra",
-          "机器人运动控制"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/robotics/humanoid-robots-shatter-usain-bolts-100m-record-hits-23-8-mph-before-crashing-into-foam-pads-video-shows-tiangong-ultra-logging-9-39-second-sprint-before-colliding-with-padded-wall"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.205806",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/robotics/humanoid-robots-shatter-usain-bolts-100m-record-hits-23-8-mph-before-crashing-into-foam-pads-video-shows-tiangong-ultra-logging-9-39-second-sprint-before-colliding-with-padded-wall",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "32c6e3f077f08a48a9b9c83ccd46738d",
-        "title": "AI数据中心争议升级到威胁与枪击",
-        "chinese_title": "AI数据中心争议升级到威胁与枪击",
-        "original_title": "Officials nationwide face death threats and gunfire over AI data center projects — More than 500 towns restrict builds as councils shutter public comment",
-        "summary": "美国多地 AI 数据中心项目引发激烈反对，官员遭遇死亡威胁和枪击，已有数百城镇限制建设。",
-        "rating": "A",
-        "score": 83,
-        "type": "society",
-        "typeName": "社会影响",
-        "expansion": "可延伸到 AI 基建用电用水、地方治理、社区反弹和算力扩张的社会成本。",
-        "entities": [
-          "Ai Data Center",
-          "地方治理",
-          "算力基建"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/data-centers/death-threats-hit-data-center-opponents-as-towns-cancel-votes-and-close-public-comment"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.205965",
-        "source": "Tom's Hardware",
-        "url": "https://www.tomshardware.com/tech-industry/data-centers/death-threats-hit-data-center-opponents-as-towns-cancel-votes-and-close-public-comment",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "75b61f4bc77398386502edd731a35b2d",
-        "title": "Polymarket内幕交易疑泄露军事秘密",
-        "chinese_title": "Polymarket内幕交易疑泄露军事秘密",
-        "original_title": "Insider Trading on Polymarket Is Revealing Military Secrets",
-        "summary": "Futurism 报道称 Polymarket 上的异常交易可能暴露军事行动相关信息，预测市场与敏感情报之间的边界受到关注。",
-        "rating": "A",
-        "score": 78,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可延伸到预测市场监管、军事信息安全和链上交易监控。",
-        "entities": [
-          "Polymarket",
-          "内幕交易",
-          "军事秘密",
-          "预测市场"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Futurism",
-            "url": "https://futurism.com/future-society/polymarket-revealing-military-secrets"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.206203",
-        "source": "Futurism",
-        "url": "https://futurism.com/future-society/polymarket-revealing-military-secrets",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "466cf90505a49d7221c6c7b4099a37b6",
-        "title": "开发者讨论语言模型水印实现",
-        "chinese_title": "开发者讨论语言模型水印实现",
-        "original_title": "Implementing Watermarking for Language Models [P]",
-        "summary": "机器学习社区讨论如何实现语言模型水印，话题关联 AI 生成内容溯源、检测可靠性和开源实现。",
-        "rating": "B",
-        "score": 66,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸到模型水印标准、内容平台治理和检测绕过风险。",
-        "entities": [
-          "Ai溯源",
-          "Language Model Watermarking",
-          "Machine Learning"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1vw18ys/implementing_watermarking_for_language_models_p/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.206285",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1vw18ys/implementing_watermarking_for_language_models_p/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "7028b5e4e669345aa352c4815fdff453",
-        "title": "开源Roguelike游戏用于训练智能体",
-        "chinese_title": "开源Roguelike游戏用于训练智能体",
-        "original_title": "I built an open-source roguelike specifically for training game-playing agents [P]",
-        "summary": "开发者构建面向游戏智能体训练的开源 roguelike 环境，为评估长期规划和探索能力提供新测试场景。",
-        "rating": "B",
-        "score": 68,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸到智能体评测环境、游戏强化学习和开源基准设计。",
-        "entities": [
-          "Ai Agent",
-          "Roguelike",
-          "开源基准",
-          "强化学习"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Machine Learning",
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1vvii1j/i_built_an_opensource_roguelike_specifically_for/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.206446",
-        "source": "Machine Learning",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1vvii1j/i_built_an_opensource_roguelike_specifically_for/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "cbe2a071734f357537bb263e46b1b6b7",
-        "title": "OpenRouter称Agent用量一年暴涨14倍",
-        "chinese_title": "OpenRouter称Agent用量一年暴涨14倍",
-        "original_title": "AI is becoming AI's biggest customer as agentic token usage jumps 14x on OpenRouter",
-        "summary": "OpenRouter 数据显示 agentic token 使用量同比跃升 14 倍，AI 正成为 AI 服务的重要客户，自动化调用快速扩张。",
-        "rating": "S",
-        "score": 95,
-        "type": "financial",
-        "typeName": "商业数据",
-        "expansion": "可延伸到模型平台收入结构、代理经济、API 成本和自动化流量治理。",
-        "entities": [
-          "Ai Agents",
-          "Openrouter",
-          "Token Usage",
-          "代理经济"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/ai-is-becoming-ais-biggest-customer-as-agentic-token-usage-jumps-14x-on-openrouter/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.206529",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/ai-is-becoming-ais-biggest-customer-as-agentic-token-usage-jumps-14x-on-openrouter/",
-        "event_id": null,
-        "grade": "S",
-        "level": "S",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "27ae7b64764aec933654c748cdd96557",
-        "title": "研究警告AI或让科学家做更多低质工作",
-        "chinese_title": "研究警告AI或让科学家做更多低质工作",
-        "original_title": "AI could make scientists do more work less well, not less work better, study argues",
-        "summary": "一项研究认为 AI 可能不是让科学家更高效地做好工作，而是推动他们产出更多但质量更低的研究劳动。",
-        "rating": "A",
-        "score": 77,
-        "type": "research",
-        "typeName": "研究成果",
-        "expansion": "可延伸到科研评价体系、AI 助手副作用和论文数量与质量的张力。",
-        "entities": [
-          "Ai科研",
-          "Scientists",
-          "研究质量"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/ai-could-make-scientists-do-more-work-less-well-not-less-work-better-study-argues/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.206694",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/ai-could-make-scientists-do-more-work-less-well-not-less-work-better-study-argues/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "4f1f30d3406b155ed16b198569311004",
-        "title": "内存短缺推高英伟达AI服务器价格",
-        "chinese_title": "内存短缺推高英伟达AI服务器价格",
-        "original_title": "Memory shortage reportedly drives Nvidia AI server prices up about 15 percent",
-        "summary": "报道称内存短缺正让英伟达 AI 服务器价格上涨约 15%，服务器厂商和大客户面临更高采购成本。",
-        "rating": "S",
-        "score": 92,
-        "type": "hardware",
-        "typeName": "硬件基建",
-        "expansion": "可延伸到 HBM/DRAM 供需、云算力价格和 AI 基建投资回报的连锁影响。",
-        "entities": [
-          "Ai Server",
-          "Dram",
-          "Memory Shortage",
-          "NVIDIA"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/memory-shortage-reportedly-drives-nvidia-ai-server-prices-up-about-15-percent/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.339901",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/memory-shortage-reportedly-drives-nvidia-ai-server-prices-up-about-15-percent/",
-        "event_id": null,
-        "grade": "S",
-        "level": "S",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "04a59fc76c9b53102b72a5c3df4a7fa1",
-        "title": "中国灰产低价转售Claude Token",
-        "chinese_title": "中国灰产低价转售Claude Token",
-        "original_title": "How China's gray market sells Claude tokens at a fraction of the price",
-        "summary": "报道称中国灰色市场以低价转售 Claude token，折射出海外模型访问限制、套利链条和账号风控的复杂性。",
-        "rating": "A",
-        "score": 84,
-        "type": "safety",
-        "typeName": "安全伦理",
-        "expansion": "可追踪模型服务商反滥用策略、区域定价漏洞和中国用户访问前沿模型的替代渠道。",
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Token",
-          "灰色市场"
-        ],
-        "sourceLinks": [
-          {
-            "name": "THE DECODER",
-            "url": "https://the-decoder.com/how-chinas-gray-market-sells-claude-tokens-at-a-fraction-of-the-price/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.340089",
-        "source": "THE DECODER",
-        "url": "https://the-decoder.com/how-chinas-gray-market-sells-claude-tokens-at-a-fraction-of-the-price/",
-        "event_id": null,
-        "grade": "A",
-        "level": "A",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "402611bab1d01f9f2d6209be6a51db46",
-        "title": "英伟达据称借Poolside打造开源AI模型",
-        "chinese_title": "英伟达据称借Poolside打造开源AI模型",
-        "original_title": "Sources: Nvidia plans to use its $6B deal with Poolside to build an open-weight AI model to compete with Chinese models like DeepSeek and Kimi (Robbie Whelan/Wall Street Journal)",
-        "summary": "消息称英伟达计划利用与 Poolside 的 60 亿美元交易打造开放权重模型，以竞争 DeepSeek、Kimi 等中国模型。",
-        "rating": "S",
-        "score": 96,
-        "type": "industry",
-        "typeName": "行业动态",
-        "expansion": "可延伸到芯片公司向模型层上移、开放权重竞争和中美 AI 生态博弈。",
-        "entities": [
-          "DeepSeek",
-          "Kimi",
-          "NVIDIA",
-          "Poolside"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Techmeme (deepseek)",
-            "url": "https://www.techmeme.com/260822/p16#a260822p16"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.340418",
-        "source": "Techmeme (deepseek)",
-        "url": "https://www.techmeme.com/260822/p16#a260822p16",
-        "event_id": null,
-        "grade": "S",
-        "level": "S",
-        "_bucket": "2026-08-24"
-      },
-      {
-        "id": "ab95295ba1e57b3c2c776fc732a83fc6",
-        "title": "开发者一周重度使用Codex胜过Claude",
-        "chinese_title": "开发者一周重度使用Codex胜过Claude",
-        "original_title": "A week of using Codex more than Claude",
-        "summary": "作者记录一周更多使用 Codex 而非 Claude 的体验，反映 AI 编程工具在工作流、反馈速度和任务完成感上的竞争。",
-        "rating": "B",
-        "score": 74,
-        "type": "tool",
-        "typeName": "工具技巧",
-        "expansion": "可延伸到开发者从聊天式助手转向代理式编码环境的迁移信号。",
-        "entities": [
-          "Ai编程",
-          "Claude",
-          "Codex"
-        ],
-        "sourceLinks": [
-          {
-            "name": "Hacker News",
-            "url": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/"
-          }
-        ],
-        "sources": 1,
-        "timestamp": 1787524083,
-        "published_at": "2026-08-24T06:28:03.340660",
-        "source": "Hacker News",
-        "url": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
-        "event_id": null,
-        "grade": "B",
-        "level": "B",
-        "_bucket": "2026-08-24"
+        "url": "https://eris-system.dev/blog/forgetting-curve",
+        "event_id": null
       }
     ]
   },
-  "last_updated": "2026-08-31T05:10:21.537962",
-  "total_news": 262
+  "last_updated": "2026-09-01T05:10:51.284849",
+  "total_news": 204
 }
